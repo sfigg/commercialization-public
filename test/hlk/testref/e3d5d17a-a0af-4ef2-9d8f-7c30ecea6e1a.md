@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 9fbf580f-4515-46ec-905f-b785d774fd87
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -84,11 +84,11 @@ For more troubleshooting information, see [Troubleshooting Device.Storage Testin
 
     -   Ensure no other Storport ETW traces are currently logging. Only one Storport ETW trace can be active at a time.
 
--   If you get the error message “The test drive does not support trim”, try the following:
+-   If you get the error message "The test drive does not support trim", try the following:
 
-    -   Check the NVMe drive to make sure the VPD B2h page’s LBPU bit is set to one.
+    -   Check the NVMe drive to make sure the VPD B2h page's LBPU bit is set to one.
 
-    -   Try to send a Deallocate command via DATA SET MANAGEMENT’s Trim command.
+    -   Try to send a Deallocate command via DATA SET MANAGEMENT's Trim command.
 
     -   Run the test again.
 

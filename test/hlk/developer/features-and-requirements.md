@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 73eeb2c4-13b9-4606-938f-f64113ed407e
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,7 +20,7 @@ A feature can be a property (for example, a kernel mode device driver), a bus, a
 
 A requirement (for example, "all PCI devices must do *x*") maps to only one feature. Tests are mapped against requirements, so if a feature is found, you must run all the corresponding tests for its requirements.
 
-A feature can apply to only a subset of operating system versions or platforms. For example, a requirement might apply to only Windows® 7 x86, or to it might apply to Windows 8 (x86) and Windows 8 (x64) (but not Windows Server® 2012).
+A feature can apply to only a subset of operating system versions or platforms. For example, a requirement might apply to only Windows 7 x86, or to it might apply to Windows 8 (x86) and Windows 8 (x64) (but not Windows Server 2012).
 
  
 

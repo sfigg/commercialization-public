@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # AddonGuidItem
-
 
 `AddonGuidItem` contains settings for configuring an Internet Explorer add-on module, which add functionality to Internet Explorer.
 
@@ -23,43 +21,27 @@ ms.technology: windows-oem
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[AddonGuid](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem-addonguid.md)</p></td>
-<td><p>Specifies a GUID for an add-on module.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [AddonGuid](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem-addonguid.md) | Specifies a GUID for an add-on module. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md) | **AddonGuidItem**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 
-
 The following XML output shows how to set two Internet Explorer add-on modules.
 
-```
+```XML
 <PreApprovedAddons>
   <AddonGuidItem>
     <AddonGuid>{a1b1c123d1e1f4a5a6a7aa8a9a0a}</AddonGuid>
@@ -72,16 +54,4 @@ The following XML output shows how to set two Internet Explorer add-on modules.
 
 ## Related topics
 
-
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
-
- 
-
- 
-
-
-
-
-
-
-

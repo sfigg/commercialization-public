@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f27e1f36-a2d1-4371-a5e4-c80ad0c8cd75
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # WITT I2C Testing Prerequisites
 
 
-The Windows Inter-Integrated Circuit (I²C) Testing Tool (WITT) controller tests verify Windows Hardware Lab Kit (Windows HLK) Windows® Simple Peripheral Bus (SPB) compliance and the reliability of the I²C controller and its associated driver. WITT I²C controller tests consist of hardware (WITT adaptor) and software (test executable, test driver and utilities). For a list of WITT I²C tests, see [Device.BusController Tests](device-buscontroller-tests.md).
+The Windows Inter-Integrated Circuit (I<sup>2</sup>C) Testing Tool (WITT) controller tests verify Windows Hardware Lab Kit (Windows HLK) Windows Simple Peripheral Bus (SPB) compliance and the reliability of the I<sup>2</sup>C controller and its associated driver. WITT I<sup>2</sup>C controller tests consist of hardware (WITT adaptor) and software (test executable, test driver and utilities). For a list of WITT I<sup>2</sup>C tests, see [Device.BusController Tests](device-buscontroller-tests.md).
 
 In this article:
 
@@ -26,26 +26,26 @@ In this article:
 
 -   [I&lt;superscript xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"&gt;2&lt;/superscript&gt;C controller verification tests manual instructions](#howto)
 
-## <span id="witti2chard"></span><span id="WITTI2CHARD"></span>WITT I²C controller test hardware setup
+## <span id="witti2chard"></span><span id="WITTI2CHARD"></span>WITT I<sup>2</sup>C controller test hardware setup
 
 
-*Figure 1. Typical WITT test setup* shows the test, test driver setup, and I²C connections that you must make to run WITT tests.
+*Figure 1. Typical WITT test setup* shows the test, test driver setup, and I<sup>2</sup>C connections that you must make to run WITT tests.
 
 ![witt connections](images/hck-winb-fig1-visio-witt-connections-witti2ctestingprerequisites.jpg)
 
-*Figure 2. WITT Board* with I²C Header shows the LEDs, I²C header, USB connector, test pin, EEPROM jumper, and voltage jumper on a typical WITT board.
+*Figure 2. WITT Board* with I<sup>2</sup>C Header shows the LEDs, I<sup>2</sup>C header, USB connector, test pin, EEPROM jumper, and voltage jumper on a typical WITT board.
 
 ![network interface card with i2c header](images/hck-winb-fig2-nic-witti2ctestingprerequisites.png)
 
-You must connect Serial Clock (SCL), Serial Data (SDA), and ground (GND) pins to the host I²C controller. The General Purpose Input/Output (GPIO) connection is not needed for the WITT I²C controller tests. The SCL, SDA, and GND pins are shown in Figure 3. I2C 10-Pin Header:
+You must connect Serial Clock (SCL), Serial Data (SDA), and ground (GND) pins to the host I<sup>2</sup>C controller. The General Purpose Input/Output (GPIO) connection is not needed for the WITT I<sup>2</sup>C controller tests. The SCL, SDA, and GND pins are shown in Figure 3. I2C 10-Pin Header:
 
 ![i2c header](images/hck-winb-fig3-10pinheader-witti2ctestingprerequisites.png)
 
 **USB**
 
-Connect a USB cable to a USB connector (type B). You can use the USB connection to update WITT firmware (this requires a Microsoft USB Test Tool (MUTT) driver and the **Muttutil.exe** utility, which you can get from the [MUTT Software Package](http://go.microsoft.com/fwlink/?LinkID=293392). Because WITT already has I²C controller test firmware, the USB connection is used for power supply purposes only. If a firmware upgrade is necessary, use following steps:
+Connect a USB cable to a USB connector (type B). You can use the USB connection to update WITT firmware (this requires a Microsoft USB Test Tool (MUTT) driver and the **Muttutil.exe** utility, which you can get from the [MUTT Software Package](http://go.microsoft.com/fwlink/?LinkID=293392). Because WITT already has I<sup>2</sup>C controller test firmware, the USB connection is used for power supply purposes only. If a firmware upgrade is necessary, use following steps:
 
-1.  Set up the WITT I²C targets as described in [WITT I&lt;superscript xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"&gt;2&lt;/superscript&gt;C controller test software setup](#witti2csoft).
+1.  Set up the WITT I<sup>2</sup>C targets as described in [WITT I&lt;superscript xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"&gt;2&lt;/superscript&gt;C controller test software setup](#witti2csoft).
 
 2.  From a command prompt window that has administrative privileges, run the following command:
 
@@ -57,7 +57,7 @@ Connect a USB cable to a USB connector (type B). You can use the USB connection 
 
 **Test pin**
 
-The SCL/SDA/GND connectors on the test pin header can be soldered and used to connect an I²C to the host controller. The voltage of the I2C lines must match those of the host controller; these are typically 1.8v or 3.3v, and can be set by switching the voltage jumper on the WITT board (see *Figure 2. WITT Board*).
+The SCL/SDA/GND connectors on the test pin header can be soldered and used to connect an I<sup>2</sup>C to the host controller. The voltage of the I2C lines must match those of the host controller; these are typically 1.8v or 3.3v, and can be set by switching the voltage jumper on the WITT board (see *Figure 2. WITT Board*).
 
 **EEPROM jumper**
 
@@ -69,18 +69,18 @@ You can interpret the LEDs as follows:
 
 -   RED LED: POWER ON.
 
--   YELLOW LED: Constantly lit if there is no I²C BUS traffic (SCL and SDA are high).
+-   YELLOW LED: Constantly lit if there is no I<sup>2</sup>C BUS traffic (SCL and SDA are high).
 
--   BLUE LED: Flashing when I²C data traffic is ongoing between the host and WITT board.
+-   BLUE LED: Flashing when I<sup>2</sup>C data traffic is ongoing between the host and WITT board.
 
 **I2C voltage jumper**
 
-This jumper can be used for level-shifting an I²C signal to WITT. Set jumper position 1-2 for 3.3v or jumper position 2-3 for 1.8v. Connect the power source to pin2 for additional voltage levels other than 1.8v and 3.3v.
+This jumper can be used for level-shifting an I<sup>2</sup>C signal to WITT. Set jumper position 1-2 for 3.3v or jumper position 2-3 for 1.8v. Connect the power source to pin2 for additional voltage levels other than 1.8v and 3.3v.
 
-## <span id="witti2csoft"></span><span id="WITTI2CSOFT"></span>WITT I²C controller test software setup
+## <span id="witti2csoft"></span><span id="WITTI2CSOFT"></span>WITT I<sup>2</sup>C controller test software setup
 
 
-WITT test binaries are shipped together with the Windows HLK and are located on a Windows HLK controller or server in the **\\\\{$***HCKServer***}\\Tests\\{$***PROCESSOR\_ARCHITECTURE***}\\spb** folder, where *HCKServer* is the name of the Windows HLK server and *$PROCESSOR\_ARCHITECTURE* is the device platform (AMD64, x86, or ARM). The WITT I²C tests require the following binaries:
+WITT test binaries are shipped together with the Windows HLK and are located on a Windows HLK controller or server in the **\\\\{$***HCKServer***}\\Tests\\{$***PROCESSOR\_ARCHITECTURE***}\\spb** folder, where *HCKServer* is the name of the Windows HLK server and *$PROCESSOR\_ARCHITECTURE* is the device platform (AMD64, x86, or ARM). The WITT I<sup>2</sup>C tests require the following binaries:
 
 -   Test peripheral driver: **WITTTest.inf**, **WITTTest.sys**, and **WITTTest.cat**.
 
@@ -99,10 +99,10 @@ To setup a typical test configuration that uses a single controller, perform the
 2.  Run the following command to install the test peripheral driver:
 
     ``` syntax
-    pnputil –a witttest.inf
+    pnputil -a witttest.inf
     ```
 
-    The *–a* flag adds the driver package to the Windows driver store.
+    The *-a* flag adds the driver package to the Windows driver store.
 
 3.  Update the Advanced Configuration and Power Interface (ACPI) table to enumerate the test device nodes. These are usually defined in the SSDT (secondary system descriptor table) or the DSDT (differentiated system description table).
 
@@ -169,11 +169,11 @@ To setup a typical test configuration that uses a single controller, perform the
         }
         ```
 
-        In this test, TP1 is used as test interface (0x7F), TP2 (0x11) is configured as standard I²C target, TP3 (0x12) is configured as fast I²C target and TP4 (0x13) is configured as fast plus I²C target.
+        In this test, TP1 is used as test interface (0x7F), TP2 (0x11) is configured as standard I<sup>2</sup>C target, TP3 (0x12) is configured as fast I<sup>2</sup>C target and TP4 (0x13) is configured as fast plus I<sup>2</sup>C target.
 
         >[!NOTE]
         >  
-        Change the I²C controller address that is listed in the table to that of the actual I²C controller.
+        Change the I<sup>2</sup>C controller address that is listed in the table to that of the actual I<sup>2</sup>C controller.
 
          
 
@@ -189,7 +189,7 @@ To setup a typical test configuration that uses a single controller, perform the
     asl.exe /loadtable ssdt.aml
     ```
 
-6.  Enable the driver verifier on the I²C Controller and in **Spbcx.sys** by using the default settings.
+6.  Enable the driver verifier on the I<sup>2</sup>C Controller and in **Spbcx.sys** by using the default settings.
 
 7.  Restart the system: four device instances should display under the **WITT Test Class** node in Device Manager in the Windows HLK.
 
@@ -234,12 +234,12 @@ To setup a typical test configuration that uses a single controller, perform the
 
     Use the **Open** and **Close** commands to open and close targets. **Read**, **Write**, and **WriteRead** are manual I/O commands.
 
-    You can also use the **List** command to list all available I²C testing targets I²C: I²C 0x0 0x21. Switch the WITT testing address to start with 0x21(0x21,0x22,0x23); for example, 0 if you configured non-default I²C address in the ASL.
+    You can also use the **List** command to list all available I<sup>2</sup>C testing targets I<sup>2</sup>C: I<sup>2</sup>C 0x0 0x21. Switch the WITT testing address to start with 0x21(0x21,0x22,0x23); for example, 0 if you configured non-default I<sup>2</sup>C address in the ASL.
 
-## <span id="howto"></span><span id="HOWTO"></span> I²C controller verification tests manual instructions
+## <span id="howto"></span><span id="HOWTO"></span> I<sup>2</sup>C controller verification tests manual instructions
 
 
-You can run the I2C controller verification test manually in addition to running it in Windows HLK Studio. This section describes how to manually run the WITT I²C controller tests. For specific information about each test, see the individual test topics.
+You can run the I2C controller verification test manually in addition to running it in Windows HLK Studio. This section describes how to manually run the WITT I<sup>2</sup>C controller tests. For specific information about each test, see the individual test topics.
 
 You must run each test from a command prompt window that has administrative privileges.
 
@@ -284,7 +284,7 @@ Currently the following test id's are supported:
 /test:RunAll
 ```
 
-To run an individual test by using the default values, type **Witttest.exe /test:***&lt;Testname&gt;*, where *&lt;Testname&gt;* is the name of the test; for example, **Witttest.exe /test:BasicIORead**. To run this test with a different instance than the default instance of 0, type **Witttest.exe /test:BasicIORead /ins:0x1**. To run this test with a different testing I²C testing address instead of the default testing I²C address 0x11,0x12,0x13, type **Witttest.exe /test:BasicIORead /i2c:0x21**.
+To run an individual test by using the default values, type **Witttest.exe /test:***&lt;Testname&gt;*, where *&lt;Testname&gt;* is the name of the test; for example, **Witttest.exe /test:BasicIORead**. To run this test with a different instance than the default instance of 0, type **Witttest.exe /test:BasicIORead /ins:0x1**. To run this test with a different testing I<sup>2</sup>C testing address instead of the default testing I<sup>2</sup>C address 0x11,0x12,0x13, type **Witttest.exe /test:BasicIORead /i2c:0x21**.
 
 To run all tests, type **Witttest.exe /test:RunAll**. This command cycles through all tests and a test result is printed at the end of the test sequence; for example:
 

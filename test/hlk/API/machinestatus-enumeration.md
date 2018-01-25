@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 3fe5978b-c85a-4c5f-b7d1-df54ceeccfe5
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -61,15 +61,15 @@ This enumeration represents the states that a machine can be in at any point in 
 </tr>
 <tr class="even">
 <td><p>NotReady</p></td>
-<td><p>This enum value describes the state of the test computer as “not ready”. You cannot run tests on a test computer that is in this state.</p></td>
+<td><p>This enum value describes the state of the test computer as "not ready". You cannot run tests on a test computer that is in this state.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Ready</p></td>
-<td><p>This enum value describes the state of the test computer as “ready”.</p></td>
+<td><p>This enum value describes the state of the test computer as "ready".</p></td>
 </tr>
 <tr class="even">
 <td><p>Running</p></td>
-<td><p>This enum value describes the state of the test computer as “in the running state” (that is, a test is running).</p></td>
+<td><p>This enum value describes the state of the test computer as "in the running state" (that is, a test is running).</p></td>
 </tr>
 </tbody>
 </table>

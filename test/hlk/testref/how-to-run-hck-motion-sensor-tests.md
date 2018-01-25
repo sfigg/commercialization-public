@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 55de9db6-c5a9-4ee2-9a1c-3bad34d23ffd
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -25,13 +25,13 @@ This document assumes that the HLK 2.0 or greater is being used to test a tablet
 
 This document describes the following tests:
 
--   [Verify Sensor Orientation – 3D Accelerometer](#accel)
+-   [Verify Sensor Orientation - 3D Accelerometer](#accel)
 
 -   [Gyroscope Sensor Test](#gyro)
 
--   [Verify Sensor Orientation – 3D Compass](#compass)
+-   [Verify Sensor Orientation - 3D Compass](#compass)
 
--   [Verify Sensor Orientation – Inclinometer](#inclin)
+-   [Verify Sensor Orientation - Inclinometer](#inclin)
 
 -   [Verify Advanced Orientation Sensors](#advor)
 
@@ -67,7 +67,7 @@ Microsoft recommends that you run the tests in the order that is listed in the f
 <tbody>
 <tr class="odd">
 <td><p>Accelerometer</p></td>
-<td><p>Verify Sensor Orientation – 3D Accelerometer</p></td>
+<td><p>Verify Sensor Orientation - 3D Accelerometer</p></td>
 <td><p>n/a</p></td>
 </tr>
 <tr class="even">
@@ -78,12 +78,12 @@ Microsoft recommends that you run the tests in the order that is listed in the f
 </tr>
 <tr class="odd">
 <td><p>Compass</p></td>
-<td><p>Verify Sensor Orientation – 3D Compass</p></td>
+<td><p>Verify Sensor Orientation - 3D Compass</p></td>
 <td><p>Accelerometer, Gyro, Compass</p></td>
 </tr>
 <tr class="even">
 <td><p>Inclinometer</p></td>
-<td><p>Verify Sensor Orientation – Inclinometer</p></td>
+<td><p>Verify Sensor Orientation - Inclinometer</p></td>
 <td><p>Accelerometer, Gyro, Compass</p></td>
 </tr>
 <tr class="odd">
@@ -120,7 +120,7 @@ These additional devices help test a tablet form factor system (where accelerome
 
 The sensor diagnostic tool (sensordiagnostictool.exe available in the WDK) is useful for debugging test failures. This tool will show the data being returned in real-time from the various motion sensors which can be compared to the expected results.
 
-## <span id="accel"></span><span id="ACCEL"></span>Verify Sensor Orientation – 3D Accelerometer
+## <span id="accel"></span><span id="ACCEL"></span>Verify Sensor Orientation - 3D Accelerometer
 
 
 Test Scope: This test verifies the accelerometer is correctly orientated in the system. The tests have an error tolerance of +/- 0.1 G.
@@ -480,12 +480,12 @@ Expected values during rotation:
 
 **Figure 11 Gyro Test 6**
 
-## <span id="compass"></span><span id="COMPASS"></span>Verify Sensor Orientation – 3D Compass
+## <span id="compass"></span><span id="COMPASS"></span>Verify Sensor Orientation - 3D Compass
 
 
 Most compass implementations use data from both the 3D magnetometer and the gyro to calculate the current direction the user is facing relative to the magnetic north pole. Some implementations also use data from the accelerometer. Therefore, if the gyroscope or accelerometer sensor is not functioning properly, testers should expect to see the compass return incorrect headings.
 
-Since the earth’s magnetic force is relatively weak, the magnetometer sensors will often be subject to interference from other components inside the system. If the magnetometers are not adequately isolated from sources of electromagnetic interference such as antennas, power lines, or other components that are composed of materials such as iron that interfere with magnetic reception, testers will find that the compass will return incorrect headings. Please refer to the [Integrating Motion and Orientation Sensors whitepaper](http://go.microsoft.com/fwlink/?LinkId=262274) for guidance on correct magnetometer placement and best practices.
+Since the earth's magnetic force is relatively weak, the magnetometer sensors will often be subject to interference from other components inside the system. If the magnetometers are not adequately isolated from sources of electromagnetic interference such as antennas, power lines, or other components that are composed of materials such as iron that interfere with magnetic reception, testers will find that the compass will return incorrect headings. Please refer to the [Integrating Motion and Orientation Sensors whitepaper](http://go.microsoft.com/fwlink/?LinkId=262274) for guidance on correct magnetometer placement and best practices.
 
 The user is strongly encouraged to stand holding the system at various angles and rotate themselves so they end up facing different directions. Regardless of the angle the system is being held, or landscape / portrait orientation, the compass should always return the heading that is relative to the direction that the user is facing. Note that sensor diagnostic tool can be used to display the heading value from the compass sensor. If testers find out that the compass is returning incorrect or inconsistent results, please work with the magnetometer sensor vendor to determine if the error is a result of interference or potentially an incorrect sensor fusion algorithm.
 
@@ -557,7 +557,7 @@ The compass should return a value near 270 degrees.
 
 **Figure 17 Compass Test 6**
 
-## <span id="inclin"></span><span id="INCLIN"></span>Verify Sensor Orientation – Inclinometer
+## <span id="inclin"></span><span id="INCLIN"></span>Verify Sensor Orientation - Inclinometer
 
 
 Based on the guidance in the [Integrating Motion and Orientation Sensors whitepaper](http://go.microsoft.com/fwlink/?LinkId=262274), the inclinometer implementation could use data from the accelerometer, gyroscope and compass to determine the Euler angle values.

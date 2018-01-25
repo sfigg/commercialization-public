@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 083e5516-cebc-45d5-b8b5-07f37aa446bc
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -63,7 +63,7 @@ This section describes the tasks that you must complete before you test a client
 
      
 
--   Device’s network operation status is IfOperStatusUp
+-   Device's network operation status is IfOperStatusUp
 
 **WLAN/WiFi devices**
 

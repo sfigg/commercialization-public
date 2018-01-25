@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Add Language Packs to Windows
 
 > [!note]
-> If you're looking to add a language to your personal PC, see [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-gb/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo). 
+> If you're looking to add a language to your personal PC, see [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo). 
 
 OEMs can add language packs to localize PCs and devices for customers in different regions.
 
@@ -22,23 +22,26 @@ For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), lan
 
 ## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
 
+You can install multiple languages onto the same Windows 10 image. Use care to limit the amount and types of language packs included with each image. While the Windows 10 language packs are smaller, having too many affects disk space, and can affect performance, especially while updating and servicing Windows.
 
-You can install multiple languages onto the same Windows 10 image. For each language, where available:
+The table below gives an overview of the types of language components that are available in Windows 10.
 
--   Add the language pack and the **Basic** components.
--   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
--   Add **Fonts** and **Optical character recognition** for the most popular languages within a region to improve your user’s first experience (strongly recommended). If they’re not already installed, Windows downloads and installs them in the background when the user chooses that language for the first time.
--   Add **handwriting recognition** for devices with pen inputs.
--   Add Windows Recovery Environment (WinRE) components so that end users can more easily recover their PCs.
+To install a language, do the following for each language:
+
+1.   Add the language pack and the **Basic** components.
+2.   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
+3.   Add **Fonts** and **Optical character recognition** for the most popular languages within a region to improve your user’s first experience (strongly recommended). If they’re not already installed, Windows downloads and installs them in the background when the user chooses that language for the first time.
+4.   Add **handwriting recognition** for devices with pen inputs.
+5.   Add Windows Recovery Environment (WinRE) components so that end users can more easily recover their PCs.
+
+> [!Note] 
+> Not all language components are available for every language.
 
 Other customizations that can be preset:
 
 -   Currency, time zone, or calendar formats
 -   [Keyboard Identifiers and Input Method Editors for Windows](windows-language-pack-default-values.md)
 
-Not all capabilities are available for every language.
-
-Use care to limit the amount and types of language packs included with each image. While the Windows 10 language packs are smaller, having too many can still affect disk space, and can affect performance, especially while updating and servicing Windows.
 
 Some capabilities have additional dependencies, as shown in the following table.
 
@@ -58,12 +61,11 @@ Some capabilities have additional dependencies, as shown in the following table.
 
 ## <span id="Where_do_I_download_the_language_packs_"></span><span id="where_do_i_download_the_language_packs_"></span><span id="WHERE_DO_I_DOWNLOAD_THE_LANGUAGE_PACKS_"></span>Where do I download the language packs?
 
-
-OEMs and system builders can get the packages and features from dedicated download centers for OEMs and System Builders.
-
-Users can install more languages and features by going to **Settings** &gt; **Time & language** &gt; **Region & language** &gt; **Add a language**. To learn more, see [How to add an input language to your PC](http://go.microsoft.com/fwlink/?LinkId=619289).
-
 To see what's available, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
+
+-   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+-   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
+-   Users can add languages after Windows is installed, by goiung to **Settings** > **Time & language** > **Region and language** > **Add a language**. See [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo) for more information.
 
 ## <span id="Other_considerations"></span><span id="other_considerations"></span><span id="OTHER_CONSIDERATIONS"></span>Other considerations
 
@@ -97,7 +99,8 @@ You can add a language pack to an image in the following ways:
 
 3.  If you deploy a multilingual image, or need to apply a specific language pack to a Windows image for a specific device, you can add the language pack by using Windows Setup and an unattended answer file. The language pack must be added to the image before international settings can be configured. For more information about how to add a language pack to an answer file, see [Add a Package to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915066). To add a language pack and configure international settings, use the **WindowsPE** configuration pass to add the language pack and other configuration passes to configure international settings. For more information, see [Configure International Settings in Windows](configure-international-settings-in-windows.md)
     
-    **Note**  If language and locale settings are specified in an answer file, those settings overwrite any previous default. For example, if you first change the default `UILanguage` setting to FR-FR by using the DISM command-line tool on an offline image and then later apply an unattended answer file that specifies EN-US as the UI language, EN-US will be the default UI language.   
+    > [!Note]
+    > If language and locale settings are specified in an answer file, those settings overwrite any previous default. For example, if you first change the default `UILanguage` setting to FR-FR by using the DISM command-line tool on an offline image and then later apply an unattended answer file that specifies EN-US as the UI language, EN-US will be the default UI language.   
 
 4.  Use Setup to install the language packs that are in the distribution share.
 

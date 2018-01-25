@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c3e3a340-a5e9-49fa-84e4-3ae20ae2cf05
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -55,7 +55,7 @@ If you still cannot install the Windows HLK Client, locate these Client log file
 
 If you encounter issues installing the Windows HLK Controller, confirm the following:
 
--   The operating system uses the English language (en-us) version of Windows Server 2008 R2 x64 or Windows Server® 2012 and is not running as a domain controller.
+-   The operating system uses the English language (en-us) version of Windows Server 2008 R2 x64 or Windows Server 2012 and is not running as a domain controller.
 
 -   The system language is set to US English. To do this, click **Region and Language** in **Control Panel**, click the **Administrative tab**, click **Change system locale**, and then select **English (United States)**.
 
@@ -133,15 +133,15 @@ CREATE DATABASE failed. Some file names listed could not be created. Check relat
 
 2.  Reinstall the Windows HLK Controller. For info on how to do this, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md)
 
-## <span id="appcantrun"></span><span id="APPCANTRUN"></span>Client installation fails with error "This app can't run on your PC”
+## <span id="appcantrun"></span><span id="APPCANTRUN"></span>Client installation fails with error "This app can't run on your PC"
 
 
-The system returns an error “This app can’t run on your PC” if you try to install Windows HLK Client software on a computer that is running Windows 8 RT. This is not a supported platform; however, you can install Windows HLK Client software on a computer that is running Windows RT 8.1.
+The system returns an error "This app can't run on your PC" if you try to install Windows HLK Client software on a computer that is running Windows 8 RT. This is not a supported platform; however, you can install Windows HLK Client software on a computer that is running Windows RT 8.1.
 
 ## <span id="noconn"></span><span id="NOCONN"></span>Error: Failed to connect to database. Failed to connect to OM.
 
 
-If you get an error message that states **Failed to connect to database. Failed to connect to OM** when you start Windows HLK Studio, make sure that your user account is added to the Windows HLK Controller. For instructions on how to add your user account to the Windows HLK Controller, see “Configure additional user accounts” in [Install a remote HLK Studio](install-a-remote-hlk-studio.md).
+If you get an error message that states **Failed to connect to database. Failed to connect to OM** when you start Windows HLK Studio, make sure that your user account is added to the Windows HLK Controller. For instructions on how to add your user account to the Windows HLK Controller, see "Configure additional user accounts" in [Install a remote HLK Studio](install-a-remote-hlk-studio.md).
 
 ## <span id="sqlerror"></span><span id="SQLERROR"></span>Error: SQL client components are required for this operation
 

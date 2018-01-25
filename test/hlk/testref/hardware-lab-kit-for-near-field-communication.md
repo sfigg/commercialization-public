@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1F579C0D-DDB1-43CE-A1BF-7EDA65BB592C
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -59,7 +59,7 @@ After setting up the [HLK test framework](https://msdn.microsoft.com/en-us/libra
 -   Make sure the PC client has the Universal C Runtime installed.
 -   Make sure DUT, NFC client and PC client have network connections. If the DUT or the NFC client is a phone, you will need the Virtual Ethernet tool to be able to connect to the phone.
 
-The HLK studio/controller deploys and runs test cases on the DUT but some intervention on the tester’s part is required. For test cases where manual intervention is required, the helper binaries need to be launched manually. In order to do so, the NFC and PC clients need to have the following setup:
+The HLK studio/controller deploys and runs test cases on the DUT but some intervention on the tester's part is required. For test cases where manual intervention is required, the helper binaries need to be launched manually. In order to do so, the NFC and PC clients need to have the following setup:
 
 ### <span id="NFC_client"></span><span id="nfc_client"></span><span id="NFC_CLIENT"></span>NFC client
 
@@ -119,7 +119,7 @@ The HLK studio/controller deploys and runs test cases on the DUT but some interv
 
 ### <span id="HLK_Studio"></span><span id="hlk_studio"></span><span id="HLK_STUDIO"></span>HLK Studio
 
--   In HLK studio, select the test from the “Tests” tab as per following image:
+-   In HLK studio, select the test from the "Tests" tab as per following image:
 
     ![](images/nfc-tests-tab.png)
 
@@ -139,7 +139,7 @@ The HLK studio/controller deploys and runs test cases on the DUT but some interv
 
     Where &lt;ip\_of\_dut&gt; is the IP address of the DUT
 
--   NfcRemotePeerService.dll will connect to the test running on the DUT and will receive commands from the test. These commands will instruct NfcRemotePeerService.dll on when to create Near Field Proximity publications and subscriptions on the NFC client. When the DUT and the NFC client are tapped together, the publications and subscriptions will fire, exercising NFC’s Peer-to-Peer scenarios.
+-   NfcRemotePeerService.dll will connect to the test running on the DUT and will receive commands from the test. These commands will instruct NfcRemotePeerService.dll on when to create Near Field Proximity publications and subscriptions on the NFC client. When the DUT and the NFC client are tapped together, the publications and subscriptions will fire, exercising NFC's Peer-to-Peer scenarios.
 
 ### <span id="PC_client___setup_if_using_NITT_"></span><span id="pc_client___setup_if_using_nitt_"></span><span id="PC_CLIENT___SETUP_IF_USING_NITT_"></span>PC client (\*setup if using NITT)
 
@@ -152,7 +152,7 @@ The HLK studio/controller deploys and runs test cases on the DUT but some interv
 
     Where &lt;ip\_of\_dut&gt; is the IP address of the DUT, &lt;tag\_index&gt; is the NITT board tag index, and &lt;reader\_name&gt; is the name of the smart card reader connected to the PC client. Possible values of &lt;tag\_index&gt; are 1, 2, 3, and 4 corresponding to NFC Forum compliant T1T, T2T, T3T, and T4T, respectively. To find the name of the smart card reader connected to the PC client, you can use the *-listReaders* option of NfcManualHelper.exe (see below).
 
--   NfcNittController.exe will connect to the test running on the DUT and will receive commands from the test. These commands will instruct NfcNittController.exe on when to perform actions with the NITT. These actions are performed automatically and don’t need any manual interaction. Example actions: Opening and closing the RF shield, turning on and off a tag on the NITT.
+-   NfcNittController.exe will connect to the test running on the DUT and will receive commands from the test. These commands will instruct NfcNittController.exe on when to perform actions with the NITT. These actions are performed automatically and don't need any manual interaction. Example actions: Opening and closing the RF shield, turning on and off a tag on the NITT.
 
 ### <span id="PC_client___setup_if_not_using_NITT_"></span><span id="pc_client___setup_if_not_using_nitt_"></span><span id="PC_CLIENT___SETUP_IF_NOT_USING_NITT_"></span>PC client (\*setup if not using NITT)
 

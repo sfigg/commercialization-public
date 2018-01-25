@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 44b50ca4-5670-431e-b12c-76a8d3ca492f
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -294,7 +294,7 @@ In order to receive certification for a wireless router, you must create a submi
 
 1.  Open HLK Studio.
 
-2.  In the **Project** tab click **Create project** – name your project something descriptive.
+2.  In the **Project** tab click **Create project** - name your project something descriptive.
 
 3.  In the **Selection** tab select your machine pool from the dropdown. The section below that should populate with all the available devices.
 
@@ -302,7 +302,7 @@ In order to receive certification for a wireless router, you must create a submi
 
 5.  Scroll through the list and locate the router you are testing.
 
-6.  There may be more than one listed. Select the one that is listed for the LAN1 machine AND the one that states it’s a WDKVirtualDevice\_&lt;number&gt; for the Device Instance ID.
+6.  There may be more than one listed. Select the one that is listed for the LAN1 machine AND the one that states it's a WDKVirtualDevice\_&lt;number&gt; for the Device Instance ID.
 
 7.  On the **Tests** tab you should see all the tests for the router if you only see a few go back to the **Selection** tab and make sure you have the correct device selected.
 
@@ -333,11 +333,11 @@ Some of the tests have special requirements that must be fulfilled before you ca
 ## <span id="WCN_tests"></span><span id="wcn_tests"></span><span id="WCN_TESTS"></span>WCN tests
 
 
-All WCN tests start with prefix “WCN”. The automated tests can be run in any order; the only requirement is that they should be scheduled one at a time.
+All WCN tests start with prefix "WCN". The automated tests can be run in any order; the only requirement is that they should be scheduled one at a time.
 
 Before running the tests, make sure the device is plugged in and it is in a configurable state. All of the tests try to configure the device. If the device does not support being configured when it is already configured then the router will need to be reset to a configurable state before running a test.
 
-The WCN Tests uses the UPnP protocol as the underlying transport to configure the device, so ensure the firewall doesn’t block UPnP traffic (firewall can be disabled from **Control Panel**) and SSDP service is not disabled or stopped.
+The WCN Tests uses the UPnP protocol as the underlying transport to configure the device, so ensure the firewall doesn't block UPnP traffic (firewall can be disabled from **Control Panel**) and SSDP service is not disabled or stopped.
 
 All the jobs require the routers BSSID and WPS PIN. The wireless network BSSID is usually the MAC address of the wireless interface. Available wireless network BSSIDs can be viewed by executing the command **netsh wlan show networks mode=bssid** on the LAN1 machine. Static WPS pins should be 8 digits and dynamic WPS pins should be 8 or 4 digits.
 
@@ -359,25 +359,25 @@ The following test verifies that a wireless AP is capable of proxying wireless E
 
 **Feature Path:** $\\WDK Tests\\Networking\\Routers\\WCN Wireless
 
-WCN Wireless M1-M2D Proxy Functionality – Windows 7 only
+WCN Wireless M1-M2D Proxy Functionality - Windows 7 only
 
-WCN Wireless Test Proxy Functionality WPS10h Only V2 – Windows 8 only
+WCN Wireless Test Proxy Functionality WPS10h Only V2 - Windows 8 only
 
-WCN Wireless Test Proxy Functionality WPS20 Only V2 – Windows 8 Only
+WCN Wireless Test Proxy Functionality WPS20 Only V2 - Windows 8 Only
 
 ### <span id="Push_button_auth_tests"></span><span id="push_button_auth_tests"></span><span id="PUSH_BUTTON_AUTH_TESTS"></span>Push button auth tests
 
-The following logo tests verify that a Wireless AP is capable of using push button authentication in a Wireless EAP WPS session. The test acting as the registrar will initiate a Wireless EAP WPS configuration session with the AP under test using PIN for authentication. The test will comply with the WPS Protocol and confirm the AP is also using all required attributes in its messages. During the configuration session the test will configure the AP under test to use WPA2PSK AES for its wireless security settings. After completing the Wireless EAP in-band WPS configuration session, the test will wait up to 60 seconds for the AP under test to reboot and apply settings. To confirm the AP under test is properly implementing the wireless settings, the test will use a wireless profile to connect to the AP under test, verify connectivity, and disconnect from the AP under test. The logo test will then act as an enrollee and prompt the user to push the ‘WPS Button’. After the user unblocks the logo test by pushing any key, the logo test will establish a Wireless EAP WPS session with the Wireless AP under test using Push Button Authentication (AKA PBC).
+The following logo tests verify that a Wireless AP is capable of using push button authentication in a Wireless EAP WPS session. The test acting as the registrar will initiate a Wireless EAP WPS configuration session with the AP under test using PIN for authentication. The test will comply with the WPS Protocol and confirm the AP is also using all required attributes in its messages. During the configuration session the test will configure the AP under test to use WPA2PSK AES for its wireless security settings. After completing the Wireless EAP in-band WPS configuration session, the test will wait up to 60 seconds for the AP under test to reboot and apply settings. To confirm the AP under test is properly implementing the wireless settings, the test will use a wireless profile to connect to the AP under test, verify connectivity, and disconnect from the AP under test. The logo test will then act as an enrollee and prompt the user to push the 'WPS Button'. After the user unblocks the logo test by pushing any key, the logo test will establish a Wireless EAP WPS session with the Wireless AP under test using Push Button Authentication (AKA PBC).
 
 **Feature Path:** $\\WDK Tests\\Networking\\Routers\\WCN Wireless
 
--   WCN Wireless Push Button Auth (Push Button Test) – Windows 7 only
+-   WCN Wireless Push Button Auth (Push Button Test) - Windows 7 only
 
--   WCN Wireless Push Button Auth (Push Button Test) v2 – Windows 8 Only
+-   WCN Wireless Push Button Auth (Push Button Test) v2 - Windows 8 Only
 
 ### <span id="Registrar_discovery_test"></span><span id="registrar_discovery_test"></span><span id="REGISTRAR_DISCOVERY_TEST"></span>Registrar discovery test
 
-The Registrar Discovery Test verifies that a Wireless AP is capable of being discovered through an EAP WPS M1-M2D message exchange. The test will act as a registrar and respond to the Wireless AP’s M1 request message with a M2D response message. The test expects the Wireless AP to respond to the M2D response message with a NACK request message. The test will then respond with a NACK response. The Wireless AP should end the EAP session with an EAP-Fail message.
+The Registrar Discovery Test verifies that a Wireless AP is capable of being discovered through an EAP WPS M1-M2D message exchange. The test will act as a registrar and respond to the Wireless AP's M1 request message with a M2D response message. The test expects the Wireless AP to respond to the M2D response message with a NACK request message. The test will then respond with a NACK response. The Wireless AP should end the EAP session with an EAP-Fail message.
 
 ****Feature Path: $\\WDK Tests\\Networking\\Routers\\WCN Wireless
 
@@ -397,11 +397,11 @@ The IGD Data tests verify the routers ability to route UDP and TCP traffic acros
 
 ### <span id="IGD_data_connection_test__verify_UPnP_is_enabled_"></span><span id="igd_data_connection_test__verify_upnp_is_enabled_"></span><span id="IGD_DATA_CONNECTION_TEST__VERIFY_UPNP_IS_ENABLED_"></span>IGD data connection test (verify UPnP is enabled)
 
-Test adds port mappings to router using UPnP interface and then verifies port mapping by sending traffic from WAN machine to LAN machine. Test fails if router doesn’t not properly implement UPnP port mapping interface.
+Test adds port mappings to router using UPnP interface and then verifies port mapping by sending traffic from WAN machine to LAN machine. Test fails if router doesn't not properly implement UPnP port mapping interface.
 
 ### <span id="IGD_data_connection_test__verifies_IGD_type_is_cone_or_restricted_"></span><span id="igd_data_connection_test__verifies_igd_type_is_cone_or_restricted_"></span><span id="IGD_DATA_CONNECTION_TEST__VERIFIES_IGD_TYPE_IS_CONE_OR_RESTRICTED_"></span>IGD data connection test (verifies IGD type is cone or restricted)
 
-Test determines router’s NAT type. Test passes if NAT type is cone or restricted. Test fails if NAT type is symmetric
+Test determines router's NAT type. Test passes if NAT type is cone or restricted. Test fails if NAT type is symmetric
 
 ### <span id="IGD_data_connection_test__verifies_ECN_does_not_trigger_router_reboot_"></span><span id="igd_data_connection_test__verifies_ecn_does_not_trigger_router_reboot_"></span><span id="IGD_DATA_CONNECTION_TEST__VERIFIES_ECN_DOES_NOT_TRIGGER_ROUTER_REBOOT_"></span>IGD data connection test (verifies ECN does not trigger router reboot)
 
@@ -421,7 +421,7 @@ Test sends and receives data over TCP through router with Explicit Congestion No
 
 ### <span id="IGD_byte_counters_tests"></span><span id="igd_byte_counters_tests"></span><span id="IGD_BYTE_COUNTERS_TESTS"></span>IGD byte counters tests
 
-These tests can be identified by the presence of “TotalBytesSent” or “TotalBytesReceived” in their names. The tests should be run one at a time. Although the sequence is not important it is recommended that the Basic logo tests are ran first.
+These tests can be identified by the presence of "TotalBytesSent" or "TotalBytesReceived" in their names. The tests should be run one at a time. Although the sequence is not important it is recommended that the Basic logo tests are ran first.
 
 >[!IMPORTANT]
 >  
@@ -435,11 +435,11 @@ Before running the tests, please perform the following on each LAN-side machine.
 
 ### <span id="Wi-Fi_performance_test"></span><span id="wi-fi_performance_test"></span><span id="WI-FI_PERFORMANCE_TEST"></span>Wi-Fi performance test
 
-Before running a particular WiFi performance job with a specific wireless configuration (SSID, PHY setting, security settings) one has to setup the tested device properly before the test is started. Because the tests cover different wireless settings it’s not possible to schedule all WiFi performance jobs at once. It is possible though to group these jobs based on the given wireless configuration.
+Before running a particular WiFi performance job with a specific wireless configuration (SSID, PHY setting, security settings) one has to setup the tested device properly before the test is started. Because the tests cover different wireless settings it's not possible to schedule all WiFi performance jobs at once. It is possible though to group these jobs based on the given wireless configuration.
 
-It’s generally good idea to validate connectivity for a given wireless configuration before the test is started. It means applying a given wireless profile at a machine (L1 or L2) and try if you’re able to connect using this profile. The used wireless profiles are stored in \\\\&lt;your HLK controller&gt;\\Tests\\x86fre\\nttest\\NetTest\\wireless\\apcert\\profiles.
+It's generally good idea to validate connectivity for a given wireless configuration before the test is started. It means applying a given wireless profile at a machine (L1 or L2) and try if you're able to connect using this profile. The used wireless profiles are stored in \\\\&lt;your HLK controller&gt;\\Tests\\x86fre\\nttest\\NetTest\\wireless\\apcert\\profiles.
 
-For the Windows 7 and Windows 8 certification, there are only two available wireless performance tests. Both use the SSID WINDOWS\_LOGO and the pass phrase “Nativewifi”. It should also be noted that the Windows 7 wireless performance tests MUST be conducted over open air and not in a shielded room. Details are in the following table.
+For the Windows 7 and Windows 8 certification, there are only two available wireless performance tests. Both use the SSID WINDOWS\_LOGO and the pass phrase "Nativewifi". It should also be noted that the Windows 7 wireless performance tests MUST be conducted over open air and not in a shielded room. Details are in the following table.
 
 <table>
 <colgroup>

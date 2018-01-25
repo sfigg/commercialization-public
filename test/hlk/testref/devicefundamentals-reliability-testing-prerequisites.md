@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e2278239-49c7-45ee-ae3d-2dbbb2c71487
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Device.Fundamentals Reliability Testing Prerequisites
 
 
-This content applies to a subset of the Windows Hardware Lab Kit (Windows HLK) Device.Device Fundamentals tests that are known as *Device Fundamentals Reliability* tests. (The applicable test names begin with “*DF –* “.)
+This content applies to a subset of the Windows Hardware Lab Kit (Windows HLK) Device.Device Fundamentals tests that are known as *Device Fundamentals Reliability* tests. (The applicable test names begin with "*DF -* ".)
 
 This topic describes configuration requirements for the Windows HLK Device Fundamentals Reliability tests.
 
@@ -63,15 +63,15 @@ If the device under test (DUT) is a network LAN adapter, make sure that the netw
 
 If the test network environment cannot support a test adapter that has an assigned IPv6 gateway address (for example, if you are testing in a private network configuration or in a network configuration that supports IPv4 gateway assignments only), we recommend that you use the following test configuration:
 
-1.  Select a remote client or server system that is running Windows® 7 or later version of Windows.
+1.  Select a remote client or server system that is running Windows 7 or later version of Windows.
 
-2.  Use an Ethernet cable to make a direction connection between the test system’s adapter to the remote system’s LAN adapter.
+2.  Use an Ethernet cable to make a direction connection between the test system's adapter to the remote system's LAN adapter.
 
 3.  On the remote system, from the Network and Sharing Center, turn on file and printer sharing. (For more information about how to enable file and printer sharing, see [Enable file and printer sharing](http://go.microsoft.com/fwlink/?LinkID=301387).)
 
-4.  On the remote system, open a command prompt window that has administrative privileges. Type **ipconfig /all** and make a note of the IPv6 address that is assigned to the remote system’s LAN adapter.
+4.  On the remote system, open a command prompt window that has administrative privileges. Type **ipconfig /all** and make a note of the IPv6 address that is assigned to the remote system's LAN adapter.
 
-5.  From the command prompt window on the test system, ping the IPv6 address that you noted in the previous step. Use the **ping –s** option to specify the IPv6 address of the test adapter as the source address.
+5.  From the command prompt window on the test system, ping the IPv6 address that you noted in the previous step. Use the **ping -s** option to specify the IPv6 address of the test adapter as the source address.
 
 6.  Provide the noted IPv6 address, without the scope ID (for example, fe80::205:ddff:fe27:3840), as the *WDTFREMOTESYSTEM* parameter to Device Fundamentals Reliability tests.
 

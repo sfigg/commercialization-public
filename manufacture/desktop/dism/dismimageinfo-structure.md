@@ -116,7 +116,7 @@ The number of elements in the *language* array.
 The index number of the default language.
 
 **CustomizedInfo**  
-The customized information for the image file. A [**DismWimCustomizedInfo**](dismwimcustomizedinfo_structure.md) structure for a WIM file. **NULL** for a VHD image.
+The customized information for the image file. A [**DismWimCustomizedInfo**](dismwimcustomizedinfo-structure.md) structure for a WIM file. **NULL** for a VHD image.
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 

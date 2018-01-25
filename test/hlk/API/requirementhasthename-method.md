@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 22198a3c-3d55-4fc4-a21c-52a443765592
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -64,7 +64,7 @@ This method checks if this requirement has a given name.
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
 
-**true** if the specified name matches this requirement’s name; otherwise, **false**.
+**true** if the specified name matches this requirement's name; otherwise, **false**.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 

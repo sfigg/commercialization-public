@@ -39,6 +39,9 @@ This topic covers how to create a bootable Windows installation USB drive from a
 
 4.  Set the partition as active: Right-click the USB drive partition and click **Mark Partition as Active**.
 
+    > [!Note]
+    > If **Mark Partition as Active** isn't available, you can instead use [diskpart](https://technet.microsoft.com/en-us/library/cc770877.aspx) to select the partition and mark it active.
+
 ### Step 2 - Copy Windows Setup to the USB flash drive
 
 1.  Use File Explorer to copy and paste the entire contents of the Windows product DVD or ISO to the USB flash drive.

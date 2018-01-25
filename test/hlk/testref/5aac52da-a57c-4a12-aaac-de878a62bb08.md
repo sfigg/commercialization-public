@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 0166773e-eeef-4089-8936-34b1fa91b293
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # <span id="p_hlk_test.5aac52da-a57c-4a12-aaac-de878a62bb08"></span>BitLocker Tpm And Recovery Password tests for AOAC devices with PCR\[7\]
 
 
-All platforms that implement a TPM must ensure invariance of PCRs 7, 11 across power cycles in the absence of changes to the platform’s static core root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station should not cause changes to the SRTM.
+All platforms that implement a TPM must ensure invariance of PCRs 7, 11 across power cycles in the absence of changes to the platform's static core root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station should not cause changes to the SRTM.
 
 >[!NOTE]
 >  
@@ -67,7 +67,7 @@ If this test fails, review the test log from Windows Hardware Lab Kit (Windows H
 
 3.  If a test script fails, check the BitLocker status:
 
-    -   Manage-bde –status \[volume\]
+    -   Manage-bde -status \[volume\]
 
 4.  Collect BitLocker event logs from event viewer at two locations:
 

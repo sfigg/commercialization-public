@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7605565d-1ac1-45ba-8537-1c6136ae044e
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -24,7 +24,7 @@ This section describes the tasks that you must complete before you test a sensor
 
 -   [Test computer configuration](#bkmk-hck-sensor-tc).
 
-Sensor devices as defined here are devices that work with the Windows® Sensor and Location platform. Currently this platform is only available on Windows 8 and Windows 7.
+Sensor devices as defined here are devices that work with the Windows Sensor and Location platform. Currently this platform is only available on Windows 8 and Windows 7.
 
 ## <span id="BKMK_HCK_Sensor_hR"></span><span id="bkmk-hck-sensor-hr"></span><span id="BKMK_HCK_SENSOR_HR"></span>Hardware requirements
 

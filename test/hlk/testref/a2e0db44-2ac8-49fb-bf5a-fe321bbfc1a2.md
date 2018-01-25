@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c1b1b28a-32fe-4145-b2c6-59708fc44996
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -99,7 +99,7 @@ The following table lists the image surfaces that the test uses. If you specify 
 </tr>
 <tr class="even">
 <td><p>RefSurface.bmp</p></td>
-<td><p>The reference surface, as computed by the Microsoft® Direct3D® API.</p></td>
+<td><p>The reference surface, as computed by the Microsoft Direct3D API.</p></td>
 </tr>
 <tr class="odd">
 <td><p>DiffSurface.bmp</p></td>

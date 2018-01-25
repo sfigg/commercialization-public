@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e72103c0-d70f-4eb3-bed6-2c67d4af5d64
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -26,7 +26,7 @@ The following image shows an example Windows HLK Studio screen:
 
 -   **Project Details** - The right-pane displays project status and hardware details. As you test your device, you can monitor the test results. The **Product Types** field is an important field to review before testing. This value shows the devices that the kit detects and what tests the device can run. If the product type you want to qualify for does not appear, you must investigate whether the device is properly developed, or you might have to manually configure your product type. For more information, see [Manually add features](manually-add-features.md).
 
--   **Main Detailed View** – Displays detailed information for the respective tabs. In this area, you can right-click on an entry to see more options. You can click the **F1** key to view context-sensitive help.
+-   **Main Detailed View** - Displays detailed information for the respective tabs. In this area, you can right-click on an entry to see more options. You can click the **F1** key to view context-sensitive help.
 
 ## <span id="Features_and_Limitations"></span><span id="features_and_limitations"></span><span id="FEATURES_AND_LIMITATIONS"></span>Features and Limitations
 

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e8a87fcd-b289-45b4-bdb8-1530ef8bf558
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Wireless LAN (802.11) Testing Prerequisites
 
 
-This topic describes the process to test a Wireless LAN (WLAN) device to make sure that it functions correctly with Windows®. These procedures use the Microsoft Windows Driver Kit (WDK) and Windows Hardware Lab Kit (Windows HLK). To comply with the WLAN Windows Hardware Certification Program, you must run all of the tests that Windows HLK identifies as being required for the device. We also recommend that you work through the tests in order by the following levels: “Basic”, “Functional”, “Reliability”, and “Certification.”
+This topic describes the process to test a Wireless LAN (WLAN) device to make sure that it functions correctly with Windows. These procedures use the Microsoft Windows Driver Kit (WDK) and Windows Hardware Lab Kit (Windows HLK). To comply with the WLAN Windows Hardware Certification Program, you must run all of the tests that Windows HLK identifies as being required for the device. We also recommend that you work through the tests in order by the following levels: "Basic", "Functional", "Reliability", and "Certification."
 
 >[!NOTE]
 >  
@@ -136,7 +136,7 @@ The following table summarizes the configurations:
 
      
 
--   You can troubleshoot the tests’ ability to connect to the APs by using Telnet.exe to connect to both routers on the WAN IP address from the AP-Controller. If you cannot connect to either AP from the AP-Controller by using the WAN IP address, the username of admin, and password that you configured (default password is admin), the tests cannot connect and will fail.
+-   You can troubleshoot the tests' ability to connect to the APs by using Telnet.exe to connect to both routers on the WAN IP address from the AP-Controller. If you cannot connect to either AP from the AP-Controller by using the WAN IP address, the username of admin, and password that you configured (default password is admin), the tests cannot connect and will fail.
 
 -   These preparation steps do not apply to the 802.11 AC router in the setup. For the 802.11AC router, configure it to match the maximum bandwidth and spatial streams that your device supports.
 
@@ -241,7 +241,7 @@ The following procedure demonstrates how to run the WLAN device tests:
 
      
 
-6.  Click the **Tests** tab – by default, all the available certification tests that are applicable to selected device will display.
+6.  Click the **Tests** tab - by default, all the available certification tests that are applicable to selected device will display.
 
 7.  You can filter the displayed list by clicking **View by** and then selecting additional options, such as **Basic**, **Functional**, or **Reliability**.
 
@@ -255,7 +255,7 @@ The following procedure demonstrates how to run the WLAN device tests:
 
     1.  Select the first test name from the list (if there is more than one).
 
-    2.  From the **Role** menu, select **Client** – the DUT machine should already be selected and grayed out.
+    2.  From the **Role** menu, select **Client** - the DUT machine should already be selected and grayed out.
 
     3.  From the **Role** menu, select **Support** and check the box next to the SUT Machine.
 

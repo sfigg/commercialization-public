@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 4903766b-b72b-46a1-b64b-ca9c43235cb7
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # IDeviceTargetData.DriverHash Property
 
 
-This property represents all of the driver’s hash values for a deviceTarget object.
+This property represents all of the driver's hash values for a deviceTarget object.
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 

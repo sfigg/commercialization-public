@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5aa351a3-b9e7-4b5d-bc10-778707c19d58
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -90,7 +90,7 @@ The following conditions determine validity.
 
 If any of the checks fail, the method returns false.
 
-This specifically allows different Device ID, PID (Product Id) or “Dev” and different sub vendor or implementer Ids.
+This specifically allows different Device ID, PID (Product Id) or "Dev" and different sub vendor or implementer Ids.
 
 If the comparison fails, this method populates the event log with additional data.
 

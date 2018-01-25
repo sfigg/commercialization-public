@@ -10,7 +10,7 @@ MSHAttr:
 ms.assetid: D527C27B-F91E-41BF-B4DD-C404585C7944
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -46,7 +46,7 @@ This document contains instructions for partners and original equipment manufact
 
 ### <span id="Configure_the_HLK"></span><span id="configure_the_hlk"></span><span id="CONFIGURE_THE_HLK"></span>Configure the HLK
 
-For detailed instructions about how to install the HLK, see the [HLK user’s guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn930814.aspx) for detailed instructions. After you have installed and configured the HLK on all of your machines, create a machine pool and project:
+For detailed instructions about how to install the HLK, see the [HLK user's guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn930814.aspx) for detailed instructions. After you have installed and configured the HLK on all of your machines, create a machine pool and project:
 
 1.  In HLK Studio on the HLKC, create a new machine pool with a name that can easily identify the cluster later, such as the cluster name you will be using (this document uses "Cluster"). Add the TC and all of the cluster nodes to the machine pool. Make sure that the machines are in the **Ready** status.
     1.  Open **HLK Studio**, select **Start**, and then **All Apps** &gt; **Windows Kits** &gt; **HLK Studio**.
@@ -71,7 +71,7 @@ This step deploys the required test binaries and drivers to the cluster nodes an
 
 Do the following in **HLK Studio**:
 
-1.  In the **Project** tab, double-click on the project you previously created (if it’s not selected already). The project name will be displayed as the view title after you select it.
+1.  In the **Project** tab, double-click on the project you previously created (if it's not selected already). The project name will be displayed as the view title after you select it.
 2.  Click the **Selection** tab.
     1.  Select the machine pool you previously created that contains the cluster and test controller.
     2.  Select **Systems** on the left, and then check the first cluster node that appears in the list.
@@ -84,7 +84,7 @@ Do the following in **HLK Studio**:
 
     4.  In the dialog box that opens, select the **System.Solutions.StorageSpacesDirect** feature from the **Device Feature List**, and then select **OK.**
 
-3.  In the **Tests** tab, select the test **S2D – Prepare Machines for Tests**, and then select **Run Selected**.![run selected machines](images/run-selected-machines.png)
+3.  In the **Tests** tab, select the test **S2D - Prepare Machines for Tests**, and then select **Run Selected**.![run selected machines](images/run-selected-machines.png)
 4.  Specify the required parameters.
     1.  For the parameters **Domain**, **UserName**, and **Password**, enter the appropriate information for a domain user who has administrator access to all of the machines in the machine pool.
     2.  In the **Role** drop-down list, **PrimaryNode** should be selected. In the list of machines, confirm that the node you selected in the **Selections** tab is checked. In addition:
@@ -182,7 +182,7 @@ If a job or test fails, you can check the appropriate logs to discover why it fa
 1.  Select the **Results** tab in **HLK Studio** while you are in the same S2D project where the tests ran.
 2.  Expand the test that you are troubleshooting by selecting the triangle to the left of the test name.
 3.  If you have run the test multiple times, multiple results will appear. Each result will display a timestamp and identify the machine where it was run. Right-click on the result you are troubleshooting, and then select **Additional Files** &gt; **Show All**. This will open a window in File Explorer that contains the test logs and related logs.![show all test logs](images/show-all-test-logs.png)
-4.  The file names of test logs start with “TST-.” If multiple test tasks have been run in the test job, there may be multiple test log files. For instance, the BVT may have one test task that performs move CSV and another that performs storage scale unit (SSU) failures. (Due to direct-attached storage topology, each node and its storage is considered one SSU.) The variation name is in the file name (along with Calabria, a code name for Storage Spaces Direct).
+4.  The file names of test logs start with "TST-." If multiple test tasks have been run in the test job, there may be multiple test log files. For instance, the BVT may have one test task that performs move CSV and another that performs storage scale unit (SSU) failures. (Due to direct-attached storage topology, each node and its storage is considered one SSU.) The variation name is in the file name (along with Calabria, a code name for Storage Spaces Direct).
 
     ![test log file names](images/test-log-file-names.png)
 
@@ -202,7 +202,7 @@ Error: TAEF: 'TerminateOnFirstFailure' set - ignoring all following tests and at
 
 EndGroup: CalabriaBVT::VerifyIOWithRackFailure \[Failed\]
 
-Error: 1940.1404 2015/01/09-16:36:14.867 \[**SEV2**\] 0 : \[TST\]Status=-2147418113(8000FFFFH) ‘CalabriaBVT::VerifyIOWithRackFailure’ – Unexpected behavior: **Space is not in healthy state after rack recovery**. \[base\\cluster\\testsrc\\calabria\\calabriabvt\\calabriabvt.cpp@1359 CalabriaBVT::VerifyIOWithRackFailure()\] \[calabriabvt.cpp@1379\]
+Error: 1940.1404 2015/01/09-16:36:14.867 \[**SEV2**\] 0 : \[TST\]Status=-2147418113(8000FFFFH) 'CalabriaBVT::VerifyIOWithRackFailure' - Unexpected behavior: **Space is not in healthy state after rack recovery**. \[base\\cluster\\testsrc\\calabria\\calabriabvt\\calabriabvt.cpp@1359 CalabriaBVT::VerifyIOWithRackFailure()\] \[calabriabvt.cpp@1379\]
 
 **Sample output from stress tests for this issue:**
 
@@ -233,7 +233,7 @@ The most common cause of test failures is due to one or more spaces taking too l
 
 1940.1404 2015/01/09-16:36:14.867 \[INFO\] 0 : \[TST\]Space ID: 19CFCDFCC19EB54AAA780436B2B1D859 Pool ID: 5D12DF6A5D4DB444AA3407AFA5749578 Friendly Name: TestSpace Is Manual Attach? Yes Is Clustered? Yes Resiliency Type: 2 Provisioning Type: 2 Number of copies: 3 Number of columns: 1 Fault tolerance: 2 Health: 1 (Warning) State: 11 (**InService/Regenerating**) Attached on node: RR1FSC2623N05-1 Visible on nodes: RR1FSC2623N05-1 RR1FSC2623N05-2 RR1FSC2623N28-1 RR1FSC2623N28-2 Drives used by this space: \[base\\cluster\\testsrc\\common\\storagewrapper\\swvirtualdisk.cpp@66: ctsw::SWVirtualDisk::QuerySpInfo()\] \[orchestrator.cpp@192\]
 
-Error: 1940.1404 2015/01/09-16:36:14.867 \[**SEV2**\] 0 : \[TST\]Status=-2147418113(8000FFFFH) ‘CalabriaBVT::VerifyIOWithRackFailure’ – Unexpected behavior: **Space is not in healthy state after rack recovery**. \[base\\cluster\\testsrc\\calabria\\calabriabvt\\calabriabvt.cpp@1359 CalabriaBVT::VerifyIOWithRackFailure()\] \[calabriabvt.cpp@1379\]
+Error: 1940.1404 2015/01/09-16:36:14.867 \[**SEV2**\] 0 : \[TST\]Status=-2147418113(8000FFFFH) 'CalabriaBVT::VerifyIOWithRackFailure' - Unexpected behavior: **Space is not in healthy state after rack recovery**. \[base\\cluster\\testsrc\\calabria\\calabriabvt\\calabriabvt.cpp@1359 CalabriaBVT::VerifyIOWithRackFailure()\] \[calabriabvt.cpp@1379\]
 
 **Sample output from stress tests for this issue:**
 

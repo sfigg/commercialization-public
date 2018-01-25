@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2df7344b-fd7d-4904-af94-818936440667
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -86,11 +86,11 @@ You can run [Tracefmt](http://go.microsoft.com/fwlink/?LinkID=296461) from the c
 
 1.  Open a command prompt by using administrative privileges.
 
-2.  Type **Tracefmt.exe –r http://msdl.microsoft.com/download/symbols &lt;***full path to ETL file***&gt; -o OutputTxtFile.txt**
+2.  Type **Tracefmt.exe -r http://msdl.microsoft.com/download/symbols &lt;***full path to ETL file***&gt; -o OutputTxtFile.txt**
 
-3.  Type **Tracefmt.exe –r http://msdl.microsoft.com/download/symbols &lt;***full path to ETL file***&gt; -csv –o OutputCsvFile.csv**
+3.  Type **Tracefmt.exe -r http://msdl.microsoft.com/download/symbols &lt;***full path to ETL file***&gt; -csv -o OutputCsvFile.csv**
 
-You can open CSV files in Microsoft<sup>®</sup> Excel; you can use the filtering features of Excel to filter collected traces, and to search for traces from certain time periods, from certain WDTF components, and other specific criteria.
+You can open CSV files in Microsoft Excel; you can use the filtering features of Excel to filter collected traces, and to search for traces from certain time periods, from certain WDTF components, and other specific criteria.
 
 ## <span id="related_topics"></span>Related topics
 

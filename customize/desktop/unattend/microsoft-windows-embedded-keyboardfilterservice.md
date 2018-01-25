@@ -21,356 +21,92 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 
 ## Child elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Alt](Microsoft-Windows-Embedded-KeyboardFilterService-alt.md)</p></td>
-<td><p>Blocks both Alt keys.</p></td>
-</tr>
-<tr class="even">
-<td><p>[AltF4](Microsoft-Windows-Embedded-KeyboardFilterService-altf4.md)</p></td>
-<td><p>Blocks the Alt+F4 key combination used to close applications.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[AltSpace](Microsoft-Windows-Embedded-KeyboardFilterService-altspace.md)</p></td>
-<td><p>Blocks the Alt+Space key combination used to open the shortcut menu for the active window.</p></td>
-</tr>
-<tr class="even">
-<td><p>[AltTab](Microsoft-Windows-Embedded-KeyboardFilterService-alttab.md)</p></td>
-<td><p>Blocks the Alt+Tab key combination used to switch tasks. Also blocks the Alt+Shift+Tab key combination.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[AltWin](Microsoft-Windows-Embedded-KeyboardFilterService-altwin.md)</p></td>
-<td><p>Blocks all keyboard combinations beginning with Alt + Windows logo key, for example Alt + Win + S.</p></td>
-</tr>
-<tr class="even">
-<td><p>[BrowserBack](Microsoft-Windows-Embedded-KeyboardFilterService-browserback.md)</p></td>
-<td><p>Blocks the Browser Back key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[BrowserFavorites](Microsoft-Windows-Embedded-KeyboardFilterService-browserfavorites.md)</p></td>
-<td><p>Blocks the Browser Favorites key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[BrowserForward](Microsoft-Windows-Embedded-KeyboardFilterService-browserforward.md)</p></td>
-<td><p>Blocks the Browser Forward key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[BrowserHome](Microsoft-Windows-Embedded-KeyboardFilterService-browserhome.md)</p></td>
-<td><p>Blocks the Browser Home key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[BrowserRefresh](Microsoft-Windows-Embedded-KeyboardFilterService-browserrefresh.md)</p></td>
-<td><p>Blocks the Browser Refresh key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[BrowserSearch](Microsoft-Windows-Embedded-KeyboardFilterService-browsersearch.md)</p></td>
-<td><p>Blocks the Browser Search key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[BrowserStop](Microsoft-Windows-Embedded-KeyboardFilterService-browserstop.md)</p></td>
-<td><p>Blocks the Browser Stop key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ControlAltDelete](Microsoft-Windows-Embedded-KeyboardFilterService-controlaltdelete.md)</p></td>
-<td><p>Blocks the Control+Alt+Delete key combination used to open the Windows Security screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ControlEscape](Microsoft-Windows-Embedded-KeyboardFilterService-controlescape.md)</p></td>
-<td><p>Blocks the Control+Escape key combination used to open the Start screen.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ControlTab](Microsoft-Windows-Embedded-KeyboardFilterService-controltab.md)</p></td>
-<td><p>Blocks the Control+Tab key combination used to switch windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ControlWindowsF](Microsoft-Windows-Embedded-KeyboardFilterService-controlwindowsf.md)</p></td>
-<td><p>Blocks the Control+Windows logo key+F key combination used to open the Find Computers dialog box.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Ctrl](Microsoft-Windows-Embedded-KeyboardFilterService-ctrl.md)</p></td>
-<td><p>Blocks both Ctrl keys.</p></td>
-</tr>
-<tr class="even">
-<td><p>[CtrlF4](Microsoft-Windows-Embedded-KeyboardFilterService-ctrlf4.md)</p></td>
-<td><p>Blocks the Control+F4 key combination used to close the active window.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[CtrlWin](Microsoft-Windows-Embedded-KeyboardFilterService-ctrlwin.md)</p></td>
-<td><p>Blocks the Ctrl + Windows logo key keyboard combination.</p></td>
-</tr>
-<tr class="even">
-<td><p>[CustomFilters](Microsoft-Windows-Embedded-KeyboardFilterService-customfilters.md)</p></td>
-<td><p>Blocks the list of custom keys.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[CustomScancodes](Microsoft-Windows-Embedded-KeyboardFilterService-customscancodes.md)</p></td>
-<td><p>Blocks the list of custom scan codes.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DisableKeyboardFilterForAdministrators](Microsoft-Windows-Embedded-KeyboardFilterService-disablekeyboardfilterforadministrators.md)</p></td>
-<td><p>Disables the keyboard filter for administrators.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Escape](Microsoft-Windows-Embedded-KeyboardFilterService-escape.md)</p></td>
-<td><p>Blocks the Escape key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[F21](Microsoft-Windows-Embedded-KeyboardFilterService-f21.md)</p></td>
-<td><p>Blocks the F21 key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ForceOffAccessibility](Microsoft-Windows-Embedded-KeyboardFilterService-forceoffaccessibility.md)</p></td>
-<td><p>Disables all Ease of Access features and prevents users from enabling them.</p></td>
-</tr>
-<tr class="even">
-<td><p>[LaunchApp1](Microsoft-Windows-Embedded-KeyboardFilterService-launchapp1.md)</p></td>
-<td><p>Blocks the Start Application 1 key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LaunchApp2](Microsoft-Windows-Embedded-KeyboardFilterService-launchapp2.md)</p></td>
-<td><p>Blocks the Start Application 1 key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[LaunchMail](Microsoft-Windows-Embedded-KeyboardFilterService-launchmail.md)</p></td>
-<td><p>Blocks the Start Mail key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LaunchMediaSelect](Microsoft-Windows-Embedded-KeyboardFilterService-launchmediaselect.md)</p></td>
-<td><p>Blocks the Media Select key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[LeftShiftLeftAltNumLock](Microsoft-Windows-Embedded-KeyboardFilterService-leftshiftleftaltnumlock.md)</p></td>
-<td><p>Blocks the Left Shift+Left Alt+Num Lock key combination used to open the Mouse Keys dialog box.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[LeftShiftLeftAltPrintScreen](Microsoft-Windows-Embedded-KeyboardFilterService-leftshiftleftaltprintscreen.md)</p></td>
-<td><p>Blocks the Left Shift+Left Alt+Print Screen key combination used to open the High Contrast dialog box.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MediaNext](Microsoft-Windows-Embedded-KeyboardFilterService-medianext.md)</p></td>
-<td><p>Blocks the Next Track key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[MediaPlayPause](Microsoft-Windows-Embedded-KeyboardFilterService-mediaplaypause.md)</p></td>
-<td><p>Blocks the Play/Pause Media key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MediaPrev](Microsoft-Windows-Embedded-KeyboardFilterService-mediaprev.md)</p></td>
-<td><p>Blocks the Previous Track key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[MediaStop](Microsoft-Windows-Embedded-KeyboardFilterService-mediastop.md)</p></td>
-<td><p>Blocks the Stop media key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Shift](Microsoft-Windows-Embedded-KeyboardFilterService-shift.md)</p></td>
-<td><p>Blocks both Shift keys.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ShiftControlEscape](Microsoft-Windows-Embedded-KeyboardFilterService-shiftcontrolescape.md)</p></td>
-<td><p>Blocks the Shift+Control+Escape key combination used to open Task Manager.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ShiftWin](Microsoft-Windows-Embedded-KeyboardFilterService-shiftwin.md)</p></td>
-<td><p>Blocks the Shift + Windows logo key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[VolumeDown](Microsoft-Windows-Embedded-KeyboardFilterService-volumedown.md)</p></td>
-<td><p>Blocks the Volume Down key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[VolumeMute](Microsoft-Windows-Embedded-KeyboardFilterService-volumemute.md)</p></td>
-<td><p>Blocks the Volume Mute key.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[VolumeUp](Microsoft-Windows-Embedded-KeyboardFilterService-volumeup.md)</p></td>
-<td><p>Blocks the Volume Up key.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Windows](Microsoft-Windows-Embedded-KeyboardFilterService-windows.md)</p></td>
-<td><p>Blocks both Windows logo keys.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsB](Microsoft-Windows-Embedded-KeyboardFilterService-windowsb.md)</p></td>
-<td><p>Blocks the Windows logo key+B key combination used to set focus in the Notification area.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsBreak](Microsoft-Windows-Embedded-KeyboardFilterService-windowsbreak.md)</p></td>
-<td><p>Blocks the Windows logo key+Break key combination used to open the System dialog box.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsC](Microsoft-Windows-Embedded-KeyboardFilterService-windowsc.md)</p></td>
-<td><p>Blocks the Windows logo key+C key combination used to open charms.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsComma](Microsoft-Windows-Embedded-KeyboardFilterService-windowscomma.md)</p></td>
-<td><p>Blocks the Windows logo key+Comma key combination used to peek at the desktop.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsD](Microsoft-Windows-Embedded-KeyboardFilterService-windowsd.md)</p></td>
-<td><p>Blocks the Windows logo key+D key combination used to show the desktop.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowsdown.md)</p></td>
-<td><p>Blocks the Windows logo key+Down Arrow key combination used to minimize the active window.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsE](Microsoft-Windows-Embedded-KeyboardFilterService-windowse.md)</p></td>
-<td><p>Blocks the Windows logo key+E key combination used to open Windows Explorer.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsEnter](Microsoft-Windows-Embedded-KeyboardFilterService-windowsenter.md)</p></td>
-<td><p>Blocks the Windows logo key+Enter key combination used to start Narrator.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsEscape](Microsoft-Windows-Embedded-KeyboardFilterService-windowsescape.md)</p></td>
-<td><p>Blocks the Windows logo key+Esc key combination used to close the Magnifier application.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsF](Microsoft-Windows-Embedded-KeyboardFilterService-windowsf.md)</p></td>
-<td><p>Blocks the Windows logo key+F key combination used to open Search.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsF1](Microsoft-Windows-Embedded-KeyboardFilterService-windowsf1.md)</p></td>
-<td><p>Blocks the Windows logo key+F1 key combination used to open Windows Help.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsH](Microsoft-Windows-Embedded-KeyboardFilterService-windowsh.md)</p></td>
-<td><p>Blocks the Windows logo key+H key combination used to open the Share charm.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsHome](Microsoft-Windows-Embedded-KeyboardFilterService-windowshome.md)</p></td>
-<td><p>Blocks the Windows logo key+Home key combination used to minimize or restore all inactive windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsI](Microsoft-Windows-Embedded-KeyboardFilterService-windowsi.md)</p></td>
-<td><p>Blocks the Windows logo key+I key combination used to open the Settings charm.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsJ](Microsoft-Windows-Embedded-KeyboardFilterService-windowsj.md)</p></td>
-<td><p>Blocks the Windows logo key+J key combination used to swap between snapped and filled applications.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsK](Microsoft-Windows-Embedded-KeyboardFilterService-windowsk.md)</p></td>
-<td><p>Blocks the Windows logo key+K key combination used to open the Connect charm.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsL](Microsoft-Windows-Embedded-KeyboardFilterService-windowsl.md)</p></td>
-<td><p>Blocks the Windows logo key+L key combination used to lock the device.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsLeft](Microsoft-Windows-Embedded-KeyboardFilterService-windowsleft.md)</p></td>
-<td><p>Blocks the Windows logo key+Left Arrow key combination used to snap the active window to the left half of the screen.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsM](Microsoft-Windows-Embedded-KeyboardFilterService-windowsm.md)</p></td>
-<td><p>Blocks the Windows logo key+M key combination used to minimize all windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsMinus](Microsoft-Windows-Embedded-KeyboardFilterService-windowsminus.md)</p></td>
-<td><p>Blocks the Windows logo key+Minus key combination used to zoom out.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsO](Microsoft-Windows-Embedded-KeyboardFilterService-windowso.md)</p></td>
-<td><p>Blocks the Windows logo key+O key combination used to lock device orientation.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsP](Microsoft-Windows-Embedded-KeyboardFilterService-windowsp.md)</p></td>
-<td><p>Blocks the Windows logo key+P key combination used to cycle through Presentation Mode. Also blocks the Windows logo key+Shift+P and Windows logo key+Ctrl+P key combinations.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsPageDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowspagedown.md)</p></td>
-<td><p>Blocks the Windows logo key+Page Down key combination used to move a Microsoft Store app to the right monitor.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsPageUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowspageup.md)</p></td>
-<td><p>Blocks the Windows logo key+Page Up key combination used to move a Microsoft Store app to the left monitor.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsPeriod](Microsoft-Windows-Embedded-KeyboardFilterService-windowsperiod.md)</p></td>
-<td><p>Blocks the Windows logo key+Period key combination used to snap the current screen to the left or right gutter. Also blocks the Windows logo key+Shift+Period key combinations.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsPlus](Microsoft-Windows-Embedded-KeyboardFilterService-windowsplus.md)</p></td>
-<td><p>Blocks the Windows logo key+Plus key combination used to zoom in.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsQ](Microsoft-Windows-Embedded-KeyboardFilterService-windowsq.md)</p></td>
-<td><p>Blocks the Windows logo key+Q key combination used to open the Search charm.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsR](Microsoft-Windows-Embedded-KeyboardFilterService-windowsr.md)</p></td>
-<td><p>Blocks the Windows logo key+R key combination used to open the Run dialog box.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsRight](Microsoft-Windows-Embedded-KeyboardFilterService-windowsright.md)</p></td>
-<td><p>Blocks the Windows logo key+Right Arrow key combination used to snap the active windows to the right half of the screen.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsShiftDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftdown.md)</p></td>
-<td><p>Blocks the Windows logo key+Shift+Down Arrow key combination used to minimize the active window.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsShiftLeft](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftleft.md)</p></td>
-<td><p>Blocks the Windows logo key+Shift+Left Arrow key combination used to move the active window to the left monitor.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsShiftRight](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftright.md)</p></td>
-<td><p>Blocks the Windows logo key+Shift+Right Arrow key combination used to move the active window to the right monitor.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsShiftUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftup.md)</p></td>
-<td><p>Blocks the Windows logo key+Shift+Up Arrow key combination used to maximize the active window vertically.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsSlash](Microsoft-Windows-Embedded-KeyboardFilterService-windowsslash.md)</p></td>
-<td><p>Blocks the Windows logo key+Slash key combination used to open the Input Method Editor (IME).</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsSpace](Microsoft-Windows-Embedded-KeyboardFilterService-windowsspace.md)</p></td>
-<td><p>Blocks the Windows logo key+Spacebar key combination used to switch layout.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsT](Microsoft-Windows-Embedded-KeyboardFilterService-windowst.md)</p></td>
-<td><p>Blocks the Windows logo key+T key combination used to set focus on taskbar and cycle through programs.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsTab](Microsoft-Windows-Embedded-KeyboardFilterService-windowstab.md)</p></td>
-<td><p>Blocks the Windows logo key+Tab key combination used to cycle through Microsoft Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsU](Microsoft-Windows-Embedded-KeyboardFilterService-windowsu.md)</p></td>
-<td><p>Blocks the Windows logo key+Comma key combination used to peek at the desktop.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowsup.md)</p></td>
-<td><p>Blocks the Windows logo key+Up Arrow key combination used to maximize the active window.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsV](Microsoft-Windows-Embedded-KeyboardFilterService-windowsv.md)</p></td>
-<td><p>Blocks the Windows logo key+V key combination used to cycle through toasts in reverse order.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[WindowsW](Microsoft-Windows-Embedded-KeyboardFilterService-windowsw.md)</p></td>
-<td><p>Blocks the Windows logo key+W key combination used to open the Settings Search charm.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WindowsZ](Microsoft-Windows-Embedded-KeyboardFilterService-windowsz.md)</p></td>
-<td><p>Blocks the Windows logo key+Z key combination used to open the app bar.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Alt](Microsoft-Windows-Embedded-KeyboardFilterService-alt.md)|Blocks both Alt keys. |
+| [AltF4](Microsoft-Windows-Embedded-KeyboardFilterService-altf4.md) |Blocks the Alt+F4 key combination used to close applications. |
+| [AltSpace](Microsoft-Windows-Embedded-KeyboardFilterService-altspace.md) | Blocks the Alt+Space key combination used to open the shortcut menu for the active window. |
+| [AltTab](Microsoft-Windows-Embedded-KeyboardFilterService-alttab.md) | Blocks the Alt+Tab key combination used to switch tasks. Also blocks the Alt+Shift+Tab key combination.|
+| [AltWin](Microsoft-Windows-Embedded-KeyboardFilterService-altwin.md) | Blocks all keyboard combinations beginning with Alt + Windows logo key, for example Alt + Win + S. |
+| [BrowserBack](Microsoft-Windows-Embedded-KeyboardFilterService-browserback.md) | Blocks the Browser Back key. |
+| [BrowserFavorites](Microsoft-Windows-Embedded-KeyboardFilterService-browserfavorites.md) | Blocks the Browser Favorites key. |
+| [BrowserForward](Microsoft-Windows-Embedded-KeyboardFilterService-browserforward.md)|Blocks the Browser Forward key.|
+| [BrowserHome](Microsoft-Windows-Embedded-KeyboardFilterService-browserhome.md)|Blocks the Browser Home key.|
+| [BrowserRefresh](Microsoft-Windows-Embedded-KeyboardFilterService-browserrefresh.md)|Blocks the Browser Refresh key.|
+| [BrowserSearch](Microsoft-Windows-Embedded-KeyboardFilterService-browsersearch.md)|Blocks the Browser Search key.|
+| [BrowserStop](Microsoft-Windows-Embedded-KeyboardFilterService-browserstop.md)|Blocks the Browser Stop key.|
+| [ControlAltDelete](Microsoft-Windows-Embedded-KeyboardFilterService-controlaltdelete.md)|Blocks the Control+Alt+Delete key combination used to open the Windows Security screen.|
+| [ControlEscape](Microsoft-Windows-Embedded-KeyboardFilterService-controlescape.md)|Blocks the Control+Escape key combination used to open the Start screen.|
+| [ControlTab](Microsoft-Windows-Embedded-KeyboardFilterService-controltab.md)|Blocks the Control+Tab key combination used to switch windows.|
+| [ControlWindowsF](Microsoft-Windows-Embedded-KeyboardFilterService-controlwindowsf.md)|Blocks the Control+Windows logo key+F key combination used to open the Find Computers dialog box.|
+|[Ctrl](Microsoft-Windows-Embedded-KeyboardFilterService-ctrl.md)|Blocks both Ctrl keys.|
+|[CtrlF4](Microsoft-Windows-Embedded-KeyboardFilterService-ctrlf4.md)|Blocks the Control+F4 key combination used to close the active window.|
+|[CtrlWin](Microsoft-Windows-Embedded-KeyboardFilterService-ctrlwin.md)|Blocks the Ctrl + Windows logo key keyboard combination.|
+|[CustomFilters](Microsoft-Windows-Embedded-KeyboardFilterService-customfilters.md)|Blocks the list of custom keys.|
+|[CustomScancodes](Microsoft-Windows-Embedded-KeyboardFilterService-customscancodes.md)|Blocks the list of custom scan codes.|
+|[DisableKeyboardFilterForAdministrators](Microsoft-Windows-Embedded-KeyboardFilterService-disablekeyboardfilterforadministrators.md)|Disables the keyboard filter for administrators.|
+|[Escape](Microsoft-Windows-Embedded-KeyboardFilterService-escape.md)|Blocks the Escape key.|
+|[F21](Microsoft-Windows-Embedded-KeyboardFilterService-f21.md)|Blocks the F21 key.|
+|[ForceOffAccessibility](Microsoft-Windows-Embedded-KeyboardFilterService-forceoffaccessibility.md)|Disables all Ease of Access features and prevents users from enabling them.|
+|[LaunchApp1](Microsoft-Windows-Embedded-KeyboardFilterService-launchapp1.md)|Blocks the Start Application 1 key.|
+|[LaunchApp2](Microsoft-Windows-Embedded-KeyboardFilterService-launchapp2.md)|Blocks the Start Application 1 key.|
+|[LaunchMail](Microsoft-Windows-Embedded-KeyboardFilterService-launchmail.md)|Blocks the Start Mail key.|
+|[LaunchMediaSelect](Microsoft-Windows-Embedded-KeyboardFilterService-launchmediaselect.md)|Blocks the Media Select key.|
+|[LeftShiftLeftAltNumLock](Microsoft-Windows-Embedded-KeyboardFilterService-leftshiftleftaltnumlock.md)|Blocks the Left Shift+Left Alt+Num Lock key combination used to open the Mouse Keys dialog box.|
+|[LeftShiftLeftAltPrintScreen](Microsoft-Windows-Embedded-KeyboardFilterService-leftshiftleftaltprintscreen.md)|Blocks the Left Shift+Left Alt+Print Screen key combination used to open the High Contrast dialog box.|
+|[MediaNext](Microsoft-Windows-Embedded-KeyboardFilterService-medianext.md)|Blocks the Next Track key.|
+|[MediaPlayPause](Microsoft-Windows-Embedded-KeyboardFilterService-mediaplaypause.md)|Blocks the Play/Pause Media key.|
+|[MediaPrev](Microsoft-Windows-Embedded-KeyboardFilterService-mediaprev.md)|Blocks the Previous Track key.|
+|[MediaStop](Microsoft-Windows-Embedded-KeyboardFilterService-mediastop.md)|Blocks the Stop media key.|
+|[Shift](Microsoft-Windows-Embedded-KeyboardFilterService-shift.md)|Blocks both Shift keys.|
+|[ShiftControlEscape](Microsoft-Windows-Embedded-KeyboardFilterService-shiftcontrolescape.md)|Blocks the Shift+Control+Escape key combination used to open Task Manager.|
+|[ShiftWin](Microsoft-Windows-Embedded-KeyboardFilterService-shiftwin.md)|Blocks the Shift + Windows logo key.|
+|[VolumeDown](Microsoft-Windows-Embedded-KeyboardFilterService-volumedown.md)|Blocks the Volume Down key.|
+|[VolumeMute](Microsoft-Windows-Embedded-KeyboardFilterService-volumemute.md)|Blocks the Volume Mute key.|
+|[VolumeUp](Microsoft-Windows-Embedded-KeyboardFilterService-volumeup.md)|Blocks the Volume Up key.|
+|[Windows](Microsoft-Windows-Embedded-KeyboardFilterService-windows.md)|Blocks both Windows logo keys.|
+|[WindowsB](Microsoft-Windows-Embedded-KeyboardFilterService-windowsb.md)|Blocks the Windows logo key+B key combination used to set focus in the Notification area.|
+|[WindowsBreak](Microsoft-Windows-Embedded-KeyboardFilterService-windowsbreak.md)|Blocks the Windows logo key+Break key combination used to open the System dialog box.|
+|[WindowsC](Microsoft-Windows-Embedded-KeyboardFilterService-windowsc.md)|Blocks the Windows logo key+C key combination used to open charms.|
+|[WindowsComma](Microsoft-Windows-Embedded-KeyboardFilterService-windowscomma.md)|Blocks the Windows logo key+Comma key combination used to peek at the desktop.|
+|[WindowsD](Microsoft-Windows-Embedded-KeyboardFilterService-windowsd.md)|Blocks the Windows logo key+D key combination used to show the desktop.|
+|[WindowsDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowsdown.md)|Blocks the Windows logo key+Down Arrow key combination used to minimize the active window.|
+|[WindowsE](Microsoft-Windows-Embedded-KeyboardFilterService-windowse.md)|Blocks the Windows logo key+E key combination used to open Windows Explorer.|
+|[WindowsEnter](Microsoft-Windows-Embedded-KeyboardFilterService-windowsenter.md)|Blocks the Windows logo key+Enter key combination used to start Narrator.|
+|[WindowsEscape](Microsoft-Windows-Embedded-KeyboardFilterService-windowsescape.md)|Blocks the Windows logo key+Esc key combination used to close the Magnifier application.|
+|[WindowsF](Microsoft-Windows-Embedded-KeyboardFilterService-windowsf.md)|Blocks the Windows logo key+F key combination used to open Search.|
+|[WindowsF1](Microsoft-Windows-Embedded-KeyboardFilterService-windowsf1.md)|Blocks the Windows logo key+F1 key combination used to open Windows Help.|
+|[WindowsH](Microsoft-Windows-Embedded-KeyboardFilterService-windowsh.md)|Blocks the Windows logo key+H key combination used to open the Share charm.|
+|[WindowsHome](Microsoft-Windows-Embedded-KeyboardFilterService-windowshome.md)|Blocks the Windows logo key+Home key combination used to minimize or restore all inactive windows.|
+|[WindowsI](Microsoft-Windows-Embedded-KeyboardFilterService-windowsi.md)|Blocks the Windows logo key+I key combination used to open the Settings charm.|
+|[WindowsJ](Microsoft-Windows-Embedded-KeyboardFilterService-windowsj.md)|Blocks the Windows logo key+J key combination used to swap between snapped and filled applications.|
+|[WindowsK](Microsoft-Windows-Embedded-KeyboardFilterService-windowsk.md)|Blocks the Windows logo key+K key combination used to open the Connect charm.|
+|[WindowsL](Microsoft-Windows-Embedded-KeyboardFilterService-windowsl.md)|Blocks the Windows logo key+L key combination used to lock the device.|
+|[WindowsLeft](Microsoft-Windows-Embedded-KeyboardFilterService-windowsleft.md)|Blocks the Windows logo key+Left Arrow key combination used to snap the active window to the left half of the screen.|
+|[WindowsM](Microsoft-Windows-Embedded-KeyboardFilterService-windowsm.md)|Blocks the Windows logo key+M key combination used to minimize all windows.|
+|[WindowsMinus](Microsoft-Windows-Embedded-KeyboardFilterService-windowsminus.md)|Blocks the Windows logo key+Minus key combination used to zoom out.|
+|[WindowsO](Microsoft-Windows-Embedded-KeyboardFilterService-windowso.md)|Blocks the Windows logo key+O key combination used to lock device orientation.|
+|[WindowsP](Microsoft-Windows-Embedded-KeyboardFilterService-windowsp.md)|Blocks the Windows logo key+P key combination used to cycle through Presentation Mode. Also blocks the Windows logo key+Shift+P and Windows logo key+Ctrl+P key combinations.|
+|[WindowsPageDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowspagedown.md)|Blocks the Windows logo key+Page Down key combination used to move a Microsoft Store app to the right monitor.|
+|[WindowsPageUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowspageup.md)|Blocks the Windows logo key+Page Up key combination used to move a Microsoft Store app to the left monitor.|
+|[WindowsPeriod](Microsoft-Windows-Embedded-KeyboardFilterService-windowsperiod.md)|Blocks the Windows logo key+Period key combination used to snap the current screen to the left or right gutter. Also blocks the Windows logo key+Shift+Period key combinations.|
+|[WindowsPlus](Microsoft-Windows-Embedded-KeyboardFilterService-windowsplus.md)|Blocks the Windows logo key+Plus key combination used to zoom in.|
+|[WindowsQ](Microsoft-Windows-Embedded-KeyboardFilterService-windowsq.md)|Blocks the Windows logo key+Q key combination used to open the Search charm.|
+|[WindowsR](Microsoft-Windows-Embedded-KeyboardFilterService-windowsr.md)|Blocks the Windows logo key+R key combination used to open the Run dialog box.|
+|[WindowsRight](Microsoft-Windows-Embedded-KeyboardFilterService-windowsright.md)|Blocks the Windows logo key+Right Arrow key combination used to snap the active windows to the right half of the screen.|
+|[WindowsShiftDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftdown.md)|Blocks the Windows logo key+Shift+Down Arrow key combination used to minimize the active window.|
+|[WindowsShiftLeft](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftleft.md)|Blocks the Windows logo key+Shift+Left Arrow key combination used to move the active window to the left monitor.|
+|[WindowsShiftRight](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftright.md)|Blocks the Windows logo key+Shift+Right Arrow key combination used to move the active window to the right monitor.|
+|[WindowsShiftUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowsshiftup.md)|Blocks the Windows logo key+Shift+Up Arrow key combination used to maximize the active window vertically.|
+|[WindowsSlash](Microsoft-Windows-Embedded-KeyboardFilterService-windowsslash.md)|Blocks the Windows logo key+Slash key combination used to open the Input Method Editor (IME).|
+|[WindowsSpace](Microsoft-Windows-Embedded-KeyboardFilterService-windowsspace.md)|Blocks the Windows logo key+Spacebar key combination used to switch layout.|
+|[WindowsT](Microsoft-Windows-Embedded-KeyboardFilterService-windowst.md)|Blocks the Windows logo key+T key combination used to set focus on taskbar and cycle through programs.|
+|[WindowsTab](Microsoft-Windows-Embedded-KeyboardFilterService-windowstab.md)|Blocks the Windows logo key+Tab key combination used to cycle through Microsoft Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.|
+|[WindowsU](Microsoft-Windows-Embedded-KeyboardFilterService-windowsu.md)|Blocks the Windows logo key+Comma key combination used to peek at the desktop.|
+|[WindowsUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowsup.md)|Blocks the Windows logo key+Up Arrow key combination used to maximize the active window.|
+|[WindowsV](Microsoft-Windows-Embedded-KeyboardFilterService-windowsv.md)|Blocks the Windows logo key+V key combination used to cycle through toasts in reverse order.|
+|[WindowsW](Microsoft-Windows-Embedded-KeyboardFilterService-windowsw.md)|Blocks the Windows logo key+W key combination used to open the Settings Search charm.|
+|[WindowsZ](Microsoft-Windows-Embedded-KeyboardFilterService-windowsz.md)|Blocks the Windows logo key+Z key combination used to open the app bar.|
 
 ## Applies to
 

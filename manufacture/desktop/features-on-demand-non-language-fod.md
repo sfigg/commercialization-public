@@ -45,7 +45,7 @@ To see available Features on Demand for languages and regions, see [Language and
 
 ### Accessibility
 
-This Feature on Demand enables Braille devices to work with the inbox Narrator screen reader. Without this Feature on Demand, Braille drivers and translation tables will be missing, causing Braille to no function properly.
+This Feature on Demand enables Braille devices to work with the inbox Narrator screen reader. Without this Feature on Demand, Braille drivers and translation tables will be missing, causing Braille to not function properly.
 
 **Recommendation:** Don't include these Features on Demand in your image, as doing so could conflict with Braille device rights restrictions.
 

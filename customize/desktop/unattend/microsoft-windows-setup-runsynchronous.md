@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RunSynchronous
-
 
 `RunSynchronous` specifies one or more commands to run during the windowsPE configuration pass.
 
@@ -27,43 +25,27 @@ All `RunSynchronous` commands run in the system context.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md)</p></td>
-<td><p>Specifies the path, the order, and the credentials of the command to run synchronously.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | Specifies the path, the order, and the credentials of the command to run synchronously. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **RunSynchronous**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **RunSynchronous**
 
 ## Applies To
 
-
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set synchronous commands.
 
-```
+```XML
 <RunSynchronous>
    <!-- First synchronous command to run -->
    <RunSynchronousCommand>
@@ -87,16 +69,4 @@ The following XML output shows how to set synchronous commands.
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)

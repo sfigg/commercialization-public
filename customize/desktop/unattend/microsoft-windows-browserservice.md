@@ -21,39 +21,14 @@ The Microsoft-Windows-BrowserService component maintains a list of all available
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[MaintainServerList](microsoft-windows-browserservice-maintainserverlist.md)</p></td>
-<td><p>Specifies whether the computer can act as a master or backup browser on a subnet.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [MaintainServerList](microsoft-windows-browserservice-maintainserverlist.md) | Specifies whether the computer can act as a master or backup browser on a subnet. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

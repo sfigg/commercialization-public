@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 55000D73-7F72-4B8C-BB0E-2B1693DF10FD
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -73,7 +73,7 @@ E:.
     -   readme1st.txt - contains information for how to run the exported test
     -   run.cmd - batch file that is used to run the test
     -   binaries and other files required to run the test
-    -   setup(*architecture*).exe – install executable that is used to install the infrastructure
+    -   setup(*architecture*).exe - install executable that is used to install the infrastructure
 
 4.  Take the exported test folder to the new machine for testing. The path should not contain any spaces, as this will cause some tests to fail.
 

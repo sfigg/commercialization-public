@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1e8ce900-ca80-4d8e-b507-2976262aa8f4
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -86,7 +86,7 @@ The IPSec test job may fail due to issues with related LAN test jobs. See the fo
 <td><p>This problem is usually caused by various communication issues between the DTM client and the controller. You can check whether the &quot;Last Heartbeat time&quot; is close to the current time. To force the DTM client that is reporting a heartbeat, you can manually change the status of the machine to <strong>Reset</strong> or <strong>Unsafe</strong> in the DTM Studio, and then wait until the status of the machine changes back to &quot;Normal&quot;. After the status of all machines that are required to run the job is changed to <strong>Normal</strong>, the job will be scheduled on the DTM clients. If the machine status changes to <strong>Debug</strong>, verify whether the DTM client machine is still responsive. Sometimes, the machine status is <strong>Normal</strong> and the heartbeat is correct, but the job still won't run. This is most likely caused by the firewall or IPsec blocking the communication between the DTM client and the controller. Make sure that the DTM client and controller have the same IPsec configuration. If the client has IPsec turned on but the controller turned off, or vice versa, the job will not get scheduled. The DTM client is designed to work with a firewall, but sometimes the firewall blocks normal traffic between the client and the controller.</p></td>
 </tr>
 <tr class="even">
-<td><p>The following error message is observer in the test log: “The Job xxx requires a device to be selected, not a driver&quot; when clicking &quot;Add Information&quot;.</p></td>
+<td><p>The following error message is observer in the test log: "The Job xxx requires a device to be selected, not a driver&quot; when clicking &quot;Add Information&quot;.</p></td>
 <td><p>The error happens because you have selected a driver, not a test device, in the <strong>Device Console</strong> to run the test job. If you cannot find a device under the driver in the <strong>Device Console,</strong> the INF file and driver files that you provided during the logo submission do not match the actual INF file and driver files on the DTM client. Update your INF file and driver files by using the actual INF file and driver files installed on the DTM client.</p></td>
 </tr>
 <tr class="odd">

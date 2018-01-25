@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 83f84931-6bdd-42cc-96b6-4ac4b08d7368
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -97,7 +97,7 @@ Server systems might have additional functionality beyond that which is required
 
 These additional feature tests are in the Windows HLK test harness together with the tests that are listed for systems. Vendors whose systems can meet the requirements for these additional features must select and run the required tests. The Fault Tolerant tests exercise and confirm the ability of a fault-tolerant system hardware, devices, and drivers to have a hardware failure and continue to operate without impacting clients that are connected to the server over on the network. The Enhanced Power Management tests validate that the systems supports the CPUID feature flag, processor p-states, and other functionality needed for Windows Serverto manage the power of the system.
 
-For more information, see the "Power Supply, Metering, and Budgeting Interface" section in the [ACPI 4.0 or later specification](http://www.acpi.info/spec.md) and “[Processor Power Management in Windows Vista and Windows Server](http://go.microsoft.com/fwlink/?LinkID=296636).
+For more information, see the "Power Supply, Metering, and Budgeting Interface" section in the [ACPI 4.0 or later specification](http://www.acpi.info/spec.md) and "[Processor Power Management in Windows Vista and Windows Server](http://go.microsoft.com/fwlink/?LinkID=296636).
 
 Note that a system can support none, some or all of the above features, such as both enhanced power management. For a vendor to validate that the system meets the requirements for one or more additional features, one or more of the additional feature tests must be selected and run. Those results are then submitted together with the results of the Server Certification tests. The additional feature test results cannot be submitted separately from Server Certification test results.
 

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1bb7ac5e-c492-4d45-8b06-e2f97e578456
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -47,7 +47,7 @@ You can then use the **!process /p /r** extension to get full stack traces from 
 
 For more information about the **!process** extension, see [!process](http://go.microsoft.com/fwlink/?LinkID=299524) and [.process (Set Process Context)](http://go.microsoft.com/fwlink/?LinkID_299529).
 
-Note that **!process** output contains tick counts for each thread that is running in the process. When you investigate test hangs, threads that have a high tick count that contain WDTF components on the stack (that is, module names that start with “WDTF” on the stack) should be reviewed carefully because these threads can cause the tests to permanently hang and eventually fail because of a timeout.
+Note that **!process** output contains tick counts for each thread that is running in the process. When you investigate test hangs, threads that have a high tick count that contain WDTF components on the stack (that is, module names that start with "WDTF" on the stack) should be reviewed carefully because these threads can cause the tests to permanently hang and eventually fail because of a timeout.
 
 *Example:*
 

@@ -13,59 +13,35 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Fax
-
 
 `Fax` specifies settings for saving incoming and outgoing faxes and whether incoming faxes can be viewed by all users.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[ArchiveFaxes](microsoft-windows-fax-service-fax-archivefaxes.md)</p></td>
-<td><p>Specifies whether to save all incoming and outgoing faxes in a folder.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ArchiveFolderName](microsoft-windows-fax-service-fax-archivefoldername.md)</p></td>
-<td><p>Specifies the folder in which the fax service saves copies of all incoming and outgoing faxes.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[IncomingFaxesArePublic](microsoft-windows-fax-service-fax-incomingfaxesarepublic.md)</p></td>
-<td><p>Specifies whether all incoming faxes not assigned to a specific user can be viewed by all users.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [ArchiveFaxes](microsoft-windows-fax-service-fax-archivefaxes.md) | Specifies whether to save all incoming and outgoing faxes in a folder. |
+| [ArchiveFolderName](microsoft-windows-fax-service-fax-archivefoldername.md) | Specifies the folder in which the fax service saves copies of all incoming and outgoing faxes. |
+| [IncomingFaxesArePublic](microsoft-windows-fax-service-fax-incomingfaxesarepublic.md) | Specifies whether all incoming faxes not assigned to a specific user can be viewed by all users. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | **Fax**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md).
 
 ## XML Example
 
-
 The following XML output shows how to set fax settings.
 
-```
+```XML
 <Fax>
    <ArchiveFaxes>true</ArchiveFaxes>
    <IncomingFaxesArePublic>false</IncomingFaxesArePublic>
@@ -96,16 +72,4 @@ The following XML output shows how to set fax settings.
 
 ## Related topics
 
-
 [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md)
-
- 
-
- 
-
-
-
-
-
-
-

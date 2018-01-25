@@ -13,144 +13,59 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Cluster
-
 
 `Cluster` contains the settings to specify details about a cluster, such as its interface, IP address, portrules, and so on.
 
-**Note**  
-To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
-
- 
+> [!Note]
+> To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
 ## Child Elements
 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+|[BDATeam](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam.md)|Specifies details about a bidirectional affinity (BDA) team.|
+|[ClusterIpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteripaddress.md)|Specifies the cluster primary IP address.|
+|[ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteriptoclustermacenabled.md)|Specifies whether the cluster MAC address is automatically calculated from the primary cluster IP address.|
+|[ClusterMacAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-clustermacaddress.md)|Specifies the cluster MAC address to be used when configuring a unicast cluster.|
+|[ClusterMode](microsoft-windows-networkloadbalancing-core-clusters-cluster-clustermode.md)|Specifies the mode for the cluster.|
+|[ClusterName](microsoft-windows-networkloadbalancing-core-clusters-cluster-clustername.md)|Specifies a full Internet name for the cluster.|
+|[ClusterNetMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusternetmask.md)|Specifies the subnet mask for the cluster IP address.|
+|[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses.md)|Specifies the host's unique IP addresses.|
+|[HostIdentifier](microsoft-windows-networkloadbalancing-core-clusters-cluster-hostidentifier.md)|Specifies the host identifier used by this cluster.|
+|[ICMPFilteringEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-icmpfilteringenabled.md)|Specifies whether Internet Control Message Protocol (ICMP) filtering is enabled for the cluster.|
+|[IdentityHeartbeatPeriod](microsoft-windows-networkloadbalancing-core-clusters-cluster-identityheartbeatperiod.md)|Specifies the recurrence interval for transmitting identity heartbeats between the NetworkLoadBalancing cluster hosts.|
+|[InitialHostState](microsoft-windows-networkloadbalancing-core-clusters-cluster-initialhoststate.md)|Specifies the initial host state for the cluster.|
+|[Interface](microsoft-windows-networkloadbalancing-core-clusters-cluster-interface.md)|Specifies the interface name to bind to network load balancing (NLB). This is a required setting.|
+|[MaskSourceMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-masksourcemacenabled.md)|Specifies whether source Media Access Control (MAC) address masking is used.|
+|[MaximumConnectionDescriptors](microsoft-windows-networkloadbalancing-core-clusters-cluster-maximumconnectiondescriptors.md)|Specifies the maximum number of descriptors per allocation for the cluster.|
+|[MembershipHeartbeatLossTolerance](microsoft-windows-networkloadbalancing-core-clusters-cluster-membershipheartbeatlosstolerance.md)|Specifies the number of lost heartbeat messages before Setup considers the Network Load Balancing cluster host inactive and initiates convergence.|
+|[MembershipHeartbeatPeriod](microsoft-windows-networkloadbalancing-core-clusters-cluster-membershipheartbeatperiod.md)|Specifies a period between sending Network Load Balancing cluster heartbeat messages.|
+|[MulticastSpoofEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-multicastspoofenabled.md)|Specifies whether address resolution protocol (ARP) traffic should be spoofed.|
+|[NetBTSupportEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-netbtsupportenabled.md)|Specifies whether NetBT support is enabled for the cluster.|
+|[PersistSuspendedState](microsoft-windows-networkloadbalancing-core-clusters-cluster-persistsuspendedstate.md)|Specifies whether a host that is shut down while in a suspended state will remain suspended when Windows is started.|
+|[Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md)|Specifies details about the port rules that are used for the cluster, including a port rule's name, virtual IP address, protocol, mode, and so on.|
+|[UnicastInterHostCommunicationSupportEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-unicastinterhostcommunicationsupportenabled.md)|Specifies whether unicast, interhost communication support is enabled for the cluster.|
+|[VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md)|Specifies the cluster’s virtual IP addresses.|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[BDATeam](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam.md)</p></td>
-<td><p>Specifies details about a bidirectional affinity (BDA) team.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ClusterIpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteripaddress.md)</p></td>
-<td><p>Specifies the cluster primary IP address.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteriptoclustermacenabled.md)</p></td>
-<td><p>Specifies whether the cluster MAC address is automatically calculated from the primary cluster IP address.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ClusterMacAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-clustermacaddress.md)</p></td>
-<td><p>Specifies the cluster MAC address to be used when configuring a unicast cluster.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ClusterMode](microsoft-windows-networkloadbalancing-core-clusters-cluster-clustermode.md)</p></td>
-<td><p>Specifies the mode for the cluster.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ClusterName](microsoft-windows-networkloadbalancing-core-clusters-cluster-clustername.md)</p></td>
-<td><p>Specifies a full Internet name for the cluster.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ClusterNetMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusternetmask.md)</p></td>
-<td><p>Specifies the subnet mask for the cluster IP address.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses.md)</p></td>
-<td><p>Specifies the host's unique IP addresses.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[HostIdentifier](microsoft-windows-networkloadbalancing-core-clusters-cluster-hostidentifier.md)</p></td>
-<td><p>Specifies the host identifier used by this cluster.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ICMPFilteringEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-icmpfilteringenabled.md)</p></td>
-<td><p>Specifies whether Internet Control Message Protocol (ICMP) filtering is enabled for the cluster.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[IdentityHeartbeatPeriod](microsoft-windows-networkloadbalancing-core-clusters-cluster-identityheartbeatperiod.md)</p></td>
-<td><p>Specifies the recurrence interval for transmitting identity heartbeats between the NetworkLoadBalancing cluster hosts.</p></td>
-</tr>
-<tr class="even">
-<td><p>[InitialHostState](microsoft-windows-networkloadbalancing-core-clusters-cluster-initialhoststate.md)</p></td>
-<td><p>Specifies the initial host state for the cluster.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Interface](microsoft-windows-networkloadbalancing-core-clusters-cluster-interface.md)</p></td>
-<td><p>Specifies the interface name to bind to network load balancing (NLB). This is a required setting.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MaskSourceMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-masksourcemacenabled.md)</p></td>
-<td><p>Specifies whether source Media Access Control (MAC) address masking is used.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[MaximumConnectionDescriptors](microsoft-windows-networkloadbalancing-core-clusters-cluster-maximumconnectiondescriptors.md)</p></td>
-<td><p>Specifies the maximum number of descriptors per allocation for the cluster.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MembershipHeartbeatLossTolerance](microsoft-windows-networkloadbalancing-core-clusters-cluster-membershipheartbeatlosstolerance.md)</p></td>
-<td><p>Specifies the number of lost heartbeat messages before Setup considers the Network Load Balancing cluster host inactive and initiates convergence.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[MembershipHeartbeatPeriod](microsoft-windows-networkloadbalancing-core-clusters-cluster-membershipheartbeatperiod.md)</p></td>
-<td><p>Specifies a period between sending Network Load Balancing cluster heartbeat messages.</p></td>
-</tr>
-<tr class="even">
-<td><p>[MulticastSpoofEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-multicastspoofenabled.md)</p></td>
-<td><p>Specifies whether address resolution protocol (ARP) traffic should be spoofed.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[NetBTSupportEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-netbtsupportenabled.md)</p></td>
-<td><p>Specifies whether NetBT support is enabled for the cluster.</p></td>
-</tr>
-<tr class="even">
-<td><p>[PersistSuspendedState](microsoft-windows-networkloadbalancing-core-clusters-cluster-persistsuspendedstate.md)</p></td>
-<td><p>Specifies whether a host that is shut down while in a suspended state will remain suspended when Windows is started.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md)</p></td>
-<td><p>Specifies details about the port rules that are used for the cluster, including a port rule's name, virtual IP address, protocol, mode, and so on.</p></td>
-</tr>
-<tr class="even">
-<td><p>[UnicastInterHostCommunicationSupportEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-unicastinterhostcommunicationsupportenabled.md)</p></td>
-<td><p>Specifies whether unicast, interhost communication support is enabled for the cluster.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md)</p></td>
-<td><p>Specifies the cluster’s virtual IP addresses.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | **Cluster**
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | **Cluster**
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md).
 
 ## XML Example
 
-
 The following XML output shows how to specify details about a cluster.
 
-```
+```XML
 <Cluster>
    <Interface>Local Area Connection 2</Interface>
    <ClusterIpAddress>10.100.0.234</ClusterIpAddress>
@@ -243,16 +158,4 @@ The following XML output shows how to specify details about a cluster.
 
 ## Related topics
 
-
 [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md)
-
- 
-
- 
-
-
-
-
-
-
-

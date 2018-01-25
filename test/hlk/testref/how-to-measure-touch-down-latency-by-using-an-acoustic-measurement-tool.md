@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 36c3716f-d662-426e-b85a-83262e5979fa
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -184,7 +184,7 @@ Perform the following steps to set up the test components for calibration.
 
 4.  Put the microphone on one end of the screen (for example, at the upper-left corner). Use the black knob to lower the microphone so that it actually touches the screen.
 
-5.  Put the metal plate at the farthest point on the screen away from the microphone (for example, at the bottom–right corner). If the metal plate does not stay in place, you can hold one end of the plate by using one hand while you tap with your other hand.
+5.  Put the metal plate at the farthest point on the screen away from the microphone (for example, at the bottom-right corner). If the metal plate does not stay in place, you can hold one end of the plate by using one hand while you tap with your other hand.
 
 6.  Press the space bar. The word **CALIBRATION** displays.
 
@@ -200,7 +200,7 @@ Use the test pin to lightly tap and hold on the metal plate approximately ten ti
 
 ### <span id="Calibration_test_expected_results"></span><span id="calibration_test_expected_results"></span><span id="CALIBRATION_TEST_EXPECTED_RESULTS"></span>Calibration test expected results
 
-The microcontroller frequency should display at the first tap; for example, “Clock synced. Frequency of microcontroller = &lt; returned value&gt;” where &lt;returned value&gt; is the calibration result. For subsequent taps, messages about sound wave latency display; for example, \[12\] calibration latency: 1.2 \[ms\].
+The microcontroller frequency should display at the first tap; for example, "Clock synced. Frequency of microcontroller = &lt; returned value&gt;" where &lt;returned value&gt; is the calibration result. For subsequent taps, messages about sound wave latency display; for example, \[12\] calibration latency: 1.2 \[ms\].
 
 ## <span id="Collection"></span><span id="collection"></span><span id="COLLECTION"></span>Collection
 
@@ -337,7 +337,7 @@ You might sometimes see very large latency numbers during calibration. The most 
 
 You can encounter several kinds of errors during testing. The most common error is that the device fails to meet the minimum touch down latency goal of 25 milliseconds. A second common error is that you did not tap the minimum number of taps (500).
 
-A third type of error is when the microcontroller’s clock drifts during testing. In this case, the displayed error message is: **ERROR: microcontroller's frequency changed more than 2%**.
+A third type of error is when the microcontroller's clock drifts during testing. In this case, the displayed error message is: **ERROR: microcontroller's frequency changed more than 2%**.
 
 To detect whether the clock has drifted, the test program compares two clock frequencies:
 

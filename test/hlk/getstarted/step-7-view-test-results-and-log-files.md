@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: e010ab9a-f231-4842-8b1c-9aa227610a96
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Step 7: View test results and log files
 
 
-The **Results** tab displays detailed information about each test. As each test completes, the status column updates with the result—pass or fail.
+The **Results** tab displays detailed information about each test. As each test completes, the status column updates with the result--pass or fail.
 
 The following image shows the Studio **Results** tab.
 

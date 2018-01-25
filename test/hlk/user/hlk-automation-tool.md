@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: C750E177-5629-4E29-A3F3-999AEE9A1021
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -92,9 +92,9 @@ To verify the successful installation of Windows PowerShell 3.0, do the follow
 
 **Verify Windows PowerShell 3.0**
 
-1.  To open a Windows PowerShell 3.0 session, x86 version on a computer that is running Windows® 7, click **Start**, click **All Programs**, click **Accessories**, click **Windows PowerShell**, right-click **Windows PowerShell (x86)**, and then click **Run as administrator**.
+1.  To open a Windows PowerShell 3.0 session, x86 version on a computer that is running Windows 7, click **Start**, click **All Programs**, click **Accessories**, click **Windows PowerShell**, right-click **Windows PowerShell (x86)**, and then click **Run as administrator**.
 
-    To open a Windows PowerShell 3.0 session, x86 version on a computer that is running Windows 8 or Windows Server® 2012, follow the instructions at [Starting the 32-Bit Version of Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=304169).
+    To open a Windows PowerShell 3.0 session, x86 version on a computer that is running Windows 8 or Windows Server 2012, follow the instructions at [Starting the 32-Bit Version of Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=304169).
 
 2.  Type `Get-Command -Module HardwareCertification` to see the following list of Windows HLK automation cmdlets:
 
@@ -201,8 +201,8 @@ The following tables define child elements and the attributes, grouped by the XM
 <td><p>SchedulerType</p></td>
 <td><p>Optional enumeration value that is used for scheduling tests, to define the scheduling mode for the Execution Engine. Valid values are the following:</p>
 <ul>
-<li><p>AdaptiveOrderOptimized – tests are scheduled strictly in the order that they are defined in the Test Collection xml.</p></li>
-<li><p>AdaptiveResourceOptimized – tests are scheduled in the order they are defined in the Test Collection xml, with respect to the availability of the machines for the scheduling test target.</p></li>
+<li><p>AdaptiveOrderOptimized - tests are scheduled strictly in the order that they are defined in the Test Collection xml.</p></li>
+<li><p>AdaptiveResourceOptimized - tests are scheduled in the order they are defined in the Test Collection xml, with respect to the availability of the machines for the scheduling test target.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -422,51 +422,51 @@ You can create the PDEF by using any xml or text editor, or by using the managem
 
 Parameters of the New- HwCertProjectDefinitionFile cmdlet are described below:
 
--   **OutputAutomatedPdef** – a Boolean flag that handles the automatic generation of the following PDEF xml attributes:
+-   **OutputAutomatedPdef** - a Boolean flag that handles the automatic generation of the following PDEF xml attributes:
 
-    -   &lt;**Controller**&gt; = “\[MACHINE\]
+    -   &lt;**Controller**&gt; = "\[MACHINE\]
 
-    -   &lt;**TestCollectionReadLocation**&gt; = “\[FILTERED\_TEST\_COLLECTION\]
+    -   &lt;**TestCollectionReadLocation**&gt; = "\[FILTERED\_TEST\_COLLECTION\]
 
-    -   &lt;**Path**&gt; = “\[PACKAGES\]”
+    -   &lt;**Path**&gt; = "\[PACKAGES\]"
 
--   **TestCollectionFilePath** – the full path to the test collection xml file that is stored in the &lt;**TestCollectionReadLocation**&gt; attribute of the &lt;**Project**&gt; element in the PDEF xml. If this value and **OutputAutomatedPdef** are not provided, the path is set to an empty string.
+-   **TestCollectionFilePath** - the full path to the test collection xml file that is stored in the &lt;**TestCollectionReadLocation**&gt; attribute of the &lt;**Project**&gt; element in the PDEF xml. If this value and **OutputAutomatedPdef** are not provided, the path is set to an empty string.
 
--   **ControllerName** – the name of the controller that is stored in the &lt;Controller&gt; attribute of the &lt;**ProjectDefinitionData**&gt; element of the PDEF xml. If this value and **OutputAutomatedPdef** are not provided, the controller name is set to name of the current machine.
+-   **ControllerName** - the name of the controller that is stored in the &lt;Controller&gt; attribute of the &lt;**ProjectDefinitionData**&gt; element of the PDEF xml. If this value and **OutputAutomatedPdef** are not provided, the controller name is set to name of the current machine.
 
--   **PdefFilePath** – the name of the output PDEF xml file. If not provided, the path is auto-generated with the following format:
+-   **PdefFilePath** - the name of the output PDEF xml file. If not provided, the path is auto-generated with the following format:
 
     ``` syntax
     %userprofile%\\desktop\\PDEF_Files\\PDEF_{time_date}\\PDEF_{os_platform_name}_{time_date}.xml
     ```
 
--   **ProjectName**– the name of the project that is stored in the &lt;**Name**&gt; attribute of the &lt;**Project**&gt; element in the PDEF xml. If not provided, the name is auto-generated using the current date time stamp value.
+-   **ProjectName**- the name of the project that is stored in the &lt;**Name**&gt; attribute of the &lt;**Project**&gt; element in the PDEF xml. If not provided, the name is auto-generated using the current date time stamp value.
 
--   **EnableMultiDeviceTest** – a Boolean flag that handles the multi-device scheduling for the project, stored in the &lt;**MultiDeviceTestGroup**&gt; element in the PDEF xml. If not specified, multi-device scheduling is not enabled.
+-   **EnableMultiDeviceTest** - a Boolean flag that handles the multi-device scheduling for the project, stored in the &lt;**MultiDeviceTestGroup**&gt; element in the PDEF xml. If not specified, multi-device scheduling is not enabled.
 
--   **SkipTestStatus** – the skipping mode for scheduling tests, stored in the &lt;**TestStatusToSkip**&gt; element in the PDEF xml. Valid values are Pass, Fail, and NoData. If not provided, the default skipping mode is Pass.
+-   **SkipTestStatus** - the skipping mode for scheduling tests, stored in the &lt;**TestStatusToSkip**&gt; element in the PDEF xml. Valid values are Pass, Fail, and NoData. If not provided, the default skipping mode is Pass.
 
--   **EnableIsolateTargets** – a Boolean flag that enables creation of an individual device family for each discovered target. If not specified, targets are grouped into the families by device classes.
+-   **EnableIsolateTargets** - a Boolean flag that enables creation of an individual device family for each discovered target. If not specified, targets are grouped into the families by device classes.
 
 The following two parameters specify the machine pool for the project. You must provide only one parameter. If you do not provide a parameter, or if you provide both parameters, you will get an error.
 
--   **MachineList** – specify machine names in a comma-delimited list. All specified machines must be in the same existing pool or in the default pool.
+-   **MachineList** - specify machine names in a comma-delimited list. All specified machines must be in the same existing pool or in the default pool.
 
--   **MachinePool** – the name of the existing machine pool.
+-   **MachinePool** - the name of the existing machine pool.
 
 The following six parameters specify the type of the targets for the project. You must provide only one parameter. If you do not provide a parameter, or if you provide multiple parameters, you will get an error.
 
--   **RunSystemTest** – the project is for testing the whole system. One target family with a single **TargetType** = System is generated.
+-   **RunSystemTest** - the project is for testing the whole system. One target family with a single **TargetType** = System is generated.
 
--   **TestAllDevices** – the project is for testing all targets discovered on the specified machines.
+-   **TestAllDevices** - the project is for testing all targets discovered on the specified machines.
 
--   **HwIdList** – specify target hardware IDs in a comma-delimited list. Each hardware ID in the list can be partially-specified. In this case, the matching hardware IDs are identified by using the partially-specified value as a sub-string with respect to the hardware ID format. Strings are compared as case-insensitive ASCII.
+-   **HwIdList** - specify target hardware IDs in a comma-delimited list. Each hardware ID in the list can be partially-specified. In this case, the matching hardware IDs are identified by using the partially-specified value as a sub-string with respect to the hardware ID format. Strings are compared as case-insensitive ASCII.
 
--   **DriverList** – specify names of target drivers in a comma-delimited list. UMDF Drivers (.DLL) are not currently supported. These devices can still be discovered by using their HWID, as part of the Windows Device Class GUID, or all targets.
+-   **DriverList** - specify names of target drivers in a comma-delimited list. UMDF Drivers (.DLL) are not currently supported. These devices can still be discovered by using their HWID, as part of the Windows Device Class GUID, or all targets.
 
--   **ContainerIdList** – specify container ID values in a comma-delimited list. Each container Id value must be in GUID format.
+-   **ContainerIdList** - specify container ID values in a comma-delimited list. Each container Id value must be in GUID format.
 
--   **ClassIdList** – specify class ID values in a comma-delimited list. Each class ID value must be in GUID format.
+-   **ClassIdList** - specify class ID values in a comma-delimited list. Each class ID value must be in GUID format.
 
 ## <span id="BKMK-fulllist"></span><span id="bkmk-fulllist"></span><span id="BKMK_FULLLIST"></span>Step 4: Generate the full list of tests based on the Project Definition File on the Controller or test server
 
@@ -474,7 +474,7 @@ The following six parameters specify the type of the targets for the project. Yo
 You can use the Management Tool cmdlet, **New-HwCertTestCollection**, to generate the full list of tests that are required for testing targets in the project. An example of how to use the Management Tool cmdlet in the Windows Powershell session, is shown below. (This step is optional.)
 
 ``` syntax
-New-HwCertTestCollection -ProjectDefinitionFile C:\Temp\DefinitionFile\device-win8client-x64-auto.xml | Export-HwCertTestCollectionToXml -Output c:\temp\master.xml -TestPassIdentifier “TP001”
+New-HwCertTestCollection -ProjectDefinitionFile C:\Temp\DefinitionFile\device-win8client-x64-auto.xml | Export-HwCertTestCollectionToXml -Output c:\temp\master.xml -TestPassIdentifier "TP001"
 ```
 
 If a target that is specified in the Project Definition File is no longer available, you will receive a warning and the test collection generation continues. In this case, we recommend the following to get the full list of tests:
@@ -514,37 +514,37 @@ An example of the generated output xml file (**c:\\temp\\master.xml**) is given 
 
 Where the attributes are defined as:
 
--   **TargetId** – Hardware Id of the target on the test computer
+-   **TargetId** - Hardware Id of the target on the test computer
 
--   **TargetName** – friendly name of the Target on the test computer
+-   **TargetName** - friendly name of the Target on the test computer
 
--   **OSPlatform** – version of Windows on the test computer for the specified Target
+-   **OSPlatform** - version of Windows on the test computer for the specified Target
 
--   **Guid** – Job ID detected for testing the Target
+-   **Guid** - Job ID detected for testing the Target
 
--   **Name** – friendly name of the Job detected for testing the Target
+-   **Name** - friendly name of the Job detected for testing the Target
 
--   **TestPassIdentifier** – string value, identifying the test pass.
+-   **TestPassIdentifier** - string value, identifying the test pass.
 
--   **TargetType** – type of the product tested in the project (device, system, or filter)
+-   **TargetType** - type of the product tested in the project (device, system, or filter)
 
--   **Feature Mapped** – feature that detected Job will test for the Target
+-   **Feature Mapped** - feature that detected Job will test for the Target
 
--   **ContentLevelSet** – categories of the Job detected for testing the Target
+-   **ContentLevelSet** - categories of the Job detected for testing the Target
 
--   **ScheduleOptionSet** – options for test scheduling. Valid values are:
+-   **ScheduleOptionSet** - options for test scheduling. Valid values are:
 
-    -   **Manual** – test requires manual actions at execution time
+    -   **Manual** - test requires manual actions at execution time
 
-    -   **Distributable** – test can be scheduled for multiple computers and run on the first available computer.
+    -   **Distributable** - test can be scheduled for multiple computers and run on the first available computer.
 
-    -   **MultipleDevices** – test can be run on multiple devices simultaneously on the same computer
+    -   **MultipleDevices** - test can be run on multiple devices simultaneously on the same computer
 
-    -   **MultipleMachines** – test can be scheduled to run on multiple computers with different roles
+    -   **MultipleMachines** - test can be scheduled to run on multiple computers with different roles
 
-    -   **SpecialConfiguration** – test requires special computer configuration in order to run the test
+    -   **SpecialConfiguration** - test requires special computer configuration in order to run the test
 
--   **HLKBuildVersion** – version of HLK that was used to generate the test collection
+-   **HLKBuildVersion** - version of HLK that was used to generate the test collection
 
 ## <span id="BKMK-filter"></span><span id="bkmk-filter"></span><span id="BKMK_FILTER"></span>Step 5: Filter the full list of tests on the Controller
 
@@ -552,7 +552,7 @@ Where the attributes are defined as:
 You can use the Management Tool PowerShell cmdlet, **Import-HwCertTestCollectionFromXml**, to filter the full list of tests by a specified attribute value. (This step is optional.) Any attribute of the generated output xml file, as listed in step 4, can be used for filtering the list. The output test collection test records should be arranged in the required order for scheduling. In the following example, the **Basic** test category is used for filtering and sorting the master list. Type the following command in a Windows PowerShell session:
 
 ``` syntax
-Import-HwCertTestCollectionFromXml -Input C:\Temp\master.xml | ? { $_.ContentLevelSet.Contains("Basic") } | sort –Property GUID | Export-HwCertTestCollectionToXml -Output c:\temp\basic.xml
+Import-HwCertTestCollectionFromXml -Input C:\Temp\master.xml | ? { $_.ContentLevelSet.Contains("Basic") } | sort -Property GUID | Export-HwCertTestCollectionToXml -Output c:\temp\basic.xml
 ```
 
 ## <span id="BKMK-add"></span><span id="bkmk-add"></span><span id="BKMK_ADD"></span>Step 6: Add filtered list of tests to the Project Definition File on the Controller
@@ -579,9 +579,9 @@ Use any text or xml editor to update the PDEF to add the location for the test c
 
 Where the attributes are defined as:
 
--   TestCollectionReadLocation – path to the filtered test collection xml file
+-   TestCollectionReadLocation - path to the filtered test collection xml file
 
--   TestCollectionStatusLocation – path to the output xml file holding testing results
+-   TestCollectionStatusLocation - path to the output xml file holding testing results
 
 ## <span id="BKMK-run"></span><span id="bkmk-run"></span><span id="BKMK_RUN"></span>Step 7: Run the test project on the Controller
 
@@ -628,21 +628,21 @@ After the command completes, the following files are created:
 
     Where the attributes are defined as:
 
-    -   StartTime – Data and Time the test run started
+    -   StartTime - Data and Time the test run started
 
-    -   Status – set to either pass or fail
+    -   Status - set to either pass or fail
 
-    -   FiltersAppliedCount – number of filters applied to the result log
+    -   FiltersAppliedCount - number of filters applied to the result log
 
-    -   SourcePath – file path to the package .hlkx file generated for the project run
+    -   SourcePath - file path to the package .hlkx file generated for the project run
 
-    -   InstanceID – Device instance ID of the Target on the test computer
+    -   InstanceID - Device instance ID of the Target on the test computer
 
-    -   FeatureDetected – features detected for the tested Target
+    -   FeatureDetected - features detected for the tested Target
 
 ### <span id="Stopping_restarting_test_execution"></span><span id="stopping_restarting_test_execution"></span><span id="STOPPING_RESTARTING_TEST_EXECUTION"></span>Stopping/restarting test execution
 
-You can stop and restart test runs at any time. Tests that are currently running on client machines will continue to run, but no further tests are scheduled. At most, the number of running tests is equal to the number of available machines, because the scheduling logic will not queue up more tests than available machines. While running tests will continue to execute (and can return test results back to the Windows HLK project), the status xml file that is generated by the Windows HLK Execution Engine tool will not contain the pass/fail value for those tests that were running at the time the process was stopped. Therefore, restarting a project can cause a set of tests to be run twice — one time after the automation tool exited, and one time when the process restarts. Because early termination of the process generally implies that machine state issues need to be investigated, this re-run behavior of the final batch of previously scheduled tests is by design and is generally desired.
+You can stop and restart test runs at any time. Tests that are currently running on client machines will continue to run, but no further tests are scheduled. At most, the number of running tests is equal to the number of available machines, because the scheduling logic will not queue up more tests than available machines. While running tests will continue to execute (and can return test results back to the Windows HLK project), the status xml file that is generated by the Windows HLK Execution Engine tool will not contain the pass/fail value for those tests that were running at the time the process was stopped. Therefore, restarting a project can cause a set of tests to be run twice -- one time after the automation tool exited, and one time when the process restarts. Because early termination of the process generally implies that machine state issues need to be investigated, this re-run behavior of the final batch of previously scheduled tests is by design and is generally desired.
 
 **Stopping mechanism**
 
@@ -660,7 +660,7 @@ A basic high-level overview of the process is as follows:
 
 4.  Use Windows HLK Studio to merge the two partial HLK projects into a new, complete .hlkx file.
 
-5.  Runsthe Analyze phase on the compete .hlkx file as outlined in the “Subsequent Analyze options” section in this document.
+5.  Runsthe Analyze phase on the compete .hlkx file as outlined in the "Subsequent Analyze options" section in this document.
 
 Detailed steps of this process are as follows:
 
@@ -678,9 +678,9 @@ Detailed steps of this process are as follows:
 
 4.  Because tests can run only when machines are in a non-Default Pool, and because the Windows HLK Execution Engine does not wait for all currently running tests to complete prior to completing a **Ctrl-C** operation, all machines will remain in their existing machine pool after Windows HLK Execution Engine stops. If the original project xml file specified machines in the Default Pool, then you must move the client machines back to the Default Pool. You can do this by using the **Configuration** menu that is located at the top of the Windows HLK Studio UI, or through the Windows HLK Manager application.
 
-5.  After the partial .hlkx package is generated, you must update the Windows HLK Execution Engine project file to prepare for the remaining run. Navigate to **C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files**, and find the correct time-stamped folder from the test run. In the set of xml files in the folder, the project xml file is the one that is not preceded with “Status\_”, “FTC\_”, or “TC\_”. In Notepad or other text editor, edit this file as follows:
+5.  After the partial .hlkx package is generated, you must update the Windows HLK Execution Engine project file to prepare for the remaining run. Navigate to **C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files**, and find the correct time-stamped folder from the test run. In the set of xml files in the folder, the project xml file is the one that is not preceded with "Status\_", "FTC\_", or "TC\_". In Notepad or other text editor, edit this file as follows:
 
-    In the project xml file, two fields must be edited: *TestCollectionReadLocation* and *TestCollectionStatusLocation*. For the Windows HLK Execution Engine tool to know where to resume, the previous **TestCollectionStatusLocation** value (the xml output file of results) must become the input file. Copy the value of **TestCollectionStatusLocation** to the **TestCollectionReadLocation** value. Then, set a new **TestCollectionStatusLocation** value. The **TestCollectionStatusLocation** value can be any value; for example, “C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files\\Rerun.xml”.
+    In the project xml file, two fields must be edited: *TestCollectionReadLocation* and *TestCollectionStatusLocation*. For the Windows HLK Execution Engine tool to know where to resume, the previous **TestCollectionStatusLocation** value (the xml output file of results) must become the input file. Copy the value of **TestCollectionStatusLocation** to the **TestCollectionReadLocation** value. Then, set a new **TestCollectionStatusLocation** value. The **TestCollectionStatusLocation** value can be any value; for example, "C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files\\Rerun.xml".
 
     Optionally modify the Project node **Name** value to make the project easier to find in HLK Studio later on. (Because the current **Name** value has already been used, Windows HLK Execution Engine will create a new project name.)
 
@@ -692,7 +692,7 @@ Detailed steps of this process are as follows:
 
     This command starts the Windows HLK Execution Engine, which resumes by using the previous set of tests that were running before the tool stopped. Execution can continue until all tests are completed.
 
-7.  After the second set of tests are finished, you must merge the two projects together. To do this, open Windows HLK Studio. Look at the most recent projects that were created – typically the most recent project is from the second execution run that was performed (unless other users are also creating projects during this time). Or, if you changed the project **Name** value in the project xml file, you can identify the project by the new Name.
+7.  After the second set of tests are finished, you must merge the two projects together. To do this, open Windows HLK Studio. Look at the most recent projects that were created - typically the most recent project is from the second execution run that was performed (unless other users are also creating projects during this time). Or, if you changed the project **Name** value in the project xml file, you can identify the project by the new Name.
 
 8.  Double-click the new project that was created from the second run. On the **Package** tab, click **Merge Package**. In the **Package To Merge** dialog, click **Add** and navigate to the first partial .hlkx package that was created from the first run of HLK Execution Engine. Click **Save** and click **Create Package** in the main window.
 
@@ -706,15 +706,15 @@ There are two ways to aggregate the list of test results for a project.
 1.  Use the XML-based output files. An example of how you can merge XML-based test results from the Windows PowerShell session that is open on your Controller or test server is shown here:
 
     ``` syntax
-    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml"  -TestPassIdentifier “TP003”
-    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml"  -TestPassIdentifier “TP004”
+    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml"  -TestPassIdentifier "TP003"
+    dir -s "c:\temp\*.xml" | Merge-HwCertTestCollectionFromXml -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml"  -TestPassIdentifier "TP004"
     ```
 
 2.  Use the project .hlkx output files. An example of how you can merge .hlkx output files from the Windows PowerShell session that is open on your Controller or test server is shown here:
 
     ``` syntax
-    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml" -TestPassIdentifier “TP003”
-    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml" -TestPassIdentifier “TP004”
+    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_1.xml" -TestPassIdentifier "TP003"
+    dir -s "c:\temp\*.hlkx" | Merge-HwCertTestCollectionFromPackage -ValidationXmlPath "C:\temp\master.xml" | Export-HwCertTestCollectionToXml -Output "C:\Temp\merged_2.xml" -TestPassIdentifier "TP004"
     ```
 
 When **ValidationXmlPath** is specified as a parameter to the Merge-HwCertTestCollectionFromXml or Merge-HwCertTestCollectionFromPackage cmdlet, the aggregation algorithm verifies if all of the tests listed in the master test collection have at least one result specified for the aggregation in any of the test collection files. This condition is checked only for the test collections that have the same **TestPassIdentifier** value as specified in the **TestPassIdentifier** cmdlet parameter. If this condition is not true, the aggregation is cancelled and an error occurs.
@@ -737,21 +737,21 @@ An example of the output created after running the commands to create an Excel s
 
 The resulting Excel report will contain the following headings:
 
--   Total Test – The total number of tests in this test pass.
+-   Total Test - The total number of tests in this test pass.
 
--   Total Pass – The total number of results in this test pass
+-   Total Pass - The total number of results in this test pass
 
--   Total Pass With Filter – The total number of passes with an errata filter applied to the test.
+-   Total Pass With Filter - The total number of passes with an errata filter applied to the test.
 
--   Total Pass Percentage – Percentage of passing tests (Total Pass / Total Test).
+-   Total Pass Percentage - Percentage of passing tests (Total Pass / Total Test).
 
--   Total Fail – The total number of fails in this test pass (Total Test – Total Pass).
+-   Total Fail - The total number of fails in this test pass (Total Test - Total Pass).
 
--   N-1 Improvement – Between this test pass and the previous test pass (column to the left), how many new passes were achieved.
+-   N-1 Improvement - Between this test pass and the previous test pass (column to the left), how many new passes were achieved.
 
 -   N-1 Regression - Between this test pass and the previous test pass (column to the left), how many new fails were encountered.
 
--   N-1 Not Changed – Between this test pass and the previous test pass (column to the left), how many tests did not have a change in result outcome.
+-   N-1 Not Changed - Between this test pass and the previous test pass (column to the left), how many tests did not have a change in result outcome.
 
 -   N-1 Not Compared - Between this test pass and the previous test pass (column to the left), how many tests were not compared due to the test was only available in only one of the test passes.
 

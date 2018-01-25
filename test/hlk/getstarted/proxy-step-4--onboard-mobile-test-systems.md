@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 3CEA61AA-5625-4F1F-84ED-69ED726BB74F
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -140,7 +140,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
         WTTProxy.exe -console
         ```
 
-5.  \[For Health image only\] – After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
+5.  \[For Health image only\] - After KitsDeviceDetector is complete, run the following commands from %ProgramFiles(x86)%\\WTTMobile\\Tools\\
 
     ```syntax
     AriesUtil.exe ResetDevice /Aries:<aries-name> [/Autoskip:true]

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f822f9ee-50f2-437b-8e70-485f9e718669
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -126,7 +126,7 @@ string projectName = "existing large project";
 }
 ```
 
-## <span id="Windows_PowerShell___Large_Project"></span><span id="windows_powershell___large_project"></span><span id="WINDOWS_POWERSHELL___LARGE_PROJECT"></span>Windows PowerShell – Large Project
+## <span id="Windows_PowerShell___Large_Project"></span><span id="windows_powershell___large_project"></span><span id="WINDOWS_POWERSHELL___LARGE_PROJECT"></span>Windows PowerShell - Large Project
 
 
 ``` syntax
@@ -180,7 +180,7 @@ foreach ($productInstance in $project.GetProductInstances())
 }
 ```
 
-## <span id="Windows_PowerShell___Small_Project"></span><span id="windows_powershell___small_project"></span><span id="WINDOWS_POWERSHELL___SMALL_PROJECT"></span>Windows PowerShell – Small Project
+## <span id="Windows_PowerShell___Small_Project"></span><span id="windows_powershell___small_project"></span><span id="WINDOWS_POWERSHELL___SMALL_PROJECT"></span>Windows PowerShell - Small Project
 
 
 ``` syntax

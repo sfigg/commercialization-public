@@ -66,7 +66,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 **Add the auto-provisioning scripts to the feature manifest and product configuration file**
 
-1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. 
+1.  Review the package definition file: Provisioning.Auto.wm.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.wm.xml. 
 
     Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1b452f95-6237-4b33-919f-ad5632819e44
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -152,7 +152,7 @@ This error can appear in the following ways:
 
     ![](images/hlk-signability-error.png)
 
--   If using the object model, you might see this issue when calling PackageWriter.AddDriver. ‘errorMessages’ might contain errors for non-targeted down level operating systems. Despite this error, the call to PackageWriter.AddDriver will succeed.
+-   If using the object model, you might see this issue when calling PackageWriter.AddDriver. 'errorMessages' might contain errors for non-targeted down level operating systems. Despite this error, the call to PackageWriter.AddDriver will succeed.
 
 These errors should be treated as warnings and can be safely ignored. You can still submit the package to the hardware dashboard.
 

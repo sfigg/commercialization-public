@@ -26,26 +26,11 @@ There can be more than one data image. The [OSImage](microsoft-windows-setup-ima
 
 ## Child Elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md)</p></td>
-<td><p>Required. Specifies the location from which to install the data image.</p></td>
-</tr>
-<tr class="even">
-<td><p>[InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md)</p></td>
-<td><p>Required. Specifies the location to which to install the data image.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Order](microsoft-windows-setup-imageinstall-dataimage-order.md)</p></td>
-<td><p>Required. Specifies the order in which to install the data image.</p></td>
-</tr>
-</tbody>
-</table>
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | Required. Specifies the location from which to install the data image. |
+| [InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md) | Required. Specifies the location to which to install the data image. |
+| [Order](microsoft-windows-setup-imageinstall-dataimage-order.md) | Required. Specifies the order in which to install the data image. |
 
 ## Valid Configuration Passes
 
@@ -53,11 +38,11 @@ windowsPE
 
 ## Parent Hierarchy
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **DataImage**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **DataImage**
 
 ## Applies To
 
-For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

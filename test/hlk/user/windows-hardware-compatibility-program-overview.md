@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 6ab76249-c075-4995-a2be-61a73e6c3bbe
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -24,7 +24,7 @@ The new hardware compatibility program provides you with:
 
 -   Minimum engineering requirements that you can use to design your hardware.
 -   A subset of the tests in the new Hardware Lab Kit (formerly the Hardware Certification Kit) that focus on compatibility, interoperability and reliability.
--   The opportunity to list your product on Microsoft’s Certified Products List after passing the compatibility and reliability tests.
+-   The opportunity to list your product on Microsoft's Certified Products List after passing the compatibility and reliability tests.
 -   Guidance for developing, testing and distributing drivers.
 -   Access to the Windows Dev Center hardware dashboard to manage submissions, track the performance of your device or app, review telemetry and much more.
 
@@ -45,7 +45,7 @@ When products meet the minimum requirements it ensures that the application and 
 
 ### <span id="New_IHV_Attested_Signing_Service"></span><span id="new_ihv_attested_signing_service"></span><span id="NEW_IHV_ATTESTED_SIGNING_SERVICE"></span>New IHV Attested Signing Service
 
-For Windows 10, Microsoft is creating a new service for IHVs who just need to get a driver signed for production. IHVs can go to the Windows Dev Center – Hardware Dashboard and request a signed driver by attesting to the quality. This process does not require HLK test results. Under this process the IHV would affirm the following in order to get a Microsoft signed driver:
+For Windows 10, Microsoft is creating a new service for IHVs who just need to get a driver signed for production. IHVs can go to the Windows Dev Center - Hardware Dashboard and request a signed driver by attesting to the quality. This process does not require HLK test results. Under this process the IHV would affirm the following in order to get a Microsoft signed driver:
 
 -   IHV attests that they have completely tested their driver
 -   IHV attests that their product and driver will not break interoperability
@@ -62,7 +62,7 @@ For more details about building your system, see:
     -   Update and service Windows 10.
     -   Provide a baseline user experience that is comparable with similar devices and computers.
 -   Windows Hardware Compatibility Specification - This specification defines the engineering requirements for passing the Windows Hardware Compatibility Program.
--   Windows Engineering Guidance – This document is focused on documenting guidance to build products that deliver the best in class user experience.
+-   Windows Engineering Guidance - This document is focused on documenting guidance to build products that deliver the best in class user experience.
 
  
 

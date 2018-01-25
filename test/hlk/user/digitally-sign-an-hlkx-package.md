@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 99940710-A95F-47CE-A153-27B9A6191808
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Digitally sign an .hlkx package
 
 
-HLK Studio supports three package types – one unsigned, two signed. All official submissions to Microsoft must be digitally signed. To create package:
+HLK Studio supports three package types - one unsigned, two signed. All official submissions to Microsoft must be digitally signed. To create package:
 
 1.  From HLK Studio, open a current project.
 

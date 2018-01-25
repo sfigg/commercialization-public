@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: dc77a60d-c1a4-4ef5-a00f-8782b5ac20ce
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -75,7 +75,7 @@ In addition to multi-device testing, you can further reduce test time on certain
 
     AND
 
--   The child node **ONLY** exposes DevFund types (i.e. only displays feature of type “Device.Devfund.\*”)
+-   The child node **ONLY** exposes DevFund types (i.e. only displays feature of type "Device.Devfund.\*")
 
 The parent nodes themselves (USB Composite Device or Internal USB Hub) must be tested and may not be deselected.
 

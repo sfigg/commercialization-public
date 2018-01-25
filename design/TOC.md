@@ -116,8 +116,8 @@
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
 #### [Windows 10S security features and requirements](device-experiences/OEM-10S-security.md)
-#### [BitLocker drive encryption in Windows 10 for OEMs](device-experiences/OEM-bitlocker.md)
 #### [Standards for a highly secure Windows 10 device](device-experiences/OEM-highly-secure.md)
+#### [BitLocker drive encryption in Windows 10 for OEMs](device-experiences/OEM-bitlocker.md)
 #### [Secure boot](device-experiences/OEM-secure-boot.md)
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
 #### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
@@ -328,5 +328,3 @@
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
-
-## [Change history for Design](change-history-for-design.md)

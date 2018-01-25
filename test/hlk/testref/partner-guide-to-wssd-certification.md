@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: ABAA7069-52C3-4188-9246-6504146459EC
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -38,9 +38,9 @@ This topic is for WSSD Solution Vendors and OEMs and is not intended to provide 
 
 WSSD provides three offerings:
 
--   **Hyper-converged Infrastructure (HCI) Standard** - Combines compute and storage in the same cluster of server nodes to provide a highly-virtualized solution that’s easy to deploy, manage, and scale. This deployment option simplifies IT infrastructure since customers no longer need traditional IT silos of compute, shared storage (SAN/NAS), and networking. It’s best suited for small to mid-sized IT environment running virtualized (Hyper-V) workloads.
--   **Converged Software-Defined Storage (SDS)** – Provides a lower cost, enterprise-grade, shared storage alternative to traditional SAN/NAS. Built using a cluster of server nodes, it’s easy to deploy, manage, and scale out to build storage capacity as customer’s needs grow over time. On one hand, its simplicity and low cost would appeal to small/mid-sized IT environments, it’s scale, flexibility, and cloud-scale traits would benefit large service providers and enterprise IT. Any workloads that are compatible with SMB storage are a good fit for this offer.
--   **Hyper-converged Infrastructure (HCI) Premium** - Provides a comprehensive software-defined “datacenter in a box”. Building on the same foundation as HCI-Standard, these offers add Software-Defined Networking (SDN) and Assurance to the stack. These offerings provide the perfect building blocks for customers – typically a large enterprise, service provider or hoster – that want to build on premise SDDC that emulates large public clouds like Azure. While SDN provides the benefit to deploy, provision and manage networking services at scale, Assurance provides essential tenant isolation and services for running a secure on-premises multi-tenant cloud.
+-   **Hyper-converged Infrastructure (HCI) Standard** - Combines compute and storage in the same cluster of server nodes to provide a highly-virtualized solution that's easy to deploy, manage, and scale. This deployment option simplifies IT infrastructure since customers no longer need traditional IT silos of compute, shared storage (SAN/NAS), and networking. It's best suited for small to mid-sized IT environment running virtualized (Hyper-V) workloads.
+-   **Converged Software-Defined Storage (SDS)** - Provides a lower cost, enterprise-grade, shared storage alternative to traditional SAN/NAS. Built using a cluster of server nodes, it's easy to deploy, manage, and scale out to build storage capacity as customer's needs grow over time. On one hand, its simplicity and low cost would appeal to small/mid-sized IT environments, it's scale, flexibility, and cloud-scale traits would benefit large service providers and enterprise IT. Any workloads that are compatible with SMB storage are a good fit for this offer.
+-   **Hyper-converged Infrastructure (HCI) Premium** - Provides a comprehensive software-defined "datacenter in a box". Building on the same foundation as HCI-Standard, these offers add Software-Defined Networking (SDN) and Assurance to the stack. These offerings provide the perfect building blocks for customers - typically a large enterprise, service provider or hoster - that want to build on premise SDDC that emulates large public clouds like Azure. While SDN provides the benefit to deploy, provision and manage networking services at scale, Assurance provides essential tenant isolation and services for running a secure on-premises multi-tenant cloud.
 
 ## <span id="Workflow_steps_for_WSSD_validation_with_PCS"></span><span id="workflow_steps_for_wssd_validation_with_pcs"></span><span id="WORKFLOW_STEPS_FOR_WSSD_VALIDATION_WITH_PCS"></span>Workflow steps for WSSD validation with PCS
 
@@ -73,7 +73,7 @@ Varies
 N/A
 3
 Choose WSSD topology
-WSSD Reference Architecture – Section 1.1
+WSSD Reference Architecture - Section 1.1
 N/A
 N/A
 1
@@ -172,10 +172,10 @@ The assembled solution/offering must pass the following Windows Hardware Lab Kit
 | Test Name                                                          | Length   |
 |--------------------------------------------------------------------|----------|
 | S2D - Prepare Machines for Tests                                   | 1 hour   |
-| S2D – Basic Verification Tests                                     | 2 hours  |
-| S2D – Stress Tests                                                 | 1 hour   |
-| PrivateCloudSimulator – System.Solutions.StorageSpacesDirect (Min) | 96 hours |
-| PrivateCloudSimulator – System.Solutions.StorageSpacesDirect (Max) | 96 hours |
+| S2D - Basic Verification Tests                                     | 2 hours  |
+| S2D - Stress Tests                                                 | 1 hour   |
+| PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Min) | 96 hours |
+| PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Max) | 96 hours |
 
  
 
@@ -183,7 +183,7 @@ More details are located here:
 
 -   <https://msdn.microsoft.com/library/windows/hardware/mt219240>
 
-Many of the required tests can be selected by loading the appropriate playlist after obtaining the playlist from the Connect partner site. It is recommended to use the playlist after completing the **S2D – Prepare Machines for Tests** test. Below is a sample of the **SDDC\_Standard\_Playlist** after loading into the Windows Hardware Lab Kit Studio.
+Many of the required tests can be selected by loading the appropriate playlist after obtaining the playlist from the Connect partner site. It is recommended to use the playlist after completing the **S2D - Prepare Machines for Tests** test. Below is a sample of the **SDDC\_Standard\_Playlist** after loading into the Windows Hardware Lab Kit Studio.
 
 ![](images/wssd-sddc-standard-playlist.png)
 
@@ -198,7 +198,7 @@ Many of the required tests can be selected by loading the appropriate playlist a
 
 
 -   Based on leveraging WSSD scripted process (itself based on MASD scripts)
--   Two options/approaches – Brownfield or Greenfield
+-   Two options/approaches - Brownfield or Greenfield
 
 ### <span id="Brownfield"></span><span id="brownfield"></span><span id="BROWNFIELD"></span>Brownfield
 
@@ -249,7 +249,7 @@ Many of the required tests can be selected by loading the appropriate playlist a
             Invoke-Command -Computername $Server -ScriptBlock {Enable-WSManCredSSP -role server -Force}}
 
 # This command initiates the HLK Client installation on named servers in the defined array above
-# Edit the Source Path as per your installation “\\hlk1-3\”
+# Edit the Source Path as per your installation "\\hlk1-3\"
 
             foreach ($Server in $Servers) {
             Invoke-Command -Computername $Server -ScriptBlock { & "\\hlk1-3\HLKInstall\Client\Setup.cmd" /qn ICFAGREE=Yes } -Authentication Credssp -Credential $domainCred }
@@ -336,7 +336,7 @@ Prior to scheduling or running any tests in the HLK, complete the following step
 
 ### <span id="lan10gb"></span><span id="LAN10GB"></span>
 
-After scheduling and executing the [LoadGen SC LMS Workaround](https://msdn.microsoft.com/library/windows/hardware/dn974493) (jobs 1416 and 1418), proceed with an initial test run of **PrivateCloudSimulator – Device.Network.LAN.10GbOrGreater** (Device.Network.LAN.10GbOrGreater.CloudStress). This test will help ensure your environment is setup and configured properly.
+After scheduling and executing the [LoadGen SC LMS Workaround](https://msdn.microsoft.com/library/windows/hardware/dn974493) (jobs 1416 and 1418), proceed with an initial test run of **PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater** (Device.Network.LAN.10GbOrGreater.CloudStress). This test will help ensure your environment is setup and configured properly.
 
 Next, proceed with additional tests as per the required playlist for the chosen certification path.
 

@@ -13,43 +13,23 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # IpAddress
-
 
 `IpAddress` specifies a unicast IP address for the interface. You can specify the unicast IP address for both the IPv4 and the IPv6 protocols.
 
-**Note**  
-The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
-
- 
+> [!Note]
+> The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress-key.md)</p></td>
-<td><p>Specifies a unique key for the <code>IpAddress</code>.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Value](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress-value.md)</p></td>
-<td><p>Specifies the value of the <code>IpAddress</code>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress-key.md) | Specifies a unique key for the <code>IpAddress</code>. |
+| [Value](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress-value.md) | Specifies the value of the <code>IpAddress</code>. |
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -57,20 +37,17 @@ windowsPE
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | **IpAddress**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure TCPIP.
 
-```
+```XML
 <component name="Microsoft-Windows-TCPIP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <Interfaces>
    <!-- Add static IP address (192.168.0.1/24, ffff:1::3/48) & route (12.34.0.0/16) to interface with identifier "Ethernet 1" -->      <Interface wcm:action="add">
@@ -134,16 +111,4 @@ The following XML output shows how to configure TCPIP.
 
 ## Related topics
 
-
 [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md)
-
- 
-
- 
-
-
-
-
-
-
-

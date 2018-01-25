@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 76a0105c-4009-4a0e-8995-240efd8bb76f
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -38,11 +38,11 @@ It is **highly recommended** that IHVs who also produce a Profile Add-on pack pe
 
 The Bluetooth tests require up to 3 test systems, each with a 4.0 Bluetooth radio present on the machine and in the same WHLK machine pool. The machines are broken down into two roles.
 
--   Primary – Test system which has the Bluetooth radio to be certified (DUT).
+-   Primary - Test system which has the Bluetooth radio to be certified (DUT).
 
--   Secondary – Supporting test systems which have a 4.0 Bluetooth Radio present on the system.
+-   Secondary - Supporting test systems which have a 4.0 Bluetooth Radio present on the system.
 
-All of the test machines must be able to communicate over TCP/IP and must be able to resolve each other’s machine names using DNS. Back channel TCP/IP communication takes places over ports 5005 and 5006 and should be opened automatically by the test software.
+All of the test machines must be able to communicate over TCP/IP and must be able to resolve each other's machine names using DNS. Back channel TCP/IP communication takes places over ports 5005 and 5006 and should be opened automatically by the test software.
 
 ### <span id="Machine_Setup_Instructions"></span><span id="machine_setup_instructions"></span><span id="MACHINE_SETUP_INSTRUCTIONS"></span>Machine Setup Instructions
 
@@ -64,7 +64,7 @@ All of the test machines must be able to communicate over TCP/IP and must be abl
 
 5.  Use Windows HLK studio to create a machine pool and move the 3 test machines into the newly created pool.
 
-6.  Place all test machines into the “Ready” state.
+6.  Place all test machines into the "Ready" state.
 
  
 

@@ -13,16 +13,12 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # TaskbarLinks
-
 
 `TaskbarLinks` specifies shortcuts to display on the taskbar. Up to six shortcuts to programs, Microsoft Store apps or website links can be specified.
 
-**Note**  
-Any item that is pinned to the taskbar will not appear in the **Start** menu list of most frequently used programs.
-
- 
+> [!Note]
+> Any item that is pinned to the taskbar will not appear in the **Start** menu list of most frequently used programs.
 
 Each of the settings under `TaskbarLinks` specifies:
 
@@ -53,8 +49,6 @@ Each of the settings under `TaskbarLinks` specifies:
 </tbody>
 </table>
 
- 
-
 For shortcuts to programs, each shortcut file must include the complete path and file name of a corresponding program file with an .exe file name extension. The path to the program file must refer to a location on the destination computer.
 
 We recommend that you add shortcut files to the All Users **Start** menu, for example: `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Fabrikam\Application.lnk`.
@@ -65,44 +59,16 @@ This setting has no effect on Server Core installations.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Link0](microsoft-windows-shell-setup-taskbarlinks-link0.md)</p></td>
-<td><p>Specifies the path to the first shortcut.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Link1](microsoft-windows-shell-setup-taskbarlinks-link1.md)</p></td>
-<td><p>Specifies the path to the second shortcut.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Link2](microsoft-windows-shell-setup-taskbarlinks-link2.md)</p></td>
-<td><p>Specifies the path to the third shortcut.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Link3](microsoft-windows-shell-setup-taskbarlinks-link3.md)</p></td>
-<td><p>Specifies the path to the fourth shortcut.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Link4](microsoft-windows-shell-setup-taskbarlinks-link4.md)</p></td>
-<td><p>Specifies the path to the fifth shortcut.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Link5](microsoft-windows-shell-setup-taskbarlinks-link5.md)</p></td>
-<td><p>Specifies the path to the sixth shortcut.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Link0](microsoft-windows-shell-setup-taskbarlinks-link0.md) | Specifies the path to the first shortcut.  |
+| [Link1](microsoft-windows-shell-setup-taskbarlinks-link1.md) | Specifies the path to the second shortcut. |
+| [Link2](microsoft-windows-shell-setup-taskbarlinks-link2.md) | Specifies the path to the third shortcut.  |
+| [Link3](microsoft-windows-shell-setup-taskbarlinks-link3.md) | Specifies the path to the fourth shortcut. |
+| [Link4](microsoft-windows-shell-setup-taskbarlinks-link4.md) | Specifies the path to the fifth shortcut.  |
+| [Link5](microsoft-windows-shell-setup-taskbarlinks-link5.md) | Specifies the path to the sixth shortcut.  |
 
 ## Valid Configuration Passes
-
 
 auditUser
 
@@ -112,20 +78,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **TaskbarLinks**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set a shortcut for Wordpad, a shortcut to Sound Recorder, a shortcut to a Microsoft Store app with an AUMID of AppID1 and a shortcut to the Bing website.
 
-```
+```XML
 <TaskbarLinks>
    <Link0>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Wordpad.lnk</Link0>
    <Link1>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Sound Recorder.lnk</Link1>
@@ -136,16 +99,4 @@ The following XML output shows how to set a shortcut for Wordpad, a shortcut to 
 
 ## Related topics
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-

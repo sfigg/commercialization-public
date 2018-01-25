@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 90a0a9f2-2923-4321-a22c-86c7e5fe1b48
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -76,9 +76,9 @@ Because some systems might be set to shipping configuration, they might not have
 
     3.  Click the **Change advanced power settings** link on the next page to open the **Power Options** dialog.
 
-    4.  Expand **Hard disk** tree and change **Turn off hard disk after** setting to “Never” (0 minutes).
+    4.  Expand **Hard disk** tree and change **Turn off hard disk after** setting to "Never" (0 minutes).
 
-    5.  Expand **Display** tree and change **Turn off display after** setting to “Never” (0 minutes).
+    5.  Expand **Display** tree and change **Turn off display after** setting to "Never" (0 minutes).
 
     6.  From the **Turn off monitor** list, select **Never**.
 

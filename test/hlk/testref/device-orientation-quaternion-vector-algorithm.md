@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2266843a-d9ec-41a1-9f65-e9c401b3b917
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -66,7 +66,7 @@ The test consists of the following two verifications:
 
         **delta** is the angle in degrees
 
-    4.  If delta is greater than 360 degrees, delta is re-calculated as *delta = delta – 360*.
+    4.  If delta is greater than 360 degrees, delta is re-calculated as *delta = delta - 360*.
 
     5.  At this point, delta should be less than or equal to the error tolerance; for example, 10 degrees.
 

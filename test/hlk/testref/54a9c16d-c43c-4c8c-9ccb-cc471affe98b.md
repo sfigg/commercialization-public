@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 41337b97-c583-4fd5-9f57-d4167abb9e79
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -59,7 +59,7 @@ For an N-bit-per-component RGB frame buffer format, the lowest N bits must conta
 
 >[!NOTE]
 >  
-This requirement is “If-Implemented” for Windows Server.
+This requirement is "If-Implemented" for Windows Server.
 
  
 

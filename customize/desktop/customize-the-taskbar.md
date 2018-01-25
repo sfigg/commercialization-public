@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 You can pin up to three additional apps to the taskbar. There are two methods to do this:
 
-* **Taskar Layout Modification XML** method (recommended)
+* **Taskbar Layout Modification XML** method (recommended)
   * Supports multivariant images; you can specify different sets of taskbar layouts for different regions.
   * Uses a single XML file.
   * Is the only method that allows you to add UWP apps to the taskbar.
@@ -30,7 +30,7 @@ The taskbar starts with the following links: **Start**, **Search**, and **Task V
 
 OEMs can add up to three additional pinned apps to the taskbar.
 
-For left-to-right languages, the taskbar icons are ordered from left to right (Start, Search, Task View, Windws-provided Pins, OEM-provided pins, Mail).
+For left-to-right languages, the taskbar icons are ordered from left to right (Start, Search, Task View, Windows-provided Pins, OEM-provided pins, Mail).
 For right-to-left languages, the taskbar icons are in the opposite order, with the right-most element being **Start**.
 
 ## Add a default path

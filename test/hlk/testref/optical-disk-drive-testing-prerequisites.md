@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 6aa632a1-0d96-454e-94f5-0d88fc67ea32
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -35,7 +35,7 @@ To test an optical drive, you need the following hardware. You might need additi
 
     -   Dual-core or equivalent processor and 4 gigabytes (GB) of memory for Windows client operating systems (for example, Windows 8, Windows 7, and Windows Vista).
 
-    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server® operating systems.
+    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server operating systems.
 
     The test computer must contain one dual-channel Advanced Technology Attachment (ATA)/Advanced Technology Attachment Packet Interface (ATAPI) controller that's implemented on the motherboard. The test computer must also contain a logo-compliant Advanced Configuration and Power Interface (ACPI) BIOS, with ACPI enabled by default. For Windows 8, Windows 7, and Windows Vista, BIOS configuration and Serial Advanced Technology Attachment (SATA) controller support of SATA Advanced Host Controller Interface (AHCI) mode are required.
 

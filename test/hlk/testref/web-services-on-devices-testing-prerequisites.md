@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5e366415-744d-4199-a3b7-9c6ad66d555f
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -53,7 +53,7 @@ Testing a device for Server Device certification requires that the system that i
 
 If a pool of test computers is used to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and driver that is being tested. As long as the driver is the same on all computers in the pool, the test will be created to run against all computers.
 
-For those tests that do not include a driver to test, such as testing a hard disk drive, the Windows HLK scheduler will require the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default computer. This computer should also be manually configured to have multiple processor groups. The default computer is the first computer listed. Test personnel, in this case, should ensure that this first computer meets these minimum hardware requirements.
+For those tests that do not include a driver to test, such as testing a hard disk drive, the Windows HLK scheduler will require the tests that validate the device's and driver's Rebalance, D3 State and Multiple Processor Groups functionality to run on the default computer. This computer should also be manually configured to have multiple processor groups. The default computer is the first computer listed. Test personnel, in this case, should ensure that this first computer meets these minimum hardware requirements.
 
 >[!NOTE]
 >  

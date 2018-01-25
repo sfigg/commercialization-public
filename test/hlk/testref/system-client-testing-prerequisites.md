@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 69d0635d-3811-42e1-8b4b-7395e957371e
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -29,13 +29,13 @@ This section describes the tasks that you must complete before you test a client
 ## <span id="BKMK_HCK_Client_hR"></span><span id="bkmk-hck-client-hr"></span><span id="BKMK_HCK_CLIENT_HR"></span>Hardware requirements
 
 
-To certify your client systems for Windows 8 and Windows 8.1, you’ll need the following hardware in addition to the system that you’re testing:
+To certify your client systems for Windows 8 and Windows 8.1, you'll need the following hardware in addition to the system that you're testing:
 
 -   Another computer. Ideally, the second computer is already certified.
 
     >[!NOTE]
     >  
-    If you’re testing a computer with Bluetooth, the second computer must also have Bluetooth 4.0 or have a Bluetooth adapter installed.
+    If you're testing a computer with Bluetooth, the second computer must also have Bluetooth 4.0 or have a Bluetooth adapter installed.
 
      
 
@@ -53,7 +53,7 @@ To certify your client systems for Windows 8 and Windows 8.1, you’ll need the
 
 -   One USB 3.0 hub for every exposed port.
 
--   Audio Precision Machine – Model System Two and connector cables.
+-   Audio Precision Machine - Model System Two and connector cables.
 
 -   A Bluetooth audio device (if the system supports Bluetooth).
 
@@ -73,7 +73,7 @@ To certify your client systems for Windows 8 and Windows 8.1, you’ll need the
 
 -   A Windows To Go drive.
 
-    You must pre-configure the Windows To Go drive with a valid Windows image (WIM) file to test the computer. It must include any drivers that are needed to use the system’s hardware.
+    You must pre-configure the Windows To Go drive with a valid Windows image (WIM) file to test the computer. It must include any drivers that are needed to use the system's hardware.
 
 -   A mirror large enough to reflect a screen image back into the camera (if the system has a webcam).
 

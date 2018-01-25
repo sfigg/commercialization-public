@@ -55,6 +55,7 @@ You should contact your firmware manufacturer for tools and assistance in creati
 6. Windows loads other kernel drivers and initializes the user mode processes.
 
 
-## Related Topics
+## <span id="related_topics"></span>Related topics
 
-- [UEFI firmware requirements](https://review.docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-uefi?branch=dawn-security-toc)
+- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
+- [UEFI firmware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-uefi)

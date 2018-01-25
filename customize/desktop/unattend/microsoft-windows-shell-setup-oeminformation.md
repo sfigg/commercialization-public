@@ -26,8 +26,8 @@ This change affects context-sensitive (or F1) help and accessing help from the m
 
 ## Child Elements
 
-| Element                                                 | Description                                                                                         |
-|:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
 | [SupportProvider](microsoft-windows-shell-setup-oeminformation-supportprovider.md) | Name of OEM support app or website. If not provided, the default Manufacturer name (from msinfo32.exe) will be used.                                  |
 | [SupportAppURL](microsoft-windows-shell-setup-oeminformation-supportappurl.md)     | URI for the OEM support app. Required, unless `SupportURL` is present, in which case it is optional. If both are supplied, `SupportAppURL` is used. Add a parameter with a unique value to identify traffic coming from the Get Help app.                                                                    |
 | [SupportURL](microsoft-windows-shell-setup-oeminformation-supporturl.md)           | Specifies the URL of the support website for an OEM. Required, unless `SupportAppURL` is present, in which case it is optional. If both are supplied, `SupportAppURL` is used.                        |

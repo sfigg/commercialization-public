@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UpgradeData
-
 
 `UpgradeData` specifies whether the installation type is an upgrade of an existing operating system. This setting also specifies in what circumstances the user interface (UI) is displayed.
 
@@ -23,54 +21,33 @@ Windows Setup does not support using any other unattended Setup settings during 
 
 For a sample answer file, see the [XML Example](#xmlexample) section.
 
-**Caution**  
-If you use an installation image that was originally installed by using an Unattend.xml file, and you execute the **Repair in-place upgrade (overwrite installation)** option, the upgrade installation may quit. You may not be able to restart the installation. For more information, see [Knowledge Base Article ID 2425962](http://go.microsoft.com/fwlink/?LinkId=209802).
-
- 
+> [!Warning]
+> If you use an installation image that was originally installed by using an Unattend.xml file, and you execute the **Repair in-place upgrade (overwrite installation)** option, the upgrade installation may quit. You may not be able to restart the installation. For more information, see [Knowledge Base Article ID 2425962](http://go.microsoft.com/fwlink/?LinkId=209802).
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Upgrade](microsoft-windows-setup-upgradedata-upgrade.md)</p></td>
-<td><p>Specifies whether the installation is an upgrade of an existing operating system.</p></td>
-</tr>
-<tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-upgradedata-willshowui.md)WillShowUI</p></td>
-<td><p>Specifies in what circumstances the UI is displayed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Upgrade](microsoft-windows-setup-upgradedata-upgrade.md) | Specifies whether the installation is an upgrade of an existing operating system. |
+| [WillShowUI](microsoft-windows-setup-upgradedata-willshowui.md) | Specifies in what circumstances the UI is displayed. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | **UpgradeData**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **UpgradeData**
 
 ## Applies To
 
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
-
-## <a href="" id="xmlexample"></a>XML Example
-
+## XML Example
 
 The following XML output shows how to set an upgrade installation to run in guaranteed quiet mode.
 
-```
+```XML
 <UpgradeData>
    <Upgrade>true</Upgrade>
    <WillShowUI>Never</WillShowUI>
@@ -79,16 +56,4 @@ The following XML output shows how to set an upgrade installation to run in guar
 
 ## Related topics
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)Microsoft-Windows-Setup

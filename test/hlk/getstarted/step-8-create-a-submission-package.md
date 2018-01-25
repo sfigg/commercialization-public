@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c7890995-e415-44c2-9f90-0d45e3b79ba0
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -56,7 +56,7 @@ The following image shows the HLK Studio **Package** tab.
 
     -   **Do not sign** to create an unsigned package, for example, to send to Support for debugging or to later merge with other packages into a single submission package.
 
-    -   **Use the certificate store** to create a digitally signed package—the most common scenario. This option requires an X509 certificate—for example a VeriSign certificate— to be installed on the computer running Windows HLK Studio. From the **Windows Security** dialog box, select the appropriate code signing certificate.
+    -   **Use the certificate store** to create a digitally signed package--the most common scenario. This option requires an X509 certificate--for example a VeriSign certificate-- to be installed on the computer running Windows HLK Studio. From the **Windows Security** dialog box, select the appropriate code signing certificate.
 
     -   **Use a certificate file** to create a digitally signed package by using a portable security file. This option asks you for an X509 certificate file (.cer file).
 

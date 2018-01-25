@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # ExtendOSPartition
-
 
 `ExtendOSPartition` specifies whether to extend the partition on which you are installing Windows. This setting is required for scenarios in which a customer has installed the Windows image by using a sector-based imaging solution and now plans on extending the partition.
 
@@ -23,33 +21,15 @@ These settings are valid only for NTFS file-system partitions.
 
 ## Child Elements
 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Extend](microsoft-windows-deployment-extendospartition-extend.md) | Specifies whether to extend the partition to fill the entire hard disk. |
+| [Size](microsoft-windows-deployment-extendospartition-size.md) | Specifies the size of the extension in megabytes. If the total value of the current size of the partition plus this setting exceeds the available space, then the partition is not extended. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Extend](microsoft-windows-deployment-extendospartition-extend.md)</p></td>
-<td><p>Specifies whether to extend the partition to fill the entire hard disk.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Size](microsoft-windows-deployment-extendospartition-size.md)</p></td>
-<td><p>Specifies the size of the extension in megabytes. If the total value of the current size of the partition plus this setting exceeds the available space, then the partition is not extended.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-**Note**  
-If both of these are set, an error is logged, and installation is terminated.
-
- 
+> [!Note]
+> If both of these are set, an error is logged, and installation is terminated.
 
 ## Valid Passes
-
 
 auditSystem
 
@@ -61,20 +41,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **ExtendOSPartition**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows a deployment with no asynchronous or synchronous commands.
 
-```
+```XML
 <AuditComputerName>
    <MustReboot>true</MustReboot>
    <Name>MyComputer</Name>
@@ -90,16 +67,4 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 ## Related topics
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # MetaData
-
 
 `MetaData` specifies a Windows edition or image in a Windows image (.wim) file.
 
@@ -25,47 +23,28 @@ Use the `DISM /Get-ImageInfo` command to determine which images and editions are
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Key](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md)</p></td>
-<td><p>Specifies whether the image number, name, or description is used to select the image in a .wim file.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Value](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-value.md)</p></td>
-<td><p>Specifies the value of the <code>Key</code> setting.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Key](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md) | Specifies whether the image number, name, or description is used to select the image in a .wim file. |
+| [Value](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-value.md) | Specifies the value of the <code>Key</code> setting. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimage-installfrom.md) | **MetaData**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimage-installfrom.md) | **MetaData**
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Examples
 
-
 The following XML output shows how to configure the `ImageInstall` setting to install a specific Windows image from the Windows DVD by using the image index value:
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -84,7 +63,7 @@ The following XML output shows how to configure the `ImageInstall` setting to in
 
 The following XML output shows how to configure the `ImageInstall` setting to install a specific Windows image from a custom Windows image file (.wim) located on a network share. Windows Setup selects the image from the LaptopImages.wim file by referencing the image description of a fictional laptop model named "Model FNB1".
 
-```
+```XML
 <ImageInstall>
     <OSImage>
         <InstallFrom>
@@ -111,20 +90,8 @@ The following XML output shows how to configure the `ImageInstall` setting to in
 
 ## Related topics
 
-
 [InstallFrom](microsoft-windows-setup-imageinstall-osimage-installfrom.md)
 
 [Key](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md)
 
 [Value](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-value.md)
-
- 
-
- 
-
-
-
-
-
-
-

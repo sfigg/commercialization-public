@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: D9E3FA7A-B5ED-4B1E-A78B-4788FDF91C3E
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -209,13 +209,13 @@ Minimum system requirements are as shown in the table below.
             **or**
 
             ``` syntax
-            PS> Add-WindowsFeature Net-Framework-Features –IncludeAllSubFeature
+            PS> Add-WindowsFeature Net-Framework-Features -IncludeAllSubFeature
             ```
 4.  During test execution, the features (including all sub-features) below will be installed on the PCS controller:
     1.  Web Server
 
         ``` syntax
-        PS> Add–WindowsFeature Web-WebServer –IncludeAllSubFeature
+        PS> Add-WindowsFeature Web-WebServer -IncludeAllSubFeature
         ```
 
     2.  Failover Clustering feature and sub features. Management tools
@@ -227,7 +227,7 @@ Minimum system requirements are as shown in the table below.
     3.  Remote Server Administration for Hyper-V tools
 
         ``` syntax
-        PS> Add-WindowsFeature RSAT-Hyper-V-Tools –IncludeAllSubFeature
+        PS> Add-WindowsFeature RSAT-Hyper-V-Tools -IncludeAllSubFeature
         ```
 
 ## <span id="Setup_and_Run_PCS_tests_from_Windows_HLK"></span><span id="setup_and_run_pcs_tests_from_windows_hlk"></span><span id="SETUP_AND_RUN_PCS_TESTS_FROM_WINDOWS_HLK"></span>Setup and Run PCS tests from Windows HLK
@@ -251,26 +251,26 @@ NIC (10GbE)
 Windows Server 2016 Logo
 PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
 SDDC - Standard
-SDDC – Premium
+SDDC - Premium
 PrivateCloudSimulator - Device.Network.LAN.AzureStack
 AzureStack
 SAS HBA
-SDDC – Standard
+SDDC - Standard
 PrivateCloudSimulator - Device.Storage.Controller.AzureStack
-SDDC – Premium
+SDDC - Premium
 AzureStack
 Disk (HDD/SSD/NVMe)
-SDDC – Standard
+SDDC - Standard
 PrivateCloudSimulator - Device.Storage.HD.AzureStack
-SDDC – Premium
+SDDC - Premium
 AzureStack
 Complete end-to-end solution
-SDDC – Standard
+SDDC - Standard
 PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MIN)
 
 PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MAX)
 
-SDDC – Premium
+SDDC - Premium
 AzureStack
 PrivateCloudSimulator - System.Solutions.AzureStack (MIN)
 
@@ -1120,7 +1120,7 @@ This action retires a disk from a pool and starts repair. If spaces doesn't get 
     ![hlk studio showing features dialog with storagespacesdirect selected](images/pcs-system-solutions-storagespacesdirect-features.png)
 
 -   Navigate to the Tests tab
--   Select **PrivateCloudSimulator – System.Solutions.StorageSpacesDirect (MAX)** or **PrivateCloudSimulator – System.Solutions.StorageSpacesDirect (MIN)** (based on the solution size you are testing)
+-   Select **PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MAX)** or **PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MIN)** (based on the solution size you are testing)
 -   Click **Run Selected**
 
     ![hlk studio showing storage spaces direct tests](images/pcs-system-solutions-storagespacesdirect-tests.png)
@@ -1238,7 +1238,7 @@ Calls update-storageprovidercache command in PowerShell.
     ![hlk studio showing features dialog](images/pcs-system-solutions-azurestack-features.png)
 
 -   Navigate to the Tests tab
--   Select **PrivateCloudSimulator – System.Solutions.AzureStack**
+-   Select **PrivateCloudSimulator - System.Solutions.AzureStack**
 -   Click **Run Selected** link
 
     ![hlk studio showing tests tab with azurestack test selected](images/pcs-system-solutions-azurestack-tests.png)
@@ -1376,7 +1376,7 @@ To view the report, follow these steps:
     -   **Count All Runs:** A count of actions that failed because of this particular failure across all PCS runs. For the **VMLiveMigrationAction**, this count was 3.
     -   **PCS Runs Affected:** Tells how many runs have been affected by this failure. For **VMLiveMigrationAction**, only 1 PCS run was affected.
 
-7.  To look further into the error – you can click a failure ID on that screen to drill down to a global history of the failure type across all PCS runs. For example, click **97c12afd-23a8-3982-e304-a5dc6793950d** to display the following. The page lists all failed operations, grouped by failure type, which has the effect of highlighting key features that you might need to investigate.
+7.  To look further into the error - you can click a failure ID on that screen to drill down to a global history of the failure type across all PCS runs. For example, click **97c12afd-23a8-3982-e304-a5dc6793950d** to display the following. The page lists all failed operations, grouped by failure type, which has the effect of highlighting key features that you might need to investigate.
 
     ![ie reporting showing failing actions by cause](images/pcs-ie-reports-failing-actions.png)
 
@@ -1697,9 +1697,9 @@ The below are put together as a basic guide to help narrow down some of the issu
 -   Open Hyper-V manager and make sure the VMs and vSwitches get enumerated (also possible by running Get-VM or Get-VMSwitch).
 -   Make sure you are able create a vSwitch outside of PCS tests on one/all of the compute nodes.
 -   Make sure you can create a Win2012R2 VM on one/all of the nodes and can attach a vmNetworkAdapter it to a vSwitch.
--   Look for dump files generated due to bugchecks by running “dir /s \*.dmp” from the %systemdrive% on the compute nodes.
+-   Look for dump files generated due to bugchecks by running "dir /s \*.dmp" from the %systemdrive% on the compute nodes.
 -   Possible usage of [LiveKD](https://technet.microsoft.com/en-us/sysinternals/livekd.aspx) to look at kernel modules/threads that are stuck, if you do not have kernel debugger attached.
--   Check if compute nodes’ license is active, as Eval version license get reset every 180 days.
+-   Check if compute nodes' license is active, as Eval version license get reset every 180 days.
 
 ## <span id="Appendix__Software_Defined_Datacenter__SDDC__Additional_Qualifiers__AQs_"></span><span id="appendix__software_defined_datacenter__sddc__additional_qualifiers__aqs_"></span><span id="APPENDIX__SOFTWARE_DEFINED_DATACENTER__SDDC__ADDITIONAL_QUALIFIERS__AQS_"></span>Appendix: Software Defined Datacenter (SDDC) Additional Qualifiers (AQs)
 

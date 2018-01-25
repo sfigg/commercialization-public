@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 54db0875-4856-4cf2-a036-43b9eebb3036
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -45,7 +45,7 @@ ms.technology: windows-oem
 </tr>
 <tr class="even">
 <td><p>[IDeviceTargetData.DriverHash Property](idevicetargetdatadriverhash-property.md)</p></td>
-<td><p>This property represents all of the driver’s hash values for a deviceTarget object.</p></td>
+<td><p>This property represents all of the driver's hash values for a deviceTarget object.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[IDeviceTargetData.Drivers Property](idevicetargetdatadrivers-property.md)</p></td>

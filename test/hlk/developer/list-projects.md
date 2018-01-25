@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 9e633249-4e36-4d17-aa28-1274d1298cca
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -161,7 +161,7 @@ $Manager.GetProjectNames() | foreach {
                 write-host "`tKey   : " $_.Key 
                 
                 # there is more infomation if this is a device type
-                $DeviceData =  $_ –AS [Microsoft.Windows.Kits.Hardware.ObjectModel.IDeviceTargetData]
+                $DeviceData =  $_ -AS [Microsoft.Windows.Kits.Hardware.ObjectModel.IDeviceTargetData]
                 if ($DeviceData -ne $null)
                 {
                     write-host "`tManufacturer : " $DeviceData.Manufacturer

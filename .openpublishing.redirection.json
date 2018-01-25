@@ -1545,6 +1545,11 @@
         "source_path": "test/hlk/user/install-microsoft-sql-server.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/microsoft-sql-server-options", 
         "redirect_document_id": true
-    }
+    },
+    {   
+        "source_path": "design/change-history-for-design.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows", 
+        "redirect_document_id": true
+    },
   ] 
 }

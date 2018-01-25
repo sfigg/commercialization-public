@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 1e222537-4b7e-4a75-8b01-09cf49534f3c
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # <span id="p_hlk_test.ac970c9b-8d76-4cd6-bc8a-3efdd8ec6fb7"></span>Thin Provisioning Threshold and Resource Exhaustion Test (LOGO)
 
 
-This test verifies that target devices with thin provisioning feature meet Windows® requirements.
+This test verifies that target devices with thin provisioning feature meet Windows requirements.
 
 ## Test details
 |||
@@ -74,7 +74,7 @@ The end to end scenario test would do threshold and resource exhaustion test. Th
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Thinprovision.exe /scenario exhaustion /thindisk &quot;[TPDiskDeviceObjLink]&quot; /percent “[TPDiskThresholdPercent]” /logo</strong></p></td>
+<td><p><strong>Thinprovision.exe /scenario exhaustion /thindisk &quot;[TPDiskDeviceObjLink]&quot; /percent "[TPDiskThresholdPercent]" /logo</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 </tbody>

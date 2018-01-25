@@ -13,43 +13,21 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # UserSettings
-
 
 Use the `UserSettings` settings to specify what custom shell and what default return code action to use for specific users or user groups.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[User](microsoft-windows-embedded-shelllauncher-usersettings-user.md)</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [User](microsoft-windows-embedded-shelllauncher-usersettings-user.md) | Specifies what custom shell and what default return code action to use for specific users or user groups. |
 
 ## Parent Hierarchy
-
 
 [Microsoft-Windows-Embedded-ShellLauncher](microsoft-windows-embedded-shelllauncher.md) | **UserSettings**
 
 ## Applies to
-
 
 This component applies to the following Windows editions and architectures.
 
@@ -77,15 +55,3 @@ This component applies to the following Windows editions and architectures.
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

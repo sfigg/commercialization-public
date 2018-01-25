@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: b8392b64-b746-4bed-bb44-279826b57f40
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -26,18 +26,18 @@ To troubleshoot issues that occur with Device.Network tests, follow these steps:
 
 If the two machines LAN test jobs fail it is probable that the tests are not able to detect the message and/or support devices on either of the two machines.
 
-To quickly diagnose this type of problem, run the “NDISTest 6.5 – \[2 Machine\] – CheckConnectivity” job. This job only takes a couple minutes to run but will tell you if the machines can communicate and are ready to run the rest of the two machine jobs.
+To quickly diagnose this type of problem, run the "NDISTest 6.5 - \[2 Machine\] - CheckConnectivity" job. This job only takes a couple minutes to run but will tell you if the machines can communicate and are ready to run the rest of the two machine jobs.
 
-If there is a connectivity issue, the job will fail in the “Run NDISTest Client” task. The job’s log files will list failures when the test and support NICs cannot communicate bidirectionally. Review the results in the job’s log files, check the machines’ connections, and try running the job again.
+If there is a connectivity issue, the job will fail in the "Run NDISTest Client" task. The job's log files will list failures when the test and support NICs cannot communicate bidirectionally. Review the results in the job's log files, check the machines' connections, and try running the job again.
 
 You should also check that you are selecting the correct machine as the support machine. With multiport NICs and multiple machine setups, it is very easy to select the wrong NIC or wrong machine. We suggest keeping the two machines running LAN tests in their own machine pool to avoid accidentally selecting the wrong machine.
 
-## <span id="the_ndistest_6.5____2_machine____checkconnectivity_job"></span><span id="THE_NDISTEST_6.5____2_MACHINE____CHECKCONNECTIVITY_JOB"></span>The NDISTest 6.5 – \[2 Machine\] – CheckConnectivity job
+## <span id="the_ndistest_6.5____2_machine____checkconnectivity_job"></span><span id="THE_NDISTEST_6.5____2_MACHINE____CHECKCONNECTIVITY_JOB"></span>The NDISTest 6.5 - \[2 Machine\] - CheckConnectivity job
 
 
-The NDISTest 6.5 – \[2 Machine\] – CheckConnectivity job ensures that the test and support devices can communicate correctly by doing a basic send and receive.
+The NDISTest 6.5 - \[2 Machine\] - CheckConnectivity job ensures that the test and support devices can communicate correctly by doing a basic send and receive.
 
-If the “Run script to detect devices and populate parameters” task is marked as failed, the device autodetection failed. Double click detect.wtl to open the autodetection log to determine which device was not detected.
+If the "Run script to detect devices and populate parameters" task is marked as failed, the device autodetection failed. Double click detect.wtl to open the autodetection log to determine which device was not detected.
 
 Autodetection of the devices will only work if machines are set up in the recommended topology. The test machine needs to contain the target NIC and the message NIC. The support machine needs to contain a support NIC and a message NIC. Any additional connected Ethernet devices will make autodetection impossible and will require the devices to be renamed to denote their roles.
 
@@ -49,7 +49,7 @@ The autodetection script logic is as follows:
 
 1.  Find the message NIC.
 
-    1.  Search for devices named “MessageDevice”.
+    1.  Search for devices named "MessageDevice".
 
     2.  If not found, search for the Ethernet NIC with a DHCP assigned IP address.
 
@@ -59,7 +59,7 @@ The autodetection script logic is as follows:
 
 2.  If running on the support machine, find the support NIC.
 
-    1.  Search for devices named “SupportDevice0”.
+    1.  Search for devices named "SupportDevice0".
 
     2.  If not found, search for a physical, enabled Ethernet NIC that is not the message NIC.
 
@@ -75,11 +75,11 @@ Where:
 
 ### <span id="Reading_the_NDISTest_Logs"></span><span id="reading_the_ndistest_logs"></span><span id="READING_THE_NDISTEST_LOGS"></span>Reading the NDISTest Logs
 
-One way to read NDISTest logs is to double click “ndistest.wtl” or right click the task result and go to “Additional files” for the job result you want to view. This will open the DTM Manager log viewer.
+One way to read NDISTest logs is to double click "ndistest.wtl" or right click the task result and go to "Additional files" for the job result you want to view. This will open the DTM Manager log viewer.
 
-NDISTest also produces HTML logs which are often much more readable. To view the HTML log for a result, right click the task result and go to “Additional files”. There will be several files listed; open the checkconnectivity.htm file under the “Client” folder.
+NDISTest also produces HTML logs which are often much more readable. To view the HTML log for a result, right click the task result and go to "Additional files". There will be several files listed; open the checkconnectivity.htm file under the "Client" folder.
 
-Additionally open “ndistest.htm” from the “Client” folder to view failures from the preconfig and postconfig tasks that run before and after each NDISTest 6.5 test.
+Additionally open "ndistest.htm" from the "Client" folder to view failures from the preconfig and postconfig tasks that run before and after each NDISTest 6.5 test.
 
 ## <span id="related_topics"></span>Related topics
 

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 43fd72a4-e081-442f-8820-d06e82908604
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -439,7 +439,7 @@ Compare Signal-to-Noise Ratio (SNR) on the test device and on a reference device
 
 >[!NOTE]
 >  
-If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft<sup>®</sup> Bing
+If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft Bing
 
  
 

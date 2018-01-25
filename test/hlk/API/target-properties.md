@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c6393473-103e-4183-a05f-d55521e9722d
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -39,7 +39,7 @@ ms.technology: windows-oem
 </tr>
 <tr class="even">
 <td><p><strong>IsTargetReady</strong></p></td>
-<td><p>This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the “ready” state).</p></td>
+<td><p>This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the "ready" state).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Key</strong></p></td>

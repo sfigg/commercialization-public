@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Microsoft-Windows-WPD-BusEnumService
-
 
 The `Microsoft-Windows-WPD-BusEnumService` component contains settings used to manage how the system searches for devices that use Media Transfer Protocol over Bluetooth (MTP/BT).
 
@@ -23,49 +21,16 @@ MTP/BT enables the computer to synchronize and transfer data between the compute
 
 ## In This Section
 
-
-This component includes two settings:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[BTSearchIntervalOnAC](microsoft-windows-wpd-busenumservice-btsearchintervalonac.md)</p></td>
-<td><p>Specifies how often the computer will search for portable devices using MTP/BT while plugged in to AC power.</p></td>
-</tr>
-<tr class="even">
-<td><p>[BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservice-btsearchintervalondc.md)</p></td>
-<td><p>Specifies how often the computer will search for portable devices using MTP/BT while on battery power.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[RegCacheUpdated](microsoft-windows-wpd-busenumservice-regcacheupdated.md)</p></td>
-<td><p>For Microsoft internal use only.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [BTSearchIntervalOnAC](microsoft-windows-wpd-busenumservice-btsearchintervalonac.md) | Specifies how often the computer will search for portable devices using MTP/BT while plugged in to AC power. |
+| [BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservice-btsearchintervalondc.md) | Specifies how often the computer will search for portable devices using MTP/BT while on battery power. |
+| [RegCacheUpdated](microsoft-windows-wpd-busenumservice-regcacheupdated.md) | For Microsoft internal use only. |
 
 ## Applies To
-
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
 ## Related topics
 
-
 [Components](components-b-unattend.md)
-
- 
-
- 
-
-
-
-
-
-
-

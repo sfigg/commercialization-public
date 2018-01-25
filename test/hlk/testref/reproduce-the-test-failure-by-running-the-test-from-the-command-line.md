@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d10a52eb-5275-4f2b-88ea-72dbc3007cb2
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -44,12 +44,12 @@ It is sometimes convenient to reproduce test failures by running the tests from 
 6.  Change directory to **c:\\temp** and run the following command:
 
     ``` syntax
-    c:\temp\Te.exe Devfund_<testname>.<ext>/P:”DQ=DeviceID=’<Device Instance Path of device under test from Device Manager>’” /RebootStateFile:asdf.st /Name:”*< test case name>*”
+    c:\temp\Te.exe Devfund_<testname>.<ext>/P:"DQ=DeviceID='<Device Instance Path of device under test from Device Manager>'" /RebootStateFile:asdf.st /Name:"*< test case name>*"
     ```
 
     Where &lt;*test case name*&gt; is the name of the test.
 
-You can get the test name by reviewing the **Run Test** task for the failing job. Open Windows HLK Manager, click **Explorer**, click **Job Explorer**, click **Search for failing job** (eg. ‘Device Path Exerciser Test (Certification)’). Right-click the failing job, click **Open Job**, click the **Tasks** tab, click **Regular** tasks, and double click **Run Test** to view the test binary name.
+You can get the test name by reviewing the **Run Test** task for the failing job. Open Windows HLK Manager, click **Explorer**, click **Job Explorer**, click **Search for failing job** (eg. 'Device Path Exerciser Test (Certification)'). Right-click the failing job, click **Open Job**, click the **Tasks** tab, click **Regular** tasks, and double click **Run Test** to view the test binary name.
 
 The /**Name** switch is optional. The /**Name** switch specifies that only the test names you specify are run; if unspecified, all test cases contained in the test binary are executed in sequence. You can get the list of test case names in a test binary by running the following command:
 
@@ -69,7 +69,7 @@ Running Te.exe with the **/BreakOnError** switch causes the system to break into
 To run a device fundamentals test by using the /**BreakOnError** switch, add the switch as shown below:
 
 ``` syntax
-Run c:\temp\Te.exe Devfund_<testname>.<ext>/P:”DQ=DeviceID=’<Device Instance Path of device under test from Device Manager>’” /RebootStateFile:asdf.st /BreakOnError /Name:”*<test case name>*”
+Run c:\temp\Te.exe Devfund_<testname>.<ext>/P:"DQ=DeviceID='<Device Instance Path of device under test from Device Manager>'" /RebootStateFile:asdf.st /BreakOnError /Name:"*<test case name>*"
 ```
 
 Where &lt;*test case name*&gt; is the name of the test.
@@ -92,10 +92,10 @@ WDTF_FUZZTEST             : INFO  :    Successfully terminated test thread.
 You can set a break in the debugger using the following command:
 
 ``` syntax
-Te.exe Devfund_DevicePathExerciser_WLK.dll /P:”DQ=DeviceID=’ USB\VID_045E&PID_F0CA&MI_00\7&12099DDE&0&0000’” /RebootStateFile:asdf.st /BreakOnError /Name:”*IOCTLTest*”
+Te.exe Devfund_DevicePathExerciser_WLK.dll /P:"DQ=DeviceID=' USB\VID_045E&PID_F0CA&MI_00\7&12099DDE&0&0000'" /RebootStateFile:asdf.st /BreakOnError /Name:"*IOCTLTest*"
 ```
 
-Device Fundamentals tests run as Te.ProcessHost.exe (if it exists) or as Te.exe (if Te.ProcessHost.exe doesn’t exist). Reviewing threads running in these test processes can help with triaging hangs and/or test failures.
+Device Fundamentals tests run as Te.ProcessHost.exe (if it exists) or as Te.exe (if Te.ProcessHost.exe doesn't exist). Reviewing threads running in these test processes can help with triaging hangs and/or test failures.
 
 You can get the process id of **Te.ProcessHost.exe** by running the following command:
 

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 45e0175f-5c7d-49aa-b8bc-f92cd9858a17
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -59,7 +59,7 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
-When the client software is originally installed on a machine, a Machine object is created and automatically appears in the default pool. Machine objects that are newly created are in a ‘Not Ready’ state, they need to be set to ‘Ready’ state before tests can be scheduled.
+When the client software is originally installed on a machine, a Machine object is created and automatically appears in the default pool. Machine objects that are newly created are in a 'Not Ready' state, they need to be set to 'Ready' state before tests can be scheduled.
 
 Any Machine in the reserved &lt;seealso cref="T:Microsoft.Windows.Kits.Hardware.ObjectModel.MachinePool"/&gt; cannot run tests. These machines will need to be moved into a MachinePool that is not a reserved pool.
 

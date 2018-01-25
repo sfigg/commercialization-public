@@ -13,45 +13,22 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Ipv4Settings
-
 
 `Ipv4Settings` contains the settings for the IPv4 protocol.
 
-**Note**  
-The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
-
- 
+> [!Note]
+> The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DhcpEnabled](microsoft-windows-tcpip-interfaces-interface-ipv4settings-dhcpenabled.md)</p></td>
-<td><p>Specifies whether the Dynamic Host Configuration Protocol (DHCP) is enabled for the IPv4 protocol.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Metric](microsoft-windows-tcpip-interfaces-interface-ipv4settings-metric.md)</p></td>
-<td><p>Specifies the interface metric used to distinguish between multiple matching routes of the same prefix length.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[RouterDiscoveryEnabled](microsoft-windows-tcpip-interfaces-interface-ipv4settings-routerdiscoveryenabled.md)</p></td>
-<td><p>Specifies whether the router discovery protocol, which informs hosts of the existence of routers, is enabled for the IPv4 protocol.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DhcpEnabled](microsoft-windows-tcpip-interfaces-interface-ipv4settings-dhcpenabled.md) | Specifies whether the Dynamic Host Configuration Protocol (DHCP) is enabled for the IPv4 protocol. | 
+| [Metric](microsoft-windows-tcpip-interfaces-interface-ipv4settings-metric.md) | Specifies the interface metric used to distinguish between multiple matching routes of the same prefix length. |
+| [RouterDiscoveryEnabled](microsoft-windows-tcpip-interfaces-interface-ipv4settings-routerdiscoveryenabled.md) | Specifies whether the router discovery protocol, which informs hosts of the existence of routers, is enabled for the IPv4 protocol. |
 
 ## Valid Configuration Passes
-
 
 specialize
 
@@ -59,20 +36,17 @@ windowsPE
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **Ipv4Settings**
 
 ## Applies To
-
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
-
 The following XML output shows how to configure TCPIP.
 
-```
+```XML
 <component name="Microsoft-Windows-TCPIP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <Interfaces>
    <!-- Add static IP address (192.168.0.1/24, ffff:1::3/48) & route (12.34.0.0/16) to interface with identifier "Ethernet 1" -->      <Interface wcm:action="add">
@@ -136,16 +110,4 @@ The following XML output shows how to configure TCPIP.
 
 ## Related topics
 
-
 [Interface](microsoft-windows-tcpip-interfaces-interface.md)
-
- 
-
- 
-
-
-
-
-
-
-

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 467720D9-134B-4990-833B-38DEBEA374E7
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -22,7 +22,7 @@ The **Selection** tab displays all features that a device implements. Before you
 
 The specific testable device is called the *target*. A device may contain multiple targets, represented by one or more hardware IDs. You can filter what you want to test by:
 
--   **show selected** - this option displays the targets that you’ve selected. This view allows you to see just the areas you're testing. You also can filter a machine pool by category by using the **category** list. You can search for specific targets/features by using the search box.
+-   **show selected** - this option displays the targets that you've selected. This view allows you to see just the areas you're testing. You also can filter a machine pool by category by using the **category** list. You can search for specific targets/features by using the search box.
 
 -   **systems** - test a complete client or server computer.
 

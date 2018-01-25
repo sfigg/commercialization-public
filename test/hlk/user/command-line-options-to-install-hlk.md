@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 356d44dc-226c-482b-bf47-2fa6ab6a4d94
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -53,7 +53,7 @@ To install/uninstall Windows HLK Controller and HLK Studio (Unattended)
     -   \\\\HLKController\\HLKInstall\\Studio\\setup.exe /qn /uninstall
 
     >[!NOTE]
-    >  Replace “HLKController” with the name of the computer on which you installed the Controller.
+    >  Replace "HLKController" with the name of the computer on which you installed the Controller.
 
  
 

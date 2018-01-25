@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: cadbd3bf-0fc4-4d26-adf1-348f3e58d488
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -58,7 +58,7 @@ WDTF_TEST             : INFO  : Status:       Status Flags=0x1802400 (DN_HAS_PRO
 WDTF_TEST             : INFO  : IsPhantom:    False
 ```
 
-## <span id="timeout"></span><span id="TIMEOUT"></span>Device Path Exerciser fails with “Test thread exceeded timeout limit. Terminating thread error” error
+## <span id="timeout"></span><span id="TIMEOUT"></span>Device Path Exerciser fails with "Test thread exceeded timeout limit. Terminating thread error" error
 
 
 When the test logs the **Test thread exceeded timeout limit. Terminating thread error error** during a device path exerciser test, the test also logs the last operation that it performed. Driver developers must determine why the last logged operation would cause the test to hang. For example:
@@ -68,7 +68,7 @@ WDTF_FUZZTEST : Test thread exceeded timeout limit. Terminating thread
 WDTF_FUZZTEST : Last logged operation: ZwDeviceIoControlFile, CtrlCode=0x2b0020, InBuf=0xfffffc00, 0 OutBuf=0xfffffc00, 0
 ```
 
-## <span id="irp_mn_remove_device"></span><span id="IRP_MN_REMOVE_DEVICE"></span>Surprise Remove test fails with “Failed to receive IRP\_MN\_REMOVE\_DEVICE after receiving IRP\_MN\_SURPRISE\_REMOVAL” error message
+## <span id="irp_mn_remove_device"></span><span id="IRP_MN_REMOVE_DEVICE"></span>Surprise Remove test fails with "Failed to receive IRP\_MN\_REMOVE\_DEVICE after receiving IRP\_MN\_SURPRISE\_REMOVAL" error message
 
 
 The [DF - PNP Surprise Remove Device Test](decf00f0-0eae-4768-b06b-85e9c0aaf7da.md) might fail with the following error message if the PnP manager does not send the **remove** IRP to the test device stack after it sends the **surprise remove** IRP:
@@ -252,11 +252,11 @@ Depending on how many devices the I/O is being tested on, the hung device can be
 
 1.  If the number of devices the test is testing I/O on is one, you will see no progress in the command window for more than ten minutes. The last log entry in the command window will have a **WDTF\_SIMPLE\_IO** or **WDTF\_SIMPLEIO\_STRESS** tag, and it will identify the hung device. See [Review Log Files](review-log-files-troubleshooting-device-fundamentals-reliability-tests.md) for more information about how to read the test log files.
 
-2.  If the number of devices on which the test is testing I/O is greater than one, you will see a constant repetition of *PerformIO(&lt;Device Name&gt;) Count …* messages for longer than ten minutes in the command window. The test tries to stop testing I/O on one device at a time after two minutes of testing I/O on them. If the stop operation is successful for a particular device, you should see a “Stop” message followed by a “Close” message for the device in the logs. If the “Stop” message is seen, but the corresponding “Close” message is not seen for a device, then it implies that testing I/O to this device is hung.
+2.  If the number of devices on which the test is testing I/O is greater than one, you will see a constant repetition of *PerformIO(&lt;Device Name&gt;) Count …* messages for longer than ten minutes in the command window. The test tries to stop testing I/O on one device at a time after two minutes of testing I/O on them. If the stop operation is successful for a particular device, you should see a "Stop" message followed by a "Close" message for the device in the logs. If the "Stop" message is seen, but the corresponding "Close" message is not seen for a device, then it implies that testing I/O to this device is hung.
 
 **Example:**
 
-In the following case, the mobile broadband device is the problem device because there is a “Stop” message, but there is no corresponding “Close” message. On the other hand, the I2C HID Device has both a “Stop” message and a “Close” message, which implies that the test was able to stop I/O on the device without any problems. The test never had a chance to stop testing I/O on the Microsoft Basic Render Driver and Microsoft ACPI-Compliant System devices; therefore, “PerformIO” messages are continuously seen for these devices.
+In the following case, the mobile broadband device is the problem device because there is a "Stop" message, but there is no corresponding "Close" message. On the other hand, the I2C HID Device has both a "Stop" message and a "Close" message, which implies that the test was able to stop I/O on the device without any problems. The test never had a chance to stop testing I/O on the Microsoft Basic Render Driver and Microsoft ACPI-Compliant System devices; therefore, "PerformIO" messages are continuously seen for these devices.
 
 ``` syntax
 WDTF_SIMPLEIO_STRESS      : INFO  :  - Stop(I2C HID Device ACPI\STMQ7017\2&DABA3FF&3 )

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 09266ec9-ea89-4961-ab80-470dbefffd5e
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -45,7 +45,7 @@ To certify your product for use on servers, the test computer must support four 
 
 If you use a pool of test computers to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and the driver that you want to test. As long as the driver is the same on all the computers in the pool, the system creates a schedule to run against all test computers.
 
-For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device’s and driver’s Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
+For tests that do not include a driver to test, such as hard disk drive tests, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Test personnel must make sure that the first test computer in the list meets the minimum hardware requirements.
 
 >[!NOTE]
 >  
@@ -365,7 +365,7 @@ The testing process involves three tests. One test verifies basic firewall capab
 <td><p>Copied as part of the SoftwareDevice.FilterDriver.WindowsFilteringPlatform.Scenarios.TransitionTechnologies.Support tests' &quot;Transition Technologies - Copy Binaries&quot; library job.</p>
 <p>Removed as part of the SoftwareDevice.FilterDriver.WindowsFilteringPlatform.Scenarios.TransitionTechnologies.Support tests' &quot;Transition Technologies - Remove Binaries&quot; library job</p></td>
 <td><p>%SystemDrive%\Sparta_Test\Tunnel\Teredo\</p></td>
-<td><p>This script file is used to run the transition technologies tests. This file is required by the job, ” REQ - WFP-based products must support Teredo”</p></td>
+<td><p>This script file is used to run the transition technologies tests. This file is required by the job, " REQ - WFP-based products must support Teredo"</p></td>
 </tr>
 <tr class="odd">
 <td><p>TeredoEmulator.VBS</p></td>

@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # RunSynchronous
-
 
 `RunSynchronous` specifies one or more commands to run in series during the auditUser configuration pass or specialize configuration pass. Synchronous commands are executed in the order specified in the unattended installation answer file, and each command must finish before the next command runs.
 
@@ -25,26 +23,13 @@ To start a command that needs to finish before other commands can start, use syn
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)</p></td>
-<td><p>Specifies the path, the order, and the credentials of the command to run synchronously.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) | Specifies the path, the order, and the credentials of the command to run synchronously. |
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Configuration Passes
-
 
 auditUser
 
@@ -52,20 +37,17 @@ specialize
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **RunSynchronous**
 
 ## Applies To
-
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
-
 The following XML output shows how to set synchronous commands.
 
-```
+```XML
 <RunSynchronous>
    <RunSynchronousCommand wcm:action="add">
       <Credentials>
@@ -94,16 +76,4 @@ The following XML output shows how to set synchronous commands.
 
 ## Related topics
 
-
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
-
- 
-
- 
-
-
-
-
-
-
-

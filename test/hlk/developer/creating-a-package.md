@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 9ec549c4-5b26-48e6-9fbf-f7fd3a810d7d
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -24,7 +24,7 @@ The following code samples show how to:
 
 -   [Sign a package using a digital signature stored in a pfx file](#bkmk-cs-signpackage)
 
-**Windows PowerShell®**
+**Windows PowerShell**
 
 -   [Create a submission package from a project](#bkmk-ps-createsubmissionpackage)
 

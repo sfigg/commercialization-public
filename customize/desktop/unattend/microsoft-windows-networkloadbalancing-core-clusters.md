@@ -13,56 +13,36 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Clusters
-
 
 `Clusters` contains the settings to specify details about clusters.
 
-**Note**  
-To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
-
- 
+> [!Note]
+> To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)</p></td>
-<td><p>Specifies details about a cluster, such as its interface, IP address, port rules, and so on.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | Specifies details about a cluster, such as its interface, IP address, port rules, and so on. |
 
 ## Valid Passes
-
 
 specialize
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | **Clusters**
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | **Clusters**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md).
 
 ## XML Example
 
-
 The following XML output for the `Clusters` setting shows how to set up a cluster for network load balancing.
 
-```
+```XML
 <Clusters>
    <Cluster>
       <Interface>Local Area Connection 2</Interface>
@@ -157,16 +137,4 @@ The following XML output for the `Clusters` setting shows how to set up a cluste
 
 ## Related topics
 
-
 [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md)
-
- 
-
- 
-
-
-
-
-
-
-

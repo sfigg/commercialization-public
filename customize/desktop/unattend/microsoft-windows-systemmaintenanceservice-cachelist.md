@@ -13,58 +13,38 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # CacheList
-
 
 `CacheList` configures Microsoft ReadyBoost™ flash storage devices that are used as supplemental memory caches. This is typically used for devices that have been integrated with the computer, such as an internal flash device or solid-state drive (SSD).
 
 `CacheList` can contain up to eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) settings that represent a single ReadyBoost cache on the computer that you configure.
 
-**Note**  
-If more than eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) values are added, only the first eight caches, in the alphabetical order of their [CacheID](microsoft-windows-systemmaintenanceservice-cachelist-cache-cacheid.md), will be recognized.
-
- 
+> [!Note]
+> If more than eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) values are added, only the first eight caches, in the alphabetical order of their [CacheID](microsoft-windows-systemmaintenanceservice-cachelist-cache-cacheid.md), will be recognized.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)</p></td>
-<td><p>Specifies settings that represent a single ReadyBoost cache on the computer that you configure.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) | Specifies settings that represent a single ReadyBoost cache on the computer that you configure. |
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice.md) | **CacheList**
+[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | **CacheList**
 
 ## Valid Configuration Passes
-
 
 specialize
 
 ## Applies To
 
-
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 
-
 The following XML output example shows a configuration of two ReadyBoost devices. On this sample system, the primary hard drive is disk 0 (not shown in the XML), and the two ReadyBoost devices are Disk 1 and 2. On the first device, a 500-megabyte ReadyBoost cache is created, leaving the remainder of the device space for storage. The second device is entirely used by the ReadyBoost cache.
 
-```
+```XML
 <CacheList>
   <Cache>
     <CacheID>ReadyBoostCache1</CacheID>
@@ -86,16 +66,4 @@ The following XML output example shows a configuration of two ReadyBoost devices
 
 ## Related topics
 
-
-[microsoft-windows-systemmaintenanceservice-](microsoft-windows-systemmaintenanceservice.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md)

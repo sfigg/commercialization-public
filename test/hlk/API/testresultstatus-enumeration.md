@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 0ac53c58-cf8d-4627-b8e8-251a578861d0
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -57,19 +57,19 @@ This enumeration represents the list of status that every certification test can
 <tbody>
 <tr class="odd">
 <td><p>Canceled</p></td>
-<td><p>This enum value describes a test as being in “Cancelled” state.</p></td>
+<td><p>This enum value describes a test as being in "Cancelled" state.</p></td>
 </tr>
 <tr class="even">
 <td><p>Failed</p></td>
-<td><p>This enum value describes a test as being in the “Failed” state.</p></td>
+<td><p>This enum value describes a test as being in the "Failed" state.</p></td>
 </tr>
 <tr class="odd">
 <td><p>InQueue</p></td>
-<td><p>This enum value describes a test as being in the “In queue” state.</p></td>
+<td><p>This enum value describes a test as being in the "In queue" state.</p></td>
 </tr>
 <tr class="even">
 <td><p>NotRun</p></td>
-<td><p>This enum value describes a test as being in the “Not run” state.</p></td>
+<td><p>This enum value describes a test as being in the "Not run" state.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Passed</p></td>
@@ -77,7 +77,7 @@ This enumeration represents the list of status that every certification test can
 </tr>
 <tr class="even">
 <td><p>Running</p></td>
-<td><p>This enum value describes a test as being in the “running state.</p></td>
+<td><p>This enum value describes a test as being in the "running state.</p></td>
 </tr>
 </tbody>
 </table>

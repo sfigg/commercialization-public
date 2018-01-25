@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 206FC620-177D-4435-A7F2-18959E5E208B
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -27,7 +27,7 @@ The results of HSTI tests will be consumed by Windows Compatibility Tests and ca
 
 ### <span id="Background"></span><span id="background"></span><span id="BACKGROUND"></span>Background
 
-The reader is expected to know the fundamentals of UEFI and have an understanding of Secure Boot technologies including Section 27 “Security” of the UEFI specification and NIST SP 800-147.
+The reader is expected to know the fundamentals of UEFI and have an understanding of Secure Boot technologies including Section 27 "Security" of the UEFI specification and NIST SP 800-147.
 
 This requirement has three aspects:
 
@@ -57,9 +57,9 @@ This is a bitfield of the security features which have been verified by the test
 
 The IHV will develop reference security designs for their platforms that comply with the Windows Compatibility Requirements. In addition, IHVs and IBVs will also implement programmatic tests that verify proper enablement of the reference security implementations and report the results via the Hardware Security Test Interface. These tests are delivered to OEMs & ODMs as compiled modules (not source) and should work without modification. If an OEM/ODM deviates from reference security designs, these test modules may report failures, and the OEM/ODM will need to contact Microsoft to review the modifications and implement an additional HSTI instance that reports these exceptions. OEMs should be able to leverage these security modules with no modification required by following the reference design and documentation. OEMs who wish to add additional security modules, or modify the behavior of any security module, must undergo a design review with Microsoft.
 
-As part of their implementation of tests module implementors will include a struct. A prototype of this struct is included below in the “Prototype section”. The IHV will define the meaning of each bit in the security reference checklist. The IHV will further define the meaning of each bit in the bitfields. Finally, the IHV includes a “Required” bitfield in the OEM struct, and for all requirements they are able to test programmatically they will set a bit in the “Implemented” bitfield.
+As part of their implementation of tests module implementors will include a struct. A prototype of this struct is included below in the "Prototype section". The IHV will define the meaning of each bit in the security reference checklist. The IHV will further define the meaning of each bit in the bitfields. Finally, the IHV includes a "Required" bitfield in the OEM struct, and for all requirements they are able to test programmatically they will set a bit in the "Implemented" bitfield.
 
-IBVs and OEMs may set bits in the “Implemented” field if they have presented a design to progamatically check for the presence of the security features represented by those bits to Microsoft. If those tests pass they may set the “Verified” field in their respective structs.
+IBVs and OEMs may set bits in the "Implemented" field if they have presented a design to progamatically check for the presence of the security features represented by those bits to Microsoft. If those tests pass they may set the "Verified" field in their respective structs.
 
 The test modules for IHV, IBV and OEM shall be run if present. A true value set at a bit in the SecurityFeaturesEnabled field indicates a passing test result. If a test is not run, or does not pass, a value of 0 shall be set for the representative bit.
 
@@ -80,7 +80,7 @@ Silicon Suppliers and IBVs who support Connected Standby systems must implement 
 
 OEMs and ODMs must not modify or tamper with the HSTI tests which have been provided to them by vendors. OEMs and ODMs are required to guarantee that their systems will pass the HSTI tests as a component of the Windows Certification requirements:
 
-Windows Hardware Certification Requirement – [Windows 8.1 WHCR](http://msdn.microsoft.com/en-us/library/windows/hardware/jj128256.aspx)
+Windows Hardware Certification Requirement - [Windows 8.1 WHCR](http://msdn.microsoft.com/en-us/library/windows/hardware/jj128256.aspx)
 
 -   System.Fundamentals.Firmware.UEFISecureBoot
 -   System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby
@@ -98,7 +98,7 @@ The interfaces are built on the EFI Adapter Information Protocol defined in UEFI
 
 ### <span id="Summary"></span><span id="summary"></span><span id="SUMMARY"></span>Summary
 
-**Platform Security Information** – Returns information about the platform’s conformance with Windows Hardware Certification Requirement System.Fundamentals.Firmware.CS.UEFISecureBoot, System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby and System.Fundamentals.Firmware.CS.UEFISecureBoot.Provisioning.
+**Platform Security Information** - Returns information about the platform's conformance with Windows Hardware Certification Requirement System.Fundamentals.Firmware.CS.UEFISecureBoot, System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby and System.Fundamentals.Firmware.CS.UEFISecureBoot.Provisioning.
 
 ### <span id="Prototype"></span><span id="prototype"></span><span id="PROTOTYPE"></span>Prototype
 
@@ -155,7 +155,7 @@ typedef struct {
 </tr>
 <tr class="odd">
 <td><p><span id="ImplementationID"></span><span id="implementationid"></span><span id="IMPLEMENTATIONID"></span>ImplementationID</p></td>
-<td><p>Human readable vendor, model, &amp; version of this implementation. For example “SiliconVendorX Chip1234 v1” and “BIOSvendorY BIOSz v2”.</p></td>
+<td><p>Human readable vendor, model, &amp; version of this implementation. For example "SiliconVendorX Chip1234 v1" and "BIOSvendorY BIOSz v2".</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="SecurityFeaturesSize"></span><span id="securityfeaturessize"></span><span id="SECURITYFEATURESSIZE"></span>SecurityFeaturesSize</p></td>
@@ -175,7 +175,7 @@ typedef struct {
 </tr>
 <tr class="even">
 <td><p><span id="ErrorString"></span><span id="errorstring"></span><span id="ERRORSTRING"></span>ErrorString</p></td>
-<td><p>A Null-terminated string, one failure per line (CR/LF terminated), with a unique identifier that the OEM/ODM can use to locate the documentation which will describe the steps to remediate the failure – a URL to the documentation is recommended. For example, “0x4827 JTAG not disabled http://somewhere.net/docs/remediate4827.html \r\n0x2744 Platform Secure Boot key not provisioned http://somewhere.net/docs/remediate2744.html”</p></td>
+<td><p>A Null-terminated string, one failure per line (CR/LF terminated), with a unique identifier that the OEM/ODM can use to locate the documentation which will describe the steps to remediate the failure - a URL to the documentation is recommended. For example, "0x4827 JTAG not disabled http://somewhere.net/docs/remediate4827.html \r\n0x2744 Platform Secure Boot key not provisioned http://somewhere.net/docs/remediate2744.html"</p></td>
 </tr>
 </tbody>
 </table>
@@ -212,7 +212,7 @@ The following is an illustrative list of design considerations that an HSTI impl
 2.  Firmware Code must be present in protected storage
     1.  Do you protect spiflash?
     2.  Do you implement read-only till reset for eMMC partitions
-    3.  Do you support Signed Firmware Check – Firmware that is installed by OEM is either read-only or protected by secure firmware update process.
+    3.  Do you support Signed Firmware Check - Firmware that is installed by OEM is either read-only or protected by secure firmware update process.
 3.  Secure firmware update process
     1.  Is secure firmware update process on by default with test keys? (RECOMMENDED)
     2.  Do you check if test keys are used in production?
@@ -254,7 +254,7 @@ The following is an illustrative list of design considerations that an HSTI impl
 3.  Firmware Code must be present in protected storage
     1.  Do you protect spiflash?
     2.  Do you implement read-only till reset for eMMC partitions
-    3.  Do you support Signed Firmware Check – Firmware that is installed by OEM is either read-only or protected by secure firmware update process.
+    3.  Do you support Signed Firmware Check - Firmware that is installed by OEM is either read-only or protected by secure firmware update process.
 4.  Secure firmware update process
     1.  Is secure firmware update process on by default with test keys?
     2.  Do you check if test keys are used in production?

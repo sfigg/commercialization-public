@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fc7ec7ad-9a0c-48f8-9fe9-146ab7bd4588
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,7 +20,7 @@ A **DeviceFamily** object is a collection of hardware IDs that are cached in the
 
 >[!NOTE]
 >  
-Hardware IDs that are added to a **DeviceFamily** must match the hardware IDs that Windows® reports for a device.
+Hardware IDs that are added to a **DeviceFamily** must match the hardware IDs that Windows reports for a device.
 
  
 

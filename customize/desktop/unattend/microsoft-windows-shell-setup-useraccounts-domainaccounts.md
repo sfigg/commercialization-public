@@ -13,32 +13,17 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # DomainAccounts
-
 
 `DomainAccounts` specifies the details of domain accounts to be added to local security groups on the computer during installation.
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md)</p></td>
-<td><p>Specifies the domains and the domain accounts to be created.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md) | Specifies the domains and the domain accounts to be created. |
 
 ## Valid Passes
-
 
 auditSystem
 
@@ -46,20 +31,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | **DomainAccounts**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
-```
+```XML
 <UserAccounts>
    <DomainAccounts>
       <DomainAccountList wcm:action="add">
@@ -70,14 +52,14 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
          <DomainAccount wcm:action="add">
             <Name>account2</Name>
             <Group>Fabrikam\Group2</Group>
-         </DomainAccount wcm:action="add">
+         </DomainAccount>
          <Domain>domain1</Domain>
       </DomainAccountList>
       <DomainAccountList wcm:action="add">
          <DomainAccount wcm:action="add">
             <Name>account3</Name>
             <Group>Fabrikam\Group2</Group>
-         </DomainAccount wcm:action="add">
+         </DomainAccount>
          <Domain>domain2</Domain>
      </DomainAccountList>
    </DomainAccounts>
@@ -86,16 +68,4 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 ## Related topics
 
-
 [UserAccounts](microsoft-windows-shell-setup-useraccounts.md)
-
- 
-
- 
-
-
-
-
-
-
-

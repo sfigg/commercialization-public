@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7b46b9ac-9da2-4422-87c6-98b7d04c1226
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -77,7 +77,7 @@ There are special steps that can be taken to reproduce a particular test case in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Hybriddrive.exe –drive &lt;disk #&gt; -scenario &lt;scenario&gt; &lt;additional options&gt;</strong></p></td>
+<td><p><strong>Hybriddrive.exe -drive &lt;disk #&gt; -scenario &lt;scenario&gt; &lt;additional options&gt;</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 <tr class="even">

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 26b8566e-4d05-4c59-a60b-f0710e89b4d1
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -71,17 +71,17 @@ te.exe &lt;Test Dll&gt; /name:&lt;Test Name&gt; &lt;Test Parameters&gt;
 
 ### <span id="Test_Parameters"></span><span id="test_parameters"></span><span id="TEST_PARAMETERS"></span>Test Parameters
 
--   INTF – Specifies which device to target testing. The value can be either interface MAC or GUID. This parameter is optional, if not specified the tests will use any WWAN Interface on the machine.
+-   INTF - Specifies which device to target testing. The value can be either interface MAC or GUID. This parameter is optional, if not specified the tests will use any WWAN Interface on the machine.
 
--   PIN1 – Specifies the PIN1 associated with the device. This value is only required for the PIN tests and only if the device supports PIN1. If not specified the test will execute and fail if appropriate.
+-   PIN1 - Specifies the PIN1 associated with the device. This value is only required for the PIN tests and only if the device supports PIN1. If not specified the test will execute and fail if appropriate.
 
--   PUK1 – Specifies the PUK1 associated with the device. This value is only required for the PIN tests and only if the device supports PUK1. If not specified the test will execute and fail if appropriate. Be very careful about providing the PUK1 on a real device. If an incorrect PUK1 is provided or the device does not support PUK1 the device could be irreversibly locked.
+-   PUK1 - Specifies the PUK1 associated with the device. This value is only required for the PIN tests and only if the device supports PUK1. If not specified the test will execute and fail if appropriate. Be very careful about providing the PUK1 on a real device. If an incorrect PUK1 is provided or the device does not support PUK1 the device could be irreversibly locked.
 
--   WEBDOC8K – Specifies a web doc over 8K in size. This parameter is optional, if provided the test will use this URL rather than the default URL.
+-   WEBDOC8K - Specifies a web doc over 8K in size. This parameter is optional, if provided the test will use this URL rather than the default URL.
 
--   WEBDOC1024K – Specifies a web doc over 1024K in size. This parameter is optional, if provided the test will use this URL rather than the default URL.
+-   WEBDOC1024K - Specifies a web doc over 1024K in size. This parameter is optional, if provided the test will use this URL rather than the default URL.
 
--   DevPhoneNumber – Specifies the phone number of the device. This parameter is optional and used only by the SMS Tests. If the parameter is not specified the test will attempt to retrieve the phone number from the device.
+-   DevPhoneNumber - Specifies the phone number of the device. This parameter is optional and used only by the SMS Tests. If the parameter is not specified the test will attempt to retrieve the phone number from the device.
 
 ### <span id="Command_Line_Examples"></span><span id="command_line_examples"></span><span id="COMMAND_LINE_EXAMPLES"></span>Command Line Examples
 

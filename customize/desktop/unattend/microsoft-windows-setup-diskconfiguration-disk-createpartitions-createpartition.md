@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # CreatePartition
-
 
 `CreatePartition` specifies a single partition to create on the hard disk.
 
@@ -23,55 +21,30 @@ If you are installing Windows to a blank hard disk, you must use `CreatePartitio
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md)</p></td>
-<td><p>Specifies whether to extend the partition to fill the disk.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Order](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-order.md)</p></td>
-<td><p>Specifies the creation order for multiple partitions.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Size](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-size.md)</p></td>
-<td><p>Specifies the size of the partition to create, in megabytes.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)</p></td>
-<td><p>Specifies the type of partition to create. For example, you can specify a primary partition type or an extended partition type.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md) | Specifies whether to extend the partition to fill the disk. |
+| [Order](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-order.md) | Specifies the creation order for multiple partitions. |
+| [Size](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-size.md) | Specifies the size of the partition to create, in megabytes. |
+| [Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) | Specifies the type of partition to create. For example, you can specify a primary partition type or an extended partition type. |
 
 ## Valid Configuration Passes
-
 
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) | **CreatePartition**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) | **CreatePartition**
 
 ## Applies To
 
-
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
-
 The following XML output for the `DiskConfiguration` setting shows how to create a drive partition.
 
-```
+```XML
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -135,16 +108,4 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 ## Related topics
 
-
 [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md)
-
- 
-
- 
-
-
-
-
-
-
-

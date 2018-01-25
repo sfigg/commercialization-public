@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 92249e23-daad-43e7-b5fd-49a351fa33af
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -39,7 +39,7 @@ If you are testing a non-integrated webcam, the mirror is not necessary. In this
 
 >[!TIP]
 >  
-You can use a “helping hand” device to hold a mirror in place; simply replace the magnifying glass with a mirror, as shown in Figure 2. Helping Hand.
+You can use a "helping hand" device to hold a mirror in place; simply replace the magnifying glass with a mirror, as shown in Figure 2. Helping Hand.
 
  
 

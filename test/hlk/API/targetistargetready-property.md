@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 87f81227-5132-4b27-a793-af56c649a1f7
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Target.IsTargetReady Property
 
 
-This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the “ready” state).
+This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the "ready" state).
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 

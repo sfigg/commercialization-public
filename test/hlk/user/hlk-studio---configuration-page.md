@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: C6E010FA-065B-4884-83BA-D6C7232F27AF
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,11 +20,11 @@ ms.technology: windows-oem
 
 The HLK **Configuration** Page contains the following:
 
--   **Machine Management** – use this option to create and manage machines and machine pools, and to configure Windows HLK Client Kernel Debugger settings.
+-   **Machine Management** - use this option to create and manage machines and machine pools, and to configure Windows HLK Client Kernel Debugger settings.
 
--   **Options** – use this option to manage distributed target selections and multi-device testing.
+-   **Options** - use this option to manage distributed target selections and multi-device testing.
 
--   **Device Families** – use this option to manage device families.
+-   **Device Families** - use this option to manage device families.
 
 On this tab, you can perform the following tasks:
 

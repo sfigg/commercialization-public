@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: a96003b4-fd03-4cd4-a3f0-cdf5ad9e417a
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -48,7 +48,7 @@ WDTF_SIMPLE_IO            : INFO  :  - Close(802.11n USB Wireless LAN Card USB\V
 
 *Example \#2*
 
-In this example, [IWDTFSystemAction2 interface](http://go.microsoft.com/fwlink/?LinkID=299470) sends the machine state to S1, and then resumes from S1 to test the driver’s handling of power IRPs.
+In this example, [IWDTFSystemAction2 interface](http://go.microsoft.com/fwlink/?LinkID=299470) sends the machine state to S1, and then resumes from S1 to test the driver's handling of power IRPs.
 
 ``` syntax
 WDTF_SYSTEM               : INFO  : Attempt Sleep State: 1 , At (hh:mm:ss): 18:20:58 ,  Wake Time In Seconds: 120 

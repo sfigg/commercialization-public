@@ -13,18 +13,14 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # AdministratorPassword
-
 
 `AdministratorPassword` specifies the administrator password and whether it is hidden in the unattended installation answer file.
 
 To configure a blank administrator password for Windows 7, write an empty string in Windows System Image Manager (Windows SIM), by right-clicking the [Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md) setting, and then selecting **Write Empty String**.
 
-**Caution**  
-Creating a blank administrator password is a security risk.
-
- 
+> [!Warning]
+> Creating a blank administrator password is a security risk.
 
 By default, the built-in administrator account is disabled in all default clean installations.
 
@@ -34,13 +30,10 @@ If no values are set for the administrator password and [Username](microsoft-win
 
 Both **Microsoft-Windows-Shell-Setup | Autologon** and **Microsoft-Windows-Shell-Setup | UserAccounts | AdministratorPassword** sections are now needed for autologon in audit mode to work. Both of these settings should be added to the **auditSystem** configuration pass.
 
-**Note**  
-For Windows Server 2008, if you run the **sysprep** command with the **generalize** option, the built-in administrator account can no longer access any Encrypting File System (EFS)-encrypted files, personal certificates, and stored passwords for websites or network resources.
-
- 
+> [!Note]
+> For Windows Server 2008, if you run the **sysprep** command with the **generalize** option, the built-in administrator account can no longer access any Encrypting File System (EFS)-encrypted files, personal certificates, and stored passwords for websites or network resources.
 
 ## Password Requirements for User Accounts in Windows Server 2008
-
 
 The built-in Administrator must have a password and that password must be changed at first logon. This will prevent the built-in Administrator account from having a blank password by default.
 
@@ -54,28 +47,12 @@ A corporate customer can configure a non-complex password for the built-in admin
 
 ## Child Elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[PlainText](microsoft-windows-shell-setup-useraccounts-administratorpassword-plaintext.md)</p></td>
-<td><p>Specifies whether the <code>AdministratorPassword</code> is hidden in the unattended installation answer file.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md)</p></td>
-<td><p>Specifies the <code>AdministratorPassword</code>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
+| [PlainText](microsoft-windows-shell-setup-useraccounts-administratorpassword-plaintext.md) | Specifies whether the <code>AdministratorPassword</code> is hidden in the unattended installation answer file. |
+| [Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md) | Specifies the <code>AdministratorPassword</code>. |
 
 ## Valid Passes
-
 
 auditSystem
 
@@ -83,20 +60,17 @@ oobeSystem
 
 ## Parent Hierarchy
 
-
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | **AdministratorPassword**
 
 ## Applies To
-
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
-
 The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
-```
+```XML
 <UserAccounts>
    <AdministratorPassword>
       <Value>cAB3AEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
@@ -107,16 +81,4 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 ## Related topics
 
-
 [UserAccounts](microsoft-windows-shell-setup-useraccounts.md)
-
- 
-
- 
-
-
-
-
-
-
-

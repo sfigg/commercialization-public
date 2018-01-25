@@ -18,6 +18,8 @@ With hardware that meets basic requirements, it also means that even if an attac
 
 Windows Defender Device Guard can also leverage advanced hardware features on hardware that supports them. These features include CPU virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. When you enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. 
 
+**Note:** In Windows 10 version 1709 and later, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device and Credential Guard are not impacted and will function as expected.
+
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
 **IT Professionals:**  If you want more information on how to deploy Windows Defender Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
@@ -51,8 +53,9 @@ Starting with Windows 10, version 1709, the code integretity part of Windows Def
 
 To determine if a device is able to run Windows Defender Device Guard and Windows Defender Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
 
-## Related topics
+## <span id="related_topics"></span>Related topics
 
+- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
 - [Driver Compatibility with Device Guard on Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
 - [Managing Managing Windows 10 Device Guard with Configuration Manager](https://blogs.technet.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 -[Device Guard signing](https://docs.microsoft.com/en-us/microsoft-store/device-guard-signing-portal)

@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: d5f43ad7-4ebb-4523-b3d9-b324ef44632b
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -42,9 +42,9 @@ If you are upgrading your HLK environment to a later version, you must first uni
 
 3.  When the **Specify Location** screen appears, choose the appropriate option:
 
-    1.  Install option – choose **Install the Windows Hardware Lab Kit to this computer**, and then choose **Install** .
+    1.  Install option - choose **Install the Windows Hardware Lab Kit to this computer**, and then choose **Install** .
 
-    2.  Download option – choose **Download the Windows Hardware Lab Kit for installation on a separate computer**, and then choose **Next**.
+    2.  Download option - choose **Download the Windows Hardware Lab Kit for installation on a separate computer**, and then choose **Next**.
 
 4.  Select the **Windows Hardware Lab Kit -- Controller + Studio** option.
 

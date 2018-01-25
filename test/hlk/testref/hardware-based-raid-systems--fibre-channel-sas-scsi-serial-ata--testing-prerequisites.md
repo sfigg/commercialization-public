@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8b3b0dab-bc4b-4292-98c5-bb3ca65ec805
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -43,7 +43,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
     -   Dual-core or equivalent processor and a minimum of 2 gigabytes (GB) of memory for Windows client operating systems (for example, Windows 8, Windows 7, and Windows Vista).
 
-    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server® operating systems.
+    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server operating systems.
 
     An equivalent processor is any processor that appears to Windows as if it contains the specified number of CPUs. You can achieve this status through 1 or more physical microprocessors.
 
@@ -51,7 +51,7 @@ All hardware (except the test device, monitor, keyboard, mouse, and floppy disk 
 
     >[!WARNING]
     >  
-    The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)–based controller and 1 RAID JBOD.
+    The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)-based controller and 1 RAID JBOD.
 
      
 
@@ -295,7 +295,7 @@ When testing storage devices, we strongly recommend that you complete all Device
 ## <span id="Feature-Based_Configuration"></span><span id="feature-based_configuration"></span><span id="FEATURE-BASED_CONFIGURATION"></span>Feature-Based Configuration
 
 
-If your device supports any of the feature(s) in this section, please update the associated configurations steps in addition to the general interface-based configuration steps in the “Configuring the Test Computer” section. Minor modifications may be applicable depending on the specifics of your device form-factor.
+If your device supports any of the feature(s) in this section, please update the associated configurations steps in addition to the general interface-based configuration steps in the "Configuring the Test Computer" section. Minor modifications may be applicable depending on the specifics of your device form-factor.
 
 **Device.Storage.Hd.Mpio**
 
@@ -333,7 +333,7 @@ If your device supports any of the feature(s) in this section, please update the
 
 **Device.Storage.Hd.RaidArray**
 
-Upon completion of hardware setup, and manually select this feature when going through the Windows HLK’s target selection.
+Upon completion of hardware setup, and manually select this feature when going through the Windows HLK's target selection.
 
 ![array feature selection](images/hck-win8-arrayfeatureselection.png)
 

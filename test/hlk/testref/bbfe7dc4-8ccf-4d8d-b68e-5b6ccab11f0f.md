@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 5b5307fc-ce9b-4980-99fd-432d3d2ad8d1
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -269,7 +269,7 @@ All other supported operations, device properties, and object properties are con
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>te.exe /p:”BVT=TRUE” MtpTest.dll /select(@name='@CapabilitiesTests*') /p “DeviceProfile=MtpMediaPlayer.xml”</strong></p></td>
+<td><p><strong>te.exe /p:"BVT=TRUE" MtpTest.dll /select(@name='@CapabilitiesTests*') /p "DeviceProfile=MtpMediaPlayer.xml"</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 </tbody>

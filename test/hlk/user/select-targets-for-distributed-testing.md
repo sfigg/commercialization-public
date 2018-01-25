@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: a6b210df-8833-470c-8d75-cbe86974890d
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,7 +20,7 @@ By default, the HLK tries to enable distributed testing by combining similar, se
 
 When two or more targets are considered similar, the set of tests for all the targets is reduced by removing duplicate distributable tests. Tests that are marked as non-distributable must be run on each target.
 
-Targets that are in the same target family (distributed) have the notation **\[Group – XX\]** in the machine column. Targets that are in their own target family (non-distributed) have the machine name where the target was located.
+Targets that are in the same target family (distributed) have the notation **\[Group - XX\]** in the machine column. Targets that are in their own target family (non-distributed) have the machine name where the target was located.
 
 The rules for determining whether two targets are similar include:
 

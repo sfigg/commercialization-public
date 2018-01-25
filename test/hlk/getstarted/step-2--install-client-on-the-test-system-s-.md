@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: EC5E600B-8E22-4D2D-AEC7-B7DDBD83CB8D
 author: sapaetsc
 ms.author: sapaetsc
-ms.date: 10/15/17
+ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -52,7 +52,7 @@ If you are testing software, be sure to install the product on the test system f
     >[!TIP]
     >When installation completes, confirm its success by going to the **Control Panel** and choosing **Uninstall a program**. **Windows Hardware Lab Kit Client** should appear in the program list.
 
-6.  Repeat steps 1–5 for each test system.
+6.  Repeat steps 1-5 for each test system.
 
  
 
