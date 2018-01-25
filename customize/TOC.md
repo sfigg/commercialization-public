@@ -1,5 +1,4 @@
 # [Customize](index.md)
-
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
 ### [Customize the Start layout](desktop/customize-start-layout.md)
