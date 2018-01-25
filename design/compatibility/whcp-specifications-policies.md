@@ -21,26 +21,7 @@ The specifications define how to build Windows-compatible devices, systems, and 
 
 The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
 
-
-|Windows 10, Client|Windows 10, Server|
-|--|--|
-|[Download documents for version 1804](#)<br>[Download documents for version 1709](#)<br>[Download documents for version 1703](#)<br>[Download documents for version 1607](#)<br>[Download documents for version 1511](#)|[Download Specifications for Windows 10, version 1607](#) <br>[Download Server Policy](#)
-
-
-### Download Compatibility Documents for Windows 10, Client
-
-* [Download documents for Windows 10, version 1804](#)
-* [Download documents for Windows 10, version 1709](#)
-* [Download documents for Windows 10, version 1703](#)
-* [Download documents for Windows 10, version 1607](#)
-* [Download documents for Windows 10, version 1511](#)
-
-### Download Documents for Windows 10, Server
-
-* [Download Specifications for Windows 10, version 1607](#) 
-* [Download Server Policy](#)
-
-#### Certification for Windows Server 2016, Azure Stack, and Software Defined Data Center (SDDC)
+### Certification for Windows Server 2016, Azure Stack, and Software Defined Data Center (SDDC)
 
 Certification for Windows Server 2016, Azure Stack, and SDDC must:
 
@@ -49,5 +30,13 @@ Certification for Windows Server 2016, Azure Stack, and SDDC must:
  - Use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs
 
 Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+
+### Download Compatibility Documents
+|Windows 10, Client|Windows 10, Server|
+|--|--|
+|[Download Specifications and Policies, version 1804](#)<br>[Download Specifications and Policies, version 1709](#)<br>[Download Specifications and Policies, version 1703](#)<br>[Download Specifications and Policies, version 1607](#)<br>[Download Specifications and Policies, version 1511](#)|[Download Specifications, version 1607<br>(also valid for Server for version 1703 - present)](#) <br><br>[Download Server Policies](#)
+
+
+
 
 
