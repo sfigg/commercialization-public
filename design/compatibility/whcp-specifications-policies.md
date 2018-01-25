@@ -32,9 +32,21 @@ Certification for Windows Server 2016, Azure Stack, and SDDC must:
 Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### Download Compatibility Documents
-|Windows 10, Client|Windows 10, Server|
-|--|--|
-|[Download Specifications and Policies, version 1804](#)<br>[Download Specifications and Policies, version 1709](#)<br>[Download Specifications and Policies, version 1703](#)<br>[Download Specifications and Policies, version 1607](#)<br>[Download Specifications and Policies, version 1511](#)|[Download Specifications, version 1607<br>(required for Server for version 1607 - present)](#) <br><br>[Download Server Policies](#)
+
+|Windows 10, Client|
+|--|
+|[Download Specifications and Policies, version 1804](#)|
+|[Download Specifications and Policies, version 1709](https://go.microsoft.com/fwlink/?linkid=866945)|
+|[Download Specifications and Policies, version 1703](https://go.microsoft.com/fwlink/?linkid=866946)|
+|[Download Specifications and Policies, version 1607](https://go.microsoft.com/fwlink/?linkid=866948)|
+|[Download Specifications and Policies, version 1511](https://go.microsoft.com/fwlink/?linkid=866949)|
+
+<br>
+
+|Windows 10, Server|
+|--|
+|[Download Specifications, version 1607<br>(required for Server for version 1607 - present)](https://go.microsoft.com/fwlink/?linkid=866951) |
+|[Download Server Policies](https://go.microsoft.com/fwlink/?linkid=866953)|
 
 
 
