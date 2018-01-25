@@ -12,9 +12,9 @@ ms.technology: windows-oem
 ---
 # Design your registration pages
 
-The OEM registration pages present many customization opportunities. This topic describes all elements on each of the two OEM registration pages, indicating the customization options for each element. This topic also provides style guidance and code samples you can use to design your registration pages.
+The OEM registration pages present many customization opportunities. This topic describes all elements on each of the two OEM registration pages, indicating the customization options for each element. This topic also provides style guidance and code samples you can use to design your HTML flyout pages.
 
-The layout of each page is locked, so the page elements themselves can't be rearranged.
+The layout of both OEM registration pages are locked, so the page elements themselves can't be rearranged.
 
 > [!Note]
 > A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, at least one checkbox **or** one link, and a public key for public/private key encryption.
@@ -34,7 +34,7 @@ The first OEM registration page includes the elements below, some of which you c
 
 ### Pre-populated customer information
 
-When a user signs in or signs up for an MSA in OOBE, they have already provided some of the information requested on the OEM Registration pages. To streamline the setup process for users, Windows pre-populates some of the customer information fields on OEM registration page one, if the customer signed into or signed up for an MSA earlier in OOBE.
+When a user signs in to or signs up for an MSA in OOBE, they provide some of the customer information requested on the OEM Registration pages. To streamline the setup process for users, Windows pre-populates some of the customer information fields on OEM registration page one, if the customer used an MSA earlier in OOBE.
 
 Depending on the SKU a user may choose to setup different account choices which will impact whether the account information is pre-filled.
 
@@ -59,9 +59,9 @@ The second OEM registration page includes the elements below, some of which you 
 
 ## Design HTML files for your links
 
-Clicking any link that you add to your registration pages won't open a web page hosted online, but rather, will open an HTML file stored in the `OOBE\Info\` folder on the device. Microsoft provides a full HTML sample below that defines the background color, font color, font sizing, font weight, padding, margins, and headers (among other elements) for your HTML files. We strongly encourage you to use this sample with little to no alteration of the design elements.
+When a customer clicks any link you've added to the registration pages, this opens an HTML file stored in the `OOBE\Info` folder on the device. Microsoft provides a full HTML sample below that defines the background color, font color, font sizing, font weight, padding, margins, and headers (among other elements) for your HTML files. We strongly encourage you to use this sample with little to no alteration of the design elements.
 
-Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with the design of Windows OOBE, and to create a consistent user experience, use the markup and style conventions laid out in the [HTML sample below](#full-html-sample) when creating your HTML files.
+Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with the design of Windows OOBE, and to create a consistent user experience, use the markup and style conventions laid out in the [HTML example below](#full-html-example) when creating your HTML files.
 
 > [!Note]
 > Inline CSS styling is required so that the iFrame host elements render correctly in the registration pages.
@@ -183,7 +183,7 @@ Please use the following inline CSS in the head of your HTML documents.
 
 ## Full HTML example
 
-Here is a full example of an HTML flyout for OEM registration pages. Please use this sample as a baseline for your HTML flyout pages, with little to no alteration of the design elements. You should only replace the example text with your own information.
+Here is a full example of an HTML flyout for OEM registration pages. Please use this sample as a baseline for your HTML flyout pages, with little to no alteration of the design elements.
 
 ```html
 > <!DOCTYPE html>

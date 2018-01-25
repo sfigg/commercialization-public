@@ -20,10 +20,10 @@ To include your registration pages in OOBE, you must configure the appropriate s
 |  | \<registration> | Optional. Additional details are below. |
 | <**registration**> | | | |
 | | \<title> | Required if registration element is used. Text to title the registration pages. | String of up to 25 characters. |
-| | \<subtitle> | Required if registration element is used. Text to describe the Registration pages. |
+| | \<subtitle> | Required if registration element is used. Text to describe the registration pages. |
 | <**customerinfo**> | | | |
 | | \<label> | Text to label the top checkbox on registration page two. Required to display the customer information fields on registration page one. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
-| | \<defaultvalue> | Value to set the checkbox to selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. Default is False. |
+| | \<defaultvalue> | Value to set the customerinfo checkbox to selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. Default is False. |
 | <**checkbox1**> | | | |
 | | \<label> | Text to label the second checkbox on registration page two. Required for checkbox1 to appear on registration page two. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
 | | \<defaultvalue> | Value to set checkbox1 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. Default is False. |

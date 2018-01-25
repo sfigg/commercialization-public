@@ -26,7 +26,7 @@ If the customer has not used an MSA, the fields on the OEM registration pages wi
 
 The OEM Registration pages are the last screens in the OOBE flow, after the user goes through all other steps in OOBE.
 
-The customer information submitted through the registration pages will be encrypted and stored in the `Oobe\Info` folder. You can use an OEM App, or write a service, to collect the encrypted data and upload it to your server. Generate public/private keys to facilitate decryption of the data once it's on your server.
+The customer information submitted through the registration pages will be encrypted and stored in the `Oobe/Info` folder. Collect the encrypted data using a Microsoft Store app designated as your OEM App, or write a service that does this, and upload the data to your server. Generate public/private keys to facilitate decryption of the data once it's on your server.
 
 ## In this section
 
@@ -34,6 +34,6 @@ The following topics describe how to add your registration pages to OOBE.
 
 | Topic                                     | Description                                                                        |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|
-| [Design your registration pages](design-registration-pages.md)   | Guidance on customizing the HTML of your registration pages. |
-| [Configure OOBE.xml](registration-pages-oobexml.md)              | Create a custom Oobe.xml file or files as determined by the languages and regions where you ship your company's PCs. You can use multiple Oobe.xml files for language- and region-specific terms and settings so users see the correct language as soon as they start their PCs. You must provide a page title, a page subtitle, a consent statement description, and at least one labeled screen element (for example, one of the input fields) to display the registration pages.                         |
-| [Protect and collect user data](manage-user-data.md)               | To protect customer privacy, Windows encrypts the customer data that's created via the Registration pages. You must generate a public/private key pair for customer data encryption and decryption prior to imaging. Create an OEM App or write a service that collects the encrypted data and uploads it to your server using SSL. Then, decrypt and use the data.    |
+| [Design your registration pages](design-registration-pages.md)   | Guidance on customizing the registration page fields and HTML flyout pages. |
+| [Configure OOBE.xml](registration-pages-oobexml.md)              | The elements of Oobe.xml are used to customize your registration pages. Create a custom Oobe.xml file or files as determined by the languages and regions where you ship your company's PCs. You can use multiple Oobe.xml files for language- and region-specific terms and settings so users see the correct language as soon as they start their PCs.                        |
+| [Protect and collect user data](manage-user-data.md)               | To protect customer privacy, Windows encrypts the customer data that's created via the Registration pages. You must generate a public/private key pair for customer data encryption and decryption prior to imaging. Create an OEM App or write a service that collects the encrypted data and uploads it to your server using SSL. You can then decrypt and use the data.    |
