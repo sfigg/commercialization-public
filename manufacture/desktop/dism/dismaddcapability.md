@@ -8,10 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
-topic_type: apiref
-api_name: DismAddCapability
-api_location: DismAPI.dll
-api_type: DllExport
+topic_type: 
+- apiref
+api_name: 
+- DismAddCapability
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismAddCapability function
