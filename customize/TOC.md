@@ -424,6 +424,7 @@
 #### [StandbyReserveTime](power-settings/standbyreservetime.md)
 ### [Power controls](power-settings/power-controls.md)
 #### [LidNotificationsAreReliable](power-settings/lidnotificationsarereliable.md)
+#### [IgnoreCsComplianceCheck](power-settings/power-controls-ignorecscompliancecheck.md)
 ### [Processor power management options](power-settings/configure-processor-power-management-options.md)
 #### [Static configuration options for core parking](power-settings/static-configuration-options-for-core-parking.md)
 ##### [CPMinCores](power-settings/options-for-core-parking-cpmincores.md)
