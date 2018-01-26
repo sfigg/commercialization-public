@@ -121,6 +121,7 @@
 #### [Secure boot](device-experiences/OEM-secure-boot.md)
 #### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
 #### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
+##### [Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)](OEM-UEFI-WSMT.md)
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
