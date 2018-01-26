@@ -5,57 +5,66 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 09/27/2017
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Design your registration pages
 
-The registration pages present many customization opportunities. Here are the settings you can control:
+The OEM registration pages present many customization opportunities. This topic describes all elements on each of the two OEM registration pages, indicating the customization options for each element. This topic also provides style guidance and code samples you can use to design your HTML flyout pages.
 
-* **Page title**. You can create a title that makes sense for your use of the page.
-* **Page subtitle**. You can add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form.
-* **Four text fields and consent statement**. You can choose the text on the consent checkbox and the descriptive content statement.
-* **One checkbox provides consent for input fields to be passed to Userdata.blob**. You can choose the text to describe the check box.
-* **Three check boxes**. You can set the descriptive text for the check boxes, set their default state – selected or not – and decide whether to show three, two, one, or zero check boxes.
-* **Three flyout links**. You can specify the link label and the in-place link text. Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory. You can also decide whether to show three, two, one, or zero links.
-* **The Skip button**. The skip button is visible by default, but you can configure the .xml to hide the skip button on the registration pages.  No information is provided if the customer chooses skip.
-* **The Next button**. The Next button moves the customer forward in OOBE.  If an email is provided it is validated to be of the proper format when the customer clicks the Next button.
-
-Some of the elements on the Registration pages aren't customizable. If you include the text fields, and the customer has signed in with, or signed up for, a Microsoft Account (MSA), Windows will include an explanation to the customer, so they understand where their information on this page came from. The buttons that customers use to complete or skip the pages are labeled by Windows. You can’t change the labels of the buttons.
-
-The layout of each page is locked, so the page elements can't be rearranged.
+The layout of both OEM registration pages are locked, so the page elements themselves can't be rearranged.
 
 > [!Note]
-> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, a consent statement description, at least one labeled screen element (for instance one of the input fields), and a public key for public/private key encryption. For more on public/private key encryption, see [Manage user data](manage-user-data.md).
+> A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, the `customerinfo` element, at least one additional checkbox **or** one link, and a public key for public/private key encryption.
 
-## Input fields
+## OEM registration page one
 
-There are 4 input fields in the OEM registration pages. The labels on the input fields are fixed. They are designed to collect First Name, Last Name, Email, and Region. This allows Windows to pre-populate them if the user provides their contact information earlier in OOBE. If a customer entered an email address, it will be validated as well-formed prior to allowing customers to proceed. The Country/Region input field is a drop-down list. The associated value of each country/region is its associated two-letter country/region code based on [ISO 3166-1 Alpha-2](https://www.iso.org/obp/ui/#search/code).
+The first OEM registration page includes the elements below, some of which you can customize.
 
-## Consent checkbox
+![OEM registration page 1](images/oem-registration-page1.png)
 
-Consent for sharing the information is determined by the consent check box. If the box is checked, any information in the 4 input fields is sent to the OEM App using asymmetric key encryption. If the box is not checked customer information is not sent to the OEM App. This behavior holds true regardless of if there is any information typed into the input fields. If the box is not checked, no information is passed.
+* **Page title**. Create a title that makes sense for your use of the page. This title also appears on registration page two.
+* **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. This subtitle also appears on registration page two. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
+* **Customer information fields**. These fields are not customizable. Customer information consists of four input fields: First Name, Last Name, Region, and Email. If the Email field is filled in, it will be validated as well-formed prior to allowing the customer to proceed. The Country/Region input field is a drop-down list. The associated value of each country/region is its associated two-letter country/region code based on [ISO 3166-1 Alpha-2](https://www.iso.org/obp/ui/#search/code).
+* **One link**. Customize the title, and path to, an HTML file using the `link1` element of [Oobe.xml](registration-pages-oobexml.md). When using this link to surface a privacy policy, ensure the policy is current.
+* **Skip button**. The Skip button is visible by default, but you can configure the `hideSkip` element of [Oobe.xml](registration-pages-oobexml.md) to hide it. No registration data of any kind is provided if the customer chooses **Skip**. The button text is not customizable.
+* **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
 
-## Pre-populated customer information
+### Pre-populated customer information
 
-When a user signs in or signs up for a Microsoft account (MSA) in OOBE, they have already provided some of the information being requested on the OEM Registration pages. To streamline the setup process for users, Microsoft pre-populates the account information if provided.
+When a user signs in to or signs up for an MSA in OOBE, they provide some of the customer information requested on the OEM Registration pages. To streamline the setup process for users, Windows pre-populates some of the customer information fields on OEM registration page one, if the customer used an MSA earlier in OOBE.
 
-Depending on the SKU a user may choose to setup different account choices which will impact whether the account information is pre-set.
+Depending on the SKU a user may choose to setup different account choices which will impact whether the account information is pre-filled.
 
-| Account path                              | OEM page pre-populated                                                 |
+| Account path                              | OEM page pre-filled                                                    |
 |:------------------------------------------|:-----------------------------------------------------------------------|
-| Microsoft account sign up                 | First name, last name, email, region (if provided to Microsoft)        |
-| Microsoft account sign in                 | First name, last name, email, region (if provided to Microsoft)        |
-| Azure AD account sign in                  | Nothing pre-populated                                                  |
-| Local account creation                    | Nothing pre-populated                                                  |
+| Microsoft account sign up                 | First name, last name, email                                           |
+| Microsoft account sign in                 | First name, last name, email                                           |
+| Azure AD account sign in                  | Nothing pre-filled                                                     |
+| Local account creation                    | Nothing pre-filled                                                     |
 
-If information is pre-populated from the user's Microsoft account, a message will be displayed below the input boxes to indicate this to the user.
+## OEM registration page two
 
-## Style guidance
+The second OEM registration page includes the elements below, some of which you can customize.
 
-Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with this guidance please ensure that the markup and style conventions HTML sample files are followed precisely.
+![OEM registration page 2](images/oem-registration-page2.png)
+
+* **Page title**. Create a title that makes sense for your use of the page. This title also appears on registration page one.
+* **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. This subtitle also appears on registration page one. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
+* **Four checkboxes**. Up to four checkboxes with labels can be displayed on registration page two. You can set the descriptive labels for the checkboxes, and their default states, using the `customerinfo`, `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](registration-pages-oobexml.md).
+* **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](registration-pages-oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `%systemroot%\system32\Oobe\Info` directory.
+* **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
+
+> [!Note]
+> You can't skip showing a link on registration page one by providing only `link2` and `link3` elements in Oobe.xml. A missing `link1` will cause the `link2` element to appear on the first registration page instead of the second.
+
+## Design HTML files for your links
+
+When a customer clicks any link you've added to the registration pages, this opens an HTML file stored in the `%systemroot%\system32\Oobe\Info` folder on the device. Microsoft provides a full HTML sample below that defines the background color, font color, font sizing, font weight, padding, margins, and headers (among other elements) for your HTML files. We strongly encourage you to use this sample with little to no alteration of the design elements.
+
+Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with the design of Windows OOBE, and to create a consistent user experience, use the markup and style conventions laid out in the [HTML example below](#full-html-example) when creating your HTML files.
 
 > [!Note]
 > Inline CSS styling is required so that the iFrame host elements render correctly in the registration pages.
@@ -63,6 +72,11 @@ Windows OOBE has a dark blue background with light text. End User License Agreem
 ### Colors
 
 Text and background colors are defined in the [CSS code example](#css-example).
+
+* Background color: #2b2b2b
+* Font color: #FFF
+
+Please use these colors to ensure a consistent user experience throughout OOBE.
 
 ### Font
 
@@ -172,7 +186,7 @@ Please use the following inline CSS in the head of your HTML documents.
 
 ## Full HTML example
 
-Here is a full exaxmple of an HTML flyout for OEM registration pages:
+Here is a full example of an HTML flyout for OEM registration pages. Please use this sample as a baseline for your HTML flyout pages, with little to no alteration of the design elements.
 
 ```html
 > <!DOCTYPE html>

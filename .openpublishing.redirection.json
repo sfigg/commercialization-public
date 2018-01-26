@@ -6,6 +6,11 @@
         "redirect_document_id": true 
     },
     {   
+        "source_path": "customize/desktop/collect-and-upload-data.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/manage-user-data",
+        "redirect_document_id": true 
+    },
+    {   
         "source_path": "customize/preinstall/preinstall-apps.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/preinstall/preinstall-and-exclusive-apps",
         "redirect_document_id": true 
