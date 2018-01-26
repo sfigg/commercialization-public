@@ -20,7 +20,7 @@ You can set the default language, location, and keyboard layout using Oobe.xml. 
 
 In Windows 10 build 1709, you can also specify a default timezone for the device using Oobe.xml. If the device has network connectivity during OOBE, Windows will attempt to detect the user’s time zone and this will override the value set in Oobe.xml. If the device does not have connectivity, or the user has turned off Location settings in OOBE, Windows will not be able to detect the timezone, and will default to the value you set in Oobe.xml. In this case, the user will see this timezone reflected by their clock once they reach the desktop.
 
-For a list of time zones, use the list in the registry under: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones`
+For a list of time zones you can set, see [Default Time Zones](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones).
 
 There are a number of other settings available to enable further customization of OOBE. See [Configure Oobe.xml](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-oobexml) for information about all of the settings available to you.
 
