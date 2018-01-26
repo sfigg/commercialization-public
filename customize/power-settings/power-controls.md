@@ -26,4 +26,4 @@ In this section
 | Topic                                         | Description                                                       |
 |:----------------------------------------------|:------------------------------------------------------------------|
 | [LidNotificationsAreReliable](lidnotificationsarereliable.md) | Use to notify the OS whether the platform guarantees that lid notifications are sent whenever the lid is opened or closed. |
-| [IgnoreCSCompliantCheck](power-controls-ignorecscompliancecheck.md) | New in Windows 10, version 1803. Use to disable the default OS requirement of having non-rotational media in a Modern Standby system.    |
+| [IgnoreCSComplianceCheck](power-controls-ignorecscompliancecheck.md) | New in Windows 10, version 1803. Use to disable the default OS requirement of having non-rotational media in a Modern Standby system.    |
