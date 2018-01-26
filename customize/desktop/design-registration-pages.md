@@ -54,7 +54,7 @@ The second OEM registration page includes the elements below, some of which you 
 * **Page title**. Create a title that makes sense for your use of the page. This title also appears on registration page one.
 * **Page subtitle**. Add a subtitle to help customers understand the tasks on the page or in some other way guide them to complete the form. This subtitle also appears on registration page one. The page title and subtitle can be customized using the `registration` element of [Oobe.xml](registration-pages-oobexml.md).
 * **Four checkboxes**. Up to four checkboxes with labels can be displayed on registration page two. You can set the descriptive labels for the checkboxes, and their default states, using the `customerinfo`, `checkbox1`, `checkbox2`, and `checkbox3` elements of [Oobe.xml](registration-pages-oobexml.md).
-* **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](registration-pages-oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `OOBE\Info` directory.
+* **Two links**. Up to two links can be displayed beneath the checkboxes. You can specify the link labels and file paths using the `link2` and `link3` elements of [Oobe.xml](registration-pages-oobexml.md). Any text you associate with these links must be in HTML files stored locally in the `%systemroot%\system32\Oobe\Info` directory.
 * **Next button**. The Next button moves the customer forward in OOBE. This button is not customizable.
 
 > [!Note]
@@ -62,7 +62,7 @@ The second OEM registration page includes the elements below, some of which you 
 
 ## Design HTML files for your links
 
-When a customer clicks any link you've added to the registration pages, this opens an HTML file stored in the `OOBE\Info` folder on the device. Microsoft provides a full HTML sample below that defines the background color, font color, font sizing, font weight, padding, margins, and headers (among other elements) for your HTML files. We strongly encourage you to use this sample with little to no alteration of the design elements.
+When a customer clicks any link you've added to the registration pages, this opens an HTML file stored in the `%systemroot%\system32\Oobe\Info` folder on the device. Microsoft provides a full HTML sample below that defines the background color, font color, font sizing, font weight, padding, margins, and headers (among other elements) for your HTML files. We strongly encourage you to use this sample with little to no alteration of the design elements.
 
 Windows OOBE has a dark blue background with light text. End User License Agreement (EULA) content uses a dark blue background and light text. Fly-out content uses a dark background with light text. To align with the design of Windows OOBE, and to create a consistent user experience, use the markup and style conventions laid out in the [HTML example below](#full-html-example) when creating your HTML files.
 

@@ -29,18 +29,18 @@ This registry value is created regardless of whether the registration pages are 
 
 In order for you to access and use the customer information, take the following steps:
 
-1. [Generate a public/private key pair](#generate-a-publicprivate-key-pair), and place the public key in the `\OOBE\Info` folder of the image.
+1. [Generate a public/private key pair](#generate-a-publicprivate-key-pair), and place the public key in the `%systemroot%\system32\Oobe\Info` folder of the image.
 1. [Collect the encrypted customer data](#collect-encrypted-customer-data) using an app or a service that runs roughly 30 minutes after the first logon completes.
 1. [Send the data to your server for decryption](#send-data-to-your-server-for-decryption) using SSL. You can then decrypt the session key to decrypt the customer data.
 
 ## Generate a public/private key pair
 
-To protect customer data, you must generate a public/private key pair, and the public key must be placed in the `\OOBE\Info` folder. If you’re deploying images to multiple regions or in multiple languages, you should put the public key directly under region and language-specific subdirectories, following the same rules as you would for region or language-specific Oobe.xml files as described in [How Oobe.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
+To protect customer data, you must generate a public/private key pair, and the public key must be placed in the `%systemroot%\system32\Oobe\Info` folder. If you’re deploying images to multiple regions or in multiple languages, you should put the public key directly under region and language-specific subdirectories, following the same rules as you would for region or language-specific Oobe.xml files as described in [How Oobe.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
 
 > [!Important]
-> You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `\OOBE\Info` folder. Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
+> You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `%systemroot%\system32\Oobe\Info` folder. Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
 
-If there’s no public key in the `\OOBE\Info` folder, the registration pages aren’t shown.
+If there’s no public key in the `%systemroot%\system32\Oobe\Info` folder, the registration pages aren’t shown.
 
 ### Generate public and private keys
 
@@ -183,7 +183,7 @@ Create and preinstall a Microsoft Store app, or write a service to run after fir
 1. Collect the encrypted customer data, including the user name from the [Windows.System.User namespace](https://docs.microsoft.com/en-us/uwp/api/windows.system.user), as well as the local time stamp of first sign-in.
 1. Upload that data set to your server for decryption and use.
 
-To use a Microsoft Store app to collect the data, assign its Application User Model ID (AUMID) to the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) Unattend setting. Windows will pass the timestamp, user data, session key, and checkbox state data to the `appdata` folder for the app.
+To use a Microsoft Store app to collect the data, assign its Application User Model ID (AUMID) to the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) Unattend setting. Windows will pass the timestamp, user data, session key, and checkbox state data to the `LocalState` folder for the app.
 
 If you create and run a service to upload the data, you should set the service to run at least 30 minutes after the user gets to the Start screen, and only run the service once. Setting your service to run at this time ensures that your service won't consume system resources in the background while users are getting their first chance to explore the Start screen and their apps. The service must gather the data from within the OOBE directory, as well as the time stamp and user name, as applicable. The service should also determine what actions to take in response to the user's choices. For example, if the user opted in to an anti-malware app trial, your service should start the trial rather than rely on the anti-malware app to decide if it should run. Or, as another example, if your user opted in to emails from your company or partner companies, your service should communicate that info to whomever handles your marketing emails.
 

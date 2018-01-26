@@ -20,13 +20,13 @@ Here is an example of the two OEM registration pages:
 
 ![OEM registration page 2](images/oem-registration-page2.png)
 
-The OEM registration pages work with the Microsoft Account (MSA) to help customers enter in their information only once during OOBE. Microsoft prompts customers to sign up for an MSA or sign into an existing MSA during OOBE. When a customer does this, their first name, last name, and email address for the MSA, if provided, will be pre-filled in on the OEM registration pages. The customer can change their information before clicking **Next** if desired.
+The OEM registration pages work with a Microsoft Account (MSA) to help customers enter in their information only once during OOBE. Microsoft prompts customers to sign up for an MSA or sign into an existing MSA during OOBE. When a customer does this, their first name, last name, and email address for the MSA, if provided, will be pre-filled in on registration page one. The customer can change their information before clicking **Next** if desired.
 
 If the customer has not used an MSA, the fields on the OEM registration pages will be empty, and the customer can fill them in if and as desired.
 
-The OEM Registration pages are the last screens in the OOBE flow, after the user goes through all other steps in OOBE.
+The OEM registration pages are the last screens in the OOBE flow, after the user goes through all other steps in OOBE.
 
-The customer information submitted through the registration pages will be encrypted using a public key that you place into the Windows image, and stored in the `Oobe/Info` folder. Collect the encrypted data using a Microsoft Store app designated as your OEM App, or write a service that does this, and upload the data to your server. Decrypt the data using the corresponding private key once it's on your server.
+The customer information submitted through the registration pages will be stored in the `%systemroot%\System32\Oobe\Info\` folder, and will be encrypted using a public key that you place into the Windows image. Collect the encrypted data using a Microsoft Store app designated as your OEM App, or write a service that does this, and upload the data to your server. Decrypt the data using the corresponding private key once it's on your server.
 
 ## In this section
 
