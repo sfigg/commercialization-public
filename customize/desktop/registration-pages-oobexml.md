@@ -14,7 +14,9 @@ ms.technology: windows-oem
 
 To include your registration pages in OOBE, you must configure the appropriate settings of your OOBE.xml file.
 
-A minimum amount of information is required for the registration pages to display. You must provide a page title, a page subtitle, the `customerinfo` element, at least one additional checkbox **or** one link, and a public key for public/private key encryption.
+A minimum amount of information is required for the registration pages to display. You must provide a page `title`, a page `subtitle`, the `customerinfo` element, at least one additional checkbox **or** one link, and a public key for public/private key encryption.
+
+The following table shows the Oobe.xml elements that correspond to customizable fields on the OEM registration pages:
 
 | Element | Setting | Description | Value |
 | ------- | ------ | ----------- | ----- |
@@ -47,7 +49,7 @@ A minimum amount of information is required for the registration pages to displa
 | <**hideSkip**> | | Optional. Controls whether or not the Skip button is displayed to the user on registration page one. | True or False. True means the skip button is not visible to the user. False means the skip button is displayed as an option to the user. Default is False, resulting in the skip button being visible. |
 
 >[!Note]
-> The `link` elements will appear on your registration pages as described above as long as no element is "skipped". It is not possible to skip over link fields on the registration pages. If you only include one link in your Oobe.xml file, it will appear on registration page one underneath the customer information fields, regardless of the name of the link element used.
+> If you only include one `link` element in your Oobe.xml file, it will appear on registration page one underneath the customer information fields, regardless of which `link` element was used. Similarly, if you only include two `link` elements in your Oobe.xml file, the first will appear on registration page one, and the second will appear as the top link on registration page two.
 >
 > For example, if you omit `link1` and `link2` from Oobe.xml, and only include `link3`, `link3` will appear underneath the customer information fields on registration page one. If you omit only `link1`, `link2` will appear on registration page one, and `link3` will appear as the top link on registration page two.
 
