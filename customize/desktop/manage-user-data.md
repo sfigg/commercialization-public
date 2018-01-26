@@ -23,7 +23,7 @@ If a customer enters information into the OEM registration pages, the following 
 
 The timestamp of first sign-in is also written to the Windows registry under this key:
 
-`HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats [EndTimeStamp]`.
+`HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats [EndTimeStamp]`
 
 This registry value is created regardless of whether the registration pages are included in OOBE. The timestamp is written in UTC (Coordinated Universal Time) format; specifically, it is a `SYSTEMTIME` value written as a serialized blob of data to the registry.
 
