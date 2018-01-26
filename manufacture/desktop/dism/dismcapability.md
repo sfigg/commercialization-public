@@ -8,7 +8,16 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCapability
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
+
 
 # DismCapability structure
 
