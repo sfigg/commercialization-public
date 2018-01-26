@@ -1,5 +1,4 @@
 # [Customize](index.md)
-
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
 ### [Customize the Start layout](desktop/customize-start-layout.md)
@@ -13,8 +12,7 @@
 #### [OEM registration pages](desktop/oem-registration-pages.md)
 ##### [Design your registration pages](desktop/design-registration-pages.md)
 ##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
-##### [Manage user data](desktop/manage-user-data.md)
-##### [Collect and upload data](desktop/collect-and-upload-data.md)
+##### [Protect and collect user data](desktop/manage-user-data.md)
 ### [Customize the Windows performance power slider](desktop/customize-power-slider.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Get Help app](desktop/customize-get-help-app.md)
