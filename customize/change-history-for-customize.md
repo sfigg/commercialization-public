@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 ms.author: alhopper
-ms.date: 12/6/2017
+ms.date: 1/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,6 +14,12 @@ ms.technology: windows-oem
 # Change history for customization docs
 
 The following tables record the major changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
+
+## January 2017
+
+| Topic                                          | Description                                                                                        |
+|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [OEM registration pages](desktop/oem-registration-pages.md) | Updated. New screenshots and XML sample, clarifications on how the Oobe.xml elements relate to registration page fields, clarifications on collecting encrypted customer data.                                                             |
 
 ## December 2017
 
