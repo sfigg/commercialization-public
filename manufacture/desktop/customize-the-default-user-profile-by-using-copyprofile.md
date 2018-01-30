@@ -31,30 +31,27 @@ You can use the `CopyProfile` setting to customize a user profile and then copy 
 
 Use the following procedure to create an answer file to instruct **Sysprep** to copy user profile settings when you generalize the Windows image.
 
-**To create a separate answer file for copying user profile settings**
+**Create a separate answer file for copying user profile settings**
 
-1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**. For more information about Windows SIM, see [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445).
+In [Windows SIM](https://msdn.microsoft.com/library/windows/hardware/dn922445), create an answer file with `amd64_Microsoft-Windows-Shell-Setup_neutral\` added to **Pass 4 - Specialize**, and set `CopyProfile` to `True`. Save this answer file as `copyprofile.xml`. You'll use this answer file when you run Sysprep.
 
-2.  Create a new answer file to use with **Sysprep**:
+The file will look like this:
 
-    1.  Click **File**, and then click **New Answer File**. An empty answer file appears in the **Answer File** pane.
-
-        **Note**  
-        If the catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
-
-         
-
-    2.  In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Shell-Setup**, and then click **Add Setting to Pass 4 specialize**.
-
-    3.  In the **Answer File** pane, select the **Components\\4\_specialize\\amd64-Microsoft-Windows-Shell-Setup\_neutral** folder.
-
-    4.  In the **Microsoft-Windows-Shell-Setup Properties** pane, in the **Settings** section, type the value `CopyProfile = true`.
-
-    5.  Save this new answer file to the root directory of the removable media or network location, and name it **CopyProfile**.
+```copyprofile.xml
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <CopyProfile>true</CopyProfile>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim:c:/users/themar/desktop/17070/sources/install.wim#Windows 10 Pro" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
+```
 
 For more information, see [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073) and [Unattended Windows Setup Reference Guide](http://go.microsoft.com/fwlink/?LinkId=206281).
 
-## <span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring Default User Profile Settings
+## <span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configure Default User Profile Settings
 
 
 Use the following procedure to configure user settings in audit mode and then generalize the Windows installation by using an answer file that contains the `CopyProfile` setting. If you install Windows with another answer file, that answer file should not contain the `CopyProfile` setting or any settings that create additional user accounts.
@@ -80,7 +77,7 @@ Use the following procedure to configure user settings in audit mode and then ge
 4.  On the reference computer, open an elevated command prompt, and then type this command:
 
     ```
-    C:\Windows\System32\Sysprep\Sysprep /generalize /oobe /shutdown /unattend: F:\CopyProfile.xml
+    C:\Windows\System32\Sysprep\Sysprep /generalize /oobe /shutdown /unattend:F:\CopyProfile.xml
     ```
 
     where *F* is the letter of the USB flash drive or other removable media. The **Sysprep** tool removes computer-specific information from the image, while preserving the user profile settings that you configured. For more information, see [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md).
