@@ -26,12 +26,8 @@ You can use the `CopyProfile` setting to customize a user profile and then copy 
 
 
 
-## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Creating an answer file with the CopyProfile setting
+## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Create an answer file with the CopyProfile setting
 
-
-Use the following procedure to create an answer file to instruct **Sysprep** to copy user profile settings when you generalize the Windows image.
-
-**Create a separate answer file for copying user profile settings**
 
 In [Windows SIM](https://msdn.microsoft.com/library/windows/hardware/dn922445), create an answer file with `amd64_Microsoft-Windows-Shell-Setup_neutral\` added to **Pass 4 - Specialize**, and set `CopyProfile` to `True`. Save this answer file as `copyprofile.xml`. You'll use this answer file when you run Sysprep.
 
@@ -54,16 +50,13 @@ For more information, see [Best Practices for Authoring Answer Files](https://ms
 ## <span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configure Default User Profile Settings
 
 
-Use the following procedure to configure user settings in audit mode and then generalize the Windows installation by using an answer file that contains the `CopyProfile` setting. If you install Windows with another answer file, that answer file should not contain the `CopyProfile` setting or any settings that create additional user accounts.
-
-**To configure default user profile settings and generalize the image**
+Configure user settings in audit mode and then generalize the Windows installation by using an answer file with `CopyProfile`. If you install Windows with another answer file, make sure that answer file doesn't have `CopyProfile` or any settings that create additional user accounts.
 
 1.  Install Windows on a reference computer and boot in audit mode. For more information, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
     > [!important]
     > Don't use a domain account, because the `CopyProfile` setting runs after the computer is removed from the domain when you run **Sysprep**. As a result, you'll lose any settings that you configured in a domain. If you change the default user profile and then join the computer to a domain, the customizations that you made to the default user profile will appear on new domain accounts.
 
-     
 
 2.  Customize the built-in administrator account by installing applications, desktop shortcuts, and other settings.
 
