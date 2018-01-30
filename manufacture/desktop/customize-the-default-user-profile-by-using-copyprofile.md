@@ -31,19 +31,6 @@ You can use the `CopyProfile` setting to customize a user profile and then copy 
 
 In [Windows SIM](https://msdn.microsoft.com/library/windows/hardware/dn922445), create an answer file with `amd64_Microsoft-Windows-Shell-Setup_neutral\` added to **Pass 4 - Specialize**, and set `CopyProfile` to `True`. Save this answer file as `copyprofile.xml`. You'll use this answer file when you run Sysprep.
 
-The file will look like this:
-
-```copyprofile.xml
-<?xml version="1.0" encoding="utf-8"?>
-<unattend xmlns="urn:schemas-microsoft-com:unattend">
-    <settings pass="specialize">
-        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <CopyProfile>true</CopyProfile>
-        </component>
-    </settings>
-    <cpi:offlineImage cpi:source="wim:c:/users/themar/desktop/17070/sources/install.wim#Windows 10 Pro" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
-</unattend>
-```
 
 For more information, see [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073) and [Unattended Windows Setup Reference Guide](http://go.microsoft.com/fwlink/?LinkId=206281).
 
