@@ -14,8 +14,14 @@ experiment: true
 experiment_id: 28ca5762-e8b0-41
 ---
 
-# Battery and charging
+>[!IMPORTANT]
+> If you're an individual looking for help with battery issues, try these topics in [Microsoft Support](https://support.microsoft.com/en-us):
+> - [Windows 10 Battery Saving Tips](https://support.microsoft.com/en-us/help/20443/windows-10-battery-saving-tips)
+> - [Surface Battery and Power](https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power)
+>
+> The content on this page is intended for developers.
 
+# Battery and charging
 
 ## Battery charging user experience
 
