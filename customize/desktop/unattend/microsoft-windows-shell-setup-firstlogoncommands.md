@@ -17,6 +17,9 @@ ms.technology: windows-oem
 
 `FirstLogonCommands` specifies commands to run the first time a user logs on to the computer. These commands run only once.
 
+> [!Note]
+> FirstLogonCommands are not supported in Windows 10 S.
+
 When a user with administrative privileges logs in for the first time, these commands are run with elevated access privileges.
 
 If you create a user account that does not include administrative privileges, the following commands may not run:
