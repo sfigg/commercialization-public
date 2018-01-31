@@ -73,6 +73,9 @@ To register a protocol handler for your app:
 * For a Universal app, the protocol handler is specified in the package.appxmanifest file (part of the Visual Studio project), under the `<Extensions>` section. See [Handle URI activation](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/handle-uri-activation) for more details.
 * For a Win32 app, the protocol handler is specified in the registry. See [Registering an Application to a URI Scheme](https://msdn.microsoft.com/en-us/library/aa767914(v=vs.85).aspx) for more details.
 
+> [!Note]
+> Win32 apps are not supported in Windows 10 S.
+
 ### Link to your support website
 
 Here is an example where a URL for `SupportURL` is provided. In this case, the Get Help app will direct customers to the OEM's support webiste.
