@@ -24,7 +24,7 @@ Each Windows component includes settings that can be used to create an unattende
 Information about how to use Windows SIM is available in the [Windows System Image Manager Technical Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference).
 
 > [!Note]
-> All Unattend settings are supported in Windows 10 S, with the exception of [Microsoft-Windows-Shell-Setup-FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md).
+> All Unattend settings for Windows 10 are also supported in Windows 10 S, with the exception of [Microsoft-Windows-Shell-Setup-FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md).
 
 ## In this section
 
