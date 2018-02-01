@@ -1,11 +1,9 @@
-
 ---
 title: IgnoreCsComplianceCheck
 description: Use to disable the default OS requirement of having non-rotational media in a Modern Standby system.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: B96E275A-C2F6-4471-8077-93C829505006
 ms.author: alhopper
 ms.date: 4/15/2018
 ms.topic: article
