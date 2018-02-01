@@ -11,7 +11,7 @@ ms.technology: windows-oem
 ---
 # What's new in ADK kits and tools
 
-## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1709
+## What’s new in the Windows ADK for Windows 10, version 1709
 
 ### Support for ARM64 platforms
 
@@ -53,7 +53,7 @@ The topics below provide instructions on using the tools included in the Windows
 > You can find ADK tools located in the following directory:
 > `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit`
 
-## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1703
+## What’s new in the Windows ADK for Windows 10, version 1703
 
 ### Windows Configuration Designer
 
@@ -67,7 +67,7 @@ To see the newest unattend settings, go to [Changed answer file settings for Win
 
 Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#a-href-idwhatsnew10awhats-new-in-windows-10-version-1703).
 
-## <a href="" id="adk"></a>What’s new in the Windows ADK for Windows 10, version 1607
+## What’s new in the Windows ADK for Windows 10, version 1607
 
 ### Pick and choose desktop applications
 
@@ -97,7 +97,7 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
 
-## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
+## What’s new in the Windows ADK, version 1511
 
 The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/assessments/index), the [Windows Performance Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/index), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
 

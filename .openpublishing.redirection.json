@@ -6,6 +6,11 @@
         "redirect_document_id": true 
     },
     {   
+        "source_path": "get-started/adk-silent-install.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-offline-install#to-install-the-windows-adk-on-an-offline-computer-using-the-command-line",
+        "redirect_document_id": true 
+    },
+    {   
         "source_path": "customize/desktop/collect-and-upload-data.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/manage-user-data",
         "redirect_document_id": true 
