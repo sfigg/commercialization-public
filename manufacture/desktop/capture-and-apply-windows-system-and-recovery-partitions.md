@@ -166,7 +166,7 @@ Here's a few ways to apply the image:
 
 **Capture and apply the entire drive**
 
--   **** You can use the Full Flash Update (FFU) file format to capture and apply the entire drive. To learn more, see [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md).
+-   You can use the Full Flash Update (FFU) file format to capture and apply the entire drive. To learn more, see [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md).
 
 ## <span id="related_topics"></span>Related topics
 

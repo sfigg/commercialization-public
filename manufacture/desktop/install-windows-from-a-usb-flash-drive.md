@@ -68,6 +68,8 @@ This can happen when the Windows image file is over the FAT32 file size limit of
    Dism /Split-Image /ImageFile:D:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800
    ```
 
+   Note, Windows Setup automatically installs from this file, so long as you name it install.swm.
+
 ## <span id="related_topics"></span>Related topics
 
 
