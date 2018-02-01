@@ -4,6 +4,7 @@
 
 ## [HLK Getting Started Guide](getstarted/windows-hlk-getting-started.md)
 ### [Prerequisites](getstarted/windows-hlk-prerequisites.md)
+### [Download Supplemental HLK Resources](getstarted/download-supplemental-hlk-resources.md)
 ### [Step 1: Install Controller and Studio on the test server](getstarted/step-1-install-controller-and-studio-on-the-test-server.md)
 ### [Step 2: Install Client on the test system(s)](getstarted/step-2--install-client-on-the-test-system-s-.md)
 ### [Step 3: Create a machine pool](getstarted/step-3-create-a-machine-pool.md)
