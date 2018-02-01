@@ -28,7 +28,7 @@ Applies an unattended answer file to a Windows® image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismApplyUnattend(
   _In_ DismSession Session,
   _In_ PCWSTR      UnattendFile,

@@ -28,7 +28,7 @@ Releases resources held by a structure or an array of structures returned by oth
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismDelete(
   _In_ VOID *DismStructure
 );

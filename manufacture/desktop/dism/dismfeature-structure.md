@@ -26,7 +26,7 @@ Describes basic information about a feature, such as the feature name and featur
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismFeature {
   PCWSTR                  FeatureName;
   DismPackageFeatureState State;

@@ -28,7 +28,7 @@ Repairs a corrupted image that has been identified as repairable by [**DismCheck
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismRestoreImageHealth(
   _In_     DismSession            Session,
   _In_opt_ PCWSTR                 *SourcePaths,
@@ -98,7 +98,7 @@ If a repair file is not found in any of the locations specified by the *SourcePa
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismRestoreImageHealth(Session, NULL, 0, TRUE, NULL, NULL, NULL);
 ```

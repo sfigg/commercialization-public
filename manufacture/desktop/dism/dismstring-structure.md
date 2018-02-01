@@ -26,7 +26,7 @@ DISM API functions that return strings wrap the heap allocated **PCWSTR** in a D
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismString {
   PCWSTR Value;
 } DismString;

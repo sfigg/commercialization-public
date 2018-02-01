@@ -28,7 +28,7 @@ Add a capability to an image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismRemoveCapability(
   _In_     DismSession             Session,
   _In_     PCWSTR                  Name,
@@ -69,7 +69,7 @@ Use this function to remove a capability.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismRemoveCapability(Session, L“Language.Basic~~~en-US~0.0.1.0”, NULL, NULL, NULL);
 ```

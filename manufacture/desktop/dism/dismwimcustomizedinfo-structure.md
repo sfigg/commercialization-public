@@ -25,7 +25,7 @@ Describes a Windows Imaging Format (WIM) file.
 
 ## Syntax
 
-```ManagedCPlusPlus
+```
 typedef struct _DismWimCustomizedInfo
 {
     UINT Size;

@@ -28,7 +28,7 @@ Mounts a WIM or VHD image file to a specified location.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismMountImage(
   _In_     PCWSTR                 ImageFilePath,
   _In_     PCWSTR                 MountPath,
@@ -97,7 +97,7 @@ When mounting an image in a WIM file, the image can either be identified by the 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismMountImage(L” C:\\test\\images\\myimage.wim”, L"C:\\test\\offline", 1, NULL, DismImageIndex, DISM_MOUNT_READWRITE, NULL, NULL, NULL);
 ```

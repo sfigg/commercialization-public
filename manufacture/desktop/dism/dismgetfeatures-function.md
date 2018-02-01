@@ -28,7 +28,7 @@ Gets all the features in an image, regardless of whether the features are enable
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetFeatures(
   _In_     DismSession           Session,
   _In_opt_ PCWSTR                Identifier,
@@ -96,7 +96,7 @@ Returns **S\_OK** on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismFeature* Feature;
 UINT FeatureCount;

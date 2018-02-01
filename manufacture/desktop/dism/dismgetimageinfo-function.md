@@ -28,7 +28,7 @@ Returns an array of [DismImageInfo](dismimageinfo-structure.md) structures that 
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetImageInfo(
   _In_  PCWSTR        ImageFilePath,
   _Out_ DismImageInfo **ImageInfo,
@@ -65,7 +65,7 @@ The array of [DismImageInfo](dismimageinfo-structure.md) structures are allocate
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 UINT* ImageInfoCount; 
 hr = DismGetImageInfo(L"C:\\Images\\Image1.vhd", &amp;ImageInfo, &amp;ImageInfoCount);

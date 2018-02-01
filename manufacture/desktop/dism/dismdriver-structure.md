@@ -26,7 +26,7 @@ Describes the architecture and hardware that the driver supports. The [**DismGet
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismDriver {
   PCWSTR ManufacturerName;
   PCWSTR HardwareDescription;

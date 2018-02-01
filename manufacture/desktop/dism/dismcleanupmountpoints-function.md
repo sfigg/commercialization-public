@@ -28,7 +28,7 @@ Removes files and releases resources associated with corrupted or invalid mount 
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismCleanupMountPoints(void);
 ```
 
@@ -45,7 +45,7 @@ Returns `S_OK` on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismCleanupMountpoints();
 ```

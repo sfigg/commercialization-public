@@ -26,7 +26,7 @@ Describes the metadata of an image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismImageInfo {
   DismImageType     ImageType;
   UINT              ImageIndex;

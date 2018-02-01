@@ -26,7 +26,7 @@ Describes detailed package information such as the client used to install the pa
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismPackageInfo {
   PCWSTR                          PackageName;
   DismPackageFeatureState         PackageState;

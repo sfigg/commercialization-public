@@ -28,7 +28,7 @@ Adds a single .cab or .msu file to a Windows® image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismAddPackage(
   _In_     DismSession            Session,
   _In_     PCWSTR                 PackagePath,
@@ -117,7 +117,7 @@ This function will return a special error code if the package is not applicable.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismAddPackage(Session, "C:\\packages\\calc.cab", FALSE, FALSE, NULL, NULL, NULL);
 ```

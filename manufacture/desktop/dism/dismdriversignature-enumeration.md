@@ -26,7 +26,7 @@ Specifies the signature status of a driver.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef enum DismDriverSignature { 
   DismDriverSignatureUnknown   = 0,
   DismDriverSignatureUnsigned  = 1,

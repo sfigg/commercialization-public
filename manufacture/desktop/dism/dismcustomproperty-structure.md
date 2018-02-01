@@ -26,7 +26,7 @@ Describes the custom properties of a package. Custom properties are any properti
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismCustomProperty {
   PCWSTR Name;
   PCWSTR Value;

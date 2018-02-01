@@ -28,7 +28,7 @@ Lists each package in an image, providing basic information including the packag
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetPackages(
   _In_  DismSession Session,
   _Out_ DismPackage **Package,
@@ -61,7 +61,7 @@ Returns **S\_OK** on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT      hr      = S_OK;
 DismPackage* Package = NULL;
 UINT         Count   = 0;

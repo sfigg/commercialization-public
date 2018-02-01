@@ -29,7 +29,7 @@ Describes capability basic information.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismCapability {
   PCWSTR                  Name;
   DismPackageFeatureState State;

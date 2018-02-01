@@ -26,7 +26,7 @@ Describes the metadata of a mounted image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismMountedImageInfo {
   PCWSTR          MountPath;
   PCWSTR          ImageFilePath;

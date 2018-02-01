@@ -28,7 +28,7 @@ Gets the parent features of a specified feature.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetFeatureParent(
   _In_     DismSession           Session,
   _In_     PCWSTR                FeatureName,
@@ -105,7 +105,7 @@ For a feature to be enabled, one or more of its parent features must be enabled.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismFeature* Feature;
 UINT FeatureCount;

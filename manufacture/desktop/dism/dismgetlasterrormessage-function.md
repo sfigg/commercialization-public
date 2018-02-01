@@ -28,7 +28,7 @@ Gets the error message in the current thread, immediately after a failure.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetLastErrorMessage(
   _Out_ DismString **ErrorMessage
 );

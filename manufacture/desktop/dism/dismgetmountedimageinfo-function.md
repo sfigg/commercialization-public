@@ -28,7 +28,7 @@ Returns an array of [DismMountedImageInfo](dismmountedimageinfo-structure.md) st
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetMountedImageInfo(
   _Out_ DismMountedImageInfo **MountedImageInfo,
   _Out_ UINT                 *Count

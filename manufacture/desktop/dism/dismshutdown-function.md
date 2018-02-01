@@ -28,7 +28,7 @@ Shuts down DISM API. **DismShutdown** must be called once per process. Other DIS
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismShutdown(void);
 ```
 
@@ -56,7 +56,7 @@ Before calling **DismShutdown**, you must close all [DismSession](dismsession.md
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 hr = DismShutdown();
 ```

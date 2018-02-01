@@ -30,7 +30,7 @@ You can use the **DismRemountImage** function when the image is in the **DismMou
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismRemountImage(
   _In_ PCWSTR MountPath
 );
@@ -50,7 +50,7 @@ A relative or absolute path to the mount directory of the image.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 DismSession* Session = NULL; 
 hr = DismRemountImage(L"C:\\Mount\\");

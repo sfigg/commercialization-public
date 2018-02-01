@@ -28,7 +28,7 @@ Gets detailed info from for the specified feature.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetFeatureInfo(
   _In_     DismSession           Session,
   _In_     PCWSTR                FeatureName,
@@ -101,7 +101,7 @@ You can use this function to get the custom properties of a feature. If the feat
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 DismFeatureInfo FeatureInfo; 
 hr = DismGetFeatureInfo(Session, "Xps-Foundation-Xps-Viewer", NULL, NULL, &amp;FeatureInfo);

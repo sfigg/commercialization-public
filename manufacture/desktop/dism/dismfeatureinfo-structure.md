@@ -26,7 +26,7 @@ Describes advanced feature information, such as installed state and whether a re
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismFeatureInfo {
   PCWSTR                  FeatureName;
   DismPackageFeatureState FeatureState;

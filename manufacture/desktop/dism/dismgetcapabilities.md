@@ -28,7 +28,7 @@ Gets DISM capabilities.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetCapabilities(
   _In_ DismSession    Session,
   _In_ DismCapability Capability,
@@ -56,7 +56,7 @@ Returns `S_OK` on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismCapability* Capability;
 UINT CapabilityCount;

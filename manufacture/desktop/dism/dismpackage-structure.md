@@ -26,7 +26,7 @@ Describes basic information about a package, including the date and time that th
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismPackage {
   PCWSTR                  PackageName;
   DismPackageFeatureState PackageState;

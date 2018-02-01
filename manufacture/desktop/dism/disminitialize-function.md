@@ -28,7 +28,7 @@ Initializes DISM API. **DismInitialize** must be called once per process, before
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismInitialize(
   _In_     DismLogLevel LogLevel,
   _In_opt_ PCWSTR       LogFilePath,

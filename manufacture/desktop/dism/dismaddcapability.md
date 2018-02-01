@@ -28,7 +28,7 @@ Add a capability to an image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismAddCapability(
   _In_     DismSession             Session,
   _In_     PCWSTR                  Name,
@@ -81,7 +81,7 @@ Use this function to add a capability.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismAddCapability(Session, L“Language.Basic~~~en-US~0.0.1.0”, TRUE, NULL, 0, NULL, NULL, NULL);
 ```

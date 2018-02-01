@@ -28,7 +28,7 @@ Adds a third party driver (.inf) to an offline Windows® image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismAddDriver(
   _In_ DismSession Session,
   _In_ PCWSTR      DriverPath,
