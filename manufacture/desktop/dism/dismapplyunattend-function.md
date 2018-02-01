@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismApplyUnattend
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismApplyUnattend function
@@ -20,7 +28,7 @@ Applies an unattended answer file to a Windows® image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismApplyUnattend(
   _In_ DismSession Session,
   _In_ PCWSTR      UnattendFile,

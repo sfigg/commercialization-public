@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCapabilityInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismCapabilityInfo structure
@@ -20,7 +28,7 @@ Describes information about a capability.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismCapabilityInfo {
   PCWSTR                  Name;
   DismPackageFeatureState State;

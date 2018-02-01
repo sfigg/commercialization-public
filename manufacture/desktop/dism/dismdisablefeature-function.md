@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismDisableFeature
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismDisableFeature function
@@ -20,7 +28,7 @@ Disables a feature in the current image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismDisableFeature(
   _In_     DismSession            Session,
   _In_     PCWSTR                 FeatureName,
@@ -87,7 +95,7 @@ Returns `S_OK` on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismDisableFeature(Session, "WindowsMediaPlayer", NULL, FALSE, NULL, NULL, NULL);
 ```

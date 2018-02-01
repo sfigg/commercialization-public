@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismRemoveDriver
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismRemoveDriver function
@@ -20,7 +28,7 @@ Removes an out-of-box driver from an offline image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismRemoveDriver(
   _In_ DismSession Session,
   _In_ PCWSTR      DriverPath
@@ -53,7 +61,7 @@ This function only supports offline images.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismRemoveDriver(Session, "Oem1.inf");
 ```
