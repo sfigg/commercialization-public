@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 4/15/2018
+ms.date: 4/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

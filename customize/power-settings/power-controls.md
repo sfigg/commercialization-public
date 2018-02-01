@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59DB1A6C-C08B-4679-AA85-2CAF709E36D5
 ms.author: alhopper
-ms.date: 10/05/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -21,10 +21,10 @@ Settings in this subgroup include settings that control the system's power and b
 * **Windows provisioning path:** `Common\Power\Controls\Settings`
 * **Hidden setting:** Yes
 
-In this section
+## In this section
 
 | Topic                                         | Description                                                       |
 |:----------------------------------------------|:------------------------------------------------------------------|
+| [EnableInputSuppression](power-controls-enableinputsuppression.md)      | New in Windows 10, version 1803. Use to enable input suppression on a modern standby device with a clamshell form factor when the lid is closed, there is no external monitor connected, and the device is on DC power.  |
+| [IgnoreCsComplianceCheck](power-controls-ignorecscompliancecheck.md) | New in Windows 10, version 1803. Use to disable the default OS requirement of having non-rotational media in a Modern Standby system.    |
 | [LidNotificationsAreReliable](power-controls-lidnotificationsarereliable.md) | Use to notify the OS whether the platform guarantees that lid notifications are sent whenever the lid is opened or closed. |
-| [IgnoreCSComplianceCheck](power-controls-ignorecscompliancecheck.md) | New in Windows 10, version 1803. Use to disable the default OS requirement of having non-rotational media in a Modern Standby system.    |
-| [EnableInputSuppression](power-controls-enableinputsuppression.md)      | Use to enable input suppression on a modern standby device with a clamshell form factor when the lid is closed, there is no external monitor connected, and the device is on DC power.  |
