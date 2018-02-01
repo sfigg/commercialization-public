@@ -24,7 +24,7 @@ Use to notify the OS whether the platform guarantees that lid notifications are 
 
 | Value                 | Description                                    |
 |:----------------------|:-----------------------------------------------|
-| True                  | The platform guarantees that lid notifications will be sent every time the device lid is opened or closed. The OS suppresses Windows Hello when the device lid is closed to ensure further input is not processed and to save battery life.<br/>>OEMs must reliably report lid open and lid close events to opt-in to this setting. If there are scenarios where a lid open event is not reliably reported to the OS, Windows Hello may not work for the user.      |
+| True                  | The platform guarantees that lid notifications will be sent every time the device lid is opened or closed. The OS suppresses Windows Hello when the device lid is closed to ensure further input is not processed and to save battery life.<br/>OEMs must reliably report lid open and lid close events to opt-in to this setting. If there are scenarios where a lid open event is not reliably reported to the OS, Windows Hello may not work for the user.      |
 | False                 | The platform does not guarantee that lid notifications are sent every time the device lid is opened or closed. |
 
 ## Remarks
