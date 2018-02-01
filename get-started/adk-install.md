@@ -19,12 +19,12 @@ Download and install the Assessment and Deployment kit (ADK) to start working wi
 
 ## Windows ADK for Windows 10, version 1709
 
-Download the latest ADK: the Windows ADK for Windows 10, version 1709, to get the new and improved deployment and provisioning tools used to automate a large-scale deployment. The Windows ADK includes:
+[Download the Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206), to get the new and improved deployment and provisioning tools used to automate a large-scale deployment. The latest version of the Windows ADK includes:
 
 * The Windows Assessment Toolkit and the Windows Performance Toolkit to assess the quality and performance of systems or components.
 * Deployment tools such as WinPE, Sysprep, DISM and other tools that you can use to customize and deploy Windows 10 images.
 
-[Download now](https://go.microsoft.com/fwlink/p/?linkid=859206).
+[>>Download now<<](https://go.microsoft.com/fwlink/p/?linkid=859206)
 
 See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more about the Windows ADK for Windows 10, version 1709.
 
@@ -34,7 +34,7 @@ See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more abo
 |:------------------------------------------|:------------------------------------------------------|
 | [Windows ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | You must use Windows 10, version 1703, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1703. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703).  |
 | [Windows ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740). | You must use Windows 10, version 1607, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1607. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607). |
-| [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005). The Windows ADK for Windows 8.1 Update includes new OEM-specific tools to reduce the amount of space Windows uses on solid state storage devices. [Learn more](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)). |
+| [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005). | The Windows ADK for Windows 8.1 Update includes new OEM-specific tools to reduce the amount of space Windows uses on solid state storage devices. [Learn more](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)). |
 | [Windows 10 IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/p/?LinkId=735028) | The IoT Core ADK Add-Ons include OEM-specific tools to help you create images for your devices with Windows apps, BSPs, drivers, and other chosen features. [Learn more](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons). |
 
 For older versions of Windows:
@@ -48,7 +48,7 @@ Install the ADK based on what works best for your environment.
 
 * For computers that are connected to the internet, you can use any of the download links above.
 * For secure manufacturing environments, you can [install the Windows ADK offline](adk-offline-install.md).
-* For automated installs, you can [silently install the Windows ADK](adk-silent-install.md).
+* For automated installs, you can [silently install the Windows ADK](adk-offline-install.md#install-the-windows-adk-on-an-offline-computer-using-the-command-line).
 * For command line syntax, see [ADKSetup Command-Line Syntax](https://technet.microsoft.com/en-us/library/dn621910.aspx).
 
 ## Windows ADK tools for IT pros
