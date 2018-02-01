@@ -17,7 +17,7 @@ The Windows ADK is also available to Windows Insiders. Join the Windows Insider 
 
 Download and install the Assessment and Deployment kit (ADK) to start working with Windows images. By default, the ADK is installed using an online installer and GUI. If you have a scenario where you cannot use the online ADK installer with GUI, ADK provides different installation options.
 
-## Windows ADK for Windows 10, version 1709
+## Download the Windows ADK for Windows 10, version 1709
 
 [Download the Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206) to get the new and improved deployment and provisioning tools used to automate a large-scale deployment. The latest version of the Windows ADK includes:
 
