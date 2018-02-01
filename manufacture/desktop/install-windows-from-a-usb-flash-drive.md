@@ -1,11 +1,10 @@
 ---
-author: Justinha
 Description: Install Windows from a USB Flash Drive
 ms.assetid: b1ed80f1-cc1d-4eeb-9d5e-22c615479e1d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows from a USB Flash Drive
 ms.author: themar
-ms.date: 08/13/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -35,7 +34,7 @@ This topic covers how to create a bootable Windows installation USB drive from a
 
 2.  Open Disk Management: Right-click on **Start** and choose **Disk management**.
 
-3.  Format the partition: Right-click the USB drive partition and choose **Format**. Select the **FAT32** file system to be able to boot either BIOS-based or UEFI-based PCs. The default install.wim is smaller than the 4 GB file size limit of FAT32.
+3.  Format the partition: Right-click the USB drive partition and choose **Format**. Select the **FAT32** file system to be able to boot either BIOS-based or UEFI-based PCs.
 
 4.  Set the partition as active: Right-click the USB drive partition and click **Mark Partition as Active**.
 
@@ -46,7 +45,7 @@ This topic covers how to create a bootable Windows installation USB drive from a
 
 1.  Use File Explorer to copy and paste the entire contents of the Windows product DVD or ISO to the USB flash drive.
 
-2.  Optional: add an unattend file or a configuration set to automate the installation process. For more information, see [Automate Windows Setup](windows-setup-automation-overview.md).
+2.  Optional: add an unattend file to automate the installation process. For more information, see [Automate Windows Setup](windows-setup-automation-overview.md).
 
 ### Step 3 - Install Windows to the new PC
 
@@ -57,6 +56,20 @@ This topic covers how to create a bootable Windows installation USB drive from a
     Windows Setup starts. Follow the instructions to install Windows.
 
 3.  Remove the USB flash drive.
+
+### Troubleshooting: file copy fails
+
+This can happen when the Windows image file is over the FAT32 file size limit of 4GB. When this happens:
+
+1. Copy everything except the Windows image file (sources\install.wim) to the USB drive (either drag and drop, or use this command, where D: is the mounted ISO and E: is the USB flash drive.)
+   ```
+   robocopy D: E: /s /max:38000000000
+   ```
+
+2. Split the Windows image file into smaller files, and put the smaller files onto the USB drive:
+   ```
+   Dism /Split-Image /ImageFile:D:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800
+   ```
 
 ## <span id="related_topics"></span>Related topics
 
