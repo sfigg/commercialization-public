@@ -76,7 +76,7 @@ Here is how you set the size of the start menu, using LayoutModification.xml.
 > [!Important]
 > Setting `FullScreenStart` to true requires rebooting the device to take effect.
 
-## Add tiles to the Start menu
+## OEM groups in the Start menu
 
 You can pin tiles in two OEM groups. These groups can either be set such that all tile groups are 3 medium tiles wide or so that all tile groups are 4 medium tiles wide. When this setting is changed to 4 medium tiles wide then group one is 3 high by 4 wide and group two is 2 high by 4 wide.
 
@@ -107,10 +107,61 @@ For example, here is a Start layout with the row and column grid overlaid.
 
 ![Start layout grid](images/start-layout.png)
 
+<!--- Taking this out for now, as this is not quite accurate and will be changing in RS4.
 > [!Note]
 > To ensure that customers know that their new Windows-based device comes ready for them to use and enjoy Office, the Windows Start menu retains the **Get Office** tile when you install Office as part of the OS image. The **Get Office** app is aware that Office is installed, and provides additional information and links for Mobile installs and OneDrive. Small tiles for Word, PowerPoint, Excel, and OneNote appear in a medium tile collection next to the **Get Office** app tile in the Microsoft group of the Start menu.
 >
 > When customers open one of the OEM-installed Office apps like Word, they get a **Try, Buy, or Activate** dialog. They can dismiss the dialog and still use the app for up to 5 days. They can hit **Try** and get a 30-day trial.
+--->
+
+## Add tiles that launch apps or weblinks
+
+You can configure each of your tiles to launch:
+
+* A Universal Windows app (using `start:Tile` in `LayoutModification.xml`)
+* A Windows 8 or 8.1 app (using `start:Tile` in `LayoutModification.xml`)
+* Desktop applications (using `start:DesktopApplicationTile` in `LayoutModification.xml`)
+* A weblink that opens in the default browser (using `start:DesktopApplicationTile` in `LayoutModification.xml`)
+* A weblink that opens in Edge (using `start:SecondaryTile` in `LayoutModification.xml`)
+
+### Add app tiles
+
+You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associates with the app. The AUMID is case-sensitive.
+
+The following example shows how to pin the Microsoft Edge Universal Windows app:
+
+```XML
+<start:Tile
+  AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+  Size="2x2"
+  Row="0"
+  Column="0"/>
+```
+
+You can use the start:DesktopApplicationTile tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application:
+
+* By setting `DesktopApplicationLinkPath` to a path to a shortcut link (.lnk file) to a Windows desktop application.
+* By setting the `DesktopApplicationID` to the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
+
+The following example shows how to pin the Command Prompt desktop application using the .lnk method:
+
+```XML
+<start:DesktopApplicationTile
+  DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk"
+  Size="2x2"
+  Row="0"
+  Column="4"/>
+````
+
+The following example show how to pin the File Explorer Windows desktop application by specifying the desktop application user model ID:
+
+```XML
+<start:DesktopApplicationTile
+  DesktopApplicationID="Microsoft.Windows.Explorer"
+  Size="2x2"
+  Row="0"
+  Column="2"/>
+```
 
 ### Add weblink tiles
 
@@ -118,7 +169,7 @@ You can add a web link tile that will open in the default browser, or you can ad
 To create a web link tile that will open in the default browser, create a .url file:
 
 1. Right click on Desktop > New > Shortcut
-1. Type a URL such as http://www.fabrikam.com\t7y
+1. Type a URL such as http://www.fabrikam.com/t7y
 1. Click Next
 1. Type a name for the shortcut such as Fabrikam and click Finish. The .url file is saved to your desktop.
 1. Add the .url file to the image in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\` folder , and then add a `DesktopApplicationTile` element to `LayoutModification.xml`:
@@ -133,6 +184,23 @@ To create a web link tile that will open in the default browser, create a .url f
    ```
 
 To create a secondary tile (a web link tile that will open in Microsoft Edge), add a `SecondaryTile` element to `LayoutModification.xml` and specify Edge in the `AppUserModelID` attribute.
+
+```XML
+<!-- Web link tile that launches in Edge -->
+<start:SecondaryTile
+  AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+  TileID="MyWeblinkTile"
+  Arguments="http://msn.com"
+  DisplayName="MySite"
+  Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
+  Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
+  ShowNameOnSquare150x150Logo="true"
+  ShowNameOnWide310x150Logo="false"
+  BackgroundColor="#FF112233"
+  Size="2x2"
+  Row="0"
+  Column="4"/>
+```
 
 > [!Note]
 > The actual Edge tile cannot be customized. The icon, text and the page that it launches must remain the default.
@@ -166,7 +234,7 @@ The downloads start or resume after the network connects.
 
 ## Add an Office suite or Office download tile to Start
 
-`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group).)
+`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group).
 
 > [!Note]
 > These two options are mutually exclusive; adding both is not supported.
@@ -192,7 +260,7 @@ If you want to append the full Office 2016 suite to Start, add the `<AppendOffic
 </LayoutModificationTemplate>
 ```
 
-If you want to append Download Office tile, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces "Get Office" with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Preinstall PC (PIPC).
+If you want to append the "Download Office" tile, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces "Get Office" with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Preinstall PC (PIPC).
 
 ```XML
 <LayoutModificationTemplate xmlns=http://schemas.microsoft.com/Start/2014/LayoutModification xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1">
@@ -200,9 +268,9 @@ If you want to append Download Office tile, add the `<AppendDownloadOfficeTile/>
 </LayoutModificationTemplate>
 ```
 
-### First run tasks
+## First run tasks
 
-First Run Tasks are background tasks that are active when the user first signs into Windows. FirstRunTask is not available in `LayoutModification.xml`. However, you can still use it by including an Unattend.xml file with [StartTiles](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-starttiles) tags using the same AppID as in `LayoutModification.xml`.
+First Run Tasks are background tasks that are active when the user first signs into Windows. First Run Tasks are not available in `LayoutModification.xml`. However, you can still use them by including an Unattend.xml file with [StartTiles](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-starttiles) tags using the same AppID as in `LayoutModification.xml`.
 
 If the `AppendGroup` tag is present in `LayoutModification.xml`, it will override Unattend.xml for all Start pinning. However, if an Unattend.xml [StartTiles](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-starttiles) tag exists for the same AppID as in LayoutModification.xml, the FirstRunTask from Unattend.xml will be respected.
 
