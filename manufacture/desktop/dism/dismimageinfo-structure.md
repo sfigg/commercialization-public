@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismImageInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismImageInfo structure
@@ -18,7 +26,7 @@ Describes the metadata of an image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismImageInfo {
   DismImageType     ImageType;
   UINT              ImageIndex;
