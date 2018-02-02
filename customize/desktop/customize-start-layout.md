@@ -19,7 +19,7 @@ You are able to customize the Start layout by:
 * Changing the size of the Start menu
 * Adding new apps and weblinks as tiles to the Start menu
 * Specifying the size and position of the new tiles
-* Specify Start layouts for each region you support
+* Specifying Start layouts for each region you support
 
 After customizing the Start layout, use Windows Configuration Designer to add the file to the device image. See [Add the LayoutModification.xml file to the device](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#add-the-layoutmodificationxml-file-to-the-device) for instructions.
 
@@ -98,7 +98,7 @@ You can configure your Start menu to show either 6 or 8 medium tiles per row usi
 
 You can pin tiles in two OEM groups. OEM groups are added at the bottom, right corner of the Start menu. The first, bigger OEM group displays the first two rows by default, with only the titles of the tiles on the third row displaying. The second, smaller OEM group displays only the titles of the top row.
 
-If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium tiles wide. If you have `StartTileGroupCellWidth` set to 8, the OEM groups will be 4 medium tiles wide. In this case, OEM group one is 3 tiles high by 4 wide, and OEM group two is 2 high by 4 wide.
+If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium tiles wide by 3 high. If you have `StartTileGroupCellWidth` set to 8, the OEM groups will be 4 medium tiles wide. OEM group one is 3 tiles high by 4 wide, and OEM group two is 2 high by 4 wide.
 
 You will not be able to manipulate or otherwise change the Microsoft groups and tiles within them. To determine the overall look of the Start menu, the default layout is applied based on SKU and region, and then the `LayoutModification.xml` or `Unattend.xml` file is processed.
 
@@ -110,7 +110,7 @@ In the example above, `StartTileGroupCellWidth` is set to 6, and `StartTileGroup
 
 ## Customize the size and position of your tiles
 
-The `LayoutModification.xml` file allows four tile size options and the ability to pin websites as tiles. The available tile sizes are:
+The `LayoutModification.xml` file allows four tile size options for each tile you add to your OEM groups. The available tile sizes are:
 
 * Small tile: 1x1
 * Medium square tile: 2x2
@@ -134,18 +134,18 @@ For example, here is a Start layout with the row and column grid overlaid.
 
 You can configure each of your tiles to launch:
 
-* A Universal Windows app (using `start:Tile` in `LayoutModification.xml`)
-* A Windows 8 or 8.1 app (using `start:Tile` in `LayoutModification.xml`)
-* Desktop applications (using `start:DesktopApplicationTile` in `LayoutModification.xml`)
-* A weblink that opens in the default browser (using `start:DesktopApplicationTile` in `LayoutModification.xml`)
-* A weblink that opens in Edge (using `start:SecondaryTile` in `LayoutModification.xml`)
+* A Universal Windows app (using the `start:Tile` tag)
+* A Windows 8 or 8.1 app (using the `start:Tile` tag)
+* Desktop applications (using the `start:DesktopApplicationTile` tag)
+* A weblink that opens in the default browser (using the `start:DesktopApplicationTile` tag)
+* A weblink that opens in Edge (using the `start:SecondaryTile` tag)
 
 > [!Note]
 > Each tile pinned to the Start menu can launch a single UWP app, Microsoft Store app, desktop app, or weblink. A tile can’t be a group of apps or a folder.
 
-### Add app tiles
+### App tiles
 
-You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associates with the app. The AUMID is case-sensitive.
+You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associated with the app. The AUMID is case-sensitive.
 
 > [!Important]
 > Universal apps or Store apps must be pinned to the Start menu to be pre-installed on the device, otherwise they will be removed on any system that uses that layout. Desktop apps do not have to be pinned to the Start menu to be pre-installed on the device.
@@ -160,10 +160,10 @@ The following example shows how to pin the Microsoft Edge Universal Windows app:
   Column="0"/>
 ```
 
-You can use the start:DesktopApplicationTile tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application:
+You can use the `start:DesktopApplicationTile` tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application:
 
 * By setting `DesktopApplicationLinkPath` to a path to a shortcut link (.lnk file) to a Windows desktop application.
-* By setting the `DesktopApplicationID` to the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
+* By setting the `DesktopApplicationID` to the application's ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
 The following example shows how to pin the Command Prompt desktop application using the .lnk method:
 
@@ -175,7 +175,7 @@ The following example shows how to pin the Command Prompt desktop application us
   Column="4"/>
 ````
 
-The following example show how to pin the File Explorer Windows desktop application by specifying the desktop application user model ID:
+The following example show how to pin the File Explorer Windows desktop application by specifying the desktop application ID:
 
 ```XML
 <start:DesktopApplicationTile
@@ -185,7 +185,7 @@ The following example show how to pin the File Explorer Windows desktop applicat
   Column="2"/>
 ```
 
-### Add weblink tiles
+### Weblink tiles
 
 You can add a web link tile that will open in the default browser, or you can add a *secondary tile* that will specifically open in Microsoft Edge.
 To create a web link tile that will open in the default browser, create a .url file:
@@ -256,10 +256,7 @@ The downloads start or resume after the network connects.
 
 ## Add an Office suite or Office download tile to Start
 
-`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group). These two options are mutually exclusive; adding both is not supported.
-
-> [!Note]
-> Office must be pre-installed to the device to add the tiles to Start.
+`LayoutModification.xml` supports adding either the in-box pre-installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group). These two options are mutually exclusive; adding both is not supported.
 
 If you want to append the Office Mobile Suite of tiles that point to the office mobile download, add the `<AppendOfficeSuite/>` tag to your `LayoutModification.xml` file.to your `LayoutModification.xml` file. This replaces "Get Office" with the pre-installed Universal apps.
 
