@@ -39,6 +39,10 @@ For an inclusive list of settings you can configure in `LayoutModification.xml`,
 
 We recommend that you set the default Start menu so it is not greater than 40% of the size of the desktop. If it is greater than half the width of the desktop, customers might perceive that the device and Windows are optimized only for touch, and feel less satisfied when they use a mouse and keyboard.
 
+Use `LayoutOptions` in `LayoutModification.xml` to indicate the number of columns, and the number of tiles per row, in the Start menu.
+
+### Specify the number of columns in the Start menu
+
 You have three options for the Start menu size: **small** (one column of tiles), **medium** (2 columns of tiles), or **full screen**. New devices running Windows for desktop will default to a Start menu with two columns of tiles unless boot to tablet mode is enabled. Devices with screens that are under 10" have boot to tablet mode enabled by default. For these devices, users see the **full screen** Start menu on the desktop.
 
 > [!Note]
@@ -76,21 +80,33 @@ Here is how you set the size of the start menu, using LayoutModification.xml.
 > [!Important]
 > Setting `FullScreenStart` to true requires rebooting the device to take effect.
 
+### Specify the number of tiles per row in the Start menu
+
+You can configure your Start menu to show either 6 or 8 medium tiles per row using `StartTileGroupCellWidth` in LayoutModification.xml.
+
+```XML
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    Version="1">
+    <LayoutOptions StartTileGroupCellWidth="8" />
+</LayoutModificationTemplate>
+```
+
 ## OEM groups in the Start menu
 
-You can pin tiles in two OEM groups. These groups can either be set such that all tile groups are 3 medium tiles wide or so that all tile groups are 4 medium tiles wide. When this setting is changed to 4 medium tiles wide then group one is 3 high by 4 wide and group two is 2 high by 4 wide.
+You can pin tiles in two OEM groups. OEM groups are added at the bottom, right corner of the Start menu. The first, bigger OEM group displays the first two rows by default, with only the titles of the tiles on the third row displaying. The second, smaller OEM group displays only the titles of the top row.
 
-> [!Note]
-> Each tile pinned to the Start menu can launch a single UWP app, Microsoft Store app, desktop app, or weblink. A tile can’t be a group of apps or a folder.
+If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium tiles wide. If you have `StartTileGroupCellWidth` set to 8, the OEM groups will be 4 medium tiles wide. In this case, OEM group one is 3 tiles high by 4 wide, and OEM group two is 2 high by 4 wide.
 
-OEM groups are added at the bottom, right corner of the Start menu; you will not be able to manipulate or otherwise change the Microsoft groups and tiles within them. The default layout is applied based on SKU and region and then the `LayoutModification.xml` or `Unattend.xml` file is processed. The first, bigger OEM group displays the first two rows by default, with only the titles of the tiles on the third row displaying. The second, smaller OEM group displays only the titles of the top row.
+You will not be able to manipulate or otherwise change the Microsoft groups and tiles within them. To determine the overall look of the Start menu, the default layout is applied based on SKU and region, and then the `LayoutModification.xml` or `Unattend.xml` file is processed.
 
-Here is an example that shows how the OEM groups are displayed in Start.
+Here is an example that shows where the two OEM groups appear in Start:
 
 ![Start layout with 2 OEM groups](images/start-layout-oem-groups.png)
 
-> [!Important]
-> Universal apps or Store apps must be pinned to the Start menu to be pre-installed on the device, otherwise they will be removed on any system that uses that layout. Desktop apps do not have to be pinned to the Start menu to be pre-installed on the device.
+In the example above, `StartTileGroupCellWidth` is set to 6, and `StartTileGroupsColumnCount` is set to 2. Subsequently, the Start layout shows 2 columns of tiles, and each row is 6 medium tiles long.
 
 ## Customize the size and position of your tiles
 
@@ -124,9 +140,15 @@ You can configure each of your tiles to launch:
 * A weblink that opens in the default browser (using `start:DesktopApplicationTile` in `LayoutModification.xml`)
 * A weblink that opens in Edge (using `start:SecondaryTile` in `LayoutModification.xml`)
 
+> [!Note]
+> Each tile pinned to the Start menu can launch a single UWP app, Microsoft Store app, desktop app, or weblink. A tile can’t be a group of apps or a folder.
+
 ### Add app tiles
 
 You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associates with the app. The AUMID is case-sensitive.
+
+> [!Important]
+> Universal apps or Store apps must be pinned to the Start menu to be pre-installed on the device, otherwise they will be removed on any system that uses that layout. Desktop apps do not have to be pinned to the Start menu to be pre-installed on the device.
 
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
@@ -169,7 +191,7 @@ You can add a web link tile that will open in the default browser, or you can ad
 To create a web link tile that will open in the default browser, create a .url file:
 
 1. Right click on Desktop > New > Shortcut
-1. Type a URL such as http://www.fabrikam.com/t7y
+1. Type a URL such as http://www.fabrikam.com
 1. Click Next
 1. Type a name for the shortcut such as Fabrikam and click Finish. The .url file is saved to your desktop.
 1. Add the .url file to the image in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\` folder , and then add a `DesktopApplicationTile` element to `LayoutModification.xml`:
@@ -234,12 +256,12 @@ The downloads start or resume after the network connects.
 
 ## Add an Office suite or Office download tile to Start
 
-`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group).
+`LayoutModification.xml` supports adding either the in-box installed Office suite to Start (Word, Excel, PowerPoint), or adding a "Download Office" tile to a specific location in Start (the bottom right of the second group). These two options are mutually exclusive; adding both is not supported.
 
 > [!Note]
-> These two options are mutually exclusive; adding both is not supported.
+> Office must be pre-installed to the device to add the tiles to Start.
 
-If you want to append the Office Mobile Suite of tiles that point to the office mobile download, add the `<AppendOfficeSuite/>` tag to your `LayoutModification.xml` file. This replaces "Get Office" with the pre-installed Universal apps.
+If you want to append the Office Mobile Suite of tiles that point to the office mobile download, add the `<AppendOfficeSuite/>` tag to your `LayoutModification.xml` file.to your `LayoutModification.xml` file. This replaces "Get Office" with the pre-installed Universal apps.
 
 ```XML
 <LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1">
