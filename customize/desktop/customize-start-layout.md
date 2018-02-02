@@ -306,8 +306,8 @@ Also include an Unattend.xml file specifying the same AppID like this:
 
 ```XML
 <SquareOrDesktopTile5>
-<AppId>Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge</AppId>
-<FirstRunTask>BackgroundTasks_Notifications.Services.MessagingBackgroundTask</FirstRunTask>
+    <AppId>Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge</AppId>
+    <FirstRunTask>BackgroundTasks_Notifications.Services.MessagingBackgroundTask</FirstRunTask>
 </SquareOrDesktopTile5>
 ```
 
