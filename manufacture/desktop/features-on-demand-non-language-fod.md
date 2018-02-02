@@ -87,7 +87,7 @@ This Feature on Demand enables Mixed Reality (MR) devices to be used on a PC. If
 **Recommendation:** Recommended for MR-Ready badged PCs, otherwise do not preinstall. 
 
 > [!NOTE]
-> The Mixed Reality Feature on Demand has a large installation size, and also requires installing an additional data assets package, if an updated asset package is available. Updates to the FOD are available via regular Windows LCUs, but updates to the data assets package are available as separate downloads via the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com). 
+> The Mixed Reality Feature on Demand has a large installation size, and also requires installing an additional data assets package, if an updated asset package is available. Updates to the FOD are available via regular Windows LCUs, but the data assets package is available as a separate download via the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com). 
 
 
 | Name | Capability Name  | Install size |
