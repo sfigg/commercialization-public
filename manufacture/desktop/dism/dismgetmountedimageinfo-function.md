@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetMountedImageInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetMountedImageInfo function
@@ -20,7 +28,7 @@ Returns an array of [DismMountedImageInfo](dismmountedimageinfo-structure.md) st
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetMountedImageInfo(
   _Out_ DismMountedImageInfo **MountedImageInfo,
   _Out_ UINT                 *Count

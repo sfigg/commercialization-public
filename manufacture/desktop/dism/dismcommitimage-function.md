@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCommitImage
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismCommitImage function
@@ -20,7 +28,7 @@ Commits the changes made to a Windows® image in a mounted .wim or .vhd file. Th
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismCommitImage(
   _In_     DismSession            Session,
   _In_     DWORD                  Flags,
@@ -68,7 +76,7 @@ The **DismCommitImage** function does not unmount the image.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismCommitImage(Session, 0, NULL, NULL, NULL);
 ```

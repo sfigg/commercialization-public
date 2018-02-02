@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismEnableFeature
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismEnableFeature function
@@ -20,7 +28,7 @@ Enables a feature in an image. Features are identified by a name and can optiona
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismEnableFeature(
   _In_     DismSession            Session,
   _In_     PCWSTR                 FeatureName,
@@ -139,7 +147,7 @@ If the feature is present in the foundation package, you do not have to specify 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismEnableFeature(Session, “WindowsMediaPlayer”, NULL, PackageNone, TRUE, NULL, 0, FALSE, NULL, NULL, NULL);
 ```

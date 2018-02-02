@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismDriverSignature
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismDriverSignature enumeration
@@ -18,7 +26,7 @@ Specifies the signature status of a driver.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef enum DismDriverSignature { 
   DismDriverSignatureUnknown   = 0,
   DismDriverSignatureUnsigned  = 1,

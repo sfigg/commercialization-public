@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetDriverInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetDriverInfo function
@@ -20,7 +28,7 @@ Gets information about an .inf file in a specified image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetDriverInfo(
   _In_      DismSession       Session,
   _In_      PCWSTR            DriverPath,
@@ -61,7 +69,7 @@ This function returns information about the .inf file installed on the image. Th
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismDriverInfo* DriverInfo;
 UINT Count;

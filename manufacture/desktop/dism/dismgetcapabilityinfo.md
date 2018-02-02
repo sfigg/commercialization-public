@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetCapabilityInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetCapabilityInfo function
@@ -20,7 +28,7 @@ Gets DISM capabilities.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetCapabilityInfo(
   _In_ DismSession          Session,
   _In_ PCWSTR               Name,
@@ -51,7 +59,7 @@ Returns `S_OK` on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismCapabilityInfo* CapabilityInfo;
 

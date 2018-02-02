@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetLastErrorMessage
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetLastErrorMessage function
@@ -20,7 +28,7 @@ Gets the error message in the current thread, immediately after a failure.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetLastErrorMessage(
   _Out_ DismString **ErrorMessage
 );
