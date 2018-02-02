@@ -114,7 +114,7 @@ For example, here is a Start layout with the row and column grid overlaid.
 > When customers open one of the OEM-installed Office apps like Word, they get a **Try, Buy, or Activate** dialog. They can dismiss the dialog and still use the app for up to 5 days. They can hit **Try** and get a 30-day trial.
 --->
 
-## Add tiles that launch apps or weblinks
+## Add tiles that launch apps and weblinks
 
 You can configure each of your tiles to launch:
 
