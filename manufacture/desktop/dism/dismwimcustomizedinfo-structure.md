@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismWimCustomizedInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismWimCustomizedInfo Structure
@@ -17,7 +25,7 @@ Describes a Windows Imaging Format (WIM) file.
 
 ## Syntax
 
-```ManagedCPlusPlus
+```
 typedef struct _DismWimCustomizedInfo
 {
     UINT Size;

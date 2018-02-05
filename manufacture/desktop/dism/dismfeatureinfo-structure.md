@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismFeatureInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismFeatureInfo structure
@@ -18,7 +26,7 @@ Describes advanced feature information, such as installed state and whether a re
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismFeatureInfo {
   PCWSTR                  FeatureName;
   DismPackageFeatureState FeatureState;

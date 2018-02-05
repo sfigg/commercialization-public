@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismRemountImage
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismRemountImage function
@@ -22,7 +30,7 @@ You can use the **DismRemountImage** function when the image is in the **DismMou
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismRemountImage(
   _In_ PCWSTR MountPath
 );
@@ -42,7 +50,7 @@ A relative or absolute path to the mount directory of the image.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 DismSession* Session = NULL; 
 hr = DismRemountImage(L"C:\\Mount\\");

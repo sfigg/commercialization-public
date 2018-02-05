@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismPackageInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismPackageInfo structure
@@ -18,7 +26,7 @@ Describes detailed package information such as the client used to install the pa
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismPackageInfo {
   PCWSTR                          PackageName;
   DismPackageFeatureState         PackageState;

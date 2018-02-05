@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismFeature
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismFeature structure
@@ -18,7 +26,7 @@ Describes basic information about a feature, such as the feature name and featur
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismFeature {
   PCWSTR                  FeatureName;
   DismPackageFeatureState State;

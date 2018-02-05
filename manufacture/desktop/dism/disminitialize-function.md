@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismInitialize
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismInitialize function
@@ -20,7 +28,7 @@ Initializes DISM API. **DismInitialize** must be called once per process, before
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismInitialize(
   _In_     DismLogLevel LogLevel,
   _In_opt_ PCWSTR       LogFilePath,
