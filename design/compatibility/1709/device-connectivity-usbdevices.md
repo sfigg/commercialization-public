@@ -566,9 +566,9 @@ USB devices must pass USB Implementers Forum (IF) tests or be USB-IF certified.
 
 USB-C PD-capable devices, hubs, and chargers must implement version 1.1 of the USB Type-C spec or higher and revision 2.0 v1.1 of the PD spec or higher, and must use PD silicon that is certified according to the USB-IF’s USB-C product testing matrix.
 
-For more information, see the white paper on Windows Logo Kit USB-IF Testing:
+For more information, see the "USB-IF Certification Tests" page on Windows Hardware Certification Program:
 
--   <http://www.microsoft.com/whdc/connect/usb/wlk-usb-if-testing.mspx>
+-   <https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-if-certification-tests>
 
 ### Device.Connectivity.UsbDevices.USBC.USBTypeCAltModeCertification
 

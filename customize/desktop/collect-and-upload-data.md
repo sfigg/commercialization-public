@@ -1,5 +1,5 @@
 ---
-title: Collect and upload data
+title: Collect user data
 description: Collect encrypted user data and upload it to your server.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Collect and upload data
+# Collect user data
 
 Create and preinstall a Microsoft Store app, or write a service to run after first sign-in, to:
 

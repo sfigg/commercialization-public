@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismRemovePackage
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismRemovePackage function
@@ -20,7 +28,7 @@ Removes a package from an image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismRemovePackage(
   _In_     DismSession            Session,
   _In_     PCWSTR                 Identifier,
@@ -97,7 +105,7 @@ The **DismRemovePackage** function does not support .msu files.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismRemovePackage(Session, "C:\\packages\\test.CAB", PackagePath, NULL, NULL, NULL);
 ```

@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetFeatures
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetFeatures function
@@ -20,7 +28,7 @@ Gets all the features in an image, regardless of whether the features are enable
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetFeatures(
   _In_     DismSession           Session,
   _In_opt_ PCWSTR                Identifier,
@@ -88,7 +96,7 @@ Returns **S\_OK** on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismFeature* Feature;
 UINT FeatureCount;

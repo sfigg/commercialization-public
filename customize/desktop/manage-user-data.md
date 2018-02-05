@@ -1,33 +1,48 @@
 ---
-title: Manage user data
+title: Protect and collect user data
 description: Generate a public/private key pair for customer data encryption and decryption.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 09/27/2017
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Manage user data
+# Protect and collect user data
 
-If a customer fills out the registration pages and clicks Next to submit the data, Windows writes and encrypts the text data to the `\OOBE\Info` folder in a **Userdata.blob** file and stores the check box values in the Checkbox.xml file at the same location. In addition to the customer-provided info, Windows writes the `<label>` values from your Oobe.xml file to the same location.
+If a customer enters information into the OEM registration pages, the following files are created when they complete OOBE:
 
-To protect customer data, you must generate a public/private key pair, and the public key must be placed in the `\OOBE\Info` folder. If you’re deploying images to multiple regions or in multiple languages, you should put the public key directly under region and language-specific subdirectories, following the same rules as you would for region or language-specific Oobe.xml files as described in [How Oobe.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
+* **Userdata.blob**. An encrypted XML file that contains all the values in all user-configurable elements on the registration pages, including customer information fields and checkbox states.
+* **SessionKey.blob**. Generated during encryption of Userdata.blob. Contains a session key needed for the decryption process.
+* **Userchoices.xml**. An un-encrypted XML file that contains the checkbox labels and values for all checkboxes included on the registration pages.
 
-Considerations:
+> [!Note]
+> If a customer clicks `Skip` on the first registration page, no data is written or stored to these files, not even the checkbox default states.
 
-* Comments from your Oobe.xml files aren't written to this location. If the customer clicks Skip, no data is written or stored, not even check boxes selected by default.
-* If a customer fills out part of the form, all available data is captured and written to `\OOBE\Info` when they click Next.
-* Only the state of the check box when the user clicks Next is recorded. No indication of whether that value is or isn't the default value is captured.
+The timestamp of the user's out of box experience is also added to the Windows registry under this key:
+
+`HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats [EndTimeStamp]`
+
+This registry value is created regardless of whether the registration pages are included in OOBE. The timestamp is written in UTC (Coordinated Universal Time) format; specifically, it is a `SYSTEMTIME` value written as a serialized blob of data to the registry.
+
+In order for you to access and use the customer information, take the following steps:
+
+1. [Generate a public/private key pair](#generate-a-publicprivate-key-pair), and place the public key in the `%systemroot%\system32\Oobe\Info` folder of the image.
+1. [Collect the encrypted customer data](#collect-encrypted-customer-data) using an app or a service that runs roughly 30 minutes after the first logon completes.
+1. [Send the data to your server for decryption](#send-data-to-your-server-for-decryption) using SSL. You can then decrypt the session key to decrypt the customer data.
+
+## Generate a public/private key pair
+
+To protect customer data, you must generate a public/private key pair, and the public key must be placed in the `%systemroot%\system32\Oobe\Info` folder. If you’re deploying images to multiple regions or in multiple languages, you should put the public key directly under region and language-specific subdirectories, following the same rules as you would for region or language-specific Oobe.xml files as described in [How Oobe.xml works](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/how-oobexml-works).
 
 > [!Important]
-> You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `\OOBE\Info` folder. Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
+> You must never place the private key on the customer's PC. Instead, it should be stored securely on your servers so the data can be decrypted after it's uploaded. If a customer clicks Next on the Registration pages, Windows uses the public key to create Sessionkey.blob in the `%systemroot%\system32\Oobe\Info` folder. Your service or Microsoft Store app should upload the data to your server by using SSL. You then need to decrypt the session key to decrypt the customer data.
 
-If there’s no public key in the `\OOBE\Info` folder, the registration pages aren’t shown.
+If there’s no public key in the `%systemroot%\system32\Oobe\Info` folder, the registration pages aren’t shown.
 
-## Generate public and private keys
+### Generate public and private keys
 
 Make this sequence of calls to generate the public and private keys.
 
@@ -161,7 +176,24 @@ HRESULT WriteByteArrayToFile(_In_ PCWSTR pszPath, _In_reads_bytes_(cbData) BYTE 
 }
 ```
 
-## Decrypt the data
+## Collect encrypted customer data
+
+Create and preinstall a Microsoft Store app, or write a service to run after first sign-in, to:
+
+1. Collect the encrypted customer data, including the user name from the [Windows.System.User namespace](https://docs.microsoft.com/en-us/uwp/api/windows.system.user), as well as the local time stamp of first sign-in.
+1. Upload that data set to your server for decryption and use.
+
+To use a Microsoft Store app to collect the data, assign its Application User Model ID (AUMID) to the [Microsoft-Windows-Shell-Setup | OOBE | OEMAppId](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid) Unattend setting. Windows will pass the timestamp, user data, session key, and checkbox state data to the application data folder for the OEM app, that is associated with the first user to logon to the device. For example, `%localappdata%\packages\[OEM app package family name]\LocalState` for that user.
+
+If you create and run a service to upload the data, you should set the service to run at least 30 minutes after the user gets to the Start screen, and only run the service once. Setting your service to run at this time ensures that your service won't consume system resources in the background while users are getting their first chance to explore the Start screen and their apps. The service must gather the data from within the OOBE directory, as well as the time stamp and user name, as applicable. The service should also determine what actions to take in response to the user's choices. For example, if the user opted in to an anti-malware app trial, your service should start the trial rather than rely on the anti-malware app to decide if it should run. Or, as another example, if your user opted in to emails from your company or partner companies, your service should communicate that info to whomever handles your marketing emails.
+
+For more info about how to write a service, see [Developing Windows Service Applications](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/index).
+
+## Send data to your server for decryption
+
+Your service or Microsoft Store app should upload the data to your server using SSL. You then need to decrypt the session key to decrypt the customer data.
+
+### Decrypt the data
 
 Make this sequence of calls to decrypt the data:
 

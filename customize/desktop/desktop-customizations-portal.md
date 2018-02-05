@@ -16,12 +16,15 @@ You have the following options to customize your image. Depending on which optio
 | Taskbar                             | subset                               | TaskbarLayoutModification.xml                 |
 | Start layout                        | subset                               | LayoutModification.xml                        |
 | Out of Box Experience (OOBE)        | subset                               | OOBE.xml                                      |
-| Darkmode                            | yes                                  | n/a                                           |
-| Get Help app                        | yes                                  | n/a                                           |
-| Colors                              | yes                                  | n/a                                           |
+| Darkmode                            | yes                                  | Unattend.xml                                  |
+| Get Help app                        | yes                                  | Unattend.xml                                  |
+| Colors                              | yes                                  | Unattend.xml                                  |
 <!--
 | Pen & Windows Ink Workspace         | subset                               | InkWorkspaceModification.xml                  |
 -->
+
+>[!Note]
+> All desktop customization options listed above are supported in Windows 10 S. To learn more, see [Windows 10 S Manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## In this section
 
@@ -35,12 +38,14 @@ These are some common ways to customize your desktop device. You will also find 
 | [Customize the Windows power slider](customize-power-slider.md) | The Windows Performance Power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. You can set the default slider mode for both AC and DC, and configure the power settings and PPM options that are engaged in each power slider mode. |
 | [Set dark mode](set-dark-mode.md)                       | This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode. You can set the dark mode as the default for apps using Unattend.    |
 | [Customize the Get Help app](customize-get-help-app.md) | The Get Help app empowers customers to self-help with troubleshooters, instant answers, Microsoft support articles, and more, before contacting assisted support. You can customize the Get Help app to surface your support app or support website.                      |
-| [Customize a Specific Absorption Rate mapping table](customize-sar-mapping-table.md) | You can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configure the modem with it.                               |
+| [Customize a Specific Absorption Rate mapping table](customize-sar-mapping-table.md) | You can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configures the modem with it.                               |
 | [Windows SIM Technical Reference](wsim/windows-system-image-manager-technical-reference.md) | Settings reference for Windows System Image Manager.            |
 | [Unattended Windows Setup Reference](unattend/index.md) | Settings reference for Unattend.                                                              |
 
 ## Related topics
 
 [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions)
+
+[Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning)
 
 [Deployment options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-deployment-options)

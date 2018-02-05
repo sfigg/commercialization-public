@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetDrivers
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetDrivers function
@@ -20,7 +28,7 @@ Lists the drivers in an image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetDrivers(
   _In_  DismSession       Session,
   _In_  BOOL              AllDrivers,
@@ -71,7 +79,7 @@ Returns `S_OK` on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismDriver* DriverPackageInfos;
 UINT Count;

@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetPackages
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetPackages function
@@ -20,7 +28,7 @@ Lists each package in an image, providing basic information including the packag
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetPackages(
   _In_  DismSession Session,
   _Out_ DismPackage **Package,
@@ -53,7 +61,7 @@ Returns **S\_OK** on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT      hr      = S_OK;
 DismPackage* Package = NULL;
 UINT         Count   = 0;

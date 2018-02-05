@@ -41,14 +41,14 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
         ```
 
         >[!NOTE]
-        >FFUTool.exe is included in the Windows Assessment and Deployment Kit (ADK), and can be installed by selecting the Imaging and Configuration Designer option when installing the ADK. 
-        >
-        >For more information on the ADK, see [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+        >FFUTool.exe is included in the HLK at \\\\<ControllerName>\HLKInstall\ProxyClient\FfuTool.
+        >Copy the entire contents of this directory to your proxy server.
         >
         >For more information on HLK mobile testing tools and utilities, see [HLK Mobile Testing Tools and Utilities](../user/hlk-mobile-testing-tools-and-utilities.md)
-
-
-         
+        >
+        >FFUTool.exe can be also installed with the ADK, by selecting the Imaging and Configuration Designer option during kit installation. 
+        >For more information on the ADK, see [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+        >
 
 4.  Run the following command from the elevated command prompt to put the device into mass storage mode:
 

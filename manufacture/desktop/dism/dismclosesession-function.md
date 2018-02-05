@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCloseSession
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismCloseSession function
@@ -20,7 +28,7 @@ Closes a [DISMSession](dismsession.md) created by [**DismOpenSession**](dismopen
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismCloseSession(
   _In_ DismSession Session
 );
@@ -47,7 +55,7 @@ The [DISMSession](dismsession.md) will be shut down after this call is completed
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 DismSession session; 
 hr = DismOpenSession( DISM_ONLINE_IMAGE, NULL, NULL, &amp;session ); 

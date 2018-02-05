@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCheckImageHealth
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismCheckImageHealth function
@@ -18,7 +26,7 @@ Checks whether the image can be serviced or is corrupted.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI WINAPI DismCheckImageHealth(
   _In_     DismSession            Session,
   _In_     BOOL                   ScanImage,
@@ -82,7 +90,7 @@ If *ScanImage* is set to `True`, this function will take longer to finish.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismImageHealthState state;
 hr = DismCheckImageHealth(Session, TRUE, NULL, NULL, NULL, &amp;state);

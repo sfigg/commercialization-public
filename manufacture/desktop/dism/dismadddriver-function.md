@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismAddDriver
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismAddDriver function
@@ -20,7 +28,7 @@ Adds a third party driver (.inf) to an offline Windows® image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismAddDriver(
   _In_ DismSession Session,
   _In_ PCWSTR      DriverPath,

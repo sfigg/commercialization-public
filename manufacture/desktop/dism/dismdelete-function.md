@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismDelete
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismDelete function
@@ -20,7 +28,7 @@ Releases resources held by a structure or an array of structures returned by oth
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismDelete(
   _In_ VOID *DismStructure
 );
