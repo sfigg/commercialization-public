@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismDriver
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismDriver structure
@@ -18,7 +26,7 @@ Describes the architecture and hardware that the driver supports. The [**DismGet
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismDriver {
   PCWSTR ManufacturerName;
   PCWSTR HardwareDescription;

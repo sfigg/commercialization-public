@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismMountedImageInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismMountedImageInfo structure
@@ -18,7 +26,7 @@ Describes the metadata of a mounted image.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismMountedImageInfo {
   PCWSTR          MountPath;
   PCWSTR          ImageFilePath;

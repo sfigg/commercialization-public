@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismDriverPackage
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismDriverPackage structure
@@ -18,7 +26,7 @@ Contains basic information for the driver that is associated with the .inf file.
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismDriverPackage {
   PCWSTR              PublishedName;
   PCWSTR              OriginalFileName;

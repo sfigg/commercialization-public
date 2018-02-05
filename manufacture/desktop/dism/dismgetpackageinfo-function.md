@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismGetPackageInfo
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismGetPackageInfo function
@@ -20,7 +28,7 @@ Gets standard package properties as [**DismGetPackages**](dismgetpackages-functi
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismGetPackageInfo(
   _In_  DismSession           Session,
   _In_  PCWSTR                Identifier,
@@ -89,7 +97,7 @@ You can use this function to determine whether a package is applicable to the sp
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 DismPackageInfo PackageInfo;
 hr = DismGetPackageInfo(Session, "C:\packages\calc.cab", PackagePath, &amp;PackageInfo);
