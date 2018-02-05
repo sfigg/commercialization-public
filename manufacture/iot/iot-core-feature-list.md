@@ -62,11 +62,11 @@ When creating images for your device, determine which features are required for 
 
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **IOT\_SIREP**             | Enables SIREP service for TShell connectivity                                                                               |
-| **IOT\_SSH**               | Enables Secure Shell (SSH) connectivity                                                                                     |
-| **IOT\_TOOLKIT**           | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
-| **IOT\_WEBB\_EXTN**        | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
-| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607.                      |
+| **IOT\_SIREP**                  | Enables SIREP service for TShell connectivity                                                                               |
+| **IOT\_SSH**                    | Enables Secure Shell (SSH) connectivity                                                                                     |
+| **IOT\_TOOLKIT**                | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
+| **IOT\_WEBB\_EXTN**             | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
+| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607. Note: Remote Display is prerelease software intended for development and training purposes only.                      |
 | **IOT\_CORTANA**                | Adds Cortana feature. Requires **IOT\_APPLICATIONS** feature. This is new in Windows 10, version 1703.       |
 | **IOT\_CORTANA\_OBSCURELAUNCH** | Enables running Cortana application on boot. This add-on causes Cortana to run in the background resulting in better response time for Cortana. This is new in Windows 10, version 1703. |
 | **IOT\_BERTHA**                 | Adds a sample app: "Bertha". This app provides basic version info and connectivity status.             |
