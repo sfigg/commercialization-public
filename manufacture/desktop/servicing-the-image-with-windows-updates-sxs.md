@@ -82,7 +82,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 3.  Lock in the updates, so that they are restored during a recovery. 
 
     ```
-    DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
+    DISM /Cleanup-Image /Image=C:\mount\windows /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
 
 ## <span id="Unmount_the_image"></span>Unmount the image
