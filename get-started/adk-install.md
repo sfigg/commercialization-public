@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need to customize Windows images for large-scale deployment, and to test the quality and performance of your system, its added components, and the applications running on it. The latest version of this kit is available for download below.
 
-Windows Insiders can also get [get the Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK).
+Windows Insiders can also [get the Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK).
 
 By default, the ADK is installed using an online installer and GUI. If you have a scenario where you cannot use the online ADK installer with GUI, see [Install the ADK offline](adk-offline-install.md).
 
