@@ -14,11 +14,11 @@ ms.technology: windows-oem
 # Use DISM in Windows PowerShell
 
 
-The Deployment Image Servicing and Management (DISM) cmdlets can be used to perform the same functions as the DISM.exe command-line tool. In many cases, the DISM cmdlet names correspond directly to [Dism.exe options](deployment-image-servicing-and-management--dism--command-line-options.md) and the same arguments can be used. See [DISM Powershell](https://docs.microsoft.com/powershell/module/dism/?view=win10-ps) for detailed information about the Powershell cmdlets.   
+The Deployment Image Servicing and Management (DISM) cmdlets can be used to perform the same functions as the DISM.exe command-line tool. In many cases, the DISM cmdlet names are similar to their corresponding [Dism.exe options](deployment-image-servicing-and-management--dism--command-line-options.md) and the same arguments can be used. See [DISM Powershell](https://docs.microsoft.com/powershell/module/dism/?view=win10-ps) for detailed information about the Powershell cmdlets.   
 
 ## DISM command to DISM cmdlet mapping table
 
-DISM cmdlet names don't necessarily correspond directly to Dism.exe options. Here is a table that maps the Dism.exe commands to DISM cmdlets:
+DISM cmdlet names don't always correspond directly to Dism.exe options. Here is a table that maps DISM commands to their corresponding Powershell cmdlets.
 
 | Dism.exe command | DISM cmdlet |
 | --- | --- |
