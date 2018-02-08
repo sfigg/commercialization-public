@@ -14,11 +14,11 @@ ms.technology: windows-oem
 # Use DISM in Windows PowerShell
 
 
-The Deployment Image Servicing and Management (DISM) cmdlets can be used to perform the same functions as the DISM.exe command-line tool. In many cases, the DISM cmdlet names are similar to their corresponding [Dism.exe options](deployment-image-servicing-and-management--dism--command-line-options.md) and the same arguments can be used. See [DISM Powershell](https://docs.microsoft.com/powershell/module/dism/?view=win10-ps) for detailed information about the Powershell cmdlets.   
+The Deployment Image Servicing and Management (DISM) cmdlets can be used to perform the same functions as the DISM.exe command-line tool. In many cases, the DISM cmdlet names are similar to their corresponding [Dism.exe options](deployment-image-servicing-and-management--dism--command-line-options.md) and the same arguments can be used. See [DISM PowerShell](https://docs.microsoft.com/powershell/module/dism/?view=win10-ps) for detailed information about the PowerShell cmdlets.   
 
 ## DISM command to DISM cmdlet mapping table
 
-DISM cmdlet names don't always correspond directly to Dism.exe options. Here is a table that maps DISM commands to their corresponding Powershell cmdlets.
+DISM cmdlet names don't always correspond directly to Dism.exe options. Here is a table that maps DISM commands to their corresponding PowerShell cmdlets.
 
 | Dism.exe command | DISM cmdlet |
 | --- | --- |
@@ -67,12 +67,13 @@ DISM cmdlet names don't always correspond directly to Dism.exe options. Here is 
 | Dism.exe /Image:\<...> /Set-ProductKey | [Set-WindowsProductKey](https://docs.microsoft.com/en-us/powershell/module/dism/set-windowsproductkey?view=win10-ps) |
 | Dism.exe /Image:\<...> /Set-ProvisionedAppxDataFile | [Set-AppXProvisionedDataFile](https://docs.microsoft.com/en-us/powershell/module/dism/set-appxprovisioneddatafile?view=win10-ps) |
 
+## Use DISM Powershell modules in WinPE
 
- 
+You can add Powershell support to WinPE. Visit [Adding PowerShell support to Windows PE](winpe-adding-powershell-support-to-windows-pe.md) to learn how.
 
-## Use DISM powershell modules in previous versions of Windows
+## Use DISM PowerShell modules in previous versions of Windows
 
-The DISM PowerShell module is included in Windows 10 and Windows Server 2016. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module. See [the Windows 8.1 version of this topic for more information](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/hh825010(v%3dwin.10)#install-the-windows-assessment-and-deployment-kit-optional).
+The DISM PowerShell module is included in Windows 10 and Windows Server 2016. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module. See [the previous version of this topic for more information](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/hh825010(v%3dwin.10)#install-the-windows-assessment-and-deployment-kit-optional).
 
 
 
