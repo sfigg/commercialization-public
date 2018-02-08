@@ -1,6 +1,6 @@
 ---
 title: EnableInputSuppression
-description: Use to enable input suppression on a Modern Standby device with a clamshell form factor when the lid is closed, there is no external monitor connected, and the device is on DC power.
+description: Use to enable input suppression on a Modern Standby system with a clamshell form factor when the lid is closed, there is no external monitor connected, and the system is on DC power.
 +MSHAttr: 
 - 'PreferredSiteName:MSDN' 
 - 'PreferredLib:/library/windows/hardware' 
@@ -13,9 +13,9 @@ ms.technology: windows-oem
 ---
 # EnableInputSuppression
 
-Use to enable input suppression on a Modern Standby device with a clamshell form factor when the lid is closed, there is no external monitor connected, and the device is on DC power.
+Use to enable input suppression on a Modern Standby system with a clamshell form factor when the lid is closed, there is no external monitor connected, and the system is on DC power.
 
-When the conditions above are met, it is expected that the device will stay in a low power state to preserve battery life. However, some input devices can wake the system from standby even if the user is not using them. For example, a Bluetooth mouse paired with the device may be stored inside a laptop bag with the device, and the motion of the mouse causes the device to wake. Enabling input suppression prevents this behavior.
+When the conditions above are met, it is expected that the system will stay in a low power state to preserve battery life. However, some input devices can wake the system from standby even if the user is not using them. For example, a Bluetooth mouse paired with the system may be stored inside a laptop bag with the system, and the motion of the mouse causes the system to wake. Enabling input suppression prevents this behavior.
 
 ## Aliases and setting visibility
 
