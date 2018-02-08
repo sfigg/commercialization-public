@@ -14,259 +14,67 @@ ms.technology: windows-oem
 # Use DISM in Windows PowerShell
 
 
-The Deployment Image Servicing and Management (DISM) cmdlets can be used to perform the same functions as the DISM.exe command-line tool. In many cases, the DISM cmdlet names correspond directly to Dism.exe options and the same arguments can be used. Because there are also cases where the DISM cmdlet names do not correspond directly to Dism.exe options, a table that maps the Dism.exe commands to DISM cmdlets is provided here:
+The Deployment Image Servicing and Management (DISM) cmdlets can be used to perform the same functions as the DISM.exe command-line tool. In many cases, the DISM cmdlet names correspond directly to [Dism.exe options](deployment-image-servicing-and-management--dism--command-line-options.md) and the same arguments can be used. See [DISM Powershell](https://docs.microsoft.com/powershell/module/dism/?view=win10-ps) for detailed information about the Powershell cmdlets.   
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Dism.exe command</th>
-<th align="left">DISM cmdlet</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Add-Capability</p></td>
-<td align="left"><p>Add-WindowsCapability</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Append-Image</p></td>
-<td align="left"><p>Add-WindowsImage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Apply-Image</p></td>
-<td align="left"><p>Expand-WindowsImage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Capture-Image</p></td>
-<td align="left"><p>New-WindowsImage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Cleanup-MountPoints</p></td>
-<td align="left"><p>Clear-WindowsCorruptMountPoint</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Commit-Image</p></td>
-<td align="left"><p>Save-WindowsImage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Export-Image</p></td>
-<td align="left"><p>Export-WindowsImage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Get-Capabilities</p></td>
-<td align="left"><p>Get-WindowsCapability</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Get-ImageInfo</p></td>
-<td align="left"><p>Get-WindowsImage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Get-MountedImageInfo</p></td>
-<td align="left"><p>Get-WindowsImage -Mounted</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Get-WimBootEntry</p></td>
-<td align="left"><p>Get-WIMBootEntry</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /List-Image</p></td>
-<td align="left"><p>Get-WindowsImageContent</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Mount-Image</p></td>
-<td align="left"><p>Mount-WindowsImage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Split-Image</p></td>
-<td align="left"><p>Split-WindowsImage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Remove-Capability</p></td>
-<td align="left"><p>Remove-WindowsCapability</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Remove-Image</p></td>
-<td align="left"><p>Remove-WindowsImage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Remount-Image</p></td>
-<td align="left"><p>Mount-WindowsImage -Remount</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Unmount-Image</p></td>
-<td align="left"><p>Dismount-WindowsImage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Update-WimBootEntry</p></td>
-<td align="left"><p>Update-WIMBootEntry</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;…&gt; /Add-Driver</p></td>
-<td align="left"><p>Add-WindowsDriver</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Add-Package</p></td>
-<td align="left"><p>Add-WindowsPackage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Add-ProvisionedAppxPackage</p></td>
-<td align="left"><p>Add-AppxProvisionedPackage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Apply-Unattend</p></td>
-<td align="left"><p>Apply-WindowsUnattend</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Cleanup-Image /CheckHealth</p></td>
-<td align="left"><p>Repair-WindowsImage -CheckHealth</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Cleanup-Image /ScanHealth</p></td>
-<td align="left"><p>Repair-WindowsImage -ScanHealth</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Cleanup-Image /RestoreHealth</p></td>
-<td align="left"><p>Repair-WindowsImage -RestoreHealth</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Disable-Feature</p></td>
-<td align="left"><p>Disable-WindowsOptionalFeature</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Enable-Feature</p></td>
-<td align="left"><p>Enable-WindowsOptionalFeature</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Export-Driver</p></td>
-<td align="left"><p>Export-WindowsDriver</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-CurrentEdition</p></td>
-<td align="left"><p>Get-WindowsEdition -Current</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-Driverinfo</p></td>
-<td align="left"><p>Get-WindowsDriver -Driver</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-Drivers</p></td>
-<td align="left"><p>Get-WindowsDriver</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-Featureinfo</p></td>
-<td align="left"><p>Get-WindowsOptionalFeature -FeatureName</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-Features</p></td>
-<td align="left"><p>Get-WindowsOptionalFeature</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-Packageinfo</p></td>
-<td align="left"><p>Get-WindowsPackage -PackagePath | -PackageName</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-Packages</p></td>
-<td align="left"><p>Get-WindowsPackage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-ProvisionedAppxPackages</p></td>
-<td align="left"><p>Get-AppxProvisionedPackage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Get-TargetEditions</p></td>
-<td align="left"><p>Get-WindowsEdition -Target</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Optimize-Image</p></td>
-<td align="left"><p>Optimize-WindowsImage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Remove-Driver</p></td>
-<td align="left"><p>Remove-WindowsDriver</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Remove-Package</p></td>
-<td align="left"><p>Remove-WindowsPackage</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Remove-ProvisionedAppxPackage</p></td>
-<td align="left"><p>Remove-AppxProvisionedPackage</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Set-Edition</p></td>
-<td align="left"><p>Set-WindowsEdition</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Set-ProductKey</p></td>
-<td align="left"><p>Set-WindowsProductKey</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dism.exe /Image:&lt;...&gt; /Set-ProvisionedAppxDataFile</p></td>
-<td align="left"><p>Set-AppXProvisionedDataFile</p></td>
-</tr>
-</tbody>
-</table>
+## DISM command to DISM cmdlet mapping table
+
+DISM cmdlet names don't necessarily correspond directly to Dism.exe options. Here is a table that maps the Dism.exe commands to DISM cmdlets:
+
+| Dism.exe command | DISM cmdlet |
+| --- | --- |
+| Dism.exe /Add-Capability | [Add-WindowsCapability](https://docs.microsoft.com/en-us/powershell/module/dism/add-windowscapability?view=win10-ps) |
+| Dism.exe /Append-Image | [Add-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/add-windowsimage?view=win10-ps) |
+| Dism.exe /Apply-Image | [Expand-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/expand-windowsimage?view=win10-ps) |
+| Dism.exe /Capture-Image | [New-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/new-windowsimage?view=win10-ps) |
+| Dism.exe /Cleanup-MountPoints | [Clear-WindowsCorruptMountPoint](https://docs.microsoft.com/en-us/powershell/module/dism/clear-windowscorruptmountpoint?view=win10-ps) |
+| Dism.exe /Commit-Image | [Save-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/save-windowsimage?view=win10-ps) |
+| Dism.exe /Export-Image | [Export-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/export-windowsimage?view=win10-ps) |
+| Dism.exe /Get-Capabilities | [Get-WindowsCapability](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowscapability?view=win10-ps) |
+| Dism.exe /Get-ImageInfo | [Get-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsimage?view=win10-ps) |
+| Dism.exe /Get-MountedImageInfo | [Get-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsimage?view=win10-ps) -Mounted |
+| Dism.exe /Get-WimBootEntry | [Get-WIMBootEntry](https://docs.microsoft.com/en-us/powershell/module/dism/get-wimbootentry?view=win10-ps) |
+| Dism.exe /List-Image | [Get-WindowsImageContent](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsimagecontent?view=win10-ps) |
+| Dism.exe /Mount-Image | [Mount-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/mount-windowsimage?view=win10-ps) |
+| Dism.exe /Split-Image | [Split-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/split-windowsimage?view=win10-ps) |
+| Dism.exe /Remove-Capability | [Remove-WindowsCapability](https://docs.microsoft.com/en-us/powershell/module/dism/remove-windowscapability?view=win10-ps) |
+| Dism.exe /Remove-Image | [Remove-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-windowsimage?view=win10-ps) |
+| Dism.exe /Remount-Image | [Mount-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/mount-windowsimage?view=win10-ps) -Remount |
+| Dism.exe /Unmount-Image | [Dismount-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/dismount-windowsimage?view=win10-ps) |
+| Dism.exe /Update-WimBootEntry | [Update-WIMBootEntry](https://docs.microsoft.com/en-us/powershell/module/dism/update-wimbootentry?view=win10-ps) |
+| Dism.exe /Image:\<...> /Add-Driver | [Add-WindowsDriver](https://docs.microsoft.com/en-us/powershell/module/dism/add-windowsdriver?view=win10-ps) |
+| Dism.exe /Image:\<...> /Add-Package | [Add-WindowsPackage](https://docs.microsoft.com/en-us/powershell/module/dism/add-windowspackage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Add-ProvisionedAppxPackage | [Add-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/Add-AppxProvisionedPackage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Cleanup-Image /CheckHealth | [Repair-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/repair-windowsimage?view=win10-ps) -CheckHealth |
+| Dism.exe /Image:\<...> /Cleanup-Image /ScanHealth | [Repair-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/repair-windowsimage?view=win10-ps) -ScanHealth |
+| Dism.exe /Image:\<...> /Cleanup-Image /RestoreHealth | [Repair-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/repair-windowsimage?view=win10-ps) -RestoreHealth |
+| Dism.exe /Image:\<...> /Disable-Feature | [Disable-WindowsOptionalFeature](https://docs.microsoft.com/en-us/powershell/module/dism/disable-windowsoptionalfeature?view=win10-ps) |
+| Dism.exe /Image:\<...> /Enable-Feature | [Enable-WindowsOptionalFeature](https://docs.microsoft.com/en-us/powershell/module/dism/enable-windowsoptionalfeature?view=win10-ps) |
+| Dism.exe /Image:\<...> /Export-Driver | [Export-WindowsDriver](https://docs.microsoft.com/en-us/powershell/module/dism/export-windowsdriver?view=win10-ps) |
+| Dism.exe /Image:\<...> /Get-CurrentEdition | [Get-WindowsEdition](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsedition?view=win10-ps) -Current |
+| Dism.exe /Image:\<...> /Get-Driverinfo | [Get-WindowsDriver](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsdriver?view=win10-ps) -Driver |
+| Dism.exe /Image:\<...> /Get-Drivers | [Get-WindowsDriver](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsdriver?view=win10-ps) |
+| Dism.exe /Image:\<...> /Get-Featureinfo | [Get-WindowsOptionalFeature](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsoptionalfeature?view=win10-ps) -FeatureName |
+| Dism.exe /Image:\<...> /Get-Features | [Get-WindowsOptionalFeature](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsoptionalfeature?view=win10-ps) |
+| Dism.exe /Image:\<...> /Get-Packageinfo | [Get-WindowsPackage](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowspackage?view=win10-ps) -PackagePath | -PackageName |
+| Dism.exe /Image:\<...> /Get-Packages | [Get-WindowsPackage](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowspackage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Get-ProvisionedAppxPackages | [Get-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/get-appxprovisionedpackage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Get-TargetEditions | [Get-WindowsEdition](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowsedition?view=win10-ps) -Target |
+| Dism.exe /Image:\<...> /Optimize-Image | [Optimize-WindowsImage](https://docs.microsoft.com/en-us/powershell/module/dism/optimize-windowsimage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Remove-Driver | [Remove-WindowsDriver](https://docs.microsoft.com/en-us/powershell/module/dism/remove-windowsdriver?view=win10-ps) |
+| Dism.exe /Image:\<...> /Remove-Package | [Remove-WindowsPackage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-windowspackage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Remove-ProvisionedAppxPackage | [Remove-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) |
+| Dism.exe /Image:\<...> /Set-Edition | [Set-WindowsEdition](https://docs.microsoft.com/en-us/powershell/module/dism/set-windowsedition?view=win10-ps) |
+| Dism.exe /Image:\<...> /Set-ProductKey | [Set-WindowsProductKey](https://docs.microsoft.com/en-us/powershell/module/dism/set-windowsproductkey?view=win10-ps) |
+| Dism.exe /Image:\<...> /Set-ProvisionedAppxDataFile | [Set-AppXProvisionedDataFile](https://docs.microsoft.com/en-us/powershell/module/dism/set-appxprovisioneddatafile?view=win10-ps) |
+
 
  
 
-**Install the Windows Assessment and Deployment Kit (Optional)**
+## Use DISM powershell modules in previous versions of Windows
 
-The DISM PowerShell module is included in Windows 10 and Windows Server 2016. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module.
+The DISM PowerShell module is included in Windows 10 and Windows Server 2016. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module. See [the Windows 8.1 version of this topic for more information](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/hh825010(v%3dwin.10)#install-the-windows-assessment-and-deployment-kit-optional).
 
-**Install Windows PowerShell 5.0**
 
-For Windows 10 and Windows Server 2016, Windows Powershell 5.0 is included in the installation. For other older supported versions of Windows and Windows Server, you must install Windows Management Framework 5.0. You can download and install [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) from the Microsoft Download Center.
-
-**To prepare the DISM PowerShell Environment**
-
-1.  To open PowerShell with administrator privileges, on the **Start** screen, type **PowerShell**, right-click the **Windows PowerShell** app tile, and then, in the app bar, click **Run as administrator**.
-
-2.  Import the DISM PowerShell module.
-
-    The DISM PowerShell module is included in Windows 10 and Windows Server 2016 and does not need to be imported.
-
-    On other supported operating systems, you can use the DISM PowerShell module included in the Windows ADK. By default, the module is installed with the Windows ADK in the DISM folder at *&lt;x86 or amd64&gt;*\\DISM\\ under the path: `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\` in Windows 10. To import this module, at the command prompt, type:
-
-    ```
-    import-module <path to DISM folder>
-    ```
-
-    For example, using the Windows 10 version of the Windows ADK on a 64-bit PC type:
-
-    ```
-    import-module "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM"
-    ```
-
-    **Note**  
-    **Import-Module** imports a module only into the current session. To import the module into all sessions, add an **Import-Module** command to your PowerShell profile. For more information about profiles, type `get-help about_profiles`.
-
-     
-
-3.  Set the `%path%` environment variable to the location of the DISM folder in the Windows ADK installation. At the command prompt, type:
-
-    ```
-    $env:path = <path to DISM folder>
-    ```
-
-    When you change environment variables in PowerShell, the change affects only the current session. To make a persistent change to an environment variable that stores the change in the registry, use System in Control Panel. For more information, see [To add or change the values of environment variables](http://go.microsoft.com/fwlink/?LinkId=223710).
-
-**To get Help for DISM PowerShell cmdlets**
-
-To get the syntax to use with a cmdlet, at a command prompt, type:
-
-```
-get-help <cmdlet name>
-```
-
-For example, type:
-
-```
-get-help get-WindowsImage
-```
 
 ## <span id="related_topics"></span>Related topics
 
