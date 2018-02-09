@@ -38,7 +38,7 @@ namespace Samples
     {
         public static void Main(string[] args)
         {
-            string controllerName = args[1];
+            string controllerName = args[0];
 
             // first, connect to the server
             ProjectManager manager = new DatabaseProjectManager(controllerName);

@@ -62,7 +62,7 @@ namespace Microsoft.Windows.Kits.Samples
              * For a project that doesn't have any failures, project.GetAppliedFilters() will return an empty collection.
              * For a project that was filtered, project.GetAppliedFilters() should return the filters that were applied to the project.
              */
-            string controllerName = args[1];
+            string controllerName = args[0];
 
             FilterLargeProject(controllerName);
             FilterSmallProject(controllerName);

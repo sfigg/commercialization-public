@@ -43,7 +43,7 @@ namespace Samples
         {
             string projectName = "my new project";
             string operatingSystemType = "Windows 7 x64";
-            string controllerName = args[1];
+            string controllerName = args[0];
 
             // first, connect to the server
             ProjectManager manager = new DatabaseProjectManager(controllerName);
