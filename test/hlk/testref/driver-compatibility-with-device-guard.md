@@ -36,10 +36,12 @@ Use the latest version of the [WDK](https://msdn.microsoft.com/en-us/windows/har
 ## <span id="How_to_verify_driver_compatibility"></span><span id="how_to_verify_driver_compatibility"></span><span id="HOW_TO_VERIFY_DRIVER_COMPATIBILITY"></span>How to verify driver compatibility
 
 
-There are two steps to verify driver compatibility:
+There are four steps to verify driver compatibility:
 
 1.  Use Driver Verifier with the new Code Integrity compatibility checks enabled
 2.  Test the driver on a system with virtualization-based isolation of Code Integrity enabled.
+3.  Run the HyperVisor Code Integrity Readiness Test in the Windows HLK.
+4.  Use the Device Guard Readiness Tool.
 
 ## <span id="Driver_Verifier_compatibility_checks"></span><span id="driver_verifier_compatibility_checks"></span><span id="DRIVER_VERIFIER_COMPATIBILITY_CHECKS"></span>Driver Verifier compatibility checks
 
@@ -83,6 +85,10 @@ There is a new HLK test called the Hypervisor Code Integrity Readiness Test that
 
 The HLK Hypervisor Code Integrity Readiness Test is required as part of the Assurance AQ and the flags to enable Code Integrity checks are also set while enabling driver verifier during other HLK tests.
 
+### Device Guard Readiness Tool
+The [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) can also be used to check for HVCI compatibility of all installed drivers on the device. The download includes a readme file that contains usage information. Note that while running the Readiness Tool, Device Guard must be disabled, as Device Guard might prevent the driver from loading, and the driver won’t be available for the Readiness Tool to test. For more information about the Readiness Tool, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/use-device-guard-readiness-tool).
+
+
 ### <span id="FAQs_"></span><span id="faqs_"></span><span id="FAQS_"></span>FAQs:
 
 **What about existing drivers? Do I need to re-build these drivers to get them to work with Windows 10?**
@@ -114,6 +120,109 @@ The following MSDN links show some examples of commonly-used APIs that cause exe
 -   [C30033](https://msdn.microsoft.com/en-us/library/windows/hardware/dn910907.aspx)
 -   [C30034](https://msdn.microsoft.com/en-us/library/windows/hardware/dn910908.aspx)
 -   [C30035](https://msdn.microsoft.com/en-us/library/windows/hardware/dn910909.aspx)
+
+Use the following table to interpret the output to determine what driver code changes are needed to resolve the different types of HVCI incompatibilities.
+
+<table>
+<tbody>
+<tr>
+<th style="padding: 8px 0">Warning</th>
+<th style="padding: 8px">Resolution</th>
+</tr>
+<tr>
+<td style="padding: 8px 0">Execute Pool Type</td>
+<td style="padding: 8px">The caller specified an executable pool type. Calling a memory allocating function that requests executable memory.
+Be sure that all pool types contain a non executable NX flag.</td>
+</tr>
+<tr>
+<td style="padding: 8px 0">Execute Page Protection</td>
+<td style="padding: 8px">The caller specified an executable page protection.
+Specify a "no execute" page protection mask.</td>
+</tr>
+<tr>
+<td style="padding: 8px 0">Execute Page Mapping</td>
+<td style="padding: 8px">The caller specified an executable memory descriptor list (MDL) mapping.
+Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff554559.aspx">MmGetSystemAddressForMdlSafe</a></td>
+</tr>
+<tr>
+<td style="padding: 8px 0">Execute-Write Section</td>
+<td style="padding: 8px">The image contains an executable and writable section.</td>
+</tr>
+<tr>
+<td style="padding: 8px 0">Section Alignment Failures</td>
+<td style="padding: 8px">The image contains a section that is not page aligned.
+Section Alignment must be a multiple of 0x1000 (PAGE_SIZE). E.g. DRIVER_ALIGNMENT=0x1000</td>
+</tr>
+<tr>
+<td style="padding: 8px 0">Unsupported Relocs</td>
+<td style="padding: 8px">In Windows 10 version 1507 through version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation. The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary. For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10 version 1703.
+
+This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so, for example with large misaligned structs or large arrays of misaligned structs. Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/en-us/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.
+<pre>#include &lt;pshpack1.h&gt;
+
+typedef struct _BAD_STRUCT {
+      USHORT Value;
+      CONST CHAR *String;
+} BAD_STRUCT, * PBAD_STRUCT;
+
+#include &lt;poppack.h&gt;
+
+#define BAD_INITIALIZER0 { 0, "BAD_STRING" },
+#define BAD_INITIALIZER1 \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      \
+      BAD_INITIALIZER0      
+
+#define BAD_INITIALIZER2 \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      \
+      BAD_INITIALIZER1      
+
+#define BAD_INITIALIZER3 \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      \
+      BAD_INITIALIZER2      
+
+#define BAD_INITIALIZER4 \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      \
+      BAD_INITIALIZER3      
+
+BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
+      BAD_INITIALIZER4
+};</pre>
+There are other situations involving the use of assembler code, where this issue can also occur.</td>
+</tr>
+<tr>
+<td style="padding: 8px 0">IAT in Executable Section</td>
+<td style="padding: 8px">The import address table (IAT), should not be an executable section of memory.
+
+This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL.
+
+One way that this can occur is when using the <a href="https://docs.microsoft.com/en-us/cpp/build/reference/merge-combine-sections">/MERGE (Combine Sections)</a> option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.</td>
+</tr>
+</tbody>
+</table>
 
 **Which APIs are potentially affected?**
 
