@@ -37,7 +37,7 @@ You can apply filters to a project that has failed task results. Before you appl
 
 ``` syntax
 string projectName = "existing project";
-string controllerName = args[1];
+string controllerName = args[0];
 
 // first, connect to the server
 ProjectManager manager = new DatabaseProjectManager(controllerName);
