@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCleanupMountPoints
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismCleanupMountPoints function
@@ -20,7 +28,7 @@ Removes files and releases resources associated with corrupted or invalid mount 
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismCleanupMountPoints(void);
 ```
 
@@ -37,7 +45,7 @@ Returns `S_OK` on success.
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK;
 hr = DismCleanupMountpoints();
 ```

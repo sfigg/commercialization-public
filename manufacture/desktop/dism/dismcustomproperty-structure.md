@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismCustomProperty
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismCustomProperty structure
@@ -18,7 +26,7 @@ Describes the custom properties of a package. Custom properties are any properti
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismCustomProperty {
   PCWSTR Name;
   PCWSTR Value;

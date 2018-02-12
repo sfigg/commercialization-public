@@ -77,9 +77,9 @@ te.exe &lt;Test Dll&gt; /name:&lt;Test Name&gt; &lt;Test Parameters&gt;
 
 -   PUK1 - Specifies the PUK1 associated with the device. This value is only required for the PIN tests and only if the device supports PUK1. If not specified the test will execute and fail if appropriate. Be very careful about providing the PUK1 on a real device. If an incorrect PUK1 is provided or the device does not support PUK1 the device could be irreversibly locked.
 
--   WEBDOC8K - Specifies a web doc over 8K in size. This parameter is optional, if provided the test will use this URL rather than the default URL.
+-   WEBDOC8K - Specifies a web doc over 8K in size. This parameter is optional, if provided the test will use this URL rather than the default URL. The default URL is [https://go.microsoft.com/fwlink/?linkid=867396](https://go.microsoft.com/fwlink/?linkid=867396)
 
--   WEBDOC1024K - Specifies a web doc over 1024K in size. This parameter is optional, if provided the test will use this URL rather than the default URL.
+-   WEBDOC1024K - Specifies a web doc over 1024K in size. This parameter is optional, if provided the test will use this URL rather than the default URL. The default URL is [https://go.microsoft.com/fwlink/?linkid=867397](https://go.microsoft.com/fwlink/?linkid=867397)
 
 -   DevPhoneNumber - Specifies the phone number of the device. This parameter is optional and used only by the SMS Tests. If the parameter is not specified the test will attempt to retrieve the phone number from the device.
 
@@ -91,7 +91,7 @@ te.exe Win8.MBN.GSM.TestConnect.dll /name:Win8::MBN::TestConnect* /p:INTF=00-A0-
 te.exe Win8.MBN.GSM.TestConnect.dll /name:Win8::MBN::TestConnect* /p:INTF=00A0D5FFFFA9 
 te.exe Win8.MBN.GSM.TestPin.dll /name:Win8::MBN::TestPin* /p:INTF=00:A0:D5:FF:FF:A9 /p:PIN1=1234 /p:PUK1=12345678
 te.exe Win8.MBN.GSM.TestSms.dll /name:Win8::MBN::TestSms* /p:DevPhoneNumber=4254437000
-te.exe Win8.MBN.GSM.TestConnect.dll /p:WEBDOC8K=http://www.microsoft.com/windows/using/tools/igd/StaticContent/igdprobedocs/ws/test13.txt
+te.exe Win8.MBN.GSM.TestConnect.dll /p:WEBDOC8K=https://go.microsoft.com/fwlink/?linkid=867396
 ```
 
 ## <span id="Mobile_Broadband_GSM_Test_List"></span><span id="mobile_broadband_gsm_test_list"></span><span id="MOBILE_BROADBAND_GSM_TEST_LIST"></span>Mobile Broadband GSM Test List

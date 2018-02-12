@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismOpenSession
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismOpenSession function
@@ -20,7 +28,7 @@ Associates an offline or online Windows image with a [DISMSession](dismsession.m
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismOpenSession(
   _In_     PCWSTR      ImagePath,
   _In_opt_ PCWSTR      WindowsDirectory,
@@ -71,7 +79,7 @@ The [DismSession](dismsession.md) can be used to service the image after the **D
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 DismSession Session = DISM_SESSION_DEFAULT;
 hr = DismOpenSession(L"C:\\Mount\\", NULL, NULL, &amp;Session);

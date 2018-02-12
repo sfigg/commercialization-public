@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismPackage
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismPackage structure
@@ -18,7 +26,7 @@ Describes basic information about a package, including the date and time that th
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 typedef struct _DismPackage {
   PCWSTR                  PackageName;
   DismPackageFeatureState PackageState;

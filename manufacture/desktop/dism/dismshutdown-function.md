@@ -8,6 +8,14 @@ ms.date: 10/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+topic_type: 
+- apiref
+api_name: 
+- DismShutdown
+api_location: 
+- DismAPI.dll
+api_type: 
+- DllExport
 ---
 
 # DismShutdown function
@@ -20,7 +28,7 @@ Shuts down DISM API. **DismShutdown** must be called once per process. Other DIS
 Syntax
 ---
 
-```ManagedCPlusPlus
+```
 HRESULT WINAPI DismShutdown(void);
 ```
 
@@ -48,7 +56,7 @@ Before calling **DismShutdown**, you must close all [DismSession](dismsession.md
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 
-```ManagedCPlusPlus
+```
 HRESULT hr = S_OK; 
 hr = DismShutdown();
 ```

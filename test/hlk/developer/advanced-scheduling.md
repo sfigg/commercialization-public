@@ -45,7 +45,7 @@ namespace Microsoft.Windows.Kits.Samples
         public static void Main(string[] args)
         {
             string projectName = "my new project";
-            string controllerName = args[1];
+            string controllerName = args[0];
 
             // first we need to connect to the Server
             ProjectManager manager = new DatabaseProjectManager(controllerName);

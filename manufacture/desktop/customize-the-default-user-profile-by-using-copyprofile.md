@@ -26,47 +26,24 @@ You can use the `CopyProfile` setting to customize a user profile and then copy 
 
 
 
-## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Creating an answer file with the CopyProfile setting
+## <span id="bkmk_preserve"></span><span id="BKMK_PRESERVE"></span>Create an answer file with the CopyProfile setting
 
 
-Use the following procedure to create an answer file to instruct **Sysprep** to copy user profile settings when you generalize the Windows image.
+In [Windows SIM](https://msdn.microsoft.com/library/windows/hardware/dn922445), create an answer file with `amd64_Microsoft-Windows-Shell-Setup_neutral\` added to **Pass 4 - Specialize**, and set `CopyProfile` to `True`. Save this answer file as `copyprofile.xml`. You'll use this answer file when you run Sysprep.
 
-**To create a separate answer file for copying user profile settings**
-
-1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**. For more information about Windows SIM, see [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445).
-
-2.  Create a new answer file to use with **Sysprep**:
-
-    1.  Click **File**, and then click **New Answer File**. An empty answer file appears in the **Answer File** pane.
-
-        **Note**  
-        If the catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
-
-         
-
-    2.  In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Shell-Setup**, and then click **Add Setting to Pass 4 specialize**.
-
-    3.  In the **Answer File** pane, select the **Components\\4\_specialize\\amd64-Microsoft-Windows-Shell-Setup\_neutral** folder.
-
-    4.  In the **Microsoft-Windows-Shell-Setup Properties** pane, in the **Settings** section, type the value `CopyProfile = true`.
-
-    5.  Save this new answer file to the root directory of the removable media or network location, and name it **CopyProfile**.
 
 For more information, see [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073) and [Unattended Windows Setup Reference Guide](http://go.microsoft.com/fwlink/?LinkId=206281).
 
-## <span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring Default User Profile Settings
+## <span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configure Default User Profile Settings
 
 
-Use the following procedure to configure user settings in audit mode and then generalize the Windows installation by using an answer file that contains the `CopyProfile` setting. If you install Windows with another answer file, that answer file should not contain the `CopyProfile` setting or any settings that create additional user accounts.
-
-**To configure default user profile settings and generalize the image**
+Configure user settings in audit mode and then generalize the Windows installation by using an answer file with `CopyProfile`. If you install Windows with another answer file, make sure that answer file doesn't have `CopyProfile` or any settings that create additional user accounts.
 
 1.  Install Windows on a reference computer and boot in audit mode. For more information, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
     > [!important]
     > Don't use a domain account, because the `CopyProfile` setting runs after the computer is removed from the domain when you run **Sysprep**. As a result, you'll lose any settings that you configured in a domain. If you change the default user profile and then join the computer to a domain, the customizations that you made to the default user profile will appear on new domain accounts.
 
-     
 
 2.  Customize the built-in administrator account by installing applications, desktop shortcuts, and other settings.
 
@@ -80,7 +57,7 @@ Use the following procedure to configure user settings in audit mode and then ge
 4.  On the reference computer, open an elevated command prompt, and then type this command:
 
     ```
-    C:\Windows\System32\Sysprep\Sysprep /generalize /oobe /shutdown /unattend: F:\CopyProfile.xml
+    C:\Windows\System32\Sysprep\Sysprep /generalize /oobe /shutdown /unattend:F:\CopyProfile.xml
     ```
 
     where *F* is the letter of the USB flash drive or other removable media. The **Sysprep** tool removes computer-specific information from the image, while preserving the user profile settings that you configured. For more information, see [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md).

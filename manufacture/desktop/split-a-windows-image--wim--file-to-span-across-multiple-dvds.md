@@ -24,7 +24,7 @@ Use this procedure when you're installing Windows from media that can't handle t
 
 ## Limitations:
 * You can’t modify a set of split image (.swm) files.
-* Applying split image (.swm) files is only supported when all of the .swm files are in the same folder. 
+* Applying split image (.swm) files is only supported when all of the .swm files are in the same folder. This means for DVD deployment, you'll need to copy the files over to the destination PC before you can use Windows Setup or DISM /Apply-Image, as shown in this topic.
 
 ## Split the file
 
@@ -64,7 +64,7 @@ For Windows Setup instructions, see the Troubleshooting section from [Install Wi
 
     And so on until all .swm files are copied to DVDs.
 
-2.  [Boot your destination computer to Windows Preinstallation Environment (WinPE)](winpe-create-a-boot-cd-dvd-iso-or-vhd.md).
+2.  [Boot your destination PC to Windows PE from DVD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md).
 
     From Windows PE, you can either deploy using Windows Setup or a script.
 
@@ -72,7 +72,7 @@ For Windows Setup instructions, see the Troubleshooting section from [Install Wi
 
 4.  Copy the files to a single temporary folder. For example, insert the first DVD and type:
     ```
-    md C:\temp
+    md C:\TempInstallFolder
     copy d:\install.swm c:\TempInstallFolder\*
     ```
 
@@ -85,19 +85,19 @@ For Windows Setup instructions, see the Troubleshooting section from [Install Wi
 
 5.  Install using Windows Setup or a script.
 
-    *  **Windows Setup**: point to the split Windows image files.
+    *  **Windows Setup**: Insert a DVD with Windows Setup, and use it to install the split Windows image files.
        ```
-       D:\Setup.exe /InstallFrom:"D:\sources\install.swm"
+       D:\Setup.exe /InstallFrom:"C:\TempInstallFolder\install.swm"
        ```
 
     * **Use a script**
 
       1.  Apply your image using the DISM /Apply-Image /SWMFile option:
           ```
-          Dism /Apply-Image /ImageFile:C:\TempInstallFolder\install.swm /SWMFile:c:\temp\install*.swm /Index:1 /ApplyDir:D:\
+          Dism /Apply-Image /ImageFile:C:\TempInstallFolder\install.swm /SWMFile:c:\TempInstallFolder\install*.swm /Index:1 /ApplyDir:D:\
           ```
 
-      2.  Set up your system and recovery partitions, as shown in [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md).
+      2.  Set up your system and recovery partitions, as shown in [Deploy Windows using a Script](deploy-windows-with-a-script-sxs.md).
 
 6. Clean up: remove the temporary folder
    ```
