@@ -63,7 +63,7 @@ This can happen when the Windows image file is over the FAT32 file size limit of
 
 1. Copy everything except the Windows image file (sources\install.wim) to the USB drive (either drag and drop, or use this command, where D: is the mounted ISO and E: is the USB flash drive.)
    ```
-   robocopy D: E: /s /max:38000000000
+   robocopy D: E: /s /max:3800000000
    ```
 
 2. Split the Windows image file into smaller files, and put the smaller files onto the USB drive:
