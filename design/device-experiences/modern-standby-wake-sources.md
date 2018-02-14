@@ -38,9 +38,16 @@ Nearly all devices in the modern standby PC are expected to be capable of waking
 -   Wake source operation and scenarios are the same for all modern standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
 -   Wake source operation and scenarios are the same for all modern standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
 -   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet, clamshell, and docked slate.
--   Wake source operation and scenarios do not change between AC and battery-powered states. To deliver a consistent user experience, the guidelines in this section apply equally to when the system is on AC power and on battery power.
+-   Wake source operation may differ between AC and battery-powered states. Differences are noted in the tables below.
 
-The remainder of this topic describes, for each device type, whether a device should be capable of waking the SoC from a deep idle state. Also described are the wake mechanisms for these devices, and whether the driver and system software will turn on the display in response to the wake event.
+The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
+When my PC is asleep and on battery power, disconnect from the network:
+	1. Never 
+	2. Always 
+	3. Managed by Windows  
+
+Most systems enable Connected Standby by default. However, on some systems, such as Cobalt, the default is "Managed by Windows."
+
 
 ## Real-time clock (RTC) or always-on timer
 
