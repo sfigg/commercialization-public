@@ -34,10 +34,8 @@ Enabling the modern standby user experience requires all of the devices and soft
 
 Nearly all devices in the modern standby PC are expected to be capable of waking the SoC from its deepest idle power state. However, few devices should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is at the center of delivering the modern standby user experience. The following rules govern platform wake behavior:
 
--   Only wake events that are user-initiated cause the system to turn on the display.
 -   Wake source operation and scenarios are the same for all modern standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
--   Wake source operation and scenarios are the same for all modern standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
--   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet, clamshell, and docked slate.
+-   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet, clamshell, docked slate, and desktop.
 -   Wake source operation may differ between AC and battery-powered states. Differences are noted in the tables below.
 
 The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
