@@ -47,7 +47,9 @@ When my PC is asleep and on battery power, disconnect from the network:
 Most systems enable Connected Standby by default. However, on some systems, such as Cobalt, the default is "Managed by Windows."
 
 
-## Real-time clock (RTC) or always-on timer
+## Types of wake sources
+
+### Real-time clock (RTC) or always-on timer
 
 
 The core silicon or SoC chip in a modern standby platform has one or more timers that are always powered on that so that Windows can schedule future work and place the SoC into a deep idle state. During standby, the always-on timer reliably wakes the SoC as programmed by the OS.
@@ -75,12 +77,10 @@ The core silicon or SoC chip in a modern standby platform has one or more timers
 
  
 
-## Buttons
+### Buttons and lid
 
 
-The system power button is the most common user-initiated wake source in a modern standby platform. All modern standby PCs must be designed so that the power button is always enabled to send a wake interrupt to the SoC. To deliver an instant-on experience, the power button must cause the SoC to wake from the deepest idle state without delay.
-
-Modern standby PCs might feature other system buttons, including rotation-lock and volume up/down buttons.
+The system power button is a very common user-initiated wake source in a modern standby platform. All modern standby PCs must be designed so that the power button is always enabled to send a wake interrupt to the SoC. To deliver an instant-on experience, the power button must cause the SoC to wake from the deepest idle state without delay. Another common user-initiated wake source on clamshell form factor devices is opening the lid, which wakes the SoC. The Windows button is also able to wake the SoC. 
 
 <table>
 <thead>
@@ -134,10 +134,10 @@ Modern standby PCs might feature other system buttons, including rotation-lock a
 
  
 
-## Communications devices
+### Communications devices
 
 
-The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the real-time and constant connectivity features of modern standby.
+The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the real-time and constant connectivity features of modern standby. They facilitate wake sources such as Universal Windows Platform (UWP) Applications notifications and syncing and Bluetooth notifications and syncing.
 
 <table>
 <thead>
@@ -192,7 +192,7 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 
 **Note**  The interrupt mechanism is determined by the type of bus. For example, if Wi-Fi radio, MBB radio, or Bluetooth radio is connected via USB, it would use USB in-band resume signaling.
 
-## Input devices
+### Input devices
 
 
 We recommend using HIDI2C for input peripherals whenever possible, but this is not a requirement. If necessary, USB can be used to connect to an input device such as a touchpad, touch digitizer, or pen digitizer. A precision touchpad must be capable of waking the system from deep idle, regardless of whether this device is connected to USB or I2C. As an option, a non-precision touchpad can wake the system from deep idle. Touch digitizers and pen digitizers must not wake the system from deep idle.
@@ -339,12 +339,18 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 
 **Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VOIP calls.
 
- 
 
-## Insertion or removal of a connector or device
+### Voice input
 
 
-In addition to buttons on the chassis, a modern standby PC may have other input devices that are physically integrated into the system, or are attached to the system directly or indirectly through a dock. When the user generates input through an input device, this event must always wake the SoC from the deepest idle state and cause the display to turn on.
+On devices that are Wake on Voice-capable, voice input of "Hey Cortana" from the user can wake the SoC from the deepest idle state and cause the display to turn on.
+
+
+### Insertion or removal of a connector or device
+
+
+When the user inserts or removes a connector or device, this event must always wake the SoC from the deepest idle state and cause the display to turn on.
+
 
 <table>
 <thead>
@@ -462,9 +468,30 @@ In addition to buttons on the chassis, a modern standby PC may have other input 
 </tbody>
 </table>
 
- 
 
-## Environmental context changes
+### Windows Update
+
+
+Windows Update can always wake the SoC from the deepest idle state to scan for updates. It can also wake the SoC to download and install updates and restart a device, depending on a device's power source.
+
+### Universal Windows Platform (UWP) Applications 
+
+
+UWP applications can wake the SoC from the deepest idle state to sync and display notifications, depending on a device's power source and app-specific user configurations.
+
+### Remote Access
+
+
+Remote Desktop and File Sharing can wake the SoC from the deepest idle state on the client system when the system has a LAN connection.
+
+
+### Audio
+
+
+Audio from internal speakers or Bluetooth speakers can wake the SoC, so that audio continues playing even when a device's screen is off.  
+
+
+### Environmental context changes
 
 
 The modern standby PC must also respond in real-time to changes in environmental conditions. The common cases are thermal events and power source change events.
