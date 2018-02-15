@@ -277,6 +277,9 @@ Here is an example showing the **Office 365** suite of tiles in the Start layout
 
 ![Start layout with Office 365](images/start-layout-office365.png)
 
+> [!Note]
+> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
+
 ### Other versions of Office
 
 For Windows 10 version 1709 or earlier, or if you've pre-installed a different version of Office to the device than Office 365, configure `LayoutModification.xml` to specify the version of Office that's pre-installed. In this case, the heading for the Microsoft Office suite of tiles is the default, **Create**.
@@ -309,9 +312,6 @@ If you've pre-installed Office 2016, you will need to use two tags: `<AppendOffi
 Here is an example of a Start layout on a device where Office 2016 is pre-installed:
 
 ![Start layout with Office 2016](images/start-layout-office2016.png)
-
-> [!Note]
-> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
 
 ### Download Office
 
