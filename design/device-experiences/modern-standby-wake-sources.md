@@ -97,7 +97,7 @@ Windows Update can always wake the SoC from the deepest idle state to scan for u
 ### Universal Windows Platform (UWP) Applications 
 
 
-UWP applications can wake the SoC from the deepest idle state to sync and display notifications, depending on a device's power source and app-specific user configurations.
+UWP applications can wake the SoC from the deepest idle state to sync and display notifications, depending on a device's power source, notification priority levels, and app-specific user configurations.
 
 
 ### Remote Access
@@ -118,27 +118,8 @@ Audio from internal speakers or Bluetooth speakers can wake the SoC, so that aud
 The modern standby PC must also respond in real-time to changes in environmental conditions. The common cases are thermal events and power source change events.
 
 
-### Real-time clock (RTC) or always-on timer
+## Wakes SoC and **can** turn on display
 
-
-<table>
-<thead>
-<tr class="header">
-<th>Device</th>
-<th>Turns on the display?</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="odd">
-<td><p>Always-on timer</p></td>
-<td><p>No</p></td>
-<td><p>Each SoC has a different mechanism for programming the always-on timer.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ### Buttons and lid
 
@@ -182,49 +163,6 @@ The modern standby PC must also respond in real-time to changes in environmental
 </table>
 
  
-
-### Communications devices
-
-
-<table>
-<thead>
-<tr class="header">
-<th>Device</th>
-<th>Turns on the display?</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="odd">
-<td><p>Wi-Fi radio</p></td>
-<td><p>No</p>
-<p>(See Note following this table.)</p></td>
-<td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems. </p></td>
-</tr>
-<tr class="even">
-<td><p>Mobile broadband (MBB) radio</p></td>
-<td><p>No</p>
-<p>(See Note following this table.)</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Bluetooth radio</p></td>
-<td><p>No</p></td>
-<td><p>Windows and its drivers are responsible for detecting the type of associated Bluetooth device. If a keyboard, mouse, or other user-input device is responsible for causing the Bluetooth radio to wake the SoC, the display will turn on. Other Bluetooth devices such as portable audio headphones will not cause the display to turn on.</p></td>
-</tr>
-<tr class="even">
-<td><p>Wired LAN (USB-attached, modern standby-capable)</p></td>
-<td><p>No</p>
-<p>(See Note following this table.)</p></td>
-<td><p>Wired LAN devices in modern standby platforms or their supported docks must support pattern-match offloads in order to be modern standby-capable.</p></td>
-</tr>
-</tbody>
-</table>
-
-
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VOIP calls.
-
-**Note**  The interrupt mechanism is determined by the type of bus. For example, if Wi-Fi radio, MBB radio, or Bluetooth radio is connected via USB, it would use USB in-band resume signaling.
 
 ### Input devices
 
@@ -301,34 +239,9 @@ The modern standby PC must also respond in real-time to changes in environmental
 <td><p>Yes</p></td>
 <td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth radio, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
 </tr>
-<tr class="even">
-<td><p>Touch digitizer (integrated HIDI2C)</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
 <tr class="odd">
-<td><p>Touch digitizer (external USB)</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Pen digitizer (integrated HIDI2C)</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Pen digitizer (external USB)</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Select sensors (such as proximity)</p></td>
+<td><p>Fingerprint reader</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>USB HID devices other than keyboards or mice</p></td>
-<td><p>N/A</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -356,38 +269,13 @@ The modern standby PC must also respond in real-time to changes in environmental
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>USB device insertion/removal</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>SD card insertion/removal (SDIO controller-attached)</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>SD card insertion/removal (USB-attached)</p></td>
-<td><p>No</p></td>
-<td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
-</tr>
-<tr class="even">
 <td><p>Attaching/removing a dock</p></td>
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their current state.</p></td>
 <td><p>Attaching a dock should be treated the same as individually attaching each of the devices included in the dock.</p>
 <p>For example, attaching a dock alone should not cause the SoC to wake. Instead, detection of new devices (USB device, I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
 </tr>
-<tr class="odd">
-<td><p>Headphone or microphone insertion/removal</p></td>
-<td><p>No</p></td>
-<td><p>Attaching a headphone or microphone to the system provides an interrupt to enable the audio stack to correctly route audio.</p></td>
-</tr>
 <tr class="even">
-<td><p>eSATA insertion/removal</p></td>
-<td><p>No</p></td>
-<td></td>
-</tr>
-<tr class="odd">
 <td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion/ejection</p></td>
 <td><p>Yes</p></td>
 <td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
@@ -403,9 +291,6 @@ The modern standby PC must also respond in real-time to changes in environmental
 
 
 ### Remote Access
-
-
-### Audio
 
 
 ### Environmental context changes
@@ -426,39 +311,246 @@ The modern standby PC must also respond in real-time to changes in environmental
 <td><p>The Windows power manager will turn on the display when the battery subsystem has indicated a power source change. The GPIO interrupt for power source changes must cause the ACPI _PSR method under the power supply device to be executed.</p>
 <p>The power subsystem must wake the SoC any time the power source changes, including when the system is attached or removed from a dock that has a battery or AC power source.</p></td>
 </tr>
+</tbody>
+</table>
+
+**Note**  When the battery charge level crosses either the low or critical level, Windows briefly turns on the display to present a visual notification of the charge status to the user. This behavior is implemented in Windows and does not require additional firmware support.
+
+
+## Wakes SoC but **cannot** turn on display
+
+
+### Real-time clock (RTC) or always-on timer
+
+
+<table>
+<thead>
+<tr class="header">
+<th>Device</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Always-on timer</p></td>
+<td><p>Each SoC has a different mechanism for programming the always-on timer.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+### Insertion or removal of a connector or device
+
+
+<table>
+<thead>
+<tr class="header">
+<th>Device</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>SD card insertion/removal (SDIO controller-attached)</p></td>
+<td><p></p></td>
+</tr>
 <tr class="even">
-<td><p>Thermal event</p></td>
-<td><p>No</p></td>
-<td><p>All temperature sensors must wake the SoC from the deepest power state to indicate temperature change.</p>
-<p>ACPI firmware should monitor thermal zone temperature changes continuously during standby and when the SoC is in the deepest idle state. The ACPI firmware should report to the Windows thermal manager when the temperature rises above the trip points.</p></td>
+<td><p>SD card insertion/removal (USB-attached)</p></td>
+<td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Battery charge completion</p></td>
+<td><p>Headphone or microphone insertion/removal</p></td>
+<td><p>Attaching a headphone or microphone to the system provides an interrupt to enable the audio stack to correctly route audio.</p></td>
+</tr>
+<tr class="even">
+<td><p>eSATA insertion/removal</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+### Communications devices
+
+
+<table>
+<thead>
+<tr class="header">
+<th>Device</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Wi-Fi radio</p></td>
+<td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems. </p></td>
+</tr>
+<tr class="even">
+<td><p>Mobile broadband (MBB) radio</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>Bluetooth radio</p></td>
+<td><p>Windows and its drivers are responsible for detecting the type of associated Bluetooth device. If a keyboard, mouse, or other user-input device is responsible for causing the Bluetooth radio to wake the SoC, the display will turn on. Other Bluetooth devices such as portable audio headphones will not cause the display to turn on.</p></td>
+</tr>
+<tr class="even">
+<td><p>Wired LAN (USB-attached, modern standby-capable)</p></td>
+<td><p>Wired LAN devices in modern standby platforms or their supported docks must support pattern-match offloads in order to be modern standby-capable.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VOIP calls.
+
+**Note**  The interrupt mechanism is determined by the type of bus. For example, if Wi-Fi radio, MBB radio, or Bluetooth radio is connected via USB, it would use USB in-band resume signaling.
+
+
+### Windows Update
+
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Enabled by default - AC power</th>
+<th>Enabled by default - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Scan</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
+<td><p>Download</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes, but only limited to interactive download. All non-interactive downloads are paused. No new downloads will be initiated.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>Install</p></td>
+<td><p>Yes</p></td>
+<td><p>No. In-progress installs get paused. Does not kick off new install.</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
+
+### Universal Windows Platform (UWP) Applications
+
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Enabled by default - AC power</th>
+<th>Enabled by default - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Background upload/download of content</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
+<td><p>Inbox Mail app: mail sync</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>Inbox People app: contact sync</p></td>
+<td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
+<td><p>Inbox Calendar app: calendar sync</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>Sync with Bluetooth devices</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
+<td><p>App operations that require network (via SocketActivityTrigger)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>OneNote and VoiceRecorder: background audio recording</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
+
+### Audio
+
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Enabled by default - AC power</th>
+<th>Enabled by default - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Audio local and streaming playback (internal speakers) during screen off</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
+<td><p>Audio local and streaming playback (Bluetooth speakers) during screen off</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
+
+### Environmental context changes
+
+
+<table>
+<thead>
+<tr class="header">
+<th>Device</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Thermal event</p></td>
+<td><p>All temperature sensors must wake the SoC from the deepest power state to indicate temperature change.</p>
+<p>ACPI firmware should monitor thermal zone temperature changes continuously during standby and when the SoC is in the deepest idle state. The ACPI firmware should report to the Windows thermal manager when the temperature rises above the trip points.</p></td>
+</tr>
+<tr class="even">
+<td><p>Battery charge completion</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
 <td><p>Battery threshold change</p></td>
-<td><p>No</p>
-<p>(See Note following this table.)</p></td>
 <td><p>The battery subsystem must wake the SoC from its deepest idle state anytime the remaining capacity goes below the value specified by Windows in the _BTP control method.</p>
 <p>The battery subsystem must wake the SoC from its deepest idle state anytime the remaining capacity goes below the value specified by DesignCapacityOfLow in the _BIX control method. Windows will hibernate (x86) or shut down (ARM) the system when the remaining capacity falls below DesignCapacityOfLow.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
-**Note**  When the battery charge level crosses either the low or critical level, Windows briefly turns on the display to present a visual notification of the charge status to the user. This behavior is implemented in Windows and does not require additional firmware support.
-
- 
-
- 
-
- 
-
-
-
-
-
 
