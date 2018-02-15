@@ -1,6 +1,6 @@
 ---
-title: Customize the taskbar
-description: Customize the taskbar
+title: Customize the Taskbar
+description: Customize the Taskbar
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Customize the taskbar
+# Customize the Taskbar
 
 You can pin up to three additional apps to the taskbar. There are two methods to do this:
 
