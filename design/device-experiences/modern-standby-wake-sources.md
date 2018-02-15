@@ -26,7 +26,7 @@ This topic describes the scenarios in which the devices in this PC must be able 
 ## Overview of modern standby user experience for wake
 
 
-The modern standby user experience is designed to model that of a cellular phone. When users finish using their phones, they press the system power button and the cell phone turns off. The phone remains off until the user presses the power button again, or a phone call, email, or instant message is received.
+The modern standby user experience is designed to model that of a cellular phone. When users finish using their phones, they press the system power button and the cell phone enters sleep mode. The phone remains asleep until the user presses the power button again, or a phone call, email, or instant message is received.
 
 Similarly, when a PC is in modern standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in modern standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The modern standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the modern standby PC, connected or not also has very long battery life in its off state, just like a cell phone.
 
