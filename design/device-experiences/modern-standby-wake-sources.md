@@ -356,76 +356,39 @@ The modern standby PC must also respond in real-time to changes in environmental
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>USB device insertion</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>USB device removal</p></td>
+<td><p>USB device insertion/removal</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>SD card insertion (SDIO controller-attached)</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>SD card removal (SDIO controller-attached)</p></td>
+<td><p>SD card insertion/removal (SDIO controller-attached)</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>SD card insertion (USB-attached)</p></td>
-<td><p>No</p></td>
-<td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
-</tr>
-<tr class="even">
-<td><p>SD card removal (USB-attached)</p></td>
+<td><p>SD card insertion/removal (USB-attached)</p></td>
 <td><p>No</p></td>
 <td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Attaching a dock</p></td>
+<td><p>Attaching/removing a dock</p></td>
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their current state.</p></td>
 <td><p>Attaching a dock should be treated the same as individually attaching each of the devices included in the dock.</p>
 <p>For example, attaching a dock alone should not cause the SoC to wake. Instead, detection of new devices (USB device, I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
 </tr>
 <tr class="even">
-<td><p>Removing a dock</p></td>
-<td><p>Varies.</p>
-<p>Depends on the devices in the dock and their previous state.</p></td>
-<td><p>Removing a dock should be treated the same as individually removing each of the devices included in the dock.</p>
-<p>Removal of a dock alone should not cause the SoC to wake. Instead, removal of the individual devices (USB device, I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Headphone or microphone insertion</p></td>
+<td><p>Headphone or microphone insertion/removal</p></td>
 <td><p>No</p></td>
 <td><p>Attaching a headphone or microphone to the system provides an interrupt to enable the audio stack to correctly route audio.</p></td>
 </tr>
 <tr class="even">
-<td><p>Headpohone or microphone removal</p></td>
-<td><p>No</p></td>
-<td><p>Removing a headphone or microphone from the system generates an interrupt to enable the audio stack to correctly route audio.</p></td>
-</tr>
-<tr class="odd">
-<td><p>eSATA insertion</p></td>
-<td><p>No</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>eSATA removal</p></td>
+<td><p>eSATA insertion/removal</p></td>
 <td><p>No</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion</p></td>
-<td><p>Yes</p></td>
-<td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
-</tr>
-<tr class="even">
-<td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc ejection button</p></td>
+<td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion/ejection</p></td>
 <td><p>Yes</p></td>
 <td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
 </tr>
