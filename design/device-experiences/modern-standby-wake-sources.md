@@ -30,7 +30,7 @@ The modern standby user experience is designed to model that of a cellular phone
 
 Similarly, when a PC is in modern standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in modern standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The modern standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the modern standby PC, connected or not also has very long battery life in its off state, just like a cell phone.
 
-Enabling the modern standby user experience requires all of the devices and software in the modern standby PC to actively and correctly participate in system power management. Achieving long standby battery life is primarily a function of allowing all devices, plus the core silicon or System on a Chip (SoC), to enter a very low-power idle state. During modern standby, the networking subsystem stays connected so that the system can wake and instantly respond to incoming emails or VOIP calls. Enabling the real-time nature of modern standby is primarily a function of platform devices waking the SoC for the correct events at the correct times.
+Enabling the modern standby user experience requires all of the devices and software in the modern standby PC to actively and correctly participate in system power management. Achieving long standby battery life is primarily a function of allowing all devices, plus the core silicon or System on a Chip (SoC), to enter a very low-power idle state. During modern standby, the networking subsystem stays connected so that the system can wake and instantly respond to incoming emails or VoIP calls. Enabling the real-time nature of modern standby is primarily a function of platform devices waking the SoC for the correct events at the correct times.
 
 Nearly all devices in the modern standby PC are expected to be capable of waking the SoC from its deepest idle power state. However, few devices should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is at the center of delivering the modern standby user experience. The following rules govern platform wake behavior:
 
@@ -128,7 +128,8 @@ The modern standby PC must also respond in real-time to changes in environmental
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Turns on the display?</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
 <th>Remarks</th>
 </tr>
 </thead>
@@ -136,26 +137,19 @@ The modern standby PC must also respond in real-time to changes in environmental
 <tr class="odd">
 <td><p>Power button</p></td>
 <td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when the power-button interrupt occurs.</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows button</p></td>
 <td><p>Yes (if wake-enabled)</p></td>
+<td><p>Yes (if wake-enabled)</p></td>
 <td><p>The Windows power manager will be notified that the Windows button was pressed and will turn on the screen. The Windows button is considered to be user input.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Volume buttons</p></td>
-<td><p>N/A</p></td>
-<td><p>Volume buttons are expected to function while the system is playing audio, including when the screen is off. However, when the screen is off and no audio is being played, the volume buttons must not wake the system.</p></td>
-</tr>
-<tr class="even">
-<td><p>Rotation-lock button</p></td>
-<td><p>N/A</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
 <td><p>Lid switch (mechanical or sensor-based)</p></td>
-<td><p>GPIO interrupt</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p>There might be multiple types of lid switches, all of which are exposed to Windows in the same way. The lid switch can be a mechanical-contact switch or sensor-based switch. The platform can expose a lid switch for turning off the display when a tablet is attached to a keyboard dock that is closed. If the tablet has a cover, the sensor for detecting cover closing is also treated as a lid switch.</p>
 <p>Opening the lid, opening the cover, or adjusting the display to make it visible must cause the display to automatically turn on. The Windows power manager automatically turns on the display in response to the lid switch interrupt.</p></td>
 </tr>
@@ -171,13 +165,15 @@ The modern standby PC must also respond in real-time to changes in environmental
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Turns on the display?</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
 <th>Remarks</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="odd">
 <td><p>Keyboard (integrated HIDI2C)</p></td>
+<td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when keyboard input is detected.</p>
 <p>All keys on the keyboard must generate a GPIO wake interrupt and cause the display to turn on (with the exception of volume buttons, which should not turn on the screen).</p>
@@ -192,15 +188,18 @@ The modern standby PC must also respond in real-time to changes in environmental
 <tr class="even">
 <td><p>Keyboard (external USB)</p></td>
 <td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p>Depending on the USB host controller, more than one key press might be required to generate a resume event that causes the screen to turn on.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Keyboard (external Bluetooth)</p></td>
 <td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Touchpad (integrated HIDI2C)</p></td>
+<td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Moving a finger on the touchpad or exerting button activation force on the digitizer surface should cause a wake event.</p>
 <div class="alert">
@@ -217,6 +216,7 @@ The modern standby PC must also respond in real-time to changes in environmental
 <tr class="odd">
 <td><p>Touchpad (external USB)</p></td>
 <td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p>Moving a finger on the touchpad or exerting button activation force on the digitizer surface should cause a wake event.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -232,15 +232,18 @@ The modern standby PC must also respond in real-time to changes in environmental
 <tr class="even">
 <td><p>Mouse (external USB)</p></td>
 <td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p>At a minimum, pressing any button on the mouse should generate a resume event and cause the screen to turn on. Depending on the USB host controller, more than one button press might be required to cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mouse (external Bluetooth)</p></td>
 <td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth radio, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Fingerprint reader</p></td>
+<td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
@@ -255,6 +258,25 @@ The modern standby PC must also respond in real-time to changes in environmental
 ### Voice input
 
 
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Voice input ("Hey Cortana")</p></td>
+<td><p>Yes, if the device is Wake on Voice-capable.</p></td>
+<td><p>Yes, if the device is Wake on Voice-capable and has hardware keyword spotting. If the device has software keyword spotting only, the display will not turn on.</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
 
 ### Insertion or removal of a connector or device
 
@@ -263,7 +285,8 @@ The modern standby PC must also respond in real-time to changes in environmental
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Turns on the display?</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
 <th>Remarks</th>
 </tr>
 </thead>
@@ -272,11 +295,14 @@ The modern standby PC must also respond in real-time to changes in environmental
 <td><p>Attaching/removing a dock</p></td>
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their current state.</p></td>
+<td><p>Varies.</p>
+<p>Depends on the devices in the dock and their current state.</p></td>
 <td><p>Attaching a dock should be treated the same as individually attaching each of the devices included in the dock.</p>
 <p>For example, attaching a dock alone should not cause the SoC to wake. Instead, detection of new devices (USB device, I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
 </tr>
 <tr class="even">
 <td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion/ejection</p></td>
+<td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
 </tr>
@@ -287,10 +313,125 @@ The modern standby PC must also respond in real-time to changes in environmental
 ### Windows Update
 
 
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Restart</p></td>
+<td><p>Yes</p></td>
+<td><p>No. Restart for Windows Update is disabled on DC power.</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
+
 ### Universal Windows Platform (UWP) Applications 
 
 
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Skype: incoming calls</p></td>
+<td><p>Yes, unless disabled by the user.</p></td>
+<td><p>Yes, unless disabled by the user.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="even">
+<td><p>Skype: incoming IMs</p></td>
+<td><p>Yes, unless disabled by the user.</p></td>
+<td><p>Yes, unless disabled by the user.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="odd">
+<td><p>3rd party VoIP calls</p></td>
+<td><p>Yes, if the notification is high priority.</p></td>
+<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="even">
+<td><p>3rd party IMs</p></td>
+<td><p>Yes, if the notification is high priority.</p></td>
+<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Bluetooth device notification</p></td>
+<td><p>Yes, if the notification is high priority.</p></td>
+<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="even">
+<td><p>Bluetooth authentication: proximity</p></td>
+<td><p>Yes, if the notification is high priority.</p></td>
+<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Location services (geofencing APIs trigger push notification)</p></td>
+<td><p>Yes, if the app uses geofencing and the notification is high priority.</p></td>
+<td><p>No, unless the app is exempt, the app uses geofencing, and the notification is high or medium priority.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+<tr class="even">
+<td><p>Other UWP apps: push notifications</p></td>
+<td><p>Yes, if the notification is high priority.</p></td>
+<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>See Note.</p></td>
+</tr>
+</tbody>
+</table>
+	
+
+**Note** When a device is on AC power, only high priority notifications from UWP apps will be delivered. When a device is on DC power, only high priority and medium priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. Inbox Mail app incoming mail notifications are low priority, so they will never cause the display to turn on when a system is in Modern Standby.
+
+There are two ways the user can set an app as exempt: 1) In Settings > Battery > See which apps are affecting your battery life, select an app and uncheck the "Let Windows decide when this app can run in the background." Then, check "Allow the app to run background tasks" and uncheck "Reduce the work the app can do when it's in the background." 2) Select the app in Settings > Personalization > Lock Screen > "Choose an app to show detailed status" or "Choose apps to show quick status". In either case, the user should also ensure that under Settings > Notifications and Actions > Notifications, "Show notifications on the lock screen" and "Get notifications from apps and other senders" are enabled. 
+
+Skype is exempt by default. To change settings for Skype incoming calls, the user should navigate to Settings > System > Notifications and Actions > Notifications > Show reminders and incoming VoIP calls on the lock screen. To change other Skype notification settings, the user should navigate to Settings > System > Notifications and Actions > Get notifications from these senders > Skype. 
+To configure location services settings and see which apps are using geofencing, the user can navigate to Settings > Privacy  > Location.
+
+
 ### Remote Access
+
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>Remote Desktop</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>The system must have a LAN connection. This is not enabled on Wi-Fi.</p></td>
+</tr>
+<tr class="even">
+<td><p>File Sharing</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>The system must have a LAN connection. This is not enabled on Wi-Fi.</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ### Environmental context changes
@@ -299,14 +440,16 @@ The modern standby PC must also respond in real-time to changes in environmental
 <table>
 <thead>
 <tr class="header">
-<th>Device</th>
-<th>Turns on the display?</th>
+<th>Event</th>
+<th>Turns on the display - AC power</th>
+<th>Turns on the display - DC power</th>
 <th>Remarks</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="odd">
 <td><p>Power source change (AC to battery, or battery to AC)</p></td>
+<td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when the battery subsystem has indicated a power source change. The GPIO interrupt for power source changes must cause the ACPI _PSR method under the power supply device to be executed.</p>
 <p>The power subsystem must wake the SoC any time the power source changes, including when the system is attached or removed from a dock that has a battery or AC power source.</p></td>
@@ -532,7 +675,7 @@ The modern standby PC must also respond in real-time to changes in environmental
 <table>
 <thead>
 <tr class="header">
-<th>Device</th>
+<th>Event</th>
 <th>Remarks</th>
 </tr>
 </thead>
