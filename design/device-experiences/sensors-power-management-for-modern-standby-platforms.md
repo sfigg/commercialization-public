@@ -25,17 +25,17 @@ This article explains how to implement power management for sensor devices. In a
 ## Sensors and sensor microcontroller
 
 
-Sensor hardware is critical to the modern mobile experience. Starting with Windows 8, a rich system infrastructure is available to expose and manage multiple sensor devices. This infrastructure simplifies the development of applications that incorporate sensor information and that support critical built-in Windows scenarios, such as screen auto-rotation and changing the display brightness based on ambient light. An aggregated sensor device can include a sensor microcontroller to seamlessly integrate raw data from discrete accelerometer, gyrometer, and magnetometer devices into a single sensor information stream.
+Sensor hardware is critical to the modern mobile experience. Starting with Windows 10, a rich system infrastructure is available to expose and manage multiple sensor devices. This infrastructure simplifies the development of applications that incorporate sensor information and that support critical built-in Windows scenarios, such as screen auto-rotation and changing the display brightness based on ambient light. An aggregated sensor device can include a sensor microcontroller to seamlessly integrate raw data from discrete accelerometer, gyrometer, and magnetometer devices into a single sensor information stream.
 
 During system runtime, individual sensors can be powered off when they're not in use. The requirements for using a particular sensor device are communicated to the device and its drivers through the Windows Sensor API. When a sensor device is not being used by the operating system or by any applications, the device can be powered down by the sensor driver or by the firmware that is running on the sensor microcontroller.
 
 After the system display turns off and the hardware platform enters modern standby, all sensor devices and optional sensor microcontrollers that are not already in low-power states should enter their low-power, standby states within a few seconds so that the platform as a whole can enter a low-power state. However, sensor drivers do not directly monitor transitions to and from modern standby to determine when sensor devices should be powered on and off. Instead, the sensor driver should enable the device to receive power when the device is actively being used by one or more clients, which can be applications or operating system components. The driver should remove power from the device when no clients are using the device.
 
-When a client requests event notifications from a sensor device, the sensor class extension calls the sensor driver's ISensorDriver::OnClientSubscribeToEvents callback method. When the client later cancels event notifications, the sensor class extension calls the driver's ISensorDriver::OnClientUnsubscribeFromEvents callback method. The driver uses these callbacks to keep track of the number of clients that are currently using the sensor. For more information, see About Sensor Driver Events.
+When the sensor class extension requests the driver to start reporting sensor sample readings, it calls the sensor driver's EvtSensorStart callback method. When the sensor class extension requests the driver to stop reporting sensor sample readings, it calls the driver's EvtSensorStop callback method. For more information, see About Sensor Driver Events.
 
 After the computer enters modern standby and all sensor devices enter low-power states, the total power consumption of all system sensor hardware must be less than one milliwatt. The sensor devices and optional sensor microcontroller might enter a low-power standby state that is specific to the sensor hardware. Or, the hardware power rail to the sensor devices and the optional sensor microcontroller can be switched off under control of the sensor drivers and/or the system ACPI firmware.
 
-Starting with Windows 8, support is provided for a limited set of sensor hardware connectivity options to the core silicon or System on a Chip (SoC) in a modern standby platform. The following sections detail the supported hardware and software configurations as well as their power-management behaviors both during modern standby and when the platform is actively being used.
+Starting with Windows 10, support is provided for a limited set of sensor hardware connectivity options to the core silicon or System on a Chip (SoC) in a modern standby platform. The following sections detail the supported hardware and software configurations as well as their power-management behaviors both during modern standby and when the platform is actively being used.
 
 ## Power management modes
 
@@ -116,7 +116,7 @@ Run-time power management for sensor devices and the sensor microcontroller is p
 
 After the system display is powered off and the platform enters modern standby, Windows expects all sensors and sensor microcontrollers to enter a standby or power-removed mode.
 
-The choice of a software power-management mechanism to use for sensor devices and the optional sensor microcontroller depends on how the sensor hardware is exposed to Windows by the device driver, and how the sensor hardware is physically connected to the SoC or core silicon. Windows supports two methods of exposing and connecting sensor devices. One method uses the built-in sensor HID class driver over an I2C connection, and the other requires a third-party driver that implements the ISensorDriver interface and calls the methods in the ISensorClassExtension interface. When the sensor hardware uses the sensor HID class driver over an I2C connection, the built-in HIDI2C driver transfers HID information over the I2C connection.
+The choice of a software power-management mechanism to use for sensor devices and the optional sensor microcontroller depends on how the sensor hardware is exposed to Windows by the device driver, and how the sensor hardware is physically connected to the SoC or core silicon. Windows supports two methods of exposing and connecting sensor devices. One method uses the built-in sensor HID class driver over an I2C connection, and the other requires a third-party driver that implements the Universal sensor driver interface and calls the methods in the SensorscxFunctions table. When the sensor hardware uses the sensor HID class driver over an I2C connection, the built-in HIDI2C driver transfers HID information over the I2C connection.
 
 The two options for connecting to a sensor or sensor microcontroller are compared in the following table.
 
@@ -148,9 +148,9 @@ The two options for connecting to a sensor or sensor microcontroller are compare
 <tr class="even">
 <td><p>Third-party sensor driver</p></td>
 <td><p>Sensor hardware connects directly to the SoC or core silicon over I2C or UART.</p></td>
-<td><p>Third-party driver that implements <strong>ISensorDriver</strong></p></td>
+<td><p>Third-party driver that implements <strong>SENSOR_CONTROLLER_CONFIG</strong></p></td>
 <td><p>Sensor device vendor.</p></td>
-<td><p>The sensor device vendor must provide a User-Mode Driver Framework (UMDF) driver that implements <strong>ISensorDriver</strong> interface. The UMDF driver communicates over I2C or UART.</p></td>
+<td><p>The sensor device vendor must provide a User-Mode Driver Framework (UMDF) driver that implements <strong>SENSOR_CONTROLLER_CONFIG</strong> interface. The UMDF driver communicates over I2C or UART.</p></td>
 </tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ The two options for connecting to a sensor or sensor microcontroller are compare
 
 For the HIDI2C option, the optional sensor microcontroller is physically connected to the SoC or core silicon through an I2C bus. The microcontroller exposes multiple top-level HID collections, one for each logical sensor device. For example, a compass sensor can be exposed through HID as a logical sensor device that is an aggregation of the accelerometer, gyrometer, and magnetometer sensors behind the sensor microcontroller.
 
-The other option requires a third-party sensor driver. The sensor microcontroller is physically connected to the core silicon through an I2C bus or UART. The sensor device vendor supplies a device driver that communicates with the sensor device over this connection, and that implements the **ISensorDriver** interface. This interface can be implemented multiple times—one time for each sensor that is behind the sensor microcontroller.
+The other option requires a third-party sensor driver. The sensor microcontroller is physically connected to the core silicon through an I2C bus or UART. The sensor device vendor supplies a device driver that communicates with the sensor device over this connection, and that implements the **SENSOR_CONTROLLER_CONFIG**. This can be implemented multiple times—one time for each sensor that is behind the sensor microcontroller.
 
 The selection of one of the two options for connecting to sensor hardware dictates the software power-management mechanisms that are needed to transition the sensor hardware to the standby or power-removed mode.
 
@@ -178,7 +178,7 @@ For any sensor device that is exposed to Windows through the HIDI2C protocol, Wi
 ## Third-party sensor driver
 
 
-If the sensor hardware is managed by a third-party sensor driver that implements the ISensorDriver interface, the third-party sensor driver is responsible for creating and coordinating all power management. The requirements of the third-party sensor driver for power management are a function of the standby power consumption of the sensor hardware.
+If the sensor hardware is managed by a third-party sensor driver that implements the SENSOR_CONTROLLER_CONFIG callbacks, the third-party sensor driver is responsible for creating and coordinating all power management. The requirements of the third-party sensor driver for power management are a function of the standby power consumption of the sensor hardware.
 
 If the sensor hardware has a standby power consumption of less than one milliwatt for all controlled sensor hardware, the sensor driver should automatically switch the device to the standby mode when the sensors (or all sensors on the microcontroller) are no longer in use. Shortly after entry to modern standby, Windows automatically stops the use of all sensors by disabling the operating system's use of sensors (for example, ambient light and rotation) and by suspending applications. The sensor driver should aggregate the state of all controlled sensor hardware and switch this hardware to the standby device power mode when all sensors are no longer in use.
 
@@ -186,7 +186,7 @@ The mechanism to switch the sensor device to the standby mode can be designed to
 
 Third-party sensor drivers should initiate a transition to D3 when the sensor device is ready to enter the standby or power-removed mode, even if the device is capable of using an in-band communications mechanism to switch to a power mode that consumes less than a milliwatt. The reason for this requirement is that many bus drivers in Windows track the device power state of their endpoint devices and power down only when all endpoint devices have powered down. For some SoC designs and connection buses (notably Universal Serial Bus (USB)), all endpoint devices and the host controller must be in D3 for the SoC to enter the lowest power state during modern standby. Inability to enter the lowest power state can easily prevent a system from meeting modern standby requirements for battery life.
 
-Third-party sensor drivers are expected to be built by using the Windows Driver Frameworks (WDF) and be based on the [SpbAccelerometer](http://go.microsoft.com/fwlink/p/?LinkID=256189) sample driver. The driver must use a power-managed queue and configure the D3 idle state through a call to the **IWDFDevice3::AssignS0IdleSettingsEx** method. The driver should use the **IWDFDevice2::StopIdle** and **IWDFDevice2::ResumeIdle** methods to indicate to WDF when the device is idle or active. The driver should also enable D3cold by setting the **ExcludeD3Cold** member of the **WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS** structure to **WdfFalse**. Enabling D3cold allows the platform to remove power from the sensor device after it becomes idle and enters the D3 state.
+Third-party sensor drivers are expected to be built by using the Windows Driver Frameworks (WDF) and be based on the [Adxl354acc](https://github.com/Microsoft/Windows-driver-samples/tree/master/sensors/ADXL345Acc) sample driver. The driver must use a power-managed queue and configure the D3 idle state through a call to the **IWDFDevice3::AssignS0IdleSettingsEx** method. The driver should use the **IWDFDevice2::StopIdle** and **IWDFDevice2::ResumeIdle** methods to indicate to WDF when the device is idle or active. The driver should also enable D3cold by setting the **ExcludeD3Cold** member of the **WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS** structure to **WdfFalse**. Enabling D3cold allows the platform to remove power from the sensor device after it becomes idle and enters the D3 state.
 
 **Note**  The driver must save all sensor device context before the device enters D3, and must restore all sensor device context after the device enters D0.
 If the sensor hardware has a standby power consumption of greater than one milliwatt, the sensor driver must perform a D3 transition and allow ACPI control methods to remove power from the sensor device. The sensor driver must save all required sensor device state so that power can be removed from the device during D3. The sensor hardware vendor should collaborate closely with the system integrator to ensure that the sensor hardware and driver performs the D3 transition reliably and quickly.
