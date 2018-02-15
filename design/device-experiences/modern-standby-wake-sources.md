@@ -360,7 +360,7 @@ The modern standby PC must also respond in real-time to changes in environmental
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>SD card insertion/removal (SDIO controller-attached)</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
@@ -370,14 +370,14 @@ The modern standby PC must also respond in real-time to changes in environmental
 <td><p>No</p></td>
 <td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Attaching/removing a dock</p></td>
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their current state.</p></td>
 <td><p>Attaching a dock should be treated the same as individually attaching each of the devices included in the dock.</p>
 <p>For example, attaching a dock alone should not cause the SoC to wake. Instead, detection of new devices (USB device, I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Headphone or microphone insertion/removal</p></td>
 <td><p>No</p></td>
 <td><p>Attaching a headphone or microphone to the system provides an interrupt to enable the audio stack to correctly route audio.</p></td>
