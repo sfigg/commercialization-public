@@ -58,8 +58,6 @@ The core silicon or SoC chip in a modern standby platform has one or more timers
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Wake the SoC from deep idle?</th>
-<th>Wake mechanism or path</th>
 <th>Turns on the display?</th>
 <th>Remarks</th>
 </tr>
@@ -67,8 +65,6 @@ The core silicon or SoC chip in a modern standby platform has one or more timers
 <tbody valign="top">
 <tr class="odd">
 <td><p>Always-on timer</p></td>
-<td><p>Yes</p></td>
-<td><p>SoC-specific, internal to the SoC</p></td>
 <td><p>No</p></td>
 <td><p>Each SoC has a different mechanism for programming the always-on timer.</p></td>
 </tr>
@@ -86,8 +82,6 @@ The system power button is a very common user-initiated wake source in a modern 
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Wake the SoC from deep idle?</th>
-<th>Wake mechanism or path</th>
 <th>Turns on the display?</th>
 <th>Remarks</th>
 </tr>
@@ -96,35 +90,25 @@ The system power button is a very common user-initiated wake source in a modern 
 <tr class="odd">
 <td><p>Power button</p></td>
 <td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
-<td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when the power-button interrupt occurs.</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows button</p></td>
-<td><p>Optional</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>Yes (if wake-enabled)</p></td>
 <td><p>The Windows power manager will be notified that the Windows button was pressed and will turn on the screen. The Windows button is considered to be user input.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Volume buttons</p></td>
 <td><p>N/A</p></td>
-<td><p>N/A</p></td>
-<td><p>N/A</p></td>
 <td><p>Volume buttons are expected to function while the system is playing audio, including when the screen is off. However, when the screen is off and no audio is being played, the volume buttons must not wake the system.</p></td>
 </tr>
 <tr class="even">
 <td><p>Rotation-lock button</p></td>
-<td><p>No</p></td>
-<td><p>N/A</p></td>
 <td><p>N/A</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Lid switch (mechanical or sensor-based)</p></td>
-<td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>GPIO interrupt</p></td>
 <td><p>There might be multiple types of lid switches, all of which are exposed to Windows in the same way. The lid switch can be a mechanical-contact switch or sensor-based switch. The platform can expose a lid switch for turning off the display when a tablet is attached to a keyboard dock that is closed. If the tablet has a cover, the sensor for detecting cover closing is also treated as a lid switch.</p>
 <p>Opening the lid, opening the cover, or adjusting the display to make it visible must cause the display to automatically turn on. The Windows power manager automatically turns on the display in response to the lid switch interrupt.</p></td>
@@ -143,8 +127,6 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Wake the SoC from deep idle?</th>
-<th>Wake mechanism or path</th>
 <th>Turns on the display?</th>
 <th>Remarks</th>
 </tr>
@@ -152,34 +134,24 @@ The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the 
 <tbody valign="top">
 <tr class="odd">
 <td><p>Wi-Fi radio</p></td>
-<td><p>GPIO interrupt</p></td>
-<td><p>Typically, GPIO interrupt</p>
-<p>(See Note following this table.)</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems. </p></td>
 </tr>
 <tr class="even">
 <td><p>Mobile broadband (MBB) radio</p></td>
-<td><p>USB in-band resume signaling</p></td>
-<td><p>Typically, GPIO interrupt</p>
-<p>(See Note following this table.)</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Bluetooth radio</p></td>
-<td><p>Typically, GPIO interrupt</p>
-<p>(See Note following this table.)</p></td>
 <td><p>N/A</p></td>
 <td><p>No</p></td>
 <td><p>Windows and its drivers are responsible for detecting the type of associated Bluetooth device. If a keyboard, mouse, or other user-input device is responsible for causing the Bluetooth radio to wake the SoC, the display will turn on. Other Bluetooth devices such as portable audio headphones will not cause the display to turn on.</p></td>
 </tr>
 <tr class="even">
 <td><p>Wired LAN (USB-attached, modern standby-capable)</p></td>
-<td><p>USB in-band resume signaling</p></td>
-<td><p>N/A</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p>Wired LAN devices in modern standby platforms or their supported docks must support pattern-match offloads in order to be modern standby-capable.</p></td>
@@ -203,8 +175,6 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Wake the SoC from deep idle?</th>
-<th>Wake mechanism or path</th>
 <th>Turns on the display?</th>
 <th>Remarks</th>
 </tr>
@@ -212,9 +182,6 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 <tbody valign="top">
 <tr class="odd">
 <td><p>Keyboard (integrated HIDI2C)</p></td>
-<td><p>Yes</p>
-<p>(See Note in Remarks.)</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when keyboard input is detected.</p>
 <p>All keys on the keyboard must generate a GPIO wake interrupt and cause the display to turn on (with the exception of volume buttons, which should not turn on the screen).</p>
@@ -229,22 +196,15 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 <tr class="even">
 <td><p>Keyboard (external USB)</p></td>
 <td><p>Yes</p></td>
-<td><p>In-band USB resume signaling</p></td>
-<td><p>Yes</p></td>
 <td><p>Depending on the USB host controller, more than one key press might be required to generate a resume event that causes the screen to turn on.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Keyboard (external Bluetooth)</p></td>
 <td><p>Yes</p></td>
-<td><p>Bluetooth radio event followed by GPIO interrupt</p></td>
-<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Touchpad (integrated HIDI2C)</p></td>
-<td><p>Yes</p>
-<p>(See Note in Remarks.)</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>Yes</p></td>
 <td><p>Moving a finger on the touchpad or exerting button activation force on the digitizer surface should cause a wake event.</p>
 <div class="alert">
@@ -260,9 +220,6 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 </tr>
 <tr class="odd">
 <td><p>Touchpad (external USB)</p></td>
-<td><p>Yes</p>
-<p>(See Note in Remarks.)</p></td>
-<td><p>In-band USB resume signaling</p></td>
 <td><p>Yes</p></td>
 <td><p>Moving a finger on the touchpad or exerting button activation force on the digitizer surface should cause a wake event.</p>
 <div class="alert">
@@ -279,56 +236,40 @@ In addition to buttons on the chassis, a modern standby PC might have other inpu
 <tr class="even">
 <td><p>Mouse (external USB)</p></td>
 <td><p>Yes</p></td>
-<td><p>In-band USB resume signaling</p></td>
-<td><p>Yes</p></td>
 <td><p>At a minimum, pressing any button on the mouse should generate a resume event and cause the screen to turn on. Depending on the USB host controller, more than one button press might be required to cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mouse (external Bluetooth)</p></td>
-<td><p>Yes</p></td>
-<td><p>Bluetooth radio event followed by GPIO interrupt</p></td>
 <td><p>Yes</p></td>
 <td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth radio, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
 </tr>
 <tr class="even">
 <td><p>Touch digitizer (integrated HIDI2C)</p></td>
 <td><p>No</p></td>
-<td><p>GPIO interrupt</p></td>
-<td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Touch digitizer (external USB)</p></td>
-<td><p>No</p></td>
-<td><p>In-band USB resume signaling</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Pen digitizer (integrated HIDI2C)</p></td>
 <td><p>No</p></td>
-<td><p>GPIO interrupt</p></td>
-<td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Pen digitizer (external USB)</p></td>
-<td><p>No</p></td>
-<td><p>In-band USB resume signaling</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Select sensors (such as proximity)</p></td>
 <td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
-<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>USB HID devices other than keyboards or mice</p></td>
-<td><p>No</p></td>
-<td><p>N/A</p></td>
 <td><p>N/A</p></td>
 <td><p></p></td>
 </tr>
@@ -356,8 +297,6 @@ When the user inserts or removes a connector or device, this event must always w
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Wake the SoC from deep idle?</th>
-<th>Wake mechanism or path</th>
 <th>Turns on the display?</th>
 <th>Remarks</th>
 </tr>
@@ -366,49 +305,35 @@ When the user inserts or removes a connector or device, this event must always w
 <tr class="odd">
 <td><p>USB device insertion</p></td>
 <td><p>No</p></td>
-<td><p>USB host controller wake signaling</p></td>
-<td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>USB device removal</p></td>
 <td><p>No</p></td>
-<td><p>USB host controller wake signaling</p></td>
-<td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>SD card insertion (SDIO controller-attached)</p></td>
-<td><p>Yes</p></td>
-<td><p>Card-detect GPIO interrupt</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>SD card removal (SDIO controller-attached)</p></td>
-<td><p>Yes</p></td>
-<td><p>Card-detect GPIO interrupt</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>SD card insertion (USB-attached)</p></td>
-<td><p>Yes</p></td>
-<td><p>In-band resume signaling</p></td>
 <td><p>No</p></td>
 <td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
 </tr>
 <tr class="even">
 <td><p>SD card removal (USB-attached)</p></td>
-<td><p>Yes</p></td>
-<td><p>In-band USB resume signaling</p></td>
 <td><p>No</p></td>
 <td><p>The SD controller selected must be capable of detecting card insertion and removal while in the USB suspend state drawing less than 1 milliwatt average.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Attaching a dock</p></td>
-<td><p>Yes</p></td>
-<td><p>Varies independently per device in the dock.</p></td>
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their current state.</p></td>
 <td><p>Attaching a dock should be treated the same as individually attaching each of the devices included in the dock.</p>
@@ -416,8 +341,6 @@ When the user inserts or removes a connector or device, this event must always w
 </tr>
 <tr class="even">
 <td><p>Removing a dock</p></td>
-<td><p>Yes</p></td>
-<td><p>Varies independently per device in the dock.</p></td>
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their previous state.</p></td>
 <td><p>Removing a dock should be treated the same as individually removing each of the devices included in the dock.</p>
@@ -425,43 +348,31 @@ When the user inserts or removes a connector or device, this event must always w
 </tr>
 <tr class="odd">
 <td><p>Headphone or microphone insertion</p></td>
-<td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>No</p></td>
 <td><p>Attaching a headphone or microphone to the system provides an interrupt to enable the audio stack to correctly route audio.</p></td>
 </tr>
 <tr class="even">
 <td><p>Headpohone or microphone removal</p></td>
-<td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>No</p></td>
 <td><p>Removing a headphone or microphone from the system generates an interrupt to enable the audio stack to correctly route audio.</p></td>
 </tr>
 <tr class="odd">
 <td><p>eSATA insertion</p></td>
-<td><p>Yes</p></td>
-<td><p>In-band resume signaling</p></td>
 <td><p>No</p></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p>eSATA removal</p></td>
-<td><p>Yes</p></td>
-<td><p>In-band resume signaling</p></td>
 <td><p>No</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion</p></td>
 <td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
-<td><p>Yes</p></td>
 <td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
 </tr>
 <tr class="even">
 <td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc ejection button</p></td>
-<td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>Yes</p></td>
 <td><p>For ZPODD, the event is a GPE event handled by a storage stack component.</p></td>
 </tr>
@@ -500,8 +411,6 @@ The modern standby PC must also respond in real-time to changes in environmental
 <thead>
 <tr class="header">
 <th>Device</th>
-<th>Wake the SoC from deep idle?</th>
-<th>Wake mechanism or path</th>
 <th>Turns on the display?</th>
 <th>Remarks</th>
 </tr>
@@ -510,30 +419,22 @@ The modern standby PC must also respond in real-time to changes in environmental
 <tr class="odd">
 <td><p>Power source change (AC to battery, or battery to AC)</p></td>
 <td><p>Yes</p></td>
-<td><p>GPIO interrupt from battery subsystem or power-management IC (PMIC)</p></td>
-<td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when the battery subsystem has indicated a power source change. The GPIO interrupt for power source changes must cause the ACPI _PSR method under the power supply device to be executed.</p>
 <p>The power subsystem must wake the SoC any time the power source changes, including when the system is attached or removed from a dock that has a battery or AC power source.</p></td>
 </tr>
 <tr class="even">
 <td><p>Thermal event</p></td>
-<td><p>Yes</p></td>
-<td><p>USB host controller wake signaling</p></td>
 <td><p>No</p></td>
 <td><p>All temperature sensors must wake the SoC from the deepest power state to indicate temperature change.</p>
 <p>ACPI firmware should monitor thermal zone temperature changes continuously during standby and when the SoC is in the deepest idle state. The ACPI firmware should report to the Windows thermal manager when the temperature rises above the trip points.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Battery charge completion</p></td>
-<td><p>Yes</p></td>
-<td><p>GPIO interrupt from battery subsystem or PMIC</p></td>
 <td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Battery threshold change</p></td>
-<td><p>Yes</p></td>
-<td><p>GPIO interrupt</p></td>
 <td><p>No</p>
 <p>(See Note following this table.)</p></td>
 <td><p>The battery subsystem must wake the SoC from its deepest idle state anytime the remaining capacity goes below the value specified by Windows in the _BTP control method.</p>
