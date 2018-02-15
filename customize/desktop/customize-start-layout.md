@@ -279,7 +279,7 @@ Here is an example showing the **Office 365** suite of tiles in the Start layout
 
 ### Other versions of Office
 
-If you're on Windows 10 version 1709 or earlier, or you have pre-installed a different version of Office to the device than Office 365, configure `LayoutModification.xml` to specify the version of Office that's pre-installed. In this case, the heading for the Microsoft Office suite of tiles is the default, **Create**.
+For Windows 10 version 1709 or earlier, or if you've pre-installed a different version of Office to the device than Office 365, configure `LayoutModification.xml` to specify the version of Office that's pre-installed. In this case, the heading for the Microsoft Office suite of tiles is the default, **Create**.
 
 If you've pre-installed Office Mobile, you only need to use the `AppendOfficeSuite` tag. For example:
 
@@ -315,7 +315,7 @@ Here is an example of a Start layout on a device where Office 2016 is pre-instal
 
 ### Download Office
 
-If you have not pre-installed Office to the device and want to append the "Download Office" tile to Start, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces the "My Office" tile that appears in the the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
+If you have not pre-installed Office to the device and want to append the **Download Office** tile to Start, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces the **My Office** tile that appears in the the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
 
 ```XML
 <LayoutModificationTemplate xmlns=http://schemas.microsoft.com/Start/2014/LayoutModification xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1">
