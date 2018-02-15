@@ -310,6 +310,9 @@ Here is an example of a Start layout on a device where Office 2016 is pre-instal
 
 ![Start layout with Office 2016](images/start-layout-office2016.png)
 
+> [!Note]
+> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
+
 ### Download Office
 
 If you have not pre-installed Office to the device and want to append the "Download Office" tile to Start, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces the "My Office" tile that appears in the the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
