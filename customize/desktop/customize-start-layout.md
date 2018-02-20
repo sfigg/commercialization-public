@@ -106,7 +106,7 @@ If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium 
 
 Here is an example that shows where the two OEM groups appear in Start:
 
-![Start layout with 2 OEM groups](images/start-layout-desktopbridge.png)
+![Start layout with 2 OEM groups](images/start-layout-oem-groups.png)
 
 In the example above, `StartTileGroupCellWidth` is set to 6, and `StartTileGroupsColumnCount` is set to 2. Subsequently, the Start layout shows 2 columns of tiles, and each row is 6 medium tiles long.
 
