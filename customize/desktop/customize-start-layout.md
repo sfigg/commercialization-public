@@ -106,7 +106,7 @@ If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium 
 
 Here is an example that shows where the two OEM groups appear in Start:
 
-![Start layout with 2 OEM groups](images/start-layout-desktop2016.png)
+![Start layout with 2 OEM groups](images/start-layout-desktopbridge.png)
 
 In the example above, `StartTileGroupCellWidth` is set to 6, and `StartTileGroupsColumnCount` is set to 2. Subsequently, the Start layout shows 2 columns of tiles, and each row is 6 medium tiles long.
 
@@ -245,15 +245,17 @@ The OEM-custom icon and supporting text in the tile must:
 
 The Microsoft Office suite of tiles appears at the top, left corner of the Start layout. There are a few different options available to customize this suite of tiles. The option you choose should reflect the version of Office you've pre-installed to the device.
 
-* If you've pre-installed any version of Office to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
-  * Use the `AppendOfficeSuiteChoice` tag to indicate the version of Office that's pre-installed (Office 365, Office 2016, or Office Mobile).
+* If you've pre-installed Office to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
+  * Use the `AppendOfficeSuiteChoice` tag to indicate the version of Office that's pre-installed (Office desktop bridge, or Office UWP).
   * The version of Office you indicate in `LayoutModification.xml` must match the version of Office that's pre-installed to the device.
 
 * Alternately, use the `AppendDownloadOfficeTile` tag in `LayoutModification.xml` if you have not pre-installed Office to the device and would like to add a **Download Office** tile to the suite.
 
-### Office 365
+### Office desktop bridge
 
-We recommend pre-installing Office 365 to the device over other versions of Office. In Windows 10 version 1803, you can change the heading of the Office suite of tiles to **Office 365** to better highlight the Office 365 apps you've made available on the device.
+We recommend pre-installing Office desktop bridge on all devices where the screen is 10.1 inches or larger. Office desktop bridge is included in the OEM Pre-installation Kit (OPK). After pre-installing Office desktop bridge, you can configure `LayoutModification.xml` to display each app (Word, Excel, PowerPoint, Skype, Outlook, OneNote, and OneDrive) as a tile in the Office suite of tiles.
+
+In Windows 10 version 1803, you can change the heading of the Office suite of tiles to **Office 365** to better highlight the Office 365 apps you've made available on the device. For older versions of Windows, you can set the heading to **Create**.
 
 To use the new **Office 365** heading and tile layout, add the following two tags to `LayoutModification.xml`:
 
@@ -280,11 +282,20 @@ Here is an example showing the **Office 365** suite of tiles in the Start layout
 > [!Note]
 > Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
 
-### Other versions of Office
+For older versions of Windows, use the **Create** heading and tile layout by adding the following two tags to `LayoutModification.xml`:
 
-For Windows 10 version 1709 or earlier, or if you've pre-installed a different version of Office to the device than Office 365, configure `LayoutModification.xml` to specify the version of Office that's pre-installed. In this case, the heading for the Microsoft Office suite of tiles is the default, **Create**.
+* `<AppendOfficeSuite/>`
+* `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
 
-If you've pre-installed Office Mobile, you only need to use the `AppendOfficeSuite` tag. For example:
+Here is an example showing the **Create** suite of tiles in the Start layout:
+
+![Start layout with Choice=DesktopBridge](images/start-layout-desktopbridge.png)
+
+### Office UWP
+
+We recommend pre-installing Office UWP on all devices where the screen size is 10 inches or smaller.
+
+After you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to properly configure the Start layout. For example:
 
 ```XML
  <LayoutModificationTemplate
@@ -296,22 +307,7 @@ If you've pre-installed Office Mobile, you only need to use the `AppendOfficeSui
 </LayoutModificationTemplate>
 ```
 
-If you've pre-installed Office 2016, you will need to use two tags: `<AppendOfficeSuite/>` and `<AppendOfficeSuiteChoice Choice="Desktop2016"/>`. For example:
-
-```XML
- <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    Version="1">
-    <AppendOfficeSuite/>
-    <AppendOfficeSuiteChoice Choice="Desktop2016"/>
-</LayoutModificationTemplate>
-```
-
-Here is an example of a Start layout on a device where Office 2016 is pre-installed:
-
-![Start layout with Choice=Desktop2016](images/start-layout-desktop2016.png)
+The UWP apps will appear as tiles in the Start layout under the heading **Create**.
 
 ### Download Office
 
@@ -360,7 +356,7 @@ Also include an Unattend.xml file specifying the same AppID like this:
 
 Some apps on the Start layout are downloaded dynamically after the Out of Box Experience (OOBE) completes. If the device is on a metered network, or without network connectivity, app downloads are paused, and the user will see down arrows instead of the app name on the app tiles, as in the following image.
 
-![Apps downloading to Start layout](images/start-layout-desktop2016.png)
+![Apps downloading to Start layout](images/start-layout-desktopbridgesubscription.png)
 
 The downloads start or resume after the network connects.
 
