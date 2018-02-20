@@ -323,6 +323,15 @@
 #### [Additional Resources](component-guidelines/additional-resources.md)
 ### [Universal Serial Bus (USB)](component-guidelines/universal-serial-bus--usb-.md)
 
+## [Whitepapers](whitepapers/index.md)
+### [Device Profile For Web Services Location Extension](whitepapers/device-profile-for-web-services-location-extension.md)
+### [HID Sensors Usages](whitepapers/hid-sensors-usages.md)
+### [Implementing Web Services on Devices for Printing](whitepapers/implementing-web-services-on-devices-for-printing.md)
+### [Integrating Ambient Light Sensors with Computers Running Windows 10 Creators Update](whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update.md)
+### [Integrating Motion and Orientation Sensors](whitepapers/integrating-motion-and-orientation-sensors.md)
+### [V4 print driver improvements](whitepapers/v4-print-driver-improvements.md)
+### [Windows Keyboard Layouts](whitepapers/windows-keyboard-layouts.md)
+
 ## [Windows Hardware Compatibility Program for Windows 10, version 1709](compatibility/1709/)
 
 ## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
