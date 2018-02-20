@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 04/10/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -106,7 +106,7 @@ If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium 
 
 Here is an example that shows where the two OEM groups appear in Start:
 
-![Start layout with 2 OEM groups](images/start-layout-oem-groups.png)
+![Start layout with 2 OEM groups](images/start-layout-desktop2016.png)
 
 In the example above, `StartTileGroupCellWidth` is set to 6, and `StartTileGroupsColumnCount` is set to 2. Subsequently, the Start layout shows 2 columns of tiles, and each row is 6 medium tiles long.
 
@@ -275,7 +275,7 @@ For example:
 
 Here is an example showing the **Office 365** suite of tiles in the Start layout:
 
-![Start layout with Office 365](images/start-layout-office365.png)
+![Start layout with Choice=DesktopBridgeSubscription](images/start-layout-desktopbridgesubscription.png)
 
 > [!Note]
 > Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
@@ -311,14 +311,20 @@ If you've pre-installed Office 2016, you will need to use two tags: `<AppendOffi
 
 Here is an example of a Start layout on a device where Office 2016 is pre-installed:
 
-![Start layout with Office 2016](images/start-layout-office2016.png)
+![Start layout with Choice=Desktop2016](images/start-layout-desktop2016.png)
 
 ### Download Office
 
-If you have not pre-installed Office to the device and want to append the **Download Office** tile to Start, add the `<AppendDownloadOfficeTile/>` tag to your `LayoutModification.xml` file. This replaces the **My Office** tile that appears in the the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
+If you have not pre-installed Office to the device, you can append the **Download Office** tile to Start. This replaces the **My Office** tile that appears in the the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
+
+To append the **Download Office** tile, add the `<AppendDownloadOfficeTile/>` tag in your `LayoutModification.xml` file. For example:
 
 ```XML
-<LayoutModificationTemplate xmlns=http://schemas.microsoft.com/Start/2014/LayoutModification xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1">
+<LayoutModificationTemplate
+   xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+   xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+   xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+   Version="1">
 <AppendDownloadOfficeTile/>
 </LayoutModificationTemplate>
 ```
@@ -354,7 +360,7 @@ Also include an Unattend.xml file specifying the same AppID like this:
 
 Some apps on the Start layout are downloaded dynamically after the Out of Box Experience (OOBE) completes. If the device is on a metered network, or without network connectivity, app downloads are paused, and the user will see down arrows instead of the app name on the app tiles, as in the following image.
 
-![Apps downloading to Start layout](images/dynamically-delivered-apps.png)
+![Apps downloading to Start layout](images/start-layout-desktop2016.png)
 
 The downloads start or resume after the network connects.
 
