@@ -245,11 +245,14 @@ The OEM-custom icon and supporting text in the tile must:
 
 The Microsoft Office suite of tiles appears at the top, left corner of the Start layout. There are a few different options available to customize this suite of tiles. The option you choose should reflect the version of Office you've pre-installed to the device.
 
-* If you've pre-installed Office to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
-  * Use the `AppendOfficeSuiteChoice` tag to indicate the version of Office that's pre-installed (Office desktop bridge, or Office UWP).
-  * The version of Office you indicate in `LayoutModification.xml` must match the version of Office that's pre-installed to the device.
+* If you've pre-installed Office desktop brdige to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
+  * Use the `AppendOfficeSuiteChoice` tag to indicate whether **Office 365** or **Create** is used as the heading for the Office suite of tiles.
 
-* Alternately, use the `AppendDownloadOfficeTile` tag in `LayoutModification.xml` if you have not pre-installed Office to the device and would like to add a **Download Office** tile to the suite.
+* If you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml`.
+* If you have not pre-installed Office to the device, you can use the `AppendDownloadOfficeTile` tag in `LayoutModification.xml` to add a **Download Office** tile to the suite.
+
+> [!Note]
+> The version of Office you indicate in `LayoutModification.xml` must match the version of Office that's pre-installed to the device.
 
 ### Office desktop bridge
 
