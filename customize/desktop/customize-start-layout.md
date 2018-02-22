@@ -294,7 +294,7 @@ This will set the heading to **Create**. For example:
 
 ### Office UWP
 
-We recommend pre-installing Office UWP on all devices where the screen size is smaller than 10".
+We recommend pre-installing Office UWP on all devices where the screen size is 10" or smaller.
 
 After you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to configure the Start layout. For example:
 
