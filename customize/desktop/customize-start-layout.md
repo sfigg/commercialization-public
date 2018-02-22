@@ -82,7 +82,7 @@ Here is how you set the size of the start layout, using LayoutModification.xml.
 
 ### Specify the number of tiles per row in the Start layout
 
-You can configure your Start layout to show either 6 or 8 medium tiles per row using `StartTileGroupCellWidth` in `LayoutModification.xml`. 
+You can configure your Start layout to show either 6 or 8 medium tiles per row using `StartTileGroupCellWidth` in `LayoutModification.xml`.
 
 We recommend you configure this setting to optimize the Start layout for the size of your device's screen. If this setting is not configured in `LayoutModification.xml`, Windows will use its own logic to set the number of tiles per row.
 
@@ -143,7 +143,7 @@ You can configure each of your tiles to launch:
 You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associated with the app. The AUMID is case-sensitive.
 
 > [!Important]
-> Universal apps or Store apps must be pinned to the Start layout to be pre-installed on the device, otherwise they will be removed on any system that uses that layout. Desktop apps do not have to be pinned to the Start layout to be pre-installed on the device.
+> In Windows 10 version 1803, apps no longer need to be pinned to the Start layout in order to be pre-installed to the device. Only pin apps for the purpose of displaying them in OEM Groups. See [Preinstallable apps for Windows 10 desktop](preinstall/preinstallable-apps-for-windows-10-desktop.md) for information on pre-installing apps to the device.
 
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
@@ -243,9 +243,9 @@ The OEM-custom icon and supporting text in the tile must:
 
 ## Customize the Office suite of tiles
 
-The Microsoft Office suite of tiles appears at the top, left corner of the Start layout. There are a few different options available to customize this suite of tiles. The option you choose should reflect the version of Office you've pre-installed to the device.
+The Microsoft Office suite of tiles appears at the top, left corner of the Start layout. There are a few different options available to customize this suite of tiles.
 
-* If you've pre-installed Office desktop brdige to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
+* If you've pre-installed Office Centennial to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
   * Use the `AppendOfficeSuiteChoice` tag to indicate whether **Office 365** or **Create** is used as the heading for the Office suite of tiles.
 
 * If you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml`.
@@ -254,13 +254,11 @@ The Microsoft Office suite of tiles appears at the top, left corner of the Start
 > [!Note]
 > The version of Office you indicate in `LayoutModification.xml` must match the version of Office that's pre-installed to the device.
 
-### Office desktop bridge
+### Office Centennial
 
-We recommend pre-installing Office desktop bridge on all devices where the screen is 10.1 inches or larger. Office desktop bridge is included in the OEM Pre-installation Kit (OPK). After pre-installing Office desktop bridge, you can configure `LayoutModification.xml` to display each app (Word, Excel, PowerPoint, Skype, Outlook, OneNote, and OneDrive) as a tile in the Office suite of tiles.
+We recommend pre-installing Office Centennial on all devices where the screen is larger than 10". Office Centennial is included in the OEM Pre-installation Kit (OPK). After pre-installing Office Centennial, each Office app (Word, Excel, PowerPoint, Skype, Outlook, OneNote, and OneDrive) appears as a tile in the Office suite of tiles.
 
-In Windows 10 version 1803, you can change the heading of the Office suite of tiles to **Office 365** to better highlight the Office 365 apps you've made available on the device. For older versions of Windows, you can set the heading to **Create**.
-
-To use the new **Office 365** heading and tile layout, add the following two tags to `LayoutModification.xml`:
+In Windows 10 version 1803, add the following two tags to `LayoutModification.xml`:
 
 * `<AppendOfficeSuite/>`
 * `<AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>`
@@ -278,27 +276,27 @@ For example:
 </LayoutModificationTemplate>
 ```
 
-Here is an example showing the **Office 365** suite of tiles in the Start layout:
+This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps you've made available on the device. For example:
 
 ![Start layout with Choice=DesktopBridgeSubscription](images/start-layout-desktopbridgesubscription.png)
 
 > [!Note]
 > Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
 
-For older versions of Windows, use the **Create** heading and tile layout by adding the following two tags to `LayoutModification.xml`:
+For older versions of Windows, and for devices shipping to India, China, or Japan, add the following two tags to `LayoutModification.xml`:
 
 * `<AppendOfficeSuite/>`
 * `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
 
-Here is an example showing the **Create** suite of tiles in the Start layout:
+This will set the heading to **Create**. For example:
 
 ![Start layout with Choice=DesktopBridge](images/start-layout-desktopbridge.png)
 
 ### Office UWP
 
-We recommend pre-installing Office UWP on all devices where the screen size is 10 inches or smaller.
+We recommend pre-installing Office UWP on all devices where the screen size is smaller than 10".
 
-After you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to properly configure the Start layout. For example:
+After you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to configure the Start layout. For example:
 
 ```XML
  <LayoutModificationTemplate
