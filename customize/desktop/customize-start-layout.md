@@ -246,7 +246,7 @@ The OEM-custom icon and supporting text in the tile must:
 The Microsoft Office suite of tiles is the first group of tiles in the Start layout. There are a few different options available to customize this suite of tiles.
 
 * If you've pre-installed Office Desktop Bridge to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
-* If you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml`.
+* If you've pre-installed Office Mobile to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml`.
 * If you have not pre-installed Office to the device, you can use the `AppendDownloadOfficeTile` tag in `LayoutModification.xml` to add a **Download Office** tile to the suite.
 
 > [!Note]
@@ -279,9 +279,9 @@ This will set the heading of the Office suite of tiles to **Office 365**, to hig
 ![Start layout with Choice=DesktopBridgeSubscription](images/start-layout-desktopbridgesubscription.png)
 
 > [!Note]
-> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
+> If a customer activates a version of Office which does not include all of the Office apps (for example, some versions of Office do not include Outlook), those apps are automatically uninstalled from the device. Subsequently, the tiles for the uninstalled apps will be removed from the **Office 365** Start layout.
 
-For older versions of Windows, and for devices shipping to India, China, or Japan, add the following two tags to `LayoutModification.xml`:
+For older versions of Windows, and for devices shipping with Activation for Office (AFO) Perpetual, add the following two tags to `LayoutModification.xml`:
 
 * `<AppendOfficeSuite/>`
 * `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
@@ -290,11 +290,14 @@ This will set the heading to **Create**. For example:
 
 ![Start layout with Choice=DesktopBridge](images/start-layout-desktopbridge.png)
 
-### Office UWP
+> [!Note]
+> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
 
-We recommend pre-installing Office UWP on all devices where the screen size is smaller than 10.1 inches.
+### Office Mobile
 
-After you've pre-installed Office UWP to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to configure the Start layout. For example:
+We recommend pre-installing Office Mobile on all devices where the screen size is smaller than 10.1 inches.
+
+After you've pre-installed Office Mobile to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to configure the Start layout. For example:
 
 ```XML
  <LayoutModificationTemplate
@@ -306,7 +309,7 @@ After you've pre-installed Office UWP to the device, use only the `AppendOfficeS
 </LayoutModificationTemplate>
 ```
 
-The UWP apps will appear as tiles in the Start layout under the heading **Create**.
+The apps will appear as tiles in the Start layout under the heading **Create**.
 
 ### Download Office
 
