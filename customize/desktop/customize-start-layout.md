@@ -12,12 +12,12 @@ ms.technology: windows-oem
 ---
 # Customize the Start layout
 
-You can customize the Start layout by creating a `LayoutModification.xml` file, and configuring the settings. To determine the overall look of the Start layout, the default layout is applied based on SKU and region, and then the `LayoutModification.xml` or `Unattend.xml` file is processed.
+You can customize the Start layout by creating a `LayoutModification.xml` file and configuring the settings. To determine the overall look of the Start layout, the default layout is applied based on SKU and region, and then the `LayoutModification.xml` or `Unattend.xml` file is processed.
 
 You can customize the following aspects of the Start layout:
 
 * The size, including the number of columns and number of tiles per row
-* The tiles in both OEM Groups, including the size, position, and the app or weblink associated with each tile
+* The tiles in both OEM Groups; including the size, position, and the app or weblink associated with each tile
 * The display layout for the Microsoft Office suite of tiles
 * Create Start layouts for each region you support
 
@@ -313,7 +313,7 @@ The apps will appear as tiles in the Start layout under the heading **Create**.
 
 ### Download Office
 
-If you have not pre-installed Office to the device, you can append the **Download Office** tile to Start. This replaces the **My Office** tile that appears in the the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
+If you have not pre-installed Office to the device, you can append the **Download Office** tile to Start. This replaces the **My Office** tile that appears in the middle of the second row with the classic desktop app download tile, and supports all OEM scenarios including Activation for Office (AFO) and Pre-install PC (PIPC).
 
 To append the **Download Office** tile, add the `<AppendDownloadOfficeTile/>` tag in your `LayoutModification.xml` file. For example:
 
