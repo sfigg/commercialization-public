@@ -295,9 +295,9 @@ This will set the heading to **Create**. For example:
 
 ### Office Mobile
 
-We recommend pre-installing Office Mobile on all devices where the screen size is smaller than 10.1 inches.
+We recommend pre-installing Office Mobile apps on all devices where the screen size is smaller than 10.1 inches.
 
-After you've pre-installed Office Mobile to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to configure the Start layout. For example:
+After you've pre-installed Office Mobile apps to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml` to configure the Start layout. For example:
 
 ```XML
  <LayoutModificationTemplate
@@ -309,7 +309,7 @@ After you've pre-installed Office Mobile to the device, use only the `AppendOffi
 </LayoutModificationTemplate>
 ```
 
-The apps will appear as tiles in the Start layout under the heading **Create**.
+The Office mobile apps will appear as tiles in the Start layout under the heading **Create**.
 
 ### Download Office
 
