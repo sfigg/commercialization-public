@@ -92,7 +92,7 @@ The following table shows Unbranded Boot settings and their values.
 </tr>
 <tr class="even">
 <td>DisplayDisabled</td>
-<td>Contains an integer that configures the device to display a blank screen when Industry 8.1 encounters an error that it cannot recover from.
+<td>Contains an integer that configures the device to display a blank screen when Windows encounters an error that it cannot recover from.
 <p>Set to 1 to display a blank screen on error; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
 <tr class="odd">
