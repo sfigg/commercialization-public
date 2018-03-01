@@ -102,14 +102,12 @@
     }
   ],
   "notification_subscribers": [
-    "joshbax@microsoft.com",
+    "brianlic@microsoft.com",
     "kenpacq@microsoft.com",
     "dawnwood@microsoft.com",
     "themar@microsoft.com",
-    "v-gmoor@microsoft.com",
-    "elkr@microsoft.com",
-    "alhopper@microsoft.com",
-    "sapaetsc@microsoft.com"
+    "elizapo@microsoft.com",
+    "alhopper@microsoft.com"
   ],
   "branches_to_filter": [
     ""
