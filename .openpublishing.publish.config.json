@@ -112,8 +112,7 @@
   "branches_to_filter": [
     ""
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/commercialization-public",
-  "git_repository_branch_open_to_public_contributors": "docs",
+  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/commercialization/_git/commercialization",
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
