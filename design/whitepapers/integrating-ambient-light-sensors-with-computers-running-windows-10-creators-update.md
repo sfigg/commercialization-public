@@ -14,13 +14,11 @@ ms.technology: windows-oem
 
 **Last updated:**
 
--   May 12, 2017
+-   Feb 20, 2018
 
 **Applies to:**
 
 -   Windows 10
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This paper provides information about ambient light sensor (ALS) features in the Windows 10 operating system. It provides guidelines for hardware manufacturers and original equipment manufacturers (OEMs) to integrate ALS hardware with computers that use the adaptive brightness feature and with applications that use light sensor data.
 
