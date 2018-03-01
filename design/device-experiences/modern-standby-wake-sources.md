@@ -1,5 +1,5 @@
 ---
-title: Modern standby wake sources
+title: Modern Standby wake sources
 description: This topic describes the scenarios in which the devices in this PC must be able to wake the processor.
 MS-HAID:
 - 'cstandby.connected\_standby\_wake\_sources'
@@ -16,27 +16,27 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Modern standby wake sources
+# Modern Standby wake sources
 
 
-A PC that supports the modern standby power model must be capable of waking from standby in response to certain events, even if the platform has entered a very low-power idle state.
+A PC that supports the Modern Standby power model must be capable of waking from standby in response to certain events, even if the platform has entered a very low-power idle state.
 
-This topic describes the scenarios in which the devices in this PC must be able to wake the processor. It also explains which wake events should turn the screen on and which wake events should allow the screen to stay turned off. System integrators should use this information to ensure that their hardware platforms, firmware, and software can configure wake sources to achieve the required behavior.
+This topic describes the types of wake sources that must be able to wake the processor. It also explains which wake events should turn the screen on and which wake events should allow the screen to stay turned off. System integrators should use this information to ensure that their hardware platforms, firmware, and software can configure wake sources to achieve the required behavior.
 
-## Overview of modern standby user experience for wake
+## Overview of Modern Standby user experience for wake
 
 
-The modern standby user experience is designed to model that of a cellular phone. When users finish using their phones, they press the system power button and the cell phone enters sleep mode. The phone remains asleep until the user presses the power button again, or a phone call, email, or instant message is received.
+The Modern Standby user experience is designed to model that of a cellular phone. When users finish using their phones, they press the system power button and the cell phone enters sleep mode. The phone remains asleep until the user presses the power button again, or a phone call, email, or instant message is received.
 
-Similarly, when a PC is in modern standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in modern standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The modern standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the modern standby PC, connected or not also has very long battery life in its off state, just like a cell phone.
+Similarly, when a PC is in Modern Standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in Modern Standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The Modern Standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the Modern Standby PC, connected or not also has very long battery life in its off state, just like a cell phone.
 
-Enabling the modern standby user experience requires all of the devices and software in the modern standby PC to actively and correctly participate in system power management. Achieving long standby battery life is primarily a function of allowing all devices, plus the core silicon or System on a Chip (SoC), to enter a very low-power idle state. During modern standby, the networking subsystem stays connected so that the system can wake and instantly respond to incoming emails or VoIP calls. Enabling the real-time nature of modern standby is primarily a function of platform devices waking the SoC for the correct events at the correct times.
+Enabling the Modern Standby user experience requires all of the devices and software in the Modern Standby PC to actively and correctly participate in system power management. Achieving long standby battery life is primarily a function of allowing all devices, plus the core silicon or System on a Chip (SoC), to enter a very low-power idle state. During Modern Standby, the networking subsystem stays connected so that the system can wake and instantly respond to incoming emails or VoIP calls. Enabling the real-time nature of Modern Standby is primarily a function of platform devices waking the SoC for the correct events at the correct times.
 
-Nearly all devices in the modern standby PC are expected to be capable of waking the SoC from its deepest idle power state. However, few devices should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is at the center of delivering the modern standby user experience. The following rules govern platform wake behavior:
+Nearly all devices in the Modern Standby PC are expected to be capable of waking the SoC from its deepest idle power state. However, few devices should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is at the center of delivering the Modern Standby user experience. The following rules govern platform wake behavior:
 
--   Wake source operation and scenarios are the same for all modern standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
+-   Wake source operation and scenarios are the same for all Modern Standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
 -   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet, clamshell, docked slate, and desktop.
--   Wake source operation may differ between AC and battery-powered states. Differences are noted in the tables below.
+-   Wake source operation may differ depending on whether the system is plugged in (AC power) or battery-powered (DC power). Differences are noted in the tables below.
 
 The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
 When my PC is asleep and on battery power, disconnect from the network:
@@ -44,7 +44,7 @@ When my PC is asleep and on battery power, disconnect from the network:
 	2. Always 
 	3. Managed by Windows  
 
-Most systems enable Connected Standby by default. However, on some systems, such as Cobalt, the default is "Managed by Windows."
+Most systems enable Connected Standby by default. However, on some systems the default is "Managed by Windows," which allows for better battery life for users that do not leverage connectivity UWPs (e.g., Skype). 
 
 
 ## Types of wake sources
@@ -53,27 +53,27 @@ Most systems enable Connected Standby by default. However, on some systems, such
 ### Real-time clock (RTC) or always-on timer
 
 
-The core silicon or SoC chip in a modern standby platform has one or more timers that are always powered on that so that Windows can schedule future work and place the SoC into a deep idle state. During standby, the always-on timer reliably wakes the SoC as programmed by the OS.
+The core silicon or SoC chip in a Modern Standby platform has one or more timers that are always powered on that so that Windows can schedule future work and place the SoC into a deep idle state. During standby, the always-on timer reliably wakes the SoC as programmed by the OS.
 
 
 ### Buttons and lid
 
 
-The system power button is a very common user-initiated wake source in a modern standby platform. All modern standby PCs must be designed so that the power button is always enabled to send a wake interrupt to the SoC. To deliver an instant-on experience, the power button must cause the SoC to wake from the deepest idle state without delay. Another common user-initiated wake source on clamshell form factor devices is opening the lid, which wakes the SoC. The Windows button is also able to wake the SoC. 
+The system power button is a very common user-initiated wake source in a Modern Standby platform. All Modern Standby PCs must be designed so that the power button is always enabled to send a wake interrupt to the SoC. To deliver an instant-on experience, the power button must cause the SoC to wake from the deepest idle state without delay. Another common user-initiated wake source on clamshell form factor devices is opening the lid, which wakes the SoC. The Windows button is also able to wake the SoC. 
 
 
 ### Communications devices
 
 
-The Wi-Fi and mobile broadband (MBB) devices are responsible for delivering the real-time and constant connectivity features of modern standby. They facilitate wake sources such as Universal Windows Platform (UWP) Applications notifications and syncing and Bluetooth notifications and syncing.
+The Wi-Fi, Ethernet, and mobile broadband (MBB) devices are responsible for delivering the real-time and constant connectivity features of Modern Standby. They facilitate wake sources such as Universal Windows Platform (UWP) Applications notifications and syncing and Bluetooth notifications and syncing.
 
 
 ### Input devices
 
 
-We recommend using HIDI2C for input peripherals whenever possible, but this is not a requirement. If necessary, USB can be used to connect to an input device such as a touchpad, touch digitizer, or pen digitizer. A precision touchpad must be capable of waking the system from deep idle, regardless of whether this device is connected to USB or I2C. As an option, a non-precision touchpad can wake the system from deep idle. Touch digitizers and pen digitizers must not wake the system from deep idle.
+We recommend using HIDI2C for input peripherals whenever possible for better power efficiency, but this is not a requirement. If necessary, USB can be used to connect to an input device such as a touchpad, touch digitizer, or pen digitizer. A precision touchpad must be capable of waking the system from deep idle, regardless of whether this device is connected to USB or I2C. As an option, a non-precision touchpad can wake the system from deep idle. Touch digitizers and pen digitizers must not wake the system from deep idle.
 
-In addition to buttons on the chassis, a modern standby PC might have other input devices physically integrated into the system or attached to the system directly or indirectly through a dock. When the user generates input through an input device, it must always wake the SoC from the deepest idle state and cause the display to turn on.
+In addition to buttons on the chassis, a Modern Standby PC might have other input devices physically integrated into the system or attached to the system directly or indirectly through a dock. When the user generates input through an input device, it must always wake the SoC from the deepest idle state and cause the display to turn on.
 
 
 ### Voice input
@@ -103,7 +103,7 @@ UWP applications can wake the SoC from the deepest idle state to sync and displa
 ### Remote Access
 
 
-Remote Desktop and File Sharing can wake the SoC from the deepest idle state on the client system when the system has a LAN connection.
+Remote Desktop and File Sharing can wake the SoC from the deepest idle state on the client system when the system has an Ethernet connection.
 
 
 ### Audio
@@ -115,7 +115,7 @@ Audio from internal speakers or Bluetooth speakers can wake the SoC, so that aud
 ### Environmental context changes
 
 
-The modern standby PC must also respond in real-time to changes in environmental conditions. The common cases are thermal events and power source change events.
+The Modern Standby PC must also respond in real-time to changes in environmental conditions. The common cases are thermal events and power source change events.
 
 
 ## Wakes SoC and **can** turn on display
@@ -252,7 +252,7 @@ The modern standby PC must also respond in real-time to changes in environmental
 
  
 
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VOIP calls.
+**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VoIP calls.
 
 
 ### Voice input
@@ -422,13 +422,13 @@ To configure location services settings and see which apps are using geofencing,
 <td><p>Remote Desktop</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p>The system must have a LAN connection. This is not enabled on Wi-Fi.</p></td>
+<td><p>The system must have an Ethernet connection. This is not enabled on Wi-Fi.</p></td>
 </tr>
 <tr class="even">
 <td><p>File Sharing</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p>The system must have a LAN connection. This is not enabled on Wi-Fi.</p></td>
+<td><p>The system must have an Ethernet connection. This is not enabled on Wi-Fi.</p></td>
 </tr>
 </tbody>
 </table>
@@ -537,16 +537,14 @@ To configure location services settings and see which apps are using geofencing,
 <td><p>Windows and its drivers are responsible for detecting the type of associated Bluetooth device. If a keyboard, mouse, or other user-input device is responsible for causing the Bluetooth radio to wake the SoC, the display will turn on. Other Bluetooth devices such as portable audio headphones will not cause the display to turn on.</p></td>
 </tr>
 <tr class="even">
-<td><p>Wired LAN (USB-attached, modern standby-capable)</p></td>
-<td><p>Wired LAN devices in modern standby platforms or their supported docks must support pattern-match offloads in order to be modern standby-capable.</p></td>
+<td><p>Wired LAN (USB-attached, Modern Standby-capable)</p></td>
+<td><p>Wired LAN devices in Modern Standby platforms or their supported docks must support pattern-match offloads in order to be Modern Standby-capable.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VOIP calls.
-
-**Note**  The interrupt mechanism is determined by the type of bus. For example, if Wi-Fi radio, MBB radio, or Bluetooth radio is connected via USB, it would use USB in-band resume signaling.
+**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VoIP calls.
 
 
 ### Windows Update
@@ -663,7 +661,7 @@ To configure location services settings and see which apps are using geofencing,
 <td><p>Audio local and streaming playback (Bluetooth speakers) during screen off</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
+<td><p>Low Power Audio is not currently supported for Bluetooth speakers, so audio will play during Modern Standby but not be low power.</p></td>
 </tr>
 </tbody>
 </table>
