@@ -91,7 +91,8 @@ The following table provides a description for how each edition-servicing option
 <p>Example:</p>
 <p><strong>Dism /Image:C:\test\offline /Set-Edition:</strong><em>&lt;edition name&gt;</em></p>
 <p>On a running Windows Server operating system only:</p>
-<p><strong>Dism /online /Set-Edition:</strong><em>&lt;edition name&gt;</em> <strong>/GetEula:c:\eulapathDism /online /Set-Edition:</strong><em>&lt;edition name&gt;</em><strong>/AcceptEula /ProductKey:12345-67890-12345-67890-12345</strong></p>
+<p><strong>Dism /online /Set-Edition:</strong><em>&lt;edition name&gt;</em> <strong>/GetEula:c:\eulapath</strong></p>
+<p><strong>Dism /online /Set-Edition:</strong><em>&lt;edition name&gt;</em> <strong>/AcceptEula /ProductKey:12345-67890-12345-67890-12345</strong></p>
 <p>Where <em>&lt;edition name&gt;</em> is the higher edition that you want to change to.</p></td>
 </tr>
 <tr class="odd">
