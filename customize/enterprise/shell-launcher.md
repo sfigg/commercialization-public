@@ -101,7 +101,7 @@ Use the following steps to create a provisioning package that contains the Shell
 
 ## Configure Shell Launcher
 
-There are a two ways you can configure Shell Launcher:
+There are two ways you can configure Shell Launcher:
 
 1. In Windows 10 version 1803, you can now configure Shell Launcher using the **ShellLauncher** node of the Assigned Access Configuration Service Provider (CSP). See [AssignedAccess CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp) for details.
 1. Use the Shell Launcher WMI providers directly in a PowerShell script or application.
