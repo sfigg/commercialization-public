@@ -16,13 +16,13 @@ This topic describes some of the screens users will see as they progress through
 
 The following screens are described below:
 
-1. Connect users to the network
-1. Create security questions for this account
-1. Set up Office 365 trial - add your credit card
+1. [Connect users to the network](#connect-users-to-the-network)
+1. [Create security questions for this account](#create-security-questions-for-this-account)
+1. [Set up Office 365 trial - add your credit card](#payment-information)
 
 ## Connect users to the network
 
-During the OOBE flow, the customer will see the **Let’s connect you to a network** screen. In Windows 10 build 1709, this screen is now shown prior to the EULA screen during OOBE. **Let’s connect you to a network** shows any connection options available to the user, including in-range Wi-Fi and Cellular data networks.
+During the OOBE flow, the customer will see the **Let’s connect you to a network** screen. This screen appears just prior to the EULA screen during OOBE. **Let’s connect you to a network** shows any connection options available to the user, including in-range Wi-Fi and Cellular data networks.
 
 ### Connect to Cellular and/or Wi-Fi networks
 
@@ -79,7 +79,7 @@ In Windows 10 version 1803, if a user opts-in to the free trial, they are prompt
 > [!Note]
 > The payment information screen may not appear in OOBE until after the public release of Windows 10, version 1803.
 
-If a user is eligible for a free trial of Office 365, and they already have a credit card on file for their Microsoft account, they will not be prompted to Add your credit card during OOBE. Instead, they will be asked to confirm that the credit card on file should be charged when the free trial expires.
+If a user is eligible for a free trial of Office 365, and they already have a credit card on file for their Microsoft account, they will not be prompted to **Add your credit card** during OOBE. Instead, they will be asked to confirm that the credit card on file should be charged when the free trial expires.
 
 Collecting this payment information during OOBE enables customers to seamlessly auto-renew Office 365 after the free trial, with no disruption to their service. The credit card will be saved to the user’s MSA, so it can be used for future purchases.
 
