@@ -77,11 +77,10 @@ In Windows 10 version 1803, if a user opts-in to the free trial, they are prompt
 ![Add credit card information screen in OOBE](images/add-credit-card-oobe.png)
 
 > [!Note]
-> If a user is eligible for a free trial of Office 365, and they already have a credit card on file for their Microsoft account, they will not be prompted to Add your credit card during OOBE. Instead, they will be asked to confirm that the credit card on file should be charged when the free trial expires.
+> The payment information screen may not appear in OOBE until after the public release of Windows 10, version 1803.
+
+If a user is eligible for a free trial of Office 365, and they already have a credit card on file for their Microsoft account, they will not be prompted to Add your credit card during OOBE. Instead, they will be asked to confirm that the credit card on file should be charged when the free trial expires.
 
 Collecting this payment information during OOBE enables customers to seamlessly auto-renew Office 365 after the free trial, with no disruption to their service. The credit card will be saved to the user’s MSA, so it can be used for future purchases.
 
 A credit card is now required to start a free trial of Office 365. If the user does not provide their payment information during OOBE, they will not be able to start a free trial at that time. The customer can start a free trial of Office 365 later but will still be required to enter their payment information.
-
-> [!Note]
-> The payment information screen may not appear in OOBE until after the public release of Windows 10, version 1803.

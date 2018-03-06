@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 12/19/2017
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -34,12 +34,12 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Get the latest from Windows**. Prior to Windows 10, version 1803, this screen was named **Your PC has an update waiting** and it appeared at the end of OOBE.
 1. **End User License Agreement (EULA)**
 1. **Sign in to, or create, a local account or Microsoft account (MSA)**
-   1. **Create security questions for a local account**. New in Windows 10, version 1803. Only displays if the user chose to create a local account, rather than logging into their MSA, on the previous screen. See [OOBE screen details](oobe-screen-details.md) to learn more about this new screen in OOBE.
+1. **Create security questions for a local account**. New in Windows 10, version 1803. Only displays if the user chose to create a local account, rather than logging into their MSA, on the previous screen. See [OOBE screen details](oobe-screen-details.md) to learn more about this new screen in OOBE.
 1. **Windows Hello setup**
 1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
 1. **Save files to OneDrive**
 1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
-   1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen.
+1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen.
 1. **Privacy settings**
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
