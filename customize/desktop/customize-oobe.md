@@ -44,7 +44,14 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
 
-You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
+> [!Note]
+> You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
+
+In Windows 10 version 1803, Windows Welcome is displayed to more users than ever as soon as they complete OOBE and reach their desktop.
+
+Example Windows Welcome experience:
+
+![Example Windows Welcome experience in Microsoft Edge](images/windows-welcome.png)
 
 ## In this section
 

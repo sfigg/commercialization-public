@@ -12,6 +12,14 @@ ms.technology: windows-oem
 ---
 # OOBE screen details
 
+This topic describes some of the screens users will see as they progress through OOBE. Although the screens described here are not customizable, the information is provided to give insight to the user's experience, and what the user can expect, as they work through OOBE.
+
+The following screens are described below:
+
+1. Connect users to the network
+1. Create security questions for this account
+1. Set up Office 365 trial - add your credit card
+
 ## Connect users to the network
 
 During the OOBE flow, the customer will see the **Let’s connect you to a network** screen. In Windows 10 build 1709, this screen is now shown prior to the EULA screen during OOBE. **Let’s connect you to a network** shows any connection options available to the user, including in-range Wi-Fi and Cellular data networks.
