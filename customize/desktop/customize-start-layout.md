@@ -245,7 +245,7 @@ The OEM-custom icon and supporting text in the tile must:
 
 The Microsoft Office suite of tiles is the first group of tiles in the Start layout. There are a few different options available to customize this suite of tiles.
 
-* If you've pre-installed Office Desktop Bridge to the device, use the `AppendOfficeSuite` tag in `LayoutModification.xml`.
+* If you've pre-installed Office Desktop Bridge to the device, use the `AppendOfficeSuite` and `AppendOfficeSuiteChoice` tags in `LayoutModification.xml`.
 * If you've pre-installed Office Mobile to the device, use only the `AppendOfficeSuite` tag in `LayoutModification.xml`.
 * If you have not pre-installed Office to the device, you can use the `AppendDownloadOfficeTile` tag in `LayoutModification.xml` to add a **Download Office** tile to the suite.
 
