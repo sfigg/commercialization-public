@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b9be4eb-a4ab-41fe-95a7-9f52ced71ad9
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -115,59 +115,6 @@ The following table shows Unbranded Boot settings and their values.
 <td>Contains an integer that suppresses the startup status text that displays during the OS loading phase.
 <p>Set to 1 to suppress the startup status text; otherwise; set to 0 (zero). The default value is 0.</p></td>
 </tr>
-<tr class="odd">
-<td>CrashDumpEnabled</td>
-<td>Contains an integer that specifies the type of information to capture in a dump (.dmp) file that is generated when the system stops unexpectedly. The integers and the types of capture information are explained in the next section.
-<p>The .dmp file is typically saved in %SystemRoot% as Memory.dmp.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Crash dump information types
-
-The following table shows the integers that can be specified in the **CrashDumpEnabled** setting to specify certain types of information to capture in the crash dump.
-
-<table>
-<thead valign="bottom">
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="odd">
-<td>1</td>
-<td>Records all the contents of system memory. This dump file may contain data from processes that were running when the information was collected.</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Records only the kernel memory. This dump file includes only memory that is allocated to the kernel, kernel-mode drivers, and other kernel-mode programs. It does not include unallocated memory or any memory that is allocated to user-mode programs. For most purposes, this kind of dump file is the most useful because it is significantly smaller than the complete memory dump file, but it contains information that is most likely to have been involved in the issue. If a second problem occurs, the dump file is overwritten with new information.</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Records the smallest amount of useful information that may help identify why the device stopped unexpectedly. This type of dump file includes the following information:
-<ul>
-<li>A list of loaded drivers.</li>
-<li>The processor context (PRCB) for the processor that stopped.</li>
-<li>The process information and kernel context (EPROCESS) for the process that stopped.</li>
-<li>The process information and kernel context (ETHREAD) for the thread that stopped.</li>
-<li>The kernel-mode call stack for the thread that stopped.</li>
-</ul>
-<p>This kind of dump file can be useful when space is limited. However, because of the limited information included, errors that were not directly caused by the thread that was running at the time of the problem may not be discovered by analyzing this file. The date is encoded in the file name. If a second problem occurs, the previous file is preserved and the new file is given a distinct name. A list of all small memory dump files is kept in the %SystemRoot%\Minidump folder.</p></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Records the smallest amount of useful information. This value produces the same results as entering a value of 3.</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>Records only the kernel memory. This value produces the same results as entering a value of 2. This is the default value.</td>
-</tr>
-<tr class="even">
-<td>Any other value</td>
-<td>Disables crash dump and does not record anything.</td>
-</tr>
 </tbody>
 </table>
 
@@ -176,11 +123,16 @@ The following table shows the integers that can be specified in the **CrashDumpE
 If Windows has not been installed and you are using Windows Configuration Designer to create installation media with settings for Unbranded Boot included in the image, or you are applying a provisioning package during setup, you must enable Unbranded Boot on the installation media with DISM in order for a provisioning package to successfully apply. First you have to create the image or package.
 
 1. Create a provisioning package or create a new Windows image in Windows Configuration Designer by following the instructions in [Create a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package).
-1. In the customization page, select **Runtime settings** &gt; **SMISettings** and then set the value for the boot screen settings. The following values are just examples.
+
+1. In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the boot screen settings. The following values are just examples.
    * **HideAllBootUI**=FALSE
    * **HideBootLogo**=FALSE
    * **HideBootStatusIndicator**=TRUE
    * **HideBootStatusMessage**=TRUE
+   * **CrashDumpEnabled**=Full dump
+
+   > [!Tip]
+   > See [SMISettings](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-smisettings) in the Windows Configuration Designer reference for more information about the available SMISettings.
 
 1. Once you have finished configuring the settings and building the package or image, you use DISM to apply the settings.
    1. Open a command prompt with administrator privileges.
