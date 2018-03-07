@@ -1,10 +1,10 @@
 ---
-author: Justinha
+author: themar
 Description: 'Manufacturing Windows Engineering Guide'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Manufacturing Windows Engineering Guide'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -105,8 +105,6 @@ Hardware decisions can also affect the manufacturing process. Besides the challe
 We have seen several instances where antimalware tools are doing a full disk scan during the user’s first sign-in. The scanning competes with critical tasks occurring during the first sign-in process, resulting in very slow first sign-in, a degraded Start experience and slow system performance. 
 
 For Windows Defender, this can be configured by adding unique identifiers to your images. To learn more, see [Configure a Trusted Image Identifier for Windows Defender](http://go.microsoft.com/fwlink/?LinkId=532775).
-
-### Windows Defender
 
 ## Pre-factory floor image updates
 
