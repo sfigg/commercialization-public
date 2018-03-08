@@ -1557,6 +1557,11 @@
         "redirect_document_id": true
     },
     {   
+        "source_path": "customize/power-settings/no-subgroup-settings-allow-wi-fi-networking-during-standby.md", 
+        "redirect_url": "https://docs.microsoft.com/windows-hardware/customize/power-settings/no-subgroup-settings-allow-networking-during-standby",
+        "redirect_document_id": true 
+    },
+    {   
         "source_path": "test/hlk/user/install-microsoft-sql-server.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/microsoft-sql-server-options", 
         "redirect_document_id": true
