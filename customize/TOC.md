@@ -496,7 +496,7 @@
 ### [Other power settings](power-settings/no-subgroup-settings.md)
 #### [Device idle policy](power-settings/no-subgroup-settings-device-idle-policy.md)
 #### [Prompt for password on resume](power-settings/no-subgroup-settings-prompt-for-password-on-resume.md)
-#### [Allow Wi-Fi networking during standby](power-settings/no-subgroup-settings-allow-wi-fi-networking-during-standby.md)
+#### [Allow networking during standby](power-settings/no-subgroup-settings-allow-networking-during-standby.md)
 ### [Legacy configuration options](power-settings/legacy-configuration-options.md)
 #### [PERFBOOSTMODE](power-settings/legacy-config-options-perfboostmode.md)
 #### [PERFBOOSTPOL](power-settings/legacy-config-options-perfboostpol.md)
