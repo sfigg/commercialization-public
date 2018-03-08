@@ -2,7 +2,7 @@
 title: Standards for a highly secure Windows 10 device
 description: This document provides guidance on the minimum standards for purchasing highly secure systems for Windows 10. 
 ms.author: dawnwood
-ms.date: 11/05/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -13,7 +13,6 @@ These standards are for general purpose laptops, tablets, 2-in-1’s, mobile wor
 Beyond the hardware and firmware configurations outlined below, Microsoft recommends running [Windows 10 S](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security) for security. Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date.
 
 ## Hardware
-> [!div class="mx-tdBreakAll"]
 | Feature | Requirement | Details |
 |---------|------------|----------|
 | Processor generation | Systems must be on the latest, certified silicon chip for the current release of Windows | Intel 7th generation processors (Intel i3/i5/i7/i9-7x), Core M3-7xxx , Xeon E3-xxxx, and Xeon E5-xxxx Processors and AMD 7th generation processors (A Series Ax-9xxx, E-Series Ex-9xxx, FX-9xxx)|
@@ -26,7 +25,6 @@ Beyond the hardware and firmware configurations outlined below, Microsoft recomm
 | RAM | Systems must have 8 gigabytes or more of system RAM |   |
 
 ##Firmware
-> [!div class="mx-tdBreakAll"]
 | Feature | Requirement | Details |
 |---------|-------------|---------|
 | Standard | Systems must have firmware that implements Unified Extension Firmware Interface (UEFI) version 2.4 or later | For more information, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM-UEFI.md) and [Unified Extensible Firmware Interface Forum specifications](http://uefi.org/specifications) |
