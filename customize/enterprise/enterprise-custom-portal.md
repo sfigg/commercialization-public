@@ -56,7 +56,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="odd">
 <td><p>Restrict access to apps</p></td>
-<td><p>[AppLocker](https://docs.microsoft.com/en-us/windows/client-management/mdm/applocker-csp)helps to secure your system by preventing the execution of unwanted applications.</p></td>
+<td><p>[AppLocker](https://docs.microsoft.com/en-us/windows/client-management/mdm/applocker-csp) helps to secure your system by preventing the execution of unwanted applications.</p></td>
 </tr>
 <tr class="even">
 <td><p>Suppress unwanted keyboard entries</p></td>

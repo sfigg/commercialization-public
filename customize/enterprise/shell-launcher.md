@@ -23,6 +23,9 @@ There are a few exceptions to the applications and executables you can use as a 
 * You cannot use a Universal Windows app as a custom shell.
 * You cannot use an application that launches a different process and exits as a custom shell. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, and restart the custom shell.
 
+> [!Note]
+> You cannot configure both Shell Launcher and [assigned access](assigned-access.md) on the same system.
+
 Shell Launcher processes the **Run** and **RunOnce** registry keys before starting the custom shell, so your custom shell doesn’t need to handle the automatic startup of other applications and services.
 
 Shell Launcher also handles the behavior of the system when your custom shell exits. You can configure the shell exit behavior if the default behavior does not meet your needs.
@@ -103,7 +106,7 @@ Use the following steps to create a provisioning package that contains the Shell
 
 There are two ways you can configure Shell Launcher:
 
-1. In Windows 10 version 1803, you can now configure Shell Launcher using the **ShellLauncher** node of the Assigned Access Configuration Service Provider (CSP). See [AssignedAccess CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp) for details.
+1. In Windows 10 version 1803, you can configure Shell Launcher using the **ShellLauncher** node of the Assigned Access Configuration Service Provider (CSP). See [AssignedAccess CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp) for details. Configuring Shell Launcher using this method automatically enables Shell Launcher on devices that support it.
 1. Use the Shell Launcher WMI providers directly in a PowerShell script or application.
 
 You can configure the following options for Shell Launcher:
