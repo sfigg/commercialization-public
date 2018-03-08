@@ -56,7 +56,7 @@ Specifies whether to allow networking during standby.
 <tr class="odd">
 <td><p>2</p></td>
 <td><p>Managed by Windows</p></td>
-<td><p>Let Windows manage connectivity during standby.</p></td>
+<td><p>Windows will manage network connectivity during standby.</p></td>
 </tr>
 </tbody>
 </table>
