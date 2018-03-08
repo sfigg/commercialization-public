@@ -13,7 +13,7 @@ ms.technology: windows-oem
 ---
 # Shell Launcher
 
-You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use any application or executable as your custom shell, such as a command window or a custom dedicated application.
+You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use almost any application or executable as your custom shell, such as a command window or a custom dedicated application.
 
 You can also configure Shell Launcher to launch different shell applications for different users or user groups.
 
@@ -106,7 +106,7 @@ Use the following steps to create a provisioning package that contains the Shell
 
 There are two ways you can configure Shell Launcher:
 
-1. In Windows 10 version 1803, you can configure Shell Launcher using the **ShellLauncher** node of the Assigned Access Configuration Service Provider (CSP). See [AssignedAccess CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp) for details. Configuring Shell Launcher using this method automatically enables Shell Launcher on devices that support it.
+1. In Windows 10 version 1803, you can configure Shell Launcher using the **ShellLauncher** node of the Assigned Access Configuration Service Provider (CSP). See [AssignedAccess CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/assignedaccess-csp) for details. Configuring Shell Launcher using this method also automatically enables Shell Launcher on the device, if the device supports it.
 1. Use the Shell Launcher WMI providers directly in a PowerShell script or application.
 
 You can configure the following options for Shell Launcher:
