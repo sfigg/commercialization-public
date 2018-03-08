@@ -23,7 +23,11 @@ This guide provides information about the Hardware Compatibility Program, the te
 
 If you’re developing for Windows 10, you need the latest Windows HLK. This kit helps you ensure that the drivers and the system you develop are certified as compatible with Windows 10. 
 
-- [Download HLK](https://go.microsoft.com/fwlink/p/?LinkId=859231)
+|To certify... | Download...|
+|-----------------|------------|
+| Windows 10, version 1709    |  [Windows HLK, version 1709](https://go.microsoft.com/fwlink/p/?LinkId=859231) |
+| Windows 10, version 1703<br>Windows 10, version 1607| [Windows HLK, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=733613)|
+| Windows Server 2016 |[Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)|
 
 >[!NOTE]
 >Windows HLK only supports testing on Windows 10 and Windows Server 2016 systems. For testing previous versions of Windows, use the [Hardware Certification Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124227(v=vs.85).aspx) for Windows 8.1. 
