@@ -53,7 +53,7 @@ When the requirements as listed above are met, System Information indicates the 
 This System Information status in Device Encryption Support means Windows detected at least one potential external DMA capable bus or device that may expose a DMA threat.
 To determine which bus or device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test.  
  
-To resolve this issue please contact the IHV(s) to determine if this device has no external DMA ports. If confirmed by the IHVs that the bus or device only has internal DMA, then the OEM can add this to the allowed list.   
+To resolve this issue, contact the IHV(s) to determine if this device has no external DMA ports. If confirmed by the IHVs that the bus or device only has internal DMA, then the OEM can add this to the allowed list.   
   
 To add a bus or device to the allowed list, navigate to registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses 
  
@@ -64,7 +64,8 @@ Add string (REG_SZ) name/value pairs for each flagged DMA capable bus that is de
 Ensure the IDs match the output from the HLK test.
 For example:  
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses] 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses]
+
 "Contoso PCI Express Root Port"= “PCI\VEN_1022&DEV_157C" 
 
 ## Disable BitLocker automatic device encryption
