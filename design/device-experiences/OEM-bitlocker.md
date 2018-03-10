@@ -48,6 +48,25 @@ When the requirements as listed above are met, System Information indicates the 
 2.	Right-click **System Information** app and click **Open as Administrator**. Allow the app to make changes to your device by clicking **Yes**. Some devices might require elevated permissions to view the encryption settings.
 3.	In **System Summary**, see **Device Encryption Support**.  The value will state if the device is encrypted, or if not, reasons why it is disabled. 
 
+## Un-allowed DMA capable bus/device(s) detected 
+
+This System Information status in Device Encryption Support means Windows detected at least one potential external DMA capable bus or device that may expose a DMA threat.
+To determine which bus or device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test.  
+ 
+To resolve this issue please contact the IHV(s) to determine if this device has no external DMA ports. If confirmed by the IHVs that the bus or device only has internal DMA, then the OEM can add this to the allowed list.   
+  
+To add a bus or device to the allowed list, navigate to registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses 
+ 
+Add string (REG_SZ) name/value pairs for each flagged DMA capable bus that is determined to be safe: 
+- Key: <device friendly name/description>  
+- Value: <PCI\VEN_<ID>&DEV_<ID>>.  
+ 
+Ensure the IDs match the output from the HLK test.
+For example:  
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses] 
+"Contoso PCI Express Root Port"= “PCI\VEN_1022&DEV_157C" 
+
 ## Disable BitLocker automatic device encryption
 OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable BitLocker automatic device encryption, you can use an Unattend file and set [PreventDeviceEncryption](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. 
 Alternately, you can update this registry key:
