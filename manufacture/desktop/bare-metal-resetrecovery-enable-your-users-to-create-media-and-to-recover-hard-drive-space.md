@@ -170,7 +170,7 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
 ## <span id="EnableEndUsers"></span><span id="enableendusers"></span><span id="ENABLEENDUSERS"></span>Enable users to create media
 
 
-Users can use this option to create recovery media, and to reclaim the hard drive space from the recovery image partition when needed.
+Users can use this option to create recovery media when needed.
 
 **Step 1: Add the configuration files to the destination computer**
 
