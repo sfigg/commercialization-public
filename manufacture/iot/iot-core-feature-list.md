@@ -74,7 +74,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_FTSER2K\_MAKERDRIVER**   | Adds the FTDI USB-to-Serial driver.                                                                                          |
 | **IOT\_CP210x\_MAKERDRIVER**    | Adds drivers for SiliconLabs CP210x-based USB to Serial adapters. This is new in Windows 10, version 1703.                                                                                   |
 | **IOT\_DMAP\_DRIVER**           | Adds DMAP drivers.                      |
-| **IOT\_CONTAINERS**             | Adds support for native [Windows Nano Server Containers](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server#install-base-container-images). These are supported only on Intel 64-bit platforms. This is new in Windows 10, version 1709. |
+| **IOT\_CONTAINERS**             | Adds support for native [Nano Server Containers](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server#install-base-container-images). These are supported only on Intel 64-bit platforms. This is new in Windows 10, version 1709. |
 
 ### Speech Data
 
