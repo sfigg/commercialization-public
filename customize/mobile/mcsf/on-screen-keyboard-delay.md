@@ -13,9 +13,9 @@ ms.technology: windows-oem
 ---
 # On-screen keyboard delay
 
-When an external keyboard (e.g. Bluetooth keyboard or barcode scanner which connects as HID keyboard) is used with a device, the on-screen keyboard is hidden. When the screen is touched, there is a hard-coded delay period of 60 seconds before the on-screen keyboard reappears. This customization enables you to change that delay period. Typically, the user selects an input field on the screen and then uses the external keyboard/barcode scanner to enter the data.
+When an external keyboard (e.g. Bluetooth keyboard or barcode scanner which connects as HID keyboard) is used with a device, the on-screen keyboard is hidden. When the screen is touched, there is a hard-coded delay period of 60 seconds before the on-screen keyboard reappears. Typically, the user selects an input field on the screen and then uses the external keyboard/barcode scanner to enter the data.
 
-The delay value is read on boot-up and cannot be changed during runtime. The optional customization specifies the delay in seconds with a default value of 60. If the value is set to 0, then the on-screen keyboard is not hidden.
+This customization enables you to change that delay period. The delay value is read on boot-up and cannot be changed during runtime. The optional customization specifies the delay in seconds with a default value of 60. If the value is set to 0, then the on-screen keyboard is not hidden.
 
 **Constraints:** ImageTimeOnly
 
