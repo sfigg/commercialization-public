@@ -44,7 +44,7 @@ When my PC is asleep and on battery power, disconnect from the network:
 	2. Always 
 	3. Managed by Windows  
 
-Most systems enable Connected Standby by default. However, on some systems the default is "Managed by Windows," which allows for better battery life for users that do not leverage connectivity UWPs (e.g., Skype). 
+Most systems enable Connected Standby by default.  
 
 
 ## Types of wake sources
