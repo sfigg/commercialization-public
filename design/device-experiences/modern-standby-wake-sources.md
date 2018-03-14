@@ -252,10 +252,6 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </tbody>
 </table>
 
- 
-
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include high priority notifications from lock-screen applications and VoIP calls.
-
 
 ### Voice input
 
@@ -546,7 +542,7 @@ To configure location services settings and see which apps are using geofencing,
 </table>
 
 
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VoIP calls.
+**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the network. Examples include high priority notifications from lock-screen applications and VoIP calls.
 
 
 ### Windows Update
