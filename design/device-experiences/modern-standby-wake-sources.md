@@ -35,8 +35,8 @@ Enabling the Modern Standby user experience requires all of the devices and soft
 All wake sources in the Modern Standby PC are expected to be capable of waking the SoC from its deepest idle power state. Some wake sources should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is central to delivering the Modern Standby user experience. The following rules govern platform wake behavior:
 
 -   Wake source operation and scenarios are the same for all Modern Standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
--   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet (lid open if attached to a keyboard), clamshell (lid open), docked slate, and desktop. If the lid is closed on a clamshell form factor device or a convertible tablet with an attached keyboard, then no wake sources are expected to turn on the display. Most wake sources are still expected to turn on the SoC; any differences are noted in the tables below.
--   Wake source operation may differ depending on whether the system is plugged in (AC power) or battery-powered (DC power). Differences are noted in the tables below.
+-   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet (lid open if attached to a keyboard), clamshell (lid open), docked slate, and desktop. If the lid is closed on a clamshell form factor device or a convertible tablet with an attached keyboard, then no wake sources are expected to turn on the display. Most wake sources are still expected to turn on the SoC; any exceptions are noted in the tables below.
+-   Wake source operation may differ depending on whether the system is plugged in (AC power) or on battery power (DC power). Differences are noted in the tables below.
 
 The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
 
@@ -207,7 +207,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <strong>Note</strong>  
 <ul>
 <li>We recommend a precision touchpad wakes the SoC, though this is optional for either a precision touchpad or a non-precision touchpad.</li>
-<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), the touchpad is not required to wake the SoC in that mode.</li>
+<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the touchpad not wake the SoC in that mode.</li>
 </ul>
 </div>
 <div>
@@ -223,7 +223,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <strong>Note</strong>  
 <ul>
 <li>We recommend a precision touchpad wakes the SoC, though this is optional for either a precision touchpad or a non-precision touchpad.</li>
-<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), the touchpad is not required to wake the SoC in that mode.</li>
+<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the touchpad not wake the SoC in that mode.</li>
 </ul>
 </div>
 <div>
