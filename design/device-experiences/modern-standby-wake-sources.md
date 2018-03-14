@@ -28,7 +28,7 @@ This topic describes the types of wake sources that must be able to wake the pro
 
 The Modern Standby user experience is designed to model that of a cellular phone. When users finish using their phones, they press the system power button and the cell phone enters sleep mode. The phone remains asleep until the user presses the power button again, or a phone call, email, or instant message is received.
 
-Similarly, when a PC is in Modern Standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in Modern Standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The Modern Standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the Modern Standby PC, connected or not, also has very long battery life in its off state, just like a cell phone.
+Similarly, when a PC is in Modern Standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in Modern Standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The Modern Standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the Modern Standby PC, connected or not, also has very long battery life in its screen-off state, just like a cell phone.
 
 Enabling the Modern Standby user experience requires all of the devices and software in the Modern Standby PC to actively and correctly participate in system power management. Achieving long standby battery life is primarily a function of allowing all devices, plus the core silicon or System on a Chip (SoC), to enter a very low-power idle state. During Modern Standby, the networking subsystem stays connected so that the system can wake and instantly respond to incoming emails or VoIP calls. Enabling the real-time nature of Modern Standby is primarily a function of platform devices waking the SoC for the correct events at the correct times.
 
@@ -37,6 +37,7 @@ All wake sources in the Modern Standby PC are expected to be capable of waking t
 -   Wake source operation and scenarios are the same for all Modern Standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
 -   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet (lid open if attached to a keyboard), clamshell (lid open), docked slate, and desktop. If the lid is closed on a clamshell form factor device or a convertible tablet with an attached keyboard, then no wake sources are expected to turn on the display. Most wake sources are still expected to turn on the SoC; any exceptions are noted in the tables below.
 -   Wake source operation may differ depending on whether the system is plugged in (AC power) or on battery power (DC power). Differences are noted in the tables below.
+-   Some wake sources are hardware-dependent, e.g. wake on fingerprint or wake on optical disc drive ejection (some Modern Standby systems may not have a fingerprint reader or optical disc drive). Modern Standby systems are recommended to support all wake scenarios for which they have the necessary hardware.
 
 The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
 
@@ -240,7 +241,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <td><p>Mouse (external Bluetooth)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth radio, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
+<td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth mouse, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Fingerprint reader</p></td>
@@ -527,7 +528,7 @@ To configure location services settings and see which apps are using geofencing,
 <tbody valign="top">
 <tr class="odd">
 <td><p>Wi-Fi radio</p></td>
-<td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems. </p></td>
+<td><p>The Wi-Fi wake source is not required for Disconnected Standby systems. </p></td>
 </tr>
 <tr class="even">
 <td><p>Mobile broadband (MBB) radio</p></td>
