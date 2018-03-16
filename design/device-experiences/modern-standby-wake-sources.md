@@ -42,9 +42,9 @@ All wake sources in the Modern Standby PC are expected to be capable of waking t
 The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
 
 When my PC is asleep and on battery power, disconnect from the network:
-	1. Never 
-	2. Always 
-	3. Managed by Windows  
+1. Never 
+2. Always 
+3. Managed by Windows  
 
 Most systems enable Connected Standby by default.  
 
