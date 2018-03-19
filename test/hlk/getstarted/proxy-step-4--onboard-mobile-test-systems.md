@@ -171,7 +171,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
 5.  To onboard the device, run the command from the elevated command prompt:
 
     ```syntax
-    KitsDeviceDetector.exe /machinepool:$\Pool /Physical:Fake_PC.dll /DeviceName:NAME_OF_DEVICE /SkipFFUCheck
+    KitsDeviceDetector.exe /machinepool:$\Pool /Physical:Fake_PC.dll /DeviceName:NAME_OF_DEVICE /DeviceId:<DeviceGUID> /SkipFFUCheck
     ```
 
     Example:
