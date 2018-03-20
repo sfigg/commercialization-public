@@ -28,23 +28,24 @@ This topic describes the types of wake sources that must be able to wake the pro
 
 The Modern Standby user experience is designed to model that of a cellular phone. When users finish using their phones, they press the system power button and the cell phone enters sleep mode. The phone remains asleep until the user presses the power button again, or a phone call, email, or instant message is received.
 
-Similarly, when a PC is in Modern Standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in Modern Standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The Modern Standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the Modern Standby PC, connected or not also has very long battery life in its off state, just like a cell phone.
+Similarly, when a PC is in Modern Standby, it looks and feels off—the screen is blanked, the system has no visible LED indicators, and there is no acoustic noise. However, a PC in Modern Standby remains on and connected to the Internet, just as the cell phone remains connected to the cellular network. (The Modern Standby PC uses any available network connection—Wi-Fi, mobile broadband (MBB)/cellular, or wired Ethernet.) And the Modern Standby PC, connected or not, also has very long battery life in its screen-off state, just like a cell phone.
 
 Enabling the Modern Standby user experience requires all of the devices and software in the Modern Standby PC to actively and correctly participate in system power management. Achieving long standby battery life is primarily a function of allowing all devices, plus the core silicon or System on a Chip (SoC), to enter a very low-power idle state. During Modern Standby, the networking subsystem stays connected so that the system can wake and instantly respond to incoming emails or VoIP calls. Enabling the real-time nature of Modern Standby is primarily a function of platform devices waking the SoC for the correct events at the correct times.
 
-Nearly all devices in the Modern Standby PC are expected to be capable of waking the SoC from its deepest idle power state. However, few devices should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is at the center of delivering the Modern Standby user experience. The following rules govern platform wake behavior:
+All wake sources in the Modern Standby PC are expected to be capable of waking the SoC from its deepest idle power state. Some wake sources should be capable of generating a wake signal for an event that would cause the system display to turn on. The difference between waking the SoC and turning on the display is central to delivering the Modern Standby user experience. The following rules govern platform wake behavior:
 
 -   Wake source operation and scenarios are the same for all Modern Standby PCs, regardless of whether they are based on the x86 or ARM processor architecture.
--   Wake source operation and scenarios are the same across all form factors, including slate, convertible tablet, clamshell, docked slate, and desktop.
--   Wake source operation may differ depending on whether the system is plugged in (AC power) or battery-powered (DC power). Differences are noted in the tables below.
+-   Wake source operation may differ depending on whether the system is plugged in (AC power) or on battery power (DC power). Differences are noted in the tables below.
+-   Some wake sources are hardware-dependent, e.g. wake on fingerprint or wake on optical disc drive ejection (some Modern Standby systems may not have a fingerprint reader or optical disc drive). Modern Standby systems are recommended to support all wake scenarios for which they have the necessary hardware.
 
 The remainder of this topic describes the different types of wake sources, along with additional information, such as whether the wake source can turn on a device's display, whether it is enabled by default, and any differences in operation depending on whether a device is on AC or DC power. Please note that the information in this topic applies to systems with Connected Standby enabled. Connected Standby is enabled by selecting "Never" in the following Power & sleep setting:
-When my PC is asleep and on battery power, disconnect from the network:
-	1. Never 
-	2. Always 
-	3. Managed by Windows  
 
-Most systems enable Connected Standby by default. However, on some systems the default is "Managed by Windows," which allows for better battery life for users that do not leverage connectivity UWPs (e.g., Skype). 
+When my PC is asleep and on battery power, disconnect from the network:
+1. Never 
+2. Always 
+3. Managed by Windows  
+
+Most systems enable Connected Standby by default.  
 
 
 ## Types of wake sources
@@ -206,7 +207,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <strong>Note</strong>  
 <ul>
 <li>We recommend a precision touchpad wakes the SoC, though this is optional for either a precision touchpad or a non-precision touchpad.</li>
-<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), the touchpad is not required to wake the SoC in that mode.</li>
+<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the touchpad not wake the SoC in that mode.</li>
 </ul>
 </div>
 <div>
@@ -222,7 +223,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <strong>Note</strong>  
 <ul>
 <li>We recommend a precision touchpad wakes the SoC, though this is optional for either a precision touchpad or a non-precision touchpad.</li>
-<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), the touchpad is not required to wake the SoC in that mode.</li>
+<li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the touchpad not wake the SoC in that mode.</li>
 </ul>
 </div>
 <div>
@@ -239,7 +240,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <td><p>Mouse (external Bluetooth)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth radio, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
+<td><p>At a minimum, pressing any button on the mouse will generate a resume event and cause the screen to turn on. It is an optional capability for the mouse to support generating a resume event and waking the system for any movement of the mouse other than pressing a button. For a USB-connected Bluetooth mouse, the Bluetooth radio event is not followed by a GPIO interrupt.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Fingerprint reader</p></td>
@@ -249,10 +250,6 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </tr>
 </tbody>
 </table>
-
- 
-
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VoIP calls.
 
 
 ### Voice input
@@ -526,7 +523,7 @@ To configure location services settings and see which apps are using geofencing,
 <tbody valign="top">
 <tr class="odd">
 <td><p>Wi-Fi radio</p></td>
-<td><p>The Wi-Fi wake-up source is not required for Disconnected Standby systems. </p></td>
+<td><p>The Wi-Fi wake source is not required for Disconnected Standby systems. </p></td>
 </tr>
 <tr class="even">
 <td><p>Mobile broadband (MBB) radio</p></td>
@@ -544,7 +541,7 @@ To configure location services settings and see which apps are using geofencing,
 </table>
 
 
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the Wi-Fi network. Examples include notifications from lock-screen applications and VoIP calls.
+**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the network. Examples include high priority notifications from lock-screen applications and VoIP calls.
 
 
 ### Windows Update
