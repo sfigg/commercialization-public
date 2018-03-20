@@ -55,18 +55,20 @@ To determine which bus or device triggered this error, run the Microsoft.UefiSec
  
 To resolve this issue, contact the IHV(s) to determine if this device has no external DMA ports. If confirmed by the IHVs that the bus or device only has internal DMA, then the OEM can add this to the allowed list.   
   
-To add a bus or device to the allowed list, navigate to registry key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses 
+To add a bus or device to the allowed list, navigate to registry key: 
+
+**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DmaSecurity\\AllowedBuses** 
  
 Add string (REG_SZ) name/value pairs for each flagged DMA capable bus that is determined to be safe: 
-- Key: <device friendly name/description>  
-- Value: <PCI\VEN_<ID>&DEV_<ID>>.  
+
+- Key: *device friendly name*/*description*  
+- Value: PCI\VEN\_*ID*&DEV\_*ID*.  
  
-Ensure the IDs match the output from the HLK test.
-For example:  
+Ensure the IDs match the output from the HLK test. For example, create the following Registry entry:  
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses]
+**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DmaSecurity\\AllowedBuses!Contoso PCI Express Root Port**
 
-"Contoso PCI Express Root Port"= “PCI\VEN_1022&DEV_157C" 
+as REG_SZ data type where the value = "PCI\\VEN\_*1022*&DEV\_*157C*" 
 
 ## Disable BitLocker automatic device encryption
 OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable BitLocker automatic device encryption, you can use an Unattend file and set [PreventDeviceEncryption](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. 
