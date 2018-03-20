@@ -51,7 +51,6 @@ When the requirements as listed above are met, System Information indicates the 
 ## Un-allowed DMA capable bus/device(s) detected 
 
 This System Information status in Device Encryption Support means Windows detected at least one potential external DMA capable bus or device that may expose a DMA threat.
-To determine which bus or device triggered this error, run the Microsoft.UefiSecureBootLogo.CS.HardwareSecurity.Tests.ProbeForInsecureDirectMemoryAccessBusses HLK test.  
  
 To resolve this issue, contact the IHV(s) to determine if this device has no external DMA ports. If confirmed by the IHVs that the bus or device only has internal DMA, then the OEM can add this to the allowed list.   
   
@@ -61,14 +60,14 @@ To add a bus or device to the allowed list, navigate to registry key:
  
 Add string (REG_SZ) name/value pairs for each flagged DMA capable bus that is determined to be safe: 
 
-- Key: *device friendly name*/*description*  
+- Key: *device friendly name* /*description*  
 - Value: PCI\VEN\_*ID*&DEV\_*ID*.  
  
-Ensure the IDs match the output from the HLK test. For example, create the following Registry entry:  
+Ensure the IDs match the output from the HLK test. For example, create the following Registry entry as REG_SZ data type:  
 
 **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DmaSecurity\\AllowedBuses!Contoso PCI Express Root Port**
 
-as REG_SZ data type where the value = "PCI\\VEN\_*1022*&DEV\_*157C*" 
+Where the value = "PCI\\VEN\_1022&DEV\_157C" 
 
 ## Disable BitLocker automatic device encryption
 OEMs can choose to disable device encryption and instead implement their own encryption technology on a device. To disable BitLocker automatic device encryption, you can use an Unattend file and set [PreventDeviceEncryption](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-securestartup-filterdriver-preventdeviceencryption) to True. 
