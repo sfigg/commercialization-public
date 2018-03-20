@@ -259,6 +259,7 @@
 #### [Customizations for keyboard](mobile/mcsf/customizations-for-keyboard.md)
 ##### [Disable text correction and suggestions](mobile/mcsf/disabling-text-correction-and-suggestions.md)
 ##### [Hardware keyboard character repeats hold time and delay](mobile/mcsf/hardware-keyboard-character-repeats-hold-time-and-delay.md)
+##### [On-screen keyboard delay](mobile/mcsf/on-screen-keyboard-delay.md)
 ##### [Pre-enabled keyboard](mobile/mcsf/pre-enabled-keyboard.md)
 ##### [Text correction and suggestions](mobile/mcsf/text-correction-and-suggestions.md)
 
