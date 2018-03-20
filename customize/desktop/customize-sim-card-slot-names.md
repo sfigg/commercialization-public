@@ -37,3 +37,20 @@ The SIM card slot names that you choose are displayed in **Settings**, under **N
 
 1. Replace "Your SIM name 1" and "Your SIM name 2" with the desired names for your SIM card slots. Save your changes.
 1. Create a resource-only .dll for the localized versions of your SIM card slot names. See [Create a resource-only .dll for localized strings](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/create-a-resource-only-dll-for-localized-strings) for instructions.
+1. In your resource-only .dll, set the `BaseD11` asset to point to the location of your base MUI DLL file. For example: `C:\Path\DisplayStrings.dll`.
+1. Add the language MUI packages (*.dll.mui) for all the languages you are supporting and have localized strings for. To do this:
+   * Set the asset's `Name` to `LanguageDll/$(langid)` where `$(langid)` corresponds to the language. For example: `LanguageDll/en-US`.
+   * Set the asset's `Source` to the location of the .dll.mui file for that language. For example: `C:\Path\en-us\DisplayStrings.dll.mui`.
+   * Repeat these steps for other languages. For example, the following XML has entries for en-US, fr-CA, and es-MX languages.
+
+   ```XML
+   <Asset Name="LanguageDll/en-US" Source="C:\Path\en-us\DisplayStrings.dll.mui" />
+   <Asset Name="LanguageDll/fr-CA" Source="C:\Path\fr-CA\DisplayStrings.dll.mui" />
+   <Asset Name="LanguageDll/es-MX" Source="C:\Path\es-MX\DisplayStrings.dll.mui" />
+   ```
+
+## Related topics
+
+[Create a resource-only .dll for localized strings](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/create-a-resource-only-dll-for-localized-strings)
+
+[Customizations for mobile devices](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/windows-10-mobile-customizations-portal)
