@@ -143,7 +143,7 @@ You can configure each of your tiles to launch:
 You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associated with the app. The AUMID is case-sensitive.
 
 > [!Important]
-> Beginning in Windows 10 version 1803, you no longer need to pin apps to the Start layout to pre-install them on the device, as long as you include the new **region** parameter when pre-installing them using DISM. You should only pin apps to Start if you'd like them to appear in one of the OEM Groups. See [Preinstall apps using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/preinstall-apps-using-dism) for guidance on using the new parameter.
+> In Windows 10 version 1803, all apps must either be pinned to the Start layout, and/or pre-installed using the new region parameter in DISM, otherwise they will be removed on any system that uses that layout. See Preinstall apps using DISM for guidance on using this new parameter.  See [Preinstall apps using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/preinstall-apps-using-dism) for guidance on using the new parameter.
 
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
