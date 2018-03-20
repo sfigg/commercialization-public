@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Customize SIM card slot names
 
-You can customize the names of SIM card slots on the device to more easily differentiate between the them. For example, if the device has both an embedded SIM slot and an external SIM slot, customizing the names will help your customers understand which is which.
+You can customize the names of SIM card slots on the device to more easily differentiate between them. For example, if the device has both an embedded SIM slot and an external SIM slot, customizing the names will help your customers understand which is which.
 
 > [!Important]
 > Only devices with a Dual SIM Single Activation (DSSA) configuration support this customization.
@@ -35,7 +35,7 @@ The SIM card slot names that you choose are displayed in **Settings**, under **N
     </wap-provisioningdoc>
    ```
 
-1. Replace "Your SIM name 1" and "Your SIM name 2" with the desired names for your SIM card slots. Save your changes.
+1. Replace "Your SIM name 1" and "Your SIM name 2" with the desired names for your SIM card slots.
 1. Create a resource-only .dll for the localized versions of your SIM card slot names. See [Create a resource-only .dll for localized strings](https://docs.microsoft.com/en-us/windows-hardware/customize/mobile/mcsf/create-a-resource-only-dll-for-localized-strings) for instructions.
 1. In your resource-only .dll, set the `BaseD11` asset to point to the location of your base MUI DLL file. For example: `C:\Path\DisplayStrings.dll`.
 1. Add the language MUI packages (*.dll.mui) for all the languages you are supporting and have localized strings for. To do this:
