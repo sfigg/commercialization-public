@@ -18,7 +18,7 @@ The following screens are described below:
 
 1. [Connect users to the network](#connect-users-to-the-network)
 1. [Create security questions for this account](#create-security-questions-for-this-account)
-1. [Set up Office 365 trial - add your credit card](#payment-information)
+1. [Set up Office](#set-up-office)
 
 ## Connect users to the network
 
@@ -50,7 +50,7 @@ If a newer version of Windows has become available since the device was shipped,
 
 ## Create security questions for this account
 
-In Windows 10 version 1803, Windows introduces password recovery security questions to accompany the local account registered to a Windows-based device. If a user is unable to remember the password required to login to the local account, they can instead correctly answer their 3 security questions, and Windows will allow them to reset the password and login to the device.
+During the OOBE flow, users are prompted to either create or sign in with a local account, or a Microsoft account (MSA). In Windows 10 version 1803, Windows introduces password recovery security questions to accompany the local account registration process in OOBE. If a user is unable to remember the password required to login to the local account, they can instead correctly answer their 3 security questions, and Windows will allow them to reset the password and login to the device.
 
 This is a change from previous versions of Windows, where a user was only able to create a password hint to accompany their local account. Previously, if a user couldn’t remember their local account password based on the hint, they were required to contact Microsoft support for a device reset.
 
@@ -66,11 +66,27 @@ Users can create and update the security questions associated with their local a
 
 The option to create security questions from the **Settings** app is also available to users who upgrade to Windows 10 version 1803 from a previous version of Windows, and to any new local account created for a device running Windows 10 version 1803.
 
-## Payment information
+## Set up Office
 
-If a user is eligible for a free trial of Office 365, as determined by the Microsoft Account (MSA) they logged in with, they will see the **Set up Office 365 trial** screen in OOBE. The user can choose to begin the trial by clicking **Yes**, or can opt-out of the trial by clicking **No**.
+Users will see the **Set up Office** screens in OOBE if they are connected to a network, and have provided their Microsoft account (MSA) information. Content on the page will vary depending on the user’s account type, and the version of Office pre-installed to the device.
 
-![Set up Office 365 trial screen in OOBE](images/set-up-office365-trial-oobe.png)
+### Office 365 subscribers
+
+If Office 365 (Office Desktop Bridge) is pre-installed to the device, and the user's MSA is already associated with an Office 365 subscription, they will see the following **Set up Office 365** screen:
+
+![Set up Office 365 - existing O365 subscriber](images/oobe-set-up-office-o365-subscriber.png)
+
+The screen reminds the user of their existing subscription, and asks if they would like to have their Office apps ready by the time OOBE is complete.
+
+### Office 365 free trial
+
+If Office 365 (Office Desktop Bridge) is pre-installed to the device, and the user's MSA is eligible for a free trial, they will see the following **Set up Office 365 trial** screen:
+
+![Set up Office 365 - trial screen in OOBE](images/set-up-office365-trial-oobe.png)
+
+The user can choose to begin the trial by clicking **Yes**, or can opt-out of the trial by clicking **No**.
+
+### Add credit card information
 
 In Windows 10 version 1803, if a user opts-in to the free trial, they are prompted to enter the credit card to charge when the free trial expires.
 
@@ -84,3 +100,11 @@ If a user is eligible for a free trial of Office 365, and they already have a cr
 Collecting this payment information during OOBE enables customers to seamlessly auto-renew Office 365 after the free trial, with no disruption to their service. The credit card will be saved to the user’s MSA, so it can be used for future purchases.
 
 A credit card is now required to start a free trial of Office 365. If the user does not provide their payment information during OOBE, they will not be able to start a free trial at that time. The customer can start a free trial of Office 365 later but will still be required to enter their payment information.
+
+### Office 2016
+
+If Office 2016 (Activation For Office (AFO) Perpetual) is pre-installed to the device, users will see the following **Set up Office** screen:
+
+![Set up Office - Office 2016 preinstalled](images/oobe-set-up-office-afo.jpg)
+
+The screen informs the user that Office 2016 is included with their device, and asks if they would like to have their Office apps ready by the time OOBE is complete.

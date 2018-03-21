@@ -290,8 +290,9 @@ This will set the heading to **Create**. For example:
 
 ![Start layout with Choice=DesktopBridge](images/start-layout-desktopbridge.png)
 
-> [!Note]
-> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
+Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
+
+We advise using these tags when AFO Perpetual (Office 2016) is pre-installed to the device to avoid customer confusion. The new Office block of tiles is labeled **Office 365**, which is not the same as Office 2016.
 
 ### Office Mobile
 
