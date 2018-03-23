@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 03/16/2018
+ms.date: 03/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -27,7 +27,7 @@ The SIM card slot names that you choose are displayed in **Settings**, under **N
    ```XML
     <wap-provisioningdoc>
         <characteristic type="Registry">
-            <characteristic type="HKLM\Software\Microsoft\Cellular\MVSettings\DeviceSpecific\CellUX>
+            <characteristic type="HKLM\Software\Microsoft\Cellular\MVSettings\DeviceSpecific\CellUX">
                 <parm name="SlotSelectionSim1Name" value="Your SIM name 1" datatype="string"/>
                 <parm name="SlotSelectionSim1Name" value="Your SIM name 2" datatype="string"/>
             </characteristic>
