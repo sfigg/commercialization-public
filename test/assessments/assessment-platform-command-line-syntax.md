@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 34286b79-1867-4d0d-8b65-6a0c6a7e5df8
 ms.mktglfcycl: plan
 ms.sitesec: msdn
-ms.author: sapaetsc
+ms.author: eliotgra
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -67,7 +67,7 @@ AXE.exe uses the following syntax:
 <tr class="even">
 <td><p><strong>/Analyze</strong> <em>results_file</em></p></td>
 <td><p>Reanalyzes the results from a job (.jobx) file specified by <em>results_file</em>. This option requires a job from a package or assessment manifest directly to locate the assessments to reanalyze.</p>
-<!--sapaetsc, 2017-10-26: I haven't figured out a functional example for /Analyze that definitely seems to work.
+<!--joshbax, 2017-10-26: I haven't figured out a functional example for /Analyze that definitely seems to work.
 <p>Example:</p>
 <code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx /Analyze C:\\Assessments\\MyResults\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml</code>-->
 </td>
@@ -75,7 +75,7 @@ AXE.exe uses the following syntax:
 <tr class="odd">
 <td><p><strong>/Assessment</strong> <em>assessment_file</em></p></td>
 <td><p>Specifies the path and file name of an assessment manifest, <em>assessment_file</em>, to reanalyze in the results file specified.</p>
-<!--sapaetsc, 2017-10-26: I haven't figured out a functional example for /Assessment that definitely seems to work.
+<!--joshbax, 2017-10-26: I haven't figured out a functional example for /Assessment that definitely seems to work.
 <p>Example:</p>
 <code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx /Analyze %UserProfile%\\AppData\\Local\\Microsoft\\Axe\\Results\\JobResults_COMPUTERNAME_2017-1026_0929-27.803\\JobResults_COMPUTERNAME_2017-1026_0929-27.803.xml /Assessment </code>-->
 </td>

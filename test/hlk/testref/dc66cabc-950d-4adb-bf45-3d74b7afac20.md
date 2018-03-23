@@ -2,8 +2,8 @@
 title: D3D12 - DXIL Wave Op Test - WaveActiveMax instruction
 Description: D3D12 - DXIL Wave Op Test - WaveActiveMax instruction
 ms.assetid: 
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

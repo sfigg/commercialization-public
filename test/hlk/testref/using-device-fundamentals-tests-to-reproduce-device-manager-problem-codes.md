@@ -1,8 +1,8 @@
 ---
 title: Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes
 description: Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

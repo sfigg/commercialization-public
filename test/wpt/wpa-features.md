@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c62da8f0-9bda-4e6d-b0c1-55f17768eace
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: sapaetsc
+ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -72,7 +72,7 @@ This section describes features of Windows Performance Analyzer.
 <td><p>[Microsoft Store App Analysis](microsoft-store-app-analysis.md)</p></td>
 <td><p>Describes features in WPA that you can use for Microsoft Store App analysis.</p></td>
 </tr>
-<!--Not ready to be linked. [sapaetsc, 2016-09-02]
+<!--Not ready to be linked. [joshbax, 2016-09-02]
 <tr class="even">
 <td><p>[Reference sets and the system-wide effects on memory use](wpa-reference-set.md)</p></td>
 <td><p>Describes how and why to analyze memory use by recording the trace of a reference set,
