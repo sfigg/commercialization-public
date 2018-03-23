@@ -16,6 +16,7 @@
 ### [Customize the Windows performance power slider](desktop/customize-power-slider.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Get Help app](desktop/customize-get-help-app.md)
+### [Customize SIM card slot names](desktop/customize-sim-card-slot-names.md)
 ### [Customize a Specific Absorption Rate mapping table](desktop/customize-sar-mapping-table.md)
 
 ### [Windows System Image Manager Technical Reference](desktop/wsim/windows-system-image-manager-technical-reference.md)
