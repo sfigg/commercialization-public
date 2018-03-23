@@ -1,14 +1,14 @@
 ---
 title: Standards for a highly secure Windows 10 device
 description: This document provides guidance on the minimum standards for purchasing highly secure systems for Windows 10. 
-ms.author: dawnwood
+ms.author: dansimp
 ms.date: 03/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Standards for a highly secure Windows 10 device
-These standards are for general purpose laptops, tablets, 2-in-1’s, mobile workstations, and desktops. This topic applies specifically and uniquely for **Windows 10 version 1709, Fall Creators Update**. If you are a decision maker purchasing new devices and you want to enable the best possible security configuration, your device should meet or exceed these standards.
+These standards are for general purpose laptops, tablets, 2-in-1’s, mobile workstations, and desktops. This topic applies specifically for **Windows 10 version 1803**. If you are a decision maker purchasing new devices and you want to enable the best possible security configuration, your device should meet or exceed these standards.
 
 Beyond the hardware and firmware configurations outlined below, Microsoft recommends running [Windows 10 S](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security) for security. Windows 10 S is a specific configuration of Windows 10 Pro that offers a familiar Windows experience that’s streamlined for security and performance. Windows 10 S provides the best of the cloud and full featured apps, and is designed for modern devices. Windows Defender is always on and always up-to-date.
 
