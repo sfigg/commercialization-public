@@ -2,7 +2,7 @@
 title: Precision Touchpad Hardware Requirements and Vendor Information
 description: This topic provides a list of the test equipment that is required for the precision touch-related tests in the Windows Hardware Lab Kit (HLK), and information about the vendors who stock the listed equipment.
 ms.assetid:
-ms.author: sapaetsc
+ms.author: dongill
 ms.date:
 ms.topic: article
 ms.prod: windows-hardware
