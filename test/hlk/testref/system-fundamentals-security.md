@@ -1,8 +1,8 @@
 ---
 title: System.Fundamentals.Security
 description: System.Fundamentals.Security
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

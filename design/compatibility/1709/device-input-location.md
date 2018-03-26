@@ -4,7 +4,7 @@ Description: 'Windows 10 location drivers can implement either GNSS drivers that
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
-ms.author: sapaetsc
+ms.author: dongill
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
