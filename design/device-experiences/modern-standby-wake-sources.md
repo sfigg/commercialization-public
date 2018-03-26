@@ -86,7 +86,7 @@ On devices that are Wake on Voice-capable, voice input of "Hey Cortana" from the
 ### Insertion or removal of a connector or device
 
 
-When the user inserts or removes a connector or device, this event must always wake the SoC from the deepest idle state and cause the display to turn on.
+When the user inserts or removes certain types of connectors or devices, these events can wake the SoC from the deepest idle state and cause the display to turn on.
 
 
 ### Windows Update
@@ -295,7 +295,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <td><p>Varies.</p>
 <p>Depends on the devices in the dock and their current state.</p></td>
 <td><p>Attaching a dock should be treated the same as individually attaching each of the devices included in the dock.</p>
-<p>For example, attaching a dock alone should not cause the SoC to wake. Instead, detection of new devices (USB device, I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
+<p>For example, attaching a dock alone should not cause the SoC to wake. Instead, detection of new devices (I²C device, battery, AC power source, and so on) contained in the dock should cause the SoC to wake.</p></td>
 </tr>
 <tr class="even">
 <td><p>Optical disc drive, including Zero-Power Optical Disc Drive (ZPODD): disc insertion/ejection</p></td>
