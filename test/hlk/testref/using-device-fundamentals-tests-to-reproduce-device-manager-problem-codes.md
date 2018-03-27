@@ -9,11 +9,11 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-
-
 # Using Device Fundamentals Tests to Reproduce Device Manager Problem Codes
 
 The Device Fundamentals (DevFund) tests use Microsoft-supplied I/O plug-ins to exercise devices by sending device class-specific I/O to the device while disabling and enabling the device, cycling the system through power states and reboots, deallocating and reallocating resources, and other tasks.
+
+## Step 1: Determine which tests can potentially reproduce the device error code
 
 The following table matches device problem codes to tests known to exercise a device in such a way as to induce the corresponding problem code. This chart can be used by device and driver testers in an attempt to reproduce device problems seen in the wild, or problems which may be hard to reproduce during regular testing.
 
@@ -30,4 +30,26 @@ The following table matches device problem codes to tests known to exercise a de
 
 See [Device Manager Error Messages](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-manager-error-messages) for the list of device error codes.
 
-See [Device.DevFund tests](https://msdn.microsoft.com/en-us/library/windows/hardware/dn941915(v=vs.85).aspx) for the complete list of Device Fundamentals tests.
+See [Device.DevFund tests](device-devfund-tests.md) for the complete list of Device Fundamentals tests.
+
+## Step 2: Determine how to configure the test and test machine
+
+After determining which test to run, decide how to configure the test and the test machine to reproduce the error.  To see which parameters are supported by each test, click the link for a specific test in the table above.  This will describe the test and the options available for that test.  For example, some device PnP errors are sporadic.  The /testcycles switch can be used with all tests to specify how many times the test should run:
+
+```
+/p:testcycles=10
+```
+
+Running the test with more iterations may increase the likelihood of inducing the device error.
+
+Some tests will cause SetupAPI logs to be generated (e.g. [DF - Reinstall with IO Before and After (Reliability)](8dd417ab-e523-4bf0-a971-7c27d99ff5b2.md).  The test machine can be configured to generate [verbose SetupAPI logs](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/review-common-device-fundamentals-reliability-test-failures#span-idnumberofdeviceschangedspanspan-idnumberofdeviceschangedspantest-log-message-number-of-devices-found-after-reboot-1-is-not-the-same-as-before-the-reboot-2-please-review-logs-to-find-the-missing-devices).
+
+## Step 3: Run the test
+
+These tests [can easily be run on the command line](reproduce-the-test-failure-by-running-the-test-from-the-command-line.md) or the HLK after setting up an [HLK Controller](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+
+Running tests on the command line via te.exe allows for more test options than running the tests via the HLK.  For example, the [/breakonerror](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/te-exe-command-line-parameters#breakonerror) command line parameter causes TAEF to break into the debugger when an error occurs in the test.  There are many more [command line options](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/te-exe-command-line-parameters) which can be supplied to te.exe when running tests on the command line.  
+
+## Step 4: Debug the issue
+
+There is a lot of help available for investigating device and driver problems. See the [troubleshooting documentation](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md) for information on reviewing test logs and using the kernel debugger to investigate device and driver problems.
