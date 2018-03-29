@@ -13,14 +13,11 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-
 # Type
-
 
 `Type` specifies the type of partition to create.
 
 ## Values
-
 
 <table>
 <colgroup>
@@ -71,38 +68,30 @@ ms.technology: windows-oem
 </tbody>
 </table>
 
- 
-
-**Note**  
-For information about setting other types of partitions, such as utility and recovery partitions, see microsoft-windows-setup-/DiskConfiguration/Disk/ModifyPartitions/ModifyPartition/[TypeID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid.md).
-
- 
+> [!Note]
+> For information about setting other types of partitions, such as utility and recovery partitions, see Microsoft-Windows-Setup/DiskConfiguration/Disk/ModifyPartitions/ModifyPartition/[TypeID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid.md).
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Configuration Passes
 
-
 windowsPE
 
 ## Parent Hierarchy
 
-
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) | **Type**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) | **Type**
 
 ## Applies To
 
-
-For a list of Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For a list of Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Examples
 
+The following XML output for the `DiskConfiguration` setting shows a configuration for a **UEFI-based** system with four partitions, including an EFI partition, an MSR partition, and two primary partitions.
 
-### UEFI-Based Systems
+For full XML examples and recommended partition configurations, see [How to Configure UEFI/GPT-Based Hard Disk Partitions](http://go.microsoft.com/fwlink/?LinkId=214261) or [How to Configure BIOS/MBR-Based Hard Disk Partitions](http://go.microsoft.com/fwlink/?LinkId=214260).
 
-The following XML output for the `DiskConfiguration` setting shows a configuration for a UEFI-based system with four partitions, including an EFI partition, an MSR partition, and two primary partitions.
-
-```
+```XML
 <DiskConfiguration>
 
   <Disk wcm:action="add">
@@ -149,63 +138,47 @@ The following XML output for the `DiskConfiguration` setting shows a configurati
         <Format>NTFS</Format> 
         <TypeID>de94bba4-06d1-4d40-a16a-bfd50179d6ac</TypeID> 
       </ModifyPartition>
-    </ModifyPartitions>
 
       <!-- EFI system partition (ESP) -->
       <ModifyPartition wcm:action="add">
-        <Order>2</Order> 
-        <PartitionID>2</PartitionID> 
-        <Label>System</Label> 
-        <Format>FAT32</Format> 
+        <Order>2</Order>
+        <PartitionID>2</PartitionID>
+        <Label>System</Label>
+        <Format>FAT32</Format>
       </ModifyPartition>
 
-      <!-- MSR partition does not need to be 
-modified -->
+      <!-- MSR partition does not need to be modified -->
 
       <!-- Windows partition -->
       <ModifyPartition wcm:action="add">
-        <Order>3</Order> 
-        <PartitionID>4</PartitionID> 
-        <Label>Windows</Label> 
-        <Letter>C</Letter> 
-        <Format>NTFS</Format> 
+        <Order>3</Order>
+        <PartitionID>4</PartitionID>
+        <Label>Windows</Label>
+        <Letter>C</Letter>
+        <Format>NTFS</Format>
       </ModifyPartition>
+
     </ModifyPartitions>
   </Disk>
 
+  <WillShowUI>OnError</WillShowUI>
 
-  <WillShowUI>OnError</WillShowUI> 
 </DiskConfiguration>
-
 
 <ImageInstall>
   <OSImage>
     <InstallTo>
-      <DiskID>0</DiskID> 
-      <PartitionID>4</PartitionID> 
+      <DiskID>0</DiskID>
+      <PartitionID>4</PartitionID>
     </InstallTo>
   </OSImage>
 </ImageInstall>
 ```
 
-For full XML examples and recommended partition configurations, see [How to Configure UEFI/GPT-Based Hard Disk Partitions](http://go.microsoft.com/fwlink/?LinkId=214261) or [How to Configure BIOS/MBR-Based Hard Disk Partitions](http://go.microsoft.com/fwlink/?LinkId=214260).
-
 ## Related topics
-
 
 [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md)
 
 [TypeID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid.md)
 
 [How to Configure More than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
-
- 
-
- 
-
-
-
-
-
-
-
