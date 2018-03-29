@@ -4,7 +4,7 @@ Description: 'Requirements for all devices that connect via USB, including USB h
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
-ms.author: sapaetsc
+ms.author: dongill
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

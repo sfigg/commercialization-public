@@ -1,8 +1,8 @@
 ---
 title: Download Supplemental HLK Resources
 description: 
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 01/26/2018
 ms.topic: article
 ms.prod: windows-hardware
