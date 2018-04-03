@@ -22,7 +22,7 @@ A device with HORM enabled can quickly be turned off or shut down, and then rest
 
 ## Requirements
 
-Windows 10 Enterprise, Windows 10 Education or Windows 10 IoT Core (IoT Core).
+Windows 10 Enterprise or Windows 10 Education.
 
 ## UWF configuration
 
