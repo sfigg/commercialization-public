@@ -18,7 +18,7 @@ You can use the Hibernate Once/Resume Many (HORM) feature with Unified Write Fil
 A device with HORM enabled can quickly be turned off or shut down, and then restarted into the preconfigured state, even in the event of a sudden power loss.
 
 > [!Note]
-> HORM can be used on Unified Extensible Firmware Interface (UEFI) devices running Windows 10, version 1709 only. In previous Windows versions, the installation procedure for UEFI creates a hidden system partition. Because UWF cannot protect hidden partitions, HORM cannot be used on any devices that contain a hidden partition, including UEFI-capable devices on older versions of Windows.
+> HORM can be used on Unified Extensible Firmware Interface (UEFI) devices running Windows 10, version 1709 only. HORM cannot be used on UEFI-capable devices running Windows 10, version 1703 or earlier as the UEFI installation procedure created hidden partitions.
 
 ## Requirements
 
@@ -33,12 +33,6 @@ UWF must be enabled before you can enable or disable HORM. UWF must be configure
 * The UWF overlay must be configured to use RAM mode. HORM does not support disk-backed overlays.
 
 UWF does not filter hibernation files from being written to disk. If you want to protect the preconfigured state of your device, lock down any functionality that can modify the hibernation file. For example, disable hibernation, hybrid sleep, and fast startup on your device for standard user accounts so that the saved hibernation file is not overwritten when entering a sleep, hibernate, or shutdown state.
-
-## HORM and Unified Extensible Firmware Interface (UEFI) capable devices
-
-When you install Windows 10 on a UEFI-capable device, the installation procedure always creates a hidden system partition. UWF cannot protect hidden partitions.
-
-Since HORM requires all fixed partitions to be protected, you cannot use HORM on any device that contains a hidden partition, including all UEFI capable devices.
 
 ## Configure HORM
 
