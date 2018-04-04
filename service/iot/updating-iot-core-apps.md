@@ -16,7 +16,7 @@ ms.technology: windows-oem
 OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core devices in the following ways:
 
 * **Using Microsoft Store**: The app is published and updated from the Microsoft Store
-* **Using Component Update Service**: The app is published to Windows Update and updated like any other OEM package (driver package) *Coming soon*
+* **Using Device Update Center**: The app is published to Windows Update and updated like any other OEM package (driver package) *Coming soon*
 * **Using Azure IoT Device Management**: The app is published to Azure Storage and updated through the Azure DM channel *New for Windows 10, version 1709*
 * **Using OMA-DM**: The app is updated using an OMA-DM compliant device management channel such as Intune or System Center Configuration Manager (SCCM)
 
