@@ -53,6 +53,8 @@ Here's how we'll refer to them:
 
 6.  [The Raspberry Pi BSP](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip). Since this lab uses a Raspberry Pi, you'll need to download the Raspberry Pi BSP. If you're working with a device other than Raspberry Pi, visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
 
+7.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For the kernel driver signing, Standard Code signing certificate is sufficient. You will require an EV cert to access the Device Update Center in Hardware Dev Center portal. This will be required when you build a retail image.
+
 Other helpful software:
 
 -   **A text editor such as Notepad++**. You can also use the Notepad tool, though for some files, you won't see the line breaks unless you open each file as a UTF-8 file.
