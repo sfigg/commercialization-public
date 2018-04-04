@@ -120,7 +120,7 @@ The image configuration file lists:
 | Image release type   | ReleaseType: **Production** | ReleaseType: **Test** |
 | Package release type | Only Production Type packages are supported | Both Production Type or Test Type are supported |
 | Test-signed packages | Not supported | Supported <p> IOT_ENABLE_TESTSIGNING feature must be included. |
-| Code integrity check | Supported. By default, this is enabled. | Not supported <p>IOT_DISABLE_UMCI feature must be included |
+| Code integrity check | Supported. By default, this is enabled. | Supported. By default, no policy is enforced |
 
 ### <span id="Board_Support_Packages"></span><span id="board_support_packages"></span><span id="BOARD_SUPPORT_PACKAGES"></span>Board Support Packages (BSPs)
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. 
@@ -131,6 +131,8 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 ## <span id="related_topics"></span>Related topics
 
+[Build a prototype](https://developer.microsoft.com/windows/iot/getstarted/prototype/selectdevice)
+
 [Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
@@ -140,10 +142,4 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 [IoT Core feature list](iot-core-feature-list.md)
 
 [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)
-
- 
-
- 
-
-
 
