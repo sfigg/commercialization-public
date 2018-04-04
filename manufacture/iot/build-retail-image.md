@@ -61,7 +61,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 ## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
 
-1.  Copy the customizations.xml file from C:\\IoT-ADK-AddonKit\\Products\\ProductB\\prov to C:\\IoT-ADK-AddonKit\\Products\\ProductA\\prov.
+1.  Copy the customizations.xml file from C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB\\prov to C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\prov.
 
 2.  Delete ProductAProv.ppkg file if present.
     
