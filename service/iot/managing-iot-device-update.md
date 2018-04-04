@@ -23,7 +23,13 @@ OEM and enterprise customers using Windows 10 IoT Core can take advantage of de
 
 Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/index) for more detail about device management protocols.
 
-The Windows Imaging and Configuration Designer (ICD) tool creates a provisioning package that can be included in the image. See [add provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image) for the detailed steps.
+The Windows Imaging and Configuration Designer (ICD) tool creates a provisioning package that can be included in the image either at imaging time or runtime.
+For adding the provisioning package at imaging time, see [add provisioning package](https://docs.microsoft.com/windows-hardware/manufacture/iot/add-a-provisioning-package-to-an-image).
+For adding the provisioning package to the device at runtime, follow the steps given below
+* Connect to the device ([using SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/ssh) or [using Powershell](https://docs.microsoft.com/windows/iot-core/connect-your-device/powershell))
+* Copy the `<filename>.ppkg` file to the directory `C:\Windows\Provisioning\Packages` on the device
+* Reboot the device. On the next boot, the ppkg will be processed and the settings will be applied to the device.
+
 
 ### AllowAutoUpdate to turn updates on or off
 
