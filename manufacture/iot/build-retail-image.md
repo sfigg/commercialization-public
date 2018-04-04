@@ -70,7 +70,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 **Build the image**
 
-1.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/update-a-code-signing-certificate).
+1.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For the kernel driver signing, Standard Code signing certificate is sufficient.
 
 2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 
