@@ -33,7 +33,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_CRT140**            | Adds CRT binaries, required feature in all images                                                                                  |
 | **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://docs.microsoft.com/windows/iot-core/secure-your-device/UnifiedWriteFilter) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
 | **IOT\_USBFN\_CLASS\_EXTENSION**  | Adds USB function WDF class extension for USB function mode support. This is new in Windows 10, version 1703. |
-| **IOT\_HWN\_CLASS\_EXTENSION**    | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. |
+| ~~IOT\_HWN\_CLASS\_EXTENSION~~ (Deprecated)   | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. Deprecated in Windows 10, version 1709, as this feature is added by default |
 | **IOT\_NETCMD**            | Adds the command-line tool: net.exe, used for configuring network connectivity                                              |
 | **IOT\_POWERSHELL**        | Adds PowerShell                                                                                                             |
 | **IOT\_APPLICATIONS**           | Adds Account Management host application, enables MSA sign-in. Required for Cortana. This is new in Windows 10, version 1703. |
@@ -80,7 +80,7 @@ When creating images for your device, determine which features are required for 
 
 | Features                       | Description                                                                        |
 |--------------------------------|------------------------------------------------------------------------------------|
-| **IOT\_SPEECHDATA\_EN\_US**    | Deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English. |
+| ~~IOT\_SPEECHDATA\_EN\_US~~ (Deprecated)   | Deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English. |
 | **IOT\_SPEECHDATA\_DE\_DE**    | Adds speech data for German.                                                        |
 | **IOT\_SPEECHDATA\_EN\_CA**    | Adds speech data for en-CA. This is new in Windows 10, version 1703.               |
 | **IOT\_SPEECHDATA\_EN\_GB**    | Adds speech data for UK English.                                                    |
@@ -109,7 +109,7 @@ The following table describes the Microsoft-defined test features that can be us
 | Features                         | Description                                                                                                               |
 |----------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **IOT\_DISABLE\_TESTSIGNING**    | Disables runtime-installation of test-signed packages                                                                     |
-| **IOT\_DISABLE\_UMCI**           | Disables the code integrity check                                                                                         |
+| ~~IOT\_DISABLE\_UMCI~~ (Deprecated)          | Disables the code integrity check. Deprecated in Windows 10, version 1709                                     |
 | **IOT\_EFIESP\_TEST**            | UEFI packages required for booting test images. Should not be used with IOT_EFIESP                                        |
 | **IOT\_ENABLE\_ADMIN**           | New in Windows 10, version 1607                                                                                           |
 | **IOT\_ENABLE\_TESTSIGNING**     | Enables run-time installation of test-signed packages. Allows test-signed drivers and (.appx) apps to run                 |
@@ -121,6 +121,72 @@ The following table describes the Microsoft-defined test features that can be us
 | **IOT\_DIRECTX\_TOOLS**    | Adds DirectX tools                                                                                      |
 | **IOT\_UMDFDBG\_SETTINGS** | Includes user-mode driver framework debug settings                                                      |
 
+## Features per release
+
+The following tabe provides an overview of supported features per IoT Core OS release, listed in alphabetical order.
+
+| Features                        | 1709 (16299.x)  | 1703 (15063.x) | 1607 (14393.x)  |
+|---------------------------------|:---------------:|:--------------:|:---------------:|
+| **IOT\_ALLJOYN\_APP**           |x|x|x|
+| **IOT\_APPLICATIONS**           |x|x| |
+| **IOT\_APP\_TOOLKIT**           |x|x|x|
+| **IOT\_BERTHA**                 |x|x|x|
+| **IOT\_CONTAINERS**             |x(x64)| | |
+| **IOT\_CORTANA**                |x|x| |
+| **IOT\_CORTANA\_OBSCURELAUNCH** |x|x| |
+| **IOT\_CP210x\_MAKERDRIVER**    |x|x| |
+| **IOT\_CRT140**                 |x|x|x|
+| **IOT\_DIRECTX\_TOOLS**         |x|x|x|
+| **IOT\_DISABLEBASICDISPLAYFALLBACK** |x|x|x|
+| **IOT\_DISABLE\_TESTSIGNING**    |x|x|x|
+| ~~IOT\_DISABLE\_UMCI~~ (Deprecated)          |N/A|x|x|
+| **IOT\_DMAP\_DRIVER**            |x|x|x|
+| **IOT\_EFIESP**                  |x|x|x|
+| **IOT\_EFIESP\_BCD**             |x|x|x|
+| **IOT\_EFIESP\_BCD_MBR**         |x|x| |
+| **IOT\_EFIESP\_TEST**            |x|x|x|
+| **IOT\_ENABLE\_ADMIN**           |x|x|x|
+| **IOT\_ENABLE\_TESTSIGNING**     |x|x|x|
+| **IOT\_FONTS\_CHINESE\_EXTENDED** |x|x| |
+| **IOT\_FTSER2K\_MAKERDRIVER**     |x|x|x|
+| **IOT\_GENERIC\_POP**             |x|x|x|
+| ~~IOT\_HWN\_CLASS\_EXTENSION~~ (Deprecated)   |N/A|x| |
+| **IOT\_KDNETUSB\_SETTINGS**      |x|x|x|
+| **IOT\_KDSERIAL\_SETTINGS**      |x|x|x|
+| **IOT\_KDUSB\_SETTINGS**         |x|x|x|
+| **IOT\_KD\_ON**                  |x|x|x|
+| **IOT\_NANORDPSERVER**          |x|x|x|
+| **IOT\_NETCMD**                 |x|x|x|
+| **IOT\_POWERSHELL**             |x|x|x|
+| **IOT\_POWER\_SETTINGS**          |x|x|x (x86/x64)|
+| **IOT\_SHELL\_HOTKEY\_SUPPORT**   |x|x|x|
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD** |x|x| |
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** |x|x| |
+| **IOT\_SIREP**                  |x|x|x|
+| **IOT\_SPEECHDATA\_DE\_DE**    |x|x|x|
+| **IOT\_SPEECHDATA\_EN\_CA**    |x|x| |
+| **IOT\_SPEECHDATA\_EN\_GB**    |x|x|x|
+| ~~IOT\_SPEECHDATA\_EN\_US~~ (Deprecated)   |N/A|N/A|x|
+| **IOT\_SPEECHDATA\_ES\_ES**    |x|x|x|
+| **IOT\_SPEECHDATA\_ES\_MX**    |x|x| |
+| **IOT\_SPEECHDATA\_FR\_CA**    |x|x| |
+| **IOT\_SPEECHDATA\_FR\_FR**    |x|x|x|
+| **IOT\_SPEECHDATA\_IT\_IT**    |x|x|x|
+| **IOT\_SPEECHDATA\_JA\_JP**    |x|x|x|
+| **IOT\_SPEECHDATA\_ZH\_CN**    |x|x|x|
+| **IOT\_SPEECHDATA\_ZH\_HK**    |x|x|x|
+| **IOT\_SPEECHDATA\_ZH\_TW**    |x|x|x|
+| **IOT\_SSH**                    |x|x|x|
+| **IOT\_TOOLKIT**                |x|x|x|
+| **IOT\_UAP\_DEFAULTAPP**        |x|x|x|
+| **IOT\_UAP\_OOBE**              |x|x|x|
+| **IOT\_UMDFDBG\_SETTINGS**      |x|x|x|
+| **IOT\_UNIFIED\_WRITE\_FILTER** |x|x|x|
+| **IOT\_USBFN\_CLASS\_EXTENSION**|x|x|x|
+| **IOT\_WDTF**                   |x|x|x|
+| **IOT\_WEBB\_EXTN**             |x|x|x|
+| **OEM\_CustomCmd**              |x|x|x|
+| **OEM\_ProvAuto**               |x|x|x|
 ## Related topics
 
 [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
