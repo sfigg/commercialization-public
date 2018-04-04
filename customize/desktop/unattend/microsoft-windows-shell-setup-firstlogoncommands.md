@@ -8,7 +8,7 @@ ms.assetid: f5506054-3372-45b7-b1e9-7ccab0147157
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -18,7 +18,8 @@ ms.technology: windows-oem
 `FirstLogonCommands` specifies commands to run the first time a user logs on to the computer. These commands run only once.
 
 > [!Note]
-> FirstLogonCommands are not supported in Windows 10 S.
+> - FirstLogonCommands are not supported in Windows 10 S.
+> - Windows 10 doesn’t support setting a custom shell prior to OOBE. If you do, you won’t be able to deploy the resulting image.
 
 When a user with administrative privileges logs in for the first time, these commands are run with elevated access privileges.
 
