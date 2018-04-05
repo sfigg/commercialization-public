@@ -32,7 +32,11 @@ Some product editions or edition/processor configurations listed below may have 
 | Windows 10 Enterprise LTSB 1607 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7/i9-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6) and through current Intel Atom, Celeron, and Pentium Processors             | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx) | N/A
 | Windows 10 1703                 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7/i9-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6), 8th Generation Processors (Intel Core i3/i5/i7-8xxxU) and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron, and Pentium Processors             | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), and AMD Ryzen 3/5/7 2xxx  | N/A
 | Windows 10 1709 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxx), Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835
+| Windows 10 1803 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxx), 7th Generation Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835 
 
+\*** Intel Xeon support on Windows 10 Pro for Workstation only
+
+\**** AMD Opteron and AMD EPYC 7xxxx processors are supported on Windows 10 Pro for Workstation only
 
 ## Windows IoT Core Processor table
 
