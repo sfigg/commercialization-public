@@ -38,7 +38,7 @@ The policies and processes provide guidelines on qualification testing and produ
     <th colspan="2">Policies</th>
   </tr>
   <tr>
-    <td>version 1804</td>
+    <td>version 1803</td>
     <td><a href="#">Download Specifications</a></td>
     <td><a href="#">Download Client Policies</a></td>
     <td rowspan="4"><a href="#">Download Server Policies</a></td>
