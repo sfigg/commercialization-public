@@ -35,7 +35,7 @@ Questions about the Azure Stack or SDDC programs or how to submit the results fo
 
 |Windows 10, Client|
 |--|
-|[Download Specifications and Policies, version 1803](#)|
+|[Download Specifications and Policies, version 1803](https://go.microsoft.com/fwlink/?linkid=871730)|
 |[Download Specifications and Policies, version 1709](https://go.microsoft.com/fwlink/?linkid=866945)|
 |[Download Specifications and Policies, version 1703](https://go.microsoft.com/fwlink/?linkid=866946)|
 |[Download Specifications and Policies, version 1607](https://go.microsoft.com/fwlink/?linkid=866948)|
