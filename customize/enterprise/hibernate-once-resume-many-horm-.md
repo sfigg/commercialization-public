@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 602B4A95-7C98-41DC-B604-DBA7832A96ED
 ms.author: alhopper
-ms.date: 12/5/2017
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -22,7 +22,7 @@ A device with HORM enabled can quickly be turned off or shut down, and then rest
 
 ## Requirements
 
-Windows 10 Enterprise or Windows 10 Education.
+Windows 10 Enterprise, Windows 10 Education, or Windows IoT Core (IoT Core).
 
 ## UWF configuration
 
