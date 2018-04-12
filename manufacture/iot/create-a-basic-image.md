@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Lab 1a: Create a basic image
 
-To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything's working properly.
+To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything's working properly. 
 
 We'll create a product folder that represents our first design. For our first product design, we'll customize just enough for the IoT core device to boot up and run the built-in OOBE app, which we should be able to see on an HDMI-compatible monitor.
 
@@ -21,7 +21,7 @@ To make running these commands easier, we'll install and use the IoT Core shell,
 
 ## Prerequisites
 
-See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
+See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready. 
 
 ## Create a basic image
 
@@ -135,6 +135,8 @@ This creates the folder: `C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\P
     After a short while, the device should start automatically, and you should see the [IoT Core Default app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) (code-named "Bertha"), which shows basic info about the image.
 
     **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
+
+See also [Set up your device](https://developer.microsoft.com/windows/iot/getstarted/prototype/setupdevice) for more instructions on flashing the device.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
