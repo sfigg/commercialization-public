@@ -1,6 +1,6 @@
 ---
 author: themar
-Description: 'What is DISM? Where is DISM? What's new in DISM?'
+Description: 'DISM overview'
 ms.assetid: ad08e68c-616f-404a-bfc6-c7bf1a4666f0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Overview'
