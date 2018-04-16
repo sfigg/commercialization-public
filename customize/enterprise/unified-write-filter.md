@@ -35,7 +35,7 @@ Windows 10 Enterprise or Windows 10 Education.
 
 * **Configure:** To customize the setting or sub-settings.
 
-## Turn UWF on or off
+## Turn on and configure UWF
 
 UWF is an optional component and is not enabled by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure UWF in a customized Windows 10 image (.wim) if Windows has not been installed. If Windows has already been installed and you are applying a provisioning package to configure UWF, you must first turn on UWF in order for a provisioning package successfully apply.
 
@@ -91,7 +91,7 @@ If Windows has already been installed and you are applying a provisioning packag
 1. In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the unified write filter setting.
 1. Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. Note that the process for applying the provisioning package to a Windows 10 Enterprise image is the same.
 
-## Turn on and configure UWF by using Windows Management Instrumentation (WMI)
+### Turn on and configure UWF by using Windows Management Instrumentation (WMI)
 
 If Windows has already been installed and you do not want to use a provisioning package, you can also configure UWF by using the Windows Management Instrumentation (WMI) providers. To turn on UWF using WMI, you can use the [UWF\_Filter](uwf-filter.md) function, specifically the [UWF\_Filter.Enable](uwf-filterenable.md) method. You can do this in one of the following ways:
 
