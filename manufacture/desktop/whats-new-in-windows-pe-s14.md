@@ -4,6 +4,7 @@ Description: 'What''s New in Windows PE'
 ms.assetid: db434eb7-ef16-4edc-af6a-f0057c86a56e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What''s New in Windows PE'
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
