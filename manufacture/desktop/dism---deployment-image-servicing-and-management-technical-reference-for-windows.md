@@ -1,11 +1,11 @@
 ---
-author: Justinha
+author: themar
 Description: 'DISM - Deployment Image Servicing and Management'
 ms.assetid: c0f321a9-1fc8-411a-a999-741132cff4ad
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM - Deployment Image Servicing and Management'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -32,8 +32,8 @@ DISM is installed with Windows, and it is also distributed in the Windows Assess
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[What is DISM?](what-is-dism.md)</p></td>
-<td align="left"><p>Describes the DISM system requirements, benefits, common servicing and management scenarios, and limitations.</p></td>
+<td align="left"><p>[DISM overview](what-is-dism.md)</p></td>
+<td align="left"><p>Describes how you can use DISM, where to find DISM, and what's new in DISM.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)</p></td>
