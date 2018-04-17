@@ -153,7 +153,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
    Dism /online /Enable-Feature /FeatureName:Client-EmbeddedShellLauncher
    ```
 
-To learn more, see [Set your custom shell](shell-launcher.md#custom-shell)
+To learn more, see [Set your custom shell](shell-launcher.md#set-your-custom-shell)
 
 ## <a href="" id="lockdown-settings"></a>Other settings to lock down
 

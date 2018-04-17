@@ -34,7 +34,7 @@ The following tables record the major changes that were made in the **Customize*
 | Topic                                          | Description                                                                                        |
 |:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [Customize OOBE](desktop/customize-oobe.md)    | Updated with recommendation for setting the default volume level during OOBE.                      |
-| [Connect users to the network during OOBE](desktop/connect-to-network.md) | Updated with clarifications on how Cellular and Wi-Fi connections are used during OOBE, and the types of updates that download during OOBE.   |
+| [Connect users to the network during OOBE](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oobe-screen-details#connect-users-to-the-network) | Updated with clarifications on how Cellular and Wi-Fi connections are used during OOBE, and the types of updates that download during OOBE.   |
 | [Keyboard Filter](enterprise/keyboardfilter.md)      | Updated to note that Keyboard Filter is not supported in a remote desktop session.           |
 | [Unattend Setting: FirewallGroups](desktop/unattend/networking-mpssvc-svcfirewallgroups.md)   | Updated with guidance on how to obtain the correct FirewallGroup-Group value using PowerShell.    |
 
