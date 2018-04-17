@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Customize SIM card slot names
 
-You can customize the names of SIM card slots on the device to more easily differentiate between them. For example, if the device has both an embedded SIM slot and an external SIM slot, customizing the names will help your customers understand which is which.
+In Windows 10, version 1803, you can customize the names of SIM card slots on the device to more easily differentiate between them. For example, if the device has both an embedded SIM slot and an external SIM slot, customizing the names will help your customers understand which is which.
 
 > [!Important]
 > Only devices with a Dual SIM Single Activation (DSSA) configuration support this customization.

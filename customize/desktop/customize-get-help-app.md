@@ -32,7 +32,7 @@ OEM customization provides the top support option in the list — a link to eith
 
 ### Search support
 
-In markets that do not have the new Virtual Agent experience available, customers can utilize search support by entering a question and receiving back recommended support content. Beneath the search results, the options for contacting support will be listed.
+In markets that do not have the Virtual Agent experience available, customers can utilize search support by entering a question and receiving back recommended support content. Beneath the search results, the options for contacting support will be listed.
 
 OEM customization provides the top support option in the list — a link to either your support website, or your support app.
 

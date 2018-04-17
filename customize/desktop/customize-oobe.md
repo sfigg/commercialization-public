@@ -37,19 +37,19 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Create security questions for a local account**. New in Windows 10, version 1803. Only displays if the user chose to create a local account, rather than logging into their MSA, on the previous screen. See [OOBE screen details](oobe-screen-details.md) to learn more about this new screen in OOBE.
 1. **Windows Hello setup**
 1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
-1. **Save files to OneDrive**
-1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
-1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen.
+1. **Save files to OneDrive**. This is a cloud service page.
+1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial. This is a cloud service page.
+1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen. This is a cloud service page.
 1. **Privacy settings**
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
 
 > [!Note]
-> You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
+> Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.
+>
+> When testing OOBE, keep in mind that you may not see cloud service pages during the flow.
 
-In Windows 10 version 1803, Windows Welcome is displayed to more users than ever as soon as they complete OOBE and reach their desktop.
-
-Example Windows Welcome experience:
+In Windows 10, version 1803, Windows Welcome is displayed to more users than ever as soon as they complete OOBE and reach their desktop. Here's an example Windows Welcome experience:
 
 ![Example Windows Welcome experience in Microsoft Edge](images/windows-welcome.png)
 

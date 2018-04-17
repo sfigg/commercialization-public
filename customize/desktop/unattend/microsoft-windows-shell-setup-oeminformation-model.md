@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Model
 
 > [!Important]
-> Model is deprecated in Windows 10, version 1709. The Model name displayed in the Get Help app is now based on your System Product Name value, as defined in System Information (msinfo32.exe).
+> This setting has been deprecated. The Model name displayed in the Get Help app is now based on your System Product Name value, as defined in System Information (msinfo32.exe).
 
 `Model` specifies the name of the computer model.
 
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| *model_name*            | **Deprecated in Windows 10, version 1709**. Specifies the name of the computer model. *Model_name* is a string with a maximum length of 256 characters.                                                                                         |
+| *model_name*            | **This setting has been deprecated**. Specifies the name of the computer model. *Model_name* is a string with a maximum length of 256 characters.                                                                                         |
 
 This string type supports empty elements.
 

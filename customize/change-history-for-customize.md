@@ -40,6 +40,8 @@ The following tables record the major changes that were made in the **Customize*
 
 ## October 17, 2017
 
+Most updates in this section relate to the release of Windows 10, version 1709.
+
 | Topic                                      | Description                                                                                        |
 |:-------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [Customize the Get Help app](desktop/customize-get-help-app.md)    | New. Learn how to add your support app or website to Window's self-service Get Help app, to provide customers with an easy-to-find way to reach out. |

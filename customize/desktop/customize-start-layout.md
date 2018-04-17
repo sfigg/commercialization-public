@@ -143,7 +143,7 @@ You can configure each of your tiles to launch:
 You can add an app tile that will launch a Universal Windows app, or a Windows 8/8.1 app, using `start:Tile` in `LayoutModification.xml`. To specify the app you wish the launch, you must set the `AppUserModelID` attribute of `start:Tile` to the application user model ID (AUMID) associated with the app. The AUMID is case-sensitive.
 
 > [!Important]
-> In Windows 10 version 1803, all apps must either be pinned to the Start layout, and/or pre-installed using the new region parameter in DISM, otherwise they will be removed on any system that uses that layout. See Preinstall apps using DISM for guidance on using this new parameter.  See [Preinstall apps using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/preinstall-apps-using-dism) for guidance on using the new parameter.
+> In Windows 10, version 1803, all apps must either be pinned to the Start layout, and/or pre-installed using the new region parameter in DISM, otherwise they will be removed on any system that uses that layout. See [Preinstall apps using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/preinstall-apps-using-dism) for guidance on using the new parameter.
 
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
@@ -220,7 +220,7 @@ To create a secondary tile (a web link tile that will open in Microsoft Edge), a
 ```
 
 > [!Note]
-> The actual Edge tile cannot be customized. The icon, text and the page that it launches must remain the default.
+> The Edge tile itself cannot be customized. The icon, text and the page that it launches must remain the default.
 
 The OEM-custom icon and supporting text in the tile must:
 
@@ -256,7 +256,7 @@ The Microsoft Office suite of tiles is the first group of tiles in the Start lay
 
 We recommend pre-installing Office Desktop Bridge on all devices where the screen is 10.1 inches or larger. Office Desktop Bridge is included in the OEM Pre-installation Kit (OPK). After pre-installing Office Desktop Bridge, each Office app appears as a tile in the Office suite of tiles.
 
-In Windows 10 version 1803, add the following two tags to `LayoutModification.xml`:
+In Windows 10, version 1803, add the following two tags to `LayoutModification.xml`:
 
 * `<AppendOfficeSuite/>`
 * `<AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>`
@@ -279,7 +279,7 @@ This will set the heading of the Office suite of tiles to **Office 365**, to hig
 ![Start layout with Choice=DesktopBridgeSubscription](images/start-layout-desktopbridgesubscription.png)
 
 > [!Note]
-> If a customer activates a version of Office which does not include all of the Office apps (for example, some versions of Office do not include Outlook), those apps are automatically uninstalled from the device. Subsequently, the tiles for the uninstalled apps will be removed from the **Office 365** Start layout.
+> Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
 
 For older versions of Windows, and for devices shipping with Activation for Office (AFO) Perpetual, add the following two tags to `LayoutModification.xml`:
 
@@ -289,8 +289,6 @@ For older versions of Windows, and for devices shipping with Activation for Offi
 This will set the heading to **Create**. For example:
 
 ![Start layout with Choice=DesktopBridge](images/start-layout-desktopbridge.png)
-
-Tile sizes and positions may vary based on the device SKU, region, and the size of the Start layout.
 
 We advise using these tags when AFO Perpetual (Office 2016) is pre-installed to provide the best user experience for your customers. The new Office block of tiles is labeled **Office 365**, which is not the same as Office 2016, and could be confusing to users.
 

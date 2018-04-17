@@ -12,13 +12,13 @@ ms.technology: windows-oem
 ---
 # OOBE.xml
 
-Create a file named OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. For Windows 10, you can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs.
+Create a file named **Oobe.xml** to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. For Windows 10, you can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs.
 
 ## OOBE.xml settings
 
 You can set the default language, location, and keyboard layout using Oobe.xml. The default values you set in Oobe.xml will be the default values the user sees on the Language, Region, and Keyboard layout selection screens during OOBE. The user can select another value from the list if desired, and their selection will override the Oobe.xml settings.
 
-In Windows 10 build 1709, you can also specify a default timezone for the device using Oobe.xml. If the device has network connectivity during OOBE, Windows will attempt to detect the user’s time zone and this will override the value set in Oobe.xml. If the device does not have connectivity, or the user has turned off Location settings in OOBE, Windows will not be able to detect the timezone, and will default to the value you set in Oobe.xml. In this case, the user will see this timezone reflected by their clock once they reach the desktop.
+You can also specify a default timezone for the device using Oobe.xml. If the device has network connectivity during OOBE, Windows will attempt to detect the user’s time zone and this will override the value set in Oobe.xml. If the device does not have connectivity, or the user has turned off Location settings in OOBE, Windows will not be able to detect the timezone, and will default to the value you set in Oobe.xml. In this case, the user will see this timezone reflected by their clock once they reach the desktop.
 
 For a list of time zones you can set, see [Default Time Zones](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones).
 
@@ -30,7 +30,7 @@ You can create multiple OOBE.xml files for each language and region you intend t
 
 ## Oobe.xml example
 
-```xml
+```XML
 <FirstExperience>
   <oobe>
     <oem>

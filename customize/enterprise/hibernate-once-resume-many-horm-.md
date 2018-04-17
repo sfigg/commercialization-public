@@ -18,7 +18,7 @@ You can use the Hibernate Once/Resume Many (HORM) feature with Unified Write Fil
 A device with HORM enabled can quickly be turned off or shut down, and then restarted into the preconfigured state, even in the event of a sudden power loss.
 
 > [!Note]
-> HORM can be used on Unified Extensible Firmware Interface (UEFI) devices running Windows 10, version 1709 only. In previous Windows versions, the installation procedure for UEFI creates a hidden system partition. Because UWF cannot protect hidden partitions, HORM cannot be used on any devices that contain a hidden partition, including UEFI-capable devices on older versions of Windows.
+> HORM can be used on Unified Extensible Firmware Interface (UEFI) devices running Windows 10, version 1709, or newer versions of Windows, only. In previous Windows versions, the installation procedure for UEFI creates a hidden system partition. Because UWF cannot protect hidden partitions, HORM cannot be used on any devices that contain a hidden partition, including UEFI-capable devices on older versions of Windows.
 
 ## Requirements
 

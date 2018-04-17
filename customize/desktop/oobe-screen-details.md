@@ -20,6 +20,12 @@ The following screens are described below:
 1. [Create security questions for this account](#create-security-questions-for-this-account)
 1. [Set up Office](#set-up-office)
 
+## Cloud service pages
+
+Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.
+
+When testing OOBE, keep in mind that you may not see cloud service pages during the flow.
+
 ## Connect users to the network
 
 During the OOBE flow, the customer will see the **Let’s connect you to a network** screen. This screen appears just prior to the EULA screen during OOBE. **Let’s connect you to a network** shows any connection options available to the user, including in-range Wi-Fi and Cellular data networks.
@@ -50,7 +56,7 @@ If a newer version of Windows has become available since the device was shipped,
 
 ## Create security questions for this account
 
-During the OOBE flow, users are prompted to either create or sign in with a local account, or a Microsoft account (MSA). In Windows 10 version 1803, Windows introduces password recovery security questions to accompany the local account registration process in OOBE. If a user is unable to remember the password required to login to the local account, they can instead correctly answer their 3 security questions, and Windows will allow them to reset the password and login to the device.
+During the OOBE flow, users are prompted to either create or sign in with a local account, or a Microsoft account (MSA). In Windows 10, version 1803, Windows introduces password recovery security questions to accompany the local account registration process in OOBE. If a user is unable to remember the password required to login to the local account, they can instead correctly answer their 3 security questions, and Windows will allow them to reset the password and login to the device.
 
 This is a change from previous versions of Windows, where a user was only able to create a password hint to accompany their local account. Previously, if a user couldn’t remember their local account password based on the hint, they were required to contact Microsoft support for a device reset.
 
@@ -64,11 +70,11 @@ Users can create and update the security questions associated with their local a
 
 ![Create security questions screen in Settings app](images/security-questions-settings-app.png)
 
-The option to create security questions from the **Settings** app is also available to users who upgrade to Windows 10 version 1803 from a previous version of Windows, and to any new local account created for a device running Windows 10 version 1803.
+The option to create security questions from the **Settings** app is also available to users who upgrade to Windows 10, version 1803 from a previous version of Windows, and to any new local account created for a device running Windows 10, version 1803.
 
 ## Set up Office
 
-Users will see the **Set up Office** screens in OOBE if they are connected to a network, and have provided their Microsoft account (MSA) information. Content on the page will vary depending on the user’s account type, and the version of Office pre-installed to the device.
+Users will see the **Set up Office** screens in OOBE if they are connected to a network, and have provided their Microsoft account (MSA) information. Content on the page will vary depending on the user’s account type, and the version of Office pre-installed to the device. The **Set up Office** screens, including the **payment information** screen, are cloud service pages.
 
 ### Office 365 subscribers
 
@@ -86,14 +92,11 @@ If Office 365 (Office Desktop Bridge) is pre-installed to the device, and the us
 
 The user can choose to begin the trial by clicking **Yes**, or can opt-out of the trial by clicking **No**.
 
-### Add credit card information
+#### Add credit card information
 
-In Windows 10 version 1803, if a user opts-in to the free trial, they are prompted to enter the credit card to charge when the free trial expires.
+In Windows 10, version 1803, if a user opts-in to the free trial, they are prompted to enter the credit card to charge when the free trial expires.
 
 ![Add credit card information screen in OOBE](images/add-credit-card-oobe.png)
-
-> [!Note]
-> The payment information screen may not appear in OOBE until after the public release of Windows 10, version 1803.
 
 If a user is eligible for a free trial of Office 365, and they already have a credit card on file for their Microsoft account, they will not be prompted to **Add your credit card** during OOBE. Instead, they will be asked to confirm that the credit card on file should be charged when the free trial expires.
 

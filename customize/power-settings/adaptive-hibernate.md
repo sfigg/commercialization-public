@@ -22,7 +22,7 @@ Adaptive hibernate provides triggers which allow the system to hibernate intelli
 * Eliminate resuming to a dead battery.
 * Provide a great [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) (MS) experience by ensuring that the system remains in MS for as long as possible.
 
-To support the new triggers, the system is enabled with default values. However, OEMs can program these new triggers to ensure that machines hibernate to provide the best possible experience to users.
+To support the adaptive hibernate triggers, the system is enabled with default values. However, OEMs can program these triggers to ensure that machines hibernate to provide the best possible experience to users.
 
 ## System requirements
 
@@ -144,4 +144,4 @@ The following example shows what your Windows provisioning answer file might loo
 
 ## <span id="User_prediction"></span><span id="user_prediction"></span><span id="USER_PREDICTION"></span>User prediction
 
-In Windows 10 version 1709, user usage prediction no longer triggers Hibernate. This is a change from previous versions of Windows. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.
+User usage prediction no longer triggers Hibernate. This is a change from previous versions of Windows. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.
