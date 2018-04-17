@@ -26,13 +26,13 @@ Automatic corruption repair provides files to repair Windows if the operating sy
 
 You can use Windows Update to provide the files that are required to restore a Windows feature or repair a corrupted operating system. You can also configure Group Policy to gather the required files from a network location. Multiple source locations can be specified in the Group Policy.
 
-**To use Windows Update to restore optional features and repair Windows images**
+### Use Windows Update to restore optional features and repair Windows images
 
 1.  Windows Update will be used by default if it is allowed by the policy settings on the computer.
 
 2.  If you want to use Windows Update as a primary or backup source for files that are used to restore optional features or repair Windows images, you should make sure that your firewall is configured to allow access to Windows Update.
 
-**To use a network location to restore optional features and repair Windows images**
+### Use a network location to restore optional features and repair Windows images
 
 1.  You can use a mounted Windows image from a WIM file as a source to restore optional features and repair a corrupted operating system. For example, c:\\test\\mount\\Windows. For more information about capturing a Windows image as a WIM file, see [Capture Images of Hard Disk Partitions Using DISM](capture-images-of-hard-disk-partitions-using-dism.md).
 
@@ -42,12 +42,15 @@ You can use Windows Update to provide the files that are required to restore a W
 
 4.  You can use a Windows image (.wim) file on a network share as a source to restore optional features. You must specify the index of the Windows image in the .wim file that you want to use and you must use a `Wim:` prefix in the path to identify this file format. For example, to specify index 3 in a file named contoso.wim, type: Wim:\\\\network\\images\\contoso.wim:3.
 
+> [!Note]
+> When specifying source, use only RTM media regardless of whether the source is a WIM or a mounted Windows image.  Refresh media has older file versions excluded from the media and the target operating system may need these files.  Also, make sure the source is patched to the latest Cumulative Update.  If the target OS is patched to a higher level than the source, adding features or repairing Operating Systems may fail because the target OS needs updated files that are not present in the source.
+
 ## <span id="BKMK_SetGPO"></span><span id="bkmk_setgpo"></span><span id="BKMK_SETGPO"></span>Set Group Policy
 
 
 You can use Group Policy to specify when to use Windows Update, or a network location as a repair source for features on demand and automatic corruption repair.
 
-**To configure Group Policy for Feature on Demand**
+### Configure Group Policy for Feature on Demand
 
 1.  Open the group policy editor. For example, on a computer that is running Windows 10, from the **Start** screen, type **Edit Group Policy**, and then select **Edit Group Policy** to open the Group Policy Editor.
 
