@@ -67,8 +67,6 @@ The Direct USB connection tethering method has known reliability and manageabili
 
 Aries is a hardware connectivity component developed at Microsoft and provides the bridge between a single device and a host wishing to control the device. The device is an Ethernet-to-USB dongle that enables the at-scale mobile testing capabilities of the HLK. Mobile test systems are connected to the IP network via a 1:1 Ethernet-to-USB dongle, with the USB side connecting directly to the device target. Aries allows for independently addressable devices that can reside anywhere on the network, without a need to always be attached to the same USB port on the same HLK controller.
 
-Hardware specification and acquisition details are available at <http://aries.msoon.com>.
-
 ## <span id="small_scale_testing"></span><span id="SMALL_SCALE_TESTING"></span>Small-Scale testing
 
 
