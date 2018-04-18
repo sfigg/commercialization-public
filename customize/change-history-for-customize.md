@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 The following tables record the major changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
 
-## January 2017
+## January 2018
 
 | Topic                                          | Description                                                                                        |
 |:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
