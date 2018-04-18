@@ -43,7 +43,7 @@ You can use Windows Update to provide the files that are required to restore a W
 4.  You can use a Windows image (.wim) file on a network share as a source to restore optional features. You must specify the index of the Windows image in the .wim file that you want to use and you must use a `Wim:` prefix in the path to identify this file format. For example, to specify index 3 in a file named contoso.wim, type: Wim:\\\\network\\images\\contoso.wim:3.
 
 > [!Note]
-> When specifying source, only use RTM media regardless of whether the source is a WIM or a mounted Windows image.  Refresh media has older file versions excluded from the media and the target operating system may need these files.  Also, make sure the source is patched to the latest Cumulative Update.  If the target OS is patched to a higher level than the source, adding features or repairing Operating Systems may fail because the target OS needs updated files that are not present in the source.
+> When specifying a source, only use RTM media regardless of whether the source is a WIM or a mounted Windows image.  Refresh media has older file versions excluded from the media and the target operating system may need these files.  Also, make sure the source is patched to the latest Cumulative Update.  If the target OS is patched to a higher level than the source, adding features or repairing Operating Systems may fail because the target OS needs updated files that are not present in the source.
 
 ## <span id="BKMK_SetGPO"></span><span id="bkmk_setgpo"></span><span id="BKMK_SETGPO"></span>Set Group Policy
 
