@@ -176,7 +176,6 @@
 #### [WinPE: Create USB Bootable drive](desktop/winpe-create-usb-bootable-drive.md)
 #### [WinPE: Create a Boot CD, DVD, ISO, or VHD](desktop/winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
 #### [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](desktop/winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md)
-#### [WinPE: Add drivers](desktop/winpe-add-drivers.md)
 #### [WinPE: Add packages (Optional Components Reference)](desktop/winpe-add-packages--optional-components-reference.md)
 #### [WinPE: Mount and Customize](desktop/winpe-mount-and-customize.md)
 #### [WinPE: Adding PowerShell support to Windows PE](desktop/winpe-adding-powershell-support-to-windows-pe.md)
