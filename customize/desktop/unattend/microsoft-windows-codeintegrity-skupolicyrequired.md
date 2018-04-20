@@ -44,7 +44,7 @@ For a list of the supported Windows editions and architectures that this compone
 
 ## XML Example
 
-The following XML output specifies that Windows will play a medium volume tone when a photo is taken.
+The following XML output specifies that the Windows 10 device will run in S mode.
 
 ```XML
  <unattend xmlns="urn:schemas-microsoft-com:unattend">
