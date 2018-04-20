@@ -33,3 +33,5 @@ To determine whether a component applies to the image you’re building, load yo
 ## Related topics
 
 [Components](components-b-unattend.md)
+
+[Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)

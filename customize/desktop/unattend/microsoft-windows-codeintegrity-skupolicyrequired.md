@@ -57,3 +57,5 @@ The following XML output specifies that the Windows 10 device will run in S mode
 ## Related topics
 
 [Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity.md)
+
+[Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)
