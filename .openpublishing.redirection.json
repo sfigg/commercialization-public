@@ -1572,22 +1572,22 @@
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709", 
+        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1709", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1703", 
+        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1703.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1703", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1607", 
+        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1607.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1607", 
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1511", 
+        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1511.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1511", 
         "redirect_document_id": true
     }
