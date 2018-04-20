@@ -36,6 +36,7 @@ See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more abo
 | [Windows ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740) | You must use Windows 10, version 1607, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1607. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607). |
 | [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005) | The Windows ADK for Windows 8.1 Update includes new OEM-specific tools to reduce the amount of space Windows uses on solid state storage devices. [Learn more](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)). |
 | [Windows 10 IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/p/?LinkId=735028) | The IoT Core ADK Add-Ons include OEM-specific tools to help you create images for your devices with Windows apps, BSPs, drivers, and other chosen features. [Learn more](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons). |
+| [Windows OEM HAL Extension Test Cert 2017](https://go.microsoft.com/fwlink/?linkid=872294) | To use the Windows ADK to work with HAL Extensions, download and install the updated Windows OEM HAL Extension Test Cert 2017 (TEST ONLY) certificate. [Learn more](https://support.microsoft.com/help/4131991). |
 
 For older versions of Windows:
 
