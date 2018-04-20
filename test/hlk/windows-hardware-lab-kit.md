@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: fed4ec97-81cb-487c-ac17-de7c6884892b
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 01/26/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +23,11 @@ This guide provides information about the Hardware Compatibility Program, the te
 
 If you’re developing for Windows 10, you need the latest Windows HLK. This kit helps you ensure that the drivers and the system you develop are certified as compatible with Windows 10. 
 
-- [Download HLK](https://go.microsoft.com/fwlink/p/?LinkId=859231)
+|To certify... | Download...|
+|-----------------|------------|
+| Windows 10, version 1709    |  [Windows HLK, version 1709](https://go.microsoft.com/fwlink/p/?LinkId=859231) |
+| Windows 10, version 1703<br>Windows 10, version 1607| [Windows HLK, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=733613)|
+| Windows Server 2016 |[Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)|
 
 >[!NOTE]
 >Windows HLK only supports testing on Windows 10 and Windows Server 2016 systems. For testing previous versions of Windows, use the [Hardware Certification Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124227(v=vs.85).aspx) for Windows 8.1. 
@@ -36,11 +40,7 @@ For guidance on which kit to use for compatibility certification, see the [Windo
 >[!IMPORTANT]
 > Certification for Windows Server 2016, Azure Stack, and SDDC must continue to meet the Windows Hardware Compatibility Requirements as stated in version 1607 of documentation; must use version 1607 of the HLK (build 14393) with matching playlist and supplemental content to generate logs; and must follow policies as stated in the Windows Server Policy document. Questions about the Azure Stack, SDDC programs, or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact. 
 
-## Download Supplemental HLK Resources
-
-In addition to installing the Windows Hardware Lab Kit, you may also want to download and use playlists or filters. Certain tests also require downloading supplemental content.
-
-### Windows Hardware Compatibility playlist
+## Download Windows Hardware Compatibility playlist
 
 Get the official Windows Hardware Compatibility playlist so you can run the Windows HLK tests that ensure your hardware meets the requirements for compatibility with Windows 10. 
 - [Download the Windows Hardware Compatibility playlist](http://aka.ms/HLKPlaylist)
@@ -48,15 +48,17 @@ Get the official Windows Hardware Compatibility playlist so you can run the Wind
 Watch this video to learn more about playlists. 
 > [!VIDEO https://assets.windowsphone.com/970594d5-fef1-4fc6-84ab-289a192cd107/WinHEC_HLK_Playlists_InvariantCulture_Default.mp4]
 
-### Windows HLK filters 
+## Download Windows HLK Filters 
 
 When there is a problem in either a Windows HLK test or in the operating system itself that causes certification tests to fail incorrectly, we create an errata that allows partners to bypass the problematic test. Most errata use filters to automatically filter the failure from the submission results. Filters are applied within Windows HLK Studio. 
 
 - [Download Windows HLK filters](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/windows-hardware-lab-kit-filters)
 
-## Additional Windows HLK supplemental test content
+## Download Windows HLK Supplemental Test Content
 
-Additional supplemental content downloads are required for some tests related to graphics, media, and mean time between failures (MTBF). Download these files to complete Windows HLK testing in these areas. 
+### Supplemental Content for Graphics, Media, and Mean Time Between Failures (MTBF) Tests
+
+Supplemental test content downloads are required for some tests related to graphics, media, and mean time between failures (MTBF). Download these files to complete Windows HLK testing in these areas. 
 
 Required downloads for tests that use supplemental content: 
 
@@ -68,7 +70,7 @@ Required downloads for tests that use supplemental content:
 - [HLK_GRFX_FOD.zip (Windows 10, version 1703)](https://go.microsoft.com/fwlink/p/?linkid=845559) 
 - [HLK_GRFX_FOD.zip (Windows 10, version 1607)](https://go.microsoft.com/fwlink/p/?linkid=842373)
 
-#### Supplemental Content for Windows HLK Private Cloud Simulator (PCS) Tests 
+### Supplemental Content for Private Cloud Simulator (PCS) Tests 
 
 This supplemental content package is required to pass the Device and Solutions PCS Tests. 
 

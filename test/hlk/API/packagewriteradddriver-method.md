@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46610e75-4b6c-4acf-8226-767aadfb4b12
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -15,8 +15,7 @@ ms.technology: windows-oem
 
 # PackageWriter.AddDriver Method
 
-
-This method adds driver files to the submission package and checks the driver files for driver signability. This method can only be used for submission packages. It cannot be used for update packages. The signability tests are done when drivers are added to the package. If the signability tests fail the driver is not added to the package. Down level OS signability tests are automatically run. Errors from these signability results will not prevent submission creation (will not cause a false return value). The error messages for down level operating system signability runs will be captured and returned as warnings.
+This method replaces a driver for an Update Package and checks the driver files for driver signability. The signability tests are done when drivers are added to the package. If the signability tests fail the driver is not added to the package. Down level OS signability tests are automatically run. Errors from these signability results will not prevent submission creation (will not cause a false return value). The error messages for down level operating system signability runs will be captured and returned as warnings.
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel.Submission
 

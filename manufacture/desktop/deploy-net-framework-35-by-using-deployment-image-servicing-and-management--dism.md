@@ -80,7 +80,7 @@ For images that will support more than one language, you must add .NET Framework
 
     A status of **Enable Pending** indicates that the image must be brought online to complete the installation.
 
-### <span id="nointerent"></span><span id="NOINTERENT"></span>Using DISM with no Internet connectivity
+## <span id="nointerent"></span><span id="NOINTERENT"></span>Using DISM with no Internet connectivity
 
 You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources\\SxS** folder on the installation media to an installation of Windows® that is not connected to the Internet.
 

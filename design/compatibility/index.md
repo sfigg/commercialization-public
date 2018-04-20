@@ -4,7 +4,7 @@ Description: 'This section of the documentation provides specifications for hard
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
-ms.author: sapaetsc
+ms.author: dongill
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -31,7 +31,7 @@ The Windows Hardware Compatibility Program uses an official playlist to determin
 
 The latest playlist can be downloaded at the following location:
 
-- [https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/)
+- [http://aka.ms/HLKPlaylist](http://aka.ms/HLKPlaylist)
 
 ## Hardware Certification Policies and Processes for Windows 10, version 1607
 

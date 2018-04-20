@@ -102,20 +102,16 @@
     }
   ],
   "notification_subscribers": [
-    "joshbax@microsoft.com",
     "kenpacq@microsoft.com",
     "dawnwood@microsoft.com",
     "themar@microsoft.com",
-    "v-gmoor@microsoft.com",
-    "elkr@microsoft.com",
-    "alhopper@microsoft.com",
-    "sapaetsc@microsoft.com"
+    "elizapo@microsoft.com",
+    "alhopper@microsoft.com"
   ],
   "branches_to_filter": [
     ""
   ],
   "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/commercialization/_git/commercialization",
-  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {

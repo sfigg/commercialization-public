@@ -2,8 +2,8 @@
 title: TPM 2.0 - Self Test - (WoW64 for ARM64)
 Description: TPM 2.0 - Self Test - (WoW64 for ARM64)
 ms.assetid: 
-author: sapaetsc
-ms.author: sapaetsc
+author: aahi
+ms.author: aahi
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

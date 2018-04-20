@@ -2,7 +2,7 @@
 title: Integrating Motion and Orientation Sensors
 description: Motion and orientation sensor capabilities and requirements for Windows 10 and earlier operating systems.
 ms.assetid: 06FC01E0-8337-4704-9B44-4B8CC36A3AB5
-ms.author: sapaetsc
+ms.author: dongill
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 **Last updated:**
 
--   December 18, 2015
+-   February 28, 2018
 
 **Applies to:**
 
@@ -30,7 +30,7 @@ Microsoft Word file
 
 [Get Office File Viewers](http://office.microsoft.com/downloads/office-online-file-converters-and-viewers-HA001044981.aspx)
 
-[![click here to download](images/download.png)](http://download.microsoft.com/download/8/2/0/820DE818-FD98-49A8-B8A4-CFA5F765550B/integrating-motion-and-orientation-sensors.docx)
+[![click here to download](images/download.png)](http://download.microsoft.com/download/8/2/0/820DE818-FD98-49A8-B8A4-CFA5F765550B/integrating-motion-and-orientation-sensors-with-windows.docx)
 
 This paper is intended to help OEMs, ODMs, and IHVs understand motion and orientation sensor capabilities and requirements for Windows 10 and earlier operating systems. The paper also shows how these capabilities are engineered and implemented on PC hardware platforms running Windows. This technology area involves 3D accelerometer, 3D magnetometer/compass, and 3D gyrometer sensor hardware.
 

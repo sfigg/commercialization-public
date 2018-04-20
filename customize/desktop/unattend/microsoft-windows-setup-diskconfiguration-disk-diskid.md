@@ -55,10 +55,9 @@ For a list of the supported Windows editions and architectures that this compone
 
 ## XML Example
 
-
 The following XML output for the `DiskConfiguration` setting shows a configuration for a UEFI-based system with two hard drives.
 
-```
+```XML
 <DiskConfiguration>
 
   <!-- First hard drive -->
@@ -107,7 +106,6 @@ The following XML output for the `DiskConfiguration` setting shows a configurati
         <Format>NTFS</Format> 
         <TypeID>de94bba4-06d1-4d40-a16a-bfd50179d6ac</TypeID> 
       </ModifyPartition>
-    </ModifyPartitions>
 
       <!-- EFI system partition (ESP) -->
       <ModifyPartition wcm:action="add">
@@ -177,16 +175,4 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 ## Related topics
 
-
 [Disk](microsoft-windows-setup-diskconfiguration-disk.md)
-
- 
-
- 
-
-
-
-
-
-
-
