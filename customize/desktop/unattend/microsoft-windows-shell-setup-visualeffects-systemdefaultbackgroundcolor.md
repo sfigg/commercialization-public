@@ -17,15 +17,9 @@ ms.technology: windows-oem
 # SystemDefaultBackgroundColor
 
 > [!Important]
-> This setting is deprecated in Windows 10, version 1803.
+> This setting is deprecated in Windows 10 and Windows Server 2016, and should not be used. The default background color during OOBE is always dark. To align with this change, OEMs can no longer change the default screen background color during OOBE.
 
-
-`SystemDefaultBackgroundColor` specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.
-
-**Note**  
-In Windows 10 and Windows Server 2016, this setting is deprecated and should not be used. The default background color during OOBE is always dark. To align with this change, OEMs can no longer change the default screen background color during OOBE.
-
- 
+`SystemDefaultBackgroundColor` specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected. 
 
 ## Valid Configuration Passes
 

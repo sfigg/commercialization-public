@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # VisualEffects
 
 > [!Important]
-> This component is deprecated in Windows 10, version 1803.
+> This component is deprecated.
 
 `VisualEffects` specifies additional display settings.
 

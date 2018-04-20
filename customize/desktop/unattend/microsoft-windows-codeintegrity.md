@@ -20,7 +20,7 @@ The `Microsoft-Windows-CodeIntegrity` component is new in Windows 10, version 18
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [SKUPolicyRequired](microsoft-windows-codeintegrity-skupolicyrequired.md) | new in Windows 10, version 1803. This setting indicates whether a Windows 10 device is running in S mode. |
+| [SKUPolicyRequired](microsoft-windows-codeintegrity-skupolicyrequired.md) | New in Windows 10, version 1803. This setting indicates whether a Windows 10 device is running in S mode. |
 
 ## Applies To
 

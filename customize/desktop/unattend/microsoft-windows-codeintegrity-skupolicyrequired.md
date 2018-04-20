@@ -32,7 +32,7 @@ Configuring this Unattend setting is only part of the process required to design
 
 ## Parent Hierarchy
 
-[Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity-skupolicyrequired.md) | **SKUPolicyRequired**
+[Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity.md) | **SKUPolicyRequired**
 
 ## Valid Configuration Passes
 
@@ -57,4 +57,4 @@ The following XML output specifies that Windows will play a medium volume tone w
 
 ## Related topics
 
-[Microsoft-Windows-CoreMmRes](microsoft-windows-codeintegrity.md)
+[Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity.md)
