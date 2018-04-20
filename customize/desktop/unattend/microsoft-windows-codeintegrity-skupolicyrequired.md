@@ -16,11 +16,9 @@ ms.technology: windows-oem
 
 `SKUPolicyRequired` is new in Windows 10, version 1803. This setting indicates whether a Windows 10 device is running in S mode.
 
-Windows 10 in S mode can be applied to a Windows edition to enable a productive user experience that's streamlined for security. Windows 10 in S mode supports using apps from the Microsoft Store only, and supports web browsing only in the Microsoft Edge browser. In previous versions of Windows, Windows 10 S was a separate edition that required working with a different Windows image than non-S editions. Starting with Windows 10, version 1803, you can Enable S mode on supported Windows editions.
-
 Configuring this Unattend setting is only part of the process required to design and manufacture devices that run Windows 10 in S mode. While the overall process is similar to building other Windows 10 devices, Windows 10 in S mode has some additional considerations. To review the full end-to-end process, see [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
-> [!Important]
+> [!Tip]
 > S mode can be applied to Windows Home, Pro, Pro EDU, and Pro WS editions.
 
 ## Values
