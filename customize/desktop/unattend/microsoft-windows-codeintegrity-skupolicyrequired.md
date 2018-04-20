@@ -49,7 +49,8 @@ The following XML output specifies that Windows will play a medium volume tone w
 ```XML
  <unattend xmlns="urn:schemas-microsoft-com:unattend">
     <settings pass="offlineServicing">
-        <component name="Microsoft-Windows-CodeIntegrity" processorArchitecture="amd64" publicKeyToken="31bf39567ab364e25" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">            <SkuPolicyRequired>1</SkuPolicyRequired>
+        <component name="Microsoft-Windows-CodeIntegrity" processorArchitecture="amd64" publicKeyToken="31bf39567ab364e25" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SkuPolicyRequired>1</SkuPolicyRequired>
         </component>
     </settings>
  </unattend>
