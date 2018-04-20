@@ -15,6 +15,7 @@ This topic describes Windows 10, version 1809 answer file settings that have cha
 
 | Setting name         | Description                                                                      |
 |:---------------------|:---------------------------------------------------------------------------------|
+| [Microsoft-Windows-CodeIntegrity-SKUPolicyRequired](microsoft-windows-codeintegrity-skupolicyrequired.md) | Indicates whether a Windows 10 device will run in S mode on next boot. See [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview) for a full guide on designing and manufacturing a device to run Windows 10 in S mode.    |
 
 ## Deprecated Windows settings
 
