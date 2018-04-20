@@ -8,13 +8,16 @@ ms.assetid: f47b0af3-9a32-4bb8-8ede-a90cce96f94d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
 # SystemDefaultBackgroundColor
+
+> [!Important]
+> This setting is deprecated in Windows 10, version 1803.
 
 
 `SystemDefaultBackgroundColor` specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.

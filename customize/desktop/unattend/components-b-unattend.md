@@ -43,6 +43,10 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Maintains a list of all available domains and servers on a network.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Microsoft-Windows-CoreMmRes](microsoft-windows-codeintegrity.md)</p></td>
+<td><p>**New in Windows 10, version 1803**. Specifies settings for Windows 10 in S mode.</p></td>
+</tr>
+<tr class="odd">
 <td><p>[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)</p></td>
 <td><p>Specifies settings for the camera sound.</p></td>
 </tr>

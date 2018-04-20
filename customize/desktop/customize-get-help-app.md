@@ -74,7 +74,7 @@ To register a protocol handler for your app:
 * For a Win32 app, the protocol handler is specified in the registry. See [Registering an Application to a URI Scheme](https://msdn.microsoft.com/en-us/library/aa767914(v=vs.85).aspx) for more details.
 
 > [!Note]
-> Win32 apps are not supported in Windows 10 S.
+> Win32 apps are not supported in Windows 10 in S mode.
 
 ### Link to your support website
 

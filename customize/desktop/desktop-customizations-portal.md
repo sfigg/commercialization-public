@@ -24,7 +24,7 @@ You have the following options to customize your image. Depending on which optio
 -->
 
 >[!Note]
-> All desktop customization options listed above are supported in Windows 10 S. To learn more, see [Windows 10 S Manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+> All desktop customization options listed above are supported in Windows 10 in S mode. To learn more, see [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## In this section
 
@@ -47,6 +47,6 @@ These are some common ways to customize your desktop device. You will also find 
 
 [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions)
 
-[Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning)
+[Planning a Windows 10 in S mode deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning)
 
 [Deployment options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-deployment-options)
