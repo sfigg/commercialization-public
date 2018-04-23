@@ -4,7 +4,7 @@ Description: Instructions on how to download and install the Windows ADK
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Download and install the Windows ADK
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,7 +19,7 @@ By default, the ADK is installed using an online installer and GUI. If you have 
 
 ## Download the latest Windows ADK
 
-[Download the Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)
+[Download the Windows ADK for Windows 10, version 1803](need-link.md)
 
 The latest version of the Windows ADK includes:
 
@@ -32,6 +32,7 @@ See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more abo
 
 | ADK version                               | Description                                           |
 |:------------------------------------------|:------------------------------------------------------|
+| [Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)  | You must use Windows 10, version 1709, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1709. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1709). |
 | [Windows ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | You must use Windows 10, version 1703, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1703. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703).  |
 | [Windows ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740) | You must use Windows 10, version 1607, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1607. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607). |
 | [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005) | The Windows ADK for Windows 8.1 Update includes new OEM-specific tools to reduce the amount of space Windows uses on solid state storage devices. [Learn more](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)). |
