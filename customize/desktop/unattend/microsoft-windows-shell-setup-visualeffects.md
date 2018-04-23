@@ -8,7 +8,7 @@ ms.assetid: 1bea22d2-6279-4d0f-8019-f8885cbdec72
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

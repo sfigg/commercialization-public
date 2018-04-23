@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 ms.author: alhopper
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 The following tables record the major changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
 
-## April 23, 2018
+## April 30, 2018
 
 Changes in this section relate to the release of Windows 10, version 1803.
 

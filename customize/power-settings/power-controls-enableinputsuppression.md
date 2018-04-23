@@ -6,7 +6,7 @@ description: Use to enable input suppression on a Modern Standby system with a c
 - 'PreferredLib:/library/windows/hardware' 
 ms.assetid: B96E275A-C2F6-4471-8077-93C829505006 
 ms.author: alhopper
-ms.date: 04/23/2018 
+ms.date: 04/30/2018 
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-oem 
