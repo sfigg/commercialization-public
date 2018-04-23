@@ -26,6 +26,6 @@ Use the topics in this section to learn more about servicing a device running Wi
 | [IoT Core OS Updates](iot-core-update.md)  | IoT Core devices can receive OS updates via Windows Update when connected to the internet. |
 |[Manage IoT Core device updates](managing-iot-device-update.md)|OEM and enterprise customers can take advantage of device management configuration service providers (CSPs) to control the device update process.|
 |[IoT Core App Updates](updating-iot-core-apps.md)|OEM and enterprise customers can use Microsoft Store to deliver app updates for IoT Core devices.|
-|Device Update Center | Windows 10 IoT Device Update Center is subscription service that enables OEM to publish OEM Custom packages (OCP) to Windows Update and manage the deployment of OS/OCP updates using flight rings. This service is currently in Private Preview. See [Build 2017 Channel9 Video on Manufacturing Guide](https://channel9.msdn.com/events/Build/2017/B8085) on IoT Core Update Service.
+|Device Update Center | Windows 10 IoT Device Update Center is subscription service that enables an OEM to publish OEM Custom packages (OCP) to Windows Update and manage the deployment of OS/OCP updates using flight rings. This service is currently in Private Preview. See [Build 2017 Channel9 Video on Manufacturing Guide](https://channel9.msdn.com/events/Build/2017/B8085) on IoT Core Update Service.
   |
 
