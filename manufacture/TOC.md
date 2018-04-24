@@ -132,7 +132,6 @@
 ###### [Add and Remove Language Packs Offline Using DISM](desktop/add-and-remove-language-packs-offline-using-dism.md)
 ###### [Sideload Apps with DISM](desktop/sideload-apps-with-dism-s14.md)
 ###### [Preinstall Apps Using DISM](desktop/preinstall-apps-using-dism.md)
-###### [Customize the Start Screen](desktop/customize-the-start-screen.md)
 ###### [Change the Windows Image to a Higher Edition Using DISM](desktop/change-the-windows-image-to-a-higher-edition-using-dism.md)
 ###### [Export or Import Default Application Associations](desktop/export-or-import-default-application-associations.md)
 ##### [Repair a Windows Image](desktop/repair-a-windows-image.md)
