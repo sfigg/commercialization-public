@@ -5,6 +5,7 @@ ms.assetid: b28584ec-487e-4b59-a7f6-deb797d464a8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Customize the Start Screen
 ms.author: themar
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
