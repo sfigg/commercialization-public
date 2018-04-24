@@ -135,8 +135,6 @@
 ###### [Customize the Start Screen](desktop/customize-the-start-screen.md)
 ###### [Change the Windows Image to a Higher Edition Using DISM](desktop/change-the-windows-image-to-a-higher-edition-using-dism.md)
 ###### [Export or Import Default Application Associations](desktop/export-or-import-default-application-associations.md)
-###### [Service a Mounted Windows Image](desktop/service-a-mounted-windows-image.md)
-###### [Service an Applied Windows Image](desktop/service-an-applied-windows-image.md)
 ##### [Repair a Windows Image](desktop/repair-a-windows-image.md)
 ##### [Manage the Component Store](desktop/manage-the-component-store.md)
 ###### [Determine the Actual Size of the WinSxS Folder](desktop/determine-the-actual-size-of-the-winsxs-folder.md)
