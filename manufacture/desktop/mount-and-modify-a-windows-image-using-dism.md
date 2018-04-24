@@ -11,14 +11,17 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
  
-# Mount and Modify a Windows Image Using DISM
+# Modify a Windows Image Using DISM
 
+This topic details the changes you can make to mounted or applied Windows images with DISM. 
 
-You can mount a Windows image from a WIM, VHD, or FFU file. Mounting an image maps the contents of the image to a directory so that you can make changes to the image using without booting into the image. You run run DISM commands against a mounted image, and can also perform common file operations, such as copying, pasting, and editing on a mounted image. Changes you make to the image are committed when you use DISM to unmount the image.
+Mounted images are WIM, VHD, or FFU files that are that maps the contents of the image to a directory so that you can make changes to the image using without booting into the image. You run run DISM commands against a mounted image, and can also perform common file operations, such as copying, pasting, and editing on a mounted image. Changes you make to the image are committed when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
+
+Applied images are WIM, VHD, or FFU files that are image files that have been applied to a specified partition. To make changes to an applied image, use `DISM /image:`. See [Applying an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions#span-idapplyingtheimagespanspan-idapplyingtheimagespanspan-idapplyingtheimagespanapplying-the-image) to learn how to apply an image.
 
 You can mount and modify multiple images on a single computer. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
 
-## <span id="Mounting_an_Image"></span><span id="mounting_an_image"></span><span id="MOUNTING_AN_IMAGE"></span>Mount an Image
+## <span id="Mounting_an_Image"></span><span id="mounting_an_image"></span><span id="MOUNTING_AN_IMAGE"></span>Mount an image
 
 You can mount an image using the **/optimize** option to reduce initial mount time. However, When using the **/optimize** option, processes that are ordinarily performed during a mount will instead be completed the first time that you access a directory. As a result, there may be an increase in the time that is required to access a directory for the first time after mounting an image using the **/optimize** option.
 
@@ -116,13 +119,11 @@ After you modify an image, you must unmount it. If you mounted your image with t
 
 1.  Make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK.
 
-2.  If you are using a Windows 8.1, Windows 8, or Windows 7 PC, use the **Deployment and Imaging Tools Environment** to access the tools that are installed with the Windows 10 version of the Windows ADK.
+2.  Don’t mount images to protected folders, such as your User\\Documents folder.
 
-3.  Don’t mount images to protected folders, such as your User\\Documents folder.
+3.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
-4.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
-
-5.  If DISM processes are interrupted, consider running the commands from the Windows Preinstallation Environment (WinPE) instead.
+4.  If DISM processes are interrupted, consider running the commands from the Windows Preinstallation Environment (WinPE) instead.
 
 ## <span id="related_topics"></span>Related topics
 
