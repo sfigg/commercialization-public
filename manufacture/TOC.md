@@ -118,7 +118,7 @@
 ##### [Install Windows 10 using a previous version of Windows PE](desktop/copy-dism-to-another-computer.md)
 ##### [Create and Manage a Windows Image Using DISM](desktop/create-and-manage-a-windows-image-using-dism.md)
 ###### [Capture Images of Hard Disk Partitions Using DISM](desktop/capture-images-of-hard-disk-partitions-using-dism.md)
-###### [Mount and Modify a Windows Image Using DISM](desktop/mount-and-modify-a-windows-image-using-dism.md)
+###### [Modify a Windows Image Using DISM](desktop/mount-and-modify-a-windows-image-using-dism.md)
 ###### [Apply Images Using DISM](desktop/apply-images-using-dism.md)
 ###### [Split a Windows image file (.wim) to span across multiple DVDs](desktop/split-a-windows-image--wim--file-to-span-across-multiple-dvds.md)
 ###### [Create a WIM for Multiple Architecture Types Using DISM](desktop/create-a-wim-for-multiple-architecture-types-using-dism.md)
