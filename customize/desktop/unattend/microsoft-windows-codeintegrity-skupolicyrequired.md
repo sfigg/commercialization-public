@@ -16,7 +16,9 @@ ms.technology: windows-oem
 
 `SKUPolicyRequired` is new in Windows 10, version 1803. This setting indicates whether a Windows 10 device is running in S mode.
 
-Configuring this Unattend setting is only part of the process required to design and manufacture devices that run Windows 10 in S mode. While the overall process is similar to building other Windows 10 devices, Windows 10 in S mode has some additional considerations. To review the full end-to-end process, see [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+Beginning with Windows 10, version 1803, you can enable S mode on supported editions. This is a change from previous versions of Windows where Windows 10 S was its own edition with its own base media. To enable S mode, you'll create an unattend file, and then use DISM to apply the Unattend file to a mounted Windows image.
+
+See [Enable S mode](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-enable-s-mode) for instructions on using DISM to enable S mode.
 
 > [!Tip]
 > S mode can be applied to Windows Home, Pro, Pro EDU, and Pro WS editions.
@@ -59,3 +61,5 @@ The following XML output specifies that the Windows 10 device will run in S mode
 [Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity.md)
 
 [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)
+
+[Enable S mode](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-enable-s-mode)
