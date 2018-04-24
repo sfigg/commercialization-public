@@ -216,7 +216,6 @@
 #### [Install Windows from a USB Flash Drive](desktop/install-windows-from-a-usb-flash-drive.md)
 #### [Deploy a Custom Image](desktop/deploy-a-custom-image.md)
 #### [Automate Windows Setup](desktop/automate-windows-setup.md)
-#### [Use a Configuration Set with Windows Setup](desktop/use-a-configuration-set-with-windows-setup.md)
 #### [Add Device Drivers to Windows During Windows Setup](desktop/add-device-drivers-to-windows-during-windows-setup.md)
 #### [Add a Custom Script to Windows Setup](desktop/add-a-custom-script-to-windows-setup.md)
 #### [Boot Windows to Audit Mode or OOBE](desktop/boot-windows-to-audit-mode-or-oobe.md)
