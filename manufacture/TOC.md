@@ -188,7 +188,6 @@
 #### [Winpeshl.ini Reference: Launching an app when WinPE starts](desktop/winpeshlini-reference-launching-an-app-when-winpe-starts.md)
 #### [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](desktop/wpeinit-and-startnetcmd-using-winpe-startup-scripts.md)
 #### [Wpeutil Command-Line Options](desktop/wpeutil-command-line-options.md)
-#### [Where is WinPE.wim?](desktop/where-is-winpewim.md)
 ### [Windows Recovery Environment (Windows RE)](desktop/windows-recovery-environment--windows-re--technical-reference.md)
 #### [Customize Windows RE](desktop/customize-windows-re.md)
 #### [Add a custom tool to the Windows RE boot options menu](desktop/add-a-custom-tool-to-the-windows-re-boot-options-menu.md)
