@@ -1,11 +1,11 @@
 ---
-author: Justinha
+author: themar
 Description: 'WinPE: Mount and Customize'
 ms.assetid: 5d5c13e8-8754-4fff-afd1-dcc3fb757bb9
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Mount and Customize'
 ms.author: themar
-ms.date: 10/02/2017
+ms.date: 4/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -13,9 +13,9 @@ ms.technology: windows-oem
 
 # WinPE: Mount and Customize
 
-Add drivers to Windows Preinstallation Environment (WinPE), such as graphics drivers or network drivers.
+WinPE ships as a .wim file. Mounting and customizing a WinPE image is the same process as any other Windows image. WinPE also has some customizations that are specific to it. This topic covers the common ways to customize a WinPE image.
 
-Common customizations:
+## Common customizations:
 
 -   [Device drivers (.inf files)](winpe-add-drivers.md). You can customize device drivers, such as drivers that support network cards or storage devices.
 -   [Packages (.cab files, also known as WinPE optional components)](winpe-add-packages--optional-components-reference.md) Add languages, hotfixes, or support for features like PowerShell and the HTML Application Language (HTA).
@@ -36,25 +36,11 @@ Common customizations:
 
 ## <span id="Create_WinPE_image"></span>Create a set of either 32-bit or 64-bit Windows PE files
 
-1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
-
-2.  In the **Deployment Tools and Imaging Environment**, copy the WinPE files for the PCs you want to boot.
-
-    -   The 64-bit version can boot 64-bit UEFI and 64-bit BIOS PCs.
-
-        ```
-        copype amd64 C:\WinPE_amd64
-        ```
-
-    -   The 32-bit version of WinPE can boot 32-bit UEFI, 32-bit BIOS, and 64-bit BIOS PCs.
-
-        ```
-        copype x86 C:\WinPE_x86
-        ```
+Before you can customize WinPE, you need to have a WinPE image to work with. If you need to get a WinPE image, see [WinPE: Create USB bootable drive] (winpe-create-usb-bootable-drive.md) to learn how.
 
 ## <span id="Mount_the_image"></span>Mount the Windows PE boot image
 
--   Mount the WinPE image.
+-   Use DISM to mount the WinPE image into a temporary location on your technician PC:
 
     ```
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
@@ -65,19 +51,20 @@ Common customizations:
 
 ### <span id="AddDrivers"></span>Add device drivers (.inf files)
 
--   Add the device driver to the WinPE image.
+-   Use `DISM /add-driver` to add a device driver to your WinPE image.
 
     ```
     Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"
     ```
 
-    Although you can add multiple drivers to an image by using one command, it is often easier to troubleshoot problems by adding each driver package individually.
+    You can add multiple drivers to an image by using one command, but it's often easier to troubleshoot problems if you add each driver package individually.
 
     To learn more about drivers, see [Add device drivers (.inf files)](winpe-add-drivers.md).
+    To see all available DISM driver servicing options, see [DISM driver servicing command-line options](dism-driver-servicing-command-line-options-s14.md).
 
 ### <span id="AddPackages"></span>Add packages/languages/optional components/.cab files
 
--   Add the optional component into WinPE. To add optional components, you need to add both the optional component and its associated language packs.
+-   WinPE has packages that you can add with DISM to enable additional features and languages. Use `DISM /add-package` to add optional components to your image. When you add a WinPE optional component, make sure that you add both the optional component and its associated language packs.
 
     ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-HTA.cab"  
@@ -85,7 +72,7 @@ Common customizations:
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
     ```
 
-    To learn more about adding packages, see [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
+    To learn more about available optional components and languages, see [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
 
 ### <span id="AddFilesAndFolders"></span>Add files and folders
 
@@ -95,7 +82,7 @@ Common customizations:
 
 ### <span id="AddStartupScript"></span><span id="addstartupscript"></span><span id="ADDSTARTUPSCRIPT"></span>Add a startup script
 
--   Modify the Startnet.cmd script to include your customized commands. This file is located at `C:\WinPE_amd64\mount\Windows\System32\Startnet.cmd`.
+-   Modify Startnet.cmd to include your customized commands. This file is located in your mounted image at `C:\WinPE_amd64\mount\Windows\System32\Startnet.cmd`.
 
     You can also call other batch files or command line scripts from this file.
 
@@ -193,7 +180,7 @@ If you've been instructed to apply an update to your WinPE image, you'll have to
 
 ## <span id="Unmount"></span>Unmount the Windows PE image and create media
 
-1.  Unmount the WinPE image.
+1.  Unmount the WinPE image, committing changes.
 
     ```
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit

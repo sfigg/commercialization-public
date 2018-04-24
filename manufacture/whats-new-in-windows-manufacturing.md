@@ -37,7 +37,7 @@ To update install the latest updates:
 
 **April 4, 2017**
 
-- You can now create more than one partition on a USB drive. This allows you to use a single USB drive with a combination of FAT32 and NTFS partitions. To learn more about creating multiple partitions on a USB drive, see [WinPE: Create USB bootable drive](desktop/winpe-create-usb-bootable-drive.md#windows-10-version-1703)
+- You can now create more than one partition on a USB drive. This allows you to use a single USB drive with a combination of FAT32 and NTFS partitions. To learn more about creating multiple partitions on a USB drive, see [WinPE: Store or split images to deploy Windows using a single USB drive](desktop/winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md#span-idcreateamultiplepartitionusbdrivespanoption-1-create-a-multiple-partition-usb-drive)
 
 - Windows setup has a new command line option, `/diagnosticprompt`. This setting lets you choose whether the Command prompt is available during Windows setup when pressing Shift+10. See [Windows Setup Command-Line Options](desktop/windows-setup-command-line-options.md) for all available command line options for Windows setup.
 

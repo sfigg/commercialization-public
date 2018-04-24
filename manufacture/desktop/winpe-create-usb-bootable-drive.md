@@ -1,146 +1,117 @@
 ---
 author: themar
-Description: 'WinPE: Create USB Bootable drive'
-ms.assetid: 9e7216ed-5a12-4f26-a0cb-da303589c806
+Description: 'Create bootable WinPE media'
+ms.assetid: d60de9b6-6775-41e7-bc52-dfafede554df
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'WinPE: Create USB Bootable drive'
+title: 'WinPE: Create bootable media'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# WinPE: Create USB Bootable drive
+# Create bootable WinPE media
 
+The Windows Assessment and Deployment Kit (ADK) includes the [CopyPE](copype-command-line-options.md) and [**MakeWinPEMedia**](makewinpemedia-command-line-options.md) command line utilities. When run from the Deployment and Imaging Tools Environment, **CopyPE** creates a working set of WinPE files, that **MakeWinPEMedia** can use to create bootable WinPE media. **MakeWinPEMedia** can create bootable WinPE USB drives, virtual hard disks, or ISOs that allow you to boot a VHD or burn to a DVD or CD.
 
-Create a Windows PE (WinPE) bootable USB flash drive or an external USB hard drive.
+**CopyPE** and **MakeWinPEMedia** are installed when you choose the **Deployment tools** and **Windows Preinstallation Environment** options when [installing the ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install).
 
-The default installation runs from memory (RAM disk), so you can remove the drive while Windows PE is running. Do not remove the USB drive if you are applying an image from it.
+## Step 1: Create working files
 
-## Install the Windows ADK
+No matter what type of media you're going to create, the first thing to do is create a working set of WinPE files on your technician PC.
 
--   Install the following features from the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803):
+1. Start the **Deployment and Imaging Tools Environment** as an administrator.
 
-    -   **Deployment Tools**: includes the **Deployment and Imaging Tools Environment**.
-
-    -   **Windows Preinstallation Environment** : includes the files used to install Windows PE.
-
-## Prepare a USB drive
-
-### Windows 10, Version 1703
-In Windows 10, Version 1703 you can create multiple partitions on a USB drive, allowing you to have a single USB key with a combination of FAT32 and and NTFS partitions. To work with USB drives that have multiple partitions, your technician PC has to be Windows 10, Version 1703, with the most recent version of the ADK installed.
-
-`MakeWinPEMedia` formats the drive as FAT32 which has a filesize limit of 4GB, and custom images can easily exceed that limitation. Creating a USB drive with both FAT32 and NTFS partitions allows you to have a single physical drive that can boot to Windows PE as well store large custom images.
-
-To prepare your USB drive, you'll create separate FAT32 and NTFS partitions. The following creates two partitions on a USB drive; one 2GB FAT32 partition, and one NTFS partition that uses the rest of the available space on the drive. You want to make sure that your USB drive has enough free space for the 2GB WinPE partiton and to hold large images on the NTFS partition:
-
-   ```
-    diskpart
-      list disk
-      select <disk number>
-      clean
-      rem === Create the Windows PE partition. ===
-      create partition primary size=2000
-      format quick fs=fat32 label="Windows PE"
-      assign letter=P
-      active
-      rem === Create a data partition. ===
-      create partition primary
-      format fs=ntfs quick label="Other files"
-      assign letter=O
-      list vol
-      exit
-
-   ```
-
-
-### Windows 10, Version 1607 and earlier
-You won't typically be able to store or capture Windows images on a Windows PE USB flash drive because most USB flash drives support only a single drive partition. The `MakeWinPEMedia` command formats the drive as FAT32, which supports booting both BIOS-based and UEFI-based PCs. This file format only supports individual file sizes up to 4 GB, which is normally not large enough to hold custom Windows images.
-
-In the next steps you'll use `MakeWinPEMedia` to format your USB drive, so you don't have to do anything else to prepare the drive for WinPE.
-
-## Create a WinPE drive
-
-1.  Start the **Deployment and Imaging Tools Environment** as an **administrator**.
-
-2.  Create a working copy of the Windows PE files. Specify either x86, amd64, or arm:
+2. Run **copype** to create a working copy of the Windows PE files. For more information about copype, see [Copype command line options](copype-command-line-options.md).
 
     ```
     copype amd64 C:\WinPE_amd64
     ```
 
-3.  Install Windows PE to the USB flash drive, specifying the WinPE drive letter:
+## Step 2: Create bootable media
+
+Now that you now have a set of working files, you can use **MakeWinPEMedia** to build bootable WinPE media.
+
+### Create a bootable WinPE USB drive
+
+1. Attach a USB drive you your technician PC.
+
+2. Start the **Deployment and Imaging Tools Environment** as an administrator.
+
+3. **Optional** 
+    You can format your USB key prior to running MakeWinPEMedia. MakeWinPEMedia will format your WinPE drive as FAT32. If you want to be able to store files larger than 4GB on your WinPE USB drive, you can create a multipartition USB drive that has an additional partition formatted as NTFS. See [Create a multipartition USB drive](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md#span-idcreateamultiplepartitionusbdrivespanoption-1-create-a-multiple-partition-usb-drive) for instructions.
+
+4. Use **MakeWinPEMedia** with the `/UFD` option to format and install Windows PE to the USB flash drive, specifying the USB key's drive letter:
 
     ```
     MakeWinPEMedia /UFD C:\WinPE_amd64 P:
     ```
 
-    **Warning**  
-    This command reformats the partition.
+    > [!Warning]
+    > This command reformats the partition.
 
-     
+    See [MakeWinPEMedia command line options](makewinpemedia-command-line-options.md) for all available options.
 
-## Boot to Windows PE
+The bootable WinPE USB drive is ready. You can use it to [boot a PC into WinPE](boot-to-uefi-mode-or-legacy-bios-mode.md).
 
-1.  Connect the USB device to the PC you want to work on.
+### Create a WinPE ISO, DVD, or CD
 
-2.  Turn on the PC, and press the key that opens the firmware boot menus.
+1. Use **MakeWinPEMedia** with the `/ISO` option to create an ISO file containing the Windows PE files:
 
-3.  Select the USB drive. Windows PE starts automatically.
+    ```
+    MakeWinPEMedia /ISO C:\WinPE_amd64 C:\WinPE_amd64\WinPE_amd64.iso
+    ```
 
-    After the command window appears, the `wpeinit` command runs, which sets up the system. This might take a few minutes.
+2. **Optional** Burn a DVD or CD: In Windows Explorer, right-click the ISO file, and select **Burn disc image** > **Burn**, and follow the prompts.
 
-## Troubleshooting
+### Create a WinPE VHD to use with Hyper-V
 
-- If you're using a USB key with more than one partition, make sure that your WinPE partition is Partition 1 on the USB drive.
+Even though you can create a bootable When running Windows PE in Hyper-V, consider using an ISO file format instead of a VHD, to enable quick setup of the virtual PC. 
 
--  If the `copype` command isn't recognized, make sure you're running the command from the Deployment and Imaging Tools Environment, which is part of the Windows ADK.
+To install Windows PE to a VHD:
 
--  If Windows PE doesn't appear, try the following workarounds, rebooting the PC each time:
+1. Create a virtual hard drive (.vhdx):
 
-    -   To boot a PC that supports UEFI mode, in the firmware boot menus, try manually selecting the boot files: \\EFI\\BOOT\\BOOTX64.EFI.
+    ```
+    diskpart
+    create vdisk file="C:\WinPE.vhdx" maximum=1000
+    attach vdisk
+    create partition primary
+    assign letter=V
+    format fs=ntfs quick
+    exit
+    ```
+2. Prepare the drive by using **MakeWinPEMedia**:
 
-    -   Try a different USB port. Avoid hubs or cables.
+    ```
+    MakeWinPEMedia /UFD C:\WinPE_amd64 V:
+    ```
 
-    -   Avoid USB 3.0 ports if the firmware doesn't contain native support for USB 3.0.
+3. Detach the drive:
 
-    -   Clean the USB flash drive, and then reinstall Windows PE. This can help remove extra boot partitions or other boot software.
+    ```
+    diskpart
+    select vdisk file="C:\WinPE.vhdx"
+    detach vdisk
+    exit
+    ```
 
-        ```
-        diskpart
-          list disk
-          select disk <disk number>
-          clean
-          create partition primary
-          format quick fs=fat32 label="Windows PE"
-          assign letter="P"
-          exit
 
-        MakeWinPEMedia /UFD C:\winpe_amd64 P:
-        ```
+### Troubleshooting
 
-    -   Try booting Windows PE from a DVD instead. Create an ISO file that you can burn onto a DVD:
+1.  If Windows PE doesn't appear, try the following workarounds, rebooting the PC each time:
 
-        ```
-        MakeWinPEMedia /ISO C:\winpe_amd64 c:\winpe_amd64\winpe.iso
-        ```
+    -   To boot a PC that supports UEFI mode: In the firmware boot menus, try manually selecting the boot files: \\EFI\\BOOT\\BOOTX64.EFI.
 
-        In File Explorer, navigate to C:\\winpe\_amd64, right-click **winpe.iso**, and select **Burn to disc**. Follow the prompts to create a DVD.
+    -   If your PC requires storage or video drivers to boot, try adding those same drivers to the Windows PE image. For more information, see [WinPE: Mount and Customize](winpe-mount-and-customize.md).
 
-    -   If your PC requires storage or video drivers to boot, try adding those same drivers to the Windows PE image. For more info, see [WinPE: Mount and Customize](winpe-mount-and-customize.md).
-
-    -   Update the firmware of the PC to the latest version.
-
-3.  If the PC doesn't connect to network locations, see [WinPE Network Drivers: Initializing and adding drivers](winpe-network-drivers-initializing-and-adding-drivers.md).
-
+2.  If the PC doesn't connect to network locations, see [WinPE Network Drivers: Initializing and adding drivers](winpe-network-drivers-initializing-and-adding-drivers.md).
 
 ## <span id="related_topics"></span>Related topics
 
 
 [WinPE for Windows 10](winpe-intro.md)
-
-[WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
 
 [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md)
 
@@ -149,3 +120,13 @@ In the next steps you'll use `MakeWinPEMedia` to format your USB drive, so you d
 [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
+
+ 
+
+ 
+
+
+
+
+
+
