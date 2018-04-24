@@ -5,6 +5,7 @@ ms.assetid: d60de9b6-6775-41e7-bc52-dfafede554df
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Create a Boot CD, DVD, ISO, or VHD'
 ms.author: themar
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
