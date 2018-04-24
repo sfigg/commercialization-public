@@ -108,7 +108,7 @@ You can deploy the VHDX to a device that already has a copy of Windows installed
 **Clean and prepare a new device for native boot**
 
 On your destination PC:
-1.  Use your bootable WinPE key to [boot the destination PC to WinPE](winpe-create-usb-bootable-drive.md#boot-to-windows-pe).
+1.  Use your bootable WinPE key to [boot the destination PC to WinPE](boot-to-uefi-mode-or-legacy-bios-mode.md).
 2.  Clean and prepare the destination PC's hard drive. Create a system partition (S), and a main partition (M) where the VHDX will be stored.
 
     BIOS:
