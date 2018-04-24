@@ -16,9 +16,9 @@ ms.technology: windows-oem
 
 The `Microsoft-Windows-CodeIntegrity` component is new in Windows 10, version 1803. Use the `SKUPolicyRequired` setting to indicate whether a Windows 10 device will run in S mode on next boot.
 
-Windows 10 in S mode can be applied to a Windows edition to enable a productive user experience that's streamlined for security. Windows 10 in S mode supports using apps from the Microsoft Store only, and supports web browsing only in the Microsoft Edge browser. In p versions of Windows, Windows 10 S was a separate edition that required working with a different Windows image than non-S editions. Starting with Windows 10, version 1803, you can enable S mode on supported Windows editions.
+Windows 10 in S mode can be applied to a Windows edition to enable a productive user experience that's streamlined for security. Windows 10 in S mode supports using apps from the Microsoft Store only, and supports web browsing only in the Microsoft Edge browser. In previous versions of Windows, Windows 10 S was a separate edition that required working with a different Windows image than non-S editions. Starting with Windows 10, version 1803, you can enable S mode on supported Windows editions.
 
-Configuring this Unattend setting is only part of the process required to design and manufacture devices that run Windows 10 in S mode. While the overall process is similar to building other Windows 10 devices, Windows 10 in S mode has some additional considerations. To review the full end-to-end process, see [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+For more on Windows 10 in S mode, including the specifics of which apps and programs are supported, manufacturing and design considerations, and instructions for applying the Unattend file to the image using DISM, see the [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## In This Section
 
