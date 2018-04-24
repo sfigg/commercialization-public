@@ -1,9 +1,9 @@
 ---
 author: themar
-Description: Mount and Modify a Windows Image Using DISM
+Description: Modify a Windows Image Using DISM
 ms.assetid: f48b4681-bc59-4eb1-89c9-0163594467f7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Mount and Modify a Windows Image Using DISM
+title: Modify a Windows Image Using DISM
 ms.author: themar
 ms.date: 04/24/2018
 ms.topic: article
