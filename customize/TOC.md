@@ -13,6 +13,7 @@
 ##### [Design your registration pages](desktop/design-registration-pages.md)
 ##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
 ##### [Protect and collect user data](desktop/manage-user-data.md)
+#### [Automate OOBE](automate-oobe.md)
 ### [Customize the Windows performance power slider](desktop/customize-power-slider.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Get Help app](desktop/customize-get-help-app.md)
