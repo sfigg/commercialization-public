@@ -94,7 +94,9 @@ You can commit changes to an image without unmounting the image.
 ## <span id="Unmounting_an_Image"></span><span id="unmounting_an_image"></span><span id="UNMOUNTING_AN_IMAGE"></span>Unmounting an Image
 
 
-After you modify an image, you must unmount it. If you mounted your image with the default read/write permissions, you can commit your changes. This makes your modifications a permanent part of the image.
+After you modify a mounted image, you must unmount it. If you mounted your image with the default read/write permissions, you can commit your changes. This makes your modifications a permanent part of the image.
+
+If you modified an applied image, you don't have to do anything else. You'll see any changes you made when you boot the PC.
 
 **To unmount an image**
 
