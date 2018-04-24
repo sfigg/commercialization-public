@@ -27,7 +27,7 @@ To learn how to add a driver on a running Windows PC, see [Add a driver online i
 
 To add drivers to an offline image, you have to mount an image prior to adding drivers. 
 
-If you're adding drivers to a WinPE image, you can add them to the WinPE image in the output folder you specified when you [ran copype](winpe-create-usb-bootable-drive.md#create-a-winpe-drive), for example: `C:\WinPE_amd64\media\sources\boot.wim`. This ensures that drivers will be included in WinPE each time you build WinPE media from that folder.
+If you're adding drivers to a WinPE image, you can add them to the WinPE image in the output folder you specified when you [ran copype](winpe-create-usb-bootable-drive.md#step-1-create-working-files), for example: `C:\WinPE_amd64\media\sources\boot.wim`. This ensures that drivers will be included in WinPE each time you build WinPE media from that folder.
 
 1.  Mount a Windows image. For example:
 

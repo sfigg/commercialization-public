@@ -1,83 +1,89 @@
 ---
-author: Justinha
-Description: Mount and Modify a Windows Image Using DISM
+author: themar
+Description: Modify a Windows Image Using DISM
 ms.assetid: f48b4681-bc59-4eb1-89c9-0163594467f7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Mount and Modify a Windows Image Using DISM
+title: Modify a Windows Image Using DISM
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
+ 
+# Modify a Windows Image Using DISM
 
-# Mount and Modify a Windows Image Using DISM
+This topic details the changes you can make to mounted or applied Windows images with DISM. 
 
+Mounted images are WIM, VHD, or FFU files that are that maps the contents of the image to a directory so that you can make changes to the image using without booting into the image. You run run DISM commands against a mounted image, and can also perform common file operations, such as copying, pasting, and editing on a mounted image. Changes you make to the image are committed when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
 
-You can use the Deployment Image Servicing and Management (DISM) tool to mount a Windows image from a WIM or VHD file. Mounting an image maps the contents of the image to a directory so that you can service the image using DISM without booting into the image. You can also perform common file operations, such as copying, pasting, and editing on a mounted image.
-
-**Note**  
-DISM cannot mount a Windows image from a VHD on Windows Vista with Service Pack 1 (SP1) or Windows Server 2008. You must attach the VHD using the DiskPart tool before you can use DISM to service the image. When you service VHD images that have been attached using the DiskPart tool, the changes are automatically committed with each operation and cannot be discarded.
-
- 
+Applied images are WIM, VHD, or FFU files that are image files that have been applied to a specified partition. To make changes to an applied image, use `DISM /image:`. See [Applying an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions#span-idapplyingtheimagespanspan-idapplyingtheimagespanspan-idapplyingtheimagespanapplying-the-image) to learn how to apply an image.
 
 You can mount and modify multiple images on a single computer. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
 
-## <span id="Mounting_an_Image"></span><span id="mounting_an_image"></span><span id="MOUNTING_AN_IMAGE"></span>Mounting an Image
-
+## <span id="Mounting_an_Image"></span><span id="mounting_an_image"></span><span id="MOUNTING_AN_IMAGE"></span>Mount an image
 
 You can mount an image using the **/optimize** option to reduce initial mount time. However, When using the **/optimize** option, processes that are ordinarily performed during a mount will instead be completed the first time that you access a directory. As a result, there may be an increase in the time that is required to access a directory for the first time after mounting an image using the **/optimize** option.
 
-**To mount an image**
+1.  Open a command prompt with administrator privileges. 
 
-1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8 or Windows 10, use the Deployment Tools Cmd Prompt installed with the ADK or navigate to the DISM directory on your local computer.
+    > [!Note]
+    > If you are using a version of Windows other than Windows 8 or Windows 10, use the Deployment Tools Command Prompt that gets installed with the ADK.
 
-2.  Mount the image.
-
-    ```
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly]}
-    ```
-
-    >**Note**: To mount a Windows image from a VHD file, you must specify `/index:1`.
-
-    You can also add options to mount the image with read-only permissions or to reduce the initial mount time with the **/Optimize** option. For example,
+2.  Use DISM to mount the image
 
     ```
-    DISM /Mount-Wim /WimFile:<path_to_WIM_file> {/Index:<image_index> | /Name:<image_name> /MountDir:<target_mount_directory> [/readonly] /[optimize]}
+    DISM /Mount-image /imagefile:<path_to_Image_file> {/Index:<image_index> | /Name:<image_name>} /MountDir:<target_mount_directory> [/readonly] /[optimize]}
     ```
+
+    > [!Note]
+    > To mount a Windows image from a VHD or FFU file, you must specify `/index:1`.
 
     For more information about the options available for the **/Mount-Image** option in DISM, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
-## <span id="Modifying_an_Image"></span><span id="modifying_an_image"></span><span id="MODIFYING_AN_IMAGE"></span>Modifying an Image
+## <span id="Modifying_an_Image"></span><span id="modifying_an_image"></span><span id="MODIFYING_AN_IMAGE"></span>Modify an Image
 
+After you mount an image, you can use DISM to add and remove drivers, packages, language packs, enumerate drivers and packages, modify configuration settings, and more. 
 
-After you mount an image, you can browse the directory of the image. You can review the file and folder structure, and add, edit, or delete files and folders.
+### View and modify an image
 
-You can also use the DISM tool to add and remove drivers and packages, including language packs, enumerate drivers and packages, modify configuration settings, and more. For more information, see [Service a Windows Image Using DISM](service-a-windows-image-using-dism.md).
+You can create, view, and edit files on a mounted image, just as you would any other file on your PC. When you modify the files in a mounted image, those file changes get saved in the image. Note that although you can add application files and folders, you can't install applications directly into a mounted image in the same way that you would on a running PC. If you must add an application or a device, verify that you included all of the required files. 
 
-**To view and modify an image**
+### Add and remove drivers
 
-1.  On your technician computer open the mounted directory. For example,
+See [Add and remove drivers to an offline Windows image](add-and-remove-drivers-to-an-offline-windows-image.md) to learn how to work with drivers. Note that the DISM driver commands will only run against an offline image.
+
+### Add and remove packages
+
+See [Add or remove packages offline using DISM](add-or-remove-packages-offline-using-dism.md) to learn how to work with packages.
+
+### Add or remove languages
+
+See [Add and remove language packs offline using DISM](add-and-remove-language-packs-offline-using-dism.md) to learn how to work with languages.
+
+### <span id="Step_4__Upgrade_to_a_Higher_Edition_of_Windows"></span><span id="step_4__upgrade_to_a_higher_edition_of_windows"></span><span id="STEP_4__UPGRADE_TO_A_HIGHER_EDITION_OF_WINDOWS"></span>Upgrade to a higher Windows edition
+
+Any changes you make to a mounted image are also applied to each potential target edition of Windows. Each target edition is staged in the image. The changes will not be lost when you upgrade to a higher edition of Windows. 
+
+See [Change the Windows image to a higher edition using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md) to learn how to change editions.
+
+### <span id="Step_5__Reduce_the_Size_of_the_Image"></span><span id="step_5__reduce_the_size_of_the_image"></span><span id="STEP_5__REDUCE_THE_SIZE_OF_THE_IMAGE"></span>Reduce the Size of the Image
+
+You can use DISM to reduce the footprint of a Windows image by cleaning up superseded components and resetting the base of the superseeded components.
+
+-   At an elevated command prompt, run the following command to reduce the size of the image file:
 
     ```
-    cd C:\mounted_images
+    Dism /Image:C:\test\offline /cleanup-image /StartComponentCleanup /ResetBase 
     ```
 
-2.  Delete, edit, or add additional files and folders to the location where they must appear after they have been applied to the destination computer. For example, C:\\program\_files\\application\_name.
-
-    **Important**  
-    If you must add an application or a device, verify that you included all of the required files. Although you can add application files and folders, you cannot install applications.
-
-     
-
-## <span id="Committing_Changes_to_an_Image"></span><span id="committing_changes_to_an_image"></span><span id="COMMITTING_CHANGES_TO_AN_IMAGE"></span>Committing Changes to an Image
-
+## <span id="Committing_Changes_to_an_Image"></span><span id="committing_changes_to_an_image"></span><span id="COMMITTING_CHANGES_TO_AN_IMAGE"></span>Commit Changes to an Image
 
 You can commit changes to an image without unmounting the image.
 
-**To commit changes to an image**
+**To commit changes:**
 
--   At the command prompt, type:
+-   At the administrator command prompt, type:
 
     ```
     Dism /Commit-Image /MountDir:C:\test\offline
@@ -88,27 +94,25 @@ You can commit changes to an image without unmounting the image.
 ## <span id="Unmounting_an_Image"></span><span id="unmounting_an_image"></span><span id="UNMOUNTING_AN_IMAGE"></span>Unmounting an Image
 
 
-After you modify an image, you must unmount it. If you mounted your image with the default read/write permissions, you can commit your changes. This makes your modifications a permanent part of the image.
+After you modify a mounted image, you must unmount it. If you mounted your image with the default read/write permissions, you can commit your changes. This makes your modifications a permanent part of the image.
+
+If you modified an applied image, you don't have to do anything else. You'll see any changes you made when you boot the PC.
 
 **To unmount an image**
 
-1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8 or Windows 10, use the Deployment Tools Cmd Prompt installed with the ADK or navigate to the DISM directory on your local computer.
+1.  Open a command prompt or the Deployment Tools Command Prompt with administrator privileges.
 
 
-2.  Unmount the image.
+2.  Use DISM to unmount the image.
 
     ```
-    Dism /Unmount-Wim /MountDir:<target_mount_directory> {/Commit | /Discard}
+    Dism /Unmount-image /MountDir:<target_mount_directory> {/Commit | /Discard}
     ```
 
     where `C:\test\offline` is the location of the mount directory. If you do not specify the parameters to unmount, this option lists all of the mounted images but does not perform the unmount action.
 
-    **Important**  
-    You must use either the **/commit** or **/discard** argument when you use the **/unmount** option.
-
-     
-
-After modifying an image, you can apply the image from a network share or from local media, such as a CD/DVD or a USB flash drive (UFD).
+    > [!important]
+    > You must use either the **/commit** or **/discard** argument when you use the **/unmount** option.
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
@@ -117,13 +121,11 @@ After modifying an image, you can apply the image from a network share or from l
 
 1.  Make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK.
 
-2.  If you are using a Windows 8.1, Windows 8, or Windows 7 PC, use the **Deployment and Imaging Tools Environment** to access the tools that are installed with the Windows 10 version of the Windows ADK.
+2.  Don’t mount images to protected folders, such as your User\\Documents folder.
 
-3.  Don’t mount images to protected folders, such as your User\\Documents folder.
+3.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
-4.  If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
-
-5.  If DISM processes are interrupted, consider running the commands from the Windows Preinstallation Environment (WinPE) instead.
+4.  If DISM processes are interrupted, consider running the commands from the Windows Preinstallation Environment (WinPE) instead.
 
 ## <span id="related_topics"></span>Related topics
 
