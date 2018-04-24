@@ -1565,6 +1565,11 @@
         "source_path": "manufacture/desktop/settings-for-automating-oobe.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/automate-oobe", 
         "redirect_document_id": true
+    },
+    {   
+        "source_path": "customize/desktop/unattend/microsoft-windows-shell-setupoobe-oemappid.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-oemappid", 
+        "redirect_document_id": true
     }
   ] 
 }
