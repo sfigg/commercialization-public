@@ -27,7 +27,6 @@
 ## [HLK ARM64 Getting Started Guide](getstarted/hlk-arm64-getting-started-guide.md)
 
 ## [HLK User's Guide](user/windows-hardware-lab-kit-user-s-guide.md)
-### [Windows Hardware Compatibility Program](user/windows-hardware-compatibility-program-overview.md)
 ### [HLK Product Type Matrix](user/hlk-product-type-matrix.md)
 ### [HLK Tools](user/hlk-tools-technical-reference.md)
 #### [HLK Studio](user/hlk-studio.md)
