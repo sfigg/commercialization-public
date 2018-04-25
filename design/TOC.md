@@ -334,8 +334,4 @@
 ### [V4 print driver improvements](whitepapers/v4-print-driver-improvements.md)
 ### [Windows Keyboard Layouts](whitepapers/windows-keyboard-layouts.md)
 
-## [Windows Hardware Compatibility Program for Windows 10, version 1709](compatibility/1709/)
-
-## [Windows Hardware Compatibility Program for Windows 10, version 1703](compatibility/1703/)
-
-## [Windows Hardware Compatibility Program for Windows 10, version 1607](compatibility/)
+## [Windows Hardware Compatibility Program](compatibility/)
