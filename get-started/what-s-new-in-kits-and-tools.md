@@ -4,12 +4,14 @@ description: What's new in Windows ADK and ADK tools
 Search.SourceType: Video
 ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # What's new in ADK kits and tools
+
+## What's new in the Windows ADK for Windows 10, version 1803
 
 ## What’s new in the Windows ADK for Windows 10, version 1709
 

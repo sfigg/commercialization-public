@@ -46,8 +46,8 @@ The following example shows how you can configure these settings:
 | [NumAntennaConnected](microsoft-windows-wlansvc-numantennaconnected.md) | Specifies the number of antennas that are connected to the WLAN radio. |
 | [RadioLocation](microsoft-windows-wlansvc-radiolocation.md) | <code>RadioLocation</code> provides instructions to users for enabling the wireless local area network (WLAN) hardware. These instructions are displayed when a wireless connectivity problem is detected, for example, when a wireless adapter is turned off. |
 | [SimultaneousMultiChannelSupported](microsoft-windows-wlansvc-simultaneousmultichannelsupported.md) | Specifies the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously. |
-| [WLANFunctionLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionleveldeviceresetsupported.md) | Specifies whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run. |
-| [WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported.md) | Specifies whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run. |
+| [WLANFunctionLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanfunctionleveldeviceresetsupported.md) | **This setting is deprecated in Windows 10, version 1803**. Specifies whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run. |
+| [WLANPlatformLevelDeviceResetSupported](microsoft-windows-wlansvc-wlanplatformleveldeviceresetsupported.md) | **This setting is deprecated in Windows 10, version 1803**. Specifies whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run. |
 
 ## Applies To
 

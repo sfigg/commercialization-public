@@ -16,16 +16,16 @@ ms.technology: windows-oem
 # HelpCustomized
 
 > [!Important]
-> HelpCustomized is deprecated in Windows 10, version 1709. To customize the Get Help app that ships with Windows 10, define `SupportURL` or `SupportAppURL` as part of your `OEMInformation`.
+> This setting has been deprecated. To customize the Get Help app that ships with Windows 10, define `SupportURL` or `SupportAppURL` as part of your `OEMInformation`.
 
-`HelpCustomized` specifies whether the Original Equipment Manufacturer (OEM) customizes the Get Help app. 
+`HelpCustomized` specifies whether the Original Equipment Manufacturer (OEM) customizes the Get Help app.
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| **true**                | **Deprecated in Windows 10**. Specifies that Help is customized.                      |
-| **false**               | **Deprecated in Windows 10**. Specifies that Help isn't customize. Default value.     |
+| **true**                | **Deprecated**. Specifies that Help is customized.                      |
+| **false**               | **Deprecated**. Specifies that Help isn't customized. Default value.     |
 
 ## Valid Configuration Passes
 

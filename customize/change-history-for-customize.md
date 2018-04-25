@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
 ms.author: alhopper
-ms.date: 1/25/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,6 +14,20 @@ ms.technology: windows-oem
 # Change history for customization docs
 
 The following tables record the major changes that were made in the **Customize** section of the Windows 10 partner documentation since Windows 10, version 1607 was released.
+
+## April 30, 2018
+
+Changes in this section relate to the release of Windows 10, version 1803.
+
+| Topic                                          | Description                                                                                        |
+|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [Customize OOBE](desktop/customize-oobe.md)    | Updated with the new OOBE flow for Windows 10, version 1803. Added information about cloud service OOBE pages.    |
+| [OOBE screen details](desktop/oobe-screen-details.md) | Updated with details on two new OOBE screens that introduced in Windows 10, version 1803: the new payment information screen in the **Office Setup** portion of OOBE, and the **local account security questions** screen in the **Account setup** portion of OOBE. |
+| [Customize the Start layout](desktop/customize-start-layout.md)   | Updated to reflect new customization options for the Microsoft suite of tiles in the Start layout, introduced in Windows 10, version 1803. Updated to reflect that apps no longer need to be pinned to the Start layout to remain installed on the device, as long as the `region` parameter in DISM is used when preinstalling the apps. |
+| [Customize SIM card slot names](desktop/customize-sim-card-slot-names.md) | New. Describes how you can customize the names of SIM card slots on the device to more easily differentiate between them. |
+| [Shell Launcher](enterprise/shell-launcher.md)    | Updated to reflect that in Windows 10, version 1803, you can configure Shell Launcher using the Assigned Access CSP.  |
+| [Power controls](power-settings/power-controls.md)    | Power controls include settings that control the system's power and behavior. In Windows 10, version 1803, two new settings have been added to Power controls: [IgnoreCsComplianceCheck](power-settings/power-controls-ignorecscompliancecheck.md), and [EnableInputSuppression](power-settings/power-controls-enableinputsuppression.md).
+| [Changed answer file settings for Windows 10, version 1803](desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803.md) | Learn about the Unattend settings that have been added, deprecated, and removed in the most recent version of Windows. |
 
 ## January 2018
 
@@ -34,11 +48,13 @@ The following tables record the major changes that were made in the **Customize*
 | Topic                                          | Description                                                                                        |
 |:-----------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [Customize OOBE](desktop/customize-oobe.md)    | Updated with recommendation for setting the default volume level during OOBE.                      |
-| [Connect users to the network during OOBE](desktop/connect-to-network.md) | Updated with clarifications on how Cellular and Wi-Fi connections are used during OOBE, and the types of updates that download during OOBE.   |
+| [Connect users to the network during OOBE](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/oobe-screen-details#connect-users-to-the-network) | Updated with clarifications on how Cellular and Wi-Fi connections are used during OOBE, and the types of updates that download during OOBE.   |
 | [Keyboard Filter](enterprise/keyboardfilter.md)      | Updated to note that Keyboard Filter is not supported in a remote desktop session.           |
 | [Unattend Setting: FirewallGroups](desktop/unattend/networking-mpssvc-svcfirewallgroups.md)   | Updated with guidance on how to obtain the correct FirewallGroup-Group value using PowerShell.    |
 
 ## October 17, 2017
+
+Changes in this section relate to the release of Windows 10, version 1709.
 
 | Topic                                      | Description                                                                                        |
 |:-------------------------------------------|:---------------------------------------------------------------------------------------------------|
