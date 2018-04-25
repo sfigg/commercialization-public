@@ -64,11 +64,15 @@ The following topics describe OOBE customization considerations.
 | [OOBE screen details](oobe-screen-details.md) | Learn about the **Let's connect you to a network**, **Create security questions**, and **Payment information** screens in OOBE. Although these screens aren't customizable, they are described here to provide insight to the user experience during OOBE. |
 | [Windows Updates during OOBE](windows-updates-during-oobe.md) | Learn how both critical and non-critical Windows updates can download during a user's Out of Box Experience.  |
 | [OEM HID pairing](oem-hid-pairing.md)                 | On PCs that ship with an unpaired wireless mouse and keyboard, you can customize the HID pairing screens shown to the customer during the first-run experience in OOBE. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
+<<<<<<< HEAD
 | [OEM license terms](oem-license.md)                   | Add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
 | [OEM registration pages](oem-registration-pages.md)   | Display and customize OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
+=======
+| [OEM license terms](oem-license.md)                   | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
+| [OEM registration pages](oem-registration-pages.md)   | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
+| [Automate OOBE](automate-oobe.md)                     | Use Unattend settings to hide certain pages that appear in OOBE.  |
+>>>>>>> 2265d1b806bdbb99c79ba3836f80ffdcbd6ce6f8
 
 ## Related topics
 
 [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe)
-
-[Configure Oobe.xml](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-oobexml)
