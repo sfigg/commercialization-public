@@ -5,6 +5,7 @@ ms.assetid: fbfd9166-f522-4c73-a866-7d97cab32ed8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service a Mounted Windows Image
 ms.author: themar
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

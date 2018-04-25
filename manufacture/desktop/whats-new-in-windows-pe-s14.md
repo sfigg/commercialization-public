@@ -194,6 +194,10 @@ Windows PE is similar to MS-DOS. It also includes support for the following fea
 
 -   Optional support for PowerShell, Windows Management Instrumentation (WMI), Windows Data Access Components (Windows DAC), and HTML Applications (HTAs).
 
+## Where is WinPE.wim?
+
+In Windows 7, the main Windows PE boot file was renamed from winpe.wim to boot.wim. This file is in Windows PE in the \\sources folder. It can be modified in the same way as WinPE.wim.
+
 ## <span id="related_topics"></span>Related topics
 
 

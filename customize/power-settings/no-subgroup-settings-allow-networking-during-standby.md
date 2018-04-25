@@ -1,6 +1,6 @@
 ---
-title: Allow Wi-Fi networking during standby
-description: Specifies whether to allow Wi-Fi networking during standby.
+title: Allow networking during standby
+description: Specifies whether to allow networking during standby.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -12,15 +12,15 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_customize_converged.no_subgroup_settings_allow_wi-fi_networking_during_standby"></span>Allow Wi-Fi networking during standby
+# <span id="p_customize_converged.no_subgroup_settings_allow_wi-fi_networking_during_standby"></span>Allow networking during standby
 
 
-Specifies whether to allow Wi-Fi networking during standby.
+Specifies whether to allow networking during standby.
 
 ## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
 
 
--   **Windows Provisioning:** `AllowWifiInStandby       `
+-   **Windows Provisioning:** `ConnectivityInStandby`
 
 -   **GUID:** f15576e8-98b7-4186-b944-eafa664402d9
 
@@ -46,12 +46,17 @@ Specifies whether to allow Wi-Fi networking during standby.
 <tr class="odd">
 <td><p>0</p></td>
 <td><p>Disabled</p></td>
-<td><p>The system will turn off Wi-Fi connection when entering sleep.</p></td>
+<td><p>The system will disconnect from the network during standby.</p></td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
 <td><p>Enabled</p></td>
-<td><p>The system will keep the Wi-Fi connection on when entering sleep.</p></td>
+<td><p>The system will stay connected to the network during standby.</p></td>
+</tr>
+<tr class="odd">
+<td><p>2</p></td>
+<td><p>Managed by Windows</p></td>
+<td><p>Windows will manage network connectivity during standby.</p></td>
 </tr>
 </tbody>
 </table>

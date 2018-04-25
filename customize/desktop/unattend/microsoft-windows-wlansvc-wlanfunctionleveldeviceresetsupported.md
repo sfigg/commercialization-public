@@ -16,6 +16,9 @@ ms.technology: windows-oem
 
 # WLANFunctionLevelDeviceResetSupported
 
+> [!Important]
+> This setting is deprecated in Windows 10, version 1803.
+
 
 Specifies whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run.
 

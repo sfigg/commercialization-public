@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # FontSmoothing
 
 > [!Important]
-> In Windows 10, version 1709, this setting is removed.
+> This setting is now deprecated.
 
 `FontSmoothing` specifies whether font smoothing is enabled, and which type.
 

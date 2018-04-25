@@ -15,18 +15,18 @@ ms.technology: windows-oem
 
 Users can set the Hibernate option in their Windows devices to put the system into a low power state when the system is not in use. The current logic for hibernate relies on an OEM- or user-configured doze to hibernate timer. The most common timer value is 4 hours. A fixed doze to hibernate timer may offer a consistent and predictable user experience, however it doesn’t address rapid drain of battery.
 
-The timer-based logic has some significant user experience drawbacks. A fixed doze timer can result in the system fully draining the battery in standby if it happened within the doze timeout or cut short a modern standby experience by hibernating at doze timeout. The timer is generally not the best option when it comes to addressing the worst case battery drain and the system needs to be adaptive and hibernate based on battery drain and user needs.
+The timer-based logic has some significant user experience drawbacks. A fixed doze timer can result in the system fully draining the battery in standby if it happened within the doze timeout or cut short a Modern Standby experience by hibernating at doze timeout. The timer is generally not the best option when it comes to addressing the worst case battery drain and the system needs to be adaptive and hibernate based on battery drain and user needs.
 
 Adaptive hibernate provides triggers which allow the system to hibernate intelligently. These triggers provide the following benefits:
 
 * Eliminate resuming to a dead battery.
 * Provide a great [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) (MS) experience by ensuring that the system remains in MS for as long as possible.
 
-To support the new triggers, the system is enabled with default values. However, OEMs can program these new triggers to ensure that machines hibernate to provide the best possible experience to users.
+To support the adaptive hibernate triggers, the system is enabled with default values. However, OEMs can program these triggers to ensure that machines hibernate to provide the best possible experience to users.
 
 ## System requirements
 
-The triggers apply to modern standby systems only.
+The triggers apply to Modern Standby systems only.
 
 ## Default behavior
 
@@ -144,4 +144,4 @@ The following example shows what your Windows provisioning answer file might loo
 
 ## <span id="User_prediction"></span><span id="user_prediction"></span><span id="USER_PREDICTION"></span>User prediction
 
-In Windows 10 version 1709, user usage prediction no longer triggers Hibernate. This is a change from previous versions of Windows. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.
+User usage prediction no longer triggers Hibernate. This is a change from previous versions of Windows. Windows continues to support automatically transitioning from Hibernate back to Modern Standby based on user prediction, however this requires that the device implement RTCWake or the Time & Device Alarm object in ACPI.

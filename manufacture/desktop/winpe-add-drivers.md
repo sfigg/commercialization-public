@@ -9,6 +9,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: add-and-remove-drivers-to-an-offline-windows-image.md
 ---
 
 # WinPE: Add drivers

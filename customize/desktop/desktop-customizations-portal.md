@@ -24,7 +24,7 @@ You have the following options to customize your image. Depending on which optio
 -->
 
 >[!Note]
-> All desktop customization options listed above are supported in Windows 10 S. To learn more, see [Windows 10 S Manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
+> All desktop customization options listed above are supported in Windows 10 in S mode. To learn more, see [Windows 10 in S mode manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview).
 
 ## In this section
 
@@ -38,6 +38,7 @@ These are some common ways to customize your desktop device. You will also find 
 | [Customize the Windows power slider](customize-power-slider.md) | The Windows Performance Power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. You can set the default slider mode for both AC and DC, and configure the power settings and PPM options that are engaged in each power slider mode. |
 | [Set dark mode](set-dark-mode.md)                       | This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode. You can set the dark mode as the default for apps using Unattend.    |
 | [Customize the Get Help app](customize-get-help-app.md) | The Get Help app empowers customers to self-help with troubleshooters, instant answers, Microsoft support articles, and more, before contacting assisted support. You can customize the Get Help app to surface your support app or support website.                      |
+| [Customize SIM card slot names](customize-sim-card-slot-names.md) | You can customize the names of SIM card slots on the device to more easily differentiate between them. For example, if the device has both an embedded SIM slot and an external SIM slot, customizing the names will help your customers understand which is which. |
 | [Customize a Specific Absorption Rate mapping table](customize-sar-mapping-table.md) | You can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configures the modem with it.                               |
 | [Windows SIM Technical Reference](wsim/windows-system-image-manager-technical-reference.md) | Settings reference for Windows System Image Manager.            |
 | [Unattended Windows Setup Reference](unattend/index.md) | Settings reference for Unattend.                                                              |
@@ -46,6 +47,6 @@ These are some common ways to customize your desktop device. You will also find 
 
 [OEM deployment of Windows 10 for desktop editions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions)
 
-[Planning a Windows 10 S deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning)
+[Planning a Windows 10 in S mode deployment](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-planning)
 
 [Deployment options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-deployment-options)

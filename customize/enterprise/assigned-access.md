@@ -17,7 +17,11 @@ You can use assigned access to set up single-function devices, such as restauran
 
 In addition to configuring assigned access, you can also configure optional features to further personalize the assigned access experience. Some of the optional features include power button availability and welcome screen elements.
 
+> [!Note]
+> You cannot configure both assigned access and [Shell Launcher](shell-launcher.md) on the same system.
+
 ## Requirements
+
 Windows 10 Enterprise, Windows 10 Education, or Windows 10 Pro.
 
 ## Suggested settings

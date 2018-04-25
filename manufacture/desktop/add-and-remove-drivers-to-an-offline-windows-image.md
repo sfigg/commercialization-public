@@ -1,43 +1,42 @@
 ---
-author: Justinha
+author: themar
 Description: Add and Remove Drivers to an Offline Windows Image
 ms.assetid: 71651630-2e26-4174-8161-8f83b8ae4bc3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Drivers to an Offline Windows Image
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Add and Remove Drivers to an Offline Windows Image
+# Add and Remove Drivers to an offline Windows Image
 
 
-You can use the Deployment Image Servicing and Management (DISM) tool to install or remove driver (.inf) files in an offline Windows image. You can either apply an unattended answer file to a mounted .wim, .vhd, or .vhdx file, or you can add or remove the drivers directly by using the command prompt.
+You can use DISM to install or remove driver (.inf) files in an offline Windows or WinPE image. You can either add or remove the drivers directly by using the command prompt, or apply an unattended answer file to a mounted .wim, .ffu, .vhd, or .vhdx file.
 
 When you use DISM to install a device driver to an offline image, the device driver is added to the driver store in the offline image. When the image is booted, Plug and Play (PnP) runs and associates the drivers in the store to the corresponding devices on the computer.
 
-**Note**   To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
+> [!note]
+> To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
 
+To learn how to add a driver on a running Windows PC, see [Add a driver online in audit mode](add-a-driver-online-in-audit-mode.md) or [Install a plug and play device](http://go.microsoft.com/fwlink/?LinkId=139151). To learn how to add a driver to a PC running WinPE, see [Drvload command line options](drvload-command-line-options.md).
 
-## To add drivers to an offline image by using DISM
+## Add drivers to an offline Windows image
 
-1.  At an elevated command prompt, retrieve the name or index number for the image that you want to modify. For example, type:
+To add drivers to an offline image, you have to mount an image prior to adding drivers. 
 
-    ```
-    Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
-    ```
+If you're adding drivers to a WinPE image, you can add them to the WinPE image in the output folder you specified when you [ran copype](winpe-create-usb-bootable-drive.md#step-1-create-working-files), for example: `C:\WinPE_amd64\media\sources\boot.wim`. This ensures that drivers will be included in WinPE each time you build WinPE media from that folder.
 
-    An index or name value is required for most operations that specify a WIM file. For a VHD file, you must specify `/Index:1`.
-
-2.  Mount the offline Windows image. For example, type:
+1.  Mount a Windows image. For example:
 
     ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows Drive" /MountDir:C:\test\offline
     ```
+    See [Mount and modify a Windows image using DISM](mount-and-modify-a-windows-image-using-dism.md) for more info.
 
-3.  Add a driver to the image.
+2.  Add a driver to the image.
 
     ```
     Dism /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf
@@ -49,7 +48,10 @@ When you use DISM to install a device driver to an offline image, the device dri
     Dism /Image:C:\test\offline /Add-Driver /Driver:c:\drivers /Recurse
     ```
 
-    **Warning**  While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
+    To see all DISM driver servicing command line options, see [DISM driver servicing command-line options](dism-driver-servicing-command-line-options-s14.md).
+
+    > [!Warning]
+    > Using `/Recurse` can be handy, but it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder. Each individual folder has a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
 
     To install an unsigned driver, use **/ForceUnsigned** to override the requirement that drivers installed on X64-based computers must have a digital signature.
 
@@ -57,7 +59,7 @@ When you use DISM to install a device driver to an offline image, the device dri
     Dism /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf /ForceUnsigned
     ```
 
-4.  Review the list of third-party driver (.inf) files in the Windows image. Drivers added to the Windows image are named Oem\*.inf. This is to guarantee unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
+3.  Check to see if the driver was added. Drivers added to the Windows image are named Oem\*.inf. This guarantees unique naming for newly added drivers. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
     ```
     Dism /Image:C:\test\offline /Get-Drivers 
@@ -69,61 +71,51 @@ When you use DISM to install a device driver to an offline image, the device dri
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
-## To remove drivers from an offline image by using DISM
+## Remove drivers from an offline Windows image
 
-1.  At an elevated command prompt, retrieve the name or index number for the image that you want to modify.
-
-    ```
-    Dism /Get-ImageInfo /ImageFile:C:\test\images\install.wim
-    ```
-
-    An index or name value is required for most operations that specify a WIM file. For a VHD file, you must specify `/Index:1`.
-
-2.  Mount the offline Windows image. For example:
+1.  At an elevated command prompt, mount the offline Windows image:
 
     ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows 10 Home" /MountDir:C:\test\offline
     ```
 
-3.  Remove a specific driver from the image. Multiple drivers can be removed on one command line.
+2.  Remove a specific driver from the image. Multiple drivers can also be removed on one command line.
 
     ```
     Dism /Image:C:\test\offline /Remove-Driver /Driver:OEM1.inf /Driver:OEM2.inf
     ```
 
-    **Warning**  
-    Removing a boot-critical driver package can make the offline Windows image unbootable. For more information, see [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md).
+    > [!Warning]
+    > Removing a boot-critical driver package can make the offline Windows image unbootable. For more information, see [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md).
      
 
-4.  Commit the changes and unmount the image.
+3.  Commit the changes and unmount the image.
 
     ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
-## To add drivers to an offline Windows image by using an unattended answer file
+## Add drivers to an offline Windows image by using an unattended answer file
 
-1.  Locate the device driver .inf files that you intend to install on the Windows image.
+1.  Gather the device driver .inf files that you intend to install on the Windows image.
 
-    **Note**  
-    All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
+    > [!note]  
+    > All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
 
-2.  Use Windows System Image Manager (Windows SIM) to create an answer file that contains the paths to the device drivers that you intend to install.
+2.  Use Windows System Image Manager (Windows SIM) to create an answer file that contains the paths to the device drivers that you want to install.
 
-3.  Add the Microsoft-Windows-PnpCustomizationsNonWinPE component to your answer file in the **offlineServicing** configuration pass.
+    - Add the `Microsoft-Windows-PnpCustomizationsNonWinPE\DriverPaths\PathAndCredentials\Credentials` component to your answer file in the **offlineServicing** configuration pass.
+    
+    For each location that you intend to access, add a separate **PathAndCredentials** list item by right-clicking on **DriverPaths** in the _Answer File_ pane and clicking **Insert New PathAndCredentials**.
 
-4.  Expand the **Microsoft-Windows-PnpCustomizationsNonWinPE** node in the answer file. Right-click **DevicePaths**, and then select **Insert New PathAndCredentials**.
+    See [Configure components and settings in an answer file](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file) for information on how to modify an answer file.
 
-    A new **PathAndCredentials** list item appears.
+3.  For each path in `Microsoft-Windows-PnpCustomizationsNonWinPE`, specify the path to the device driver and the credentials that are used to access the file, if the file is on a network share.
 
-5.  For each location that you intend to access, add a separate **PathAndCredentials** list item.
+    > [!Note]
+    > When you include multiple device driver paths by adding multiple **PathAndCredentials** list items, you must increment the value of **Key** for each path. For example, you can add two separate driver paths where the value of **Key** for the first path is equal to **1** and the value of **Key** for the second path is equal to **2**.
 
-6.  In the Microsoft-Windows-PnpCustomizationsNonWinPE component, specify the path to the device driver and the credentials that are used to access the file, if the file is on a network share.
-
-    **Note**  
-    You can include multiple device driver paths by adding multiple **PathAndCredentials** list items. If you add multiple list items, you must increment the value of **Key** for each path. For example, you can add two separate driver paths where the value of **Key** for the first path is equal to **1** and the value of **Key** for the second path is equal to **2**.
-
-7.  Save the answer file and exit Windows SIM. The answer file must resemble the following sample.
+4.  Save the answer file and exit Windows SIM. The answer file must resemble the following sample.
 
     ```
     <?xml version="1.0" ?><unattend xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
@@ -144,15 +136,15 @@ When you use DISM to install a device driver to an offline image, the device dri
     </unattend>
     ```
 
-8.  Mount the Windows image that you intend to install the drivers to by using DISM. For example, type:
+5.  Mount the Windows image that you intend to install the drivers to by using DISM:
 
     ```
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Index:1 /MountDir:C:\test\offline
     ```
 
-    An index or name value is required for most operations that specify a WIM file. For a VHD file, you must specify `/Index:1`.
+    If you're working with a VHD or FFU, specify `/Index:1`.
 
-9.  Use DISM to apply the answer file to the mounted Windows image. For example, type:
+6.  Apply the answer file to the mounted Windows image:
 
     ```
     DISM /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
@@ -162,7 +154,7 @@ When you use DISM to install a device driver to an offline image, the device dri
 
     The .inf files referenced in the path in the answer file are added to the Windows image.
 
-10. Review the list of third-party driver (.inf) files in the Windows image. Drivers added to the Windows image are named Oem\*.inf. This is to guarantee that all new drivers that are added to the computer are uniquely named. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
+7. Check to see if the driver was added. Drivers added to the Windows image are named Oem\*.inf. This guarantees unique naming for newly added drivers. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
     For example, type:
 
@@ -170,7 +162,7 @@ When you use DISM to install a device driver to an offline image, the device dri
     Dism /Image:C:\test\offline /Get-Drivers 
     ```
 
-11. Unmount the .wim file and commit the changes. For example, type:
+8. Unmount the .wim file and commit the changes. For example, type:
 
     ```
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
