@@ -203,6 +203,7 @@
 ##### [Push-button reset frequently-asked questions (FAQ)](desktop/pbr-faq.md)
 #### [REAgentC command-line options](desktop/reagentc-command-line-options.md)
 #### [ResetConfig XML reference](desktop/resetconfig-xml-reference-s14.md)
+#### [WinREConfig XML reference](desktop/winreconfig-xml-reference.md)
 #### [Windows RE troubleshooting features](desktop/windows-re-troubleshooting-features.md)
 ### [Windows Setup](desktop/windows-setup-technical-reference.md)
 #### [Windows Setup Supported Platforms and Cross-Platform Deployments](desktop/windows-setup-supported-platforms-and-cross-platform-deployments.md)
