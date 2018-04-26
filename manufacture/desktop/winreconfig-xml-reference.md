@@ -43,7 +43,7 @@ This reference describes all xml elements that are used to author the winreconfi
 2. Create an .xml file called winreconfig.xml.
 3. Copy the following, and paste it into winreconfig.xml:
     
-    ```
+    ```XML
     <?xml version="1.0" encoding="utf-8"?>
     <!-- WinREConfig.xml -->
     <Recovery>
