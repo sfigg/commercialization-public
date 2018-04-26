@@ -212,6 +212,7 @@
 #### [Windows Setup Scenarios and Best Practices](desktop/windows-setup-scenarios-and-best-practices.md)
 #### [Windows Setup Automation Overview](desktop/windows-setup-automation-overview.md)
 #### [Windows Setup Installation Process](desktop/windows-setup-installation-process.md)
+#### [Run custom actions during a feature update](desktop/windows-setup-enable-custom-actions.md)
 #### [Windows 8.1 Upgrade Scenarios for OEMs](desktop/windows-81-upgrade-scenarios-for-oems.md)
 #### [Boot from a DVD](desktop/boot-from-a-dvd.md)
 #### [Install Windows from a USB Flash Drive](desktop/install-windows-from-a-usb-flash-drive.md)
