@@ -58,4 +58,4 @@ Welcome to Windows 10, version 1803! Here are some resources to get you acquain
 
 [What's new in driver development](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development)
 
-[What's new in ]
+[What's new in Windows 10, version 1803 for IT Pros](https://docs.microsoft.com/en-us/windows/whats-new/whats-new-windows-10-version-1803)
