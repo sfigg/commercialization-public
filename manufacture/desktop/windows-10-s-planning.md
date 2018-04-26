@@ -36,7 +36,7 @@ The following components are blocked from running in Windows 10 in S mode. Any s
 - dnx.exe
 - fsi.exe
 - hh.exe
-- infdefaultinstall.exe (new addition for Fall Creators update)
+- infdefaultinstall.exe
 - kd.exe
 - lxssmanager.exe
 - msbuild.exe
