@@ -154,6 +154,7 @@
 ##### [DISM Driver Servicing (.inf) Command-Line Options](desktop/dism-driver-servicing-command-line-options-s14.md)
 ##### [DISM Unattended Servicing Command-Line Options](desktop/dism-unattended-servicing-command-line-options.md)
 ##### [DISM Windows PE Servicing Command-Line Options](desktop/dism-windows-pe-servicing-command-line-options.md)
+##### [DISM Operating System Uninstall Command-Line Options](desktop\dism-uninstallos-command-line-options.md)
 #### [DISM Reference (Deployment Image Servicing and Management)](desktop/dism-reference--deployment-image-servicing-and-management.md)
 #### [DISM API](desktop/dism/)
 #### [DISM Configuration List and WimScript.ini Files](desktop/dism-configuration-list-and-wimscriptini-files-winnext.md)
