@@ -17,7 +17,7 @@ For more background on VBS please refer to [Virtualization-based Security (VBS)]
 
 ## VBS changes the trust model
 
-While VBS greatly improves platform security, VBS also changes the trust boundaries in a Windows PC. With VBS, the Windows hypervisor controls many aspects of the underlying hardware that provide the basis for the VBS secure enviromnent. The hypervisor must assume the Windows kernel could become compromised by malicious code, and so must protect key system resources from being manipulated from code running in kernel mode in a manner that could compromize security assets.
+While VBS greatly improves platform security, VBS also changes the trust boundaries in a Windows PC. With VBS, the Windows hypervisor controls many aspects of the underlying hardware that provide the basis for the VBS secure environment. The hypervisor must assume the Windows kernel could become compromised by malicious code, and so must protect key system resources from being manipulated from code running in kernel mode in a manner that could compromise security assets.
 
 ## Understanding processor MSRs
 
@@ -27,11 +27,11 @@ MSRs are accessed via an index, which is a unique per-MSR identifier. Historical
 
 ## Protecting access to MSRs
 
-In order to provide a robust security platform, MSRs must be protected from misuse from malicious kernel mode code. To enforce this,the hypervisor monitors and controls access to all MSRs. The hypervisor maintains a list of known MSR indicies and, and will only allow kernel mode code to access MSRs, or specific bits within MSRs, which are known to be reasonable and deemed safe. The hypervisor will block access to any MSR which is unknown to the hypervisor, or any MSR which is known through its published definition to represent a security risk. In some cases partial access may be allowed.
+In order to provide a robust security platform, MSRs must be protected from misuse from malicious kernel mode code. To enforce this,the hypervisor monitors and controls access to all MSRs. The hypervisor maintains a list of known MSR indices and, and will only allow kernel mode code to access MSRs, or specific bits within MSRs, which are known to be reasonable and deemed safe. The hypervisor will block access to any MSR which is unknown to the hypervisor, or any MSR which is known through its published definition to represent a security risk. In some cases partial access may be allowed.
 
 When the hypervisor has blocked access to an MSR, it will log an event to the Windows System Event Log, specifying details of the attempted access.
 
-Given the vast number of functions controlled by MSRs, it is not possible to predict the side effects of preventing MSR acceses to the software that initiated the MSR access. Well written software should handle errors and failure cases gracefully, however this is not always the case.
+Given the vast number of functions controlled by MSRs, it is not possible to predict the side effects of preventing MSR access to the software that initiated the MSR access. Well written software should handle errors and failure cases gracefully, however this is not always the case.
 
 ## Reviewing MSR access events
 
@@ -52,7 +52,7 @@ Details:
 
 ### Supported versions of Windows
 
-Support for Windows virtualzation-based security is included in the following versions of Windows:
+Support for Windows virtualization-based security is included in the following versions of Windows:
 
 * Windows 10, version 1607
 * Windows 10, version 1703
