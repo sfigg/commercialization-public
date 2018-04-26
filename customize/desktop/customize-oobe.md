@@ -56,9 +56,8 @@ The following topics describe OOBE customization considerations.
 | [OEM HID pairing](oem-hid-pairing.md)                 | On PCs that ship with an unpaired wireless mouse and keyboard, you can customize the HID pairing screens shown to the customer during the first-run experience in OOBE. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
 | [OEM license terms](oem-license.md)                   | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
 | [OEM registration pages](oem-registration-pages.md)   | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
+| [Automate OOBE](automate-oobe.md)                     | Use Unattend settings to hide certain pages that appear in OOBE.  |
 
 ## Related topics
 
 [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe)
-
-[Configure Oobe.xml](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-oobexml)

@@ -162,8 +162,8 @@ All requirements are detailed in WSSD Reference Architecture Appendix.
 
 -   Ensure all components and systems have achieved Windows Server 2016 Logo certification
 -   Ensure all components and systems have achieved Windows Server Software Defined Datacenter Additional Qualifications (SDDC AQ) for either Standard or Premium (depending on the selected topology)
-    1.  HLK playlists for SDDC Standard and Premium AQs are published on Connect:
-        -   <https://connect.microsoft.com/site1304/Downloads>
+    1.  Updated HLK content for SDDC Standard and Premium AQs are published on Collaborate:
+        -   <https://developer.microsoft.com/en-us/dashboard/collaborate/packages/3959>
     2.  Component and System SDDC AQs are listed in the Windows Server Catalog:
         -   <https://www.windowsservercatalog.com>
 
