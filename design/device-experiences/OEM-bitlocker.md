@@ -63,9 +63,9 @@ Add string (REG_SZ) name/value pairs for each flagged DMA capable bus that is de
 - Key: *device friendly name* /*description*  
 - Value: PCI\VEN\_*ID*&DEV\_*ID*.  
  
-Ensure the IDs match the output from the HLK test. For example, if you have a safe device with a friendly name of “Contoso PCI Express Root Port”, vendor ID 1022 and Device ID 157C, you would create the following Registry entry as REG_SZ data type:  
+Ensure the IDs match the output from the HLK test. For example, if you have a safe device with a friendly name of “Contoso PCI Express Root Port”, vendor ID 1022 and Device ID 157C, you would create a Registry entry named **Contoso PCI Express Root Port** as REG_SZ data type in:  
 
-**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DmaSecurity\\AllowedBuses!Contoso PCI Express Root Port**
+**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DmaSecurity\\AllowedBuses**
 
 Where the value = "PCI\\VEN\_1022&DEV\_157C" 
 
