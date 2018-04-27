@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 To meet China Type Approval (CTA) requirements for devices shipping in China, OEMs must show a notification dialog to alert users when the app being downloaded does certain things.
 
-**Note**  This is a legacy mobile setting and is only a requirement for China. It works on phones being upgraded to Windows 10 Mobile, but we recommend that you use the [CountryAndRegion](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-countryandregion) Windows provisioning setting instead.
+**Note**  This is a legacy mobile setting and is only a requirement for China. It works on phones being upgraded to Windows 10 Mobile, but we recommend that you use the new [CountryAndRegion](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-countryandregion) Windows provisioning setting instead.
 
  
 

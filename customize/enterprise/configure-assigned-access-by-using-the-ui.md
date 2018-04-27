@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4456b4e6-5ef6-4daf-8c7b-a17351d34a55
 ms.author: alhopper
-ms.date: 04/30/2018
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -36,9 +36,9 @@ You have installed the Universal Windows app for the Assigned Access user accoun
 
 ## Configure assigned access using Settings
 
-1. Launch **Settings** from the **Start** menu.
+1. In the Search the web and Windows field, type **Settings**, and either press **Enter** (when Settings is highlighted) or tap or click **Settings**.
 1. Tap or click **Accounts**.
-1. Tap or click **Other people**, and then tap or click **Set up assigned access**.
+1. Tap or click **Other users**, and then tap or click **Set up assigned access**.
 1. On the **Set Up Assigned access** page, perform the following steps:
    * Tap or click **Choose an account**, and then click the account you want to use for assigned access. The selected account now displays in the **Choose which account will have assigned access** area.
 
@@ -97,12 +97,11 @@ At a Windows PowerShell prompt, type the following, using the desired app name a
 Set-AssignedAccess -AppName CustomApp  -UserSID S-1-5-21-523423449-2432423479-234123443-1004
 ```
 
-## Turn off assigned access
+## <a href="" id="turn-off-aa"></a>Turn off assigned access
 
-1. Launch **Settings** from the **Start** menu.
+1. In the Search the web and Windows field, type **Settings**, and either press **Enter** (when Settings is highlighted) or tap or click **Settings**.
 1. Tap or click **Accounts**.
-1. Tap or click **Other people**, and then tap or click **Set up assigned access**.
-1. If assigned access had been previously enabled, **Turn off assigned access and sign out the selected account** will appear on the **Set up assigned access** page. Tap or click that hyperlink to turn off assigned access.
-
-> [!Note]
-> If the assigned access user is currently signed in, they will be signed out automatically.
+1. Tap or click **Other users**, and then tap or click **Set up assigned access**.
+1. Tap or click **Choose a user account**. The Choose an account dialog opens with a list of accounts whose accounts are restricted by assigned access.
+1. Select the account you want remove assigned access and then tap or click **Don’t use assigned access**.
+1. To apply the change, log off the assigned access user account then re-log in.

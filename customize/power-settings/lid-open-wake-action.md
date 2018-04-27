@@ -72,4 +72,4 @@ Available in Windows 10, version 1607 and later versions of Windows.
 ## <span id="related_topics"></span>Related topics
 
 
-[LidNotificationsAreReliable](power-controls-lidnotificationsarereliable.md)
+[LidNotificationsAreReliable](lidnotificationsarereliable.md)

@@ -1,27 +1,26 @@
 ---
 author: themar
-Description: 'Enable and disable manufacturing mode in Windows 10 in S mode'
+Description: 'Enable and disable manufacturing mode in Windows 10 S'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Windows 10 in S mode manufacturing mode'
+title: 'Windows 10 S manufacturing mode'
 ms.author: themar
-ms.date: 04/25/2018
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Enable manufacturing mode
+# Manufacturing mode
 
 ## Overview
 
-To run scripts, installers, and diagnostic tools on the factory floor, Windows 10 in S mode and Windows 10 S have a manufacturing mode. This mode allows you to run unsigned code in Audit Mode. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key when booted into audit mode.
+To run scripts, installers, and diagnostic tools on the factory floor, Windows 10 S has a manufacturing mode. This mode allows you to run unsigned code in Audit Mode. Enable manufacturing mode by adding a registry key to an offline image. Disable manufacturing mode by removing the registry key when booted into audit mode.
 
 
 > [!IMPORTANT]
-> Don't ship a Windows 10 in S mode PC with the registry in place. Remove the registry key prior to shipping the device.
+> Don't ship a Windows 10 S PC with the registry in place. Remove the registry key prior to shipping the device.
 
-Before shipping a Windows 10 in S mode PC, remove the manufacturing registry key and exclude it from recovery packages.
-
+Before shipping a Windows 10 S PC, remove the manufacturing registry key and exclude it from recovery packages.
 
 ## Enable manufacturing mode
 
@@ -29,12 +28,12 @@ Here's how to enable manufacturing mode.
 
 On your technician PC:
 
-1. Mount your Windows 10 in S mode image.
+1. Mount your Windows 10 S image.
 
     ```
     Dism /Mount-Wim /WimFile:D:\sources\install.wim /index:1 /MountDir:C:\mount\windows
     ```
-    Where D: is your Windows 10 in S mode installation media.
+    Where D: is your Windows 10 S installation media.
 
 2. Load the SYSTEM registry hive from your mounted image into regedit on your technician PC. We'll use a temporary hive called HKLM\Windows10S.
 
@@ -60,7 +59,7 @@ On your technician PC:
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
-The Windows 10 in S mode image now has the manufacturing key that will allow you to make changes in audit mode.
+The Windows 10 S image now has the manufacturing key that will allow you to make changes in audit mode.
 
 ## Remove the manufacturing registry key
 
@@ -78,7 +77,7 @@ While still booted into audit mode:
 
 The manufacturing registry key is now removed. You can check the Registry Editor to double check that the key has been removed.
 
-On your Windows 10 in S mode PC in audit mode:
+On your Windows 10 S PC in audit mode:
 
 1. Open Registry Editor by clicking on the start menu and typing `regedit` and press enter.
 

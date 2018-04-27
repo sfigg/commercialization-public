@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # SupportPhone
 
 > [!Important]
-> This setting has been deprecated.
+> SupportPhone is deprecated in Windows 10, version 1709.
 
 `SupportPhone` specifies the telephone number(s) to call for support for the OEM.
 
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| *phone_number*          | **This setting has been deprecated**. Specifies the support telephone number(s) for the OEM. *Phone_number* is a string with a maximum length of 256 characters.                                                                          |
+| *phone_number*          | **Deprecated in Windows 10, version 1709**. Specifies the support telephone number(s) for the OEM. *Phone_number* is a string with a maximum length of 256 characters.                                                                          |
 
 This string type supports empty elements.
 

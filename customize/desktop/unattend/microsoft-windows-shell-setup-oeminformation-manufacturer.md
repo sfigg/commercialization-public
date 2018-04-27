@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Manufacturer
 
 > [!Important]
-> This setting has been deprecated. The Manufacturer name displayed in the Get Help app is now based on your System Manufacturer value defined in System Information (msinfo32.exe), unless you provide a [`SupportProvider`](microsoft-windows-shell-setup-oeminformation-supportprovider.md) parameter as part of your `OEMInformation`. When `SupportProvider` is provided, it will override the System Manufacturer name. This enables you to differentiate the name of your support app or website from the name of your brand if desired (i.e. "Contact Contoso Support" vs "Contact Contoso"). For this release, if `SupportProvider` is not present but the deprecated value `Manufacturer` is, it will still be used to support upgrade scenarios.
+> Manufacturer is deprecated in Windows 10, version 1709. The Manufacturer name displayed in the Get Help app is now based on your System Manufacturer value defined in System Information (msinfo32.exe), unless you provide a [`SupportProvider`](microsoft-windows-shell-setup-oeminformation-supportprovider.md) parameter as part of your `OEMInformation`. When `SupportProvider` is provided, it will override the System Manufacturer name. This enables you to differentiate the name of your support app or website from the name of your brand if desired (i.e. "Contact Contoso Support" vs "Contact Contoso"). For this release, if `SupportProvider` is not present but the deprecated value `Manufacturer` is, it will still be used to support upgrade scenarios.
 
 `Manufacturer` specifies the name of the manufacturer.
 
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| *manufacturer*          | **This setting has been deprecated**. Specifies the name of the manufacturer. *Manufacturer* is a string with a maximum length of 256 characters.                                                                                         |
+| *manufacturer*          | **Deprecated in Windows 10, version 1709**. Specifies the name of the manufacturer. *Manufacturer* is a string with a maximum length of 256 characters.                                                                                         |
 
 This string type supports empty elements.
 

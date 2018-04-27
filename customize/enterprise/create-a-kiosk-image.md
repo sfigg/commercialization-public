@@ -16,7 +16,7 @@ ms.technology: windows-oem
 A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). There are a few different methods you can choose from to set up single-function kiosk devices, such as restaurant menus or displays at trade shows:
 
 1. Use the [Windows Configuration Designer method](#windows-cd) to configure a kiosk device running either a single Universal Windows app (Windows 10 Enterprise, Education, and Pro) or a single Classic Windows application (Windows 10 Enterprise or Education only).
-1. You can also use the **Provision kiosk devices** wizard in Windows Configuration Designer to [configure a kiosk that runs multiple applications](#multi-app-kiosk).
+1. In Windows 10, version 1709, you can also use the Provision kiosk devices wizard in Windows Configuration Designer to [configure a kiosk that runs multiple applications](#multi-app-kiosk).
 1. For a kiosk device to run a single Universal Windows Platform (UWP) app, use the [Assigned access method](#assigned-access).
 1. For a kiosk device (Windows 10 Enterprise or Education) to run a single Classic Windows application, use the [Shell Launcher method](#shell-launcher) to set a custom user interface as the shell.
 
@@ -40,9 +40,12 @@ When you use the Provision Kiosk Devices wizard in Windows Configuration Designe
 
 ## <a name="multi-app-kiosk"></a>Windows Configuration Designer method for a a multi-app kiosk experience
 
-A kiosk device typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. However, you can use the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. You can include both UWP and Classic Windows applications.
+A kiosk device typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. You can include both UWP and Classic Windows applications.
 
 The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
+
+> [!Note]
+> The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education) version 1709.
 
 To set up a multi-app kiosk experience:
 
@@ -64,7 +67,6 @@ If an account is configured for assigned access, a single UWP app of your choosi
 ### Prerequisites for assigned access
 
 * Windows 10 Enterprise, Education, or Pro.
-* Windows 10, version 1709, or a newer version of Windows.
 * A domain or local user account
 * The user account must have logged on at least once before you set up assigned access, or no apps will be available for that account. To set up assigned access using MDM, you need the user account (domain\\account).
 * A UWP app that is installed for that account and is an above lock screen app. For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](https://docs.microsoft.com/en-us/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access). The app can be your own company app that you have made available in your own app Store.
@@ -153,7 +155,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
    Dism /online /Enable-Feature /FeatureName:Client-EmbeddedShellLauncher
    ```
 
-To learn more, see [Set your custom shell](shell-launcher.md#set-your-custom-shell)
+To learn more, see [Set your custom shell](shell-launcher.md#custom-shell)
 
 ## <a href="" id="lockdown-settings"></a>Other settings to lock down
 

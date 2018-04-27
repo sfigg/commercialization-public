@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Customize the Windows performance power slider
 
-The Windows performance power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. As a customer switches between the four slider modes to trade performance for battery life (or vice versa), Windows power settings are engaged behind the scenes. You are able to customize the default slider mode for both AC and DC, and can also configure the power settings, and PPM options, that are engaged for each slider mode.
+The new Windows performance power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. As a customer switches between the four slider modes to trade performance for battery life (or vice versa), Windows power settings are engaged behind the scenes. You are able to customize the default slider mode for both AC and DC, and can also configure the power settings, and PPM options, that are engaged for each slider mode.
 
 Customers can access the slider on their Windows device by clicking or tapping the battery icon in the task bar. The slider appears in the battery flyout.
 
@@ -22,11 +22,11 @@ Customers can choose their power mode by moving the slider to the left and right
 
 ## Slider availability
 
-The Windows power slider is available for AMD and Intel platforms running Windows 10, build 1709 and newer builds of Windows. It is not available on devices with ARM64 processors. The slider will appear on a device only when the **Balanced** power plan, or any plan that is derived from Balanced, is selected. There is not an option for either users or OEMs to remove the slider UX.
+The Windows power slider is available for AMD and Intel platforms running Windows 10 build 1709. It is not available on devices with ARM64 processors. The slider will appear on a device only when the **Balanced** power plan, or any plan that is derived from Balanced, is selected. There is not an option for either users or OEMs to remove the slider UX.
 
-Devices that have the High Performance, Power Saver, or any “OEM Recommended” power plans will not be disturbed during the Windows upgrade process. If a user upgrades from a version of Windows that does not support the slider, to a version that does, there will be no change to their  High Performance, Power Saver, or "OEM Recommended" power plan. These users will not see the slider UX, and they can still configure their power plans in the same way they could before upgrading.
+Devices that have the High Performance, Power Saver, or any “OEM Recommended” power plans will not be disturbed during the upgrade process. If a user has any of these power plans selected when they upgrade to Windows 10 version 1709, there will be no change to their power plans, and they will not see the slider UX. Users can still configure their power plans in the same way they could before upgrading.
 
-Users will see the power slider appear only when they apply the Balanced power plan from the **Settings** app, under **System** > **Power & Sleep** > **Additional power settings**.
+Users will see the power slider appear only when they apply the Balanced power plan from the Power & Sleep section of the Settings app.
 
 > [!Note]
 > After the user changes to a Balanced performance plan, there is no way for them to go back to using the High Performance plan from the UI, although it is possible from the cmd line (via powercfg).
@@ -95,9 +95,9 @@ Below is an example customizations.xml file that defines default slider modes.
 
 ## <a name="configure-settings"></a> Configure power settings and PPM options engaged by the slider
 
-You can use overlays to customize the power settings and PPM options that are engaged for each slider mode. In previous versions of Windows, power settings could only be configured per power scheme, and PPM options could only be configured per power profile. The introduction of overlays enables OEMs to better optimize power settings based on the slider mode selected by the user, as opposed to the power scheme or power profile selected by the device.
+In Windows 10, build 1709, we’ve introduced new overlays that you can use to customize the power settings and PPM options that are engaged for each slider mode. In previous versions of Windows, power settings could only be configured per power scheme, and PPM options could only be configured per power profile. The introduction of overlays enables OEMs to better optimize power settings based on the slider mode selected by the user, as opposed to the power scheme or power profile selected by the device.
 
-To configure PPM and power settings per slider mode, apply them to one of the following overlays:
+To configure PPM and power settings per slider mode, apply them to one of the following new overlays:
 
 * **BetterBatteryLifeOverlay**
 * **MaxPerformanceOverlay**
@@ -105,7 +105,7 @@ To configure PPM and power settings per slider mode, apply them to one of the fo
 The Battery Saver mode inherits the settings configured for the Constrained PPM profile. The Best Performance mode inherits the settings configured for the Balanced (default) profile. Configure these profiles to customize the settings that are engaged in the associated slider modes.
 
 > [!Note]
-> Settings such as disk and display timeouts, and other legacy power settings, are not customizable via the performance/power slider. Only settings which can affect perceived performance differences can be customized across slider modes. Each slider mode should be thought of as a “lite” power plan, which only contains settings that impact performance, such as CPU settings (PPM) and power throttling. Other factors which control performance (GPU, thermals etc) are in OEM/SVs control and they can create custom power-settings for those and connect them to the slider via the INF.
+> Settings such as disk and display timeouts, and other legacy power settings, are not customizable via the performance/power slider. Only settings which can affect perceived performance differences can be customized across slider modes. Each slider mode should be thought of as a “lite” power plan, which only contains settings that impact performance. For Windows 10, version 1709, that means CPU settings (PPM) and power throttling. Other factors which control performance (GPU, thermals etc) are in OEM/SVs control and they can create custom power-settings for those and connect them to the slider via the INF.
 
 ### Configure PPM optimization
 
@@ -115,7 +115,7 @@ PPM options can be configured for all AMD and Intel platforms using Windows Prov
 
 #### XML Example
 
-Below is an example of a customizations.xml file that uses overlays to define PPM settings for the Better Battery and Best Performance slider modes.
+Below is an example of a customizations.xml file that uses the new overlays to define PPM settings for the Better Battery and Best Performance slider modes.
 
 ```xml
 <Power>
@@ -148,9 +148,9 @@ Below is an example of a customizations.xml file that uses overlays to define PP
 
 ### Configure performance and power settings
 
-To engage your customized power settings only when the slider is in a particular mode, create an **AddPowerSettingDirective** in your INF file that indicates the default values for each overlay. There are **Default** directives that must be included in an **AddPowerSetting** section. A **Default** directive specifies the three overlays that apply to an AC and DC power state each.
+To engage your customized power settings only when the slider is in a particular mode, create an **AddPowerSettingDirective** in your INF file that indicates the default values for each overlay. There are six **Default** directives that must be included in an **AddPowerSetting** section. A **Default** directive specifies the three overlays that apply to an AC and DC power state each.
 
-Add the following three directives to define settings for the various slider modes:
+For Windows 10, build 1709, add the following to define settings for the various slider modes:
 
 | Slider mode                 | INF GUID                                | Ppkg SchemeAlias                                              |
 |:----------------------------|:----------------------------------------|:--------------------------------------------------------------|
@@ -158,15 +158,15 @@ Add the following three directives to define settings for the various slider mod
 | Better Performance          | {381B4222-F694-41F0-9685-FF5BB260DF2E}  | Balanced                                                      |
 | Best Performance            | {DED574B5-45A0-4F42-8737-46345C09C238}  | MaxPerformanceOverlay                                         |
 
-See [INF AddPowerSetting Directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addpowersetting-directive) for further instructions.
+See [INF AddPowerSetting Directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addpowersetting-directive) for further instructions, keeping in mind the new Default values listed above.
 
 ## Power throttling
 
-Most Windows users have multiple apps running on the operating system at the same time, and often, the apps running in the background consume significant power. Windows leverages modern silicon capabilities to run background work in an energy-efficient manner, significantly enhancing battery life. Power throttling saves up to 11% in CPU power by throttling CPU frequency of applications running in the background. With power throttling, when background work is running, Windows places the CPU in its most efficient operating modes. Learn more about this feature in our blog post: [Introducing power throttling](https://blogs.windows.com/windowsexperience/2017/04/18/introducing-power-throttling/#vySvtofj5CElXX6h.97).
+Most Windows users have multiple apps running on the operating system at the same time, and often, the apps running in the background consume significant power. In Windows 10 build 1709, we’ve leveraged modern silicon capabilities to run background work in an energy-efficient manner, significantly enhancing battery life. Power throttling saves up to 11% in CPU power by throttling CPU frequency of applications running in the background. With power throttling, when background work is running, Windows places the CPU in its most efficient operating modes. Learn more about this feature in our blog post: [Introducing power throttling](https://blogs.windows.com/windowsexperience/2017/04/18/introducing-power-throttling/#vySvtofj5CElXX6h.97).
 
 Power throttling does not suspend or close apps and services on the device.
 
-Power throttling is always engaged, unless the slider is set to **Best Performance**. In this case, all applications will be opted out of power throttling. Users can also opt individual apps out of power throttling in the Battery usage UX:
+In Windows 10 build 1709, power throttling is always engaged, unless the slider is set to Best Performance. In this case, all applications will be opted out of power throttling. Users can also opt individual apps out of power throttling in the Battery usage UX:
 
 ![Users can opt apps out of power throttling through UX](images/opt-out-power-throttling.png)
 

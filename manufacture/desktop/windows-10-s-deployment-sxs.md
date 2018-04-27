@@ -2,34 +2,28 @@
 author: themar
 Description: 'How to create a Windows 10 S image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Windows 10 in S mode deployment lab'
+title: 'Windows 10 S deployment lab'
 ms.author: themar
-ms.date: 04/20/2018
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows 10 in S mode deployment lab
+# Windows 10 S deployment lab
 
-Starting with Windows 10 in S mode, creating a deployment of Windows 10 in S mode starts with a regular base Windows 10 image. S mode is applied by applying an unattend file to a mounted Windows image. When working with a PC that is in S mode, the manufacturing process has some differences when compared to other versions of Windows. When [planning your deployment](windows-10-s-planning.md), you have to make sure that your [drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) and [apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) are supported by Windows 10 in S mode.
+Creating a deployment of Windows 10 S has some differences when compared to other versions of Windows. When [planning your deployment](windows-10-s-planning.md), you have to make sure that your [drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements) and [apps](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) are supported by Windows 10 S.
 
-This lab walks you through the process of configuring a Windows 10 image in S mode for deployment. We'll customize an image, set S mode with unattend, add the manufacturing registry key in WinPE, and then remove the registry key in Audit Mode. Then we'll configure recovery and prepare the image for shipment.
-
-> [!Note]
-> If you're building a Windows 10 S image, we'll call out the differences between Windows 10 in S mode and Windows 10 S.
+This lab walks you through the process of configuring a Windows 10 S image for deployment. We'll customize an image, add the manufacutring registry key in WinPE, and then remove the registry key in Audit Mode. Then we'll configure recovery and prepare the image for shipment.
 
 Let's get started.
 
 ## Get the tools you need
 
-To start building an image for deployment, here's what you'll need:
+To start building a Windows 10 S image for deployment, here's what you'll need:
 
-- Windows 10 image
-    - For Windows 10 in S mode, use a Windows Home or Windows Professional image
-        **or**
-    - For Windows 10 S, use a Windows 10 S image
-- Technician PC running Windows 10, Version 1803 or later
+- Windows 10 S image
+- Technician PC running Windows 10, Version 1703 or later
 - Reference PC where you can deploy your image
 - The [latest version of the ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) installed on your technician PC
 - A USB key that you can format
@@ -86,7 +80,7 @@ On your technician PC:
 
 2.  Copy the base WinPE files into a new folder:
 
-    ``` 
+    ``` syntax
     copype amd64 C:\winpe_amd64
     ```
 
@@ -114,7 +108,7 @@ For more information about how to create a WinPE drive, see [WinPE: Create USB b
 
 Mounting a Windows image is the same process that we used to mount the WinPE image earlier. When you mount your Windows image (install.wim), you'll be able to access a second image, WinRe.wim, which is the image that supports recovery scenarios. Updating install.wim and WinRE.wim at the same time helps you keep the two images in sync, which ensures that recovery goes as expected.
 
-1.	Mount the Windows 10 iso in File Explorer.
+1.	Mount the Windows 10 S iso in File Explorer.
 
 2.	Create a temporary folder (c:\temp) and then copy install.wim from D:\Sources (Where D: is the drive letter of the mounted image) to the temporary folder.
 
@@ -153,39 +147,14 @@ To learn about customizing WinRE, see [Customize Windows RE](customize-windows-r
 
 ## Enable customizations
 
-### Enable S mode
-
-> **Note:** This section doesn't apply if you're starting with Windows 10 S media. If this doesn't apply, [skip to the next section](#add-the-manufacturing-registry-key).
-
-Before customizing an image, use the offline servicing pass of unattend to set a Windows PC to S mode. 
-
-1. Use Windows SIM to create an unattend file.
-2. Add `SkuPolicyRequired` to the offlineServicing pass
-3. Set `SkuPolicyReqiured` to `1`
-4. Save the file as unattend.xml
-5. Copy unattend.xml to the mounted Windows image:
-    
-    ```
-    MkDir c:\mount\windows\Windows\Panther
-    Copy unattend.xml  C:\mount\windows\Windows\Panther\unattend.xml
-    ```
-
-6. Apply the unattend file to your mounted image:
-
-    ```
-    DISM /Image=C:\mount\windows /Apply-Unattend=C:\mount\windows\Windows\Panther\unattend.xml
-    ```
-
-When the PC boots, it will boot into S mode with CI policies enforced.  If you need to make customizations to the Windows image, you'll have to enable the manufacturing registry key. This will allow you to make changes in audit mode.
-
 ### Add the manufacturing registry key
 
-Enabling manufacturing mode is a step you'll have to do when working with Windows 10 in S mode and Windows 10 S. To enable customizations during the manufacturing process, you'll have to add a registry key that gives you the ability to run unsigned code when booted into audit mode. This can help you build and test your image when getting a PC ready to ship.
+Enabling manufacturing mode is a new step you'll have to do when working with Windows 10 S. To enable customizations during the manufacturing process, you'll have to add a registry key that gives you the ability to run unsigned code when booted into audit mode. This can help you build and test your image when getting a PC ready to ship.
 
 We'll add the customization registry key to the mounted image by loading the mounted image's SYSTEM registry hive, and then then adding a key. Then we'll configure ScanState to exclude the registry key when capturing your recovery package to ensure that the registry key doesn't get restored during reset or recovery scenarios.
 
 > [!IMPORTANT]
-> Don't ship your PC with the registry in place. Remove the registry key prior to shipping the device.
+> Don't ship your Windows 10 S PC with the registry in place. You'll have to remove the registry key prior to shipping the device.
 
 1. Load the SYSTEM registry hive from your mounted image into regedit on your technician PC. We'll use a temporary hive called HKLM\Windows10S.
 
@@ -354,7 +323,7 @@ copy c:\temp\winre-optimized.wim t:\
 1. Boot your reference PC if it's not already booted.
 2. When the device boots to OOBE, press Ctrl+Shift+F3 to enter Audit mode.
 3. The PC will restart into audit mode.
-4. Make changes to the PC. See the table on [Planning a Windows 10 in S mode image](windows-10-s-planning.md#customizations) to see which customizations are available in audit mode.
+4. Make changes to the PC. See the table on [Planning a Windows 10 S image](windows-10-s-planning.md#customizations) to see which customizations are available in audit mode.
 
 To learn about audit mode, see [Audit mode overview](audit-mode-overview.md).
 To learn about Audit mode's behavior with Windows 10 S, see [Audit mode](windows-10-s-manufacturing-considerations.md#audit-mode) in [Windows 10 S manufacturing environment](windows-10-s-manufacturing-considerations.md).
@@ -424,12 +393,10 @@ See [Capture and apply Windows system and recovery partitions](capture-and-apply
 #### Apply your image
 
 1. Boot your reference PC into WinPE.
-2. Apply your Windows 10 in S mode image (Windows10S.wim) to the PC. This will overwrite any existing Windows installations.
+2. Apply your Windows 10 S image (Windows10S.wim) to the PC. This will overwrite any existing Windows installations.
 
     ```
-    T:
-    cd Deployment
-    T:\Deployment\applyimage.bat T:\images\Windows10S.wim
+    T:\Deployment\Walkthrough-deploy.bat T:\images\Windows10S.wim
     ```
 
 ### Verify customizations
@@ -449,5 +416,5 @@ To verify recovery is working as expected, perform the following validation task
 
 ## Ship the PC
 
-Now that you have an image, you are ready to build and ship Windows 10 in S mode PCs. Make sure that the manufacturing registry key is removed and Secure Boot is enabled on shipped PCs.
+Now that you have an image, you are ready to build and ship Windows 10 S PCs. Make sure that the manufacturing registry key is removed and Secure Boot is enabled on shipped PCs.
 

@@ -1,30 +1,41 @@
 ---
-title: Windows Hardware Compatibility Program
-Description: 
+title: Hardware Compatibility Specifications for Windows 10, version 1607
+Description: 'This section of the documentation provides specifications for hardware compatibility with Windows 10, version 1607.'
 ms.assetid: 
 MSHAttr: 
 author: beneluxboy
 ms.author: dongill
-ms.date: 01/23/2018
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows Hardware Compatibility Program
+# Hardware Compatibility Specifications for Windows 10, version 1607
 
-The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016. The program also provides guidance for developing, testing and distributing drivers. Using the [Windows Hardware Dev Center dashboard](https://developer.microsoft.com/en-us/windows/hardware/dashboard-sign-in), you can manage submissions, track the performance of your device or app, review telemetry and much more.
+The Windows Hardware Compatibility Program is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 and Windows Server 2016.
 
-## Windows Hardware Lab Kit
+The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit to test your product. After passing certain tests, the program allows you to use the Windows logo as part of your marketing. End users trust the Windows logo as a sign of compatibility. Enterprise and government customers also look for the logo, or consult the Microsoft Certified Products list or the server catalog to see what systems, components and peripherals have been tested to ensure interoperability and reliability.
 
-The Windows Hardware Compatibility Program leverages the tests in the [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit), a test framework used to test hardware devices for Windows 10.
+The requirements are validated by HLK tests and categorized as follows:
 
-## Playlists
+- [System requirements](systems.md)
+- [Device and peripheral requirements](device.md) for a stand-alone device
+- [Filter driver requirements](filter.md) - Windows Filtering Platform drivers (WPF), file system filter drivers, antivirus, and Early Launch Anti-Malware (ELAM) filter drivers.
 
-The Windows Hardware Compatibility Program uses an official playlist to determine which devices meet the requirements for compatibility with Windows 10. All playlists that we have published are acceptable to use for submissions to the Windows Hardware Dev Center.
+When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
 
-The latest playlist can be downloaded at: [http://aka.ms/HLKPlaylist](http://aka.ms/HLKPlaylist)
+## Official Test Playlist
 
-## Blog
+The Windows Hardware Compatibility Program uses an official playlist to determine which devices meet the requirements for compatibility with Windows 10. All playlists that we have published are acceptable to use for submissions to the Hardware Developer Portal (sysdev).
 
-For the most up-to-date news about the program, check out the [Windows Hardware Certification Blog](https://blogs.msdn.microsoft.com/windows_hardware_certification/).
+The latest playlist can be downloaded at the following location:
+
+- [http://aka.ms/HLKPlaylist](http://aka.ms/HLKPlaylist)
+
+## Hardware Certification Policies and Processes for Windows 10, version 1607
+
+The WHCP Policies and Processes documents below contains certification testing policies, product submission, and business requirements.
+
+- [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=823111)
+- [WHCP Policies and Processes (Windows Server)](https://go.microsoft.com/fwlink/p/?linkid=834831)

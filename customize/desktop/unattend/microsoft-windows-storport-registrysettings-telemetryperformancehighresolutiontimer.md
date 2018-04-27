@@ -14,8 +14,6 @@ ms.technology: windows-oem
 
 # TelemetryPerformanceHighResolutionTimer
 
-> [!Important]
-> This setting is removed from Unattend in Windows 10, version 1803.
 
 Enables high resolution timer for hourly IO latency summaries in Storport event logs.
 

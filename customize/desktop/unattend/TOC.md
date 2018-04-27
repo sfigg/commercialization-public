@@ -1,5 +1,5 @@
 # [Unattended Windows Setup Reference](index.md)
-## [Changed answer file settings for Windows 10 for desktop editions, build 1803](changed-answer-file-settings-for-windows-10-build-1803.md)
+## [Changed answer file settings for Windows 10 for desktop editions, build 1709](changed-answer-file-settings-for-windows-10-build-1709.md)
 ## [Changed answer file settings for previous Windows 10 builds](changed-answer-file-settings-for-previous-windows10-builds.md)
 
 ## [Components](components-b-unattend.md)
@@ -20,8 +20,6 @@
 #### [ResourceDll](microsoft-windows-blb-wsb-online-main-resourcedll.md)
 ### [Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md)
 #### [MaintainServerList](microsoft-windows-browserservice-maintainserverlist.md)
-### [Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity.md)
-#### [SKUPolicyRequired](microsoft-windows-codeintegrity-skupolicyrequired.md)
 ### [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)
 #### [CameraSoundLevel](microsoft-windows-coremmres-camerasoundlevel.md)
 #### [NoPhysicalCameraLED](microsoft-windows-coremmres-nophysicalcameraled.md)

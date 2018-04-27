@@ -54,16 +54,6 @@ Generally, every device outside of the SoC must be capable of entering a low-pow
 
 Network and radio devices are the notable exception to the 1-milliwatt guideline. Network and radio devices might require more power to maintain a connection to the network or to listen to wireless devices. Some system designers refer to these power-state transitions as *runtime D3* (RTD3).
 
-
-### Directed power management for PCIe devices
-
-PCIe cards outside the SoC must enable a directed power management model called Directed DRIPS (Deepest Runtime Idle Platform State) in order to ensure that they can enter a low power mode. Directed DRIPS is a mechanism for directing device stacks into an appropriate low power idle state when a system enters Modern Standby, thus enabling the system to enter software/hardware DRIPS reliably.  Without Directed DRIPS, if a user plugs a device into a PCIe Root Port with user-accessible slots on a desktop Modern Standby system, and the driver for the device does not support runtime D3 (RTD3), the PCIe device may prevent the system from entering DRIPS. To avoid this problem, OEMs must opt in the Root Ports of the PCIe device to Directed DRIPS. For Directed DRIPS to be engaged for a given PCIe device, the following requirements must be met: 
-1. The parent PCIe Root Port for the device must be specified as a constraint for DRIPS.  
-2. The parent PCIe Root Port must apply fundamental device reset for the all children downstream of the Root Port upon the Root Port's D0->D3 transition and deassert fundamental device reset to those children upon the D3->D0 transition. For more information about PCIe fundamental resets, please refer to Section 6.6.1 of the [PCI Express Base Specification](https://members.pcisig.com/wg/PCI-SIG/document/10912?downloadRevision=11804). The application of fundamental reset can be provided by supplemental ACPI mechanisms. For more information, please refer to this guide on [PCI Power Management](https://docs.microsoft.com/en-us/windows-hardware/drivers/pci/pci-power-management-and-device-drivers). To indicate that the platform honors this fundamental reset requirement, the firmware must define _DSD with support for GUID {FDF06FAD-F744-4451-BB64-ECD792215B10}. Without this, Directed DRIPS will not be triggered for devices under that PCIe Root Port. For more information, refer to the [ACPI Device Specific Data (_DSD) for PCIe Root Ports](https://docs.microsoft.com/en-us/windows-hardware/drivers/pci/dsd-for-pcie-root-ports). 
-3. Power resources must be unique to a given PCIe Root Port, i.e. not shared with any other Root Port. 
- 
-Please note that PCIe cards that require Compatibility Support Modules (CSM) will not work in Modern Standby systems. CSM is not supported in the BIOS on Modern Standby systems due to the UEFI Secure Boot requirement. For more information, please refer to the [Hardware Compatibility Specification](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/1709/systems#systemfundamentalsfirmwareuefilegacyfallback).
-
 For more information about power management for particular device classes, system designers are encouraged to review [Device-specific power management for modern standby](device-specific-power-management-for-modern-standby.md), as well as device-specific documentation on Microsoft Connect.
 
 

@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # Logo
 
 > [!Important]
-> This setting has been deprecated.
+> Logo is deprecated in Windows 10, version 1709.
 
 `Logo` specifies the path to the .bmp file of the manufacturer's logo. This logo appears in the **Performance Information and Tools** Control Panel, but is not used in the **Settings** app. In the **Settings** app, no logo displays.
 
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| *path_to_logo*          | **This setting has been deprecated**. Specifies the path to the manufacturer's logo. The logo must be located on the destination computer, and it must be a .bmp file. *Path_to_logo* is a string with a maximum length of 256 characters.         |
+| *path_to_logo*          | **Deprecated in Windows 10**. Specifies the path to the manufacturer's logo. The logo must be located on the destination computer, and it must be a .bmp file. *Path_to_logo* is a string with a maximum length of 256 characters.         |
 
 > [!Note]
 > The logo must be in 32-bit color. Logos that are larger than 120x120 pixels are scaled to 120x120.

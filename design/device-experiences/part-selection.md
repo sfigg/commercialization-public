@@ -111,7 +111,7 @@ Note that in the absence of DEVSLP or a comparable NVMe non-operational power st
 ## Rotational storage
 
 
-Storage solutions combining flash and rotating media have shown to be generally capable to keep important data in the flash, thus allowing for quick resume times and a relatively low power profile. Storage solutions using only rotational media are also feasible, though they may require tuning of load/unload cycling by OEMs and may result in increased power consumption and higher exit latency. 
+Storage solutions combining flash and rotating media have shown to be generally capable to keep important data in the flash, thus allowing for quick resume times and a relatively low power profile. The feasibility of rotational media however is impacted by various factors, an important one of which is reliability.
 
 Rotating media contains many moving parts that wear out over time. When frequently power cycling a drive, the wear can be considerably increased, since the read/write heads have to move from the platter to their parked position and back.
 
@@ -128,18 +128,14 @@ The number of such load/unload cycles is directly influenced by the following fa
 
 From the above factors, \#3 and \#4 are very difficult or almost impossible to control. Cache Size (\#1) and Firmware Timers (\#2) are directly in the OEM’s control.
 
-Modern Standby causes a system to be powered down more aggressively to meet system power requirements. Without any safeguards in place, this could cause excessive wear on rotational drives. However, Windows 10 attempts to balance power savings with device reliability through a mechanism called adaptive D3 idle timeout. With adaptive D3 idle timeout, the system detects excessive power cycling and reduces it by increasing the D3 idle timeout, thus keeping the hard drive in a D0 state for a longer period. This mechanism prevents excess wear and tear to the hard drive that may reduce its long-term reliability and violate warranty claims. However, it also increases a device’s power consumption. 
-
-By default, systems with rotational storage will only have Disconnected Standby enabled. It is possible to enable Connected Standby on these systems by changing a [Power Controls setting](https://review.docs.microsoft.com/en-us/windows-hardware/customize/power-settings/power-controls-ignorecscompliancecheck?branch=alhopper-rs4). Please note that this is not recommended. It is imperative to understand the risks and perform [reliability testing](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/basic-functionality-and-reliability-testing) before enabling Connected Standby on a system with rotational storage. 
- 
-The following points summarize storage guidance for Modern Standby systems: 
+Even though Windows 10 attempts to balance power savings with device reliability, internal testing has shown that enabling connectivity while in Modern Standby on a pure rotational device (HDD) can cause a large amount of load/unload cycles in a very short time, thus putting warranty claims at risk. Out of these observations, we formed the following guidance:
 
 -   For the best experience, use pure flash devices (SSDs) and take full advantage of connectivity while in Modern Standby.
 -   If you use rotational or hybrid storage in some form, make sure (through your own testing and validation) that the Load/Unload cycles stay in reasonable bounds. This can be positively affected by:
     -   Deploying hybrid solutions with at least 12GB useable NAND to absorb while in Modern Standby.
     -   Setting firmware load/unload timers at 45 s or more (&lt;10s is currently common) to ensure that the frequency of load/unload cycles does not exceed warranty claims.
--   If you use rotational or hybrid storage, excessive load/unload cycles will cause the D3 idle timeout to increase. This results in a device staying in an active power state for longer, leading to increased power consumption. 
--   Expect higher exit latency upon system resume from Modern Standby with rotational storage than with SSDs. 
+
+**Note**  We strongly do not recommend enabling connectivity on rotational-only (HDD) systems.
 
  
 

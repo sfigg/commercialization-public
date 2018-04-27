@@ -28,10 +28,7 @@ ms.technology: windows-oem
 >[!NOTE] 
 >With each new release, anyone who builds tools that utilize the HLK object model should rebuild those tools to use the latest versions of the object model files. In addition, be sure to always use the same version of each object model file (i.e. do not mix object model files from different kit releases).
 
-### Updated test content
-Test content updated for better coverage for 1803 testing, across various architectures.
-
-## <span id="What_s_new_in_previous_releases"></span><span id="what_s_new_in_previous_releases"></span><span id="WHAT_S_NEW_IN_PREVIOUS_RELEASES"></span>**What's new in previous releases**
+ 
 
 ### <span id="Improved_playlist_support"></span><span id="improved_playlist_support"></span><span id="IMPROVED_PLAYLIST_SUPPORT"></span>Improved playlist support
 
@@ -44,6 +41,9 @@ HLK tests can now target ARM64 desktop machines.
 ### <span id="Nano_Server_testing"></span><span id="nano_server_testing"></span><span id="NANO_SERVER_TESTING"></span>Nano Server testing
 
 HLK now includes tests for Nano Server.
+
+## <span id="What_s_new_in_previous_releases"></span><span id="what_s_new_in_previous_releases"></span><span id="WHAT_S_NEW_IN_PREVIOUS_RELEASES"></span>**What's new in previous releases**
+
 
 ### <span id="Improved_diagnosability_of_failed_HLK_tests"></span><span id="improved_diagnosability_of_failed_hlk_tests"></span><span id="IMPROVED_DIAGNOSABILITY_OF_FAILED_HLK_TESTS"></span>Improved diagnosability of failed HLK tests
 
@@ -81,7 +81,7 @@ Learn more about playlists in the [Getting Started Guide](getstarted\step-6-sele
 
 ### <span id="Windows_Hardware_Compatibility_Program"></span><span id="windows_hardware_compatibility_program"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM"></span>Windows Hardware Compatibility Program
 
-Hardware certification is no longer required. Instead, the Windows Hardware Compatibility Program is an optional program in which you can participate. For more information, see [Windows Hardware Compatibility Program](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/).
+Hardware certification is no longer required. Instead, the Windows Hardware Compatibility Program is an optional program in which you can participate. For more information, see [Windows Hardware Compatibility Program](user\windows-hardware-compatibility-program-overview.md).
 
 -   Compatibility Playlist - Levels are no longer used to identify tests required for the Compatibility Program. To create a Compatibility Program test pass, download the official [Hardware Compatibility Program Playlist](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/) and apply to your HLK project.
 -   [Windows Hardware Certification blog](http://blogs.msdn.com/b/windows_hardware_certification) -This blog provides up-to-date news about the Windows Compatibility Program. Including Compatibility Playlist update announcements.
@@ -122,32 +122,6 @@ The HLK Controller can now be installed on Windows Server 2012 R2.
 
 The HLK now supports 64-bit SQL editions exclusively. Previously, the HCK supported only 32-bit SQL editions exclusively.
 
-# Known issues this release
-### HLK install fails with a database-related error
-This error can occur when uninstalling and then reinstalling HLK. When the new instance of HLK is installed, one of the following error messages appears when installing and rolls back
-- There is already an object named DSLinkType in the database. 
-- The database database_name already exists. 
-- Failed to create SQL database. 
-
-When uninstalling HLK, database uninstall can fail if the database is locked by another process. The HLK uninstall reports success, but the database is left behind.
-To recover, follow these steps:
-1. From an elevated command prompt, run ```SQLCMD -E``` 
-2. From the SQL Shell command line, enter the following:
-3. ```ALTER DATABASE WTTIdentity SET SINGLE_USER WITH ROLLBACK IMMEDIATE```
-4. ```DROP DATABASE WTTIdentity```
-5. ```GO```
-6. ```ALTER DATABASE HLKJobs SET SINGLE_USER WITH ROLLBACK IMMEDIATE```
-7. ```DROP DATABASE HLKJobs```
-8. ```GO```
-9. Verify that ```C:\Program Files\Microsoft SQL Server\MSSQL(sql version).MSSQLSERVER\MSSQL\DATA``` contains no files starting with WTTIdentity or HLKJobs
-10. Install the HLK 
-
-### HLK does not update existing SQL database with latest security fix
-If your existing SQL Server database is unpatched, installing the HLK will not update the database with the latest security fixes. 
- 
-To patch SQL Server: 
-Option 1: Uninstall SQL Server before installing the HLK. The HLK will install SQL Server and the most recent hotfix as of RTM. At this point, you may use Windows Update to keep your SQL Server instance updated.
-Option 2: Manually patch your existing SQL Server before HLK install. 
  
 
  

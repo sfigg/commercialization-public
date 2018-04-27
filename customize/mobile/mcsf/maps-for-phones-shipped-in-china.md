@@ -1,6 +1,6 @@
 ---
 title: Maps for phones shipped in China
-description: Microsoft recommends using the ChinaVariantWin10 setting instead of this legacy MCSF setting.For a Windows mobile device shipping in China, partners must specify that the device is intended for that market by configuring ChinaVariant setting.
+description: Microsoft recommends using the new ChinaVariantWin10 setting instead of this legacy MCSF setting.For a Windows mobile device shipping in China, partners must specify that the device is intended for that market by configuring ChinaVariant setting.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

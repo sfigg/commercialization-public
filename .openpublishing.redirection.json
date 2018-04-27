@@ -6,11 +6,6 @@
         "redirect_document_id": true 
     },
     {   
-        "source_path": "customize/desktop/connect-users-to-network.md", 
-        "redirect_url": "https://docs.microsoft.com/windows-hardware/customize/desktop/oobe-screen-details",
-        "redirect_document_id": true 
-    },
-    {   
         "source_path": "get-started/adk-silent-install.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-offline-install#to-install-the-windows-adk-on-an-offline-computer-using-the-command-line",
         "redirect_document_id": true 
@@ -1557,11 +1552,6 @@
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/power-settings/no-subgroup-settings-allow-wi-fi-networking-during-standby.md", 
-        "redirect_url": "https://docs.microsoft.com/windows-hardware/customize/power-settings/no-subgroup-settings-allow-networking-during-standby",
-        "redirect_document_id": true 
-    },
-    {   
         "source_path": "test/hlk/user/install-microsoft-sql-server.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/microsoft-sql-server-options", 
         "redirect_document_id": true
@@ -1572,25 +1562,6 @@
         "redirect_document_id": true
     },
     {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1709.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1709", 
-        "redirect_document_id": true
-    },
-    {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1703.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1703", 
-        "redirect_document_id": true
-    },
-    {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1607.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1607", 
-        "redirect_document_id": true
-    },
-    {   
-        "source_path": "customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1511.md", 
-        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-previous-windows10-builds#changed-answer-file-settings-for-windows-10-for-desktop-editions-build-1511", 
-    },
-    {
         "source_path": "manufacture/desktop/settings-for-automating-oobe.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/automate-oobe", 
         "redirect_document_id": true

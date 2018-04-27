@@ -1,11 +1,11 @@
 ---
-author: themar
+author: Justinha
 Description: Preinstall Apps Using DISM
 ms.assetid: 707607d6-eb3a-4a5b-b52d-4d465d82f69d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Preinstall Apps Using DISM
 ms.author: themar
-ms.date: 04/25/2018
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,85 +14,86 @@ ms.technology: windows-oem
 # Preinstall Apps Using DISM
 
 
-> [!Note]
-> Interested in preinstalling Microsoft Store apps, but you aren’t an OEM? For information about sideloading apps for organizations, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
+Interested in preinstalling Microsoft Store apps, but you aren’t an OEM? For information about sideloading apps for organizations, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
-This topic how to preinstalling apps as part of your Windows image.
+To pre-install Microsoft Store apps in your images, you’ll need to use the Windows Assessment and Deployment Kit (Windows ADK). This section explains the steps involved in preinstalling apps as part of your images.
 
 ## <span id="BKMK_WorkWithAppPackages"></span><span id="bkmk_workwithapppackages"></span><span id="BKMK_WORKWITHAPPPACKAGES"></span>Work with app packages
 
 
-Use DISM to offline provisioning an app into an image. You can use DISM from the Command Prompt, or the DISM cmdlets in Windows PowerShell.
+For offline provisioning of an app into an image, you can use either the Dism.exe tool or the DISM cmdlets in Windows PowerShell to add an app from a folder of unpacked files.
 
-In previous versions of Windows 10, preinstalled Universal apps and Microsoft Store apps had to be pinned to the Start menu. Windows would remove apps that were preinstalled but not pinned to the Start menu.
-
-Starting with Windows 10, version 1803, apps can be preinstalled without being pinned to the Start Menu when you use `DISM /add-provisionedappxpackage` with the `/region` option. When you preinstall an app, you can choose to leave the app out of your LayoutModification.xml and the app will successfully install without appearing as a Start Menu tile. When a list of regions is NOT specified, the app will be provisioned only if it is pinned to start layout. 
-
-
-### Extract the package files
+**To extract the package files**
 
 1.  Browse to the folder where you saved the app packages that you downloaded from the Partner Dashboard.
 2.  Right-click each .zip folder containing your app package files. Click **Extract All** and select a location to save the package file folders.
 
     The folder contains the all of the unpacked files for the package, including a main package, any dependency packages, and the license file.
 
-> [!important]
-> Don't modify the folder once you have extracted the package files. If you change, add, or remove any files in the folder, the app will fail either during installation or launch. Even browsing the folder may cause problems.
+**Important**   Do not modify the folder once you have extracted the package files. If you change, add, or remove any files in the folder, the app will fail either during installation or launch. Even browsing the folder may cause problems.
+
+ 
 
 You’ll need to use the license file from the package files to test your provisioned image. Creating your own custom data file will not allow you to accurately test an app preinstalled by an OEM.
 
 For offline provisioning of an app into an image, you can use either the Dism.exe tool or the DISM cmdlets in Windows PowerShell to add an app from a folder of unpacked files.
 
-### Preinstall a Microsoft Store-signed with DISM
+**To preinstall a Microsoft Store-signed app by using the Dism.exe tool**
 
-1.  Open the Command Prompt as administrator. 
-
-2.  Mount a Windows image for that you want to service:
+1.  Open the Deployment Tools Command Prompt, installed with the Windows ADK, with administrator privileges. From the Start screen, type **Deployment and Imaging Tools Environment**, right-click the icon, and select **Run as Administrator**.
+2.  Mount the offline image for servicing. At the command prompt, type:
 
     ```
     Dism /Mount-Image /ImageFile:c:\images\myimage.wim /Index:1 /mountdir:c:\test\offline
     ```
 
-3.  Add the app to the mounted image. Use the `/PackagePath` and `/DependencyPackagePath` options. 
-    - `Packagepath` is the path to the .appx bundle or package file
-    - `DependencyPackagePath` is the path for specifying each dependency package. You can have more than one dependency per command.
-    - **New in Windows 10, version 1803**: Use the `Region` option when adding apps. `Region` allows you to add an app without having to pin the app to the Start Menu.
+3.  Add the app to the mounted image. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Microsoft Store package. /PackagePath should specify the root folder for the extracted folders. The root folder contains the license.xml, AUMIDs.txt, and all of the package files. At the command prompt, type:
 
     ```
-    Dism /Image:c:\test\offline /Add-ProvisionedAppxPackage /PackagePath:c:\downloads\package.appxbundle /DependencyPackagePath:c:\downloads\dependency1.appx /DependencyPackagePath:c:\downloads\dependency2.appx /LicensePath=c:\downloads\package_License1.xml /region=all"
+    Dism /Image:c:\test\offline /Add-ProvisionedAppxPackage /PackagePath:c:\downloads\appxpackage /DependencyPackagePath:c:\downloads\appxpackagedependency
     ```
 
-    See [DISM app package servicing command-line options](dism-app-package--appx-or-appxbundle--servicing-command-line-options.md) for information about working with app packages, including the new /region option..
-
-4.  
-    a.  If you didn't specify `/region` when preinstalling the app, pin the app to the Start Menu with [LayoutModification.xml](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop). 
-
-    **or**
-
-    b.  If you did specify `/region` when preinstalling the app, and you want to pin the app to the Start Menu for specific regions, use the [`RequiredStartGoups Region="region1|region2"` element in LayoutModification.xml](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#requiredstartgroups) to specify the regions where you want the app to appear.
-
-5.  Save changes and unmount the image. At the command prompt, type:
+4.  Save changes and unmount the image. At the command prompt, type:
 
     ```
     Dism /Unmount-Image /mountdir:c:\test\offline /commit
     ```
 
+**To preinstall a Microsoft Store-signed app by using Windows PowerShell**
 
-> [!note]
-> Microsoft Store apps don't run in audit mode. To test your deployment, run Windows and create a new user profile. For more information about audit mode, see [Audit mode overview](audit-mode-overview.md).
+1.  Open Windows PowerShell with administrator privileges. You must be running Windows 10 or Windows 8.1 on the host PC or install a supported version of Windows PowerShell. For more information, see [How to Use DISM in Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=239927).
+2.  Mount the image. At the Windows PowerShell prompt, type:
+
+    ```
+    Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
+    ```
+
+3.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Microsoft Store package. In Windows PowerShell, type:
+
+    ```
+    Add-AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage -DependencyPackagePath c:\downloads\appxpackagedependency
+    ```
+
+4.  Save changes and dismount the image. At the Windows PowerShell prompt, type:
+
+    ```
+    Dismount-WindowsImage -Path c:\test\offline -Save
+    ```
+
+**Note**   Microsoft Store apps don't run in audit mode. To test your deployment, run Windows and create a new user profile. For more information about audit mode, see [Understanding Audit mode](http://go.microsoft.com/fwlink/p/?LinkId=311789) in the TechNet library.
 
  
 
 **Important**   If you are preinstalling a mobile broadband device app, you must insert the SIM card in the PC before you run the specialize phase of Sysprep. For more information about preinstalling a mobile broadband device app, see [Preinstall the Necessary Components for a Mobile Broadband Application Experience](#bkmk_broadband_intro).
 
-
+ 
 
 ## <span id="BKMK_UpdateOrRemovePackages"></span><span id="bkmk_updateorremovepackages"></span><span id="BKMK_UPDATEORREMOVEPACKAGES"></span>Update or remove packages
 
 
 You can remove a preinstalled app, including the license and custom data files, from a Windows image by using the DISM.exe tool or the DISM cmdlets in Windows PowerShell. You should remove the old version of the app before installing a new one.
 
-### Remove a preinstalled app by using DISM
+**To remove a preinstalled app by using the Dism.exe tool**
 
 1.  Open the Deployment Tools Command Prompt, installed with the Windows ADK, with administrator privileges. From the Start screen, type **Deployment and Imaging Tools Environment**, right-click the icon, and select **Run as Administrator**.
 2.  Mount the offline image for servicing. At the command prompt, type:
@@ -113,7 +114,10 @@ You can remove a preinstalled app, including the license and custom data files, 
     Dism /Image:c:\test\offline /Remove-ProvisionedAppxPackage /PackageName:microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp
     ```
 
-   
+    **Note**   If the app isn't registered to a user profile in the image—for example if the image is generalized and hasn't been deployed—it's removed from the image. If the Windows image has been booted and a user profile has been created, the provisioned app is registered for that user and must be removed by using the Remove-AppxPackage cmdlets after you remove the provisioning for the app.
+
+     
+
 5.  If you want to update the app, you can preinstall the updated version of the Microsoft Store-signed app. At a command prompt, type:
 
     ```
@@ -126,6 +130,42 @@ You can remove a preinstalled app, including the license and custom data files, 
     Dism /Unmount-Image /mountdir:c:\test\offline /commit
     ```
 
+**To remove a provisioned app by using Windows PowerShell**
+
+1.  Open Windows PowerShell with administrator privileges. You must be running Windows 10 or Windows 8.x on the host PC or install a supported version of Windows PowerShell. For more information, see [How to Use DISM in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=239927).
+2.  Mount the image. At the Windows PowerShell prompt, type:
+
+    ```
+    Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
+    ```
+
+3.  Find the full package name of the app you want to remove. At the Windows PowerShell prompt, type:
+
+    ```
+    Get-AppxProvisionedPackage -Path c:\test\offline
+    ```
+
+4.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to remove the app. In Windows PowerShell, type:
+
+    ```
+    Remove-AppxProvisionedPackage -Path c:\test\offline -PackageName microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp 
+    ```
+
+**Note**  If the app isn't registered to a user profile in the image—for example if the image is generalized and hasn't been deployed—it's removed from the image. If the Windows image has been booted and a user profile has been created, the provisioned app is registered for that user and must be removed by using the Remove-AppxPackage cmdlets after you remove the provisioning for the app.
+
+ 
+
+1.  If you want to update the app, you can preinstall the updated version of the Microsoft Store-signed app. At the Windows PowerShell prompt, type:
+
+    ```
+    Add- AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage
+    ```
+
+2.  Save changes and dismount the image. At the Windows PowerShell prompt, type:
+
+    ```
+    Dismount-WindowsImage -Path c:\test\offline -Save
+    ```
 
 ## <span id="BKMK_UseCustomDateFiles"></span><span id="bkmk_usecustomdatefiles"></span><span id="BKMK_USECUSTOMDATEFILES"></span>Use custom data files
 
@@ -295,3 +335,12 @@ For more info about service metadata, see [Service metadata](http://go.microsoft
     ```
     dism /Unmount-Image /mountdir: c:\test\offline /commit
     ```
+
+ 
+
+ 
+
+
+
+
+

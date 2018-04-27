@@ -12,7 +12,7 @@ ms.technology: windows-oem
 ---
 # Customize a Specific Absorption Rate (SAR) mapping table
 
-You can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configure the modem with it.
+In Windows 10, version 1709, you can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configure the modem with it.
 
 You may choose to configure the registry settings at imaging time, or run-time. If you build the registry settings into the image at image deployment time within a package, the SAR mapping table will be ready for any OS component as soon as it starts. If you use a run-time component to configure the registry settings after device bootup, you ensure that the static SAR configuration will not be changed and/or wiped out by Windows installation or upgrade, and that it stays consistent to the device and independent of OS installation.
 

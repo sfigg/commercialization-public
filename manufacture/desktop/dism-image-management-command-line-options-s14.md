@@ -5,7 +5,7 @@ ms.assetid: a6382d83-5748-4b08-9d9a-46ff576bac54
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Image Management Command-Line Options'
 ms.author: themar
-ms.date: 04/23/2018
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -304,6 +304,16 @@ Example:
 Dism /Export-Image /SourceImageFile:install.wim /SourceIndex:1 /DestinationImageFile:install2.wim
 ```
 
+## /Get-MountedImageInfo
+
+Returns a list of .ffu, .vhd, .vhdx, and .wim images that are currently mounted, as well s information about the mounted image such as whether the image is valid, read/write permissions, mount location, mounted file path, and mounted image index.
+
+Example: 
+
+```
+Dism /Get-MountedImageInfo
+```
+
 ## /Get-ImageInfo
 
 Displays information about the images that are contained in a .wim, .ffu, .vhd or .vhdx file. When used with the /Index or /Name argument, information about the specified image is displayed, which includes if an image is a WIMBoot image, if the image is Windows 8.1, see [Take Inventory of an Image or Component Using DISM](take-inventory-of-an-image-or-component-using-dism.md). The /Name argument does not apply to VHD files. You must specify /Index:1 for FFU and VHDX files.
@@ -324,17 +334,6 @@ Dism /Get-ImageInfo /ImageFile:C:\test\offline\install.wim
 Dism /Get-ImageInfo /ImageFile:C:\test\images\myimage.vhd /Index:1
 ```
 
-## /Get-MountedImageInfo
-
-Returns a list of .ffu, .vhd, .vhdx, and .wim images that are currently mounted, as well s information about the mounted image such as whether the image is valid, read/write permissions, mount location, mounted file path, and mounted image index.
-
-Example: 
-
-```
-Dism /Get-MountedImageInfo
-```
-
-
 ## /Get-WIMBootEntry
 
 Use /Get-WIMBootEntry to display WIMBoot configuration entries for the specified disk volume.
@@ -354,7 +353,6 @@ Example:
 ```
 Dism /Get-WIMBootEntry /Path:C:\
 ```
-
 
 ## /List-Image
 
@@ -439,7 +437,6 @@ Example:
 ```
 Dism /Remount-Image /MountDir:C:\test\offline
 ```
- 
 
 ## /Split-FFU
 

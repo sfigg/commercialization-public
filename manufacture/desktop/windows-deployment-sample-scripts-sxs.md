@@ -13,11 +13,14 @@ ms.technology: windows-oem
 
 # Sample scripts
 
-[Download the sample scripts used in this lab](https://go.microsoft.com/fwlink/?linkid=872894) 
+[Download the sample scripts used in this lab](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip) 
 
 Copy these scripts to the root of your storage USB drive.  Refer to this page to understand what's in the scripts.
 
-The sample scripts ZIP download includes all the scripts below:
+**To keep moving with the labs, it's OK to skip the rest of this topic**. Come back later when you want to understand what's going on or to make changes: we designed these scripts so that you can modify them to fit your needs.
+
+> [!div class="nextstepaction"]
+> [Install Windows PE](install-windows-pe-sxs.md)
 
 ## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
 
@@ -546,48 +549,250 @@ Sample **LayoutModification.xml**:
   <RequiredStartGroupsCollection>
     <RequiredStartGroups
       Region="DE|ES|FR|GB|IT|US">
-      <AppendGroup Name="Fabrikam Group 1">
-    	  <start:DesktopApplicationTile
-	        DesktopApplicationID="Microsoft.Windows.Explorer" 
-          Size="2x2" 
-          Row="0" 
+      <AppendGroup
+        Name="Fabrikam Group 1">
+        <start:Tile
+          AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
+          Size="2x2"
+          Row="0"
+          Column="0"/>
+        <start:DesktopApplicationTile
+          DesktopApplicationID="Microsoft.Windows.Explorer"
+          Size="2x2"
+          Row="0"
+          Column="2"/>
+        <start:Tile
+          AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel"
+          Size="2x2"
+          Row="0"
           Column="4"/>
       </AppendGroup>    
       <AppendGroup
         Name="Fabrikam Group 2">
-        <start:Tile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" 
-          Size="2x2" 
+        <start:Tile
+          AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader"
+          Size="2x2"
           Row="0"
           Column="0"/>
-          <!-- <start:Tile AppUserModelID="App2!App" Size="2x2" Row="2" Column="0"/>  Update the APUMID to reflect the app you installed with the region specified -->
+        <start:DesktopApplicationTile
+          DesktopApplicationID="http://www.bing.com/"
+          Size="2x2"
+          Row="0"
+          Column="2"/>
+        <start:DesktopApplicationTile
+          DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
+          Size="2x2"
+          Row="0"
+          Column="4"/>
       </AppendGroup>
     </RequiredStartGroups>
     <RequiredStartGroups>
-      <AppendGroup Name="Fabrikam Group 1">
+      <AppendGroup
+        Name="Fabrikam Group 1">
+        <start:Tile
+          AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
+          Size="2x2"
+          Row="0"
+          Column="0"/>
         <start:SecondaryTile
-          AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
-          TileID="MyWeblinkTile"
+          AppUserModelID="Microsoft.Windows.Spartan_cw5n1h2txyewy!Microsoft.Spartan.Spartan"
+          TileID="FabrikamWeblinkTile"
           Arguments="http://www.fabrikam.com"
           DisplayName="Fabrikam"
-          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
-          Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
+          Square150x150LogoUri="ms-appx:///Assets/SpartanMedium.png"
           ShowNameOnSquare150x150Logo="true"
-          ShowNameOnWide310x150Logo="false"
           BackgroundColor="#FF112233"
           Size="2x2"
           Row="0"
           Column="2"/>
-		<!-- <start:Tile AppUserModelID="App2!App" Size="2x2" Row="2" Column="0"/>  Update the APUMID to reflect the app you installed with no specific region -->
       </AppendGroup>    
     </RequiredStartGroups>
   </RequiredStartGroupsCollection> 
-  <AppendOfficeSuite/>
-  <AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>      
+  <TopMFUApps>
+    <Tile AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+  </TopMFUApps>  
 </LayoutModificationTemplate>
-
 ```
 
+## <span id="microphone_settings__speechsetting.cmd_"></span><span id="MICROPHONE_SETTINGS__SPEECHSETTING.CMD_"></span>Microphone settings (SpeechSetting.cmd)
 
+
+Use this script to tune your device’s microphone to help maximize speech accuracy for features like Cortana. To learn how to test for the appropriate values for your device, see [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009) in the Hardware WEG.
+
+### SpeechSetting.cmd
+
+```
+@echo off
+@echo.
+@echo This script will set the Device.SpeechRecognition.DefaultMicGain values.
+@echo.
+ 
+setlocal
+setlocal ENABLEDELAYEDEXPANSION
+ 
+if "%1"=="" goto :InputPrompt
+ call :tohex %1
+@echo %_DECVAL% == 0x%_HEXVAL%
+set /a Percentage=%_DECVAL%/100
+ 
+set RegPath=HKLM\Software\Microsoft\Speech_OneCore\AudioInput\MicWiz
+set RegKey=DefaultDefaultMicGain
+set RegValue=0x%_HEXVAL%
+ 
+@echo reg add %RegPath% /v %RegKey% /t REG_DWORD /d %RegValue% /f
+reg add %RegPath% /v %RegKey% /t REG_DWORD /d %RegValue% /f
+if %errorlevel% NEQ 0 echo Reg Add function failed. && goto :Error
+@echo.
+@echo Successfully set the MicGain value to %Percentage% percent.
+@echo.
+goto :end
+ 
+:ToHex
+     set _DECVAL=%1
+     set _HEXVAL=
+     set _VAL=%1
+     if %1 LSS 0 (
+         REM break the number into two parts so that we can output the
+         REM full value within the bounds of a 32 bit signed value
+         set /A _offset="-(-2147483647 - !_VAL!) + 2"
+         set /A _VAL="!_offset! / 16 + 0x7FFFFFF"
+         set /A _P="!_offset! %% 16 + 0xF"
+ 
+         if !_P! GEQ 16 (
+         set /A _VAL="!_VAL! + 1"
+         set /A _P="!_P! %% 16"
+         )
+         if !_P! LEQ 9 set _HEXVAL=!_P!!_HEXVAL!
+         if "!_P!" == "10" set _HEXVAL=A!_HEXVAL!
+         if "!_P!" == "11" set _HEXVAL=B!_HEXVAL!
+         if "!_P!" == "12" set _HEXVAL=C!_HEXVAL!
+         if "!_P!" == "13" set _HEXVAL=D!_HEXVAL!
+         if "!_P!" == "14" set _HEXVAL=E!_HEXVAL!
+         if "!_P!" == "15" set _HEXVAL=F!_HEXVAL!
+     )
+ 
+     :hexloop
+     set /A _P="%_VAL% %% 16"
+     if %_P% LEQ 9 set _HEXVAL=%_P%%_HEXVAL%
+     if "%_P%" == "10" set _HEXVAL=A%_HEXVAL%
+     if "%_P%" == "11" set _HEXVAL=B%_HEXVAL%
+     if "%_P%" == "12" set _HEXVAL=C%_HEXVAL%
+     if "%_P%" == "13" set _HEXVAL=D%_HEXVAL%
+     if "%_P%" == "14" set _HEXVAL=E%_HEXVAL%
+     if "%_P%" == "15" set _HEXVAL=F%_HEXVAL%
+     set /A _VAL="%_VAL% / 16"
+     if "%_VAL%" == "0" goto :endloop
+     goto :hexloop
+ 
+:InputPrompt
+      @echo.
+      @echo Incorrect Usage.
+      @echo.
+      @echo Please input a decimal value as a parameter.
+      @echo.
+      @echo Example:
+      @echo SpeechSetting.cmd 4200
+      @echo.
+      @echo This example sets the MicGain as 42 percent which is 0x1068.
+      @echo.
+goto :end
+ 
+:Error
+@echo.
+@echo Error occurred.
+@echo.
+goto :end
+ 
+:endloop
+     set _offset=
+     set _P=
+     set _VAL=
+goto :eof
+
+:end 
+```
+
+## <span id="Remove_Windows_apps"></span><span id="remove_windows_apps"></span><span id="REMOVE_WINDOWS_APPS"></span>Remove Windows apps
+
+
+When you add language packs to an image, you’ll need to remove and reinstall each of your Windows apps to make sure they include the language assets.
+
+Here's two scripts, one which can be used to remove the apps from an offline image, and another that can be used in audit mode to remove apps from a running image:
+
+### Remove\_apps\_in\_offline\_image.cmd
+
+This script assumes the file name is install.wim, that the script is being run from the same folder as install.wim, that the index being modified is \#1, and that there are no other Windows images in other index locations (\#2, \#3) that need to be preserved.
+
+```
+@echo off
+@rem Run this script from the same folder that includes install.wim 
+cls
+md mount
+dism /mount-image /mountdir:mount /imagefile:install.wim /index:1
+if exist appx.txt del appx.txt
+if exist applist.txt del applist.txt
+if exist appremove.cmd del appremove.cmd
+dism /image:mount /get-provisionedappxpackages > appx.txt
+findstr /c:"PackageName" appx.txt > applist.txt
+setlocal enabledelayedexpansion
+set INTEXTFILE=applist.txt
+set OUTTEXTFILE=appremove.cmd
+set SEARCHTEXT=PackageName : 
+set REPLACETEXT=dism /image:mount /remove-provisionedappxpackage /packagename:
+set OUTPUTLINE=
+
+for /f "tokens=1,* delims=¶" %%A in ( '"type %INTEXTFILE%"') do (
+SET string=%%A
+SET modified=!string:%SEARCHTEXT%=%REPLACETEXT%!
+
+echo !modified! >> %OUTTEXTFILE%
+)
+del appx.txt
+del applist.txt
+call appremove.cmd
+dism /unmount-image /mountdir:mount /commit
+echo "Check to make sure operations completed successfully. If not, press Ctrl+C."
+pause
+ren install.wim install-temp.wim
+dism /export-image /sourceimagefile:install-temp.wim /sourceindex:1 /destinationimagefile:install.wim
+del install-temp.wim
+```
+
+### Remove\_apps\_in\_audit\_mode.cmd
+
+This script assumes you’re running in audit mode on the reference PC.
+
+```
+@echo off
+@rem Use MOUNT folder in folder where script is run 
+cls
+dism /mount-image /mountdir:mount /imagefile:install.wim /index:1
+if exist appx.txt del appx.txt
+if exist applist.txt del applist.txt
+if exist appremove.cmd del appremove.cmd
+dism /image:mount /get-provisionedappxpackages > appx.txt
+findstr /c:"PackageName" appx.txt > applist.txt
+setlocal enabledelayedexpansion
+set INTEXTFILE=applist.txt
+set OUTTEXTFILE=appremove.cmd
+set SEARCHTEXT=PackageName : 
+set REPLACETEXT=dism /image:mount /remove-provisionedappxpackage /packagename:
+set OUTPUTLINE=
+
+for /f "tokens=1,* delims=¶" %%A in ( '"type %INTEXTFILE%"') do (
+SET string=%%A
+SET modified=!string:%SEARCHTEXT%=%REPLACETEXT%!
+
+echo !modified! >> %OUTTEXTFILE%
+)
+del appx.txt
+del applist.txt
+call appremove.cmd
+dism /unmount-image /mountdir:mount /commit
+ren install.wim install-temp.wim
+dism /export-image /sourceimagefile:install-temp.wim /sourceindex:1 /destinationimagefile:install.wim
+del install-temp.wim
+```
 
 ## <span id="BootToAudit"></span><span id="boottoaudit"></span><span id="BOOTTOAUDIT"></span>BootToAudit
 
@@ -602,6 +807,22 @@ Add an answer file to the Windows image in C:\\mount\\windows\\Windows\\Panther\
 <!-- BootToAudit-x64.xml -->
     <settings pass="oobeSystem">
         <component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Reseal>
+                <Mode>Audit</Mode>
+            </Reseal>
+        </component>
+    </settings>
+</unattend>
+```
+
+### BootToAudit-x86
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+<!-- BootToAudit-x86.xml -->
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <Reseal>
                 <Mode>Audit</Mode>
             </Reseal>
@@ -662,84 +883,113 @@ Reinstall Windows apps after adding a new language. You can reinstall the apps w
 ### ReinstallInboxApps-x64.cmd
 
 ```
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.BingWeather_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.BingWeather_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Advertising.Xaml.x64.10.0.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Advertising.Xaml.x86.10.0.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsAlarms_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsAlarms_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Getstarted_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Getstarted_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.BingWeather_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.BingWeather_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.GetHelp_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.GetHelp_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsCalculator_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsCalculator_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Messaging_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Messaging_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsCamera_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsCamera_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Microsoft3DViewer_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Microsoft3DViewer_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.Getstarted_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.Getstarted_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Advertising.Xaml.x64.10.0.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Advertising.Xaml.x86.10.0.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Services.Store.Engagement.x64.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Services.Store.Engagement.x86.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsMaps_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsMaps_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.Messaging_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.Messaging_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MSPaint_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MSPaint_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.Office.OneNote_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.Office.OneNote_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Office.OneNote_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Office.OneNote_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.OneConnect_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.OneConnect_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.People_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.People_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.People_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.People_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Services.Store.Engagement.x64.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Services.Store.Engagement.x86.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.Windows.Photos_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.Windows.Photos_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.SkypeApp_kzf8qxf38zg5c.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.SkypeApp_kzf8qxf38zg5c.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.StorePurchaseApp_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.StorePurchaseApp_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.StorePurchaseApp_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.StorePurchaseApp_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /add-ProvisionedAppxPackage /image:c:\mount\windows /packagepath:e:\apps\amd64\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe.appxbundle /licensepath:e:\apps\amd64\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.Advertising.Xaml.x64.10.0.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.Advertising.Xaml.x86.10.0.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.Services.Store.Engagement.x64.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.Services.Store.Engagement.x86.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Wallet_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Wallet_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.7.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WebMediaExtensions_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WebMediaExtensions_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Windows.Photos_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Windows.Photos_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.7.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.7.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.WindowsStore_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.WindowsStore_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsAlarms_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsAlarms_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.XboxApp_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.XboxApp_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsCalculator_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsCalculator_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsCamera_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsCamera_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.ZuneMusic_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.ZuneMusic_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.ZuneVideo_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.ZuneVideo_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.SkypeApp_kzf8qxf38zg5c.appxbundle /LicensePath:e:\apps\amd64\Microsoft.SkypeApp_kzf8qxf38zg5c.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsMaps_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsMaps_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.OneConnect_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.OneConnect_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x64.1.3.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.NET.Native.Runtime.x86.1.3.appx
 
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsStore_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.WindowsStore_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxApp_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxApp_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxGameOverlay_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxGameOverlay_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.ZuneMusic_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.ZuneMusic_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.ZuneVideo_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.ZuneVideo_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\microsoft.print3d_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\microsoft.print3d_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Xbox.TCUI_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.Xbox.TCUI_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Framework.x86.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x64.1.6.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.NET.Native.Runtime.x86.1.6.appx
-
-DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /package:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe.appxbundle /licenseC:\Temp\Lab\Apps\Inbox\amd64\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe.xml /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /Dependencypackage:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
 ```
 
-### Find drive letters with a script
-
-Use this script in Windows PE to identify a drive that has a folder called "Images."
+### ReinstallInboxApps-x86.cmd
 
 ```
-@echo Find a drive that has a folder titled Images.
-@for %%a in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do @if exist %%a:\Images\ set IMAGESDRIVE=%%a
-@echo The Images folder is on drive: %IMAGESDRIVE%
-@dir %IMAGESDRIVE%:\Images /w
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsAlarms_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsAlarms_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.BingWeather_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.BingWeather_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsCalculator_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsCalculator_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsCamera_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsCamera_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.Getstarted_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.Getstarted_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsMaps_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsMaps_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.Messaging_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.Messaging_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.Office.OneNote_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.Office.OneNote_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.People_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.People_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.Windows.Photos_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.Windows.Photos_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.StorePurchaseApp_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.StorePurchaseApp_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.Advertising.Xaml.x86.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.WindowsStore_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.WindowsStore_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.XboxApp_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.XboxApp_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.ZuneMusic_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.ZuneMusic_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.ZuneVideo_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.ZuneVideo_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.SkypeApp_kzf8qxf38zg5c.appxbundle /LicensePath:e:\apps\x86\Microsoft.SkypeApp_kzf8qxf38zg5c.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.OneConnect_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.OneConnect_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Framework.x86.1.3.appx /DependencyPackagePath:e:\apps\x86\Microsoft.NET.Native.Runtime.x86.1.3.appx
+
+DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\x86\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\x86\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\x86\Microsoft.VCLibs.x86.14.00.appx
 ```
+
+
+ 
