@@ -8,12 +8,15 @@ ms.assetid: 1bea22d2-6279-4d0f-8019-f8885cbdec72
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # VisualEffects
+
+> [!Important]
+> This component is deprecated.
 
 `VisualEffects` specifies additional display settings.
 
@@ -23,8 +26,8 @@ This setting has no effect on Server Core installations.
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md) | **Removed in Windows 10, version 1709**. Specifies whether font smoothing is enabled, and which type of font smoothing is enabled. |
-| [SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md) | Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected. |
+| [FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md) | **This setting has been deprecated**. Specifies whether font smoothing is enabled, and which type of font smoothing is enabled. |
+| [SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md) | **This setting has been deprecated**. Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected. |
 
 ## Valid Passes
 

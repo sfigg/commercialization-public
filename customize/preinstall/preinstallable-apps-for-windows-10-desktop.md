@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 047A9971-29C1-402A-8671-C36272EC511B
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -40,8 +40,8 @@ Once an app has been added to the Dev Center, you can request a preinstallation 
 1. Once ready the link will change to **Download**.
 1. Zip file is ready for inclusion in OS image.
 
-## <a href="" id="add-the-app-to-the-os-image-"></a>Add the app to the OS image
+## Add the app to the OS image
 
-Applications are considered Assets, which are configurable customizations that are not settings. You can add them using DISM, which is part of the Windows Assessment and Deployment Kit (ADK).
+Applications are considered Assets, which are configurable customizations that are not settings. You can add them using DISM, which is part of the Windows Assessment and Deployment Kit (ADK). In Windows 10, version 1803, you can use DISM to provision apps per region.
 
 For detailed instructions, see [Preinstall apps using DISM](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/preinstall-apps-using-dism).

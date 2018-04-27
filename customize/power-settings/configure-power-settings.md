@@ -113,7 +113,7 @@ You can use the powercfg.exe tool to control power schemes by providing the GUID
 <tbody>
 <tr class="odd">
 <td><p>[Adaptive hibernate](adaptive-hibernate.md)</p></td>
-<td><p>Adaptive hibernate supports triggers which eliminate resume to a dead battery, and provide a great modern standby experience by ensuring that the system remains in CS for as long as possible.</p></td>
+<td><p>Adaptive hibernate supports triggers which eliminate resume to a dead battery, and provide a great Modern Standby experience by ensuring that the system remains in CS for as long as possible.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Power controls](power-controls.md)</p></td>

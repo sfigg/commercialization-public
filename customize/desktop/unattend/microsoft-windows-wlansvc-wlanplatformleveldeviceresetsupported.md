@@ -16,6 +16,9 @@ ms.technology: windows-oem
 
 # WLANPlatformLevelDeviceResetSupported
 
+> [!Important]
+> This setting is deprecated in Windows 10, version 1803.
+
 
 Specifies whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run.
 

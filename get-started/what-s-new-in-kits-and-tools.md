@@ -4,12 +4,42 @@ description: What's new in Windows ADK and ADK tools
 Search.SourceType: Video
 ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # What's new in ADK kits and tools
+
+## What's new in the Windows ADK for Windows 10, version 1803
+
+### PowerView
+
+PowerView is a new tool used to visualize data from Energy Estimation Engine logs produced by [powercfg /srumutil](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options#option_srumutil), and Windows Assessment Toolkit battery life tests.
+
+### New in Windows Assessment Toolkit
+
+* Standby (S3) and Hibernate (S4) battery life workloads
+* Productivity Workload (prerequisite: install Microsoft Office 2016 before executing the test)
+* Modern Standby Performance
+
+See [Windows Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/assessments/) for guidance.
+
+### Answer file setting changes
+
+For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1803 for desktop editions](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803).
+
+To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/).
+
+### MDM: Enhanced device and PC management
+
+Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
+
+See [Mobile Device Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/) for more information.
+
+### More changes
+
+See [What's new in Windows 10](what-s-new-in-windows.md) for the latest features and changes in design, customization, manufacturing, and drivers.
 
 ## What’s new in the Windows ADK for Windows 10, version 1709
 

@@ -8,7 +8,7 @@ ms.assetid: 445b34bf-f0d4-4baf-ae4c-99f9b9fb3082
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -41,6 +41,10 @@ The topics in this section describe all of the unattended settings that can be s
 <tr class="even">
 <td><p>[Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md)</p></td>
 <td><p>Maintains a list of all available domains and servers on a network.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Microsoft-Windows-CodeIntegrity](microsoft-windows-codeintegrity.md)</p></td>
+<td><p>**New in Windows 10, version 1803**. Specifies settings for Windows 10 in S mode.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)</p></td>

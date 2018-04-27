@@ -16,7 +16,7 @@ Learn about known issues and workarounds for this release in our [WinHEC forums]
 
 ## ADK for Windows 10
 
-[Download the ADK for Windows 10](https://go.microsoft.com/fwlink/p/?linkid=859206)
+[Download the ADK for Windows 10](adk-install.md)
 
 Download the Windows ADK to install tools and documentation for OEMs and ODMs to customize Windows 10 images, assess the quality and performance of systems or components, and to deploy Windows operating systems to new computers. The Windows ADK includes Windows Configuration Designer, the Windows Assessment Toolkit, the Windows Performance Toolkit, and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10. For more information, see [What’s new in kits and tools](what-s-new-in-kits-and-tools.md).
 

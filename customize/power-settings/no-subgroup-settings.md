@@ -60,8 +60,8 @@ Settings in this subgroup do not belong to any other subgroup.
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>[Allow Wi-Fi networking during standby](no-subgroup-settings-allow-wi-fi-networking-during-standby.md)</p></td>
-<td><p>Specifies whether to allow Wi-Fi networking during standby.</p></td>
+<td><p>[Allow networking during standby](no-subgroup-settings-allow-networking-during-standby.md)</p></td>
+<td><p>Specifies whether to allow networking during standby.</p></td>
 </tr>
 </tbody>
 </table>
