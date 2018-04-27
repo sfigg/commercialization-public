@@ -19,14 +19,14 @@ By default, the ADK is installed using an online installer and GUI. If you have 
 
 ## Download the latest Windows ADK
 
-Download the Windows ADK for Windows 10, version 1803
+**Download the Windows ADK for Windows 10, version 1803** (need link)
 
 The latest version of the Windows ADK includes:
 
 * The Windows Assessment Toolkit and the Windows Performance Toolkit to assess the quality and performance of systems or components.
 * Deployment tools such as WinPE, Sysprep, DISM and other tools that you can use to customize and deploy Windows 10 images.
 
-See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more about the Windows ADK for Windows 10, version 1709.
+See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more about the Windows ADK for Windows 10, version 1803.
 
 ## Other ADK downloads
 
