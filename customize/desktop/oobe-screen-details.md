@@ -16,9 +16,10 @@ This topic describes some of the screens users will see as they progress through
 
 The following screens are described below:
 
-1. [Connect users to the network](#connect-users-to-the-network)
-1. [Create security questions for this account](#create-security-questions-for-this-account)
-1. [Set up Office](#set-up-office)
+* [Cloud service pages](#cloud-service-pages)
+* [Connect users to the network](#connect-users-to-the-network)
+* [Create security questions for this account](#create-security-questions-for-this-account) (new in Windows 10, version 1803)
+* [Set up Office](#set-up-office)
 
 ## Cloud service pages
 

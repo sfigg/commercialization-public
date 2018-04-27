@@ -40,9 +40,9 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Save files to OneDrive**. This is a cloud service page.
 1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial. This is a cloud service page.
 1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen. This is a cloud service page.
-1. **Privacy settings**
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
+1. **Privacy settings**
 
 > [!Note]
 > Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.
@@ -64,14 +64,9 @@ The following topics describe OOBE customization considerations.
 | [OOBE screen details](oobe-screen-details.md) | Learn about the **Let's connect you to a network**, **Create security questions**, and **Payment information** screens in OOBE. Although these screens aren't customizable, they are described here to provide insight to the user experience during OOBE. |
 | [Windows Updates during OOBE](windows-updates-during-oobe.md) | Learn how both critical and non-critical Windows updates can download during a user's Out of Box Experience.  |
 | [OEM HID pairing](oem-hid-pairing.md)                 | On PCs that ship with an unpaired wireless mouse and keyboard, you can customize the HID pairing screens shown to the customer during the first-run experience in OOBE. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
-<<<<<<< HEAD
-| [OEM license terms](oem-license.md)                   | Add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
-| [OEM registration pages](oem-registration-pages.md)   | Display and customize OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
-=======
 | [OEM license terms](oem-license.md)                   | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |
 | [OEM registration pages](oem-registration-pages.md)   | You can display OEM registration screens during OOBE to encourage customers to provide you with their information. This enables you to provide them with a more personalized experience and information. |
 | [Automate OOBE](automate-oobe.md)                     | Use Unattend settings to hide certain pages that appear in OOBE.  |
->>>>>>> 2265d1b806bdbb99c79ba3836f80ffdcbd6ce6f8
 
 ## Related topics
 
