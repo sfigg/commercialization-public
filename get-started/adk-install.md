@@ -13,8 +13,6 @@ ms.technology: windows-oem
 
 The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need to customize Windows images for large-scale deployment, and to test the quality and performance of your system, its added components, and the applications running on it. The latest version of this kit is available for download below.
 
-Windows Insiders can also [get the Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK).
-
 By default, the ADK is installed using an online installer and GUI. If you have a scenario where you cannot use the online ADK installer with GUI, see [Install the ADK offline](adk-offline-install.md).
 
 ## Download the latest Windows ADK
@@ -38,6 +36,7 @@ See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more abo
 | [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005) | The Windows ADK for Windows 8.1 Update includes new OEM-specific tools to reduce the amount of space Windows uses on solid state storage devices. [Learn more](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)). |
 | [Windows 10 IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/p/?LinkId=735028) | The IoT Core ADK Add-Ons include OEM-specific tools to help you create images for your devices with Windows apps, BSPs, drivers, and other chosen features. [Learn more](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons). |
 | [Windows OEM HAL Extension Test Cert 2017](https://go.microsoft.com/fwlink/?linkid=872294) | To use the Windows ADK to work with HAL Extensions, download and install the updated Windows OEM HAL Extension Test Cert 2017 (TEST ONLY) certificate. [Learn more](https://support.microsoft.com/help/4131991). |
+| [Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [Learn more](https://www.microsoft.com/software-download/windowsinsiderpreviewADK).    |
 
 For older versions of Windows:
 
