@@ -19,7 +19,7 @@ By default, the ADK is installed using an online installer and GUI. If you have 
 
 ## Download the latest Windows ADK
 
-**Download the Windows ADK for Windows 10, version 1803** (need link)
+[Download the Windows ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=866409)
 
 The latest version of the Windows ADK includes:
 
