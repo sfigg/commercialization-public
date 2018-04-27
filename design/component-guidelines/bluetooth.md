@@ -16,19 +16,21 @@ ms.technology: windows-oem
 
 ## Features and Recommendations
 
-This topic provides a list of features and recommendations for Bluetooth in Windows 10. For power-efficient support for Bluetooth LE beacons and related scenarios, we recommend that OEMs use Bluetooth components capable of Hardware Offload and able to support the [Microsoft-defined Host Controller Interface (HCI) extension](https://msdn.microsoft.com/library/windows/hardware/dn917903.aspx).
+This topic provides a list of features and recommendations for Bluetooth in Windows 10. For power-efficient support for Bluetooth LE beacons and related scenarios, we recommend that OEMs use Bluetooth components capable of Hardware Offload and able to support the [Microsoft-defined Host Controller Interface (HCI) extension](https://docs.microsoft.com/en-us/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events).
 
 Additional features that were added after Windows 10, version 1507 are marked with their corresponding release number.
 
 
 ### QD IDs
 
-| QD ID                                                  | Name                                                                   | Product type      | Date         |
-|--------------------------------------------------------|------------------------------------------------------------------------|-------------------|--------------|
-| [72550](http://go.microsoft.com/fwlink/?LinkId=823549) | Windows 10 Mobile                                                      | Profile Subsystem | 31-July-2015 |
-| [70587](http://go.microsoft.com/fwlink/?LinkId=823550) | Windows 10 for Desktop editions (Home, Pro, Enterprise, and Education) | Host Subsystem    | 14-July-2015 |
-| [84637](http://go.microsoft.com/fwlink/?LinkId=823551) | Windows 10 Mobile updated AVRCP                                        | Profile Subsystem | 17-June-2016 |
-| [94254](http://go.microsoft.com/fwlink/?LinkId=848229) | Windows 10 Creators Update                                             | Host Subsystem    | 14-March-2017 |
+| QD ID                                                             | Name                                                                   | Product type      | Date          |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------- | ------------- |
+| [72550](http://go.microsoft.com/fwlink/?LinkId=823549)            | Windows 10 Mobile                                                      | Profile Subsystem | 31-July-2015  |
+| [70587](http://go.microsoft.com/fwlink/?LinkId=823550)            | Windows 10 for Desktop editions (Home, Pro, Enterprise, and Education) | Host Subsystem    | 14-July-2015  |
+| [84637](http://go.microsoft.com/fwlink/?LinkId=823551)            | Windows 10 Mobile updated AVRCP                                        | Profile Subsystem | 17-June-2016  |
+| [94254](http://go.microsoft.com/fwlink/?LinkId=848229)            | Windows 10 Creators Update                                             | Host Subsystem    | 14-March-2017 |
+| [106476](https://launchstudio.bluetooth.com/ListingDetails/52740) | Windows 10 Version 1803                                                | Host Subsystem    | 10-April-2018 |
+
 
  
 
@@ -81,6 +83,7 @@ Additional features that were added after Windows 10, version 1507 are marked w
     -   (1703) Support for [Call Control APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for Desktop editions.
 
     -   (1703) Support for GATT Server, Bluetooth LE Peripheral role and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
+    -   (1803) Support for Swift-Pair. See [Bluetooth Swift Pair](bluetooth-swift-pair.md)
 
 ### Bluetooth features list by edition
 
@@ -181,6 +184,11 @@ The following table provides a summary of the Bluetooth features in the Windows�
 <td>Yes</td>
 <td>Yes</td>
 </tr>
+<tr class="odd">
+<td>Support for Swift Pair</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
 </tbody>
 </table>
 
@@ -211,7 +219,7 @@ If implemented, Bluetooth controllers must support the Bluetooth 4.0+LE specific
 The following table summarizes the supported peripheral buses and driver support.
 
 | Bus (HCI) | Driver support | SCO support                                   |
-|-----------|----------------|-----------------------------------------------|
+| --------- | -------------- | --------------------------------------------- |
 | Non-USB   | WDK sample     | Sideband I2S/PCM connection only (HCI bypass) |
 | USB       | In-box         | In-band (SCO over HCI)                        |
 

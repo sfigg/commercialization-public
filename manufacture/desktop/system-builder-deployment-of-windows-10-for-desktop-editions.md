@@ -1,9 +1,9 @@
 ---
 title: System builder deployment of Windows 10 for desktop editions
-author: Justinha
+author: themar
 description: Get step-by-step guidance for system builders to deploy Windows 10 to desktop computers, laptops, and 2-in-1s.   
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -12,8 +12,6 @@ ms.technology: windows-oem
 # System builder deployment of Windows 10 for desktop editions 
 
 You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). 
-
-If you're a system builder, you can also use the [Express Deployment Tool](https://dpcenter.microsoft.com/en/Windows/Build/dp-express-deployment-tool-windows-10) (EDT) to build a custom Windows deployment. The EDT simplifies the process of installing and configuring Windows for a consistent brand and customized end-user experience. 
 
 ## Prepare your lab environment
 
@@ -68,7 +66,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 
 ### Product deployment
 
--   Office Single Image v16.3 OPK preloaded
+-   Office Single Image v16.5 OPK preloaded
 
 ### Image customization
 
@@ -85,7 +83,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 <a name="create-a-usb-drive-that-can-boot-to-winpe"></a>
 ## Create a USB drive that can boot to WinPE
 
-You must use the matching version of Windows ADK for the images being customized. For example, if you're building an image for Windows 10, version 1703, use the Windows ADK for Windows 10, version 1703.
+You must use the matching version of Windows ADK for the images being customized. For example, if you're building an image for Windows 10, version 1803, use the Windows ADK for Windows 10, version 1803.
 For more details about the Windows ADK, see the [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx).
 
 Visit [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) to download the ADK.
@@ -506,7 +504,7 @@ Where E:\ is USB-B.
 4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). 
 
     ```
-    E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
+    E:\Deployment\applyimage.bat E:\Images\ModelSpecificImage.wim
     ```
 
     Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
@@ -526,78 +524,59 @@ Where E:\ is USB-B.
 Important: Connecting the computer to internet is not recommended during manufacturing stages. We don't recommend getting updates from Windows Update in audit mode, as it will likely generate errors when you generalize + sysprep the machine from audit mode.
 
 
-### Preload Microsoft Office 2016
+### Add Office apps to your image
 
-This guide provides information for licensed original equipment manufacturers (OEMs) about how to use the Office Deployment Tool to preinstall Office 2016 on to devices that are running the Windows operating system.
+To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPackage` option. This option also requires the following information for each app you add:
+-   `/PackagePath`: This is only used to specify the path to the .appxbundle file for the shared code package.  
+-   `/OptionalPackagePath`: This is used to specify the path to the .appxbundle file for an individual app, such as Word or Excel.  
+-   `/LicensePath`: This is used to specify the path to the _License1.xml file for an individual app. This is needed for both the shared package and each of the optional app packages. 
 
-Note: This guide doesn’t cover the PIPC scenarios for OEMs in Japan. 
+1. Extract the Office 16.5 OPK to C:\temp\lab\apps\.
 
-#### Prepare Office files on Technician PC
-
-Obtain Office Deployment Tool from from X21-32422 Office 2016 Deployment Tool for OEM OPK v16.3.
-
-1.  Mount X21-32422 Office 2016 v16 Deployment Tool for OEM OPK v16.3\Software - DVD\X21-32464 SW DVD5 Office v16.3 Deployment Tool for OEM\X21-32464.img.
-2.	Copy files from mounted the drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.
-3.	Double click e:\Officev16\officedeploymenttool.exe.
-4.	Provide folder path to extract files E:\Officev16.
-
-    Setup.exe and configuration.xml are extracted to E:\Officev16.
-
-    ![Setup and configuration.xml](Images/setup-and-configuation.png)
-    
-    Obtain Office v16 in the desired language; this sample uses Engish X21-05414 Office 2016 v16 32-BIT X64 English OPK.
-    
-5. Copy the folder Office from mounted drive X21-32392 Office v16.3 English OPK\Software – DVD\X21-32434 SW DVD5 Office Pro 2016 32 64 English C2ROPK Pro HS HB OEM v16.3\ X21-32434.img to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.
-
-    ![Office folder](Images/office-folder.png)
-    
-    [Optional] If you applied a language interface pack, you may want to add the language interface pack for Office 2016 as well. The below samples will show with the Language interface pack applied.    
-
-6. Notepad E:\Officev16\ConfigureO365Home.xml
-
-7. Add language ID and verify SourcePath as in the following screenshot.
-
-    ![Language ID](Images/language-id.png)
-    
-8. Close and save ConfigureO365Home.xml.
-
-9. Open an elevated command prompt as administrator.
-
-10. From E:\Officev16, type and run setup.exe /download ConfigureO365Home.xml:
-    ```
-    CD E:\Officev16
-    Setup.exe /download ConfigureO365Home.xml
-    ```   
-    This will download the language packs for German and Japanese.
-    
-11. Type and run echo %errorlevel% and verify return code is 0.
-
-12. Unplug USB-B from the technician computer. 
-
-#### Install Office 2016 on Reference PC
-
-1.  Plug USB-B into the reference computer, which is in Audit mode.
-2.	Find the drive letter for USB-B; for this example USB-B is E:\.
-3.	Notepad ConfigureO365Home.xml.
-4.	Configure the SourcePath to point to USB-B E:\Officev16.
-
-    ![Configure the source path](Images/configure-source-path.png)
-    
-    Note: the only Product ID that needs to be specified in the configuration.xml file is O365HomePremRetail. If the user enters a key for another product, such as for Office Home & Student 2016, then Office will automatically be configured as the product associated with that key.
-    
-5.	Close and Save ConfigureO365Home.xml.
-6.	Open a command prompt and navigate to d:\Officev16.
-7.  Type:
+2. Use DISM to add all the Office apps to an offline image. The following example assumes the appxbundle and license xml files are in subdirectories on _USB-B_ (D:). The example also excludes the /region switch because we want Office to appear in both the All Apps list, and as a Start Menu tile.
 
     ```
-    Setup.exe /configure ConfigureO365Home.xml
+    DISM /online /Add-ProvisionedAppxPackage /PackagePath="C:\temp\lab\apps\Office Apps\shared.PreinstallKit\shared.appxbundle" /OptionalPackagePath="C:\temp\lab\apps\Office Apps\excel.PreinstallKit\excel.appxbundle" /OptionalPackagePath="C:\temp\lab\apps\Office Apps\powerpoint.PreinstallKit\powerpoint.appxbundle" /OptionalPackagePath="C:\temp\lab\apps\Office Apps\word.PreinstallKit\word.appxbundle" /OptionalPackagePath="C:\temp\lab\apps\Office Apps\outlook.PreinstallKit\outlook.appxbundle" /OptionalPackagePath="C:\temp\lab\apps\Office Apps\publisher.PreinstallKit\publisher.appxbundle" /OptionalPackagePath="C:\temp\lab\apps\Office Apps\access.PreinstallKit\access.appxbundle" /LicensePath="C:\temp\lab\apps\Office Apps\shared.PreinstallKit\shared_license1.xml" /LicensePath="C:\temp\lab\apps\Office Apps\excel.PreinstallKit\excel_license1.xml" /LicensePath="C:\temp\lab\apps\Office Apps\powerpoint.PreinstallKit\powerpoint_license1.xml" /LicensePath="C:\temp\lab\apps\Office Apps\word.PreinstallKit\word_license1.xml" /LicensePath="C:\temp\lab\apps\Office Apps\outlook.PreinstallKit\outlook_license1.xml" /LicensePath="C:\temp\lab\apps\Office Apps\publisher.PreinstallKit\publisher_license1.xml" /LicensePath="C:\temp\lab\apps\Office Apps\access.PreinstallKit\access_License1.xml"
     ```
+
+    > [!tip]
+    > You need to specify both an appxbundle and a license package for the shared package, as well as for each individual app that you want to install. 
+    
+3. Verify Office was installed:
+
+    ```
+    Dism /Image:"C:\mount\windows" /Get-ProvisionedAppxPackages
+    ```
+    where C is the drive letter of the drive that contains the image.
+
+    Review the resulting list of packages and verify that the list contains the Office Desktop Bridge apps, such as:
+
+    ```
+    ...
+    Displayname : Microsoft.Office.Desktop.Access
+    Version : 16000.8528.2136.0
+    Architechture : neutral
+    ResourceID : ~
+    PackageName : Microsoft.Office.Desktop.Access_16000.8528.2136.0_neutral_~_8wekyb3d8bbwe
+    Regions : None
+
+    Displayname : Microsoft.Office.Desktop.Excel
+    Version : 16000.8528.2136.0
+    Architechture : neutral
+    ResourceID : ~
+    PackageName : Microsoft.Office.Desktop.Excel_16000.8528.2136.0_neutral_~_8wekyb3d8bbwe
+    Regions : None
+    ...
+    ```
+
+    To have the apps appear on the Start screen, follow the steps in the next section: Configuring Start tiles and taskbar pins.
+
+    To complete the Office install, you’ll need to unmount the image and commit your changes, which we'll do this after we’ve completed all customizations at the end of this lab.
 
 #### Pin Office tiles to the Start menu
 
-You must pin the Office tiles to the Start menu, otherwise Windows will remove the Office files during OOBE boot phase.
+We'll pin the Office tiles to the Start menu so Windows won't remove the Office files during OOBE.
 
-Note: You must be using at least version Windows 10, version 1607.
 
 1. Open a command prompt and type:
 
@@ -605,11 +584,12 @@ Note: You must be using at least version Windows 10, version 1607.
     notepad C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml.
     ```
 
-2. Add &lt;AppendOfficeSuiteChoice Choice="Desktop2016" /&gt; to layoutmodification as you see highlighted in the following example:
+2. Add the following to layoutmodification to pin the Office apps to your Start Menu:
 
-    ![Layout Modification](Images/layoutmodification.png)
-
-    Note: The Choice attribute is new. This allows different versions of Office to be pinned to the Start screen at the same time. For now, Desktop2016 is the only valid value. Other values will be available in the future.
+    ```
+    <AppendOfficeSuite/>
+    <AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>
+    ```
 
 3. Close and save layoutmodification.xml.
 
@@ -621,11 +601,8 @@ Note: You must be using at least version Windows 10, version 1607.
     copy C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml c:\recovery\OEM   
     ```
 
-    Once the machine is booted to desktop after going through OOBE, the Start menu will have these three tiles appended as shown in the following diagram: 
+    Once the machine is booted to desktop after going through OOBE, the Start menu will have the Office tiles added to the Start Menu.
     
-    ![Office tiles pinned to the Start menu](Images/office-tiles-pinned-to-start-menu.png)
-    
-<a name="prepare-the-system-for-recovery-with-push-button-reset"></a>
 ## Prepare the system for Push Button Reset
 
 This section provides guidance for setting up the recovery environment for Push Button Reset (PBR) scenarios.
@@ -786,15 +763,14 @@ Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
 
 ## Deploy the image 
 
-Use the deployment script to layout the partitions on the device and apply the image. The walkthrough-deploy.bat in USB-B\deployment folder will partition the device based on device mode.
+Use the deployment script to layout the partitions on the device and apply the image. The applyimage.bat in USB-B\deployment folder will partition the device based on device mode.
 
 **Important: The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during the life of the device.**
 
-In Windows 10 Version 1703, we are changing our recommendation to have the WinRE partition placed after the OS partition. This allows future growth of the WinRE partition during updates. Today with the WinRE partition at the front of the disk, the size of it can never be changed, making it difficult to update WinRE when needed. We will continue to support having the WinRE partition located in different parts of the disk, but we encouraging you to follow the new recommendation.
 
 Run the following command to deploy your image to the reference PC:
 ```    
-E:\Deployment\walkthrough-deploy.bat E:\Images\modelspecificimage.wim
+E:\Deployment\applyimage.bat E:\Images\modelspecificimage.wim
 ```
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
@@ -823,7 +799,7 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
     1. You can manufacture those devices by first booting in WinPE - inserting USB-A. 
     2. Then insert USB-B where final manufacturing image is contained. 
-    3. Run Walktrough-Deploy script to apply the image. 
+    3. Run the applyimage.bat script to apply the image. 
     4. After you applied the image, follow the steps in this Finalize deployment section. 
     5. Now the device is ready to be shipped with your final manufacturing image and PBR feature implemented. 
     6. Finally, replicate the same procedure with the other devices.
@@ -855,7 +831,7 @@ Before starting the deployment procedure OEM requires to download certain kits w
 | Windows 10 Default Product Keys | Default Product Keys are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cp-windows-10-build) listed under **Default product keys** tab | [Customize the answer file](#customize-the-answer-file) |
 | Language interface packs | LIPs are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-push-button-reset) |
 | Update Packages | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the related section. | [Add language interface packs](#add-language-interface-packs) |
-| Microsoft Office v16.3 | Obtain Microsoft Office v15.4 by downloading from [Device Partner Center](https://dpcenter.microsoft.com/en/Office/Build/cc-microsoft-office-v16-3-opk) | [Preload Microsoft Office single image v15.4 OPK](https://dpcenter.microsoft.com/en/Office?tag=%7b889D6CB8-8AC1-4D27-85F8-7DDE73EF3DAF%7d&mode=0#filters) |
+| Microsoft Office v16.5 | Obtain Microsoft Office v15.4 by downloading from Device Partner Center | [Preload Microsoft Office single image v16.5 OPK] |
 
 
 ## References

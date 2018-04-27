@@ -81,6 +81,10 @@ DISM replaces tools including PEImg, Intlcfg, Package Manager, and ImageX.
 <td align="left"><p>[DISM Windows Edition-Servicing Command-Line Options](dism-windows-edition-servicing-command-line-options.md)</p></td>
 <td align="left"><p>Edition-servicing commands for changing the edition of your Windows image.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>[DISM Operating System Uninstall Command-Line Options](dism-uninstallos-command-line-options.md)</p></td>
+<td align="left"><p>Commands for working with operating system uninstalls.</p></td>
+</tr>
 </tbody>
 </table>
 

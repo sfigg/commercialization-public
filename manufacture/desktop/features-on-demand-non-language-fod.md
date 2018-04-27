@@ -1,10 +1,10 @@
 ---
 author: themar
-Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This page describes non-language FODs.'
+Description: 'Features on Demand (capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This page describes non-language FODs.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Available features on demand'
 ms.author: themar
-ms.date: 12/01/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -30,6 +30,7 @@ To see available Features on Demand for languages and regions, see [Language and
 > - [OpenSSH](#openssh)
 > - [Printing](#printing)
 > - [Retail Demo Experience](#retail-demo-experience-rdx)
+> - [XPS Viewer](#xps-viewer)
 
 
 ### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
@@ -99,7 +100,7 @@ This Feature on Demand enables Mixed Reality (MR) devices to be used on a PC. If
 
 Internet Explorer Features on Demand enable preinstallation of Internet Explorer. Internet Explorer will not be enabled on a device that does not have this Feature on Demand added.
 
-**Recommendation:** Include the relevant Features on Demand on images that include Internet Explorer.
+**Recommendation:** Include this Feature on Demand on images that include Internet Explorer.
 
 | Name | Capability Name  | Install size |
 |-----------|-----------------------------------|---------- |
@@ -154,7 +155,15 @@ These Features on Demand add the retail demo package to a device, for use in ret
 | Language-neutral Retail Demo Content  | Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab |
 | Language specific Retail Demo Content | Microsoft-Windows-RetailDemo-OfflineContent-Content-*language-country*-Package.cab |
 
+### XPS Viewer
 
+This Feature on Demand allows you to read, copy, print, sign, and set permissions for XPS documents.
+
+**Recommendation:** In general, OEMs shouldn't preinstall this FOD. OEMs and IT pros can consider preinstalling this FOD when they are building a PC that will use XPS documents.
+
+| Name | Capability Name  | Install size |
+|-----------|-----------------------------------|---------- | 
+| XPS Viewer | XPS.Viewer~~~~0.0.1.0 |  16.91 MB |
 
 ## Related topics
 

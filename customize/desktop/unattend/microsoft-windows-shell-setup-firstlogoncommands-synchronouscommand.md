@@ -37,7 +37,7 @@ When you add a script using FirstLogonCommands, it will be triggered on the next
 | [RequiresUserInput](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-requiresuserinput.md) | Specifies whether the first logon command launches a dialog box that requires input from the user. This can reduce the delay of the &quot;Preparing Your Desktop&quot; screen. |
 
 > [!Note]
-> FirstLogonCommands are not supported in Windows 10 S.
+> FirstLogonCommands are not supported in Windows 10 in S mode.
 
 ## Valid Configuration Passes
 
