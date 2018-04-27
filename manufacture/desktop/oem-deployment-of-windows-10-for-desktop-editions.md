@@ -743,7 +743,7 @@ DISM.exe /Image:"C:\mount\windows" /Optimize-ProvisionedAppxPackages
 
 #### Related sets
 
-The Office apps are delivered as a set of Desktop Bridge apps that are installed and serviced together.  The main package for Office is a set of shared code and each Office app (for example, Word, Excel, and PowerPoint) is installed as an optional package. These packages are delivered as appxbundles that support all Store languages.  
+The Office apps are delivered as a set of apps that are installed and serviced together.  The main package for Office is a set of shared code and each Office app (for example, Word, Excel, and PowerPoint) is installed as an optional package. These packages are delivered as appxbundles that support all Store languages.  
 
 
 | App |	Package ID |	Files |
@@ -776,7 +776,7 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
     > You need to specify both an appxbundle and a license package for the shared package, as well as for each individual app that you want to install. 
 
     > [!note]
-    > The command for adding Office Desktop Bridge in audit mode (online instead of offline) would be the same, but replace /Image:C:\mount\windows with /online.
+    > The command for adding the Office apps in audit mode (online instead of offline) would be the same, but replace /Image:C:\mount\windows with /online.
     
     **Notes on Language Support**
 
@@ -794,7 +794,7 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
     ```
     where C is the drive letter of the drive that contains the image.
 
-    Review the resulting list of packages and verify that the list contains the Office Desktop Bridge apps, such as:
+    Review the resulting list of packages and verify that the list contains the Office apps, such as:
 
     ```
     ...
@@ -830,7 +830,7 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
 
 ### New in Windows 10, version 1803
 
-Apps can now be pinned to the All Apps list without also having to be pinned as a Start tile.  This is done through the new "region" switch (as described in the previous section).  In the previous section, we added three apps to our image:  App1, App2, and Office Desktop Bridge.  In this lab, we will omit App1 from LayoutModification.xml to ensure that App1 only appears in the All Apps list, and not also as a Start menu tile. We will also include App2 in LayoutModification.xml to demonstrate that even if the "region" switch was used when adding the app to the image, the app will still appear in the Start Menu if included in the LayoutModification.xml file.  In other words, the LayoutModification.xml file takes precedence.  
+Apps can now be pinned to the All Apps list without also having to be pinned as a Start tile.  This is done through the new "region" switch (as described in the previous section).  In the previous section, we added three apps to our image:  App1, App2, and Office.  In this lab, we will omit App1 from LayoutModification.xml to ensure that App1 only appears in the All Apps list, and not also as a Start menu tile. We will also include App2 in LayoutModification.xml to demonstrate that even if the "region" switch was used when adding the app to the image, the app will still appear in the Start Menu if included in the LayoutModification.xml file.  In other words, the LayoutModification.xml file takes precedence.  
 
 ### Start menu
 
@@ -906,7 +906,7 @@ If you specify a region-agnostic `RequiredStartGroups` (or one without the optio
         </AppendGroup>
     ```
 
-4. Add Office Desktop Bridge app Start Menu tiless.  This is a requirement for OEMs that participate in the Jumpstart program.  
+4. Add Microsoft Office Start Menu tiles.  This is a requirement for OEMs that participate in the Jumpstart program.  
 
     You can have tiles appear on the Windows 10 Start menu for Word, PowerPoint and Excel. The tiles appear in a designated area for Microsoft apps (upper left in the following diagram).  All additional apps will be accessible in the Apps list on the left.  
     
