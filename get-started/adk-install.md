@@ -28,7 +28,7 @@ See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more abo
 
 ## Other ADK downloads
 
-| ADK version                               | Description                                           |
+| ADK version and download link             | Description                                           |
 |:------------------------------------------|:------------------------------------------------------|
 | [Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)  | You must use Windows 10, version 1709, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1709. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1709). |
 | [Windows ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | You must use Windows 10, version 1703, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1703. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703).  |
