@@ -25,26 +25,28 @@ As the next evolution of pairing, users no longer need to navigate the Settings 
 
 ![Swift Pair <>](../images/notificationpairsmall.gif)
 
-If at any time, a user wishes to turn Swift Pair on or off, they can do so in the “Bluetooth & other devices” page. Enterprises will also be able to control this feature through the [Bluetooth\AllowPromptedProximalConnections](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-bluetooth) in the Policy CSP and with any existing Mobile Device Management solution.
+If at any time, a user wishes to turn Swift Pair on or off, they can do so in the “Bluetooth & other devices” page. Enterprises will also be able to control this feature through the [Bluetooth\AllowPromptedProximalConnections](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth) in the Policy CSP and with any existing Mobile Device Management solution.
 
 ## Building a Swift Pair peripheral
 
 There are two sets of requirements to ensure your peripheral works with Swift Pair. 
 - The peripheral’s behavior
 - The structure and values in a Microsoft defined vendor advertisement section.
--  
+
 These are the set of requirements:
 
 ## Peripheral Behavior (Required)
 
-Discovery of Swift Pair peripherals happens over the Bluetooth Low Energy (LE) protocol and **requires the use of LE advertisements**. Windows uses this advertisement to identify a peripheral as Swift Pair capable. This advertisement must contain **one of the Microsoft defined vendor sections** (shown in Fig 2-4) **to the advertisement while in pairing mode**. 
+Discovery of Swift Pair peripherals happens over the Bluetooth Low Energy (LE) protocol and **requires the use of LE advertisements**. Windows uses this advertisement to identify a peripheral as Swift Pair capable. This advertisement must contain **one of the Microsoft defined vendor sections** (shown in Fig 2-4) **in the advertisement while in pairing mode**.
 
 In order for Windows to identify a peripheral shortly after it enters pairing mode, **peripherals should beacon for Swift Pair at a faster cadence than normal for quick discovery**. The faster a peripheral advertises; the less time Windows needs to listen. This helps with Bluetooth & Wi-Fi coexistence on the same radio. After a short period of time, the peripheral can fall back to a lower but consistent advertising cadence.
 
 - For quickest discovery: Beacon consistently every 30 ms for >= 30 seconds then fall back to a normal cadence.
-- For normal cadence: Beacon consistently every 100 ms or 152.5 ms during a Swift Pair session
-To keep this experience predictable for our users, the user should not have to try to pair to a peripheral that is no longer available. **Remove the vendor section >30 seconds before exiting pairing mode**. 
-If the peripheral is out of available pairings, **remove the one with the longest time since last connect first**. 
+- For normal cadence: Beacon consistently every 100 ms or 152.5 ms during a Swift Pair session.
+- To keep this experience predictable for our users, the user should not have to try to pair to a peripheral that is no longer available. **Remove the vendor section >30 seconds before exiting pairing mode**.
+
+If the peripheral is out of available pairings, **remove the one with the longest time since last connect first**.
+
 
 ## Peripheral info on the Swift Pair notification
 Users should easily identify the peripheral they are trying to pair to. Peripherals should define **either a defined class of device (CoD) or the peripheral name**, which must be **included in the same advertisement** as the Swift Pair payload. Windows does not active scan due to both power and privacy concerns. As a result Swift Pair **peripheral information cannot be stored in a scan response**.
@@ -106,4 +108,31 @@ BR/EDR Address
 - If a peripheral will pair over BR/EDR only, the BR/EDR address in **little endian** format must be included in the main advertising packet 
 - Supporting Secure Connections and pairing over both Bluetooth LE and BR/EDR removes this requirement
 
+## Frequently Asked Questions
+**I put my Swift Pair-enabled peripheral in pairing mode, and nothing happens. What do I need to do?**
 
+In Windows, version 1803, you must enable Swift Pair. On **Settings**, search for **Bluetooth & other devices**. Check the **Show notifications to connect using Swift Pair** box.
+
+![Figure 5: **Show notifications to connect using Swift Pair** box](../images/swift-notifiy.png)
+
+**Does this mean the similar experiences on other platforms will work on Windows?**
+
+At this time, only certain enabled peripherals can trigger Swift Pair. Check back for updates.
+
+**I can’t get a notification to show, and I don’t have an option in Settings. What is going on?**
+
+If the **Show notifications to connect using Swift Pair** option is not shown, then the Bluetooth radio in your Windows device does not have the required hardware support. Please let us know through the [Feedback Hub](https://aka.ms/BTFeedbackHubPairingConnecting).
+
+**How does Windows detect if a peripheral is within range?**
+
+Windows, version 1803 also introduces a Bluetooth proximity service that reads the signal strength from a peripheral to determine its proximity to Windows. When the peripheral is considered within range, the notification is shown in **Settings**.
+
+Because the signal strength varies between hosts and peripherals, we are always looking to increase the precision of the service to make the proximity detection more accurate. This feature is based on the the reserved Received Signal Strength (RSSI) byte in the payload.
+
+**How does Windows listen for these peripherals without draining power?**
+
+The pattern that Windows looks for is offloaded to the radio through [Hardware Offload](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events). The offloaded pattern listens for a match to the vendor section without waking up the system or active scanning. If the radio does not support [Hardware Offload](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events), then the feature is not supported, and this is represented by not showing **Show notifications to connect using Swift Pair** in **Settings**.
+
+**How does Windows detect and display Bluetooth peripheral information?**
+
+The name and the type of peripheral must be in the same advertisement that has the vendor section. Windows does not active scan for this feature, and all peripheral information must be included in this single advertisement. If the friendly name section can’t fit in this advertisement, a fallback mechanism is provided at the end of the payload to show the peripheral name.
