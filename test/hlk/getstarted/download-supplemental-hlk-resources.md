@@ -29,27 +29,31 @@ When there is a problem in either a Windows HLK test or in the operating system 
 
 ## Additional Windows HLK supplemental test content
 
-Additional supplemental content downloads are required for some tests related to graphics, media, and mean time between failures (MTBF). Download these files to complete Windows HLK testing in these areas. 
+Supplemental test content downloads are required for some tests related to graphics, media, and mean time between failures (MTBF). Download these files to complete Windows HLK testing in these areas. 
 
 Required downloads for tests that use supplemental content: 
 
+#### Media
+- [HLK_DXVA.iso (Windows 10, version 1803)](https://go.microsoft.com/fwlink/?linkid=873023) 
 - [HLK_DXVA.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823112) 
-- [HLK_HMFT.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823113) 
-- [HLK_PERF.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823114) 
-- [HLK_MOBILE.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823115) 
+- [HLK_HMFT.iso (Windows 10, version 1607, 1703, 1709, and 1803)](https://go.microsoft.com/fwlink/p/?LinkId=823113) 
+- [HLK_PERF.iso (Windows 10, version 1607, 1703, 1709, and 1803)](https://go.microsoft.com/fwlink/p/?LinkId=823114) 
+
+#### Graphics
+- [HLK_GRFX_FOD.zip (Windows 10, version 1803)](https://go.microsoft.com/fwlink/p/?LinkId=873017)
 - [HLK_GRFX_FOD.zip (Windows 10, version 1709)](https://go.microsoft.com/fwlink/p/?LinkId=859270) 
 - [HLK_GRFX_FOD.zip (Windows 10, version 1703)](https://go.microsoft.com/fwlink/p/?linkid=845559) 
 - [HLK_GRFX_FOD.zip (Windows 10, version 1607)](https://go.microsoft.com/fwlink/p/?linkid=842373)
 
-### Supplemental Content for Windows HLK Private Cloud Simulator (PCS) Tests 
+#### Mobile
+- [HLK_MOBILE.iso (Windows 10, version 1607, 1703, 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823115) 
 
-This supplemental content package is required to pass the Device and Solutions PCS Tests. 
+#### Private Cloud Simulator (PCS) 
 
-- [Download PCSFiles.vhd (March 2017)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
-
-On the server that has the Windows HLK controller installed, place PCSFiles.vhd at the following location:
+This supplemental content package is required to pass the Device and Solutions PCS Tests. On the server that has the Windows HLK controller installed, place PCSFiles.vhd at the following location:
 
 ```C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64```
+- [Download PCSFiles.vhd (March 2017)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
 
 
  

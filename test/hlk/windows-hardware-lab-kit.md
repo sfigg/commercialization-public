@@ -23,6 +23,7 @@ If you’re developing for Windows 10, you need the latest Windows HLK. This kit
 
 |To certify... | Download...|
 |-----------------|------------|
+| Windows 10, version 1803    |  [Windows HLK, version 1803](https://go.microsoft.com/fwlink/p/?LinkId=873010) |
 | Windows 10, version 1709    |  [Windows HLK, version 1709](https://go.microsoft.com/fwlink/p/?LinkId=859231) |
 | Windows 10, version 1703<br>Windows 10, version 1607| [Windows HLK, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=733613)|
 | Windows Server 2016 |[Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)|
@@ -54,33 +55,37 @@ When there is a problem in either a Windows HLK test or in the operating system 
 
 ## Download Windows HLK Supplemental Test Content
 
-### Supplemental Content for Graphics, Media, and Mean Time Between Failures (MTBF) Tests
+### Supplemental Content for Media, Graphics, Mean Time Between Failures (MTBF), and Private Cloud Simulator Tests
 
 Supplemental test content downloads are required for some tests related to graphics, media, and mean time between failures (MTBF). Download these files to complete Windows HLK testing in these areas. 
 
 Required downloads for tests that use supplemental content: 
 
+#### Media
+- [HLK_DXVA.iso (Windows 10, version 1803)](https://go.microsoft.com/fwlink/?linkid=873023) 
 - [HLK_DXVA.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823112) 
-- [HLK_HMFT.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823113) 
-- [HLK_PERF.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823114) 
-- [HLK_MOBILE.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823115) 
+- [HLK_HMFT.iso (Windows 10, version 1607, 1703, 1709, and 1803)](https://go.microsoft.com/fwlink/p/?LinkId=823113) 
+- [HLK_PERF.iso (Windows 10, version 1607, 1703, 1709, and 1803)](https://go.microsoft.com/fwlink/p/?LinkId=823114) 
+
+#### Graphics
+- [HLK_GRFX_FOD.zip (Windows 10, version 1803)](https://go.microsoft.com/fwlink/p/?LinkId=873017)
 - [HLK_GRFX_FOD.zip (Windows 10, version 1709)](https://go.microsoft.com/fwlink/p/?LinkId=859270) 
 - [HLK_GRFX_FOD.zip (Windows 10, version 1703)](https://go.microsoft.com/fwlink/p/?linkid=845559) 
 - [HLK_GRFX_FOD.zip (Windows 10, version 1607)](https://go.microsoft.com/fwlink/p/?linkid=842373)
 
-### Supplemental Content for Private Cloud Simulator (PCS) Tests 
+#### Mobile
+- [HLK_MOBILE.iso (Windows 10, version 1607, 1703, 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823115) 
 
-This supplemental content package is required to pass the Device and Solutions PCS Tests. 
+#### Private Cloud Simulator (PCS) 
 
-- [Download PCSFiles.vhd (March 2017)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
-
-On the server that has the Windows HLK controller installed, place PCSFiles.vhd at the following location:
+This supplemental content package is required to pass the Device and Solutions PCS Tests. On the server that has the Windows HLK controller installed, place PCSFiles.vhd at the following location:
 
 ```C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64```
+- [Download PCSFiles.vhd (March 2017)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
 
 ## Download HLK Offline Documentation
 
 This documentation is also available in .chm format for offline use.
 
-- [Download HLK offline documentation](https://go.microsoft.com/fwlink/?linkid=860830)
+- [Download HLK offline documentation](https://go.microsoft.com/fwlink/?linkid=873018)
 
