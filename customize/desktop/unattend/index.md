@@ -8,7 +8,7 @@ ms.assetid: 55fecacd-75e3-4b94-a4b8-b2f6313ddf74
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 10/17/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -24,12 +24,12 @@ Each Windows component includes settings that can be used to create an unattende
 Information about how to use Windows SIM is available in the [Windows System Image Manager Technical Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference).
 
 > [!Note]
-> All Unattend settings for Windows 10 are also supported in Windows 10 S, with the exception of [Microsoft-Windows-Shell-Setup-FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md).
+> All Unattend settings for Windows 10 are also supported in S mode, with the exception of [Microsoft-Windows-Shell-Setup-FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md).
 
 ## In this section
 
 | Topic                                 | Description                                                                          |
 |:--------------------------------------|:-------------------------------------------------------------------------------------|
-| [Changed answer file settings for Windows 10 for desktop editions, version 1709](changed-answer-file-settings-for-windows-10-build-1709.md) | This topic describes Windows 10, version 1709 answer-file settings that have changed since Windows 10 for desktop editions, version 1703. |
-| [Changed answer file settings for previous Windows 10 builds](changed-answer-file-settings-for-previous-windows10-builds.md) | This topic shows the historic list of changes to answer file settings for each build of Windows 10 that was released prior to build 1709.           |
+| [Changed answer file settings for Windows 10 for desktop editions, version 1803](changed-answer-file-settings-for-windows-10-build-1803.md) | This topic describes Windows 10, version 1803 answer-file settings that have changed since Windows 10 for desktop editions, version 1709. |
+| [Changed answer file settings for previous Windows 10 builds](changed-answer-file-settings-for-previous-windows10-builds.md) | This topic shows the historic list of changes to answer file settings for each build of Windows 10 that was released prior to build 1803.           |
 | [Components](components-b-unattend.md) | The topics in this section describe all of the unattended settings that can be set in Windows 10 and Windows Server 2016. To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file) |

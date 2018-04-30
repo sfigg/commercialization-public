@@ -4,7 +4,7 @@ Description: 'Windows 10 S WinPE, CI policy, OOBE, and DISM information.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows 10 S manufacturing environment'
 ms.author: themar
-ms.date: 7/27/2017
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,21 +14,20 @@ ms.technology: windows-oem
 
 ## Overview
 
-This topic covers the differences in the Windows 10 S manufacturing environment from the manufacturing environments of other versions of Windows.
+This topic covers the differences in the Windows 10 in S mode and Windows 10 S manufacturing environments from other Windows manufacturing environments.
 
 ## Code integrity policy
 
 The code integrity policy (CI) blocks the execution of unsigned or improperly signed binaries. Using unsupported binaries is only recommended when performing lab or factory image customization, or during deployment where the execution environment is either WinPE or Audit Mode.
 
 Once the CI policy is enabled on a system, it is enabled in two places:
-1. Windows 10 S, enforced at boot.
+1. Windows 10 in S mode, enforced at boot.
 2. EFI firmware policy, enforced during firmware load and OS boot.
 
 ## WinPE
 
-The Windows Preinstallation Environment (WinPE) behaves the same for Windows 10 S as it does for Windows Home or Windows Professional until the CI policy is enabled and Secure Boot is turned on. Once the policy is enabled and Secure Boot is turned on, WinPE (EFI\Boot folder) needs the CI policy (winsipolicy.p7b) to boot, or you must turn off Secure Boot.
+The Windows Preinstallation Environment (WinPE) behaves the same for Windows 10 in S mode and Windows 10 S as it does for Windows Home or Windows Professional.
 
-The winsipolicy.p7b file is in the Windows 10 S install.wim in the `Windows\Boot\EFI\` folder and should be copied to the WinPE Boot location (EFI\Boot) on the WinPE media.
 
 For more information about WinPE, see [Windows PE](winpe-intro.md).
 
@@ -48,7 +47,7 @@ See [DISM Windows edition-servicing command-line options](dism-windows-edition-s
 
 ## Audit mode
 
-Audit mode is availabe when manufacturing a Windows 10 S PC. By default, the [blocked inbox components](windows-10-s-planning.md#what-is-blocked-in-windows-10-s) are blocked in audit mode. If you need to use blocked inbox components during the manufacturing process, you can [enable manufacturing mode](windows-10-s-manufacturing-mode.md#enable-manufacturing-mode). If you enable manufacturing mode, you'll have to make sure to [disable manufacturing mode](windows-10-s-manufacturing-mode.md#remove-the-manufacturing-registry-key) prior to shipping your PC.
+Audit mode is availabe when manufacturing a Windows 10 S PC. By default, the [blocked inbox components](windows-10-s-planning.md#what-is-blocked-in-windows-10-in-s-mode) are blocked in audit mode. If you need to use blocked inbox components during the manufacturing process, you can [enable manufacturing mode](windows-10-s-manufacturing-mode.md#enable-manufacturing-mode-1). If you enable manufacturing mode, you'll have to make sure to [disable manufacturing mode](windows-10-s-manufacturing-mode.md#remove-the-manufacturing-registry-key) prior to shipping your PC.
 
 To learn more about Audit Mode, see [Audit Mode overview](audit-mode-overview.md).
 

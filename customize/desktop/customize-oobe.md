@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 12/19/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -29,19 +29,29 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Cortana welcome**
 1. **Region selection**
 1. **Keyboard selection**
-1. **Connect to a network**. After connecting to a network, critical driver updates and critical zero-day patch (ZDP) Windows updates will begin downloading in the background. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
+1. **Connect to a network**
+1. **Automatic download of critical ZDP and driver updates**. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
+1. **Get the latest from Windows**. Prior to Windows 10, version 1803, this screen was named **Your PC has an update waiting** and it appeared at the end of OOBE.
 1. **End User License Agreement (EULA)**
-1. **Sign in to, or create, a Microsoft account**
+1. **Sign in to, or create, a local account or Microsoft account (MSA)**
+1. **Create security questions for a local account**. New in Windows 10, version 1803. Only displays if the user chose to create a local account, rather than logging into their MSA, on the previous screen. See [OOBE screen details](oobe-screen-details.md) to learn more about this new screen in OOBE.
 1. **Windows Hello setup**
 1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
-1. **Save files to OneDrive**
-1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial.
-1. **Privacy settings**. In Windows 10 build 1709, the privacy settings screen includes **Learn more** links the user can click for more details about each setting.
+1. **Save files to OneDrive**. This is a cloud service page.
+1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial. This is a cloud service page.
+1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen. This is a cloud service page.
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
-1. **Your PC has an update waiting**. This page is only displayed to the user if a newer version of Windows is available than the version that shipped with the device. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
+1. **Privacy settings**
 
-You can hide certain OOBE screens using Unattend. For more information, see [OOBE Unattend component](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe).
+> [!Note]
+> Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.
+>
+> When testing OOBE, keep in mind that you may not see cloud service pages during the flow.
+
+In Windows 10, version 1803, Windows Welcome is displayed to more users than ever as soon as they complete OOBE and reach their desktop. Here's an example Windows Welcome experience:
+
+![Example Windows Welcome experience in Microsoft Edge](images/windows-welcome.png)
 
 ## In this section
 
@@ -49,9 +59,9 @@ The following topics describe OOBE customization considerations.
 
 | Topic                                     | Description                                                                        |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|
-| [OOBE.xml](oobexml.md)                                | You can use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
+| [OOBE.xml](oobexml.md)                                | Use OOBE.xml to organize text and images displayed during OOBE, and to specify settings for customizing the Windows 10 first-run experience. You can use multiple Oobe.xml files for language- and region-specific license terms and settings so that users see appropriate info as soon as they start their PCs. By specifying information in the Oobe.xml file, you help fill in some of the required information so that users are asked to do only the core tasks required to set up their PCs. |
 | [Cortana voice support](cortana-voice-support.md)     | Learn how Cortana voice walks the user through the OOBE experience, enabling the user to complete parts of OOBE by responding to spoken prompts.                       |
-| [Connect users to the network](connect-to-network.md) | Learn about the **Let's connect you to a network** screen in OOBE, which connects the user to available Wi-Fi and/or Cellular data networks. |
+| [OOBE screen details](oobe-screen-details.md) | Learn about the **Let's connect you to a network**, **Create security questions**, and **Payment information** screens in OOBE. Although these screens aren't customizable, they are described here to provide insight to the user experience during OOBE. |
 | [Windows Updates during OOBE](windows-updates-during-oobe.md) | Learn how both critical and non-critical Windows updates can download during a user's Out of Box Experience.  |
 | [OEM HID pairing](oem-hid-pairing.md)                 | On PCs that ship with an unpaired wireless mouse and keyboard, you can customize the HID pairing screens shown to the customer during the first-run experience in OOBE. If you include written instructions, you must include those instructions in every language that ships with the PC.              |
 | [OEM license terms](oem-license.md)                   | You can add your OEM license terms to the License Terms screen in the first-run experience of OOBE. |

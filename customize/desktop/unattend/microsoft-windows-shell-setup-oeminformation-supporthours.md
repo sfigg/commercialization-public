@@ -16,7 +16,7 @@ ms.technology: windows-oem
 # SupportHours
 
 > [!Important]
-> SupportHours is deprecated in Windows 10, version 1709.
+> This setting has been deprecated.
 
 `SupportHours` specifies the hours that support is available for the OEM.
 
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| *hours*                 | **Deprecated in Windows 10, version 1709**. Specifies the hours that support is available for the OEM. *Hours* is a string with a maximum length of 256 characters.                                                                          |
+| *hours*                 | **This setting has been deprecated**. Specifies the hours that support is available for the OEM. *Hours* is a string with a maximum length of 256 characters.                                                                          |
 
 This string type supports empty elements.
 

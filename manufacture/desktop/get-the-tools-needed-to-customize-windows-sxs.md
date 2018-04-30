@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Get the tools needed to customize Windows
 ms.assetid: a52b4efe-ead0-4319-ae19-799d4e9d9e7b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -127,7 +127,7 @@ Here’s how to set up your PC.
 6.  When the installation is finished, click **Close**.
 
 > [!div class="nextstepaction"]
-> [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
+> [Install Windows PE](install-windows-pe-sxs.md)
 
 
 
