@@ -177,7 +177,7 @@
 #### [Download WinPE (Windows PE)](desktop/download-winpe--windows-pe.md)
 #### [WinPE: Create Bootable media](desktop/winpe-create-usb-bootable-drive.md)
 #### [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](desktop/winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md)
-#### [WinPE: Add packages (Optional Components Reference)](desktop/winpe-add-packages--optional-components-reference.md)
+#### [WinPE Optional Components (OC) Reference](desktop/winpe-add-packages--optional-components-reference.md)
 #### [WinPE: Mount and Customize](desktop/winpe-mount-and-customize.md)
 #### [WinPE: Adding PowerShell support to Windows PE](desktop/winpe-adding-powershell-support-to-windows-pe.md)
 #### [WinPE: Boot in UEFI or legacy BIOS mode](desktop/winpe-boot-in-uefi-or-legacy-bios-mode.md)
