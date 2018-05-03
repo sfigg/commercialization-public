@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 In this step, you install Windows HLK software on the designated test server. The setup program installs the Windows HLK Controller and Studio, in addition to other resources.
 
-The test server should be preinstalled with Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
+The test server should be preinstalled with Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
 
 If you are upgrading your HLK environment to a later version, you must first uninstall the previous version of the HCK or HLK software from the test server and any connected test clients.
 

@@ -1,6 +1,11 @@
 { 
   "redirections": [ 
     {   
+        "source_path": "windows-hardware-compatibility-program-overview.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/index",
+        "redirect_document_id": true 
+    },
+    {   
         "source_path": "get-started-with-windows-10-portal.md", 
         "redirect_url": "https://docs.microsoft.com/windows-hardware/get-started/index",
         "redirect_document_id": true 
