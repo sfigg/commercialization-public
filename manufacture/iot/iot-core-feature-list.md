@@ -40,6 +40,9 @@ When creating images for your device, determine which features are required for 
 | **IOT\_ALLJOYN\_APP**           | Adds the AllJoyn application, used for Headless ZwaveAdapterAppx. |
 | **IOT\_FONTS\_CHINESE\_EXTENDED** | Adds additional Chinese fonts. This is new in Windows 10, version 1703. |
 | **IOT\_APP\_TOOLKIT** | Adds tools required for Appx installation and management                                                |
+| **IOT\_FFU\_FLASHMODE** | Adds flashing mode support so that the device can be flashed using ffutool. Currently supported for arm only. This is new in Windows 10, version 1803 |
+| **IOT\_MTP** | Adds Media transfer protocol support. See [MTP](https://docs.microsoft.com/windows/iot-core/connect-your-device/mtp). This is new in Windows 10, version 1803 |
+| **IOT\_MIRACAST\_RX_APP** | Adds Connect App that supports Miracast receive feature. Note that the underlying hw/drivers should support Miracast for this app to work. Currently supported for arm only. This is new in Windows 10, version 1803 |
 
 
 ### Settings
@@ -54,7 +57,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_SHELL\_ONSCREEN\_KEYBOARD** | Adds available on-screen keyboard. This is new in Windows 10, version 1703.                  |
 | **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703. |
 | **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver. This feature should only be used with the Qualcomm DragonBoard (DB). |
-| **IOT\_CRASHCONTROL\_SETTINGS** | Configures the device to auto reboot without showing blue screen (BSOD) when the device crashs. This also disables crashdump. [AutoReboot = 1 ; DisplayDisabled = 1 and CrashDumpEnabled = 0]. |
+| **IOT\_CRASHCONTROL\_SETTINGS** | Configures the device to auto reboot without showing blue screen (BSOD) when the device crashs. This also disables crashdump. [AutoReboot = 1 ; DisplayDisabled = 1 and CrashDumpEnabled = 0]. This is new in Windows 10, version 1803 |
 
 
 ### Developer Tools
@@ -150,7 +153,7 @@ The following tabe provides an overview of supported features per IoT Core OS re
 | **IOT\_EFIESP\_TEST**                            |x|x|x|x|
 | **IOT\_ENABLE\_ADMIN**                           |x|x|x|x|
 | **IOT\_ENABLE\_TESTSIGNING**                     |x|x|x|x|
-| **IOT\_FFU\_FLASHMODE**                          |x| | | |
+| **IOT\_FFU\_FLASHMODE**                          |x(arm)| | | |
 | **IOT\_FONTS\_CHINESE\_EXTENDED**                |x|x|x| |
 | **IOT\_FTSER2K\_MAKERDRIVER**                    |x|x|x|x|
 | **IOT\_GENERIC\_POP**                            |x|x|x|x|
