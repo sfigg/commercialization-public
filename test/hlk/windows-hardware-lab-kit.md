@@ -44,9 +44,7 @@ For guidance on which kit to use for compatibility certification, see the [Windo
 Get the official Windows Hardware Compatibility playlist so you can run the Windows HLK tests that ensure your hardware meets the requirements for compatibility with Windows 10. 
 - [Download the Windows Hardware Compatibility playlist](http://aka.ms/HLKPlaylist)
 
-Watch this video to learn more about playlists. 
-> [!VIDEO https://assets.windowsphone.com/970594d5-fef1-4fc6-84ab-289a192cd107/WinHEC_HLK_Playlists_InvariantCulture_Default.mp4]
-
+Watch the WinHEC video on [HLK Playlists](https://assets.windowsphone.com/970594d5-fef1-4fc6-84ab-289a192cd107/WinHEC_HLK_Playlists_InvariantCulture_Default.mp4) to learn more.
 ## Download Windows HLK Filters 
 
 When there is a problem in either a Windows HLK test or in the operating system itself that causes certification tests to fail incorrectly, we create an errata that allows partners to bypass the problematic test. Most errata use filters to automatically filter the failure from the submission results. Filters are applied within Windows HLK Studio. 
