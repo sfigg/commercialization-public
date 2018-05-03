@@ -95,7 +95,7 @@ The following image shows an example test environment.
 </tr>
 <tr class="odd">
 <td><p>Operating system</p></td>
-<td><p>English language and English local version of Windows Server 2008 R2 64-bit with service pack (SP1), Windows Server 2012, or Windows Server 2012 R2. For information, see the [Windows Server](http://go.microsoft.com/fwlink/?LinkId=236055) website.</p>
+<td><p>English language and English local version of Windows Server 2012, or Windows Server 2012 R2. For information, see the [Windows Server](http://go.microsoft.com/fwlink/?LinkId=236055) website.</p>
 </td>
 <td><p></p></td>
 </tr>
