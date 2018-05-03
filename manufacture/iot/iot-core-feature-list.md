@@ -54,6 +54,8 @@ When creating images for your device, determine which features are required for 
 | **IOT\_SHELL\_ONSCREEN\_KEYBOARD** | Adds available on-screen keyboard. This is new in Windows 10, version 1703.                  |
 | **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703. |
 | **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver. This feature should only be used with the Qualcomm DragonBoard (DB). |
+| **IOT\_CRASHCONTROL\_SETTINGS** | Configures the device to auto reboot without showing blue screen (BSOD) when the device crashs. This also disables crashdump. [AutoReboot = 1 ; DisplayDisabled = 1 and CrashDumpEnabled = 0]. |
+
 
 ### Developer Tools
 
@@ -125,68 +127,72 @@ The following table describes the Microsoft-defined test features that can be us
 
 The following tabe provides an overview of supported features per IoT Core OS release, listed in alphabetical order.
 
-| Features                        | 1709 (16299.x)  | 1703 (15063.x) | 1607 (14393.x)  |
-|---------------------------------|:---------------:|:--------------:|:---------------:|
-| **IOT\_ALLJOYN\_APP**           |x|x|x|
-| **IOT\_APPLICATIONS**           |x|x| |
-| **IOT\_APP\_TOOLKIT**           |x|x|x|
-| **IOT\_BERTHA**                 |x|x|x|
-| **IOT\_CONTAINERS**             |x(x64)| | |
-| **IOT\_CORTANA**                |x|x| |
-| **IOT\_CORTANA\_OBSCURELAUNCH** |x|x| |
-| **IOT\_CP210x\_MAKERDRIVER**    |x|x| |
-| **IOT\_CRT140**                 |x|x|x|
-| **IOT\_DIRECTX\_TOOLS**         |x|x|x|
-| **IOT\_DISABLEBASICDISPLAYFALLBACK** |x|x|x|
-| **IOT\_DISABLE\_TESTSIGNING**    |x|x|x|
-| ~~IOT\_DISABLE\_UMCI~~ (Deprecated)          |N/A|x|x|
-| **IOT\_DMAP\_DRIVER**            |x|x|x|
-| **IOT\_EFIESP**                  |x|x|x|
-| **IOT\_EFIESP\_BCD**             |x|x|x|
-| **IOT\_EFIESP\_BCD_MBR**         |x|x| |
-| **IOT\_EFIESP\_TEST**            |x|x|x|
-| **IOT\_ENABLE\_ADMIN**           |x|x|x|
-| **IOT\_ENABLE\_TESTSIGNING**     |x|x|x|
-| **IOT\_FONTS\_CHINESE\_EXTENDED** |x|x| |
-| **IOT\_FTSER2K\_MAKERDRIVER**     |x|x|x|
-| **IOT\_GENERIC\_POP**             |x|x|x|
-| ~~IOT\_HWN\_CLASS\_EXTENSION~~ (Deprecated)   |N/A|x| |
-| **IOT\_KDNETUSB\_SETTINGS**      |x|x|x|
-| **IOT\_KDSERIAL\_SETTINGS**      |x|x|x|
-| **IOT\_KDUSB\_SETTINGS**         |x|x|x|
-| **IOT\_KD\_ON**                  |x|x|x|
-| **IOT\_NANORDPSERVER**          |x|x|x|
-| **IOT\_NETCMD**                 |x|x|x|
-| **IOT\_POWERSHELL**             |x|x|x|
-| **IOT\_POWER\_SETTINGS**          |x|x|x (x86/x64)|
-| **IOT\_SHELL\_HOTKEY\_SUPPORT**   |x|x|x|
-| **IOT\_SHELL\_ONSCREEN\_KEYBOARD** |x|x| |
-| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** |x|x| |
-| **IOT\_SIREP**                  |x|x|x|
-| **IOT\_SPEECHDATA\_DE\_DE**    |x|x|x|
-| **IOT\_SPEECHDATA\_EN\_CA**    |x|x| |
-| **IOT\_SPEECHDATA\_EN\_GB**    |x|x|x|
-| ~~IOT\_SPEECHDATA\_EN\_US~~ (Deprecated)   |N/A|N/A|x|
-| **IOT\_SPEECHDATA\_ES\_ES**    |x|x|x|
-| **IOT\_SPEECHDATA\_ES\_MX**    |x|x| |
-| **IOT\_SPEECHDATA\_FR\_CA**    |x|x| |
-| **IOT\_SPEECHDATA\_FR\_FR**    |x|x|x|
-| **IOT\_SPEECHDATA\_IT\_IT**    |x|x|x|
-| **IOT\_SPEECHDATA\_JA\_JP**    |x|x|x|
-| **IOT\_SPEECHDATA\_ZH\_CN**    |x|x|x|
-| **IOT\_SPEECHDATA\_ZH\_HK**    |x|x|x|
-| **IOT\_SPEECHDATA\_ZH\_TW**    |x|x|x|
-| **IOT\_SSH**                    |x|x|x|
-| **IOT\_TOOLKIT**                |x|x|x|
-| **IOT\_UAP\_DEFAULTAPP**        |x|x|x|
-| **IOT\_UAP\_OOBE**              |x|x|x|
-| **IOT\_UMDFDBG\_SETTINGS**      |x|x|x|
-| **IOT\_UNIFIED\_WRITE\_FILTER** |x|x|x|
-| **IOT\_USBFN\_CLASS\_EXTENSION**|x|x|x|
-| **IOT\_WDTF**                   |x|x|x|
-| **IOT\_WEBB\_EXTN**             |x|x|x|
-| **OEM\_CustomCmd**              |x|x|x|
-| **OEM\_ProvAuto**               |x|x|x|
+| Features                                         |1803 (17134.x)|1709 (16299.x)|1703 (15063.x)|1607 (14393.x)|
+|--------------------------------------------------|:------------:|:------------:|:------------:|:------------:|
+| **IOT\_ALLJOYN\_APP**                            |x|x|x|x|
+| **IOT\_APPLICATIONS**                            |x|x|x| |
+| **IOT\_APP\_TOOLKIT**                            |x|x|x|x|
+| **IOT\_BERTHA**                                  |x|x|x|x|
+| **IOT\_CONTAINERS**                              |x(x64)|x(x64)| | |
+| **IOT\_CORTANA**                                 |x|x|x| |
+| **IOT\_CORTANA\_OBSCURELAUNCH**                  |x|x|x| |
+| **IOT\_CP210x\_MAKERDRIVER**                     |x|x|x| |
+| **IOT\_CRASHCONTROL\_SETTINGS**                  |x| | | |
+| **IOT\_CRT140**                                  |x|x|x|x|
+| **IOT\_DIRECTX\_TOOLS**                          |x|x|x|x|
+| **IOT\_DISABLEBASICDISPLAYFALLBACK**             |x|x|x|x|
+| **IOT\_DISABLE\_TESTSIGNING**                    |x|x|x|x|
+| ~~IOT\_DISABLE\_UMCI~~ (Deprecated)              |N/A|N/A|x|x|
+| **IOT\_DMAP\_DRIVER**                            |x|x|x|x|
+| **IOT\_EFIESP**                                  |x|x|x|x|
+| **IOT\_EFIESP\_BCD**                             |x|x|x|x|
+| **IOT\_EFIESP\_BCD_MBR**                         |x|x|x| |
+| **IOT\_EFIESP\_TEST**                            |x|x|x|x|
+| **IOT\_ENABLE\_ADMIN**                           |x|x|x|x|
+| **IOT\_ENABLE\_TESTSIGNING**                     |x|x|x|x|
+| **IOT\_FFU\_FLASHMODE**                          |x| | | |
+| **IOT\_FONTS\_CHINESE\_EXTENDED**                |x|x|x| |
+| **IOT\_FTSER2K\_MAKERDRIVER**                    |x|x|x|x|
+| **IOT\_GENERIC\_POP**                            |x|x|x|x|
+| ~~IOT\_HWN\_CLASS\_EXTENSION~~ (Deprecated)      |N/A|N/A|x| |
+| **IOT\_MIRACAST\_RX\_APP**                       |x| | | |
+| **IOT\_MTP**                                     |x| | | |
+| **IOT\_KDNETUSB\_SETTINGS**                      |x|x|x|x|
+| **IOT\_KDSERIAL\_SETTINGS**                      |x|x|x|x|
+| **IOT\_KDUSB\_SETTINGS**                         |x|x|x|x|
+| **IOT\_KD\_ON**                                  |x|x|x|x|
+| **IOT\_NANORDPSERVER**                           |x|x|x|x|
+| **IOT\_NETCMD**                                  |x|x|x|x|
+| **IOT\_POWERSHELL**                              |x|x|x|x|
+| **IOT\_POWER\_SETTINGS**                         |x|x|x|x (x86/x64)|
+| **IOT\_SHELL\_HOTKEY\_SUPPORT**                  |x|x|x|x|
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD**               |x|x|x| |
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS**  |x|x|x| |
+| **IOT\_SIREP**                                   |x|x|x|x|
+| **IOT\_SPEECHDATA\_DE\_DE**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_EN\_CA**                      |x|x|x| |
+| **IOT\_SPEECHDATA\_EN\_GB**                      |x|x|x|x|
+| ~~IOT\_SPEECHDATA\_EN\_US~~ (Deprecated)         |N/A|N/A|N/A|x|
+| **IOT\_SPEECHDATA\_ES\_ES**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_ES\_MX**                      |x|x|x| |
+| **IOT\_SPEECHDATA\_FR\_CA**                      |x|x|x| |
+| **IOT\_SPEECHDATA\_FR\_FR**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_IT\_IT**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_JA\_JP**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_ZH\_CN**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_ZH\_HK**                      |x|x|x|x|
+| **IOT\_SPEECHDATA\_ZH\_TW**                      |x|x|x|x|
+| **IOT\_SSH**                                     |x|x|x|x|
+| **IOT\_TOOLKIT**                                 |x|x|x|x|
+| **IOT\_UAP\_DEFAULTAPP**                         |x|x|x|x|
+| **IOT\_UAP\_OOBE**                               |x|x|x|x|
+| **IOT\_UMDFDBG\_SETTINGS**                       |x|x|x|x|
+| **IOT\_UNIFIED\_WRITE\_FILTER**                  |x|x|x|x|
+| **IOT\_USBFN\_CLASS\_EXTENSION**                 |x|x|x|x|
+| **IOT\_WDTF**                                    |x|x|x|x|
+| **IOT\_WEBB\_EXTN**                              |x|x|x|x|
+| **OEM\_CustomCmd**                               |x|x|x|x|
+| **OEM\_ProvAuto**                                |x|x|x|x|
 ## Related topics
 
 [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
