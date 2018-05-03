@@ -54,11 +54,12 @@ Details:
 
 Support for Windows virtualzation-based security is included in the following versions of Windows:
 
-* Windows 10, version 1607
-* Windows 10, version 1703
-* Windows 10, version 1709
+
 * Windows 10, version 1803
-* Windows Server 2016, version 1607
-* Windows Server 2016, version 1703
+* Windows 10, version 1709
+* Windows 10, version 1703
+* Windows 10, version 1607
+* Windows Server 2016, version 1803
 * Windows Server 2016, version 1709
-* Windows Server 2019, version 1803
+* Windows Server 2016, version 1703
+* Windows Server 2016
