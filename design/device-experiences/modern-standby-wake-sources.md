@@ -268,7 +268,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <tr class="odd">
 <td><p>Voice input ("Hey Cortana")</p></td>
 <td><p>Yes, if the device is Wake on Voice-capable.</p></td>
-<td><p>Yes, if the device is Wake on Voice-capable and has hardware keyword spotting. If the device has software keyword spotting only, the display will not turn on.</p></td>
+<td><p>Yes, if the device is Wake on Voice-capable and has a hardware keyword spotter. If the device has a software keyword spotter only, Wake on Voice will be turned off by default on DC power.</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -357,49 +357,50 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </tr>
 <tr class="odd">
 <td><p>3rd party VoIP calls</p></td>
-<td><p>Yes, if the notification is high priority.</p></td>
-<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>Depends on the type of notification.</p></td>
+<td><p>Depends on whether the app is exempt, the notification priority level, and the type of notification.</p></td>
 <td><p>See Note.</p></td>
 </tr>
 <tr class="even">
 <td><p>3rd party IMs</p></td>
-<td><p>Yes, if the notification is high priority.</p></td>
-<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>Depends on the type of notification.</p></td>
+<td><p>Depends on whether the app is exempt, the notification priority level, and the type of notification.</p></td>
 <td><p>See Note.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Bluetooth device notification</p></td>
-<td><p>Yes, if the notification is high priority.</p></td>
-<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>Depends on the type of notification.</p></td>
+<td><p>No</p></td>
 <td><p>See Note.</p></td>
 </tr>
 <tr class="even">
 <td><p>Bluetooth authentication: proximity</p></td>
-<td><p>Yes, if the notification is high priority.</p></td>
-<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>Depends on the type of notification.</p></td>
+<td><p>No</p></td>
 <td><p>See Note.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Location services (geofencing APIs trigger push notification)</p></td>
-<td><p>Yes, if the app uses geofencing and the notification is high priority.</p></td>
-<td><p>No, unless the app is exempt, the app uses geofencing, and the notification is high or medium priority.</p></td>
+<td><p>Depends on the type of notification and whether the app uses geofencing.</p></td>
+<td><p>Depends on whether the app is exempt, whether the app uses geofencing, the notification priority level, and the type of notification.</p></td>
 <td><p>See Note.</p></td>
 </tr>
 <tr class="even">
 <td><p>Other UWP apps: push notifications</p></td>
-<td><p>Yes, if the notification is high priority.</p></td>
-<td><p>No, unless the app is exempt and the notification is high or medium priority.</p></td>
+<td><p>Depends on the type of notification.</p></td>
+<td><p>Depends on whether the app is exempt, the notification priority level, and the type of notification.</p></td>
 <td><p>See Note.</p></td>
 </tr>
 </tbody>
 </table>
 	
 
-**Note** When a device is on AC power, only high priority notifications from UWP apps will be delivered. When a device is on DC power, only high priority and medium priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. Inbox Mail app incoming mail notifications are low priority, so they will never cause the display to turn on when a system is in Modern Standby.
+**Note** When a device is on AC power, notifications of all priorities from UWP apps will be delivered. When a device is on DC power, only high priority and medium priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. For example, Inbox Mail app incoming mail notifications are low priority. For notifications that are delivered during Modern Standby, typically only toast notifications will turn on the display. Raw notifications could also turn on the display, depending on the type of payload they are delivering. For more information about UWP app notifications, please refer to this page on [WNS Notification Priorities](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/wns-notification-priorities).
 
 There are two ways the user can set an app as exempt: 1) In Settings > Battery > See which apps are affecting your battery life, select an app and uncheck the "Let Windows decide when this app can run in the background." Then, check "Allow the app to run background tasks." 2) Select the app in Settings > Personalization > Lock Screen > "Choose an app to show detailed status" or "Choose apps to show quick status". In either case, the user should also ensure that under Settings > Notifications and Actions > Notifications, "Show notifications on the lock screen" and "Get notifications from apps and other senders" are enabled. 
 
 Skype is exempt by default. To change settings for Skype incoming calls, the user should navigate to Settings > System > Notifications and Actions > Notifications > Show reminders and incoming VoIP calls on the lock screen. To change other Skype notification settings, the user should navigate to Settings > System > Notifications and Actions > Get notifications from these senders > Skype. 
+
 To configure location services settings and see which apps are using geofencing, the user can navigate to Settings > Privacy  > Location.
 
 
