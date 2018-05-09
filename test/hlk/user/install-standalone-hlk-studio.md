@@ -33,7 +33,7 @@ You can install a standalone Windows HLK Studio if you want to view .hlkx certif
 ## <span id="To_install_standalone_Windows_HLK_Studio"></span><span id="to_install_standalone_windows_hlk_studio"></span><span id="TO_INSTALL_STANDALONE_WINDOWS_HLK_STUDIO"></span>To install standalone Windows HLK Studio
 
 
-1.  [Download the Windows HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613) to a location accessible to your test server.
+1.  [Download the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) to a location accessible to your test server.
 
 2.  From HLKSetup.exe, select the **Studio Only** option.
 
