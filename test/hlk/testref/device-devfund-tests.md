@@ -16,11 +16,14 @@ ms.technology: windows-oem
 # Device.DevFund tests
 
 
+-   [ApiValidator](df4a9671-c2aa-4c81-b964-7247fb4799df.md)
+-   [ApiValidator - (WoW64 for ARM64)](5c790765-d169-46ae-ba80-2c846e570871.md)
 -   [BitLocker check after firmware update](954cf796-a640-4134-b742-eaf0ed2663ff.md)
 -   [BitLocker Tpm And Recovery Password tests for AOAC devices with Legacy PCR's](8a4641a2-4fc6-4447-9d94-fdf402ca263c.md)
 -   [BitLocker Tpm And Recovery Password tests for AOAC devices with PCR\[7\]](5aac52da-a57c-4a12-aaac-de878a62bb08.md)
 -   [BitLocker Tpm and Recovery Password tests for non-AOAC devices for Legacy PCRs](ce9e5b64-8903-4025-bccf-a99d65663cf8.md)
 -   [BitLocker Tpm and Recovery password tests for NONAOAC devices with PCR\[7\]](8c7a62bb-7f02-4a16-b37d-711cc9026e17.md)
+-   [DF - InfVerif INF Verification](bbcc1b46-d0bf-46c8-85b4-2cd62df34a20.md)
 -   [DevFund Broker Test](5fe996a4-38ee-4b20-86e2-362dbefa0ddd.md)
 -   [DF - Concurrent Hardware And Operating System (CHAOS) Test (Development and Integration)](66f2b4ea-285c-41ac-9699-66a288abd46e.md)
 -   [DF - Concurrent Hardware And Operating System (CHAOS) Test (Reliability)](ff5f2837-310a-4448-8f79-580c83faa96e.md)
@@ -75,8 +78,6 @@ ms.technology: windows-oem
 -   [Operate In Server Core Test](ac3eb111-539a-4b7b-93f2-d542bd8a2135.md)
 -   [Reflash Device Connected via Proxy Client](cf446b11-40b6-46be-a15b-d5c6e7c4811a.md)
 -   [Static Tools Logo Test](6ab6df93-423c-4af6-ad48-8ea1049155ae.md)
--   [System - PNP (disable and enable) with IO Before and After (Reliability)](b2849bf1-3478-4fd7-a577-31001084e908.md)
--   [System - Sleep with IO Before and After (Reliability SysFund)](16ac817e-b042-4679-8027-c6c44d1ce29f.md)
 -   [TDI filters and LSPs are not allowed](1597d1fd-055a-43c7-b4c7-5396ab1ad525.md)
 -   [Validate HAL Extension have no Imports](78b8dab3-8ec9-406d-b395-2a34e922e8e7.md)
 -   [Verify HAL Extension serviceable](de119483-e85e-4f19-ba05-202a7219b43f.md)
