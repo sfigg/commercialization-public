@@ -30,8 +30,7 @@ If you are upgrading your HLK environment to a later version, you must first uni
 
 
 ****
-
-1.  Download [the HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613).
+1.  Download the correct HLK version for the devices you wish to  test. See the [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) topic for information about selecting the correct HLK.
 
     If you are downloading directly onto your server, you must disable the IE Enhanced Security Configuration (IE ESC).
 
