@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Secure Boot
 ms.assetid: 3917c13b-4a23-4d3b-b76a-f22b6f5e5fb1
 MSHAttr: 'PreferredLib:/library/windows/hardware'

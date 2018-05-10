@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'PAE/NX/SSE2 Support Requirement Guide for Windows 8'
 ms.assetid: 2100166b-fcd7-46af-953e-846e70090fae
 MSHAttr: 'PreferredLib:/library/windows/hardware'

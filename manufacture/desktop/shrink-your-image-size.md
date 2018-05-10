@@ -1,5 +1,5 @@
 ---
-author: KPacquer
+author: themar
 Description: 'Lab 13: Shrink your image size'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 13: Shrink your image size'

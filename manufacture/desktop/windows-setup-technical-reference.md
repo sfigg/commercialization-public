@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Windows Setup Technical Reference
 ms.assetid: f0fa0e04-e8ca-43b8-a789-0ef854e09333
 MSHAttr: 'PreferredLib:/library/windows/hardware'

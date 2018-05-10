@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Deploy .NET Framework 3.5 by using Group Policy Feature on Demand setting'
 ms.assetid: 764f765d-cdc1-4638-9035-64f3d6a43b8d
 MSHAttr: 'PreferredLib:/library/windows/hardware'

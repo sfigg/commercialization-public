@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'BIOS/MBR-based hard drive partitions'
 ms.assetid: 653e0c30-c90d-4d6b-ac77-6489501bad36
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Use keyboard identifiers and Input Method Editors (IMEs) identify the keyboard type.'
 ms.assetid: 8a5739fa-36a6-4b21-8cdb-5d18843633a2
 MSHAttr: 'PreferredLib:/library/windows/hardware'

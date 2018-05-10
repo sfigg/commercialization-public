@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Managing Battery Life and Power Consumption Overview
 ms.assetid: 9e5f962a-7647-431f-b10e-98c7589ec388
 MSHAttr: 'PreferredLib:/library/windows/hardware'

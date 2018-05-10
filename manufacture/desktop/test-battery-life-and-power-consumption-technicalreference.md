@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Test Battery Life and Power Consumption
 ms.assetid: e74e5e8c-6f0b-4c4d-ba2d-65be36b88495
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 ms.assetid: 0fbb2a9b-d3ce-4d7f-b68a-af641ceec96d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WIM vs. VHD vs. FFU: comparing image file formats'

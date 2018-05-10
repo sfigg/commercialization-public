@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Fine-Tune a Custom Power Plan'
 ms.assetid: 3f3b0d9d-d84a-4b87-a271-159d80ebbcc7
 MSHAttr: 'PreferredLib:/library/windows/hardware'

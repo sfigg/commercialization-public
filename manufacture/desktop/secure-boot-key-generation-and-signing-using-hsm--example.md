@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Secure Boot Key Generation and Signing Using HSM (Example)'
 ms.assetid: b776b30c-28b5-4300-932a-a35a2e489074
 MSHAttr: 'PreferredLib:/library/windows/hardware'

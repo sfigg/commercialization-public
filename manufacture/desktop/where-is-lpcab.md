@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Explains new format for language pack file names for Windows 10 version 1607
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Where is lp.cab?

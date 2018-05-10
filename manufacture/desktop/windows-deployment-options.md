@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Windows Deployment Options
 ms.assetid: e0bec895-af23-487c-993c-cc433827e0a8
 MSHAttr: 'PreferredLib:/library/windows/hardware'

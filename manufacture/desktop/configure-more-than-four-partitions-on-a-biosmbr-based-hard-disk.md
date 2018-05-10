@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk'
 ms.assetid: a1df0974-870f-498a-9994-5f614d8a308b
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Work with Product Keys and Activation
 ms.assetid: 923c0cd1-527c-4610-b979-e068fcc0ef99
 MSHAttr: 'PreferredLib:/library/windows/hardware'

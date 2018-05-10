@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Bare metal reset/recovery: enable your users to create recovery media'
 ms.assetid: 2f12f7aa-2259-453a-a433-4fa56b03b375
 MSHAttr: 'PreferredLib:/library/windows/hardware'

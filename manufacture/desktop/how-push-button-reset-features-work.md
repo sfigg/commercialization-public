@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'How push-button reset features work'
 ms.assetid: 86c93069-916c-4c94-8ba8-2fbf0d792a36
 MSHAttr: 'PreferredLib:/library/windows/hardware'

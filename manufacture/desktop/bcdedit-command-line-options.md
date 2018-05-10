@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'BCDEdit is a command-line tool for managing Boot Configuration Data (BCD).'
 ms.assetid: cf7d52f0-13fb-416d-9ec5-9e4eff4fd774
 MSHAttr: 'PreferredLib:/library/windows/hardware'

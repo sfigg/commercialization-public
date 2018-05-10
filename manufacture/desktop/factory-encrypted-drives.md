@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Factory Encrypted Drives
 ms.assetid: 3469481b-f380-4585-87c8-ca8a267fe607
 MSHAttr: 'PreferredLib:/library/windows/hardware'

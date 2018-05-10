@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Capture and Apply Windows, System, and Recovery Partitions'
 ms.assetid: db1f011f-2cf3-46b7-a386-8333f6214b9e
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Maintain Driver Configurations when Capturing a Windows Image
 ms.assetid: 4712b33a-c6ab-4715-ba55-041c0c6fa2b1
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Deploy a Custom Image
 ms.assetid: 7eb6bc78-d1ce-42f2-bf1a-b34c4b14ed66
 MSHAttr: 'PreferredLib:/library/windows/hardware'

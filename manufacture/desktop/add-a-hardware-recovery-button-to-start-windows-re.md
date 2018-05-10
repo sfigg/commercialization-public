@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'On UEFI-based computers, you can configure a hardware recovery button (or button combination) to start Windows RE, including push-button reset features for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).'
 ms.assetid: d7edf215-ced0-4052-a442-08a6c19e6078
 MSHAttr: 'PreferredLib:/library/windows/hardware'

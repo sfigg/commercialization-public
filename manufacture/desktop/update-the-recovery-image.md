@@ -1,5 +1,5 @@
 ---
-author: KPacquer
+author: themar
 Description: 'Lab 12: Update the recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 12: Update the recovery image'

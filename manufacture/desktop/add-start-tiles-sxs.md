@@ -1,5 +1,5 @@
 ---
-author: KPacquer
+author: themar
 Description: 'Lab 11: Add Start tiles and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 11: Add Start tiles and taskbar pins'

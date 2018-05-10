@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Capture Images of Hard Disk Partitions Using DISM
 ms.assetid: 164b9185-402f-4afb-bcf5-ef2f37077ed6
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)'
 ms.assetid: 1c0f17a9-6a74-40af-8d0b-fc6d807a6616
 MSHAttr: 'PreferredLib:/library/windows/hardware'
