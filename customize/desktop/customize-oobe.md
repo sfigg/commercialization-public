@@ -33,7 +33,7 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Automatic download of critical ZDP and driver updates**. See [Windows updates during OOBE](windows-updates-during-oobe.md) for more details.
 1. **Get the latest from Windows**. Prior to Windows 10, version 1803, this screen was named **Your PC has an update waiting** and it appeared at the end of OOBE.
 1. **End User License Agreement (EULA)**
-1. **Sign in to, or create, a local account or Microsoft account (MSA)**
+1. **Sign in to, or create, a local account or Microsoft account (MSA)**. If a user chooses the local account option, the **Sign in with Microsoft instead?** screen will appear next in the OOBE flow. This screen encourages the user to sign in with their MSA for an optimal Windows experience.
 1. **Create security questions for a local account**. New in Windows 10, version 1803. Only displays if the user chose to create a local account, rather than logging into their MSA, on the previous screen. See [OOBE screen details](oobe-screen-details.md) to learn more about this new screen in OOBE.
 1. **Windows Hello setup**
 1. **Link your phone and PC**. This screen will only appear if the user signed into their Microsoft account, and connected to a network, on the previous screens.
@@ -42,7 +42,7 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen. This is a cloud service page.
 1. **Make Cortana my personal assistant**
 1. **OEM Registration pages**
-1. **Privacy settings**
+1. **Privacy settings**. Users will see up to seven privacy settings on this screen. Not all users will see the same settings.
 
 > [!Note]
 > Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.
