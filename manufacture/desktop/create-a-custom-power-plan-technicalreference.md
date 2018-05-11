@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Create a Custom Power Plan
 ms.assetid: d1d0e1b0-f15f-482c-9e9b-1b75a05dfeb3
 MSHAttr: 'PreferredLib:/library/windows/hardware'

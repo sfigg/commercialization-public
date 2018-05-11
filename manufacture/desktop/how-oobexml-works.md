@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'How Oobe.xml Works'
 ms.assetid: 6df5c611-96f3-4268-9208-8455aa293954
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Windows RE troubleshooting features
 ms.assetid: 5812bba2-a4ed-4659-87b0-774de7a84bf5
 MSHAttr: 'PreferredLib:/library/windows/hardware'

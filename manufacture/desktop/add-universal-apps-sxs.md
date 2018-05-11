@@ -1,5 +1,5 @@
 ---
-author: KPacquer
+author: themar
 Description: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'

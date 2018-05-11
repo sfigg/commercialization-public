@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Enable .NET Framework 3.5 by using Windows PowerShell'
 ms.assetid: af189974-cffa-46d9-950a-40f5e28d378f
 MSHAttr: 'PreferredLib:/library/windows/hardware'

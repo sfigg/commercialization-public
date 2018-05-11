@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'How to add Windows desktop applications and other data by using audit mode.'
 ms.assetid: 61e94d42-5d12-4c54-9efc-1e38ea94f750
 MSHAttr: 'PreferredLib:/library/windows/hardware'

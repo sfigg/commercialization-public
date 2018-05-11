@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Manage the Component Store
 ms.assetid: 97e222b5-67cf-4d05-a010-de3e5518cb60
 MSHAttr: 'PreferredLib:/library/windows/hardware'

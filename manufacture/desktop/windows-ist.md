@@ -1,5 +1,5 @@
 ---
-author: kpacquer
+author: themar
 Description: 'Windows Imaging Servicing Tool'
 MSHAttr: 'PreferredLib:/library'
 title: 'Windows Imaging Servicing Tool'

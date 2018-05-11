@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Oscdimg Command-Line Options'
 ms.assetid: 4c64a7fe-3bab-4ab9-97ed-1b14e820b0c8
 MSHAttr: 'PreferredLib:/library/windows/hardware'

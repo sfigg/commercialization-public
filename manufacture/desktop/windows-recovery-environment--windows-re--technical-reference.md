@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Windows Recovery Environment (Windows RE)'
 ms.assetid: af78b72b-9f45-4ac3-882b-411a2bafbeed
 MSHAttr: 'PreferredLib:/library/windows/hardware'

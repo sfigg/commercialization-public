@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Windows Setup Scenarios and Best Practices
 ms.assetid: 651cb9c3-121d-40d3-9e17-47f1a78a000f
 MSHAttr: 'PreferredLib:/library/windows/hardware'

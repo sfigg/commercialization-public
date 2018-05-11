@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Windows Setup Automation Overview
 ms.assetid: 240b02ae-1f06-4b92-9b46-b4dbd1089c65
 MSHAttr: 'PreferredLib:/library/windows/hardware'

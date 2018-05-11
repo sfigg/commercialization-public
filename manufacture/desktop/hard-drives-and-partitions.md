@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Hard Drives and Partitions
 ms.assetid: bb453d9d-e819-4301-834d-09486d3e64e9
 MSHAttr: 'PreferredLib:/library/windows/hardware'

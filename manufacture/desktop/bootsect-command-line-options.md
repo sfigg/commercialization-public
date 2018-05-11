@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Bootsect Command-Line Options'
 ms.assetid: 2021a0b5-955a-4193-a6e2-9864c047d82d
 MSHAttr: 'PreferredLib:/library/windows/hardware'

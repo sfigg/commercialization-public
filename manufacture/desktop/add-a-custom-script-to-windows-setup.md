@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Add a Custom Script to Windows Setup
 ms.assetid: a22c2f2f-c297-4027-9712-d747b08f7476
 MSHAttr: 'PreferredLib:/library/windows/hardware'

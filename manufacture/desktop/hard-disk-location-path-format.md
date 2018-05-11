@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Hard Disk Location Path Format
 ms.assetid: 9f9d96ae-4fec-487d-95d2-ffd09b7d9fd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'

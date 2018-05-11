@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Configure Multiple Hard Drives
 ms.assetid: 2cb7386a-b3f6-40dd-b084-fce52a7aed9b
 MSHAttr: 'PreferredLib:/library/windows/hardware'

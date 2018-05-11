@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Sysprep (Generalize) a Windows installation'
 ms.assetid: 455fa70e-6c13-45ae-ad4f-5d12e3b844e5
 MSHAttr: 'PreferredLib:/library/windows/hardware'

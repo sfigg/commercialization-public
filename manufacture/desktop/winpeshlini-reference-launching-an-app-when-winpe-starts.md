@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Winpeshl.ini Reference: Launching an app when WinPE starts'
 ms.assetid: 107a3c05-791a-4daf-b188-b28dac96ef74
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Reduce the Size of the Component Store in an Offline Windows Image
 ms.assetid: 2cdff215-30b9-4360-9e2c-cc2c3d695608
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Create a WIM for Multiple Architecture Types Using DISM
 ms.assetid: fcb1b461-72c1-40c5-8405-38a5db05dd34
 MSHAttr: 'PreferredLib:/library/windows/hardware'

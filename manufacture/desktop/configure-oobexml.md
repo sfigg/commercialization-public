@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Configure Oobe.xml'
 ms.assetid: 4b6cef0c-30fa-4576-b580-4ec8c374da5b
 MSHAttr: 'PreferredLib:/library/windows/hardware'

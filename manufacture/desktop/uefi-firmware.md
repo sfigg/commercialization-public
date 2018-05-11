@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: UEFI Firmware
 ms.assetid: 63cab521-9f35-4428-85b6-5561889243fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'

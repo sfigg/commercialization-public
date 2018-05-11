@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'High DPI projection and multi-monitor configurations'
 ms.assetid: 81a96303-5ab5-4002-acac-ab356e2ec829
 MSHAttr: 'PreferredLib:/library/windows/hardware'

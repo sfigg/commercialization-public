@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'WinPE: Boot in UEFI or legacy BIOS mode'
 ms.assetid: bc3c4d41-c4f7-4432-b11a-f409e171d60d
 MSHAttr: 'PreferredLib:/library/windows/hardware'

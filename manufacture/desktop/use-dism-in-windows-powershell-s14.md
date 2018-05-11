@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Use DISM in Windows PowerShell
 ms.assetid: c258fead-059f-4a03-b6af-24cdc7451ca3
 MSHAttr: 'PreferredLib:/library/windows/hardware'

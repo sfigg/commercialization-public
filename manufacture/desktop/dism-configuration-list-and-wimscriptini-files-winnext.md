@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'DISM Configuration List and WimScript.ini Files'
 ms.assetid: 8e765558-4138-4215-bf53-09e46666a718
 MSHAttr: 'PreferredLib:/library/windows/hardware'

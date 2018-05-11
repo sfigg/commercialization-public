@@ -1,5 +1,5 @@
 ---
-author: kpacquer
+author: themar
 Description: 'Deploy Windows using a script'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 2: Deploy Windows using a script'
