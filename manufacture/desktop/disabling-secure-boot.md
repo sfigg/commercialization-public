@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Disabling Secure Boot
 ms.assetid: 2b98718d-13ce-4a5d-bd89-d276a0dc493d
 MSHAttr: 'PreferredLib:/library/windows/hardware'

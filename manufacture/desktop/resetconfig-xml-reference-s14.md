@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: ResetConfig XML reference
 ms.assetid: dc9f16c9-d094-49d6-9aaf-3a02c381ccc0
 MSHAttr: 'PreferredLib:/library/windows/hardware'

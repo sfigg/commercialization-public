@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Set the Default Power Plan
 ms.assetid: e6c722ae-29f4-4249-adbe-9121fdadcf4c
 MSHAttr: 'PreferredLib:/library/windows/hardware'

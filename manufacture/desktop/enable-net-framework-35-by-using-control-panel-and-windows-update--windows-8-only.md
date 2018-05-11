@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Enable .NET Framework 3.5 by using Control Panel and Windows Update (Windows 8 only)'
 ms.assetid: c1d27061-7417-4020-8fd9-6131dfa37d0e
 MSHAttr: 'PreferredLib:/library/windows/hardware'

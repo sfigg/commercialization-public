@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Add Multilingual Support to a Windows Distribution
 ms.assetid: 2da53fc7-4c4d-4cea-9a98-0db4eacd33d2
 MSHAttr: 'PreferredLib:/library/windows/hardware'

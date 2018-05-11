@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Prepare a Network Policy Server (NPS) for Imaging'
 ms.assetid: 7ac7f98a-f3db-4c54-a56a-fe766beb4344
 MSHAttr: 'PreferredLib:/library/windows/hardware'

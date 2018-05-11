@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Configure Windows System Assessment Test Scores
 ms.assetid: b2906f26-8887-44fe-8894-f73caee41824
 MSHAttr: 'PreferredLib:/library/windows/hardware'

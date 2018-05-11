@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Sideload Apps with DISM
 ms.assetid: ce95f34a-b9a4-4130-89ed-b7a7126fe21b
 MSHAttr: 'PreferredLib:/library/windows/hardware'

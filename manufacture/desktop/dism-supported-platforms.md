@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: DISM Supported Platforms
 ms.assetid: c52337e1-19a0-46d9-aa17-c5b704ea1949
 MSHAttr: 'PreferredLib:/library/windows/hardware'

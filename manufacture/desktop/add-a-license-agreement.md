@@ -1,5 +1,5 @@
 ---
-author: KPacquer
+author: themar
 Description: 'Lab 8: Add branding and license agreements'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'

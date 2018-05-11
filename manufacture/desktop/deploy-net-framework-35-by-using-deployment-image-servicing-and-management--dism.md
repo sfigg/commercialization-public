@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)'
 ms.assetid: c21b1e0f-d480-4f51-99d1-d5f7acba3a4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'

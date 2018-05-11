@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: UEFI Validation Option ROM Guidance
 ms.assetid: 357f9a94-98dc-4f78-9f4c-25935912edd6
 MSHAttr: 'PreferredLib:/library/windows/hardware'

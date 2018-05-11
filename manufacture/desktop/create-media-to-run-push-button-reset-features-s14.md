@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Bare metal reset/recovery: create recovery media while deploying new devices'
 ms.assetid: 2244bddf-8f49-41db-949a-2fbe9e224003
 MSHAttr: 'PreferredLib:/library/windows/hardware'

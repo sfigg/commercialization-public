@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: Customize the Start Screen
 ms.assetid: b28584ec-487e-4b59-a7f6-deb797d464a8
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,5 +1,5 @@
 ---
-author: kpacquer
+author: themar
 Description: 'WinPE: Identify drive letters with a script'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Identify drive letters with a script'

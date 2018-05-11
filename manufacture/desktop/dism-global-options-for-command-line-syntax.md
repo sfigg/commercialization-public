@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'DISM Global Options for Command-Line Syntax'
 ms.assetid: b902ff42-6718-48ca-878b-f3824d3229d4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
