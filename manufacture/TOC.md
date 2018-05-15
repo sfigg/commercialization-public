@@ -180,7 +180,6 @@
 #### [WinPE Optional Components (OC) Reference](desktop/winpe-add-packages--optional-components-reference.md)
 #### [WinPE: Mount and Customize](desktop/winpe-mount-and-customize.md)
 #### [WinPE: Adding PowerShell support to Windows PE](desktop/winpe-adding-powershell-support-to-windows-pe.md)
-#### [WinPE: Boot in UEFI or legacy BIOS mode](desktop/winpe-boot-in-uefi-or-legacy-bios-mode.md)
 #### [WinPE: Store or split images to deploy Windows using a single USB key](desktop/winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md)
 #### [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md) 
 #### [WinPE: Storage Area Network (SAN) Policy](desktop/winpe-storage-area-network--san--policy.md)
