@@ -425,7 +425,7 @@ To configure location services settings and see which apps are using geofencing,
 <tr class="even">
 <td><p>File Sharing</p></td>
 <td><p>Yes</p></td>
-<td><p>Yes</p></td>
+<td><p>No</p></td>
 <td><p>The system must have an Ethernet connection. This is not enabled on Wi-Fi.</p></td>
 </tr>
 </tbody>
