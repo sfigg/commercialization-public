@@ -1,6 +1,7 @@
 ---
 title: Customizations for desktop devices
 description: Customizations for desktop devices allow you to change the UI and other settings for a desktop image.
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 10/17/2017
 ms.topic: article
