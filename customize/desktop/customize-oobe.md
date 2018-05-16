@@ -50,6 +50,8 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 >
 > When testing OOBE, keep in mind that you may not see cloud service pages during the flow.
 
+## Windows Welcome
+
 In Windows 10, version 1803, Windows Welcome is displayed to more users than ever as soon as they complete OOBE and reach their desktop. Here's an example Windows Welcome experience:
 
 ![Example Windows Welcome experience in Microsoft Edge](images/windows-welcome.png)
