@@ -1,6 +1,6 @@
 # [Manufacture](index.md)
 
-## [Build a Windows 10 PC](desktop/index.md)
+## [Desktop manufacturing](desktop/index.md)
 
 ### [Deployment guides and walkthroughs](desktop/windows-10-guides-and-walkthroughs.md)
 #### [OEM deployment of Windows 10 for desktop editions](desktop/oem-deployment-of-windows-10-for-desktop-editions-overview.md)
