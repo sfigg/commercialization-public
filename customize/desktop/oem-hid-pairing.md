@@ -4,6 +4,7 @@ description: Add setup support for unpaired mouse and keyboard to OOBE
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 09/27/2017
 ms.topic: article

@@ -3,6 +3,7 @@ title: Changed answer file settings for previous Windows 10 builds
 description: This topic shows the historic list of changes to answer file settings for each build of Windows 10.
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 04/30/2018
 ms.topic: article

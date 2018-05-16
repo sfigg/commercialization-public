@@ -4,6 +4,7 @@ description: Customize the Windows Out of Box experience
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 04/30/2018
 ms.topic: article
@@ -48,6 +49,8 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 > Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.
 >
 > When testing OOBE, keep in mind that you may not see cloud service pages during the flow.
+
+## Windows Welcome
 
 In Windows 10, version 1803, Windows Welcome is displayed to more users than ever as soon as they complete OOBE and reach their desktop. Here's an example Windows Welcome experience:
 

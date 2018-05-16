@@ -4,6 +4,7 @@ description: Describes the customizations that you can configure to optimize mob
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 11/01/2017
 ms.topic: article

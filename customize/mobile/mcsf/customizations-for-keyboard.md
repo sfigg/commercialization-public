@@ -4,6 +4,7 @@ description: Describes the customizations that you can configure for the keyboar
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 10/31/2017
 ms.topic: article
