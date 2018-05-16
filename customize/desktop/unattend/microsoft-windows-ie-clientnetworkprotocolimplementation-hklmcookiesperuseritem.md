@@ -7,6 +7,7 @@ MSHAttr:
 ms.assetid: ee76fa66-7865-4358-85c7-2e88cc60c268
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article

@@ -3,6 +3,7 @@ author: alhopper
 Description: Instructions on how to download and install the Windows ADK
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Download and install the Windows ADK
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 04/30/2018
 ms.topic: article

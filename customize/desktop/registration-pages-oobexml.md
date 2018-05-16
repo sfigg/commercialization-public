@@ -4,6 +4,7 @@ description: Configure your OOBE.xml file to support OEM registration pages
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 01/25/2018
 ms.topic: article

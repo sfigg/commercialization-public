@@ -7,6 +7,7 @@ MSHAttr:
 ms.assetid: CD72B128-FDE5-49E8-B04A-5E8C7299C8F4
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article

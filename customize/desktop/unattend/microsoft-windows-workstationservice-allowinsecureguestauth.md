@@ -6,6 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 10/17/2017
 ms.topic: article
