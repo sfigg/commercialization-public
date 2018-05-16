@@ -4,6 +4,7 @@ description: Microsoft-Windows-TPM-Tasks-ClearTpm
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article

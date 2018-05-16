@@ -11,6 +11,7 @@ MSHAttr:
 ms.assetid: 492E373A-C15E-4D4D-A7CC-842D430DAF21
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article

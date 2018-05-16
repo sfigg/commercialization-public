@@ -2,6 +2,7 @@
 title: Assigned access Windows PowerShell reference
 description: Assigned access Windows PowerShell reference
 ms.assetid: ee3fae48-945e-4cb1-be2d-b977b89f883a
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 05/02/2017
 ms.topic: article

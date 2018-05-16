@@ -4,6 +4,7 @@ description: Use to disable the default OS requirement of having non-rotational 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 04/30/2018
 ms.topic: article
