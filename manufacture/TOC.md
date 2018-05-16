@@ -235,7 +235,6 @@
 ###### [oobeSystem](desktop/oobesystem.md)
 ###### [specialize](desktop/specialize.md)
 ###### [windowsPE](desktop/windowspe.md)
-##### [Settings for Automating OOBE](desktop/settings-for-automating-oobe.md)
 ##### [Deployment Troubleshooting and Log Files](desktop/deployment-troubleshooting-and-log-files.md)
 #### [Command-Line Tools](desktop/windows-deployment-command-line-tools-reference.md)
 ##### [BCDBoot Command-Line Options](desktop/bcdboot-command-line-options-techref-di.md)
