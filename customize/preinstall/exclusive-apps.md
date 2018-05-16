@@ -4,6 +4,7 @@ description: OEMs can work with software developers to target OEM devices for ap
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 12/6/2017
 ms.topic: article

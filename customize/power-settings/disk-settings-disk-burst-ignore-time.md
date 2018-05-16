@@ -5,6 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 979DEFC9-B57E-4705-BAEC-0B9D0B0B0A08
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 10/05/2017
 ms.topic: article

@@ -1,6 +1,7 @@
 ---
 title: OverlayFlags
 description: Specifies whether writes to unused space on the volume are allowed to pass through without being redirected to the overlay file
+author: alhopper-msft
 ms.author: alhopper
 ms.date: 10/17/2017
 ms.topic: article
