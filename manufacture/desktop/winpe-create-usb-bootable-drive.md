@@ -35,7 +35,7 @@ Now that you now have a set of working files, you can use **MakeWinPEMedia** to 
 
 ### Create a bootable WinPE USB drive
 
-1. Attach a USB drive you your technician PC.
+1. Attach a USB drive to your technician PC.
 
 2. Start the **Deployment and Imaging Tools Environment** as an administrator.
 

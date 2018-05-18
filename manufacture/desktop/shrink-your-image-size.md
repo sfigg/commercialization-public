@@ -18,7 +18,7 @@ To do this, we'll use DISM tools that check for duplicate files. We'll mark the 
 
    ![image: Mount the image, mark duplicate files for removal, unmount the image, then export the image.](images/dism-shrink-image.jpg)
 
-## <span id="Mount_the_images"></span>Mount the images
+## <span id="Mount_the_images"></span>Step 1: Mount the images
 
 **Step 1: Mount the Windows image**
 
@@ -30,7 +30,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
-## <span id="Optimizing_the_image_part_1"></span><span id="optimizing_the_image_part_1"></span><span id="OPTIMIZING_THE_IMAGE_PART_1"></span>Step 2: Optimizing the image, part 1 (optional)
+## <span id="Optimizing_the_image_part_1"></span><span id="optimizing_the_image_part_1"></span><span id="OPTIMIZING_THE_IMAGE_PART_1"></span>Step 2: Optimize the image, part 1 (optional)
 
 After adding a language or Windows update package, you can reduce the size of the image size by checking for duplicate files and marking the older versions as superseded.
 
@@ -51,7 +51,7 @@ After adding a language or Windows update package, you can reduce the size of th
     Dism /Unmount-Image /MountDir:C:\mount\windows /Commit
     ```
 
-## <span id="Optimizing_the_image_part_2"></span><span id="optimizing_the_image_part_2"></span><span id="OPTIMIZING_THE_IMAGE_PART_2"></span>Step 4: Optimizing the image, part 2 (optional)
+## <span id="Optimizing_the_image_part_2"></span><span id="optimizing_the_image_part_2"></span><span id="OPTIMIZING_THE_IMAGE_PART_2"></span>Step 4: Optimize the image, part 2 (optional)
 
 If you've optimized the image, you'll need to export the image in order to see a change in the file size. During the export process, DISM removes files that were superseded.
 

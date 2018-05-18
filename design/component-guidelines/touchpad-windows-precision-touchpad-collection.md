@@ -32,7 +32,7 @@ The device’s contact reporting capability is defined by the maximum number of 
 
 The device’s button type is defined as either a depressible implementation (also referred to as click-pad type) or a non-depressible implementation (also referred to as pressure-pad). It is also acceptable for a Windows Precision Touchpad to have a non-button reporting digitizer surface and external buttons instead.
 
-The button implementation type should be specified via the value for button type (Page **0x0D**, Usage **0x59**) in the device capabilities feature report. If the device has a non-button reporting digitizer surface and relies instead on external buttons only for mouse clicks, then this usage should not be reported.
+The button implementation type should be specified via the value for button type (Page **0x0D**, Usage **0x59**) in the device capabilities feature report. If the device has a non-button reporting digitizer surface and relies instead on external buttons only for mouse clicks, then this usage can be optionally reported.
 
 The following table shows the button type usage values.
 
@@ -40,6 +40,7 @@ The following table shows the button type usage values.
 |-------------------|--------------------------------|
 | 0                 | Depressible (Click-pad)        |
 | 1                 | Non-Depressible (Pressure-pad) |
+| 2                 | Non-Clickable (Discrete-pad)   |
 
  
 
