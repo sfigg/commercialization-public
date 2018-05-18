@@ -45,7 +45,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
     newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.HelloBlinky
     ```
 
-    The new folder at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
+    The new folder appears at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
 
 3. Copy the file: ACPITABL.dat to the new folder, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\Drivers.HelloBlinky\\**.
 
@@ -95,7 +95,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\OEMFM.xml**
 
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
+2.  Create a new PackageFile section in the XML with your package file listed and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
     ``` xml
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">

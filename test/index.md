@@ -20,7 +20,7 @@ We provide an array of tools and technology to help you test performance, compat
 ## About the tools
 
 
--   [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit) – The Windows HLK is a test framework used to test reliability and compatibility of hardware devices used with Windows 10.
+-   [Windows Hardware Lab Kit](hlk/windows-hardware-lab-kit.md) – The Windows HLK is a test framework used to test reliability and compatibility of hardware devices used with Windows 10.
 -   [Windows Performance Toolkit](wpt/index.md) – WPT helps you measure, analyze and troubleshoot performance to create fast, fluid, and efficient systems.
 -   [Windows Assessment Toolkit](assessments/index.md) – The assessment toolkit provides additional tools and tests that help you determine the quality of a running operating system or a set of components with regard to performance, reliability, and functionality.
 - [Windows Mixed Reality HMD Exerciser Kit](hmd/windows-mixed-reality-hmd-exerciser-kit.md) - The Windows Mixed Reality Head Mounted Display (MR HMD) Exerciser Kit is a hardware and software package that automates the validation of MR HMDs and PCs.

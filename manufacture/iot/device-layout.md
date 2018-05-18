@@ -24,7 +24,7 @@ Sample partition layouts included in the ADK Add-Ons:
 -  \iot-adk-addonkit\Common\Packages\DeviceLayout.MBR4GB-R\devicelayout.xml
 
 These files use three component files:
--  **DeviceLayout.<Name>.pkg.xml: Package file, creates packages for DeviceLayout and OEMDevicePlatform.xml.
+-  **DeviceLayout.<Name>.pkg.xml**: Package file, creates packages for DeviceLayout and OEMDevicePlatform.xml.
 -  **DeviceLayout.xml**: Specifies the device partition layout
 -  **OEMDevicePlatform.xml**: Specifies the amount of free blocks available in the device and which partitions are compressed.
 

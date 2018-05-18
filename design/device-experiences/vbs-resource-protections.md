@@ -2,7 +2,7 @@
 title: Virtualization Based Security System Resource Protections  
 description: Provides details for OEMs on how VBS protects access to system resources
 ms.author: allenma
-ms.date: 3/12/2018
+ms.date: 4/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -59,7 +59,6 @@ Support for Windows virtualzation-based security is included in the following ve
 * Windows 10, version 1709
 * Windows 10, version 1703
 * Windows 10, version 1607
-* Windows Server 2016, version 1803
-* Windows Server 2016, version 1709
-* Windows Server 2016, version 1703
+* Windows Server, version 1803
+* Windows Server, version 1709
 * Windows Server 2016
