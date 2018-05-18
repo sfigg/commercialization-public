@@ -1,8 +1,8 @@
 ---
 author: themar
-Description: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'
+Description: 'Lab 6: Add universal Windows apps and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'
+title: 'Lab 6: Add universal Windows apps and taskbar pins'
 ms.author: themar
 ms.date: 10/16/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="Add_apps"></span>Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins
+# <span id="Add_apps"></span>Lab 6: Add universal Windows apps and taskbar pins
 
 Add apps to your images to support different customer needs. Some have different installation procedures:
 

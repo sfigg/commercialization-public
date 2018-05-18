@@ -116,7 +116,12 @@ To use the Preview pane in File Explorer, choose the **View** menu group, and th
 
 ### <span id="Server_support"></span><span id="server_support"></span><span id="SERVER_SUPPORT"></span>Server support
 
-The HLK Controller can now be installed on Windows Server 2012 R2.
+|**HLK version**|**Compatable server OS versions**| 
+|--- |--- | 
+|1803|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+|1709|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+|1703|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+|1607|Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
 
 ### <span id="64-bit_SQL"></span><span id="64-bit_sql"></span><span id="64-BIT_SQL"></span>64-bit SQL
 
