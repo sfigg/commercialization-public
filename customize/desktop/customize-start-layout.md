@@ -101,11 +101,11 @@ The number of tiles you select will be divided evenly between the two columns in
 
 ## Customize OEM Groups in the Start layout
 
-You can pin tiles in two OEM groups. The two OEM groups are added at the bottom, right corner of the Start layout. The first, bigger OEM group displays the first two rows of tiles by default, with only the titles of the tiles on the third row displaying. The second, smaller OEM group displays only the titles of the top row.
+You can pin tiles in up to two OEM groups. You'll specify the OEM groups, and tiles they contain, in `LayoutModification.xml`. The first group you specify in `LayoutModification.xml` will be placed in the first open, available part of the Start layout, scanning top to bottom. If you've specified a second OEM group in `LayoutMofication.xml`, it will placed after the first group, in the first open, available part of the Start layout, scanning top to bottom.
 
-If you have `StartTileGroupCellWidth` set to 6, the OEM groups will be 3 medium tiles wide by 3 high. If you have `StartTileGroupCellWidth` set to 8, the OEM groups will be 4 medium tiles wide (group one is 3 tiles high by 4 wide, and group two is 2 high by 4 wide).
+If you have `StartTileGroupCellWidth` set to 6 in `LayoutModification.xml`, the OEM group will be 3 medium tiles wide by 3 high. If you have `StartTileGroupCellWidth` set to 8, the OEM group will be 4 medium tiles wide (group one is 3 tiles high by 4 wide, and group two is 2 high by 4 wide).
 
-Here is an example that shows where the two OEM groups appear in Start:
+Here is an example that shows a Start layout with two OEM groups:
 
 ![Start layout with 2 OEM groups](images/start-layout-oem-groups.png)
 
