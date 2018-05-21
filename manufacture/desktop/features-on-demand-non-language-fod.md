@@ -145,7 +145,7 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 ### Retail Demo Experience (RDX)
 
-These Features on Demand add the retail demo package to a device, for use in retail stores. These features are available as .cab packages on the FOD ISO.
+These Features on Demand add the retail demo package to a device, for use in retail stores. These features are available as .cab packages on the FOD ISO, and should be added with `DISM /add-package`. See [Add or remove packages offline with DISM](add-or-remove-packages-offline-using-dism.md).
 
 **Recommendation:** Preinstall on all devices. Install the language-neutral FOD, as well as at least one language-specific FOD to ensure that any Windows 10 device can be used as a demo device. Windows will automatically remove these FODs after a user goes through a non-RetailDemo OOBE.
 
