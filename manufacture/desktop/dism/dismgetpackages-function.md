@@ -43,10 +43,10 @@ Parameters
 A valid [DismSession](dismsession.md). The DismSession must be associated with an image.
 
 *Package* \[out\]  
-A pointer to the array of [DismPackage](dismpackagefeaturestate-enumeration.md) structures.
+A pointer to the array of [DismPackage](dismpackage-structure.md) structures.
 
 *Count* \[out\]  
-The number of [DismPackage](dismpackagefeaturestate-enumeration.md) structures that are returned.
+The number of [DismPackage](dismpackage-structure.md) structures that are returned.
 
 Return value
 ---------
