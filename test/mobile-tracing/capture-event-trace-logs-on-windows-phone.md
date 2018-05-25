@@ -30,7 +30,7 @@ The Windows Performance Toolkit (WPT) is required to process event trace logs wi
 ## Step 2: Install and configure TShell
 
 
-TShell is required to run Tracelog.
+TShell is required to run Tracelog. TShell is a part of the Windows Assessment and Deployment Kit (ADK). Instructions for installation are in [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development).
 
 ## Step 3: Verify device is connected
 
