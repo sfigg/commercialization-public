@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 author: alhopper-msft
 ms.author: alhopper
-ms.date: 04/30/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -18,7 +18,7 @@ You can customize the Start layout by creating a `LayoutModification.xml` file a
 You can customize the following aspects of the Start layout:
 
 * The size, including the number of columns and number of tiles per row
-* The tiles in both OEM Groups; including the size, position, and the app or weblink associated with each tile
+* The tiles in both OEM Groups; including the size, position, and the app or web link associated with each tile
 * The display layout for the Microsoft Office suite of tiles
 * Create Start layouts for each region you support
 
@@ -126,18 +126,18 @@ For example, here is a Start layout with the row and column grid overlaid.
 
 ![Start layout grid](images/start-layout.png)
 
-### Add tiles that launch apps and weblinks
+### Add tiles that launch apps and web links
 
 You can configure each of your tiles to launch:
 
 * A Universal Windows app (using the `start:Tile` tag)
 * A Windows 8 or 8.1 app (using the `start:Tile` tag)
 * A desktop application (using the `start:DesktopApplicationTile` tag)
-* A weblink that opens in the default browser (using the `start:DesktopApplicationTile` tag)
-* A weblink that opens in Edge (using the `start:SecondaryTile` tag)
+* A web link that opens in the default browser (using the `start:DesktopApplicationTile` tag)
+* A web link that opens in Edge (using the `start:SecondaryTile` tag)
 
 > [!Note]
-> Each tile pinned to the Start layout can launch a single UWP app, Microsoft Store app, desktop app, or weblink. A tile can’t be a group of apps or a folder.
+> Each tile pinned to the Start layout can launch a single UWP app, Microsoft Store app, desktop app, or web link. A tile can’t be a group of apps or a folder.
 
 #### App tiles
 
@@ -181,7 +181,7 @@ The following example show how to pin the File Explorer Windows desktop applicat
   Column="2"/>
 ```
 
-#### Weblink tiles
+#### Web link tiles
 
 You can add a web link tile that will open in the default browser, or you can add a *secondary tile* that will specifically open in Microsoft Edge.
 To create a web link tile that will open in the default browser, create a .url file:
