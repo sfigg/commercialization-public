@@ -34,7 +34,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://docs.microsoft.com/windows/iot-core/secure-your-device/UnifiedWriteFilter) to protect physical storage media from data writes. Supported starting with Windows 10, version 1607.        |
 | **IOT\_USBFN\_CLASS\_EXTENSION**  | Adds USB function WDF class extension for USB function mode support. This is new in Windows 10, version 1703. |
 | ~~IOT\_HWN\_CLASS\_EXTENSION~~ (Deprecated)   | Adds hardware notification WDF class extension for vibration API support. This is new in Windows 10, version 1703. Deprecated in Windows 10, version 1709, as this feature is added by default |
-| **IOT\_NETCMD**            | Adds the command-line tool: net.exe, used for configuring network connectivity                                              |
+| ~~IOT\_NETCMD~~ (Deprecated) | Adds the command-line tool: net.exe, used for configuring network connectivity. Deprecated in Windows 10, version 1803. The net.exe will be removed when updating to version 1803. Use [Windows.Devices.WiFi.WiFiAdapter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.wifi.wifiadapter.aspx) for managing Wifi. See [WiFi Connector](https://github.com/Microsoft/Windows-iotcore-samples/blob/master/Samples/WiFiConnector/CS/README.md#wifi-connector) example. |
 | **IOT\_POWERSHELL**        | Adds PowerShell                                                                                                             |
 | **IOT\_APPLICATIONS**           | Adds Account Management host application, enables MSA sign-in. Required for Cortana. This is new in Windows 10, version 1703. |
 | **IOT\_ALLJOYN\_APP**           | Adds the AllJoyn application, used for Headless ZwaveAdapterAppx. |
@@ -165,7 +165,7 @@ The following tabe provides an overview of supported features per IoT Core OS re
 | **IOT\_KDUSB\_SETTINGS**                         |x|x|x|x|
 | **IOT\_KD\_ON**                                  |x|x|x|x|
 | **IOT\_NANORDPSERVER**                           |x|x|x|x|
-| **IOT\_NETCMD**                                  |x|x|x|x|
+| ~~IOT\_NETCMD~~ (Deprecated)                     |N/A|N/A|x|x|
 | **IOT\_POWERSHELL**                              |x|x|x|x|
 | **IOT\_POWER\_SETTINGS**                         |x|x|x|x (x86/x64)|
 | **IOT\_SHELL\_HOTKEY\_SUPPORT**                  |x|x|x|x|
