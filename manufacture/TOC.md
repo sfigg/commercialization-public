@@ -82,7 +82,7 @@
 ##### [Install Windows 10 using a previous version of Windows PE](desktop/copy-dism-to-another-computer.md)
 ##### [Windows Setup Automation Overview](desktop/windows-setup-automation-overview.md)
 ##### [Automate Windows Setup](desktop/automate-windows-setup.md)
-##### [Run custom actions during a feature update](desktop/windows-setup-enable-custom-actions
+##### [Run custom actions during a feature update](desktop/windows-setup-enable-custom-actions.md)
 ##### [Add a Custom Script to Windows Setup](desktop/add-a-custom-script-to-windows-setup.md)
 ### [Customize](desktop/customize-windows.md)
 #### [Understanding Servicing Strategies](desktop/understanding-servicing-strategies.md)
