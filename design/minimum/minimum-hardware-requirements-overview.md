@@ -20,7 +20,7 @@ ms.technology: windows-oem
 
 ### 1.1 Overview
 
-This specification defines the minimum hardware requirements for Windows 10 and all types of devices or computers designed for Windows 10, version 1703 or later versions Microsoft will build and test the Windows 10 OS against the requirements described in this specification.
+This specification defines the minimum hardware requirements for Windows 10 and all types of devices or computers designed for Windows 10, version 1703 or later versions. Microsoft will build and test the Windows 10 OS against the requirements described in this specification.
 
 ### 1.1.1 Purpose of this specification
 
