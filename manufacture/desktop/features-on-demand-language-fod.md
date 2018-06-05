@@ -100,12 +100,14 @@ These fonts are optional and not required for any region.
 
 ### <span id="Region_requirements"></span><span id="region_requirements"></span> Other region-specific requirements
 
-| Region | Description                   | Capability                                             | Description        | Recommendation                                                                                                     |
+| Region | Package                               | Description        | Recommendation                                                                                                     |
 |--------|-------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---|
-| zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements.  Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. Not installing this capability on devices causes any API calls to that use the Taiwan calendar to fail. |
+| zh-TW  | Microsoft-Windows-InternationalFeatures-Taiwan-Package~31bf3856ad364e35~amd64~~.cab  | Supplemental support for Taiwan date formatting requirements.  Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. Not installing this capability on devices causes any API calls to that use the Taiwan calendar to fail. |
+
+Note that this feature is distributed as a .cab file on the Feature on Demand ISO. Use `DISM /add-package` to add it to your image. See [Add or remove packages offline with DISM](add-or-remove-packages-offline-using-dism.md) for more information.
 
 ### List of all language-related features on demand
-[Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows 10 1703 FOD to LP Mapping Table.xlsx)
+[Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
 
