@@ -13,11 +13,11 @@ ms.technology: windows-oem
  
 # Modify a Windows Image Using DISM
 
-This topic details the changes you can make to mounted or applied Windows images with DISM. 
+You can make changes to offline mounted or applied Windows images without booting into the operating system you're going to modify.
 
-Mounted images are WIM, VHD, or FFU files that are that maps the contents of the image to a directory so that you can make changes to the image using without booting into the image. You run run DISM commands against a mounted image, and can also perform common file operations, such as copying, pasting, and editing on a mounted image. Changes you make to the image are committed when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
+**Mounted** images are WIM, VHD, or FFU files that have their contents mapped to a folder. Changes to mounted images are made from either a Windows 10 technician PC, or from WinPE. You run run DISM commands against a mounted image, as well as run common file operations such as copying, pasting, and renaming on a mounted image. To save changes you make to the image, use the `/commit` option when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
 
-Applied images are WIM, VHD, or FFU files that are image files that have been applied to a specified partition. To make changes to an applied image, use `DISM /image:`. See [Applying an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions#span-idapplyingtheimagespanspan-idapplyingtheimagespanspan-idapplyingtheimagespanapplying-the-image) to learn how to apply an image.
+**Applied** images are WIM, VHD, or FFU image files that have been applied to a specified partition. Offline changes to an applied image are usually performed from WinPE. To make changes to an applied image, use `DISM /image:`. See [Applying an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions#span-idapplyingtheimagespanspan-idapplyingtheimagespanspan-idapplyingtheimagespanapplying-the-image) to learn how to apply an image.
 
 You can mount and modify multiple images on a single computer. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
 
