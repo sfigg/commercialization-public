@@ -23,7 +23,7 @@ By default, the OS enforces a maximum of four (4) simultaneous packet data proto
 The same maximums apply for both roaming and non-roaming scenarios. This maximum does not include packet contexts used internally by the modem.
 
 <a href="" id="constraints---none"></a>**Constraints:**
-1. Only supports 3GPP/GSM connection. OS will still enforces only one PDP context for 3GPP2/CDMA connections, so customization answer file won't work for CDMA network. 
+1. Only supports 3GPP/GSM connection. OS will still enforce only one PDP context for 3GPP2/CDMA connections, so customization answer file won't work for CDMA network. 
 2. This customization supports: **per-IMSI** value, **per-device** value.
 
 <a href="" id="instructions-"></a>**Instructions:**  
