@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: c65f1400-9d2a-406e-8b43-74eaafb0ccae
 author: alhopper-msft
 ms.author: alhopper
-ms.date: 04/30/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -22,6 +22,7 @@ There are a few exceptions to the applications and executables you can use as a 
 
 * You cannot use the following executable as a custom shell: `C:\\Windows\\System32\\Eshell.exe`. Using Eshell.exe as the default shell will result in a blank screen after user signs in.
 * You cannot use a Universal Windows app as a custom shell.
+* You cannot use a custom shell to launch Universal Windows apps, for example, the Settings app.  
 * You cannot use an application that launches a different process and exits as a custom shell. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, and restart the custom shell.
 
 > [!Note]
