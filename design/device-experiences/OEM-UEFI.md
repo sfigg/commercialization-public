@@ -30,7 +30,7 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 To download Windows, see [the Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10). If you want to use media like a USB flash drive, a DVD, or an ISO, dowload the [Windows Media creation tool](https://www.microsoft.com/en-us/software-download/windows10?d2784474-fdb0-4e9d-9e47-5e88c0e053ec=True). 
 
 ## Boot and miminum security requirements
-As the OEM, you must provide support for the features outlined in [Windows Hardware Compatibility Program Specifications and Policies](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/whcp-specifications-policies), specifically the following items that are divided into two groups: boot requiements and minimum security requirements. 
+As the OEM, you must provide support for the features outlined in [Windows Hardware Compatibility Program Specifications and Policies](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/whcp-specifications-policies), specifically the following items that are divided into two groups: boot requirements and minimum security requirements. 
 
 ### Boot requirement
 
