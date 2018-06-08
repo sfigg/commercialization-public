@@ -38,7 +38,8 @@ The following image shows the HLK Studio **Package** tab.
     2.  In the **Driver Properties** dialog box, select the appropriate **Products** and **Locales**, and then click **OK**.
 
         >[!IMPORTANT]
-        >  The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.
+        >  Hardware Dev Center uses these **Locales** for building its Windows Update applicabile OS Language targeting.  If you plan on publishing your driver to Windows Update, be sure you've selected all applicable languages you wish this delivered to. 
+        The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.  
 
          
 
