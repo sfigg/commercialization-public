@@ -18,9 +18,9 @@
 ### [Dark mode](desktop/set-dark-mode.md)
 ### [Get Help app](desktop/customize-get-help-app.md)
 ### [SIM card slot names](desktop/customize-sim-card-slot-names.md)
-### [Specific Absorption Rate mapping table](desktop/customize-sar-mapping-table.md)
+### [Mobile broadband: SAR table](desktop/customize-sar-mapping-table.md)
 
-### [Enterprise-specific customizations](enterprise/enterprise-custom-portal.md)
+### [Enterprise desktop customizations](enterprise/enterprise-custom-portal.md)
 #### [Create a Kiosk Experience](enterprise/create-a-kiosk-image.md)
 ##### [Find the Application User Model ID of an installed app](enterprise/find-the-application-user-model-id-of-an-installed-app.md)
 ##### [Assigned access](enterprise/assigned-access.md)
