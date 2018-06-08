@@ -30,21 +30,21 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 To download Windows, see [the Windows 10 download page](https://www.microsoft.com/en-us/software-download/windows10). If you want to use media like a USB flash drive, a DVD, or an ISO, dowload the [Windows Media creation tool](https://www.microsoft.com/en-us/software-download/windows10?d2784474-fdb0-4e9d-9e47-5e88c0e053ec=True). 
 
 ## Boot and miminum security requirements
-<p>As the OEM, you must provide support for the features outlined in the [Hardware Compatibility Specification for Systems for Windows](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx), specifically the following items that are divided into two groups: boot requiements and minimum security requirements. </p>
+As the OEM, you must provide support for the features outlined in [Windows Hardware Compatibility Program Specifications and Policies](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/whcp-specifications-policies), specifically the following items that are divided into two groups: boot requiements and minimum security requirements. 
 
 ### Boot requirement
 
-- [System.Fundamentals.Firmware.UEFICompatibility]()
+- System.Fundamentals.Firmware.UEFICompatibility
 
 ### Minimum security requirements
 
-- [System.Fundamentals.Firmware.UEFIBitLocker](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefibitlocker)
-- [System.Fundamentals.Firmware.UEFICompatibility](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareueficompatibility)
-- [System.Fundamentals.Firmware.UEFIDefaultBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefidefaultboot)
-- [System.Fundamentals.Firmware.UEFILegacyFallback](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefilegacyfallback)
-- [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefisecureboot)
-- [System.Fundamentals.Firmware.UEFITimingClass](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#systemfundamentalsfirmwareuefitimingclass)
-- [System.Fundamentals.Firmware.UEFIBootEntries](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefibootentries)
+- System.Fundamentals.Firmware.UEFIBitLocker
+- System.Fundamentals.Firmware.UEFICompatibility
+- System.Fundamentals.Firmware.UEFIDefaultBoot
+- System.Fundamentals.Firmware.UEFILegacyFallback
+- System.Fundamentals.Firmware.UEFISecureBoot
+- System.Fundamentals.Firmware.UEFITimingClass
+- System.Fundamentals.Firmware.UEFIBootEntries
 
 ## Runtime requirements
 Windows uses these services, but will not cause failure if they are unimplemented.
