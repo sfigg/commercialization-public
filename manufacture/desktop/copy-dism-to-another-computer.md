@@ -33,7 +33,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
     CopyDandI.cmd amd64 E:\ADKTools\amd64
 	```
 
-## <span id="Add_PE_to_the_RAMdisk"></span>Option 2: Add WinPE to the WinPE RAMDisk. 
+## <span id="Add_DISM_to_the_RAMdisk"></span>Option 2: Add DISM to the WinPE RAMDisk. 
 
 Note: this will add roughly 4MB to the size of your DISM image, which may affect performance.
 
