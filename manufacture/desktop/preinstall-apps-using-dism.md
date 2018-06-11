@@ -17,7 +17,10 @@ ms.technology: windows-oem
 > [!Note]
 > Interested in preinstalling Microsoft Store apps, but you aren’t an OEM? For information about sideloading apps for organizations, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
-This topic how to preinstalling apps as part of your Windows image.
+This topic covers how to preinstall apps so they are included as part of a Windows image.
+
+> [!note]
+> Hardware Support Apps (HSAs) are Microsoft Store Apps, and the following instructions apply.
 
 ## <span id="BKMK_WorkWithAppPackages"></span><span id="bkmk_workwithapppackages"></span><span id="BKMK_WORKWITHAPPPACKAGES"></span>Work with app packages
 
@@ -43,7 +46,7 @@ You’ll need to use the license file from the package files to test your provis
 
 For offline provisioning of an app into an image, you can use either the Dism.exe tool or the DISM cmdlets in Windows PowerShell to add an app from a folder of unpacked files.
 
-### Preinstall a Microsoft Store-signed with DISM
+### Preinstall a Microsoft Store-signed app with DISM
 
 1.  Open the Command Prompt as administrator. 
 
