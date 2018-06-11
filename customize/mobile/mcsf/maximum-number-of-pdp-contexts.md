@@ -16,14 +16,15 @@ ms.technology: windows-oem
 # Maximum number of PDP contexts
 
 
-OEMs can set different maximum values for the number of PDP contexts for the device if required by their mobile operator.
+OEMs can set different maximum values for the number of PDP contexts for the device for 3GPP network if required by their mobile operator.
 
 By default, the OS enforces a maximum of four (4) simultaneous packet data protocol (PDP) contexts for 3GPP connections, and one (1) PDP context for 3GPP2 connections.
 
 The same maximums apply for both roaming and non-roaming scenarios. This maximum does not include packet contexts used internally by the modem.
 
-<a href="" id="constraints---none"></a>**Constraints:** None  
-This customization supports: **per-IMSI** value, **per-device** value
+<a href="" id="constraints---none"></a>**Constraints:**
+1. The setting `MaxNumberOfPDPContexts` is applicable for 3GPP networks only. It does not apply to 3GPP2 network.
+2. This customization supports: **per-IMSI** value, **per-device** value.
 
 <a href="" id="instructions-"></a>**Instructions:**  
 1.  Create a customization answer file using the contents shown in the following code sample.
