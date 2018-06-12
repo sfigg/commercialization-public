@@ -19,7 +19,7 @@ ms.technology: windows-oem
 
 This topic covers how to preinstall apps so they are included as part of a Windows image.
 
-> [!note]
+> [!tip]
 > Hardware Support Apps (HSAs) are Microsoft Store Apps, and the following instructions apply.
 
 ## <span id="BKMK_WorkWithAppPackages"></span><span id="bkmk_workwithapppackages"></span><span id="BKMK_WORKWITHAPPPACKAGES"></span>Work with app packages
