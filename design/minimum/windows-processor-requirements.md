@@ -46,7 +46,7 @@ Some product editions or edition/processor configurations listed below may have 
 | Windows 10 1709 | Up through currently enabled Intel Joule, Atom, Celeron and Pentium Processors* | Up through currently enabled Qualcomm Snapdragon Processors* | Up through currently enabled Broadcom Processors* |
 | Windows 10 1803 | Up through currently enabled Intel Joule, Atom, Celeron and Pentium Processors* | Up through currently enabled Qualcomm Snapdragon Processors* | Up through currently enabled Broadcom Processors* |
 
-\*Information on which processors are currently enabled is available at <https://developer.microsoft.com/windows/iot/explore/SoC>
+\*Information on which processors are currently enabled is available at <https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards>
 
 ## Windows IoT Enterprise / Embedded Processor table
 

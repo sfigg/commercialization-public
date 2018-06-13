@@ -26,19 +26,20 @@ The following image shows the HLK Studio **Package** tab.
 
 ![hlk studio package tab](images/hlk-studio-package-tab.png)
 
-## <span id="To_create_a_submission_package"></span><span id="to_create_a_submission_package"></span><span id="TO_CREATE_A_SUBMISSION_PACKAGE"></span>To create a submission package
+## To create a submission package
 
 
 1.  Select the **Package** tab.
 
 2.  If you used a special driver for a device (optional), submit it by doing this:
 
-    1.  Click **Add Driver Folder** &gt; **Browse** to select the folder, and then click **OK**.
+    1.  Click **Add Driver Folder** > **Browse** to select the folder, and then click **OK**.
 
     2.  In the **Driver Properties** dialog box, select the appropriate **Products** and **Locales**, and then click **OK**.
 
         >[!IMPORTANT]
-        >  The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.
+        > * Hardware Dev Center uses **Locales** to build the correct OS Language targeting for Windows Update. If you plan on publishing your driver to Windows Update, be sure to select all the languages you want it delivered to. 
+        > * The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.  
 
          
 
@@ -66,7 +67,7 @@ For additional information on packages, see the following topics:
 
 -   [HLK Signing with an HSM](..\user\hlk-signing-with-an-hsm.md)
 
-### <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
+### Next steps
 
 Congratulations, you have completed the end-to-end testing of your device using the Windows HLK. Submit the signed package (.hlkx file) through the Windows Hardware Dev Center Dashboard. (For more details, see [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/).)
 

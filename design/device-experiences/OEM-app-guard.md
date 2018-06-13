@@ -20,7 +20,7 @@ As an OEM, you provide the hardware necessary to enable Application Guard. Here 
 |----------------------|---------|
 | 64-bit CPU | A 64-bit computer is required for hypervisor and virtualization-based security (VBS). For more information about VBS, see [Virtualization Based Security (VBS)](OEM-vbs.md). |
 | CPU virtualization extensions | Extended page tables, also called Second Level Address Translation (SLAT) and one of the following virtualization extensions for VBS: VT-x (Intel) **-OR-** AMD-V |
-| Memory | Microsoft recommends 8GB for optimal performance |
+| Memory | Microsoft requires 8GB for optimal performance |
 | Hard drive | 5 GB free space, solid state disk (SSD) recommended |
 | IOMMU Support | Not required but highly recommended |
 
