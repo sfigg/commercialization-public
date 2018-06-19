@@ -43,16 +43,10 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 <tr>
 <td bgcolor="EEEEEE">Key Features</td>
 <td>
-<p>Low cost</p>
-<p>[Cortana](../device-experiences/cortana.md)</p>
-</td>
-<td>
-<p>[Cortana](../device-experiences/cortana.md)</p>
 <p>[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p>[Continuum for Phones](../device-experiences/continuum-phone.md)</p>
 </td>
 <td>
-<p>[Cortana](../device-experiences/cortana.md)</p>
 <p>[Windows Hello](../device-experiences/windows-hello.md)</p>
 </td>
 </tr>

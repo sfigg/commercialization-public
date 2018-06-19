@@ -32,10 +32,6 @@ To build devices with a rich user experience, you need to choose the right hardw
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>[Cortana](cortana.md)</p></td>
-<td><p>Provides guidance on speech platform techonolgy which powers Windows 10 features like Cortana and dictation.</p></td>
-</tr>
 <tr class="even">
 <td><p>[Docking](docking.md)</p></td>
 <td><p>Provides guidance on wired and wireless docking scenarios.</p></td>
