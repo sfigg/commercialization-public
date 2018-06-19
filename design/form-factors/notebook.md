@@ -47,27 +47,23 @@ A notebook is a portable clamshell device with an attached keyboard. The noteboo
 <tr>
 <td bgcolor="EEEEEE">Key Features</td>
 <td>
-<p>[Cortana](../device-experiences/cortana.md)</p>
 <p>[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p>[Battery Life 8+ hours](../component-guidelines/battery.md)</p>
 <p>[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
 </td>
 <td>
-<p>[Cortana](../device-experiences/cortana.md)</p>
 <p>[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
 <p>[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
 <p>[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">High-DPI (4K)</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Long battery life (12+ hours)](../component-guidelines/battery.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
 </td>
 <td style="width: 120px;">
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
