@@ -44,17 +44,14 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 <td bgcolor="EEEEEE"><p>Key Features</p></td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Low cost</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Continuum for Phones](../device-experiences/continuum-phone.md)</p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">[Battery Life 8+ hours](../component-guidelines/battery.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Ruggedized for commercial and educational use</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>

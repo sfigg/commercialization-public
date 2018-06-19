@@ -38,14 +38,12 @@ The All-in-one (AIO) form factor is an evolution of the traditional desktop with
 <td bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">Key Features</p></td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Portable (&lt;&nbsp;5&nbsp;pounds, thin)</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Battery Life (6+ hours)](../component-guidelines/battery.md)</p>
 <p style="margin: .75em 0 .75em 0;">Multi-user, multi-touch apps<br/>(Sensors, hinge design for &ldquo;lay-flat,&rdquo; 10-point touch)</p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">High-DPI&nbsp;(4K) &amp; multi-monitor support</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
 <p style="margin: .75em 0 .75em 0;">Multi-user, multi-touch apps</p>
