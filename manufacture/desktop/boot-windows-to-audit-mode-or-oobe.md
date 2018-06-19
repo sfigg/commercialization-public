@@ -78,7 +78,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
 
     where *&lt;image\_index&gt;* is the number of the selected image on the .wim file.
 
-3.  Copy the new answer file to the **C:\\test\\offline\\Windows\\Panther\\Unattend folder**.
+3.  Copy the new answer file to the **C:\\test\\offline\\Windows\\Panther\\Unattend** folder.
 
 4.  Commit the changes, and then unmount the image. For example:
 
