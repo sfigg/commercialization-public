@@ -70,7 +70,6 @@ A notebook is a portable clamshell device with an attached keyboard. The noteboo
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Premium A/V experience (DirectX&nbsp;12; 4K support, display &amp; chipset), premium speakers, chipset support for PlayReady, H/W DRM, H.265 H/W decode/encode)</p>
-<p style="margin: .75em 0 .75em 0;">[Cortana](../device-experiences/cortana.md)</p>
 <p style="margin: .75em 0 .75em 0;">Xbox content, Xbox Controller, Xbox Live</p>
 <p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
 <p style="margin: .75em 0 .75em 0;">[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
