@@ -30,11 +30,13 @@ HLK Studio supports driver-only updates using the **Connect** option. This is co
 4. Select **Package**, and then select **Browse** to open the downloaded DUA shell package.
 
 5. Select **Open as Driver Update package**
+
     ![An image showing the driver update package notification](images/open-as-driver-update-package.png)
 
 6. Select **Ok**.
 
 7. Select the **package** tab, and right-click the appropriate driver folder. Then select **Replace Driver**
+
     ![An image showing the 'replace driver' window](images/replace-driver-window.png)
 
 8. Find and select the folder where your driver updates are located.
