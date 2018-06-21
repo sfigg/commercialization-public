@@ -113,6 +113,7 @@
 
 ### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
 #### [Windows 10S security features and requirements](device-experiences/OEM-10S-security.md)
+#### [OEM guidance for Windows 10 security for Thunderbolt™ 3](device-experiences/oem-security-thunderbolt.md)
 #### [Standards for a highly secure Windows 10 device](device-experiences/OEM-highly-secure.md)
 #### [BitLocker drive encryption in Windows 10 for OEMs](device-experiences/OEM-bitlocker.md)
 #### [Secure boot](device-experiences/OEM-secure-boot.md)
