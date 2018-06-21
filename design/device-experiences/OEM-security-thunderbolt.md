@@ -34,11 +34,7 @@ This feature is only available for Intel x64 platforms in Windows 10, version 18
 
 ## User experience
 
-The native OS security solution for Thunderbolt™ 3 hosts/PCs will reduce the user required interaction to enumerate newly connected Thunderbolt™ 3 devices, thus bringing the overall experience one step closer to the USB experience. This OS native support will replace the existing Intel Thunderbolt™ 3 Security mechanism, which requires users to approve newly attached devices via UI popups, starting Windows 10 RS4. 
-
-The following diagram illustrates the flow of enumerating and starting an attached Thunderbolt™ 3 peripheral:
-
-![Thunderbolt security user experience](../images/thunderbolt-security-user-experience.png)
+The native OS security solution for Thunderbolt™ 3 hosts/PCs will reduce the user required interaction to enumerate newly connected Thunderbolt™ 3 devices, thus bringing the overall experience one step closer to the USB experience. This OS native support will replace the existing Intel Thunderbolt™ 3 Security mechanism, which requires users to approve newly attached devices via UI popups, starting with Windows 10 version 1803. 
 
 ## Platform and BIOS requirements
 
