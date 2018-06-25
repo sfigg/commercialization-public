@@ -126,10 +126,10 @@ The following example shows what your Windows provisioning answer file might loo
                              <Setting>
                                 <!-- Duration of time after sleep that the system automatically wakes and enters hibernate in seconds -->
                                 <StandbyBudgetPercent>
-                                   <DcValue></DcValue>
+                                   <DcValue>3</DcValue>
                                 </StandbyBudgetPercent>
                                 <StandbyReserveTime>
-                                   <DcValue></DcValue>
+                                   <DcValue>1200</DcValue>
                                 </StandbyReserveTime>
                              </Setting>
                           </Default>
