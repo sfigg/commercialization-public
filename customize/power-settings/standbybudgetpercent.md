@@ -21,16 +21,16 @@ Defines the battery drain percentage that the user is allowed in a standby sessi
 ## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
 
 
--   **Windows Provisioning:** `StandbyBudgetPercent       `
+-   **Windows Provisioning:** `StandbyBudgetPercent`
 
 -   **Hidden setting:** Yes
 
 ## <span id="Values"></span><span id="values"></span><span id="VALUES"></span>Values
 
 
-The value denotes the percentage (%).
+The value denotes the percentage, example: `3` = 3%. 
 
-You can configure the values for the following sub-settings:` DcValue` and `AcValue       `
+You can configure the values for the following sub-settings: `DcValue` and `AcValue`
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 
