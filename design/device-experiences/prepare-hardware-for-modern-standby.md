@@ -36,6 +36,7 @@ After all devices outside of the SoC, including communications devices, have bee
 
 The process for preparing the hardware for low-power during standby can be visualized as an upside-down pyramid, as shown in the following diagram. The lowest power is achieved when the whole SoC chip is powered down, but this can occur only after each set of devices above it in the pyramid has been powered down.
 
+![Power pyramid](../images/power-pyramid.png)
 
 ## Powering down the devices outside the SoC
 
