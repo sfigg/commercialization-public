@@ -27,7 +27,12 @@ Generally, Windows expects one of two hardware topologies for the power and char
 
 The first topology is shown in the following block diagram. This topology, which is common in PCs that run Windows 7, uses an embedded controller in the platform. The embedded controller typically performs multiple functions in a mobile Windows PC, including power source control, battery charge management, power button/switch detection, and PS/2-compatible keyboard and mouse input. The embedded controller is typically connected to the core silicon through the Low Pin Count (LPC) bus. Windows queries and is notified about power subsystem information through the ACPI embedded controller interface.
 
+![Topology common in Windows 7](../images/batterydrivermodelforwindows.png)
+
 The second topology is shown in the following block diagram. This topology uses a battery charge controller and fuel gauge component, which are connected directly to the platform's core silicon over a simple peripheral bus, such as I²C. In this configuration, Windows queries and is notified about power subsystem changes through communications over the I²C bus. A Simple Peripheral Bus (SPB) operation region enables ACPI control method code in firmware to communicate to the battery charge controller and fuel gauge components that are connected to the core silicon over an I²C bus.
+
+![battery charge controller and fuel gage](../images/batterychargefuelgaugetopology.jpg)
+
 
 ## ACPI operation with an embedded controller
 
