@@ -5,7 +5,7 @@ ms.assetid: 6390f427-a201-487e-928f-964e7b84327c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Features On Demand'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 Features on Demand (FODs) are Windows feature packages that can be added at any time. Common features include language resources like handwriting recognition or the .NET Framework (.NetFx3). When a Windows 10 PC needs a new feature, it can request the feature package from Windows Update.
 
-OEMs can preinstall FODs into a Windows image by leveraging DISM with the `/Add-Capability` option. By default `/Add-Capability` downloads features from Windows Update and adds them to the image, but you can use the `/Source` and `/LimitAccess` options to tell Windows where to download features from:
+OEMs can preinstall FODs into a Windows image with DISM's `/Add-Capability` option. By default `/Add-Capability` downloads features from Windows Update and adds them to the image, but you can use the `/Source` and `/LimitAccess` options to tell Windows where to download features from:
 
 - **/Source** allows you to choose a location where the capability source files are located. You can use multiple /Source arguments.
 
@@ -40,10 +40,10 @@ Unlike previous feature packs, Features on Demand can be applicable to multiple 
  
 | Command | Description | Example |
 | --- | --- | --- |
-| /Add-Capability | <p>Adds a capability to an image.</p><p>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech.</p><div class="alert">**Note:** DISM attempts to procure files required to install the capability from the following locations:<ol><li>If **/Source** is specified, DISM looks in the specified locations first.</li><li>If **/Source** is not specified, or if the source files are not found in the specified locations, DISM checks the locations specified by the group policy.</li><li>If the files still aren't found, and if DISM is working against an online image, and if **/LimitAccess** is not specified, it looks for the files on Windows Update.</li></ol></div> | `DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
+| /Add-Capability | <p>Adds a capability to an image.</p><p>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech.</p>DISM looks for source files in the following locations:<ol><li>If **/Source** is specified, DISM looks in the specified locations first.</li><li>If **/Source** is not specified, or if the source files are not found in the specified locations, DISM checks the locations specified by group policy.</li><li>If the files still aren't found, and if DISM is running against an online image, and if **/LimitAccess** is not specified, it looks for the files on Windows Update.</li></ol> | `DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 | /Get-Capabilities | Get capabilities in the image. | `DISM /Online /Get-Capabilities` |
 | /Get-CapabilityInfo | Get information of a capability in the image. | `DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
-| /Remove-Capability | <p>Removes a capability from an image.</p><div class="alert">**Note:** You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability.</p></div> | `DISM.exe /Online /Remove-Capability  /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
+| /Remove-Capability | <p>Removes a capability from an image.</p>**Note**: You cannot remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability.</p> | `DISM.exe /Online /Remove-Capability  /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |
 
 To see all available DISM commands for capabilities, see [DISM Capabilities Package Servicing Command-Line Options](dism-capabilities-package-servicing-command-line-options.md).
 
