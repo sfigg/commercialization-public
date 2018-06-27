@@ -35,7 +35,7 @@ Device Update Center portal provides OEMs a way to
 
 1. Create a new product using the command `newproduct <productname> <bspname>`
 
-2. Configure the SMBIOS fields based on the format defined by the bsp ( for qualcomm, this is defined in a SMBIOS.cfg file), See [OEM License Requirements](../commercialize-your-device/OEMLicenseRequirements.md). The key fields used in the update are 
+2. Configure the SMBIOS fields based on the format defined by the bsp ( for qualcomm, this is defined in a SMBIOS.cfg file), See [OEM License Requirements](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements). The key fields used in the update are 
     - **System Product Name**, referred in the update portal as **Device Model**.
     - **Base Board Product**, referred in the update portal as **Hardware Variant ID**.
 
