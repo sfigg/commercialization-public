@@ -32,5 +32,6 @@
 ### [IoT Core OS Update](iot/iot-core-update.md)
 ### [Manage IoT Core device updates](iot/managing-iot-device-update.md)
 ### [Update IoT Core Apps](iot/updating-iot-core-apps.md)
+### [Device Update Center](iot/using-device-update-center.md)
 
 ## [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/library/windows/hardware/mt786455.aspx)
