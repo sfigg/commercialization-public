@@ -4,6 +4,11 @@ description: OEMs can configure hardware to support Windows 10 automatic device 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+ms.author: justinha
+ms.date: 06/28/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # BitLocker drive encryption in Windows 10 for OEMs
