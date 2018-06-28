@@ -25,9 +25,19 @@ Device Update Center portal provides OEMs a way to:
 1. Create a [Windows Harware Dev Center account](http://aka.ms/ducregister) to access the Device Update Center(DUC). You will need:
 
    - **An Extended Validation (EV) code signing certificate**: Used to validate the update cab file submitted for updates
-    - **An Azure Active Directory (AAD) account with administrator rights**: Used to sign legal agreements
+   - **An Azure Active Directory (AAD) account with administrator rights**: Used to sign legal agreements
+   
+   See [Register for the Hardware Program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program) for the detailed instructions on the registration process. 
 
 2. Sign up for [Windows 10 IoT Core Services](http://aka.ms/iotcoreservices)
+
+3. Login to Hardware Dev Center with the administrator role and specify roles for other users in your organisation. You will need:
+
+    - **Driver Submitter** role to submit OEM Custom packages
+    - **Shipping Label Owner** and **Shipping Label Promoter** roles to flight updates. 
+  
+   See [Managing User Roles](https://docs.microsoft.com/windows-hardware/drivers/dashboard/managing-user-roles) for detailed instructions.
+
 
 ### Install the tools
 
@@ -138,7 +148,7 @@ So far, we have created an updateable image which can be used to manufacture and
 
 8. After successful validation of the update build, export the required packages: `exportpkgs <destdir> <productname> <retail/test>`
 
-   `<productname>_OCP_<version>.cab` will be created in the `<destdir>\<version#>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information.
+   `<productname>_OCP_<version>.cab` will be created in the `<destdir>\<version>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information.
 
    - If you are using different code signing cert for the packages, resign this cab file with the EV cert registered with the portal: `sign.cmd <cert attributes> <productname>_OCP_<version>.cab`
 
@@ -189,7 +199,7 @@ After successfully publishing the updates, you can now control the delivery proc
 
    ![flight2](images\flight2.PNG)
 
-   a. Specify the ring (`Preview` / `EarlyAdopter` / `GeneralAvailability`), for example, Preview. Note that the xml file that is downloaded and included in the image, and sets this value to *GeneralAvailability* by default
+   a. Specify the ring (`Preview` / `EarlyAdopter` / `GeneralAvailability`), for example, Preview. Note that the xml file that is downloaded and included in the image, sets this value to *GeneralAvailability* by default
 
       - **Preview** ring: updates a limited set of devices, mostly in the lab
 
