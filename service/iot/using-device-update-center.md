@@ -33,8 +33,8 @@ Device Update Center portal provides OEMs a way to:
 
 3. Login to Hardware Dev Center with the administrator role and specify roles for other users in your organisation. You will need:
 
-    - **Driver Submitter** role to submit OEM Custom packages
-    - **Shipping Label Owner** and **Shipping Label Promoter** roles to flight updates. 
+    - **Driver Submitter** role for update submission
+    - **Shipping Label Owner** role for update flighting 
   
    See [Managing User Roles](https://docs.microsoft.com/windows-hardware/drivers/dashboard/managing-user-roles) for detailed instructions.
 
