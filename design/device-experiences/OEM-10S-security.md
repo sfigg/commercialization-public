@@ -4,7 +4,7 @@ description: Provides guidance on what Windows 10 S provides and what is require
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.author: dawnwood
+ms.author: justinha
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: windows-hardware
