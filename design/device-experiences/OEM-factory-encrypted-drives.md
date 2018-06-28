@@ -4,8 +4,8 @@ Description: Factory Encrypted Drives
 ms.assetid: 3469481b-f380-4585-87c8-ca8a267fe607
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Factory Encrypted Drives
-ms.author: dawnwood
-ms.date: 12/07/2017
+ms.author: justinha
+ms.date: 06/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
