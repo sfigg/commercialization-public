@@ -4,7 +4,7 @@ description: Provides guidance on what an OEM should do to enable Application Gu
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.author: dawnwood
+ms.author: justinha
 ms.date: 09/29/2017
 ms.topic: article
 ms.prod: windows-hardware
