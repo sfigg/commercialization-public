@@ -96,7 +96,7 @@ To receive certification, Microsoft partners must meet the following requirement
 
 -   OEMs and IHVs must run and document the tests that are specified in the [GPS acceptance test matrix](#matrix) before they can submit a system, device, or driver to Microsoft.
 
--   IHVs should review failures as reported at http://sysdev.microsoft.com that are caused by their GPS drivers, and fix all high-impact failures.
+-   IHVs should review reported failures from their [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for issues caused by their GPS drivers, and fix all high-impact failures. 
 
 -   Antenna requirements from OEMs must include the items that are listed in [Antenna performance tests](#antperf).
 
@@ -265,9 +265,9 @@ WDF Verifier is enabled by default for all WDF drivers. The **WdfVerifier.exe** 
 
 ### <span id="Telemetry_data"></span><span id="telemetry_data"></span><span id="TELEMETRY_DATA"></span>Telemetry data
 
-**Description**: Monitor telemetry data from site http://sysdev.microsoft.com for the GPS driver.
+**Description**: Monitor telemetry data from your [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for the GPS driver.
 
-**Run Steps**: Monitor telemetry data from http://sysdev.microsoft.com for the GPS driver. Identify, investigate, and fix the driver failures.
+**Run Steps**: Monitor telemetry data from your [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for the GPS driver. Identify, investigate, and fix the driver failures.
 
 **Expected Result**: The device must report all telemetry failures; you should triage, investigate, and fix the primary problems.
 
