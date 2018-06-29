@@ -27,7 +27,7 @@ When Microsoft discovers a problem in either a Windows HLK test or in the operat
 ## <span id="To_install_filters"></span><span id="to_install_filters"></span><span id="TO_INSTALL_FILTERS"></span>To install filters
 
 
-![download image](images/downloadbutton.jpg)[Download the latest HLK Filters](https://sysdev.microsoft.com/member/SubmissionWizard/LegalExemptions/HCKFilterUpdates.cab)
+![download image](images/downloadbutton.jpg)[Download the latest HLK Filters](https://go.microsoft.com/fwlink/?linkid=875139)
 
 >[!NOTE]
 >  
@@ -75,10 +75,6 @@ For existing results, you must select the **Apply Filters** option on the **Resu
 
 ## <span id="related_topics"></span>Related topics
 
-
-[Subscribe to the errata filters RSS feed to be alerted when new filters are available](http://sysdev.microsoft.com/member/SubmissionWizard/LegalExemptions/HCKFilterUpdates.xml)
-
-[Review released filters on the Errata Contingency page](https://sysdev.microsoft.com/EC/)
 
  
 
