@@ -28,7 +28,7 @@
 ### [Launch the MDM enrollment app in Windows](mobile/launch-the-mdm-enrollment-app-in-windows.md)
 ## [Windows Embedded device upgrades](mobile/upgrade-windows-embedded-devices-to-windows-10.md)
 
-## [IoT Core updates](iot/index.md)
+## [IoT Core servicing](iot/index.md)
 ### [IoT Core OS Update](iot/iot-core-update.md)
 ### [Manage IoT Core device updates](iot/managing-iot-device-update.md)
 ### [Update IoT Core Apps](iot/updating-iot-core-apps.md)
