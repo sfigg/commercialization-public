@@ -99,7 +99,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 	-  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
 
-    -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
+    -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, CUSTOM_CMD, OEM_FileAndRegKey, that you created in Lab 1.
 
        ``` xml
        <Microsoft>
@@ -111,7 +111,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
           <Feature>RPI2_DRIVERS</Feature> 
           <Feature>IOT_DISABLE_UMCI</Feature> 
           <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
-          <Feature>OEM_CustomCmd</Feature> 
+          <Feature>CUSTOM_CMD</Feature> 
           <Feature>OEM_AppxHelloWorld</Feature> 
           <Feature>OEM_FileAndRegKey</Feature> 
         </OEM>
