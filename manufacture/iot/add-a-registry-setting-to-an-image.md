@@ -94,7 +94,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 1.  Open the common feature manifest file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml**
 
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "Custom_FilesAndRegKeys".
+2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "CUSTOM_FilesAndRegKeys".
 
     ``` xml
     <Features>
