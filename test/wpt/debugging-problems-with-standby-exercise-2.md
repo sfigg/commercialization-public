@@ -19,7 +19,7 @@ A tight integration between drivers, devices, Windows, and the firmware is requi
 
 If a device is missing a driver or doesn’t have the right driver, it can impact the associated device power management and resulting D-state.
 
-1.  Download the pre-generated **sleepstudy-report\_2.html** report [here](http://download.microsoft.com/download/3/2/E/32E8B553-47F6-4E2A-9109-C6D678FE0EE8/sleepstudy-report_2.mdl).
+1.  Download the pre-generated **sleepstudy-report\_2.html** report [here](http://download.microsoft.com/download/3/2/E/32E8B553-47F6-4E2A-9109-C6D678FE0EE8/sleepstudy-report_2.html).
 
     here.
 
