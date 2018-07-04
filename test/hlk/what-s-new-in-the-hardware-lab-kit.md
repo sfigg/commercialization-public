@@ -83,7 +83,7 @@ Learn more about playlists in the [Getting Started Guide](getstarted\step-6-sele
 
 Hardware certification is no longer required. Instead, the Windows Hardware Compatibility Program is an optional program in which you can participate. For more information, see [Windows Hardware Compatibility Program](user\windows-hardware-compatibility-program-overview.md).
 
--   Compatibility Playlist - Levels are no longer used to identify tests required for the Compatibility Program. To create a Compatibility Program test pass, download the official [Hardware Compatibility Program Playlist](https://sysdev.microsoft.com/en-US/Hardware/compatibilityplaylists/) and apply to your HLK project.
+-   Compatibility Playlist - Levels are no longer used to identify tests required for the Compatibility Program. To create a Compatibility Program test pass, download the official [Hardware Compatibility Program Playlist](https://go.microsoft.com/fwlink/?linkid=875150) and apply to your HLK project.
 -   [Windows Hardware Certification blog](http://blogs.msdn.com/b/windows_hardware_certification) -This blog provides up-to-date news about the Windows Compatibility Program. Including Compatibility Playlist update announcements.
 
 ### <span id="OS_Support"></span><span id="os_support"></span><span id="OS_SUPPORT"></span>OS Support
