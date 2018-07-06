@@ -28,7 +28,9 @@ In Windows 10, users can no longer enter a computer name during OOBE as the nam
 ## Values
 
 
-If `ComputerName` is set to an asterisk (\*) or is an empty string, a random computer name will be generated. This random name has 15 characters: up to 7 characters from [RegisteredOwner](microsoft-windows-shell-setup-registeredowner.md) and [RegisteredOrganization](microsoft-windows-shell-setup-registeredorganization.md), followed by a dash, and then followed by random characters.
+If `ComputerName` is not specified, a random computer name is generated.
+
+If `ComputerName` set to an asterisk (\*) or is included but empty (""), Windows creates a random 15-character name using up to 7 characters from [FullName](microsoft-windows-setup-userdata-fullname.md) and [Organization](microsoft-windows-setup-userdata-organization.md), then a dash, then more random characters.
 
 `ComputerName` is a string with a maximum length of 15 bytes of content:
 
@@ -40,14 +42,13 @@ If `ComputerName` is set to an asterisk (\*) or is an empty string, a random com
 
 Computer names that cannot be validated through the DnsValidateName function cannot be used, for example, computer names that only contain numbers (0-9). For more information, see the [DnsValidateName function](http://go.microsoft.com/fwlink/?LinkId=257040).
 
-## Valid Configuration Passes
-
+## Valid configuration passes
 
 offlineServicing
 
 specialize
 
-## Parent Hierarchy
+## Parent hierarchy
 
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **ComputerName**
@@ -57,7 +58,7 @@ specialize
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
-## XML Example
+## XML example
 
 
 The following XML output shows how to set the computer name.

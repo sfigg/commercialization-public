@@ -14,10 +14,7 @@
 ### [Embedded devices](form-factors/embedded-devices.md)
 
 ## [Device experiences](device-experiences/device-experiences-scenarios.md)
-### [Cortana](device-experiences/cortana.md)
-#### [Speech Platform: Input Device Recommendations](device-experiences/speechplatformdevicesrecommendations.md)
-#### [Speech Platform: Input Device Test Setup](device-experiences/speechplatformdevicestestsetup.md)
-#### [Speech Platform: Input Device Hardware Guidelines](device-experiences/speechplatformdevices-hwguidelines.md)
+
 ### [Docking](device-experiences/docking.md)
 ### [Continuum](device-experiences/continuum-phone.md)
 ### [Tablet mode](device-experiences/continuum.md)

@@ -161,7 +161,7 @@ Before customizing an image, use the offline servicing pass of unattend to set a
 
 1. Use Windows SIM to create an unattend file.
 2. Add `SkuPolicyRequired` to the offlineServicing pass
-3. Set `SkuPolicyReqiured` to `1`
+3. Set `SkuPolicyRequired` to `1`
 4. Save the file as unattend.xml
 5. Copy unattend.xml to the mounted Windows image:
     

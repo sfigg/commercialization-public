@@ -159,7 +159,7 @@ The following table provides a description of how each international servicing o
 <p>Argument: &lt;<em>timezone_name</em>&gt;</p></td>
 <td align="left"><p>Sets the default time zone in a Windows image. Before setting the time zone, DISM verifies that the specified time zone string is valid for the image.</p>
 <p>&lt;<em>timezone_name</em>&gt; specifies the name of the time zone to use; for example, Pacific Standard Time. For a complete list of time-zone strings, see the Windows® Unattended Setup Reference. On a computer that is running Windows 7, you can use the tzutil command-line tool to list the time zone for that computer. The tzutil tool is installed by default on Windows 7.</p>
-<p>The name of the time zone must exactly match the name of the time zone settings in the registry in <strong>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\TimeZones\</strong>.</p>
+<p>The name of the time zone must exactly match the name of the time zone settings in the registry in <strong>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones</strong>.</p>
 <p>If you add a custom time zone to your computer, you can specify that custom time-zone string.</p>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /Set-TimeZone:&quot;W. Europe Standard Time&quot;</strong></p></td>
