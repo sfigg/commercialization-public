@@ -28,7 +28,7 @@ In Windows 10, users can no longer enter a computer name during OOBE as the nam
 ## Values
 
 
-If `ComputerName` is set to an asterisk (\*) or is an empty string, a random computer name will be generated. This random name has at most eight characters from the [RegisteredOwner](microsoft-windows-shell-setup-registeredowner.md) and/or [RegisteredOrganization](microsoft-windows-shell-setup-registeredorganization.md) strings plus random characters.
+If `ComputerName` is set to an asterisk (\*) or is an empty string, a random computer name will be generated. This random name has 15 characters: up to 7 characters from [RegisteredOwner](microsoft-windows-shell-setup-registeredowner.md) and [RegisteredOrganization](microsoft-windows-shell-setup-registeredorganization.md), followed by a dash, and then followed by random characters.
 
 `ComputerName` is a string with a maximum length of 15 bytes of content:
 
