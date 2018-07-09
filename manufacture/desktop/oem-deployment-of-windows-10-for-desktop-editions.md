@@ -691,7 +691,7 @@ Your apps are now ready to work with your image.
 
 #### Add Features on Demand
 
-Add a Feature on Demand (FOD) to your Windows image. [Features on Demand](features-on-demand-v2--capabilities) are features that you can choose to preinstall. You can see a list of available FODs, and recommendations for preinstallation [here](features-on-demand-non-language-fod).
+Add a Feature on Demand (FOD) to your Windows image. [Features on Demand](features-on-demand-v2--capabilities.md) are features that you can choose to preinstall. You can see a list of available FODs, and recommendations for preinstallation [here](features-on-demand-non-language-fod.md).
 
 Here we'll show you how to preinstall the .Net Framework Feature on Demand. 
 
