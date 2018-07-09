@@ -71,6 +71,7 @@ Represents a collection of problem categories and collectors elements.
 | :---------------------------------------- | :----------------------------------------------------- | :------------------- |
 | [ProblemCategories](problemcategories.md) | Represents a collection of problem categories.         | Required, exactly 1. |
 | [Collectors](collectors.md)               | Represents a collection of collectors for the profile. | Required, exactly 1. |
+| [TraceMergeProperties](tracemergeproperties.md) | Represents a collection of trace merge properites. | Optional, exactly 1. |
 
 
 ### Parent Elements
