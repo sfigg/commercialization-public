@@ -672,22 +672,7 @@ To apply the update that you downloaded in the previous section to your WinRE im
 Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\windows10.0-kb4000001-x64.msu"
 ```
 
-### Apps
-
-This section covers working with Apps, including reinstalling inbox apps after updates, how to add Microsoft Store apps, and how to add Microsoft Office.
-
-This section continues to use your mounted Windows image. If your image isn't still mounted, mount it.
-
-**Reminder**: Install apps only after you have installed languages and updates, in that order.
-
-#### Reinstall inbox apps
-
-Now that you've added languages and updates to your image, you have to reinstall the apps that come with Windows. This makes sure that the apps will work and include the languages you have added to your image. To reinstall these apps, you'll need the App update OPK or the inbox Apps ISO.
-
-1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64 
-2. Run the `E:\apps\ReinstallInboxApps-x64.bat` script.
-
-Your apps are now ready to work with your image.
+### Features
 
 #### Add Features on Demand
 
@@ -713,6 +698,22 @@ Note: While it’s possible to add FODs using the /add-package command, we recom
 
 .NET framework is now added to your image.
 
+### Apps
+
+This section covers working with Apps, including reinstalling inbox apps after updates, how to add Microsoft Store apps, and how to add Microsoft Office.
+
+This section continues to use your mounted Windows image. If your image isn't still mounted, mount it.
+
+**Reminder**: Install apps only after you have installed languages and updates, in that order.
+
+#### Reinstall inbox apps
+
+Now that you've added languages and updates to your image, you have to reinstall the apps that come with Windows. This makes sure that the apps will work and include the languages you have added to your image. To reinstall these apps, you'll need the App update OPK or the inbox Apps ISO.
+
+1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64 
+2. Run the `E:\apps\ReinstallInboxApps-x64.bat` script.
+
+Your apps are now ready to work with your image.
 
 #### Add a Microsoft Store app
 
