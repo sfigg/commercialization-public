@@ -1,9 +1,10 @@
 ---
 title: Microsoft-Windows-MicrosoftEdgeBrowser
-description: MicrosoftEdgeBrowser
+description: Microsoft-Windows-MicrosoftEdgeBrowser
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
+author: kpacquer
 ms.author: kenpacq
 ms.date: 08/02/2018
 ms.topic: article

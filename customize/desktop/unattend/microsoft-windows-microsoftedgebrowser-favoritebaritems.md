@@ -1,11 +1,11 @@
 ---
 title: FavoriteBarItems
-description: 
+description: FavoriteBarItems
 MSHAttr:
 -'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
-author: kenpacq
+author: kpacquer
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: windows - hardware
