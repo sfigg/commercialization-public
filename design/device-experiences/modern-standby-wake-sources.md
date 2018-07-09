@@ -10,7 +10,7 @@ MSHAttr:
 author: beneluxboy
 ms.assetid: 4DB2F090-A0AD-4167-8805-85930FEF926F
 ms.author: dongill
-ms.date: 05/02/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

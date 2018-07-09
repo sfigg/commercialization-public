@@ -26,7 +26,7 @@ Here's how we'll refer to them:
 
 -   **IoT device**: A test device or board that represents all of the devices in a single model line.
 
-    For our examples, you'll need a Raspberry Pi 3. To see more options, see [Suggested Boards and SoCs](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/suggestedboards).
+    For our examples, you'll need a Raspberry Pi 3. For more options, see [SoCs and Custom Boards](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 -   An **HDMI cable**, and a **monitor or TV** with a dedicated HDMI input. We'll use this to verify that the image is loaded and that our sample apps are running.
 

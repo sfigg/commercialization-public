@@ -4,7 +4,7 @@ description: Provides guidance on what an OEM should do to enable Windows Defemd
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.author: dawnwood
+ms.author: justinha
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware

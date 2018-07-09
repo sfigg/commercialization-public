@@ -28,7 +28,7 @@ Update, refresh, or refurbish your after-market devices.
 <li>[Embedded OS: Upgrade Windows Embedded devices to Windows 10](mobile/upgrade-windows-embedded-devices-to-windows-10.md)</li>
 <li>[Mobile: Update](mobile/index.md)</li>
 <li>[Drivers: Manage Driver Distribution in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt181352.aspx)</li>
-<li>[IoT core device updates](iot/index.md)</li>
+<li>[IoT Core device updates](iot/index.md)</li>
 </ul></td>
 </tr>
 <tr class="even">
