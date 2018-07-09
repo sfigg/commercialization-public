@@ -590,7 +590,7 @@ Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1
 > You can use the /recurse option to add an entire folder of drivers
 
 
-## Add updates to your image
+### Add updates to your image
 
 While your image is mounted, you can add Windows updates. The process is similar to the one we used to add drivers earlier.
 
@@ -602,7 +602,7 @@ Reminder:
 - If a **Servicing Stack Update (SSU) is required**, you'll have to apply it before applying the most recent General Distribution Release or any future GDRs.
 
 
-### Add a Windows update package
+#### Add a Windows update package
 
 Use DISM to apply the latest servicing stack update (SSU) and general distribution release (GDR) as well as any prerequisite KB updates. You can find KB updates in the following locations:
 
@@ -659,7 +659,7 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     The operation completed successfully.
     ```
 
-### Add Update packages to WinRE
+#### Add Update packages to WinRE
 
 In this section, we cover how to add updates to the WinRE image.
 
@@ -672,9 +672,9 @@ To apply the update that you downloaded in the previous section to your WinRE im
 Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\windows10.0-kb4000001-x64.msu"
 ```
 
-### Features
+### Features and Apps
 
-#### Add Features on Demand
+#### Features on Demand
 
 Add a Feature on Demand (FOD) to your Windows image. [Features on Demand](features-on-demand-v2--capabilities.md) are features that you can choose to preinstall. You can see a list of available FODs, and recommendations for preinstallation [here](features-on-demand-non-language-fod.md).
 
@@ -698,7 +698,7 @@ Note: While it’s possible to add FODs using the /add-package command, we recom
 
 .NET framework is now added to your image.
 
-### Apps
+#### Apps
 
 This section covers working with Apps, including reinstalling inbox apps after updates, how to add Microsoft Store apps, and how to add Microsoft Office.
 
@@ -765,9 +765,9 @@ For this section, you'll need to have at least two apps to add to your image. If
 DISM.exe /Image:"C:\mount\windows" /Optimize-ProvisionedAppxPackages
 ```
 
-### Preinstall Microsoft Office
+#### Preinstall Microsoft Office
 
-#### Related sets
+##### Related sets
 
 The Office apps are delivered as a set of apps that are installed and serviced together.  The main package for Office is a set of shared code and each Office app (for example, Word, Excel, and PowerPoint) is installed as an optional package. These packages are delivered as appxbundles that support all Store languages.  
 
@@ -783,7 +783,7 @@ The Office apps are delivered as a set of apps that are installed and serviced t
 | Word |	Microsoft.Office.Desktop.Word_8wekyb3d8bbwe |	word.appxbundle<br></br>word_License1.xml |
 
 
-#### Add Office apps to your image
+##### Add Office apps to your image
 
 To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPackage` option. This option also requires the following information for each app you add:
 -   `/PackagePath`: This is only used to specify the path to the .appxbundle file for the shared code package.  
@@ -852,13 +852,13 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
     To complete the Office install, you’ll need to unmount the image and commit your changes, which we'll do this after we’ve completed all customizations at the end of this lab.
 
 
-## Modify the Start layout
+### Modify the Start layout
 
-### New in Windows 10, version 1803
+#### New in Windows 10, version 1803
 
 Apps can now be pinned to the All Apps list without also having to be pinned as a Start tile.  This is done through the new "region" switch (as described in the previous section).  In the previous section, we added three apps to our image:  App1, App2, and Office.  In this lab, we will omit App1 from LayoutModification.xml to ensure that App1 only appears in the All Apps list, and not also as a Start menu tile. We will also include App2 in LayoutModification.xml to demonstrate that even if the "region" switch was used when adding the app to the image, the app will still appear in the Start Menu if included in the LayoutModification.xml file.  In other words, the LayoutModification.xml file takes precedence.  
 
-### Start menu
+#### Start menu
 
 If you don’t create a LayoutModification.xml file and you use the Start Unattend settings, Windows will take the first 12 `SquareTiles` or `DesktoporSquareTiles` settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If `OEMName` is specified in the Unattend file, the value for this element is used to name the OEM groups that get created.
 
@@ -873,7 +873,7 @@ To take advantage of the new features, and to have the most robust and complete 
 
 To learn more about layoutmodification.xml, see [LayoutModification XML](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#layoutmodification-xml).
 
-### About the Start Menu layout
+#### About the Start Menu layout
 
 1.  Use the optional `Region` attribute in the `RequiredStartGroups` element to use different layouts for different regions. The `Region` value must be equal to two-letter country/region codes, and separated by a pipe "|" delimiter if you're specifying multiple regions. The regions listed in the group are related to the regions you specified when you added apps to your image using the `/region` option.  If the country/region setting for the Windows device matches a `RequiredStartGroups`, then the tiles laid out within the `RequiredStartGroups` is applied to Start. 
 If you specify a region-agnostic `RequiredStartGroups` (or one without the optional Region attribute) then the region-agnostic `RequiredStartGroups` is applied to Start.
