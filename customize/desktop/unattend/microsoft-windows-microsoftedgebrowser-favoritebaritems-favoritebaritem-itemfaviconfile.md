@@ -2,7 +2,7 @@
 title: ItemFavIconFile
 description: ItemFavIconFile
 MSHAttr:
--'PreferredSiteName:MSDN'
+- 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kpacquer
@@ -21,7 +21,7 @@ ms.technology: windows - oem
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 
-| _Pathandfilename_ | Specifies the location and the name of the icon to associate with the [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. _Pathandfilename_ is a string. |
+| _PathAndFileName_ | Specifies the location and the name of the icon to associate with the [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. _PathAndFileName_ is a string. |
 
 ## Valid Configuration Passes
 

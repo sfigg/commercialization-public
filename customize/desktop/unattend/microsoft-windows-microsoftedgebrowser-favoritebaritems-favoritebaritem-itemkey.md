@@ -2,7 +2,7 @@
 title: ItemKey
 description: ItemKey
 MSHAttr:
--'PreferredSiteName:MSDN'
+- 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kpacquer

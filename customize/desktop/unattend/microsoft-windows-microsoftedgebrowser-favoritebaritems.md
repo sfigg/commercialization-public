@@ -2,7 +2,7 @@
 title: FavoriteBarItems
 description: FavoriteBarItems
 MSHAttr:
--'PreferredSiteName:MSDN'
+- 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kpacquer

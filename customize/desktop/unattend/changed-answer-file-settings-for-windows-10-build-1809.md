@@ -16,7 +16,7 @@ This topic describes Windows 10, version 1809 answer file settings that have cha
 
 | Setting name         | Description                                                                      |
 |:---------------------|:---------------------------------------------------------------------------------|
-| Microsoft-Windows-MicrosoftEdgeBrowser    | New settings for the Microsoft Edge browser                 |
+| [Microsoft-Windows-MicrosoftEdgeBrowser](microsoft-windows-microsoftedgebrowser.md)    | New settings for the Microsoft Edge browser                 |
 
 ## Deprecated Windows settings
 
