@@ -542,7 +542,7 @@ Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinP
 ```
 
 
-### Add drivers to your images
+### Drivers
 
 You can add drivers to ensure Windows can successfully boot for the first time. Make sure that you add your driver to the right image:
 
@@ -590,7 +590,7 @@ Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1
 > You can use the /recurse option to add an entire folder of drivers
 
 
-### Add updates to your image
+### Updates
 
 While your image is mounted, you can add Windows updates. The process is similar to the one we used to add drivers earlier.
 
@@ -602,7 +602,7 @@ Reminder:
 - If a **Servicing Stack Update (SSU) is required**, you'll have to apply it before applying the most recent General Distribution Release or any future GDRs.
 
 
-#### Add a Windows update package
+#### Add Windows updates to your image
 
 Use DISM to apply the latest servicing stack update (SSU) and general distribution release (GDR) as well as any prerequisite KB updates. You can find KB updates in the following locations:
 
