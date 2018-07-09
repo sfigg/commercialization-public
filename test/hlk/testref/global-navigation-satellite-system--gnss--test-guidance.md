@@ -265,9 +265,9 @@ WDF Verifier is enabled by default for all WDF drivers. The **WdfVerifier.exe** 
 
 ### <span id="Telemetry_data"></span><span id="telemetry_data"></span><span id="TELEMETRY_DATA"></span>Telemetry data
 
-**Description**: Monitor telemetry data from your [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for the GPS driver.
+**Description**: Monitor telemetry data from your [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for the GPS driver. 
 
-**Run Steps**: Monitor telemetry data from your [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for the GPS driver. Identify, investigate, and fix the driver failures.
+**Run Steps**: Monitor telemetry data from your [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) under the **Analyze** section for the GPS driver. Identify, investigate, and fix the driver failures. 
 
 **Expected Result**: The device must report all telemetry failures; you should triage, investigate, and fix the primary problems.
 
