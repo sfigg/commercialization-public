@@ -36,7 +36,7 @@ specialize
 
 ## Parent Hierarchy
 
-[Microsoft-Windows-MicrosoftEdgeBrowser-FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md) | **FavoriteBarItem**
+[Microsoft-Windows-MicrosoftEdgeBrowser]((microsoft-windows-microsoftedgebrowser.md) | [FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md) | **FavoriteBarItem**
 
 ## Applies To
 
