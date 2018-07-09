@@ -14,13 +14,13 @@ ms.technology: windows - oem
 
 # ItemKey
 
-`ItemKey` specifies a unique key to associate with a [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md).
+`ItemKey` specifies a unique key to associate with a [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md).
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| Specifies a unique string value (key) to represent the `FavoriteItem` in the unattended installation answer file. `ItemKey` must be unique for each [FavoritesList](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _ItemKey_ is a string. |
+| Specifies a unique string value (key) to represent the `FavoriteItem` in the unattended installation answer file. `ItemKey` must be unique for each [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _ItemKey_ is a string. |
 
 
 ## Valid Configuration Passes

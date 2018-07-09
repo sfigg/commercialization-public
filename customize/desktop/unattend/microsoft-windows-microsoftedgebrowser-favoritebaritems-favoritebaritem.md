@@ -27,8 +27,8 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the 
 | [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md)    | Specifies the icon (C:\Windows\favlink2.ico) to associate with the Favorite.    |
 | [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    | 
 Specifies the path to the Favorite.  |
-| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)    |    Specifies the name that appears in the Favorite bar.  |
-| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    |  Specifies a unique key for the Favorite bar item.  |
+| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)    |    Specifies the name that appears for the Favorite.  |
+| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    |  Specifies a unique key for the Favorite.  |
 
 ## Valid Configuration Passes
 

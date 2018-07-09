@@ -14,14 +14,14 @@ ms.technology: windows - oem
 
 # ItemUrl
 
-`ItemURL` specifies a Uniform Resource Locator (URL) to associate with a [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md).
+`ItemURL` specifies a Uniform Resource Locator (URL) to associate with a [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md).
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 
-| _Url_ | Specifies the fully qualified path that begins with the **http://** prefix to the URL of each [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _Url_ is a string. |
+| _Url_ | Specifies the fully qualified path that begins with the **http://** prefix to the URL of each [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _Url_ is a string. |
 
 
 

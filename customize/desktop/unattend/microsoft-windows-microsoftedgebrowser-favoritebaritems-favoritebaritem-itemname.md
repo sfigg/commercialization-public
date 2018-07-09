@@ -14,13 +14,13 @@ ms.technology: windows - oem
 
 # ItemName
 
-`ItemName` specifies the friendly name of [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) that appears in the Favorites folder.
+`ItemName` specifies the name of the [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md).
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| _NameOfLink_ | Specifies the name of your [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md), based on your license terms, for inclusion within the Favorites folder. `NameOfLink` must appear only once for each `FavoriteItem`. |
+| _ItemName_ | Specifies the name of your [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md), based on your license terms, in the Favorites folder. _ItemName_ must appear only once for each `FavoriteItem`. |
 
 
 ## Valid Configuration Passes

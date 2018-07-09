@@ -14,14 +14,14 @@ ms.technology: windows - oem
 
 # ItemFavIconFile
 
-`FavIconFile` specifies the icon to associate with the [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder.
+`FavIconFile` specifies the icon to associate with the [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder.
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 
-| _PathAndFileName_ | Specifies the location and the name of the icon to associate with the [FavoriteItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. _PathAndFileName_ is a string. |
+| _PathAndFileName_ | Specifies the location and the name of the icon to associate with the [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. _PathAndFileName_ is a string. |
 
 ## Valid Configuration Passes
 
