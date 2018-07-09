@@ -684,18 +684,43 @@ This section continues to use your mounted Windows image. If your image isn't st
 
 Now that you've added languages and updates to your image, you have to reinstall the apps that come with Windows. This makes sure that the apps will work and include the languages you have added to your image. To reinstall these apps, you'll need the App update OPK or the inbox Apps ISO.
 
-1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64
+1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64 
 2. Run the `E:\apps\ReinstallInboxApps-x64.bat` script.
 
 Your apps are now ready to work with your image.
+
+#### Add Features on Demand
+
+Add a Feature on Demand (FOD) to your Windows image. [Features on Demand](features-on-demand-v2--capabilities) are features that you can choose to preinstall. You can see a list of available FODs, and recommendations for preinstallation [here](features-on-demand-non-language-fod).
+
+Here we'll show you how to preinstall the .Net Framework Feature on Demand. 
+
+Note: While it’s possible to add FODs using the /add-package command, we recommend using DISM with the /Add-Capability option.
+
+1. On your technician PC, use DISM to get a list of available FODs in an image:
+
+    ```
+    dism /image:C:\mount\windows /get-capabilities
+    ```
+
+    This will show a list of available capabilities.
+
+2. Add the .NET framework.
+
+    ```
+    dism /image:C:\mount\windows /add-capability /capabilityname:NetFX3~~~
+    ```
+
+.NET framework is now added to your image.
+
 
 #### Add a Microsoft Store app
 
 To complete this section, you'll need to have the App update OPK or the inbox apps ISO. Whichever you are using, we'll refer to it as the App update OPK in the following steps.
 
-2. Use DISM to add the HEVC codec .appx from the files you extracted in Step 1:
+1. Use DISM to add the HEVC codec .appx from the files you extracted in Step 1:
 
-3.  Install the HEVC .appx:
+2.  Install the HEVC .appx:
 
     ```
     DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:"C:\temp\lab\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"C:\temp\lab\apps\inbox\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /DependencyPackagePath:"C:\temp\lab\apps\inbox\amd64\Microsoft.VCLibs.x64.14.00.appx" /DependencyPackagePath:"C:\temp\lab\apps\inbox\amd64\Microsoft.VCLibs.x86.14.00.appx"
@@ -704,9 +729,9 @@ To complete this section, you'll need to have the App update OPK or the inbox ap
     > [!Note]
     > Include both the x86 and x64 versions of the dependency packages.
 
-4. Use `DISM /Add-ProvisionedAppxPackage` to add any additional apps to your image.
+3. Use `DISM /Add-ProvisionedAppxPackage` to add any additional apps to your image.
 
-5. Verify that the apps are installed:
+4. Verify that the apps are installed:
 
     ```
     Dism /Image:"C:\mount\windows" /Get-ProvisionedAppxPackages
@@ -721,7 +746,7 @@ For this section, you'll need to have at least two apps to add to your image. If
 
 1.  Gather your apps for installation  
 
-2.  Install your apps, specifying a region with the `/region` option for each app. You can specify multiple regions by separating the regions with a `;`. We'll show you how you can use LayouModification.xml with `/region` later in the lab:
+2.  Install your apps, specifying a region with the `/region` option for each app. You can specify multiple regions by separating the regions with a `;`. We'll show you how you can use LayoutModification.xml with `/region` later in the lab:
 
     ```
     Dism /Add-ProvisionedAppxPackage /PackagePath:app1.appxbundle /region="all"
@@ -1104,7 +1129,7 @@ Next you'll have to make sure that the logo you specified above is in your Windo
     ```
 
 ##### Set the device to automatically boot to audit mode
-Using the same unattend.xml file, set the PC to automatically boot into Audit mode.
+Using the same unattend.xml file, set the PC to automatically [boot into Audit mode](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-deployment-reseal-mode).
 1. In the Windows Image pane, expand Components, right-click amd64_Microsoft-Windows-Deployment_(version), and then select Add Setting to Pass 7 oobeSystem.
 2. In the Answer File pane, select Components\7 oobeSystem\amd64_Microsoft-Windows-Deployment_neutral\Reseal.
 3. In the Reseal Properties pane, in the Settings section, select `Mode=Audit`.
@@ -1684,7 +1709,9 @@ RD c:\scratchdir
 
 ## Capture your image
 
-In this section, we'll tell you how to capture your sysprepped image. 
+In this section, we'll tell you how to capture your sysprepped image. You can capture either a [WIM](#capture-a-wim) or an [FFU](#capture-an-ffu).
+
+### Capture a WIM
 
 **On your reference PC:**
 
@@ -1710,6 +1737,30 @@ In this section, we'll tell you how to capture your sysprepped image.
     ```
     This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
 
+With your image captured, you can skip to [Verify your final image](#verify-your-final-image).
+
+### Capture an FFU
+
+**On your reference PC:**
+
+1.	Identify Windows Partition Drive letter.
+
+    a. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
+
+    b. At the \DISKPART> prompt type list disk
+
+    c. Under the "Disk ###" column, identify the the disk that has the Windows installation, and note the assigned disk number. This will look something like _Disk 0_.
+
+    d. Type exit to quit Diskpart
+
+2.	Capture an image of the windows disk to USB-B. This process takes several minutes. 
+
+    ```
+    DISM.exe /capture-ffu /imagefile=E:\Images\CustomImage.wim /Name:"CustomImage" /capturedrive=\\.\PhysicalDrive0 /description:"Windows 10 FFU"
+        ```
+    This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
+
+
 ## Verify your final image
 
 In this section, we'll cover how to deploy your captured image for testing and verification.
@@ -1718,11 +1769,22 @@ In this section, we'll cover how to deploy your captured image for testing and v
 
 
 1. Boot the PC you want to test your image on into WinPE.
-2. Run applyimage.bat to deploy the customimage.wim
+2. Run applyimage.bat to deploy the image.
+    
+    If you captured a WIM called customimage.wim:
 
     ```
     E:\Deployment\applyimage.bat E:\Images\customimage.wim
     ```
+    
+    **or**
+
+    If you captured an FFU called CustomImage.FFU:
+
+    ```
+    E:\Deployment\applyimage.bat E:\Images\CustomImage.FFU
+    ```
+
 
 3. Type `exit` to close WinPE and restart the PC.
 
