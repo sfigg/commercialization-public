@@ -24,11 +24,10 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the 
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md)    | Specifies the icon (C:\Windows\favlink2.ico) to associate with the Favorite.    |
-| [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    | 
-Specifies the path to the Favorite.  |
-| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)    |    Specifies the name that appears for the Favorite.  |
-| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    |  Specifies a unique key for the Favorite.  |
+| [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md) | Specifies the icon (C:\Windows\favlink2.ico) to associate with the Favorite.    |
+| [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    | Specifies the path (http://...) to the Favorite. |
+| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)  | Specifies the name that appears for the Favorite.  |
+| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    | Specifies a unique key for the Favorite.  |
 
 ## Valid Configuration Passes
 
@@ -36,7 +35,7 @@ specialize
 
 ## Parent Hierarchy
 
-[Microsoft-Windows-MicrosoftEdgeBrowser]((microsoft-windows-microsoftedgebrowser.md) | [FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md) | **FavoriteBarItem**
+[Microsoft-Windows-MicrosoftEdgeBrowser](microsoft-windows-microsoftedgebrowser.md) | [FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md) | **FavoriteBarItem**
 
 ## Applies To
 
