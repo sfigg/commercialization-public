@@ -57,7 +57,8 @@ To determine whether a component applies to the image you’re building, load yo
       <ItemName>Favorite 2</FavTitle>
       <ItemURL>https://www.fabrikam.com/mysecurefav2</FavURL>
    </FavoriteItem>
-</Favor
+</FavoritesList>
+```
 
 ## Related Topics
 
