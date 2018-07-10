@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # Introduction to WPR
 
 
-Windows Performance Recorder (WPR) is a tool that extends Event Tracing for Windows (ETW) and provides detailed recordings of system and application behavior and resource usage. You can use WPR together with Windows Performance Analyzer (WPA) to investigate particular areas of performance and to gain an overall understanding of resource consumption. WPR and WPA enable development and IT professionals to proactively identify and resolve performance issues. WPR requires Windows 7 or later version operating system.
+Windows Performance Recorder (WPR) is a tool that extends Event Tracing for Windows (ETW) and provides detailed recordings of system and application behavior and resource usage. You can use WPR together with Windows Performance Analyzer (WPA) to investigate particular areas of performance and to gain an overall understanding of resource consumption. WPR and WPA enable development and IT professionals to proactively identify and resolve performance issues. WPR requires Windows 8 or later version operating system.
 
 ## WPR User Interface
 
