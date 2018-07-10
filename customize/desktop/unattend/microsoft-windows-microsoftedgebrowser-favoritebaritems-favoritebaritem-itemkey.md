@@ -18,9 +18,9 @@ ms.technology: windows - oem
 
 ## Values
 
-| Value                   | Description                                                                           |
+| Value                   | Description                                                |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| Specifies a unique string value (key) to represent the `FavoriteItem` in the unattended installation answer file. `ItemKey` must be unique for each [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _ItemKey_ is a string. |
+| _ItemKey_ | Specifies a unique string value (key) to represent the `FavoriteItem` in the unattended installation answer file. `ItemKey` must be unique for each [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _ItemKey_ is a string. |
 
 
 ## Valid Configuration Passes

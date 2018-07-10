@@ -18,9 +18,8 @@ ms.technology: windows - oem
 
 ## Values
 
-| Value                   | Description                                                                           |
+| Value                   | Description                                                |
 |:------------------------|:--------------------------------------------------------------------------------------|
-
 | _PathAndFileName_ | Specifies the location and the name of the icon to associate with the [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. _PathAndFileName_ is a string. |
 
 ## Valid Configuration Passes
