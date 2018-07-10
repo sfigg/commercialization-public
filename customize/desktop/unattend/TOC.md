@@ -382,7 +382,7 @@
 #### [ChinaVariantWin10](Microsoft-Windows-MapControl-Desktop-chinavariantwin10.md)
 ### [Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core.md)
 #### [InitialOEMServiceProvider](microsoft-windows-mediaplayer-core-initialoemserviceprovider.md)
-### [Microsoft-Windows-MicrosoftEdgeBrowser](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md)
+### [Microsoft-Windows-MicrosoftEdgeBrowser](microsoft-windows-microsoftedgebrowser.md)
 #### [FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md)
 ##### [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md)
 ###### [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md)
