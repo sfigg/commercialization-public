@@ -62,4 +62,4 @@ To determine whether a component applies to the image you’re building, load yo
 
 ## Related Topics
 
-[Microsoft-Windows-MicrosoftEdgeBrowser-FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md)
+[FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md)
