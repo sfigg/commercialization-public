@@ -42,7 +42,7 @@ To determine whether a component applies to the image you’re building, load yo
 ```XML
 <FavoriteBarItems>
    <FavoriteBarItem wcm:action="add">
-      <ItemIconFile>C:\Windows\favlink1.ico</FavIconFile>
+      <ItemFavIconFile>C:\Windows\favlink1.ico</FavIconFile>
       <ItemKey>Favorite1</FavID>
       <ItemName>My Favorite</FavTitle>
       <ItemUrl>http://www.fabrikam.com/myfav1</FavURL>
@@ -51,10 +51,9 @@ To determine whether a component applies to the image you’re building, load yo
       <ItemIconFile> C:\Windows\favlink2.ico </FavIconFile>
       <ItemKey>Favorite2</FavID>
       <ItemName>Favorite 2</FavTitle>
-      <ItemURL>http://www.fabrikam.com/myfav2</FavURL>
+      <ItemURL>https://www.fabrikam.com/mysecurefav2</FavURL>
    </FavoriteItem>
-</FavoritesList>
-```
+</Favor
 
 ## Related Topics
 
