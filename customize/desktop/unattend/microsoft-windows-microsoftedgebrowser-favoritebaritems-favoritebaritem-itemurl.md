@@ -21,7 +21,7 @@ ms.technology: windows - oem
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 
-| _Url_ | Specifies the fully qualified path that begins with the **http://** prefix to the URL of each [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _Url_ is a string. |
+| _Url_ | Specifies the fully qualified path that begins with a **http://** or **https://** prefix to the URL of each [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md). _Url_ is a string. |
 
 
 
