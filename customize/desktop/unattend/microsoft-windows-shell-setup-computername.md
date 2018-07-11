@@ -30,7 +30,7 @@ In Windows 10, users can no longer enter a computer name during OOBE as the nam
 
 If `ComputerName` is not specified, a random computer name is generated.
 
-If `ComputerName` set to an asterisk (\*) or is included but empty, then a computer name is generated based on at most seven characters from the [FullName](microsoft-windows-setup-userdata-fullname.md) and/or [Organization](microsoft-windows-setup-userdata-organization.md) strings plus random characters.
+If `ComputerName` set to an asterisk (\*) or is included but empty (""), Windows creates a random 15-character name using up to 7 characters from [FullName](microsoft-windows-setup-userdata-fullname.md) and [Organization](microsoft-windows-setup-userdata-organization.md), then a dash, then more random characters.
 
 `ComputerName` is a string with a maximum length of 15 bytes of content:
 
