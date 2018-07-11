@@ -1736,6 +1736,7 @@ In this section, we'll tell you how to capture your sysprepped image. You can ca
     MD e:\scratchdir
     Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\CustomImage.wim /Name:"CustomImage" /scratchdir:e:\scratchdir
     ```
+
     This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
 
 With your image captured, you can skip to [Verify your final image](#verify-your-final-image).
@@ -1786,8 +1787,9 @@ In this section, we'll cover how to deploy your captured image for testing and v
     E:\Deployment\applyimage.bat E:\Images\CustomImage.FFU
     ```
 
+3.  Follow the script's prompts to apply the image.
 
-3. Type `exit` to close WinPE and restart the PC.
+4. Type `exit` to close WinPE and restart the PC.
 
 ### Validate the configuration
 
@@ -1892,20 +1894,6 @@ The table below shows additional space saved by using compact OS, Single instanc
 | Hiberfile off, no compact     | 10.87GB (>825MB)               | 13.48GB (>1.5GB)               |
 | Hiberfile reduced, no compact | 11.27GB (>400MB)               | 14.15GB (>930MB)               |
 
-### Troubleshooting deployment issues
-
-Windows deployment generates many logs. To diagnose deployment issues, a script that gathers logs is included on USB-B. This script copies all relevant logs, which can then be sent to OTSQR when reporting a deployment issue. To run the log:
-
-1.	Insert USB-B into the device with the deployment issue
-2.	Open command prompt in Administrator mode
-3.	Navigate to drive letter of USB-B (ex. E:\) in command prompt
-4.	CD to E:\Resources
-5.	Run script GatherLogs.cmd
-
-The script should return Success message and give a path to the folder to .zip.
-
-![Log collection tool successful completion](images/lab-log-collect.png)
- 
 
 
 
