@@ -66,9 +66,11 @@ The following are the specifications for the attract loop video.
 * The source video should be appropriate quality to ensure the best possible playback on the device based on its graphics rendering capabilities (resolution, color capabilities, and graphics processing power).
 * We recommend matching the video resolution to the optimal resolution on each device when possible. Otherwise, resolution should be 1920 x 1080.  
 
-### Upload the video to the Microsoft Retail Demo Ingestion Portal (RDIP)
+### Upload the video to the Microsoft RDX Submission Tool 
 
-Once you’ve created your video attract loop, include it in a package using the [RDX Submission Tool](https://www.windowsretaildemo.com). The RDIP tool enables content to be targeted by language, region, and model. For more details on using the portal, please see the RDX_Submission_Tool_Onboarding_V2 document.
+Once you’ve created your video attract loop, include it in a package using the [RDX Submission Tool](https://www.windowsretaildemo.com). The tool enables content to be targeted by language, region, and model. For more details on using the portal, please see the RDX_Submission_Tool_Onboarding_V2 document.
+
+This tool was formerly named Retail Demo Ingestion Portal (RDIP).
 
 ### Add the video to the image
 
@@ -95,10 +97,10 @@ Example: Canada-specific content in French:
 The Microsoft Retail Demo app is a Windows-provided in-box app. Depending on the structure of the data content, the app displays either navigation tabs at the top or a home screen with tiles. As a shopper selects each navigation tab or tile, the app displays appropriate content pages. 
 
 ![Example of Navigation Tabs experience](images/rdx-retaildemoapp.png)
-Example of Navigation Tabs experience
+_Example of Navigation Tabs experience_
 
 ![Example of Home page tiles experience](images/rdx-homepagetiles.png)
-Example of Home page tiles experience
+_Example of Home page tiles experience_
 
 Each content page contains one or more sections that are comprised of media (images and video), text copy, and Call-to-Action (CTA) buttons or links to encourage the shopper to explore the featured content. If a content page contains multiple sections, a feature bar displays at the bottom. The customer can move between content sections of the page by selecting features in the bar or by scrolling up and down the page.
 
@@ -114,8 +116,11 @@ If a customer closes the Retail Demo app, they see the desktop of the device wit
 ### Build your Retail Demo app content
 
 Customize the Retail Demo app to show off your device using the Microsoft Retail Demo Ingestion Portal (RDIP) at [http://www.windowsretaildemo.com](http://www.windowsretaildemo.com), which offers a friendly user interface. More detailed instructions on using the tool to customize RDX are available in the RDX_Submission_Tool_Onboarding_V2 document. If you don’t currently have an account for RDIP, or access to the onboarding document, please reach out to your Account Manager with the Microsoft Account (MSA) you wish to associate with access.
+
 The RDIP tool offers a visual walk through of content build as well as the ability to download the final media and JSON packages to place in your device image. Doing so makes this content available to the shopper even if the retailer never connects the demo device to the internet.
+
 OEMs can specify a theme color, navigation selected-button color, and logos for the Retail Demo app, in addition to adding unique page content. Colors and logos are specified at the app level, and content is specified at the page level. OEMs can also choose between one of three templates: Hero, Immersive Hero, and Mosaic (described below).
+
 Important: Content included in the device image must not include any time sensitive material (for example, seasonal pricing or offers).
 
 ### Template options, examples, and requirements
@@ -262,10 +267,15 @@ For more information about the RetailInfo API, see the Windows.System.Profile na
 * Cleanup: Make sure your app cleans up between uses.  
 * Minimize error and pop-up dialogs: Error pop-ups invoke a negative experience with the app, Windows and the shopping experience. Minimize pop-ups as much as possible.
 For detailed guidance and requirements, see Create an RDX app on docs.microsoft.com. 
-RetailInfo API
-IsDemoModeEnabled property
+
+### RetailInfo API
+
+**IsDemoModeEnabled property**
+
 IsDemoModeEnabled indicates whether retail mode is active on the device where the app is running. If IsDemoModeEnabled is true, launch the retail mode version of the app, and optionally query for the device’s KnownRetailInfo properties. 
-C#
+
+**C#**
+``` csharp
 using Windows.Storage;
 
 StorageFolder folder = ApplicationData.Current.LocalFolder;
@@ -278,7 +288,10 @@ if (Windows.System.Profile.RetailInfo.IsDemoModeEnabled)
 
 StorageFile file = await folder.GetFileAsync(“hello.txt”);
 // Now read from file
-C++
+```
+
+**C++**
+``` cpp
 using namespace Windows::Storage;
 
 StorageFolder^ localFolder = ApplicationData::Current->LocalFolder;
@@ -302,16 +315,25 @@ else
         // Do something with file
     });
 }
-JavaScript
+```
+
+**JavaScript**
+``` javascript
 if (Windows.System.Profile.retailInfo.isDemoModeEnabled) {
     console.log(“Retail mode is enabled.”);
 } else {
     Console.log(“Retail mode is not enabled.”);
 }
+```
+
 Application behavior is dependent on the device being in retail demo mode.
-KnownRetailInfo property
+
+**KnownRetailInfo property**
+
 Query the device for its retail mode properties.
-C#
+
+**C#**
+``` csharp
 using Windows.UI.Xaml.Controls;
 using Windows.System.Profile
 
@@ -319,7 +341,10 @@ TextBlock priceText = new TextBlock();
 priceText.Text = RetailInfo.Properties[KnownRetailInfo.Price];
 // Assume infoPanel is a StackPanel declared in XAML
 this.infoPanel.Children.Add(priceText);
-C++
+```
+
+**C++**
+```cpp
 using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::System::Profile;
 
@@ -327,11 +352,18 @@ TextBlock ^manufacturerText = ref new TextBlock();
 manufacturerText.set_Text(RetailInfo::Properties[KnownRetailInfoProperties::Price]);
 // Assume infoPanel is a StackPanel declared in XAML
 this->infoPanel->Children->Add(manufacturerText);
+```
 
-JavaScript
+**JavaScript**
+
+```javascript
 var pro = Windows.System.Profile;
 console.log(pro.retailInfo.properties[pro.KnownRetailInfoProperties.price);
-Retail Demo Mode IDL
+```
+
+### Retail Demo Mode IDL
+
+```
 //  Copyright (c) Microsoft Corporation. All rights reserved.
 //
 //  WindowsRuntimeAPISet
@@ -398,11 +430,36 @@ namespace Windows.System.Profile
     {
     }
 }
+```
 
-### Multilanguage retail demonstrations
+### Add retail demo mode, including language packs, to your images
 
-If your Windows devices include multiple languages, add the RetailDemo language packs to localize your retail demo content. 
-Important: You’ll need to add the Features On Demand (FOD) Retail Demo experience language packs during the imaging process, for example, Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab. You are also required to provide the US-English (en-US) and Neutral language FODs. To learn more, see Add Language Packs to Windows.  
+Add each of the following packages to your images. Note, these packages must be installed in order.
+
+1.	If your devices will include multiple languages, add language packs and language interface packs first. Example:
+
+    `Microsoft-Windows-Client-Language-Pack_x64_fr-FR.cab`
+    `Microsoft-Windows-Client-Language-Pack_x64_vi-VN.cab`
+
+    Note, do not remove the English language pack, this pack is required for Retail Demo Mode.
+
+2.	Next, add the basic language pack for each language, including English. For example: 
+
+    `Microsoft-Windows-LanguageFeatures-Basic-en-US-Package.cab `
+    `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab `
+    `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
+
+3.	Next, add the language-neutral Retail Demo Content package:
+
+    `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
+
+4.	Next, add the localized retail demo experience pack for each language, including English. Example:  
+
+    `Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.cab`
+    `Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab`
+    `Microsoft-Windows-RetailDemo-OfflineContent-Content-vi-VN-Package.cab`
+
+To learn more, see [Add Language Packs to Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-language-packs-to-windows).
 
 Available RetailDemo language packs:
 * Arabic [ar-SA]
