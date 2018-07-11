@@ -141,13 +141,17 @@ Sub header	We recommend a 55-character limit, not counting spaces in between cha
 Paragraph	140 characters, not counting spaces in between characters. 
 
 Call-to-action button text	We recommend an 11 character limit, not counting spaces in between characters. 
+
 There are 4 actions that can be set for a Call-to-action button:
+
 1.	Jump to another page within group
 2.	Launch an app
 3.	Launch the default browser and go to a URL
 4.	Open Media (image, video, or document)
+
 > [!NOTE]
 > Keep in mind that if you are building content for offline devices, CTA buttons should not open URLs as this will create a poor user experience.
+
 Legal text	150 characters, not counting spaces in between characters. 
 
 Here is an example of a Hero template using a full-bleed video:
