@@ -1759,7 +1759,8 @@ With your image captured, you can skip to [Verify your final image](#verify-your
 
     ```
     DISM.exe /capture-ffu /imagefile=E:\Images\CustomImage.wim /Name:"CustomImage" /capturedrive=\\.\PhysicalDrive0 /description:"Windows 10 FFU"
-        ```
+    ```
+    
     This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
 
 
