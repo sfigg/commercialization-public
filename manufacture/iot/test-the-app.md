@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # <span id="TEST_AN_APPX_FILE_ON_AN_IOT_DEVICE"></span>Test an appx file on an IoT device
 
-Connect to the device from another PC**
+**Connect to the device from another PC**
 
 1.  Connect a network cable.
 
@@ -30,7 +30,7 @@ Connect to the device from another PC**
 4.  If you've added the IOT_ENABLE_ADMIN feature in your package, log in using Administrator/p@ssw0rd.
 If you created a custom username and password, use that now. To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
-Test the app by installing it**
+**Test the app by installing it**
 
 1.  Click on **Apps**.
 

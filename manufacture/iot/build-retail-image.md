@@ -47,17 +47,17 @@ We'll take our customizations, put them together, and test them in a retail buil
        <Feature>RPI2_DRIVERS</Feature> 
        <Feature>RPI3_DRIVERS</Feature>
        <!-- Include OEM features -->
-       <Feature>OEM_CustomCmd</Feature> 
-       <Feature>OEM_ProvAuto</Feature>
-       <Feature>OEM_MyUWPApp</Feature>
-       <Feature>OEM_FilesAndRegKeys</Feature>
-       <Feature>OEM_DriverHelloBlinky</Feature> 
+       <Feature>CUSTOM_CMD</Feature> 
+       <Feature>PROV_AUTO</Feature>
+       <Feature>APP_MyUWPApp</Feature>
+       <Feature>CUSTOM_FilesAndRegKeys</Feature>
+       <Feature>DRIVER_HelloBlinky</Feature> 
     </OEM>
     ```
     
-    OEM_ProvAuto is required to pull in the provisioning package.
+    PROV_AUTO is required to pull in the provisioning package.
 	
-	OEM_FilesAndRegKeys, OEM_MyUWPApp, and OEM_DriverHelloBlinky were sample packages added in previous labs.
+	CUSTOM_FilesAndRegKeys, APP_MyUWPApp, and DRIVER_HelloBlinky were sample packages added in previous labs.
 
 ## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
 

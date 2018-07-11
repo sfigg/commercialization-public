@@ -95,19 +95,14 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\OEMFM.xml**
 
-2.  Create a new PackageFile section in the XML with your package file listed and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
+2.  Create a new PackageFile section in the XML with your package file listed and give it a new FeatureID, such as "DRIVER_HelloBlinky".
 
     ``` xml
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
             <FeatureIDs>
-              <FeatureID>OEM_DriverHelloBlinky</FeatureID>
+              <FeatureID>DRIVER_HelloBlinky</FeatureID>
             </FeatureIDs>
           </PackageFile>
-    ```
-3. Generate feature identifier packages and merged FM files. This has to be done every time any time an FM file is modified.
-
-    ```
-    buildfm bsp rpi2
     ```
 
     You'll now be able to add your driver to your product by adding a reference to this feature manifest.
@@ -139,10 +134,10 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
       <Feature>RPI2_DRIVERS</Feature>
       <Feature>RPI3_DRIVERS</Feature>
       <!-- Include OEM features-->
-      <Feature>OEM_CustomCmd</Feature>
-      <Feature>OEM_ProvAuto</Feature>
-      <Feature>OEM_FilesAndRegKeys</Feature>
-      <Feature>OEM_DriverHelloBlinky</Feature> 
+      <Feature>CUSTOM_CMD</Feature>
+      <Feature>PROV_AUTO</Feature>
+      <Feature>CUSTOM_FilesAndRegKeys</Feature>
+      <Feature>DRIVER_HelloBlinky</Feature> 
     </OEM>
     ```
 

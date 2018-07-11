@@ -23,7 +23,7 @@ Provides the Unattend settings to allow you to configure the timer resolution fo
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [TelemetryPerformanceHighResolutionTimer](microsoft-windows-storport-registrysettings-telemetryperformancehighresolutiontimer.md) | **This setting is deprecated((. Enables high resolution timer for hourly IO latency summaries in Storport event logs. |
+| [TelemetryPerformanceHighResolutionTimer](microsoft-windows-storport-registrysettings-telemetryperformancehighresolutiontimer.md) | **This setting is deprecated**. Enables high resolution timer for hourly IO latency summaries in Storport event logs. |
 
 ## Applies to
 

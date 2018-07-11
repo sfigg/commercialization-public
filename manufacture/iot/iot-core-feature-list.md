@@ -103,8 +103,8 @@ When creating images for your device, determine which features are required for 
 
 | Features                  | Description                                                          |
 |---------------------------|----------------------------------------------------------------------|
-| **OEM\_CustomCmd**   | Adds scripts which support adding OEM Apps using the ADK Add-Ons.     |
-| **OEM\_ProvAuto** | Includes provisioning package corresponding to the product. |
+| **CUSTOM\_CMD**   | Adds scripts which support adding OEM Apps using the ADK Add-Ons. OEM\_CustomCmd is the deprecated feature ID, can still be used for legacy builds      |
+| **PROV\_Auto** | Includes provisioning package corresponding to the product. OEM\_ProvAuto is the deprecated feature ID, can still be used for legacy builds |
 
 
 ### Test features 
