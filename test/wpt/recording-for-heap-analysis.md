@@ -21,11 +21,27 @@ Windows Performance Recorder (WPR) enables heap analysis for all processes on t
 
 **To enable heap tracing for a desktop app**
 
+(Using WPRUI.exe)
 1.  From the **More options** dropdown menu, select the **Heap usage** profile.
 
-2.  Add a registry entry for the process by running the following command from an elevated command prompt window, replacing *&lt;process\_name&gt;* with the name of the process to be traced:
+2.  Add a registry entry for the process by running the following command from an elevated command prompt window, replacing `*&lt;process\_name&gt;*` with the name of the process to be traced:
 
     **reg add "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\&lt;process\_name&gt;" /v TracingFlags /t REG\_DWORD /d 1 /f**
+
+(Using Wpr.exe)
+1.  Enable Heap tracking by setting the IFEO registry
+      `wpr.exe -HeapTracingConfig *&lt;process\_name&gt;* enable`
+
+2.  Start the tracing session:
+      `wpr.exe -start Heap \[-filemode\]`
+
+3.  test the scenario.
+
+4.  Stop the tracing session: 
+      `wpr.exe -stop *&lt;file\_name&gt;*`
+
+5.  Disable Heap tracking
+      `wpr.exe -HeapTracingConfig *&lt;process\_name&gt;* disable`
 
 **To enable heap tracing for a Microsoft Store app**
 
