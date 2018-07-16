@@ -583,7 +583,7 @@ Use the following process to activate retail demo mode on any retail device.
 
     > [!NOTE]
     >  “SKU” is optional and is only required if the retailer associated with the Retail Access Code (RAC) explicitly designed an experience under a specific SKU. The RAC (Retail Access Code), SKU, and Retailer store ID only apply and are only used by Retailers. If this applies to you, the codes should be requested through your Microsoft Account Manager. 
-    > A list of SKU’s will only be available if the retailer associated with the Retail Access Code (RAC) has previously provided it to Microsoft with this intent. If a SKU is not entered, the device will get content specific to the retailer and specific to the model of the hardware. 
+    > A list of SKUs will only be available if the retailer associated with the Retail Access Code (RAC) has previously provided it to Microsoft with this intent. If a SKU is not entered, the device will get content specific to the retailer and specific to the model of the hardware. 
 
 7.  If you would like to specify start up and shut down times, select **Advanced configuration**.
 
