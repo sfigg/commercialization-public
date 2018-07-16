@@ -37,6 +37,7 @@ RDX 3.0 will be available soon. For schedule details, see this section in the [R
 In the meantime, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
 
 Key updates to RDX 3.0 will include:
+
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
 * **New: Digital fact tag (DFT)** shows customers device specs and price.
 * **New: On-device admin (ODA) app** allows retailers to update specs, price locally on non-networked devices.
@@ -189,6 +190,7 @@ Below are the media and copy requirements for the Immersive Hero template:
 
 
 There are 4 actions that can be set for a CTA button:
+
 1.	Jump to another page within group
 2.	Launch an app
 3.	Launch the default browser and go to a URL
@@ -224,6 +226,7 @@ Below are the media and copy requirements for the Mosaic template:
 | Legal Text            | Mosaic does not support legal text on tiles due to tile size. |
 
 There are 4 actions that can be set for a CTA button:
+
 1. Jump to another page within group
 2. Launch an app
 3. Launch the default browser and go to a URL
@@ -571,6 +574,7 @@ In Retail Demo mode, shoppers are prevented from modifying key system areas. For
 ### Activate retail mode 
 
 This process can be used to verify that the device is properly configured to launch any custom demo applications. It can also be used to start retail demo mode on a demonstration device.
+
 Use the following process to activate retail demo mode on any retail device.
 
 1.  Remove the device from the box and press the power button to power up the device. 
@@ -629,7 +633,7 @@ Windows provides a way to set times for the devices to turn on and start retail 
 
 3.  In the Advanced RDX settings page, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
 
-    ![](images/rdx-advanced-rdx-settings.png)
+    ![RDX screen: Advanced RDX Settings](images/rdx-advanced-rdx-settings.png)
 
 ### Remove retail demo components
 
