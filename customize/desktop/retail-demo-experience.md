@@ -623,15 +623,11 @@ Windows provides a way to set times for the devices to turn on and start retail 
 
 1.  Open retail demo mode configuration.  For instructions, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
-2.  Directly below the **Activation** heading, there is a **Windows** heading. Select the word Windows 5 times.  
-
-    ![](images/rdx-activation.png)
-
-3.  The retail demo mode configuration UI is displayed. Select the **Advanced configuration** button.
+2.  The retail demo mode configuration UI is displayed. Select the **Advanced configuration** button.
 
     ![](images/rdx-get-the-latest-demo.png)
 
-4.  In the Advanced RDX settings page, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
+3.  In the Advanced RDX settings page, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
 
     ![](images/rdx-advanced-rdx-settings.png)
 
