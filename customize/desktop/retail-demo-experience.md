@@ -32,7 +32,7 @@ There are 4 customizable components of RDX:
 
 ## Get ready for RDX 3.0
 
-RDX 3.0 is scheduled for holiday 2018. 
+RDX 3.0 will be available soon. For schedule details, see this section in the [RDX Windows Experience Guide](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
 In the meantime, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
 
@@ -109,11 +109,11 @@ Example: Canada-specific content in French:
 
 The Microsoft Retail Demo app is a Windows-provided in-box app. Depending on the structure of the data content, the app displays either navigation tabs at the top or a home screen with tiles. As a shopper selects each navigation tab or tile, the app displays appropriate content pages. 
 
-![Example of Navigation Tabs experience](images/rdx-retaildemoapp.png)
+![Example of Navigation Tabs experience](images/rdx-retail-demo-app.png)
 
 _Example of Navigation Tabs experience_
 
-![Example of Home page tiles experience](images/rdx-homepagetiles.png)
+![Example of Home page tiles experience](images/rdx-homepage-tiles.png)
 
 _Example of Home page tiles experience_
 
@@ -199,7 +199,7 @@ There are 4 actions that can be set for a CTA button:
 
 Below is an example of the Immersive Hero template.
 
-![Example of a Immersive Hero template](images/rdx-template-immersivehero.png)
+![Example of a Immersive Hero template](images/rdx-template-immersive-hero.png)
 
 ### Mosaic template
 
@@ -207,7 +207,7 @@ Use this template to show components as a graphic montage. This template is very
 
 The mosaic layout follows several predefined patterns, depending on the number of tiles you wish to include. The layout will appear as follows: 
 
-![Example of Mosaic layout predefined patterns](images/rdx-template-mosaicoptions.png)
+![Example of Mosaic layout predefined patterns](images/rdx-template-mosaic-options.png)
 
 Below are the media and copy requirements for the Mosaic template:
 
@@ -629,11 +629,11 @@ Windows provides a way to set times for the devices to turn on and start retail 
 
 3.  The retail demo mode configuration UI is displayed. Select the **Advanced configuration** button.
 
-    ![](images/rdx-getthelatestdemo.png)
+    ![](images/rdx-get-the-latest-demo.png)
 
 4.  In the Advanced RDX settings page, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
 
-    ![](images/rdx-advancedrdxsettings.png)
+    ![](images/rdx-advanced-rdx-settings.png)
 
 ### Remove retail demo components
 
@@ -643,3 +643,10 @@ For devices with more than 32GB of storage, the components are automatically rem
 
 For devices with 32GB of storage or less, by default, the components are automatically removed 30 minutes after the customer completes OOBE. To change this schedule, find the registry key `HKLM\Software\Microsoft\Windows\CurrentVersion\Setup\OOBE` and set the value `DeleteDemoContentDelay` to a number of minutes from 30 and 10080 (= 7 days).
 
+```powershell
+md c:\HWID
+Set-Location c:\HWID
+Set-ExecutionPolicy Unrestricted
+Install-Script -Name Get-WindowsAutoPilotInfo
+Get-WindowsAutoPilotInfo.ps1 -OutputFile AutoPilotHWID.csv
+```
