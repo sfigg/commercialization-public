@@ -577,10 +577,6 @@ Use the following process to activate retail demo mode on any retail device.
 
 2.  Enter Retail Demo Mode. For instructions, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
-3.  On the confirmation dialog, confirm that you want to turn on the retail demo experience. 
-
-4.  The dialog confirms that you've turned on the retail demo experience. Click **Continue**.
-
 5.  Proceed with OOBE setup, including acceptance of the legal terms, until you get to RDX setup.
 
 6.  In the **Get the latest demo content and apps** page, enter your **Retail Access Code (RAC)**. The available SKUs and items for the RAC are downloaded. Select the **Retailer SKU or Item#**, **Retailer store ID**, and then click **Next**. If the device is offline, go to the next step.
