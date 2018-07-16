@@ -160,13 +160,10 @@ Below are the media and copy requirements for the Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-1.	Jump to another page within group
-2.	Launch an app
-3.	Launch the default browser and go to a URL
-4.	Open Media (image, video, or document)
-
-> [!NOTE]
-> Keep in mind that if you are building content for offline devices, CTA buttons should not open URLs as this will create a poor user experience.
+*.	Jump to another page within group
+*.	Launch an app
+*.	Launch the default browser and go to a URL (online devices only)
+*.	Open media (image, video, or document)
 
 Here is an example of a Hero template using a full-bleed video:
 
@@ -191,13 +188,10 @@ Below are the media and copy requirements for the Immersive Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-1.	Jump to another page within group
-2.	Launch an app
-3.	Launch the default browser and go to a URL
-4.	Open Media (image, video, or document)
-
-> [!NOTE]
-> Keep in mind that if you are building content for offline devices, CTA buttons should not open URLs as this will create a poor user experience.
+*.	Jump to another page within group
+*.	Launch an app
+*.	Launch the default browser and go to a URL (online devices only)
+*.	Open media (image, video, or document)
 
 Below is an example of the Immersive Hero template.
 
@@ -230,7 +224,7 @@ There are 4 actions that can be set for a CTA button:
 1. Jump to another page within group
 2. Launch an app
 3. Launch the default browser and go to a URL
-4. Open Media (image, video, or document) 
+4. Open media (image, video, or document) 
 
 > [!NOTE] 
 > Keep in mind that if you are building content for offline devices, CTA buttons should not open URLs as this will create a poor user experience.
@@ -309,7 +303,7 @@ We strongly recommend you ensure that the apps included on the device take advan
 
 * **Show off, but be focused**: Use the retail mode version of your app as an opportunity to showcase why it rocks and is a reason to buy a Windows device. Put your best foot forward. Keep the story simple: elevator pitch to land your app’s value prop.  
 
-* **Make sure your app cleans up between uses.**  
+* **Make sure your app cleans up between uses.**
 
 * **Minimize error and pop-up dialogs**: Error pop-ups invoke a negative experience with the app, Windows and the shopping experience. Minimize pop-ups as much as possible.
 
@@ -380,7 +374,8 @@ Application behavior is dependent on the device being in retail demo mode.
 Query the device for its retail mode properties.
 
 **C#**
-``` csharp
+
+```csharp
 using Windows.UI.Xaml.Controls;
 using Windows.System.Profile
 
@@ -391,6 +386,7 @@ this.infoPanel.Children.Add(priceText);
 ```
 
 **C++**
+
 ```cpp
 using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::System::Profile;
@@ -629,11 +625,11 @@ Windows provides a way to set times for the devices to turn on and start retail 
 
 2.  The retail demo mode configuration UI is displayed. Select the **Advanced configuration** button.
 
-    ![RDX screen: Get the latest demo content and apps](images/rdx-get-the-latest-demo.png)
+    ![RDX screenshot: Get the latest demo content and apps](images/rdx-get-the-latest-demo.png)
 
 3.  In the Advanced RDX settings page, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
 
-    ![RDX screen: Advanced RDX Settings](images/rdx-advanced-rdx-settings.png)
+    ![RDX screenshot: Advanced RDX Settings](images/rdx-advanced-rdx-settings.png)
 
 ### Remove retail demo components
 
