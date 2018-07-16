@@ -32,7 +32,7 @@ There are 4 customizable components of RDX:
 
 ## Get ready for RDX 3.0
 
-RDX 3.0 will be available soon. For schedule details, see this section in the [RDX Windows Experience Guide](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
+RDX 3.0 will be available soon. For schedule details, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
 In the meantime, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
 
@@ -72,12 +72,12 @@ We strongly recommend that you use the attract loop to show how your brand, apps
 
 The following are the specifications for the attract loop video.
 
-* Videos must be less than 60 seconds
-* Must not include an audio track
+* Videos must be less than 60 seconds.
+* Must not include an audio track.
 * Acceptable compression format: H.264/MPEG4
-* Videos must be designed so they don’t cause screen burn even when played for hours at a time for the entire shelf life of the device
+* Videos must be designed so they don’t cause screen burn even when played for hours at a time for the entire shelf life of the device.
 * The source video should be appropriate quality to ensure the best possible playback on the device based on its graphics rendering capabilities (resolution, color capabilities, and graphics processing power).
-* We recommend matching the video resolution to the optimal resolution on each device when possible. Otherwise, resolution should be 1920 x 1080.  
+* We recommend matching the video resolution to the optimal resolution on each device when possible. Otherwise, resolution should be 1920 x 1080.
 
 ### Upload the video to the Microsoft RDX Submission Tool
 
@@ -575,7 +575,7 @@ Use the following process to activate retail demo mode on any retail device.
 
 1.  Remove the device from the box and press the power button to power up the device. 
 
-2.  On any of the OOBE setup pages (**Language**, **Region**, **Keyboard**, **Connect to Network**, or **EULA**), tap or click the page title (for example, Let’s start with region on the Region selection page) 5 times slowly (1 tap or click per second).
+2.  Enter Retail Demo Mode. For instructions, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
 3.  On the confirmation dialog, confirm that you want to turn on the retail demo experience. 
 
@@ -621,7 +621,7 @@ Windows provides a way to set times for the devices to turn on and start retail 
 
 **To schedule shutdowns on a local device**
 
-1.  Open retail demo mode by typing **Activation** into the Search box and pressing Enter.
+1.  Open retail demo mode configuration.  For instructions, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
 2.  Directly below the **Activation** heading, there is a **Windows** heading. Select the word Windows 5 times.  
 
