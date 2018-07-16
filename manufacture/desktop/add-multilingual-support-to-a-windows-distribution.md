@@ -39,14 +39,25 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     mkdir C:\my_distribution\langpacks 
     ```
 
-4.  Copy the language packs to the **\\Langpacks** directory of the distribution share. For example:
+4. Create folders in the **\\Langpacks** folder for each language pack you're adding
 
     ```
-    mkdir C:\my_distribution\langpacks
-    xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
+    mkdir C:\my_distribution\Langpacks\fr-fr
     ```
 
-5.  (Optional) To make additional languages available in Windows Setup, copy the localized Windows Setup sources to the distribution share. For example:
+5.  Copy the language packs to the **\\Langpacks** directory of the distribution share. For example:
+
+    ```
+    xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
+    ```
+
+6. Rename the language pack in the each folders to `lp.cab`.
+
+    ```
+    ren C:\my_distribution\langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab lp.cab
+    ```
+
+6.  (Optional) To make additional languages available in Windows Setup, copy the localized Windows Setup sources to the distribution share. For example:
 
     ```
     xcopy E:\sources\fr-fr C:\my_distribution\sources\fr-fr /cherkyi 
