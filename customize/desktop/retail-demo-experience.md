@@ -252,7 +252,7 @@ For a complete list of supported languages and locales, see Locale Identifier Co
 
 **Add the content to the image:**
 
-1.  After building your content on the [RDX Submission Tool](www.windowsretaildemo.com), download and save locally. 
+1.  After building your content on the [RDX Submission Tool](https://www.windowsretaildemo.com), download and save locally. 
 2.  Save the file as **oem.json**.
 3. 	On the computer on which you’re building your device images, copy the default (“neutral”) **oem.json** file to: 
     - `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM
