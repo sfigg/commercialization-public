@@ -14,13 +14,11 @@ ms.technology: windows-oem
 # Add Multilingual Support to a Windows Distribution
 
 
-You can use Windows® Setup to deploy a multilingual edition of Windows. This is a typical scenario for corporations that deploy Windows in a multilingual environment where the users must be able to switch the display language between multiple languages on a single computer. This procedure requires the following steps:
+You can use Windows Setup to deploy a multilingual edition of Windows. This is a typical scenario for corporations that deploy Windows in a multilingual environment where the users must be able to switch the display language between multiple languages on a single computer. This procedure requires the following steps:
 
--   Copy one or more language packs to the **\\Langpacks** directory in the *Windows distribution*. The Windows distribution is the contents of the Windows retail DVD.
-
--   Update the Lang.ini file.
-
--   Use Setup to install the language packs that are in the distribution share.
+1.  Copy one or more language packs to the **\\Langpacks** directory in the *Windows distribution*. The Windows distribution is the contents of the Windows retail DVD.
+2.  Update the Lang.ini file.
+3.  Use Setup to install the language packs that are in the distribution share.
 
 **Important**  
 Adding language packs to the **\\Langpacks** directory can extend the Windows Setup installation time. Packages in the **\\Langpacks** directory are added to the Windows image during the **windowsPE** configuration pass, before Windows is actually installed. If Windows Setup must install several language packs, then installation might be delayed.
@@ -45,16 +43,16 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     mkdir C:\my_distribution\Langpacks\fr-fr
     ```
 
-5.  Copy the language packs to the **\\Langpacks** directory of the distribution share. For example:
+5.  Copy the language packs to the language-specific folders you created in **\\Langpacks**. For example:
 
     ```
-    xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
+    xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\Langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
     ```
 
 6. Rename the language pack in the each folders to `lp.cab`.
 
     ```
-    ren C:\my_distribution\langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab lp.cab
+    ren C:\my_distribution\Langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab lp.cab
     ```
 
 6.  (Optional) To make additional languages available in Windows Setup, copy the localized Windows Setup sources to the distribution share. For example:
@@ -121,8 +119,8 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     en-US = en-us
     ```
 
-    **Note**  
-    You can choose a language for Windows Setup from those that are available in the distribution share when you run Setup from a full operating system only. If you run Windows Setup for bootable media or Windows PE, you must add optional components to the Boot.wim file for multilingual support. For more information, see [Add Multilingual Support to Windows Setup](add-multilingual-support-to-windows-setup.md).
+    > [!Note]
+    >You can choose a language for Windows Setup from those that are available in the distribution share when you run Setup from a full operating system only. If you run Windows Setup for bootable media or Windows PE, you must add optional components to the Boot.wim file for multilingual support. For more information, see [Add Multilingual Support to Windows Setup](add-multilingual-support-to-windows-setup.md).
 
      
 
