@@ -4,7 +4,7 @@ description: Provides guidance on what an OEM should do to enable VBS
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.author: dawnwood
+ms.author: justinha
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: windows-hardware

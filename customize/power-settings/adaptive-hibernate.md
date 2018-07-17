@@ -124,14 +124,16 @@ The following example shows what your Windows provisioning answer file might loo
                        <SchemePersonality>
                           <Default SchemeAlias="Balanced">
                              <Setting>
-                                <!-- Duration of time after sleep that the system automatically wakes and enters hibernate in seconds -->
+                                <!-- After entering standby, battery drain percentage allowed before the device transitions to hibernate -->
                                 <StandbyBudgetPercent>
-                                   <DcValue></DcValue>
+                                   <DcValue>3</DcValue>
                                 </StandbyBudgetPercent>
+                                <!-- After entering standby, number of seconds before the device automatically transitions to hibernate -->
                                 <StandbyReserveTime>
-                                   <DcValue></DcValue>
+                                   <DcValue>600</DcValue>
                                 </StandbyReserveTime>
                              </Setting>
+
                           </Default>
                        </SchemePersonality>
                     </AdaptivePowerBehavior>

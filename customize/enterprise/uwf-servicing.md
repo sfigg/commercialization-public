@@ -20,7 +20,7 @@ This class contains properties and methods that enable you to query and control 
 
 ```powershell
 class UWF_Servicing {
-    [key, read] boolean CurrentSesson;
+    [key, read] boolean CurrentSession;
     [read] boolean ServicingEnabled;
 
     UInt32 Enable();
