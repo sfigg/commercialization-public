@@ -78,7 +78,7 @@ You can use the Deployment Image Servicing and Management (DISM) command-line to
 You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources\\SxS** folder on the installation media to an installation of Windows that is not connected to the Internet.
 
 > [!Warning]
-> If you aren't using Windows Update as the source for .NET Framework 3.5 installation, make sure to use a source that matches the version of Windows where you're installing .Net Framework 3.5. If you use a source that has a different version of Windows from the one you're working on, Windows won't prevent a mismatched version of .NET Framework 3.5 from being installed, but a mismatched installation could cause the system to be in an unsupported and unserviceable state. 
+> If you're not relying on Windows Update as the source for installing the .NET Framework 3.5, make sure to use sources from the same corresponding Windows operating system version. Using a source path that doesn't correspond to the same version of Windows won't prevent a mismatched version of .NET Framework 3.5 from being installed. This can cause the system to be in an unsupported and unserviceable state.
 
 ### <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
