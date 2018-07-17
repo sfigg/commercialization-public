@@ -16,17 +16,10 @@ ms.technology: windows-oem
 
 You can use the Deployment Image Servicing and Management (DISM) command-line tool to create a modified image to deploy .NET Framework 3.5.
 
-**Important**  
-For images that will support more than one language, you must add .NET Framework 3.5 binaries before adding any language packs. This order ensures that .NET Framework 3.5 language resources are installed correctly in the reference image and available to users and applications.
+> [!Important] 
+> For images that will support more than one language, you must add .NET Framework 3.5 binaries before adding any language packs. This order ensures that .NET Framework 3.5 language resources are installed correctly in the reference image and available to users and applications.
 
  
-
-**In this topic:**
-
--   [Using DISM with Internet connectivity](#internet)
-
--   [Using DISM with no Internet connectivity](#nointerent)
-
 ## <span id="internet"></span><span id="INTERNET"></span>Using DISM with Internet connectivity
 
 
@@ -36,7 +29,7 @@ For images that will support more than one language, you must add .NET Framework
 
 -   Access to Windows Update. If the PC or server is behind a firewall or uses a proxy server, see [KB900935 - How the Windows Update client determines which proxy server to use to connect to the Windows Update Web site](http://support.microsoft.com/kb/900935).
 
--   Windows 8, Windows Server® 2012, or the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?linkid=325506) tools.
+-   Windows 8, Windows Server 2012, or the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?linkid=325506) tools.
 
 -   Installation media
 
@@ -82,7 +75,10 @@ For images that will support more than one language, you must add .NET Framework
 
 ## <span id="nointerent"></span><span id="NOINTERENT"></span>Using DISM with no Internet connectivity
 
-You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources\\SxS** folder on the installation media to an installation of Windows® that is not connected to the Internet.
+You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources\\SxS** folder on the installation media to an installation of Windows that is not connected to the Internet.
+
+> [!Warning]
+> If you're not relying on Windows Update as the source for installing the .NET Framework 3.5, make sure to use sources from the same corresponding Windows operating system version. Using a source path that doesn't correspond to the same version of Windows won't prevent a mismatched version of .NET Framework 3.5 from being installed. This can cause the system to be in an unsupported and unserviceable state.
 
 ### <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -94,7 +90,7 @@ You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources
 
 ### <span id="Steps"></span><span id="steps"></span><span id="STEPS"></span>Steps
 
-1.  Open a command prompt with administrator user rights (Run as Administrator) in Windows 8 or Windows Server 2012.
+1.  Open a command prompt with administrator user rights (Run as Administrator).
 
 2.  To install .NET Framework 3.5 from installation media located on the **D:** drive, use the following command:
 
