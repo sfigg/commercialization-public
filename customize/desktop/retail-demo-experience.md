@@ -39,9 +39,21 @@ In the meantime, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 i
 Key updates to RDX 3.0 will include:
 
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
-* **New: Digital fact tag (DFT)** shows customers device specs and price.
+* **New: Digital fact tag (DFT)** shows customers device specs and price, based on SMBIOS info.
 * **New: On-device admin (ODA) app** allows retailers to update specs, price locally on non-networked devices.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
+
+### RDX 3.0: using SMBIOS info
+
+In RDX 3.0, the digital fact tag gathers info from the device's [SMBIOS information](https://www.dmtf.org/standards/smbios) to populate the default device information.
+
+| Field Name | Structure Named & Type | Value | Offset | Length | Example Scenario | How it's used  |
+|:-----------|:-----------------------|:------|:-------|:-------|:----------------|:---|
+| “Manufacturer” | System Information (Type 1) | String | 04h | 32 | “Contoso” | Displays as part of the digital fact tag |
+| “Product Name” | System Information (Type 1) | String | 05h | 64 | “A11 a110001” | Displays as part of the digital fact tag |
+| “Enclosure Type” | System Enclosure (Type 3) | Byte | 05h | n/a | “detachable” | Used to choose which device-specific content is shown in demos |
+
+This information can be manually updated in the Retail Demo Mode [Advanced Configuration menus](#advanced-config). 
 
 
 ## Including demo content in device image
@@ -479,24 +491,24 @@ namespace Windows.System.Profile
 
 Add each of the following packages to your images. Note, these packages must be installed in order.
 
-1.	If your devices will include multiple languages, add language packs and language interface packs first. Example:
+1.   If your devices will include multiple languages, add language packs and language interface packs first. Example:
 
     `Microsoft-Windows-Client-Language-Pack_x64_fr-FR.cab`
     `Microsoft-Windows-Client-Language-Pack_x64_vi-VN.cab`
 
     Note, do not remove the English language pack, this pack is required for Retail Demo Mode.
 
-2.	Next, add the basic language pack for each language, including English. For example: 
+2.   Next, add the basic language pack for each language, including English. For example: 
 
-    `Microsoft-Windows-LanguageFeatures-Basic-en-US-Package.cab `
-    `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab `
+    `Microsoft-Windows-LanguageFeatures-Basic-en-US-Package.cab`
+    `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
     `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
 
-3.	Next, add the language-neutral Retail Demo Content package:
+3.   Next, add the language-neutral Retail Demo Content package:
 
     `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
 
-4.	Next, add the localized retail demo experience pack for each language, including English. Example:  
+4.   Next, add the localized retail demo experience pack for each language, including English. Example:  
 
     `Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.cab`
     `Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab`
@@ -567,7 +579,7 @@ In Retail Demo mode, shoppers are prevented from modifying key system areas. For
 * Access the command line, Registry Editor, or PowerShell utilities
 * Anything that requires administrative permissions to the system
 
-### Activate retail mode 
+### <span id="advanced-config"></span>Activate retail mode 
 
 This process can be used to verify that the device is properly configured to launch any custom demo applications. It can also be used to start retail demo mode on a demonstration device.
 
