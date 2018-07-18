@@ -49,7 +49,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\Langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
     ```
 
-6. Rename the language pack in the each folders to `lp.cab`.
+6. Rename the language pack in each folder to `lp.cab`.
 
     ```
     ren C:\my_distribution\Langpacks\fr-fr\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab lp.cab
