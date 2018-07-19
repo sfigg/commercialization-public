@@ -43,18 +43,19 @@ Key updates to RDX 3.0 will include:
 * **New: On-device admin (ODA) app** allows retailers to update specs, price locally on non-networked devices.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
 
-### RDX 3.0: using SMBIOS info
+### RDX 3.0: SMBIOS info
 
-In RDX 3.0, the digital fact tag gathers info from the device's [SMBIOS information](https://www.dmtf.org/standards/smbios) to populate the default device information.
+RDX 3.0 gathers info from the device's [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios) to populate the default device information in the digital fact tag (DFT), and to decide which content is displayed in the attract video loops.
 
 | Field Name | Structure Named & Type | Value | Offset | Length | Example Scenario | How it's used  |
 |:-----------|:-----------------------|:------|:-------|:-------|:----------------|:---|
-| “Manufacturer” | System Information (Type 1) | String | 04h | 32 | “Contoso” | Displays as part of the digital fact tag |
-| “Product Name” | System Information (Type 1) | String | 05h | 64 | “A11 a110001” | Displays as part of the digital fact tag |
-| “Enclosure Type” | System Enclosure (Type 3) | Byte | 05h | n/a | “detachable” | Used to choose which device-specific content is shown in demos |
+| “Manufacturer” | System Information (Type 1) | String | 04h | 32 | “Contoso” | Displays in the DFT |
+| “Product Name” | System Information (Type 1) | String | 05h | 64 | “A11 a110001” | Displays in the DFT |
+| “Enclosure Type” | System Enclosure (Type 3) | Byte | 05h | n/a | “detachable” | Selects content in attract video loops |
 
-This information can be manually updated in the Retail Demo Mode [Advanced Configuration menus](#advanced-config). 
+OEMs can add the SMBIOS info to new devices using tools from the firmware manufacturer.
 
+If this information hasn't been added by the OEM or displays incorrectly, it can be updated through the [RDX advanced configuration menus](#advanced-config). 
 
 ## Including demo content in device image
 
