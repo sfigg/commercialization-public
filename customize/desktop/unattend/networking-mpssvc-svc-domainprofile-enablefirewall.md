@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **DomainProfile\_EnableFirewall**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

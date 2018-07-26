@@ -48,7 +48,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | **HandwritingPanelDockedModeSet**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

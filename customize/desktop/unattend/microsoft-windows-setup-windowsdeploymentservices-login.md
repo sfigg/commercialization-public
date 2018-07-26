@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Credentials](microsoft-windows-setup-windowsdeploymentservices-login-credentials.md) | Specifies the credentials for Windows Deployment Services login. |
 | [WillShowUI](microsoft-windows-setup-windowsdeploymentservices-login-willshowui.md) | Specifies in what circumstances the UI is displayed for Windows Deployment Services login. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

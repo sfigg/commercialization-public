@@ -45,7 +45,7 @@ The partition that you plan on extending must have unpartitioned space available
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

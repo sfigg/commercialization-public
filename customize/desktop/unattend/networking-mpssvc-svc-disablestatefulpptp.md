@@ -70,7 +70,7 @@ For client editions of Windows and for Windows RT 8.1:
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **DisableStatefulPPTP**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

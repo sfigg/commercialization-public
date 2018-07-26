@@ -26,7 +26,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [TrapConfigurationItems](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems.md) | Specifies details about individual trap configuration items. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

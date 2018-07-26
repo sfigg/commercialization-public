@@ -41,7 +41,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Key**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

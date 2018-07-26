@@ -47,7 +47,7 @@ If you are deploying a multilingual Windows image, you should specify account na
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

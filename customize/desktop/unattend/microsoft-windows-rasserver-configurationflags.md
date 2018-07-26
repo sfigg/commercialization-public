@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-RasServer](microsoft-windows-rasserver.md) | **ConfigurationFlags**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

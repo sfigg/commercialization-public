@@ -29,7 +29,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md) | Specifies the password of the user account used for authentication when joining a domain. |
 | [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md) | Specifies the user account used for authentication when joining a domain. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

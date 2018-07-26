@@ -47,7 +47,7 @@ Creating a blank administrator password is a security risk.
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

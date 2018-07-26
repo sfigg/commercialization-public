@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Group](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-group.md) | Specifies the group to which the domain account belongs. |
 | [SID](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-sid.md) | Specifies the security identifier of the domain account. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

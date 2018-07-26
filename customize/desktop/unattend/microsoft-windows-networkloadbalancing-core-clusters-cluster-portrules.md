@@ -27,7 +27,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md) | Specifies details about a port rule used for a cluster, such as its name, IP address, protocol, mode, and so on. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

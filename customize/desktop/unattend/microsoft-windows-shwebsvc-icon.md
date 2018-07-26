@@ -44,7 +44,7 @@ If the provider is a Microsoft partner, and the icon is hosted on the Microsoft 
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 oobeSystem
