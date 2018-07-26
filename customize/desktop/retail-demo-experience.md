@@ -278,7 +278,7 @@ For a complete list of supported languages and locales, see Locale Identifier Co
 
     -  `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\Content\`[locale]`\HubContent\oem.zip`
     -  `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\`[region]`\Content\Neutral\HubContent\oem.zip`
-    -  `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\`[region]_`\Content\`[locale]`\HubContent\oem.zip`
+    -  `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\`[region]`\Content\`[locale]`\HubContent\oem.zip`
 
 6.	Build the image. 
 
