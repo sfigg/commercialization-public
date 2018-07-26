@@ -20,13 +20,13 @@ Showcase your new devices on the retail sales floor with a rich, engaging experi
 
 Retail mode works best when demo devices have high-speed Internet access.
 
-There are 4 customizable components of RDX:
+Customizable components of RDX:
 
 * **Attract loop app**: a perpetually looping video or images intended to attract customers to the device. The content is intended to draw the customer in to interact with the device.
 * **Retail Demo app**: an app that launches automatically when a customer ends the attract loop by tapping a keyboard key, clicking the mouse, or touching the screen (if touchscreen) while the Attract loop app plays. The Retail Demo app educates the customer about the device, Windows, and associated services available with the purchase of the device. After a period of inactivity, the attract loop begins playing again.
-* **Digital Fact Tag app**: an app that launches automatically at the same time as the Retail Demo app.  This app sits on the right side of the screen and displays key information in a perpetual way for the shopper.  The app cannot be closed by the shopper, nor do apps display above or behind the app.
 * **Demo mode content**: content the customer can interact with during the demo. This includes pre-loaded (image) or downloaded app content, documents, music, photos, videos, and Store apps.
 * **Setup and operation of retail demo mode**: determine RDX enablement on the device, automatic device clean-up between customers, and automated removal of RDX content after purchase.  
+* **Digital Fact Tag app**: an app that launches automatically at the same time as the Retail Demo app.  This app sits on the right side of the screen and displays key information in a perpetual way for the shopper.  The app cannot be closed by the shopper, nor do apps display above or behind the app.
 
 <!-- [!NOTE]  This document is designed for an audience of OEM marketing and engineering teams. -->
 
@@ -34,28 +34,14 @@ There are 4 customizable components of RDX:
 
 RDX 3.0 will be available soon. For schedule details, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
-In the meantime, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
+In the meantime, for Windows 10 build 1803, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
 
 Key updates to RDX 3.0 will include:
 
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
-* **New: Digital fact tag (DFT)** shows customers device specs and price, based on SMBIOS info.
-* **New: On-device admin (ODA) app** allows retailers to update specs, price locally on non-networked devices.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
-
-### RDX 3.0: SMBIOS info
-
-RDX 3.0 gathers info from the device's [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios) to populate the default device information in the digital fact tag (DFT), and to decide which content is displayed in the attract video loops.
-
-| Field Name | Structure Named & Type | Value | Offset | Length | Example Scenario | How it's used  |
-|:-----------|:-----------------------|:------|:-------|:-------|:----------------|:---|
-| “Manufacturer” | System Information (Type 1) | String | 04h | 32 | “Contoso” | Displays in the DFT |
-| “Product Name” | System Information (Type 1) | String | 05h | 64 | “A11 a110001” | Displays in the DFT |
-| “Enclosure Type” | System Enclosure (Type 3) | Byte | 05h | n/a | “detachable” | Selects content in attract video loops |
-
-OEMs can add the SMBIOS info to new devices using tools from the firmware manufacturer.
-
-If this information hasn't been added by the OEM or displays incorrectly, it can be updated through the [RDX advanced configuration menus](#advanced-config). 
+* **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
+* **New: Digital fact tag (DFT)** shows customers device specs and price, based on SMBIOS info.
 
 ## Including demo content in device image
 
