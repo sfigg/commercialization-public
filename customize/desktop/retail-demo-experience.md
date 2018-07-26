@@ -41,7 +41,7 @@ Key updates to RDX 3.0 will include:
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
 * **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
-* **New: Digital fact tag (DFT)** shows customers device specs and price, based on SMBIOS info.
+* **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
 
 ## Including demo content in device image
 
@@ -111,11 +111,11 @@ The Microsoft Retail Demo app is a Windows-provided in-box app. Depending on the
 
 ![Example of Navigation Tabs experience](images/rdx-retail-demo-app.png)
 
-_Example of Navigation Tabs experience_
+_Example of current RDX 2.0 Navigation Tabs experience_
 
 ![Example of Home page tiles experience](images/rdx-homepage-tiles.png)
 
-_Example of Home page tiles experience_
+_Example of new RDX 3.0 Home page tiles experience with Digital Fact Tag (right)_
 
 Each content page contains one or more sections that are comprised of media (images and video), text copy, and Call-to-Action (CTA) buttons or links to encourage the shopper to explore the featured content. If a content page contains multiple sections, a feature bar displays at the bottom. The customer can move between content sections of the page by selecting features in the bar or by scrolling up and down the page.
 
@@ -164,9 +164,9 @@ There are 4 actions that can be set for a CTA button:
 *.	Launch the default browser and go to a URL (online devices only)
 *.	Open media (image, video, or document)
 
-Here is an example of a Hero template using a full-bleed video:
+Here is an example of a Hero template:
 
-![Example of a Hero template using a full-bleed video](images/rdx-template-hero.png)
+![Example of a Hero template](images/rdx-template-hero.png)
 
 #### Immersive Hero template
 
@@ -478,30 +478,28 @@ namespace Windows.System.Profile
 
 Add each of the following packages to your images. Note, these packages must be installed in order.
 
-1.   If your devices will include multiple languages, add language packs and language interface packs first. Example:
+1.  If your devices will include multiple languages, add language packs and language interface packs first. Example:
 
-    `Microsoft-Windows-Client-Language-Pack_x64_fr-FR.cab`
-    `Microsoft-Windows-Client-Language-Pack_x64_vi-VN.cab`
+    * `Microsoft-Windows-Client-Language-Pack_x64_fr-FR.cab`
+    * `Microsoft-Windows-Client-Language-Pack_x64_vi-VN.cab`
 
     Note, do not remove the English language pack, this pack is required for Retail Demo Mode.
 
-2.   Next, add the basic language pack for each language, including English. For example: 
+2.  Next, add the basic language pack for each language, including English. For example: 
 
-    `Microsoft-Windows-LanguageFeatures-Basic-en-US-Package.cab`
-    `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
-    `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
+    * `Microsoft-Windows-LanguageFeatures-Basic-en-US-Package.cab`
+    * `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
+    * `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
 
-3.   Next, add the language-neutral Retail Demo Content package:
+3.  Next, add the language-neutral Retail Demo Content package:
 
-    `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
+    * `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
 
-4.   Next, add the localized retail demo experience pack for each language, including English. Example:  
+4.  Next, add the localized retail demo experience pack for each language, including English. Example:  
 
-    `Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.cab`
-    `Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab`
-    `Microsoft-Windows-RetailDemo-OfflineContent-Content-vi-VN-Package.cab`
-
-To learn more, see [Add Language Packs to Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows).
+    * `Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.cab`
+    * `Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab`
+    * `Microsoft-Windows-RetailDemo-OfflineContent-Content-vi-VN-Package.cab`
 
 Available RetailDemo language packs:
 * Arabic [ar-SA]
@@ -550,6 +548,9 @@ Available RetailDemo language packs:
 * Thai [th-TH]
 * Ukrainian [uk-UA]
 * Vietnamese [vi-VN]
+
+To learn more, see [Add Language Packs to Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows).
+
 
 ## Setup and operate retail demo mode
 
@@ -626,7 +627,7 @@ Windows provides a way to set times for the devices to turn on and start retail 
 
     ![RDX screenshot: Get the latest demo content and apps](images/rdx-get-the-latest-demo.png)
 
-3.  In the Advanced RDX settings page, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
+3.  In the Advanced RDX settings page, under **Automatic Shutdown**, select **Edit settings**. This allows you to configure the automatic shutdown of the device.  
 
     ![RDX screenshot: Advanced RDX Settings](images/rdx-advanced-rdx-settings.png)
 
