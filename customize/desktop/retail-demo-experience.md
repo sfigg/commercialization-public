@@ -118,7 +118,7 @@ In RDX 3.0, shoppers select content through tiles, and can see more info on the 
 
 Each content page contains one or more sections that are comprised of media (images and video), text copy, and Call-to-Action (CTA) buttons or links to encourage the shopper to explore the featured content. If a content page contains multiple sections, a feature bar displays at the bottom. The customer can move between content sections of the page by selecting features in the bar or by scrolling up and down the page.
 
-The default content for the Retail Demo app highlights Windows and Office key features as determined by the Microsoft marketing team. 
+The app highlights key features as determined by the Microsoft marketing team. Some content in the app only appears when Office is installed or certain hardware is detected. For example, when Office 365 is installed, the Office section may show a “Try it now” button to open Word or PowerPoint. When a digitizer is detected, the Office section may display an collection of videos showing how Office works with a pen.
 
 The content shown changes based on the device. For example, if you have preinstalled Office 365, the demos show Office's pen and inking functionality.
 
@@ -498,11 +498,11 @@ Add each of the following packages to your images. Note, these packages must be 
     * `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
     * `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
 
-3.  Next, add the base Retail Demo package:
+3.  Next, add the base Retail Demo pack:
 
     * `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
 
-4.  Next, add the localized retail demo experience pack for each language, including English. Example:  
+4.  Next, add the localized retail demo pack for each language, including English. Example:  
 
     * `Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.cab`
     * `Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab`

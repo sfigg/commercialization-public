@@ -110,7 +110,7 @@ The following table shows the types of language packages and components availabl
 <tr class="even">
 <td align="left">Retail Demo experience</td>
 <td align="left"><code>Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package</code></td>
-<td align="left">Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package</td>
+<td align="left">Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.</td>
 <td align="left"><a href="https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience">Retail Demo Experience (RDX)</a></td>
 
 </tr>
