@@ -46,7 +46,7 @@ In OEM, independent software vendor, or other customized Windows PE scenarios, 
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

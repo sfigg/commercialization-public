@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Interface](microsoft-windows-netbt-interfaces-interface.md) | Contains all settings for a single network interface. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

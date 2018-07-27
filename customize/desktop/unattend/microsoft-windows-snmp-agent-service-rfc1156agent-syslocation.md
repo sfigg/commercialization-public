@@ -42,7 +42,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

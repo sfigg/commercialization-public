@@ -30,7 +30,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 | [Key](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-key.md) | Specifies a unique key for the community. |
 | [Value](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-value.md) | Specifies the type of permissions that the agent has. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

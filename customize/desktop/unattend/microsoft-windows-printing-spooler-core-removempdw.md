@@ -58,7 +58,7 @@ Microsoft Print to PDF ships as an optional feature and is installed by default.
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

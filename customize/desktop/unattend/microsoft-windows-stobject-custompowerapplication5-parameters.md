@@ -43,7 +43,7 @@ This setting is optional.
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

@@ -40,7 +40,7 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

@@ -49,7 +49,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Profile**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

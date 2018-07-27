@@ -36,7 +36,7 @@ For example, in the following app manifest file snippet, the **Protocol Name** i
 
 This value is required, unless [`SupportURL`](microsoft-windows-shell-setup-oeminformation-supporturl.md) is present, in which case it is optional. If both are supplied, `SupportAppURL` is used. Add a parameter with a unique value to identify traffic coming from the Get Help app.
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditUser
 

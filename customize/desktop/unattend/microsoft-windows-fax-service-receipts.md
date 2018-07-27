@@ -30,7 +30,7 @@ ms.technology: windows-oem
 | [SmtpServerAuthenticationMechanism](microsoft-windows-fax-service-receipts-smtpserverauthenticationmechanism.md) | Specifies one of the authentication schemas to use: Anonymous, Basic, or authentication based on Windows Security. |
 | [SmtpServerPort](microsoft-windows-fax-service-receipts-smtpserverport.md) | Specifies the IP port number for the e-mail server. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

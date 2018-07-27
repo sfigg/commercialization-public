@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password-plaintext.md) | Specifies whether the [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md) password is hidden in the answer file. |
 | [Value](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password-value.md) | Specifies the [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md) password. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

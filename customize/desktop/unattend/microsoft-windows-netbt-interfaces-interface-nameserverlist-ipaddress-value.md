@@ -43,7 +43,7 @@ This element does not appear in the **Properties** pane of Windows System Image
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

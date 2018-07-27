@@ -90,7 +90,7 @@ If you create additional partitions during Windows Setup, `PartitionID` must exa
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

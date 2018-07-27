@@ -28,7 +28,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [A1](microsoft-windows-snmp-agent-service-permittedmanagers-a1.md) | Specifies a host from which the computer accepts SNMP requests. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

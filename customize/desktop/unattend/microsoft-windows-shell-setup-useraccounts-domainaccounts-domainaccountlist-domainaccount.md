@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Group](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount-group.md) | Specifies the group to which the <code>DomainAccount</code> belongs. |
 | [Name](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount-name.md) | Specifies the name of the <code>DomainAccount</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

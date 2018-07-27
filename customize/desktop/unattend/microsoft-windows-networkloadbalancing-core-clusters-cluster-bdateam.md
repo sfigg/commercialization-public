@@ -29,7 +29,7 @@ ms.technology: windows-oem
 | [ReverseHash](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-reversehash.md) | Specifies whether the adapter reverses the source and destination IP addresses and ports before making load-balancing decisions. |
 | [Team](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-team.md) | Specifies a valid Globally Unique Identifier (GUID) that identifies a BDA team. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

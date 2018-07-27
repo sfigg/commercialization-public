@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [ArchiveFolderName](microsoft-windows-fax-service-fax-archivefoldername.md) | Specifies the folder in which the fax service saves copies of all incoming and outgoing faxes. |
 | [IncomingFaxesArePublic](microsoft-windows-fax-service-fax-incomingfaxesarepublic.md) | Specifies whether all incoming faxes not assigned to a specific user can be viewed by all users. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

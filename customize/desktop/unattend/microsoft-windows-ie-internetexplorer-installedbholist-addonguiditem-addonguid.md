@@ -41,7 +41,7 @@ Browser Help Objects are add-on modules used to add functionality to Internet Ex
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

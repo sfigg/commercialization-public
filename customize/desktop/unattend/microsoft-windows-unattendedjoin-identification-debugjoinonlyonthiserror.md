@@ -49,7 +49,7 @@ This is an advanced setting designed to be used by product development and Micro
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize
