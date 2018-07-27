@@ -23,7 +23,43 @@ WPR requires Windows 7 or later version operating system.
 
 **Syntax:**
 
-**wpr** {**-profiles** \[*\<path\>* \[ …\]\] | **-start** *\<arguments\>* | **-stop** *\<arguments\>* | **-cancel** | **-status** *\<arguments\>* | **-profiledetails** | **-providers** | **-disablepagingexecutive** | **-log** *\<argument\>* | **-purgecache** | **-help** *\<arguments\>*}
+`wpr FirstLevelOption [<arguments>] [Additional options [<arguments>]]`
+
+You can get additional help with:
+
+`wpr -help FirstLevelOption`
+
+The following FirstLevelOptions are available:
+
+| Option | Description |
+| -- | -- |
+| -help | Provide command line help information |
+| -profiles | Enumerates the profile names and descriptions from a profile |
+| -purgecache | Purges the dynamic symbols cache |
+| -start | Starts one or more profiles. |
+| -marker | Fires an event marker |
+| -markerflush | Fires an event marker and flushes the working set. |
+| -status | Displays the status of an active recording (if any). |
+| -profiledetails | Fires an event marker and flushes the working set. |
+| -providers | Displays detailed information about providers. |
+| -cancel | Cancels the recording initiated by WPR (if any). |
+| -stop | Cancels and saves the recording initiated by WPR (if any). |
+| -flush | Flushes the logging sessions initiated by WPR (if any). |
+| -log | Configures the debug information saved to the event log. |
+| -disablepagingexecutive | Changes the **Disable Paging Executive** settings |
+| -heaptracingconfig | Changes a processes' heap tracing settings |
+| -snapshotconfig | Change snapshot settings for a process |
+| -capturestateondemand | Captures the states of the configured providers in the current recording. |
+| -pmcsources | Queries the list of hardware counters available on the system. |
+| -setprofint | Sets the sampled profile interval. |
+| -profint | Queries the current profile interval. |
+| -resetprofint | Restores the default profile interval values. |
+| -boottrace | Configures the registry entries for autologger/globallogger sessions |
+| -enableperiodicsnapshot  | Enables **Periodic Snapshot** for the specified interval and given process id.
+| -disableperiodicsnapshot | Disables **Periodic Snapshot** for all process |
+| -singlesnapshot | Gets an on-demand Snapshot for the specified process. | -instancename | Specifies a name to uniquely identify the tracing instance. Useful when managing multiple concurrent wpr sessions. Note that if used, **-instancename** Must be the last parameter. |
+
+
 
 > [!NOTE]
 > If you start WPR from the command line while another application is recording (such as Xperf or an application that uses NT Kernel Logger, such as logman or PerfTrace), WPR fails to start recording and returns the following error:
@@ -194,6 +230,79 @@ Use this option to display detailed information about providers. Providers refer
 
 This option takes no arguments.
 
+## Boottrace
+
+Use this option to configure the registry entries for autologger/globallogger sessions for the given profile. 
+
+**Syntax:**
+
+**wpr** **-boottrace** {**-addboot** [*\<filename.wprp\>!]*\<profile\>* [**-addboot*** \<profile\>* ...] [**-filemode**] [**-recordtempto** \<temp folder path\>] | **-stopboot** \<recording filename\> *\<Problem description\>* | **-cancelboot**}
+
+The following table describes the available keywords that you can apply to this option.
+
+| Keyword      | Description                                                         |
+|:-------------|:--------------------------------------------------------------------|
+| **-addboot**  | Sets the autologger registry entries for the given profile.  The `wpr -addboot` command takes the same options as the `wpr -start` command. Note that this options does not immediately start the trace. After reboot, the autologger will be started by the operating system. |                             |
+| **-stopboot** | Removes the autologger configured by **addboot**, stops the boot recording and merges all the recording into the given file. Note that this option saves the trace only if the autologger session is running (i.e. after reboot). Otherwise, this option will remove only the autologger configuration. |
+| **-cancelboot**   | Removes the autologger configured by **addboot** and cancels the boot recording initiated by WPR. |
+
+## CaptureStateOnDemand
+
+Use this option to capture states for the configured providers in the current recording. The event provider should be configured for **capturestateondemand** within the profile file while the session is running. 
+
+**syntax**
+
+**wpr -capturestateondemand**
+
+Below is an example of **EventProvider**:
+
+```
+<EventProvider Id="EventProvider_Microsoft-Windows-Win32k" Name="Microsoft-Windows-Win32k" NonPagedMemory="true" CaptureStateOnly="true">
+      <CaptureStateOnDemand Timeout="5">
+         <Keyword Value="0x0"/>
+      </CaptureStateOnDemand>
+    </EventProvider>
+```
+
+## Marker
+
+Use this option to fire an event marker with the given text in the current system logging session. 
+
+**Syntax:**
+
+**wpr** **-marker** \<text\>
+
+## MarkerFlush
+
+Use this option to fire an event marker with the given text and flushes the working set.
+
+**Syntax:**
+
+**wpr** **-markerflush** \<text\>
+
+**Flush**
+
+Use this option to flushes logging sessions to files initiated through WPR. 
+
+**Syntax:**
+
+**wpr -flush**
+
+This option takes no arguments.
+
+## HeapTracingConfig
+
+Use this option to enable or disable heap tracing for a specific process or store application.
+
+**Syntax:**
+
+**wpr** **-HeapTracingConfig** *\<process name\>* \[*\<package full name\>* *\<package relative app ID\>*\] \[{**enable**|**disable**}\] 
+
+> [!NOTE]
+> * If the {**enable**|**disable**} parameter is omitted, the current heap tracing configuration for the process or app will be displayed. For example: `wpr -HeapTracingConfig Heaptest.exe enable`
+> * This command doesn’t immediatley start the trace, and should be executed before taking the heap trace. See [Recording for Heap Analysis](https://docs.microsoft.com/windows-hardware/test/wpt/recording-for-heap-analysis) for more details. 
+> * Always disable **HeapTracingConfig** for the process after tracing is done since it can impact the performance of the process.
+
 
 ## <a href="" id="disablepagingexec"></a>Disablepagingexecutive
 
@@ -242,12 +351,13 @@ Use this option to display on-line help in the Command Prompt window.
 
 **Syntax:**
 
-**wpr** **-help** \[{**cancel** | **disablepagingexecutive** | **log** | **profiledetails** | **profiles** | **providers** | **purgecache** | **start** | **status** | **stop**}\]
+**wpr** **-help** \[{**boottrace** | **cancel** | **capturestateondemand** | **disablepagingexecutive** | **disableperiodicsnapshot** | **flush** | **heaptracingconfig** | **snapshotconfig** | **log** | **marker** | **markerflush** | **pmcsources** | **profiledetails** | **profiles** | **providers** | **purgecache** | **start** | **status** | **stop**}\]
 
 The following table describes the available keywords that you can apply to this option.
 
 | Keyword                    | Description                                                                                                                              |
 |:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+| **No keyword**             | Displays a list of options and short descrioptions. To get further help for specific options, use a keyword. For example: `wpr -help start`. | 
 | **cancel**                 | Describes the **–cancel** command-line argument. For more information, see [Cancel](#cancel).                                            |
 | **disablepagingexecutive** | Describes the **–disablepagingexecutive** command-line argument. For more information, see [Disablepagingexecutive](#disablepagingexec). |
 | **log**                    | Describes **-log** command-line arguments. For more information, see [Log](#log).                                                        |
@@ -259,6 +369,40 @@ The following table describes the available keywords that you can apply to this 
 | **status**                 | Presents descriptions of **-status** command-line arguments. For more information, see [Status](#status).                                |
 | **stop**                   | Describes **-stop** command-line arguments. For more information, see [Stop](#stop).                                                     |
 
+## SnapshotConfig
+
+Use this option to enable or disable the ability to capture one-time or periodic snapshots of *\<snapshot option>*\ for a specific process(es). Currently you can take take snapshots of the heap.
+
+**Syntax**
+
+**wpr** **-SnapshotConfig** *\<snapshot option\>* {**-name** *\<process name*\> | **-pid** *\<pid 1\>* \[**pid 2**\] ...} \[\{**enable**|**disable**\}\] 
+
+If the `{enable|disable}` parameter is omitted, the current snapshot configuration for the process will be displayed (i.e. only the **-name** option). 
+
+Below is an example of this command using image names:
+
+```
+wpr -snapshotconfig heap -name Win32Project1.exe           //query snapshot config
+wpr -snapshotconfig heap -name Win32Project1.exe enable    //enable snapshot config
+wpr -snapshotconfig heap -name Win32Project1.exe disable   //disable snapshot config
+```
+
+Below is an example of this command using a PID:
+
+```
+wpr -snapshotconfig heap -pid 8048 enable                //enable snapshot config
+```
+
+> [!NOTE]
+> If the process and OS architecture does not match match (for example, a win32 app on a 64bit Operating system), use the image name option. 
+
+The following table describes the available switches that you can apply to this option.
+
+| Switch | Description |
+| -- | -- |
+| *\<snapshot option\>* | Specifies one of the snapshot option types. Currently only the Heap is available. |
+| **-name** | Specifies the name of process. This switch cannot be used with **-Pid** switch. If this switch is used to enable the snapshot, the config will apply to all new instances of the specified process name. Please be sure to disable it when the testing has finished.  |
+| **-pid** | Specifies the process id. This switch cannot be used with -name switch. If this switch is used to enable the snapshot, the configuration will be applied immediately and for the lifetime of the process. |
 
 ## <a href="" id="rem"></a>Remarks
 
