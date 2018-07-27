@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: msdn
 author: alhopper-msft
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,7 +20,9 @@ ms.technology: windows-oem
 
 Use `UnattendEnableRetailDemo` to enable retail demo mode on the device. Retail demo mode is a special retail mode that can be activated in retail stores to run a demo on the device. The demo highlights key features of the OS and shows off the device user experience.
 
-When `UnattendEnableRetailDemo` is used in combination with other Unattend settings for language, region, keyboard, and EULA agreement, the device boots directly into retail demo mode with a local user account, which is automatically upgraded to a Microsoft account. For more information about retail demo mode and what you need to do to take full advantage of this integrated feature, see the *User Experience Windows Engineering Guide (UX WEG) for Windows 10*.
+When `UnattendEnableRetailDemo` is used in combination with other Unattend settings for language, region, keyboard, and EULA agreement, the device boots directly into retail demo mode with a local user account, which is automatically upgraded to a Microsoft account. For more information about retail demo mode and what you need to do to take full advantage of this integrated feature, see [Retail Demo Mode](../retail-demo-experience.md).
+
+Note: If you intend to resell the device to customers, make sure you don’t reuse your unattend file in your [factory reset unattend file](https://docs.microsoft.com/windows-hardware/manufacture/desktop/how-push-button-reset-features-work), otherwise a device reset will trigger retail demo mode again.
 
 ## Values
 

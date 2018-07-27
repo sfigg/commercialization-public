@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [ImageGroup](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage-imagegroup.md) | Specifies the image group of the image to be installed. |
 | [ImageName](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage-imagename.md) | Specifies the name of the image to be installed. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

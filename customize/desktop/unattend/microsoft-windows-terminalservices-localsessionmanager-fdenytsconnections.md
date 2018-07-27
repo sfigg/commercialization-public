@@ -44,7 +44,7 @@ There are several settings that must be configured to enable Remote Desktop conn
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

@@ -39,7 +39,7 @@ The `Description` setting specifies customized text to display under the icon ti
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

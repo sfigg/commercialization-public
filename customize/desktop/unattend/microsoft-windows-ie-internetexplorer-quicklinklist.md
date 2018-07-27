@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) | Specifies a shortcut on the <strong>Favorites</strong> toolbar. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

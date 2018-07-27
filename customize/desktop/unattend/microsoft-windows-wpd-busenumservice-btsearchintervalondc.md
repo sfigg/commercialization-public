@@ -44,7 +44,7 @@ If `BTSearchIntervalOnDC` is set to **0**, then the computer will not search for
 
  
 
-## Valid passes
+## Valid Configuration Passes
 
 
 specialize

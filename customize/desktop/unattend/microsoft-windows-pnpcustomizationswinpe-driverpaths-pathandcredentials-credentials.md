@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-password.md) | Specifies the password of the account used for authentication. |
 | [Username](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-username.md) | Specifies the user name of the account. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

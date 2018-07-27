@@ -43,7 +43,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

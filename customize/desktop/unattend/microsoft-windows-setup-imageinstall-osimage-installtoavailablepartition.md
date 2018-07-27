@@ -77,7 +77,7 @@ If both **InstallToAvailablePartition** and **InstallTo** are set the installati
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

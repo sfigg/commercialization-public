@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [StartPageKey](microsoft-windows-ie-internetexplorer-startpages-startpage-startpagekey.md) | Specifies a unique string for a start page. |
 | [StartPageUrl](microsoft-windows-ie-internetexplorer-startpages-startpage-startpageurl.md) | Specifies the URL of a start page. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

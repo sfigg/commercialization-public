@@ -50,7 +50,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) | [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md) | **Value**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

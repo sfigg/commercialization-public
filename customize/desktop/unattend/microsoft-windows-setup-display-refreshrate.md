@@ -47,7 +47,7 @@ We recommend that you use the default settings. If you select a value for this s
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

@@ -27,7 +27,7 @@ ms.technology: windows-oem
 | [Organization](microsoft-windows-setup-userdata-organization.md) | Specifies the name of the organization that owns the computer. |
 | [ProductKey](microsoft-windows-setup-userdata-productkey.md) | Specifies the product key to use, which determines the edition of Windows to install. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

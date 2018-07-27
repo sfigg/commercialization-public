@@ -41,7 +41,7 @@ Browser Extensions are plug-in modules used to add functionality to Internet Exp
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

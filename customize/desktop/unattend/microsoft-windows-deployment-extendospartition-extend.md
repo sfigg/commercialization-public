@@ -47,7 +47,7 @@ You can extend only NTFS file-system partitions.
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem
