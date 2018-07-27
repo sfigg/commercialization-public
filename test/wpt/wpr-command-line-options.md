@@ -404,6 +404,159 @@ The following table describes the available switches that you can apply to this 
 | **-name** | Specifies the name of process. This switch cannot be used with **-Pid** switch. If this switch is used to enable the snapshot, the config will apply to all new instances of the specified process name. Please be sure to disable it when the testing has finished.  |
 | **-pid** | Specifies the process id. This switch cannot be used with -name switch. If this switch is used to enable the snapshot, the configuration will be applied immediately and for the lifetime of the process. |
 
+## SingleSnapshot
+
+Use this option to trigger an on-demand snapshot of *<snapshot option>* for specified process ID. 
+
+**Syntax:**
+
+**wpr** **-SnapshotConfig** *\<snapshot option\>* *<pid 1>* \[pid 2\] ... \[up to pid 8\]
+
+> [!NOTE]
+> The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**. 
+> For example: `wpr -singlesnapshot heap <pid for foo.exe>` 
+> Please refer to SnapshotConfig command for more information.
+
+The following table describes the available switches that you can apply to this option.
+| Switch | Description |
+| -- | -- |
+| *<snapshot option>* | Specifies one of the snapshot option type. |
+| <pid> | Specifies the process id. |
+
+## EnablePeriodicSnapshot
+Use this option to trigger periodic snapshots at specified intervals and given process IDs
+**Syntax:**
+
+**wpr -enableperiodicsnapshot** <snapshot option> <interval (in seconds)> <pid 1> \[pid 2\] ... \[up to pid 8\]
+
+> [!NOTE]
+> The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**. 
+> For example: `wpr -enableperiodicsnapshot heap 60 <pid for foo.exe>` 
+> Please refer to SnapshotConfig command for more information.
+
+
+
+The following table describes the available switches that you can apply to this option.
+| Switch | Description |
+| -- | -- |
+| *<snapshot option>* | Specifies one of the snapshot option type. |
+| <interval> | Specifies the interval in seconds. Note that the minimum valid interval is 5. |
+| <pid> | Specifies the process id. |
+
+## DisablePeriodicSnapshot
+Use this option to disable periodic snapshots for all processes specified by the **enableperiodicsnapshot** option. 
+
+**Syntax:**
+
+**wpr** **-disableperiodicsnapshot** *<snapshot option>*
+
+**Example**
+
+`wpr -disableperiodicsnapshot heap`
+
+The following table describes the available switches that you can apply to this option.
+|Switch | Description |
+| -- | -- |
+| <snapshot option> | Specifies one of the snapshot option types. |
+|
+
+## PMCSources
+
+Use this option to query the list of hardware counters on the system, and their default sampling rates. 
+
+**Syntax:**
+
+**wpr -pmcsources**
+
+> [!NOTE]
+> Performance Monitor Unit events are used to measure CPU performance and understand workloads CPU characterization. Only a subset of PMU events in ARM/intel reference documents are implemented in Windows HAL. The example output of this option on Intel CPU device is below:
+
+```
+C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -pmcsources
+Id  Name                        Interval  Min      Max
+--------------------------------------------------------------
+  0 Timer                          10000  1221    1000000
+  2 TotalIssues                   698400  4096 2147483647
+  6 BranchInstructions             65536  4096 2147483647
+ 10 CacheMisses                    65536  4096 2147483647
+ 11 BranchMispredictions           65536  4096 2147483647
+ 19 TotalCycles                    65536  4096 2147483647
+ 25 UnhaltedCoreCycles             65536  4096 2147483647
+ 26 InstructionRetired             65536  4096 2147483647
+ 27 UnhaltedReferenceCycles        65536  4096 2147483647
+ 28 LLCReference                   65536  4096 2147483647
+ 29 LLCMisses                      65536  4096 2147483647
+ 30 BranchInstructionRetired       65536  4096 2147483647
+ 31 BranchMispredictsRetired       65536  4096 2147483647
+ 32 LbrInserts                     65536  4096 2147483647
+```
+
+
+## ProfInt
+
+Use this option to query the “profiling” interval.
+
+**Syntax:**
+
+**wpr -profint**
+example:
+```
+C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -profint
+Current Profile Interval = 10000 [1.0000ms]
+```
+
+## SetProfInt
+Use this option to set the sampled profile interval in 100 ns units.
+
+**Syntax:**
+
+**wpr -setprofint** *<n>* \[1221...10000000\]
+
+example:
+
+```
+C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -setprofint 100000
+New Profile Interval = 100000 [10.0000ms]
+```
+
+## ResetProfInt
+
+Use this option to reset profile interval to default value
+
+**Syntax:**
+
+**wpr -resetprofint** \[Profile Source Name\]
+
+Note that if *[Profile Source Name]* is not provided, all profile sources will be reset to the default value.
+
+
+##Instancename
+
+Use this option to specify a name to uniquely identify the tracing instance. 
+
+This option can be applied to any commands that manipulate the logging session and assigns a user supplied logging session name. WPR sets the default session name if this option is omitted. 
+
+**Syntax:**
+
+**wpr** **–\{option <arguments>\}** **-instancename** <text>
+
+> [!NOTE]
+> **-instancename** must be last parameter. If the logging sessions were started with this option, all the subsequent commands should use the same instancename option. For example:
+``` 
+C:\wpt>wpr -start cpu -instancename CpuSession
+C:\wpt>wpr -status
+WPR recording is in progress...
+...
+Time since start        : 00:00:05
+Dropped event           : 0
+Logging mode            : Memory
+C:\wpt>wpr -stop cpu.etl   omitting instancename option would not find CpuSession
+        There are no trace profiles running.
+        Error code: 0xc5583000
+C:\wpt>wpr -stop cpu.etl -instancename CpuSession   trace will be saved
+```
+
+
 ## <a href="" id="rem"></a>Remarks
 
 Each time that WPR saves a trace that was captured when managed applications were running on the system, WPR saves managed symbols next to the trace file. This feature enables performance analysis of managed applications.
