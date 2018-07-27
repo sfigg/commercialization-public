@@ -373,8 +373,7 @@ The following table shows the types of language packages and components availabl
 | Handwriting recognition| 	Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package| 	Basic| 	Enables handwriting recognition for devices with pen input.| 
 | Text-to-speech| 	Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package| 	Basic	| Enables text to speech, used by Cortana and Narrator.| 
 | Speech recognition| 	Microsoft-Windows-LanguageFeatures-Speech-de-de-Package	| Basic, Text-To-Speech recognition| 	Recognizes voice input, used by Cortana and Windows Speech | Recognition.| 
-| Retail Demo experience| 	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package| 	Basic	| Retail Demo Experience (RDX)| 
-
+| Retail Demo experience |	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package |	Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
 #### Add or change languages
 
 In this section, we'll add languages and Features On Demand to your Windows image. We'll add the German (de-de) language pack, then we'll add the Japanese (ja-jp) language. Japanese is an example of a language that requires additional font support. 

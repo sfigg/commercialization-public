@@ -55,7 +55,7 @@ Some capabilities have additional dependencies, as shown in the following table.
 | Handwriting recognition |	`Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` |	Basic |	Enables handwriting recognition for devices with pen input. |
 | Text-to-speech |	`Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` |	Basic |	Enables text to speech, used by Cortana and Narrator. |
 | Speech recognition |	`Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` |	Basic, Text-To-Speech recognition |	Recognizes voice input, used by Cortana and Windows Speech Recognition. |
-| Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic |	[Retail Demo experience](https://docs.microsoft.com/en-us/windows/uwp/monetize/retail-demo-experience). |
+| Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
 | WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
  
 

@@ -43,22 +43,17 @@ Key updates to RDX 3.0 will include:
 * **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
 * **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
 
-## Including demo content in device image
 
-You can use the standard Microsoft demo content included in the Retail Feature on Demand package. Additionally, you can add demo content that also becomes available on the device during demo mode. If the device gets connected to the internet, this content can be updated throughout the day via the Retail Demo online services. 
-
-The content you store on the image should not be time-sensitive, seasonal, or require an internet connection to update, as there is no guarantee an internet connection will be available to devices in demo mode. 
-
-## Attract loop content
+## Attract loop
 
 The retail demo experience begins with a video, which plays repeatedly while the device is idle. When the video attract loop plays, the Start screen is restored back to a pre-set state. Photos and videos taken by previous customers are deleted and the demo photos are also restocked. 
 
 > [!Important]
 > The device must be plugged into AC power for the video attract loop to start. 
 
-Create your own custom attraction video that highlights key features of your device using the guidance below.
-
 ### Design recommendations
+
+Create your own custom attraction video that highlights key features of your device.
 
 Use full-screen imagery to focus on key selling points (KSPs) of the device. Our research shows that shoppers are attracted to loops that show off hardware features with fast moving graphics and colorful imagery, but loops that function as advertisements don't resonate with shoppers. 
 
@@ -95,7 +90,8 @@ Create the default set of content first. This content should be appropriate for 
 
 **For devices sold in multiple regions or with multiple languages:**
 You can add region and/or language-specific versions for attract loops. When there is no region-specific or language-specific content, the default (\Neutral) content is displayed.
-For a complete list of supported languages and locales, see Locale Identifier Constants and Strings.
+
+For a complete list of supported languages and locales, see [Language Identifier Constants and Strings](https://docs.microsoft.com/windows/desktop/Intl/language-identifier-constants-and-strings).
 
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\Content\`[locale]`\AttractContent\attract.wmv`
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\`[region]`\Content\Neutral\AttractContent\attract.wmv`
@@ -105,28 +101,39 @@ Example: Canada-specific content in French:
 
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\CA\Content\fr-ca\AttractContent\attract.wmv`
 
+
 ## Retail Demo app
 
-The Microsoft Retail Demo app is a Windows-provided in-box app. Depending on the structure of the data content, the app displays either navigation tabs at the top or a home screen with tiles. As a shopper selects each navigation tab or tile, the app displays appropriate content pages. 
+To get started, you can include the Windows inbox Retail Demo app. 
+
+In RDX 2.0, shoppers select content through navigation tabs:
 
 ![Example of Navigation Tabs experience](images/rdx-retail-demo-app.png)
 
 _Example of current RDX 2.0 Navigation Tabs experience_
 
-![Example of Home page tiles experience](images/rdx-homepage-tiles.png)
+In RDX 3.0, shoppers select content through tiles, and can see more info on the Digital Fact Tag (right):
 
-_Example of new RDX 3.0 Home page tiles experience with Digital Fact Tag (right)_
+![Example of Home page tiles experience](images/rdx-homepage-tiles.png)
 
 Each content page contains one or more sections that are comprised of media (images and video), text copy, and Call-to-Action (CTA) buttons or links to encourage the shopper to explore the featured content. If a content page contains multiple sections, a feature bar displays at the bottom. The customer can move between content sections of the page by selecting features in the bar or by scrolling up and down the page.
 
-The default content for the Retail Demo app includes navigation tabs (or Tiles) for Windows and Office which highlight key features as determined by the Microsoft marketing team. 
+The default content for the Retail Demo app highlights Windows and Office key features as determined by the Microsoft marketing team. 
 
-> [!NOTE]
-> You must pre-install Office 365 to the device to ensure all pen and inking functionality featured in the ‘Office’ tab is available during RDX.
+The content shown changes based on the device. For example, if you have preinstalled Office 365, the demos show Office's pen and inking functionality.
 
-In addition, OEMs and Retailers can add and customize their own content for the Retail Demo app. 
+When a shopper closes the Retail Demo app, they see the desktop of the device. 
 
-If a customer closes the Retail Demo app, they see the desktop of the device with the Digital Fact Tag to the right (unless the language reads right-to-left, in which case then the Digital Fact Tag is in the upper left corner)
+In RDX 3.0, they'll also see a Digital Fact Tag to the right (unless the language reads right-to-left, in which case then the Digital Fact Tag is on the left).
+
+
+### Adding custom content to the Retail Demo app
+
+OEMs and Retailers can add and customize their own content for the Retail Demo app. 
+
+If the device gets connected to the internet, this content can be updated throughout the day via the Retail Demo online services. 
+
+The content you store on the image should not be time-sensitive, seasonal, or require an internet connection to update, as there is no guarantee an internet connection will be available to devices in demo mode. 
 
 ### Build your Retail Demo app content
 
@@ -474,7 +481,7 @@ namespace Windows.System.Profile
 }
 ```
 
-### Add retail demo mode, including language packs, to your images
+## Add retail demo mode, including language packs, to your images
 
 Add each of the following packages to your images. Note, these packages must be installed in order.
 
@@ -491,7 +498,7 @@ Add each of the following packages to your images. Note, these packages must be 
     * `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
     * `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
 
-3.  Next, add the language-neutral Retail Demo Content package:
+3.  Next, add the base Retail Demo package:
 
     * `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
 
