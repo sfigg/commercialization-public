@@ -74,17 +74,11 @@ The following are the specifications for the attract loop video.
 * The source video should be appropriate quality to ensure the best possible playback on the device based on its graphics rendering capabilities (resolution, color capabilities, and graphics processing power).
 * We recommend matching the video resolution to the optimal resolution on each device when possible. Otherwise, resolution should be 1920 x 1080.
 
-### Upload the video to the Microsoft RDX Submission Tool
-
-Once you’ve created your video attract loop, include it in a package using the [RDX Submission Tool](https://www.windowsretaildemo.com). The tool enables content to be targeted by language, region, and model. For more details on using the portal, please see the RDX_Submission_Tool_Onboarding_V2 document.
-
-This tool was formerly named Retail Demo Ingestion Portal (RDIP).
-
 ### Add the video to the image
 
-To include the attract loop video on the image, it must be named: **attract.wmv**
+You can replace the default attract loop video with your own customized video, which you can save to your device images. Doing so makes this video available to the shopper even if the retailer never connects the demo device to the internet. This content should not be time-sensitive or seasonal, and it should be appropriate for all regions and languages the device will ship to.
 
-Create the default set of content first. This content should be appropriate for all regions and languages the device will ship to. This content is stored in the \Neutral file path:
+Create the default set of content first. This content is stored in the \Neutral file path, and it must be named: **attract.wmv**:
 
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\Content\Neutral\AttractContent\attract.wmv`
 
@@ -101,6 +95,11 @@ Example: Canada-specific content in French:
 
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\CA\Content\fr-ca\AttractContent\attract.wmv`
 
+### Add the video using the Microsoft RDX Submission Tool
+
+Add your default attract loop video, as well as any updated videos, to the [RDX Submission Tool](https://www.windowsretaildemo.com). If you don’t currently have an account for the RDX Submission Tool, please reach out to your Account Manager, and let them know which Microsoft Account (MSA) you'd like to use to access the tool.
+
+In the tool, you can target your videos by language, region, and model, so that when a targeted device is connected to the internet, it automatically replaces the video and plays it.
 
 ## Retail Demo app
 
@@ -126,24 +125,15 @@ When a shopper closes the Retail Demo app, they see the desktop of the device.
 
 In RDX 3.0, they'll also see a Digital Fact Tag to the right (unless the language reads right-to-left, in which case then the Digital Fact Tag is on the left).
 
+### Create custom content
 
-### Adding custom content to the Retail Demo app
+OEMs and Retailers can create new custom content for the Retail Demo app using the [Microsoft RDX Submission Tool](http://www.windowsretaildemo.com). If you don’t currently have an account for the RDX Submission Tool, please reach out to your Account Manager, and let them know which Microsoft Account (MSA) you'd like to use to access the tool.
 
-OEMs and Retailers can add and customize their own content for the Retail Demo app. 
+In the tool, you can create a base set of content which you can save to your device images. Doing so makes this content available to the shopper even if the retailer never connects the demo device to the internet. This content should not be time-sensitive or seasonal, and it should be appropriate for all regions and languages the device will ship to.
 
-If the device gets connected to the internet, this content can be updated throughout the day via the Retail Demo online services. 
-
-The content you store on the image should not be time-sensitive, seasonal, or require an internet connection to update, as there is no guarantee an internet connection will be available to devices in demo mode. 
-
-### Build your Retail Demo app content
-
-Customize the Retail Demo app to show off your device using the [Microsoft RDX Submission Tool](http://www.windowsretaildemo.com), which offers a friendly user interface. More detailed instructions on using the tool to customize RDX are available in the RDX_Submission_Tool_Onboarding_V2 document. If you don’t currently have an account for the RDX Submission Tool, or access to the onboarding document, please reach out to your Account Manager with the Microsoft Account (MSA) you wish to associate with access.
-
-The RDX Submission Tool offers a visual walkthrough of content build as well as the ability to download the final media and JSON packages to place in your device image. Doing so makes this content available to the shopper even if the retailer never connects the demo device to the internet.
+In the tool you can also create new or updated content which can be delivered online to your devices. This content can be targeted by language, region, and model, so that when a targeted device is connected to the internet, it automatically receives the updates and shows the new content.
 
 OEMs can specify a theme color, navigation selected-button color, and logos for the Retail Demo app, in addition to adding unique page content. Colors and logos are specified at the app level, and content is specified at the page level. OEMs can also choose between one of three templates: Hero, Immersive Hero, and Mosaic (described below).
-
-Important: Content included in the device image must not include any time sensitive material (for example, seasonal pricing or offers).
 
 ### Template options, examples, and requirements
 
@@ -248,7 +238,8 @@ Create the default set of content first. This content should be appropriate for 
 **For devices sold in multiple regions:**
 
 You can add region and/or language-specific versions for attract loops. When there is no region-specific or language-specific content, the default (\Neutral) content is displayed.
-For a complete list of supported languages and locales, see Locale Identifier Constants and Strings.
+
+For a complete list of supported languages and locales, see [Language Identifier Constants and Strings](https://docs.microsoft.com/windows/desktop/Intl/language-identifier-constants-and-strings).
 
 >[!NOTE]
 > To support languages, your images will need Retail Demo Mode language packs.
@@ -498,7 +489,7 @@ Add each of the following packages to your images. Note, these packages must be 
     * `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
     * `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
 
-3.  Next, add the base Retail Demo pack:
+3.  Next, add the base retail demo pack:
 
     * `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
 
