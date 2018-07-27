@@ -44,7 +44,7 @@ A configuration set is a folder that contains additional device drivers, applica
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

@@ -28,7 +28,7 @@ ms.technology: windows-oem
 > [!Important]
 > It’s recommended that both settings, **GoToDesktopOnSignIn** and **ShowWindowsStoreAppsOnTaskbar**, be set to a consistent value, either both set to **true** or both set to **false**.
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

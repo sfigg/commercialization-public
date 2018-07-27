@@ -54,7 +54,7 @@ This element appears above the **Settings** bar in the **Properties** pane of Wi
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

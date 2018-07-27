@@ -54,7 +54,7 @@ If the **Compact** setting is set to true, you must start Windows Setup from Win
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

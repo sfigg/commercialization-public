@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [OfflineDomainAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount.md) | Specifies the domains and the domain accounts to be created. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

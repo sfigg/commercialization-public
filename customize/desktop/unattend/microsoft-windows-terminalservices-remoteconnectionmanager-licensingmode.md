@@ -62,7 +62,7 @@ LicensingMode is an integer. If you enter a value that is not supported, the Rem
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

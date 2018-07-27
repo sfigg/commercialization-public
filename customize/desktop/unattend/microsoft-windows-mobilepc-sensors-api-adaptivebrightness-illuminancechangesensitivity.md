@@ -39,7 +39,7 @@ The `IlluminanceChangeSensitivity` specifies the percentage change in illuminanc
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

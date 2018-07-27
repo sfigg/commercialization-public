@@ -28,7 +28,7 @@ ms.technology: windows-oem
 | [Name](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-name.md) | Specifies the user name for a <code>LocalAccount</code>. |
 | [Password](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password.md) | Specifies the password for a <code>LocalAccount</code> and whether the password is hidden in the unattended installation answer file. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

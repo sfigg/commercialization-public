@@ -66,7 +66,7 @@ The value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsservers
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DNSServerSearchOrder**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

@@ -34,7 +34,7 @@ DNS settings can be divided into two primary groups—global settings and interf
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | **Interface**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

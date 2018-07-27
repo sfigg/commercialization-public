@@ -26,7 +26,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) | Specifies the community name from which the computer running Simple Network Management Protocol (SNMP) can accept SNMP requests, such as GET, SET, GETNEXT, and GETBULK. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

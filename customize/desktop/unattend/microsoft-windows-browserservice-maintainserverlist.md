@@ -51,7 +51,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md) | **MaintainServerList**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

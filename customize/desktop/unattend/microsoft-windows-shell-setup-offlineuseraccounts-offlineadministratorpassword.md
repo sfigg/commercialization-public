@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword-plaintext.md) | Specifies whether the <code>OfflineAdministratorPassword</code> is hidden in the unattended installation answer file. |
 | [Value](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword-value.md) | Specifies the <code>OfflineAdministratorPassword</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

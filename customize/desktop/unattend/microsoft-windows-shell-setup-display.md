@@ -30,7 +30,7 @@ ms.technology: windows-oem
 > [!Note]
 > If the specified settings cannot be set on the display device, Windows attempts to match the requested mode as closely as possible.
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

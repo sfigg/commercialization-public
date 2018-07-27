@@ -44,7 +44,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

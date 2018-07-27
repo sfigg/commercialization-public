@@ -70,7 +70,7 @@ For client editions of Windows:
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PrivateProfile\_DisableNotfications**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

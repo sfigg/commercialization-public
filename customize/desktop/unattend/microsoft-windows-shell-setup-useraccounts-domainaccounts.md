@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md) | Specifies the domains and the domain accounts to be created. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

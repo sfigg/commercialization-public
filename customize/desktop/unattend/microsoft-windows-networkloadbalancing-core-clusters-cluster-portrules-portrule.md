@@ -37,7 +37,7 @@ ms.technology: windows-oem
 | [Timeout](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-timeout.md) | Specifies the number of seconds for which the client affinity would be preserved across configuration changes in a cluster. |
 | [VirtualIpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-virtualipaddress.md) | Specifies the virtual IP address of the port rule. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 
