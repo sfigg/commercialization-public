@@ -45,7 +45,7 @@ To use a different `ItemName` for each language, create a resource file, and ref
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

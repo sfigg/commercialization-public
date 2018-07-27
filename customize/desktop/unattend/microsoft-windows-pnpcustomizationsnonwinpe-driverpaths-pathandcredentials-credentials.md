@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials-password.md) | Specifies the password of the account to use for authentication. |
 | [Username](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials-username.md) | Specifies the user name of the account to use for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

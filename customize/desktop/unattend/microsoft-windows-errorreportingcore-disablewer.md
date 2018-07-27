@@ -49,7 +49,7 @@ For more information on privacy concerns about error reporting, see [this Micros
 
 [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md) | **DisableWER**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

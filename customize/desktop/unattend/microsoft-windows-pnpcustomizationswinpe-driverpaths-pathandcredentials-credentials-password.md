@@ -41,7 +41,7 @@ ms.technology: windows-oem
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

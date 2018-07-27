@@ -14,6 +14,7 @@
 ##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
 ##### [Protect and collect user data](desktop/manage-user-data.md)
 #### [Automate OOBE](desktop/automate-oobe.md)
+### [Retail demo experience](desktop/retail-demo-experience.md)
 ### [Windows performance power slider](desktop/customize-power-slider.md)
 ### [Dark mode](desktop/set-dark-mode.md)
 ### [Get Help app](desktop/customize-get-help-app.md)

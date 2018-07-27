@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [InstallTo](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto.md) | Specifies the location to which the image is to be installed. |
 | [WillShowUI](microsoft-windows-setup-windowsdeploymentservices-imageselection-willshowui.md) | Specifies in what circumstances the UI is displayed. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

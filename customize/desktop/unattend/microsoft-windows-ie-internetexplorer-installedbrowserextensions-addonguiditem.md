@@ -28,7 +28,7 @@ Browser Extensions are plug-in modules used to add functionality to Internet Exp
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuid](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem-addonguid.md) | Specifies a GUID for a Browser Extension. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

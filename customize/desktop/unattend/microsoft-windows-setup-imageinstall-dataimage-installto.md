@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [DiskID](microsoft-windows-setup-imageinstall-dataimage-installto-diskid.md) | Specifies the identification number of the disk on which to install the data image. |
 | [PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md) | Specifies the identification number of the partition on which to install the data image. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

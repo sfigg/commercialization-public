@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PublicProfile\_LogSuccessfulConnections**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

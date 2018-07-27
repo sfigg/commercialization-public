@@ -39,7 +39,7 @@ The `DisplayResponseInterval` setting specifies the minimum time between changes
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

@@ -42,7 +42,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

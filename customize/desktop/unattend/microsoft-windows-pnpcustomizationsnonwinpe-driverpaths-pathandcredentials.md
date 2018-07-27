@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Key](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-key.md) | Specifies a unique string identifier for the driver path. |
 | [Path](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-path.md) | Specifies a local or UNC path that contains additional out-of-box device drivers that you copy to the Windows installation. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

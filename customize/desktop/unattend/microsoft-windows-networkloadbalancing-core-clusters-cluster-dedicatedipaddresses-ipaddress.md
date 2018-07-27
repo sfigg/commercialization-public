@@ -29,7 +29,7 @@ ms.technology: windows-oem
 > [!Note]
 > The `Key` XML attribute does not appear in the <strong>Properties</strong> pane of Windows System Image Manager (Windows SIM) until you add <code>IpAddress</code> to the answer file.</p>
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

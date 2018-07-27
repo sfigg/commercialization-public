@@ -27,7 +27,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress.md) | Specifies details about a host's unique IP address. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

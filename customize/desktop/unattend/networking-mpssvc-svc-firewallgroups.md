@@ -28,7 +28,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **FirewallGroups**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

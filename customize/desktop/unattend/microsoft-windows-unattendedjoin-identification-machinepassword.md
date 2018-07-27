@@ -40,7 +40,7 @@ This setting is valid only if [UnsecureJoin](microsoft-windows-unattendedjoin-id
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

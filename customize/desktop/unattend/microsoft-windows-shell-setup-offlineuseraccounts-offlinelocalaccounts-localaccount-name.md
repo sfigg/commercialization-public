@@ -43,7 +43,7 @@ ms.technology: windows-oem
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

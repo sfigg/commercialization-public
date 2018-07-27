@@ -34,7 +34,7 @@ This setting has no effect on Server Core installations.
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 oobeSystem
 

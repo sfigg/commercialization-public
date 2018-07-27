@@ -53,7 +53,7 @@ When extended client affinity is specified, then after a network connection term
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

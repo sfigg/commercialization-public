@@ -47,7 +47,7 @@ To use a different IconID for each language, create a resource file, and refer t
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

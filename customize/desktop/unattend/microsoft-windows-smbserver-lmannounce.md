@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md) | **LmAnnounce**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

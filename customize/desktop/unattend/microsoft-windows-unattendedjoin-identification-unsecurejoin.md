@@ -52,7 +52,7 @@ If `UnsecureJoin` is enabled, do not create settings for [Domain](microsoft-wind
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

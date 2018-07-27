@@ -69,7 +69,7 @@ The default value is **7**.
 
 [Microsoft-Windows-RasServer](microsoft-windows-rasserver.md) | **RouterType**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

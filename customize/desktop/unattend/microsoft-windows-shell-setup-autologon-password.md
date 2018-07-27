@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-autologon-password-plaintext.md) | Specifies whether the autologon password [Value](microsoft-windows-shell-setup-autologon-password-value.md) is hidden in the answer file. |
 | [Value](microsoft-windows-shell-setup-autologon-password-value.md) | Specifies the autologon password. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

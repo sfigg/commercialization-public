@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) | Specifies whether to restart the computer immediately after specifying the [Name](microsoft-windows-deployment-auditcomputername-name.md) setting. |
 | [Name](microsoft-windows-deployment-auditcomputername-name.md) | Specifies the computer name to use during audit mode. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 
