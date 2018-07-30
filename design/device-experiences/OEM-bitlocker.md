@@ -24,14 +24,14 @@ BitLocker drive encryption uses a system partition separate from the Windows par
 For more information see [System.Client.SystemPartition](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemclientsystempartition), and [Hard Drives and Partitions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/hard-drives-and-partitions).
 
 ## BitLocker automatic device encryption
-BitLocker automatic device encryption uses BitLocker drive encryption technology to automatically encrypt internal drives after the user completes the Out Of Box Experience (OOBE) on InstantGo or HSIT compliant hardware.  
+BitLocker automatic device encryption uses BitLocker drive encryption technology to automatically encrypt internal drives after the user completes the Out Of Box Experience (OOBE) on [Modern Standby](modern-standby.md) or HSTI-compliant hardware.  
 
 **Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts, in which case BitLocker can be manually using the BitLocker Control Panel.
 
 ## BitLocker automatic device encryption hardware requirements
 BitLocker automatic device encryption is enabled when:
 - The device contains a **TPM** (Trusted Platform Module), either TPM 1.2 or TPM 2.0. 
-- **UEFI Secure Boot** is enabled. See [Secure boot](OEM-secure-boot.md) for more information.
+- **UEFI Secure Boot** is enabled. See [Secure Boot](OEM-secure-boot.md) for more information.
 - **Platform Secure Boot** is enabled
 - **Direct memory access (DMA)** protections is enabled
 
@@ -39,8 +39,8 @@ The following tests must pass before Windows 10 will enable Automatic BitLocker 
 
 1. **TPM**: Device must include a TPM with PCR 7 support.  See [System.Fundamentals.TPM20.TPM20](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalstpm20tpm20).
 2. **Secure boot**: UEFI Secure Boot is enabled. See [System.Fundamentals.Firmware.UEFISecureBoot](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).
-3. **InstantGo (AOAC)** requirements or **HSTI** validation. This requirement is met by one of the following:
-    - InstantGo (AOAC) requirements are implemented. These include [requirements for UEFI secure boot](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalsfirmwarecsuefisecurebootconnectedstandby) and protection from unauthorized DMA.
+3. **Modern Standby** requirements or **HSTI** validation. This requirement is met by one of the following:
+    - Modern Standby requirements are implemented. These include [requirements for UEFI Secure Boot](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/systems#systemfundamentalsfirmwarecsuefisecurebootconnectedstandby) and protection from unauthorized DMA.
     - Starting with Windows 10, version, 1703, this requirement can be met through [HSTI test](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx):
         1.	Platform Secure Boot self-test (or additional self-tests as configured in the registry) must be reported by HSTI as implemented and passed.
         2.	Excluding Thunderbolt, HSTI must report no non-allowed DMA busses.
