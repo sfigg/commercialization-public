@@ -62,7 +62,7 @@ Specify the account names and group names by using language-neutral names. The l
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

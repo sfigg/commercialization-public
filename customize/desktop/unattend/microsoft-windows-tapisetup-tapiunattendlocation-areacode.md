@@ -42,7 +42,7 @@ If this element is not applicable in your country or region, enter an empty stri
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

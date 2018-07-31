@@ -53,7 +53,7 @@ A corporate customer can configure a non-complex password for the built-in admin
 | [PlainText](microsoft-windows-shell-setup-useraccounts-administratorpassword-plaintext.md) | Specifies whether the <code>AdministratorPassword</code> is hidden in the unattended installation answer file. |
 | [Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md) | Specifies the <code>AdministratorPassword</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

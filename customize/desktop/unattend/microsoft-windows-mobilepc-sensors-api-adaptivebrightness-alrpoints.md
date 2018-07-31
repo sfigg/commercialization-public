@@ -46,7 +46,7 @@ The *ALR\_curve* can be also generated manually, using the following format: 00+
 
 *Lux\_measurement* is the illuminance (lux) detected by the ambient light sensor. For example, 000003E8 = 1000 lux.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

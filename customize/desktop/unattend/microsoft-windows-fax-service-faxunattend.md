@@ -33,7 +33,7 @@ ms.technology: windows-oem
 | [SendFaxes](microsoft-windows-fax-service-faxunattend-sendfaxes.md) | Specifies whether the fax service uses a device to send faxes. This entry applies to existing and new fax devices. |
 | [Tsid](microsoft-windows-fax-service-faxunattend-tsid.md) | Specifies the transmitting subscriber ID (TSID) sent by the fax device to a receiving fax machine. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

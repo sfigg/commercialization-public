@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-setup-windowsdeploymentservices-login-credentials-password.md) | Specifies the password. |
 | [Username](microsoft-windows-setup-windowsdeploymentservices-login-credentials-username.md) | Specifies the user name. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

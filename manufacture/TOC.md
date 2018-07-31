@@ -369,7 +369,7 @@
 #### [Get the tools needed to customize Windows IoT Core](iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](iot/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md)
-##### [Test an appx file on an IoT device](iot/test-the-app.md)
+##### [Install an appx file on an IoT device](https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller)
 #### [Lab 1c: Add a file and a registry setting to an image](iot/add-a-registry-setting-to-an-image.md)
 #### [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md)
 #### [Lab 1e: Add a driver to an image](iot/add-a-driver-to-an-image.md)

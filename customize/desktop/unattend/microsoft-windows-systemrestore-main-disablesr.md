@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-SystemRestore-Main](microsoft-windows-systemrestore-main.md) | **DisableSR**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

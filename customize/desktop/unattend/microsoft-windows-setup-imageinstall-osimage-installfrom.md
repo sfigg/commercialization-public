@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [MetaData](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata.md) | Specifies a unique Windows image in the .wim file to install. |
 | [Path](microsoft-windows-setup-imageinstall-osimage-installfrom-path.md) | Specifies the path to the .wim file. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

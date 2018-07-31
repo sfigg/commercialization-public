@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | Specifies the secondary data image to install. |
 | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | Specifies the Windows operating system image to install. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

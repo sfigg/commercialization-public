@@ -52,7 +52,7 @@ For more information on the `Get-NetFirewallRule` command, see [Net Security](ht
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Group**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

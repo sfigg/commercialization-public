@@ -28,7 +28,7 @@ All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run i
 | [Password](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-password.md) | Specifies the password of the account used for authentication. |
 | [Username](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-username.md) | Specifies the user name of the account used for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

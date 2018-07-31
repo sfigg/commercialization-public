@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Path](microsoft-windows-setup-pagefile-path.md) | Specifies the path of the page file to create. |
 | [Size](microsoft-windows-setup-pagefile-size.md) | Specifies the size of the page file to create. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

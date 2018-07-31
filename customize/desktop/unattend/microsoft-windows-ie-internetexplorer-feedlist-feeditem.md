@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [FeedTitle](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle.md) | Specifies the title of a <code>FeedItem</code>. |
 | [FeedURL](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl.md) | Specifies the URL of a <code>FeedItem</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

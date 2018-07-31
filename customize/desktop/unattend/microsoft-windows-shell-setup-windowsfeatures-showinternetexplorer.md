@@ -44,7 +44,7 @@ This setting has no effect on Server Core installations.
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

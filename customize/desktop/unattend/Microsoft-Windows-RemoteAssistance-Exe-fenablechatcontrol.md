@@ -45,7 +45,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md) | **fEnableChatControl**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

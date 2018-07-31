@@ -34,7 +34,7 @@ If one of the child elements is not applicable in your country or region, you mu
 | [OutsideAccess](microsoft-windows-tapisetup-tapiunattendlocation-outsideaccess.md) | Specifies the number to dial to access an outside line from this location. |
 | [PulseOrToneDialing](microsoft-windows-tapisetup-tapiunattendlocation-pulseortonedialing.md) | Specifies whether to use pulse dialing or tone dialing. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

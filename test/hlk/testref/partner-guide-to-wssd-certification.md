@@ -136,7 +136,7 @@ Execute required PCS certification tests
 |--------------------------------------------------------------------|----------|
 | S2D - Prepare Machines for Tests                                   | 1 hour   |
 | S2D - Basic Verification Tests                                     | 2 hours  |
-| S2D - Stress Tests                                                 | 1 hour   |
+| S2D - Stress Tests                                                 | 8 hours  |
 | PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Min) | 96 hours |
 | PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Max) | 96 hours |
 
@@ -173,7 +173,7 @@ The assembled solution/offering must pass the following Windows Hardware Lab Kit
 |--------------------------------------------------------------------|----------|
 | S2D - Prepare Machines for Tests                                   | 1 hour   |
 | S2D - Basic Verification Tests                                     | 2 hours  |
-| S2D - Stress Tests                                                 | 1 hour   |
+| S2D - Stress Tests                                                 | 8 hours  |
 | PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Min) | 96 hours |
 | PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Max) | 96 hours |
 
