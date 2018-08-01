@@ -23,6 +23,12 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 To learn how to add a driver on a running Windows PC, see [Add a driver online in audit mode](add-a-driver-online-in-audit-mode.md) or [Install a plug and play device](http://go.microsoft.com/fwlink/?LinkId=139151). To learn how to add a driver to a PC running WinPE, see [Drvload command line options](drvload-command-line-options.md).
 
+## Driver types
+
+-  **.inf-style drivers**: Many drivers include an information file (with an .inf extension) to help install the driver. These can be installed using tools described in this topic.    
+-  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. To learn how to add these, see [Add a driver online in Audit Mode](add-a-driver-online-in-audit-mode.md)
+-  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image, and in the Windows recovery (WinRE) image. 
+
 ## Add drivers to an offline Windows image
 
 To add drivers to an offline image, you have to mount an image prior to adding drivers. 
