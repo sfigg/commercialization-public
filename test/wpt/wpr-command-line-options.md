@@ -96,7 +96,7 @@ The following table describes the available switches that you can apply to this 
 
 | Switch                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *\<profile\>* \[**-start** *\<profilen\>*\]...                      | Specifies either a built-in profile or the path to a user-defined profile. You can specify up to 64 profiles on a single command line, with each profile specified as follows: <br/><br/> *\<profile\>*:=*\<profile_name\>*\[**.**{**light** \| **verbose**}\] <br/><br/> Each profile can define either light or verbose versions, or both versions. If neither option is specified, the verbose version is used unless the profile includes only a light version. |
+| *\<profile\>* \[**-start** *\<profilen\>*\]...                      | Specifies either a built-in profile or the path to a user-defined profile. You can specify up to 64 profiles on a single command line, with each profile specified as follows: <br/><br/> *\<profile\>* := \[*\<filename.wprp>*!\]*\<profile name\>*\[**.**{**light**\|**verbose**}\] <br/><br/> Each profile can define either light or verbose versions, or both versions. If neither option is specified, the verbose version is used unless the profile includes only a light version. |
 | **-filemode**                                                       | Specifies that recording is done in file mode. (The default mode is memory.) By using this option, the data is recorded to an unbounded file, which can grow in size until it fills the disk.                                                                                                                                                                                                                                                                       |
 | **-recordtempto** *\<temp folder path\>*                            | Specifies the temporary folder path that the recording is saved to.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **-onoffscenario** *\<OnOff Transition Type\>*                      | Specifies one of the on/off transition types. These are: **Boot**, **FastStartup**, **Shutdown**, **RebootCycle**, **Standby**, or **Hibernate**.                                                                                                                                                                                                                                                                                                                   |
@@ -236,7 +236,7 @@ Use this option to configure the registry entries for autologger/globallogger se
 
 **Syntax:**
 
-**wpr** **-boottrace** {**-addboot** [*\<filename.wprp\>!]*\<profile\>* [**-addboot*** \<profile\>* ...] [**-filemode**] [**-recordtempto** \<temp folder path\>] | **-stopboot** \<recording filename\> *\<Problem description\>* | **-cancelboot**}
+**wpr** **-boottrace** {**-addboot** [*\<filename.wprp\>*!]*\<profile\>* [**-addboot** *\<profile\>* ...] [**-filemode**] [**-recordtempto** \<temp folder path\>] | **-stopboot** \<recording filename\> *\<Problem description\>* | **-cancelboot**}
 
 The following table describes the available keywords that you can apply to this option.
 
@@ -304,7 +304,7 @@ Use this option to enable or disable heap tracing for a specific process or stor
 > * Always disable **HeapTracingConfig** for the process after tracing is done since it can impact the performance of the process.
 
 
-## <a href="" id="disablepagingexec"></a>Disablepagingexecutive
+## Disablepagingexecutive
 
 Use this option to specify whether drivers and kernel-mode system code can be paged to disk. Setting this option to **on** prevents paging.
 This option sets the value of [DisablePagingExecutive](https://technet.microsoft.com/en-us/library/cc959492.aspx) in the registry.
@@ -334,7 +334,7 @@ The following table describes the available keywords that you can apply to this 
 | **remove**   | Uninstalls the WPR debug logging provider manifest from the system. |
 
 
-## <a href="" id="purge"></a>Purgecache
+## Purgecache
 
 Use this option to purge the managed symbols cache.
 
@@ -419,7 +419,7 @@ Use this option to trigger an on-demand snapshot of *<snapshot option>* for spec
 
 The following table describes the available switches that you can apply to this option.
 | Switch | Description |
-| -- | -- |
+| --- | --- |
 | *<snapshot option>* | Specifies one of the snapshot option type. |
 | <pid> | Specifies the process id. |
 
@@ -438,10 +438,10 @@ Use this option to trigger periodic snapshots at specified intervals and given p
 
 The following table describes the available switches that you can apply to this option.
 | Switch | Description |
-| -- | -- |
-| *<snapshot option>* | Specifies one of the snapshot option type. |
-| <interval> | Specifies the interval in seconds. Note that the minimum valid interval is 5. |
-| <pid> | Specifies the process id. |
+| --- | --- |
+| *\<snapshot option\>* | Specifies one of the snapshot option type. |
+| \<interval\> | Specifies the interval in seconds. Note that the minimum valid interval is 5. |
+| \<pid\> | Specifies the process id. |
 
 ## DisablePeriodicSnapshot
 Use this option to disable periodic snapshots for all processes specified by the **enableperiodicsnapshot** option. 
@@ -530,7 +530,7 @@ Use this option to reset profile interval to default value
 Note that if *[Profile Source Name]* is not provided, all profile sources will be reset to the default value.
 
 
-##Instancename
+## Instancename
 
 Use this option to specify a name to uniquely identify the tracing instance. 
 
@@ -538,7 +538,7 @@ This option can be applied to any commands that manipulate the logging session a
 
 **Syntax:**
 
-**wpr** **–\{option <arguments>\}** **-instancename** <text>
+**wpr –\{option \<arguments\>\} -instancename \<text\>**
 
 > [!NOTE]
 > **-instancename** must be last parameter. If the logging sessions were started with this option, all the subsequent commands should use the same instancename option. For example:
@@ -550,10 +550,10 @@ WPR recording is in progress...
 Time since start        : 00:00:05
 Dropped event           : 0
 Logging mode            : Memory
-C:\wpt>wpr -stop cpu.etl   omitting instancename option would not find CpuSession
+C:\wpt>wpr -stop cpu.etl  -> omitting instancename option would not find CpuSession
         There are no trace profiles running.
         Error code: 0xc5583000
-C:\wpt>wpr -stop cpu.etl -instancename CpuSession   trace will be saved
+C:\wpt>wpr -stop cpu.etl -instancename CpuSession  -> trace will be saved
 ```
 
 
