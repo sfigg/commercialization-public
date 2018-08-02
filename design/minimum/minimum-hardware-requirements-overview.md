@@ -1465,7 +1465,7 @@ Devices that run IoT Core require an ARM SoC or x86, x64 processor/SoC that meet
 
 **Note**  Faster processor performance may be required based on the design and functionality of the device.
 
-For a sample of enabled SoCs, see [Enabled SoCs](https://developer.microsoft.com/en-us/windows/iot/explore/SoC). 
+For a sample of enabled SoCs, see [Enabled SoCs](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards). 
 
  
 
