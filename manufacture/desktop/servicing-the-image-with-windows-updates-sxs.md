@@ -1,9 +1,9 @@
 ---
 author: themar
-Description: 'Add updates, and upgrade the edition.'
+Description: 'Add updates to a Windows image'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 5: Add updates and upgrade the edition'
+title: 'Add updates to a Windows image'
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Add an update to a Windows image
+# Add updates to a Windows image
 
 For many customizations, like adding .inf-style drivers, Windows updates or upgrading the edition, you can mount and edit the Windows image. Mounting an image maps the contents of a file to a temporary location where you can edit the files or use DISM to perform common deployment tasks.
 
