@@ -38,11 +38,10 @@ In the meantime, for Windows 10 build 1803, continue to preload RDX 2.0 on your 
 
 Key updates to RDX 3.0 will include:
 
-* **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
-* **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
-* **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
-* **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
-
+* **Improved: The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
+* **New: Digital fact tag (DFT)** adds a pop-up showing customers the specs and price of the device for easy comparison on the retail sales floor.
+* **New: On-device admin (ODA) app** lets retailers update info on the digital fact tag locally (helpful for non-networked devices).
+* **New: Retail Demo provisioning extension API** lets OEMs and retailers manage and publish new demo content, helping to publish seasonal content on networked demo devices even faster. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you can review and publish changes through at your own schedule.
 
 ## Attract loop
 
@@ -61,7 +60,7 @@ Limit the video message to 1 or 2 KSPs. The loop is designed to get shoppers to 
 
 Avoid text in your video. Videos without text are easier to scale across multiple markets and locales since there are no localization costs. In addition, shoppers typically view only part of the video, so your text might not be viewed in its entirety.
 
-We strongly recommend that you use the attract loop to show how your brand, apps, services, and the devices themselves are differentiated from your competitors. 
+We strongly recommend that you use the attract loop to show how your brand, apps, services, and the devices themselves are differentiated from your competitors.
 
 ### Requirements
 
