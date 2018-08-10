@@ -20,13 +20,17 @@ Windows Performance Recorder (WPR) offers a simple command line interface. The 
 
 WPR requires Windows 7 or later version operating system.
 
-**Syntax:**
+### Syntax
 
-`wpr FirstLevelOption [<arguments>] [Additional options [<arguments>]]`
+```
+wpr FirstLevelOption [<arguments>] [Additional options [<arguments>]]
+```
 
 You can get additional help with:
 
-`wpr -help FirstLevelOption`
+```
+wpr -help FirstLevelOption
+```
 
 The following FirstLevelOptions are available:
 
@@ -67,23 +71,27 @@ The following FirstLevelOptions are available:
 
 Use this option to list the WPR profiles that the recording uses.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-profiles** \[*\<path\>*\]
+```
+**wpr** **-profiles** [*<path>*]
+```
 
 The following table describes the available arguments that you can apply to this option. To see built-in profiles, omit the argument.
 
-| Argument   | Description                                                                                                                                                                                         |
-|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Argument   | Description|
+|:-----------|:-------------|
 | *\<path\>* | Specifies the path and the name of the file that contains the profile definitions. For example: <br/><br/> `wpr -profiles “c:\Users\User1\Documents\WPR Files\Custom Profiles\CustomProfile1.wprp”` |
 
 ## Start
 
 Use this option to start a recording by using one or more profiles.
 
-**Syntax:**
+### Syntax
 
-**wpr -start** *\<profile\>* \[**-start** *\<profilen\>*\]... \[**-filemode**\] \[**-recordtempto** *\<temp folder path\>*\] \[**-onoffscenario** *\<OnOff Transition Type\>*\] \[**-onoffresultspath** *\<path to which the trace files are saved\>*\] \[**-onoffproblemdescription** *\<description of the scenario\>*\] \[**-numiterations** *\<number of iterations for OnOff tracing\>*\]
+```
+**wpr -start** *<profile>* [**-start** *<profilen>*]... [**-filemode**] [**-recordtempto** *<temp folder path>*] [**-onoffscenario** *<OnOff Transition Type>*] [**-onoffresultspath** *<path to which the trace files are saved>*] [**-onoffproblemdescription** *<description of the scenario>*] [**-numiterations** *<number of iterations for OnOff tracing>*]
+```
 
 The following table describes the available switches that you can apply to this option.
 
