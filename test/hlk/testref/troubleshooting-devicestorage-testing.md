@@ -192,10 +192,10 @@ Unspecified valid parameters are defaulted to a fixed value.
 
 ## <span id="Removable_Storage_Device"></span><span id="removable_storage_device"></span><span id="REMOVABLE_STORAGE_DEVICE"></span>Removable Storage Device
 
-These are common perfomance issues with removable storage.
+These are common perfomance issues with removable storage devices.
 
-For storage devices that have removable attributes, because I/O queuing is disabled on a particular driver stack to ensure that data can be written as much as possible. In the other hand, the queueing is enabled on devices that are recognized as fixed disk.
-If I/O queuing is disabled, the next I/O request is made after waiting for each I/O request to complete. Therefore, it will be lower throughput than fixed disk.
+For storage devices that have removable attributes, I/O queuing is disabled on a particular driver stack to ensure that data can be written as much as possible. However, the queueing is enabled on devices that are recognized as fixed disk.
+If I/O queuing is disabled, the next I/O request is made after waiting for each I/O request to complete. Therefore, it will have lower throughput than a fixed disk.
 
 
 
