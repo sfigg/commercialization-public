@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md) | Specifies the list of name servers. |
 | [NetbiosOptions](microsoft-windows-netbt-interfaces-interface-netbiosoptions.md) | Specifies security settings for the NetBIOS service. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

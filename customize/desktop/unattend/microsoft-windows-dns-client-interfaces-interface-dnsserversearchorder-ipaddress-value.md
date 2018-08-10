@@ -48,7 +48,7 @@ This element does not appear in the **Properties** pane of Windows System Image 
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) | [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) | **Value**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

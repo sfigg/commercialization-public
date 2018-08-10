@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: justinha
-ms.date: 05/16/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -18,11 +18,11 @@ With hardware that meets basic requirements, it also means that even if an attac
 
 Windows Defender Device Guard can also leverage advanced hardware features on hardware that supports them. These features include CPU virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. When you enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. 
 
-**Note:** In Windows 10 version 1709 and later, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device and Credential Guard are not impacted and will function as expected.
+**Note:** Beginning with Windows 10 version 1709 and Windows Server version 1709, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device Guard and Credential Guard are not impacted and will function as expected. Device Guard and Credential Guard are not supported on earlier versions of Windows when Intel TXT or SGX are enabled in a platform via the BIOS. 
 
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-**IT Professionals:**  If you want more information on how to deploy Windows Defender Device Guard, see [Windows Defender Device Guard deployment guide](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide).
+**IT Professionals:**  If you want more information on how to deploy Windows Defender Application Control, see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 ## Windows Defender Exploit Guard
 

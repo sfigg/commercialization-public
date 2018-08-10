@@ -26,7 +26,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuid](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem-addonguid.md) | Specifies a GUID for an add-on module. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

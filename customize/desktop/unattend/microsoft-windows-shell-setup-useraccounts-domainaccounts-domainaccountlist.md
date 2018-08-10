@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Domain](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domain.md) | Specifies the name of the domain for the <code>DomainAccountList</code>. |
 | [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

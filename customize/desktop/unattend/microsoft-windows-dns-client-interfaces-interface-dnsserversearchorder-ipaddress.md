@@ -34,7 +34,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) | **IpAddress**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

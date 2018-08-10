@@ -40,7 +40,7 @@ For more information about configuring RPC ports, see the MSDN topic: [How to co
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 oobeSystem

@@ -31,7 +31,7 @@ Pre-approved add-ons are plug-in modules used to add functionality to Internet E
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuidItem](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem.md) | Specifies settings for an add-on module. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

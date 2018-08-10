@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid.md) | Specifies the disk ID of the disk to which the image is installed. |
 | [PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-partitionid.md) | Specifies the partition ID of the partition to which the image is installed. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

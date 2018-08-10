@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md) | **CreateEncryptedOnlyTickets**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

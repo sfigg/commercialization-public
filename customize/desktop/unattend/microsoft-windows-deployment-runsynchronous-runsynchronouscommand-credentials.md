@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-password.md) | Specifies the password of the account to use for authentication. |
 | [Username](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-username.md) | Specifies the user name of the account to use for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditUser
 

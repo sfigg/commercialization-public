@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-password.md) | Specifies the password of the user account used for authentication. |
 | [Username](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-username.md) | Specifies the user name of the account used for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

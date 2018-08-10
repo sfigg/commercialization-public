@@ -28,7 +28,7 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 | [Password](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-password.md) | Specifies the password of the account used for authentication. |
 | [UserName](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-username.md) | Specifies the user name of the account used for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

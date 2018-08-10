@@ -88,7 +88,7 @@ If the value of `WillReboot` is **OnRequest**, the synchronous command must retu
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditUser

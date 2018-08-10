@@ -46,7 +46,7 @@ This setting refers to a directory where the log files are written, rather than 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

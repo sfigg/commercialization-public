@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
 | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | Specifies the details of local accounts to be created during installation. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

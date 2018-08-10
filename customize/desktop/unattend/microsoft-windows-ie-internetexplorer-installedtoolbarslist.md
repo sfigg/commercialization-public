@@ -28,7 +28,7 @@ Toolbars are plug-in modules used to add functionality to Internet Explorer.
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem.md) | Specifies settings for a toolbar. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

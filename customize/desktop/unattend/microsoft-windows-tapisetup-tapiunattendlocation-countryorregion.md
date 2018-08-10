@@ -52,7 +52,7 @@ Region codes change over time. To find the latest region codes, follow these ste
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

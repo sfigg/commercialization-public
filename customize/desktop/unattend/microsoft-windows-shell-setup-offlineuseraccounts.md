@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [OfflineDomainAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
 | [OfflineLocalAccounts](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts.md) | Specifies the details of local accounts to be created during installation. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

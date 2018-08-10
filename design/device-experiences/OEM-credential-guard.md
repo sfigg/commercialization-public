@@ -2,7 +2,7 @@
 title: Windows Defender Credential Guard hardware requirements
 description: Provides guidance on what an OEM should do to enable Windows Defender Credential Guard
 ms.author: justinha
-ms.date: 10/05/2017
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -17,11 +17,11 @@ It is strongly recommended that valuable credentials, such as the sign-in creden
 
 When Windows Defender Credential Guard is enabled, Kerberos does not allow unconstrained Kerberos delegation or DES encryption, not only for signed-in credentials, but also prompted or saved credentials.
 
-**Note:** In Windows 10 version 1709 and later, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device and Credential Guard are not impacted and will function as expected.
+**Note:** Beginning with Windows 10 version 1709 and Windows Server version 1709, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device Guard and Credential Guard are not impacted and will function as expected. Device Guard and Credential Guard are not supported on earlier versions of Windows when Intel TXT or SGX are enabled in a platform via the BIOS. 
 
 For a better understanding of what Windows Defender Credential Guard is and what attacks it protects againt, see [Deep Dive into Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651).
 
-**IT Professionals:** To learn how to deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard#hardware-and-software-requirements).
+**IT Professionals:** To learn how to deploy Windows Defender Credential Guard in your enterprise, see [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard).
 
 For a device to support Windows Defender Credential Guard as specified in the Windows Hardware Compatibility Requirements (WHCR), you as the OEM must provide the following hardware, software, or firmware features. 
 
@@ -40,7 +40,7 @@ To determine if a device is able to run Window Defender Device Guard and Credent
 ## <span id="related_topics"></span>Related topics
 
 - [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
--- [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
+- [Windows Defender Device Guard hardware requirements](OEM-device-guard.md)
 - [Windows Defender Application Guard hardware requirements](OEM-app-guard.md)
 
 

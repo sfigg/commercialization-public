@@ -31,7 +31,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 | [ShowMediaCenter](microsoft-windows-shell-setup-windowsfeatures-showmediacenter.md) | Specifies whether to show entry points for Media Center. |
 | [ShowWindowsMediaPlayer](microsoft-windows-shell-setup-windowsfeatures-showwindowsmediaplayer.md) | Specifies whether to show entry points for Windows Media Player. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

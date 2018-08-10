@@ -45,7 +45,7 @@ This element does not appear in the **Properties** pane of Windows System Image
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing
