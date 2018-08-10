@@ -14,7 +14,6 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-
 # WPR Command-Line Options
 
 Windows Performance Recorder (WPR) offers a simple command line interface. The full complexity of WPR is embedded in the recording profiles.
@@ -59,15 +58,10 @@ The following FirstLevelOptions are available:
 | -disableperiodicsnapshot | Disables **Periodic Snapshot** for all process |
 | -singlesnapshot | Gets an on-demand Snapshot for the specified process. | -instancename | Specifies a name to uniquely identify the tracing instance. Useful when managing multiple concurrent wpr sessions. Note that if used, **-instancename** Must be the last parameter. |
 
-
-
 > [!NOTE]
-> If you start WPR from the command line while another application is recording (such as Xperf or an application that uses NT Kernel Logger, such as logman or PerfTrace), WPR fails to start recording and returns the following error:
-> 
+> If you start WPR from the command line while another application is recording (such as Xperf or an application that uses NT Kernel Logger, such as logman or PerfTrace), WPR fails to start recording and returns the following error. In this case, you must cancel the other recording before you can start a new recording by using WPR:
+>
 > `The event collector was already running.`
-> 
-> In this case, you must cancel the other recording before you can start a new recording by using WPR.
-
 
 ## Profiles
 
@@ -83,7 +77,6 @@ The following table describes the available arguments that you can apply to this
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *\<path\>* | Specifies the path and the name of the file that contains the profile definitions. For example: <br/><br/> `wpr -profiles “c:\Users\User1\Documents\WPR Files\Custom Profiles\CustomProfile1.wprp”` |
 
-
 ## Start
 
 Use this option to start a recording by using one or more profiles.
@@ -96,14 +89,13 @@ The following table describes the available switches that you can apply to this 
 
 | Switch                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *\<profile\>* \[**-start** *\<profilen\>*\]...                      | Specifies either a built-in profile or the path to a user-defined profile. You can specify up to 64 profiles on a single command line, with each profile specified as follows: <br/><br/> *\<profile\>* := \[*\<filename.wprp>*!\]*\<profile name\>*\[**.**{**light**\|**verbose**}\] <br/><br/> Each profile can define either light or verbose versions, or both versions. If neither option is specified, the verbose version is used unless the profile includes only a light version. |
+| *\<profile\>* \[**-start** *\<profilen\>*\]...                      | Specifies either a built-in profile or the path to a user-defined profile. You can specify up to 64 profiles on a single command line, with each profile specified as follows: <br/><br/>*\<profile\>* := \[*\<filename.wprp>*!\]*\<profile name\>*\[**.**{**light**\|**verbose**}\] <br/><br/> Each profile can define either light or verbose versions, or both versions. If neither option is specified, the verbose version is used unless the profile includes only a light version. |
 | **-filemode**                                                       | Specifies that recording is done in file mode. (The default mode is memory.) By using this option, the data is recorded to an unbounded file, which can grow in size until it fills the disk.                                                                                                                                                                                                                                                                       |
 | **-recordtempto** *\<temp folder path\>*                            | Specifies the temporary folder path that the recording is saved to.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **-onoffscenario** *\<OnOff Transition Type\>*                      | Specifies one of the on/off transition types. These are: **Boot**, **FastStartup**, **Shutdown**, **RebootCycle**, **Standby**, or **Hibernate**.                                                                                                                                                                                                                                                                                                                   |
 | **-onoffresultspath** *\<path to which the trace files are saved\>* | Specifies the path to which the trace files are saved.                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **-onoffproblemdescription** *\<description of the scenario\>*      | Specifies the description of the scenario.                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **-numiterations** *\<number of iterations for OnOff tracing\>*     | Sets the number of iterations for OnOff recording. By default, the settings from the built-in or custom profile file are used by default.                                                                                                                                                                                                                                                                                                                           |
-
 
 ## Stop
 
@@ -120,7 +112,6 @@ The following table describes the available arguments that you can apply to this
 | *\<file\>*                | Specifies the event trace log (ETL) file to which WPR saves the recording. This argument is required.  |
 | *\<problem description\>* | Specifies the problem description. Although this argument is optional, we recommended that you use it. |
 
-
 ## Cancel
 
 Use this option to cancel the current recording without saving the recorded data. If no instance is currently active, an error is returned.
@@ -130,7 +121,6 @@ Use this option to cancel the current recording without saving the recorded data
 **wpr** **-cancel**
 
 This option takes no arguments.
-
 
 ## Status
 
@@ -203,8 +193,7 @@ CaptureState Providers on Save
 </tbody>
 </table>
 
-
-## <a href="" id="prodet"></a>Profiledetails
+## Profiledetails
 
 Use this option to display detailed information about a profile or set of profiles. To specify multiple profiles, use the following syntax where *\<profilen\>* refers to the name of each profile.
 
@@ -219,7 +208,6 @@ The following table describes the available switches that you can apply to this 
 | **-filemode**                                  | Specifies that recording was done in file mode. (The default mode is memory.)                                                                     |
 | **-onoffscenario** *\<OnOff Transition Type\>* | Specifies one of the on/off transition types. These are: **Boot**, **FastStartup**, **Shutdown**, **RebootCycle**, **Standby**, or **Hibernate**. |
 
-
 ## Providers
 
 Use this option to display detailed information about providers. Providers refer to the Event Tracing for Windows (ETW) components that expose events to Windows Performance Recorder (WPR). To display information about providers, use the following syntax, where **-providers** refers to all installed/known and registered providers.
@@ -232,7 +220,7 @@ This option takes no arguments.
 
 ## Boottrace
 
-Use this option to configure the registry entries for autologger/globallogger sessions for the given profile. 
+Use this option to configure the registry entries for autologger/globallogger sessions for the given profile.
 
 **Syntax:**
 
@@ -248,11 +236,11 @@ The following table describes the available keywords that you can apply to this 
 
 ## CaptureStateOnDemand
 
-Use this option to capture states for the configured providers in the current recording. The event provider should be configured for **capturestateondemand** within the profile file while the session is running. 
+Use this option to capture states for the configured providers in the current recording. The event provider should be configured for **capturestateondemand** within the profile file while the session is running.
 
-**syntax**
+### Syntax
 
-**wpr -capturestateondemand**
+#### wpr-capturestateondemand
 
 Below is an example of **EventProvider**:
 
@@ -266,27 +254,27 @@ Below is an example of **EventProvider**:
 
 ## Marker
 
-Use this option to fire an event marker with the given text in the current system logging session. 
+Use this option to fire an event marker with the given text in the current system logging session.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-marker** \<text\>
+`**wpr** **-marker** \<text\>`
 
 ## MarkerFlush
 
 Use this option to fire an event marker with the given text and flushes the working set.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-markerflush** \<text\>
+`**wpr** **-markerflush** \<text\>`
 
-**Flush**
+## Flush
 
-Use this option to flushes logging sessions to files initiated through WPR. 
+Use this option to flushes logging sessions to files initiated through WPR.
 
-**Syntax:**
+### Syntax
 
-**wpr -flush**
+`**wpr -flush**`
 
 This option takes no arguments.
 
@@ -294,92 +282,88 @@ This option takes no arguments.
 
 Use this option to enable or disable heap tracing for a specific process or store application.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-HeapTracingConfig** *\<process name\>* \[*\<package full name\>* *\<package relative app ID\>*\] \[{**enable**|**disable**}\] 
+`**wpr** **-HeapTracingConfig** *\<process name\>* \[*\<package full name\>* *\<package relative app ID\>*\] \[{**enable**|**disable**}\]`
 
 > [!NOTE]
 > * If the {**enable**|**disable**} parameter is omitted, the current heap tracing configuration for the process or app will be displayed. For example: `wpr -HeapTracingConfig Heaptest.exe enable`
-> * This command doesn’t immediatley start the trace, and should be executed before taking the heap trace. See [Recording for Heap Analysis](https://docs.microsoft.com/windows-hardware/test/wpt/recording-for-heap-analysis) for more details. 
+> * This command doesn’t immediately start the trace, and should be executed before taking the heap trace. See [Recording for Heap Analysis](https://docs.microsoft.com/windows-hardware/test/wpt/recording-for-heap-analysis) for more details.
 > * Always disable **HeapTracingConfig** for the process after tracing is done since it can impact the performance of the process.
-
 
 ## Disablepagingexecutive
 
 Use this option to specify whether drivers and kernel-mode system code can be paged to disk. Setting this option to **on** prevents paging.
 This option sets the value of [DisablePagingExecutive](https://technet.microsoft.com/en-us/library/cc959492.aspx) in the registry.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-disablepagingexecutive** {**on** | **off**}
+`**wpr** **-disablepagingexecutive** {**on** | **off**}`
 
 > [!NOTE]
 > To correctly capture event stacks on 64-bit systems that are running Windows 7, **disablepagingexecutive** should be set to **On**, and the system must be rebooted before you start performance recording. For 32-bit systems that are running Windows 7 and for all systems that are running Windows 8 or higher, you can operate performance recording without setting **disablepagingexecutive** to **On**.
-
 
 ## Log
 
 Use this option to append and configure debug logging to the event log.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-log** {**enabled** | **disabled** | **remove**}
+`**wpr** **-log** {**enabled** | **disabled** | **remove**}`
 
 The following table describes the available keywords that you can apply to this option.
 
-| Keyword      | Description                                                         |
-|:-------------|:--------------------------------------------------------------------|
-| **enabled**  | Enables debug logging to the event log.                             |
-| **disabled** | Disables debug logging to the event log.                            |
-| **remove**   | Uninstalls the WPR debug logging provider manifest from the system. |
-
+| Keyword      | Description|
+|:-------------|:--------------|
+| **enabled**  | Enables debug logging to the event log|
+| **disabled** | Disables debug logging to the event log|
+| **remove**   | Uninstalls the WPR debug logging provider manifest from the system|
 
 ## Purgecache
 
 Use this option to purge the managed symbols cache.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-purgecache**
+`**wpr** **-purgecache**`
 
 This option takes no arguments.
-
 
 ## Help
 
 Use this option to display on-line help in the Command Prompt window.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-help** \[{**boottrace** | **cancel** | **capturestateondemand** | **disablepagingexecutive** | **disableperiodicsnapshot** | **flush** | **heaptracingconfig** | **snapshotconfig** | **log** | **marker** | **markerflush** | **pmcsources** | **profiledetails** | **profiles** | **providers** | **purgecache** | **start** | **status** | **stop**}\]
+`**wpr** **-help** \[{**boottrace** | **cancel** | **capturestateondemand** | **disablepagingexecutive** | **disableperiodicsnapshot** | **flush** | **heaptracingconfig** | **snapshotconfig** | **log** | **marker** | **markerflush** | **pmcsources** | **profiledetails** | **profiles** | **providers** | **purgecache** | **start** | **status** | **stop**}\]`
 
 The following table describes the available keywords that you can apply to this option.
 
-| Keyword                    | Description                                                                                                                              |
-|:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| **No keyword**             | Displays a list of options and short descrioptions. To get further help for specific options, use a keyword. For example: `wpr -help start`. | 
-| **cancel**                 | Describes the **–cancel** command-line argument. For more information, see [Cancel](#cancel).                                            |
-| **disablepagingexecutive** | Describes the **–disablepagingexecutive** command-line argument. For more information, see [Disablepagingexecutive](#disablepagingexec). |
-| **log**                    | Describes **-log** command-line arguments. For more information, see [Log](#log).                                                        |
-| **profiledetails**         | Describes the **–profiledetails** command-line argument. For more information, see [Profiledetails](#prodet).                            |
-| **profiles**               | Describes **-profiles** command-line arguments. For more information, see [Profiles](#profiles).                                         |
-| **providers**              | Describes the **-providers** command-line argument. For more information, see [Providers](#providers).                                   |
-| **purgecache**             | Describes the **–purgecache** command-line argument. For more information, see [Purgecache](#purge).                                     |
-| **start**                  | Presents descriptions of **-start** command-line arguments. For more information, see [Start](#start).                                   |
-| **status**                 | Presents descriptions of **-status** command-line arguments. For more information, see [Status](#status).                                |
-| **stop**                   | Describes **-stop** command-line arguments. For more information, see [Stop](#stop).                                                     |
+|Keyword|Description|
+|:----------|:----|
+|**No keyword**|Displays a list of options and short descriptions. To get further help for specific options, use a keyword. For example: `wpr -help start`. |
+|**cancel**|Describes the **–cancel** command-line argument. For more information, see [Cancel](#cancel).|
+|**disablepagingexecutive**|Describes the *–disablepagingexecutive** command-line argument. For more information, see [Disablepagingexecutive](#disablepagingexec).|
+|**log**| Describes **-log** command-line arguments. For more information, see [Log](#log).|
+| **profiledetails**| Describes the **–profiledetails** command-line argument. For more information, see [Profiledetails](#prodet).|
+| **profiles**| Describes **-profiles** command-line arguments. For more information, see [Profiles](#profiles).|
+| **providers**| Describes the **-providers** command-line argument. For more information, see [Providers](#providers).|
+| **purgecache**| Describes the **–purgecache** command-line argument. For more information, see [Purgecache](#purge).|
+| **start**| Presents descriptions of **-start** command-line arguments. For more information, see [Start](#start).|
+| **status**| Presents descriptions of **-status** command-line arguments. For more information, see [Status](#status).|
+| **stop**| Describes **-stop** command-line arguments. For more information, see [Stop](#stop).|
 
 ## SnapshotConfig
 
 Use this option to enable or disable the ability to capture one-time or periodic snapshots of *\<snapshot option>*\ for a specific process(es). Currently you can take take snapshots of the heap.
 
-**Syntax**
+### Syntax
 
-**wpr** **-SnapshotConfig** *\<snapshot option\>* {**-name** *\<process name*\> | **-pid** *\<pid 1\>* \[**pid 2**\] ...} \[\{**enable**|**disable**\}\] 
+`**wpr** **-SnapshotConfig** *\<snapshot option\>* {**-name** *\<process name*\> | **-pid** *\<pid 1\>* \[**pid 2**\] ...} \[\{**enable**|**disable**\}\]`
 
-If the `{enable|disable}` parameter is omitted, the current snapshot configuration for the process will be displayed (i.e. only the **-name** option). 
+If the `{enable|disable}` parameter is omitted, the current snapshot configuration for the process will be displayed (i.e. only the **-name** option).
 
-Below is an example of this command using image names:
+This example uses the **snapshotconfig** command with image names:
 
 ```
 wpr -snapshotconfig heap -name Win32Project1.exe           //query snapshot config
@@ -387,14 +371,14 @@ wpr -snapshotconfig heap -name Win32Project1.exe enable    //enable snapshot con
 wpr -snapshotconfig heap -name Win32Project1.exe disable   //disable snapshot config
 ```
 
-Below is an example of this command using a PID:
+This example uses the **snapshotconfig** command with a PID:
 
 ```
 wpr -snapshotconfig heap -pid 8048 enable                //enable snapshot config
 ```
 
 > [!NOTE]
-> If the process and OS architecture does not match match (for example, a win32 app on a 64bit Operating system), use the image name option. 
+> If the process and OS architecture does not match match (for example, a win32 app on a 64bit Operating system), use the image name option.
 
 The following table describes the available switches that you can apply to this option.
 
@@ -406,35 +390,39 @@ The following table describes the available switches that you can apply to this 
 
 ## SingleSnapshot
 
-Use this option to trigger an on-demand snapshot of *<snapshot option>* for specified process ID. 
+Use this option to trigger an on-demand snapshot of *\<snapshot option\>* for specified process ID.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-SnapshotConfig** *\<snapshot option\>* *<pid 1>* \[pid 2\] ... \[up to pid 8\]
+`**wpr** **-SnapshotConfig** *\<snapshot option\>* *<pid 1>* \[pid 2\] ... \[up to pid 8\]`
 
 > [!NOTE]
-> The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**. 
-> For example: `wpr -singlesnapshot heap <pid for foo.exe>` 
-> Please refer to SnapshotConfig command for more information.
+> The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**.
+>
+>For example: `wpr -singlesnapshot heap <pid for foo.exe>`
+>
+>Please refer to [SnapshotConfig](#snapshotconfig) command for more information.
 
 The following table describes the available switches that you can apply to this option.
 | Switch | Description |
 | --- | --- |
-| *<snapshot option>* | Specifies one of the snapshot option type. |
-| <pid> | Specifies the process id. |
+| *\<snapshot option\>* | Specifies one of the snapshot option type. |
+| \<pid\> | Specifies the process id. |
 
 ## EnablePeriodicSnapshot
-Use this option to trigger periodic snapshots at specified intervals and given process IDs
-**Syntax:**
 
-**wpr -enableperiodicsnapshot** <snapshot option> <interval (in seconds)> <pid 1> \[pid 2\] ... \[up to pid 8\]
+Use this option to trigger periodic snapshots at specified intervals and given process IDs
+
+### Syntax
+
+`**wpr -enableperiodicsnapshot** <snapshot option> <interval (in seconds)> <pid 1> \[pid 2\] ... \[up to pid 8\]`
 
 > [!NOTE]
-> The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**. 
-> For example: `wpr -enableperiodicsnapshot heap 60 <pid for foo.exe>` 
-> Please refer to SnapshotConfig command for more information.
-
-
+> The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**.
+>
+>For example: `wpr -enableperiodicsnapshot heap 60 <pid for foo.exe>`
+>
+>Please refer to SnapshotConfig command for more information.
 
 The following table describes the available switches that you can apply to this option.
 | Switch | Description |
@@ -444,29 +432,30 @@ The following table describes the available switches that you can apply to this 
 | \<pid\> | Specifies the process id. |
 
 ## DisablePeriodicSnapshot
-Use this option to disable periodic snapshots for all processes specified by the **enableperiodicsnapshot** option. 
 
-**Syntax:**
+Use this option to disable periodic snapshots for all processes specified by the **enableperiodicsnapshot** option.
 
-**wpr** **-disableperiodicsnapshot** *<snapshot option>*
+### Syntax
 
-**Example**
+`**wpr** **-disableperiodicsnapshot** *<snapshot option>*`
+
+### Example
 
 `wpr -disableperiodicsnapshot heap`
 
 The following table describes the available switches that you can apply to this option.
 |Switch | Description |
 | -- | -- |
-| <snapshot option> | Specifies one of the snapshot option types. |
+| \<snapshot option\> | Specifies one of the snapshot option types. |
 |
 
 ## PMCSources
 
-Use this option to query the list of hardware counters on the system, and their default sampling rates. 
+Use this option to query the list of hardware counters on the system, and their default sampling rates.
 
-**Syntax:**
+### Syntax
 
-**wpr -pmcsources**
+#### wpr -pmcsources
 
 > [!NOTE]
 > Performance Monitor Unit events are used to measure CPU performance and understand workloads CPU characterization. Only a subset of PMU events in ARM/intel reference documents are implemented in Windows HAL. The example output of this option on Intel CPU device is below:
@@ -491,28 +480,30 @@ Id  Name                        Interval  Min      Max
  32 LbrInserts                     65536  4096 2147483647
 ```
 
-
 ## ProfInt
 
 Use this option to query the “profiling” interval.
 
-**Syntax:**
+### Syntax
 
-**wpr -profint**
-example:
+`**wpr -profint**`
+
+#### Example
+
 ```
 C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -profint
 Current Profile Interval = 10000 [1.0000ms]
 ```
 
 ## SetProfInt
+
 Use this option to set the sampled profile interval in 100 ns units.
 
-**Syntax:**
+### Syntax
 
-**wpr -setprofint** *<n>* \[1221...10000000\]
+`**wpr -setprofint** *<n>* \[1221...10000000\]`
 
-example:
+#### Example
 
 ```
 C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -setprofint 100000
@@ -523,26 +514,26 @@ New Profile Interval = 100000 [10.0000ms]
 
 Use this option to reset profile interval to default value
 
-**Syntax:**
+### Syntax
 
-**wpr -resetprofint** \[Profile Source Name\]
+`**wpr -resetprofint** \[Profile Source Name\]`
 
 Note that if *[Profile Source Name]* is not provided, all profile sources will be reset to the default value.
 
-
 ## Instancename
 
-Use this option to specify a name to uniquely identify the tracing instance. 
+Use this option to specify a name to uniquely identify the tracing instance.
 
-This option can be applied to any commands that manipulate the logging session and assigns a user supplied logging session name. WPR sets the default session name if this option is omitted. 
+This option can be applied to any commands that manipulate the logging session and assigns a user supplied logging session name. WPR sets the default session name if this option is omitted.
 
-**Syntax:**
+### Syntax
 
-**wpr –\{option \<arguments\>\} -instancename \<text\>**
+`**wpr –\{option \<arguments\>\} -instancename \<text\>**`
 
 > [!NOTE]
-> **-instancename** must be last parameter. If the logging sessions were started with this option, all the subsequent commands should use the same instancename option. For example:
-``` 
+> **-instancename** must be the last parameter. If the logging sessions were started with this option, all the subsequent commands should use the same instancename option. For example:
+
+```
 C:\wpt>wpr -start cpu -instancename CpuSession
 C:\wpt>wpr -status
 WPR recording is in progress...
@@ -556,15 +547,13 @@ C:\wpt>wpr -stop cpu.etl  -> omitting instancename option would not find CpuS
 C:\wpt>wpr -stop cpu.etl -instancename CpuSession  -> trace will be saved
 ```
 
-
-## <a href="" id="rem"></a>Remarks
+## Remarks
 
 Each time that WPR saves a trace that was captured when managed applications were running on the system, WPR saves managed symbols next to the trace file. This feature enables performance analysis of managed applications.
 
 Generating managed symbols is a resource- and time-consuming operation. WPR automatically creates a managed symbol cache to expedite the generation of managed symbols. When WPR needs managed symbols, it first checks this cache and uses any available and appropriate symbols instead of regenerating them.
 
 The default managed symbol cache location is C:\\ProgramData\\WindowsPerformanceRecorder\\NGenPdbs\_Cache.
-
 
 ## Related topics
 
