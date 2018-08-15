@@ -10,7 +10,7 @@ MSHAttr:
 author: beneluxboy
 ms.assetid: 4DB2F090-A0AD-4167-8805-85930FEF926F
 ms.author: dongill
-ms.date: 04/10/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -422,12 +422,6 @@ To configure location services settings and see which apps are using geofencing,
 <td><p>Yes</p></td>
 <td><p>The system must have an Ethernet connection. This is not enabled on Wi-Fi.</p></td>
 </tr>
-<tr class="even">
-<td><p>File Sharing</p></td>
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>The system must have an Ethernet connection. This is not enabled on Wi-Fi.</p></td>
-</tr>
 </tbody>
 </table>
 
@@ -578,6 +572,26 @@ To configure location services settings and see which apps are using geofencing,
 </tbody>
 </table>
 
+### Remote Access 
+
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Enabled by default - AC power</th>
+<th>Enabled by default - DC power</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="even">
+<td><p>File Sharing</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td><p>The system must have an Ethernet connection. This is not enabled on Wi-Fi.</p></td>
+</tr>
+</tbody>
+</table>
 
 ### Universal Windows Platform (UWP) Applications
 

@@ -3361,6 +3361,7 @@
 ##### [VP9 Mobile Encode Quality Test #1512](testref/09216c80-3544-4ea6-8be4-b29965da0657.md)
 #### [Device.Streaming additional documentation](testref/device-streaming-additional-documentation.md)
 ##### [HMFT Testing Prerequisites](testref/hmft-testing-prerequisites.md)
+##### [DXVA Testing Prerequisites](testref/dxva-testing-prerequisites.md)
 ##### [Webcam Testing Prerequisites](testref/webcam-testing-prerequisites.md)
 ##### [Troubleshooting Device.Streaming Testing](testref/troubleshooting-devicestreaming-testing.md)
 ### [Device.TrustedPlatformModule](testref/device-trustedplatformmodule.md)

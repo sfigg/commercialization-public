@@ -27,7 +27,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--   Create a few sample text files using Notepad, title them TestFile1.txt and TestFile2.txt.
+-   Create a few sample text files using Notepad, add some random text so that the files are not empty, title them TestFile1.txt and TestFile2.txt.
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
 
