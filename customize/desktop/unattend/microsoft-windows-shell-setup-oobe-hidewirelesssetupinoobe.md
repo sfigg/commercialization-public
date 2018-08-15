@@ -82,11 +82,8 @@ The following XML example shows how to set Windows Welcome to always hide the *
 ```
 
 ## Related topics
-
-
-[NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)
-
 [OOBE](microsoft-windows-shell-setup-oobe.md)
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 
  
 

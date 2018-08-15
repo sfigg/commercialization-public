@@ -74,3 +74,4 @@ The following XML example shows how to turn off Express settings.
 ## Related topics
 
 [OOBE](microsoft-windows-shell-setup-oobe.md)
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
