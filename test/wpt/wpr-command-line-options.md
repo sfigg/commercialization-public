@@ -18,6 +18,8 @@ ms.technology: windows-oem
 
 Windows Performance Recorder (WPR) offers a simple command line interface. The full complexity of WPR is embedded in the recording profiles.
 
+## General options
+
 WPR requires Windows 7 or later version operating system.
 
 ### Syntax
@@ -90,43 +92,47 @@ Use this option to start a recording by using one or more profiles.
 ### Syntax
 
 ```
-**wpr -start** *<profile>* [**-start** *<profilen>*]... [**-filemode**] [**-recordtempto** *<temp folder path>*] [**-onoffscenario** *<OnOff Transition Type>*] [**-onoffresultspath** *<path to which the trace files are saved>*] [**-onoffproblemdescription** *<description of the scenario>*] [**-numiterations** *<number of iterations for OnOff tracing>*]
+wpr -start <profile> [-start <profilen>]... [-filemode] [-recordtempto <temp folder path>] [-onoffscenario <OnOff Transition Type>] [-onoffresultspath <path to which the trace files are saved>] [-onoffproblemdescription <description of the scenario>] [-numiterations <number of iterations for OnOff tracing>]
 ```
 
 The following table describes the available switches that you can apply to this option.
 
-| Switch                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|:--------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *\<profile\>* \[**-start** *\<profilen\>*\]...                      | Specifies either a built-in profile or the path to a user-defined profile. You can specify up to 64 profiles on a single command line, with each profile specified as follows: <br/><br/>*\<profile\>* := \[*\<filename.wprp>*!\]*\<profile name\>*\[**.**{**light**\|**verbose**}\] <br/><br/> Each profile can define either light or verbose versions, or both versions. If neither option is specified, the verbose version is used unless the profile includes only a light version. |
-| **-filemode**                                                       | Specifies that recording is done in file mode. (The default mode is memory.) By using this option, the data is recorded to an unbounded file, which can grow in size until it fills the disk.                                                                                                                                                                                                                                                                       |
-| **-recordtempto** *\<temp folder path\>*                            | Specifies the temporary folder path that the recording is saved to.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **-onoffscenario** *\<OnOff Transition Type\>*                      | Specifies one of the on/off transition types. These are: **Boot**, **FastStartup**, **Shutdown**, **RebootCycle**, **Standby**, or **Hibernate**.                                                                                                                                                                                                                                                                                                                   |
-| **-onoffresultspath** *\<path to which the trace files are saved\>* | Specifies the path to which the trace files are saved.                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **-onoffproblemdescription** *\<description of the scenario\>*      | Specifies the description of the scenario.                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **-numiterations** *\<number of iterations for OnOff tracing\>*     | Sets the number of iterations for OnOff recording. By default, the settings from the built-in or custom profile file are used by default.                                                                                                                                                                                                                                                                                                                           |
+| Switch| Description|
+|:---------|:------------|
+| *\<profile\>* \[**-start** *\<profilen\>*\]...| Specifies either a built-in profile or the path to a user-defined profile. You can specify up to 64 profiles on a single command line, with each profile specified as follows: <br/><br/>*\<profile\>* := \[*\<filename.wprp>*!\]*\<profile name\>*\[**.**{**light**\|**verbose**}\] <br/><br/> Each profile can define either light or verbose versions, or both versions. If neither option is specified, the verbose version is used unless the profile includes only a light version. |
+| **-filemode**| Specifies that recording is done in file mode. (The default mode is memory.) By using this option, the data is recorded to an unbounded file, which can grow in size until it fills the disk.|
+| **-recordtempto** *\<temp folder path\>*| Specifies the temporary folder path that the recording is saved to.|
+| **-onoffscenario** *\<OnOff Transition Type\>*| Specifies one of the on/off transition types. These are: **Boot**, **FastStartup**, **Shutdown**, **RebootCycle**, **Standby**, or **Hibernate**.|
+| **-onoffresultspath** *\<path to which the trace files are saved\>* | Specifies the path to which the trace files are saved.|
+| **-onoffproblemdescription** *\<description of the scenario\>*      | Specifies the description of the scenario.|
+| **-numiterations** *\<number of iterations for OnOff tracing\>*     | Sets the number of iterations for OnOff recording. By default, the settings from the built-in or custom profile file are used by default.|
 
 ## Stop
 
 Use this option to stop the current recording and save it to the file that is specified by the argument.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-stop** *\<file\>* *\<problem description\>*
+```
+wpr -stop \<file\> \<problem description\>
+```
 
 The following table describes the available arguments that you can apply to this option.
 
-| Argument                  | Description                                                                                            |
-|:--------------------------|:-------------------------------------------------------------------------------------------------------|
-| *\<file\>*                | Specifies the event trace log (ETL) file to which WPR saves the recording. This argument is required.  |
+| Argument| Description|
+|:-----------|:------------|
+| *\<file\>*| Specifies the event trace log (ETL) file to which WPR saves the recording. This argument is required.  |
 | *\<problem description\>* | Specifies the problem description. Although this argument is optional, we recommended that you use it. |
 
 ## Cancel
 
 Use this option to cancel the current recording without saving the recorded data. If no instance is currently active, an error is returned.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-cancel**
+```
+wpr -cancel
+```
 
 This option takes no arguments.
 
@@ -134,9 +140,11 @@ This option takes no arguments.
 
 Use this option to display status information about the current WPR recording.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-status** \[*profiles*\] \[*collectors* \[*details*\]\]
+```
+wpr -status [profiles] [collectors [details]]
+```
 
 If no recording is currently active, a message displays that WPR is not recording. If a recording is currently active and no arguments are used, the following status information displays:
 
@@ -205,24 +213,28 @@ CaptureState Providers on Save
 
 Use this option to display detailed information about a profile or set of profiles. To specify multiple profiles, use the following syntax where *\<profilen\>* refers to the name of each profile.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-profiledetails** *\<profile1\>*+*\<profile2\>*+...+*\<profilen\>* [**-filemode**] **-onoffscenario** *\<OnOff Transition Type\>*
+```
+wpr -profiledetails <profile1>+<profile2>+...+<profilen> [-filemode] -onoffscenario <OnOff Transition Type>
+```
 
 The following table describes the available switches that you can apply to this option.
 
-| Switch                                         | Description                                                                                                                                       |
-|:-----------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **-filemode**                                  | Specifies that recording was done in file mode. (The default mode is memory.)                                                                     |
+| Switch| Description|
+|:-----------|:---------|
+| **-filemode**| Specifies that recording was done in file mode. (The default mode is memory.)                                                                     |
 | **-onoffscenario** *\<OnOff Transition Type\>* | Specifies one of the on/off transition types. These are: **Boot**, **FastStartup**, **Shutdown**, **RebootCycle**, **Standby**, or **Hibernate**. |
 
 ## Providers
 
 Use this option to display detailed information about providers. Providers refer to the Event Tracing for Windows (ETW) components that expose events to Windows Performance Recorder (WPR). To display information about providers, use the following syntax, where **-providers** refers to all installed/known and registered providers.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-providers**
+```
+wpr -providers
+```
 
 This option takes no arguments.
 
@@ -230,17 +242,19 @@ This option takes no arguments.
 
 Use this option to configure the registry entries for autologger/globallogger sessions for the given profile.
 
-**Syntax:**
+### Syntax
 
-**wpr** **-boottrace** {**-addboot** [*\<filename.wprp\>*!]*\<profile\>* [**-addboot** *\<profile\>* ...] [**-filemode**] [**-recordtempto** \<temp folder path\>] | **-stopboot** \<recording filename\> *\<Problem description\>* | **-cancelboot**}
+```
+wpr -boottrace {-addboot [<filename.wprp>!]<profile> [-addboot <profile> ...] [-filemode] [-recordtempto** <temp folder path>] | -stopboot <recording filename> <Problem description> | -cancelboot}
+```
 
 The following table describes the available keywords that you can apply to this option.
 
-| Keyword      | Description                                                         |
-|:-------------|:--------------------------------------------------------------------|
+| Keyword | Description|
+|:------------------|:------------|
 | **-addboot**  | Sets the autologger registry entries for the given profile.  The `wpr -addboot` command takes the same options as the `wpr -start` command. Note that this options does not immediately start the trace. After reboot, the autologger will be started by the operating system. |                             |
 | **-stopboot** | Removes the autologger configured by **addboot**, stops the boot recording and merges all the recording into the given file. Note that this option saves the trace only if the autologger session is running (i.e. after reboot). Otherwise, this option will remove only the autologger configuration. |
-| **-cancelboot**   | Removes the autologger configured by **addboot** and cancels the boot recording initiated by WPR. |
+|**-cancelboot** | Removes the autologger configured by **addboot** and cancels the boot recording initiated by WPR. |
 
 ## CaptureStateOnDemand
 
@@ -248,7 +262,9 @@ Use this option to capture states for the configured providers in the current re
 
 ### Syntax
 
-#### wpr-capturestateondemand
+```
+wpr-capturestateondemand
+```
 
 Below is an example of **EventProvider**:
 
@@ -266,7 +282,9 @@ Use this option to fire an event marker with the given text in the current syste
 
 ### Syntax
 
-`**wpr** **-marker** \<text\>`
+```
+wpr -marker <text>
+```
 
 ## MarkerFlush
 
@@ -274,7 +292,9 @@ Use this option to fire an event marker with the given text and flushes the work
 
 ### Syntax
 
-`**wpr** **-markerflush** \<text\>`
+```
+wpr -markerflush <text>
+```
 
 ## Flush
 
@@ -282,7 +302,9 @@ Use this option to flushes logging sessions to files initiated through WPR.
 
 ### Syntax
 
-`**wpr -flush**`
+```
+wpr -flush
+```
 
 This option takes no arguments.
 
@@ -292,7 +314,9 @@ Use this option to enable or disable heap tracing for a specific process or stor
 
 ### Syntax
 
-`**wpr** **-HeapTracingConfig** *\<process name\>* \[*\<package full name\>* *\<package relative app ID\>*\] \[{**enable**|**disable**}\]`
+```
+wpr -HeapTracingConfig <process name> [<package full name> <package relative app ID>] [{enable|disable}]
+```
 
 > [!NOTE]
 > * If the {**enable**|**disable**} parameter is omitted, the current heap tracing configuration for the process or app will be displayed. For example: `wpr -HeapTracingConfig Heaptest.exe enable`
@@ -306,7 +330,9 @@ This option sets the value of [DisablePagingExecutive](https://technet.microsoft
 
 ### Syntax
 
-`**wpr** **-disablepagingexecutive** {**on** | **off**}`
+```
+wpr -disablepagingexecutive {on | off}
+```
 
 > [!NOTE]
 > To correctly capture event stacks on 64-bit systems that are running Windows 7, **disablepagingexecutive** should be set to **On**, and the system must be rebooted before you start performance recording. For 32-bit systems that are running Windows 7 and for all systems that are running Windows 8 or higher, you can operate performance recording without setting **disablepagingexecutive** to **On**.
@@ -317,7 +343,9 @@ Use this option to append and configure debug logging to the event log.
 
 ### Syntax
 
-`**wpr** **-log** {**enabled** | **disabled** | **remove**}`
+```
+wpr -log {enabled | disabled | remove}
+```
 
 The following table describes the available keywords that you can apply to this option.
 
@@ -333,7 +361,9 @@ Use this option to purge the managed symbols cache.
 
 ### Syntax
 
-`**wpr** **-purgecache**`
+```
+wpr -purgecache
+```
 
 This option takes no arguments.
 
@@ -343,7 +373,9 @@ Use this option to display on-line help in the Command Prompt window.
 
 ### Syntax
 
-`**wpr** **-help** \[{**boottrace** | **cancel** | **capturestateondemand** | **disablepagingexecutive** | **disableperiodicsnapshot** | **flush** | **heaptracingconfig** | **snapshotconfig** | **log** | **marker** | **markerflush** | **pmcsources** | **profiledetails** | **profiles** | **providers** | **purgecache** | **start** | **status** | **stop**}\]`
+```
+wpr -help [{boottrace | cancel | capturestateondemand | disablepagingexecutive | disableperiodicsnapshot | flush | heaptracingconfig | snapshotconfig | log | marker | markerflush | pmcsources | profiledetails | profiles | providers | purgecache | start | status | stop}]
+```
 
 The following table describes the available keywords that you can apply to this option.
 
@@ -367,7 +399,9 @@ Use this option to enable or disable the ability to capture one-time or periodic
 
 ### Syntax
 
-`**wpr** **-SnapshotConfig** *\<snapshot option\>* {**-name** *\<process name*\> | **-pid** *\<pid 1\>* \[**pid 2**\] ...} \[\{**enable**|**disable**\}\]`
+```
+wpr -SnapshotConfig <snapshot option> {-name <process name> | -pid <pid 1> [pid 2] ...} [{enable|disable}]
+```
 
 If the `{enable|disable}` parameter is omitted, the current snapshot configuration for the process will be displayed (i.e. only the **-name** option).
 
@@ -402,7 +436,9 @@ Use this option to trigger an on-demand snapshot of *\<snapshot option\>* for sp
 
 ### Syntax
 
-`**wpr** **-SnapshotConfig** *\<snapshot option\>* *<pid 1>* \[pid 2\] ... \[up to pid 8\]`
+```
+wpr -SnapshotConfig <snapshot option> <pid 1> [pid 2] ... [up to pid 8]
+```
 
 > [!NOTE]
 > The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**.
@@ -423,7 +459,9 @@ Use this option to trigger periodic snapshots at specified intervals and given p
 
 ### Syntax
 
-`**wpr -enableperiodicsnapshot** <snapshot option> <interval (in seconds)> <pid 1> \[pid 2\] ... \[up to pid 8\]`
+```
+wpr -enableperiodicsnapshot <snapshot option> <interval (in seconds)> <pid 1> [pid 2] ... [up to pid 8]
+```
 
 > [!NOTE]
 > The snapshot feature needs to be enabled for the process id (or name) before calling **SingleSnapshot**.
@@ -445,11 +483,15 @@ Use this option to disable periodic snapshots for all processes specified by the
 
 ### Syntax
 
-`**wpr** **-disableperiodicsnapshot** *<snapshot option>*`
+```
+wpr -disableperiodicsnapshot <snapshot option>
+```
 
 ### Example
 
-`wpr -disableperiodicsnapshot heap`
+```
+wpr -disableperiodicsnapshot heap
+```
 
 The following table describes the available switches that you can apply to this option.
 |Switch | Description |
@@ -463,7 +505,9 @@ Use this option to query the list of hardware counters on the system, and their 
 
 ### Syntax
 
-#### wpr -pmcsources
+```
+wpr -pmcsources
+```
 
 > [!NOTE]
 > Performance Monitor Unit events are used to measure CPU performance and understand workloads CPU characterization. Only a subset of PMU events in ARM/intel reference documents are implemented in Windows HAL. The example output of this option on Intel CPU device is below:
@@ -494,9 +538,11 @@ Use this option to query the “profiling” interval.
 
 ### Syntax
 
-`**wpr -profint**`
+```
+wpr -profint
+```
 
-#### Example
+### Example
 
 ```
 C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -profint
@@ -509,9 +555,11 @@ Use this option to set the sampled profile interval in 100 ns units.
 
 ### Syntax
 
-`**wpr -setprofint** *<n>* \[1221...10000000\]`
+```
+wpr -setprofint <n> [1221...10000000\]
+```
 
-#### Example
+### Example
 
 ```
 C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit>wpr -setprofint 100000
@@ -524,7 +572,9 @@ Use this option to reset profile interval to default value
 
 ### Syntax
 
-`**wpr -resetprofint** \[Profile Source Name\]`
+```
+wpr -resetprofint \[Profile Source Name\]
+```
 
 Note that if *[Profile Source Name]* is not provided, all profile sources will be reset to the default value.
 
@@ -536,7 +586,9 @@ This option can be applied to any commands that manipulate the logging session a
 
 ### Syntax
 
-`**wpr –\{option \<arguments\>\} -instancename \<text\>**`
+```
+wpr –{option <arguments>} -instancename <text>
+```
 
 > [!NOTE]
 > **-instancename** must be the last parameter. If the logging sessions were started with this option, all the subsequent commands should use the same instancename option. For example:
