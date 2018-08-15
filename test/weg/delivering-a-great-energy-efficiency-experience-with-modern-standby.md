@@ -113,6 +113,12 @@ DRIPS percentage is a key metric to determine if a given system exhibits good or
 | 80 – 89.9 | Fair |
 | < 80   | Poor |
 
+The Windows Hardware Compatability Program (WHCP) requires the following DRIPS percentages:
+
+| Metric                       | Target |
+|------------------------------|------------------------------|
+| SW DRIPS %                   | >= 80% |
+| SW DRIPS and HW DRIPS Delta  | <= 10% |
 
 ## Validation and testing
 

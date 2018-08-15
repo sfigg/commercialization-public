@@ -28,9 +28,10 @@ The following image shows the Studio **Configuration** page.
 
 1.  In Windows HLK Studio, choose **Configuration**.
 
-2.  Select an existing machine pool, and then choose **Create Machine Pool**. Alternatively, you can right-click on an existing machine pool, and choose **Create Machine Pool**.
+2.  To create the first new pool, right click on the $(Root) node and then choose **Create Machine Pool**.     Change the default name, if desired, and then press Enter to finish.
 
-    Change the default name, if desired, and then press Enter to finish.
+    Once a new pool is created, you can also right click on it and chose **Create Machine Pool**. The Archive and Default pools have special roles, so they cannot be used to create a new pool.
+
 
 3.  Choose **Default Pool**, and confirm that each test system appears in the main pane on the right. If you've installed the Client on multiple test systems, you can add any of them to the pool. A computer can only be in one pool at a time.
 

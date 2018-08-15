@@ -19,9 +19,17 @@ Identifying whether a system is connected or disconnected while in standby is ve
 
 You can use the `powercfg /a` command to identify if a system supports Modern Standby. It will also identify whether the system is connected or not while in the standby mode. The command produces the following output when the system is in connected state in Standby.
 
-`The following sleep states are available on this system:     Standby (S0 Low Power Idle) Network Connected A disconnected Standby state will produce the following output.`
+```
+The following sleep states are available on this system:
+Standby (S0 Low Power Idle) Network Connected
+```
 
-`TThe following sleep states are available on this system:     Standby (S0 Low Power Idle) Network Disconnected`
+A disconnected Standby state will produce the following output.
+
+```
+The following sleep states are available on this system:
+Standby (S0 Low Power Idle) Network Disconnected
+```
 
 [Modern standby SleepStudy report](modern-standby-sleepstudy-report.md)s also note whether a standby session was connected or not.
 
