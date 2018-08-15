@@ -29,7 +29,6 @@ The following table shows the required USB HID descriptor. For more information,
 | bcdHID            | 2             | HID version number       |
 | bCountryCode      | 1             | Country code             |
 | bNumDescriptors   | 1             | Number of descriptors    |
-| bDescriptorType   | 1             | Descriptor type          |
 | bDescriptorLength | 2             | Length of the descriptor |
 
  
