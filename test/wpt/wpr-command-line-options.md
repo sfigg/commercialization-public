@@ -71,12 +71,12 @@ The following FirstLevelOptions are available:
 
 ## Profiles
 
-Use this option to list the WPR profiles that the recording uses.
+The **Profiles** option lists the WPR profiles that the recording uses.
 
 ### Syntax
 
 ```
-**wpr** **-profiles** [*<path>*]
+wpr -profiles [<path>]
 ```
 
 The following table describes the available arguments that you can apply to this option. To see built-in profiles, omit the argument.
@@ -87,7 +87,7 @@ The following table describes the available arguments that you can apply to this
 
 ## Start
 
-Use this option to start a recording by using one or more profiles.
+The **Start** option starts a recording by using one or more profiles.
 
 ### Syntax
 
@@ -109,7 +109,7 @@ The following table describes the available switches that you can apply to this 
 
 ## Stop
 
-Use this option to stop the current recording and save it to the file that is specified by the argument.
+The **Stop** option stops the current recording and saves it to the file that is specified by the argument.
 
 ### Syntax
 
@@ -126,7 +126,7 @@ The following table describes the available arguments that you can apply to this
 
 ## Cancel
 
-Use this option to cancel the current recording without saving the recorded data. If no instance is currently active, an error is returned.
+The **Cancel** option cancels the current recording without saving the recorded data. If no instance is currently active, the **Cancel** option returns an error.
 
 ### Syntax
 
@@ -138,7 +138,7 @@ This option takes no arguments.
 
 ## Status
 
-Use this option to display status information about the current WPR recording.
+The **Status** option displays status information about the current WPR recording.
 
 ### Syntax
 
@@ -211,7 +211,7 @@ CaptureState Providers on Save
 
 ## Profiledetails
 
-Use this option to display detailed information about a profile or set of profiles. To specify multiple profiles, use the following syntax where *\<profilen\>* refers to the name of each profile.
+The **Profiledetails** option displays detailed information about a profile or set of profiles. To specify multiple profiles, use the following syntax where *\<profilen\>* refers to the name of each profile.
 
 ### Syntax
 
@@ -228,7 +228,7 @@ The following table describes the available switches that you can apply to this 
 
 ## Providers
 
-Use this option to display detailed information about providers. Providers refer to the Event Tracing for Windows (ETW) components that expose events to Windows Performance Recorder (WPR). To display information about providers, use the following syntax, where **-providers** refers to all installed/known and registered providers.
+The **Providers** option displays detailed information about providers. Providers refer to the Event Tracing for Windows (ETW) components that expose events to Windows Performance Recorder (WPR). To display information about providers, use the following syntax, where **-providers** refers to all installed/known and registered providers.
 
 ### Syntax
 
@@ -240,25 +240,42 @@ This option takes no arguments.
 
 ## Boottrace
 
-Use this option to configure the registry entries for autologger/globallogger sessions for the given profile.
+The **Boottrace** option configures the registry entries for autologger/globallogger sessions for the given profile.
 
 ### Syntax
 
 ```
-wpr -boottrace {-addboot [<filename.wprp>!]<profile> [-addboot <profile> ...] [-filemode] [-recordtempto** <temp folder path>] | -stopboot <recording filename> <Problem description> | -cancelboot}
+wpr -boottrace {-addboot [<filename.wprp>!]<profile> [-addboot <profile> ...] [-filemode] [-recordtempto <temp folder path>] | -stopboot <recording filename> <Problem description> | -cancelboot}
 ```
 
 The following table describes the available keywords that you can apply to this option.
 
-| Keyword | Description|
-|:------------------|:------------|
-| **-addboot**  | Sets the autologger registry entries for the given profile.  The `wpr -addboot` command takes the same options as the `wpr -start` command. Note that this options does not immediately start the trace. After reboot, the autologger will be started by the operating system. |                             |
-| **-stopboot** | Removes the autologger configured by **addboot**, stops the boot recording and merges all the recording into the given file. Note that this option saves the trace only if the autologger session is running (i.e. after reboot). Otherwise, this option will remove only the autologger configuration. |
-|**-cancelboot** | Removes the autologger configured by **addboot** and cancels the boot recording initiated by WPR. |
+<table width="80%">
+<thead>
+<tr >
+<th>Keyword</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="30%"><b>-addboot</b></td>
+<td>Sets the autologger registry entries for the given profile.  The `wpr -addboot` command takes the same options as the `wpr -start` command. Note that this options does not immediately start the trace. After reboot, the autologger will be started by the operating system.</td>
+</tr>
+<tr>
+<td><b>-stopboot</b></td>
+<td>Removes the autologger configured by **addboot**, stops the boot recording and merges all the recording into the given file. Note that this option saves the trace only if the autologger session is running (i.e. after reboot). Otherwise, this option will remove only the autologger configuration.</td>
+</tr>
+<tr>
+<td><b>-cancelboot</b></td>
+<td>Removes the autologger configured by **addboot** and cancels the boot recording initiated by WPR.</td>
+</tr>
+</tbody>
+</table>
 
 ## CaptureStateOnDemand
 
-Use this option to capture states for the configured providers in the current recording. The event provider should be configured for **capturestateondemand** within the profile file while the session is running.
+The **CaptureStateOnDemand** option captures states for the configured providers in the current recording. The event provider should be configured for **capturestateondemand** within the profile file while the session is running.
 
 ### Syntax
 
@@ -278,7 +295,7 @@ Below is an example of **EventProvider**:
 
 ## Marker
 
-Use this option to fire an event marker with the given text in the current system logging session.
+The **Marker** option fires an event marker with the given text in the current system logging session.
 
 ### Syntax
 
@@ -288,7 +305,7 @@ wpr -marker <text>
 
 ## MarkerFlush
 
-Use this option to fire an event marker with the given text and flushes the working set.
+The **MarkerFlush** option fires an event marker with the given text and flushes the working set.
 
 ### Syntax
 
@@ -298,7 +315,7 @@ wpr -markerflush <text>
 
 ## Flush
 
-Use this option to flushes logging sessions to files initiated through WPR.
+The **Flush** option flushes logging sessions to files initiated through WPR.
 
 ### Syntax
 
@@ -310,7 +327,7 @@ This option takes no arguments.
 
 ## HeapTracingConfig
 
-Use this option to enable or disable heap tracing for a specific process or store application.
+The **HeapTracingConfig** option enables or disables heap tracing for a specific process or store application.
 
 ### Syntax
 
@@ -325,7 +342,7 @@ wpr -HeapTracingConfig <process name> [<package full name> <package relative app
 
 ## Disablepagingexecutive
 
-Use this option to specify whether drivers and kernel-mode system code can be paged to disk. Setting this option to **on** prevents paging.
+The **Disablepagingexecutive** option specifies whether drivers and kernel-mode system code can be paged to disk. Setting this option to **on** prevents paging.
 This option sets the value of [DisablePagingExecutive](https://technet.microsoft.com/en-us/library/cc959492.aspx) in the registry.
 
 ### Syntax
@@ -339,7 +356,7 @@ wpr -disablepagingexecutive {on | off}
 
 ## Log
 
-Use this option to append and configure debug logging to the event log.
+The **Log** option appends and configures debug logging to the event log.
 
 ### Syntax
 
@@ -357,7 +374,7 @@ The following table describes the available keywords that you can apply to this 
 
 ## Purgecache
 
-Use this option to purge the managed symbols cache.
+The **Purgecache** option purges the managed symbols cache.
 
 ### Syntax
 
@@ -395,7 +412,7 @@ The following table describes the available keywords that you can apply to this 
 
 ## SnapshotConfig
 
-Use this option to enable or disable the ability to capture one-time or periodic snapshots of *\<snapshot option>*\ for a specific process(es). Currently you can take take snapshots of the heap.
+The **SnapshotConfig** option enables or disables the ability to capture one-time or periodic snapshots of *\<snapshot option>*\ for a specific process or processes. Currently you can take take snapshots of the heap.
 
 ### Syntax
 
@@ -432,7 +449,7 @@ The following table describes the available switches that you can apply to this 
 
 ## SingleSnapshot
 
-Use this option to trigger an on-demand snapshot of *\<snapshot option\>* for specified process ID.
+The **SingleSnapshot** option triggers an on-demand snapshot of *\<snapshot option\>* for specified process ID.
 
 ### Syntax
 
@@ -455,7 +472,7 @@ The following table describes the available switches that you can apply to this 
 
 ## EnablePeriodicSnapshot
 
-Use this option to trigger periodic snapshots at specified intervals and given process IDs
+The **EnablePeriodicSnapshot** option triggers periodic snapshots at specified intervals and given process IDs
 
 ### Syntax
 
@@ -479,7 +496,7 @@ The following table describes the available switches that you can apply to this 
 
 ## DisablePeriodicSnapshot
 
-Use this option to disable periodic snapshots for all processes specified by the **enableperiodicsnapshot** option.
+The **DisablePeriodicSnapshot** option disables periodic snapshots for all processes specified by the **enableperiodicsnapshot** option.
 
 ### Syntax
 
@@ -501,7 +518,7 @@ The following table describes the available switches that you can apply to this 
 
 ## PMCSources
 
-Use this option to query the list of hardware counters on the system, and their default sampling rates.
+The **PMCSources** option queries the list of hardware counters on the system and their default sampling rates.
 
 ### Syntax
 
@@ -534,7 +551,7 @@ Id  Name                        Interval  Min      Max
 
 ## ProfInt
 
-Use this option to query the “profiling” interval.
+The **ProfInt** option queries the “profiling” interval.
 
 ### Syntax
 
@@ -551,7 +568,7 @@ Current Profile Interval = 10000 [1.0000ms]
 
 ## SetProfInt
 
-Use this option to set the sampled profile interval in 100 ns units.
+The **SetProfInt** option sets the sampled profile interval in 100 ns units.
 
 ### Syntax
 
@@ -568,7 +585,7 @@ New Profile Interval = 100000 [10.0000ms]
 
 ## ResetProfInt
 
-Use this option to reset profile interval to default value
+The **ResetProfInt** option resets the profile interval to the default value.
 
 ### Syntax
 
@@ -580,7 +597,7 @@ Note that if *[Profile Source Name]* is not provided, all profile sources will b
 
 ## Instancename
 
-Use this option to specify a name to uniquely identify the tracing instance.
+The **Instancename** option specifies a name to uniquely identify the tracing instance.
 
 This option can be applied to any commands that manipulate the logging session and assigns a user supplied logging session name. WPR sets the default session name if this option is omitted.
 
