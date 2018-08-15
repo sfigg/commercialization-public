@@ -12,13 +12,10 @@ ms.technology: windows-oem
 
 # Install Windows from a USB Flash Drive
 
-
-You can install Windows on a device without a DVD drive by using a USB flash drive. 
+Here's how to create a bootable Windows installation USB drive starting with a Windows .iso file or a Windows Setup DVD.
 
 > [!Note]
-> If you're looking for a tool that downloads Windows 10 and creates a bootable USB Windows installation drive, see [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
-
-This topic covers how to create a bootable Windows installation USB drive from a Windows 10 install .iso or DVD.
+> For new Windows 10 installations, we've got a tool that does this for you. See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
 
 ## What you need
 
@@ -32,7 +29,7 @@ This topic covers how to create a bootable Windows installation USB drive from a
 
 1.  Connect the USB flash drive to your technician PC.
 
-2.  Open Disk Management: Right-click on **Start** and choose **Disk management**.
+2.  Open Disk Management: Right-click on **Start** and choose **Disk Management**.
 
 3.  Format the partition: Right-click the USB drive partition and choose **Format**. Select the **FAT32** file system to be able to boot either BIOS-based or UEFI-based PCs.
 
