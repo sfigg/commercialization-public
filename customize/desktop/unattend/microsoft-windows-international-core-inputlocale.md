@@ -83,16 +83,5 @@ The following example shows how to set the input locale to the English (US) Dvor
 
 ## Related topics
 
-
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
