@@ -166,10 +166,10 @@ Below are the media and copy requirements for the Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-*.	Jump to another page within group
-*.	Launch an app
-*.	Launch the default browser and go to a URL (online devices only)
-*.	Open media (image, video, or document)
+*  Jump to another page within group
+*  Launch an app
+*  Launch the default browser and go to a URL (online devices only)
+*  Open media (image, video, or document)
 
 Here is an example of a Hero template:
 
@@ -194,10 +194,10 @@ Below are the media and copy requirements for the Immersive Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-*.	Jump to another page within group
-*.	Launch an app
-*.	Launch the default browser and go to a URL (online devices only)
-*.	Open media (image, video, or document)
+*  Jump to another page within group
+*  Launch an app
+*  Launch the default browser and go to a URL (online devices only)
+*  Open media (image, video, or document)
 
 Below is an example of the Immersive Hero template.
 
@@ -227,10 +227,10 @@ Below are the media and copy requirements for the Mosaic template:
 
 There are 4 actions that can be set for a CTA button:
 
-1. Jump to another page within group
-2. Launch an app
-3. Launch the default browser and go to a URL
-4. Open media (image, video, or document) 
+*  Jump to another page within group
+*  Launch an app
+*  Launch the default browser and go to a URL (online devices only)
+*  Open media (image, video, or document)
 
 > [!NOTE] 
 > Keep in mind that if you are building content for offline devices, CTA buttons should not open URLs as this will create a poor user experience.

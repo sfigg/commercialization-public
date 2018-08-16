@@ -73,14 +73,4 @@ The following XML example shows how to hide the OEM registration page during OOB
 
 
 [OOBE](microsoft-windows-shell-setup-oobe.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
