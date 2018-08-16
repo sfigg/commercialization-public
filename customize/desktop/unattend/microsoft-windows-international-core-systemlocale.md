@@ -86,13 +86,6 @@ The following example shows how to set the system locale to English (United Stat
 
 [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md)
 
- 
-
- 
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 
 

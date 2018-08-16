@@ -79,14 +79,5 @@ The following example shows how to set the UI language to German (Germany).
 
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
-
- 
-
- 
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 
