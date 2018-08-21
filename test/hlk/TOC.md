@@ -2903,7 +2903,7 @@
 ##### [eMMC Compliance Test](testref/fdc03695-c935-4e82-875d-75c2af6d5c71.md)
 ##### [Enclosure Disk Test (LOGO)](testref/21dee34c-8eab-4c51-b4e2-3c8f41c508b8.md)
 ##### [Enumeration Test (LOGO)](testref/6a5af370-4995-4355-a3dd-efc5d79728a5.md)
-##### [Flush Test](testref/b7df764f-ab21-4e7a-9594-e6f814711b4d.md)
+##### [Flush Test](testref/2dec1f67-b506-4434-8bdf-763147ad8f0b.md)
 ##### [HBA API Test (LOGO)](testref/d6e6752b-2f93-49c3-af4d-78b6c304fe68.md)
 ##### [Hybrid Cache Performance Test (LOGO)](testref/a25c4467-7a7f-4eea-879f-270df84f3084.md)
 ##### [Hybrid Direct Flash Access Test](testref/85b27711-7d23-48ba-a951-9ee5336921f3.md)
