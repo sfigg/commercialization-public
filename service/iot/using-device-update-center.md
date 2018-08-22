@@ -22,7 +22,7 @@ Device Update Center portal provides OEMs a way to:
 
 ### Sign up 
 
-1. Create a [Windows Harware Dev Center account](http://aka.ms/ducregister) to access the Device Update Center(DUC). You will need:
+1. Create a [Windows Hardware Dev Center account](http://aka.ms/ducregister) to access the Device Update Center(DUC). You will need:
 
    - **An Extended Validation (EV) code signing certificate**: Used to validate the update cab file submitted for updates
    - **An Azure Active Directory (AAD) account with administrator rights**: Used to sign legal agreements
