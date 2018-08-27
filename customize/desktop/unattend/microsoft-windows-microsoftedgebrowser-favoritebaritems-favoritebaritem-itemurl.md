@@ -45,7 +45,7 @@ To determine whether a component applies to the image you’re building, load yo
       <ItemKey>Favorite1</FavID>
       <ItemName>Bing News</FavTitle>
       <ItemUrl>https://bing.com/news</FavURL>
-   </FavoriteItem>
+   </FavoriteBarItem>
   <FavoriteBarItem wcm:action="add">
       <ItemIconFile>C:\Windows\favlink2.ico</FavIconFile>
       <ItemKey>Favorite2</FavID>
