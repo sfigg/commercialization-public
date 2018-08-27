@@ -28,7 +28,7 @@ Browser Help Objects are add-on modules used to add functionality to Internet Ex
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem.md) | Specifies settings for a Browser Help Object. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

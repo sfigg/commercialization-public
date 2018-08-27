@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **UseDomainNameDevolution**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

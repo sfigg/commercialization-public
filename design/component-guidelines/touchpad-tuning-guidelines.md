@@ -55,7 +55,7 @@ The top, left, and right zones' sizes are defined independently as a distance fr
 | Setting | Name | Type | Default value | Description |
 | ---     | ---  | ---  | ---           | --- |
 | Top super curtain width | SuperCurtainTop | DWORD | 100 | Region distance from edge in himetric |
-| Left super curtain width | SuperCurtainLeft | 100 | Region distance from edge in himetric |
+| Left super curtain width | SuperCurtainLeft | DWORD | 100 | Region distance from edge in himetric |
 | Right super curtain width | SuperCurtainRight | DWORD | 100 | Region distance from edge in himetric |
 
 ## Modifying cursor speed

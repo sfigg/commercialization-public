@@ -373,8 +373,7 @@ The following table shows the types of language packages and components availabl
 | Handwriting recognition| 	Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package| 	Basic| 	Enables handwriting recognition for devices with pen input.| 
 | Text-to-speech| 	Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package| 	Basic	| Enables text to speech, used by Cortana and Narrator.| 
 | Speech recognition| 	Microsoft-Windows-LanguageFeatures-Speech-de-de-Package	| Basic, Text-To-Speech recognition| 	Recognizes voice input, used by Cortana and Windows Speech | Recognition.| 
-| Retail Demo experience| 	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package| 	Basic	| Retail Demo Experience (RDX)| 
-
+| Retail Demo experience |	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package |	Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
 #### Add or change languages
 
 In this section, we'll add languages and Features On Demand to your Windows image. We'll add the German (de-de) language pack, then we'll add the Japanese (ja-jp) language. Japanese is an example of a language that requires additional font support. 
@@ -392,7 +391,7 @@ To start adding languages packs, mount the language pack ISO, and copy the langu
 
     Use the language packs and Features on Demand from the 64-bit ISOs:
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package~31bf3856ad364e35~amd64~~.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package~31bf3856ad364e35~amd64~~.cab
     ```
     Where E: is the drive letter of the mounted ISO.
 
@@ -403,7 +402,7 @@ To start adding languages packs, mount the language pack ISO, and copy the langu
 
     Use the language packs and Features on Demand from the 64-bit ISOs:
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:E:\LanguagePacks\x64\Microsoft-Windows-Client-Language-Pack_x64_ja-jp.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:E:\LanguagePacks\x64\Microsoft-Windows-Client-Language-Pack_x64_ja-jp.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package~31bf3856ad364e35~amd64~~.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package~31bf3856ad364e35~amd64~~.cab
     ```
     
 3. Verify that the language packs are now part of the mounted images:
@@ -542,7 +541,7 @@ Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinP
 ```
 
 
-### Add drivers to your images
+### Drivers
 
 You can add drivers to ensure Windows can successfully boot for the first time. Make sure that you add your driver to the right image:
 
@@ -590,7 +589,7 @@ Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1
 > You can use the /recurse option to add an entire folder of drivers
 
 
-## Add updates to your image
+### Updates
 
 While your image is mounted, you can add Windows updates. The process is similar to the one we used to add drivers earlier.
 
@@ -602,7 +601,7 @@ Reminder:
 - If a **Servicing Stack Update (SSU) is required**, you'll have to apply it before applying the most recent General Distribution Release or any future GDRs.
 
 
-### Add a Windows update package
+#### Add Windows updates to your image
 
 Use DISM to apply the latest servicing stack update (SSU) and general distribution release (GDR) as well as any prerequisite KB updates. You can find KB updates in the following locations:
 
@@ -659,7 +658,7 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     The operation completed successfully.
     ```
 
-### Add Update packages to WinRE
+#### Add Update packages to WinRE
 
 In this section, we cover how to add updates to the WinRE image.
 
@@ -672,7 +671,33 @@ To apply the update that you downloaded in the previous section to your WinRE im
 Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\windows10.0-kb4000001-x64.msu"
 ```
 
-### Apps
+### Features and Apps
+
+#### Features on Demand
+
+Add a Feature on Demand (FOD) to your Windows image. [Features on Demand](features-on-demand-v2--capabilities.md) are features that you can choose to preinstall. You can see a list of available FODs, and recommendations for preinstallation [here](features-on-demand-non-language-fod.md).
+
+Here we'll show you how to preinstall the .Net Framework Feature on Demand. 
+
+Note: While it’s possible to add FODs using the /add-package command, we recommend using DISM with the /Add-Capability option.
+
+1. On your technician PC, use DISM to get a list of available FODs in an image:
+
+    ```
+    dism /image:C:\mount\windows /get-capabilities
+    ```
+
+    This will show a list of available capabilities.
+
+2. Add the .NET framework.
+
+    ```
+    dism /image:C:\mount\windows /add-capability /capabilityname:NetFX3~~~
+    ```
+
+.NET framework is now added to your image.
+
+#### Apps
 
 This section covers working with Apps, including reinstalling inbox apps after updates, how to add Microsoft Store apps, and how to add Microsoft Office.
 
@@ -684,7 +709,7 @@ This section continues to use your mounted Windows image. If your image isn't st
 
 Now that you've added languages and updates to your image, you have to reinstall the apps that come with Windows. This makes sure that the apps will work and include the languages you have added to your image. To reinstall these apps, you'll need the App update OPK or the inbox Apps ISO.
 
-1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64
+1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64 
 2. Run the `E:\apps\ReinstallInboxApps-x64.bat` script.
 
 Your apps are now ready to work with your image.
@@ -693,9 +718,9 @@ Your apps are now ready to work with your image.
 
 To complete this section, you'll need to have the App update OPK or the inbox apps ISO. Whichever you are using, we'll refer to it as the App update OPK in the following steps.
 
-2. Use DISM to add the HEVC codec .appx from the files you extracted in Step 1:
+1. Use DISM to add the HEVC codec .appx from the files you extracted in Step 1:
 
-3.  Install the HEVC .appx:
+2.  Install the HEVC .appx:
 
     ```
     DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:"C:\temp\lab\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"C:\temp\lab\apps\inbox\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /DependencyPackagePath:"C:\temp\lab\apps\inbox\amd64\Microsoft.VCLibs.x64.14.00.appx" /DependencyPackagePath:"C:\temp\lab\apps\inbox\amd64\Microsoft.VCLibs.x86.14.00.appx"
@@ -704,9 +729,9 @@ To complete this section, you'll need to have the App update OPK or the inbox ap
     > [!Note]
     > Include both the x86 and x64 versions of the dependency packages.
 
-4. Use `DISM /Add-ProvisionedAppxPackage` to add any additional apps to your image.
+3. Use `DISM /Add-ProvisionedAppxPackage` to add any additional apps to your image.
 
-5. Verify that the apps are installed:
+4. Verify that the apps are installed:
 
     ```
     Dism /Image:"C:\mount\windows" /Get-ProvisionedAppxPackages
@@ -721,7 +746,7 @@ For this section, you'll need to have at least two apps to add to your image. If
 
 1.  Gather your apps for installation  
 
-2.  Install your apps, specifying a region with the `/region` option for each app. You can specify multiple regions by separating the regions with a `;`. We'll show you how you can use LayouModification.xml with `/region` later in the lab:
+2.  Install your apps, specifying a region with the `/region` option for each app. You can specify multiple regions by separating the regions with a `;`. We'll show you how you can use LayoutModification.xml with `/region` later in the lab:
 
     ```
     Dism /Add-ProvisionedAppxPackage /PackagePath:app1.appxbundle /region="all"
@@ -739,9 +764,9 @@ For this section, you'll need to have at least two apps to add to your image. If
 DISM.exe /Image:"C:\mount\windows" /Optimize-ProvisionedAppxPackages
 ```
 
-### Preinstall Microsoft Office
+#### Preinstall Microsoft Office
 
-#### Related sets
+##### Related sets
 
 The Office apps are delivered as a set of apps that are installed and serviced together.  The main package for Office is a set of shared code and each Office app (for example, Word, Excel, and PowerPoint) is installed as an optional package. These packages are delivered as appxbundles that support all Store languages.  
 
@@ -757,7 +782,7 @@ The Office apps are delivered as a set of apps that are installed and serviced t
 | Word |	Microsoft.Office.Desktop.Word_8wekyb3d8bbwe |	word.appxbundle<br></br>word_License1.xml |
 
 
-#### Add Office apps to your image
+##### Add Office apps to your image
 
 To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPackage` option. This option also requires the following information for each app you add:
 -   `/PackagePath`: This is only used to specify the path to the .appxbundle file for the shared code package.  
@@ -826,13 +851,13 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
     To complete the Office install, you’ll need to unmount the image and commit your changes, which we'll do this after we’ve completed all customizations at the end of this lab.
 
 
-## Modify the Start layout
+### Modify the Start layout
 
-### New in Windows 10, version 1803
+#### New in Windows 10, version 1803
 
 Apps can now be pinned to the All Apps list without also having to be pinned as a Start tile.  This is done through the new "region" switch (as described in the previous section).  In the previous section, we added three apps to our image:  App1, App2, and Office.  In this lab, we will omit App1 from LayoutModification.xml to ensure that App1 only appears in the All Apps list, and not also as a Start menu tile. We will also include App2 in LayoutModification.xml to demonstrate that even if the "region" switch was used when adding the app to the image, the app will still appear in the Start Menu if included in the LayoutModification.xml file.  In other words, the LayoutModification.xml file takes precedence.  
 
-### Start menu
+#### Start menu
 
 If you don’t create a LayoutModification.xml file and you use the Start Unattend settings, Windows will take the first 12 `SquareTiles` or `DesktoporSquareTiles` settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If `OEMName` is specified in the Unattend file, the value for this element is used to name the OEM groups that get created.
 
@@ -847,7 +872,7 @@ To take advantage of the new features, and to have the most robust and complete 
 
 To learn more about layoutmodification.xml, see [LayoutModification XML](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#layoutmodification-xml).
 
-### About the Start Menu layout
+#### About the Start Menu layout
 
 1.  Use the optional `Region` attribute in the `RequiredStartGroups` element to use different layouts for different regions. The `Region` value must be equal to two-letter country/region codes, and separated by a pipe "|" delimiter if you're specifying multiple regions. The regions listed in the group are related to the regions you specified when you added apps to your image using the `/region` option.  If the country/region setting for the Windows device matches a `RequiredStartGroups`, then the tiles laid out within the `RequiredStartGroups` is applied to Start. 
 If you specify a region-agnostic `RequiredStartGroups` (or one without the optional Region attribute) then the region-agnostic `RequiredStartGroups` is applied to Start.
@@ -1104,7 +1129,7 @@ Next you'll have to make sure that the logo you specified above is in your Windo
     ```
 
 ##### Set the device to automatically boot to audit mode
-Using the same unattend.xml file, set the PC to automatically boot into Audit mode.
+Using the same unattend.xml file, set the PC to automatically [boot into Audit mode](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-deployment-reseal-mode).
 1. In the Windows Image pane, expand Components, right-click amd64_Microsoft-Windows-Deployment_(version), and then select Add Setting to Pass 7 oobeSystem.
 2. In the Answer File pane, select Components\7 oobeSystem\amd64_Microsoft-Windows-Deployment_neutral\Reseal.
 3. In the Reseal Properties pane, in the Settings section, select `Mode=Audit`.
@@ -1684,7 +1709,9 @@ RD c:\scratchdir
 
 ## Capture your image
 
-In this section, we'll tell you how to capture your sysprepped image. 
+In this section, we'll tell you how to capture your sysprepped image. You can capture either a [WIM](#capture-a-wim) or an [FFU](#capture-an-ffu).
+
+### Capture a WIM
 
 **On your reference PC:**
 
@@ -1708,7 +1735,33 @@ In this section, we'll tell you how to capture your sysprepped image.
     MD e:\scratchdir
     Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\CustomImage.wim /Name:"CustomImage" /scratchdir:e:\scratchdir
     ```
+
     This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
+
+With your image captured, you can skip to [Verify your final image](#verify-your-final-image).
+
+### Capture an FFU
+
+**On your reference PC:**
+
+1.	Identify Windows Partition Drive letter.
+
+    a. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
+
+    b. At the \DISKPART> prompt type list disk
+
+    c. Under the "Disk ###" column, identify the the disk that has the Windows installation, and note the assigned disk number. This will look something like _Disk 0_.
+
+    d. Type exit to quit Diskpart
+
+2.	Capture an image of the windows disk to USB-B. This process takes several minutes. 
+
+    ```
+    DISM.exe /capture-ffu /imagefile=E:\Images\CustomImage.wim /Name:"CustomImage" /capturedrive=\\.\PhysicalDrive0 /description:"Windows 10 FFU"
+    ```
+    
+    This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
+
 
 ## Verify your final image
 
@@ -1718,13 +1771,25 @@ In this section, we'll cover how to deploy your captured image for testing and v
 
 
 1. Boot the PC you want to test your image on into WinPE.
-2. Run applyimage.bat to deploy the customimage.wim
+2. Run applyimage.bat to deploy the image.
+    
+    If you captured a WIM called customimage.wim:
 
     ```
     E:\Deployment\applyimage.bat E:\Images\customimage.wim
     ```
+    
+    **or**
 
-3. Type `exit` to close WinPE and restart the PC.
+    If you captured an FFU called CustomImage.FFU:
+
+    ```
+    E:\Deployment\applyimage.bat E:\Images\CustomImage.FFU
+    ```
+
+3.  Follow the script's prompts to apply the image.
+
+4. Type `exit` to close WinPE and restart the PC.
 
 ### Validate the configuration
 
@@ -1829,20 +1894,6 @@ The table below shows additional space saved by using compact OS, Single instanc
 | Hiberfile off, no compact     | 10.87GB (>825MB)               | 13.48GB (>1.5GB)               |
 | Hiberfile reduced, no compact | 11.27GB (>400MB)               | 14.15GB (>930MB)               |
 
-### Troubleshooting deployment issues
-
-Windows deployment generates many logs. To diagnose deployment issues, a script that gathers logs is included on USB-B. This script copies all relevant logs, which can then be sent to OTSQR when reporting a deployment issue. To run the log:
-
-1.	Insert USB-B into the device with the deployment issue
-2.	Open command prompt in Administrator mode
-3.	Navigate to drive letter of USB-B (ex. E:\) in command prompt
-4.	CD to E:\Resources
-5.	Run script GatherLogs.cmd
-
-The script should return Success message and give a path to the folder to .zip.
-
-![Log collection tool successful completion](images/lab-log-collect.png)
- 
 
 
 

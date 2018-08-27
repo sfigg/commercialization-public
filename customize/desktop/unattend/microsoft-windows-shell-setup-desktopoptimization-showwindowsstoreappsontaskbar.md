@@ -52,7 +52,7 @@ It’s recommended that both settings, **GoToDesktopOnSignIn** and **ShowWindows
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

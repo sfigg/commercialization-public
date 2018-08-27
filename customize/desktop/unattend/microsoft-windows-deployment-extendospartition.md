@@ -30,7 +30,7 @@ These settings are valid only for NTFS file-system partitions.
 > [!Note]
 > If both of these are set, an error is logged, and installation is terminated.
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

@@ -70,7 +70,7 @@ The value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsservers
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **DNSSuffixSearchOrder**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

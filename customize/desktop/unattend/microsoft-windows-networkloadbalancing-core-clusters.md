@@ -27,7 +27,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | Specifies details about a cluster, such as its interface, IP address, port rules, and so on. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

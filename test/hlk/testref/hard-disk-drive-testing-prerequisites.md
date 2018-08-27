@@ -465,7 +465,7 @@ If your device supports any of the feature(s) in this section, please update the
 
 -   This feature and testing requires an external programmable power strip.
 
--   See the [Flush Test](b7df764f-ab21-4e7a-9594-e6f814711b4d.md) for more details.
+-   See the [Flush Test](2dec1f67-b506-4434-8bdf-763147ad8f0b.md) for more details.
 
 **Device.Storage.Hd.Sata.HybridInformation**
 

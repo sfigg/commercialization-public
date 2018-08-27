@@ -45,7 +45,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [StartPages](microsoft-windows-ie-internetexplorer-startpages.md) | [StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md) | **StartPageUrl**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

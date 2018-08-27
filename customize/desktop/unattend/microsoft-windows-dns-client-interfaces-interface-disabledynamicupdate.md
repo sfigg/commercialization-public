@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DisableDynamicUpdate**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

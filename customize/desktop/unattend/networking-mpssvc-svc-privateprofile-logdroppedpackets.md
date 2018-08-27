@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PrivateProfile\_LogDroppedPackets**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

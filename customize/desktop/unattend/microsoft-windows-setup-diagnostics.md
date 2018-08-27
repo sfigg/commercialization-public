@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [OptIn](microsoft-windows-setup-diagnostics-optin.md) | Specifies whether to send installation statistic information to Microsoft. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

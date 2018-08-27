@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkname.md) | Specifies a friendly name for the <code>QuickLinkItem</code>, as it appears on the <strong>Favorites</strong> toolbar. |
 | [QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkurl.md) | Specifies a URL value to associate with a <code>QuickLinkItem</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

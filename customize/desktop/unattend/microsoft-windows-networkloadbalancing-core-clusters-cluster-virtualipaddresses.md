@@ -27,7 +27,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) | Specifies details about the cluster virtual IP addresses. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

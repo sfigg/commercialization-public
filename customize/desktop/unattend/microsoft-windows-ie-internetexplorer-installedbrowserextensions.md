@@ -30,7 +30,7 @@ For information about creating custom toolbars, see the MSDN topic: [Creating Cu
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem.md) | Specifies settings for a Browser Extension. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

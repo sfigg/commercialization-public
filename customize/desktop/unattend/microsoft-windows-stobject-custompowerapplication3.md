@@ -27,7 +27,7 @@ ms.technology: windows-oem
 | [ItemName](microsoft-windows-stobject-custompowerapplication3-itemname.md) | Specifies the display text of the application. |
 | [Parameters](microsoft-windows-stobject-custompowerapplication3-parameters.md) | Specifies the optional parameters to use when running the application. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

@@ -49,7 +49,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

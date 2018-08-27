@@ -47,17 +47,17 @@ We'll take our customizations, put them together, and test them in a retail buil
        <Feature>RPI2_DRIVERS</Feature> 
        <Feature>RPI3_DRIVERS</Feature>
        <!-- Include OEM features -->
-       <Feature>OEM_CustomCmd</Feature> 
-       <Feature>OEM_ProvAuto</Feature>
-       <Feature>OEM_MyUWPApp</Feature>
-       <Feature>OEM_FilesAndRegKeys</Feature>
-       <Feature>OEM_DriverHelloBlinky</Feature> 
+       <Feature>CUSTOM_CMD</Feature> 
+       <Feature>PROV_AUTO</Feature>
+       <Feature>APP_MyUWPApp</Feature>
+       <Feature>CUSTOM_FilesAndRegKeys</Feature>
+       <Feature>DRIVER_HelloBlinky</Feature> 
     </OEM>
     ```
     
-    OEM_ProvAuto is required to pull in the provisioning package.
+    PROV_AUTO is required to pull in the provisioning package.
 	
-	OEM_FilesAndRegKeys, OEM_MyUWPApp, and OEM_DriverHelloBlinky were sample packages added in previous labs.
+	CUSTOM_FilesAndRegKeys, APP_MyUWPApp, and DRIVER_HelloBlinky were sample packages added in previous labs.
 
 ## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
 
@@ -66,32 +66,32 @@ We'll take our customizations, put them together, and test them in a retail buil
 2.  Delete ProductAProv.ppkg file if present.
     
 
-### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
-
-**Build the image**
+## <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 
 1.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For the kernel driver signing, Standard Code signing certificate is sufficient. You will require an EV cert to access the Device Update Center in Hardware Dev Center portal.
 
-2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
+2. Download a [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) that matches the CA of the code-signing certificate from the previous step.
+
+3.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 
     ```
 	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
 	```
 	
-	-  Issuer        : Issuer of the Certificate ( see Certificate -> Details -> Issuer )
+	-  Issuer        : Issuer of the code-signing certificate (see Certificate -> Details -> Issuer) 
 	
-	-  Subject       : Subject in the certificate ( see Certificate -> Details -> Subject)
+	-  Subject       : Subject in the code-signing certificate (see Certificate -> Details -> Subject)
 	
-	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
+	-  CrossCertRoot : Full path of the Cross-Certificate file that was downloaed in step 2.
 	
 	
-2.	From the IoT Core Shell, enable retail signing.
+4.	From the IoT Core Shell, enable retail signing.
 
     ```
 	retailsign On
 	```
 	
-3.	Rebuild all the packages so that they are retail signed.
+5.	Rebuild all the packages so that they are retail signed.
 
     ```
 	buildpkg all
@@ -103,7 +103,7 @@ We'll take our customizations, put them together, and test them in a retail buil
     re-signcabs.cmd <srccabdir> <dstcabdir>
     ```
 	
-4.  From the IoT Core Shell, create the image:
+6.  From the IoT Core Shell, create the image:
 
     ```
     buildimage ProductA Retail
@@ -111,9 +111,9 @@ We'll take our customizations, put them together, and test them in a retail buil
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Retail\\Flash.FFU.
 
-5.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+7.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
 
-6.  Put the card into the IoT device and start it up.
+8.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
 

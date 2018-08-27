@@ -26,7 +26,7 @@ To set the primary home page, use the [Home\_Page](microsoft-windows-ie-internet
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md) | Specifies a tabbed browsing home page. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 
