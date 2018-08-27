@@ -24,10 +24,10 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the 
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md) | Specifies the icon (C:\Windows\favlink2.ico) to associate with the Favorite.    |
-| [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    | Specifies the path (http://...) to the Favorite. |
-| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)  | Specifies the name that appears for the Favorite.  |
-| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    | Specifies a unique key for the Favorite.  |
+| [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md) | Specifies an icon to associate with the Favorite (example: C:\Windows\favlink1.ico).  |
+| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    | Specifies a unique key for the Favorite (example: Favorite1).  |
+| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)  | Specifies a name that appears in the Favorite bar (example: Bing News).  |
+| [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    | Specifies a path to the Favorite (http://... or https://...). |
 
 ## Valid Configuration Passes
 
@@ -48,14 +48,14 @@ To determine whether a component applies to the image you’re building, load yo
    <FavoriteBarItem wcm:action="add">
       <ItemFavIconFile>C:\Windows\favlink1.ico</FavIconFile>
       <ItemKey>Favorite1</FavID>
-      <ItemName>My Favorite</FavTitle>
-      <ItemUrl>http://www.fabrikam.com/myfav1</FavURL>
+      <ItemName>Bing News</FavTitle>
+      <ItemUrl>https://bing.com/news</FavURL>
    </FavoriteItem>
   <FavoriteBarItem wcm:action="add">
       <ItemIconFile> C:\Windows\favlink2.ico </FavIconFile>
       <ItemKey>Favorite2</FavID>
-      <ItemName>Favorite 2</FavTitle>
-      <ItemURL>https://www.fabrikam.com/mysecurefav2</FavURL>
+      <ItemName>Bing Maps</FavTitle>
+      <ItemURL>https://www.bing.com/maps</FavURL>
    </FavoriteItem>
 </FavoritesList>
 ```
