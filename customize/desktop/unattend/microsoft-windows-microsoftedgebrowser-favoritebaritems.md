@@ -45,16 +45,16 @@ To determine whether a component applies to the image you’re building, load yo
    <FavoriteBarItem wcm:action="add">
       <ItemFavIconFile>C:\Windows\favlink1.ico</FavIconFile>
       <ItemKey>Favorite1</FavID>
-      <ItemName>My Favorite</FavTitle>
-      <ItemUrl>http://www.fabrikam.com/myfav1</FavURL>
+      <ItemName>Bing News</FavTitle>
+      <ItemUrl>https://bing.com/news</FavURL>
    </FavoriteItem>
   <FavoriteBarItem wcm:action="add">
-      <ItemIconFile> C:\Windows\favlink2.ico </FavIconFile>
+      <ItemIconFile>C:\Windows\favlink2.ico</FavIconFile>
       <ItemKey>Favorite2</FavID>
-      <ItemName>Favorite 2</FavTitle>
-      <ItemURL>https://www.fabrikam.com/mysecurefav2</FavURL>
-   </FavoriteItem>
-</FavoritesList>
+      <ItemName>Bing Maps</FavTitle>
+      <ItemURL>https://www.bing.com/maps</FavURL>
+   </FavoriteBarItem>
+</FavoriteBarItems>
 ```
 
 ## Related Topics
