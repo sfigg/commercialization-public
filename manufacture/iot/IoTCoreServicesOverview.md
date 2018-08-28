@@ -64,7 +64,7 @@ Windows 10 IoT Core Services is currently available in preview through Azure at 
 After you've completed the prerequisites above, follow these steps when you are ready to create a resource for Windows 10 IoT Core Services with your Azure subscription.
 1. Log into the [Azure Portal](https://portal.azure.com) with the AAD account you will use for purchasing the resource.
 2. In the navigation pane on the left, click on Create a resource.
-![Create a resource](../media/IoTCoreServices/IoTCoreServicesOverview-CreateAResource.png)
+![Create a resource](images/CreateAResource.png)
 3. In the Search box, search for "IoT" and select "Windows 10 IoT Core Services" from the list.
 4. Review in the information on the overview blade for Windows 10 IoT Core Services, including the Prerequisites information. When you're ready, click the Create button at the bottom of the overview blade.
 5. On the Create blade, fill out the fields in the form. These fields can also be edited later in the resource properties.
@@ -84,7 +84,7 @@ After you've created a resource for Windows 10 IoT Core Services, you can update
 1. Log into the [Azure Portal](https://portal.azure.com) with the AAD account you used when creating the resource.
 2. Find the instance of the resource you want to change by selecting it in the Dashboard or All Resources section of the navigation pane in the Azure Portal.
 3. On the Overview page of the resource properties, click the Edit button.
-![Update a resource](../media/IoTCoreServices/IoTCoreServicesOverview-UpdateAResource.png)
+![Update a resource](images/UpdateAResource.png)
 4. Change the fields as needed and then click Save.
 
 ### Deleting a resource
@@ -93,7 +93,7 @@ When you no longer need the resource for Windows 10 IoT Core Services, you can d
 1. Log into the [Azure Portal](https://portal.azure.com) with the AAD account you used when creating the resource.
 2. Find the instance of the resource you want to delete by selecting it in the Dashboard or All Resources section of the navigation pane in the Azure Portal.
 3. On the Overview page of the resource properties, click the Delete button.
-![Delete a resource](../media/IoTCoreServices/IoTCoreServicesOverview-DeleteAResource.png)
+![Delete a resource](images/DeleteAResource.png)
 
 ### Using Device Update Center
 
