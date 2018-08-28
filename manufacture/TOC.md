@@ -371,17 +371,17 @@
 #### [IoT Core Services](iot/IoTCoreServicesOverview.md)
 #### [Frequently Asked Questions](iot/CommercializationFAQ.md)
 
-### [Create an image]
+### [IoT Core manufacturing guide]
 #### [Overview](iot/iot-core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows IoT Core](iot/set-up-your-pc-to-customize-iot-core.md)
-#### [Create a basic image](iot/create-a-basic-image.md)
-#### [Add an app to your image](iot/deploy-your-app-with-a-standard-board.md)
+#### [Lab 1a: Create a basic image](iot/create-a-basic-image.md)
+#### [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md)
 ##### [Install an appx file on an IoT device](https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller)
-#### [Add a file and a registry setting to an image](iot/add-a-registry-setting-to-an-image.md)
-#### [Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md)
-#### [Add a driver to an image](iot/add-a-driver-to-an-image.md)
-#### [Build a retail image](iot/build-retail-image.md)
-#### [Create a board support package](iot/create-a-new-bsp.md)
+#### [Lab 1c: Add a file and a registry setting to an image](iot/add-a-registry-setting-to-an-image.md)
+#### [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md)
+#### [Lab 1e: Add a driver to an image](iot/add-a-driver-to-an-image.md)
+#### [Lab 1f: Build a retail image](iot/build-retail-image.md)
+#### [Lab 2: Create a board support package](iot/create-a-new-bsp.md)
 ##### [BSP for hardware](iot/BSPHardware.md)
 ##### [IoT Device Layout](iot/device-layout.md)
 
