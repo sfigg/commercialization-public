@@ -45,18 +45,18 @@ To determine whether a component applies to the image you’re building, load yo
 
 ```XML
 <FavoriteBarItems>
-   <FavoriteBarItem wcm:action="add">
-      <ItemFavIconFile>C:\Windows\favlink1.ico</FavIconFile>
-      <ItemKey>Favorite1</FavID>
-      <ItemName>Bing News</FavTitle>
-      <ItemUrl>https://bing.com/news</FavURL>
-   </FavoriteBarItem>
-  <FavoriteBarItem wcm:action="add">
-      <ItemIconFile>C:\Windows\favlink2.ico</FavIconFile>
-      <ItemKey>Favorite2</FavID>
-      <ItemName>Bing Maps</FavTitle>
-      <ItemURL>https://www.bing.com/maps</FavURL>
-   </FavoriteBarItem>
+    <FavoriteBarItem wcm:action="add">
+        <ItemFavIconFile>C:\Windows\favlink1.ico</ItemFavIconFile>
+        <ItemKey>Favorite1</ItemKey>
+        <ItemName>Bing News</ItemName>
+        <ItemUrl>https://bing.com/news</ItemUrl>
+    </FavoriteBarItem>
+    <FavoriteBarItem wcm:action="add">
+        <ItemFavIconFile>C:\Windows\favlink2.ico</ItemFavIconFile>
+        <ItemKey>Favorite2</ItemKey>
+        <ItemName>Bing Maps</ItemName>
+        <ItemUrl>https://www.bing.com/maps</ItemUrl>
+    </FavoriteBarItem>
 </FavoriteBarItems>
 ```
 
