@@ -30,7 +30,7 @@ Adaptive brightness changes the brightness of a monitor or display based on the 
 | [DefaultSliderPosition](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-defaultsliderposition.md)    | Sets the system default for screen brightness. It's only used when Autobrightness is not the default.  |
 | [DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md) | Specifies the minimum time, in milliseconds, between changes in display brightness due to lighting conditions. |
 | [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md) | Specifies the percentage change in illuminance (lux) required to cause a change in display brightness. Specified in percentage change since the last change in display brightness. |
-| [IsAutobrightnessEnabledByDefault](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-isautobrightnessenabledbydefault.md)    |      |
+| [IsAutobrightnessEnabledByDefault](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-isautobrightnessenabledbydefault.md)    | Specifies whether autobrightness is enabled by default.     |
 
 ## Valid Configuration Passes
 
