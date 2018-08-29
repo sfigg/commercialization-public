@@ -14,10 +14,14 @@ ms.technology: windows - oem
 
 # ALRCurveVersion
 
+ALRCurveVersion sets the ALR algorithm version (1 or 2) against which the ALR curve data should be interpreted. For new systems, the recommended value is 2. This setting only applies to percentage based systems, it is ignored on nits-based systems.
+
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
+| 1                       | Uses ALR Algorithm version 1 to interpret the ALR curve data. |
+| 2                       | Uses ALR Algorithm version 2 to interpret the ALR curve data. Recommended for new systems. |
 
 ## Valid Configuration Passes
 
@@ -34,8 +38,17 @@ To determine whether a component applies to the image you’re building, load yo
 ## XML Example
 
 ```XML
+<ALRCurveVersion>2</ALRCurveVersion>
+<ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
+<DisplayResponseInterval>60000</DisplayResponseInterval>
+<IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>
 ```
 
 ## Related Topics
 
-[Microsoft-Windows-MobilePC-Sensors-API-AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness.md)
+[ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md)
+
+[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
+
+[IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md)
+
