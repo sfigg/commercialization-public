@@ -371,7 +371,7 @@
 #### [IoT Core Services](iot/IoTCoreServicesOverview.md)
 #### [Frequently Asked Questions](iot/CommercializationFAQ.md)
 
-### [IoT Core manufacturing guide]
+### [IoT Core manufacturing guide](iot/iot-core-manufacturing-guide.md)
 #### [Overview](iot/iot-core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows IoT Core](iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](iot/create-a-basic-image.md)
@@ -390,7 +390,7 @@
 ### [IoT Core Add-ons](iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons command-line options](iot/iot-core-adk-addons-command-line-options.md)
 ### [Update the time server](iot/update-the-time-server.md)
-### [Troubleshooting](Troubleshooting.md)
+### [Troubleshooting](iot/Troubleshooting.md)
 
 ### [Create Windows Universal OEM Packages](iot/create-packages.md)
 #### [Windows Universal OEM Package Schema](iot/package-schema.md)
