@@ -29,15 +29,17 @@ This OOBE app can be customised with a `settings.json` with the following attrib
 All files referenced in the settings.json should be in the same folder as the settings.json file.
 A sample snippet is given below
 
-```
+```css
 {
 "backgroundColor":  "#FF0000FF",
 "progressRingVisible": true,
 "welcomeText": "Welcome to OOBE customization",
 "pleaseWaitText": "please wait ..."
 }
+```
 
-Note that the settings.json file needs to be encoded in Unicode (UCS-2) encoding. UTF-8 will not work.
+> [!NOTE]
+> The settings.json file needs to be encoded in Unicode (UCS-2) encoding. UTF-8 will not work.
 
 ### Validate settings manually 
 
@@ -74,20 +76,17 @@ Note that the settings.json file needs to be encoded in Unicode (UCS-2) encoding
 For IoT Core products, it is recommended that you configure your devices to reboot on crash and also hide the crash dump screen (BSOD). 
 This is achieved with setting the following registry keys:
 
-    ```
     HKLM\SYSTEM\CurrentControlSet\Control\CrashControl
         AutoReboot set to 1
         DisplayDisabled set to 1
-    ```
 
 ### Validate settings manually
 
 1. Connect to your IoT device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md)) and set the following registry keys
 
-    ```
     reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
     reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
-    ```
+    
 
 2. See [Forcing a System Crash from the keyboard](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) and configure a key to force the system crash.
 3. Force a system crash using the configured key and verify that the device reboots automatically and does not show the crashdump screen.
@@ -137,6 +136,7 @@ A few key features are listed below
             </Objects>
         </BootConfigurationDatabase>
         ```
+
 3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
 
 ### Replacing the Boot Logo
