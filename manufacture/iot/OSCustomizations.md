@@ -44,7 +44,7 @@ A sample snippet is given below
 ### Validate settings manually 
 
 1. Author the `settings.json` file with your required settings
-2. Connect to the IoT device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md)) and place the `settings.json` file along with all graphical assets in a directory, say `C:\Data\oobe`
+2. Connect to the IoT device ([using SSH](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/ssh) or [using Powershell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell)) and place the `settings.json` file along with all graphical assets in a directory, say `C:\Data\oobe`
 3. Configure the device to allow access to this directory from all appx files, using
 
     ```
@@ -82,7 +82,7 @@ This is achieved with setting the following registry keys:
 
 ### Validate settings manually
 
-1. Connect to your IoT device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md)) and set the following registry keys
+1. Connect to your IoT device ([using SSH](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/ssh) or [using Powershell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell)) and set the following registry keys
 
     reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
     reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
