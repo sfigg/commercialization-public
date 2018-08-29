@@ -24,6 +24,14 @@ Adaptive brightness changes the brightness of a monitor or display based on the 
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
+| [AutobrightnessLuxToNitsCurve](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-autobrightnessluxtonitscurve.md)    |      |
+| [DefaultSliderPosition](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-defaultsliderposition.md)    |      |
+| [IsAutobrightnessEnabledByDefault](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-isautobrightnessenabledbydefault.md)    |      |
+| [ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)    |      |
+| [AutobrightnessLuxToNitsCurve](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-autobrightnessluxtonitscurve.md)    |      |
+| [DefaultSliderPosition](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-defaultsliderposition.md)    |      |
+| [IsAutobrightnessEnabledByDefault](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-isautobrightnessenabledbydefault.md)    |      |
+| [ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)    |      |
 | [ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md) | Specifies the ambient light response (ALR) curve data. |
 | [DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md) | Specifies the minimum time, in milliseconds, between changes in display brightness due to lighting conditions. |
 | [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md) | Specifies the percentage change in illuminance (lux) required to cause a change in display brightness. Specified in percentage change since the last change in display brightness. |

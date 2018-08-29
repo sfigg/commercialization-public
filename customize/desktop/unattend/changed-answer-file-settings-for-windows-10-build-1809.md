@@ -17,6 +17,10 @@ This topic describes Windows 10, version 1809 answer file settings that have cha
 | Setting name         | Description                                                                      |
 |:---------------------|:---------------------------------------------------------------------------------|
 | [Microsoft-Windows-MicrosoftEdgeBrowser](microsoft-windows-microsoftedgebrowser.md)    | New settings for the Microsoft Edge browser.                 |
+| Microsoft-Windows-MobilePC-Sensors-API\ [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness.md) | New settings for adaptive brightness: [ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md), [DefaultSliderPosition](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-defaultsliderposition.md), and [IsAutobrightnessEnabledByDefault](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-isautobrightnessenabledbydefault.md). Adaptive brightness changes the brightness of a monitor or display based on the ambient light. |
+
+
+
 
 ## Deprecated Windows settings
 

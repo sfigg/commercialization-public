@@ -17,8 +17,7 @@ ms.technology: windows-oem
 
 # ALRPoints
 
-
-Specifies the ambient light response (ALR) curve data.
+ALRPoints specifies the ambient light response (ALR) curve data.
 
 The curve is defined by the illuminance (lux) detected by an ambient light sensor, and the percentage of change in brightness.
 
@@ -73,6 +72,7 @@ Adjust the screen to 40% of the baseline brightness level when the ambient light
 Adjust the screen to 80% of the baseline brightness level when the ambient light sensor detects 68 lux.
 
 ```
+<ALRCurveVersion>2</ALRCurveVersion>
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>
@@ -80,18 +80,10 @@ Adjust the screen to 80% of the baseline brightness level when the ambient light
 
 ## Related topics
 
+[ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)
 
 [DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
 
 [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md)
-
- 
-
- 
-
-
-
-
-
 
 

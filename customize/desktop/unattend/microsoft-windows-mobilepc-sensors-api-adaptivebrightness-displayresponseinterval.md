@@ -60,6 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 This XML example shows how to set the minimum time between changes in display brightness due to changes in lighting conditions to one minute.
 
 ```
+<ALRCurveVersion>2</ALRCurveVersion>
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>
