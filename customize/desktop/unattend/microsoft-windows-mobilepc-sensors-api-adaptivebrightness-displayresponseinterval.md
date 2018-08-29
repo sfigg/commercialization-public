@@ -1,6 +1,6 @@
 ---
 title: DisplayResponseInterval
-description: DisplayResponseInterval
+description: DisplayResponseInterval specifies the minimum time between changes in display brightness due to changes in lighting conditions.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -18,7 +18,7 @@ ms.technology: windows-oem
 # DisplayResponseInterval
 
 
-The `DisplayResponseInterval` setting specifies the minimum time between changes in display brightness due to changes in lighting conditions.
+`DisplayResponseInterval` specifies the minimum time between changes in display brightness due to changes in lighting conditions.
 
 ## Values
 

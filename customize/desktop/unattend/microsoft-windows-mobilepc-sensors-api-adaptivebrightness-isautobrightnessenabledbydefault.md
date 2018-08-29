@@ -1,8 +1,8 @@
 ---
 title: IsAutobrightnessEnabledByDefault
-description: 
+description: IsAutobrightnessEnabledByDefault specifies whether autobrightness is enabled by default.
 MSHAttr:
--'PreferredSiteName:MSDN'
+- 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kenpacq
@@ -15,7 +15,7 @@ ms.technology: windows - oem
 # IsAutobrightnessEnabledByDefault
 
 
-Determines if autobrightness is enabled by default. This setting only applies to nits-based systems. It is ignored on percentage based systems.
+IsAutobrightnessEnabledByDefault specifies whether autobrightness is enabled by default. This setting only applies to nits-based systems. It is ignored on percentage based systems.
 
 When this setting is false, use [DefaultSliderPosition](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-defaultsliderposition.md) to set the default brightness level.
 

@@ -1,8 +1,8 @@
 ---
 title: DefaultSliderPosition
-description: 
+description: DefaultSliderPosition sets the system default for screen brightness.
 MSHAttr:
--'PreferredSiteName:MSDN'
+- 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kenpacq

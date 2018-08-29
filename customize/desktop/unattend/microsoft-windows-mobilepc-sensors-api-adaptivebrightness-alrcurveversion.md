@@ -1,8 +1,8 @@
 ---
-title: ALRCurveVersion
-description: 
+title: ALRCurveVersion 
+description: ALRCurveVersion sets the ALR algorithm version (1 or 2) against which the ALR curve data should be interpreted.
 MSHAttr:
--'PreferredSiteName:MSDN'
+- 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kenpacq
