@@ -19,7 +19,7 @@ You can customize Windows Recovery Environment (Windows RE) by adding languages
 The WinRE image is included inside the Windows 10 and Windows Server 2016 images, and is eventually copied to the Windows RE tools partition on the destination PC or device. To modify it, you'll mount the Windows image, then mount the WinRE image inside it. Make your changes, unmount the WinRE image, then unmount the Windows image. 
 
 > [!note]
-> If your Windows image doesn't contain a WinRE image (usually because WinRE has been moved to the RE tools partition prior to capturing the image,) Windows will still work but the recovery environment won't be configured or accessible. You can add WinRE.wim back into your Windows image by copying it from the `Windows\System32\Recovery` folder of a mounted Windows image back into the same folder of your custom image.
+> If your Windows image doesn't contain a WinRE image (usually because WinRE has been moved to the RE tools partition prior to capturing the image), Windows will still work but the recovery environment won't be configured or accessible. You can add WinRE.wim back into your Windows image by copying it from the `Windows\System32\Recovery` folder of a mounted Windows image back into the same folder of your custom image.
 
    ![image: Mount the Windows image, then mount the recovery image inside it. Make changes, then unmount the recovery image, and finally the Windows image](images/customize-recovery-image.jpg)
 
