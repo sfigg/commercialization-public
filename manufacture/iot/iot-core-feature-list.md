@@ -43,8 +43,8 @@ When creating images for your device, determine which features are required for 
 | **IOT\_FFU\_FLASHMODE** | Adds flashing mode support so that the device can be flashed using ffutool. Currently supported for arm only. This is new in Windows 10, version 1803 |
 | **IOT\_MTP** | Adds Media transfer protocol support. See [MTP](https://docs.microsoft.com/windows/iot-core/connect-your-device/mtp). This is new in Windows 10, version 1803 |
 | **IOT\_MIRACAST\_RX_APP** | Adds Connect App that supports Miracast receive feature. Note that the underlying hw/drivers should support Miracast for this app to work. Currently supported for arm only. This is new in Windows 10, version 1803 |
-| **IOT\_BLUETOOTH\_A2DP\_SINK** | Adds ability to receive and play A2DP audio from an external device to the IoT device. This is new in Windows 10 1809 |
-| **IOT\_BLUETOOTH\_A2DP\_SOURCE** | Adds ability to play audio to an external device.  This was implicitly included in Windows 10, version 1803, but must be explicitly specified beginning with Windows 10, version 1809 |
+| **IOT\_BLUETOOTH\_A2DP\_SINK** | Adds ability to receive and play A2DP audio from an external device to the IoT device. This is new in Windows 10, 1809. See [Integrating Bluetooth Audio](integrating-bluetooth-audio.md). |
+| **IOT\_BLUETOOTH\_A2DP\_SOURCE** | Adds ability to play audio to an external device.  This was implicitly included in Windows 10, version 1803, but must be explicitly specified beginning with Windows 10, version 1809.  See [Integrating Bluetooth Audio](integrating-bluetooth-audio.md). |
 | **IOT\_BLUETOOTH\_HFP\_AUDIOGATEWAY** | Adds Bluetooth Handsfree-Profile AudioGateway role. This is new in Windows 10, version 1809 |
 
 ### Settings
