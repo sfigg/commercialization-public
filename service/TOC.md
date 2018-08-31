@@ -29,9 +29,12 @@
 ## [Windows Embedded device upgrades](mobile/upgrade-windows-embedded-devices-to-windows-10.md)
 
 ## [IoT Core servicing](iot/index.md)
+### [Device Update Center](iot/using-device-update-center.md)
 ### [IoT Core OS Update](iot/iot-core-update.md)
 ### [Manage IoT Core device updates](iot/managing-iot-device-update.md)
-### [Update IoT Core Apps](iot/updating-iot-core-apps.md)
-### [Device Update Center](iot/using-device-update-center.md)
+### [Update IoT Core apps](iot/updating-iot-core-apps.md)
+### [Install and service apps](iot/servicing-MSstore.md)
+### [Windows 10 IoT Core Recovery](iot/recovery.md)
+### [Add a recovery mechanism](iot/recovery-mechanism.md)
 
 ## [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/library/windows/hardware/mt786455.aspx)
