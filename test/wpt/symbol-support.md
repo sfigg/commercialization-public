@@ -24,7 +24,7 @@ To decode symbols, the tools must locate the program database files, known as pr
 To configure symbol support, you must define the **\_NT\_SYMBOL\_PATH** environment variable. The following example sets the symbol path to use the Microsoft public symbol server together with a downstream store in C:\\symbols:
 
 ```
-set _NT_SYMBOL_PATH= srv*C:\symbols*http://msdl.microsoft.com/downloads/symbols
+set _NT_SYMBOL_PATH= srv*C:\symbols*http://msdl.microsoft.com/download/symbols
 ```
 
 Note that this example is a single command line.
