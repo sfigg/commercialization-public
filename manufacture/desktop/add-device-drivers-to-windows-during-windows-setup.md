@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Add Device Drivers to Windows During Windows Setup
 
 
-To install Windows® on some hardware designs, you may need to add device drivers to Windows Setup. You can add drivers to Windows Setup by using an answer file that specifies the path to the driver files. To do this in new installations, you add the Microsoft-Windows-PnpCustomizationWinPE component during the [windowsPE](windowspe.md) configuration pass, add the driver paths, and then specify the answer file.
+To install Windows on some hardware designs, you may need to add device drivers to Windows Setup. You can add drivers to Windows Setup by using an answer file that specifies the path to the driver files. To do this in new installations, you add the Microsoft-Windows-PnpCustomizationWinPE component during the [windowsPE](windowspe.md) configuration pass, add the driver paths, and then specify the answer file.
 
 You can also modify existing images and add and remove drivers. You can service offline images in several ways. For example, you can add the Microsoft-Windows-PnpCustomizationsNonWinPE component during the [offlineServicing](offlineservicing.md) configuration pass, add or remove the driver paths, and then specify the name of the answer file. For more information about how to modify drivers on an offline Windows image by using an answer file, and also other methods of adding drivers to and removing drivers from an existing image, see [Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md).
 
