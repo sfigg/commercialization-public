@@ -9,7 +9,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-desktop-apps-with-spps-sxs
 ---
+
 # Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)
 
 Install Windows desktop applications and system settings by capturing them into siloed provisioning packages (SPPs).
