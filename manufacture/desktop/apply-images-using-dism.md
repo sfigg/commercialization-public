@@ -16,6 +16,12 @@ ms.technology: windows-oem
 
 This topic describes how to deploy images captured from your reference computer to one or more destination computers using the Deployment Image Servicing and Management (DISM) tool. For more information about configuring recommended hard drive partitions, see [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md) and [Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md).
 
+
+## Use a script
+
+You can use scripts that create partitons and apply images. We've created some [sample scripts](http://download.microsoft.com/download/3/F/2/3F2646EF-D589-498C-9F07-DE5549BE018E/USB-B.zip) that you can use. These scripts work with both .WIM and .FFU images. Run `ApplyImage.bat` in the `Deployment` folder of the sample scripts download.
+
+
 ## <span id="BootUsingWindowsPE"></span><span id="bootusingwindowspe"></span><span id="BOOTUSINGWINDOWSPE"></span>Apply a Windows Image
 
 
@@ -59,12 +65,11 @@ If you apply an image to a volume with an existing Windows installation, files f
 
     For examples of recommended partition structures, see [Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md) and [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md).
 
-    **Note**  
-    You can automate this task with the `diskpart /s <script>` command. For more information, see [Diskpart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458).
+    > [Note
+    > You can automate this task with the `diskpart /s <script>` command. For more information, see [Diskpart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458).
 
-     
 
-5.  Use the DISM tool to apply images to your Windows partition.
+5.  Use DISM to apply images to your Windows partition.
 
     For each partition that you apply an image to, run the **DISM** **/apply-image** /imageFile: *&lt;image\_file&gt;* /index:*&lt;index\_number&gt;* /ApplyDir:*&lt;image\_path&gt;* command.
 
@@ -95,21 +100,20 @@ If you apply an image to a volume with an existing Windows installation, files f
 
 You can set up the computer to reinstall your Windows image in the event of a system failure. For more information, see [Windows Recovery Environment (Windows RE) Technical Reference](windows-recovery-environment--windows-re--technical-reference.md).
 
-**Important**  
-Microsoft Reserved partitions (MSR) and Extended partitions are managed by the computer. Do not apply an image to these partitions.
+> [!important]
+> Microsoft Reserved partitions (MSR) and Extended partitions are managed by the computer. Do not apply an image to these partitions.
 
  
-
 You can use audit mode to test the computer and to perform additional customizations before you ship it to your end user. For more information, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
 You can also perform some customizations to the computer without booting it. For more information, see [Service an Applied Windows Image](service-an-applied-windows-image.md).
 
-**Note**  
-If you receive the error message: **Bootmgr not found. Press CTRL+ALT+DEL**, this indicates that Windows cannot identify the boot information in the active partition. If you receive this error message, check the following:
-
--   Use the DiskPart tool to check to make sure that the system partition is set to Active.
-
--   Check to make sure that the active partition includes system files.
+> [!Note]
+> If you receive the error message: **Bootmgr not found. Press CTRL+ALT+DEL**, this indicates that Windows cannot identify the boot information in the active partition. If you receive this error message, check the following:
+> 
+> -   Use the DiskPart tool to check to make sure that the system partition is set to Active.
+> 
+> -   Check to make sure that the active partition includes system files.
 
  
 
