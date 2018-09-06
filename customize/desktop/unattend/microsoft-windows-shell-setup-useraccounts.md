@@ -98,3 +98,4 @@ The following XML output shows how to set `UserAccounts`.
 ## Related topics
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)

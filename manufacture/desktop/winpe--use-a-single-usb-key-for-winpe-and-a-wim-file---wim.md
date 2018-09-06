@@ -95,7 +95,7 @@ If you are using Windows 10, Version 1607 or earlier and your PC only has one US
 
 **Limitations:**
 
--   Windows Setup doesn't support installing from a split .wim file for Windows 10. 
+-   Applying split image (.swm) files is only supported when all of the .swm files are in the same folder, as shown in these steps.
 -   You can't modify a split .wim file.
 -   To use a 64GB or 128GB key, format it to only use 32GB of space.
 -   For images larger than 32GB, you need a second USB key because of the FAT32 partition size limitation.
@@ -118,13 +118,14 @@ If you are using Windows 10, Version 1607 or earlier and your PC only has one US
 
     -   `4000` is the maximum size in MB for each of the split .wim files to be created.
 
-    In this example, the */split* option creates an install.swm file, an install2.swm file, an install3.swm file, and so on, in the D:\\Images directory.
+    In this example, the */split* option creates an install.swm file, an install2.swm file, an install3.swm file, and so on, in the `C:\Images` directory.
 
 4.  Copy the files to the WinPE key.
 
-5.  On the destination PC, boot to WinPE, and then apply an image using DISM /Apply-Image /SWMFile command.
+5.  On the destination PC, boot to WinPE, and then apply the image using DISM /Apply-Image with /ImageFile and /SWMFile options, as shown:
+
     ```
-    Dism /apply-image /imagefile:install.swm /swmfile:install*.swm /index:1 /applydir:D:\
+    Dism /Apply-Image /ImageFile:install.swm /SWMFile:install*.swm /Index:1 /ApplyDir:D:\
     ```
 
 
