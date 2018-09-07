@@ -36,3 +36,7 @@ You can leverage the Cortana Devices SDK, which can be found [here](https://deve
 **Do I have to use a specific version of Visual Studio when developing with Windows 10 IoT Core?**
 
 No, you can use any version of Visual Studio you’d like. 
+
+**Where can I get extra in-person help for prototyping and commercializing?**
+
+Microsoft’s IoT & AI Insider Labs are facilities to help you develop, prototype and test IoT and AI solutions for market commercialization. Located in Redmond, USA; Munich, Germany; and Shenzhen, China; they are located at the heart of Microsoft’s product group, industrial and manufacturing solutions. You can learn more about these labs [here](https://www.microsoftiotinsiderlabs.com/).
