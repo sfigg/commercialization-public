@@ -76,7 +76,7 @@ Now that an app has been published to the Microsoft Store, the app has a store s
 1. In the Windows Dev Center account click **App Management > Current Packages** on the left hand navigation bar.
 2. Under the most recent App submission click **Download Windows 10 package**. This will download a zip file containing the app package, the dependency packages, and the license files.
 
-3. See [Install your apps on IoT Core device](../develop-your-app/AppInstaller.md) for various options to install the Store apps.
+3. See [Install your apps on IoT Core device](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller) for various options to install the Store apps.
 
 4. To manage the store app updates from your application, see [Download and install package updates for your app](https://docs.microsoft.com/en-us/windows/uwp/packaging/self-install-package-updates)
 
