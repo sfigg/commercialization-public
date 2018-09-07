@@ -368,6 +368,7 @@
 
 ### [Getting started]()
 #### [OEM License Requirements](iot/license-requirements.md)
+#### [Create and install packages](iot/create-install-package.md)
 #### [IoT Core Services](iot/IoTCoreServicesOverview.md)
 #### [Frequently Asked Questions](iot/CommercializationFAQ.md)
 
