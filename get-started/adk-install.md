@@ -5,7 +5,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Download and install the Windows ADK
 author: alhopper-msft
 ms.author: alhopper
-ms.date: 04/30/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -30,13 +30,11 @@ For IoT Core, also [download the IoT Core Add-Ins](https://github.com/ms-iot/iot
 
 | ADK version and download link             | Description                                           |
 |:------------------------------------------|:------------------------------------------------------|
-| [Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [See the Windows Insiders blog](https://blogs.windows.com/blog/tag/windows-insider-program).    |
+| [Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [See what's new for Windows Insiders for Business](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new).    |
 | [Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)  |  [What's new in ADK for Windows 10, version 1709](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1709). <br>For IoT Core for Windows 10, version 1709, also [download the IoT Core Add-Ins v4.4](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v4.4).|
 | [Windows ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | [What's new in ADK for Windows 10, version 1703](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703). <br>For IoT Core for Windows 10, version 1703, also [download the IoT Core Add-Ins v3.2](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v3.2).|
 | [Windows ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740) | [What's new in ADK for Windows 10, version 1607](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607).  <br>For IoT Core for Windows 10, version 1607, also [download the IoT Core Add-Ins v2.0 (14393_v1)](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v2.0).|
-| [Windows ADK for Windows 10, version 1511](https://go.microsoft.com/fwlink/p/?LinkId=526740) | [What's new in ADK for Windows 10, version 1511](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1511).  <br>For IoT Core for Windows 10, version 1511, also [download the IoT Core Add-Ins v1.0 (10586_v1)](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v2.0).|| [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005) | [What's new in ADK for Windows 8 and Windows 8.1](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)) |
-| [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005)| [What's new in ADK for Windows 8.1 and Windows 8](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)) |
-| [Windows ADK for Windows 8](https://www.microsoft.com/download/details.aspx?id=30652)| [What's new in ADK for Windows 8.1 and Windows 8](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)) |
+| [Windows ADK for Windows 8](https://www.microsoft.com/download/details.aspx?id=30652)| [What's new in ADK for Windows 8](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)) |
 | [Windows Automated Installation Kit (AIK) for Windows 7](https://www.microsoft.com/download/details.aspx?id=5753)| [WAIK for Windows 7 Readme](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd349350(v=ws.10))|
 | [Windows 10 IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/p/?LinkId=735028) | The [IoT Core ADK Add-Ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons) include OEM-specific tools to help you create images for your devices with Windows apps, BSPs, drivers, and other chosen features. |
 | [Windows OEM HAL Extension Test Cert 2017](https://go.microsoft.com/fwlink/?linkid=872294) | To use the Windows ADK to work with HAL Extensions, download and install the updated Windows OEM HAL Extension Test Cert 2017 (TEST ONLY) certificate. [Learn more](https://support.microsoft.com/help/4131991). |
