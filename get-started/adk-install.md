@@ -12,21 +12,19 @@ ms.technology: windows-oem
 ---
 # Download and install the Windows ADK
 
-The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need to customize Windows images for large-scale deployment, and to test the quality and performance of your system, its added components, and the applications running on it. The latest version of this kit is available for download below.
-
-> [!div class="nextstepaction"]
-> [Download the Windows ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873065)
-
-The Windows ADK includes:
+The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need to customize Windows images for large-scale deployment, and to test the quality and performance of your system, its added components, and the applications running on it. The Windows ADK includes:
 
 * The Windows Assessment Toolkit and the Windows Performance Toolkit to assess the quality and performance of systems or components.
 * Deployment tools such as WinPE, Sysprep, and other tools that you can use to customize and deploy Windows 10 images.
+
+> [!div class="nextstepaction"]
+> [Download the Windows ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873065)
 
 [What's new in ADK tools for Windows 10, version 1803](what-s-new-in-kits-and-tools.md).
 
 The default version of the ADK uses an online installer and GUI. If you can't use the online ADK installer or GUI, [download the ADK offline installer](adk-offline-install.md).
 
-For IoT Core, also [download the IoT Core Add-Ins](https://github.com/ms-iot/iot-adk-addonkit/)
+For IoT Core, also [download the IoT Core Add-Ins](https://github.com/ms-iot/iot-adk-addonkit/).
 
 ## Other ADK downloads
 
