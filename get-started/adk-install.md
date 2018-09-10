@@ -14,35 +14,30 @@ ms.technology: windows-oem
 
 The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need to customize Windows images for large-scale deployment, and to test the quality and performance of your system, its added components, and the applications running on it. The latest version of this kit is available for download below.
 
-By default, the ADK is installed using an online installer and GUI. If you have a scenario where you cannot use the online ADK installer with GUI, see [Install the ADK offline](adk-offline-install.md).
+**[Download the Windows ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873065)**
 
-## Download the latest Windows ADK
-
-[Download the Windows ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873065)
-
-The latest version of the Windows ADK includes:
+The Windows ADK includes:
 
 * The Windows Assessment Toolkit and the Windows Performance Toolkit to assess the quality and performance of systems or components.
-* Deployment tools such as WinPE, Sysprep, DISM and other tools that you can use to customize and deploy Windows 10 images.
+* Deployment tools such as WinPE, Sysprep, and other tools that you can use to customize and deploy Windows 10 images.
 
-See [What's new in ADK tools](what-s-new-in-kits-and-tools.md) to learn more about the Windows ADK for Windows 10, version 1803.
+[What's new in ADK tools for Windows 10, version 1803](what-s-new-in-kits-and-tools.md).
+
+The default version of the ADK uses an online installer and GUI. If you can't use the online ADK installer or GUI, [download the ADK offline installer](adk-offline-install.md).
 
 ## Other ADK downloads
 
 | ADK version and download link             | Description                                           |
 |:------------------------------------------|:------------------------------------------------------|
-| [Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)  | You must use Windows 10, version 1709, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1709. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1709). |
-| [Windows ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | You must use Windows 10, version 1703, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1703. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703).  |
-| [Windows ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740) | You must use Windows 10, version 1607, with this version of the Windows ADK and the Windows 10 IoT Core ADK Add-Ons for version 1607. [Learn more](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607). |
-| [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005) | The Windows ADK for Windows 8.1 Update includes new OEM-specific tools to reduce the amount of space Windows uses on solid state storage devices. [Learn more](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)). |
-| [Windows 10 IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/p/?LinkId=735028) | The IoT Core ADK Add-Ons include OEM-specific tools to help you create images for your devices with Windows apps, BSPs, drivers, and other chosen features. [Learn more](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-adk-addons). |
+| [Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [See the Windows Insiders blog](https://blogs.windows.com/blog/tag/windows-insider-program).    |
+| [Windows ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)  |  [What's new in ADK for Windows 10, version 1709](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1709). <br>For IoT Core for Windows 10, version 1709, use [IoT Core Add-Ins v4.4](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v4.4).|
+| [Windows ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | [What's new in ADK for Windows 10, version 1703](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703). <br>For IoT Core for Windows 10, version 1703, use [IoT Core Add-Ins v3.2](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v3.2).|
+| [Windows ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740) | [What's new in ADK for Windows 10, version 1607](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607).  <br>For IoT Core for Windows 10, version 1607, use [IoT Core Add-Ins v2.0 (14393_v1)](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v2.0).|
+| [Windows ADK for Windows 10, version 1511](https://go.microsoft.com/fwlink/p/?LinkId=526740) | [What's new in ADK for Windows 10, version 1511](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1511).  <br>For IoT Core for Windows 10, version 1511, use [IoT Core Add-Ins v1.0 (10586_v1)](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v2.0).|| [Windows ADK for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393005) | [What's new in ADK for Windows 8 and Windows 8.1](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)) |
+| [Windows ADK for Windows 8](https://www.microsoft.com/download/details.aspx?id=30652)| [What's new in ADK for Windows 8 and Windows 8.1](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn247001(v=win.10)) |
+| [Windows Automated Installation Kit (AIK) for Windows 7](https://www.microsoft.com/download/details.aspx?id=5753)| [WAIK for Windows 7 Readme](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd349350(v=ws.10))|
+| [Windows 10 IoT Core ADK Add-Ons](https://go.microsoft.com/fwlink/p/?LinkId=735028) | The [IoT Core ADK Add-Ons](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons) include OEM-specific tools to help you create images for your devices with Windows apps, BSPs, drivers, and other chosen features. |
 | [Windows OEM HAL Extension Test Cert 2017](https://go.microsoft.com/fwlink/?linkid=872294) | To use the Windows ADK to work with HAL Extensions, download and install the updated Windows OEM HAL Extension Test Cert 2017 (TEST ONLY) certificate. [Learn more](https://support.microsoft.com/help/4131991). |
-| [Windows ADK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [Learn more](https://www.microsoft.com/software-download/windowsinsiderpreviewADK).    |
-
-For older versions of Windows:
-
-* [Download for Windows 8](https://www.microsoft.com/en-us/download/details.aspx?id=30652)
-* [Download for Windows 7 (AIK)](https://www.microsoft.com/en-us/download/details.aspx?id=5753)
 
 ## Install the ADK
 
@@ -56,15 +51,15 @@ Install the ADK based on what works best for your environment.
 
 Windows ADK contains core assessment and deployment tools that IT Pros can use to deploy Windows 10 company-wide, including the User State Migration Tool (USMT) and Volume Activation Management Tool (VAMT).
 
-* [Learn more about VAMT](https://docs.microsoft.com/en-us/windows/deployment/volume-activation/volume-activation-management-tool)
-* [Learn more about USMT](https://docs.microsoft.com/en-us/windows/deployment/usmt/usmt-technical-reference)
-* [Learn more about Application Virtualization (App-V)](https://docs.microsoft.com/en-us/windows/application-management/app-v/appv-for-windows)
-* [Learn more about IT Pro scenarios](https://docs.microsoft.com/en-us/windows/deployment/windows-adk-scenarios-for-it-pros)
+* [Learn more about VAMT](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
+* [Learn more about USMT](https://docs.microsoft.com/windows/deployment/usmt/usmt-technical-reference)
+* [Learn more about Application Virtualization (App-V)](https://docs.microsoft.com/windows/application-management/app-v/appv-for-windows)
+* [Learn more about IT Pro scenarios](https://docs.microsoft.com/windows/deployment/windows-adk-scenarios-for-it-pros)
 
 ## Related downloads
 
-* [Download the Windows Driver Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit)
-* [Download the Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-hardware-lab-kit)
-* [Download the debugging tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/download-windbg)
-* [Download the Windows Symbols Packages](https://developer.microsoft.com/en-us/windows/hardware/download-symbols)
+* [Download the Windows Driver Kit](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
+* [Download the Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
+* [Download the debugging tools for Windows (WinDbg)](https://developer.microsoft.com/windows/hardware/download-windbg)
+* [Download the Windows Symbols Packages](https://developer.microsoft.com/windows/hardware/download-symbols)
 * [Download Windows ADK Insider Preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewADK)
