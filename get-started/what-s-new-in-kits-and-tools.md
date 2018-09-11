@@ -128,7 +128,7 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
 
-## What’s new in the Windows ADK, version 1511
+## What’s new in the Windows ADK for Windows 10, version 1511
 
 The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/assessments/index), the [Windows Performance Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/index), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
 
