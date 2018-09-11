@@ -30,7 +30,7 @@ Additional features that were added after Windows 10, version 1507 are marked w
 | [84637](http://go.microsoft.com/fwlink/?LinkId=823551)            | Windows 10 Mobile updated AVRCP                                        | Profile Subsystem | 17-June-2016  |
 | [94254](http://go.microsoft.com/fwlink/?LinkId=848229)            | Windows 10 Creators Update                                             | Host Subsystem    | 14-March-2017 |
 | [106476](https://launchstudio.bluetooth.com/ListingDetails/52740) | Windows 10 Version 1803                                                | Host Subsystem    | 10-April-2018 |
-
+| [108589](https://launchstudio.bluetooth.com/ListingDetails/55701) | Windows 10 Version 1809                                                | Host Subsystem    | 07-September-2018 |
 
  
 
