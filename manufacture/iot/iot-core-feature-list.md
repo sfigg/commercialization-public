@@ -66,6 +66,9 @@ When creating images for your device, determine which features are required for 
 > [!IMPORTANT]
 > The following developer features shall not be used in **Retail** builds and in images for commercial devices.
 
+> [!IMPORTANT]
+> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use teh IOT_WEBBEXTN package to pull in WDP. 
+
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | **IOT\_SIREP**                  | Enables SIREP service for TShell connectivity                                                                                                                                        |
