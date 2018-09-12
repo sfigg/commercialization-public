@@ -43,7 +43,9 @@ When creating images for your device, determine which features are required for 
 | **IOT\_FFU\_FLASHMODE** | Adds flashing mode support so that the device can be flashed using ffutool. Currently supported for arm only. This is new in Windows 10, version 1803 |
 | **IOT\_MTP** | Adds Media transfer protocol support. See [MTP](https://docs.microsoft.com/windows/iot-core/connect-your-device/mtp). This is new in Windows 10, version 1803 |
 | **IOT\_MIRACAST\_RX_APP** | Adds Connect App that supports Miracast receive feature. Note that the underlying hw/drivers should support Miracast for this app to work. Currently supported for arm only. This is new in Windows 10, version 1803 |
-
+| **IOT\_BLUETOOTH\_A2DP\_SINK** | Adds ability to receive and play A2DP audio from an external device to the IoT device. This is new in Windows 10, 1809. See [Integrating Bluetooth Audio](integrating-bluetooth-audio.md). |
+| **IOT\_BLUETOOTH\_A2DP\_SOURCE** | Adds ability to play audio to an external device.  This was implicitly included in Windows 10, version 1803, but must be explicitly specified beginning with Windows 10, version 1809.  See [Integrating Bluetooth Audio](integrating-bluetooth-audio.md). |
+| **IOT\_BLUETOOTH\_HFP\_AUDIOGATEWAY** | Adds Bluetooth Handsfree-Profile AudioGateway role. This is new in Windows 10, version 1809 |
 
 ### Settings
 
@@ -75,8 +77,8 @@ When creating images for your device, determine which features are required for 
 | **IOT\_TOOLKIT**                | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
 | **IOT\_WEBB\_EXTN**             | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
 | **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607. Note: Remote Display is prerelease software intended for development and training purposes only.                      |
-| **IOT\_CORTANA**                | Adds Cortana feature. Requires **IOT\_APPLICATIONS** feature. This is new in Windows 10, version 1703.       |
-| **IOT\_CORTANA\_OBSCURELAUNCH** | Enables running Cortana application on boot. This add-on causes Cortana to run in the background resulting in better response time for Cortana. This is new in Windows 10, version 1703. |
+| ~~IOT\_CORTANA~~  (Deprecated)  | The Cortana application is no longer available as a feature in Windows 10, version 1809.  To build Cortana enabled applications on IoT please refer to [The Cortana Dev Center](http://www.aka.ms/cortanadevices).    |
+| ~~IOT\_CORTANA\_OBSCURELAUNCH~~ (Deprecated) | The Cortana application is no longer available as a feature in Windows 10, version 1809. To build Cortana enabled applications on IoT, please refer to [The Cortana Dev Center](http://www.aka.ms/cortanadevices). |
 | **IOT\_BERTHA**                 | Adds a sample app: "Bertha". This app provides basic version info and connectivity status.             |
 | **IOT\_UAP\_DEFAULTAPP**        | Adds a sample app, "Chucky". This app is similar to "Bertha".                              |
 | **IOT\_FTSER2K\_MAKERDRIVER**   | Adds the FTDI USB-to-Serial driver.                                                                                          |
