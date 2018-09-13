@@ -58,11 +58,18 @@ iotstartup add headed IoTUAPOOBE
 
 ### Add settings to IoT Core image
 
-1. Use [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
+1. Use the [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
 2. Copy your settings.json and graphical assets to that package folder.
 3. In the oemcustomizations.cmd file, add `folderpermissions 
     C:\Data\oobe -e` , to ensure that this is called at the system boot.
 4. In the OEMInput.xml, include the feature id **CUSTOM_OOBEAPP**, note that this is defined in the OEMCOMMONFM.xml.
+
+## On-screen keyboard settings
+
+For headed application, your image can include the on-screen keyboard feature, with several configurable settings.
+See the following topic for more information:
+
+[On-screen keyboard for headed devices](/windows/iot-core/develop-your-app/onscreenkeyboard)
 
 ## Crash Settings
 
