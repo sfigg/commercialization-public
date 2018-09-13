@@ -17,24 +17,25 @@ IoTCore has an inbox OOBE App that runs when the device boots up for the first t
 
 This OOBE app can be customised with a `settings.json` with the following attributes:
 
-- backgroundColor : Screen background color 
-- background : Background image (jpg file)
-- progressRingVisible : Spinning dots can be shown or hidden
-- welcomeText : Text displayed in large font at the center of the screen
-- pleaseWaitText : Text displayed below the spinning dots
-- animation : Animation gif can be specified here
-- animationMargin : Positioning of the animation gif
-    - left , top , right, bottom
+| | |
+| ---- | ---- | ---- |
+| backgroundColor | Screen background color |
+| background | Background image (jpg file) |
+| progressRingVisible | Spinning dots can be shown or hidden |
+| welcomeText | Text displayed in large font at the center of the screen |
+| pleaseWaitText | Text displayed below the spinning dots |
+| animation | Animation gif can be specified here |
+| animationMargin | Positioning of the animation gif:<br/>left , top , right, bottom |
 
 All files referenced in the settings.json should be in the same folder as the settings.json file.
 A sample snippet is given below
 
-```css
+```json
 {
-"backgroundColor":  "#FF0000FF",
-"progressRingVisible": true,
-"welcomeText": "Welcome to OOBE customization",
-"pleaseWaitText": "please wait ..."
+  "backgroundColor":  "#FF0000FF",
+  "progressRingVisible": true,
+  "welcomeText": "Welcome to OOBE customization",
+  "pleaseWaitText": "please wait ..."
 }
 ```
 
@@ -46,49 +47,41 @@ A sample snippet is given below
 1. Author the `settings.json` file with your required settings
 2. Connect to the IoT device ([using SSH](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/ssh) or [using Powershell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell)) and place the `settings.json` file along with all graphical assets in a directory, say `C:\Data\oobe`
 3. Configure the device to allow access to this directory from all appx files, using
-
-    ```
-    folderpermissions C:\Data\oobe -e
-    ```
-
+```
+folderpermissions C:\Data\oobe -e
+```
 4. Launch the OOBE application using
-
-    ```
-    iotstartup add headed IoTUAPOOBE
-    ```
-
+```
+iotstartup add headed IoTUAPOOBE
+```
 5. Verify the user interface
 
 ### Add settings to IoT Core image
 
 1. Use [Custom.OOBEApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.OOBEApp) package and modify the package xml file to add your graphical assets
-
 2. Copy your settings.json and graphical assets to that package folder.
-
-3. In the oemcustomizations.cmd file, add  `folderpermissions 
+3. In the oemcustomizations.cmd file, add `folderpermissions 
     C:\Data\oobe -e` , to ensure that this is called at the system boot.
-
 4. In the OEMInput.xml, include the feature id **CUSTOM_OOBEAPP**, note that this is defined in the OEMCOMMONFM.xml.
-
 
 ## Crash Settings
 
 For IoT Core products, it is recommended that you configure your devices to reboot on crash and also hide the crash dump screen (BSOD). 
 This is achieved with setting the following registry keys:
 
-    HKLM\SYSTEM\CurrentControlSet\Control\CrashControl
-        AutoReboot set to 1
-        DisplayDisabled set to 1
+```
+HKLM\SYSTEM\CurrentControlSet\Control\CrashControl
+    AutoReboot         REG_DWORD    1
+    DisplayDisabled    REG_DWORD    1
+```
 
 ### Validate settings manually
 
 1. Connect to your IoT device ([using SSH](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/ssh) or [using Powershell](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/powershell)) and set the following registry keys
-
-
-    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
-    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
-    
-
+```
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v AutoReboot /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl" /v DisplayDisabled /t REG_DWORD /d 1 /f
+```    
 2. See [Forcing a System Crash from the keyboard](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) and configure a key to force the system crash.
 3. Force a system crash using the configured key and verify that the device reboots automatically and does not show the crashdump screen.
 
@@ -105,39 +98,35 @@ A few key features are listed below
 ### Disable Boot UX animation 
 
 1. Manual setting can be done with the below command
-
-    ```
-    bcdedit -set {bootmgr} nobootuxprogress true
-    ```
-
+```
+bcdedit -set {bootmgr} nobootuxprogress true
+```
 2. Specify this setting in a `Custom.BCD.xml` file 
-
-    ```xml
-    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
-    <BootConfigurationDatabase 
-           xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration"
-           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           IncludeDescriptions="true" IncludeRegistryHeader="true">
-           <Objects>
-                <!-- Windows Boot Manager -->
-              <Object SaveKeyToRegistry="false">
-                <FriendlyName>Windows Boot Manager</FriendlyName>
-                <Elements>
-                    <Element>
-                    <DataType>
-                      <WellKnownType>Boot UX Progress Animation Disable</WellKnownType>
-                    </DataType>
-                    <ValueType>
-                      <BooleanValue>true</BooleanValue>
-                    </ValueType>
-                    </Element>
-                </Elements>
-              </Object>
-            </Objects>
-        </BootConfigurationDatabase>
-        ```
-
+```xml
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<BootConfigurationDatabase 
+    xmlns="http://schemas.microsoft.com/phone/2011/10/BootConfiguration"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    IncludeDescriptions="true" IncludeRegistryHeader="true">
+    <Objects>
+        <!-- Windows Boot Manager -->
+        <Object SaveKeyToRegistry="false">
+        <FriendlyName>Windows Boot Manager</FriendlyName>
+        <Elements>
+            <Element>
+            <DataType>
+                <WellKnownType>Boot UX Progress Animation Disable</WellKnownType>
+            </DataType>
+            <ValueType>
+                <BooleanValue>true</BooleanValue>
+            </ValueType>
+            </Element>
+        </Elements>
+        </Object>
+    </Objects>
+</BootConfigurationDatabase>
+```
 3. Include this setting in the image using [Custom.BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Custom.BCD) package and add feature id **CUSTOM_BCD** to OEMInput.xml file
 
 ### Replacing the Boot Logo
@@ -150,30 +139,28 @@ that shows how to build a driver that replaces the boot logo and supply a BGRT t
 ### Enable Flight Signing
 
 1. Manual setting can be done with the below commands:
-
-    ```
-    bcdedit /set {bootmgr} flightsigning on
-    bcdedit /set flightsigning on
-    ```
-
+```
+bcdedit /set {bootmgr} flightsigning on
+bcdedit /set flightsigning on
+```
 2. To include this setting in the image, you can add the below fragment to the `Custom.BCD.xml`
 
-    ```xml
-        <!--  Allow Flight Signing Certificate -->
-        <Object SaveKeyToRegistry="false">
-         <FriendlyName>Global Settings Group</FriendlyName>
-         <Elements>
-          <Element>
-            <DataType>
-              <WellKnownType>Allow Flight Signatures</WellKnownType>
-            </DataType>
-            <ValueType>
-              <BooleanValue>true</BooleanValue>
-            </ValueType>
-          </Element>
-         </Elements>
-        </Object>
-    ```
+```xml
+<!--  Allow Flight Signing Certificate -->
+<Object SaveKeyToRegistry="false">
+    <FriendlyName>Global Settings Group</FriendlyName>
+    <Elements>
+    <Element>
+    <DataType>
+        <WellKnownType>Allow Flight Signatures</WellKnownType>
+    </DataType>
+    <ValueType>
+        <BooleanValue>true</BooleanValue>
+    </ValueType>
+    </Element>
+    </Elements>
+</Object>
+```
 
 ## Runtime customizations
 In addition to the static customizations discussed above, you can also customize during the runtime.
