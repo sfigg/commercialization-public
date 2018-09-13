@@ -11,12 +11,19 @@ ms.technology: windows-oem
 
 # OEM license requirements
 
-## Commercialization Agreement
-In order to start your commercialization journey, you will need to sign a license, which you will need to request the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours. 
+Have questions about commercialization? Check out our Commercialization FAQ [here](CommercializationFAQ.md).
+
+## Windows 10 IoT Core Services
+
+[Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview) is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. For optimal security, update control, and device health, we highly recommend subscribing to Windows 10 IoT Core Services. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases along with services to manage device updates and assess device health.
+
+## Semi-Annual Channel (SAC)
+
+If you are handling the maintenance and upkeep of commercialized devices on your own, SAC may be another option for you to consider when commercializing a device. While SAC comes at no cost, you will not have access to the features that Windows 10 IoT Core Services provides. You will also need to come back every six months to renew SAC.
+
+To start your commercialization journey with SAC, you will need to sign a license, which you will need to request the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours. 
 
 You can view a copy of this agreement before requesting to sign it [here](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Commercial-License.pdf).
-
-Have questions? Check out our Commercialization FAQ [here](CommercializationFAQ.md).
 
 Once you receive the agreement, you are required to sign it to meet the system requirements for the Windows 10 IoT Core device you are manufacturing and commercializing.
 
