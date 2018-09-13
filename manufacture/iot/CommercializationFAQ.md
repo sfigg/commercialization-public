@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows 10 IoT Core Commercialization Frequently Asked Questions (FAQ)
+# Windows 10 IoT Core Commercialization FAQ
 
 If you're looking to get a few questions answered regarding the commercialization process, you've come to the right place. Not finding your question? Submit a suggested question below under "Feedback". 
 
