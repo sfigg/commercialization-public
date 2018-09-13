@@ -17,11 +17,15 @@ If you're looking to get a few questions answered regarding the commercializatio
 
 Windows 10 IoT is the replacement for the Windows Embedded product lines. 
 
-**How do you support Windows 10 IoT Core? Do you have LTSB and LTSC support for 10 years, similarly to Windows 10 IoT Enterprise?**
+**How do you support Windows 10 IoT Core? Do you have Long-Term Servicing Branch (LTSB) and Long-Term Servicing Channel (LTSC) support for 10 years, similarly to Windows 10 IoT Enterprise?**
 
 Yes, we recently announced LTSC for Windows 10 IoT Core and Enterprise. You can read more about this announcement [here](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#MmJYmvwyK7y8YADs.97).
 
-**What will happen six months after I’ve signed the agreement?**
+**What is the difference between LTSC and Semi-Annual Channel (SAC) for Windows 10 IoT Core?**
+
+Both LTSC and SAC are mandatory for commercialization. LTSC is part of [Windows 10 IoT Core Services](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview), which provides 10 years of support, update control, and Device Health Attestation (DHA). LTSC has a small fee per device. While SAC is free, it requires signing a SAC agreement every six months and none of the essential services that LTSC offers.  
+
+**If I go the SAC route, what will happen six months after I’ve signed the agreement?**
 
 You will need to come back and sign the agreement again. If you’d prefer not to manage this, you can sign an agreement with a distributor, where the agreement renews differently and automatically. You can learn more about distributors [here](http://wincom.blob.core.windows.net/documents/Windows_IoT_Distributor_Information.pdf).
 
