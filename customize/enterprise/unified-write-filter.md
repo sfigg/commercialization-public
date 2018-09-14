@@ -247,4 +247,4 @@ For more information about how to find event log information for troubleshooting
 
 [Shell Launcher](shell-launcher.md)
 
-[Assigned access](assigned-access.md)
+

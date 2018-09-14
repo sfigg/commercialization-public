@@ -26,7 +26,7 @@ There are a few exceptions to the applications and executables you can use as a 
 * You cannot use an application that launches a different process and exits as a custom shell. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, and restart the custom shell.
 
 > [!Note]
-> You cannot configure both Shell Launcher and [assigned access](assigned-access.md) on the same system.
+> You cannot configure both Shell Launcher and assigned access on the same system.
 
 Shell Launcher processes the **Run** and **RunOnce** registry keys before starting the custom shell, so your custom shell doesn’t need to handle the automatic startup of other applications and services.
 
@@ -362,4 +362,4 @@ A custom shell is launched with the same level of user rights as the account tha
 
 [Custom Logon](custom-logon.md)
 
-[Create a Kiosk Image](create-a-kiosk-image.md)
+
