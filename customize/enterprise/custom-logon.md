@@ -100,4 +100,4 @@ The following example shows how to disable all Welcome screen UI elements and th
 
 [Shell Launcher](shell-launcher.md)
 
-[Assigned access](assigned-access.md)
+
