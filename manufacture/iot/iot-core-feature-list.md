@@ -56,8 +56,8 @@ When creating images for your device, determine which features are required for 
 | **IOT\_EFIESP\_BCD** | Sets boot configuration data (BCD) for GPT-based drives. Required for x86/amd64. MBR devices should use **IOT\_EFIESP\_BCD_MBR**                                                   |
 | **IOT\_EFIESP\_BCD_MBR**             | Sets boot configuration data (BCD) for MBR-based drives.  This is new in Windows 10, version 1703. |
 | **IOT\_SHELL\_HOTKEY\_SUPPORT** | Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx). Supported starting with Windows 10, version 1607.                                                    |  
-| **IOT\_SHELL\_ONSCREEN\_KEYBOARD** | Adds available on-screen keyboard. This is new in Windows 10, version 1703.                  |
-| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703. |
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD** | Adds available on-screen keyboard. This is new in Windows 10, version 1703.<br/>[Updated in 1809](/windows/iot-core/develop-your-app/onscreenkeyboard)                 |
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703.<br/>[Updated in 1809](/windows/iot-core/develop-your-app/onscreenkeyboard) |
 | **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver. This feature should only be used with the Qualcomm DragonBoard (DB). |
 | **IOT\_CRASHCONTROL\_SETTINGS** | Configures the device to auto reboot without showing blue screen (BSOD) when the device crashs. This also disables crashdump. [AutoReboot = 1 ; DisplayDisabled = 1 and CrashDumpEnabled = 0]. This is new in Windows 10, version 1803 |
 | **IOT\_SSH**                    | Enables Secure Shell (SSH) connectivity |
