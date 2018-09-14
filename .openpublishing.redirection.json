@@ -1,6 +1,26 @@
 { 
   "redirections": [ 
     {   
+        "source_path": "windows-hardware/customize/enterprise/assigned-access-powershell-reference.md", 
+        "redirect_url": "https://docs.microsoft.com/powershell/module/assignedaccess",
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "windows-hardware/customize/enterprise/create-a-kiosk-image.md", 
+        "redirect_url": "https://docs.microsoft.com/windows/configuration/kiosk-methods",
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "windows-hardware/customize/enterprise/assigned-access.md", 
+        "redirect_url": "https://docs.microsoft.com/windows/configuration/kiosk-prepare",
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "windows-hardware/customize/enterprise/configure-assigned-access-by-using-the-ui.md", 
+        "redirect_url": "https://docs.microsoft.com/windows/configuration/kiosk-single-app",
+        "redirect_document_id": true 
+    },
+    {   
         "source_path": "windows-hardware-compatibility-program-overview.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/index",
         "redirect_document_id": true 

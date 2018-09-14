@@ -22,8 +22,6 @@ You can lock down your Windows 10 desktop device by using the lock down features
 
 | Topic                                                   | Description                                                                                         |
 |:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [Create a kiosk experience](create-a-kiosk-image.md) | You can create a single use device using enterprise desktop customizations. One example of a single use device is a [kiosk application](create-a-kiosk-image.md), where users interact with a single application that you select, like a catalog of items for sale at the entrance to your store. You can create an immersive experience complete with videos telling the story of your catalog items and how they are used, along with a way for customers to purchase items right at the kiosk.<br/> You can create a single- or multi-app kiosk experience using Windows Configuration Designer.   |
-| [Assigned access](assigned-access.md) | An administrator can use assigned access to limit an existing user account to use only one specified installed Windows app. This can be useful to set up single-function devices, such as restaurant menus or displays at trade shows.<br/>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/create-a-kiosk-image#assigned-access).    |
 | [Custom Logon](custom-logon.md)  | You can use the Custom Logon feature to suppress Windows 10 UI elements that relate to the Welcome screen and shutdown screen. For example, you can [suppress all elements of the Welcome screen UI](complementary-features-to-custom-logon.md) and provide a custom logon UI. You can suppress the ease of access option on the logon screen. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.    |
 | [Keyboard Filter](keyboardfilter.md)     | Use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, a customer can use certain Windows key combinations like <strong>Ctrl+Alt+Delete</strong> or <strong>Ctrl+Shift+Tab</strong> to alter the operation of a device by locking the screen or using Task Manager to close a running application.   |
 | [Shell Launcher](shell-launcher.md)   | Use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use almost any application or executable as your custom shell, such as a command window or a custom dedicated application.    |
@@ -35,7 +33,6 @@ You can lock down your Windows 10 desktop device by using the lock down features
 
 ## Related topics
 
-**Assigned access reference**: [Assigned access Windows PowerShell reference](assigned-access-windows-powershell-reference.md)
 
 **Keyboard Filter reference**: [Keyboard Filter key names](keyboardfilter-key-names.md)
 
