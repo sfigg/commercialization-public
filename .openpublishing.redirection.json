@@ -1,22 +1,22 @@
 { 
   "redirections": [ 
     {   
-        "source_path": "windows-hardware/customize/enterprise/assigned-access-powershell-reference.md", 
+        "source_path": "customize/enterprise/assigned-access-powershell-reference.md", 
         "redirect_url": "https://docs.microsoft.com/powershell/module/assignedaccess",
         "redirect_document_id": true 
     },
     {   
-        "source_path": "windows-hardware/customize/enterprise/create-a-kiosk-image.md", 
+        "source_path": "customize/enterprise/create-a-kiosk-image.md", 
         "redirect_url": "https://docs.microsoft.com/windows/configuration/kiosk-methods",
         "redirect_document_id": true 
     },
     {   
-        "source_path": "windows-hardware/customize/enterprise/assigned-access.md", 
+        "source_path": "customize/enterprise/assigned-access.md", 
         "redirect_url": "https://docs.microsoft.com/windows/configuration/kiosk-prepare",
         "redirect_document_id": true 
     },
     {   
-        "source_path": "windows-hardware/customize/enterprise/configure-assigned-access-by-using-the-ui.md", 
+        "source_path": "customize/enterprise/configure-assigned-access-by-using-the-ui.md", 
         "redirect_url": "https://docs.microsoft.com/windows/configuration/kiosk-single-app",
         "redirect_document_id": true 
     },
