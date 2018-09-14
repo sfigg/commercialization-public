@@ -211,6 +211,4 @@ if ($AssignedAccessConfig) {
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
-## Related topics
 
-[Assigned access](assigned-access.md)
