@@ -29,8 +29,13 @@ After customizing the Start layout, use Windows Configuration Designer to add th
 The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
 
 1. LayoutOptions
+1. DefaultLayoutOverride
 1. RequiredStartGroupsCollection
 1. AppendDownloadOfficeTile –OR– AppendOfficeSuite (only one Office option can be used at a time)
+1. AppendOfficeSuiteChoice
+1. TopMFUApps
+1. CustomTaskbarLayoutCollection
+1. InkWorkspaceTopApps
 
 Comments are not supported in the `LayoutModification.xml` file.
 
