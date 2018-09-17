@@ -1,8 +1,13 @@
 { 
   "redirections": [ 
     {   
-        "source_path": "customize/enterprise/assigned-access-powershell-reference.md", 
+        "source_path": "customize/enterprise/assigned-access-windows-powershell-reference.md", 
         "redirect_url": "https://docs.microsoft.com/powershell/module/assignedaccess",
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "customize/enterprise/find-the-application-user-model-id-of-an-installed-app.md", 
+        "redirect_url": "https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app",
         "redirect_document_id": true 
     },
     {   
