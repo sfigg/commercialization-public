@@ -17,6 +17,14 @@ If you're looking to get a few questions answered regarding the commercializatio
 
 Windows 10 IoT is the replacement for the Windows Embedded product lines. 
 
+**How much does it cost to commercialize with Windows 10 IoT Core?**
+
+Please see our pricing chart [here](https://docs.microsoft.com/en-us/windows/iot-core/getstarted#windows-10-iot-pricing).
+
+**What are the minimum hardware requirements for Windows 10 IoT Core?**
+
+Read about minimum hardware requirements [here](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview#a-href-idiotcoreasection-50---minimum-hardware-requirements-for-iot-core).
+
 **How do you support Windows 10 IoT Core? Do you have Long-Term Servicing Branch (LTSB) and Long-Term Servicing Channel (LTSC) support for 10 years, similarly to Windows 10 IoT Enterprise?**
 
 Yes, we recently announced LTSC for Windows 10 IoT Core and Enterprise. You can read more about this announcement [here](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#MmJYmvwyK7y8YADs.97).
