@@ -41,6 +41,10 @@ You can leverage the Cortana Devices SDK, which can be found [here](https://deve
 
 No, you can use any version of Visual Studio you’d like. 
 
+**Is UWF on dynamic disk a supported feature?**
+
+No, it is not. 
+
 **Where can I get extra in-person help for prototyping and commercializing?**
 
 Microsoft’s IoT & AI Insider Labs are facilities to help you develop, prototype and test IoT and AI solutions for market commercialization. Located in Redmond, USA; Munich, Germany; and Shenzhen, China; they are located at the heart of Microsoft’s product group, industrial and manufacturing solutions. You can learn more about these labs [here](https://www.microsoftiotinsiderlabs.com/).
