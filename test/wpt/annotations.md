@@ -11,3 +11,6 @@ Annotation is a user-defined column in WPA tables. WPA provides two types of ann
    
    
 #### Add Annotation
+
+   ![view editor graph](images/wpa-annotation-addnew.jpg) 
+   ![view editor graph](images/wpa-annotation-addnew1.jpg)
