@@ -4,4 +4,6 @@ Annotation is a user-defined column in WPA tables. WPA provides two types of ann
 
 ## Dynamic Annotation UI
 
-1. In an **Analysis View**, open **View Editor**
+1. In an **Analysis View**, open **View Editor**.
+
+   ![view editor graph](images/wpa-annotation-openvieweditor.jpg)
