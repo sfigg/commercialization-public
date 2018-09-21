@@ -41,13 +41,13 @@ Multiple annotations can be added to the same **Annotation Column**. The annotat
 In addition to View Editor, you can configure annotations by performing a right click on the table. 
 Select one or more rows in the table and right click, select "Annotate Selection". The pop-up window is going to show all the visible **Annotation Column**s (numbered based on their ordering in the table) and you may configure from there just like in **View Editor** 
  
-<img src="images/wpa-annotation-rightclick.jpg" alt="Right click">
+<img src="images/wpa-annotation-rightclick.jpg" alt="Right click" width="600">
 
-<img src="images/wpa-annotation-rightclickpopup.jpg" alt="Right click pop up">
+<img src="images/wpa-annotation-rightclickpopup.jpg" alt="Right click pop up" width ="700">
 
 ## Legacy Annotation
 Following the above section, enable "Legacy Annotate" at the bottom of the pop-up window and enter an annotation. Click "OK" to apply annotation. Note that this single annotation is applied only to the currently selected rows in the table and is shared across all **Annotation Colum**s. If it overlaps with dynamic annotations on certain rows, the legacy annotation will always be added to the beginning of all annotations. The legacy annotation is not stored as part of the presets, but it can be exported as part of WPA Package.
 
 <img src="images/wpa-annotation-legacy.jpg" alt="Legacy" width="300">
 
-<img src="images/wpa-annotation-legacyresult.jpg" alt="Legacy result">
+<img src="images/wpa-annotation-legacyresult.jpg" alt="Legacy result" width="700">
