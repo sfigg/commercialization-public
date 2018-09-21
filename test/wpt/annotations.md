@@ -34,6 +34,10 @@ Multiple annotations can be added to the same Annotation column. The annotations
  
  <img src="images/wpa-annotation-multipleannotresult.jpg" alt="Multiple annotation result.">
  
- #### Multiple Annotation Columns
+#### Multiple Annotation Columns
 **Dynamic Annotation** supports adding multiple Annotation columns. Simply drag a new annotation column in **View Editor** and it can be configured independently of the existing ones. 
+ 
+### Configure Annotations From Right Click
+In addition to View Editor, you can configure annotations by performing a right click on the table. 
+Select one or more rows in the table and right click, select "Annotate Selection". The pop-up  
  
