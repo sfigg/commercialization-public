@@ -1,6 +1,6 @@
 # Select Tables Window
 
-**Select Tables** Window shows all the available tables in WPA anf allows for users to decide which tables to enable in their analysis.
+**Select Tables** window shows all the available tables in WPA anf allows for users to decide which tables to enable in their analysis.
 
 ## Using the **Select Tables** Window
 1. Open **Window** -> **Select Tables**
@@ -8,11 +8,11 @@
 
    <img src="images/wpa-select-table-1.jpg" alt="wpa-select-table-1" width="800">
 
-3. Select that tables to enable. E.g. Generic Events
+3. Select tables to enable. E.g. Generic Events
 
    <img src="images/wpa-select-table-2.jpg" alt="wpa-select-table-2" height="600">
 
-4. Open the trace and the **Graph Explorer"" will load graphs for the selected tables. In the following example, only "Generic Events" is loaded.
+4. Open the trace and the **Graph Explorer** will load graphs for only the selected tables. In the following example, only "Generic Events" is loaded.
 
    <img src="images/wpa-select-table-3.jpg" alt="wpa-select-table-3" width="800">
 
