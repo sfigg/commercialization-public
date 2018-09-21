@@ -25,5 +25,5 @@ You can edit the order and the visibilty of columns in the **View Editor**. Reme
 #### Edit/Remove Annotation
 Double click on an annotation-query row and the **Annotation Settings** will pop up and allow you to edit the annotaion-query pair. To remove an annotation-query pair, just select it and click the "trash" button.
 
-   <img src="images/wpa-annotation-edit.jpg" alt="Edit annotation." width="250">     <img src="images/wpa-annotation-remove.jpg" alt="Edit annotation." width="250"> 
+   <img src="images/wpa-annotation-edit.jpg" alt="Edit annotation." width="250"> &emsp;&emsp;&emsp; <img src="images/wpa-annotation-remove.jpg" alt="Edit annotation." width="250"> 
    
