@@ -37,7 +37,7 @@ This setting is deprecated and should not be used. This information is included 
 <td><p>Specifies to always show the Windows Setup user interface (UI).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>onError</strong></p></td>
+<td><p><strong>OnError</strong></p></td>
 <td><p>Specifies that Windows Setup displays the UI only when an error with the international settings occurs. This is the default value.</p></td>
 </tr>
 <tr class="odd">
