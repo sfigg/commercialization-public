@@ -1,6 +1,6 @@
 ---
 author: parameshbabu
-Description: 'Learn how to create board supported packages in order to start assembling and manufacturing your device.'
+Description: 'Learn how to use board supported packages in order to start assembling and manufacturing your device.'
 title: 'BSP for Hardware'
 ms.author: pabab
 ms.date: 08/28/18
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Create Board Supported Packages (BSP)
+# IoT Core Board Supported Packages (BSP)
 
 Board Support Packages (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform. These are provided by the hardware vendors/silicon vendors.
 
@@ -18,26 +18,15 @@ There are two steps to creating your own BSP:
 * First, find where you can get BSPs for supported platforms **below**.
 * Second, learn how to create your own BSP by following the steps listed in the [IoT Manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-new-bsp).
 
-> [!NOTE]
-> You can copy the bsp cab files to a folder, say `C:\MyBSPs\`, and `set BSPPKG_DIR=C:\MyBSPs\` in the IoTCoreShell to use these files in the imaging process.
-
 ## Raspberry Pi BSP
 
-Raspberry driver sources are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
-
-Steps to create the drivers :
-
-1. Check out [ms-iot/bsp](https://github.com/ms-iot/bsp) project.
-2. Build the bcm2386 solution (Release or Debug)
-    * You can also download the prebuilt binaries from [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip).
-3. Launch [IoTCoreShell](https://github.com/ms-iot/iot-adk-addonkit), select arm
-
-    * In ms-iot/bsp project folder, run `tools\binexport.cmd Release (or) Debug C:\RPiBSP` to export the binaries to `C:\RPiBSP` folder. If you are using prebuilt binaries, you can skip this step and unzip the binaries to `C:\RPiBSP`.
-    * Run `C:\RPiBSP\build.cmd` to create the cabs in the build output folder (`iot-adk-addonkit\Build\arm\pkgs`)
-    * Run `buildpkg all` to process all cab files
+1. Download [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip) and extract RPi2 directory into your bsp directory (`iot-adk-addonkit\Source-arm\BSP\`)
+2. Launch [IoTCoreShell](https://github.com/ms-iot/iot-adk-addonkit), select `arm`
+3. In the IoTCoreShell, run the below command to build
+    * `buildbsp <bspname>`
 
 > [!NOTE]
-> To build a retail image, you will need to rerun the build.cmd to sign the bsp driver binaries with cross certificates. See IoT Core Manufacturing Guide for detailed instructions.
+> Raspberry Pi BSP driver sources are available at [ms-iot/bsp](https://github.com/ms-iot/bsp)
 
 ## Intel BSPs
 
@@ -48,7 +37,6 @@ Steps to create the drivers :
 | Intel® Atom™ Processor E3800 Product Family and Intel® Celeron® Processor N2807/N2930/J1900  | [Download](https://downloadcenter.intel.com/download/25618) Intel® Embedded Drivers for Microsoft Windows® 10 IoT Core (32-bit and 64-bit) MR1 |
 |Intel Atom® Processor E3900 Series, and Intel® Pentium® and Celeron® Processor N- and J-Series (Apollo Lake)| [Download](https://downloadcenter.intel.com/download/25618) Software Package: Intel Atom® E3900 SoC Family—Board Support Package (BSP) for Windows* 10 IoT Core 32-bit and 64-bit Platforms |
 |Intel® Pentium® and Celeron® Processor N3000 Product Families, Intel® Atom™ x5-E8000 Processor, and Intel® Atom™ x5-Z8350 Processor| [Download](https://www.intel.com/content/www/us/en/embedded/products/braswell/software-and-drivers.html) Board Support Package for Intel Atom® Processor Windows* 10 IoT Core 32-bit and 64-bit Platforms |
-
 
 ### Instructions to use
 
