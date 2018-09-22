@@ -10,6 +10,7 @@ ms.technology: windows-oem
 ---
 
 # Create Board Supported Packages (BSP)
+
 Board Support Packages (BSP) is a collection of drivers/settings required to run IoT Core on a hardware platform. These are provided by the hardware vendors/silicon vendors.
 
 There are two steps to creating your own BSP:
@@ -21,13 +22,14 @@ There are two steps to creating your own BSP:
 > You can copy the bsp cab files to a folder, say `C:\MyBSPs\`, and `set BSPPKG_DIR=C:\MyBSPs\` in the IoTCoreShell to use these files in the imaging process.
 
 ## Raspberry Pi BSP
-Raspberry drivers are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
+
+Raspberry driver sources are available at [ms-iot/bsp](https://github.com/ms-iot/bsp).
 
 Steps to create the drivers :
 
 1. Check out [ms-iot/bsp](https://github.com/ms-iot/bsp) project.
 2. Build the bcm2386 solution (Release or Debug)
-    * You can also download the prebuilt binaries from [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip). 
+    * You can also download the prebuilt binaries from [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip).
 3. Launch [IoTCoreShell](https://github.com/ms-iot/iot-adk-addonkit), select arm
 
     * In ms-iot/bsp project folder, run `tools\binexport.cmd Release (or) Debug C:\RPiBSP` to export the binaries to `C:\RPiBSP` folder. If you are using prebuilt binaries, you can skip this step and unzip the binaries to `C:\RPiBSP`.
@@ -39,55 +41,22 @@ Steps to create the drivers :
 
 ## Intel BSPs
 
-### Bay Trail
+### BSP Links
 
-[Bay Trail](https://www.intel.com/content/www/us/en/embedded/products/bay-trail/overview.html) drivers are available at [IO Drivers](https://downloadcenter.intel.com/download/25618), [Graphics drivers](https://downloadcenter.intel.com/download/25606)
+| Chipset          | Download Link          |
+|--------------- |--------------------- |
+| Intel® Atom™ Processor E3800 Product Family and Intel® Celeron® Processor N2807/N2930/J1900  | [Download](https://downloadcenter.intel.com/download/25618) Intel® Embedded Drivers for Microsoft Windows® 10 IoT Core (32-bit and 64-bit) MR1 |
+|Intel Atom® Processor E3900 Series, and Intel® Pentium® and Celeron® Processor N- and J-Series (Apollo Lake)| [Download](https://downloadcenter.intel.com/download/25618) Software Package: Intel Atom® E3900 SoC Family—Board Support Package (BSP) for Windows* 10 IoT Core 32-bit and 64-bit Platforms |
+|Intel® Pentium® and Celeron® Processor N3000 Product Families, Intel® Atom™ x5-E8000 Processor, and Intel® Atom™ x5-Z8350 Processor| [Download](https://www.intel.com/content/www/us/en/embedded/products/braswell/software-and-drivers.html) Board Support Package for Intel Atom® Processor Windows* 10 IoT Core 32-bit and 64-bit Platforms |
 
-Steps to create the drivers :
 
-1. Download the drivers
-2. Copy the cab files to the build output folder (`iot-adk-addonkit\Build\x86\pkgs`)
-3. Launch IoTCoreShell, select x86
-
-    * Run `buildpkg all` to process all cab files
-
-You can also recreate the cab files with the below script, the cab files will be created in the build output folder
-(set the DIR_ROOT value appropriately).
-
-1. Launch IoTCoreShell, select x86
-2. Create .cmd file copy below snippet and run from above launch shell window.
-
-    ```
-    @echo off
-
-    setlocal
-    set DIR_ROOT=D:\IntelBSP\BYT\333669_002_bsp_windows_10_iot_core-32_bit
-    set OEM_NAME=Intel
-    set SIGNFILES=None
-    call inf2cab.cmd %DIR_ROOT%\Drivers\x86\GPIO\iaiogpio.inf BYT.GPIO
-    call inf2cab.cmd %DIR_ROOT%\Drivers\x86\HSUART\iaiouart.inf BYT.UART
-    call inf2cab.cmd %DIR_ROOT%\Drivers\x86\I2C\iaioi2c.inf BYT.I2C
-    call inf2cab.cmd %DIR_ROOT%\Drivers\x86\SPI\iaiospi.inf BYT.SPI
-
-    set DIR_ROOT=D:\IntelBSP\BYT\INTEL_HDGraphics_Win10IoTCore_v36.19.0_1227_PV
-    call inf2cab.cmd %DIR_ROOT%\emgd_gfx_36_19_0_1227\igdlh.inf GFX.Build1227
-    endlocal
-    ```
-
-### Apollo Lake / Braswell / Cherry trail
-
-The BSP supporting Apollo Lake is available at [Apollo Lake BSP](https://www.intel.com/content/www/us/en/embedded/products/apollo-lake/technical-library.html).
-
-The BSP supporting Braswell/Cherry trail are available at [Braswell BSP](https://www.intel.com/content/www/us/en/embedded/products/braswell/software-and-drivers.html).
-
-> [!TIP]
-> The published BSP works with Windows 10 ADK release 1703 (15063).
+### Instructions to use
 
 Follow the steps below to use this BSP with the Windows 10 ADK release 1709 (16299) with iot-adk-addonkit version 4.0 or later.
 
-1. Download the BSP package and install 
-2. Copy files from `C:\Program Files (x86)\Intel IoT\Source-<arch>` to `iot-adk-addonkit\Source-<arch>` 
-3. Launch IoTCoreShell, select arch (x64 / x86) as required 
+1. Download the BSP package and install
+2. Copy files from `C:\Program Files (x86)\Intel IoT\Source-<arch>` to `iot-adk-addonkit\Source-<arch>`
+3. Launch IoTCoreShell, select arch (x64 / x86) as required
 4. In the IoTCoreShell, run the below command to convert the BSP files to latest format and build
     * run `.\bsptools\<bspname>\convert.cmd`
     * `buildbsp <bspname>`
@@ -106,7 +75,7 @@ Steps to create the drivers :
     * Run `.\bsptools\QCDB410C\export.cmd C:\download\DB410c_BSP C:\MyBSPs\QCDB410C` to export the required bsp cab files to a directory say `C:\MyBSPs\QCDB410C`.
     * `set BSPPKG_DIR=C:\MyBSPs\QCDB410C` to specify the location of the bsp cabs. See the BSPFM.xml file for the cab files it looks for in `BSPPKG_DIR`.
     * Run `buildpkg all` to create the oem packages
-    * Run `buildimage <productname> <test> or <retail>` to build the image 
+    * Run `buildimage <productname> Test` to build the image
 
 ## Other helpful resources
 
