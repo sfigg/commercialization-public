@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 Unified Write Filter (UWF) helps to protect your drives by intercepting and redirecting any writes to the drive (app installations, settings changes, saved data) to a virtual overlay. The virtual overlay is a temporary location that is usually cleared during a reboot or when a guest user logs off. 
 
-Benefits:
+## Benefits
 
 * Provides a clean experience for shared workspaces, thin clients, or workspaces that have frequent guests, like school, library or hotel computers. Guests can install software and use the device, then after the device reboots, the next guest receives a clean experience. 
 
@@ -32,11 +32,11 @@ UWF replaces the Windows 7 Enhanced Write Filter (EWF) and the File Based Write 
 
 * You can use UWF to make read-only media appear to the OS as a writable volume.
 
-* You can manage UWF locally or remotely from Intune using the [UnifiedWriteFilter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp) or by using the [UWF WMI](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwf-wmi-provider-reference).
+* You can manage UWF using MDM tools like Microsoft Intune using the [UnifiedWriteFilter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp) or the [UWF WMI](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwf-wmi-provider-reference). (We recommend CSP.)
 
 
 ## Requirements
-Windows 10 Enterprise or Windows 10 Education
+Windows 10 Enterprise, Windows 10 Education, or Windows 10 IoT Core Enterprise
 
 ## Limitations
 
@@ -53,8 +53,8 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 
 * **Disk overlay**: The virtual overlay is stored in a temporary location on the drive. By default, the overlay is cleared on reboot. 
 
-  * You can use intelligent overlay consumption using [free-space pass-through](#freespacepassthrough).
-  * On Windows 10, version 1803, we've added the [persistant overlay](#persistentoverlay) feature so you can save work in the virtual overlay even after a reboot.
+  * You can use [freespace passthrough](#freespacepassthrough) to use additional free space on the drive beyond the reserved virtual overlay space.
+  * On Windows 10, version 1803, you can use [persistent overlay](#persistentoverlay) to allow users to save work in the virtual overlay even after a reboot.
  
 ## Overlay size
 
@@ -63,8 +63,8 @@ The default overlay size is 1GB. When planning device rollouts, we recommend opt
 As the drive overlay fills up the available RAM, device performance can be reduced. Users will eventually be prompted to reboot the device or to run a script to clear the overlay. After the overlay is cleared, all writes/changes made after the overlay was applied will be gone. 
 
 Figuring out the right size for the overlay depends on:
-* Device usage patterns
-* Apps that can be accessed. (Some apps have high write volumes and will fill up the overlay much faster.)
+* Device usage patterns.
+* Apps that can be accessed. (Some apps have high write volumes and will fill up the overlay faster.)
 * Time between resets. 
 
 We recommend enabling UWF on a test device, installing the necessary apps, and putting the device through usage simulations. You can use this Powershell script to find out which files are consuming space: 
@@ -91,8 +91,10 @@ Both events are logged into the system event log. You can use these events to tr
 | Critical threshold  | uwfvol  | Error       | 2        |
 | Back to normal      | uwfvol  | Information | 3        |
 
-### <span id="freespacepassthrough"></span> Free-space passthrough (recommended) 
-On devices with a disk overlay, you can configure free space passthrough to save overlay space and increase device uptime. With free space passthrough, only overwrites take up space on the overlay. All other writes are sent to free bits on disk. Over time, the overlay will grow slower and slower, because overwrites will just keep replacing one another.
+### <span id="freespacepassthrough"></span> Freespace passthrough (recommended) 
+On devices with a disk overlay, you can use freespace passthrough to access your drive's additional free space.
+
+Only overwrites, such as system updates, take up space on the overlay. All other writes are sent to free space on disk. Over time, the overlay will grow slower and slower, because overwrites will just keep replacing one another.
 
 ### <span id="persistentoverlay"></span> Persistent overlay
 
