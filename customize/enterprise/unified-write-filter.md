@@ -5,30 +5,106 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05f82dbf-64e7-4ed2-8932-9abcfad59598
-author: alhopper-msft
-ms.author: alhopper
-ms.date: 05/02/2017
+author: kpacquer
+ms.author: kenpacq
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Unified Write Filter (UWF) feature
 
-You can use the Unified Write Filter (UWF) feature on your device to help protect your physical storage media, including most standard writable storage types that are supported by Microsoft Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.
+Unified Write Filter (UWF) helps to protect your drives by intercepting and redirecting any writes to the drive (app installations, settings changes, saved data) to a virtual overlay. The virtual overlay is a temporary location that is usually cleared during a reboot or when a guest user logs off. 
 
-> [!Important]
-> You cannot use UWF to protect external removable drives, USB devices or flash drives.
+Benefits:
 
-UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
+* Provides a clean experience for shared workspaces, thin clients, or workspaces that have frequent guests, like school, library or hotel computers. Guests can install software and use the device, then after the device reboots, the next guest receives a clean experience. 
 
-The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume.
+* Increases security and reliability for kiosks, IoT-embedded devices, or other devices where new apps are not expected to be frequently added.
 
-> [!Note]
-> UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
+* Can be used to reduce wear on solid-state drives and other write-sensitive media.
+
+UWF replaces the Windows 7 Enhanced Write Filter (EWF) and the File Based Write Filter (FBWF).
+
+## Features
+
+* UWF can protect most standard writable storage types that are supported by Microsoft Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You cannot use UWF to protect external removable drives, USB devices or flash drives. 
+
+* You can use UWF to make read-only media appear to the OS as a writable volume.
+
+* You can manage UWF locally or remotely from Intune using the [UnifiedWriteFilter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp) or by using the [UWF WMI](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwf-wmi-provider-reference).
+
 
 ## Requirements
+Windows 10 Enterprise or Windows 10 Education
 
-Windows 10 Enterprise or Windows 10 Education.
+## Limitations
+
+UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
+
+The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes.
+
+## Should you use a RAM overlay or a disk overlay?
+
+* **RAM overlay (default)**: The virtual overlay is stored in RAM, and is cleared after a reboot. 
+
+  * By writing to RAM, you can reduce the wear on write-sensitive media like solid-state drives.
+  * RAM is often more limited than drive space. As the drive overlay fills up the available RAM, device performance could be reduced, and users will eventually be prompted to reboot the device. If your users are expected to make many large writes to the overlay, consider using a disk overlay instead.
+
+* **Disk overlay**: The virtual overlay is stored in a temporary location on the drive. By default, the overlay is cleared on reboot. 
+
+  * You can use intelligent overlay consumption using [free-space pass-through](#freespacepassthrough).
+  * On Windows 10, version 1803, we've added the [persistant overlay](#persistentoverlay) feature so you can save work in the virtual overlay even after a reboot.
+ 
+## Overlay size
+
+The default overlay size is 1GB. When planning device rollouts, we recommend optimizing the overlay size to fit your needs. 
+
+As the drive overlay fills up the available RAM, device performance can be reduced. Users will eventually be prompted to reboot the device or to run a script to clear the overlay. After the overlay is cleared, all writes/changes made after the overlay was applied will be gone. 
+
+Figuring out the right size for the overlay depends on:
+* Device usage patterns
+* Apps that can be accessed. (Some apps have high write volumes and will fill up the overlay much faster.)
+* Time between resets. 
+
+We recommend enabling UWF on a test device, installing the necessary apps, and putting the device through usage simulations. You can use this Powershell script to find out which files are consuming space: 
+
+```powershell
+$wmiobject = get-wmiobject -Namespace "root\standardcimv2\embedded" -Class UWF_Overlay 
+$files = $wmiobject.GetOverlayFiles("c:") 
+$files.OverlayFiles | select-object -Property FileName,FileSize  | export-csv -Path D:\output.csv 
+```
+
+### Overlay warnings and critical events 
+
+* **Warning level**: by default, occurs when 512MB are used in the overlay. Set with `uwfmgr overlay set-warningthreshold`.
+  
+* **Critical level**: by default, occurs when 1024MB are used. Set with `uwfmgr overlay set-criticalthreshold`.
+
+If either the warning or critical threshold is reached, the suggested course of action is to clear the contents on the overlay. You can do this by rebooting the device, or running a script to clear the contents of the overlay. 
+
+Both events are logged into the system event log. You can use these events to trigger an event in Task Scheduler, warning the user to wrap up their usage on the device so they do not lose their content before the overlay is cleared. Event log codes:
+
+| Overlay usage       | Source  |  Level      | Event ID |
+|---------------------|---------|-------------|----------|
+| Warning threshold   | uwfvol  | Warning     | 1        |
+| Critical threshold  | uwfvol  | Error       | 2        |
+| Back to normal      | uwfvol  | Information | 3        |
+
+### <span id="freespacepassthrough"></span> Free-space passthrough (recommended) 
+On devices with a disk overlay, you can configure free space passthrough to save overlay space and increase device uptime. With free space passthrough, only overwrites take up space on the overlay. All other writes are sent to free bits on disk. Over time, the overlay will grow slower and slower, because overwrites will just keep replacing one another.
+
+### <span id="persistentoverlay"></span> Persistent overlay
+
+>!NOTE
+> This feature is still in beta and not yet fully supported. Test before deploying through your organization.
+
+On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. Note, this mode is experimental, and we recommend thoroughly testing it before deploying. 
+
+This give your IT department more control over when the overlay is wiped, however it will require a few more steps to configure. 
+
+This option is not used by default.
+
 
 ## Terminology
 
