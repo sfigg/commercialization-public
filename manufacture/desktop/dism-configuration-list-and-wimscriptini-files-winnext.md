@@ -73,7 +73,7 @@ By default, the DISM.exe tool will exclude the following files.
 \hiberfil.sys
 \pagefile.sys
 \swapfile.sys
-"\System Volume Information"
+\System Volume Information
 \RECYCLER
 \Windows\CSC
 
@@ -118,7 +118,7 @@ By default, the DISM.exe tool will exclude the following files.
     ```
     [ExclusionException]
     \pagefile.sys
-    "\System Volume Information"
+    \System Volume Information
     ```
 
 -   If an explicit `[ExclusionException]` section is provided in the WIM configuration file, it will always take precedence over the `[Exclusion List]` section.
