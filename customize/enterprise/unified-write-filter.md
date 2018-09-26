@@ -44,7 +44,7 @@ UWF fully supports the NTFS file system; however, during device startup, NTFS fi
 
 The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes.
 
-## Should you use a RAM overlay or a disk overlay?
+## RAM overlay vs. disk overlay
 
 * **RAM overlay (default)**: The virtual overlay is stored in RAM, and is cleared after a reboot. 
 
@@ -60,7 +60,7 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 
 The default overlay size is 1GB. When planning device rollouts, we recommend optimizing the overlay size to fit your needs. 
 
-As the drive overlay fills up the available RAM, device performance can be reduced. Users will eventually be prompted to reboot the device or to run a script to clear the overlay. After the overlay is cleared, all writes/changes made after the overlay was applied will be gone. 
+As the drive overlay fills up the available RAM, device performance can be reduced. Users are warned that they're running out of free space, and will eventually be prompted to reboot the device or to run a script to clear the overlay. After the overlay is cleared, all writes/changes made after the overlay was applied will be gone. 
 
 Figuring out the right size for the overlay depends on:
 * Device usage patterns.
@@ -75,7 +75,7 @@ $files = $wmiobject.GetOverlayFiles("c:")
 $files.OverlayFiles | select-object -Property FileName,FileSize  | export-csv -Path D:\output.csv 
 ```
 
-### Overlay warnings and critical events 
+### Warnings and critical events 
 
 * **Warning level**: by default, occurs when 512MB are used in the overlay. Set with `uwfmgr overlay set-warningthreshold`.
   
@@ -99,14 +99,25 @@ Only overwrites, such as system updates, take up space on the overlay. All other
 ### <span id="persistentoverlay"></span> Persistent overlay
 
 >!NOTE
-> This feature is still in beta and not yet fully supported. Test before deploying through your organization.
+> This feature is still in beta and not yet fully supported. Please thoroughly test before deploying to multiple devices.
 
-On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. Note, this mode is experimental, and we recommend thoroughly testing it before deploying. 
+On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. This can be helpful in situations where your guest users may need to access for longer periods, and may need to power off the device between uses. 
 
-This give your IT department more control over when the overlay is wiped, however it will require a few more steps to configure. 
+This option gives your IT department more control over when the overlay is wiped.
 
-This option is not used by default.
+Note, this mode is experimental, and we recommend thoroughly testing it before deploying. This option is not used by default.
 
+To set persistent overlay:
+
+```
+uwfmgr overlay set-persistent on
+```
+
+To reset the overlay:
+
+```
+uwfmgr overlay reset-persistentstate on
+```
 
 ## Terminology
 
