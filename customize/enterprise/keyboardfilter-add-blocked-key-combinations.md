@@ -54,7 +54,7 @@ function Enable-Predefined-Key($Id) {
         filter against key value "Id", and set that instance's "Enabled"
         property to 1/true.
     .Example
-        Enable-Predefined-Key "Ctrl+Alt+Delete"
+        Enable-Predefined-Key "Ctrl+Alt+Del"
         Enable CAD filtering
 #>
 
@@ -68,7 +68,7 @@ function Enable-Predefined-Key($Id) {
         $predefined.Put() | Out-Null;
         Write-Host Enabled $Id
     } else {
-        Write-Error $Id is not a valid predefined key
+        Write-Error "$Id is not a valid predefined key"
     }
 }
 
@@ -147,7 +147,7 @@ function Enable-Scancode($Modifiers, [int]$Code) {
 }
 
 # Some example uses of the functions defined above.
-Enable-Predefined-Key "Ctrl+Alt+Delete"
+Enable-Predefined-Key "Ctrl+Alt+Del"
 Enable-Predefined-Key "Ctrl+Esc"
 Enable-Custom-Key "Ctrl+V"
 Enable-Custom-Key "Numpad0"

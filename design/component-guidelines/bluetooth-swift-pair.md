@@ -25,6 +25,9 @@ As the next evolution of pairing, users no longer need to navigate the Settings 
 
 ![Swift Pair <>](../images/notificationpairsmall.gif)
 
+**Swift Pair**
+
+
 If at any time, a user wishes to turn Swift Pair on or off, they can do so in the “Bluetooth & other devices” page. Enterprises will also be able to control this feature through the [Bluetooth\AllowPromptedProximalConnections](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth) in the Policy CSP and with any existing Mobile Device Management solution.
 
 ## Building a Swift Pair peripheral
@@ -79,10 +82,15 @@ Bluetooth LE is required, other BR/EDR peripherals can benefit from Swift Pair. 
 
 ![Figure 2: Pairing over Bluetooth LE only](../images/bt-swift-pair-2.png)
 
+**Figure 2: Pairing over Bluetooth LE only**
+
 ![Figure 3: Paring over Bluetooth LE and BR/EDR with Secure Connections](../images/bt-swift-pair-3.png)
+
+**Figure 3: Paring over Bluetooth LE and BR/EDR with Secure Connections**
 
 ![Figure 4: Pairing over BR/EDR only, using Bluetooth LE for discovery](../images/bt-swift-pair-4.png)
 
+**Figure 4: Pairing over BR/EDR only, using Bluetooth LE for discovery**
 
 ## Section Header
 - This is a Bluetooth SIG defined vendor section
