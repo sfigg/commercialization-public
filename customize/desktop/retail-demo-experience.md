@@ -290,11 +290,11 @@ Many shoppers use the library content (photos, videos, documents) to fully explo
 
 ### Apps
 
-Include a retail demo mode in your Windows apps so customers who try out your PCs and devices on the sales floor can jump right in. 
+Include retail demo features in your Windows apps so customers who try out your PCs and devices on the sales floor can jump right in. 
 
 We strongly recommend you ensure that the apps included on the device take advantage of the retail demo mode. Not only will your app look amazing for a retail customer, you may even get increased app awareness due to the discovery of your app that leads to post-purchase install.
 
-We recommend the following guidelines when developing a retail demo mode for your app:
+We recommend the following guidelines when developing retail demo features for your app:
 
 * **Show off, but be focused**: Use the retail mode version of your app as an opportunity to showcase why it rocks and is a reason to buy a Windows device. Put your best foot forward. Keep the story simple: elevator pitch to land your app’s value prop.  
 
@@ -302,7 +302,7 @@ We recommend the following guidelines when developing a retail demo mode for you
 
 * **Minimize error and pop-up dialogs**: Error pop-ups invoke a negative experience with the app, Windows and the shopping experience. Minimize pop-ups as much as possible.
 
-For detailed guidance and requirements, see [Create an RDX app](https://docs.microsoft.com/windows/uwp/monetize/retail-demo-experience). 
+To learn more, see [Add retail demo (RDX) features to your app](https://docs.microsoft.com/windows/uwp/monetize/retail-demo-experience).
 
 
 ## Add retail demo mode, including language packs, to your images
