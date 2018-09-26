@@ -32,15 +32,16 @@ UWF replaces the Windows 7 Enhanced Write Filter (EWF) and the File Based Write 
 
 * You can use UWF to make read-only media appear to the OS as a writable volume.
 
-* You can manage UWF using MDM tools like Microsoft Intune using the [UnifiedWriteFilter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp) or the [UWF WMI](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwf-wmi-provider-reference). (We recommend CSP.)
+* You can manage UWF directly on a Windows 10 device using uwfmgr.exe, or remotely using MDM tools like Microsoft Intune using the [UnifiedWriteFilter CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp) or the [UWF WMI](https://docs.microsoft.com/windows-hardware/customize/enterprise/uwf-wmi-provider-reference).
 
+* You can [update and service UWF-protected devices](service-uwf-protected-devices), either by using a UWF servicing mode or by adding file and registry exclusions to specific system areas.
 
 ## Requirements
 Windows 10 Enterprise, Windows 10 Education, or Windows 10 IoT Core Enterprise
 
 ## Limitations
 
-UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
+UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has started protecting the volume.
 
 The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes.
 
@@ -106,6 +107,11 @@ On devices with a disk overlay, you can choose to keep working using the overlay
 This give your IT department more control over when the overlay is wiped, however it will require a few more steps to configure. 
 
 This option is not used by default.
+
+```
+overlay set-persistent (On | Off)
+overlay reset-persistentstate (On | Off)
+```
 
 
 ## Terminology
