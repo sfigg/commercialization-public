@@ -46,7 +46,7 @@ To work around this, you can disable the Recycle Bin. Alternatively, the user ca
 
 When you deploy a Windows 10 Enterprise image with UWF on a VHD boot disk, you can protect the volume that contains the VHD file by adding a file exclusion for the VHD file before enabling UWF and protecting the volume.
 
-To add a file exclusion for the VHD file, at an administrator command prompt, type the following:
+To add a file exclusion for the VHD file at an administrator command prompt:
 
 ```cmd
 uwfmgr.exe file add-exclusion <drive containing VHD file>:\<path to VHD file>\<VHD file name>.vhd
@@ -66,12 +66,12 @@ You must use an administrator account to add or remove registry exclusions durin
 
 If you exclude a registry key, all its subkeys are also excluded from filtering. You can exclude registry subkeys only under the following registry keys:
 
-* HKEY\_LOCAL\_MACHINE\\BCD00000000
-* HKEY\_LOCAL\_MACHINE\\SYSTEM
-* HKEY\_LOCAL\_MACHINE\\SOFTWARE
-* HKEY\_LOCAL\_MACHINE\\SAM
-* HKEY\_LOCAL\_MACHINE\\SECURITY
-* HKEY\_LOCAL\_MACHINE\\COMPONENTS
+* `HKEY\LOCAL\MACHINE\BCD00000000`
+* `HKEY\LOCAL\MACHINE\SYSTEM`
+* `HKEY\LOCAL\MACHINE\SOFTWARE`
+* `HKEY\LOCAL\MACHINE\SAM`
+* `HKEY\LOCAL\MACHINE\SECURITY`
+* `HKEY\LOCAL\MACHINE\COMPONENTS`
 
 > [!Note]
 > UWF automatically excludes certain registry keys from being filtered. These registry keys are primarily related to UWF configuration settings and cannot be removed from the exclusion list.
