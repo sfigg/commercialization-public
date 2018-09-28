@@ -42,7 +42,7 @@ You cannot rename or move a file or folder from a protected location to an unpro
 
 To work around this, you can disable the Recycle Bin. Alternatively, the user can press Ctrl+Shift and then left-click on the file to directly delete the excluded file, bypassing the Recycle Bin, or the user can delete the excluded file directly from a command prompt. You must restart the device for new exclusions to take effect.
 
-### Virtual Hard Disk (VHD) file exclusions
+## Virtual Hard Disk (VHD) file exclusions
 
 When you deploy a Windows 10 Enterprise image with UWF on a VHD boot disk, you can protect the volume that contains the VHD file by adding a file exclusion for the VHD file before enabling UWF and protecting the volume.
 
@@ -58,7 +58,7 @@ For example:
 uwfmgr.exe file add-exclusion E:\VHD\test.vhd
 ```
 
-### Registry exclusions
+## Registry exclusions
 
 You can add specific registry keys to an exclusion list to exclude those keys from being filtered by UWF. When a registry key is in the exclusion list, all writes to that registry key bypass UWF filtering and are written directly to the registry and persist after the device restarts.
 
