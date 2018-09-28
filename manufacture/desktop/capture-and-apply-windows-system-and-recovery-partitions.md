@@ -108,7 +108,7 @@ Here's a few ways to apply the image:
 
 2.  Copy the following script into Notepad, and then save the file as ApplyImage.bat:
 
-    ```
+    ```batch
     rem == ApplyImage.bat ==
 
     rem == These commands deploy a specified Windows
