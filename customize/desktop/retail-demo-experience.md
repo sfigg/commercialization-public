@@ -156,10 +156,10 @@ Below are the media and copy requirements for the Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-*.	Jump to another page within group
-*.	Launch an app
-*.	Launch the default browser and go to a URL (online devices only)
-*.	Open media (image, video, or document)
+1.	Jump to another page within group
+1.	Launch an app
+1.	Launch the default browser and go to a URL (online devices only)
+1.	Open media (image, video, or document)
 
 Here is an example of a Hero template:
 
