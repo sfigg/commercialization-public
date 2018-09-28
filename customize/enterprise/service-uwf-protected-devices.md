@@ -10,7 +10,7 @@ MSHAttr:
 ms.assetid: b87fb099-ffe5-4725-a8e3-a33484159362
 author: kpacquer
 ms.author: kenpacq
-ms.date: 10/02/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
