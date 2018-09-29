@@ -85,6 +85,8 @@ Some services and features write information to a device’s persistent volume, 
 
 This topic lists registry and file exclusions that can help enable some common services and features to work correctly when write filters are enabled.
 
+If you are running any antivirus or security software in addition to UWF, please consult with your antivirus vendor for advice on how to configure their solution in a UWF environment. You may need to add a UWF exclusion for the signature or update folder. 
+
 ### Customer Experience Improvement Program (CEIP)
 
 When you choose to participate in the CEIP, your computer or device automatically sends information to Microsoft about how you use certain products. Information from your computer or device is combined with other CEIP data to help Microsoft solve problems and to improve the products and features customers use most often.

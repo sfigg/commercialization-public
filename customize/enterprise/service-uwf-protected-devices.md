@@ -24,7 +24,7 @@ Normally, when the Unified Write Filter (UWF) is active, system updates are disa
 When UWF servicing mode is triggered, Windows does the following:
 1. Clears the UWF overlay
 1. Reboots the devices
-1. Triggers a system maintenance hour 
+1. Triggers a [system maintenance hour](https://docs.microsoft.com/windows/desktop/TaskSchd/task-maintenence).
 1. Disables the UWF filter.
 1. Scans for and applies Windows updates
 1. Scans for and applies app updates from the Microsoft store.
