@@ -16,7 +16,7 @@ The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need t
 
 * The Windows Assessment Toolkit and the Windows Performance Toolkit to assess the quality and performance of systems or components.
 * Deployment tools such as WinPE, Sysprep, and other tools that you can use to customize and deploy Windows 10 images.
-* Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon ISO and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK.
+* Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK. After you run the installer, the WinPE files will be in the same location as they were in previous ADK installs.
 
 > [!div class="nextstepaction"]
 > [Download the Windows ADK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026036)
