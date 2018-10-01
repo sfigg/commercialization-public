@@ -45,7 +45,7 @@ Language components, including language packs and features on demand can be adde
 > Don't install a language after an update. If you install an update that contains language-dependent resources before you install a language, the language-specific changes that are contained in the update are not applied and you will have to reinstall the update. Always install languages before you install updates.
 
 
-## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Add a language offline
+## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Work with languages
 
 Here's how to add and remove languages on an offline (mounted) image (install.wim). We'll install the French language, and then show you how to add a LIP language  (Luxembourgish) that uses French as a base language.
 
@@ -72,7 +72,7 @@ See [Where to get language packs](language-packs-and-windows-deployment.md#span-
 
     See [Mount and modify an image using DISM](mount-and-modify-a-windows-image-using-dism.md) to learn more about mounting an image.
 
-### Add a language
+### Add a language to Windows
 
 When preinstalling languages, add the language pack and applicable features on demand for all languages, including base languages if you're going to add a LIP.
 
@@ -163,7 +163,7 @@ If you're adding a language to an online image, the process is the same, but use
 ## Remove a Language Pack from a Windows Image
 
 
-Before you add new language packs to a Windows image, you must remove any language packs that you do not intend to use. There are two ways to remove language packs offline with DISM. You can either apply an unattended answer file to the offline image, or you can remove the language pack directly from the offline image, using the command prompt.
+Before you add new language packs to a Windows image, you must remove any language packs that you don't intend to use. There are two ways to remove language packs offline with DISM. You can either apply an unattended answer file to the offline image, or you can remove the language pack directly from the offline image, using the command prompt.
 
 If you're removing a language from an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
 
@@ -171,7 +171,10 @@ If you're removing a language from an online image, the process is the same, but
 > You cannot remove a language pack from an offline Windows image if there are pending online actions. The Windows image should be a recently installed and captured image. This will guarantee that the Windows image does not have any pending online actions that require a reboot.
 
 
-### Remove a language pack offline
+### Remove a language from Windows
+
+> [!note]
+> If you're adding a language to an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
 
 1.  Locate the Windows image (.wim) file or virtual hard disk (.vhd or .vhdx) that contains the Windows image that you intend to remove languages from.
 

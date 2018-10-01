@@ -20,7 +20,7 @@ To see available Features on Demand for languages and regions, see [Language and
 
 ## Preinstalled FODs
 
-The following Features on Demand come preinstalled in a Windows image. Don't remove these FODs from the Windows image.
+The following Features on Demand come preinstalled in a Windows image. Don't remove these FODs from the Windows image:
 
 ### Internet Explorer
 
@@ -68,7 +68,7 @@ The OpenSSH client Feature on Demand enables the use of OpenSSH on a Windows PC.
 
 ### Quick Assist
 
-Microsoft Quick Assist allows users to share their screen with Microsoft support agents or other trusted people.
+Microsoft Quick Assist allows users to share their screen with Microsoft support agents or other trusted people. Note that this FOD is preinstalled, but not available on the FOD ISO.
 
 **Feature**: Microsoft Quick Assist 
 - **Capability name**: App.Support.QuickAssist~~~~0.0.1.0
