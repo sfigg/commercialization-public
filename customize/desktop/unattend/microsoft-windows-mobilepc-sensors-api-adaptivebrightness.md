@@ -24,9 +24,13 @@ Adaptive brightness changes the brightness of a monitor or display based on the 
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
+| [ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)    | ALRCurveVersion sets the ALR algorithm version (1 or 2) against which the ALR curve data should be interpreted.    |
 | [ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md) | Specifies the ambient light response (ALR) curve data. |
+| [AutobrightnessLuxToNitsCurve](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-autobrightnessluxtonitscurve.md)    | This setting is not supported. Do not use.    |
+| [DefaultSliderPosition](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-defaultsliderposition.md)    | Sets the system default for screen brightness. It's only used when Autobrightness is not the default.  |
 | [DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md) | Specifies the minimum time, in milliseconds, between changes in display brightness due to lighting conditions. |
 | [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md) | Specifies the percentage change in illuminance (lux) required to cause a change in display brightness. Specified in percentage change since the last change in display brightness. |
+| [IsAutobrightnessEnabledByDefault](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-isautobrightnessenabledbydefault.md)    | Specifies whether autobrightness is enabled by default.     |
 
 ## Valid Configuration Passes
 
