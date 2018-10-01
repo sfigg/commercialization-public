@@ -18,7 +18,7 @@ ms.technology: windows-oem
 
 Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK. After running the installer for the WinPE add-on, the WinPE files will be in the same location as they were in previous installs of the ADK.
 
-You can [download the WinPE ADK add-on here](https://go.microsoft.com/fwlink/?linkid=2022233).
+See [Download and install the Windows ADK and ADK tools](adk-install.md) to get the ADK and WinPE add-on.
 
 ### WPT
 
