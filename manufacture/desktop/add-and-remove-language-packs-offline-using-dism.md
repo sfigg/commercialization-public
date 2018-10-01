@@ -89,6 +89,8 @@ If you're adding a language to an online image, the process is the same, but use
     Where D:\ is the Language pack ISO 
 
 3.  Add the language FODs. Always preinstall the Basic, Fonts, OCR, Text-to-speech, and Speech recognition language component FODs if they’re available for the languages you’re preinstalling. Additionally, preinstall the handwriting language component FOD if you’re shipping a device with a pen.
+    
+    See [Features on demand](features-on-demand-v2--capabilities.md) to can learn more about FODs, including details on adding them to a Windows image.
 
     ```
     Dism /Image:"C:\mount\windows" /add-package /packagepath:E:\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab
@@ -103,7 +105,7 @@ If you're adding a language to an online image, the process is the same, but use
     Dism /Image:"C:\mount\windows" /Get-capabilities
     ```
 
-4.  Add any other capabilities, such as fonts, required for that region. To learn more, see [Features On Demand](features-on-demand-v2--capabilities.md).
+4.  Add any other capabilities, such as fonts, required for that region. To learn about additional FODs, see, see [Language and region features On Demand](features-on-demand-non-language-fod.md).
 
     ```
     rem Thai example (add th-TH first).
