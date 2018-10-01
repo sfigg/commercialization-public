@@ -1467,26 +1467,10 @@ Please reference Push-button reset and Windows Recovery Environment (Windows RE)
 
 Push-button reset, is a built-in recovery tool which allows users to recover the OS while preserving their data and important customizations, without having to back-up their data in advance. It reduces the need for custom recovery applications by providing users with more recovery options and the ability to fix their own PCs with confidence. 
 
-In Windows 10, the Push-button reset features have been updated to include the following improvements: 
-
-The Push-button reset user experience offers customization opportunities. Manufacturers can insert custom scripts, install applications or preserve additional data at available extensibility points. 
-The following Push-button reset features are available to users with Windows 10 PCs: 
-
-  - Refresh your PC 
-
-    Fixes software problems by reinstalling the OS while preserving the user data, user accounts, and important settings. All other preinstalled customizations are restored to their factory state. In Windows 10, this feature no longer preserves user-acquired Universal Windows apps. 
-
-  - Reset your PC
-
-    Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Classic Windows applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state. 
-
-  - Bare metal recovery 
-
-    Restores the default or preconfigured partition layout on the system disk, and reinstalls the OS and preinstalled customizations from external media.
-
+I
 ### Prepare ScanState 
 
-To start working with Push Button Reset, you'll need to copy ScanState to _Data_.
+To start working with Push Button Reset, you'll need to copy ScanState to *USB-B*.
 
 Use scanstate to capture Classic Windows applications and settings on your image.
 
