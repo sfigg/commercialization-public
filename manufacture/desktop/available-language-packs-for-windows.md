@@ -24,7 +24,7 @@ To learn how to get language packs, see [Where to get language packs and LIPs](l
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
 
-To learn how to add languages to Windows, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
+To learn how to add languages to Windows, see [Add Language Packs to Windows](add-and-remove-language-packs-offline-using-dism.md).
 
 ## Supported Language Packs and Language Interface Packs
 
