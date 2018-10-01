@@ -16,9 +16,18 @@ ms.technology: windows-oem
 
 ### Windows PE
 
-Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon ISO and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK.
+Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon ISO and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK. After running the installer for the WinPE add-on, the WinPE files will be in the same location as they were in previous installs of the ADK.
 
 You can [download the WinPE ADK add-on here](https://go.microsoft.com/fwlink/?linkid=2022233).
+
+## WPT
+
+With the latest version of Windows Performance Recorder (WPR), WPR Profiles (WPRP) with Custom Events in TraceMergeProperties now work as intended.  Due to this change, if a custom WPRP contains an TraceMergeProperties XML element with an empty set of Custom Events, this will no longer include the default set of Custom Events (ImageIDs, WinSat, etc).
+To keep the same behavior with previous versions, make sure to include the following attribute as part of the TraceMergeProperties element:
+Base=”TraceMerge_Default” 
+
+With the latest version of Windows Performance Analyzer (WPA), .NET 4.5.2 framework is required for certain components when running on Windows 8 installations.  To ensure proper use of WPA, [download the latest version of .NET](https://www.microsoft.com/en-us/download/details.aspx?id=48130).
+
 
 ## What's new in the Windows ADK for Windows 10, version 1803
 
