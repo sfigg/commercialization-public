@@ -3,7 +3,7 @@ author: themar
 Description: Add and Remove Language Packs Offline Using DISM
 ms.assetid: 128cffa3-8c53-41c8-add2-fa10197f36a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Add and Remove Language Packs Offline Using DISM
+title: Add languages to Windows
 ms.author: themar
 ms.date: 10/01/2018
 ms.topic: article
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Add and Remove Languages
+# Add languages to Windows
 
 > [!note]
 > If you're looking to add a language to your personal PC, you can use the Settings app. Go to **Settings** > **Time & Language** > **Language** and choose an additional language to install.
