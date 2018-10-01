@@ -154,7 +154,7 @@
 #### [Push-button reset](desktop/push-button-reset-overview.md)
 ##### [How push-button reset features work](desktop/how-push-button-reset-features-work.md)
 ##### [Recovery components](desktop/recovery-strategy-for-common-customizations.md)
-##### [Deploy push-button reset features](desktop/deploy-push-button-reset-features.md))
+##### [Deploy push-button reset features](desktop/deploy-push-button-reset-features.md)
 ##### [Deploy push-button reset features using auto-apply folders](desktop/deploy-pbr-features-using-auto-apply.md)
 ##### [Add a script to push-button reset features](desktop/add-a-script-to-push-button-reset-features.md)
 ##### [Bare metal reset/recovery: create recovery media while deploying new devices](desktop/create-media-to-run-push-button-reset-features-s14.md)
