@@ -5,7 +5,7 @@ ms.assetid: 71651630-2e26-4174-8161-8f83b8ae4bc3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Drivers to an Offline Windows Image
 ms.author: themar
-ms.date: 04/16/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -38,7 +38,7 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 1.  Mount a Windows image. For example:
 
     ```
-    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows Drive" /MountDir:C:\test\offline
+    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /MountDir:C:\test\offline
     ```
     See [Mount and modify a Windows image using DISM](mount-and-modify-a-windows-image-using-dism.md) for more info.
 

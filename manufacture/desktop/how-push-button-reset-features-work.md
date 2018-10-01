@@ -5,7 +5,7 @@ ms.assetid: 86c93069-916c-4c94-8ba8-2fbf0d792a36
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How push-button reset features work'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,18 +16,15 @@ ms.technology: windows-oem
 
 ## <span id="Restoring_the_operating_system_and_customizations"></span><span id="restoring_the_operating_system_and_customizations"></span><span id="RESTORING_THE_OPERATING_SYSTEM_AND_CUSTOMIZATIONS"></span>Restoring the operating system and customizations
 
-
-This section discusses the mechanisms Push-button reset features use to restore software on the PC.
+This section discusses the mechanisms Push-button reset uses to restore software on the PC.
 
 ### <span id="Restoring_Windows"></span><span id="restoring_windows"></span><span id="RESTORING_WINDOWS"></span>Restoring Windows
 
-Push-button reset features restore Windows 10 by constructing a new copy of the OS using runtime system files located in the Windows Component Store (C:\\Windows\\WinSxS). This allows recovery to be possible even without a separate recovery image containing a backup copy of all system files.
+Push-button reset restores Windows 10 by constructing a new copy of the OS using runtime system files located in the Windows Component Store (C:\\Windows\\WinSxS). This allows recovery to be possible even without a separate recovery image containing a backup copy of all system files.
 
-In addition, push-button reset features restore Windows to an updated state rather than to the factory-preinstalled state. Specifically, the latest release or major update installed on the PC (such as Windows 10, version 1511) will be restored, while other updates installed after that are discarded.
+In addition, Push-button reset restores Windows to an updated state rather than to the factory-preinstalled state. All updates installed on the PC (such as Windows 10, version 1809) will be restored.
 
 This approach provides a balance between user experience in terms of the number of updates which need to be reinstalled and the features’ effectiveness in addressing update problems. It also allows Windows to remove older system files which are no longer needed for runtime use or for recovery, freeing up disk space.
-
-By default, non-major updates are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery.
 
 ### <span id="Restoring_language_packs"></span><span id="restoring_language_packs"></span><span id="RESTORING_LANGUAGE_PACKS"></span>Restoring language packs
 
@@ -46,18 +43,24 @@ Device applets which are installed outside of the driver INF package are not res
 
 ### <span id="Restoring_previously_installed_Windows_apps"></span><span id="restoring_previously_installed_windows_apps"></span><span id="RESTORING_PREVIOUSLY_INSTALLED_WINDOWS_APPS"></span>Restoring previously installed Windows apps
 
-Preinstalled Windows apps are always restored to their factory version and state. Instead of restoring them from a recovery image, a copy of the Windows apps is automatically backed up when they are provisioned during image customization and manufacturing, and the backups are restored when Push-button reset features are used.
+Starting with Windows 10, version 1809, preinstalled Windows apps that have been updated after their initial installation get restored to their updated state. Prior to Windows 10, version 1809, preinstalled Windows apps get restored to their factory version and state. Instead of restoring them from a recovery image, a copy of the Windows apps is automatically backed up when they are provisioned during image customization and manufacturing, and the backups are restored when Push-button reset features are used.
 
 ### <span id="Restoring_other_customizations"></span><span id="restoring_other_customizations"></span><span id="RESTORING_OTHER_CUSTOMIZATIONS"></span>Restoring other customizations
 
 By default, Push-button reset features restore only OS files, drivers, and preinstalled Universal Windows apps. Different mechanisms are used to restore other customizations, such as settings and Windows desktop applications.
 
 -   **Windows desktop applications** can be captured using the User State Migration Tool’s (USMT) ScanState utility into a reference device data image within a provisioning package. Push-button reset features look for and automatically restore this provisioning package from a well-known location.
--   **Settings common to all editions of Windows 10** (including Windows 10 Mobile) can be set using the Windows Imaging and Configuration Designer (ICD) tool and stored in provisioning packages. Push-button reset features look for and automatically restore these provisioning packages from a well-known location. Alternatively, these settings can be restored using a combination of an unattend file and extensibility scripts for Push-button reset.
--   **Settings specific to editions of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)** can be restored using a combination of an unattend file and extensibility scripts for Push-button reset. Examples of these settings include manufacturer support information, manufacturer logos and Start Menu layout.
+-   **Settings specific to editions of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)** 
 
-**Note**  
-Many of the settings customizations allowed or required by the OPD are specific to Windows 10 for desktop, and cannot be stored in provisioning packages created using Windows ICD. For Windows 10 RTM, the use of an unattend file and Push-button reset extensibility scripts is recommended for restoring all settings customizations during recovery. The use of provisioning packages created using Windows ICD is completely optional.
+    - Can be restored using a combination of an unattend file and extensibility points for Push-button reset. Examples of these settings include manufacturer support information, manufacturer logos and Start Menu layout.
+    
+    or
+
+    - Starting with Windows 10, version 1809, use Auto-apply folders to automatically restore these settings with an unattend file. If you have both configured, PBR will only use the extensibility points and ignore the Auto-apply folders.
+
+
+> [!Note]
+> Many of the settings customizations allowed or required by the OPD are specific to Windows 10 for desktop, and cannot be stored in provisioning packages created using Windows ICD. When using the legacy mechanism, use unattend and Push-button reset extensibility points for restoring all settings customizations during recovery. The use of provisioning packages created using Windows ICD is completely optional.
 
  
 
@@ -65,6 +68,8 @@ Many of the settings customizations allowed or required by the OPD are specific 
 
 
 **The Refresh your PC feature can be summarized in the following steps:**
+
+Note that if using Auto-apply folders, you don't need to supply scripts for any of the extensibility points. If you have extensibility points, they will take precedence over the Auto-apply folders, and Auto-apply folders won't be processed.
 
 1.  PC boots into the Windows Recovery Environment (Windows RE).
 2.  **EXTENSIBILITY POINT A**: OEMs can optionally add a script here. (See [Extensibility points](#extensibility-points) later in this topic).
@@ -128,16 +133,18 @@ The **Refresh your PC** feature bypasses the following locations and preserves t
 The Refresh your PC feature handles application types differently in order to ensure that the PC can be restored to a reliable state. Applications are handled as follows:
 
 -   User-acquired Windows apps from the Microsoft Store are not preserved. Users will need to reinstall them from the Microsoft Store. This is a change from Windows 8/8.1.
--   Preinstalled Windows apps are restored to their factory version and state. Updates to these apps will be downloaded and reapplied automatically when internet connectivity is available.
+-   Starting with Windows 10, version 1809, preinstalled Windows apps that have been updated since initial installation will be restored to an updated state. Prior to Windows 10, version 1809, preinstalled Windows apps are restored to their factory version and state. Updates to these apps will be downloaded and reapplied automatically when internet connectivity is available.
 -   User-acquired Windows desktop applications are not preserved. Users will need to reinstall them manually.
 -   Preinstalled Windows desktop applications captured in the customizations provisioning package will be restored to their factory condition, even if users have previously uninstalled them.
 
-The **Refresh your PC** feature does not preserve user-installed Windows desktop applications by default, and locations that are commonly used for storing application settings (\\AppData and \\ProgramData) are deleted. Manufacturers can leverage the push-button reset extensibility points to save and later restore specific application settings and data, if necessary.
+The **Refresh your PC** feature does not preserve user-installed Windows desktop applications by default, and locations that are commonly used for storing application settings (\\AppData and \\ProgramData) are deleted. Manufacturers can leverage Auto-apply folders or the push-button reset extensibility points to save and later restore specific application settings and data, if necessary.
 
 ## <span id="Reset_your_PC"></span><span id="reset_your_pc"></span><span id="RESET_YOUR_PC"></span>Reset your PC
 
 
 **The Reset your PC feature can be summarized in the following steps:**
+
+Note that if using Auto-apply folders, you don't need to supply scripts for any of the extensibility points. If you have extensibility points, they will take precedence over the Auto-apply folders, and Auto-apply folders won't be processed.
 
 1.  PC boots into the Windows Recovery Environment (Windows RE).
 2.  User accounts, data and installed Windows apps and Windows desktop applications are removed from the OS volume.
@@ -251,7 +258,7 @@ Manufacturer-created media must contain the following:
 
 ### <span id="extensibility-points"></span><span id="EXTENSIBILITY-POINTS"></span>Extensibility points for push-button reset features
 
-Push-button reset provides extensibility points where manufacturers can insert custom operations when a user runs the **Refresh your PC** and **Reset your PC** features.
+Push-button reset provides extensibility points where manufacturers can insert custom operations when a user runs the **Refresh your PC** and **Reset your PC** features. If you use Auto-apply folders, you shouldn't configure extensibility points. If you have both Auto-apply folders and extensibilty scripts, PBR won't use the Auto-apply folders.
 
 See the sections above to see where the custom operations that can be executed for these features appear.
 

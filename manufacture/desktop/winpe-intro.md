@@ -5,7 +5,7 @@ ms.assetid: f20056af-adab-4d7a-83a0-f44c5a91e0d2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows PE (WinPE)'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -28,8 +28,7 @@ Windows PE (WinPE) for Windows 10 is a small operating system used to install, 
 
 ## <span id="Where_do_I_download_it_"></span><span id="where_do_i_download_it_"></span><span id="WHERE_DO_I_DOWNLOAD_IT_"></span>Where do I download it?
 
-
-To get Windows PE, use the installer built into the Windows Assessment and Deployment Kit (Windows ADK). For more info, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md), [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md), or see the [Demo: Installing Windows PE on a USB Drive](http://go.microsoft.com/fwlink/?LinkId=279081).
+Starting with Windows 10, version 1809, WinPE is an [add-on to the Windows Assessment and Deployment Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2022233). Previously it was included in the ADK. To get Windows PE, install the ADK, and then install the WinPE addon. For more info, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md), [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md), or see the [Demo: Installing Windows PE on a USB Drive](http://go.microsoft.com/fwlink/?LinkId=279081).
 
 ## <span id="BKMK_OVER"></span><span id="bkmk_over"></span>Support for many Windows features
 
@@ -80,7 +79,8 @@ Windows PE does not support any of the following:
 -   Running 64-bit apps on the 32-bit version of Windows PE.
 -   Adding bundled app packages through DISM (.appxbundle packages).
 
-**Note**  In general, use the latest version of WinPE to deploy Windows. If you are using customized WinPE for Windows 10 images, you may prefer to continue using your existing Windows PE image and run the latest version of DISM from a network location. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).
+> [!tip] 
+> In general, use the latest version of WinPE to deploy Windows. If you are using customized WinPE for Windows 10 images, you may prefer to continue using your existing Windows PE image and run the latest version of DISM from a network location. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).
 
  
 

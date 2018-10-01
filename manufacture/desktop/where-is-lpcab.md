@@ -6,6 +6,7 @@ title: Where is lp.cab?
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/where-is-lpcab
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
