@@ -20,7 +20,7 @@ Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE)
 
 You can [download the WinPE ADK add-on here](https://go.microsoft.com/fwlink/?linkid=2022233).
 
-## WPT
+### WPT
 
 With the latest version of Windows Performance Recorder (WPR), WPR Profiles (WPRP) with Custom Events in TraceMergeProperties now work as intended.  Due to this change, if a custom WPRP contains an TraceMergeProperties XML element with an empty set of Custom Events, this will no longer include the default set of Custom Events (ImageIDs, WinSat, etc).
 To keep the same behavior with previous versions, make sure to include the following attribute as part of the TraceMergeProperties element:
