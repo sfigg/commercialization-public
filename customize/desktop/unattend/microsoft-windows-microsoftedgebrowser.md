@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 author: kpacquer
 ms.author: kenpacq
-ms.date: 08/02/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,7 +19,7 @@ The `Microsoft-Windows-MicrosoftEdgeBrowser` component specifies settings for th
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md)    | Contains settings to add predefined Favorite items to the Favorites bar.     |
+| [FavoriteBarItems](microsoft-windows-microsoftedgebrowser-favoritebaritems.md)    | These settings are not supported.     |
 
 ## Applies to
 

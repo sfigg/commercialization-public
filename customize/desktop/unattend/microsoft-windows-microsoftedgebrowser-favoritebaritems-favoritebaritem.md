@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kpacquer
-ms.date: 07/09/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows - hardware
 ms.technology: windows - oem
@@ -14,20 +14,16 @@ ms.technology: windows - oem
 
 # FavoriteBarItem
 
-`FavoriteBarItem` contains the settings used to add predefined Favorite items to the Favorite bar.
-
-A Favorite can include web content such as links or feeds.
-
-To add a predefined Favorite bar item in Windows System Image Manager, add the **FavoriteBarItems** component to your answer file. Next, right-click **FavoriteBarItems**, and select **Insert New FavoriteBarItem**.
+These settings are not supported.
 
 ## Values
 
 | Value                   | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md) | Specifies an icon to associate with the Favorite (example: C:\Windows\favlink1.ico).  |
-| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    | Specifies a unique key for the Favorite (example: Favorite1).  |
-| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)  | Specifies a name that appears in the Favorite bar (example: Bing News).  |
-| [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    | Specifies a path to the Favorite (http://... or https://...). |
+| [ItemFavIconFile](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemfaviconfile.md) | This setting is not supported.  |
+| [ItemKey](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemkey.md)    | This setting is not supported. |
+| [ItemName](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemname.md)  | This setting is not supported. |
+| [ItemUrl](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem-itemurl.md)    |  This setting is not supported. |
 
 ## Valid Configuration Passes
 
@@ -40,25 +36,6 @@ specialize
 ## Applies To
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
-
-## XML Example
-
-```XML
-<FavoriteBarItems>
-    <FavoriteBarItem wcm:action="add">
-        <ItemFavIconFile>C:\Windows\favlink1.ico</ItemFavIconFile>
-        <ItemKey>Favorite1</ItemKey>
-        <ItemName>Bing News</ItemName>
-        <ItemUrl>https://bing.com/news</ItemUrl>
-    </FavoriteBarItem>
-    <FavoriteBarItem wcm:action="add">
-        <ItemFavIconFile>C:\Windows\favlink2.ico</ItemFavIconFile>
-        <ItemKey>Favorite2</ItemKey>
-        <ItemName>Bing Maps</ItemName>
-        <ItemUrl>https://www.bing.com/maps</ItemUrl>
-    </FavoriteBarItem>
-</FavoriteBarItems>
-```
 
 ## Related Topics
 

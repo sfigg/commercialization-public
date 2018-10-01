@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.author: kenpacq
 author: kpacquer
-ms.date: 07/09/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows - hardware
 ms.technology: windows - oem
@@ -14,17 +14,7 @@ ms.technology: windows - oem
 
 # ItemFavIconFile
 
-`ItemFavIconFile` specifies the icon to associate with the [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) in the Favorites bar.
-
-## Values
-
-| Value                   | Description                                                |
-|:------------------------|:--------------------------------------------------------------------------------------|
-| _PathAndFileName_ | Specifies the location and the name of the icon to associate with the [FavoriteBarItem](microsoft-windows-microsoftedgebrowser-favoritebaritems-favoritebaritem.md) on the Favorites bar, for example, C:\Windows\favlink2.ico. _PathAndFileName_ is a string. |
-
-## Valid Configuration Passes
-
-specialize
+ This setting is not supported.
 
 ## Parent Hierarchy
 
@@ -34,24 +24,6 @@ specialize
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).
 
-## XML Example
-
-```XML
-<FavoriteBarItems>
-    <FavoriteBarItem wcm:action="add">
-        <ItemFavIconFile>C:\Windows\favlink1.ico</ItemFavIconFile>
-        <ItemKey>Favorite1</ItemKey>
-        <ItemName>Bing News</ItemName>
-        <ItemUrl>https://bing.com/news</ItemUrl>
-    </FavoriteBarItem>
-    <FavoriteBarItem wcm:action="add">
-        <ItemFavIconFile>C:\Windows\favlink2.ico</ItemFavIconFile>
-        <ItemKey>Favorite2</ItemKey>
-        <ItemName>Bing Maps</ItemName>
-        <ItemUrl>https://www.bing.com/maps</ItemUrl>
-    </FavoriteBarItem>
-</FavoriteBarItems>
-```
 
 ## Related Topics
 
