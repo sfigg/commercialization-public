@@ -16,11 +16,15 @@ The Windows Assessment and Deployment Kit (Windows ADK) has the tools you need t
 
 * The Windows Assessment Toolkit and the Windows Performance Toolkit to assess the quality and performance of systems or components.
 * Deployment tools such as WinPE, Sysprep, and other tools that you can use to customize and deploy Windows 10 images.
+* Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon ISO and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK.
 
 > [!div class="nextstepaction"]
-> [Download the Windows ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873065)
+> [Download the Windows ADK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026036)
 
-[What's new in ADK tools for Windows 10, version 1803](what-s-new-in-kits-and-tools.md).
+> [!div class="nextstepaction"]
+> [Download the Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2022233)
+
+[What's new in ADK tools for Windows 10, version 1809](what-s-new-in-kits-and-tools.md).
 
 For Windows 10 IoT Core, also [download the IoT Core Add-Ins](https://github.com/ms-iot/iot-adk-addonkit/).
 
@@ -28,7 +32,8 @@ For Windows 10 IoT Core, also [download the IoT Core Add-Ins](https://github.com
 
 | ADK version and download link             | Description                                           |
 |:------------------------------------------|:------------------------------------------------------|
-| [ADK for Windows 10 Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [See what's new for Windows Insiders for Business](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new).    |
+| [ADK for Windows 10 Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewADK)   | Windows Insiders can download preview versions of the ADK. [See what's new for Windows Insiders for Business](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/wip-4-biz-whats-new).    | [What's new in ADK for Windows 10, version 1803](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1803)
+| [ADK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873065) | 
 | [ADK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859206)  |  [What's new in ADK for Windows 10, version 1709](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1709). <br>For IoT Core for Windows 10, version 1709, also [download the IoT Core Add-Ins v4.4](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v4.4).|
 | [ADK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=845542) | [What's new in ADK for Windows 10, version 1703](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1703). <br>For IoT Core for Windows 10, version 1703, also [download the IoT Core Add-Ins v3.2](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v3.2).|
 | [ADK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526740) | [What's new in ADK for Windows 10, version 1607](what-s-new-in-kits-and-tools.md#whats-new-in-the-windows-adk-for-windows-10-version-1607).  <br>For IoT Core for Windows 10, version 1607, also [download the IoT Core Add-Ins v2.0 (14393_v1)](https://github.com/ms-iot/iot-adk-addonkit/releases/tag/v2.0).|

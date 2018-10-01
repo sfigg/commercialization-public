@@ -12,6 +12,14 @@ ms.technology: windows-oem
 ---
 # What's new in ADK kits and tools
 
+## What's new in the Windows ADK for Windows 10, version 1809
+
+### Windows PE
+
+Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon ISO and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK.
+
+You can [download the WinPE ADK add-on here](https://go.microsoft.com/fwlink/?linkid=2022233).
+
 ## What's new in the Windows ADK for Windows 10, version 1803
 
 ### PowerView
