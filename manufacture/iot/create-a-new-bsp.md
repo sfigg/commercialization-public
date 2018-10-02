@@ -2,7 +2,7 @@
 author: kpacquer
 Description: 'Creating your own board support package (BSP)'
 title: 'Lab 2: Creating your own board support package (BSP)'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

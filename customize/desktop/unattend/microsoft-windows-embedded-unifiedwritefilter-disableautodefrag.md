@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 5653B97B-D913-4EEE-B63B-F724761CF04F
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author:themar-msft
+ms.author:themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

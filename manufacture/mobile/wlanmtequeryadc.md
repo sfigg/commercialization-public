@@ -4,7 +4,7 @@ Description: WlanMTEQueryADC
 ms.assetid: 59b02678-f928-4b9e-837b-9c148aaedcfc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryADC
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
