@@ -65,8 +65,8 @@ This menu enables your users to perform these actions:
 -   Access the **Firmware** menu (UEFI only).
 -   Choose which operating system to boot, if multiple operating systems are installed on the PC.
 
-**Note**  
-You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md).
+> [!Note]
+> You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md).
 
  
 
