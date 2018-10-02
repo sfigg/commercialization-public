@@ -18,7 +18,7 @@ The following sample script creates a version of Windows PE with Windows PowerSh
 
 **Prepare a local copy of the Windows PE files**
 
-1.  Install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkID=526803), adding the **Deployment Tools** and **Windows PE** features.
+1.  Install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkID=526803), adding the **Deployment Tools** and **Windows Preinstallation EnvironmentE** features. If you're using installing the ADK for Windows 10, version 1809, [Windows PE is a separate add-on](https://go.microsoft.com/fwlink/?linkid=2022233) that you'll need to download and install after you install the ADK. Previous versions of the ADK include the **Windows Preinstallation Environment** in the ADK installer.
 
 2.  Start the **Deployment and Imaging Tools Environment** as an **administrator**.
 
