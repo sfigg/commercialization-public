@@ -33,7 +33,7 @@ This topic also gives optional steps to optimize the Windows RE image after upda
 
 To complete this walkthrough, you need the following:
 
--   A technician computer with the Windows Assessment and Deployment Kit (ADK) installed.
+-   A technician computer with the Windows Assessment and Deployment Kit (ADK) and [WinPE addon](https://go.microsoft.com/fwlink/?linkid=2022233) installed.
 -   The Windows image (install.wim). This can be from the Windows installation media or from a reference image.
 
 ## <span id="BKMK_ExtractImage"></span><span id="bkmk_extractimage"></span><span id="BKMK_EXTRACTIMAGE"></span>Step 1: Mount the Windows and Windows RE image
@@ -187,7 +187,7 @@ After adding a language or Windows update package, you can reduce the size of th
 1.  Optimize the image:
 
     ```
-    Dism /Image:c:\mount\winre /Cleanup-Image /StartComponentCleanup /ResetBase
+    Dism /Image:c:\mount\winre /Cleanup-Image /StartComponentCleanup
     ```
 
 2.  Later, you'll export the image to remove the superseded files.
