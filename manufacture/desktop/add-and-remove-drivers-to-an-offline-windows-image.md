@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: Add and Remove Drivers to an Offline Windows Image
 ms.assetid: 71651630-2e26-4174-8161-8f83b8ae4bc3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Drivers to an Offline Windows Image
-ms.author: themar
+ms.author:kenpacq
 ms.date: 04/16/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -22,6 +22,12 @@ When you use DISM to install a device driver to an offline image, the device dri
 > To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
 
 To learn how to add a driver on a running Windows PC, see [Add a driver online in audit mode](add-a-driver-online-in-audit-mode.md) or [Install a plug and play device](http://go.microsoft.com/fwlink/?LinkId=139151). To learn how to add a driver to a PC running WinPE, see [Drvload command line options](drvload-command-line-options.md).
+
+## Driver types
+
+-  **.inf-style drivers**: Many drivers include an information file (with an .inf extension) to help install the driver. These can be installed using tools described in this topic.    
+-  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. To learn how to add these, see [Add a driver online in Audit Mode](add-a-driver-online-in-audit-mode.md)
+-  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image, and in the Windows recovery (WinRE) image. 
 
 ## Add drivers to an offline Windows image
 

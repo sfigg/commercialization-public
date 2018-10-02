@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: Modify a Windows Image Using DISM
 ms.assetid: f48b4681-bc59-4eb1-89c9-0163594467f7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Modify a Windows Image Using DISM
-ms.author: themar
+ms.author:kenpacq
 ms.date: 04/24/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -17,7 +17,9 @@ You can make changes to offline mounted or applied Windows images without bootin
 
 **Mounted** images are WIM, VHD, or FFU files that have their contents mapped to a folder. Changes to mounted images are made from either a Windows 10 technician PC, or from WinPE. You run run DISM commands against a mounted image, as well as run common file operations such as copying, pasting, and renaming on a mounted image. To save changes you make to the image, use the `/commit` option when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
 
-**Applied** images are WIM, VHD, or FFU image files that have been applied to a specified partition. Offline changes to an applied image are usually performed from WinPE. To make changes to an applied image, use `DISM /image:`. See [Applying an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions#span-idapplyingtheimagespanspan-idapplyingtheimagespanspan-idapplyingtheimagespanapplying-the-image) to learn how to apply an image.
+**Applied** images are WIM, VHD, or FFU image files that have been applied to a specified partition. Offline changes to an applied image are usually performed from WinPE. To make changes to an applied image, use `DISM /image:`.
+
+When you apply an image that you're going to recapture, apply the image to the root folder of a drive. If you recapture an image that wasn't applied to the root of a drive, the image will inherit the parent folder's security descriptors and might not be the same as what would be captured if the image was applied to the root of a drive.  See [Applying an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions#span-idapplyingtheimagespanspan-idapplyingtheimagespanspan-idapplyingtheimagespanapplying-the-image) to learn how to apply an image.
 
 You can mount and modify multiple images on a single computer. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
 

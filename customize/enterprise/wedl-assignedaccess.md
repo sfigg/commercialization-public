@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2be8d294-db13-4494-bd5f-ba97ed89528e
-author: alhopper-msft
-ms.author: alhopper
+author:themar-msft
+ms.author:themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -211,6 +211,4 @@ if ($AssignedAccessConfig) {
 | Windows 10 Enterprise | Yes       |
 | Windows 10 Education  | Yes       |
 
-## Related topics
 
-[Assigned access](assigned-access.md)

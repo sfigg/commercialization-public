@@ -38,10 +38,11 @@ In the meantime, for Windows 10 build 1803, continue to preload RDX 2.0 on your 
 
 Key updates to RDX 3.0 will include:
 
-* **Improved: The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
-* **New: Digital fact tag (DFT)** adds a pop-up showing customers the specs and price of the device for easy comparison on the retail sales floor.
-* **New: On-device admin (ODA) app** lets retailers update info on the digital fact tag locally (helpful for non-networked devices).
-* **New: Retail Demo provisioning extension API** lets OEMs and retailers manage and publish new demo content, helping to publish seasonal content on networked demo devices even faster. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you can review and publish changes through at your own schedule.
+* **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
+* **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
+* **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
+* **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
+
 
 ## Attract loop
 
@@ -60,7 +61,7 @@ Limit the video message to 1 or 2 KSPs. The loop is designed to get shoppers to 
 
 Avoid text in your video. Videos without text are easier to scale across multiple markets and locales since there are no localization costs. In addition, shoppers typically view only part of the video, so your text might not be viewed in its entirety.
 
-We strongly recommend that you use the attract loop to show how your brand, apps, services, and the devices themselves are differentiated from your competitors.
+We strongly recommend that you use the attract loop to show how your brand, apps, services, and the devices themselves are differentiated from your competitors. 
 
 ### Requirements
 
@@ -155,10 +156,10 @@ Below are the media and copy requirements for the Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-* Jump to another page within group
-* Launch an app
-* Launch the default browser and go to a URL (online devices only)
-* Open media (image, video, or document)
+1.	Jump to another page within group
+1.	Launch an app
+1.	Launch the default browser and go to a URL (online devices only)
+1.	Open media (image, video, or document)
 
 Here is an example of a Hero template:
 
@@ -183,10 +184,10 @@ Below are the media and copy requirements for the Immersive Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-* Jump to another page within group
-* Launch an app
-* Launch the default browser and go to a URL (online devices only)
-* Open media (image, video, or document)
+1.	Jump to another page within group
+1.	Launch an app
+1.	Launch the default browser and go to a URL (online devices only)
+1.	Open media (image, video, or document)
 
 Below is an example of the Immersive Hero template.
 
@@ -216,10 +217,10 @@ Below are the media and copy requirements for the Mosaic template:
 
 There are 4 actions that can be set for a CTA button:
 
-* Jump to another page within group
-* Launch an app
-* Launch the default browser and go to a URL (online devices only)
-* Open media (image, video, or document)
+1. Jump to another page within group
+2. Launch an app
+3. Launch the default browser and go to a URL
+4. Open media (image, video, or document) 
 
 > [!NOTE] 
 > Keep in mind that if you are building content for offline devices, CTA buttons should not open URLs as this will create a poor user experience.
@@ -289,13 +290,11 @@ Many shoppers use the library content (photos, videos, documents) to fully explo
 
 ### Apps
 
-We strongly recommend you ensure that the apps included on the device take advantage of the retail demo mode. Not only will your app look amazing for a retail customer, you may even get increased app awareness due to the discovery of your app that leads to post-purchase install.  We recommend the following guidelines when developing a retail demo mode for your app:
+Include retail demo features in your Windows apps so customers who try out your PCs and devices on the sales floor can jump right in. 
 
-* **Leverage the RetailInfo API**: When a device is in retail demo mode, the apps installed on the device can be aware of the device’s retail mode state so the app experience can also be in a retail mode state. This is done using the **IsDemoModeEnabled** method of the **RetailInfo** API. It is up to the app developer to take advantage of the opportunity to create and show off a retail mode state for the app. 
+We strongly recommend you ensure that the apps included on the device take advantage of the retail demo mode. Not only will your app look amazing for a retail customer, you may even get increased app awareness due to the discovery of your app that leads to post-purchase install.
 
-  To allow the app to build an experience that is more catered to the device, the app can also query for a collection of retail device properties. Both the **IsDemoModeEnabled** and **KnownRetailInfo** properties are described below. 
-
-  For more information about the RetailInfo API, see the [Windows.System.Profile namespace](http://go.microsoft.com/fwlink/?LinkId=528544).
+We recommend the following guidelines when developing retail demo features for your app:
 
 * **Show off, but be focused**: Use the retail mode version of your app as an opportunity to showcase why it rocks and is a reason to buy a Windows device. Put your best foot forward. Keep the story simple: elevator pitch to land your app’s value prop.  
 
@@ -303,173 +302,8 @@ We strongly recommend you ensure that the apps included on the device take advan
 
 * **Minimize error and pop-up dialogs**: Error pop-ups invoke a negative experience with the app, Windows and the shopping experience. Minimize pop-ups as much as possible.
 
-For detailed guidance and requirements, see [Create an RDX app](https://docs.microsoft.com/windows/uwp/monetize/retail-demo-experience). 
+To learn more, see [Add retail demo (RDX) features to your app](https://docs.microsoft.com/windows/uwp/monetize/retail-demo-experience).
 
-### RetailInfo API
-
-**IsDemoModeEnabled property**
-
-**IsDemoModeEnabled** indicates whether retail mode is active on the device where the app is running. If **IsDemoModeEnabled** is true, launch the retail mode version of the app, and optionally query for the device’s **KnownRetailInfo** properties. 
-
-**C#**
-``` csharp
-using Windows.Storage;
-
-StorageFolder folder = ApplicationData.Current.LocalFolder;
-
-if (Windows.System.Profile.RetailInfo.IsDemoModeEnabled) 
-{
-    // Use the demo specific directory
-    folder = await folder.GetFolderAsync(“demo”);
-}
-
-StorageFile file = await folder.GetFileAsync(“hello.txt”);
-// Now read from file
-```
-
-**C++**
-``` cpp
-using namespace Windows::Storage;
-
-StorageFolder^ localFolder = ApplicationData::Current->LocalFolder;
-
-if (Windows::System::Profile::RetailInfo::IsDemoModeEnabled) 
-{
-    // Use the demo specific directory
-    create_task(localFolder->GetFolderAsync(“demo”).then([this](StorageFolder^ demoFolder)
-    {
-        return demoFolder->GetFileAsync(“hello.txt”);
-    }).then([this](task<StorageFile^> fileTask)
-    {
-        StorageFile^ file = fileTask.get();
-    });
-    // Do something with file
-}
-else
-{
-    create_task(localFolder->GetFileAsync(“hello.txt”).then([this](StorageFile^ file)
-    {
-        // Do something with file
-    });
-}
-```
-
-**JavaScript**
-``` javascript
-if (Windows.System.Profile.retailInfo.isDemoModeEnabled) {
-    console.log(“Retail mode is enabled.”);
-} else {
-    Console.log(“Retail mode is not enabled.”);
-}
-```
-
-Application behavior is dependent on the device being in retail demo mode.
-
-**KnownRetailInfo property**
-
-Query the device for its retail mode properties.
-
-**C#**
-
-```csharp
-using Windows.UI.Xaml.Controls;
-using Windows.System.Profile
-
-TextBlock priceText = new TextBlock();
-priceText.Text = RetailInfo.Properties[KnownRetailInfo.Price];
-// Assume infoPanel is a StackPanel declared in XAML
-this.infoPanel.Children.Add(priceText);
-```
-
-**C++**
-
-```cpp
-using namespace Windows::UI::Xaml::Controls;
-using namespace Windows::System::Profile;
-
-TextBlock ^manufacturerText = ref new TextBlock();
-manufacturerText.set_Text(RetailInfo::Properties[KnownRetailInfoProperties::Price]);
-// Assume infoPanel is a StackPanel declared in XAML
-this->infoPanel->Children->Add(manufacturerText);
-```
-
-**JavaScript**
-
-```javascript
-var pro = Windows.System.Profile;
-console.log(pro.retailInfo.properties[pro.KnownRetailInfoProperties.price);
-```
-
-### Retail Demo Mode IDL
-
-```js
-//  Copyright (c) Microsoft Corporation. All rights reserved.
-//
-//  WindowsRuntimeAPISet
-
-import "oaidl.idl";
-import "inspectable.idl";
-import "Windows.Foundation.idl";
-#include <sdkddkver.h>
-
-namespace Windows.System.Profile
-{
-    runtimeclass RetailInfo;
-    runtimeclass KnownRetailInfoProperties;
-
-    [version(NTDDI_WINTHRESHOLD), uuid(0712C6B8-8B92-4F2A-8499-031F1798D6EF), exclusiveto(RetailInfo)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    interface IRetailInfoStatics : IInspectable
-    {
-        [propget] HRESULT IsDemoModeEnabled([out, retval] boolean *value);
-        [propget] HRESULT Properties([out, retval, hasvariant] Windows.Foundation.Collections.IMapView<HSTRING, IInspectable *> **value);
-    }
-
-    [version(NTDDI_WINTHRESHOLD), uuid(50BA207B-33C4-4A5C-AD8A-CD39F0A9C2E9), exclusiveto(KnownRetailInfoProperties)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    interface IKnownRetailInfoPropertiesStatics : IInspectable
-    {
-        [propget] HRESULT RetailAccessCode([out, retval] HSTRING *value);
-        [propget] HRESULT ManufacturerName([out, retval] HSTRING *value);
-        [propget] HRESULT ModelName([out, retval] HSTRING *value);
-        [propget] HRESULT DisplayModelName([out, retval] HSTRING *value);
-        [propget] HRESULT Price([out, retval] HSTRING *value);
-        [propget] HRESULT IsFeatured([out, retval] HSTRING *value);
-        [propget] HRESULT FormFactor([out, retval] HSTRING *value);
-        [propget] HRESULT ScreenSize([out, retval] HSTRING *value);
-        [propget] HRESULT Weight([out, retval] HSTRING *value);
-        [propget] HRESULT DisplayDescription([out, retval] HSTRING *value);
-        [propget] HRESULT BatteryLifeDescription([out, retval] HSTRING *value);
-        [propget] HRESULT ProcessorDescription([out, retval] HSTRING *value);
-        [propget] HRESULT Memory([out, retval] HSTRING *value);
-        [propget] HRESULT StorageDescription([out, retval] HSTRING *value);
-        [propget] HRESULT GraphicsDescription([out, retval] HSTRING *value);
-        [propget] HRESULT FrontCameraDescription([out, retval] HSTRING *value);
-        [propget] HRESULT RearCameraDescription([out, retval] HSTRING *value);
-        [propget] HRESULT HasNfc([out, retval] HSTRING *value);
-        [propget] HRESULT HasSdSlot([out, retval] HSTRING *value);
-        [propget] HRESULT HasOpticalDrive([out, retval] HSTRING *value);
-        [propget] HRESULT IsOfficeInstalled([out, retval] HSTRING *value);
-        [propget] HRESULT WindowsVersion([out, retval] HSTRING *value);
-    }
-
-    [version(NTDDI_WINTHRESHOLD), static(IRetailInfoStatics, NTDDI_WINTHRESHOLD)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone), static(IRetailInfoStatics, NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    [threading(both)]
-    [marshaling_behavior(agile)]
-    runtimeclass RetailInfo
-    {
-    }
-
-    [version(NTDDI_WINTHRESHOLD), static(IKnownRetailInfoPropertiesStatics, NTDDI_WINTHRESHOLD)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone), static(IKnownRetailInfoPropertiesStatics, NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    [threading(both)]
-    [marshaling_behavior(agile)]
-    runtimeclass KnownRetailInfoProperties
-    {
-    }
-}
-```
 
 ## Add retail demo mode, including language packs, to your images
 

@@ -1,13 +1,14 @@
 ---
-author: themar
+author:kpacquer
 Description: 'Lab 13: Shrink your image size'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 13: Shrink your image size'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/compact-os
 ---
 
 # Lab 13: Shrink your image size

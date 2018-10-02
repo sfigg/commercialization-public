@@ -1,15 +1,16 @@
 ---
-author: themar
-Description: 'Lab 12: Update the recovery image'
+author:kpacquer
+Description: 'Update a recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 12: Update the recovery image'
-ms.author: themar
+title: 'Update a recovery image'
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-push-button-reset-features
 ---
-# Lab 12: Update the recovery image
+# Update a recovery image
 
 If the system can't boot to the Windows image, it will fail over to the Windows Recovery Environment (WinRE). WinRE can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (WinPE), and to make it work for your customers, you can add drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. 
 

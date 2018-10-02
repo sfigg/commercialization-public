@@ -3,8 +3,8 @@ title: What's new in the Windows ADK and ADK tools
 description: What's new in Windows ADK and ADK tools
 Search.SourceType: Video
 ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
-author: alhopper-msft
-ms.author: alhopper
+author:dawnwood
+ms.author:dawnwood
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -128,7 +128,7 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
 
-## What’s new in the Windows ADK, version 1511
+## What’s new in the Windows ADK for Windows 10, version 1511
 
 The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/assessments/index), the [Windows Performance Toolkit](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/index), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
 

@@ -1,15 +1,17 @@
 ---
-author: themar
+author:kpacquer
 Description: 'Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-desktop-apps-with-spps-sxs
 ---
+
 # Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)
 
 Install Windows desktop applications and system settings by capturing them into siloed provisioning packages (SPPs).

@@ -1,9 +1,9 @@
 ---
-author: themar
+author:kpacquer
 Description: Learn how to localize a Windows installation
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Localize
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,14 +1,15 @@
 ---
-author: themar
+author:kpacquer
 Description: Get the tools needed to customize Windows
 ms.assetid: a52b4efe-ead0-4319-ae19-799d4e9d9e7b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Get the tools needed to customize Windows
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions-get-tools
 ---
 
 # Get the tools needed to customize Windows

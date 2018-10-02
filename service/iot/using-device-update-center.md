@@ -1,9 +1,9 @@
 ---
-author: pabab
+author: kpacquer
 Description: 'Device Update Center User Guide'
 MSHAttr: 'PreferredLib:/library'
 title: 'Device Update Center User Guide'
-ms.author: pabab
+ms.author: kenpacq
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -22,11 +22,11 @@ Device Update Center portal provides OEMs a way to:
 
 ### Sign up 
 
-1. Create a [Windows Harware Dev Center account](http://aka.ms/ducregister) to access the Device Update Center(DUC). You will need:
+1. Create a [Windows Hardware Dev Center account](http://aka.ms/ducregister) to access the Device Update Center(DUC). You will need:
 
    - **An Extended Validation (EV) code signing certificate**: Used to validate the update cab file submitted for updates
    - **An Azure Active Directory (AAD) account with administrator rights**: Used to sign legal agreements
-   
+
    See [Register for the Hardware Program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program) for the detailed instructions on the registration process. 
 
 2. Sign up for [Windows 10 IoT Core Services](http://aka.ms/iotcoreservices)
@@ -37,7 +37,6 @@ Device Update Center portal provides OEMs a way to:
     - **Shipping Label Owner** role for update flighting 
   
    See [Managing User Roles](https://docs.microsoft.com/windows-hardware/drivers/dashboard/managing-user-roles) for detailed instructions.
-
 
 ### Install the tools
 
@@ -109,9 +108,9 @@ Device Update Center portal provides OEMs a way to:
    a. Build the packages: `buildpkg all`
 
    b. Build the image: `buildimage <productname> <retail/test>`
-      
+
       This gives you the base image with the OCP version 10.0.0.0.
-   
+
    c. Optional: add a recovery image: `buildrecovery <productname> <retail/test>`
 
 4. Validate this image on the device.
@@ -141,7 +140,7 @@ So far, we have created an updateable image which can be used to manufacture and
    b. Build the image: `buildimage <productname> <retail/test>`
 
       This gives you the base image with the OCP version a.b.c.d
-   
+
    c. Optional: add a recovery image: `buildrecovery <productname> <retail/test>`
 
    d. Validate this image on the device to make sure the device boots with all updates included.
@@ -151,7 +150,6 @@ So far, we have created an updateable image which can be used to manufacture and
    `<productname>_OCP_<version>.cab` will be created in the `<destdir>\<version>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information.
 
    - If you are using different code signing cert for the packages, resign this cab file with the EV cert registered with the portal: `sign.cmd <cert attributes> <productname>_OCP_<version>.cab`
-
 
 ### Publish updates
 

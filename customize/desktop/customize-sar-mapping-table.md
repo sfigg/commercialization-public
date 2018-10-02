@@ -4,8 +4,8 @@ description: Customize and enable a SAR mapping table
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: alhopper-msft
-ms.author: alhopper
+author:themar-msft
+ms.author:themar
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware

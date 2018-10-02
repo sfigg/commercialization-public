@@ -1,33 +1,28 @@
 ---
-author: themar
-Description: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
+author:kpacquer
+Description: 'Answer files (unattend.xml'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
-ms.author: themar
+title: 'Answer files (unattend.xml)'
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="Add_settings"></span>Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)
+# Answer files (unattend.xml)
 
 Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
-To learn about Windows customizations, see the most recent OEM Policy Document (OPD).
+Windows Setup will automatically search for [answer files in certain locations](windows-setup-automation-overview.md#implicit-answer-file-search-order), or you can specify an unattend file to use by using the `/unattend:` option when running Windows Setup (setup.exe).
 
-As an example, we'll add a setting that shows you how to automatically boot to a maintenance mode called audit mode. This mode allows you to perform additional tests, and capture changes. We'll use audit mode in the next few labs.
-
-![diagram of creating a new answer file](images/dep-win8-sxs-createanswerfile.jpg)
 
 ## <span id="overview"></span><span id="OVERVIEW"></span>Windows settings overview
 
-While you can set many Windows settings in audit mode, some settings can only be set by using an answer file or Windows Configuration Designer, such as adding manufacturer’s support information. A full list of answer file settings (also known as Unattend settings) is in the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
+While you can set many Windows settings in audit mode, some settings can only be set by using an answer file or Windows Configuration Designer, such as adding manufacturer’s support information. A full list of answer file settings (also known as Unattend settings) is in the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/index).
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
-
-We'll show you more ways to add settings later in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md#Capture_a_setting).
 
 ## <span id="Unattend_overview"></span>Answer file settings
 
@@ -47,11 +42,12 @@ You can specify which configuration pass to add new settings:
 
 -   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
+> [!Note]  
+> These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
-**Step 1: Create a catalog file**
+### Step 1: Create a catalog file
 
 1.  Start **Windows System Image Manager**.
 
@@ -67,7 +63,7 @@ You can specify which configuration pass to add new settings:
 
     -   Make sure the Windows base-image file **(\\Sources\\Install.wim**) is in a folder that has read-write privileges, such as a USB flash drive or on your hard drive.
 
-**Step 2: Create an answer file**
+### Step 2: Create an answer file
 
 -   Click **File** > **New Answer File**.
 
@@ -75,7 +71,7 @@ You can specify which configuration pass to add new settings:
 
     **Note**   If you open an existing answer file, you might be prompted to associate the answer file with the image. Click **Yes**.
 
-**Step 3: Add new answer file settings**
+### Step 3: Add new answer file settings
 
 1.  Add OEM info:
 
@@ -128,60 +124,7 @@ You can specify which configuration pass to add new settings:
     RequiredUserInput = false
     ```
 
-## <span id="Common_Windows_settings"></span> More common Windows settings: 
-
-*  Activate Windows by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for OA3.0 and Non-OA3.0 keys: 
-
-   `OPK X21-08790 Win Home 10 1607 32 64 English OPK\Print  Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf`.
-
-*  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image.md): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
-
-*  Set the Internet Explorer default search engine: Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown above to add a registry key:
-
-   ```
-   Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.fabrikam.com/search?p={searchTerms}" /f`   
-   Description = Changes the Internet Explorer default browser to Fabrikam Search
-   Order = 3
-   RequiredUserInput = false
-   ```
-
-*  Set the Internet Explorer search scopes: See [Scope](https://msdn.microsoft.com/en-us/library/windows/hardware/dn923228(v=vs.85).aspx)
-
-   Example:
-
-   ```
-   <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <SearchScopes>
-     <Scope wcm:action="add">             
-       <SuggestionsURL>http://api.bing.com/qsml.aspx?query={searchTerms}&amp;src={referrer:source?}&amp;maxwidth={ie:maxWidth}&amp;rowheight={ie:rowHeight}&amp;sectionHeight={ie:sectionHeight}&amp;FORM=IE8SSC&amp;market={Language}</SuggestionsURL>
-       <FaviconURL>http://www.bing.com/favicon.ico</FaviconURL>
-       <ScopeKey>Bing</ScopeKey>
-       <ScopeDefault>true</ScopeDefault>
-       <ScopeDisplayName>Bing</ScopeDisplayName>
-       <ScopeUrl>http://www.bing.com/search?q={searchTerms}&amp;form=&PRNAM1&amp;src=PRNAM1&amp;pc=NMTE</ScopeUrl>
-     </Scope>
-   </SearchScopes>
-   <Home_Page>http://oem17WIN10.msn.com/?pc=NMTE</Home_Page>
-   ``` 
-
-*  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown below. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
-
-   ```
-   Path = `powercfg /h /type reduced`   
-   Description = Saves drive space by reducing hiberfile by 30%.
-   Order = 4
-   RequiredUserInput = false
-   ```
-
-   or
-
-   ```   
-   Path = `powercfg /h /off`   
-   Description = Turns off the hiberfile.
-   Order = 4
-   RequiredUserInput = false
-   ```
-     
+See the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/index) for a full list of configuration options. 
 
 **Step 4: Save the answer file**
 
@@ -190,6 +133,8 @@ You can specify which configuration pass to add new settings:
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
      
 **Step 5: Create a script**
+
+Since we specified a script to run in Step 3, let's create that script now.
 
 -   Copy the following sample script into Notepad, and save it as **D:\\AnswerFiles\\SampleCommand.cmd**.
 
@@ -205,21 +150,11 @@ You can specify which configuration pass to add new settings:
 
 ## <span id="Add_the_answer_file_and_script_to_the_image"></span><span id="add_the_answer_file_and_script_to_the_image"></span><span id="ADD_THE_ANSWER_FILE_AND_SCRIPT_TO_THE_IMAGE"></span>Add the answer file and script to the image
 
-### <span id="Mount_the_image"></span>Mount the image
+### Step 6: Mount an image and add the answer file
 
-**Step 6: Mount the images**
+1. Use DISM to mount a Windows image. To learn how to mount an image, see [Mount and modify a Windows image using DISM](mount-and-modify-a-windows-image-using-dism.md)
 
-Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
-
-1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
-
-2.  Make a backup of the file (`copy "D:\Images\Win10_x64\sources\install.wim" D:\Images\install-backup.wim`)
-
-3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"D:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
-
-### <span id="Add_the_answer_file"></span>Add the answer file
-**Step 7: Add the answer file**
-2.  Copy the answer file into the image into the **\\Windows\\Panther** folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
+2.  Copy the answer file into the image into the **\\Windows\\Panther** folder, and name it unattend.xml. The Panther folder is one of the folders where Windows searches for an answer file. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
 
     ```
     MkDir c:\mount\windows\Windows\Panther
@@ -228,13 +163,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     Copy D:\AnswerFiles\Fabrikam.bmp    C:\mount\windows\Fabrikam\Fabrikam.bmp
     Copy D:\AnswerFiles\SampleCommand.cmd    C:\mount\windows\Fabrikam\SampleCommand.cmd
     ```
-## <span id="Unmount_the_images"></span> Unmount the images
-
-**Step 8: Unmount the images**
-
-1.  Close all applications that might access files from the image.
-
-2.  Commit the changes and unmount the Windows image:
+3. Unmount the image, committing the changes. For example:
 
     ```
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
@@ -244,24 +173,5 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
     This process may take several minutes.
 
-## <span id="Try_it_out"></span>Try it out
+When you [apply your image](apply-images-using-dism.md), Windows will process your unattend file and will configure your settings based on what you specified in the unattend.
 
-**Step 9: Apply the image to a new PC**
-Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
-
-1.  Copy the image file to the storage drive.
-2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
-3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-4.  Apply the image: `D:\Deployment\ApplyImage.bat D:\Images\install.wim`.
-5.  Disconnect the drives, then reboot (`exit`).
-	
-**Step 10: Verify settings and scripts**
-
-If your audit mode setting worked, the PC should boot to audit mode automatically.  When audit mode starts, your script should start automatically.
-
-1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, the SampleCommand.cmd sample script ran correctly.
-
-Leave the PC booted into audit mode to continue to the following lab:
-
-> [!div class="nextstepaction"]
-> [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)
