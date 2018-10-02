@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: 'How push-button reset features work'
 ms.assetid: 86c93069-916c-4c94-8ba8-2fbf0d792a36
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How push-button reset features work'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

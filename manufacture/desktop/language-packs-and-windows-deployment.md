@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: 'Language Packs'
 ms.assetid: 051a9952-c160-4f51-8575-bde6e4868b03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Language Packs'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

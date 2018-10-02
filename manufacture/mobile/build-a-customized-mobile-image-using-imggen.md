@@ -4,7 +4,7 @@ ms.assetid: c29e417c-90a5-4928-b416-aa940efe68ab
 MSHAttr: 'PreferredLib:/library'
 title: Build a mobile image using ImgGen
 author: CelesteDG
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

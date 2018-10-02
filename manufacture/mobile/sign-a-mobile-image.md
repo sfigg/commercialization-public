@@ -4,7 +4,7 @@ ms.assetid: b5f9d31b-7293-4308-a761-c5cc87801e3c
 MSHAttr: 'PreferredLib:/library'
 title: Sign a mobile image
 author: CelesteDG
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
