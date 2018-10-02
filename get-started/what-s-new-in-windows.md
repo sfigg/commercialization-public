@@ -2,8 +2,8 @@
 title: What's new in Windows 10, version 1803
 description: New features for Windows 10, version 1803
 ms.assetid: 1E8F0E54-1E5B-495B-848D-260620C7DF4F
-author:dawnwood
-ms.author:dawnwood
+author: dawnwood
+ms.author: dawnwood
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
