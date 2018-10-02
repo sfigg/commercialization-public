@@ -14,40 +14,42 @@ ms.technology: windows-oem
 
 ## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related Features on Demand reference
 
-Features on Demand are available to add language capabilities to your Windows images. To view available non language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
+When you add a language pack to a Windows image, you also add [Features on Demand](features-on-demand-v2--capabilities.md) to enable additional functionality. To view available non language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
 
-To see how to add Features on Demand to your Windows image, see [Features on Demand](features-on-demand-v2--capabilities.md).
+To see how to add Features on Demand and language packs to your Windows image, see [Add languages to Windows](add-and-remove-language-packs-offline-using-dism.md).
 
 > [!div class="op_single_selector"]
 > - [Languages](#language-features-on-demand)
-> - [Fonts](#span-idfontsspanspan-idfontsspan-font-features-on-demand)
-> - [Additional font packages](#span-idadditionalfontsspanspan-idadditionalfontsspan-additional-fonts-available)
-> - [Region-specific requirements](#span-idregionrequirementsspanspan-idregionrequirementsspan-other-region-specific-requirements)
+> - [Fonts](#fonts)
+> - [Additional font packages](#Additional_fonts)
+> - [Region-specific requirements](#Region_requirements)
 
 
 ### Language Features on Demand
 
-**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.
+**Recommendation:** Add FODs after you add a language pack. Preinstall the Basic, Fonts, Text-to-speech, Optical character recognition (OCR), and speech recognition languages you expect users in the device’s target market to need. Additionally, add the handwriting recognition FODs to devices that ship with a pen.
 
-Language Features on Demand are available in seven types:
+Language Features on Demand are available in six types:
 
-**Note:** Not all Features on Demand are available for every language.
+**Note:** Not all Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx).
 
 
 | Component | Sample package name | Sample capability name  | Description |
-| --------- | -----------|----- | ----------------------- |
-| Basic     | `Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab` | `Language.Basic~~~fr-FR~0.0.1.0`  | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the following components. <br></br><p>**Recommendation:** Preinstall the relevant language capabilities for the languages you expect users in the device’s target market to need.|
-| Fonts     | `Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab` | `Language.Fonts.Thai~~~und-THAI~0.0.1.0` | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br><p>See [font capabilities](#fonts) for available font capabilities. |
-| Optical character recognition | `Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab` | `Language.OCR~~~fr-FR~0.0.1.0` | Basic | Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Only install on devices required to be OCR-capable. Most devices don't need this capability preinstalled.<br></br><p>These have a dependency on the basic component of the same language. |
-| Handwriting recognition | `Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab` | `Language.Handwriting~~~fr-FR~0.0.1.0`   | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen. <br></br><p>These have a dependency on the basic component of the same language.|
-| Text-to-speech | `Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab`| `Language.TextToSpeech~~~fr-FR~0.0.1.0`  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Don't install this capability by default. This FOD installs one language by default, and the user will select and download additional languages as needed.<br></br><p>These have a dependency on the basic component of the same language. |
-| Speech recognition | `Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab` | `Language.Speech~~~fr-FR~0.0.1.0` |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Don't install this capability by default. This FOD installs one language by default, and the user will select and download additional languages as needed.<br></br><p>These have dependencies of the basic and text-to-speech components of the same language. |
+| --------- | -----------         |                   ----- | ----------- |
+| Basic     | Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab | Language.Basic~\~\~fr-FR~0.0.1.0  | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the other language FODs. <br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.|
+| Fonts     | Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab | Language.Fonts.Thai~\~\~und-THAI~0.0.1.0 | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br><p>See [font capabilities](#fonts) for information about available font capabilities. |
+| OCR | Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab | Language.OCR~\~\~fr-FR~0.0.1.0 |  Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic component of the same language. |
+| Handwriting recognition | Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab | Language.Handwriting~\~\~fr-FR~0.0.1.0  | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen. <br></br><p>**Dependencies**: The basic component of the same language.|
+| Text-to-speech | Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab| Language.TextToSpeech~\~\~fr-FR~0.0.1.0  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image. |
+| Speech recognition | Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab | Language.Speech~\~\~fr-FR~0.0.1.0 |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic and text-to-speech components of the same language. |
 
 
 
-### <span id="Fonts"></span><span id="fonts"></span> Font Features on Demand
+### <span id="Fonts"></span><span id="fonts"></span>Font Features on Demand
 
 When adding languages for some regions, you'll need to add Features on Demand that add font support.
+
+Font features on demand provide additional fonts used for particular writing systems and languages. These additional fonts are not required for the Windows to display a language. However, prior to Windows 10, most of these fonts were installed by default on every system, and some were used for user interface display. Customers using particular languages are likely to require the additional fonts related to that language for documents or for user interface strings in applications that run in those languages. The capability names use script identifiers; for example, “Deva” indicates Devanagari script, which is used for Hindi, Konkani and other languages.
 
 **Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language).
 
@@ -90,7 +92,7 @@ When adding languages for some regions, you'll need to add Features on Demand th
 | zh-CN       | Chinese (Simplified)                   | Microsoft-Windows-LanguageFeatures-Fonts-Hans-Package |
 | zh-TW       | Chinese Traditional (Hong Kong, Macau and Taiwan)          | Microsoft-Windows-LanguageFeatures-Fonts-Hant-Package |
 
-### <span id="Additional_fonts"></span><span id="additional_fonts"></span> Additional fonts available:
+### <span id="Additional_fonts"></span><span id="additional_fonts"></span> Additional fonts available
 
 These fonts are optional and not required for any region.
 
@@ -106,8 +108,8 @@ These fonts are optional and not required for any region.
 
 Note that this feature is distributed as a .cab file on the Feature on Demand ISO. Use `DISM /add-package` to add it to your image. See [Add or remove packages offline with DISM](add-or-remove-packages-offline-using-dism.md) for more information.
 
-### List of all language-related features on demand
-[Download the list of all available language FODs](https://download.microsoft.com/download/8/B/5/8B549DF3-6813-4665-A246-276ECCC9F2EE/Windows-10-1803-FOD-to-LP-Mapping-Table.xlsx)
+### List of all language-related Features on Demand
+[Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
 
