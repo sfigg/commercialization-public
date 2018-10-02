@@ -91,6 +91,8 @@ Download the following, and place the files into `C:\temp\lab`.
 
 Download the version of [Windows ADK for Windows 10](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK) that matches the version of Windows 10 you are working with.
 
+If you're using the ADK for Windows 10, version 1809, you'll also have to download and install the [WinPE addon for the ADK](https://go.microsoft.com/fwlink/?linkid=2022233).
+
 ### Drivers
 
 We also discuss how to add hardware drivers and other Windows apps in this guide. If you need to add additional drivers to your image, you'll need to contact your hardware or software manufacturers.
