@@ -26,7 +26,7 @@ Push-button reset is included in Windows 10 for desktop editions (Home, Pro, En
 
 In Windows 10, version 1809, Push-button reset has been updated to include the following change:
 
-- **Auto-apply folders** make Push-button reset customization easier to configure. Placing customizations and their related asset files in predetermined folders ensures they are restored when a device is reset. This method of configuring Push-button reset features can be used instead of the legacy method that used custom scripts and extensibility points.
+- **Auto-apply folders** make Push-button reset customization easier. Placing customizations and their related asset files in predetermined folders ensures they are restored when a device is reset. This method of configuring Push-button reset can be used instead of the legacy method that used custom scripts and extensibility points.
 - **Preinstalled apps get restored to an updated state.** If a preinstalled app has been updated after installation, it will be restored in its updated state.
 
 Previous versions of Windows 10 provided the following improvements to push-button reset:

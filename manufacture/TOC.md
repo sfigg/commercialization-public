@@ -121,7 +121,7 @@
 ### [Localize](desktop/localize-windows.md)
 #### [Languages](desktop/language-packs-and-windows-deployment.md)
 ##### [Available languages for Windows](desktop/available-language-packs-for-windows.md)
-##### [Language and Region Features on Demand](desktop/features-on-demand-language-fod.md)
+##### [Language and region Features on Demand](desktop/features-on-demand-language-fod.md)
 ##### [Add languages to Windows](desktop/add-and-remove-language-packs-offline-using-dism.md)
 #### [International Settings in Windows](desktop/configure-international-settings-in-windows.md)
 ##### [Default Input Profiles (Input Locales) in Windows](desktop/default-input-locales-for-windows-language-packs.md)

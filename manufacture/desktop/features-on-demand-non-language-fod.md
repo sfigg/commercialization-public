@@ -68,7 +68,7 @@ The OpenSSH client Feature on Demand enables the use of OpenSSH on a Windows PC.
 
 ### Quick Assist
 
-Microsoft Quick Assist allows users to share their screen with Microsoft support agents or other trusted people. Note that this FOD is preinstalled, but not available on the FOD ISO.
+Microsoft Quick Assist allows users to share their screen with Microsoft support agents or other trusted people. This FOD is preinstalled, but not available on the FOD ISO.
 
 **Feature**: Microsoft Quick Assist 
 - **Capability name**: App.Support.QuickAssist~~~~0.0.1.0

@@ -16,7 +16,7 @@ ms.technology: windows-oem
 > [!note]
 > If you're looking to add a language to your personal PC, you can use the Settings app. Go to **Settings** > **Time & Language** > **Language** and choose an additional language to install.
 
-All Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md##language-interface-packs-lips), you add it after adding its base language.
+All Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#language-interface-packs-lips), you add it after adding its base language.
 
 In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md#span-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanlanguage-components-in-windows-10
 ), including language packs (.cabs for fully localized languages, .appx for LIP languages), and [Features On Demand](features-on-demand-v2--capabilities.md). 
@@ -35,19 +35,19 @@ To more completely localize your Windows installation, you can also configure th
 ## <span id="AddLangPacktoImage"></span><span id="addlangpacktoimage"></span><span id="ADDLANGPACKTOIMAGE"></span>Add a Language to a Windows Image
 
 
-Language packs are available on the language pack ISO as .cab packages and are named with their locale; for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Language capabilities are available on the feature on demand ISO as .cab packages. 
+Language packs are available on the language pack ISO as .cab packages and are named with their locale; for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Language capabilities are available on the Features on Demand ISO as .cab packages. 
 
 LIPs are available on the language pack ISO as .appx files and are also named with their locale; for example, LanguageExperiencePack.ca-ES.Neutral.appx. You can find these .appx files and their associated license files in the `LocalExperiencePack\<locale>` folder of the lanugage pack ISO. 
 
-Language components, including language packs and features on demand can be added to an offline Windows image DISM. To learn more about Windows language components, see [Languages overview](language-packs-and-windows-deployment.md)
+Language components, including language packs and Features on Demand can be added to an offline Windows image with DISM. To learn more about Windows language components, see [Languages overview](language-packs-and-windows-deployment.md)
 
 > [!important]
 > Don't install a language after an update. If you install an update that contains language-dependent resources before you install a language, the language-specific changes that are contained in the update are not applied and you will have to reinstall the update. Always install languages before you install updates.
 
 
-## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Work with languages
+## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Adding languages
 
-Here's how to add and remove languages on an offline (mounted) image (install.wim). We'll install the French language, and then show you how to add a LIP language  (Luxembourgish) that uses French as a base language.
+This section covers how to add and remove languages on an offline (mounted) image (install.wim). We'll install the French language, and then add a LIP language (Luxembourgish) that uses French for its base language.
 
 To save space, you can remove English language components when deploying to non-English regions by [uninstalling the language](#remove-a-language-pack-from-a-windows-image) components in the reverse order from how you add them.
 
@@ -59,7 +59,7 @@ To add a language to an offline image, you'll need the following:
 
 See [Where to get language packs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-components) to find out where you can get these ISOs.
 
-### Mount the images (If adding a language to an offline image)
+### Mount Windows and Windows RE images (if you're adding a language to an offline image)
 
 -   Mount the Windows and Windows RE images. The Windows RE image file is part of the Windows image:
 
@@ -74,11 +74,11 @@ See [Where to get language packs](language-packs-and-windows-deployment.md#span-
 
 ### Add a language to Windows
 
-When preinstalling languages, add the language pack and applicable features on demand for all languages, including base languages if you're going to add a LIP.
+Preinstall languages by adding the language packs and their related Features on Demand for all preinstalled languages, including the base languages if you're adding a LIP language.
 
 If you're adding a language to an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
 
-1.  Mount the two ISOs with File explorer.
+1.  Mount the language pack and FOD ISOs with File explorer. This will assign them drive letters.
 
 2.  Add the language pack to Windows. Use `dism /Add-Package` to add the language pack.
 
@@ -88,7 +88,7 @@ If you're adding a language to an online image, the process is the same, but use
 
     Where D:\ is the Language pack ISO 
 
-3.  Add the language FODs. Always preinstall the Basic, Fonts, OCR, Text-to-speech, and Speech recognition language component FODs if they’re available for the languages you’re preinstalling. Additionally, preinstall the handwriting language component FOD if you’re shipping a device with a pen.
+3.  Add the language FODs. Always preinstall the Basic, Fonts, OCR, Text-to-speech, and Speech recognition FODs if they're available for the languages you’re preinstalling. Additionally, preinstall the handwriting language component FOD if you’re shipping a device with a pen.
     
     See [Features on demand](features-on-demand-v2--capabilities.md) to can learn more about FODs, including details on adding them to a Windows image.
 
