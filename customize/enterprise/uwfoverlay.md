@@ -39,14 +39,14 @@ To increase uptime, set up monitoring to check if your overlay is filling up. At
 
 * Default=1024MB. Set with:
   * [CMD](uwfmgrexe.md): `uwfmgr overlay set-size`
-  * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `(CurrentSession|NextSession)/MaximumOverlaySize`
+  * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `NextSession/MaximumOverlaySize`
   * [WMI](uwf-overlayconfigsetmaximumsize.md): `UWF\Overlay.SetMaximumSize`
 
 When planning device rollouts, we recommend optimizing the overlay size to fit your needs. 
 
 For RAM overlays, you'll need to budget some RAM for the system. For example, if the OS requires 2 GB of RAM, and your device has 4 GB of RAM, set the maximum size of the overlay to 2048MB (2 GB) or less.
 
-We recommend enabling UWF on a test device, installing the necessary apps, and putting the device through usage simulations. You can use this Powershell script to find out which files are consuming space: 
+We recommend enabling UWF on a test device, installing the necessary apps, and putting the device through usage simulations. You can use this Powershell script to find out which files are consuming space:
 
 ```powershell
 $wmiobject = get-wmiobject -Namespace "root\standardcimv2\embedded" -Class UWF_Overlay 
@@ -64,16 +64,18 @@ The amount of overlay used will depend on:
 
 As the drive overlay fills up the available space, you can warn your users that they're running out of space, and prompt them to reboot the device or to run a script to clear the overlay. 
 
-1. Set warning levels and critical levels (optional). When the overlay is filled to this value, UWF writes an Event Tracing for Windows (ETW) message.
+1. Set warning levels and critical levels (optional). When the overlay is filled to this value, UWF writes an Event Tracing for Windows (ETW) message. 
 
    * **Warning level**: Default=512MB. Set with:
      * [CMD](uwfmgrexe.md): `uwfmgr overlay set-warningthreshold`
-     * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `(CurrentSession|NextSession)/WarningOverlayThreshold`
+     * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `NextSession/WarningOverlayThreshold`
      * [WMI](uwf-overlaysetwarningthreshold.md): `UWF\_Overlay.SetWarningThreshold`
    * **Critical level**: Default=1024MB. Set with:
      * [CMD](uwfmgrexe.md): `uwfmgr overlay set-criticalthreshold`
-     * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `(CurrentSession|NextSession)/CriticalOverlayThreshold`
+     * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `NextSession/CriticalOverlayThreshold`
      * [WMI](uwf-overlaysetcriticalthreshold.md): `UWF\_Overlay.SetCriticalThreshold`
+
+   Note, these settings will take affect after the next reboot.
 
 2. Use Task Scheduler to detect the ETW message and to warn users to wrap up their work on the device so they do not lose their content before the overlay is cleared. You can also provide a link to script to clear the contents of the overlay. 
 
@@ -85,6 +87,8 @@ As the drive overlay fills up the available space, you can warn your users that 
    | Critical threshold  | uwfvol  | Error       | 2        |
    | Back to normal      | uwfvol  | Information | 3        |
 
+3. Reboot the device.
+
 ### <span id="freespacepassthrough"></span> Freespace passthrough (recommended) 
 On devices with a disk overlay, you can use freespace passthrough to access your drive's additional free space.
 
@@ -93,13 +97,11 @@ You'll still need to reserve some space on the disk for the overlay. This space 
 ### <span id="persistentoverlay"></span> Persistent overlay
 
 >![NOTE]
-> This feature is still in beta and not yet fully supported. Please thoroughly test before deploying to multiple devices.
+> This mode is experimental, and we recommend thoroughly testing it before deploying to multiple devices. This option is not used by default.
 
 On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. This can be helpful in situations where your guest users may need to access for longer periods, and may need to power off the device between uses. 
 
 This option gives your IT department more control over when the overlay is wiped.
-
-Note, this mode is experimental, and we recommend thoroughly testing it before deploying. This option is not used by default.
 
 To turn persistent overlay on or off:
 
