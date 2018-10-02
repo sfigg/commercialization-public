@@ -2,8 +2,8 @@
 title: D2D - DImage Ink Tests - InkStrokeHazards
 Description: D2D - DImage Ink Tests - InkStrokeHazards
 ms.assetid: 
-author: aahi
-ms.author: aahi
+author: EliotSeattle
+ms.author: EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
