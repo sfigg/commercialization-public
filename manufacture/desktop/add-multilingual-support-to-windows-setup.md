@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: Add Multilingual Support to Windows Setup
 ms.assetid: 242b963c-79fc-450b-90d7-c736965797b7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Multilingual Support to Windows Setup
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

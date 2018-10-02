@@ -1,9 +1,9 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: Learn how to optimize a Windows installation
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Optimize
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware

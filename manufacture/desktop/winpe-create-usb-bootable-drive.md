@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'Create bootable WinPE media'
 ms.assetid: d60de9b6-6775-41e7-bc52-dfafede554df
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Create bootable media'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 04/24/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 The Windows Assessment and Deployment Kit (ADK) includes the [CopyPE](copype-command-line-options.md) and [**MakeWinPEMedia**](makewinpemedia-command-line-options.md) command line utilities. When run from the Deployment and Imaging Tools Environment, **CopyPE** creates a working set of WinPE files, that **MakeWinPEMedia** can use to create bootable WinPE media. **MakeWinPEMedia** can create bootable WinPE USB drives, virtual hard disks, or ISOs that allow you to boot a VHD or burn to a DVD or CD.
 
-**CopyPE** and **MakeWinPEMedia** are installed when you choose the **Deployment tools** and **Windows Preinstallation Environment** options when [installing the ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install).
+**CopyPE** and **MakeWinPEMedia** are installed when you choose the **Deployment tools** and **Windows Preinstallation Environment** options when [installing the ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install). If you're using the ADK for Windows 10, version 1809, Windows PE is a separate add-on that you download and install after you install the ADK. You can [download the WinPE add-on from the Download Center](https://go.microsoft.com/fwlink/?linkid=2022233).
 
 ## Step 1: Create working files
 
@@ -44,7 +44,6 @@ Note, when you add more packages to WinPE, it slows WinPE performance and boot t
 * **Set the power scheme to high-performance**. Speeds deployment. Note, our sample deployment scripts already set this scheme automatically. See  [WinPE: Mount and Customize: High Performance](winpe-mount-and-customize.md#highperformance).
 
 * **Optimize WinPE**: Recommended for devices with limited RAM and storage (for example, 1GB RAM/16GB storage). After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](winpe-optimize.md) to help reduce the boot time.
-
 
 ## Step 3: Create bootable media
 
