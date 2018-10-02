@@ -3,8 +3,8 @@ title: Windows Hardware Compatibility Program Specifications and Policies
 Description: 
 ms.assetid: 
 MSHAttr: 
-author:EliotSeattle
-ms.author:eliotgra
+author: EliotSeattle
+ms.author: eliotgra
 ms.date: 01/23/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -33,8 +33,9 @@ Questions about the Azure Stack or SDDC programs or how to submit the results fo
 
 ### Download Compatibility Documents
 
-|Windows 10, Client|
-|--|
+| Windows 10 |
+| --- |
+|[Download Specifications and Policies, version 1809](https://go.microsoft.com/fwlink/?linkid=2027110)|  
 |[Download Specifications and Policies, version 1803](https://go.microsoft.com/fwlink/?linkid=871730)|
 |[Download Specifications and Policies, version 1709](https://go.microsoft.com/fwlink/?linkid=866945)|
 |[Download Specifications and Policies, version 1703](https://go.microsoft.com/fwlink/?linkid=866946)|
@@ -43,11 +44,11 @@ Questions about the Azure Stack or SDDC programs or how to submit the results fo
 
 <br>
 
-|Windows 10, Server|
-|--|
-|[Download Specifications, version 1607](https://go.microsoft.com/fwlink/?linkid=866951) (required for Server, version 1607 - present) |
-|[Download Server Policies, version 1607 - present](https://go.microsoft.com/fwlink/?linkid=866953)|
-|[Download Server Policies, version 1607 - present (Preview)](https://go.microsoft.com/fwlink/?linkid=874290)|
+| Windows Server |
+| --- |
+| [Download Specifications, Windows Server 2016, version 1607](https://go.microsoft.com/fwlink/?linkid=866951) |
+| [Download Specifications, Windows Server 2019, version 1809](https://go.microsoft.com/fwlink/?linkid=2027110) |
+| [Download Server policies](https://go.microsoft.com/fwlink/?linkid=874290) |
 
 
 

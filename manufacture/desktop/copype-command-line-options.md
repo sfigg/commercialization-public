@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'Copype Command-Line Options'
 ms.assetid: 3342c1d4-7dff-4e0b-ab86-1f28d5057f12
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Copype Command-Line Options'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'Windows Recovery Environment (Windows RE)'
 ms.assetid: af78b72b-9f45-4ac3-882b-411a2bafbeed
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Recovery Environment (Windows RE)'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -65,8 +65,8 @@ This menu enables your users to perform these actions:
 -   Access the **Firmware** menu (UEFI only).
 -   Choose which operating system to boot, if multiple operating systems are installed on the PC.
 
-**Note**  
-You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md).
+> [!Note]
+> You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md).
 
  
 
