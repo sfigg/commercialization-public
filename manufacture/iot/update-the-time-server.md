@@ -3,7 +3,7 @@ author: kpacquer
 Description: 'Update the time server on IoT Core devices'
 MSHAttr: 'PreferredLib:/library'
 title: 'Update the time server'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

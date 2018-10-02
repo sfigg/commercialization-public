@@ -3,8 +3,8 @@ title: What's new in the Windows ADK and ADK tools
 description: What's new in Windows ADK and ADK tools
 Search.SourceType: Video
 ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
-author:dawnwood
-ms.author:dawnwood
+author: dawnwood
+ms.author: dawnwood
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -12,11 +12,37 @@ ms.technology: windows-oem
 ---
 # What's new in ADK kits and tools
 
+## What's new in the Windows ADK for Windows 10, version 1809
+
+### Windows PE
+
+Starting with Windows 10, version 1809, Windows Preinstallation Environment (PE) is released separately from the Assessment and Deployment Kit (ADK). To add Windows PE to your ADK installation, download the Windows PE Addon and run the included installer after installing the ADK. This change enables post-RTM updates to tools in the ADK. After running the installer for the WinPE add-on, the WinPE files will be in the same location as they were in previous installs of the ADK.
+
+See [Download and install the Windows ADK and ADK tools](adk-install.md) to get the ADK and WinPE add-on.
+
+### WPT
+
+With the latest version of Windows Performance Recorder (WPR), WPR Profiles (WPRP) with Custom Events in TraceMergeProperties now work as intended.  Due to this change, if a custom WPRP contains an TraceMergeProperties XML element with an empty set of Custom Events, this will no longer include the default set of Custom Events (ImageIDs, WinSat, etc).
+To keep the same behavior with previous versions, make sure to include the following attribute as part of the TraceMergeProperties element:
+Base=”TraceMerge_Default” 
+
+With the latest version of Windows Performance Analyzer (WPA), .NET 4.5.2 framework is required for certain components when running on Windows 8 installations.  To ensure proper use of WPA, [download the latest version of .NET](https://www.microsoft.com/en-us/download/details.aspx?id=48130).
+
+## Retail Demo Experience (RDX)
+
+[RDX 3.0 will be available soon](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience), and will be automatically updated on Windows 10, build 1803 and 1809. Updates include a new webpage-style layout, a new API to allow you to manage your own assets, and a digital fact tag that can be updated locally from the sales floor.
+
+### Answer file setting changes
+
+For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1809 for desktop editions](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1809).
+
+To learn more, see [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
+
 ## What's new in the Windows ADK for Windows 10, version 1803
 
 ### PowerView
 
-PowerView is a new tool used to visualize data from Energy Estimation Engine logs produced by [powercfg /srumutil](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options#option_srumutil), and Windows Assessment Toolkit battery life tests.
+PowerView is a new tool used to visualize data from Energy Estimation Engine logs produced by [powercfg /srumutil](https://docs.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options#option_srumutil), and Windows Assessment Toolkit battery life tests.
 
 ### New in Windows Assessment Toolkit
 
@@ -28,15 +54,15 @@ See [Windows Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardwa
 
 ### Answer file setting changes
 
-For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1803 for desktop editions](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803).
+For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1803 for desktop editions](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803).
 
-To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/).
+To learn more, see [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
 
 ### MDM: Enhanced device and PC management
 
-Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
+Check out the [new CSPs settings](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
 
-See [Mobile Device Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/) for more information.
+See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) for more information.
 
 ### More changes
 
