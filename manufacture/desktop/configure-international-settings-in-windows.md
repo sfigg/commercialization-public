@@ -11,17 +11,26 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Configure International Settings in Windows
-
+# International Settings
 
 You can specify the default language, locale, and keyboard values during deployment or after Windows is installed. You can configure international settings by using the International module for Windows PowerShell, by using an answer file with Windows Setup, or by using Deployment Imaging Servicing and Management (DISM).
 
 For information about using DISM to configure international settings in an offline Windows image, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
-**Important**  
-In Windows 10, the intl.cpl command line tools do not support the new settings available in the Region and Language section of Control Panel. For Windows 10, we recommend using the International Windows PowerShell cmdlet settings to automate customizing international settings.
+> [!important]
+>In Windows 10, the intl.cpl command line tools do not support the new settings available in the Region and Language section of Control Panel. For Windows 10, we recommend using the International Windows PowerShell cmdlet settings to automate customizing international settings.
 
 In addition, Deployment Imaging Servicing and Management (DISM) should also only be used against an offline Windows image. In Windows 10, language settings are dynamically configured based on the user’s language list. Individual settings, such as the display language, default input method, and user locale may be reset dynamically based on user preferences on a running Windows installation. Use the International PowerShell cmdlet settings to change the international settings of a running Windows installation.
+
+## Prepare keyboards, time zones, and other regional settings
+
+
+You can specify the default keyboard layout, language, or locale, either during deployment or after Windows is installed.
+
+-   [Configure International Settings in Windows](configure-international-settings-in-windows.md)
+-   [Default Input Profiles (Input Locales) in Windows](default-input-locales-for-windows-language-packs.md): Lists the default input profiles (language and keyboard pairs) used for each region.
+-   [Default Time Zones](default-time-zones.md): Lists the default time zone used for each region.
+-   [Keyboard identifiers for Windows](windows-language-pack-default-values.md): Lists the keyboard hexadecimal values used when configuring input profiles.
 
 
 ## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using Windows PowerShell
@@ -169,8 +178,6 @@ You can configure international settings in an answer file in the following ways
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 
 [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md)
-
- 
 
  
 
