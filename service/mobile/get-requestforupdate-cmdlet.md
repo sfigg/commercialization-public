@@ -4,7 +4,7 @@ Description: 'Get-RequestForUpdate cmdlet'
 ms.assetid: f2b86f24-b5ff-4c9d-ac46-66898ad79e8c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Get-RequestForUpdate cmdlet'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

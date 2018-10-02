@@ -4,7 +4,7 @@ Description: FFU image format
 ms.assetid: 6847ef65-becf-4a96-a4e0-6cef27dcabf7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: FFU image format
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

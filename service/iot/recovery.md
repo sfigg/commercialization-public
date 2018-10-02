@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'Learn about device recovery and how it works for Windows 10 IoT Core devices..'
 ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows 10 IoT Core Recovery
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

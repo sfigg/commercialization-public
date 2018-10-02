@@ -8,23 +8,37 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b87fb099-ffe5-4725-a8e3-a33484159362
-author:themar-msft
-ms.author:themar
-ms.date: 05/02/2017
+author: kpacquer
+ms.author: kenpacq
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # Service UWF-protected devices
 
-When a device is protected with UWF, you must use UWF servicing mode commands to service the device and apply updates to an image. You can use UWF servicing mode to apply Windows updates, antimalware signature file updates, and custom software or third-party software updates.
+To update your devices, use UWF servicing mode. UWF servicing mode allows you to apply Windows updates, antimalware signature file updates, and custom software or third-party software updates.
+
+Normally, when the Unified Write Filter (UWF) is active, system updates are disabled, as they would use be erased when the overlay is cleared.
+
+When UWF servicing mode is triggered, Windows does the following:
+1. Clears the UWF overlay
+1. Reboots the devices
+1. Triggers a [system maintenance hour](https://docs.microsoft.com/windows/desktop/TaskSchd/task-maintenence).
+1. Disables the UWF filter.
+1. Scans for and applies Windows updates
+1. Scans for and applies app updates from the Microsoft store.
+1. After servicing is complete, it re-enables the UWF filter and resumes UWF protection.
+
+>!Note
+> Servicing mode requires that all user accounts on the system have a password. If there is a user account that does not include a password, UWF servicing will fail.
 
 ## In this section
 
 | Topic                                     | Description                                                                        |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|
-| [Antimalware support on UWF-protected devices](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/uwf-antimalware-support) |Describes the procedures to add support for Windows Defender and System Center Endpoint Protection (SCEP/Forefront) antimalware to your UWF-protected devices. |
-| [Apply OEM updates to UWF-protected devices](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/uwf-apply-windows-updates) |Provides information about how to apply OEM updates to a UWF-protected device. |
-| [Apply Windows updates to UWF-protected devices](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/uwf-apply-windows-updates) | Describes the procedures to apply Windows updates to your UWF-protected devices. |
-| [UWF master servicing script](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/uwf-master-servicing-script) | Provides information about the UWF master servicing script (UwfServicingMasterScript.cmd). |
-| [UWF servicing screen saver](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/uwf-servicing-screen-saver) | Provides information about how to modify the default UWF servicing screen saver. |
+| [Antimalware support on UWF-protected devices](uwf-antimalware-support.md) |Describes the procedures to add support for Windows Defender and System Center Endpoint Protection (SCEP/Forefront) antimalware to your UWF-protected devices. |
+| [Apply OEM updates to UWF-protected devices](uwf-apply-windows-updates.md) |Provides information about how to apply OEM updates to a UWF-protected device. |
+| [Apply Windows updates to UWF-protected devices](uwf-apply-windows-updates.md) | Describes the procedures to apply Windows updates to your UWF-protected devices. |
+| [UWF master servicing script](uwf-master-servicing-script.md) | Provides information about the UWF master servicing script (UwfServicingMasterScript.cmd). |
+| [UWF servicing screen saver](uwf-servicing-screen-saver.md) | Provides information about how to modify the default UWF servicing screen saver. |

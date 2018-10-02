@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'Capture and Apply Windows, System, and Recovery Partitions'
 ms.assetid: db1f011f-2cf3-46b7-a386-8333f6214b9e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Capture and Apply Windows, System, and Recovery Partitions'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -108,7 +108,7 @@ Here's a few ways to apply the image:
 
 2.  Copy the following script into Notepad, and then save the file as ApplyImage.bat:
 
-    ```
+    ```batch
     rem == ApplyImage.bat ==
 
     rem == These commands deploy a specified Windows

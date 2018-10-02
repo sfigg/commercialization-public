@@ -4,7 +4,7 @@ Description: Partial Image Signing
 ms.assetid: dac19053-5243-45f2-9041-b9de9ea0bd80
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Partial Image Signing
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

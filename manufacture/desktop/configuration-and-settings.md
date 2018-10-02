@@ -1,9 +1,9 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: Customization settings for deploying Windows
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configuration and settings
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware

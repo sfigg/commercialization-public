@@ -1,9 +1,9 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'Windows Imaging Servicing Tool'
 MSHAttr: 'PreferredLib:/library'
 title: 'Windows Imaging Servicing Tool'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

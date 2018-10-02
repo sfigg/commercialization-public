@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
 ms.assetid: f4495adf-63db-4fdc-ae56-70166eed930c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -24,7 +24,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
  
 ## <span id="Install_the_Windows_ADK"></span> Install the Windows ADK
 
--   Get the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature.
+-   Get the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature. Note that starting with Windows 10, version 1809, WinPE is a separate add-on that you'll have to [download and install](https://go.microsoft.com/fwlink/?linkid=2022233) after you install the ADK.
 
 **Create a Set of Either 32-bit or 64-bit Windows PE Files**
 

@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: Apply Images Using DISM
 ms.assetid: f9e0727d-a210-4efa-85af-5b222c53624e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Apply Images Using DISM
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
