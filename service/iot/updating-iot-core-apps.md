@@ -4,7 +4,7 @@ Description: 'OEM and enterprise customers can use Microsoft Store to deliver ap
 ms.assetid: 010c4836-a8ad-4ab9-b5a8-45babcc8a3f3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update apps on your Windows 10 IoT Core devices
-ms.author: pabab
+ms.author: kenpacq
 ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware

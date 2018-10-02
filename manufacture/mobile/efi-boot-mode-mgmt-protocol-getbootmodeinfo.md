@@ -4,7 +4,7 @@ Description: 'This function is used to retrieve the boot mode and optional profi
 ms.assetid: 389dab4d-9f74-4c33-9d02-9b6510581fd8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.GetBootModeInfo'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
