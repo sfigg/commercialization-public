@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Add a script to push-button reset features
 
 
-You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user or application data.
+You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user or application data. If you've congifured extensibility points in addition to Auto-apply folders, the extensibility points will be used and the Auto-apply folders will be ignored.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -260,13 +260,6 @@ To copy the Diskpart script, the ResetConfig.xml file, and the push-button reset
 [REAgentC Command-Line Options](reagentc-command-line-options.md)
 
 [ResetConfig XML Reference](resetconfig-xml-reference-s14.md)
-
- 
-
- 
-
-
-
 
 
 
