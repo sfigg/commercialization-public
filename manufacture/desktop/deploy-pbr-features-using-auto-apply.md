@@ -312,9 +312,3 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 [Bare metal reset/recovery: Create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md)
 
 [Deploy push-button reset features using ScanState](http://go.microsoft.com/fwlink/?LinkId=615126)
-
- 
-
-
-
-
