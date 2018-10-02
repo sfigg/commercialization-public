@@ -1,9 +1,9 @@
 ---
-author: themar
+author:kpacquer
 Description: Learn how to to work with Windows features and features on demand
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Features
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware
