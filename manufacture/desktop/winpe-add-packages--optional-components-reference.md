@@ -17,7 +17,7 @@ Add feature packages, also known as optional components, to Windows PE (WinPE).
 
 ## Where to get WinPE Optional Components
 
-WinPE optional components become available when you choose the **Windows Preinstallation Environment** option when you [install the Windows Assessment and Deployment Kit](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) (ADK).
+WinPE optional components become available when you install the **Windows Preinstallation Environment** with [the Windows Assessment and Deployment Kit](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) (ADK). Starting with Windows 10, version 1809, WinPE is an addon to the ADK that [you download](https://go.microsoft.com/fwlink/?linkid=2022233) and install after you install the ADK. 
 
 Optional components are available in 32- and 64-bit architectures. The OCs you add to your WinPE image must be from the same ADK build and have the same architecture as your WinPE image. You can find WinPE optional components in the following locations after you install the ADK:
 
