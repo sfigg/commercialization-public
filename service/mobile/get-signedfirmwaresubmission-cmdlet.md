@@ -4,7 +4,7 @@ Description: 'Get-SignedFirmwareSubmission cmdlet'
 ms.assetid: 911d3704-0508-4aae-8236-59cfd380867b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Get-SignedFirmwareSubmission cmdlet'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
