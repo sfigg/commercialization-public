@@ -28,12 +28,17 @@ Base=”TraceMerge_Default”
 
 With the latest version of Windows Performance Analyzer (WPA), .NET 4.5.2 framework is required for certain components when running on Windows 8 installations.  To ensure proper use of WPA, [download the latest version of .NET](https://www.microsoft.com/en-us/download/details.aspx?id=48130).
 
+### Answer file setting changes
+
+For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1809 for desktop editions](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1809).
+
+To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
 
 ## What's new in the Windows ADK for Windows 10, version 1803
 
 ### PowerView
 
-PowerView is a new tool used to visualize data from Energy Estimation Engine logs produced by [powercfg /srumutil](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options#option_srumutil), and Windows Assessment Toolkit battery life tests.
+PowerView is a new tool used to visualize data from Energy Estimation Engine logs produced by [powercfg /srumutil](https://docs.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options#option_srumutil), and Windows Assessment Toolkit battery life tests.
 
 ### New in Windows Assessment Toolkit
 
@@ -45,15 +50,15 @@ See [Windows Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardwa
 
 ### Answer file setting changes
 
-For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1803 for desktop editions](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803).
+For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1803 for desktop editions](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803).
 
-To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/).
+To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
 
 ### MDM: Enhanced device and PC management
 
-Check out the [new CSPs settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
+Check out the [new CSPs settings](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803).
 
-See [Mobile Device Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/) for more information.
+See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) for more information.
 
 ### More changes
 
