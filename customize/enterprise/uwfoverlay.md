@@ -124,12 +124,12 @@ You can often avoid this issue by using UWF to automatically initiate the shut d
 * **Shut down**: 
   * [CMD](uwfmgrexe.md): `uwfmgr shutdown`
   * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `ShutdownSystem`
-  * [WMI](uwf-filtershutdownsystem): `UWF\Filter.ShutdownSystem`
+  * [WMI](uwf-filtershutdownsystem.md): `UWF\Filter.ShutdownSystem`
 
 * **Restart**: 
   * [CMD](uwfmgrexe.md): `uwfmgr restart`
   * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `RestartSystem`
-  * [WMI](uwf-filterrestartsystem): `UWF\Filter.RestartSystem`
+  * [WMI](uwf-filterrestartsystem.md): `UWF\Filter.RestartSystem`
      
 
 ## Related topics
