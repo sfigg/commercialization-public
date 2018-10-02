@@ -9,8 +9,8 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
-author: aahi
-ms.author: aahi
+author: EliotSeattle
+ms.author: EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,8 +28,55 @@ ms.technology: windows-oem
 >[!NOTE] 
 >With each new release, anyone who builds tools that utilize the HLK object model should rebuild those tools to use the latest versions of the object model files. In addition, be sure to always use the same version of each object model file (i.e. do not mix object model files from different kit releases).
 
+### Virtual Hardware Lab Kit (VHLK)
+New for 1809! The Microsoft Virtual Hardware Lab Kit (VHLK) is the entire Hardware Lab Kit pre-installed and pre-configured on a VHDX, ready to boot. Use the VHLK to save setup time, quickly stand up a controller, and run Windows Hardware Certification from a virtual machine. For more details, check out the [VHLK Getting Started Guide](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/getstarted-vhlk).
+- Ready to boot and use
+- Run the HLK Controller as a virtual machine
+- Host the HLK Controller virtual machine on developer machines instead of dedicated Controller hardware
+
+### <span id="Server_support"></span><span id="server_support"></span><span id="SERVER_SUPPORT"></span>Server support
+
+|**HLK version**|**Compatable server OS versions**| 
+|--- |--- | 
+|1809|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016|
+|1803|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+|1709|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+|1703|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+|1607|Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
+
+>[!NOTE]
+>Windows Server 2019 is not supported as a host OS for the 1809 HLK Controller. However, it is supported as a client OS. 
+
 ### Updated test content
-Test content updated for better coverage for 1803 testing, across various architectures.
+Test content updated for better coverage for 1809 testing, across various architectures.
+
+## **Known issues this release**
+
+### HLK install fails with a database-related error
+This error can occur when uninstalling and then reinstalling HLK. When the new instance of HLK is installed, one of the following error messages appears when installing and rolls back
+- There is already an object named DSLinkType in the database. 
+- The database database_name already exists. 
+- Failed to create SQL database. 
+
+When uninstalling HLK, database uninstall can fail if the database is locked by another process. The HLK uninstall reports success, but the database is left behind.
+To recover, follow these steps:
+1. From an elevated command prompt, run ```SQLCMD -E``` 
+2. From the SQL Shell command line, enter the following:
+3. ```ALTER DATABASE WTTIdentity SET SINGLE_USER WITH ROLLBACK IMMEDIATE```
+4. ```DROP DATABASE WTTIdentity```
+5. ```GO```
+6. ```ALTER DATABASE HLKJobs SET SINGLE_USER WITH ROLLBACK IMMEDIATE```
+7. ```DROP DATABASE HLKJobs```
+8. ```GO```
+9. Verify that ```C:\Program Files\Microsoft SQL Server\MSSQL(sql version).MSSQLSERVER\MSSQL\DATA``` contains no files starting with WTTIdentity or HLKJobs
+10. Install the HLK 
+
+### HLK does not update existing SQL database with latest security fix
+If your existing SQL Server database is unpatched, installing the HLK will not update the database with the latest security fixes. 
+ 
+To patch SQL Server: 
+Option 1: Uninstall SQL Server before installing the HLK. The HLK will install SQL Server and the most recent hotfix as of RTM. At this point, you may use Windows Update to keep your SQL Server instance updated.
+Option 2: Manually patch your existing SQL Server before HLK install. 
 
 ## <span id="What_s_new_in_previous_releases"></span><span id="what_s_new_in_previous_releases"></span><span id="WHAT_S_NEW_IN_PREVIOUS_RELEASES"></span>**What's new in previous releases**
 
@@ -114,45 +161,11 @@ The **Preview pane** in File Explorer provides project and package information i
 
 To use the Preview pane in File Explorer, choose the **View** menu group, and then choose **Preview pane**. You can then choose any .hlkx file to view details of the package.
 
-### <span id="Server_support"></span><span id="server_support"></span><span id="SERVER_SUPPORT"></span>Server support
-
-|**HLK version**|**Compatable server OS versions**| 
-|--- |--- | 
-|1803|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
-|1709|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
-|1703|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
-|1607|Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
-
 ### <span id="64-bit_SQL"></span><span id="64-bit_sql"></span><span id="64-BIT_SQL"></span>64-bit SQL
 
 The HLK now supports 64-bit SQL editions exclusively. Previously, the HCK supported only 32-bit SQL editions exclusively.
 
-# Known issues this release
-### HLK install fails with a database-related error
-This error can occur when uninstalling and then reinstalling HLK. When the new instance of HLK is installed, one of the following error messages appears when installing and rolls back
-- There is already an object named DSLinkType in the database. 
-- The database database_name already exists. 
-- Failed to create SQL database. 
 
-When uninstalling HLK, database uninstall can fail if the database is locked by another process. The HLK uninstall reports success, but the database is left behind.
-To recover, follow these steps:
-1. From an elevated command prompt, run ```SQLCMD -E``` 
-2. From the SQL Shell command line, enter the following:
-3. ```ALTER DATABASE WTTIdentity SET SINGLE_USER WITH ROLLBACK IMMEDIATE```
-4. ```DROP DATABASE WTTIdentity```
-5. ```GO```
-6. ```ALTER DATABASE HLKJobs SET SINGLE_USER WITH ROLLBACK IMMEDIATE```
-7. ```DROP DATABASE HLKJobs```
-8. ```GO```
-9. Verify that ```C:\Program Files\Microsoft SQL Server\MSSQL(sql version).MSSQLSERVER\MSSQL\DATA``` contains no files starting with WTTIdentity or HLKJobs
-10. Install the HLK 
-
-### HLK does not update existing SQL database with latest security fix
-If your existing SQL Server database is unpatched, installing the HLK will not update the database with the latest security fixes. 
- 
-To patch SQL Server: 
-Option 1: Uninstall SQL Server before installing the HLK. The HLK will install SQL Server and the most recent hotfix as of RTM. At this point, you may use Windows Update to keep your SQL Server instance updated.
-Option 2: Manually patch your existing SQL Server before HLK install. 
  
 
  
