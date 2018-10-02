@@ -38,7 +38,7 @@ See [Add languages to Windows](add-language-packs-to-windows.md) to learn how to
 
 | Component |  Description |
 | --------- | ---------------- | 
-| Basic     | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<p>**You must add this component before adding any of the following components.**<p>**Note**: You can adding the Basic FOD for languages that aren't otherwise included in an image. This gives users the ability to proof in these languages, even when the other language components for that language aren't installed.<p>Other language components are dependent on this one. |
+| Basic     | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<p>**You must add this component before adding any of the following components.**<p>**Note**: You can add the Basic FOD for languages that aren't otherwise included in an image. This gives users the ability to proof in these languages, even when the other language components for that language aren't installed.<p>Other language components are dependent on this one. |
 | Fonts     |  Fonts.<br></br>See [font capabilities](features-on-demand-language-fod.md#span-idfontsspanspan-idfontsspanfont-features-on-demand) for available font capabilities. |
 | OCR | Recognizes and outputs text in an image.<br></br><p>**Dependencies**: The basic component of the same language. |
 | Handwriting recognition |  Enables handwriting recognition for devices with pen input.<br></br><p>**Dependencies**: The basic component of the same language.|
