@@ -3,8 +3,8 @@ title: IHV Attested Signing Service
 Description: 
 ms.assetid: 
 MSHAttr: 
-author: sapaetsc
-ms.author: sapaetsc
+author:EliotSeattle
+ms.author:eliotgra
 ms.date: 01/23/2018
 ms.topic: article
 ms.prod: windows-hardware
