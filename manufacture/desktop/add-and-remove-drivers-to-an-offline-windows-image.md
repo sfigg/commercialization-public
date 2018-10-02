@@ -38,7 +38,7 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 1.  Mount a Windows image. For example:
 
     ```
-    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows Drive" /MountDir:C:\test\offline
+    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /MountDir:C:\test\offline
     ```
     See [Mount and modify a Windows image using DISM](mount-and-modify-a-windows-image-using-dism.md) for more info.
 
@@ -186,9 +186,6 @@ If you need drivers for WinPE to see the local hard disk drive or a network, you
 [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 
  
-
- 
-
 
 
 
