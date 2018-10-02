@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: Add Language Interface Packs to Windows
 ms.assetid: 6acfeb8f-ce94-46e0-b679-1f58958fdd3e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Interface Packs to Windows
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,9 +1,9 @@
 ---
-author: pabab
+author: kpacquer
 Description: 'Device Update Center User Guide'
 MSHAttr: 'PreferredLib:/library'
 title: 'Device Update Center User Guide'
-ms.author: pabab
+ms.author: kenpacq
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod: windows-hardware

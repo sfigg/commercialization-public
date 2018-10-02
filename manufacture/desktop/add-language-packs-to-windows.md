@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: Add Language Packs to Windows
 ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Packs to Windows
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

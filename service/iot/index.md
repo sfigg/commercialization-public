@@ -4,7 +4,7 @@ Description: '.'
 ms.assetid: ed790033-3ac2-44a1-8b9f-f0fd72cd7c75
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service Windows 10 IoT Core
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,10 +1,10 @@
 ---
-author: parameshbabu
+author: kpacquer
 Description: 'Learn how to add a recovery mechanism to your IoT Core image.'
 ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows 10 IoT Core Recovery
-ms.author: pabab
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

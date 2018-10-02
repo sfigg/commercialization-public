@@ -4,7 +4,7 @@ Description: WlanMTEQueryMacAddress
 ms.assetid: 62953a75-4956-494f-983f-ca6475db2b43
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryMacAddress
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

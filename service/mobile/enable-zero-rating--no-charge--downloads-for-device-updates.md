@@ -4,7 +4,7 @@ Description: 'Enable zero-rating (no-charge) downloads for device updates'
 ms.assetid: defe3e29-03b2-448e-acf7-9009b45283d3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable zero-rating (no-charge) downloads for device updates'
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
