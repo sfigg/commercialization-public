@@ -28,11 +28,15 @@ Base=”TraceMerge_Default”
 
 With the latest version of Windows Performance Analyzer (WPA), .NET 4.5.2 framework is required for certain components when running on Windows 8 installations.  To ensure proper use of WPA, [download the latest version of .NET](https://www.microsoft.com/en-us/download/details.aspx?id=48130).
 
+## Retail Demo Experience (RDX)
+
+[RDX 3.0 will be available soon](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience), and will be automatically updated on Windows 10, build 1803 and 1809. Updates include a new webpage-style layout, a new API to allow you to manage your own assets, and a digital fact tag that can be updated locally from the sales floor.
+
 ### Answer file setting changes
 
 For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1809 for desktop editions](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1809).
 
-To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
+To learn more, see [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
 
 ## What's new in the Windows ADK for Windows 10, version 1803
 
@@ -52,7 +56,7 @@ See [Windows Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardwa
 
 For an overview of Unattend settings that are new, deprecated, and removed, see [Changed answer file settings for Windows 10, version 1803 for desktop editions](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/changed-answer-file-settings-for-windows-10-build-1803).
 
-To learn more about Unattend settings, see the [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
+To learn more, see [Unattended Windows Setup Reference](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/).
 
 ### MDM: Enhanced device and PC management
 

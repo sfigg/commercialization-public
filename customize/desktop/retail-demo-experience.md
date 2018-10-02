@@ -40,7 +40,7 @@ Key updates to RDX 3.0 will include:
 
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
-* **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
+* **New: On-device admin (ODA) app** (part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
 * **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
 
 
