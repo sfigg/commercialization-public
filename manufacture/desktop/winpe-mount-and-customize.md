@@ -32,7 +32,7 @@ WinPE ships as a .wim file. Mounting and customizing a WinPE image is the same p
 
 ## <span id="Get_the_ADK"></span>Get the Windows Assessment and Deployment Kit with Windows PE tools
 
--   Install the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the **Windows PE** feature.
+-   Install the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), with **Windows Preinstallation Environment**. If you're using the ADK for Windows 10, version 1809, you'll have to download and install the WinPE [addon](https://go.microsoft.com/fwlink/?linkid=2022233) after you install the ADK. Previous versions of the ADK include **Windows Preinstallation Environment** in the ADK installer.
 
 ## <span id="Create_WinPE_image"></span>Create a set of either 32-bit or 64-bit Windows PE files
 
