@@ -60,6 +60,9 @@ uwfmgr.exe
         Set-Type {RAM | DISK}
         Set-WarningThreshold <size>
         Set-CriticalThreshold <size>
+        Set-passthrough <on/off>
+        Set-persistent <on/off>
+        Reset-persistentstate <on/off>
     Servicing
         Enable
         Disable
@@ -178,6 +181,16 @@ The following list describes the options and sub-options that are available to u
   * *Set-CriticalThreshold* *&lt;size&gt;*
     * Sets the overlay size, in megabytes, at which the driver issues critical notifications for the current session.
     * [UWF\_Overlay.SetCriticalThreshold](uwf-overlaysetcriticalthreshold.md)
+
+  * *Set-passthrough* **<on/off>**
+    * Turns the [freespace passthrough](uwfoverlay.md#freespacepassthrough) on or off, allowing UWF to use free space outside of the reserved space when available.
+
+  * *Set-persistent* <on/off>
+    * Sets the overlay as a [persistent overlay](uwfoverlay.md#persistentoverlay), allowing users to keep using their data after a reboot.
+
+  * *Reset-persistentstate* <on/off>
+    * Clears a persistent overlay on the next boot (on/off).
+
 * **Servicing**
   * Configures settings for UWF servicing mode.
   * [UWF\_Servicing](uwf-servicing.md)
