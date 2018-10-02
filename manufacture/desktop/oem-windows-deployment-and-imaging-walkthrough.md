@@ -1,10 +1,10 @@
 ---
-author: themar
+author:kpacquer
 Description: OEM Windows Desktop Deployment and Imaging Lab
 ms.assetid: 04dace4d-9df9-4ead-b23d-f168832c9c04
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: OEM Windows Desktop Deployment and Imaging Lab
-ms.author: themar
+ms.author:kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
