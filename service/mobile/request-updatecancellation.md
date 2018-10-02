@@ -4,7 +4,7 @@ Description: 'Request-UpdateCancellation cmdlet'
 ms.assetid: a01ab740-d6a2-4c9e-bfb6-ee3fabb3799a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Request-UpdateCancellation cmdlet'
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

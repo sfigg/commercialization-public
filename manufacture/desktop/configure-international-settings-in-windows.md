@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: Configure International Settings in Windows
 ms.assetid: 2ed4a22d-8cd1-49b8-8141-06ebbf26b24d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure International Settings in Windows
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

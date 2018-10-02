@@ -1,10 +1,10 @@
 ---
-author:kpacquer
+author: kpacquer
 Description: Take Inventory of an Image or Component Using DISM
 ms.assetid: cab41da0-3155-4170-8377-b6335de47a38
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Take Inventory of an Image or Component Using DISM
-ms.author:kenpacq
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
