@@ -7,14 +7,14 @@ MSHAttr:
 ms.assetid: f833b9e7-54e4-4615-9eed-22ab805a218b
 author: themar-msft
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 # uwfmgr.exe
 
-This command-line tool configures and retrieves settings for Unified Write Filter (UWF).
+The UWFMgr tool can be used at the command-line or in PowerShell to configure and retrieve settings for [Unified Write Filter (UWF)](unified-write-filter.md).
 
 > [!Important]
 > Users with standard accounts can use commands that retrieve information, but only users who have administrator accounts can use commands that change the configuration settings.
