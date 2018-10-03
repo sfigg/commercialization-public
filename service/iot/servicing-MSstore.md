@@ -1,10 +1,10 @@
 ---
-author: kpacquer
+author: parameshbabu
 Description: 'Windows 10 makes it easy to publish, install and service apps on IoT Core using Microsoft Windows Store.'
 ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Microsoft Store support for IoTCore Apps
-ms.author: kenpacq
+ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: windows-hardware
