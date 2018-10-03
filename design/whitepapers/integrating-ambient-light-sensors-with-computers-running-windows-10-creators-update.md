@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 **Last updated:**
 
--   Feb 20, 2018
+-   Oct 02, 2018
 
 **Applies to:**
 
@@ -24,7 +24,7 @@ This paper provides information about ambient light sensor (ALS) features in the
 
 File name: integrating-ambient-light-sensors-with-windows-10.docx
 
-0.98MB
+1.04MB
 
 Microsoft Word file
 
