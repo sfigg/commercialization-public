@@ -1,12 +1,13 @@
 ---
-author: themar
+author: kpacquer
 Description: Add and Remove Language Packs on a Running Windows Installation
 ms.assetid: 0e3f0b85-417e-4e17-869e-05ae37e98c8f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Language Packs on a Running Windows Installation
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---

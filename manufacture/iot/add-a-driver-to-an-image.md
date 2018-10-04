@@ -2,7 +2,7 @@
 author: kpacquer
 Description: 'We''ll show you one of two ways to add a driver to the image.'
 title: 'Lab 1e: Add a driver to an image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -11,7 +11,7 @@ ms.technology: windows-oem
 
 # Lab 1e: Add a driver to an image
 
-In this lab, we'll add the sample driver: [Hello, Blinky!](https://developer.microsoft.com/windows/iot/samples/driverlab), package it up, and deploy it to the to a Windows 10 IoT Core device.
+In this lab, we'll add the [sample driver](https://github.com/ms-iot/samples/tree/develop/DriverSamples/gpiokmdfdemo), package it up, and deploy it to the to a Windows 10 IoT Core device.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 

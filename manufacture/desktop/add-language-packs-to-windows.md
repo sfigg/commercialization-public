@@ -1,14 +1,15 @@
 ---
-author: themar
+author: kpacquer
 Description: Add Language Packs to Windows
 ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Packs to Windows
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism
 ---
 
 # Add Language Packs to Windows
@@ -65,7 +66,7 @@ To see what's available, see [Available Language Packs for Windows](available-la
 
 -   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 -   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
--   Users can add languages after Windows is installed, by goiung to **Settings** > **Time & language** > **Region and language** > **Add a language**. See [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo) for more information.
+-   Users can add languages after Windows is installed, by going to **Settings** > **Time & language** > **Region and language** > **Add a language**. See [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo) for more information.
 
 ## <span id="Other_considerations"></span><span id="other_considerations"></span><span id="OTHER_CONSIDERATIONS"></span>Other considerations
 

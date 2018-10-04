@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: f5ebaf2b-3b63-4947-9275-7141040e5580
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -16,7 +16,7 @@ ms.technology: windows-oem
 ---
 # Microsoft-Windows-WDF-Kernel Library
 
-`Microsoft-Windows-WDF-KernelLibrary` provides a kernel-mode framework for device drivers. For more information, see the Windows Hardware Developer Central topic: [Kernel-Mode Driver Framework](http://go.microsoft.com/fwlink/?LinkId=143072).
+`Microsoft-Windows-WDF-KernelLibrary` provides a kernel-mode framework for device drivers. For more information, see the Windows Hardware Developer Central topic: [Kernel-Mode Driver Architecture Design Guide](https://docs.microsoft.com/windows-hardware/drivers/kernel/).
 
 ## In This Section
 

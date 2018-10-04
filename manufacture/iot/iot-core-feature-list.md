@@ -4,7 +4,7 @@ Description: 'Here''s the features you can add to Windows 10 IoT Core (IoT Core
 ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core feature list
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -43,7 +43,9 @@ When creating images for your device, determine which features are required for 
 | **IOT\_FFU\_FLASHMODE** | Adds flashing mode support so that the device can be flashed using ffutool. Currently supported for arm only. This is new in Windows 10, version 1803 |
 | **IOT\_MTP** | Adds Media transfer protocol support. See [MTP](https://docs.microsoft.com/windows/iot-core/connect-your-device/mtp). This is new in Windows 10, version 1803 |
 | **IOT\_MIRACAST\_RX_APP** | Adds Connect App that supports Miracast receive feature. Note that the underlying hw/drivers should support Miracast for this app to work. Currently supported for arm only. This is new in Windows 10, version 1803 |
-
+| **IOT\_BLUETOOTH\_A2DP\_SINK** | Adds ability to receive and play A2DP audio from an external device to the IoT device. This is new in Windows 10, 1809. See [Integrating Bluetooth Audio](integrating-bluetooth-audio.md). |
+| **IOT\_BLUETOOTH\_A2DP\_SOURCE** | Adds ability to play audio to an external device.  This was implicitly included in Windows 10, version 1803, but must be explicitly specified beginning with Windows 10, version 1809.  See [Integrating Bluetooth Audio](integrating-bluetooth-audio.md). |
+| **IOT\_BLUETOOTH\_HFP\_AUDIOGATEWAY** | Adds Bluetooth Handsfree-Profile AudioGateway role. This is new in Windows 10, version 1809 |
 
 ### Settings
 
@@ -54,10 +56,11 @@ When creating images for your device, determine which features are required for 
 | **IOT\_EFIESP\_BCD** | Sets boot configuration data (BCD) for GPT-based drives. Required for x86/amd64. MBR devices should use **IOT\_EFIESP\_BCD_MBR**                                                   |
 | **IOT\_EFIESP\_BCD_MBR**             | Sets boot configuration data (BCD) for MBR-based drives.  This is new in Windows 10, version 1703. |
 | **IOT\_SHELL\_HOTKEY\_SUPPORT** | Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx). Supported starting with Windows 10, version 1607.                                                    |  
-| **IOT\_SHELL\_ONSCREEN\_KEYBOARD** | Adds available on-screen keyboard. This is new in Windows 10, version 1703.                  |
-| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703. |
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD** | Adds available on-screen keyboard. This is new in Windows 10, version 1703.<br/>[Updated in 1809](/windows/iot-core/develop-your-app/onscreenkeyboard)                 |
+| **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703.<br/>[Updated in 1809](/windows/iot-core/develop-your-app/onscreenkeyboard) |
 | **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver. This feature should only be used with the Qualcomm DragonBoard (DB). |
 | **IOT\_CRASHCONTROL\_SETTINGS** | Configures the device to auto reboot without showing blue screen (BSOD) when the device crashs. This also disables crashdump. [AutoReboot = 1 ; DisplayDisabled = 1 and CrashDumpEnabled = 0]. This is new in Windows 10, version 1803 |
+| **IOT\_SSH**                    | Enables Secure Shell (SSH) connectivity |
 
 
 ### Developer Tools
@@ -65,15 +68,17 @@ When creating images for your device, determine which features are required for 
 > [!IMPORTANT]
 > The following developer features shall not be used in **Retail** builds and in images for commercial devices.
 
+> [!IMPORTANT]
+> If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must [obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-ssl), then using WDP in this narrow commercial instance is acceptable. Retail images in this scenario should still *not* include IOT_TOOLKIT, but should use the IOT_WEBBEXTN package to pull in WDP. 
+
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **IOT\_SIREP**                  | Enables SIREP service for TShell connectivity                                                                               |
-| **IOT\_SSH**                    | Enables Secure Shell (SSH) connectivity                                                                                     |
+| **IOT\_SIREP**                  | Enables SIREP service for TShell connectivity                                                                                                                                        |
 | **IOT\_TOOLKIT**                | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
 | **IOT\_WEBB\_EXTN**             | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
 | **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607. Note: Remote Display is prerelease software intended for development and training purposes only.                      |
-| **IOT\_CORTANA**                | Adds Cortana feature. Requires **IOT\_APPLICATIONS** feature. This is new in Windows 10, version 1703.       |
-| **IOT\_CORTANA\_OBSCURELAUNCH** | Enables running Cortana application on boot. This add-on causes Cortana to run in the background resulting in better response time for Cortana. This is new in Windows 10, version 1703. |
+| ~~IOT\_CORTANA~~  (Deprecated)  | The Cortana application is no longer available as a feature in Windows 10, version 1809.  To build Cortana enabled applications on IoT please refer to [The Cortana Dev Center](http://www.aka.ms/cortanadevices).    |
+| ~~IOT\_CORTANA\_OBSCURELAUNCH~~ (Deprecated) | The Cortana application is no longer available as a feature in Windows 10, version 1809. To build Cortana enabled applications on IoT, please refer to [The Cortana Dev Center](http://www.aka.ms/cortanadevices). |
 | **IOT\_BERTHA**                 | Adds a sample app: "Bertha". This app provides basic version info and connectivity status.             |
 | **IOT\_UAP\_DEFAULTAPP**        | Adds a sample app, "Chucky". This app is similar to "Bertha".                              |
 | **IOT\_FTSER2K\_MAKERDRIVER**   | Adds the FTDI USB-to-Serial driver.                                                                                          |

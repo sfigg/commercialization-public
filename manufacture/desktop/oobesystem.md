@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: oobeSystem
 ms.assetid: afe6d754-0ca6-4252-87c7-bfc234a2cc6a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: oobeSystem
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

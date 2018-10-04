@@ -1,13 +1,15 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Lab 4: Add languages'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 4: Add languages'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
+
 ---
 
 # <span id="Add_languages"></span>Lab 4: Add languages

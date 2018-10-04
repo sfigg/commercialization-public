@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: eac0c5c7-689c-4bb8-90bf-902ae8e08f39
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -75,14 +75,4 @@ The following XML example shows how to hide the Administrator password screen du
 
 
 [OOBE](microsoft-windows-shell-setup-oobe.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)

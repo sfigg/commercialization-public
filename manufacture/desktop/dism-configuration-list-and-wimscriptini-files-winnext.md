@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: 'DISM Configuration List and WimScript.ini Files'
 ms.assetid: 8e765558-4138-4215-bf53-09e46666a718
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Configuration List and WimScript.ini Files'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -73,7 +73,7 @@ By default, the DISM.exe tool will exclude the following files.
 \hiberfil.sys
 \pagefile.sys
 \swapfile.sys
-"\System Volume Information"
+\System Volume Information
 \RECYCLER
 \Windows\CSC
 
@@ -118,7 +118,7 @@ By default, the DISM.exe tool will exclude the following files.
     ```
     [ExclusionException]
     \pagefile.sys
-    "\System Volume Information"
+    \System Volume Information
     ```
 
 -   If an explicit `[ExclusionException]` section is provided in the WIM configuration file, it will always take precedence over the `[Exclusion List]` section.

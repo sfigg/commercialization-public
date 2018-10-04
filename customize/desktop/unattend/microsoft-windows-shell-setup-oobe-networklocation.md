@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: b77876d1-2112-490e-8b9b-6aca37d8b2d1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -83,14 +83,4 @@ The following XML example shows how to set the network location to a private off
 
 
 [OOBE](microsoft-windows-shell-setup-oobe.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)

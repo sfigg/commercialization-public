@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c214944f-637e-436c-96f9-6bc1bcd78602
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -35,7 +35,7 @@ This section describes the WMI provider classes for UWF.
 
 ## Requirements
 
-Windows 10 Enterprise or Windows 10 Education.
+Windows 10 Enterprise, Windows 10 Education, or Windows 10 IoT Core Enterprise
 
 ## Related topics
 

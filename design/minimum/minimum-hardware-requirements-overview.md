@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6B7E2CB1-A53B-4677-9F6C-D701ED777D17
-ms.author: dongill
+ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -71,9 +71,9 @@ Windows is available in the following editions.
 <td><p>An OS that is designed for performing traditional PC tasks that uses the desktop experience. This OS runs native Win32 apps, Universal Windows apps, and existing apps from the Microsoft Store.</p></td>
 </tr>
 <tr class="even">
-<td>Windows 10 Enterprise</td>
+<td>Windows 10 IoT Enterprise</td>
 <td><p>An edition of Windows 10 desktop for industry devices that supports advanced lockdown capabilities, Windows desktop application and Windows apps support for standard industry devices, large tablets and stationary computing devices</p>
-<p>Note: In this specification, all requirements that apply to Windows 10 for desktop editions also apply to Windows 10 Enterprise. There are no additional requirements unique to Windows 10 Enterprise.</p></td>
+<p>Note: In this specification, all requirements that apply to Windows 10 for desktop editions also apply to Windows 10 IoT Enterprise, unless noted otherwise. There are no additional requirements unique to Windows 10 IoT Enterprise.</p></td>
 </tr>
 <tr class="odd">
 <td>Windows Server 2016</td>
@@ -1346,6 +1346,8 @@ Storage controllers used in devices that run Windows 10 for desktop editions mu
 
 Windows 10 for desktop editions supports a minimum display resolution of SVGA (800 x 600) with a depth of 32 bits on each output simultaneously, and a minimum diagonal display size of 7-inches or larger. Tablets, 2-in-1s, and laptops that run Windows 10 for desktop editions must include a display that meets the minimum requirements listed earlier. A display is optional for desktop PC's that run Windows 10 for desktop editions.
 
+**Note** Display size requirements do not apply to Windows 10 IoT Enterprise
+
 ### 3.4.2 Graphics
 
 Devices that run Windows 10 for desktop editions must include a GPU that supports DirectX 9 or later.
@@ -1383,6 +1385,8 @@ The following requirements must be met:
 
 
 For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet, and for TPM 1.2 and 2.0 version comparisons, see [TPM recommendations](https://technet.microsoft.com/library/mt604232.aspx), also on TechNet.
+
+**Note** While TPM requirements are highly encouraged for Windows 10 IoT Enterprise, it is not required.  The use of a TPM for Windows 10 IoT Enterprise devices is determined based on the usage and security requirements of each device.
 
 ## Section 4.0 - Minimum hardware requirements for Windows Server 2016
 
@@ -1465,7 +1469,7 @@ Devices that run IoT Core require an ARM SoC or x86, x64 processor/SoC that meet
 
 **Note**  Faster processor performance may be required based on the design and functionality of the device.
 
-For a sample of enabled SoCs, see [Enabled SoCs](https://developer.microsoft.com/en-us/windows/iot/explore/SoC). 
+For a sample of enabled SoCs, see [Enabled SoCs](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards). 
 
  
 

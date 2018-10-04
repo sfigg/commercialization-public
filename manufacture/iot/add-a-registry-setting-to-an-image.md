@@ -4,7 +4,7 @@ Description: 'We''ll create some test files and registry keys to the image, agai
 ms.assetid: 7ca2b835-4d36-43d9-b46f-d5d5d8410335
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1c: Add a file and a registry setting to an image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--   Create a few sample text files using Notepad, title them TestFile1.txt and TestFile2.txt.
+-   Create a few sample text files using Notepad, add some random text so that the files are not empty, title them TestFile1.txt and TestFile2.txt.
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
 

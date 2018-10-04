@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07E710A3-3368-476E-9EC1-12AA67B52498
-ms.author: alhopper
+ms.author: themar
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -62,7 +62,7 @@ Changes in this section relate to the release of Windows 10, version 1709.
 | [Customize the Windows performance power slider](desktop/customize-power-slider.md) | New. The Windows performance power slider enables customers to trade performance of their system for longer battery life. You can configure the default slider mode, and the power settings engaged behind the scenes. |
 | [Customize a SAR mapping table](desktop/customize-sar-mapping-table.md) | New. Configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. |
 | [Customize the Start layout](desktop/customize-start-layout.md) | New. Customize the size of the start layout, and add your own tiles to it. |
-| [Create a Kiosk Experience](enterprise/create-a-kiosk-image.md) | Updated with guidance on providing a multi-app kiosk experience. This functionality is new in Windows 10 version 1709. |
+| Create a Kiosk Experience | Updated with guidance on providing a multi-app kiosk experience. This functionality is new in Windows 10 version 1709. |
 | [Adaptive hibernate](power-settings/adaptive-hibernate.md) | Updated. In Windows 10 version 1709, user usage prediction no longer triggers Hibernate. Also updated to include default values of hibernate triggers. |
 | [Predefined key combinations](enterprise/predefined-key-combinations.md) | Updated with keyboard shortcut changes introduced in Windows 10 version 1709. |
 | [OOBE.xml](desktop/oobexml.md) | Updated. In Windows 10 version 1709, `timezone` is now available to set in OOBE.xml |

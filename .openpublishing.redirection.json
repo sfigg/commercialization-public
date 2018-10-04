@@ -1,5 +1,6 @@
 { 
   "redirections": [ 
+    },
     {   
         "source_path": "windows-hardware-compatibility-program-overview.md", 
         "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/index",

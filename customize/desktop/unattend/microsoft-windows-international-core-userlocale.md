@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 31880e1a-2f40-4d8b-b6f0-c1799911ed39
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -81,14 +81,4 @@ The following example shows how to set the user locale to Japanese (Japan).
 [Available Language Packs](http://go.microsoft.com/fwlink/p/?linkid=200318)
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
