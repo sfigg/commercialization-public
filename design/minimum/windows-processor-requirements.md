@@ -1,7 +1,7 @@
 ---
 title: Windows Processor Requirements
 description: This specification details the processors that can be used with Customer Systems that include Windows Products (including Custom Images).
-ms.author: dongill
+ms.author: eliotgra
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -18,6 +18,8 @@ For clarity, Company must also meet all processor and other requirements specifi
 
 If after the inclusion of a processor series in this specification (“Listed Processor”), a processor becomes commercially available that uses the same naming convention or identifier as a Listed Processor but has additional or different features or functionality (“New Processor”), Company must not use New Processor for Customer Systems without Microsoft’s prior written permission. If Company believes a processor has been omitted from this list, please contact Company’s Microsoft OEM or ODM Account Manager.
 
+The processors listed in the tables below, represent the latest processor generations and models which are supported for the listed Windows Edition. Previous generations of processors and models (indicated by "Up through"), remain supported in addition to the listed processors and models.
+
 Some product editions or edition/processor configurations listed below may have no or limited support. Information on support is available at Microsoft Support Policy (<https://support.microsoft.com/lifecycle>) and Microsoft Lifecycle FAQ (<https://support.microsoft.com/help/18581>).
 
 ## Windows Client Edition Processor table
@@ -30,9 +32,11 @@ Some product editions or edition/processor configurations listed below may have 
 | Windows 10 1511                 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6) and through current Intel Atom, Celeron, and Pentium Processors                | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx) | N/A
 | Windows 10 1607                 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7/i9-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6) and through current Intel Atom, Celeron, and Pentium Processors             | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx) | N/A
 | Windows 10 Enterprise LTSB 1607 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7/i9-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6) and through current Intel Atom, Celeron, and Pentium Processors             | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx) | N/A
-| Windows 10 1703                 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7/i9-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6), 8th Generation Processors (Intel Core i3/i5/i7-8xxxU) and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron, and Pentium Processors             | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), and AMD Ryzen 3/5/7 2xxx  | N/A
-| Windows 10 1709 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835
-| Windows 10 1803 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), 7th Generation Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835 
+| Windows 10 1703                 | Up through the following Intel 7th Generation Processors (Intel Core i3/i5/i7/i9-7xxx, Core m3-7xxx, and Xeon E3-xxxx v6), 8th Generation Processors (Intel Core i3/i5/i7-8xxxU) and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron, and Pentium Processors             | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Athlon 2xx, and AMD Ryzen 3/5/7 2xxx  | N/A
+| Windows 10 1709 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Athlon 2xx, AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835
+| Windows 10 1803 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), 7th Generation Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Athlon 2xx, AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835 
+| Windows 1809 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), 7th Generation Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Athlon 2xx processors, AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** | Qualcomm Snapdragon 850
+| Windows 10 Enterprise LTSC 1809 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), 7th Generation Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Athlon 2xx processors, AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** | N/A
 
 \*** Intel Xeon processors are supported on Windows 10 Pro for Workstations and Windows 10 Enterprise only
 
@@ -40,8 +44,8 @@ Some product editions or edition/processor configurations listed below may have 
 
 ## Windows IoT Core Processor table
 
-| Windows Edition | Intel Processors                                                                 | Qualcomm Processor                                            | Broadcom                                           |
-|-----------------|----------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------|
+| Windows Edition | Intel Processors | Qualcomm Processor | Broadcom | NXP Processors |
+|-|-|-|-|-|
 | Windows 10 1703 | Up through currently enabled Intel Joule, Atom, Celeron and Pentium Processors\* | Up through currently enabled Qualcomm Snapdragon Processors\* | Up through currently enabled Broadcom Processors\* |
 | Windows 10 1709 | Up through currently enabled Intel Joule, Atom, Celeron and Pentium Processors* | Up through currently enabled Qualcomm Snapdragon Processors* | Up through currently enabled Broadcom Processors* |
 | Windows 10 1803 | Up through currently enabled Intel Joule, Atom, Celeron and Pentium Processors* | Up through currently enabled Qualcomm Snapdragon Processors* | Up through currently enabled Broadcom Processors* |
