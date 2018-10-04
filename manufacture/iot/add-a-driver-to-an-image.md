@@ -33,7 +33,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
--  Copy each of the files: gpiokmdfdemo.sys and gpiokmdfdemo.inf into a test folder, for example, C:\gpiokmdfdemo\.
+-  Copy the file, wdfsimple.sys, into a test folder, for example, C:\wdfsimple\.
 
 ## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
 
@@ -42,14 +42,14 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 2.  Create the driver package using the .inf file as the base:
 
     ```
-    newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.HelloBlinky
+    newdrvpkg C:\wdfsimple\wdfsimple.sys Drivers.Toaster
      ```
 
-The new folder appears at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
+The new folder appears at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.Toaster\\**.
 
 **Verify that the sample files are in the package**
 
-1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.wm.xml**.
+1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.Toaster\\Drivers.Toaster.wm.xml**.
     
 The default package definition file includes sample XML that you can modify to add your own driver files.
 
