@@ -1,143 +1,153 @@
 ---
 author: kpacquer
-Description: 'To get started, we''ll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything''s working properly.'
-ms.assetid: aeba79b8-d8dd-481a-a8bf-03ae28174632
-MSHAttr: 'PreferredLib:/library'
-title: 'Lab 1a: Create a basic image'
-ms.author: themar
-ms.date: 9/29/2017
+Description: 'We''ll show you one of two ways to add a driver to the image.'
+title: 'Lab 1e: Add a driver to an image'
+ms.author: kenpacq
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Lab 1a: Create a basic image
+# Lab 1e: Add a driver to an image
 
-To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything's working properly. 
+In this lab, we'll add the sample driver: [Toaster](https://github.com/Microsoft/Windows-driver-samples/tree/6c1981b8504329521343ad00f32daa847fa6083a/general/toaster/toastDrv), package it up, and deploy it to the to a Windows 10 IoT Core device.
 
-We'll create a product folder that represents our first design. For our first product design, we'll customize just enough for the IoT core device to boot up and run the built-in OOBE app, which we should be able to see on an HDMI-compatible monitor.
+## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
-To make running these commands easier, we'll install and use the IoT Core shell, which presets several frequently-used paths and variables.
+* Create a product folder (ProductB) that's set up to boot to the default (Bertha) app, as shown in [Lab 1a: Create a basic image](create-a-basic-image.md) or [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
-## Prerequisites
+## <span id="Check_for_similar_drivers"></span>Check for similar drivers
 
-See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready. 
+Before adding drivers, you may want to review your pre-built Board Support Package (BSP) to make sure there's not already a similar driver. 
 
-## Create a basic image
+For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-arm\\BSP\\Rpi2\\Packages\\RPi2FM.xml.
 
-### Set your OEM name (one-time only)
+- If there's not an existing driver, you can usually just add one.
 
--   Open the file **C:\\IoT-ADK-AddonKit\\Tools\\setOEM.cmd** in Notepad, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with. Only alphanumeric characters are supported in the OEM_NAME as this is used as a prefix for various generated file names.
+- If there is a driver, but it doesn't meet your needs, you'll need to replace the driver by creating a new BSP. We'll cover that in [Lab 2](create-a-new-bsp.md).
+
+## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
+
+-  Complete the steps listed under the [Toaster Driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/6c1981b8504329521343ad00f32daa847fa6083a/general/toaster/toastDrv) to build it. You'll create two files: gpiokmdfdemo.inf and gpiokmdfdemo.sys, which you'll use to install the driver.
+
+   You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
+
+-  Copy each of the files: gpiokmdfdemo.sys and gpiokmdfdemo.inf into a test folder, for example, C:\gpiokmdfdemo\.
+
+## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
+
+1.  Run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
+
+2.  Create the driver package using the .inf file as the base:
 
     ```
-    set OEM_NAME=Fabrikam
+    newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.HelloBlinky
     ```
 
-### Start the IoT Core shell, choose your architecture, and install test certificates
+    The new folder appears at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
 
-1.  In Windows Explorer, go to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**, and open **IoTCoreShell.cmd**. It should prompt you to run as an administrator.
+**Verify that the sample files are in the package**
 
-    The new value for OEM\_NAME should appear when you start the tool.
-	
-	Troubleshooting: Error: "The system cannot find the path specified". If you get this, right-click the icon and modify the path in "Target" to the location you've chosen to install the tools.
+1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.wm.xml**.
 
-2.  At the **Set Environment for Architecture** prompt, select 1 for ARM, 2 for x86, or 3 for x64, based on the architecture for the boards that you'll be developing. For example, press **1** to create an image that's compatible with the Raspberry Pi 2 or Raspberry Pi 3, or press **2** to create an image that's compatible with the Minnowboard Max.
-
-    The launch tool sets the default architecture, and sets a version number for the design, which you can use for future updates. The first version number defaults to 10.0.0.0.
-
-    (Why a four-part version number? Learn about versioning schemes in [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements))
-
-**Install certificates**
-
-From the IoT Core Shell, install the test certificates, which you'll use to sign your test binaries. You'll only need to do this the first time you install the IoT ADK Add-on Kit.
-
-```
-installoemcerts
-```
-
-The certificates are added to the root. To learn more, see [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn756804)
-
-### Build a Raspberry Pi BSP (New for Windows 10, Version 1703)
-
-1. Extract [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip) to a folder on your hard drive, for example. `C:\BSP`.
-
-2. From the IoT Core Shell, navigate to `C:\BSP`, and run `build.cmd`. This will add the packages necessary to create a project with the RPi2 BSP.
-
-```
-cd c:\BSP
-build.cmd
-```
-For more information on available BSPs, see [Windows 10 IoT Core BSPs](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps).
-
-### Build packages
-
-From the IoT Core Shell, get your environment ready to create products by building all of the packages in the working folders. 
-
-```
-buildpkg All
-```
-
-
-### <span id="Create_a_test_project"></span>Create a test project
-
-From the IoT Core Shell, create a new product folder that uses the Rpi2 BSP. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
-
-```
-newproduct ProductA rpi2
-```
+    The default package definition file includes sample XML that you can modify to add your own driver files.
     
-The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\IoT-ADK-AddonKit\Source-\<arch>\BSP` folders.
+    ``` xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        name="Toaster"
+        namespace="Drivers"
+        owner="$(OEMNAME)"
+        legacyName="$(OEMNAME).Drivers.Toaster" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
+        <onecorePackageInfo
+            targetPartition="MainOS"
+            releaseType="Production"
+            ownerType="OEM" />
+        <drivers>
+            <driver>
+                <inf source="iaiogpio.inf" />
+            </driver>
+        </drivers>
+    </identity>
+    ```
 
-This creates the folder: `C:\IoT-ADK-AddonKit\Source-<arch>\Products\\ProductA`.
-
-### <span id="Build_an_image"></span>Build an image
-
-1.  Eject any removable storage drives, including the Micro SD card and any USB flash drives.
-
-2.  From the IoT Core Shell, build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
+2.  From the IoT Core Shell, build the package.
 
     ```
-    buildimage ProductA test
+    buildpkg Drivers.Toaster
     ```
 
-    This builds an FFU file with your basic image at `C:\IoT-ADK-AddonKit\Build\<arch>\ProductA\Test`.
+    The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Drivers.Toaster.cab**.
 
-    Troubleshooting:
-	
-	-  ERROR CODES: 0x80070005 or 0x800705b4: Unplug all external drives (including micro SD cards and USB thumb drives), and try again.  
-	If this doesn't work, go back to [Set up your PC and download the samples](set-up-your-pc-to-customize-iot-core.md) and make sure everything's installed.
+    
+## <span id="Update_your_feature_manifest"></span><span id="update_your_feature_manifest"></span><span id="UPDATE_YOUR_FEATURE_MANIFEST"></span>Update your feature manifest
 
-### <span id="Flash_an_image"></span>Flash the image to a memory card
 
-1.  Start the **Windows IoT Core Dashboard**.
+**Add your driver package to the feature manifest**
 
-2.  Plug your micro SD card into your technician PC, and select it in the tool.
+1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\OEMFM.xml**
 
-3.  From **Setup a new device**, select Device Type: **Custom**.
+2.  Create a new PackageFile section in the XML with your package file listed and give it a new FeatureID, such as "DRIVER_Toaster".
 
-4.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**, click **Browse**, browse to your FFU file (`C:\IoT-ADK-AddonKit\Build\<arch>\ProductA\Test\Flash.ffu`), then click **Next**.
+    ``` xml
+          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.Toaster.cab">
+            <FeatureIDs>
+              <FeatureID>DRIVER_Toaster</FeatureID>
+            </FeatureIDs>
+          </PackageFile>
+    ```
 
-5.  Optional: Change the default device name (Default is minwinpc.) 
+    You'll now be able to add your driver to your product by adding a reference to this feature manifest.
 
-6.  Enter your device password.
+## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
-7.  Accept the license terms, and then click **Install**. The Windows IoT Core Dashboard formats the micro SD card and installs the new image.
+1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml**.
 
-### <span id="Try_it_out"></span>Try it out
+2.  Make sure your feature manifest, Rpi2FM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
-1.  Connect your IoT device, such as a Raspberry Pi 3, into a monitor using an HDMI cable.
-    **Note**  When possible, use a direct connection to an HDMI port. The display may not appear when using DVI/VGA adapters or hubs.
+    ``` xml
+    <AdditionalFMs>
+      <!-- Including BSP feature manifest -->
+      <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
+      <!-- Including OEM feature manifest -->
+      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
+      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
+       <!-- Including the test features -->
+       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+    </AdditionalFMs>
+    ```
 
-2.  Put in the micro SD card with your image.
 
-3.  Power it on.
+3.  Add the FeatureID for your driver:
 
-    After a short while, the device should start automatically, and you should see the [IoT Core Default app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) (code-named "Bertha"), which shows basic info about the image.
+    ``` xml
+    <OEM>
+      <!-- Include BSP Features -->
+      <Feature>RPI2_DRIVERS</Feature>
+      <Feature>RPI3_DRIVERS</Feature>
+      <!-- Include OEM features-->
+      <Feature>CUSTOM_CMD</Feature>
+      <Feature>PROV_AUTO</Feature>
+      <Feature>CUSTOM_FilesAndRegKeys</Feature>
+      <Feature>DRIVER_Toaster</Feature> 
+    </OEM>
+    ```
 
-    **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
+## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
-See also [Set up your device](https://developer.microsoft.com/windows/iot/getstarted/prototype/setupdevice) for more instructions on flashing the device.
+Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
+
+1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
+2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.ffu), then click **Next**.
+4.  Enter device name and password. Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
+5.  Put the card into the IoT device and start it up.
+
+**Check to see if your driver works**
+
+1.  Use the steps in the [Toaster Driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/6c1981b8504329521343ad00f32daa847fa6083a/general/toaster/toastDrv) to test your driver.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-Leave the device on for now, and continue to [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+[Lab 1f: Build a retail image](build-retail-image.md)
