@@ -24,11 +24,9 @@ Welcome to Windows 10, version 1809! Here are some resources to get you acquain
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-|     |    |
-|   |    |
-| |  |
-|                       |   |
-|                      |   |
+|[Retail Demo Mode]()|    |
+|[Unified Write Filter]()|    |
+|[Adaptive Brightness]() |  |
 
 ## New in desktop manufacturing
 
@@ -49,7 +47,7 @@ Welcome to Windows 10, version 1809! Here are some resources to get you acquain
 |[Debugging tools for Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#debugging-tools-for-windows)|New Debugger Data Model API and support for IPV6.|
 |[Device and driver installation](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#device-and-driver-installation)|Driver verifier includes new driver validation rules.|
 [Windows Driver Frameworks (WDF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#windows-driver-frameworks-wdf)|The Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework version 2.27|
-|||
+|[WPP Software Tracing](https://docs.microsoft.com/en-us/windows-hardware/drivers/what-s-new-in-driver-development#wpp-software-tracing)|Introducing new feature: *Inflight Trace Recorder*. If the driver enables WPP tracing and WPP Recorder, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions.|
 
 
 > [!Tip]
@@ -57,7 +55,5 @@ Welcome to Windows 10, version 1809! Here are some resources to get you acquain
 
 
 ## Related topics
-
-[What's new in driver development](https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development)
 
 [What's new in Windows 10, version 1809 for IT Pros](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
