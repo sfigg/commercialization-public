@@ -98,7 +98,7 @@ You'll still need to reserve some space on the disk for the overlay. This space 
 
 ### <span id="persistentoverlay"></span> Persistent overlay
 
->[!NOTE]
+> [!NOTE]
 > This mode is experimental, and we recommend thoroughly testing it before deploying to multiple devices. This option is not used by default.
 
 On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. This can be helpful in situations where your guest users may need to access for longer periods, and may need to power off the device between uses. 
