@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# What's new in Windows 10, version 1803
+# What's new in Windows 10, version 1809
 
 Welcome to Windows 10, version 1809! Here are some resources to get you acquainted with the new features and changes introduced for Windows device and driver creators in this version of Windows 10.
 
