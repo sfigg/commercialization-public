@@ -52,10 +52,6 @@ This section describes the parts of the Windows Performance Analyzer (WPA) works
 <td><p>[My Presets](my-presets.md)</p></td>
 <td><p>Describes the <strong>My Presets</strong> window.</p></td>
 </tr>
-<tr class="odd">
-<td><p>[Select Tables](select-tables.md)</p></td>
-<td><p>Describes the <strong>Select Tables</strong> window.</p></td>
-</tr>  
 </tbody>
 </table>
 
