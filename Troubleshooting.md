@@ -26,7 +26,7 @@ You can find more information about edition IDs [here](   https://msdn.mic
 
 ### Mapping hardware vkeys on Windows 10 IoT Core
 
-Switch to reporting as a HID keyboard and sending VKs instead of consumer controls. 
+Switch to reporting as an HID keyboard and sending VKs instead of consumer controls. 
 
 ### Minimizing memory allocation
 If you want to minimize OS controlled memory and processing for display, make sure that the OS is clear and that no display is attached. Make sure the Intel INF settings are not faking a display when none is attached and configure any outputs to be external DisplayPort. This should result in DWM running but acting as if the monitor is idle. 
@@ -67,7 +67,7 @@ By default, Windows reads the form factor data from the SmBios enclosure type va
 
 IoT has a built-in Win32 tool called “SetComputerName”.  This can be called to change the computername.  A reboot is required to change the name.  Unfortunately, this utility must be called from the administrator context and UWP apps run in the DefaultAccount user context. 
   
-One way to workaround this is to run a batch file from a manually triggered scheduled task that calls SetComputerName.  The batch file, will need to read the desired computername from a text file that your main UWP app will save the name into.  For example, the UWP app could could save a file to the public documents folder and the batch file would read it from there.  The UWP app would then need to use the process launcher (to trigger the scheduled task to run (e.g. schtasks /run /TN “SetMyComputerNameTask”) 
+One way to workaround this is to run a batch file from a manually triggered scheduled task that calls SetComputerName.  The batch file will need to read the desired computername from a text file that your main UWP app will save the name into.  For example, the UWP app could save a file to the public documents folder and the batch file would read it from there.  The UWP app would then need to use the process launcher (to trigger the scheduled task to run (e.g. schtasks /run /TN “SetMyComputerNameTask”) 
   
 Read processlauncher docs [here](https://docs.microsoft.com/en-us/uwp/api/windows.system.processlauncher)
 Read schTasks docs [here](https://msdn.microsoft.com/en-us/library/windows/desktop/bb736357(v=vs.85).aspx)
