@@ -34,7 +34,7 @@ Customizable components of RDX:
 
 RDX 3.0 will be available soon. For schedule details, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
-In the meantime, for Windows 10 build 1803, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
+In the meantime, for Windows 10, versions 1803 and 1809, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
 
 Key updates to RDX 3.0 will include:
 
