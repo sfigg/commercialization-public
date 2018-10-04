@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 3ea2f306-f380-4416-9c5c-5c2b452bec5d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -81,14 +81,5 @@ The following XML output shows how to hide the EULA page during Windows Welcome.
 
 
 [OOBE](microsoft-windows-shell-setup-oobe.md)
-
- 
-
- 
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 

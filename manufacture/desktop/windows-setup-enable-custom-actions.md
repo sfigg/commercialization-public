@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: Run custom actions during a feature update
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Run custom actions during a feature update
-ms.author: themar
+ms.author: kenpacq
 ms.date: 04/20/2018
 ms.topic: article
 ms.prod: windows-hardware

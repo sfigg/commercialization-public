@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'DISM Operating System uninstall Command-Line Options'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Operating System uninstall Command-Line Options'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: windows-hardware

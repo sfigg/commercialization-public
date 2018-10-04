@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 125ef536-740c-46f1-8ecc-4e47cd79cc4e
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -79,14 +79,5 @@ The following example shows how to set the UI language to German (Germany).
 
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
-
- 
-
- 
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 

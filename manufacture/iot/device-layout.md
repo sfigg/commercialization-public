@@ -2,7 +2,7 @@
 author: kpacquer
 Description: 'IoT Device Layout'
 title: 'IoT Device Layout'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

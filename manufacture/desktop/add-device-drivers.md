@@ -1,14 +1,15 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Add device drivers'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 3: Add device drivers'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image
 ---
 
 # Lab 3: Add device drivers 

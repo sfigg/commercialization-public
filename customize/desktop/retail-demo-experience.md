@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 author: kpacquer
-ms.author: kenpacquer
-ms.date: 7/25/2018
+ms.author: kenpacq
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -40,7 +40,7 @@ Key updates to RDX 3.0 will include:
 
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
-* **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
+* **New: On-device admin (ODA) app** (part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
 * **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
 
 
@@ -74,17 +74,11 @@ The following are the specifications for the attract loop video.
 * The source video should be appropriate quality to ensure the best possible playback on the device based on its graphics rendering capabilities (resolution, color capabilities, and graphics processing power).
 * We recommend matching the video resolution to the optimal resolution on each device when possible. Otherwise, resolution should be 1920 x 1080.
 
-### Upload the video to the Microsoft RDX Submission Tool
-
-Once you’ve created your video attract loop, include it in a package using the [RDX Submission Tool](https://www.windowsretaildemo.com). The tool enables content to be targeted by language, region, and model. For more details on using the portal, please see the RDX_Submission_Tool_Onboarding_V2 document.
-
-This tool was formerly named Retail Demo Ingestion Portal (RDIP).
-
 ### Add the video to the image
 
-To include the attract loop video on the image, it must be named: **attract.wmv**
+You can replace the default attract loop video with your own customized video, which you can save to your device images. Doing so makes this video available to the shopper even if the retailer never connects the demo device to the internet. This content should not be time-sensitive or seasonal, and it should be appropriate for all regions and languages the device will ship to.
 
-Create the default set of content first. This content should be appropriate for all regions and languages the device will ship to. This content is stored in the \Neutral file path:
+Create the default set of content first. This content is stored in the \Neutral file path, and it must be named: **attract.wmv**:
 
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\Content\Neutral\AttractContent\attract.wmv`
 
@@ -101,6 +95,11 @@ Example: Canada-specific content in French:
 
 * `%programdata%\Microsoft\Windows\RetailDemo\OfflineContent\OEM\CA\Content\fr-ca\AttractContent\attract.wmv`
 
+### Add the video using the Microsoft RDX Submission Tool
+
+Add your default attract loop video, as well as any updated videos, to the [RDX Submission Tool](https://www.windowsretaildemo.com). If you don’t currently have an account for the RDX Submission Tool, please reach out to your Account Manager, and let them know which Microsoft Account (MSA) you'd like to use to access the tool.
+
+In the tool, you can target your videos by language, region, and model, so that when a targeted device is connected to the internet, it automatically replaces the video and plays it.
 
 ## Retail Demo app
 
@@ -126,24 +125,15 @@ When a shopper closes the Retail Demo app, they see the desktop of the device.
 
 In RDX 3.0, they'll also see a Digital Fact Tag to the right (unless the language reads right-to-left, in which case then the Digital Fact Tag is on the left).
 
+### Create custom content
 
-### Adding custom content to the Retail Demo app
+OEMs and Retailers can create new custom content for the Retail Demo app using the [Microsoft RDX Submission Tool](http://www.windowsretaildemo.com). If you don’t currently have an account for the RDX Submission Tool, please reach out to your Account Manager, and let them know which Microsoft Account (MSA) you'd like to use to access the tool.
 
-OEMs and Retailers can add and customize their own content for the Retail Demo app. 
+In the tool, you can create a base set of content which you can save to your device images. Doing so makes this content available to the shopper even if the retailer never connects the demo device to the internet. This content should not be time-sensitive or seasonal, and it should be appropriate for all regions and languages the device will ship to.
 
-If the device gets connected to the internet, this content can be updated throughout the day via the Retail Demo online services. 
-
-The content you store on the image should not be time-sensitive, seasonal, or require an internet connection to update, as there is no guarantee an internet connection will be available to devices in demo mode. 
-
-### Build your Retail Demo app content
-
-Customize the Retail Demo app to show off your device using the [Microsoft RDX Submission Tool](http://www.windowsretaildemo.com), which offers a friendly user interface. More detailed instructions on using the tool to customize RDX are available in the RDX_Submission_Tool_Onboarding_V2 document. If you don’t currently have an account for the RDX Submission Tool, or access to the onboarding document, please reach out to your Account Manager with the Microsoft Account (MSA) you wish to associate with access.
-
-The RDX Submission Tool offers a visual walkthrough of content build as well as the ability to download the final media and JSON packages to place in your device image. Doing so makes this content available to the shopper even if the retailer never connects the demo device to the internet.
+In the tool you can also create new or updated content which can be delivered online to your devices. This content can be targeted by language, region, and model, so that when a targeted device is connected to the internet, it automatically receives the updates and shows the new content.
 
 OEMs can specify a theme color, navigation selected-button color, and logos for the Retail Demo app, in addition to adding unique page content. Colors and logos are specified at the app level, and content is specified at the page level. OEMs can also choose between one of three templates: Hero, Immersive Hero, and Mosaic (described below).
-
-Important: Content included in the device image must not include any time sensitive material (for example, seasonal pricing or offers).
 
 ### Template options, examples, and requirements
 
@@ -166,10 +156,10 @@ Below are the media and copy requirements for the Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-*.	Jump to another page within group
-*.	Launch an app
-*.	Launch the default browser and go to a URL (online devices only)
-*.	Open media (image, video, or document)
+1.	Jump to another page within group
+1.	Launch an app
+1.	Launch the default browser and go to a URL (online devices only)
+1.	Open media (image, video, or document)
 
 Here is an example of a Hero template:
 
@@ -194,10 +184,10 @@ Below are the media and copy requirements for the Immersive Hero template:
 
 There are 4 actions that can be set for a CTA button:
 
-*.	Jump to another page within group
-*.	Launch an app
-*.	Launch the default browser and go to a URL (online devices only)
-*.	Open media (image, video, or document)
+1.	Jump to another page within group
+1.	Launch an app
+1.	Launch the default browser and go to a URL (online devices only)
+1.	Open media (image, video, or document)
 
 Below is an example of the Immersive Hero template.
 
@@ -248,7 +238,8 @@ Create the default set of content first. This content should be appropriate for 
 **For devices sold in multiple regions:**
 
 You can add region and/or language-specific versions for attract loops. When there is no region-specific or language-specific content, the default (\Neutral) content is displayed.
-For a complete list of supported languages and locales, see Locale Identifier Constants and Strings.
+
+For a complete list of supported languages and locales, see [Language Identifier Constants and Strings](https://docs.microsoft.com/windows/desktop/Intl/language-identifier-constants-and-strings).
 
 >[!NOTE]
 > To support languages, your images will need Retail Demo Mode language packs.
@@ -299,13 +290,11 @@ Many shoppers use the library content (photos, videos, documents) to fully explo
 
 ### Apps
 
-We strongly recommend you ensure that the apps included on the device take advantage of the retail demo mode. Not only will your app look amazing for a retail customer, you may even get increased app awareness due to the discovery of your app that leads to post-purchase install.  We recommend the following guidelines when developing a retail demo mode for your app:
+Include retail demo features in your Windows apps so customers who try out your PCs and devices on the sales floor can jump right in. 
 
-* **Leverage the RetailInfo API**: When a device is in retail demo mode, the apps installed on the device can be aware of the device’s retail mode state so the app experience can also be in a retail mode state. This is done using the **IsDemoModeEnabled** method of the **RetailInfo** API. It is up to the app developer to take advantage of the opportunity to create and show off a retail mode state for the app. 
+We strongly recommend you ensure that the apps included on the device take advantage of the retail demo mode. Not only will your app look amazing for a retail customer, you may even get increased app awareness due to the discovery of your app that leads to post-purchase install.
 
-  To allow the app to build an experience that is more catered to the device, the app can also query for a collection of retail device properties. Both the **IsDemoModeEnabled** and **KnownRetailInfo** properties are described below. 
-
-  For more information about the RetailInfo API, see the [Windows.System.Profile namespace](http://go.microsoft.com/fwlink/?LinkId=528544).
+We recommend the following guidelines when developing retail demo features for your app:
 
 * **Show off, but be focused**: Use the retail mode version of your app as an opportunity to showcase why it rocks and is a reason to buy a Windows device. Put your best foot forward. Keep the story simple: elevator pitch to land your app’s value prop.  
 
@@ -313,173 +302,8 @@ We strongly recommend you ensure that the apps included on the device take advan
 
 * **Minimize error and pop-up dialogs**: Error pop-ups invoke a negative experience with the app, Windows and the shopping experience. Minimize pop-ups as much as possible.
 
-For detailed guidance and requirements, see [Create an RDX app](https://docs.microsoft.com/windows/uwp/monetize/retail-demo-experience). 
+To learn more, see [Add retail demo (RDX) features to your app](https://docs.microsoft.com/windows/uwp/monetize/retail-demo-experience).
 
-### RetailInfo API
-
-**IsDemoModeEnabled property**
-
-**IsDemoModeEnabled** indicates whether retail mode is active on the device where the app is running. If **IsDemoModeEnabled** is true, launch the retail mode version of the app, and optionally query for the device’s **KnownRetailInfo** properties. 
-
-**C#**
-``` csharp
-using Windows.Storage;
-
-StorageFolder folder = ApplicationData.Current.LocalFolder;
-
-if (Windows.System.Profile.RetailInfo.IsDemoModeEnabled) 
-{
-    // Use the demo specific directory
-    folder = await folder.GetFolderAsync(“demo”);
-}
-
-StorageFile file = await folder.GetFileAsync(“hello.txt”);
-// Now read from file
-```
-
-**C++**
-``` cpp
-using namespace Windows::Storage;
-
-StorageFolder^ localFolder = ApplicationData::Current->LocalFolder;
-
-if (Windows::System::Profile::RetailInfo::IsDemoModeEnabled) 
-{
-    // Use the demo specific directory
-    create_task(localFolder->GetFolderAsync(“demo”).then([this](StorageFolder^ demoFolder)
-    {
-        return demoFolder->GetFileAsync(“hello.txt”);
-    }).then([this](task<StorageFile^> fileTask)
-    {
-        StorageFile^ file = fileTask.get();
-    });
-    // Do something with file
-}
-else
-{
-    create_task(localFolder->GetFileAsync(“hello.txt”).then([this](StorageFile^ file)
-    {
-        // Do something with file
-    });
-}
-```
-
-**JavaScript**
-``` javascript
-if (Windows.System.Profile.retailInfo.isDemoModeEnabled) {
-    console.log(“Retail mode is enabled.”);
-} else {
-    Console.log(“Retail mode is not enabled.”);
-}
-```
-
-Application behavior is dependent on the device being in retail demo mode.
-
-**KnownRetailInfo property**
-
-Query the device for its retail mode properties.
-
-**C#**
-
-```csharp
-using Windows.UI.Xaml.Controls;
-using Windows.System.Profile
-
-TextBlock priceText = new TextBlock();
-priceText.Text = RetailInfo.Properties[KnownRetailInfo.Price];
-// Assume infoPanel is a StackPanel declared in XAML
-this.infoPanel.Children.Add(priceText);
-```
-
-**C++**
-
-```cpp
-using namespace Windows::UI::Xaml::Controls;
-using namespace Windows::System::Profile;
-
-TextBlock ^manufacturerText = ref new TextBlock();
-manufacturerText.set_Text(RetailInfo::Properties[KnownRetailInfoProperties::Price]);
-// Assume infoPanel is a StackPanel declared in XAML
-this->infoPanel->Children->Add(manufacturerText);
-```
-
-**JavaScript**
-
-```javascript
-var pro = Windows.System.Profile;
-console.log(pro.retailInfo.properties[pro.KnownRetailInfoProperties.price);
-```
-
-### Retail Demo Mode IDL
-
-```js
-//  Copyright (c) Microsoft Corporation. All rights reserved.
-//
-//  WindowsRuntimeAPISet
-
-import "oaidl.idl";
-import "inspectable.idl";
-import "Windows.Foundation.idl";
-#include <sdkddkver.h>
-
-namespace Windows.System.Profile
-{
-    runtimeclass RetailInfo;
-    runtimeclass KnownRetailInfoProperties;
-
-    [version(NTDDI_WINTHRESHOLD), uuid(0712C6B8-8B92-4F2A-8499-031F1798D6EF), exclusiveto(RetailInfo)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    interface IRetailInfoStatics : IInspectable
-    {
-        [propget] HRESULT IsDemoModeEnabled([out, retval] boolean *value);
-        [propget] HRESULT Properties([out, retval, hasvariant] Windows.Foundation.Collections.IMapView<HSTRING, IInspectable *> **value);
-    }
-
-    [version(NTDDI_WINTHRESHOLD), uuid(50BA207B-33C4-4A5C-AD8A-CD39F0A9C2E9), exclusiveto(KnownRetailInfoProperties)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    interface IKnownRetailInfoPropertiesStatics : IInspectable
-    {
-        [propget] HRESULT RetailAccessCode([out, retval] HSTRING *value);
-        [propget] HRESULT ManufacturerName([out, retval] HSTRING *value);
-        [propget] HRESULT ModelName([out, retval] HSTRING *value);
-        [propget] HRESULT DisplayModelName([out, retval] HSTRING *value);
-        [propget] HRESULT Price([out, retval] HSTRING *value);
-        [propget] HRESULT IsFeatured([out, retval] HSTRING *value);
-        [propget] HRESULT FormFactor([out, retval] HSTRING *value);
-        [propget] HRESULT ScreenSize([out, retval] HSTRING *value);
-        [propget] HRESULT Weight([out, retval] HSTRING *value);
-        [propget] HRESULT DisplayDescription([out, retval] HSTRING *value);
-        [propget] HRESULT BatteryLifeDescription([out, retval] HSTRING *value);
-        [propget] HRESULT ProcessorDescription([out, retval] HSTRING *value);
-        [propget] HRESULT Memory([out, retval] HSTRING *value);
-        [propget] HRESULT StorageDescription([out, retval] HSTRING *value);
-        [propget] HRESULT GraphicsDescription([out, retval] HSTRING *value);
-        [propget] HRESULT FrontCameraDescription([out, retval] HSTRING *value);
-        [propget] HRESULT RearCameraDescription([out, retval] HSTRING *value);
-        [propget] HRESULT HasNfc([out, retval] HSTRING *value);
-        [propget] HRESULT HasSdSlot([out, retval] HSTRING *value);
-        [propget] HRESULT HasOpticalDrive([out, retval] HSTRING *value);
-        [propget] HRESULT IsOfficeInstalled([out, retval] HSTRING *value);
-        [propget] HRESULT WindowsVersion([out, retval] HSTRING *value);
-    }
-
-    [version(NTDDI_WINTHRESHOLD), static(IRetailInfoStatics, NTDDI_WINTHRESHOLD)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone), static(IRetailInfoStatics, NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    [threading(both)]
-    [marshaling_behavior(agile)]
-    runtimeclass RetailInfo
-    {
-    }
-
-    [version(NTDDI_WINTHRESHOLD), static(IKnownRetailInfoPropertiesStatics, NTDDI_WINTHRESHOLD)]
-    [version(NTDDI_WINTHRESHOLD, Platform.WindowsPhone), static(IKnownRetailInfoPropertiesStatics, NTDDI_WINTHRESHOLD, Platform.WindowsPhone)]
-    [threading(both)]
-    [marshaling_behavior(agile)]
-    runtimeclass KnownRetailInfoProperties
-    {
-    }
-}
-```
 
 ## Add retail demo mode, including language packs, to your images
 
@@ -498,7 +322,7 @@ Add each of the following packages to your images. Note, these packages must be 
     * `Microsoft-Windows-LanguageFeatures-Basic-fr-FR-Package.cab`
     * `Microsoft-Windows-LanguageFeatures-Basic-vi-VN-Package.cab`
 
-3.  Next, add the base Retail Demo pack:
+3.  Next, add the base retail demo pack:
 
     * `Microsoft-Windows-RetailDemo-OfflineContent-Content-Package.cab`
 

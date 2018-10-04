@@ -8,65 +8,131 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: baaf34ad-e859-4f8a-9ae1-5b5675d4b2e7
-author: alhopper-msft
-ms.author: alhopper
-ms.date: 05/02/2017
+author: kpacquer
+ms.author: kenpacq
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
-# Overlay for Unified Write Filter (UWF)
+# Unified Write Filter (UWF) overlay location and size
 
-Unified Write Filter (UWF) protects the contents of a volume by redirecting all write operations on that volume to the overlay, which is a virtual representation of the changes to the volume. Conceptually, an overlay is similar to a transparency overlay on an overhead projector. Any change that is made to the transparency overlay affects the projected picture as it is seen by the viewer. However, if the transparency overlay is removed, the underlying picture remains unchanged.
+The Unified Write Filter (UWF) protects the contents of a volume by intercepting write attempts to a protected volume and redirects those write attempts to a virtual overlay. 
 
-In a UWF protected system, UWF creates a single overlay, which contains information about writes to all protected volumes on a system. The overlay supports up to 16 terabytes of protected volumes.
+You can choose where the overlay is stored (RAM or disk), how much space is reserved, and what happens when the overlay fills up.
 
-## Overlay storage
+To increase uptime, set up monitoring to check if your overlay is filling up. At certain levels, your device can warn users and/or reboot the device.
 
-You can configure UWF to store the overlay either entirely in RAM (RAM-based), or to store the overlay in a pre-allocated file on the system volume (disk-based).
+## RAM overlay vs. disk overlay
 
-All information in the overlay is lost after a device restarts or experiences a power loss, regardless of how the overlay is stored.
+* **RAM overlay (default)**: The virtual overlay is stored in RAM, and is cleared after a reboot. 
 
-The overlay is created the first time the file system mounts a volume. Each time that UWF redirects a write attempt to the overlay, the disk sectors that would be modified are copied to the overlay. Because file systems do not access individual sectors on a volume, but rather clusters of sectors, the entire cluster that would be modified is copied to the overlay.
+  * By writing to RAM, you can reduce the wear on write-sensitive media like solid-state drives.
+  * RAM is often more limited than drive space. As the drive overlay fills up the available RAM, device performance could be reduced, and users will eventually be prompted to reboot the device. If your users are expected to make many large writes to the overlay, consider using a disk overlay instead.
 
-When the file system erases or deletes files that do not exist on the protected volume, UWF removes unneeded clusters from the overlay and returns the freed resources to the available pool. This primarily affects the overlay size when temporary files are created and then deleted.
+* **Disk overlay**: The virtual overlay is stored in a temporary location on the drive. By default, the overlay is cleared on reboot. 
 
-### RAM-based overlay
+  * You can use [freespace passthrough](#freespacepassthrough) to use additional free space on the drive beyond the reserved virtual overlay space.
+  * On Windows 10, version 1803, you can use [persistent overlay](#persistentoverlay) to allow users to save work in the virtual overlay even after a reboot.
+ 
+## Overlay size
 
-In a RAM-based overlay, all overlay information is kept in system memory. Because RAM-based overlays reduce access to the physical volume, they can reduce wear on write-sensitive media. RAM-based overlays can be used with read-only media.
+* Default=1024MB. Set with:
+  * [CMD](uwfmgrexe.md): `uwfmgr overlay set-size`
+  * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `NextSession/MaximumOverlaySize`
+  * [WMI](uwf-overlayconfigsetmaximumsize.md): `UWF\Overlay.SetMaximumSize`
 
-As applications continue to write to protected volumes, a RAM-based overlay consumes available free RAM until the overlay reaches a specified maximum size or reaches critically low levels of available RAM, which requires that the system be restarted. Because RAM is typically much more expensive than disk space, available RAM usually limits how long your system can operate before needing to be restarted.
+When planning device rollouts, we recommend optimizing the overlay size to fit your needs. 
 
-> [!Important]
-> When you use a RAM-based overlay, make sure to leave enough available RAM to meet at least the minimum required RAM for the system to run. For example, if your OS requires at least 2 GB of RAM, and your device has 4 GB of RAM, set the maximum size of the overlay to 2 GB or less.
+For RAM overlays, you'll need to budget some RAM for the system. For example, if the OS requires 2 GB of RAM, and your device has 4 GB of RAM, set the maximum size of the overlay to 2048MB (2 GB) or less.
 
-### Disk-based overlay
+We recommend enabling UWF on a test device, installing the necessary apps, and putting the device through usage simulations. You can use this Powershell script to find out which files are consuming space:
 
-In a disk-based overlay, UWF uses a pre-allocated file created on the system volume to increase the available space for the overlay. The maximum size of the overlay is limited to the size of the disk file. The disk file does not dynamically grow in size, but must be pre-allocated on the volume. Disk-based overlays require a [Maximum Overlay Size](uwf-overlayconfigsetmaximumsize.md) of at least 1024 MB.
+```powershell
+$wmiobject = get-wmiobject -Namespace "root\standardcimv2\embedded" -Class UWF_Overlay 
+$files = $wmiobject.GetOverlayFiles("c:") 
+$files.OverlayFiles | select-object -Property FileName,FileSize  | export-csv -Path D:\output.csv 
+```
 
-## Overlay thresholds and notifications
+The amount of overlay used will depend on:
+* Device usage patterns.
+* Apps that can be accessed. (Some apps have high write volumes and will fill up the overlay faster.)
+* Time between resets.
+* When files are deleted, UWF removes them from the overlay and returns the freed resources to the available pool.
 
-Because overlays grow in size and consume available resources as applications continue to write to protected volumes, you may want to have your device notify the user when available resources are critically low. You can configure UWF to write an event to the error log when the size of the overlay reaches or exceeds a configurable value. UWF uses Event Tracing for Windows (ETW) to write the event message.
+### <span id="warnings"></span> Warnings and critical events 
 
-You can configure a warning threshold level and a critical threshold level for the overlay size in UWF. The warning threshold value must be lower than the critical threshold value. When the size of the overlay exceeds these values, UWF writes an event. If the overlay size is reduced to below the threshold levels, possibly from deleting temporary files, UWF writes an event to indicate that the overlay size has returned to a normal operating size.
+As the drive overlay fills up the available space, you can warn your users that they're running out of space, and prompt them to reboot the device or to run a script to clear the overlay. 
 
-> [!Warning]
-> The warning and critical thresholds are triggered when the overlay size increases to meet the threshold values, and are not based on the amount of available resources remaining.
+1. Set warning levels and critical levels (optional). When the overlay is filled to this value, UWF writes an Event Tracing for Windows (ETW) message. 
 
-For more information, see [UWF\_Overlay.SetWarningThreshold](uwf-overlaysetwarningthreshold.md) and [UWF\_Overlay.SetCriticalThreshold](uwf-overlaysetcriticalthreshold.md).
+   * **Warning level**: Default=512MB. Set with:
+     * [CMD](uwfmgrexe.md): `uwfmgr overlay set-warningthreshold`
+     * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `NextSession/WarningOverlayThreshold`
+     * [WMI](uwf-overlaysetwarningthreshold.md): `UWF\_Overlay.SetWarningThreshold`
+   * **Critical level**: Default=1024MB. Set with:
+     * [CMD](uwfmgrexe.md): `uwfmgr overlay set-criticalthreshold`
+     * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `NextSession/CriticalOverlayThreshold`
+     * [WMI](uwf-overlaysetcriticalthreshold.md): `UWF\_Overlay.SetCriticalThreshold`
 
-## Overlay exhaustion
+   Note, these settings will take affect after the next reboot.
+
+2. Use Task Scheduler to detect the ETW message and to warn users to wrap up their work on the device so they do not lose their content before the overlay is cleared. You can also provide a link to script to clear the contents of the overlay. 
+
+   Create tasks that trigger on the event that the **System** log receives an event ID from **uwfvol**:
+
+   | Overlay usage       | Source  |  Level      | Event ID |
+   |---------------------|---------|-------------|----------|
+   | Warning threshold   | uwfvol  | Warning     | 1        |
+   | Critical threshold  | uwfvol  | Error       | 2        |
+   | Back to normal      | uwfvol  | Information | 3        |
+
+3. Reboot the device.
+
+### <span id="freespacepassthrough"></span> Freespace passthrough (recommended) 
+On devices with a disk overlay, you can use freespace passthrough to access your drive's additional free space.
+
+You'll still need to reserve some space on the disk for the overlay. This space is used to manage the overlay, and to store overwrites, such as system updates. All other writes are sent to free space on disk. Over time, the reserved overlay will grow slower and slower, because overwrites will just keep replacing one another.
+
+### <span id="persistentoverlay"></span> Persistent overlay
+
+>![NOTE]
+> This mode is experimental, and we recommend thoroughly testing it before deploying to multiple devices. This option is not used by default.
+
+On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. This can be helpful in situations where your guest users may need to access for longer periods, and may need to power off the device between uses. 
+
+This option gives your IT department more control over when the overlay is wiped.
+
+To turn persistent overlay on or off:
+
+```cmd
+uwfmgr overlay set-persistent (on|off)
+```
+
+To reset the overlay:
+
+```cmd
+uwfmgr overlay reset-persistentstate on
+```
+
+### Overlay exhaustion
 
 If the size of the overlay is close to or equal to the maximum overlay size, any write attempts will fail, returning an error indicating that there is not enough space to complete the operation. If the overlay on your device reaches this state, your device may become unresponsive and sluggish, and you may need to restart your device.
 
 When Windows shuts down, it attempts to write a number of files to the disk. If the overlay is full, these write attempts fail, causing Windows to attempt to rewrite the files repeatedly until UWF can determine that the device is trying to shut down and resolve the issue. Attempting to shut down by using normal methods when the overlay is full or near to full can result in the device taking a long time, in some cases up to an hour or longer, to shut down.
 
-You can often avoid this issue by using UWF to initiate the shut down or restart. You can do this by using the following methods:
+You can often avoid this issue by using UWF to automatically initiate the shut down or restart:
 
-* Use the shutdown command with [uwfmgr.exe](uwfmgrexe.md).
-* Use the restart command with [uwfmgr.exe](uwfmgrexe.md).
-* Use the [UWF\_Filter.ShutdownSystem](uwf-filtershutdownsystem.md) method in the WMI provider [UWF\_Filter](uwf-filter.md).
-* Use the [UWF\_Filter.RestartSystem](uwf-filterrestartsystem.md) method in the WMI provider [UWF\_Filter](uwf-filter.md).
+* **Shut down**: 
+  * [CMD](uwfmgrexe.md): `uwfmgr shutdown`
+  * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `ShutdownSystem`
+  * [WMI](uwf-filtershutdownsystem.md): `UWF\Filter.ShutdownSystem`
+
+* **Restart**: 
+  * [CMD](uwfmgrexe.md): `uwfmgr restart`
+  * [CSP](https://docs.microsoft.com/windows/client-management/mdm/unifiedwritefilter-csp): `RestartSystem`
+  * [WMI](uwf-filterrestartsystem.md): `UWF\Filter.RestartSystem`
+     
 
 ## Related topics
 

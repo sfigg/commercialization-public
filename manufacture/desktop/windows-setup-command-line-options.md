@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Windows Setup Command-Line Options'
 ms.assetid: 16001d04-db9f-4953-abc7-37903ef47fd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Setup Command-Line Options'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Windows Setup Command-Line Options
 
 
-The following command-line options are available for Windows Setup. Beginning with Windows 10, version 1607, you can use a setupconfig file as an alternative to passing paramters to Windows Setup on a command line. For more information, see [Windows Setup Automation Overview](windows-setup-automation-overview.md).
+The following command-line options are available for Windows Setup. Beginning with Windows 10, version 1607, you can use a setupconfig file as an alternative to passing parameters to Windows Setup on a command line. For more information, see [Windows Setup Automation Overview](windows-setup-automation-overview.md).
 
 **setup.exe** 
 

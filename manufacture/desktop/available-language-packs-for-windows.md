@@ -1,40 +1,40 @@
 ---
-author: themar
+author: kpacquer
 Description: Available Language Packs for Windows
 ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Available Language Packs for Windows
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Available Language Packs for Windows
+# Available languages for Windows
 
 
-The following tables show the supported language packs for Windows 10, Windows Server 2016, and Windows Server 2012 R2, and supported language interface packs (LIPs) for Windows 10. LIPs are available for Windows 10, but are not available for Windows Server. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+The following tables show the supported language packs for Windows 10 and Windows Server, and supported language interface packs (LIPs) for Windows 10. LIPs are available for Windows 10, but are not available for Windows Server. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
 Windows Server and Windows 10 language packs are not interchangeable. Windows Server language packs cannot be used on Windows 10, and Windows 10 language packs cannot be used on Windows Server.
 
-LIPs must be installed to the operating system that they support. Windows 10 LIPs cannot be used on Windows 8.1; similarly, Windows 8.1 LIPs cannot be used on Windows 10.
+The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
 
-To learn how to get language packs and language interface packs, see [Get language packs and LIPs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-packs-and-lips).
+To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-components).
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
 
-To learn how to add languages to Windows, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
+To learn how to add languages to Windows, see [Add Language Packs to Windows](add-and-remove-language-packs-offline-using-dism.md).
 
 ## Supported Language Packs and Language Interface Packs
 
 
 The following tables include these settings:
 
-- **Language/region**. The name of the language that will be displayed in the UI. All 38 language packs are available for Windows 10 and Windows Server 2016. In Windows Server 2012 the user interface (UI) is localized only for the 18 languages listed in bold.
-- **Language/region tag**. The language identifier based on the language tagging conventions of RFC 3066. This setting is used with the Deployment Image Servicing and Management (DISM) tool, or in an unattended answer file.
-- **Language/region ID**. The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
-- **Language/region decimal identifier**.The decimal representation of the language identifier. This setting is used in Oobe.xml.
+- **Language/region**- The name of the language that will be displayed in the UI. All 38 language packs are available for Windows 10 and Windows Server 2016. In Windows Server 2012 the user interface (UI) is localized only for the 18 languages listed in bold.
+- **Language/region tag**- The language identifier based on the language tagging conventions of RFC 3066. This setting is used with the Deployment Image Servicing and Management (DISM) tool, or in an unattended answer file.
+- **Language/region ID**- The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
+- **Language/region decimal identifier**- The decimal representation of the language identifier. This setting is used in Oobe.xml.
 
 ### Language Packs
 
@@ -82,11 +82,12 @@ The following tables include these settings:
 | Ukrainian (Ukraine) | uk-UA | 0x0422 | 1058 |
 
 
-### Language Interface Packs (LIPs)
+### Language interface packs (LIPs)
 
-Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LIPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LXPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
- 
+> [!Note]
+> Language interface packs are distributed as .appx files as of Windows 10, version 1809. To learn how to add an LIP .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
 
 | Language/region | Language/region tag | Base language/region | Language/region ID | Language/region decimal ID |
 |---|---|---|---|---|
@@ -179,7 +180,7 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 
  
 
- 
+
 
 
 

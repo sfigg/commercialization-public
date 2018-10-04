@@ -4,8 +4,8 @@ description: Add your OEM registration pages to OOBE
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 01/25/2018
 ms.topic: article
 ms.prod: windows-hardware

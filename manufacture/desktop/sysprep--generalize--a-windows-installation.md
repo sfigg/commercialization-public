@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Sysprep (Generalize) a Windows installation'
 ms.assetid: 455fa70e-6c13-45ae-ad4f-5d12e3b844e5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Sysprep (Generalize) a Windows installation'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -32,8 +32,22 @@ If you're deploying an image to computers that have identical hardware and devic
 
 ### Limits on how many times you can run Sysprep
 
-You can run the **Sysprep** command up to 8 times on a single Windows image. After running Sysprep 8 times, you must recreate your Windows image. In previous versions of Windows, you could use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when running Sysprep. If you are using a volume licensing key or a retail product key, you don't have to use `SkipRearm` because Windows is automatically activated. 
+You can run the **Sysprep** command up to 1001 times on a single Windows image. After running Sysprep 1001 times, you must recreate your Windows image. Refer the following table:
 
+| Operating System Version                           | Sysprep Count Limit  |
+|----------------------------------------------------|----------------------|
+| Windows 10, version 1803                           | 1001                 |
+| Windows 10, version 1709                           | 1001                 |
+| Windows 10, version 1703                           | 1001                 |
+| Windows 10, version 1607 and Windows Server 2016   | 1001                 |
+| Windows 10, version 1511                           | 1001                 |
+| Windows 10, version 1507                           | 1001                 |
+| Windows 8.1 and Windows Server 2012 R2             | 1001                 |
+| Windows Server 2012                                | 1001                 |
+| Windows 7 and Windows Server 2008 R2               | 3                    |
+| Windows Server 2008                                | 3                    |
+
+In previous versions of Windows, you could use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when running Sysprep. If you are using a volume licensing key or a retail product key, you don't have to use `SkipRearm` because Windows is automatically activated. 
 
 ### Microsoft Store apps
 

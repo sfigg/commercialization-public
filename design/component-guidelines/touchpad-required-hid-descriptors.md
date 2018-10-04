@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: D89DD96F-9D91-4EF6-8DEE-1FD55C7BF356
-ms.author: dongill
+ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -29,7 +29,6 @@ The following table shows the required USB HID descriptor. For more information,
 | bcdHID            | 2             | HID version number       |
 | bCountryCode      | 1             | Country code             |
 | bNumDescriptors   | 1             | Number of descriptors    |
-| bDescriptorType   | 1             | Descriptor type          |
 | bDescriptorLength | 2             | Length of the descriptor |
 
  
