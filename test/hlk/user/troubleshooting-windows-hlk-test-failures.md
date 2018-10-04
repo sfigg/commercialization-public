@@ -6,8 +6,8 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: bfe69491-eb7c-44ae-b59e-4aa6ff6c66ce
-author: aahi
-ms.author: aahi
+author: EliotSeattle
+ms.author: EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

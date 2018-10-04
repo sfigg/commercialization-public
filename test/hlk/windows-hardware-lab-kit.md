@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: fed4ec97-81cb-487c-ac17-de7c6884892b
-author: aahi
-ms.author: aahi
+author: EliotSeattle
+ms.author: EliotSeattle
 ms.date: 01/26/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -21,16 +21,21 @@ This guide provides information about the tests that are included in the Windows
 
 If you’re developing for Windows 10, you need the latest Windows HLK. This kit helps you ensure that the drivers and the system you develop are certified as compatible with Windows 10. 
 
+>[!NOTE]
+>New for 1809: Certify using the Virtual HLK (VHLK)! The VHLK is the entire Hardware Lab Kit pre-installed and pre-configured on a VHDX, ready to boot as a virtual machine. Use the VHLK to save setup time, quickly stand up a controller, and run Windows Hardware Certification from a virtual machine. 
+
+
 |To certify... | Download...|
-|-----------------|------------|
+|-----------------|------------| 
+| Windows 10, version 1809    |  [Windows HLK, version 1809](https://go.microsoft.com/fwlink/?linkid=2026646) or <br> [Windows Virtual HLK (VHLK), version 1809](https://www.microsoft.com/en-us/evalcenter/evaluate-virtual-hardware-lab-kit) - NEW!|
 | Windows 10, version 1803    |  [Windows HLK, version 1803](https://go.microsoft.com/fwlink/p/?LinkId=873010) |
-| Windows 10, version 1709    |  [Windows HLK, version 1709](https://go.microsoft.com/fwlink/p/?LinkId=859231) |
-| Windows 10, version 1703<br>Windows 10, version 1607| [Windows HLK, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=733613)|
+| Windows 10, version 1709    |  [Windows HLK, version 1709](https://go.microsoft.com/fwlink/p/?LinkId=859231) | 
+| Windows 10, version 1703<br>Windows 10, version 1607| [Windows HLK, version 1703](https://go.microsoft.com/fwlink/p/?LinkId=733613)| 
 | Windows Server 2016 |[Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)|
 
 >[!NOTE]
 >Windows HLK only supports testing on Windows 10 and Windows Server 2016 systems. For testing previous versions of Windows, use the [Hardware Certification Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124227(v=vs.85).aspx) for Windows 8.1. 
-
+ 
 ## Windows Hardware Compatibility Program
 
 To qualify for the Windows Hardware Compatibility Program, your product must pass certain tests using the Windows HLK.
@@ -61,12 +66,15 @@ Supplemental test content downloads are required for some tests related to graph
 Required downloads for tests that use supplemental content: 
 
 #### Media
+- [HLK_DXVA.iso (Windows 10, version 1809)](https://go.microsoft.com/fwlink/?linkid=2027245&clcid=0x409)
 - [HLK_DXVA.iso (Windows 10, version 1803)](https://go.microsoft.com/fwlink/?linkid=873023) 
 - [HLK_DXVA.iso (Windows 10, version 1607, 1703, and 1709)](https://go.microsoft.com/fwlink/p/?LinkId=823112) 
+- [HLK_HMFT.iso (Windows 10, version 1809)](https://go.microsoft.com/fwlink/?linkid=2027116&clcid=0x409) 
 - [HLK_HMFT.iso (Windows 10, version 1607, 1703, 1709, and 1803)](https://go.microsoft.com/fwlink/p/?LinkId=823113) 
-- [HLK_PERF.iso (Windows 10, version 1607, 1703, 1709, and 1803)](https://go.microsoft.com/fwlink/p/?LinkId=823114) 
+- [HLK_PERF.iso (Windows 10, version 1607, 1703, 1709, 1803, and 1809)](https://go.microsoft.com/fwlink/p/?LinkId=823114) 
 
 #### Graphics
+- [HLK_GRFX_FOD.zip (Windows 10, version 1809)](https://go.microsoft.com/fwlink/?linkid=2027144&clcid=0x409)
 - [HLK_GRFX_FOD.zip (Windows 10, version 1803)](https://go.microsoft.com/fwlink/p/?LinkId=873017)
 - [HLK_GRFX_FOD.zip (Windows 10, version 1709)](https://go.microsoft.com/fwlink/p/?LinkId=859270) 
 - [HLK_GRFX_FOD.zip (Windows 10, version 1703)](https://go.microsoft.com/fwlink/p/?linkid=845559) 
@@ -80,7 +88,7 @@ Required downloads for tests that use supplemental content:
 This supplemental content package is required to pass the Device and Solutions PCS Tests. On the server that has the Windows HLK controller installed, place PCSFiles.vhd at the following location:
 
 ```C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64```
-- [Download PCSFiles.vhd (March 2017)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
+- [Download PCSFiles.vhd (Windows Server 2016)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
 
 ## Download HLK Offline Documentation
 
