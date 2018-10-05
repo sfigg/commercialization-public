@@ -65,7 +65,7 @@ Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for a
 In this WinPE, you add the following
 
 - Recovery scripts used for recovery process on device
-    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
+    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/Templates/recovery)).
     - config files : generated files based on the device layout, placed at `Build\<arch>\<bspname>\recovery`.
 - Recovery customizations files (optional)
     - `RecoveryGUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. The recoveryGUI.exe can be a C++ application built for the target CPU or a .NET Framework 4 Windows from application. Newwinpe.cmd will have to be modified to add .NET Framework 4 capabilities to the WinPE image.
