@@ -13,6 +13,9 @@ ms.technology: windows-oem
 
 # Lab 1c: Add a file and a registry setting to an image
 
+> [!IMPORTANT]
+> For the powershell based commands for adding a file and registry package, see [Add your packages to your image]https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#add-your-packages-to-your-image)
+
 Files and registry keys that you add to your image often won't be specific to an architecture. For these, we recommend creating a common package that you can use across all of your device architectures.
  
 We'll create some test files and registry keys to the image, and again package them up so that they can be serviced after they reach your customers.

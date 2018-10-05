@@ -11,6 +11,9 @@ ms.technology: windows-oem
 
 # Lab 1e: Add a driver to an image
 
+> [!IMPORTANT]
+> For the powershell based commands for adding a driver, see [Add your packages to your image]https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#add-your-packages-to-your-image)
+
 In this lab, we'll add the sample driver: [Hello, Blinky!](https://developer.microsoft.com/windows/iot/samples/driverlab), package it up, and deploy it to the to a Windows 10 IoT Core device.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites

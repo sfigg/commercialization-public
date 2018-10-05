@@ -13,6 +13,10 @@ ms.technology: windows-oem
 
 # Lab 1d: Add networking and other provisioning package settings to an image
 
+> [!IMPORTANT]
+> For the powershell based commands for adding a provisioning package, see [Add your packages to your image]https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#add-your-packages-to-your-image)
+
+
 We'll create a provisioning package that contains some sample Wi-Fi settings. You can use Windows Configuration Designer to create provisioning packages that add apps, drivers, features, or modify many common settings, such as IT device management and policy settings.
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in.

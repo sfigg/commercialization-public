@@ -13,6 +13,9 @@ ms.technology: windows-oem
 
 # Lab 1f: Build a retail image
 
+> [!Important]
+> For the powershell version v6.x, see [Building a retail FFU](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#building-a-retail-ffu)
+
 We'll take our customizations, put them together, and test them in a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
@@ -83,7 +86,6 @@ We'll take our customizations, put them together, and test them in a retail buil
 	-  Subject       : Subject in the code-signing certificate (see Certificate -> Details -> Subject)
 	
 	-  CrossCertRoot : Full path of the Cross-Certificate file that was downloaed in step 2.
-	
 	
 4.	From the IoT Core Shell, enable retail signing.
 

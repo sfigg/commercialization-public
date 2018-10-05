@@ -36,7 +36,7 @@ Sample xml snippet given below for a GPT device (assumes a sector size of 512)
     <Type>{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}</Type>
 </Partition>
 ```
-See also [QCDB410C device layout](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/BSP/QCDB410C/Packages/QCDB410C.DeviceLayout-R/DeviceLayout.xml)
+See also [QCDB410C device layout](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Source-arm/BSP/QCDB410C/Packages/QCDB410C.DeviceLayout-R/DeviceLayout.xml)
 
 Sample xml snippet given below for an MBR device
 
@@ -48,16 +48,16 @@ Sample xml snippet given below for an MBR device
     <Type>0x07</Type>
 </Partition>
 ```
-See also [MBR 8GB Recovery device layout](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/DeviceLayout.MBR8GB-R/DeviceLayout.xml)
+See also [MBR 8GB Recovery device layout](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Common/Packages/DeviceLayout.MBR8GB-R/DeviceLayout.xml)
 
 ## Step 2 : Configure BCD settings
 In this step, the newly added MMOS partition is defined as a bootable partition in the BCD settings and the recovery sequence is enabled and configured to boot into this partition. These settings are available in the below given packages that you can readily use. Select GPT or MBR packages based on your device.
 
-- [Recovery.GPT-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.GPT-BCD) package
-- [Recovery.MBR-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.MBR-BCD) package
+- [Recovery.GPT-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Common/Packages/Recovery.GPT-BCD) package
+- [Recovery.MBR-BCD](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Common/Packages/Recovery.MBR-BCD) package
     - Recovery.BCD.xml declares the MMOS partition availability.
-- [Recovery.GPT-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.GPT-BcdEdit) package
-- [Recovery.MBR-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Common/Packages/Recovery.MBR-BcdEdit) package
+- [Recovery.GPT-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Common/Packages/Recovery.GPT-BcdEdit) package
+- [Recovery.MBR-BcdEdit](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Common/Packages/Recovery.MBR-BcdEdit) package
     - Recovery.BcdEdit.cmd enables recovery sequence and configures to boot into the MMOS partition.
 
 ## Step 3 : Prepare WinPE image 
@@ -65,7 +65,7 @@ Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for a
 In this WinPE, you add the following
 
 - Recovery scripts used for recovery process on device
-    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
+    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Templates/recovery)).
     - config files : generated files based on the device layout, placed at `Build\<arch>\<bspname>\recovery`.
 - Recovery customizations files (optional)
     - `RecoveryGUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. The recoveryGUI.exe can be a C++ application built for the target CPU or a .NET Framework 4 Windows from application. Newwinpe.cmd will have to be modified to add .NET Framework 4 capabilities to the WinPE image.
@@ -85,7 +85,7 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 
 ## Step 4 : Update Feature manifest file and OEMInputFile
-- Update the **\<bspname\>FM.xml** with the following changes (see [QCDB410CFM.xml sample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/BSP/QCDB410C/Packages/QCDB410CFM.xml))
+- Update the **\<bspname\>FM.xml** with the following changes (see [QCDB410CFM.xml sample](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Source-arm/BSP/QCDB410C/Packages/QCDB410CFM.xml))
 
     - Include the new device layout package, specifying new SOC name, *QC8016-R* in the example below .
     

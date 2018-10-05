@@ -20,11 +20,18 @@ There are two steps to creating your own BSP:
 
 ## Raspberry Pi BSP
 
-1. Download [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip) and extract RPi2 directory into your bsp directory (`iot-adk-addonkit\Source-arm\BSP\`)
-2. Launch [IoTCoreShell](https://github.com/ms-iot/iot-adk-addonkit), select `arm`
-3. In the IoTCoreShell, run the below command to build
-    * `buildbsp <bspname>`
-
+1. Download [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip) to a local directory, say `C:\Downloads\RPi_BSP.zip`
+2. Launch [IoTCorePShell](https://github.com/ms-iot/iot-adk-addonkit) and create or open a workspace using
+    ```powershell
+    new-ws C:\MyWorkspace <oemname> arm
+    (or) open-ws C:\MyWorkspace
+    ```
+3. Import the bsp using [Import-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md) and build using
+    ```powershell
+    Import-IoTBSP RPi2 C:\Downloads\RPi_BSP.zip
+    (or) importbsp RPi2 C:\Downloads\RPi_BSP.zip
+    buildpkg RPi2
+    ```
 > [!NOTE]
 > Raspberry Pi BSP driver sources are available at [ms-iot/bsp](https://github.com/ms-iot/bsp)
 
@@ -40,14 +47,26 @@ There are two steps to creating your own BSP:
 
 ### Instructions to use
 
-Follow the steps below to use this BSP with the Windows 10 ADK release 1709 (16299) with iot-adk-addonkit version 4.0 or later.
+Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (17763) with iot-adk-addonkit version 6.0.
 
 1. Download the BSP package and install
-2. Copy files from `C:\Program Files (x86)\Intel IoT\Source-<arch>` to `iot-adk-addonkit\Source-<arch>`
-3. Launch IoTCoreShell, select arch (x64 / x86) as required
-4. In the IoTCoreShell, run the below command to convert the BSP files to latest format and build
-    * run `.\bsptools\<bspname>\convert.cmd`
-    * `buildbsp <bspname>`
+2. Launch IoTCorePShell, and create/open your workspace
+    ```powershell
+    new-ws C:\MyWorkspace <oemname> arm
+    (or) open-ws C:\MyWorkspace
+    ```
+3. Set the source location, either the installed directory or the zip file path 
+    ```powershell
+    $Source = "C:\Program Files (x86)\Intel IoT\Source-<arch>"
+    (or) 
+    $Source = "C:\Downloads\IntelBSP.zip"
+    ```
+4. Import the bsp using [Import-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md) and build using
+    ```powershell
+    Import-IoTBSP <bspname> $Source
+    (or) importbsp <bspname> $Source
+    buildpkg <bspname>
+    ```
 
 ## Qualcomm BSPs
 
@@ -57,13 +76,18 @@ DragonBoard drivers are available at [DragonBoard 410C Software](https://develop
 
 Steps to create the drivers :
 
-1. Download the *_db410c_BSP.zip and extract to a folder say `C:\download\DB410c_BSP`
-2. Launch IoTCoreShell, select arm
-
-    * Run `.\bsptools\QCDB410C\export.cmd C:\download\DB410c_BSP C:\MyBSPs\QCDB410C` to export the required bsp cab files to a directory say `C:\MyBSPs\QCDB410C`.
-    * `set BSPPKG_DIR=C:\MyBSPs\QCDB410C` to specify the location of the bsp cabs. See the BSPFM.xml file for the cab files it looks for in `BSPPKG_DIR`.
-    * Run `buildpkg all` to create the oem packages
-    * Run `buildimage <productname> Test` to build the image
+1. Download the *_db410c_BSP.zip to a folder say, `C:\Downloads\*_db410c_BSP.zip`
+2. Launch IoTCorePShell, and create/open your workspace
+    ```powershell
+    new-ws C:\MyWorkspace <oemname> arm
+    (or) open-ws C:\MyWorkspace
+    ```
+3. Import the bsp using [Import-QCBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-QCBSP.md) and build using
+    ```powershell
+    Import-QCBSP "C:\Downloads\*_db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
+    buildpkg QCDB401C
+    ```
+    Set BSPPKG_DIR setting in the workspace xml to `C:\prebuilt\DB410c_BSP`
 
 ## Other helpful resources
 

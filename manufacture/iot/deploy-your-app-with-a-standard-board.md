@@ -46,6 +46,9 @@ You can skip these steps if you've already created and tested your app.
 
 **Create a package for an app**
 
+> [!IMPORTANT]
+> For the powershell based commands for adding a app package, see [Add your packages to your image]https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#add-your-packages-to-your-image)
+
 1.  Open the IoT Core Shell: run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create a new package for the app, for example:
