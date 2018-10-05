@@ -24,9 +24,9 @@ Welcome to Windows 10, version 1809! Here are some resources to get you acquain
 
 | Topic                                      | Description                                                                                             |
 |:-------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-|[Retail Demo Mode]()|    |
-|[Unified Write Filter]()|    |
-|[Adaptive Brightness]() |  |
+|[Retail Demo Mode](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/retail-demo-experience)| RDX 3.0 will be available soon. Connected devices will receive the update automatically.   |
+|[Unified Write Filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/unified-write-filter)| On devices with a disk overlay, you can use freespace passthrough to access your drive's additional free space. You can use a persistent overlay to allow data saved in the virtual overlay to remain even after a reboot.|
+|[Adaptive Brightness](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-mobilepc-sensors-api-adaptivebrightness) | New settings for adaptive brightness: ALRCurveVersion, DefaultSliderPosition, and IsAutobrightnessEnabledByDefault. Adaptive brightness changes the brightness of a monitor or display based on the ambient light. |
 
 ## New in desktop manufacturing
 
