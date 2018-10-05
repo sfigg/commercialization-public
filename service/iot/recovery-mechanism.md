@@ -125,12 +125,22 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 ## Step 5 : Build the image
 
-- `buildpkg.cmd all` - to build all packages.
+- Build all packages.
 
-- `buildrecovery.cmd <productname> Test` (or Retail) - to build the image. This will build the following
-    - winpe image for the specified device layout
-    - regular FFU (`Flash.ffu`)
-    - extract the required recovery files
-    - update the FFU with the recovery files and save as `Flash_Recovery.ffu`
+    ```
+    buildpkg.cmd all
+    ```
+
+- Build the recovery image.
+
+    ```
+    buildrecovery.cmd <Product> <BuildType>
+    ```
+
+-This will perform the following
+    - Create winpe image for the specified device layout
+    - Reference the regular FFU (`Flash.ffu`)
+    - Extract the required recovery files
+    - Update the FFU with the recovery files and save as `Flash_Recovery.ffu`
 
 
