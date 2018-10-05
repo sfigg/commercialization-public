@@ -78,7 +78,7 @@ In this WinPE, you add the following
 
 You can create the WinPE image for the bsp with the above contents using the below command in IoTCoreShell
 ``` 
-newwinpe.cmd <bspname> <socname>
+newwinpe.cmd <Product> <BuildType>
 ```
 This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
