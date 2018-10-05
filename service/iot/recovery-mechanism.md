@@ -137,10 +137,8 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
     buildrecovery.cmd <Product> <BuildType>
     ```
 
--This will perform the following
+- This will perform the following
     - Create winpe image for the specified device layout
     - Reference the regular FFU (`Flash.ffu`)
     - Extract the required recovery files
     - Update the FFU with the recovery files and save as `Flash_Recovery.ffu`
-
-
