@@ -59,7 +59,7 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 
 ### Build a Raspberry Pi BSP (New for Windows 10, Version 1703)
 
-1. Extract [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip) to a folder on your hard drive, for example. `C:\BSP`.
+1. Extract [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip) to a folder on your hard drive, for example. `C:\BSP`.
 
 2. From the IoT Core Shell, navigate to `C:\BSP`, and run `build.cmd`. This will add the packages necessary to create a project with the RPi2 BSP.
 
@@ -86,9 +86,9 @@ From the IoT Core Shell, create a new product folder that uses the Rpi2 BSP. Thi
 newproduct ProductA rpi2
 ```
     
-The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\IoT-ADK-AddonKit\Source-\<arch>\BSP` folders.
+The BSP name is the same as the folder name for the BSP. You can see which BSPs are available by looking in the `C:\IoT-ADK-AddonKit\Workspace\Source-\<arch>\BSP` folders.
 
-This creates the folder: `C:\IoT-ADK-AddonKit\Source-<arch>\Products\\ProductA`.
+This creates the folder: `C:\IoT-ADK-AddonKit\Workspace\Source-<arch>\Products\ProductA`.
 
 ### <span id="Build_an_image"></span>Build an image
 
@@ -97,10 +97,10 @@ This creates the folder: `C:\IoT-ADK-AddonKit\Source-<arch>\Products\\ProductA`.
 2.  From the IoT Core Shell, build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
     ```
-    buildimage ProductA test
+    buildimage ProductA Test
     ```
 
-    This builds an FFU file with your basic image at `C:\IoT-ADK-AddonKit\Build\<arch>\ProductA\Test`.
+    This builds an FFU file with your basic image at `C:\IoT-ADK-AddonKit\Workspace\Build\<arch>\ProductA\Test`.
 
     Troubleshooting:
 	
@@ -115,7 +115,7 @@ This creates the folder: `C:\IoT-ADK-AddonKit\Source-<arch>\Products\\ProductA`.
 
 3.  From **Setup a new device**, select Device Type: **Custom**.
 
-4.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**, click **Browse**, browse to your FFU file (`C:\IoT-ADK-AddonKit\Build\<arch>\ProductA\Test\Flash.ffu`), then click **Next**.
+4.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**, click **Browse**, browse to your FFU file (`C:\IoT-ADK-AddonKit\Workspace\Build\<arch>\ProductA\Test\Flash.ffu`), then click **Next**.
 
 5.  Optional: Change the default device name (Default is minwinpc.) 
 
