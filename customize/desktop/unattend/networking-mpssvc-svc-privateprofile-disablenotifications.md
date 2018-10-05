@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 02932314-ea83-435f-8013-c89d0c3c525f
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -70,7 +70,7 @@ For client editions of Windows:
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PrivateProfile\_DisableNotfications**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

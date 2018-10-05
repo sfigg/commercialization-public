@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 8475b6c1-7297-43d3-a900-bc560c4165e1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-autologon-password-plaintext.md) | Specifies whether the autologon password [Value](microsoft-windows-shell-setup-autologon-password-value.md) is hidden in the answer file. |
 | [Value](microsoft-windows-shell-setup-autologon-password-value.md) | Specifies the autologon password. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

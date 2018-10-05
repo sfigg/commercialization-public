@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 429ba2af-d8de-4f8c-89f8-9983953d05c2
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -53,7 +53,7 @@ A corporate customer can configure a non-complex password for the built-in admin
 | [PlainText](microsoft-windows-shell-setup-useraccounts-administratorpassword-plaintext.md) | Specifies whether the <code>AdministratorPassword</code> is hidden in the unattended installation answer file. |
 | [Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md) | Specifies the <code>AdministratorPassword</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

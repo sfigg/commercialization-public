@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 53fb448a-cd8a-4215-9f19-378da2d6ba88
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -48,7 +48,7 @@ This element does not appear in the **Properties** pane of Windows System Image 
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) | [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) | **Value**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

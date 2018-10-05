@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: c2b077ae-40e5-4617-93eb-0d82592f6064
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -45,7 +45,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [StartPages](microsoft-windows-ie-internetexplorer-startpages.md) | [StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md) | **StartPageKey**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

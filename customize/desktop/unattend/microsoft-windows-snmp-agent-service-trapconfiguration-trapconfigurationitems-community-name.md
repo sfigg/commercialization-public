@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 48b100ee-3f1a-4373-a371-938037e865b0
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -41,7 +41,7 @@ ms.technology: windows-oem
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

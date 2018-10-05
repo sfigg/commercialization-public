@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 530294f6-d863-4a8e-a34e-9ed6cf92870b
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **UseDomainNameDevolution**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

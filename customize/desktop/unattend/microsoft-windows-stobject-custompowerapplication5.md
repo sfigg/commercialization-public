@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 88dbb13b-eb70-4dbb-84d4-d3ebfbeb592d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ ms.technology: windows-oem
 | [ItemName](microsoft-windows-stobject-custompowerapplication5-itemname.md) | Specifies the display text of the application. |
 | [Parameters](microsoft-windows-stobject-custompowerapplication5-parameters.md) | Specifies the optional parameters to use when running the application. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

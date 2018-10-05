@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 1ecbaae7-0509-4f5d-918f-610332730109
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-password.md) | Specifies the password of the account used for authentication. |
 | [Username](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-username.md) | Specifies the user name of the account. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

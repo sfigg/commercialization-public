@@ -1,8 +1,8 @@
 ---
 title: Customizations for desktop devices
 description: Customizations for desktop devices allow you to change the UI and other settings for a desktop image.
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -36,6 +36,7 @@ These are some common ways to customize your desktop device. You will also find 
 | [Customize the taskbar](customize-the-taskbar.md)       | You can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.                                |
 | [Customize the Start layout](customize-start-layout.md) | Learn how to customize the size of the start menu, and add your own tiles to it. |
 | [Customize OOBE](customize-oobe.md)                     | When customers turn on their Windows PCs for the first time, they will see the Windows Out of Box Experience (OOBE). Customize OOBE to determine how much work customers must do to complete the OOBE screens before they can enjoy their PCs running Windows 10. |
+| [Customize the Retail Demo Experience (RDX)](retail-demo-experience.md)                     | Showcase your new devices on the retail sales floor with a rich, engaging videos and experiences. |
 | [Customize the Windows power slider](customize-power-slider.md) | The Windows Performance Power slider enables end customers to quickly and intelligently trade performance of their system for longer battery life. You can set the default slider mode for both AC and DC, and configure the power settings and PPM options that are engaged in each power slider mode. |
 | [Set dark mode](set-dark-mode.md)                       | This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode. You can set the dark mode as the default for apps using Unattend.    |
 | [Customize the Get Help app](customize-get-help-app.md) | The Get Help app empowers customers to self-help with troubleshooters, instant answers, Microsoft support articles, and more, before contacting assisted support. You can customize the Get Help app to surface your support app or support website.                      |

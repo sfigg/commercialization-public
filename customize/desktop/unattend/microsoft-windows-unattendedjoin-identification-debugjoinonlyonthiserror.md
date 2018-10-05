@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 931796e5-7baa-4d02-889f-e0d6b7e74ca5
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -49,7 +49,7 @@ This is an advanced setting designed to be used by product development and Micro
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

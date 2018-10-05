@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: DF11A73C-3F8F-4C11-9623-59E74AB29488
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -54,7 +54,7 @@ If the **Compact** setting is set to true, you must start Windows Setup from Win
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

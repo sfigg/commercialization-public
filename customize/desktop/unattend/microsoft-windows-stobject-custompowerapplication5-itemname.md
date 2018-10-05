@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 7f584e06-7dca-44f4-9585-cf2fdc150ec2
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -45,7 +45,7 @@ To use a different `ItemName` for each language, create a resource file, and ref
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

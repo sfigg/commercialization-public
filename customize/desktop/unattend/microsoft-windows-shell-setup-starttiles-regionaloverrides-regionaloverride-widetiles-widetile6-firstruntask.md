@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 32007dbd-98f3-4f57-95f3-170be3e634f0
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 4591d9e3-d6a4-4161-bedf-690e95446ede
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -29,7 +29,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [LinearityData](microsoft-windows-tabletpc-platform-input-core-linearitydata.md) | **DeviceElement**
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

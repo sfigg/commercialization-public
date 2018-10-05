@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: f4ae8d99-6d03-4373-abad-2bfec81f4b4e
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -33,7 +33,7 @@ ms.technology: windows-oem
 | [SendFaxes](microsoft-windows-fax-service-faxunattend-sendfaxes.md) | Specifies whether the fax service uses a device to send faxes. This entry applies to existing and new fax devices. |
 | [Tsid](microsoft-windows-fax-service-faxunattend-tsid.md) | Specifies the transmitting subscriber ID (TSID) sent by the fax device to a receiving fax machine. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

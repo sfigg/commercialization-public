@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 5c57d165-dfa6-4a5f-af29-432188dc15cf
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -45,7 +45,7 @@ This element does not appear in the **Properties** pane of Windows System Image
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

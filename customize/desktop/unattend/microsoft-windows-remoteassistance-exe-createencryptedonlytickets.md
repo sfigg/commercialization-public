@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 325d450d-c35f-45f7-9950-404676a3ede5
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md) | **CreateEncryptedOnlyTickets**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

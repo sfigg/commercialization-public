@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 68a56781-3d24-452c-9eb4-bb516e1fc9c8
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -70,7 +70,7 @@ For client editions of Windows and for Windows RT 8.1:
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **DisableStatefulPPTP**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

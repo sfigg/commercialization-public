@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: d1fef5cc-d0a6-4647-90af-b07bc04dfcf1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -44,7 +44,7 @@ This setting has no effect on Server Core installations.
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

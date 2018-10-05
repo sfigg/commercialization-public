@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: c689f2ae-59dc-4e9d-8e39-1bac6f31ff6f
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -43,7 +43,7 @@ This setting is optional.
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

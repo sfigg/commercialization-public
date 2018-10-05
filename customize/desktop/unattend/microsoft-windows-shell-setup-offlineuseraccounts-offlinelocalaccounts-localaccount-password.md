@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 7AB3A2BB-DD06-4146-A824-AC34D3BA9D26
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password-plaintext.md) | Specifies whether the [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md) password is hidden in the answer file. |
 | [Value](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password-value.md) | Specifies the [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md) password. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: e4ce9771-cd29-4cd0-8b3c-9b0e77b8096b
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) | Specifies details about the cluster virtual IP addresses. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

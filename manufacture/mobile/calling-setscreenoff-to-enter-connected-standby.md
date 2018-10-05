@@ -4,7 +4,7 @@ Description: Calling SetScreenOff to enter connected standby
 ms.assetid: b9fddd1f-485b-4b09-9b18-93b994ebc076
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Calling SetScreenOff to enter connected standby
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

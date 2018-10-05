@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 59ce39b3-5516-4cea-8eae-35baba20e33f
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -37,7 +37,7 @@ ms.technology: windows-oem
 | [Timeout](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-timeout.md) | Specifies the number of seconds for which the client affinity would be preserved across configuration changes in a cluster. |
 | [VirtualIpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-virtualipaddress.md) | Specifies the virtual IP address of the port rule. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

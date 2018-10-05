@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 37dbfd09-f3c1-4ac7-ab4f-c864e3616cbe
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials-password.md) | Specifies the password of the account to use for authentication. |
 | [Username](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials-username.md) | Specifies the user name of the account to use for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

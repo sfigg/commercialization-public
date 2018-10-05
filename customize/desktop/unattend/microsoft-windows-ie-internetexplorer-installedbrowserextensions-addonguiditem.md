@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 843859f7-dc85-4fab-a08b-b709b1671de7
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ Browser Extensions are plug-in modules used to add functionality to Internet Exp
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuid](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem-addonguid.md) | Specifies a GUID for a Browser Extension. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

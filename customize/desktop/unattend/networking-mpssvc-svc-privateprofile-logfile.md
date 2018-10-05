@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: a49c540a-194c-48c2-b8cd-0ea4374aa450
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -43,7 +43,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PrivateProfile\_LogFile**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

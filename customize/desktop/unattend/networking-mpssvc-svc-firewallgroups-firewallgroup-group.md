@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 63eb28d1-3b5f-467e-bd34-a679a6e9aa83
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -52,7 +52,7 @@ For more information on the `Get-NetFirewallRule` command, see [Net Security](ht
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Group**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

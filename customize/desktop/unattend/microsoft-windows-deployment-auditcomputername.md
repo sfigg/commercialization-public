@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: f8a6f20e-056c-4d65-9a33-3f1e592f9854
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) | Specifies whether to restart the computer immediately after specifying the [Name](microsoft-windows-deployment-auditcomputername-name.md) setting. |
 | [Name](microsoft-windows-deployment-auditcomputername-name.md) | Specifies the computer name to use during audit mode. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 7abd660b-13c4-4860-88d2-c67ddad32edc
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +30,7 @@ For information about creating custom toolbars, see the MSDN topic: [Creating Cu
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem.md) | Specifies settings for a Browser Extension. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

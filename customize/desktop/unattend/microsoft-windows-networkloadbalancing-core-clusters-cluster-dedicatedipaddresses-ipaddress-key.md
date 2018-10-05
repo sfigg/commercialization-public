@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 148ace16-0efb-4eca-8c35-4f733bca8f15
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -45,7 +45,7 @@ ms.technology: windows-oem
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 4c9ea64e-a02d-4066-bc4c-5c5b9a8a9056
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -46,7 +46,7 @@ This setting refers to a directory where the log files are written, rather than 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

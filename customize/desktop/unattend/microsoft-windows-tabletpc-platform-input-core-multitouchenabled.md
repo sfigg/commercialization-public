@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: f1bb3799-b225-4bc5-a200-426a82f43d14
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | **MultiTouchEnabled**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

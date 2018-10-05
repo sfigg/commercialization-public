@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 5b23171f-3c76-4c79-ae15-bb4c8fcc65b7
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -31,7 +31,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 | [ShowMediaCenter](microsoft-windows-shell-setup-windowsfeatures-showmediacenter.md) | Specifies whether to show entry points for Media Center. |
 | [ShowWindowsMediaPlayer](microsoft-windows-shell-setup-windowsfeatures-showwindowsmediaplayer.md) | Specifies whether to show entry points for Windows Media Player. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

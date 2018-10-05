@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 9708430e-cf23-4d46-8177-127d0435767d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -41,7 +41,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svc-firewallgroups.md) | [FirewallGroup](networking-mpssvc-svc-firewallgroups-firewallgroup.md) | **Key**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

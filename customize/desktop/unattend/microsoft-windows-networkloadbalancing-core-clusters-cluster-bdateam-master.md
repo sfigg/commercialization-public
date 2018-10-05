@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: b76b325c-9cd5-448a-8c9b-85dfa85e8927
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

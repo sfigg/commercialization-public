@@ -4,8 +4,8 @@ description: Customize the Windows Out of Box experience
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -42,8 +42,8 @@ The following is a non-exhaustive list of screens the user may see during OOBE, 
 1. **Set up Office**. This screen is only displayed if the user is connected to a network, and has provided their Microsoft account information. Content on the page will vary depending on the user’s account type. For example, if their Microsoft account qualifies for a free trial of Office, the page will encourage them to setup their free trial. This is a cloud service page.
 1. **Payment information**. New in Windows 10, version 1803. Only displays if a user opts-in to a free trial of Office from the **Set up Office** screen. This is a cloud service page.
 1. **Make Cortana my personal assistant**
-1. **OEM Registration pages**
 1. **Privacy settings**. Users will see up to seven privacy settings on this screen. Not all users will see the same settings.
+1. **OEM Registration pages**
 
 > [!Note]
 > Some pages displayed during OOBE are delivered via cloud service, as opposed to being delivered as part of a Windows release. Cloud service pages can be rolled out to users, or groups of users, at any time. Page content can also be modified or adapted based on user input. Using cloud service for OOBE pages enables Microsoft to offer targeted, relevant content to users quickly, rather than waiting for the next Windows release.

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 6d7164ea-3aa8-441c-834b-fe3509d0cbc8
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **PrivateProfile\_EnableFirewall**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

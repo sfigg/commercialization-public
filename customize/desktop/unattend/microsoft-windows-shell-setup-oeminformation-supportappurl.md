@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: DB690B4B-4FCC-4074-97D7-C339BB8C24D3
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -36,7 +36,7 @@ For example, in the following app manifest file snippet, the **Protocol Name** i
 
 This value is required, unless [`SupportURL`](microsoft-windows-shell-setup-oeminformation-supporturl.md) is present, in which case it is optional. If both are supplied, `SupportAppURL` is used. Add a parameter with a unique value to identify traffic coming from the Get Help app.
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditUser
 

@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: How to boot a PC and install Windows
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Boot and install Windows
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 24b1b2c1-26e7-4d1b-8b09-8f0b11499e16
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ You can extend only NTFS file-system partitions.
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

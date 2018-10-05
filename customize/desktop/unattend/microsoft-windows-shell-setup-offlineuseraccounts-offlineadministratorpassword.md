@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: ACD2964A-069A-4E83-A3B9-08E40176979B
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword-plaintext.md) | Specifies whether the <code>OfflineAdministratorPassword</code> is hidden in the unattended installation answer file. |
 | [Value](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword-value.md) | Specifies the <code>OfflineAdministratorPassword</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

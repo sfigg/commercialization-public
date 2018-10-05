@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 1e4395fa-c516-44d3-9ced-a69f70744c59
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Domain](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domain.md) | Specifies the name of the domain for the <code>DomainAccountList</code>. |
 | [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md) | Specifies the details of domain accounts to be added to local security groups on the computer during installation. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

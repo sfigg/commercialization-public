@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 0c114602-099e-476d-971a-53cead3b51c0
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -52,7 +52,7 @@ For unattended installations, you must specify either the **InstallTo** or the [
 | [DiskID](microsoft-windows-setup-imageinstall-osimage-installto-diskid.md) | Specifies the disk identifier of the hard disk on which to install Windows. |
 | [PartitionID](microsoft-windows-setup-imageinstall-osimage-installto-partitionid.md) | Specifies the partition identifier of the partition on which to install Windows. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 9da15e6d-5dd2-44fe-a423-3f433f0c7512
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ ms.technology: windows-oem
 | [Name](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-name.md) | Specifies the user name for a <code>LocalAccount</code>. |
 | [Password](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password.md) | Specifies the password for a <code>LocalAccount</code> and whether the password is hidden in the unattended installation answer file. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

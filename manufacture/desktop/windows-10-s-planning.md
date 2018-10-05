@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Planning a Windows 10 in S mode image.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Planning a Windows 10 in S mode image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -200,7 +200,5 @@ After you configure your Windows 10 S PC for recovery scenarios, validate that i
 
 ## Retail Demo eXperience (RDX)
 
-Microsoft will provide updated content for RDX that will need to be deployed during Manufacturing. This updated content includes new content packages with Windows 10 Pro in S mode (Windows 10 S) specific marketing messages for Windows and Office. 
-
-The Updated RDX supersedes previously released RDX included in the RS2 Features on Demand.  The updated RDX which includes Windows 10 Pro in S mode (Windows 10 S) specific content can be used on all SKUs. The RDX will detect the Windows edition to display the corresponding RDX content. 
+In the Retail Demo Experience (RDX), Windows detects Windows 10 S editions and displays marketing messages with info about Windows 10 S for Windows and Office. 
 

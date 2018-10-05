@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 21e2c6c1-1dda-4a94-8fb0-ab3c2980a46e
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Key](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-key.md) | Specifies a unique string identifier for the driver path. |
 | [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md) | Specifies a local or UNC path that contains additional out-of-box device drivers that you copy to the Windows image. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

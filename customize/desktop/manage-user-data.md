@@ -4,8 +4,8 @@ description: Generate a public/private key pair for customer data encryption and
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 01/25/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -24,7 +24,7 @@ If a customer enters information into the OEM registration pages, the following 
 
 The timestamp of the user's out of box experience is also added to the Windows registry under this key:
 
-`HKLM\SOFTWARE\Microsoft\WindowsCurrentVersion\OOBE\Stats [EndTimeStamp]`
+`HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE\Stats [EndTimeStamp]`
 
 This registry value is created regardless of whether the registration pages are included in OOBE. The timestamp is written in UTC (Coordinated Universal Time) format; specifically, it is a `SYSTEMTIME` value written as a serialized blob of data to the registry.
 

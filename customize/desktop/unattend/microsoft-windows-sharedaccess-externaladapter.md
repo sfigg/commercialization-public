@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2b8745d1-06e6-40a5-82be-8989feb1132f
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -42,7 +42,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

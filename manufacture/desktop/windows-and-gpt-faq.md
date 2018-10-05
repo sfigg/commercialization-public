@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Frequently asked questions about Windows and GPT.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows and GPT FAQ'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -231,7 +231,7 @@ After the disk is partitioned, there will be no free space left to create an MSR
 
 When initially created, the size of the MSR depends on the size of the disk drive:
 - On drives less than 16GB in size, the MSR is 32MB.
-- On drives greater than or equal two 16GB, the MSR is 128 MB.
+- On drives greater than or equal to 16GB, the MSR is 128 MB.
 
 As the MSR is divided into other partitions, it becomes smaller.
 
@@ -327,7 +327,7 @@ Yes, Microsoft offers [MBR2GPT.exe](https://docs.microsoft.com/en-us/windows/dep
 
 NTFS is recommended on all basic data partitions and all dynamic volumes. Windows Setup and the Disk Management snap-in offer only NTFS. To circumvent that, the partition or volume must be formatted explicitly via the Format command-line tool.
 
-## manipulating GPT disks and their contents
+## Manipulating GPT disks and their contents
 
 ### How do I create a GPT disk?
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 9b6c8795-e16d-45ee-aa9c-a0e0fa430e90
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [ImageGroup](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage-imagegroup.md) | Specifies the image group of the image to be installed. |
 | [ImageName](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage-imagename.md) | Specifies the name of the image to be installed. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

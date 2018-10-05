@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Oobe.xml Settings'
 ms.assetid: 2c8ecddc-7099-451e-a069-642f654d4fbf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Oobe.xml Settings'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -95,16 +95,16 @@ The following table shows description for OEM customization and registration pag
 | | \<subtitle> | Required if registration element is used. Text to describe the Registration page. |
 | <**customerinfo**> | | | |
 | | \<label> | Text to label customerinfo. Rquired for customerinfo to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
-| | \<defaultvalue> | Value to set customerinfo as selected or not. If this field is checked, information from the four input fields will be provided via asymmetric key encryption. If not checked, no information from the four input fields will be provided. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| | \<defaultvalue> | Value to set customerinfo as selected or not. If this field is checked, information from the four input fields will be provided via asymmetric key encryption. If not checked, no information from the four input fields will be provided. | `True` or `False`. True means the check box default condition is selected. False means the check box default condition isn't selected. |
 | <**checkbox1**> | | | |
 | | \<label> | Text to label checkbox1. Required for checkbox1 to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
-| | \<defaultvalue> | Value to set checkbox1 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| | \<defaultvalue> | Value to set checkbox1 as selected or not selected. | `True` or `False`. True means the check box default condition is selected. False means the check box default condition isn't selected. |
 | \<**checkbox2**> | | | |
 | | \<label> | Text to label checkbox2. Required for checkbox2 to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
-| | \<defaultvalue> | Value to set checkbox3 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| | \<defaultvalue> | Value to set checkbox3 as selected or not selected. | `True` or `False`. True means the check box default condition is selected. False means the check box default condition isn't selected. |
 | <**checkbox3**> | | | |
 | | \<label> | Text to label checkbox3. Required for checkbox3 to appear. | String of up to 250 characters. We strongly recommend that you use no more than 100 characters because this length of text will fit on one line. |
-| | \<defaultvalue> | Value to set checkbox3 as selected or not selected. | True or False. True means the check box default condition is selected. False means the check box default condition isn't selected. |
+| | \<defaultvalue> | Value to set checkbox3 as selected or not selected. | `True` or `False`. True means the check box default condition is selected. False means the check box default condition isn't selected. |
 | <**link1**> | | | |
 | | \<label> | Label for the link to the HTML file. Required for link1 to appear. | String of up to 100 characters.|
 | | \<link> | File must be named linkfile1.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. | linkfile1.html |
@@ -114,7 +114,7 @@ The following table shows description for OEM customization and registration pag
 | <**link3**> | | | |
 | | \<label> | Label for the link to the HTML file. Required for link3 to appear. | String of up to 100 characters.|
 | | \<link> | File must be named linkfile3.html. OOBE searches for these files under the oobe\info folder. OOBE searches for files under the appropriate locale and language specific subfolders of oobe\info. | linkfile3.html |
-| <**hideSkip**> | | Optional. Controls whether or not the Skip button is displayed to the user.  Default is False, resulting in the skip button being visible. | True or False. True means the skip button is not visible to the user. False means the skip button is displayed as an option to the user. |
+| <**hideSkip**> | | Optional. Controls whether or not the Skip button is displayed to the user.  Default is False, resulting in the skip button being visible. | `True` or `False`. True means the skip button is not visible to the user. False means the skip button is displayed as an option to the user. |
 
 <br>
 The following table shows values for language and location.
@@ -122,10 +122,10 @@ The following table shows values for language and location.
 | Element | Setting | Description | Value |
 | ------- | ------ | ----------- | ----- |
 | <**defaults**> | | | |
-| | \<language> | Specifies the default language on the system. | Decimal identifier for language. These values can be found in the following topic, [Available Language Packs for Windows.](available-language-packs-for-windows.md) |
-| | \<location> | Specifies the default location on the system. | GeoID. [A list of GeoIDs is available here.](https://msdn.microsoft.com/en-us/library/dd374073%28VS.85%29.aspx) |
-| | \<keyboard> | Specifies the default timezone on the system. | Keyboard ID string. This can be found with the GetKeyboardLayoutList API.  Or, by prepending a colon and the appropriate LCID to one of the keyboard layout IDs listed under HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts |
-| | \<adjustforDST> | Specifies whether to adjust for Daylight Saving Time. | True or False. True means adjust for Daylight Saving Time based on the time zone. False means always remain on Standard Time. |
+| | \<language> | Default language. | Language identifier (decimal), for example, French = `3084`. For values, see [Available Language Packs for Windows](available-language-packs-for-windows.md). |
+| | \<location> | Default location. | GeoID (decimal), example, Canada = `39`. For values, see [Table of Geographic Locations](https://docs.microsoft.com/windows/desktop/Intl/table-of-geographical-locations) |
+| | \<keyboard> | Specify both locale and keyboard layout in hexadecimal, separated by a colon. | Specify both locale and keyboard layout in hexadecimal, separated by a colon. For example, for US English input/keyboard, use 0409:00000409. For values, see [Default Input Profiles (Input Locales)](default-input-locales-for-windows-language-packs.md) |
+| | \<adjustforDST> | Specifies whether to adjust for Daylight Saving Time. | `True` or `False`. True means adjust for Daylight Saving Time based on the time zone. False means always remain on Standard Time. |
 
 <br>
 The following table shows values for HID setup.

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: d37403a5-04d0-417c-8309-66d58397af12
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -60,7 +60,7 @@ The user is also warned if any of the following conditions apply (provided [Disp
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [DisplayReport](microsoft-windows-setup-compliancecheck-displayreport.md) | A string that specifies in what circumstances the user interface (UI) is displayed for this item. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

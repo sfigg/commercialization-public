@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 6ea4d3c1-c86b-4a7c-8162-10bc2cdb9111
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 | [Community_Name](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-community-name.md) | Specifies the name of the community to which Simple Network Management Protocol (SNMP) sends traps. |
 | [Traps](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-traps.md) | Specifies the IP addresses to which SNMP sends traps. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: ea9e9257-3335-47af-a224-60964eb79c1c
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -82,11 +82,8 @@ The following XML example shows how to set Windows Welcome to always hide the *
 ```
 
 ## Related topics
-
-
-[NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)
-
 [OOBE](microsoft-windows-shell-setup-oobe.md)
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 
  
 

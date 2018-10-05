@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 1ceec680-17ea-4730-ae2d-afe5f1509e1d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [StartPageKey](microsoft-windows-ie-internetexplorer-startpages-startpage-startpagekey.md) | Specifies a unique string for a start page. |
 | [StartPageUrl](microsoft-windows-ie-internetexplorer-startpages-startpage-startpageurl.md) | Specifies the URL of a start page. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

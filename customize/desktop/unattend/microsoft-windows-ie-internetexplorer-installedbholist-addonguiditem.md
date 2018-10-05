@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 6773df92-8d2b-4c97-938b-bac673e3d53c
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ Browser Help Objects are plug-in modules used to add functionality to Internet E
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuid](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem-addonguid.md) | Specifies a GUID for a Browser Help Object. |
  
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

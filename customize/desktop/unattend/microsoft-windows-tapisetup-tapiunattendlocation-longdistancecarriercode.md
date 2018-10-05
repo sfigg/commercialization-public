@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: b3d12735-2359-47be-b660-cf7d06fa4ee1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -42,7 +42,7 @@ If this element is not applicable in your country or region, enter an empty stri
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

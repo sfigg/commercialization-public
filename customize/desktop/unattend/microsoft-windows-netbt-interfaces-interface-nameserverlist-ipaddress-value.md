@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: e9c4df7a-b8aa-45ab-a090-811b72109889
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -43,7 +43,7 @@ This element does not appear in the **Properties** pane of Windows System Image
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

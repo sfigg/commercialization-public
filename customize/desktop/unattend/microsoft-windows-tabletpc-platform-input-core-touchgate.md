@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 4ca95a68-1df4-4bca-8772-465e6a6f22c3
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | **TouchGate**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 offlineServicing

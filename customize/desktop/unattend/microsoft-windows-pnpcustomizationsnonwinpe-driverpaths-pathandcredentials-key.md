@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 4b509bb0-a727-4b06-b6a2-75595ae0df5b
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -42,7 +42,7 @@ The value for `Key` is added to the answer file as an attribute of the [PathAndC
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

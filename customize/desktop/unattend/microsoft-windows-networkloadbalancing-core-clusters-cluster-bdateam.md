@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 63385903-c6f0-41cb-baae-db3ce62341b6
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -29,7 +29,7 @@ ms.technology: windows-oem
 | [ReverseHash](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-reversehash.md) | Specifies whether the adapter reverses the source and destination IP addresses and ports before making load-balancing decisions. |
 | [Team](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-team.md) | Specifies a valid Globally Unique Identifier (GUID) that identifies a BDA team. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

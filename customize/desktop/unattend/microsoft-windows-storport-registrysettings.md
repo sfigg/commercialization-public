@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ACB4128-511E-446C-A08B-3E64AC1453EC
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +23,7 @@ Provides the Unattend settings to allow you to configure the timer resolution fo
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
-| [TelemetryPerformanceHighResolutionTimer](microsoft-windows-storport-registrysettings-telemetryperformancehighresolutiontimer.md) | **This setting is deprecated((. Enables high resolution timer for hourly IO latency summaries in Storport event logs. |
+| [TelemetryPerformanceHighResolutionTimer](microsoft-windows-storport-registrysettings-telemetryperformancehighresolutiontimer.md) | **This setting is deprecated**. Enables high resolution timer for hourly IO latency summaries in Storport event logs. |
 
 ## Applies to
 

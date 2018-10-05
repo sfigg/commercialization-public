@@ -20,6 +20,7 @@ ms.technology: windows-oem
 
 
 -   [HMFT Testing Prerequisites](hmft-testing-prerequisites.md)
+-   [DXVA Testing Prerequisites](dxva-testing-prerequisites.md)
 -   [Webcam Testing Prerequisites](webcam-testing-prerequisites.md)
 -   [Troubleshooting Device.Streaming Testing](troubleshooting-devicestreaming-testing.md)
 

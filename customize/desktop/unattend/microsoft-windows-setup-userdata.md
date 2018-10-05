@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 24c2c860-ac2e-47c4-9a67-0d1dd3a3b364
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ ms.technology: windows-oem
 | [Organization](microsoft-windows-setup-userdata-organization.md) | Specifies the name of the organization that owns the computer. |
 | [ProductKey](microsoft-windows-setup-userdata-productkey.md) | Specifies the product key to use, which determines the edition of Windows to install. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

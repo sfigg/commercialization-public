@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 505C1B2B-1F8A-4C5B-8944-CD9BC44DF36D
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [OfflineDomainAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount.md) | Specifies the domains and the domain accounts to be created. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

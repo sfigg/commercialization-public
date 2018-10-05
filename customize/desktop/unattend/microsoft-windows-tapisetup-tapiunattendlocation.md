@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 86aeb8bd-8ef1-44cf-82cb-fa779c2aa26c
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -34,7 +34,7 @@ If one of the child elements is not applicable in your country or region, you mu
 | [OutsideAccess](microsoft-windows-tapisetup-tapiunattendlocation-outsideaccess.md) | Specifies the number to dial to access an outside line from this location. |
 | [PulseOrToneDialing](microsoft-windows-tapisetup-tapiunattendlocation-pulseortonedialing.md) | Specifies whether to use pulse dialing or tone dialing. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

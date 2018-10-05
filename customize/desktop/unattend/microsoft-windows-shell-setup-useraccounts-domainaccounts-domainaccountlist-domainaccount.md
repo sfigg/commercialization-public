@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2a1579b2-df8f-4116-b56d-a3078e28c856
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Group](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount-group.md) | Specifies the group to which the <code>DomainAccount</code> belongs. |
 | [Name](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount-name.md) | Specifies the name of the <code>DomainAccount</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

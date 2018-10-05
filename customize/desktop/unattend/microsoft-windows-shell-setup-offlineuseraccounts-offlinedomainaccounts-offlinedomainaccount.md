@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2D5C2EA6-8B98-47C4-8338-A8109316936B
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [Group](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-group.md) | Specifies the group to which the domain account belongs. |
 | [SID](microsoft-windows-shell-setup-offlineuseraccounts-offlinedomainaccounts-offlinedomainaccount-sid.md) | Specifies the security identifier of the domain account. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 offlineServicing
 

@@ -6,8 +6,8 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -29,7 +29,7 @@ Insecure guest logons are used by file servers to allow unauthenticated access t
 | 0                              | SMB client rejects insecure guest logons. <br/>This is the default, and recommended, value.    |
 | 1                              | SMB client allows insecure guest logons.                                                       |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

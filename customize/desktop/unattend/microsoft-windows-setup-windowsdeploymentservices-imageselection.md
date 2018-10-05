@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: d3a5536d-9532-427c-abf2-ed23fe30f68c
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [InstallTo](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto.md) | Specifies the location to which the image is to be installed. |
 | [WillShowUI](microsoft-windows-setup-windowsdeploymentservices-imageselection-willshowui.md) | Specifies in what circumstances the UI is displayed. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

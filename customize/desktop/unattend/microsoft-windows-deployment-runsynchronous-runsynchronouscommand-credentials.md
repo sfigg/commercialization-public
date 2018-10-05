@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: e8bb03c3-b591-49f8-9db1-1d37b3bb2651
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-password.md) | Specifies the password of the account to use for authentication. |
 | [Username](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-username.md) | Specifies the user name of the account to use for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditUser
 

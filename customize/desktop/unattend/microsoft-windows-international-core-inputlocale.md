@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 9c290797-cdde-41db-b3d8-3d03a7dc7cca
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -83,16 +83,5 @@ The following example shows how to set the input locale to the English (US) Dvor
 
 ## Related topics
 
-
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
-
- 
-
- 
-
-
-
-
-
-
-
+[Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)

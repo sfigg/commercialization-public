@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 7060a68c-cd05-4fee-a0cc-92538e1a1d6d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +30,7 @@ ms.technology: windows-oem
 > [!Note]
 > If the specified settings cannot be set on the display device, Windows attempts to match the requested mode as closely as possible.
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 67491f8a-22bf-47be-882a-5e7d52d85b92
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md) | Specifies the list of name servers. |
 | [NetbiosOptions](microsoft-windows-netbt-interfaces-interface-netbiosoptions.md) | Specifies security settings for the NetBIOS service. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

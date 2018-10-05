@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 87608073-873b-4c07-a98c-bc4c1f401919
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [DiskID](microsoft-windows-setup-imageinstall-dataimage-installto-diskid.md) | Specifies the identification number of the disk on which to install the data image. |
 | [PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md) | Specifies the identification number of the partition on which to install the data image. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

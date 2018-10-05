@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: ca095722-35da-453a-84b5-59e8797648b2
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ If the region of the current user account is among those in the Start Tile regio
 | [AppId](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile12-appid.md) | Specifies the Microsoft Store apps appearing on square tiles on the <strong>Start</strong> screen. |
 | [FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile12-firstruntask.md) | Specifies the background task that is active, or live, by default for the tile. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

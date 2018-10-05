@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 765b659c-d699-4e03-aa56-9d5ab028b85f
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -32,7 +32,7 @@ ms.technology: windows-oem
 > [!Note]
 > The `Key` XML attribute does not appear in the <strong>Properties</strong> pane of Windows System Image Manager (Windows SIM) until you add this IP Address to the answer file.
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 590f6c68-4a5a-4feb-9dc0-c0bd5270dfe4
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +30,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 | [Key](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-key.md) | Specifies a unique key for the community. |
 | [Value](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-value.md) | Specifies the type of permissions that the agent has. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

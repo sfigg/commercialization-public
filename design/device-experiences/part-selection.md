@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: F84FA615-927E-4AD4-A35B-DE729D43E36A
-ms.author: dongill
-ms.date: 05/02/2017
+ms.author: eliotgra
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -130,7 +130,7 @@ From the above factors, \#3 and \#4 are very difficult or almost impossible to c
 
 Modern Standby causes a system to be powered down more aggressively to meet system power requirements. Without any safeguards in place, this could cause excessive wear on rotational drives. However, Windows 10 attempts to balance power savings with device reliability through a mechanism called adaptive D3 idle timeout. With adaptive D3 idle timeout, the system detects excessive power cycling and reduces it by increasing the D3 idle timeout, thus keeping the hard drive in a D0 state for a longer period. This mechanism prevents excess wear and tear to the hard drive that may reduce its long-term reliability and violate warranty claims. However, it also increases a device’s power consumption. 
 
-By default, systems with rotational storage will only have Disconnected Standby enabled. It is possible to enable Connected Standby on these systems by changing a [Power Controls setting](https://review.docs.microsoft.com/en-us/windows-hardware/customize/power-settings/power-controls-ignorecscompliancecheck?branch=alhopper-rs4). Please note that this is not recommended. It is imperative to understand the risks and perform [reliability testing](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/basic-functionality-and-reliability-testing) before enabling Connected Standby on a system with rotational storage. 
+By default, systems with rotational storage will only have Disconnected Standby enabled. It is possible to enable Connected Standby on these systems by changing a [Power Controls setting](https://docs.microsoft.com/windows-hardware/customize/power-settings/power-controls-ignorecscompliancecheck). Please note that this is not recommended. It is imperative to understand the risks and perform [reliability testing](https://docs.microsoft.com/windows-hardware/design/device-experiences/basic-functionality-and-reliability-testing) before enabling Connected Standby on a system with rotational storage. 
  
 The following points summarize storage guidance for Modern Standby systems: 
 

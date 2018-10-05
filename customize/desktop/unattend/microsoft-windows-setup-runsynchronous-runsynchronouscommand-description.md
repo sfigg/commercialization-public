@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: e461bc3a-3382-4937-a2cb-0dbb09f9d6f3
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -40,7 +40,7 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

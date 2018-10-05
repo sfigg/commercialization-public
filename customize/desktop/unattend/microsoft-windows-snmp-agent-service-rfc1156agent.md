@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 00bc1efc-6efa-4044-8dd6-fe4e20933dc7
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 | [SysLocation](microsoft-windows-snmp-agent-service-rfc1156agent-syslocation.md) | Specifies the physical location of the computer. |
 | [SysServices](microsoft-windows-snmp-agent-service-rfc1156agent-sysservices.md) | Specifies any combination of up to five Simple Network Management Protocol (SNMP) services. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

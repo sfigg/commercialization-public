@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2c525eb2-440e-4aef-bffd-f405d41b6622
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkname.md) | Specifies a friendly name for the <code>QuickLinkItem</code>, as it appears on the <strong>Favorites</strong> toolbar. |
 | [QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkurl.md) | Specifies a URL value to associate with a <code>QuickLinkItem</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

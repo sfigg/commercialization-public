@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: f0669dde-144d-4628-a8e9-0fc5c108a0ec
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -44,7 +44,7 @@ ms.technology: windows-oem
 
 By default, Windows displays the Bluetooth icon when the system has a Bluetooth module or adapter. Otherwise, the icon is not displayed.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditUser

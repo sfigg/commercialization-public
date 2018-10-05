@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 1bea22d2-6279-4d0f-8019-f8885cbdec72
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +30,7 @@ This setting has no effect on Server Core installations.
 | [FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md) | **This setting has been deprecated**. Specifies whether font smoothing is enabled, and which type of font smoothing is enabled. |
 | [SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md) | **This setting has been deprecated**. Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 oobeSystem
 

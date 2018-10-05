@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 845ce6a2-d219-467c-8d9d-22bbea3f84f3
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [Password](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-password.md) | Specifies the password of the user account used for authentication. |
 | [Username](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-username.md) | Specifies the user name of the account used for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

@@ -4,7 +4,7 @@ Description: 'We''re now going to take an app (like the sample Hello, World! app
 ms.assetid: a801d768-0397-4f85-b68f-bd85ddcc3f1f
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1b: Add an app to your image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -71,7 +71,7 @@ You can skip these steps if you've already created and tested your app.
 
 1.  Open your feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\OEMFM.xml**
 
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_MyUWPApp".
+2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "APP_MyUWPApp".
 
     ``` xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -85,17 +85,19 @@ You can skip these steps if you've already created and tested your app.
           <!-- Feature definitions below -->
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTCoreDefaultApp.cab">
             <FeatureIDs>
-              <FeatureID>OEM_IoTCoreDefaultApp</FeatureID>
+              <FeatureID>APP_IOTCOREDEFAULTAPP</FeatureID>
+              <FeatureID>OEM_IoTCoreDefaultApp</FeatureID> <!-- keeping old id for compatibility, dropping OEM prefix -->
             </FeatureIDs>
           </PackageFile>
     	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTOnboardingTask.cab">
             <FeatureIDs>
-              <FeatureID>OEM_IoTOnboardingTask</FeatureID>
+              <FeatureID>APP_IOTONBOARDINGTASK</FeatureID>
+              <FeatureID>OEM_IoTOnboardingTask</FeatureID> <!-- keeping old id for compatibility, dropping OEM prefix -->
             </FeatureIDs>
           </PackageFile>
     	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.MyUWPApp.cab">
             <FeatureIDs>
-              <FeatureID>OEM_MyUWPApp</FeatureID>
+              <FeatureID>APP_MyUWPApp</FeatureID>
             </FeatureIDs>
           </PackageFile>	  
         </OEM>
@@ -104,7 +106,6 @@ You can skip these steps if you've already created and tested your app.
     </FeatureManifest>
     ```
 
-3. Run `buildfm oem` to generate updated files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
 
   You'll now be able to add your app to any of your products by adding a reference to this feature manifest and Feature ID.
 
@@ -132,7 +133,7 @@ You can skip these steps if you've already created and tested your app.
 
     a. Remove the sample test apps by adding comment tags: _<!-- --_>. (We'll use these apps again in later labs.)
 
-    b. Confirm that the OEM features: OEM_CustomCmd, and OEM_ProvAuto are present. 
+    b. Confirm that the OEM features: CUSTOM_CMD, and PROV_AUTO are present. 
 
     c. Add the FeatureID for your app package, example: OEM_MyUWPApp.
     
@@ -155,9 +156,9 @@ You can skip these steps if you've already created and tested your app.
       <Feature>RPI2_DRIVERS</Feature>
       <Feature>RPI3_DRIVERS</Feature>
       <!-- Include OEM features -->
-      <Feature>OEM_CustomCmd</Feature>
-      <Feature>OEM_ProvAuto</Feature>
-      <Feature>OEM_MyUWPApp</Feature>
+      <Feature>CUSTOM_CMD</Feature>
+      <Feature>PROV_AUTO</Feature>
+      <Feature>APP_MyUWPApp</Feature>
     </OEM>
     ```
 

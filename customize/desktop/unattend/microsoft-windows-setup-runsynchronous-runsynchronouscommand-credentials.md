@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 941c68bd-08e1-46ea-8036-2dd1d4d865b1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 | [Password](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-password.md) | Specifies the password of the account used for authentication. |
 | [UserName](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-username.md) | Specifies the user name of the account used for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

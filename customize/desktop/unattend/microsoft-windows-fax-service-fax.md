@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: adde805b-4b74-4858-902a-5c1eed96de84
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [ArchiveFolderName](microsoft-windows-fax-service-fax-archivefoldername.md) | Specifies the folder in which the fax service saves copies of all incoming and outgoing faxes. |
 | [IncomingFaxesArePublic](microsoft-windows-fax-service-fax-incomingfaxesarepublic.md) | Specifies whether all incoming faxes not assigned to a specific user can be viewed by all users. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

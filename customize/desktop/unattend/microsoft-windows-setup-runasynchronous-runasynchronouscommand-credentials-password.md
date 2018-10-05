@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: acdfc820-dcee-4912-b886-ba87c511588c
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -42,7 +42,7 @@ All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run i
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

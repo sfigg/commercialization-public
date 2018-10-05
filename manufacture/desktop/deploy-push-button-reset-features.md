@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Push-button reset features are included with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), though you''ll need to perform additional steps to deploy PCs with the following customizations.'
 ms.assetid: f23d7e3f-0254-4fe8-9d61-5a58856c74be
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy push-button reset features'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -12,7 +12,6 @@ ms.technology: windows-oem
 ---
 
 # Deploy push-button reset features
-
 
 Push-button reset features are included with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), though you'll need to perform additional steps to deploy PCs with the following customizations.
 
@@ -25,12 +24,12 @@ These steps also show you how to add your own scripts during a reset to capture 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
-To complete these procedures, you'll need a technician PC which has Windows 10 and the following Windows Assessment and Deployment Kit (ADK) for Windows 10 components installed:
+To complete these procedures, you'll need a technician PC which has Windows 10 and the following Windows Assessment and Deployment Kit (ADK) for Windows 10 components installed. Note that starting with Windows 10, version 1809, WinPE is an addon to the ADK, and isn't included in the ADK installer:
 
 -   Deployment Tools
--   Windows Preinstallation Environment (Windows PE)
 -   Imaging and Configuration Designer (ICD)
 -   User State Migration Tool (USMT)
+-   Windows Preinstallation Environment (Windows PE)
 
 You'll also need:
 
@@ -137,13 +136,13 @@ If your customizations include settings specific to editions of Windows 10 for 
 5.  Click **Tool** &gt; **Validate Answer File** to check for errors. Correct any problem identified.
 6.  Click **File** &gt; **Save Answer File**. Enter a location to save the answer file (such as a network share) and then click **Save**.
 
-If you plan to use Push-button reset’s extensibility points, use the following steps to prepare your extensibility scripts and register them using a Push-button reset configuration file.
+If you plan to use Push-button reset’s extensibility points, use the following steps to prepare your extensibility points and register them using a Push-button reset configuration file.
 
 **Important**  If you have created an unattend file, you must also create a script to reapply it using the BasicReset\_AfterImageApply and FactoryReset\_AfterImageApply extensibility points.
 
  
 
-**Step 5: Prepare push-button reset extensibility scripts (optional)**
+**Step 5: Prepare push-button reset extensibility point scripts (optional)**
 
 1.  Create scripts (.cmd) or executables (.exe) to run at the available extensibility points when the Refresh your PC feature runs:
 
@@ -188,7 +187,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
      
 
-5.  Save the ResetConfig.xml file together with the extensibility scripts that you created.
+5.  Save the ResetConfig.xml file together with the scripts that you created.
 
 **Step 6: Create bare-metal recovery configuration (optional)**
 

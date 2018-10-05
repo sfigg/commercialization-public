@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: d3dca721-9f14-4566-a1cb-f9273cae9813
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run i
 | [Password](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-password.md) | Specifies the password of the account used for authentication. |
 | [Username](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-username.md) | Specifies the user name of the account used for authentication. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

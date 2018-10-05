@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 009261ce-bfb8-4c80-9261-211fc5f72db2
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ To use a different IconID for each language, create a resource file, and refer t
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

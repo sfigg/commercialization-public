@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 366730e5-1567-4e7f-a97e-688f65cebcde
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -24,7 +24,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) | Specifies a shortcut on the <strong>Favorites</strong> toolbar. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 658dabdd-1685-491b-84f8-13317c529de6
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-diskid.md) | Specifies the disk ID of the disk to which the image is installed. |
 | [PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-partitionid.md) | Specifies the partition ID of the partition to which the image is installed. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

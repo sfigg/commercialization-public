@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 48245cb9-0c59-4f41-af8d-9c720b371f6b
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -50,7 +50,7 @@ This string type does not support empty elements. Do not create an empty value f
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) | [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md) | **Value**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 07f16d9a-97b5-487b-8860-eae032e91f36
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +30,7 @@ DNS settings can be divided into two primary groups—global settings and interf
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **Interfaces**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: Configure Multiple Hard Drives
 ms.assetid: 2cb7386a-b3f6-40dd-b084-fce52a7aed9b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Multiple Hard Drives
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -48,9 +48,9 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
     Clustered Disk  : No
 
 
-      Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
-      ----------  ---  -----------  -----  ----------  -------  ---------  --------
-      Volume 1     C                NTFS   Partition    149 GB  Healthy    System
+    Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+    ----------  ---  -----------  -----  ----------  -------  ---------  --------
+    Volume 1     C                NTFS   Partition    149 GB  Healthy    System
 
     DISKPART>
     ```
@@ -88,9 +88,7 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
     **Note**  
     The computer maintains the context for the **SELECT DISK=NEXT** command as long as DiskPart continues running. If DISKPART exits, the computer loses this context.
 
-     
-
-    UEFI-based example:
+    Example (Two UEFI/GPT drives):
 
     ```
     SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C00T00L00)
@@ -151,7 +149,7 @@ assign letter=w
 
 This example script selects the system drive and then skips past the drive without modifying the contents of the drive. The script then selects two non-system drives and creates a single, formatted, empty partition on each drive. The partitions do not receive an image, so it is not necessary to specifically identify them.
 
-UEFI-based example:
+Example (Two UEFI/GPT drives):
 
 ```
 SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C01T01L00)

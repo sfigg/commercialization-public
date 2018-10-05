@@ -4,7 +4,7 @@ Description: 'Here''s the features you can add to Windows 10 IoT Core (IoT Core
 ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core feature list
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -58,6 +58,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_SHELL\_ONSCREEN\_KEYBOARD\_FOLLOWFOCUS** | Enables on-screen keyboard to automatically appear when input field is focused. Requires **IOT\_SHELL\_ONSCREEN\_KEYBOARD**. This is new in Windows 10, version 1703. |
 | **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver. This feature should only be used with the Qualcomm DragonBoard (DB). |
 | **IOT\_CRASHCONTROL\_SETTINGS** | Configures the device to auto reboot without showing blue screen (BSOD) when the device crashs. This also disables crashdump. [AutoReboot = 1 ; DisplayDisabled = 1 and CrashDumpEnabled = 0]. This is new in Windows 10, version 1803 |
+| **IOT\_SSH**                    | Enables Secure Shell (SSH) connectivity |
 
 
 ### Developer Tools
@@ -67,8 +68,7 @@ When creating images for your device, determine which features are required for 
 
 | Features                        | Description                                                                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **IOT\_SIREP**                  | Enables SIREP service for TShell connectivity                                                                               |
-| **IOT\_SSH**                    | Enables Secure Shell (SSH) connectivity                                                                                     |
+| **IOT\_SIREP**                  | Enables SIREP service for TShell connectivity                                                                                                                                        |
 | **IOT\_TOOLKIT**                | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.                                                                                           |
 | **IOT\_WEBB\_EXTN**             | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.  |
 | **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://docs.microsoft.com/windows/iot-core/manage-your-device/RemoteDisplay). Supported starting with Windows 10, version 1607. Note: Remote Display is prerelease software intended for development and training purposes only.                      |
@@ -103,8 +103,8 @@ When creating images for your device, determine which features are required for 
 
 | Features                  | Description                                                          |
 |---------------------------|----------------------------------------------------------------------|
-| **OEM\_CustomCmd**   | Adds scripts which support adding OEM Apps using the ADK Add-Ons.     |
-| **OEM\_ProvAuto** | Includes provisioning package corresponding to the product. |
+| **CUSTOM\_CMD**   | Adds scripts which support adding OEM Apps using the ADK Add-Ons. OEM\_CustomCmd is the deprecated feature ID, can still be used for legacy builds      |
+| **PROV\_Auto** | Includes provisioning package corresponding to the product. OEM\_ProvAuto is the deprecated feature ID, can still be used for legacy builds |
 
 
 ### Test features 

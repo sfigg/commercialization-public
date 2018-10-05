@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 3679b105-90d2-4a13-9cbd-891fec407792
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -51,7 +51,7 @@ If `DebugJoin` is specified, a trace file is generated during the domain join pr
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

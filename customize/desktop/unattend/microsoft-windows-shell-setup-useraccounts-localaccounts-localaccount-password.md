@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 9885fe7e-d135-465c-8233-0ca6b663ca16
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [PlainText](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password-plaintext.md) | Specifies whether the [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) password is hidden in the answer file. |
 | [Value](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password-value.md) | Specifies the [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) password. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 auditSystem
 

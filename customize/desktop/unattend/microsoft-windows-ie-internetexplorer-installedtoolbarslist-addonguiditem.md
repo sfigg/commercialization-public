@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: e9e13520-c8ef-4fe4-91d4-99275097a9c6
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -28,7 +28,7 @@ Toolbars are plug-in modules used to add functionality to Internet Explorer.
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [AddonGuid](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem-addonguid.md) | Specifies a GUID for a toolbar. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

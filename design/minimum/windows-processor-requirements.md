@@ -1,7 +1,7 @@
 ---
 title: Windows Processor Requirements
 description: This specification details the processors that can be used with Customer Systems that include Windows Products (including Custom Images).
-ms.author: dongill
+ms.author: eliotgra
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -34,9 +34,9 @@ Some product editions or edition/processor configurations listed below may have 
 | Windows 10 1709 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835
 | Windows 10 1803 | Up through the following Intel 8th Generation Processors (Intel Core i3/i5/i7-8xxxK/U/G), 7th Generation Xeon E3-xxxx v6***, and through current Intel Atom (J4xxx/J5xxx and N4xxx/N5xxx), Celeron and Pentium Processors | Up through the following AMD 7th Generation Processors (A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen 3/5/7 2xxx, AMD Opteron**** and AMD EPYC 7xxxx**** Processors | Qualcomm Snapdragon 835 
 
-\*** Intel Xeon support on Windows 10 Pro for Workstation only
+\*** Intel Xeon processors are supported on Windows 10 Pro for Workstations and Windows 10 Enterprise only
 
-\**** AMD Opteron and AMD EPYC 7xxxx processors are supported on Windows 10 Pro for Workstation only
+\**** AMD Opteron and AMD EPYC processors are supported on Windows 10 Pro for Workstations and Windows 10 Enterprise only
 
 ## Windows IoT Core Processor table
 
@@ -64,8 +64,8 @@ Some product editions or edition/processor configurations listed below may have 
 
 | Windows Edition                                                                                             | Intel Processors                                                                                                                                                                                       | AMD Processors                                                                                         |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Windows Server 2012 R2\*                                                                                    | Up through the following Intel 7th Generation Processors (Intel Core i3-7xxxx/Celeron/Pentium; Core m3-7xxx; Xeon E3 v6; Xeon SP 31xx, 41xx, 51xx, 61xx, and 81xx; and Xeon D 15xx), and Atom C33xx           | Up through the following AMD 7th generation processors (AMD A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen Family, and AMD EPYC 7xxxx |
-| Windows Server 2016\**                                                                                      | Up through the following Intel 7th Generation Processors (Core i3-7xxxx/Celeron/Pentium; Core m3-7xxx; Xeon E3 v6; Xeon SP 31xx, 41xx, 51xx, 61xx, and 81xx; and Xeon D 15xx), and Atom C33xx                | Up through the following AMD 7th generation processors (AMD A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen Family, and AMD EPYC 7xxxx |
+| Windows Server 2012 R2\*                                                                                    | Up through the following Intel 7th Generation Processors (Intel Core i3-7xxxx/Celeron/Pentium; Xeon E3 v6; Xeon SP 31xx, 41xx, 51xx, 61xx, and 81xx; and Xeon D 15xx), and Atom C33xx           | Up through the following AMD 7th generation processors (AMD A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen Family, and AMD EPYC 7xxxx |
+| Windows Server 2016\**                                                                                      | Up through the following Intel 7th Generation Processors (Core i3-7xxxx/Celeron/Pentium; Xeon E3 v6; Xeon E21xx; Xeon SP 31xx, 41xx, 51xx, 61xx, and 81xx; and Xeon D 15xx), and Atom C33xx                | Up through the following AMD 7th generation processors (AMD A-Series Ax-9xxx & E-Series Ex-9xxx & FX-9xxx), AMD Ryzen Family, and AMD EPYC 7xxxx |
 
 \*Company may submit for certification (in the Windows Hardware Compatibility Program) Customer Systems running Windows Server 2012R2 and the identified processors until December 31, 2018; after such date, no new Customer Systems will be certified running Windows Server 2012R2. 
 

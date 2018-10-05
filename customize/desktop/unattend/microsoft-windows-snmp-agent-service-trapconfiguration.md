@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2bf28805-7283-4919-9e78-5fb49cff22d7
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [TrapConfigurationItems](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems.md) | Specifies details about individual trap configuration items. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 generalize
 

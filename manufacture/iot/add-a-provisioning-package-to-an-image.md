@@ -4,7 +4,7 @@ Description: 'We''ll create a provisioning package that contains some sample Wi-
 ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1d: Add networking and other provisioning package settings to an image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -66,7 +66,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 **Add the auto-provisioning scripts to the feature manifest and product configuration file**
 
-1.  Review the package definition file: Provisioning.Auto.wm.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.wm.xml. 
+1.  Review the package definition file: Provisioning.Auto.wm.xml: C:\\IoT-ADK-AddonKit\\Common\\ProdPackages\\Provisioning.Auto\\Provisioning.Auto.wm.xml. 
 
     Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 
@@ -82,17 +82,18 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
         <files>
             <file
                 destinationDir="$(runtime.windows)\Provisioning\Packages"
-                source="$(PRJDIR)\Products\$(PROD)\prov\$(PROD)Prov.ppkg"
+                source="$(BLDDIR)\ppkgs\$(PROD)Prov.ppkg"
                 name="ProvAuto.ppkg" />
         </files>
     </identity>
     ```
 
-2.  Make sure that the package definition file **%OEM\_NAME%.Provisioning.Auto.cab"** and the feature ID: **OEM\_ProvAuto** are referenced in the common feature manifest, C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
+2.  Make sure that the package definition file **%OEM\_NAME%.Provisioning.Auto.cab"** and the feature ID: **PROV\_AUTO** are referenced in the common feature manifest, C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
 
     ``` xml
     <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
       <FeatureIDs>
+        <FeatureID>PROV_AUTO</FeatureID>
         <FeatureID>OEM_ProvAuto</FeatureID>
       </FeatureIDs>
     </PackageFile>
@@ -114,7 +115,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
         </AdditionalFMs>
         ```
 
-    2.  Make sure the Feature: OEM_ProvAuto is included.
+    2.  Make sure the Feature: PROV_AUTO is included.
 
         ``` xml
         <OEM>
@@ -122,9 +123,9 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
           <Feature>RPI2_DRIVERS</Feature>
           <Feature>RPI3_DRIVERS</Feature>
           <!-- Include OEM features-->
-          <Feature>OEM_CustomCmd</Feature>
-          <Feature>OEM_ProvAuto</Feature>
-          <Feature>OEM_FilesAndRegKeys</Feature>
+          <Feature>CUSTOM_CMD</Feature>
+          <Feature>PROV_AUTO</Feature>
+          <Feature>CUSTOM_FilesAndRegKeys</Feature>
         </OEM>
         ```
 

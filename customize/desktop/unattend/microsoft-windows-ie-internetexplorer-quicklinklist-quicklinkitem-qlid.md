@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2cd5f2b4-9f36-4812-85d7-a0b3af009de9
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -40,7 +40,7 @@ ms.technology: windows-oem
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

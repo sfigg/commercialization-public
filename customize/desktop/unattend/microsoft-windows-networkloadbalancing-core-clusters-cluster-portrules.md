@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: ae3cc863-84dc-4e6c-a61a-998ef63fcd31
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ ms.technology: windows-oem
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md) | Specifies details about a port rule used for a cluster, such as its name, IP address, protocol, mode, and so on. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

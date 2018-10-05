@@ -4,8 +4,8 @@ description: Describes the customizations that determine how the mobile device h
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: windows-hardware

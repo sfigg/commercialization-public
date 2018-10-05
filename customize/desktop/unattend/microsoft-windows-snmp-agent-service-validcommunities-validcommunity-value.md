@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 8edf6916-60af-462f-83b0-30d94301c221
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -61,7 +61,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

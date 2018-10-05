@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 45570f1b-8e3a-4f6c-b8dc-a39ad8c169b1
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ We recommend that you use the default settings. If you select a value for this s
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

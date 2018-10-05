@@ -4,7 +4,7 @@ Description: 'We''ll create some test files and registry keys to the image, agai
 ms.assetid: 7ca2b835-4d36-43d9-b46f-d5d5d8410335
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1c: Add a file and a registry setting to an image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +27,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--   Create a few sample text files using Notepad, title them TestFile1.txt and TestFile2.txt.
+-   Create a few sample text files using Notepad, add some random text so that the files are not empty, title them TestFile1.txt and TestFile2.txt.
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
 
@@ -94,7 +94,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 1.  Open the common feature manifest file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml**
 
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_FilesAndRegKeys".
+2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "CUSTOM_FilesAndRegKeys".
 
     ``` xml
     <Features>
@@ -102,7 +102,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
         <!-- Feature definitions below -->
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.FilesAndRegKeys.cab">
           <FeatureIDs>
-            <FeatureID>OEM_FilesAndRegKeys</FeatureID>
+            <FeatureID>CUSTOM_FilesAndRegKeys</FeatureID>
           </FeatureIDs>
         </PackageFile>
     ```
@@ -141,9 +141,9 @@ You'll now be able to add your files and registry keys to any of your products b
 
     a. Make sure the sample apps are included (especially the IOT_BERTHA app).
 
-    b. Verify that the OEM features: OEM_CustomCmd and OEM_ProvAuto are present.
+    b. Verify that the OEM features: CUSTOM_CMD and PROV_AUTO are present.
 
-    c. Add the FeatureID for your registry package, example: OEM_FilesAndRegKeys.
+    c. Add the FeatureID for your registry package, example: CUSTOM_FilesAndRegKeys.
     
     ``` xml
     <Features>
@@ -164,9 +164,9 @@ You'll now be able to add your files and registry keys to any of your products b
         <Feature>RPI2_DRIVERS</Feature>
         <Feature>RPI3_DRIVERS</Feature>
         <!-- Include OEM features -->
-        <Feature>OEM_CustomCmd</Feature>
-        <Feature>OEM_ProvAuto</Feature>
-        <Feature>OEM_FilesAndRegKeys</Feature>
+        <Feature>CUSTOM_CMD</Feature>
+        <Feature>PROV_AUTO</Feature>
+        <Feature>CUSTOM_FilesAndRegKeys</Feature>
      </OEM>
     ```
 

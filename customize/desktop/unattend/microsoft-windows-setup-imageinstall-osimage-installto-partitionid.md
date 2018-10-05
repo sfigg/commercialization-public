@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 8242f9ed-fb57-4315-b5e0-033621502486
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -39,7 +39,7 @@ ms.technology: windows-oem
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 windowsPE

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 3994e8bd-f93b-48db-abfd-94321eac3918
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -38,7 +38,7 @@ ms.technology: windows-oem
 
  
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 auditSystem

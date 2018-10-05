@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2e055876-3e09-4dbd-9682-e8660f489d91
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [FeedTitle](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedtitle.md) | Specifies the title of a <code>FeedItem</code>. |
 | [FeedURL](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedurl.md) | Specifies the URL of a <code>FeedItem</code>. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: b32658e4-0f57-4489-b8f5-72299862c25d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: bdf2573c-f321-4956-9bd5-14a7ba4a036c
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 generalize

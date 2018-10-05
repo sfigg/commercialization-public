@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 2d506257-0ee6-47b6-95f4-dac332cc2f07
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -66,7 +66,7 @@ The value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsservers
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DNSServerSearchOrder**
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

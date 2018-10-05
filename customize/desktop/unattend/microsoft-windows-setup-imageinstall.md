@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: bbf815c5-9107-44c8-bc08-ec1aef071f21
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,7 +25,7 @@ ms.technology: windows-oem
 | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | Specifies the secondary data image to install. |
 | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | Specifies the Windows operating system image to install. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

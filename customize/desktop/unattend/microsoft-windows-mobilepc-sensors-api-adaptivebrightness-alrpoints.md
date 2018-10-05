@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 21889fef-49ef-4b6d-bc07-2d698c72d789
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -17,8 +17,7 @@ ms.technology: windows-oem
 
 # ALRPoints
 
-
-Specifies the ambient light response (ALR) curve data.
+ALRPoints specifies the ambient light response (ALR) curve data.
 
 The curve is defined by the illuminance (lux) detected by an ambient light sensor, and the percentage of change in brightness.
 
@@ -46,7 +45,7 @@ The *ALR\_curve* can be also generated manually, using the following format: 00+
 
 *Lux\_measurement* is the illuminance (lux) detected by the ambient light sensor. For example, 000003E8 = 1000 lux.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize
@@ -73,6 +72,7 @@ Adjust the screen to 40% of the baseline brightness level when the ambient light
 Adjust the screen to 80% of the baseline brightness level when the ambient light sensor detects 68 lux.
 
 ```
+<ALRCurveVersion>2</ALRCurveVersion>
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>
@@ -80,18 +80,10 @@ Adjust the screen to 80% of the baseline brightness level when the ambient light
 
 ## Related topics
 
+[ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)
 
 [DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
 
 [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md)
-
- 
-
- 
-
-
-
-
-
 
 

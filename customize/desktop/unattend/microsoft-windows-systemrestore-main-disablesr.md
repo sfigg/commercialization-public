@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: c1eecbf9-dd5f-41f6-96c1-d77e791a5f5b
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-SystemRestore-Main](microsoft-windows-systemrestore-main.md) | **DisableSR**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

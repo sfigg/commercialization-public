@@ -4,7 +4,7 @@ Description: 'To get started, we''ll create a basic Windows 10 IoT Core (IoT Co
 ms.assetid: aeba79b8-d8dd-481a-a8bf-03ae28174632
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1a: Create a basic image'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -59,9 +59,9 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 
 ### Build a Raspberry Pi BSP (New for Windows 10, Version 1703)
 
-1. Extract [rpibsp.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/RPiBSP/rpibsp.zip) to a folder on your hard drive, for example. `C:\BSP`.
+1. Extract [rpibsp_wm.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/v4.4/rpibsp-wm.zip) to a folder on your hard drive, for example. `C:\BSP`.
 
-2. From the IOT Core Shell, navigate to `C:\BSP`, and run `build.cmd`. This will add the packages necessary to create a project with the RPi2 BSP.
+2. From the IoT Core Shell, navigate to `C:\BSP`, and run `build.cmd`. This will add the packages necessary to create a project with the RPi2 BSP.
 
 ```
 cd c:\BSP

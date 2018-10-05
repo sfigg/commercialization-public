@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: b448ca50-b973-4c8e-98aa-e354df58ba0a
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +26,7 @@ ms.technology: windows-oem
 | [MetaData](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata.md) | Specifies a unique Windows image in the .wim file to install. |
 | [Path](microsoft-windows-setup-imageinstall-osimage-installfrom-path.md) | Specifies the path to the .wim file. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 windowsPE
 

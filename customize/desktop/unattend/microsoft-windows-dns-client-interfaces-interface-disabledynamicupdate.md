@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 89c66742-c2c1-4079-87eb-ce8112f1f24a
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -47,7 +47,7 @@ ms.technology: windows-oem
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DisableDynamicUpdate**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize

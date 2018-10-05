@@ -1,8 +1,8 @@
 ---
 title: OEM deployment of Windows 10 for desktop editions
-author: themar
+author: kpacquer
 description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop computers, laptops, and 2-in-1s. Find information about how to enable imageless, push-button reset recovery and more.  
-ms.author: themar
+ms.author: kenpacq
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -11,7 +11,7 @@ ms.technology: windows-oem
 
 # OEM Deployment of Windows 10 for desktop editions
 
-Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to take to make and deploy Windows images. We'll show you how to use the tools to use and commands to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
+Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to make and deploy Windows images. We'll show you how to use the tools and commands to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
 We'll walk you through the process of building a customized Windows deployment. Here's what we'll cover:
 
@@ -62,6 +62,7 @@ A technician PC that has:
     - Windows Language pack ISO
     - OPK App Update or Inbox Apps ISO
     - Windows ADK installer
+    - WinPE ADK Add-on (if using the ADK for Windows 10 version 1809, or later)
     - Drivers for your image (if needed)
 
 
@@ -73,20 +74,18 @@ Let's setup your lab.
 The Windows ADK is a collection of tools that enables you to manage and deploy custom Windows installations to new computers. 
 
 > [!important]
-> Use the matching version of ADK for the images being customized. For example, if you're working with Windows 10, version 1803, use the ADK for Windows 10, version 1803.
+> Use the matching version of ADK for the images being customized. For example, if you're working with Windows 10, version 1809, use the ADK for Windows 10, version 1809.
 
 On your technician PC:
 1.  If you have a previous version of the Windows Assessment and Deployment Kit (ADK), uninstall it.
 
-2.  Download the version of the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows that you’re installing. **Run** the installer.
+2.  Download the version of the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows that you’re installing.
 
-3.  Install with the following options:
+3.  Run the ADK installer to install the ADK with the following options. If you're using the ADK for Windows 10. version 1809, WinPE isn't part of the ADK installer and is a separate add-on package that you have to install after you install the ADK:
 
     -   **Deployment Tools**
-
-    -   **Windows Preinstallation Environment (Windows PE)**
-
     -   **User State Migration Tool (USMT)**
+    -   **Windows Preinstallation Environment (Windows PE)**
 
 
 5.  When installation finishes, close the installer window.
@@ -171,7 +170,7 @@ Where `C:\Out-of-Box Drivers\mydriver.inf` is the path of the driver you're addi
 To install all of the drivers in a folder and all its subfolders use the /recurse option. For example:
 
 ```
-Dism /Image:C:\Winpe_amd64\mount /Add-Driver /Driver:c:\drivers /Recurse
+Dism /Image:C:\Winpe_amd64\mount /Add-Driver /Driver:c:\drivers /recurse
 ```
 Where `C:\drivers` is the drivers folder that you're adding.
 
@@ -197,9 +196,9 @@ Setting WinPE to use high-performance mode will speed deployment. The sample scr
 
 Run `dism /cleanup-image` to reduce the disk and memory footprint of WinPE and increase compatibility with a wide range of devices:
 
-
 ```
-DISM /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase
+DISM /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup
+
 ```
 See [WinPE: Optimize and shrink the image](winpe-optimize.md) for more details.
 
@@ -216,7 +215,7 @@ Copy c:\winpe_amd64\mount\boot2.wim c:\winpe_amd64\media\sources\boot.wim
 
 ### Create a bootable WinPE drive
 
-Now that you've updated your WinPE image to have everything it needs to work with the PCs in your environment, you can make a bootable WinPE drive. From the Deployment and Imaging Tools Environment:
+Now that you've updated your WinPE image to include everything it needs, you can make a bootable WinPE drive. From the Deployment and Imaging Tools Environment:
 
 1.  Connect your USB key to your technician PC.
 
@@ -272,8 +271,6 @@ The table below shows which customizations can be made online and offline. In a 
 In this section we'll cover how to mount Windows images on your technician PC. Mounting a Windows image is the same process that we used to mount the WinPE image earlier. When we mount our Windows image (install.wim), we'll be able to access a second image, WinRe.wim, which is the image that supports recovery scenarios. Updating install.wim and WinRE.wim at the same time helps you keep the two images in sync, which ensures that recovery goes as expected.
 
 Before we continue, make sure that you've created your _USB-B_ drive. We showed you how to set it up in the [Get the tools you need](#get-the-tools-needed-to-customize-windows) section.
-
-Start working with your images:
 
 #### Backup your Windows image file
 
@@ -365,45 +362,46 @@ The following table shows the types of language packages and components availabl
 
 | Component     | Sample file name                                 | Dependencies | Description                                    |
 | ------------- | ------------------------------------------------ | ------------ | ---------------------------------------------- |
-| Language pack | Microsoft-Windows-Client-Language-Pack_x64_de-de | None         | UI text, including basic Cortana capabilities. | 
-| Language interface pack| 	Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es | 	Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES.| 	UI text, including basic Cortana capabilities. To learn more, see Available Language Packs for Windows.| 
+| Language pack | Microsoft-Windows-Client-Language-Pack_x64_de-de.cab | None         | UI text, including basic Cortana capabilities. | 
+| Language interface pack | 	LanguageExperiencePack.am-et.neutral.appx | 	Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES.| 	UI text, including basic Cortana capabilities. To learn more, see Available Language Packs for Windows.| 
 | Basic| Microsoft-Windows-LanguageFeatures-Basic-de-de-Package| 	None| 	Spell checking, text prediction, word breaking, and hyphenation if available for the language. <p> You must add this component before adding any of the following components.<p>| 
 | Fonts| 	Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package	| None| 	Fonts required for some regions. Example, th-TH requires the Thai font pack.| 
 | Optical character recognition| 	Microsoft-Windows-LanguageFeatures-OCR-de-de-Package| 	Basic| 	Recognizes and outputs text in an image.| 
 | Handwriting recognition| 	Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package| 	Basic| 	Enables handwriting recognition for devices with pen input.| 
 | Text-to-speech| 	Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package| 	Basic	| Enables text to speech, used by Cortana and Narrator.| 
 | Speech recognition| 	Microsoft-Windows-LanguageFeatures-Speech-de-de-Package	| Basic, Text-To-Speech recognition| 	Recognizes voice input, used by Cortana and Windows Speech | Recognition.| 
-| Retail Demo experience| 	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package| 	Basic	| Retail Demo Experience (RDX)| 
-
+| Retail Demo experience |	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package |	Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
 #### Add or change languages
 
 In this section, we'll add languages and Features On Demand to your Windows image. We'll add the German (de-de) language pack, then we'll add the Japanese (ja-jp) language. Japanese is an example of a language that requires additional font support. 
 
 > [!important] 
-> If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
+> If you install an update that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
 
 Language updates have a specific order they need to be installed in. For example, to enable Cortana, install, in order: **Microsoft-Windows-Client-Language-Pack**, then **–Basic,** then **–Fonts,** then **–TextToSpeech,** and then **–Speech**. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using  `DISM /Add-Package`.
 
 Make sure that you are using language packs and features on demand that match the architecture of the image you are working with. Below are examples for building 64-bit systems.
 
-To start adding languages packs, mount the language pack ISO, and copy the language pack and LanguageFeatures .cab files to `C:\temp\lab\LanguagePacks`. The examples below will use the German and Japanese languages.
+##### Copy language files
+
+1. Mount the Language pack ISO, and copy the language pack .cab files for the languages you're adding to `C:\temp\lab\LanguagePacks`. The examples below will use the German and Japanese languages.
+2. Mount the Feature on Demand ISO, and copy the LanguageFeatures .cab files for the languages you're adding to `C:\temp\lab\LanguagePacks`. The examples below will use the German and Japanese languages.
 
 1.	Add German language pack and Feature on Demand language packages.
 
     Use the language packs and Features on Demand from the 64-bit ISOs:
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package~31bf3856ad364e35~amd64~~.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package~31bf3856ad364e35~amd64~~.cab
     ```
-    Where E: is the drive letter of the mounted ISO.
-
+    
 
 2. (Optional) Add Japanese language packs and features on demand.
 
-    In Windows 10, some language-specific fonts were separated out into different canguage .cab files. In this section, we'll add the ja-JP language along with support for Japanese fonts.
+    In Windows 10, some language-specific fonts were separated out into different language .cab files. In this section, we'll add the ja-JP language along with support for Japanese fonts.
 
     Use the language packs and Features on Demand from the 64-bit ISOs:
     ```
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:E:\LanguagePacks\x64\Microsoft-Windows-Client-Language-Pack_x64_ja-jp.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_ja-jp.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package~31bf3856ad364e35~amd64~~.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package~31bf3856ad364e35~amd64~~.cab
     ```
     
 3. Verify that the language packs are now part of the mounted images:
@@ -542,7 +540,7 @@ Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinP
 ```
 
 
-### Add drivers to your images
+### Drivers
 
 You can add drivers to ensure Windows can successfully boot for the first time. Make sure that you add your driver to the right image:
 
@@ -590,7 +588,7 @@ Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1
 > You can use the /recurse option to add an entire folder of drivers
 
 
-## Add updates to your image
+### Updates
 
 While your image is mounted, you can add Windows updates. The process is similar to the one we used to add drivers earlier.
 
@@ -602,7 +600,7 @@ Reminder:
 - If a **Servicing Stack Update (SSU) is required**, you'll have to apply it before applying the most recent General Distribution Release or any future GDRs.
 
 
-### Add a Windows update package
+#### Add Windows updates to your image
 
 Use DISM to apply the latest servicing stack update (SSU) and general distribution release (GDR) as well as any prerequisite KB updates. You can find KB updates in the following locations:
 
@@ -640,7 +638,7 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
 
 3.  Lock in the update to ensure it get restored during recovery.
     ```
-    DISM /Cleanup-Image /Image=C:\mount\windows /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
+    DISM /Cleanup-Image /Image=C:\mount\windows /StartComponentCleanup /ScratchDir:C:\Temp
     ```
 
 4. Verify that the updates are in the image.
@@ -659,7 +657,7 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     The operation completed successfully.
     ```
 
-### Add Update packages to WinRE
+#### Add Update packages to WinRE
 
 In this section, we cover how to add updates to the WinRE image.
 
@@ -672,7 +670,36 @@ To apply the update that you downloaded in the previous section to your WinRE im
 Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\windows10.0-kb4000001-x64.msu"
 ```
 
-### Apps
+### Features and Apps
+
+#### Features on Demand
+
+Add a Feature on Demand (FOD) to your Windows image. [Features on Demand](features-on-demand-v2--capabilities.md) are features that you can choose to preinstall. You can see a list of available FODs, and recommendations for preinstallation [here](features-on-demand-non-language-fod.md).
+
+Here we'll show you how to preinstall the .Net Framework Feature on Demand. 
+
+Note: While it’s possible to add FODs using the /add-package command, we recommend using DISM with the /Add-Capability option.
+
+1. Mount the Features on Demand ISO
+ 
+2. On your technician PC, use DISM to get a list of available FODs in an image:
+
+    ```
+    dism /image:C:\mount\windows /get-capabilities
+    ```
+
+    This will show a list of available capabilities.
+
+3. Add the .NET framework.
+
+    ```
+    dism /image:C:\mount\windows /add-capability /capabilityname:NetFX3~~~ /Source:E:
+    ```
+    Where E: is the mounted FOD ISO.
+
+.NET framework is now added to your image.
+
+#### Apps
 
 This section covers working with Apps, including reinstalling inbox apps after updates, how to add Microsoft Store apps, and how to add Microsoft Office.
 
@@ -684,7 +711,7 @@ This section continues to use your mounted Windows image. If your image isn't st
 
 Now that you've added languages and updates to your image, you have to reinstall the apps that come with Windows. This makes sure that the apps will work and include the languages you have added to your image. To reinstall these apps, you'll need the App update OPK or the inbox Apps ISO.
 
-1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64
+1. Extract the inbox apps ISO to c:\temp\lab\apps\inbox\amd64 
 2. Run the `E:\apps\ReinstallInboxApps-x64.bat` script.
 
 Your apps are now ready to work with your image.
@@ -693,9 +720,9 @@ Your apps are now ready to work with your image.
 
 To complete this section, you'll need to have the App update OPK or the inbox apps ISO. Whichever you are using, we'll refer to it as the App update OPK in the following steps.
 
-2. Use DISM to add the HEVC codec .appx from the files you extracted in Step 1:
+1. Use DISM to add the HEVC codec .appx from the files you extracted in Step 1:
 
-3.  Install the HEVC .appx:
+2. Install the HEVC .appx:
 
     ```
     DISM /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:"C:\temp\lab\apps\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" /licensepath:"C:\temp\lab\apps\inbox\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" /DependencyPackagePath:"C:\temp\lab\apps\inbox\amd64\Microsoft.VCLibs.x64.14.00.appx" /DependencyPackagePath:"C:\temp\lab\apps\inbox\amd64\Microsoft.VCLibs.x86.14.00.appx"
@@ -704,9 +731,9 @@ To complete this section, you'll need to have the App update OPK or the inbox ap
     > [!Note]
     > Include both the x86 and x64 versions of the dependency packages.
 
-4. Use `DISM /Add-ProvisionedAppxPackage` to add any additional apps to your image.
+3. Use `DISM /Add-ProvisionedAppxPackage` to add any additional apps to your image.
 
-5. Verify that the apps are installed:
+4. Verify that the apps are installed:
 
     ```
     Dism /Image:"C:\mount\windows" /Get-ProvisionedAppxPackages
@@ -721,7 +748,7 @@ For this section, you'll need to have at least two apps to add to your image. If
 
 1.  Gather your apps for installation  
 
-2.  Install your apps, specifying a region with the `/region` option for each app. You can specify multiple regions by separating the regions with a `;`. We'll show you how you can use LayouModification.xml with `/region` later in the lab:
+2.  Install your apps, specifying a region with the `/region` option for each app. You can specify multiple regions by separating the regions with a `;`. We'll show you how you can use LayoutModification.xml with `/region` later in the lab:
 
     ```
     Dism /Add-ProvisionedAppxPackage /PackagePath:app1.appxbundle /region="all"
@@ -739,9 +766,9 @@ For this section, you'll need to have at least two apps to add to your image. If
 DISM.exe /Image:"C:\mount\windows" /Optimize-ProvisionedAppxPackages
 ```
 
-### Preinstall Microsoft Office
+#### Preinstall Microsoft Office
 
-#### Related sets
+##### Related sets
 
 The Office apps are delivered as a set of apps that are installed and serviced together.  The main package for Office is a set of shared code and each Office app (for example, Word, Excel, and PowerPoint) is installed as an optional package. These packages are delivered as appxbundles that support all Store languages.  
 
@@ -757,7 +784,7 @@ The Office apps are delivered as a set of apps that are installed and serviced t
 | Word |	Microsoft.Office.Desktop.Word_8wekyb3d8bbwe |	word.appxbundle<br></br>word_License1.xml |
 
 
-#### Add Office apps to your image
+##### Add Office apps to your image
 
 To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPackage` option. This option also requires the following information for each app you add:
 -   `/PackagePath`: This is only used to specify the path to the .appxbundle file for the shared code package.  
@@ -785,7 +812,7 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
     -   There isn't a way to add additional Office languages that aren't part of the Windows image.
     -   Both display and proofing resources for Office will be installed for each Windows language.  
     -   Some languages supported by Windows are not supported by Office – for these cases, Office will use the closest available language (for example, es-mx will attempt to use es-es instead). 
-    -   You can find installed Windows languages in Windows Settings > Time & language > Region & language.
+    -   You can find installed Windows languages in Windows Settings > Time & language > Language.
 
 3. Verify Office was installed:
 
@@ -826,13 +853,13 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
     To complete the Office install, you’ll need to unmount the image and commit your changes, which we'll do this after we’ve completed all customizations at the end of this lab.
 
 
-## Modify the Start layout
+### Modify the Start layout
 
-### New in Windows 10, version 1803
+#### New in Windows 10, version 1803
 
 Apps can now be pinned to the All Apps list without also having to be pinned as a Start tile.  This is done through the new "region" switch (as described in the previous section).  In the previous section, we added three apps to our image:  App1, App2, and Office.  In this lab, we will omit App1 from LayoutModification.xml to ensure that App1 only appears in the All Apps list, and not also as a Start menu tile. We will also include App2 in LayoutModification.xml to demonstrate that even if the "region" switch was used when adding the app to the image, the app will still appear in the Start Menu if included in the LayoutModification.xml file.  In other words, the LayoutModification.xml file takes precedence.  
 
-### Start menu
+#### Start menu
 
 If you don’t create a LayoutModification.xml file and you use the Start Unattend settings, Windows will take the first 12 `SquareTiles` or `DesktoporSquareTiles` settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If `OEMName` is specified in the Unattend file, the value for this element is used to name the OEM groups that get created.
 
@@ -847,7 +874,7 @@ To take advantage of the new features, and to have the most robust and complete 
 
 To learn more about layoutmodification.xml, see [LayoutModification XML](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#layoutmodification-xml).
 
-### About the Start Menu layout
+#### About the Start Menu layout
 
 1.  Use the optional `Region` attribute in the `RequiredStartGroups` element to use different layouts for different regions. The `Region` value must be equal to two-letter country/region codes, and separated by a pipe "|" delimiter if you're specifying multiple regions. The regions listed in the group are related to the regions you specified when you added apps to your image using the `/region` option.  If the country/region setting for the Windows device matches a `RequiredStartGroups`, then the tiles laid out within the `RequiredStartGroups` is applied to Start. 
 If you specify a region-agnostic `RequiredStartGroups` (or one without the optional Region attribute) then the region-agnostic `RequiredStartGroups` is applied to Start.
@@ -1104,7 +1131,7 @@ Next you'll have to make sure that the logo you specified above is in your Windo
     ```
 
 ##### Set the device to automatically boot to audit mode
-Using the same unattend.xml file, set the PC to automatically boot into Audit mode.
+Using the same unattend.xml file, set the PC to automatically [boot into Audit mode](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-deployment-reseal-mode).
 1. In the Windows Image pane, expand Components, right-click amd64_Microsoft-Windows-Deployment_(version), and then select Add Setting to Pass 7 oobeSystem.
 2. In the Answer File pane, select Components\7 oobeSystem\amd64_Microsoft-Windows-Deployment_neutral\Reseal.
 3. In the Reseal Properties pane, in the Settings section, select `Mode=Audit`.
@@ -1208,7 +1235,7 @@ To make sure Windows saves your customizations:
 2.	Cleanup unused files and reduce the size of winre.wim
 
     ```
-    dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
+    dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup
     ```
 
 ### Unmount your images
@@ -1264,7 +1291,7 @@ To make sure Windows saves your customizations:
 6.	Optimize the Windows image the same way you did with the WinRE image:
 
     ```
-    Dism /Image:c:\mount\windows /Cleanup-Image /StartComponentCleanup /ResetBase
+    Dism /Image:c:\mount\windows /Cleanup-Image /StartComponentCleanup
     ```
 
 7. Commit the changes and unmount the Windows image:
@@ -1440,26 +1467,10 @@ Please reference Push-button reset and Windows Recovery Environment (Windows RE)
 
 Push-button reset, is a built-in recovery tool which allows users to recover the OS while preserving their data and important customizations, without having to back-up their data in advance. It reduces the need for custom recovery applications by providing users with more recovery options and the ability to fix their own PCs with confidence. 
 
-In Windows 10, the Push-button reset features have been updated to include the following improvements: 
-
-The Push-button reset user experience offers customization opportunities. Manufacturers can insert custom scripts, install applications or preserve additional data at available extensibility points. 
-The following Push-button reset features are available to users with Windows 10 PCs: 
-
-  - Refresh your PC 
-
-    Fixes software problems by reinstalling the OS while preserving the user data, user accounts, and important settings. All other preinstalled customizations are restored to their factory state. In Windows 10, this feature no longer preserves user-acquired Universal Windows apps. 
-
-  - Reset your PC
-
-    Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Classic Windows applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state. 
-
-  - Bare metal recovery 
-
-    Restores the default or preconfigured partition layout on the system disk, and reinstalls the OS and preinstalled customizations from external media.
-
+I
 ### Prepare ScanState 
 
-To start working with Push Button Reset, you'll need to copy ScanState to _Data_.
+To start working with Push Button Reset, you'll need to copy ScanState to *USB-B*.
 
 Use scanstate to capture Classic Windows applications and settings on your image.
 
@@ -1649,42 +1660,11 @@ To reduce the size of your ScanState recovery packages, run the following comman
 DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\apps.ppkg /ImagePath:C:\ /SingleInstance
 ```
 
-### Optimize your image with DISM
-
-Running Dism with the  `/resetbase` optimizes your image in several ways:
-
-- It marks installed packages (KB Updates) as permanent so that recovery and Push Button Reset is performed,  packages are included in a refresh/reset.
-- Superseded packages are removed.
-- Package updates are compressed to save space.
-
-The `/defer` option is new in Windows 10 version 1703. This switch skips the compression action while running `/resetbase`. The compression is done in a lower-priority thread after a device reaches the desktop. This improves the performance of running `/resetbase` on factory floor, but also means the image will be slightly larger than not running it.
-
-> [!Important]
-> By default, non-major updates (e.g. ZDPs, KB’s, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. 
-
-#### Run DISM /resetbase
-
-Run Dism with the `/resetbase` option to configure your Windows image to include installed packages in recovery:
-
-Option 1: Run /resetbase with compression on
-
-```
-MD c:\scratchdir
-Dism /Cleanup-Image /Image:C:\ /StartComponentCleanup /resetbase /scratchdir:c:\scratchdir
-RD c:\scratchdir 
-```
-
-Option 2: Run /resetbase /defer turning compression off
-
-```
-MD c:\scratchdir
-Dism /Cleanup-Image /Image:C:\ /StartComponentCleanup /resetbase /defer /scratchdir:c:\scratchdir
-RD c:\scratchdir 
-```
-
 ## Capture your image
 
-In this section, we'll tell you how to capture your sysprepped image. 
+In this section, we'll tell you how to capture your sysprepped image. You can capture either a [WIM](#capture-a-wim) or an [FFU](#capture-an-ffu).
+
+### Capture a WIM
 
 **On your reference PC:**
 
@@ -1708,7 +1688,33 @@ In this section, we'll tell you how to capture your sysprepped image.
     MD e:\scratchdir
     Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\CustomImage.wim /Name:"CustomImage" /scratchdir:e:\scratchdir
     ```
+
     This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
+
+With your image captured, you can skip to [Verify your final image](#verify-your-final-image).
+
+### Capture an FFU
+
+**On your reference PC:**
+
+1.	Identify Windows Partition Drive letter.
+
+    a. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
+
+    b. At the \DISKPART> prompt type list disk
+
+    c. Under the "Disk ###" column, identify the the disk that has the Windows installation, and note the assigned disk number. This will look something like _Disk 0_.
+
+    d. Type exit to quit Diskpart
+
+2.	Capture an image of the windows disk to USB-B. This process takes several minutes. 
+
+    ```
+    DISM.exe /capture-ffu /imagefile=E:\Images\CustomImage.wim /Name:"CustomImage" /capturedrive=\\.\PhysicalDrive0 /description:"Windows 10 FFU"
+    ```
+    
+    This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
+
 
 ## Verify your final image
 
@@ -1718,13 +1724,25 @@ In this section, we'll cover how to deploy your captured image for testing and v
 
 
 1. Boot the PC you want to test your image on into WinPE.
-2. Run applyimage.bat to deploy the customimage.wim
+2. Run applyimage.bat to deploy the image.
+    
+    If you captured a WIM called customimage.wim:
 
     ```
     E:\Deployment\applyimage.bat E:\Images\customimage.wim
     ```
+    
+    **or**
 
-3. Type `exit` to close WinPE and restart the PC.
+    If you captured an FFU called CustomImage.FFU:
+
+    ```
+    E:\Deployment\applyimage.bat E:\Images\CustomImage.FFU
+    ```
+
+3.  Follow the script's prompts to apply the image.
+
+4. Type `exit` to close WinPE and restart the PC.
 
 ### Validate the configuration
 
@@ -1792,7 +1810,6 @@ Reference the OEM Policy Documentation for more details.
 
 Throughout this guide, we have shown a few places where you can reduce the disk footprint:
 
-- Using Dism /cleanup-image /resetbase
 - Using Dism /export-image
 - Using Compact OS
 - Using Compact OS with Single Instancing
@@ -1829,20 +1846,6 @@ The table below shows additional space saved by using compact OS, Single instanc
 | Hiberfile off, no compact     | 10.87GB (>825MB)               | 13.48GB (>1.5GB)               |
 | Hiberfile reduced, no compact | 11.27GB (>400MB)               | 14.15GB (>930MB)               |
 
-### Troubleshooting deployment issues
-
-Windows deployment generates many logs. To diagnose deployment issues, a script that gathers logs is included on USB-B. This script copies all relevant logs, which can then be sent to OTSQR when reporting a deployment issue. To run the log:
-
-1.	Insert USB-B into the device with the deployment issue
-2.	Open command prompt in Administrator mode
-3.	Navigate to drive letter of USB-B (ex. E:\) in command prompt
-4.	CD to E:\Resources
-5.	Run script GatherLogs.cmd
-
-The script should return Success message and give a path to the folder to .zip.
-
-![Log collection tool successful completion](images/lab-log-collect.png)
- 
 
 
 

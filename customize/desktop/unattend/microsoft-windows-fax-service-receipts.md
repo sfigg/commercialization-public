@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: b8bc8d3c-599b-40ed-87f3-d4f6c0438690
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -30,7 +30,7 @@ ms.technology: windows-oem
 | [SmtpServerAuthenticationMechanism](microsoft-windows-fax-service-receipts-smtpserverauthenticationmechanism.md) | Specifies one of the authentication schemas to use: Anonymous, Basic, or authentication based on Windows Security. |
 | [SmtpServerPort](microsoft-windows-fax-service-receipts-smtpserverport.md) | Specifies the IP port number for the e-mail server. |
 
-## Valid Passes
+## Valid Configuration Passes
 
 specialize
 

@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: af7616ea-9f09-4d4d-a0e5-d439df2bb02d
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -44,7 +44,7 @@ If the provider is a Microsoft partner, and the icon is hosted on the Microsoft 
 
 This string type supports empty elements.
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 oobeSystem
