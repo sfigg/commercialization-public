@@ -25,9 +25,9 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 ## Create a basic image
 
-### Set your OEM name (one-time only)
+### Set your OEM name
 
--   Open the file **C:\\IoT-ADK-AddonKit\\Tools\\setOEM.cmd** in Notepad, and modify it with your company name. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with. Only alphanumeric characters are supported in the OEM_NAME as this is used as a prefix for various generated file names.
+- Open **IoTCoreShell.cmd** and execute the set command below. We've added this variable to help you create packages with names that are easy to differentiate from those provided from other manufacturers you're working with. Only alphanumeric characters are supported in the OEM_NAME as this is used as a prefix for various generated file names.
 
     ```
     set OEM_NAME=Fabrikam
