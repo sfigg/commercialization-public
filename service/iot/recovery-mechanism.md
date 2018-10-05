@@ -1,10 +1,10 @@
 ---
-author: kpacquer
+author: parameshbabu
 Description: 'Learn how to add a recovery mechanism to your IoT Core image.'
 ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows 10 IoT Core Recovery
-ms.author: kenpacq
+ms.author: pabab
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -16,7 +16,6 @@ ms.technology: windows-oem
 You can add a recovery mechanism to your image with **WinPE** as a Safe OS and **WIM files** as Recovery SW from recovery partition, using the steps provided below.
 
 See [Windows 10 IoT Core Recovery](recovery.md) for the details on the possible mechanisms.
-See [Work with Windows Images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/work-with-windows-images) for the details of FFU files.
 
 ## Step 1 : Update device layout with recovery partition
 
@@ -66,7 +65,7 @@ Windows 10 ADK Release 1709 contains the Windows 10 Preinstall Environment for a
 In this WinPE, you add the following
 
 - Recovery scripts used for recovery process on device
-    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/Templates/recovery)).
+    - `startnet.cmd`, `startnet_recovery.cmd`: predefined scripts from the templates directory (see [templates\recovery](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Templates/recovery)).
     - config files : generated files based on the device layout, placed at `Build\<arch>\<bspname>\recovery`.
 - Recovery customizations files (optional)
     - `RecoveryGUI.exe` : Optional simple UI to hide the recovery shell prompt on the device. The recoveryGUI.exe can be a C++ application built for the target CPU or a .NET Framework 4 Windows from application. Newwinpe.cmd will have to be modified to add .NET Framework 4 capabilities to the WinPE image.
@@ -79,7 +78,7 @@ In this WinPE, you add the following
 
 You can create the WinPE image for the bsp with the above contents using the below command in IoTCoreShell
 ``` 
-newwinpe.cmd <Product> <BuildType>
+newwinpe.cmd <bspname> <socname>
 ```
 This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
@@ -126,20 +125,12 @@ This script will output the winpe at  `Build\<arch>\<bspname>\winpe.wim`.
 
 ## Step 5 : Build the image
 
-- Build all packages.
+- `buildpkg.cmd all` - to build all packages.
 
-    ```
-    buildpkg.cmd all
-    ```
+- `buildrecovery.cmd <productname> Test` (or Retail) - to build the image. This will build the following
+    - winpe image for the specified device layout
+    - regular FFU (`Flash.ffu`)
+    - extract the required recovery files
+    - update the FFU with the recovery files and save as `Flash_Recovery.ffu`
 
-- Build the recovery image.
 
-    ```
-    buildrecovery.cmd <Product> <BuildType>
-    ```
-
-- This will perform the following
-    - Create winpe image for the specified device layout
-    - Reference the regular FFU (`Flash.ffu`)
-    - Extract the required recovery files
-    - Update the FFU with the recovery files and save as `Flash_Recovery.ffu`
