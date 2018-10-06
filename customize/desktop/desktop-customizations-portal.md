@@ -43,7 +43,6 @@ These are some common ways to customize your desktop device. You will also find 
 | [Customize SIM card slot names](customize-sim-card-slot-names.md) | You can customize the names of SIM card slots on the device to more easily differentiate between them. For example, if the device has both an embedded SIM slot and an external SIM slot, customizing the names will help your customers understand which is which. |
 | [Customize a Specific Absorption Rate mapping table](customize-sar-mapping-table.md) | You can configure and store a Specific Absorption Rate (SAR) table for mobile broadband modems in the registry. When a mobile broadband modem is connected to the Windows device, Windows automatically uses the table to map the mobile country code (MCC) of the modem's registered mobile operator (MO) to its appropriate SAR back-off index, and configures the modem with it.                               |
 |[Pen and Windows ink](pen-and-ink.md) | You can create an advanced Pen settings app, or link to your own apps, in the Pen and Windows Ink settings. |
-| ["Hey Cortana"](cortana.md) | The “Hey Cortana” feature enables users to more easily engage Cortana on their Windows 10 device by speaking the phrase “Hey Cortana”.  |
 | [Windows SIM Technical Reference](wsim/windows-system-image-manager-technical-reference.md) | Settings reference for Windows System Image Manager.            |
 | [Unattended Windows Setup Reference](unattend/index.md) | Settings reference for Unattend.                                                              |
 
