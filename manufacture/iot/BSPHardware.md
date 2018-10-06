@@ -22,16 +22,20 @@ There are two steps to creating your own BSP:
 
 1. Download [RPi_BSP.zip](https://github.com/ms-iot/iot-adk-addonkit/releases/download/17134_v5.3/RPi_BSP.zip) to a local directory, say `C:\Downloads\RPi_BSP.zip`
 2. Launch [IoTCorePShell](https://github.com/ms-iot/iot-adk-addonkit) and create or open a workspace using
-    ```powershell
+
+    ``` powershell
     new-ws C:\MyWorkspace <oemname> arm
     (or) open-ws C:\MyWorkspace
     ```
+
 3. Import the bsp using [Import-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md) and build using
-    ```powershell
+
+    ``` powershell
     Import-IoTBSP RPi2 C:\Downloads\RPi_BSP.zip
     (or) importbsp RPi2 C:\Downloads\RPi_BSP.zip
     buildpkg RPi2
     ```
+
 > [!NOTE]
 > Raspberry Pi BSP driver sources are available at [ms-iot/bsp](https://github.com/ms-iot/bsp)
 
@@ -51,18 +55,23 @@ Follow the steps below to use this BSP with the Windows 10 ADK release 1809 (177
 
 1. Download the BSP package and install
 2. Launch IoTCorePShell, and create/open your workspace
-    ```powershell
+
+    ``` powershell
     new-ws C:\MyWorkspace <oemname> arm
     (or) open-ws C:\MyWorkspace
     ```
+
 3. Set the source location, either the installed directory or the zip file path 
-    ```powershell
+
+    ``` powershell
     $Source = "C:\Program Files (x86)\Intel IoT\Source-<arch>"
     (or) 
     $Source = "C:\Downloads\IntelBSP.zip"
     ```
+
 4. Import the bsp using [Import-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md) and build using
-    ```powershell
+
+    ``` powershell
     Import-IoTBSP <bspname> $Source
     (or) importbsp <bspname> $Source
     buildpkg <bspname>
@@ -78,16 +87,20 @@ Steps to create the drivers :
 
 1. Download the *_db410c_BSP.zip to a folder say, `C:\Downloads\*_db410c_BSP.zip`
 2. Launch IoTCorePShell, and create/open your workspace
-    ```powershell
+
+    ``` powershell
     new-ws C:\MyWorkspace <oemname> arm
     (or) open-ws C:\MyWorkspace
     ```
+
 3. Import the bsp using [Import-QCBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-QCBSP.md) and build using
-    ```powershell
+
+    ``` powershell
     Import-QCBSP "C:\Downloads\*_db410c_BSP.zip" C:\prebuilt\DB410c_BSP -ImportBSP
     buildpkg QCDB401C
     ```
-    Set BSPPKG_DIR setting in the workspace xml to `C:\prebuilt\DB410c_BSP`
+
+    Set `<BSPPkgDir>` setting in the IoTWorkspace.xml to `C:\prebuilt\DB410c_BSP`
 
 ## Other helpful resources
 

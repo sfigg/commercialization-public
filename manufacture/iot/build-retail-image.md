@@ -13,9 +13,6 @@ ms.technology: windows-oem
 
 # Lab 1f: Build a retail image
 
-> [!Important]
-> For the powershell version v6.x, see [Building a retail FFU](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#building-a-retail-ffu)
-
 We'll take our customizations, put them together, and test them in a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
@@ -26,48 +23,22 @@ We'll take our customizations, put them together, and test them in a retail buil
 -   [Lab 1d: Add networking and other provisioning package settings to an image](add-a-provisioning-package-to-an-image.md)
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 
-## <span id="Add_your_app_to_the_retail_configuration_file"></span><span id="add_your_app_to_the_retail_configuration_file"></span><span id="ADD_YOUR_APP_TO_THE_RETAIL_CONFIGURATION_FILE"></span>Add your app to the retail configuration file
+## <span id="Add_your_features_to_the_retail_configuration_file"></span><span id="add_your_features_to_the_retail_configuration_file"></span><span id="ADD_YOUR_FEATURES_TO_THE_RETAIL_CONFIGURATION_FILE"></span>Add your features to the retail configuration
 
-1.  Open your product's retail configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\RetailOEMInput.xml**.
+1.  Update the product retail configuration file using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md)
 
-2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
-
-    ``` xml
-    <AdditionalFMs>
-      <!-- Including BSP feature manifest -->
-      <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
-      <!-- Including OEM feature manifest -->
-      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
-      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
-    </AdditionalFMs>
+    ``` powershell
+    # Add application features
+    Add-IoTProductFeature ProductA Test APPX_MYUWPAPP -OEM
+    Remove-IoTProductFeature ProductA Test IOT_BERTHA
+    # Add registry and file features
+    Add-IoTProductFeature ProductA Retail FILES_CONFIGS -OEM
+    Add-IoTProductFeature ProductA Retail REGISTRY_SETTINGS -OEM
+    # Add provisioning feature
+    Add-IoTProductFeature ProductA Retail PROV_WIFISETTINGS -OEM
+    # Add driver
+    Add-IoTProductFeature ProductA Retail DRIVERS_HELLOBLINKY -OEM
     ```
-
-3.  Add the FeatureIDs for the your app package, and the OEM\_CustomCmd package.
-
-    ``` xml
-    <OEM> 
-       <!-- Include BSP Features -->
-       <Feature>RPI2_DRIVERS</Feature> 
-       <Feature>RPI3_DRIVERS</Feature>
-       <!-- Include OEM features -->
-       <Feature>CUSTOM_CMD</Feature> 
-       <Feature>PROV_AUTO</Feature>
-       <Feature>APP_MyUWPApp</Feature>
-       <Feature>CUSTOM_FilesAndRegKeys</Feature>
-       <Feature>DRIVER_HelloBlinky</Feature> 
-    </OEM>
-    ```
-    
-    PROV_AUTO is required to pull in the provisioning package.
-	
-	CUSTOM_FilesAndRegKeys, APP_MyUWPApp, and DRIVER_HelloBlinky were sample packages added in previous labs.
-
-## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
-
-1.  Copy the customizations.xml file from C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB\\prov to C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\prov.
-
-2.  Delete ProductAProv.ppkg file if present.
-    
 
 ## <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 
@@ -75,43 +46,51 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 2. Download a [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) that matches the CA of the code-signing certificate from the previous step.
 
-3.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
+3.	Configure the code signing certificate for retail signing in `C:\MyWorkspace\IoTWorkspace.xml`
 
+    ```xml
+    <!--Specify the retail signing certificate details, Format given below -->
+    <RetailSignToolParam>/s my /i "Issuer" /n "Subject" /ac "C:\CrossCertRoot.cer" /fd SHA256</RetailSignToolParam>
     ```
-	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
-	```
-	
 	-  Issuer        : Issuer of the code-signing certificate (see Certificate -> Details -> Issuer) 
 	
 	-  Subject       : Subject in the code-signing certificate (see Certificate -> Details -> Subject)
 	
 	-  CrossCertRoot : Full path of the Cross-Certificate file that was downloaed in step 2.
-	
-4.	From the IoT Core Shell, enable retail signing.
 
+    You could also specify the certificate by the thumbprint
+    ```xml
+    <!--Specify the retail signing certificate details, Format given below -->
+    <RetailSignToolParam>/s my /sha1 "thumbprint" /fd SHA256</RetailSignToolParam>
     ```
-	retailsign On
+	
+4.	From the IoT Core Shell, enable retail signing using [Set-IoTRetailSign](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTRetailSign.md).
+
+    ``` powershell
+	Set-IoTRetailSign On
+    (or) retailsign On
 	```
 	
 5.	Rebuild all the packages so that they are retail signed.
 
-    ```
+    ``` powershell
 	buildpkg all
 	```
 
-    If the BSP drivers/packages are test signed, you need to rebuild them to have retail signature. You can re-sign the cabs and its contents using 
+    If the BSP drivers/packages are test signed, you need to rebuild them to have retail signature. You can re-sign the cabs and its contents using [Redo-IoTCabSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Redo-IoTCabSignature.md)
 
+    ``` powershell
+    Redo-IoTCabSignature <srccabdir> <dstcabdir>
+    (or) re-signcabs <srccabdir> <dstcabdir>
     ```
-    re-signcabs.cmd <srccabdir> <dstcabdir>
-    ```
-	
-6.  From the IoT Core Shell, create the image:
+	Update the `<BSPPkgDir>` in the `IoTWorkspace.xml` to `<dstcabdir>`
+6.  Create the image:
 
-    ```
+    ``` powershell
     buildimage ProductA Retail
     ```
 
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Retail\\Flash.FFU.
+    This creates the product binaries at `C:\MyWorkspace\Build\<arch>\ProductA\Retail\Flash.ffu`.
 
 7.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
 

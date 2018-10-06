@@ -74,7 +74,7 @@ Below is an example for specifying files and reg keys.
 
 Use [Add-IoTAppxPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
 
-    ```powershell
+    ``` powershell
     Add-IoTAppxPackage HelloWorld.appx fga Appx.HelloWorld
     (or) newappxpkg HelloWorld.appx fga Appx.HelloWorld
     New-IoTCabPackage Appx.HelloWorld
@@ -88,7 +88,7 @@ See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/mas
 
 When you have to install multiple applications signed with same certificate, you can add the certificate along with one app and for the remaining apps, you can skip adding the certificate using the skipcert flag.
 
-    ```powershell
+    ``` powershell
     newappxpkg AnotherApp.appx none Appx.AnotherApp skipcert
     ```
 
@@ -101,7 +101,7 @@ See also
 
 The driver package contains the references (InfSource) to the Inf file for the driver. You can author the driver .wm.xml file manually or use [Add-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md) that generates package xml based on the input inf file.
 
-    ```powershell
+    ``` powershell
     Add-IoTDriverPackage C:\Mydriver\GPIO.inf MyDriver.GPIO
     (or) newdrvpkg C:\Mydriver\GPIO.inf MyDriver.GPIO
     New-IoTCabPackage MyDriver.GPIO

@@ -46,125 +46,46 @@ You can skip these steps if you've already created and tested your app.
 
 **Create a package for an app**
 
-> [!IMPORTANT]
-> For the powershell based commands for adding a app package, see [Add your packages to your image]https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools#add-your-packages-to-your-image)
 
-1.  Open the IoT Core Shell: run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
+1.  From the IoT Core Shell, create a new **appx package** using [New-IoTAppxPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md)
 
-2.  Create a new package for the app, for example:
+    ``` powershell
+    Add-IoTAppxPackage "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
 
-    ```
-    newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
+    (or) newAppxPkg "C:\DefaultApp\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test\IoTCoreDefaultApp_1.2.0.0_ARM_Debug_Test.appx" fga Appx.MyUWPApp
     ```
 
-    This creates a new folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.MyUWPApp, and generates a customizations.xml file as well as a package xml file that is used to build the package.
+    This creates a new folder at `C:\MyWorkspace\Source-<arch>\Packages\Appx.MyUWPApp`, copies the appx files and its dependencies and generates a customizations.xml file as well as a package xml file that is used to build the package.
 
-3.  From the IoT Core Shell, build the package.
+    This also adds a FeatureID **APPX_MYUWPAPP** to the `C:\MyWorkspace\Source-<arch>\Packages\OEMFM.xml` file.
 
-    ```
-    buildpkg Appx.MyUWPApp
-    ```
+3.  From the IoT Core Shell, build the package using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md).
 
-    The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Appx.MyUWPApp.cab**.
-
-## Update the feature manifest
-
-
-**Add your app package to the feature manifest**
-
-1.  Open your feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\OEMFM.xml**
-
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "APP_MyUWPApp".
-
-    ``` xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <FeatureManifest 
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-      xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
-      <BasePackages/>
-      <Features>
-        <OEM>
-          <!-- Feature definitions below -->
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTCoreDefaultApp.cab">
-            <FeatureIDs>
-              <FeatureID>APP_IOTCOREDEFAULTAPP</FeatureID>
-              <FeatureID>OEM_IoTCoreDefaultApp</FeatureID> <!-- keeping old id for compatibility, dropping OEM prefix -->
-            </FeatureIDs>
-          </PackageFile>
-    	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTOnboardingTask.cab">
-            <FeatureIDs>
-              <FeatureID>APP_IOTONBOARDINGTASK</FeatureID>
-              <FeatureID>OEM_IoTOnboardingTask</FeatureID> <!-- keeping old id for compatibility, dropping OEM prefix -->
-            </FeatureIDs>
-          </PackageFile>
-    	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.MyUWPApp.cab">
-            <FeatureIDs>
-              <FeatureID>APP_MyUWPApp</FeatureID>
-            </FeatureIDs>
-          </PackageFile>	  
-        </OEM>
-        <OEMFeatureGroups/>
-      </Features>
-    </FeatureManifest>
+    ``` powershell
+    New-IoTCabPackage Appx.MyUWPApp
+    (or) buildpkg Appx.MyUWPApp
     ```
 
+    The package is built, appearing as `C:\MyWorkspace\Build\<arch>\pkgs\<oemname>.Appx.MyUWPApp.cab`.
 
-  You'll now be able to add your app to any of your products by adding a reference to this feature manifest and Feature ID.
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
 **Replace your product's default app with your own**
 
-1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\TestOEMInput.xml**.
+1.  Add the FeatureID for our app package using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md)
 
-2.  Make sure both your feature manifest, OEMFM.xml, and the feature manifest: OEMCommonFM.xml, are both listed in the AdditionalFMs section.
-
-    ``` xml
-    <AdditionalFMs>
-      <!-- Including BSP feature manifest -->
-      <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
-      <!-- Including OEM feature manifest -->
-      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
-      <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
-       <!-- Including the test features -->
-       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-    </AdditionalFMs>
+    ``` powershell
+    Add-IoTProductFeature ProductA Test APPX_MYUWPAPP -OEM
+    (or) addfid ProductA Test APPX_MYUWPAPP -OEM
     ```
 
-3.  Change the features included in the product: 
+2. Remove the sample test apps IOT_BERTHA using [Remove-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md)
 
-    a. Remove the sample test apps by adding comment tags: _<!-- --_>. (We'll use these apps again in later labs.)
-
-    b. Confirm that the OEM features: CUSTOM_CMD, and PROV_AUTO are present. 
-
-    c. Add the FeatureID for your app package, example: OEM_MyUWPApp.
-    
-    ``` xml
-    <Features>
-      <Microsoft>
-    
-      ...
-      
-     <!-- Sample Apps, remove this when you introduce OEM Apps 
-      <Feature>IOT_BERTHA</Feature> -->
-      <Feature>IOT_ALLJOYN_APP</Feature>
-      <Feature>IOT_NANORDPSERVER</Feature>
-      <Feature>IOT_SHELL_HOTKEY_SUPPORT</Feature>
-      <Feature>IOT_APPLICATIONS</Feature>
-
-    </Microsoft>
-    <OEM>
-      <!-- Include BSP Features -->
-      <Feature>RPI2_DRIVERS</Feature>
-      <Feature>RPI3_DRIVERS</Feature>
-      <!-- Include OEM features -->
-      <Feature>CUSTOM_CMD</Feature>
-      <Feature>PROV_AUTO</Feature>
-      <Feature>APP_MyUWPApp</Feature>
-    </OEM>
+    ``` powershell
+    Remove-IoTProductFeature ProductA Test IOT_BERTHA
+    (or) removefid ProductA Test IOT_BERTHA
     ```
-
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
@@ -172,7 +93,7 @@ Build and flash the image using the same procedures from [Lab 1a: Create a basic
 
 1.  From the IoT Core Shell, build the image (`buildimage ProductA Test`).
 2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
-3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\Flash.ffu), then click **Next**.
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (`C:\MyWorkspace\Build\<arch>\ProductA\Test\Flash.ffu`), then click **Next**.
 4.  Enter the device name and password. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
 4.  Put the card into the IoT device and start it up.
 
