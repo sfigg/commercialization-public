@@ -19,8 +19,7 @@ Add features using the OEMInput XML file. To learn more, see the [IoT Core manuf
 
 The following table describes the Microsoft-defined features that can be used by OEMs in the Features element in the **OEMInput** file for **Retail** build.
 
-When creating images for your device, determine which features are required for your device. 
-
+When creating images for your device, determine which features are required for your device.
 
 ### Features
 
@@ -119,20 +118,20 @@ When creating images for your device, determine which features are required for 
 
 | Features                  | Description                                                          |
 |---------------------------|----------------------------------------------------------------------|
-| **CUSTOM\_CMD**   | Feature to include the oemcustomization.cmd. This is product-specific and picks up the input file from product directory. OEM\_CustomCmd is the deprecated feature ID, can still be used for legacy builds. See [Runtime Customisations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
+| **CUSTOM\_CMD** | Feature to include the oemcustomization.cmd. This is product-specific and picks up the input file from product directory. OEM\_CustomCmd is the deprecated feature ID, can still be used for legacy builds. See [Runtime Customisations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
 | **CUSTOM_BCD** | Includes [BCD settings](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#bcd-settings) to suppress boot UX progress display and also enables flight sigining. Modify [Custom.BCD.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Workspace/Common/Packages/Custom.BCD/Custom.BCD.xml) to remove flight signing. |
 | **CUSTOM_OOBEAPP** | Includes customisations for the [OOBE App](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#oobe-app)  |
 | **PROV\_AUTO** | Feature to [add a provisioning package to an image](add-a-provisioning-package-to-an-image.md). This is product specific and picks up the input ppkg file from the product directory OEM\_ProvAuto is the deprecated feature ID, can still be used for legacy builds. See [Runtime Customisations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
 | **RECOVERY_BCD** | Includes recovery bcd settings for GPT devices |
 | **RECOVERY_BCD_MBR** | Includes recovery bcd settings for MBR devices |
-| **Sec_BitLocker** | Includes the configuration for Bitlocker |
-| **Sec_SecureBoot** | Includes the retail configuration for Secure Boot |
-| **Sec_SecureBootTest** | Includes the test configuration for Secure Boot |
-| **Sec_DeviceGuard** | Includes the retail configuration for DeviceGuard |
-| **Sec_DeviceGuardTest** | Includes the test configuration for DeviceGuard |
-| **OEMCommon_HotKey** | Feature  to demonstrate how to [add a registry setting to an image](add-a-registry-setting-to-an-image.md). Read [Switching between apps](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys) for more details.|
+| **SEC_BITLOCKER** | Includes the configuration for Bitlocker |
+| **SEC_SECUREBOOT** | Includes the retail configuration for Secure Boot |
+| **SEC_SECUREBOOT_TEST** | Includes the test configuration for Secure Boot |
+| **SEC_DEVICEGUARD** | Includes the retail configuration for DeviceGuard |
+| **SEC_DEVICEGUARD_TEST** | Includes the test configuration for DeviceGuard |
+| **SETTINGS_HOTKEY** | Feature  to demonstrate how to [add a registry setting to an image](add-a-registry-setting-to-an-image.md). Read [Switching between apps](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys) for more details.|
 
-### Test features 
+### Test features
 
 The following table describes the Microsoft-defined test features that can be used by OEMs in the Features element in the **OEMInput** file for **Test** builds ONLY.
 
