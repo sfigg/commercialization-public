@@ -27,6 +27,9 @@ Read [Windows as a Service Overview](https://docs.microsoft.com/windows/deployme
 
 ## OS updates only
 
+> [!IMPORTANT]
+> Starting with Windows 10, version 1809, IOT\_GENERIC\_POP is not required (deprecated) and the device will **by default** scan for OS updates.
+
 A Windows 10 IoT Core device can be set to receive OS updates *only* directly from Microsoft by using **IoT\_GENERIC\_POP** feature in the OEMInput XML.
 
 See [Manage IoT Core device updates](managing-iot-device-update.md) for details on various means to control the updates.

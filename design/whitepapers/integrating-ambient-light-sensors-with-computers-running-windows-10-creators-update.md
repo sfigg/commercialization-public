@@ -14,7 +14,7 @@ ms.technology: windows-oem
 
 **Last updated:**
 
--   Oct 2, 2018
+-   Oct 02, 2018
 
 **Applies to:**
 
