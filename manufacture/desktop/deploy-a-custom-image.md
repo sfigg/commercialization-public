@@ -46,9 +46,9 @@ There are some limitations to installing a custom image using Windows Setup. For
 
 To complete this walkthrough, you need the following:
 
--   A technician computer. A technician computer is any computer that has the Windows Assessment and Deployment Kit (Windows ADK) tools installed..
+-   A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) tools installed.
 
--   A Windows 8 product DVD.
+-   A Windows product ISO.
 
 -   A master computer on which you will install and capture your custom image.
 
@@ -82,7 +82,7 @@ where D: is the DVD-ROM drive on your local computer.
 ## <span id="bkmk-3"></span><span id="BKMK-3"></span>Step 3: Capture an image of the installation
 
 
-In this step, you will capture an image of the reference installation by using the Deployment Image Servicing and Management (**DISM**) tool and then store the custom image on a network share.
+In this step, you'll capture an image of the reference installation by using DISM and then store the custom image on a network share.
 
 1.  Boot the reference computer by using your bootable Windows PE media.
 
@@ -245,8 +245,8 @@ In this step, you will deploy your custom image from a network share onto a dest
 
 You can further customize your answer file to include additional options. You can also build a DVD deployment media that contains the same content that you put on the network share. A single deployment DVD provides a portable installation solution that requires no network or any additional resources. The process includes building a configuration set and recapturing all source files into a single DVD.
 
-**Important**  
-The DVD media that you create is for internal deployment use only. You cannot redistribute this media.
+> [!important]
+> The DVD media that you create is for internal deployment use only. You cannot redistribute this media.
 
  
 
