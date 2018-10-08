@@ -100,7 +100,7 @@ In this step, you will capture an image of the reference installation by using t
 2.  At a command prompt, capture an image of the installation. You specify a name and description as part of your image capture. All values are required by Windows Setup. If a .wim file does not include these values, then the image will not install correctly. For example:
 
     ```
-    Dism /Capture-Image /ImageFile:C:\myimage.wim /CaptureDir:c:\ /Compress:fast /CheckIntegrity /ImageName:"x86_Ultimate" /ImageDescription:"x86 Ultimate Compressed"
+    Dism /Capture-Image /ImageFile:C:\myimage.wim /CaptureDir:c:\ /Compress:fast /CheckIntegrity /Name:"x86_Ultimate" /Description:"x86 Ultimate Compressed"
     ```
 
 3.  Replace the default Install.wim on the network share with your custom image. The image must be called Install.wim. For example:
