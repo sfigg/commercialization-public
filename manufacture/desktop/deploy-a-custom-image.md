@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Deploy a Custom Image
 
 
-In this topic you create a reference installation, capture an image of the installation, and rerun Windows® Setup with an answer file that points to your custom image. Deploying a custom image using Windows Setup provides several benefits over applying an image using an image capture tool.
+In this topic you create a reference installation, capture an image of the installation, and rerun Windows Setup with an answer file that points to your custom image. Deploying a custom image using Windows Setup provides several benefits over applying an image using an image capture tool.
 
 Setup supports the following:
 
@@ -36,30 +36,19 @@ Setup supports the following:
 
 -   Configuring the computer to dual-boot operating systems.
 
--   Ensuring that the hardware can support Windows 8.
+-   Ensuring that the hardware can support Windows.
 
 There are some limitations to installing a custom image using Windows Setup. For more information, see [Windows Setup Scenarios and Best Practices](windows-setup-scenarios-and-best-practices.md).
 
-In this topic:
-
--   [Copy the Windows product DVD source files to a network share](#bkmk-1)
-
--   [Create a master installation](#bkmk-2)
-
--   [Capture an image of the installation](#bkmk-3)
-
--   [Create a custom answer file](#bkmk-4)
-
--   [Deploy the image by using Windows Setup](#bkmk-5)
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
 To complete this walkthrough, you need the following:
 
--   A technician computer. A technician computer is any computer that has the Windows Assessment and Deployment Kit (Windows ADK) tools installed..
+-   A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) tools installed.
 
--   A Windows 8 product DVD.
+-   A Windows product ISO.
 
 -   A master computer on which you will install and capture your custom image.
 
@@ -93,14 +82,14 @@ where D: is the DVD-ROM drive on your local computer.
 ## <span id="bkmk-3"></span><span id="BKMK-3"></span>Step 3: Capture an image of the installation
 
 
-In this step, you will capture an image of the reference installation by using the Deployment Image Servicing and Management (**DISM**) tool and then store the custom image on a network share.
+In this step, you'll capture an image of the reference installation by using DISM and then store the custom image on a network share.
 
 1.  Boot the reference computer by using your bootable Windows PE media.
 
 2.  At a command prompt, capture an image of the installation. You specify a name and description as part of your image capture. All values are required by Windows Setup. If a .wim file does not include these values, then the image will not install correctly. For example:
 
     ```
-    Dism /Capture-Image /ImageFile:C:\myimage.wim /CaptureDir:c:\ /Compress:fast /CheckIntegrity /ImageName:"x86_Ultimate" /ImageDescription:"x86 Ultimate Compressed"
+    Dism /Capture-Image /ImageFile:C:\myimage.wim /CaptureDir:c:\ /Compress:fast /CheckIntegrity /Name:"x86_Ultimate" /Description:"x86 Ultimate Compressed"
     ```
 
 3.  Replace the default Install.wim on the network share with your custom image. The image must be called Install.wim. For example:
@@ -256,8 +245,8 @@ In this step, you will deploy your custom image from a network share onto a dest
 
 You can further customize your answer file to include additional options. You can also build a DVD deployment media that contains the same content that you put on the network share. A single deployment DVD provides a portable installation solution that requires no network or any additional resources. The process includes building a configuration set and recapturing all source files into a single DVD.
 
-**Important**  
-The DVD media that you create is for internal deployment use only. You cannot redistribute this media.
+> [!important]
+> The DVD media that you create is for internal deployment use only. You cannot redistribute this media.
 
  
 
