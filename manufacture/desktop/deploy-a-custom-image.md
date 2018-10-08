@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Deploy a Custom Image
 
 
-In this topic you create a reference installation, capture an image of the installation, and rerun Windows® Setup with an answer file that points to your custom image. Deploying a custom image using Windows Setup provides several benefits over applying an image using an image capture tool.
+In this topic you create a reference installation, capture an image of the installation, and rerun Windows Setup with an answer file that points to your custom image. Deploying a custom image using Windows Setup provides several benefits over applying an image using an image capture tool.
 
 Setup supports the following:
 
@@ -36,21 +36,10 @@ Setup supports the following:
 
 -   Configuring the computer to dual-boot operating systems.
 
--   Ensuring that the hardware can support Windows 8.
+-   Ensuring that the hardware can support Windows.
 
 There are some limitations to installing a custom image using Windows Setup. For more information, see [Windows Setup Scenarios and Best Practices](windows-setup-scenarios-and-best-practices.md).
 
-In this topic:
-
--   [Copy the Windows product DVD source files to a network share](#bkmk-1)
-
--   [Create a master installation](#bkmk-2)
-
--   [Capture an image of the installation](#bkmk-3)
-
--   [Create a custom answer file](#bkmk-4)
-
--   [Deploy the image by using Windows Setup](#bkmk-5)
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
