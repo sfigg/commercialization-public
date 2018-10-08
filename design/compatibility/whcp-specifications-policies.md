@@ -21,9 +21,7 @@ The specifications define how to build Windows-compatible devices, systems, and 
 
 The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
 
-### Certification for Windows Server 2016, Azure Stack, and Software Defined Data Center (SDDC)
-
-Certification for Windows Server 2016 and later, the Software Defined Data Center (SDDC) additional qualifications, the Windows Server Software Defined Datacenter (WSSD) program, and Azure Stack.
+### Certification for Windows Server 2016 and later, the Software Defined Data Center (SDDC) additional qualifications, the Windows Server Software Defined Datacenter (WSSD) program, and Azure Stack.
 
 Products looking to achieve certification and qualification for the above products and programs must:
 
