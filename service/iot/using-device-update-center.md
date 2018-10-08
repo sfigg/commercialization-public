@@ -41,29 +41,32 @@ Device Update Center portal provides OEMs a way to:
 ### Install the tools
 
 1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
-2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/) (Develop branch Version 5.2)
+2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
 3. [Windows 10 IoT Core Packages](https://www.microsoft.com/software-download/windows10iotcore)
-4. Get BSP for your platform from the silicon vendor (Qualcomm/Intel..). Copy the BSP to a folder, for example `C:\BSP`. Set an environment variable, for example, `set BSPPKG_DIR=C:\BSP`
+4. Get BSP for your platform from the silicon vendor. See [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps)
 
 ### Set up your environment
 
-1. Edit `\IoT-ADK-AddonKit\Tools\setOEM.cmd` to set the OEM_NAME.
+1. Launch IoTCorePShell (launches an elevated command prompt), and create/open your workspace
+    ```powershell
+    new-ws C:\MyWorkspace <oemname> <arch>
+    (or) open-ws C:\MyWorkspace
+    ```
+2. Configure the EV certificate used in the Device Update Center and the code signing certificate in the Workspace. 
 
-2. Launch `IoTCoreShell.cmd` (Launches an elevated command prompt).
-
-3. Select the required architecture in the `Set Environment for Architecture` prompt.
-
-4. Install test signing certificates using `InstallOEMCerts` . This is required *only once* for the PC.
-
-5. Update the `setsignature.cmd` to point to your code signing certificate.
-
+    ```xml
+    <!--Specify the retail signing certificate details, Format given below -->
+    <RetailSignToolParam>/s my /i "Issuer" /n "Subject" /ac "C:\CrossCertRoot.cer" /fd SHA256</RetailSignToolParam>
+    <!--Specify the ev signing certificate details, Format given below -->
+    <EVSignToolParam>/s my /i "Issuer" /n "Subject" /fd SHA256</EVSignToolParam>
+    ```
    You can use the same EV cert used for Hardware Dev Center or get a different one for code signing purpose only. It is recommended to keep a separate certificate for each purpose.
 
 ## Step 2: Create a new product
 
 1. Create a new product: `newproduct <productname> <bspname>`
 
-2. Configure the SMBIOS fields based on the format defined by the BSP (for Qualcomm, this is defined in a SMBIOS.cfg file), See [OEM License Requirements](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements). The key fields used in the update are: 
+2. Provide the SMBIOS information based on the format defined by the BSP (for Qualcomm, this is defined in a SMBIOS.cfg file), See [OEM License Requirements](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements). The key fields used in the update are: 
 
    - **System Product Name**, referred in the update portal as **Device Model**.
 
@@ -101,7 +104,7 @@ Device Update Center portal provides OEMs a way to:
 
    ![importcfg](images/importcfg.PNG)
 
-2. Sign all required binaries with the code signing certificate using `signbinaries.cmd` and for the bsp packages: `re-signcabs <src dir> <dst dir>`
+2. Sign all required binaries with the code signing certificate using `signbinaries` and for the bsp packages: `re-signcabs <src dir> <dst dir>`
 
 3. Build the base image using the below commands
 
@@ -123,7 +126,7 @@ So far, we have created an updateable image which can be used to manufacture and
 
 1. Update the version number first using `setversion <a.b.c.d>`, making sure that a.b.c.d is higher version than the previous version set.
 
-2. If new versions of BSP drivers are available, copy them to the BSP folder setup earlier (example, `C:\BSP`). Alternatively, keep all the updated drivers in a different folder, for example, `C:\BSPv2` and update your environment variable: `set BSPPKG_DIR=C:\BSPv2`.
+2. If new versions of BSP drivers are available, copy them to the BSP folder setup earlier (example, `C:\BSP`). Alternatively, keep all the updated drivers in a different folder, for example, `C:\BSPv2` and update your workspace xml.
 
 3. If there is an new version of the existing appx, create new appx with the same name. Note that the ID in the generated customizations.xml will be the same as the earlier version.
 
@@ -131,7 +134,7 @@ So far, we have created an updateable image which can be used to manufacture and
 
 5. Update any other package contents as applicable.
 
-6. Sign all required binaries with the code signing certificate using `signbinaries.cmd` and for the bsp packages, use `re-signcabs <src dir> <dst dir>`
+6. Sign all required binaries with the code signing certificate using `signbinaries` and for the bsp packages, use `re-signcabs <src dir> <dst dir>`
 
 7. Build the update image:
 
