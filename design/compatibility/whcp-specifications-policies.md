@@ -25,7 +25,7 @@ The policies and processes provide guidelines on qualification testing and produ
 
 Products looking to achieve certification and qualification for the above products and programs must:
 
- - Meet the Windows Hardware Compatibility Specifications for the applicable version of Windows Server and these other programs
+ - Meet the Windows Hardware Compatibility Specifications for the relevant version of Windows Server and these other programs
  - Follow the Windows Server Policy document
  - Use  the relevant version with matching palylist and supplemental content to generate logs
 
