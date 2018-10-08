@@ -1,13 +1,14 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Lab 6: Add universal Windows apps and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 6: Add universal Windows apps and taskbar pins'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 10/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/preinstall-apps-using-dism
 ---
 
 # <span id="Add_apps"></span>Lab 6: Add universal Windows apps and taskbar pins

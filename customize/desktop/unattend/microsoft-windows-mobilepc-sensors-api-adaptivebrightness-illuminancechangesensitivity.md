@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 9b1eeef3-a892-43c1-92eb-7e16af786fa5
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
-author: alhopper-msft
-ms.author: alhopper
+author: themar-msft
+ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -60,6 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 The following sample XML output shows how to specify that a minimum of a 20% change in lux is required to cause a change in display brightness.
 
 ```
+<ALRCurveVersion>2</ALRCurveVersion>
 <ALRPoints>000000000a0000000a00000028000000280000005000000044</ALRPoints>
 <DisplayResponseInterval>60000</DisplayResponseInterval>
 <IlluminanceChangeSensitivity>20</IlluminanceChangeSensitivity>
@@ -68,19 +69,10 @@ The following sample XML output shows how to specify that a minimum of a 20% cha
 ## Related topics
 
 
-[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api.md)
 
-[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
+[ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)
 
 [ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md)
 
- 
-
- 
-
-
-
-
-
-
+[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
 

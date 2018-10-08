@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Manufacturing Windows Engineering Guide'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Manufacturing Windows Engineering Guide'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 03/07/2018
 ms.topic: article
 ms.prod: windows-hardware

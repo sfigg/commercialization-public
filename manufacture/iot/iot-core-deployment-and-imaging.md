@@ -5,7 +5,7 @@ ms.assetid: 800596ab-ce50-4bc0-921a-280ed63a2d75
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core deployment and imaging
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

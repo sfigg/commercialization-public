@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 author: kpacquer
 ms.author: kenpacq
-ms.date: 10/04/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -30,19 +30,16 @@ Customizable components of RDX:
 
 <!-- [!NOTE]  This document is designed for an audience of OEM marketing and engineering teams. -->
 
-## Get ready for RDX 3.0
+## RDX 3.0
 
-RDX 3.0 will be available soon. For schedule details, see this section in the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
+RDX 3.0 is included in Window 10, version 1809. For Windows 10, version 1803, you can preload RDX 2.0, and once the device is connected, it will upgrade to RDX 3.0 automatically.
 
-In the meantime, for Windows 10, versions 1803 and 1809, continue to preload RDX 2.0 on your new devices. Once RDX 3.0 is available, connected devices will receive the upgrade to RDX 3.0 automatically.
-
-Key updates to RDX 3.0 will include:
+Key updates include:
 
 * **The Retail Demo app has a new webpage-style layout**. New home page, navigation style, and content.
 * **New: RD Provisioning extension API** allows you to manage online assets yourself. In RDX 2.0, online assets are managed through the Retail Demo Asset Manager (RDAM), and the time from start to finish (submission > review > approval > sent to devices) is 2-3 weeks. If you manage your own online assets using our API, you may be able to complete these tasks faster.
-* **New: On-device admin (ODA) app**(part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
-* **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update, scheduled for release in early 2019. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus.
-
+* **New: On-device admin (ODA) app** (part of the provisioning API) allows retailers to update specs, price locally on non-networked devices.
+* **Coming soon: Digital fact tag (DFT)** shows customers device specs and price. This feature will be available as part of an online update. After receiving the online update, retailers can manually update the DFT through the Retail Demo Mode Advanced Configuration menus. To learn more, see the [RDX Windows Experience Guide (WEG)](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/352).
 
 ## Attract loop
 

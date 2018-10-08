@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: Add and Remove Drivers to an Offline Windows Image
 ms.assetid: 71651630-2e26-4174-8161-8f83b8ae4bc3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Drivers to an Offline Windows Image
-ms.author: themar
+ms.author: kenpacq
 ms.date: 04/16/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,6 +23,12 @@ When you use DISM to install a device driver to an offline image, the device dri
 
 To learn how to add a driver on a running Windows PC, see [Add a driver online in audit mode](add-a-driver-online-in-audit-mode.md) or [Install a plug and play device](http://go.microsoft.com/fwlink/?LinkId=139151). To learn how to add a driver to a PC running WinPE, see [Drvload command line options](drvload-command-line-options.md).
 
+## Driver types
+
+-  **.inf-style drivers**: Many drivers include an information file (with an .inf extension) to help install the driver. These can be installed using tools described in this topic.    
+-  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. To learn how to add these, see [Add a driver online in Audit Mode](add-a-driver-online-in-audit-mode.md)
+-  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image, and in the Windows recovery (WinRE) image. 
+
 ## Add drivers to an offline Windows image
 
 To add drivers to an offline image, you have to mount an image prior to adding drivers. 
@@ -32,7 +38,7 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 1.  Mount a Windows image. For example:
 
     ```
-    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows Drive" /MountDir:C:\test\offline
+    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /MountDir:C:\test\offline
     ```
     See [Mount and modify a Windows image using DISM](mount-and-modify-a-windows-image-using-dism.md) for more info.
 
@@ -180,9 +186,6 @@ If you need drivers for WinPE to see the local hard disk drive or a network, you
 [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 
  
-
- 
-
 
 
 

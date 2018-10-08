@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53e9b41c-0dd8-4ea5-9bc9-a37a1ee7b30f
-author: aahi
-ms.author: aahi
+author: EliotSeattle
+ms.author: EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -465,7 +465,7 @@ If your device supports any of the feature(s) in this section, please update the
 
 -   This feature and testing requires an external programmable power strip.
 
--   See the [Flush Test](b7df764f-ab21-4e7a-9594-e6f814711b4d.md) for more details.
+-   See the [Flush Test](2dec1f67-b506-4434-8bdf-763147ad8f0b.md) for more details.
 
 **Device.Storage.Hd.Sata.HybridInformation**
 

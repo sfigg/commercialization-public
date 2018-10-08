@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Windows 10 in S mode manufacturing overview.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows 10 in S mode manufacturing overview'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 04/18/2018
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,8 +1,8 @@
 ---
 title: Get the tools you need for OEM deployment of Windows 10 for desktop editions
-author: themar
+author: kpacquer
 description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop computers, laptops, and 2-in-1s. Find information about how to enable imageless, push-button reset recovery and more.  
-ms.author: themar
+ms.author: kenpacq
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -90,6 +90,8 @@ Download the following, and place the files into `C:\temp\lab`.
 ### Windows Assessment and Deployment Kit (ADK) for Windows 10
 
 Download the version of [Windows ADK for Windows 10](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#winADK) that matches the version of Windows 10 you are working with.
+
+If you're using the ADK for Windows 10, version 1809, you'll also have to download and install the [WinPE addon for the ADK](https://go.microsoft.com/fwlink/?linkid=2022233).
 
 ### Drivers
 

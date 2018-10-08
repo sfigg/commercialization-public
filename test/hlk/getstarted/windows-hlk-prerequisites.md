@@ -5,8 +5,8 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2f9fd0f0-f21a-4086-8f7f-36a9698c270d
-author: aahi
-ms.author: aahi
+author: EliotSeattle
+ms.author: EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -95,12 +95,15 @@ The following image shows an example test environment.
 </tr>
 <tr class="odd">
 <td><p>Operating system</p></td>
-<td><p>English language and English local version of Windows Server 2012, or Windows Server 2012 R2. For information, see the [Windows Server](http://go.microsoft.com/fwlink/?LinkId=236055) website.</p>
+<td><p>English language and English local version of Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.</p>
 </td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
+
+>[!NOTE]
+>Windows Server 2019 is not supported as a host OS for the 1809 HLK Controller. However, it is supported as a client OS. 
 
 >[!NOTE]
 > - Windows 10S users should test against Windows 10 Pro.

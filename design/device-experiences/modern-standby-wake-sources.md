@@ -9,7 +9,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 author: beneluxboy
 ms.assetid: 4DB2F090-A0AD-4167-8805-85930FEF926F
-ms.author: dongill
+ms.author: eliotgra
 ms.date: 07/23/2018
 ms.topic: article
 ms.prod: windows-hardware

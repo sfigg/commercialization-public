@@ -1,10 +1,10 @@
 ---
-author: themar
+author: kpacquer
 Description: auditUser
 ms.assetid: 34da792a-51fa-4a4d-a67e-6390cb5be2a1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: auditUser
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware

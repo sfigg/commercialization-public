@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: justinha
-ms.date: 08/09/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -36,7 +36,7 @@ For a device to support Windows Defender Exploit Guard as specified in the Windo
 | Secure Boot configuration and management | <ul><li>The OEM has to be able to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. </li><li>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</li></ul> |
 | Secure firmware update process | Like UEFI software, UEFI firmware can have security vulnerabilities. It is essential to have the capability to immediately patch such vulnerabilities when found through firmware updates. UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).|
 | Trusted Platform Module (TPM) | To learn more about TPM, see [Trusted Platform Module](OEM-TPM.md).|
-| United Extensible Firmware Interface (UEFI) | To lern more, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM-UEFI.md). |
+| United Extensible Firmware Interface (UEFI) | To learn more, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM-UEFI.md). |
 | Virtualization-based security (VBS) | Device Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS)](OEM-VBS.md). |
 
 

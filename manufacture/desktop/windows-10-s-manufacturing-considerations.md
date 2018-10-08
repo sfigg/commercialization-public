@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Windows 10 S WinPE, CI policy, OOBE, and DISM information.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows 10 S manufacturing environment'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 4/25/2018
 ms.topic: article
 ms.prod: windows-hardware

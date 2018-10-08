@@ -1,14 +1,15 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Lab 8: Add branding and license agreements'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 8: Add branding and license agreements'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/how-oobexml-works
 ---
 
 # Lab 8: Add branding and license agreements

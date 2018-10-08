@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Enable S mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable S mode'
-ms.author: themar
+ms.author: kenpacq
 ms.date: 04/18/2018
 ms.topic: article
 ms.prod: windows-hardware

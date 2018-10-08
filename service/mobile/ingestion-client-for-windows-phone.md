@@ -4,7 +4,7 @@ Description: Ingestion Client for Windows Phone
 ms.assetid: 2d62208f-8ba3-4034-a853-a16434c2b26d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Ingestion Client for Windows Phone
-ms.author: themar
+ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
