@@ -40,7 +40,7 @@ When creating images for your device, determine which features are required for 
 | **IOT\_MIRACAST\_RX_APP** | Adds Connect App that supports Miracast receive feature. Note that the underlying hw/drivers should support Miracast for this app to work. Currently supported for arm only.  |
 | **IOT\_WEBB\_EXTN** | Adds [Windows Device Portal]( https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal). If you are building an open retail device for commercial deployment to a "specific/limited installation" (i.e. factory or retail store) where the end-user does the final configuration and you document your customers that they must **obtain a certificate for WDP and install it on both WDP and connecting browsers and passwords are changed on WDP**, then using WDP in this narrow commercial instance is acceptable.  |
 | **IOT\_BLUETOOTH\_A2DP\_SINK** | Allows an audio device to play to the device. This is new in Windows 10, version 1809|
-| **IOT\_BLUETOOTH\_A2DP\_SOURCE** | Allows the device to play to an external device (e.g. a Bluetooth speaker).  |
+| **IOT\_BLUETOOTH\_A2DP\_SOURCE** | Allows the device to play to an external device (e.g. a Bluetooth speaker). This is available as a separate feature in Windows 10, version 1809. In Windows 10, version 1803, this was included in the image by default.  |
 | **IOT\_BLUETOOTH\_HFP\_AUDIOGATEWAY** | HFP AudioGateway allows the device to serve as a gateway device for phone calls. An application can interact with the calling functions of a paired Bluetooth headset by using APIs under Windows.ApplicationModel.Calls, specifically the VoipPhoneCall class. . |
 | **IOT\_HEADLESS\_CONFIGURATION** | Configures device to boot into Headless mode, where the UI stack is disabled and foreground apps will not launch |
 | **IOT\_NARRATOR** | Adds support for the Windows 10 screen-reading functionality, Narrator. |
@@ -163,7 +163,7 @@ The following table provides an overview of supported features per IoT Core OS r
 | **IOT\_BCD\_FLASHMODE\_SETTING**                 |x| | | | |
 | **IOT\_BERTHA**                                  |x|x|x|x|x|
 | **IOT\_BLUETOOTH\_A2DP\_SINK**                   |x| | | | |
-| **IOT\_BLUETOOTH\_A2DP\_SOURCE**                 |x|x| | | |
+| **IOT\_BLUETOOTH\_A2DP\_SOURCE**                 |x| | | | |
 | **IOT\_BLUETOOTH\_HFP\_AUDIOGATEWAY**            |x| | | | |
 | **IOT\_CONTAINERS**                              |x (x64,arm32)|x(x64)|x(x64)| | |
 | ~~IOT\_CORTANA~~ (Deprecated)                    |N/A|x|x|x| |

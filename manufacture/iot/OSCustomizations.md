@@ -97,7 +97,7 @@ This is achieved with setting the following registry keys:
 2. In the OEMInput.xml, include the feature id **CUSTOM_SETTINGS**, note that this is defined in the OEMCOMMONFM.xml.
 
 > [!Note] 
-> In Windows 10, version 1809, **IOT\_CRASHCONTROL\_SETTINGS** feature is added to address this customisation.
+> In Windows 10, version 1809, **IOT\_CRASHCONTROL\_SETTINGS** feature is added to address this customization.
 
 ## BCD Settings
 Boot Configuration Database settings can be used to configure various features. See [BCDEdit Command-LineOptions](https://docs.microsoft.com/windows-hardware/manufacture/desktop/bcdedit-command-line-options) for the various settings and options available.

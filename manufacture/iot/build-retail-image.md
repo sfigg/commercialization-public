@@ -42,11 +42,9 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 ## <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 
-1.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For the kernel driver signing, Standard Code signing certificate is sufficient. You will require an EV cert to access the Device Update Center in Hardware Dev Center portal.
+1. Purchase a code-signing certificate from a Certificate Authority (CA) for which Microsoft also issues a cross-certificate. The [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) topic provides a list of CAs for which Microsoft also provides cross-certificates and the corresponding cross-certificates. Note that these are the only cross-certificates that chain up to the “Microsoft Code Verification Root” issued by Microsoft, which will enable Windows to run OEM drivers.
 
-2. Download a [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) that matches the CA of the code-signing certificate from the previous step.
-
-3.	Configure the code signing certificate for retail signing in `C:\MyWorkspace\IoTWorkspace.xml`
+2.	Configure the code signing certificate for retail signing in `C:\MyWorkspace\IoTWorkspace.xml`
 
     ```xml
     <!--Specify the retail signing certificate details, Format given below -->
@@ -64,14 +62,14 @@ We'll take our customizations, put them together, and test them in a retail buil
     <RetailSignToolParam>/s my /sha1 "thumbprint" /fd SHA256</RetailSignToolParam>
     ```
 	
-4.	From the IoT Core Shell, enable retail signing using [Set-IoTRetailSign](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTRetailSign.md).
+3.	From the IoT Core Shell, enable retail signing using [Set-IoTRetailSign](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTRetailSign.md).
 
     ``` powershell
 	Set-IoTRetailSign On
     (or) retailsign On
 	```
 	
-5.	Rebuild all the packages so that they are retail signed.
+4.	Rebuild all the packages so that they are retail signed.
 
     ``` powershell
 	buildpkg all
@@ -84,7 +82,7 @@ We'll take our customizations, put them together, and test them in a retail buil
     (or) re-signcabs <srccabdir> <dstcabdir>
     ```
 	Update the `<BSPPkgDir>` in the `IoTWorkspace.xml` to `<dstcabdir>`
-6.  Create the image:
+5.  Create the image:
 
     ``` powershell
     buildimage ProductA Retail
@@ -92,9 +90,9 @@ We'll take our customizations, put them together, and test them in a retail buil
 
     This creates the product binaries at `C:\MyWorkspace\Build\<arch>\ProductA\Retail\Flash.ffu`.
 
-7.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+6.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
 
-8.  Put the card into the IoT device and start it up.
+7.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
 
