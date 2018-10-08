@@ -11,531 +11,243 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# IoT Core Add-ons command-line options
+# IoT Core Add-ons Powershell Commands
 
 > [!IMPORTANT]
-> IoT Core Add-ons command-line is deprecated and replaced with [Powershell version](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/README.md#powershell-version-of-iot-adk-addonkit). See [Supported functionality listing](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/README.md#supported-functionality-listing) for the list of commands.
+> IoT Core Add-ons command-line is deprecated. Refer to [IoT Core Add-ons command-line options](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Docs/iot-core-adk-addons-command-line-options.md) for the old list of commands.
 
-These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/tree/17134), in the [\\Tools folder](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Tools). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+The Powershell version of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/tree/master) supports the following commands. These are part of the powershell module [IoTCoreImaging](). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
-## appx2pkg.cmd
+## [Add-IoTAppxPackage (newappxpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md)
 
-Creates the folder structure and copies the template files for a new package.
+Creates Appx OEM package and adds featureID to OEMFM.xml
 
-## BuildAgent.cmd
+## [Add-IoTBSP (newbsp)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTBSP.md)
 
-Builds FFUs for all OEMInputSamples under the Addon Kit directory. Can be used to automate nightly builds.
+Adds new bsp based on a template
 
-## buildbsp.cmd
+## [Add-IoTBitLocker](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTBitLocker.md)
 
-Builds BSP packages after signing all the required binaries.
+Adds bitlocker package for the product
 
-**Usage**:
+## [Add-IoTCommonPackage (newcommonpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTCommonPackage.md)
 
-```
-buildbsp {bspname/all} [version]
-```
+Creates common (file/reg) OEM package and adds featureID to OEMCOMMONFM.xml
 
-| Parameters | Description                                                                 |
-| ---------- | --------------------------------------------------------------------------- |
-| BSPName    | Name of the build BSP directory.                                            |
-| All        | Builds all BSP directories.                                                 |
-| Version    | Optional. Specifies package version. If not specified, it uses bsp_version. |
+## [Add-IoTDeviceGuard](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTDeviceGuard.md)
 
-**Examples**
+Adds device guard package
 
-```
-buildbsp rpi2
-buildbsp rpi2 10.0.1.0
-buildbsp all
-buildbsp all 10.0.2.0
-```
+## [Add-IoTDriverPackage (newdrvpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md)
 
-## buildfm.cmd
+Creates Driver OEM package and adds featureID to OEMFM.xml
 
-Builds feature merger files.
+## [Add-IoTFilePackage](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTFilePackage.md)
 
-**Usage**:
+Adds a file package and adds the featureID to OEMCOMMONFM.xml
 
-```
-buildfm {oem/bsp/all} [bspname] [version]
-```
+## [Add-IoTProductFeature (addfid)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md)
 
-| Parameters | Description                                                                 |
-| ---------- | --------------------------------------------------------------------------- |
-| OEM        | Builds OEMFM/OEMCommonFM files                                              |
-| BSP        | Builds BSP files                                                            |
-| All        | Builds both OEM and BSP files                                               |
-| BSPName    | Required for BSP. Name of the BSP. Not required with OEM or All             |
-| Version | Optional. Specifies package version. If not specified, it uses version defined in the variable %BSP\_VERSION%. |
+Adds feature id to the product's oeminput xml file
 
-**Examples**
+## [Add-IoTProduct (newproduct)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)
 
-```
-buildfm oem
-buildfm bsp Rpi2
-buildfm all
-```
+Adds new product based on the OEMInputSamples from BSP
 
-## buildimage.cmd
+## [Add-IoTProvisioningPackage (newprovpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTProvisioningPackage.md)
 
-[Builds an image file (FFU)](create-a-basic-image.md), using the product-specific packages. Uses createimage.cmd, includes additional options.
+Adds provisioning oem package and adds the featureID to OEMCOMMONFM.xml
 
-**Usage**: 
+## [Add-IoTRegistryPackage](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTRegistryPackage.md)
 
-```
-buildimage [ProductName]/[All]/[Clean] [BuildType] [Version]
-```
+Adds a registry package and adds the featureID to OEMCOMMONFM.xml
 
-| Parameters | Description |
-| --- | --- |
-| ProductName | Required, Name of the product to be built. |
-| All | All Products under the \Products directory are built. |
-| Clean | Cleans the output directory.  One of the above should be specified. |
-| BuildType | Optional, Retail/Test, if not specified both types are built. |
-| Version | Optional, Package version. If not specified, it uses version defined in the variable %BSP\_VERSION% |
-| /? | Displays this usage string. |
+## [Add-IoTSecureBoot](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTSecureBoot.md)
 
-**Examples**:
+Adds secureboot package for the product
 
-```
-buildimage SampleA Test
-buildimage SampleA Retail
-buildimage SampleA
-buildimage All Test
-buildimage All
-buildimage Clean
-```
+## [Add-IoTSecurityPackages](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTSecurityPackages.md)
 
-## buildpkg.cmd
+Adds security packages for the product
 
-Builds a package from \Sources-\<arch\>\Packages.
+## [Add-IoTSignature (signbinaries)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTSignature.md)
 
-Buildpkg saves the package in the \Build\\<arch\>\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
+Signs files with the cert set via Set-IoTSignature
 
-For troubleshooting, Buildpkg saves logs at \Build\\<arch\>\pkgs\logs. 
+## [Convert-IoTPkg2Wm (convertpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Convert-IoTPkg2Wm.md)
 
+Converts pkg.xml files to wm.xml files
 
-**Usage**: 
+## [Copy-IoTBSP (copybsp)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Copy-IoTBSP.md)
 
-```
-buildpkg [CompName.SubCompName]/[packagefile.wm.xml]/[All]/[Clean] [version]
-```
+Copies BSP between workspaces
 
-| Parameters | Description |
-| ----- | ----- |
-| CompName.SubCompName | Use this to refer to the package by its ComponentName.SubComponent Name. |
-| packagefile.wm.xml | Use this to refer to the package by its package definition XML file. |
-| All | Builds all packages in the \Sources-\<arch\>\Packages folder. This is the same as the `BuildPkg All` command. |
-| Clean | Use this to erase everything in the \Build\\<arch\>\pkgs folder. Recommended before building all packages. |
-| version | Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. |
+## [Copy-IoTOEMPackage (copypkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Copy-IoTOEMPackage.md)
 
-**Examples**:
+Copies OEM package between workspaces
 
-```
-buildpkg Appx.Main
-buildpkg Appx.Main 10.0.1.0
-buildpkg sample.wm.xml
-buildpkg sample.wm.xml 10.0.1.0
-buildpkg All
-buildpkg All 10.0.2.0
-buildpkg Clean
-```
+## [Copy-IoTProduct (copyproduct)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Copy-IoTProduct.md)
 
-## buildrecovery.cmd
+Copies product between workspaces
 
-Creates a recovery image by adding required wim files to the recovery partition. See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows-hardware/service/iot/recovery-mechanism). This command also invokes newwinpe.cmd and buildimage.cmd if the winpe.wim and Flash.ffu files are not present.
+## [Dismount-IoTFFUImage (ffud)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Dismount-IoTFFUImage.md)
 
-**Usage**: 
+Dismounts the FFU image
 
-```
-buildrecovery <ProductName> [BuildType] [WimMode] [WimDir]
-```
+## [Export-IoTDUCCab (exportpkgs)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Export-IoTDUCCab.md)
 
-| Parameter | Description |
-| ----- | ----- |
-| ProductName | Required, Name of the product to be built. |
-| BuildType | Optional, Retail/Test, if not specified both types are built. |
-| WimMode | Optional, Import/Export, if import is specified, the wim files from WimDir are used, if export is specified, the extracted wim files are copied to WimDir. |
-| WimDir | Optional, directory to import or export wim files. Mandatory when WimMode is specified |
+Exports the update cab for DUC upload
 
-**Example**:
+## [Export-IoTDeviceModel (exportidm)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Export-IoTDeviceModel.md)
 
-```
-buildrecovery RecoverySample Test
-```
+Exports the IoT Device Model for DUC registration
 
-## exportpkgs.cmd
+## [Export-IoTFFUAsWims (ffue)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Export-IoTFFUAsWims.md)
 
-Exports all the packages used in a product configuration to a directory.
+Exports the EFIESP/MainOS/Data partitions as Wims
 
-**Usage**:
+## [Get-IoTFFUDrives (ffugd)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Get-IoTFFUDrives.md)
 
-```
-exportpkgs DestDir Product BuildType [OwnerType]
-```
+Returns a hashtable of the drive letters for the mounted partitions
 
-| Parameters | Description |
-| ----- | ----- |
-| DestDir | Required. Destination directory to export. |
-| Product | Required. Name of the product.  |
-| Buildtype | Required. Can be Retail or Test. |
-| Owner | Optional. Can be MS, OEM, or All. Default value is All. |
+## [Get-IoTProductFeatureIDs (gpfids)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Get-IoTProductFeatureIDs.md)
 
-**Examples**:
+Gets features IDs supported in the IoTCore OS
 
-```
-exportpkgs C:\Temp SampleA Test OEM
-exportpkgs C:\Temp SampleA Retail ALL
-```
+## [Get-IoTProductPackagesForFeature (gpfidpkgs)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Get-IoTProductPackagesForFeature.md)
 
-## flashsd.cmd
+Gets OS packages corresponding to features ID
 
-Flashes an image to a specified SD card. FlashSD.cmd requires you to specify a physical drive number. Connect your SD card to your PC, and then open diskmgr.msc to see the physical drive number of the SD card.
+## [Get-IoTWorkspaceBSPs (gwsbsps)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Get-IoTWorkspaceBSPs.md)
 
-**Usage**:
+Gets the list of BSP names in the workspace
 
-```
-flashsd product buildtype drivenr
-```
+## [Get-IoTWorkspaceProducts (gwsproducts)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Get-IoTWorkspaceProducts.md)
 
-| Parameters | Description |
-| ----- | ----- |
-| product | Name of the product. |
-| buildtype | Retail or Test. Specifies the buildtype. |
-| drivenr | Physical drive number of the SD card. |
+Gets the list of product names in the workspace
 
-**Example**:
+## [Import-IoTBSP (importbsp)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Import-IoTBSP.md)
 
-```
-flashSD SampleA test 2
-```
+Imports BSP from the given folder / zip file or sample workspace
 
-## GetAppXInfo.exe
+## [Import-IoTCertificate](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Import-IoTCertificate.md)
 
-Extracts appx package-related information for a given .appx or .appbundle package.
+Imports the certificate for security functions
 
-**Usage**:
+## [Import-IoTDUCConfig (importcfg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Import-IoTDUCConfig.md)
 
-```
-GetAppxInfo.exe appxfile
-```
+Imports the CUSConfig.zip into the product directory
 
-**Example**:
+## [Import-IoTOEMPackage (importpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Import-IoTOEMPackage.md)
 
-```
-GetAppXInfo.exe IOTCoreDefaultApp_1.1.0.0_ARM.appx
-```
+Imports OEM package from Sample workspace
 
-## inf2cab.cmd
+## [Import-IoTProduct (importproduct)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Import-IoTProduct.md)
 
-Converts a .inf driver package to a .cab file.
+Imports Product from Sample workspace
 
-Inf2cab saves the package in the \Build\\<arch\>\pkgs folder  (example: Drivers.GPIO.cab).
+## [Install-IoTOEMCerts](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Install-IoTOEMCerts.md)
 
-Usage 
+Installs oem pfx files in the certs\private folder
 
-```
-inf2cab filename.inf [CompName.SubCompName]
-```
+## [Mount-IoTFFUImage (ffum)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Mount-IoTFFUImage.md)
 
-| Parameters | Description |
-| ----- | ----- |
-| filename.inf | Required, input file for the driver. |
-| CompName.SubCompName | Optional, refers to the driver package by its ComponentName.SubComponent Name. |
+Mounts the FFU image
 
-**Examples**:
+## [New-IoTCabPackage (buildpkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)
 
-```
-inf2cab C:\test\gpiodriver.inf
-inf2cab C:\test\gpiodriver.inf Drivers.GPIO
-```
+Creates `.cab` files
 
-## inf2pkg.cmd
+## [New-IoTFFUCIPolicy (ffus)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTFFUCIPolicy.md)
 
-Creates the folder structure and copies the template files for a new package
+Scans the MainOS partition and generates CI policy (`initialpolicy.xml`)
 
-**Usage**: 
+## [New-IoTFFUImage (buildimage)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTFFUImage.md)
 
-```
-inf2pkg input.inf [CompName.SubCompName] OwnerName
-```
+Creates regular FFU
 
-| Parameters | Description |
-| ----- | ----- |
-| input.inf | Required, input .inf file |
-| CompName.SubCompName | Optional, default is Drivers.input |
-| OwnerName | Optional, default is $(OEMNAME)
-| /? | Displays this usage string. |
+## [New-IoTFIPPackage (buildfm)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTFIPPackage.md)
 
-**Example**:
-```
-inf2pkg C:\test\testdriver.inf
-```
+Creates FIP packages and merged FM files
 
-<a name="iotcoreshell"></a>
-## IoTCoreShell.cmd
+## [New-IoTInf2Cab (inf2cab)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTInf2Cab.md)
 
-Opens the IoT Core Shell as an administrator. (This file is in the root folder, and uses LaunchTool.cmd)
+Creates cab file for the given inf file
 
-After you open IoTCoreShell, you'll be prompted to choose a default architecture (ARM or x86) for the devices you'll be building. This sets your default starting set of system variables.  
+## [New-IoTOEMCerts](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTOEMCerts.md)
 
-## LaunchTool.cmd
+Creates new OEM specific certificates
 
-Configures the command shell with required settings. 
+## [New-IoTProvisioningPackage (buildppkg)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTProvisioningPackage.md)
 
-## newappxpkg.cmd
+Creates `.ppkg` files
 
-Creates a new package folder to help you convert appx packages to .cab files. The provisioning package version (version field in customizations.xml) is set to the appx version itself. 
+## [New-IoTRecoveryImage (buildrecovery)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTRecoveryImage.md)
 
-This command creates the working folder in the \Source-\<arch\>\Packages\ folder.
+Creates recovery FFU
 
-If you run this command without any variables, you'll also see the other working folders in the \Source-\<arch\>\Packages\ folder.
+## [New-IoTWindowsImage (newwinpe)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTWindowsImage.md)
 
-**Usage**: 
+Creates custom winpe with bsp drivers / recovery scripts
 
-```
-newappxpkg filename.appx [fga]/[bgt]/[none] [CompName.SubCompName] [skipcert]
-```
+## [New-IoTWorkspace (new-ws)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTWorkspace.md)
 
-| Parameters | Description |
-| ----- | ----- |
-| filename.appx | Required, input file for the Appx package. |
-| fga/bgt/none | Required, chooses the app's behavior on startup. **fga**-App will be forground app. **bgt**-App will start in background. **none**-App will not run on startup. |
-| CompName.SubCompName | Optional, creates the working folder using the name: ComponentName.SubComponent. |
-| skipcert | Optional, specify this to skip adding cert information. |
+Creates new workspace
 
-**Example**:
+## [Open-IoTWorkspace (open-ws)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Open-IoTWorkspace.md)
 
-```
-newappxpkg C:\test\MainAppx_1.0.0.0_arm.appx fga AppX.Main
-```
+Opens existing workspace
 
-To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+## [Redo-IoTCabSignature (re-signcabs)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Redo-IoTCabSignature.md)
 
-## newbsp.cmd
+Resigns cab and its contents using Add-IoTSignature
 
-Creates the folder structure and copies the template files for [creating a new board support package (BSP)](create-a-new-bsp.md).
+## [Redo-IoTWorkspace (migrate)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Redo-IoTWorkspace.md)
 
-**Usage**: 
+Converts legacy iot-adk-addonkit directory into a workspace
 
-```
-newbsp BSPName
-```
+## [Remove-IoTProductFeature (removefid)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Remove-IoTProductFeature.md)
 
-| Parameter | Description |
-| ----- | ----- |
-| BSPName | Required, Name of the BSP to be used. |
+Removes feature id from the product's oeminput xml file
 
-**Example**:
+## [Set-IoTCabVersion (setversion)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Set-IoTCabVersion.md)
 
-```
-newbsp CustomRPi2
-```
+Stores the version in the IoTWorkspace.xml
 
+## [Set-IoTEnvironment (setenv)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Set-IoTEnvironment.md)
 
-## newcommonpkg.cmd
+Sets environment settings based on the config values in IoTWorkspace.xml
 
-Creates a new working folder to help you [add files, folders, registry keys, and provisioning packages](add-a-registry-setting-to-an-image.md) as .cab files. After using this command, use the buildpkg command to create your final .cab file.
+## [Set-IoTRetailSign (retailsign)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Set-IoTRetailSign.md)
 
-This command creates the working folder in the \Common\Packages\ folder.
+Sets/resets use of the retail code signing certificate
 
-If you run this command without any variables, you'll also see the other working folders in the \Common\Packages\ folder.
+## [Set-IoTSignature (setsignature)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Set-IoTSignature.md)
 
-**Usage**: 
+Sets the Certificate info used for signing
 
-```
-newcommonpkg CompName.SubCompName
-```
+## [Test-IoTCabSignature](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Test-IoTCabSignature.md)
 
-| Parameter | Description |
-| ----- | ----- |
-| CompName.SubCompName | Required, creates the working folder using the name ComponentName.SubComponent. |
+Tests if the Cab package and its contents are signed for the given config
 
-**Example**:
+## [Test-IoTFeatures](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Test-IoTFeatures.md)
 
-```
-newcommonpkg Registry.FilesAndRegKeys
-```
+Tests if all feature ids are defined, for the given product / config
 
-To learn more, see [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
+## [Test-IoTPackages](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Test-IoTPackages.md)
 
+Tests all packages and its contents are signed, for the given product / config
 
+## [Test-IoTRecoveryImage (verifyrecovery)](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Test-IoTRecoveryImage.md)
 
-## newdrvpkg.cmd
+Verifies if the wim files in the recovery ffu are proper
 
-Used to [add a driver to an image](add-a-driver-to-an-image.md). Creates a new working folder to help you convert driver packages to .cab files. After using this command, use the buildpkg command to create your final .cab file.
+## [Test-IoTSignature](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Test-IoTSignature.md)
 
-This command creates the working folder in the \Source-\<arch\>\Packages\ folder.
+Tests if the file is signed for the given config
 
-If you run this command without any variables, you'll also see the other working folders in the \Source-\<arch\>\Packages\ folder.
-
-**Usage**: 
-
-```
-newdrvpkg filename.inf [CompName.SubCompName]
-```
-
-| Parameters | Description |
-| ----- | ----- |
-| filename.inf | Required, input .inf file for the driver package. |
-| CompName.SubCompName | Optional, creates the working folder using the name: ComponentName.SubComponent. The default is Drivers.\<filename\>. |
-
-**Example**:
-
-```
-newdrvpkg C:\test\GPIO.inf Drivers.GPIO
-```
-
-## newproduct.cmd
-
-Used to [create new product configuration](create-a-basic-image.md). Creates a new working product directory under \Products and copies the contents from the template file.
-
-**Usage**: 
-
-```
-newproduct <productname> bsp
-```
-
-| Parameter | Description |
-| ----- | ----- |
-| productname | Name of the product to be created. |
-| bsp | Name of the BSP to be used. |
-
-**Example**:
-
-```
-newproduct ProductA rpi2
-```
-
-## newwinpe.cmd
-
-Creates a WinPE image for a specified bsp and a device layout (identified by the socname). See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows-hardware/service/iot/recovery-mechanism).
-
-**Usage**: 
-
-```
-newwinpe <bspname> <socname>
-```
-
-| Parameter | Description |
-| ----- | ----- |
-| bspname | Name of the bsp to be used. |
-| socname | Identifier for the device layout, specified in the bspfm.xml under devicelayout section. |
-
-**Example**:
-
-```
-newwinpe QCDB410C QC8016_R
-```
-
-## retailsign.cmd
-
-Toggles between using OEM cross-certificate and test certificates for signing
-
-**Usage**: 
-
-```
-retailsign {On/Off}
-```
-
-| Parameters | Description |
-| ----- | ----- |
-| On | Enables Cross Cert for signing. |
-| Off | Disables Cross Cert for signing and enables OEM Test Signing. |
-
-**Examples**:
-
-```
-retailsign On
-retailsign Off
-```
-
-
-## setenv.cmd
-
-Resets your environment variables, including **IOTADK\_ROOT**, **COMMON\_DIR**, **SRC\_DIR**, **BLD\_DIR**, **PKGBLD\_DIR**, **TOOLS\_DIR**, and more. 
-
-Open setenv.cmd in a text editor to see the full list of variables set.
-
-**Usage**: 
-
-```
-setenv {arm|x86|x64}
-```
-
-| Parameter | Description |
-| ----- | ----- |
-| arch | Architecture to be set (`arm`, `x86`, or `x64`). |
-
-**Example**:
-
-```
-setenv.cmd arm
-```
-
-## setOEM.cmd
-
-Sets your OEM company name. Edit this file with a text editor.
-
-Example: 
-
-```
-set OEM_NAME=Fabrikam
-```
-Where _Fabrikam_ is the OEM company name.Only alphanumeric characters are supported in the OEM_NAME as this is used as a prefix for various generated file names.
-
-## setsignature.cmd
-
-Sets the [Cross-Certificates for kernel-mode code signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
-
-## setversion.cmd
-
-Sets the version numbers used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
-
-This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
-
-**Usage**: 
-
-```
-setversion x.y.z.a
-```
-
-| Parameters | Description |
-| ----- | ----- |
-| x.y.z.a | Four-part version number to be used for packages. |
-
-**Example**:
-
-```
-setversion 10.0.0.1
-```
-## signbinaries.cmd
-
-Signs different file types in a directory
-
-**Usage**:
-
-```
-signbinaries {bsp/all/file extension} dir
-```
-
-| Parameters | Description |
-| ----- | ------ |
-| bsp | Signs all .sys/.dll files. |
-| all | Signs all .dll, .sys, and .ppkg files.
-| file extension | Signs all files of a specified type. For example, .cab, .dll, .sys,etc. |
-| dir | Directory with files to be signed. |
-
-**Example**:
-
-```
-signbinaries bsp %BSPSRC_DIR%
-signbinaries all %BSPSRC_DIR%
-signbinaries exe %BSPSRC_DIR%
-```
 ## Related topics
 
 [IoT Core Add-ons](iot-core-adk-addons.md)
 
-[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
+[IoT Core manufacturing guide](iot-core-manufacturing-guide.md)
