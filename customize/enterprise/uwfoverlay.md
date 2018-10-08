@@ -94,9 +94,11 @@ On devices with a disk overlay, you can use freespace passthrough to access your
 
 You'll still need to reserve some space on the disk for the overlay. This space is used to manage the overlay, and to store overwrites, such as system updates. All other writes are sent to free space on disk. Over time, the reserved overlay will grow slower and slower, because overwrites will just keep replacing one another.
 
+* [CMD](uwfmgrexe.md): uwfmgr overlay set-passthrough (on|off)
+
 ### <span id="persistentoverlay"></span> Persistent overlay
 
->![NOTE]
+> [!NOTE]
 > This mode is experimental, and we recommend thoroughly testing it before deploying to multiple devices. This option is not used by default.
 
 On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. This can be helpful in situations where your guest users may need to access for longer periods, and may need to power off the device between uses. 
@@ -105,15 +107,11 @@ This option gives your IT department more control over when the overlay is wiped
 
 To turn persistent overlay on or off:
 
-```cmd
-uwfmgr overlay set-persistent (on|off)
-```
+* [CMD](uwfmgrexe.md): uwfmgr overlay set-persistent (on|off)
 
 To reset the overlay:
+* [CMD](uwfmgrexe.md): `uwfmgr overlay reset-persistentstate on`
 
-```cmd
-uwfmgr overlay reset-persistentstate on
-```
 
 ### Overlay exhaustion
 

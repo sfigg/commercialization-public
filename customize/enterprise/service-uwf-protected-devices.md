@@ -30,7 +30,7 @@ When UWF servicing mode is triggered, Windows does the following:
 1. Scans for and applies app updates from the Microsoft store.
 1. After servicing is complete, it re-enables the UWF filter and resumes UWF protection.
 
->!Note
+>[!NOTE]
 > Servicing mode requires that all user accounts on the system have a password. If there is a user account that does not include a password, UWF servicing will fail.
 
 ## In this section
