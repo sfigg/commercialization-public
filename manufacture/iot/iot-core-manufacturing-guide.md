@@ -80,7 +80,7 @@ You'll list which of the features to add by using these tags:
 -   &lt;BasePackages&gt;: Packages that you always included in your images, for example, your base app.
 -   &lt;Features&gt;\\&lt;OEM&gt;: Other individual packages that might be specific to a particular product design.
 
-The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. Run this tool whenever any changes are made to the FM files. After you change OEM FM or OEM COMMON FM files, run `Buildfm oem`. After you change bspfm files, run `buildfm bsp <bspname>`.
+The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. This tool is invoked during image creation. You can manually run this after you change OEM FM or OEM COMMON FM files (run `Buildfm oem`) or after you change bspfm files (run `buildfm bsp <bspname>`).
 
 
 ### <span id="Creating_the_image__ImgGen_and_the_image_configuration_file__OEMInput.xml_"></span><span id="creating_the_image__imggen_and_the_image_configuration_file__oeminput.xml_"></span><span id="CREATING_THE_IMAGE__IMGGEN_AND_THE_IMAGE_CONFIGURATION_FILE__OEMINPUT.XML_"></span>Creating the image: ImgGen and the image configuration file (OEMInput.xml)

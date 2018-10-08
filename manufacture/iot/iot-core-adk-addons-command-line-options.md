@@ -13,7 +13,10 @@ ms.technology: windows-oem
 
 # IoT Core Add-ons command-line options
 
-These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-adk-addons-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+> [!IMPORTANT]
+> IoT Core Add-ons command-line is deprecated and replaced with [Powershell version](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/README.md#powershell-version-of-iot-adk-addonkit). See [Supported functionality listing](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/README.md#supported-functionality-listing) for the list of commands.
+
+These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/tree/17134), in the [\\Tools folder](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Tools). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
 ## appx2pkg.cmd
 
@@ -141,7 +144,7 @@ buildpkg Clean
 
 ## buildrecovery.cmd
 
-Creates a recovery image by adding required wim files to the recovery partition. See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows/iot-core/build-your-image/addrecovery). This command also invokes newwinpe.cmd and buildimage.cmd if the winpe.wim and Flash.ffu files are not present.
+Creates a recovery image by adding required wim files to the recovery partition. See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows-hardware/service/iot/recovery-mechanism). This command also invokes newwinpe.cmd and buildimage.cmd if the winpe.wim and Flash.ffu files are not present.
 
 **Usage**: 
 
@@ -407,7 +410,7 @@ newproduct ProductA rpi2
 
 ## newwinpe.cmd
 
-Creates a WinPE image for a specified bsp and a device layout (identified by the socname). See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows/iot-core/build-your-image/addrecovery).
+Creates a WinPE image for a specified bsp and a device layout (identified by the socname). See [Add a recovery mechanism to your image](https://docs.microsoft.com/windows-hardware/service/iot/recovery-mechanism).
 
 **Usage**: 
 
@@ -488,7 +491,7 @@ Sets the [Cross-Certificates for kernel-mode code signing](https://docs.microsof
 
 ## setversion.cmd
 
-Sets the [version numbers](https://docs.microsoft.com/windows-hardware/service/iot/updating-iot-core-apps) used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
+Sets the version numbers used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
 
 This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
 

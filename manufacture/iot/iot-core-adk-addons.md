@@ -41,9 +41,45 @@ The [IoT Core manufacturing guide](iot-core-manufacturing-guide.md) walks you th
 
 ## Code Architecture
 
+### Powershell version (v6.x)
+
+- Root folder
+    - IoTCorePShell.cmd: Launches the IoT Core Powershell
+    - IoTCoreShell.cmd: Launches the IoT Core commandline shell
+    - README.md: Version info, links to documentation
+- Scripts
+    - This contains helper powershell scripts and sample build scripts.
+- Tools
+    - CmdTools, containing commandline wrapper tools to invoke powershell commands
+    - IoTCoreImaging, containing the powershell module and scripts. See [IoT Core Add-ons Powershell tools](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/README.md#supported-functionality-listing)
+    - README.md : Documentation on the powershell tools
+- Workspace 
+    - IoTWorkspace.xml
+        - XML file containing the workspace configuration information such as supported architecture, security settings etc.
+    - Build
+        - This is the output directory where the build contents are stored. It starts as empty.
+    - Common/Packages
+        - Architecture *independent*, platform *independent* packages
+        - OEMCommonFM.xml - feature manifest file that enumerates common packages and defines common features.
+    - Source-\<arch\>
+        - Packages
+            - Architecture *specific*, platform *independent* packages
+            - OEMFM.xml - the feature manifest file that enumerates arch specific packages and defines arch specific features.
+            - OEMFMList.xml - enumeration of OEM FM files. 
+        - BSP
+            - \<bspname\>/Packages
+                -  Architecture *specific*, platform *specific* packages
+                - \<bspname\>FM.xml - feature manifest that enumerates the bsp packages and defines supported device layouts and features
+                - \<bspname\>FMList.xml - enumeration of BSP FM files.
+            - \<bspname\>/OemInputSamples
+                - sample oeminput files demonstrating how to use the bsp, these files are used as templates in `newproduct.cmd`
+        - Products
+            - architecture specific named products
+
+### Commandline version (v5.x and older)
 - Root folder
     - IoTCoreShell.cmd: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell)
-    -   README.md: Version info, links to documentation
+    - README.md: Version info, links to documentation
 - Build
     - This is the output directory where the build contents are stored. It starts as empty.
 - Common/Packages
@@ -76,20 +112,12 @@ Sample packages are provided in the iot-adk-addonkit that can be used as a refer
 
 | Package Name | Description |
 | ----- | ----- |
-|  Custom.Cmd | Package to include the oemcustomization cmd. This is product-specific and picks up the input file from product directory. This also makes an registry entry with the product name. |
-| Provisioning.Auto  | Package used to [add a provisioning package to an image](add-a-provisioning-package-to-an-image.md). This is product specific and picks up the input ppkg file from the product directory.  |
 | Registry.Version  |  Package containing registry settings with product and version information. |
 |  DeviceLayout.GPT4GB | Package with GPT [drive/partition layout](device-layout.md) for UEFI-based devices with 4GB drives.  |
 |  DeviceLayout.GPT8GB-R | Package with GPT [drive/partition layout](device-layout.md) for UEFI-based devices with 8GB drives with recovery partition.  |
 |  DeviceLayout.MBR4GB | Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 4GB drives.  |
 |  DeviceLayout.MBR8GB-R | Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 8GB drives with recovery partition.  |
-|  Settings.HotKey | Sample package to demonstrate how to [add a registry setting to an image](add-a-registry-setting-to-an-image.md). Read [Switching between apps](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys) for more details.   | 
-|  Security.SecureBoot | Sample package to include secure boot functionality.  |
-|  Security.Bitlocker | Sample package to include bitlocker functionality. |
-|  Security.DeviceGuard | Sample package to include deviceguard policies.   |
 
-> [!NOTE]
-> The security packages contain test contents and you should replace them with your own device specific content when creating your final image. See [Security, BitLocker and Deviceguard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) for more details. 
 
 ### Applications and Services packages
 
