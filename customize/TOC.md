@@ -20,6 +20,7 @@
 ### [Get Help app](desktop/customize-get-help-app.md)
 ### [SIM card slot names](desktop/customize-sim-card-slot-names.md)
 ### [Mobile broadband: SAR table](desktop/customize-sar-mapping-table.md)
+### [Pen and Windows ink](desktop/pen-and-ink.md)
 ### [Enterprise desktop customizations](enterprise/enterprise-custom-portal.md)
 #### [WEDL_AssignedAccess](enterprise/wedl-assignedaccess.md)
 #### [Custom Logon](enterprise/custom-logon.md)
