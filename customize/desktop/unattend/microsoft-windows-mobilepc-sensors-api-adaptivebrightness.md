@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: msdn
 author: themar-msft
 ms.author: themar
-ms.date: 10/02/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -22,8 +22,8 @@ Adaptive brightness changes the brightness of a monitor or display based on the 
 
 ## Child Elements
 
-|Setting| Description|
-|:------------------------|:------------------|
+| Setting                 | Description                                                                           |
+|:------------------------|:--------------------------------------------------------------------------------------|
 | [ALRCurveVersion](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrcurveversion.md)    | ALRCurveVersion sets the ALR algorithm version (1 or 2) against which the ALR curve data should be interpreted.    |
 | [ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md) | Specifies the ambient light response (ALR) curve data. |
 | [AutobrightnessLuxToNitsCurve](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-autobrightnessluxtonitscurve.md)    | This setting is not supported. Do not use.    |
