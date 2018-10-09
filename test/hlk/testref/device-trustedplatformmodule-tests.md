@@ -2,7 +2,7 @@
 title: Device.TrustedPlatformModule tests
 description: Device.TrustedPlatformModule tests
 author: EliotSeattle
-ms.author:  EliotSeattle
+ms.author: eliotgra
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Post On/Off Duration
 description: On/Off assessment results for the Post On/Off transition phase 
 author: eliotgra
-ms.author:  EliotSeattle
+ms.author: eliotgra
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: windows-hardware

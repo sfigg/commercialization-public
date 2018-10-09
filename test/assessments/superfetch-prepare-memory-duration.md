@@ -2,7 +2,7 @@
 title: Superfetch Prepare Memory Duration
 description: On/Off assessment results for the superfetch prepare memory transition phase 
 author: eliotgra
-ms.author:  EliotSeattle
+ms.author: eliotgra
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: windows-hardware
