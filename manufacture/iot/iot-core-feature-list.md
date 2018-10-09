@@ -118,10 +118,10 @@ When creating images for your device, determine which features are required for 
 
 | Features                  | Description                                                          |
 |---------------------------|----------------------------------------------------------------------|
-| **CUSTOM\_CMD** | Feature to include the oemcustomization.cmd. This is product-specific and picks up the input file from product directory. OEM\_CustomCmd is the deprecated feature ID, can still be used for legacy builds. See [Runtime Customisations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
+| **CUSTOM\_CMD** | Feature to include the oemcustomization.cmd. This is product-specific and picks up the input file from product directory. OEM\_CustomCmd is the deprecated feature ID, can still be used for legacy builds. See [Runtime Customizations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
 | **CUSTOM_BCD** | Includes [BCD settings](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#bcd-settings) to suppress boot UX progress display and also enables flight sigining. Modify [Custom.BCD.xml](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Workspace/Common/Packages/Custom.BCD/Custom.BCD.xml) to remove flight signing. |
-| **CUSTOM_OOBEAPP** | Includes customisations for the [OOBE App](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#oobe-app)  |
-| **PROV\_AUTO** | Feature to [add a provisioning package to an image](add-a-provisioning-package-to-an-image.md). This is product specific and picks up the input ppkg file from the product directory OEM\_ProvAuto is the deprecated feature ID, can still be used for legacy builds. See [Runtime Customisations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
+| **CUSTOM_OOBEAPP** | Includes customizations for the [OOBE App](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#oobe-app)  |
+| **PROV\_AUTO** | Feature to [add a provisioning package to an image](add-a-provisioning-package-to-an-image.md). This is product specific and picks up the input ppkg file from the product directory OEM\_ProvAuto is the deprecated feature ID, can still be used for legacy builds. See [Runtime customizations](https://docs.microsoft.com/windows-hardware/manufacture/iot/oscustomizations#runtime-customizations)|
 | **RECOVERY_BCD** | Includes recovery bcd settings for GPT devices |
 | **RECOVERY_BCD_MBR** | Includes recovery bcd settings for MBR devices |
 | **SEC_BITLOCKER** | Includes the configuration for Bitlocker |

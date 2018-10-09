@@ -53,7 +53,9 @@ Here's how we'll refer to them:
 
 6.  [The Raspberry Pi BSP](https://github.com/ms-iot/iot-adk-addonkit/releases/download/master/Workspace_v5.3/RPi_BSP.zip). Since this lab uses a Raspberry Pi, you'll need to download the Raspberry Pi BSP. If you're working with a device other than Raspberry Pi, visit the [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps) page to download other BSPs.
 
-7.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). For the kernel driver signing, Standard Code signing certificate is sufficient. You will require an EV cert to access the [Device Update Center](http://aka.ms/deviceupdatecenter) in Hardware Dev Center portal. This will be required when you build a retail image.
+7.  Purchase a code-signing certificate from a Certificate Authority (CA) for which Microsoft also issues a cross-certificate. The [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) topic provides a list of CAs for which Microsoft also provides cross-certificates and the corresponding cross-certificates. Note that these are the only cross-certificates that chain up to the “Microsoft Code Verification Root” issued by Microsoft, which will enable Windows to run OEM drivers.
+
+8. Purchase an EV code-signing certificate for [Device Update Center](http://aka.ms/deviceupdatecenter) in Hardware Dev Center portal. See [Code signing certificates for Hardware Dev Center Dashboard](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/get-a-code-signing-certificate#span-idstandardcodespanspan-idstandardcodespancode-signing-certificates-for-hardware-dev-center-dashboard).
 
 Other helpful software:
 
