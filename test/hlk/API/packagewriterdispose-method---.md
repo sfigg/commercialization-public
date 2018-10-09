@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: abbe4703-3f8f-48b6-a2bc-139f853536c6
 author: EliotSeattle
-ms.author: eliotgra
+ms.author:  EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

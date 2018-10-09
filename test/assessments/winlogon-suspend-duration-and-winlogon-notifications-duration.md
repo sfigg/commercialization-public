@@ -2,7 +2,7 @@
 title: Winlogon Suspend Duration & Winlogon Notifications Duration
 description: On/Off assessment results for the Winlogon suspend & Winlogon notifications transition phases
 author: eliotgra
-ms.author: eliotgra
+ms.author:  EliotSeattle
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: windows-hardware

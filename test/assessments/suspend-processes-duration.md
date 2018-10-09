@@ -2,7 +2,7 @@
 title: Suspend Processes Duration
 description: On/Off assessment results for the suspend processes transition phase 
 author: eliotgra
-ms.author: eliotgra
+ms.author:  EliotSeattle
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: windows-hardware

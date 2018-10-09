@@ -3,7 +3,7 @@ title: Win6_4.MB.GSM.Data.TestSlot
 Description: Win6_4.MB.GSM.Data.TestSlot
 ms.assetid: 
 author: EliotSeattle
-ms.author: eliotgra
+ms.author:  EliotSeattle
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware

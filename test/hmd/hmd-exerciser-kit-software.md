@@ -6,7 +6,7 @@ keywords:
 - HMD, testing
 - head mounted display, testing
 - HDMI USB testing 
-ms.author: eliotgra
+ms.author:  EliotSeattle
 ms.date: 1/10/2018
 ms.topic: article
 ms.prod: windows-hardware
