@@ -5,7 +5,7 @@ ms.assetid:
 MSHAttr: 
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 01/23/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
