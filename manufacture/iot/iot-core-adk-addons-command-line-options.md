@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # IoT Core Add-ons Powershell Commands
 
-> [!IMPORTANT]
+> [!NOTE]
 > IoT Core Add-ons command-line is deprecated. Refer to [IoT Core Add-ons command-line options](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Docs/iot-core-adk-addons-command-line-options.md) for the old list of commands.
 
 The Powershell version of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/tree/master) supports the following commands. These are part of the powershell module [IoTCoreImaging](). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).

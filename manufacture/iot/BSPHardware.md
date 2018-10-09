@@ -105,6 +105,6 @@ Steps to create the drivers :
 ## Other helpful resources
 
 * [Windows ADK IoT Core Add-Ons Overview](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-adk-addons)
-* [IoT Core Add-Ons command-line options](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-adk-addons-command-line-options)
+* [IoT Core Add-Ons Powershell Commands](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-adk-addons-command-line-options)
 * [IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)
 * [Channel9 Video on Manufacturing Guide](https://channel9.msdn.com/events/Build/2017/B8085)
