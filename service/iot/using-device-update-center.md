@@ -200,9 +200,7 @@ So far, we have created an updateable image which can be used to manufacture and
     Export-IoTDUCCab <productname> <retail/test>
     (or) exportpkgs <productname> <retail/test>
     ```
-   `<productname>_OCP_<version>.cab` will be created in the `<workspacedir>\Build\<arch>\<productname>\<config>\<version>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information.
-
-   - If you are using different code signing cert for the packages, resign this cab file with the EV cert registered with the portal: `sign.cmd <cert attributes> <productname>_OCP_<version>.cab`
+   `<productname>_OCP_<version>.cab` will be created in the `<workspacedir>\Build\<arch>\<productname>\<config>\<version>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information. This cab will be signed with the EV cert configured in the workspace xml.
 
 ### Publish updates
 
