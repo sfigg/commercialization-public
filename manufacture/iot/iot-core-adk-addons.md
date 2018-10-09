@@ -41,8 +41,6 @@ The [IoT Core manufacturing guide](iot-core-manufacturing-guide.md) walks you th
 
 ## Code Architecture
 
-### Powershell version (v6.x)
-
 - Root folder
     - IoTCorePShell.cmd: Launches the IoT Core Powershell
     - IoTCoreShell.cmd: Launches the IoT Core commandline shell
@@ -76,34 +74,6 @@ The [IoT Core manufacturing guide](iot-core-manufacturing-guide.md) walks you th
         - Products
             - architecture specific named products
 
-### Commandline version (v5.x and older)
-- Root folder
-    - IoTCoreShell.cmd: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell)
-    - README.md: Version info, links to documentation
-- Build
-    - This is the output directory where the build contents are stored. It starts as empty.
-- Common/Packages
-    - Architecture *independent*, platform *independent* packages
-    - OEMCommonFM.xml - feature manifest file that enumerates common packages and defines common features.
-- Source-\<arch\>
-    - Packages
-        - Architecture *specific*, platform *independent* packages
-        - versioninfo.txt: Current version number.
-        - OEMFM.xml - the feature manifest file that enumerates arch specific packages and defines arch specific features.
-        - OEMFMList.xml - enumeration of OEM FM files. 
-    - BSP
-        - \<bspname\>/Packages
-            -  Architecture *specific*, platform *specific* packages
-            - \<bspname\>FM.xml - feature manifest that enumerates the bsp packages and defines supported device layouts and features
-            - \<bspname\>FMList.xml - enumeration of BSP FM files.
-         - \<bspname\>/OemInputSamples
-            - sample oeminput files demonstrating how to use the bsp, these files are used as templates in `newproduct.cmd`
-    - Products
-        - architecture specific named products
-- Templates
-    - Templates used by tools to create new bsp/product
-- Tools
-    - Includes the  [IoT Core Add-ons command-line tools](iot-core-adk-addons-command-line-options.md) 
 
 ## Sample packages
 Sample packages are provided in the iot-adk-addonkit that can be used as a reference or as is in your image, if it meets your needs. Few of such packages are listed here.
@@ -113,10 +83,10 @@ Sample packages are provided in the iot-adk-addonkit that can be used as a refer
 | Package Name | Description |
 | ----- | ----- |
 | Registry.Version  |  Package containing registry settings with product and version information. |
-|  DeviceLayout.GPT4GB | Package with GPT [drive/partition layout](device-layout.md) for UEFI-based devices with 4GB drives.  |
-|  DeviceLayout.GPT8GB-R | Package with GPT [drive/partition layout](device-layout.md) for UEFI-based devices with 8GB drives with recovery partition.  |
-|  DeviceLayout.MBR4GB | Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 4GB drives.  |
-|  DeviceLayout.MBR8GB-R | Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 8GB drives with recovery partition.  |
+|  DeviceLayout.GPT4GB | Package with [GPT drive/partition layout](device-layout.md) for UEFI-based devices with 4GB drives.  |
+|  DeviceLayout.GPT8GB-R | Package with GPT drive/partition layout for UEFI-based devices with 8GB drives with recovery partition.  |
+|  DeviceLayout.MBR4GB | Package with MBR drive/partition layout for legacy BIOS-based devices with 4GB drives.  |
+|  DeviceLayout.MBR8GB-R | Package with MBR drive/partition layout for legacy BIOS-based devices with 8GB drives with recovery partition.  |
 
 
 ### Applications and Services packages

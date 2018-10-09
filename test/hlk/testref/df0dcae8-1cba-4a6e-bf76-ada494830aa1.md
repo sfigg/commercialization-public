@@ -7,7 +7,7 @@ MSHAttr:
 Search.SourceType: Video
 ms.assetid: 31e7f2eb-4991-4d66-b797-18039ab8c5c1
 author: EliotSeattle
-ms.author: EliotSeattle
+ms.author: eliotgra
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
