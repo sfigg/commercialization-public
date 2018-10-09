@@ -43,15 +43,17 @@ Device Update Center portal provides OEMs a way to:
 1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
 3. [Windows 10 IoT Core Packages](https://www.microsoft.com/software-download/windows10iotcore)
-4. Get BSP for your platform from the silicon vendor. See [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows/iot-core/build-your-image/createbsps)
+4. Get BSP for your platform from the silicon vendor. See [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows-hardware/manufacture/iot/bsphardware)
 
 ### Set up your environment
 
 1. Launch IoTCorePShell (launches an elevated command prompt), and create/open your workspace
     ```powershell
     new-ws C:\MyWorkspace <oemname> <arch>
-    (or) open-ws C:\MyWorkspace
+    (or) 
+    open-ws C:\MyWorkspace
     ```
+    Note that the initial version of the OEM Custom package is set to 10.0.0.0.
 2. Configure the EV certificate used in the Device Update Center and the code signing certificate in the Workspace. 
 
     ```xml
@@ -64,17 +66,22 @@ Device Update Center portal provides OEMs a way to:
 
 ## Step 2: Create a new product
 
-1. Create a new product: `newproduct <productname> <bspname>`
+1. Create a new product using [Add-IoTProduct](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProduct.md)
 
-2. Provide the SMBIOS information based on the format defined by the BSP (for Qualcomm, this is defined in a SMBIOS.cfg file), See [OEM License Requirements](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements). The key fields used in the update are: 
+    ```powershell
+    Add-IoTProduct <productname> <bspname>
+    (or) newproduct <productname> <bspname>
+    ```
+
+2. Provide the SMBIOS information when prompted. For Qualcomm, this is stored in a SMBIOS.cfg file. For other platforms, you will have to update the BIOS to reflect these values.
+
+    See [OEM License Requirements](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements) for the mandatory SMBIOS fields. The key fields used in the update are: 
 
    - **System Product Name**, referred in the update portal as **Device Model**.
 
    - **Base Board Product**, referred in the update portal as **Hardware Variant ID**.
 
-3. Set initial version of the packages: `setversion 10.0.0.0`.
-
-4. Create the IoTDeviceModel xml file: `exportidm <productname>`  . This will prompt to enter the required SMBIOS fields.
+   Note that `IoTDeviceModel_<productname>.xml` is also created. This is used to register the device model in the next step.
 
    ![smbiosentry](images/smbiosentry.PNG)
 
@@ -86,7 +93,7 @@ Device Update Center portal provides OEMs a way to:
 
     ![newdevicemodel1](images/newdevicemodel1.PNG)
 
-2. Browse your files and select the `IoTDeviceModel_<productname>.xml` from the iot-adk-addonkit folder.
+2. Browse your files and select the `IoTDeviceModel_<productname>.xml` from your workspace.
 
     ![newdevicemodel2](images/newdevicemodel2.PNG)
 
@@ -100,21 +107,41 @@ Device Update Center portal provides OEMs a way to:
 
 ### Build a base image for the device
  
-1. In the IoTCoreShell, import the config file: `importcfg <productname> <CUSConfig.zip>`  This will also edit the OEMInputXML files for the inclusion of proper feature IDs.
+1. In the IoTCoreShell, import the config file using [Import-IoTDUCConfig](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-IoTDUCConfig.md)
+
+    ```powershell
+    Import-IoTDUCConfig <productname> "C:\Downloads\CUSConfig.zip"
+    (or) importcfg <productname> "C:\Downloads\CUSConfig.zip"
+    ```
+
+   This will also edit the OEMInputXML files for the inclusion of required FM files and feature IDs. This also removes **IOT_GENERIC_POP** feature if present.
 
    ![importcfg](images/importcfg.PNG)
 
-2. Sign all required binaries with the code signing certificate using `signbinaries` and for the bsp packages: `re-signcabs <src dir> <dst dir>`
+2. Sign all required binaries with the code signing certificate using [Add-IoTSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTSignature.md) and [Redo-IoTCabSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Redo-IoTCabSignature.md)
+
+    ```powershell
+    # enable retail signing
+    Set-IoTRetailSign On
+    (or) retailsign On
+    # sign all binaries in the workspace
+    Add-IoTSignature C:\MyWorkspace *.sys,*.dll,*.exe
+    (or) signbinaries C:\MyWorkspace *.sys,*.dll,*.exe
+    # re-sign prebuilt bsp cabs if applicable
+    Redo-IoTCabSignature <srcbspdir> <dstbspdir>
+    ```
 
 3. Build the base image using the below commands
 
-   a. Build the packages: `buildpkg all`
-
-   b. Build the image: `buildimage <productname> <retail/test>`
-
-      This gives you the base image with the OCP version 10.0.0.0.
-
-   c. Optional: add a recovery image: `buildrecovery <productname> <retail/test>`
+    ```powershell
+    # build all packages
+    buildpkg All
+    # build the image
+    buildimage <productname> <retail/test>
+    # build recovery image, if recovery mechanism needed
+    buildrecovery <productname> <retail/test>
+    ```
+    This gives you the base image with the OEM custom package version 10.0.0.0.
 
 4. Validate this image on the device.
 
@@ -124,7 +151,13 @@ So far, we have created an updateable image which can be used to manufacture and
 
 ### Create update packages
 
-1. Update the version number first using `setversion <a.b.c.d>`, making sure that a.b.c.d is higher version than the previous version set.
+1. Update the version number first using [Set-IoTCabVersion](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Set-IoTCabVersion.md)
+
+    ```powershell
+    Set-IoTCabVersion <a.b.c.d>
+    (or) setversion <a.b.c.d>
+    ```
+    Make sure that a.b.c.d is higher version than the previous version set.
 
 2. If new versions of BSP drivers are available, copy them to the BSP folder setup earlier (example, `C:\BSP`). Alternatively, keep all the updated drivers in a different folder, for example, `C:\BSPv2` and update your workspace xml.
 
@@ -134,23 +167,40 @@ So far, we have created an updateable image which can be used to manufacture and
 
 5. Update any other package contents as applicable.
 
-6. Sign all required binaries with the code signing certificate using `signbinaries` and for the bsp packages, use `re-signcabs <src dir> <dst dir>`
+6. Sign all required binaries with the code signing certificate using [Add-IoTSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTSignature.md) and [Redo-IoTCabSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Redo-IoTCabSignature.md)
 
-7. Build the update image:
+    ```powershell
+    # enable retail signing
+    Set-IoTRetailSign On
+    (or) retailsign On
+    # sign all binaries in the workspace
+    Add-IoTSignature C:\MyWorkspace *.sys,*.dll,*.exe
+    (or) signbinaries C:\MyWorkspace *.sys,*.dll,*.exe
+    # re-sign prebuilt bsp cabs if applicable
+    Redo-IoTCabSignature <srcbspdir> <dstbspdir>
+    ```
 
-   a. Build the packages: `buildpkg all`
+7. Build the update image using the below commands
 
-   b. Build the image: `buildimage <productname> <retail/test>`
+    ```powershell
+    # build all packages
+    buildpkg All
+    # build the image
+    buildimage <productname> <retail/test>
+    # build recovery image, if recovery mechanism needed
+    buildrecovery <productname> <retail/test>
+    ```
+   This gives you the base image with the OEM custom package version \<a.b.c.d\>.
 
-      This gives you the base image with the OCP version a.b.c.d
+8. Validate this image on the device to make sure the device boots with all updates included.
 
-   c. Optional: add a recovery image: `buildrecovery <productname> <retail/test>`
+9. After successful validation of the update build, export the required packages using [Export-IoTDUCCab](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Export-IoTDUCCab.md)
 
-   d. Validate this image on the device to make sure the device boots with all updates included.
-
-8. After successful validation of the update build, export the required packages: `exportpkgs <destdir> <productname> <retail/test>`
-
-   `<productname>_OCP_<version>.cab` will be created in the `<destdir>\<version>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information.
+    ```powershell
+    Export-IoTDUCCab <productname> <retail/test>
+    (or) exportpkgs <productname> <retail/test>
+    ```
+   `<productname>_OCP_<version>.cab` will be created in the `<workspacedir>\Build\<arch>\<productname>\<config>\<version>\` folder along with `<productname>_OCP_pkgver.txt` file that lists the cabs included along with their version information.
 
    - If you are using different code signing cert for the packages, resign this cab file with the EV cert registered with the portal: `sign.cmd <cert attributes> <productname>_OCP_<version>.cab`
 
@@ -162,17 +212,11 @@ So far, we have created an updateable image which can be used to manufacture and
 
    ![newcustompkg1](images/newcustompkg1.PNG)
 
-3. Enter the details of the submission
+3. Browse your files and select the `<productname>_OCP_<version>.cab` from your workspace.
 
    ![newcustompkg2](images/newcustompkg2.PNG)
-
-   a. Provide a Custom package name , this is a user friendly name to identify the release
-
-   b. Provide the release version - should be same as the version of the cab being uploaded (a.b.c.d)
-
-   c. Browse your files and select the OCP cab file generated in the steps above
-
-   d. On upload completion, press **Publish**
+  
+4. Confirm the release version information and press **Publish**.
 
    The release submission goes through a process consisting of:
 
@@ -184,7 +228,7 @@ So far, we have created an updateable image which can be used to manufacture and
 
    - Finalize : Finalizing the publishing process
 
-4. You can check the status of the publishing process by clicking **Status** link. This process takes some time to complete.
+5. You can check the status of the publishing process by clicking **Status** link. This process takes some time to complete.
 
    ![newcustompkg3](images\newcustompkg3.PNG)
 
@@ -210,7 +254,7 @@ After successfully publishing the updates, you can now control the delivery proc
 
    b. Select the OS version box if you want to specify new OS version and then select the required OS version
 
-   c. Select the OCP version box if you want to specify new OCP version and then select the required OCP version, for example, a.b.c.d
+   c. Select the OEM custom package version box if you want to specify new OEM custom package version and then select the required OEM custom package version, for example, a.b.c.d
 
    d. Select **Next**
 
