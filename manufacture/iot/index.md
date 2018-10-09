@@ -54,7 +54,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <td align="left"><p>The [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)</p></td>
+<td align="left"><p>[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)</p></td>
 <td align="left"><p>These tools are part of the [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \Tools folder. To learn more about these tools, see [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).</p></td>
 </tr>
 </tbody>
