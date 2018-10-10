@@ -76,7 +76,7 @@ Each partition can have a maximum of 18 exabytes (~18.8 million terabytes) of sp
 -   **Windows partition**
     -   The partition must have at least 20 gigabytes (GB) of drive space for 64-bit versions, or 16 GB for 32-bit versions.
     -   The Windows partition must be formatted using the NTFS file format.
-    -   The Windows partition must have enough 10 GB of free space after the user has completed the Out Of Box Experience (OOBE).
+    -   The Windows partition must have enough free space after the user has completed the Out Of Box Experience (OOBE). Please refer to the OEM Policy Document for additional details.
 -   **Recovery tools partition**
 
     This partition must be at least 300 MB.
