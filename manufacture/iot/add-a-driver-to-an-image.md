@@ -34,15 +34,15 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
--  Copy the file, wdfsimple.sys, into a test folder, for example, C:\wdfsimple\.
+-  Copy the file, wdfsimple.inf, into a test folder, for example, C:\wdfsimple\.
 
 ## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
 
 1.  In the IoT Core Shell, create a **driver package** using [New-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md)
 
     ``` powershell
-    Add-IoTDriverPackage C:\wdfsimple\wdfsimple.sys Drivers.Toaster
-    (or) newdrvpkg C:\TestDriver\MyTest.inf
+    Add-IoTDriverPackage C:\wdfsimple\wdfsimple.inf Drivers.Toaster
+    (or) newdrvpkg C:\wdfsimple\wdfsimple.inf Drivers.Toaster
     ```
 
     This creates a new folder at `C:\MyWorkspace\Source-<arch>\Packages\Drivers.Toaster`.
