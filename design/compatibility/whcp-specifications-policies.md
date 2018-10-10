@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Windows Hardware Compatibility Program Specifications and Policies
 
-When products meet the minimum requirements as defined in the blow documents, it ensures that applications and devices are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List and Windows Server Catalog.
+When products meet the minimum requirements as defined in the below documents, it ensures that applications and devices are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List and Windows Server Catalog.
 
 ## Specifications and Policies Documents
 
