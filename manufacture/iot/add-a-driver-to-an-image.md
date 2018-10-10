@@ -34,7 +34,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
--  Copy the file, wdfsimple.inf, into a test folder, for example, C:\wdfsimple\.
+-  Copy the files, wdfsimple.sys and wdfsimple.inf, into a test folder, for example, C:\wdfsimple\.
 
 ## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
 
