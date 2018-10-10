@@ -28,8 +28,6 @@ File name: integrating-ambient-light-sensors-with-windows-10.docx
 
 Microsoft Word file
 
-[Get Office File Viewers](http://office.microsoft.com/assistance/9798/viewerscvt.aspx)
-
 [![click here to download](images/download.png)](http://download.microsoft.com/download/8/0/6/8061224B-6EDA-4162-A5D4-FA9A779E732F/integrating-ambient-light-sensors-with-windows-10.docx)
 
 ## <span id="Included_in_this_white_paper__"></span><span id="included_in_this_white_paper__"></span><span id="INCLUDED_IN_THIS_WHITE_PAPER__"></span>Included in this white paper:
