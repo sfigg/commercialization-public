@@ -153,39 +153,6 @@ HLKController VM
 >[!NOTE]
 >  \*Redeploy order specifies whether the stamp is to be redeployed along with the order of steps
 
- 
-
-## <span id="Overview_of_tests_required_for_WSSD_certification"></span><span id="overview_of_tests_required_for_wssd_certification"></span><span id="OVERVIEW_OF_TESTS_REQUIRED_FOR_WSSD_CERTIFICATION"></span>Overview of tests required for WSSD certification
-
-
-All requirements are detailed in WSSD Reference Architecture Appendix.
-
--   Ensure all components and systems have achieved Windows Server 2016 Logo certification
--   Ensure all components and systems have achieved Windows Server Software Defined Datacenter Additional Qualifications (SDDC AQ) for either Standard or Premium (depending on the selected topology)
-    1.  Updated HLK content for SDDC Standard and Premium AQs are published on Collaborate:
-        -   <https://developer.microsoft.com/en-us/dashboard/collaborate/packages/3959>
-    2.  Component and System SDDC AQs are listed in the Windows Server Catalog:
-        -   <https://www.windowsservercatalog.com>
-
-The assembled solution/offering must pass the following Windows Hardware Lab Kit / Private Cloud Simulator tests to achieve WSSD Certification:
-
-| Test Name                                                          | Length   |
-|--------------------------------------------------------------------|----------|
-| S2D - Prepare Machines for Tests                                   | 1 hour   |
-| S2D - Basic Verification Tests                                     | 2 hours  |
-| S2D - Stress Tests                                                 | 8 hours  |
-| PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Min) | 96 hours |
-| PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (Max) | 96 hours |
-
- 
-
-More details are located here:
-
--   <https://msdn.microsoft.com/library/windows/hardware/mt219240>
-
-Many of the required tests can be selected by loading the appropriate playlist after obtaining the playlist from the Connect partner site. It is recommended to use the playlist after completing the **S2D - Prepare Machines for Tests** test. Below is a sample of the **SDDC\_Standard\_Playlist** after loading into the Windows Hardware Lab Kit Studio.
-
-![](images/wssd-sddc-standard-playlist.png)
 
 ## <span id="Choose_WSSD_topology"></span><span id="choose_wssd_topology"></span><span id="CHOOSE_WSSD_TOPOLOGY"></span>Choose WSSD topology
 
