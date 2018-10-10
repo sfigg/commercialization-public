@@ -195,19 +195,18 @@ HLKController VM
         -   To aid in deploying the client across several nodes in a large stamp, leverage the following sample script:
 
             ``` syntax
-# Script to install the HLK Client on target systems
-# Array of servers to target for installation
+**Script to install the HLK Client on target systems**
+**Array of servers to target for installation**
 
             $Servers = @( "3171R16-18", "3171R16-20", "3171R16-22", "3171R16-24", "3171R16-26", "3171R16-28", "3171R16-30")
 
-# Definition of user credentials to be used in the installation
+**Definition of user credentials to be used in the installation**
             $AdminUser = "Contoso\administrator"
             $Password = "<PASSWORDHERE>"
             $securePassword = $Password | ConvertTo-SecureString -AsPlainText -Force 
             $domainCred = New-Object System.Management.Automation.PSCredential -ArgumentList $AdminUser, $securePassword
 
-# These two sections are required to set the CredSSP Client status on local system and CredSSP Server role on specified target systems
-# These are required to work around the 'double-hop' issue 
+**These two sections are required to set the CredSSP Client status on local system and CredSSP Server role on specified target systems and required to work around the 'double-hop' issue**
 
             foreach ($Server in $Servers) {
             Enable-WSManCredSSP Client -DelegateComputer $Server -Force}
@@ -215,13 +214,12 @@ HLKController VM
             foreach ($Server in $Servers) {
             Invoke-Command -Computername $Server -ScriptBlock {Enable-WSManCredSSP -role server -Force}}
 
-# This command initiates the HLK Client installation on named servers in the defined array above
-# Edit the Source Path as per your installation "\\hlk1-3\"
+**This command initiates the HLK Client installation on named servers in the defined array above; edit the Source Path as per your installation "\\hlk1-3\"**
 
             foreach ($Server in $Servers) {
             Invoke-Command -Computername $Server -ScriptBlock { & "\\hlk1-3\HLKInstall\Client\Setup.cmd" /qn ICFAGREE=Yes } -Authentication Credssp -Credential $domainCred }
 
-# This command initiates the HLKSupplemental Client package copy and intall
+**This command initiates the HLKSupplemental Client package copy and install**
             foreach ($Server in $Servers) {
                 Copy-item -path  C:\HlkSupplementalPackage -destination "\\$server\C$" -recurse -force 
             }
