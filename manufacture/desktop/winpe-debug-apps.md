@@ -48,7 +48,7 @@ The easiest user-mode debugging method is to run a process server on the Windows
 4.  From the remote computer, use the process server to attach to or start processes on the Windows PE destination computer:
 
     ```
-    windbg -premote tcp:server=Server, port=1234
+    windbg -premote tcp:server=Server,port=1234
     ```
 
     For more information, see [Activating a Smart Client (Windows Debuggers)](http://go.microsoft.com/fwlink/p/?LinkId=698646).
