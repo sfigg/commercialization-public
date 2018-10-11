@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 97b312aa-d988-4a2a-acd6-08591a88f6fa
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -23,7 +23,7 @@ This test performs Bulk, Interrupt, Isoch and Stream transfers with cancellation
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.UsbController.Discretional</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 20 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 30 |

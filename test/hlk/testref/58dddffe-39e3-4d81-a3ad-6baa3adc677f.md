@@ -4,7 +4,7 @@ Description: H264 SW-DRM Video 6
 ms.assetid: 
 author: sapaetsc-msft
 ms.author: sapaetsc
-ms.date: 04/16/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,7 +20,7 @@ Verifies if windows runtime app can play protected video content that requires O
 ## Test details
 |||
 |---|---|
-| **Specifications**  | <ul><li>Device.Graphics.WDDM11.Render.ContentProtection.ContentProtection</li><li>Device.Graphics.WDDM12.Render.PremiumContentPlayback</li><li>System.Fundamentals.Graphics.PremiumContentPlayback</li><li>System.Fundamentals.Security.PlayReady</li><li>Device.Graphics.WDDM12.Render.D3D11VideoDecoding</li></ul> |  
+| **Specifications**  | <ul><li>Device.Streaming.D3D11.H264.Playback</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
 | **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 5 |
