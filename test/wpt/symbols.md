@@ -20,7 +20,7 @@ ms.technology: windows-oem
 Enables and configures symbol decoding support.
 
 ```
-xperf -i <trace file>… [-o output] -symbols [cacheonly] [verbose] [dbghelplog]
+xperf -i <trace file>… [-o output] -symbols [cacheonly] [verbose]
 ```
 
 ## Parameters
@@ -32,10 +32,7 @@ Use SymCache, but not DbgHelp. This option speeds symbol decoding for traces wit
 <a href="" id="verbose"></a>*verbose*  
 Verbose mode. Prints symbol paths and version information. For more information, see [Loading Symbols](loading-symbols.md).
 
-<a href="" id="dbghelplog"></a>*dbghelplog*  
-Enable DbgHelp debug log about **stderr**.
-
-Symbol decoding support uses the environment variables in the following table for further configuration of DbgHelp and SymCache.
+Symbol decoding support uses the environment variables in the following table for further configuration of SymCache.
 
 <table>
 <colgroup>
