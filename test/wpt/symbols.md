@@ -40,10 +40,6 @@ Symbol decoding support uses the environment variables in the following table fo
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td><p>_NT_SYMBOL_PATH</p></td>
-<td><p>Specifies the DbgHelp path to search to locate symbols files (with the file name extension of .pdb) corresponding to binary images files used in the trace. See the note below regarding this variable.</p></td>
-</tr>
 <tr class="even">
 <td><p>_NT_SYMCACHE_PATH</p></td>
 <td><p>Specifies the path to the local SymCache directory. By default, \SymCache is used.</p></td>
