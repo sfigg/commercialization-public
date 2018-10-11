@@ -151,7 +151,7 @@ The following table shows the implicit answer file search order.
 <tr class="even">
 <td align="left"><p>2</p></td>
 <td align="left"><p>%WINDIR%\Panther\Unattend</p></td>
-<td align="left"><p>The name of the answer file must be Unattend.xml or Autounattend.xml.</p>
+<td align="left"><p>The name of the answer file must be either Unattend.xml or Autounattend.xml.</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>Windows Setup searches this directory only on downlevel installations. If Windows Setup starts from Windows PE, the %WINDIR%\Panther\Unattend directory is not searched.</p>
@@ -176,13 +176,13 @@ The following table shows the implicit answer file search order.
 <td align="left"><p>4</p></td>
 <td align="left"><p>Removable read/write media in order of drive letter, at the root of the drive.</p></td>
 <td align="left"><p>Removable read/write media in order of drive letter, at the root of the drive.</p>
-<p>The name of the answer file must be Unattend.xml or Autounattend.xml, and the answer file must be located at the root of the drive.</p></td>
+<p>The name of the answer file must be Autounattend.xml, and the answer file must be located at the root of the drive.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>5</p></td>
 <td align="left"><p>Removable read-only media in order of drive letter, at the root of the drive.</p></td>
 <td align="left"><p>Removable read-only media in order of drive letter, at the root of the drive.</p>
-<p>The name of the answer file must be Unattend.xml or Autounattend.xml, and must be located at the root of the drive.</p></td>
+<p>The name of the answer file must be Autounattend.xml, and must be located at the root of the drive.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>6</p></td>
