@@ -117,15 +117,16 @@ The **Sysprep** tool logs Windows Setup actions in different directories, depen
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Specialize</strong></p></td>
-<td align="left"><p><strong>%WINDIR%\Panther\</strong></p></td>
+<td align="left"><p><strong>%WINDIR%\Panther</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Unattended Windows Setup actions</p></td>
+<td align="left"><p>Unattended Windows Setup actions (<strong>OOBE</strong>)</p></td>
 <td align="left"><p><strong>%WINDIR%\Panther\Unattendgc</strong></p></td>
 </tr>
 </tbody>
 </table>
 
+The **setupact.log** file is the main log file.
  
 
 For more information, see [Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md).
