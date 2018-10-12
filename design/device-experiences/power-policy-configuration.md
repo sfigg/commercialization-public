@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 # Power policy configuration
 
-This section contains information on modern standby power settings in the following topics.
+This section contains information on Modern Standby power settings in the following topics.
 
 * [Display, sleep, and hibernate idle timers](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers)
 * [Advanced power settings](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/advanced-power-settings)
