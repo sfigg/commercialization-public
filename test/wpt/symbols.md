@@ -8,7 +8,7 @@ ms.assetid: 7d34c86b-3b0c-40b1-a71d-b23978f97edf
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: eliotgra
-ms.date: 05/05/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -20,22 +20,19 @@ ms.technology: windows-oem
 Enables and configures symbol decoding support.
 
 ```
-xperf -i <trace file>… [-o output] -symbols [cacheonly] [verbose] [dbghelplog]
+xperf -i <trace file>… [-o output] -symbols [cacheonly] [verbose]
 ```
 
 ## Parameters
 
 
 <a href="" id="cacheonly"></a>*cacheonly*  
-Use SymCache, but not DbgHelp. This option speeds symbol decoding for traces with many binary images that lack symbol files after all interesting symbol files have been transcoded.
+This option speeds symbol decoding for traces with many binary images that lack symbol files after all interesting symbol files have been transcoded.
 
 <a href="" id="verbose"></a>*verbose*  
 Verbose mode. Prints symbol paths and version information. For more information, see [Loading Symbols](loading-symbols.md).
 
-<a href="" id="dbghelplog"></a>*dbghelplog*  
-Enable DbgHelp debug log about **stderr**.
-
-Symbol decoding support uses the environment variables in the following table for further configuration of DbgHelp and SymCache.
+Symbol decoding support uses the environment variables in the following table for further configuration of SymCache.
 
 <table>
 <colgroup>
@@ -43,10 +40,6 @@ Symbol decoding support uses the environment variables in the following table fo
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td><p>_NT_SYMBOL_PATH</p></td>
-<td><p>Specifies the DbgHelp path to search to locate symbols files (with the file name extension of .pdb) corresponding to binary images files used in the trace. See the note below regarding this variable.</p></td>
-</tr>
 <tr class="even">
 <td><p>_NT_SYMCACHE_PATH</p></td>
 <td><p>Specifies the path to the local SymCache directory. By default, \SymCache is used.</p></td>
