@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7b33a2dc-1b41-420e-a02f-b5de0b7a7e1d
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -23,7 +23,7 @@ This test cycles the system through various sleep states and performs IO and bas
 |---|---|
 | **Specifications**  | <ul><li>Device.DevFund.Reliability.BasicReliabilityAndPerformance</li><li>Device.DevFund.Reliability.S3S4SleepStates</li><li>Device.DevFund.DriverFramework.KMDF.Reliability</li><li>Device.DevFund.DriverFramework.UMDF.Reliability</li><li>Device.DevFund.ReliabilityDisk.IOCompletionCancellation</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 45 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 180 |

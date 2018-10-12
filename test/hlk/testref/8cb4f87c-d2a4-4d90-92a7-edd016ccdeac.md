@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 44b82c4a-5467-40a8-9a6f-f3943bca79df
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -45,7 +45,7 @@ This test job completes the following actions:
 |---|---|
 | **Specifications**  | <ul><li>System.Server.SystemStress.ServerStress</li><li>System.Server.FaultTolerant.Core</li><li>System.Server.SVVP.SVVP</li></ul> |  
 | **Platforms**   | <ul><li>Windows Server 2016 (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 30 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 1800 |

@@ -1,5 +1,5 @@
 ---
-title: Win6\_4.MB.SMS.Encoding
+title: Win6_4.MB.SMS.Encoding
 description: Win6\_4.MB.SMS.Encoding
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,13 +7,13 @@ MSHAttr:
 ms.assetid: 592a3ec7-4b47-4853-a81b-ac5e96550ef3
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.eebce46c-1e5d-4f70-b2d0-d3fbf59481ab"></span>Win6\_4.MB.SMS.Encoding
+# Win6_4.MB.SMS.Encoding
 
 
 Send loopback short text message using various supported encoding methods.
@@ -22,8 +22,8 @@ Send loopback short text message using various supported encoding methods.
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.MobileBroadband.SMS.Discretional</li></ul> |  
-| **Platforms**   | <ul><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Platforms**   | <ul></ul> |
+| **Supported Releases** | <ul><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 5 |

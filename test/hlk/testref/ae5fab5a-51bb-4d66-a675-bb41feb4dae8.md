@@ -1,5 +1,5 @@
 ---
-title: Audio Codec - Lullaby Test - Certification
+title: Audio Codec - Lullaby Test - Certification - Desktop
 description: Audio Codec - Lullaby Test - Certification
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,13 +7,13 @@ MSHAttr:
 ms.assetid: 1dd9c51c-4c6c-4fcc-a9e8-fdb4b03a54b5
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.ae5fab5a-51bb-4d66-a675-bb41feb4dae8"></span>Audio Codec - Lullaby Test - Certification
+# Audio Codec - Lullaby Test - Certification - Desktop
 
 
 This automated test verifies audio during power-state transitions. The test plays audio before, during, and after transitions into sleep and hibernate power states to verify the integrity of the audio pipeline.
@@ -25,7 +25,7 @@ Specifically, the test uses the Microsoft® DirectSound® and Wave APIs to play 
 |---|---|
 | **Specifications**  | <ul><li>Device.Audio.Base.PowerManagement</li><li>Device.Audio.Base.JackDetection</li><li>Device.Audio.Base.Endpoints</li><li>Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 20 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 1200 |

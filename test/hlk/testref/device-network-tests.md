@@ -58,6 +58,7 @@ ms.technology: windows-oem
 -   [NDISTest 6.0 - \[2 Machine\] - 2c\_Mini6Stress](20b75dc3-5eb2-4dea-b37f-3d8a25837981.md)
 -   [NDISTest 6.0 - \[2 Machine\] - 2c\_OidsNdisRequest](a1bc75de-65f3-4523-990a-4b015d6e279e.md)
 -   [NDISTest 6.0 - \[2 Machine\] - 2c\_Priority](5f53cf62-a767-4469-92e6-1bca087193fd.md)
+-   [NDISTest 6.5 - [1 Machine] - OffloadRSSv2](992ba8e2-18d5-4a72-a4e1-8e506b3fcc09.md)
 -   [NDISTest 6.5 - \[1 Machine\] - GenericMiniportRequirements](6d40e160-4e58-4256-97c5-523476e03ea4.md)
 -   [NDISTest 6.5 - \[1 Machine\] - IPSecOids](e38588ad-0043-4f7d-9685-bdcb011ea138.md)
 -   [NDISTest 6.5 - \[1 Machine\] - IPSecStdKey](7c4c8234-5ec0-4176-a36a-3e2d6fc9112c.md)
