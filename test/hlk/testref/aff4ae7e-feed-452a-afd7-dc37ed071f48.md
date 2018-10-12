@@ -1,5 +1,5 @@
 ---
-title: NDISTest 6.0 - \ 1 Machine\ - 1c\_Mini6RSSOids
+title: NDISTest 6.0 - \1 Machine\ - 1c_Mini6RSSOids
 description: NDISTest 6.0 - \ 1 Machine\ - 1c\_Mini6RSSOids
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,13 +7,13 @@ MSHAttr:
 ms.assetid: 1e140b1f-84f2-40d7-bde3-f4875680d7ec
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.aff4ae7e-feed-452a-afd7-dc37ed071f48"></span>NDISTest 6.0 - \[1 Machine\] - 1c\_Mini6RSSOids
+# NDISTest 6.0 - \[1 Machine\] - 1c_Mini6RSSOids
 
 
 This test exercises the various receive side scaling OIDs. The miniport driver should:
@@ -33,7 +33,7 @@ This test exercises the various receive side scaling OIDs. The miniport driver s
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.RSS.RSS</li><li>Device.Network.LAN.RSS.SetHashFunctionTypeAndValue</li><li>Device.Network.LAN.RSS.SupportIndirectionTablesSizes</li><li>Device.Network.LAN.RSS.SupportToeplitzHashFunction</li><li>Device.Network.LAN.RSS.SupportUpdatesToRSSInfo</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 300 |

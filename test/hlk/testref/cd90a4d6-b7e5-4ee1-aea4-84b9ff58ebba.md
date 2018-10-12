@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 4addd258-39ba-45bb-b52b-43a1925abbdc
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -23,7 +23,7 @@ The Mobile Print Rendering Tests test printing to PWG-Raster, PCLm, XPS, and OXP
 |---|---|
 | **Specifications**  | <ul><li>Device.Imaging.Printer.Mobile.PDL</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 30 |

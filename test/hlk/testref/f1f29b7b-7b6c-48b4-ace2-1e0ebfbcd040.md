@@ -1,5 +1,5 @@
 ---
-title: NDISTest 6.5 - \ 2 Machine\ - OffloadMisc
+title: NDISTest 6.5 - \2 Machine\ - OffloadMisc
 description: NDISTest 6.5 - \ 2 Machine\ - OffloadMisc
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,13 +7,13 @@ MSHAttr:
 ms.assetid: 1e8ce09d-d557-464a-b5dd-a739804d8491
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.f1f29b7b-7b6c-48b4-ace2-1e0ebfbcd040"></span>NDISTest 6.5 - \[2 Machine\] - OffloadMisc
+# NDISTest 6.5 - \[2 Machine\] - OffloadMisc
 
 
 TODO: description
@@ -23,7 +23,7 @@ TODO: description
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.GRE.GREPacketTaskOffloads</li><li>Device.Network.LAN.Base.NDISRequirements</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 20 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 1200 |
