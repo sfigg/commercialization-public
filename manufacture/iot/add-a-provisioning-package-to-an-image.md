@@ -31,7 +31,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 2.  Click **File &gt; New project**.
 
-3.  For this example, use the name "**ProductBProv**" for the product name, accept the defaults, and click **Next**.
+3.  For this example, use the name "**WiFiSettings**" for the product name, accept the defaults, and click **Next**.
 
 4.  Select **Provisioning package &gt; Windows 10 IoT Core**.
 
@@ -58,76 +58,36 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 9.  At the **All done!** page, click the link to the **Output location**.
 
-**Copy customizations.xml into your product's _prov_ folder**
+## Add provisioning package to workspace
 
-1.  Copy customizations.xml to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\.
-        	
-2.  Optional: update customizations.xml with any desired changes. Make sure you increment the version number if you make changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn898375) for more info.
+1. Create a **Provisioning package** using [Add-IoTProvisioningPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProvisioningPackage.md)
 
-**Add the auto-provisioning scripts to the feature manifest and product configuration file**
-
-1.  Review the package definition file: Provisioning.Auto.wm.xml: C:\\IoT-ADK-AddonKit\\Common\\ProdPackages\\Provisioning.Auto\\Provisioning.Auto.wm.xml. 
-
-    Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
-
-    ``` xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        name="Auto" namespace="Provisioning" owner="$(OEMNAME)"
-        legacyName="$(OEMNAME).Provisioning.Auto" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
-        <onecorePackageInfo
-            targetPartition="MainOS"
-            releaseType="Production"
-            ownerType="OEM" />
-        <files>
-            <file
-                destinationDir="$(runtime.windows)\Provisioning\Packages"
-                source="$(BLDDIR)\ppkgs\$(PROD)Prov.ppkg"
-                name="ProvAuto.ppkg" />
-        </files>
-    </identity>
+    ``` powershell
+    Add-IoTProvisioningPackage Prov.WifiSettings "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\WiFiSettings\WiFiSettings.ppkg"
+    (or) newprovpkg Prov.WifiSettings "C:\Users\<username>\Documents\Windows Imaging and Configuration Designer (WICD)\WiFiSettings\WiFiSettings.ppkg"
     ```
 
-2.  Make sure that the package definition file **%OEM\_NAME%.Provisioning.Auto.cab"** and the feature ID: **PROV\_AUTO** are referenced in the common feature manifest, C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
+    This creates a new folder at `C:\MyWorkspace\Common\Packages\Prov.WifiSettings`.
 
-    ``` xml
-    <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
-      <FeatureIDs>
-        <FeatureID>PROV_AUTO</FeatureID>
-        <FeatureID>OEM_ProvAuto</FeatureID>
-      </FeatureIDs>
-    </PackageFile>
+    This also adds a FeatureID **PROV_WIFISETTINGS** to the `C:\MyWorkspace\Common\Packages\OEMCOMMONFM.xml` file.
+
+    **Optional**: As an alternative, You can update customizations.xml in the `C:\MyWorkspace\Source-<arch>\Products\ProductB\prov` with any desired changes, including the above wifi settings. In such case, you will not need a new package. Make sure you increment the version number if you make changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn898375) for more info.
+
+2. Build the package using [New-IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)
+
+    ``` powershell
+    New-IoTCabPackage Prov.WifiSettings
+    (or) buildpkg Prov.WifiSettings
     ```
 
-3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:
+## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
-    1.  Make sure the common feature manifest: OEMCommonFM.xml is included. (Remove comment marks if necessary.)
+1.  Update the product test configuration file using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md)
 
-        ``` xml
-        <AdditionalFMs>
-         <!-- Including BSP feature manifest -->
-         <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
-         <!-- Including OEM feature manifest -->
-         <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
-         <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
-         <!-- Including the test features -->
-         <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        </AdditionalFMs>
-        ```
-
-    2.  Make sure the Feature: PROV_AUTO is included.
-
-        ``` xml
-        <OEM>
-          <!-- Include BSP Features -->
-          <Feature>RPI2_DRIVERS</Feature>
-          <Feature>RPI3_DRIVERS</Feature>
-          <!-- Include OEM features-->
-          <Feature>CUSTOM_CMD</Feature>
-          <Feature>PROV_AUTO</Feature>
-          <Feature>CUSTOM_FilesAndRegKeys</Feature>
-        </OEM>
-        ```
+    ``` powershell
+    Add-IoTProductFeature ProductB Test PROV_WIFISETTINGS -OEM
+    (or) addfid ProductB Test PROV_WIFISETTINGS -OEM
+    ```
 
 ## Build and test the image
 
@@ -137,7 +97,7 @@ Build and flash the image using the same procedures from [Lab 1a: Create a basic
 
 2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
 
-3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.ffu), then click **Next**.
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (`C:\MyWorkspace\Build\<arch>\ProductB\Test\Flash.ffu`), then click **Next**.
 
 4.  Enter device name and password. 
 

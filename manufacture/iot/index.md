@@ -16,7 +16,7 @@ ms.technology: windows-oem
 
 Windows 10 IoT Core (IoT Core) is a version of Windows 10 that is optimized for smaller devices with or without a display. IoT Core uses the rich, extensible Universal Windows Platform (UWP) API for building great solutions.
 
-OEMs can manufacture and deploy IoT Core using existing or custom-built hardware. To see existing recommended hardware, see [device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions) and the [Hardware Compatibility List](http://go.microsoft.com/fwlink/?LinkID=532948).
+OEMs can manufacture and deploy IoT Core using existing or custom-built hardware. To see existing recommended hardware, see [device options](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards) and the [Hardware Compatibility List](http://go.microsoft.com/fwlink/?LinkID=532948).
 
 When developing your own board, see the [Minimum hardware requirements for IoT Core](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview#iotcore).
 
@@ -54,7 +54,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <td align="left"><p>The [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)</p></td>
+<td align="left"><p>[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)</p></td>
 <td align="left"><p>These tools are part of the [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \Tools folder. To learn more about these tools, see [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).</p></td>
 </tr>
 </tbody>

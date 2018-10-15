@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 You can make changes to offline mounted or applied Windows images without booting into the operating system you're going to modify.
 
-**Mounted** images are WIM, VHD, or FFU files that have their contents mapped to a folder. Changes to mounted images are made from either a Windows 10 technician PC, or from WinPE. You run run DISM commands against a mounted image, as well as run common file operations such as copying, pasting, and renaming on a mounted image. To save changes you make to the image, use the `/commit` option when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
+**Mounted** images are WIM, VHD, or FFU files that have their contents mapped to a folder. Changes to mounted images are made from either a Windows 10 technician PC, or from WinPE. You can run DISM commands against a mounted image, as well as run common file operations such as copying, pasting, and renaming on a mounted image. To save changes you make to the image, use the `/commit` option when you use DISM to unmount the image. To make changes to a mounted image, use `DISM /image:`.
 
 **Applied** images are WIM, VHD, or FFU image files that have been applied to a specified partition. Offline changes to an applied image are usually performed from WinPE. To make changes to an applied image, use `DISM /image:`.
 

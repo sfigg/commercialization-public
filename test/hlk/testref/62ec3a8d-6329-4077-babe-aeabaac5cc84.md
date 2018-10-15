@@ -1,5 +1,5 @@
 ---
-title: Camera Driver Controls Device Test - CAMERA\_PROFILES - Log all profiles
+title: Camera Driver Controls Device Test - CAMERA_PROFILES - Log all profiles
 description: Camera Driver Controls Device Test - CAMERA\_PROFILES - Log all profiles
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,14 +7,14 @@ MSHAttr:
 Search.SourceType: Video
 ms.assetid: bde8be34-cee5-4e91-9a2d-31300c02e889
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.62ec3a8d-6329-4077-babe-aeabaac5cc84"></span>Camera Driver Controls Device Test - CAMERA\_PROFILES - Log all profiles
+# Camera Driver Controls Device Test - CAMERA_PROFILES - Log all profiles
 
 
 The Camera Sensor Quality test is an optional test for systems that include one or more built in cameras (for example: phones, laptops, tablets, all-in-one personal computers). This test verifies that the system is able to deliver a high quality real-time capture experience.
@@ -40,7 +40,7 @@ The tests estimate key video quality metrics in the following areas:
 |---|---|
 | **Specifications**  | <ul><li>Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 25 |

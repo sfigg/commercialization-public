@@ -1,19 +1,19 @@
 ---
-title: ReadAllJewel
+title: NFC Smartcard - Read All (Jewel)
 description: ReadAllJewel
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b7ffd42d-fcff-46c9-b4d3-7e4e9c2647a5
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.fd8a5a9d-8fe9-4feb-97ba-4b74b4362bcf"></span>ReadAllJewel
+# NFC Smartcard - Read All (Jewel)
 
 
 Verify that we can read every block of a Jewel/Topaz card.
@@ -23,7 +23,7 @@ Verify that we can read every block of a Jewel/Topaz card.
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.NFC.SmartCard.DataExchange</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 20 |

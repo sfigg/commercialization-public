@@ -25,15 +25,16 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 ## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
-1. From the IoT Core Shell, create a BSP working folder that you'd like to modify.
+1. From the IoT Core Shell, create a BSP working folder that you'd like to modify using [Add-IoTBSP](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTBSP.md).
 
-    ```powershell
-    newbsp MyRPi2
+    ``` powershell
+    Add-IoTBSP MyRPi2
+    (or) newbsp MyRPi2
     ```
 
 ## <span id="Add_packages_into_the_feature_manifest"></span>Add packages into the feature manifest
 
-1. Open the feature manifest file for your new BSP, \\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRpi2FM.xml.
+1. Open the feature manifest file for your new BSP, `C:\MyWorkspace\Source-arm\BSP\MyRpi2\MyRpi2FM.xml`.
 
     In another window, open the Raspberry Pi 2 feature manifest to use as a template.
 
@@ -69,12 +70,12 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
     Note: To make grouping packages easier, you can combine them into one or more Feature IDs. For example, all of the Raspberry Pi 2 optional drivers use the Feature ID: RPI2_DRIVERS.
 
-5. Add the HelloBlinky driver:
+5. Add the HelloBlinky driver
 
     ``` xml
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
           <FeatureIDs>
-            <FeatureID>RPI2_DRIVERS</FeatureID>
+            <FeatureID>BLINKY_DRIVER</FeatureID>
           </FeatureIDs>
         </PackageFile>
     ```
@@ -83,39 +84,20 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 1. Create a new working product folder, adding your BSP name to the end.
 
-    ```powershell
-    newproduct ProductB MyRpi2
+    ``` powershell
+    newproduct ProductC MyRpi2
     ```
 
-    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB, which is linked to the new BSP.
+    This creates the folder: `C:\MyWorkspace\Source-<arch>\Products\ProductC`, which is linked to the new BSP.
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
-1. Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
+1.  Update the product test configuration file using [Add-IoTProductFeature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTProductFeature.md)
 
-2. Add FeatureIDs:
-
-    - Add the FeatureID: IOT_GENERIC_POP to get OS-only updates.
-
-    - Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
-
-    - Optional: add the FeatureID for the other apps and test packages: APP_MyUWPApp, CUSTOM_CMD, CUSTOM_FileAndRegKey, that you created in Lab 1.
-
-       ``` xml
-       <Microsoft>
-          <Feature>IOT_GENERIC_POP</Feature>
-          <Feature>IOT_DISABLE_UMCI</Feature>
-          <Feature>IOT_ENABLE_TESTSIGNING</Feature>
-       ...
-       </Microsoft>
-
-       <OEM>
-          <Feature>RPI2_DRIVERS</Feature>
-          <Feature>CUSTOM_CMD</Feature>
-          <Feature>APP_MyUWPApp</Feature>
-          <Feature>CUSTOM_FileAndRegKey</Feature>
-        </OEM>
-        ```
+    ``` powershell
+    Add-IoTProductFeature ProductC Test BLINKY_DRIVER -OEM
+    (or) addfid ProductC Test BLINKY_DRIVER -OEM
+    ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
@@ -123,11 +105,11 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 1. From the IoT Core Shell, create the image:
 
-    ```powershell
-    createimage ProductB Test
+    ``` powershell
+    buildimage ProductC Test
     ```
 
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Flash.FFU.
+    This creates the product binaries at `C:\MyWorkspace\Build\<arch>\ProductC\Flash.ffu`.
 
 2. Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image.
 

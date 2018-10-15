@@ -1,19 +1,19 @@
 ---
-title: DE OOBE\_EOW Sequence Tests
+title: DE OOBE_EOW Sequence Tests
 description: DE OOBE\_EOW Sequence Tests
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: b7567c09-e039-41a9-818d-feb98f6b0451
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.dccadddb-5d0c-471f-a05c-2584ed8ef41b"></span>DE OOBE\_EOW Sequence Tests
+# DE OOBE_EOW Sequence Tests
 
 
 This test verifies that Encryption On Write (EOW) of the volumes is started after completion of OOBE. It also tests if Device Encryption is not blocked by the OEM by setting registry key PreventDeviceEncryption.
@@ -23,7 +23,7 @@ This test verifies that Encryption On Write (EOW) of the volumes is started afte
 |---|---|
 | **Specifications**  | <ul><li>System.Fundamentals.TPM.CS.ConnectedStandby</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 900 |

@@ -1,16 +1,16 @@
 ---
-title: D3D12 - DXIL Core Test - MinMax instruction
+title: D3D12 - DXIL Core Test - ISub instruction
 Description: D3D12 - DXIL Core Test - MinMax instruction
 ms.assetid: 
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# D3D12 - DXIL Core Test - MinMax instruction
+# D3D12 - DXIL Core Test - ISub instruction
 
 Verifies the MinMax DXIL instruction.
 
@@ -19,7 +19,7 @@ Verifies the MinMax DXIL instruction.
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM22.AdapterRender.D3D12.DXILCore.ShaderModel60.CoreRequirement</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 20 |
