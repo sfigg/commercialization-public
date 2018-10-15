@@ -374,6 +374,7 @@
 ### [IoT Core Add-ons](iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons command-line options](iot/iot-core-adk-addons-command-line-options.md)
 ### [Update the time server](iot/update-the-time-server.md)
+### [Add a recovery mechanism](iot/recovery-mechanism.md)
 ### [Troubleshooting](iot/Troubleshooting.md)
 
 ### [Create Windows Universal OEM Packages](iot/create-packages.md)
