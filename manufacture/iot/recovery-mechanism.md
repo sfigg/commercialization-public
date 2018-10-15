@@ -5,7 +5,7 @@ ms.assetid: d8298c99-6fa7-4825-a0b8-181b99e40975
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows 10 IoT Core Recovery
 ms.author: pabab
-ms.date: 05/02/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -15,7 +15,7 @@ ms.technology: windows-oem
 
 You can add a recovery mechanism to your image with **WinPE** as a Safe OS and **WIM files** as Recovery SW from recovery partition, using the steps provided below.
 
-See [Windows 10 IoT Core Recovery](recovery.md) for the details on the possible mechanisms.
+See [Windows 10 IoT Core Recovery](https://docs.microsoft.com/windows-hardware/service/iot/recovery) for the details on the possible mechanisms.
 
 ## Step 1 : Update device layout with recovery partition
 

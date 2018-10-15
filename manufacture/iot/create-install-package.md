@@ -5,7 +5,7 @@ ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
 title: 'Create and Install a Package'
 ms.author: pabab
-ms.date: 9/28/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

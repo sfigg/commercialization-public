@@ -5,7 +5,7 @@ ms.assetid: 7ca2b835-4d36-43d9-b46f-d5d5d8410335
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1c: Add a file and a registry setting to an image'
 ms.author: kenpacq
-ms.date: 9/29/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

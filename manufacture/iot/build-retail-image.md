@@ -5,7 +5,7 @@ MS-HAID: 'p\_iot\_core.build\_retail\_image'
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1f: Build a retail image'
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

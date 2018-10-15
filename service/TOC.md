@@ -34,7 +34,7 @@
 ### [Manage IoT Core device updates](iot/managing-iot-device-update.md)
 ### [Update IoT Core apps](iot/updating-iot-core-apps.md)
 ### [Install and service apps](iot/servicing-MSstore.md)
+### [IoT Core Reset](iot/reset.md)
 ### [Windows 10 IoT Core Recovery](iot/recovery.md)
-### [Add a recovery mechanism](iot/recovery-mechanism.md)
 
 ## [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/library/windows/hardware/mt786455.aspx)
