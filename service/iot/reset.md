@@ -28,7 +28,7 @@ Device reset includes the following key operations
 * Removes extraneous files in the Main OS partition excluding the files specified in the packaging
 * Restores Microsoft Store Apps to the version packaged in the image (via ppkg)
     - Store apps updates performed via the Microsoft Store will be reverted back
-* All BCD settings performed at run-time will **remain intact**
+* All changes to BCD settings performed at run-time will **remain intact**.
 * All OS/OEM updates applied to the device will **remain intact**
     - Note that this is the main difference between the Reset and Recovery process. The Recovery process will also roll back the updates and put the device back to the factory condition.
 
