@@ -3,7 +3,7 @@ author: kpacquer
 Description: 'These are the features you can add to Windows 10 IoT Core images.'
 title: 'IoT Core feature list'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

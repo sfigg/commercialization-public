@@ -5,7 +5,7 @@ ms.assetid: 26cfbad0-9528-4f89-a174-f198ece325d4
 MSHAttr: 'PreferredLib:/library'
 title: 'Windows ADK IoT Core Add-ons: contents'
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
