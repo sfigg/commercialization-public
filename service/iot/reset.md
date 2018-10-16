@@ -13,16 +13,16 @@ ms.technology: windows-oem
 
 # Windows 10 IoT Core Reset
 
-Device reset is a process to restore the device to initial conditions (with all user data removed). This is useful when you want to wipe out the user data/ enterprise provisioning data and bring the device back to its pristine state. This feature is supported from Windows 10 IoT Core, version 1809.
+Device reset is a process to restore the device to its initial conditions (with all user data removed). This is useful when you want to wipe out the user data/ enterprise provisioning data and bring the device back to its pristine state. This feature is supported from Windows 10 IoT Core, version 1809.
 
 > [!NOTE]
 > Device reset is supported in IoT Core only when the device guard security feature is enabled. For more information on device guard, see [Enabling Secure Boot, BitLocker, and Device Guard on Windows 10 IoT Core](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker).
 
 ## Device Reset functionality
 
-Device reset includes the following key operations
+Device reset includes the following key operations:
 
-* Formats data partition (all data stored here are lost)
+* Formats the data partition (all data stored there are lost)
     - OEM custom packages **should not** store files/data in the data partition if they want to use device reset.
 * Restores all registry settings to the initial values specified in the packaging
 * Removes extraneous files in the Main OS partition excluding the files specified in the packaging
