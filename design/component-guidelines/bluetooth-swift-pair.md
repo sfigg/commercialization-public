@@ -25,14 +25,14 @@ As the next evolution of pairing, users no longer need to navigate the Settings 
 
 ![Swift Pair <>](../images/notificationpairsmall.gif)
 
-**Swift Pair**
-
+## Swift Pair
 
 If at any time, a user wishes to turn Swift Pair on or off, they can do so in the “Bluetooth & other devices” page. Enterprises will also be able to control this feature through the [Bluetooth\AllowPromptedProximalConnections](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth) in the Policy CSP and with any existing Mobile Device Management solution.
 
 ## Building a Swift Pair peripheral
 
-There are two sets of requirements to ensure your peripheral works with Swift Pair. 
+There are two sets of requirements to ensure your peripheral works with Swift Pair.
+
 - The peripheral’s behavior
 - The structure and values in a Microsoft defined vendor advertisement section.
 
@@ -50,8 +50,8 @@ In order for Windows to identify a peripheral shortly after it enters pairing mo
 
 If the peripheral is out of available pairings, **remove the one with the longest time since last connect first**.
 
-
 ## Peripheral info on the Swift Pair notification
+
 Users should easily identify the peripheral they are trying to pair to. Peripherals should define **either a defined class of device (CoD) or the peripheral name**, which must be **included in the same advertisement** as the Swift Pair payload. Windows does not active scan due to both power and privacy concerns. As a result Swift Pair **peripheral information cannot be stored in a scan response**.
 
 **For LE only peripherals** (Fig 2), the Bluetooth SIG **LE appearance section can be parsed to define a class of device**. Windows will parse this section if included in the same advertisement as Swift Pair and map it to the correct icon to show on the notification. **For dual mode peripherals, the class of device is already covered in the Swift Pair payloads** (Fig 3,4). This is the [3 byte Major/Minor value defined by the Bluetooth SIG](https://www.bluetooth.com/specifications/assigned-numbers/baseband).
@@ -67,11 +67,13 @@ If a name is detected, “New [Peripheral Name] found” is shown.
 If a name isn’t detected, a generic string is shown as defined by the class of device Ex: “New Bluetooth mouse found”, “New Bluetooth headphones found”, “New Bluetooth headset found”
 
 ## Spec Features needed for Swift Pair
+
 **If a peripheral is beaconing for Swift Pair without any explicit user action, support LE Privacy**. Users should not be trackable due to the personal nature of these devices. **If LE Privacy is supported, the peripheral should suspend rotating the Bluetooth LE Address during the Swift Pair session**. The rotated address would be received as a new device request by Windows and would show two notifications for a single peripheral.
 
 **If a dual mode peripheral wishes to pair over both BR/EDR and LE, the peripheral must support secure connections for both protocols**. Windows pairs over LE first and derives the BR/EDR keys using secure connections. Pairing to both LE and BR/EDR with Swift pair without the use of secure connections is not supported.
 
-## Recommended
+## Recommended experiences
+
 For a good first-time experience, enter **pairing mode the first time the peripheral is powered up**.
 **Do not beacon for Swift Pair indefinitely**. Windows tracks peripherals trying to Swift Pair and will only show one notification per session. 
 
@@ -93,30 +95,65 @@ Bluetooth LE is required, other BR/EDR peripherals can benefit from Swift Pair. 
 **Figure 4: Pairing over BR/EDR only, using Bluetooth LE for discovery**
 
 ## Section Header
+
 - This is a Bluetooth SIG defined vendor section
-- The header consists of the Length, Vendor defined flag, and Microsoft Vendor ID 0x0006
+- The header consists of the Length, Vendor-defined flag, and Microsoft Vendor ID 0x0006
 
 ## Payload Content
-Microsoft Beacon ID & Sub Scenario 
+
+Microsoft Beacon ID & Sub Scenario
 
 - The Microsoft Beacon ID helps identify that the advertisement is for this experience and will detail how the peripheral will pair, each unique ID has a unique payload.
 
-Reserved RSSI Byte 
--   Reserve this byte and set it to 0x80. This will help maintain forwards and backwards compatibility. 
+Reserved RSSI Byte
 
-Display Name 
+- Reserve this byte and set it to 0x80. This will help maintain forwards and backwards compatibility. 
+
+Display Name
+
 - This variable size field can allow payload constrained peripherals to display the name of the peripheral on the notification. This name will not be localized and will need to work for all markets.
 - This is field is NOT required and is only a fallback mechanism if a peripheral maker would like to leverage it.
 
 ## Classic BR/EDR Pairings
-For BR/EDR peripheral icon appearance 
+
+For BR/EDR peripheral icon appearance
+
 - It is the same as the Major and Minor Class of Device(CoD) mapping provided by the Bluetooth SIG
 
 BR/EDR Address
-- If a peripheral will pair over BR/EDR only, the BR/EDR address in **little endian** format must be included in the main advertising packet 
+
+- If a peripheral will pair over BR/EDR only, the BR/EDR address in **little endian** format must be included in the main advertising packet
 - Supporting Secure Connections and pairing over both Bluetooth LE and BR/EDR removes this requirement
 
+## Turning Swift Pair on by default
+
+Swift pair released starting with Windows 10 version 1803 but was not turned on automatically for users. This decision was made when we learned continuously monitoring Bluetooth Low Energy (LE) advertisements caused some radios to improperly handle Wi-Fi activity when on the same radio. Swift Pair is the first of many planned Windows features where the system will be continuously monitoring Bluetooth advertisements. To address this, we now have a way for radios to report that they can handle these concurrent scenarios.
+
+Hardware diversity in the ecosystem prevents us from testing against every PC, so Windows needs to rely on each radio to declare support for continuous monitoring. Declaring support implies that the radio has been tested to minimize drops in Wi-Fi’s performance when continuously monitoring advertisements. Radios that can adequately perform Wi-Fi activities while monitoring Bluetooth LE advertisements concurrently can declare support by setting the appropriate value in [HCI_VS_MSFT_Read_Supported_Features commands](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events#hcivsmsftreadsupportedfeatures).
+
+General monitoring of Bluetooth LE advertisements (not continuous) is a prerequisite to supporting continuous monitoring. It is expected that most Windows certified radios already support the vendor specific command for general monitoring. General monitoring (0x8) enables Swift Pair in Settings but does not automatically turn on Swift Pair. A user must find the setting and turn it on themselves.
+
+If the radio supports continuous monitoring of LE advertisements, the radio can declare support via the 0x20 bit in the HCI supported features command. Once this bit is set, Swift Pair will be turned on automatically, and a user no longer needs to go to the Settings page to do so.
+
+If you are trying to enable Swift Pair automatically on any other continuous monitoring feature, see the testing considerations for concurrent Wi-Fi and Bluetooth scenarios below.
+
+### Testing Considerations
+
+- Wi-Fi throughput, jitter, and latency
+  - Measure throughput, jitter, and latency in strong, medium, and weak RSSI conditions.
+  - Measure with multiple client devices connected to the Access Point to simulate typical real-life usage.
+  - We also recommend running your Wi-Fi and Miracast Interop and Connectivity tests with the Swift Pair feature turned ON and OFF.
+- Battery life
+  - Performance measures for battery life should be evaluated through the hardware vendor’s proprietary power and battery tests.
+- Wi-Fi and Miracast connection reliability
+  - Performance measures can be evaluated after Windows driver flighting.
+- Wi-Fi access point roaming time
+  - Performance measures can be evaluated after Windows driver flighting.
+- Miracast stream Quality
+  - Performance measures can be evaluated after Windows driver flighting.
+
 ## Frequently Asked Questions
+
 **I put my Swift Pair-enabled peripheral in pairing mode, and nothing happens. What do I need to do?**
 
 In Windows, version 1803, you must enable Swift Pair. On **Settings**, search for **Bluetooth & other devices**. Check the **Show notifications to connect using Swift Pair** box.
