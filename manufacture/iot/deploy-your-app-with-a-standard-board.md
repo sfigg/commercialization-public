@@ -5,7 +5,7 @@ ms.assetid: a801d768-0397-4f85-b68f-bd85ddcc3f1f
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1b: Add an app to your image'
 ms.author: kenpacq
-ms.date: 9/29/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

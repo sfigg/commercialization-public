@@ -158,7 +158,7 @@ When the **Let me choose one scaling level for all my displays** checkbox is che
 | 120 | 125% scaling on every display |
 | 144 | 150% scaling on every display |
 | 192 | 200% scaling on every display |
-| \<other> | \<other>*100/96 scaling on every display |
+| \<other> | \<other> 96/100 scaling on every display |
 
  
 ## <span id="related_topics"></span>Related topics

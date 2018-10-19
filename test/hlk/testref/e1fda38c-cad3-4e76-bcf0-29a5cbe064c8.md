@@ -1,5 +1,5 @@
 ---
-title: WriteAllMifareCL1k
+title: NFC Smartcard - Write All (MifareClassic1k)
 description: WriteAllMifareCL1k
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,13 +7,13 @@ MSHAttr:
 ms.assetid: 5523d467-5f5d-4a34-b067-a210cc2fbf18
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.e1fda38c-cad3-4e76-bcf0-29a5cbe064c8"></span>WriteAllMifareCL1k
+# NFC Smartcard - Write All (MifareClassic1k)
 
 
 Verify that we can write to every writable block of a Mifare Classic 1k card.
@@ -23,7 +23,7 @@ Verify that we can write to every writable block of a Mifare Classic 1k card.
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.NFC.SmartCard.DataExchange</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 20 |

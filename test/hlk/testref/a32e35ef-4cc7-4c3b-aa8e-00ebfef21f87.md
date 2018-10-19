@@ -4,7 +4,7 @@ Description: TPM 2.0 - Self Test - (WoW64 for ARM64)
 ms.assetid: 
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,7 +19,7 @@ This test runs the TPM 2.0 Hardware Interface 'Self Test' Tests - This test is a
 |---|---|
 | **Specifications**  | <ul><li>Device.TrustedPlatformModule.TPM20.Features</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 30 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 120 |

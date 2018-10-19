@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fea70455-d537-4c69-b164-9373b1fbb25a
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -21,9 +21,9 @@ This test validates that the IAMVideoCompression interface has been implemented 
 ## Test details
 |||
 |---|---|
-| **Specifications**  | <ul><li>Device.Streaming.Camera.Base.DirectShow</li></ul> |  
+| **Specifications**  | <ul><li>Device.Streaming.Camera.VideoCapture.DirectShow</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 15 |

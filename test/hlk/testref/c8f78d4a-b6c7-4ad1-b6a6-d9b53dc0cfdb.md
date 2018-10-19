@@ -1,5 +1,5 @@
 ---
-title: Camera Driver Controls Device Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_CUSTOM enum all, photo and preview
+title: Camera Driver Controls Device Test - CAMERA_PROFILES - Verify KSCAMERAPROFILE_CUSTOM enum all, photo and preview
 description: Camera Driver Controls Device Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_CUSTOM enum all, photo and preview
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -8,13 +8,13 @@ Search.SourceType: Video
 ms.assetid: 66860d92-d432-4f6b-99b9-abc16a4e3ad0
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.c8f78d4a-b6c7-4ad1-b6a6-d9b53dc0cfdb"></span>Camera Driver Controls Device Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_CUSTOM enum all, photo and preview
+# Camera Driver Controls Device Test - CAMERA_PROFILES - Verify KSCAMERAPROFILE_CUSTOM enum all, photo and preview
 
 
 The Camera Sensor Quality test is an optional test for systems that include one or more built in cameras (for example: phones, laptops, tablets, all-in-one personal computers). This test verifies that the system is able to deliver a high quality real-time capture experience.
@@ -40,7 +40,7 @@ The tests estimate key video quality metrics in the following areas:
 |---|---|
 | **Specifications**  | <ul><li>Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 25 |

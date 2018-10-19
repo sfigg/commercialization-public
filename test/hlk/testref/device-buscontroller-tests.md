@@ -16,6 +16,8 @@ ms.technology: windows-oem
 # Device.BusController tests
 
 
+-   [Bluetooth - LE Supported States - Peripheral Role Support (Bring Up)](4609ecd5-8f82-487a-b44b-21d16d13eb40.md)
+-   [Bluetooth - LE Supported States - Scatternet Support (Bring Up)](b11e1107-327b-433e-8b54-b7f65223fe40.md)
 -   [Bluetooth - Wide Band Speech Capability (Bring Up)](0bed46c5-94d3-4188-b85c-2090e107d47d.md)
 -   [Bluetooth - Wide Band Speech Offload Capability (Bring Up)](3fe79e60-9d27-431d-a586-daf7346a98c1.md)
 -   [PWM WinRT Concurrent Creation (Reliability)](6a73ce07-16a4-4e7b-b85d-85dcd3067937.md)

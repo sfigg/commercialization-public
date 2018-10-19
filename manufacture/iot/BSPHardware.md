@@ -3,7 +3,7 @@ author: parameshbabu
 Description: 'Learn how to use board supported packages in order to start assembling and manufacturing your device.'
 title: 'BSP for Hardware'
 ms.author: pabab
-ms.date: 08/28/18
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

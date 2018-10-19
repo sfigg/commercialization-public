@@ -32,7 +32,7 @@ Customizable components of RDX:
 
 ## RDX 3.0
 
-RDX 3.0 is included in Window 10, version 1809. For Windows 10, version 1803, you can preload RDX 2.0, and once the device is connected, it will upgrade to RDX 3.0 automatically.
+RDX 3.0 is included in Windows 10, version 1809. For Windows 10, version 1803, you can preload RDX 2.0, and once the device is connected, it will upgrade to RDX 3.0 automatically.
 
 Key updates include:
 

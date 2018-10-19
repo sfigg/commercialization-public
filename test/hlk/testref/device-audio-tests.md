@@ -16,6 +16,11 @@ ms.technology: windows-oem
 # Device.Audio tests
 
 
+-   [Audio APO - Verify APO Initializes - TestAPOInitialize](ed37b03b-f091-4c8d-9edd-fe7ec803bc8e.md)
+-   [Audio APO - Verify APO Streams Data - TestAPODataStreaming](d327b019-99e4-41bd-bf66-af1a92801dac.md)
+-   [Audio APO - Verify All Formats on Device are Valid - TestCustomFormatSupport](571bd021-64f5-4cd1-9ba4-8abd0857025f.md)
+-   [Audio APO - Verify Frame Count is Valid - TestValidFrameCount](b9e9f61a-2882-4256-aba8-d57a46e54b76.md)
+-   [Audio APO - Verify Proper APO Activation and Deactivation - TestActivateDeactivate](d1c21041-9080-4990-b6a2-5f718649a3f2.md)
 -   [Audio Codec - AC3 Test - Certification](b42bd7fc-32b1-4500-8049-a4e00c70eb33.md)
 -   [Audio Codec - Audio Engine Core Test (UMACoreTest)](eb304880-c6ad-401e-b664-b31c15d5460e.md)
 -   [Audio Codec - Audio Engine Test (UMATest)](ff91440c-9557-489b-85e2-38726d34f826.md)
@@ -72,3 +77,5 @@ ms.technology: windows-oem
 
 
 
+-   [Bluetooth - BluetoothAudioClassesVerify (Bring Up)](d8761de9-51ff-4f77-a5d4-8f74cffd752f.md)
+-   [Bluetooth - BluetoothAudioProfilesVerify (Bring Up)](1d0feabe-ed11-4e30-88f3-fa9ecd30ed9c.md)
