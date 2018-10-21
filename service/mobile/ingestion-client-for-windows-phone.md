@@ -141,6 +141,8 @@ The command to install the client requires the following parameters:
 
 -   *PFXPASSWORD*: The password of the certificate file that is specified in the MYCLIENTCERTIFICATEPATH parameter.
 
+-   *CLIENTID*: The ClientId of the Microsoft partner.
+
 The parameters are specified in the following format:
 
 ```
@@ -149,6 +151,7 @@ msiexec /I WPIngestionClient.msi
     NAMESPACE="[Microsoft access control identifier]" 
     MYCLIENTCERTIFICATEPATH="[Path of OEM PFX file]"
     PFXPASSWORD="[Password of PFX file]"
+	CLIENTID="[ClientId of Microsoft partner]"
     /l*v install.log
 ```
 
@@ -162,6 +165,7 @@ After obtaining a valid X.509 certificate run the following install:
         NAMESPACE="wp8partnerservicesv1" 
         MYCLIENTCERTIFICATEPATH="C:\Certificates\OemSecretCertificateWithPrivateKey.pfx"
         PFXPASSWORD="Password-Of-OemSecretCertificateWithPrivateKey.pfx"
+		CLIENTID="GUID"
         /l*v install.log
     ```
 
