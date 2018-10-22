@@ -1,5 +1,5 @@
 ---
-title: Bluetooth Swift Pair
+title: Turning Swift Pair on by Default for Windows Device Makers
 description: This topic provides the requirements for Bluetooth pre-pairing in Windows 10.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Bluetooth Swift Pair
+# Turning Swift Pair on by Default for Windows Device Makers
 
 Introduced in Windows 10, version 1803, Swift Pair is the newest way to pair your Bluetooth peripherals to Windows 10 PCs. This topic describes the feature, requirements about how peripherals can support Swift Pair, frequently asked questions about how this quick and convenient feature works.
 
