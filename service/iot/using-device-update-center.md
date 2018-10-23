@@ -42,7 +42,7 @@ Device Update Center portal provides OEMs a way to:
 
 1. [Windows Assessment and Deployment Kit(Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 2. [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)
-3. [Windows 10 IoT Core Packages](https://www.microsoft.com/software-download/windows10iotcore)
+3. [Windows 10 IoT Core Packages](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)
 4. Get BSP for your platform from the silicon vendor. See [Windows 10 IoT Core BSP](https://docs.microsoft.com/windows-hardware/manufacture/iot/bsphardware)
 
 ### Set up your environment
