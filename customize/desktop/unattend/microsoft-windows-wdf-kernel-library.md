@@ -16,7 +16,7 @@ ms.technology: windows-oem
 ---
 # Microsoft-Windows-WDF-Kernel Library
 
-`Microsoft-Windows-WDF-KernelLibrary` provides a kernel-mode framework for device drivers. For more information, see the Windows Hardware Developer Central topic: [Kernel-Mode Driver Architecture Design Guide](https://docs.microsoft.com/windows-hardware/drivers/kernel/).
+`Microsoft-Windows-WDF-KernelLibrary` provides a kernel-mode framework for device drivers. For more information, see the Windows Hardware Developer Central topic: [Kernel-Mode Driver Framework](http://go.microsoft.com/fwlink/?LinkId=143072).
 
 ## In This Section
 
