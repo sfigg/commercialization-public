@@ -4,7 +4,7 @@ Description: 'Features on Demand (capabilities), introduced in Windows 10, are 
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Available features on demand'
 ms.author: kenpacq
-ms.date: 04/25/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

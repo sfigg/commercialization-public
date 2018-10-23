@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: f573e5d7-9933-49e9-9160-68cd61cb6fee
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -23,7 +23,7 @@ This test runs the Task Offload Logo test.
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.IPsec.IPsec</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 120 |

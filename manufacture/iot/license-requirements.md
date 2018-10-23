@@ -21,7 +21,7 @@ Have questions about commercialization? Check out our Commercialization FAQ [her
 
 If you are handling the maintenance and upkeep of commercialized devices on your own, SAC may be another option for you to consider when commercializing a device. While SAC comes at no cost, you will not have access to the features that Windows 10 IoT Core Services provides. You will also need to come back every six months to renew SAC. 
  
-To start your commercialization journey with SAC, you will need to sign a license, which you will need to request the license agreement [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). A member of the team will get back to you with the agreement form within 48 to 72 hours.  
+To start your commercialization journey with SAC, you will need to sign a license, which you will need to request the license agreement [here](https://www.surveygizmo.com/s3/4619100/SAC-Commercialization-Agreement). A member of the team will get back to you with the agreement form within 48 to 72 hours.  
 
 You can view a copy of this agreement before requesting to sign it [here](https://az835927.vo.msecnd.net/sites/iot/Resources/documents/Commercial-License.pdf). 
 

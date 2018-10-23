@@ -1,11 +1,11 @@
 ---
 author: kpacquer
-Description: 'To get started, we''ll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything''s working properly.'
+Description: 'To get started, we''ll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything''s working properly.'
 ms.assetid: aeba79b8-d8dd-481a-a8bf-03ae28174632
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1a: Create a basic image'
 ms.author: kenpacq
-ms.date: 9/29/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -13,7 +13,7 @@ ms.technology: windows-oem
 
 # Lab 1a: Create a basic image
 
-To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything's working properly. 
+To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything's working properly. 
 
 We'll create a product folder that represents our first design. For our first product design, we'll customize just enough for the IoT core device to boot up and run the built-in OOBE app, which we should be able to see on an HDMI-compatible monitor.
 
@@ -130,7 +130,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 ### <span id="Try_it_out"></span>Try it out
 
 1.  Connect your IoT device, such as a Raspberry Pi 3, into a monitor using an HDMI cable.
-    **Note**  When possible, use a direct connection to an HDMI port. The display may not appear when using DVI/VGA adapters or hubs.
+    **Note**  When possible, use a direct connection to an HDMI port. The display may not appear when using DVI/VGA adapters or hubs.
 
 2.  Put in the micro SD card with your image.
 
@@ -138,7 +138,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     After a short while, the device should start automatically, and you should see the [IoT Core Default app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) (code-named "Bertha"), which shows basic info about the image.
 
-    **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
+    **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
 
 See also [Set up your device](https://developer.microsoft.com/windows/iot/getstarted/prototype/setupdevice) for more instructions on flashing the device.
 

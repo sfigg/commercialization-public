@@ -1,9 +1,9 @@
 ---
-author: themar
+author: kpacquer
 Description: 'Push-button reset features are included with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), though you''ll need to perform additional steps to deploy PCs with the following customizations.'
 title: 'Deploy push-button reset features with auto-apply folders'
-ms.author: themar
-ms.date: 10/01/2018
+ms.author: kenpacq
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -39,11 +39,11 @@ For an overview of the entire deployment process, see the [Desktop manufacturing
 
 Use the follow steps to prepare the ScanState tool to capture Windows desktop applications after they have been installed:
 
-## *Step 1: Prepare the ScanState tool
+## Step 1: Prepare the ScanState tool
 
 1.  On the technician PC, copy the Windows ADK files from Windows User State Migration Tool (USMT) and Windows Setup to a working folder. You'll need to match the architecture of the destination device. You don't need to copy the subfolders.
 
-    ```
+    ```cmd
     md C:\ScanState_amd64
     xcopy /E "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" C:\ScanState_amd64
     xcopy /E /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" C:\ScanState_amd64
@@ -58,19 +58,19 @@ Use the following steps to customize your Windows RE boot image if additional dr
 1.  On the technician PC, click **Start**, and type deployment. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 2.  In **Deployment and Imaging Tools Environment**, create the folder structure to store the Windows image and its mount point.
 
-    ```
+    ```cmd
     Mkdir C:\OS_image\mount
     ```
 
 3.  Create the folder structure to store the Windows RE boot image and its mount point.
 
-    ```
+    ```cmd
     Mkdir C:\winre_amd64\mount
     ```
 
 4.  Mount the Windows image (install.wim) to the folder \\OS\_image\\mount by using DISM.
 
-    ```
+    ```cmd
     Dism /mount-image /imagefile:C:\OS_image\install.wim /index:1 /mountdir:C:\OS_image\mount
     ```
 
@@ -78,19 +78,19 @@ Use the following steps to customize your Windows RE boot image if additional dr
 
 5.  Copy the Windows RE image from the mounted Windows image to the new folder.
 
-    ```
+    ```cmd
     xcopy /H C:\OS_image\mount\windows\system32\recovery\winre.wim C:\winre_amd64 
     ```
 
 6.  Unmount the Windows image. Tip: If you haven't made any other changes in the Windows image, you can unmount the image faster by using the `/discard` option.
 
-    ```
+    ```cmd
     Dism /unmount-image /mountdir:C:\OS_image\mount /discard
     ```
 
 7.  Mount the Windows RE boot image for editing.
 
-    ```
+    ```cmd
     Dism /mount-image /imagefile:C:\winre_amd64\winre.wim /index:1 /mountdir:C:\winre_amd64\mount
     ```
 
@@ -101,7 +101,7 @@ Use the following steps to customize your Windows RE boot image if additional dr
 8.  Add language packs, boot-critical device drivers, and input device drivers to the Windows RE boot image. To learn more, see [Customize Windows RE](customize-windows-re.md).
 9.  Commit your customizations and unmount the image.
 
-    ```
+    ```cmd
     Dism /unmount-image /mountdir:C:\winre_amd64\mount /commit 
     ```
 
@@ -132,7 +132,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 1.  Create a folder in your Windows image called `C:\Recovery\AutoApply`
 
-    ```
+    ```cmd
     MkDir C:\Recovery\AutoApply
     ```
 
@@ -198,7 +198,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
     **For UEFI-based PCs:**
 
-    ```
+    ```cmd
     select disk 0
     select partition 4
     remove
@@ -209,7 +209,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
     **For BIOS-based PCs:**
 
-    ```
+    ```cmd
     select disk 0
     select partition 3
     remove
@@ -224,7 +224,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 9.  If you have installed OS updates, clean up the superseded components and mark the updates as permanent so that they will be restored during recovery:
 
-    ```
+    ```cmd
     DISM.exe /Cleanup-Image /StartComponentCleanup
     ```
 
@@ -232,7 +232,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 1.  Use the ScanState tool to capture the installed customizations into a provisioning package. Use the /config option to specify one of the default configuration files included with the ADK, and save the .ppkg file in the folder C:\\Recovery\\Customizations.
 
-    ```
+    ```cmd
     N:\ScanState_amd64\scanstate.exe /apps /config:<path_to_config_file> /ppkg C:\Recovery\Customizations\apps.ppkg /o /c /v:13 /l:C:\ScanState.log
     ```
 
@@ -240,7 +240,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 2.  If you have used Windows ICD to create additional provisioning packages with customizations which should be restored during recovery, copy the packages to the destination PC. For example:
 
-    ```
+    ```cmd
     xcopy N:\RecoveryPPKG\*.ppkg C:\Recovery\Customizations
     ```
 
@@ -248,7 +248,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 3.  Copy any Push-button reset configuration file (resetconfig.xml) and related scripts to the destination PC, and then configure permissions to write/modify them. For example:
 
-    ```
+    ```cmd
     mkdir C:\Recovery\OEM
     ```
 
@@ -256,7 +256,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 4.  Restrict the Write/Modify permissions of the customizations, and hide the root folder. For example:
 
-    ```
+    ```cmd
     icacls C:\Recovery\Customizations /inheritance:r /T
     icacls C:\Recovery\Customizations /grant:r SYSTEM:(F) /T
     icacls C:\Recovery\Customizations / grant:r *S-1-5-32-544:(F) /T
@@ -268,7 +268,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 5.  Use the Sysprep tool to reseal the Windows image without using the /generalize option.
 
-    ```
+    ```cmd
     Sysprep /oobe /exit
     ```
 
@@ -278,7 +278,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 6.  (Optional) To save space, you can also convert your installed Windows desktop applications into file pointers referencing the customizations package. To do so, boot the destination PC to Windows PE and run the following:
 
-    ```
+    ```cmd
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
     ```
 

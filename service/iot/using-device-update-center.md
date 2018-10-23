@@ -4,7 +4,7 @@ Description: 'Device Update Center User Guide'
 MSHAttr: 'PreferredLib:/library'
 title: 'Device Update Center User Guide'
 ms.author: kenpacq
-ms.date: 06/27/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

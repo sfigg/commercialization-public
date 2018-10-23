@@ -5,7 +5,7 @@ ms.assetid: ae043bb0-656e-4439-bdbe-a8d370629ab7
 MSHAttr: 'PreferredLib:/library'
 title: 'IoT Core Add-ons command-line options'
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

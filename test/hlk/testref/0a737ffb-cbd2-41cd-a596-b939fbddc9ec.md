@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8598ae3b-1731-4cbc-8c2f-3e2a1b31951d
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -23,7 +23,7 @@ Connect to a specified WPA2PSK AES network with sleep resume (Defaults: SSID=kit
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 15 |

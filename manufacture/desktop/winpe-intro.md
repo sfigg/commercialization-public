@@ -5,7 +5,7 @@ ms.assetid: f20056af-adab-4d7a-83a0-f44c5a91e0d2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows PE (WinPE)'
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Windows PE (WinPE)
 
 
-Windows PE (WinPE) for Windows 10 is a small operating system used to install, deploy, and repair Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows Server 2016, and other Windows operating systems. From Windows PE, you can:
+Windows PE (WinPE) for Windows 10 is a small operating system used to install, deploy, and repair Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows Server, and other Windows operating systems. From Windows PE, you can:
 
 -   Set up your hard drive before installing Windows.
 -   Install Windows by using apps or scripts from a network or a local drive.
@@ -131,15 +131,4 @@ Windows PE does not support any of the following:
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
 
