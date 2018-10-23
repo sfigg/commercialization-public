@@ -22,16 +22,21 @@ The files you need to create WinPE media are included in the [Winpe Add-on](http
 
 ### For the ADK for Windows 10, version 1809
 
-To start working with WinPE, download and install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803). and the [WinPE Add-ons](https://go.microsoft.com/fwlink/?linkid=2022233). 
+To start working with WinPE, download and install both the Windows Assessment and Deployment Kit (ADK) and the WinPE Add-ons.
 
--   Install the ADK with the **Deployment Tools** option, which includes the **Deployment and Imaging Tools Environment**.
+> [!div class="nextstepaction"]
+> [Download the Windows ADK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026036)
 
--   Install [**WinPE Add-on**](https://go.microsoft.com/fwlink/?linkid=2022233), which includes the files used to install Windows PE.
+ During installation, select **Deployment Tools**.
 
+> [!div class="nextstepaction"]
+> [Download the Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2022233)
 
 ### For the ADK for Windows 10, version 1803 or earlier
 
-To start working with WinPE, download and install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803). During installation, select the following features:
+In previous versions, WinPE is included in the [Windows ADK](http://go.microsoft.com/fwlink/?LinkId=526803). 
+
+During installation, select the following features:
 
 -   **Deployment Tools**: includes the **Deployment and Imaging Tools Environment**.
 

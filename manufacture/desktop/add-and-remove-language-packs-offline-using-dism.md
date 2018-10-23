@@ -5,7 +5,7 @@ ms.assetid: 128cffa3-8c53-41c8-add2-fa10197f36a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Language Packs Offline Using DISM
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

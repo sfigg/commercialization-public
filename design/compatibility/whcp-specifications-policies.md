@@ -5,7 +5,7 @@ ms.assetid:
 MSHAttr: 
 author: EliotSeattle
 ms.author: eliotgra
-ms.date: 01/23/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -13,23 +13,23 @@ ms.technology: windows-oem
 
 # Windows Hardware Compatibility Program Specifications and Policies
 
-When products meet the minimum requirements it ensures that the application and device are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List.
+When products meet the minimum requirements as defined in the below documents, it ensures that applications and devices are compatible. Systems are required to use components which have also passed compatibility testing. Products submitted with passing results will continue to be included on the Certified Products List and Windows Server Catalog.
 
 ## Specifications and Policies Documents
 
-The specifications define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability and reliability. 
+The specifications define how to build Windows-compatible devices, systems, and filter drivers across all Windows Platforms. They were developed in collaboration with partners, and focus on ensuring compatibility, interoperability, security, and reliability. 
 
 The policies and processes provide guidelines on qualification testing and product submission, as well as useful business process requirements.
 
-### Certification for Windows Server 2016, Azure Stack, and Software Defined Data Center (SDDC)
+### Certification for Windows Server 2016 and later, the Software Defined Data Center (SDDC) additional qualifications, the Windows Server Software Defined Datacenter (WSSD) program, and Azure Stack.
 
-Certification for Windows Server 2016, Azure Stack, and SDDC must:
+Products looking to achieve certification and qualification for the above products and programs must:
 
- - Meet the Windows Hardware Compatibility Specifications for Windows 10, version 1607 
+ - Meet the Windows Hardware Compatibility Specifications for the relevant version of Windows Server and these other programs
  - Follow the Windows Server Policy document
- - Use [version 1607 of the HLK (build 14393)](https://go.microsoft.com/fwlink/p/?LinkID=404112) with [matching playlist](http://aka.ms/hlkplaylist) and supplemental content to generate logs
+ - Use  the relevant version with matching palylist and supplemental content to generate logs
 
-Questions about the Azure Stack or SDDC programs or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
+Questions about the Azure Stack or WSSD programs and SDDC Additional Qualifications, or how to submit the results for solution validation should be directed to the appropriate Microsoft technical account manager or partner management contact.
 
 ### Download Compatibility Documents
 

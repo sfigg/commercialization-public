@@ -5,7 +5,7 @@ ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
 title: 'Create and Install a Package'
 ms.author: pabab
-ms.date: 9/28/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -24,10 +24,8 @@ ms.technology: windows-oem
 
 ### Set up your environment
 
-* Edit `\IoT-ADK-AddonKit\Tools\setOEM.cmd` to set the OEM_NAME
-* Launch `IoTCoreShell.cmd` ( this one launches in the elevated prompt )
-* Select the required architecture in the `Set Environment for Architecture` prompt
-* Install test signing certificates using `InstallOEMCerts` . This is required *only once* for the PC.
+* Launch `IoTCorePShell.cmd` ( this one launches in the elevated prompt )
+* Create a new workspace using `new-ws C:\MyWorkspace <oemname> <arch>`
 
 To create your own image (FFU), follow the steps outlined in the ["Create a basic image" lab in the IoT Manufacturing guide](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image).
 
@@ -35,7 +33,7 @@ To create your own image (FFU), follow the steps outlined in the ["Create a basi
 1. Create a **package definition xml file** (.wm.xml file), and specify the files and reg keys you want to add. 
       Learn more at [Windows Universal OEM Package Schema](https://docs.microsoft.com/windows-hardware/manufacture/iot/package-schema).
 
-2. Build the package: `buildpkg.cmd filename.wm.xml`. The .cab file will be created in the build directory `\IoT-ADK-AddonKit\Build\<arch>\pkgs`.
+2. Build the package: `buildpkg filename.wm.xml`. The .cab file will be created in the build directory `<workspace>\Build\<arch>\pkgs`.
 
 ### Create a package with files and reg keys
 Below is an example for specifying files and reg keys.
@@ -74,18 +72,25 @@ Below is an example for specifying files and reg keys.
 
 ### Create an Appx package
 
-Use [newappxpkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/newappxpkg.cmd) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
+Use [Add-IoTAppxPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
 
-    newappxpkg HelloWorld.appx fga Appx.HelloWorld
-    buildpkg Appx.HelloWorld
+    ``` powershell
+    Add-IoTAppxPackage HelloWorld.appx fga Appx.HelloWorld
+    (or) newappxpkg HelloWorld.appx fga Appx.HelloWorld
+    New-IoTCabPackage Appx.HelloWorld
+    (or) buildpkg Appx.HelloWorld
+    ```
 
 `fga` sets the appx as the foreground startup app, `bgt` sets the appx as the background task and `none` skips startup configuration.
+For older commandline tool, see [newappxpkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Tools/newappxpkg.cmd)
 
-See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/Packages/Appx.IoTCoreDefaultApp/) as an example.
+See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/) as an example.
 
 When you have to install multiple applications signed with same certificate, you can add the certificate along with one app and for the remaining apps, you can skip adding the certificate using the skipcert flag.
 
+    ``` powershell
     newappxpkg AnotherApp.appx none Appx.AnotherApp skipcert
+    ```
 
 See also
 
@@ -94,21 +99,27 @@ See also
 
 ### Create a driver package
 
-The driver package contains the references (InfSource) to the Inf file for the driver and also lists all the files referenced in the Inf file. You can author the driver .wm.xml file manually or use [inf2pkg.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/inf2pkg.cmd) that generates package xml based on the input inf file.
+The driver package contains the references (InfSource) to the Inf file for the driver. You can author the driver .wm.xml file manually or use [Add-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md) that generates package xml based on the input inf file.
 
-[inf2cab.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
+    ``` powershell
+    Add-IoTDriverPackage C:\Mydriver\GPIO.inf MyDriver.GPIO
+    (or) newdrvpkg C:\Mydriver\GPIO.inf MyDriver.GPIO
+    New-IoTCabPackage MyDriver.GPIO
+    (or) buildpkg MyDriver.GPIO
+    ```
+For the older commandline tool, use [inf2cab.cmd](https://github.com/ms-iot/iot-adk-addonkit/tree/17134/Tools/inf2cab.cmd) creates the package xml file and also builds the cab file directly by invoking `buildpkg.cmd` internally.
 
 > [!NOTE]
 > Windows IoT Core supports Universal Inf only.
 
 See also
 
-* [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
+* [Sample Driver Package](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
 
 ## Step 3: Install on device
 ---
 
-* Connect to the device ([using SSH](../connect-your-device/SSH.md) or [using Powershell](../connect-your-device/powershell.md))
+* Connect to the device ([using SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/SSH) or [using Powershell](https://docs.microsoft.com/windows/iot-core/connect-your-device/powershell))
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.

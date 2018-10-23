@@ -6,8 +6,8 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1041ca7f-313c-42a5-9cc7-7c0769397299
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -26,7 +26,7 @@ This test runs I/O on devices before and after a system reboot.
 |---|---|
 | **Specifications**  | <ul><li>Device.DevFund.Reliability.Discretional</li><li>Device.DevFund.Reliability.PnPIDs</li><li>Device.DevFund.ReliabilityDisk.IOCompletionCancellation</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 4 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 30 |

@@ -13,24 +13,23 @@ ms.technology: windows-oem
 
 # Ingestion Client for Windows Phone
 
-
 The ingestion client is a set of [Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=389794) cmdlets that are used to communicate with services to retrieve and submit code-signing and update requests to and from Microsoft.
 
--   [Initialize-FirmwareSubmission cmdlet](initialize-firmwaresubmission-cmdlet.md)
+- [Initialize-FirmwareSubmission cmdlet](initialize-firmwaresubmission-cmdlet.md)
 
--   [New-FirmwareSubmission cmdlet](new-firmwaresubmission-cmdlet.md)
+- [New-FirmwareSubmission cmdlet](new-firmwaresubmission-cmdlet.md)
 
--   [Get-SignedFirmwareSubmission cmdlet](get-signedfirmwaresubmission-cmdlet.md)
+- [Get-SignedFirmwareSubmission cmdlet](get-signedfirmwaresubmission-cmdlet.md)
 
--   [New-RequestForUpdate cmdlet](new-requestforupdate-cmdlet.md)
+- [New-RequestForUpdate cmdlet](new-requestforupdate-cmdlet.md)
 
--   [New-RequestForMicrosoftUpdate cmdlet](new-requestformicrosoftupdate-cmdlet.md)
+- [New-RequestForMicrosoftUpdate cmdlet](new-requestformicrosoftupdate-cmdlet.md)
 
--   [Get-RequestForUpdate cmdlet](get-requestforupdate-cmdlet.md)
+- [Get-RequestForUpdate cmdlet](get-requestforupdate-cmdlet.md)
 
--   [Request-UpdateCancellation cmdlet](request-updatecancellation.md)
+- [Request-UpdateCancellation cmdlet](request-updatecancellation.md)
 
-To use the ingestion client, the following tasks that are elaborated further in this topic must be completed.
+To use the ingestion client, the following tasks (elaborated further upon later in this topic) must be completed.
 
 1.  Follow the instructions in the [Sign up for retail package signing and updates](#provision-certs) section later in this topic to send the OEM x.509 certificates and manage the public and private key associated with each certificate.
 
@@ -141,6 +140,8 @@ The command to install the client requires the following parameters:
 
 -   *PFXPASSWORD*: The password of the certificate file that is specified in the MYCLIENTCERTIFICATEPATH parameter.
 
+-   *CLIENTID*: The ClientId of the Microsoft partner.
+
 The parameters are specified in the following format:
 
 ```
@@ -149,6 +150,7 @@ msiexec /I WPIngestionClient.msi
     NAMESPACE="[Microsoft access control identifier]" 
     MYCLIENTCERTIFICATEPATH="[Path of OEM PFX file]"
     PFXPASSWORD="[Password of PFX file]"
+	CLIENTID="[ClientId of Microsoft partner]"
     /l*v install.log
 ```
 
@@ -162,6 +164,7 @@ After obtaining a valid X.509 certificate run the following install:
         NAMESPACE="wp8partnerservicesv1" 
         MYCLIENTCERTIFICATEPATH="C:\Certificates\OemSecretCertificateWithPrivateKey.pfx"
         PFXPASSWORD="Password-Of-OemSecretCertificateWithPrivateKey.pfx"
+		CLIENTID="GUID"
         /l*v install.log
     ```
 

@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 687d0235-37d6-432a-9d79-3d81ac31a028
 author: EliotSeattle
-ms.author: EliotSeattle
+ms.author: eliotgra
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -314,6 +314,17 @@ SQL Server updates can cause the Windows HLK Client to crash. To fix, disable au
     2.  Select **Windows Update**
     3.  Select **Change settings**
     4.  Choose an option that disables automatic updates
+
+## <span id="secureboot"></span><span id="SECUREBOOT"></span>Client computer goes to Windows diagnostics mode after installing HLK client
+If you are prompted the check the C:\Windows\System32\LogFiles\srt\SrtTrail.txt log file and receive the following Error:
+ 
+``` 
+Root cause found:
+----------------------------
+Boot critical file c:\windows\system32\drivers\msdmfilt.sys is corrupt.
+``` 
+
+SecureBoot will need to be disabled from within BIOS/UEFI. Unless you are running SecureBoot tests on the device/system, SecurBoot needs to be disabled to run HLK tests.
 
 ## <span id="unsupp"></span><span id="UNSUPP"></span>Unsupported scenarios
 

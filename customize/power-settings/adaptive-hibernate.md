@@ -39,6 +39,8 @@ Adaptive hibernate settings (standby budget setting and standby reserve time set
 
 ### Standby budget setting
 
+The following table lists the settings you can use to set the standby budget, which is the amount of battery the user is allowed to drain during standby.
+
 <table>
 <colgroup>
 <col width="25%" />
@@ -57,14 +59,13 @@ Adaptive hibernate settings (standby budget setting and standby reserve time set
 <tbody>
 <tr class="odd">
 <td><p>[StandbyBudgetPercent](standbybudgetpercent.md)</p></td>
-<td><p>Defines the battery drain percentage that the user is allowed in a 24-hour standby period. If the drain percentage is reached, the device transitions to Hibernate. Default is 5%.</p></td>
+<td><p>Defines the battery drain % that the user is allowed in a standby session. Default is 5%.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbybudgetpercent</code></p></td>
 </tr>
 </tbody>
 </table>
 
-The following table lists the settings you can use to set the standby budget, which is the amount of battery the user is allowed to drain during standby.
 You can also configure these settings using a custom provisioning package file for OEM images. For more information about powercfg, see [Powercfg command-line options](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
 ### Standby reserve time setting

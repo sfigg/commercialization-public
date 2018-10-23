@@ -135,3 +135,16 @@ To set the transparency for the Taskbar, create a registry key called “UseOLED
 
 > [!Important]
 > This registry key should only be used to change the taskbar transparency for OLED screens. We do not advise changing the default transparency on non-OLED displays.
+
+
+## <span id="action_center"></span>Action Center
+
+Most quick action tiles that are pinned in the Action Center are not customizable. You can, however, enable one of the desktop quick action tiles, **Color Profile**, if more than one color profile is installed on the device. To let users see Color Profile in the action center:
+
+1.	Install at least two ICC color profiles on the primary display. For more information on how to accomplish this, please work with your Microsoft representative. 
+
+2.	Add the following registry key to enable the Microsoft.QuickAction.ColorProfile quick action:
+`HKLM\Software\Microsoft\Shell\OEM\QuickActions|ColorProfileQuickAction` = 1
+
+3.	Add the following registry key to display the Microsoft.QuickAction.ColorProfile quick action. 
+`HKLM\Software\Microsoft\Shell\OEM\QuickActions\Microsoft.QuickAction.ColorProfile`

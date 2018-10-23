@@ -1,19 +1,19 @@
 ---
-title: Sensor Camera Driver Controls System Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_VideoRecording enum all
+title: Sensor Camera Driver Controls System Test - CAMERA_PROFILES - Verify KSCAMERAPROFILE_VideoRecording enum all
 description: Sensor Camera Driver Controls System Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_VideoRecording enum all
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: babd035c-8975-44ec-92be-35698f8d8434
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.5d0f37ef-efd4-4f8c-a9f4-f7e55f8c8f0e"></span>Sensor Camera Driver Controls System Test - CAMERA\_PROFILES - Verify KSCAMERAPROFILE\_VideoRecording enum all
+# Sensor Camera Driver Controls System Test - CAMERA_PROFILES - Verify KSCAMERAPROFILE_VideoRecording enum all
 
 
 Test to validate key user scenarios in the camera stack
@@ -21,9 +21,9 @@ Test to validate key user scenarios in the camera stack
 ## Test details
 |||
 |---|---|
-| **Specifications**  | <ul><li>System.Client.SensorCamera.Device</li></ul> |  
+| **Specifications**  | <ul><li>System.Client.Camera.SensorCapture.SensorCapture</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 15 |
 |**Category**| Scenario |
 |**Timeout (in minutes)**| 25 |
