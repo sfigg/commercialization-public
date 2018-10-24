@@ -83,6 +83,10 @@ which more accurately reflects the effects of a scenario than a working set.</p>
 <td><p>[Regions of Interest](regions-of-interest.md)</p></td>
 <td><p>Describes Regions of Interest, including how to create and apply them to a trace.</p></td>
 </tr>
+<tr class="odd">
+<td><p>[WPA Annotations](annotations.md)</p></td>
+<td><p>Describes how to annotate in WPA.</p></td>
+</tr>  
 </tbody>
 </table>
 
