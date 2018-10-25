@@ -212,7 +212,7 @@
 ###### [Big Picture](wpt/big-picture.md)
 ###### [Frame Analysis](wpt/frame-analysis.md)
 ##### [WPA Query Syntax](wpt/wpa-query-syntax.md)
-##### [WPT Annotations](wpt/annotations.md)
+##### [WPA Annotations](wpt/annotations.md)
 ##### [WPA User Interface](wpt/wpa-user-interface.md)
 ###### [Analysis Assistant](wpt/analysis-assistant.md)
 ###### [Classic versus Rich Menu](wpt/classic-versus-rich-menu.md)
