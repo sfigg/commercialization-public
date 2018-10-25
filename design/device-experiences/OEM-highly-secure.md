@@ -1,8 +1,8 @@
 ---
 title: Standards for a highly secure Windows 10 device
 description: This document provides guidance on the minimum standards for purchasing highly secure systems for Windows 10. 
-ms.author: dansimp
-ms.date: 03/07/2018
+ms.author: dawnwood
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -23,7 +23,8 @@ Beyond the hardware and firmware configurations outlined below, Microsoft recomm
 | Trusted Platform Module (TPM) | Systems must have a Trusted Platform Module (TPM), version 2.0, and meet the latest Microsoft requirements for the [Trusted Computing Group(TCG)](https://trustedcomputinggroup.org/) specification  | Intel (PTT), AMD, or discrete TPM from Infineon, STMicroelectronics, Nuvoton |
 | Platform boot verification | Systems must implement cryptographically verified platform boot | Intel Boot Guard in Verified Boot mode, or AMD Hardware Verified Boot, or an OEM equivalent mode with similar functionality |
 | RAM | Systems must have 8 gigabytes or more of system RAM |   |
-| HARD DRIVE | Systems must have SSD/NVME as the optimal disk drive config for perforamnce, experience and security  |   |
+| HARD DRIVE | Systems must have SSD/NVME as the optimal disk drive config for performance, experience and security  |   |
+
 ##Firmware
 | Feature | Requirement | Details |
 |---------|-------------|---------|
