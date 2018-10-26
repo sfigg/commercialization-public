@@ -401,7 +401,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </table>
 	
 
-**Note** When a device is on AC power, notifications of all priorities from UWP apps will be delivered. When a device is on DC power, only high priority and medium priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. For example, Inbox Mail app incoming mail notifications are low priority. For notifications that are delivered during Modern Standby, typically only toast notifications will turn on the display. Raw notifications could also turn on the display, depending on the type of payload they are delivering. For more information about UWP app notifications, please refer to [WNS Notification Priorities](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/wns-notification-priorities).
+**Note** When a device is on AC power, notifications of all priorities from UWP apps will be delivered. When a device is on DC power, high priority, medium priority, and low priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. For example, Inbox Mail app incoming mail notifications are low priority. For notifications that are delivered during Modern Standby, typically only toast notifications will turn on the display. Raw notifications could also turn on the display, depending on the type of payload they are delivering. For more information about UWP app notifications, please refer to [WNS Notification Priorities](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/wns-notification-priorities).
 
 To set an app as exempt, go to Settings > Battery > See which apps are affecting your battery life, select an app and uncheck the "Let Windows decide when this app can run in the background." To allow notifications from apps, ensure Settings > Notifications and Actions > Notifications > "Get notifications from apps and other senders" is enabled. 
 
@@ -614,26 +614,26 @@ To configure location services settings and see which apps are using geofencing,
 <tr class="odd">
 <td><p>Background upload/download of content</p></td>
 <td><p>Yes</p></td>
-<td><p>Yes</p></td>
+<td><p>No</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Inbox Mail app: mail sync</p></td>
 <td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
+<td><p>No, unless the app is exempt.</p></td>
+<td><p>See Note.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Inbox People app: contact sync</p></td>
 <td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
+<td><p>No, unless the app is exempt.</p></td>
+<td><p>See Note.</p></td>
 </tr>
 <tr class="even">
 <td><p>Inbox Calendar app: calendar sync</p></td>
 <td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p></p></td>
+<td><p>No, unless the app is exempt.</p></td>
+<td><p>See Note.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Sync with Bluetooth devices</p></td>
@@ -655,6 +655,10 @@ To configure location services settings and see which apps are using geofencing,
 </tr>
 </tbody>
 </table>
+
+**Note** When a device is on AC power, notifications of all priorities from UWP apps will be delivered. When a device is on DC power, high priority, medium priority, and low priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. For example, Inbox Mail app incoming mail notifications are low priority. For notifications that are delivered during Modern Standby, typically only toast notifications will turn on the display. Raw notifications could also turn on the display, depending on the type of payload they are delivering. For more information about UWP app notifications, please refer to [WNS Notification Priorities](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/wns-notification-priorities).
+
+To set an app as exempt, go to Settings > Battery > See which apps are affecting your battery life, select an app and uncheck the "Let Windows decide when this app can run in the background." To allow notifications from apps, ensure Settings > Notifications and Actions > Notifications > "Get notifications from apps and other senders" is enabled. 
 
 
 ### Audio
