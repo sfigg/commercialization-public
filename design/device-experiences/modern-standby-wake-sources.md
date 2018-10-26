@@ -450,7 +450,7 @@ To configure location services settings and see which apps are using geofencing,
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>The Windows power manager will turn on the display when the battery subsystem has indicated a power source change. The GPIO interrupt for power source changes must cause the ACPI _PSR method under the power supply device to be executed.</p>
-<p>The power subsystem must wake the SoC any time the power source changes, including when the system is attached or removed from a dock that has a battery or AC power source.</p></td>
+<p>The power subsystem must wake the SoC any time the power source changes, including when the system is attached or removed from a dock that has a battery or AC power source.</p> After the power source change, the display will remain on for five seconds, unless there is input to the system during this five-second window.</td>
 </tr>
 </tbody>
 </table>
