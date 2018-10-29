@@ -8,8 +8,8 @@ ms.assetid: 0E960F55-B1EA-4B9A-870D-DEB183AEBB08
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Pointer Device Design Guide

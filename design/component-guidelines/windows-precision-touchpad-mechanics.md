@@ -8,8 +8,8 @@ ms.assetid: 976BE39D-630E-4655-80D8-AD65D42E9E21
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 #  Mechanics

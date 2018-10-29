@@ -11,8 +11,8 @@ ms.assetid: 7ACC378F-C422-41E2-9622-60D770EB6FC8
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Power and battery user experience requirements

@@ -7,8 +7,8 @@ MSHAttr:
 ms.author: justinha
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Secure boot

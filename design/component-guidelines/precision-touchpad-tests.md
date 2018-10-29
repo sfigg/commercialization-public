@@ -8,8 +8,8 @@ ms.assetid: E3F782D3-AE33-422E-93A3-F4F14B09197F
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Precision Touchpad Tests

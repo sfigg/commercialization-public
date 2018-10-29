@@ -7,8 +7,8 @@ title: Factory Encrypted Drives
 ms.author: justinha
 ms.date: 06/18/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Factory Encrypted Drives

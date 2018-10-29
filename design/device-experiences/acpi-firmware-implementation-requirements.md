@@ -11,8 +11,8 @@ ms.assetid: BA1A0057-A246-4497-A861-1861AC42F90B
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # ACPI firmware implementation requirements

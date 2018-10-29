@@ -8,8 +8,8 @@ ms.assetid: 18245616-03ED-4660-81BC-AE14E1C28568
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Rules for Global Items

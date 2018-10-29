@@ -8,8 +8,8 @@ ms.assetid: 7AC803C9-EE9A-4244-82D9-D6C2357DACAE
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Required HID Top-Level Collections

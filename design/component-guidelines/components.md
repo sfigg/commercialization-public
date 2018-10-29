@@ -8,8 +8,8 @@ ms.assetid: 8C50DBFA-36F1-463E-9652-9BBCEBF198F7
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Hardware component guidelines

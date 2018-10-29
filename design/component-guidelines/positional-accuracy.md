@@ -8,8 +8,8 @@ ms.assetid: 4065138D-9136-4779-BCE1-1EB09DFBF169
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Positional Accuracy

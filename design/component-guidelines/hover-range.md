@@ -8,8 +8,8 @@ ms.assetid: 68C64C83-C871-4CF5-832B-033BEC9AADB2
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Hover Range

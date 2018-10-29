@@ -11,8 +11,8 @@ ms.assetid: 1E9C9B84-3A55-4409-A4AB-73FF7ECA4ED4
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Introduction to modern standby testing

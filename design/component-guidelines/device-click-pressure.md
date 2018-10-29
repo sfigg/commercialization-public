@@ -8,8 +8,8 @@ ms.assetid: 1694EA9F-0516-4822-8AA1-17302245EF3C
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Device Click Pressure

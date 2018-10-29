@@ -12,8 +12,8 @@ ms.assetid: DF846A45-BD05-4486-BC91-0340C648F4AA
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern standby SleepStudy

@@ -12,8 +12,8 @@ ms.assetid: 4DB2F090-A0AD-4167-8805-85930FEF926F
 ms.author: eliotgra
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern Standby wake sources

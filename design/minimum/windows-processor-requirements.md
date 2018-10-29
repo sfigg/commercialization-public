@@ -4,8 +4,8 @@ description: This specification details the processors that can be used with Cus
 ms.author: eliotgra
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Processor Requirements

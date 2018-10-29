@@ -6,8 +6,8 @@ author: dawnwood
 ms.author: dawnwood
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # What's new in Windows 10, version 1809
 

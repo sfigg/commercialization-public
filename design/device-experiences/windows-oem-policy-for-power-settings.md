@@ -11,8 +11,8 @@ ms.assetid: 1D781903-F1F1-4C02-B6FC-0F275A44B29A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows OEM policy for power settings

@@ -8,8 +8,8 @@ ms.assetid: 92EB481A-8B6D-4D93-B4DA-4372C7B9C6B1
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Desktop PC

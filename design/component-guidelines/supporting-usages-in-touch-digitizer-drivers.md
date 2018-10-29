@@ -12,8 +12,8 @@ keywords: Windows Touch WDK, touch digitizer driver, touch digitizer driver WDK 
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Supporting Usages in Touch Digitizer Drivers (Windows 7)

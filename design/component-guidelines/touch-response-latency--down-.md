@@ -8,8 +8,8 @@ ms.assetid: 76E06674-169C-4958-828D-90DC830D4DAA
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Touch Response Latency (Down)

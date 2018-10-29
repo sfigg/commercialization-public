@@ -8,8 +8,8 @@ ms.assetid: 3C1A242D-6A10-4833-86BE-C0BAB938A1A5
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 #  General Testing Guidelines

@@ -8,8 +8,8 @@ ms.assetid: 4B85A170-33C1-4C7E-9163-54D523AC8F62
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Pressure Motion

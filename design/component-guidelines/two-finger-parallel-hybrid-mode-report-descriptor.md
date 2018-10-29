@@ -8,8 +8,8 @@ ms.assetid: 84855212-A395-4585-AC45-1B53F93A568A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Two Finger Parallel/Hybrid Mode Report Descriptor

@@ -8,8 +8,8 @@ ms.assetid: 88DB0644-B23B-4ECB-99BC-8BC903D62602
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Active Pen Tests

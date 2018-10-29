@@ -7,8 +7,8 @@ author: dawnwood
 ms.author: dawnwood
 ms.date: 09/10/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Download and install the Windows ADK
 

@@ -12,8 +12,8 @@ keywords: Windows Touch WDK, Windows Touch WDK, using report descriptors for cap
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Using Report Descriptors to Support Capability Discovery (Windows 7)

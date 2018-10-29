@@ -8,8 +8,8 @@ ms.assetid: 0C940D77-EBD0-4670-9FDD-55DFA7B8B437
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Notebook

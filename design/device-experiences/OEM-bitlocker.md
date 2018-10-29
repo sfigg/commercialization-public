@@ -7,8 +7,8 @@ MSHAttr:
 ms.author: justinha
 ms.date: 06/28/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # BitLocker drive encryption in Windows 10 for OEMs

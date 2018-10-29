@@ -7,8 +7,8 @@ MSHAttr:
 ms.author: justinha
 ms.date: 09/29/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Security considerations for Original Equipment Manufacturers (OEMs)
 

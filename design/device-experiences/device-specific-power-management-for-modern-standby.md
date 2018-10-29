@@ -11,8 +11,8 @@ ms.assetid: 1BDF0EC0-1BB2-4AFE-83A7-4481BD9AAC1F
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Device-specific power management for modern standby

@@ -5,8 +5,8 @@ ms.assetid: 13190D01-CE26-41E5-9B87-836E2917EBD7
 ms.author: eliotgra
 ms.date: 04/29/2015
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # V4 print driver improvements

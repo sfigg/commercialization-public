@@ -8,8 +8,8 @@ ms.assetid: F42F1F0D-918D-43FC-8030-2B686AAC4B16
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Precision Touchpad Collection
