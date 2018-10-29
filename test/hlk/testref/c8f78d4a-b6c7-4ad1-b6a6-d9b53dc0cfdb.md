@@ -10,8 +10,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Camera Driver Controls Device Test - CAMERA_PROFILES - Verify KSCAMERAPROFILE_CUSTOM enum all, photo and preview

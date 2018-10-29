@@ -8,8 +8,8 @@ ms.assetid: 79BE72BB-708D-4EA9-A0F0-59D93016A7C4
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Exercise 4 - Use MXA to Analyze Audio Glitches

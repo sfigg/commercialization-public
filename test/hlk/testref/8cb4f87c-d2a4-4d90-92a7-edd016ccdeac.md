@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.8cb4f87c-d2a4-4d90-92a7-edd016ccdeac"></span>LoadGen Server Stress - Run Last - Reset Machine Policies

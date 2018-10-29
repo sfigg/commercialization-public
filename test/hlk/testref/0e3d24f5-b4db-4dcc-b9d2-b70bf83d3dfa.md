@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.0e3d24f5-b4db-4dcc-b9d2-b70bf83d3dfa"></span>Camera Driver System Test - MediaCapture - ValidateSceneModeControlSupportedScenarios

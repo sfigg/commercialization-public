@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.a2e0db44-2ac8-49fb-bf5a-fe321bbfc1a2"></span>Present Validation 2 (FullScreen) (WoW64)

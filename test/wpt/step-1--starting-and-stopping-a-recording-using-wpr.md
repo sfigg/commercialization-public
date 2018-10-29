@@ -8,8 +8,8 @@ ms.assetid: 0258356d-20f7-4778-bad1-625e3bfc82c1
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Step 1. Starting and Stopping a Recording in WPR

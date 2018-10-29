@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.4e35cd21-a1dd-4cfa-be2d-1a9c9d6a1fef"></span>USB Device Connection S3+S4+Connected Standby

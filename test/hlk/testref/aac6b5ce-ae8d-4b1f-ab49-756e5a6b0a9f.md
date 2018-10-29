@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.aac6b5ce-ae8d-4b1f-ab49-756e5a6b0a9f"></span>Auto Generation of Mip Maps

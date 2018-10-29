@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.1ee9439d-57ad-475b-ba5b-1bc4ecbf2c0a"></span>iSCSI Boot Firmware Table Test (LOGO)

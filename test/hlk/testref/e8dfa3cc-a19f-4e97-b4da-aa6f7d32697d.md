@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.e8dfa3cc-a19f-4e97-b4da-aa6f7d32697d"></span>OPM - Protocol Test (WoW64)

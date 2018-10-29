@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.fbcd81c7-5f9d-4bad-b5b3-5dfbb8eb78f5"></span>Pixel Shaders Ver 2.0 Landscape - Starburst (WoW64)

@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.bebf5a21-2e65-4e1b-8e78-badcbb36ba46"></span>WDDM2 - Memory Budget Test - Trim To Budget 9 Test

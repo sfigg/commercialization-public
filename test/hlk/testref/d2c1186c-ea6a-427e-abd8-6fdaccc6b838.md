@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.d2c1186c-ea6a-427e-abd8-6fdaccc6b838"></span>Barometer Sensor Data Fields Verification Test

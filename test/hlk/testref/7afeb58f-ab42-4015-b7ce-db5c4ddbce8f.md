@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.7afeb58f-ab42-4015-b7ce-db5c4ddbce8f"></span>D3D12 - Resource Binding - Shader Resource Visibility

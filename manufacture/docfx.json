@@ -31,8 +31,8 @@
 	    "uhfHeaderId": "MSDocsHeader-WinHW",
         "breadcrumb_path": "/windows-hardware/manufacture/breadcrumbs/toc.json",
 		"searchScope": ["OEM"]
-		"ms.prod” : “windows-hardware"
-		"ms.technology” : “windows-oem"
+		"ms.prod": "windows-hardware"
+		"ms.technology": "windows-oem"
 	},
     "fileMetadata": {},
     "template": [],

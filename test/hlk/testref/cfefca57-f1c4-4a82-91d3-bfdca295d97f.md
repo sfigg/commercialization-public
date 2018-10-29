@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.cfefca57-f1c4-4a82-91d3-bfdca295d97f"></span>Camera Driver Controls System Test - FLASHMODE - Check Default

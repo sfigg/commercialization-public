@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.9ebb8466-c491-44cf-8dbc-7c5b8bebbef3"></span>Test CreateSwapChainForHwnd (WoW64)

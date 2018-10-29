@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.e3d5d17a-a0af-4ef2-9d8f-7c30ecea6e1a"></span>NVMe Deallocate Performance Test (LOGO)

@@ -9,8 +9,8 @@ keywords:
 ms.author: eliotgra
 ms.date: 1/10/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # HMD Exerciser Kit Quick Start Guide

@@ -10,8 +10,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.df0dcae8-1cba-4a6e-bf76-ada494830aa1"></span>Camera Sensor Quality Test - Evaluate Temporal SNR at 640x480 and 20 lux

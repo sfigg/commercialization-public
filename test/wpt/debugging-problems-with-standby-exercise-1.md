@@ -8,8 +8,8 @@ ms.assetid: FEC9383F-3643-4CF3-82FA-34FD6C535483
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Exercise 1 - Identify Problems with Spurious Wakes

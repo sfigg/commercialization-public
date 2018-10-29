@@ -9,8 +9,8 @@ author: alsepkow
 ms.author: alsepkow
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DXVA Testing Prerequisites

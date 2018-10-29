@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.f4a2baf2-c3d3-4b1a-9e85-6cd2da2efd09"></span>Sensor Camera Driver Controls System Test - FOCUSSTATE - Verify Default setting - Record Video

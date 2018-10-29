@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.0a737ffb-cbd2-41cd-a596-b939fbddc9ec"></span>Wlan Test - Connect to a WPA2 PSK AES AP with Sleep cycle - (WoW64 for ARM64)

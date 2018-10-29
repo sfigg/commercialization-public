@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.308aadee-b853-4f0b-aafd-d0dee1a1af2d"></span>D3D12 - Resource Binding - Graphics deferred descriptor editing test.

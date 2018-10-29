@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.b6eac706-ccc4-4ddc-9feb-286ed87fc34e"></span>Camera Driver Test - UVC Test 3

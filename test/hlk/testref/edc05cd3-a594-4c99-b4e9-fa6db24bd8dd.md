@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.edc05cd3-a594-4c99-b4e9-fa6db24bd8dd"></span>Camera Driver Performance Test - Validate video preview and video record timestamps at high resolution for photo
