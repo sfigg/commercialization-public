@@ -81,7 +81,7 @@ destinationDir must start with:
 - $(runtime.sharedData)
 - $(runtime.apps)
 - $(runtime.clipAppLicenseInstall)
-- If not specifed, the default is $(runtime.system32) 
+- If not specified, the default is $(runtime.system32) 
 
 To see the directories that map to these locations, see C:\Program Files (x86)\Windows Kits\10\tools\bin\i386\pkggen.cfg.xml.
 
