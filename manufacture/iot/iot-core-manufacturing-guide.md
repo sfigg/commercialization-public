@@ -13,6 +13,10 @@ ms.technology: windows-oem
 
 # IoT Core manufacturing guide
 
+> [!NOTE]
+> For older version, see [
+IoT Core manufacturing guide for v5.x](https://github.com/ms-iot/iot-adk-addonkit/blob/17134/Docs/iot-core-manufacturing-guide.md#iot-core-manufacturing-guide-for-v5x).
+
 Thinking about mass-producing devices running Windows 10 IoT Core? Use the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md) to create images that you can quickly flash onto new devices. 
 
 You can create **test images**, which include tools for quickly accessing and modifying devices. Test images are great for:
@@ -80,7 +84,7 @@ You'll list which of the features to add by using these tags:
 -   &lt;BasePackages&gt;: Packages that you always included in your images, for example, your base app.
 -   &lt;Features&gt;\\&lt;OEM&gt;: Other individual packages that might be specific to a particular product design.
 
-The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. Run this tool whenever any changes are made to the FM files. After you change OEM FM or OEM COMMON FM files, run `Buildfm oem`. After you change bspfm files, run `buildfm bsp <bspname>`.
+The Feature Merger tool generates the required feature identifier packages that are required for servicing the device. This tool is invoked during image creation. You can manually run this after you change OEM FM or OEM COMMON FM files (run `Buildfm oem`) or after you change bspfm files (run `buildfm bsp <bspname>`).
 
 
 ### <span id="Creating_the_image__ImgGen_and_the_image_configuration_file__OEMInput.xml_"></span><span id="creating_the_image__imggen_and_the_image_configuration_file__oeminput.xml_"></span><span id="CREATING_THE_IMAGE__IMGGEN_AND_THE_IMAGE_CONFIGURATION_FILE__OEMINPUT.XML_"></span>Creating the image: ImgGen and the image configuration file (OEMInput.xml)
@@ -131,9 +135,9 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 ## <span id="related_topics"></span>Related topics
 
-[Build a prototype](https://developer.microsoft.com/windows/iot/getstarted/prototype/selectdevice)
+[Build a prototype](https://docs.microsoft.com/windows/iot-core/getstarted)
 
-[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore)
+[Learn about Windows 10 IoT Core](https://docs.microsoft.com/windows/iot-core/windows-iot-core)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
 
@@ -141,5 +145,5 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 [IoT Core feature list](iot-core-feature-list.md)
 
-[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)
+[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)
 

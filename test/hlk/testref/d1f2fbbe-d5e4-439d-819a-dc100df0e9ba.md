@@ -6,8 +6,8 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 412f6b71-5081-4b75-abdf-07f7cf04ceef
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -35,7 +35,7 @@ If you are running this test as a part of a Storage RAID Hardware-based RAID (St
 |---|---|
 | **Specifications**  | <ul><li>Device.Storage.Hd.ScsiProtocol.SpcCompliance</li><li>Device.Storage.Controller.Raid.BasicFunction</li><li>Device.Storage.Hd.ScsiProtocol.ReferenceSpec</li><li>Device.Storage.Hd.ScsiProtocol.SamCompliance</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 5 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 300 |

@@ -1,19 +1,19 @@
 ---
-title: NDISTest 6.5 - \ 2 Machine\ - Stats
+title: NDISTest 6.5 - \2 Machine\ - Stats
 description: NDISTest 6.5 - \ 2 Machine\ - Stats
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc816554-cfb8-4408-b68b-b2f1831231c9
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.9fd80de7-eaf5-4ca6-bc4e-877eb0ea3e08"></span>NDISTest 6.5 - \[2 Machine\] - Stats
+# NDISTest 6.5 - \[2 Machine\] - Stats
 
 
 For NDIS 6.0 miniports, this test verifies that miniport maintains and report statistics from OID\_GEN\_STATISTICS correctly. The test also verifies that the miniport correctly supports statistics OIDs OID\_GEN\_RCV\_OK OID\_GEN\_RCV\_NO\_BUFFER OID\_GEN\_RCV\_ERROR. It sends a bunch of packets to the test adapter and checks that the statistics get incremented. It expects the OID\_GEN\_RCV\_NO\_BUFFER to incremented exactly by the number of packets that were dropped.
@@ -23,7 +23,7 @@ For NDIS 6.0 miniports, this test verifies that miniport maintains and report st
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.Base.NDISRequirements</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 600 |

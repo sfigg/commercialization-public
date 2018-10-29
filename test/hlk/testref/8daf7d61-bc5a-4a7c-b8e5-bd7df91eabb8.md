@@ -1,19 +1,19 @@
 ---
-title: D3D12 - Simple Split Barrier Validation
+title: D3D12 - Debug Layer GBV - Simple Split Barrier Validation
 description: D3D12 - Simple Split Barrier Validation
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b20275c-b0ca-406a-abd0-d5b5cfcd3889
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.8daf7d61-bc5a-4a7c-b8e5-bd7df91eabb8"></span>D3D12 - Simple Split Barrier Validation
+# D3D12 - Debug Layer GBV - Simple Split Barrier Validation
 
 
 Simple Test - Debug layer catches resource split barrier transition errors.
@@ -23,7 +23,7 @@ Simple Test - Debug layer catches resource split barrier transition errors.
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.D3D12Core.CoreRequirement</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows Server 2016 (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 2 |
 |**Category**| Development |
 |**Timeout (in minutes)**| 20 |

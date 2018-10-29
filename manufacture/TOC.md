@@ -353,7 +353,7 @@
 #### [OEM License Requirements](iot/license-requirements.md)
 #### [Create and install packages](iot/create-install-package.md)
 #### [Windows 10 IoT Core Services](iot/IoTCoreServicesOverview.md)
-#### [Frequently Asked Questions](iot/CommercializationFAQ.md)
+#### [Commercialization FAQ](iot/CommercializationFAQ.md)
 
 ### [IoT Core manufacturing guide](iot/iot-core-manufacturing-guide.md)
 #### [Overview](iot/iot-core-manufacturing-guide.md)
@@ -372,8 +372,9 @@
 ### [OS Customizations](iot/OSCustomizations.md)
 ### [IoT Core feature list](iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](iot/iot-core-adk-addons.md)
-### [IoT Core Add-ons command-line options](iot/iot-core-adk-addons-command-line-options.md)
+### [IoT Core Add-ons Powershell Commands](iot/iot-core-adk-addons-command-line-options.md)
 ### [Update the time server](iot/update-the-time-server.md)
+### [Add a recovery mechanism](iot/recovery-mechanism.md)
 ### [Troubleshooting](iot/Troubleshooting.md)
 
 ### [Create Windows Universal OEM Packages](iot/create-packages.md)

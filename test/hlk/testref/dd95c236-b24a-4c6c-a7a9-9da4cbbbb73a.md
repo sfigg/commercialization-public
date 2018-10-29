@@ -1,19 +1,19 @@
 ---
-title: ReadAllMifareCL1k
+title: NFC Smartcard - Read All (MifareClassic1k)
 description: ReadAllMifareCL1k
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30f277da-d528-4cde-96f5-96be6cd8fd1a
 author: EliotSeattle
-ms.author: EliotSeattle
-ms.date: 10/15/2017
+ms.author: eliotgra
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# <span id="p_hlk_test.dd95c236-b24a-4c6c-a7a9-9da4cbbbb73a"></span>ReadAllMifareCL1k
+# NFC Smartcard - Read All (MifareClassic1k)
 
 
 Verify that we can read every block of a Mifare Classic 1k card.
@@ -23,7 +23,7 @@ Verify that we can read every block of a Mifare Classic 1k card.
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.NFC.SmartCard.DataExchange</li></ul> |  
 | **Platforms**   | <ul><li>Windows 10, client editions (x86)</li><li>Windows 10, client editions (x64)</li><li>Windows 10, client editions (ARM64)</li><li>Windows 10, mobile edition (ARM)</li><li>Windows 10, mobile edition (ARM64)</li></ul> |
-| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li></ul> |
+| **Supported Releases** | <ul><li>Windows 10</li><li>Windows 10, version 1511</li><li>Windows 10, version 1607</li><li>Windows 10, version 1703</li><li>Windows 10, version 1709</li><li>Windows 10, version 1803</li><li>Next update to Windows 10</li></ul> |
 |**Expected run time (in minutes)**| 10 |
 |**Category**| Compatibility |
 |**Timeout (in minutes)**| 20 |
