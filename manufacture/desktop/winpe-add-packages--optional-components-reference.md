@@ -7,8 +7,8 @@ title: 'WinPE: Add packages (Optional Components Reference)'
 ms.author: kenpacq
 ms.date: 05/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinPE Optional Components (OC) Reference

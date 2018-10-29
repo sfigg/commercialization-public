@@ -7,8 +7,8 @@ title: 'WinPE: Create bootable media'
 ms.author: kenpacq
 ms.date: 04/24/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Create bootable WinPE media

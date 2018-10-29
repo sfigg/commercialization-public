@@ -7,8 +7,8 @@ title: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)

@@ -7,8 +7,8 @@ title: OEM deployment guides and Walkthroughs for Windows 10
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # OEM deployment guides and walkthroughs for Windows 10

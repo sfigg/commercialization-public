@@ -7,8 +7,8 @@ title: 'Adding Wi-Fi manufacturing test support to the OID interface'
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Adding Wi-Fi manufacturing test support to the OID interface

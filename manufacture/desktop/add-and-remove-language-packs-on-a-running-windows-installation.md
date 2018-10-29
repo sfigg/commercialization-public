@@ -8,8 +8,8 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add and remove language packs on a running Windows installation

@@ -7,8 +7,8 @@ title: 'Windows ADK IoT Core Add-ons: contents'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows ADK IoT Core Add-ons: contents

@@ -6,8 +6,8 @@ title: 'Lab 11: Add Start tiles and taskbar pins'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout
 ---
 

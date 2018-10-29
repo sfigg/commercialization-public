@@ -7,8 +7,8 @@ title: Manage IoT Core device updates
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Manage IoT Core device updates

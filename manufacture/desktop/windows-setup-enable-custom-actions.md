@@ -6,8 +6,8 @@ title: Run custom actions during a feature update
 ms.author: kenpacq
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Run custom actions during feature update

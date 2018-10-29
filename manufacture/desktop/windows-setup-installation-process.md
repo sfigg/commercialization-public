@@ -7,8 +7,8 @@ title: Windows Setup Installation Process
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Setup Installation Process

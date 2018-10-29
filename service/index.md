@@ -5,8 +5,8 @@ ms.assetid: 02f0c0e5-0964-4fdc-ba42-e22ff2ef6191
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Service

@@ -7,8 +7,8 @@ title: 'Download WinPE (Windows PE)'
 ms.author: kenpacq
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Download WinPE (Windows PE)

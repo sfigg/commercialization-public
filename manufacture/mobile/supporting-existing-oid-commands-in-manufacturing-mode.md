@@ -7,8 +7,8 @@ title: Supporting existing OID commands in manufacturing mode
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Supporting existing OID commands in manufacturing mode

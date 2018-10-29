@@ -8,8 +8,8 @@ ms.assetid: d0594281-56f4-4676-9d00-19b6910ab50f
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Update packages on a device and get package update logs

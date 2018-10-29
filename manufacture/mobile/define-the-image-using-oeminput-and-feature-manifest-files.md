@@ -8,8 +8,8 @@ ms.assetid: A3E05C3B-450D-4AFD-8368-241EAB7F8036
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Define the image using OEMInput and feature manifest files

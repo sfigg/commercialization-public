@@ -8,8 +8,8 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinPE: Boot in UEFI or legacy BIOS mode

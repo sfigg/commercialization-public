@@ -7,8 +7,8 @@ title: Windows Setup Log Files and Event Logs
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Setup Log Files and Event Logs

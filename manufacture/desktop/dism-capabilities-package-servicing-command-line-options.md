@@ -7,8 +7,8 @@ title: 'DISM Capabilities Package Servicing Command-Line Options'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="dism_capabilities_package_servicing_command-line_options"></span>DISM Capabilities Package Servicing Command-Line Options

@@ -7,8 +7,8 @@ title: 'WinPE Network Drivers: Initializing and adding drivers'
 ms.author: kenpacq
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinPE Network Drivers: Initializing and adding drivers

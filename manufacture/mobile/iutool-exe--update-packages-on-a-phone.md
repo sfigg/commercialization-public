@@ -8,8 +8,8 @@ ms.assetid: 29B7436A-1F6E-41AF-BBBD-5FBB59669B77
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IUTool.exe: Update packages on a device

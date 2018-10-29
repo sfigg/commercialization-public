@@ -6,8 +6,8 @@ title: 'Language and region Features on Demand'
 ms.author: kenpacq
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Language and region Features on Demand

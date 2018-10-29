@@ -6,8 +6,8 @@ title: 'Lab 6: Add universal Windows apps and taskbar pins'
 ms.author: kenpacq
 ms.date: 10/16/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/preinstall-apps-using-dism
 ---
 

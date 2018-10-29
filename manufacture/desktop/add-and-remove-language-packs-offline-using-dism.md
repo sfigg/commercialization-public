@@ -7,8 +7,8 @@ title: Add and Remove Language Packs Offline Using DISM
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add languages to Windows

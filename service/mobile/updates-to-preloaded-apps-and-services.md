@@ -7,8 +7,8 @@ title: Updates to preloaded apps and services
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Updates to preloaded apps and services

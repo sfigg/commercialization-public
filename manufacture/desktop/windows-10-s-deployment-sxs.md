@@ -6,8 +6,8 @@ title: 'Windows 10 in S mode deployment lab'
 ms.author: kenpacq
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows 10 in S mode deployment lab

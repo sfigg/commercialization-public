@@ -7,8 +7,8 @@ title: Capture Images of Hard Disk Partitions Using DISM
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Capture Images of Hard Disk Partitions Using DISM

@@ -5,8 +5,8 @@ title: 'Deploy push-button reset features with auto-apply folders'
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Deploy push-button reset features using Auto-apply folders

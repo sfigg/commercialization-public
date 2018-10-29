@@ -7,8 +7,8 @@ title: Maintain Driver Configurations when Capturing a Windows Image
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Maintain Driver Configurations when Capturing a Windows Image

@@ -7,8 +7,8 @@ title: Windows Secure Boot Key Creation and Management Guidance
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Secure Boot Key Creation and Management Guidance

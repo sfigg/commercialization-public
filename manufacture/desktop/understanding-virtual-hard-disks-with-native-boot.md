@@ -8,8 +8,8 @@ redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desk
 ms.author: kenpacq
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Understanding Virtual Hard Disks with Native Boot

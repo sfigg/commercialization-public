@@ -7,8 +7,8 @@ title: 'Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk

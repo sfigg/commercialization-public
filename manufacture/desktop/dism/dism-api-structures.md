@@ -5,8 +5,8 @@ ms.assetid: ff482a60-4027-49c2-9954-8c62ea03ee6c
 ms.author: kenpacq
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM API Structures

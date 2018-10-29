@@ -6,8 +6,8 @@ title: 'Update a recovery image'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-push-button-reset-features
 ---
 # Update a recovery image

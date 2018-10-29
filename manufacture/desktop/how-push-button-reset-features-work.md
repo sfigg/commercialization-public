@@ -7,8 +7,8 @@ title: 'How push-button reset features work'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="How_push-button_reset_features_work"></span>How push-button reset features work

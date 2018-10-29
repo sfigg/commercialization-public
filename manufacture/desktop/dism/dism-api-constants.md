@@ -5,8 +5,8 @@ ms.assetid: 4d4c29eb-aa68-496f-a4d4-4d8ff1e389ba
 ms.author: kenpacq
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM API Constants
