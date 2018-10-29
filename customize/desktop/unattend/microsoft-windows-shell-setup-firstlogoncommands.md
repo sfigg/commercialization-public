@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # FirstLogonCommands
 

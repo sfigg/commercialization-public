@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_customize_converged.disk_settings_link_power_management_mode_-_hipm_dipm"></span>Link power management mode - HIPM/DIPM

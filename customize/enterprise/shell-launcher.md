@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 06/07/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Shell Launcher
 

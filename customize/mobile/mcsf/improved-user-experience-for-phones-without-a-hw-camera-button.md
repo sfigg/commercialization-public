@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Improved user experience for phones without a HW camera button
