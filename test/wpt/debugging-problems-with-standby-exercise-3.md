@@ -8,8 +8,8 @@ ms.assetid: 7D11B22F-38A4-4764-B2B0-1AA05D779E0C
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Exercise 3 - Identify Problems with Missing Constraints

@@ -5,8 +5,8 @@ ms.assetid:
 ms.author: eliotgra
 ms.date:
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Hardware requirements and vendor information

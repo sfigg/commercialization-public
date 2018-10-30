@@ -6,8 +6,8 @@ title: Prepare a PC
 ms.author: kenpacq
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Prepare a PC

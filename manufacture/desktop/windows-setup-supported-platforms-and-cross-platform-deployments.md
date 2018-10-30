@@ -7,8 +7,8 @@ title: 'Windows Setup Supported Platforms and Cross-Platform Deployments'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Setup Supported Platforms and Cross-Platform Deployments

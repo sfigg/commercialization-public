@@ -11,8 +11,8 @@ ms.assetid: 848A53F5-1FDD-4B2F-B823-B96DE2FCED94
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Transition from idle to active

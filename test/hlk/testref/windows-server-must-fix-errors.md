@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.windows_server_must-fix_errors"></span>Windows Server Must-Fix Code Analysis and Static Driver Verifier Errors affecting Network and Storage Adapter Vendors

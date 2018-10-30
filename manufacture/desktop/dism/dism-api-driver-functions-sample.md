@@ -5,8 +5,8 @@ ms.assetid: 34d6a3e4-240b-4b68-b8d6-48cb6678482d
 ms.author: kenpacq
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM API Driver Functions Sample

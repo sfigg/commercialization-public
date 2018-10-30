@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.a1fb1fda-1fc1-41de-9626-bf88defeb746"></span>File IO 2 Tests

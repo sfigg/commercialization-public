@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.9ab8f8b7-7d5f-4cca-bfd6-a768b74cb41b"></span>Indirect Display Pnp Stop-Start Indirect Display Adapter

@@ -7,8 +7,8 @@ title: 'DISM Overview'
 ms.author: kenpacq
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM Overview

@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.b687537f-bbd2-40d7-bc43-ddd9bde29dcf"></span>Present Validation 2 - Present

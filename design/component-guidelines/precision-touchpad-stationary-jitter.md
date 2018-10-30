@@ -8,8 +8,8 @@ ms.assetid: 9DBBB7DC-DB75-412F-82F0-14107DB94985
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Stationary Jitter

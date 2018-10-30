@@ -11,8 +11,8 @@ ms.assetid: 6FB6C103-A531-4CF6-92C6-3E6917BA9129
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IOCTL\_THERMAL\_READ\_TEMPERATURE

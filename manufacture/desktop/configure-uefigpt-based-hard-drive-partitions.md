@@ -7,8 +7,8 @@ title: 'UEFI/GPT-based hard drive partitions'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # UEFI/GPT-based hard drive partitions

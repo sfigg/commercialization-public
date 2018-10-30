@@ -8,8 +8,8 @@ ms.assetid: 326F7135-31E4-4A1F-BC20-72795AFA1894
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Five Point Minimum

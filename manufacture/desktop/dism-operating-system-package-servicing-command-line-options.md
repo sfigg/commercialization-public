@@ -7,8 +7,8 @@ title: 'DISM Operating System Package (.cab or .msu) Servicing Command-Line Opti
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM Operating System Package (.cab or .msu) Servicing Command-Line Options

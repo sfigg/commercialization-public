@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.dbea3fce-5776-4660-9b89-ccfebbdf88e2"></span>Texture Formats 2-10-10-10 (WoW64)

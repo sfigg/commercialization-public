@@ -7,8 +7,8 @@ MSHAttr:
 ms.author: dawnwood
 ms.date: 07/19/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Hello: Steps to submit a fingerprint driver

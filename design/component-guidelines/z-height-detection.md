@@ -8,8 +8,8 @@ ms.assetid: 06568B54-C2ED-44AD-A820-4E889D25EFBF
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Z-Height Detection

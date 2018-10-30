@@ -8,8 +8,8 @@ ms.assetid: 418FB0E0-AF18-42F8-8011-5032B18A99E5
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Device Integration

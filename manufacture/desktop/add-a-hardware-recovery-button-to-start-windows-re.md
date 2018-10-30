@@ -7,8 +7,8 @@ title: Add a hardware recovery button to start Windows RE
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add a hardware recovery button to start Windows RE

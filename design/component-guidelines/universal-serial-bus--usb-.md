@@ -8,8 +8,8 @@ ms.assetid: 0B06C746-9B84-4B0B-AAB7-3BF837C8305D
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Universal Serial Bus (USB)

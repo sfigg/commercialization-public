@@ -8,8 +8,8 @@ ms.author: kenpacq
 redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-start-layout
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Customize the Start Screen

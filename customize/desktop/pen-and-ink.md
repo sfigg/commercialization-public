@@ -8,8 +8,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Customize Windows Pen and Ink
 

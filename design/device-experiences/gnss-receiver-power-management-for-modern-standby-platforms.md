@@ -11,8 +11,8 @@ ms.assetid: 7808A80E-FC76-4518-B320-C10D1720265A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # GNSS receiver power management for modern standby platforms

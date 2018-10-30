@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.d7b43caa-9289-40dd-8ed2-bfce9eabe356"></span>DF - Fuzz sub-opens with streams test (Reliability)

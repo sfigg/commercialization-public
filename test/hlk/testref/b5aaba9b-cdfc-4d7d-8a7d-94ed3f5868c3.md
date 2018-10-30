@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.b5aaba9b-cdfc-4d7d-8a7d-94ed3f5868c3"></span>LAN CS Test - IPv4 Basic

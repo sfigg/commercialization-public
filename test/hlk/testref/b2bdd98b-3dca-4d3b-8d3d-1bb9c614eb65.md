@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.b2bdd98b-3dca-4d3b-8d3d-1bb9c614eb65"></span>TPM 2.0 - Required Security Patches Tests

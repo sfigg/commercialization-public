@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.44d7d1cb-2eb4-4fb6-8fc8-3c7fcc953aff"></span>Multistream Rendering (WoW64)

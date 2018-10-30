@@ -8,8 +8,8 @@ ms.assetid: 47dd67f5-e980-4bb0-a17b-2e4aa241b752
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Results for the Edge Security Software Impact assessment

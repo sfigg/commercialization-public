@@ -11,8 +11,8 @@ ms.assetid: a66a2ba1-a7e0-420d-9a0e-b93f9d5c7af5
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WacomKMDF Driver

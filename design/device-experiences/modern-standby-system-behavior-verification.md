@@ -8,8 +8,8 @@ ms.assetid: 257CF09C-191E-4086-B96D-8EE7BD34682A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern Standby system behavior verification

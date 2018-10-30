@@ -8,8 +8,8 @@ ms.assetid: 9F7346F3-688F-4DB7-B535-1A4A86DEB3B4
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Build a mobile image using Windows ICD

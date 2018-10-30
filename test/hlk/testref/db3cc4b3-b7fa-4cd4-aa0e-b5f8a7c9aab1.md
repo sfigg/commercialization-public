@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.db3cc4b3-b7fa-4cd4-aa0e-b5f8a7c9aab1"></span>Assessment - Internet Explorer Startup Performance

@@ -11,8 +11,8 @@ ms.assetid: 807B1820-537A-4384-914C-1A8CD048B1B4
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Turning off

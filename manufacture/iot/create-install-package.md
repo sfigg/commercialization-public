@@ -7,8 +7,8 @@ title: 'Create and Install a Package'
 ms.author: pabab
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 

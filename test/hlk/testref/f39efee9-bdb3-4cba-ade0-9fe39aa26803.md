@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.f39efee9-bdb3-4cba-ade0-9fe39aa26803"></span>Camera Driver Test - Preview (Sample Grabber), Capture JPEGXR image from each image Stream type

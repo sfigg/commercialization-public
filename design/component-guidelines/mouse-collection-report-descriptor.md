@@ -8,8 +8,8 @@ ms.assetid: B8188BBD-49A3-4C83-8C76-EA308674C8D6
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Mouse Collection Report Descriptor

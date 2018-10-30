@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.e24cdda3-c9d0-424b-99dc-dfaca63bc992"></span>MTP Compliance Test - Core - Miscellaneous

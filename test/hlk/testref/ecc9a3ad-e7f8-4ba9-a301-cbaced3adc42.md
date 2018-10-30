@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.ecc9a3ad-e7f8-4ba9-a301-cbaced3adc42"></span>Sensor Camera Driver Controls System Test - WHITEBALANCEMODE - Check Default

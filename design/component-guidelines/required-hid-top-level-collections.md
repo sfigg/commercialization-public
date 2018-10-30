@@ -8,8 +8,8 @@ ms.assetid: ACE6180A-BBDF-4E6E-95F8-550A6CED74C2
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Required HID Top-Level Collections

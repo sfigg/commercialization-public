@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.3bbeb881-56dd-4e92-a075-a6efcdf8d5ad"></span>Camera Driver Controls System Test - VIDEOHDR - verify with profiles

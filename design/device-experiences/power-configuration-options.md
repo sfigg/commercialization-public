@@ -8,8 +8,8 @@ ms.assetid: 05413261-B2B5-4987-81C2-A853C61BBA92
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Power configuration options

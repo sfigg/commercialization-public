@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Unbranded Boot
 

@@ -7,8 +7,8 @@ title: 'Test an appx file on an IoT device'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="TEST_AN_APPX_FILE_ON_AN_IOT_DEVICE"></span>Test an appx file on an IoT device

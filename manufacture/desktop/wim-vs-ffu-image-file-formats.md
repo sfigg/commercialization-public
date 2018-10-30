@@ -6,8 +6,8 @@ title: 'WIM vs. VHD vs. FFU: comparing image file formats'
 ms.author: kenpacq
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WIM vs. VHD vs. FFU: comparing image file formats

@@ -5,8 +5,8 @@ title: 'OS Customizations'
 ms.author: pabab
 ms.date: 08/28/18
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # OS Customizations for OEM

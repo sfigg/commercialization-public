@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.cf263cac-25cd-46cb-aea8-4c8895e4df9c"></span>D2D - DImage Effect Tests - 3DTransform

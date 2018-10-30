@@ -7,8 +7,8 @@ title: Windows Setup Scenarios and Best Practices
 ms.author: kenpacq
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Setup Scenarios and Best Practices

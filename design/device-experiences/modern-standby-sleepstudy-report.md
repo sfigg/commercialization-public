@@ -11,8 +11,8 @@ ms.assetid: FC47163A-2089-4307-9AE7-020766656855
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern standby SleepStudy report

@@ -7,8 +7,8 @@ title: 'Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu'
 ms.author: kenpacq
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Boot to a virtual hard disk: Add a VHDX or VHD to the boot menu

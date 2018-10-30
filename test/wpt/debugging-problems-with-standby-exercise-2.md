@@ -8,8 +8,8 @@ ms.assetid: D3CF7AED-D3AF-4736-A7B7-E8E3C5839ED1
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Exercise 2 - Identify Problems with Missing Drivers

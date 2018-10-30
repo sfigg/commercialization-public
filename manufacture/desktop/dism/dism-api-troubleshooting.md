@@ -5,8 +5,8 @@ ms.assetid: 5fae3967-87d7-4e80-8b52-15a9a38f592f
 ms.author: kenpacq
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM API Troubleshooting

@@ -11,8 +11,8 @@ ms.assetid: 84913F47-2EA6-4E67-A969-B66FB8EA125E
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Power and charging subsystem implementation

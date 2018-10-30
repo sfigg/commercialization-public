@@ -7,8 +7,8 @@ title: Add Multilingual Support to Windows Setup
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add multilingual support to Windows Setup

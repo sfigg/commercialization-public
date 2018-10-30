@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.0ecca7ad-aada-4c98-b153-c44ef48e00ae"></span>Sensor Camera Driver Controls System Test - FACEDETECTION - Iterate through possible settings while Preview

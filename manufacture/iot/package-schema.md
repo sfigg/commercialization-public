@@ -7,8 +7,8 @@ title: Windows Universal OEM Package Schema
 ms.author: kenpacq
 ms.date: 09/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Universal OEM Package Schema

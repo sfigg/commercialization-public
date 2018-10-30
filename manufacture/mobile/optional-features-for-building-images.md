@@ -8,8 +8,8 @@ ms.assetid: 8147e170-f21f-4ed3-8130-4d498368ff92
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Optional features for building mobile images

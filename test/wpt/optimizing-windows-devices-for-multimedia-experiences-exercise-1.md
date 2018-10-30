@@ -8,8 +8,8 @@ ms.assetid: 2264F1B3-27BC-4140-9A90-0532604298BC
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Exercise 1 - Assess the Device's Audio Latency Performance for Communications Scenarios

@@ -7,8 +7,8 @@ title: 'Features On Demand'
 ms.author: kenpacq
 ms.date: 06/27/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Features On Demand

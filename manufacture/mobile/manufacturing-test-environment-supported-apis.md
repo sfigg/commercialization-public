@@ -7,8 +7,8 @@ title: Manufacturing test environment supported APIs
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Manufacturing test environment supported APIs

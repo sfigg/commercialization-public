@@ -7,8 +7,8 @@ title: Preinstall Apps Using DISM
 ms.author: kenpacq
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Preinstall Apps Using DISM

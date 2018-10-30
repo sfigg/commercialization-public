@@ -7,8 +7,8 @@ title: 'DISM Image Management Command-Line Options'
 ms.author: kenpacq
 ms.date: 04/23/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM Image Management Command-Line Options

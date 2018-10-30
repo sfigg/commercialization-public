@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.99c61fa9-e0eb-43ea-a5fc-db5c3cbd9239"></span>DF - Reboot restart with IO before and after (Reliability)

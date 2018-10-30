@@ -11,8 +11,8 @@ ms.assetid: 8EA57D61-9F40-4CB9-AE97-0E379484B984
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Common causes of long modern standby resume

@@ -8,8 +8,8 @@ ms.assetid: F96C2AAB-5F98-4BB9-904F-B83FF40A0FEB
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Maximum Supported Contacts

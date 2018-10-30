@@ -11,8 +11,8 @@ ms.assetid: 99AA1390-C29C-4683-961F-6F3C0AA6496A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Integrating apps with modern standby

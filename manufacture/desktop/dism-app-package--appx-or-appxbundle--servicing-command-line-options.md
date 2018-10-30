@@ -7,8 +7,8 @@ title: 'DISM App Package (.appx or .appxbundle) Servicing Command-Line Options'
 ms.author: kenpacq
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM App Package (.appx or .appxbundle) Servicing Command-Line Options

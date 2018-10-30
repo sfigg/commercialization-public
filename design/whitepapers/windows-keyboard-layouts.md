@@ -5,8 +5,8 @@ ms.assetid: CA733646-4BFF-47BA-BA87-68BFDB1311E7
 ms.author: eliotgra
 ms.date: 03/17/2015
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Keyboard Layouts

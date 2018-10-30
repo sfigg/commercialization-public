@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.d1f2fbbe-d5e4-439d-819a-dc100df0e9ba"></span>SCSI Compliance Test 2.0 (LOGO)

@@ -12,8 +12,8 @@ keywords: Windows Touch WDK, multitouch digitizer drivers, selecting packet repo
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Selecting Packet Reporting Modes in Multi-touch Drivers (Windows 7)

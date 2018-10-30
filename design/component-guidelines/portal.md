@@ -8,8 +8,8 @@ ms.assetid: fa82f19f-6eca-464c-99c3-295c07cf5ba4
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Legacy Windows Touch Drivers (Windows 7)

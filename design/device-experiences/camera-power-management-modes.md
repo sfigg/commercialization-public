@@ -11,8 +11,8 @@ ms.assetid: D49565DE-4648-4AC4-BBAC-25F23A07AF6A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Camera power management modes

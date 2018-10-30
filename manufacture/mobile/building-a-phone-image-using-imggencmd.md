@@ -8,8 +8,8 @@ ms.assetid: 284a2ca2-d973-44a4-9e6c-5caebc088c75
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Build a mobile image using ImgGen.cmd

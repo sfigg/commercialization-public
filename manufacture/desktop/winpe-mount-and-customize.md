@@ -7,8 +7,8 @@ title: 'WinPE: Mount and Customize'
 ms.author: kenpacq
 ms.date: 4/24/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinPE: Mount and Customize

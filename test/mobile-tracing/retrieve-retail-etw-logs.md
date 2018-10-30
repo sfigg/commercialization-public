@@ -8,8 +8,8 @@ ms.assetid: a32d9f2b-1a4a-4d69-aae0-c5e80472a708
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Retrieve retail ETW logs

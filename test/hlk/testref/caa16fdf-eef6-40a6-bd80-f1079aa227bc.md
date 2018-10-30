@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.caa16fdf-eef6-40a6-bd80-f1079aa227bc"></span>Windows Touch Response Latency (Down) Test (System)

@@ -8,8 +8,8 @@ ms.assetid: 9f55f2a3-582d-48a1-9cd3-a259bd05cd00
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Field Medic

@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.3e48ac04-c2c7-4dcd-afba-c72e23dfb65e"></span>Manual Test - Verify eMMC is enumerated in mass storage mode

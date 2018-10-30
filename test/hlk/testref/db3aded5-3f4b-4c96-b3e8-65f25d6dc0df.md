@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.db3aded5-3f4b-4c96-b3e8-65f25d6dc0df"></span>D3D12 - CommandList Destruction Test

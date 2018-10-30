@@ -4,8 +4,8 @@ description: "Under Network Connection, users have three choices for configuring
 ms.author: eliotgra
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Network Connection Settings

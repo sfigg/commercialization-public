@@ -8,8 +8,8 @@ ms.assetid: 762da1e5-abfe-4888-a886-8e74e7658362
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Custom logging with Field Medic

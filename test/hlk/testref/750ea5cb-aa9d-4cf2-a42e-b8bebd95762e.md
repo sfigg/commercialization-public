@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.750ea5cb-aa9d-4cf2-a42e-b8bebd95762e"></span>Lost Devices - Resource Management DX9.L

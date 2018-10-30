@@ -8,8 +8,8 @@ ms.assetid: DACF3D34-BD65-4D10-8A20-C441ACDD9AEA
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Selecting Packet Reporting Modes in Multi-touch Devices

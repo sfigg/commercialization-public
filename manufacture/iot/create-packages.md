@@ -6,8 +6,8 @@ title: Create Windows Universal OEM Packages
 ms.author: kenpacq
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Create Windows Universal OEM Packages

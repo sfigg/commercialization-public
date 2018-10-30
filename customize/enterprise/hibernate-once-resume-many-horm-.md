@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 04/12/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Hibernate Once/Resume Many (HORM)
 

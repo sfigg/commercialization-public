@@ -5,8 +5,8 @@ description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop 
 ms.author: kenpacq
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # OEM Deployment of Windows 10 for desktop editions

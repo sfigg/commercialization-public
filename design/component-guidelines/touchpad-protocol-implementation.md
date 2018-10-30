@@ -8,8 +8,8 @@ ms.assetid: 633DE191-E209-4F58-AE52-6250AEE96079
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Protocol Implementation

@@ -9,8 +9,8 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.0fef46b0-cbd2-4e4c-ac7d-b5cbbe55d180"></span>D3D12 - Bundle DescriptorTable Test

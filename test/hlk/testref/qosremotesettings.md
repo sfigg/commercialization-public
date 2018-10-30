@@ -4,8 +4,8 @@ description: Provides troubleshooting guidelines for the QosRemoteSettings HLK t
 ms.author: eliotgra
 ms.date: 07/17/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # QosRemoteSettings Troubleshooting

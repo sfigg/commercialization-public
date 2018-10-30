@@ -8,8 +8,8 @@ ms.assetid: DCF11F71-719B-4F03-8260-43F026EAB540
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Report Rate - Single Contact

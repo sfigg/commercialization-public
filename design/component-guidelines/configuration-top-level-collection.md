@@ -8,8 +8,8 @@ ms.assetid: 2C16625F-5C6A-4770-B152-087E481D22D0
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Configuration Top Level Collection

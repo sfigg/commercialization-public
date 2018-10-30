@@ -6,8 +6,8 @@ title: 'Planning a Windows 10 in S mode image'
 ms.author: kenpacq
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Planning a Windows 10 in S mode deployment

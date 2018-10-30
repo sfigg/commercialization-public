@@ -8,8 +8,8 @@ ms.assetid: b2079741-e3a8-44ab-b76f-75b287d0cd66
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Feature groupings and constraints

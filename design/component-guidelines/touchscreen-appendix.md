@@ -8,8 +8,8 @@ ms.assetid: DCBA1BB7-B6C2-46EC-9383-140DC95BFAD5
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Appendix
