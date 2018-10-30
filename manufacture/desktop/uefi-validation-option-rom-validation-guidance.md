@@ -92,6 +92,8 @@ UEFI drivers are necessary for many of the new firmware level security features 
 
 *Figure 2: UEFI Driver Security Consideration, Source: UEFI 2.3.1 Errata C*
 
+**The following text originated in UEFI 2.3.1 Errata C, but has since been modified with insights from partners:**
+
 Since the UEFI user profile details a number of security-related privileges, it is important that the User Identity Manager and User Credential Providers and the environment in which they execute are trusted.
 
 This includes:
