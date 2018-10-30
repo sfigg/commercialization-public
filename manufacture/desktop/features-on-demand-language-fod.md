@@ -31,7 +31,7 @@ To see how to add Features on Demand and language packs to your Windows image, s
 
 Language Features on Demand are available in six types:
 
-**Note:** Not all Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx).
+**Note:** Not all Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/7/6/0/7600F9DC-C296-4CF8-B92A-2D85BAFBD5D2/Windows-10-1809-FOD-to-LP-Mapping-Table.xlsx).
 
 
 | Component | Sample package name | Sample capability name  | Description |
@@ -109,7 +109,7 @@ These fonts are optional and not required for any region.
 Note that this feature is distributed as a .cab file on the Feature on Demand ISO. Use `DISM /add-package` to add it to your image. See [Add or remove packages offline with DISM](add-or-remove-packages-offline-using-dism.md) for more information.
 
 ### List of all language-related Features on Demand
-[Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+[Download the list of all available language FODs](http://download.microsoft.com/download/7/6/0/7600F9DC-C296-4CF8-B92A-2D85BAFBD5D2/Windows-10-1809-FOD-to-LP-Mapping-Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
 

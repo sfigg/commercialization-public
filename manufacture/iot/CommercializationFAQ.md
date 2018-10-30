@@ -3,7 +3,7 @@ author: saraclay
 Description: 'Read some of the frequently-asked questions regarding commercializing with Windows 10 IoT Core.'
 title: 'Commercialization FAQ'
 ms.author: saclayt
-ms.date: 08/28/18
+ms.date: 10/03/18
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

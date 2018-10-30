@@ -199,7 +199,7 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 </tr>
 <tr class="odd">
 <td><p><strong>DIG-AW</strong></p></td>
-<td><p>New Millenium Telecom Services (NMTS)</p></td>
+<td><p>New Millennium Telecom Services (NMTS)</p></td>
 <td><p>Digicel</p></td>
 <td><p>Aruba</p></td>
 </tr>
