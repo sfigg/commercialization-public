@@ -109,7 +109,7 @@ xperf [-start [LoggerName] [ProfileFileName!ProfileName|SessionName]|-update [Lo
 </tr>
 <tr class="even">
 <td><p><strong>-pids</strong> <em>pid [...]</em></p></td>
-<td><p>Applies flags to processes <code>pid [...]</code>. Used in conjunction with private loggers.</p></td>
+<td><p>Applies flags to processes <code>pid [...]</code>. Used in conjunction with private loggers.</p><p>When specifying multiple pids, separate them with a space, as in <code>-Pids 1234 6789</code></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>-pidnewprocess</strong> <em>&lt;command-line&gt;</em></p></td>
