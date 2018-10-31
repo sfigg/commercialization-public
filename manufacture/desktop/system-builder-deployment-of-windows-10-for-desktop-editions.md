@@ -271,13 +271,13 @@ In this case, you need to add an extra parameter to USB-B\AnswerFiles\UnattendSy
 
 This property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generalize pass in order to persist the drivers in the image. For more information about the details of this property and how to add it to an answer file, see [PersistAllDeviceInstalls](http://technet.microsoft.com/library/ff716298.aspx).
 
-#### Add language experience packs (LXP)
+#### Add languages
 
-Obtain the Windows 10 Language Experience Packs (formerly Language Interface Packs or LIPs) from [Device Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
+Get the Windows 10 Languages from the [Microsoft OEM site](http://microsoftoem.com) or [Device Partner Center](https://devicepartner.microsoft.com/en-US/). The LP ISO includes both .cabs and .appx [Language Experience Packs (LXPs, formerly Language Interface Packs or LIPs)]](add-language-interface-packs-to-windows.md). 
 
-For more information about LIPs, see [Add Language Interface Packs to Windows 10](add-language-interface-packs-to-windows.md).
+To add languages, see [Add languages to Windows](add-and-remove-language-packs-offline-using-dism.md).
 
-**Important: LIP Versions must match other Windows component versions, for both the image and the ADK.**
+**Important: language and LIP Versions must match other Windows component versions, for both the image and the ADK.**
 
 If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 10 image, install x86 LIPs.
 
