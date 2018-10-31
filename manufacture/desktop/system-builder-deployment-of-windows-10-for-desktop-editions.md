@@ -3,7 +3,7 @@ title: System builder deployment of Windows 10 for desktop editions
 author: kpacquer
 description: Get step-by-step guidance for system builders to deploy Windows 10 to desktop computers, laptops, and 2-in-1s.   
 ms.author: kenpacq
-ms.date: 04/26/2018
+ms.date: 10/31/2018
 ms.topic: article
 
 
@@ -19,7 +19,8 @@ The first step is to set up your lab environment, which includes installing the 
 
 Before starting the deployment procedure, you need to download the kits that will be used throughout the guide. Go to the [Device Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) > **Downloads and Installation** > **Understanding ADKs and OPKs**. For a list of resources and kits that will be used and where to obtain them, see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
 
-You will need two USB drives. USB-A will be used to boot the system in Windows Preinstallation Environment (WinPE). USB-B will be used to move files between computers, store deployment and recovery scripts, and store and apply created images.
+For this guide, we use two USB drives. USB-A will be used to boot the system in Windows Preinstallation Environment (WinPE). USB-B will be used to move files between computers, store deployment and recovery scripts, and store and apply created images. (You can also [format a single USB drive to store both WinPE and your images](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)).  
+
 
 <table>
 <th>USB Hard Drive Name</th>
@@ -83,17 +84,19 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 <a name="create-a-usb-drive-that-can-boot-to-winpe"></a>
 ## Create a USB drive that can boot to WinPE
 
-You must use the matching version of Windows ADK for the images being customized. For example, if you're building an image for Windows 10, version 1803, use the Windows ADK for Windows 10, version 1803.
-For more details about the Windows ADK, see the [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx).
+You must use the matching version of Windows ADK for the images being customized. For example, if you're building an image for Windows 10, version 1809, use the Windows ADK for Windows 10, version 1809.
+For more details about the Windows ADK, see the [Windows 10 ADK Documentation Homepage](https://docs.microsoft.com/windows/deployment/windows-deployment-scenarios-and-tools).
 
-Visit [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) to download the ADK.
+Visit [Download the Windows ADK and the Windows PE Add-On](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) to download the ADK.
 
 
-1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
+1.  Install the Windows ADK, including the **Deployment Tools** and **User State Migration Tool (USMT)** features.
 
-    **Note**: If you have Secure Boot enabled, disable it before installing the ADK.
+    ![Select ADK Features: Deployment Tools and USMT](Images/adk-select-features-1809.png)
+ 
+1.  From the same page, download the **Windows PE Add-on for the ADK**.
 
-    ![Select ADK Features](Images/adk-select-features-1709.png)
+    ![Select WinPE Features: WinPE](Images/winpe-select-features-1809.png)
 
 1.  Press the Windows key to display the **Start** menu. Type:
     
@@ -101,7 +104,7 @@ Visit [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/h
 
     Right-click the name of the tool, and then click **Run as administrator**.
 
-2.  Windows ADK allows you to create **Windows PreInstallation Environment**. Copy base WinPE to new folder.
+2.  Windows ADK allows you to create **Windows Preinstallation Environment**. Copy base WinPE to new folder.
 
     If you use an **x64** Windows 10 image, copy the x64 WinPE folder structure:
 
@@ -114,7 +117,7 @@ Visit [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/h
     Copype x86 C:\winpe_x86
     ```
 
-1.  You may add packages and/or drivers to WinPE here.
+1.  You may [add packages and/or drivers to WinPE](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image) here, if you need them. Typically, the built-in WinPE drivers are enough.
 
 2.  Connect a USB drive that is at least 4 GB. Format it as shown in this diagram:
 
@@ -156,7 +159,7 @@ See the [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en
 
 5.  Click **OK** to associate the answer file with the Windows Image. 
 
-6.  To add a driver to Windows PE, click **Insert** select **Driver Path** and select pass **1 windowsPE** and then browse to the driver. Note: This step is optional and only required if a third-party driver is needed for use in the Windows Preinstallation Enviornment. 
+6.  To add a driver to Windows PE, click **Insert** select **Driver Path** and select pass **1 windowsPE** and then browse to the driver. Note: This step is optional and only required if a third-party driver is needed for use in the Windows Preinstallation Environment. 
 
 7.  To add a package, click **Insert**, select **Package**, and then browse to the package you want to add. This step is optional.
 
@@ -205,7 +208,7 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
 ## Update images for each model: offline servicing
 
-Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim.
+Before mounting and editing the image, make a copy. Use a filename that describes the changes you want to make for this model-specific image you're making, for example:
 
 ```
 Dism /export-image /sourceimagefile:e:\images\install.wim /sourceindex:2 /destinationimagefile:e:\images\modelspecificimage.wim
@@ -216,7 +219,8 @@ Dism /export-image /sourceimagefile:e:\images\install.wim /sourceindex:2 /destin
 1.  Mount Windows image (ModelSpecificImage.wim). This process extracts the contents of the image file to a location where you can view and modify the mounted image.
     ```
     Md C:\mount\windows
-    Dism /Mount-Wim /WimFile:E:\Images\ModelSpecificImage.wim /index:1 /MountDir:C:\mount\windows
+
+    Dism /Mount-Image /ImageFile:E:\Images\ModelSpecificImage.wim /Index:1  /MountDir:C:\mount\windows
     ```
     Where E:\ is the drive letter of USB-B.
 
@@ -224,6 +228,7 @@ Dism /export-image /sourceimagefile:e:\images\install.wim /sourceindex:2 /destin
 
     ```
     Md c:\mount\winre
+
     Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
     ```
 
@@ -266,9 +271,9 @@ In this case, you need to add an extra parameter to USB-B\AnswerFiles\UnattendSy
 
 This property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generalize pass in order to persist the drivers in the image. For more information about the details of this property and how to add it to an answer file, see [PersistAllDeviceInstalls](http://technet.microsoft.com/library/ff716298.aspx).
 
-#### Add language interface packs
+#### Add language experience packs (LXP)
 
-Obtain the Windows 10 Language Interface Packs from [Device Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
+Obtain the Windows 10 Language Experience Packs (formerly Language Interface Packs or LIPs) from [Device Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
 
 For more information about LIPs, see [Add Language Interface Packs to Windows 10](add-language-interface-packs-to-windows.md).
 
@@ -284,12 +289,12 @@ If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 
 
     *Amd64 architecture*
     ```
-    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x64\Microsoft-Windows-Client-Language-Interface-Pack_x64_as-in.cab
+    DISM /Image:c:\mount\windows /Add-ProvisionedAppxPackage /PackagePath: E:\LIP_x64\LocalExperiencePack\eu-es\LanguageExperiencePack.eu-ES.Neutral.appx /LicensePath: E:\LIP_x64\LocalExperiencePack\License.xml
     ```
 
     *X86 architecture*
     ```
-    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\Microsoft-Windows-Client-Language-Interface-Pack_x86_as-in.cab
+    DISM /Image:c:\mount\windows /Add-ProvisionedAppxPackage /PackagePath: E:\LIP_X86\LocalExperiencePack\eu-es\LanguageExperiencePack.eu-ES.Neutral.appx /LicensePath: E:\LIP_x86LocalExperiencePack\License.xml
     ```
 
 > [!Important]
@@ -301,7 +306,7 @@ If you use an x64 Windows 10 image, add x64 update packages; if you use an x86 W
 
 To get update packages, download them from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx).
 
-1.  Run Internet Explorer and navigate to the [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx) webpage. See [What you will need and where to get it](#what-you-will-need-and-where-to-get-it) for more information about which packages you should obtain from Microsoft Update Catalog.
+1.  To see what packages you'll need to get, go to the [Windows 10 Release information](https://www.microsoft.com/itpro/windows-10/release-information) page to see which packages you should obtain from Microsoft Update Catalog.
 
 2.  Type every single update package one by one into the search box and click **Search**.
 
@@ -347,13 +352,9 @@ To get update packages, download them from [Microsoft Update Catalog](http://cat
 
 1.  Create OEM folder under C:\mount\windows\Windows\system32\ directory.
 
-2.  Copy the OEM logo to C:\mount\windows\Windows\system32\OEM\**FabrikamLogo.bmp** directory which will be mapped in unattend file in **OEM Information | Logo** property.
-
-    See the following image to add OEM logo in an answer file.
-
-    -   %windir%\system32\OEM\FabrikamLogo.bmp
-
-    **REFERENCE:** OEM Logo file must be in .bmp format and in 120px x 120px size. Please see Windows Guidelines for System Builders for OEM Logo details.
+1.  Create an OEM logo in .bmp format, with the size of 120px x 120 px. For more details, see the Windows Guidelines for System Builders.
+    
+1.  Copy the OEM logo to the folder, for example: `C:\mount\windows\Windows\system32\OEM\FabrikamLogo.bmp`. You'll reference this file location later in the unattend file in **OEM Information | Logo** property.
 
     ![OEM Logo details](Images/oem-logo-details.png)
 
@@ -510,7 +511,7 @@ Where E:\ is USB-B.
     Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
     > [!Note]
-    > Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
+    > Only use Compact OS on flash-drive-based devices (solid-state drives), because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommended on rotational devices. For more information, see [Compact OS](compact-os.md).
 
 5.  Remove USB-A and USB-B, and then type:
 
@@ -531,7 +532,7 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
 -   `/OptionalPackagePath`: This is used to specify the path to the .appxbundle file for an individual app, such as Word or Excel.  
 -   `/LicensePath`: This is used to specify the path to the _License1.xml file for an individual app. This is needed for both the shared package and each of the optional app packages. 
 
-1. Extract the Office 16.5 OPK to C:\temp\lab\apps\.
+1. Extract the Office 16.5 OPK to C:\temp\lab\apps\Office Apps\Shared.Preinstallkit.
 
 2. Use DISM to add all the Office apps to an offline image. The following example assumes the appxbundle and license xml files are in subdirectories on _USB-B_ (D:). The example also excludes the /region switch because we want Office to appear in both the All Apps list, and as a Start Menu tile.
 
@@ -708,11 +709,11 @@ During recovery, PBR calls EnableCustomizations.cmd which we'll configure to do 
 
 This will restore the additional layout settings from these 2 answer files during PBR. 
 
-**Important:** Recovery scripts and unattend.xml must be copied to c:\Recovery\OEM for PBR to pickup and restore settings defined in the unattend.xml.
+**Important:** Recovery scripts and unattend.xml must be copied to c:\Recovery\OEM for PBR to pick up and restore settings defined in the unattend.xml.
 
 ### Copy a backup of WinRE
 
-During a PC deployment, winre gets moved. Before you caputre a final image, you have to copy the backup of winre.wim back into Windows.
+During a PC deployment, winre gets moved. Before you capture a final image, copy the backup of winre.wim back into the Windows image.
 
 ```
 Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
@@ -775,7 +776,7 @@ E:\Deployment\applyimage.bat E:\Images\modelspecificimage.wim
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommended on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
@@ -814,7 +815,7 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 
 | **Distinction**                         | **Description**                                                                                                                                                                                                                                                                              | **Related Section**                  |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| Windows installed on Technican Computer | When Windows ADK gets installed on a technican computer the the deployment tools in the ADK would be installed according to the architecture of the Windows on technician computer. In short if ADK is installed on Windows x64, the tools would be installed 64-bit version, or vice-versa. | [Prepare your lab environment](#prepare-your-lab-environment)         |
+| Windows installed on Technician Computer | When Windows ADK gets installed on a technician computer the deployment tools in the ADK would be installed according to the architecture of the Windows on technician computer. In short if ADK is installed on Windows x64, the tools would be installed 64-bit version, or vice-versa. | [Prepare your lab environment](#prepare-your-lab-environment)         |
 | Creating WinPE folder structure         | WinPE differs between x64 and x86 architecture, so you have to use different commands to create a different WinPE folder for each architecture.                                                                                                                                                    | [Create WinPE bootable USB](#create-a-usb-drive-that-can-boot-to-winpe) |
 | Drivers                                 | Driver versions differ between different architectures. If you are manufacturing a 64-bit Windows image, please use x64 drivers, and vice-versa for 32-bit Windows.                                                                                                                                                   | [Add drivers](#add-drivers)         |
 | Update Packages for Windows Image       | Update package versions differ between different architectures. If you are manufacturing a 64-bit Windows image please use x64 update packages, and vice-versa for 32-bit Windows.                                                                                                                                   | [Add update packages](#add-update-packages) |
@@ -822,16 +823,16 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 
 ### What you will need and where to get it
 
-Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the guide, such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
+Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the guide, such as Microsoft Office Single Image v15.4, update packages, language interface packs. Below is the complete list of resources/kits an OEM requires to download and where they download them.
 
 | Resource/Kit  |   Available at    | Related section   |
 |---------------|-------------------|-------------------|
 | Windows 10 ADK|   [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) | [Create WinPE bootable USB](#create-a-usb-drive-that-can-boot-to-winpe) |
 | Windows 10 x64/x86 DVD Media (desired language) | Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor | [Install Windows with basic customizations](#install-windows-with-basic-customizations) |
 | Windows 10 Default Product Keys | Default Product Keys are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cp-windows-10-build) listed under **Default product keys** tab | [Customize the answer file](#customize-the-answer-file) |
-| Language interface packs | LIPs are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-push-button-reset) |
+| Language experience packs (LXP, formerly language interface packs or LIPs) | LXPs are located at [Device Partner Center](https://dpcenter.microsoft.com/en/Windows/Build/cc-windows-10-v1703-lip) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-push-button-reset) |
 | Update Packages | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the related section. | [Add language interface packs](#add-language-interface-packs) |
-| Microsoft Office v16.5 | Obtain Microsoft Office v15.4 by downloading from Device Partner Center | [Preload Microsoft Office single image v16.5 OPK] |
+| Microsoft Office v16.5 | Obtain Microsoft Office v16.5 by downloading from Device Partner Center | [Microsoft Office v16.5 OPK](https://devicepartner.microsoft.com/en-US/assets/detail/X21-79723-zip) |
 
 
 ## References
@@ -839,5 +840,3 @@ Before starting the deployment procedure OEM requires to download certain kits w
 [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129)
 
 [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008)
-
-
