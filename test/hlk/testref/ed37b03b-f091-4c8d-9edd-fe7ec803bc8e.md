@@ -3,7 +3,7 @@ title: Audio APO - Verify APO Initializes - TestAPOInitialize
 Description: Audio APO - Verify APO Initializes - TestAPOInitialize
 ms.assetid: 
 author: sapaetsc-msft
-ms.author: sapaetsc
+ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
 

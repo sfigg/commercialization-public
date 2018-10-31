@@ -3,7 +3,7 @@ title: ActivitySensor DriverFramework Validation
 Description: ActivitySensor DriverFramework Validation
 ms.assetid: 
 author: sapaetsc-msft
-ms.author: sapaetsc
+ms.author: eliotgra
 ms.date: 10/11/2018
 ms.topic: article
 
