@@ -709,11 +709,11 @@ During recovery, PBR calls EnableCustomizations.cmd which we'll configure to do 
 
 This will restore the additional layout settings from these 2 answer files during PBR. 
 
-**Important:** Recovery scripts and unattend.xml must be copied to c:\Recovery\OEM for PBR to pickup and restore settings defined in the unattend.xml.
+**Important:** Recovery scripts and unattend.xml must be copied to c:\Recovery\OEM for PBR to pick up and restore settings defined in the unattend.xml.
 
 ### Copy a backup of WinRE
 
-During a PC deployment, winre gets moved. Before you caputre a final image, you have to copy the backup of winre.wim back into Windows.
+During a PC deployment, winre gets moved. Before you capture a final image, copy the backup of winre.wim back into the Windows image.
 
 ```
 Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
@@ -776,7 +776,7 @@ E:\Deployment\applyimage.bat E:\Images\modelspecificimage.wim
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommended on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
@@ -815,7 +815,7 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 
 | **Distinction**                         | **Description**                                                                                                                                                                                                                                                                              | **Related Section**                  |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| Windows installed on Technician Computer | When Windows ADK gets installed on a technician computer the the deployment tools in the ADK would be installed according to the architecture of the Windows on technician computer. In short if ADK is installed on Windows x64, the tools would be installed 64-bit version, or vice-versa. | [Prepare your lab environment](#prepare-your-lab-environment)         |
+| Windows installed on Technician Computer | When Windows ADK gets installed on a technician computer the deployment tools in the ADK would be installed according to the architecture of the Windows on technician computer. In short if ADK is installed on Windows x64, the tools would be installed 64-bit version, or vice-versa. | [Prepare your lab environment](#prepare-your-lab-environment)         |
 | Creating WinPE folder structure         | WinPE differs between x64 and x86 architecture, so you have to use different commands to create a different WinPE folder for each architecture.                                                                                                                                                    | [Create WinPE bootable USB](#create-a-usb-drive-that-can-boot-to-winpe) |
 | Drivers                                 | Driver versions differ between different architectures. If you are manufacturing a 64-bit Windows image, please use x64 drivers, and vice-versa for 32-bit Windows.                                                                                                                                                   | [Add drivers](#add-drivers)         |
 | Update Packages for Windows Image       | Update package versions differ between different architectures. If you are manufacturing a 64-bit Windows image please use x64 update packages, and vice-versa for 32-bit Windows.                                                                                                                                   | [Add update packages](#add-update-packages) |
@@ -823,7 +823,7 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 
 ### What you will need and where to get it
 
-Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the guide, such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
+Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the guide, such as Microsoft Office Single Image v15.4, update packages, language interface packs. Below is the complete list of resources/kits an OEM requires to download and where they download them.
 
 | Resource/Kit  |   Available at    | Related section   |
 |---------------|-------------------|-------------------|
