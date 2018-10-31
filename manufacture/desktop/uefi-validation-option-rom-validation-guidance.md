@@ -92,7 +92,7 @@ UEFI drivers are necessary for many of the new firmware level security features 
 
 *Figure 2: UEFI Driver Security Consideration, Source: UEFI 2.3.1 Errata C*
 
-**From Section 31.1.4 from the UEFI 2.3.1 Errata C:**
+**The following text originated in UEFI 2.3.1 Errata C, but has since been modified with insights from partners:**
 
 Since the UEFI user profile details a number of security-related privileges, it is important that the User Identity Manager and User Credential Providers and the environment in which they execute are trusted.
 
@@ -132,9 +132,9 @@ UEFI option ROMs can be anywhere in memory. The default is to let the ROM on the
 
 On a PC with Secure Boot enabled, option ROM drivers pose a security threat if they are not signed or not validated. Signature validation for option ROMs is a WHCK requirement. The same is true while servicing option ROMs to make sure that the update is validated prior to installation.
 
-From the UEFI 2.3.1 Eratta C specification:
+From the [Windows Hardware Compatibility Program specifications and policies version 1809](https://go.microsoft.com/fwlink/?linkid=2027110):
 
-9. Mandatory. **Signed Firmware Code Integrity Check**. Firmware that is installed by the OEM and is either read-only or protected by a secure firmware update process, as defined above, may be considered protected. **Systems shall verify that all unprotected firmware components, UEFI drivers, and UEFI applications are sigend using minimum RSA-2048 with SHA-256 (MD5 and SHA-1 are prohibited)**, and verify that UEFI applications and drivers that are not signed as per these requirements will fail to run (this is the default policy for acceptable signature algorithms). If an images signature is not found in the authorized database, or is found in the forbidden database, the image must not be started, and instead, information about it shall be placed in the Image Execution Information Table.11. Mandatory. **Verify Signature of all Boot Apps and Boot Loaders.** Upon power-on, the platform shall start executing boot firmware and use public key cryptography as per algorithm policy to verify the signatures of all images in the boot sequence up-to and including the Windows Boot Manager.
+10. **Signed Firmware Code Integrity Check**. Firmware that is installed by the OEM and is either read-only or protected by a secure firmware update process, as defined above, may be considered protected. Systems shall verify that all unprotected firmware components, UEFI drivers, and UEFI applications are signed using minimum RSA-2048 with SHA-256 (MD5 and SHA-1 are prohibited), and verify that UEFI applications and drivers that are not signed as per these requirements will fail to run (this is the default policy for acceptable signature algorithms). If an images signature is not found in the authorized database, or is found in the forbidden database, the image must not be started, and instead, information about it shall be placed in the Image Execution Information Table. 
 
 ## <span id="ProblemStatement"></span><span id="problemstatement"></span><span id="PROBLEMSTATEMENT"></span>2. Problem statement
 
