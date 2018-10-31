@@ -604,112 +604,84 @@ We'll pin the Office tiles to the Start menu so Windows won't remove the Office 
 
     Once the machine is booted to desktop after going through OOBE, the Start menu will have the Office tiles added to the Start Menu.
     
-## Prepare the system for Push Button Reset
+## Prepare recovery tools
 
-This section provides guidance for setting up the recovery environment for Push Button Reset (PBR) scenarios.
+[Push-button reset](push-button-reset-overview.md) can help users recover the OS while preserving their existing data and customizations without requiring them to back-up their data in advance. 
 
-Please reference Push-button reset and Windows Recovery Environment (Windows RE) and Hard Drives and Partitions for more information.
+Make sure that the customizations you've added to your devices are also kept during the push-button recovery operation. 
 
-Push-button reset, is a built-in recovery tool which allows users to recover the OS while preserving their data and important customizations, without having to back-up their data in advance. It reduces the need for custom recovery applications by providing users with more recovery options and the ability to fix their own PCs with confidence. 
+### Copy the ScanState tool to your USB key
 
-In Windows 10, the Push-button reset features have been updated to include the following improvements: 
+The ScanState tool is included in the USB-B sample files you downloaded earlier. 
 
-The Push-button reset user experience offers customization opportunities. Manufacturers can insert custom scripts, install applications or preserve additional data at available extensibility points. 
-The following Push-button reset features are available to users with Windows 10 PCs: 
+You'll use ScanState tool to capture your classic Windows apps and settings so they can be restored later during a push-button reset recovery.
 
-  - Refresh your PC 
+You can also get a copy using the tools in the Windows ADK:
 
-    Fixes software problems by reinstalling the OS while preserving the user data, user accounts, and important settings. All other preinstalled customizations are restored to their factory state. In Windows 10, this feature no longer preserves user-acquired Universal Windows apps. 
+**On your technician PC:**
 
-  - Reset your PC
+1.	Start the **Deployment and Imaging Tools Environment** as administrator.
+2.	Run the copydandi.cmd script to copy the files to your USB key:
 
-    Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Classic Windows applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state. 
-
-  - Bare metal recovery 
-
-    Restores the default or preconfigured partition layout on the system disk, and reinstalls the OS and preinstalled customizations from external media.
-
-### Prepare ScanState 
-
-To start working with Push Button Reset, you'll need to copy ScanState to _Data_.
-
-Use scanstate to capture Classic Windows applications and settings on your image.
-
-**Note**: You'll use your technician PC to prepare ScanState. 
-
-1.	On Technician PC Insert USB-B
-2.	Open Deployment and Imaging tools command prompt as administrator
-3.	Run the copydandi.cmd script file pointing to USB-B key
-
-    OEMs using an x64 Windows 10 image, make x64 Scanstate directory
-
-    ```
-    Copydandi.cmd amd64 e:\scanstate_amd64
+    ``` For x64 PCs:
+    CopyDandI.cmd amd64 E:\ScanState_amd64
     ```
     Where E: is the letter of USB-B drive.
 
     If you're using an x86 Windows 10 image, make x86 Scanstate directory:
 
-    ```
-    Copydandi.cmd x86 e:\scanstate_x86
+    ``` For x86 PCs:
+    CopyDandI.cmd x86 e:\ScanState_x86
     ```
 
     Where E: is the letter of USB-B drive.
 
-### Create recovery package using Scanstate
+### Create a recovery package
 
 **On your reference PC:**
 
-Use ScanState to capture installed customizations into a provisioning package, and then save it to c:\Recovery\customizations. We'll use samples from _USB-B_\Recovery\RecoveryImage to create the provisioning package.
+1. In Windows 10, version 1809, use auto-apply folders to restore common Windows settings such as the Start Menu, taskbar layout, and OOBE customizations.
+ 
+   (For previous Windows versions, or as an alternative to the auto-apply folders, you can use [extensibility scripts](deploy-push-button-reset-features.md) to restore these settings.)
 
-**Important:** For PBR to work properly, packages have to be .ppkg files that are stored in C:\Recovery\Customizations.
+   a.  Create a folder in your Windows image called `C:\Recovery\AutoApply`
 
-1.	Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage
-
-    **Important:** To retain the customized start layout menu during recovery the layoutmodification.xml needs to be copied again during recovery process. We'll copy it here and then use EnableCustomizations.cmd to copy it during recovery.
-    ```
-    Copy E:\Recovery\recoveryimage c:\recovery\OEM
-    Copy E:\StartLayout\layoutmodification.xml c:\recovery\OEM
+    ```cmd
+    MkDir C:\Recovery\AutoApply
     ```
 
-2.	Run ScanState to gather app and customizations
+   b. Copy configuration files and the related asset files
 
-    For x64 Windows 10 PCs:
+      - Copy the unattend.xml file you want for recovery to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
+      - Copy your LayoutModification.xml to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
+      - Copy your TaskbarLayoutModification.xml to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
+      - Copy %windir%\\System32\\OOBE\info and all its contents to C:\\Recovery\\AutoApply\\OOBE
 
-    ```
-    mkdir c:\recovery\customizations
-    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:E:\scanstate_amd64\Config_AppsAndSettings.xml /o /c /v:13 /l:C:\ScanState.log
-    ```
+2. Use ScanState to capture installed customizations into a provisioning package, and then save it to c:\Recovery\customizations. 
 
-    Where E: is the drive letter of USB-B
+   **Important:** For push-button reset to recover your apps and customizations, you must store the packages file as a .ppkg file in the C:\Recovery\Customizations folder.
 
-    For x86 Windows 10 PCs:
-    ```
-    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:e:\scanstate_x86\Config_AppsAndSettings.xml /o /c /v:13 /l:C:\ScanState.log
-    ```
+   a. Run ScanState to gather app and customizations
+    
+      ``` For x64 Windows 10 PCs:
+      mkdir c:\recovery\customizations
+      E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml config:E:\scanstate_amd64\Config_AppsAndSettings.xml /o /c /v:13 /l:C:\ScanState.log
+      ```
 
-    Where E: is the drive letter of USB-B
+      Where E: is the drive letter of USB-B
 
-3. When ScanState completes successfully, delete scanstate.log and miglog.xml files:
-    ```
-    del c:\scanstate.log
-    del c:\miglog.xml
-    ```
+      ``` For x86 Windows 10 PCs:
+      E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:e:\scanstate_x86\Config_AppsAndSettings.xml /o /c /v:13 /l:C:\ScanState.log
+      ```
 
-### Create Extensibility scripts to restore additional settings
+      Where E: is the drive letter of USB-B
 
-You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user, application, or registry data.
+   b. When ScanState completes successfully, delete scanstate.log and miglog.xml files:
 
-During recovery, PBR calls EnableCustomizations.cmd which we'll configure to do 2 things:
-
-1.	Copy the unattend.xml file used for initial deployment to the \windows\panther.
-2.	Copy the layoutmodification.xml to the system.
-
-**Note:** The Win10DepWhiPapForOEMsv1.01July2015 sample extensibility script used a command which no longer is needed. Please use the extensibility script from USB-B as sample for point for creating a new extensibility script.
-
-This will restore the additional layout settings from these 2 answer files during PBR. 
-
-**Important:** Recovery scripts and unattend.xml must be copied to c:\Recovery\OEM for PBR to pick up and restore settings defined in the unattend.xml.
+      ```
+      del c:\scanstate.log
+      del c:\miglog.xml
+      ```
 
 ### Copy a backup of WinRE
 
