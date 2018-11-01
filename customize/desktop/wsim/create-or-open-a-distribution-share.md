@@ -25,19 +25,19 @@ You can create a distribution-share folder by using Windows® System Image Mana
 
 ## Create a distribution share using Windows SIM
 
-1. Create a new folder where you want to place the distribution share. This folder can be on a network share (example: **\\\\server\\share\\MyDistributionShare**) or on your local computer (example: **C:\\MyDistributionShare**).
+1. Create a new folder where you want to place the distribution share. This folder can be on a network share (example: `\\server\share\MyDistributionShare`**) or on your local computer (example: `C:\MyDistributionShare`).
 1. In the **Distribution Share** pane, right-click **Select a Distribution Share**, and then click **Create Distribution Share**. The **Create a Distribution Share** window appears.
 1. Browse to the folder that you created, and then click **Open**. In the **Distribution Share** pane, the distribution-share folder opens. 
 1. Windows SIM automatically creates a folder structure for the distribution share.
 
 ## Create a distribution share manually
 
-1. In Windows Explorer, create a new folder where you want to place the distribution share. This folder can be on a network share (example: **\\\\server\\share\\MyDistributionShare**) or on your local computer (example: **C:\\MyDistributionShare**).
+1. In Windows Explorer, create a new folder where you want to place the distribution share. This folder can be on a network share (example: `\\server\share\MyDistributionShare`) or on your local computer (example: `C:\MyDistributionShare`).
 1. In this folder, create the following subfolders:
-    * **$OEM$ Folders**
-    * **Packages**
-    * **Out-of-Box Drivers**
-    * **LangPacks**
+    * `$OEM$`
+    * `Packages`
+    * `Out-of-Box Drivers`
+    * `LangPacks`
 
 > [!Note]
 > Windows SIM recognizes only these subfolder names. For the distribution share to be valid, at least one of the four folders must be present. To enable Windows SIM to read the subfolder contents, the subfolder names must match this list exactly.
@@ -46,10 +46,10 @@ You can create a distribution-share folder by using Windows® System Image Mana
 
 1. In the **Distribution Share** pane, click the top node of the currently open distribution share. Alternately, right-click **Select a Distribution Share**, and then click **Select Distribution Share**. The **Select a Distribution Share** dialog box opens.
 1. Browse to the distribution share that you want to open. The distribution share can be opened only if the following folder structure exists:
-    * **$OEM$ Folders**
-    * **Packages**
-    * **Out-of-Box Drivers**
-    * **LangPacks**
+    * `$OEM$`
+    * `Packages`
+    * `Out-of-Box Drivers`
+    * `LangPacks`
 1. Select the distribution share that you want to open, and then click **OK**. The distribution share opens in the **Distribution Share** pane.
 
 ## Explore a distribution share from Windows SIM

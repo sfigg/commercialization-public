@@ -608,7 +608,9 @@ We'll pin the Office tiles to the Start menu so Windows won't remove the Office 
 
 [Push-button reset](push-button-reset-overview.md) can help users recover the OS while preserving their existing data and customizations without requiring them to back-up their data in advance. 
 
-Make sure that the customizations you've added to your devices are also kept during the push-button recovery operation. 
+Any languages, Universal Windows apps and Universal Windows drivers that are included in your image are automatically restored during push-button recovery operations.  Make sure other customizations, like desktop apps and Start Menu customizations get restored, too. 
+
+In Windows 10, version 1809, you can use auto-apply folders to restore common Windows settings such as the Start Menu, taskbar layout, and OOBE customizations. For previous Windows versions, or to perform other actions after a push-button reset, use [extensibility scripts](deploy-push-button-reset-features.md) instead. Sample extensibility scripts are included in the USB-B sample files.
 
 ### Copy the ScanState tool to your USB key
 
@@ -640,10 +642,8 @@ You can also get a copy using the tools in the Windows ADK:
 
 **On your reference PC:**
 
-1. In Windows 10, version 1809, use auto-apply folders to restore common Windows settings such as the Start Menu, taskbar layout, and OOBE customizations.
- 
-   (For previous Windows versions, or as an alternative to the auto-apply folders, you can use [extensibility scripts](deploy-push-button-reset-features.md) to restore these settings.)
-
+1. In Windows 10, version 1809, create auto-apply folders to restore common Windows settings such as the Start Menu, taskbar layout, and OOBE customizations.
+  
    a.  Create a folder in your Windows image called `C:\Recovery\AutoApply`
 
     ```cmd
@@ -652,10 +652,10 @@ You can also get a copy using the tools in the Windows ADK:
 
    b. Copy configuration files and the related asset files
 
-      - Copy the unattend.xml file you want for recovery to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
-      - Copy your LayoutModification.xml to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
-      - Copy your TaskbarLayoutModification.xml to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
-      - Copy %windir%\\System32\\OOBE\info and all its contents to C:\\Recovery\\AutoApply\\OOBE
+      - Copy the unattend.xml file you want for recovery to `C:\Recovery\AutoApply\` and any asset files to `C:\Recovery\AutoApply\CustomizationFiles`
+      - Copy your LayoutModification.xml to `C:\Recovery\AutoApply\` and any asset files to `C:\Recovery\AutoApply\CustomizationFiles`
+      - Copy your TaskbarLayoutModification.xml to `C:\Recovery\AutoApply\` and any asset files to `C:\Recovery\AutoApply\CustomizationFiles`
+      - Copy `%windir%\System32\OOBE\info` and all its contents to `C:\Recovery\AutoApply\OOBE`
 
 2. Use ScanState to capture installed customizations into a provisioning package, and then save it to c:\Recovery\customizations. 
 
