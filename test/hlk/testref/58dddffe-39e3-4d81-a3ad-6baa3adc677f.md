@@ -3,7 +3,7 @@ title: H264 SW-DRM Video 6
 Description: H264 SW-DRM Video 6
 ms.assetid: 
 author: sapaetsc-msft
-ms.author: eliotgra
+ms.author: dawnwood
 ms.date: 10/11/2018
 ms.topic: article
 

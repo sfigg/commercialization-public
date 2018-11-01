@@ -1,7 +1,7 @@
 ﻿---
 title: QosRemoteSettings
 description: Provides troubleshooting guidelines for the QosRemoteSettings HLK test.
-ms.author: eliotgra
+ms.author: dawnwood
 ms.date: 07/17/2017
 ms.topic: article
 

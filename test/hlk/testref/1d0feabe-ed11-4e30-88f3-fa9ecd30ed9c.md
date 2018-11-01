@@ -3,7 +3,7 @@ title: Bluetooth - BluetoothAudioProfilesVerify (Bring Up)
 Description: Bluetooth - BluetoothAudioProfilesVerify (Bring Up)
 ms.assetid: 
 author: sapaetsc-msft
-ms.author: eliotgra
+ms.author: dawnwood
 ms.date: 10/11/2018
 ms.topic: article
 
