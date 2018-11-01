@@ -85,7 +85,7 @@ You can specify which configuration pass to add new settings:
     -   Model=`Notebook Model 1`
     -   Logo=`C:\Fabrikam\Fabrikam.bmp`
         
-    Create a 32-bit color with a maximum size of 120x120 pixels, save it as D:\\AnswerFiles\\Fabrikam.bmp file on your local PC, or use the sample from the USB-B key: `D:\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
+    Create a 32-bit color with a maximum size of 120x120 pixels, save it as `D:\AnswerFiles\Fabrikam.bmp` file on your local PC, or use the sample from the USB-B key: `D:\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
     
     We'll copy the logo into the Windows image in a few steps.
 
