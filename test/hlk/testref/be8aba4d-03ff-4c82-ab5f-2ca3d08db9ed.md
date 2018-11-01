@@ -2,7 +2,7 @@
 title: VP9 Playback Test 4
 Description: VP9 Playback Test 4
 ms.assetid: 
-author: sapaetsc-msft
+author: dawn.wood
 ms.author: dawnwood
 ms.date: 10/11/2018
 ms.topic: article
