@@ -2,8 +2,8 @@
 title: Set None Preferred Display Modes
 Description: Set None Preferred Display Modes
 ms.assetid: 
-author: sapaetsc-msft
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/11/2018
 ms.topic: article
 
