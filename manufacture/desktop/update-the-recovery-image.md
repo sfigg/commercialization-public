@@ -230,14 +230,14 @@ If you've optimized the image, you'll need to export the image in order to see a
 
     **Note** If WinRE.wim is more than 470,000,000 bytes, this step is required. 
     
-    a.  Convert the file size into megabytes (size in bytes ÷ 1048576 = size in MB).
+    1.  Convert the file size into megabytes (size in bytes ÷ 1048576 = size in MB).
 
-    b.  Calculate free space needed for the WinRE partition based on the [Disk partition rules](http://go.microsoft.com/fwlink/?LinkId=526950). WinRE.wim file size: 
+    2.  Calculate free space needed for the WinRE partition based on the [Disk partition rules](http://go.microsoft.com/fwlink/?LinkId=526950). WinRE.wim file size: 
         -  Up to 450MB: You'll need 50MB free space.  (450MB used + 50 free = 500MB)
         -  450MB-680MB: You'll need 320MB free space.
         -  Over 680MB:  You'll need 1024MB free space.
 
-    c.  Modify the CreatePartitions deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt),  [CreatePartitions-UEFI-FFU.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI-FFU.txt), [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt), and [CreatePartitions-BIOS-FFU.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS-FFU.txt) with the new values. Example:
+    3.  Modify the CreatePartitions deployment scripts: [CreatePartitions-UEFI.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI.txt),  [CreatePartitions-UEFI-FFU.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-UEFI-FFU.txt), [CreatePartitions-BIOS.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS.txt), and [CreatePartitions-BIOS-FFU.txt](windows-deployment-sample-scripts-sxs.md#CreatePartitions-BIOS-FFU.txt) with the new values. Example:
 
     ```
     rem == 3. Windows RE tools partition ===============
