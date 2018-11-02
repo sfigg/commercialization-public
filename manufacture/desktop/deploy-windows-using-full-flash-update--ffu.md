@@ -110,20 +110,20 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     > [!Note]
     > If you're going to be capturing an FFU from a smaller drive than the drive it will be applied to, make sure that the Windows partition is the last partition on the drive. ApplyImage.bat in the [Sample scripts](windows-deployment-sample-scripts-sxs.md) from the the [OEM Windows desktop deployment and imaging lab](oem-windows-deployment-and-imaging-walkthrough.md) gives you the ability to deploy Windows for this scenario.
 
-    a. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
+    1. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
     
     ```
     diskpart
     list volume
     ```
 
-    b. Select the volume of the Windows partition. We'll use `Volume 0` in our example.
+    2. Select the volume of the Windows partition. We'll use `Volume 0` in our example.
 
     ```
     select volume 0
     ```
 
-    c. Extend the partition to fill the unused space, and exit Diskpart.
+    3. Extend the partition to fill the unused space, and exit Diskpart.
 
     ```
     extend

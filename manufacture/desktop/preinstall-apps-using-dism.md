@@ -67,12 +67,13 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
 
     See [DISM app package servicing command-line options](dism-app-package--appx-or-appxbundle--servicing-command-line-options.md) for information about working with app packages, including the new /region option..
 
-4.  
-    a.  If you didn't specify `/region` when preinstalling the app, pin the app to the Start Menu with [LayoutModification.xml](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop). 
+4.  Pin the app to the Start Menu.
 
-    **or**
+    - If you didn't specify `/region` when preinstalling the app, pin the app to the Start Menu with [LayoutModification.xml](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop). 
 
-    b.  If you did specify `/region` when preinstalling the app, and you want to pin the app to the Start Menu for specific regions, use the [`RequiredStartGoups Region="region1|region2"` element in LayoutModification.xml](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#requiredstartgroups) to specify the regions where you want the app to appear.
+      **or**
+
+    - If you did specify `/region` when preinstalling the app, and you want to pin the app to the Start Menu for specific regions, use the [`RequiredStartGroups Region="region1|region2"` element in LayoutModification.xml](https://docs.microsoft.com/en-us/windows/configuration/start-layout-xml-desktop#requiredstartgroups) to specify the regions where you want the app to appear.
 
 5.  Save changes and unmount the image. At the command prompt, type:
 

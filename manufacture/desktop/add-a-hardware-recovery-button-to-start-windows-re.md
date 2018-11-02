@@ -18,7 +18,7 @@ On UEFI-based computers, you can configure a hardware recovery button (or button
 
 Relative to Windows 8/8.1, the recommended implementation in Windows 10 for such hardware buttons has been greatly simplified. You no longer need to copy Windows boot files to an unmanaged location on the EFI system partition (ESP) to create a secondary boot path. Instead, Windows configures and manages all the on-disk resources required to support the hardware buttons. The design can be summarized as follows:
 
-1.  Windows 10 automatically creates a secondary Boot Configuration Data (BCD) store in the folder \\EFI\\Microsoft\\Recovery.
+1.  Windows 10 automatically creates a secondary Boot Configuration Data (BCD) store in the folder `\EFI\Microsoft\Recovery`.
 
     When Windows RE is installed, this secondary BCD store is automatically populated with the appropriate settings to boot Windows RE by default.
 
@@ -26,7 +26,7 @@ Relative to Windows 8/8.1, the recommended implementation in Windows 10 for suc
 
 2.  You will still need to create a static boot device entry for recovery at the end of the UEFI firmware boot order list.
 
-    This boot device entry should point to the default Windows Boot Manager (bootmgfw.efi) in the folder \\EFI\\Microsoft\\Boot on the ESP.
+    This boot device entry should point to the default Windows Boot Manager (bootmgfw.efi) in the folder `\EFI\Microsoft\Boot` on the ESP.
 
     The boot device entry must specify the `/RecoveryBCD` parameter.
 

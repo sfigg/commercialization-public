@@ -74,15 +74,15 @@ You can add registry keys, for example, an OEM key. To learn more, see the [Wind
 
 1.  Add a setting. For example, add a registry key:
 
-    a.  Start 'regedit'.
+    1.  Start 'regedit'.
 
-    b.  Navigate to 'HKEY_LOCAL_MACHINE\Software\OEM\Fabrikam'.
+    2.  Navigate to 'HKEY_LOCAL_MACHINE\Software\OEM\Fabrikam'.
 
-    c.  Click **Edit > New > String Value**.
+    3.  Click **Edit > New > String Value**.
 
-    d.  Type `FabrikamID`.
+    4.  Type `FabrikamID`.
 
-    e.  Double-click OEMID, and in **Value**, type "Fabrikam-1".
+    5.  Double-click OEMID, and in **Value**, type "Fabrikam-1".
 
 2.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
@@ -102,11 +102,11 @@ You can add registry keys, for example, an OEM key. To learn more, see the [Wind
 
 1.  Install a Windows desktop application. For example, to install Office 2016.
 
-    a.  On your technician PC, mount ISO for the deployment tool from " X21-05453 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-05495 SW DVD5 Office 2016 v16.2 Deployment Tool for OEM\X21-05495.img"
+    1.  On your technician PC, mount ISO for the deployment tool from " X21-05453 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-05495 SW DVD5 Office 2016 v16.2 Deployment Tool for OEM\X21-05495.img"
 
-    b.  Copy files from mounted drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.2
+    2.  Copy files from mounted drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.2
     
-    c.  Double click e:\Officev16.2\officedeploymenttool.exe
+    3.  Double click e:\Officev16.2\officedeploymenttool.exe
 
 
 2.  Start a command prompt.

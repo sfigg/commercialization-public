@@ -71,9 +71,15 @@ The following XML output shows how to name a customized theme, as well as set th
 ```
 <Themes>
    <ThemeName>Fabrikam Theme</ThemeName>
-   <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>
+   <DefaultThemesOff>false</DefaultThemesOff>
+   <DesktopBackground>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-wallpaper.jpg</DesktopBackground>
+   <BrandIcon>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-logo.png</BrandIcon>
+   <WindowColor>Automatic</WindowColor>
+   <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
 </Themes>
 ```
+
+
 
 ## Related topics
 
