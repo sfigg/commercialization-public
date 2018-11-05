@@ -4,7 +4,7 @@ Description: TPM 2.0 - Self Test - (WoW64 for ARM64)
 ms.assetid: 
 author: dawn.wood
 ms.author: dawnwood
-ms.date: 10/11/2018
+ms.date: 11/05/2018
 ms.topic: article
 
 
