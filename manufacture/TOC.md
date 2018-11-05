@@ -366,11 +366,10 @@
 
 ## [IoT Core manufacturing](iot/index.md)
 
-### [Getting started]()
-#### [OEM License Requirements](iot/license-requirements.md)
-#### [Create and install packages](iot/create-install-package.md)
-#### [Windows 10 IoT Core Services](iot/IoTCoreServicesOverview.md)
-#### [Frequently Asked Questions](iot/CommercializationFAQ.md)
+### [OEM License Requirements](iot/license-requirements.md)
+### [Create and install packages](iot/create-install-package.md)
+### [Windows 10 IoT Core Services](iot/IoTCoreServicesOverview.md)
+### [Frequently Asked Questions](iot/CommercializationFAQ.md)
 
 ### [IoT Core manufacturing guide](iot/iot-core-manufacturing-guide.md)
 #### [Overview](iot/iot-core-manufacturing-guide.md)
