@@ -4,7 +4,7 @@ Description: Bluetooth - BluetoothAudioProfilesVerify (Bring Up)
 ms.assetid: 
 author: dawn.wood
 ms.author: dawnwood
-ms.date: 10/11/2018
+ms.date: 11/05/2018
 ms.topic: article
 
 
