@@ -38,7 +38,7 @@ A Favorite can include web content such as links, feeds, web slices, or document
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -88,9 +88,9 @@ The following XML example shows three Favorite bar items.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -84,7 +84,7 @@ The following table summarizes the support for the Simple Peripheral Bus.
 </tbody>
 </table>
 
- 
+ 
 
 ## Design considerations for SPB
 
@@ -195,7 +195,7 @@ Controller ACPI settings and bus parameters are vendor-specific and dependent on
 </tbody>
 </table>
 
- 
+ 
 
 For an ACPI example, see [How to Get the Connection Settings for a Device](https://msdn.microsoft.com/library/windows/hardware/jj938061.aspx). For more information about how to integrate devices on low power buses, see [Accessing GPIO, I2C, and UART Devices](https://channel9.msdn.com/Events/WinHEC/2015/DDF300).
 

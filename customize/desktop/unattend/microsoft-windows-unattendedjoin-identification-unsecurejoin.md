@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 If `UnsecureJoin` is enabled, do not create settings for [Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md), [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md), or [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md).
 
- 
+ 
 
 ## Values
 
@@ -36,21 +36,21 @@ If `UnsecureJoin` is enabled, do not create settings for [Domain](microsoft-wind
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Adds the computer to the domain without requiring that [Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md), [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md), and [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md) are specified in the Credentials section for authentication to the domain during the domain join process.</p></td>
+<td><p>Adds the computer to the domain without requiring that <a href="microsoft-windows-unattendedjoin-identification-credentials-domain.md" data-raw-source="[Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md)">Domain</a>, <a href="microsoft-windows-unattendedjoin-identification-credentials-username.md" data-raw-source="[Username](microsoft-windows-unattendedjoin-identification-credentials-username.md)">Username</a>, and <a href="microsoft-windows-unattendedjoin-identification-credentials-password.md" data-raw-source="[Password](microsoft-windows-unattendedjoin-identification-credentials-password.md)">Password</a> are specified in the Credentials section for authentication to the domain during the domain join process.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Requires that a valid [Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md), [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md), and [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md) are specified in the [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md) section for authentication to the domain during the domain join process. This is the default value.</p></td>
+<td><p>Requires that a valid <a href="microsoft-windows-unattendedjoin-identification-credentials-domain.md" data-raw-source="[Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md)">Domain</a>, <a href="microsoft-windows-unattendedjoin-identification-credentials-username.md" data-raw-source="[Username](microsoft-windows-unattendedjoin-identification-credentials-username.md)">Username</a>, and <a href="microsoft-windows-unattendedjoin-identification-credentials-password.md" data-raw-source="[Password](microsoft-windows-unattendedjoin-identification-credentials-password.md)">Password</a> are specified in the <a href="microsoft-windows-unattendedjoin-identification-credentials.md" data-raw-source="[Credentials](microsoft-windows-unattendedjoin-identification-credentials.md)">Credentials</a> section for authentication to the domain during the domain join process. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 [Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md), [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md), and [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md) must not be specified in the Credentials section if `UnsecureJoin` is set to true.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -81,9 +81,9 @@ The following XML output shows the computer added to the domain without the requ
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,7 +50,7 @@ To apply a profile to one or more open traces, do the following:
 **Note**  
 WPA also maintains a list of most recently used profiles in the menu under **Profiles**, **Apply Recently Used Profile**.
 
- 
+ 
 
 ## Profile Catalog
 
@@ -87,7 +87,7 @@ You can also use your current view as the default profile that is used when you 
 **Note**  
 You cannot change the startup profile when multiple traces are open.
 
- 
+ 
 
 ## Related topics
 
@@ -96,9 +96,9 @@ You cannot change the startup profile when multiple traces are open.
 
 [Comparative Analysis Views](comparative-analysis-views.md)
 
- 
+ 
 
- 
+ 
 
 
 

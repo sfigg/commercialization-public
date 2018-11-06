@@ -19,7 +19,7 @@ You can use the REAgentC.exe tool to configure a Windows Recovery Environment (
 **Note**  
 If you are using Windows PE 2.X, 3.X, or 4.X to configure recovery on an offline Windows 10 installation, you must use the Winrecfg.exe file from the Recovery folder of the Windows Assessment and Deployment Kit (Windows ADK). Winrecfg.exe supports only the offline operations that REAgentC.exe supports.
 
- 
+ 
 
 ## <span id="REAgentC_Commands"></span><span id="reagentc_commands"></span><span id="REAGENTC_COMMANDS"></span>REAgentC Commands
 
@@ -57,10 +57,10 @@ The following table describes these command-line options:
 <td align="left"><p><strong>/enable</strong> [<strong>/auditmode</strong>] [<strong>/osguid</strong> &lt;bcd_guid&gt;]</p></td>
 <td align="left"><p>Both</p></td>
 <td align="left"><p>Enables a custom Windows RE boot image.</p>
-<p>The <strong>/enable</strong> option runs automatically during the specialize configuration pass. If you don't specify a Windows RE boot image, the computer attempts to enable Windows RE by using the default Winre.wim file from the \Windows\System32\Recovery folder.</p>
+<p>The <strong>/enable</strong> option runs automatically during the specialize configuration pass. If you don&#39;t specify a Windows RE boot image, the computer attempts to enable Windows RE by using the default Winre.wim file from the \Windows\System32\Recovery folder.</p>
 <ul>
 <li><p><strong>/auditmode</strong>:</p>
-<p>By default, the <strong>/enable</strong> option doesn't perform any actions when Windows is in audit mode. To override the default behavior and enable Windows RE from audit mode, specify the <strong>/auditmode</strong> option. For example:</p>
+<p>By default, the <strong>/enable</strong> option doesn&#39;t perform any actions when Windows is in audit mode. To override the default behavior and enable Windows RE from audit mode, specify the <strong>/auditmode</strong> option. For example:</p>
 <pre class="syntax" space="preserve"><code>Reagentc /enable /auditmode</code></pre>
 <p>If you generalize the image after you use the <strong>/enable</strong> option in audit mode, Windows RE is disabled until you use the <strong>/enable</strong> option again or until after the specialize configuration pass runs.</p></li>
 <li><p><strong>/osguid</strong> &lt;bcd_guid&gt;:</p>
@@ -103,23 +103,23 @@ The following table describes these command-line options:
 <td align="left"><p>Both</p></td>
 <td align="left"><p>Registers the link to a custom tool that appears in the Windows boot options menu. For example:</p>
 <pre class="syntax" space="preserve"><code>Reagentc /setbootshelllink /configfile F:\BootMenu\AddDiagnosticsToolToBootMenu.xml</code></pre>
-<p>The BootShellXML file is an.xml file that contains the <em>&lt;BootShell&gt;</em> element and the <em>&lt;Name&gt;</em> and <em>&lt;Description&gt;</em> attributes that you want to appear in the link. For more information, see [Customize Windows RE](customize-windows-re.md).</p>
+<p>The BootShellXML file is an.xml file that contains the <em>&lt;BootShell&gt;</em> element and the <em>&lt;Name&gt;</em> and <em>&lt;Description&gt;</em> attributes that you want to appear in the link. For more information, see <a href="customize-windows-re.md" data-raw-source="[Customize Windows RE](customize-windows-re.md)">Customize Windows RE</a>.</p>
 <p>Use the <strong>/target</strong> option to specify the location of the offline Windows image. If this argument is not used, the running operating system is used. For example:</p>
 <pre class="syntax" space="preserve"><code>Reagentc /setbootshelllink /target W:\Windows</code></pre></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

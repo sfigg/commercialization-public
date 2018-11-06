@@ -79,7 +79,7 @@ This example starts the process being analyzed from the command-line sequence th
     </tbody>
     </table>
 
-     
+     
 
 3.  Type the following command: `xperf -stop -stop HeapSession -d HeapTrace.etl`
 
@@ -103,9 +103,9 @@ Take the following steps:
 
 [heap](heap.md)
 
- 
+ 
 
- 
+ 
 
 
 

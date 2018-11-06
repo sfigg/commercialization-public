@@ -25,7 +25,7 @@ You can save hard disk space by configuring Windows Setup to uninstall Windows�
 **Warning**  
 We recommend that you do not use this setting. Uninstalling Windows RE disables functionalities that allow users to troubleshoot and recover from startup problems.
 
- 
+ 
 
 ## Values
 
@@ -48,7 +48,7 @@ We recommend that you do not use this setting. Uninstalling Windows RE disables 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -79,9 +79,9 @@ The following XML output shows how to instruct Windows to save drive space by un
 
 [Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent.md)
 
- 
+ 
 
- 
+ 
 
 
 

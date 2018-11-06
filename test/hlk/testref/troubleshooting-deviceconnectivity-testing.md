@@ -18,27 +18,27 @@ ms.topic: article
 
 To troubleshoot issues with PCI device, USB devices, or USB hub connectivity tests, follow these steps:
 
-1.  Review:
+1. Review:
 
-    -   [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)
+   - [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md)
 
-    -   The following topics, depending on the device type:
+   - The following topics, depending on the device type:
 
-        -   [PCI Device.Connectivity Testing Prerequisites](pci-deviceconnectivity-testing-prerequisites.md)
+     -   [PCI Device.Connectivity Testing Prerequisites](pci-deviceconnectivity-testing-prerequisites.md)
 
-        -   [Proximity Device.Connectivity Testing Prerequisites](proximity-deviceconnectivity-testing-prerequisites.md)
+     -   [Proximity Device.Connectivity Testing Prerequisites](proximity-deviceconnectivity-testing-prerequisites.md)
 
-        -   [USB Device.Connectivity Testing Prerequisites](usb-deviceconnectivity-testing-prerequisites.md)
+     -   [USB Device.Connectivity Testing Prerequisites](usb-deviceconnectivity-testing-prerequisites.md)
 
-        -   [USB Hub.Connectivity Testing Prerequisites](usb-hubconnectivity-testing-prerequisites.md)
+     -   [USB Hub.Connectivity Testing Prerequisites](usb-hubconnectivity-testing-prerequisites.md)
 
-    -   
+   - 
 
-2.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](..\user\windows-hardware-lab-kit-filters.md).
+2. Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](../user/windows-hardware-lab-kit-filters.md).
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-4.  If you cannot obtain a successful test result, contact [Windows HLK Support](..\user\windows-hlk-support.md).
+4. If you cannot obtain a successful test result, contact [Windows HLK Support](../user/windows-hlk-support.md).
 
 ### <span id="Information_about_USB_connectivity_tests_for_Windows_7"></span><span id="information_about_usb_connectivity_tests_for_windows_7"></span><span id="INFORMATION_ABOUT_USB_CONNECTIVITY_TESTS_FOR_WINDOWS_7"></span>Information about USB connectivity tests for Windows 7
 
@@ -63,11 +63,11 @@ When you are testing a device that has an embedded high-speed hub, attach the de
 
 [Device.Connectivity Tests](device-connectivity-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

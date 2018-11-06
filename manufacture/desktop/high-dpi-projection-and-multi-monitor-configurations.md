@@ -38,16 +38,16 @@ For projection scenarios, per-monitor scaling is required to provide a usable pr
 **Important**  
 Projectors work best in duplicate mode if they support resolutions and video modes that are similar to the device that is projecting. For example, if the dominant portable devices in the enterprise have 1366x768 and 1920x1080 displays, the projectors that are used should support the same resolutions for the best duplicate mode experiences.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 By default, Windows displays the Bluetooth icon when the system has a Bluetooth module or adapter. Otherwise, the icon is not displayed.
 
@@ -83,9 +83,9 @@ The following XML output shows how to enable the Bluetooth taskbar.
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

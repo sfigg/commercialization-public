@@ -83,7 +83,7 @@ The following table describes the assessment settings, recommended values, and a
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -96,9 +96,9 @@ The following table describes the assessment settings, recommended values, and a
 
 [Media Transcoding Performance](media-transcoding-performance.md)
 
- 
+ 
 
- 
+ 
 
 
 

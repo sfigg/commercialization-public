@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to set a [FeedList](microsoft-windows-ie-inte
 
 [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -45,7 +45,7 @@ The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbna
 |                     | Lifetime By Process, Thread          |       |
 | Stacks              | Count by Event Name                  |       |
 
- 
+ 
 
 ## Computation graphs
 
@@ -75,7 +75,7 @@ The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbna
 |                        | ISR Timeline by Module, Function          |       |
 | CPU Usage (Attributed) | Utilization by Process, Thread, Activity  |       |
 
- 
+ 
 
 ## Storage graphs
 
@@ -107,7 +107,7 @@ The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbna
 |                    | Size by File Name, Process, Stack for Read/Write |       |
 |                    | Size by Process, Stack for Read/Write            |       |
 
- 
+ 
 
 ## Memory graphs
 
@@ -125,7 +125,7 @@ The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbna
 | Virtual Memory Snapshots      | Default                        |       |
 | Pool Graphs                   | Outstanding Size by Paged, Tag |       |
 
- 
+ 
 
 ## Video graphs
 
@@ -139,7 +139,7 @@ The Graph Explorer window in Windows Performance Analyzer (WPA) displays thumbna
 |                      | Dwm Frame GPU                 |       |
 |                      | Rectangle by Type             |       |
 
- 
+ 
 
 ## Power graphs
 
@@ -176,7 +176,7 @@ Text
 | Processor Frequency                    | Frequency by Processor                 |       |
 | Processor Constraints                  | Constraints by Processor               |       |
 
- 
+ 
 
 ## Related topics
 
@@ -187,9 +187,9 @@ Text
 
 [WPA User Interface](wpa-user-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ ms.topic: article
 
 Windows 10 IoT Core (IoT Core) can be used on low cost, small footprint devices that support Universal Apps. For more information, visit http://windowsondevices.com.
 
- 
+ 
 
- 
+ 
 
 
 

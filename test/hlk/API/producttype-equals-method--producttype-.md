@@ -25,7 +25,7 @@ This function overloads the [Equals](producttype-equals-method.md) function to p
 
 `public override bool Equals (`
 
-          `ProductType other`
+          `ProductType other`
 
 `)`
 
@@ -46,9 +46,9 @@ Returns true if the objects are the same.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

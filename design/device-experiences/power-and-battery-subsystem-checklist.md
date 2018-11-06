@@ -36,25 +36,25 @@ System designers can use the checklists included in this section to verify that 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Power and battery user experience requirements](power-and-battery-user-experience-requirements.md)</p></td>
+<td><p><a href="power-and-battery-user-experience-requirements.md" data-raw-source="[Power and battery user experience requirements](power-and-battery-user-experience-requirements.md)">Power and battery user experience requirements</a></p></td>
 <td><p>The checklist in this article contains requirements that the power supply and battery subsystem must meet to achieve a satisfactory overall user experience.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ACPI firmware implementation requirements](acpi-firmware-implementation-requirements.md)</p></td>
+<td><p><a href="acpi-firmware-implementation-requirements.md" data-raw-source="[ACPI firmware implementation requirements](acpi-firmware-implementation-requirements.md)">ACPI firmware implementation requirements</a></p></td>
 <td><p>The checklists in this article contain requirements that the ACPI platform firmware must meet to properly support the power and battery subsystem.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Platform hardware implementation requirements](platform-hardware-implementation-requirements.md)</p></td>
+<td><p><a href="platform-hardware-implementation-requirements.md" data-raw-source="[Platform hardware implementation requirements](platform-hardware-implementation-requirements.md)">Platform hardware implementation requirements</a></p></td>
 <td><p>Windows supports two hardware topologies for the power and charging subsystem. For S3/S4-based systems, only embedded controller-based solutions are allowed. For modern standby systems, the system designer can choose between an embedded controller-based solution and an SPB-based solution. This topic describes the requirements for each of the two topologies. A system must comply with the requirements for the selected topology only.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

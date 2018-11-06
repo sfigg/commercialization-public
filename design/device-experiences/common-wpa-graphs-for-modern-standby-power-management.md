@@ -58,7 +58,7 @@ You can use the DRIPS graph to determine the top active devices during the moder
 
 **Note**  Some devices can be active because an activator is running tasks that require the device to be active. Common examples are the primary storage (eMMc/SSD) and Wi-Fi devices, which are active whenever the BI activator is active.
 
- 
+ 
 
 To identify the most active devices, open the table view and look at the % Reason Time column, which shows the percentage of time that each device was active during the modern standby session.
 
@@ -66,9 +66,9 @@ In addition to activators and devices, a final reason that the system cannot ent
 
 You can view the active processes by expanding the CPU Activity row.
 
- 
+ 
 
- 
+ 
 
 
 

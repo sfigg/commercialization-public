@@ -65,7 +65,7 @@ If the function fails one of the system error codes is returned. The following t
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -82,9 +82,9 @@ The list of Wi-Fi interface GUIDs can be obtained by calling [WlanMTEEnumAdapter
 
 [Wi-Fi manufacturing API](wi-fi-manufacturing-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

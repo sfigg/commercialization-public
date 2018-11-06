@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -93,9 +93,9 @@ The following XML sample output shows how to set SNMP.
 
 [TrapConfigurationItems](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,7 +37,7 @@ ms.topic: article
 </tr>
 <tr class="even">
 <td><p><strong>DeleteChildPool</strong></p></td>
-<td><p>This method deletes a child machine pool that doesn't contain any machines in it.</p></td>
+<td><p>This method deletes a child machine pool that doesn&#39;t contain any machines in it.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DeleteMachine</strong></p></td>
@@ -52,7 +52,7 @@ ms.topic: article
 <td><p>This method retrieves the enumerable list of child machine pools for this machine pool.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetConfiguration](machinepoolgetconfiguration-method.md)</p></td>
+<td><p><a href="machinepoolgetconfiguration-method.md" data-raw-source="[GetConfiguration](machinepoolgetconfiguration-method.md)">GetConfiguration</a></p></td>
 <td><p>Retrieves the crash dump configuration for all machines in the machine pool.</p></td>
 </tr>
 <tr class="odd">
@@ -90,7 +90,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -118,11 +118,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

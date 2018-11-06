@@ -42,9 +42,9 @@ This method provides an Inequality operator between two **MachineSet** objects.
 
 `Public Shared Operator <> ( _`
 
-          `first As MachineSet, _`
+          `first As MachineSet, _`
 
-          `second As MachineSet _`
+          `second As MachineSet _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ This method provides an Inequality operator between two **MachineSet** objects.
 
 `public static bool operator != (`
 
-          `MachineSet first,`
+          `MachineSet first,`
 
-          `MachineSet second`
+          `MachineSet second`
 
 `)`
 
@@ -63,11 +63,11 @@ This method provides an Inequality operator between two **MachineSet** objects.
 
 *first*
 
-          The first **MachineSet** object to compare against.
+          The first **MachineSet** object to compare against.
 
 *second*
 
-          The second **MachineSet** object to compare against.
+          The second **MachineSet** object to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ This method provides an Inequality operator between two **MachineSet** objects.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

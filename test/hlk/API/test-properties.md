@@ -32,29 +32,29 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AreFiltersApplied](test-arefiltersapplied-property.md)</p></td>
+<td><p><a href="test-arefiltersapplied-property.md" data-raw-source="[AreFiltersApplied](test-arefiltersapplied-property.md)">AreFiltersApplied</a></p></td>
 <td><p>Gets a value indicating whether filters have been applied for this result.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ExecutionState](testexecutionstate-property.md)</p></td>
+<td><p><a href="testexecutionstate-property.md" data-raw-source="[ExecutionState](testexecutionstate-property.md)">ExecutionState</a></p></td>
 <td><p>Indicates whether there is an instance of this test that is queued, waiting to be run, or not running.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[InstanceId](testinstanceid-property.md)</p></td>
+<td><p><a href="testinstanceid-property.md" data-raw-source="[InstanceId](testinstanceid-property.md)">InstanceId</a></p></td>
 <td><p>Gets the instance Id.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ManuallyAdded](test-manuallyadded-property.md)</p></td>
+<td><p><a href="test-manuallyadded-property.md" data-raw-source="[ManuallyAdded](test-manuallyadded-property.md)">ManuallyAdded</a></p></td>
 <td><p>Gets whether the test was added separate from the feature detection process.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Status](teststatus-property.md)</p></td>
+<td><p><a href="teststatus-property.md" data-raw-source="[Status](teststatus-property.md)">Status</a></p></td>
 <td><p>Gets the status of the test.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -78,11 +78,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ In summary:
 
 [USB Remote NDIS Devices and Windows](http://msdn.microsoft.com/windows/hardware/gg463298.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

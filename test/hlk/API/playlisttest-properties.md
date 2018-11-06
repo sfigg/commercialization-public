@@ -32,33 +32,33 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[FeatureSet](playlisttest-featureset-property.md)</p></td>
-<td><p>The list of [PlaylistFeature](playlistfeature-class.md) objects.</p></td>
+<td><p><a href="playlisttest-featureset-property.md" data-raw-source="[FeatureSet](playlisttest-featureset-property.md)">FeatureSet</a></p></td>
+<td><p>The list of <a href="playlistfeature-class.md" data-raw-source="[PlaylistFeature](playlistfeature-class.md)">PlaylistFeature</a> objects.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Id](playlisttest-id-property.md)</p></td>
+<td><p><a href="playlisttest-id-property.md" data-raw-source="[Id](playlisttest-id-property.md)">Id</a></p></td>
 <td><p>The test Id.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Name](playlisttest-name-property.md)</p></td>
+<td><p><a href="playlisttest-name-property.md" data-raw-source="[Name](playlisttest-name-property.md)">Name</a></p></td>
 <td><p>The test name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OSPlatformSet](playlisttest-osplatformset-property.md)</p></td>
-<td><p>The list of associated [PlaylistOSPlatform](playlistosplatform-class.md) objects.</p></td>
+<td><p><a href="playlisttest-osplatformset-property.md" data-raw-source="[OSPlatformSet](playlisttest-osplatformset-property.md)">OSPlatformSet</a></p></td>
+<td><p>The list of associated <a href="playlistosplatform-class.md" data-raw-source="[PlaylistOSPlatform](playlistosplatform-class.md)">PlaylistOSPlatform</a> objects.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Version](playlisttest-version-property.md)</p></td>
+<td><p><a href="playlisttest-version-property.md" data-raw-source="[Version](playlisttest-version-property.md)">Version</a></p></td>
 <td><p>The test version.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

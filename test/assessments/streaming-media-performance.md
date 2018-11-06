@@ -27,10 +27,10 @@ The focus of the assessment is on video playback using Internet Explorer. The as
 
 A glitch is any detectable visual or auditory defect in the user experience. The assessment provides test results for video glitches. It reports glitches for one-second intervals throughout the running of the video content. The video glitches are categorized as minor, medium, and major. The assessment also reports the placement of the glitches. Viewers are likely to notice when three or more consecutive frames are dropped. Additionally, although the audio stream is less likely to be interrupted than the video stream, a series of consecutive dropped video frames affect the viewer experience because the audio track is briefly not synchronized with the video track. For more information about the results and issues produced by this assessment, see [Results for the Streaming Media Performance Assessment](results-for-the-streaming-media-performance-assessment.md).
 
-**Warning**  
+**Warning**  
 Note that when the Streaming Media Assessment is configured to stream to the same device that is playing back the video (default settings), there may be audio or video glitches that are not actionable. The ideal scenario to test streaming media is to set up a remote server described here: [Streaming media assessment: set up a remote server](set-up-a-remote-server-for-the-streaming-media-performance-assessment.md).
 
- 
+
 
 In this topic:
 
@@ -51,63 +51,62 @@ Enable analysis trace collection only when you need additional information to in
 
 To prepare to run the assessment, follow these steps:
 
-1.  Exit any open applications.
+1. Exit any open applications.
 
-    **Important**  
-    Do not touch the mouse or keyboard after the assessment job starts. Running other applications or jobs at the same time as the assessment job can affect your results. Also, the Streaming Media Performance assessment does not include any measurement of seeking or pausing functionality. Do not seek or pause the video during the assessment.
+   **Important**  
+   Do not touch the mouse or keyboard after the assessment job starts. Running other applications or jobs at the same time as the assessment job can affect your results. Also, the Streaming Media Performance assessment does not include any measurement of seeking or pausing functionality. Do not seek or pause the video during the assessment.
 
-     
 
-2.  Complete the appropriate steps to set up the assessment job on a single computer or on two computers that are connected over a network, as shown in the following table.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Job type</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Run the job on a single computer</p></td>
-    <td><p>To run the job on a single computer, install the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference and open Windows Assessment Console. Then, follow the instructions that are provided in the introduction to run the Streaming Media Performance assessment.</p>
-    <p>The job runs automatically in Internet Explorer 10 or later versions. The job runs in the Internet Explorer Media pipeline in full-screen mode. We do not recommend user interaction.</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>By default, a 1080p, 30-fps video is available to the job. The assessment plays on the full computer screen. Additional workloads include 360p at 30 fps, 480p at 30 fps, and 720p at 30 fps.</p>
-    </div>
-    <div>
-     
-    </div>
-    <p>When the job runs on a single computer, the job results include the number of video or audio glitches that occur.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Run the job on two computers</p></td>
-    <td><p>To run the job on two networked computers, install the Windows ADK Technical Reference on both computers, open Windows Assessment Console, select the Streaming Media Performance assessment, and then configure the settings as shown in [Settings](#settings).</p>
-    <p>The local computer streams content from the HTTP streaming server application that is installed on the second or remote computer.</p></td>
-    </tr>
-    </tbody>
-    </table>
+2. Complete the appropriate steps to set up the assessment job on a single computer or on two computers that are connected over a network, as shown in the following table.
 
-     
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Job type</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>Run the job on a single computer</p></td>
+   <td><p>To run the job on a single computer, install the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference and open Windows Assessment Console. Then, follow the instructions that are provided in the introduction to run the Streaming Media Performance assessment.</p>
+   <p>The job runs automatically in Internet Explorer 10 or later versions. The job runs in the Internet Explorer Media pipeline in full-screen mode. We do not recommend user interaction.</p>
+   <div class="alert">
+   <strong>Note</strong><br/><p>By default, a 1080p, 30-fps video is available to the job. The assessment plays on the full computer screen. Additional workloads include 360p at 30 fps, 480p at 30 fps, and 720p at 30 fps.</p>
+   </div>
+   <div>
+
+   </div>
+   <p>When the job runs on a single computer, the job results include the number of video or audio glitches that occur.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>Run the job on two computers</p></td>
+   <td><p>To run the job on two networked computers, install the Windows ADK Technical Reference on both computers, open Windows Assessment Console, select the Streaming Media Performance assessment, and then configure the settings as shown in <a href="#settings" data-raw-source="[Settings](#settings)">Settings</a>.</p>
+   <p>The local computer streams content from the HTTP streaming server application that is installed on the second or remote computer.</p></td>
+   </tr>
+   </tbody>
+   </table>
+
+
 
 Before the assessment starts, the Streaming Media Performance assessment runs some pre-checks on the system. When these pre-checks fail, the assessment will generate errors and warnings. Although errors block the assessment from running, warnings do not block the assessment from running. You can make the adjustments that are recommended in the warning message, and continue to run the job. Unaddressed warnings and errors are reported in the results. For more information about the results and issues produced by this assessment, see [Results for the Streaming Media Performance Assessment](results-for-the-streaming-media-performance-assessment.md#bkmk-precheck).
 
 ### System Requirements
 
-You can run this assessment only on a computer that is running Windows 8 and Internet Explorer 10.
+You can run this assessment only on a computer that is running Windows 8 and Internet Explorer 10.
 
 Supported architectures include x86-based, x64-based systems, and ARM-based systems.
 
-There are two ways to run this assessment on Windows RT:
+There are two ways to run this assessment on Windows RT:
 
--   Package the assessment job in the Windows Assessment Console (WAC) and then run it on Windows RT. For more information, see [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
+-   Package the assessment job in the Windows Assessment Console (WAC) and then run it on Windows RT. For more information, see [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
 
--   Use Windows Assessment Services to run assessments on Windows RT. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
+-   Use Windows Assessment Services to run assessments on Windows RT. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
 
 ## <a href="" id="bkmk-streamingworkloads"></a>Workloads
 
@@ -126,10 +125,10 @@ You can select any combination of these workloads to run during the assessment.
 
 The “p” in the video resolution indicates Progressive scan, which is used in computer monitors and digital televisions. An “i” in video resolution indicates Interlaced scan, used in standard television formats. Interlaced video content is not used in this assessment.
 
-**Note**  
+**Note**  
 You can also use the Streaming Media assessment as a workload in an energy-efficiency job. For more information about energy-efficiency jobs, see [Connected Standby Energy Efficiency](connected-standby-energy-efficiency.md) and [Create and run an energy efficiency job](create-and-run-an-energy-efficiency-job.md).
 
- 
+
 
 ## Settings
 
@@ -187,7 +186,7 @@ The following table describes the assessment settings, recommended setting value
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -200,9 +199,9 @@ The following table describes the assessment settings, recommended setting value
 
 [Connected Standby Energy Efficiency](connected-standby-energy-efficiency.md)
 
- 
 
- 
+
+
 
 
 

@@ -98,9 +98,9 @@ Before this audio glitch, the long-running **iexplore.exe** process was running 
 
 ![Screenshot of Media eXperience Analyzer (MXA) showing CallStack dataviewer.](images/optimizingwindowsdeviceslab6.png)
 
- 
+ 
 
- 
+ 
 
 
 

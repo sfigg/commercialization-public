@@ -58,7 +58,7 @@ The following table lists the settings you can use to set the standby budget, wh
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[StandbyBudgetPercent](standbybudgetpercent.md)</p></td>
+<td><p><a href="standbybudgetpercent.md" data-raw-source="[StandbyBudgetPercent](standbybudgetpercent.md)">StandbyBudgetPercent</a></p></td>
 <td><p>Defines the battery drain % that the user is allowed in a standby session. Default is 5%.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbybudgetpercent</code></p></td>
@@ -89,7 +89,7 @@ Reserve time is the amount of time the user is guaranteed to have the screen on 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[StandbyReserveTime](standbyreservetime.md)</p></td>
+<td><p><a href="standbyreservetime.md" data-raw-source="[StandbyReserveTime](standbyreservetime.md)">StandbyReserveTime</a></p></td>
 <td><p>Defines the screen on time, in seconds, that will be available to the user after standby exits and the screen turns on. Default is 1200 seconds.</p></td>
 <td><p>Power setting</p></td>
 <td><p><code>powercfg /setdcvalueindex scheme_current sub_presence standbyreservetime</code></p></td>

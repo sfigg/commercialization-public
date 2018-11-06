@@ -22,9 +22,9 @@ A requirement (for example, "all PCI devices must do *x*") maps to only one feat
 
 A feature can apply to only a subset of operating system versions or platforms. For example, a requirement might apply to only Windows 7 x86, or to it might apply to Windows 8 (x86) and Windows 8 (x64) (but not Windows Server 2012).
 
- 
+ 
 
- 
+ 
 
 
 

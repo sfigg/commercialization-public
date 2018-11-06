@@ -167,7 +167,7 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 | Wolof | wo-SN | Primary: fr-FR <p>Secondary: en-GB, en-US</p> | 0x0488 | 1160 |
 | Yoruba (Nigeria) | yo-NG | Primary: en-US <p>Secondary: en-GB</p> | 0x046a | 1130 |
 
- 
+ 
 
 ## Related topics
 
@@ -178,7 +178,7 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 
 [Default Input Locales for Windows Language Packs](default-input-locales-for-windows-language-packs.md)
 
- 
+ 
 
 
 

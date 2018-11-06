@@ -76,7 +76,7 @@ In this step, you add language support and the Windows Setup optional components
     **Important**  
     For Windows Server 2016, you must use the WinPE-Setup-Server optional components instead of the WinPE-Setup-Client optional components.
 
-     
+     
 4.  For Japanese (ja-JP), Korean (ko-KR), and Chinese (zh-HK, zh-CN, zh-TW), you have to add additional font support to your image. For example, to add Japanese font support:
 
     ```
@@ -206,9 +206,9 @@ You can now use the multilingual image to create media for distribution. To crea
 
 [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md)
 
- 
+ 
 
- 
+ 
 
 
 

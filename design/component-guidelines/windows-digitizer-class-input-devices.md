@@ -32,15 +32,15 @@ Touch interfaces can be found today across myriad devices ranging from mobile ph
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>[Pen Devices](pen-devices.md)</p></td>
+<td><p><a href="pen-devices.md" data-raw-source="[Pen Devices](pen-devices.md)">Pen Devices</a></p></td>
 <td><p>This section provides information about how to implement and validate an integrated Windows pen device, for Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Precision Touchpad Devices](precision-touchpad-devices.md)</p></td>
+<td><p><a href="precision-touchpad-devices.md" data-raw-source="[Precision Touchpad Devices](precision-touchpad-devices.md)">Precision Touchpad Devices</a></p></td>
 <td><p>This section provides information about how to implement and validate a Windows Precision Touchpad device, for Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Touchscreen Devices](touchscreen-devices.md)</p></td>
+<td><p><a href="touchscreen-devices.md" data-raw-source="[Touchscreen Devices](touchscreen-devices.md)">Touchscreen Devices</a></p></td>
 <td><p>This section provides information about how to implement and validate an integrated Windows Touchscreen device, for Windows 10 and later operating systems.</p></td>
 </tr>
 </tbody>

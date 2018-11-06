@@ -113,7 +113,7 @@ To start measuring Wi-Fi radio power consumption, connect the system to a Wi-Fi 
 </tbody>
 </table>
 
- 
+ 
 
 After measuring Wi-Fi module power, you should validate the system for SoC activity during modern standby with Wi-Fi connected to the public Internet. For this scenario, the Wi-Fi access point should be connected to the public Internet and the system should remain in modern standby on battery power for several hours. The purpose of the measurement is to verify that system activity stays within the expected levels (active no more than 10 percent of the time).
 
@@ -136,17 +136,17 @@ After measuring Wi-Fi module power, you should validate the system for SoC activ
 <td><p>Place the system in modern standby for 4 hours with Wi-Fi connected to a public Internet connection. At the end of the test duration, wake the system and generate a SleepStudy report.</p>
 <p>The modern standby session should stay in the low-power state more than 90 percent of the time.</p></td>
 <td><p>If the session has less than 90 percent low-power state time, use the Top Offenders table in a SleepStudy report to identify the active components.</p>
-<p>If the SleepStudy report is not helpful, capture a trace of the modern standby session, as explained in [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md).</p>
-<p>If you send a bug report to Microsoft for this problem, please include the SleepStudy-Report.html file and an ETW trace that is captured by using the instructions in [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md).</p></td>
+<p>If the SleepStudy report is not helpful, capture a trace of the modern standby session, as explained in <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a>.</p>
+<p>If you send a bug report to Microsoft for this problem, please include the SleepStudy-Report.html file and an ETW trace that is captured by using the instructions in <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

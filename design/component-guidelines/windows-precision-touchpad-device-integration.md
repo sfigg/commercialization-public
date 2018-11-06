@@ -91,7 +91,7 @@ With reference to *Figure 4 Horizontal Placement (Right-Offset)*, if a device ha
 </tbody>
 </table>
 
- 
+ 
 
 ### Vertical offset
 
@@ -107,12 +107,12 @@ Windows Precision Touchpads shall be integrated at different vertical offsets fr
 |-----------------|----------------|-------|---------------|-----------------------------|
 | Vertical Offset | SpaceBarOffset | DWORD | 1000          | Offset distance in himetric |
 
- 
+ 
 
 **Note**  
 If the touchpad is not below the space bar, but is located above the keyboard, leave the vertical offset at the default value.
 
- 
+ 
 
 ### Depth offset
 
@@ -122,9 +122,9 @@ Windows Precision Touchpads shall be integrated such that the digitizer surface 
 
 **Figure 5 Depth Offset**
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -67,9 +67,9 @@ The following XML output specifies the path to the license database.
 
 [Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

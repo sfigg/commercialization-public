@@ -42,7 +42,7 @@ This method checks if this requirement has a given name.
 
 `Public Function HasTheName ( _`
 
-          `name As String _`
+          `name As String _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method checks if this requirement has a given name.
 
 `public bool HasTheName (`
 
-          `string name`
+          `string name`
 
 `)`
 
@@ -59,7 +59,7 @@ This method checks if this requirement has a given name.
 
 *name*
 
-     Name to check this requirement for.
+     Name to check this requirement for.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ The string comparison is not case sensitive.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

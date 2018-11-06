@@ -38,9 +38,9 @@ ms.topic: article
 -   [WI-FI Direct Performance Scenario Tests](wi-fi-direct-performance-scenario-tests.md)
 -   [Running Network Switch Certification Tests](running-network-switch-certification-tests.md)
 -   [QosRemoteSettings Troubleshooting](qosremotesettings.md)
- 
+ 
 
- 
+ 
 
 
 

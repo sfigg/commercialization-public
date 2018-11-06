@@ -20,9 +20,9 @@ This test validates compliance with the Media Transfer Protocol (MTP), Revision 
 
 This test makes sure that devices that use the MTP class driver comply with MTP implementation standards. This test is directed at portable media player devices that connect by using the MTP. This test validates compliance with defined protocols based on requirements that are documented in the Windows Certification Program.
 
->[!NOTE]
->  
-This test does not cover the following items:
+> [!NOTE]
+> 
+> This test does not cover the following items:
 
 -   Digital rights management (DRM) validation
 
@@ -30,9 +30,10 @@ This test does not cover the following items:
 
 -   Devices that are not PTP or MTP-based
 
- 
+
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Portable.MediaPlayer.MTP</li></ul> |  
@@ -45,7 +46,7 @@ This test does not cover the following items:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -64,7 +65,7 @@ The MTP device should be active and plugged in before commencing the test. The t
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Portable Testing](troubleshooting-deviceportable-testing.md).
 
@@ -252,7 +253,7 @@ All other supported operations, device properties, and object properties are con
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Command_syntax"></span><span id="command_syntax"></span><span id="COMMAND_SYNTAX"></span>Command syntax
 
@@ -269,17 +270,17 @@ All other supported operations, device properties, and object properties are con
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>te.exe /p:"BVT=TRUE" MtpTest.dll /select(@name='@CapabilitiesTests*') /p "DeviceProfile=MtpMediaPlayer.xml"</strong></p></td>
+<td><p><strong>te.exe /p:&quot;BVT=TRUE&quot; MtpTest.dll /select(<xref href="name=" data-throw-if-not-resolved="False" data-raw-source="@name="></xref>&#39;<xref href="CapabilitiesTests*" data-throw-if-not-resolved="False" data-raw-source="@CapabilitiesTests*"></xref>&#39;) /p &quot;DeviceProfile=MtpMediaPlayer.xml&quot;</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -297,16 +298,16 @@ For command-line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>Mtptest.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\mtp\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\mtp&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>MtpMediaPlayer.xml</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\mtp\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\mtp&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -319,11 +320,11 @@ For command-line help for this test binary, type **/h**.
 | **TestParameters** |                       |
 | **TestSelect**     |                       |
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -111,12 +111,13 @@ Many WinPE optional components come split into two parts, a language-neutral pac
 | <span id="30"></span>Startup/WinPE-SecureStartup | WinPE-SecureStartup enables provisioning and management of BitLocker and the Trusted Platform Module (TPM). It includes BitLocker command-line tools, BitLocker WMI management libraries, a TPM driver, TPM Base Services (TBS), the Win32_TPM class, the BitLocker Unlock Wizard, and BitLocker UI libraries. The TPM driver provides better support for both BitLocker and the TPM in this preboot environment.<br><br>**Dependencies**: Install **WinPE-WMI** before you install **WinPE-SecureStartup**. |
 | <span id="31"></span>Storage/WinPE-EnhancedStorage | WinPE-EnhancedStorage enables Windows to discover additional functionality for storage devices, such as encrypted drives, and implementations that combine Trusted Computing Group (TCG) and IEEE 1667 ("Standard Protocol for Authentication in Host Attachments of Transient Storage Devices") specifications. This optional component enables Windows to manage these storage devices natively by using BitLocker. | 
 
- 
-
-## <span id="Windows_RE_optional_components"></span><span id="windows_re_optional_components"></span><span id="WINDOWS_RE_OPTIONAL_COMPONENTS"></span>Windows RE optional components
 
 
-The default Windows RE image contains the following built-in optional components:
+## <span id="Windows_RE_optional_components"></span><span id="windows_re_optional_components"></span><span id="WINDOWS_RE_OPTIONAL_COMPONENTS"></span>Windows RE optional components
+
+
+The default Windows RE image contains the following built-in optional components:
+
 | Included Optional Component |
 | ---- |
 | WinPE-EnhancedStorage |
@@ -130,13 +131,13 @@ The default Windows RE image contains the following built-in optional component
 
 ## Add more languages to images that include optional components
 
-1.  On a mounted image, list the optional components in the Windows PE image:
+1.  On a mounted image, list the optional components in the Windows PE image:
 
     ```
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
-2.  Review the resulting list of packages, and add the corresponding language packs for each package in the image, including the base Windows PE language pack.
+2.  Review the resulting list of packages, and add the corresponding language packs for each package in the image, including the base Windows PE language pack.
 
     ```
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
@@ -144,7 +145,7 @@ The default Windows RE image contains the following built-in optional component
     Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
     ```
 
-    where … WinPE\_OCs\\fr-fr\\lp.cab represents the base Windows PE language pack.
+    where … WinPE\_OCs\\fr-fr\\lp.cab represents the base Windows PE language pack.
 
 3.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
 
@@ -158,7 +159,7 @@ The default Windows RE image contains the following built-in optional component
     Dism /Get-Packages /Image:"C:\WinPE_amd64\mount"
     ```
 
-    Review the resulting list of packages and verify that the for each optional component, including the base Windows PE image, that there is an associated language pack.
+    Review the resulting list of packages and verify that the for each optional component, including the base Windows PE image, that there is an associated language pack.
 
 5.  Change the regional settings to the language you'd like to use:
 
@@ -166,7 +167,7 @@ The default Windows RE image contains the following built-in optional component
     Dism /Set-AllIntl:en-US /Image:"C:\WinPE_amd64\mount"
     ```
 
-    To switch languages while in Windows PE, use `wpeutil setmuilanguage`.
+    To switch languages while in Windows PE, use `wpeutil setmuilanguage`.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -176,9 +177,9 @@ The default Windows RE image contains the following built-in optional component
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 
- 
 
- 
+
+
 
 
 

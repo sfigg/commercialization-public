@@ -25,7 +25,7 @@ OEMs can change this default behavior so that the device does not use cellular d
 **Note**  
 Changing the default behavior may negatively impact the user experience.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
@@ -78,7 +78,7 @@ Changing the default behavior may negatively impact the user experience.
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device with a UICC.

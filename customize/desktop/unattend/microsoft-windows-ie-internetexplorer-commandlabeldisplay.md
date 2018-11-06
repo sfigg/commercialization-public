@@ -47,7 +47,7 @@ The Command Bar appears at the top of the Internet Explorer screen, and includes
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,9 +78,9 @@ The following XML output shows how to configure the Command Bar to show a toolti
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

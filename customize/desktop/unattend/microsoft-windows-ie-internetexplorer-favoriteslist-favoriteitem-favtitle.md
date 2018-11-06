@@ -31,7 +31,7 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Name_of_link</em></p></td>
-<td><p>Specifies the name of your [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md), based on your license terms, for inclusion within the Favorites folder.</p>
+<td><p>Specifies the name of your <a href="microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md" data-raw-source="[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)">FavoriteItem</a>, based on your license terms, for inclusion within the Favorites folder.</p>
 <p>You can organize favorite items into folders by preceding the value of <code>FavTitle</code> with a folder name. For example, the value <strong>Fabrikam Links\Fabrikam Support</strong> creates the Fabrikam Support <code>FavoriteItem</code> in a Fabrikam Links folder.</p>
 <p><code>FavTitle</code> must appear only once for each <code>FavoriteItem</code>.</p>
 <p><em>Name_of_link</em> is a string.</p></td>
@@ -39,7 +39,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -87,9 +87,9 @@ The following XML output specifies how to configure favorites.
 
 [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

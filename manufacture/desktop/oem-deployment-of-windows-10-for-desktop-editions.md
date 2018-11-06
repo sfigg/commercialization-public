@@ -11,14 +11,14 @@ ms.topic: article
 
 # OEM Deployment of Windows 10 for desktop editions
 
-Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to make and deploy Windows images. We'll show you how to use the tools and commands to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
+Getting ready to build and test Windows 10 desktop PCs? This lab shows you the steps to make and deploy Windows images. We'll show you how to use the tools and commands to setup an end-to-end deployment. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
 We'll walk you through the process of building a customized Windows deployment. Here's what we'll cover:
 
 ![Deployment Flow Image](images/1803-lab-flow.png)
 
 We'll start by preparing your environment, then we'll cover the steps for:
-    
+
 - Preparing and mounting a WinPE image
 - Adding packages
 - Adding drivers
@@ -69,7 +69,7 @@ A technician PC that has:
 Let's setup your lab.
 
 
-### Install the Windows ADK for Windows 10
+### Install the Windows ADK for Windows 10
 
 The Windows ADK is a collection of tools that enables you to manage and deploy custom Windows installations to new computers. 
 
@@ -97,18 +97,18 @@ WinPE is a small, command-line based operating system that you can use to captur
 
 ### Prepare WinPE files
 
-1.  On your technician PC, start the **Deployment and Imaging Tools Environment**  as an administrator:
-    -  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
+1. On your technician PC, start the **Deployment and Imaging Tools Environment**  as an administrator:
+   -  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
 
-2.  Use `copype` to create a working directory that has the base WinPE files:
+2. Use `copype` to create a working directory that has the base WinPE files:
 
-    ```
-    copype amd64 C:\winpe_amd64
-    ```
+   ```
+   copype amd64 C:\winpe_amd64
+   ```
 
    > [!Tip]
    > If this doesn't work, make sure you're in the Deployment and Imaging Tools Environment, and not the standard command prompt. 
-	
+
 ### Customize WinPE
 
 You can customize a WinPE image (boot.wim) in several ways by adding files and components to a mounted WinPE image.
@@ -185,7 +185,7 @@ Setting WinPE to use high-performance mode will speed deployment. The sample scr
     ```
 
 2. Add the following line to startnet.cmd:
-    
+
     ```
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
     ```
@@ -198,7 +198,6 @@ Run `dism /cleanup-image` to reduce the disk and memory footprint of WinPE and i
 
 ```
 DISM /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup
-
 ```
 See [WinPE: Optimize and shrink the image](winpe-optimize.md) for more details.
 
@@ -251,18 +250,18 @@ You can make either offline or online or online customizations to a Windows imag
 
 The table below shows which customizations can be made online and offline. In a manufacturing environment, it’s recommended to do as many customizations as possible offline.
 
-| Scenario |	Offline |	Online |
+| Scenario |    Offline |   Online |
 | --- | --- | --- |
-| Adding device drivers	| X |	X |
-| Adding Microsoft Store apps	| X |	X |
-| Adding Desktop (win32) apps	| - |	X |
-| Adding language packs	| X |	X |
-| Remove default language pack	| X |	- |
-| Adding features-on-demand	| X |	X |
-| Adding the latest cumulative update	| X	| X |
-| Image optimization	| X	| X |
-| Microsoft Store apps duplicate files cleanup	| X |	- |
-| Microsoft Office	| X |	X |
+| Adding device drivers | X |   X |
+| Adding Microsoft Store apps   | X |   X |
+| Adding Desktop (win32) apps   | - |   X |
+| Adding language packs | X |   X |
+| Remove default language pack  | X |   - |
+| Adding features-on-demand | X |   X |
+| Adding the latest cumulative update   | X | X |
+| Image optimization    | X | X |
+| Microsoft Store apps duplicate files cleanup  | X |   - |
+| Microsoft Office  | X |   X |
 
 ### Prepare and mount a Windows image 
 
@@ -278,21 +277,21 @@ Before working on your Windows image, you want to make sure you have a backup co
 
 First copy the install.wim from your Windows installation media to _USB-B_. Install.wim includes both Home and Professional images. We'll export the Home image from install.wim, and then work with that image during this lab.
 
-1.	Insert _USB-B_ into your technician computer.
-2.	Mount the Windows 10 Home .img from the Win Home 10 32-BIT/X64 English OPK.
-3.	From the mounted image, copy D:\sources\install.wim to C:\temp\lab\images. (Where D: is the drive letter of the mounted image.)
-4.	From the Start menu, open Windows Kits, open the **Deployment and Imaging Tools Environment** as administrator.
-5.  Make a copy of your image in case something goes wrong.
-    ```
-    copy "C:\temp\lab\Images\install.wim" C:\temp\lab\Images\install-backup.wim
-    ```
-6.  Export the Home edition (index 2) from install.wim as basicimage.wim and delete the original C:\temp\lab\images\install.wim:
+1. Insert _USB-B_ into your technician computer.
+2. Mount the Windows 10 Home .img from the Win Home 10 32-BIT/X64 English OPK.
+3. From the mounted image, copy D:\sources\install.wim to C:\temp\lab\images. (Where D: is the drive letter of the mounted image.)
+4. From the Start menu, open Windows Kits, open the **Deployment and Imaging Tools Environment** as administrator.
+5. Make a copy of your image in case something goes wrong.
+   ```
+   copy "C:\temp\lab\Images\install.wim" C:\temp\lab\Images\install-backup.wim
+   ```
+6. Export the Home edition (index 2) from install.wim as basicimage.wim and delete the original C:\temp\lab\images\install.wim:
 
-    ```
-    Dism /export-image /sourceimagefile:C:\temp\lab\images\install.wim /sourceindex:2 /destinationimagefile:C:\temp\lab\images\basicimage.wim
-    Del C:\temp\lab\images\install.wim
-    ```
-Now that you have your image exported, you can mount it.
+   ```
+   Dism /export-image /sourceimagefile:C:\temp\lab\images\install.wim /sourceindex:2 /destinationimagefile:C:\temp\lab\images\basicimage.wim
+   Del C:\temp\lab\images\install.wim
+   ```
+   Now that you have your image exported, you can mount it.
 
 #### Mount your Windows image
 
@@ -360,17 +359,19 @@ Common features include language resources like handwriting recognition. Some of
 
 The following table shows the types of language packages and components available for Windows 10:
 
-| Component     | Sample file name                                 | Dependencies | Description                                    |
-| ------------- | ------------------------------------------------ | ------------ | ---------------------------------------------- |
-| Language pack | Microsoft-Windows-Client-Language-Pack_x64_de-de.cab | None         | UI text, including basic Cortana capabilities. | 
-| Language interface pack | 	LanguageExperiencePack.am-et.neutral.appx | 	Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES.| 	UI text, including basic Cortana capabilities. To learn more, see Available Language Packs for Windows.| 
-| Basic| Microsoft-Windows-LanguageFeatures-Basic-de-de-Package| 	None| 	Spell checking, text prediction, word breaking, and hyphenation if available for the language. <p> You must add this component before adding any of the following components.<p>| 
-| Fonts| 	Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package	| None| 	Fonts required for some regions. Example, th-TH requires the Thai font pack.| 
-| Optical character recognition| 	Microsoft-Windows-LanguageFeatures-OCR-de-de-Package| 	Basic| 	Recognizes and outputs text in an image.| 
-| Handwriting recognition| 	Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package| 	Basic| 	Enables handwriting recognition for devices with pen input.| 
-| Text-to-speech| 	Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package| 	Basic	| Enables text to speech, used by Cortana and Narrator.| 
-| Speech recognition| 	Microsoft-Windows-LanguageFeatures-Speech-de-de-Package	| Basic, Text-To-Speech recognition| 	Recognizes voice input, used by Cortana and Windows Speech | Recognition.| 
-| Retail Demo experience |	Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package |	Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
+
+|           Component           |                         Sample file name                          |                                                   Dependencies                                                    |                                                                                   Description                                                                                    |
+|-------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Language pack         |       Microsoft-Windows-Client-Language-Pack_x64_de-de.cab        |                                                       None                                                        |                                                                  UI text, including basic Cortana capabilities.                                                                  |
+|    Language interface pack    |             LanguageExperiencePack.am-et.neutral.appx             |     Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES.      |                                     UI text, including basic Cortana capabilities. To learn more, see Available Language Packs for Windows.                                      |
+|             Basic             |      Microsoft-Windows-LanguageFeatures-Basic-de-de-Package       |                                                       None                                                        | Spell checking, text prediction, word breaking, and hyphenation if available for the language. <p> You must add this component before adding any of the following components.<p> |
+|             Fonts             |       Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package       |                                                       None                                                        |                                                   Fonts required for some regions. Example, th-TH requires the Thai font pack.                                                   |
+| Optical character recognition |       Microsoft-Windows-LanguageFeatures-OCR-de-de-Package        |                                                       Basic                                                       |                                                                     Recognizes and outputs text in an image.                                                                     |
+|    Handwriting recognition    |   Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package    |                                                       Basic                                                       |                                                           Enables handwriting recognition for devices with pen input.                                                            |
+|        Text-to-speech         |   Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package   |                                                       Basic                                                       |                                                              Enables text to speech, used by Cortana and Narrator.                                                               |
+|      Speech recognition       |      Microsoft-Windows-LanguageFeatures-Speech-de-de-Package      |                                         Basic, Text-To-Speech recognition                                         |                                                            Recognizes voice input, used by Cortana and Windows Speech                                                            |
+|    Retail Demo experience     | Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package | Basic, plus the language-neutral Retail Demo package: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package |                                 [Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience).                                  |
+
 #### Add or change languages
 
 In this section, we'll add languages and Features On Demand to your Windows image. We'll add the German (de-de) language pack, then we'll add the Japanese (ja-jp) language. Japanese is an example of a language that requires additional font support. 
@@ -387,13 +388,13 @@ Make sure that you are using language packs and features on demand that match th
 1. Mount the Language pack ISO, and copy the language pack .cab files for the languages you're adding to `C:\temp\lab\LanguagePacks`. The examples below will use the German and Japanese languages.
 2. Mount the Feature on Demand ISO, and copy the LanguageFeatures .cab files for the languages you're adding to `C:\temp\lab\LanguagePacks`. The examples below will use the German and Japanese languages.
 
-1.	Add German language pack and Feature on Demand language packages.
+1.  Add German language pack and Feature on Demand language packages.
 
     Use the language packs and Features on Demand from the 64-bit ISOs:
     ```
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package~31bf3856ad364e35~amd64~~.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package~31bf3856ad364e35~amd64~~.cab
     ```
-    
+
 
 2. (Optional) Add Japanese language packs and features on demand.
 
@@ -403,7 +404,7 @@ Make sure that you are using language packs and features on demand that match th
     ```
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_ja-jp.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package~31bf3856ad364e35~amd64~~.cab /packagepath:C:\Temp\Lab\LanguagePacks\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package~31bf3856ad364e35~amd64~~.cab
     ```
-    
+
 3. Verify that the language packs are now part of the mounted images:
 
     ```
@@ -438,12 +439,12 @@ Make sure that you are using language packs and features on demand that match th
 
 This section covers how to change the default language and timezone of your mounted Windows image.
 
-1.	Use DISM to set the default language of the image. We'll set the default language to German, since we added it into our image in the previous steps.:
+1.  Use DISM to set the default language of the image. We'll set the default language to German, since we added it into our image in the previous steps.:
     ```
     Dism /Image:C:\mount\windows /Set-AllIntl:de-DE
     ```
 
-2.	Verify your changes
+2.  Verify your changes
 
     ```
     Dism /Image:C:\mount\windows /Get-Intl
@@ -554,14 +555,14 @@ The following shows how to add drivers in various ways. If your hardware doesn't
 
 #### Add drivers to your Windows image
 
-1.	Add a single driver that includes an .inf file. In this example, we're using a driver named media1.inf:
-	
+1.  Add a single driver that includes an .inf file. In this example, we're using a driver named media1.inf:
+
     ```
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf"
     ```
     Where "C:\Drivers\PnP.Media.V1\media1.inf" is the base .inf file in your driver package.
 
-2.	If you want to add an entire folder of drivers, you can use the /Recurse option. This adds all .inf drivers in the folder and all its subfolders.
+2.  If you want to add an entire folder of drivers, you can use the /Recurse option. This adds all .inf drivers in the folder and all its subfolders.
 
     > [!Warning]
     > While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
@@ -570,9 +571,9 @@ The following shows how to add drivers in various ways. If your hardware doesn't
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:c:\drivers /Recurse 
     ```
 
-3.	Verify that the drivers are part of the image:
+3.  Verify that the drivers are part of the image:
     ```
-	Dism /Get-Drivers /Image:"C:\mount\windows"
+    Dism /Get-Drivers /Image:"C:\mount\windows"
     ```
     Check the list of packages and verify that the list contains the drivers you added.
 
@@ -613,7 +614,7 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
 
 > [!Important] 
 > If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
- 
+
 
 1.  Get a Windows update package. For example, grab the [latest cumulative update listed in Windows 10 update history from the Microsoft Update catalog](http://www.catalog.update.microsoft.com/Search.aspx?q=Cumulative+update). Extract the .msu file update to a folder, for example, E:\updates\windows10.0-kb4016240-x64_0e60aebeb151d4b3598e4cfa9b4ccb1fc80e6e4d.msu. Make sure that your update matches the architecture of the image you are working with.
 
@@ -625,9 +626,9 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     ```
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4000001-x64.msu"
     ```
-    
+
     You can also add multiple updates in the same command:
-    
+
     ```
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\windows10.0-kb4000001-x64.msu" /PackagePath:"E:\updates\windows10.0-kb0000002-x64.msu"
     ```
@@ -646,7 +647,7 @@ KB Files: [http://catalog.update.microsoft.com](http://catalog.update.microsoft.
     ```
     Dism /Image:C:\mount\windows /Get-Packages
     ```
-    
+
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ```
@@ -681,7 +682,7 @@ Here we'll show you how to preinstall the .Net Framework Feature on Demand.
 Note: While it’s possible to add FODs using the /add-package command, we recommend using DISM with the /Add-Capability option.
 
 1. Mount the Features on Demand ISO
- 
+
 2. On your technician PC, use DISM to get a list of available FODs in an image:
 
     ```
@@ -738,7 +739,7 @@ To complete this section, you'll need to have the App update OPK or the inbox ap
     ```
     Dism /Image:"C:\mount\windows" /Get-ProvisionedAppxPackages
     ```
-    
+
 
 #### Install a Microsoft Store app that won't be pinned to the Start Menu
 
@@ -773,15 +774,15 @@ DISM.exe /Image:"C:\mount\windows" /Optimize-ProvisionedAppxPackages
 The Office apps are delivered as a set of apps that are installed and serviced together.  The main package for Office is a set of shared code and each Office app (for example, Word, Excel, and PowerPoint) is installed as an optional package. These packages are delivered as appxbundles that support all Store languages.  
 
 
-| App |	Package ID |	Files |
+| App | Package ID |    Files |
 | --- | --- | --- |
-| Shared code & required app (not visible to user) |	Microsoft.Office.Desktop_8wekyb3d8bbwe | shared.appxbundle<br></br>shared_License1.xml
-| Access |	Microsoft.Office.Desktop.Access_8wekyb3d8bbwe |	access.appxbundle<br></br>access_License1.xml
-| Excel	| Microsoft.Office.Desktop.Excel_8wekyb3d8bbwe |	excel.appxbundle<br></br>excel_License1.xml
-| Outlook |	Microsoft.Office.Desktop.Outlook_8wekyb3d8bbwe |	outlook.appxbundle<br></br>outlook_License1.xml
-| PowerPoint |	Microsoft.Office.Desktop.PowerPoint_8wekyb3d8bbwe |	powerpoint.appxbundle<br></br>powerpoint_License1.xml
-| Publisher |	Microsoft.Office.Desktop.Publisher_8wekyb3d8bbwe |	publisher.appxbundle<br></br>publisher_License1.xml
-| Word |	Microsoft.Office.Desktop.Word_8wekyb3d8bbwe |	word.appxbundle<br></br>word_License1.xml |
+| Shared code & required app (not visible to user) |    Microsoft.Office.Desktop_8wekyb3d8bbwe | shared.appxbundle<br></br>shared_License1.xml
+| Access |  Microsoft.Office.Desktop.Access_8wekyb3d8bbwe | access.appxbundle<br></br>access_License1.xml
+| Excel | Microsoft.Office.Desktop.Excel_8wekyb3d8bbwe |    excel.appxbundle<br></br>excel_License1.xml
+| Outlook | Microsoft.Office.Desktop.Outlook_8wekyb3d8bbwe |    outlook.appxbundle<br></br>outlook_License1.xml
+| PowerPoint |  Microsoft.Office.Desktop.PowerPoint_8wekyb3d8bbwe | powerpoint.appxbundle<br></br>powerpoint_License1.xml
+| Publisher |   Microsoft.Office.Desktop.Publisher_8wekyb3d8bbwe |  publisher.appxbundle<br></br>publisher_License1.xml
+| Word |    Microsoft.Office.Desktop.Word_8wekyb3d8bbwe |   word.appxbundle<br></br>word_License1.xml |
 
 
 ##### Add Office apps to your image
@@ -804,7 +805,7 @@ To add the Office apps to an image, use DISM with the `/Add-ProvisionedAppxPacka
 
     > [!note]
     > The command for adding the Office apps in audit mode (online instead of offline) would be the same, but replace /Image:C:\mount\windows with /online.
-    
+
     **Notes on Language Support**
 
     When install Office with DISM, Office language files are automatically added that match the languages that are in the Windows image.  
@@ -878,7 +879,7 @@ To learn more about layoutmodification.xml, see [LayoutModification XML](https:/
 
 1.  Use the optional `Region` attribute in the `RequiredStartGroups` element to use different layouts for different regions. The `Region` value must be equal to two-letter country/region codes, and separated by a pipe "|" delimiter if you're specifying multiple regions. The regions listed in the group are related to the regions you specified when you added apps to your image using the `/region` option.  If the country/region setting for the Windows device matches a `RequiredStartGroups`, then the tiles laid out within the `RequiredStartGroups` is applied to Start. 
 If you specify a region-agnostic `RequiredStartGroups` (or one without the optional Region attribute) then the region-agnostic `RequiredStartGroups` is applied to Start.
-    
+
     In your layoutmodification.xml, add regions to `RequiredStartGroups`:
     ```
     <RequiredStartGroups Region="DE|ES|FR|GB|IT|US">
@@ -896,8 +897,8 @@ If you specify a region-agnostic `RequiredStartGroups` (or one without the optio
     <RequiredStartGroups
       Region="DE|ES|FR|GB|IT|US">
       <AppendGroup Name="Fabrikam Group 1">
-    	  <start:DesktopApplicationTile
-	        DesktopApplicationID="Microsoft.Windows.Explorer" 
+          <start:DesktopApplicationTile
+            DesktopApplicationID="Microsoft.Windows.Explorer" 
           Size="2x2" 
           Row="0" 
           Column="4"/>
@@ -916,7 +917,7 @@ If you specify a region-agnostic `RequiredStartGroups` (or one without the optio
 3.  In the Add Microsoft Store Apps section above, we asked you to install two apps using the /region switch:  App1 and App2.  Since we included a `/region` switch for both, both will be installed and appear in the All Apps list.  However, to get just App2 to also appear as a Start menu tile, add the following line inside your second <AppendGroup> in the LayoutModification.xml file, such as:
 
     Since we set the region to "US" for App2 when provisioning it, we should set the region to "US" here in our LayoutModification.xml to ensure App2 only appears as a Start menu tile in US images. So, ensure your <RequiredStartGroups> region parameter looks like this:
-    
+
     ```
     <RequiredStartGroups Region="US">
         <AppendGroup Name="MyGroup">
@@ -936,7 +937,7 @@ If you specify a region-agnostic `RequiredStartGroups` (or one without the optio
 4. Add Microsoft Office Start Menu tiles.  This is a requirement for OEMs that participate in the Jumpstart program.  
 
     You can have tiles appear on the Windows 10 Start menu for Word, PowerPoint and Excel. The tiles appear in a designated area for Microsoft apps (upper left in the following diagram).  All additional apps will be accessible in the Apps list on the left.  
-    
+
     Add the following to the LayoutModification.xml file to add the tiles:
     ```
     <AppendOfficeSuite/>
@@ -970,9 +971,9 @@ In this section, we'll cover how an OEM can add their own license terms during O
 
 To begin adding license terms, you'll have to create folders for your license files, and then configure OOBE to show the license on first boot.
 
-1.	Create folders for your system languages under the following directory: C:\mount\windows\Windows\System32\oobe\info\default\ 
+1.  Create folders for your system languages under the following directory: C:\mount\windows\Windows\System32\oobe\info\default\ 
 
-2.	Name each folder under the C:\mount\windows\Windows\System32\oobe\info\default\ directory as the Language Decimal Identifier that corresponds to the language. Do this step for each language pack that's in the Windows image.
+2.  Name each folder under the C:\mount\windows\Windows\System32\oobe\info\default\ directory as the Language Decimal Identifier that corresponds to the language. Do this step for each language pack that's in the Windows image.
 
     **Note:**  Please see [this link to see complete list of language decimal identifiers of corresponding languages](available-language-packs-for-windows.md).
 
@@ -983,7 +984,7 @@ To begin adding license terms, you'll have to create folders for your license fi
      MD c:\mount\windows\windows\system32\oobe\info\default\1033
      ```
 
-4.	Create a license terms .rtf file for each language you have in your image, and copy them to the language-specific oobe folder.
+4.  Create a license terms .rtf file for each language you have in your image, and copy them to the language-specific oobe folder.
 
     For example: Move the English agreement.rtf file to C:\mount\windows\Windows\System32\oobe\info\default\1033\ directory and move the German agreement.rtf to C:\mount\windows\Windows\System32\oobe\info\default\1031\. 
 
@@ -1000,7 +1001,7 @@ To begin adding license terms, you'll have to create folders for your license fi
     ```
 
 
-6.	Create an oobe.xml file to specify the license agreement.rtf file path. Windows will automatically find the accompanying .html file. Below is a sample oobe.xml which is located at _USB-B_\ConfigSet\oobe.xml
+6.  Create an oobe.xml file to specify the license agreement.rtf file path. Windows will automatically find the accompanying .html file. Below is a sample oobe.xml which is located at _USB-B_\ConfigSet\oobe.xml
 
     ```xml
      <FirstExperience>
@@ -1012,7 +1013,7 @@ To begin adding license terms, you'll have to create folders for your license fi
     </FirstExperience>
     ```
 
-7.	Copy oobe.xml file to `C:\mount\windows\windows\system32\oobe\info\
+7.  Copy oobe.xml file to `C:\mount\windows\windows\system32\oobe\info\
 
 9.  Copy oobe.xml to the laguage-specific folders you created earlier.For example: Copy oobe.xml to C:\mount\windows\Windows\System32\oobe\info\default\1033\, which has a file called agreement.rtf in English. To add the German agreement, copy oobe.xml to C:\mount\windows\Windows\System32\oobe\info\default\1031\ directory, which has the German agreement.rtf file.
 
@@ -1021,15 +1022,15 @@ To begin adding license terms, you'll have to create folders for your license fi
     copy E:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
-10.	Now each language folder has an oobe.xml, agreement.rtf, and agreement.thml file in that corresponding language.
+10. Now each language folder has an oobe.xml, agreement.rtf, and agreement.thml file in that corresponding language.
 
 When the image first boots into OOBE, it will display the license agreement.
 
- 
+
 ### Create an image info file and add it to your image
 
 -   Create an csup.txt file to specify when the Windows image was created. This file must include the date that the image was created, in the form of 'MM-DD-YYYY', with no other characters, on a single line at the top of the file. This command will create the file:
-	
+
     ```
     echo 4-24-2018 >"C:\mount\windows\Windows\csup.txt"
     ```
@@ -1152,7 +1153,7 @@ In this section, we'll show you how to enable S mode in a Windows image. We'll u
 3. Set amd64_Microsoft_Windows_CodeIntegrity\SkuPolicyRequired to `1`.
 4. Save the answer file in the Panther folder as unattend.xml.
 5. Use DISM to apply the unattend file and enable S Mode:
-    
+
     ```
     dism /image:C:\mount\windows /apply-unattend:C:\mount\windows\windows\panther\unattend.xml
     ```
@@ -1166,18 +1167,18 @@ S mode is now applied to the Windows image. When the PC boots, the same Code Int
 If you plan to make additional changes to your image in audit mode, such as editing the registry, running a script, or running a command from the command-prompt, you have to temporarily enable Manufacturing Mode, which allows unsigned code that is normally blocked in S Mode to run in Audit mode. This allows you to run scripts, installers and diagnostic tools (i.e., unsigned code) during the manufacturing process.  Manufacturing Mode is enabled by adding a registry key to the offline image, and it’s disabled by removing the key when booted into audit mode.
 
 1.  On your mounted image, load the SYSTEM registry hive from your mounted image into regedit on your Technician PC. We'll use a temporary hive called HKLM\Windows10S.
-    
+
     ```
     reg load HKLM\Windows10S C:\Mount\Windows\Windows\System32\Config\System
     ```
 
-2.	Add the manufacturing registry key.
-    
+2.  Add the manufacturing registry key.
+
     ```
     reg add HKLM\Windows10S\ControlSet001\Control\CI\Policy /v ManufacturingMode /t REG_DWORD /d 1
     ```
 
-3.	Unload the registry hive from your Technician PC.
+3.  Unload the registry hive from your Technician PC.
 
     ```
     reg unload HKLM\Windows10S
@@ -1198,17 +1199,17 @@ In this section, we will upgrade the Windows OS edition from Home to Pro.
     -   Note: You should not use this procedure on an image that has already been changed to a higher edition.
     -   Since S-mode is not enabled until this image is booted on the Reference device, it doesn’t matter if you run the /Set-Edition command before or after applying the unattend settings (which includes the S-mode `<SkuPolicyRequired>` element).
     -   You wouldn't normally switch editions offline like we'll show you here. Instead of upgrading editions, you would've mounted a Windows Professional wim to begin with.  This step is included here for instructional purposes; just to show you the use of the /Set-Edition command.
-  
+
 1. Determine available editions by running the following command to determine what images you can upgrade the image to:
-    
+
     ```
     Dism /Get-TargetEditions /Image:C:\mount\windows
     ```
-    
+
     Note the edition IDs available.
 
 2. Upgrade the edition to the Professional edition.
-    
+
     ```
     Dism /Set-Edition:Professional /Image:C:\mount\windows
     ```
@@ -1226,13 +1227,13 @@ To make sure Windows saves your customizations:
 
 ### Optimize WinRE (part 1)
 
-1.	Increase the scratchspace size of the WinRE image.
+1.  Increase the scratchspace size of the WinRE image.
 
     ```
     Dism /image:c:\mount\winre /set-scratchspace:512
     ```
 
-2.	Cleanup unused files and reduce the size of winre.wim
+2.  Cleanup unused files and reduce the size of winre.wim
 
     ```
     dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup
@@ -1240,17 +1241,17 @@ To make sure Windows saves your customizations:
 
 ### Unmount your images
 
-1.	Close all applications that might be accessing files from the image, including File Explorer.
-2.	Commit the changes and unmount the Windows RE image:
+1.  Close all applications that might be accessing files from the image, including File Explorer.
+2.  Commit the changes and unmount the Windows RE image:
 
     ```
     Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
     ```
     where C is the drive letter of the drive that contains the image.
-    
+
     This process can take a few minutes.
-    
-3.	Make a backup copy of the updated Windows RE image and replace the old WinRE image with the newly exported one:  
+
+3.  Make a backup copy of the updated Windows RE image and replace the old WinRE image with the newly exported one:  
 
     ``` 
     dism /export-image /sourceimagefile:c:\mount\windows\windows\system32\recovery\winre.wim /sourceindex:1 /DestinationImageFile:c:\temp\lab\winre_bak.wim
@@ -1264,14 +1265,14 @@ To make sure Windows saves your customizations:
     attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
     ```
 
-4.	Check the new size of the Windows RE image:
+4.  Check the new size of the Windows RE image:
 
     ```
     Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
     ```
 
 5.  Based on the size of the new winre.wim, adjust the partition sizes in the deployment scripts so they include enough room for winre.wim, as well as some additional free space.
-   
+
     Follow the below partition layout size chart to determine the size of your recovery partition in the createpartitions-\<firmware>-\<imageformat>.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
     See the below disk partition rules for more information.
 
@@ -1288,7 +1289,7 @@ To make sure Windows saves your customizations:
     create partition primary size=465
     ```
 
-6.	Optimize the Windows image the same way you did with the WinRE image:
+6.  Optimize the Windows image the same way you did with the WinRE image:
 
     ```
     Dism /Image:c:\mount\windows /Cleanup-Image /StartComponentCleanup
@@ -1328,12 +1329,12 @@ In this section we'll deploy an image to a PC so that it can be customized in Au
 
 If you're not already booted into WinPE on the device you're deploying your image to, boot into WinPE:
 
-1.	Connect the USB key with the *WinPE* partition boot the reference computer.
-2.	If you're using two separate USB drives, after WinPE has been booted connect _USB-B_.
-3.	At the X:\Windows\system32> command line, type `diskpart` and press Enter.
-4.	At the \DISKPART> command line type `list volume`.
-5.	In the "Label" column, note the letter of the volume under the "Ltr" column. This is the drive letter of your USB key. (example E) 
-6.	Type exit to quit Diskpart
+1.  Connect the USB key with the *WinPE* partition boot the reference computer.
+2.  If you're using two separate USB drives, after WinPE has been booted connect _USB-B_.
+3.  At the X:\Windows\system32> command line, type `diskpart` and press Enter.
+4.  At the \DISKPART> command line type `list volume`.
+5.  In the "Label" column, note the letter of the volume under the "Ltr" column. This is the drive letter of your USB key. (example E) 
+6.  Type exit to quit Diskpart
 
 
 ### Use a deployment script to apply your image
@@ -1352,19 +1353,19 @@ ApplyImage.bat uses diskpart scripts to create the partitions and define the par
     cd Deployment
     ApplyImage.bat D:\Images\install.wim
     ```
-	Where D: is the drive letter of your script and image on your USB Storage drive.
+    Where D: is the drive letter of your script and image on your USB Storage drive.
 
     When prompted by the script: 
 
-    1.	Choose whether or not to configure the recovery partition
-        - `Y`: Configures the Windows recovery partition
-        - `N`: Does not configure the recovery partition. The recovery partition can be configured later. Choose this option if you're going to be capturing and deploying your image as an FFU.
-    2.	Press `Y` to format the drive
-    3.	Choose `N` to not to deploy as Compact OS.
-    3.	Press `N` to indicate the image does not include extended attributes (EA)
+   1. Choose whether or not to configure the recovery partition
+      - `Y`: Configures the Windows recovery partition
+      - `N`: Does not configure the recovery partition. The recovery partition can be configured later. Choose this option if you're going to be capturing and deploying your image as an FFU.
+   2. Press `Y` to format the drive
+   3. Choose `N` to not to deploy as Compact OS.
+   4. Press `N` to indicate the image does not include extended attributes (EA)
 
-    > [!Note]
-    > Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommended on rotational devices. Please reference Compact OS for more information.
+      > [!Note]
+      > Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommended on rotational devices. Please reference Compact OS for more information.
 
 2. Remove the USB drive and reboot the reference PC.
 
@@ -1387,8 +1388,8 @@ If you want to capture the changes in an image and apply it to other devices, yo
 
 We don't recommend connecting your PC to the internet during manufacturing, and also don't recommend isntalling updates from Windows Update in audit mode because it will likely generate an error during sysprep.
 
-1.	After setup has finished, the computer logs into Windows in Audit mode automatically as an Administrator.
-2.	Verify the changes from the answer file (see manufacturer name, support phone number and other customizations) are present.
+1.  After setup has finished, the computer logs into Windows in Audit mode automatically as an Administrator.
+2.  Verify the changes from the answer file (see manufacturer name, support phone number and other customizations) are present.
 
 ### Verify the edition
 
@@ -1439,21 +1440,21 @@ You have to change a registry setting to add your OEM ID. If you're an OEM Micro
 
 OEMID
 
-1.	Run regedit.exe from Command Prompt
-2.	Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
-3.	Right click under (Defalut) -> click new
-4.	Click String Value
-5.	Type OEMID
-6.	Double click OEMID and enter OEM name in Value data: text field
+1.  Run regedit.exe from Command Prompt
+2.  Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
+3.  Right click under (Defalut) -> click new
+4.  Click String Value
+5.  Type OEMID
+6.  Double click OEMID and enter OEM name in Value data: text field
 
 SCMID
 
-1.	Run regedit.exe from Command Prompt
-2.	Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
-3.	Right click under (Defalut) -> click new
-4.	Click String Value
-5.	Type StoreContentModifier
-6.	Double click StoreContentModifier and enter OEM name in Value data: text field
+1.  Run regedit.exe from Command Prompt
+2.  Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
+3.  Right click under (Defalut) -> click new
+4.  Click String Value
+5.  Type StoreContentModifier
+6.  Double click StoreContentModifier and enter OEM name in Value data: text field
 
 
 > [!important]
@@ -1476,9 +1477,9 @@ Use scanstate to capture Classic Windows applications and settings on your image
 
 **Note**: You'll use your technician PC to prepare ScanState. 
 
-1.	On Technician PC Insert *USB-B*
-2.	Open Deployment and Imaging tools command prompt as administrator
-3.	Run copydandi.cmd to copy necessary files to *USB-B*\scanstate:
+1.  On Technician PC Insert *USB-B*
+2.  Open Deployment and Imaging tools command prompt as administrator
+3.  Run copydandi.cmd to copy necessary files to *USB-B*\scanstate:
 
     ```
     Copydandi.cmd amd64 e:\scanstate
@@ -1523,7 +1524,7 @@ Create a migration XML file used to restore registry values manually entered dur
         </objectSet>
     </unconditionalExclude>
     ```
-    
+
 4. Save the file as regerecover.xml.
 
 ### Create recovery package using Scanstate
@@ -1534,7 +1535,7 @@ Use ScanState to capture installed customizations into a provisioning package, a
 
 **Important:** For Push Button Reset to work properly, packages have to be .ppkg files that are stored in C:\Recovery\Customizations.
 
-1.	Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage
+1.  Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage
 
     **Important:** To retain the customized start layout menu during recovery the layoutmodification.xml needs to be copied again during recovery process. We'll copy it here and then use EnableCustomizations.cmd to copy it during recovery.
     ```
@@ -1542,7 +1543,7 @@ Use ScanState to capture installed customizations into a provisioning package, a
     Copy E:\StartLayout\layoutmodification.xml c:\recovery\OEM
     ```
 
-2.	Run ScanState to gather app and customizations
+2.  Run ScanState to gather app and customizations
 
     For x64 Windows 10 PCs:
 
@@ -1565,8 +1566,8 @@ You can customize the Push-button reset experience by configuring extensibility 
 
 During recovery, PBR calls EnableCustomizations.cmd which we'll configure to do 2 things:
 
-1.	Copy the unattend.xml file used for initial deployment to the \windows\panther.
-2.	Copy the layoutmodification.xml to the system.
+1.  Copy the unattend.xml file used for initial deployment to the \windows\panther.
+2.  Copy the layoutmodification.xml to the system.
 
 This will restore the additional layout settings from these 2 answer files during PBR. 
 
@@ -1598,9 +1599,9 @@ Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
 
 In this section, we'll use sysprep.exe to reseal our image and get it ready for factory deployment.
 
-1.	Delete installation folders and files that have been created of the preloaded applications. These folders can increase the size of a captured .wim file.
-2.	If the SysPrep Tool is open, close it and open Command Prompt in Administrator mode.
-3.	Generalize the image by using answer file with additional settings:
+1.  Delete installation folders and files that have been created of the preloaded applications. These folders can increase the size of a captured .wim file.
+2.  If the SysPrep Tool is open, close it and open Command Prompt in Administrator mode.
+3.  Generalize the image by using answer file with additional settings:
 
 ```
 C:\Windows\System32\Sysprep\sysprep /oobe /generalize /unattend:c:\recovery\oem\Unattend.xml /shutdown
@@ -1615,15 +1616,15 @@ If you have manufacturing mode enabled, remove the manufacturing registry key:
     ```
     reg delete HKLM\system\ControlSet001\Control\CI\Policy /v ManufacturingMode
     ```
-> [!important]
-> Don't ship a Windows 10 in S mode device with the registry key in place.
+   > [!important]
+   > Don't ship a Windows 10 in S mode device with the registry key in place.
 
 ## Finalize and Capture your image
 
 We'll show you how to finalize and capture a factory image for mass deployment. To start this section, make sure your reference machine is shutdown after running sysprep in the previous section.
 
-1.	Boot the Reference computer into WinPE.
-2.	After WinPE has booted connect _USB-B_.
+1.  Boot the Reference computer into WinPE.
+2.  After WinPE has booted connect _USB-B_.
 
     **Troubleshooting:** 
 
@@ -1631,7 +1632,7 @@ We'll show you how to finalize and capture a factory image for mass deployment. 
 
     - If the system still boots to the internal HDD, check the PC's boot priority. Make sure that the USB has a higher boot priority than the internal hard drive.
 
-3.	Identify Windows Partition Drive letter using diskpart.
+3.  Identify Windows Partition Drive letter using diskpart.
 
     1. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart.
 
@@ -1668,7 +1669,7 @@ In this section, we'll tell you how to capture your sysprepped image. You can ca
 
 **On your reference PC:**
 
-1.	Identify Windows Partition Drive letter.
+1.  Identify Windows Partition Drive letter.
 
     1. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
 
@@ -1680,7 +1681,7 @@ In this section, we'll tell you how to capture your sysprepped image. You can ca
 
     5. Type exit to quit Diskpart
 
-2.	Capture the image of the windows partition to USB-B. This process takes several minutes. 
+2.  Capture the image of the windows partition to USB-B. This process takes several minutes. 
 
     Note: We recommend using a cache directory when running DISM. In this step we'll create scratchdir on the USB-B key for temporary files, but you can choose any hard drive with available space for your scratch directory. 
 
@@ -1697,7 +1698,7 @@ With your image captured, you can skip to [Verify your final image](#verify-your
 
 **On your reference PC:**
 
-1.	Identify Windows Partition Drive letter.
+1.  Identify Windows Partition Drive letter.
 
     1. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
 
@@ -1707,12 +1708,12 @@ With your image captured, you can skip to [Verify your final image](#verify-your
 
     4. Type exit to quit Diskpart
 
-2.	Capture an image of the windows disk to USB-B. This process takes several minutes. 
+2.  Capture an image of the windows disk to USB-B. This process takes several minutes. 
 
     ```
     DISM.exe /capture-ffu /imagefile=E:\Images\CustomImage.wim /Name:"CustomImage" /capturedrive=\\.\PhysicalDrive0 /description:"Windows 10 FFU"
     ```
-    
+
     This captures an image called CustomImage.wim to E:\Images. When the image capture is complete, you can shut down your reference PC.
 
 
@@ -1725,13 +1726,13 @@ In this section, we'll cover how to deploy your captured image for testing and v
 
 1. Boot the PC you want to test your image on into WinPE.
 2. Run applyimage.bat to deploy the image.
-    
+
     If you captured a WIM called customimage.wim:
 
     ```
     E:\Deployment\applyimage.bat E:\Images\customimage.wim
     ```
-    
+
     **or**
 
     If you captured an FFU called CustomImage.FFU:
@@ -1750,7 +1751,7 @@ Your PC will restart and boot into Windows for the first time.
 
 1. In OOBE, create a dummy user which will be deleted later.
 2. Verify that any applications and offline customizations are still in your image and working properly.
-    
+
     Some things to check are:
 
     - Taskbar 
@@ -1767,22 +1768,22 @@ Your PC will restart and boot into Windows for the first time.
 
 ### Verify Recovery
 
-1.	Verify that your customizations are restored after recovery, and that they continue to function by running the Refresh your PC and Reset your PC features from the following entry points: 
- - Settings 
-    a.	From the Start Menu, click Settings, 
-    b.	In the Settings app, click Update & security, and then click Recovery. 
-    c.	Click the Get Started button under Reset this PC and follow the on-screen instructions.
+1. Verify that your customizations are restored after recovery, and that they continue to function by running the Refresh your PC and Reset your PC features from the following entry points: 
+   - Settings 
+   a.  From the Start Menu, click Settings, 
+   b.  In the Settings app, click Update & security, and then click Recovery. 
+   c.  Click the Get Started button under Reset this PC and follow the on-screen instructions.
 
- - Windows RE 
-    a.	From the Choose an option screen in Windows RE, click Troubleshoot 
-    b.	Click Reset this PC and then follow the on-screen instructions 
+   - Windows RE 
+   a.  From the Choose an option screen in Windows RE, click Troubleshoot 
+   b.  Click Reset this PC and then follow the on-screen instructions 
 
-2.	Verify that recovery media can be created, and verify its functionality by running the bare metal recovery feature: 
-    a.	Launch Create a recovery drive from Control Panel 
-    b.	Follow the on-screen instructions to create the USB recovery drive 
-    c. Boot the PC from the USB recovery drive 
-    d. From the Choose an option screen, click Troubleshoot 
-    e. Click Recover from a drive and then follow the on-screen instructions 
+2. Verify that recovery media can be created, and verify its functionality by running the bare metal recovery feature: 
+   a.  Launch Create a recovery drive from Control Panel 
+   b.  Follow the on-screen instructions to create the USB recovery drive 
+   c. Boot the PC from the USB recovery drive 
+   d. From the Choose an option screen, click Troubleshoot 
+   e. Click Recover from a drive and then follow the on-screen instructions 
 
 **Note:** The Push-button reset UI has been redesigned in Windows 10. The Keep my files option in the UI now corresponds to the Refresh your PC feature. Remove everything corresponds to the Reset your PC feature.
 
@@ -1792,7 +1793,7 @@ At this point, you have a Windows image that is almost ready for deployment. In 
 
 
 -   Remove unused packages from your image, by exporting a copy of it.
-    
+
     ```
     Dism /export-image /sourceimagefile:E:\images\customimage.wim /sourceindex:1 /destinationimagefile:e:\images\MasterImage_Pro.wim
     ```
@@ -1825,7 +1826,7 @@ Reducing and turning off hiberfile can return between 400MB to 1.5GB OS space on
 When you run sysprep.exe with unattend.xml, you can add a FirstLogonCommand that will reduce hiberfile:
 
 ![Reducing hiberfile with unattend.xml](images/lab-reduce-hiberfile.png)
- 
+
 **Turn Off Hiberfile**
 
 When you run sysprep.exe with unattend.xml, you can add a FirstLogonCommand that will turn off hiberfile:

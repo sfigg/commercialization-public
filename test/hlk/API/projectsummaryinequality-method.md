@@ -42,9 +42,9 @@ This method provides an Inequality operator between two **ProjectSummary** objec
 
 `Public Shared Operator <> ( _`
 
-          `first As ProjectSummary, _`
+          `first As ProjectSummary, _`
 
-          `second As ProjectSummary _`
+          `second As ProjectSummary _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ This method provides an Inequality operator between two **ProjectSummary** objec
 
 `public static bool operator != (`
 
-          `ProjectSummary first,`
+          `ProjectSummary first,`
 
-          `ProjectSummary second`
+          `ProjectSummary second`
 
 `)`
 
@@ -63,11 +63,11 @@ This method provides an Inequality operator between two **ProjectSummary** objec
 
 *first*
 
-          The first **ProjectSummary** object to compare against.
+          The first **ProjectSummary** object to compare against.
 
 *second*
 
-          The second **ProjectSummary** object to compare against.
+          The second **ProjectSummary** object to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ This method provides an Inequality operator between two **ProjectSummary** objec
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

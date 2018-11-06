@@ -42,7 +42,7 @@ The [auditSystem](auditsystem.md) configuration pass processes unattended Setup 
     **Note**  
     You can include multiple device-driver paths by adding multiple **PathAndCredentials** list items. If you add multiple list items, you must increment the value of `Key` for each path. For example, if you add two separate driver paths, the first path uses the `Key` value of **1**, and the second path uses the `Key` value of **2**.
 
-     
+     
 
 8.  Save the answer file and close Windows SIM. The answer file must resemble this example:
 
@@ -101,9 +101,9 @@ You can use the PNPUtil tool to add, remove, and enumerate drivers on a running 
 
 [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,13 +32,13 @@ The `Title` setting specifies customized text to display next to the **Online Su
 <tr class="odd">
 <td><p><em>Title_ID</em></p></td>
 <td><p>Specifies the title of the <strong>Online Support</strong> icon.</p>
-<p><em>TitleID</em> is represented as <em>@dllname,-resourceID</em>, where <em>dllname</em> must include a full path to the resource DLL.</p>
-<p>For information about creating localized versions of a DLL for each setting, see the MSDN topic: [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).</p></td>
+<p><em>TitleID</em> is represented as <em><xref href="dllname,-resourceID" data-throw-if-not-resolved="False" data-raw-source="@dllname,-resourceID"></xref></em>, where <em>dllname</em> must include a full path to the resource DLL.</p>
+<p>For information about creating localized versions of a DLL for each setting, see the MSDN topic: <a href="http://go.microsoft.com/fwlink/?LinkId=140252" data-raw-source="[Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252)">Using the MUI with Applications</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -76,9 +76,9 @@ The following XML output shows how to configure the **Online Support** icon to p
 
 [Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md)
 
- 
+ 
 
- 
+ 
 
 
 

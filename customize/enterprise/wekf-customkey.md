@@ -51,11 +51,11 @@ The following tables list any methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[WEKF_CustomKey.Add](wekf-customkeyadd.md)</p></td>
+<td><p><a href="wekf-customkeyadd.md" data-raw-source="[WEKF_CustomKey.Add](wekf-customkeyadd.md)">WEKF_CustomKey.Add</a></p></td>
 <td><p>Creates a new custom key combination and enables Keyboard Filter to block the new key combination.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WEKF_CustomKey.Remove](wekf-customkeyremove.md)</p></td>
+<td><p><a href="wekf-customkeyremove.md" data-raw-source="[WEKF_CustomKey.Remove](wekf-customkeyremove.md)">WEKF_CustomKey.Remove</a></p></td>
 <td><p>Removes the specified custom key combination. Keyboard Filter stops blocking the key combination that was removed.</p></td>
 </tr>
 </tbody>

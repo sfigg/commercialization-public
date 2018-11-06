@@ -31,15 +31,15 @@ Before beginning testing, complete the following:
 
 The following hardware is required for PCI device testing. You might need additional hardware if the test device includes additional features.
 
--   One test computer. The test computer must meet Windows HLK prerequisites. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for more information.
+- One test computer. The test computer must meet Windows HLK prerequisites. See [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md) for more information.
 
--   One test PCI device.
+- One test PCI device.
 
->[!NOTE]
->  
-Additional test hardware will be required depending on that type of PCI device is being tested. For example, if the PCI test device is a graphic adapter, review the Device.Graphics test prerequisites.
+> [!NOTE]
+> 
+> Additional test hardware will be required depending on that type of PCI device is being tested. For example, if the PCI test device is a graphic adapter, review the Device.Graphics test prerequisites.
 
- 
+ 
 
 ## <span id="BKMK_HCK_PCI_sR"></span><span id="bkmk-hck-pci-sr"></span><span id="BKMK_HCK_PCI_SR"></span>Software requirements
 
@@ -73,15 +73,15 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When running tests for a submission, it is a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting completion of an automated test.
 
->[!NOTE]
->  
-If a device supports multiple connectivity methods, complete a separate submission for each connectivity method.
+> [!NOTE]
+> 
+> If a device supports multiple connectivity methods, complete a separate submission for each connectivity method.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

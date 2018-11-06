@@ -32,9 +32,9 @@ A wide variety of assistive technology products are available to make computers 
 
 If you use assistive technology, be sure to contact your assistive technology vendor before you upgrade your software or hardware to check for possible compatibility issues.
 
- 
+ 
 
- 
+ 
 
 
 

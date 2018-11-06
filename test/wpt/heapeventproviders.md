@@ -24,10 +24,10 @@ Represents a collection of heap event provider identifiers and heap event provid
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
-          * \<**HeapEventProviders**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<**HeapEventProviders**\>
 
 
 ## Syntax

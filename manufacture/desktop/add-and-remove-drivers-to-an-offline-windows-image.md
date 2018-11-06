@@ -93,7 +93,7 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 
     > [!Warning]
     > Removing a boot-critical driver package can make the offline Windows image unbootable. For more information, see [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md).
-     
+     
 
 3.  Commit the changes and unmount the image.
 
@@ -185,7 +185,7 @@ If you need drivers for WinPE to see the local hard disk drive or a network, you
 
 [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 
- 
+ 
 
 
 

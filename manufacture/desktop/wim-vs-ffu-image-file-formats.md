@@ -59,7 +59,7 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 <tr class="even">
 <td align="left">When I apply the image, what happens?</td>
 <td align="left"><p>Adds the files and folders to the partition.</p>
-<p>If there are existing files and folders with the same names, they're replaced. Otherwise, the existing files are kept.</p></td>
+<p>If there are existing files and folders with the same names, they&#39;re replaced. Otherwise, the existing files are kept.</p></td>
 <td align="left"><p>Cleans the entire drive.</p></td>
 <td align="left"><p>Cleans the entire drive.</p></td>
 </tr>
@@ -84,7 +84,7 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 </tbody>
 </table>
 
- 
+ 
 
 To learn more, see **/Apply-Image** in [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
@@ -106,7 +106,7 @@ To learn more, see **/Apply-Image** in [DISM Image Management Command-Line Optio
 
 [FFU image format](../mobile/ffu-image-format.md)
 
- 
+ 
 
 
 

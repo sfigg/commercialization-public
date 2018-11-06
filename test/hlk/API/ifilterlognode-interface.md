@@ -40,9 +40,9 @@ This class represents a log node for a filter.
 
 `public interface IFilterLogNode`
 
- 
+ 
 
- 
+ 
 
 
 

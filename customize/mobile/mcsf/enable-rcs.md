@@ -111,7 +111,7 @@ The following design principles for RCS settings apply in Windows 10 Mobile:
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-SIM** value
@@ -188,7 +188,7 @@ This customization supports: **per-SIM** value
     |:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
     | 0 or 'No'  | The system is not RCS-enabled.                                                                                                                           |
     | 1 or 'Yes' | The system is RCS-enabled. If the system supports RCS, you can also specify whether to show the user setting by configuring the value for `UserEnabled`. |
-     
+     
 
 6.  To show the user setting if RCS is enabled on the device, set `UserEnabled` to one of the following values.
 
@@ -231,7 +231,7 @@ This customization supports: **per-SIM** value
         | 0 or 'False' | Do not automatically download the incoming RCS file transfer.                           |
         | 1 or 'True'  | Do automatically download the incoming RCS file transfer. This is the default OS value. |
 
-         
+         
 
 <a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator partner to test this customization on the operator's network.

@@ -60,7 +60,7 @@ The following table shows the available customizations and where to copy the con
 ## <span id="Capturing_Classic_Windows_applications_using_Windows_User_State_Migration_Tool__USMT__s_ScanState_tool"></span><span id="capturing_windows_desktop_applications_using_windows_user_state_migration_tool__usmt__s_scanstate_tool"></span><span id="CAPTURING_WINDOWS_DESKTOP_APPLICATIONS_USING_WINDOWS_USER_STATE_MIGRATION_TOOL__USMT__S_SCANSTATE_TOOL"></span>Capturing Windows desktop applications using Windows User State Migration Tool (USMT)'s ScanState tool
 
 
-The Windows User State Migration Tool (USMT) ScanState.exe has been updated in Windows 10 to support capturing Windows desktop applications applications. This functionality can be activated by specifying the `/apps` option.
+The Windows User State Migration Tool (USMT) ScanState.exe has been updated in Windows 10 to support capturing Windows desktop applications applications. This functionality can be activated by specifying the `/apps` option.
 
 When `/apps` is specified, ScanState uses a set of application discovery rules to determine what should be captured, and stores the output as a reference device data image inside a provisioning package. In general, the reference device data includes the following:
 
@@ -79,20 +79,20 @@ ScanState’s /apps option also supports the following optional parameters:
 | `+/-oeminfo` | Specifies whether the OEM-specific help and support info should be captured.<p>If `+oeminfo` is specified, OEM and support info are captured.<p>If `-oeminfo` is specified, OEM and support info are not captured.<p>`+oeminfo` is the default. |
 
 
- 
 
-**Important**  
+
+**Important**  
 -   Although push-button reset features can restore multiple provisioning packages, only one of the packages can contain reference device data image captured using ScanState.
 -   ScanState should be used only after all customizations have been applied to the PC. It does not support appending additional changes to an existing reference device data image.
 -   A provisioning package captured using ScanState.exe can only be applied using push-button reset features and deployment media created using Windows Imaging and Configuration Designer (ICD). It cannot be applied using tools such as DISM or USMT’s LoadState.exe.
 -   When you prepare ScanState for capturing customizations, you should exclude Windows Defender settings to prevent possible failures during recovery that can be caused by file conflicts. For more information, see Step 1 in [Deploy push-button reset features](deploy-push-button-reset-features.md).
 
- 
+
 
 ## <span id="Creating_customization_packages_using__Windows_ICD"></span><span id="creating_customization_packages_using__windows_icd"></span><span id="CREATING_CUSTOMIZATION_PACKAGES_USING__WINDOWS_ICD"></span>Creating customization packages using Windows ICD
 
 
-For customizations involving settings which apply to all editions of Windows 10 (including Windows 10 Mobile), you can create provisioning packages using the Windows ICD.
+For customizations involving settings which apply to all editions of Windows 10 (including Windows 10 Mobile), you can create provisioning packages using the Windows ICD.
 
 In build-to-stock (BTS) scenarios, if you have already captured your Windows desktop applications from your reference PC using the ScanState tool, you can import the output provisioning package into Windows ICD and specify additional settings which should be restored during recovery.
 
@@ -106,11 +106,11 @@ Most settings which are configured using unattend.xml and other configuration fi
 -   Inject an unattend.xml into the recovered OS
 -   Copy other configuration files and assets into the recovered OS
 
-**Important**  
+**Important**  
 -   You should not use unattend.xml (or other mechanisms) to boot the recovered OS into Audit Mode. The recovered OS must remain configured to boot to OOBE.
 -   A copy of the configuration files and assets which need to be restored must be placed under C:\\Recovery\\OEM. Contents in this folder are not modified by push-button reset features and are automatically backed up to recovery media created using the **Create a recovery drive** utility. To protect the unattend.xml and configuration files/assets from tampering or accidental deletion, Write/Modify permissions of C:\\Recovery\\OEM should be restricted to the local Administrators user group.
 
- 
+
 
 To learn how to author scripts to be run using extensibility points, see [Add a script to push-button reset features](add-a-script-to-push-button-reset-features.md).
 
@@ -121,38 +121,28 @@ To learn how to use ScanState to capture and store the resulting PPKG under C:\\
 
 The following table outlines the recovery strategy for common customizations which are described in the User Experience Windows Engineering Guide (UX WEG) as well as those covered in the OEM Policy Document (OPD). For up-to-date details on these customizations, refer to the latest version of the UX WEG and OPD.
 
-| Customization | How it is configured | How it can be restored during PBR | 
-| --- | --- | --- | 
-| OOBE – HID pairing | Settings in the <code>&lt;hidSetup&gt;</code> section of OOBE.xml and images (e.g. .png files) | <ul><li>Use PBR extensibility script to restore OOBE.xml and images from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul> | 
-| OOBE – OEM EULA | <code>&lt;Eulafilename&gt;</code> setting in OOBE.xml and license terms .rtf file(s) stored under %WINDIR%\System32\Oobe\Info | <ul><li>Use PBR extensibility script to restore OOBE.xml and .rtf files from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul> | 
-| OOBE – Preconfigured language and time zone | Settings in the <code>&lt;defaults&gt;</code> section of OOBE.xml | <ul><li>Use PBR extensibility script to restore OOBE.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| OOBE – Hide mobile broadband page | Microsoft-Windows-WwanUI \| NotInOOBE setting in unattend.xml | <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| OOBE – OEM Registration page | Settings in the &lt;registration&gt; section of OOBE.xml and HTML files for in-place links | <ul><li> Use PBR extensibility script to restore OOBE.xml and HTML files from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Start – Pinned tiles and groups | LayoutModification.xml stored under %SYSTEMDRIVE%\Users\Default\AppData\Local\Microsoft\Windows\Shell or settings under Microsoft-Windows-Shell-Setup \| StartTiles in unattend.xml | <ul><li>Use PBR extensibility points to restore LayoutModification.xml or unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Start – Prepopulated MFU list | LayoutModification.xml stored under %SYSTEMDRIVE%\Users\Default\AppData\Local\Microsoft\Windows\Shell | <ul><li>Use PBR extensibility points to restore LayoutModification.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Continuum – Form factor | Settings in unattend.xml:<ul><li>Microsoft-Windows-Deployment \| DeviceForm</li><li>Microsoft-Windows-GPIOButtons \| ConvertibleSlateMode</li></ul> | <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Continuum – Default mode | Microsoft-Windows-Shell-Setup \| SignInMode setting in unattend.xml | <ul><li>Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Desktop – Default and additional accent colors | RunSynchronous command in unattend.xml which adds the AGRB hex color values to the registry under HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents | <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Desktop – Background image | Microsoft-Windows-Shell-Setup \| Themes \| DesktopBackground setting in unattend.xml and image (e.g. .jpg/.png/.bmp file) | <ul><li> Use PBR extensibility points to restore unattend.xml and background image file from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Desktop – Pinned taskbar items | Settings under Microsoft-Windows-Shell-Setup \| TaskbarLinks in unattend.xml and shortcut (.lnk) files stored in a folder under %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\ | <ul><li> Use PBR extensibility points to restore unattend.xml and .lnk files from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Desktop – Systray icons | Settings under Microsoft-Windows-Shell-Setup \| NotificationArea in unattend.xml | <ul><li>Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Mobile broadband – Rename "WiFi" to "WLAN" in network list | Microsoft-Windows-SystemSettings \| WiFiToWlan setting in unattend.xml | <ul><li>Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Mobile broadband – Enable Network Selection control in Settings | Microsoft-Windows-SystemSettings \| DisplayNetworkSelection setting in unattend.xml | <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| PC Settings – Preinstalled settings apps | Settings apps are preinstalled in the same way as any other app, and automatically appear in Settings. Capability declared in the app manifest determines whether it is a settings app or not. | Restored automatically along with other preinstalled apps | 
-| Default browser and handlers of protocols | Default application association settings XML file imported using the /Import-DefaultAppAssociations command in DISM | Use PBR extensibility points to re-import the XML from C:\Recovery\OEM using DISM | 
-| Support information in Contact Support app | Settings under Microsoft-Windows-Shell-Setup \| OEMInformation in unattend.xml and logo.bmp file | <ul><li> Use PBR extensibility points to restore unattend.xml and .bmp file from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  | 
-| Store content modifier | Microsoft-Windows-Store-Client-UI \| StoreContentModifier setting in unattend.xml | <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM | 
-| Windows desktop applications (including driver applets installed via setup.exe) | MSI or custom installers | Use ScanState to capture and store the resulting PPKG under C:\Recovery\Customizations, which is restored automatically during PBR. |
-| RDX contents | See UX WEG for details | Should not be restored during PBR | N/A |
 
-
- 
-
- 
-
- 
-
-
-
-
+|                                  Customization                                  |                                                                                      How it is configured                                                                                      |                                                              How it can be restored during PBR                                                               |
+|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                               OOBE – HID pairing                                |                                                 Settings in the <code>&lt;hidSetup&gt;</code> section of OOBE.xml and images (e.g. .png files)                                                 |           <ul><li>Use PBR extensibility script to restore OOBE.xml and images from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>           |
+|                                 OOBE – OEM EULA                                 |                                 <code>&lt;Eulafilename&gt;</code> setting in OOBE.xml and license terms .rtf file(s) stored under %WINDIR%\System32\Oobe\Info                                  |         <ul><li>Use PBR extensibility script to restore OOBE.xml and .rtf files from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>         |
+|                   OOBE – Preconfigured language and time zone                   |                                                               Settings in the <code>&lt;defaults&gt;</code> section of OOBE.xml                                                                |                <ul><li>Use PBR extensibility script to restore OOBE.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>                 |
+|                        OOBE – Hide mobile broadband page                        |                                                                 Microsoft-Windows-WwanUI \| NotInOOBE setting in unattend.xml                                                                  |              <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>              |
+|                          OOBE – OEM Registration page                           |                                                   Settings in the &lt;registration&gt; section of OOBE.xml and HTML files for in-place links                                                   |        <ul><li> Use PBR extensibility script to restore OOBE.xml and HTML files from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>         |
+|                         Start – Pinned tiles and groups                         |      LayoutModification.xml stored under %SYSTEMDRIVE%\Users\Default\AppData\Local\Microsoft\Windows\Shell or settings under Microsoft-Windows-Shell-Setup \| StartTiles in unattend.xml       | <ul><li>Use PBR extensibility points to restore LayoutModification.xml or unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>  |
+|                          Start – Prepopulated MFU list                          |                                             LayoutModification.xml stored under %SYSTEMDRIVE%\Users\Default\AppData\Local\Microsoft\Windows\Shell                                              |         <ul><li>Use PBR extensibility points to restore LayoutModification.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>          |
+|                             Continuum – Form factor                             |                      Settings in unattend.xml:<ul><li>Microsoft-Windows-Deployment \| DeviceForm</li><li>Microsoft-Windows-GPIOButtons \| ConvertibleSlateMode</li></ul>                       |              <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>              |
+|                            Continuum – Default mode                             |                                                              Microsoft-Windows-Shell-Setup \| SignInMode setting in unattend.xml                                                               |              <ul><li>Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>               |
+|                 Desktop – Default and additional accent colors                  |                RunSynchronous command in unattend.xml which adds the AGRB hex color values to the registry under HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Accents                 |              <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>              |
+|                           Desktop – Background image                            |                                   Microsoft-Windows-Shell-Setup \| Themes \| DesktopBackground setting in unattend.xml and image (e.g. .jpg/.png/.bmp file)                                    | <ul><li> Use PBR extensibility points to restore unattend.xml and background image file from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul> |
+|                         Desktop – Pinned taskbar items                          |    Settings under Microsoft-Windows-Shell-Setup \| TaskbarLinks in unattend.xml and shortcut (.lnk) files stored in a folder under %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\    |      <ul><li> Use PBR extensibility points to restore unattend.xml and .lnk files from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>       |
+|                             Desktop – Systray icons                             |                                                        Settings under Microsoft-Windows-Shell-Setup \| NotificationArea in unattend.xml                                                        |              <ul><li>Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>               |
+|           Mobile broadband – Rename "WiFi" to "WLAN" in network list            |                                                             Microsoft-Windows-SystemSettings \| WiFiToWlan setting in unattend.xml                                                             |              <ul><li>Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>               |
+|         Mobile broadband – Enable Network Selection control in Settings         |                                                      Microsoft-Windows-SystemSettings \| DisplayNetworkSelection setting in unattend.xml                                                       |              <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>              |
+|                    PC Settings – Preinstalled settings apps                     | Settings apps are preinstalled in the same way as any other app, and automatically appear in Settings. Capability declared in the app manifest determines whether it is a settings app or not. |                                                  Restored automatically along with other preinstalled apps                                                   |
+|                    Default browser and handlers of protocols                    |                                      Default application association settings XML file imported using the /Import-DefaultAppAssociations command in DISM                                       |                                      Use PBR extensibility points to re-import the XML from C:\Recovery\OEM using DISM                                       |
+|                   Support information in Contact Support app                    |                                                Settings under Microsoft-Windows-Shell-Setup \| OEMInformation in unattend.xml and logo.bmp file                                                |       <ul><li> Use PBR extensibility points to restore unattend.xml and .bmp file from C:\Recovery\OEM</li></ul>or<ul><li>Auto-apply folders</li></ul>       |
+|                             Store content modifier                              |                                                       Microsoft-Windows-Store-Client-UI \| StoreContentModifier setting in unattend.xml                                                        |                                      <ul><li> Use PBR extensibility points to restore unattend.xml from C:\Recovery\OEM                                      |
+| Windows desktop applications (including driver applets installed via setup.exe) |                                                                                    MSI or custom installers                                                                                    |             Use ScanState to capture and store the resulting PPKG under C:\Recovery\Customizations, which is restored automatically during PBR.              |
+|                                  RDX contents                                   |                                                                                     See UX WEG for details                                                                                     |                                                              Should not be restored during PBR                                                               |
 

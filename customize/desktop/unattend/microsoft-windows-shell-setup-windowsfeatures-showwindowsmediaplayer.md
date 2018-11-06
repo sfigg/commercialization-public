@@ -42,7 +42,7 @@ This setting has no effect on Server Core installations.
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ The following XML output shows how to specify that the entry points for these Wi
 
 [WindowsFeatures](microsoft-windows-shell-setup-windowsfeatures.md)
 
- 
+ 
 
- 
+ 
 
 
 

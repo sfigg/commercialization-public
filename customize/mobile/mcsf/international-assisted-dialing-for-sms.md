@@ -104,7 +104,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 6.  For a device that supports IMS over SMS, you can override the support for the assisted dialing plus (**+**) code for SMS. To do this, set `AssistedDialingPlusCodeSupportOverride` to one of the following values:
 
@@ -132,7 +132,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.

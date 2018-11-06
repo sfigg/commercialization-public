@@ -50,30 +50,30 @@ The following table describes the functions that this interface provides.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[OnBegin](onbegin.md)</p></td>
+<td><p><a href="onbegin.md" data-raw-source="[OnBegin](onbegin.md)">OnBegin</a></p></td>
 <td><p>Instructs the library to begin an operation.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OnUpdate](onupdate.md)</p></td>
+<td><p><a href="onupdate.md" data-raw-source="[OnUpdate](onupdate.md)">OnUpdate</a></p></td>
 <td><p>Instructs the library to continue progress of an operation.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OnEnd](onend.md)</p></td>
+<td><p><a href="onend.md" data-raw-source="[OnEnd](onend.md)">OnEnd</a></p></td>
 <td><p>Returns a status code after the end of an operation.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

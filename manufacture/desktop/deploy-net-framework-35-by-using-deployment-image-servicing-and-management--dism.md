@@ -19,7 +19,7 @@ You can use the Deployment Image Servicing and Management (DISM) command-line to
 > [!Important] 
 > For images that will support more than one language, you must add .NET Framework 3.5 binaries before adding any language packs. This order ensures that .NET Framework 3.5 language resources are installed correctly in the reference image and available to users and applications.
 
- 
+ 
 ## <span id="internet"></span><span id="INTERNET"></span>Using DISM with Internet connectivity
 
 
@@ -113,9 +113,9 @@ On Windows 8 PCs, after installation, .NET Framework 3.5 is displayed as enable
 
 [Microsoft .NET Framework 3.5 Deployment Considerations](microsoft-net-framework-35-deployment-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

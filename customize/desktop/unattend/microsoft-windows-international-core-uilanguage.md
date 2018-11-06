@@ -42,7 +42,7 @@ In upgrade installation types, this setting is ignored. In upgrade installations
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 

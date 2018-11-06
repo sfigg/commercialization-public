@@ -56,17 +56,17 @@ ms.topic: article
 <td><p>This property represents the Machine set that contains this role.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Test](machineroletest-property.md)</p></td>
+<td><p><a href="machineroletest-property.md" data-raw-source="[Test](machineroletest-property.md)">Test</a></p></td>
 <td><p>This property represents the test associated with this role.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

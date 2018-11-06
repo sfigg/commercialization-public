@@ -63,9 +63,9 @@ For a sample hybrid mode report descriptor, see [Sample Report Descriptor (Paral
 
 Null values should be specified as outlined in the HID specification. The null bit must be set on all main items in the report descriptor. Be aware that a device can use either the contact count usage or null values to notify the host of the actual number of valid contacts in a packet.
 
- 
+ 
 
- 
+ 
 
 
 

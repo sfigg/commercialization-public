@@ -36,7 +36,7 @@ To use a configuration set, you need the following:
     **Note**  
     When using a USB flash drive, insert the drive directly into the primary set of USB ports for the computer. For a desktop computer, this is typically in the back of the computer.
 
-     
+     
 
 3.  Restart the computer by pressing CTRL+ALT+DEL.
 
@@ -93,9 +93,9 @@ To use a configuration set, you need the following:
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

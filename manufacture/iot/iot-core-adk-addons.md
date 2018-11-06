@@ -131,9 +131,9 @@ Source file for product configurations. Use our samples (SampleA, SampleB) or [c
 [IoT Core feature list](iot-core-feature-list.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

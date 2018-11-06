@@ -41,7 +41,7 @@ Use `TypeID` to manually specify a hard-drive partition type, such as a utility 
 </tbody>
 </table>
 
- 
+ 
 
 ## Partition Types
 
@@ -68,33 +68,33 @@ The following tables describe how to set common partition types by using the mic
 <tbody>
 <tr class="odd">
 <td><p>System partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>Primary</strong>, and then set ModifyPartition\[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md) to <strong>true</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>, and then set ModifyPartition<a href="microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md" data-raw-source="[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md)">Active</a> to <strong>true</strong>.</p></td>
 <td><p>System boot information and Windows RE tools.</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>OEM partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>Primary</strong>, and then set ModifyPartition\<code>TypeID</code> to a recognized value.</p>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>, and then set ModifyPartition&lt;code&gt;TypeID</code> to a recognized value.</p>
 <p>Recognized values include: <code>0x12</code>, <code>0x84</code>, <code>0xDE</code>, <code>0xFE</code>, and <code>0xA0</code>.</p></td>
 <td><p>OEM tools and other system utilities.</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Windows data partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>Primary</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>.</p></td>
 <td><p>Windows, applications, and data.</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td><p>Recovery/utility partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>Primary</strong>, and then set ModifyPartition\<code>TypeID</code> to <strong>0x27</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>, and then set ModifyPartition&lt;code&gt;TypeID</code> to <strong>0x27</strong>.</p></td>
 <td><p>Recovery files such as push-button recovery images and other system utilities.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For information about these and other partition types, see the MSDN topic, [Disk Partition Types](http://go.microsoft.com/fwlink/?LinkId=121505).
 
@@ -118,33 +118,33 @@ For information about these and other partition types, see the MSDN topic, [Disk
 <tbody>
 <tr class="odd">
 <td><p>EFI system partition (ESP)</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>EFI</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>EFI</strong>.</p></td>
 <td><p>The system partition.</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Reserved partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>MSR</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>MSR</strong>.</p></td>
 <td><p>Managing the other hard-drive partitions.</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>Windows data partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>Primary</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>.</p></td>
 <td><p>Windows operating system, applications, and data.</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td><p>Recovery/utility partition</p></td>
-<td><p>Set CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) to <strong>Primary</strong>, and then set ModifyPartition\<code>TypeID</code> to <code>de94bba4-06d1-4d40-a16a-bfd50179d6ac</code>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>, and then set ModifyPartition&lt;code&gt;TypeID</code> to <code>de94bba4-06d1-4d40-a16a-bfd50179d6ac</code>.</p></td>
 <td><p>Recovery tools such as Windows RE, recovery files such as push-button reset images, and other system utilities.</p></td>
 <td><p>No for Windows RE tools partitions.</p>
-<p>Yes for push-button reset partitions and other utility partition types. For more information about hiding partitions, see [Walkthrough: Deploy Push-Button Reset Features](http://go.microsoft.com/fwlink/?LinkId=262006).</p></td>
+<p>Yes for push-button reset partitions and other utility partition types. For more information about hiding partitions, see <a href="http://go.microsoft.com/fwlink/?LinkId=262006" data-raw-source="[Walkthrough: Deploy Push-Button Reset Features](http://go.microsoft.com/fwlink/?LinkId=262006)">Walkthrough: Deploy Push-Button Reset Features</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For information about these and other partition types, see the MSDN topic, [PARTITION\_INFORMATION\_GPT Structure](http://go.microsoft.com/fwlink/?LinkId=121504).
 
@@ -187,9 +187,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ When you author custom profiles, we recommend that you define both a light versi
 
 [Authoring Recording Profiles](authoring-recording-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

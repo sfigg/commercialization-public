@@ -47,12 +47,12 @@ Symbol decoding support uses the environment variables in the following table fo
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 For symbol decoding, the trace must be a kernel trace (or a user trace processed in conjunction with a kernel trace) that has the PROC\_THREAD+LOADER kernel flags enabled and that has been stopped and merged with `-d` or with `-merge` on the computer on which it was taken. Xperf performs a special image identification process during its custom trace merge that enables symbol decoding.
 
- 
+ 
 
 ## Remarks
 
@@ -68,9 +68,9 @@ If this action is not specified on the command line, symbol decoding is disabled
 
 [Common In-Depth Analysis Issues](../assessments/common-in-depth-analysis-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

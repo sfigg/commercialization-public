@@ -36,37 +36,37 @@ Here’s what you’ll need to know in order to sideload apps:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Understand Sideloading Concepts](#understandingconcepts)</p></td>
+<td align="left"><p><a href="#understandingconcepts" data-raw-source="[Understand Sideloading Concepts](#understandingconcepts)">Understand Sideloading Concepts</a></p></td>
 <td align="left"><p>Introduces some basic concepts you’ll need to know about sideloading apps.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure PCs for Sideloading Requirements](#sideloadingrequirements)</p></td>
+<td align="left"><p><a href="#sideloadingrequirements" data-raw-source="[Configure PCs for Sideloading Requirements](#sideloadingrequirements)">Configure PCs for Sideloading Requirements</a></p></td>
 <td align="left"><p>Shows the requirements to be met in order to sideload apps on devices running different Windows Editions. Includes how to use Group Policy to configure your enterprise PCs for sideloading apps.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Configure PCs for Developing Microsoft Store Apps](#bkmk_developerlicense)</p></td>
+<td align="left"><p><a href="#bkmk_developerlicense" data-raw-source="[Configure PCs for Developing Microsoft Store Apps](#bkmk_developerlicense)">Configure PCs for Developing Microsoft Store Apps</a></p></td>
 <td align="left"><p>Shows you how to configure your PC to have a developer license that does not expire. The PC can be used to develop Microsoft Store apps or enterprise apps that will be added to your enterprise devices.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Add Apps](#addapps)</p></td>
+<td align="left"><p><a href="#addapps" data-raw-source="[Add Apps](#addapps)">Add Apps</a></p></td>
 <td align="left"><p>Shows you how to sideload apps that you develop.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Add Multiple Languages for Apps](#bkmk_mulitlang)</p></td>
+<td align="left"><p><a href="#bkmk_mulitlang" data-raw-source="[Add Multiple Languages for Apps](#bkmk_mulitlang)">Add Multiple Languages for Apps</a></p></td>
 <td align="left"><p>Shows you how to prepare a multi-lingual image, sign-in to the image, install any desired app resource packs (including language) and then use Copy Profile to capture the image.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Inventory Apps](#inventoryapps)</p></td>
+<td align="left"><p><a href="#inventoryapps" data-raw-source="[Inventory Apps](#inventoryapps)">Inventory Apps</a></p></td>
 <td align="left"><p>Shows you how to list the LOB apps installed on the devices in your enterprise or in an offline Windows image.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Remove Apps](#removeapps)</p></td>
+<td align="left"><p><a href="#removeapps" data-raw-source="[Remove Apps](#removeapps)">Remove Apps</a></p></td>
 <td align="left"><p>Shows you how to remove individual instances of an app or remove the provisioning setting of an app.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="UnderstandingConcepts"></span><span id="understandingconcepts"></span><span id="UNDERSTANDINGCONCEPTS"></span>
 
@@ -165,7 +165,7 @@ Before you can add and run sideloaded LOB Windows apps that are not signed by th
     **Note**  
     The steps provided in this procedure assume you understand the basics of Group Policy design and operations. To administer domain—based Group Policy on a Windows 8.1 PC, you will need to install the Group Policy Management Console which is installed with the [Remote Server Administration Tools for Windows 8.1](http://go.microsoft.com/fwlink/?LinkId=299896). For more information about Group Policy, see [Group Policy for Beginners](http://go.microsoft.com/fwlink/?LinkId=330723) and the [Group Policy Techcenter](http://go.microsoft.com/fwlink/?LinkId=330564).
 
-     
+     
 
 2.  Click to expand **Computer Configuration**, **Administrative Templates**, **Windows Components**, and then **App Package Deployment**.
 
@@ -194,7 +194,7 @@ Setting the Group Policy to allow trusted applications updates the following reg
     **Note**  
     The activation GUID is not the same as the sideloading product key. The activation GUID will always be ec67814b-30e6-4a50-bf7b-d55daf729d1e.
 
-     
+     
 
 For more information about sideloading product keys, see the [Windows 8 Licensing Guide](http://go.microsoft.com/fwlink/?LinkId=267899).
 
@@ -210,7 +210,7 @@ You can configure your PCs to have a developer license that does not expire. Onc
 **Note**  
 To enable sideloading on Windows 8 Pro device, you must use a sideloading product activation key. For more information see, [Configure PCs for Sideloading Requirements](#sideloadingrequirements)
 
- 
+ 
 
 **To configure your enterprise PCs with a developer license**
 
@@ -219,7 +219,7 @@ To enable sideloading on Windows 8 Pro device, you must use a sideloading prod
     **Note**  
     The steps provided in this procedure assume you understand the basics of Group Policy design and operations. To administer domain—based Group Policy on a Windows 8.1 PC, you will need to install the Group Policy Management Console which is installed with the [Remote Server Administration Tools for Windows 8.1](http://go.microsoft.com/fwlink/?LinkId=299896). For more information about Group Policy, see [Group Policy for Beginners](http://go.microsoft.com/fwlink/?LinkId=330723) and the [Group Policy Techcenter](http://go.microsoft.com/fwlink/?LinkId=330564).
 
-     
+     
 
 2.  Click to expand **Computer Configuration**, **Administrative Templates**, **Windows Components**, and then **App Package Deployment**.
 
@@ -269,7 +269,7 @@ On Windows 8, to update a provisioned app, you must first remove the provisione
 
 On Windows 8.1 and newer, you no longer need to remove the provisioned app prior to deploying the new version of the provisioned app.
 
- 
+ 
 
 **Add a provisioned LOB app to a Windows image**
 
@@ -290,7 +290,7 @@ On Windows 8.1 and newer, you no longer need to remove the provisioned app prio
 **Note**  
 The computer does not have to be joined to a domain or have an activated sideloading product key before you install provisioned LOB apps. However, the apps will not run until the computer meets this sideloading requirement. For more information, see [Customize the Start Screen](customize-the-start-screen.md).
 
- 
+ 
 
 **Update a provisioned LOB app once it is has been added to a Windows image**
 
@@ -326,28 +326,28 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
     ```
     <?xml version="1.0" encoding="utf-8"?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
-        <settings pass="specialize">
-            <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                <CopyProfile>true</CopyProfile>
-                <RegisteredOrganization />
-                <RegisteredOwner />
-            </component>
-        </settings>
-        <cpi:offlineImage cpi:source="catalog:d:/desktop/x86 clgs/install_windows vista ultimate.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+        <settings pass="specialize">
+            <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <CopyProfile>true</CopyProfile>
+                <RegisteredOrganization />
+                <RegisteredOwner />
+            </component>
+        </settings>
+        <cpi:offlineImage cpi:source="catalog:d:/desktop/x86 clgs/install_windows vista ultimate.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
     </unattend>
     ```
 
     **Note**  
     See [Change the language used in apps](http://go.microsoft.com/fwlink/?LinkId=389195) for information about setting the language and installing updates from the Microsoft Store.
 
-     
+     
 
 2.  Sign-in to a local administrator user account from OOBE on clean image.
 
     **Important**  
     When adding a specific language to a Windows app, you would also want to [Add Language Packs to Windows](add-language-packs-to-windows.md) for the same languages as you did for the Windows app.
 
-     
+     
 
 3.  Add the desired languages to the current user’s language preference list.
 
@@ -360,7 +360,7 @@ To prepare a multi-lingual image, sign-in to the image, install any desired app 
 
         If you do not have an MSA account, you can update apps without a Microsoft Store account.
 
-         
+         
 
     2.  Check for updates and install new language resource packs.
 
@@ -499,9 +499,9 @@ You can remove individual instances of an app, or remove the provisioning settin
 
 [Windows 8 Licensing Guide](http://go.microsoft.com/fwlink/?LinkId=267899)
 
- 
+ 
 
- 
+ 
 
 
 

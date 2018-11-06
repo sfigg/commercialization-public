@@ -22,13 +22,13 @@ Using the example of a printer, there would be a separate **ProductInstance** cl
 
 Each **ProductInstance** class is named. The **Name** value must be unique to each project. Unlike a project, you can't rename a **ProductInstance** class. Each **ProductInstance** class is associated with a specific **MachinePool**. This **MachinePool** can be shared with other **ProductInstance** classes.
 
-**ProductInstance** has several **FindTargetFrom\*** methods. Each method searches across computers in a machine pool and returns **TargetData** for each target that meets the filter criteria. The caller must verify that all the targets that it meant to return are returned.
+**ProductInstance** has several **FindTargetFrom\\*** methods. Each method searches across computers in a machine pool and returns **TargetData** for each target that meets the filter criteria. The caller must verify that all the targets that it meant to return are returned.
 
-**TargetData** is an abstract target (that is, it's what can be tested). **Target** is what you test. You select a **TargetData** object by using one of the **FindTarget\*** methods, and then call **CreateTarget()** to promote that **TargetData** to a **Target** class for testing.
+**TargetData** is an abstract target (that is, it's what can be tested). **Target** is what you test. You select a **TargetData** object by using one of the **FindTarget\\*** methods, and then call **CreateTarget()** to promote that **TargetData** to a **Target** class for testing.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ This method compares two **MachineRole** instances.
 
 `Public Function Equals ( _`
 
-          `otherMachineRole As MachineRole _`
+          `otherMachineRole As MachineRole _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **MachineRole** instances.
 
 `public bool Equals (`
 
-          `MachineRole otherMachineRole`
+          `MachineRole otherMachineRole`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **MachineRole** instances.
 
 *otherMachineRole*
 
-     The **MachineRole** object to compare against this **MachineRole** object.
+     The **MachineRole** object to compare against this **MachineRole** object.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **Boolean**, which has a value of **true** if the two objects are equal,
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

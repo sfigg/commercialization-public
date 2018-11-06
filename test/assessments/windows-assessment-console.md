@@ -33,21 +33,21 @@ The Windows Assessment Console and assessments are installed as part of the Wind
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Windows Assessment Console overview](windows-assessment-console-overview.md)</p></td>
+<td><p><a href="windows-assessment-console-overview.md" data-raw-source="[Windows Assessment Console overview](windows-assessment-console-overview.md)">Windows Assessment Console overview</a></p></td>
 <td><p>Learn about benefits and limitations, common scenarios, and dependencies of the Windows Assessment Console.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Assessment Console step-by-step guide](windows-assessment-console-step-by-step-guide.md)</p></td>
+<td><p><a href="windows-assessment-console-step-by-step-guide.md" data-raw-source="[Windows Assessment Console step-by-step guide](windows-assessment-console-step-by-step-guide.md)">Windows Assessment Console step-by-step guide</a></p></td>
 <td><p>Learn how to install the Windows Assessment Toolkit and use the Windows Assessment Console to assess the quality of a local computer and review the results.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Assessment Console common scenarios](windows-assessment-console-common-scenarios.md)</p></td>
+<td><p><a href="windows-assessment-console-common-scenarios.md" data-raw-source="[Windows Assessment Console common scenarios](windows-assessment-console-common-scenarios.md)">Windows Assessment Console common scenarios</a></p></td>
 <td><p>Create jobs that have multiple assessments, compare results, and package jobs to run on other computers. This section includes several advanced how-to topics.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -60,9 +60,9 @@ The Windows Assessment Console and assessments are installed as part of the Wind
 
 [Windows Assessment Services Technical Reference](windows-assessment-services-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

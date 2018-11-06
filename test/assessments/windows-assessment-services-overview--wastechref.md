@@ -80,9 +80,9 @@ Windows Assessment Services and the Windows ASC enable you to do the following:
 
 [Windows Assessment Services common scenarios](windows-assessment-services-how-to-topics--wastechref.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,7 +21,7 @@ This sample shows how to retrieve and display a diagnostic bugcheck summary for 
 >[!NOTE]
 >  This feature is available only for Desktop client and server machines.
 
- 
+ 
 
 ## <span id="C_"></span><span id="c_"></span>**C#**
 
@@ -173,9 +173,9 @@ else
                 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

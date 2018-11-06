@@ -72,7 +72,7 @@ Specify the account names and group names by using language-neutral names. The l
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -130,9 +130,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
- 
+ 
 
- 
+ 
 
 
 

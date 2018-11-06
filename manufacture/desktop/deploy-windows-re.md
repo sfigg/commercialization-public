@@ -83,7 +83,7 @@ To complete this walkthrough, you need the following:
 
 **Note**   If you want to configure push-button reset features for Windows 8 editions, skip this section, and go to the topic: [Deploy Push-Button Reset Features](deploy-push-button-reset-features.md).
 
- 
+ 
 
 Configure your partitions as recovery partitions, and then conceal the drive letters so the partitions don't appear in common Windows menus, such as File Explorer.
 
@@ -168,9 +168,9 @@ Configure your partitions as recovery partitions, and then conceal the drive let
 
 [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md)
 
- 
+ 
 
- 
+ 
 
 
 

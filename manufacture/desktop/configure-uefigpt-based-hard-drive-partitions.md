@@ -18,7 +18,7 @@ Create custom partition layouts for your hard disk drives (HDDs), solid-state dr
 
 **Note**  If you use a custom partition layout on Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), update the push-button recovery script so the recovery tools can recreate the custom partition layout when needed.
 
- 
+ 
 
 In this topic:
 
@@ -50,7 +50,7 @@ Each partition can have a maximum of 18 exabytes (~18.8 million terabytes) of sp
 
     Advanced Format 512e drives are not affected by this limitation, because their emulated sector size is 512 bytes. 512 bytes x 65527 = 32 MB, which is less than the 100 MB minimum size for this partition.
 
-     
+     
 
 -   **Microsoft® reserved partition (MSR)**
 
@@ -120,7 +120,7 @@ We recommend changing the Windows drive letter to a letter that’s near the end
 
 If you reboot, Windows PE reassigns disk letters alphabetically, starting with the letter C, without regard to the configuration in Windows Setup. This configuration can change based on the presence of different drives, such as USB flash drives.
 
- 
+ 
 
 The following steps describe how to partition your hard drives and prepare to apply images. You can use the code in the sections that follow to complete these steps.
 
@@ -195,9 +195,9 @@ Use a deployment script to apply the Windows images on the newly created partiti
 
 [The Windows and GPT FAQ](http://go.microsoft.com/fwlink/?LinkId=88211)
 
- 
+ 
 
- 
+ 
 
 
 

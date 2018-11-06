@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 For the [TestDefinition](testdefinition-class.md)s given, add new test instances.
 
@@ -33,9 +33,9 @@ For the [TestDefinition](testdefinition-class.md)s given, add new test instances
 
 `void AddTests (`
 
-          `IEnumerable<TestDefinition> testList,`
+          `IEnumerable<TestDefinition> testList,`
 
-          `bool featureDetectionEnabled`
+          `bool featureDetectionEnabled`
 
 `)`
 
@@ -44,20 +44,20 @@ For the [TestDefinition](testdefinition-class.md)s given, add new test instances
 
 *testList*
 
-     The list of tests to add.
+     The list of tests to add.
 
 *featureDetectionEnabled*
 
-     Sets whether there must be a feature mapping between the tests being created and the targets they are being added to.
+     Sets whether there must be a feature mapping between the tests being created and the targets they are being added to.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

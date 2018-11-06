@@ -98,7 +98,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 6.  Set the `SMStoSMTPShortCode` value to the correct short code for your mobile operator. This value is the destination SMTP gateway phone number, and must be provided by the mobile operator.
 

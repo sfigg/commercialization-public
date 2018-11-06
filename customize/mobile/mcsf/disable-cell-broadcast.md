@@ -23,11 +23,11 @@ To comply with these operator requirements, OEMs may disable Cell Broadcast thro
 **Note**  
 NV items are owned by the IHV and not Microsoft. OEMs should consult with their IHV to determine how to disable Cell Broadcast through an NV item.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

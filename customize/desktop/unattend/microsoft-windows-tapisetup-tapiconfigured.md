@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -71,9 +71,9 @@ The following XML output shows how to rewrite the configured telephony locations
 
 [microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md)
 
- 
+ 
 
- 
+ 
 
 
 

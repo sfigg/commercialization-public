@@ -22,10 +22,10 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 <tr>
 <td>&nbsp;</td>
 <td colspan="2">
-<p style="text-align: center;">![value phone](../images/phone.png)</p>
+<p style="text-align: center;"><img src="../images/phone.png" alt="value phone"/></p>
 </td>
 <td>
-<p>![value phablet](../images/phablet.png)</p>
+<p><img src="../images/phablet.png" alt="value phablet"/></p>
 </td>
 </tr>
 <tr>
@@ -43,11 +43,11 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 <tr>
 <td bgcolor="EEEEEE">Key Features</td>
 <td>
-<p>[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p>[Continuum for Phones](../device-experiences/continuum-phone.md)</p>
+<p><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p><a href="../device-experiences/continuum-phone.md" data-raw-source="[Continuum for Phones](../device-experiences/continuum-phone.md)">Continuum for Phones</a></p>
 </td>
 <td>
-<p>[Windows Hello](../device-experiences/windows-hello.md)</p>
+<p><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ Smartphones come in a wide range of sizes from low cost phones, small tablets (p
 </tr>
 <tr>
 <td bgcolor="EEEEEE"><p>Display</p></td>
-<td><p>3.5&rdquo;&ndash;5&rdquo;+&nbsp;/ WVGA -FWVGA-qHD\*</p></td>
+<td><p>3.5&rdquo;&ndash;5&rdquo;+&nbsp;/ WVGA -FWVGA-qHD*</p></td>
 <td><p>4.5&ndash;5.5&rdquo;+&nbsp;/ FHD-WQHD</p></td>
 <td><p>5.5&rdquo;&ndash;7&rdquo;&nbsp;/ 720p+</p></td>
 </tr>

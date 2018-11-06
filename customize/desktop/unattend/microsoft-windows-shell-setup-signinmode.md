@@ -46,7 +46,7 @@ OEMs can configure this setting to support Continuum, which is a new, adaptive u
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ oobeSystem
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

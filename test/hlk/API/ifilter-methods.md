@@ -32,17 +32,17 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IFilter.IsApplicable Method](ifilterisapplicable-method.md)</p></td>
+<td><p><a href="ifilterisapplicable-method.md" data-raw-source="[IFilter.IsApplicable Method](ifilterisapplicable-method.md)">IFilter.IsApplicable Method</a></p></td>
 <td><p>This method determines whether the filter is applicable for the given taskResult.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

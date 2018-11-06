@@ -43,7 +43,7 @@ The legacy Windows touch samples are available in the [Windows Driver Kit 7.1.0]
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Elotouch Driver](elotouch-driver.md)</p></td>
+<td><p><a href="elotouch-driver.md" data-raw-source="[Elotouch Driver](elotouch-driver.md)">Elotouch Driver</a></p></td>
 <td><p></p>
 Windows 7
 Windows Server 2008
@@ -61,7 +61,7 @@ Windows XP</td>
 <td><p>The Elotouch driver is a KMDF driver that can function as both a multi-touch driver and a mouse driver.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WacomKMDF Driver](wacomkmdf-driver.md)</p></td>
+<td><p><a href="wacomkmdf-driver.md" data-raw-source="[WacomKMDF Driver](wacomkmdf-driver.md)">WacomKMDF Driver</a></p></td>
 <td><p></p>
 Windows 7
 Windows Server 2008
@@ -81,11 +81,11 @@ Windows XP</td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

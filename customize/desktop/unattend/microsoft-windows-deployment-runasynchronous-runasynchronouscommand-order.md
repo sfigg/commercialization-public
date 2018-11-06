@@ -37,17 +37,16 @@ To run services or commands that can start at the same time, use asynchronous co
 <td><p><em>Order</em></p></td>
 <td><p>Specifies a unique integer between 1 and 500.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Unlike synchronous commands, the computer does not wait for one asynchronous command to finish before it starts the next command.</p>
+<strong>Important</strong><br/><p>Unlike synchronous commands, the computer does not wait for one asynchronous command to finish before it starts the next command.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 
@@ -101,9 +100,9 @@ The following XML output shows how to set asynchronous commands.
 
 [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)
 
- 
 
- 
+
+
 
 
 

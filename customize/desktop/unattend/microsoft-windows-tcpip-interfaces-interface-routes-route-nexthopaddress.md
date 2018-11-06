@@ -35,12 +35,12 @@ The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must b
 <tbody>
 <tr class="odd">
 <td><p><em>Nexthopaddress</em></p></td>
-<td><p>Specifies the IP address of the next hop in the [Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md). <em>Nexthopaddress</em> is a string with a maximum length of 45 characters.</p></td>
+<td><p>Specifies the IP address of the next hop in the <a href="microsoft-windows-tcpip-interfaces-interface-routes-route.md" data-raw-source="[Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)">Route</a>. <em>Nexthopaddress</em> is a string with a maximum length of 45 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -68,63 +68,63 @@ The following XML output shows how to configure TCPIP.
 
 ```
 <component name="Microsoft-Windows-TCPIP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <Interfaces>
+   <Interfaces>
    <!-- Add static IP address (192.168.0.1/24, ffff:1::3/48) & route (12.34.0.0/16) to interface with identifier "Ethernet 1" -->      <Interface wcm:action="add">
-         <Ipv4Settings>
-            <DhcpEnabled>true</DhcpEnabled> 
-            <Metric>20</Metric> 
-            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
-         </Ipv4Settings>
-         <Ipv6Settings>
-            <DhcpEnabled>false</DhcpEnabled> 
-            <Metric>30</Metric> 
-            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
-         </Ipv6Settings>
-      <Identifier>Ethernet 1</Identifier>
-         <UnicastIpAddresses>
-           <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/24</IpAddress>
-           <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress>
-         </UnicastIpAddresses>
-         <Routes>
-            <Route wcm:action="add">
-               <Identifier>1</Identifier> 
-               <Metric>10</Metric> 
-               <NextHopAddress>12.34.0.0</NextHopAddress> 
-               <Prefix>16</Prefix> 
-            </Route>
-            <Route wcm:action="add">
-               <Identifier>10</Identifier> 
-               <Metric>29</Metric> 
-               <NextHopAddress>12.34.56.0</NextHopAddress> 
-               <Prefix>24</Prefix> 
-            </Route>
-         </Routes>
-      </Interface>
-      <Interface wcm:action="add">
-         <Ipv4Settings>
-            <DhcpEnabled>true</DhcpEnabled> 
-            <Metric>20</Metric> 
-            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
-         </Ipv4Settings>
-         <Ipv6Settings>
-            <DhcpEnabled>false</DhcpEnabled> 
-            <Metric>10</Metric> 
-            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
-         </Ipv6Settings>
-         <Identifier>Local Area Connection</Identifier> 
-         <UnicastIpAddresses>
-            <IpAddress wcm:action="add" wcm:keyValue="1">123.45.67.8</IpAddress> 
-            </UnicastIpAddresses>
-         <Routes>
-            <Route wcm:action="add">
-               <Identifier>1</Identifier> 
-               <Metric>10</Metric> 
-               <NextHopAddress>12.34.0.0</NextHopAddress> 
-               <Prefix>16</Prefix> 
-            </Route>
-         </Routes>
-      </Interface>
-   </Interfaces>
+         <Ipv4Settings>
+            <DhcpEnabled>true</DhcpEnabled> 
+            <Metric>20</Metric> 
+            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
+         </Ipv4Settings>
+         <Ipv6Settings>
+            <DhcpEnabled>false</DhcpEnabled> 
+            <Metric>30</Metric> 
+            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
+         </Ipv6Settings>
+      <Identifier>Ethernet 1</Identifier>
+         <UnicastIpAddresses>
+           <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/24</IpAddress>
+           <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress>
+         </UnicastIpAddresses>
+         <Routes>
+            <Route wcm:action="add">
+               <Identifier>1</Identifier> 
+               <Metric>10</Metric> 
+               <NextHopAddress>12.34.0.0</NextHopAddress> 
+               <Prefix>16</Prefix> 
+            </Route>
+            <Route wcm:action="add">
+               <Identifier>10</Identifier> 
+               <Metric>29</Metric> 
+               <NextHopAddress>12.34.56.0</NextHopAddress> 
+               <Prefix>24</Prefix> 
+            </Route>
+         </Routes>
+      </Interface>
+      <Interface wcm:action="add">
+         <Ipv4Settings>
+            <DhcpEnabled>true</DhcpEnabled> 
+            <Metric>20</Metric> 
+            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
+         </Ipv4Settings>
+         <Ipv6Settings>
+            <DhcpEnabled>false</DhcpEnabled> 
+            <Metric>10</Metric> 
+            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
+         </Ipv6Settings>
+         <Identifier>Local Area Connection</Identifier> 
+         <UnicastIpAddresses>
+            <IpAddress wcm:action="add" wcm:keyValue="1">123.45.67.8</IpAddress> 
+            </UnicastIpAddresses>
+         <Routes>
+            <Route wcm:action="add">
+               <Identifier>1</Identifier> 
+               <Metric>10</Metric> 
+               <NextHopAddress>12.34.0.0</NextHopAddress> 
+               <Prefix>16</Prefix> 
+            </Route>
+         </Routes>
+      </Interface>
+   </Interfaces>
 </component>
 <Interfaces>
    <Interface wcm:action="add">
@@ -190,9 +190,9 @@ The following XML output shows how to configure TCPIP.
 
 [Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)
 
- 
+ 
 
- 
+ 
 
 
 

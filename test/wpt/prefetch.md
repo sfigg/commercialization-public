@@ -29,10 +29,10 @@ This action produces a text file that summarizes the metrics regarding prefetche
 <a href="" id="-summary"></a>**-summary**  
 Displays the prefetch scenarios in the trace.
 
-<a href="" id="-timeunit-unit----precision--"></a>**-timeunit***&lt;unit&gt; \[&lt;precision&gt;\]*  
+<a href="" id="-timeunit-unit----precision--"></a>**-timeunit**<em>&lt;unit&gt; \[&lt;precision&gt;\]</em>  
 Configures time presentation to use time unit &lt;*unit*&gt; and optionally time precision &lt;*precision*&gt;. The units can be "ns" (nanoseconds), "us" (microseconds), "ms" (milliseconds), or "s" (seconds).
 
-<a href="" id="-min-duration-"></a>**-min***&lt;duration&gt;*  
+<a href="" id="-min-duration-"></a>**-min**<em>&lt;duration&gt;</em>  
 Shows only individual timings, in microseconds, longer than or equal to &lt;*duration*&gt;.
 
 ## Related topics
@@ -42,9 +42,9 @@ Shows only individual timings, in microseconds, longer than or equal to &lt;*dur
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

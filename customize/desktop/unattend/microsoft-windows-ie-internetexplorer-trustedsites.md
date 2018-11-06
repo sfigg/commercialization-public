@@ -27,7 +27,7 @@ For more information, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md
 **Note**  
 This setting is applicable only for Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 and Windows Server 2008. The Internet Explorer ESC must also be enabled for this setting to apply.
 
- 
+ 
 
 ## Values
 
@@ -45,7 +45,7 @@ This setting is applicable only for Windows Server 2012 R2, Windows Server 2012,
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -80,9 +80,9 @@ The following XML output specifies the fully qualified URLs.
 
 [LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md)
 
- 
+ 
 
- 
+ 
 
 
 

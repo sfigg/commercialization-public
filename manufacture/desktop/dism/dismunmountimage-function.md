@@ -87,7 +87,7 @@ hr = DismUnmountImage (L"C:\\test\\offline", DISM_COMMIT_IMAGE, NULL, NULL, NULL
 <tbody>
 <tr class="odd">
 <td><p>Supported host platforms for WIM images:</p></td>
-<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the [Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).</p></td>
+<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=206587" data-raw-source="[Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587)">Windows ADK Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supported host platforms for VHD images:</p></td>
@@ -96,7 +96,7 @@ hr = DismUnmountImage (L"C:\\test\\offline", DISM_COMMIT_IMAGE, NULL, NULL, NULL
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ---------
@@ -139,9 +139,9 @@ Requirements
 
 [**DismRemountImage**](dismremountimage-function.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 To name a partition, you must also specify a [Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md) for the partition.
 
- 
+ 
 
 ## Values
 
@@ -41,7 +41,7 @@ To name a partition, you must also specify a [Format](microsoft-windows-setup-di
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -131,9 +131,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

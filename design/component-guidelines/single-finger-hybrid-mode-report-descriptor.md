@@ -19,7 +19,7 @@ The Single Finger Hybrid Mode Multi-touch Devices sample report descriptor conta
 
 **Note**  HID I2C multi-touch devices are required to follow this mode.
 
- 
+ 
 
 ```
 0x05, 0x0d,                         // USAGE_PAGE (Digitizers)          
@@ -99,7 +99,7 @@ The Single Finger Hybrid Mode Multi-touch Devices sample report descriptor conta
 
 **Note**  the REPORTID\_MAX\_COUNT and REPORTID\_MOUSE referenced in the above descriptors don’t signify any particular value. Report identifiers are optional and should be assigned according to the needs of every report descriptor. Please see the [Device Class Definition for Human Interface Devices (HID) Version 1.11](http://www.usb.org/developers/hidpage/HID1_11.pdf) document for more information about report identifiers.
 
- 
+ 
 
 The following example shows 2 frames of 5 reports each for single-finger hybrid device representing 5 counts.
 
@@ -116,11 +116,11 @@ The following example shows 2 frames of 5 reports each for single-finger hybrid 
 | 1113 | 317 | TRUE | 3561      | 3          | 0             |
 | 866  | 218 | TRUE | 3561      | 4          | 0             |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

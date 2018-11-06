@@ -77,9 +77,11 @@ If the international assist feature is turned off, it is also possible to overri
     </tbody>
     </table>
 
-     
 
-    By default, the international assist feature is turned off.
+
+~~~
+By default, the international assist feature is turned off.
+~~~
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

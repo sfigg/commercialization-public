@@ -18,7 +18,7 @@ ms.topic: article
 # Windows Assessment Console step-by-step guide
 
 
-This guide provides step-by-step guidance for installing the Windows Assessment Toolkit and using the Windows Assessment Console to assess the quality of a local computer and review the results.
+This guide provides step-by-step guidance for installing the Windows Assessment Toolkit and using the Windows Assessment Console to assess the quality of a local computer and review the results.
 
 The first assessment used in this guide helps you to verify performance quality for the new Windows UI. Then you create a job using a template that includes two driver assessments that verify the drivers for the targeted hardware and Windows certification requirements. You then create a third assessment that evaluates the first boot experience. In the final exercise in this guide, you package a job and run it on a different computer so that you can compare the results of the two jobs.
 
@@ -48,11 +48,11 @@ Each exercise also includes a 3 – 5 minute demo.
 ## <a href="" id="wac-sxs-prereq"></a>Prerequisites
 
 
-To successfully complete the steps outlined in this guide, you must install the Windows Assessment Toolkit from the Windows Assessment and Deployment Kit (Windows ADK) on a test computer that is running Windows 8 or Windows 10.
+To successfully complete the steps outlined in this guide, you must install the Windows Assessment Toolkit from the Windows Assessment and Deployment Kit (Windows ADK) on a test computer that is running Windows 8 or Windows 10.
 
 ### Install the Windows Assessment Toolkit
 
-1.  Double-click the Windows ADK installer, ADKSetup.exe.
+1.  Double-click the Windows ADK installer, ADKSetup.exe.
 
 2.  Verify that the **Install the Assessment and Deployment Kit to this computer** option is selected, and then click **Next**.
 
@@ -83,7 +83,7 @@ Running an assessment with the recommended settings is quick and easy. The setti
 
 Watch the video demonstration:
 
-> [! VIDEO https://www.microsoft.com/en-us/videoplayer/embed/3f889614-b65c-4066-84ea-c523fdaabc39?autoplay=false]
+> [! VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/3f889614-b65c-4066-84ea-c523fdaabc39?autoplay=false>]
 
 **To run a single assessment with the recommended settings**
 
@@ -103,10 +103,10 @@ Watch the video demonstration:
 
     -   Informational messages provide additional instructions or information about actions that will be taken when the job runs. After you’ve read the information, click **Start** to begin the job.
 
-    **Important**  
+    **Important**  
     Do not interact with the computer while the job is running. You will see activities while the job is running. When the job finishes, the results will appear in the Windows Assessment Console.
 
-     
+
 
 The results of this assessment show rendering and responsiveness metrics. Search performance metrics include the time that is required for various aspects of Search to be completed and displayed. Transition performance metrics include delays, frame rates, and glitches. Responsiveness results are measured in milliseconds. Low numbers mean that the computer is faster and more responsive. For rendering, the results show the frame rate and the number of glitches that occur. A good user experience has high frame rates and few glitches.
 
@@ -146,12 +146,14 @@ Watch the video demonstration:
 
 8.  When the Microsoft Assessment Launcher window appears, click **Details** to monitor the progress of the job.
 
-    **Important**  
+    **Important**  
     It is okay to monitor the job progress in the Assessment Launcher window, but do not interact with the computer in any other way while the job is running. You might also see a console window appear while the job is running.
 
-     
 
-    The assessments run in the order they are listed in the job. First the Driver Verification assessment verifies that your computer contains the correct set of drivers. Then the Driver Certification Prevalidation assessment verifies that installed drivers qualify for the Windows Certification Program. The last assessment to run is the First Boot Performance assessment which examines the Event Trace Log (ETL) files created during Windows setup and OOBE to identify issues that affect the time that is required to boot Windows and display the Start screen the first time that the end user starts the computer. When all three assessments are completed, the results open in the assessment console.
+
+~~~
+The assessments run in the order they are listed in the job. First the Driver Verification assessment verifies that your computer contains the correct set of drivers. Then the Driver Certification Prevalidation assessment verifies that installed drivers qualify for the Windows Certification Program. The last assessment to run is the First Boot Performance assessment which examines the Event Trace Log (ETL) files created during Windows setup and OOBE to identify issues that affect the time that is required to boot Windows and display the Start screen the first time that the end user starts the computer. When all three assessments are completed, the results open in the assessment console.
+~~~
 
 9.  The **View Results** page contains a run information table, assessment results tables, a details pane on the right, and a metric chart at the top of the page. The following information can help you find additional information on the **View Results** page.
 
@@ -187,10 +189,10 @@ Watch the video demonstration:
 
 4.  In the **Save Job** dialog, browse the \\Windows Assessment Console\\Jobs folder, rename the job **My Browsing Experience Job**, and then click **Save**.
 
-    **Important**  
+    **Important**  
     The standard location for saving jobs is %USERPROFILE%\\Documents\\Windows Assessment Console\\Jobs. When you save a job to this location, the job appears on the Windows Assessment Console Home page for easy access.
 
-     
+
 
 5.  In the new tab in the Windows Assessment Console, under **Job settings**, click **Overview**, to change the **Description** to **Measure Browser Experience**, and change the **Notes** to **Measure Browser Experience and impact of minifilter drivers**.
 
@@ -224,10 +226,10 @@ Watch the video demonstration:
 
 13. The next dialog box is informational. Click **Start** after reviewing the information.
 
-    **Important**  
+    **Important**  
     Do not interact with your computer while the job is running. You might see Internet Explorer activity on the desktop while the job is running. When the job finishes, the results will appear in the Windows Assessment Console.
 
-     
+
 
 ### Next Steps
 
@@ -241,12 +243,12 @@ When you create a job that you want to run on a different computer, you do not h
 Watch the video demonstration:
 <iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/5a58137e-3afb-4e54-bb14-eaaf56bb44f6?autoplay=false"></iframe>
 
-**Important**  
+**Important**  
 You should complete Exercise 1 before continuing.
 
 This step requires a removable USB flash drive to store the job, and a separate computer to run the job on.
 
- 
+
 
 **Step 1: Package the job**
 
@@ -307,7 +309,7 @@ When comparing two or more results, the best metrics when applicable are highlig
 ## Summary
 
 
-In this step-by-step guide, you ran jobs with the recommended settings, and you created a custom job. In addition, you packaged a job and ran it on another computer and compared the results. These are basic scenarios that give you an understanding of how to use the assessments that are provided, and how to navigate through the Windows® Assessment Console.
+In this step-by-step guide, you ran jobs with the recommended settings, and you created a custom job. In addition, you packaged a job and ran it on another computer and compared the results. These are basic scenarios that give you an understanding of how to use the assessments that are provided, and how to navigate through the Windows® Assessment Console.
 
 ### More things to try
 
@@ -321,16 +323,16 @@ Try running additional jobs on your own. For example, we recommend the following
 
 -   [Create and run an energy efficiency job](create-and-run-an-energy-efficiency-job.md). Describes how to create and run a job that assesses the battery life and energy efficiency of a portable computer.
 
--   [On/Off Transition Performance](onoff-transition-performance.md). These assessments help you measure the duration between transitions from different computer states, like boot, resume from standby, and hibernate. Advanced issue analysis is available for any issues that are found so that any problems can be traced back to the source using Event Trace Logging and Windows® Performance Analyzer (WPA).
+-   [On/Off Transition Performance](onoff-transition-performance.md). These assessments help you measure the duration between transitions from different computer states, like boot, resume from standby, and hibernate. Advanced issue analysis is available for any issues that are found so that any problems can be traced back to the source using Event Trace Logging and Windows® Performance Analyzer (WPA).
 
 ## Related topics
 
 
 [Assessments](assessments.md)
 
- 
 
- 
+
+
 
 
 

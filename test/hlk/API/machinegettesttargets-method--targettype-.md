@@ -42,7 +42,7 @@ Retrieves a read-only list of test targets associated with a machine (test compu
 
 `Public MustOverride Function GetTestTargets ( _`
 
-          `type As TargetType _`
+          `type As TargetType _`
 
 `) As ReadOnlyCollection(Of TargetData)`
 
@@ -50,7 +50,7 @@ Retrieves a read-only list of test targets associated with a machine (test compu
 
 `public abstract ReadOnlyCollection<TargetData> GetTestTargets (`
 
-          `TargetType type`
+          `TargetType type`
 
 `)`
 
@@ -59,7 +59,7 @@ Retrieves a read-only list of test targets associated with a machine (test compu
 
 *type*
 
-     The type of test target to search for.
+     The type of test target to search for.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -80,9 +80,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

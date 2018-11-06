@@ -24,7 +24,7 @@ This section contains information on Modern Standby power settings in the follow
 * [Windows OEM policy for power settings](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-oem-policy-for-power-settings) 
 
 
- 
+ 
 
 
 

@@ -117,11 +117,13 @@ The host machines that are connected to the network switch need to be configured
     -   SwitchPassword: The password for the network switch specified above
 
     >[!NOTE]
-    >  The same credentials need to be set across all the hosts connected on the downlink of the host. Similarly, same credentials need to be set on both the network switches as well.
+    >  The same credentials need to be set across all the hosts connected on the downlink of the host. Similarly, same credentials need to be set on both the network switches as well.
 
-     
 
-    ![](images/ns-image7.png)
+
+~~~
+![](images/ns-image7.png)
+~~~
 
 -   If there is a failure in the Discovery tests, you can look at the additional log files from the **Results** tab as indicated below:
 
@@ -141,9 +143,9 @@ The host machines that are connected to the network switch need to be configured
 
     ![](images/ns-image11.png)
 
- 
 
- 
+
+
 
 
 

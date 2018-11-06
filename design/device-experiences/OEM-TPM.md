@@ -11,7 +11,7 @@ ms.topic: article
 
 ---
 
-#Trusted Platform Module 2.0
+# Trusted Platform Module 2.0
 
 **Note:** Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements page](https://msdn.microsoft.com/library/windows/hardware/dn91508.aspx)). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. 
 

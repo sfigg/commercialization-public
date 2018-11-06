@@ -84,9 +84,9 @@ Requests that the driver wake up from its current sleep state.
 
 [Adding Wi-Fi manufacturing test support to the OID interface](adding-wi-fi-manufacturing-test-support-to-the-oid-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

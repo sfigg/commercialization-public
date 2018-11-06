@@ -30,11 +30,11 @@ The **Package** tab lets you package test results into a single HLK package (.hl
 
 -   Merge packages.
 
->[!IMPORTANT]
->  
-To submit a package for certification, your package must be digitally signed.
+> [!IMPORTANT]
+> 
+> To submit a package for certification, your package must be digitally signed.
 
- 
+ 
 
 On this tab, you can do the following tasks:
 
@@ -49,13 +49,13 @@ On this tab, you can do the following tasks:
 ## <span id="related_topics"></span>Related topics
 
 
-[Getting Started: Create a submission package](..\getstarted\step-8-create-a-submission-package.md)
+[Getting Started: Create a submission package](../getstarted/step-8-create-a-submission-package.md)
 
 [HLK Signing with an HSM](hlk-signing-with-an-hsm.md)
 
- 
+ 
 
- 
+ 
 
 
 

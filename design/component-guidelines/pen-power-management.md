@@ -102,9 +102,9 @@ The **Off** state is defined as the device operating mode in which the device ha
 
 In the **Off** state a pen device should not consume any power.
 
- 
+ 
 
- 
+ 
 
 
 

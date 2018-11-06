@@ -44,9 +44,9 @@ System integrators, camera sensor vendors, and System on a Chip (SoC) vendors sh
 -   The system integrator must test and verify that:
     -   The camera device hardware consumes no power (zero watts) when the camera device is not in use by an application. The system integrator should use instrumented hardware to measure this power consumption.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,46 +28,46 @@ You can use DISM servicing commands to install, uninstall, configure, and update
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Capture Images of Hard Disk Partitions Using DISM](capture-images-of-hard-disk-partitions-using-dism.md)</p></td>
+<td align="left"><p><a href="capture-images-of-hard-disk-partitions-using-dism.md" data-raw-source="[Capture Images of Hard Disk Partitions Using DISM](capture-images-of-hard-disk-partitions-using-dism.md)">Capture Images of Hard Disk Partitions Using DISM</a></p></td>
 <td align="left"><p>Use the Diskpart tool and the Deployment Image Servicing and Management (DISM) tool to capture an image and save it as a .wim file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Mount and Modify a Windows Image Using DISM](mount-and-modify-a-windows-image-using-dism.md)</p></td>
+<td align="left"><p><a href="mount-and-modify-a-windows-image-using-dism.md" data-raw-source="[Mount and Modify a Windows Image Using DISM](mount-and-modify-a-windows-image-using-dism.md)">Mount and Modify a Windows Image Using DISM</a></p></td>
 <td align="left"><p>Map the contents of a Windows image (.wim) file to a directory to service the image or to perform common file operations such as adding and deleting files.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Apply Images Using DISM](apply-images-using-dism.md)</p></td>
+<td align="left"><p><a href="apply-images-using-dism.md" data-raw-source="[Apply Images Using DISM](apply-images-using-dism.md)">Apply Images Using DISM</a></p></td>
 <td align="left"><p>Use the Diskpart tool and the DISM tool to apply Windows images to one or more partitions onto a computer for deployment.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Split a Windows Image (WIM) File to Span Across Multiple DVDs](split-a-windows-image--wim--file-to-span-across-multiple-dvds.md)</p></td>
+<td align="left"><p><a href="split-a-windows-image--wim--file-to-span-across-multiple-dvds.md" data-raw-source="[Split a Windows Image (WIM) File to Span Across Multiple DVDs](split-a-windows-image--wim--file-to-span-across-multiple-dvds.md)">Split a Windows Image (WIM) File to Span Across Multiple DVDs</a></p></td>
 <td align="left"><p>Split a large .wim file into several smaller files that will fit on your selected media. Copy split .wim files onto your selected media as .iso files.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Create a WIM for Multiple Architecture Types Using DISM](create-a-wim-for-multiple-architecture-types-using-dism.md)</p></td>
+<td align="left"><p><a href="create-a-wim-for-multiple-architecture-types-using-dism.md" data-raw-source="[Create a WIM for Multiple Architecture Types Using DISM](create-a-wim-for-multiple-architecture-types-using-dism.md)">Create a WIM for Multiple Architecture Types Using DISM</a></p></td>
 <td align="left"><p>Create a single .wim file that includes both 32-bit and 64-bit Windows images.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Append a Volume Image to an Existing Image Using DISM](append-a-volume-image-to-an-existing-image-using-dism--s14.md)</p></td>
+<td align="left"><p><a href="append-a-volume-image-to-an-existing-image-using-dism--s14.md" data-raw-source="[Append a Volume Image to an Existing Image Using DISM](append-a-volume-image-to-an-existing-image-using-dism--s14.md)">Append a Volume Image to an Existing Image Using DISM</a></p></td>
 <td align="left"><p>Add a second image to an existing .wim file.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Create a Data Image Using DISM](create-a-data-image-using-dism.md)</p></td>
+<td align="left"><p><a href="create-a-data-image-using-dism.md" data-raw-source="[Create a Data Image Using DISM](create-a-data-image-using-dism.md)">Create a Data Image Using DISM</a></p></td>
 <td align="left"><p>Create a .wim file that contains only files and applications that you intend to copy to the Windows installation by using an unattended answer file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
- 
+ 
 
- 
+ 
 
 
 

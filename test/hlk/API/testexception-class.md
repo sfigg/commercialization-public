@@ -38,7 +38,7 @@ This class contains constructors that initialize various test exceptions. This e
 
 `Public Class TestException`
 
-          `Inherits ProjectManagerException`
+          `Inherits ProjectManagerException`
 
 **C#**
 
@@ -51,18 +51,18 @@ This class contains constructors that initialize various test exceptions. This e
 
 **System.Object**
 
-   **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
+   **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
-      **Microsoft.Windows.Kits.Hardware.ObjectModel.TestException**
+      **Microsoft.Windows.Kits.Hardware.ObjectModel.TestException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

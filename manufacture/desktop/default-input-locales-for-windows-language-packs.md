@@ -611,7 +611,7 @@ For a list of language/culture names, see [Available Language Packs for Windows]
 <td>en-US: United States - English (0409:00000409)</td>
 </tr>
 <tr class="odd">
-<td>K'iche - Guatemala</td>
+<td>K&#39;iche - Guatemala</td>
 <td>qut-GT: Latin American (0486:0000080a)</td>
 <td></td>
 </tr>
@@ -741,7 +741,7 @@ For a list of language/culture names, see [Available Language Packs for Windows]
 <td>en-US: United States - English (0409:00000409)</td>
 </tr>
 <tr class="odd">
-<td>N'ko – Guinea</td>
+<td>N&#39;ko – Guinea</td>
 <td>nqo-GN: N’Ko (0c00:00090C00)</td>
 <td>en-US: United States - English (0409:00000409)</td>
 </tr>
@@ -1227,7 +1227,7 @@ For a list of language/culture names, see [Available Language Packs for Windows]
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 

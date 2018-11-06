@@ -24,7 +24,7 @@ ms.topic: article
 
 While you can create additional custom themes by adding .theme files to a Windows installation (using [these instructions](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot)), .theme files can no longer be used as the default theme.
 
- 
+ 
 
 ## Values
 
@@ -43,14 +43,14 @@ While you can create additional custom themes by adding .theme files to a Window
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
 > [!Note] 
 > The background color or design must not, in any way, obscure the Windows desktop icons, taskbar, **Start** button, or **Start** menu, or otherwise impair the functionality of the user interface. Users must be able to view and to use the Windows desktop for its intended purpose, which is to provide easy access to icons and to folders.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -90,9 +90,9 @@ The following XML output shows how to set a customized theme.
 
 [Themes](microsoft-windows-shell-setup-themes.md)
 
- 
+ 
 
- 
+ 
 
 
 

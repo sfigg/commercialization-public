@@ -31,43 +31,43 @@ In this article:
 ## <span id="gen"></span><span id="GEN"></span>General system server troubleshooting
 
 
-1.  Review the following topics for help in server testing:
+1. Review the following topics for help in server testing:
 
-    -   The Windows HLK topics that are specific to the device, driver or system test.
+   - The Windows HLK topics that are specific to the device, driver or system test.
 
-    -   [Server Testing Overview](server-testing-overview.md)
+   - [Server Testing Overview](server-testing-overview.md)
 
-    -   [System Server Testing Prerequisites](system-server-testing-prerequisites.md)
+   - [System Server Testing Prerequisites](system-server-testing-prerequisites.md)
 
-    -   [Test Server Configuration](test-server-configuration.md)
+   - [Test Server Configuration](test-server-configuration.md)
 
-    -   [LoadGen Server Stress - Run First - Set Machine Policies](318d804e-aa8f-4ffb-8ce2-963cea2f1a40.md)
+   - [LoadGen Server Stress - Run First - Set Machine Policies](318d804e-aa8f-4ffb-8ce2-963cea2f1a40.md)
 
-    -   [LoadGen Server Stress - Start Test for Server](6e9adb95-fca5-4e15-a255-bc96c0d12aa9.md)
+   - [LoadGen Server Stress - Start Test for Server](6e9adb95-fca5-4e15-a255-bc96c0d12aa9.md)
 
-    -   [LoadGen Server Stress - Run Last - Reset Machine Policies](8cb4f87c-d2a4-4d90-92a7-edd016ccdeac.md)
+   - [LoadGen Server Stress - Run Last - Reset Machine Policies](8cb4f87c-d2a4-4d90-92a7-edd016ccdeac.md)
 
-    -   [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md).
+   - [Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md).
 
-2.  For server device and driver testing, make sure that the system under test (SUT) is configured as follows:
+2. For server device and driver testing, make sure that the system under test (SUT) is configured as follows:
 
-    -   The correct version of Windows is installed.
+   -   The correct version of Windows is installed.
 
-    -   The Server Core option is installed.
+   -   The Server Core option is installed.
 
-    -   The SUT has a minimum of four cores\\logical processors.
+   -   The SUT has a minimum of four cores\\logical processors.
 
-    -   The SUT has a minimum of 6 GB of RAM installed.
+   -   The SUT has a minimum of 6 GB of RAM installed.
 
-    -   For storage device testing, you might need two device instances that have storage drives if the storage device is a boot device.
+   -   For storage device testing, you might need two device instances that have storage drives if the storage device is a boot device.
 
-3.  If you get an error that Windows HLK Studio could not add targets to the project, reselect the target, close Windows HLK Studio and then restart Windows HLK Studio. The error means that the data is not refreshed.
+3. If you get an error that Windows HLK Studio could not add targets to the project, reselect the target, close Windows HLK Studio and then restart Windows HLK Studio. The error means that the data is not refreshed.
 
-4.  The Sysparse process directly runs the gatherer DLLs. A second process, Asset Configuration Manager Engine (ACME), watches for hardware changes and alerts the system if one or more hardware changes occur. ACME waits until a timeout occurs or for frequent hardware change reports to stop before it initiates the subscribed gatherers.
+4. The Sysparse process directly runs the gatherer DLLs. A second process, Asset Configuration Manager Engine (ACME), watches for hardware changes and alerts the system if one or more hardware changes occur. ACME waits until a timeout occurs or for frequent hardware change reports to stop before it initiates the subscribed gatherers.
 
-    Some tests cause hardware changes throughout the test run. This causes Sysparse to run regularly. Sysparse can consume large amounts of memory, which is caused by the gatherers that are running and collecting data. Sysparse should not interfere with testing because in most cases, the tests do not verify performance.
+   Some tests cause hardware changes throughout the test run. This causes Sysparse to run regularly. Sysparse can consume large amounts of memory, which is caused by the gatherers that are running and collecting data. Sysparse should not interfere with testing because in most cases, the tests do not verify performance.
 
-5.  Make sure that the system upon which the Windows HLK Controller is installed has adequate hardware capabilities to meet the test demands. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for a description of these hardware requirements. As the number of devices and systems that are being tested increases, you might need to add more processors, memory, or storage.
+5. Make sure that the system upon which the Windows HLK Controller is installed has adequate hardware capabilities to meet the test demands. See [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md) for a description of these hardware requirements. As the number of devices and systems that are being tested increases, you might need to add more processors, memory, or storage.
 
 ## <span id="failed"></span><span id="FAILED"></span>Troubleshooting failed system server tests
 
@@ -102,11 +102,11 @@ If a test fails, follow these steps:
 
 If existing clients cannot generate enough stress against the SUT, Loadgen asks for more stress clients (SCs). This feature is intended to accommodate large servers, and the possibility of some SCs failing in the middle of a run. In general, you should start with eight SCs. The stress level should stabilize in the first three to four hours of the test. If more clients are needed, you will generally see the pop-up in the master controller (MC) in that time frame. You will have sixty minutes to add a new client or the test will terminate and fail.
 
->[!NOTE]
->  
-You cannot add more machines to a machine pool after a submission has started. If you start the test by using less than eight clients, make sure that you have additional clients in the machine pool before you start to test.
+> [!NOTE]
+> 
+> You cannot add more machines to a machine pool after a submission has started. If you start the test by using less than eight clients, make sure that you have additional clients in the machine pool before you start to test.
 
- 
+ 
 
 If Loadgen asks for more clients after four hours of testing, it probably means that something has failed. One or more of the existing clients dropped out, network connectivity issues have occurred, or another issue is preventing the SUT from sensing the required 40% utilization load. This can be an issue of the NIC driver in combination with the network speed, or the driver's implementation of performance monitor counters upon which the Loadgen MC depends.
 
@@ -122,11 +122,11 @@ In this case, try the following troubleshooting steps:
 
 5.  If multiple NICs are installed directly on to the system board, and you cannot install an additional device into a PCI Express slot, go into the hardware system setup and disable all but one of the NICs so that Windows does not detect them.
 
->[!NOTE]
->  
-Each detected NIC must be stressed during the test. This requires that each NIC has SCs on a separate physical network segment.
+> [!NOTE]
+> 
+> Each detected NIC must be stressed during the test. This requires that each NIC has SCs on a separate physical network segment.
 
- 
+ 
 
 Switches that have advanced features built in to them can interfere with the test in various ways. For example:
 
@@ -171,9 +171,9 @@ There are no known issues by the DHCP, DNS, AD, and other systems being in a VM.
 
 [System.Server Testing](system-server-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

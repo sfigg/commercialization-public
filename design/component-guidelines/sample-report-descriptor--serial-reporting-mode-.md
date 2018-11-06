@@ -72,9 +72,9 @@ The following example shows a sample report descriptor for serial reporting mode
     0xc0,                               // END_COLLECTION
 ```
 
- 
+ 
 
- 
+ 
 
 
 

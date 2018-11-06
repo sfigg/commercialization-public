@@ -111,7 +111,7 @@ This class contains no methods.
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 </tbody>
 </table>
@@ -199,16 +199,15 @@ if ($AssignedAccessConfig) {
 
     "Could not set up assigned access account."
 }
- 
 ```
 
 ## Requirements
 
 | Windows Edition       | Supported |
 |:----------------------|:----------|
-| Windows 10 Home       | No        |
-| Windows 10 Pro        | Yes       |
-| Windows 10 Enterprise | Yes       |
-| Windows 10 Education  | Yes       |
+| Windows 10 Home       | No        |
+| Windows 10 Pro        | Yes       |
+| Windows 10 Enterprise | Yes       |
+| Windows 10 Education  | Yes       |
 
 

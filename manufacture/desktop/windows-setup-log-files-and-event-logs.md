@@ -43,7 +43,7 @@ Windows Setup log files are available in the following directories:
 <td align="left"><p>Log location of Setup actions after disk configuration.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>%WINDIR%\Inf\Setupapi*.log</p></td>
+<td align="left"><p>%WINDIR%\Inf\Setupapi<em>.log</p></td>
 <td align="left"><p>Used to log Plug and Play device installations.</p></td>
 </tr>
 <tr class="odd">
@@ -51,7 +51,7 @@ Windows Setup log files are available in the following directories:
 <td align="left"><p>Location of memory dump from bug checks.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>%WINDIR%\Minidump\*.dmp</p></td>
+<td align="left"><p>%WINDIR%\Minidump</em>.dmp</p></td>
 <td align="left"><p>Location of log minidumps from bug checks.</p></td>
 </tr>
 <tr class="odd">
@@ -61,7 +61,7 @@ Windows Setup log files are available in the following directories:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Windows_Setup_Event_Logs"></span><span id="windows_setup_event_logs"></span><span id="WINDOWS_SETUP_EVENT_LOGS"></span>Windows Setup Event Logs
 
@@ -107,9 +107,9 @@ Tracerpt /l C:\windows\panther\setup.etl
 
 [Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt.md)
 
- 
+ 
 
- 
+ 
 
 
 

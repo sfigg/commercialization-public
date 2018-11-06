@@ -36,11 +36,11 @@ This exception class is defined to handle target-specific errors.
 
 **System.Object**
 
-     **System.Exception**
+     **System.Exception**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
-                      **Microsoft.Windows.Kits.Hardware.ObjectModel.HardwareIdException**
+                      **Microsoft.Windows.Kits.Hardware.ObjectModel.HardwareIdException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -52,9 +52,9 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 
 [HardwareIdException Members](hardwareidexception-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

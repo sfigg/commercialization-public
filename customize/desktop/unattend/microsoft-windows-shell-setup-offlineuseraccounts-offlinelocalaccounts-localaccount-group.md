@@ -58,7 +58,7 @@ Specify the account names and group names by using language-neutral names. The l
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -81,9 +81,9 @@ Windows Server 2016
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,20 +30,20 @@ For more information about results and issues produced by this assessment, see [
 ## <a href="" id="bkmk-begin"></a>Before You Begin
 
 
-**Warning**  
+**Warning**  
 The first-run help tips in Windows 8.1 can negatively affect assessment results. To disable these, run the following command from an elevated command prompt, and reboot the computer: `reg.exe add "HKLM\Software\Policies\Microsoft\Windows\EdgeUI" /v DisableHelpSticker /t REG_DWORD /d "1" /f`
 
- 
 
-**Warning**  
+
+**Warning**  
 Run this assessment only while the desktop is full screen. Do not run this assessment if you have another Microsoft Store app opened side-by-side with the desktop.
 
- 
 
-**Note**  
+
+**Note**  
 The Microsoft Store app performance assessment only provides results for Microsoft Store apps on the PC, it does not assess desktop applications.
 
- 
+
 
 For best results:
 
@@ -67,21 +67,21 @@ For best results:
 
 You can run this assessment on the following operating systems:
 
--   Windows 8
+-   Windows 8
 
--   Windows® RT
+-   Windows® RT
 
 -   Windows 8.1
 
--   Windows RT 8.1
+-   Windows RT 8.1
 
--   Windows 10
+-   Windows 10
 
 Supported architectures include x86-based, x64-based, and ARM-based systems.
 
-You can run this assessment on a Windows RT 8.1 system in either of the following ways:
+You can run this assessment on a Windows RT 8.1 system in either of the following ways:
 
--   Package the assessment job in the Windows® Assessment Console, and then run it on Windows RT 8.1. For more information about this option, see [Package a Job and Run It on Another Computer](package-a-job-and-run-it-on-another-computer.md).
+-   Package the assessment job in the Windows® Assessment Console, and then run it on Windows RT 8.1. For more information about this option, see [Package a Job and Run It on Another Computer](package-a-job-and-run-it-on-another-computer.md).
 
 -   Use Windows Assessment Services. For more information, see [Windows Assessment Services Technical Reference](http://go.microsoft.com/fwlink/?LinkId=215628).
 
@@ -112,11 +112,10 @@ The following table describes the assessment settings, recommended values, and a
 <td><p>Iterations</p></td>
 <td><p>You can use this setting to specify the number of times that the assessment runs. The results are an average of the iterations. By default, three iterations are run to give you a more accurate result.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>During each iteration, the assessment opens each Microsoft Store app. The length of each iteration is proportional to the total number of apps being assessed. Apps may also open in the preparation phase of the assessment.</p>
+<strong>Note</strong><br/><p>During each iteration, the assessment opens each Microsoft Store app. The length of each iteration is proportional to the total number of apps being assessed. Apps may also open in the preparation phase of the assessment.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -129,21 +128,21 @@ The following table describes the assessment settings, recommended values, and a
 </tr>
 <tr class="odd">
 <td><p>Enable detailed CPU metrics</p></td>
-<td><p>You can use this setting to get detailed information about the CPU usage breakdown of an app. You need to configure symbols to use this setting. For more information, see [Symbol Support](../wpt/symbol-support.md).</p></td>
+<td><p>You can use this setting to get detailed information about the CPU usage breakdown of an app. You need to configure symbols to use this setting. For more information, see <a href="../wpt/symbol-support.md" data-raw-source="[Symbol Support](../wpt/symbol-support.md)">Symbol Support</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Results for the Microsoft Store App Performance Assessment](results-for-the-microsoft-store-app-performance-assessment.md)
 
- 
 
- 
+
+
 
 
 

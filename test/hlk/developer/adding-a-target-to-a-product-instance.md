@@ -20,9 +20,9 @@ Use the **ProductInstance.AddTarget()** method to add a target directly to a **P
 
 ![adding a target to a productinstance](images/hlk-win8-om-addtargettoproductinstance.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,6 +15,7 @@ ms.topic: article
 HEVC Playback and visual validation test 
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Streaming.D3D11.HEVC.Main.Playback</li></ul> |  
@@ -29,6 +30,7 @@ HEVC Playback and visual validation test
 
 ## More Information
 ### Parameters
+
 | Parameter Name | Parameter Description |
 | --- | --- |
 | **Source** | Path to source File |
@@ -41,4 +43,4 @@ Tests in this feature area might have additional documentation, including prereq
 
 
 ## Troubleshooting
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](..\user\troubleshooting-windows-hlk-test-failures.md)
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](../user/troubleshooting-windows-hlk-test-failures.md)

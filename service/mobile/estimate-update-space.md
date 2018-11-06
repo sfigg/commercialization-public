@@ -19,7 +19,7 @@ The amount of memory that is needed on the device to download and apply an updat
 **Important**  
 Because of factors such as compression, the targeted packages, and the specific binary contents of the updates, the estimation process is imprecise. OEMs must individually test an update to determine the exact size required.
 
- 
+ 
 
 ## <span id="Factors_that_affect_update_space_requirements"></span><span id="factors_that_affect_update_space_requirements"></span><span id="FACTORS_THAT_AFFECT_UPDATE_SPACE_REQUIREMENTS"></span>Factors that affect update space requirements
 
@@ -72,9 +72,9 @@ Contact the silicon vendor for information on size estimation of SV partition up
 
 [Update](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

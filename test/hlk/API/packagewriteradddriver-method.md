@@ -51,17 +51,17 @@ This method replaces a driver for an Update Package and checks the driver files 
 
 `Public Function AddDriver ( _`
 
-          `pathToDriver As String, _`
+          `pathToDriver As String, _`
 
-          `pathToSymbols As String, _`
+          `pathToSymbols As String, _`
 
-          `targets As ReadOnlyCollection(Of Target), _`
+          `targets As ReadOnlyCollection(Of Target), _`
 
-          `locales As ReadOnlyCollection(Of String), _`
+          `locales As ReadOnlyCollection(Of String), _`
 
-          `<OutAttribute> ByRef errorMessages As StringCollection, _`
+          `<OutAttribute> ByRef errorMessages As StringCollection, _`
 
-          `<OutAttribute> ByRef warningMessages As StringCollection _`
+          `<OutAttribute> ByRef warningMessages As StringCollection _`
 
 `) As Boolean`
 
@@ -69,17 +69,17 @@ This method replaces a driver for an Update Package and checks the driver files 
 
 `public bool AddDriver (`
 
-          `string pathToDriver,`
+          `string pathToDriver,`
 
-          `string pathToSymbols,`
+          `string pathToSymbols,`
 
-          `ReadOnlyCollection<Target> targets,`
+          `ReadOnlyCollection<Target> targets,`
 
-          `ReadOnlyCollection<string> locales,`
+          `ReadOnlyCollection<string> locales,`
 
-          `out StringCollection errorMessages,`
+          `out StringCollection errorMessages,`
 
-          `out StringCollection warningMessages`
+          `out StringCollection warningMessages`
 
 `)`
 
@@ -88,27 +88,27 @@ This method replaces a driver for an Update Package and checks the driver files 
 
 *pathToDriver*
 
-     The path to the driver files. All files in this directory and all subdirectories will be packaged.
+     The path to the driver files. All files in this directory and all subdirectories will be packaged.
 
 *pathToSymbols*
 
-     The path to the symbol files for this driver. This parameter is optional.
+     The path to the symbol files for this driver. This parameter is optional.
 
 *targets*
 
-     The set of supported test targets for this driver.
+     The set of supported test targets for this driver.
 
 *locales*
 
-     The set of supported locales for this driver.
+     The set of supported locales for this driver.
 
 *errorMessages*
 
-     A reference to a string collection that contains all the error messages for the submission package.
+     A reference to a string collection that contains all the error messages for the submission package.
 
 *warningMessages*
 
-     A reference to a string collection that contains all the warning messages for the submission package
+     A reference to a string collection that contains all the warning messages for the submission package
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -135,9 +135,9 @@ An exception is thrown when:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

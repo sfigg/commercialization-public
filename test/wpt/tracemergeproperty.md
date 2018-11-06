@@ -23,8 +23,8 @@ Contains configurations that are applied when recordings from multiple profiles 
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[TraceMergeProperties](tracemergeproperties.md)\>
-    * \<**TraceMergeProperty**\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<**TraceMergeProperty**\>
 
 
 ## Syntax

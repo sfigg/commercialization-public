@@ -45,9 +45,9 @@ This class provides an interface to return specific information about filters ap
 
 [IFilterResult Members](ifilterresult-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

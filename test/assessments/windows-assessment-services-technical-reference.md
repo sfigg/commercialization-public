@@ -39,41 +39,41 @@ The Windows Assessment Services Technical Reference provides technical details, 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Installing Windows Assessment Services](installing-windows-assessment-services-wastechref.md)</p></td>
+<td><p><a href="installing-windows-assessment-services-wastechref.md" data-raw-source="[Installing Windows Assessment Services](installing-windows-assessment-services-wastechref.md)">Installing Windows Assessment Services</a></p></td>
 <td><p>Learn about system requirements and the installation process for server and client computers.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Assessment Services setup and configuration](windows-assessment-services-setup-and-configuration-wastechref.md)</p></td>
+<td><p><a href="windows-assessment-services-setup-and-configuration-wastechref.md" data-raw-source="[Windows Assessment Services setup and configuration](windows-assessment-services-setup-and-configuration-wastechref.md)">Windows Assessment Services setup and configuration</a></p></td>
 <td><p>Configure Windows Assessment Services server, prepare Windows PE, and add inventory such as computers, images and drivers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Assessment Services overview](windows-assessment-services-overview--wastechref.md)</p></td>
+<td><p><a href="windows-assessment-services-overview--wastechref.md" data-raw-source="[Windows Assessment Services overview](windows-assessment-services-overview--wastechref.md)">Windows Assessment Services overview</a></p></td>
 <td><p>Learn the benefits, common scenarios, limitations, and dependencies for Windows Assessment Services.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Assessment Services step-by-step guide](windows-assessment-services-how-to-topics--wastechref.md)</p></td>
+<td><p><a href="windows-assessment-services-how-to-topics--wastechref.md" data-raw-source="[Windows Assessment Services step-by-step guide](windows-assessment-services-how-to-topics--wastechref.md)">Windows Assessment Services step-by-step guide</a></p></td>
 <td><p>Learn how to install the Windows Assessment Toolkit, configure Windows Assessment Services and the Windows ASC, assess multiple computers, and review results.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Assessment Services common scenarios](windows-assessment-services-how-to-topics--wastechref.md)</p></td>
+<td><p><a href="windows-assessment-services-how-to-topics--wastechref.md" data-raw-source="[Windows Assessment Services common scenarios](windows-assessment-services-how-to-topics--wastechref.md)">Windows Assessment Services common scenarios</a></p></td>
 <td><p>Automate deployment, running assessments and collecting results. This section includes several advanced how-to topics.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ResultsUtil Command-Line options](resultsutil-command-line-options.md)</p></td>
+<td><p><a href="resultsutil-command-line-options.md" data-raw-source="[ResultsUtil Command-Line options](resultsutil-command-line-options.md)">ResultsUtil Command-Line options</a></p></td>
 <td><p>Use the ResultsUtil command-line options to import results into a SQL database.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Troubleshooting Windows Assessment Services](troubleshooting-windows-assessment-services--wastechref.md)</p></td>
+<td><p><a href="troubleshooting-windows-assessment-services--wastechref.md" data-raw-source="[Troubleshooting Windows Assessment Services](troubleshooting-windows-assessment-services--wastechref.md)">Troubleshooting Windows Assessment Services</a></p></td>
 <td><p>Learn about common problems and solutions.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

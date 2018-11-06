@@ -32,11 +32,11 @@ This section provides information about how to implement and validate an integra
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>[Pen Implementation Guide](pen-implementation-guide.md)</p></td>
+<td><p><a href="pen-implementation-guide.md" data-raw-source="[Pen Implementation Guide](pen-implementation-guide.md)">Pen Implementation Guide</a></p></td>
 <td><p>This section is an implementation guide for an integrated Pen device, for Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Pen Validation Guide](pen-validation-guide.md)</p></td>
+<td><p><a href="pen-validation-guide.md" data-raw-source="[Pen Validation Guide](pen-validation-guide.md)">Pen Validation Guide</a></p></td>
 <td><p>This section is a validation guide for an integrated Pen device (a Windows Active Pen), for Windows 10 and later operating systems.</p></td>
 </tr>
 </tbody>

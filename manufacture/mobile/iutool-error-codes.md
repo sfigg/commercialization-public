@@ -904,7 +904,7 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 <tr class="odd">
 <td><p>0x80188256</p></td>
 <td><p>DUA_E_SERVICE_IS_SHUTTING_DOWN</p></td>
-<td><p>Service is shutting down and requested operation can't be performed.</p></td>
+<td><p>Service is shutting down and requested operation can&#39;t be performed.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x80188257</p></td>
@@ -1229,7 +1229,7 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 <tr class="even">
 <td><p>0x80188311</p></td>
 <td><p>E_PACKAGE_TARGETS_WRONG_CPU</p></td>
-<td><p>The device's CPU type does not match the package's targeted CPU.</p></td>
+<td><p>The device&#39;s CPU type does not match the package&#39;s targeted CPU.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x80190190</p></td>
@@ -1739,11 +1739,11 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

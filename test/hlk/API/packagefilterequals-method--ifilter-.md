@@ -42,7 +42,7 @@ This method compares two **PackageFilter** instances.
 
 `Public Function Equals ( _`
 
-          `other As IFilter _`
+          `other As IFilter _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **PackageFilter** instances.
 
 `public bool Equals (`
 
-          `IFilter other`
+          `IFilter other`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **PackageFilter** instances.
 
 *other*
 
-     The **PackageFilter** to compare.
+     The **PackageFilter** to compare.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method compares two **PackageFilter** instances.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

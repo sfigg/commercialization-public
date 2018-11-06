@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 You can configure only a single host with the `Traps` setting. Adding multiple hosts is not supported.
 
- 
+ 
 
 You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
@@ -43,7 +43,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -99,9 +99,9 @@ The following XML sample output shows how to set SNMP.
 
 [TrapConfigurationItems](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems.md)
 
- 
+ 
 
- 
+ 
 
 
 

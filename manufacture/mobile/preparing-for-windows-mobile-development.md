@@ -29,9 +29,9 @@ Before you can get started on your Windows mobile development, make sure you mee
 
     This PC will run the tools needed during the development process. The PC must be running one of the following operating systems:
 
-    -   Windows 10 32-bit (x86) or 64-bit (x64)
-    -   Windows 8.1 32-bit (x86) or 64-bit (x64)
-    -   Windows 7 32-bit (x86) or 64-bit (x64)
+    -   Windows 10 32-bit (x86) or 64-bit (x64)
+    -   Windows 8.1 32-bit (x86) or 64-bit (x64)
+    -   Windows 7 32-bit (x86) or 64-bit (x64)
 
     You must install all Windows critical updates to avoid any issues when using the mobile kits.
 
@@ -41,15 +41,15 @@ Before you can get started on your Windows mobile development, make sure you mee
 
 -   Download the kits and OS packages
 
-    Download the latest kits and tools for Windows 10 Mobile from the Microsoft Connect site. See Contents of the mobile build to learn more about the contents of the MobileOS kit for different silicon architectures.
+    Download the latest kits and tools for Windows 10 Mobile from the Microsoft Connect site. See Contents of the mobile build to learn more about the contents of the MobileOS kit for different silicon architectures.
 
 -   Reference mobile hardware
 
-    This mobile device should represent all the mobile devices in a single model line; for example, the Contoso Windows Phone. For more information about detailed hardware requirements for any device that runs Windows 10 Mobile, see *Section 2.0 - Minimum hardware requirements for Windows 10 Mobile* in [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086).
+    This mobile device should represent all the mobile devices in a single model line; for example, the Contoso Windows Phone. For more information about detailed hardware requirements for any device that runs Windows 10 Mobile, see *Section 2.0 - Minimum hardware requirements for Windows 10 Mobile* in [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086).
 
 -   Board support package (BSP) prerequisites
 
-    Make sure you have all the necessary BSP files for your reference hardware. A BSP is a set of files and drivers that Windows 10 Mobile uses to communicate with the hardware on the device, to launch the OS, and to create an OS image that can run on your reference hardware. The SoC vendor provides the BSP for your reference hardware.
+    Make sure you have all the necessary BSP files for your reference hardware. A BSP is a set of files and drivers that Windows 10 Mobile uses to communicate with the hardware on the device, to launch the OS, and to create an OS image that can run on your reference hardware. The SoC vendor provides the BSP for your reference hardware.
 
 ## <span id="install_the_tools_and_development_kits"></span><span id="INSTALL_THE_TOOLS_AND_DEVELOPMENT_KITS"></span>Step 2: Install the tools and development kits
 
@@ -58,7 +58,7 @@ The following kits and tools are used for Windows mobile development:
 
 -   Visual Studio 2015, which is your primary development environment for writing apps and drivers.
 
--   Windows 10 Mobile OS, which is contained in the MobileOS package.
+-   Windows 10 Mobile OS, which is contained in the MobileOS package.
 
 -   Windows Assessment and Deployment Kit (ADK), which contains the tools you can use for building and customizing your image as well as several other deployment tools that you can use to help you automate a large-scale deployment of Windows.
 
@@ -76,83 +76,85 @@ The following table specifies which development scenarios require each of the ki
 | Build and customize mobile images on the command line using ImgGen                     | Required     | Not required | Required               | Required     | Not required       |
 | Build and customize mobile images using Windows ICD                                    | Required     | Required     | Not required           | Not required | Not required       |
 
- 
+
 
 **To install the kits and tools**
 
 1.  Follow the instructions for downloading and installing [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=533470), the [Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614), and the [Windows 10 SDK](https://go.microsoft.com/fwlink/p/?LinkId=616887).
 
-    **Note**  Visual Studio 2015 is only required if you are compiling code that will run on the mobile device, such as drivers and apps.
+    **Note**  Visual Studio 2015 is only required if you are compiling code that will run on the mobile device, such as drivers and apps.
 
-     
 
-    To confirm that the Windows SDK was properly installed, make sure that the subdirectories listed in the following table exist on your technician PC. Some of these subdirectories may not appear in the kit install directory if you didn't select them from the Windows SDK install wizard.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Windows installation directory tree</th>
-    <th align="left">Subdirectories within the directory tree</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>For a 32-bit OS: <strong>C:\Program Files\Windows Kits\10</strong></p>
-    <p>For a 64-bit OS: <strong>C:\Program Files (x86)\Windows Kits\10</strong></p></td>
-    <td align="left"><ul>
-    <li><strong>Bin</strong></li>
-    <li><strong>Catalogs</strong></li>
-    <li><strong>Debuggers</strong></li>
-    <li><strong>DesignTime</strong></li>
-    <li><strong>Include</strong></li>
-    <li><strong>Lib</strong></li>
-    <li><strong>Redist</strong></li>
-    <li><strong>References</strong></li>
-    <li><strong>Shortcuts</strong></li>
-    <li><strong>Testing</strong></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+~~~
+To confirm that the Windows SDK was properly installed, make sure that the subdirectories listed in the following table exist on your technician PC. Some of these subdirectories may not appear in the kit install directory if you didn't select them from the Windows SDK install wizard.
 
-     
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Windows installation directory tree</th>
+<th align="left">Subdirectories within the directory tree</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>For a 32-bit OS: <strong>C:\Program Files\Windows Kits\10</strong></p>
+<p>For a 64-bit OS: <strong>C:\Program Files (x86)\Windows Kits\10</strong></p></td>
+<td align="left"><ul>
+<li><strong>Bin</strong></li>
+<li><strong>Catalogs</strong></li>
+<li><strong>Debuggers</strong></li>
+<li><strong>DesignTime</strong></li>
+<li><strong>Include</strong></li>
+<li><strong>Lib</strong></li>
+<li><strong>Redist</strong></li>
+<li><strong>References</strong></li>
+<li><strong>Shortcuts</strong></li>
+<li><strong>Testing</strong></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-    To confirm that the WDK was properly installed, make sure that the subdirectories listed in the following table exist on your technician PC.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Windows installation directory tree</th>
-    <th align="left">Subdirectories within the directory tree</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>For a 32-bit OS: <strong>C:\Program Files\Windows Kits\10</strong></p>
-    <p>For a 64-bit OS: <strong>C:\Program Files (x86)\Windows Kits\10</strong></p></td>
-    <td align="left"><ul>
-    <li><strong>Build</strong></li>
-    <li><strong>BuildLabSupport</strong></li>
-    <li><strong>CodeAnalysis</strong></li>
-    <li><strong>CrossCertificates</strong></li>
-    <li><strong>Debug</strong></li>
-    <li><strong>Help</strong></li>
-    <li><strong>Remote</strong></li>
-    <li><strong>Tools</strong></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
 
-     
+To confirm that the WDK was properly installed, make sure that the subdirectories listed in the following table exist on your technician PC.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Windows installation directory tree</th>
+<th align="left">Subdirectories within the directory tree</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>For a 32-bit OS: <strong>C:\Program Files\Windows Kits\10</strong></p>
+<p>For a 64-bit OS: <strong>C:\Program Files (x86)\Windows Kits\10</strong></p></td>
+<td align="left"><ul>
+<li><strong>Build</strong></li>
+<li><strong>BuildLabSupport</strong></li>
+<li><strong>CodeAnalysis</strong></li>
+<li><strong>CrossCertificates</strong></li>
+<li><strong>Debug</strong></li>
+<li><strong>Help</strong></li>
+<li><strong>Remote</strong></li>
+<li><strong>Tools</strong></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+~~~
+
+
 
 2.  Install the [Windows 10 ADK](http://go.microsoft.com/fwlink/p/?LinkId=526740).
 
@@ -170,7 +172,7 @@ The following table specifies which development scenarios require each of the ki
 
 3.  Download the latest mobile OS kits and packages from the Microsoft Connect site and copy the contents to a local directory on your development workstation.
 
-    The kits and packages contain the files and tools you need to build a Windows 10 Mobile image.
+    The kits and packages contain the files and tools you need to build a Windows 10 Mobile image.
 
 4.  Extract the packages and files to the kit install location.
 
@@ -225,7 +227,7 @@ You can install some tools separately from the mobile kit. These tools, which ar
 </tbody>
 </table>
 
- 
+
 
 ## <span id="set_up_environment_variables"></span><span id="SET_UP_ENVIRONMENT_VARIABLES"></span>Step 4: Set up environment variables
 
@@ -236,7 +238,7 @@ Follow the steps below to set up the environment variables that are required for
 
 1.  Open a **Developer Command Prompt for VS2015** window.
 
-2.  Set the WPDKCONTENTROOT environment variable to the location of the Windows 10 Mobile kit installation directory.
+2.  Set the WPDKCONTENTROOT environment variable to the location of the Windows 10 Mobile kit installation directory.
 
     -   For computers running a 32-bit version of Windows, by default this is %ProgramFiles%\\Windows Kits\\10.
 
@@ -273,9 +275,9 @@ To sign binaries and packages, you must install the OEM test certificates.
 
     For more information, see [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn756804).
 
- 
 
- 
+
+
 
 
 

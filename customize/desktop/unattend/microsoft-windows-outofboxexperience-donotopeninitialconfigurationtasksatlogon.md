@@ -21,14 +21,14 @@ ms.topic: article
 **Warning**  
 This setting is deprecated. Use [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrnc-donotopenservermanageratlogon.md) instead.
 
- 
+ 
 
 `DoNotOpenInitialConfigurationTasksAtLogon` specifies whether the Initial Configuration Tasks application opens automatically when the end user logs on for the first time. If it opens automatically, then the Server Manager will not open until the Initial Configuration Tasks application is closed.
 
 **Note**  
 To prevent Server Manager from opening when logging on, select **Do not show me this console at logon** in the Server Manager console.
 
- 
+ 
 
 ## Values
 
@@ -50,7 +50,7 @@ To prevent Server Manager from opening when logging on, select **Do not show me 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -85,9 +85,9 @@ The following XML output specifies that the Initial Configuration Tasks applicat
 
 [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrnc-donotopenservermanageratlogon.md)
 
- 
+ 
 
- 
+ 
 
 
 

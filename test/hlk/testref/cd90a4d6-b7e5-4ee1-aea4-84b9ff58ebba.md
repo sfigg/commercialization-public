@@ -19,6 +19,7 @@ ms.topic: article
 The Mobile Print Rendering Tests test printing to PWG-Raster, PCLm, XPS, and OXPS compatible printers. The tests produce numerous pages of output at different DPI sizes, page sizes, page orientations, page orderings, and color formats suported by the printer (as defined by the PrintDeviceCapabilities).
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Imaging.Printer.Mobile.PDL</li></ul> |  
@@ -31,7 +32,7 @@ The Mobile Print Rendering Tests test printing to PWG-Raster, PCLm, XPS, and OXP
 |**Requires special configuration**| false |
 |**Type**| manual |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -51,16 +52,16 @@ Tests in this feature area might have additional documentation, including prereq
 | **WDKWSDServiceID**  | WSD Printer Service Id  |
 | **WDKWSDDeviceID**   | WSD Printer Device Id   |
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

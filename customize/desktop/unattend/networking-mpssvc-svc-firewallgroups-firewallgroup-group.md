@@ -66,16 +66,16 @@ The following XML output shows how to set two Windows Firewall groups, the first
 
 ```XML
 <FirewallGroups>
-      <FirewallGroup wcm:action="add" wcm:keyValue="FileAndPrinterSharing">
-      <Active>true</Active>
-      <Group>@FirewallAPI.dll,-28502</Group>
-      <Profile>all</Profile>
-   </FirewallGroup>
-      <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
-      <Active>true</Active>
-      <Group>@FirewallAPI.dll,-28752</Group>
-      <Profile>all</Profile>
-   </FirewallGroup>
+      <FirewallGroup wcm:action="add" wcm:keyValue="FileAndPrinterSharing">
+      <Active>true</Active>
+      <Group>@FirewallAPI.dll,-28502</Group>
+      <Profile>all</Profile>
+   </FirewallGroup>
+      <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
+      <Active>true</Active>
+      <Group>@FirewallAPI.dll,-28752</Group>
+      <Profile>all</Profile>
+   </FirewallGroup>
 </FirewallGroups>
 ```
 

@@ -29,35 +29,35 @@ This topic describes the tasks that you must complete before you test an Interne
 
 To test an iSCSI hardware-based RAID array, you need the following hardware. You might need additional hardware if the test device offers other features. To determine whether additional hardware requirements apply, see the description for each test that appears for the device in Windows HLK Studio.
 
->[!NOTE]
->  
-All hardware (except the test device, monitor, keyboard, mouse, and floppy disk drive) must be listed in the Windows Catalog.
+> [!NOTE]
+> 
+> All hardware (except the test device, monitor, keyboard, mouse, and floppy disk drive) must be listed in the Windows Catalog.
 
- 
+ 
 
--   1 test computer that meets the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). In addition, this computer must include:
+- 1 test computer that meets the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md). In addition, this computer must include:
 
-    -   1 logo-compliant Advanced Configuration and Power Interface (ACPI) BIOS, with ACPI enabled by default.
+  -   1 logo-compliant Advanced Configuration and Power Interface (ACPI) BIOS, with ACPI enabled by default.
 
-    -   Dual-core or equivalent processor and 4 gigabytes (GB) of memory for Windows client operating systems (for example, Windows 8, Windows 7, and Windows Vista).
+  -   Dual-core or equivalent processor and 4 gigabytes (GB) of memory for Windows client operating systems (for example, Windows 8, Windows 7, and Windows Vista).
 
-    -   Quad-core or equivalent processor and 6 GB of memory for Windows Server operating systems.
+  -   Quad-core or equivalent processor and 6 GB of memory for Windows Server operating systems.
 
-    An equivalent processor is any processor that appears to Windows as if it contains the specified number of CPUs. You can achieve this status through 1 or more physical microprocessors.
+  An equivalent processor is any processor that appears to Windows as if it contains the specified number of CPUs. You can achieve this status through 1 or more physical microprocessors.
 
--   1 iSCSI RAID storage system (the test device).
+- 1 iSCSI RAID storage system (the test device).
 
-    >[!NOTE]
-    >  
-    The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)-based controller and 1 RAID JBOD.
+  > [!NOTE]
+  > 
+  > The RAID system must be a single cabinet that consists of an array controller that's enclosed in an external subsystem with hard disk drives. Or it must be an external array controller that connects to a RAID JBOD. The RAID system can't consist of only a Peripheral Component Interconnect (PCI)-based controller and 1 RAID JBOD.
 
-     
+     
 
--   At least one 1-GB Ethernet network adapter or iSCSI host bus adapter (HBA).
+- At least one 1-GB Ethernet network adapter or iSCSI host bus adapter (HBA).
 
--   One 1-GB Ethernet switch.
+- One 1-GB Ethernet switch.
 
--   1 bootable Advanced Technology Attachment (ATA) or SCSI hard disk drive that has a minimum capacity of 36 GB.
+- 1 bootable Advanced Technology Attachment (ATA) or SCSI hard disk drive that has a minimum capacity of 36 GB.
 
 To certify your product for use on servers, the test computer must support four processors and a minimum of 1 GB of RAM. These system capabilities are required to test the Rebalance, D3 State, and Multiple Processor Group functionality of the device and driver. You do not need a computer that actually has more than 64 processors to test your device. Additionally, the server system(s) being used for device or driver testing must have Server Core installed prior to testing. For more information see [Windows Server Installation Options](http://go.microsoft.com/fwlink/p/?LinkID=251454).
 
@@ -65,47 +65,47 @@ If you use a pool of test computers to test your device, at least 1 computer in 
 
 For tests that don't include a driver to test, like tests for a hard disk drive, the Windows HLK scheduler constrains the tests that validate the device's and driver's Rebalance, D3 State, and Multiple Processor Groups functionality to run on the default test computer. You must manually configure this computer to have multiple processor groups. The default computer is the first test computer in the list. Make sure that the first test computer in the list meets the minimum hardware requirements.
 
->[!NOTE]
->  
-Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
-
->[!NOTE]
+> [!NOTE]
+> 
+> Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you can't use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. Virtualization products don't support the underlying functionality that's required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
+> 
+> [!NOTE]
 >  Multiple Processor Groups Setting
->You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
->
->The commands for adding the group settings and restarting are as follows:
->
-``` syntax
-bcdedit.exe /set groupsize 2
-bcdedit.exe /set groupaware on
-shutdown.exe -r -t 0 -f
-```
->
->
->The commands for removing the group settings and rebooting are as follows:
->
-``` syntax
-bcdedit.exe /deletevalue groupsize
-bcdedit.exe /deletevalue groupaware
-shutdown.exe -r -t 0 -f
-```
->
+> You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
+> 
+> The commands for adding the group settings and restarting are as follows:
+> 
+> ``` syntax
+> bcdedit.exe /set groupsize 2
+> bcdedit.exe /set groupaware on
+> shutdown.exe -r -t 0 -f
+> ```
+> 
+> 
+> The commands for removing the group settings and rebooting are as follows:
+> 
+> ``` syntax
+> bcdedit.exe /deletevalue groupsize
+> bcdedit.exe /deletevalue groupaware
+> shutdown.exe -r -t 0 -f
+> ```
+> 
+> 
+> [!NOTE]
+> 
+> **Code Integrity Setting**
+> 
+> The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
+> 
+> Once that has occurred, the following Registry key must be created and set:
+> 
+> ``` syntax
+> HKLM\System\CurrentControlSet\Control\DeviceGuard
+> HypervisorEnforcedCodeIntegrity:REG_DWORD
+> 0 or 1 (disabled, enabled)
+> ```
 
->[!NOTE]
->  
-**Code Integrity Setting**
-
->The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
->
->Once that has occurred, the following Registry key must be created and set:
->
-``` syntax
-HKLM\System\CurrentControlSet\Control\DeviceGuard
-HypervisorEnforcedCodeIntegrity:REG_DWORD
-0 or 1 (disabled, enabled)
-```
-
- 
+ 
 
 ## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
@@ -131,45 +131,45 @@ The iSCSI Software Initiator and the .NET Framework are available from the [Micr
 
 To configure the test computer to test your iSCSI RAID array, follow these steps:
 
-1.  Install the Gigabit Ethernet network adapter or iSCSI HBA in the test computer.
+1. Install the Gigabit Ethernet network adapter or iSCSI HBA in the test computer.
 
-2.  Connect the Gigabit Ethernet switch to a power supply.
+2. Connect the Gigabit Ethernet switch to a power supply.
 
-    >[!NOTE]
-    >  
-    Don't connect the switch to any other network.
+   > [!NOTE]
+   > 
+   > Don't connect the switch to any other network.
 
-     
+     
 
-3.  Connect the Gigabit Ethernet network adapter or iSCSI HBA in the test computer to the switch.
+3. Connect the Gigabit Ethernet network adapter or iSCSI HBA in the test computer to the switch.
 
-4.  Connect the disk storage system to the switch.
+4. Connect the disk storage system to the switch.
 
-5.  Install the appropriate Windows operating system on the test computer (onto an NTFS-formatted partition that has at least 36 GB on the hard disk drive), and then configure the computer for your test network. The test network is the network that contains Windows HLK Studio and Windows HLK Controller.
+5. Install the appropriate Windows operating system on the test computer (onto an NTFS-formatted partition that has at least 36 GB on the hard disk drive), and then configure the computer for your test network. The test network is the network that contains Windows HLK Studio and Windows HLK Controller.
 
-6.  If the test device supports Microsoft Multipath I/O (MPIO), install any multipath drivers and create connections and multiple sessions by selecting **Enable Multi-Path I/O**.
+6. If the test device supports Microsoft Multipath I/O (MPIO), install any multipath drivers and create connections and multiple sessions by selecting **Enable Multi-Path I/O**.
 
-7.  Download and install the .NET Framework 1.1.
+7. Download and install the .NET Framework 1.1.
 
-8.  Configure the target device to use one-way (target authenticates initiator) Challenge Handshake Authentication Protocol (CHAP).
+8. Configure the target device to use one-way (target authenticates initiator) Challenge Handshake Authentication Protocol (CHAP).
 
-    If your device supports mutual CHAP, also configure the device to use mutual CHAP.
+   If your device supports mutual CHAP, also configure the device to use mutual CHAP.
 
-    >[!NOTE]
-    >  
-    When you configure the device to use CHAP, you must provide a password that's 12 to 16 characters long. If you're configuring the device to use both one-way CHAP and mutual CHAP, you must provide different passwords for the target and the initiator.
+   > [!NOTE]
+   > 
+   > When you configure the device to use CHAP, you must provide a password that's 12 to 16 characters long. If you're configuring the device to use both one-way CHAP and mutual CHAP, you must provide different passwords for the target and the initiator.
 
-     
+     
 
-9.  Log on to the target disk storage system with Persistent Login set.
+9. Log on to the target disk storage system with Persistent Login set.
 
-    >[!IMPORTANT]
-    >  
-    You must log on to the iSCSI target device that's used for testing, or the tests won't work properly.
+   > [!IMPORTANT]
+   > 
+   > You must log on to the iSCSI target device that's used for testing, or the tests won't work properly.
 
-    For a multipath test environment, if multiple ports (IP addresses) relate to one storage target, you must make sure that at least 2 iSCSI sessions are connected through the IP address to during testing.
+   For a multipath test environment, if multiple ports (IP addresses) relate to one storage target, you must make sure that at least 2 iSCSI sessions are connected through the IP address to during testing.
 
-     
+     
 
 10. Click **Start**, and then click **Run**.
 
@@ -197,11 +197,11 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When you're running tests for a submission, it's a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting the completion of an automated test.
 
->[!WARNING]
->  
-When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
+> [!WARNING]
+> 
+> When testing storage devices, we strongly recommend that you complete all Device Fundamentals tests before starting storage tests. Storage tests will reconfigure your test device, leaving the device in a state unsuitable to support Device Fundamentals tests. The following configurations provide steps to create volume on the storage test device. This is important to complete the Device Fundamental part of testing (DevFund).
 
- 
+ 
 
 ## <span id="Feature-Based_Configuration"></span><span id="feature-based_configuration"></span><span id="FEATURE-BASED_CONFIGURATION"></span>Feature-Based Configuration
 
@@ -210,9 +210,9 @@ If your device supports any of the feature(s) in this section, please update the
 
 See "Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testing Prerequisites" above for feature-based configuration. The features also apply to iSCSI Hardware RAID Array Systems.
 
- 
+ 
 
- 
+ 
 
 
 

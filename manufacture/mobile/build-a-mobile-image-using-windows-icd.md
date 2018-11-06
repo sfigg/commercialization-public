@@ -62,7 +62,7 @@ To build a mobile image, you must also have a provisioning package or Windows pr
 
     **Note**  We recommend using the Windows ICD UI to easily generate either the provisioning package or the Windows provisioning answer file.
 
-     
+     
 
 Follow these instructions to build a single variant mobile image:
 
@@ -93,9 +93,9 @@ Follow these instructions to build multivariant mobile image:
 
 [Build a mobile image using a hybrid method](build-a-mobile-image-using-windows-provisioning-and-mcsf-answer-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

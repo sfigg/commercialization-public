@@ -35,12 +35,12 @@ ms.topic: article
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the newly-created partition is a fixed size, as specified by <code>CreatePartition:</code>[Size](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-size.md). This is the default value.</p></td>
+<td><p>Specifies that the newly-created partition is a fixed size, as specified by <code>CreatePartition:</code><a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-size.md" data-raw-source="[Size](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-size.md)">Size</a>. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When creating a new partition, you must either use `CreatePartition:`[Size](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-size.md), or set `CreatePartition:Extend` to true.
 
@@ -51,7 +51,7 @@ To create a logical partition that uses the remainder of the extended partition 
 
 Do not set both `CreatePartition:Extend` and `ModifyPartition:Extend` to **true**. For more information, see [How to Configure More Than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072).
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -146,9 +146,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [How to Configure More Than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ Initializes a new instance of the [PackageDBReaderException Class](packagedbread
 
 `protected PackageDBReaderException (`
 
-          `SerializationInfo serialInfo,`
+          `SerializationInfo serialInfo,`
 
-          `StreamingContext streamCont`
+          `StreamingContext streamCont`
 
 `)`
 
@@ -46,9 +46,9 @@ A SerialInfo object.
 
 A Streaming Context Object.
 
- 
+ 
 
- 
+ 
 
 
 

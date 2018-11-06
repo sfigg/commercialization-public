@@ -51,7 +51,7 @@ For more information, see the Powercfg command-line Help.
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -86,9 +86,9 @@ The following XML output shows how to configure `FlyoutPowerSaverPowerScheme`.
 
 [Microsoft-Windows-stobject](microsoft-windows-stobject.md)
 
- 
+ 
 
- 
+ 
 
 
 

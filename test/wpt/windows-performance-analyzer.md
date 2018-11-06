@@ -41,42 +41,42 @@ For a list of the newest features in WPA, see the WPA section of [What's New in 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Introduction to the WPA User Interface](introduction-to-the-wpa-user-interface.md)</p></td>
+<td><p><a href="introduction-to-the-wpa-user-interface.md" data-raw-source="[Introduction to the WPA User Interface](introduction-to-the-wpa-user-interface.md)">Introduction to the WPA User Interface</a></p></td>
 <td><p>Introduces and explains the WPA user interface.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPA Quick Start Guide](wpa-quick-start-guide.md)</p></td>
+<td><p><a href="wpa-quick-start-guide.md" data-raw-source="[WPA Quick Start Guide](wpa-quick-start-guide.md)">WPA Quick Start Guide</a></p></td>
 <td><p>Provides information to get started with WPA, including a detailed walkthrough.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WPA Features](http://go.microsoft.com/fwlink/p/?linkid=223251)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223251" data-raw-source="[WPA Features](http://go.microsoft.com/fwlink/p/?linkid=223251)">WPA Features</a></p></td>
 <td><p>Describes WPA features.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPA How-to Topics](http://go.microsoft.com/fwlink/p/?linkid=223252)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223252" data-raw-source="[WPA How-to Topics](http://go.microsoft.com/fwlink/p/?linkid=223252)">WPA How-to Topics</a></p></td>
 <td><p>Provides step-by-step procedures for using WPA.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WPA Scenarios](http://go.microsoft.com/fwlink/p/?linkid=223253)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223253" data-raw-source="[WPA Scenarios](http://go.microsoft.com/fwlink/p/?linkid=223253)">WPA Scenarios</a></p></td>
 <td><p>Describes scenarios for using WPA.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPA Keyboard Shortcuts](wpa-keyboard-shortcuts.md)</p></td>
+<td><p><a href="wpa-keyboard-shortcuts.md" data-raw-source="[WPA Keyboard Shortcuts](wpa-keyboard-shortcuts.md)">WPA Keyboard Shortcuts</a></p></td>
 <td><p>Lists keyboard shortcuts that can be used in WPA.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Windows Performance Toolkit Technical Reference](windows-performance-toolkit-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

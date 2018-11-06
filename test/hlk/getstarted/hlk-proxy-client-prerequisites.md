@@ -16,11 +16,11 @@ ms.topic: article
 # HLK Proxy Client Prerequisites
 
 >[!WARNING]
->  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
+>  The Windows Hardware Lab Kit should only be installed on machines that are dedicated solely for testing purposes. Do not install any HLK component on a machine that is outside of a dedicated testing environment.
 
 Before you begin testing, make sure that the test environment meets the necessary requirements. 
 
--   A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
+-   A Battery Blank is required for Aries mobile testing in this release. For more information, see [Battery Blank Information Guide](battery-blank-information-guide.md).
 
 -  Controller setup will fail if .NET Framework 4.5 has not previously been installed. Be sure to install .NET Framework 4.5 from the following location prior to controller setup.
     <https://www.microsoft.com/net/download/framework>
@@ -155,21 +155,20 @@ To manage the volume of devices in this scenario and handle the bandwidth, multi
 </tr>
 <tr class="odd">
 <td>Operating system</td>
-<td><p>English language and English local version of Windows Server 2008 R2 64-bit with service pack (SP1), Windows Server 2012, or Windows Server 2012 R2. For information, see the [Windows Server](http://go.microsoft.com/fwlink/?LinkId=236055) website.</p>
+<td><p>English language and English local version of Windows Server 2008 R2 64-bit with service pack (SP1), Windows Server 2012, or Windows Server 2012 R2. For information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=236055" data-raw-source="[Windows Server](http://go.microsoft.com/fwlink/?LinkId=236055)">Windows Server</a> website.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Controller isn't supported on Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP, or Windows 2000.</p>
-<p>Controller isn't supported on an installation that has already been set up as a domain controller.</p>
+<strong>Note</strong><br/><p>Controller isn&#39;t supported on Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP, or Windows 2000.</p>
+<p>Controller isn&#39;t supported on an installation that has already been set up as a domain controller.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 **Mobile test systems**
 
@@ -205,7 +204,7 @@ To manage the volume of devices in this scenario and handle the bandwidth, multi
 </tbody>
 </table>
 
- 
+
 
 **Proxy system**
 
@@ -248,7 +247,7 @@ To manage the volume of devices in this scenario and handle the bandwidth, multi
 </tbody>
 </table>
 
- 
+
 
 **Optional remote/standalone Windows HLK Studio**
 
@@ -275,7 +274,7 @@ To manage the volume of devices in this scenario and handle the bandwidth, multi
 <tr class="odd">
 <td>Hard disk capacity</td>
 <td><p>300 GB minimum to accommodate the volume of logs that can be generated.</p>
-<p>The client must be unique; you can't swap drives.</p></td>
+<p>The client must be unique; you can&#39;t swap drives.</p></td>
 </tr>
 <tr class="even">
 <td>Network connection</td>

@@ -54,16 +54,16 @@ Log files can be generated from a test or from infrastructure processes.
 
 **System.Object**
 
-   **Microsoft.Windows.Kits.Hardware.ObjectModel.TestLog**
+   **Microsoft.Windows.Kits.Hardware.ObjectModel.TestLog**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

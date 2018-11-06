@@ -47,11 +47,11 @@ Settings in this subgroup control the battery threshold and brightness when Ener
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Battery threshold](battery-threshold.md)</p></td>
+<td><p><a href="battery-threshold.md" data-raw-source="[Battery threshold](battery-threshold.md)">Battery threshold</a></p></td>
 <td><p>Specifies the battery charge level, as a percentage, at which Energy Saver is turned on.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Brightness](brightness.md)</p></td>
+<td><p><a href="brightness.md" data-raw-source="[Brightness](brightness.md)">Brightness</a></p></td>
 <td><p>Specifies the percentage value to scale brightness to when Energy Saver is turned on.</p></td>
 </tr>
 </tbody>

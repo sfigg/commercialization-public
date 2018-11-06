@@ -77,7 +77,7 @@ The following table describes the command-line parameters for ImageApp.exe.
 </tbody>
 </table>
 
- 
+ 
 
 ## Troubleshooting
 
@@ -89,9 +89,9 @@ The following table describes the command-line parameters for ImageApp.exe.
 
 [Building an image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md)
 
- 
+ 
 
- 
+ 
 
 
 

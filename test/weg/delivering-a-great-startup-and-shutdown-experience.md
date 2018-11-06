@@ -269,8 +269,8 @@ To deliver a great on/off experience, it is recommended that a PC meets the goal
 <p><strong>Number of processes started through registry Run keys</strong></p>
 <p>Defined as the total number of processes started on every boot using Run keys. Has a direct impact on post-on/off resource utilization (CPU and disk).</p>
 <p>Can be found by looking at some ETW events in the fast startup traces (by using the Generic Events table):</p>
-<p>Provider Name: Microsoft-Windows-Shell-CoreTask: Explorer\_ExecutingFromRunKeyOpcode: win:Start</p>
-<p>Field \#1 of the event (Command) provides the command line that is used to launch the processes.</p>
+<p>Provider Name: Microsoft-Windows-Shell-CoreTask: Explorer_ExecutingFromRunKeyOpcode: win:Start</p>
+<p>Field #1 of the event (Command) provides the command line that is used to launch the processes.</p>
 </td>
 <td>
 <p>count</p>

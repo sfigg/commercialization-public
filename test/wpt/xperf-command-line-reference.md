@@ -29,25 +29,25 @@ This section describes Xperf command-line options and actions.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Time and Timestamp Formats](time-and-timestamp-formats.md)</p></td>
+<td><p><a href="time-and-timestamp-formats.md" data-raw-source="[Time and Timestamp Formats](time-and-timestamp-formats.md)">Time and Timestamp Formats</a></p></td>
 <td><p>Describes Xperf time and timestamp formats.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Xperf Options](xperf-options.md)</p></td>
+<td><p><a href="xperf-options.md" data-raw-source="[Xperf Options](xperf-options.md)">Xperf Options</a></p></td>
 <td><p>Describes Xperf command-line options.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Xperf Actions](xperf-actions.md)</p></td>
+<td><p><a href="xperf-actions.md" data-raw-source="[Xperf Actions](xperf-actions.md)">Xperf Actions</a></p></td>
 <td><p>Describes Xperf actions.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Xperf Profiles](xperf-profiles.md)</p></td>
+<td><p><a href="xperf-profiles.md" data-raw-source="[Xperf Profiles](xperf-profiles.md)">Xperf Profiles</a></p></td>
 <td><p>Describes Xperf profiles.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -56,9 +56,9 @@ This section describes Xperf command-line options and actions.
 
 [Xperf Backward Compatibility Support](xperf-backward-compatibility-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

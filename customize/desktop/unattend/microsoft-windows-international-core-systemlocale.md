@@ -46,7 +46,7 @@ For the list of supported languages, locales, and identifiers, see [Supported La
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 

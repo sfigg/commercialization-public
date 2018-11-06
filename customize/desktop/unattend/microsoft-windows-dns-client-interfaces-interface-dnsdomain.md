@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -96,9 +96,9 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 [Interface](microsoft-windows-dns-client-interfaces-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

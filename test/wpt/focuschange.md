@@ -36,9 +36,9 @@ Shows window thread focus change events recorded between *T1* and *T2*, in micro
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

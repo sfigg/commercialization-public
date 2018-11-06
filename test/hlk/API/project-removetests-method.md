@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 Removes the given Tests from the Project.
 
@@ -33,7 +33,7 @@ Removes the given Tests from the Project.
 
 `public virtual void RemoveTests (`
 
-          `IEnumerable<TestDefinition> tests`
+          `IEnumerable<TestDefinition> tests`
 
 `)`
 
@@ -54,9 +54,9 @@ Removes the tests from all Product Instances and Target Families in the Project.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

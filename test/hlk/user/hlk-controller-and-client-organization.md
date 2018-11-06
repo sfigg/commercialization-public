@@ -20,11 +20,11 @@ Before you install Windows HLK software in your lab, you should decide how you w
 
 For example, to test specific devices, such as a USB-based flash-card reader, you might decide to allocate fewer controllers, each with more clients, because multiple testers can access the controllers, schedule jobs, and review job results, simultaneously.
 
->[!NOTE]
->  
-This release of Windows HLK does not support enterprise scenarios, wherein controllers communicate directly with each other to share clients and distribute scheduled jobs. That is, Windows HLK does not support load-balancing.
+> [!NOTE]
+> 
+> This release of Windows HLK does not support enterprise scenarios, wherein controllers communicate directly with each other to share clients and distribute scheduled jobs. That is, Windows HLK does not support load-balancing.
 
- 
+ 
 
 Typically, there are two ways to organize your controller and client lab resources:
 
@@ -42,19 +42,19 @@ Typically, there are two ways to organize your controller and client lab resourc
 
 If you configure your controllers to run on high performance/high resource hardware, they will be able to handle more clients.
 
->[!NOTE]
->  
-Multiple controllers are independent of each other.
+> [!NOTE]
+> 
+> Multiple controllers are independent of each other.
 
- 
+ 
 
 Windows HLK puts a limit of 150 clients that can connect to a single controller. If you have a large lab that has more than 150 computers intended to be clients, you must allocate multiple controllers. Regardless of the size of your lab, you can allocate multiple controllers, each with any number of clients (up to 150 per controller) connected to a given controller.
 
->[!NOTE]
->  
-Installing Windows HLK Studio does not count toward the limit of 150 clients per controller.
+> [!NOTE]
+> 
+> Installing Windows HLK Studio does not count toward the limit of 150 clients per controller.
 
- 
+ 
 
 The following table describes example scenarios for labs of different sizes.
 
@@ -98,15 +98,15 @@ The following table describes example scenarios for labs of different sizes.
 </tbody>
 </table>
 
->[!NOTE]
->  
-To use Windows HLK to obtain certification, all tests must be performed from a single controller. You cannot combine results from multiple controllers to obtain certification.
+> [!NOTE]
+> 
+> To use Windows HLK to obtain certification, all tests must be performed from a single controller. You cannot combine results from multiple controllers to obtain certification.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

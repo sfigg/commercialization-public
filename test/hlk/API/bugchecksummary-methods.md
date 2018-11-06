@@ -32,13 +32,13 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ToString](bugchecksummarytostring-method.md)</p></td>
+<td><p><a href="bugchecksummarytostring-method.md" data-raw-source="[ToString](bugchecksummarytostring-method.md)">ToString</a></p></td>
 <td><p>Returns a string representation of the bugcheck summary event.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -47,9 +47,9 @@ ms.topic: article
 
 [BugcheckSummary Members](bugchecksummary-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

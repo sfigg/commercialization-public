@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) to the answer file.
 
- 
+ 
 
 ## Values
 
@@ -36,12 +36,12 @@ This element does not appear in the **Properties** pane of Windows System Image 
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies the value of the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md). <em>Value</em> is a string.</p></td>
+<td><p>Specifies the value of the <a href="microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md" data-raw-source="[IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)">IpAddress</a>. <em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -99,9 +99,9 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

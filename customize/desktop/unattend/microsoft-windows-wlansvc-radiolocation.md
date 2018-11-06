@@ -37,7 +37,7 @@ In a typical scenario, a user may deactivate the WLAN hardware by a keyboard com
 </tbody>
 </table>
 
- 
+ 
 
 The third line in this message can be configured using the `RadioLocation` setting to provide a more specific recommendation.
 
@@ -57,7 +57,7 @@ The third line in this message can be configured using the `RadioLocation` setti
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -102,16 +102,16 @@ This changes the WLAN activation recommendation to:
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md)
 
- 
+ 
 
- 
+ 
 
 
 

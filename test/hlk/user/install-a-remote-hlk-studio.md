@@ -65,9 +65,9 @@ To configure ICF, complete the following task on the HLK Controller.
 
 7.  Click OK, and then click OK again.
 
- 
+ 
 
- 
+ 
 
 
 

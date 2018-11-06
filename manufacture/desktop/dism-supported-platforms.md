@@ -169,7 +169,7 @@ The host deployment environment is the operating system where DISM runs. The tar
 </tbody>
 </table>
 
- 
+ 
 
 Resilient File System (REFS) is not supported.
 
@@ -182,9 +182,9 @@ Resilient File System (REFS) is not supported.
 
 [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md)
 
- 
+ 
 
- 
+ 
 
 
 

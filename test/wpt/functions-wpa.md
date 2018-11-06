@@ -29,34 +29,34 @@ This section covers the functions available in the Kernel Trace Control API.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CreateMergedTraceFile](createmergedtracefile.md)</p></td>
+<td><p><a href="createmergedtracefile.md" data-raw-source="[CreateMergedTraceFile](createmergedtracefile.md)">CreateMergedTraceFile</a></p></td>
 <td><p>Merges multiple WPT/ETW trace files into a single output file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[StartHeapTrace](startheaptrace.md)</p></td>
+<td><p><a href="startheaptrace.md" data-raw-source="[StartHeapTrace](startheaptrace.md)">StartHeapTrace</a></p></td>
 <td><p>Registers and starts a heap tracing session for a set of specified PIDs. Enables stack walking for certain heap events such as allocation or deletion using this function.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[StartKernelTrace](startkerneltrace.md)</p></td>
+<td><p><a href="startkerneltrace.md" data-raw-source="[StartKernelTrace](startkerneltrace.md)">StartKernelTrace</a></p></td>
 <td><p>Registers and starts a kernel event tracing session.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UpdateHeapTrace](updateheaptrace.md)</p></td>
+<td><p><a href="updateheaptrace.md" data-raw-source="[UpdateHeapTrace](updateheaptrace.md)">UpdateHeapTrace</a></p></td>
 <td><p>Updates an existing heap tracing session with a new set of PIDs, stackwalking events, or other ETW session changes.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

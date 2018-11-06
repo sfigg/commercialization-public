@@ -42,7 +42,7 @@ Specifies the registry keys to exclude from being filtered. When a registry key 
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -70,9 +70,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

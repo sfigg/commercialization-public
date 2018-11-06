@@ -29,26 +29,26 @@ This section covers the trace control flags available in the Kernel Trace Contro
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EVENT_TRACE_FLAG_DISPATCHER](event-trace-flag-dispatcher.md)</p></td>
+<td><p><a href="event-trace-flag-dispatcher.md" data-raw-source="[EVENT_TRACE_FLAG_DISPATCHER](event-trace-flag-dispatcher.md)">EVENT_TRACE_FLAG_DISPATCHER</a></p></td>
 <td><p>Enables capture of ReadyThread events.</p></td>
 </tr>
 <tr class="even">
-<td><p>[EVENT_TRACE_FLAG_VIRTUAL_ALLOC](event-trace-flag-virtual-alloc.md)</p></td>
+<td><p><a href="event-trace-flag-virtual-alloc.md" data-raw-source="[EVENT_TRACE_FLAG_VIRTUAL_ALLOC](event-trace-flag-virtual-alloc.md)">EVENT_TRACE_FLAG_VIRTUAL_ALLOC</a></p></td>
 <td><p>Enables capture of virtual allocations and free events.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

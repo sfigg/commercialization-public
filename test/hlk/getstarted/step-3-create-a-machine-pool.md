@@ -51,11 +51,11 @@ The following image shows the Studio **Configuration** page.
 
 After all of the test systems are placed in a pool, you're ready to conduct testing against those computers.
 
-To learn more about the different options on this page including distributed and multi-device support, see [HLK Studio - Configuration Page](..\user\hlk-studio---configuration-page.md).
+To learn more about the different options on this page including distributed and multi-device support, see [HLK Studio - Configuration Page](../user/hlk-studio---configuration-page.md).
 
- 
+ 
 
- 
+ 
 
 
 

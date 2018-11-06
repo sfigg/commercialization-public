@@ -56,7 +56,7 @@ Microsoft Print to PDF ships as an optional feature and is installed by default.
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following XML output shows how to remove the Microsoft Print to PDF print qu
 
 [Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,21 +55,21 @@ The remainder of this section refers to the documents and scripts that are provi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)</p></td>
+<td><p><a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a></p></td>
 <td><p>Describes how to capture and view a WPA trace for modern standby diagnostics.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Common WPA graphs for modern standby power management](common-wpa-graphs-for-modern-standby-power-management.md)</p></td>
+<td><p><a href="common-wpa-graphs-for-modern-standby-power-management.md" data-raw-source="[Common WPA graphs for modern standby power management](common-wpa-graphs-for-modern-standby-power-management.md)">Common WPA graphs for modern standby power management</a></p></td>
 <td><p>Describes the two common WPA graphs (<strong>Platform Idle State</strong> and <strong>DRIPS</strong>) for modern standby power management.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

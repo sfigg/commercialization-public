@@ -84,9 +84,9 @@ The following XML output shows how to use the `<WideTiles>` component.
 
 [WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

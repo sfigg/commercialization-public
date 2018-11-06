@@ -1,5 +1,5 @@
 ---
-Description: 'You can use the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a new Windows 10 Mobile image.'
+Description: 'You can use the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a new Windows 10 Mobile image.'
 ms.assetid: 941023d3-14d5-415f-817b-a48ac2a4ec87
 MSHAttr: 'PreferredLib:/library'
 title: Use the Windows ICD CLI to customize and build a mobile image
@@ -14,7 +14,7 @@ ms.topic: article
 # Use the Windows ICD CLI to customize and build a mobile image
 
 
-You can use the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a new Windows 10 Mobile image.
+You can use the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a new Windows 10 Mobile image.
 
 This imaging method requires a pre-installed OS kit so you must have all the necessary Microsoft OS packages and feature manifest files in your default install path. You also need either a BSP.config.xml file, which contains information about the hardware component packages for your board support package (BSP) or you can use an OEMInput.xml file.
 
@@ -29,7 +29,7 @@ If you're using a BSP.config.xml file, you can:
 
 Multivariant provides a generic mechanism for creating a single image that can work for multiple markets. You can use it to dynamically configure language, branding, and network settings during runtime based on the mobile operator and locale/country.
 
-Unlike the Windows ICD UI, you can use the Windows ICD CLI to to create an image that has multivariant support. In order to do this, you must first edit a Windows Provisioning answer file (WPAF), customizations.xml, and add the **Targets** and **Variant** sections to the file. [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108) provides a more information about multivariant support in Windows 10 and a list of the conditions that Windows supports along with their priorities. It also provides a step-by-step example on what you need to do.
+Unlike the Windows ICD UI, you can use the Windows ICD CLI to to create an image that has multivariant support. In order to do this, you must first edit a Windows Provisioning answer file (WPAF), customizations.xml, and add the **Targets** and **Variant** sections to the file. [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108) provides a more information about multivariant support in Windows 10 and a list of the conditions that Windows supports along with their priorities. It also provides a step-by-step example on what you need to do.
 
 In this section, we'll modify the customizations.xml file that was created from [Use the Windows ICD UI to customize and build a mobile image](use-the-windows-icd-ui-to-customize-and-build-a-mobile-image.md) and include **Targets** and **Variant** sections to support multivariant. If you are building a single variant image, you may skip this section.
 
@@ -65,7 +65,7 @@ In this section, we'll modify the customizations.xml file that was created from 
         </Customizations>
       </Settings>
     </WindowsCustomizations> 
-      
+
     ```
 
 3.  Edit the customizations.xml file and create a **Targets** section to describe the conditions that will handle your multivariant settings.
@@ -112,7 +112,7 @@ In this section, we'll modify the customizations.xml file that was created from 
         </Customizations>
       </Settings>
     </WindowsCustomizations> 
-      
+
     ```
 
 4.  In the customizations.xml file, create two **Variant** sections:
@@ -175,73 +175,75 @@ In this section, we'll modify the customizations.xml file that was created from 
         </Customizations>
       </Settings>
     </WindowsCustomizations> 
-      
+
     ```
 
 5.  Move compliant settings from the **Common** section to the **Variant** section.
 
-    **Note**  Settings that reside in the **Common** section are applied unconditionally on every triggering event.
+    **Note**  Settings that reside in the **Common** section are applied unconditionally on every triggering event.
 
-     
 
-    In the following example, we used the `DeviceLock/MaxInactivity` policy under ThePhoneCompany variant while the `DeviceLock/ScreenTimeoutWhileLocked` policy was moved under the Fabrikam variant.
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <WindowsCustomizations>
-      <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
-        <ID>{239b9121-9f26-42db-8ae2-0d62989caa66}</ID>
-        <Name>Contoso_ppkg</Name>
-        <Version>1.0</Version>
-        <OwnerType>OEM</OwnerType>
-        <Rank>0</Rank>
-      </PackageConfig>
-      <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
-        <Customizations>
-          <Common>
-            <Start>
-              <StartLayout>C:\Contoso\Customizations\LayoutModification1.xml</StartLayout>
-            </Start>
-          </Common>
-          <Targets> 
-            <Target Id="Id_PhoneCo"> 
-              <TargetState> 
-                <Condition Name="MCC" Value="410" /> 
-                <Condition Name="MNC" Value="510" /> 
-              </TargetState> 
-            </Target> 
-            <Target Id="Id_Fabrikam"> 
-              <TargetState> 
-                <Condition Name="MCC" Value="310" /> 
-                <Condition Name="MNC" Value="610" /> 
-              </TargetState> 
-            </Target>
-          </Targets> 
-          <Variant Name="ThePhoneCompany"> 
-            <TargetRefs> 
-              <TargetRef Id="Id_PhoneCo" /> 
-            </TargetRefs> 
-            <Policies>
-              <DeviceLock>
-                <MaxInactivityTimeDeviceLock>15</MaxInactivityTimeDeviceLock>
-              </DeviceLock>
-            </Policies>
-          </Variant> 
-          <Variant Name="Fabrikam"> 
-            <TargetRefs> 
-              <TargetRef Id="Id_Fabrikam" /> 
-            </TargetRefs> 
-            <Policies>
-              <DeviceLock>
-                <ScreenTimeoutWhileLocked>15</ScreenTimeoutWhileLocked>
-              </DeviceLock>
-            </Policies>
-          </Variant> 
-        </Customizations>
-      </Settings>
-    </WindowsCustomizations> 
-      
-    ```
+~~~
+In the following example, we used the `DeviceLock/MaxInactivity` policy under ThePhoneCompany variant while the `DeviceLock/ScreenTimeoutWhileLocked` policy was moved under the Fabrikam variant.
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsCustomizations>
+  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+    <ID>{239b9121-9f26-42db-8ae2-0d62989caa66}</ID>
+    <Name>Contoso_ppkg</Name>
+    <Version>1.0</Version>
+    <OwnerType>OEM</OwnerType>
+    <Rank>0</Rank>
+  </PackageConfig>
+  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+    <Customizations>
+      <Common>
+        <Start>
+          <StartLayout>C:\Contoso\Customizations\LayoutModification1.xml</StartLayout>
+        </Start>
+      </Common>
+      <Targets> 
+        <Target Id="Id_PhoneCo"> 
+          <TargetState> 
+            <Condition Name="MCC" Value="410" /> 
+            <Condition Name="MNC" Value="510" /> 
+          </TargetState> 
+        </Target> 
+        <Target Id="Id_Fabrikam"> 
+          <TargetState> 
+            <Condition Name="MCC" Value="310" /> 
+            <Condition Name="MNC" Value="610" /> 
+          </TargetState> 
+        </Target>
+      </Targets> 
+      <Variant Name="ThePhoneCompany"> 
+        <TargetRefs> 
+          <TargetRef Id="Id_PhoneCo" /> 
+        </TargetRefs> 
+        <Policies>
+          <DeviceLock>
+            <MaxInactivityTimeDeviceLock>15</MaxInactivityTimeDeviceLock>
+          </DeviceLock>
+        </Policies>
+      </Variant> 
+      <Variant Name="Fabrikam"> 
+        <TargetRefs> 
+          <TargetRef Id="Id_Fabrikam" /> 
+        </TargetRefs> 
+        <Policies>
+          <DeviceLock>
+            <ScreenTimeoutWhileLocked>15</ScreenTimeoutWhileLocked>
+          </DeviceLock>
+        </Policies>
+      </Variant> 
+    </Customizations>
+  </Settings>
+</WindowsCustomizations> 
+
+```
+~~~
 
 6.  Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values when you get ready to build the image.
 
@@ -255,40 +257,40 @@ In this section, we'll modify the customizations.xml file that was created from 
 
     In this example, the **StoreFile** corresponds to the location of the settings store that will be used to create the package for the required Windows edition.
 
-    **Note**  The provisioning package created during this step will contain the multivariant settings. You can use this package either as a standalone package that you can apply to a Windows device, use it as the base when starting another project, or use it as one of one of the inputs (**/ProvisioningPackage**) when building either a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) image or Windows 10 Mobile image.
+    **Note**  The provisioning package created during this step will contain the multivariant settings. You can use this package either as a standalone package that you can apply to a Windows device, use it as the base when starting another project, or use it as one of one of the inputs (**/ProvisioningPackage**) when building either a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) image or Windows 10 Mobile image.
 
-     
+
 
 ## <span id="build_a_mobile_image_using_the_windows_icd_cli"></span><span id="BUILD_A_MOBILE_IMAGE_USING_THE_WINDOWS_ICD_CLI"></span>Build a mobile image using the Windows ICD CLI
 
 
 This walkthrough shows how to use the Windows ICD CLI to build a mobile image. For more information about the Windows ICD CLI, including usage examples and parameter descriptions, see [Use the Windows ICD command-line interface](https://msdn.microsoft.com/library/windows/hardware/dn916115).
 
-1.  Open a command-line window with administrator rights.
+1. Open a command-line window with administrator rights.
 
-2.  From the command-line, navigate to the Windows ICD install directory:
+2. From the command-line, navigate to the Windows ICD install directory:
 
-    -   On an x64 computer, go to: C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86
+   -   On an x64 computer, go to: C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86
 
-    -   On an x86 computer, go to: C:\\Program Files\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86
+   -   On an x86 computer, go to: C:\\Program Files\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86
 
-3.  Using the updated customizations.xml (with multivariant settings) and the MCSF CAF created in [Configure customization settings](configure-customization-settings.md), use the Windows ICD CLI to build a mobile image.
+3. Using the updated customizations.xml (with multivariant settings) and the MCSF CAF created in [Configure customization settings](configure-customization-settings.md), use the Windows ICD CLI to build a mobile image.
 
-    To do this with the example files and using a bsp.config.xml, see the following command:
+   To do this with the example files and using a bsp.config.xml, see the following command:
 
-    **icd.exe /Build-ImageFromPackages /ImagePath:"***C:\\Contoso\\Customizations\\TestFlash2.ffu***" /BSPConfigFile:"***C:\\ContosoXDevice.bsp.config.xml***" /ImageType:***Test* **/CustomizationXML:"***C:\\Contoso\\Customizations\\customizations.xml***" /OEMCustomizationVer:***1.0.0.0* **/MCSFCustomizationXML:"***C:\\Contoso\\Customizations\\MobileCustomizations.xml***"**
+   **icd.exe /Build-ImageFromPackages /ImagePath:"**<em>C:\\Contoso\\Customizations\\TestFlash2.ffu</em>**" /BSPConfigFile:"**<em>C:\\ContosoXDevice.bsp.config.xml</em>**" /ImageType:**<em>Test</em> **/CustomizationXML:"**<em>C:\\Contoso\\Customizations\\customizations.xml</em>**" /OEMCustomizationVer:**<em>1.0.0.0</em> **/MCSFCustomizationXML:"**<em>C:\\Contoso\\Customizations\\MobileCustomizations.xml</em>**"**
 
-    Here are a few things to keep in mind:
+   Here are a few things to keep in mind:
 
-    -   Replace all the placeholder values for each parameter with the values that match your assets and directory locations
-    -   Specify /ImageType because we are using /BSPConfigFile
-    -   Use /CustomizationXML to point to the customizations.xml
-    -   Windows ICD requires /OEMCustomizationVer if ProvisioningPackage is defined
-    -   Make sure the format for the /OEMCustomizationVer version number is in *&lt;Major&gt;.&lt;Minor&gt;.&lt;SubVersion&gt;.&lt;SubMinorVersion&gt;*, such as 1.0.0.0
+   -   Replace all the placeholder values for each parameter with the values that match your assets and directory locations
+   -   Specify /ImageType because we are using /BSPConfigFile
+   -   Use /CustomizationXML to point to the customizations.xml
+   -   Windows ICD requires /OEMCustomizationVer if ProvisioningPackage is defined
+   -   Make sure the format for the /OEMCustomizationVer version number is in *&lt;Major&gt;.&lt;Minor&gt;.&lt;SubVersion&gt;.&lt;SubMinorVersion&gt;*, such as 1.0.0.0
 
-    To do this with the example files and using an OEMInput.xml file, see the following command:
+   To do this with the example files and using an OEMInput.xml file, see the following command:
 
-    **icd.exe /Build-ImageFromPackages /ImagePath:"***C:\\Contoso\\Customizations\\TestFlash2.ffu***" /OEMInputXML:"***C:\\ContosoTestOEMInput.xml***" /CustomizationXML:"***C:\\Contoso\\Customizations\\customizations.xml***" /OEMCustomizationVer:***1.0.0.0* **/MCSFCustomizationXML:"***C:\\Contoso\\Customizations\\MobileCustomizations.xml***"**
+   **icd.exe /Build-ImageFromPackages /ImagePath:"**<em>C:\\Contoso\\Customizations\\TestFlash2.ffu</em>**" /OEMInputXML:"**<em>C:\\ContosoTestOEMInput.xml</em>**" /CustomizationXML:"**<em>C:\\Contoso\\Customizations\\customizations.xml</em>**" /OEMCustomizationVer:**<em>1.0.0.0</em> **/MCSFCustomizationXML:"**<em>C:\\Contoso\\Customizations\\MobileCustomizations.xml</em>**"**
 
 Once the image (FFU) is built, you can flash it to your mobile device by using ffutool.exe or the **Deploy** option in the Windows ICD UI. See the following section for more information.
 
@@ -342,9 +344,9 @@ Follow these steps if you are flashing the image to the device using ffutool.exe
 
 No matter which method you used to flash the image to the device, it will take a few minutes for the image to be fully flashed. Once flashing is done, go through device setup and verify that your customizations appear as part of the image.
 
- 
 
- 
+
+
 
 
 

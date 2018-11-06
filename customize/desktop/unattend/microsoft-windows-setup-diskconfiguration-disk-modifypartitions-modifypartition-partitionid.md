@@ -20,7 +20,7 @@ ms.topic: article
 
 `PartitionID` specifies the identification number of the partition to modify. The first partition on a disk has the value of 1, the second, 2, and so on.
 
-**Note**  
+**Note**  
 **BIOS-Based Systems: using an extended partition**
 
 -   Only primary and logical partitions receive a partition ID. Extended partitions are ignored.
@@ -44,7 +44,7 @@ ms.topic: article
     </tbody>
     </table>
 
-     
+
 
 -   We recommend placing the extended partition after all other primary partitions. Otherwise, when you create logical partitions, the partition ID for the primary partitions may change. For example, if you create a partition structure with an extended partition in the middle of your primary partitions, and then add two logical partitions, the partition ID of the last partition will change from 3 to 5:
 
@@ -67,32 +67,34 @@ ms.topic: article
     </tbody>
     </table>
 
-     
 
-    **After adding two logical partitions:**
 
-    <table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><p>Primary (1)</p></td>
-    <td><p>Extended</p>
-    <p>Logical (2)</p>
-    <p>Logical (3)</p></td>
-    <td><p>Primary (4)</p></td>
-    <td><p>Primary (5)</p></td>
-    </tr>
-    </tbody>
-    </table>
+~~~
+**After adding two logical partitions:**
 
-     
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Primary (1)</p></td>
+<td><p>Extended</p>
+<p>Logical (2)</p>
+<p>Logical (3)</p></td>
+<td><p>Primary (4)</p></td>
+<td><p>Primary (5)</p></td>
+</tr>
+</tbody>
+</table>
+~~~
 
- 
+
+
+
 
 ## Values
 
@@ -106,12 +108,12 @@ ms.topic: article
 <tr class="odd">
 <td><p><em>partition_identification_number</em></p></td>
 <td><p>Specifies the identification number of the partition that you modify.</p>
-<p>If [WillShowUI](microsoft-windows-setup-diskconfiguration-willshowui.md) is set to <strong>Never</strong> and an invalid <code>PartitionID</code> setting is specified, an error is logged and installation terminates.</p></td>
+<p>If <a href="microsoft-windows-setup-diskconfiguration-willshowui.md" data-raw-source="[WillShowUI](microsoft-windows-setup-diskconfiguration-willshowui.md)">WillShowUI</a> is set to <strong>Never</strong> and an invalid <code>PartitionID</code> setting is specified, an error is logged and installation terminates.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 
@@ -459,9 +461,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
- 
 
- 
+
+
 
 
 

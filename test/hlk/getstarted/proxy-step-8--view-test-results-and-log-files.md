@@ -54,11 +54,11 @@ Right-click any test to see additional test details, including:
 
 -   Infrastructure (gather and execution logs)
 
-To learn more about the different options on this page including distributed and multi-device support, see [HLK Studio - Results Tab](..\user\hlk-studio---results-tab.md).
+To learn more about the different options on this page including distributed and multi-device support, see [HLK Studio - Results Tab](../user/hlk-studio---results-tab.md).
 
- 
+ 
 
- 
+ 
 
 
 

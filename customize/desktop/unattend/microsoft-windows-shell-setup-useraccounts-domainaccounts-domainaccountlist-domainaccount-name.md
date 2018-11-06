@@ -32,14 +32,14 @@ ms.topic: article
 <tr class="odd">
 <td><p><em>Name</em></p></td>
 <td><p>Specifies the domain account or the security group. <em>Name</em> is a string with a maximum length of 256 characters.</p>
-<p>Do not use any of the following characters: &quot;/\[]:|&lt;&gt;+=;,?*%@</p>
+<p>Do not use any of the following characters: &amp;amp;quot;/[]:|&amp;amp;lt;&amp;amp;gt;+=;,?*%@</p>
 <p>Some Unicode characters such as emoji appear as with the placeholder character: ? (question mark) in command prompts, but appear correctly in other locations such as File Explorer.</p>
 <p>Users who sign-in with a Microsoft account will frequently see that their underlying profile path does not match their firstname / lastname. When this happens, you will see an account in the form: username_001.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -95,9 +95,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ Standard package updates are not applied to registry data that have been changed
 **Important**  
 Registry updates for entries that will not be changed can be handled by using standard updates. Only use provxml files in updates when there is an unavoidable need to update registry entries that may change.
 
- 
+ 
 
 ## <span id="AvoidingTheNeed"></span><span id="avoidingtheneed"></span><span id="AVOIDINGTHENEED"></span>Registry update strategies
 
@@ -106,9 +106,9 @@ It is important to verify that the update will work properly if the user has alt
 
 During an update, provxml files are processed on a best-effort basis. If a provxml file cannot be processed due to formatting errors or permissions issues, the file is skipped, and processing of subsequent provxmls continues. In development of the prvoxml, you can check the status that is stored in the registry at **HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\DataMigrationFramework\\ProvisioningStatus\\Microsoft**. A registry entry is created for each provxml file that is processed, and the HRESULT from processing the file is stored as the entry value.
 
- 
+ 
 
- 
+ 
 
 
 

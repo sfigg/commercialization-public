@@ -41,9 +41,9 @@ A single kernel trace control flag enables or disables logging of a kernel event
 
 [Trace Control Flags](trace-control-flags.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,7 +62,7 @@ By default, Push-button reset features restore only OS files, drivers, and prein
 > [!Note]
 > Many of the settings customizations allowed or required by the OPD are specific to Windows 10 for desktop, and cannot be stored in provisioning packages created using Windows ICD. When using the legacy mechanism, use unattend and Push-button reset extensibility points for restoring all settings customizations during recovery. The use of provisioning packages created using Windows ICD is completely optional.
 
- 
+ 
 
 ## <span id="Refresh_your_PC"></span><span id="refresh_your_pc"></span><span id="REFRESH_YOUR_PC"></span>Refresh your PC
 
@@ -121,7 +121,7 @@ Because user data can be stored in many locations, the **Refresh your PC** featu
 
 **Note**  Some applications store user data in the \\AppData folder in user profiles. The \\AppData folders are available in C:\\Windows.old after using the **Refresh your PC** feature.
 
- 
+ 
 
 The **Refresh your PC** feature bypasses the following locations and preserves the contents:
 
@@ -270,7 +270,7 @@ The extensibility points for **Refresh your PC** are summarized in the following
 | A          | Settings and data to be migrated have been moved to a temporary location                                                   | Copy files, drivers, or settings that are not migrated by default when the user runs the Refresh your PC feature.                                 |
 | B          | The OS has been rebuilt. Drivers and customizations have been reapplied. Only critical system settings have been migrated. | Restore customization files (e.g. unattend.xml, layoutmodification.xml), or files and settings you might have backed up at extensibility point A. |
 
- 
+ 
 
 The extensibility points for **Reset your PC** are summarized in the following table:
 
@@ -294,7 +294,7 @@ The extensibility points for **Reset your PC** are summarized in the following t
 <strong>Important</strong>  Do not modify the Windows partition.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -305,7 +305,7 @@ The extensibility points for **Reset your PC** are summarized in the following t
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Compact_OS"></span><span id="compact_os"></span><span id="COMPACT_OS"></span>Compact OS
 
@@ -345,15 +345,15 @@ The Windows RE update process makes every effort to reuse the existing Windows R
 
 **Important**  To ensure that your customizations continue to work after Windows RE has been updated, they must not depend on functionalities provided by Windows PE optional components which are not in the default Windows RE image (e.g. WinPE-NetFX). To facilitate development of Windows RE customizations, the WinPE-HTA optional component has been added to the default Windows RE image in Windows 10.
 
- 
+ 
 
 **Note**  The new Windows RE image deployed as part of the rollup update contains language resources only for the system default language, even if the existing Windows RE image contains resources for multiple languages. On most PCs, the system default language is the language selected at the time of OOBE.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

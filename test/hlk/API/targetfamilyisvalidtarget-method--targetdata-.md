@@ -29,7 +29,7 @@ This method determines whether the specified TargetData can be a member of this 
 
 `Public Function IsValidTarget ( _`
 
-          `target As TargetData _`
+          `target As TargetData _`
 
 `) As Boolean`
 
@@ -37,7 +37,7 @@ This method determines whether the specified TargetData can be a member of this 
 
 `public bool IsValidTarget (`
 
-          `TargetData target`
+          `TargetData target`
 
 `)`
 
@@ -46,7 +46,7 @@ This method determines whether the specified TargetData can be a member of this 
 
 *target*
 
-     Target data to examine.
+     Target data to examine.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -91,9 +91,9 @@ If the comparison fails, this method populates the event log with additional dat
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

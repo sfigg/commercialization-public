@@ -42,7 +42,7 @@ Specifies the user or group account name the custom shell will be used for.
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -77,9 +77,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

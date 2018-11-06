@@ -69,7 +69,7 @@ FDN SIM contacts syncs from the SIM during device boot. By default, this compone
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a device with a SIM that has FDN enabled.

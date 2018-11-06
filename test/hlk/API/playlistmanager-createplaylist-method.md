@@ -29,7 +29,7 @@ Creates a Playlist file from this [PlaylistManager](playlistmanager-class.md)'s 
 
 `  public void CreatePlaylist (`
 
-          `string playlistPath`
+          `string playlistPath`
 
 `)`
 
@@ -38,16 +38,16 @@ Creates a Playlist file from this [PlaylistManager](playlistmanager-class.md)'s 
 
 *playlistPath*
 
-     Full path to the file to create.
+     Full path to the file to create.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

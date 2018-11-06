@@ -43,9 +43,9 @@ Documents ETW user-mode APIs.
 <a href="" id="etw-kernel-mode-reference"></a>[ETW Kernel-Mode Reference](http://msdn.microsoft.com/library/windows/hardware/ff545650.aspx)  
 Documents ETW kernel-mode APIs.
 
- 
+ 
 
- 
+ 
 
 
 

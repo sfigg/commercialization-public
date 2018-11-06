@@ -49,12 +49,12 @@ Testing can be done with multiple machines or a single machine, but using a sing
 | Wireless Lan | Native and x86 on ARM64 mode |
 | System       | Native and x86 on ARM64 mode |
 
- 
+ 
 
 >[!NOTE]  
 > The mode required may change with new releases of the kit.
 
- 
+ 
 
 Once the mode for testing is identified the following instructions will walk you through client setup.
 
@@ -64,7 +64,7 @@ Once the mode for testing is identified the following instructions will walk you
 > [!NOTE] 
 > It is recommended that the client system is on A/C (plugged in) and that the Power Options are set to **Never** for **Put the computer to sleep** settings.
 
- 
+ 
 
 ### <span id="To_install_the_Windows_HLK_Client"></span><span id="to_install_the_windows_hlk_client"></span><span id="TO_INSTALL_THE_WINDOWS_HLK_CLIENT"></span>To install the Windows HLK Client
 
@@ -104,14 +104,14 @@ Once the mode for testing is identified the following instructions will walk you
     >[!NOTE]   
     >If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
 
-     
+     
 
 4.  When the **Ready to Install** page appears, select **Install**.
 5.  Click **Finish** to exit the wizard.
     >[!TIP]  
     >When installation completes, confirm its success by going to the Control Panel and choosing Uninstall a program. Windows Hardware Lab Kit Client should appear in the program list.
 
-     
+     
 
 6.  Repeat steps 1-5 for each test system.
 
@@ -132,7 +132,7 @@ You can create large projects that represent a wide range of scenarios. You can 
 >[!NOTE]  
 > For ARM64 Desktop testing, multiple projects are required to form a complete submission package (one for each mode). When testing is complete for each mode, create hlkx packages and then merge the packages together to make a single package for submission. 
 
- 
+ 
 
 In the remaining examples, you create a project for a device and run all associated certification tests. Then, you create a single package for submission that contains all of the passing test results.
 
@@ -142,12 +142,12 @@ The following image shows the Studio **Project** tab.
 
 ### <span id="Creating_a_project"></span><span id="creating_a_project"></span><span id="CREATING_A_PROJECT"></span>Creating a project
 
-1.  In Windows HLK Studio, choose the **Project** tab, and then choose **Create project**.
-2.  Replace the default project name with the name of your project, and then press Enter.
-    >[!NOTE]  
-    > A project should have a meaningful name that indicates its contents, for example, **Fabrikam Multi-function Device Model Z**.
+1. In Windows HLK Studio, choose the **Project** tab, and then choose **Create project**.
+2. Replace the default project name with the name of your project, and then press Enter.
+   >[!NOTE]  
+   > A project should have a meaningful name that indicates its contents, for example, **Fabrikam Multi-function Device Model Z**.
 
-     
+     
 
 When the project name appears on the page, the project is created.
 
@@ -182,7 +182,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
 > -  Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
 > -  Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
 
- 
+ 
 
 The following image shows the Studio **Tests** tab.
 
@@ -207,12 +207,12 @@ You can save an existing collection of tests as a playlist by choosing Save Sele
 >[!IMPORTANT]   
 >When using an official playlist, you must use the version of the playlist that matches the version of the kit you are using. For example, if using version 1607 of the HLK, you must also use version 1607 of the playlist.
 
- 
+ 
 
 >[!NOTE] 
 > ARM64 Desktop testing: There are two playlists, one for tests that run in **Native mode** and one for tests that run in **x86 on ARM64** mode. Ensure that the appropriate playlist is being applied to the project that has the HLK client installation which matches the mode intended for testing.
 
- 
+ 
 
 ### <span id="Running_a_test"></span><span id="running_a_test"></span><span id="RUNNING_A_TEST"></span>Running a test
 
@@ -229,7 +229,7 @@ A progress bar appears. A slight delay occurs when you run a test.
 >[!NOTE] 
 > To learn more about any test, select the test from the list, and press F1 key, or right-click, and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
 
- 
+ 
 
 As tests complete, the results are displayed in the Status column. A green checkmark means that it passed, while a red X means that it failed. The pane on the right displays project summary information, including target(s) selected, operating systems being tested, product types you qualify for, and status of all tests.
 
@@ -243,7 +243,7 @@ x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test
 >[!NOTE]
 >  Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submission. For information on merging packages, see [Merge packages](../user/merge-packages.md).
 
- 
+ 
 
 ## <span id="Step_8__Create_a_submission_package"></span><span id="step_8__create_a_submission_package"></span><span id="STEP_8__CREATE_A_SUBMISSION_PACKAGE"></span>Step 8: Create a submission package
 

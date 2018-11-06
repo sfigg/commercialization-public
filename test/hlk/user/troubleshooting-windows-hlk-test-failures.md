@@ -96,7 +96,7 @@ In Windows HLK Studio, review the test status icons on the **Results** tab. The 
 <td><img src="images/status-icon-failed-bug-check.png" alt="test failed due to system crash status icon" /></td>
 <td>Failed due to system crash</td>
 <td><p>The system crashed during the test run. You can right-click on this test to view Bugcheck information.</p>
-<p>For more information about reviewing system crashes, see [Troubleshooting Windows HLK Test Failures (system crashes)](#sysx).</p></td>
+<p>For more information about reviewing system crashes, see <a href="#sysx" data-raw-source="[Troubleshooting Windows HLK Test Failures (system crashes)](#sysx)">Troubleshooting Windows HLK Test Failures (system crashes)</a>.</p></td>
 </tr>
 <tr class="even">
 <td><img src="images/status-icon-canceled.png" alt="test canceled status icon" /></td>
@@ -109,7 +109,7 @@ In Windows HLK Studio, review the test status icons on the **Results** tab. The 
 >[!NOTE]
 >  If the status icon suggests that you have a Windows HLK infrastructure problem, see [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md).
 
- 
+ 
 
 ## <span id="confirmcorrect"></span><span id="CONFIRMCORRECT"></span>**3. Make sure that the test was run correctly**
 
@@ -133,18 +133,18 @@ You should check whether the test requires a special configuration and if it doe
 
 Some Windows HLK tests require additional files that are not included in the Windows HLK because of size or security reasons. Windows HLK Studio denotes these tests as requiring special configuration. These tests fail if the supplemental data is not installed.
 
-Tests that require special configuration are denoted by a toolbox icon (![special configuration](images/hlk-winb-toolboxicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. Special configuration details are described in the test reference topic for each test. For specific test reference documentation, see [HLK Test Reference](..\testref\hardware-lab-kit-test-reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
+Tests that require special configuration are denoted by a toolbox icon (![special configuration](images/hlk-winb-toolboxicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. Special configuration details are described in the test reference topic for each test. For specific test reference documentation, see [HLK Test Reference](../testref/hardware-lab-kit-test-reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
 
 >[!NOTE]
 >  The online version of the help content is generally the most current.
 
- 
+ 
 
 ### <span id="userinter"></span><span id="USERINTER"></span>**Verify manual tests that require user interaction**
 
 You should determine whether the test requires user interaction.
 
-Tests that require user interaction are denoted by a person icon (![requires user interaction](images/hlk-winb-personicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. For instructions on how to run a manual test, see the **Running the test** section in the test reference topic for the particular test. For specific test reference documentation, see [HLK Test Reference](..\testref\hardware-lab-kit-test-reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
+Tests that require user interaction are denoted by a person icon (![requires user interaction](images/hlk-winb-personicon-commonts.png)) in the **Type** column in the **Test** pane and the **Results** pane in Windows HLK Studio. For instructions on how to run a manual test, see the **Running the test** section in the test reference topic for the particular test. For specific test reference documentation, see [HLK Test Reference](../testref/hardware-lab-kit-test-reference.md), or from in Windows HLK Studio, select the specific test on the **Test** tab or the **Result** tab, and then press **F1**.
 
 ### <span id="multi"></span><span id="MULTI"></span>**Run multi-device test as a single test**
 
@@ -159,11 +159,11 @@ If a test fails during a multi-device test run, we recommend that you rerun the 
 
 Confirm that the Windows HLK infrastructure or the device configuration did not change after you selected the test target. Windows HLK gets the Windows HLK Client system configuration information when you select the test target. If you change the system or device configuration after you select the test target, you must then re-select the test target.
 
->[!WARNING]
->  
-Be aware that re-selecting the test target invalidates and removes all previous test results. We highly recommend that you do not make any device or infrastructure changes after you have started testing.
+> [!WARNING]
+> 
+> Be aware that re-selecting the test target invalidates and removes all previous test results. We highly recommend that you do not make any device or infrastructure changes after you have started testing.
 
- 
+ 
 
 Watch a video demonstration.
 
@@ -194,36 +194,36 @@ The following table describes test categories and their indicators; the failure 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Test failed because of test results](#results)</p></td>
+<td><p><a href="#results" data-raw-source="[Test failed because of test results](#results)">Test failed because of test results</a></p></td>
 <td><p>Failed</p></td>
 <td><p>Task Error, Task Log</p>
 <p>Task Log</p>
 <p>Task Error</p></td>
-<td><p>[Task &amp;lt;&amp;gt; is Marked as Failed from the Log File](#markedasfailed)</p>
-<p>[Failed to determine Pass/Fail of the task &amp;lt;&amp;gt; Task will be marked as failed anyway.](#fail2determine)</p>
-<p>[Cause : The Execute Task with &amp;lt;&amp;gt; Failed with ExitCode &amp;lt;Error Code&amp;gt;](#exitcode)</p></td>
+<td><p><a href="#markedasfailed" data-raw-source="[Task &amp;amp;lt;&amp;amp;gt; is Marked as Failed from the Log File](#markedasfailed)">Task &amp;lt;&amp;gt; is Marked as Failed from the Log File</a></p>
+<p><a href="#fail2determine" data-raw-source="[Failed to determine Pass/Fail of the task &amp;amp;lt;&amp;amp;gt; Task will be marked as failed anyway.](#fail2determine)">Failed to determine Pass/Fail of the task &amp;lt;&amp;gt; Task will be marked as failed anyway.</a></p>
+<p><a href="#exitcode" data-raw-source="[Cause : The Execute Task with &amp;amp;lt;&amp;amp;gt; Failed with ExitCode &amp;amp;lt;Error Code&amp;amp;gt;](#exitcode)">Cause : The Execute Task with &amp;lt;&amp;gt; Failed with ExitCode &amp;lt;Error Code&amp;gt;</a></p></td>
 </tr>
 <tr class="even">
-<td><p>[System crashed](#sysx)</p></td>
+<td><p><a href="#sysx" data-raw-source="[System crashed](#sysx)">System crashed</a></p></td>
 <td><p>Failed</p></td>
 <td><p>Windows Event Log, Windows crash dump files</p></td>
 <td><p>A system event log entry and (if enabled) a crash dump file are created during a system crash. The Task Error probably states: <strong>Task Cancelled Because of an Unexpected Reboot</strong>.</p>
 <p>You can right-click on a test associated with a system crash to view associated Bugcheck information.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Test crashed](#testx)</p></td>
+<td><p><a href="#testx" data-raw-source="[Test crashed](#testx)">Test crashed</a></p></td>
 <td><p>Failed</p></td>
 <td><p>Windows Event Log, user-mode crash dump files</p></td>
 <td><p>When a user mode component crashes, an Application event log entry is created on the Windows HLK Client; if it is enabled, a user mode dump file is also created.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Test was cancelled because it ran too long](#toolong)</p></td>
+<td><p><a href="#toolong" data-raw-source="[Test was cancelled because it ran too long](#toolong)">Test was cancelled because it ran too long</a></p></td>
 <td><p>Failed</p></td>
 <td><p>Task Execution Log</p></td>
 <td><p>This problem is indicated in the Task Execution Log.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Client system is unresponsive](#clientunre)</p></td>
+<td><p><a href="#clientunre" data-raw-source="[Client system is unresponsive](#clientunre)">Client system is unresponsive</a></p></td>
 <td><p>Running</p></td>
 <td><p>No indicators</p></td>
 <td><p>If the Windows HLK Client is not responding, tests can run indefinitely.</p></td>
@@ -237,7 +237,7 @@ The following table describes test categories and their indicators; the failure 
 </tbody>
 </table>
 
- 
+ 
 
 For additional information about specific error messages, see [Windows HLK Studio task error message reference](#errorref).
 
@@ -269,7 +269,7 @@ Test result failures are the most common kind of failure. If you receive a test 
 
 A known HLK client issue can cause a test to fail when there are no failing tasks, but one or more of the tasks is marked as cancelled. The test result should be checked for Execution Logs.
 
-****To check for execution logs****
+***<em>To check for execution logs</em>***
 
 1.  In Windows HLK Studio, right click a task result from the failing test result.
 
@@ -296,7 +296,7 @@ In the **Configuration** tab of HLK Studio, the **Crash Dump Copy Back Setting**
 >[!NOTE]
 >  Copying is disabled by default. For more information, see [Manually Configure HLK Client Kernel Debugger Settings](manually-configure-hlk-client-kernel-debugger-settings.md).
 
- 
+ 
 
 When Windows crashes, it writes an event to the Windows System Event Log. To start the Event Viewer and view the event, do the following:
 
@@ -453,9 +453,9 @@ dism /online /add-package /packagepath:<path to package>\Microsoft-OneCore-Graph
 
 [Collecting User-Mode Dumps](http://go.microsoft.com/fwlink/p/?linkid=257798)
 
- 
+ 
 
- 
+ 
 
 
 

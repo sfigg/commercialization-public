@@ -42,9 +42,9 @@ This method deletes a targetTableEntry by name/id.
 
 `Public Sub DeleteTarget ( _`
 
-          `targetIdToDelete As String _`
+          `targetIdToDelete As String _`
 
-          `machine As Machine _`
+          `machine As Machine _`
 
 `)`
 
@@ -52,9 +52,9 @@ This method deletes a targetTableEntry by name/id.
 
 `public void DeleteTarget (`
 
-          `string targetIdToDelete`
+          `string targetIdToDelete`
 
-          `Machine machine`
+          `Machine machine`
 
 `)`
 
@@ -63,11 +63,11 @@ This method deletes a targetTableEntry by name/id.
 
 *targetIdToDelete*
 
-     The name or id of the targetTableEntry to delete.
+     The name or id of the targetTableEntry to delete.
 
 *machine*
 
-     The machine which contains this test target.
+     The machine which contains this test target.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -83,9 +83,9 @@ An exception is thrown when:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

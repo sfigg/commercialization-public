@@ -30,11 +30,11 @@ ms.topic: article
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Setup\UserData\ProductKey\Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
+<td><p><a href="microsoft-windows-setup-userdata-productkey-key.md" data-raw-source="[Microsoft-Windows-Setup\UserData\ProductKey\Key](microsoft-windows-setup-userdata-productkey-key.md)">Microsoft-Windows-Setup\UserData\ProductKey\Key</a></p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup\ProductKey](microsoft-windows-shell-setup-productkey.md)</p></td>
+<td><p><a href="microsoft-windows-shell-setup-productkey.md" data-raw-source="[Microsoft-Windows-Shell-Setup\ProductKey](microsoft-windows-shell-setup-productkey.md)">Microsoft-Windows-Shell-Setup\ProductKey</a></p></td>
 <td><p>Specifies a product key to activate Windows with. This setting can be used with microsoft-windows-setup-\UserData\ProductKey\Key, and the two product keys can be different.</p>
 <p>If you are using a Volume License Multiple Activation Key (MAK), you must specify the MAK by using this setting.</p></td>
 </tr>

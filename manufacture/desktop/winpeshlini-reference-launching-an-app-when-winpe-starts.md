@@ -43,7 +43,7 @@ Set the `AppPath` entry to the path to your app. You can use a fully qualified p
 
 -   You can’t specifiy any command-line options with LaunchApp.
 
- 
+ 
 
 ## <span id="LaunchApps"></span><span id="launchapps"></span><span id="LAUNCHAPPS"></span>LaunchApps
 
@@ -57,7 +57,7 @@ Use the `[LaunchApps]` section to run apps with command-line options.
 
 -   To add command-line options to an app: add a comma (,) after the app name: `%SYSTEMDRIVE%\Fabrikam\app2.exe,  <option>`
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -66,9 +66,9 @@ Use the `[LaunchApps]` section to run apps with command-line options.
 
 [WinPE: Debug Apps](winpe-debug-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

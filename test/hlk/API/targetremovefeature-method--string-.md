@@ -40,7 +40,7 @@ This method removes a manually added RMS feature from a test target.
 
 `Public MustOverride Sub RemoveFeature ( _`
 
-          `featureName As String _`
+          `featureName As String _`
 
 `)`
 
@@ -48,7 +48,7 @@ This method removes a manually added RMS feature from a test target.
 
 `Public abstract void RemoveFeature (`
 
-          `string featureName`
+          `string featureName`
 
 `)`
 
@@ -57,7 +57,7 @@ This method removes a manually added RMS feature from a test target.
 
 *featureName*
 
-     The name of the feature to remove.
+     The name of the feature to remove.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -73,9 +73,9 @@ This method is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

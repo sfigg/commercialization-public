@@ -101,9 +101,9 @@ The data in the D-state table shows that, while the system was in standby, a USB
 
 If the device is managed by a driver authored by Microsoft, please report the issue to Microsoft. If not, then this information must be reported to the hardware vendor who owns the driver to find a solution and ensure that the device enters selective suspend.
 
- 
+ 
 
- 
+ 
 
 
 

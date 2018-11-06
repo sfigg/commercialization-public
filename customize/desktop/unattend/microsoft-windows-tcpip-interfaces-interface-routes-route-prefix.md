@@ -25,7 +25,7 @@ The prefix length is specified in bits. All bits of the prefix address after the
 **Note**  
 For the IPv6 protocol, the prefix length is **64**, with one exception. If the first 16 bits of the prefix address are zero, the prefix length can vary between **0** and **128**.
 
- 
+ 
 
 The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must be added in the following order: [Identifier](http://go.microsoft.com/fwlink/?LinkId=224315), [Metric](http://go.microsoft.com/fwlink/?LinkId=224320), [NextHopAddress](http://go.microsoft.com/fwlink/?LinkId=224322), and then [Prefix](http://go.microsoft.com/fwlink/?LinkId=224326). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
@@ -45,17 +45,17 @@ The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must b
 </tbody>
 </table>
 
- 
+ 
 
 You can enter the prefix in one of the following ways:
 
--   **As an integer.**
+- **As an integer.**
 
-    The value of Prefix is the number of bits that must match in the IP address. For example, if the NextHop IP address is **12.34.0.0** and the Prefix is 16 (commonly written: **12.34.0.0/16**), then any traffic sent to a **12.34.\*.\*** address goes through that route (subject to strong host model and routing metrics). **12.34.0.0** is the part of the address to compare against, and 16 is the number of bits that must match.
+  The value of Prefix is the number of bits that must match in the IP address. For example, if the NextHop IP address is **12.34.0.0** and the Prefix is 16 (commonly written: **12.34.0.0/16**), then any traffic sent to a **12.34.\*.\\*** address goes through that route (subject to strong host model and routing metrics). **12.34.0.0** is the part of the address to compare against, and 16 is the number of bits that must match.
 
--   **As a string.**
+- **As a string.**
 
-    When Prefix is set as a string, you do not need to set the [NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routes-route-nexthopaddress.md) value.
+  When Prefix is set as a string, you do not need to set the [NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routes-route-nexthopaddress.md) value.
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -215,9 +215,9 @@ The following XML output shows how to configure the TCP/IP interfaces, including
 
 [Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)
 
- 
+ 
 
- 
+ 
 
 
 

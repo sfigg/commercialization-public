@@ -16,7 +16,7 @@ ms.topic: article
 # Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK
 
 
-This article describes how to troubleshoot problems that can occur during Windows Hardware Lab Kit (Windows HLK) Device Fundamentals Reliability testing. See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+This article describes how to troubleshoot problems that can occur during Windows Hardware Lab Kit (Windows HLK) Device Fundamentals Reliability testing. See [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 Troubleshooting Device Fundamentals Reliability tests consists of the following primary steps:
 
@@ -52,7 +52,7 @@ Device Fundamentals Reliability tests require test devices to be properly config
 ## <span id="types"></span><span id="TYPES"></span>Identify the type of test failures
 
 
-See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md#cat) in Troubleshooting Windows HLK Test Failures to identify specific types of test failures.
+See [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md#cat) in Troubleshooting Windows HLK Test Failures to identify specific types of test failures.
 
 ### <span id="Test_logs_a_failure"></span><span id="test_logs_a_failure"></span><span id="TEST_LOGS_A_FAILURE"></span>Test logs a failure
 
@@ -64,29 +64,29 @@ System bug checks are commonly seen during Device Fundamentals Reliability tests
 
 When you investigate failures that are caused by system bug checks, we highly recommend that you re-run the tests by having the test system connected to a kernel debugger. Running the tests by using the debugger causes the system to break into the debugger when the system bug-checks.
 
--   See [Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/?LinkID=299467) for information on how to setup a kernel debugger.
+- See [Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/?LinkID=299467) for information on how to setup a kernel debugger.
 
--   See [Use kernel debugging to debug Device Fundamentals Reliability test failures](use-kernel-debugging-to-debug-device-fundamentals-reliability-test-failures.md) for more information.
+- See [Use kernel debugging to debug Device Fundamentals Reliability test failures](use-kernel-debugging-to-debug-device-fundamentals-reliability-test-failures.md) for more information.
 
--   See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md#sysx) in Troubleshooting Windows HLK Test Failures for general guidance on how to troubleshoot system bug checks during Windows HLK test runs.
+- See [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md#sysx) in Troubleshooting Windows HLK Test Failures for general guidance on how to troubleshoot system bug checks during Windows HLK test runs.
 
 ### <span id="Test_hangs"></span><span id="test_hangs"></span><span id="TEST_HANGS"></span>Test hangs
 
 Test hangs frequently occur during Device Fundamentals Reliability tests. Test hangs are typically seen when I/O request packets (IRPs) (typically, I/O and PNP IRPs) become stuck in drivers and prevent the tests from progressing.
 
->[!NOTE]
->  
-Windows HLK will eventually cancel and fail a hung test so that the next scheduled test can proceed.
+> [!NOTE]
+> 
+> Windows HLK will eventually cancel and fail a hung test so that the next scheduled test can proceed.
 
- 
+ 
 
 If a test hangs, we highly recommended that you re-run the tests by having the test system connected to a kernel debugger. This allows you to break into the debugger at the time when the test hangs, and to inspect stack traces of the test process (Device Fundamentals Reliability tests typically run as **te.processhost.exe** or **te.exe**).
 
--   See [Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/?LinkID=299467) for information on how to setup a kernel debugger.
+- See [Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/?LinkID=299467) for information on how to setup a kernel debugger.
 
--   See [Use kernel debugging to debug Device Fundamentals Reliability test failures](use-kernel-debugging-to-debug-device-fundamentals-reliability-test-failures.md) for more information.
+- See [Use kernel debugging to debug Device Fundamentals Reliability test failures](use-kernel-debugging-to-debug-device-fundamentals-reliability-test-failures.md) for more information.
 
--   See [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md#toolong) in Troubleshooting Windows HLK Test Failures for general guidance on how to troubleshoot test hangs during Windows HLK test runs.
+- See [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md#toolong) in Troubleshooting Windows HLK Test Failures for general guidance on how to troubleshoot test hangs during Windows HLK test runs.
 
 ## <span id="triage"></span><span id="TRIAGE"></span>Triage test failures
 
@@ -112,7 +112,7 @@ It can be useful to collect and view WDTF traces when you troubleshoot certain t
 
 Device Fundamentals Reliability test owners at Microsoft regularly review and respond to questions posted about Device Fundamentals Test failures at the [Windows Hardware Testing and Certification Forum](http://go.microsoft.com/fwlink/?LinkID=299688). We recommend that you use this forum to get needed support.
 
-See [Windows HLK Support](..\user\windows-hlk-support.md) for information about how to open a support case for investigating test failures.
+See [Windows HLK Support](../user/windows-hlk-support.md) for information about how to open a support case for investigating test failures.
 
 ## <span id="addlts"></span><span id="ADDLTS"></span>Additional resources
 
@@ -132,42 +132,42 @@ The following table lists additional resources that can help you resolve problem
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Troubleshooting the Windows HLK Environment](..\user\troubleshooting-the-windows-hlk-environment.md)</p></td>
+<td><p><a href="..\user\troubleshooting-the-windows-hlk-environment.md" data-raw-source="[Troubleshooting the Windows HLK Environment](..\user\troubleshooting-the-windows-hlk-environment.md)">Troubleshooting the Windows HLK Environment</a></p></td>
 <td><p>General triage and troubleshooting assistance for Windows HLK infrastructure failures.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)</p></td>
+<td><p><a href="..\user\troubleshooting-windows-hlk-test-failures.md" data-raw-source="[Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)">Troubleshooting Windows HLK Test Failures</a></p></td>
 <td><p>General triage and troubleshooting guidance to investigate test failures.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Triaging WDTF-based tests](http://go.microsoft.com/fwlink/?LinkID=299602)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/?LinkID=299602" data-raw-source="[Triaging WDTF-based tests](http://go.microsoft.com/fwlink/?LinkID=299602)">Triaging WDTF-based tests</a></p></td>
 <td><p>General guidance for troubleshooting failures that are logged by WDTF-based tests.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to select and configure the Device Fundamentals tests](http://go.microsoft.com/fwlink/?LinkID=299603)</p></td>
-<td><p>Device Fundamentals Reliability tests also ship in the [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/?LinkID=256421). Driver developers might prefer to use WDK and Microsoft Visual Studio to run the failing tests to investigate test failures. This page describes how to run the tests by using the WDK.</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/?LinkID=299603" data-raw-source="[How to select and configure the Device Fundamentals tests](http://go.microsoft.com/fwlink/?LinkID=299603)">How to select and configure the Device Fundamentals tests</a></p></td>
+<td><p>Device Fundamentals Reliability tests also ship in the <a href="http://go.microsoft.com/fwlink/?LinkID=256421" data-raw-source="[Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/?LinkID=256421)">Windows Driver Kit (WDK)</a>. Driver developers might prefer to use WDK and Microsoft Visual Studio to run the failing tests to investigate test failures. This page describes how to run the tests by using the WDK.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>%ProgramFiles%\Windows Kits\8.1\Testing\Tests\Additional Tests\DeviceFundamentals.</strong>).</p></td>
 <td><p>A subset of Device Fundamentals Reliability tests are written by using VBScript. You can open these script files by using Notepad. The scripts are located in the specified folder after you install the WDK.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Troubleshooting the Device Fundamentals tests using the WDK](http://go.microsoft.com/fwlink/?LinkID=313672)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/?LinkID=313672" data-raw-source="[Troubleshooting the Device Fundamentals tests using the WDK](http://go.microsoft.com/fwlink/?LinkID=313672)">Troubleshooting the Device Fundamentals tests using the WDK</a></p></td>
 <td><p>Provides suggestions for fixing problems that you might encounter when you use the WDK to run the Device Fundamentals Tests.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Device.DevFund Tests](device-devfund-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

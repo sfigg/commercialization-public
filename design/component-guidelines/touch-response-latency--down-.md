@@ -43,9 +43,9 @@ audiotouch.exe
 **Passing criteria**
 
 Average latency recorded during the test must meet the requirement to complete with passing status.
- 
+ 
 
- 
+ 
 
 
 

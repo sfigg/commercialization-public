@@ -38,7 +38,7 @@ The target audience for this document are those working towards validating their
 | **SCSI Enclosures**                     | No                       | Yes                          | Yes         |
 | **Solutions**                           | Not Applicable           | Yes                          | Yes         |
 
- 
+ 
 
 In the future this guidance is expected to expand to cover the following device classes:
 
@@ -145,7 +145,7 @@ Minimum system requirements are as shown in the table below.
 | Operating system        | Windows Server 2016 Datacenter |
 | Active Directory domain | Join it to the test domain     |
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -184,7 +184,7 @@ Minimum system requirements are as shown in the table below.
 | Operating system             | Windows Server 2016 Datacenter |
 | Active Directory domain      | Join it to the test domain     |
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -276,7 +276,7 @@ PrivateCloudSimulator - System.Solutions.AzureStack (MIN)
 
 PrivateCloudSimulator - System.Solutions.AzureStack (MAX)
 
- 
+ 
 
 PCS actions simulate planned and unplanned activity. PCS tests are summarized below:
 
@@ -333,7 +333,7 @@ PCS actions simulate planned and unplanned activity. PCS tests are summarized be
 <strong>Note</strong>  An SDDC certified HBA is required.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -367,7 +367,7 @@ PCS actions simulate planned and unplanned activity. PCS tests are summarized be
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -446,7 +446,7 @@ ComputeNodeRestartAction
 Restart a compute node.
 ComputeNodeBugcheckAction
 Bugcheck one node of the compute cluster.
- 
+ 
 
 **Duration**
 
@@ -475,7 +475,7 @@ Bugcheck one node of the compute cluster.
 <strong>Note</strong>  An SDDC certified HBA is required.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -509,7 +509,7 @@ Bugcheck one node of the compute cluster.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -629,7 +629,7 @@ VmGuestRestartAction
 Restarts the VM.
 VmGuestFullPowerCycleAction
 Power-cycles the VM.
- 
+ 
 
 **Duration**
 
@@ -662,7 +662,7 @@ When certifying SSD's for use in Azure Stack the following is the minimum requir
 <strong>Note</strong>  An SDDC certified HBA is required.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -696,7 +696,7 @@ When certifying SSD's for use in Azure Stack the following is the minimum requir
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Hard_Disk_Drives"></span><span id="hard_disk_drives"></span><span id="HARD_DISK_DRIVES"></span>Hard Disk Drives
 
@@ -719,7 +719,7 @@ When certifying HDD's for use in Azure Stack the following is the minimum requir
 <strong>Note</strong>  An SDDC certified HBA is required.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -753,7 +753,7 @@ When certifying HDD's for use in Azure Stack the following is the minimum requir
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -848,7 +848,7 @@ StorageNodeBusResetAction
 This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful.
 StorageNodeUpdateStorageProviderCacheAction
 Calls update-storageprovidercache command in powershell
- 
+ 
 
 **Duration**
 
@@ -874,7 +874,7 @@ When certifying SAS HBA's for use in Azure Stack the following is the minimum re
 | Network Card                     | 10 GbE NIC with WS2016 Certification                                                                |
 | Switch                           | 10GbE Switch supporting all NIC features                                                            |
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -965,7 +965,7 @@ This action disables all the storage controllers in the node. All of the SCSI co
 
 This action is disabled for boot controllers
 
- 
+ 
 
 **Duration**
 
@@ -989,7 +989,7 @@ This action is disabled for boot controllers
 | Network Card                     | 10 GbE NIC with WS2016 Certification                                                                |
 | Switch                           | 10GbE Switch supporting all NIC features                                                            |
 
- 
+ 
 
 ### <span id="Setup"></span><span id="setup"></span><span id="SETUP"></span>Setup
 
@@ -1078,7 +1078,7 @@ StorageNodeBusResetAction
 This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful.
 StorageRetireAndRepairAction
 This action retires a disk from a pool and starts repair. If spaces doesn't get healthy, the action fails. The action randomly picks a pool and tries to retire a disk in the pool. If the disk is set as readonly, or it is a simple space or is used for cluster purposes (i.e. quorum resource) then the action is skipped
- 
+ 
 
 **Duration**
 
@@ -1193,7 +1193,7 @@ StorageNodeDiskIoTimeoutOnceAction
 Times out a single read or write across the storage node. This does not time out the retry attempt for this IO, so the disk will not go unresponsive.
 StorageNodeUpdateStorageProviderCacheAction
 Calls update-storageprovidercache command in PowerShell.
- 
+ 
 
 **Duration**
 
@@ -1312,7 +1312,7 @@ StorageNodeDiskIoTimeoutOnceAction
 Times out a single read or write across the storage node. This does not time out the retry attempt for this IO, so the disk will not go unresponsive.
 StorageNodeUpdateStorageProviderCacheAction
 Calls update-storageprovidercache command in PowerShell.
- 
+ 
 
 **Duration**
 
@@ -1469,7 +1469,7 @@ In ActionFailureReactionPolicy.xml, PCS supports two types of triggers and three
 | ActionFail   | ActionFullName |
 | KnownFailure | FailureHash    |
 
- 
+ 
 
 **Reaction:**
 
@@ -1479,7 +1479,7 @@ In ActionFailureReactionPolicy.xml, PCS supports two types of triggers and three
 | ClusterLogCollection | UseLocalTime, NodeScope, StorageLocation, MaxTimeDuration (optional) |
 | CustomPS             | ScriptFullPath, NodeScope, Argument                                  |
 
- 
+ 
 
 Valid NodeScope values are the following:
 
@@ -1945,11 +1945,11 @@ System.Server.AzureStack.BMC
 
 ![](images/green-check.png)
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

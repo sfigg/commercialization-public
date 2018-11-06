@@ -58,7 +58,7 @@ Some capabilities have additional dependencies, as shown in the following table.
 | Speech recognition |	`Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` |	Basic, Text-To-Speech recognition |	Recognizes voice input, used by Cortana and Windows Speech Recognition. |
 | Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package. |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
 | WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
- 
+ 
 
 ## <span id="Where_do_I_download_the_language_packs_"></span><span id="where_do_i_download_the_language_packs_"></span><span id="WHERE_DO_I_DOWNLOAD_THE_LANGUAGE_PACKS_"></span>Where do I download the language packs?
 
@@ -273,7 +273,7 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
     [Available UI Languages]
     ca-ES = 2
     es-ES = 3
-     
+     
     [Fallback Languages]
     es-ES = en-us
     ```
@@ -288,7 +288,7 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
     ```
     Reporting offline international settings.
-     
+     
     Default system UI language : es-ES
     System locale : ca-ES
     Default time zone : Romance Standard Time
@@ -296,14 +296,14 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
     Location : Spain (GEOID = 217)
     Active keyboard(s) : 0403:0000040a
     Keyboard layered driver : PC/AT Enhanced Keyboard (101/102-Key)
-     
+     
     Installed language(s): ca-ES
-      Type : Partially localized language, LIP type.
+      Type : Partially localized language, LIP type.
     Installed language(s): es-ES
-      Type : Fully localized language.
-     
+      Type : Fully localized language.
+     
     Reporting distribution languages.
-     
+     
     The default language in the distribution is:
     es-ES
     ```
@@ -337,7 +337,7 @@ Using the `SkipMachineOobe` setting in the Microsoft-Windows-Shell-Setup compone
 **Note**  
 The language-pack removal task does not remove LIPs.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -352,9 +352,9 @@ The language-pack removal task does not remove LIPs.
 
 [Default Input Locales for Windows Language Packs](default-input-locales-for-windows-language-packs.md)
 
- 
+ 
 
- 
+ 
 
 
 

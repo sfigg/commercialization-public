@@ -42,7 +42,7 @@ This method compares two **MachineSet** instances.
 
 `Public Overrides Function Equals ( _`
 
-          `obj As Object _`
+          `obj As Object _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **MachineSet** instances.
 
 `public override bool Equals (`
 
-          `Object obj`
+          `Object obj`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **MachineSet** instances.
 
 *obj*
 
-     An object to compare against this **MachineSet** object.
+     An object to compare against this **MachineSet** object.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method compares two **MachineSet** instances.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

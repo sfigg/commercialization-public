@@ -44,9 +44,9 @@ This method merges a project into an existing package. This method can only be u
 
 `Public Function Merge ( _`
 
-          `project As Project, _`
+          `project As Project, _`
 
-          `<OutAttribute> ByRef errors As StringCollection _`
+          `<OutAttribute> ByRef errors As StringCollection _`
 
 `) As Boolean`
 
@@ -54,9 +54,9 @@ This method merges a project into an existing package. This method can only be u
 
 `public bool Merge (`
 
-          `Project project,`
+          `Project project,`
 
-          `out StringCollection errors`
+          `out StringCollection errors`
 
 `)`
 
@@ -65,11 +65,11 @@ This method merges a project into an existing package. This method can only be u
 
 *project*
 
-     The project to merge into the submission package being created.
+     The project to merge into the submission package being created.
 
 *errors*
 
-     Reference to a string collection that returns error messages for merging a project.
+     Reference to a string collection that returns error messages for merging a project.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -94,9 +94,9 @@ An exception is thrown when:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

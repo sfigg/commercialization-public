@@ -50,7 +50,7 @@ Configure user settings in audit mode and then generalize the Windows installati
     > [!important]
     > There is a limit to the number of provisioned Windows Runtime-based apps that you can install. However you can create scripts to install additional non-provisioned apps. For more information, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
-     
+     
 
 3.  After your customizations are completed, insert the media that contains the CopyProfile answer file in the reference computer. For example, you can copy the answer file to a USB drive.
 
@@ -72,7 +72,7 @@ After the customized image is deployed to a destination computer, you can test t
 > [!important]
 > Apps based on the Windows Runtime won't start in audit mode because audit mode uses the built-in administrator account. To run Windows Runtime-based apps you must modify a registry key before you can validate your Windows installation in audit mode.
 
- 
+ 
 
 **To test the user profile customizations after OOBE**
 
@@ -122,7 +122,7 @@ If the user profile settings aren't successfully copied:
         > [!note]
         > Delete all other user accounts on the computer before you customize the built-in administrator account.
 
-     
+     
 
 5.  Make sure that non-provisioned Windows Runtime-based apps that are stored in the tile layout are installed within two hours of user logon to preserve the tile layout on the **Start** screen, when apps are registered after the new user first logs on.
 
@@ -143,9 +143,9 @@ If the user profile settings aren't successfully copied:
 
 [Sysprep Command-Line Options](sysprep-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

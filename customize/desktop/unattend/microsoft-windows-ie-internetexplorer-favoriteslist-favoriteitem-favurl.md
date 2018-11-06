@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Url</em></p></td>
-<td><p>Specifies the fully qualified path that begins with the <strong>http://</strong> prefix to the URL of each [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md). <em>Url</em> is a string.</p></td>
+<td><p>Specifies the fully qualified path that begins with the <strong>http://</strong> prefix to the URL of each <a href="microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md" data-raw-source="[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)">FavoriteItem</a>. <em>Url</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -84,9 +84,9 @@ The following XML output specifies how to configure favorites.
 
 [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

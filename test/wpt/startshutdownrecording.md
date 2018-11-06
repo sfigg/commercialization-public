@@ -78,16 +78,16 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IOnOffTransitionManager](ionofftransitionmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

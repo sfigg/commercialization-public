@@ -29,73 +29,73 @@ This section describes the tasks that you must complete before you test a Web Se
 
 The following hardware is required for testing WSD compliance. Additional hardware may be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine whether there are additional hardware requirements.
 
--   Basic Windows HLK test setup (Controller and Studio). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md).
+- Basic Windows HLK test setup (Controller and Studio). See [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md).
 
--   Two test computers. For testing networking capabilities, the computer that the WDS-compliant device test device is physically attached to is referred to as the System Under Test (SUT) computer and the other computer is referred to as the support computer.
+- Two test computers. For testing networking capabilities, the computer that the WDS-compliant device test device is physically attached to is referred to as the System Under Test (SUT) computer and the other computer is referred to as the support computer.
 
-    >[!NOTE]
-    >  
-    All computers must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+  > [!NOTE]
+  > 
+  > All computers must meet the Windows HLK requirements. For more information, see [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md).
 
-     
+     
 
--   One WDS-compliant device to be tested.
+- One WDS-compliant device to be tested.
 
--   One wireless network card that supports SoftAP (for example, a D-Link WDA-1320 Desktop Adapter) and a Wireless router if the test printer includes wireless networking capabilities.
+- One wireless network card that supports SoftAP (for example, a D-Link WDA-1320 Desktop Adapter) and a Wireless router if the test printer includes wireless networking capabilities.
 
--   One stand-alone network adapter (if the test computer does not include an integrated network adapter) and an Ethernet hub or switch if the test scanner includes network printing capabilities.
+- One stand-alone network adapter (if the test computer does not include an integrated network adapter) and an Ethernet hub or switch if the test scanner includes network printing capabilities.
 
--   One USB cable and one USB 3.0 hub for testing a device that includes support for USB 3.0 or a USB 2.0 hub for testing a device that supports USB 2.0.
+- One USB cable and one USB 3.0 hub for testing a device that includes support for USB 3.0 or a USB 2.0 hub for testing a device that supports USB 2.0.
 
->[!NOTE]
->  
-Testing a device for Server Device certification requires that the system that is being used to test the device supports four processors and a minimum of 1 GB of RAM. These system capabilities are required for testing the device and driver for their Rebalance, D3 State and Multiple Processor Group functionality. You do not need a computer that has more than 64 processors to test your device.
+> [!NOTE]
+> 
+> Testing a device for Server Device certification requires that the system that is being used to test the device supports four processors and a minimum of 1 GB of RAM. These system capabilities are required for testing the device and driver for their Rebalance, D3 State and Multiple Processor Group functionality. You do not need a computer that has more than 64 processors to test your device.
 
 If a pool of test computers is used to test devices, at least one computer in the pool must contain four processors and a minimum of 1 GB of RAM. Additionally, that computer must contain the device and driver that is being tested. As long as the driver is the same on all computers in the pool, the test will be created to run against all computers.
 
 For those tests that do not include a driver to test, such as testing a hard disk drive, the Windows HLK scheduler will require the tests that validate the device's and driver's Rebalance, D3 State and Multiple Processor Groups functionality to run on the default computer. This computer should also be manually configured to have multiple processor groups. The default computer is the first computer listed. Test personnel, in this case, should ensure that this first computer meets these minimum hardware requirements.
 
->[!NOTE]
->  
-Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), physical devices and their associated drivers being tested for a server certification or signature may not be tested in virtual machines using any form of virtualization. This is because not all virtualization products support the underlying functionality that is required to pass the tests that relate to Multiple Processor Groups, Device Power Management, Device PCI functionality, and so on.
-
->[!NOTE]
+> [!NOTE]
+> 
+> Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), physical devices and their associated drivers being tested for a server certification or signature may not be tested in virtual machines using any form of virtualization. This is because not all virtualization products support the underlying functionality that is required to pass the tests that relate to Multiple Processor Groups, Device Power Management, Device PCI functionality, and so on.
+> 
+> [!NOTE]
 >  Multiple Processor Groups Setting
->You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
->
->The commands for adding the group settings and restarting are as follows:
->
-``` syntax
-bcdedit.exe /set groupsize 2
-bcdedit.exe /set groupaware on
-shutdown.exe -r -t 0 -f
-```
->
->
->The commands for removing the group settings and rebooting are as follows:
->
-``` syntax
-bcdedit.exe /deletevalue groupsize
-bcdedit.exe /deletevalue groupaware
-shutdown.exe -r -t 0 -f
-```
->
+> You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
+> 
+> The commands for adding the group settings and restarting are as follows:
+> 
+> ``` syntax
+> bcdedit.exe /set groupsize 2
+> bcdedit.exe /set groupaware on
+> shutdown.exe -r -t 0 -f
+> ```
+> 
+> 
+> The commands for removing the group settings and rebooting are as follows:
+> 
+> ``` syntax
+> bcdedit.exe /deletevalue groupsize
+> bcdedit.exe /deletevalue groupaware
+> shutdown.exe -r -t 0 -f
+> ```
+> 
+> 
+> [!NOTE]
+> 
+> **Code Integrity Setting**
+> 
+> The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
+> 
+> Once that has occurred, the following Registry key must be created and set:
+> 
+> ``` syntax
+> HKLM\System\CurrentControlSet\Control\DeviceGuard
+> HypervisorEnforcedCodeIntegrity:REG_DWORD
+> 0 or 1 (disabled, enabled)
+> ```
 
->[!NOTE]
->  
-**Code Integrity Setting**
-
->The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
->
->Once that has occurred, the following Registry key must be created and set:
->
-``` syntax
-HKLM\System\CurrentControlSet\Control\DeviceGuard
-HypervisorEnforcedCodeIntegrity:REG_DWORD
-0 or 1 (disabled, enabled)
-```
-
- 
+ 
 
 ## <span id="BKMK_HCK_WSD_sR"></span><span id="bkmk-hck-wsd-sr"></span><span id="BKMK_HCK_WSD_SR"></span>Software requirements
 
@@ -146,9 +146,9 @@ To manually add a feature, follow these steps:
 
 4.  Select the **Device.Connectivity.PnPX** or **Device.Connectivity.VerticalPairing** feature.
 
- 
+ 
 
- 
+ 
 
 
 

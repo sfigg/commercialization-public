@@ -53,9 +53,9 @@ a. One of the weighted contacts from the [Device Click Pressure](device-click-pr
 
 -   1/1 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

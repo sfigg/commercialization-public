@@ -151,14 +151,14 @@ Beginning with Windows 10 Mobile, this customization is no longer necessary as 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
 <a href="" id="instructions-"></a>**Instructions:**  
 **Note**  The following instructions have been provided for backwards compatibility only. You may set the values for the `TimeZonePriority` settings, but the OS will ignore the values as a location-based timezone detection service is used instead.
 
- 
+ 
 
 1.  Create a customization answer file using the contents shown in the following code sample.
 

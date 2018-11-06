@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 Windows Setup does not support using any other unattended Setup settings during upgrades. When you upgrade from an earlier version of Windows, you must create an answer file that includes only the Windows-Setup\\UpgradeData settings. Then, you must use either the Windows product DVD or the System Preparation (sysprep) tool to upgrade Windows.
 
- 
+ 
 
 ## Values
 
@@ -45,12 +45,12 @@ Windows Setup does not support using any other unattended Setup settings during 
 <tr class="odd">
 <td><p><strong>Never</strong></p></td>
 <td><p>Specifies that the UI is never displayed for this item.</p>
-<p><code>WillShowUI</code> only prevents Windows Setup UI pages from being displayed. If a critical error occurs, an error message might be displayed. To avoid displaying the error message, you can use the ErrorHandler.cmd file to automatically run a script to handle the error. For more information about ErrorHandler.cmd, see [Add a custom script to Windows Setup](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup).</p></td>
+<p><code>WillShowUI</code> only prevents Windows Setup UI pages from being displayed. If a critical error occurs, an error message might be displayed. To avoid displaying the error message, you can use the ErrorHandler.cmd file to automatically run a script to handle the error. For more information about ErrorHandler.cmd, see <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup" data-raw-source="[Add a custom script to Windows Setup](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup)">Add a custom script to Windows Setup</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -86,9 +86,9 @@ The following XML output shows how to set an upgrade installation to run in guar
 
 [UpgradeData](microsoft-windows-setup-upgradedata.md)
 
- 
+ 
 
- 
+ 
 
 
 

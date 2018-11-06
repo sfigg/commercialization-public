@@ -57,7 +57,7 @@ xperf [-start [LoggerName] [ProfileFileName!ProfileName|SessionName]|-update [Lo
 </tr>
 <tr class="odd">
 <td><p><strong>-on</strong> <em>Flags|Groups</em></p></td>
-<td><p>For kernel logging sessions, the sequence of kernel flags and groups to be enabled, separated by plus signs (+). For user logging sessions, the sequence of providers to be enabled, separated by plus signs (+). The accepted provider format is <code>(GUID|KnownProviderName)[:Flags[:Level]]</code>. See [providers](providers-wpa.md) for a list of valid flags.</p></td>
+<td><p>For kernel logging sessions, the sequence of kernel flags and groups to be enabled, separated by plus signs (+). For user logging sessions, the sequence of providers to be enabled, separated by plus signs (+). The accepted provider format is <code>(GUID|KnownProviderName)[:Flags[:Level]]</code>. See <a href="providers-wpa.md" data-raw-source="[providers](providers-wpa.md)">providers</a> for a list of valid flags.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>-f</strong> <em>filename</em></p></td>
@@ -104,8 +104,8 @@ xperf [-start [LoggerName] [ProfileFileName!ProfileName|SessionName]|-update [Lo
 <td><p>Sets the clock type. The default is &quot;PerfCounter&quot;. Possible types: &quot;Cycle&quot;, &quot;PerfCounter&quot;, and &quot;SystemTime&quot;.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>-stackwalk</strong> <em>flags|@file</em></p></td>
-<td><p>Enables stack walking for the events specified as <code>Flag+...</code>, or parses the <em>file</em> File for flags. For more information, see [stackwalk](stackwalk.md).</p></td>
+<td><p><strong>-stackwalk</strong> <em>flags|<xref href="file" data-throw-if-not-resolved="False" data-raw-source="@file"></xref></em></p></td>
+<td><p>Enables stack walking for the events specified as <code>Flag+...</code>, or parses the <em>file</em> File for flags. For more information, see <a href="stackwalk.md" data-raw-source="[stackwalk](stackwalk.md)">stackwalk</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>-pids</strong> <em>pid [...]</em></p></td>
@@ -150,7 +150,7 @@ xperf [-start [LoggerName] [ProfileFileName!ProfileName|SessionName]|-update [Lo
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -162,9 +162,9 @@ Multiple loggers can be started using multiple start options, each followed by t
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

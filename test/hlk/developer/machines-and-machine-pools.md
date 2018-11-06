@@ -22,11 +22,11 @@ The **Machine.Status** property indicates whether a computer is available for te
 
 The **MachinePool** class represents a logical grouping of zero or more computers, and it represents WTT **ResourcePool** objects that WTT uses natively for scheduling and testing. Machine pools are hierarchical (that is, a machine pool can have child machine pools). A machine pool doesn't represent any physical computers.
 
->[!NOTE]
->  
-The **ProductInstance.MachinePool** property is **null** for product instances loaded via Package Manager (.
+> [!NOTE]
+> 
+> The **ProductInstance.MachinePool** property is **null** for product instances loaded via Package Manager (.
 
- 
+ 
 
 These common machine pools are in every controller:
 
@@ -38,9 +38,9 @@ These common machine pools are in every controller:
 
 When you delete a machine pool, the deletion operates recursively. All computers in the affected pool are moved to the default pool. Deleting a machine pool doesn't affect results or logs. When you delete a computer, all corresponding test results and history are deleted, and logs are orphaned.
 
- 
+ 
 
- 
+ 
 
 
 

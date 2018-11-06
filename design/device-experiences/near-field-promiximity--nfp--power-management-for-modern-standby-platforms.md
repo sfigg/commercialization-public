@@ -82,13 +82,13 @@ The following table describes the device power modes for an NFP device.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 -   In the preceding table, the term *standby* refers to a device power mode that is distinct from *modern standby*, which is a platform-wide power state.
 -   In the preceding table, the term *D3 IRP* refers to an IRP\_MN\_SET\_POWER request of type **DevicePowerState**.
 
- 
+ 
 
 The specified power consumption of an NFP device in standby mode will vary by part number and manufacturer. System designers should work with the device vendor to understand the device-specific standby power consumption. If the power consumption in standby mode is more than one milliwatt, the NFP device should be attached to a switchable power rail so that the device can be put in power-removed mode during modern standby.
 
@@ -194,9 +194,9 @@ System integrators and NFP vendors should review the checklist below to verify t
     -   If the NFP device requires a power-on delay before the driver can access it, encode this delay in the implementation of the \_ON control method.
 -   Initiate multiple transitions into and out of modern standby, and then stress-test the operation of the NFP device when the display is turned on.
 
- 
+ 
 
- 
+ 
 
 
 

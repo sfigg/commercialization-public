@@ -25,7 +25,7 @@ ms.topic: article
 
 -   The value for Key is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress.md) element. The attribute wcm:keyValue is used to identify multiple IP address list items. For example, you can specify three different IP addresses by using the Key values of Ip1, Ip2, and Ip3.
 
- 
+ 
 
 ## Value
 
@@ -43,7 +43,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output specifies the name of the IP address as "Ip1".
 
 [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

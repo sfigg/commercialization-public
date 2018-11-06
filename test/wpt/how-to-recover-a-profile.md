@@ -32,9 +32,9 @@ This helps you recover the information you forgot to save, but also allows you t
 
 [How to Save a Preset](how-to-save-a-preset.md)
 
- 
+ 
 
- 
+ 
 
 
 

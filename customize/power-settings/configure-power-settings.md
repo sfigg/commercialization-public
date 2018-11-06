@@ -113,51 +113,51 @@ You can use the powercfg.exe tool to control power schemes by providing the GUID
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Adaptive hibernate](adaptive-hibernate.md)</p></td>
+<td><p><a href="adaptive-hibernate.md" data-raw-source="[Adaptive hibernate](adaptive-hibernate.md)">Adaptive hibernate</a></p></td>
 <td><p>Adaptive hibernate supports triggers which eliminate resume to a dead battery, and provide a great Modern Standby experience by ensuring that the system remains in CS for as long as possible.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Power controls](power-controls.md)</p></td>
-<td><p>Settings in this subgroup include settings that control the system's power and behavior.</p></td>
+<td><p><a href="power-controls.md" data-raw-source="[Power controls](power-controls.md)">Power controls</a></p></td>
+<td><p>Settings in this subgroup include settings that control the system&#39;s power and behavior.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Processor power management options](configure-processor-power-management-options.md)</p></td>
-<td><p>The Windows 10 processor power management (PPM) algorithms implement OS-level functionality that allows the OS to efficiently use the available processing resources on a platform by balancing the user's expectations of performance and energy efficiency.</p></td>
+<td><p><a href="configure-processor-power-management-options.md" data-raw-source="[Processor power management options](configure-processor-power-management-options.md)">Processor power management options</a></p></td>
+<td><p>The Windows 10 processor power management (PPM) algorithms implement OS-level functionality that allows the OS to efficiently use the available processing resources on a platform by balancing the user&#39;s expectations of performance and energy efficiency.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Battery settings](battery-settings.md)</p></td>
+<td><p><a href="battery-settings.md" data-raw-source="[Battery settings](battery-settings.md)">Battery settings</a></p></td>
 <td><p>Settings in this subgroup control the customization of battery actions and thresholds.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Power button and lid settings](power-button-and-lid-settings.md)</p></td>
+<td><p><a href="power-button-and-lid-settings.md" data-raw-source="[Power button and lid settings](power-button-and-lid-settings.md)">Power button and lid settings</a></p></td>
 <td><p>Settings in this subgroup control the customization of system button actions.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Display settings](display-settings.md)</p></td>
+<td><p><a href="display-settings.md" data-raw-source="[Display settings](display-settings.md)">Display settings</a></p></td>
 <td><p>Settings in this subgroup control the power management of the display.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Disk settings](disk-settings.md)</p></td>
+<td><p><a href="disk-settings.md" data-raw-source="[Disk settings](disk-settings.md)">Disk settings</a></p></td>
 <td><p>Settings in this subgroup control the power management of disk devices.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Energy Saver settings](energy-saver-settings.md)</p></td>
+<td><p><a href="energy-saver-settings.md" data-raw-source="[Energy Saver settings](energy-saver-settings.md)">Energy Saver settings</a></p></td>
 <td><p>Settings in this subgroup control the battery threshold and brightness when Energy Saver is turned on.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PCI Express settings](pci-express-settings.md)</p></td>
+<td><p><a href="pci-express-settings.md" data-raw-source="[PCI Express settings](pci-express-settings.md)">PCI Express settings</a></p></td>
 <td><p>Settings in this subgroup control the power management of PCI Express links.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Sleep settings](sleep-settings.md)</p></td>
+<td><p><a href="sleep-settings.md" data-raw-source="[Sleep settings](sleep-settings.md)">Sleep settings</a></p></td>
 <td><p>Settings in this subgroup control sleep, resume, and other related functionality.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Other power settings](no-subgroup-settings.md)</p></td>
+<td><p><a href="no-subgroup-settings.md" data-raw-source="[Other power settings](no-subgroup-settings.md)">Other power settings</a></p></td>
 <td><p>Settings in this subgroup do not belong to any other subgroup.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Legacy configuration options](legacy-configuration-options.md)</p></td>
+<td><p><a href="legacy-configuration-options.md" data-raw-source="[Legacy configuration options](legacy-configuration-options.md)">Legacy configuration options</a></p></td>
 <td></td>
 </tr>
 </tbody>

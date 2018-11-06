@@ -141,9 +141,9 @@ When WPA opens a recording, WPA looks for a folder that has the same name as the
 
 [Common In-Depth Analysis Issues](../assessments/common-in-depth-analysis-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

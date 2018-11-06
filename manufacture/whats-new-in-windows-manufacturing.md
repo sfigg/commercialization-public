@@ -242,25 +242,25 @@ By default, in Windows 10, version 1607, the built-in administrator account is n
 Added [features for Windows 10, version 1607](iot/iot-core-feature-list.md) 
 Features: 
    
-   - IOT_UNIFIED_WRITE_FILTER – Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes.
+- IOT_UNIFIED_WRITE_FILTER – Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes.
    
-   - IOT_GENERIC_POP – Adds the Generic device targeting info for OS only Updates. 
+- IOT_GENERIC_POP – Adds the Generic device targeting info for OS only Updates. 
    
-   - IOT_NANORDPSERVER – Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
+- IOT_NANORDPSERVER – Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
    
-   - IOT_SHELL_HOTKEY_SUPPORT – Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)]
+- IOT_SHELL_HOTKEY_SUPPORT – Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)]
    
-   - IOT_POWER_SETTINGS – (Renamed from IOT_POWER_SETIINGS)
+- IOT_POWER_SETTINGS – (Renamed from IOT_POWER_SETIINGS)
    
-   - IOT_ENABLE_ADMIN - Test feature
+- IOT_ENABLE_ADMIN - Test feature
    
-   Languages: 
+  Languages: 
    
-   -  IOT_SPEECHDATA_JA_JP: Adds speech data for Japanese
+- IOT_SPEECHDATA_JA_JP: Adds speech data for Japanese
    
-   -  IOT_SPEECHDATA_ZH_HK: Adds speech data for Chinese (Hong Kong S.A.R.)
+- IOT_SPEECHDATA_ZH_HK: Adds speech data for Chinese (Hong Kong S.A.R.)
    
-   -  IOT_SPEECHDATA_ZH_TW: Adds speech data for Chinese (Taiwan)
+- IOT_SPEECHDATA_ZH_TW: Adds speech data for Chinese (Taiwan)
    
 
 **June 28, 2016**

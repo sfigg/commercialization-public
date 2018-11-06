@@ -34,7 +34,7 @@ Here's a table of the HID-specific error messages related to the Windows Touchsc
 | 21           | Invalid actual count.            |
 | 22           | Invalid confidence.              |
 
- 
+ 
 
 This section provides information to help explain the error messages a bit further.
 
@@ -110,9 +110,9 @@ The device does not support the *Actual Count* usage in its descriptor.
 
 The confidence switch was not set (and the test was not the confidence test).
 
- 
+ 
 
- 
+ 
 
 
 

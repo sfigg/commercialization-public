@@ -25,7 +25,7 @@ On Windows 7 and Windows Vista, stackwalking on x64 systems requires that you 
 
 **Note**  Systems with Windows 8 and higher do not need this registry change.
 
- 
+ 
 
 The following example shows how to query for this registry value.
 
@@ -43,7 +43,7 @@ The following example shows how to enable stackwalking.
 **Note**  
 To make these changes effective, you must restart the system.
 
- 
+ 
 
 The following example shows how to disable stackwalking.
 
@@ -55,7 +55,7 @@ The following example shows how to disable stackwalking.
 **Note**  
 To make these changes effective, you must restart the system.
 
- 
+ 
 
 ## In This Section
 
@@ -75,9 +75,9 @@ To make these changes effective, you must restart the system.
 
 [Windows Performance Toolkit Technical Reference](windows-performance-toolkit-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -64,9 +64,9 @@ Otherwise, upon successful validation, manually pass the iteration otherwise. If
 
 -   2/2 (100%) iterations must pass in order to complete with passing status
 
- 
+ 
 
- 
+ 
 
 
 

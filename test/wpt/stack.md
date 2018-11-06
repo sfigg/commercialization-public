@@ -26,16 +26,16 @@ This action produces a text file that summarizes metrics related to stacks.
 ## Options
 
 
-<a href="" id="-butterfly-n-"></a>**-butterfly***\[n\]*  
+<a href="" id="-butterfly-n-"></a>**-butterfly**<em>\[n\]</em>  
 Displays the butterfly view of stacks in this trace, including only symbols that have at least &lt;*min\_hits*&gt; hits, whether every occurrence is counted or only the first occurrence. The default value of *min\_hits* is 10.
 
 <a href="" id="-ranget1-t2"></a>**-range***T1 T2*  
 Limits the report to the interval `[lo, hi]`. The default value of *T1* is zero. The default value of *T2* is `_I64_MAX`.
 
-<a href="" id="-pid-pid-"></a>**-pid***&lt;pid&gt;*  
+<a href="" id="-pid-pid-"></a>**-pid**<em>&lt;pid&gt;</em>  
 Includes only stacks from processes with matching process identifiers.
 
-<a href="" id="-tid-tid-"></a>**-tid***&lt;tid&gt;*  
+<a href="" id="-tid-tid-"></a>**-tid**<em>&lt;tid&gt;</em>  
 Includes only stacks from threads with matching thread identifiers.
 
 <a href="" id="-processregex1-regex2---regexn"></a>**-process***RegEx1 RegEx2 … RegExN*  
@@ -54,9 +54,9 @@ Includes only stacks for events that match the provided ATL regular expression(s
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

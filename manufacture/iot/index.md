@@ -37,36 +37,36 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>[What's new in IoT Manufacturing](whats-new-in-manufacturing.md)</p></td>
-<td align="left"><p>Find out what we've been working on.</p></td>
+<td align="left"><p><a href="whats-new-in-manufacturing.md" data-raw-source="[What&#39;s new in IoT Manufacturing](whats-new-in-manufacturing.md)">What&#39;s new in IoT Manufacturing</a></p></td>
+<td align="left"><p>Find out what we&#39;ve been working on.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)</p></td>
+<td align="left"><p><a href="iot-core-manufacturing-guide.md" data-raw-source="[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)">IoT Core manufacturing guides</a></p></td>
 <td align="left"><p>This guide walks you through creating IoT Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IoT Core feature list](iot-core-feature-list.md)</p></td>
-<td align="left"><p>Here's the features you can add to IoT Core images.</p></td>
+<td align="left"><p><a href="iot-core-feature-list.md" data-raw-source="[IoT Core feature list](iot-core-feature-list.md)">IoT Core feature list</a></p></td>
+<td align="left"><p>Here&#39;s the features you can add to IoT Core images.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows ADK IoT Core Add-ons contents](iot-core-adk-addons.md)</p></td>
-<td align="left"><p>The [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.</p></td>
+<td align="left"><p><a href="iot-core-adk-addons.md" data-raw-source="[Windows ADK IoT Core Add-ons contents](iot-core-adk-addons.md)">Windows ADK IoT Core Add-ons contents</a></p></td>
+<td align="left"><p>The <a href="http://go.microsoft.com/fwlink/?LinkId=735028" data-raw-source="[IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028)">IoT Core ADK Add-Ons</a> include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)</p></td>
-<td align="left"><p>These tools are part of the [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \Tools folder. To learn more about these tools, see [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).</p></td>
+<td align="left"><p><a href="iot-core-adk-addons-command-line-options.md" data-raw-source="[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)">IoT Core Add-ons Powershell Commands</a></p></td>
+<td align="left"><p>These tools are part of the <a href="http://go.microsoft.com/fwlink/?LinkId=735028" data-raw-source="[IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028)">IoT Core ADK Add-Ons</a>, in the \Tools folder. To learn more about these tools, see <a href="iot-core-adk-addons.md" data-raw-source="[Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)">Windows ADK IoT Core Add-ons</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 [Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/explore/iotcore)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
- 
+ 
 
- 
+ 

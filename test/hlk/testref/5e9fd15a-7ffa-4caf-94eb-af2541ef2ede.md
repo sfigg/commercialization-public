@@ -59,6 +59,7 @@ The named-pipe operations that the test evaluates include the following:
 The test selects each state in random order and calls each action in random order. If any action moves the pipe away from the current state, the test brings it back to the current state.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Filter.Driver.FileSystem.MiniFilter</li><li>Filter.Driver.AntiVirus.MiniFilter</li><li>Filter.Driver.FileSystem.NamedPipeAndMailSlots</li><li>Filter.Driver.AntiVirus.NamedPipeAndMailSlots</li></ul> |  
@@ -71,7 +72,7 @@ The test selects each state in random order and calls each action in random orde
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -96,7 +97,7 @@ To run this test, follow these steps:
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting File System Testing](troubleshooting-file-system-testing.md).
 
@@ -138,7 +139,7 @@ This test accepts a single parameter that indicates the server host name.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -147,11 +148,11 @@ This test accepts a single parameter that indicates the server host name.
 | **LLU\_LclAdminUser**  | LLU for Execute       |
 | **LLU\_NetAccessOnly** | LLU for Copy          |
 
- 
 
- 
 
- 
+
+
+
 
 
 

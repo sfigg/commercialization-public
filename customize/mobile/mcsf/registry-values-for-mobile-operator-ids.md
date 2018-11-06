@@ -23,7 +23,7 @@ The following table contains the values to use for the mobile operator registry 
 **Note**  
 Although these mobile operator identifiers have been assigned, not all mobile operators in the table may be valid at this time. If you need to request for a new MOID, see [Requests for a new MOID](#newmoidrequest).
 
- 
+ 
 
 <table>
 <colgroup>
@@ -963,25 +963,25 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 <td><p><strong>KOZ-CI</strong></p></td>
 <td><p>Comium Ivory Coast Inc</p></td>
 <td><p>KoZ</p></td>
-<td><p>Côte d'Ivoire</p></td>
+<td><p>Côte d&#39;Ivoire</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MOO-CI</strong></p></td>
-<td><p>Atlantique Telecom Cote d'Ivoire</p></td>
+<td><p>Atlantique Telecom Cote d&#39;Ivoire</p></td>
 <td><p>Moov</p></td>
-<td><p>Côte d'Ivoire</p></td>
+<td><p>Côte d&#39;Ivoire</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MTN-CI</strong></p></td>
 <td><p>MTN CÔTE D’IVOIRE S.A.</p></td>
 <td><p>MTN</p></td>
-<td><p>Côte d'Ivoire</p></td>
+<td><p>Côte d&#39;Ivoire</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ORG-CI</strong></p></td>
 <td><p>Orange CI</p></td>
 <td><p>Orange CI</p></td>
-<td><p>Côte d'Ivoire</p></td>
+<td><p>Côte d&#39;Ivoire</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BON-HR</strong></p></td>
@@ -1537,7 +1537,7 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 </tr>
 <tr class="even">
 <td><p><strong>VOI-HT</strong></p></td>
-<td><p>Communication Cellulaire d'Haiti SA</p></td>
+<td><p>Communication Cellulaire d&#39;Haiti SA</p></td>
 <td><p>Comcel</p></td>
 <td><p>Haiti</p></td>
 </tr>
@@ -1946,7 +1946,7 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 <tr class="even">
 <td><p><strong>KCE-KZ</strong></p></td>
 <td><p>GSM Kazakhstan Ltd</p></td>
-<td><p>K'CELL</p></td>
+<td><p>K&#39;CELL</p></td>
 <td><p>Kazakhstan</p></td>
 </tr>
 <tr class="odd">
@@ -4429,7 +4429,7 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 </tr>
 <tr class="even">
 <td><p><strong>UZB-UZ</strong></p></td>
-<td><p>FE 'Uzdunrobita' Ltd</p></td>
+<td><p>FE &#39;Uzdunrobita&#39; Ltd</p></td>
 <td><p>Uzdunrobita GSM</p></td>
 <td><p>Uzbekistan</p></td>
 </tr>
@@ -4543,8 +4543,8 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 </tr>
 <tr class="odd">
 <td><p><strong>NET-ZW</strong></p></td>
-<td><p>Net*One Cellular (Pvt) Ltd</p></td>
-<td><p>Net*One Cellular</p></td>
+<td><p>Net<em>One Cellular (Pvt) Ltd</p></td>
+<td><p>Net</em>One Cellular</p></td>
 <td><p>Zimbabwe</p></td>
 </tr>
 <tr class="even">
@@ -4556,7 +4556,7 @@ Although these mobile operator identifiers have been assigned, not all mobile op
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="newmoidrequest"></a>Requests for a new MOID
 

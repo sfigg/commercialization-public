@@ -46,13 +46,15 @@ If an update fails or has to be rolled back, a failure.cmd script can be used to
 
 The following table shows the folder path structure of files for running custom actions:
 
-|      Run (Scripts will be migrated)                                           | Run Once (scripts won't be migrated)     |   
-| ------------------------------------------------------------ | ---------------------------------------------------------------- | 
-| %windir%\System32\update\run\\\<GUID>\preinstall.cmd         | %windir%\System32\update\runonce\\\<GUID>\preinstall.cmd         |                             
-| %windir%\System32\update\run\\\<GUID>\precommit.cmd          | %windir%\System32\update\runonce\\\<GUID>\precommit.cmd          |                             
-| %windir%\System32\update\run\\\<GUID>\failure.cmd            | %windir%\System32\update\runonce\\\<GUID>\failure.cmd            |                             
-| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.inf | %windir%\System32\update\runonce\\\<GUID>\reflectdrivers\example2.inf |                          
-| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.sys | %windir%\System32\update\run\\\<GUID>\reflectdrivers\example2.sys |                           
+
+|                  Run (Scripts will be migrated)                   |                 Run Once (scripts won't be migrated)                  |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------|
+|       %windir%\System32\update\run\\\<GUID>\preinstall.cmd        |       %windir%\System32\update\runonce\\\<GUID>\preinstall.cmd        |
+|        %windir%\System32\update\run\\\<GUID>\precommit.cmd        |        %windir%\System32\update\runonce\\\<GUID>\precommit.cmd        |
+|         %windir%\System32\update\run\\\<GUID>\failure.cmd         |         %windir%\System32\update\runonce\\\<GUID>\failure.cmd         |
+| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.inf | %windir%\System32\update\runonce\\\<GUID>\reflectdrivers\example2.inf |
+| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.sys |   %windir%\System32\update\run\\\<GUID>\reflectdrivers\example2.sys   |
+
 ### Example file paths and names
 
 | Scenarios                      | File location examples                                                               |

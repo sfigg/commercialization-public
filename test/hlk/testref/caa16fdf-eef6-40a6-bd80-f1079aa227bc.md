@@ -15,13 +15,14 @@ ms.topic: article
 
 # <span id="p_hlk_test.caa16fdf-eef6-40a6-bd80-f1079aa227bc"></span>Windows Touch Response Latency (Down) Test (System)
 
->[!NOTE]
->  
-This is a system-specific implementation of an existing test. For more information on this manual test, see [Windows Touch Response Latency (Down) Test](2ab4ddd6-e2e8-4e28-8bcc-2fe4eda21e31.md).
+> [!NOTE]
+> 
+> This is a system-specific implementation of an existing test. For more information on this manual test, see [Windows Touch Response Latency (Down) Test](2ab4ddd6-e2e8-4e28-8bcc-2fe4eda21e31.md).
 
- 
+
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.Digitizer.Touch.Latency</li></ul> |  
@@ -34,7 +35,7 @@ This is a system-specific implementation of an existing test. For more informati
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -51,13 +52,13 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md) and **Troubleshooting Device Digitizer Testing**.
 
- 
 
- 
+
+
 
 
 

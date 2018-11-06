@@ -43,9 +43,9 @@ This guide consists of the following exercises.
 
 -   [Exercise 4 - Use MXA to Analyze Audio Glitches](optimizing-windows-devices-for-multimedia-experiences-exercise-4.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -64,9 +64,9 @@ After the MMOS image definition is complete, the image can be flashed to the dev
 
 8.  The device will reboot into MMOS. The display on the device will show a small rotating graphic.
 
- 
+ 
 
- 
+ 
 
 
 

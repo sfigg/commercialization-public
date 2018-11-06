@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following XML output specifies that the Allow list is not checked and enforc
 
 [Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider.md)
 
- 
+ 
 
- 
+ 
 
 
 

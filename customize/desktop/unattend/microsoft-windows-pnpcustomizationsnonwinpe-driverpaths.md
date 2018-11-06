@@ -23,7 +23,7 @@ ms.topic: article
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) | Specifies the local or Universal Naming Convention (UNC) path to the out-of-box drivers and the [Credentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials.md) (optional) used to access them. |
- 
+ 
 ## Valid Configuration Passes
 
 auditSystem

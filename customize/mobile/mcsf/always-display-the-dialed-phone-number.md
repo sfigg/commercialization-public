@@ -72,7 +72,7 @@ OEMs can change the default behavior so that the number that's displayed in the 
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator partner to test this customization on their network.

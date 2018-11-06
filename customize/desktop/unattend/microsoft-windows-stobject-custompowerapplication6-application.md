@@ -31,14 +31,14 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the full path and the executable file name for [CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md). For example,</p>
+<td><p>Specifies the full path and the executable file name for <a href="microsoft-windows-stobject-custompowerapplication6.md" data-raw-source="[CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md)">CustomPowerApplication6</a>. For example,</p>
 <pre class="syntax" space="preserve"><code>%ProgramFiles%\CustomPower\Application.exe</code></pre>
 <p><em>Path</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -66,10 +66,10 @@ The following XML output shows `CustomPowerApplication6` Application.exe with `p
 
 ```
 <CustomPowerApplication6>
-   <Application>%ProgramFiles%\CustomPower\Application.exe</Application>
-   <IconID>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</IconID>
-   <ItemName>%ProgramFiles%\Microsoft Shared\Resource.dll,-100</ItemName>
-   <Parameters>-param</Parameters>
+   <Application>%ProgramFiles%\CustomPower\Application.exe</Application>
+   <IconID>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</IconID>
+   <ItemName>%ProgramFiles%\Microsoft Shared\Resource.dll,-100</ItemName>
+   <Parameters>-param</Parameters>
 </CustomPowerApplication6>
 ```
 
@@ -78,9 +78,9 @@ The following XML output shows `CustomPowerApplication6` Application.exe with `p
 
 [CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md)
 
- 
+ 
 
- 
+ 
 
 
 

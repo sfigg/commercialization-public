@@ -251,7 +251,7 @@ The following table provides an example of such data collection for a PC with th
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="thermal-framework"></a>Windows thermal management framework
 
@@ -391,7 +391,7 @@ The following table describes the input and output parameters for the temperatur
 </tbody>
 </table>
 
- 
+
 
 One temperature sensor can be used by one thermal zone or multiple thermal zones. To specify which temperature sensor should be used for a thermal zone, the thermal \_DSM should be specified on the thermal zone, and should implement function 2. (For backwards compatibility, the temperature sensor driver can be loaded on top of the thermal zone stack. However, the preferred implementation is to have the sensor driver separate from the thermal zone stack.) This \_DSM is defined as follows:
 
@@ -456,7 +456,7 @@ To make sure thermal zones and their parameters are defined accurately, system d
 
 *Overthrottle threshold*
 
-Starting with Windows 10, a new feature called a *thermal zone state*, has been introduced into Windows thermal management, along with one state: *overthrottled*. When a thermal zone exceeds the device’s designed throttle level, the thermal manager will notify the operating system components that the system is overthrottled. This notification allows the system to reduce workload to improve the thermal state.
+Starting with Windows 10, a new feature called a *thermal zone state*, has been introduced into Windows thermal management, along with one state: *overthrottled*. When a thermal zone exceeds the device’s designed throttle level, the thermal manager will notify the operating system components that the system is overthrottled. This notification allows the system to reduce workload to improve the thermal state.
 
 The thermal manager maintains a global count of the number of thermal zones that are in the overthrottled state. When the count increases above zero (0), the thermal manager sends out a Windows Notification Facility (WNF) notification to the system, indicating that it is overthrottled. When the number of overthrottled zones returns to zero (0), the thermal manager sends out another WNF notification to the system, indicating there are no overthrottled zones.
 
@@ -540,7 +540,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 <td><p></p>
 <dl>
 <dt><strong>_PSV</strong></dt>
-<dd><p>The temperature at which to start throttling. For more information, see [Defining a thermal envelope](#thermal-envelope).</p>
+<dd><p>The temperature at which to start throttling. For more information, see <a href="#thermal-envelope" data-raw-source="[Defining a thermal envelope](#thermal-envelope)">Defining a thermal envelope</a>.</p>
 </dd>
 <dt><strong>_HOT</strong></dt>
 <dd><p>(Optional) The temperature at which the operating system hibernates the system. For systems that do not support hibernate, the operating system will initiate critical shutdown. This is highly recommended for at least one thermal zone for all x86/x64 systems because of the benefit of hibernate to save user data.</p>
@@ -561,7 +561,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 <dd><p>Control how aggressively the thermal manager applies thermal throttling performance against temperature delta between the current temperature and _PSV.</p>
 </dd>
 <dt><strong>_TSP</strong></dt>
-<dd><p>Appropriate temperature sampling interval for the zone in tenths of a second. The thermal manager uses this interval to determine how often it should evaluate the thermal throttling performance. Must be greater than zero. For more information, see [Thermal throttling algorithm](#throttling-algorithm).</p>
+<dd><p>Appropriate temperature sampling interval for the zone in tenths of a second. The thermal manager uses this interval to determine how often it should evaluate the thermal throttling performance. Must be greater than zero. For more information, see <a href="#throttling-algorithm" data-raw-source="[Thermal throttling algorithm](#throttling-algorithm)">Thermal throttling algorithm</a>.</p>
 </dd>
 </dl></td>
 </tr>
@@ -582,7 +582,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 <td><p></p>
 <dl>
 <dt><strong>_SCP</strong></dt>
-<dd><p>(Optional) To set the user's preferred cooling policy, if both active and passive cooling are supported by a zone.</p>
+<dd><p>(Optional) To set the user&#39;s preferred cooling policy, if both active and passive cooling are supported by a zone.</p>
 </dd>
 </dl></td>
 </tr>
@@ -591,7 +591,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 <td><p></p>
 <dl>
 <dt><strong>_DSM</strong></dt>
-<dd><p>Use UUID: 14d399cd-7a27-4b18-8fb4-7cb7b9f4e500 to set minimum throttle limit. Note that this is custom to Windows thermal framework and is not defined in ACPI. For more information, see [Minimum throttle limit](#throttle-limit).</p>
+<dd><p>Use UUID: 14d399cd-7a27-4b18-8fb4-7cb7b9f4e500 to set minimum throttle limit. Note that this is custom to Windows thermal framework and is not defined in ACPI. For more information, see <a href="#throttle-limit" data-raw-source="[Minimum throttle limit](#throttle-limit)">Minimum throttle limit</a>.</p>
 </dd>
 </dl></td>
 </tr>
@@ -606,7 +606,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 <dd><p>A vendor-unique hardware identifier to load the Windows temperature driver.</p>
 </dd>
 <dt><strong>_DTI</strong></dt>
-<dd><p>(Optional) For notifying the platform firmware that one of the zone's thermal thresholds has been exceeded. This method enables the firmware to implement hysteresis by changing the zone's thresholds.</p>
+<dd><p>(Optional) For notifying the platform firmware that one of the zone&#39;s thermal thresholds has been exceeded. This method enables the firmware to implement hysteresis by changing the zone&#39;s thresholds.</p>
 </dd>
 <dt><strong>_NTT</strong></dt>
 <dd><p>(Optional)For specifying significant temperature changes that the platform firmware should also be notified of via _DTI.</p>
@@ -630,7 +630,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 <td><p></p>
 <dl>
 <dt><strong>_DSM</strong></dt>
-<dd><p>Use UUID: 14d399cd-7a27-4b18-8fb4-7cb7b9f4e500. For more information, see [Temperature sensor](#temp-sensor).</p>
+<dd><p>Use UUID: 14d399cd-7a27-4b18-8fb4-7cb7b9f4e500. For more information, see <a href="#temp-sensor" data-raw-source="[Temperature sensor](#temp-sensor)">Temperature sensor</a>.</p>
 </dd>
 <dt><strong>_DEP</strong></dt>
 <dd><p>Load a device that the temperature sensor refers to.</p>
@@ -640,7 +640,7 @@ The following table lists all ACPI objects that need to be implemented in ACPI f
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="throttle-limit"></a>
 
@@ -684,7 +684,6 @@ ThermalZone(\_TZ.TZ01) {
             }
         }
     }
- 
 ```
 
 **Thermal manager in kernel**
@@ -730,7 +729,7 @@ The rightmost column in the following table (labeled P) indicates the throttled 
 | 5         | 20 seconds | 330<sup>o</sup>K | = 2 × 1 + 3 × 5 = 17% | 45% |
 | ...       |            |                  |                       |     |
 
- 
+
 
 **Policy driver**
 
@@ -750,7 +749,7 @@ The thermal policy interface has been updated to include a new parameter to indi
 
 #define THERMAL_POLICY_VERSION_1          1
 #define THERMAL_POLICY_VERSION_2          2
-  
+
 typedef struct _THERMAL_POLICY {  
     ULONG           Version;  
     BOOLEAN         WaitForUpdate;  
@@ -774,9 +773,9 @@ Many cooling devices do not have linear thermal response to cooling mitigations.
 
 As each device driver is loaded, ACPI will query for the Thermal Cooling Interface and register each responding device as a cooling device. Later, when passive cooling is in process and the thermal limit for a zone has changed, ACPI will call this interface on each cooling device in the zone. The cooling device will then map the provided thermal limit to its specific cooling characteristics, and implement appropriate cooling mitigations. Note that if the cooling device appears in multiple thermal zones, the thermal limit that constrains the device the most (that is, the lowest percentage) is passed to the device.
 
-**Note**  Windows provides built-in implementations of thermal throttling for processors, backlight, and ACPI control method battery.
+**Note**  Windows provides built-in implementations of thermal throttling for processors, backlight, and ACPI control method battery.
 
- 
+
 
 **Thermal cooling interface**
 
@@ -789,7 +788,7 @@ Devices that want to be added as a thermal throttling device should first add th
 // Thermal client interface (devices implementing  
 // GUID_THERMAL_COOLING_INTERFACE)  
 //
-  
+
 typedef  
 _Function_class_(DEVICE_ACTIVE_COOLING)  
 VOID  
@@ -864,17 +863,17 @@ For backlight control, the thermal manager communicates the thermal throttling p
 
 Note that if the thermal zone temperature that includes the backlight continues rising, the requested thermal throttling percentage might eventually drop to zero percent. The backlight level implementation in ACPI or display driver should ensure that the minimal brightness level available for performance controls is still visible for end users.
 
-**Note**  While operating, the system display brightness is never thermally limited to less than 100 nits.
+**Note**  While operating, the system display brightness is never thermally limited to less than 100 nits.
 
- 
+
 
 **Battery**
 
 Another main heat source in the system is battery charging. From a user's perspective, charging should be reduced and even completely halted under constrained thermal conditions. However, battery charging should not be hindered under normal use cases.
 
-**Note**  We recommend that battery charging is not throttled while the system is (1) idle and within the ambient temperature range below 35<sup>o</sup>C, or (2) under any conditions while the ambient temperature is below 25<sup>o</sup>C.
+**Note**  We recommend that battery charging is not throttled while the system is (1) idle and within the ambient temperature range below 35<sup>o</sup>C, or (2) under any conditions while the ambient temperature is below 25<sup>o</sup>C.
 
- 
+
 
 The Windows Control Method Battery miniclass driver, Cmbatt.sys, uses the Thermal Cooling Interface directly, as described above. Firmware is responsible for taking the current thermal limit into account when engaging charging. A new ACPI control method is necessary to set the thermal limit for charging. This method is implemented as a Device Specific Method (\_DSM), as defined in the [ACPI 5.0 specification](http://www.acpi.info), Section 9.14.1.
 
@@ -888,7 +887,7 @@ To apply the thermal throttling percentage, Cmbatt.sys will evaluate the Device 
 | Arg3         | Integer value from 0 to 100          | Thermal limit for battery charging. Equivalent to calculated percentage passive throttle. |
 | Return value | N/A                                  | No return value                                                                           |
 
- 
+
 
 **Active cooling**
 
@@ -952,7 +951,7 @@ Windows needs to be able to detect fan activity with either implementation. When
 | \_FPS        | Returns a list of fan performance states. | no        |
 | \_FSL        | Sets the fan performance state (speed).   | no        |
 
- 
+
 
 Windows will use the \_FST object to determine if the fan is running (Control field is nonzero) or off (Control field is zero). Windows will also support Notify(0x80) on the fan device as an indication that \_FST has changed and needs to be reevaluated.
 
@@ -983,7 +982,7 @@ Scope(\_SB) {
     Device(FAN) {
         Name(_HID, EISAID("PNP0C0B"))
         Name(_FST, Package() {0, 0, 0xffffffff})
-        
+
         // \_SB.FAN.SFST called by EC event handler upon fan status change
         Method(SFST, 1) {
             // Arg0 contains the new fan status
@@ -1039,7 +1038,7 @@ A platform indicates that there is a fan on the system by including a fan device
 
 The Windows thermal management framework is a part of the kernel and ships with all Windows systems. Thus, the material above applies to all machines. However, various types of machines require additional guidance more specific to Modern Standby.
 
-Modern Standby brings the smart phone power model to the PC. It provides an instant on, instant off user experience that users have come to expect on their phone. And just like on the phone, Modern Standby enables the system to stay fresh, up-to-date, and reachable whenever a suitable network is available. Windows 10 supports Modern Standby on low-power platforms that meet specific Windows certification requirements.
+Modern Standby brings the smart phone power model to the PC. It provides an instant on, instant off user experience that users have come to expect on their phone. And just like on the phone, Modern Standby enables the system to stay fresh, up-to-date, and reachable whenever a suitable network is available. Windows 10 supports Modern Standby on low-power platforms that meet specific Windows certification requirements.
 
 Modern Standby PCs are highly mobile devices in a thin and light form factor. Further, Modern Standby PCs are always on and in the ACPI S0 state. In order to deliver a robust and reliable customer experience, the entire system—from the mechanical design to firmware and software implementation—must be designed with critical attention to thermal characteristics. Thus, all Modern Standby PCs must adhere to thermal requirements.
 
@@ -1071,9 +1070,9 @@ The PPM communicates the maximum, desired and minimal performance levels to the 
 ## Thermal Standby
 
 
-Thermal Standby is a low power screen-off state introduced in Windows 10 Mobile, to mitigate the rise in temperature, on S0 Idle-capable systems. This low power state allows systems to cool down in a relatively short period of time, while preserving the users’ data from losses.
+Thermal Standby is a low power screen-off state introduced in Windows 10 Mobile, to mitigate the rise in temperature, on S0 Idle-capable systems. This low power state allows systems to cool down in a relatively short period of time, while preserving the users’ data from losses.
 
-For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Thermal Standby will be available in future Windows updates. OEMs/IHVs are still encouraged to implement the needed changes for enabling Thermal Standby on systems running Windows 10 for desktop editions, so that the systems can leverage Thermal Standby once the update is released.
+For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Thermal Standby will be available in future Windows updates. OEMs/IHVs are still encouraged to implement the needed changes for enabling Thermal Standby on systems running Windows 10 for desktop editions, so that the systems can leverage Thermal Standby once the update is released.
 
 **How Thermal Standby works**
 
@@ -1116,9 +1115,9 @@ typedef struct _THERMAL_POLICY {
 
 The OEM/IHV must use the *ThermalStandby* parameter to engage and disengage Thermal Standby, as the temperature of the system and/or components rises and drops respectively.
 
- 
 
- 
+
+
 
 
 

@@ -18,11 +18,11 @@ ms.topic: article
 
 To troubleshoot issues that occur with Device.Network tests, follow these steps:
 
--   Review the [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md) topic.
+- Review the [Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md) topic.
 
--   Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+- Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
--   For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+- For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 Use the following steps to test the ability of a computer to send higher bit rates over an Ethernet connection:
 
@@ -48,30 +48,30 @@ If the output of either step 4 or step 5 shows any failures then your machines c
 
 To manually add a wireless profile, use the following command:
 
-**netsh wlan add profile filename=&lt;xmlfilename&gt; i=\***
+**netsh wlan add profile filename=&lt;xmlfilename&gt; i=\\***
 
 For example, to add the 802\_11n\_wpa-psk.xml wireless profile:
 
-1.  Click **Start**, click **Run**, and enter **cmd.exe**.
+1. Click **Start**, click **Run**, and enter **cmd.exe**.
 
-2.  Type **netsh wlan add profile filename=802\_11n\_wpa-psk.xml i=\***.
+2. Type **netsh wlan add profile filename=802\_11n\_wpa-psk.xml i=\\***.
 
-3.  Click **OK**.
+3. Click **OK**.
 
->[!NOTE]
->  
-Make sure that Wireless Profile XML file exists in the current directory or specify the full path.
+> [!NOTE]
+> 
+> Make sure that Wireless Profile XML file exists in the current directory or specify the full path.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Device.Network Testing](device-network-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

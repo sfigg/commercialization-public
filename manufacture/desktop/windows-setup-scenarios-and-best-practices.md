@@ -58,7 +58,7 @@ This scenario includes the following stages:
 **Notes**  
 - Upgrades are used to upgrade a single computer to Windows 10. Upgrades also support migrating user data to a new system.
 - Windows Setup supports upgrading to an image that has the latest quality updates injected, but does not support upgrading to an image that's been customized to add additional apps and/or settings changes. 
- 
+ 
 
 ### <span id="Automated_Installations"></span><span id="automated_installations"></span><span id="AUTOMATED_INSTALLATIONS"></span>Automated Installations
 
@@ -103,7 +103,7 @@ The following sections describe some of the limitations of Windows Setup. Revie
 **Note**  
 For Windows Preinstallation Environment (Windows PE), the version of boot files must match the computer architecture. An x64 UEFI computer can only boot by using Windows PE x64 boot files. An x86 computer can only boot by using Windows PE x86 boot files. This is different from legacy BIOS. In legacy BIOS, an x64 computer can boot by using x86 boot files.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -118,9 +118,9 @@ For Windows Preinstallation Environment (Windows PE), the version of boot files
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

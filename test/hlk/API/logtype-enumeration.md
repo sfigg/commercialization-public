@@ -78,11 +78,11 @@ This is an enumeration that defines the type of log files and therefore the type
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

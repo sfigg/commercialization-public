@@ -15,6 +15,7 @@ ms.topic: article
 This test runs the TPM 2.0 Hardware Interface 'Self Test' Tests - This test is a WoW64 for ARM64 version of test guid ec7a6d19-7083-47f0-877c-919c36189a8e
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.TrustedPlatformModule.TPM20.Features</li></ul> |  

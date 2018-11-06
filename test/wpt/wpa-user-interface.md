@@ -29,46 +29,45 @@ This section describes the parts of the Windows Performance Analyzer (WPA) works
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Graph Explorer](graph-explorer.md)</p></td>
+<td><p><a href="graph-explorer.md" data-raw-source="[Graph Explorer](graph-explorer.md)">Graph Explorer</a></p></td>
 <td><p>Describes the <strong>Graph Explorer</strong> window.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Analysis Tab](analysis-tab.md)</p></td>
+<td><p><a href="analysis-tab.md" data-raw-source="[Analysis Tab](analysis-tab.md)">Analysis Tab</a></p></td>
 <td><p>Describes the <strong>Analysis</strong> tab.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Issues Window](issues-window.md)</p></td>
+<td><p><a href="issues-window.md" data-raw-source="[Issues Window](issues-window.md)">Issues Window</a></p></td>
 <td><p>Describes the <strong>Issues</strong> window.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Details Window](details-window.md)</p></td>
+<td><p><a href="details-window.md" data-raw-source="[Details Window](details-window.md)">Details Window</a></p></td>
 <td><p>Describes the <strong>Details</strong> window.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Diagnostic Console](diagnostic-console.md)</p></td>
+<td><p><a href="diagnostic-console.md" data-raw-source="[Diagnostic Console](diagnostic-console.md)">Diagnostic Console</a></p></td>
 <td><p>Describes the <strong>Diagnostic Console</strong> window.</p></td>
 </tr>
 <tr class="even">
-<td><p>[My Presets](my-presets.md)</p></td>
+<td><p><a href="my-presets.md" data-raw-source="[My Presets](my-presets.md)">My Presets</a></p></td>
 <td><p>Describes the <strong>My Presets</strong> window.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Select Tables](select-tables.md)</p></td>
+<td><p><a href="select-tables.md" data-raw-source="[Select Tables](select-tables.md)">Select Tables</a></p></td>
 <td><p>Describes the <strong>Select Tables</strong> window.</p></td>
-</tr>  
-</tbody>
+</tr><br/></tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [WPA Features](wpa-features.md)
 
- 
 
- 
+
+
 
 
 

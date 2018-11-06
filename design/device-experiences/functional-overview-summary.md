@@ -26,9 +26,9 @@ If the system is in disconnected standby, very little activity occurs during sta
 
 If the system has an Internet connection through Wi-Fi, mobile broadband, or Ethernet, and is modern standby capable, the amount of activity is higher. This activity is mostly the result of app background tasks that require a network connection to be usable. For example, email will not sync without an Internet connection, and Windows Update will not download critical security updates if an Internet connection is not available. When an active Internet connection is present, the system will transition between the idle and active modes on demand if incoming network packets match WoL patterns.
 
- 
+ 
 
- 
+ 
 
 
 

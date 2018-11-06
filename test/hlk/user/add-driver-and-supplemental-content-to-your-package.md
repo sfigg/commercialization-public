@@ -21,7 +21,7 @@ ms.topic: article
 >[!NOTE]
 >  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
 
- 
+ 
 
 For device submissions, the driver(s) being used must be added. The purpose of adding the driver accomplishes two objectives, if the submission passes:
 
@@ -66,9 +66,9 @@ The requirements for these are covered in the necessary documentation.  Unless 
 
 3.  Click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

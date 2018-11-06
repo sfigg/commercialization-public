@@ -18,7 +18,7 @@ consistent naming system.
 
 This topic provides general guidance about the package merging process.
 
-**Important**  
+**Important**  
 
 For retail images, you must generate merged packages that conform to the
 *Windows Standard Package Configuration* (WSPC). WSPC is a set of rules
@@ -26,7 +26,7 @@ that define the package naming requirements for retail devices. For more
 info, see [Windows Standard Packaging Configuration (WSPC) requirements
 for retail images](packaging-requirements-for-retail-images.md).
 
- 
+
 
 ## <span id="Understanding_the_package_merging_process"></span><span id="understanding_the_package_merging_process"></span><span id="UNDERSTANDING_THE_PACKAGE_MERGING_PROCESS"></span>Understanding the package merging process
 
@@ -96,7 +96,7 @@ feature manifest package group they are listed under.
 </tbody>
 </table>
 
- 
+
 
 In the preceding table, the partition, language, and resolution metadata
 used for package merging are derived from the following attributes in
@@ -108,7 +108,7 @@ the package project XML file used to generate each package:
 
 -   **Resolution** attribute of the **Files** element.
 
-**Note**  
+**Note**  
 
 Language and resolution-specific merged packages (packages with the
 language or resolution suffix in the package file name) do not comply
@@ -116,7 +116,7 @@ with WSPC. For retail images, these packages should be merged into a
 WSPC-compliant base package by referencing the packages under the
 **BasePackages** element in the feature manifest.
 
- 
+
 
 For more info about these attributes, see [Primary elements and
 attributes of a package project
@@ -165,21 +165,20 @@ from.
 <li><p>If you pass an FMFileList XML file to FeatureMerger.exe, this is derived from the <strong>ID</strong> attribute of the <strong>FM</strong> element in the FMFileList XML file.</p></li>
 </ul>
 <div class="alert">
-<strong>Important</strong>  
-<p>When building merged packages for retail images, OEMs must specify either <strong>Phone</strong> or <strong>Variant</strong> for the <em>FeatureManifestID</em> substring. For more info, see [Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md).</p>
+<strong>Important</strong><br/><p>When building merged packages for retail images, OEMs must specify either <strong>Phone</strong> or <strong>Variant</strong> for the <em>FeatureManifestID</em> substring. For more info, see <a href="packaging-requirements-for-retail-images.md" data-raw-source="[Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md)">Windows Standard Packaging Configuration (WSPC) requirements for retail images</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td><p><em>Partition</em></p></td>
-<td><p>The <em>Partition</em> substring is derived from the <strong>Partition</strong> attribute of the <strong>Package</strong> element in the package project XML files that were used to build the packages that are being merged. For more information, see [Primary elements and attributes of a package project file](primary-elements-and-attributes-of-a-package-project-file.md).</p></td>
+<td><p>The <em>Partition</em> substring is derived from the <strong>Partition</strong> attribute of the <strong>Package</strong> element in the package project XML files that were used to build the packages that are being merged. For more information, see <a href="primary-elements-and-attributes-of-a-package-project-file.md" data-raw-source="[Primary elements and attributes of a package project file](primary-elements-and-attributes-of-a-package-project-file.md)">Primary elements and attributes of a package project file</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <span id="General_guidelines_for_package_merging"></span><span id="general_guidelines_for_package_merging"></span><span id="GENERAL_GUIDELINES_FOR_PACKAGE_MERGING"></span>General guidelines for package merging
 
@@ -233,12 +232,12 @@ FeatureMerger](merging-packages-using-featuremerger.md)
 [Windows Standard Packaging Configuration (WSPC) requirements for retail
 images](packaging-requirements-for-retail-images.md)
 
- 
 
- 
+
+
 
 [Send comments about this topic to
-Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging\p_phPackaging%5D:%20Merging%20packages%20before%20imaging%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging/p_phPackaging%5D:%20Merging%20packages%20before%20imaging%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

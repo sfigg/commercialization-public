@@ -49,9 +49,9 @@ The mouse report descriptor sample shows the pointer device usage in a physical 
     0xc0                                // END_COLLECTION                   49/50
 ```
 
- 
+ 
 
- 
+ 
 
 
 

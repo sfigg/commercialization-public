@@ -25,7 +25,7 @@ This address is a virtual IP address and must be set identically for all hosts i
 **Note**  
 To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
- 
+ 
 
 ## Values
 
@@ -38,12 +38,12 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <tbody>
 <tr class="odd">
 <td><p><em>ClusterIpAddress</em></p></td>
-<td><p>Specifies the Network Load Balancing cluster's primary IP address.</p></td>
+<td><p>Specifies the Network Load Balancing cluster&#39;s primary IP address.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -76,9 +76,9 @@ The following XML output specifies the Network Load Balancing cluster's primary 
 
 [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)
 
- 
+ 
 
- 
+ 
 
 
 

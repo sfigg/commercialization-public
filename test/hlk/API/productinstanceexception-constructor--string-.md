@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **ProductInstanceException** 
 
 `Public Sub New ( _`
 
-          `message As String _`
+          `message As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **ProductInstanceException** 
 
 `public ProductInstanceException (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **ProductInstanceException** 
 
 *message*
 
-     The exception message (string).
+     The exception message (string).
 
- 
+ 
 
- 
+ 
 
 
 

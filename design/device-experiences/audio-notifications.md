@@ -22,9 +22,9 @@ If an app generates a critical notification (such as Alarm, Cellular, or VOIP) d
 
 If the user has muted audio through the Settings menu, the audio alert does not play.
 
- 
+ 
 
- 
+ 
 
 
 

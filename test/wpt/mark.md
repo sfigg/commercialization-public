@@ -37,9 +37,9 @@ Log a mark in the current trace and, if FOOTPRINT is enabled, flush working sets
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

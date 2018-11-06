@@ -291,13 +291,13 @@ Issues are reported if and only if the impact they describe is greater than the 
 <td><strong>Type 1:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has issues that exceed the analysis threshold.</p></td>
 <td><strong>Issue example</strong>
-<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2 seconds. The assessment identified other issues that impact this activity. These other issues fully account for this activity's time.</p></td>
+<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2 seconds. The assessment identified other issues that impact this activity. These other issues fully account for this activity&#39;s time.</p></td>
 </tr>
 <tr>
 <td><strong>Type 2:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has a mixed set of issues—some that are greater than the analysis threshold and others that are less than the analysis threshold.</p></td>
 <td><strong>Issue example</strong>
-<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues account for 5.9 seconds of this activity's time. The remaining 500 milliseconds consist of issues that do not exceed the minimum analysis threshold of 150 milliseconds.</p></td>
+<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues account for 5.9 seconds of this activity&#39;s time. The remaining 500 milliseconds consist of issues that do not exceed the minimum analysis threshold of 150 milliseconds.</p></td>
 </tr>
 <tr>
 <td><strong>Type 3:</strong>

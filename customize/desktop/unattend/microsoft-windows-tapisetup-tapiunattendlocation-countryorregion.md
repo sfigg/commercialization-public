@@ -50,7 +50,7 @@ Region codes change over time. To find the latest region codes, follow these ste
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -91,9 +91,9 @@ The following example shows how to set the location that you are calling from.
 
 [TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md)
 
- 
+ 
 
- 
+ 
 
 
 

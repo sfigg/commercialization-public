@@ -27,9 +27,9 @@ The fundamental user experience of connected standby is simply putting the PC to
 
 The user experience for turning off the modern standby PC is instant. The display is immediately powered off when the user presses the Power button or does something in the preceding list. The system might still be active for a few seconds after the Power button is pressed and the screen turns off, but the experience is smartphone-like and instant. While the system appears to the user to be asleep, it can transition between different hardware and software power modes. But, whenever the screen is off, the system is in standby, maintaining connectivity and ready to instantly resume.
 
- 
+ 
 
- 
+ 
 
 
 

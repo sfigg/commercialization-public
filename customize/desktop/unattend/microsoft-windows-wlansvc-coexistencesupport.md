@@ -61,7 +61,7 @@ This setting is used for telemetry only. There is no OS action associated with t
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -87,9 +87,9 @@ For a list of the Windows editions and architectures that this component support
 
 [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md)
 
- 
+ 
 
- 
+ 
 
 
 

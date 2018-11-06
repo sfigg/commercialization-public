@@ -48,12 +48,14 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
     Clustered Disk  : No
 
 
-    Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
-    ----------  ---  -----------  -----  ----------  -------  ---------  --------
-    Volume 1     C                NTFS   Partition    149 GB  Healthy    System
+~~~
+Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+----------  ---  -----------  -----  ----------  -------  ---------  --------
+Volume 1     C                NTFS   Partition    149 GB  Healthy    System
 
-    DISKPART>
-    ```
+DISKPART>
+```
+~~~
 
 ## <span id="Selecting_Drives"></span><span id="selecting_drives"></span><span id="SELECTING_DRIVES"></span>Selecting Drives
 
@@ -67,13 +69,13 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
 
 2.  **UEFI-based computers**: To select a drive, use the DiskPart command **SELECT DISK=&lt;location path&gt;**.
 
-    **Note**  
+    **Note**  
     Do not use the **SELECT DISK=SYSTEM** command or the GetSystemDiskNTPath API on Unified Extensible Firmware Interface (UEFI)-based computers to select the system drive. The **SELECT DISK=SYSTEM** command and the GetSystemDiskNTPath API identify the drive that the operating system was booted from as the system drive. If you boot from Windows® PE, this command selects the Windows PE drive as the system drive. If you boot from a system that has multiple drives that include an EFI system partition (ESP), this command may select the wrong drive.
 
-     
+
 
 ### <span id="SelectingNonSystemDisks"></span><span id="selectingnonsystemdisks"></span><span id="SELECTINGNONSYSTEMDISKS"></span>Selecting a non-system drive
- 
+
 
 1.  **Select the drive by location path.** To select a drive, use the DiskPart command **SELECT DISK=&lt;location path&gt;**, where &lt;*location path*&gt; is the location path of your drive. This command helps specify a drive by location.
 
@@ -85,7 +87,7 @@ For BIOS-based computers or a computer that is running Virtual Disk Service (VDS
 
 2.  **Select the drive by using the "NEXT" drive.** Use the DiskPart command **SELECT DISK=NEXT**. This command helps specify any remaining hard drives, regardless of location. To select more drives, repeat the **SELECT DISK=NEXT** command to select each drive in order. If there are no more drives to select, DiskPart returns an error.
 
-    **Note**  
+    **Note**  
     The computer maintains the context for the **SELECT DISK=NEXT** command as long as DiskPart continues running. If DISKPART exits, the computer loses this context.
 
     Example (Two UEFI/GPT drives):
@@ -173,9 +175,9 @@ format quick fs=ntfs label="DataDrive2"
 
 [DiskPart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458)
 
- 
 
- 
+
+
 
 
 

@@ -21,7 +21,7 @@ ms.topic: article
 **Warning**  
 This setting is deprecated. By default, the Initial Configurations Tasks application does not appear in Windows Server 2012. Use [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc.md) instead.
 
- 
+ 
 
 `OemExtensionXmlFilePath` specifies the path to the OEM XML file that contains the OEM resources and tasks that are displayed in the Initial Configuration Tasks and Server applications. OEMs are able to add information and links to Help topics and their own applications that need to be started.
 
@@ -43,7 +43,7 @@ The OEM XML file must be located in either the `%WINDIR%\system32` directory or 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -76,9 +76,9 @@ The following XML output specifies the path to the OEM XML file that contains th
 
 [Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)
 
- 
+ 
 
- 
+ 
 
 
 

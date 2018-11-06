@@ -66,7 +66,7 @@ All systems should meet at least the [minimum hardware requirements](../minimum/
       <li><a href="https://www.vesa.org/wp-content/uploads/2016/10/USB-DevDays-DisplayPort-Alternate-Mode-2016-final4.pdf">DisplayPort Alternate Mode</a>, pin assignment C, D, E, and F, with support for High Bit Rate (HBR) and High Bit Rate 2 (HBR2) signaling on those pin assignments, and the ability to source DisplayPort on at least two DisplayPort lanes for all supported pin assignments</li>
     </ul>
     <p>For systems with multiple USB Type-C ports, we recommend that all ports support the specifications above. If the specifications are not supported by all of the included USB Type-C ports, we recommend that these ports be visually differentiable to the user as defined in the <a href="http://www.usb.org/developers/logo_license/USB-IF_TLA_and_Logo_Usage_Guidelines_FINAL_March_13.2017.pdf">USB-IF Trademark License Agreement</a> under the section “Logo Guidelines for USB Type-C Products and Cables that Support Alternate Modes.”</p>
-    <p>If you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode, review the fallback requirements in the [Overall recommendations](#overall-recommendations) section above.</p>
+    <p>If you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode, review the fallback requirements in the <a href="#overall-recommendations" data-raw-source="[Overall recommendations](#overall-recommendations)">Overall recommendations</a> section above.</p>
     <p>For more information about implementing USB Type-C, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt595926.aspx">Developing Windows drivers for USB Type-C connectors</a> on MSDN.</p>
   </td>
 </tr>
@@ -93,13 +93,13 @@ The end goal of these docking recommendations is to maximize compatibility and i
 <tbody>
 <tr>
   <td align="left" valign="top">Dock connection to the system</td>
-  <td>We recommend that the dock connect to the system by using USB Type-C. At a minimum, the dock's USB Type-C connector should support the following features:
+  <td>We recommend that the dock connect to the system by using USB Type-C. At a minimum, the dock&#39;s USB Type-C connector should support the following features:
     <ul>
       <li>USB Data (<a href="http://www.usb.org/developers/ssusb">USB 3.1 Gen 2</a>) to enable USB-connected peripheral devices</li>
-      <li><a href="http://www.usb.org/developers/powerdelivery/">USB Power Delivery (PD)</a> power provider for charging a system while it is docked, with a minimum power of 30W, following the PD power rules (see section 10 of the Power Delivery specification); for additional information, see the "Power budget policy" section</li>
+      <li><a href="http://www.usb.org/developers/powerdelivery/">USB Power Delivery (PD)</a> power provider for charging a system while it is docked, with a minimum power of 30W, following the PD power rules (see section 10 of the Power Delivery specification); for additional information, see the &quot;Power budget policy&quot; section</li>
       <li>USB Type-C <a href="https://www.vesa.org/wp-content/uploads/2016/10/USB-DevDays-DisplayPort-Alternate-Mode-2016-final4.pdf">DisplayPort Alternate Mode</a>, pin assignments C and D, with support for HBR and HBR2 signaling on those pin assignments (and pin assignments E and F, if supported), and the ability to sink DisplayPort on at least two DisplayPort lanes for all supported pin assignments</li>
     </ul>
-    <p>If you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode, review the fallback requirements in the [Overall recommendations](#overall-recommendations) section above.</p>
+    <p>If you plan on including an alternate mode other than DisplayPort over USB Type-C alternate mode, review the fallback requirements in the <a href="#overall-recommendations" data-raw-source="[Overall recommendations](#overall-recommendations)">Overall recommendations</a> section above.</p>
   </td>
 </tr>
 <tr>
@@ -112,10 +112,10 @@ The end goal of these docking recommendations is to maximize compatibility and i
         <li>The USB Type-A ports should provide either 2.5, 4.5, or 7.5 W to devices according to the port type defined in the USB Battery Charging 1.2 standard; see the Power Budget Policy Section.</li>
       </ul>
     </li>
-    <li>USB Type-C power input; see the "Power" recommendation</li>
+    <li>USB Type-C power input; see the &quot;Power&quot; recommendation</li>
     <li>Ethernet connectivity (optional), to ensure that you choose a USB Ethernet adapter that works on mobile devices</li>
     <li>Audio output port (optional)</li>
-    <li>An external monitor connection, if the dock does not include a built-in monitor (see the "Display output" recommendation)</li>
+    <li>An external monitor connection, if the dock does not include a built-in monitor (see the &quot;Display output&quot; recommendation)</li>
   </ul>
   </td>
 </tr>
@@ -166,7 +166,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
 <tr>
   <td align="left" valign="top">Display output</td>
   <td>The connection from the dock to an external monitor should be provided by at least one digital connector that is at a minimum either HDMI 1.4 or DisplayPort 1.2 (supporting DP++). However, if the device is a docking display (that is, the dock and the monitor are in the same device), it is optional to include an additional display output to enable a multimonitor experience. The resolution supported should at a minimum be 1080p, regardless of whether the display is externally connected through an external video port or is internally connected to the display.
-    <p>If you plan on including an alternate mode other than DisplayPort, review the fallback requirements in the [Overall recommendations](#overall-recommendations) section above.</p>
+    <p>If you plan on including an alternate mode other than DisplayPort, review the fallback requirements in the <a href="#overall-recommendations" data-raw-source="[Overall recommendations](#overall-recommendations)">Overall recommendations</a> section above.</p>
   </td>
 </tr>
 <tr>
@@ -183,7 +183,7 @@ The end goal of these docking recommendations is to maximize compatibility and i
 </tr>
 </tbody>
 </table>
-All these recommendations are in addition to the touchpad requirements detailed in the [minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md).
+All these recommendations are in addition to the touchpad requirements detailed in the <a href="../minimum/minimum-hardware-requirements-overview.md" data-raw-source="[minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md)">minimum hardware requirements</a>.
 
 ## Wireless docking
 

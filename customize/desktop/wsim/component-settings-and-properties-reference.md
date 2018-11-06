@@ -16,11 +16,11 @@ ms.topic: article
 ---
 # Component Settings and Properties Reference
 
-Windows System Image Manager (Windows SIM) displays the properties and settings of a selected component or package in the **Properties** pane. You can use this pane to manage and view the component settings that are available to change for each configuration pass. You can also use this pane to view properties and IDs where applicable. In the case of packages, the pane displays Windows feature selections that you can change. Settings that are not available for each component or package appear dimmed.
+Windows System Image Manager (Windows SIM) displays the properties and settings of a selected component or package in the **Properties** pane. You can use this pane to manage and view the component settings that are available to change for each configuration pass. You can also use this pane to view properties and IDs where applicable. In the case of packages, the pane displays Windows feature selections that you can change. Settings that are not available for each component or package appear dimmed.
 
 ## Component Settings
 
-Component settings are the configurable aspects of each component in a Windows installation. For example, you can configure the Windows Internet Explorer component setting **Home\_Page** to open to a particular URL by configuring the default value of the setting in the **Properties** pane of Windows SIM.
+Component settings are the configurable aspects of each component in a Windows installation. For example, you can configure the Windows Internet Explorer component setting **Home\_Page** to open to a particular URL by configuring the default value of the setting in the **Properties** pane of Windows SIM.
 
 ## Component Properties
 
@@ -75,7 +75,7 @@ The component ID uniquely identifies the component of the operating system to wh
 <tbody>
 <tr class="odd">
 <td><p><strong>Language</strong></p></td>
-<td><p>Specifies the language code. For more information, see the language codes in the [MSDN Library](http://go.microsoft.com/fwlink/?LinkId=68146).</p></td>
+<td><p>Specifies the language code. For more information, see the language codes in the <a href="http://go.microsoft.com/fwlink/?LinkId=68146" data-raw-source="[MSDN Library](http://go.microsoft.com/fwlink/?LinkId=68146)">MSDN Library</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Name</strong></p></td>
@@ -87,7 +87,7 @@ The component ID uniquely identifies the component of the operating system to wh
 </tr>
 <tr class="even">
 <td><p><strong>PublicKeyToken</strong></p></td>
-<td><p>Specifies the public-key token of the component or package. This is a string of 16 hexadecimal digits and is the hash value of the Microsoft public key. The value is unique and prevents collision between components and packages.</p></td>
+<td><p>Specifies the public-key token of the component or package. This is a string of 16 hexadecimal digits and is the hash value of the Microsoft public key. The value is unique and prevents collision between components and packages.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Version</strong></p></td>
@@ -130,7 +130,7 @@ Package properties are non-configurable attributes of the package. Package prope
 </tr>
 <tr class="even">
 <td><p><strong>Id</strong></p></td>
-<td><p>Specifies the identifier for the package. The format is: <em>ProcessorArchitecture</em>_<em>Version</em>_<em>Language</em>_<em>PublicKeyToken</em>_<em>VersionScope</em></p></td>
+<td><p>Specifies the identifier for the package. The format is: <em>ProcessorArchitecture</em><em><em>Version</em></em><em>Language</em><em><em>PublicKeyToken</em></em><em>VersionScope</em></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Keyword</strong></p></td>
@@ -216,11 +216,10 @@ The following menu commands are available when you right-click a setting in the 
 <p>By default, if no value is specified, the setting will be omitted from the answer file. However, you can specifically write an empty value for a string type in an answer file by using this command.</p>
 <p>This command applies to string types only.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Not all component string settings support empty values. For more information, see the Unattended Windows Setup Reference.</p>
+<strong>Important</strong><br/><p>Not all component string settings support empty values. For more information, see the Unattended Windows Setup Reference.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -232,7 +231,7 @@ The following menu commands are available when you right-click a setting in the 
 
 ## .NET Types in Windows System Image Manager
 
-Microsoft® .NET types appear at the bottom of the **Properties** pane. Component settings have a type that describes the kind of data that is valid for that setting. These types are mapped to their equivalent .NET types in Windows SIM. The following table lists the possible types that can be associated with component settings.
+Microsoft® .NET types appear at the bottom of the **Properties** pane. Component settings have a type that describes the kind of data that is valid for that setting. These types are mapped to their equivalent .NET types in Windows SIM. The following table lists the possible types that can be associated with component settings.
 
 <table>
 <colgroup>
@@ -303,7 +302,7 @@ Microsoft® .NET types appear at the bottom of the **Properties** pane. Componen
 
 ## Array Types
 
-Some component settings require arrays of data. These arrays are mapped to their equivalent .NET array types in Windows SIM. The following table lists the possible array types that are associated with component settings.
+Some component settings require arrays of data. These arrays are mapped to their equivalent .NET array types in Windows SIM. The following table lists the possible array types that are associated with component settings.
 
 <table>
 <colgroup>
@@ -344,19 +343,19 @@ Each list item must have a unique identifier, which is known as the key for that
 
 ### List-Item Actions
 
-The following actions are available for list items when you use Windows SIM.
+The following actions are available for list items when you use Windows SIM.
 
 ### Add a New List Item
 
-You can use Windows SIM to add list items to the currently open answer file. In the **Setting Action** drop-down list, click **AddListItem**. You must also add a unique key setting to the list item. The unique key setting appears in brackets next to the list item in the tree view of the **Answer File** pane. A plus sign (+) appears, which indicates that the list item is added to the Windows image when the unattended answer file is run.
+You can use Windows SIM to add list items to the currently open answer file. In the **Setting Action** drop-down list, click **AddListItem**. You must also add a unique key setting to the list item. The unique key setting appears in brackets next to the list item in the tree view of the **Answer File** pane. A plus sign (+) appears, which indicates that the list item is added to the Windows image when the unattended answer file is run.
 
 ### Delete a List Item
 
-You can use Windows SIM to delete a list item that is defined in a Windows image (.wim) file. In the **Setting Action** drop-down list, click **RemoveListItem**. A minus sign (–) appears, which indicates that the list item is deleted from the image when the unattended answer file is run.
+You can use Windows SIM to delete a list item that is defined in a Windows image (.wim) file. In the **Setting Action** drop-down list, click **RemoveListItem**. A minus sign (–) appears, which indicates that the list item is deleted from the image when the unattended answer file is run.
 
 ### Modify a List Item
 
-You can use Windows SIM to modify a list item that is defined in a Windows image file. To change the default value for an existing list item, click **Modify** in the **Properties** pane, and then enter the updated information under **Settings**. The updated list-item setting is added to the answer file.
+You can use Windows SIM to modify a list item that is defined in a Windows image file. To change the default value for an existing list item, click **Modify** in the **Properties** pane, and then enter the updated information under **Settings**. The updated list-item setting is added to the answer file.
 
 ## Related topics
 

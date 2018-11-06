@@ -23,9 +23,9 @@ ms.topic: article
 -   [Partner Guide to WSSD Certification](partner-guide-to-wssd-certification.md)
 -   [Run cluster tests for Storage Spaces Direct (S2D) in the Windows HLK](run-cluster-tests-for-storage-spaces-direct-in-the-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

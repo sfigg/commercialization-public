@@ -18,7 +18,7 @@ If you want to test Manufacturing Mode, you can enable it by using ffutool.exe o
 
 **Note**  The recommended way to support manufacturing mode on shipping devices is to have the firmware support the Boot mode management UEFI protocol. For more info on this protocol, see [Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md).
 
- 
+ 
 
 ## <span id="enable_or_disable_manufacturing_mode_with_ffutool.exe"></span><span id="ENABLE_OR_DISABLE_MANUFACTURING_MODE_WITH_FFUTOOL.EXE"></span>Enable or disable Manufacturing Mode with ffutool.exe
 
@@ -69,7 +69,7 @@ bcdedit.exe /store "D:\EFIESP\efi\Microsoft\Boot\BCD" /set {default} mfgmode "de
 
 **Note**  If you're using an older version of bcdedit.exe, you might have to use **custom:22000140** instead of **mfgmode** as the BCD setting name.
 
- 
+ 
 
 ## <span id="Create_a_Manufacturing_Mode_BCD_package"></span><span id="create_a_manufacturing_mode_bcd_package"></span><span id="CREATE_A_MANUFACTURING_MODE_BCD_PACKAGE"></span>Create a Manufacturing Mode BCD package
 
@@ -122,7 +122,7 @@ After that is created, you can reference it in a package XML file:
 
 **Note**  There is a Partition attribute defining that these BCD entries need to apply to the EFIESP partition. This should be updated to be the partition where the BCD store for your device resides. If this is different from the partition where the main operating system resides, other operations such as adding files and registry keys to the main operating system partition cannot be done from the same package.
 
- 
+ 
 
 To create the package, you can use pkggen.exe (included with the Windows Driver Kit):
 
@@ -130,9 +130,9 @@ To create the package, you can use pkggen.exe (included with the Windows Driver 
 pkggen.exe exampleBcd.pkg.xml /config:pkggen.cfg.xml
 ```
 
- 
+ 
 
- 
+ 
 
 
 

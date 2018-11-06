@@ -47,7 +47,7 @@ This list describes the process Windows Setup uses to determine whether plug an
 **Warning**  
 Using the `DoNotCleanUpNonPresentDevices` setting can lead to the unnecessary storage of excess device state and contribute to slower boot times. For more information about maintaining driver configurations when capturing a Windows image, see [this Microsoft Website](http://go.microsoft.com/fwlink/p/?linkid=184946).
 
- 
+ 
 
 ## Values
 
@@ -72,7 +72,7 @@ Using the `DoNotCleanUpNonPresentDevices` setting can lead to the unnecessary st
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -82,7 +82,7 @@ generalize
 **Note**  
 Though this setting is specified in the **generalize** configuration pass, it controls the behavior for the next **specialize** configuration pass.
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -113,9 +113,9 @@ The following XML output specifies that drivers for devices that are not on the 
 
 [Maintain Driver Configurations When Capturing a Windows Image](http://go.microsoft.com/fwlink/p/?linkid=184946)
 
- 
+ 
 
- 
+ 
 
 
 

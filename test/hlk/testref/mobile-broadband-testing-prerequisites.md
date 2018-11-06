@@ -18,11 +18,11 @@ ms.topic: article
 
 This section describes the tasks that you must complete before you test an audio device by using the Windows Hardware Lab Kit (Windows HLK).
 
->[!NOTE]
->  
-The wireless testing of mobile phones verifies support for 802.11 capabilities. However, the Windows HLK validates basic mobile phone capabilities only for devices based on modems that implement the MSFT IHV RIL interface. For data-only devices that are based on MBIM modems, the Windows HLK does not validate basic mobile phone capabilities.
+> [!NOTE]
+> 
+> The wireless testing of mobile phones verifies support for 802.11 capabilities. However, the Windows HLK validates basic mobile phone capabilities only for devices based on modems that implement the MSFT IHV RIL interface. For data-only devices that are based on MBIM modems, the Windows HLK does not validate basic mobile phone capabilities.
 
- 
+ 
 
 Before beginning testing, complete the following:
 
@@ -32,42 +32,42 @@ Before beginning testing, complete the following:
 
 -   [Test computer configuration](#bkmk-hck-mobile-tc).
 
->[!NOTE]
->  
-Software-based Access Points using the Realtek 8185 chipset were deprecated with the release of WLK version 1.3. HLK testing with Software-based Access Points are exclusively supported with Atheros WLAN NICs. Customers that are testing WLAN drivers must use Atheros hardware to complete their submissions. If you have further questions on this, please let us know at wlanndt@microsoft.com.
+> [!NOTE]
+> 
+> Software-based Access Points using the Realtek 8185 chipset were deprecated with the release of WLK version 1.3. HLK testing with Software-based Access Points are exclusively supported with Atheros WLAN NICs. Customers that are testing WLAN drivers must use Atheros hardware to complete their submissions. If you have further questions on this, please let us know at wlanndt@microsoft.com.
 
- 
+ 
 
 ## <span id="BKMK_HCK_Mobile_hR"></span><span id="bkmk-hck-mobile-hr"></span><span id="BKMK_HCK_MOBILE_HR"></span>Hardware requirements
 
 
 The following hardware is required for LAN device testing. You might need additional hardware if the test device provides bus-specific support. See the test description for each bus-specific test to determine if there are additional hardware requirements.
 
--   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
+- Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md)
 
--   One test computer. This test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for more information.
+- One test computer. This test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md) for more information.
 
--   One test mobile broadband device.
+- One test mobile broadband device.
 
--   The following SIM cards:
+- The following SIM cards:
 
-    -   'Home' SIM with data provisioned
+  -   'Home' SIM with data provisioned
 
-    -   'Roaming' SIM with data provisioned
+  -   'Roaming' SIM with data provisioned
 
-    -   'Home' SIM with no data provisioned
+  -   'Home' SIM with no data provisioned
 
-    -   'Roaming' SIM with no data provisioned
+  -   'Roaming' SIM with no data provisioned
 
-    -   'Bad' SIM
+  -   'Bad' SIM
 
-    -   'Inactive' SIM
+  -   'Inactive' SIM
 
->[!NOTE]
->  
-The operating systems installed on the test clients must be matching processor architecture versions. If you are Logo testing a 32-bit driver, the DUT, SUT, and Test SoftAP must all have 32-bit versions of Windows installed upon them. For example, you may not use a 64-bit DUT with a 32-bit Test SoftAP.The Ethernet cross over cable can be used in place of the test network when running the NDISTest 6.0 "2c\_priority" test job. The cross over cable enables vendors to resolve an switch-related issue. In some cases, a switch will strip the priority header causing this test job to fail.
+> [!NOTE]
+> 
+> The operating systems installed on the test clients must be matching processor architecture versions. If you are Logo testing a 32-bit driver, the DUT, SUT, and Test SoftAP must all have 32-bit versions of Windows installed upon them. For example, you may not use a 64-bit DUT with a 32-bit Test SoftAP.The Ethernet cross over cable can be used in place of the test network when running the NDISTest 6.0 "2c\_priority" test job. The cross over cable enables vendors to resolve an switch-related issue. In some cases, a switch will strip the priority header causing this test job to fail.
 
- 
+ 
 
 ## <span id="BKMK_HCK_Mobile_sR"></span><span id="bkmk-hck-mobile-sr"></span><span id="BKMK_HCK_MOBILE_SR"></span>Software requirements
 
@@ -87,7 +87,7 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When running tests for a submission, it is a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting completion of an automated test.
 
-Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](..\getstarted\step-4-create-a-project.md).
+Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](../getstarted/step-4-create-a-project.md).
 
 ## <span id="Implementing_Loopback_Test_Functionality_in_MB_Devices"></span><span id="implementing_loopback_test_functionality_in_mb_devices"></span><span id="IMPLEMENTING_LOOPBACK_TEST_FUNCTIONALITY_IN_MB_DEVICES"></span>Implementing Loopback Test Functionality in MB Devices
 
@@ -96,11 +96,11 @@ This section is intended to provide guidance to mobile broadband (MB) device man
 
 Loopback testing ensures that the link between host and device is tested for performance with no dependency on the mobile broadband network. A successful pass of this test, by the device, assures that neither the OS stack nor the device firmware is going to be the bottleneck for throughput when the network conditions are right.
 
->[!NOTE]
->  
-Loopback functionality is tested only for the IP data traffic because it is in the performance critical path. The scope of this test does not include any other network traffic, such as SMS or USSD. Also, because this is a loopback test that terminates at the device firmware, there is no dependency to the network, SIM, or air interfaces.
+> [!NOTE]
+> 
+> Loopback functionality is tested only for the IP data traffic because it is in the performance critical path. The scope of this test does not include any other network traffic, such as SMS or USSD. Also, because this is a loopback test that terminates at the device firmware, there is no dependency to the network, SIM, or air interfaces.
 
- 
+ 
 
 ### <span id="Guidance"></span><span id="guidance"></span><span id="GUIDANCE"></span>Guidance
 
@@ -155,9 +155,9 @@ Loopback functionality is tested only for the IP data traffic because it is in t
 
 [Device.Network Testing](device-network-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

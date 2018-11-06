@@ -46,11 +46,11 @@ This method updates a job parameter. This will set the parameter for all applica
 
 `Public MustOverride Function SetParameter ( _`
 
-          `parameterName As String, _`
+          `parameterName As String, _`
 
-          `parameterValue As String, _`
+          `parameterValue As String, _`
 
-          `setAsDefault As ParameterSetAsDefault _`
+          `setAsDefault As ParameterSetAsDefault _`
 
 `) As String`
 
@@ -58,11 +58,11 @@ This method updates a job parameter. This will set the parameter for all applica
 
 `public abstract string SetParameter (`
 
-          `string parameterName,`
+          `string parameterName,`
 
-          `string parameterValue,`
+          `string parameterValue,`
 
-          `ParameterSetAsDefault setAsDefault`
+          `ParameterSetAsDefault setAsDefault`
 
 `) `
 
@@ -71,15 +71,15 @@ This method updates a job parameter. This will set the parameter for all applica
 
 *parameterName*
 
-          The name of the test parameter to set.
+          The name of the test parameter to set.
 
 *parameterValue*
 
-          The new value to set the test parameter to.
+          The new value to set the test parameter to.
 
 *setAsDefault*
 
-          This value indicates that the test parameter is set as the default for all future job runs.
+          This value indicates that the test parameter is set as the default for all future job runs.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -98,9 +98,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

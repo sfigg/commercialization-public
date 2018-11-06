@@ -112,6 +112,6 @@ The DRIPS state always has the following characteristics:
 -   No CPU code is allowed to run during the DRIPS state.
 -   When the SoC is in the DRIPS state, the platform is consuming the least amount of power possible during standby (with the exception of variances in power consumption caused by networking and radio devices).
 
- 
+ 
 
- 
+ 

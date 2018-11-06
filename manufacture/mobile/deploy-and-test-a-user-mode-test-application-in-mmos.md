@@ -19,7 +19,7 @@ To copy files to an MMOS image and run programs, you can use FTP and Telnet over
 **Important**  
 The USB drivers and protocols described here must not be used in manufacturing or retail servicing. They are provided as a convenience for engineering bring-up.
 
- 
+ 
 
 ## <span id="Preparing_the_device"></span><span id="preparing_the_device"></span><span id="PREPARING_THE_DEVICE"></span>Preparing the device
 
@@ -63,7 +63,7 @@ Use the IP address that is associated with the device MAC address to connect to 
 
 To browse and copy files via FTP:
 
--   Open Windows Explorer and type: **FTP:\\\\***W.X.Y.Z* in the address bar, replacing *W.X.Y.Z* with the IP address of the device.
+- Open Windows Explorer and type: **FTP:\\\\**<em>W.X.Y.Z</em> in the address bar, replacing *W.X.Y.Z* with the IP address of the device.
 
 You should see the files on the device listed. Use Windows Explorer to copy files to or from the device, such as executable test programs or logs of test results.
 
@@ -120,9 +120,9 @@ To connect to MMOS for debugging, use WinDbg to specify the key and port that yo
 windbg.exe -k net:Port=50000,Key=1.2.3.4
 ```
 
- 
+ 
 
- 
+ 
 
 
 

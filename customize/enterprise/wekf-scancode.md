@@ -54,11 +54,11 @@ The following tables list any constructors, methods, fields, and properties that
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[WEKF_Scancode.Add](wekf-scancodeadd.md)</p></td>
+<td><p><a href="wekf-scancodeadd.md" data-raw-source="[WEKF_Scancode.Add](wekf-scancodeadd.md)">WEKF_Scancode.Add</a></p></td>
 <td><p>Adds a new custom scan code combination and enables Keyboard Filter to block the new scan code combination.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WEKF_Scancode.Remove](wekf-scancoderemove.md)</p></td>
+<td><p><a href="wekf-scancoderemove.md" data-raw-source="[WEKF_Scancode.Remove](wekf-scancoderemove.md)">WEKF_Scancode.Remove</a></p></td>
 <td><p>Removes the specified custom scan code combination. Keyboard Filter stops blocking the scan code combination that was removed.</p></td>
 </tr>
 </tbody>

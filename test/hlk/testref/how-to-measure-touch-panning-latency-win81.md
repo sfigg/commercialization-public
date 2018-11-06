@@ -84,7 +84,7 @@ For panning latency measurement, the initial settings should be as follows:
 </tbody>
 </table>
 
- 
+ 
 
 Power-on the control box after you plug the USB in to the computer. Plugging in USB after powering on the control box can result in an unpredictable state of the microcontroller.
 
@@ -173,7 +173,7 @@ When you start stepmotor.exe, you will see a blank screen. Press the space key t
     </tbody>
     </table>
 
-     
+     
 
 3.  Make sure that Motor switch is turned off.
 
@@ -318,7 +318,7 @@ The procedure for running the Touch Panning Latency tool on the ITRI RA tool is 
     </tbody>
     </table>
 
-     
+     
 
 3.  Zero the system by changing the switches to the following and letting the motor rotate the arm 45 degrees. When completed, turn the motor to OFF.
 
@@ -353,7 +353,7 @@ The procedure for running the Touch Panning Latency tool on the ITRI RA tool is 
     </tbody>
     </table>
 
-     
+     
 
 4.  Place the test finger down on the device and press the space bar to enter the Calibration phase. Switches are now as follows:
 
@@ -388,7 +388,7 @@ The procedure for running the Touch Panning Latency tool on the ITRI RA tool is 
     </tbody>
     </table>
 
-     
+     
 
 5.  Allow the test to run past the count of 17, then turn off Motor and turn the Calibrate switch to off (lowest position):
 
@@ -423,7 +423,7 @@ The procedure for running the Touch Panning Latency tool on the ITRI RA tool is 
     </tbody>
     </table>
 
-     
+     
 
 6.  Press the space bar, and turn the motor back ON for the Acquisition phase.
 
@@ -505,7 +505,7 @@ If the settings are correct, then the automation script will run in three modes 
     </tbody>
     </table>
 
-     
+     
 
 2.  **Five seconds of waiting**: After nine loops of calibration, the motor will stop for five seconds. During this time, the operator must press the space bar to enter into Acquisition mode.
 
@@ -643,7 +643,7 @@ You can take time stamp intervals by noting the difference between the two even 
 </tbody>
 </table>
 
- 
+ 
 
 **Problem 3: Sampling rate changes**
 
@@ -696,9 +696,9 @@ If additional support is required, contact one of the following certified jig ve
 
     +886 (03) 5743887
 
- 
+ 
 
- 
+ 
 
 
 

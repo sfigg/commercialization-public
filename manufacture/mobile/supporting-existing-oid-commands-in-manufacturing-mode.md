@@ -24,7 +24,7 @@ The **OID\_GEN\_SUPPORTED\_GUIDS** command is called in query mode to return the
 **Note**  
 This OID is typically called for compatibility purposes. The driver can choose to ignore it, if desired, and return **NDIS\_STATUS\_NOT\_SUPPORTED** instead.
 
- 
+ 
 
 ## <span id="OID_GEN_VENDOR_ID"></span><span id="oid_gen_vendor_id"></span>OID\_GEN\_VENDOR\_ID
 
@@ -44,7 +44,7 @@ The **OID\_GEN\_CURRENT\_LOOKAHEAD** command is called in set mode to specify th
 **Note**  
 This OID is typically called for compatibility purposes. The driver can choose to ignore it, if desired, and return **NDIS\_STATUS\_NOT\_SUPPORTED** instead.
 
- 
+ 
 
 ## <span id="OID_PM_ADD_WOL_PATTERN"></span><span id="oid_pm_add_wol_pattern"></span>OID\_PM\_ADD\_WOL\_PATTERN
 
@@ -54,7 +54,7 @@ The **OID\_PM\_ADD\_WOL\_PATTERN** command is called in set mode to specify the 
 **Note**  
 This OID is typically called for compatibility purposes. The driver can choose to ignore it, if desired, and return **NDIS\_STATUS\_NOT\_SUPPORTED** instead.
 
- 
+ 
 
 ## <span id="OID_DOT11_RESET_REQUEST"></span><span id="oid_dot11_reset_request"></span>OID\_DOT11\_RESET\_REQUEST
 
@@ -91,9 +91,9 @@ The **OID\_DOT11\_NIC\_POWER\_STATE** command is called in query mode to return 
 
 [Adding Wi-Fi manufacturing test support to the OID interface](adding-wi-fi-manufacturing-test-support-to-the-oid-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

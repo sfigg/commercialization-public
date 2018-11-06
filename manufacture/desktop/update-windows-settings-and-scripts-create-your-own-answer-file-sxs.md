@@ -131,7 +131,7 @@ See the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/wi
 -   Save the answer file, for example: **D:\\AnswerFiles\\BootToAudit-x64.xml**.
 
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
-     
+     
 **Step 5: Create a script**
 
 Since we specified a script to run in Step 3, let's create that script now.

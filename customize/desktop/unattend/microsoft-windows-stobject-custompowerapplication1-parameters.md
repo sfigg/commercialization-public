@@ -33,13 +33,13 @@ This setting is optional.
 <tbody>
 <tr class="odd">
 <td><p><em>Parameters</em></p></td>
-<td><p>Specifies the arguments to use when running the application specified by [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md).</p>
+<td><p>Specifies the arguments to use when running the application specified by <a href="microsoft-windows-stobject-custompowerapplication1.md" data-raw-source="[CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md)">CustomPowerApplication1</a>.</p>
 <p><em>Parameters</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -79,9 +79,9 @@ The following XML output shows `CustomPowerApplication1` Application.exe with `p
 
 [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md)
 
- 
+ 
 
- 
+ 
 
 
 

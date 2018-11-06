@@ -73,7 +73,7 @@ OEMs can set the default value to either never restrict usage of the data plan o
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build that contains this customization to a device.

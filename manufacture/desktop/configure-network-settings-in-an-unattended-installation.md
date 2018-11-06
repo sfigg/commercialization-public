@@ -26,26 +26,26 @@ This section discusses common network scenarios during deployment, and how to im
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Configure Windows Firewall with Advanced Security by Using an Answer File](configure-windows-firewall-with-advanced-security-by-using-an-answer-file.md)</p></td>
+<td align="left"><p><a href="configure-windows-firewall-with-advanced-security-by-using-an-answer-file.md" data-raw-source="[Configure Windows Firewall with Advanced Security by Using an Answer File](configure-windows-firewall-with-advanced-security-by-using-an-answer-file.md)">Configure Windows Firewall with Advanced Security by Using an Answer File</a></p></td>
 <td align="left"><p>Configure Windows® Firewall with Advanced Security settings in an unattended installation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Enable Remote Desktop by Using an Answer File](enable-remote-desktop-by-using-an-answer-file.md)</p></td>
+<td align="left"><p><a href="enable-remote-desktop-by-using-an-answer-file.md" data-raw-source="[Enable Remote Desktop by Using an Answer File](enable-remote-desktop-by-using-an-answer-file.md)">Enable Remote Desktop by Using an Answer File</a></p></td>
 <td align="left"><p>Configure settings to enable Remote Desktop connections in an unattended installation.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Windows Deployment Options](windows-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

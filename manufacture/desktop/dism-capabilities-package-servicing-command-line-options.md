@@ -41,22 +41,22 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 <td align="left"><p><strong>/Add-Capability</strong></p>
 <p><strong>/CapabilityName:</strong>&lt;<em>capability_name</em>&gt; <strong>[/Source:</strong>&lt;<em>source</em>&gt;<strong>] [/LimitAccess]</strong></p></td>
 <td align="left">Adds a capability to an image.
-<p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p>
+<p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic<del>~en-US~0.0.1.0</strong></p>
 <div class="alert">
 <strong>Note</strong>  DISM checks for the source files in the following order:
 <ol>
 <li>If <strong>/Source</strong> is specified, DISM looks in the specified locations first.</li>
 <li>If <strong>/Source</strong> is not specified, or if the source files are not found in the specified locations, DISM checks to see if a group policy is set. If it is, DISM checks the locations specified by the group policy.</li>
-<li>If the files still aren't found, and if DISM is working against an online image, and if <strong>/LimitAccess</strong> is not specified, it looks for the files on Windows Update.</li>
+<li>If the files still aren&#39;t found, and if DISM is working against an online image, and if <strong>/LimitAccess</strong> is not specified, it looks for the files on Windows Update.</li>
 </ol>
 </div>
 <div>
- 
+ 
 </div>
 <p><strong>/Source</strong>: Allows you to choose a location, such as a server, where the capability source files are located. You can use multiple <strong>/Source</strong> arguments.</p>
-<p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0 /Source:\\server\share /Source:\\server2\share</strong></p>
+<p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic</del>~en-US~0.0.1.0 /Source:\server\share /Source:\server2\share</strong></p>
 <p><strong>/LimitAccess</strong>: Tells DISM to not check Windows Update or Windows Server Update Services for the capability source files.</p>
-<p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0 /Source:\\server\share /LimitAccess</strong></p></td>
+<p>Example:</p><p><strong>Dism /Online /Add-Capability /CapabilityName:Language.Basic<del>~en-US~0.0.1.0 /Source:\server\share /LimitAccess</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>/Get-Capabilities</strong></td>
@@ -68,18 +68,18 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 <p><Strong>/CapabilityName:</strong>&lt;<em>capability_name</em>&gt;</p></td>
 <td align="left"><p>Get information about a specific capability.</p><p>Example:</p>
 <p><strong>DISM /Online /Get-CapabilityInfo
- /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p></td>
+ /CapabilityName:Language.Basic</del>~en-US~0.0.1.0</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/Remove-Capability</strong></p>
 <p><strong>/CapabilityName:</strong>&lt;<em>capability_name</em>&gt;</p></td>
-<td align="left"><p>Example:</p><p><strong>Dism /Online /Remove-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p><p>Example:</p>
-<p><strong>Dism /Image:C:\test\offline /Remove-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</strong></p></td>
+<td align="left"><p>Example:</p><p><strong>Dism /Online /Remove-Capability /CapabilityName:Language.Basic<del>~en-US~0.0.1.0</strong></p><p>Example:</p>
+<p><strong>Dism /Image:C:\test\offline /Remove-Capability /CapabilityName:Language.Basic</del>~en-US~0.0.1.0</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -96,9 +96,9 @@ Note, each of these commands requires either the **/Online** or **/Image:**&lt;*
 
 [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ This section presents information about how to implement support for Windows Tou
 -   [Design Guide](windows-touch-design-guide.md)
 -   [Windows Touch Samples](windows-touch-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

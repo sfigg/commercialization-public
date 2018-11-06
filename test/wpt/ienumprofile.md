@@ -54,34 +54,34 @@ The following table describes the functions that this interface provides.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Next](next-ienumprofile.md)</p></td>
+<td><p><a href="next-ienumprofile.md" data-raw-source="[Next](next-ienumprofile.md)">Next</a></p></td>
 <td><p>Returns an array that contains the specified number of elements.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Skip](skip-ienumprofile.md)</p></td>
+<td><p><a href="skip-ienumprofile.md" data-raw-source="[Skip](skip-ienumprofile.md)">Skip</a></p></td>
 <td><p>Indicates the number of elements to skip.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Reset](reset-ienumprofile.md)</p></td>
+<td><p><a href="reset-ienumprofile.md" data-raw-source="[Reset](reset-ienumprofile.md)">Reset</a></p></td>
 <td><p>Resets the enumeration.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Clone](clone-ienumprofile.md)</p></td>
+<td><p><a href="clone-ienumprofile.md" data-raw-source="[Clone](clone-ienumprofile.md)">Clone</a></p></td>
 <td><p>Creates a clone enumerator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

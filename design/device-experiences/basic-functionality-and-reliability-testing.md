@@ -38,13 +38,13 @@ By dividing the change in Load/Unload cycles by the time spent in Modern Standby
 
 **Note**  Different systems are targeted for many different audiences and usage patterns. Therefore, it is the OEM’s responsibility to ensure the connected or disconnected Modern Standby system (they build) can handle the expected usage patterns.
 
- 
+ 
 
 When a system enters disconnected standby, no patterns are configured for wake across LAN, WiFi, or Mobile broadband. A media disconnect is sent to WiFi and Mobile Broadband parts.
 
- 
+ 
 
- 
+ 
 
 
 

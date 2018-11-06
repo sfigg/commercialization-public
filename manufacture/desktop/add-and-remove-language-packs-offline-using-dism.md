@@ -240,7 +240,7 @@ See [Configure international settings by using DISM](configure-international-set
 
 [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445)
 
- 
+ 
 
 
 

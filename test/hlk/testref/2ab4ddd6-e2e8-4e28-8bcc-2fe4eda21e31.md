@@ -19,6 +19,7 @@ ms.topic: article
 This test verifies that a Windows Touch device meets the response latency requirements for both idle and active states.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Input.Digitizer.Touch.Latency</li></ul> |  
@@ -31,7 +32,7 @@ This test verifies that a Windows Touch device meets the response latency requir
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -54,7 +55,7 @@ To learn about the hardware and about associated procedures, see [How to Measure
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see **Troubleshooting Device.Digitizer Testing**.
 
@@ -82,7 +83,7 @@ For troubleshooting information, see **Troubleshooting Device.Digitizer Testing*
 </tbody>
 </table>
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -105,11 +106,11 @@ For troubleshooting information, see **Troubleshooting Device.Digitizer Testing*
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

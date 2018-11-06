@@ -30,7 +30,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
     -   Tuning and Validation
     -   Manufacturing
     -   Support
-         
+         
 -   Status
 -   Test Name
 -   Type (manual, non-distributed, special configuration, multiple machine)
@@ -44,7 +44,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
 > -  Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests.
 > -  Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
 
- 
+ 
 
 The following image shows the Studio **Tests** tab.
 
@@ -71,7 +71,7 @@ You can save an existing collection of tests as a playlist by choosing **Save Se
 
 ## <span id="Running_a_test"></span><span id="running_a_test"></span><span id="RUNNING_A_TEST"></span>Running a test
 
- If using a playlist, be sure to load it before proceeding.
+ If using a playlist, be sure to load it before proceeding.
 
 If you want to re-flash the device before running the test, set the ForceReflash\_KitsTemplate parameter in HLK Studio to 1 and specifying the location of the ffu to flash to the device using the ImagePath\_KitsTemplate parameter.
 
@@ -88,15 +88,15 @@ If you want to re-flash the device before running the test, set the ForceReflash
 >[!NOTE]
 >  To learn more about any test, select the test from the list and press **F1** key or right-click and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
 
- 
+ 
 
 As tests complete, the results are displayed in the **Status** column. A green checkmark means that it passed, while a red X means that it failed. The pane on the right displays project summary information, including target(s) selected, operating systems being tested, product types you qualify for, and status of all tests.
 
-To learn more about the different options on this page, see [HLK Studio - Tests Tab](..\user\hlk-studio---tests-tab.md).
+To learn more about the different options on this page, see [HLK Studio - Tests Tab](../user/hlk-studio---tests-tab.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,9 +48,9 @@ You can select the detail level that fits the scenario: either light or verbose.
 
 [WPR Quick Start](wpr-quick-start.md)
 
- 
+ 
 
- 
+ 
 
 
 

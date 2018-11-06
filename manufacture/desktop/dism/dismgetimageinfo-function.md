@@ -60,7 +60,7 @@ The array of [DismImageInfo](dismimageinfo-structure.md) structures are allocate
 
 **Important**  You must call [**DismDelete**](dismdelete-function.md), passing the *ImageInfo* pointer, to free the resources associated with the [DismImageInfo](dismimageinfo-structure.md) structures.
 
- 
+ 
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -82,7 +82,7 @@ hr = DismGetImageInfo(L"C:\\Images\\Image1.vhd", &amp;ImageInfo, &amp;ImageInfoC
 <tbody>
 <tr class="odd">
 <td><p>Supported host platform for .wim images:</p></td>
-<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the [Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).</p></td>
+<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=206587" data-raw-source="[Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587)">Windows ADK Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supported host platform for .vhd images:</p></td>
@@ -95,7 +95,7 @@ hr = DismGetImageInfo(L"C:\\Images\\Image1.vhd", &amp;ImageInfo, &amp;ImageInfoC
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -108,9 +108,9 @@ hr = DismGetImageInfo(L"C:\\Images\\Image1.vhd", &amp;ImageInfo, &amp;ImageInfoC
 
 [**DismDelete**](dismdelete-function.md)
 
- 
+ 
 
- 
+ 
 
 
 

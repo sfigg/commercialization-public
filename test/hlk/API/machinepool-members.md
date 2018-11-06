@@ -40,7 +40,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
@@ -80,7 +80,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -104,7 +104,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -127,7 +127,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tr>
 <tr class="even">
 <td><p><strong>DeleteChildPool</strong></p></td>
-<td><p>This method deletes a child machine pool that doesn't contain any machines in it.</p></td>
+<td><p>This method deletes a child machine pool that doesn&#39;t contain any machines in it.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DeleteMachine</strong></p></td>
@@ -172,7 +172,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -200,7 +200,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Enumeration"></span><span id="enumeration"></span><span id="ENUMERATION"></span>Enumeration
 
@@ -224,11 +224,11 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

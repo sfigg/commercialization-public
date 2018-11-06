@@ -65,9 +65,9 @@ UCHAR Reserved[7];
 
 [Structures](structures-wpa.md)
 
- 
+ 
 
- 
+ 
 
 
 

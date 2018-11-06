@@ -59,7 +59,7 @@ Specifies whether the system uses low power sleep states.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

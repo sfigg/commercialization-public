@@ -32,9 +32,9 @@ In this walkthrough, we'll use ffutool.exe, which is installed as part of the Wi
 
 It will take a few minutes for the image to be fully flashed to the device. Once flashing is done, go through device setup and verify that your customizations appear as part of the image.
 
- 
+ 
 
- 
+ 
 
 
 

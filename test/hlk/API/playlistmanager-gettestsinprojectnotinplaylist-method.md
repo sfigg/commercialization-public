@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This method is being deprecated.
 
- 
+ 
 
 Finds the tests that are in the [PlaylistManager](playlistmanager-class.md)'s Project but not in the given Playlist.
 
@@ -33,7 +33,7 @@ Finds the tests that are in the [PlaylistManager](playlistmanager-class.md)'s Pr
 
 ` public List<Test> GetTestsInProjectNotInPlaylist (`
 
-          `string playlistPath`
+          `string playlistPath`
 
 `)`
 
@@ -56,9 +56,9 @@ List of tests in the[PlaylistManager](playlistmanager-class.md)'s Project but no
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

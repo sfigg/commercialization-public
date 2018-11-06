@@ -48,13 +48,13 @@ This method adds driver files to the submission package and checks the driver fi
 
 `Public Function AddReplacementDriver ( _`
 
-          `pathToNewDriver As String, _`
+          `pathToNewDriver As String, _`
 
-          `replacesDriverId As String, _`
+          `replacesDriverId As String, _`
 
-          `<OutAttribute> ByRef errorMessages As StringCollection, _`
+          `<OutAttribute> ByRef errorMessages As StringCollection, _`
 
-          `<OutAttribute> ByRef warningMessages As StringCollection _`
+          `<OutAttribute> ByRef warningMessages As StringCollection _`
 
 `) As Boolean`
 
@@ -62,13 +62,13 @@ This method adds driver files to the submission package and checks the driver fi
 
 `public bool AddReplacementDriver (`
 
-          `string pathToNewDriver,`
+          `string pathToNewDriver,`
 
-          `string replacesDriverId,`
+          `string replacesDriverId,`
 
-          `out StringCollection errorMessages,`
+          `out StringCollection errorMessages,`
 
-          `out StringCollection warningMessages`
+          `out StringCollection warningMessages`
 
 `)`
 
@@ -77,19 +77,19 @@ This method adds driver files to the submission package and checks the driver fi
 
 *pathToNewDriver*
 
-     The path to the driver files. All files in this directory and all subdirectories (and their files) will be packaged.
+     The path to the driver files. All files in this directory and all subdirectories (and their files) will be packaged.
 
 *replacesDriverId*
 
-     The GUID of the driver that this replaces.
+     The GUID of the driver that this replaces.
 
 *errorMessages*
 
-     Reference to a string collection that will contain all the error messages.
+     Reference to a string collection that will contain all the error messages.
 
 *warningMessages*
 
-     Reference to a string collection that will contain all the warning messages.
+     Reference to a string collection that will contain all the warning messages.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -118,9 +118,9 @@ An exception is thrown when:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

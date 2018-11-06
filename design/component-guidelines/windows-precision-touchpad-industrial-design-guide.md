@@ -33,21 +33,21 @@ This topic provides industrial design guidance for Windows Precision Touchpads. 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Surface Treatment](windows-precision-touchpad-surface-treatment.md)</p></td>
+<td><p><a href="windows-precision-touchpad-surface-treatment.md" data-raw-source="[Surface Treatment](windows-precision-touchpad-surface-treatment.md)">Surface Treatment</a></p></td>
 <td><p>The coversheet of a Windows Precision Touchpad delights the user by its feel. The coversheet is manufactured with a high quality coating and machined texture to produce a glass-like smoothness.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Palm Deck Integration](windows-precision-touchpad-palm-deck-integration.md)</p></td>
+<td><p><a href="windows-precision-touchpad-palm-deck-integration.md" data-raw-source="[Palm Deck Integration](windows-precision-touchpad-palm-deck-integration.md)">Palm Deck Integration</a></p></td>
 <td><p>Integration of a precision touchpad with the palm deck impacts the ease of use of the touchpad. Precision touchpads are designed to be natural and intuitive interface for all users. Users should able to easily identify the interaction surface, gesture in a natural and responsive fashion, and seamlessly interact with the touchpad without having to shift their focus from the screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Mechanics](windows-precision-touchpad-mechanics.md)</p></td>
+<td><p><a href="windows-precision-touchpad-mechanics.md" data-raw-source="[Mechanics](windows-precision-touchpad-mechanics.md)">Mechanics</a></p></td>
 <td><p>This topic describes the mechanics for the industrial design of Windows Precision Touchpads.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The guidance in this topic ensures that Windows Precision Touchpad interactions are natural and enhance the overall quality of the user experience. Windows Precision Touchpads are built for the user and are seamlessly integrated into a mobile computing experience.
 
@@ -79,16 +79,16 @@ The following characteristics are verified as part of the Windows HCK for precis
 | Right Click Zone | Region that results in a right click when activation force is exerted upon it |
 | Zone Marker      | Identification marker delineating right click zone                            |
 
- 
+ 
 
 ## Related topics
 
 
 [Design Recommendations for Windows 8 Touchpads](http://go.microsoft.com/fwlink/p/?LinkID=389118)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -80,7 +80,7 @@ This member can also be used to specify that the session is a private logger ses
 **Note**  
 Do not specify real-time logging unless there are real-time consumers ready to consume the events. If there are no real-time consumers, the events are written to a playback file. The size of the playback file is limited. If the limit is reached, no new events are logged to the log file or the playback file. The logging functions fail with STATUS\_LOG\_FILE\_FULL.
 
- 
+ 
 
 <a href="" id="enableflags"></a>**EnableFlags**  
 This member is used only for NT kernel logger sessions. It identifies to the kernel logger which events to trace. By using logical **OR**, this member can contain one or more values. In addition to the events specified, the kernel logger also logs hardware configuration events.
@@ -134,7 +134,7 @@ According to the type of log file chosen, it may be necessary to set the **Maxim
 **Note**  
 It is not necessary to set the logger name at the **LoggerNameOffset** because this function always uses the KERNEL\_LOGGER\_NAME value to call StartKernelTrace. This function checks whether the **Wnode.Guid** corresponds to **SystemTraceControlGuid**; if not, it returns ERROR\_INVALID\_PARAMETER. If **Wnode.Guid** corresponds to **KernelRundownGuid**, the logger name should be specified. The **KernelRundownGuid** is the control GUID used to log events such as existing process information, thread information, images loaded per process, and hardware configuration such as CPU, video, disk, network cards, services, power, Plug and Play, and disk IDE channels.
 
- 
+ 
 
 ## Return Value
 
@@ -170,7 +170,7 @@ Possible error values are described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 If the function fails for a reason other than those listed, a system error code is returned.
 
@@ -194,9 +194,9 @@ If **StackTracingEventIds** contain events that are not enabled in the **EVENT\_
 
 [Custom Injection of System Information](custom-injection-of-system-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

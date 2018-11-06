@@ -20,17 +20,17 @@ The Windows Hardware Lab Kit (Windows HLK) uses all the features of the object m
 
 The following illustration shows the object model hierarchy for the **Microsoft.Windows.Kits.Hardware.ObjectModel** namespace.
 
->[!NOTE]
->  
-This illustration doesn't include every object in the **Microsoft.Windows.Kits.Hardware.ObjectModel** namespace.
+> [!NOTE]
+> 
+> This illustration doesn't include every object in the **Microsoft.Windows.Kits.Hardware.ObjectModel** namespace.
 
- 
+ 
 
 ![windows hlk object model hierarchy](images/hlk-win10-om.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,21 +32,21 @@ This guide is organized into the following three sections:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Background](#cpu-guide-background)</p></td>
+<td><p><a href="#cpu-guide-background" data-raw-source="[Background](#cpu-guide-background)">Background</a></p></td>
 <td><p>This section describes how CPU resources are managed in Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows ADK Tools](#cpu-guide-adktools)</p></td>
+<td><p><a href="#cpu-guide-adktools" data-raw-source="[Windows ADK Tools](#cpu-guide-adktools)">Windows ADK Tools</a></p></td>
 <td><p>This section explains how to view and interpret CPU information in the Windows ADK Toolkit.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Techniques](#cpu-guide-techniques)</p></td>
+<td><p><a href="#cpu-guide-techniques" data-raw-source="[Techniques](#cpu-guide-techniques)">Techniques</a></p></td>
 <td><p>This section contains a collection of techniques that you can use to investigate and solve common problems that are related to CPU performance.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="cpu-guide-background"></a>Background
 
@@ -178,7 +178,7 @@ After you load a trace into WPA, you can find processor hardware information und
 **Note**  
 All procedures in this guide occur in WPA.
 
- 
+ 
 
 ### CPU Idle States Graph
 
@@ -249,7 +249,7 @@ Each row in the following table describes an idle state change for either the Ta
 </tbody>
 </table>
 
- 
+ 
 
 The default WPA profile provides two presets for this graph: **State by Type, CPU** and **State Diagram by Type, CPU**.
 
@@ -332,7 +332,7 @@ If CPU frequency data was collected on a system that supports multiple P- or T-s
 </tbody>
 </table>
 
- 
+ 
 
 The default profile defines the **Frequency by CPU** preset for this graph. Figure 4 CPU Frequency by CPU shows a CPU as it transitions between three P-states:
 
@@ -443,7 +443,7 @@ The following columns are available for each row in the graph:
 </tbody>
 </table>
 
- 
+ 
 
 The default profile provides the following presets for this graph:
 
@@ -730,7 +730,7 @@ The data in the following table relates to each target thread:
 </tbody>
 </table>
 
- 
+ 
 
 The default profile uses the following presets for this graph:
 
@@ -913,7 +913,7 @@ The columns for the DPC/ISR graph describe fragment-level information, or DPC/IS
 </tbody>
 </table>
 
- 
+ 
 
 The default profile uses the following presets for this graph:
 
@@ -973,16 +973,16 @@ The **Stacks** column in the WPA UI contains an expander for each non-leaf node.
 5ms   ModuleA!Function1
 5ms   ModuleA!Function2
 5ms   ModuleA!Function3
-      |
+      |
 4ms   |-ModuleA!Function4
 4ms   |   ModuleB!Function1
-      |   |
+      |   |
 1ms   |   |-ModuleB-Function2
 1ms   |   |    ModuleB-Function3
-      |   |
+      |   |
 3ms   |   |-ModuleB!Function3
 3ms   |        ModuleB!Function4
-      |
+      |
 1ms   |-ModuleA!Function5
 1ms        ModuleC!Function1
 1ms        ModuleC!Function2
@@ -994,7 +994,7 @@ For example, **Function1** calls **Function2**. **Function2** spent 2ms in a CPU
 
 ```
 6ms   ModuleA!Function1
-      |
+      |
 2ms   |-<itself>
 4ms   |-ModuleA!Function2
 4ms        ModuleB!Function3
@@ -1257,7 +1257,7 @@ If these issues are reported for an activity that incurs delays, direct CPU usag
     **Note**  
     On a system that has multiple processors, a thread that uses 100% of a single processor will appear to be consuming 100/(number of logical processors). On this kind of system, only the virtual idle thread (PID 0, TID 0) can show a greater processor utilization than 100/(number of logical processors). If the processes and threads that consume the most CPU correspond to any threads in the critical path, direct CPU usage is probably a factor.
 
-     
+     
 
 **Example of Assessment-Reported Direct CPU Usage issue**
 
@@ -1478,7 +1478,7 @@ Figure 47 Problem Events and DPC/ISR Activity shows that thread 864 of iexplore.
 **Note**  
 Most DPC/ISRs do not have as high an impact as that shown in this example.
 
- 
+ 
 
 ![figure 47 problem events and dpc isr activity](images/dep-win8-cpu-techniques-figure-47-problem-events-and-dpc-isr-activity.png)
 
@@ -1553,7 +1553,7 @@ The total duration of DPCs/ISRs is important, but long-running individual DPCs/I
 **Note**  
 If this preset is not available, you can open the **View Editor**, **Advanced** section, to add a filter.
 
- 
+ 
 
 ### Resolution
 
@@ -1582,9 +1582,9 @@ DPC/ISR activity often reflects a hardware or software problem that must be corr
 
 [Windows Performance Toolkit Technical Reference](windows-performance-toolkit-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,12 +67,12 @@ The following table describes the valid elements that can be added to the `Run` 
 <tr class="even">
 <td align="left"><p><code>Param</code></p></td>
 <td align="left"><p>Specifies the command-line parameters to use when you run the custom script or executable file. The value is treated as a string, and can contain multiple parameters.</p>
-<p><code>Param</code> does not support empty elements. If your script does not require parameters, then do not include this element. For examples, see [Using ResetConfig.xml](#usingresetconfig-xml) later in this topic.</p></td>
+<p><code>Param</code> does not support empty elements. If your script does not require parameters, then do not include this element. For examples, see <a href="#usingresetconfig-xml" data-raw-source="[Using ResetConfig.xml](#usingresetconfig-xml)">Using ResetConfig.xml</a> later in this topic.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="resetconfig.xml_sysdisk_options"></span><span id="RESETCONFIG.XML_SYSDISK_OPTIONS"></span>SystemDisk
 
@@ -97,7 +97,7 @@ You can specify one `SystemDisk` section. Here's the required and optional eleme
 <td align="left"><code>MinSize</code>
 <p></p></td>
 <td align="left"><p>Required. Specifies the minimum required size for the primary hard drive, in megabytes.</p>
-<p>Bare metal recovery won't proceed if the system disk doesn't meet this size requirement.</p></td>
+<p>Bare metal recovery won&#39;t proceed if the system disk doesn&#39;t meet this size requirement.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><code>DiskpartScriptPath</code></p></td>
@@ -148,7 +148,7 @@ You can specify one `SystemDisk` section. Here's the required and optional eleme
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="usingresetconfig-xml"></span><span id="USINGRESETCONFIG-XML"></span>Using ResetConfig.xml
 
@@ -202,9 +202,9 @@ This is a code example for the ResetConfig.xml file.
 
 [Create Media to Run Push-Button Reset Features](create-media-to-run-push-button-reset-features-s14.md)
 
- 
+ 
 
- 
+ 
 
 
 

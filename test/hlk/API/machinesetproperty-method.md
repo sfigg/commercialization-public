@@ -44,9 +44,9 @@ This method creates a new, or updates an existing property value for a machine.
 
 `Public MustOverride Function SetProperty ( _`
 
-          `nameOfPropertyToSet As String, _`
+          `nameOfPropertyToSet As String, _`
 
-          `valueOfPropertyToSet As String _`
+          `valueOfPropertyToSet As String _`
 
 `) As String`
 
@@ -54,9 +54,9 @@ This method creates a new, or updates an existing property value for a machine.
 
 `public abstract string SetProperty (`
 
-          `string nameOfPropertyToSet,`
+          `string nameOfPropertyToSet,`
 
-          `string valueOfPropertyToSet`
+          `string valueOfPropertyToSet`
 
 `)`
 
@@ -65,11 +65,11 @@ This method creates a new, or updates an existing property value for a machine.
 
 *nameOfPropertyToSet*
 
-     The name of the property to create or set.
+     The name of the property to create or set.
 
 *valueOfPropertyToSet*
 
-     The value to set the property to.
+     The value to set the property to.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -94,9 +94,9 @@ An exception occurs if:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

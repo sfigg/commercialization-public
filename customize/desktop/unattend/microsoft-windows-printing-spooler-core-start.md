@@ -41,7 +41,7 @@ Indicates whether the spooler autologger will start by default when the system b
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid configuration passes
 
@@ -58,9 +58,9 @@ specialize
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,126 +35,128 @@ This customization supports: **per-IMSI** value, **per-device** value
                          Description="Use to hide the connection speed option or customize the default character codes for connection speed."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
 
-    <!-- Use for the per-IMSI case 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
-     
-        <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">  
+~~~
+<!-- Use for the per-IMSI case 
 
-          <!-- Settings to hide some options or the entire Highest connection speed dropdown -->
-          <!-- To hide the 4G Only option from the Highest connection speed dropdown
-          <Setting Name="HideHighestSpeed4GOnly" Value="1" />
-          -->   
-          <!-- To hide the 4G option from the Highest connection speed dropdown
-          <Setting Name="HideHighestSpeed4G" Value="1" />
-          -->       
-          <!-- To hide the 3G Only option from the Highest connection speed dropdown
-          <Setting Name="HideHighestSpeed3GOnly" Value="1" />
-          --> 
-          <!-- To hide the 2G option from the Highest connection speed dropdown 
-          <Setting Name="HideHighestSpeed2G" Value="1" />         
-          -->
+  <!-- Define the Targets --> 
+  <Targets>
+     <Target Id="">
+        <TargetState>
+           <Condition Name="" Value="" />
+           <Condition Name="" Value="" />
+        </TargetState>
+     </Target>
+  </Targets>
 
-          <!-- To hide the Highest connection speed dropdown entirely
-          <Setting Name="HideHighestSpeed" Value="1" />         
-          -->
+  <Static>
+    <Settings Path="Multivariant">
+      <Setting Name="Enable" Value="1" />
+    </Settings>
+    <Settings Path="AutoDataConfig">
+      <Setting Name="Enable" Value="0" />
+    </Settings>
+  </Static>
 
-          <!-- To show the 3G Preferred option in the Highest connection speed dropdown 
-          <Setting Name="ShowHideHighestSpeed3GPreferred" Value="1" />         
-          -->
+  <!-- Specify the Variant -->
+  <Variant Name=""> 
+    <TargetRefs>
+      <TargetRef Id="" /> 
+    </TargetRefs>
 
-          <!-- Settings to customize the default character codes for connection speed. For example, to change the default '4G' character
-               code for ighestSpeed4G, change the value to another character code such as 'LTE'.  
-          <Setting Name="HighestSpeed2G" Value="" />
-          <Setting Name="HighestSpeed3G" Value="" />
-          <Setting Name="HighestSpeed3GOnly" Value="" />
-          <Setting Name="HighestSpeed3GPreferred" Value="" />
-          <Setting Name="HighestSpeed4G" Value="" />
-          <Setting Name="HighestSpeed4GOnly" Value="" />              
-          -->            
+    <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">  
 
-          <!-- To modify the Highest connection speed dropdown title
-          <Setting Name="HighestSpeedTitle" Value="" />         
-          --> 
+      <!-- Settings to hide some options or the entire Highest connection speed dropdown -->
+      <!-- To hide the 4G Only option from the Highest connection speed dropdown
+      <Setting Name="HideHighestSpeed4GOnly" Value="1" />
+      -->   
+      <!-- To hide the 4G option from the Highest connection speed dropdown
+      <Setting Name="HideHighestSpeed4G" Value="1" />
+      -->       
+      <!-- To hide the 3G Only option from the Highest connection speed dropdown
+      <Setting Name="HideHighestSpeed3GOnly" Value="1" />
+      --> 
+      <!-- To hide the 2G option from the Highest connection speed dropdown 
+      <Setting Name="HideHighestSpeed2G" Value="1" />         
+      -->
 
-        </Settings>  
-      </Variant>
+      <!-- To hide the Highest connection speed dropdown entirely
+      <Setting Name="HideHighestSpeed" Value="1" />         
+      -->
 
-    -->
+      <!-- To show the 3G Preferred option in the Highest connection speed dropdown 
+      <Setting Name="ShowHideHighestSpeed3GPreferred" Value="1" />         
+      -->
 
-    <!-- Use for the per-device case
+      <!-- Settings to customize the default character codes for connection speed. For example, to change the default '4G' character
+           code for ighestSpeed4G, change the value to another character code such as 'LTE'.  
+      <Setting Name="HighestSpeed2G" Value="" />
+      <Setting Name="HighestSpeed3G" Value="" />
+      <Setting Name="HighestSpeed3GOnly" Value="" />
+      <Setting Name="HighestSpeed3GPreferred" Value="" />
+      <Setting Name="HighestSpeed4G" Value="" />
+      <Setting Name="HighestSpeed4GOnly" Value="" />              
+      -->            
 
-      <Static>  
-        <Settings Path="CellCore/PerDevice/CellUX">  
+      <!-- To modify the Highest connection speed dropdown title
+      <Setting Name="HighestSpeedTitle" Value="" />         
+      --> 
 
-          <!-- Settings to hide some options or the entire Highest connection speed dropdown -->
-          <!-- To hide the 4G Only option from the Highest connection speed dropdown
-          <Setting Name="HideHighestSpeed4GOnly" Value="1" />
-          -->   
-          <!-- To hide the 4G option from the Highest connection speed dropdown
-          <Setting Name="HideHighestSpeed4G" Value="1" />
-          -->       
-          <!-- To hide the 3G Only option from the Highest connection speed dropdown
-          <Setting Name="HideHighestSpeed3GOnly" Value="1" />
-          --> 
-          <!-- To hide the 2G option from the Highest connection speed dropdown 
-          <Setting Name="HideHighestSpeed2G" Value="1" />         
-          -->
+    </Settings>  
+  </Variant>
 
-          <!-- To hide the Highest connection speed dropdown entirely
-          <Setting Name="HideHighestSpeed" Value="1" />         
-          -->
+-->
 
-          <!-- To show the 3G Preferred option in the Highest connection speed dropdown 
-          <Setting Name="ShowHideHighestSpeed3GPreferred" Value="1" />         
-          -->
+<!-- Use for the per-device case
 
-          <!-- Settings to customize the default character codes for connection speed. For example, to change the default '4G' character
-               code for ighestSpeed4G, change the value to another character code such as 'LTE'.  
-          <Setting Name="HighestSpeed2G" Value="" />
-          <Setting Name="HighestSpeed3G" Value="" />
-          <Setting Name="HighestSpeed3GOnly" Value="" />
-          <Setting Name="HighestSpeed3GPreferred" Value="" />
-          <Setting Name="HighestSpeed4G" Value="" />
-          <Setting Name="HighestSpeed4GOnly" Value="" />
-          -->       
+  <Static>  
+    <Settings Path="CellCore/PerDevice/CellUX">  
 
-          <!-- To modify the Highest connection speed dropdown title
-          <Setting Name="HighestSpeedTitle" Value="" />         
-          -->
+      <!-- Settings to hide some options or the entire Highest connection speed dropdown -->
+      <!-- To hide the 4G Only option from the Highest connection speed dropdown
+      <Setting Name="HideHighestSpeed4GOnly" Value="1" />
+      -->   
+      <!-- To hide the 4G option from the Highest connection speed dropdown
+      <Setting Name="HideHighestSpeed4G" Value="1" />
+      -->       
+      <!-- To hide the 3G Only option from the Highest connection speed dropdown
+      <Setting Name="HideHighestSpeed3GOnly" Value="1" />
+      --> 
+      <!-- To hide the 2G option from the Highest connection speed dropdown 
+      <Setting Name="HideHighestSpeed2G" Value="1" />         
+      -->
 
-        </Settings>  
-      </Static>
+      <!-- To hide the Highest connection speed dropdown entirely
+      <Setting Name="HideHighestSpeed" Value="1" />         
+      -->
 
-    -->
+      <!-- To show the 3G Preferred option in the Highest connection speed dropdown 
+      <Setting Name="ShowHideHighestSpeed3GPreferred" Value="1" />         
+      -->
 
-    </ImageCustomizations>
-    ```
+      <!-- Settings to customize the default character codes for connection speed. For example, to change the default '4G' character
+           code for ighestSpeed4G, change the value to another character code such as 'LTE'.  
+      <Setting Name="HighestSpeed2G" Value="" />
+      <Setting Name="HighestSpeed3G" Value="" />
+      <Setting Name="HighestSpeed3GOnly" Value="" />
+      <Setting Name="HighestSpeed3GPreferred" Value="" />
+      <Setting Name="HighestSpeed4G" Value="" />
+      <Setting Name="HighestSpeed4GOnly" Value="" />
+      -->       
+
+      <!-- To modify the Highest connection speed dropdown title
+      <Setting Name="HighestSpeedTitle" Value="" />         
+      -->
+
+    </Settings>  
+  </Static>
+
+-->
+
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
@@ -198,10 +200,10 @@ This customization supports: **per-IMSI** value, **per-device** value
 
     For example, to change the default '4G' character code for `HighestSpeed4G` to another character code such as 'LTE', set the `Value` to 'LTE'. Although there is no limit to number of characters you can use, if the character code is too long, this will be truncated in the UI.
 
-    **Note**  
+    **Note**  
     You must include all three values (even if you are only modifying one) or the display text will not be set correctly.
 
-     
+
 
 7.  **To customize the Highest connection speed drop-down label**
 

@@ -66,11 +66,11 @@ A flag value that indicates whether this machine property is a settable property
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

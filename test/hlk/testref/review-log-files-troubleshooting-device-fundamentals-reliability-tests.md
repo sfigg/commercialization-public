@@ -71,9 +71,9 @@ WDTF_PNP                  : INFO  :          Target: Marvell AVASTAR Wireless-N 
 
 [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md)
 
- 
+ 
 
- 
+ 
 
 
 

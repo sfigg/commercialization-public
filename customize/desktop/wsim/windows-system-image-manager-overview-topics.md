@@ -37,27 +37,27 @@ You can use Windows SIM to do the following:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview.md)</p></td>
+<td><p><a href="windows-system-image-manager-scenarios-overview.md" data-raw-source="[Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview.md)">Windows System Image Manager Scenarios Overview</a></p></td>
 <td><p>Describes Windows SIM scenarios and when to use which scenario.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows System Image Manager User Interface Overview](windows-system-image-manager-user-interface-overview.md)</p></td>
+<td><p><a href="windows-system-image-manager-user-interface-overview.md" data-raw-source="[Windows System Image Manager User Interface Overview](windows-system-image-manager-user-interface-overview.md)">Windows System Image Manager User Interface Overview</a></p></td>
 <td><p>Describes the user interface of Windows SIM.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md)</p></td>
+<td><p><a href="windows-image-files-and-catalog-files-overview.md" data-raw-source="[Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md)">Windows Image Files and Catalog Files Overview</a></p></td>
 <td><p>Describes conceptual information about Windows image files and catalog (.clg) files.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Answer Files Overview](answer-files-overview.md)</p></td>
+<td><p><a href="answer-files-overview.md" data-raw-source="[Answer Files Overview](answer-files-overview.md)">Answer Files Overview</a></p></td>
 <td><p>Describes conceptual information about the structure of answer files.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Best Practices for Authoring Answer Files](best-practices-for-authoring-answer-files.md)</p></td>
+<td><p><a href="best-practices-for-authoring-answer-files.md" data-raw-source="[Best Practices for Authoring Answer Files](best-practices-for-authoring-answer-files.md)">Best Practices for Authoring Answer Files</a></p></td>
 <td><p>Describes recommendations to consider when you are creating and managing answer files.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md)</p></td>
+<td><p><a href="distribution-shares-and-configuration-sets-overview.md" data-raw-source="[Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md)">Distribution Shares and Configuration Sets Overview</a></p></td>
 <td><p>Describes information about distribution shares, how they work, and when to create a configuration set.</p></td>
 </tr>
 </tbody>

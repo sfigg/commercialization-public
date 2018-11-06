@@ -50,11 +50,11 @@ Here's a table showing the reporting sequence for a two-contact scenario, and us
 | Contact 2: Tip switch | NR     | 1      | NR     | 1      | NR     | 1      |
 | Scan Time             | T1     | T1     | T2     | T2     | T3     | T3     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ In this section, we'll go through the process of customizing and building a mobi
 
 Before proceeding with either of the walkthroughs, you must first complete the steps in [Prepare for Windows mobile development](preparing-for-windows-mobile-development.md) and [Configure the Start layout](configure-the-start-layout.md). Windows Provisioning/Windows ICD understands MCSF CAF so if you want to learn how to create a CAF, see [Configure customization settings](configure-customization-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

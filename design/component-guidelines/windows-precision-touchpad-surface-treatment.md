@@ -31,9 +31,9 @@ Textured surfaces such as dimples or bumps increase the surface friction when th
 
 The coversheet shall have a perceived smoothness to glass. We recommend a surface roughness of &lt; 0.01 Ra so that gestures feel responsive and user confidence is maximized.
 
- 
+ 
 
- 
+ 
 
 
 

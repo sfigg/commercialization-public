@@ -21,7 +21,7 @@ Before you can create an RFU, you’ll need to prepare the firmware submission, 
 **Important**  
 Submit separate RFUs for each Phone-Operator pairing. For example, if you have two phones on a specific Mobile Operator (MO), you will need to submit two RFUs. If you have a device on four different MOs, you will need to submit four RFUs.
 
- 
+ 
 
 This is the syntax for **New-RequestForUpdate**:
 
@@ -71,13 +71,13 @@ The **RequestForUpdateType** must be set to one of these two values:
 </tr>
 <tr class="even">
 <td align="left"><p>Trial</p></td>
-<td align="left"><p>Used by OEMs to test OTA updates and evaluate the quality of their RFUs prior to submitting a retail servicing submission. It's also used to test updates for commercializing new devices.</p>
+<td align="left"><p>Used by OEMs to test OTA updates and evaluate the quality of their RFUs prior to submitting a retail servicing submission. It&#39;s also used to test updates for commercializing new devices.</p>
 <p>It is not intended for MO lab trials. Updates published here do not get published to Microsoft Update live production.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The **SourceFirmwareSubmissionTicketId** is the ticket ID of the firmware submission devices update from. This is only required if phones are updating to Windows Phone 8.1 or higher. To guard against publishing updates that could potentially cause update errors, the Windows Phone device update publishing service reserves the right to reject RFUs that do not include the **SourceFirmwareSubmissionTicketId** of the previous update. For more info on versioning, see [Update requirements](update-requirements.md).
 
@@ -401,7 +401,7 @@ PS C:\Windows\system32>
 
 [Request-UpdateCancellation](request-updatecancellation.md)
 
- 
+ 
 
- 
+ 
 

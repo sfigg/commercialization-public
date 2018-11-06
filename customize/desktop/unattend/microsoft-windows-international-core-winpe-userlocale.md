@@ -44,7 +44,7 @@ For a list of supported languages, locales, and identifiers, see [Available Lang
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -82,9 +82,9 @@ The following example shows how to set the user locale to Japanese (Japan).
 
 [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md)
 
- 
+ 
 
- 
+ 
 
 
 

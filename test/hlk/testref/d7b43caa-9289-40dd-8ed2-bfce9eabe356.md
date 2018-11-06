@@ -26,6 +26,7 @@ The Fuzz test records the stream names used in the test.
 -   **Test method:** DoSubOpensWithStreamsTest
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.DevFund.Reliability.BasicReliabilityAndPerformance</li><li>Device.DevFund.Reliability.BasicSecurity</li><li>Device.DevFund.DriverFramework.KMDF.Reliability</li><li>Device.DevFund.DriverFramework.UMDF.Reliability</li></ul> |  
@@ -38,7 +39,7 @@ The Fuzz test records the stream names used in the test.
 |**Requires special configuration**| true |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -55,7 +56,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information specific to the Device Fundamentals tests in the HLK and WDK, see [Device.DevFund additional documentation](device-devfund-additional-documentation.md).
 
@@ -82,11 +83,11 @@ For troubleshooting information specific to the Device Fundamentals tests in the
 | **WDTFREMOTESYSTEM**                     | Required ONLY if DUT or one of its child devices is a wired NIC that doesn't have an IPv6 gateway address. If determined to be required, please provide an IPv6 address that the test NIC can ping to test network I/O. Eg: fe80::78b6:810:9c12:46cd    |
 | **DriverVerifierCustomizeConfiguration** | Specifies that this test may want to automatically update Driver Verifier settings                                                                                                                                                                      |
 
- 
 
- 
 
- 
+
+
+
 
 
 

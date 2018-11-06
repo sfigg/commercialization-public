@@ -80,7 +80,7 @@ This jumper can be used for level-shifting an I<sup>2</sup>C signal to WITT. Set
 ## <span id="witti2csoft"></span><span id="WITTI2CSOFT"></span>WITT I<sup>2</sup>C controller test software setup
 
 
-WITT test binaries are shipped together with the Windows HLK and are located on a Windows HLK controller or server in the **\\\\{$***HCKServer***}\\Tests\\{$***PROCESSOR\_ARCHITECTURE***}\\spb** folder, where *HCKServer* is the name of the Windows HLK server and *$PROCESSOR\_ARCHITECTURE* is the device platform (AMD64, x86, or ARM). The WITT I<sup>2</sup>C tests require the following binaries:
+WITT test binaries are shipped together with the Windows HLK and are located on a Windows HLK controller or server in the **\\\\{$**<em>HCKServer</em>**}\\Tests\\{$**<em>PROCESSOR\_ARCHITECTURE</em>**}\\spb** folder, where *HCKServer* is the name of the Windows HLK server and *$PROCESSOR\_ARCHITECTURE* is the device platform (AMD64, x86, or ARM). The WITT I<sup>2</sup>C tests require the following binaries:
 
 -   Test peripheral driver: **WITTTest.inf**, **WITTTest.sys**, and **WITTTest.cat**.
 
@@ -94,147 +94,147 @@ To setup a typical test configuration that uses a single controller, perform the
 
 **To set up a typical test configuration**
 
-1.  Open a command prompt that has administrative privileges.
+1. Open a command prompt that has administrative privileges.
 
-2.  Run the following command to install the test peripheral driver:
+2. Run the following command to install the test peripheral driver:
 
-    ``` syntax
-    pnputil -a witttest.inf
-    ```
+   ``` syntax
+   pnputil -a witttest.inf
+   ```
 
-    The *-a* flag adds the driver package to the Windows driver store.
+   The *-a* flag adds the driver package to the Windows driver store.
 
-3.  Update the Advanced Configuration and Power Interface (ACPI) table to enumerate the test device nodes. These are usually defined in the SSDT (secondary system descriptor table) or the DSDT (differentiated system description table).
+3. Update the Advanced Configuration and Power Interface (ACPI) table to enumerate the test device nodes. These are usually defined in the SSDT (secondary system descriptor table) or the DSDT (differentiated system description table).
 
-    -   In the command prompt window, run the following command to generate the SSDT:
+   - In the command prompt window, run the following command to generate the SSDT:
 
-        ``` syntax
-        asl.exe /tab:ssdt
-        ```
+     ``` syntax
+     asl.exe /tab:ssdt
+     ```
 
-    -   Edit the generated **SSDT.asl** table as follows:
+   - Edit the generated **SSDT.asl** table as follows:
 
-        ``` syntax
-        Device(TP1) {
-            Name(_ADR,0)
-            Name (_HID, "STK0001") 
-            Name (_CID, "WITTTest") 
-            Method(_CRS, 0x0, NotSerialized)
-            {
-              Name (RBUF, ResourceTemplate ()
-              {
-                I2CSerialBus ( 0x7F, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
-              })
-              Return(RBUF)
-            }
-        }
-        Device(TP2) {
-            Name(_ADR,0)
-            Name (_HID, "STK0002") 
-            Name (_CID, "WITTTest") 
-            Method(_CRS, 0x0, NotSerialized)
-            {
-              Name (RBUF, ResourceTemplate ()
-              {
-                I2CSerialBus ( 0x11, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
-              })
-              Return(RBUF)
-            }
-        }
-        Device(TP3) {
-            Name(_ADR,0)
-            Name (_HID, "STK0003") 
-            Name (_CID, "WITTTest") 
-            Method(_CRS, 0x0, NotSerialized)
-            {
-              Name (RBUF, ResourceTemplate ()
-              {
-                I2CSerialBus ( 0x12, ControllerInitiated, 400000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
-              })
-              Return(RBUF)
-            }
-        }
-        Device(TP4) {
-            Name(_ADR,0)
-            Name (_HID, "STK0004") 
-            Name (_CID, "WITTTest") 
-            Method(_CRS, 0x0, NotSerialized)
-            {
-              Name (RBUF, ResourceTemplate ()
-              {
-                I2CSerialBus ( 0x13, ControllerInitiated, 1000000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
-              })
-              Return(RBUF)
-            }
-        }
-        ```
+     ``` syntax
+     Device(TP1) {
+         Name(_ADR,0)
+         Name (_HID, "STK0001") 
+         Name (_CID, "WITTTest") 
+         Method(_CRS, 0x0, NotSerialized)
+         {
+           Name (RBUF, ResourceTemplate ()
+           {
+             I2CSerialBus ( 0x7F, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
+           })
+           Return(RBUF)
+         }
+     }
+     Device(TP2) {
+         Name(_ADR,0)
+         Name (_HID, "STK0002") 
+         Name (_CID, "WITTTest") 
+         Method(_CRS, 0x0, NotSerialized)
+         {
+           Name (RBUF, ResourceTemplate ()
+           {
+             I2CSerialBus ( 0x11, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
+           })
+           Return(RBUF)
+         }
+     }
+     Device(TP3) {
+         Name(_ADR,0)
+         Name (_HID, "STK0003") 
+         Name (_CID, "WITTTest") 
+         Method(_CRS, 0x0, NotSerialized)
+         {
+           Name (RBUF, ResourceTemplate ()
+           {
+             I2CSerialBus ( 0x12, ControllerInitiated, 400000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
+           })
+           Return(RBUF)
+         }
+     }
+     Device(TP4) {
+         Name(_ADR,0)
+         Name (_HID, "STK0004") 
+         Name (_CID, "WITTTest") 
+         Method(_CRS, 0x0, NotSerialized)
+         {
+           Name (RBUF, ResourceTemplate ()
+           {
+             I2CSerialBus ( 0x13, ControllerInitiated, 1000000,AddressingMode7Bit, "\\_SB_.I2C3",,, , )
+           })
+           Return(RBUF)
+         }
+     }
+     ```
 
-        In this test, TP1 is used as test interface (0x7F), TP2 (0x11) is configured as standard I<sup>2</sup>C target, TP3 (0x12) is configured as fast I<sup>2</sup>C target and TP4 (0x13) is configured as fast plus I<sup>2</sup>C target.
+     In this test, TP1 is used as test interface (0x7F), TP2 (0x11) is configured as standard I<sup>2</sup>C target, TP3 (0x12) is configured as fast I<sup>2</sup>C target and TP4 (0x13) is configured as fast plus I<sup>2</sup>C target.
 
-        >[!NOTE]
-        >  
-        Change the I<sup>2</sup>C controller address that is listed in the table to that of the actual I<sup>2</sup>C controller.
+     > [!NOTE]
+     > 
+     > Change the I<sup>2</sup>C controller address that is listed in the table to that of the actual I<sup>2</sup>C controller.
 
-         
+         
 
-4.  In the command prompt window, run the following command to generate an **Ssdt.aml** file from the modified **Ssdt.asl** file:
+4. In the command prompt window, run the following command to generate an **Ssdt.aml** file from the modified **Ssdt.asl** file:
 
-    ``` syntax
-    asl.exe ssdt.asl
-    ```
+   ``` syntax
+   asl.exe ssdt.asl
+   ```
 
-5.  In the command prompt window, run the following command to update the revised ACPI table:
+5. In the command prompt window, run the following command to update the revised ACPI table:
 
-    ``` syntax
-    asl.exe /loadtable ssdt.aml
-    ```
+   ``` syntax
+   asl.exe /loadtable ssdt.aml
+   ```
 
-6.  Enable the driver verifier on the I<sup>2</sup>C Controller and in **Spbcx.sys** by using the default settings.
+6. Enable the driver verifier on the I<sup>2</sup>C Controller and in **Spbcx.sys** by using the default settings.
 
-7.  Restart the system: four device instances should display under the **WITT Test Class** node in Device Manager in the Windows HLK.
+7. Restart the system: four device instances should display under the **WITT Test Class** node in Device Manager in the Windows HLK.
 
-8.  You can verify that the WITT test environment is set up correctly by running **Spbcmd.exe** from the command line. Sample command output of the **Spbcmd** tool follows, where 7F is the signature for the test interface and 01, 02 and 03 are signatures for three testing targets.
+8. You can verify that the WITT test environment is set up correctly by running **Spbcmd.exe** from the command line. Sample command output of the **Spbcmd** tool follows, where 7F is the signature for the test interface and 01, 02 and 03 are signatures for three testing targets.
 
-    ``` syntax
-    > list
-    list
-    Available connection ID:
-    Target:53, Instance:0x0
-    Target:54, Instance:0x0
-    Target:55, Instance:0x0
-    Target:56, Instance:0x0
-    > i2c 0x0 0x21    //this step is not necessary if you are not testing multiple instances
-    i2c 0x0 0x21
-    Instance requested:0x0
-    I2C address requested:0x21
-    Found WITT test interface at \\.\RESOURCE_HUB\0000000000000035
-    WITT Testing I2C address successfully changed to 0x21 for instance 0x0
-    > open 53
-    open 53
-    Address 53 opened
-    > read 53 1
-    read 53 1
-    1 bytes read
-      7f
-    > open 54
-    open 54
-    Address 54 opened
-    > read 54 1
-    read 54 1
-    1 bytes read
-      01
-    > write 54 {01 02 03}
-    write 54 {01 02 03}
-    3 bytes written
-    > writeread 54 {01 02 03} 2
-    writeread 54 {01 02 03} 2
-    5 bytes transferred
-      01 01 52 00 c0
-    ```
+   ``` syntax
+   > list
+   list
+   Available connection ID:
+   Target:53, Instance:0x0
+   Target:54, Instance:0x0
+   Target:55, Instance:0x0
+   Target:56, Instance:0x0
+   > i2c 0x0 0x21    //this step is not necessary if you are not testing multiple instances
+   i2c 0x0 0x21
+   Instance requested:0x0
+   I2C address requested:0x21
+   Found WITT test interface at \\.\RESOURCE_HUB\0000000000000035
+   WITT Testing I2C address successfully changed to 0x21 for instance 0x0
+   > open 53
+   open 53
+   Address 53 opened
+   > read 53 1
+   read 53 1
+   1 bytes read
+     7f
+   > open 54
+   open 54
+   Address 54 opened
+   > read 54 1
+   read 54 1
+   1 bytes read
+     01
+   > write 54 {01 02 03}
+   write 54 {01 02 03}
+   3 bytes written
+   > writeread 54 {01 02 03} 2
+   writeread 54 {01 02 03} 2
+   5 bytes transferred
+     01 01 52 00 c0
+   ```
 
-    Use the **Open** and **Close** commands to open and close targets. **Read**, **Write**, and **WriteRead** are manual I/O commands.
+   Use the **Open** and **Close** commands to open and close targets. **Read**, **Write**, and **WriteRead** are manual I/O commands.
 
-    You can also use the **List** command to list all available I<sup>2</sup>C testing targets I<sup>2</sup>C: I<sup>2</sup>C 0x0 0x21. Switch the WITT testing address to start with 0x21(0x21,0x22,0x23); for example, 0 if you configured non-default I<sup>2</sup>C address in the ASL.
+   You can also use the **List** command to list all available I<sup>2</sup>C testing targets I<sup>2</sup>C: I<sup>2</sup>C 0x0 0x21. Switch the WITT testing address to start with 0x21(0x21,0x22,0x23); for example, 0 if you configured non-default I<sup>2</sup>C address in the ASL.
 
 ## <span id="howto"></span><span id="HOWTO"></span> I<sup>2</sup>C controller verification tests manual instructions
 
@@ -243,7 +243,7 @@ You can run the I2C controller verification test manually in addition to running
 
 You must run each test from a command prompt window that has administrative privileges.
 
-Copy **wttlog.dll** from **\\\\${***HCKServer***}\\TaefBinaries** to the same directory where **Witttest.exe** resides, where *HCKServer* is the name of the Windows HLK server.
+Copy **wttlog.dll** from **\\\\${**<em>HCKServer</em>**}\\TaefBinaries** to the same directory where **Witttest.exe** resides, where *HCKServer* is the name of the Windows HLK server.
 
 To list all available tests and command line parameters, type **wittest.exe /?** at a command prompt. For example:
 
@@ -327,9 +327,9 @@ Pass:11 Fail:1 Warn:3
 
 [Troubleshooting Bus Controller Testing](troubleshooting-bus-controller-testing.md)
 
- 
+ 
 
- 
+ 
 
 
 

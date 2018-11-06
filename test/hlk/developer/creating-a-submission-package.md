@@ -18,7 +18,7 @@ ms.topic: article
 >[!NOTE]
 >  We highly encourage you to include driver symbols as part of package creation. Including symbols enables Microsoft to triage and root cause issues related to your driver.
 
- 
+ 
 
 A submission package contains all of the results, logs, and data from a project. A submission package can also contain drivers, symbols, and supplemental material that are required for certification. The submission package can then be accessed through the same set of Certification Manager APIs.
 
@@ -38,9 +38,9 @@ If you include a driver package, you specify a directory that contains all of th
 
 Each driver package has a list of locales (available with the **ProjectManager.GetLocaleList()** method). Every target and locale combination should have only one driver associated with it.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -68,7 +68,7 @@ The email application consists of several screens, including the List View, Sett
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone that has data connectivity.

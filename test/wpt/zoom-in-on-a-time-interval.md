@@ -36,9 +36,9 @@ You can zoom in repeatedly to make a time interval in a graph bigger.
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

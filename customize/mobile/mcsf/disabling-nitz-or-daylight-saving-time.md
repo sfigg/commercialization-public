@@ -79,7 +79,7 @@ In addition, if the device will be sold in a country or region that does not use
     </tbody>
     </table>
 
-     
+     
 
 4.  The following values are valid for `DisableDaylightSavingsTime`:
 
@@ -106,7 +106,7 @@ In addition, if the device will be sold in a country or region that does not use
     </tbody>
     </table>
 
-     
+     
 
 5.  Delete either of the `EnableAutomaticTime` or `DisableDaylightSavingsTime` settings if the feature does not need to be disabled.
 

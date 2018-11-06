@@ -54,21 +54,21 @@ The following table describes possible return values.
 </tr>
 <tr class="even">
 <td><p>E_WPRC_FAILED_TO_CLEAR_PROFILE_COLLECTION</p></td>
-<td><p>The library failed to remove all profiles from the collection. Use [IErrorInfo](http://go.microsoft.com/fwlink/p/?linkid=217161 ) to obtain detailed error information.</p></td>
+<td><p>The library failed to remove all profiles from the collection. Use <a href="http://go.microsoft.com/fwlink/p/?linkid=217161" data-raw-source="[IErrorInfo](http://go.microsoft.com/fwlink/p/?linkid=217161 )">IErrorInfo</a> to obtain detailed error information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IProfileCollection](iprofilecollection.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -343,7 +343,7 @@ You can use the modifier keys listed in the following table when you configure k
 </tr>
 </tbody>
 </table>
- 
+ 
 ## <a href="" id="stakey"></a>State keys
 
 <table>

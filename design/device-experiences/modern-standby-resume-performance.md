@@ -68,7 +68,7 @@ If this issue occurs consistently, stop the analysis of resume performance, and 
 
 **Note**  The two most common causes of connected standby exit delay are turning on the display and network devices—in particular, mobile broadband (MBB) radios.
 
- 
+ 
 
 **PDC phases**
 
@@ -80,9 +80,9 @@ Highlight all the phases shown in this graph to get the total time spent in the 
 
 You can get the duration of a particular PDC phase. To do so, change the display format of the **PDC Notification Phase** graph to **Both graph and table**. Then expand the phase of interest and look for the duration.
 
- 
+ 
 
- 
+ 
 
 
 

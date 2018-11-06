@@ -25,7 +25,7 @@ This topic is about manufacturing PCs. For help with the admin account on your o
 
 -   [User Account Control](http://go.microsoft.com/fwlink/?LinkId=277139)
 
- 
+ 
 
 This account is used when you log into the system by using audit mode, or when you add scripts to the [auditUser](audituser.md) configuration pass.
 
@@ -51,7 +51,7 @@ The following sample answer file shows how to enable the Administrator account, 
 **Note**  
 Both the Microsoft-Windows-Shell-Setup\\`Autologon` section and the Microsoft-Windows-Shell-Setup\\`UserAccounts`\\`AdministratorPassword` section are needed for automatic logon in audit mode to work. The **auditSystem** configuration pass must include both these settings.
 
- 
+ 
 
 The following XML output shows how to set the appropriate values:
 
@@ -80,12 +80,12 @@ To prevent having to enter a password for the built-in Administrator account aft
 The following XML output shows how to set the appropriate values:
 
 ```
-            <UserAccounts>
-                <AdministratorPassword>
-                    <Value>SecurePasswd123</Value>
-                    <PlainText>true</PlainText>
-                </AdministratorPassword>
-            </UserAccounts>
+            <UserAccounts>
+                <AdministratorPassword>
+                    <Value>SecurePasswd123</Value>
+                    <PlainText>true</PlainText>
+                </AdministratorPassword>
+            </UserAccounts>
 ```
 
 For Windows Server® 2012, the built-in Administrator password must be changed at first logon. This prevents the built-in Administrator account from having a blank password by default.
@@ -145,7 +145,7 @@ Original equipment manufacturers (OEMs) and system builders are required to disa
     **Note**  
     In Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008, the default password policy requires a strong password for all user accounts. To configure a weak password, you can use an answer file that includes the Microsoft-Windows-Shell-Setup\\`UserAccounts`\\`AdministratorPassword` setting. You cannot configure a weak password, either manually or by using a script such as the **net user** command.
 
-     
+     
 
 ## <span id="related_topics"></span>Related topics
 
@@ -154,9 +154,9 @@ Original equipment manufacturers (OEMs) and system builders are required to disa
 
 [Audit Mode Overview](audit-mode-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

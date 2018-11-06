@@ -47,7 +47,7 @@ The following table lists the members exposed by the **ProjectInfo** type.
 </tr>
 <tr class="even">
 <td><p>NotRunCount</p></td>
-<td><p>This property represents the number of certification tests that haven't been run.</p></td>
+<td><p>This property represents the number of certification tests that haven&#39;t been run.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PassedCount</p></td>
@@ -68,7 +68,7 @@ The following table lists the members exposed by the **ProjectInfo** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -104,7 +104,7 @@ The following table lists the members exposed by the **ProjectInfo** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -132,11 +132,11 @@ The following table lists the members exposed by the **ProjectInfo** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,11 +18,11 @@ ms.topic: article
 
 This class contains an enumeration that defines the options available for scheduling a test job.
 
->[!NOTE]
->  
-These enumeration values are now used as flags that can be combined and retrieved by using bitwise operations.
+> [!NOTE]
+> 
+> These enumeration values are now used as flags that can be combined and retrieved by using bitwise operations.
 
- 
+ 
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 
@@ -73,11 +73,11 @@ These enumeration values are now used as flags that can be combined and retrieve
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,10 +35,10 @@ Shows statistics for ISRs only.
 <a href="" id="-summary"></a>**-summary**  
 Shows a summary report.
 
-<a href="" id="-interval-dt-"></a>**-interval***\[dt\]*  
+<a href="" id="-interval-dt-"></a>**-interval**<em>\[dt\]</em>  
 Shows usage report for intervals of *dt* seconds. The default value is 1.
 
-<a href="" id="-bucket-dt-"></a>**-bucket***\[dt\]*  
+<a href="" id="-bucket-dt-"></a>**-bucket**<em>\[dt\]</em>  
 Show histogram for intervals of *dt* seconds. The default value is 2.
 
 <a href="" id="-ranget1-t2"></a>**-range***T1 T2*  
@@ -56,9 +56,9 @@ If no data type is specified, the action shows a report of both DPCs and ISRs. I
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

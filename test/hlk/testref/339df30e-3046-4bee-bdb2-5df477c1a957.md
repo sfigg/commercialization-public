@@ -18,25 +18,26 @@ ms.topic: article
 
 This set of tests validates cameras functionality with the MF and IMFCaptureEngine.
 
--   **Camera Driver Basic Tests - \***
+- **Camera Driver Basic Tests - \\***
 
-    Tests against a subset of camera media types and shorter duration of tests than functional or reliability.
+  Tests against a subset of camera media types and shorter duration of tests than functional or reliability.
 
--   **Camera Driver Functional Tests - \***
+- **Camera Driver Functional Tests - \\***
 
-    Tests against a larger set of media types and have longer duration of the test.
+  Tests against a larger set of media types and have longer duration of the test.
 
--   **Camera Driver Reliability Tests - \***
+- **Camera Driver Reliability Tests - \\***
 
-    Tests against a larger set of media types and have longer duration of the test, and more complex scenarios.
+  Tests against a larger set of media types and have longer duration of the test, and more complex scenarios.
 
--   **\*- Capture Stream - \***
+- **\*- Capture Stream - \\***
 
-    Validates that the system can record from MF\_CAPTURE\_ENGINE\_PREFERRED\_SOURCE\_STREAM\_FOR\_VIDEO\_RECORD.
+  Validates that the system can record from MF\_CAPTURE\_ENGINE\_PREFERRED\_SOURCE\_STREAM\_FOR\_VIDEO\_RECORD.
 
 This test captures from the preferred video recording pin by using the preferred mediatype exposed, and attempts to save to H.264 format.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Streaming.Camera.Base.MediaFoundation</li></ul> |  
@@ -49,7 +50,7 @@ This test captures from the preferred video recording pin by using the preferred
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -66,7 +67,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md).
 
@@ -90,12 +91,12 @@ For troubleshooting information, see [Troubleshooting System Client Testing](tro
 <tr class="even">
 <td><p>0x80070102</p></td>
 <td><p>This will occur when a Capture Asynchronous Operation has timed out. These include Initialize, Start Preview, Stop Preview, Start Record, Stop Record, Take Photo, and Change Mediatype. The test allows for 9-10 seconds for each operation before failing. Mediatype change can include pin tear down and bring up time.</p>
-<p>Check that the device isn't waiting for future commands that prevent it from changing state. Ensure that all buffers are flushed out of the device on device reset commands.</p></td>
+<p>Check that the device isn&#39;t waiting for future commands that prevent it from changing state. Ensure that all buffers are flushed out of the device on device reset commands.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0xC00D3704 : MF_E_HW_MFT_FAILED_START_STREAMING</p></td>
 <td><p>This error occurs when the device cannot enter the run state.</p>
-<p>Check that the device is able to transition through all states without failure, or that other pins aren't preventing the device from entering a state.</p></td>
+<p>Check that the device is able to transition through all states without failure, or that other pins aren&#39;t preventing the device from entering a state.</p></td>
 </tr>
 <tr class="even">
 <td><p>0xC00D4A44 : MF_E_SINK_NO_SAMPLES_PROCESSED</p></td>
@@ -105,7 +106,7 @@ For troubleshooting information, see [Troubleshooting System Client Testing](tro
 </tbody>
 </table>
 
- 
+
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 
@@ -117,11 +118,11 @@ For troubleshooting information, see [Troubleshooting System Client Testing](tro
 | **WDKDeviceID**                 | Device id of DUT                                                     |
 | **DriverVerifierExcludedFlags** | Driver Verifier flags that may be manually excluded for the test run |
 
- 
 
- 
 
- 
+
+
+
 
 
 

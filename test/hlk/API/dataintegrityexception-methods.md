@@ -62,7 +62,7 @@ The following table lists the methods exposed by the **DataIntegrityException** 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -90,11 +90,11 @@ The following table lists the methods exposed by the **DataIntegrityException** 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,13 +25,13 @@ If this value is non-zero, the driver can issue a hotkey combination \[**CTRL + 
 
 **Note**  This registry key is read only, and is not to be modified directly.
 
- 
+ 
 
 So in short, the state of the touchpad will be toggled when the **CTRL + WIN + F24** keyboard combination is reported to the host.
 
- 
+ 
 
- 
+ 
 
 
 

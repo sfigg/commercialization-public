@@ -25,7 +25,7 @@ Use this setting to prevent device encryption from automatically encrypting the 
 **Note**  
 These settings only apply to Windows 8.
 
- 
+ 
 
 ## Values
 
@@ -48,7 +48,7 @@ These settings only apply to Windows 8.
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following example configures Windows 8.1 to not automatically encrypt the op
 
 [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md)
 
- 
+ 
 
- 
+ 
 
 
 

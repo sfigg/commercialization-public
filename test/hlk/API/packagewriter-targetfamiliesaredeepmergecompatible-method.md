@@ -29,9 +29,9 @@ Checks if two target families are similar enough for deep merging.
 
 ` public static bool TargetFamiliesAreDeepMergeCompatible (`
 
-          `TargetFamily firstTargetFamily,`
+          `TargetFamily firstTargetFamily,`
 
-          `TargetFamily secondTargetFamily`
+          `TargetFamily secondTargetFamily`
 
 `)`
 
@@ -56,9 +56,9 @@ Returns true if the targets' families are similar enough; otherwise it returns f
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ For more information, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -75,9 +75,9 @@ The following XML output specifies the URLs of local intranet sites with trusted
 
 [TrustedSites](microsoft-windows-ie-internetexplorer-trustedsites.md)
 
- 
+ 
 
- 
+ 
 
 
 

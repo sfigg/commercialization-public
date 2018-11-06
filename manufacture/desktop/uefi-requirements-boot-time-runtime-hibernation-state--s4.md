@@ -115,9 +115,9 @@ Note to firmware manufacturers: We recommend that when Secure Boot is disabled, 
 
 -   Enable messages during the POST process to show which keys open the boot menus.
 
- 
+ 
 
- 
+ 
 
 
 

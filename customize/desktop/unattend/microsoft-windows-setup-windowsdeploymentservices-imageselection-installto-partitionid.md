@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -106,9 +106,9 @@ The following XML output shows a complete Windows Deployment Services deployment
 
 [InstallTo](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,12 +40,12 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You can extend only NTFS file-system partitions.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -92,9 +92,9 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [ExtendOSPartition](microsoft-windows-deployment-extendospartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

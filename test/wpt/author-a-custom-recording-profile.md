@@ -32,7 +32,7 @@ This procedure describes how to author a custom recording profile in Windows Pe
     **Note**  
     If you want the custom profile to stop and roll back if some providers do not start, set the **Strict** attribute to "true". For more information about this option, see [Strict Providers](strict-providers.md).
 
-     
+     
 
 5.  Save the file with a .wprp extension.
 
@@ -43,9 +43,9 @@ You can define derived collectors, providers, and profiles that inherit from a b
 
 [WPR Common Scenarios](windows-performance-recorder-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

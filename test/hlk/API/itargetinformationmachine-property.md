@@ -40,7 +40,7 @@ This property represents the machine which this target was found on.
 
 `ReadOnly Property Machine As Machine`
 
-          
+          
 
 **C#**
 
@@ -56,9 +56,9 @@ Returns **Machine**.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

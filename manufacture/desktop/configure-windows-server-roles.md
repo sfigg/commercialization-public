@@ -21,7 +21,7 @@ You can create `FirstLogonCommands` in your answer file that specifies the prope
 **Note**  
 You must run PowerShell and Server Manager commands from an account with administrator privileges.
 
- 
+ 
 
 For more information about adding the `FirstLogonCommands` setting, see [Add a Custom Command to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915058).
 
@@ -40,16 +40,16 @@ The following example shows the PowerShell.exe syntax for installing the ServerM
 **Note**  
 Not all server roles support Sysprep. You must configure some server roles after imaging and deployment. For more information, see [Sysprep Support for Server Roles](sysprep-support-for-server-roles.md).
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Windows Deployment Options](windows-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

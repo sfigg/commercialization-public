@@ -208,9 +208,9 @@ To build the user-mode test application, complete the following steps.
 
 5.  Deploy the executable to the device and run the application. For more information, see [Deploy and test a user-mode test application in MMOS](deploy-and-test-a-user-mode-test-application-in-mmos.md).
 
- 
+ 
 
- 
+ 
 
 
 

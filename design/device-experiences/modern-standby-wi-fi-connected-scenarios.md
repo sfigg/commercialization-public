@@ -75,12 +75,12 @@ We recommend that you create a Microsoft account for testing purposes. You can u
 <tr class="odd">
 <td><p>The system can receive mail notifications while in modern standby.</p></td>
 <td><p>If the Mail app is configured to be on the lock screen, updates should be seen on the lock screen immediately on resume from modern standby. Ensure all emails are received.</p></td>
-<td><p>When a notification is not received, a trace is needed to diagnose the problem. For information about how to capture a trace and analyze the information, see [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md).</p></td>
+<td><p>When a notification is not received, a trace is needed to diagnose the problem. For information about how to capture a trace and analyze the information, see <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The [Windows Hardware Certification Kit (HCK)](https://msdn.microsoft.com/windows/hardware/dn913721.aspx#test) includes modern standby tests that exercise entering and exiting modern standby on a system. Running the following tests will further validate the readiness of the system:
 
@@ -129,7 +129,7 @@ The instant messaging and video chat scenarios are enumerated in the following t
 <tr class="odd">
 <td><p>System can receive IM notifications during modern standby.</p></td>
 <td><p>When the system wakes from modern standby, check that all IM messages have been received and that the badge on the lock screen is updated appropriately.</p></td>
-<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and View a WPA Trace for Modern Standby Diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md) for information on how to capture a trace and analyze the information.</p></td>
+<td><p>If a notification is not received, a trace is needed to diagnose the problem. See <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and View a WPA Trace for Modern Standby Diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and View a WPA Trace for Modern Standby Diagnostics</a> for information on how to capture a trace and analyze the information.</p></td>
 </tr>
 <tr class="even">
 <td><p>System can receive video call and audio conference call notifications during modern standby.</p></td>
@@ -138,12 +138,12 @@ The instant messaging and video chat scenarios are enumerated in the following t
 <li>Turn on the display to show a toast in the upper right-hand corner.</li>
 </ul>
 <p>If the call is missed, the icon on the lock screen will show the missed call when the system wakes from modern standby.</p></td>
-<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md) for information on how to capture a trace and analyze the information.</p></td>
+<td><p>If a notification is not received, a trace is needed to diagnose the problem. See <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a> for information on how to capture a trace and analyze the information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Modern standby background download
 
@@ -192,11 +192,11 @@ On resume from modern standby, you can run a SleepStudy report to view the time 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

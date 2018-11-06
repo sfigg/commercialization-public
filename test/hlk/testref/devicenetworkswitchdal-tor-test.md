@@ -16,7 +16,7 @@ ms.topic: article
 # Device.Network.Switch.DAL-TOR Test
 
 
-This topic describes how to test network switches for OMI compatibility as part of the Windows Certification Program. To begin the testing part of the certification process, you must install and run the Windows Hardware Lab Kit (Windows HLK) and set up the test environment. For information about how to install and configure Windows HLK, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md).
+This topic describes how to test network switches for OMI compatibility as part of the Windows Certification Program. To begin the testing part of the certification process, you must install and run the Windows Hardware Lab Kit (Windows HLK) and set up the test environment. For information about how to install and configure Windows HLK, see [Step 1: Install Controller and Studio on the test server](../getstarted/step-1-install-controller-and-studio-on-the-test-server.md).
 
 The types of products in the Device.Network.Switch.DAL-TOR category include Top of the Rack Switches.
 
@@ -37,21 +37,21 @@ This section describes the following tasks that you must complete before you tes
 
 The following hardware is required for switch testing. Additional hardware can be required if the test device provides bus-specific support. See the test description for each bus-specific test to determine whether there are additional hardware requirements.
 
--   Basic Windows HLK test setup (Controller and Studio). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md).
+- Basic Windows HLK test setup (Controller and Studio). See [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md).
 
--   Two test computers.
+- Two test computers.
 
-    >[!NOTE]
-    >  
-    All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+  > [!NOTE]
+  > 
+  > All computers must meet the Windows HLK requirements. If two test computers are required, both computers must be in the same computer pool. For more information, see [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md).
 
-    For testing networking capabilities, the test computer to which the switch is physically attached to is referred to as the System Under Test (SUT).
+  For testing networking capabilities, the test computer to which the switch is physically attached to is referred to as the System Under Test (SUT).
 
-     
 
--   One test top of the rack switch.
 
--   One network card for each of the test machines.
+- One test top of the rack switch.
+
+- One network card for each of the test machines.
 
 The hardware configuration is illustrated in Figure 1 Hardware Configuration:
 
@@ -95,66 +95,68 @@ To configure the test device for HLK testing, follow these steps:
 
 To configure the test computer for switch testing, follow these steps:
 
-1.  Install the appropriate operating system on the test computer.
+1. Install the appropriate operating system on the test computer.
 
-2.  Configure the test computer for the test network that contains the Windows HLK Studio and Windows HLK Controller.
+2. Configure the test computer for the test network that contains the Windows HLK Studio and Windows HLK Controller.
 
-3.  Connect the SUT to the Top of the rack switch on the management port and connect a test machine to one of the downlink ports of the Top of the rack switch.
+3. Connect the SUT to the Top of the rack switch on the management port and connect a test machine to one of the downlink ports of the Top of the rack switch.
 
-4.  Ping the switch from the test machine that is connected to its downlink port.
+4. Ping the switch from the test machine that is connected to its downlink port.
 
-5.  Check that the switch functions properly on the test computer.
+5. Check that the switch functions properly on the test computer.
 
-6.  Install the Windows HLK client application on the test computer.
+6. Install the Windows HLK client application on the test computer.
 
-7.  Install the valid certificate on the test computer, which corresponds to the one on the switch, and add it to the local machine certificate store.
+7. Install the valid certificate on the test computer, which corresponds to the one on the switch, and add it to the local machine certificate store.
 
-8.  Copy **\\\\**&lt;*HLKControllerMachineName***&gt;\\tests\\AMD64\\nttest\\admintest\\wmi\\TORSwitch\\Logo\\ GenerateVirtualNode.ps1** to the Windows HLK client installation directory that was selected in Step 6, on the test machine. This is typically **C:\\WLK\\JobsWorkingDir**.
+8. Copy **\\\\**&lt;<em>HLKControllerMachineName</em>**&gt;\\tests\\AMD64\\nttest\\admintest\\wmi\\TORSwitch\\Logo\\ GenerateVirtualNode.ps1** to the Windows HLK client installation directory that was selected in Step 6, on the test machine. This is typically **C:\\WLK\\JobsWorkingDir**.
 
-9.  Run the GenerateVirtualNode script on the client machine by using an elevated PowerShell window. This test setup script detects the switch that is connected to this host, and creates a node so that tests can be targeted against the device.
+9. Run the GenerateVirtualNode script on the client machine by using an elevated PowerShell window. This test setup script detects the switch that is connected to this host, and creates a node so that tests can be targeted against the device.
 
-    GenerateVirtualNode generates a virtual target for the switch in the Windows HLK controller for targeting Top of the Rack switch tests. The script makes a connection to the switch over OMI, and tries to retrieve critical information that is used for test submission on the switch.
+   GenerateVirtualNode generates a virtual target for the switch in the Windows HLK controller for targeting Top of the Rack switch tests. The script makes a connection to the switch over OMI, and tries to retrieve critical information that is used for test submission on the switch.
 
-    >[!NOTE]
-    >  
-    At the end of a successful script execution, the machine is restarted.
+   > [!NOTE]
+   > 
+   > At the end of a successful script execution, the machine is restarted.
 
-     
 
-    **Script parameters**
 
-    -   **ipAddress**: The management IP address of the TOR switch that is connected to the host.
+~~~
+**Script parameters**
 
-    -   **username**: The user name of the TOR switch device admin.
+-   **ipAddress**: The management IP address of the TOR switch that is connected to the host.
 
-    -   **password**: The default password of the TOR switch admin user account.
+-   **username**: The user name of the TOR switch device admin.
 
-    -   **portNumber**: The OMI port number for SSL communication to the switch.
+-   **password**: The default password of the TOR switch admin user account.
 
-    **Script example:**
+-   **portNumber**: The OMI port number for SSL communication to the switch.
 
-    The following example shows how to run the script by passing the information of all the script arguments.
+**Script example:**
 
-    ``` syntax
-    .\GenerateVirtualNode.ps1 -ipAddress 10.0.0.1 -userName 'admin'-password 'defaultpassword' -portNumber '5986'
-    ```
+The following example shows how to run the script by passing the information of all the script arguments.
 
-    Before you start to test, make sure that the test computers are in the ready state. If a test requires parameters to be set before it is run, a dialog box displays for that test. Review the specific test topic for more information.
+``` syntax
+.\GenerateVirtualNode.ps1 -ipAddress 10.0.0.1 -userName 'admin'-password 'defaultpassword' -portNumber '5986'
+```
 
-    Some Windows HLK tests require user intervention. When you run tests for a submission, it is a best practice to run the automated tests in a separate block from manual tests. This prevents a manual test from interrupting an automated test run.
+Before you start to test, make sure that the test computers are in the ready state. If a test requires parameters to be set before it is run, a dialog box displays for that test. Review the specific test topic for more information.
+
+Some Windows HLK tests require user intervention. When you run tests for a submission, it is a best practice to run the automated tests in a separate block from manual tests. This prevents a manual test from interrupting an automated test run.
+~~~
 
 ## <span id="ts"></span><span id="TS"></span>Troubleshooting Device.Network.Switch.DAL-TOR tests
 
 
 To troubleshoot issues that occur with Device.Network.Switch.DAL-TOR tests, follow these steps:
 
-1.  Review the [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md) topic.
+1. Review the [Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md) topic.
 
-2.  Review the Windows HLK release notes for current test issues.
+2. Review the Windows HLK release notes for current test issues.
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-4.  Review this topic for information about the known test issues for the specific type of device that you are testing. Take any appropriate action that is based on the information that you find, and then rerun the affected test or tests. If you cannot complete testing for your submission, open a support case as described in [Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md).
+4. Review this topic for information about the known test issues for the specific type of device that you are testing. Take any appropriate action that is based on the information that you find, and then rerun the affected test or tests. If you cannot complete testing for your submission, open a support case as described in [Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md).
 
 ### <span id="Specific_switch_test_information"></span><span id="specific_switch_test_information"></span><span id="SPECIFIC_SWITCH_TEST_INFORMATION"></span>Specific switch test information
 
@@ -169,11 +171,11 @@ The Switch category includes the following tests:
 
 -   Driver Memory Test
 
->[!NOTE]
->  
-TDI filters and LSPs are not allowed.
+> [!NOTE]
+> 
+> TDI filters and LSPs are not allowed.
 
- 
+
 
 ### <span id="tor"></span><span id="TOR"></span>TOR Test
 
@@ -443,9 +445,9 @@ TDI filters and LSPs are not allowed.
 
     5.  Verify that the dynamic entries are found in the MAC address table.
 
- 
 
- 
+
+
 
 
 

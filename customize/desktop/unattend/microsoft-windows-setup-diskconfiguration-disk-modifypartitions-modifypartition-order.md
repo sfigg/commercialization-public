@@ -40,7 +40,7 @@ When you are adding multiple partitions, to keep track of the partitions easier,
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -378,9 +378,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

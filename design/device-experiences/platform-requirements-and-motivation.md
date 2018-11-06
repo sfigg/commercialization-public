@@ -22,7 +22,7 @@ The Windows hardware requirements for the power and battery subsystem are motiva
 
 **Note**  Systems that can only charge from a Universal Serial Bus (USB) port might not be able to support all of the requirements that are listed in this article.
 
- 
+ 
 
 ## Charging occurs when connected to the charger
 
@@ -59,9 +59,9 @@ The system remains in the off (ACPI S5/G2) state unless it is manually powered o
 
 As an option, the system can have a firmware setting to configure the system to automatically turn on when power is applied, provided that this is not the default setting. Such an option is useful in automated testing and lab environments. For more information about this setting, see [Automated lab testing considerations](automated-lab-testing-considerations.md).
 
- 
+ 
 
- 
+ 
 
 
 

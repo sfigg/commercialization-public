@@ -40,7 +40,7 @@ This method deletes a test target from a target family.
 
 `Public MustOverride Sub DeleteTarget ( _`
 
-          `targetToDelete As Target _`
+          `targetToDelete As Target _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method deletes a test target from a target family.
 
 `public abstract void DeleteTarget (`
 
-          `Target targetToDelete`
+          `Target targetToDelete`
 
 `)`
 
@@ -57,7 +57,7 @@ This method deletes a test target from a target family.
 
 *targetToDelete*
 
-     The test target to delete.
+     The test target to delete.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -71,9 +71,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

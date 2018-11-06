@@ -56,9 +56,9 @@ You can apply presets that determine the columns that appear in a data table.
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

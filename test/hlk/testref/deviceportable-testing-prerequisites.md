@@ -62,9 +62,9 @@ To run portable device tests, you must know how to:
 
 -   Troubleshoot device installation by checking if the device is installed successfully in **Device Manager** or by looking at the SetupAPI device installation logs.
 
- 
+ 
 
- 
+ 
 
 
 

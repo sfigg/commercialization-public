@@ -33,9 +33,9 @@ Standby (S0 Low Power Idle) Network Disconnected
 
 [Modern standby SleepStudy report](modern-standby-sleepstudy-report.md)s also note whether a standby session was connected or not.
 
- 
+ 
 
- 
+ 
 
 
 

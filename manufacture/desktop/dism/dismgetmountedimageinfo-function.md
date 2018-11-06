@@ -54,13 +54,13 @@ Returns **S\_OK** on success.
 
 **Important**  Only images mounted using the DISM infrastructure will be returned. If a .vhd file is mounted outside of DISM, such as with the DiskPart tool, this call will not return information about that image. You must use [**DismMountImage**](dismmountimage-function.md) to mount the image.
 
- 
+ 
 
 The array of [DismMountedImageInfo](dismmountedimageinfo-structure.md) structures are allocated by the DISM API on the heap.
 
 **Important**  You must call [**DismDelete**](dismdelete-function.md), passing the *ImageInfo* pointer, to free the resources associated with the [DismImageInfo](dismimageinfo-structure.md) structures.
 
- 
+ 
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -83,7 +83,7 @@ hr = DismGetMountedImageInfo(&ImageInfo, &ImageInfoCount);
 <tbody>
 <tr class="odd">
 <td><p>Supported host platform for .wim images:</p></td>
-<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the [Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).</p></td>
+<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=206587" data-raw-source="[Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587)">Windows ADK Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supported host platform for .vhd images:</p></td>
@@ -96,7 +96,7 @@ hr = DismGetMountedImageInfo(&ImageInfo, &ImageInfoCount);
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ---------
@@ -141,9 +141,9 @@ Requirements
 
 [**DismDelete**](dismdelete-function.md)
 
- 
+ 
 
- 
+ 
 
 
 

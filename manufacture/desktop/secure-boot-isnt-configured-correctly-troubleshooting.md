@@ -49,7 +49,7 @@ Try enabling Secure Boot through using the PC BIOS menus.
 **Warning**  
 Be careful when changing BIOS settings. The BIOS menu is designed for advanced users, and it's possible to change a setting that could prevent your PC from starting correctly. Be sure to follow the manufacturer's instructions exactly.
 
- 
+ 
 
 **Enabling Secure Boot**
 
@@ -84,9 +84,9 @@ Be careful when changing BIOS settings. The BIOS menu is designed for advanced u
 
 [Disabling Secure Boot](disabling-secure-boot.md)
 
- 
+ 
 
- 
+ 
 
 
 

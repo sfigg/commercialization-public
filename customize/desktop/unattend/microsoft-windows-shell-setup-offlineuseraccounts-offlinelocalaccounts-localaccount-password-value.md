@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the [Password](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password.md) for a [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md). <em>Password</em> is a string.</p></td>
+<td><p>Specifies the <a href="microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password.md" data-raw-source="[Password](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount-password.md)">Password</a> for a <a href="microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md" data-raw-source="[LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md)">LocalAccount</a>. <em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -57,9 +57,9 @@ Windows Server 2016
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

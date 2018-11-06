@@ -41,7 +41,7 @@ If a host has only one IP address and the first connection attempt fails, there 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,9 +78,9 @@ The following XML example shows how to specify that the system try 10 IP addres
 
 [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
- 
+ 
 
- 
+ 
 
 
 

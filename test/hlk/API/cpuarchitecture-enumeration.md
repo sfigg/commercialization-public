@@ -78,16 +78,16 @@ This class contains enumeration values that define the architecture that a test 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
 See the Win32 documentation for SYSTEM\_INFO.wProcessorArchitecture.
 
- 
+ 
 
- 
+ 
 
 
 

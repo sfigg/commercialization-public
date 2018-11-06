@@ -18,11 +18,11 @@ ms.topic: article
 
 This test validates cameras functionality if the driver supports KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE; if it does not, you should skip this test.
 
->[!NOTE]
->  
-This is an optional control. If the driver does not support a control, you should not implement a control handler just to return an error. If a control handler is registered, the test expects the control to be fully functional.
+> [!NOTE]
+> 
+> This is an optional control. If the driver does not support a control, you should not implement a control handler just to return an error. If a control handler is registered, the test expects the control to be fully functional.
 
- 
+
 
 If the driver implements the control handler, the following checks are run based on the definition of the controls by the camera topics document. (Note: Implementation of extended controls such as photo mode also requires the implementation of other extended controls; see Requirements and the camera topics document for details.)
 
@@ -43,6 +43,7 @@ When KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMAXFRAMERATE is set by the test, 
 This test also validates that KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE is only advertised on the photo pin. If the driver receives a pin ID other than its photo pin. it should fail with ERROR\_INVALID\_PARAMETER.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.Camera.Base.CameraControls</li></ul> |  
@@ -55,7 +56,7 @@ This test also validates that KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE is 
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -72,7 +73,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md).
 
@@ -85,11 +86,11 @@ For troubleshooting information, see [Troubleshooting System Client Testing](tro
 |---------------------------------|----------------------------------------------------------------------|
 | **DriverVerifierExcludedFlags** | Driver Verifier flags that may be manually excluded for the test run |
 
- 
 
- 
 
- 
+
+
+
 
 
 
