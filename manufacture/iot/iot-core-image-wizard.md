@@ -13,7 +13,7 @@ ms.topic: article
 
 # IoT Core Image Wizard (Preview release)
 
-The IoT Core Image Wizard is a GUI experience utilizing the [IoT Core Add-ons Powershell Commands](iot/iot-core-adk-addons-command-line-options.md).
+The IoT Core Image Wizard is a GUI experience utilizing the [IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md).
 Using the IoT Core Image Wizard, the process of creating your first image for your device is simplified.
 
 ## Download link
