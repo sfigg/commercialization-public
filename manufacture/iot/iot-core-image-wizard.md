@@ -29,7 +29,7 @@ Add download link here
 
 ## November 2018 Preview release notes
 
-- Only supports creating a new workspace.  Open/edit a workspace in a future release.
+- Only supports creating a new workspace.  Cannot open/edit a workspace.  Use the [Powershell Commands](iot-core-adk-addons-command-line-options.md) to open/edit a workspace.
 - Just debug configurations of image builds
 
 ## Related topics
