@@ -189,7 +189,7 @@ The following changes are new for Windows 10, version 1607:
 
 **November 2018**
 
-- Preview release of the [IoT Core Image Wizard](iot-core-image-wizard.md). This GUI tool helps you create a new workspace and image for your device.
+- Preview release of the [IoT Core Image Wizard](iot/iot-core-image-wizard.md). This GUI tool helps you create a new workspace and image for your device.
 
 **January 9, 2017**
 
