@@ -126,7 +126,7 @@ To identify the language, use the decimal version of the Locale ID (LCID) value.
 %WINDIR%\System32\Oobe\Info\Default\3082\Oobe.xml
 ```
 
-There are many more LCIDs than languages. A few LCIDs correlate to the languages that can be released with Windows. For more information about which languages release with Windows, at what level of localization, and their decimal identifiers, see [Available Language Packs](http://go.microsoft.com/fwlink/?LinkId=206620) on **TechNet**.
+There are many more LCIDs than languages. A few LCIDs correlate to the languages that can be released with Windows. For more information about which languages release with Windows, at what level of localization, and their decimal identifiers, see [Available Language Packs](available-language-packs-for-windows.md).
 
  
 
