@@ -373,6 +373,7 @@
 ### [IoT Core feature list](iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons Powershell Commands](iot/iot-core-adk-addons-command-line-options.md)
+### [IoT Core Image Wizard](iot/iot-core-image-wizard.md)
 ### [Update the time server](iot/update-the-time-server.md)
 ### [Add a recovery mechanism](iot/recovery-mechanism.md)
 ### [Troubleshooting](iot/Troubleshooting.md)

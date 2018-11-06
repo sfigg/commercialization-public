@@ -252,4 +252,6 @@ Tests if the file is signed for the given config
 
 [IoT Core Add-ons](iot-core-adk-addons.md)
 
+[IoT Core Image Wizard](iot-core-image-wizard.md)
+
 [IoT Core manufacturing guide](iot-core-manufacturing-guide.md)
