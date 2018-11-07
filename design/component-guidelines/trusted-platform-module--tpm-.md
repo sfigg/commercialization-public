@@ -8,8 +8,8 @@ ms.assetid: 4D77F4BF-3764-4E8D-ABA7-0DC24F3E9D9A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Trusted Platform Module (TPM)

@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: cb62f85a-e82d-48f0-b16d-b742a0a786e7
-author: EliotSeattle
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # TargetFamily.GetTestResults Method

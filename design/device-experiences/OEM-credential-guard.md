@@ -4,8 +4,8 @@ description: Provides guidance on what an OEM should do to enable Windows Defend
 ms.author: justinha
 ms.date: 08/09/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 
 ---
 

@@ -7,8 +7,8 @@ title: Add a custom tool to the Windows RE boot options menu
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add a custom tool to the Windows RE boot options menu
@@ -57,7 +57,7 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
     Click **File**, and then click **Save As**. In the **Encoding** box, select **UTF-8**, and save this file as `C:\mount\WinREConfig.xml`.
 
-3.  Create a \\Sources\\Recovery\\Tools folder in the WinRE mount folder, and then copy the custom tool and its configuration file into the new folder:
+3.  Create a `\Sources\Recovery\Tools` folder in the WinRE mount folder, and then copy the custom tool and its configuration file into the new folder:
 
     ```
     md C:\mount\winre\sources\recovery\tools

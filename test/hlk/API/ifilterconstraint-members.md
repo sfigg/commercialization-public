@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7d96e19d-f897-4d25-92e7-d0ea6d2cecdc
-author: EliotSeattle
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IFilterConstraint Members

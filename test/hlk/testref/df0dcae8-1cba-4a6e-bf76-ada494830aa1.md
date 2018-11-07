@@ -6,12 +6,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 31e7f2eb-4991-4d66-b797-18039ab8c5c1
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.df0dcae8-1cba-4a6e-bf76-ada494830aa1"></span>Camera Sensor Quality Test - Evaluate Temporal SNR at 640x480 and 20 lux

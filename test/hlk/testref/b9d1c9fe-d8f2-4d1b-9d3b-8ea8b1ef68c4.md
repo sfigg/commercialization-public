@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 071126df-d9e1-4b86-9073-6fe049ef00e7
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Win6_4.MB.GSM.Data.TestPin

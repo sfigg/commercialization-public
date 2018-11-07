@@ -11,8 +11,8 @@ ms.assetid: 873C880C-7A82-4C40-8300-4844CE3DD46A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Thermal Management Datatypes

@@ -8,8 +8,8 @@ ms.assetid: 93E19695-816F-4F25-B649-E61E58D2A3E5
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Buffering

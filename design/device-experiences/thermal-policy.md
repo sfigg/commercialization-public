@@ -11,8 +11,8 @@ ms.assetid: C26D5AE4-92A8-4FBA-A930-79DF4B9A4E0B
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # THERMAL\_POLICY

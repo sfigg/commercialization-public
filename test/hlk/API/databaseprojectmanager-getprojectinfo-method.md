@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 703A90DA-E202-4E13-8909-9F20E0F49F2E
-author: EliotSeattle
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DatabaseProjectManager.GetProjectInfo Method

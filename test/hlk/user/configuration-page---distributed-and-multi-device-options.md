@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc77a60d-c1a4-4ef5-a00f-8782b5ac20ce
-author: EliotSeattle
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Configuration Page - Distributed and Multi-Device Options

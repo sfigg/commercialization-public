@@ -2,12 +2,12 @@
 title: TPM 2.0 EK Certificate Tests
 Description: TPM 2.0 EK Certificate Tests
 ms.assetid: 
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # TPM 2.0 EK Certificate Tests

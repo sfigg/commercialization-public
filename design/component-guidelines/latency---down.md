@@ -8,8 +8,8 @@ ms.assetid: 9DB05720-5F69-4F9C-B076-ADC2B3706AC2
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Latency - Down

@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # BrandIcon
@@ -73,8 +73,8 @@ The following example shows how to set a customized logo to represent a theme.
 ```
 <Themes>
    <ThemeName>Fabrikam Theme</ThemeName>
-   <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>
-   <BrandIcon>%programfiles%\Fabrikam\fabrikam-logo.png</BrandIcon>
+   <DesktopBackground>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-wallpaper.jpg</DesktopBackground>
+   <BrandIcon>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-logo.png</BrandIcon>
 </Themes>
 ```
 

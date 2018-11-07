@@ -4,12 +4,12 @@ description: Information and Guidance for the Windows Virtual Hardware Lab Kit (
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-author: EliotSeattle
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Getting started with the Windows Virtual Hardware Lab Kit (VHLK)

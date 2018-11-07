@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0af0efe-bb94-4b37-8812-c2ccd878a6ac
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/15/2017
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Device.Connectivity tests

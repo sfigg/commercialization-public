@@ -8,8 +8,8 @@ ms.assetid: D308885E-F393-419F-A333-528E5315CBDA
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/en-us/windows-hardware/get-started/what-s-new-in-windows
 ---
 

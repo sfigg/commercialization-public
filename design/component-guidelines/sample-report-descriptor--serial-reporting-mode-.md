@@ -12,8 +12,8 @@ keywords: Windows Touch WDK, multitouch digitizer drivers, multitouch digitizer 
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Sample Report Descriptor - Serial Reporting Mode (Windows 7)

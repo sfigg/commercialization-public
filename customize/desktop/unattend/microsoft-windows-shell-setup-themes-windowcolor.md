@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 09/01/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # WindowColor
 
@@ -71,11 +71,15 @@ For a list of the Windows editions and architectures that this component support
 The following XML output shows how to set the default `WindowColor` to match the color palette of the desktop wallpaper.
 
 ```XML
+
 <Themes>
-    <ThemeName>Test</ThemeName>
-    <WindowColor>Automatic</WindowColor>
-    <DesktopBackground>C:\Windows\Web\Screen\img104.jpg</DesktopBackground>
+   <ThemeName>Fabrikam Theme</ThemeName>
+   <DesktopBackground>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-wallpaper.jpg</DesktopBackground>
+   <BrandIcon>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-logo.png</BrandIcon>
+   <WindowColor>Automatic</WindowColor>
+   <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
 </Themes>
+
 ```
 
 ## Related topics

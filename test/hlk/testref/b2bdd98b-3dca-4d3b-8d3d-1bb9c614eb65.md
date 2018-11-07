@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7012c7ec-0c24-4393-a709-8535892108c8
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.b2bdd98b-3dca-4d3b-8d3d-1bb9c614eb65"></span>TPM 2.0 - Required Security Patches Tests

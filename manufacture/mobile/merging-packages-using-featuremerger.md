@@ -6,8 +6,8 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 ms.author: kpacquer
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Merging packages using FeatureMerger

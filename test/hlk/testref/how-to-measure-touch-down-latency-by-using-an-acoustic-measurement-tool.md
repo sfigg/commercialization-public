@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36c3716f-d662-426e-b85a-83262e5979fa
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/15/2017
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # How to measure Touch Down Latency by using an Acoustic Measurement Tool

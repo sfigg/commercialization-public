@@ -5,8 +5,8 @@ author: kpacquer
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Changed answer file settings for Windows 10 for desktop editions, build 1809
 

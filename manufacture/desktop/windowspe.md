@@ -7,8 +7,8 @@ title: windowsPE
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # windowsPE

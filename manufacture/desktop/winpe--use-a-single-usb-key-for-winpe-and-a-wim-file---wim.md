@@ -7,8 +7,8 @@ title: 'WinPE: Store or split images to deploy Windows using a single USB drive'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinPE: Store or split images to deploy Windows using a single USB drive

@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e366415-744d-4199-a3b7-9c6ad66d555f
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/15/2017
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Web Services on Devices Testing Prerequisites

@@ -7,8 +7,8 @@ title: 'Lab 8: Add branding and license agreements'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/how-oobexml-works
 ---
 

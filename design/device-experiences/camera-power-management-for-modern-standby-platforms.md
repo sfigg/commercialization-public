@@ -11,8 +11,8 @@ ms.assetid: da3fc709-960d-4ea7-9ffc-8a1fd647a586
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Camera power management for modern standby platforms

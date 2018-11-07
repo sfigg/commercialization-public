@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83f84931-6bdd-42cc-96b6-4ac4b08d7368
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/15/2017
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Server Testing Overview

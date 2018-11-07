@@ -7,8 +7,8 @@ title: Add and Remove Language Packs Offline Using DISM
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add languages to Windows
@@ -37,7 +37,7 @@ To more completely localize your Windows installation, you can also configure th
 
 Language packs are available on the language pack ISO as .cab packages and are named with their locale; for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Language capabilities are available on the Features on Demand ISO as .cab packages. 
 
-LIPs are available on the language pack ISO as .appx files and are also named with their locale; for example, LanguageExperiencePack.ca-ES.Neutral.appx. You can find these .appx files and their associated license files in the `LocalExperiencePack\<locale>` folder of the lanugage pack ISO. 
+LIPs are available on the language pack ISO as .appx files and are also named with their locale; for example, LanguageExperiencePack.ca-ES.Neutral.appx. You can find these .appx files and their associated license files in the `LocalExperiencePack\<locale>` folder of the language pack ISO. 
 
 Language components, including language packs and Features on Demand can be added to an offline Windows image with DISM. To learn more about Windows language components, see [Languages overview](language-packs-and-windows-deployment.md)
 

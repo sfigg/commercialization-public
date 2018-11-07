@@ -8,8 +8,8 @@ ms.assetid: 3BF6F31F-ED3A-4997-9941-61609CF42278
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Ghost Reporting

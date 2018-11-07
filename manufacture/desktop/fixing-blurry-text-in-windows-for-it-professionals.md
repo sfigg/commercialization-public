@@ -7,8 +7,8 @@ title: 'Fixing blurry text in Windows 8.1 for IT Professionals'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Fixing blurry text in Windows 8.1 for IT Professionals

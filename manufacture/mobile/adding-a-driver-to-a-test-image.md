@@ -8,8 +8,8 @@ ms.assetid: 9ac41806-b3c5-4cbf-8c41-cb838d7d0d52
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Adding a driver to a test image

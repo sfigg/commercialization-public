@@ -11,8 +11,8 @@ ms.assetid: 60797066-7084-421F-B575-53C5855F1DDB
 ms.author: eliotgra
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Prepare hardware for modern standby

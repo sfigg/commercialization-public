@@ -8,8 +8,8 @@ ms.assetid: 75902DA9-23C2-465A-9793-2F5BC90149D3
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IUTool error codes

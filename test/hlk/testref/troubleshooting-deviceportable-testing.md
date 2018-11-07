@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05f3b097-bc9a-499e-a5a2-31e12c88c8ae
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/15/2017
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Troubleshooting Device.Portable Testing

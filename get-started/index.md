@@ -9,8 +9,8 @@ author: dawnwood
 ms.author: dawnwood
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Get started with Windows 10
 

@@ -8,8 +8,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Customizations for accessibility settings
 

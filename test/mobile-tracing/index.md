@@ -8,8 +8,8 @@ ms.assetid: ac476f32-369b-4a8e-aebc-092fcd2ab53b
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Mobile software tracing

@@ -7,8 +7,8 @@ title: 'EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.SetBootModeInfo'
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.SetBootModeInfo

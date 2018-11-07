@@ -7,8 +7,8 @@ title: 'Deploy Windows with a VHDX (Native Boot)'
 ms.author: kenpacq
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Deploy Windows with a VHDX (Native Boot)

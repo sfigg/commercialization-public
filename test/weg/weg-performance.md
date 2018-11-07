@@ -5,8 +5,8 @@ title: Performance - Windows 10 Engineering Guide
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Performance – Windows 10 Engineering Guide

@@ -7,10 +7,10 @@ MSHAttr:
 ms.assetid: b4a88365-9960-4f12-a70f-27c63d946b86
 author: alsepkow
 ms.author: alsepkow
-ms.date: 10/15/2017
+ms.date: 10/11/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DXVA Testing Prerequisites

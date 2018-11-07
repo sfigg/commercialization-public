@@ -7,8 +7,8 @@ title: 'WinREConfig XML reference'
 ms.author: kenpacq
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinREConfig XML reference

@@ -8,8 +8,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Cortana voice support
 

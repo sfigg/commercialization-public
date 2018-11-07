@@ -7,8 +7,8 @@ title: Create a custom manufacturing profile package with USBFN settings
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Create a custom manufacturing profile package with USBFN settings

@@ -6,8 +6,8 @@ title: 'Lab 11: Add Start tiles and taskbar pins'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout
 ---
 
@@ -182,7 +182,7 @@ In **layoutmodification.xml**:
     C:\Mount\Windows\Users\Default\AppData\Local\Microsoft\Windows\Shell\
     ```
 
-2.  To add a taskbar layout in Windows 10, version 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://msdn.microsoft.com/library/windows/hardware/mt736838.aspx), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
+2.  To add a taskbar layout in Windows 10, version 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-the-taskbar), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
 
 ## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
 

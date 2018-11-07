@@ -5,8 +5,8 @@ title: 'Lab 2: Creating your own board support package (BSP)'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Lab 2: Creating your own board support package (BSP)

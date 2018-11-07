@@ -5,8 +5,8 @@ ms.assetid: 06FC01E0-8337-4704-9B44-4B8CC36A3AB5
 ms.author: eliotgra
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Integrating Motion and Orientation Sensors

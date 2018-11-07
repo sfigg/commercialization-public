@@ -8,8 +8,8 @@ ms.assetid: FA82ED38-9645-45F0-98A0-B59BEE81B2A2
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Battery Saver

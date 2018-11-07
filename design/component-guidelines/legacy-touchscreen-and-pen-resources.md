@@ -8,8 +8,8 @@ ms.assetid: EADE3BD4-B9F3-493E-A545-DE7A732EB6EF
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Legacy Touchscreen and Pen Resources

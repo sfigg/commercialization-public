@@ -7,8 +7,8 @@ title: 'Enable zero-rating (no-charge) downloads for device updates'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Enable zero-rating (no-charge) downloads for device updates

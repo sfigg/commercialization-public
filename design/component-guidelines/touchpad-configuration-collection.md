@@ -8,8 +8,8 @@ ms.assetid: 442EE1DB-E9B1-4587-B33A-0187C0B3991D
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Configuration Collection

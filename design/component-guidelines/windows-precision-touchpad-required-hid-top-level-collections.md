@@ -8,8 +8,8 @@ ms.assetid: 2A0AEFD5-91E7-49BA-BBE6-911D9A0621A1
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Touchpad Required HID Top-Level Collections

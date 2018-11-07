@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/09/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Configure power settings
 

@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 08/30/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DeviceForm

@@ -8,8 +8,8 @@ ms.assetid: 9439DE6D-9DAF-4AE2-B3AE-1EA797AD4E37
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Touchscreen Validation Overview

@@ -6,8 +6,8 @@ title: 'Windows and GPT FAQ'
 ms.author: kenpacq
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows and GPT FAQ

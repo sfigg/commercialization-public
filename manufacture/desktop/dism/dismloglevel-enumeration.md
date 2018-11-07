@@ -5,8 +5,8 @@ ms.assetid: c0344b29-fe86-400a-a2d8-95d582ccef5a
 ms.author: kenpacq
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 topic_type: 
 - apiref
 api_name: 

@@ -8,8 +8,8 @@ ms.assetid: 92DF6D05-E6CC-4D7C-9CA4-0409A16B9F03
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Sample Report Descriptors

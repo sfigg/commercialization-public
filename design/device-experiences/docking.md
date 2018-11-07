@@ -8,8 +8,8 @@ ms.assetid: 9a7c246a-1efe-4079-b166-ba959bc7edd2
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Docking

@@ -7,8 +7,8 @@ title: OEM Windows Desktop Deployment and Imaging Lab
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions-overview
 ---
 

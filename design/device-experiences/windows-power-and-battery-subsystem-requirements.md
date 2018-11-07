@@ -11,8 +11,8 @@ ms.assetid: 178037E0-71E1-4A58-8441-A723881AFAEE
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows power and battery subsystem requirements

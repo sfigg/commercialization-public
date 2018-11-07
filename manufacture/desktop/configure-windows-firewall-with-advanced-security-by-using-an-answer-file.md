@@ -7,8 +7,8 @@ title: Configure Windows Firewall with Advanced Security by Using an Answer File
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Configure Windows Firewall with Advanced Security by Using an Answer File

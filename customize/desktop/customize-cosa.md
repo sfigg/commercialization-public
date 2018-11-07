@@ -8,8 +8,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 09/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/cosa-apn-database-submission
 ---
 # Customize the Country and Operator Settings Asset

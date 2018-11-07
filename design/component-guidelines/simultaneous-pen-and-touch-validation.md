@@ -4,8 +4,8 @@ description: Validating for simultaneous pen and touch input.
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Simultaneous pen and touch validation

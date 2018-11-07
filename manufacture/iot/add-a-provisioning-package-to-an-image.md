@@ -7,8 +7,8 @@ title: 'Lab 1d: Add networking and other provisioning package settings to an ima
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Lab 1d: Add networking and other provisioning package settings to an image

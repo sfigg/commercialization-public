@@ -8,8 +8,8 @@ ms.assetid: 8A910CB3-BAC3-408C-8194-8602D702C737
 ms.author: dawnwood
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Hello biometric requirements

@@ -7,8 +7,8 @@ title: Modify a Windows Image Using DISM
 ms.author: kenpacq
 ms.date: 04/24/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
  
 # Modify a Windows Image Using DISM

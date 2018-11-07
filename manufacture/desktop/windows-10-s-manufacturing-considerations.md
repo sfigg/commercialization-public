@@ -6,8 +6,8 @@ title: 'Windows 10 S manufacturing environment'
 ms.author: kenpacq
 ms.date: 4/25/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Manufacturing environment

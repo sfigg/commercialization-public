@@ -2,12 +2,12 @@
 title: WinRT GravityVector GetCurrentReading
 Description: WinRT GravityVector GetCurrentReading
 ms.assetid: 
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WinRT GravityVector GetCurrentReading

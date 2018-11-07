@@ -1,16 +1,16 @@
 ---
-title: UCSI USB Operation Role command - Reset on disconnect [Type-C MUTT]
+title: UCSI USB Operation Role command - Reset on disconnect \Type-C MUTT\
 Description: UCSI USB Operation Role command - Reset on disconnect [Type-C MUTT]
 ms.assetid: 
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
-# UCSI USB Operation Role command - Reset on disconnect [Type-C MUTT]
+# UCSI USB Operation Role command - Reset on disconnect \[Type-C MUTT\]
 
 Verifies that the data role requested using the UCSI Set USB Operation Role command persists only for the duration of the current connection.
 

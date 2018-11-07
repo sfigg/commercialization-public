@@ -8,8 +8,8 @@ ms.assetid: 736BECD8-6CD6-4156-933A-33FF49E00575
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Ethernet

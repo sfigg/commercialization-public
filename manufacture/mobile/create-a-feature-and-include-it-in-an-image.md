@@ -8,8 +8,8 @@ ms.assetid: 85aea68e-0031-4353-9295-38d1c5d3928c
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Create a feature and include it in an image

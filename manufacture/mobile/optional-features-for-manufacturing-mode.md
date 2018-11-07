@@ -7,8 +7,8 @@ title: Optional features for Manufacturing Mode
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Optional features for Manufacturing Mode

@@ -9,12 +9,12 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 Search.SourceType: Video
 ms.assetid: 8A9F73C6-030F-4A1D-A466-6A9ADDD06A51
-author: EliotSeattle
-ms.author: eliotgra
+author: dawn.wood
+ms.author: dawnwood
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # What's new in the Hardware Lab Kit

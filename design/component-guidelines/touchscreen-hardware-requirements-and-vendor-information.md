@@ -8,8 +8,8 @@ ms.assetid: F874CB3F-6613-4329-B38A-69182FC37CAD
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Hardware Requirements and Vendor Information

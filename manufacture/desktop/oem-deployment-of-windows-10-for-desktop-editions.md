@@ -5,8 +5,8 @@ description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop 
 ms.author: kenpacq
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # OEM Deployment of Windows 10 for desktop editions
@@ -1633,17 +1633,17 @@ We'll show you how to finalize and capture a factory image for mass deployment. 
 
 3.	Identify Windows Partition Drive letter using diskpart.
 
-    a. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart.
+    1. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart.
 
-    b. At the \DISKPART> prompt type `list volume`.
+    2. At the \DISKPART> prompt type `list volume`.
 
-    c. Under the "Label" column, locate the volume that is labeled "Windows".
+    3. Under the "Label" column, locate the volume that is labeled "Windows".
 
-    d. Note what letter it is has been assigned under the "Ltr" column (Example: C).  This is the USB key's drive letter.
+    4. Note what letter it is has been assigned under the "Ltr" column (Example: C).  This is the USB key's drive letter.
 
-    ![Diskpart with drive letters showing](images/lab-diskpart.png)
+       ![Diskpart with drive letters showing](images/lab-diskpart.png)
 
-    e. Type exit to quit Diskpart.
+    5. Type exit to quit Diskpart.
 
 ### (CompactOS Only) Convert installed customizations
 
@@ -1670,15 +1670,15 @@ In this section, we'll tell you how to capture your sysprepped image. You can ca
 
 1.	Identify Windows Partition Drive letter.
 
-    a. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
+    1. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
 
-    b. At the \DISKPART> prompt type list volume
+    2. At the \DISKPART> prompt type list volume
 
-    c. Under the "Label" column, locate the volume that is labeled "Windows"
+    3. Under the "Label" column, locate the volume that is labeled "Windows"
 
-    d. Note what letter it is has been assigned under the "Ltr" column (Example: C).  This is the drive letter that needs to be used 
+    4. Note what letter it is has been assigned under the "Ltr" column (Example: C).  This is the drive letter that needs to be used 
 
-    e. Type exit to quit Diskpart
+    5. Type exit to quit Diskpart
 
 2.	Capture the image of the windows partition to USB-B. This process takes several minutes. 
 
@@ -1699,13 +1699,13 @@ With your image captured, you can skip to [Verify your final image](#verify-your
 
 1.	Identify Windows Partition Drive letter.
 
-    a. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
+    1. At the X:\windows\system32> prompt, type diskpart and press the <Enter> key to start Diskpart. 
 
-    b. At the \DISKPART> prompt type list disk
+    2. At the \DISKPART> prompt type list disk
 
-    c. Under the "Disk ###" column, identify the the disk that has the Windows installation, and note the assigned disk number. This will look something like _Disk 0_.
+    3. Under the "Disk ###" column, identify the the disk that has the Windows installation, and note the assigned disk number. This will look something like _Disk 0_.
 
-    d. Type exit to quit Diskpart
+    4. Type exit to quit Diskpart
 
 2.	Capture an image of the windows disk to USB-B. This process takes several minutes. 
 

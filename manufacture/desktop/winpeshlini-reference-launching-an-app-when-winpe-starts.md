@@ -7,8 +7,8 @@ title: 'Winpeshl.ini Reference: Launching an app when WinPE starts'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Winpeshl.ini Reference: Launching an app when WinPE starts

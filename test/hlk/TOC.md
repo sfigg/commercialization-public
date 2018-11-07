@@ -4080,6 +4080,7 @@
 ##### [Secure Boot Manual Logo Test](testref/9741a26f-8249-48bd-8135-152eb3f87590.md)
 ##### [Secure Boot Manual Logo Test - (WoW64 for ARM64)](testref/7650236c-e94a-461b-9f86-74ea2234646a.md)
 ##### [Secure Boot Test - Customized Deployment Basic Test](testref/c57b6bfd-d286-4740-9b32-aec211b01961.md)
+##### [SecurityGuard Test](testref/63478f0f-37c4-4a8f-ad66-c2712d6b1c2f.md)
 ##### [Signed Driver Check (CheckLogo)](testref/7e9473e9-aa0f-4fbb-86c8-2d5d87003521.md)
 ##### [Storage Performance CS](testref/be2ca7a4-94b0-40cf-82cb-02d505ba4d7c.md)
 ##### [Syscache (SYSTEM)](testref/2b74133e-dc3a-43a4-87e7-ddede85e8477.md)

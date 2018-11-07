@@ -8,8 +8,8 @@ ms.assetid: deb8960a-18b0-447d-ba6d-5611def266c0
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Use the flashing tools provided by Microsoft

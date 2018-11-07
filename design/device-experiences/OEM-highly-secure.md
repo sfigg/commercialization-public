@@ -4,8 +4,8 @@ description: This document provides guidance on the minimum standards for purcha
 ms.author: dawnwood
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Standards for a highly secure Windows 10 device
 These standards are for general purpose laptops, tablets, 2-in-1’s, mobile workstations, and desktops. This topic applies specifically for **Windows 10 version 1809**. If you are a decision maker purchasing new devices and you want to enable the best possible security configuration, your device should meet or exceed these standards.

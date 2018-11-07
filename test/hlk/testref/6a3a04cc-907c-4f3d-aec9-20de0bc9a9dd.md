@@ -2,12 +2,12 @@
 title: D3D12 - Decode Histogram
 Description: D3D12 - Decode Histogram
 ms.assetid: 
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # D3D12 - Decode Histogram
