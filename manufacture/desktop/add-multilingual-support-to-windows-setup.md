@@ -151,7 +151,7 @@ To learn more, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-
 
 ### DVD or CD
 
-1. Create a [boot order file](oscdimg-command-line-optons.md). This is required for DVD or CD images larger than 4.5 GB to make sure that boot files are located at the beginning of the image.
+1. Create a [boot order file](oscdimg-command-line-options.md). This is required for DVD or CD images larger than 4.5 GB to make sure that boot files are located at the beginning of the image.
 
    For example, copy this into a text file called C:\Temp\BootOrder.txt: 
 
