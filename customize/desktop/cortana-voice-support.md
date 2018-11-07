@@ -30,8 +30,8 @@ Here are a few examples:
 | Language selected by customer (during OOBE) | Language set in OOBE.xml | Region selected by customer (during OOBE) | Cortana voice assistance result (during OOBE) | Cortana app voice result (after OOBE) |
 |:------------------|:------------------|:------------------|:------------------|:------------------|
 | English           | 1033 (en-US language pack)  | 244 (US)  | en-US     | en-US         |
-| English           | 2057 (en-US language pack)  | 244 (US) | en-GB     | en-US         |
-| Russian           | 1049 (ru-RU language pack)  | 244 (US) | Silent    | Not supported |
+| English           | 2057 (en-GB language pack)  | 244 (US) | en-GB     | en-US         |
+| Russian           | 1049 (ru-RU language pack)  | 203 (RU) | Silent    | Not supported |
 
 ## Disable Cortana voice support
 
