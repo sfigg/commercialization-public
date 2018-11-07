@@ -60,7 +60,7 @@
 ##### [Hibernate Once/Resume Many (HORM)](enterprise/hibernate-once-resume-many-horm-.md)
 ##### [Write filter exclusions](enterprise/uwfexclusions.md)
 ##### [Overlay location and size](enterprise/uwfoverlay.md)
-##### [Turn on UWF](enterprise/uwfoverlay.md)
+##### [Turn on UWF](enterprise/uwf-turnonuwf.md)
 ##### [Service UWF-protected devices](enterprise/service-uwf-protected-devices.md)
 ###### [Antimalware support on UWF-protected devices](enterprise/uwf-antimalware-support.md)
 ###### [Apply Windows updates to UWF-protected devices](enterprise/uwf-apply-windows-updates.md)
