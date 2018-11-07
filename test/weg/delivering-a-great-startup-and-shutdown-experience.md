@@ -162,7 +162,7 @@ Although this list may evolve as the needs and capabilities of PCs evolve, it is
 
 ![Diagram of the hibernate phase](images/weg-diagram-hibernate-phase.png)
 
-In the hibernate phase, Windows notifies the various components that a hibernate phase is occuring and then saves the user's context and system state. The data is compressed and written to the disk; the system uses all the processor cores on the system to compress the data in memory and uses one processor when writing the data to disk. After all of the data is written to disk, Windows notifies the firmware that it is ready for power down.
+In the hibernate phase, Windows notifies the various components that a hibernate phase is occurring and then saves the user's context and system state. The data is compressed and written to the disk; the system uses all the processor cores on the system to compress the data in memory and uses one processor when writing the data to disk. After all of the data is written to disk, Windows notifies the firmware that it is ready for power down.
 
 The firmware notification is done by writing to the sleep-type registers with values that were provided in the S4 object as defined in ACPI 4, Section 4.5, Table 4-13, and Section 7.3.4. This indicates to the firmware that on next power-on, a resume will be attempted rather than a full boot.
 
