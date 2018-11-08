@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: justinha
-ms.date: 06/28/2018
+ms.date: 11/08/2018
 ms.topic: article
 
 
@@ -52,6 +52,17 @@ When the requirements as listed above are met, System Information indicates the 
 1.	Click **Start**, and type **System information**
 2.	Right-click **System Information** app and click **Open as Administrator**. Allow the app to make changes to your device by clicking **Yes**. Some devices might require elevated permissions to view the encryption settings.
 3.	In **System Summary**, see **Device Encryption Support**.  The value will state if the device is encrypted, or if not, reasons why it is disabled. 
+
+## Applying firmware updates to devices  
+
+In addition to running HLK tests, OEMs need to test firmware updates with BitLocker turned on. To prevent devices from starting recovery unnecessarily, follow these guidelines to apply firmware updates:   
+
+1. Suspend BitLocker (required for devices bound to PCR[07] only if the firmware update changes the Secure Boot policy)
+2. Apply the update
+3. Restart the device 
+4. Resume BitLocker
+
+The firmware update should require the device to suspend Bitlocker only for a short time, and the device should restart as soon as possible. BitLocker can be suspended programmatically just before shutting down by using Windows Management Instrumentation (WMI). 
 
 ## Un-allowed DMA capable bus/device(s) detected 
 
