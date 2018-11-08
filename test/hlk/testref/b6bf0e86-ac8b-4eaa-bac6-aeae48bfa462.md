@@ -1,16 +1,16 @@
 ---
-title: H264 playback Test 15
+title: H264 playback test 15
 Description: H264 playback Test 15
 ms.assetid: 
 author: dawn.wood
 ms.author: dawnwood
-ms.date: 10/11/2018
+ms.date: 11/05/2018
 ms.topic: article
 
 
 ---
 
-# H264 playback Test 15
+# H264 playback test 15
 
 Playback and visual validation test: InputType H264 - Verify DXVA Decoding for H.264
 

@@ -5,9 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: fed4ec97-81cb-487c-ac17-de7c6884892b
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 01/26/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/02/2018
 ms.topic: article
 
 
@@ -88,7 +88,8 @@ Required downloads for tests that use supplemental content:
 This supplemental content package is required to pass the Device and Solutions PCS Tests. On the server that has the Windows HLK controller installed, place PCSFiles.vhd at the following location:
 
 ```C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64```
-- [Download PCSFiles.vhd (Windows Server 2016)](https://go.microsoft.com/fwlink/p/?LinkId=808763)
+
+- [Download PCSFiles.vhd (Windows Server 2016)](http://download.microsoft.com/download/5/9/F/59FF2124-30FA-4BFA-9BE5-5D55E736E6A0/PcsFiles.vhd)
 
 ## Download HLK Offline Documentation
 
