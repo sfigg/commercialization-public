@@ -241,7 +241,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 **Step 6: Verify updates**
 
-1.  After the PC boots, if you have multiple languages installed, you should receive a list of lanugages during the out-of-box experience. 
+1.  After the PC boots, if you have multiple languages installed, you should receive a list of languages during the out-of-box experience. 
 
 2.  Either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 

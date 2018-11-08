@@ -1,6 +1,6 @@
 ---
 author: kpacquer
-Description: Add Multilingual Support to Windows Setup
+Description: Add languages to Windows Setup
 ms.assetid: 242b963c-79fc-450b-90d7-c736965797b7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Multilingual Support to Windows Setup
@@ -10,18 +10,18 @@ ms.topic: article
 
 ---
 
-# Add multilingual support to Windows Setup
+# Add languages to Windows Setup
 
 To support multiple languages with Windows Setup:
 
 * Add languages to the Windows Setup image (boot.wim index:2) to help technicians or users who are installing Windows.
 * Add languages to the Windows image (install.wim), and add a list of languages (lang.ini) to change which Windows language gets installed.
 
-You can include different sets of languages for Windows Setup images and the Windows images.
+You can include a different set of languages for Windows Setup and your Windows images.
 
 ## Prerequisites
 
-- A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed with the **Deployment tools** option, , including the **WinPE add-on**.
+- A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed with the **Deployment tools** option, including the **WinPE add-on**.
 
 **CopyPE** and **MakeWinPEMedia** are installed when you choose the **Deployment tools** and **Windows Preinstallation Environment** options when [installing the ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install). If you're using the ADK for Windows 10, version 1809, Windows PE is a separate add-on that you download and install after you install the ADK. You can [download the WinPE add-on from the Download Center](https://go.microsoft.com/fwlink/?linkid=2022233).
 

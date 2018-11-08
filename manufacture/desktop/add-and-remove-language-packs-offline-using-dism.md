@@ -1,9 +1,9 @@
 ---
 author: kpacquer
-Description: Add and Remove Language Packs Offline Using DISM
+Description: Add languages to Windows images
 ms.assetid: 128cffa3-8c53-41c8-add2-fa10197f36a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Add and Remove Language Packs Offline Using DISM
+title: Add languages to Windows images
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.topic: article
 
 ---
 
-# Add languages to Windows
+# Add languages to Windows images
 
 > [!note]
-> If you're looking to add a language to your personal PC, you can use the Settings app. Go to **Settings** > **Time & Language** > **Language** and choose an additional language to install.
+> To add a language to your personal PC, go to **Settings** > **Time & Language** > **Language**, and choose a language to install. [Learn more](https://support.microsoft.com/en-us/help/4027670/windows-10-add-and-switch-input-and-display-language-preferences)
 
-All Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#language-interface-packs-lips), you add it after adding its base language.
+Add languages and regional support to Windows 10 images. Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#language-interface-packs-lips), you add it after adding its base language.
 
 In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md#span-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanlanguage-components-in-windows-10
 ), including language packs (.cabs for fully localized languages, .appx for LIP languages), and [Features On Demand](features-on-demand-v2--capabilities.md). 
@@ -45,7 +45,7 @@ Language components, including language packs and Features on Demand can be adde
 > Don't install a language after an update. If you install an update that contains language-dependent resources before you install a language, the language-specific changes that are contained in the update are not applied and you will have to reinstall the update. Always install languages before you install updates.
 
 
-## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Adding languages
+## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Adding languages to an image
 
 This section covers how to add and remove languages on an offline (mounted) image (install.wim). We'll install the French language, and then add a LIP language (Luxembourgish) that uses French for its base language.
 
@@ -57,7 +57,7 @@ To add a language to an offline image, you'll need the following:
 - Feature on Demand ISO
 - A Windows image
 
-See [Where to get language packs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-components) to find out where you can get these ISOs.
+See [Where to get language packs](language-packs-and-windows-deployment.md#get_language_packs_and_lips) to find out where you can get these ISOs.
 
 ### Mount Windows and Windows RE images (if you're adding a language to an offline image)
 
@@ -162,8 +162,7 @@ If you're adding a language to an online image, the process is the same, but use
     Package Identity : Microsoft-Windows-WinPE-Rejuv_fr-fr ... fr-FR~10.0.9926.0 State : Installed
     ```
 
-## Remove a Language Pack from a Windows Image
-
+## Remove a language
 
 Before you add new language packs to a Windows image, you must remove any language packs that you don't intend to use. There are two ways to remove language packs offline with DISM. You can either apply an unattended answer file to the offline image, or you can remove the language pack directly from the offline image, using the command prompt.
 
@@ -173,7 +172,7 @@ If you're removing a language from an online image, the process is the same, but
 > You cannot remove a language pack from an offline Windows image if there are pending online actions. The Windows image should be a recently installed and captured image. This will guarantee that the Windows image does not have any pending online actions that require a reboot.
 
 
-### Remove a language from Windows
+### Remove a language from a Windows image
 
 > [!note]
 > If you're adding a language to an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.

@@ -20,7 +20,7 @@ Windows Server and Windows 10 language packs are not interchangeable. Windows Se
 
 The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
 
-To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-components).
+To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#get_language_packs_and_lips).
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
 
@@ -36,7 +36,7 @@ The following tables include these settings:
 - **Language/region ID**- The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
 - **Language/region decimal identifier**- The decimal representation of the language identifier. This setting is used in Oobe.xml.
 
-### Language Packs
+## Language Packs
 
 | Language/region | Language/region tag | Language/region ID | Language/region decimal ID | 
 |---|---|---|---|
@@ -82,12 +82,12 @@ The following tables include these settings:
 | Ukrainian (Ukraine) | uk-UA | 0x0422 | 1058 |
 
 
-### Language interface packs (LIPs)
+## <span id="lxps"></span>Language experience packs (LXPs, formerly Language Interface Packs/LIPs)
 
-Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LXPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+Except where noted, the following LXPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LXPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
 > [!Note]
-> Language interface packs are distributed as .appx files as of Windows 10, version 1809. To learn how to add an LIP .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
+> Language experience packs are distributed as .appx files as of Windows 10, version 1809. To learn how to add an LXP .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
 
 | Language/region | Language/region tag | Base language/region | Language/region ID | Language/region decimal ID |
 |---|---|---|---|---|
@@ -170,7 +170,6 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
  
 
 ## Related topics
-
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 

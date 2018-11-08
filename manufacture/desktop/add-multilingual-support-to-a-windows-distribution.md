@@ -120,7 +120,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     ```
 
     > [!Note]
-    >You can choose a language for Windows Setup from those that are available in the distribution share when you run Setup from a full operating system only. If you run Windows Setup for bootable media or Windows PE, you must add optional components to the Boot.wim file for multilingual support. For more information, see [Add Multilingual Support to Windows Setup](add-multilingual-support-to-windows-setup.md).
+    >You can choose a language for Windows Setup from those that are available in the distribution share when you run Setup from a full operating system only. If you run Windows Setup for bootable media or Windows PE, you must add optional components to the Boot.wim file for multilingual support. For more information, see [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md).
 
      
 

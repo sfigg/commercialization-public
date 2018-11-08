@@ -17,9 +17,45 @@ redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desk
 > [!note]
 > If you're looking to add a language to your personal PC, see [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo). 
 
-OEMs can add language packs to localize PCs and devices for customers in different regions.
+OEMs can add language packs to localize PCs and devices for customers in different regions. To do this, you can add:
 
-For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), language packs have been split into language components and [Features On Demand](features-on-demand-v2--capabilities.md). This reduction in image size can be helpful when creating images for lower-cost devices with small storage. It can also reduce the time required to create and deploy images.
+* **Language packs**: The language pack .cab file provides the text for the dialog boxes, menu items, and help files that you see in Windows. Sample name: **Microsoft-Windows-Client-Language-Pack_x64_es-es.cab**. See the [available languages for Windows](available-language-packs-for-windows.md).
+
+* **Language components**: For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), language packs have been split into language components and [Features On Demand](features-on-demand-v2--capabilities.md). This reduction in image size can be helpful when creating images for lower-cost devices with small storage. It can also reduce the time required to create and deploy images. 
+
+* **Language experience packs (LXP) / Language interface packs (LIP)**: These are language packs require a base language. They don't include all of the language resources by themselves. For parts of the UI that are not translated into the LXP language, the UI displays the parent language. 
+  - As of Windows 10, version 1809, these languages are distributed as .appx files and are no longer distributed as .cab files. See the [available Language experience packs](available-language-packs-for-windows.md#lxps). Sample .appx name: `LanguageExperiencePack.am-et.neutral.appx`. You can find the LXP .appx files and their associated license files in the LocalExperiencePack folder on the Language Pack ISO.
+
+  - For previous Windows versions, language experience packs are .cab files, example, Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab.
+
+* **[Recovery language packs](customize-windows-re.md)** so users can troubleshoot and recover their devices using their preferred language. 
+  - WinRE language packs are distributed on the language pack ISO. Don't use the WinPE language packs that ship with the ADK.
+
+## Considerations
+
+* **Versions must match**. When you add a language, the version of the language components must match the version of Windows. For example, you can't add a Windows 10, version 1809 language pack to Windows 10, version 1803.
+
+* **Install languages, then updates and apps**. 
+
+  - Install language packs before installing updates. If you install an update (servicing stack update (SSU) or Cumulative Update (CU)) prior to installing a language pack, reinstall the update to apply language-specific changes.
+
+  - In general, install all of your languages onto Windows before installing apps. This helps make sure that the language resource files are available for each of the available apps. Many apps include support for multiple languages, though some require separate installation of language packs to work properly. Consult with the app developer. To learn more, see [Multilingual User Interface (Windows)](http://go.microsoft.com/fwlink/p/?LinkId=698642).
+
+* **Image size**
+  - Some languages require more hard-disk space than others.
+  - When you're adding languages, don't add too many languages at the same time using a single command, because the device may not have enough memory to handle it. General recommendations: from Windows in **audit mode**, don't add more than 20 language packs at a time. From **Windows PE**, don't add more than 7. If WinPE is still running out of memory, you can [customize WinPE by adding temporary storage (scratch space)](winpe-mount-and-customize.md).
+-   The default language cannot be removed because it is used to generate computer security identifiers (SIDs). The default UI language is the language that is selected during the Out-Of-Box-Experience (OOBE), the UI language specified in the Deployment Image Servicing and Management (DISM) command-line tool, or in the unattended answer file if you skip OOBE.
+
+- **Cross-language upgrades are not supported**. This means that during upgrades or migrations, if you upgrade or migrate an operating system that has multiple language packs installed, you can upgrade or migrate to the system default UI language only. For example, if English is the default language, you can upgrade or migrate only to English.
+
+## Get languages and language components
+
+-   **OEMs and System Builders** with Microsoft Software License Terms can download the language pack ISO and Feature on demand ISO from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+-   **IT Professionals** can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
+-   After Windows is installed, users can download and install more languages by selecting **Settings** > **Time & language** > **Language** > **Add a language**. 
+
+Language features on demand are distributed on the FOD ISO as .cab files. You can [add Features on Demand](features-on-demand-v2--capabilities.md) to your image or your running versions of Windows.
+
 
 ## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
 
@@ -64,20 +100,10 @@ Some capabilities have additional dependencies, as shown in the following table.
 
 To see what's available, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
 
--   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+-   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or [Device Partner Center](https://devicepartner.microsoft.com/).
 -   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
--   Users can add languages after Windows is installed, by goiung to **Settings** > **Time & language** > **Region and language** > **Add a language**. See [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo) for more information.
+-   Users can add languages after Windows is installed, by going to **Settings** > **Time & language** > **Region and language** > **Add a language**. See [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo) for more information.
 
-## <span id="Other_considerations"></span><span id="other_considerations"></span><span id="OTHER_CONSIDERATIONS"></span>Other considerations
-
-
--   Some languages require more hard-disk storage space than others.
--   Although you can add a bunch of language packs at once using the commands: **DISM /Add-Package**, **DISM /Apply-Unattend**, or [LPKSetup](http://go.microsoft.com/fwlink/?LinkID=624512), don't add too many at once, because the device may not have enough memory to handle it. General recommendations: from Windows in audit mode, don't add more than 20 language packs at a time. From Windows PE, don't add more than 7. If WinPE is still running out of memory, you can [customize WinPE by adding temporary storage (scratch space)](winpe-mount-and-customize.md).
--   Cross-language upgrades are not supported. This means that during upgrades or migrations, if you upgrade or migrate an operating system that has multiple language packs installed, you can upgrade or migrate to the system default UI language only. For example, if English is the default language, you can upgrade or migrate only to English.
--   The default language cannot be removed because it is used to generate computer security identifiers (SIDs). The default UI language is the language that is selected during the Out-Of-Box-Experience (OOBE), the UI language specified in the Deployment Image Servicing and Management (DISM) command-line tool, or in the unattended answer file if you skip OOBE.
--   To add language packs using Windows PE, you may need to add pagefile support to Windows PE. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
--	If you install an update (hotfix, general distribution release [GDR], or service pack [SP]) that contains language-dependent resources prior to installing a language pack, the language-specific changes in the update won't be applied when you add the language pack. You need to reinstall the update to apply language-specific changes. To avoid reinstalling updates, install language packs before installing updates.
--   The version of the language pack must match the version of Windows. For example, you can't add a Windows 10 language pack to Windows 8, or add Windows 8 language pack to Windows 10. The build number must also match.
 
 ## <span id="LPInstallMethods"></span><span id="lpinstallmethods"></span><span id="LPINSTALLMETHODS"></span>Installation methods
 
@@ -243,19 +269,16 @@ To save space, you can remove English language components when deploying to non-
     Dism /Get-Packages /Image:"C:\mount\winre"
     ```
 
-3.  **Known issue**: If you've removed the English language pack, in Windows 10 Build 10240, you'll need to boot the image into audit mode, and use the command: `sfc.exe /scannow /verify` to repair issues with Windows 32-bit apps. For an example of how to do this with a script, see [Lab 2a: Answer files: Update settings and run scripts](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md).
-
 **Reinstall apps (required whenever adding languages)**
 
-Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox apps. If you do try to do this, the DISM command may fail.
-
-1.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+- **Universal Windows apps**: Reinstall to get the language resources for the app. Example:
 
     ```
     Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file> \2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
+    Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox apps. If you do try to do this, the DISM command may fail.
 
-2.  Windows desktop applications: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
+- **Desktop apps**: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
 
 **For installations managed by Windows Setup or distribution shares, update the language list**
 
@@ -310,20 +333,20 @@ Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox ap
 
 **Change the default language**
 
--   Set the default Windows language to match the preferred language for your customers.
+Set the default Windows language to match the preferred language for your customers.
 
-    ```
-    Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
-    ```
+```
+Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
+```
 
 **Unmount the images**
 
--   Unmount the Windows RE and Windows images.
+Unmount the Windows RE and Windows images.
 
-    ```
-    Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
-    Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
-    ```
+```
+Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
+Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
+```
 
 ## <span id="LPRemovalTimer"></span><span id="lpremovaltimer"></span><span id="LPREMOVALTIMER"></span>The Language-Pack Removal Task
 

@@ -12,7 +12,7 @@ ms.topic: article
 
 # Language and region Features on Demand
 
-## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related Features on Demand reference
+## <span id="language_capabilities"></span> Language and region-related Features on Demand reference
 
 When you add a language pack to a Windows image, you also add [Features on Demand](features-on-demand-v2--capabilities.md) to enable additional functionality. To view available non language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
 
@@ -23,7 +23,6 @@ To see how to add Features on Demand and language packs to your Windows image, s
 > - [Fonts](#fonts)
 > - [Additional font packages](#Additional_fonts)
 > - [Region-specific requirements](#Region_requirements)
-
 
 ### Language Features on Demand
 
@@ -37,21 +36,22 @@ Language Features on Demand are available in six types:
 | Component | Sample package name | Sample capability name  | Description |
 | --------- | -----------         |                   ----- | ----------- |
 | Basic     | Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab | Language.Basic~\~\~fr-FR~0.0.1.0  | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the other language FODs. <br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.|
-| Fonts     | Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab | Language.Fonts.Thai~\~\~und-THAI~0.0.1.0 | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br><p>See [font capabilities](#fonts) for information about available font capabilities. |
+| Fonts     | Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab | Language.Fonts.Thai~\~\~und-THAI~0.0.1.0 | Fonts.<br></br><p>**Note:** Some languages require a font pack. For example, th-TH requires the Thai font pack.<br></br><p>Check the [list of fonts](#fonts).  |
 | OCR | Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab | Language.OCR~\~\~fr-FR~0.0.1.0 |  Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic component of the same language. |
 | Handwriting recognition | Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab | Language.Handwriting~\~\~fr-FR~0.0.1.0  | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen. <br></br><p>**Dependencies**: The basic component of the same language.|
-| Text-to-speech | Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab| Language.TextToSpeech~\~\~fr-FR~0.0.1.0  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image. |
-| Speech recognition | Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab | Language.Speech~\~\~fr-FR~0.0.1.0 |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic and text-to-speech components of the same language. |
+| Text-to-speech | Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab| Language.TextToSpeech~\~\~fr-FR~0.0.1.0  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.</p><p>**Dependencies**: The basic component of the same language.</p> |
+| Speech recognition | Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab | Language.Speech~\~\~fr-FR~0.0.1.0 |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.</p><p>**Dependencies**: The basic and text-to-speech components of the same language. |
+| Retail Demo experience | Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab | Language.RetailDemo~\~\~fr-FR~0.0.1.0 | <p>[Retail Demo experience](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/retail-demo-experience#add-retail-demo-mode-including-language-packs-to-your-images).</p><p>**Recommendation:** Preinstall this package for each language where you'll be selling devices on a retail showroom. Consider also preloading retail demo mode apps and content. </p><p>**Dependencies**: The basic component of the same languageBasic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package. </p>| 
 
 
 
-### <span id="Fonts"></span><span id="fonts"></span>Font Features on Demand
+### Fonts
 
-When adding languages for some regions, you'll need to add Features on Demand that add font support.
+When adding languages for some regions, you'll need to add fonts.
 
 Font features on demand provide additional fonts used for particular writing systems and languages. These additional fonts are not required for the Windows to display a language. However, prior to Windows 10, most of these fonts were installed by default on every system, and some were used for user interface display. Customers using particular languages are likely to require the additional fonts related to that language for documents or for user interface strings in applications that run in those languages. The capability names use script identifiers; for example, “Deva” indicates Devanagari script, which is used for Hindi, Konkani and other languages.
 
-**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language).
+**Recommendation:** If a PC will be sold to a certain region, install that region's font (For example, th-TH should be preinstalled on devices shipping to regions with Thai language).
 
 | Region      | Description                            | Font capability required                              |
 |-------------|----------------------------------------|-------------------------------------------------------|

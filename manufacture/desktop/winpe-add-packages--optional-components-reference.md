@@ -130,6 +130,8 @@ The default Windows RE image contains the following built-in optional component
 
 ## Add more languages to images that include optional components
 
+Note: To add language packs using Windows PE, you may need to add pagefile support to Windows PE. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
+
 1.  On a mounted image, list the optional components in the Windows PE image:
 
     ```
