@@ -88,7 +88,7 @@ Where *D:* is the location of the Windows installation media.
 
 In this step you copy the language-specific Setup resources from each language-specific Windows distribution to the Sources folder in your Windows distribution. For example, mount the fr-FR Windows installation media as drive E: and copy the Fr-FR sources folder to your Windows distribution. 
 
-Note, language interface packs (LIPs/LXPs) are no
+Note, language interface packs (LIP) are not supported on Windows Setup.
 
 -   Copy the localized Windows Setup files to your Windows distribution.
 
