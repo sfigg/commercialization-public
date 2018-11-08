@@ -12,19 +12,31 @@ ms.topic: article
 
 # Localize
 
-Windows allows you to create Windows images for different languages and regions. This sections covers how to create Windows deployments to support localized Windows PCs.
+Set up Windows 10 or Windows Server with the right set of languages, settings, and keyboards or other input devices for customers in different regions.
 
-## In this section
+## Localizing Windows
 
-| Topic | Description |
-|  --- | ---  |
-| [Language Packs](language-packs-and-windows-deployment.md) | Overview of language packs in Windows 10 | 
-| [Available Language Packs for Windows](available-language-packs-for-windows.md) | See which language packs and language interface packs are available for Windows 10 |
-| [Add Language Packs to Windows](add-and-remove-language-packs-offline-using-dism.md) | Learn how to add languages to Windows |
-| [Multilingual Windows Image Creation](multilingual-windows-image-creation.md) | Learn how to create a Windows image that contains multiple languages |
-| [Configure International Settings in Windows](configure-international-settings-in-windows.md) | Learn how to specify the default language, locale, and keyboard values during deployment or after Windows is installed |
-| [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md) | Learn how configure your Windows installation media to support choosing different languages for Windows Setup and your Windows installation |
-| [Add languages to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md) | Learn how to use Windows Setup to deploy a multilingual distribution of Windows |
-| [Default Input Profiles (Input Locales) in Windows](default-input-locales-for-windows-language-packs.md) |Learn how to configure input locales, which describe the language of the input entered, and the keyboard on which it is being entered |
-| [Default Time Zones](default-time-zones.md) | Learn how to set the default time zone for Windows | 
-| [Keyboard Identifiers and Input Method Editors for Windows](windows-language-pack-default-values.md) | Identify the keyboard type of a Windows installation |
+* [Add languages to Windows](add-language-packs-to-windows.md): Learn how to localize different parts of Windows, from the UI to fonts, out-of-box experience, and recovery environment. 
+  - List of [available languages for Windows](available-language-packs-for-windows.md).
+  - List of [available language and region Features on Demand](features-on-demand-language-fod.md): List of localized features you can add, for example: fonts, text-to-speech, optical character recognition (OCR), speech recognition, and handwriting recognition.
+
+* [Configure International Settings in Windows](configure-international-settings-in-windows.md): Specify the default language, locale, and keyboard values during deployment or after Windows is installed.
+  - List of [default input profiles (input locales)](default-input-locales-for-windows-language-packs.md). Input profiles combine the language of the input entered and the keyboard identifier.
+  - List of [keyboard identifiers and input method editors (IME)](windows-language-pack-default-values.md)
+  - List of [default time zones](default-time-zones.md) 
+
+* [Out of Box Experience (OOBE)](how-oobexml-works.md): Localize the end user license agreement (EULA), registration pages, and instructions for pairing keyboards and mice.
+* Add languages to [Windows Recovery Environment (WinRE)](customize-windows-re.md) so users can troubleshoot and recover their devices using their preferred language.
+
+
+## Localizing the installation process
+
+* [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md) to create Windows installation media that works in the user's preferred language and shows the languages available in the Windows image.
+
+* [Add languages to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md) to help users on a corporate network select Windows in their preferred language
+
+* [Add languages to WinPE](winpe-mount-and-customize.md) to help your technicians install Windows in their preferred language.
+
+## <span id="related_topics"></span>Related topics
+
+* [Features On Demand](features-on-demand-v2--capabilities.md)

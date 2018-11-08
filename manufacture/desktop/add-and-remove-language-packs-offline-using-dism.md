@@ -8,6 +8,7 @@ ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
 
+redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-language-packs-to-windows.md
 
 ---
 

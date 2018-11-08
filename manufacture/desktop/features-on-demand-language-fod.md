@@ -14,7 +14,7 @@ ms.topic: article
 
 ## <span id="language_capabilities"></span> Language and region-related Features on Demand reference
 
-When you add a language pack to a Windows image, you also add [Features on Demand](features-on-demand-v2--capabilities.md) to enable additional functionality. To view available non language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
+When you add a language pack to a Windows image, you also add [Features on Demand](features-on-demand-v2--capabilities.md) to enable additional functionality. To view available non-language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
 
 To see how to add Features on Demand and language packs to your Windows image, see [Add languages to Windows](add-and-remove-language-packs-offline-using-dism.md).
 

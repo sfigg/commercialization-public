@@ -24,7 +24,6 @@ In addition, Deployment Imaging Servicing and Management (DISM) should also only
 
 ## Prepare keyboards, time zones, and other regional settings
 
-
 You can specify the default keyboard layout, language, or locale, either during deployment or after Windows is installed.
 
 -   [Configure International Settings in Windows](configure-international-settings-in-windows.md)
@@ -32,9 +31,7 @@ You can specify the default keyboard layout, language, or locale, either during 
 -   [Default Time Zones](default-time-zones.md): Lists the default time zone used for each region.
 -   [Keyboard identifiers for Windows](windows-language-pack-default-values.md): Lists the keyboard hexadecimal values used when configuring input profiles.
 
-
 ## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using Windows PowerShell
-
 
 In Windows 10, you can use the [International Settings PowerShell cmdlets](https://docs.microsoft.com/powershell/module/internationalcmdlets/?view=winserver2012-ps) to change the language on a running Windows installation. 
 
