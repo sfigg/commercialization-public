@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # Optimization
 
 
-The optmization process for a Modern Standby system follows the same patterns used in optimizing a Windows 8.1 Connected Standby system. You can find detailed recommendations here on [MSDN](http://msdn.microsoft.com/library/windows/hardware/dn495353.aspx).
+The optmization process for a Modern Standby system follows the same patterns used in optimizing a Windows 8.1 Connected Standby system.
 
 ## Adaptive idle usage
 
