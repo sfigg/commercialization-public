@@ -82,7 +82,7 @@ Some capabilities have dependencies, as shown in the following table.
 | Component | Sample file name | Dependencies |	Description |
 | --- | --- | --- | --- |
 |Language pack |	`Microsoft-Windows-Client-Language-Pack_x64_es-es.cab` |	None |	UI text, including basic Cortana capabilities. |
-|Language interface pack |	`Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab` |	Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md). | UI text, including basic Cortana capabilities.<br><br>Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack. |
+|Language experience pack or language interface pack |	`LanguageExperiencePack.am-et.neutral.appx` or `Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab` |	Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md). | UI text, including basic Cortana capabilities.<br><br>Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack. |
 |Basic |	`Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br><br>You must add this component before adding any of the following components. |
 | Fonts |	`Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package` |	None | Fonts.<br><br>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Language and region Features On Demand](features-on-demand-language-fod.md). |
 | Optical character recognition |	`Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` |	Basic |	Recognizes and outputs text in an image. |
@@ -93,22 +93,13 @@ Some capabilities have dependencies, as shown in the following table.
 | WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
  
 
-## <span id="Where_do_I_download_the_language_packs_"></span><span id="where_do_i_download_the_language_packs_"></span><span id="WHERE_DO_I_DOWNLOAD_THE_LANGUAGE_PACKS_"></span>Where do I download the language packs?
-
-To see what's available, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
-
--   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or [Device Partner Center](https://devicepartner.microsoft.com/).
--   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
--   Users can add languages after Windows is installed, by going to **Settings** > **Time & language** > **Region and language** > **Add a language**. See [Add and switch input and display language preferences in Windows 10](https://support.microsoft.com/en-us/help/4027670/windows-add-and-switch-input-and-display-language-preferences-in-windo) for more information.
-
-
 ## <span id="LPInstallMethods"></span><span id="lpinstallmethods"></span><span id="LPINSTALLMETHODS"></span>Installation methods
 
 
 You can add a language pack to an image in the following ways:
 
--   [**Offline installation**](#add-offline). If you need to add a language pack or configure international settings on a custom Windows image, you can use DISM.
 -   [**Using Windows Setup.**](#add-setup)
+-   [**Offline installation**](#add-offline). If you need to add a language pack or configure international settings on a custom Windows image, you can use DISM.
 -   **On a running operating system.** If you need to boot the operating system to install an application or to test and validate the installation, you can add a language pack to the running operating system by using DISM or the language pack setup tool (Lpksetup.exe). You can use this method only for language packs that are stored outside of the Windows image. For more information, see [Add and Remove Language Packs on a Running Windows Installation](add-and-remove-language-packs-on-a-running-windows-installation.md) and [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
 
 ## <span id="add-setup"></span><span id="ADD-SETUP"></span>Add or remove languages using Windows Setup
@@ -190,7 +181,7 @@ To add a language to an offline image, you'll need:
     Dism /Image:"C:\mount\windows" /Get-capabilities
     ```
 
-5.  **If you're adding a LIP language** Add your LIP language that uses the language that we just added (fr-FR) as a base language. Not all LIP languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+5.  **If you're adding a LXP/LIP language** Add your LXP/LIP language that uses the language that we just added (fr-FR) as a base language. Not all languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
     **For Windows 10, version 1809 and later:**
 
@@ -296,10 +287,17 @@ If you're removing a language from an online image, the process is the same, but
     Dism /Image:C:\test\offline /Get-Packages
     ```
 
-5. **If removing a LIP language** Use DISM to remove the LIP .appx.
+5. For LXPs or LIPs, remove them before removing the language components.
 
+    Remove an LXP:
     ```
     Dism /remove-provisionedappxpackage /packagename:Microsoft.LanguageExperiencePack<lang_version>_neutral__8wekyb3d8bbwe
+    ```
+
+    Remove a LIP:
+    ```
+    Dism /Image:C:\test\offline /Remove-Package /PackageName:<LIP name> 
+    ```
 
 6.  Remove language components from the image. Use the packages names that you got in step 5. You can specify more than one `/packagename` per command-line statement.
 
@@ -313,13 +311,13 @@ If you're removing a language from an online image, the process is the same, but
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
-## Reinstall apps and updates (required whenever adding languages)**
+### Reinstall apps and updates (required whenever adding languages)
 
 In general, install languages before installing updates and apps. If you're adding languages to an image that already contains apps or updates (for example, servicing stack updates (SSU) or cumulative updates (CU), reinstall the apps and updates.
 
 Note: In Windows 10, version 1607, it is no longer necessary to remove inbox apps.
 
-## Configure international settings
+### Configure international settings
 
 After you add or remove a language pack in a Windows image, you can update most of the defaults for a region at once:
 
@@ -328,7 +326,7 @@ Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
 ```
 To learn more, see [Configure international settings by using DISM](configure-international-settings-in-windows.md).
 
-## Windows Setup: update the list of languages
+### Windows Setup: update the list of languages
 
 This step is only required if you're distributing Windows using Windows Setup media, or using a distribution share.
 
@@ -338,7 +336,7 @@ Dism /Image:C:\mount\windows /gen-langini /distribution:C:\my_distribution
 
 To learn more, see [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md) and [Add languages to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md).
 
-## Unmount the images
+### Unmount the images
 
 Unmount the Windows RE and Windows images.
 
