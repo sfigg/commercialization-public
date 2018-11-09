@@ -25,9 +25,7 @@ Set up Windows 10 or Windows Server with the right set of languages, settings, a
   - List of [keyboard identifiers and input method editors (IME)](windows-language-pack-default-values.md)
   - List of [default time zones](default-time-zones.md) 
 
-* [Out of Box Experience (OOBE)](how-oobexml-works.md): Localize the end user license agreement (EULA), registration pages, and instructions for pairing keyboards and mice.
-* Add languages to [Windows Recovery Environment (WinRE)](customize-windows-re.md) so users can troubleshoot and recover their devices using their preferred language.
-
+* [Out of Box Experience (OOBE)](how-oobexml-works.md): Create localized versions of end user license agreements (EULA), registration pages, and instructions for pairing keyboards and mice.
 
 ## Localizing the installation process
 
@@ -40,3 +38,4 @@ Set up Windows 10 or Windows Server with the right set of languages, settings, a
 ## <span id="related_topics"></span>Related topics
 
 * [Features On Demand](features-on-demand-v2--capabilities.md)
+* Add languages to [Windows Recovery Environment (WinRE)](customize-windows-re.md)

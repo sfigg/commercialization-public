@@ -130,6 +130,7 @@
 ##### [Find a Component, Setting, or Package in Windows SIM](desktop/wsim/find-a-component-setting-or-package-in-windows-sim.md)
 ##### [Create a Configuration Set](desktop/wsim/create-a-configuration-set.md)
 ##### [Create or Open a Distribution Share](desktop/wsim/create-or-open-a-distribution-share.md)
+##### [Add languages to a Windows distribution share](desktop/wsim/add-multilingual-support-to-a-windows-distribution.md)
 ##### [Manage Files and Folders in a Distribution Share](desktop/wsim/manage-files-and-folders-in-a-distribution-share.md)
 ##### [Add Packages to a Distribution Share](desktop/wsim/add-packages-to-a-distribution-share.md)
 #### [Reference](desktop/wsim/windows-system-image-manager-reference-topics.md)

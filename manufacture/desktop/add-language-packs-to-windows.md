@@ -21,7 +21,7 @@ OEMs can add language packs to localize Windows 10 and Windows Server images for
 
 * **Language components**: For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), some language components, like language-specific fonts, optical character recognition, and handwriting recognition, are provided as [Features On Demand](features-on-demand-v2--capabilities.md). You can save disk space by choosing not to include some language components in your image. While this reduction in image size can be helpful when creating images for lower-cost devices with small storage, it does lead to an incomplete language experience.
 
-* **Language experience packs (LXP) / Language interface packs (LIP)**: These are language packs require a base language. They don't include all of the language resources by themselves. For parts of the UI that are not translated into the LXP language, the UI displays the parent language. 
+* **Language experience packs (LXP) / Language interface packs (LIP)**: These are language packs require a base language. They don't include all of the language resources by themselves. For parts of the UI that are not translated into the LXP language, the Windows displays the UI with the parent language. 
   - As of Windows 10, version 1809, these languages are distributed as .appx files. See the [available Language experience packs](available-language-packs-for-windows.md#lxps). Sample .appx name: `LanguageExperiencePack.am-et.neutral.appx`. 
   - For previous Windows versions, language experience packs are .cab files, example, Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab.
 

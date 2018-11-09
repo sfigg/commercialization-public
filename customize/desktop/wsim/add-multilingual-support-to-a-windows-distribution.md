@@ -8,8 +8,6 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 
-redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/add-multilingual-support-to-a-windows-distribution
-
 ---
 
 # Add Multilingual Support to a Windows Distribution
