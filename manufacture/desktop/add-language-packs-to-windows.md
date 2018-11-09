@@ -26,38 +26,37 @@ OEMs can add language packs to localize Windows 10 and Windows Server images for
   - For previous Windows versions, language experience packs are .cab files, example, Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab.
 
 * **[Recovery language packs](customize-windows-re.md)** so users can troubleshoot and recover their devices using their preferred language. 
-  - WinRE language packs are distributed on the language pack ISO. Don't use the WinPE language packs that ship with the ADK.
 
 ## Considerations
 
-* **Versions must match**. When you add a language, the version of the language components must match the version of Windows. For example, you can't add a Windows 10, version 1809 language pack to Windows 10, version 1803.
+* **Install languages, then updates and apps**. If you're adding languages to an image that already contains apps or updates (for example, servicing stack updates (SSU) or cumulative updates (CU), reinstall the apps and updates.
 
-* **Install languages, then updates and apps**. 
-
-  - Install language packs before installing updates. If you install an update (servicing stack update (SSU) or Cumulative Update (CU)) prior to installing a language pack, reinstall the update to apply language-specific changes.
-
-  - In general, install all of your languages onto Windows before installing apps. This helps make sure that the language resource files are available for each of the available apps. Many apps include support for multiple languages, though some require separate installation of language packs to work properly. Consult with the app developer. To learn more, see [Multilingual User Interface (Windows)](http://go.microsoft.com/fwlink/p/?LinkId=698642).
-
-* **Image size**
+* **Size and performance**
+  - You can install multiple languages onto the same Windows image. Use care to limit the amount and types of language packs included with each image. While the Windows 10 language packs are smaller, having too many affects disk space, and can affect performance, especially while updating and servicing Windows.
   - Some languages require more hard-disk space than others.
-  - When you're adding languages, don't add too many languages at the same time using a single command, because the device may not have enough memory to handle it. General recommendations: from Windows in **audit mode**, don't add more than 20 language packs at a time. From **Windows PE**, don't add more than 7. If WinPE is still running out of memory, you can [customize WinPE by adding temporary storage (scratch space)](winpe-mount-and-customize.md).
--   The default language cannot be removed because it is used to generate computer security identifiers (SIDs). The default UI language is the language that is selected during the Out-Of-Box-Experience (OOBE), the UI language specified in the Deployment Image Servicing and Management (DISM) command-line tool, or in the unattended answer file if you skip OOBE.
+  - When creating Windows images, you can remove English language components when deploying to non-English regions to save space. You'll need to uninstall them in the reverse order from how you add them.
+  - After the Out-Of-Box-Experience (OOBE) is complete, the default language cannot be removed. The default UI language is selected either during the Out-Of-Box-Experience (OOBE), or can be preselected in the image using DISM or an unattended answer file.
+  - Some time after OOBE, any preinstalled languages that haven't been used are removed automatically.
+
+**Note**  
+The language-pack removal task does not remove LIPs.
 
 - **Cross-language upgrades are not supported**. This means that during upgrades or migrations, if you upgrade or migrate an operating system that has multiple language packs installed, you can upgrade or migrate to the system default UI language only. For example, if English is the default language, you can upgrade or migrate only to English.
 
-## Get languages and language components
+## Get languages and components
 
--   **OEMs and System Builders** with Microsoft Software License Terms can download the language pack ISO and Feature on Demand ISO from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [Device Partner Center](https://devicepartner.microsoft.com/). 
-    - For Windows 10, version 1809, Language Experience Pack .appx files and their associated license files in the LocalExperiencePack folder on the Language Pack ISO.
+-   **OEMs and System Builders** with Microsoft Software License Terms can download the Language Pack ISO and Feature on Demand ISO from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [Device Partner Center](https://devicepartner.microsoft.com/). 
+    - For Windows 10, version 1809, Language Experience Pack .appx files and their associated license files are in the LocalExperiencePack folder on the Language Pack ISO.
     - For previous versions of Windows, Language Interface Packs are available as a separate download.
+    - WinRE language packs are distributed on the Language Pack ISO. Don't use the WinPE language packs that ship with the ADK.
 
 -   **IT Professionals** can download language packs from the [Microsoft Next Generation Volume Licensing Site](https://licensing.microsoft.com/).
 -   After Windows is installed, users can download and install more languages by selecting **Settings** > **Time & language** > **Language** > **Add a language**. 
 
 
-## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
+Note: the version of the language components must match the version of Windows. For example, you can't add a Windows 10, version 1809 language pack to Windows 10, version 1803.
 
-You can install multiple languages onto the same Windows 10 image. Use care to limit the amount and types of language packs included with each image. While the Windows 10 language packs are smaller, having too many affects disk space, and can affect performance, especially while updating and servicing Windows.
+## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
 
 The table below gives an overview of the types of language components that are available in Windows 10.
 
@@ -78,7 +77,7 @@ Other customizations that can be preset:
 -   [Keyboard Identifiers and Input Method Editors for Windows](windows-language-pack-default-values.md)
 
 
-Some capabilities have additional dependencies, as shown in the following table.
+Some capabilities have dependencies, as shown in the following table.
 
 | Component | Sample file name | Dependencies |	Description |
 | --- | --- | --- | --- |
@@ -133,13 +132,19 @@ To learn more, see [Add Multilingual Support to a Windows Distribution](add-mult
 
 ## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Add or remove languages offline
 
-Here's how to add and remove languages on an offline image (install.wim).
+This section covers how to add and remove languages on an offline (mounted) image (install.wim). We'll install the French language, and then add a LIP language (Luxembourgish) that uses French for its base language.
 
-To save space, you can remove English language components when deploying to non-English regions. You'll need to uninstall them in the reverse order from how you add them.
+To add a language to an offline image, you'll need:
+- A Windows image
+- Language Pack ISO
+- Feature on Demand ISO
 
-**Mount the images**
+(See [where to get them](#get_languages_and_components).)
 
--   Mount the Windows and Windows RE images. The Windows RE image file is part of the Windows image.
+
+**Mount images**
+
+-   Mount the Windows and Windows Recovery Environment (winre.wim) images. The recovery image is stored inside the Windows image.
 
     ```
     md C:\mount\windows
@@ -150,194 +155,190 @@ To save space, you can remove English language components when deploying to non-
 
 **Add a language**
 
-1.  Add the language to Windows. You can use either the /Add-Package or /Add-Capabilities commands to add the capabilities.
+ Preinstall languages by adding the language packs and their related Features on Demand for all preinstalled languages, including the base languages if you're adding a LIP language.
 
-    For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: the language pack **.cab**, then **Basic**, then **TextToSpeech**, then **Speech**, in this order.
+1.  Mount the language pack and FOD ISOs with File explorer. This will assign them drive letters.
 
-    If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all at once using the same DISM /Add-Package command.
-
-    After adding the language pack, verify that it's in the images.
+2.  Add the language pack to Windows. Use `dism /Add-Package` to add the language pack.
 
     ```
-    rem Remove the paragraph marks to make this into one really big, long command. 
-    Dism /Add-Package /Image:"C:\mount\windows"
-         /PackagePath="C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab"
-         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab"
-    Dism /Get-Capabilities /Image:"C:\mount\windows"
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="D:\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab"
     ```
 
-2.  Add any other capabilities, such as fonts, required for that region. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).
+    Where D:\ is the Language pack ISO 
 
+    Note: you can add more than one language at a time by adding multiple /PackagePath commands with a single DISM command. However, don't add too many at the same time, because the device may not have enough memory to handle it. General recommendations: if you're running this command in Windows on your technician computer or in **audit mode**, don't add more than 20 language packs at a time. From **Windows PE**, don't add more than 7 at a time. If WinPE is still running out of memory, you can [customize WinPE by adding temporary storage (scratch space)](winpe-mount-and-customize.md).
+
+3.  Add the language FODs. We recommend always installing the Basic, Fonts, OCR, Text-to-speech, and Speech recognition FODs if they're available for the languages you’re preinstalling. Additionally, preinstall the handwriting language component FOD if you’re shipping a device with a pen.
+    
+    Example: adding fr-fr (no fonts):
     ```
-    rem Thai example (add th-TH first).
-    Dism /Add-Package /Image:"C:\mount\windows"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package"
-    Dism /Get-Capabilities /Image:"C:\mount\windows"
-    ```
-
-3.  When you add languages to Windows, when possible, add them to WinRE to ensure a consistent language experience in recovery scenarios. This requires a matching version of Windows and the Windows ADK. Windows RE now requires the WinPE-HTA package, this is new for Windows 10.
-
-    After adding the packages, verify that they're in the image.
-
-    ```
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Scripting_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SecureStartup_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SRT_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WDS-Tools_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WMI_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-StorageWMI_fr-fr.cab"
-    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
-    Dism /Get-Packages /Image:"C:\mount\winre"
+    Dism /Image:"C:\mount\windows" /add-package /packagepath:E:\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab
     ```
 
-    Example output from /Get-Packages: Package Identity : Microsoft-Windows-WinPE-Rejuv\_fr-fr ... fr-FR~10.0.9926.0 State : Installed
+    Example: adding th-TH (fonts required):
+    ```
+    Dism /Image:"C:\mount\windows" /add-package /packagepath:E:\Microsoft-Windows-LanguageFeatures-Basic-th-TH-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Fonts-th-TH-Package~31bf3856ad364e35~amd64~~.cab 
+    /packagepath:E:\Microsoft-Windows-LanguageFeatures-OCR-th-TH-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-th-TH-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-TextToSpeech-th-TH-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Speech-th-TH-Package~31bf3856ad364e35~amd64~~.cab
+    ```
+    To learn more, see [Features on demand](features-on-demand-v2--capabilities.md).
 
-**Add a language interface pack (LIP)**
-
-1.  Add the LIP and desired/available capabilities to the Windows image. Some regions don't have any related capabilities, while others have partial or complete sets.
-
-    After adding the packages, verify that they're in the image.
+4.  After adding the language pack and components, verify that it's in the images.
 
     ```
-    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_bn-in.cab
+    Dism /Image:"C:\mount\windows" /Get-packages
+    Dism /Image:"C:\mount\windows" /Get-capabilities
+    ```
+
+5.  **If you're adding a LIP language** Add your LIP language that uses the language that we just added (fr-FR) as a base language. Not all LIP languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+
+    **For Windows 10, version 1809 and later:**
+
+    1. Add the LIP, which is on the language pack ISO in the LXP folder. This type of language pack is distributed as an .appx.
+        
+        ```
+        DISM /image:"C:\mount\windows" /add-provisionedappxpackage /PackagePath="D:\LocalExperiencePack\lb-lu\LanguageExperiencePack.lb-LU.Neutral.appx /licensepath:"D:\LocalExperiencePack\lb-lu\License.xml"
+        ```
+    
+        Where D:\ is the language pack ISO
+    
+    2. Add the features on demand that support your LIP language.
+    
+        ```
+        DISM /image:"C:\mount\windows" /add-package /packagepath:E:\Microsoft-Windows-LanguageFeatures-Basic-lb-lu-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-lb-lu-Package~31bf3856ad364e35~amd64~~.cab
+        ```
+        
+        Where E:\ is the Feature on Demand ISO
+
+    3. Verify that the LIP is in the image
+
+        ```
+        DISM /image:"C:\mount\windows" get-provisionedappxpackages
+        ```
+    
+    **For earlier versions of Windows:**
+
+    1.  Add the LIP and desired/available capabilities to the Windows image. Some regions don't have any related capabilities, while others have partial or complete sets.
+
+        After adding the packages, verify that they're in the image.
+
+        ```
+        Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_bn-in.cab
          /PackagePath="C:\Languages\bn-in x64\Microsoft-Windows-LanguageFeatures-Basic-bn-in-Package.cab"
-    ```
+        ```
 
-2.  Add any other capabilities, such as fonts, required for that region.
+    2.  Add any other capabilities, such as fonts, required for that region.
 
-    ```
-    Dism /Add-Package /Image:"C:\mount\windows"
-         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Fonts-Beng-Package"
-    ```
+        ```
+        Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Fonts-Beng-Package"
+        ```
 
-3.  Verify that they're in the image.
+    3.  Verify that they're in the image.
 
-    ```
-    Dism /Get-Packages /Image:"C:\mount\windows" 
-    ```
+        ```
+        Dism /Get-Packages /Image:"C:\mount\windows" 
+        ```
 
-**Remove a language**
-
-1.  To save space, you can remove languages from an image.
-
-    You'll need to uninstall them in the reverse order from how you add them.
-
-    You can't remove a capability that other packages depend on. For example, if you have the French handwriting and basic capabilities installed, you can't remove the basic capability. This will fail.
-
-    You can use either the DISM /Remove-Package or DISM /Remove-Capability command to remove a capability, and either /DISM /Get-Packages or DISM /Get-Capabilities to verify that they're no longer in the image.
+6.  When you add languages to Windows, when possible, add them to WinRE to ensure a consistent language experience in recovery scenarios. Use the Windows RE language packs distributed on the Language Pack ISO. Don't use the WinPE language packs that ship with the ADK.
 
     ```
-    DISM /Remove-Capability /Image:"C:\mount\windows"
-     /CapabilityName:Language.Speech~~~en-US~0.0.1.0 
-    DISM /Remove-Capability /Image:"C:\mount\windows"
-     /CapabilityName:Language.TextToSpeech~~~en-US~0.0.1.0
-    DISM /Remove-Capability /Image:"C:\mount\windows"
-     /CapabilityName:Language.Handwriting~~~en-US~0.0.1.0
-    DISM /Remove-Capability /Image:"C:\mount\windows"
-     /CapabilityName:Language.OCR~~~en-US~0.0.1.0
-    DISM /Remove-Capability /Image:"C:\mount\windows"
-     /CapabilityName:Language.Basic~~~en-US~0.0.1.0
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
-    DISM /Get-Packages /Image:"C:\mount\windows"
-    DISM /Get-Capabilities /Image:"C:\mount\windows"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\lp.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-Scripting_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-SecureStartup_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-SRT_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-WDS-Tools_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-WMI_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-StorageWMI_fr-fr.cab"
+    Dism /Image:C:\mount\winre /Add-Package /PackagePath:"D:\Windows Preinstallation Environment\x64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
     ```
 
-    It's also OK to just remove the language pack without removing the language capabilities. One week after the user completes OOBE, if the user hasn't added the language to their input language list, Windows automatically cleans out the unused language capabilities.
 
-2.  Remove the Windows RE optional components. After removing, verify that they're no longer in the image. Replace build number 10.0.10120.0 with the build you are using. 
-
+    After adding the packages, verify that they're in the image.
     ```
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-WMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-WDS-Tools-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-SRT-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-SecureStartup-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Scripting-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-EnhancedStorage-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
-    Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0
     Dism /Get-Packages /Image:"C:\mount\winre"
     ```
 
-**Reinstall apps (required whenever adding languages)**
-
-- **Universal Windows apps**: Reinstall to get the language resources for the app. Example:
-
+    Each package should show as State:Installed. Example output from /Get-Packages: 
+    
     ```
-    Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file> \2b362ab83144485d9e9629ad2889a680_License1.xml
-    ```
-    Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox apps. If you do try to do this, the DISM command may fail.
-
-- **Desktop apps**: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
-
-**For installations managed by Windows Setup or distribution shares, update the language list**
-
-1.  This is only required if you're distributing multilingual Windows Setup media, or distributing Windows through a share.
-
-    Recreate the lang.ini file.
-
-    ```
-    Dism /Image:C:\mount\windows /gen-langini /distribution:C:\my_distribution
+    Package Identity : Microsoft-Windows-WinPE-Rejuv\_fr-fr ... fr-FR~10.0.9926.0 State : Installed
     ```
 
-    The lang.ini file in C:\\myDistribution\\sources should look similar to the following:
+## Remove a language
+
+Before you add new language packs to a Windows image, you must remove any language packs that you don't intend to use. There are two ways to remove language packs offline with DISM. You can either apply an unattended answer file to the offline image, or you can remove the language pack directly from the offline image, using the command prompt.
+
+If you're removing a language from an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
+
+> [!important]
+> You cannot remove a language pack from an offline Windows image if there are pending online actions. The Windows image should be a recently installed and captured image. This will guarantee that the Windows image does not have any pending online actions that require a reboot.
+
+### Remove a language from a Windows image
+
+> [!note]
+> If you're adding a language to an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
+
+1.  Locate the Windows image (.wim) file or virtual hard disk (.vhd or .vhdx) that contains the Windows image that you intend to remove languages from.
+
+2.  Open a Command prompt as administrator.
+
+3.  Mount a Windows image if you want to remove languages from an offline image.
 
     ```
-    [Available UI Languages]
-    ca-ES = 2
-    es-ES = 3
-     
-    [Fallback Languages]
-    es-ES = en-us
+    Dism /Mount-Image /ImageFile:C:\test\images\install.wim /MountDir:C:\test\offline
     ```
 
-2.  Review the default international settings in the Windows image by using DISM.
+4.  Verify that the packages are no longer installed on your mounted image.
 
     ```
-    Dism /Image:C:\mount\windows /get-intl
+    Dism /Image:C:\test\offline /Get-Packages
     ```
 
-    For example, you should see output similar to the following:
+5. **If removing a LIP language** Use DISM to remove the LIP .appx.
 
     ```
-    Reporting offline international settings.
-     
-    Default system UI language : es-ES
-    System locale : ca-ES
-    Default time zone : Romance Standard Time
-    User locale for default user : ca-ES
-    Location : Spain (GEOID = 217)
-    Active keyboard(s) : 0403:0000040a
-    Keyboard layered driver : PC/AT Enhanced Keyboard (101/102-Key)
-     
-    Installed language(s): ca-ES
-      Type : Partially localized language, LIP type.
-    Installed language(s): es-ES
-      Type : Fully localized language.
-     
-    Reporting distribution languages.
-     
-    The default language in the distribution is:
-    es-ES
+    Dism /remove-provisionedappxpackage /packagename:Microsoft.LanguageExperiencePack<lang_version>_neutral__8wekyb3d8bbwe
+
+6.  Remove language components from the image. Use the packages names that you got in step 5. You can specify more than one `/packagename` per command-line statement.
+
+    ```
+    Dism /Image:C:\test\offline /Remove-Package /PackageName:<language pack name> /PackageName:<language component package Name>  ...
     ```
 
-**Change the default language**
+7.  Commit the changes. The image remains mounted until you run `DISM /unmount.
 
-Set the default Windows language to match the preferred language for your customers.
+    ```
+    Dism /Commit-Image /MountDir:C:\test\offline
+    ```
+
+## Reinstall apps and updates (required whenever adding languages)**
+
+In general, install languages before installing updates and apps. If you're adding languages to an image that already contains apps or updates (for example, servicing stack updates (SSU) or cumulative updates (CU), reinstall the apps and updates.
+
+Note: In Windows 10, version 1607, it is no longer necessary to remove inbox apps.
+
+## Configure international settings
+
+After you add or remove a language pack in a Windows image, you can update most of the defaults for a region at once:
 
 ```
 Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
 ```
+To learn more, see [Configure international settings by using DISM](configure-international-settings-in-windows.md).
 
-**Unmount the images**
+## Windows Setup: update the list of languages
+
+This step is only required if you're distributing Windows using Windows Setup media, or using a distribution share.
+
+```
+Dism /Image:C:\mount\windows /gen-langini /distribution:C:\my_distribution
+```
+
+To learn more, see [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md) and [Add languages to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md).
+
+## Unmount the images
 
 Unmount the Windows RE and Windows images.
 
@@ -346,19 +347,6 @@ Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
 Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
 ```
 
-## <span id="LPRemovalTimer"></span><span id="lpremovaltimer"></span><span id="LPREMOVALTIMER"></span>The Language-Pack Removal Task
-
-
-In Windows 10, the language pack removal task runs on all Windows editions. However, any languages that are selected by users in the language preferences section of the control panel are not removed. Users can choose to run multiple languages and any language packs that are not used by the user are removed from the computer. Also, any language pack that is installed by a user is not removed.
-
-Running the Sysprep tool resets the language-pack removal clock. The clock will not start again until the next time OOBE runs and the computer is restarted. If you customize your Windows image, consider booting to audit mode to make your customizations. The language pack removal task will not be started when you boot to audit mode. For more information about audit mode, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md). You can also update your Windows image offline without booting the image. For more information, see [Service a Windows Image Using DISM](service-a-windows-image-using-dism.md)
-
-Using the `SkipMachineOobe` setting in the Microsoft-Windows-Shell-Setup component does not skip the language-pack removal task.
-
-**Note**  
-The language-pack removal task does not remove LIPs.
-
- 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -373,12 +361,10 @@ The language-pack removal task does not remove LIPs.
 
 [Default Input Locales for Windows Language Packs](default-input-locales-for-windows-language-packs.md)
 
- 
+[DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 
- 
+[DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)
 
+[DISM Unattended Servicing Command-Line Options](dism-unattended-servicing-command-line-options.md)
 
-
-
-
-
+[Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445)
