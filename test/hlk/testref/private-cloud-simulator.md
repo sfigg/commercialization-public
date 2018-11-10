@@ -73,7 +73,7 @@ Figure 1 shows the topology for a PCS lab environment with the following element
 PCS execution proceeds through the stages below. All stages after the PCS kickoff \[Stage (2)\] are fully automated and need no user intervention.
 
 1.  Setup PCS lab topology
-    1.  In this stage, the lab setup necessary for a succesful PCS run should be complete.
+    1.  In this stage, the lab setup necessary for a successful PCS run should be complete.
     2.  Section (2) discusses details on setting up the common lab infrastructure
     3.  Section (3) discusses the specific setups necessary for different types of devices/solutions.
 2.  Kickoff PCS using HLK Studio
