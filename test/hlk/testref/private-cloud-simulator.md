@@ -10,7 +10,7 @@ ms.author: dawnwood
 ms.date: 10/11/2018
 ms.topic: article
 ---
-# Private Cloud Simulator for Windows Server 2016
+# Private Cloud Simulator for Windows Server 2019
 
 ## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Introduction
 
@@ -43,9 +43,9 @@ PCS lab environment contains the following elements:
 * An Active Directory domain controller/DNS/DHCP server for the test domain.
   * You can find information about Active Directory at <https://msdn.microsoft.com/library/bb727067.aspx>
   * [Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels.aspx) needs to be Windows Server 2012 or higher.
-* A dedicated HLK controller machine.
-* A dedicated PCS controller machine.
-* A minimum 3-node compute cluster, which hosts Hyper-V virtual machines.
+* A dedicated HLK controller machine. OS must be Windows Server 2016.
+* A dedicated PCS controller machine. OS must be Windows Server 2019.
+* A compute cluster, which hosts Hyper-V virtual machines. The minimun number of nodes depends on the type of [PCS jobs](#pcs_tests).
 
 Supporting Documents:
 
@@ -74,7 +74,7 @@ Minimum system requirements are as shown in the table below.
 #### HLK Controller Setup
 
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to [download](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit) and install HLK controller software.
-* Download the supplemental content package file **PCSFiles.vhd** for Windows Server 2016 from the [Windows Hardware Lab Kit] website(https://developer.microsoft.com/en-us/windows/hardware/windows-hardware-lab-kit).
+* Download the supplemental content package file **PCSFiles.vhd** for Windows Server 2019 from the [Windows Hardware Lab Kit] website(https://developer.microsoft.com/en-us/windows/hardware/windows-hardware-lab-kit).
 * Copy the **PCSFiles.vhd** file to the **Tests\\amd64** test folder on the HLK Controller. Below is the default path for an HLK installation:
 
     `C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64`
@@ -97,7 +97,7 @@ Minimum system requirements are as shown in the table below.
 | CPU (or vCPU)                | 4 cores                        |
 | Memory                       | 12 GB RAM                      |
 | Free space on the boot drive | 200 GB                         |
-| Operating system             | Windows Server 2016 Datacenter |
+| Operating system             | Windows Server 2019 Datacenter |
 | Active Directory domain      | Join it to the test domain     |
 
 #### PCS Controller Setup
@@ -105,7 +105,7 @@ Minimum system requirements are as shown in the table below.
 * PCS controller MUST be a Generation v2 VM or a physical machine.
 * **Secure Boot** and **BitLocker** MUST be disabled. This is required because PCS enables **TestSigning** boot configuration. If you are using Generation 2 Hyper-V VM as PCS controller, stop the VM to disable Secure Boot in the VM's settings.
 * Install the HLK Client using the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) and open the requisite ports.
-* Install .NET Framework 3.5 (This feature is not included by default in Windows Server 2016).
+* Install .NET Framework 3.5 (This feature is not included by default in Windows Server 2019).
   * Generic Installation Instructions can be found at the following locations:
     * <https://msdn.microsoft.com/library/hh506443>
     * <https://msdn.microsoft.com/library/windows/desktop/hh848079>
@@ -113,7 +113,7 @@ Minimum system requirements are as shown in the table below.
     * Mount the ISO supplied with the build and find the file at **MountedDriveLetter:\\sources\\sxs\\microsoft-windows-netfx3-ondemand-package.cab**
     * Copy the file to a local folder on the PCS controller
     * Install the package by executing this command line using admin privileges
-    
+
       ```powershell
       Add-WindowsFeature Net-Framework-Features -source <Local Folder>
       ```
@@ -124,7 +124,7 @@ This section discusses how to find an appropriate PCS test for your device/solut
 
 * You need to use the same domain admin user account to setup lab and run tests.
 * **Secure Boot State** must be OFF on all nodes and PCS controller.
-* HLK update package MUST be download and installed on HLK controller/clients. This package ["1607 HLK Update for WS16 (NIC, HDD, SERVER), WSSD (ALL) & AZURE STACK (ALL) Certification"](https://developer.microsoft.com/en-us/dashboard/collaborate/packages/3959) is available at Microsoft Collaborate site for download.
+* HLK update package MUST be download and installed on HLK controller/clients. [HLK update package](https://developer.microsoft.com/en-us/dashboard/collaborate/packages/5485) is available at Microsoft Collaborate site for download.
 
 ### PCS Test Selection
 
@@ -136,12 +136,12 @@ The PCS jobs are used to certify multiple categories of devices and solutions. T
 | NIC                | SDDC Standard              | PrivateCloudSimulator-Device.Network.LAN.10GbOrGreater     |
 | NIC                | SDDC Premium               | PrivateCloudSimulator-Device.Network.LAN.AzureStack        |
 | NIC                | AZURESTACK                 | PrivateCloudSimulator-Device.Network.LAN.AzureStack        |
-| SAS HBA            | SDDC Standard              | PrivateCloudSimulator-Device.Storage.Controller.AzureStack |
-| SAS HBA            | SDDC Premium               | PrivateCloudSimulator-Device.Storage.Controller.AzureStack |
-| SAS HBA            | AZURESTACK                 | PrivateCloudSimulator-Device.Storage.Controller.AzureStack |
-| Disk(HDD/SSD/NVMe) | SDDC Standard              | PrivateCloudSimulator-Device.Storage.HD.AzureStack |
-| Disk(HDD/SSD/NVMe) | SDDC Premium               | PrivateCloudSimulator-Device.Storage.HD.AzureStack |
-| Disk(HDD/SSD/NVMe) | AZURESTACK                 | PrivateCloudSimulator-Device.Storage.HD.AzureStack |
+| SAS HBA            | SDDC Standard              | PCS job is replaced by S2D [BVT](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/68fd59d3-afe9-4a68-8c9d-ed2c69f6a070) and [Stress](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/8f88f147-d747-4695-87cf-07990361d18f) tests  |
+| SAS HBA            | SDDC Premium               | PCS job is replaced by S2D [BVT](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/68fd59d3-afe9-4a68-8c9d-ed2c69f6a070) and [Stress](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/8f88f147-d747-4695-87cf-07990361d18f) tests  |
+| SAS HBA            | AZURESTACK                 | PCS job is replaced by S2D [BVT](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/68fd59d3-afe9-4a68-8c9d-ed2c69f6a070) and [Stress](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/8f88f147-d747-4695-87cf-07990361d18f) tests  |
+| Disk(HDD/SSD/NVMe) | SDDC Standard              | PCS job is replaced by S2D [BVT](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/68fd59d3-afe9-4a68-8c9d-ed2c69f6a070) and [Stress](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/8f88f147-d747-4695-87cf-07990361d18f) tests  |
+| Disk(HDD/SSD/NVMe) | SDDC Premium               | PCS job is replaced by S2D [BVT](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/68fd59d3-afe9-4a68-8c9d-ed2c69f6a070) and [Stress](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/8f88f147-d747-4695-87cf-07990361d18f) tests  |
+| Disk(HDD/SSD/NVMe) | AZURESTACK                 | PCS job is replaced by S2D [BVT](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/68fd59d3-afe9-4a68-8c9d-ed2c69f6a070) and [Stress](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/8f88f147-d747-4695-87cf-07990361d18f) tests  |
 | Solution           | SDDC Standard              | PrivateCloudSimulator-System.Solutions.StorageSpacesDirect (MIN) & (MAX) |
 | Solution           | SDDC Premium               | PrivateCloudSimulator-System.Solutions.StorageSpacesDirect (MIN) & (MAX) |
 | Solution           | AZURESTACK                 | PrivateCloudSimulator-System.Solutions.AzureStack (MIN) & (MAX) |
@@ -152,12 +152,6 @@ PCS jobs are summarized below:
 This test contains a set of actions, that specifically target the network adapter device along with VM and compute cluster actions.
 * PrivateCloudSimulator - Device.Network.LAN.AzureStack  
 This test contains an extended set of actions, that verify network adapter support for the new 'Software Defined Networking' feature in Windows Server 2016, along with VM and compute cluster actions.
-* PrivateCloudSimulator - Device.Storage.Controller.AzureStack  
-This test contains an extended set of actions, that specifically target the Storage Controller, along with VM and compute cluster actions.
-* PrivateCloudSimulator - Device.Storage.Enclosure.AzureStack  
-This test contains an extended set of actions, that specifically target the JBOD enclosure, along with VM, compute cluster and storage cluster actions.
-* PrivateCloudSimulator - Device.Storage.HD.AzureStack  
-This test contains an extended set of actions, that specifically target the disk, along with VM and compute cluster actions.
 * PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MIN)/(MAX)  
 This test contains an extended set of actions, that target the entire solution built on an hyper-converged storage spaces direct cluster. The (MIN) test should be run on a cluster with the minimum number of supported nodes for the solution. The (MAX) test should be run on a cluster with the maximum number of supported nodes for the solution.
 * PrivateCloudSimulator - System.Solutions.AzureStack (MIN)/(MAX)  
@@ -200,8 +194,7 @@ Each PCS job contains the following tasks.
 | Minimum Number of Server Nodes | 3 identical machines           |
 | Server Spec                    | CPU: 16 physical cores (e.g. 2 sockets with 8 cores), MEMORY: 128 GB, 64GB free space on boot drive |
 | Storage Overall                | 4 TB free space per node on HDD, 800 GB free space per node on SSD |
-| Storage SSD                    | Minimum of 1 SSD per node |
-| Storage HDD                    | Minimum of 2 HDD per node |
+| Disk                   | If there are drives used as cache, there must be at least 2 per server. There must be at least 4 capacity (non-cache) drives per server. See [S2D hardware requirements](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-hardware-requirements) for more information. |
 | Network Card                   | NIC being certified       |
 | Switch                         | Switch supporting all NIC features |
 
@@ -222,14 +215,11 @@ Each PCS job contains the following tasks.
 * Navigate to the **Selection** tab
 * Select the machine pool containing the network adapter device
 * Select **device manager**
-* Select NIC device for certification from one of cluster machines
+* Select the device. It should be ok to select any relevant NIC device (does not matter which member of the virtual switch team) on any of the compute nodes that is targeted for certification.
 
-    ![hlk showing 10gborgreater test with device selected](images/pcs-10gborgreater-select-device.png)
+  ![hlk showing 10gborgreater test with device selected](images/pcs-10gborgreater-select-device.png)
 
 * Right-click on the selected device and select **Add/Modify Features**
-
-    ![hlk showing 10gborgreater test with add/modify features context menu](images/pcs-10gborgreater-add-modify.png)
-
 * In the features dialog, select **Device.Network.LAN.10GbOrGreater** and then click **OK**. For most NIC cards (with speeds 10GbE or higher) this feature should have been selected automatically.
 * Navigate to the **Tests** tab
 * Select **PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater**
@@ -255,10 +245,10 @@ Each PCS job contains the following tasks.
 
 ### Duration
 
-* PCS Actions (listed above) will run for 24 hours.
-* The complete run may take around 48-72 hours (including time for setup and cleanup)
+* PCS actions (listed below) run for about 24 hours.
+* The complete run may take an additional 24-36 hours (including time for setup and cleanup).
 
-### Actions
+### PCS Actions
 
 The table below lists the actions that are included in this test.
 
@@ -284,38 +274,38 @@ The table below lists the actions that are included in this test.
 | Minimum Number of Server Nodes | 3 identical machines           |
 | Server Spec                    | CPU: 16 physical cores (e.g. 2 sockets with 8 cores), MEMORY: 128 GB, 64GB free space on boot drive |
 | Storage Overall                | 4 TB free space per node on HDD, 800 GB free space per node on SSD |
-| Storage SSD                    | Minimum of 1 SSD per node |
-| Storage HDD                    | Minimum of 2 HDD per node |
+| Disk                   | If there are drives used as cache, there must be at least 2 per server. There must be at least 4 capacity (non-cache) drives per server. See [S2D hardware requirements](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-hardware-requirements) for more information. |
 | Network Card                   | NIC being certified       |
 | Switch                         | Switch supporting all NIC features |
 
 ### Setup
 
-* Hyper-V host that contains PCS-Controller VM must be Windows Server 2016 or later.
+* Hyper-V host that contains PCS Controller VM must be Windows Server 2016 or later.
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
 * Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster
 * For instructions to set up networking for Storage Spaces Direct, see [Windows Server 2016 Converged NIC and Guest RDMA Deployment Guide](https://github.com/Microsoft/SDN/blob/master/Diagnostics/S2D%20WS2016_ConvergedNIC_Configuration.docx).
+* PCS Controller VM should be built as a generation 2 VM and have 2 network interfaces, one for the management network and the other for SDN (PA address space) topology. The interface for SDN topology will be assigned an IP address from the IP address space passed in as the **AddressPrefixes** parameter.
+
+  ![software-defined networking with s2d](images/pcs-software-defined-networking-with-s2d.png)
+
+* All the nodes must be able to communicate with the PCS Controller VM at all times through a management interface. For this purpose, each server should have one additional NIC for management interface, which does not need to meet strict bitrate requirements.
 * 10GbE or better networking bitrate is required for the NICs under test. Each server should have two identical 10gb or greater NICs.
-* All the nodes must be able to communicate with the PCS-Controller at all times through a management interface. For this purpose, each server should have one additional NIC for management interface, which does not need to meet strict bitrate requirements.
 * If RDMA capable NICs are used, the physical switch must meet the associated RDMA requirements.
-* Make sure that RDMA is setup on all nodes and reflects when queried through Get-SMBClientNetworkInterface & Get-SMBServerNetworkInterface.
 * Make sure that every node contains a teaming enabled virtual switch with the same name.
 
   ```powershell
   New-VMSwitch -Name SdnSwitch -NetAdapterName "Name 1,Name 2" -AllowManagementOS -EnableEmbeddedTeaming
   ```
 
+* Configure Nested Virtualization: Nested virtualization for the PCS Controller VM must be enabled. While the PCS VM is in the OFF state, run the following command on the Hyper-V host.
+
+   ```powershell
+   Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+   ```
+
+* Make sure that RDMA is setup on all nodes and reflects when queried through Get-SMBClientNetworkInterface & Get-SMBServerNetworkInterface.
 * Live Migration settings (Failover Cluster Manager-&gt;Networks-&gt;Live Migration Settings) must be set appropriately to use storage network for live migrations.
-
-This test creates virtual machines and send traffic between them using the virtual switch created. The vNic (virtual nic) of the PCS virtual machines are assigned IP address from the IP address space passed in as the AddressPrefixes parameter.
-
-**PCS-Controller should be built as a Gen2-VM and have 2 network interfaces, one for the management network and the other for SDN (PA address space) topology.** The interface for SDN topology will be assigned an IP address from the IP address space passed in as the AddressPrefixes parameter.
-
-**Configure Nested Virtualization**: Nested virtualization for the virtual machine must be enabled. While the PCS Controller VM is in the OFF state, run the following command on the Hyper-V host.
-
-`Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true`
-
-![software-defined networking with s2d](images/pcs-software-defined-networking-with-s2d.png)
+* This test creates virtual machines and send traffic between them using the virtual switch created. The vNic (virtual nic) of the PCS virtual machines are assigned IP address from the IP address space passed in as the **AddressPrefixes** parameter.
 
 ### Execute
 
@@ -325,9 +315,10 @@ This test creates virtual machines and send traffic between them using the virtu
 * Navigate to the **Selection** tab
 * Select the machine pool containing the network adapter device
 * Select **device manager**
-* Select the device  
-It should be OK to select any relevant NIC device (does not matter which member of the virtual switch team) on any of the compute nodes that is targeted for certification.  
-    ![hlk studio showing device.network.lan test with device selected](images/pcs-lan-azurestack-select-device.png)
+* Select the device. It should be OK to select any relevant NIC device (does not matter which member of the virtual switch team) on any of the compute nodes that is targeted for certification.
+
+  ![hlk studio showing device.network.lan test with device selected](images/pcs-lan-azurestack-select-device.png)
+
 * Right-click on the selected device and select **Add/Modify Features**
 * In the features dialog, select **Device.Network.LAN.AzureStack** and click **OK**.
 * Navigate to the **Tests** tab
@@ -339,24 +330,24 @@ It should be OK to select any relevant NIC device (does not matter which member 
     * UserName: Test user's user name
     * Password: Test user's password
     * ComputeCluster: compute cluster name
-    * VmSwitchName: Name of virtual switch to be used for SDN. Example: SdnSwitch.
+    * StorageCluster: Use default value
+    * StoragePath: Default value is ''. It uses all the available CSVs from compute cluster. You can use different paths by entering comma separated paths. Volume Names shouldn’t contain empty spaces. Example: **'C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2'** (single quotes are needed)
+    * VmSwitchName: Name of virtual switch to be used for SDN. Example: SdnSwitch
     * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive tter on PCS controller. Make sure this drive letter is available.
-    * AdapterNames: Comma seperated list of adapter names that are part of the vmSwitch. Use the format **"'Name 1', 'Name 2'"** (single quote and double quote are needed) for multiple adapters. Names must be derived from Get-NetAdapter cmdlet.
-    * VLan: Vlan ID set on vmSwitch. Only required if your physical switch is configured for Vlan. Enter '0' to indicate that there is no Vlan tagging.
+    * AdapterNames: Comma seperated list of adapter names that are part of the vmSwitch. Use the format **"'Name 1', 'Name 2'"** (double quote and single quote are needed) for multiple adapters. Names must be derived from Get-NetAdapter cmdlet.
+    * VLan: Vlan ID set on vmSwitch. Only required if your physical switch is configured for Vlan. Enter '0' to indicate that there is no Vlan tagging.    
+    * RDMAEnabled: Enter $True if NIC supports RDMA
+    * SetEnabled: Enter $True if NIC supports Switch Embedded Teaming
+    * HnvEnabled: Enter $True if NIC supports Hyper-V Network Virtualization
+    * TaskOffloadEnabled: Enter $True if NIC supports Encapsulate Task Offload
+    * TestControllerNetAdapterName: Adapter name on PCS Controller that can be assigned a static IP in the **AddressPrefixes** range to communicate with SDN Network Controller virtual machines. Example: **'Ethernet 2'** (single quotes are needed if there are spaces in the name)    
+    * VHDSourcePath: a VHDX file for Windows Server 2019 DataCenter. This VHDX file will be used to create Network Controller VMs. Default value is **c:\pcs\BaseVHDX\17763.1.amd64fre.rs5_release.180914-1434_server_serverdatacentereval_en-us.vhdx**. DON’T change the default value unless you have to use your own VHDX file. Cloned vhdx files have the same disk signatures. To avoid disk signature collision, this VHDX file cannot be the same as the one used by PCS controller.
+    * KBPackagePath: Comma seperated list of Windows Update Packages that should be applied to the VHDX file that specified in parameter VHDSourcePath. Default value is '' (single quotes are needed). It means no KB would be injected into VHDX file. Below is an example to apply windows update package(s):
+      * Two update packages KBExample1 and KBExample2 are downloaded from Windows Update site and copy them to c:\KB\KBExample1.msu and c:\kb\KBExample1.msu on the PCS controller machine.
+      * Enter **'c:\KB\KBExample1.msu,c:\kb\KBExample2.msu'** (single quote is required, KBExample1 is installed before KBExample2.)
     * AddressPrefixes: The IP address range to be used by Tenant VMs and Hosts. These addresses will be used for SDN datacenter management.
+    * VipPrefixes: Two IP address ranges that are used by SLB for VIP load balancing scenarios. Use the format "'192.160.2.0/23','192.160.3.0/23'" (double quotes and single quotes are needed)
     * ClientAddressPrefix: The IP address range used by Client VMs.
-    * RDMAEnabled: Enter 1 if NIC supports RDMA
-    * SetEnabled: Enter 1 if NIC supports Switch Embedded Teaming
-    * HnvEnabled: Enter 1 if NIC supports Hyper-V Network Virtualization
-    * TaskOffloadEnabled: Enter 1 if NIC supports Encapsulate Task Offload
-    * TestControllerNetAdapterName: Adapter name on PCS Controller that can be assigned a static IP in the AddressPrefixes range to communicate with SDN Network Controller virtual machines.
-    * IsCreateCluster: Use default value
-    * IsRemoveCluster: Use default value
-    * VHDSourcePath: a VHDX file for Windows Server 2016 DataCenter. This VHDX file will be used to create Network Controller VMs. Default value is **c:\pcs\BaseVHDX\14393.0.amd64fre.rs1_release.160715-1616_server_serverdatacentereval_en-us.vhdx**.  
-    DON’T change the default value unless you have to use your own VHDX file. Cloned vhdx files have the same disk signatures. To avoid disk signature collision, this VHDX file cannot be the same as the one used by PCS controller.
-    * KBPackagePath: Comma seperated list of Windows Update Packages that should be applied to the VHDX file that specified in parameter VHDSourcePath. Example: 
-      * Download KB4132216 and KB4346877 msu files from Windows Update site and copy them to c:\KB\Windows10.0-KB4132216-x64.msu and c:\kb\Windows10.0-KB4346877-x64.msu on the PCS controller machine.
-      * Enter **'c:\KB\Windows10.0-KB4132216-x64.msu,c:\kb\Windows10.0-KB4346877-x64.msu'** (single quote is required, KB4132216 must be listed/installed before installing the latest cumulative update)
   * Map machines to roles
     * PrimaryNode: This is the node with the selected device, automatically selected by HLK.
     * Test Controller: Select PCS test controller machine
@@ -371,17 +362,33 @@ Use the **C:\\Pcs\\ReRunPcsCleanup.cmd** script on the PCS-Controller for cleani
 Please make sure the following items are cleaned up before starting a new run:
 
 * Clustered VM roles (FailoverClusterManager-&gt;Cluster-&gt;Roles)
+
+  ```powershell
+  Get-ClusterGroup -Cluster $clusterName
+  ```
+
 * All the VMs created by PCS
+
+  ```powershell
+  Get-ClusterNode -Cluster $clusterName | % { Get-VM -ComputerName $_.Name }
+  ```
+
 * vNics created by PCS/SDN
-    ![powershell showing vnic that needs to be cleaned up](images/pcs-lan-azurestack-vnic-cleanup.png)
+
+  ```powershell
+  Get-ClusterNode -Cluster $clusterName | % { Get-VMNetworkAdapter -ComputerName $_.Name -ManagementOS | Select-Object ComputerName,Name,SwitchName }
+  ```
+
+  ![powershell showing vnic that needs to be cleaned up](images/pcs-lan-azurestack-vnic-cleanup.png)
+
 * Storage/CSV-volumes on the cluster do not have any entries pertaining to PCS (C:\\ClusterStorage\\Volume1\\PCS)
 
 ### Duration
 
-* PCS Actions (listed above) will run for 24 hours.
-* The complete run may take around 48-72 hours (including time for setup and cleanup).
+* PCS actions (listed below) run for about 24 hours.
+* The complete run may take an additional 36-48 hours (including time for setup and cleanup).
 
-### Actions
+### PCS Actions
 
 The table below lists the actions that are included in this test.
 
@@ -401,266 +408,6 @@ The table below lists the actions that are included in this test.
 | VmStorageMigrationAction    | Migrates VM storage (the VHD(s)) between cluster nodes. |
 | VmGuestRestartAction        | Restarts the VM. |
 | VmGuestFullPowerCycleAction | Power-cycles the VM. |
-
-## <span id="PrivateCloudSimulator_-_Device.Storage.HD.AzureStack"></span><span id="privatecloudsimulator_-_device.storage.hd.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.STORAGE.HD.AZURESTACK"></span>PrivateCloudSimulator - Device.Storage.HD.AzureStack
-
-### 
-
-### System Requirements for Solid State Drives
-
-When certifying SSD's for use in Azure Stack the following is the minimum required hardware test harness that must be running a Windows Server 2016 Storage Spaces Direct cluster.
-
-| | |
-|--------------------------------|--------------------------------|
-| Component Being certified      | SSD |
-| Setup Type                     | Hyper-converged setup with S2D storage. Note: An SDDC certified HBA is required. |
-| Minimum Number of Server Nodes | 4 identical machines           |
-| Server Spec                    | CPU: 16 physical cores (e.g. 2 sockets with 8 cores), MEMORY: 128 GB, 64GB free space on boot drive |
-| Storage Overall                | 4 TB free space per node on SSD |
-| Storage SSD                    | Total SSD storage capacity on each node = 4 TB. Minimum of 2 SSD per node, but more may be needed to meet the 4 TB free space requirement and have enough spare disks for repair test case. To certify multiple SSD disk families in the same setup concurrently (aka with a single PCS run), you need 1 SSD of each family on each of the 4 nodes in the same enclosure slot. |
-| Storage HDD                    | None |
-| Network Card                   | 10 GbE NIC with WS2016 certification |
-| Switch                         | Switch supporting all NIC features |
-
-### System Requirements for Hard Disk Drives
-
-When certifying HDD's for use in Azure Stack the following is the minimum required hardware test harness that must be running a Windows Server 2016 Storage Spaces Direct cluster.
-
-| | |
-|--------------------------------|--------------------------------|
-| Component Being certified      | HDD |
-| Setup Type                     | Hyper-converged setup with S2D storage. Note: An SDDC certified HBA is required. |
-| Minimum Number of Server Nodes | 4 identical machines           |
-| Server Spec                    | CPU: 16 physical cores (e.g. 2 sockets with 8 cores), MEMORY: 128 GB, 64GB free space on boot drive |
-| Storage Overall                | 4 TB free space per node on SSD |
-| Storage SSD                    | None |
-| Storage HDD                    | Total HDD storage capacity on each node = 4 TB. Minimum of 2 HDD per node, but more may be needed to meet the 4 TB free space requirement and have enough spare disks for repair test case. To certify multiple HDD disk families in the same setup concurrently (aka with a single PCS run), you need 1 HDD of each family on each of the 4 nodes in the same enclosure slot. |
-| Network Card                   | 10 GbE NIC with WS2016 certification |
-| Switch                         | Switch supporting all NIC features |
-
-### Setup
-
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
-* Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster
-
-### Execute
-
-* Open HLK Studio
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to create a machine pool
-* Navigate to the **Project** tab and click **Create Project**
-* Enter a project name and press Enter
-* Navigate to the **Selection** tab
-* Select the machine pool containing the disk device
-* Select **device manager**
-* Select the disk device that needs to be certified.  
-![hlk studio showing device.storage.hd test with device selected](images/pcs-device-storage-hd-select-device.png)
-* Right-click on the selected device and select **Add/Modify Features**  
-![hlk studio showing device.storage.hd test with add/modify features context menu](images/pcs-device-storage-hd-add-modify.png)
-* In the features dialog, select **Device.Storage.HD.AzureStack** and click **OK**.  
-![hlk studio showing device.storage.hd.azurestack feature selected](images/pcs-device-storage-hd-azurestack.png)
-* Navigate to the **Tests** tab
-* Select **PrivateCloudSimulator - Device.Storage.HD.AzureStack**
-* Click **Run Selected**
-* In the Schedule dialog,
-  * Enter values for the required test parameters
-    * DomainName: Test user's fully qualified domain name (FQDN).
-    * UserName: Test user's user name
-    * Password: Test user's password
-    * ComputeCluster: compute cluster name
-    * StoragePath: This location(s) will be on the disk device under test. Default value is "". It uses all the available CSVs from compute cluster. You can use different path by entering comma seperated paths. Example: "C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"
-    * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive letter on PCS controller. Make sure this drive letter is available.
-  * Map machines to roles
-    * PrimaryNode: This is the node with the selected device
-    * Test Controller: Select PCS test controller machine
-    * OtherNodes: Select other cluster nodes
-* Click **OK** to schedule the test.
-* Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
-
-### Duration
-
-* PCS Actions (listed above) will run for 48 hours.
-* The complete run may take an additional 24-36 hours (including time for setup and cleanup).
-
-### Actions
-
-The profile defines the actions to execute to validate the disk drives for Microsoft AzureStack. The table below lists the actions that are included in this profile.
-
-| Action Name                 | Description |
-|-----------------------------|--------------------------------|
-| VmCloneAction | Creates a new VM. |
-| VmLiveMigrationAction | Live-migrates the VM to another cluster node. |
-| VmSnapshotAction | Takes a snapshot of the VM. |
-| VmStateChangeAction | Changes the VM state (for example, to Paused). |
-| VmStorageMigrationAction | Migrates VM storage (the VHD(s)) between cluster nodes. |
-| VmGuestRestartAction | Restarts the VM. |
-| VmStartWorkloadAction | Starts a user-simulated workload. |
-| VmGuestFullPowerCycleAction | Power-cycles the VM. |
-| ClusterCSVMoveAction | Move the CSV disks to the best available node. |
-| StorageNodePoolMove | Moves a storage pool (created in Storage Spaces) to a different owner node in the storage cluster. |
-| StorageNodeRestart | Restarts a node in the storage cluster. |
-| StorageNodeBugcheck | Bug checks one node of the storage cluster. |
-| StorageNodeDiskReadTimeoutAction | This action goes through disks that tolerate errors (not readonly, clustered, no simple spaces) and waits for read IO. Once an IO is intercepted, it will cause the IO to timeout. If a single timeout is detected on any disk, the action is considered successful. |
-| StorageNodeDiskWriteTimeoutAction | This action goes through disks that tolerate errors (not readonly, clustered, no simple spaces) and waits for write IO. Once an IO is intercepted, it will cause the IO to timeout. If a single timeout is detected on any disk, the action is considered successful. |
-| StorageNodeBusResetAction | This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful. |
-| StorageNodeUpdateStorageProviderCacheAction | Calls update-storageprovidercache command in powershell |
-
-## <span id="PrivateCloudSimulator_-_Device.Storage.Controller.AzureStack"></span><span id="privatecloudsimulator_-_device.storage.controller.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.STORAGE.CONTROLLER.AZURESTACK"></span>PrivateCloudSimulator - Device.Storage.Controller.AzureStack
-
-### System Requirements
-
-When certifying SAS HBA's for use in Azure Stack the following is the minimum required hardware test harness that must be running a Windows Server 2016 Storage Spaces Direct cluster.
-
-| | |
-|--------------------------------|--------------------------------|
-| Component Being certified      | SAS HBA (for S2D) |
-| Setup Type                     | Hyper-converged setup with S2D storage. HBA under test has to be separate from the Boot HBA |
-| Minimum Number of Server Nodes | 3 identical machines           |
-| Server Spec                    | CPU: 16 physical cores (e.g. 2 sockets with 8 cores), MEMORY: 128 GB, 64GB free space on boot drive |
-| Storage Overall                | 4 TB free space per node on HDD, 800 GB free space per node on SSD |
-| Storage SSD                    | Minimum of 1 SSD per node |
-| Storage HDD                    | Minimum of 2 HDD per node |
-| Network Card                   | 10 GbE NIC with WS2016 certification |
-| Switch                         | Switch supporting all NIC features |
-
-### Setup
-
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
-* Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster
-
-### Execute
-
-* Open HLK Studio
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to create a machine pool
-* Navigate to the **Project** tab and click **Create Project**
-* Enter a project name and press Enter
-* Navigate to the **Selection** tab
-* Select the machine pool containing the disk device
-* Select **device manager**
-* Select the disk device that needs to be certified.  
-![hlk studio with lsi adapter storage device selected](images/pcs-device-storage-controller-azurestack-storagecontroller.png)
-* Right-click on the selected device and select **Add/Modify Features**  
-![hlk studio showing add/modify features context menu](images/pcs-device-storage-controller-azurestack-add-modify.png)
-* In the features dialog, select **Device.Storage.Controller.AzureStack** and click OK.  
-![hlk studio showing features dialog](images/pcs-device-storage-controller-azurestack-features.png)
-* Navigate to the Tests tab
-* Select **PrivateCloudSimulator - Device.Storage.Controller.AzureStack**
-* Click **Run Selected**
-* In the Schedule dialog,
-  * Enter values for the required test parameters
-    * DomainName: Test user's fully qualified domain name (FQDN).
-    * UserName: Test user's user name
-    * Password: Test user's password
-    * ComputeCluster: compute cluster name
-    * StoragePath: This location(s) will be on the disk device under test. Default value is "". It uses all the available CSVs from compute cluster. You can use different path by entering comma seperated paths. Example: "C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"
-    * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive letter on PCS controller. Make sure this drive letter is available.
-  * Map machines to roles
-    * PrimaryNode: This is the node with the selected device
-    * Test Controller: Select PCS test controller machine
-    * OtherNodes: Select other cluster nodes
-* Click **OK** to schedule the test.
-* Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
-
-### Duration
-
-* PCS Actions (listed above) will run for 48 hours.
-* The complete run may take an additional 24-36 hours (including time for setup and cleanup).
-
-### Actions
-
-The profile defines the actions to execute to validate the storage controller device for Microsoft AzureStack. The table below lists the actions that are included in this profile.
-
-| Action Name                 | Description |
-|-----------------------------|--------------------------------|
-| VmCloneAction | Creates a new VM. |
-| VmLiveMigrationAction | Live-migrates the VM to another cluster node. |
-| VmSnapshotAction | Takes a snapshot of the VM. |
-| VmStateChangeAction | Changes the VM state (for example, to Paused). |
-| VmStorageMigrationAction | Migrates VM storage (the VHD(s)) between cluster nodes. |
-| VmGuestRestartAction | Restarts the VM. |
-| VmStartWorkloadAction | Starts a user-simulated workload. |
-| VmGuestFullPowerCycleAction | Power-cycles the VM. |
-| ClusterCSVMoveAction | Move the CSV disks to the best available node. |
-| StorageNodePoolMove | Moves a storage pool (created in Storage Spaces) to a different owner node in the storage cluster. |
-| StorageNodeBusResetAction | This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful. |
-| StorageNodePortDisableAllAction | This action disables all the storage controllers in the node. All of the SCSI controllers are disabled, if one is successfully disabled then the action is considered passed. After the specified time, all of the controllers are then re-enabled. This action is disabled for boot controllers |
-
-## <span id="PrivateCloudSimulator_-_Device.Storage.Enclosure.AzureStack"></span><span id="privatecloudsimulator_-_device.storage.enclosure.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.STORAGE.ENCLOSURE.AZURESTACK"></span>PrivateCloudSimulator - Device.Storage.Enclosure.AzureStack
-
-### System Requirements
-
-| | |
-|--------------------------------|--------------------------------|
-| Component Being certified      | Enclosure |
-| Setup Type                     | Hyper-converged setup with S2D storage. HBA under test has to be separate from the Boot HBA. |
-| Minimum Number of Server Nodes | 3 identical machines           |
-| Server Spec                    | CPU: 16 physical cores (e.g. 2 sockets with 8 cores), MEMORY: 128 GB, 64GB free space on boot drive |
-| Storage Overall                | 4 TB free space per node on HDD, 800 GB free space per node on SSD |
-| Storage SSD                    | Minimum of 1 SSD per node |
-| Storage HDD                    | Minimum of 2 HDD per node |
-| Network Card                   | 10 GbE NIC with WS2016 certification |
-| Switch                         | Switch supporting all NIC features |
-
-### Setup
-
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
-* Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster
-
-### Execute
-
-* Open HLK Studio
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to create a machine pool
-* Navigate to the **Project** tab and click **Create Project**
-* Enter a project name and press Enter
-* Navigate to the **Selection** tab
-* Select the machine pool containing the disk device
-* Select **device manager**
-* Select the disk device that needs to be certified.  
-![hlk studio showing selected storage enclosure device.](images/pcs-device-storage-enclosure-azurestack-storage-enclosure.png)
-* Right-click on the selected device and select **Add/Modify Features**  
-![hlk studio showing add/modify features context menu](images/pcs-device-storage-enclosure-azurestack-add-modify.png)
-* In the features dialog, select **Device.Storage.Enclosure.AzureStack** and click OK.  
-![hlk studio showing features dialog](images/pcs-device-storage-enclosure-azurestack-features.png)
-* Navigate to the Tests tab
-* Select **PrivateCloudSimulator - Device.Storage.Enclosure.AzureStack**
-* Click **Run Selected**
-* In the Schedule dialog,
-  * Enter values for the required test parameters
-    * DomainName: Test user's fully qualified domain name (FQDN).
-    * UserName: Test user's user name
-    * Password: Test user's password
-    * ComputeCluster: compute cluster name
-    * StoragePath: This location(s) will be on the disk device under test. Default value is "". It uses all the available CSVs from compute cluster. You can use different path by entering comma seperated paths. Example: "C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"
-    * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive letter on PCS controller. Make sure this drive letter is available.
-  * Map machines to roles
-    * PrimaryNode: This is the node with the selected device
-    * Test Controller: Select PCS test controller machine
-    * OtherNodes: Select other cluster nodes
-* Click **OK** to schedule the test.
-* Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
-
-### Duration
-
-* PCS Actions (listed above) will run for 48 hours.
-* The complete run may take an additional 24-36 hours (including time for setup and cleanup).
-
-### Actions
-
-The profile defines the actions to execute to validate the storage Enclosure for Microsoft AzureStack. The table below lists the actions that are included in this profile.
-
-| Action Name                 | Description |
-|-----------------------------|--------------------------------|
-| VmCloneAction | Creates a new VM. |
-| VmLiveMigrationAction | Live-migrates the VM to another cluster node. |
-| VmSnapshotAction | Takes a snapshot of the VM. |
-| VmStateChangeAction | Changes the VM state (for example, to Paused). |
-| VmStorageMigrationAction | Migrates VM storage (the VHD(s)) between cluster nodes. |
-| VmGuestRestartAction | Restarts the VM. |
-| VmStartWorkloadAction | Starts a user-simulated workload. |
-| VmGuestFullPowerCycleAction | Power-cycles the VM. |
-| ClusterCSVMoveAction | Move the CSV disks to the best available node. |
-| StorageNodePoolMove | Moves a storage pool (created in Storage Spaces) to a different owner node in the storage cluster. |
-| StorageNodeBusResetAction | This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful. |
-| StorageRetireAndRepairAction | This action retires a disk from a pool and starts repair. If spaces doesn’t get healthy, the action fails. The action randomly picks a pool and tries to retire a disk in the pool. If the disk is set as read-only, or it is a simple space or is used for cluster purposes (i.e. quorum resource) then the action is skipped |
 
 ## <span id="PrivateCloudSimulator_-_System.Solutions.StorageSpacesDirect"></span><span id="privatecloudsimulator_-_system.solutions.storagespacesdirect"></span><span id="PRIVATECLOUDSIMULATOR_-_SYSTEM.SOLUTIONS.STORAGESPACESDIRECT"></span>PrivateCloudSimulator - System.Solutions.StorageSpacesDirect
 
@@ -683,18 +430,10 @@ The profile defines the actions to execute to validate the storage Enclosure for
 * Enter a project name and press Enter
 * Navigate to the **Selection** tab
 * Select the machine pool containing the system under test and PCS controller machine.
-* Select **systems** on the left panel and then select the PCS test controller (NOTE: Not the machine that needs to be certified).
-
-    ![hlk studio showing systems tab with pcs test controller selected](images/pcs-system-solutions-storagespacesdirect-test-controller.png)
-
-* Right-click on the selected device and select **Add/Modify Features**
-
-    ![hlk studio showing add/modify features dialog](images/pcs-system-solutions-storagespacesdirect-add-modify-features.png)
-
+* Select **systems** on the left panel and then select the PCS test controller (NOTE: NOT the machine that needs to be certified).
+  ![hlk studio showing systems tab with pcs test controller selected](images/pcs-system-solutions-storagespacesdirect-test-controller.png)
+* Right-click on the selected PCS controller machine and select **Add/Modify Features**
 * In the features dialog, select **System.Solution.StorageSpacesDirect** and click OK
-
-    ![hlk studio showing features dialog with storagespacesdirect selected](images/pcs-system-solutions-storagespacesdirect-features.png)
-
 * Navigate to the **Tests** tab
 * Select **PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MAX)** or **PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MIN)** (based on the solution size you are testing)
 * Click **Run Selected**
@@ -704,10 +443,9 @@ The profile defines the actions to execute to validate the storage Enclosure for
     * UserName: Test user's user name
     * Password: Test user's password
     * ComputeCluster: compute cluster name
-    * StoragePath: This location(s) will be on the disk device under test. Default value is "". It uses all the available CSVs from compute cluster. You can use different path by entering comma seperated paths. Example: "C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"
+    * StoragePath: Default value is "". It uses all the available CSVs from compute cluster. You can use different paths by entering comma seperated paths. Example: **"C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"** (double quote is needed)
+    * VmSwitchName: Enter the name of the virtual switch. This name must be the same on all nodes
     * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive letter on PCS controller. Make sure this drive letter is available.
-    * IsCreateCluster: Use default value
-    * IsRemoveCluster: Use default value
   * Map machines to roles
     * Test Controller: Select PCS test controller machine
 * Click **OK** to schedule the test.
@@ -715,10 +453,10 @@ The profile defines the actions to execute to validate the storage Enclosure for
 
 ### Duration
 
-* PCS Actions (listed above) will run for 96 hours.
+* PCS Actions (listed below) will run for 96 hours.
 * The complete run may take an additional 24-36 hours (including time for setup and cleanup).
 
-### Actions
+### PCS Actions
 
 The profile defines the actions to execute to validate the disk drives for Microsoft AzureStack. The table below lists the actions that are included in this profile.
 
@@ -737,13 +475,6 @@ The profile defines the actions to execute to validate the disk drives for Micro
 | StorageNodePoolMove | Moves a storage pool (created in Storage Spaces) to a different owner node in the storage cluster. |
 | StorageNodeRestart | Restarts a node in the storage cluster. |
 | StorageNodeBugcheck | Bug checks one node of the storage cluster. |
-| StorageNodeDiskReadTimeoutAction | This action goes through disks that tolerate errors (not read-only, clustered, no simple spaces) and waits for read IO. Once an IO is intercepted, it will cause the IO to timeout. If a single timeout is detected on any disk, the action is considered successful. This action is invoked on storage nodes every 15 minutes. |
-| StorageNodeDiskWriteTimeoutAction | This action goes through disks that tolerate errors (not read-only, clustered, no simple spaces) and waits for write IO. Once an IO is intercepted, it will cause the IO to timeout. If a single timeout is detected on any disk, the action is considered successful. This action is invoked on storage nodes every 15 minutes. |
-| StorageNodeBusResetAction | This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful. |
-| StorageNodePortDisableAllAction | This action disables all the storage controllers in the node. All of the SCSI controllers are disabled, if one is successfully disabled then the action is considered passed. After the specified time, all of the controllers are then re-enabled. |
-| StorageRetireAndRepairAction | This action retires a disk from a pool and starts repair. If spaces doesn't get healthy, the action fails. The action randomly picks a pool and tries to retire a disk in the pool. If the disk is set as readonly, or it is a simple space or is used for cluster purposes (i.e. quorum resource) then the action is skipped DisableNetworkAdapters Disables one of the network adapter that carries the storage traffic. |
-| StorageNodeNetworkDisconnectAction | Disables one of the network adapters that carries the storage traffic. |
-| StorageNodeDiskIoTimeoutOnceAction | Times out a single read or write across the storage node. This does not time out the retry attempt for this IO, so the disk will not go unresponsive. |
 | StorageNodeUpdateStorageProviderCacheAction | Calls update-storageprovidercache command in PowerShell. |
 
 ## <span id="PrivateCloudSimulator_-_System.Solutions.AzureStack"></span><span id="privatecloudsimulator_-_system.solutions.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_SYSTEM.SOLUTIONS.AZURESTACK"></span>PrivateCloudSimulator - System.Solutions.AzureStack
@@ -768,17 +499,9 @@ The profile defines the actions to execute to validate the disk drives for Micro
 * Navigate to the **Selection** tab
 * Select the machine pool containing the system under test
 * Select **systems** on the left panel and then select the PCS test controller (NOTE: Not the machine that needs to be certified).
-
-    ![hlk studio with pcs test controller selected](images/pcs-system-solutions-azurestack-test-controller.png)
-
+  ![hlk studio with pcs test controller selected](images/pcs-system-solutions-azurestack-test-controller.png)
 * Right-click on the selected device and select **Add/Modify Features**
-
-    ![hlk studio with add/modify features context menu](images/pcs-system-solutions-azurestack-add-modify.png)
-
 * In the features dialog, select **System.Solution.AzureStack** and click OK
-
-    ![hlk studio showing features dialog](images/pcs-system-solutions-azurestack-features.png)
-
 * Navigate to the **Tests** tab
 * Select **PrivateCloudSimulator - System.Solutions.AzureStack**
 * Click **Run Selected**
@@ -788,11 +511,9 @@ The profile defines the actions to execute to validate the disk drives for Micro
     * UserName: Test user's user name
     * Password: Test user's password
     * ComputeCluster: compute cluster name
-    * StoragePath: This location(s) will be on the disk device under test. Default value is "". It uses all the available CSVs from compute cluster. You can use different path by entering comma seperated paths. Example: "C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"
-    * VmSwitchName: Name of virtual switch to be used by VMs. Default value is "".
+    * StoragePath: Default value is "". It uses all the available CSVs from compute cluster. You can use different paths by entering comma seperated paths. Example: **"C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2"** (double quote is needed)
+    * VmSwitchName: Enter the name of the virtual switch. This name must be the same on all nodes
     * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive letter on PCS controller. Make sure this drive letter is available.
-    * IsCreateCluster: Use default value
-    * IsRemoveCluster: Use default value
   * Map machines to roles
     * Test Controller: Select PCS test controller machine
 * Click **OK** to schedule the test.
@@ -800,7 +521,7 @@ The profile defines the actions to execute to validate the disk drives for Micro
 
 ### Duration
 
-* PCS Actions (listed above) will run for 96 hours.
+* PCS Actions (listed below) will run for 96 hours.
 * The complete run may take an additional 24-36 hours (including time for setup and cleanup)
 
 ### Actions
@@ -821,13 +542,6 @@ The profile defines the actions to execute to validate the storage Enclosure for
 | StorageNodePoolMove | Moves a storage pool (created in Storage Spaces) to a different owner node in the storage cluster. |
 | StorageNodeRestart | Restarts a node in the storage cluster. |
 | StorageNodeBugcheck | Bug checks one node of the storage cluster. |
-| StorageNodeDiskReadTimeoutAction | This action goes through disks that tolerate errors (not read-only, clustered, no simple spaces) and waits for read IO. Once an IO is intercepted, it will cause the IO to timeout. If a single timeout is detected on any disk, the action is considered successful. This action is invoked on storage nodes every 15 minutes. |
-| StorageNodeDiskWriteTimeoutAction | This action goes through disks that tolerate errors (not read-only, clustered, no simple spaces) and waits for write IO. Once an IO is intercepted, it will cause the IO to timeout. If a single timeout is detected on any disk, the action is considered successful. This action is invoked on storage nodes every 15 minutes. |
-| StorageNodeBusResetAction | This action attempts to inject a bus reset to any of the physical disks backing the pool. First, a timeout to a read or write IO is attempted, if that is successful then the corresponding abort, reset LUN, and reset target commands are failed. If any of these succeed then a bus reset will be triggered. If any disk issues a bus reset, the action is then considered successful. |
-| StorageNodePortDisableAllAction | This action disables all the storage controllers in the node. All of the SCSI controllers are disabled, if one is successfully disabled then the action is considered passed. After the specified time, all of the controllers are then re-enabled. |
-| StorageRetireAndRepairAction | This action retires a disk from a pool and starts repair. If spaces doesn't get healthy, the action fails. The action randomly picks a pool and tries to retire a disk in the pool. If the disk is set as readonly, or it is a simple space or is used for cluster purposes (i.e. quorum resource) then the action is skipped DisableNetworkAdapters Disables one of the network adapter that carries the storage traffic. |
-| StorageNodeNetworkDisconnectAction | Disables one of the network adapters that carries the storage traffic. |
-| StorageNodeDiskIoTimeoutOnceAction | Times out a single read or write across the storage node. This does not time out the retry attempt for this IO, so the disk will not go unresponsive. |
 | StorageNodeUpdateStorageProviderCacheAction | Calls update-storageprovidercache command in PowerShell. |
 
 ## <span id="Analyze_test_results"></span><span id="analyze_test_results"></span><span id="ANALYZE_TEST_RESULTS"></span>Analyze Test Results
@@ -845,46 +559,34 @@ To view the report, follow these steps:
     Open Server Manager =&gt; Local Server =&gt; Click **IE Enhanced Security Configuration** to turn it off for administrators and users.
 
 * Open IE from PCS controller and visit http://PcsControllerMachineName/Reports
-
-    ![pcs reporting page in internet explorer](images/pcs-ie-reports-page.png)
-
+  ![pcs reporting page in internet explorer](images/pcs-ie-reports-page.png)
 * Click **PCS Reports** =&gt; **PCSRuns**.
 * Each PCS run is identified by a unique **Pass Run ID**.
-
-    ![ie reporting showing pass run ids](images/pcs-ie-reports-pass-run-id.png)
-
+  ![ie reporting showing pass run ids](images/pcs-ie-reports-pass-run-id.png)
 * Click a **Pass Run ID** (for example, click f44b3f88-3dbf-476e-9294-9d479ca0a369) to open a report from the PCS run. The data in these reports is live. While a test runs, you can monitor the progress of a test run in real-time.
-
   * An overview of all resources (VMs and hosts) that participated in the test run.
   * All actions that were performed on each resource. The Pass and Fail columns report the number of actions that passed and failed.
-
     ![ie reporting showing run information](images/pcs-ie-reports-run-information.png)
-
 * In the Overall Operation Information table, you can click links in the **Action**/**Pass**/**Fail** column to open detail pages, which give you more information about the action's results. For example, if you clicked the failure number 9 by the **VMLiveMigrationAction** entry, you would see the summary shown in the following illustration.
-
-    ![ie reporting showing vmlivemigrationaction](images/pcs-ie-reports-vmlivemigrationaction.png)
+  ![ie reporting showing vmlivemigrationaction](images/pcs-ie-reports-vmlivemigrationaction.png)
 
 The first entry above provides the following information:
 
-  * **Failure ID:** When we encounter a failure in PCS, we generalize the Failure Message and generate a unique Hash for it. In above example the Failure ID is **97c12afd-23a8-3982-e304-a5dc6793950d**
-  * **Failure Hash:** Generalized failure message.  
-    In the example above, the failure hash is
-    
-    Virtual Machine &lt;VIRTUAL MACHINE&gt; live migration failed at progress &lt;PERCENTAGE&gt; (migration state: Migrating)  
-    Error: Virtual machine migration operation for '&lt;VIRTUAL MACHINE&gt;' failed at migration destination '&lt;COMPUTE NODE&gt;'. (Virtual machine ID &lt;GUID&gt;)  
-    Failed to receive data for a Virtual Machine migration: This operation returned because the timeout period expired. (0x800705B4).
+* **Failure ID:** When we encounter a failure in PCS, we generalize the Failure Message and generate a unique Hash for it. In above example the Failure ID is **97c12afd-23a8-3982-e304-a5dc6793950d**
+* **Failure Hash:** Generalized failure message. In the example above, the failure hash is
+
+  Virtual Machine &lt;VIRTUAL MACHINE&gt; live migration failed at progress &lt;PERCENTAGE&gt; (migration state: Migrating)  
+  Error: Virtual machine migration operation for '&lt;VIRTUAL MACHINE&gt;' failed at migration destination '&lt;COMPUTE NODE&gt;'. (Virtual machine ID &lt;GUID&gt;)  
+  Failed to receive data for a Virtual Machine migration: This operation returned because the timeout period expired. (0x800705B4).
 
 * **Count Current Run:** The count of actions of a particular type that failed with this particular error message during this run. In the above example, **VMLiveMigrationAction** was run 3 times.
 * **Count All Runs:** A count of actions that failed because of this particular failure across all PCS runs. For the **VMLiveMigrationAction**, this count was 3.
 * **PCS Runs Affected:** Tells how many runs have been affected by this failure. For **VMLiveMigrationAction**, only 1 PCS run was affected.
 
 * To look further into the error - you can click a failure ID on that screen to drill down to a global history of the failure type across all PCS runs. For example, click **97c12afd-23a8-3982-e304-a5dc6793950d** to display the following. The page lists all failed operations, grouped by failure type, which has the effect of highlighting key features that you might need to investigate.
-
-    ![ie reporting showing failing actions by cause](images/pcs-ie-reports-failing-actions.png)
-
+  ![ie reporting showing failing actions by cause](images/pcs-ie-reports-failing-actions.png)
 * If you click the Action ID, you can drill down farther to see an Action Log Report. Errors are shown in red; Warnings are shown in yellow.
-
-    ![ie reporting showing action log report](images/pcs-ie-reports-action-log.png)
+  ![ie reporting showing action log report](images/pcs-ie-reports-action-log.png)
 
 ## <span id="Troubleshoot_a_PCS_run_from_the_PCS_Controller"></span><span id="troubleshoot_a_pcs_run_from_the_pcs_controller"></span><span id="TROUBLESHOOT_A_PCS_RUN_FROM_THE_PCS_CONTROLLER"></span>Troubleshoot a PCS run from the PCS Controller
 
@@ -901,14 +603,10 @@ When a PCS job fails, you can rerun Setup/Execute/Cleanup stage directly from PC
 
 PCS has three main stages: Setup, Execute, and Cleanup. HLK PCS job uses PCS-E2Elaunch.ps1 script to launch these three stages. Their log file names are called PCS-E2ELaunch\_Setup.log, PCS-E2ELaunch\_Execute.log and PCSE2ELaunch\_Cleanup.log.
 
-When a PCS run has completed, PCS Run Analyzer analyzes logs and reports. The run succeeded when the following criteria are met, with the analyzed report saved as AnalyzerLog.log.
+When a PCS run has completed, PCS analyzes logs and reports. The run succeeded when the following criteria are met, with the analyzed report saved as PCSReport.htm.
 
 * All PCS actions has 90% pass rate
 * No unexpected crash of any cluster node, except the ones initiated by PCS for testing purpose
-
-The AnalyzerLog.log looks similar to the figure below:
-
-![analyzer log](images/pcs-analyzer-log.png)
 
 A zip file (PcsLog-DateTime.zip) is created at the end of PCS Cleanup phase. This file contains all the logs and is copied to the HLK PCS job result folder when a test fails.
 
@@ -920,10 +618,8 @@ A zip file (PcsLog-DateTime.zip) is created at the end of PCS Cleanup phase. Thi
 
 You can run the following script from PCS controller to generate a ZIP file that contains required logs. This method is useful when job is cacelled or while test is running.
 
-**Syntax**
-
-``` syntax
-PS > C:\pcs\PCS-E2ELaunch.ps1 -DomainName <string> -UserName <string> -Password <string> -ComputeCluster <string> [-StorageCluster <string>] -CollectLog [-CollectLogLevel <int>]
+```powershell
+C:\pcs\PCS-E2ELaunch.ps1 -DomainName <string> -UserName <string> -Password <string> -ComputeCluster <string> [-StorageCluster <string>] -CollectLog [-CollectLogLevel <int>]
 ```
 
 **Parameters**
@@ -938,11 +634,9 @@ PS > C:\pcs\PCS-E2ELaunch.ps1 -DomainName <string> -UserName <string> -Password 
 
 While PCS is running, you can run the following cmdlets on PCS controller to generate a HTML report that lists unexpected bugchecks from all nodes.
 
-**Syntax**
-
-``` syntax
-PS > Import-Module .\PrivateCloudSimulator-Manager.psm1
-PS > Get-PCSReport
+```powershell
+Import-Module C:\PCS\PrivateCloudSimulator-Manager.psm1
+Get-PCSReport
 ```
 
 ### Customize Action Logs
@@ -993,7 +687,7 @@ Valid MaxLevel values are the following:
 
 **Examples:**
 
-``` syntax
+```xml
 <Trigger>
   <Type>ActionFail</Type>
   <Data Name="ActionFullName" Value="Microsoft.HyperV.Test.Stress.PrivateCloud.ComputeNode.Action.StorageNodeRestartAction">
@@ -1051,48 +745,13 @@ They are installed on additional machines that are not part of the cluster nodes
 
 You need to install HLK Client on cluster nodes and on the PCS controller as well.
 
-***What additional configuration is needed to run firmware update action for disks?***
-
-StorageNodeiskFirmwareRolloutAction depends on the following:
-
-* XML File - FirmwareRolloutSettings.xml
-* The firmware files
-  * XML File: Please create a file named **FirmwareRolloutSettings.xml** and copy it to `C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64\PCS\StorageBin` on the HLK controller. The file should have the following format.
-
-        ``` syntax
-        <?xml version="1.0"?>
-        <Data>
-          <Table Id="Settings">
-            <ParameterTypes>
-              <ParameterType Name="Manufacturer">String</ParameterType>
-              <ParameterType Name="Model">String</ParameterType>
-              <ParameterType Name="TargetFirmwareVersion">String</ParameterType>
-              <ParameterType Name="TargetFirmwarePath">String</ParameterType>
-              <ParameterType Name="server">String</ParameterType>
-            </ParameterTypes>
-            <Row>
-              <Parameter Name="Manufacturer">Manufacturer</Parameter>
-              <Parameter Name="Model">Model</Parameter>
-              <Parameter Name="TargetFirmwareVersion">Version1</Parameter>
-              <Parameter Name="TargetFirmwarePath">\\%HLKControllerName%\tests\amd64\PCS\StorageBin\V1.bin</Parameter>
-              <Parameter Name="BackupTargetFirmwareVersion">Version2</Parameter>
-              <Parameter Name="BackupTargetFirmwarePath">\\%HLKControllerName%\tests\amd64\PCS\StorageBin\V2.bin</Parameter>
-              <Parameter Name="server">ServerNameWillBeUpdatedByTestAutomatically</Parameter>
-            </Row>
-          </Table>
-        </Data>
-        ```
-
-* Copy the firmware files to a location/share on the HLK controller. This location should be accessible by the PCS controller and the cluster nodes.  
-This location will be the **TargetFirmwarePath** in the XML above (e.g. \\\\%HLKControllerName%\\tests\\amd64\\PCS\\StorageBin)
-
-***The small boot disk of cluster node has very little free space due to a large pagefile.***
+***Boot disk of cluster node has very little free space due to a large pagefile***
 
 By default, Windows automatically manages paging file size and its location. Default location is C:\\pagefile.sys and file size could grow while test runs.
 
 You can specify pagefile location and size by modifying the PagingFiles value. Below is an expample that set the initial and maximum pagefile sizes to 50GB (51200MB).
 
-``` syntax
+```syntax
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v PagingFiles /t REG_MULTI_SZ /d "C:\pagefile.sys 51200 51200" /f
 ```
 

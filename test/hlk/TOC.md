@@ -4288,7 +4288,8 @@
 ##### [S2D - Setup Storage Cluster](testref/8fd56385-268b-48c8-a81f-9118cfb5bf5a.md)
 ##### [S2D - Stress Tests](testref/8f88f147-d747-4695-87cf-07990361d18f.md)
 #### [System.Solutions additional documentation](testref/system-solutions-additional-documentation.md)
-##### [Private Cloud Simulator for Windows Server 2016](testref/private-cloud-simulator.md)
+##### [Private Cloud Simulator for Windows Server 2016](testref/private-cloud-simulator-server-2016.md)
+##### [Private Cloud Simulator for Windows Server 2019](testref/private-cloud-simulator.md)
 ##### [Partner Guide to WSSD Certification](testref/partner-guide-to-wssd-certification.md)
 ##### [Run cluster tests for Storage Spaces Direct (S2D) in the Windows HLK](testref/run-cluster-tests-for-storage-spaces-direct-in-the-windows-hlk.md)
 
