@@ -10,7 +10,6 @@ ms.author: dawnwood
 ms.date: 10/11/2018
 ms.topic: article
 ---
-
 # Private Cloud Simulator for Windows Server 2016
 
 ## <span id="Introduction"></span><span id="introduction"></span><span id="INTRODUCTION"></span>Introduction
@@ -19,32 +18,21 @@ The current industry trend is for private cloud solutions to comprise tightly in
 
 Some of these issues are surfaced only under a high-stress, cloud-scale deployment, and are potentially hard to find using traditional standalone, component-focused tests. The Private Cloud Simulator is a cloud validation test suite that enables you to validate your component in a cloud scenario and identify these types of issues.
 
-## Target Audience
+### Target Audience
 
 The target audience for this document are those working towards validating their hardware for Windows Server 2016 Logo, Microsoft Azure Stack (MAS) solutions and Windows Server Software Defined (WSSD) datacenter offerings (that offer SDDC Standard, SDDC Premium Additional Qualifiers on the Windows Server Catalog).
 
 | Component Type                          | Windows Server 2016 Logo | WSSD (SDDC Standard/Premium) | Azure Stack |
 |-----------------------------------------|--------------------------|------------------------------|-------------|
-| **Network Interface Cards (NICs)**      | Yes                      | Yes                          | Yes         |
+| **Network Interface Cards**             | Yes                      | Yes                          | Yes         |
 | **SAS HBA**                             | No                       | Yes                          | Yes         |
 | **Hard Disk Drives (HDD): SAS, SATA**   | No                       | Yes                          | Yes         |
 | **Solid State Drives (SSD): SAS, SATA** | No                       | Yes                          | Yes         |
 | **NVMe devices**                        | No                       | Yes                          | Yes         |
 | **SCSI Enclosures**                     | No                       | Yes                          | Yes         |
-| **Solutions**                           | Not Applicable           | Yes                          | Yes         |
+| **Solutions**                           | No                       | Yes                          | Yes         |
 
-In the future this guidance is expected to expand to cover the following device classes:
-
-* iSCSI, FCOE, and Fiber Channel HBAs
-* Storage Arrays
-
-## Supporting Documents
-
-* [Failover-Clustering](https://technet.microsoft.com/en-us/library/hh831579.aspx)
-* [Windows Server 2016 Storage Spaces Direct cluster](https://technet.microsoft.com/en-us/library/mt693395.aspx)
-* [Microsoft Azure Stack Logo Requirements](http://aka.ms/getreq) released via Microsoft Collaborate to Microsoft partners
-
-## Test Overview
+## <span id="Test_Overview"></span><span id="test_overview"></span><span id="TEST_OVERVIEW"></span>Test Overview
 
 Private Cloud Simulator (PCS) simulates a live datacenter/private cloud by creating VM workloads, simulating data center operations (load balancing, software/hardware maintenance), and injecting compute/storage faults (unplanned hardware/software failure). PCS uses a Microsoft SQL Server database to record test and solution data during the run. It then presents a report that includes operation pass/fail rates and logs whihch provide the capability to correlate data for pass/fail determination and failure diagnosis (as applicable).
 
@@ -58,6 +46,12 @@ PCS lab environment contains the following elements:
 * A dedicated HLK controller machine.
 * A dedicated PCS controller machine.
 * A minimum 3-node compute cluster, which hosts Hyper-V virtual machines.
+
+Supporting Documents:
+
+* [Windows Server 2016 Storage Spaces Direct cluster](https://technet.microsoft.com/en-us/library/mt693395.aspx)
+* [Failover-Clustering](https://technet.microsoft.com/en-us/library/hh831579.aspx)
+* [Microsoft Azure Stack Logo Requirements](http://aka.ms/getreq) released via Microsoft Collaborate to Microsoft partners
 
 Notes:
 
@@ -80,7 +74,7 @@ Minimum system requirements are as shown in the table below.
 #### HLK Controller Setup
 
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to [download](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit) and install HLK controller software.
-* Download the supplemental content package file **PCSFiles.vhd** for Windows Server 2016 from the [HLK website](https://developer.microsoft.com/en-us/windows/hardware/windows-hardware-lab-kit).
+* Download the supplemental content package file **PCSFiles.vhd** for Windows Server 2016 from the [Windows Hardware Lab Kit] website(https://developer.microsoft.com/en-us/windows/hardware/windows-hardware-lab-kit).
 * Copy the **PCSFiles.vhd** file to the **Tests\\amd64** test folder on the HLK Controller. Below is the default path for an HLK installation:
 
     `C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64`
@@ -118,22 +112,23 @@ Minimum system requirements are as shown in the table below.
   * For builds released via Microsoft Connect, see details below:
     * Mount the ISO supplied with the build and find the file at **MountedDriveLetter:\\sources\\sxs\\microsoft-windows-netfx3-ondemand-package.cab**
     * Copy the file to a local folder on the PCS controller
-    * Install the package by executing this command line using admin privileges      
-      ```
-      PS> Add-WindowsFeature Net-Framework-Features -source <Local Folder>
+    * Install the package by executing this command line using admin privileges
+    
+      ```powershell
+      Add-WindowsFeature Net-Framework-Features -source <Local Folder>
       ```
 
-## <span id="Run_PCS_tests_from_HLK"></span><span id="run_pcs_tests_from_hlk"></span><span id="RUN_PCS_TESTS_FROM_HLK"></span>Run PCS tests from HLK
+## <span id="PCS_Tests"></span><span id="pcs_tests"></span><span id="PCS_TESTS"></span>PCS Tests
 
 This section discusses how to find an appropriate PCS test for your device/solution, configure the lab, and kickoff PCS execution.
 
 * You need to use the same domain admin user account to setup lab and run tests.
 * **Secure Boot State** must be OFF on all nodes and PCS controller.
-* HLK update package MUST be download and installed on HLK controller/clients. This package **"1607 HLK Update for WS16 (NIC, HDD, SERVER), WSSD (ALL) & AZURE STACK (ALL) Certification"** is available at Microsoft Collaborate site for download.
+* HLK update package MUST be download and installed on HLK controller/clients. This package ["1607 HLK Update for WS16 (NIC, HDD, SERVER), WSSD (ALL) & AZURE STACK (ALL) Certification"](https://developer.microsoft.com/en-us/dashboard/collaborate/packages/3959) is available at Microsoft Collaborate site for download.
 
 ### PCS Test Selection
 
-The PCS execution framework is used to certify multiple categories of devices and solutions. The table below, maps them to the appropriate PCS test.
+The PCS jobs are used to certify multiple categories of devices and solutions. The table below, maps them to the appropriate PCS job.
 
 | Target             | Certification Program      | Job Name in HLK                                            |
 |--------------------|----------------------------|------------------------------------------------------------|
@@ -151,7 +146,7 @@ The PCS execution framework is used to certify multiple categories of devices an
 | Solution           | SDDC Premium               | PrivateCloudSimulator-System.Solutions.StorageSpacesDirect (MIN) & (MAX) |
 | Solution           | AZURESTACK                 | PrivateCloudSimulator-System.Solutions.AzureStack (MIN) & (MAX) |
 
-PCS actions simulate planned and unplanned activity. PCS tests are summarized below:
+PCS jobs are summarized below:
 
 * PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater  
 This test contains a set of actions, that specifically target the network adapter device along with VM and compute cluster actions.
@@ -185,11 +180,9 @@ Each PCS job contains the following tasks.
     * Actions run periodically and stop once the target execution time (defined by the profile/job) of the test has been reached.
     * Test execution time is defined per profile and can vary based on the profile you are running. Test execution timer kicks in after all the VMs are created.
     * The steps in each action and the corresponding result of each step is stored in the SQL server.
-* Analyze Results
-    * The Run Analyzer engine uses results stored on the SQL server to decide the result of the run based on the success rate of each action, the absence of unexpected crashes on the cluster node.
-    * This result stored in the HLK logging format for use by HLK Studio.
 * Cleanup Run
     * In this stage, VMs created in stage (4) are cleaned up and the cluster is restored to a clean state (as possible).
+    * It generates a report file (PcsReport.htm) and a ZIP file that contains test logs.
 * Report result in HLK Studio
     * In this stage, the HLK studio reports the result of the PCS run.
     * The result can be packaged into an HLKX file for submission to Microsoft.
@@ -214,8 +207,8 @@ Each PCS job contains the following tasks.
 
 ### Setup
 
-* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
-* Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster
+* Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes.
+* Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster.
 * All nodes must be connected to the same physical switches.
 * 10GbE or better networking bitrate must be used. Create a virtual swith with the same name on each node.
 * Virtual machines, created by PCS, connect to the virtual switch to send network traffic between them. These VMs get IP address via DHCP. Make sure your DHCP server assigns valid IP addresses to these VMs. If DHCP server is not available or fails, VMs would use Automatic Private IP Addressing (APIPA) to self-configure an IP address and subnet. Each VM must have a valid IP address to send network traffic between VMs.
@@ -230,10 +223,14 @@ Each PCS job contains the following tasks.
 * Select the machine pool containing the network adapter device
 * Select **device manager**
 * Select NIC device for certification from one of cluster machines
+
     ![hlk showing 10gborgreater test with device selected](images/pcs-10gborgreater-select-device.png)
+
 * Right-click on the selected device and select **Add/Modify Features**
+
     ![hlk showing 10gborgreater test with add/modify features context menu](images/pcs-10gborgreater-add-modify.png)
-* In the features dialog, select **Device.Network.LAN.10GbOrGreater** and click **OK**. For most NIC cards (with speeds 10GbE or higher) this feature will have been selected automatically.
+
+* In the features dialog, select **Device.Network.LAN.10GbOrGreater** and then click **OK**. For most NIC cards (with speeds 10GbE or higher) this feature should have been selected automatically.
 * Navigate to the **Tests** tab
 * Select **PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater**
 * Click **Run Selected**
@@ -243,8 +240,7 @@ Each PCS job contains the following tasks.
     * UserName: Test user's user name
     * Password: Test user's password
     * ComputeCluster: Name of compute cluster
-    * StoragePath: Default value is "". It uses all the available CSVs from compute cluster. You can use different paths by entering comma separated paths.  
-    Example: **"C:\\ClusterStorage\\Volume1,C:\\ClusterStorage\\Volume2"**
+    * StoragePath: Default value is "". It uses all the available CSVs from compute cluster. You can use different paths by entering comma separated paths. Example: **"C:\\ClusterStorage\\Volume1,C:\\ClusterStorage\\Volume2"**
     * VmSwitchName: Name of virtual switch on all nodes
     * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive letter on PCS controller. Make sure this drive letter is available.
     * IsCreateCluster: Use default value
@@ -298,12 +294,17 @@ The table below lists the actions that are included in this test.
 * Hyper-V host that contains PCS-Controller VM must be Windows Server 2016 or later.
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
 * Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster
+* For instructions to set up networking for Storage Spaces Direct, see [Windows Server 2016 Converged NIC and Guest RDMA Deployment Guide](https://github.com/Microsoft/SDN/blob/master/Diagnostics/S2D%20WS2016_ConvergedNIC_Configuration.docx).
 * 10GbE or better networking bitrate is required for the NICs under test. Each server should have two identical 10gb or greater NICs.
 * All the nodes must be able to communicate with the PCS-Controller at all times through a management interface. For this purpose, each server should have one additional NIC for management interface, which does not need to meet strict bitrate requirements.
 * If RDMA capable NICs are used, the physical switch must meet the associated RDMA requirements.
 * Make sure that RDMA is setup on all nodes and reflects when queried through Get-SMBClientNetworkInterface & Get-SMBServerNetworkInterface.
-* Make sure that every node contains a teaming enabled virtual switch with the same name.  
-    Example: New-VMSwitch -Name SdnSwitch -NetAdapterName "Name 1,Name 2" -AllowManagementOS -EnableEmbeddedTeaming
+* Make sure that every node contains a teaming enabled virtual switch with the same name.
+
+  ```powershell
+  New-VMSwitch -Name SdnSwitch -NetAdapterName "Name 1,Name 2" -AllowManagementOS -EnableEmbeddedTeaming
+  ```
+
 * Live Migration settings (Failover Cluster Manager-&gt;Networks-&gt;Live Migration Settings) must be set appropriately to use storage network for live migrations.
 
 This test creates virtual machines and send traffic between them using the virtual switch created. The vNic (virtual nic) of the PCS virtual machines are assigned IP address from the IP address space passed in as the AddressPrefixes parameter.
