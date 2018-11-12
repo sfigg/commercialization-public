@@ -23,7 +23,7 @@ Windows Defender Device Guard can also leverage advanced hardware features on ha
 
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-For more information about how to deploy Windows Defender Application Control in an enterprise, see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+For more information about how to deploy Windows Defender Application Control in an enterprise , see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 ## Windows Defender Exploit Guard
 
@@ -61,4 +61,4 @@ For guidelines about how to create more secure drivers, see the [Driver security
 - [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-10s-security)
 - [Driver Compatibility with Device Guard on Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
 - [Managing Managing Windows 10 Device Guard with Configuration Manager](https://blogs.technet.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
--[Device Guard signing](https://docs.microsoft.com/microsoft-store/device-guard-signing-portal)
+- [Device Guard signing](https://docs.microsoft.com/microsoft-store/device-guard-signing-portal)
