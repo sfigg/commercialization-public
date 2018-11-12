@@ -21,7 +21,7 @@ See [Windows 10 IoT Core Recovery](https://docs.microsoft.com/windows-hardware/s
 
 In the devicelayout.xml file, you add a new partition **MMOS** with the following attributes
 - FAT32 filesystem
-- Atleast 2GB size ( to accomodate WinPE wim and recovery wims)
+- Atleast 2GB size ( to accommodate WinPE wim and recovery wims)
 - Partition type 
     - GPT : {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
     - MBR : 0x07
