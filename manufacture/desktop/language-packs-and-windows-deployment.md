@@ -48,7 +48,7 @@ See [Add languages to Windows](add-language-packs-to-windows.md) to learn how to
 | WinRE | Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md) |
 
 
-To learn more about the types of available components and their dependencies, see [Languages overview](language-packs-and-windows-deployment.md). Please note that not all components and Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+Please note that not all components and Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
 To learn more about adding language components to Windows, see [Add and remove languages](add-and-remove-language-packs-offline-using-dism.md).
 
