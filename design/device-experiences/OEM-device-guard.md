@@ -8,21 +8,22 @@ ms.author: justinha
 ms.date: 11/13/2018
 ms.topic: article
 
-
 ---
 
 # Windows Defender Device Guard
+
 Starting with Windows 10, version 1709, Windows Defender Device Guard is split into two features known as Windows Defender Exploit Guard and Windows Defender Application Control. These features are a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that are defined in an enterprise's code integrity policies. If the app isn’t trusted it can’t run, period. 
 
 With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. 
 
 Windows Defender Device Guard can also leverage advanced hardware features on hardware that supports them. These features include CPU virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. When you enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. 
 
-**Note:** Beginning with Windows 10 version 1709 and Windows Server version 1709, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device Guard and Credential Guard are not impacted and will function as expected. Device Guard and Credential Guard are not supported on earlier versions of Windows when Intel TXT or SGX are enabled in a platform via the BIOS. 
+>[!NOTE]
+>Beginning with Windows 10 version 1709 and Windows Server version 1709, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device Guard and Credential Guard are not impacted and will function as expected. Device Guard and Credential Guard are not supported on earlier versions of Windows when Intel TXT or SGX are enabled in a platform via the BIOS. 
 
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-**IT Professionals:**  If you want more information on how to deploy Windows Defender Application Control, see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+For more information about how to deploy Windows Defender Application Control in an enterprise, see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 ## Windows Defender Exploit Guard
 
@@ -54,7 +55,7 @@ Starting with Windows 10, version 1709, the code integretity part of Windows Def
 To determine if a device is able to run Windows Defender Device Guard and Windows Defender Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 For guidelines about how to create more secure drivers, see the [Driver security checklist](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/driver-security-checklist).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 - [Driver Securty Guidance](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/)
 - [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-10s-security)
