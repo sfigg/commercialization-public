@@ -95,5 +95,5 @@ This supplemental content package is required to pass the Device and Solutions P
 
 This documentation is also available in .chm format for offline use.
 
-- [Download HLK offline documentation](https://go.microsoft.com/fwlink/?linkid=873018)
+- [Download HLK offline documentation](http://download.microsoft.com/download/F/7/6/F76FF298-B35C-44F0-912D-9AD132E7794E/HLK.chm)
 
