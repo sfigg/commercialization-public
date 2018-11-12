@@ -18,7 +18,7 @@ Using the IoT Core Image Wizard, the process of creating your first image for yo
 
 ## Download link
 
-Add download link here
+When the preview of the tool is released, the download link will be added here.
 
 ## Setup instructions
 
@@ -30,7 +30,7 @@ Add download link here
 ## November 2018 Preview release notes
 
 - Only supports creating a new workspace.  Cannot open/edit a workspace.  Use the [Powershell Commands](iot-core-adk-addons-command-line-options.md) to open/edit a workspace.
-- Just debug configurations of image builds
+- Just debug configurations of image builds.  If you need to build retail images, use the [Powershell Commands](iot-core-adk-addons-command-line-options.md).
 
 ## Related topics
 
