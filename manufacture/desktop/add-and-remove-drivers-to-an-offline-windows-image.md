@@ -18,7 +18,7 @@ You can use DISM to install or remove driver (.inf) files in an offline Windows 
 
 When you use DISM to install a device driver to an offline image, the device driver is added to the driver store in the offline image. When the image is booted, Plug and Play (PnP) runs and associates the drivers in the store to the corresponding devices on the computer.
 
-> [!note]
+> [!Note]
 > To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
 
 To learn how to add a driver on a running Windows PC, see [Add a driver online in audit mode](add-a-driver-online-in-audit-mode.md) or [Install a plug and play device](http://go.microsoft.com/fwlink/?LinkId=139151). To learn how to add a driver to a PC running WinPE, see [Drvload command line options](drvload-command-line-options.md).
