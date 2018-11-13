@@ -25,7 +25,7 @@ ms.topic: article
 
 ### <span id="Breaking_changes"></span><span id="breaking_changes"></span><span id="BREAKING_CHANGES"></span>Breaking changes
 
->[!NOTE]With each new release, anyone who builds tools that utilize the HLK object model should rebuild those tools to use the latest versions of the object model files. In addition, be sure to always use the same version of each object model file (i.e. do not mix object model files from different kit releases).
+>[!NOTE] With each new release, anyone who builds tools that utilize the HLK object model should rebuild those tools to use the latest versions of the object model files. In addition, be sure to always use the same version of each object model file (i.e. do not mix object model files from different kit releases).
 
 ### Virtual Hardware Lab Kit (VHLK)
 New for 1809! The Microsoft Virtual Hardware Lab Kit (VHLK) is the entire Hardware Lab Kit pre-installed and pre-configured on a VHDX, ready to boot. Use the VHLK to save setup time, quickly stand up a controller, and run Windows Hardware Certification from a virtual machine. For more details, check out the [VHLK Getting Started Guide](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/getstarted-vhlk).
@@ -43,7 +43,7 @@ New for 1809! The Microsoft Virtual Hardware Lab Kit (VHLK) is the entire Hardwa
 |1703|Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
 |1607|Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016| 
 
->[!NOTE]Windows Server 2019 is not supported as a host OS for the 1809 HLK Controller. However, it is supported as a client OS. 
+>[!NOTE] Windows Server 2019 is not supported as a host OS for the 1809 HLK Controller. However, it is supported as a client OS. 
 
 ### Updated test content
 Test content updated for better coverage for 1809 testing, across various architectures.
