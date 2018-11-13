@@ -42,8 +42,7 @@ You can specify which configuration pass to add new settings:
 
 -   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-> [!Note]  
-> These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
+> [!Note] These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
