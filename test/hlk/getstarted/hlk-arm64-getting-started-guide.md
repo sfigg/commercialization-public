@@ -51,15 +51,15 @@ Testing can be done with multiple machines or a single machine, but using a sing
 
  
 
->[!NOTE]The mode required may change with new releases of the kit.
+>[!NOTE] The mode required may change with new releases of the kit.
 
  
 
 Once the mode for testing is identified the following instructions will walk you through client setup.
 
->[!WARNING]If you are testing software, be sure to install the product on the test system first, and then install the HLK Client software.
+>[!WARNING] If you are testing software, be sure to install the product on the test system first, and then install the HLK Client software.
 
->[!NOTE]It is recommended that the client system is on A/C (plugged in) and that the Power Options are set to **Never** for **Put the computer to sleep** settings.
+>[!NOTE] It is recommended that the client system is on A/C (plugged in) and that the Power Options are set to **Never** for **Put the computer to sleep** settings.
 
  
 
@@ -97,13 +97,13 @@ Once the mode for testing is identified the following instructions will walk you
 
 2.  The Windows Hardware Lab Kit Client Setup wizard appears. To start the wizard, choose **Next**.
 3.  On the Internet Connection Firewall Agreement page, select **Yes I will allow a port to be opened**, and then choose **Next**.
-    >[!NOTE]If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
+    >[!NOTE] If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
 
      
 
 4.  When the **Ready to Install** page appears, select **Install**.
 5.  Click **Finish** to exit the wizard.
-    >[!TIP]When installation completes, confirm its success by going to the Control Panel and choosing Uninstall a program. Windows Hardware Lab Kit Client should appear in the program list.
+    >[!TIP] When installation completes, confirm its success by going to the Control Panel and choosing Uninstall a program. Windows Hardware Lab Kit Client should appear in the program list.
 
      
 
@@ -123,7 +123,7 @@ After you setup your test server and clients, you're ready to create a project. 
 
 You can create large projects that represent a wide range of scenarios. You can also create several smaller projects and merge the results into one package.
 
->[!NOTE]For ARM64 Desktop testing, multiple projects are required to form a complete submission package (one for each mode). When testing is complete for each mode, create hlkx packages and then merge the packages together to make a single package for submission. 
+>[!NOTE] For ARM64 Desktop testing, multiple projects are required to form a complete submission package (one for each mode). When testing is complete for each mode, create hlkx packages and then merge the packages together to make a single package for submission. 
 
  
 
@@ -137,7 +137,7 @@ The following image shows the Studio **Project** tab.
 
 1. In Windows HLK Studio, choose the **Project** tab, and then choose **Create project**.
 2. Replace the default project name with the name of your project, and then press Enter.
-   >[!NOTE]A project should have a meaningful name that indicates its contents, for example, **Fabrikam Multi-function Device Model Z**.
+   >[!NOTE] A project should have a meaningful name that indicates its contents, for example, **Fabrikam Multi-function Device Model Z**.
 
      
 
@@ -169,7 +169,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
 -   Target
 -   Machine(s)
 
->[!NOTE]You can hover over the test type icons with your mouse for more information about the test types. Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests. Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
+>[!NOTE] You can hover over the test type icons with your mouse for more information about the test types. Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests. Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
 
 
  
@@ -198,7 +198,7 @@ You can save an existing collection of tests as a playlist by choosing Save Sele
 
  
 
->[!NOTE]ARM64 Desktop testing: There are two playlists, one for tests that run in **Native mode** and one for tests that run in **x86 on ARM64** mode. Ensure that the appropriate playlist is being applied to the project that has the HLK client installation which matches the mode intended for testing.
+>[!NOTE] ARM64 Desktop testing: There are two playlists, one for tests that run in **Native mode** and one for tests that run in **x86 on ARM64** mode. Ensure that the appropriate playlist is being applied to the project that has the HLK client installation which matches the mode intended for testing.
 
  
 
@@ -214,7 +214,7 @@ If any additional input is needed, Windows HLK Studio will prompt you.
 
 A progress bar appears. A slight delay occurs when you run a test.
 
->[!NOTE]To learn more about any test, select the test from the list, and press F1 key, or right-click, and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
+>[!NOTE] To learn more about any test, select the test from the list, and press F1 key, or right-click, and select **Test Description**. To cancel any running test, right-click it and select **Cancel**.
 
  
 
@@ -227,7 +227,7 @@ To learn more about the different options on this page, see [HLK Studio - Tests 
 
 x86/x64 instructions: [Step 7: View test results and log files](step-7-view-test-results-and-log-files.md)
 
->[!NOTE]Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submission. For information on merging packages, see [Merge packages](../user/merge-packages.md).
+>[!NOTE] Due to ARM64 Desktop having scenarios that involve multiple projects, it will be required that these projects be merged to have a complete HLK package for submission. For information on merging packages, see [Merge packages](../user/merge-packages.md).
 
  
 
