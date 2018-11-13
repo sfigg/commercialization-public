@@ -89,7 +89,11 @@ This supplemental content package is required to pass the Device and Solutions P
 
 ```C:\Program Files (x86)\Windows Kits\10\Hardware Lab Kit\Tests\amd64```
 
-- [Download PCSFiles.vhd (Windows Server 2016)](http://download.microsoft.com/download/5/9/F/59FF2124-30FA-4BFA-9BE5-5D55E736E6A0/PcsFiles.vhd)
+|To certify... | Download... | SHA256 |
+|------------------------|----------------|--------------------|
+| Windows Server 2019    |  [PCSFiles.vhd](http://download.microsoft.com/download/3/1/7/317EC3D6-A0A0-46C4-B365-AD93742F82B6/PcsFiles.vhd) | 5D801FE7627C539C2DA0E1719E3ECC96847BF08AFF2CBABC08133921E7EB08D1 |
+| Windows Server 2016    |  [PCSFiles.vhd](http://download.microsoft.com/download/5/9/F/59FF2124-30FA-4BFA-9BE5-5D55E736E6A0/PcsFiles.vhd) | 8AE4F86D0F40B4304CA4DC8CBCFA989885E3507FCB0FFDBF969DDF10542F0035 |
+
 
 ## Download HLK Offline Documentation
 

@@ -775,9 +775,7 @@ The profile defines the actions to execute to validate the disk drives for Micro
 * Select **systems** on the left panel and then select the PCS test controller (NOTE: Not the machine that needs to be certified).
   ![hlk studio with pcs test controller selected](images/pcs-system-solutions-azurestack-test-controller.png)
 * Right-click on the selected device and select **Add/Modify Features**
-  ![hlk studio with add/modify features context menu](images/pcs-system-solutions-azurestack-add-modify.png)
 * In the features dialog, select **System.Solution.AzureStack** and click OK
-  ![hlk studio showing features dialog](images/pcs-system-solutions-azurestack-features.png)
 * Navigate to the **Tests** tab
 * Select **PrivateCloudSimulator - System.Solutions.AzureStack**
 * Click **Run Selected**
@@ -1019,12 +1017,6 @@ You can define and schedule your own actions for PCS to perform. Below shows a t
 ![privatecloudsimulator.xml file with actions defined](images/pcs-privatecloudsimulator-xml-file-define-actions.png)
 
 ## <span id="FAQ"></span><span id="faq"></span>FAQ
-
-***Where are HLK Studio and PCS controller installed?***
-
-They are installed on additional machines that are not part of the cluster nodes.
-
-![overall pcs topology](images/pcs-topology.png)
 
 ***Do we need to install the HLK Client on cluster nodes?***
 

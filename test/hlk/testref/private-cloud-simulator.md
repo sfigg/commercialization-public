@@ -183,9 +183,9 @@ Each PCS job contains the following tasks.
 
 ## <span id="Execute_PCS_Tests"></span><span id="execute_pcs_tests"></span><span id="EXECUTE_PCS_TESTS"></span>Execute PCS Tests
 
-## <span id="PrivateCloudSimulator_-_Device.Network.LAN.10GbOrGreater"></span><span id="privatecloudsimulator_-_device.network.lan.10gborgreater"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.10GBORGREATER"></span>PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
+### <span id="PrivateCloudSimulator_-_Device.Network.LAN.10GbOrGreater"></span><span id="privatecloudsimulator_-_device.network.lan.10gborgreater"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.10GBORGREATER"></span>PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
 
-### System Requirements
+#### System Requirements
 
 | | |
 |--------------------------------|--------------------------------|
@@ -198,7 +198,7 @@ Each PCS job contains the following tasks.
 | Network Card                   | NIC being certified       |
 | Switch                         | Switch supporting all NIC features |
 
-### Setup
+#### Setup
 
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes.
 * Follow the [Windows Server 2016 Storage Spaces Direct cluster guide](https://technet.microsoft.com/library/mt693395.aspx) to deploy a cluster.
@@ -206,7 +206,7 @@ Each PCS job contains the following tasks.
 * 10GbE or better networking bitrate must be used. Create a virtual swith with the same name on each node.
 * Virtual machines, created by PCS, connect to the virtual switch to send network traffic between them. These VMs get IP address via DHCP. Make sure your DHCP server assigns valid IP addresses to these VMs. If DHCP server is not available or fails, VMs would use Automatic Private IP Addressing (APIPA) to self-configure an IP address and subnet. Each VM must have a valid IP address to send network traffic between VMs.
 
-### Execute
+#### Execute
 
 * Open HLK Studio
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to create a machine pool
@@ -243,12 +243,12 @@ Each PCS job contains the following tasks.
 * Click **OK** to schedule the test
 * Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
 
-### Duration
+#### Duration
 
 * PCS actions (listed below) run for about 24 hours.
 * The complete run may take an additional 24-36 hours (including time for setup and cleanup).
 
-### PCS Actions
+#### PCS Actions
 
 The table below lists the actions that are included in this test.
 
@@ -263,9 +263,9 @@ The table below lists the actions that are included in this test.
 | VmStartWorkloadAction       | Starts a user-simulated workload. |
 | VmGuestFullPowerCycleAction | Power-cycles the VM. |
 
-## <span id="PrivateCloudSimulator_-_Device.Network.LAN.AzureStack"></span><span id="privatecloudsimulator_-_device.network.lan.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.AZURESTACK"></span>PrivateCloudSimulator - Device.Network.LAN.AzureStack
+### <span id="PrivateCloudSimulator_-_Device.Network.LAN.AzureStack"></span><span id="privatecloudsimulator_-_device.network.lan.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.AZURESTACK"></span>PrivateCloudSimulator - Device.Network.LAN.AzureStack
 
-### System Requirements
+#### System Requirements
 
 | | |
 |--------------------------------|--------------------------------|
@@ -278,7 +278,7 @@ The table below lists the actions that are included in this test.
 | Network Card                   | NIC being certified       |
 | Switch                         | Switch supporting all NIC features |
 
-### Setup
+#### Setup
 
 * Hyper-V host that contains PCS Controller VM must be Windows Server 2016 or later.
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to install HLK client software on all cluster nodes
@@ -307,7 +307,7 @@ The table below lists the actions that are included in this test.
 * Live Migration settings (Failover Cluster Manager-&gt;Networks-&gt;Live Migration Settings) must be set appropriately to use storage network for live migrations.
 * This test creates virtual machines and send traffic between them using the virtual switch created. The vNic (virtual nic) of the PCS virtual machines are assigned IP address from the IP address space passed in as the **AddressPrefixes** parameter.
 
-### Execute
+#### Execute
 
 * Open HLK Studio
 * Navigate to the **Project** tab and click **Create Project**
@@ -355,7 +355,7 @@ The table below lists the actions that are included in this test.
 * Click **OK** to schedule the test
 * Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
 
-### Cleanup
+#### Cleanup
 
 Use the **C:\\Pcs\\ReRunPcsCleanup.cmd** script on the PCS-Controller for cleaning up state of the setup if the test abruptly ends. It is very important that stale VMs & SDN infrastructure is cleaned up before starting a new run.
 
@@ -383,12 +383,12 @@ Please make sure the following items are cleaned up before starting a new run:
 
 * Storage/CSV-volumes on the cluster do not have any entries pertaining to PCS (C:\\ClusterStorage\\Volume1\\PCS)
 
-### Duration
+#### Duration
 
 * PCS actions (listed below) run for about 24 hours.
 * The complete run may take an additional 36-48 hours (including time for setup and cleanup).
 
-### PCS Actions
+#### PCS Actions
 
 The table below lists the actions that are included in this test.
 
@@ -409,9 +409,9 @@ The table below lists the actions that are included in this test.
 | VmGuestRestartAction        | Restarts the VM. |
 | VmGuestFullPowerCycleAction | Power-cycles the VM. |
 
-## <span id="PrivateCloudSimulator_-_System.Solutions.StorageSpacesDirect"></span><span id="privatecloudsimulator_-_system.solutions.storagespacesdirect"></span><span id="PRIVATECLOUDSIMULATOR_-_SYSTEM.SOLUTIONS.STORAGESPACESDIRECT"></span>PrivateCloudSimulator - System.Solutions.StorageSpacesDirect
+### <span id="PrivateCloudSimulator_-_System.Solutions.StorageSpacesDirect"></span><span id="privatecloudsimulator_-_system.solutions.storagespacesdirect"></span><span id="PRIVATECLOUDSIMULATOR_-_SYSTEM.SOLUTIONS.STORAGESPACESDIRECT"></span>PrivateCloudSimulator - System.Solutions.StorageSpacesDirect
 
-### Setup
+#### Setup
 
 * Setup your solution with the cluster deployment toolset supplied for WSSD program.
 * Minimum Configuration
@@ -422,7 +422,7 @@ The table below lists the actions that are included in this test.
   * Processor and memory should be equal or higher than the lowest supported value for the solution, but need not be the maximum possible supported value. The processor and memory values should be representative of the most common skus for the solution.
   * Please use the **PrivateCloudSimulator - System.Solutions.StorageSpacesDirect (MAX)** job to validate this setup
 
-### Execute
+#### Execute
 
 * Open HLK Studio
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to create a machine pool
@@ -451,12 +451,12 @@ The table below lists the actions that are included in this test.
 * Click **OK** to schedule the test.
 * Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
 
-### Duration
+#### Duration
 
 * PCS Actions (listed below) will run for 96 hours.
 * The complete run may take an additional 24-36 hours (including time for setup and cleanup).
 
-### PCS Actions
+#### PCS Actions
 
 The profile defines the actions to execute to validate the disk drives for Microsoft AzureStack. The table below lists the actions that are included in this profile.
 
@@ -477,20 +477,20 @@ The profile defines the actions to execute to validate the disk drives for Micro
 | StorageNodeBugcheck | Bug checks one node of the storage cluster. |
 | StorageNodeUpdateStorageProviderCacheAction | Calls update-storageprovidercache command in PowerShell. |
 
-## <span id="PrivateCloudSimulator_-_System.Solutions.AzureStack"></span><span id="privatecloudsimulator_-_system.solutions.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_SYSTEM.SOLUTIONS.AZURESTACK"></span>PrivateCloudSimulator - System.Solutions.AzureStack
+### <span id="PrivateCloudSimulator_-_System.Solutions.AzureStack"></span><span id="privatecloudsimulator_-_system.solutions.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_SYSTEM.SOLUTIONS.AZURESTACK"></span>PrivateCloudSimulator - System.Solutions.AzureStack
 
-### Setup
+#### Setup
 
 * Setup your solution with the cluster deployment toolset supplied for AzureStack program.
 * Minimum Configuration
-    * This config contains the minimum of cluster nodes, slowest processor, least memory and lowest storage capacity supported by the solution family.
-    * Please use the **PrivateCloudSimulator - System.Solutions.AzureStack (MIN)** job to validate this setup
+  * This config contains the minimum of cluster nodes, slowest processor, least memory and lowest storage capacity supported by the solution family.
+  * Please use the **PrivateCloudSimulator - System.Solutions.AzureStack (MIN)** job to validate this setup
 * Maximum Configuration
-    * This config contains the maximum of cluster nodes and the maximum storage supported by the solution family.
-    * Processor and memory should be equal or higher than the lowest supported value for the solution, but need not be the maximum possible supported value. The processor and memory values should be representative of the most common skus for the solution.
-    * Please use the **PrivateCloudSimulator - System.Solutions. AzureStack (MAX)** job to validate this setup
+  * This config contains the maximum of cluster nodes and the maximum storage supported by the solution family.
+  * Processor and memory should be equal or higher than the lowest supported value for the solution, but need not be the maximum possible supported value. The processor and memory values should be representative of the most common skus for the solution.
+  * Please use the **PrivateCloudSimulator - System.Solutions. AzureStack (MAX)** job to validate this setup
 
-### Execute
+#### Execute
 
 * Open HLK Studio
 * Follow the [Windows HLK Getting Started guide](https://msdn.microsoft.com/library/windows/hardware/dn915002) to create a machine pool
@@ -519,12 +519,12 @@ The profile defines the actions to execute to validate the disk drives for Micro
 * Click **OK** to schedule the test.
 * Please refer to [View PCS report in real-time through SQL Server Reporting Services](#realtime) to view the real-time results for the test run.
 
-### Duration
+#### Duration
 
 * PCS Actions (listed below) will run for 96 hours.
 * The complete run may take an additional 24-36 hours (including time for setup and cleanup)
 
-### Actions
+#### Actions
 
 The profile defines the actions to execute to validate the storage Enclosure for Microsoft AzureStack. The table below lists the actions that are included in this profile.
 
@@ -544,49 +544,55 @@ The profile defines the actions to execute to validate the storage Enclosure for
 | StorageNodeBugcheck | Bug checks one node of the storage cluster. |
 | StorageNodeUpdateStorageProviderCacheAction | Calls update-storageprovidercache command in PowerShell. |
 
-## <span id="Analyze_test_results"></span><span id="analyze_test_results"></span><span id="ANALYZE_TEST_RESULTS"></span>Analyze Test Results
-
-While a PCS test pass is running, you can view and analyze data in real-time through SQL Server Reporting Services. After the test pass completes, you can get additional information in the logs generated by the PCS.
-
 ## <span id="realtime"></span><span id="REALTIME"></span>View PCS report in real-time through SQL Server Reporting Services
 
 While PCS operations are running, reports are saved in a SQL database on the PCS Controller. Each report lists all operations that were performed, their pass percentages, and all resources that were acquired and released during the test. A new database is created for each test run to enable you to review data from previous test runs at any time.
 
 To view the report, follow these steps:
 
-* By default, Internet Explorer Enhanced Security Configuration is enabled on Windows Server 2016. You need to disable it to view the report.
+* By default, Internet Explorer Enhanced Security Configuration is enabled on Windows Server. You need to disable it to view the report.
 
     Open Server Manager =&gt; Local Server =&gt; Click **IE Enhanced Security Configuration** to turn it off for administrators and users.
 
 * Open IE from PCS controller and visit http://PcsControllerMachineName/Reports
-  ![pcs reporting page in internet explorer](images/pcs-ie-reports-page.png)
+
+![pcs reporting page in internet explorer](images/pcs-ie-reports-page.png)
+
 * Click **PCS Reports** =&gt; **PCSRuns**.
 * Each PCS run is identified by a unique **Pass Run ID**.
-  ![ie reporting showing pass run ids](images/pcs-ie-reports-pass-run-id.png)
+
+![ie reporting showing pass run ids](images/pcs-ie-reports-pass-run-id.png)
+
 * Click a **Pass Run ID** (for example, click f44b3f88-3dbf-476e-9294-9d479ca0a369) to open a report from the PCS run. The data in these reports is live. While a test runs, you can monitor the progress of a test run in real-time.
-  * An overview of all resources (VMs and hosts) that participated in the test run.
+  * An overview of all resources (nodes, cluster, and VMs) that participated in the test run.
   * All actions that were performed on each resource. The Pass and Fail columns report the number of actions that passed and failed.
-    ![ie reporting showing run information](images/pcs-ie-reports-run-information.png)
-* In the Overall Operation Information table, you can click links in the **Action**/**Pass**/**Fail** column to open detail pages, which give you more information about the action's results. For example, if you clicked the failure number 9 by the **VMLiveMigrationAction** entry, you would see the summary shown in the following illustration.
-  ![ie reporting showing vmlivemigrationaction](images/pcs-ie-reports-vmlivemigrationaction.png)
 
-The first entry above provides the following information:
+![ie reporting showing run information](images/pcs-ie-reports-run-information.png)
 
-* **Failure ID:** When we encounter a failure in PCS, we generalize the Failure Message and generate a unique Hash for it. In above example the Failure ID is **97c12afd-23a8-3982-e304-a5dc6793950d**
-* **Failure Hash:** Generalized failure message. In the example above, the failure hash is
+* In the **Overall Operation Information** table, you can click links in the **Action**/**Pass**/**Fail** column to open detail pages, which give you more information about the action's results. For example, if you clicked the failure number 9 by the **VMLiveMigrationAction** entry, you would see the summary shown in the following illustration.
 
-  Virtual Machine &lt;VIRTUAL MACHINE&gt; live migration failed at progress &lt;PERCENTAGE&gt; (migration state: Migrating)  
-  Error: Virtual machine migration operation for '&lt;VIRTUAL MACHINE&gt;' failed at migration destination '&lt;COMPUTE NODE&gt;'. (Virtual machine ID &lt;GUID&gt;)  
-  Failed to receive data for a Virtual Machine migration: This operation returned because the timeout period expired. (0x800705B4).
+![ie reporting showing vmlivemigrationaction](images/pcs-ie-reports-vmlivemigrationaction.png)
 
-* **Count Current Run:** The count of actions of a particular type that failed with this particular error message during this run. In the above example, **VMLiveMigrationAction** was run 3 times.
-* **Count All Runs:** A count of actions that failed because of this particular failure across all PCS runs. For the **VMLiveMigrationAction**, this count was 3.
-* **PCS Runs Affected:** Tells how many runs have been affected by this failure. For **VMLiveMigrationAction**, only 1 PCS run was affected.
+* The first entry above provides the following information:
+
+  * **Failure ID:** When we encounter a failure in PCS, we generalize the Failure Message and generate a unique Hash for it. In above example the Failure ID is **97c12afd-23a8-3982-e304-a5dc6793950d**
+  * **Failure Hash:** Generalized failure message. In the example above, the failure hash is
+
+    Virtual Machine &lt;VIRTUAL MACHINE&gt; live migration failed at progress &lt;PERCENTAGE&gt; (migration state: Migrating)  
+    Error: Virtual machine migration operation for '&lt;VIRTUAL MACHINE&gt;' failed at migration destination '&lt;COMPUTE NODE&gt;'. (Virtual machine ID &lt;GUID&gt;)  
+    Failed to receive data for a Virtual Machine migration: This operation returned because the timeout period expired. (0x800705B4).
+
+  * **Count Current Run:** The count of actions of a particular type that failed with this particular error message during this run. In the above example, **VMLiveMigrationAction** was run 3 times.
+  * **Count All Runs:** A count of actions that failed because of this particular failure across all PCS runs. For the **VMLiveMigrationAction**, this count was 3.
+  * **PCS Runs Affected:** Tells how many runs have been affected by this failure. For **VMLiveMigrationAction**, only 1 PCS run was affected.
 
 * To look further into the error - you can click a failure ID on that screen to drill down to a global history of the failure type across all PCS runs. For example, click **97c12afd-23a8-3982-e304-a5dc6793950d** to display the following. The page lists all failed operations, grouped by failure type, which has the effect of highlighting key features that you might need to investigate.
-  ![ie reporting showing failing actions by cause](images/pcs-ie-reports-failing-actions.png)
+
+![ie reporting showing failing actions by cause](images/pcs-ie-reports-failing-actions.png)
+
 * If you click the Action ID, you can drill down farther to see an Action Log Report. Errors are shown in red; Warnings are shown in yellow.
-  ![ie reporting showing action log report](images/pcs-ie-reports-action-log.png)
+
+![ie reporting showing action log report](images/pcs-ie-reports-action-log.png)
 
 ## <span id="Troubleshoot_a_PCS_run_from_the_PCS_Controller"></span><span id="troubleshoot_a_pcs_run_from_the_pcs_controller"></span><span id="TROUBLESHOOT_A_PCS_RUN_FROM_THE_PCS_CONTROLLER"></span>Troubleshoot a PCS run from the PCS Controller
 
@@ -734,12 +740,6 @@ You can define and schedule your own actions for PCS to perform. Below shows a t
 ![privatecloudsimulator.xml file with actions defined](images/pcs-privatecloudsimulator-xml-file-define-actions.png)
 
 ## <span id="FAQ"></span><span id="faq"></span>FAQ
-
-***Where are HLK Studio and PCS controller installed?***
-
-They are installed on additional machines that are not part of the cluster nodes.
-
-![overall pcs topology](images/pcs-topology.png)
 
 ***Do we need to install the HLK Client on cluster nodes?***
 
