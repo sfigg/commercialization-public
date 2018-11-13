@@ -16,19 +16,17 @@ ms.topic: article
 
 # Windows Performance Toolkit
 
-
 Included in the [Windows Assessment and Deployment Kit](http://aka.ms/adk), the Windows Performance Toolkit consists of performance monitoring tools that produce in-depth performance profiles of Windows operating systems and applications. This documentation discusses both Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA).
 
-## Windows Performance Toolkit
-
+## Windows Performance Toolkit components
 
 The Windows Performance Toolkit consists of two independent tools: Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA). In addition, support is maintained for the previous command-line tool, Xperf. However, Xperfview is no longer supported. All recordings must be opened and analyzed by using WPA.
 
 The following are the system requirements for running Windows Performance Toolkit:
 
--   Windows Performance Recorder (WPR): Windows 8 or later.
+- Windows Performance Recorder (WPR): Windows 8 or later.
 
--   Windows Performance Analyzer (WPA): Windows 8 or later with the Microsoft .NET Framework 4.5 or later.
+- Windows Performance Analyzer (WPA): Windows 8 or later with the Microsoft .NET Framework 4.5 or later.
 
 ### Windows Performance Recorder
 
@@ -44,54 +42,11 @@ For basic procedures and a detailed walkthrough, see the [WPA Quick Start Guide]
 
 ## Contents
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Section</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[What's New in the Windows Performance Toolkit](whats-new-in-the-windows-performance-toolkit.md)</p></td>
-<td><p>Describes the new features available in this release.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Windows Performance Recorder](windows-performance-recorder.md)</p></td>
-<td><p>Provides complete documentation for WPR. On MSDN, this includes a complete command-line and Extensible Markup Language (XML) reference.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Xperf Command-Line Reference](http://go.microsoft.com/fwlink/?LinkId=234381)</p></td>
-<td><p>Gives complete reference material for Xperf.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)</p></td>
-<td><p>Covers the Kernel Trace Control API, an extension of the ETA Event Tracing API that is supported for backward compatibility with existing scripts and profiles.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Windows Performance Analyzer](windows-performance-analyzer.md)</p></td>
-<td><p>Provides complete documentation for WPA to enable you to analyze recordings created with WPR or from the Assessment Platform.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Windows Performance Step-by-Step Guides](windows-performance-step-by-step-guides.md)</p></td>
-<td><p>Provides instructions for performing labs that address common performance scenarios.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
+|Section|Description|
+|----|----|
+|[What's New in the Windows Performance Toolkit](whats-new-in-the-windows-performance-toolkit.md)|Describes the new features available in this release.|
+|[Windows Performance Recorder](windows-performance-recorder.md)|Provides complete documentation for WPR. On MSDN, this includes a complete command-line and Extensible Markup Language (XML) reference.|
+|[Xperf Command-Line Reference](xperf-command-line-reference.md)|Gives complete reference material for Xperf.|
+|[Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)|Covers the Kernel Trace Control API, an extension of the ETA Event Tracing API that is supported for backward compatibility with existing scripts and profiles.|
+|[Windows Performance Analyzer](windows-performance-analyzer.md)|Provides complete documentation for WPA to enable you to analyze recordings created with WPR or from the Assessment Platform.|
+|[Windows Performance Step-by-Step Guides](windows-performance-step-by-step-guides.md)|Provides instructions for performing labs that address common performance scenarios.|
