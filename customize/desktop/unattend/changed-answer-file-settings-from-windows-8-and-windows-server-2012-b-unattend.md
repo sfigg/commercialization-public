@@ -100,7 +100,7 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile12. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-SystemSettings<a href="microsoft-windows-systemsettingsdisplaynetworkselection.md" data-raw-source="[DisplayNetworkSelection](microsoft-windows-systemsettingsdisplaynetworkselection.md)">DisplayNetworkSelection</a></p></td>
+<td><p>Microsoft-Windows-SystemSettings<a href="microsoft-windows-systemsettingsdisplaynetworkselection.md" data-raw-source="[DisplayNetworkSelection](microsoft-windows-systemsettingsthreshold-displaynetworkselection.md)">DisplayNetworkSelection</a></p></td>
 <td><p>Specifies whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
 </tr>
 <tr class="even">
