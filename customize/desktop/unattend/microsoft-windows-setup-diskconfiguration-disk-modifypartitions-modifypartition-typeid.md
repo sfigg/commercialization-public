@@ -68,7 +68,7 @@ The following tables describe how to set common partition types by using the mic
 <tbody>
 <tr class="odd">
 <td><p>System partition</p></td>
-<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>, and then set ModifyPartition<a href="microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md" data-raw-source="[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md)">Active</a> to <strong>true</strong>.</p></td>
+<td><p>Set CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> to <strong>Primary</strong>, and then set ModifyPartition<a href="microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-active.md" data-raw-source="[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md)">Active</a> to <strong>true</strong>.</p></td>
 <td><p>System boot information and Windows RE tools.</p></td>
 <td><p>No</p></td>
 </tr>
