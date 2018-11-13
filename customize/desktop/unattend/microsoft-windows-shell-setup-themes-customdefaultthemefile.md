@@ -17,8 +17,7 @@ ms.topic: article
 
 # CustomDefaultThemeFile
 
-> [!Important]
-> This setting is deprecated. Theme files can no longer be set as the default Windows theme. Instead, customize the following elements of the Windows default theme using Unattend.xml: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md), [ThemeName](microsoft-windows-shell-setup-themes-themename.md), [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
+> [!Important] This setting is deprecated. Theme files can no longer be set as the default Windows theme. Instead, customize the following elements of the Windows default theme using Unattend.xml: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md), [ThemeName](microsoft-windows-shell-setup-themes-themename.md), [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
 `CustomDefaultThemeFile` specifies the path to a customized theme file. These files may include a .bmp file for customized background.
 
