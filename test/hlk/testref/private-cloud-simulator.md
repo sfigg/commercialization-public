@@ -625,10 +625,11 @@ When a PCS run has completed, PCS analyzes logs during **Cleanup** stage. A run 
 The following files are generated on PCS Controller during **Cleanup** stage.
 
 * PcsReport.htm: summary about the run.
-* ClusterName-PRE.mht.html/ClusterName-POST.mht.html: cluster validation test is run before and after PCS **Execute** stage to verify the cluster healthy.
+* ClusterName-PRE.mht.html: cluster validation test report that is run before **Execute** stage
+* ClusterName-POST.mht.html: cluster validation test report that is run after **Execute** stage
 * PcsLog-DateTime.zip: contains logs and is copied to the HLK Controller when test finished.
-  * MHTML: contains PCS SQL logs
-  * SDDCDiagnosticInfo: contains cluster logs and event logs
+  * MHTML folder: contains PCS SQL logs
+  * SDDCDiagnosticInfo folder: contains cluster logs and event logs
 
 The issues seen or resulting from a PCS certification run has been observed to not be related to PCS itself many times. Below contains a basic guide to help narrow down some of the issues.
 
@@ -659,7 +660,7 @@ C:\pcs\PCS-E2ELaunch.ps1 -DomainName <string> -UserName <string> -Password <stri
 * CollectLog: Required
 * CollectLogLevel: optional, default is 1. Enter 3 to collect verbose logs.
 
-### Generate PcsReport.htm manually
+### Generate PcsReport.htm file manually
 
 While PCS is running, you can run the following cmdlets on PCS controller to generate a HTML report that lists unexpected bugchecks from all nodes.
 
@@ -671,7 +672,7 @@ Get-PCSReport
 ### Enable or Disable a PCS action
 Each PCS job has its own xml files that define its actions. These XML files can be found on HLK Controller. Below is an example for **PrivateCloudSimulator - System.Solution.AzureStack** job
 
-C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\PCS\\System.Solutions.AzureStack\\PrivateCloudSimulator\_Create.xml
+C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\PCS\\**System.Solutions.AzureStack**\\PrivateCloudSimulator\_Create.xml
 
 ```xml
 <ConfigurableType Type="Microsoft.PrivateCloudSimulator.VM.Actions.HyperV.VmCloneAction, Microsoft.PrivateCloudSimulator.VM.Actions.HyperV">
@@ -686,7 +687,7 @@ C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\PCS\\
 * The **Interval** field sets the frequency with which the action runs. Use the format *hh:mm:ss*. For example, the value 02:00:00 repeats the action every 2 hours.
 * The **StartUpNumber** field defines the number of instances of that action to initiate on each node of the compute cluster. To disable an action, set this field to zero.
 * Don't modify other fields.
-* Each job could contain 3 xml files: PrivateCloudSimulator.xml, PrivateCloudSimulator\_Create.xml, PrivateCloudSimulator\_Storage.xml
+* Each job could contain up to 3 xml files: PrivateCloudSimulator.xml, PrivateCloudSimulator\_Create.xml, PrivateCloudSimulator\_Storage.xml
 
 ```xml
 <ConfigurableType Type="Microsoft.PrivateCloudSimulator.VM.Actions.HyperV.VmCloneBase, Microsoft.PrivateCloudSimulator.VM.Actions.HyperV">
@@ -775,11 +776,11 @@ For each failed action, the following information is collected from the reserved
 
 ## <span id="FAQ"></span><span id="faq"></span>FAQ
 
-***Do we need to install the HLK Client on cluster nodes?***
+### Do we need to install the HLK Client on cluster nodes?
 
 You need to install HLK Client on cluster nodes and on the PCS controller as well.
 
-***Boot disk of cluster node has very little free space due to a large pagefile***
+### Boot disk of cluster node has very little free space due to a large pagefile
 
 By default, Windows automatically manages paging file size and its location. Default location is C:\\pagefile.sys and file size could grow while test runs.
 
@@ -789,13 +790,13 @@ You can specify pagefile location and size by modifying the PagingFiles value. B
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v PagingFiles /t REG_MULTI_SZ /d "C:\pagefile.sys 51200 51200" /f
 ```
 
-***Windows does not save memory dump file after a crash***
+### Windows does not save memory dump file after a crash
 
 Make sure you initial pagefile size is greater than 50GB. A dump file wont get created if pagefile size is too small. Please see the link below for more information.
 
 <https://support.microsoft.com/en-us/help/130536/windows-does-not-save-memory-dump-file-after-a-crash>
 
-***What is the PCS support alias?***
+### What is the PCS support alias?
 
 Please send email to [pvsha@microsoft.com](mailto://pvsha@microsoft.com) for any queries related to PCS or WSSD, AzureStack hardware certification.
 
