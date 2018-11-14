@@ -75,7 +75,7 @@ Once the mode for testing is identified the following instructions will walk you
 
     For ARM64 Desktop client systems, there are two different install paths depending on the mode the client is being set up to test in. 
 
-    >[!NOTE]Because of the dual-mode nature of ARM64, a best practice is to use two (2) clients, one in native mode and one in emulated mode per the instructions below.
+    **NOTE** Because of the dual-mode nature of ARM64, a best practice is to use two (2) clients, one in native mode and one in emulated mode per the instructions below.
     
     **Native Mode:**
     
@@ -97,7 +97,7 @@ Once the mode for testing is identified the following instructions will walk you
 
 2.  The Windows Hardware Lab Kit Client Setup wizard appears. To start the wizard, choose **Next**.
 3.  On the Internet Connection Firewall Agreement page, select **Yes I will allow a port to be opened**, and then choose **Next**.
-    >[!NOTE] If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
+    **NOTE** If the Internet Connection Firewall Agreement page doesn't appear, either Windows Firewall isn't installed, or another software firewall or hardware firewall is installed on the computer. If another firewall is installed, you must manually open TCP port 1771 to proceed with installation. Refer to the instructions that came with your firewall product to manually open a TCP port. If you continue without opening port 1771, the installation may fail or the Client software might not function properly.
 
      
 
@@ -169,7 +169,7 @@ The **Tests** tab displays all of the tests that are associated with the feature
 -   Target
 -   Machine(s)
 
->[!NOTE] You can hover over the test type icons with your mouse for more information about the test types. Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests. Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
+**NOTE** You can hover over the test type icons with your mouse for more information about the test types. Manual tests that require user input can interrupt the test process. We recommend that you run manual tests separately from automated tests. Some tests require additional input before running. Windows HLK Studio prompts you for more info as needed.
 
 
  
