@@ -113,7 +113,7 @@ If you're adding a language to an online image, the process is the same, but use
     Dism /Image:"C:\mount\windows" Add-capability /capabilityname:Language.Fonts.Thai~~~und-THAI~0.0.1.0 /source:E:
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
-5.  **If you're adding a LIP language** Add your LIP language that uses the language that we just added (fr-FR) as a base language. Not all LIP languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+5.  **If you're adding a LIP language** Add your LIP language that uses the language that we just added (fr-FR) as a base language. Not all LIP languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/C/6/C/C6C91D1F-F96A-40FA-AF9D-E73FA4EAD344/Windows-10-1809-FOD-to-LP-Mapping-Table.xlsx)
 
     1. Add the LIP, which is on the language pack ISO in the LXP folder. This type of language pack is distributed as an .appx.
         

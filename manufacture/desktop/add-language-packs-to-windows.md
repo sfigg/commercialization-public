@@ -185,7 +185,7 @@ To add a language to an offline image, you'll need:
     Dism /Image:"C:\mount\windows" /Get-capabilities
     ```
 
-5.  **If you're adding a LXP/LIP language** Add your LXP/LIP language that uses the language that we just added (fr-FR) as a base language. Not all languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+5.  **If you're adding a LIP language** Add your LIP language that uses the language that we just added (fr-FR) as a base language. Not all languages have all language components. Luxembourgish (lb-LU), for example, only has basic and handwriting FODs. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/C/6/C/C6C91D1F-F96A-40FA-AF9D-E73FA4EAD344/Windows-10-1809-FOD-to-LP-Mapping-Table.xlsx)
 
     **For Windows 10, version 1809 and later:**
 
@@ -291,14 +291,14 @@ If you're removing a language from an online image, the process is the same, but
     Dism /Image:C:\test\offline /Get-Packages
     ```
 
-5. For LXPs or LIPs, remove them before removing the language components.
+5. For LIPs, remove them before removing the language components.
 
-    Remove an LXP:
+    Windows 10, version 1809 or later: 
     ```
     Dism /remove-provisionedappxpackage /packagename:Microsoft.LanguageExperiencePack<lang_version>_neutral__8wekyb3d8bbwe
     ```
 
-    Remove a LIP:
+    Windows 10, version 1803 or earlier:
     ```
     Dism /Image:C:\test\offline /Remove-Package /PackageName:<LIP name> 
     ```
