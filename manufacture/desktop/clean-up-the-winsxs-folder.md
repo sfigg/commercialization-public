@@ -75,7 +75,7 @@ The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more op
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
-    > [!WARNING]  
+    > [!WARNING]
     > All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
 
      

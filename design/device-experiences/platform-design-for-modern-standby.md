@@ -50,7 +50,7 @@ System designers who build modern connected standby-capable PCs are highly encou
 Here are some additional platform requirements for enabling modern standby on Windows 8 and higher:
 
 -   The system ACPI firmware must set the ACPI\_S0\_LOW\_POWER\_IDLE FADT flag to indicate the platform hardware supports the low-power idle mode for modern connected standby.
--   The system ACPI firmware must not provide an S3 object in the root of the namespace. Windows supports a platform exposing either the S3 object or the ACPI\_S0\_LOW\_POWER\_IDLE FADT flag, but not both at the same time.
+-   Windows supports a platform exposing either the S3 object or the ACPI\_S0\_LOW\_POWER\_IDLE FADT flag, but not both at the same time.
     **Note**  The FADT bit takes precedence over an S3 object.
 
      

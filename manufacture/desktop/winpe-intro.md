@@ -79,7 +79,7 @@ Windows PE does not support any of the following:
 -   Running 64-bit apps on the 32-bit version of Windows PE.
 -   Adding bundled app packages through DISM (.appxbundle packages).
 
-> [!tip] 
+> [!tip]
 > In general, use the latest version of WinPE to deploy Windows. If you are using customized WinPE for Windows 10 images, you may prefer to continue using your existing Windows PE image and run the latest version of DISM from a network location. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).
 
  

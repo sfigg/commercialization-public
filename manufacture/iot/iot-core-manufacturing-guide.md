@@ -147,3 +147,4 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 [IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)
 
+[IoT Core Image Wizard](iot-core-image-wizard.md)

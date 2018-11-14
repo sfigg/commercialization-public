@@ -39,6 +39,8 @@ The power settings are not visible in the Windows Configuration Designer UI but 
 
 * `Controls\Settings` which includes the following settings:
   * `LidNotificationsAreReliable`
+  * `EnableInputSuppression`
+  * `IgnoreCsComplianceCheck`
 
 The following example shows what your Windows provisioning answer file might look like after you've written it.
 
