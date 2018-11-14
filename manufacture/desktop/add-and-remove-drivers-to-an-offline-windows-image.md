@@ -55,7 +55,8 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 
     To see all DISM driver servicing command line options, see [DISM driver servicing command-line options](dism-driver-servicing-command-line-options-s14.md).
 
-    >[!Warning]Using `/Recurse` can be handy, but it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder. Each individual folder has a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
+    >[!Warning]
+    >Using `/Recurse` can be handy, but it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder. Each individual folder has a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
 
     To install an unsigned driver, use **/ForceUnsigned** to override the requirement that drivers installed on X64-based computers must have a digital signature.
 
@@ -116,7 +117,8 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 
 3.  For each path in `Microsoft-Windows-PnpCustomizationsNonWinPE`, specify the path to the device driver and the credentials that are used to access the file, if the file is on a network share.
 
-    >[!Note]When you include multiple device driver paths by adding multiple **PathAndCredentials** list items, you must increment the value of **Key** for each path. For example, you can add two separate driver paths where the value of **Key** for the first path is equal to **1** and the value of **Key** for the second path is equal to **2**.
+>[!Note]
+>When you include multiple device driver paths by adding multiple **PathAndCredentials** list items, you must increment the value of **Key** for each path. For example, you can add two separate driver paths where the value of **Key** for the first path is equal to **1** and the value of **Key** for the second path is equal to **2**.
 
 4.  Save the answer file and exit Windows SIM. The answer file must resemble the following sample.
 
