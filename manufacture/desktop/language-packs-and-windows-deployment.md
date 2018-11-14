@@ -52,7 +52,7 @@ Please note that not all components and Features on Demand are available for eve
 To learn more about adding language components to Windows, see [Add and remove languages](add-and-remove-language-packs-offline-using-dism.md).
 
 
-## <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Where to get language components
+## <span id="get_language_packs_and_lips"></span>Where to get language components
 
 [Available Languages for Windows](available-language-packs-for-windows.md) lists all of the supported language packs for multiple versions of Windows, as well as their identifier codes.
 

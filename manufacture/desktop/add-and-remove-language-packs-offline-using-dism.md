@@ -17,9 +17,9 @@ redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desk
 > [!note]
 > To add a language to your personal PC, go to **Settings** > **Time & Language** > **Language**, and choose a language to install. [Learn more](https://support.microsoft.com/en-us/help/4027670/windows-10-add-and-switch-input-and-display-language-preferences)
 
-Add languages and regional support to Windows 10 images. Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#language-interface-packs-lips), you add it after adding its base language.
+Add languages and regional support to Windows 10 images. Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#lips), you add it after adding its base language.
 
-In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md#span-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanlanguage-components-in-windows-10
+In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md
 ), including language packs (.cabs for fully localized languages, .appx for LIP languages), and [Features On Demand](features-on-demand-v2--capabilities.md). 
 
 You can save disk space by choosing not to include some language components in your image. While this reduction in image size can be helpful when creating images for lower-cost devices with small storage, it does lead to an incomplete language experience. When you add language components to a PC, also install the required dependencies. See [Languages](language-packs-and-windows-deployment.md) to learn more about language components and their dependencies.
