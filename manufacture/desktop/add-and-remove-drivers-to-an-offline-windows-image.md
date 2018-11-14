@@ -18,8 +18,8 @@ You can use DISM to install or remove driver (.inf) files in an offline Windows 
 
 When you use DISM to install a device driver to an offline image, the device driver is added to the driver store in the offline image. When the image is booted, Plug and Play (PnP) runs and associates the drivers in the store to the corresponding devices on the computer.
 
->[!Note]To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
-
+>[!Note]
+>To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
 To learn how to add a driver on a running Windows PC, see [Add a driver online in audit mode](add-a-driver-online-in-audit-mode.md) or [Install a plug and play device](http://go.microsoft.com/fwlink/?LinkId=139151). To learn how to add a driver to a PC running WinPE, see [Drvload command line options](drvload-command-line-options.md).
 
 ## Driver types
@@ -89,7 +89,8 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
     Dism /Image:C:\test\offline /Remove-Driver /Driver:OEM1.inf /Driver:OEM2.inf
     ```
 
-    >[!Warning]Removing a boot-critical driver package can make the offline Windows image unbootable. For more information, see [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md).
+>[!Warning]
+>Removing a boot-critical driver package can make the offline Windows image unbootable. For more information, see [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md).
      
 
 3.  Commit the changes and unmount the image.
@@ -102,7 +103,8 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 
 1.  Gather the device driver .inf files that you intend to install on the Windows image.
 
-    >[!Note]All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
+>[!Note]
+>All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
 
 2.  Use Windows System Image Manager (Windows SIM) to create an answer file that contains the paths to the device drivers that you want to install.
 
