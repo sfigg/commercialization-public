@@ -83,7 +83,7 @@ The following table shows the types of language packages and components availabl
 <td align="left">Fonts</td>
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
-<td align="left"><a href="features-on-demand-language-fod.md#Fonts">Fonts required for some regions</a>. Example, th-TH requires the Thai font pack.</td>
+<td align="left"><a href="features-on-demand-language-fod.md#fonts">Fonts required for some regions</a>. Example, th-TH requires the Thai font pack.</td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
