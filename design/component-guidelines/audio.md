@@ -36,7 +36,7 @@ Although Multi-streaming is no longer a requirement for the Windows 10 Desktop e
 
 Once the audio solution meets both minimum hardware requirements and Windows Compatibility Program requirements, the audio solution will provide basic audio experiences in Windows. Depending on the targeted market segment, a device may support two additional optimizations: Speech Platform and Skype. Recommendations for both Speech Platform and Skype build upon the requirements for a basic audio experience. It would be a challenge to optimize for Speech Platform or Skype if the audio solution does not fully meet the basic requirements.
 
->[!NOTE] Guidelines for Telephony and applications such as Skype will be supplemented to this topic when they are available.
+>[!NOTE]Guidelines for Telephony and applications such as Skype will be supplemented to this topic when they are available.
 
  
 
