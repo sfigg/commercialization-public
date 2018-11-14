@@ -5,7 +5,7 @@ ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Available Language Packs for Windows
 ms.author: kenpacq
-ms.date: 11/13/2017
+ms.date: 11/13/2018
 ms.topic: article
 
 
