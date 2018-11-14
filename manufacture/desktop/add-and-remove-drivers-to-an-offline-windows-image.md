@@ -57,7 +57,7 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
     To see all DISM driver servicing command line options, see [DISM driver servicing command-line options](dism-driver-servicing-command-line-options-s14.md).
 
 >[!Warning]
-> Using `/Recurse` can be handy, but it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder. Each individual folder has a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
+>Using `/Recurse` can be handy, but it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder. Each individual folder has a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
 
     To install an unsigned driver, use **/ForceUnsigned** to override the requirement that drivers installed on X64-based computers must have a digital signature.
 
@@ -105,8 +105,8 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 
 1.  Gather the device driver .inf files that you intend to install on the Windows image.
 
->[!note]  
-    > All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
+>[!Note]  
+>All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
 
 2.  Use Windows System Image Manager (Windows SIM) to create an answer file that contains the paths to the device drivers that you want to install.
 
