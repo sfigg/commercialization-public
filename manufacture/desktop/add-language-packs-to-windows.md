@@ -26,6 +26,7 @@ OEMs can add language packs to localize Windows 10 and Windows Server images for
   - For previous Windows versions, language experience packs are .cab files, example, Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab.
 
 * **[Recovery language packs](customize-windows-re.md)** so users can troubleshoot and recover their devices using their preferred language. 
+
 ## Applies to
 
 Windows 10 (all editions except for Windows 10 Home Single Language Windows 10 Home Country Specific (CN)) and Windows Server
