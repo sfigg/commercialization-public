@@ -1,10 +1,6 @@
 ---
 title: Private Cloud Simulator for Windows Server 2016
 description: Private Cloud Simulator for Windows Server 2016
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 00E91053-CCA7-4E39-83A8-552EB47C3F5C
 author: dawn.wood
 ms.author: dawnwood
 ms.date: 11/13/2018
@@ -189,7 +185,7 @@ Each PCS job contains the following tasks.
 
 ## <span id="Execute_PCS_Tests"></span><span id="execute_pcs_tests"></span><span id="EXECUTE_PCS_TESTS"></span>Execute PCS Tests
 
-### <span id="PrivateCloudSimulator_-_Device.Network.LAN.10GbOrGreater"></span><span id="privatecloudsimulator_-_device.network.lan.10gborgreater"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.10GBORGREATER"></span>PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
+## <span id="PrivateCloudSimulator_-_Device.Network.LAN.10GbOrGreater"></span><span id="privatecloudsimulator_-_device.network.lan.10gborgreater"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.10GBORGREATER"></span>PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
 
 #### System Requirements
 
@@ -269,7 +265,7 @@ The table below lists the actions that are included in this test.
 | VmStartWorkloadAction       | Starts a user-simulated workload. |
 | VmGuestFullPowerCycleAction | Power-cycles the VM. |
 
-### <span id="PrivateCloudSimulator_-_Device.Network.LAN.AzureStack"></span><span id="privatecloudsimulator_-_device.network.lan.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.AZURESTACK"></span>PrivateCloudSimulator - Device.Network.LAN.AzureStack
+## <span id="PrivateCloudSimulator_-_Device.Network.LAN.AzureStack"></span><span id="privatecloudsimulator_-_device.network.lan.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.AZURESTACK"></span>PrivateCloudSimulator - Device.Network.LAN.AzureStack
 
 #### System Requirements
 
@@ -336,11 +332,11 @@ The table below lists the actions that are included in this test.
     * UserName: Test user's user name
     * Password: Test user's password
     * ComputeCluster: compute cluster name
-    * StorageCluster: Use default value
+    * StorageCluster: Use default value ''
     * StoragePath: Default value is ''. It uses all the available CSVs from compute cluster. You can use different paths by entering comma separated paths. Example: **"C:\\ClusterStorage\\Volume1,C:\\ClusterStorage\\Volume2"**
     * VmSwitchName: Name of virtual switch to be used for SDN. Example: SdnSwitch
     * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive tter on PCS controller. Make sure this drive letter is available.
-    * AdapterNames: Comma seperated list of adapter names that are part of the vmSwitch. Use the format **"'Name 1', 'Name 2'"** (single quote and double quote are needed) for multiple adapters. Names must be derived from Get-NetAdapter cmdlet.
+    * AdapterNames: Comma seperated list of adapter names that are part of the vmSwitch. Use the format **"'Name 1', 'Name 2'"** (double quotes and single quotes are needed) for multiple adapters. Names must be derived from Get-NetAdapter cmdlet.
     * VLan: Vlan ID set on vmSwitch. Only required if your physical switch is configured for Vlan. Enter '0' to indicate that there is no Vlan tagging.
     * AddressPrefixes: The IP address range to be used by Tenant VMs and Hosts. These addresses will be used for SDN datacenter management.
     * ClientAddressPrefix: The IP address range used by Client VMs.
@@ -352,8 +348,8 @@ The table below lists the actions that are included in this test.
     * IsCreateCluster: Use default value
     * IsRemoveCluster: Use default value
     * VHDSourcePath: a VHDX file for Windows Server 2016 DataCenter. This VHDX file will be used to create Network Controller VMs. Default value is **c:\pcs\BaseVHDX\14393.0.amd64fre.rs1_release.160715-1616_server_serverdatacentereval_en-us.vhdx**. DON’T change the default value unless you have to use your own VHDX file. Cloned vhdx files have the same disk signatures. To avoid disk signature collision, this VHDX file cannot be the same as the one used by PCS controller.
-    * KBPackagePath: Comma seperated list of Windows Update Packages that should be applied to the VHDX file that specified in parameter VHDSourcePath. Example:
-      * Two update packages KB4132216 and KB4346877 are downloaded from Windows Update site and copy them to c:\KB\Windows10.0-KB4132216-x64.msu and c:\kb\Windows10.0-KB4346877-x64.msu on the PCS controller machine.
+    * KBPackagePath: Comma seperated list of Windows Update Packages that should be applied to the VHDX file that specified in parameter VHDSourcePath. These update packages should match the ones installed on cluster nodes. Example:
+      * Two update packages KB4132216 and KB4346877 (replace this KB to a recent or the latest KB) are downloaded from Windows Update site and copy them to c:\KB\Windows10.0-KB4132216-x64.msu and c:\kb\Windows10.0-KB4346877-x64.msu on the PCS controller machine.
       * Enter **'c:\KB\Windows10.0-KB4132216-x64.msu,c:\kb\Windows10.0-KB4346877-x64.msu'** (single quote is required, KB4132216 must be listed/installed before installing the latest cumulative update)
   * Map machines to roles
     * PrimaryNode: This is the node with the selected device, automatically selected by HLK.

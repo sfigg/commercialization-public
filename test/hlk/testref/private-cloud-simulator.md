@@ -183,7 +183,7 @@ Each PCS job contains the following tasks.
 
 ## <span id="Execute_PCS_Tests"></span><span id="execute_pcs_tests"></span><span id="EXECUTE_PCS_TESTS"></span>Execute PCS Tests
 
-### <span id="PrivateCloudSimulator_-_Device.Network.LAN.10GbOrGreater"></span><span id="privatecloudsimulator_-_device.network.lan.10gborgreater"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.10GBORGREATER"></span>PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
+## <span id="PrivateCloudSimulator_-_Device.Network.LAN.10GbOrGreater"></span><span id="privatecloudsimulator_-_device.network.lan.10gborgreater"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.10GBORGREATER"></span>PrivateCloudSimulator - Device.Network.LAN.10GbOrGreater
 
 #### System Requirements
 
@@ -263,7 +263,7 @@ The table below lists the actions that are included in this test.
 | VmStartWorkloadAction       | Starts a user-simulated workload. |
 | VmGuestFullPowerCycleAction | Power-cycles the VM. |
 
-### <span id="PrivateCloudSimulator_-_Device.Network.LAN.AzureStack"></span><span id="privatecloudsimulator_-_device.network.lan.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.AZURESTACK"></span>PrivateCloudSimulator - Device.Network.LAN.AzureStack
+## <span id="PrivateCloudSimulator_-_Device.Network.LAN.AzureStack"></span><span id="privatecloudsimulator_-_device.network.lan.azurestack"></span><span id="PRIVATECLOUDSIMULATOR_-_DEVICE.NETWORK.LAN.AZURESTACK"></span>PrivateCloudSimulator - Device.Network.LAN.AzureStack
 
 #### System Requirements
 
@@ -330,19 +330,18 @@ The table below lists the actions that are included in this test.
     * UserName: Test user's user name
     * Password: Test user's password
     * ComputeCluster: compute cluster name
-    * StorageCluster: Use default value
     * StoragePath: Default value is ''. It uses all the available CSVs from compute cluster. You can use different paths by entering comma separated paths. Volume Names shouldn’t contain empty spaces. Example: **'C:\ClusterStorage\Volume1,C:\ClusterStorage\Volume2'** (single quotes are needed)
     * VmSwitchName: Name of virtual switch to be used for SDN. Example: SdnSwitch
     * FreeDriveLetter: Default value is **R**. During setup, PcsFiles.vhd file is mounted to this drive tter on PCS controller. Make sure this drive letter is available.
-    * AdapterNames: Comma seperated list of adapter names that are part of the vmSwitch. Use the format **"'Name 1', 'Name 2'"** (double quote and single quote are needed) for multiple adapters. Names must be derived from Get-NetAdapter cmdlet.
-    * VLan: Vlan ID set on vmSwitch. Only required if your physical switch is configured for Vlan. Enter '0' to indicate that there is no Vlan tagging.    
+    * AdapterNames: Comma seperated list of adapter names that are part of the vmSwitch. Use the format **"'Name 1', 'Name 2'"** (double quotes and single quotes are needed) for multiple adapters. Names must be derived from Get-NetAdapter cmdlet.
+    * VLan: Vlan ID set on vmSwitch. Only required if your physical switch is configured for Vlan. Enter '0' to indicate that there is no Vlan tagging.
     * RDMAEnabled: Enter $True if NIC supports RDMA
     * SetEnabled: Enter $True if NIC supports Switch Embedded Teaming
     * HnvEnabled: Enter $True if NIC supports Hyper-V Network Virtualization
     * TaskOffloadEnabled: Enter $True if NIC supports Encapsulate Task Offload
     * TestControllerNetAdapterName: Adapter name on PCS Controller that can be assigned a static IP in the **AddressPrefixes** range to communicate with SDN Network Controller virtual machines. Example: **'Ethernet 2'** (single quotes are needed if there are spaces in the name)    
     * VHDSourcePath: a VHDX file for Windows Server 2019 DataCenter. This VHDX file will be used to create Network Controller VMs. Default value is **c:\pcs\BaseVHDX\17763.1.amd64fre.rs5_release.180914-1434_server_serverdatacentereval_en-us.vhdx**. DON’T change the default value unless you have to use your own VHDX file. Cloned vhdx files have the same disk signatures. To avoid disk signature collision, this VHDX file cannot be the same as the one used by PCS controller.
-    * KBPackagePath: Comma seperated list of Windows Update Packages that should be applied to the VHDX file that specified in parameter VHDSourcePath. Default value is '' (single quotes are needed). It means no KB would be injected into VHDX file. Below is an example to apply windows update package(s):
+    * KBPackagePath: Comma seperated list of Windows Update Packages that should be applied to the VHDX file that specified in parameter VHDSourcePath. Default value is '' (single quotes are needed). It means no KB would be injected into VHDX file. In the example below, two KBs would be applied to VHDX file. These KBs should match the ones installed on cluster nodes.
       * Two update packages KBExample1 and KBExample2 are downloaded from Windows Update site and copy them to c:\KB\KBExample1.msu and c:\kb\KBExample1.msu on the PCS controller machine.
       * Enter **'c:\KB\KBExample1.msu,c:\kb\KBExample2.msu'** (single quote is required, KBExample1 is installed before KBExample2.)
     * AddressPrefixes: The IP address range to be used by Tenant VMs and Hosts. These addresses will be used for SDN datacenter management.
