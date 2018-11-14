@@ -42,7 +42,8 @@ You can specify which configuration pass to add new settings:
 
 -   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-**Note** These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
+> [!Note]
+> These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
@@ -130,7 +131,7 @@ See the [Unattended Windows Setup Reference](https://docs.microsoft.com/en-us/wi
 -   Save the answer file, for example: **D:\\AnswerFiles\\BootToAudit-x64.xml**.
 
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
-     
+     
 **Step 5: Create a script**
 
 Since we specified a script to run in Step 3, let's create that script now.

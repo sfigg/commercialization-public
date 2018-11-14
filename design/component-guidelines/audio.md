@@ -37,9 +37,9 @@ Although Multi-streaming is no longer a requirement for the Windows 10 Desktop e
 Once the audio solution meets both minimum hardware requirements and Windows Compatibility Program requirements, the audio solution will provide basic audio experiences in Windows. Depending on the targeted market segment, a device may support two additional optimizations: Speech Platform and Skype. Recommendations for both Speech Platform and Skype build upon the requirements for a basic audio experience. It would be a challenge to optimize for Speech Platform or Skype if the audio solution does not fully meet the basic requirements.
 
 >[!NOTE]
->Guidelines for Telephony and applications such as Skype will be supplemented to this topic when they are available.
+> Guidelines for Telephony and applications such as Skype will be supplemented to this topic when they are available.
 
- 
+ 
 
 ![audio recommendations](../images/audiorecommendationsv2.png)
 
@@ -76,7 +76,7 @@ The following sections cover recommendations for speech. To ensure a high qualit
 | Device.Audio                         | Provides guidelines in order to function optimally with the host OS in terms of software interfaces, communication protocols, and data formats. | All devices should be tested against these guidelines.                             |
 | Device.Audio.Acoustics     | Provides recommendations and best practices for acoustics and related properties of device design.                                              | Most relevant for devices that will use Microsoft’s speech enhancement processing. |
 
- 
+ 
 
 ### Device.SpeechRecognition
 
@@ -88,7 +88,7 @@ The following table summarizes Microsoft recommendations for target speech recog
 | Device.SpeechRecognition.AmbientNoise | Various levels and types of noisy environments, e.g. [Café & Pub](http://go.microsoft.com/fwlink/p/?linkid=528451). | Ambient Noise @ DUT &gt;= 57 dBA SPL | Premium: 90% Standard: 85% |
 | Device.SpeechRecognition.EchoNoise    | Various levels and types of render playback scenarios (e.g. media playing).                                         | Echo Noise @ LRP &gt;= 70 dBA SPL    | Premium: 90% Standard: 85% |
 
- 
+ 
 
 The microphone gain setting should be set to an optimal level used to pass the above tests. The resulting gain setting can then be set in a registry key as follows:
 
@@ -112,7 +112,7 @@ Recommendations in this section are made regarding the software and hardware int
 | Device.Audio.USB.USB                     | All USB audio input devices must properly set descriptor according to the [USB.org device class spec](http://www.usb.org/developers/docs/devclass_docs/).                                                                                                                                                                |
 | Driver Guidelines                        | [Roadmap for developing WDM Audio Drivers](http://www.microsoft.com/whdc/device/audio/wavertport.mspx)                                                                                                                                                                                                                   |
 
- 
+ 
 
 ### Device.Audio.Acoustics
 
@@ -138,7 +138,7 @@ For more details about all of these recommendations, including recommended mic a
 | Device.Audio.Acoustics.RenderDistortion         | The distortion is recommended to be measured using SDNR (pulsed noise signal-to-distortion-and-noise ratio), although THD targets are also given.                                                                                                                                                                                                                                                                                                                                                                    |
 | Device.Audio.Acoustics.RenderPlacement          | To enable the acoustic echo canceller to work well, the device speakers should be placed at a maximum distance from the microphones, or place directivity nulls towards loudspeakers.                                                                                                                                                                                                                                                                                                                                |
 
- 
+ 
 
 ## Requirements to enable a third-party enhancement pipeline
 

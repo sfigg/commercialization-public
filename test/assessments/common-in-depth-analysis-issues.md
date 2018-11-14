@@ -72,8 +72,8 @@ Most of the issues that appear in the details pane in the Windows Assessment Con
         -   Impact of each thread of the process, including the duration of the delay
         -   Call stacks for each thread that causes the delay or is affected by it
 
->[!NOTE]
->The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
+            > [!NOTE]
+            > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
 ## Managed Code
@@ -107,8 +107,8 @@ Process *&lt;X&gt;* uses the CPU for 5.3 seconds during Fast startup resume post
 
 In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to determine which function of the process needs further investigation. Excessive processor use can occur in more than one thread at a time. For each thread that's involved, view the function call stacks in WPA.
 
->[!NOTE]
->The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
+> [!NOTE] 
+> The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
 ## Storage Use
@@ -291,13 +291,13 @@ Issues are reported if and only if the impact they describe is greater than the 
 <td><strong>Type 1:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has issues that exceed the analysis threshold.</p></td>
 <td><strong>Issue example</strong>
-<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2 seconds. The assessment identified other issues that impact this activity. These other issues fully account for this activity&#39;s time.</p></td>
+<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2 seconds. The assessment identified other issues that impact this activity. These other issues fully account for this activity's time.</p></td>
 </tr>
 <tr>
 <td><strong>Type 2:</strong>
 <p>The activity duration exceeds the activity duration threshold. The activity also has a mixed set of issues—some that are greater than the analysis threshold and others that are less than the analysis threshold.</p></td>
 <td><strong>Issue example</strong>
-<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues account for 5.9 seconds of this activity&#39;s time. The remaining 500 milliseconds consist of issues that do not exceed the minimum analysis threshold of 150 milliseconds.</p></td>
+<p>Summary: Fast startup shutdown process Example.exe takes 6.5 seconds, and exceeds the threshold of 2.0 seconds. The assessment identified other issues that impact this activity. These other issues account for 5.9 seconds of this activity's time. The remaining 500 milliseconds consist of issues that do not exceed the minimum analysis threshold of 150 milliseconds.</p></td>
 </tr>
 <tr>
 <td><strong>Type 3:</strong>
@@ -345,8 +345,8 @@ Critical symbols missing: Ensure that the machine has access to the Microsoft pu
 
 Symbols of non-Microsoft components missing: These missing symbols could be for your own components, or for those owned by a different partner. Collaborate with your partners to obtain these third-party symbols for the component that is missing symbols, and configure the correct symbols path on the computer before re-running the assessment.
 
->[!NOTE]
->For more information about setting the correct symbols path, see [Troubleshooting Windows Assessment Services](http://go.microsoft.com/fwlink/?LinkId=246155).
+> [!NOTE]
+> For more information about setting the correct symbols path, see [Troubleshooting Windows Assessment Services](http://go.microsoft.com/fwlink/?LinkId=246155).
 
 Sharing components’ symbols across partners in the ecosystem ensures better collaboration through a reliable and efficient bug triage and analysis process. We recommend that partners define these collaborative relationships, which will ensure that you have the resources you need to find the root cause of the issues reported on your system component.
 
@@ -405,8 +405,8 @@ The Issue Details list each thread preempted by the ISR/DPC. The list is roughly
 
 DPC exceeds the threshold of 1.0 milliseconds 5 times during Media engine lifetime. The 5 instances of this DPC run for a combined total of 3.7 seconds
 
->[!NOTE]
->The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
+> [!NOTE]
+> The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
 ## Summary Issues
@@ -423,8 +423,8 @@ The issue’s details in WPA contain file image information, and recommendations
 
 Summary: Fast startup overall resume issues 275MB of reads and writes, and flushes 82 times to storage
 
->[!NOTE]
->When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
+> [!NOTE]
+> When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
 
 **Processor use summary**
 
@@ -436,8 +436,8 @@ The summary issue provides details per process in descending order of impact. Fo
 
 Summary: Processes use 26.9 seconds of CPU time during Fast startup overall resume
 
->[!NOTE]
->When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
+> [!NOTE]
+> When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
 
 **Processor and disk contention summary**
 
@@ -461,8 +461,8 @@ To get the full benefits of summary issues, you can group the list of issues in 
 
 -   **Test case**. In this view, the Summary Issue is grouped together with the subset of issues that apply to a particular activity or test case.
 
->[!WARNING]
->The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
+> [!WARNING]
+> The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
 ## Assessment Logging

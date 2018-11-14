@@ -23,10 +23,10 @@ You can also reduce the size of a Windows image using some of the same technique
 
 To learn about finding the size of your WinSxS folder, see [Determine the actual size of the WinSxS folder](determine-the-actual-size-of-the-winsxs-folder.md).
 
->[!WARNING]
->Deleting files from the WinSxS folder or deleting the entire WinSxS folder may severely damage your system so that your PC might not boot and make it impossible to update.
+> [!WARNING]
+> Deleting files from the WinSxS folder or deleting the entire WinSxS folder may severely damage your system so that your PC might not boot and make it impossible to update.
 
- 
+ 
 In Windows 10 and Windows Server 2016, you have a number of ways to start the cleanup of the component store, which use a combination of package deletion and component compression to clean up the WinSxS folder:
 
 
@@ -48,8 +48,8 @@ If you choose to run this task, the task will have a 1 hour timeout and may not 
     ```
     schtasks.exe /Run /TN "\Microsoft\Windows\Servicing\StartComponentCleanup"
     ```
->[!NOTE]
->The StartComponentCleanup task can also be started from the command line.
+    > [!NOTE]
+    > The StartComponentCleanup task can also be started from the command line.
 
 ## <span id="dism.exe"></span><span id="DISM.EXE"></span>Dism.exe
 
@@ -75,10 +75,10 @@ The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more op
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
->[!WARNING]
->All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
+    > [!WARNING]
+    > All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
 
-     
+     
 
 **Use the /SPSuperseded parameter**
 
@@ -93,7 +93,7 @@ The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more op
     **Warning**  
     The service pack cannot be uninstalled after this command is completed.
 
-     
+     
 
 ## <span id="Disk_Cleanup"></span><span id="disk_cleanup"></span><span id="DISK_CLEANUP"></span>Disk Cleanup
 
@@ -119,9 +119,9 @@ You can use Disk Cleanup to reduce the number of unnecessary files on your drive
 
 [How to address disk space issues that are caused by a large Windows component store (WinSxS) directory](http://support.microsoft.com/kb/2795190)
 
- 
+ 
 
- 
+ 
 
 
 

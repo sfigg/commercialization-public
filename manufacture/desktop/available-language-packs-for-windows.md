@@ -5,7 +5,7 @@ ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Available Language Packs for Windows
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/13/2018
 ms.topic: article
 
 
@@ -18,7 +18,9 @@ The following tables show the supported language packs for Windows 10 and Window
 
 Windows Server and Windows 10 language packs are not interchangeable. Windows Server language packs cannot be used on Windows 10, and Windows 10 language packs cannot be used on Windows Server.
 
-The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
+The version of the LIP must match the version of Windows. For example, you can't add a Windows 10, version 1809 LIP to a Windows 10, version 1803 image, or a Windows 10, version 1803 LIP to a Windows 10, version 1809 image.
+
+You cannot apply languages to Windows 10 Home Single Language and Windows 10 Home Country Specific editions.
 
 To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#get_language_packs_and_lips).
 
@@ -36,7 +38,7 @@ The following tables include these settings:
 - **Language/region ID**- The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
 - **Language/region decimal identifier**- The decimal representation of the language identifier. This setting is used in Oobe.xml.
 
-### Language Packs
+## Language Packs
 
 | Language/region | Language/region tag | Language/region ID | Language/region decimal ID | 
 |---|---|---|---|
@@ -82,12 +84,12 @@ The following tables include these settings:
 | Ukrainian (Ukraine) | uk-UA | 0x0422 | 1058 |
 
 
-### Language interface packs (LIPs)
+## <span id="lips"></span>Language interface packs (LIPs)
 
-Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LXPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LIPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
 > [!Note]
-> Language interface packs are distributed as .appx files as of Windows 10, version 1809. To learn how to add an LIP .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
+> As of Windows 10, version 1809, LIPs are are distributed as .appx files. To learn how to add an .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
 
 | Language/region | Language/region tag | Base language/region | Language/region ID | Language/region decimal ID |
 |---|---|---|---|---|
@@ -167,10 +169,9 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 | Wolof | wo-SN | Primary: fr-FR <p>Secondary: en-GB, en-US</p> | 0x0488 | 1160 |
 | Yoruba (Nigeria) | yo-NG | Primary: en-US <p>Secondary: en-GB</p> | 0x046a | 1130 |
 
- 
+ 
 
 ## Related topics
-
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 
@@ -178,7 +179,7 @@ Except where noted, the following LIPs are available for Windows 10. For Windows
 
 [Default Input Locales for Windows Language Packs](default-input-locales-for-windows-language-packs.md)
 
- 
+ 
 
 
 

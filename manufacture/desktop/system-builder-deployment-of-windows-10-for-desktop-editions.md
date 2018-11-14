@@ -273,9 +273,9 @@ This property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during gene
 
 #### Add languages
 
-Get the Windows 10 Languages from the [Microsoft OEM site](http://microsoftoem.com) or [Device Partner Center](https://devicepartner.microsoft.com/en-US/). The LP ISO includes both .cabs and .appx [Language Experience Packs (LXPs, formerly Language Interface Packs or LIPs)]](add-language-interface-packs-to-windows.md). 
+Get the Windows 10 Languages from the [Microsoft OEM site](http://microsoftoem.com) or [Device Partner Center](https://devicepartner.microsoft.com/en-US/). The LP ISO includes both .cabs and .appx Language Interface Packs.
 
-To add languages, see [Add languages to Windows](add-and-remove-language-packs-offline-using-dism.md).
+To add languages, see [Add languages to Windows](add-language-packs-to-windows.md).
 
 **Important: language and LIP Versions must match other Windows component versions, for both the image and the ADK.**
 

@@ -5,7 +5,7 @@ ms.assetid: 2ed4a22d-8cd1-49b8-8141-06ebbf26b24d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure International Settings in Windows
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/07/2018
 ms.topic: article
 
 
@@ -24,7 +24,6 @@ In addition, Deployment Imaging Servicing and Management (DISM) should also only
 
 ## Prepare keyboards, time zones, and other regional settings
 
-
 You can specify the default keyboard layout, language, or locale, either during deployment or after Windows is installed.
 
 -   [Configure International Settings in Windows](configure-international-settings-in-windows.md)
@@ -32,27 +31,23 @@ You can specify the default keyboard layout, language, or locale, either during 
 -   [Default Time Zones](default-time-zones.md): Lists the default time zone used for each region.
 -   [Keyboard identifiers for Windows](windows-language-pack-default-values.md): Lists the keyboard hexadecimal values used when configuring input profiles.
 
-
 ## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using Windows PowerShell
 
-
-In Windows 10, you can use the International Settings Windows PowerShell cmdlets to change the language on a running Windows installation. 
+In Windows 10, you can use the [International Settings PowerShell cmdlets](https://docs.microsoft.com/powershell/module/internationalcmdlets/?view=winserver2012-ps) to change the language on a running Windows installation. 
 
 1.  Open a Windows PowerShell prompt.
 
-3.  Display the locale information on the computer by running the following command:
+2.  Display the locale information:
 
-    ```
+    ```powershell
     Get-WinSystemLocale
     ```
 
-    Set the locale for the region and language that you want. For example, the following command sets the system locale to Japanese (Japan):
+ 3. Set the locale for the region and language, for example, to Japanese:
 
-    ```
+    ```powershell
     Set-WinSystemLocale ja-JP
     ```
-
-    For a full description of these cmdlets, see [Get-WinSystemLocale](http://go.microsoft.com/fwlink/p/?linkid=242247) and [Set-WinSystemLocale](http://go.microsoft.com/fwlink/p/?linkid=242254). For more information about using International PowerShell cmdlets, see [International Settings Cmdlets](http://go.microsoft.com/fwlink/p/?linkid=238265).
 
 ## <span id="ControlPanel"></span><span id="controlpanel"></span><span id="CONTROLPANEL"></span>Configure international settings by using Control Panel
 
@@ -95,7 +90,7 @@ You can use Deployment Imaging Servicing and Management (DISM) to change the int
     Dism /image:C:\mount\windows /Get-Intl
     ```
 
-3.  Change the default language, locale, and other international settings by using the **/set-allInlt** parameter.
+3.  Change the default language, locale, and other international settings by using the **/set-allIntl** parameter.
 
     ```
     Dism /image:C:\mount\windows /set-allIntl:fr-fr

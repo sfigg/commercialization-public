@@ -187,6 +187,9 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+**November 2018**
+
+- Preview release of the [IoT Core Image Wizard](iot/iot-core-image-wizard.md). This GUI tool helps you create a new workspace and image for your device.
 
 **January 9, 2017**
 
