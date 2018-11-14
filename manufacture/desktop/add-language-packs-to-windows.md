@@ -5,7 +5,7 @@ ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Packs to Windows
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/13/2018
 ms.topic: article
 
 ---
@@ -21,11 +21,14 @@ OEMs can add language packs to localize Windows 10 and Windows Server images for
 
 * **Language components**: For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), some language components, like language-specific fonts, optical character recognition, and handwriting recognition, are provided as [Features On Demand](features-on-demand-v2--capabilities.md). You can save disk space by choosing not to include some language components in your image. While this reduction in image size can be helpful when creating images for lower-cost devices with small storage, it does lead to an incomplete language experience.
 
-* **Language experience packs (LXP) / Language interface packs (LIP)**: These are language packs require a base language. They don't include all of the language resources by themselves. For parts of the UI that are not translated into the LXP language, the Windows displays the UI with the parent language. 
-  - As of Windows 10, version 1809, these languages are distributed as .appx files. See the [available Language experience packs](available-language-packs-for-windows.md#lxps). Sample .appx name: `LanguageExperiencePack.am-et.neutral.appx`. 
+* **Language interface packs (LIP)**: These are language packs require a base language. They don't include all of the language resources by themselves. For parts of the UI that are not translated into the LIP language, the Windows displays the UI with the parent language. 
+  - As of Windows 10, version 1809, these languages are distributed as .appx files. See the [available Language interface packs](available-language-packs-for-windows.md#lips). Sample .appx name: `LanguageExperiencePack.am-et.neutral.appx`. 
   - For previous Windows versions, language experience packs are .cab files, example, Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab.
 
 * **[Recovery language packs](customize-windows-re.md)** so users can troubleshoot and recover their devices using their preferred language. 
+## Applies to
+
+Windows 10 (all editions except for Windows 10 Home Single Language Windows 10 Home Country Specific (CN)) and Windows Server
 
 ## Considerations
 
@@ -46,7 +49,7 @@ The language-pack removal task does not remove LIPs.
 ## Get languages and components
 
 -   **OEMs and System Builders** with Microsoft Software License Terms can download the Language Pack ISO and Feature on Demand ISO from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [Device Partner Center](https://devicepartner.microsoft.com/). 
-    - For Windows 10, version 1809, Language Experience Pack .appx files and their associated license files are in the LocalExperiencePack folder on the Language Pack ISO.
+    - For Windows 10, version 1809, LIP .appx files and their associated license files are in the LocalExperiencePack folder on the Language Pack ISO.
     - For previous versions of Windows, Language Interface Packs are available as a separate download.
     - WinRE language packs are distributed on the Language Pack ISO. Don't use the WinPE language packs that ship with the ADK.
 

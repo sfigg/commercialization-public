@@ -82,12 +82,12 @@ The following tables include these settings:
 | Ukrainian (Ukraine) | uk-UA | 0x0422 | 1058 |
 
 
-## <span id="lxps"></span>Language experience packs (LXPs, formerly Language Interface Packs/LIPs)
+## <span id="lips"></span>Language interface packs (LIPs)
 
-Except where noted, the following LXPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LXPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LIPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
 > [!Note]
-> Language experience packs are distributed as .appx files as of Windows 10, version 1809. To learn how to add an LXP .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
+> As of Windows 10, version 1809, LIPs are are distributed as .appx files. To learn how to add an .appx, see [Add languages to Windows](add-language-packs-to-windows.md).
 
 | Language/region | Language/region tag | Base language/region | Language/region ID | Language/region decimal ID |
 |---|---|---|---|---|
