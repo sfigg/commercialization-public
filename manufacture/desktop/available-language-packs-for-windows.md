@@ -5,7 +5,7 @@ ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Available Language Packs for Windows
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/13/2017
 ms.topic: article
 
 
@@ -18,7 +18,9 @@ The following tables show the supported language packs for Windows 10 and Window
 
 Windows Server and Windows 10 language packs are not interchangeable. Windows Server language packs cannot be used on Windows 10, and Windows 10 language packs cannot be used on Windows Server.
 
-The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
+The version of the LIP must match the version of Windows. For example, you can't add a Windows 10, version 1809 LIP to a Windows 10, version 1803 image, or a Windows 10, version 1803 LIP to a Windows 10, version 1809 image.
+
+You cannot apply languages to Windows 10 Home Single Language and Windows 10 Home Country Specific editions.
 
 To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#get_language_packs_and_lips).
 

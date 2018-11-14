@@ -4,7 +4,7 @@ Description: Learn how to localize a Windows installation
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Localize
 ms.author: kenpacq
-ms.date: 05/16/2018
+ms.date: 11/13/2018
 ms.topic: article
 
 
