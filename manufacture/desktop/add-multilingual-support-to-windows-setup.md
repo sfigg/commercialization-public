@@ -1,6 +1,6 @@
 ---
 author: kpacquer
-Description: Add Multilingual Support to Windows Setup
+Description: Add languages to Windows Setup
 ms.assetid: 242b963c-79fc-450b-90d7-c736965797b7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Multilingual Support to Windows Setup
@@ -10,18 +10,18 @@ ms.topic: article
 
 ---
 
-# Add multilingual support to Windows Setup
+# Add languages to Windows Setup
 
 To support multiple languages with Windows Setup:
 
-* Add languages to the Windows Setup image (boot.wim index:2) to help technicians or users who are installing Windows.
-* Add languages to the Windows image (install.wim), and add a list of languages (lang.ini) to change which Windows language gets installed.
+* Add languages to the Windows Setup image (boot.wim index:2) to help technicians or users install Windows images through Windows Setup.
+* When you add languages to a Windows image (install.wim), add a list of languages (lang.ini) so that during installation, the technician or user can select which language is installed as the default language.
 
-You can include different sets of languages for Windows Setup images and the Windows images.
+You can include a different set of languages for your Windows images and Windows Setup.
 
 ## Prerequisites
 
-- A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed with the **Deployment tools** option, , including the **WinPE add-on**.
+- A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed with the **Deployment tools** option, including the **WinPE add-on**.
 
 **CopyPE** and **MakeWinPEMedia** are installed when you choose the **Deployment tools** and **Windows Preinstallation Environment** options when [installing the ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install). If you're using the ADK for Windows 10, version 1809, Windows PE is a separate add-on that you download and install after you install the ADK. You can [download the WinPE add-on from the Download Center](https://go.microsoft.com/fwlink/?linkid=2022233).
 
@@ -88,7 +88,7 @@ Where *D:* is the location of the Windows installation media.
 
 In this step you copy the language-specific Setup resources from each language-specific Windows distribution to the Sources folder in your Windows distribution. For example, mount the fr-FR Windows installation media as drive E: and copy the Fr-FR sources folder to your Windows distribution. 
 
-Note, language interface packs (LIPs/LXPs) are no
+Note, language interface packs (LIP) are not supported on Windows Setup.
 
 -   Copy the localized Windows Setup files to your Windows distribution.
 
@@ -98,19 +98,13 @@ Note, language interface packs (LIPs/LXPs) are no
 
     Where *E:* is the location of the Windows installation media that contains the localized Windows Setup resources.
 
-## Step 4. Add language packs to the Windows image and set defaults
+## Step 4. Add language packs to the Windows image 
 
-If you'd like to modify the languages that are available to install available, see [Add Language Packs to Windows](add-language-packs-to-windows.md#add-setup)
+To modify the languages that are available in the Windows image,  see [Add Language Packs to Windows](add-language-packs-to-windows.md#add-setup)
 
-**You must add the same language support to your Windows image file, install.wim, as you did for the boot.wim file.** The setup process requires that both images contain the same set of language packs. 
+After you do this, update the list of available Windows languages (Lang.ini) and specify the default Setup language:
 
-You'll also need to update the recovery image, winre.wim, with the same languages.
-
-To learn how, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
-
-## Step 5: Update the list of available Windows languages (Lang.ini) and specify the default Setup language
-
-1.  Recreate the Lang.ini file to reflect the additional languages using *Dism /Gen-LangINI*.
+1.  Recreate the Lang.ini file to reflect the additional languages.
 
     ```
     Dism /image:C:\mount\windows /gen-langINI /distribution:C:\my_distribution
