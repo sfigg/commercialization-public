@@ -23,13 +23,13 @@ OEMs can add language packs to localize Windows 10 and Windows Server images for
 
 * **Language interface packs (LIP)**: These are language packs require a base language. They don't include all of the language resources by themselves. For parts of the UI that are not translated into the LIP language, the Windows displays the UI with the parent language. 
   - As of Windows 10, version 1809, these languages are distributed as .appx files. See the [available Language interface packs](available-language-packs-for-windows.md#lips). Sample .appx name: `LanguageExperiencePack.am-et.neutral.appx`. 
-  - For previous Windows versions, language experience packs are .cab files, example, Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab.
+  - For previous Windows versions, language experience packs are .cab files, example: `Microsoft-Windows-Client-Language-Pack_x64_es-ca.cab`.
 
 * **[Recovery language packs](customize-windows-re.md)** so users can troubleshoot and recover their devices using their preferred language. 
 
 ## Applies to
 
-Windows 10 (all editions except for Windows 10 Home Single Language Windows 10 Home Country Specific (CN)) and Windows Server
+Windows 10 (except for Windows 10 Home Single Language and Windows 10 Home Country Specific editions), and Windows Server
 
 ## Considerations
 
