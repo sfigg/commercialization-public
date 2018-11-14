@@ -345,7 +345,7 @@ Critical symbols missing: Ensure that the machine has access to the Microsoft pu
 
 Symbols of non-Microsoft components missing: These missing symbols could be for your own components, or for those owned by a different partner. Collaborate with your partners to obtain these third-party symbols for the component that is missing symbols, and configure the correct symbols path on the computer before re-running the assessment.
 
->[!NOTE]  
+>[!NOTE]
 >For more information about setting the correct symbols path, see [Troubleshooting Windows Assessment Services](http://go.microsoft.com/fwlink/?LinkId=246155).
 
 Sharing components’ symbols across partners in the ecosystem ensures better collaboration through a reliable and efficient bug triage and analysis process. We recommend that partners define these collaborative relationships, which will ensure that you have the resources you need to find the root cause of the issues reported on your system component.
