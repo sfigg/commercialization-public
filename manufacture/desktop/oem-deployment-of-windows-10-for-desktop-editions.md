@@ -340,7 +340,7 @@ You should update your recovery image to ensure a consistent recovery experience
 
 ### Offline customizations
 
-With your images mounted, you can start customizing. We'll show you how to make offline customizations to your Windows image. Offline customizations are changes that you can make to a mounted image without having to boot into the Windows installation. First, we'll walk through adding (and removing) lanugages from your Windows image. 
+With your images mounted, you can start customizing. We'll show you how to make offline customizations to your Windows image. Offline customizations are changes that you can make to a mounted image without having to boot into the Windows installation. First, we'll walk through adding (and removing) languages from your Windows image. 
 
 #### About Languages
 

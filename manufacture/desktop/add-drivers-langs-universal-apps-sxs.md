@@ -83,7 +83,7 @@ The following table shows the types of language packages and components availabl
 <td align="left">Fonts</td>
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
-<td align="left"><a href="features-on-demand-language-fod.md#Fonts">Fonts required for some regions</a>. Example, th-TH requires the Thai font pack.</td>
+<td align="left"><a href="features-on-demand-language-fod.md#fonts">Fonts required for some regions</a>. Example, th-TH requires the Thai font pack.</td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -241,7 +241,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 **Step 6: Verify updates**
 
-1.  After the PC boots, if you have multiple languages installed, you should receive a list of lanugages during the out-of-box experience. 
+1.  After the PC boots, if you have multiple languages installed, you should receive a list of languages during the out-of-box experience. 
 
 2.  Either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 
