@@ -20,7 +20,7 @@ Windows Server and Windows 10 language packs are not interchangeable. Windows Se
 
 The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
 
-To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-components).
+To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#get_language_packs_and_lips).
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
 

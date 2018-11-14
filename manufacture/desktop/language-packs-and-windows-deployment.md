@@ -16,7 +16,7 @@ ms.topic: article
 
 To design PCs that work better for customers in different regions, you can set up Windows with the right set of languages, settings, and keyboards or other input devices.
 
-## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>Language components in Windows 10
+## <span id="whats_new"></span>Language components in Windows 10
 
 To help reduce the size of your image, languages in Windows 10 are split into the following components, which are distributed as language packs and [Features On Demand (FODs)](features-on-demand-language-fod.md). You don’t have to add all of a language’s related FODs, but we recommend always preinstalling the Basic, Fonts, Optical character recognition (OCR), Text-to-speech, and Speech recognition FODs if they’re available for the languages you’re preinstalling. We also recommend preinstalling the handwriting FOD if you’re shipping a device with a pen.
 
@@ -39,7 +39,7 @@ See [Add languages to Windows](add-language-packs-to-windows.md) to learn how to
 | Component |  Description |
 | --------- | ---------------- | 
 | Basic     | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<p>**You must add this component before adding any of the following components.**<p>**Note**: You can add the Basic FOD for languages that aren't otherwise included in an image. This gives users the ability to proof in these languages, even when the other language components for that language aren't installed.<p>Other language components are dependent on this one. |
-| Fonts     |  Fonts.<br></br>See [font capabilities](features-on-demand-language-fod.md#span-idfontsspanspan-idfontsspanfont-features-on-demand) for available font capabilities. |
+| Fonts     |  Fonts.<br></br>See [font capabilities](features-on-demand-language-fod.md#fonts) for available font capabilities. |
 | OCR | Recognizes and outputs text in an image.<br></br><p>**Dependencies**: The basic component of the same language. |
 | Handwriting recognition |  Enables handwriting recognition for devices with pen input.<br></br><p>**Dependencies**: The basic component of the same language.|
 | Text-to-speech |  Enables text to speech, used by Cortana and Narrator.<br></br><p>**Dependencies**: The basic component of the same language. |
@@ -53,7 +53,7 @@ To learn more about the types of available components and their dependencies, se
 To learn more about adding language components to Windows, see [Add and remove languages](add-and-remove-language-packs-offline-using-dism.md).
 
 
-## <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Where to get language components
+## <span id="get_language_packs_and_lips"></span>Where to get language components
 
 [Available Languages for Windows](available-language-packs-for-windows.md) lists all of the supported language packs for multiple versions of Windows, as well as their identifier codes.
 

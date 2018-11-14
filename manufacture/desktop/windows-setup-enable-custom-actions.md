@@ -32,7 +32,7 @@ Custom action scripts run from subfolders in `%windir%\System32\update\`, depend
 | %windir%\System32\update\run | Windows Setup will migrate scripts in these folders so they are run in future upgrades. |
 | %windir%\System32\update\runonce | Scripts in this folder will only run in one upgrade and won't be migrated for future upgrades. |
 | %windir%\System32\update\run\\\<GUID><p></p>%windir%\System32\update\runonce\\\<GUID> | Create a unique GUID to clearly identify each script you run. Use this GUID to name a folder within the `run` and `runonce` folders.  |
-| %windir%\System32\update\run\\\<GUID>\reflectdrivers<p></p>%windir%\System32\update\runonce\\\<GUID>\reflectdrivers | Boot-critical drivers in this folder will be reflected. Make sure the reflectdrivers folder only contains a necessary set of encryption drivers. Having more drivers than necessary can negatively impact upgrade scenarios. See [Device drivers](device-drivers-and-deployment-overview.md#span-idofflinespanspan-idofflinespanadd-drivers-before-deployment-on-an-offline-windows-image-by-using-dism) to learn more about reflected drivers. |
+| %windir%\System32\update\run\\\<GUID>\reflectdrivers<p></p>%windir%\System32\update\runonce\\\<GUID>\reflectdrivers | Boot-critical drivers in this folder will be reflected. Make sure the reflectdrivers folder only contains a necessary set of encryption drivers. Having more drivers than necessary can negatively impact upgrade scenarios. See [Device drivers](device-drivers-and-deployment-overview.md#offline) to learn more about reflected drivers. |
 
 
 

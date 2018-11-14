@@ -41,7 +41,7 @@ You can add device drivers to a Windows image:
 
 For more information, see [Understanding Servicing Strategies](understanding-servicing-strategies.md).
 
-### <span id="offline"></span><span id="OFFLINE"></span>Add drivers before deployment on an offline Windows image by using DISM
+### <span id="offline"></span>Add drivers before deployment on an offline Windows image by using DISM
 
 Offline servicing occurs when you modify a Windows image entirely offline without booting the operating system. You can add, remove, and enumerate drivers on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows and is also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see the [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
 

@@ -18,7 +18,7 @@ ms.topic: article
 
 All Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#language-interface-packs-lips), you add it after adding its base language.
 
-In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md#span-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanlanguage-components-in-windows-10
+In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md#whats_new
 ), including language packs (.cabs for fully localized languages, .appx for LIP languages), and [Features On Demand](features-on-demand-v2--capabilities.md). 
 
 You can save disk space by choosing not to include some language components in your image. While this reduction in image size can be helpful when creating images for lower-cost devices with small storage, it does lead to an incomplete language experience. When you add language components to a PC, also install the required dependencies. See [Languages](language-packs-and-windows-deployment.md) to learn more about language components and their dependencies.
@@ -57,7 +57,7 @@ To add a language to an offline image, you'll need the following:
 - Feature on Demand ISO
 - A Windows image
 
-See [Where to get language packs](language-packs-and-windows-deployment.md#span-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanspan-idgetlanguagepacksandlipsspanwhere-to-get-language-components) to find out where you can get these ISOs.
+See [Where to get language packs](language-packs-and-windows-deployment.md#get_language_packs_and_lips) to find out where you can get these ISOs.
 
 ### Mount Windows and Windows RE images (if you're adding a language to an offline image)
 

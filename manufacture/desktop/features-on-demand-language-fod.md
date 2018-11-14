@@ -43,9 +43,7 @@ Language Features on Demand are available in six types:
 | Text-to-speech | Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab| Language.TextToSpeech~\~\~fr-FR~0.0.1.0  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image. |
 | Speech recognition | Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab | Language.Speech~\~\~fr-FR~0.0.1.0 |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic and text-to-speech components of the same language. |
 
-
-
-### <span id="Fonts"></span><span id="fonts"></span>Font Features on Demand
+### <span id="fonts"></span>Font Features on Demand
 
 When adding languages for some regions, you'll need to add Features on Demand that add font support.
 
