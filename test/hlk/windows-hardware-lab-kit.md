@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: fed4ec97-81cb-487c-ac17-de7c6884892b
 author: dawn.wood
 ms.author: dawnwood
-ms.date: 01/26/2018
+ms.date: 11/02/2018
 ms.topic: article
 
 
@@ -99,5 +99,5 @@ You can use Get-FileHash PowerShell cmdlet to compute the hash value for a file.
 
 This documentation is also available in .chm format for offline use.
 
-- [Download HLK offline documentation](https://go.microsoft.com/fwlink/?linkid=873018)
+- [Download HLK offline documentation](http://download.microsoft.com/download/F/7/6/F76FF298-B35C-44F0-912D-9AD132E7794E/HLK.chm)
 
