@@ -131,7 +131,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 ## <span id="related_topics"></span>Related topics
 
-[DISM Languages and International Servicing Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-languages-and-international-servicing-command-line-options)
+[DISM Languages and International Servicing Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-languages-and-international-servicing-command-line-options)
 
-[Configure International Settings in Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-international-settings-in-windows)
+[Configure International Settings in Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-international-settings-in-windows)
 
