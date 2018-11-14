@@ -8,8 +8,6 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 
-redirect_url: https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/add-multilingual-support-to-a-windows-distribution
-
 ---
 
 # Add Multilingual Support to a Windows Distribution
@@ -121,9 +119,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     ```
 
     > [!Note]
-    >You can choose a language for Windows Setup from those that are available in the distribution share when you run Setup from a full operating system only. If you run Windows Setup for bootable media or Windows PE, you must add optional components to the Boot.wim file for multilingual support. For more information, see [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md).
-
-     
+    >You can choose a language for Windows Setup from those that are available in the distribution share when you run Setup from a full operating system only. If you run Windows Setup for bootable media or Windows PE, you must add optional components to the Boot.wim file for multilingual support. For more information, see [Add languages to Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-multilingual-support-to-windows-setup).
 
 9.  Unmount the .wim file and commit the changes. For example:
 
@@ -135,17 +131,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 ## <span id="related_topics"></span>Related topics
 
+[DISM Languages and International Servicing Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-languages-and-international-servicing-command-line-options)
 
-[DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)
-
-[Configure International Settings in Windows](configure-international-settings-in-windows.md)
-
- 
-
- 
-
-
-
-
-
+[Configure International Settings in Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-international-settings-in-windows)
 
