@@ -53,3 +53,8 @@ To learn more, see [Recovery strategy for common customizations](recovery-strate
 **Reference**
 * [How push-button reset features work](how-push-button-reset-features-work.md)
 * [Push-button reset frequently-asked questions (FAQ)](pbr-faq.md)
+
+* [REAgentC command-line options](reagentc-command-line-options.md)
+* [ResetConfig XML reference](resetconfig-xml-reference-s14.md)
+* [WinREConfig XML reference](winreconfig-xml-reference.md)
+* [Windows RE troubleshooting features](windows-re-troubleshooting-features.md)
