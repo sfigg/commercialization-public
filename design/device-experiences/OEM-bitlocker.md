@@ -13,7 +13,7 @@ ms.topic: article
 
 # BitLocker drive encryption in Windows 10 for OEMs
 
-BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with the operating system is offline. BitLocker drive encryption uses a TPM, either discrete or firmware, that supports the Static Root of Trust Measurement as defined by the [Trusted Computing Group](https://trustedcomputinggroup.org/). 
+BitLocker drive encryption provides offline data and operating system protection by ensuring that the drive is not tampered with while the operating system is offline. BitLocker drive encryption uses a TPM, either discrete or firmware, that supports the Static Root of Trust Measurement as defined by the [Trusted Computing Group](https://trustedcomputinggroup.org/). 
 
 ## BitLocker drive encryption hardware requirements
 BitLocker drive encryption uses a system partition separate from the Windows partition. The BitLocker system partition must meet the following requirements.
@@ -26,14 +26,14 @@ For more information see [System.Client.SystemPartition](https://docs.microsoft.
 ## BitLocker automatic device encryption
 BitLocker automatic device encryption uses BitLocker drive encryption technology to automatically encrypt internal drives after the user completes the Out Of Box Experience (OOBE) on [Modern Standby](modern-standby.md) or HSTI-compliant hardware.  
 
-**Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts, in which case BitLocker can be manually using the BitLocker Control Panel.
+**Note:** BitLocker automatic device encryption is enabled only after users sign in with a **Microsoft Account** or an **Azure Active Directory** account. BitLocker automatic device encryption is not enabled with local accounts, in which case BitLocker can be manually enabled using the BitLocker Control Panel.
 
 ## BitLocker automatic device encryption hardware requirements
 BitLocker automatic device encryption is enabled when:
 - The device contains a **TPM** (Trusted Platform Module), either TPM 1.2 or TPM 2.0. 
 - **UEFI Secure Boot** is enabled. See [Secure Boot](OEM-secure-boot.md) for more information.
 - **Platform Secure Boot** is enabled
-- **Direct memory access (DMA)** protections is enabled
+- **Direct memory access (DMA)** protection is enabled
 
 The following tests must pass before Windows 10 will enable Automatic BitLocker device encryption. If you want to create hardware that supports this capability, you must verify that your device passes these tests. 
 
