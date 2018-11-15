@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: justinha
-ms.date: 11/08/2018
+ms.date: 11/16/2018
 ms.topic: article
 
 
@@ -62,7 +62,7 @@ In addition to running HLK tests, OEMs need to test firmware updates with BitLoc
 3. Restart the device 
 4. Resume BitLocker
 
-The firmware update should require the device to suspend Bitlocker only for a short time, and the device should restart as soon as possible. BitLocker can be suspended programmatically just before shutting down by using Windows Management Instrumentation (WMI). 
+The firmware update should require the device to suspend Bitlocker only for a short time, and the device should restart as soon as possible. BitLocker can be suspended programmatically just before shutting down by using the [DisableKeyProtectors method](https://docs.microsoft.com/windows/desktop/SecProv/disablekeyprotectors-win32-encryptablevolume) in Windows Management Instrumentation (WMI). 
 
 ## Un-allowed DMA capable bus/device(s) detected 
 
