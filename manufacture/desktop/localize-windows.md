@@ -27,6 +27,9 @@ Set up Windows 10 or Windows Server with the right set of languages, settings, a
 
 * [Out of Box Experience (OOBE)](how-oobexml-works.md): Create localized versions of end user license agreements (EULA), registration pages, and instructions for pairing keyboards and mice.
 
+* [Retail demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience#add-retail-demo-mode-including-language-packs-to-your-images
+): Showcase your new devices on the retail sales floor with localized content.
+
 ## Localizing the installation process
 
 * [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md) to create Windows installation media that works in the user's preferred language and shows the languages available in the Windows image.
