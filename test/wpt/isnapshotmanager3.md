@@ -16,7 +16,7 @@ ms.topic: article
 {
     SnapshotType_Undefined = 0,
     SnapshotType_Heap,
-} SnapshotType;
+}   SnapshotType;
 
     [id(1), helpstring("EnablePeriodicSnapshot")] HRESULT EnablePeriodicSnapshot([in] SnapshotType snapshotType, [in] ULONG interval, [in] ULONG* pids, [in] ULONG cPids);
     [id(2), helpstring("DisablePeriodicSnapshot")] HRESULT DisablePeriodicSnapshot([in] SnapshotType snapshotType);
