@@ -1,6 +1,6 @@
 ---
 author: kpacquer
-Description: Add Language Packs to Windows
+Description: Add Languages to Windows
 ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Packs to Windows
@@ -10,7 +10,7 @@ ms.topic: article
 
 ---
 
-# Add Language Packs to Windows
+# Add Languages to Windows
 
 > [!note]
 > To add a language to your personal PC, go to **Settings** > **Time & Language** > **Language**, and choose a language to install. [Learn more](https://support.microsoft.com/en-us/help/4027670/windows-10-add-and-switch-input-and-display-language-preferences)
