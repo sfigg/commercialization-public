@@ -27,11 +27,11 @@ Both Windows 10 and Windows Server include a separate, small OS in a separate di
 
 
 ## [Push-button reset](push-button-reset-overview.md)
-Windows 10 helps users refresh their device, keeping data intact, or restored to factory settings for a new user. 
+Windows 10 helps users reset their device, either keeping data and apps intact or resetting it for a new user. 
 
 **What do I need to update?**
 
-* **Windows desktop apps**, **drivers**, and **settings** are automatically refreshed when installed as [siloed provisioning packages (SPPs)](siloed-provisioning-packages.md). If you install them using another method (for example, in audit mode or from a script), [capture them into an SPP so they can be refreshed](deploy-push-button-reset-features.md).
+* **Windows desktop apps**, **drivers**, and **settings** are automatically refreshed when installed as [siloed provisioning packages (SPPs)](siloed-provisioning-packages.md). If you install them using another method (for example, in audit mode or from a script), [capture them into a provisioning package so they can be refreshed](deploy-push-button-reset-features.md).
 * **Out of Box Experience customizations**, the **Start Menu**, and **Unattend.xml settings**: 
   - In Windows 10, version 1809, you can save a copy of these into [Auto-apply folders](deploy-pbr-features-using-auto-apply.md).
   - In earlier versions, use extensibility scripts instead to refresh these files.
