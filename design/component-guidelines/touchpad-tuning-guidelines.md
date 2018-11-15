@@ -5,7 +5,7 @@ description: This topic presents information about touchpad tuning capabilities 
 keywords: ["precision touchpad", "touchpad", "touchpad tuning", "PTP"]
 ms.author: eliotgra
 ms.topic: article
-
+ms.date: 05/02/2017
 
 ---
 

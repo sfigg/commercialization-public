@@ -5,6 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23304e68-52d0-47c8-9f21-d74072116b8e
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Specifying components in a package project file
