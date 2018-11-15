@@ -105,7 +105,7 @@ If you're adding drivers to a WinPE image, you can add them to the WinPE image i
 
 1.  Gather the device driver .inf files that you intend to install on the Windows image.
 
->[!Note]  
+>[!Note]
 >All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
 
 2.  Use Windows System Image Manager (Windows SIM) to create an answer file that contains the paths to the device drivers that you want to install.
