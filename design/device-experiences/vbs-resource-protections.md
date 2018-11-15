@@ -1,7 +1,7 @@
 ---
 title: Virtualization Based Security System Resource Protections  
 description: Provides details for OEMs on how VBS protects access to system resources
-ms.author: allenma
+ms.author: justinha
 ms.date: 4/30/2018
 ms.topic: article
 

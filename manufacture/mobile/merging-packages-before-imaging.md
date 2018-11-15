@@ -5,6 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f11e92e3-5a91-4461-b43f-ec97371eaef7
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Merging packages before imaging

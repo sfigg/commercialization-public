@@ -5,6 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ddbe251-3b90-411a-88ab-e20b53d984d1
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Specifying files and registry entries in a package project file

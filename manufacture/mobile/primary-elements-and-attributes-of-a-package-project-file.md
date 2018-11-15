@@ -5,6 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8f8a5f60-88c4-4e2d-b77d-c300f2b97d32
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Primary elements and attributes of a package project file
