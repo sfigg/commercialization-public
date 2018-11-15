@@ -32,7 +32,7 @@ Comparing .WIM, .VHD/.VHDX, and .FFU: These file formats are all used to deploy 
 <tr class="even">
 <td align="left">Common uses</td>
 <td align="left"><p>Fastest for testing and modifying Windows images.</p>
-<p>Quickly mounting and modifying images.</p></td>
+<p>Can store multiple image variations in the same .WIM file, often with little additional storage required.</p></td>
 <td align="left"><p>Easiest for deploying Windows to virtual PCs.</p>
 <p>You can boot a new device directly from a single VHD/VHDX file.</p></td>
 <td align="left"><p>Fastest for capturing and deploying Windows on a factory floor.</p>
