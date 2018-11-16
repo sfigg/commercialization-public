@@ -41,7 +41,7 @@ Here's how we'll refer to them:
 
 **Install the following tools on your technician PC**
 
-1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) including at least the **Deployment Tools** and **Imaging and Configuration Designer (ICD)** features. You'll use these tools to create images and provisioning packages. For Windows 10, version 1809, you will also need to install **Windows PE add-on for the ADK**.
+1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) including at least the **Deployment Tools** and **Imaging and Configuration Designer (ICD)** features. You'll use these tools to create images and provisioning packages. For Windows 10, version 1809, you will also need to install **Windows PE add-on for the ADK**.<p> **NOTE** - The version of ADK and the version of IoT Core Packages used **must** match.
 
 2.  [Windows Driver Kit (WDK) 10](http://developer.microsoft.com/windows/hardware/windows-driver-kit) (optional, required only if you are building drivers)
 

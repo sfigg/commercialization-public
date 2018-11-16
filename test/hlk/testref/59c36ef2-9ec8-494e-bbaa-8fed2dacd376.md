@@ -16,7 +16,7 @@ ms.topic: article
 # <span id="p_hlk_test.59c36ef2-9ec8-494e-bbaa-8fed2dacd376"></span>PrintTicket Test
 
 
-This automated test exercises the unmanaged **PrintTicket** and **PrintCapabilties** APIs that are part of Windows Vista and newer version of Windows.
+This automated test exercises the unmanaged **PrintTicket** and **PrintCapabilities** APIs that are part of Windows Vista and newer version of Windows.
 
 If you have the Windows Driver Kit (WDK) test suite at the command line, the test tool sequentially runs the test cases that the TestSuite.xml file mentions. For the WDK test suite, the test cases call all of the native **PrintTicket** and **PrintCapabilities** APIs sequentially by using valid input parameters and expect valid output.
 
