@@ -8,8 +8,37 @@ ms.topic: article
 
 ## ConfigSnapshotByProcess
 
+Configures snapshot using the provided process name. This function uses Image File Execution Options(IFEO) to set snapshot tracing flag in the registry. 
+
+## Syntax
+
+``` 
+HRESULT ConfigSnapshotByPIDEx
+([in] SnapshotType snapshotType,
+[in] BSTR bstrProcName,
+ [in] VARIANT_BOOL fEnable);
+ ```
+
+## Parameters
+
+*snapshotType*
+[in] SnapshotType. 
+Note : Currently only available SnapshotType is SnapshotType_Heap
+*bstrProcName*
+[in] A string that contains the process name
+*fEnable*
+[in] A Boolean value that indicate whether to enable or disable the snapshot.
+
+## Return Value
+
+The following table describes possible return values.
+|Return Value	| Description |
+|---------------|-------------|
+|S_OK	| The configuration was successful for the specified process.|
 
 
+## Remarks
+This function is useful to configure the snapshot with the process name. Once enabled, the config will apply to all new instances of the process with specified name. The user should disable snapshot when the testing has finished. 
 
 ## Related Topics
 
