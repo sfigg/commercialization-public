@@ -104,11 +104,11 @@ See the following topics for more information:
 
 ### <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
 
-You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](user\exporting-a-failed-hlk-job.md).
+You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/exporting-a-failed-hlk-job">Exporting a Failed HLK Job></a>.
 
 ### <span id="Support_for_Mobile_testing"></span><span id="support_for_mobile_testing"></span><span id="SUPPORT_FOR_MOBILE_TESTING"></span>Support for Mobile testing
 
-Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](getstarted\hlk-proxy-client-getting-started-guide.md).
+Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/hlk-proxy-client-getting-started-guide">HLK Proxy Client Getting Started Guided</a>.
 
 ### <span id="SQL_Server_2012_Express_SP2"></span><span id="sql_server_2012_express_sp2"></span><span id="SQL_SERVER_2012_EXPRESS_SP2"></span>SQL Server 2012 Express SP2
 
@@ -143,7 +143,7 @@ To support unified driver submissions, results from HCK and HLK projects can be 
 
 ### <span id="Virtual_machine_support"></span><span id="virtual_machine_support"></span><span id="VIRTUAL_MACHINE_SUPPORT"></span>Virtual machine support
 
-The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](getstarted\windows-hlk-prerequisites.md) for the HLK Controller.
+The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-prerequisites">minimum requirements</a> for the HLK Controller.
 
 ### <span id="Partial_packaging"></span><span id="partial_packaging"></span><span id="PARTIAL_PACKAGING"></span>Partial packaging
 
