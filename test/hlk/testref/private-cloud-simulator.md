@@ -36,6 +36,52 @@ The target audience for this document are those working towards validating their
 
 Private Cloud Simulator (PCS) simulates a live datacenter/private cloud by creating VM workloads, simulating data center operations (load balancing, software/hardware maintenance), and injecting compute/storage faults (unplanned hardware/software failure). PCS uses a Microsoft SQL Server database to record test and solution data during the run. It then presents a report that includes operation pass/fail rates and logs whihch provide the capability to correlate data for pass/fail determination and failure diagnosis (as applicable).
 
+### <span id="Topology"></span><span id="topology"></span><span id="TOPOLOGY"></span>Topology
+
+Figure 1 shows the topology for a PCS lab environment with the following elements:
+
+-   An Active Directory domain controller/DNS/DHCP server for the test domain.
+-   A dedicated HLK controller machine.
+-   A dedicated PCS controller machine.
+-   A minimum 3-node (maximum nodes: 64) compute cluster, which hosts Hyper-V virtual machines.
+
+![overall pcs topology](images/pcs-topology.png)
+
+### <span id="Execution_Flow"></span><span id="execution_flow"></span><span id="EXECUTION_FLOW"></span>Execution Flow
+
+PCS execution proceeds through the stages below. All stages after the PCS kickoff \[Stage (2)\] are fully automated and need no user intervention.
+
+1.  Setup PCS lab topology
+    1.  In this stage, the lab setup necessary for a successful PCS run should be complete.
+    2.  Section (2) discusses details on setting up the common lab infrastructure
+    3.  Section (3) discusses the specific setups necessary for different types of devices/solutions.
+2.  Kickoff PCS using HLK Studio
+    1.  This stage kicks off the PCS execution process.
+    2.  Section (3) discusses the HLK job(s) to be used to kick off PCS for different types of devices/solutions.
+3.  Initialize PCS Controller (automated)
+    1.  In this stage, the PCS execution engine sets up a SQL server and IIS on the PCS controller machine
+    2.  It also copies content (e.g. evaluation OS VHD files) to enable VM creation in the next stage
+4.  Create VMs (automated)
+    1.  This stage sees the PCS engine start creating VMs on each node of the cluster
+    2.  VM creation stops when the target number of VMs/node has been reached.
+    3.  This step is a part of PCS setup phase. Test run duration timer kicks in post this stage.
+5.  Run Actions (automated)
+    1.  Now, PCS initiates various types of actions (VM, Cluster, Storage, Network) on each node of the cluster.
+    2.  Actions run in parallel and co-ordinate among themselves to exercise the device (storage, network) and the solution through the private cloud/datacenter lifecycle
+    3.  Actions run periodically and stop once the target execution time (defined by the profile/job) of the test has been reached.
+    4.  Test execution time is defined per profile and can vary based on the profile you are running. Test execution timer kicks in after all the VMs are created.
+    5.  The steps in each action and the corresponding result of each step is stored in the SQL server.
+6.  Analyze Results (automated)
+    1.  The Run Analyzer engine uses results stored on the SQL server to decide the result of the run based on the success rate of each action, the absence of unexpected crashes on the cluster node.
+    2.  This result stored in the HLK logging format for use by HLK Studio.
+7.  Cleanup Run (automated)
+    -   In this stage, VMs created in stage (4) are cleaned up and the cluster is restored to a clean state (as possible).
+8.  Report result in HLK Studio (automated)
+    1.  In this stage, the HLK studio reports the result of the PCS run.
+    2.  The result can be packaged into an HLKX file for submission to Microsoft.
+
+## <span id="Common_Lab_Infrastructure_Setup"></span><span id="common_lab_infrastructure_setup"></span><span id="COMMON_LAB_INFRASTRUCTURE_SETUP"></span>Common Lab Infrastructure Setup
+=======
 ### Topology
 
 PCS lab environment contains the following elements:

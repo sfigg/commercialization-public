@@ -1214,7 +1214,7 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 <tr class="odd">
 <td><p>0x8018830E</p></td>
 <td><p>E_REMOVAL_PACKAGE_CANNOT_TARGET_BINARY_PARTITION</p></td>
-<td><p>This package is a removal package targeted to a binary parition Binary partition packages cannot be deleted.</p></td>
+<td><p>This package is a removal package targeted to a binary partition. Binary partition packages cannot be deleted.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x8018830F</p></td>
