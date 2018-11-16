@@ -7,8 +7,8 @@ title: 'Windows Setup Command-Line Options'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows Setup Command-Line Options
@@ -54,8 +54,6 @@ The following command-line options are available for Windows Setup. Beginning w
 > - [USBDebug:\<hostname>](#30)
 > - [WDSDiscover](#31)
 > - [WDSServer:\<servername>](#32)
-
-## Setup Command-Line Options
 
 The following table lists Setup command-line options:
 > [!div class="mx-tableFixed"]
@@ -105,8 +103,7 @@ The following table lists Setup command-line options:
 | CONX_SETUP_EXITCODE_RESUME_AT_COMPAT_REPORT | 0x5 | The compatibility check detected issues that require resolution before the upgrade can continue. |
 | CONX_SETUP_EXITCODE_AUTO_INSTALL_FAIL | 0x7 | The installation option (upgrade or data only) was not available. |
 
-## <span id="related_topics"></span>Related topics
-
+**Related topics**
 
 [Windows Setup States](windows-setup-states.md)
 

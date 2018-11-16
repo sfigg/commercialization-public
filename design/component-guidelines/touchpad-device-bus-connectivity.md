@@ -8,8 +8,8 @@ ms.assetid: 9A09BD0F-BF95-4C9C-910F-12BD59A9FC50
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Device Bus Connectivity

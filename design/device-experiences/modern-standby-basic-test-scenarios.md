@@ -11,8 +11,8 @@ ms.assetid: 9064D169-B32F-4033-9FEE-4476F68F90C1
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern standby basic test scenarios

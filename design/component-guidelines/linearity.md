@@ -8,8 +8,8 @@ ms.assetid: D0EEBC04-03B9-47DD-AF79-CBA434515C76
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Linearity

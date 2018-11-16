@@ -8,8 +8,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/30/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Customize the Start layout
 

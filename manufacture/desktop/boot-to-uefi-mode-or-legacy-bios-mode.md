@@ -7,8 +7,8 @@ title: Boot to UEFI Mode or Legacy BIOS mode
 ms.author: kenpacq
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Boot to UEFI Mode or legacy BIOS mode

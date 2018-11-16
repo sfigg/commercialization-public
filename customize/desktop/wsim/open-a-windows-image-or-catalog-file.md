@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Open a Windows Image or Catalog File
 

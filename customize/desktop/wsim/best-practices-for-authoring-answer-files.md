@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Best Practices for Authoring Answer Files
 
@@ -90,7 +90,7 @@ Use **DISM** to update an offline Windows image. For more information, see [Serv
 During installation, you can also configure the computer to automatically download updates from Windows Update.
 
 > [!Warning]
-> Never overwrite Windows system files by using **$OEM$** Folders subfolders or data images.
+> Never overwrite Windows system files by using `$OEM$` subfolders or data images.
 
 If you have additional device drivers to add to a computer, add these drivers offline by using **DISM**. You can also include additional drivers in an unattended installation by using the **Microsoft-Windows-PnPCustomizationsNonWinPE** and **Microsoft-Windows-PnPCustomizationWinPE** components. For more information, see [How to Add and Remove Drivers Offline](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image).
 

@@ -7,8 +7,8 @@ title: Create a Data Image Using DISM
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Create a Data Image Using DISM
@@ -27,7 +27,7 @@ Data images must be used only to add new files to a Windows installation. Do not
 
  
 
-Previous methods of transferring data to a Windows installation required the use of $OEM$ folders. These folder structures are still supported, but data images provide an easier and more efficient means of transferring additional data to Windows.
+Previous methods of transferring data to a Windows installation required the use of `$OEM$` folders. These folder structures are still supported, but data images provide an easier and more efficient means of transferring additional data to Windows.
 
 In unattended installations, the Windows image to install is specified by the `OSImage` setting in the Microsoft-Windows-Setup component. You can add one or more `DataImage` settings in the Microsoft-Windows-Setup component that represent additional data images that you add to the system. For more information, see the [Windows Unattended Setup Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend).
 

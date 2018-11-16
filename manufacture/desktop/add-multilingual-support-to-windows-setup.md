@@ -1,69 +1,63 @@
 ---
 author: kpacquer
-Description: Add Multilingual Support to Windows Setup
+Description: Add languages to Windows Setup
 ms.assetid: 242b963c-79fc-450b-90d7-c736965797b7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Multilingual Support to Windows Setup
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/06/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
 ---
 
-# Add multilingual support to Windows Setup
+# Add languages to Windows Setup
 
-Windows Setup multilingual support allows you to choose different languages for Windows Setup and Windows installation. This scenario allows for a technician to run Windows setup in one language, and install Windows in a different language. 
+To support multiple languages with Windows Setup:
 
-This walkthrough provides steps for creating Windows installation media with multilingual support. 
+* Add languages to the Windows Setup image (boot.wim index:2) to help technicians or users install Windows images through Windows Setup.
+* When you add languages to a Windows image (install.wim), add a list of languages (lang.ini) so that during installation, the technician or user can select which language is installed as the default language.
+
+You can include a different set of languages for your Windows images and Windows Setup.
 
 ## Prerequisites
 
+- A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed with the **Deployment tools** option, including the **WinPE add-on**.
 
-To complete this walkthrough, you need the following:
+**CopyPE** and **MakeWinPEMedia** are installed when you choose the **Deployment tools** and **Windows Preinstallation Environment** options when [installing the ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install). If you're using the ADK for Windows 10, version 1809, Windows PE is a separate add-on that you download and install after you install the ADK. You can [download the WinPE add-on from the Download Center](https://go.microsoft.com/fwlink/?linkid=2022233).
 
--   A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed
+- Windows installation media for all languages that you are creating media.
 
--   Windows installation media for all languages that you are creating media
+- The Windows language pack ISO.
 
--   The Windows language pack ISO
+## Step 1. Copy installation files to a working folder
 
+On your technician PC, copy the Windows installation files from the Windows installation media to a local directory. 
 
-## Step 1. Prepare your environment 
+If you are creating media for use with a customized image, you must use the Windows media that corresponds to the version of your customized image. For example, if you are building a custom Windows 10 Setup image, you must use the original Windows 10 product media.
 
-To get started, copy Windows installation files from media to a local directory. If you are creating media for use with a customized image, you must use the Windows media that corresponds to the version of your customized image. For example, if you are building a custom Windows 10 setup image, you must use the original Windows 10 product media.
+```
+md C:\my_distribution
+xcopy /E D: C:\my_distribution
+```
 
--   On your technician computer, create a new directory for your Windows distribution and copy the Windows media content to that directory. For example:
+Where *D:* is the location of the Windows installation media.
+
+## Step 2. Add languages to the default Windows Setup boot image (index:2)
+
+1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
+
+2.  Mount the second image (index 2) in Boot.wim.
 
     ```
-    md C:\my_distribution
-    xcopy /E D: C:\my_distribution
     md C:\mount\boot 
-    md C:\mount\windows
-    ```
-
-    Where *D:* is the location of the Windows product media.
-
-## Step 2. Customize languages available for Windows setup
-This section shows how to customize the languages that are available for a technician when performing a Windows installation.
-
-### Add Windows PE Setup Language Packs to the Default Boot Image
-
-In this step, you add language support and the Windows Setup optional components to the second image (index 2) in the default Boot.wim.
-
-1.  On your technician PC: Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
-
-2.  Mount the second image (index 2) in Boot.wim to a local mount directory using **Dism /Mount-Image**. For example:
-
-    ```
     Dism /mount-image /imagefile:C:\my_distribution\sources\boot.wim /index:2 /mountdir:C:\Mount\boot
     ```
 
-3.  Add Windows PE Setup optional component and language packs into your mounted image using **Dism /Add-Package** for each language you want to support. Add *lp.cab*, *WinPE-setup_\<language>.cab*, and *WinPE-Setup-client_\<language>.cab* for each language you are adding.
+3.  Add language packs from the Windows ADK into your mounted image using **Dism /Add-Package** for each language you want to support. Add *lp.cab*, *WinPE-setup_\<language>.cab*. For Windows 10, also add *WinPE-Setup-client_\<language>.cab*. For Windows Server, also add *WinPE-Setup-server_\<language>.cab*
 
     Windows PE language packs are available in the Windows ADK.
 
-    For example:
+    **For Windows 10:**
 
     ```
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
@@ -73,46 +67,30 @@ In this step, you add language support and the Windows Setup optional components
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Setup-Client_fr-fr.cab"
     ```
 
-    **Important**  
-    For Windows Server 2016, you must use the WinPE-Setup-Server optional components instead of the WinPE-Setup-Client optional components.
+    **For Windows Server:**  
+
+    ```
+    Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
+
+    Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Setup_fr-fr.cab"
+
+    Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Setup-Server_fr-fr.cab"
+    ```
 
      
-4.  For Japanese (ja-JP), Korean (ko-KR), and Chinese (zh-HK, zh-CN, zh-TW), you have to add additional font support to your image. For example, to add Japanese font support:
+4.  For Japanese (ja-JP), Korean (ko-KR), and Chinese (zh-HK, zh-CN, zh-TW), add font support to your image. For example, to add Japanese font support:
 
     ```
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-FontSupport-JA-JP.cab"
     ```
 
+## Step 3: Add localized Windows Setup resources to the Windows distribution
 
-## Step 3. Customize the languages available in Windows
+In this step you copy the language-specific Setup resources from each language-specific Windows distribution to the Sources folder in your Windows distribution. For example, mount the fr-FR Windows installation media as drive E: and copy the Fr-FR sources folder to your Windows distribution. 
 
-### Add Language Packs to the Windows Image
+Note, language interface packs (LIP) are not supported on Windows Setup.
 
-**You must add the same language support to your Windows image file, install.wim, as you did for the boot.wim file.** The setup process requires that both images contain the same set of language packs. For more information, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
-
-1.   Mount the Windows image with DISM
-
-        ```
-        Dism /mount-image /imagefile:C:\my_distribution\sources\install.wim /index:1 /mountdir:C:\mount\windows    
-        ```
-        Where *1* is the index of the image that you want to mount.
-
-2.   Add one or more language packs to the Windows image.
-
-        ```
-        Dism /image:C:\mount\windows /add-package /packagepath:F:\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab 
-        ```
-
-        Where *F:* is the location of the language pack ISO.
-
-The same set of languages must also be added to the Windows Recovery Environment image (winre.wim). For more information, see [Customize Windows RE](customize-windows-re.md).
-
-## Step 4: Add Localized Windows Setup Resources to the Windows Distribution
-
-
-In this step you copy the language-specific Setup resources from each language specific Windows distribution to the Sources folder in your Windows distribution. For example, insert the Windows DVD for Fr-FR in your DVD drive (E:) and copy the Fr-FR sources folder to your Windows distribution.
-
--   Copy the localized Windows setup files to your Windows distribution.
+-   Copy the localized Windows Setup files to your Windows distribution.
 
     ```
     xcopy E:\sources\fr-fr C:\my_distribution\sources\fr-fr /cherkyi 
@@ -120,79 +98,83 @@ In this step you copy the language-specific Setup resources from each language s
 
     Where *E:* is the location of the Windows installation media that contains the localized Windows Setup resources.
 
-## Step 5: Recreate the Lang.ini
+## Step 4. Add language packs to the Windows image 
 
-In this step you recreate the Lang.ini file and specify the default language settings.
+To modify the languages that are available in the Windows image,  see [Add Language Packs to Windows](add-language-packs-to-windows.md#add-setup)
 
-1.  Recreate the Lang.ini file to reflect the additional languages using *Dism /Gen-LangINI*.
+After you do this, update the list of available Windows languages (Lang.ini) and specify the default Setup language:
+
+1.  Recreate the Lang.ini file to reflect the additional languages.
 
     ```
     Dism /image:C:\mount\windows /gen-langINI /distribution:C:\my_distribution
     ```
 
-2.  Change the Windows Setup default language with DISM. For example:
+2.  Change the Windows Setup default language with DISM.
 
     ```
     Dism /image:C:\mount\windows /Set-SetupUILang:fr-FR /distribution:C:\my_distribution
     ```
 
-    For more information about specifying different international settings for input locale, and other items see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
+    For more information about specifying different international settings, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
-3.  Copy the lang.ini file in the Windows distribution to the boot.wim file.
+3.  Copy the lang.ini file in the Windows distribution to the boot folder.
 
     ```
     Xcopy C:\my_distribution\sources\lang.ini C:\mount\boot\sources\lang.ini
     ```
 
-## Step 6: Commit the Changes to the Windows Images
-
-
-In this step you commit the changes to all of the images you have updated
-
--   Use DISM to unmount and commit the changes to the Windows and boot images.
+## Step 6: Commit the changes to the Windows images
 
     ```
     Dism /unmount-image /mountdir:C:\mount\boot /commit 
     Dism /unmount-image /mountdir:C:\mount\windows /commit
     ```
 
-## Step 7: Create a Boot Order File (Optional)
+## Step 7: Create the media
 
+### USB flash drive
 
-In this step, you create a boot order file. Due to the size of the image, you must do so before you create an .iso file.
-
--   Create a boot order file (bootorder.txt). For example:
-
-    ```
-    Oscdimg -m -n -yo C:\temp\bootOrder.txt -bC:\winpe_amd64\Efisys.bin C:\winpe_amd64\winpeamd64.iso
-    ```
-
-    where Bootorder.txt contains the following list of files:
+Use **MakeWinPEMedia** with the `/UFD` option to format and install Windows PE to the USB flash drive, specifying the USB key's drive letter:
 
     ```
-    boot\bcd
-    boot\boot.sdi
-    boot\bootfix.bin
-    boot\bootsect.exe
-    boot\etfsboot.com
-    boot\memtest.efi
-    boot\memtest.exe
-    boot\en-us\bootsect.exe.mui
-    boot\fonts\chs_boot.ttf
-    boot\fonts\cht_boot.ttf
-    boot\fonts\jpn_boot.ttf
-    boot\fonts\kor_boot.ttf
-    boot\fonts\wgl4_boot.ttf
-    sources\boot.wim
+    MakeWinPEMedia /UFD C:\my_distribution F:
     ```
 
-## Next Steps
+To learn more, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
 
+### DVD or CD
 
-You can now use the multilingual image to create media for distribution. To create bootable media such as a USB flash drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md). You can also create a bootable CD or DVD. However, due to the size of a multilingual image, you must first create a boot order file before you create a bootable image (.iso) file on CD or DVD. For more information, see [Oscdimg Command-Line Options](oscdimg-command-line-options.md).
+1. Create a [boot order file](oscdimg-command-line-options.md). This is required for DVD or CD images larger than 4.5 GB to make sure that boot files are located at the beginning of the image.
+
+   For example, copy this into a text file called C:\Temp\BootOrder.txt: 
+
+   ```
+   boot\bcd
+   boot\boot.sdi
+   boot\bootfix.bin
+   boot\bootsect.exe
+   boot\etfsboot.com
+   boot\memtest.efi
+   boot\memtest.exe
+   boot\en-us\bootsect.exe.mui
+   boot\fonts\chs_boot.ttf
+   boot\fonts\cht_boot.ttf
+   boot\fonts\jpn_boot.ttf
+   boot\fonts\kor_boot.ttf
+   boot\fonts\wgl4_boot.ttf
+   sources\boot.wim
+   ```
+
+2. Create the ISO file, using the boot order file:
+
+   ```
+   Oscdimg -m -n -yo C:\temp\BootOrder.txt -bC:\winpe_amd64\Efisys.bin C:\winpe_amd64\winpeamd64.iso
+   ```
+
+3. Right-click the ISO file and select **Burn disc image**.
 
 ## Related topics
-
 
 [Windows Setup Technical Reference](windows-setup-technical-reference.md)
 

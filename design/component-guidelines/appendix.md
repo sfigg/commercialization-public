@@ -8,8 +8,8 @@ ms.assetid: 14FDD3C3-AB22-424E-83F2-822D529A1F25
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Appendix

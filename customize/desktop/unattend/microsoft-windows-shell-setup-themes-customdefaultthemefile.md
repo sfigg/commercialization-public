@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # CustomDefaultThemeFile
@@ -47,7 +47,7 @@ While you can create additional custom themes by adding .theme files to a Window
 
 This string type supports empty elements.
 
-> [!Note] 
+> [!Note]
 > The background color or design must not, in any way, obscure the Windows desktop icons, taskbar, **Start** button, or **Start** menu, or otherwise impair the functionality of the user interface. Users must be able to view and to use the Windows desktop for its intended purpose, which is to provide easy access to icons and to folders.
 
  

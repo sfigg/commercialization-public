@@ -7,8 +7,8 @@ title: IoT Core manufacturing guide
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IoT Core manufacturing guide
@@ -147,3 +147,4 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 [IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)
 
+[IoT Core Image Wizard](iot-core-image-wizard.md)

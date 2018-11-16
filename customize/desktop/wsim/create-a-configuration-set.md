@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Create a Configuration Set
 
@@ -26,7 +26,7 @@ Because a configuration set contains only internal references, it can be used fo
 1. Open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 1. On the **Tools** menu, click **Create Configuration Set**. The **Create Configuration Set** window opens.
 1. Browse to the destination folder for the configuration set, or enter a folder name.
-1. Select a folder that you want to copy to your **$OEM$ Folders** folder (optional), and then click **OK**.
+1. Select a folder that you want to copy to your `$OEM$` folder (optional), and then click **OK**.
 
 > [!Important]
 > If a configuration set is used during Windows Setup, all of the contents at the root of the media where the answer file exists are copied to the Windows installation. If there are many files and folders at the same level as the answer file, Windows Setup copies all of the files and folders to the Windows installation. Note that this might slow down installation. In some cases, you might run out of disk space.

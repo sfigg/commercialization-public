@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b33a2dc-1b41-420e-a02f-b5de0b7a7e1d
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.6bd51c1b-3dad-4a5e-b46d-98c2fe91d1aa"></span>DF - Sleep and PNP (disable and enable) with IO Before and After (Reliability)

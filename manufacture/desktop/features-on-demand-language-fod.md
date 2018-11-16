@@ -6,15 +6,15 @@ title: 'Language and region Features on Demand'
 ms.author: kenpacq
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Language and region Features on Demand
 
-## <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language and region-related Features on Demand reference
+## <span id="language_capabilities"></span> Language and region-related Features on Demand reference
 
-When you add a language pack to a Windows image, you also add [Features on Demand](features-on-demand-v2--capabilities.md) to enable additional functionality. To view available non language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
+When you add a language pack to a Windows image, you also add [Features on Demand](features-on-demand-v2--capabilities.md) to enable additional functionality. To view available non-language or region-related Features on Demand, see [Available Features on Demand](features-on-demand-non-language-fod.md).
 
 To see how to add Features on Demand and language packs to your Windows image, see [Add languages to Windows](add-and-remove-language-packs-offline-using-dism.md).
 
@@ -24,34 +24,34 @@ To see how to add Features on Demand and language packs to your Windows image, s
 > - [Additional font packages](#Additional_fonts)
 > - [Region-specific requirements](#Region_requirements)
 
-
 ### Language Features on Demand
 
 **Recommendation:** Add FODs after you add a language pack. Preinstall the Basic, Fonts, Text-to-speech, Optical character recognition (OCR), and speech recognition languages you expect users in the device’s target market to need. Additionally, add the handwriting recognition FODs to devices that ship with a pen.
 
 Language Features on Demand are available in six types:
 
-**Note:** Not all Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx).
+**Note:** Not all Features on Demand are available for every language. You can learn which FODs are available for languages [in the LP to FOD mapping spreadsheet](http://download.microsoft.com/download/7/6/0/7600F9DC-C296-4CF8-B92A-2D85BAFBD5D2/Windows-10-1809-FOD-to-LP-Mapping-Table.xlsx).
 
 
 | Component | Sample package name | Sample capability name  | Description |
 | --------- | -----------         |                   ----- | ----------- |
 | Basic     | Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab | Language.Basic~\~\~fr-FR~0.0.1.0  | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br></br><p>You must add this component before adding any of the other language FODs. <br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.|
-| Fonts     | Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab | Language.Fonts.Thai~\~\~und-THAI~0.0.1.0 | Fonts.<br></br><p>**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language). Example, th-TH requires the Thai font pack.<br></br><p>See [font capabilities](#fonts) for information about available font capabilities. |
+| Fonts     | Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package.cab | Language.Fonts.Thai~\~\~und-THAI~0.0.1.0 | Fonts.<br></br><p>**Note:** Some languages require a font pack. For example, th-TH requires the Thai font pack.<br></br><p>Check the [list of fonts](#fonts).  |
 | OCR | Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab | Language.OCR~\~\~fr-FR~0.0.1.0 |  Recognizes and outputs text in an image.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic component of the same language. |
 | Handwriting recognition | Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab | Language.Handwriting~\~\~fr-FR~0.0.1.0  | Enables handwriting recognition for devices with pen input.<br></br><p>**Recommendation:** Preinstall for the device’s target language on any device with a touch- or pen-capable screen. <br></br><p>**Dependencies**: The basic component of the same language.|
-| Text-to-speech | Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab| Language.TextToSpeech~\~\~fr-FR~0.0.1.0  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image. |
-| Speech recognition | Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab | Language.Speech~\~\~fr-FR~0.0.1.0 |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.<br></br><p>**Dependencies**: The basic and text-to-speech components of the same language. |
+| Text-to-speech | Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab| Language.TextToSpeech~\~\~fr-FR~0.0.1.0  | Enables text to speech, used by Cortana and Narrator.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.</p><p>**Dependencies**: The basic component of the same language.</p> |
+| Speech recognition | Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab | Language.Speech~\~\~fr-FR~0.0.1.0 |  Recognizes voice input, used by Cortana and Windows Speech Recognition.<br></br><p>**Recommendation:** Preinstall this package for each language that you've preinstalled in an image.</p><p>**Dependencies**: The basic and text-to-speech components of the same language. |
+| Retail Demo experience | Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package.cab | Language.RetailDemo~\~\~fr-FR~0.0.1.0 | <p>[Retail Demo experience](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/retail-demo-experience#add-retail-demo-mode-including-language-packs-to-your-images).</p><p>**Recommendation:** Preinstall this package for each language where you'll be selling devices on a retail showroom. Consider also preloading retail demo mode apps and content. </p><p>**Dependencies**: The basic component of the same languageBasic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package. </p>| 
 
 
 
-### <span id="Fonts"></span><span id="fonts"></span>Font Features on Demand
+### Fonts
 
-When adding languages for some regions, you'll need to add Features on Demand that add font support.
+When adding languages for some regions, you'll need to add fonts.
 
 Font features on demand provide additional fonts used for particular writing systems and languages. These additional fonts are not required for the Windows to display a language. However, prior to Windows 10, most of these fonts were installed by default on every system, and some were used for user interface display. Customers using particular languages are likely to require the additional fonts related to that language for documents or for user interface strings in applications that run in those languages. The capability names use script identifiers; for example, “Deva” indicates Devanagari script, which is used for Hindi, Konkani and other languages.
 
-**Recommendation:** If a PC will be sold to a certain region, install that region's Font (e.g., th-TH should be preinstalled on devices shipping to regions with Thai language).
+**Recommendation:** If a PC will be sold to a certain region, install that region's font (For example, th-TH should be preinstalled on devices shipping to regions with Thai language).
 
 | Region      | Description                            | Font capability required                              |
 |-------------|----------------------------------------|-------------------------------------------------------|
@@ -109,7 +109,7 @@ These fonts are optional and not required for any region.
 Note that this feature is distributed as a .cab file on the Feature on Demand ISO. Use `DISM /add-package` to add it to your image. See [Add or remove packages offline with DISM](add-or-remove-packages-offline-using-dism.md) for more information.
 
 ### List of all language-related Features on Demand
-[Download the list of all available language FODs](http://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
+[Download the list of all available language FODs](http://download.microsoft.com/download/7/6/0/7600F9DC-C296-4CF8-B92A-2D85BAFBD5D2/Windows-10-1809-FOD-to-LP-Mapping-Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
 

@@ -12,8 +12,8 @@ keywords: Windows Touch WDK, touch digitizer device, touch digitizer device WDK,
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Sample Report Descriptor for a Touch Digitizer Device (Windows 7)

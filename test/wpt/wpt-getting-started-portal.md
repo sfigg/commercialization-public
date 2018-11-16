@@ -8,8 +8,8 @@ ms.assetid: 8e41c00f-5155-4bc2-949e-1736a4b879ab
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # WPT Getting Started

@@ -7,8 +7,8 @@ title: 'IoT Core Add-ons command-line options'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IoT Core Add-ons Powershell Commands
@@ -251,5 +251,7 @@ Tests if the file is signed for the given config
 ## Related topics
 
 [IoT Core Add-ons](iot-core-adk-addons.md)
+
+[IoT Core Image Wizard](iot-core-image-wizard.md)
 
 [IoT Core manufacturing guide](iot-core-manufacturing-guide.md)

@@ -8,8 +8,8 @@ ms.assetid: 9948CED6-46DE-4F86-A1B7-87421FC16E4E
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Power Management

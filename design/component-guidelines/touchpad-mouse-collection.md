@@ -8,8 +8,8 @@ ms.assetid: CFB6271F-4028-418D-BC84-D96A578D92C1
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Mouse Collection

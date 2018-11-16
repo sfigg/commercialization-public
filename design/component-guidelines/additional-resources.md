@@ -12,8 +12,8 @@ keywords: driver certification WDK Touch, driver distribution WDK Touch, Windows
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Additional Resources

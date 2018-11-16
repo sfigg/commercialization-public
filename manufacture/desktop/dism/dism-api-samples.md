@@ -5,8 +5,8 @@ ms.assetid: 840f02eb-479d-434e-80b6-ff090f24e78f
 ms.author: kenpacq
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # DISM API Samples

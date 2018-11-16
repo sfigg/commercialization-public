@@ -1,16 +1,16 @@
 ---
-title: UCSI Get Connector Status command - USB device detection [Type-C MUTT]
+title: UCSI Get Connector Status command - USB device detection \Type-C MUTT\
 Description: UCSI Get Connector Status command - USB device detection [Type-C MUTT]
 ms.assetid: 
-author: sapaetsc-msft
-ms.author: sapaetsc
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
-# UCSI Get Connector Status command - USB device detection [Type-C MUTT]
+# UCSI Get Connector Status command - USB device detection \[Type-C MUTT\]
 
 Verifies that the system can detect a USB device.
 

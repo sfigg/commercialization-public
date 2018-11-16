@@ -8,6 +8,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 826a5b62-e7ef-4e9f-975e-00579554c5a5
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Adding mobile packages

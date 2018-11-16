@@ -5,24 +5,25 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: justinha
-ms.date: 09/13/2018
+ms.date: 11/13/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
 ---
 
 # Windows Defender Device Guard
+
 Starting with Windows 10, version 1709, Windows Defender Device Guard is split into two features known as Windows Defender Exploit Guard and Windows Defender Application Control. These features are a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that are defined in an enterprise's code integrity policies. If the app isn’t trusted it can’t run, period. 
 
 With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. 
 
 Windows Defender Device Guard can also leverage advanced hardware features on hardware that supports them. These features include CPU virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT). In addition, hardware that includes input/output memory management units (IOMMUs) provides even stronger protections. When you enable the features associated with CPU virtualization extensions and SLAT, the Code Integrity service can run alongside the kernel in a Windows hypervisor-protected container. 
 
-**Note:** Beginning with Windows 10 version 1709 and Windows Server version 1709, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device Guard and Credential Guard are not impacted and will function as expected. Device Guard and Credential Guard are not supported on earlier versions of Windows when Intel TXT or SGX are enabled in a platform via the BIOS. 
+>[!NOTE]
+>Beginning with Windows 10 version 1709 and Windows Server version 1709, when Intel TXT or SGX are enabled in a platform via the BIOS, Windows Defender Device Guard and Credential Guard are not impacted and will function as expected. Device Guard and Credential Guard are not supported on earlier versions of Windows when Intel TXT or SGX are enabled in a platform via the BIOS. 
 
 If you are an OEM building secure systems, you must provide the hardware to enable these features.
 
-**IT Professionals:**  If you want more information on how to deploy Windows Defender Application Control, see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+For more information about how to deploy Windows Defender Application Control in an enterprise , see [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 ## Windows Defender Exploit Guard
 
@@ -34,7 +35,7 @@ For a device to support Windows Defender Exploit Guard as specified in the Windo
 |----------------------|---------|
 | Secure Boot | Hardware-based Secure Boot must be supported. To learn more, see [Secure Boot](OEM-secure-boot.md). | 
 | Secure Boot configuration and management | <ul><li>The OEM has to be able to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time. </li><li>Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.</li></ul> |
-| Secure firmware update process | Like UEFI software, UEFI firmware can have security vulnerabilities. It is essential to have the capability to immediately patch such vulnerabilities when found through firmware updates. UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).|
+| Secure firmware update process | Like UEFI software, UEFI firmware can have security vulnerabilities. It is essential to have the capability to immediately patch such vulnerabilities when found through firmware updates. UEFI firmware must support secure firmware update following Hardware Compatibility Specification for Systems for Windows 10 under [System.Fundamentals.Firmware.UEFISecureBoot](https://docs.microsoft.com/windows-hardware/design/compatibility/systems#systemfundamentalsfirmwareuefisecureboot).|
 | Trusted Platform Module (TPM) | To learn more about TPM, see [Trusted Platform Module](OEM-TPM.md).|
 | United Extensible Firmware Interface (UEFI) | To learn more, see [United Extensible Firmware Interface (UEFI) firmware requirements](OEM-UEFI.md). |
 | Virtualization-based security (VBS) | Device Guard requires VBS. You can learn more about VBS by reading [Virtualization-based Security (VBS)](OEM-VBS.md). |
@@ -51,11 +52,13 @@ Starting with Windows 10, version 1709, the code integretity part of Windows Def
 
 ## Windows Defender Device Guard and Windows Defender Credential Guard Readiness Tool
 
-To determine if a device is able to run Windows Defender Device Guard and Windows Defender Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337).
+To determine if a device is able to run Windows Defender Device Guard and Windows Defender Credential Guard, download the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
+For guidelines about how to create more secure drivers, see the [Driver security checklist](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/driver-security-checklist).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
-- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
+- [Driver Securty Guidance](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/)
+- [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-10s-security)
 - [Driver Compatibility with Device Guard on Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
 - [Managing Managing Windows 10 Device Guard with Configuration Manager](https://blogs.technet.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
--[Device Guard signing](https://docs.microsoft.com/en-us/microsoft-store/device-guard-signing-portal)
+- [Device Guard signing](https://docs.microsoft.com/microsoft-store/device-guard-signing-portal)

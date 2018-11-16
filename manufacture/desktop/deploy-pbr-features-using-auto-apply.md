@@ -5,8 +5,8 @@ title: 'Deploy push-button reset features with auto-apply folders'
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Deploy push-button reset features using Auto-apply folders
@@ -138,10 +138,10 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
 2. Copy configuration files and the related asset files
 
-    - Copy the unattend.xml file you want for recovery to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
-    - Copy your LayoutModification.xml to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
-    - Copy your TaskbarLayoutModification.xml to C:\\Recovery\\AutoApply\\ and any asset files to C:\\Recovery\\AutoApply\\CustomizationFiles
-    - Copy %windir%\\System32\\OOBE\info and all its contents to C:\\Recovery\\AutoApply\\OOBE
+    - Copy the unattend.xml file you want for recovery to `C:\Recovery\AutoApply\` and any asset files to `C:\Recovery\AutoApply\CustomizationFiles`. ()
+    - Copy your LayoutModification.xml to `C:\Recovery\AutoApply\` and any asset files to `C:\Recovery\AutoApply\CustomizationFiles`
+    - Copy your TaskbarLayoutModification.xml to `C:\Recovery\AutoApply\` and any asset files to `C:\Recovery\AutoApply\CustomizationFiles`
+    - Copy `%windir%\System32\OOBE\info` and all its contents to `C:\Recovery\AutoApply\OOBE`
     
 ## Step 5: Deploy and customize Windows
 

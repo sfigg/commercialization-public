@@ -7,8 +7,8 @@ title: 'Bare metal reset/recovery: create recovery media while deploying new dev
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Bare metal reset/recovery: create recovery media while deploying new devices

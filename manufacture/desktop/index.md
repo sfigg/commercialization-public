@@ -7,8 +7,8 @@ title: Desktop manufacturing
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Desktop manufacturing
@@ -33,7 +33,7 @@ After you've learned how to design, develop, and customize Windows images, you c
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Getting started</strong></p></td>
-<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough.md) | [Manufacturing Windows Engineering Guide (WEG)](manufacturing-windows-engineering-guide.md)</p></td>
+<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough.md) | [System builder deployment of Windows 10 for desktop editions](system-builder-deployment-of-windows-10-for-desktop-editions.md)| [Manufacturing Windows Engineering Guide (WEG)](manufacturing-windows-engineering-guide.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment options</strong></p></td>

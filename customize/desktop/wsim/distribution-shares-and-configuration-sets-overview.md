@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Distribution Shares and Configuration Sets Overview
 
@@ -24,97 +24,29 @@ If you are installing Windows in an environment that does not have a network sha
 
 ## Folders in a Distribution Share
 
-When you create a distribution share by using Windows System Image Manager (Windows SIM), three folders are created automatically. The folders are named **$OEM$ Folders**, **Out-of-Box Drivers**, and **Packages**. If you create your own distribution share, it must contain at least one of these folders for Windows SIM to recognize it as a valid distribution share.
+When you create a distribution share by using Windows System Image Manager (Windows SIM), three folders are created automatically. The folders are named `$OEM$`, `Out-of-Box Drivers`, and `Packages`. If you create your own distribution share, it must contain at least one of these folders for Windows SIM to recognize it as a valid distribution share.
 
 ### <a href="" id="-oem--folders"></a>**$OEM$ Folders**
 
-You can use the **$OEM$ Folders** folder and subfolders only when you are creating configuration sets. You can use **$OEM$ Folders** to include logos for branding and to add applications and other files that customize the unattended installation.
+You can use the `$OEM$` folder and subfolders only when you are creating configuration sets. You can use `$OEM$` to include logos for branding and to add applications and other files that customize the unattended installation.
 
 As a general rule, to add new files and resources to Windows, use a data image. For more information, see [How to Create a Data Image](http://go.microsoft.com/fwlink/?LinkId=224962).
 
-For more information about how to use **$OEM$ Folders**, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
+For more information about how to use `$OEM$` folders, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
 
 > [!Important]
-> Do not overwrite existing files that are carried and serviced by the operating system. Using **$OEM$ Folders** to update or overwrite these files can cause the operating system to behave unpredictably and cause serious issues.
+> Do not overwrite existing files that are carried and serviced by the operating system. Using the `$OEM$` folder to update or overwrite these files can cause the operating system to behave unpredictably and cause serious issues.
 
-The following table describes the support for **$OEM$ Folders** and its subfolders.
+The following table describes the `$OEM$` folder and its subfolders.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Folder</th>
-<th>Definition</th>
-<th>Supported</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>$OEM$ Folders</strong></p></td>
-<td><p>Contains all supplemental folders and files for an automated or customized installation.</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>$OEM$ Folders\Textmode</strong></p></td>
-<td><p>Contains updated mass-storage drivers and hardware abstraction layer (HAL) files that the text-mode part of Setup requires.</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>$OEM$ Folders\$$</strong></p></td>
-<td><p>Contains files that Windows Setup copies to the <strong>%WINDIR%</strong> folder (for example, <strong>C:\Windows</strong>) during installation.</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>$OEM$ Folders\$$\Help</strong></p></td>
-<td><p>Contains custom Help files that Windows Setup copies to the <strong>%WINDIR%\Help</strong> folder during installation.</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>$OEM$ Folders\$$\System32</strong></p></td>
-<td><p>Contains files that Windows Setup copies to the <strong>%WINDIR%\System32</strong> folder during installation.</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>$OEM$ Folders\$1</strong></p></td>
-<td><p>Represents the root of the drive on which you installed Windows (also called the boot partition), and contains files that Windows Setup copies to the boot partition during installation.</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>$OEM$ Folders\$1\</strong><em>Pnpdrivers</em></p></td>
-<td><p>Contains new or updated Plug and Play (PnP) drivers. You specify the folder name in the Unattend.xml file for unattended installations. For example, you might name this folder <strong>$OEM$ Folders\$1\Pnpdrvs</strong>.</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>$OEM$ Folders\$1\SysPrep</strong></p></td>
-<td><p>Contains files that are used for <strong>Sysprep</strong>-based installation.</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>$OEM$ Folders\$Docs</strong></p></td>
-<td><p>Contains files that Windows Setup copies to <strong>%DOCUMENTS_AND_SETTINGS%</strong> during installation.</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>$OEM$ Folders\$Progs</strong></p></td>
-<td><p>Contains programs that Windows Setup copies to the <strong>%PROGRAM_FILES%</strong> folder during installation.</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>$OEM$ Folders\$Progs\Internet Explorer</strong></p></td>
-<td><p>Contains the settings file to customize Windows Internet Explorer®.</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>$OEM$ Folders\</strong><em>drive_letter</em>\<em>subfolder</em></p></td>
-<td><p>A subfolder of the drive that contains files that Windows Setup copies to the subfolder during installation. Multiple instances of this type of folder can exist under the <strong>$OEM$ Folders\</strong><em>drive_letter</em> folder, for example, <strong>$OEM$ Folders\D\MyFolder</strong>.</p></td>
-<td><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
+|Folder                   | Definition | 
+|-------------------------|------------|
+`$OEM$`                   | Contains supplemental folders and files for an automated or customized installation.|
+|`$OEM$\$$`               | Contains files that Windows Setup copies to the `%WINDIR%` folder (for example, `C:\Windows`) during installation.| 
+| `$OEM$\$$\System32`     | Contains files that Windows Setup copies to the `%WINDIR%\System32` folder during installation. | 
+| `$OEM$\$1`              | Represents the root of the drive on which you installed Windows (also called the boot partition), and contains files that Windows Setup copies to the boot partition during installation. | 
+| `$OEM$\$1\`_subfolder_  | Represents subfolders of the root drive. Example: `$OEM$\$1\MyDriver`. | 
+| `$OEM$\`_driveletter\subfolder_ | Represents other drive letters and subfolders. Multiple instances of this type of folder can exist under the `$OEM$\`_driveletter_ folder. Example: `$OEM$\D\MyFolder` . | 
 
 ### Out-of-Box Drivers
 

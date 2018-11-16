@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 121fe154-b7a2-47a2-9aa6-629ba25bcbbc
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.bfcf4a45-33fc-4ece-93ca-97dfacfa2b24"></span>Camera Driver System Test - MediaCapture - ValidateFrameIsoSpeedValues

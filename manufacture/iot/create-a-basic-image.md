@@ -7,8 +7,8 @@ title: 'Lab 1a: Create a basic image'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Lab 1a: Create a basic image
@@ -52,8 +52,12 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 3. Import sample packages into the workspace. You may choose to import the packages selectively or import all.
     ``` powershell
-    New-IoTWorkspace C:\MyWorkspace Contoso arm
-    (or) new-ws C:\MyWorkspace Contoso arm
+    # Importing Recovery packages from sample workspace
+    Import-IoTOEMPackage Recovery.*
+    (or) importpkg Recovery.*
+    # Below example imports all packages from the sample workspace
+    Import-IoTOEMPackage *
+    (or) importpkg *
     ```
 
 

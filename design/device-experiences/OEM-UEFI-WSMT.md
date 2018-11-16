@@ -1,11 +1,11 @@
 ---
 title: Understanding the Windows SMM Security Mitigation Table (WSMT) 
 description: Provides details for OEMs on how the WSMT interacts with VBS
-ms.author: justinha, allenma
+ms.author: justinha
 ms.date: 3/31/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Understanding the Windows SMM Security Mitigation Table (WSMT)
 

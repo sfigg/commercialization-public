@@ -8,8 +8,8 @@ ms.assetid: 8B74357E-1F22-4E6E-B54D-C0C979272DBC
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Tablet

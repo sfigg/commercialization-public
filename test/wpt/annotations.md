@@ -1,3 +1,11 @@
+---
+title: Annotations
+description: Annotations
+ms.author: dawn.wood
+ms.date: 05/05/2017
+ms.topic: article
+---
+
 # Annotations
 
 Annotation is a user-defined column in WPA tables. WPA provides **Dynamic Annotation** which allows for users to annotate tables based on AQS queries. Multiple annotation columns can be added and configured independently. Annotations and queries can be persisted in WPA profiles as a part of the presets. **Legacy Annotation** is another way of adding annotations in WPA. It supports annotating on a per-row basis. There can be only one legacy annotation for each row and it will not be persisted in the presets.

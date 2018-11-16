@@ -11,8 +11,8 @@ ms.assetid: C34A4C8C-D312-4C83-9B4C-FE57E2341A9F
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Functionality with networking devices

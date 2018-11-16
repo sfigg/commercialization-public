@@ -7,8 +7,8 @@ title: Clean Up the WinSxS Folder
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Clean Up the WinSxS Folder
@@ -75,7 +75,7 @@ The **/Cleanup-Image** parameter of **Dism.exe** provides advanced users more op
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
 
-    > [!WARNING]  
+    > [!WARNING]
     > All existing service packs and updates cannot be uninstalled after this command is completed. This will not block the uninstallation of future service packs or updates.
 
      

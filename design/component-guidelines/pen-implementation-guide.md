@@ -8,8 +8,8 @@ ms.assetid: FB22115B-534F-4BD5-86FF-3A828FD66968
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Pen Implementation Guide

@@ -8,8 +8,8 @@ ms.assetid: 89203B18-8C1F-40ED-9DF5-B68F2995BFD9
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Exercise 2 - Manually Collect ETW Logs for Media Scenarios Using WPR

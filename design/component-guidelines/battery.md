@@ -8,8 +8,8 @@ ms.assetid: 7EAC1C52-22BF-49BC-B0E8-3BF202FE9F9A
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Battery

@@ -7,8 +7,8 @@ title: How Configuration Passes Work
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # How Configuration Passes Work

@@ -10,8 +10,8 @@ ms.sitesec: msdn
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 
@@ -107,7 +107,7 @@ Process *&lt;X&gt;* uses the CPU for 5.3 seconds during Fast startup resume post
 
 In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to determine which function of the process needs further investigation. Excessive processor use can occur in more than one thread at a time. For each thread that's involved, view the function call stacks in WPA.
 
-> [!NOTE]  
+> [!NOTE] 
 > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
@@ -345,7 +345,7 @@ Critical symbols missing: Ensure that the machine has access to the Microsoft pu
 
 Symbols of non-Microsoft components missing: These missing symbols could be for your own components, or for those owned by a different partner. Collaborate with your partners to obtain these third-party symbols for the component that is missing symbols, and configure the correct symbols path on the computer before re-running the assessment.
 
-> [!NOTE]  
+> [!NOTE]
 > For more information about setting the correct symbols path, see [Troubleshooting Windows Assessment Services](http://go.microsoft.com/fwlink/?LinkId=246155).
 
 Sharing components’ symbols across partners in the ecosystem ensures better collaboration through a reliable and efficient bug triage and analysis process. We recommend that partners define these collaborative relationships, which will ensure that you have the resources you need to find the root cause of the issues reported on your system component.
@@ -405,7 +405,7 @@ The Issue Details list each thread preempted by the ISR/DPC. The list is roughly
 
 DPC exceeds the threshold of 1.0 milliseconds 5 times during Media engine lifetime. The 5 instances of this DPC run for a combined total of 3.7 seconds
 
-> [!NOTE]  
+> [!NOTE]
 > The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
@@ -423,7 +423,7 @@ The issue’s details in WPA contain file image information, and recommendations
 
 Summary: Fast startup overall resume issues 275MB of reads and writes, and flushes 82 times to storage
 
-> [!NOTE]  
+> [!NOTE]
 > When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
 
 **Processor use summary**
@@ -436,7 +436,7 @@ The summary issue provides details per process in descending order of impact. Fo
 
 Summary: Processes use 26.9 seconds of CPU time during Fast startup overall resume
 
-> [!NOTE]  
+> [!NOTE]
 > When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
 
 **Processor and disk contention summary**

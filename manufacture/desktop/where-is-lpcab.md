@@ -7,8 +7,8 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/language-packs-and-windows-deployment
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Where is lp.cab?

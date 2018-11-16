@@ -9,8 +9,8 @@ author: kpacquer
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Write filter exclusions
 
@@ -19,7 +19,7 @@ You can add specific files or folders on a protected volume to a file exclusion 
 You must use an administrator account to add or remove file or folder exclusions during run time, and you must restart the device for new exclusions to take effect.
 
 > [!Important]
-> You cannot add exclusions for the following items:
+> Don't add exclusions for the following:
 >
 > * `\Windows\System32\config\DEFAULT`
 > * `\Windows\System32\config\SAM`
@@ -28,7 +28,7 @@ You must use an administrator account to add or remove file or folder exclusions
 > * `\Windows\System32\config\SYSTEM`
 > * `\Users\<User Name>\NTUSER.DAT`
 >
-> You also cannot add exclusions for the following items:
+> Also, don't add exclusions for the following:
 >
 > * The volume root. For example, C: or D:.
 > * The `\Windows` folder on the system volume.
@@ -36,7 +36,8 @@ You must use an administrator account to add or remove file or folder exclusions
 > * The `\Windows\System32\Drivers` folder on the system volume.
 > * Paging files.
 >
-> However, you can exclude subdirectories and files under these items.
+> Adding an exclusion for any of these items is unsupported and may lead to unpredictable results. 
+> It's OK to exclude subdirectories and files under these locations.
 
 You cannot rename or move a file or folder from a protected location to an unprotected location, or vice versa. When write filters are active and you attempt to delete an excluded file or folder in Windows Explorer, the system attempts to move the file or folder to the Recycle Bin. This causes an error, because you cannot move files that are not filtered to a location that is write filter protected.
 

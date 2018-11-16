@@ -7,8 +7,8 @@ MSHAttr:
 ms.author: justinha
 ms.date: 12/15/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Windows 10 S security features and requirements for OEMs

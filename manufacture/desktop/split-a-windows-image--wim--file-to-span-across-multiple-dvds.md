@@ -6,8 +6,8 @@ title: 'Split a Windows image file (.wim) to span across multiple DVDs'
 ms.author: kenpacq
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Split a Windows image file (.wim) to span across multiple DVDs

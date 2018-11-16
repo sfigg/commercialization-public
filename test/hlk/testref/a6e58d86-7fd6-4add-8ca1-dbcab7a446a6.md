@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f30821e3-0c55-442b-92cf-fbdda2ef8446
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.a6e58d86-7fd6-4add-8ca1-dbcab7a446a6"></span>Camera Driver Test - Preview (Sample Grabber), Record H.264 Video and AAC Audio from each Capture Stream type

@@ -8,8 +8,8 @@ ms.assetid: 403B5748-B54C-485D-A743-BA5D4D395117
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern Standby design decisions

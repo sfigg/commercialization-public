@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # UWPAppsUseLightTheme
 
@@ -58,15 +58,14 @@ For a list of the supported Windows editions and architectures that this compone
 The following XML output shows how to set a customized theme.
 
 ```xml
-<settings pass=”oobeSystem”>
-    <Themes>
-        <ThemeName>MyOLEDTheme</ThemeName>
-        <DefaultThemesOff>false</DefaultThemesOff>
-        <DesktopBackground>c:\windows\OLEDFriendlyImage.jpg </DesktopBackground>
-        <WindowColor>Lime</WindowColor>
-        <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
-    </Themes>
-</settings>
+<Themes>
+   <ThemeName>Fabrikam Theme</ThemeName>
+   <DefaultThemesOff>false</DefaultThemesOff>
+   <DesktopBackground>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-wallpaper.jpg</DesktopBackground>
+   <BrandIcon>%WINDIR%\OEM\CustomizationFiles\Theme1\fabrikam-logo.png</BrandIcon>
+   <WindowColor>Automatic</WindowColor>
+   <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
+</Themes>
 ```
 
 ## Related topics

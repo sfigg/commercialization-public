@@ -8,8 +8,8 @@ ms.assetid: 08E6F079-A7F9-4DD9-95C2-A9A6B3350594
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern Standby FAQs

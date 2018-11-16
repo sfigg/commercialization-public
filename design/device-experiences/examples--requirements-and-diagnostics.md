@@ -11,8 +11,8 @@ ms.assetid: 1278D2EA-8AB1-46CB-BF96-7AC75B539FD3
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Examples, Requirements and Diagnostics

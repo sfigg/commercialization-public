@@ -7,8 +7,8 @@ title: 'Add updates to a Windows image'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Add updates to a Windows image
@@ -19,7 +19,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 -  **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to re-add the updates.
 
--  **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to re-add the apps.
+-  **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to re-add the apps.
 
 -  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
@@ -28,16 +28,16 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 ## Add a Windows update package to an image
 
-1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu.
+1.  Get a Windows update package. For example, get the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/4464619) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com). If the update has any prerequisite updates, get those too.
 
     To learn more, see [https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx](https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx).    
 
-2.  Add the updates to a [mounted](mount-and-modify-a-windows-image-using-dism.md) or online image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command by adding multiple /PackagePath items.
+2.  Add the updates to a [mounted](mount-and-modify-a-windows-image-using-dism.md) or online image. For packages with dependencies, either install the packages in order, or add them all at once using a single DISM command.
 
     **Example**: adding a cumulative update to a mounted image:
 
     ```
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="windows10.0-kb4016871-x64_27dfce9dbd92670711822de2f5f5ce0151551b7d.msu"  /LogPath=C:\mount\dism.log
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="windows10.0-kb4456655-x64_fca3f0c885da48efc6f9699b0c1eaf424e779434.msu"  /LogPath=C:\mount\dism.log
     ```
 
     **Example**: adding multiple updates:
@@ -73,9 +73,3 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
     > Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of windows a device can be found in the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR`.
 
 5. If you're done updating your image, you can unmount it, committing changes.
-
-	
-
-
-
-

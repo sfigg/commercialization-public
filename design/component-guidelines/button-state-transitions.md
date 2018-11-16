@@ -8,8 +8,8 @@ ms.assetid: EA2FFEBE-3805-4370-9E68-9597D42FC889
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Button State Transitions

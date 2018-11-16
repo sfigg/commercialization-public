@@ -7,8 +7,8 @@ title: Update apps on your Windows 10 IoT Core devices
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Update apps on your Windows 10 IoT Core devices

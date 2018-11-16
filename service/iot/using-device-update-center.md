@@ -6,8 +6,8 @@ title: 'Device Update Center User Guide'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Device Update Center User Guide

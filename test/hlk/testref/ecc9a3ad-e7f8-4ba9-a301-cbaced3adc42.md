@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f561a68-a208-4e5d-9685-a6a0e21ff856
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.ecc9a3ad-e7f8-4ba9-a301-cbaced3adc42"></span>Sensor Camera Driver Controls System Test - WHITEBALANCEMODE - Check Default

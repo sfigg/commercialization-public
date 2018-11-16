@@ -12,8 +12,8 @@ author: kpacquer
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Service UWF-protected devices
 

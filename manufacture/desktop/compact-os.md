@@ -7,8 +7,8 @@ title: 'Compact OS, single-instancing, and image optimization'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Compact OS, single-instancing, and image optimization

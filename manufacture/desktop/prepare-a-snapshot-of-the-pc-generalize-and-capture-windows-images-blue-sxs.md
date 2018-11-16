@@ -7,8 +7,8 @@ title: 'Lab 9: Make changes from Windows (audit mode)'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/run-audit-mode-in-the-factory
 ---
 
@@ -49,9 +49,9 @@ If you want to capture the changes in an image and apply it to other devices, yo
 
 1.	On your technician PC, prepare a USB key with the Office Deployment Tool:
 
-    a.  Mount the ISO for the deployment tool from "X21-20432 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-20474 SW DVD5 Office 2016 v16.2.1 Deployment Tool for OEM\X21-20474.img" 
+    1.  Mount the ISO for the deployment tool from "X21-20432 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-20474 SW DVD5 Office 2016 v16.2.1 Deployment Tool for OEM\X21-20474.img" 
     
-    b.  Copy files from the mounted drive to the USB-B key, for example, (where E:\ is driver letter for USB-B) E:\OfficeV16.2.1
+    2.  Copy files from the mounted drive to the USB-B key, for example, (where E:\ is driver letter for USB-B) E:\OfficeV16.2.1
 
 2.	On your reference PC, open the Office Deployment Tool, for example: E:\Officev16.2.1\officedeploymenttool.exe
 

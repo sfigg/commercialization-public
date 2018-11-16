@@ -7,8 +7,8 @@ title: 'Answer files (unattend.xml)'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Answer files (unattend.xml)
@@ -42,7 +42,7 @@ You can specify which configuration pass to add new settings:
 
 -   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-> [!Note]  
+> [!Note]
 > These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
@@ -85,7 +85,7 @@ You can specify which configuration pass to add new settings:
     -   Model=`Notebook Model 1`
     -   Logo=`C:\Fabrikam\Fabrikam.bmp`
         
-    Create a 32-bit color with a maximum size of 120x120 pixels, save it as D:\\AnswerFiles\\Fabrikam.bmp file on your local PC, or use the sample from the USB-B key: `D:\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
+    Create a 32-bit color with a maximum size of 120x120 pixels, save it as `D:\AnswerFiles\Fabrikam.bmp` file on your local PC, or use the sample from the USB-B key: `D:\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
     
     We'll copy the logo into the Windows image in a few steps.
 

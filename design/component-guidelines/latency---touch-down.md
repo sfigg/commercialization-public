@@ -8,8 +8,8 @@ ms.assetid: 452005A7-49FF-468F-A436-19460132A643
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Latency - Touch Down

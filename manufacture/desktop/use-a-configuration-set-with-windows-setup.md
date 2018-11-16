@@ -8,8 +8,8 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 redirect_url: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/hh824820(v%3dwin.10)
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Use a Configuration Set with Windows Setup

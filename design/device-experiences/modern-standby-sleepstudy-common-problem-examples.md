@@ -11,8 +11,8 @@ ms.assetid: 13850844-9949-404B-94A0-50EE53AF9A00
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern standby SleepStudy common problem examples

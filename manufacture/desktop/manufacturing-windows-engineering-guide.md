@@ -6,8 +6,8 @@ title: 'Manufacturing Windows Engineering Guide'
 ms.author: kenpacq
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Manufacturing Windows Engineering Guide (WEG)

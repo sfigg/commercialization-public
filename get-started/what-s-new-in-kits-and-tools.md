@@ -7,8 +7,8 @@ author: dawnwood
 ms.author: dawnwood
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # What's new in ADK kits and tools
 
@@ -30,7 +30,7 @@ With the latest version of Windows Performance Analyzer (WPA), .NET 4.5.2 framew
 
 ## Retail Demo Experience (RDX)
 
-[RDX 3.0 will be available soon](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience), and will be automatically updated on Windows 10, build 1803 and 1809. Updates include a new webpage-style layout, a new API to allow you to manage your own assets, and a digital fact tag that can be updated locally from the sales floor.
+[RDX 3.0 is available in Windows 10, version 1809](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience), and will be automatically updated on Windows 10, version 1803 for connected devices. Updates include a new webpage-style layout, a new API to allow you to manage your own assets, and a digital fact tag that can be updated locally from the sales floor.
 
 ### Answer file setting changes
 

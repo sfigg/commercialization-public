@@ -11,8 +11,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Windows System Image Manager Scenarios Overview
 
@@ -85,7 +85,7 @@ You can use Windows SIM to add applications or drivers to be installed during W
 
 You can add more applications, scripts, and other binary files by using a data image. A data image is packaged in a way that is similar to a Windows image. By using the **DISM** tool (**DISM.exe**), you can capture a folder structure that contains the resources that you must add to Windows (or another partition on the computer) during Windows Setup. You can specify where the data image is applied by using the **DataImage** setting in the **Microsoft-Windows-Setup** component. For more information, see [How to Create a Data Image](http://go.microsoft.com/fwlink/?LinkId=224962).
 
-You can also use **$OEM$ Folders** folder structures to place binary files and other applications in specific locations during Windows Setup. Applications are added from distribution shares through subfolders in **$OEM$ Folders**. You must also add a **RunSynchronous** setting to the answer file to open the Windows Installer file or the .exe file that installs the application. For more information, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
+You can also use `$OEM$` folder structures to place binary files and other applications in specific locations during Windows Setup. Applications are added from distribution shares through subfolders in `$OEM$`. You must also add a **RunSynchronous** setting to the answer file to open the Windows Installer file or the .exe file that installs the application. For more information, see [How to Manage Files and Folders in a Distribution Share](http://go.microsoft.com/fwlink/?LinkId=224963).
 
 ### Add Updates to a Windows Image Offline
 

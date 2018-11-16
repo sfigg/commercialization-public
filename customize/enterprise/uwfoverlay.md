@@ -12,8 +12,8 @@ author: kpacquer
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 # Unified Write Filter (UWF) overlay location and size
 
@@ -103,13 +103,14 @@ You'll still need to reserve some space on the disk for the overlay. This space 
 
 On devices with a disk overlay, you can choose to keep working using the overlay data, even after a reboot. This can be helpful in situations where your guest users may need to access for longer periods, and may need to power off the device between uses. 
 
-This option gives your IT department more control over when the overlay is wiped.
+This option gives your IT department more control over when the overlay is reset. You can also provide your users with scripts that will help them reset the overlay on demand.
 
 To turn persistent overlay on or off:
 
 * [CMD](uwfmgrexe.md): uwfmgr overlay set-persistent (on|off)
 
 To reset the overlay:
+
 * [CMD](uwfmgrexe.md): `uwfmgr overlay reset-persistentstate on`
 
 

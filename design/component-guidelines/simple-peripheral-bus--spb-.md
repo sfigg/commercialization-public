@@ -8,8 +8,8 @@ ms.assetid: C35E376C-DB22-459F-BCB0-C1C2BB5988E5
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Simple Peripheral Bus (SPB)

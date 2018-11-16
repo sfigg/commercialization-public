@@ -7,8 +7,8 @@ title: Test Battery Life and Power Consumption
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Test Battery Life and Power Consumption

@@ -12,8 +12,8 @@ keywords: Windows Touch WDK, multitouch digitizer drivers, HID usages, Windows T
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Supporting Usages in Multi-touch Digitizer Drivers (Windows 7)

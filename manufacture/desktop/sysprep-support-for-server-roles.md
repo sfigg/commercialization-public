@@ -7,8 +7,8 @@ title: Sysprep Support for Server Roles
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Sysprep Support for Server Roles

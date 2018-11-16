@@ -5,8 +5,8 @@ ms.assetid: A7585276-FA63-4A5A-B1E9-549A1CD3FC05
 ms.author: eliotgra
 ms.date: 04/29/2015
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Implementing Web Services on Devices for Printing

@@ -7,8 +7,8 @@ title: IoT Core manufacturing
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # IoT Core manufacturing
@@ -57,6 +57,11 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <td align="left"><p>[IoT Core Add-ons Powershell Commands](iot-core-adk-addons-command-line-options.md)</p></td>
 <td align="left"><p>These tools are part of the [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \Tools folder. To learn more about these tools, see [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>[IoT Core Image Wizard](iot-core-image-wizard.md)</p></td>
+<td align="left"><p>The [IoT Core Image Wizard](iot-core-image-wizard.md) is a GUI tool to help you create a new workspace and image for your device.</p></td>
+</tr>
+
 </tbody>
 </table>
 

@@ -5,12 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f15fc29-149a-4232-b7f3-fb5db7187fd7
-author: EliotSeattle
-ms.author: eliotgra
-ms.date: 10/11/2018
+author: dawn.wood
+ms.author: dawnwood
+ms.date: 11/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_hlk_test.aed4ff5a-77c3-4bf6-aed8-3d3aee692fcb"></span>WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 10.0)

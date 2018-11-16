@@ -8,8 +8,8 @@ ms.assetid: D1B34D5D-E122-4897-8DCD-2EB2F07481B9
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Optimization

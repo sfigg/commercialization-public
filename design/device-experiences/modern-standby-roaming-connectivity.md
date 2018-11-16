@@ -11,8 +11,8 @@ ms.assetid: 1FC7A818-44E7-408D-A600-042299930AA4
 ms.author: eliotgra
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Modern standby roaming connectivity

@@ -1,45 +1,44 @@
 ---
 author: kpacquer
-Description: 'Language Packs'
+Description: 'Languages'
 ms.assetid: 051a9952-c160-4f51-8575-bde6e4868b03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Language Packs'
+title: 'Languages'
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/7/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
+
 ---
 
-# Languages overview
+# Languages
 
+Set up Windows 10 or Windows Server with the right set of languages, settings, and keyboards or other input devices for customers in different regions.
 
-To design PCs that work better for customers in different regions, you can set up Windows with the right set of languages, settings, and keyboards or other input devices.
+## Localize Windows
 
-## <span id="What_s_new_with_Language_Packs_for_Windows_10_"></span><span id="what_s_new_with_language_packs_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_LANGUAGE_PACKS_FOR_WINDOWS_10_"></span>Language components in Windows 10
+* [Add languages to Windows](add-language-packs-to-windows.md): Add localized text for the dialog boxes, menu items, and help files that you see in Windows, and more **Microsoft-Windows-Client-Language-Pack_x64_es-es.cab**. 
 
-To help reduce the size of your image, languages in Windows 10 are split into the following components, which are distributed as language packs and [Features On Demand (FODs)](features-on-demand-language-fod.md). You don’t have to add all of a language’s related FODs, but we recommend always preinstalling the Basic, Fonts, Optical character recognition (OCR), Text-to-speech, and Speech recognition FODs if they’re available for the languages you’re preinstalling. We also recommend preinstalling the handwriting FOD if you’re shipping a device with a pen.
+  - [List of available languages for Windows](available-language-packs-for-windows.md).
 
-When you add a language, the version of the language components must match the version of Windows. For example, you can't add a Windows 10 language pack to Windows 8, or add Windows 8 language pack to Windows 10. The build number must also match.
+  - [List of available language and region Features on Demand](features-on-demand-language-fod.md): Add localized fonts, text-to-speech, optical character recognition (OCR), speech recognition, and handwriting recognition.
 
-See [Add languages to Windows](add-language-packs-to-windows.md) to learn how to add language packs and components to a Windows image.
+* [Add languages to your recovery environment](customize-windows-re.md) so users can troubleshoot and recover their devices using their preferred language.
+  - WinRE language packs are distributed on the language pack ISO. Don't use the WinPE language packs that ship with the ADK.
 
-### Language packs
+* Localize the Windows [Out of Box Experience (OOBE)](how-oobexml-works.md).
 
-| Component |  Description |
-| --------- | ---------------- | 
-| Language pack (.cab) | Provides the text for the dialog boxes, menu items, and help files that you see in Windows. <p>**Sample .cab name:** `Microsoft-Windows-Client-Language-Pack_x64_es-es.cab ` |
-| Language interface pack (delivered as .appx)  | As of Windows 10, version 1809, LIP languages are distributed as  .appx files and are no longer distributed as .cab files. Not all of the language resources for the UI are included in a LIP. LIPs require at least one parent language pack that provides support for the parts of the UI that are not translated into the LIP language. These are displayed in the parent language. See [Available languages for Windows]() to learn about LIP parent languages.<p> In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack. <p>**Dependencies**: A base language that supports the installed LIP<p>**Sample .appx name:** `LanguageExperiencePack.am-et.neutral.appx` |
+## Localize the installation process
 
-> [!Caution]
-> You can reduce image size by not including language FODs in your image, but doing so will lead to an incomplete language experience. To learn about language FODs and recommendations about which language FODs to preinstall, see [Language Features on Demand](language-packs-and-windows-deployment.md#span-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanspan-idwhatsnewwithlanguagepacksforwindows10spanlanguage-components-in-windows-10)
+* [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md) to create Windows installation media that works in the user's preferred language and shows the languages available in the Windows image.
 
-### Features on Demand
+* [Add languages to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md) to help users on a corporate network select Windows in their preferred language
 
 | Component |  Description |
 | --------- | ---------------- | 
 | Basic     | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<p>**You must add this component before adding any of the following components.**<p>**Note**: You can add the Basic FOD for languages that aren't otherwise included in an image. This gives users the ability to proof in these languages, even when the other language components for that language aren't installed.<p>Other language components are dependent on this one. |
-| Fonts     |  Fonts.<br></br>See [font capabilities](features-on-demand-language-fod.md#span-idfontsspanspan-idfontsspanfont-features-on-demand) for available font capabilities. |
+| Fonts     |  Fonts.<br></br>See [font capabilities](features-on-demand-language-fod.md#fonts) for available font capabilities. |
 | OCR | Recognizes and outputs text in an image.<br></br><p>**Dependencies**: The basic component of the same language. |
 | Handwriting recognition |  Enables handwriting recognition for devices with pen input.<br></br><p>**Dependencies**: The basic component of the same language.|
 | Text-to-speech |  Enables text to speech, used by Cortana and Narrator.<br></br><p>**Dependencies**: The basic component of the same language. |
@@ -53,7 +52,7 @@ Please note that not all components and Features on Demand are available for eve
 To learn more about adding language components to Windows, see [Add and remove languages](add-and-remove-language-packs-offline-using-dism.md).
 
 
-## <span id="Get_language_packs_and_LIPs"></span><span id="get_language_packs_and_lips"></span><span id="GET_LANGUAGE_PACKS_AND_LIPS"></span>Where to get language components
+## <span id="get_language_packs_and_lips"></span>Where to get language components
 
 [Available Languages for Windows](available-language-packs-for-windows.md) lists all of the supported language packs for multiple versions of Windows, as well as their identifier codes.
 
@@ -104,17 +103,6 @@ You can find the LXP .appx files and their associated license files in the Local
 
 ## <span id="related_topics"></span>Related topics
 
-
-[Add Language Packs to Windows](add-language-packs-to-windows.md)
-
-[Features On Demand](features-on-demand-v2--capabilities.md)
+* [Features On Demand](features-on-demand-v2--capabilities.md)
 
  
-
- 
-
-
-
-
-
-

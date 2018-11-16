@@ -8,8 +8,8 @@ ms.assetid: D0B39B45-5258-4258-951C-DCC68CAC8D8D
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Step 1: Opening and Analyzing ETL Files in WPA

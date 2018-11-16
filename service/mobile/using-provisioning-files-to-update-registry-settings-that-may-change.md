@@ -7,8 +7,8 @@ title: Using provisioning files to update registry settings that may change
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # Using provisioning files to update registry settings that may change

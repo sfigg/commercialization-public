@@ -9,8 +9,8 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+
+
 ---
 
 # <span id="p_customize_converged.no_subgroup_settings_allow_wi-fi_networking_during_standby"></span>Allow networking during standby
