@@ -21,7 +21,7 @@ Queries event tracing session the periodic capture state limits. Internally uses
 ## Parameters
 
 *traceHandle* <br/>
-[in] A handle of the event tracing session that wants to capture the specified information. The StartTrace function returns this handle. <br/>
+[in] A handle of the event tracing session that wants to capture the specified information. The [StartTrace](https://docs.microsoft.com/en-us/windows/desktop/etw/starttrace) function returns this handle. <br/>
 *frequencyInSeconds* <br/>
 [in] The frequency of state captures in seconds.<br/>
 *cProviders* <br/>
@@ -39,7 +39,7 @@ The following table describes possible return values.
 
 ## Related Topics
 
-* [TRACE_PERIODIC_CAPTURE_STATE_INFO]()
+* [TRACE_PERIODIC_CAPTURE_STATE_INFO](https://docs.microsoft.com/en-us/windows/desktop/ETW/trace-periodic-capture-state-info)
 * [ISnapshotManager3](isnapshotmanager3.md)
 * [ConfigSnapshotByPID](configsnapshotbypid.md)
 * [ConfigSnapshotByPIDEx](configsnapshotbypidex.md)

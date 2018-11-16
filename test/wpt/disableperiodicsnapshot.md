@@ -23,7 +23,9 @@ Note : Currently only available SnapshotType is SnapshotType_Heap
 
 ## Return Value
 
-HRESULT
+|Return Value | Description|
+|-------------|------------|
+|S_OK	| The configuration was successful for the specified process. |
 
 ## Related Topics
 

@@ -22,7 +22,7 @@ HRESULT SnapshotOnDemand
 
 ## Parameters
 
-*snapshotType*
+*snapshotType* <br/>
 [in] SnapshotType. <br/>
 **Note**: Currently only available SnapshotType is SnapshotType_Heap.  <br/>
 *pids*  <br/>

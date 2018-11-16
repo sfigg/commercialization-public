@@ -34,7 +34,9 @@ cPids
 
 ## Return Value
 
-HRESULT
+|Return Value | Description|
+|-------------|------------|
+|S_OK	| The configuration was successful for the specified process. |
 
 ## Related Topics
 
