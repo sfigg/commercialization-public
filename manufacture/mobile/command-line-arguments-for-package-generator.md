@@ -5,6 +5,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 413fd04e-f1a1-4a4a-8305-59fd6bfc2b64
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Command-line arguments for package generator
