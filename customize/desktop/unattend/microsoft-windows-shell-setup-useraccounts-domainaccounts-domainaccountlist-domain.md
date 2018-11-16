@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Path_to_file</em></p></td>
-<td><p>Specifies the name of the domain for a [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md). <em>Path_to_file</em> is a string.</p></td>
+<td><p>Specifies the name of the domain for a <a href="microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md" data-raw-source="[DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md)">DomainAccountList</a>. <em>Path_to_file</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -92,9 +92,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,7 @@ Some assessments require the computer to reboot while the assessment is running.
     **Note**  
     To bypass the AutoAdminLogon process, and to log on as a different user, hold down the Shift key after you log off or after Windows restarts.
 
-     
+     
 
 When you finish running assessments on the computer, you can change the registry settings back to the original values to follow the regular logon process.
 
@@ -73,7 +73,7 @@ When you finish running assessments on the computer, you can change the registry
 
     -   Don't allow or configure a connection to a domain.
 
-     
+     
 
 2.  Delete all other users, passwords, and domain connections.
 
@@ -94,9 +94,9 @@ This single user account allows the assessment to run on the computer without an
 
 [Windows Assessment Console](windows-assessment-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -68,7 +68,7 @@ The following table lists the members exposed by the **RequirementDescriptionDat
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -86,15 +86,15 @@ The following table lists the members exposed by the **RequirementDescriptionDat
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals](requirement-equals-method.md)</p></td>
+<td><p><a href="requirement-equals-method.md" data-raw-source="[Equals](requirement-equals-method.md)">Equals</a></p></td>
 <td><p>Provides value equality functionality for this object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetDescriptionData](requirementgetdescriptiondata-method.md)</p></td>
+<td><p><a href="requirementgetdescriptiondata-method.md" data-raw-source="[GetDescriptionData](requirementgetdescriptiondata-method.md)">GetDescriptionData</a></p></td>
 <td><p>This method returns a description of the requirementTableEntry given the specified language.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetHashCode](requirement-gethashcode-method.md)</p></td>
+<td><p><a href="requirement-gethashcode-method.md" data-raw-source="[GetHashCode](requirement-gethashcode-method.md)">GetHashCode</a></p></td>
 <td><p>Serves as a hash function for this object.</p></td>
 </tr>
 <tr class="even">
@@ -102,7 +102,7 @@ The following table lists the members exposed by the **RequirementDescriptionDat
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HasTheName](requirementhasthename-method.md)</p></td>
+<td><p><a href="requirementhasthename-method.md" data-raw-source="[HasTheName](requirementhasthename-method.md)">HasTheName</a></p></td>
 <td><p>This method checks if this requirement has a given name.</p></td>
 </tr>
 <tr class="even">
@@ -112,7 +112,7 @@ The following table lists the members exposed by the **RequirementDescriptionDat
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -140,11 +140,11 @@ The following table lists the members exposed by the **RequirementDescriptionDat
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

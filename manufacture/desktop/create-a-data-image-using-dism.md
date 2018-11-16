@@ -25,7 +25,7 @@ Data images enable you to add:
 **Note**  
 Data images must be used only to add new files to a Windows installation. Do not use data images to replace existing Windows files. Overwriting operating system data is unsupported.
 
- 
+ 
 
 Previous methods of transferring data to a Windows installation required the use of `$OEM$` folders. These folder structures are still supported, but data images provide an easier and more efficient means of transferring additional data to Windows.
 
@@ -94,9 +94,9 @@ In unattended installations, the Windows image to install is specified by the `O
 
 All the files and folders specified in the data image are extracted to the root of the drive during installation. Executable files and scripts are not run when the data image is applied; they are only copied to the drive. You can use `FirstLogonCommands` to specify commands to run the first time a user logs on to the computer. For more information about `FirstLogonCommands`, see the Windows Unattended Setup Reference.
 
- 
+ 
 
- 
+ 
 
 
 

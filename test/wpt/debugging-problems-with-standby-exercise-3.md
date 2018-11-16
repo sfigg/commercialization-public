@@ -54,11 +54,11 @@ The next logical step is to try to isolate and identify which hardware component
 **Note**  
 The missing constraint issue surfaced by the software and hardware **DRIPS** discrepancy is different than the Wireless device 7% active time problem shown in the top offenders table. This issue should be investigated separately.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

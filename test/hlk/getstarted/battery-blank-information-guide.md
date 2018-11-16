@@ -46,7 +46,7 @@ In many cases, these circuits also act to authenticate the attached device by co
 >[!WARNING]
 >  It is very important to remember that the circuits shown above were specifically designed to protect a physical battery cell. Once removed, the operational parameters of that battery cell may be lost or invalidated by the same circuit that communicates with the phone, and the operational information passed back to the phone may reflect that change and cause the device to behave differently. Likewise, the safety circuits normally expecting to see a constant voltage provided by the battery cell would now see voltage being switched on and off through the battery blank, and this could cause the safety circuits to fail or permanently trip which could in turn erroneously open the output of the battery blank during testing (we've seen this before). It may be prudent for you to consider bypassing any safety circuitry normally designed to protect a battery cell as these circuits will likely detect the on-and-off power cycles through the battery blank as problems with the battery. These unanticipated failures of the safety circuitry may not necessarily manifest themselves right away, either. The battery blank may appear to function normally from anywhere to 10 to hundreds of power cycles before they trip.
 
- 
+ 
 
 ## <span id="Designing_a_Battery_Blank___An_example"></span><span id="designing_a_battery_blank___an_example"></span><span id="DESIGNING_A_BATTERY_BLANK___AN_EXAMPLE"></span>Designing a Battery Blank - An example
 
@@ -198,7 +198,7 @@ There are 2 ways to create Battery Blanks:
 >[!NOTE]
 >  The information provided below is not inclusive of all of the potential dangers associated the disassembly of a sealed battery unit. Each battery design is different and will likely require a different disassembly method.
 
- 
+ 
 
 The general process is disassembly begins with careful removal of the labels on the battery. When removing the label(s), take care not to puncture or scratch the side of the battery cell with your tools.
 
@@ -206,18 +206,18 @@ Once the labels are removed, the cell is generally spot-welded to an in-line Pol
 
 Once the cells are removed from the battery frame, properly dispose of the cells. LiPol and Li-ION cells do NOT go in the regular trash and must be properly recycled. Most Office Supply Stores have battery recycling centers.
 
--   *If at any time you witness a battery starting to balloon or swell up, discontinue the disassembly process immediately and verify that there are no shorts on the battery. Deal with this problem completely before continuing. Observe it in a safe place away from any combustible materials for at least 20 minutes.*
--   *When removing the wires (flat or round) from the battery cell, NEVER peel the spot-welded wires off the actual battery cell. Doing so may breach the wall of the cell causing the materials inside the cell to ignite.*
--   *Any battery cell that has been shorted or punctured may leak and spontaneously ignite. In the event of a puncture or breach, remove the battery for observation and place in a safe, open area away from any combustible material for approximately 20 minutes.*
--   *Batteries should remain at room temperature during the entire disassembly procedure. Cells that get warm or hot during removal usually indicate a short circuit which could ultimately cause an explosion and possible spontaneous ignition of the battery chemicals. **Always keep track of the exposed battery cells.***
--   *Never store battery cells in areas with extreme temperatures and make sure they don't short-out to each other in the storage container.*
--   *Properly dispose of battery cells as soon as possible - do not collect them for several weeks.*
--   *Insulate the Positive plate of a battery cell with a durable material such as Kapton tape to prevent the cell from shorting out.*
--   ***Never, under any circumstance, attempt to disassemble a sealed battery cell. It will ignite and start an uncontrollable, chemical fire as the Lithium metal reacts with oxygen and moisture in the air. Water will not extinguish a chemical fire of this type and will only cause a much more violent reaction. Have appropriate fire control equipment on hand and ready to use. Remember that metal fires (lithium batteries) require uncommon Class D fire extinguishers which are specifically designed to smother burning metal fires.***
+- *If at any time you witness a battery starting to balloon or swell up, discontinue the disassembly process immediately and verify that there are no shorts on the battery. Deal with this problem completely before continuing. Observe it in a safe place away from any combustible materials for at least 20 minutes.*
+- *When removing the wires (flat or round) from the battery cell, NEVER peel the spot-welded wires off the actual battery cell. Doing so may breach the wall of the cell causing the materials inside the cell to ignite.*
+- *Any battery cell that has been shorted or punctured may leak and spontaneously ignite. In the event of a puncture or breach, remove the battery for observation and place in a safe, open area away from any combustible material for approximately 20 minutes.*
+- *Batteries should remain at room temperature during the entire disassembly procedure. Cells that get warm or hot during removal usually indicate a short circuit which could ultimately cause an explosion and possible spontaneous ignition of the battery chemicals. **Always keep track of the exposed battery cells.***
+- *Never store battery cells in areas with extreme temperatures and make sure they don't short-out to each other in the storage container.*
+- *Properly dispose of battery cells as soon as possible - do not collect them for several weeks.*
+- *Insulate the Positive plate of a battery cell with a durable material such as Kapton tape to prevent the cell from shorting out.*
+- ***Never, under any circumstance, attempt to disassemble a sealed battery cell. It will ignite and start an uncontrollable, chemical fire as the Lithium metal reacts with oxygen and moisture in the air. Water will not extinguish a chemical fire of this type and will only cause a much more violent reaction. Have appropriate fire control equipment on hand and ready to use. Remember that metal fires (lithium batteries) require uncommon Class D fire extinguishers which are specifically designed to smother burning metal fires.***
 
- 
+ 
 
- 
+ 
 
 
 

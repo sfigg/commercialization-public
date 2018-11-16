@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 End users can specify whether the Initial Configuration Tasks application opens automatically when they log on. If it opens automatically, then the Server Manager will not open until the Initial Configuration Tasks application is closed. To prevent Server Manager from opening when logging on, select **Do not show me this console at logon** in the Server Manager console.
 
- 
+ 
 
 This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
@@ -47,7 +47,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ The following XML output shows how to specify that Server Manager opens the firs
 
 [OemExtensionXmlFilePath](microsoft-windows-outofboxexperience-oemextensionxmlfilepath.md)
 
- 
+ 
 
- 
+ 
 
 
 

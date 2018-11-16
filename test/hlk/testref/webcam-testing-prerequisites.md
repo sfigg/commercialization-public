@@ -26,24 +26,24 @@ This section describes the tasks that you must complete before you test a webcam
 
 A webcam is a USB video device class that describes devices that can stream video.
 
->[!NOTE]
->  
-If the webcam isn't a stand-alone product (for example, an integrated webcam in a laptop or another mobile computer), these tests run as part of system certification.
+> [!NOTE]
+> 
+> If the webcam isn't a stand-alone product (for example, an integrated webcam in a laptop or another mobile computer), these tests run as part of system certification.
 
- 
+ 
 
 ## <span id="BKMK_HCK_Webcam_hR"></span><span id="bkmk-hck-webcam-hr"></span><span id="BKMK_HCK_WEBCAM_HR"></span>Hardware requirements
 
 
 The following hardware is required for testing a webcam:
 
--   A test computer that meets the [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+- A test computer that meets the [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md).
 
--   The device under test (the webcam).
+- The device under test (the webcam).
 
--   For internal webcams, a mirror to reflect a screen image back into the camera.
+- For internal webcams, a mirror to reflect a screen image back into the camera.
 
--   A speaker positioned close to the webcam's microphone.
+- A speaker positioned close to the webcam's microphone.
 
 You might need additional hardware (for example, a USB hub) to test some USB capabilities of the webcam. To find out if additional hardware requirements apply, see the description of each USB test that's identified for your webcam in Windows HLK Studio.
 
@@ -75,9 +75,9 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Manual Windows HLK tests require user intervention. It's best to run automated tests separately from manual tests. This prevents a manual test from interrupting completion of an automated test.
 
- 
+ 
 
- 
+ 
 
 
 

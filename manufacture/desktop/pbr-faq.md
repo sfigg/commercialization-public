@@ -102,8 +102,8 @@ ms.topic: article
 </tr>
 <tr class="odd">
 <td align="left">How much available disk space is required in order for the Refresh your PC feature to run successfully?</td>
-<td align="left">If you have converted the installed customizations into file pointers referencing the customizations package created using ScanState, the required disk space is: 4GB + size_of_ppkg*0.2
-<p>Otherwise, the required disk space is: 4GB + size_of_ppkg*2</p></td>
+<td align="left">If you have converted the installed customizations into file pointers referencing the customizations package created using ScanState, the required disk space is: 4GB + size_of_ppkg<em>0.2
+<p>Otherwise, the required disk space is: 4GB + size_of_ppkg</em>2</p></td>
 </tr>
 <tr class="even">
 <td align="left">Am I required to reduce the size of the MSR partition from 128MB to 16MB based on the updated partition layout recommendations?</td>
@@ -122,11 +122,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ This method compares two **PackageFilterLogNode** objects.
 
 `Public Function Equals ( _`
 
-          `other As PackageFilterLogNode _`
+          `other As PackageFilterLogNode _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **PackageFilterLogNode** objects.
 
 `public bool Equals (`
 
-          `PackageFilterLogNode other`
+          `PackageFilterLogNode other`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **PackageFilterLogNode** objects.
 
 *other*
 
-     The **PackageFilterConstraint** to compare.
+     The **PackageFilterConstraint** to compare.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method compares two **PackageFilterLogNode** objects.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpan
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
- 
+ 
 
 `TileColor` specifies the RGB background color of the tile for the Original Equipment Manufacturer (OEM) or organization on the **Help and Support** home page. The [Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md) setting specifies the OEM tile.
 
@@ -40,14 +40,14 @@ For more information on how OEMs can include their customer support contact info
 <td><p><em>&lt;Integer&gt;</em></p></td>
 <td><p>Specifies the integer representation of the background color of the OEM tile on the <strong>Help and Support</strong> home page by using the RGB color model.</p>
 <p>The RGB color model is used for specifying colors. This model specifies the intensity of red, green, and blue on a scale of 0 to 255. A 0 indicates the minimum intensity. You can use this formula to convert the settings of the three colors to a single integer value:</p>
-<p>RGB value = Red + (Green*256) + (Blue*256*256)</p>
-<p>For more information and examples, see [RGB Color Model](http://go.microsoft.com/fwlink/?LinkId=140169).</p>
-<p>For the background color to appear, you must also configure the TileColor setting, the [Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md) setting, and the [Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md) setting.</p></td>
+<p>RGB value = Red + (Green<em>256) + (Blue</em>256*256)</p>
+<p>For more information and examples, see <a href="http://go.microsoft.com/fwlink/?LinkId=140169" data-raw-source="[RGB Color Model](http://go.microsoft.com/fwlink/?LinkId=140169)">RGB Color Model</a>.</p>
+<p>For the background color to appear, you must also configure the TileColor setting, the <a href="microsoft-windows-helpandsupport-helpandsupport-logo.md" data-raw-source="[Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md)">Logo</a> setting, and the <a href="microsoft-windows-helpandsupport-helpandsupport-manufacturer.md" data-raw-source="[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)">Manufacturer</a> setting.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following example shows how to set the background color of the OEM tile on t
 
 [Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)
 
- 
+ 
 
- 
+ 
 
 
 

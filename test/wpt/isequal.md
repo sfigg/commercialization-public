@@ -61,21 +61,21 @@ The following table describes possible return values.
 </tr>
 <tr class="odd">
 <td><p>E_INVALIDARG</p></td>
-<td><p>One or more arguments are invalid. See [IParsingErrorInfo](iparsingerrorinfo.md) for detailed error information.</p></td>
+<td><p>One or more arguments are invalid. See <a href="iparsingerrorinfo.md" data-raw-source="[IParsingErrorInfo](iparsingerrorinfo.md)">IParsingErrorInfo</a> for detailed error information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IProfile](iprofile.md)
 
- 
+ 
 
- 
+ 
 
 
 

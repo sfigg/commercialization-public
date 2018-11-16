@@ -45,9 +45,9 @@ This class provides an interface that can return **DeviceCollection** object inf
 
 Device Collections are logical containers for hardware devices (multifunction printers are an example).
 
- 
+ 
 
- 
+ 
 
 
 

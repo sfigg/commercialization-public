@@ -41,7 +41,7 @@ BCDBoot is a command-line tool used to configure the boot files on a PC or devic
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Supported_operating_systems"></span><span id="supported_operating_systems"></span><span id="SUPPORTED_OPERATING_SYSTEMS"></span>Supported operating systems
 
@@ -165,7 +165,7 @@ bcdboot C:\Windows /p /d</code></pre></td>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Repair_the_system_partition"></span><span id="repair_the_system_partition"></span><span id="REPAIR_THE_SYSTEM_PARTITION"></span>Repair the system partition
 
@@ -224,9 +224,9 @@ For information about repairing the boot files on a PC with Windows XP and a mor
 
 [Diskpart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458)
 
- 
+ 
 
- 
+ 
 
 
 

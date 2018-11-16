@@ -23,7 +23,7 @@ Because of the complexity of synchronizing the settings app and device drivers, 
 
 The example scenarios focus on settings stored in the registry; if the app uses other storage mechanisms such as isolated storage, similar analysis is required.
 
- 
+ 
 
 The following sections outline some of the important considerations for managing system settings apps in the course of updates, backup and restore operations, and resets:
 
@@ -255,7 +255,7 @@ The following table summarizes the preloaded apps scenarios.
 </tbody>
 </table>
 
- 
+ 
 
 These example scenarios are illustrative and do not capture all possible customer usage scenarios or the combinations of update releases that are possible. OEMs must identify the possible usage scenarios and test those when preparing updates.
 
@@ -266,9 +266,9 @@ A strategy should be developed to coordinate the versions of the settings app an
 
 [Using provisioning files to update registry settings that may change](using-provisioning-files-to-update-registry-settings-that-may-change.md)
 
- 
+ 
 
- 
+ 
 
 
 

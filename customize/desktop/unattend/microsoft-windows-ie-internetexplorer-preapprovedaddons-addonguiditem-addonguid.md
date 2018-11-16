@@ -39,7 +39,7 @@ These add-ons are plug-in modules used to add functionality to Internet Explorer
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to specify GUIDs for two Internet Explorer ad
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

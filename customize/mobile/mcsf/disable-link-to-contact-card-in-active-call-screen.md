@@ -78,7 +78,7 @@ The reminders, toasts, and the shutdown curtain also assume that the proximity s
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a phone that has a SIM or UICC.

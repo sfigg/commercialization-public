@@ -42,7 +42,7 @@ For server editions of Windows and for Windows RT 8.1:
 </tbody>
 </table>
 
- 
+ 
 
 For client editions of Windows:
 
@@ -63,7 +63,7 @@ For client editions of Windows:
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -110,9 +110,9 @@ The following XML output shows how to set Windows Firewall.
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md)
 
- 
+ 
 
- 
+ 
 
 
 

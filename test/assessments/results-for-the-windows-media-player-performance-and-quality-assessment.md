@@ -46,10 +46,10 @@ When a metric value is compared to the goal for that metric, the status is color
 
 -   No color means that there are no goals defined for the metric.
 
-**Note**  
-In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
+**Note**  
+In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
- 
+
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -63,10 +63,10 @@ Only one goals file can be used at a time. Goals for all assessments are set in 
 
 You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\SDK\\Samples\\Goals to create your own goals file.
 
-**Note**  
+**Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+
 
 ## <a href="" id="bkmk-wmpmetrics"></a>Metrics
 
@@ -93,22 +93,20 @@ The results show information about the performance and quality of Windows Media 
 <td><p>Total Audio Glitches</p></td>
 <td><p>The total number of audio glitches that were recorded during playback.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>A glitch is any detectable visual or auditory defect in the user experience.</p>
+<strong>Note</strong><br/><p>A glitch is any detectable visual or auditory defect in the user experience.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td><p>Total Audio Starvation</p></td>
 <td><p>The total number of times that audio starvation occurred during playback.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Audio starvation occurs when the audio data cannot be read fast enough to keep pace with the rendering or composition of the file.</p>
+<strong>Note</strong><br/><p>Audio starvation occurs when the audio data cannot be read fast enough to keep pace with the rendering or composition of the file.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -117,7 +115,7 @@ The results show information about the performance and quality of Windows Media 
 </tr>
 <tr class="odd">
 <td><p>Total MF Data Drops</p></td>
-<td><p>The total number of times that Microsoft Media Foundation data was dropped during playback. For more information about this media platform, see [MSDN: Microsoft Media Foundation](http://go.microsoft.com/fwlink/?LinkId=232723).</p></td>
+<td><p>The total number of times that Microsoft Media Foundation data was dropped during playback. For more information about this media platform, see <a href="http://go.microsoft.com/fwlink/?LinkId=232723" data-raw-source="[MSDN: Microsoft Media Foundation](http://go.microsoft.com/fwlink/?LinkId=232723)">MSDN: Microsoft Media Foundation</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Total Enhanced Video Glitches</p></td>
@@ -126,9 +124,9 @@ The results show information about the performance and quality of Windows Media 
 </tbody>
 </table>
 
- 
 
-More information may be available for each metric. To view that information, choose the link to the (ETL) file. The ETL file opens automatically in Windows® Performance Analyzer (WPA) for additional analysis.
+
+More information may be available for each metric. To view that information, choose the link to the (ETL) file. The ETL file opens automatically in Windows® Performance Analyzer (WPA) for additional analysis.
 
 ## <a href="" id="bkmk-wmpissues"></a>Issues
 
@@ -158,9 +156,9 @@ To resolve this issue, do one of the following:
 
 [Media Transcoding Performance](media-transcoding-performance.md)
 
- 
 
- 
+
+
 
 
 

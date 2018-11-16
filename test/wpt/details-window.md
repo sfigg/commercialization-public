@@ -37,9 +37,9 @@ If this window is not open, click **Details** on the **Window** menu.
 
 [Issues Window](issues-window.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,15 +40,15 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 2. Add your base packages (BasePackages).
 
-    - UEFI drivers for the boot partition (RASPBERRYPI.RPi2.BootFirmware.cab)
+   - UEFI drivers for the boot partition (RASPBERRYPI.RPi2.BootFirmware.cab)
 
-    - Drivers required for UpdateOS (SV.PlatExtensions.UpdateOS.cab)
+   - Drivers required for UpdateOS (SV.PlatExtensions.UpdateOS.cab)
 
-    - Mandatory device drivers (bcm2836sdhc.cab, dwcUsbOtg.cab, rpiq.cab)
+   - Mandatory device drivers (bcm2836sdhc.cab, dwcUsbOtg.cab, rpiq.cab)
 
-    When creating your own BSP, it's typical to require a display driver and a storage driver, and sometimes a network driver.
+     When creating your own BSP, it's typical to require a display driver and a storage driver, and sometimes a network driver.
 
-    - Device-specific customizations
+   - Device-specific customizations
 
 3. Copy in the device layout and platform packages (DeviceLayoutPackages, OEMDevicePlatformPackages).
 

@@ -29,9 +29,9 @@ Schedules re-flash on phone devices connected via proxy client.
 
 `public TestResult ProxyClientSystemReflash (`
 
-          `string flashImagePath,`
+          `string flashImagePath,`
 
-          `out bool isScheduled`
+          `out bool isScheduled`
 
 `)`
 
@@ -56,9 +56,9 @@ If isScheduled==true, a [TestResult](testresult-class.md) object is returned. If
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

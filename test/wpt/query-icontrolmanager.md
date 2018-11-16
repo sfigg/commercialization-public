@@ -65,7 +65,7 @@ The following table describes the possible values.
 </tr>
 <tr class="odd">
 <td><p>E_WPRC_FAILED_TO_QUERY_PROFILES</p></td>
-<td><p>The library failed to query the properties of the session and providers in all the profiles. Use [IControlErrorInfo](icontrolerrorinfo.md) to get detailed error information.</p></td>
+<td><p>The library failed to query the properties of the session and providers in all the profiles. Use <a href="icontrolerrorinfo.md" data-raw-source="[IControlErrorInfo](icontrolerrorinfo.md)">IControlErrorInfo</a> to get detailed error information.</p></td>
 </tr>
 <tr class="even">
 <td><p>E_WPRC_INVALID_PROFILES_RUNTIME_STATE</p></td>
@@ -74,16 +74,16 @@ The following table describes the possible values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IControlManager](icontrolmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

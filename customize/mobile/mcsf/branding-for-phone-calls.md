@@ -35,106 +35,106 @@ The custom image must meet the following requirements:
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
 <a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
+1. Create a customization answer file using the contents shown in the following code sample.
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="BrandingForPhoneCalls"  
-                         Description="Use to add a custom image that displays the mobile operator name or logo on the Incoming Call screen."
-                         Owner=""  
-                         OwnerType="OEM"> 
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
+                        Name="BrandingForPhoneCalls"  
+                        Description="Use to add a custom image that displays the mobile operator name or logo on the Incoming Call screen."
+                        Owner=""  
+                        OwnerType="OEM"> 
 
-       <Static>
+      <Static>
 
-          <Settings Path="Phone/BrandingInformation">  
-             <Asset Name="BrandingImages" Source="C:\Path\BrandingImagePhoneScreens.png" />
-             <Setting Name="CellularBrandingImagePath" Value="BrandingImagePhoneScreens.png" /> 
-             <Setting Name="BrandingFlags" Value="" /> 
-          </Settings>  
+         <Settings Path="Phone/BrandingInformation">  
+            <Asset Name="BrandingImages" Source="C:\Path\BrandingImagePhoneScreens.png" />
+            <Setting Name="CellularBrandingImagePath" Value="BrandingImagePhoneScreens.png" /> 
+            <Setting Name="BrandingFlags" Value="" /> 
+         </Settings>  
 
-       </Static>
+      </Static>
 
-    </ImageCustomizations>
-    ```
+   </ImageCustomizations>
+   ```
 
-2.  Specify an `Owner`.
+2. Specify an `Owner`.
 
-3.  Add the custom branding image. To do this:
+3. Add the custom branding image. To do this:
 
-    1.  Add an **Asset** element and set the `Name` to BrandingImages.
+   1.  Add an **Asset** element and set the `Name` to BrandingImages.
 
-    2.  Set the asset's **Source** value to the location and name of the custom .png file. For example: *C:\\Path\\BrandingImagePhoneScreens.png*
+   2.  Set the asset's **Source** value to the location and name of the custom .png file. For example: *C:\\Path\\BrandingImagePhoneScreens.png*
 
-4.  Set the value of `CellularBrandingImagePath` to the name of the custom .png file. For example: *BrandingImagePhoneScreens.png*
+4. Set the value of `CellularBrandingImagePath` to the name of the custom .png file. For example: *BrandingImagePhoneScreens.png*
 
-5.  Specify when the branding image should be displayed or display registration status and reject codes in the phone UI by setting the value of `BrandingFlags`.
+5. Specify when the branding image should be displayed or display registration status and reject codes in the phone UI by setting the value of `BrandingFlags`.
 
-    The default value of the `BrandingFlags` setting is 0x000000FB. This value can be replaced by a bit-wise **OR** of the following flags:
+   The default value of the `BrandingFlags` setting is 0x000000FB. This value can be replaced by a bit-wise **OR** of the following flags:
 
-    <table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Flag</th>
-    <th>Value</th>
-    <th>Set by default</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>ShowBrandingImage</p></td>
-    <td><p>0x00000001</p></td>
-    <td><p>Yes</p></td>
-    <td><p>Display the branding image for all non-roaming phone calls.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>HideBrandingImageOnRoam</p></td>
-    <td><p>0x00000002</p></td>
-    <td><p>Yes</p></td>
-    <td><p>Do not display the branding image when the phone is roaming.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>DisplayEmergencyCallStatus</p></td>
-    <td><p>0x00000004</p></td>
-    <td><p>No</p></td>
-    <td><p>For markets in which the user must be aware that emergency calls are always permitted, partners can turn on a user notification that emergency calls are still possible even if there is no SIM, the SIM is currently blocked, or the SIM is invalid.</p>
-    <p>Setting this flag changes the phone branding from SIM state (No SIM, Invalid SIM, PIN required) to emergency possibility state (emergency only versus no service). In the call history page, the progress and dialer where a longer string is possible, the SIM state is appended to the emergency possibility state.</p>
-    <p>This customization replaces the “No SIM” warning on the phone tile, the call history page, and the dialer with a longer message <strong>Emergency only</strong> on the phone tile, and <strong>No SIM – Emergency calls only</strong> on the dialer and call history page.</p>
-    <p>When the phone does not have a SIM and there is no service, the phone displays <strong>No SIM – No Service</strong> on the call history, call progress, and the dialer. The phone token shows <strong>No service</strong> in this scenario.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>ShowRegistrationStatusInCallHistory</p>
-    <p>ShowRegistrationStatusInCallProgress</p>
-    <p>ShowRegistrationStatusInDialer</p>
-    <p>ShowRegistrationStatusInIncomingCall</p>
-    <p>ShowRegistrationStatusInPhoneToken</p></td>
-    <td><p>0x00000008</p>
-    <p>0x00000010</p>
-    <p>0x00000020</p>
-    <p>0x00000040</p>
-    <p>0x00000080</p></td>
-    <td><p>Yes</p></td>
-    <td><p>Display the registration status on different parts of the phone call UI when the operator name is not available because the network cannot be accessed or the SIM is locked or missing.</p>
-    <p>When the flags are not set, the string <strong>Phone</strong> is used as the branding text.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>ExtendedRejectCodes</p></td>
-    <td><p>0x00000100</p></td>
-    <td><p>No</p></td>
-    <td><p>Display extended reject codes in error cases such as when the UICC is not provisioned or not allowed.</p>
-    <p>To fully enable this functionality, you must also configure [Extended error messages for reject codes](extended-error-messages-for-reject-codes.md).</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="25%" />
+   <col width="25%" />
+   <col width="25%" />
+   <col width="25%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Flag</th>
+   <th>Value</th>
+   <th>Set by default</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>ShowBrandingImage</p></td>
+   <td><p>0x00000001</p></td>
+   <td><p>Yes</p></td>
+   <td><p>Display the branding image for all non-roaming phone calls.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>HideBrandingImageOnRoam</p></td>
+   <td><p>0x00000002</p></td>
+   <td><p>Yes</p></td>
+   <td><p>Do not display the branding image when the phone is roaming.</p></td>
+   </tr>
+   <tr class="odd">
+   <td><p>DisplayEmergencyCallStatus</p></td>
+   <td><p>0x00000004</p></td>
+   <td><p>No</p></td>
+   <td><p>For markets in which the user must be aware that emergency calls are always permitted, partners can turn on a user notification that emergency calls are still possible even if there is no SIM, the SIM is currently blocked, or the SIM is invalid.</p>
+   <p>Setting this flag changes the phone branding from SIM state (No SIM, Invalid SIM, PIN required) to emergency possibility state (emergency only versus no service). In the call history page, the progress and dialer where a longer string is possible, the SIM state is appended to the emergency possibility state.</p>
+   <p>This customization replaces the “No SIM” warning on the phone tile, the call history page, and the dialer with a longer message <strong>Emergency only</strong> on the phone tile, and <strong>No SIM – Emergency calls only</strong> on the dialer and call history page.</p>
+   <p>When the phone does not have a SIM and there is no service, the phone displays <strong>No SIM – No Service</strong> on the call history, call progress, and the dialer. The phone token shows <strong>No service</strong> in this scenario.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>ShowRegistrationStatusInCallHistory</p>
+   <p>ShowRegistrationStatusInCallProgress</p>
+   <p>ShowRegistrationStatusInDialer</p>
+   <p>ShowRegistrationStatusInIncomingCall</p>
+   <p>ShowRegistrationStatusInPhoneToken</p></td>
+   <td><p>0x00000008</p>
+   <p>0x00000010</p>
+   <p>0x00000020</p>
+   <p>0x00000040</p>
+   <p>0x00000080</p></td>
+   <td><p>Yes</p></td>
+   <td><p>Display the registration status on different parts of the phone call UI when the operator name is not available because the network cannot be accessed or the SIM is locked or missing.</p>
+   <p>When the flags are not set, the string <strong>Phone</strong> is used as the branding text.</p></td>
+   </tr>
+   <tr class="odd">
+   <td><p>ExtendedRejectCodes</p></td>
+   <td><p>0x00000100</p></td>
+   <td><p>No</p></td>
+   <td><p>Display extended reject codes in error cases such as when the UICC is not provisioned or not allowed.</p>
+   <p>To fully enable this functionality, you must also configure <a href="extended-error-messages-for-reject-codes.md" data-raw-source="[Extended error messages for reject codes](extended-error-messages-for-reject-codes.md)">Extended error messages for reject codes</a>.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone that contains a UICC, or that is otherwise equipped to receive phone calls.

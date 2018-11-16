@@ -42,7 +42,7 @@ This method retrieves the value of a particular dimension value.
 
 `Public MustOverride Function GetFullPropertyByName ( _`
 
-          `propertyName As String _`
+          `propertyName As String _`
 
 `) As MachineProperty`
 
@@ -50,7 +50,7 @@ This method retrieves the value of a particular dimension value.
 
 `public abstract MachineProperty GetFullPropertyByName (`
 
-          `string propertyName`
+          `string propertyName`
 
 `)`
 
@@ -59,7 +59,7 @@ This method retrieves the value of a particular dimension value.
 
 *propertyName*
 
-     The name of the property to get.
+     The name of the property to get.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -86,9 +86,9 @@ An exception is thrown when:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

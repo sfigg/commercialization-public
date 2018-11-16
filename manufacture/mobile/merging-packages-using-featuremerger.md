@@ -97,11 +97,10 @@ FeatureMerger.exe with a single feature manifest XML file.
 <td><p><em>OutputPackageVersion</em></p></td>
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements).</p>
+<strong>Note</strong><br/><p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see <a href="https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements" data-raw-source="[Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements)">Update requirements</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td><p>Text string</p></td>
 </tr>
@@ -112,7 +111,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 </tr>
 <tr class="odd">
 <td><p><strong>/FMID</strong>:<em>Feature manifest ID</em></p></td>
-<td><p>A required short FM ID that describes the feature manifest file that is used in the merged package name to ensure that features from different FM files don't collide. The ID should be eight characters or less and be different from all other FM IDs. When generating merged packages for retail images, this ID must have the value of either <strong>Phone</strong> or <strong>Variant</strong>. For more info, see [Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md).</p></td>
+<td><p>A required short FM ID that describes the feature manifest file that is used in the merged package name to ensure that features from different FM files don&#39;t collide. The ID should be eight characters or less and be different from all other FM IDs. When generating merged packages for retail images, this ID must have the value of either <strong>Phone</strong> or <strong>Variant</strong>. For more info, see <a href="packaging-requirements-for-retail-images.md" data-raw-source="[Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md)">Windows Standard Packaging Configuration (WSPC) requirements for retail images</a>.</p></td>
 <td><p>Text string</p></td>
 </tr>
 <tr class="even">
@@ -137,7 +136,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 <td><p>Additional variables that are used in the project file using the following syntax:&lt;name&gt;=&lt;value&gt;;&lt;name&gt;=&lt;value&gt;;</p>
 <p>The following variables are pre-defined:</p>
 <ul>
-<li><p><strong>_cputype</strong>: Required. Specifies the CPU architecture. For Windows 10 Mobile, this variable must be set to &quot;arm&quot;.</p></li>
+<li><p><strong>_cputype</strong>: Required. Specifies the CPU architecture. For Windows 10 Mobile, this variable must be set to &quot;arm&quot;.</p></li>
 <li><p><strong>buildtype</strong>: Required. Specifies the build type. This variable must be set to either &quot;fre&quot; or &quot;chk&quot;.</p></li>
 <li><p><strong>releasetype</strong>: Optional. Specifies the image release type. This variable can be set to either &quot;test&quot; or &quot;production&quot;. If this variable is not specified, the default value is &quot;test&quot;.</p></li>
 </ul>
@@ -148,7 +147,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Optional_and_reserved_switches"></span><span id="optional_and_reserved_switches"></span><span id="OPTIONAL_AND_RESERVED_SWITCHES"></span>Optional and reserved switches
 
@@ -192,7 +191,7 @@ FeatureMerger.exe with a single feature manifest XML file.
 </tbody>
 </table>
 
- 
+
 
 The following table lists the switches that are reserved for use by
 Microsoft when using FeatureMerger.exe with a single feature manifest
@@ -220,7 +219,7 @@ XML file.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -263,7 +262,7 @@ FeatureMerger.exe with an FMFileList XML file.
 <tbody>
 <tr class="odd">
 <td><p><em>InputFile</em></p></td>
-<td><p>The path to the FMFileList XML file. For more info about the contents of the FMFileList XML file, see [Contents of the FMFileList XML file](#fmfilelist) in this topic.</p></td>
+<td><p>The path to the FMFileList XML file. For more info about the contents of the FMFileList XML file, see <a href="#fmfilelist" data-raw-source="[Contents of the FMFileList XML file](#fmfilelist)">Contents of the FMFileList XML file</a> in this topic.</p></td>
 <td><p>Text string</p></td>
 </tr>
 <tr class="even">
@@ -275,11 +274,10 @@ FeatureMerger.exe with an FMFileList XML file.
 <td><p><em>OutputPackageVersion</em></p></td>
 <td><p>The version of the merged package that is created using the format &quot;&lt;major&gt;.&lt;minor&gt;.&lt;hotfix&gt;.&lt;build&gt;&quot;.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see [Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements).</p>
+<strong>Note</strong><br/><p>The package version must be incremented whenever a package is changed. For more info about package versioning and updates, see <a href="https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements" data-raw-source="[Update requirements](https://docs.microsoft.com/windows-hardware/service/mobile/update-requirements)">Update requirements</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td><p>Text string</p></td>
 </tr>
@@ -298,7 +296,7 @@ FeatureMerger.exe with an FMFileList XML file.
 <td><p>Additional variables used in the project file using the following syntax:&lt;name&gt;=&lt;value&gt;;&lt;name&gt;=&lt;value&gt;;</p>
 <p>The following variables are pre-defined:</p>
 <ul>
-<li><p><strong>_cputype</strong>: Required. Specifies the CPU architecture. For Windows 10 Mobile, this variable must be set to &quot;arm&quot;.</p></li>
+<li><p><strong>_cputype</strong>: Required. Specifies the CPU architecture. For Windows 10 Mobile, this variable must be set to &quot;arm&quot;.</p></li>
 <li><p><strong>buildtype</strong>: Required. Specifies the build type. This variable must be set to either &quot;fre&quot; or &quot;chk&quot;.</p></li>
 <li><p><strong>releasetype</strong>: Optional. Specifies the image release type. This variable can be set to either &quot;test&quot; or &quot;production&quot;. If this variable is not specified, the default value is &quot;test&quot;.</p></li>
 </ul>
@@ -309,7 +307,7 @@ FeatureMerger.exe with an FMFileList XML file.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Optional_and_reserved_switches"></span><span id="optional_and_reserved_switches"></span><span id="OPTIONAL_AND_RESERVED_SWITCHES"></span>Optional and reserved switches
 
@@ -348,7 +346,7 @@ FeatureMerger.exe with FMFileList XML file.
 </tbody>
 </table>
 
- 
+
 
 The following table lists the switches that are reserved for use by
 Microsoft when using FeatureMerger.exe with an FMFileList XML file.
@@ -375,7 +373,7 @@ Microsoft when using FeatureMerger.exe with an FMFileList XML file.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -414,9 +412,9 @@ An FMFileList XML file contains the following elements.
 <p>The FM element has the following attributes.</p>
 <ul>
 <li><p><strong>Path</strong>: The path to the feature manifest files. The variable <strong>$(FMDirectory)</strong> can be used to specify the InputFMDir parameter in the path.</p></li>
-<li><p><strong>ReleaseType</strong>: The release type must be set to either &quot;Test&quot; or &quot;Production&quot;. For FMs used in final retail images, this should be set to &quot;Production&quot;. In addition, all packages defined in a Production FM must have the ReleaseType set to &quot;Production&quot;. For more info about working with packages, see [Primary elements and attributes of a package project file](primary-elements-and-attributes-of-a-package-project-file.md).</p></li>
+<li><p><strong>ReleaseType</strong>: The release type must be set to either &quot;Test&quot; or &quot;Production&quot;. For FMs used in final retail images, this should be set to &quot;Production&quot;. In addition, all packages defined in a Production FM must have the ReleaseType set to &quot;Production&quot;. For more info about working with packages, see <a href="primary-elements-and-attributes-of-a-package-project-file.md" data-raw-source="[Primary elements and attributes of a package project file](primary-elements-and-attributes-of-a-package-project-file.md)">Primary elements and attributes of a package project file</a>.</p></li>
 <li><p><strong>OwnerType</strong>: This value should be set to &quot;OEM&quot;.</p></li>
-<li><p><strong>ID</strong>: A required short FM ID that describes the feature manifest file that is used in the merged package name to ensure that features from different FM files don't collide. The ID should be eight characters or less and be different from all other FM IDs. When generating merged packages for retail images, this ID must have the value of either <strong>Phone</strong> or <strong>Variant</strong>. For more info, see [Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md).</p></li>
+<li><p><strong>ID</strong>: A required short FM ID that describes the feature manifest file that is used in the merged package name to ensure that features from different FM files don&#39;t collide. The ID should be eight characters or less and be different from all other FM IDs. When generating merged packages for retail images, this ID must have the value of either <strong>Phone</strong> or <strong>Variant</strong>. For more info, see <a href="packaging-requirements-for-retail-images.md" data-raw-source="[Windows Standard Packaging Configuration (WSPC) requirements for retail images](packaging-requirements-for-retail-images.md)">Windows Standard Packaging Configuration (WSPC) requirements for retail images</a>.</p></li>
 <li><p><strong>OwnerName</strong>: The owner name should be set to the OEM name, for example &quot;Contoso&quot;.</p></li>
 </ul></td>
 </tr>
@@ -438,7 +436,7 @@ An FMFileList XML file contains the following elements.
 </tbody>
 </table>
 
- 
+
 
 For example, the following sample file specifies two feature manifest
 files, a list of supported resolutions, a supported language, and a

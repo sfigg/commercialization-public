@@ -28,19 +28,19 @@ The HLK **Configuration** Page contains the following:
 
 On this tab, you can perform the following tasks:
 
--   [Create a machine pool](..\getstarted\step-3-create-a-machine-pool.md)
+- [Create a machine pool](../getstarted/step-3-create-a-machine-pool.md)
 
--   [Manage machines](configuration-page---machine-management.md)
+- [Manage machines](configuration-page---machine-management.md)
 
--   [Manage device families](configuration-page---device-families.md)
+- [Manage device families](configuration-page---device-families.md)
 
--   [Manage distributed and multi-device options](configuration-page---distributed-and-multi-device-options.md)
+- [Manage distributed and multi-device options](configuration-page---distributed-and-multi-device-options.md)
 
--   [Manually configure HLK Client kernel debugger settings](..\user\manually-configure-hlk-client-kernel-debugger-settings.md)
+- [Manually configure HLK Client kernel debugger settings](../user/manually-configure-hlk-client-kernel-debugger-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

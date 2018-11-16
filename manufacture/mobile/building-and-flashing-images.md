@@ -46,9 +46,9 @@ Use the information in the following topics to learn about flashing and update t
 
 -   [Update packages in an .FFU image file](update-packages-in-an-ffu-image-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

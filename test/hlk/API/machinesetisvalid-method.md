@@ -42,7 +42,7 @@ This method checks to see if the specified **MachineSet** is sufficient to enabl
 
 `Public Function IsValid ( _`
 
-          `otherMachineSet As MachineSet _`
+          `otherMachineSet As MachineSet _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method checks to see if the specified **MachineSet** is sufficient to enabl
 
 `public bool IsValid (`
 
-          `MachineSet otherMachineSet`
+          `MachineSet otherMachineSet`
 
 `) `
 
@@ -59,7 +59,7 @@ This method checks to see if the specified **MachineSet** is sufficient to enabl
 
 *otherMachineSet*
 
-          The **MachineSet** object to compare against this **MachineSet** object.
+          The **MachineSet** object to compare against this **MachineSet** object.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method checks to see if the specified **MachineSet** is sufficient to enabl
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

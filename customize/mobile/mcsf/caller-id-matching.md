@@ -31,7 +31,7 @@ If OEMs do not customize this setting based on mobile operator requirements, the
 **Note**  
 Microsoft does not recommend changing the default value without a full and complete testing of how number matching will be affected on the phone. The testing process should include numbers with and without country codes, "+", area codes, NDD, IDD, and other dialing variations. The default value has generally been found to yield the best matching results for all various dialing options for a number.
 
- 
+ 
 
 ## Caller ID matching for dual SIM phones
 
@@ -316,7 +316,7 @@ For any country/region that you want to modify, note the **GEOID** for the count
 | 161832256 | U.S. Minor Outlying Islands                  | 6   |
 | 161832258 | Bonaire, Saint Eustatius and Saba            | 6   |
 
- 
+ 
 
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  
 

@@ -18,27 +18,27 @@ ms.topic: article
 
 To troubleshoot bus controller test issues, follow these steps:
 
-1.  Review the following Windows Hardware Lab Kit (Windows HLK) topics:
+1. Review the following Windows Hardware Lab Kit (Windows HLK) topics:
 
-    -   [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)
+   - [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md)
 
-    -   One of the following topics, depending on the type of bus controller that you are testing:
+   - One of the following topics, depending on the type of bus controller that you are testing:
 
-        -   [Bluetooth Controller Testing Prerequisites](bluetooth-controller-testing-prerequisites.md)
+     -   [Bluetooth Controller Testing Prerequisites](bluetooth-controller-testing-prerequisites.md)
 
-        -   [Proximity Controller Testing Prerequisites](proximity-controller-testing-prerequisites.md)
+     -   [Proximity Controller Testing Prerequisites](proximity-controller-testing-prerequisites.md)
 
-        -   [Secure Digital Host Controller Testing Prerequisites](secure-digital-host-controller-testing-prerequisites.md)
+     -   [Secure Digital Host Controller Testing Prerequisites](secure-digital-host-controller-testing-prerequisites.md)
 
-        -   [USB Bus Controller Testing Prerequisites](usb-bus-controller-testing-prerequisites.md)
+     -   [USB Bus Controller Testing Prerequisites](usb-bus-controller-testing-prerequisites.md)
 
-        -   [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md)
+     -   [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md)
 
-2.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](..\user\windows-hardware-lab-kit-filters.md).
+2. Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](../user/windows-hardware-lab-kit-filters.md).
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-4.  If you cannot obtain a successful test result, contact [Windows HLK Support](..\user\windows-hlk-support.md).
+4. If you cannot obtain a successful test result, contact [Windows HLK Support](../user/windows-hlk-support.md).
 
 ### <span id="bluetooth"></span><span id="BLUETOOTH"></span>Bluetooth controller test troubleshooting
 
@@ -67,7 +67,7 @@ The following table describes common issues that can occur during Bluetooth cont
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="witti2c"></span><span id="WITTI2C"></span>WITT I<sup>2</sup>C controller test troubleshooting
 
@@ -88,11 +88,11 @@ The following table describes common issues that can occur during Windows Inter-
 <tbody>
 <tr class="odd">
 <td><p>All tests failed with error message <strong>WITT device test interface is not found</strong>.</p></td>
-<td><p>Review [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md). Make sure that the WITT test peripheral driver is installed, ACPI table modified with sample ASL and four instances of WITT Test Driver are found in Windows HLK Device Manager.</p></td>
+<td><p>Review <a href="witt-i2c-testing-prerequisites.md" data-raw-source="[WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md)">WITT I2C Testing Prerequisites</a>. Make sure that the WITT test peripheral driver is installed, ACPI table modified with sample ASL and four instances of WITT Test Driver are found in Windows HLK Device Manager.</p></td>
 </tr>
 <tr class="even">
 <td><p>WITT firmware needs to be updated. The WITT firmware binary (i2c9665a.iic) is released as part of. When you install a new Windows HLK package, you should update the WITT firmware.</p></td>
-<td><p>See [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md) for instructions on how to upgrade the WITT firmware.</p></td>
+<td><p>See <a href="witt-i2c-testing-prerequisites.md" data-raw-source="[WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md)">WITT I2C Testing Prerequisites</a> for instructions on how to upgrade the WITT firmware.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WITT device is in a bad state. Typically, the green LED on a WITT device should be lit when there is no traffic, and should blink when there is traffic. Otherwise, the WITT or I<sup>2</sup>C controller might be in a bad state.</p></td>
@@ -101,18 +101,18 @@ The following table describes common issues that can occur during Windows Inter-
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Device.BusController Tests](device-buscontroller-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

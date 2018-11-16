@@ -42,7 +42,7 @@ Specifies the custom return code to map to the indicated shell exist code.
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -71,9 +71,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

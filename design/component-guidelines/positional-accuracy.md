@@ -45,7 +45,7 @@ a. Tap the location specified on the screen.
 
 **Note**  The specified locations are calculated as 13mm square areas. For example, if the instructions say "Top Left corner" you should tap somewhere within a 13mm square region of the top-left corner of the touchpad.
 
- 
+ 
 
 b. If no tap is registered by the device, manually fail the iteration.
 
@@ -65,9 +65,9 @@ b. If no tap is registered by the device, manually fail the iteration.
 
 -   15/15 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

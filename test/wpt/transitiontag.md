@@ -23,9 +23,9 @@ Represents the transition tag for an [OnOffTransitionConfiguration](onofftransit
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
-    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
-      * \<**TransitionTag**\>
+  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
+    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
+      * \<**TransitionTag**\>
 
 
 ## Syntax

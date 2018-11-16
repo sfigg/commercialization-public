@@ -18,9 +18,9 @@ ms.topic: article
 
 For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see the [Microsoft Accessibility website](https://www.microsoft.com/en-us/accessibility/default.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

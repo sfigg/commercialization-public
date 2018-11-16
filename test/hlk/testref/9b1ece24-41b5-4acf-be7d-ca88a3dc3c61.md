@@ -19,6 +19,7 @@ ms.topic: article
 This test verifies that a Windows Touch device meets requirements.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Input.Digitizer.Touch.CustomGestures</li><li>Device.Input.Digitizer.Touch.HIDCompliant</li><li>Device.Input.Digitizer.Touch.ThirdPartyDrivers</li></ul> |  
@@ -31,7 +32,7 @@ This test verifies that a Windows Touch device meets requirements.
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -88,7 +89,7 @@ If no ghost touches exist, and if touch input can be used as expected to control
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Input Testing](troubleshooting-deviceinput-testing.md) and the [Hardware Component Guidelines for Windows Digitizer Class Input Devices](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/windows-digitizer-class-input-devices).
 
@@ -116,7 +117,7 @@ For troubleshooting information, see [Troubleshooting Device.Input Testing](trou
 </tbody>
 </table>
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -143,11 +144,11 @@ For troubleshooting information, see [Troubleshooting Device.Input Testing](trou
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

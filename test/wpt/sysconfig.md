@@ -78,9 +78,9 @@ If no activity is selected, all activities are selected by default.
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

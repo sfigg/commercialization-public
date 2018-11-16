@@ -311,9 +311,9 @@ The **dot11\_manufacturing\_test\_awake** command causes the Wi-Fi chipset to wa
 
 [Adding Wi-Fi manufacturing test support to the OID interface](adding-wi-fi-manufacturing-test-support-to-the-oid-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

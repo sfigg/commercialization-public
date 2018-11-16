@@ -21,7 +21,7 @@ Several command line tools are provided with the HLK for onboarding and device c
 ## <span id="kitsdevicedetector"></span><span id="KITSDEVICEDETECTOR"></span>KitsDeviceDetector.exe
 
 
-KitsDeviceDetector is used during the [Mobile Test system onboarding process](..\getstarted\hlk-proxy-client-getting-started-guide.md).
+KitsDeviceDetector is used during the [Mobile Test system onboarding process](../getstarted/hlk-proxy-client-getting-started-guide.md).
 
 ### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -97,13 +97,13 @@ KitsDeviceDetector.exe /<parameter>:<parameter value> …
 <strong>Note</strong>  /DeviceFilters only applies to certain physical connection plugins. The value should be a comma or semi-colon delimited list of devices to limit the scope of discovery.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ***Examples***
 
@@ -176,7 +176,7 @@ AriesUtil.exe <action> [action-arguments ...]
 <ul>
 <li>Once all specified Aries are found the discovery can end before the timeout expires.</li>
 <li>If not specified, then discovery will proceed to list any Aries that respond until the timeout expires.</li>
-<li>The argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (*) character, in which case all Aries registered on the current host will be considered.</li>
+<li>The argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (<em>) character, in which case all Aries registered on the current host will be considered.</li>
 </ul>
 </dd>
 <dt><span id="_Adapter"></span><span id="_adapter"></span><span id="_ADAPTER"></span><strong>/Adapter</strong></dt>
@@ -205,7 +205,7 @@ AriesUtil.exe <action> [action-arguments ...]
 <tr class="even">
 <td>GetFirmwareVersion /Aries:&lt;aries-name&gt;</td>
 <td><p>Gets the firmware version currently installed on the specified Aries.</p>
-<p>The /Aries argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (*) character, in which case all Aries registered on the current host will be selected.</p></td>
+<p>The /Aries argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (</em>) character, in which case all Aries registered on the current host will be selected.</p></td>
 </tr>
 <tr class="odd">
 <td>MapDebugPort /Aries:&lt;aries-name&gt; /Port:&lt;port-number&gt;</td>
@@ -223,7 +223,7 @@ AriesUtil.exe <action> [action-arguments ...]
 <tr class="even">
 <td>ResetAries /Aries:&lt;aries-name&gt; [/Wait:&lt;seconds&gt;] [/SkipFail]</td>
 <td><p>Power cycle the Aries aries itself. If the /Wait option is specified, the tool will wait for up to the specified number of seconds for the Aries to come back online before exiting.</p>
-<p>The /Aries argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (*) character, in which case all Aries registered on the current host will be selected.</p>
+<p>The /Aries argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (<em>) character, in which case all Aries registered on the current host will be selected.</p>
 <p>If the /SkipFail argument is specified, any failures encountered during the operation will be ignored until the entire Aries list has been processed.</p></td>
 </tr>
 <tr class="odd">
@@ -235,7 +235,7 @@ AriesUtil.exe <action> [action-arguments ...]
 <td><p>Flashes a firmware update to the Aries itself.</p>
 <p>If the /Wait option is specified, the tool will wait for up to the specified number of seconds for the Aries to come back online before exiting.</p>
 <p>If the /MLO option is specified, the loader will be flashed to the Aries prior to the flashing the App.</p>
-<p>The /Aries argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (*) character, in which case all Aries registered on the current host will be selected.</p>
+<p>The /Aries argument value can be a single Aries name, or a comma or semi-colon delimited list of Aries names. It can also be the wildcard asterisk (</em>) character, in which case all Aries registered on the current host will be selected.</p>
 <p>If the /SkipFail argument is specified, any failures encountered during the operation will be ignored until the entire Aries list has been processed.</p></td>
 </tr>
 <tr class="odd">
@@ -261,7 +261,7 @@ AriesUtil.exe <action> [action-arguments ...]
 </tbody>
 </table>
 
- 
+ 
 
 ***Examples***
 
@@ -283,9 +283,9 @@ AriesUtil.exe ...
 AriesUtil.exe ResetDevice /Aries:myaries [/Autoskip:true]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

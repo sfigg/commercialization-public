@@ -57,7 +57,7 @@ OEMs can choose a single map region to preload from the multiple regions that ar
 **Tip**  
 You can avoid wiping preloaded maps off the internal store on the factory line using the [ResetPhoneEx] API. For more information, see [Resetting a phone during manufacturing](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/sign-a-full-flash-update--ffu--image).
 
- 
+ 
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash a build that contains this customization on a phone.

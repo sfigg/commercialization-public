@@ -38,7 +38,7 @@ This class represents a single test target that can be detected on a system (a p
 
 `Public MustInherit Class Target`
 
-          `Implements ITargetInformation`
+          `Implements ITargetInformation`
 
 **C#**
 
@@ -56,18 +56,18 @@ A Target contains information that is in XML format. Features have an XPATH quer
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.Target**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.Target**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageTarget**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageTarget**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

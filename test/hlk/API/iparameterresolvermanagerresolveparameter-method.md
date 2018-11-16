@@ -42,7 +42,7 @@ This method resolves the parameter string.
 
 `Function ResolveParameter ( _`
 
-          `inputValue As String _`
+          `inputValue As String _`
 
 `) As String`
 
@@ -50,7 +50,7 @@ This method resolves the parameter string.
 
 `string ResolveParameter (`
 
-          `string inputValue`
+          `string inputValue`
 
 `)`
 
@@ -59,7 +59,7 @@ This method resolves the parameter string.
 
 *inputValue*
 
-     The input string to search for.
+     The input string to search for.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **String**, which is the final result of the parameter resolution proces
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

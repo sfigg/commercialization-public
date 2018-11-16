@@ -45,7 +45,7 @@ When `DisableAccelerators` is set to **false**, Accelerators set through [Accele
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -80,9 +80,9 @@ The following XML output shows how to disable the **Accelerators** menu.
 
 [DisableOOBAccelerators](microsoft-windows-ie-internetexplorer-disableoobaccelerators.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,10 +26,10 @@ This action produces a text file that summarizes metrics related to shutdown.
 ## Options
 
 
-<a href="" id="-mincputoshow-percent-"></a>**-minCPUToShow***&lt;percent&gt;*  
+<a href="" id="-mincputoshow-percent-"></a>**-minCPUToShow**<em>&lt;percent&gt;</em>  
 Minimum percentage of CPU usage to show.
 
-<a href="" id="-maxfilestoshow-n-"></a>**-maxFilesToShow***&lt;n&gt;*  
+<a href="" id="-maxfilestoshow-n-"></a>**-maxFilesToShow**<em>&lt;n&gt;</em>  
 Maximum number of files to show.
 
 ## Related topics
@@ -37,9 +37,9 @@ Maximum number of files to show.
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

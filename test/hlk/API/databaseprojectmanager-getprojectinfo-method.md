@@ -29,7 +29,7 @@ Gets the [ProjectInfo Class](projectinfo-class.md) for a specific project.
 
 `public override ProjectInfo GetProjectInfo (`
 
-          `string projectName`
+          `string projectName`
 
 `)`
 
@@ -50,9 +50,9 @@ Returns a [ProjectInfo Class](projectinfo-class.md) for the requested project.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

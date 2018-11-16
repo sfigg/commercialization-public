@@ -23,9 +23,9 @@ This section includes topics for multi-touch devices.
 
 [Implementing Top-Level Collections in Multi-touch Devices](implementing-top-level-collections-in-multitouch-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

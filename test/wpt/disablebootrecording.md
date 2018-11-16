@@ -57,21 +57,21 @@ The following table describes possible return values.
 </tr>
 <tr class="even">
 <td><p>E_WPRC_FAILED_TO_DISABLE_PROFILES_FOR_BOOT_TRACING</p></td>
-<td><p>The library failed to remove the profiles. Use [IControlErrorInfo](icontrolerrorinfo.md) to get detailed error information.</p></td>
+<td><p>The library failed to remove the profiles. Use <a href="icontrolerrorinfo.md" data-raw-source="[IControlErrorInfo](icontrolerrorinfo.md)">IControlErrorInfo</a> to get detailed error information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IOnOffTransitionManager](ionofftransitionmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

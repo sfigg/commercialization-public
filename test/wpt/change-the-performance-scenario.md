@@ -32,9 +32,9 @@ The procedure describes how to select the Windows Performance Recorder (WPR) pe
 
 [Performance Scenarios](performance-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

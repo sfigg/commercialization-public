@@ -40,16 +40,16 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p>Minimum value</p></td>
-<td><p>0 + 0*256 + 0*65536 + 0*16777216</p></td>
+<td><p>0 + 0<em>256 + 0</em>65536 + 0<em>16777216</p></td>
 </tr>
 <tr class="even">
 <td><p>Maximum value</p></td>
-<td><p>100 + 100*256 + 100*65536 + 100*16777216</p></td>
+<td><p>100 + 100</em>256 + 100<em>65536 + 100</em>16777216</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

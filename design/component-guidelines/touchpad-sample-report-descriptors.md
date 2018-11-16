@@ -202,9 +202,9 @@ The following excerpt is from the descriptor for the Windows Precision Touchpad 
 
 [Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,7 +25,7 @@ ms.topic: article
 
 -   The value for `Key` is added to the answer file as an attribute of the [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md) element. The attribute `wcm:keyValue` is used to identify each unique domain name. For example, you can specify three different domain names by using `Key` values of **1**, **2**, and **3**.
 
- 
+ 
 
 ## Values
 
@@ -43,7 +43,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -103,9 +103,9 @@ The following XML output shows a Domain Name System (DNS) configuration for Fabr
 
 [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md)
 
- 
+ 
 
- 
+ 
 
 
 

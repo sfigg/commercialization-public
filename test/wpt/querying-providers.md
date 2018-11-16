@@ -26,7 +26,7 @@ xperf {-providers [options] | -loggers | -boottrace | -profint | -profiles | -pr
 ## Parameters
 
 
-<a href="" id="-providers-options----"></a>**-providers***\[options...\]*  
+<a href="" id="-providers-options----"></a>**-providers**<em>\[options...\]</em>  
 Query all installed/known and registered providers, as well as all known kernel flags and groups. For details, see [providers](providers-wpa.md).
 
 <a href="" id="-loggers"></a>**-loggers**  
@@ -38,16 +38,16 @@ Query the boot trace configuration.
 <a href="" id="-profint"></a>**-profint**  
 Query the current profile interval.
 
-<a href="" id="-profiles-profilefilename---profilename-"></a>**-profiles***{ProfileFileName | ProfileName}*  
+<a href="" id="-profiles-profilefilename---profilename-"></a>**-profiles**<em>{ProfileFileName | ProfileName}</em>  
 Query the profile names defined in *ProfileFileName* or *ProfileName*. If no parameters are specified, query the names of the built-in profiles.
 
-<a href="" id="-profileswithdetails-profilefilename---profilename-"></a>**-profileswithdetails***{ProfileFileName | ProfileName}*  
+<a href="" id="-profileswithdetails-profilefilename---profilename-"></a>**-profileswithdetails**<em>{ProfileFileName | ProfileName}</em>  
 Query the profile names defined in *ProfileFileName* or detailed properties in *ProfileName*. If no parameters are specified, query the names of the built-in profiles.
 
-<a href="" id="-profilesessions-profilefilename---sessionname-"></a>**-profilesessions***{ProfileFileName | SessionName}*  
+<a href="" id="-profilesessions-profilefilename---sessionname-"></a>**-profilesessions**<em>{ProfileFileName | SessionName}</em>  
 Query the profile session names defined in *ProfileFileName* or *SessionName*. If no parameters are specified, query the names of the built-in profile sessions.
 
-<a href="" id="-profileproviders-profilefilename---providername-"></a>**-profileproviders***{ProfileFileName | ProviderName}*  
+<a href="" id="-profileproviders-profilefilename---providername-"></a>**-profileproviders**<em>{ProfileFileName | ProviderName}</em>  
 Query the profile provider names defined in *ProfileFileName* or *ProviderName*. If no parameters are specified, query the names of the built-in profile providers.
 
 <a href="" id="-profileloggersprofilename"></a>**-profileloggers***ProfileName*  
@@ -58,9 +58,9 @@ Query logging sessions specified in *ProfileName*.
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

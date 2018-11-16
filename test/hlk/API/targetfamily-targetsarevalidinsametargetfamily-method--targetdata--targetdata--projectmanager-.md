@@ -29,11 +29,11 @@ Checks to see if the two [TargetData](targetdata-class.md) objects can be member
 
 `   public static bool TargetsAreValidInSameTargetFamily (`
 
-          `TargetData firstTarget,`
+          `TargetData firstTarget,`
 
-          `TargetData secondTarget,`
+          `TargetData secondTarget,`
 
-          `ProjectManager manager`
+          `ProjectManager manager`
 
 `)`
 
@@ -84,24 +84,24 @@ There are a number of checks done:
 
 If any of the checks fail, the method returns false.
 
->[!NOTE]
->  
-This specifically allows different Device ID, PID (Product Id) or "Dev" and different sub vendor or implementer Ids.
+> [!NOTE]
+> 
+> This specifically allows different Device ID, PID (Product Id) or "Dev" and different sub vendor or implementer Ids.
+> 
+> [!NOTE]
+> 
+> This function populates the event log with additional data if the comparison has failed.
 
->[!NOTE]
->  
-This function populates the event log with additional data if the comparison has failed.
-
- 
+ 
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

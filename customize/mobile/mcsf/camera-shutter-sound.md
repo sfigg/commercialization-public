@@ -78,7 +78,7 @@ This customization affects all camera apps on the mobile device. If camera sound
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash an image containing this customization to a phone.

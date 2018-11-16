@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -83,9 +83,9 @@ The following XML output shows how to set search providers.
 
 [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,7 +25,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
 |------------------------------------------------------|--------------------|
 | Device name reported in HLK as **Windows Phone** instead of the actual device name. | Reboot the device. |
 
- 
+ 
 
 ## <span id="Onboarding_USB_connected_devices"></span><span id="onboarding_usb_connected_devices"></span><span id="ONBOARDING_USB_CONNECTED_DEVICES"></span>Onboarding USB connected devices
 
@@ -86,7 +86,7 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
 
     -  The KitsDeviceDetector log can found at %ProgramFiles(x86)%\\WTTMobile\\Tools\\KitsDeviceDetector.log
 
-     
+     
 
 9.  Restart the proxy service in elevated mode.
     1.  In the Proxy Service command prompt window, press CTRL + C to stop the service.
@@ -160,10 +160,10 @@ After you install the Windows Hardware Lab Kit (Windows HLK) on the Controller s
         KitsDeviceDetector.exe /rundevicediscovery
         ```
 
-        This command will output all of the devices on the subnet that has Sirep running. Each string will look something like this:
+        This command will output all of the devices on the subnet that has Sirep running. Each string will look something like this:
         > Name: 8CAE4CF5D6A5 | UniqueId: 00000000-0000-0000-0000-8cae4cf5d6a5 | Address: 10.131.2.211 | Connection: SirepBroadcast1 | Location:
 
-         
+         
 
 4.  Find your device string (matching your IP address, and make note of the following fields:
     1.  "Name:"

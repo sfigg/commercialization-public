@@ -1,6 +1,6 @@
 ---
 title: Configuring the duration of the first boot screen
-description: If partners specify two boot screens (in addition to the Windows 10 Mobile boot screen), they can modify the duration of the first boot screen.
+description: If partners specify two boot screens (in addition to the Windows 10 Mobile boot screen), they can modify the duration of the first boot screen.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -16,7 +16,7 @@ ms.topic: article
 # Configuring the duration of the first boot screen
 
 
-If partners specify two boot screens (in addition to the Windows 10 Mobile boot screen), they can modify the duration of the first boot screen. We recommend that partners choose a duration for the first boot screen so that the first and second boot screens appear for the same amount of time.
+If partners specify two boot screens (in addition to the Windows 10 Mobile boot screen), they can modify the duration of the first boot screen. We recommend that partners choose a duration for the first boot screen so that the first and second boot screens appear for the same amount of time.
 
 Only the duration of the first OEM-specified boot screen can be modified. The second OEM-specified boot screen appears when first boot screen duration is complete, and it is displayed until the boot process is complete. To determine the duration of the first boot screen, Microsoft recommends that OEMs time the boot process for their hardware, and choose a duration for the first boot screen that results in the first and second boot screens appearing for the same amount of time.
 
@@ -38,11 +38,10 @@ The following table describes the duration of each boot screen when three boot s
 <td><p>First boot screen</p></td>
 <td><p>By default, this screen is displayed for at least 5 seconds, generally several seconds longer due to firmware and early boot initialization time as described in the following note. This duration is configurable by the OEM. Microsoft recommends that this screen be displayed for at least 2.5 seconds.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The first boot screen typically appears for several seconds longer than the duration specified by the OEM, and the OEM should take this into consideration when determining a duration. The OEM-specified duration actually begins with the start of ntoskrnl.exe initialization, and typically the first boot screen actually appears several seconds before ntoskrnl.exe initialization starts.</p>
+<strong>Note</strong><br/><p>The first boot screen typically appears for several seconds longer than the duration specified by the OEM, and the OEM should take this into consideration when determining a duration. The OEM-specified duration actually begins with the start of ntoskrnl.exe initialization, and typically the first boot screen actually appears several seconds before ntoskrnl.exe initialization starts.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -56,7 +55,7 @@ The following table describes the duration of each boot screen when three boot s
 </tbody>
 </table>
 
- 
+
 
 For comparison, the following table shows the duration of each boot screen when only two boot screens are used.
 
@@ -83,7 +82,7 @@ For comparison, the following table shows the duration of each boot screen when 
 </tbody>
 </table>
 
- 
+
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 
@@ -98,7 +97,7 @@ For comparison, the following table shows the duration of each boot screen when 
                                      Windows Phone boot screen."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <Static>  
 
         <Settings Path="BootDisplaySettings">  
@@ -114,7 +113,7 @@ For comparison, the following table shows the duration of each boot screen when 
 
 3.  Set the `BootUXLogoTransitionTime` value to the hexadecimal value of the number of milliseconds to display the first boot screen.
 
-    **Note**  
+    **Note**  
     Because the associated setting is a REG\_BINARY value, this value must be specified in hexadecimal pairs. For example, if you want to set the value to 1000 milliseconds or 0x03E8 (hexadecimal), you must set the value to "**E8,03**" in your customization answer file. Also note that the actual duration of the first screen may be several seconds longer than the value specified. For more information, see the note in the first table above.
 
 ## Related topics

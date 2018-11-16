@@ -85,7 +85,7 @@ The following table describes the assessment settings, recommended values, and a
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -96,9 +96,9 @@ The following table describes the assessment settings, recommended values, and a
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

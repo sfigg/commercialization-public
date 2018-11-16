@@ -17,27 +17,27 @@ ms.topic: article
 # ResultsUtil Command-Line options
 
 
-The ResultsUtil command is used when you want to store assessment results in a SQL Server database. By default the results are stored on the Windows Assessment Services server in a results store. The ResultsUtil command is used to configure the Windows Assessment Services server (or an independent server) to store job results from the results share into a SQL database. It is also used to import existing results into a SQL database. After you install Windows Assessment Services on a server, use the ResultsUtil commands to initialize the results database on a SQL Server instance before you import individual results or configure Windows Assessment Services to post results to the database automatically.
+The ResultsUtil command is used when you want to store assessment results in a SQL Server database. By default the results are stored on the Windows Assessment Services server in a results store. The ResultsUtil command is used to configure the Windows Assessment Services server (or an independent server) to store job results from the results share into a SQL database. It is also used to import existing results into a SQL database. After you install Windows Assessment Services on a server, use the ResultsUtil commands to initialize the results database on a SQL Server instance before you import individual results or configure Windows Assessment Services to post results to the database automatically.
 
-**Warning**  
-Results that are stored in a SQL Server database do not include the Assessment Platform presentation layer and cannot be viewed in the Windows Assessment Services - Client (Windows ASC). A custom reporting solution is required to view the results.
+**Warning**  
+Results that are stored in a SQL Server database do not include the Assessment Platform presentation layer and cannot be viewed in the Windows Assessment Services - Client (Windows ASC). A custom reporting solution is required to view the results.
 
- 
+
 
 ## Remarks
 
 
 Starting with Windows 8.1, you can now batch import a set of results into the database and delete the batch from the database. The tracking mechanism used to tag the results in an import batch is the batch ID. Batch importing (/B) lets you point to a folder with a set of results and import them with a single command. The output of this command provides a batch ID that can later be used to delete the batch if any importing errors occur—if there is a typo in the metadata, for example.
 
-**Note**  
+**Note**  
 The /tags option is no longer supported.
 
- 
 
-**Note**  
+
+**Note**  
 When using a database connection string, either with the /db option or when saving to ResultsUtil.exe.config with the /FileSave option, you must specify **RelaxResults** as the initial catalog. See the table of options below for examples.
 
- 
+
 
 ### Metadata
 
@@ -75,16 +75,16 @@ Metadata is useful when comparing results or reporting on a collection of result
 </tbody>
 </table>
 
- 
+
 
 ## System Requirements
 
 
 The following are system requirements for running the ResultsUtil command:
 
--   Windows Assessment Services
+-   Windows Assessment Services
 
--   Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2
+-   Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2
 
 -   A full version of SQL Server 2008 R2 or later
 
@@ -127,11 +127,10 @@ The following table provides a description of how each option can be used. These
 <td><p>Installs the results database on the specified instance of SQL Server.</p>
 <p>Connection strings can be used to configure connections to the database. If no command line options are provided, then the /InitializeDatabase command uses what is in the configuration file.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The two configurations in the default file are not used and can be removed.</p>
+<strong>Note</strong><br/><p>The two configurations in the default file are not used and can be removed.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Example:</p>
 <p><strong>ResultsUtil /InitializeDatabase /db &quot;Data Source=localhost\WAS_SQLSERVER;Initial Catalog=RelaxResults;Integrated Security=True&quot; /user MyName /filesave</strong></p></td>
@@ -148,7 +147,7 @@ The following table provides a description of how each option can be used. These
 <p>/C</p></td>
 <td><p>Configures the specified instance of Windows Assessment Services to store results to the specified results database.</p>
 <p>Example:</p>
-<p><strong>ResultsUtil /ConfigureWASserver /db &quot;Data Source=localhost\WAS_SQLSERVER;Initial Catalog=RelaxResults;Integrated Security=True&quot; /user MyName /WasServer http://WASserver:8000/relax/service</strong></p></td>
+<p><strong>ResultsUtil /ConfigureWASserver /db &quot;Data Source=localhost\WAS_SQLSERVER;Initial Catalog=RelaxResults;Integrated Security=True&quot; /user MyName /WasServer <a href="http://WASserver:8000/relax/service" data-raw-source="http://WASserver:8000/relax/service">http://WASserver:8000/relax/service</a></strong></p></td>
 </tr>
 <tr class="even">
 <td><p>/InputFile <em>&lt;filename&gt;</em></p>
@@ -178,7 +177,7 @@ The following table provides a description of how each option can be used. These
 <tr class="even">
 <td><p>/Project <em>&lt;project_name&gt;</em></p>
 <p>/P</p></td>
-<td><p>Associates a project name with the data being imported or overwrites it if it already exists. For assessment results imported from a job that ran in the Windows Assessment Console on a local computer, the project name does not exist. If the results were generated from a job that ran in a lab environment that uses Windows Assessment Services, the project name already exists.</p>
+<td><p>Associates a project name with the data being imported or overwrites it if it already exists. For assessment results imported from a job that ran in the Windows Assessment Console on a local computer, the project name does not exist. If the results were generated from a job that ran in a lab environment that uses Windows Assessment Services, the project name already exists.</p>
 <p>Example:</p>
 <p><strong>ResultsUtil /ImportResults /inputfile C:\WAS\Results\JobResultsComputerGUID.xml /project Project1</strong></p></td>
 </tr>
@@ -220,11 +219,10 @@ The following table provides a description of how each option can be used. These
 <td><p>/FileSave</p></td>
 <td><p>Saves the database configuration file, resultsutil.exe.config, to the same location as the ResultsUtil. The database configuration file is prepopulated with the database connections string and user name so that you don’t have to enter it every time that you import results.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>There is only one database configuration file. If you have multiple results databases the command-line options will take precedence over the configuration file.</p>
+<strong>Note</strong><br/><p>There is only one database configuration file. If you have multiple results databases the command-line options will take precedence over the configuration file.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Example:</p>
 <p><strong>ResultsUtil /InitializeDatabase /db &quot;Data Source=localhost\WAS_SQLSERVER;Initial Catalog=RelaxResults;Integrated Security=True&quot; /user MyName /filesave</strong></p></td>
@@ -233,21 +231,21 @@ The following table provides a description of how each option can be used. These
 <td><p>/Quiet</p></td>
 <td><p>Suppresses status messages.</p>
 <p>Example:</p>
-<p><strong>ResultsUtil /ConfigureWASserver /db &quot;Data Source=localhost\WAS_SQLSERVER;Initial Catalog=RelaxResults;Integrated Security=True&quot; /User MyName /WasServer http://MyServer:8000/relax/service /Quiet</strong></p></td>
+<p><strong>ResultsUtil /ConfigureWASserver /db &quot;Data Source=localhost\WAS_SQLSERVER;Initial Catalog=RelaxResults;Integrated Security=True&quot; /User MyName /WasServer <a href="http://MyServer:8000/relax/service" data-raw-source="http://MyServer:8000/relax/service">http://MyServer:8000/relax/service</a> /Quiet</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Windows Assessment Services](windows-assessment-services-technical-reference.md)
 
- 
 
- 
+
+
 
 
 

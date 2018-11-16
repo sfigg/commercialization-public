@@ -41,7 +41,7 @@ A solid-state drive (SSD) is a hard drive that uses solid-state memory to store 
 
 **Note**   It's no longer necessary to run the Windows System Assessment Tests (WinSAT) on SSD drives. Windows now detects SSD drives and will tune itself accordingly.
 
- 
+ 
 
 ### <span id="AdvancedFormat"></span><span id="advancedformat"></span><span id="ADVANCEDFORMAT"></span>Advanced format drives
 
@@ -54,7 +54,7 @@ Advanced Format 4K Native (4Kn) drives are supported on UEFI-based computers onl
 **Warning**  
 For Advanced Format 4K Native drives (4-KB-per-sector) drives, the minimum partition size is 260 MB, due to a limitation of the FAT32 file format. The minimum partition size of FAT32 drives is calculated as sector size (4KB) x 65527 = 256 MB. For more information, see [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md).
 
- 
+ 
 
 ### <span id="EncryptedDisksAndPartitions"></span><span id="encrypteddisksandpartitions"></span><span id="ENCRYPTEDDISKSANDPARTITIONS"></span>Factory-encrypted hard drives
 
@@ -73,7 +73,7 @@ The system drive might not appear as disk 0 in the DiskPart tool. The system mig
 
 To learn more, see [Configure Multiple Hard Drives](configure-multiple-hard-drives.md) and [Hard Disk Location Path Format](hard-disk-location-path-format.md).
 
- 
+ 
 
 ## <span id="Partitions"></span><span id="partitions"></span><span id="PARTITIONS"></span>Partitions
 
@@ -136,7 +136,7 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 -   The partition may not automatically protect data that is stored outside the user profile folders. For example, a guest user might have access to files in an unprotected data partition.
 -   If you change the default location of the user profile folders to any volume other than the system volume, you cannot service your image. The computer may not apply updates, fixes, or service packs to the installation. For a list of known issues related to changing the default folder locations, see [Description of known issues with the FolderLocation settings](http://go.microsoft.com/fwlink/?LinkId=142275).
 
- 
+ 
 
 ## <span id="BKMK_LINKS"></span><span id="bkmk_links"></span>See also
 
@@ -155,36 +155,36 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md) | [Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md) | [Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk](configure-more-than-four-partitions-on-a-biosmbr-based-hard-disk.md)</p></td>
+<td align="left"><p><a href="configure-uefigpt-based-hard-drive-partitions.md" data-raw-source="[Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md)">Configure UEFI/GPT-Based Hard Drive Partitions</a> | <a href="configure-biosmbr-based-hard-drive-partitions.md" data-raw-source="[Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md)">Configure BIOS/MBR-Based Hard Drive Partitions</a> | <a href="configure-more-than-four-partitions-on-a-biosmbr-based-hard-disk.md" data-raw-source="[Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk](configure-more-than-four-partitions-on-a-biosmbr-based-hard-disk.md)">Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Multiple drives</strong></p></td>
-<td align="left"><p>[Configure Multiple Hard Drives](configure-multiple-hard-drives.md) | [Hard Disk Location Path Format](hard-disk-location-path-format.md) | [Internal and External SATA Port Configuration](http://go.microsoft.com/fwlink/p/?LinkId=321830) | [Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)</p></td>
+<td align="left"><p><a href="configure-multiple-hard-drives.md" data-raw-source="[Configure Multiple Hard Drives](configure-multiple-hard-drives.md)">Configure Multiple Hard Drives</a> | <a href="hard-disk-location-path-format.md" data-raw-source="[Hard Disk Location Path Format](hard-disk-location-path-format.md)">Hard Disk Location Path Format</a> | <a href="http://go.microsoft.com/fwlink/p/?LinkId=321830" data-raw-source="[Internal and External SATA Port Configuration](http://go.microsoft.com/fwlink/p/?LinkId=321830)">Internal and External SATA Port Configuration</a> | <a href="http://go.microsoft.com/fwlink/?LinkId=733824" data-raw-source="[Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)">Configuring Disk Mirroring</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Using smaller drives</strong></p></td>
-<td align="left"><p>[Compact OS, single-sourcing, and image optimization](compact-os.md)</p></td>
+<td align="left"><p><a href="compact-os.md" data-raw-source="[Compact OS, single-sourcing, and image optimization](compact-os.md)">Compact OS, single-sourcing, and image optimization</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md) | [Factory Encrypted Drives](factory-encrypted-drives.md) | [BitLocker Drive Encryption](bitlocker-drive-encryption.md)</p></td>
+<td align="left"><p><a href="capture-and-apply-windows-system-and-recovery-partitions.md" data-raw-source="[Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md)">Capture and Apply Windows, System, and Recovery Partitions</a> | <a href="deploy-windows-using-full-flash-update--ffu.md" data-raw-source="[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)">Deploy Windows using Full Flash Update (FFU)</a> | <a href="deploy-windows-on-a-vhd--native-boot.md" data-raw-source="[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)">Deploy Windows on a VHD (Native Boot)</a> | <a href="factory-encrypted-drives.md" data-raw-source="[Factory Encrypted Drives](factory-encrypted-drives.md)">Factory Encrypted Drives</a> | <a href="bitlocker-drive-encryption.md" data-raw-source="[BitLocker Drive Encryption](bitlocker-drive-encryption.md)">BitLocker Drive Encryption</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>
-<td align="left"><p>[Repair the boot menu on a dual-boot PC](repair-the-boot-menu-on-a-dual-boot-pc.md)</p></td>
+<td align="left"><p><a href="repair-the-boot-menu-on-a-dual-boot-pc.md" data-raw-source="[Repair the boot menu on a dual-boot PC](repair-the-boot-menu-on-a-dual-boot-pc.md)">Repair the boot menu on a dual-boot PC</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Tools and settings</strong></p></td>
-<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [The Windows and GPT FAQ](http://go.microsoft.com/fwlink/?LinkId=88211) | [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md) | [DiskPart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458) | [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)</p></td>
+<td align="left"><p><a href="uefi-firmware.md" data-raw-source="[UEFI Firmware](uefi-firmware.md)">UEFI Firmware</a> | <a href="http://go.microsoft.com/fwlink/?LinkId=88211" data-raw-source="[The Windows and GPT FAQ](http://go.microsoft.com/fwlink/?LinkId=88211)">The Windows and GPT FAQ</a> | <a href="bcdboot-command-line-options-techref-di.md" data-raw-source="[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)">BCDboot Command-Line Options</a> | <a href="http://go.microsoft.com/fwlink/?LinkId=128458" data-raw-source="[DiskPart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458)">DiskPart Command line syntax</a> | <a href="wim-vs-ffu-image-file-formats.md" data-raw-source="[WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)">WIM vs. VHD vs. FFU: comparing image file formats</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

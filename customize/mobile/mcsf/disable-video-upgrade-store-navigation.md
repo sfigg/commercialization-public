@@ -73,7 +73,7 @@ By default, if there are no compatible video upgrade apps installed on the phone
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone that has a UICC or Wi-Fi connection.

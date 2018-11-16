@@ -23,8 +23,8 @@ Describes the configurations to enable the Event Tracing for Windows (ETW) kerne
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<**SystemCollector**\>
+  * \<[Profiles](profiles.md)\>
+    * \<**SystemCollector**\>
 
 
 ## Syntax

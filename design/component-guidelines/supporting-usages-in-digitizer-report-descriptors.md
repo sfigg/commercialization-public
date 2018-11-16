@@ -36,15 +36,15 @@ A *Usage* is the name of a value, button, or collection in a HID report. The hos
 | Y Tilt     | The angle between the X-Z plane and the pointer device plane; a positive Y tilt is toward the user.                | Digitizer | 0x3e | Pen        |
 | Twist      | Clockwise rotation of the cursor about its own axis.                                                               | Digitizer | 0x41 | Pen        |
 
- 
+ 
 
 **Note**  Usages listed in the table above are known to Windows and are delivered to applications using the WM\_POINTER message.
 
- 
+ 
 
 **Note**  Pointer devices are free to support additional usages (including vendor-specific usages). Additional usages are not delivered to applications in WM\_POINTER messages. The value of these usages can be retrieved by using the [**GetRawPointerDeviceData**](https://msdn.microsoft.com/library/windows/hardware/hh802887) function. In order to make the usages accessible from the **GetRawPointerDeviceData** function, the usages must be located in the same report as the X and Y usages.
 
- 
+ 
 
 ### <a href="" id="hid-descriptor"></a>HID Descriptor for Digitizers
 
@@ -95,7 +95,7 @@ A device that supports T and C uses usage arrays for reporting the X and Y value
 
 **Note**  These examples take advantage of the HID rule that global items stay the same for every main item until they are changed. This allows both **X** and **Y** usages to share just one entry for the report count.
 
- 
+ 
 
 Pen devices should use the first example for their descriptors since C isn’t relevant for these devices.
 
@@ -118,7 +118,7 @@ Use the **Tip** switch to indicate finger or pen contact and lift-off from the d
 
 **Note**  This usage is only required for touch devices.
 
- 
+ 
 
 <a href="" id="in-range"></a>**In-range**  
 If the device supports Z-axis detection, the digitizer must set the **In-range** usage in the input report when the transducer is within the region where digitizing is possible. If the device does not support Z-axis detection, the driver should not include the **In-range** usage in its report descriptor.
@@ -171,7 +171,7 @@ See the Touch and Pen Support section for a full descriptor of a pen device that
 
 **Note**  This usage is required for all pen devices but is optional for touch devices.
 
- 
+ 
 
 ### Optional HID Usages
 
@@ -241,11 +241,11 @@ The physical range and logical range must be specified. The physical range must 
 
 **Note**  The Unit Exponent must be -2 when Unit is Degrees and -4 when Unit is Radians.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -74,9 +74,9 @@ Once you're booted into WinPE, you can check to see which mode you've booted int
 
 [UEFI Firmware](uefi-firmware.md)
 
- 
+ 
 
- 
+ 
 
 
 

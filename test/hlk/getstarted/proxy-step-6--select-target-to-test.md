@@ -32,7 +32,7 @@ Windows HLK Studio detects all features that a device implements. An individuall
     >[!NOTE]
     >  Some software drivers are associated with a physical device. If you cannot find your driver listed in the **software device** view, use the search bar in the **device manager** view to find the device under which your software driver is associated.
 
-     
+     
 
 The following image shows the Studio **Selection** tab.
 
@@ -51,16 +51,16 @@ The following image shows the Studio **Selection** tab.
 
     You must select all of the features of a specific product type for a device to receive certification.
 
-     If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
+     If you're testing a Web Services on Devices (WSD) device, there may be a delay before the required WSD targets are listed.
 
-     
+     
 The **show selected** view in the left pane displays the targets that you've selected across all views. This view allows you to see just the areas you're testing. You also can filter a machine pool by category by using the **category** list. You can search for specific targets and features by using the search box.
 
-To learn more about the different options on this page see [HLK Studio - Selection Tab](..\user\hlk-studio---selection-tab.md).
+To learn more about the different options on this page see [HLK Studio - Selection Tab](../user/hlk-studio---selection-tab.md).
 
- 
+ 
 
- 
+ 
 
 
 

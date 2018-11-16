@@ -27,7 +27,7 @@ This document contains instructions for partners and original equipment manufact
 >[!IMPORTANT]
 >  Instructions in this document are for testing purposes only. They are *not* intended for end users or to configure systems for production use.
 
- 
+ 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -67,7 +67,7 @@ This step deploys the required test binaries and drivers to the cluster nodes an
 >[!IMPORTANT]
 >  Before running this test job, ensure that both secure boot and BitLocker are disabled on all machines used for testing. If you are using a virtual machine for the test controller, you may need to manually disable secure boot and BitLocker, as they may be enabled by default.
 
- 
+ 
 
 Do the following in **HLK Studio**:
 
@@ -106,7 +106,7 @@ After you prepare machines for tests, S2D also needs to be configured before you
 >[!IMPORTANT]
 >  This job will succeed only if *no* existing cluster, storage pool, or virtual disk has already been created. Before you run this job, first remove all virtual disks, storage pools, and cluster roles. Also remove the cluster itself. If you have already created a cluster, enabled S2D, and configured and validated the pool and spaces, skip this step and proceed to running the tests.
 
- 
+ 
 
 1.  In the **Tests** tab in HLK Studio, select test **S2D - Setup Storage Cluster** and **Run Selected**, and then specify the required parameters and roles.
     1.  For the parameter **ClusterName**, enter the name of the cluster you want to create as its value. (You will need to provide the same cluster name for later tests.)
@@ -300,16 +300,16 @@ After all of the tests have completed successfully, and while you are still in t
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
 [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

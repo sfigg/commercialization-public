@@ -42,7 +42,7 @@ This method compares two **MachineSet** instances.
 
 `Public Function Equals ( _`
 
-          `otherMachineSet As MachineSet _`
+          `otherMachineSet As MachineSet _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **MachineSet** instances.
 
 `public bool Equals (`
 
-          `MachineSet otherMachineSet`
+          `MachineSet otherMachineSet`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **MachineSet** instances.
 
 *otherMachineSet*
 
-     The **MachineSet** object to compare against.
+     The **MachineSet** object to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method compares two **MachineSet** instances.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

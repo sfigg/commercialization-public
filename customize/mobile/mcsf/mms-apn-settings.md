@@ -136,7 +136,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+     
 
 5.  To hide or show the **IP type** setting in the MMS APN settings screen: Set the value for `HIdeMMSAPNIPType` to one of the following:
 
@@ -163,7 +163,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+     
 
 6.  To change the default IP type shown in the **IP type** settings drop-down: Set the value for `MMSAPNIPTypeIfHidden` to one of the following:
 
@@ -194,7 +194,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

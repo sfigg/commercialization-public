@@ -40,9 +40,9 @@ The following procedure shows how to select a custom profile in the WPR user int
 
 [Recording for Basic System Diagnosis](recording-for-basic-system-diagnosis.md#generalpro)
 
- 
+ 
 
- 
+ 
 
 
 

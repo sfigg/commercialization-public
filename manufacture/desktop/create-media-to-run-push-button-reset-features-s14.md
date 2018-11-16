@@ -18,12 +18,12 @@ Recovery media (bare metal recovery) helps restore a Windows device to the facto
 
 You can include this media with new devices that you provide to your customers using the same Windows images used to deploy the devices.
 
-**Note**  
+**Note**  
 -   The PC firmware/BIOS must be configured so that the PC can boot from the media (USB drive or DVD drive).
 -   The USB flash drive or DVD recovery media must have enough space for the Windows image.
 -   If the Windows images are larger than 32GB or are larger the media you're using (for example, 4.7GB DVDs), you'll need to [split the Windows image file to span across multiple DVDs](split-a-windows-image--wim--file-to-span-across-multiple-dvds.md).
 
- 
+
 
 To create a bootable USB recovery drive for a personal device, see [Create a USB recovery drive](http://go.microsoft.com/fwlink/p/?linkid=296450).
 
@@ -33,7 +33,7 @@ To create a bootable USB recovery drive for a personal device, see [Create a USB
 To create the recovery media that you can include with the PC, you must have the following:
 
 -   A Windows image (Install.wim). You can either use the base Windows image or a customized recovery image.
--   A Windows RE tools image (Winre.wim). You can either extract the base Windows RE tools image from the Windows image, or use a [customized Windows RE image](customize-windows-re.md).
+-   A Windows RE tools image (Winre.wim). You can either extract the base Windows RE tools image from the Windows image, or use a [customized Windows RE image](customize-windows-re.md).
 
 **Step 1: Open the Deployment and Imaging Tools Environment**
 
@@ -66,7 +66,7 @@ To create the recovery media that you can include with the PC, you must have the
 
 **Step 3: Create a working folder for Windows RE files**
 
-1.  Create a folder structure for Windows RE, which is based on Windows PE:
+1.  Create a folder structure for Windows RE, which is based on Windows PE:
 
     ```
     copype amd64 C:\resetmedia_amd64
@@ -74,7 +74,7 @@ To create the recovery media that you can include with the PC, you must have the
 
     where *amd64* is the architecture of the system you are creating media for.
 
-2.  Replace the default Windows PE boot image (Boot.wim) with a Windows RE tools image.
+2.  Replace the default Windows PE boot image (Boot.wim) with a Windows RE tools image.
 
     ```
     xcopy C:\MyImages\winre.wim C:\resetmedia_amd64\media\sources\boot.wim /h
@@ -136,14 +136,16 @@ To create the recovery media that you can include with the PC, you must have the
 3.  At the **Windows RE Tools** menus, select a keyboard layout, for example, **US**.
 4.  Click **Troubleshoot** &gt; **Reset your PC** &gt; **Next**
 
-    **Note**  
-    If you are testing on the same PC, and you have not cleaned the hard drive, you may be prompted to select a drive. Select Windows 10.
+    **Note**  
+    If you are testing on the same PC, and you have not cleaned the hard drive, you may be prompted to select a drive. Select Windows 10.
 
-     
 
-    Select **Yes, repartition the drives** &gt; **Just remove my files** &gt; **Reset**.
 
-    Windows resets the computer to its original state by using the recovery image.
+~~~
+Select **Yes, repartition the drives** &gt; **Just remove my files** &gt; **Reset**.
+
+Windows resets the computer to its original state by using the recovery image.
+~~~
 
 ## <span id="Large-Scale_Deployment"></span><span id="large-scale_deployment"></span><span id="LARGE-SCALE_DEPLOYMENT"></span>Large-Scale Deployment
 
@@ -163,9 +165,9 @@ You can potentially save manufacturing time by appending the Windows image on th
 
 [REAgentC Command-Line Options](reagentc-command-line-options.md)
 
- 
 
- 
+
+
 
 
 

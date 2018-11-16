@@ -83,14 +83,14 @@ In this example, the following version numbers are used:
 </tbody>
 </table>
 
- 
+ 
 
 The driver file is named XKmdfDriver.sys, and the INF file is XKmdfDriver.inf.
 
 **Note**  
 Replace these file names with the name of the driver that you want to use in this walkthrough.
 
- 
+ 
 
 The original driver will be located in the \\Version1 folder, and the updated version will be located in \\Version2.
 
@@ -481,9 +481,9 @@ Use the following process to confirm that the updated driver is active.
 
 [Update](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

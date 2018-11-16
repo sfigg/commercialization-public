@@ -47,7 +47,7 @@ Specifies whether to persist the domain secret key on a device.
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -75,9 +75,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -248,9 +248,9 @@ ms.topic: article
 -   [WinRT SimpleOrientationSensor OrientationChanged](e4f4338e-c134-4813-be80-e6ca1521bf78.md)
 -   [x64 only Smart Card Minidriver Certification Test](db097b28-a6cb-42f5-964e-c4af1babb6c9.md)
 
- 
+ 
 
- 
+ 
 
 
 

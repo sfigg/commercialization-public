@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **PackageException** class.
 
 `Public Sub New ( _`
 
-          `message As String _`
+          `message As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **PackageException** class.
 
 `public PackageException (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **PackageException** class.
 
 *message*
 
-     A string that represents the message for the exception.
+     A string that represents the message for the exception.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -72,7 +72,7 @@ However, users can tap the status bar to view the data transfer indicator above 
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash an image that contains this customization to a device.

@@ -21,7 +21,7 @@ This page gives information about manufacturing PCs.
 
 To modify a power plans on your own PC, see [Power Plans: Frequently asked questions](http://go.microsoft.com/fwlink/p/?linkid=278892).
 
- 
+ 
 
 **To set the default power plan**
 
@@ -85,9 +85,9 @@ To modify a power plans on your own PC, see [Power Plans: Frequently asked quest
 
 [Power Policy Configuration and Deployment in Windows](http://go.microsoft.com/fwlink/p/?linkid=129584)
 
- 
+ 
 
- 
+ 
 
 
 

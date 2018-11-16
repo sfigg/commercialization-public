@@ -224,7 +224,7 @@ The following table lists keyboard identifiers that are available for Windows. Y
 | Yakut | 0x00000485 | 
 | Yoruba | 0x0000046a | 
 
- 
+ 
 
 ## <span id="Input_Method_Editors"></span><span id="input_method_editors"></span><span id="INPUT_METHOD_EDITORS"></span>Input Method Editors
 
@@ -242,7 +242,7 @@ The following table lists keyboard identifiers that are available for Windows. Y
 | Korean (Old Hangul)        | 0412:{a1e2b86b-924a-4d43-80f6-8a820df7190f}{b60af051-257a-46bc-b9d3-84dad819bafb}                                               |
 | Tigrinya (Ethiopia)        | ti-ET: Tigrinya Input Method (0473:{E429B25A-E5D3-4D1F-9BE3-0C608477E3A1}{3CAB88B7-CC3E-46A6-9765-B772AD7761FF})                |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -251,9 +251,9 @@ The following table lists keyboard identifiers that are available for Windows. Y
 
 [Default Input Profiles (Input Locales) in Windows](default-input-locales-for-windows-language-packs.md)
 
- 
+ 
 
- 
+ 
 
 
 

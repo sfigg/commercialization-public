@@ -79,7 +79,7 @@ If you apply an image to a volume with an existing Windows installation, files f
 
     **Note**  If the DISM /Apply-Image command fails, make sure you’re using a [supported version of DISM](dism-supported-platforms.md) for that Windows image. For example, to apply a Windows 10 image, you’ll need the Windows 10 version of DISM.
 
-     
+     
 
 6.  To set up a basic system partition, you can use the BCDboot tool to copy a simple set of system files to a system partition. These files include boot configuration data (BCD) information that is used to start Windows:
 
@@ -96,14 +96,14 @@ If you apply an image to a volume with an existing Windows installation, files f
 
     `Dism /apply-image /imagefile:N:\Images\my-system-partition.wim /index:1 /ApplyDir:S:\`
 
-     
+     
 
 You can set up the computer to reinstall your Windows image in the event of a system failure. For more information, see [Windows Recovery Environment (Windows RE) Technical Reference](windows-recovery-environment--windows-re--technical-reference.md).
 
 > [!important]
 > Microsoft Reserved partitions (MSR) and Extended partitions are managed by the computer. Do not apply an image to these partitions.
 
- 
+ 
 You can use audit mode to test the computer and to perform additional customizations before you ship it to your end user. For more information, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
 You can also perform some customizations to the computer without booting it. For more information, see [Service an Applied Windows Image](service-an-applied-windows-image.md).
@@ -115,7 +115,7 @@ You can also perform some customizations to the computer without booting it. For
 > 
 > -   Check to make sure that the active partition includes system files.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -128,9 +128,9 @@ You can also perform some customizations to the computer without booting it. For
 
 [Applying Images using a script](http://go.microsoft.com/fwlink/?LinkId=618399)
 
- 
+ 
 
- 
+ 
 
 
 

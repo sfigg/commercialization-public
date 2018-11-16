@@ -25,7 +25,7 @@ This setting is deprecated.
 
 This information is for reference only.
 
- 
+ 
 
 For information about the Windows Anytime Upgrade program, see [Windows Anytime Upgrade](http://go.microsoft.com/fwlink/?LinkId=142336).
 
@@ -46,7 +46,7 @@ For information about the Windows Anytime Upgrade program, see [Windows Anytime
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -83,9 +83,9 @@ The following XML output shows how to set Windows Anytime Upgrade.
 
 [microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc.md)
 
- 
+ 
 
- 
+ 
 
 
 

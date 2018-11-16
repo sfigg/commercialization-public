@@ -24,7 +24,7 @@ The SoC transitions between idle and active modes during modern standby based on
 
 **Note**  During modern standby, the SoC can be idle or active.
 
- 
+ 
 
 The SoC will also be active when the system exits modern standby in response to user input, such as a power button press. The SoC will be put back in the idle (DRIPS) state automatically when all of the following conditions are true:
 
@@ -36,9 +36,9 @@ The SoC will also be active when the system exits modern standby in response to 
 
 Almost all modern standby power problems are related to making sure all of these five conditions have been met. Windows includes a built-in diagnostic tool called SleepStudy to help discover which of these conditions is not being met when the SoC is prevented from entering the idle (DRIPS) state.
 
- 
+ 
 
- 
+ 
 
 
 

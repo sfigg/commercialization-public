@@ -31,13 +31,13 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the password of the account to authenticate the [Path](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-path.md).</p>
+<td><p>Specifies the password of the account to authenticate the <a href="microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-path.md" data-raw-source="[Path](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-path.md)">Path</a>.</p>
 <p><em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -91,9 +91,9 @@ The following XML output specifies the Universal Naming Convention (UNC) paths t
 
 [Credentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

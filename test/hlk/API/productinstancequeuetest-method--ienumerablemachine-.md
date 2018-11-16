@@ -68,7 +68,7 @@ public virtual IList<TestResult> QueueTest(IEnumerable<Machine> machineList)
 
 *machineList*
 
-     List of machines that can run the test.
+     List of machines that can run the test.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -91,9 +91,9 @@ An exception is thrown if:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

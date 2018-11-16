@@ -89,15 +89,15 @@ The following is a list of supported wireless access point (AP) routers.
 </tbody>
 </table>
 
->[!NOTE]
->  
-For Linksys E2500, D-Link Dir-855 and any dual band routers, you must disable the 5GHz radio.
+> [!NOTE]
+> 
+> For Linksys E2500, D-Link Dir-855 and any dual band routers, you must disable the 5GHz radio.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

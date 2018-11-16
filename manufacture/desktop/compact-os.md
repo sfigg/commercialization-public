@@ -204,9 +204,9 @@ The table below shows the additional space saved by using compact OS, Single ins
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
- 
+ 
 
- 
+ 
 
 
 

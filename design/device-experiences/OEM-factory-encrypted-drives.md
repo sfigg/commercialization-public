@@ -37,9 +37,9 @@ To use another encryption standard on your drive, you must first disable the aut
 - [Windows 10 S security features and requirements for OEMs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-10s-security)
 - [Hard Drives and Partitions](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/hard-drives-and-partitions)
 
- 
+ 
 
- 
+ 
 
 
 

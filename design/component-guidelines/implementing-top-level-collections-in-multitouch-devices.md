@@ -25,9 +25,9 @@ The following report descriptor samples demonstrate the collection and usage set
 -   [Two Finger Parallel/Hybrid Mode Report Descriptor](two-finger-parallel-hybrid-mode-report-descriptor.md)
 -   [Single Finger Hybrid Mode Report Descriptor](single-finger-hybrid-mode-report-descriptor.md)
 
- 
+ 
 
- 
+ 
 
 
 

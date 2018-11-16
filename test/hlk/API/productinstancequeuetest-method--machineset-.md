@@ -42,7 +42,7 @@ This method schedules this object to run. The machine under test (the test compu
 
 `Public Overridable Function QueueTest ( _`
 
-          `logicalMachineSet As MachineSet _`
+          `logicalMachineSet As MachineSet _`
 
 `) As IList(Of TestResult)`
 
@@ -50,7 +50,7 @@ This method schedules this object to run. The machine under test (the test compu
 
 `public virtual IList<TestResult> QueueTest (`
 
-          `MachineSet logicalMachineSet`
+          `MachineSet logicalMachineSet`
 
 `)`
 
@@ -59,7 +59,7 @@ This method schedules this object to run. The machine under test (the test compu
 
 *logicalMachineSet*
 
-     The list of machines to run this on.
+     The list of machines to run this on.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **IList**, which is a list of results for the jobs that were scheduled.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

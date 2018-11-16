@@ -19,7 +19,7 @@ You can mount a Windows Preinstallation Environment (Windows PE) image and add 
 **Important**  
 Windows PE profiling functionality is removed beginning with Windows 8.1.
 
- 
+ 
 
 The base syntax for servicing a Windows PE image is:
 
@@ -32,7 +32,7 @@ In addition to the Deployment Image Servicing and Management (DISM) options, the
 **Important**  
 These options cannot be used with an online, running version of Windows PE. You must specify a Windows PE image using the **/Image:***&lt;path\_to\_image\_directory&gt;* option.
 
- 
+ 
 
 The following table provides a description for how each Windows PE servicing option can be used on a Windows PE image. These options are not case sensitive.
 
@@ -80,13 +80,13 @@ The following table provides a description for how each Windows PE servicing op
 <ul>
 <li><p>The path must be at least three characters and no longer than 32 characters</p></li>
 <li><p>The path must start with a letter (any letter from C to Z)</p></li>
-<li><p>The drive letter must be followed by *:\*</p></li>
+<li><p>The drive letter must be followed by <em>:</em></p></li>
 <li><p>The remainder of the path must not contain any invalid characters, such as Unicode characters</p></li>
 <li><p>The path must be absolute, no &quot;.&quot; or &quot;..&quot; elements</p></li>
-<li><p>The path must not contain any blank spaces or &quot;\\&quot;</p></li>
+<li><p>The path must not contain any blank spaces or &quot;&amp;quot;</p></li>
 </ul>
 <p>For example:</p>
-<p><strong>Dism /image:C:\test\offline /Set-TargetPath:X:\</strong></p></td>
+<p><strong>Dism /image:C:\test\offline /Set-TargetPath:X:&lt;/strong&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/Enable-Profiling</strong></p></td>
@@ -107,7 +107,7 @@ The following table provides a description for how each Windows PE servicing op
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
 
@@ -127,9 +127,9 @@ The Windows PE commands can be used to change international settings only in Wi
 
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

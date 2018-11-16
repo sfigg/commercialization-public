@@ -43,6 +43,7 @@ This topic applies to the following test jobs:
 -   OPM - Protocol Test (WoW64)
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM11.DisplayRender.Base</li><li>Device.Graphics.WDDM.DisplayRender.OutputProtection</li><li>Device.Graphics.WDDM.DisplayRender.OutputProtection.Windows7</li></ul> |  
@@ -55,7 +56,7 @@ This topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -78,7 +79,7 @@ In addition:
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -134,11 +135,11 @@ The following jobs validate the test assertions below:
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_List"></span><span id="file_list"></span><span id="FILE_LIST"></span>File List
 
@@ -156,52 +157,41 @@ For command line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>OPM_ACPandCGMSA_Test.pro</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>OpmCompTest.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>S98wtt_u.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>Shellrunner.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
-| Parameter name               | Parameter description                                |
+|        Parameter name        |                Parameter description                 |
 |------------------------------|------------------------------------------------------|
-| **LLU\_NetAccessOnly**       | LLU local name, local with net access                |
-| **LIBRARYNAME**              | Library for the test to run                          |
-| **PROFILENAME**              | Profile for the test to run                          |
-| **DISPLAYLOGOLEVEL**         | Qualification level for submission: basic | premium  |
+|    **LLU\_NetAccessOnly**    |        LLU local name, local with net access         |
+|       **LIBRARYNAME**        |             Library for the test to run              |
+|       **PROFILENAME**        |             Profile for the test to run              |
+|     **DISPLAYLOGOLEVEL**     |      Qualification level for submission: basic       |
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo |
-| **TDRArgs**                  | /get or /set                                         |
-
- 
-
- 
-
- 
-
-
-
-
-
+|         **TDRArgs**          |                     /get or /set                     |
 

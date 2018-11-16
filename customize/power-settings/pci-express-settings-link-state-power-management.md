@@ -20,7 +20,7 @@ Specifies the personality of the power plan.
 
 **Warning**  System administrators should not change the power plan personality settings.
 
- 
+ 
 
 ## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
 
@@ -68,7 +68,7 @@ Specifies the personality of the power plan.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

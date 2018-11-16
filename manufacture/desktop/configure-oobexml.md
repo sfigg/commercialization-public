@@ -28,9 +28,9 @@ Oobe.xml is a content file used to collect text and images for customizing Windo
 
 [Windows Deployment Options](windows-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

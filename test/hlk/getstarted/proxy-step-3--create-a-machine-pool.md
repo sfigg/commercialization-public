@@ -38,11 +38,11 @@ The following image shows the Studio **Configuration** page.
 
     Machine Pools can be created at onboarding time for mobile devices.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

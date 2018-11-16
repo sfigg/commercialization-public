@@ -110,7 +110,7 @@ In the preceding example, &lt;GUID&gt; is the identifier for the specified Windo
 **Note**  
 A multiboot system that has multiple installed operating systems has multiple instances of the Windows boot loader. Each instance of the Windows boot loader has its own identifier. You can set the default Windows boot loader (`{default}`) to any of these identifiers.
 
- 
+ 
 
 ## <span id="WindowsBootLoader"></span><span id="windowsbootloader"></span><span id="WINDOWSBOOTLOADER"></span>Windows Boot Loader Settings
 
@@ -173,7 +173,7 @@ The Windows memory tester (`{memdiag}`) runs memory diagnostics at boot time. Th
 **Note**  
 Note: Intel Itanium computers do not include a Windows memory tester and do not require `{memdiag}` settings.
 
- 
+ 
 
 BCD-template for Windows has the following settings.
 
@@ -204,9 +204,9 @@ You can confirm that BCD-template has the correct `path` value by enumerating th
 Bcdedit /set {memdiag} path \efi\microsoft\boot\memtest.efi
 ```
 
- 
+ 
 
- 
+ 
 
 
 

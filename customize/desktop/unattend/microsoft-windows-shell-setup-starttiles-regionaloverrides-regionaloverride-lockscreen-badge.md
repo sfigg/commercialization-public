@@ -48,9 +48,9 @@ The following XML output shows how to set [LockScreen](microsoft-windows-shell-s
 
 ```XML
 <LockScreen>
-  <Badge>
-      <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
-  </Badge>
+  <Badge>
+      <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
+  </Badge>
 </LockScreen>
 ```
 

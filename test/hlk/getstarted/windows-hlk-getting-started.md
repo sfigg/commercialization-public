@@ -16,12 +16,12 @@ ms.topic: article
 # Windows HLK Getting Started
 
 
-This section provides a basic introduction to using the kit. Once you are familiar with the tools and process, you can review the [User's Guide](..\user\windows-hardware-lab-kit-user-s-guide.md) for additional information.
+This section provides a basic introduction to using the kit. Once you are familiar with the tools and process, you can review the [User's Guide](../user/windows-hardware-lab-kit-user-s-guide.md) for additional information.
 
 
- 
+ 
 
- 
+ 
 
 
 

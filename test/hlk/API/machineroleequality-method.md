@@ -42,9 +42,9 @@ This method acts as an Equality operator which always returns a value of False i
 
 `Public Shared Operator = ( _`
 
-          `first As MachineRole, _`
+          `first As MachineRole, _`
 
-          `second As MachineRole _`
+          `second As MachineRole _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ This method acts as an Equality operator which always returns a value of False i
 
 `public static bool operator == (`
 
-          `MachineRole first,`
+          `MachineRole first,`
 
-          `MachineRole second`
+          `MachineRole second`
 
 `)`
 
@@ -63,11 +63,11 @@ This method acts as an Equality operator which always returns a value of False i
 
 *first*
 
-          The first value to compare against.
+          The first value to compare against.
 
 *second*
 
-          The second value to compare against.
+          The second value to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ This method acts as an Equality operator which always returns a value of False i
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ This method creates a target from a **TargetData** object, and adds it to a targ
 
 `Public Sub CreateTarget ( _`
 
-          `targets As IEnumerable(Of TargetData) _`
+          `targets As IEnumerable(Of TargetData) _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method creates a target from a **TargetData** object, and adds it to a targ
 
 `public void CreateTarget (`
 
-          `IEnumerable<TargetData> targets`
+          `IEnumerable<TargetData> targets`
 
 `)`
 
@@ -57,7 +57,7 @@ This method creates a target from a **TargetData** object, and adds it to a targ
 
 *targets*
 
-     The list of test targets to which to add the contents of the [TargetData Class](targetdata-class.md) object.
+     The list of test targets to which to add the contents of the [TargetData Class](targetdata-class.md) object.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -73,9 +73,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,7 +47,7 @@ To enable remote desktop connections during an unattended installation, you must
     </tbody>
     </table>
 
-     
+     
 
 3.  In the **Answer File** pane, configure these settings:
 
@@ -76,7 +76,7 @@ To enable remote desktop connections during an unattended installation, you must
     </tbody>
     </table>
 
-     
+     
 
 4.  (Optional) Specify how users are authenticated. Specifying the following setting will help make sure that users can connect remotely from computers that don't run Remote Desktop by using network-level authentication. To enable remote desktop connections from computers that are running any version of Remote Desktop, add this setting to your answer file:
 
@@ -117,9 +117,9 @@ For more information about Windows® components and settings that you can add to
 
 [Windows Deployment Options](windows-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

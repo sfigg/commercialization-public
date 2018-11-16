@@ -34,17 +34,17 @@ The following tables list the methods exposed by the IFilterTargetData type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IParameterResolver.ResolveParameter Method](iparameterresolverresolveparameter-method.md)</p></td>
+<td><p><a href="iparameterresolverresolveparameter-method.md" data-raw-source="[IParameterResolver.ResolveParameter Method](iparameterresolverresolveparameter-method.md)">IParameterResolver.ResolveParameter Method</a></p></td>
 <td><p>This method is called by the scheduler to resolve a parameter that should be resolved externally.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

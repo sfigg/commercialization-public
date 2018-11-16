@@ -71,7 +71,7 @@ The **DismCommitImage** function does not unmount the image.
 **Note**  
 **DismCommitImage** can only be used on an image that is mounted within the DISM infrastructure. It does not apply to images mounted by another tool, such as the DiskPart tool, which are serviced using the [**DismOpenSession**](dismopensession-function.md). You must use the [**DismMountImage**](dismmountimage-function.md) to mount an image within the DISM infrastructure.
 
- 
+ 
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -92,7 +92,7 @@ hr = DismCommitImage(Session, 0, NULL, NULL, NULL);
 <tbody>
 <tr class="odd">
 <td><p>Supported host platforms:</p></td>
-<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the [Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).</p></td>
+<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=206587" data-raw-source="[Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587)">Windows ADK Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supported image platforms:</p></td>
@@ -101,7 +101,7 @@ hr = DismCommitImage(Session, 0, NULL, NULL, NULL);
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ---------
@@ -144,9 +144,9 @@ Requirements
 
 [DISM API Constants](dism-api-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

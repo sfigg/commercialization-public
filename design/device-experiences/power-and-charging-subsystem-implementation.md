@@ -47,9 +47,9 @@ When battery static data changes (including last full charge capacity, design ca
 
 ACPI Notify events are signaled through either the System Control Interrupt (SCI), in the case of embedded controller-equipped platforms, or through general-purpose I/O (GPIO), in the case of platforms that have battery subsystem hardware directly connected to the core silicon.
 
- 
+ 
 
- 
+ 
 
 
 

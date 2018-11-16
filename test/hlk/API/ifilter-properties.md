@@ -32,23 +32,23 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IFilter.Constraints Property](ifilterconstraints-property.md)</p></td>
+<td><p><a href="ifilterconstraints-property.md" data-raw-source="[IFilter.Constraints Property](ifilterconstraints-property.md)">IFilter.Constraints Property</a></p></td>
 <td><p>This property represents the filter constraints for the filter.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IFilter.ExpirationDate Property](ifilterexpirationdate-property.md)</p></td>
+<td><p><a href="ifilterexpirationdate-property.md" data-raw-source="[IFilter.ExpirationDate Property](ifilterexpirationdate-property.md)">IFilter.ExpirationDate Property</a></p></td>
 <td><p>This property represents the expiration date for the filter.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IFilter.FilterNumber Property](ifilterfilternumber-property.md)</p></td>
+<td><p><a href="ifilterfilternumber-property.md" data-raw-source="[IFilter.FilterNumber Property](ifilterfilternumber-property.md)">IFilter.FilterNumber Property</a></p></td>
 <td><p>This property represents the filter ID number. The Filter ID number uniquely identifies a filter within the HCK.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IFilter.FilterNumber Property](ifilterfilternumber-property.md)</p></td>
+<td><p><a href="ifilterfilternumber-property.md" data-raw-source="[IFilter.FilterNumber Property](ifilterfilternumber-property.md)">IFilter.FilterNumber Property</a></p></td>
 <td><p>This property determines whether the logs are required for this filter to be applicable.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IFilter.IsResultRequired Property](ifilterisresultrequired-property.md)</p></td>
+<td><p><a href="ifilterisresultrequired-property.md" data-raw-source="[IFilter.IsResultRequired Property](ifilterisresultrequired-property.md)">IFilter.IsResultRequired Property</a></p></td>
 <td><p>This property represents determines whether the results are required for this filter to be applicable.</p></td>
 </tr>
 <tr class="even">
@@ -98,11 +98,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

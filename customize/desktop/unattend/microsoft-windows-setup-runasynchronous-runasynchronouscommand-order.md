@@ -37,17 +37,16 @@ All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run i
 <td><p><em>Asynchronous_command_order</em></p></td>
 <td><p>Specifies a unique integer between 1 and 500.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Unlike synchronous commands, the computer does not wait for one asynchronous command to finish before it starts the next command.</p>
+<strong>Important</strong><br/><p>Unlike synchronous commands, the computer does not wait for one asynchronous command to finish before it starts the next command.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 
@@ -96,9 +95,9 @@ The following XML output shows how to configure asynchronous commands to run.
 
 [RunSynchronous](microsoft-windows-setup-runsynchronous.md)
 
- 
 
- 
+
+
 
 
 

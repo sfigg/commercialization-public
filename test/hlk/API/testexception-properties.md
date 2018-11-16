@@ -60,13 +60,13 @@ ms.topic: article
 <td><p>(Inherited from <strong>Exception</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[TestId](testexception-testid-property.md)</p></td>
+<td><p><a href="testexception-testid-property.md" data-raw-source="[TestId](testexception-testid-property.md)">TestId</a></p></td>
 <td><p>The TestId that this Exception was thrown for.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -90,11 +90,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,11 +18,11 @@ ms.topic: article
 
 This sample code show illustrates running multi-device tests.
 
->[!NOTE]
->  
-The method returns the base target for multi-device tests (that is the base test device into which additional tests were consolidated). The TestResults.GetAllTests() method should return the list of tests that were actually run together; from that list, you can derive the actual targets against which the test ran.
+> [!NOTE]
+> 
+> The method returns the base target for multi-device tests (that is the base test device into which additional tests were consolidated). The TestResults.GetAllTests() method should return the list of tests that were actually run together; from that list, you can derive the actual targets against which the test ran.
 
- 
+ 
 
 ## <span id="C_"></span><span id="c_"></span>**C#**
 
@@ -235,9 +235,9 @@ foreach( $testResult in $TestResultList)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

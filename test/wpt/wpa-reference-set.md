@@ -202,7 +202,7 @@ This shows memory categorized by whether it is memory-backed or file-backed for 
 
 <a href="images/wpa-reference-set-outstanding-by-dynamic-file-01.png"><img src="images/wpa-reference-set-outstanding-by-dynamic-file-01.png" alt="Example of the 'Reference Set Outstanding by Dynamic/File' view in Windows Performance Analyzer (WPA)."></a>
 
-<blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;<i>Memory-backed pages</i> are backed by the page file, or in the case of non-paged pool, never paged out. Memory-backed pages include stack, heap, VirtualAlloc and other page categories that don't directly map to a file on disk. <i>File-backed pages</i> are backed by individual files on disk such as module images.</p></blockquote>
+<blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;<i>Memory-backed pages</i> are backed by the page file, or in the case of non-paged pool, never paged out. Memory-backed pages include stack, heap, VirtualAlloc and other page categories that don&#39;t directly map to a file on disk. <i>File-backed pages</i> are backed by individual files on disk such as module images.</p></blockquote>
 
 
 # Understanding reference set data
@@ -239,12 +239,12 @@ waiting for the system to reach an idle state again. By minimizing
 the number of pages that your app accesses in a steady state across
 various scenarios, you can see the scenarios execute faster (for
 example, resume more quickly) and provide an experience that is
-better for your user, since you'll be reducing the memory pressure
+better for your user, since you&#39;ll be reducing the memory pressure
 on the system.</p></td></tr>
 <tr><td>Peak</td><td><p>Transient high usage of memory, which can push more
 valuable information out of physical memory. By reducing the
 frequency and magnitude of any peaks of usage, your app or feature
-will be a better "system citizen" by decreasing the potential for
+will be a better &quot;system citizen&quot; by decreasing the potential for
 the swapping out or termination of other processes.</p></td></tr>
 </table>
 
@@ -487,7 +487,7 @@ system. Use these recommendations in the following order:
 
 -   [Characterize and categorize memory pages](#characterize-and-categorize-memory-pages)
 
-<blockquote><b>Note</b>&nbsp;&nbsp;&nbsp;Tracing uses memory, which is visible as non-paged pool with the description "ETWB" for <strong>ETW buffers</strong>.</blockquote>
+<blockquote><b>Note</b>&nbsp;&nbsp;&nbsp;Tracing uses memory, which is visible as non-paged pool with the description &quot;ETWB&quot; for <strong>ETW buffers</strong>.</blockquote>
 
 
 ## Examine steady-state use and peak use of memory

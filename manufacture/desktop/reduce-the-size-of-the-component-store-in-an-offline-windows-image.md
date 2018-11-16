@@ -70,7 +70,7 @@ To complete the walkthrough, you need the following:
     Beginning with Windows 10, version 1607, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete. 
    
     The maintenance task is scheduled to run weekly, with a two-week deadline.  In the first week, the maintenance task will only run during system idle maintenance windows.  If it is unable to complete (for example, the computer is turned off when not in use) then the task scheduler runs more often, and the task may run while the system is not idle.
- 
+ 
     To see the performance effects while the task is running, click Start > Run and type the following command:
     
     ```
@@ -100,9 +100,9 @@ To complete the walkthrough, you need the following:
 
 [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

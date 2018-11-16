@@ -32,21 +32,21 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals Method (Requirement)](requirement-equals-method--requirement-other-.md)</p></td>
+<td><p><a href="requirement-equals-method--requirement-other-.md" data-raw-source="[Equals Method (Requirement)](requirement-equals-method--requirement-other-.md)">Equals Method (Requirement)</a></p></td>
 <td><p>Overloads the Equals function to provide value equality functionality for this object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Equals Method (object)](requirement-equals-method--object-other-.md)</p></td>
+<td><p><a href="requirement-equals-method--object-other-.md" data-raw-source="[Equals Method (object)](requirement-equals-method--object-other-.md)">Equals Method (object)</a></p></td>
 <td><p>Overrides the Equals function to provide value equality functionality for this object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

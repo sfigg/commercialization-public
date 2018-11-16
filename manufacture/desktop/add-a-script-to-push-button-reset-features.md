@@ -40,7 +40,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
 -   In Notepad, you can create custom scripts to save or retrieve log files, check partitions, and to install applications.
 
-    **Important**  
+    **Important**  
     Your scripts must meet the following requirements:
 
     -   The scripts are formatted as a .cmd or .exe files.
@@ -52,7 +52,7 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
     Your scripts must return a 0 (zero), if successful. If push-button reset receives a non-0 value, the following steps occur:
 
-    -   **If running the Refresh your PC feature**: All system changes are rolled back. If the script or executable file is initiated from the Windows **PC settings** menu, the system reboots in Windows. If the script or executable file is initiated from Windows RE or the **Boot Options** menu, the system remains in Windows RE and displays an error message.
+    -   **If running the Refresh your PC feature**: All system changes are rolled back. If the script or executable file is initiated from the Windows **PC settings** menu, the system reboots in Windows. If the script or executable file is initiated from Windows RE or the **Boot Options** menu, the system remains in Windows RE and displays an error message.
 
     -   **If running the Reset your PC feature**: The failure is ignored. The script or executable file proceeds to the next step in the reset process and logs the failure.
 
@@ -62,76 +62,78 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
     -   **Designated OEM partition**. You can leave extra room on a partition. For example, you can leave room on the recovery image partition, and use scripts to temporarily assign a drive letter and then save files to that partition. However, if your user uses the recovery media to repartition the disks, the data on these partitions might be lost during the recovery process.
 
-     
-
-    **Example 1: Saving Log Files**
-
-    This example script preserves files that would otherwise be removed, by placing them in a temporary location in memory, to be retrieved by another sample script, **RetrieveLogFiles.cmd**.
-
-    ```
-    :rem == SaveLogFiles.cmd
-
-    :rem == This sample script preserves files that would 
-    :rem    otherwise be removed by placing them in a 
-    :rem    temporary location in memory, to be retrieved by
-    :rem    RetrieveLogFiles.cmd.
-
-    :rem == 1. Use the registry to identify the location of
-    :rem       the new operating system and the primary hard
-    :rem       drive. For example, 
-    :rem       %TARGETOS% may be defined as C:\Windows
-    :rem       %TARGETOSDRIVE% may be defined as C:
-    for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C
-
-    for /F "tokens=1 delims=\" %%A in ('Echo %TARGETOS%') DO SET TARGETOSDRIVE=%%A
-
-    :rem == 2. Copy old logs to a temporary folder in memory
-    mkdir X:\Temp
-    xcopy %TARGETOS%\Logs\*.* X:\temp /cherkyi
-
-    EXIT 0
-    ```
-
-    **Example 2: Retrieving Log Files**
-
-    This sample script retrieves the files that were saved in memory by the `SaveLogFiles.cmd` script, and adds them back to the system. It also runs a system diagnostic, and then sends the output to the C:\\Fabrikam folder.
-
-    ```
-    :rem == RetrieveLogFiles.cmd
-
-    :rem == This sample script retrieves the files that 
-    :rem    were saved in memory by 
-    :rem    SaveLogFiles.cmd,
-    :rem    and adds them back to the system.
-    :rem
-    :rem    It also runs a system diagnostic, and sends the output
-    :rem    to the C:\Fabrikam folder.
 
 
-    :rem == 1. Use the registry to identify the location of
-    :rem       the new operating system and the primary drive.
-    :rem        
-    :rem       %TARGETOS% is the Windows folder 
-    :rem          (This later becomes C:\Windows)
-    :rem       %TARGETOSDRIVE% is the Windows partition 
-    :rem          (This later becomes C:)
-    for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C
-    for /F "tokens=1 delims=\" %%A in ('Echo %TARGETOS%') DO SET TARGETOSDRIVE=%%A
+~~~
+**Example 1: Saving Log Files**
 
-    :rem == 2. Copy the old logs to the new OS 
-    :rem       at C:\Windows\OldLogs
-    mkdir %TARGETOS%\OldLogs
-    xcopy X:\Temp\*.* %TARGETOS%\OldLogs /cherkyi
+This example script preserves files that would otherwise be removed, by placing them in a temporary location in memory, to be retrieved by another sample script, **RetrieveLogFiles.cmd**.
 
-    :rem == 3. Run system diagnostics using the
-    :rem       DirectX Diagnostic tool, and save the 
-    :rem       results to the C:\Fabrikam folders. ==
+```
+:rem == SaveLogFiles.cmd
 
-    mkdir %TARGETOSDRIVE%\Fabrikam
-    %TARGETOS%\system32\dxdiag.exe /whql:off /t %TARGETOSDRIVE%\Fabrikam\DxDiag-TestLogFiles.txt
+:rem == This sample script preserves files that would 
+:rem    otherwise be removed by placing them in a 
+:rem    temporary location in memory, to be retrieved by
+:rem    RetrieveLogFiles.cmd.
 
-    EXIT 0
-    ```
+:rem == 1. Use the registry to identify the location of
+:rem       the new operating system and the primary hard
+:rem       drive. For example, 
+:rem       %TARGETOS% may be defined as C:\Windows
+:rem       %TARGETOSDRIVE% may be defined as C:
+for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C
+
+for /F "tokens=1 delims=\" %%A in ('Echo %TARGETOS%') DO SET TARGETOSDRIVE=%%A
+
+:rem == 2. Copy old logs to a temporary folder in memory
+mkdir X:\Temp
+xcopy %TARGETOS%\Logs\*.* X:\temp /cherkyi
+
+EXIT 0
+```
+
+**Example 2: Retrieving Log Files**
+
+This sample script retrieves the files that were saved in memory by the `SaveLogFiles.cmd` script, and adds them back to the system. It also runs a system diagnostic, and then sends the output to the C:\\Fabrikam folder.
+
+```
+:rem == RetrieveLogFiles.cmd
+
+:rem == This sample script retrieves the files that 
+:rem    were saved in memory by 
+:rem    SaveLogFiles.cmd,
+:rem    and adds them back to the system.
+:rem
+:rem    It also runs a system diagnostic, and sends the output
+:rem    to the C:\Fabrikam folder.
+
+
+:rem == 1. Use the registry to identify the location of
+:rem       the new operating system and the primary drive.
+:rem        
+:rem       %TARGETOS% is the Windows folder 
+:rem          (This later becomes C:\Windows)
+:rem       %TARGETOSDRIVE% is the Windows partition 
+:rem          (This later becomes C:)
+for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C
+for /F "tokens=1 delims=\" %%A in ('Echo %TARGETOS%') DO SET TARGETOSDRIVE=%%A
+
+:rem == 2. Copy the old logs to the new OS 
+:rem       at C:\Windows\OldLogs
+mkdir %TARGETOS%\OldLogs
+xcopy X:\Temp\*.* %TARGETOS%\OldLogs /cherkyi
+
+:rem == 3. Run system diagnostics using the
+:rem       DirectX Diagnostic tool, and save the 
+:rem       results to the C:\Fabrikam folders. ==
+
+mkdir %TARGETOSDRIVE%\Fabrikam
+%TARGETOS%\system32\dxdiag.exe /whql:off /t %TARGETOSDRIVE%\Fabrikam\DxDiag-TestLogFiles.txt
+
+EXIT 0
+```
+~~~
 
 **To create a push-button reset configuration file**
 
@@ -169,10 +171,10 @@ These files should be placed in the folder C:\\Recovery\\OEM, and will automatic
 
     Where *E* is the drive letter of a USB flash drive or other removable media. Do not use ANSI coding.
 
-    **Note**  
+    **Note**  
     You can use the same ResetConfig.xml file to configure Windows to create recovery media. For more information, see [Deploy Push-Button Reset Features](deploy-push-button-reset-features.md).
 
-     
+
 
 ## <span id="bkmk_4"></span><span id="BKMK_4"></span>Step 2: Adding Configuration Files and Scripts to the Destination Computer
 

@@ -20,14 +20,14 @@ This article describes the detailed setup and procedures to measure touch down l
 
 This article assumes that the reader is familiar with touch screens, understands the concept of touch screen latency, and has a basic understanding of electrical and software engineering.
 
-This information applies to the Windows 8 operating system.
+This information applies to the Windows 8 operating system.
 
 ## <span id="Windows_Hardware_Lab_Kit_requirements"></span><span id="windows_hardware_lab_kit_requirements"></span><span id="WINDOWS_HARDWARE_LAB_KIT_REQUIREMENTS"></span>Windows Hardware Lab Kit requirements
 
 
 You must install at least a minimal configuration of the Windows Hardware Lab Kit (Windows HLK). Windows HLK provides you the tools, processes, and tests to create and upload submission packages to certify devices and systems. The Windows HLKeliminates the need for external tools such as the WLK Log Viewer. This document assumes that you are familiar with the Windows HLK.
 
-For instructions about how to install the Windows HLK, see [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md).
+For instructions about how to install the Windows HLK, see [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md).
 
 ### <span id="Windows_HLK_Studio"></span><span id="windows_hlk_studio"></span><span id="WINDOWS_HLK_STUDIO"></span>Windows HLK Studio
 
@@ -107,12 +107,12 @@ For touch down latency measurements, you should initially set the switches as sh
 </tbody>
 </table>
 
- 
 
-**Caution**  
+
+**Caution**  
 You must power on the control box after you plug the USB into the test computer. If you plug the USB into the test computer after you power on the control box, you can unintentionally set the microcontroller to an unpredictable state.
 
- 
+
 
 ### <span id="External_keyboard"></span><span id="external_keyboard"></span><span id="EXTERNAL_KEYBOARD"></span>External keyboard
 
@@ -168,19 +168,23 @@ Perform the following steps to set up the test components for calibration.
     </tbody>
     </table>
 
-     
 
-    At this point, you can touch the screen and move the machine. You can also use the side nut to move the microphone.
 
-3.  Run the touch down latency test from Windows HLK Studio on the Windows HLK controller, or run the standalone test **audiotouch.exe** on the test computer.
+~~~
+At this point, you can touch the screen and move the machine. You can also use the side nut to move the microphone.
+~~~
 
-    >[!IMPORTANT]
-    >  
-    This test requires an extremely quiet environment to obtain accurate results.
+3. Run the touch down latency test from Windows HLK Studio on the Windows HLK controller, or run the standalone test **audiotouch.exe** on the test computer.
 
-     
+   > [!IMPORTANT]
+   > 
+   > This test requires an extremely quiet environment to obtain accurate results.
 
-    The instruction **Press the space bar to start the calibration process.** displays.
+
+
+~~~
+The instruction **Press the space bar to start the calibration process.** displays.
+~~~
 
 4.  Put the microphone on one end of the screen (for example, at the upper-left corner). Use the black knob to lower the microphone so that it actually touches the screen.
 
@@ -250,7 +254,7 @@ Perform the following steps to set up the test components for collection.
     </tbody>
     </table>
 
-     
+
 
 3.  Remove the metal plate from the screen.
 
@@ -270,21 +274,21 @@ Use the following steps to perform collection.
 
 **To perform collection steps**
 
-1.  Turn the Microphone or Acoustic switch ON.
+1. Turn the Microphone or Acoustic switch ON.
 
-2.  Use your finger to tap quickly and firmly on the screen near the microphone. Do not tap and hold: tap and release quickly to make a distinct sound.
+2. Use your finger to tap quickly and firmly on the screen near the microphone. Do not tap and hold: tap and release quickly to make a distinct sound.
 
-3.  Wait at least two to three seconds after the tap. The latency result should display; for example, **\[10\] latency: 11.2 \[ms\]**.
+3. Wait at least two to three seconds after the tap. The latency result should display; for example, **\[10\] latency: 11.2 \[ms\]**.
 
-    Randomly tap the screen around the microphone. Always pause least two to three seconds between taps.
+   Randomly tap the screen around the microphone. Always pause least two to three seconds between taps.
 
-4.  Repeat steps 1-3 to cover all areas of the screen.
+4. Repeat steps 1-3 to cover all areas of the screen.
 
-    >[!NOTE]
-    >  
-    The preceding index (for example, \[10\] in the case **\[10\] latency: 11.2 \[ms\]**), is not the actual count of the measurement: it is the index for acoustic signals that are received from the microphone through the microcontroller. The index does not always change in increments of one; it can change in increments of two or more if noise was perceived between taps. The best way to ensure that you tapped exactly 500 times is to tap 10-20% more times than required; that is, tap 550 times or 600 times.
+   > [!NOTE]
+   > 
+   > The preceding index (for example, \[10\] in the case **\[10\] latency: 11.2 \[ms\]**), is not the actual count of the measurement: it is the index for acoustic signals that are received from the microphone through the microcontroller. The index does not always change in increments of one; it can change in increments of two or more if noise was perceived between taps. The best way to ensure that you tapped exactly 500 times is to tap 10-20% more times than required; that is, tap 550 times or 600 times.
 
-     
+
 
 ### <span id="Collection_expectations"></span><span id="collection_expectations"></span><span id="COLLECTION_EXPECTATIONS"></span>Collection expectations
 
@@ -306,25 +310,25 @@ The test procedure works well with capacitive and resistive devices; however, tw
 
 You might not be able to place the microphone directly on an optical device screen because the device detects the placement itself as a touch or tap. To test optical devices, we recommend that you use one of the following methods:
 
--   Place the microphone on the bezel or frame: If the frame or the bezel is firmly attached to the screen (which is the case for most devices), you can place the microphone on the frame as you tap on the screen. Although the screen and the frame are made of different materials and might therefore have slightly different latencies, the difference is negligible.
+- Place the microphone on the bezel or frame: If the frame or the bezel is firmly attached to the screen (which is the case for most devices), you can place the microphone on the frame as you tap on the screen. Although the screen and the frame are made of different materials and might therefore have slightly different latencies, the difference is negligible.
 
--   Place the microphone just above the scan line: You can place the microphone just above the laser scan line (~2-3 mm from the screen) and then follow the test procedure described for fragile devices.
+- Place the microphone just above the scan line: You can place the microphone just above the laser scan line (~2-3 mm from the screen) and then follow the test procedure described for fragile devices.
 
-    >[!NOTE]
-    >  
-    You might have to experiment to find the scan line.
+  > [!NOTE]
+  > 
+  > You might have to experiment to find the scan line.
 
-     
+
 
 ### <span id="Fragile_Devices"></span><span id="fragile_devices"></span><span id="FRAGILE_DEVICES"></span>Fragile Devices
 
 For some devices, especially devices in the prototype stage, placing the microphone firmly on the screen might produce ghost touches or other undesired behavior. In this case, place the microphone just above the screen and leave an approximate one mm gap between the microphone and the screen. Firmly tap the screen so that the sound wave reaches the microphone. For this test, you should tap more firmly than when you run a test in which the microphone is attached to the screen.
 
->[!NOTE]
->  
-Partially touching the screen is not recommended because it generates vibration.
+> [!NOTE]
+> 
+> Partially touching the screen is not recommended because it generates vibration.
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
@@ -364,9 +368,9 @@ Contact one of these certified jig vendors if additional support is required:
 
 <http://www.itri.org.tw/eng/econtent/contact/contact01.aspx>
 
- 
 
- 
+
+
 
 
 

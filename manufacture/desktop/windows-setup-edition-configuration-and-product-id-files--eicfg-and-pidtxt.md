@@ -30,7 +30,7 @@ You can reuse the product key in the product ID file for multiple installations.
 **Note**  
 An answer file takes precedence over these files. If you use an answer file during installation, Windows Setup ignores the EI.cfg and PID.txt files.
 
- 
+ 
 
 ## <span id="ei.cfg_format"></span><span id="EI.CFG_FORMAT"></span>EI.cfg Format
 
@@ -91,9 +91,9 @@ where *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX* is the product key.
 
 [Windows Setup States](windows-setup-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

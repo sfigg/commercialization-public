@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 Any item that is pinned to the taskbar will not appear in the **Start** menu list of most frequently used programs.
 
- 
+ 
 
 We recommend that you add shortcut files to the All Users **Start** menu, for example: `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Fabrikam\Application.lnk`.
 
@@ -50,7 +50,7 @@ This setting has no effect on Server Core installations.
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -91,9 +91,9 @@ The following XML output shows how to add shortcuts for Remote Desktop Connectio
 
 [TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md)
 
- 
+ 
 
- 
+ 
 
 
 

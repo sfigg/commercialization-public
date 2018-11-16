@@ -33,12 +33,12 @@ ms.topic: article
 <td><p><em>Disk_identification_number</em></p></td>
 <td><p>Specifies the identification number of the disk on which to install a data image. <em>Disk_identification_number</em> is an integer.</p>
 <p>Disk IDs start with 0. For example, to specify the first disk, assign <code>DiskID</code> to <strong>0</strong>. For the second disk, assign <code>DiskID</code> to <strong>1</strong>.</p>
-<p>If you are installing a data image to a computer with a single disk, assign <code>DiskID</code> to <strong>0</strong>. In contrast, [PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md) starts with <strong>1</strong> for the first partition.</p></td>
+<p>If you are installing a data image to a computer with a single disk, assign <code>DiskID</code> to <strong>0</strong>. In contrast, <a href="microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md" data-raw-source="[PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md)">PartitionID</a> starts with <strong>1</strong> for the first partition.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -109,9 +109,9 @@ The following XML output shows how to set the `ImageInstall` setting if you are 
 
 [InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md)
 
- 
+ 
 
- 
+ 
 
 
 

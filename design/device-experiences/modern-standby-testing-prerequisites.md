@@ -65,7 +65,7 @@ Effective modern standby testing cannot be accomplished without first ensuring t
 </tbody>
 </table>
 
- 
+ 
 
 ## System hardware requirements
 
@@ -103,9 +103,9 @@ Before starting modern standby testing, make sure that your system has the follo
 -   Reliable Wi-Fi connectivity when the screen is on.
 -   Reliable MBB connectivity when the screen is on (if the system is equipped with MBB).
 
- 
+ 
 
- 
+ 
 
 
 

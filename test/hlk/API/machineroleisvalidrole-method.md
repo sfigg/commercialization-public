@@ -42,7 +42,7 @@ This method checks to see if the other machine role is sufficient to enable this
 
 `Public Function IsValidRole ( _`
 
-          `otherMachineRole As MachineRole _`
+          `otherMachineRole As MachineRole _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method checks to see if the other machine role is sufficient to enable this
 
 `public bool IsValidRole (`
 
-          `MachineRole otherMachineRole`
+          `MachineRole otherMachineRole`
 
 `) `
 
@@ -59,7 +59,7 @@ This method checks to see if the other machine role is sufficient to enable this
 
 *otherMachineRole*
 
-          The **MachineRole** object to compare against this **MachineRole** object.
+          The **MachineRole** object to compare against this **MachineRole** object.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ An exception is thrown when the *otherMachineRole* parameter is **null**.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -61,7 +61,7 @@ The **General** profile uses the following collectors:
 </tbody>
 </table>
 
- 
+ 
 
 **WPR\_initiated\_WPR Event Collector**
 
@@ -108,7 +108,7 @@ The **General** profile uses the following collectors:
 </tbody>
 </table>
 
- 
+ 
 
 For more information about collectors and providers, see [Collectors](collectors.md) and [Providers](providers.md).
 
@@ -145,9 +145,9 @@ Because you cannot predict when transient performance issues will occur, you mus
 
 [Performance Scenarios](performance-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

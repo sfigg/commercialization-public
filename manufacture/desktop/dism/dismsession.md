@@ -45,7 +45,7 @@ You can associate an offline or online Windows image with a `DISMSession` by cal
 <tbody>
 <tr class="odd">
 <td><p>Supported host platform</p></td>
-<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the [Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).</p></td>
+<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=206587" data-raw-source="[Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587)">Windows ADK Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supported image platform</p></td>
@@ -54,7 +54,7 @@ You can associate an offline or online Windows image with a `DISMSession` by cal
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -65,9 +65,9 @@ You can associate an offline or online Windows image with a `DISMSession` by cal
 
 [Using the DISM API](using-the-dism-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

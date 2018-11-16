@@ -43,7 +43,7 @@ When Search Suggestions are shown, a menu appears below the search box with sugg
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -88,9 +88,9 @@ The following XML output shows how to hide the Search Suggestions.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

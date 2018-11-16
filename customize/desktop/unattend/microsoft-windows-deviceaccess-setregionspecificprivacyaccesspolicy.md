@@ -44,9 +44,9 @@ Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-DeviceAccess](microsoft-windows-deviceaccess.md).
 
- 
+ 
 
- 
+ 
 
 
 

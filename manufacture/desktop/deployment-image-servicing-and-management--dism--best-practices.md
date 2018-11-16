@@ -43,7 +43,7 @@ You can mount and modify multiple images on a single computer. However, performa
 **Note**  
 If you have split a .wim file into smaller files for spanning across multiple media, you cannot mount the image for servicing.
 
- 
+ 
 
 ## <span id="BKMK_intl"></span><span id="bkmk_intl"></span><span id="BKMK_INTL"></span>Changing International Settings
 
@@ -58,7 +58,7 @@ DISM will log verbose information to %WINDIR%\\Logs\\Dism\\Dism.log by default. 
 **Important**  
 If you specify a log path on a network share from a computer that is not joined to a domain, use net-use with domain credentials to set access permissions before you set the log path for the DISM log.
 
- 
+ 
 
 The log file will automatically be archived. The archived log file will be saved with .bak appended to the file name, and a new log file will be generated. Each time the log file is archived, the .bak file will be overwritten.
 
@@ -128,9 +128,9 @@ Your Windows images contain custom configuration data, custom applications, and 
 
 [Understanding Servicing Strategies](understanding-servicing-strategies.md)
 
- 
+ 
 
- 
+ 
 
 
 

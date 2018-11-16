@@ -19,6 +19,7 @@ ms.topic: article
 This test checks that the device has passed USB-IF Certification
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Connectivity.UsbDevices.UsbifCertification</li></ul> |  
@@ -31,7 +32,7 @@ This test checks that the device has passed USB-IF Certification
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -59,11 +60,11 @@ For more information about TID, see [USB tests in the Windows 10 Hardware Lab Ki
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

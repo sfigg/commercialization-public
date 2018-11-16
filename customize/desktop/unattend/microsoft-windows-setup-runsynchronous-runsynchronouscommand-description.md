@@ -38,7 +38,7 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following XML output shows how to set synchronous commands.
 
 [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

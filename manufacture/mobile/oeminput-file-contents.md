@@ -85,16 +85,15 @@ The following table describes the required elements in the OEMInput file.
 <li><p><strong>QC8960_Test_4gb</strong>: Creates an image with a crash dump partition that is approximately 600 MB in size, large enough to store a single crash dump for a device with 512 MB of RAM. Use this value when generating Test images for phones with only 4 GB of storage.</p></li>
 </ul>
 <div class="alert">
-<strong>Important</strong>  
-<p>The 8960 SOC options must only be used for images that are used to create updates for Windows 10 Mobile. For more information see <a href="https://msdn.microsoft.com/windows/hardware/commercialize/service/mobile/index">Update</a>.</p>
+<strong>Important</strong><br/><p>The 8960 SOC options must only be used for images that are used to create updates for Windows 10 Mobile. For more information see <a href="https://msdn.microsoft.com/windows/hardware/commercialize/service/mobile/index">Update</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Device</strong></p></td>
@@ -137,7 +136,7 @@ The following table describes the required elements in the OEMInput file.
 </tbody>
 </table>
 
- 
+
 
 ## Optional elements in the OEMInput file
 
@@ -192,11 +191,10 @@ The following table describes the optional elements that OEMs can include in the
 <td><p><strong>PackageFiles</strong></p></td>
 <td><p>Contains a set of <strong>PackageFile</strong> elements that specify additional packages to include in the image.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>The <strong>PackageFiles</strong> element can only be used in pre-retail images such as Test and Health images. It is only intended to be used in scenarios you need to quickly add an ad-hoc package to a pre-retail image. In retail images, all packages must be referenced using a feature that is listed under the <strong>Features</strong> element or listed in a feature manifest that is referenced under the <strong>AdditionalFMs</strong> element. For more information about features and feature manifests, see <a href="building-a-phone-image-using-imggencmd.md">Building a phone image using ImgGen.cmd</a> and <a href="feature-manifest-file-contents.md">Feature manifest file contents</a>.</p>
+<strong>Important</strong><br/><p>The <strong>PackageFiles</strong> element can only be used in pre-retail images such as Test and Health images. It is only intended to be used in scenarios you need to quickly add an ad-hoc package to a pre-retail image. In retail images, all packages must be referenced using a feature that is listed under the <strong>Features</strong> element or listed in a feature manifest that is referenced under the <strong>AdditionalFMs</strong> element. For more information about features and feature manifests, see <a href="building-a-phone-image-using-imggencmd.md">Building a phone image using ImgGen.cmd</a> and <a href="feature-manifest-file-contents.md">Feature manifest file contents</a>.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Each <strong>PackageFile</strong> element contains a text value that specifies the path and name of a single package. If no additional packages are being added to the image, the <strong>PackageFiles</strong> element must be omitted from the file. The packages can be in any location on the development computer. An environment variable can be used in the path to each package in the <strong>PackageFile</strong> element.</p>
 <p></p></td>
@@ -204,7 +202,7 @@ The following table describes the optional elements that OEMs can include in the
 </tbody>
 </table>
 
- 
+
 
 ## XML schema for the OEMInput file
 
@@ -226,7 +224,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
             <xs:element name="SV" type="xs:string" minOccurs="0" maxOccurs="1"/>  
             <xs:element name="SOC" type="xs:string" minOccurs="1" maxOccurs="1"/>  
             <xs:element name="Device" type="xs:string" minOccurs="1" maxOccurs="1"/>  
-  
+
             <xs:element name="ReleaseType" minOccurs="1" maxOccurs="1">  
                <xs:simpleType>  
                   <xs:restriction base="xs:string">  
@@ -235,7 +233,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   </xs:restriction>  
                </xs:simpleType>  
             </xs:element>  
-              
+
             <xs:element name="BuildType" minOccurs="1" maxOccurs="1">  
                <xs:simpleType>  
                   <xs:restriction base="xs:string">  
@@ -245,7 +243,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   </xs:restriction>  
                </xs:simpleType>  
             </xs:element>  
-  
+
             <xs:element name="FormatDPP" minOccurs="0" maxOccurs="1">  
                <xs:simpleType>  
                   <xs:restriction base="xs:string">  
@@ -254,7 +252,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   </xs:restriction>  
                </xs:simpleType>  
             </xs:element>  
-  
+
             <xs:element name="ExcludePrereleaseFeatures" minOccurs="0" maxOccurs="1">  
                <xs:simpleType>  
                   <xs:restriction base="xs:string">  
@@ -263,9 +261,9 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   </xs:restriction>  
                </xs:simpleType>  
             </xs:element>  
-  
+
             <xs:element name="OEMDevicePlatform" type="xs:string" minOccurs="0" maxOccurs="1"/>  
-              
+
             <xs:element name="SupportedLanguages" minOccurs="1" maxOccurs="1">  
                <xs:complexType>  
                   <xs:all>  
@@ -298,9 +296,9 @@ The OEMInput file is validated against the following XML schema. You can use thi
             </xs:element>  
 
             <xs:element name="BootUILanguage" type="xs:string" minOccurs="1" maxOccurs="1"/>  
-              
+
             <xs:element name="BootLocale" type="xs:string" minOccurs="1" maxOccurs="1"/>  
-              
+
             <xs:element name="Resolutions" minOccurs="0" maxOccurs="1">  
                <xs:complexType>  
                   <xs:sequence>  
@@ -309,7 +307,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   </xs:sequence>  
                </xs:complexType>  
             </xs:element>  
-  
+
             <xs:element name="Features" minOccurs="0" maxOccurs="1">  
                <xs:complexType>  
                   <xs:sequence>  
@@ -332,7 +330,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   </xs:sequence>  
                </xs:complexType>  
             </xs:element>  
-  
+
             <xs:element name="AdditionalFMs" minOccurs="0" maxOccurs="1">  
                <xs:complexType>  
                   <xs:sequence>  
@@ -348,7 +346,7 @@ The OEMInput file is validated against the following XML schema. You can use thi
                   <xs:attribute name="UserStoreDir" type="xs:string" />  
                </xs:complexType>  
             </xs:element>  
-  
+
             <xs:element name="PackageFiles" minOccurs="0" maxOccurs="1">  
                <xs:complexType>  
                   <xs:sequence>  
@@ -368,9 +366,9 @@ The OEMInput file is validated against the following XML schema. You can use thi
 
 [Building an image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md)
 
- 
 
- 
+
+
 
 
 

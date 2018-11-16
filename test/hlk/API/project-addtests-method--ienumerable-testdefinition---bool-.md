@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 Adds the given Tests to this Project.
 
@@ -33,9 +33,9 @@ Adds the given Tests to this Project.
 
 `public virtual void AddTests (`
 
-          `IEnumerable<TestDefinition> tests,`
+          `IEnumerable<TestDefinition> tests,`
 
-          `bool disableFeatureDetection`
+          `bool disableFeatureDetection`
 
 `)`
 
@@ -55,9 +55,9 @@ Flag that causes all the tests to be added to Targets regardless of feature dete
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

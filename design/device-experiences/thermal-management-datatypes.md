@@ -36,26 +36,26 @@ This topic discusses the datatypes that are used for Thermal Management in Windo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[THERMAL_READ_POLICY](thermal-policy.md)</p></td>
-<td><p>The [THERMAL_POLICY](thermal-policy.md) struct is used with the [IOCTL_THERMAL_READ_POLICY](ioctl-thermal-read-policy.md)input/output (I/O) control code.</p></td>
+<td><p><a href="thermal-policy.md" data-raw-source="[THERMAL_READ_POLICY](thermal-policy.md)">THERMAL_READ_POLICY</a></p></td>
+<td><p>The <a href="thermal-policy.md" data-raw-source="[THERMAL_POLICY](thermal-policy.md)">THERMAL_POLICY</a> struct is used with the <a href="ioctl-thermal-read-policy.md" data-raw-source="[IOCTL_THERMAL_READ_POLICY](ioctl-thermal-read-policy.md)">IOCTL_THERMAL_READ_POLICY</a>input/output (I/O) control code.</p></td>
 </tr>
 <tr class="even">
-<td><p>[THERMAL_WAIT_READ](thermal-wait-read.md)</p></td>
-<td><p>The [THERMAL_WAIT_READ](thermal-wait-read.md) struct is used as the input buffer by the [IOCTL_THERMAL_READ_TEMPERATURE](ioctl-thermal-read-temperature.md) IOCTL control code.</p></td>
+<td><p><a href="thermal-wait-read.md" data-raw-source="[THERMAL_WAIT_READ](thermal-wait-read.md)">THERMAL_WAIT_READ</a></p></td>
+<td><p>The <a href="thermal-wait-read.md" data-raw-source="[THERMAL_WAIT_READ](thermal-wait-read.md)">THERMAL_WAIT_READ</a> struct is used as the input buffer by the <a href="ioctl-thermal-read-temperature.md" data-raw-source="[IOCTL_THERMAL_READ_TEMPERATURE](ioctl-thermal-read-temperature.md)">IOCTL_THERMAL_READ_TEMPERATURE</a> IOCTL control code.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Thermal Management IOCTLs](thermal-management-ioctls.md)
 
- 
+ 
 
- 
+ 
 
 
 

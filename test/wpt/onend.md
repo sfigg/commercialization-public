@@ -56,7 +56,7 @@ The following table describes possible return values. WPR ignores failure values
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -70,9 +70,9 @@ When stopping or saving a trace, this callback also returns the number of events
 
 [IControlProgressHandler](icontrolprogresshandler.md)
 
- 
+ 
 
- 
+ 
 
 
 

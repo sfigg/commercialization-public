@@ -29,7 +29,7 @@ This method schedules a test to be run against a specified subset of machines.
 
 `Public Overridable Function QueueTest ( _`
 
-          `machineList As IEnumerable(Of Machine)) _`
+          `machineList As IEnumerable(Of Machine)) _`
 
 `) As IList(Of TestResult)`
 
@@ -37,7 +37,7 @@ This method schedules a test to be run against a specified subset of machines.
 
 `public virtual IList<TestResult> QueueTest (`
 
-          `IEnumerable<Machine> machineList`
+          `IEnumerable<Machine> machineList`
 
 `)`
 
@@ -46,7 +46,7 @@ This method schedules a test to be run against a specified subset of machines.
 
 *machineList*
 
-     The list of test computers on which a test should run.
+     The list of test computers on which a test should run.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -58,9 +58,9 @@ Returns **IList**, which is a list of results for the jobs that were scheduled.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

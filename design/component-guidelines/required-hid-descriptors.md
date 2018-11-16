@@ -32,7 +32,7 @@ The following table shows the required USB HID descriptor. For more information,
 | bDescriptorType   | 1             | Descriptor type          |
 | bDescriptorLength | 2             | Length of the descriptor |
 
- 
+ 
 
 ## <a href="" id="required-i2c-hid-descriptor"></a>Required I²C HID Descriptor
 
@@ -55,7 +55,7 @@ The following table shows the required I²C HID descriptor.
 | wDeviceID           | 2             | Device ID.                                                                      |
 | wVersionID          | 2             | Firmware version number.                                                        |
 
- 
+ 
 
 ## Required Device Attributes
 

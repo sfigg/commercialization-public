@@ -47,29 +47,29 @@ A sample descriptor is provided in [Sample Report Descriptors](touchscreen-sampl
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Required HID Descriptors](touchscreen-required-hid-descriptors.md)</p></td>
+<td><p><a href="touchscreen-required-hid-descriptors.md" data-raw-source="[Required HID Descriptors](touchscreen-required-hid-descriptors.md)">Required HID Descriptors</a></p></td>
 <td><p>This topic presents the required HID descriptors (and device attributes) for a Windows Touchscreen device in Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Required HID Top-Level Collections](touchscreen-required-hid-top-level-collections.md)</p></td>
+<td><p><a href="touchscreen-required-hid-top-level-collections.md" data-raw-source="[Required HID Top-Level Collections](touchscreen-required-hid-top-level-collections.md)">Required HID Top-Level Collections</a></p></td>
 <td><p>This topic discusses the required HID top-level collections that are used for Touchscreen reporting in Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Packet Reporting Modes](touchscreen-packet-reporting-modes.md)</p></td>
+<td><p><a href="touchscreen-packet-reporting-modes.md" data-raw-source="[Packet Reporting Modes](touchscreen-packet-reporting-modes.md)">Packet Reporting Modes</a></p></td>
 <td><p>This topic provides information about the packet reporting modes for a Windows Touchscreen device in Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Sample Report Descriptors](touchscreen-sample-report-descriptors.md)</p></td>
+<td><p><a href="touchscreen-sample-report-descriptors.md" data-raw-source="[Sample Report Descriptors](touchscreen-sample-report-descriptors.md)">Sample Report Descriptors</a></p></td>
 <td><p>This topic presents a sample report descriptor and a sample descriptor excerpt for a Windows Touchscreen device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,7 +59,7 @@ This setting is related to [ConvertibleSlateModePromptPreference](microsoft-wind
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -97,9 +97,9 @@ The following XML output specifies a laptop form factor.
 
 [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)
 
- 
+ 
 
- 
+ 
 
 
 

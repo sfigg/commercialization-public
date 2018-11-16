@@ -64,11 +64,11 @@ Create a single driver that runs across multiple device types, from embedded sys
 <tbody>
 <tr class="odd">
 <td><p>Write and run test automations with the Test Authoring and Execution Framework (TAEF). Share your tests across disciplines and teams.</p>
-<p>[Get started with the Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started)</p></td>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started" data-raw-source="[Get started with the Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started)">Get started with the Test Authoring and Execution Framework (TAEF)</a></p></td>
 <td><p>Test your hardware with the Windows Hardware Lab Kit.</p>
-<p>[Get started with the Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)</p></td>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started" data-raw-source="[Get started with the Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)">Get started with the Windows Hardware Lab Kit</a></p></td>
 <td><p>Analyze system and application performance using the Windows Performance Toolkit.</p>
-<p>[Get started with the Windows Performance step-by-step guides](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-step-by-step-guides)</p></td>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-step-by-step-guides" data-raw-source="[Get started with the Windows Performance step-by-step guides](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-step-by-step-guides)">Get started with the Windows Performance step-by-step guides</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,15 +84,15 @@ Create a single driver that runs across multiple device types, from embedded sys
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>For desktop PCs, learn strategies to build a set of images for specific markets to meet different customers' needs.</p>
-<p>[Build and deploy desktop devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough)</p></td>
+<td><p>For desktop PCs, learn strategies to build a set of images for specific markets to meet different customers&#39; needs.</p>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough" data-raw-source="[Build and deploy desktop devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough)">Build and deploy desktop devices</a></p></td>
 <td><p>Learn about deploying Windows 10 S, a configuration of Windows 10 Pro that offers a familiar, productive Windows experience that’s streamlined for security and performance.</p>
-<p>[Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)</p>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview" data-raw-source="[Windows 10 S manufacturing overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-10-s-overview)">Windows 10 S manufacturing overview</a></p>
 </td>
 <td><p>Build IoT Core devices, applying apps, drivers, and settings to new devices.</p>
-<p>[Build and deploy IoT Core devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)</p></td>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Build and deploy IoT Core devices](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">Build and deploy IoT Core devices</a></p></td>
 <td><p>OEMs and ODMs can build and test mobile devices and drivers.</p>
-<p>[Build and deploy phones](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/mobile-deployment-and-imaging)</p></td>
+<p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/mobile-deployment-and-imaging" data-raw-source="[Build and deploy phones](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/mobile-deployment-and-imaging)">Build and deploy phones</a></p></td>
 </tr>
 </tbody>
 </table>

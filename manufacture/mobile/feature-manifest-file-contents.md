@@ -17,10 +17,10 @@ ms.topic: article
 
 *Feature manifest (FM) files* are used to define specific types of image builds that contain different sets of optional packages. This topic describes the required and optional elements in a FM file. For more information about how FM files are used while generating images, see [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md).
 
-**Note**  
+**Note**  
 Most of the elements in a FM file include a path to a package. If the package is under the root directory for Microsoft packages (%WPDKCONTENTROOT%\\MSPackages), this path can use the $(mspackageroot) macro in the path name. If the package is in some other location, you can use an environment variable, such as %oempackageroot%, and set this environment variable in the command-line window.
 
- 
+
 
 ## Example FM file
 
@@ -30,32 +30,32 @@ The following example shows a sample OEM FM file.
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-  xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
-  <BasePackages>
-    <PackageFile Path="%oempackageroot%\common\" 
-      Name="Contoso.Phone.Test.BaseOs.EnvPath.spkg" />
-  </BasePackages>
-  <Features>
-    <OEM>
-     <PackageFile Path="%oempackageroot%\test\" 
-      Name="Contoso.Test.MinTE.spkg">
-        <FeatureIDs>
-          <FeatureID>TEST_FEATURE1</FeatureID>
-        </FeatureIDs>
-      </PackageFile>
-   </OEM>
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <BasePackages>
+    <PackageFile Path="%oempackageroot%\common\" 
+      Name="Contoso.Phone.Test.BaseOs.EnvPath.spkg" />
+  </BasePackages>
+  <Features>
+    <OEM>
+     <PackageFile Path="%oempackageroot%\test\" 
+      Name="Contoso.Test.MinTE.spkg">
+        <FeatureIDs>
+          <FeatureID>TEST_FEATURE1</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+   </OEM>
 </Features>
-  <ReleasePackages> 
-    <PackageFile FeatureIdentifierPackage="true" Name="Contoso.BaseOS.BootApplications_Test.spkg" 
+  <ReleasePackages> 
+    <PackageFile FeatureIdentifierPackage="true" Name="Contoso.BaseOS.BootApplications_Test.spkg" 
 Path="%oempackageroot%\test" ReleaseType="Test"/> 
-  </ReleasePackages> 
-  <PrereleasePackages>
-    <PackageFile ID="Contoso.MainOS.Protected_Replacement_Production" FeatureIdentifierPackage="true" 
+  </ReleasePackages> 
+  <PrereleasePackages>
+    <PackageFile ID="Contoso.MainOS.Protected_Replacement_Production" FeatureIdentifierPackage="true" 
 Name="Contoso.MainOS.Protected_Replacement_Production.spkg" Path="%oempackageroot%\Merged\" Resolution="*" Type="replacement" Language="*"/>
-  </PrereleasePackages>
+  </PrereleasePackages>
 <OEMDevicePlatformPackages>
-    <PackageFile Name="SoCVendor.DCD6000.OEMDevicePlatform.spkg" Path="%oempackageroot%\DCD6000\" Device="DCD6000"/>  
+    <PackageFile Name="SoCVendor.DCD6000.OEMDevicePlatform.spkg" Path="%oempackageroot%\DCD6000\" Device="DCD6000"/>  
 </OEMDevicePlatformPackages>
 </FeatureManifest>
 ```
@@ -97,15 +97,15 @@ The following table describes the child elements of the **BasePackages** element
 <li><p><strong>Name</strong> – Required. The file name of the package.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except or those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except or those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -119,7 +119,7 @@ The following table describes the child elements of the **BasePackages** element
 </tbody>
 </table>
 
- 
+
 
 ### Features
 
@@ -150,15 +150,15 @@ The following table describes the child elements of the **Features** element.
 <li><p><strong>Name</strong> – Required. The file name of the package.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that that package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that that package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that that package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that that package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -177,7 +177,7 @@ The following table describes the child elements of the **Features** element.
 </tbody>
 </table>
 
- 
+
 
 ### Feature groupings and constraints
 
@@ -211,15 +211,15 @@ The following table describes the child elements of the **ReleasePackages** elem
 <li><p><strong>Name</strong> – Required. The file name of the package.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -233,7 +233,7 @@ The following table describes the child elements of the **ReleasePackages** elem
 </tbody>
 </table>
 
- 
+
 
 ### PrereleasePackages
 
@@ -259,25 +259,24 @@ Describes packages that can be excluded using the **ExcludePrereleaseFeatures** 
 <li><p><strong>Type</strong> – Required. Can be either <strong>protected</strong> or <strong>replacement</strong>.</p>
 <p>The <strong>protected</strong> packages are excluded when <code>ExcludePrereleaseFeatures</code> is set to <strong>Yes</strong> and the replacement packages will instead be included. For example a replacement feature can be created by the OEM to enable scenarios such as mobile operator testing, while not distributing builds with sensitive functionality. This approach is one of many, and is not required, but is one option to consider, to help manage feature disclosure. For more information see <a href="oeminput-file-contents.md">OEMInput file contents</a>.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>No replacement packages should be included in a retail image.</p>
+<strong>Important</strong><br/><p>No replacement packages should be included in a retail image.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p><strong>Path</strong> – Required. The path to the package.</p></li>
 <li><p><strong>Name</strong> – Required. The file name of the package.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -291,7 +290,7 @@ Describes packages that can be excluded using the **ExcludePrereleaseFeatures** 
 </tbody>
 </table>
 
- 
+
 
 ### SOCPackages
 
@@ -316,20 +315,20 @@ The following table describes the child elements of the **SOCPackages** element.
 <td><p>Optional. This element describes a package.</p>
 <p>This element supports the following attributes:</p>
 <ul>
-<li><p><strong>SOC</strong> – Required. The type of SoC supported by the package. For a list of the supported values, see the description of the <strong>SOC</strong> element in [OEMInput file contents](oeminput-file-contents.md). The package will only be included in images generated for the specified SoC.</p></li>
+<li><p><strong>SOC</strong> – Required. The type of SoC supported by the package. For a list of the supported values, see the description of the <strong>SOC</strong> element in <a href="oeminput-file-contents.md" data-raw-source="[OEMInput file contents](oeminput-file-contents.md)">OEMInput file contents</a>. The package will only be included in images generated for the specified SoC.</p></li>
 <li><p><strong>Path</strong> – Required. The path to the package.</p></li>
 <li><p><strong>Name</strong> – Required. The file name of the package.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -344,7 +343,7 @@ The following table describes the child elements of the **SOCPackages** element.
 </tbody>
 </table>
 
- 
+
 
 ### SVPackages
 
@@ -374,15 +373,15 @@ The following table describes the child elements of the **SVPackages** element.
 <li><p><strong>Name</strong> – Optional.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -397,7 +396,7 @@ The following table describes the child elements of the **SVPackages** element.
 </tbody>
 </table>
 
- 
+
 
 ### OEMDevicePlatformPackages
 
@@ -437,7 +436,7 @@ The following table describes the child elements of the **OEMDevicePlatformPacka
 </tbody>
 </table>
 
- 
+
 
 ### DeviceSpecificPackages
 
@@ -467,15 +466,15 @@ The following table describes the child elements of the **DeviceSpecificPackages
 <li><p><strong>Name</strong> – Required. The file name of the package.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul>
@@ -490,7 +489,7 @@ The following table describes the child elements of the **DeviceSpecificPackages
 </tbody>
 </table>
 
- 
+
 
 ## Microsoft internal use only
 
@@ -526,15 +525,15 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 <li><p><strong>FeatureIdentifierPackage</strong> – Optional. Boolean value. This attribute should not be used by OEMs.</p></li>
 <li><p><strong>Resolution</strong> – Optional. A string that contains the display resolutions supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every resolution.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every resolution.</p></li>
 <li><p>&quot;(720x1280;768x1280)&quot;: This syntax indicates the set of resolutions that the package supports. The package is included only in images that are built for one of the resolutions in this list.</p></li>
-<li><p>&quot;!(720x1280;768x1280)&quot;: A '!' in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
+<li><p>&quot;!(720x1280;768x1280)&quot;: A &#39;!&#39; in front of the resolution list specifies that the package supports all resolutions except for those in the list. The package is included only in images that are not built for one of the resolutions in this list.</p></li>
 </ul></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that that package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that that package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package.</p></li>
 </ul></td>
@@ -542,7 +541,7 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 </tbody>
 </table>
 
- 
+
 
 ### BootUILanguagePackageFile
 
@@ -575,7 +574,7 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 </tbody>
 </table>
 
- 
+
 
 ### BootLocalePackageFile
 
@@ -608,7 +607,7 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 </tbody>
 </table>
 
- 
+
 
 ### DeviceLayoutPackages
 
@@ -645,7 +644,7 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 </tbody>
 </table>
 
- 
+
 
 ### KeyboardPackages
 
@@ -675,9 +674,9 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 <li><p><strong>FeatureIdentifierPackage</strong> – Optional. Boolean value. This attribute should not be used by OEMs.</p></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul></td>
@@ -685,7 +684,7 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 </tbody>
 </table>
 
- 
+
 
 ### SpeechPackages
 
@@ -715,9 +714,9 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 <li><p><strong>FeatureIdentifierPackage</strong> – Optional. Boolean value. This attribute should not be used by OEMs.</p></li>
 <li><p><strong>Language</strong> – Optional. A string that contains the display language codes supported by the package. This attribute can be specified with the following values:</p>
 <ul>
-<li><p>&quot;*&quot;: The &quot;*&quot; character means that the package supports every language.</p></li>
+<li><p>&quot;<em>&quot;: The &quot;</em>&quot; character means that the package supports every language.</p></li>
 <li><p>&quot;(en-US;zh-CN)&quot;: This syntax indicates the set of languages that the package supports. The package is included only in images that contain one of the display languages in this list.</p></li>
-<li><p>&quot;!(en-US;zh-CN)&quot;: A '!' in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
+<li><p>&quot;!(en-US;zh-CN)&quot;: A &#39;!&#39; in front of the language list specifies that the package supports all languages except for those in the list. The package is included only in images that do not contain one of the display languages in this list.</p></li>
 </ul></li>
 <li><p><strong>Partition</strong> – Optional. A string that specifies the target partition for the package. By default, packages are installed to the MainOS partition unless another is explicitly specified.</p></li>
 </ul></td>
@@ -725,16 +724,16 @@ Reserved for internal Microsoft use. This element should not be used by OEMs.
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md)
 
- 
 
- 
+
+
 
 
 

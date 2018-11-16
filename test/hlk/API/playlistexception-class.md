@@ -36,18 +36,18 @@ This exception class is defined to handle playlist specific errors.
 
 **System.Exception**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.PlaylistException**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.PlaylistException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

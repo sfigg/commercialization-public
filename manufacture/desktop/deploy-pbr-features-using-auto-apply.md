@@ -186,7 +186,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
     > [!important]
     > You must store Winre.wim in \\Recovery\\WindowsRE.
 
-     
+     
 
 6.  Register the Windows RE boot image together with the Windows image.
 
@@ -274,7 +274,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
     **Note**  Important: You must configure the image that you are shipping to the customer to boot to OOBE.
 
-     
+     
 
 6.  (Optional) To save space, you can also convert your installed Windows desktop applications into file pointers referencing the customizations package. To do so, boot the destination PC to Windows PE and run the following:
 
@@ -302,7 +302,7 @@ Auto-apply folders are new in Windows 10, version 1809. These folders make it ea
 
     **Note**  The Push-button reset UI has been redesigned in Windows 10. The **Keep my files** option in the UI now corresponds to the **Refresh your PC** feature, whereas the **Remove everything** option corresponds to the **Reset your PC** feature.
 
-     
+     
 
 ## <span id="related_topics"></span>Related topics
 

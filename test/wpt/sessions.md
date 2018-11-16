@@ -67,9 +67,9 @@ Logging sessions collect from a defined set of system and event providers. This 
 
 [BufferSize](buffersize.md)
 
- 
+ 
 
- 
+ 
 
 
 

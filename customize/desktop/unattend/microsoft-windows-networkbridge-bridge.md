@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 Not all adapters can be bridged.
 
- 
+ 
 
 ## Values
 
@@ -41,7 +41,7 @@ Not all adapters can be bridged.
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -76,9 +76,9 @@ The following XML output shows how to set the bridge.
 
 [Microsoft-Windows-SharedAccess]microsoft-windows-sharedaccess.md)
 
- 
+ 
 
- 
+ 
 
 
 

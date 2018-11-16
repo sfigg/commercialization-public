@@ -38,7 +38,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -60,9 +60,9 @@ For the list of the supported Windows editions and architectures that this compo
 
 [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md)
 
- 
+ 
 
- 
+ 
 
 
 

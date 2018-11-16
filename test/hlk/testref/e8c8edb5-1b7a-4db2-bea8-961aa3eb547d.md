@@ -33,6 +33,7 @@ This topic applies to the following test jobs:
 -   WDDM Bit Flip - Invalid Param Fifth Group
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM.DisplayRender.Stability</li></ul> |  
@@ -45,7 +46,7 @@ This topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -62,7 +63,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -90,11 +91,11 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -112,16 +113,16 @@ For command-line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>BitFlip.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -130,11 +131,11 @@ For command-line help for this test binary, type **/h**.
 | **LLU\_NetAccessOnly**       | LLU Name of net user                                 |
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo |
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -29,17 +29,17 @@ This topic describes the tasks that you must complete before you test a proximit
 
 The following hardware is required for testing a proximity-compliant controller. You might need more hardware if the controller includes more capabilities. See the test description for each test that the Windows HLK identifies to determine whether your controller requires more hardware.
 
--   Two test computers. These test computers must meet the Windows HLK prerequisites and must be included in the same machine pool. For more information, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+- Two test computers. These test computers must meet the Windows HLK prerequisites and must be included in the same machine pool. For more information, see [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md).
 
--   Two test proximity controllers.
+- Two test proximity controllers.
 
--   One Near Field Communication (NFC) Forum Type 2 tag.
+- One Near Field Communication (NFC) Forum Type 2 tag.
 
->[!NOTE]
->  
-For more information about the NFC Forum Type 2 tag, see [Near Field Communication (NFC) Forum](http://go.microsoft.com/fwlink/?LinkID=236991).
+> [!NOTE]
+> 
+> For more information about the NFC Forum Type 2 tag, see [Near Field Communication (NFC) Forum](http://go.microsoft.com/fwlink/?LinkID=236991).
 
- 
+ 
 
 ## <span id="BKMK_SoftwareRequirements"></span><span id="bkmk-softwarerequirements"></span><span id="BKMK_SOFTWAREREQUIREMENTS"></span>Software Requirements
 
@@ -75,15 +75,15 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Manual Windows HLK tests require user intervention. When you run tests for a submission, it's best to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting an automated test.
 
->[!IMPORTANT]
->  
-On both Computer A and Computer B, switch to the Windows Desktop before you run your proximity tests.
+> [!IMPORTANT]
+> 
+> On both Computer A and Computer B, switch to the Windows Desktop before you run your proximity tests.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

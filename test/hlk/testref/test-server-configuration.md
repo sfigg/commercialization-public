@@ -22,31 +22,31 @@ This article assumes that you have already setup the network domain controller a
 
 The Server test requires the following system configuration tasks to prepare the test system for server testing. The machines setup for the Server Stress test consists of:
 
--   One server under test" (SUT). This is the computer that you are certifying.
+- One server under test" (SUT). This is the computer that you are certifying.
 
-    >[!WARNING]
-    >  
-    The SUT computer name must be 15 characters or less.
+  > [!WARNING]
+  > 
+  > The SUT computer name must be 15 characters or less.
 
-     
+     
 
--   One x64 client machine that will act as the Remote Test Host (MC). The master client system must be listed in the Windows Server Catalog. Please note the following restrictions for the MC, Stress Client (SC), and SUT:
+- One x64 client machine that will act as the Remote Test Host (MC). The master client system must be listed in the Windows Server Catalog. Please note the following restrictions for the MC, Stress Client (SC), and SUT:
 
-    -   An MC, SC or SUT cannot be a domain controller for the test systems.
+  -   An MC, SC or SUT cannot be a domain controller for the test systems.
 
-    -   An MC, SC or SUT cannot host HLK Studio.
+  -   An MC, SC or SUT cannot host HLK Studio.
 
-    -   An MC, SC or SUT cannot be the HLK Controller for the systems that are used for testing.
+  -   An MC, SC or SUT cannot be the HLK Controller for the systems that are used for testing.
 
--   Eight (8) x64 client machines that act as the SC systems. LoadGen supports up to 64 SC machines, but eight is usually sufficient.
+- Eight (8) x64 client machines that act as the SC systems. LoadGen supports up to 64 SC machines, but eight is usually sufficient.
 
--   Do not use "MC" or "SC" or "SUT" or any derivatives in the machine names, as this will cause the test to fail.
+- Do not use "MC" or "SC" or "SUT" or any derivatives in the machine names, as this will cause the test to fail.
 
->[!IMPORTANT]
->  
-Because some systems might be set to shipping configuration, they might not have all their devices enabled or their drivers loaded. Before testing, make sure that all devices in the system are enabled and that all drivers related to those devices are loaded per the testing requirements.
+> [!IMPORTANT]
+> 
+> Because some systems might be set to shipping configuration, they might not have all their devices enabled or their drivers loaded. Before testing, make sure that all devices in the system are enabled and that all drivers related to those devices are loaded per the testing requirements.
 
- 
+ 
 
 ### <span id="Storage_and_Operating_System_Installation"></span><span id="storage_and_operating_system_installation"></span><span id="STORAGE_AND_OPERATING_SYSTEM_INSTALLATION"></span>Storage and Operating System Installation
 
@@ -94,38 +94,38 @@ Because some systems might be set to shipping configuration, they might not have
 
 5.  IPv4 and IPv6 must both be enabled on the system being tested, the master client, and all clients connected to the system.
 
->[!WARNING]
->  
-A network interface adapter that is not connected to a network generates an error, causing the test to fail. Note that network adapters that are used for iSCSI connectivity to storage do not need to be connected to client systems.
+> [!WARNING]
+> 
+> A network interface adapter that is not connected to a network generates an error, causing the test to fail. Note that network adapters that are used for iSCSI connectivity to storage do not need to be connected to client systems.
 
- 
+ 
 
 ### <span id="Begin_server_testing"></span><span id="begin_server_testing"></span><span id="BEGIN_SERVER_TESTING"></span>Begin server testing
 
-1.  Setup an HLK environment as described in the [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md).
+1. Setup an HLK environment as described in the [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md).
 
-2.  In **Step 2: Install HLK Client on Test Computer(s)**, add each computer (MC, SC, and SUT) to your HLK environment.
+2. In **Step 2: Install HLK Client on Test Computer(s)**, add each computer (MC, SC, and SUT) to your HLK environment.
 
-3.  In **Step 6: Select & Run Tests**, run **LoadGen Server Stress - Run First - Set Machine Policies Test**.
+3. In **Step 6: Select & Run Tests**, run **LoadGen Server Stress - Run First - Set Machine Policies Test**.
 
-    >[!IMPORTANT]
-    >  
-    You must run this test to set the correct machine policy settings on all devices.
+   > [!IMPORTANT]
+   > 
+   > You must run this test to set the correct machine policy settings on all devices.
 
-     
+     
 
-4.  When **Step 3** completes, select and run other tests as appropriate.
+4. When **Step 3** completes, select and run other tests as appropriate.
 
-5.  When all tests pass, run **LoadGen Server Stress - Run Last - Reset Machine Policies Test** to reset the machines.
+5. When all tests pass, run **LoadGen Server Stress - Run Last - Reset Machine Policies Test** to reset the machines.
 
 ## <span id="related_topics"></span>Related topics
 
 
 [System.Server Testing](system-server-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

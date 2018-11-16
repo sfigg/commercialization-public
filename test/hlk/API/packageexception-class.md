@@ -38,7 +38,7 @@ This class includes constructors that initialize a package exception object.
 
 `Public Class PackageException`
 
-               `Inherits ProjectException`
+               `Inherits ProjectException`
 
 **C#**
 
@@ -51,18 +51,18 @@ This class includes constructors that initialize a package exception object.
 
 **System.Object**
 
-   **System.Exception**
+   **System.Exception**
 
-       [ProjectManagerException Class](projectmanagerexception-class.md)           [ProjectException Class](projectexception-class.md)              Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageException
+       [ProjectManagerException Class](projectmanagerexception-class.md)           [ProjectException Class](projectexception-class.md)              Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageException
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

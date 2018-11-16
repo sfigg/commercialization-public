@@ -23,7 +23,7 @@ To enable the **Static IP** UI, set the value of the `EnableStaticIP` setting to
 **Warning**  
 The static IP UI must only be used for certification purposes and not for production or retail devices.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
@@ -78,7 +78,7 @@ The static IP UI must only be used for certification purposes and not for produc
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

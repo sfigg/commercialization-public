@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -72,9 +72,9 @@ The following XML output enables RAS and sets the Router type to enable Local Ar
 
 [Microsoft-Windows-RasServer](microsoft-windows-rasserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

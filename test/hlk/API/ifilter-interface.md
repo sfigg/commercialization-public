@@ -40,9 +40,9 @@ This class represents a filter that's applied against a test result.
 
 `public interface IFilter`
 
- 
+ 
 
- 
+ 
 
 
 

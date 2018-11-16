@@ -58,24 +58,24 @@ To generalize an image, you have to first boot into Audit Mode. You can boot int
 
 3. Run Sysprep.
 
-    - If the **System Preparation Tool** window is still open, click **Generalize**, click **Shutdown**, and then click **OK** to generalize the image and shut down the PC.
+   - If the **System Preparation Tool** window is still open, click **Generalize**, click **Shutdown**, and then click **OK** to generalize the image and shut down the PC.
 
-    -or-
+     -or-
 
-    -   Use Sysprep from Command Prompt. Run `%WINDIR%\system32\sysprep\sysprep.exe` to open the **System Preparation Window**. You can also use the `Sysprep` command together with the **/generalize**, **/shutdown**, and **/oobe** options. See [Sysprep command-line options](sysprep-command-line-options.md) to see available options.
+   - Use Sysprep from Command Prompt. Run `%WINDIR%\system32\sysprep\sysprep.exe` to open the **System Preparation Window**. You can also use the `Sysprep` command together with the **/generalize**, **/shutdown**, and **/oobe** options. See [Sysprep command-line options](sysprep-command-line-options.md) to see available options.
 
-    ```
-    %WINDIR%\system32\sysprep\sysprep.exe /generalize /shutdown /oobe
-    ```
+     ```
+     %WINDIR%\system32\sysprep\sysprep.exe /generalize /shutdown /oobe
+     ```
 
-    >[!Note]
-    >If you are generalizing a VHD that will be deployed as a VHD on the same virtual machine or hypervisor, use the `/mode:vm` option with the Sysprep command-line.
+     >[!Note]
+     >If you are generalizing a VHD that will be deployed as a VHD on the same virtual machine or hypervisor, use the `/mode:vm` option with the Sysprep command-line.
 
-    The computer generalizes the image and shuts down.
+     The computer generalizes the image and shuts down.
 
-4.  After the computer shuts down, [capture your image with DISM](capture-images-of-hard-disk-partitions-using-dism.md).
+4. After the computer shuts down, [capture your image with DISM](capture-images-of-hard-disk-partitions-using-dism.md).
 
-5.  Deploy this image to a reference computer. When the reference computer boots, it displays the OOBE screen.
+5. Deploy this image to a reference computer. When the reference computer boots, it displays the OOBE screen.
 
 ### Generalize using unattend
 
@@ -100,9 +100,9 @@ If you use multiple unattend files during your computer deployment, you can add 
 
 [Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,7 +37,7 @@ To create a secure wim image, complete the following steps.
     **Note**  
     The image generation executables are located in %WPDKCONTENTROOT%\\Tools\\bin\\i386. You can use the `set` command to add that path to your environment.
 
-     
+     
 
 2.  The platform ID must be used to create the WIM for a specific platform. The platform ID is set in using a device platform XML file.
 
@@ -183,9 +183,9 @@ secwim -replacecat <path to catalog> <path to .secwim>
 
 [Working with WIM MMOS images](working-with-wim-mmos-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

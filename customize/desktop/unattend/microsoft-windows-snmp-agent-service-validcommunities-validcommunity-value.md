@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) to the answer file.
 
- 
+ 
 
 You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
@@ -59,7 +59,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -113,9 +113,9 @@ The following XML sample output shows how to set SNMP.
 
 [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md)
 
- 
+ 
 
- 
+ 
 
 
 

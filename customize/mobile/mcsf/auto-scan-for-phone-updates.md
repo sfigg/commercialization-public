@@ -71,7 +71,7 @@ OEMs can show or hide the auto scan for updates setting on the device. When auto
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

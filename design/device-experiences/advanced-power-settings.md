@@ -30,9 +30,9 @@ In a modern standby system, the following power policies are displayed in the **
 -   Power buttons and lid switch
 -   Battery levels and actions
 
- 
+ 
 
- 
+ 
 
 
 

@@ -157,7 +157,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </tbody>
 </table>
 
- 
+
 
 ### Input devices
 
@@ -180,10 +180,10 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <p>All keys on the keyboard must generate a GPIO wake interrupt and cause the display to turn on (with the exception of volume buttons, which should not turn on the screen).</p>
 <p>If the keyboard exposes consumer control keys—such as volume up/down and brightness—these keys must also generate a GPIO wake interrupt.</p>
 <div class="alert">
-<strong>Note</strong>  If the keyboard is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the keyboard not wake the SoC in that mode.
+<strong>Note</strong>  If the keyboard is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the keyboard not wake the SoC in that mode.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -204,14 +204,13 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <td><p>Yes</p></td>
 <td><p>Moving a finger on the touchpad or exerting button activation force on the digitizer surface should cause a wake event.</p>
 <div class="alert">
-<strong>Note</strong>  
-<ul>
+<strong>Note</strong><br/><ul>
 <li>We recommend a precision touchpad wakes the SoC, though this is optional for either a precision touchpad or a non-precision touchpad.</li>
 <li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the touchpad not wake the SoC in that mode.</li>
 </ul>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -220,14 +219,13 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 <td><p>Yes</p></td>
 <td><p>Moving a finger on the touchpad or exerting button activation force on the digitizer surface should cause a wake event.</p>
 <div class="alert">
-<strong>Note</strong>  
-<ul>
+<strong>Note</strong><br/><ul>
 <li>We recommend a precision touchpad wakes the SoC, though this is optional for either a precision touchpad or a non-precision touchpad.</li>
 <li>If the touchpad is not visible to a user who is interacting with the display (as in a convertible tablet), we recommend that the touchpad not wake the SoC in that mode.</li>
 </ul>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -266,7 +264,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>Voice input ("Hey Cortana")</p></td>
+<td><p>Voice input (&quot;Hey Cortana&quot;)</p></td>
 <td><p>Yes, if the device is Wake on Voice-capable.</p></td>
 <td><p>Yes, if the device is Wake on Voice-capable and has a hardware keyword spotter. If the device has a software keyword spotter only, Wake on Voice will be turned off by default on DC power.</p></td>
 <td><p></p></td>
@@ -399,7 +397,7 @@ The Modern Standby PC must also respond in real-time to changes in environmental
 </tr>
 </tbody>
 </table>
-	
+
 
 **Note** When a device is on AC power, notifications of all priorities from UWP apps will be delivered. When a device is on DC power, high priority, medium priority, and low priority notifications from exempt UWP apps will be delivered. The priority level of different types of notifications is app-specific. For example, Inbox Mail app incoming mail notifications are low priority. For notifications that are delivered during Modern Standby, typically only toast notifications will turn on the display. Raw notifications could also turn on the display, depending on the type of payload they are delivering. For more information about UWP app notifications, please refer to [WNS Notification Priorities](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/wns-notification-priorities).
 
@@ -455,7 +453,7 @@ To configure location services settings and see which apps are using geofencing,
 </tbody>
 </table>
 
-**Note**  When the battery charge level crosses either the low or critical level, Windows briefly turns on the display to present a visual notification of the charge status to the user. This behavior is implemented in Windows and does not require additional firmware support.
+**Note**  When the battery charge level crosses either the low or critical level, Windows briefly turns on the display to present a visual notification of the charge status to the user. This behavior is implemented in Windows and does not require additional firmware support.
 
 
 ## Wakes SoC but **cannot** turn on display
@@ -542,7 +540,7 @@ To configure location services settings and see which apps are using geofencing,
 </table>
 
 
-**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the network. Examples include high priority notifications from lock-screen applications and VoIP calls.
+**Note**  Windows can turn on the display when an incoming critical alert or activity is detected over the network. Examples include high priority notifications from lock-screen applications and VoIP calls.
 
 
 ### Windows Update

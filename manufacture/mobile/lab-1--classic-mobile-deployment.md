@@ -23,9 +23,9 @@ In this section, we'll go through the process of customizing and building a mobi
 -   [Sign a mobile image](sign-a-mobile-image.md)
 -   [Flash an image to a mobile device](flash-an-image-to-a-mobile-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

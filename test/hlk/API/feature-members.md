@@ -38,33 +38,33 @@ The following tables list the members exposed by the **Feature** type.
 <td><p>Gets a collection of requirements associated with this feature.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Feature.Description Property](featuredescription-property.md)</p></td>
+<td><p><a href="featuredescription-property.md" data-raw-source="[Feature.Description Property](featuredescription-property.md)">Feature.Description Property</a></p></td>
 <td><p>This property represents the description of this feature.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Feature.FullName Property](featurefullname-property.md)</p></td>
+<td><p><a href="featurefullname-property.md" data-raw-source="[Feature.FullName Property](featurefullname-property.md)">Feature.FullName Property</a></p></td>
 <td><p>This property represents the full name and path of this feature.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Feature.ManuallyAdded Property](featuremanuallyadded-property.md)</p></td>
+<td><p><a href="featuremanuallyadded-property.md" data-raw-source="[Feature.ManuallyAdded Property](featuremanuallyadded-property.md)">Feature.ManuallyAdded Property</a></p></td>
 <td><p>This property represents a value indicating whether this feature was manually added.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Feature.Name Property](featurename-property.md)</p></td>
+<td><p><a href="featurename-property.md" data-raw-source="[Feature.Name Property](featurename-property.md)">Feature.Name Property</a></p></td>
 <td><p>This property represents the feature name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Feature.Query Property](featurequery-property.md)</p></td>
+<td><p><a href="featurequery-property.md" data-raw-source="[Feature.Query Property](featurequery-property.md)">Feature.Query Property</a></p></td>
 <td><p>This property represents the query used to determine the contents of this feature.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Feature.TargetType Property](featuretargettype-property.md)</p></td>
+<td><p><a href="featuretargettype-property.md" data-raw-source="[Feature.TargetType Property](featuretargettype-property.md)">Feature.TargetType Property</a></p></td>
 <td><p>This property represents the root type of the <strong>Feature</strong> object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -82,15 +82,15 @@ The following tables list the members exposed by the **Feature** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals](feature-equals-method.md)</p></td>
+<td><p><a href="feature-equals-method.md" data-raw-source="[Equals](feature-equals-method.md)">Equals</a></p></td>
 <td><p>Overrides the Equals function to provide value equality functionality for this object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetHashCode](feature-gethashcode-method.md)</p></td>
+<td><p><a href="feature-gethashcode-method.md" data-raw-source="[GetHashCode](feature-gethashcode-method.md)">GetHashCode</a></p></td>
 <td><p>Serves as a hash function for this feature.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetRequirements](featuregetrequirements-method.md)</p></td>
+<td><p><a href="featuregetrequirements-method.md" data-raw-source="[GetRequirements](featuregetrequirements-method.md)">GetRequirements</a></p></td>
 <td><p>This method retrieves the requirements associated with this feature.</p></td>
 </tr>
 <tr class="even">
@@ -104,7 +104,7 @@ The following tables list the members exposed by the **Feature** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -132,11 +132,11 @@ The following tables list the members exposed by the **Feature** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

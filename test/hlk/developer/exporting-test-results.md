@@ -16,7 +16,7 @@ ms.topic: article
 # Exporting Test Results
 
 
-Use the [Export(string outputLocation)](..\API\irunexport-export-method.md) method to export a result that can be run standalone to the specified location on the local file system. Before calling Export(), check the value of CanExport to determine whether the test result can be exported.
+Use the [Export(string outputLocation)](../API/irunexport-export-method.md) method to export a result that can be run standalone to the specified location on the local file system. Before calling Export(), check the value of CanExport to determine whether the test result can be exported.
 
 When you call **Export()**, the Windows Hardware Lab Kit (Windows HLK) verifies these items:
 
@@ -37,16 +37,16 @@ The output directory specified by the outputLocation parameter will be created i
 
 Exporting different tests to the same directory will succeed as long as the same test is not exported to the directory twice. The Infrastructure and readme1st directories will simply be overwritten if they already exist.
 
-For more information, including how to export a failed HLK job from within the HLK, see [Exporting a Failed HLK Job](..\user\exporting-a-failed-hlk-job.md).
+For more information, including how to export a failed HLK job from within the HLK, see [Exporting a Failed HLK Job](../user/exporting-a-failed-hlk-job.md).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[IRunExport Interface](..\API\irunexport-interface.md)
+[IRunExport Interface](../API/irunexport-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

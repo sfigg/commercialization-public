@@ -49,38 +49,38 @@ The following table describes the functions that this interface provides.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Add](add.md)</p></td>
+<td><p><a href="add.md" data-raw-source="[Add](add.md)">Add</a></p></td>
 <td><p>Adds a profile to the collection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Remove](remove.md)</p></td>
+<td><p><a href="remove.md" data-raw-source="[Remove](remove.md)">Remove</a></p></td>
 <td><p>Removes a profile from the collection.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Clear](clear.md)</p></td>
+<td><p><a href="clear.md" data-raw-source="[Clear](clear.md)">Clear</a></p></td>
 <td><p>Clears all profiles from the collection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IsEqual](isequal-iprofilecollection.md)</p></td>
+<td><p><a href="isequal-iprofilecollection.md" data-raw-source="[IsEqual](isequal-iprofilecollection.md)">IsEqual</a></p></td>
 <td><p>Compares two <strong>IProfileCollection</strong> objects to see whether they have matching profile properties.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LoadIntoXML](loadintoxml.md)</p></td>
+<td><p><a href="loadintoxml.md" data-raw-source="[LoadIntoXML](loadintoxml.md)">LoadIntoXML</a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

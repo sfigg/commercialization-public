@@ -52,7 +52,7 @@ Dism /Export-Image /SourceImageFile:c:\windows64-bit\install.wim /SourceIndex:1 
 **Note**  
 It is important to add the name of the Windows image to indicate that it is for 64-bit computers only.
 
- 
+ 
 
 The 64-bit Windows image and all accompanying metadata are copied to the Install.wim file to a new index during the export process. When you have added all Windows images to the Install.wim file, your Windows distribution is ready to be used in your environment.
 
@@ -67,9 +67,9 @@ In unattended installations, if you store multiple Windows editions for multiple
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

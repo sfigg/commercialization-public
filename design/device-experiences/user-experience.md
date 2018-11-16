@@ -78,11 +78,11 @@ System designers should model and predict the thermal characteristics of boot �
 
 **Note**  If a PC is too hot or too cold to boot, the PC should provide user feedback to give the user an opportunity to alleviate the problem and to try to boot again.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,7 +25,7 @@ For logo-certified Windows RT 8.1 and Windows RT PCs, Secure Boot is required 
 
 -   Be careful when changing BIOS settings. The BIOS menu is designed for advanced users, and it's possible to change a setting that could prevent your PC from starting correctly. Be sure to follow the manufacturer's instructions exactly.
 
- 
+ 
 
 ## <span id="disable_secure_boot"></span>Disable Secure Boot
 
@@ -76,9 +76,9 @@ For logo-certified Windows RT 8.1 and Windows RT PCs, Secure Boot is required 
 
 [Secure Boot isn't configured correctly: troubleshooting](secure-boot-isnt-configured-correctly-troubleshooting.md)
 
- 
+ 
 
- 
+ 
 
 
 

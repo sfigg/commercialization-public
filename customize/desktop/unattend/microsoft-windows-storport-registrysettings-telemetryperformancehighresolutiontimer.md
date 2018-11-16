@@ -40,7 +40,7 @@ Enables high resolution timer for hourly IO latency summaries in Storport event 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -63,9 +63,9 @@ oobeSystem
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-StorPort-RegistrySettings](microsoft-windows-storport-registrysettings.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -90,9 +90,9 @@ For more detailed setup and test instructions, see [How to measure Touch Panning
 
 -   If the test records an average panning latency of less than or equal to 70.0ms, the test will result in a pass.
 
- 
+ 
 
- 
+ 
 
 
 

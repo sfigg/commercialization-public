@@ -132,9 +132,9 @@ You can customize all configurable Windows power options by using the `powercfg`
 
 [Set the Default Power Plan](set-the-default-power-plan-technicalreference.md)
 
- 
+ 
 
- 
+ 
 
 
 

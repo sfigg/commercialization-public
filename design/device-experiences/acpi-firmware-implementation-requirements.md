@@ -74,7 +74,7 @@ The checklists in this article contain requirements that the ACPI platform firmw
 </tbody>
 </table>
 
- 
+ 
 
 ## Battery checklist
 
@@ -328,7 +328,7 @@ System designers should make sure that they have completed the items in the foll
 <tr class="even">
 <td><p></p>
 <ul>
-<li>Implement the _DSM method if the platform's thermal model requires control over the battery charging rate.</li>
+<li>Implement the _DSM method if the platform&#39;s thermal model requires control over the battery charging rate.</li>
 </ul></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
@@ -336,11 +336,11 @@ System designers should make sure that they have completed the items in the foll
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

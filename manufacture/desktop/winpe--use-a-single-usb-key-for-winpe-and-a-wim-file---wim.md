@@ -24,7 +24,7 @@ The default Windows Preinstallation Environment (WinPE) drive format, FAT32, is 
 
 Here's a few ways around these limitations:
 
-## <span id="Create_a_multiple_partition_USB_drive"></span>Option 1: Create a multiple partition USB drive
+## <span id="create-two-partition-drive"></span>Option 1: Create a multiple partition USB drive
 
 Starting with Windows 10, Version 1703, you can create multiple partitions on USB drives. To work with a USB drive with multiple partitions, both your technician PC and WinPE have to be Windows 10, Version 1703.
 

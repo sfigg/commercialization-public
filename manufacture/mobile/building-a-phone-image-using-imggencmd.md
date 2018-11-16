@@ -1,6 +1,6 @@
 ---
 title: Build a mobile image using ImgGen.cmd
-description: You can use ImgGen.cmd to generate an image for a Windows 10 Mobile device that is based on your own hardware design or if you're using MCSF customization answer files and other assets that were generated using the legacy tools that shipped in Windows Phone 8.1.
+description: You can use ImgGen.cmd to generate an image for a Windows 10 Mobile device that is based on your own hardware design or if you're using MCSF customization answer files and other assets that were generated using the legacy tools that shipped in Windows Phone 8.1.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,7 +15,7 @@ ms.topic: article
 # Build a mobile image using ImgGen.cmd
 
 
-You can use ImgGen.cmd to generate an image for a Windows 10 Mobile device that is based on your own hardware design or if you're using MCSF customization answer files and other assets that were generated using the legacy tools that shipped in Windows Phone 8.1.
+You can use ImgGen.cmd to generate an image for a Windows 10 Mobile device that is based on your own hardware design or if you're using MCSF customization answer files and other assets that were generated using the legacy tools that shipped in Windows Phone 8.1.
 
 Here's the high-level view of the steps you'll take to build an image using ImgGen.cmd:
 
@@ -37,9 +37,9 @@ Here's the high-level view of the steps you'll take to build an image using ImgG
 
 5.  Create an MCSF customization answer file. At minimum, specify the required device platform information and the information required for the mobile operator network. For more info, see [Customization answer file](https://msdn.microsoft.com/library/windows/hardware/dn757452) and [Phone metadata in DeviceTargetingInfo](https://msdn.microsoft.com/library/windows/hardware/dn772214).
 
-    **Note**  If you want to support multivariant settings in the answer file, the same set of conditions are supported in MCSF as in Windows provisioning. See the section *Target, TargetState, Condition and priorities* in [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108) for a list of supported conditions but be sure to follow the schema for a MCSF customization answer file when you specify your **Targets** in the answer file.
+    **Note**  If you want to support multivariant settings in the answer file, the same set of conditions are supported in MCSF as in Windows provisioning. See the section *Target, TargetState, Condition and priorities* in [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108) for a list of supported conditions but be sure to follow the schema for a MCSF customization answer file when you specify your **Targets** in the answer file.
 
-     
+
 
 6.  Run the ImgGen.cmd to build the image. For more info, see [Using ImgGen.cmd to generate the image](#usingimggen) below.
 
@@ -60,10 +60,10 @@ Before building an image, you must first identify all the packages you need for 
 
 -   **SoC vendor packages**. These include packages for drivers and firmware components implemented by the SoC vendor. For more info about these packages, refer to documentation provided by the SoC vendor.
 
-    **Note**  
+    **Note**  
     Several UEFI packages are required from the SoC vendor to create bootable images. These packages vary depending on the layout of the device and the SoC vendor. Most of the packages populate binary partitions on the device. For more info about creating binary partition packages to populate these partitions, see [Specifying components in a package project file](https://msdn.microsoft.com/library/windows/hardware/dn789218). The EFI system partition (ESP) is populated using Microsoft content and OEM content.
 
-     
+
 
 -   **OEM packages**. These are packages created by OEMs for content such as drivers and applications. For info about creating packages, see [Creating packages](creating-mobile-packages.md).
 
@@ -74,10 +74,10 @@ To define the image, you must create an *OEMInput* file. This is an XML file tha
 
 -   The type of image to generate. For example, you specify whether the image contains only Microsoft production packages or a mixture of production and test packages in the **ReleaseType** element, and you specify what screen resolution the image will support in the **Resolution** element.
 
-    **Note**  
+    **Note**  
     OEMs have some control over what Microsoft packages are included in the image by choosing different values for the **ReleaseType** element or by referencing Microsoft-defined features under the **Features** element. For more info, see [Specifying packages to include in images by using feature manifest files](#specifyingpackagestoinclude) later in this topic.
 
-     
+
 
 -   The OEM packages to include in the image. To specify which OEM packages are included in the image, create a *feature manifest* file and reference this in the OEMInput file. For more info, see [Specifying packages to include in images by using feature manifest files](#specifyingpackagestoinclude) later in this topic.
 
@@ -87,10 +87,10 @@ OEMs should use sample OEMInput files included with the MobileOS as the starting
 
 OEMs should contact the SoC vendor for the feature manifest files that are used for a specific device and include these in the OEMInput file.
 
-**Note**  
+**Note**  
 The OEMInput XML file supports explicit paths and environment variables. If you use environment variables in paths to packages and other files, the environment variables will be expanded when the OEMInput XML file is processed by the imaging tool. The sample files included with the MobileOS use the %WPDKCONTENTROOT% environment variable in some of the paths.
 
- 
+
 
 ### Image types
 
@@ -112,21 +112,21 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 <tbody>
 <tr class="odd">
 <td><p>Retail</p></td>
-<td><p>Retail images are the images that are flashed to final retail phones. Retail images must use Microsoft-signed packages that are returned to OEMs after submitting production images to Microsoft by using the OEM submission tool. For more info, see [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223).</p>
+<td><p>Retail images are the images that are flashed to final retail phones. Retail images must use Microsoft-signed packages that are returned to OEMs after submitting production images to Microsoft by using the OEM submission tool. For more info, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn789223" data-raw-source="[Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223)">Submit binaries to be retail signed</a>.</p>
 <p>Retail images include the following:</p>
 <ul>
-<li><p>Production version of core Windows components included in Windows 10 Mobile</p></li>
-<li><p>Production Windows 10 Mobile components.</p></li>
+<li><p>Production version of core Windows components included in Windows 10 Mobile</p></li>
+<li><p>Production Windows 10 Mobile components.</p></li>
 </ul></td>
 <td><p>RetailOEMInput.xml</p></td>
 </tr>
 <tr class="even">
 <td><p>Production</p></td>
-<td><p>Production images are similar to final retail images, but they have test signing enabled to run OEM-signed components as well as production-signed components, and they may contain test-related packages as well as production packages. Production images can be used for engineering work as well as mobile operator trials and other certification processes. Production images are submitted to Microsoft by using the OEM submission tool to be production signed by Microsoft before generating the final retail image. For more info, see [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223).</p>
+<td><p>Production images are similar to final retail images, but they have test signing enabled to run OEM-signed components as well as production-signed components, and they may contain test-related packages as well as production packages. Production images can be used for engineering work as well as mobile operator trials and other certification processes. Production images are submitted to Microsoft by using the OEM submission tool to be production signed by Microsoft before generating the final retail image. For more info, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn789223" data-raw-source="[Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223)">Submit binaries to be retail signed</a>.</p>
 <p>Production images include the following:</p>
 <ul>
-<li><p>Production version of core Windows components included in Windows 10 Mobile.</p></li>
-<li><p>Production Windows 10 Mobile components.</p></li>
+<li><p>Production version of core Windows components included in Windows 10 Mobile.</p></li>
+<li><p>Production Windows 10 Mobile components.</p></li>
 <li><p>Test signing enabled.</p></li>
 </ul></td>
 <td><p>ProductionOEMInput.xml</p></td>
@@ -135,17 +135,16 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 <td><p>Test</p></td>
 <td><p>Test images can be run in offsite test labs to test the functionality of the OS and drivers on a device. Test images include the following:</p>
 <ul>
-<li><p>Test version of core Windows components included in Windows 10 Mobile.</p></li>
-<li><p>Production Windows 10 Mobile components.</p></li>
+<li><p>Test version of core Windows components included in Windows 10 Mobile.</p></li>
+<li><p>Production Windows 10 Mobile components.</p></li>
 <li><p>Test signing enabled.</p></li>
 <li><p>Test applications, drivers, and other components to use for testing the OS in different conditions.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>To generate an image that includes OS tools such as ipconfig.exe, kill.exe, ping.exe, minshutdown.exe, reg.exe, tracelog.exe, sc.exe, and tlist.exe, build a test image.</p>
+<strong>Note</strong><br/><p>To generate an image that includes OS tools such as ipconfig.exe, kill.exe, ping.exe, minshutdown.exe, reg.exe, tracelog.exe, sc.exe, and tlist.exe, build a test image.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td><p>TestOEMInput.xml</p></td>
 </tr>
@@ -156,18 +155,18 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 </tr>
 <tr class="odd">
 <td><p>Manufacturing</p></td>
-<td><p>Manufacturing images to be used in the manufacturing environment. For more info, see [MMOS image definition](mmos-image-definition.md).</p></td>
+<td><p>Manufacturing images to be used in the manufacturing environment. For more info, see <a href="mmos-image-definition.md" data-raw-source="[MMOS image definition](mmos-image-definition.md)">MMOS image definition</a>.</p></td>
 <td><p>MfgOEMInput.xml</p></td>
 </tr>
 <tr class="even">
 <td><p>Customer care</p></td>
-<td><p>Customer care images include MMOS for retail customer care scenarios. For more info, see [MMOS image definition](mmos-image-definition.md).</p></td>
+<td><p>Customer care images include MMOS for retail customer care scenarios. For more info, see <a href="mmos-image-definition.md" data-raw-source="[MMOS image definition](mmos-image-definition.md)">MMOS image definition</a>.</p></td>
 <td><p>CustomerCareOEMInput.xml</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### OEMInput file example
 
@@ -285,7 +284,7 @@ To use ImgGen.cmd to generate an image:
         1.  Change the USN minimum size registry key by running the following command from an administrator command prompt:
 
             ```
-            reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem  /v NtfsAllowUsnMinSize1Mb  /t REG_DWORD  /d 1
+            reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem  /v NtfsAllowUsnMinSize1Mb  /t REG_DWORD  /d 1
             ```
 
         2.  Reboot the PC before you build an image.
@@ -335,7 +334,7 @@ The following table describes the command line parameters for ImgGen.cmd.
 </tbody>
 </table>
 
- 
+
 
 ### Usage samples
 
@@ -419,7 +418,7 @@ The following table describes the command line parameters for CustomizationGen.c
 </tbody>
 </table>
 
- 
+
 
 ## Large scale image generation recommendations
 
@@ -449,9 +448,9 @@ To generate a large volume of images, consider the following recommendations:
 
 [Sign a full flash update (FFU) image](sign-a-full-flash-update--ffu--image.md)
 
- 
 
- 
+
+
 
 
 

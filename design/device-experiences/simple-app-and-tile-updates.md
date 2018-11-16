@@ -30,11 +30,11 @@ For more information about background tasks, see [Launching, resuming, and backg
 
 **Note**  During modern standby, desktop applications cannot run and cannot access the network. System services have limited runtime, but no network access.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

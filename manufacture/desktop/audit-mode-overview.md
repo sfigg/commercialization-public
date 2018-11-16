@@ -28,7 +28,7 @@ When you boot to audit mode, you log into the system using the built-in administ
 -   Settings in an unattended answer file from the [oobeSystem](oobesystem.md) configuration pass do not appear in audit mode.
 
 -   If you're running scripts, installers, and diagnostic tools on Windows 10 S in Audit Mode, you may have to enable manufacturing mode for Windows 10 S. See [Manufacturing mode](windows-10-s-manufacturing-mode.md) for details.
- 
+ 
 
 ## <span id="Benefits_of_using_Audit_Mode"></span><span id="benefits_of_using_audit_mode"></span><span id="BENEFITS_OF_USING_AUDIT_MODE"></span>Benefits of using Audit Mode
 
@@ -62,14 +62,14 @@ The answer file you create will look similar to the following:
 ```
 <settings pass="auditUser">
 <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <RunAsynchronous>
-       <RunAsynchronousCommand wcm:action="add">
-          <Description>Show Desktop</Description>
-          <Order>1</Order>
-          <Path>cmd.exe /c %WINDIR%\System32\oobe\AuditShD.exe</Path>
-       </RunAsynchronousCommand>
-    </RunAsynchronous>
-  </component>
+    <RunAsynchronous>
+       <RunAsynchronousCommand wcm:action="add">
+          <Description>Show Desktop</Description>
+          <Order>1</Order>
+          <Path>cmd.exe /c %WINDIR%\System32\oobe\AuditShD.exe</Path>
+       </RunAsynchronousCommand>
+    </RunAsynchronous>
+  </component>
 </settings> 
 ```
 
@@ -94,9 +94,9 @@ Before a Windows PC is shipped to a customer, it must be configured to boot to t
 
 [Windows 10 S manufacturing mode](windows-10-s-manufacturing-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

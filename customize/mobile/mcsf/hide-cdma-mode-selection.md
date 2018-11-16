@@ -31,56 +31,58 @@ This customization supports: **per-IMSI** value, **per-device** value
                          Description="Use to hide or show the 'CDMA' option in the network 'Mode' selection drop-down that appears in the cellular settings screen."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
 
-    <!-- Use for the per-IMSI case 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
-     
-        <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
-          <!-- Hides or shows the 'CDMA' option in the network mode selection screen. Set to 0 or 'No' (to show) or set to 1 or 'Yes' (to hide). -->
-          <Setting Name="Hide3GPP2ModeSelection" Value="" />    
-        </Settings>  
-      </Variant>
+~~~
+<!-- Use for the per-IMSI case 
 
-    -->
+  <!-- Define the Targets --> 
+  <Targets>
+     <Target Id="">
+        <TargetState>
+           <Condition Name="" Value="" />
+           <Condition Name="" Value="" />
+        </TargetState>
+     </Target>
+  </Targets>
 
-    <!-- Use for the per-device case
+  <Static>
+    <Settings Path="Multivariant">
+      <Setting Name="Enable" Value="1" />
+    </Settings>
+    <Settings Path="AutoDataConfig">
+      <Setting Name="Enable" Value="0" />
+    </Settings>
+  </Static>
 
-      <Static>  
-         <Settings Path="CellCore/PerDevice/CellUX">  
-          <!-- Hides or shows the 'CDMA' option in the network mode selection screen. Set to 0 or 'No' (to show) or set to 1 or 'Yes' (to hide). -->
-          <Setting Name="Hide3GPP2ModeSelection" Value="" />   
-        </Settings>  
-      </Static>
+  <!-- Specify the Variant -->
+  <Variant Name=""> 
+    <TargetRefs>
+      <TargetRef Id="" /> 
+    </TargetRefs>
 
-    -->
+    <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
+      <!-- Hides or shows the 'CDMA' option in the network mode selection screen. Set to 0 or 'No' (to show) or set to 1 or 'Yes' (to hide). -->
+      <Setting Name="Hide3GPP2ModeSelection" Value="" />    
+    </Settings>  
+  </Variant>
 
-    </ImageCustomizations>
-    ```
+-->
+
+<!-- Use for the per-device case
+
+  <Static>  
+     <Settings Path="CellCore/PerDevice/CellUX">  
+      <!-- Hides or shows the 'CDMA' option in the network mode selection screen. Set to 0 or 'No' (to show) or set to 1 or 'Yes' (to hide). -->
+      <Setting Name="Hide3GPP2ModeSelection" Value="" />   
+    </Settings>  
+  </Static>
+
+-->
+
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
@@ -117,9 +119,11 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
 
-    The default for this setting is to show the **CDMA** option in the **Mode** selection drop-down that appears in the **Cellular & SIM** settings screen.
+
+~~~
+The default for this setting is to show the **CDMA** option in the **Mode** selection drop-down that appears in the **Cellular & SIM** settings screen.
+~~~
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

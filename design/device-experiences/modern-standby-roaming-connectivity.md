@@ -37,14 +37,14 @@ If connectivity to the associated Wi-Fi network is lost, the Wi-Fi device period
 
 Start testing Wi-Fi roaming by setting up two Wi-Fi networks (A and B) with public Internet connections. Each Wi-Fi network should have a different SSID and be sufficiently distant so that the system cannot see both networks at the same time. Manually move the system near each Wi-Fi access point and connect to each network for a few minutes with the screen on and validate that Internet connectivity is functional. After the system has been demonstrated to connect to each Wi-Fi network reliably, you can start testing Wi-Fi roaming in modern standby.
 
--   **Test area:**Wi-Fi roaming operation during modern standby.
--   **Purpose:**Ensure that the system will automatically connect to previously used Wi-Fi networks during modern standby as the user moves the system between home, work, and coffee shops.
--   **System configuration:**
-    -   Factory image is installed on the system.
-    -   All drivers are loaded in Device Manager.
-    -   Factory Microsoft Store apps are installed.
-    -   System is running on battery power.
-    -   Wi-Fi connectivity is validated to work by connecting to the Internet while the screen is turned on.
+- <strong>Test area:</strong>Wi-Fi roaming operation during modern standby.
+- <strong>Purpose:</strong>Ensure that the system will automatically connect to previously used Wi-Fi networks during modern standby as the user moves the system between home, work, and coffee shops.
+- **System configuration:**
+  -   Factory image is installed on the system.
+  -   All drivers are loaded in Device Manager.
+  -   Factory Microsoft Store apps are installed.
+  -   System is running on battery power.
+  -   Wi-Fi connectivity is validated to work by connecting to the Internet while the screen is turned on.
 
 <table>
 <colgroup>
@@ -75,7 +75,7 @@ Start testing Wi-Fi roaming by setting up two Wi-Fi networks (A and B) with publ
 </tbody>
 </table>
 
- 
+ 
 
 The test engineer for Wi-Fi roaming should build a close working relationship with the Wi-Fi vendor's support staff. Errors in this test should first be discussed with the Wi-Fi firmware developer.
 
@@ -96,14 +96,14 @@ Start the Wi-Fi to MBB failover testing by confirming that the system is connect
 
 Next, put the system in modern standby with both Wi-Fi and MBB radios turned on and the system connected to the Wi-Fi network. Use a Wi-Fi connection to test push mail and Skype during modern standby. While the system under test remains in modern standby, power down the Wi-Fi access point and wait a few minutes for the system to connect to the cellular network. After a few minutes, re-test push mail and Skype calls to validate that Windows automatically connected to the cellular network and re-established connectivity.
 
--   **Test area:**Wi-Fi to MBB transitions during modern standby.
--   **Purpose:**Ensure that the system automatically connects to Wi-Fi or MBB during modern standby.
--   **System configuration:**
-    -   Factory image installed on the system.
-    -   All drivers loaded in Device Manager.
-    -   Factory Microsoft Store apps are installed.
-    -   System is running on battery power.
-    -   Wi-Fi and MBB are validated to function correctly with the screen on and manually configured connections to each network.
+- <strong>Test area:</strong>Wi-Fi to MBB transitions during modern standby.
+- <strong>Purpose:</strong>Ensure that the system automatically connects to Wi-Fi or MBB during modern standby.
+- **System configuration:**
+  -   Factory image installed on the system.
+  -   All drivers loaded in Device Manager.
+  -   Factory Microsoft Store apps are installed.
+  -   System is running on battery power.
+  -   Wi-Fi and MBB are validated to function correctly with the screen on and manually configured connections to each network.
 
 <table>
 <colgroup>
@@ -122,16 +122,16 @@ Next, put the system in modern standby with both Wi-Fi and MBB radios turned on 
 <tr class="odd">
 <td><p>System can receive IM notifications during modern standby.</p></td>
 <td><p>Ensure that all IMs received during modern standby are accompanied by sound notifications, while the display remains powered off. When the system wakes from modern standby, check that all IM messages have been received and that the badge on the lock screen is updated appropriately.</p></td>
-<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md) for information on how to capture a trace and analyze the information.</p></td>
+<td><p>If a notification is not received, a trace is needed to diagnose the problem. See <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a> for information on how to capture a trace and analyze the information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

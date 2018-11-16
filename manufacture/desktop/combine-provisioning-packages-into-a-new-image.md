@@ -75,9 +75,9 @@ First, plug the USB key with ScanState into the reference device.
 
     The Sysprep tool reseals the device. This process can take several minutes. After the process completes, the device shuts down automatically. You can now send the device to the customer.
 
- 
+ 
 
- 
+ 
 
 
 

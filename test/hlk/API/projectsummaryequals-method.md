@@ -42,7 +42,7 @@ This method compares two **ProjectSummary** instances.
 
 `Public Function Equals ( _`
 
-          `otherProjectSummary As ProjectSummary _`
+          `otherProjectSummary As ProjectSummary _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **ProjectSummary** instances.
 
 `public bool Equals (`
 
-          `ProjectSummary otherProjectSummary`
+          `ProjectSummary otherProjectSummary`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **ProjectSummary** instances.
 
 *otherProjectSummary*
 
-     The **ProjectSummary** object to compare against this **ProjectSummary** object.
+     The **ProjectSummary** object to compare against this **ProjectSummary** object.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **Boolean**, which has a value of **true** if the two objects are equal,
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,19 +31,19 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>name</em></p></td>
-<td><p>Specifies the name of the computer. If you do not specify a name and the [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) setting is present, this setting is ignored. The <em>name</em> value is a string with a maximum length of 15 characters.</p></td>
+<td><p>Specifies the name of the computer. If you do not specify a name and the <a href="microsoft-windows-deployment-auditcomputername-mustreboot.md" data-raw-source="[MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md)">MustReboot</a> setting is present, this setting is ignored. The <em>name</em> value is a string with a maximum length of 15 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If you do not specify this setting, the existing computer name is preserved.
 
 If you specify a new computer name, you might have to restart the computer for it to take effect. If additional processing is dependent on the new computer name, set the [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) value to **true** to restart the computer immediately.
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -86,9 +86,9 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [AuditComputerName](microsoft-windows-deployment-auditcomputername.md)
 
- 
+ 
 
- 
+ 
 
 
 

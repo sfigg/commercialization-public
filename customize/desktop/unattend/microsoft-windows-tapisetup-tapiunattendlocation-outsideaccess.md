@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -79,9 +79,9 @@ The following XML output shows how to set the location from which you are callin
 
 [TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md)
 
- 
+ 
 
- 
+ 
 
 
 

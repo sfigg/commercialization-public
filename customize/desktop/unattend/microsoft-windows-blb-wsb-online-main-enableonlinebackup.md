@@ -43,7 +43,7 @@ By default, the Windows Server Backup menus show a recommended online backup ser
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -76,9 +76,9 @@ The following XML output shows how to specify that no recommendations for online
 
 [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
- 
+ 
 
- 
+ 
 
 
 

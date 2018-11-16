@@ -206,9 +206,9 @@ To add the resource .dll files to a phone image and access localized strings in 
 
     This particular example shows how to access string 101 (as specified in the `Value` field of the string table) for an additional alarm sound.
 
- 
+ 
 
- 
+ 
 
 
 

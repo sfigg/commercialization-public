@@ -53,19 +53,19 @@ The following table lists Sysprep command-line options:
 <td align="left"><p><strong>/audit</strong></p></td>
 <td align="left"><p>Restarts the computer into audit mode. Audit mode enables you to add additional drivers or applications to Windows. You can also test an installation of Windows before you send the installation to an end user. For example:</p>
 <pre class="syntax" space="preserve"><code>Sysprep /audit</code></pre>
-<p>If you specify an answer file, the audit mode of Windows Setup runs the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes.</p></td>
+<p>If you specify an answer file, the audit mode of Windows Setup runs the <a href="auditsystem.md" data-raw-source="[auditSystem](auditsystem.md)">auditSystem</a> and <a href="audituser.md" data-raw-source="[auditUser](audituser.md)">auditUser</a> configuration passes.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/generalize</strong></p></td>
 <td align="left"><p>Prepares the Windows installation to be imaged. Sysprep removes all unique system information from the Windows installation. Sysprep resets the security ID (SID), clears any system restore points, and deletes event logs. For example:</p>
 <pre class="syntax" space="preserve"><code>Sysprep /generalize /shutdown</code></pre>
-<p>The next time that the computer starts, the [specialize](specialize.md) configuration pass runs. The configuration pass creates a new security ID (SID).</p></td>
+<p>The next time that the computer starts, the <a href="specialize.md" data-raw-source="[specialize](specialize.md)">specialize</a> configuration pass runs. The configuration pass creates a new security ID (SID).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/oobe</strong></p></td>
 <td align="left"><p>Restarts the computer into OOBE mode. For example:</p>
 <pre class="syntax" space="preserve"><code>Sysprep /generalize /shutdown /oobe</code></pre>
-<p>OOBE enables end users to customize their Windows operating system, create user accounts, name the computer, and perform other tasks. Sysprep processes any settings in the [oobeSystem](oobesystem.md) configuration pass in an answer file before OOBE starts.</p></td>
+<p>OOBE enables end users to customize their Windows operating system, create user accounts, name the computer, and perform other tasks. Sysprep processes any settings in the <a href="oobesystem.md" data-raw-source="[oobeSystem](oobesystem.md)">oobeSystem</a> configuration pass in an answer file before OOBE starts.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mode:vm</strong></p></td>
@@ -73,11 +73,10 @@ The following table lists Sysprep command-line options:
 <pre class="syntax" space="preserve"><code>Sysprep /generalize /oobe /mode:vm</code></pre>
 <p>The only additional switches that apply to VM mode are <strong>/reboot</strong>, <strong>/shutdown</strong>, and <strong>/quit</strong>.You must deploy the VHD on a Virtual Machine (VM) or hypervisor with the same hardware profile. For example, if you created VHD in Microsoft Hyper-V, you can only deploy your VHD to Microsoft Hyper-V VMs with a matching hardware profile. Deploying the VHD to a different VM with a different hardware profile might cause unexpected issues.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>You can only run VM mode from inside a VM.</p>
+<strong>Important</strong><br/><p>You can only run VM mode from inside a VM.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -105,12 +104,12 @@ The following table lists Sysprep command-line options:
 </tbody>
 </table>
 
- 
 
-**Important**  
+
+**Important**  
 You must use the **Sysprep /generalize** command to generalize a complete Windows installation before you can use the installation for deployment to a new computer, whether you use imaging, hard disk duplication, or another method. Moving or copying a Windows image to a different computer without running the **Sysprep /generalize** command is not supported.
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
@@ -125,9 +124,9 @@ You must use the **Sysprep /generalize** command to generalize a complete Window
 
 [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md)
 
- 
 
- 
+
+
 
 
 

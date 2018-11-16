@@ -34,9 +34,9 @@ ms.topic: article
 -   [Device Orientation Quaternion Vector Algorithm](device-orientation-quaternion-vector-algorithm.md)
 -   [Global Navigation Satellite System (GNSS) Test Guidance](global-navigation-satellite-system--gnss--test-guidance.md)
 
- 
+ 
 
- 
+ 
 
 
 

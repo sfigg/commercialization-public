@@ -70,7 +70,7 @@ By default, when a user calls the voicemail number, the number dialed is display
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone that has a UICC or SIM.

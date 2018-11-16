@@ -34,11 +34,11 @@ From the computer on which you installed the debugger, follow these steps:
 
 You can also configure the kernel crash dump collection setting in HLK Studio. This setting will force a setting of the kernel dump type on the client system when a crash occurs. When a crashed occurs, HLK will copy back the dump file and associate it with the underlying test.
 
->[!NOTE]
->  
-System and UMDF crash dump are not collected by default. You must enable this feature for each machine pool, and you must choose one of three dump types, which are *Mini*, *Kernel*, and *Full*. If server disk size is not an issue, we recommend that you use Full dumps. For more information about dump types, see [Varieties of Kernel-Mode Dump Files](http://go.microsoft.com/fwlink/p/?linkid=313314).
+> [!NOTE]
+> 
+> System and UMDF crash dump are not collected by default. You must enable this feature for each machine pool, and you must choose one of three dump types, which are *Mini*, *Kernel*, and *Full*. If server disk size is not an issue, we recommend that you use Full dumps. For more information about dump types, see [Varieties of Kernel-Mode Dump Files](http://go.microsoft.com/fwlink/p/?linkid=313314).
 
- 
+ 
 
 The steps to configure this setting are as follows:
 
@@ -62,9 +62,9 @@ The steps to configure this setting are as follows:
 
 The crash dump collection setting is set on all machines in the specified machine pool, but it is not set for machines in any child machine pools. If you select **Disable**, the machine's crash dump settings will persist on the client machine, but the crash dump collection for Windows HLK is disabled.
 
- 
+ 
 
- 
+ 
 
 
 

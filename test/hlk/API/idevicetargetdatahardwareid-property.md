@@ -59,9 +59,9 @@ Hardware IDs are returned in a particular order. The order is determined by the 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,10 +20,10 @@ ms.topic: article
 
 `ClusterMacAddress` specifies the cluster MAC address to be used when configuring a unicast cluster. This MAC address will replace the adapter's physical MAC address.
 
-**Note**  
-To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
+**Note**  
+To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
- 
+
 
 ## Values
 
@@ -36,19 +36,18 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <tbody>
 <tr class="odd">
 <td><p><em>ClusterMacAddress</em></p></td>
-<td><p>Specifies the cluster MAC address be used when configuring a unicast cluster. This MAC address will replace the adapter's physical MAC address.</p>
+<td><p>Specifies the cluster MAC address be used when configuring a unicast cluster. This MAC address will replace the adapter&#39;s physical MAC address.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>You must set [ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteriptoclustermacenabled.md) to <strong>False</strong> for this setting to work. If it is set to <strong>True</strong>, the cluster MAC address is automatically generated based on the cluster IP address.</p>
+<strong>Note</strong><br/><p>You must set <a href="microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteriptoclustermacenabled.md" data-raw-source="[ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteriptoclustermacenabled.md)">ClusterIpToClusterMacEnabled</a> to <strong>False</strong> for this setting to work. If it is set to <strong>True</strong>, the cluster MAC address is automatically generated based on the cluster IP address.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -81,9 +80,9 @@ The following XML output shows how to specify a cluster MAC address.
 
 [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)
 
- 
 
- 
+
+
 
 
 

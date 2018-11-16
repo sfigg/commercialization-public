@@ -112,7 +112,7 @@ Here are some common acronyms that might come in handy.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="General_manufacturing_guidance"></span><span id="general_manufacturing_guidance"></span><span id="GENERAL_MANUFACTURING_GUIDANCE"></span>General manufacturing guidance
 
@@ -256,7 +256,7 @@ Test area by manufacturing phase is provided only as an example; each manufactur
 </tbody>
 </table>
 
- 
+ 
 
 **Device testing**
 
@@ -310,7 +310,7 @@ Test area by manufacturing phase is provided only as an example; each manufactur
 </tbody>
 </table>
 
- 
+ 
 
 **Device provisioning**
 
@@ -340,11 +340,11 @@ Test area by manufacturing phase is provided only as an example; each manufactur
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

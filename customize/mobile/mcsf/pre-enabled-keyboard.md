@@ -74,7 +74,7 @@ The following table shows the values that you can use for the *$(InputMethodId)*
 **Note**  
 The keyboards for some locales require additional language model files. To pre-enable the keyboards for the following locales, OEMs must include corresponding locales in the *Keyboard* section described in [Text correction and suggestions](text-correction-and-suggestions.md): am-ET, bn-IN, gu-IN, hi-IN, ja-JP, kn-IN, ko-KR, ml-IN, mr-IN, my-MM, or-IN, pa-IN, si-LK, ta-IN, te-IN, zh-TW, zh-CN, and zh-HK.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -888,7 +888,7 @@ The keyboards for some locales require additional language model files. To pre-e
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="testing-steps-"></a>**Testing Steps:**  
 1.  Flash the build containing this customization to a device.

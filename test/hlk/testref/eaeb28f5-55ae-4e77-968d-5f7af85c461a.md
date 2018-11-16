@@ -36,6 +36,7 @@ The tests estimate key video quality metrics in the following areas:
 -   Timing
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM</li></ul> |  
@@ -48,7 +49,7 @@ The tests estimate key video quality metrics in the following areas:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -74,35 +75,35 @@ Watch the following video demonstration.
 
 The following additional test equipment is required to run the video tests:
 
-1.  Video test chart:
+1. Video test chart:
 
-    -   xRite ColorChecker chart. See *Figure 1. Video Test Chart*.
+   - xRite ColorChecker chart. See *Figure 1. Video Test Chart*.
 
-    -   National Institute of Standards and Technology (NIST) calibrated lux meter (for example, INS DX-100). You should calibrate the lux meter anually.
+   - National Institute of Standards and Technology (NIST) calibrated lux meter (for example, INS DX-100). You should calibrate the lux meter anually.
 
-    -   Printout of the test chart (that is shown in *REF \_Ref311027164 \\h Figure 1. Video Test Chart*), on matte paper by using a high quality inkjet (for example, an HP Z2100). You can access and print this high resolution PDF test chart from: [http://download.microsoft.com/download/8/0/0/80080840-64DC-4929-9B67-16B83E946C6B/HLK Video Test Chart.pdf](http://download.microsoft.com/download/8/0/0/80080840-64DC-4929-9B67-16B83E946C6B/HLK Video Test Chart.pdf).
+   - Printout of the test chart (that is shown in *REF \_Ref311027164 \\h Figure 1. Video Test Chart*), on matte paper by using a high quality inkjet (for example, an HP Z2100). You can access and print this high resolution PDF test chart from: [<http://download.microsoft.com/download/8/0/0/80080840-64DC-4929-9B67-16B83E946C6B/HLK> Video Test Chart.pdf](<http://download.microsoft.com/download/8/0/0/80080840-64DC-4929-9B67-16B83E946C6B/HLK> Video Test Chart.pdf).
 
-        ![example test poster](images/hck-winb-figure1-testposter.jpg)
+     ![example test poster](images/hck-winb-figure1-testposter.jpg)
 
-    -   After you print the test chart, mount the color checker and the light meter. The light meter sensor and display should both be mounted and in the field of view. This allows you to measure light levels at test time and to validate light levels by reading the display from captured images.
+   - After you print the test chart, mount the color checker and the light meter. The light meter sensor and display should both be mounted and in the field of view. This allows you to measure light levels at test time and to validate light levels by reading the display from captured images.
 
-2.  Dimmable lights
+2. Dimmable lights
 
-    -   Two impact light stands. Any type is acceptable as long as they allow for the positioning that is described in this topic.
+   -   Two impact light stands. Any type is acceptable as long as they allow for the positioning that is described in this topic.
 
-    -   Two light mounts that have reflectors; for example, an Impact 5" Reflector Floodlight Kit.
+   -   Two light mounts that have reflectors; for example, an Impact 5" Reflector Floodlight Kit.
 
-    -   INSTEON Plug-In Lamp Dimmer Module. Any type is acceptable as long as it has two plugs so that you can control two lights simultaneously (with equal lighting), and the granularity of adjustment to achieve the target 80 & 20 lux (+/- 10%).
+   -   INSTEON Plug-In Lamp Dimmer Module. Any type is acceptable as long as it has two plugs so that you can control two lights simultaneously (with equal lighting), and the granularity of adjustment to achieve the target 80 & 20 lux (+/- 10%).
 
-    -   INSTEON Wireless Keypad RemoteLinc 2 (optional).
+   -   INSTEON Wireless Keypad RemoteLinc 2 (optional).
 
-    -   3-to-1 extension cord. Any type is acceptable as long as it can connect to the Insteon dimmer module.
+   -   3-to-1 extension cord. Any type is acceptable as long as it can connect to the Insteon dimmer module.
 
-    -   Two units [Philips 424382 11-Watt A19 LED Light Bulb, Dimmable](http://www.amazon.com/Philips-424382-11-watt-Household-Dimmable/dp/B00APTS03K)
+   -   Two units [Philips 424382 11-Watt A19 LED Light Bulb, Dimmable](http://www.amazon.com/Philips-424382-11-watt-Household-Dimmable/dp/B00APTS03K)
 
-    An example DUT and lighting configuration is shown in *REF \_Ref311027182 \\h Figure 2. Video Test Setup*. The lighting that is used in this example is A19 LED-lighting at 20 and 80 lux on the test target.
+   An example DUT and lighting configuration is shown in *REF \_Ref311027182 \\h Figure 2. Video Test Setup*. The lighting that is used in this example is A19 LED-lighting at 20 and 80 lux on the test target.
 
-    ![video test setup](images/fig2-videotestsetup-webcamcapturerequirementstest.jpg)
+   ![video test setup](images/fig2-videotestsetup-webcamcapturerequirementstest.jpg)
 
 **To run the video capture test**
 
@@ -125,7 +126,7 @@ The following additional test equipment is required to run the video tests:
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Streaming Testing](troubleshooting-devicestreaming-testing.md).
 
@@ -144,20 +145,20 @@ For troubleshooting information, see [Troubleshooting Device.Streaming Testing](
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Setup: test can't find Region of Interest (ROI)</p></td>
+<td><p>Setup: test can&#39;t find Region of Interest (ROI)</p></td>
 <td><p>The test looks for Region of Interest (ROI) markers (black and white circles) at known locations on the test. If the test cannot identify ROI markers, then the test cannot run properly. Failure to detect ROI might be due to a poorly aimed camera or unusable video capture from the camera (for example, too dark).</p>
 <p>If preview window is not a usable video (for example, 100% gray image due to failed capture, or too dark), exit the test and verify the camera functionality with an independent camera application under test lighting conditions (for example, AMCap) before proceeding.</p>
 <p>If the preview window provides a usable image that has clearly recognizable ROI markers, reposition the camera according to the test procedure conditions.</p></td>
 </tr>
 <tr class="even">
-<td><p>Setup: Region of Interest doesn't fit within field of view of camera</p></td>
+<td><p>Setup: Region of Interest doesn&#39;t fit within field of view of camera</p></td>
 <td><p>The test looks for ROI markers at known locations on the test. If the test cannot identify ROI markers, then the test cannot run properly.</p>
 <p>You might need to position smaller field of view cameras (for example, rear facing cameras) farther than 0.5 m from the test target to capture the required ROI.Reposition the camera according to the test procedure and verify that the camera provides a usable image under test lighting conditions. To avoid an inaccurate measurement for the field of view requirement, enter the new distance into the test application.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Troubleshooting_position_problems"></span><span id="troubleshooting_position_problems"></span><span id="TROUBLESHOOTING_POSITION_PROBLEMS"></span>Troubleshooting position problems
 
@@ -195,11 +196,11 @@ In *Figure 4. Position Not Level*, position markers form a rectangle that is rot
 | **WDKDeviceID**                 | Device id of DUT                                                     |
 | **DriverVerifierExcludedFlags** | Driver Verifier flags that may be manually excluded for the test run |
 
- 
 
- 
 
- 
+
+
+
 
 
 

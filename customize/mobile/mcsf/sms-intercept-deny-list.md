@@ -121,7 +121,7 @@ The following examples show the results for the string match based on the preced
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-SIM** value

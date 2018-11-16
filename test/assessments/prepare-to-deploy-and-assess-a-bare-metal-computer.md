@@ -90,7 +90,7 @@ To inventory bare metal computers, you must create a bootable USB drive to start
 **Important**  
 To inventory x86-based test computers, you must use an x86-based Windows PE image. To inventory AMD64-based test computers, you must use an AMD64-based Windows PE image. This procedure uses an x86-based image. If your test computers are both x86 and AMD64 based, create a USB flash drive for each architecture.
 
- 
+ 
 
 **To replace the boot.wim file with the Windows AS WinPE.wim file**
 
@@ -109,7 +109,7 @@ To inventory x86-based test computers, you must use an x86-based Windows PE ima
     **Important**  
     To inventory x86-based test computers, you must use an x86-based Windows PE image. To inventory AMD64-based test computers, you must use an AMD64-based Windows PE image.
 
-     
+     
 
 Now that the bootable Windows PE USB flash drive is prepared and NIC drivers are in place, you can add assets such as computers, images and answer files to the Windows Assessment Services inventory and then include the assets in your projects and jobs.
 
@@ -121,7 +121,7 @@ You can add bare-metal computers (computers without a running operating system) 
 **Warning**  
 You shouldn't include a test computer in multiple Windows Assessment Services server inventories at the same time. When a test computer appears in multiple Windows Assessment Services server inventories, it causes a race condition between the Windows Deployment Services instances on each server. If you must move a test computer from one inventory to another, in the Windows Assessment Services - Client (Windows ASC), delete the computer asset from the first Windows Assessment Services inventory, and then add it to the inventory on the new Windows Assessment Services server.
 
- 
+ 
 
 **To add bare-metal computers to your inventory**
 
@@ -144,7 +144,7 @@ You shouldn't include a test computer in multiple Windows Assessment Services se
     **Note**  
     If you deploy images by using Windows Assessment Services, we recommend setting the boot order in BIOS so that Preboot Execution Environment (PXE) is first in the boot order. This way, you don't have to manually press the boot-order keyboard shortcut and select network boot before a job starts.
 
-     
+     
 
 5.  Open the Windows ASC from the **Start** menu. On the **Getting Started** page, verify that the correct number of computers have been added to your server inventory.
 
@@ -160,7 +160,7 @@ You must copy the Windows imaging (.wim) files to the image share before you imp
     **Note**  
     The image path cannot contain spaces.
 
-     
+     
 
 2.  These images are in the Windows Assessment Services server image share, but they haven't been imported into the inventory database. To import the images into the inventory database, use one of these methods:
 
@@ -179,7 +179,7 @@ You must copy the Windows imaging (.wim) files to the image share before you imp
     **Important**  
     When deploying an image to an OEM Activation 3.0 (OA 3.0) system, use a custom unattend.xml answer file with a product key that is associated with the image.
 
-     
+     
 
 ## <a href="" id="bkmk-assetproject"></a>Adding assets to a project
 
@@ -205,7 +205,7 @@ When multiple people are working with different test computers and images in the
     **Note**  
     If your test computers already have a running operating system, you don't have to add images to the project.
 
-     
+     
 
 ## <a href="" id="bkmk-assetjob"></a>Adding assets to a job
 
@@ -229,7 +229,7 @@ A job associates assets (a computer and a Windows image) with assessments. A job
     **Note**  
     The computer and the image architecture must match, except that you can select an x86-based image to deploy to an x64-based computer.
 
-     
+     
 
 ## Next steps
 
@@ -241,9 +241,9 @@ In these steps, you prepared the Windows PE boot environment, booted a bare meta
 
 [Windows Assessment Services common scenarios](windows-assessment-services-how-to-topics--wastechref.md)
 
- 
+ 
 
- 
+ 
 
 
 

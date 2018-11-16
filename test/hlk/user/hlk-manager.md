@@ -20,9 +20,9 @@ The HLK Manager provides additional test management functionality not supported 
 
 ![windows hlk manager](images/hlk-win8-manager.png)
 
- 
+ 
 
- 
+ 
 
 
 

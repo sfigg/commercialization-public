@@ -75,7 +75,7 @@ To remove the policy, do the following:
 
 3.  Run DeleteKitsPolicy.cmd. This will reboot the device.
 
- 
+ 
 
 ### Recommendations
 
@@ -88,7 +88,7 @@ Before you begin, configure the settings on the portable computer to reduce the 
     **Note**  
     If wireless connectivity is on, but there is no network to connect to, results are still affected.
 
-     
+     
 
 -   Install and enable antivirus software. If antivirus software isn't enabled and running, the results might not reflect realistic scenarios.
 
@@ -150,7 +150,7 @@ The following table describes the workloads that are available for this assessme
 </tbody>
 </table>
 
- 
+ 
 
 ## Settings
 
@@ -186,11 +186,11 @@ The following table describes the Connected Standby energy efficiency assessment
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

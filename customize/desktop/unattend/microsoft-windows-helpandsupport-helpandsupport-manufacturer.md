@@ -23,7 +23,7 @@ In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpan
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
- 
+ 
 
 `Manufacturer` specifies the name of the Original Equipment Manufacturer (OEM).
 
@@ -43,7 +43,7 @@ For more information on how OEMs can include their customer support contact info
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -80,9 +80,9 @@ The following example shows how to set a customized **Help and Support** home pa
 
 [Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md)
 
- 
+ 
 
- 
+ 
 
 
 

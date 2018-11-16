@@ -42,12 +42,12 @@ You only need to specify this setting if the language that [UILanguage](microsof
 <td><p>Specifies the language of the UI for resources that have not been localized into the system-preferred language.</p>
 <p>The <em>Language_fallback</em> string is based on the language-tagging conventions of RFC 3066. The pattern <em>language</em>-<em>region</em> is used, where <em>language</em> is a language code and <em>region</em> is a country or region identifier (for example, <strong>en-US</strong>, <strong>fr-FR</strong>, or <strong>es-ES</strong>).</p>
 <p>This value is not case-sensitive.</p>
-<p>For a list of supported languages, locales, and identifiers, see [Available Language Packs](http://go.microsoft.com/fwlink/p/?linkid=200318).</p></td>
+<p>For a list of supported languages, locales, and identifiers, see <a href="http://go.microsoft.com/fwlink/p/?linkid=200318" data-raw-source="[Available Language Packs](http://go.microsoft.com/fwlink/p/?linkid=200318)">Available Language Packs</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -86,9 +86,9 @@ The following example shows how to set the fallback language to US English (Unit
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

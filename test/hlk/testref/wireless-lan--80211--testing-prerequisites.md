@@ -18,15 +18,15 @@ ms.topic: article
 
 This topic describes the process to test a Wireless LAN (WLAN) device to make sure that it functions correctly with Windows. These procedures use the Microsoft Windows Driver Kit (WDK) and Windows Hardware Lab Kit (Windows HLK). To comply with the WLAN Windows Hardware Certification Program, you must run all of the tests that Windows HLK identifies as being required for the device. We also recommend that you work through the tests in order by the following levels: "Basic", "Functional", "Reliability", and "Certification."
 
->[!NOTE]
->  
-For a driver to pass testing and obtain Windows Hardware Certification, you must use the latest version of the WDK to compile the driver.
+> [!NOTE]
+> 
+> For a driver to pass testing and obtain Windows Hardware Certification, you must use the latest version of the WDK to compile the driver.
+> 
+> [!NOTE]
+> 
+> WLAN Windows HLK tests that use software-based access points are exclusively supported by using specific Atheros WLAN NICs. Windows HLK customers who test WLAN drivers must use two Atheros WLAN adapters that are installed in the SoftAP Machine to complete their submissions. Only two devices have been specifically tested at the time of Windows 8.1 release: Dlink DWA-552 and Dlink DWA-556. Additional models might have worked in the past and might continue to work, but cannot be guaranteed. If you have questions about this, please contact us at wlanndt@microsoft.com.
 
->[!NOTE]
->  
-WLAN Windows HLK tests that use software-based access points are exclusively supported by using specific Atheros WLAN NICs. Windows HLK customers who test WLAN drivers must use two Atheros WLAN adapters that are installed in the SoftAP Machine to complete their submissions. Only two devices have been specifically tested at the time of Windows 8.1 release: Dlink DWA-552 and Dlink DWA-556. Additional models might have worked in the past and might continue to work, but cannot be guaranteed. If you have questions about this, please contact us at wlanndt@microsoft.com.
-
- 
+ 
 
 The tests to run depend on the capabilities of the device or system that you are testing. For devices that are running on Windows 7, the tests take 13 to 15 hours to run. For devices that are running on Windows 8, the tests take 30-32 hours to run. For devices that are running on Windows 8.1, tests take approximately 36-40 hours to run. These times represent fully passing results. Failures in any test or reboots due to crashes add additional time to the tests. These times can vary slightly by platform and performance of individual machines that are used in the tests.
 
@@ -51,11 +51,11 @@ A Windows HLK setup for WLAN device testing consists of the following nine compo
 
 -   An 802.11w-capable access point. This item is unchanged from previous WLAN Windows HLK releases and the previously used access point can be used.
 
->[!NOTE]
->  
-Windows Vista and earlier versions of Windows are deprecated and are not supported for any role in the test configuration.
+> [!NOTE]
+> 
+> Windows Vista and earlier versions of Windows are deprecated and are not supported for any role in the test configuration.
 
- 
+ 
 
 The following table summarizes the configurations:
 
@@ -101,7 +101,7 @@ The following table summarizes the configurations:
 </tbody>
 </table>
 
- 
+ 
 
 *Figure 1 WLAN Setup* shows the WLAN setup:
 
@@ -112,33 +112,33 @@ The following table summarizes the configurations:
 
 **RT-N66U (AP1 & AP2) Preparation:**
 
--   The only current supported device for AP1 and AP2 is the ASUS RT-N66U.
+- The only current supported device for AP1 and AP2 is the ASUS RT-N66U.
 
--   Make sure that you are using 3.0.0.4.354 or later version firmware. New units might have a compatible firmware version directly out of the box. (We recommend that you keep a copy of working firmware available.)
+- Make sure that you are using 3.0.0.4.354 or later version firmware. New units might have a compatible firmware version directly out of the box. (We recommend that you keep a copy of working firmware available.)
 
--   You must pre-configure AP1 and AP2 before you connect them. You can use any of the machines or a separate machine to perform the configuration. During this process, make sure that the computer is connected to the RT-N66U LAN ports by using the Ethernet network only.
+- You must pre-configure AP1 and AP2 before you connect them. You can use any of the machines or a separate machine to perform the configuration. During this process, make sure that the computer is connected to the RT-N66U LAN ports by using the Ethernet network only.
 
--   When you set up a new AP for the first time, we recommend that you skip the Configuration wizard on the aps by navigating directly to: http://192.168.1.1/index.asp .
+- When you set up a new AP for the first time, we recommend that you skip the Configuration wizard on the aps by navigating directly to: http://192.168.1.1/index.asp .
 
--   The WAN/Internet ports on both AP1 and AP2 must be configured under the WAN section of Advanced Settings by using a connection type of Static IP. The static IPs that are used must be in the subnet that is being used for gigabit switch 2. (For example: 192.168.100.0/255.255.255.0) Do not use a static IP address that falls within an IP subnet to which the DUT and SUT connect. Switch 1 and switch 2 must use separate and non-overlapping IP subnets.
+- The WAN/Internet ports on both AP1 and AP2 must be configured under the WAN section of Advanced Settings by using a connection type of Static IP. The static IPs that are used must be in the subnet that is being used for gigabit switch 2. (For example: 192.168.100.0/255.255.255.0) Do not use a static IP address that falls within an IP subnet to which the DUT and SUT connect. Switch 1 and switch 2 must use separate and non-overlapping IP subnets.
 
--   The WAN settings page requires that the Default Gateway, DNS Server1, and DNS Server2 fields are filled out. For ease of configuration, we recommend that you enter the static IP address of Nic 2 on the AP controller (which must be in the same subnet range as the WAN IP Setting).
+- The WAN settings page requires that the Default Gateway, DNS Server1, and DNS Server2 fields are filled out. For ease of configuration, we recommend that you enter the static IP address of Nic 2 on the AP controller (which must be in the same subnet range as the WAN IP Setting).
 
--   You must disable the firewall in the **Firewall** section in **Advanced Settings**.
+- You must disable the firewall in the **Firewall** section in **Advanced Settings**.
 
--   You must enable Telnet on the **System** tab in the **Administration** section of **Advanced Settings** on both AP1 and AP2.
+- You must enable Telnet on the **System** tab in the **Administration** section of **Advanced Settings** on both AP1 and AP2.
 
--   For debugging purposes from the AP Controller, we highly recommend that you enable web access from WAN on the **System** tab in the **Administration** section of **Advanced Settings** on both AP1 and AP2.
+- For debugging purposes from the AP Controller, we highly recommend that you enable web access from WAN on the **System** tab in the **Administration** section of **Advanced Settings** on both AP1 and AP2.
 
-    >[!IMPORTANT]
-    >  
-    When the tests run for the first time, the tests disable all LAN ports on both RT-N66U routers. This is expected. If you want to connect to the APs to verify settings during the testing, use the AP controller and connect over the WAN port by using the provisioned port. The tests enable the LAN ports of each AP as needed during testing. If you need to connect to a LAN port for testing, stop the tests from running and manually power off and on the AP. This action re-enables the LAN ports until the next test starts.
+  > [!IMPORTANT]
+  > 
+  > When the tests run for the first time, the tests disable all LAN ports on both RT-N66U routers. This is expected. If you want to connect to the APs to verify settings during the testing, use the AP controller and connect over the WAN port by using the provisioned port. The tests enable the LAN ports of each AP as needed during testing. If you need to connect to a LAN port for testing, stop the tests from running and manually power off and on the AP. This action re-enables the LAN ports until the next test starts.
 
-     
+     
 
--   You can troubleshoot the tests' ability to connect to the APs by using Telnet.exe to connect to both routers on the WAN IP address from the AP-Controller. If you cannot connect to either AP from the AP-Controller by using the WAN IP address, the username of admin, and password that you configured (default password is admin), the tests cannot connect and will fail.
+- You can troubleshoot the tests' ability to connect to the APs by using Telnet.exe to connect to both routers on the WAN IP address from the AP-Controller. If you cannot connect to either AP from the AP-Controller by using the WAN IP address, the username of admin, and password that you configured (default password is admin), the tests cannot connect and will fail.
 
--   These preparation steps do not apply to the 802.11 AC router in the setup. For the 802.11AC router, configure it to match the maximum bandwidth and spatial streams that your device supports.
+- These preparation steps do not apply to the 802.11 AC router in the setup. For the 802.11AC router, configure it to match the maximum bandwidth and spatial streams that your device supports.
 
 **Topology Configuration and Preparation:**
 
@@ -182,33 +182,33 @@ The following table summarizes the configurations:
 
 After you configure the test topology, prepare the test systems for WLAN device testing by performing the following steps:
 
-1.  Set up the following machine configurations by using the previous configuration instructions:
+1. Set up the following machine configurations by using the previous configuration instructions:
 
-    -   One test device on the DUT.
+   -   One test device on the DUT.
 
-    -   One test device on the SUT.
+   -   One test device on the SUT.
 
-    -   Two Atheros chipset devices on the AP Controller.
+   -   Two Atheros chipset devices on the AP Controller.
 
-    -   Two Ethernet adapters on the AP Controller
+   -   Two Ethernet adapters on the AP Controller
 
-    -   Windows HLK Studio and Windows HLK Controller.
+   -   Windows HLK Studio and Windows HLK Controller.
 
-2.  Based on the operating system for which you are testing the device, install operating system builds on the Windows HLK clients (three test computers namely DUT, SUT and SoftAP machine) as described in the previous section.
+2. Based on the operating system for which you are testing the device, install operating system builds on the Windows HLK clients (three test computers namely DUT, SUT and SoftAP machine) as described in the previous section.
 
-3.  Install HLK controller and HLK studio machine on Windows Server 2008 R2 machine. For more information see [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md).
+3. Install HLK controller and HLK studio machine on Windows Server 2008 R2 machine. For more information see [Step 2: Install Client on the test system(s)](../getstarted/step-2--install-client-on-the-test-system-s-.md).
 
-4.  Install HLK clients on three test computers namely DUT, SUT and SoftAP machine. For more information see the **Windows Hardware Certification Step-by-Step Guide**. Note that when the DUT is a Windows RT machine, the AP machines must be running a 32bit operating system. When the DUT is a Windows RT machine, the HLK client should be installed from (\\\\&lt;HCKcontroller&gt;\\HCKInstall\\WoAClient\\setup.exe), where &lt;*HCKcontroller*&gt; is the name of the Windows HLK Controller.
+4. Install HLK clients on three test computers namely DUT, SUT and SoftAP machine. For more information see the **Windows Hardware Certification Step-by-Step Guide**. Note that when the DUT is a Windows RT machine, the AP machines must be running a 32bit operating system. When the DUT is a Windows RT machine, the HLK client should be installed from (\\\\&lt;HCKcontroller&gt;\\HCKInstall\\WoAClient\\setup.exe), where &lt;*HCKcontroller*&gt; is the name of the Windows HLK Controller.
 
-5.  On the Windows HLK Controller click **Start**, click **All Programs**, click **Windows Kits**, click **Hardware Certification Kit**, and click **Windows HLK Studio**.
+5. On the Windows HLK Controller click **Start**, click **All Programs**, click **Windows Kits**, click **Hardware Certification Kit**, and click **Windows HLK Studio**.
 
-6.  Click **Configuration** and then click **Machine Management**.
+6. Click **Configuration** and then click **Machine Management**.
 
-7.  Click **Create Machine Pool**.
+7. Click **Create Machine Pool**.
 
-8.  Type the machine pool name in the **New Pool** field and then press **Enter**. The new machine pool should appear as a node under **$ (Root)**.
+8. Type the machine pool name in the **New Pool** field and then press **Enter**. The new machine pool should appear as a node under **$ (Root)**.
 
-9.  Select the **Default pool.** The Windows HLK Client machines should be listed in the **Machines** list.
+9. Select the **Default pool.** The Windows HLK Client machines should be listed in the **Machines** list.
 
 10. Press and hold the **CTRL** key and click each of the three defined machines to select all three machines.
 
@@ -225,31 +225,31 @@ After you configure the test topology, prepare the test systems for WLAN device 
 
 The following procedure demonstrates how to run the WLAN device tests:
 
-1.  Open the Windows HLK Studio.
+1. Open the Windows HLK Studio.
 
-2.  On the **Project** tab, click **Create Project** and name the project.
+2. On the **Project** tab, click **Create Project** and name the project.
 
-3.  Click the **Selection** tab.
+3. Click the **Selection** tab.
 
-4.  Select your new machine pool in the dropdown in the upper left and click **Device Manager**. The list should populate with the names of all the devices that are installed on the machines in that pool.
+4. Select your new machine pool in the dropdown in the upper left and click **Device Manager**. The list should populate with the names of all the devices that are installed on the machines in that pool.
 
-5.  In the list, locate the WLAN driver under test and check the box next to it.
+5. In the list, locate the WLAN driver under test and check the box next to it.
 
-    >[!NOTE]
-    >  
-    There might be more than one WLAN driver listed. Make sure you check the one that is on the DUT. The machine name is listed in the right column.
+   > [!NOTE]
+   > 
+   > There might be more than one WLAN driver listed. Make sure you check the one that is on the DUT. The machine name is listed in the right column.
 
-     
+     
 
-6.  Click the **Tests** tab - by default, all the available certification tests that are applicable to selected device will display.
+6. Click the **Tests** tab - by default, all the available certification tests that are applicable to selected device will display.
 
-7.  You can filter the displayed list by clicking **View by** and then selecting additional options, such as **Basic**, **Functional**, or **Reliability**.
+7. You can filter the displayed list by clicking **View by** and then selecting additional options, such as **Basic**, **Functional**, or **Reliability**.
 
-    Only **Certification** tests are required for the certification process; however, running **Basic** and **Functional** tests provides a specific set of functionally important tests.
+   Only **Certification** tests are required for the certification process; however, running **Basic** and **Functional** tests provides a specific set of functionally important tests.
 
-8.  Select the test to run by checking the box on the left next to it. Click **Run Selected**.  You are prompted to add any additional parameters. (You can also check the box next to multiple tests.)
+8. Select the test to run by checking the box on the left next to it. Click **Run Selected**.  You are prompted to add any additional parameters. (You can also check the box next to multiple tests.)
 
-9.  Not all parameters are used for all tests. Only the parameters that are necessary for the selected tests are shown. You can view detailed parameter descriptions by hovering the mouse pointer over the parameter name. Many of the parameters will be derived from the topology notes mentioned above. If you press the **F1** key while a test is selected, detailed information on that test and its parameters is shown.
+9. Not all parameters are used for all tests. Only the parameters that are necessary for the selected tests are shown. You can view detailed parameter descriptions by hovering the mouse pointer over the parameter name. Many of the parameters will be derived from the topology notes mentioned above. If you press the **F1** key while a test is selected, detailed information on that test and its parameters is shown.
 
 10. **Machine Set** section is always present for Functional and Reliability tests. This section represents the machine resources that are necessary to run the tests. You must address all "**!**" symbols before you click **OK**.
 
@@ -272,14 +272,14 @@ In Windows HLK Manager, click **Explorers** and then click **Job Monitor**.
 
 When the client machines complete test jobs, you can gather information from the **Job Execution Status** frame by right-clicking a job and viewing errors, job reports, or result reports. You can also click **Browse Job Logs** to access NDISTest results.
 
-In HLK Studio, click the **Results** tab. View the **Status** column to monitor the results of each test. You can choose each column to sort the results. If a test passes, you will see a green checkmark; if it fails, you will see a red X. For more detailed information on viewing logs, see [Step 7: View test results and log files](..\getstarted\step-7-view-test-results-and-log-files.md).
+In HLK Studio, click the **Results** tab. View the **Status** column to monitor the results of each test. You can choose each column to sort the results. If a test passes, you will see a green checkmark; if it fails, you will see a red X. For more detailed information on viewing logs, see [Step 7: View test results and log files](../getstarted/step-7-view-test-results-and-log-files.md).
 
 ## <span id="pkg"></span><span id="PKG"></span>Create a Package
 
 
 After passing all of the necessary tests, you are ready to create an .hlkx submission package for certification.
 
-Windows HLK Studio supports package creation, so you don't have to use a separate submission tool. The package creation feature lets you add necessary resource files to complete the certification. For detailed instructions on how to create a package, see [Step 8: Create a submission package](..\getstarted\step-8-create-a-submission-package.md).
+Windows HLK Studio supports package creation, so you don't have to use a separate submission tool. The package creation feature lets you add necessary resource files to complete the certification. For detailed instructions on how to create a package, see [Step 8: Create a submission package](../getstarted/step-8-create-a-submission-package.md).
 
 ## <span id="notests"></span><span id="NOTESTS"></span>Notes and Troubleshooting for RT-N66U firmware
 
@@ -312,31 +312,31 @@ You can download these items as follows:
 
 ## <span id="ap"></span><span id="AP"></span>AP Firmware Troubleshooting
 
->[!WARNING]
->  
-Applying new firmware to consumer devices can sometimes, although rarely, cause permanent damage. You must read the device manual that came with your router and be careful when you flash new firmware on a device. Detailed steps, especially around the 30-30-30 reset, are required before flashing.
+> [!WARNING]
+> 
+> Applying new firmware to consumer devices can sometimes, although rarely, cause permanent damage. You must read the device manual that came with your router and be careful when you flash new firmware on a device. Detailed steps, especially around the 30-30-30 reset, are required before flashing.
 
- 
+ 
 
 The most reliable way to install firmware on an RT-N66U device is by using the Firmware Restoration Utility. You might also be able to upgrade firmware by using the web interface. Consult the device manual for instructions. To upgrade firmware by using the restoration tool, the following steps are required. (These steps can also be found in your manual under Firmware Restoration.
 
-1.  Remove power from the device.
+1. Remove power from the device.
 
-2.  Press and hold the reset button on the device.
+2. Press and hold the reset button on the device.
 
-3.  Turn on/plug in the device keeping the reset button held for 8 seconds.
+3. Turn on/plug in the device keeping the reset button held for 8 seconds.
 
-4.  Release the reset button when the power LED has started to slowly flash on and off.
+4. Release the reset button when the power LED has started to slowly flash on and off.
 
-5.  Connect one computer to one of the LAN ports on the device (do not connect any other ports during this process).
+5. Connect one computer to one of the LAN ports on the device (do not connect any other ports during this process).
 
-6.  Change the IP address on the computer to 192.168.1.4 with a subnet mask of 255.255.255.0 and no gateway address.
+6. Change the IP address on the computer to 192.168.1.4 with a subnet mask of 255.255.255.0 and no gateway address.
 
-7.  Start the Asus firmware restoration utility.
+7. Start the Asus firmware restoration utility.
 
-8.  In the firmware restoration utility, browse for the firmware image you downloaded (version 3.0.0.4.354 or later).
+8. In the firmware restoration utility, browse for the firmware image you downloaded (version 3.0.0.4.354 or later).
 
-9.  Click the **Upload** button.
+9. Click the **Upload** button.
 
 10. If the upload is successful, multiple progress bars appear. The first progress bar shows the upload of the image to the device; additional progress bars show the overall upgrade process.
 
@@ -344,11 +344,11 @@ The most reliable way to install firmware on an RT-N66U device is by using the F
 
 12. After the upgrade is successful, you can remove the static IP address from the computer and access the devices web-server at http://192.168.1.1/index.asp to confirm a successful upgrade.
 
-    >[!IMPORTANT]
-    >  
-    Every time that you upgrade firmware, after the device has finished the upgrade and has restarted, you should reset the NVRAM settings by performing a 30-30-30 reset. The steps for this are as follows:
+    > [!IMPORTANT]
+    > 
+    > Every time that you upgrade firmware, after the device has finished the upgrade and has restarted, you should reset the NVRAM settings by performing a 30-30-30 reset. The steps for this are as follows:
 
-     
+     
 
     1.  When the device is ON and functioning, hold down the WPS button for 30 seconds.
 
@@ -377,9 +377,9 @@ If a device is no longer functional for any reason, or specifically because of a
 
 [Device.Network Testing](device-network-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

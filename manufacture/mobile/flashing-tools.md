@@ -67,7 +67,7 @@ The following table summarizes the flashing tool options.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="OEM_custom_flashing_tool"></span><span id="oem_custom_flashing_tool"></span><span id="OEM_CUSTOM_FLASHING_TOOL"></span>OEM custom flashing tool
 
@@ -122,9 +122,9 @@ Flashing may be less reliable when using USB cables longer than 3 feet (.91 mete
 
 You will need to evaluate whether the flashing time per device meets their objectives for your manufacturing line.
 
- 
+ 
 
- 
+ 
 
 
 

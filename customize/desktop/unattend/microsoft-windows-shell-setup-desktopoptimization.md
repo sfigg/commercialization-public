@@ -50,8 +50,8 @@ The following XML output specifies to go to the desktop on sign in and to show M
 
 ```XML
 <DesktopOptimization>
-         <GoToDesktopOnSignIn>true</GoToDesktopOnSignIn>
-         <ShowWindowsStoreAppsOnTaskbar>true</ShowWindowsStoreAppsOnTaskbar>
+         <GoToDesktopOnSignIn>true</GoToDesktopOnSignIn>
+         <ShowWindowsStoreAppsOnTaskbar>true</ShowWindowsStoreAppsOnTaskbar>
 </DesktopOptimization>
 ```
 

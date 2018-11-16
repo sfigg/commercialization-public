@@ -20,9 +20,9 @@ Specific codes entered into the dialer will start the OEM dialer app. The dialer
 
 The dialer codes customization supports these four different app types and behaviors:
 
-* **Windows Phone Silverlight 8.0 app** - For this type of app, the legacy customization behavior remains the same. You cannot pass **\*** as a dialer code and **\#**characters are removed from the dialer code.
-* **Windows Phone Silverlight 8.1 app** - For this type of app, you can define dial strings that contain **\***. The app receives the dial code through navigation arguments. Arguments are in the format "DialString=\#\#*dialer\_code*\#" (for example, "DialString=\#\#777\#").
-* **Windows Runtime app** - For Windows Runtime apps, you can define dial strings that contain **\***. The app receives the dial code through navigation arguments in the URI escape encoded format. Arguments are in the format "?DialString=%23%23*dialer\_code*%23". The app can use System.Uri.UnescapeDataString to get the arguments to format "?DialString=\#\#*dialer\_code*\#".
+* **Windows Phone Silverlight 8.0 app** - For this type of app, the legacy customization behavior remains the same. You cannot pass **\\*** as a dialer code and <strong>\#</strong>characters are removed from the dialer code.
+* **Windows Phone Silverlight 8.1 app** - For this type of app, you can define dial strings that contain **\\**<em>. The app receives the dial code through navigation arguments. Arguments are in the format "DialString=\#\#</em>dialer\_code*\#" (for example, "DialString=\#\#777\#").
+* **Windows Runtime app** - For Windows Runtime apps, you can define dial strings that contain **\\***. The app receives the dial code through navigation arguments in the URI escape encoded format. Arguments are in the format "?DialString=%23%23*dialer\_code<em>%23". The app can use System.Uri.UnescapeDataString to get the arguments to format "?DialString=\#\#</em>dialer\_code*\#".
 * **Universal Windows app** - The behavior for this app is the same as that of a Windows Runtime app.
 
 The OS trims the dial string for legacy apps while it passes the dial string without modifications for Universal Windows apps.
@@ -66,7 +66,7 @@ The OS trims the dial string for legacy apps while it passes the dial string wit
    > [!Note]
    > To prevent the initial phone setup process from installing the application on first boot, do not place the provXML file in the directory that the initial phone setup process checks, such as $(runtime.commonfiles)\\Provisioning\\OEM. Instead, place the provXML file in another location, such as $(runtime.commonfiles)\\Xaps, which you can then reference from the `PartnerAppProvisioningFilePath` setting.
 
-1. You must also configure the following customization settings so that the dialer will start the primary OEM dialer application. If you set these values, no application is launched and no messages are displayed to the user. The following configuration causes the dialer to start the primary OEM dialer application.
+2. You must also configure the following customization settings so that the dialer will start the primary OEM dialer application. If you set these values, no application is launched and no messages are displayed to the user. The following configuration causes the dialer to start the primary OEM dialer application.
 
    In the customization answer file, add the following settings:
 
@@ -84,14 +84,15 @@ The OS trims the dial string for legacy apps while it passes the dial string wit
    </Static>
    ```
 
-1. In the above example, provide a value for the `PartnerAppTaskUri`, the `PartnerAppProvisioningFilePath` and include any desired immediate or non-immediate dial strings.
+3. In the above example, provide a value for the `PartnerAppTaskUri`, the `PartnerAppProvisioningFilePath` and include any desired immediate or non-immediate dial strings.
    1. Set `PartnerAppTaskUri` to the task URI of the launched app.
       * If you're using a Universal Windows app, you can launch a diagnostic app by setting the value of `PartnerAppTaskUri` to the AUMID of a Windows app. The AUMID is in the format similar to the package family name + the ID of the app, for example, *24f54b1d-732e-448c-b516-15078b047964\_120xq4c4hfa14!App*.
       * If you're using a legacy app, you can launch a diagnostic app by setting the value of `PartnerAppTaskUri` to the app URI. The app URI is in the format *app://00000000-0000-0000-0000-000000000000/\_default.* Replace *00000000-0000-0000-0000-000000000000* with your app ID, such as *13372257-1b99-1712-17e7-157fc6f8557d*.
-      * The dial code parameter is URI escape encoded in order to pass **\#** and **\*** characters to Windows Phone Silverlight 8.1 apps.
-   1.  Set `PartnerAppProvisioningFilePath` to the path (in the mobile device) and file name of the provXML that is used to install the OEM dialer app. The path must match the destination of the app you preloaded. For example, *$(runtime.commonfiles)\\Xaps map to \\Programs\\CommonFiles\\Xaps* and must be used when specifying the `PartnerAppProvisioningFilePath` value.
-   1. When the dialer code is entered, the background installation process starts and when that completes, the application will be launched. If the installation is not complete within two minutes, the application is not started.
-   1. Set `PartnerImmediateDialStrings` and `PartnerNonImmediateDialStrings` to add additional dialer codes that can be accepted and passed as a parameter to the primary OEM dialer app.
+      * The dial code parameter is URI escape encoded in order to pass **\#** and **\\*** characters to Windows Phone Silverlight 8.1 apps.
+
+   2. Set `PartnerAppProvisioningFilePath` to the path (in the mobile device) and file name of the provXML that is used to install the OEM dialer app. The path must match the destination of the app you preloaded. For example, *$(runtime.commonfiles)\\Xaps map to \\Programs\\CommonFiles\\Xaps* and must be used when specifying the `PartnerAppProvisioningFilePath` value.
+   3. When the dialer code is entered, the background installation process starts and when that completes, the application will be launched. If the installation is not complete within two minutes, the application is not started.
+   4. Set `PartnerImmediateDialStrings` and `PartnerNonImmediateDialStrings` to add additional dialer codes that can be accepted and passed as a parameter to the primary OEM dialer app.
       * Use `PartnerImmediateDialStrings` to list dial codes that invoke the OEM app immediately without the need to press the dial button. For example, *\#\#3282\#\\0\#\#634\#\\0\#\#777\#\\0\#\#7820\#\\05555*
       * Use `PartnerNonImmediateDialStrings` to list dial codes that invoke the OEM app after pressing the dial button. For example, *\#\#634\\0\#\#3282\\0\#\#777\\0\#\#7820*
 

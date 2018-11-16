@@ -52,7 +52,7 @@ To support the following features or components, set the value from the table be
 <tr class="odd">
 <td><p>2</p></td>
 <td><p>Tablet</p></td>
-<td><p>A device with an integrated screen that's less than 18&quot;. It combines a touch screen, rechargeable power source, and other components into a single chassis with an optional attachable keyboard.</p></td>
+<td><p>A device with an integrated screen that&#39;s less than 18&quot;. It combines a touch screen, rechargeable power source, and other components into a single chassis with an optional attachable keyboard.</p></td>
 </tr>
 <tr class="even">
 <td><p>3</p></td>
@@ -112,7 +112,7 @@ To support the following features or components, set the value from the table be
 <tr class="odd">
 <td><p>E</p></td>
 <td><p>Banking</p></td>
-<td><p>A machine at a bank branch or another location that enables customers to perform basic banking activities including withdrawing money and checking one's bank balance.</p></td>
+<td><p>A machine at a bank branch or another location that enables customers to perform basic banking activities including withdrawing money and checking one&#39;s bank balance.</p></td>
 </tr>
 <tr class="even">
 <td><p>F</p></td>
@@ -122,12 +122,12 @@ To support the following features or components, set the value from the table be
 <tr class="odd">
 <td><p>10</p></td>
 <td><p>Digital signage</p></td>
-<td><p>A computer or playback device that's connected to a large digital screen and displays video or multimedia content for informational or advertising purposes.</p></td>
+<td><p>A computer or playback device that&#39;s connected to a large digital screen and displays video or multimedia content for informational or advertising purposes.</p></td>
 </tr>
 <tr class="even">
 <td><p>11</p></td>
 <td><p>Gaming</p></td>
-<td><p>A device that's used for playing a game. It can be mechanical, electronic, or electromechanical equipment.</p></td>
+<td><p>A device that&#39;s used for playing a game. It can be mechanical, electronic, or electromechanical equipment.</p></td>
 </tr>
 <tr class="odd">
 <td><p>12</p></td>
@@ -147,7 +147,7 @@ To support the following features or components, set the value from the table be
 <tr class="even">
 <td><p>15</p></td>
 <td><p>Maker board</p></td>
-<td><p>A low-cost and compact development board that's used for prototyping any number IoT-related things.</p></td>
+<td><p>A low-cost and compact development board that&#39;s used for prototyping any number IoT-related things.</p></td>
 </tr>
 <tr class="odd">
 <td><p>16</p></td>
@@ -187,12 +187,12 @@ To support the following features or components, set the value from the table be
 <tr class="even">
 <td><p>1D</p></td>
 <td><p>Industry other</p></td>
-<td><p>A device that doesn't fit into any of the previous categories.</p></td>
+<td><p>A device that doesn&#39;t fit into any of the previous categories.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -231,9 +231,9 @@ For a list of the supported Windows editions and architectures that this compone
 
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,21 +34,21 @@ For best results:
 
 You can run this assessment on the following operating systems:
 
--   Windows 8
+-   Windows 8
 
--   Windows RT
+-   Windows RT
 
 -   Windows 8.1
 
--   Windows RT 8.1
+-   Windows RT 8.1
 
--   Windows 10
+-   Windows 10
 
 Supported architectures include x86-based, x64-based, and ARM-based systems.
 
-You can run this assessment on a Windows RT 8.1 system in either of the following ways:
+You can run this assessment on a Windows RT 8.1 system in either of the following ways:
 
--   Package the assessment job in the Windows Assessment Console, and then run it on Windows RT 8.1. For more information about this option, see [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
+-   Package the assessment job in the Windows Assessment Console, and then run it on Windows RT 8.1. For more information about this option, see [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
 
 -   Use Windows Assessment Services. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
 
@@ -83,26 +83,25 @@ The following table describes the assessment settings, recommended values, and a
 <td><p>URL</p></td>
 <td><p>You can use this setting to specify a website for the assessment to use as part of the test instead of using the local test page included with the assessment.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>We recommend that you use the default setting. The local test page is included with the assessment and can be run without internet connectivity. If you specify a website that requires internet connectivity for the assessment, you could introduce new variables that could affect the results of your test.</p>
+<strong>Note</strong><br/><p>We recommend that you use the default setting. The local test page is included with the assessment and can be run without internet connectivity. If you specify a website that requires internet connectivity for the assessment, you could introduce new variables that could affect the results of your test.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Results for Internet Explorer Security Software Impact Assessment](results-for-internet-explorer-security-software-impact-assessment.md)
 
- 
 
- 
+
+
 
 
 

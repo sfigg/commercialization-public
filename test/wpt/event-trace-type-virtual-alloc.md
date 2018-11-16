@@ -41,9 +41,9 @@ This event type is similar to the event types used in the **EVENT\_TRACE\_PROPER
 
 [Trace Control Event Types](trace-control-event-types.md)
 
- 
+ 
 
- 
+ 
 
 
 

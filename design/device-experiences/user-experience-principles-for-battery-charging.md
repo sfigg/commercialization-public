@@ -30,11 +30,11 @@ From a user experience perspective, there are five fundamental principles for ba
 
 **Note**  Systems that can only charge through a Universal Serial Bus (USB) connector might not be able to support all of these user-experience goals. These systems might require booting into firmware or Windows to interrogate the USB port and determine the correct charge rate.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 The default value is **7**.
 
@@ -94,9 +94,9 @@ The following XML output shows how to enable RAS and set the router type for LAN
 
 [Microsoft-Windows-RasServer](microsoft-windows-rasserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

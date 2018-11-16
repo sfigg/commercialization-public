@@ -25,7 +25,7 @@ You can take advantage of the benefits offered by both the Windows provisioning 
 
     **Note**  Only the Windows ICD CLI allows you to use both a MCSF customization answer file and a Windows provisioning answer file to create a customized mobile image.
 
-     
+     
 
 ## To build a customized mobile image using a hybrid method
 
@@ -57,9 +57,9 @@ Here's the high-level steps you need to take to build a customized mobile image 
 
 [Building and flashing mobile images](building-and-flashing-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **DatabaseProjectManager** cl
 
 `Public Sub New ( _`
 
-          `server As String _`
+          `server As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **DatabaseProjectManager** cl
 
 `public DatabaseProjectManager (`
 
-          `string server`
+          `string server`
 
 `)`
 
@@ -55,16 +55,16 @@ This constructor initializes a new instance of the **DatabaseProjectManager** cl
 
 *server*
 
-     The name of the server to connect to.
+     The name of the server to connect to.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
 An exception is thrown if *server* is **null** or empty, or if the database connection fails (for example, if the controller is unavailable).
 
- 
+ 
 
- 
+ 
 
 
 

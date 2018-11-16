@@ -40,9 +40,9 @@ ms.topic: article
 
 `Public Shared Operator = ( _`
 
-          `first As MachinePool, _`
+          `first As MachinePool, _`
 
-          `second As MachinePool _`
+          `second As MachinePool _`
 
 `) As Boolean`
 
@@ -50,9 +50,9 @@ ms.topic: article
 
 `public static bool operator == (`
 
-          `MachinePool first,`
+          `MachinePool first,`
 
-          `MachinePool second`
+          `MachinePool second`
 
 `)`
 
@@ -61,11 +61,11 @@ ms.topic: article
 
 *first*
 
-          The first value to compare against.
+          The first value to compare against.
 
 *second*
 
-          The second value to compare against.
+          The second value to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -77,9 +77,9 @@ ms.topic: article
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

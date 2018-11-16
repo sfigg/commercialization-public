@@ -54,7 +54,7 @@ Returns one of the following status codes:
 | EFI\_INVALID\_PARAM     | An invalid parameter was passed to the function.                 |
 | EFI\_BUFFER\_TOO\_SMALL | Not enough space in the provided buffer.                         |
 
- 
+ 
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -66,9 +66,9 @@ Returns one of the following status codes:
 
 [Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

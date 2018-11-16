@@ -34,7 +34,7 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceFamily.AddHardwareId Method](devicefamilyaddhardwareid-method.md)</p></td>
+<td><p><a href="devicefamilyaddhardwareid-method.md" data-raw-source="[DeviceFamily.AddHardwareId Method](devicefamilyaddhardwareid-method.md)">DeviceFamily.AddHardwareId Method</a></p></td>
 <td><p>This method adds a new hardware ID to this <strong>DeviceFamily</strong> object.</p></td>
 </tr>
 <tr class="even">
@@ -42,11 +42,11 @@ ms.topic: article
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DeviceFamily.FindDeviceFamilyFromId Method](devicefamilyfinddevicefamilyfromid-method.md)</p></td>
+<td><p><a href="devicefamilyfinddevicefamilyfromid-method.md" data-raw-source="[DeviceFamily.FindDeviceFamilyFromId Method](devicefamilyfinddevicefamilyfromid-method.md)">DeviceFamily.FindDeviceFamilyFromId Method</a></p></td>
 <td><p>This method retrieves a device family for the given hardware ID.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DeviceFamily.GetDeviceFamilyFromId Method](devicefamilygetdevicefamilyfromid-method.md)</p></td>
+<td><p><a href="devicefamilygetdevicefamilyfromid-method.md" data-raw-source="[DeviceFamily.GetDeviceFamilyFromId Method](devicefamilygetdevicefamilyfromid-method.md)">DeviceFamily.GetDeviceFamilyFromId Method</a></p></td>
 <td><p>This method retrieves a device family for the given hardware ID.</p></td>
 </tr>
 <tr class="odd">
@@ -62,13 +62,13 @@ ms.topic: article
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[DeviceFamily.RenameHardwareId Method](devicefamily-renamehardwareid-method.md)</p></td>
+<td><p><a href="devicefamily-renamehardwareid-method.md" data-raw-source="[DeviceFamily.RenameHardwareId Method](devicefamily-renamehardwareid-method.md)">DeviceFamily.RenameHardwareId Method</a></p></td>
 <td><p>This method renames an existing hardware ID in the device family.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -96,11 +96,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

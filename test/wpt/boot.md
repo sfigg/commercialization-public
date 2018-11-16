@@ -26,16 +26,16 @@ This action produces an XML report that summarizes the various metrics in boot.
 ## Options
 
 
-<a href="" id="-mincputoshow-n-"></a>**-minCPUToShow***&lt;n&gt;*  
+<a href="" id="-mincputoshow-n-"></a>**-minCPUToShow**<em>&lt;n&gt;</em>  
 *&lt;n&gt;* indicates the minimum percentage of CPU usage to show, in the range 0-100.
 
-<a href="" id="-maxfilestoshow-n-"></a>**-maxFilesToShow***&lt;n&gt;*  
+<a href="" id="-maxfilestoshow-n-"></a>**-maxFilesToShow**<em>&lt;n&gt;</em>  
 *&lt;n&gt;* indicates the maximum number of files to show.
 
-<a href="" id="-expectedprocessesfile-file-name-"></a>**-expectedProcessesFile***&lt;file name&gt;*  
+<a href="" id="-expectedprocessesfile-file-name-"></a>**-expectedProcessesFile**<em>&lt;file name&gt;</em>  
 *&lt;file name&gt;* specifies a text file that contains a list of expected process names.
 
-<a href="" id="-minintervaltoshow-n-"></a>**-minIntervalToShow***&lt;n&gt;*  
+<a href="" id="-minintervaltoshow-n-"></a>**-minIntervalToShow**<em>&lt;n&gt;</em>  
 *&lt;n&gt;* indicates the minimum interval time to show, in microseconds. The default value is 10.
 
 <a href="" id="-usershellexecutable"></a>**-userShellExecutable**  
@@ -46,9 +46,9 @@ User shell executable to locate in the trace. The default is Explorer.exe.
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

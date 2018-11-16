@@ -47,7 +47,7 @@ Settings in this subgroup control the power management of PCI Express links.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Link state power management](pci-express-settings-link-state-power-management.md)</p></td>
+<td><p><a href="pci-express-settings-link-state-power-management.md" data-raw-source="[Link state power management](pci-express-settings-link-state-power-management.md)">Link state power management</a></p></td>
 <td><p>Specifies the personality of the power plan.</p></td>
 </tr>
 </tbody>

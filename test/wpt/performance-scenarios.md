@@ -36,7 +36,7 @@ You can select various performance scenarios in the Windows Performance Recorde
 **Note**  
 The on/off transition scenarios can only be logged to file. They cannot be logged to memory.
 
- 
+ 
 
 ## Related topics
 
@@ -45,9 +45,9 @@ The on/off transition scenarios can only be logged to file. They cannot be logge
 
 [Change the Performance Scenario](change-the-performance-scenario.md)
 
- 
+ 
 
- 
+ 
 
 
 

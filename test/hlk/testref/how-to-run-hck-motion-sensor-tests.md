@@ -94,7 +94,7 @@ Microsoft recommends that you run the tests in the order that is listed in the f
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="equip"></span><span id="EQUIP"></span>Suggested Test Equipment
 
@@ -160,7 +160,7 @@ Expected values:
 </tbody>
 </table>
 
- 
+ 
 
 ![accelerometer test 1](images/fig2-accelerometer-test-1.jpg)
 
@@ -193,7 +193,7 @@ Expected values:
 </tbody>
 </table>
 
- 
+ 
 
 ![accelerometer test 2](images/fig3-accelerometer-test-2.jpg)
 
@@ -226,7 +226,7 @@ Expected values:
 </tbody>
 </table>
 
- 
+ 
 
 ![accelerometer test 3](images/fig4-accelerometer-test-3.jpg)
 
@@ -259,7 +259,7 @@ Expected values:
 </tbody>
 </table>
 
- 
+ 
 
 ![accelerometer test 4](images/fig5-accelerometer-test-4.jpg)
 
@@ -309,7 +309,7 @@ Expected values during rotation:
 </tbody>
 </table>
 
- 
+ 
 
 ![gyro test 1](images/fig6-gyro-test-1.jpg)
 
@@ -342,7 +342,7 @@ Expected Values during rotation:
 </tbody>
 </table>
 
- 
+ 
 
 ![gyro test 2](images/fig7-gyro-test-2.jpg)
 
@@ -375,7 +375,7 @@ Expected values during rotation:
 </tbody>
 </table>
 
- 
+ 
 
 ![gyro test 3](images/fig8-gyro-test-3.jpg)
 
@@ -408,7 +408,7 @@ Expected values during rotation:
 </tbody>
 </table>
 
- 
+ 
 
 ![gyro test 4](images/fig9-gyro-test-4.jpg)
 
@@ -441,7 +441,7 @@ Expected values during rotation:
 </tbody>
 </table>
 
- 
+ 
 
 ![gyro test 5](images/fig10-gyro-test-5.jpg)
 
@@ -474,7 +474,7 @@ Expected values during rotation:
 </tbody>
 </table>
 
- 
+ 
 
 ![gyro test 6](images/fig11-gyro-test-6.jpg)
 
@@ -497,11 +497,11 @@ Lay the device on a flat surface with the Windows button pointing due south.
 
 The compass should return a heading near 0 degrees.
 
->[!NOTE]
->  
-Ignore the logging exception text. This will not cause a failure to be logged.
+> [!NOTE]
+> 
+> Ignore the logging exception text. This will not cause a failure to be logged.
 
- 
+ 
 
 ![compass test 1](images/fig12-compass-test-1.jpg)
 
@@ -564,11 +564,11 @@ Based on the guidance in the [Integrating Motion and Orientation Sensors whitepa
 
 The tests will allow for angle errors of +/- 10 degrees.
 
->[!IMPORTANT]
->  
-Please refer to the Validation of Euler Angles section of the Integrating Motion and Orientation Sensors whitepaper for the expected angles for each of the inclinometer tests.
+> [!IMPORTANT]
+> 
+> Please refer to the Validation of Euler Angles section of the Integrating Motion and Orientation Sensors whitepaper for the expected angles for each of the inclinometer tests.
 
- 
+ 
 
 ### <span id="Inclinometer_Test_1"></span><span id="inclinometer_test_1"></span><span id="INCLINOMETER_TEST_1"></span>Inclinometer Test 1
 
@@ -673,11 +673,11 @@ Most rotation matrix and quaternion implementations will use data derived from b
 
 The tests use dot products to compute the delta between the expected vector and the vector retrieved from the advanced orientation sensors. The tests allow for a delta of up to 15 degrees. If testers find that the sensor is returning different values than what the test expects then the orientation fusion algorithm should be reviewed to see that it produces consistent results with the values given in the [Integrating Motion and Orientation Sensors whitepaper](http://go.microsoft.com/fwlink/?LinkId=262274).
 
->[!IMPORTANT]
->  
-Please refer to the Validation of Euler Angles section of the Integrating Motion and Orientation Sensors whitepaper for the expected quaternion and rotation matrix values.
+> [!IMPORTANT]
+> 
+> Please refer to the Validation of Euler Angles section of the Integrating Motion and Orientation Sensors whitepaper for the expected quaternion and rotation matrix values.
 
- 
+ 
 
 ### <span id="Advanced_Orientation_Sensor_Test_1"></span><span id="advanced_orientation_sensor_test_1"></span><span id="ADVANCED_ORIENTATION_SENSOR_TEST_1"></span>Advanced Orientation Sensor Test 1
 
@@ -775,9 +775,9 @@ Hold the device vertically with the windows button on the side, left side on bot
 
 **Figure 41 Advanced Orientation Sensor Test 12**
 
- 
+ 
 
- 
+ 
 
 
 

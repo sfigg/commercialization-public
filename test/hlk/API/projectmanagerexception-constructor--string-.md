@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **ProjectManagerException** c
 
 `Public Sub New ( _`
 
-          `message As String _`
+          `message As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **ProjectManagerException** c
 
 `public ProjectManagerException (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **ProjectManagerException** c
 
 *message*
 
-     The exception message (string).
+     The exception message (string).
 
- 
+ 
 
- 
+ 
 
 
 

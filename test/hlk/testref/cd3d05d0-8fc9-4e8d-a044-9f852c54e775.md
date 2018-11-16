@@ -28,13 +28,14 @@ If a driver implements a control handler, the following checks run (based on the
 
 -   Scenario tests are run on the control to determine the end-to-end functionality.
 
->[!NOTE]
->  
-Implementation of extended controls, such as photo mode, require that you implement additional extended controls.
+> [!NOTE]
+> 
+> Implementation of extended controls, such as photo mode, require that you implement additional extended controls.
 
- 
+
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.Camera.Base.CameraControls</li></ul> |  
@@ -47,7 +48,7 @@ Implementation of extended controls, such as photo mode, require that you implem
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -64,7 +65,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md) and [Troubleshooting Device.Streaming Testing](troubleshooting-devicestreaming-testing.md).
 
@@ -77,11 +78,11 @@ For troubleshooting information, see [Troubleshooting System Client Testing](tro
 |---------------------------------|----------------------------------------------------------------------|
 | **DriverVerifierExcludedFlags** | Driver Verifier flags that may be manually excluded for the test run |
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -48,9 +48,9 @@ Before images can be shipped on a retail device, they must be signed by Microsof
     ```
     C:\> ImageSigner /?
     Usage:
-            imagsigner sign <FFU> <catalog file>
-            imagesigner getcatalog <FFU> <catalog file>
-            imagesigner truncate <FFU> <truncated FFU>
+            imagsigner sign <FFU> <catalog file>
+            imagesigner getcatalog <FFU> <catalog file>
+            imagesigner truncate <FFU> <truncated FFU>
     ```
 
     If you do not have a recent version of the kit that includes the updated ImageSigner, download and install the latest kit.
@@ -101,7 +101,7 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 **Important**  
 Secure all of the retail signed binaries using industry best practices.
 
- 
+ 
 
 ## Test signing images manually
 
@@ -143,7 +143,7 @@ If your development environment includes work outside of Windows ICD, you can ma
 **Note**  
 Some OEMs may want to use custom keys to manage images. This option is more complex and is not recommended.
 
- 
+ 
 
 When an image is created, an associated catalog file is also created. This catalog file is signed and then used by the ImageSigner tool to sign the FFU image. Sign the .cat file with a certificate that chains to the UEFI boot keys that are provisioned by the OEM. Different certificates are used for test and retail signing.
 
@@ -160,7 +160,7 @@ Sign the catalog file using an appropriate certificate by performing the followi
     **Important**  
     You should only use the signtool.exe with the local file **/f** option internally in a development test environment. When a hardware security modules (HSM) is used, the **/csp** option is used to specify the cryptographic service provider (CSP) that contains the private key container. You should follow industry best practices when signing image update packages for final distribution.
 
-     
+     
 
 3.  Create a signed .ffu file from the unsigned .ffu file and the matching signed .cat file using ImageSigner.exe tool.
 
@@ -192,9 +192,9 @@ ImageSigner {SIGN|GETCATALOG|TRUNCATE} FFUFile CatalogFile|TruncatedFFU
 
 [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md)
 
- 
+ 
 
- 
+ 
 
 
 

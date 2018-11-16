@@ -38,7 +38,7 @@ This method implements the **IDisposable** interface.
 
 `Protected Overrides Sub Dispose ( _`
 
-          `disposing As Boolean _`
+          `disposing As Boolean _`
 
 `) `
 
@@ -46,7 +46,7 @@ This method implements the **IDisposable** interface.
 
 `protected override void Dispose (`
 
-          `bool disposing`
+          `bool disposing`
 
 `)`
 
@@ -55,7 +55,7 @@ This method implements the **IDisposable** interface.
 
 *disposing*
 
-     A Boolean value to indicate if this is being removed.
+     A Boolean value to indicate if this is being removed.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -67,9 +67,9 @@ An exception occurs when the *projectNameToDelete* parameter is **null** or empt
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

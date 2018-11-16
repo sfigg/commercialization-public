@@ -23,7 +23,7 @@ In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpan
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
- 
+ 
 
 `SupportSearchURL` specifies the URL that the system uses to display a search link on the page of search results. For example, when a user performs a search in **Help and Support**, a link to the Original Equipment Manufacturer's (OEM's) webpage appears at the bottom of the search results. When the user clicks this link, the default web browser opens the webpage.
 
@@ -39,12 +39,12 @@ For more information on how OEMs can include their customer support contact info
 <tr class="odd">
 <td><p><em>&lt;URL&gt;</em></p></td>
 <td><p>Specifies the URL of a link to a support page. <em>&lt;URL&gt;</em> is a string.</p>
-<p>The URL can include a placeholder variable named <code>{Query}</code> for the search query. If this variable is in the URL, the system replaces the variable with the user's search query before it sends the URL to the browser:</p></td>
+<p>The URL can include a placeholder variable named <code>{Query}</code> for the search query. If this variable is in the URL, the system replaces the variable with the user&#39;s search query before it sends the URL to the browser:</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ When a user searches on the **Help and Support** page for "email", the **Support
 
 [Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md)
 
- 
+ 
 
- 
+ 
 
 
 

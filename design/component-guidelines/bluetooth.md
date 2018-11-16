@@ -32,7 +32,7 @@ Additional features that were added after Windows 10, version 1507 are marked w
 | [106476](https://launchstudio.bluetooth.com/ListingDetails/52740) | Windows 10 Version 1803                                                | Host Subsystem    | 10-April-2018 |
 | [108589](https://launchstudio.bluetooth.com/ListingDetails/55701) | Windows 10 Version 1809                                                | Host Subsystem    | 07-September-2018 |
 
- 
+ 
 
 ### Bluetooth features
 
@@ -170,7 +170,7 @@ The following table provides a summary of the Bluetooth features in the Windows�
 <td>Yes (v1.4)</td>
 </tr>
 <tr class="even">
-<td>MAP apps access to Cortana's voice</td>
+<td>MAP apps access to Cortana&#39;s voice</td>
 <td>No</td>
 <td>Yes</td>
 </tr>
@@ -192,7 +192,7 @@ The following table provides a summary of the Bluetooth features in the Windows�
 </tbody>
 </table>
 
- 
+ 
 
 <sup>\*</sup> The settings page doesn't allow this. You need to implement something programmatically using In App Pairing APIs. For more information, see [aka.ms/btdevdocs](http://aka.ms/btdevdocs).
 
@@ -223,7 +223,7 @@ The following table summarizes the supported peripheral buses and driver support
 | Non-USB   | WDK sample     | Sideband I2S/PCM connection only (HCI bypass) |
 | USB       | In-box         | In-band (SCO over HCI)                        |
 
- 
+ 
 
 The [WDK Bluetooth Serial HCI Bus Driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/bluetooth/serialhcibus) is based on the UART (H4) standard as defined in the Bluetooth SIG specification. A vendor will be required to adopt and enhance the sample for any vendor-specific device requirements around device initialization and/or power management. If desired, the vendor can adopt the sample and develop for a non-UART interface as well, i.e.: non-UART controllers will also be supported by the Bluetooth stack (given a proper vendor-supplied driver).
 
@@ -231,7 +231,7 @@ A vendor supplied serial controller driver is necessary for UART-based controlle
 
 **Note**   A non-USB connected Bluetooth controller must use a sideband channel for SCO applications, i.e.: SCO over I2S/PCM interface. Furthermore, SCO over HCI (in-band) will not be supported for non-USB controllers.
 
- 
+ 
 
 ### Transport bus driver
 
@@ -279,9 +279,9 @@ We do not recommend an external switch for controlling the on/off state of the B
 
 [Bluetooth audio enhancements - aptX® audio codec](http://www.csr.com/products/aptx)
 
- 
+ 
 
- 
+ 
 
 
 

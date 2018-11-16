@@ -64,7 +64,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -100,7 +100,7 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -128,11 +128,11 @@ This class represents an abstract pool of machines that are grouped together bas
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

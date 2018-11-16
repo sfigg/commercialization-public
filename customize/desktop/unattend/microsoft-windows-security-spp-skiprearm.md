@@ -27,7 +27,7 @@ For most deployment scenarios, this setting is no longer needed. In Windows 8, 
 
 For more information, see [Work with Product Keys and Activation](http://go.microsoft.com/fwlink/?LinkId=206615).
 
- 
+ 
 
 ## Using SkipRearm with the Windows Activation Timer
 
@@ -63,7 +63,7 @@ To ensure that an installation of an image receives the full activation grace pe
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -94,9 +94,9 @@ The following example XML output specifies that the Windows licensing state will
 
 [Microsoft-Windows-Security-SPP](microsoft-windows-security-spp.md)
 
- 
+ 
 
- 
+ 
 
 
 

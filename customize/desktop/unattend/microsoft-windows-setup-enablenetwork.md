@@ -44,7 +44,7 @@ In OEM, independent software vendor, or other customized Windows PE scenarios, 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following XML output shows how to disable network connection.
 
 [microsoft-windows-setup-](microsoft-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

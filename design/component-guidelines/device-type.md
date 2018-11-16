@@ -53,9 +53,9 @@ This is to test the pad type reporting of a Windows Precision Touchpad device.
 
 -   1/1 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

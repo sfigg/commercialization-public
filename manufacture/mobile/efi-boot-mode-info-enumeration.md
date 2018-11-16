@@ -41,9 +41,9 @@ The device is in manufacturing mode.
 
 [Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

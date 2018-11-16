@@ -53,9 +53,9 @@ NLO allows the Wi-Fi device to roam between previously used access points while 
 
 For more information about NLO, see [Wi-Fi Network List Offload](http://go.microsoft.com/fwlink/?LinkID=329749).
 
- 
+ 
 
- 
+ 
 
 
 

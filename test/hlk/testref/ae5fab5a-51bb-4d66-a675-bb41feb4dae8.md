@@ -21,6 +21,7 @@ This automated test verifies audio during power-state transitions. The test play
 Specifically, the test uses the Microsoft® DirectSound® and Wave APIs to play audio, calls Advanced Configuration and Power Interface (ACPI) functions to put the computer into a low-power state, and awakens the computer by using a wait able timer event. The test then verifies that audio still plays correctly.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Audio.Base.PowerManagement</li><li>Device.Audio.Base.JackDetection</li><li>Device.Audio.Base.Endpoints</li><li>Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading</li></ul> |  
@@ -33,7 +34,7 @@ Specifically, the test uses the Microsoft® DirectSound® and Wave APIs to play 
 |**Requires special configuration**| true |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -50,7 +51,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Audio Testing](troubleshooting-audio-testing.md).
 
@@ -90,11 +91,11 @@ Depending on BIOS, the test might require user intervention. If BIOS does not su
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/h**
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/h**
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -112,7 +113,7 @@ For command-line help for this test binary, type **/h**
 <tbody>
 <tr class="odd">
 <td><p>DevIDParse.vbs</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest \avcore\audio\scripts\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest \avcore\audio\scripts&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Lullaby.exe</p></td>
@@ -120,20 +121,20 @@ For command-line help for this test binary, type **/h**
 </tr>
 <tr class="odd">
 <td><p>Logo_win7_lullaby.pro</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest\AVCore\Audio\Profiles\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest\AVCore\Audio\Profiles&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Logo_vista_lullaby.pro</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest\AVCore\Audio\Profiles\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest\AVCore\Audio\Profiles&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>S98wtt.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest\common\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\multimediatest\common&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -145,11 +146,11 @@ For command-line help for this test binary, type **/h**
 | **WDKDeviceID**        | Device ID string                        |
 | **TestPro**            | Name of test profile                    |
 
- 
 
- 
 
- 
+
+
+
 
 
 

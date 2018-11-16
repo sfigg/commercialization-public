@@ -39,7 +39,7 @@ For information on setting up Accelerator previews, see the MSDN topic: [Search 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,9 +78,9 @@ The following XML output shows how to specify a Search Scope, including a previe
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

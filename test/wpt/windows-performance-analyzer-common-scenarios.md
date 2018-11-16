@@ -29,33 +29,33 @@ Windows Performance Analyzer (WPA) can analyze issues for desktop, mobile, and I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Windows Performance Analyzer Step-by-Step Guide](wpa-step-by-step-guide.md)</p></td>
+<td><p><a href="wpa-step-by-step-guide.md" data-raw-source="[Windows Performance Analyzer Step-by-Step Guide](wpa-step-by-step-guide.md)">Windows Performance Analyzer Step-by-Step Guide</a></p></td>
 <td><p>Opening an ETL file in WPA and opening WPA from an assessment. Select graphs, zoom in and out on a time interval, and highlight a selected time interval. Customizing data tables, searching and filtering data, and creating and applying a view profile are some of the many topics featured in the Step-by-Step Guide.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Open a Recording](open-a-recording.md)</p></td>
+<td><p><a href="open-a-recording.md" data-raw-source="[Open a Recording](open-a-recording.md)">Open a Recording</a></p></td>
 <td><p>Open any recording captured in Windows Performance Recorder (WPR) or the Assessment Platform created in WPA.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customize a Data Table](customize-a-data-table.md)</p></td>
+<td><p><a href="customize-a-data-table.md" data-raw-source="[Customize a Data Table](customize-a-data-table.md)">Customize a Data Table</a></p></td>
 <td><p>Sort by a column, change the selection column, make a column a graphing elements, and freeze column are some of the methods described.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Highlight a Time Interval Section](highlight-a-time-interval-selection.md)</p></td>
+<td><p><a href="highlight-a-time-interval-selection.md" data-raw-source="[Highlight a Time Interval Section](highlight-a-time-interval-selection.md)">Highlight a Time Interval Section</a></p></td>
 <td><p>Highlight a selection to keep the time interval selected even when you click a different location on the Analysis tab.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Recover a Profile](how-to-recover-a-profile.md)</p></td>
+<td><p><a href="how-to-recover-a-profile.md" data-raw-source="[Recover a Profile](how-to-recover-a-profile.md)">Recover a Profile</a></p></td>
 <td><p>Recover profile information you forgot to save, but also save the recovered information to a new profile, which you can apply to view the corresponding analysis.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Zoom in on a Time Interval](zoom-in-on-a-time-interval.md)</p></td>
+<td><p><a href="zoom-in-on-a-time-interval.md" data-raw-source="[Zoom in on a Time Interval](zoom-in-on-a-time-interval.md)">Zoom in on a Time Interval</a></p></td>
 <td><p>Zoom in (repeatedly) to make a time interval in a graph bigger.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -64,9 +64,9 @@ Windows Performance Analyzer (WPA) can analyze issues for desktop, mobile, and I
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

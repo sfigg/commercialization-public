@@ -40,7 +40,7 @@ This method extracts all the driver packages linked with a submission package.
 
 `Public Sub ExtractDriverPackages ( _`
 
-          `path As String, _`
+          `path As String, _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method extracts all the driver packages linked with a submission package.
 
 `public void ExtractDriverPackages (`
 
-          `string path`
+          `string path`
 
 `)`
 
@@ -57,7 +57,7 @@ This method extracts all the driver packages linked with a submission package.
 
 *path*
 
-     The path under which the driver packages are to be extracted.
+     The path under which the driver packages are to be extracted.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception is thrown if *path* is **null** or empty.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

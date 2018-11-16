@@ -27,7 +27,7 @@ ms.topic: article
 **Note**  
 This setting is ignored unless the Windows Feature **AppServer** **(Terminal Services Application Server)** is enabled in the Windows image.
 
- 
+ 
 
 ## Values
 
@@ -55,12 +55,12 @@ This setting is ignored unless the Windows Feature **AppServer** **(Terminal Ser
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 LicensingMode is an integer. If you enter a value that is not supported, the Remote Connection Manager will not be configured properly. Ensure that the value for this setting matches one of the supported values.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -93,9 +93,9 @@ For the list of the supported Windows editions and architectures that this compo
 
 [Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

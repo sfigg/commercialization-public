@@ -100,7 +100,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 6.  To set the default value for the **SMS delivery confirmation** toggle, set the value of `SMSDeliveryNotify` to one of the following:
 
@@ -127,7 +127,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

@@ -39,9 +39,9 @@ Returns the maximum number of tests that can be consolidated for multi-device te
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

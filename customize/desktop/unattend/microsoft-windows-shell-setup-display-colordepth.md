@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -79,9 +79,9 @@ The following XML output sets the display resolution to 1024x768, with 32-bit co
 
 [Display](microsoft-windows-shell-setup-display.md)
 
- 
+ 
 
- 
+ 
 
 
 

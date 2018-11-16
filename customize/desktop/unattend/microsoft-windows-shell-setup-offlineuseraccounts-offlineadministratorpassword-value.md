@@ -25,7 +25,7 @@ To configure a blank administrator password, write an empty string in Windows Sy
 **Caution**  
 Creating a blank administrator password is a security risk.
 
- 
+ 
 
 ## Values
 
@@ -38,12 +38,12 @@ Creating a blank administrator password is a security risk.
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the [OfflineAdministratorPassword](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword.md). <em>Password</em> is a string.</p></td>
+<td><p>Specifies the <a href="microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword.md" data-raw-source="[OfflineAdministratorPassword](microsoft-windows-shell-setup-offlineuseraccounts-offlineadministratorpassword.md)">OfflineAdministratorPassword</a>. <em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -66,9 +66,9 @@ Windows Server 2016
 
 For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

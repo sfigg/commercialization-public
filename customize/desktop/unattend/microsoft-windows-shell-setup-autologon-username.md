@@ -36,7 +36,7 @@ If you are deploying a multilingual Windows image, you should specify account na
 <tr class="odd">
 <td><p><em>Username</em></p></td>
 <td><p>Specifies the user account name used for autologon. <em>Username</em> is a string with a maximum length of 256 characters.</p>
-<p>Do not use any of the following characters: &quot;/\[]:|&lt;&gt;+=;,?*%@</p>
+<p>Do not use any of the following characters: &amp;amp;quot;/[]:|&amp;amp;lt;&amp;amp;gt;+=;,?*%@</p>
 <p>Do not use the name &quot;NONE&quot;, this is a restricted username.</p>
 <p>This string type does not support empty elements. Do not create an empty value for this setting.</p>
 <p>Some Unicode characters such as emoji appear as with the placeholder character: ? (question mark) in command prompts, but appear correctly in other locations such as File Explorer.</p>
@@ -45,7 +45,7 @@ If you are deploying a multilingual Windows image, you should specify account na
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -89,9 +89,9 @@ The following XML output shows how to set autologon.
 
 [AutoLogon](microsoft-windows-shell-setup-autologon.md)
 
- 
+ 
 
- 
+ 
 
 
 

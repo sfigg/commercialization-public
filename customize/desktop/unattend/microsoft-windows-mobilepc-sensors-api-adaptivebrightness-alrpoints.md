@@ -32,12 +32,12 @@ The curve is defined by the illuminance (lux) detected by an ambient light senso
 <tbody>
 <tr class="odd">
 <td><p><em>ALR_curve</em>.</p></td>
-<td><p>The ambient light curve is a string value. For information on generating an <em>ALR_curve</em> string, see [Integrating Ambient Light Sensors with Computers Running Windows 10](https://docs.microsoft.com/en-us/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update).</p></td>
+<td><p>The ambient light curve is a string value. For information on generating an <em>ALR_curve</em> string, see <a href="https://docs.microsoft.com/en-us/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update" data-raw-source="[Integrating Ambient Light Sensors with Computers Running Windows 10](https://docs.microsoft.com/en-us/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update)">Integrating Ambient Light Sensors with Computers Running Windows 10</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The *ALR\_curve* can be also generated manually, using the following format: 00+*Change\_in\_brightness\_1*,*Lux\_measurement\_1*,*Change\_in\_brightness\_2*,*Lux\_measurement\_2*,*Change\_in\_brightness\_3*,*Lux\_measurement\_3* … .
 

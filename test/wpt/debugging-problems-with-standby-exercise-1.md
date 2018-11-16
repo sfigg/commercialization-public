@@ -37,9 +37,9 @@ The analysis process related to spurious wakes is fairly straightforward.
 
 Spurious wakes are clearly identified by the report. There are 80 of them in this example. A follow-up discussion should happen with the IHV to determine why the wireless adapter is waking up the SoC unexpectedly. The underlying problem could be a bad device firmware implementation.
 
- 
+ 
 
- 
+ 
 
 
 

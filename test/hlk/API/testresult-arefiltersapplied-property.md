@@ -39,9 +39,9 @@ Returns a value indicating whether filters have been applied for this result.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

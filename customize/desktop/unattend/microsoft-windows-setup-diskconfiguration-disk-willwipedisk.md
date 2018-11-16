@@ -48,7 +48,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -138,9 +138,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md)
 
- 
+ 
 
- 
+ 
 
 
 

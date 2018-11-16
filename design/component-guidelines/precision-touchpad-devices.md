@@ -32,11 +32,11 @@ This section provides information about how to implement and validate a Windows 
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>[Precision Touchpad Implementation Guide](precision-touchpad-implementation-guide.md)</p></td>
+<td><p><a href="precision-touchpad-implementation-guide.md" data-raw-source="[Precision Touchpad Implementation Guide](precision-touchpad-implementation-guide.md)">Precision Touchpad Implementation Guide</a></p></td>
 <td><p>This section is an implementation guide for a Windows Precision Touchpad device, for Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Precision Touchpad Validation Guide](precision-touchpad-validation-guide.md)</p></td>
+<td><p><a href="precision-touchpad-validation-guide.md" data-raw-source="[Precision Touchpad Validation Guide](precision-touchpad-validation-guide.md)">Precision Touchpad Validation Guide</a></p></td>
 <td><p>This section is a validation guide for a Windows Precision Touchpad device, for Windows 10 and later operating systems.</p></td>
 </tr>
 </tbody>

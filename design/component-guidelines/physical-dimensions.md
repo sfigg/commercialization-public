@@ -41,7 +41,7 @@ This is to test the accuracy of the reported screen size (its physical dimension
 
    **Note**  Physical measurements should be accurate to +/- 2mm.
 
- 
+ 
 
 Here's a screenshot from the Physical Dimensions test.
 

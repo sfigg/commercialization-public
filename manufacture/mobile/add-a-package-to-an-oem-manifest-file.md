@@ -69,9 +69,9 @@ In this walkthrough, we will add the packages you created in [Creating mobile pa
 
 4.  Save your FM file in the %WPDKCONTENTROOT%\\FMFiles\\arm folder. For this example, let's name the file as ContosoOptionalFeatures.xml.
 
- 
+ 
 
- 
+ 
 
 
 

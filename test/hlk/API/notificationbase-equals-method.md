@@ -32,21 +32,21 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals (NotificationBase)](notificationbase-equals-method--notificationbase-.md)</p></td>
+<td><p><a href="notificationbase-equals-method--notificationbase-.md" data-raw-source="[Equals (NotificationBase)](notificationbase-equals-method--notificationbase-.md)">Equals (NotificationBase)</a></p></td>
 <td><p>This function provides value equality functionality for this object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Equals (object)](notificationbase-equals-method--object-.md)</p></td>
+<td><p><a href="notificationbase-equals-method--object-.md" data-raw-source="[Equals (object)](notificationbase-equals-method--object-.md)">Equals (object)</a></p></td>
 <td><p>Overrides the Equals function to provide value equality functionality for this object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

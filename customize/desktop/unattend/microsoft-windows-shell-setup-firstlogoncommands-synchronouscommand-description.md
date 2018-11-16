@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -80,9 +80,9 @@ The following XML output shows how to set first logon commands.
 
 [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

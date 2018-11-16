@@ -49,7 +49,7 @@ When a metric value is compared to the goal for that metric, the status is color
 **Note**  
 In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
- 
+ 
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -66,7 +66,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 **Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+ 
 
 ## <a href="" id="bkmk-fileresults"></a>Metrics
 
@@ -180,12 +180,12 @@ The results for the File Handling assessment show the performance of the compute
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If you enabled the **Enable Minifilter Diagnostic Mode** assessment setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
 
- 
+ 
 
 ## <a href="" id="bkmk-fileissues"></a>Issues
 
@@ -217,9 +217,9 @@ To resolve this issue, do one of the following:
 
 [Windows Assessment Toolkit Technical Reference](windows-assessment-toolkit-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

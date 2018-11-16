@@ -41,7 +41,7 @@ Previous versions of Windows, including Windows 8 and Windows 8 RT, require th
 
 **Note**  For more information about implementing a Bluetooth transport bus driver, see [Transport Bus Driver for Bluetooth Power Control Handling Guidelines](https://msdn.microsoft.com/library/windows/hardware/dn349726.aspx). System integrators and Bluetooth driver developers are encouraged to read this documentation in conjunction with the power management guidance that is provided in the following discussion.
 
- 
+ 
 
 ## Power management modes
 
@@ -99,7 +99,7 @@ From a software point of view, the Bluetooth radio supports three power manageme
 </tbody>
 </table>
 
- 
+ 
 
 The Bluetooth radio also supports an associated mode in which the radio transmitter can be powered down by software in response to a request from the user. When the radio is enabled for the Bluetooth device, this device is in the Active (D0) or Sleep (D2) state. When the radio for the Bluetooth device is disabled by the user, Windows stops Bluetooth activity by surprise-removing the protocol drivers and their children, submitting the HCI\_Reset command to the controller, and then transitioning the radio device stack to the Off (D3) state.
 
@@ -230,7 +230,7 @@ The Bluetooth radio is expected to be able to generate a wake interrupt when in 
 </tbody>
 </table>
 
- 
+ 
 
 ## Testing and validation
 
@@ -292,9 +292,9 @@ System integrators, Bluetooth radio vendors, and SoC vendors should use the foll
 -   The system integrator must test and verify that the Bluetooth radio does not generate spurious wake signals while in the Sleep (D2) state.
 -   The system integrator must test and verify that add-on third-party software, such as profile drivers and applications, work properly with Bluetooth radio management. The radio should be turned off and on while the third-party software is actively in use (for example, playing audio or transferring a file).
 
- 
+ 
 
- 
+ 
 
 
 

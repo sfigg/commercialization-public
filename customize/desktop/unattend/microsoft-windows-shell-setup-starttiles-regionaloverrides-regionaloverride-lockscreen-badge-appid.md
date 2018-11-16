@@ -53,9 +53,9 @@ The following XML output shows how to configure the AppId for the `LockScreen`.
 
 ```
 <LockScreen>
-  <Badge>
-      <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
-  </Badge>
+  <Badge>
+      <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
+  </Badge>
 </LockScreen>
 ```
 
@@ -70,9 +70,9 @@ The following XML output shows how to configure the AppId for the `LockScreen`.
 
 [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

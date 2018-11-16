@@ -24,21 +24,21 @@ The Deployment Image Servicing and Management (DISM) API allows you to build cus
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Basic DISM API Sample](basic-dism-api-sample.md)</p></td>
+<td><p><a href="basic-dism-api-sample.md" data-raw-source="[Basic DISM API Sample](basic-dism-api-sample.md)">Basic DISM API Sample</a></p></td>
 <td><p>Shows how to use basic DISM functionality including opening an online session, applying an unattend, and getting extended error info.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DISM API Driver Functions Sample](dism-api-driver-functions-sample.md)</p></td>
+<td><p><a href="dism-api-driver-functions-sample.md" data-raw-source="[DISM API Driver Functions Sample](dism-api-driver-functions-sample.md)">DISM API Driver Functions Sample</a></p></td>
 <td><p>Shows how to mount, commit, and unmount a WIM image, use progress callback, get and enumerate drivers, and open and close a session.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DISM API Package and Feature Functions Sample](dism-api-package-and-feature-functions-sample.md)</p></td>
+<td><p><a href="dism-api-package-and-feature-functions-sample.md" data-raw-source="[DISM API Package and Feature Functions Sample](dism-api-package-and-feature-functions-sample.md)">DISM API Package and Feature Functions Sample</a></p></td>
 <td><p>Shows how to mount a VHD, get image info, get packages, get package info, add a package, get features, and how to commit while unmounting the image.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -51,9 +51,9 @@ The Deployment Image Servicing and Management (DISM) API allows you to build cus
 
 [DISM API Troubleshooting](dism-api-troubleshooting.md)
 
- 
+ 
 
- 
+ 
 
 
 

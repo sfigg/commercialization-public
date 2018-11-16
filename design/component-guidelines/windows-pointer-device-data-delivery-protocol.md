@@ -22,9 +22,9 @@ This section provides information about Windows 8 devices that support the pen,
 
 -   [Design Guide](windows-pointer-device-design-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

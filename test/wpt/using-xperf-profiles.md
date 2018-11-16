@@ -95,9 +95,9 @@ This section shows how to capture traces by using profiles. If you are analyzing
 
 [Xperf Profiles](xperf-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

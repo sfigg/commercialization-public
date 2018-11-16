@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated.
 
- 
+ 
 
 This method creates a target from [TargetData](targetdata-class.md), and adds it to this product instance.
 
@@ -35,7 +35,7 @@ Calls the overload method and creates the [Target](target-class.md) without addi
 
 `public Target CreateTarget (`
 
-          `TargetData data`
+          `TargetData data`
 
 `)`
 
@@ -44,7 +44,7 @@ Calls the overload method and creates the [Target](target-class.md) without addi
 
 *data*
 
-     The [TargetData](targetdata-class.md) to use to create the target.
+     The [TargetData](targetdata-class.md) to use to create the target.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -61,9 +61,9 @@ Any target has to be a child of a [TargetFamily](targetfamily-class.md). Any har
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

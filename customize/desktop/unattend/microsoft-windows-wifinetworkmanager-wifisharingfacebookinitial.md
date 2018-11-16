@@ -50,7 +50,7 @@ This is an initial setting and will be overwritten when settings are pushed to t
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -73,9 +73,9 @@ Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WiFiNetworkManager](microsoft-windows-wifinetworkmanager.md).
 
- 
+ 
 
- 
+ 
 
 
 

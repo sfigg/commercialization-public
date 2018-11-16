@@ -53,7 +53,7 @@ When you generalize the computer, use an answer file that has the Microsoft-Wind
 **Important**  
 Avoid using the **PersistAllDeviceInstalls** setting when the hardware and the hardware configuration on the reference computer are not identical to those of the destination computers. Even seemingly minor differences in hardware or hardware configuration can cause severe or easily overlooked problems. For more information, see the [Troubleshooting Hardware Configuration Differences](#bkmk_4) section of this topic.
 
- 
+ 
 
 It's a good practice not to use the **PersistAllDeviceInstalls** setting on your primary reference image. Instead, for each group of computers that have a different hardware configuration, first load your primary reference image onto a new reference computer that has the planned hardware configuration. Next, capture a new image of this setup and use the **PersistAllDeviceInstalls** setting.
 
@@ -250,7 +250,7 @@ Boot-critical driver packages can belong to any of the following Windows device
 </tbody>
 </table>
 
- 
+ 
 
 For more information about these device setup classes, see [System-Supplied Device Setup Classes](http://go.microsoft.com/fwlink/?LinkId=237677) on MSDN.
 
@@ -263,7 +263,7 @@ To deploy hardware that may not be present or detected on first boot, add any ap
 **Important**  
 Using the **DoNotCleanUpNonPresentDevices** setting can lead to the unnecessary storage of excess device states and contribute to slower boot times.
 
- 
+ 
 
 ## <span id="bkmk_5"></span><span id="BKMK_5"></span>Troubleshooting Driver Conflicts
 
@@ -340,9 +340,9 @@ The IHV can help resolve the conflict by using one of these options:
 
 [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,7 +27,7 @@ The test renders test sounds that are captured by the microphone.
 
 **Note**  This step-by-step guide is also available to view as a lab video on Channel 9, which features videos for developers from the people building Microsoft Products and Services: <https://channel9.msdn.com/Events/WinHEC/2015/OWDHOL301>
 
- 
+ 
 
 ## Step 1: Prepare the system to run the tests
 
@@ -84,9 +84,9 @@ The test renders test sounds that are captured by the microphone.
 
 2.  View the **Average**, **Max**, and **Min** delay values that are sent to the command prompt window.
 
- 
+ 
 
- 
+ 
 
 
 

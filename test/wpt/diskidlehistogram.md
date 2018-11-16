@@ -26,7 +26,7 @@ This action produces a histogram that displays all disk activity and idle time.
 ## Options
 
 
-<a href="" id="-disknum-n-"></a>**-disknum***&lt;n&gt;*  
+<a href="" id="-disknum-n-"></a>**-disknum**<em>&lt;n&gt;</em>  
 *n* indicates the disk number (0-based disk index). The default value is to output histograms for all disks.
 
 <a href="" id="-bucketsb1-b2---bn"></a>**-buckets***B1 B2 … Bn*  
@@ -95,7 +95,7 @@ A disk idle histogram displays the distribution of disk idle time and the number
 </tbody>
 </table>
 
- 
+ 
 
 The first row shows the histogram’s buckets: different ranges of idle length.
 
@@ -122,10 +122,10 @@ The follow command would produce the buckets in the following list: **-buckets 1
 <a href="" id="-idletimeoutt1-t2---tn"></a>**-idletimeout***T1 T2 … Tn*  
 Arguments indicate the idle timeout, in seconds. The default values are 5, 60, 180, 600, and 1800.
 
-<a href="" id="-idletheshold-t-"></a>**-idletheshold***&lt;t&gt;*  
+<a href="" id="-idletheshold-t-"></a>**-idletheshold**<em>&lt;t&gt;</em>  
 Arguments indicate the idle threshold, in seconds. Idle periods shorter than this threshold are ignored.
 
-<a href="" id="-spindownoverhead-t-"></a>**-spindownOverhead***\[t\]*  
+<a href="" id="-spindownoverhead-t-"></a>**-spindownOverhead**<em>\[t\]</em>  
 If you do not specify an argument, the default value is 0.
 
 Using a sequence of disk I/O timestamps and a specified idle timeout, you can compute when the disk would be spun down and how much time it can stay in spun-down state, as illustrated in the following table.
@@ -165,7 +165,7 @@ Using a sequence of disk I/O timestamps and a specified idle timeout, you can co
 </tbody>
 </table>
 
- 
+ 
 
 The first row shows the idle timeout values of interest for estimating spun-down time. The second row shows the estimated total spun-down time corresponding to each timeout. In this example, a timeout of 5 seconds yielded the total spun-down time of 3800 seconds. The third row shows the estimated number of times the disk is spun down for each timeout value.
 
@@ -178,12 +178,12 @@ Files matching the provided full file paths are excluded. You must specify the f
 <a href="" id="-exc-filestrstring1-string2---stringn"></a>**-exc\_filestr***String1 String2 … StringN*  
 Files containing one or more of the provided strings are excluded.
 
-<a href="" id="-exc-filere-regx-"></a>**-exc\_filere***&lt;regx&gt;*  
+<a href="" id="-exc-filere-regx-"></a>**-exc\_filere**<em>&lt;regx&gt;</em>  
 Files matching the provided ATL regular expression are excluded. For example, you can ignore all files ending with .dll by specifying the expression ".\*\\.dll".
 
 **Note**   When defining a new line, you must include a return character. Instead of using **\\n**, use **\\r\\n**. By including both characters (carriage return = r; line feed = n), you create a line terminator. This is helpful when creating a [regions of interest](regions-of-interest.md) file.
 
- 
+ 
 
 ## Remarks
 
@@ -215,7 +215,7 @@ For each file, this is the maximum interval between two subsequent I/Os to this 
 **Note**  
 Use both of these metrics and per-file histograms for a comprehensive picture of disk activity.
 
- 
+ 
 
 Avoid perturbing the disk(s) under study by using a different physical disk (or device such as a USB flash drive) to collect the trace.
 
@@ -241,9 +241,9 @@ xperf -d trace.etl
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

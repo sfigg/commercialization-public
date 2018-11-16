@@ -85,7 +85,7 @@ It is recommended to have the drivers' package version numbers follow a similar 
 **Warning**  
 All user data and settings are preserved when updates are installed to the device. You are required to ensure that user settings are preserved when devices are updated.
 
- 
+ 
 
 The majority of updates are made to the main OS. There may be a need to update other partitions in the device. This section provides information about which partitions can be updated.
 
@@ -94,7 +94,7 @@ For info about the SV partitions, contact the SoC vendor.
 **Important**  
 Partition layout changes are not supported on the device.  If you submit binary partition packages that depend on a new partition layout, undefined results may occur when they are applied to the device
 
- 
+ 
 
 The following partitions can be updated:
 
@@ -136,9 +136,9 @@ Every time you change an ACPI table in a BSP update, you should increment the **
 
 [New-RequestForUpdate cmdlet](new-requestforupdate-cmdlet.md)
 
- 
+ 
 
- 
+ 
 
 
 

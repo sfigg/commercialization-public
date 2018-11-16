@@ -29,6 +29,7 @@ You can use this test to evaluate:
 -   A legacy driver's **PrintTicket** and **PrintCapabilities** shim layer. You can test the **PrintTicket** and **PrintCapabilities** API calls for legacy printers that do not support the **IPrintTicketProvider** interface.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Imaging.Printer.Base.printTicket</li><li>Device.Imaging.3DPrinter.Base.PrintTicket</li></ul> |  
@@ -41,7 +42,7 @@ You can use this test to evaluate:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -58,15 +59,15 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Imaging Testing](troubleshooting-deviceimaging-testing.md).
 
->[!WARNING]
->  
-Any attempt to change the system default printer while the test is running might lead to inconsistent results.
+> [!WARNING]
+> 
+> Any attempt to change the system default printer while the test is running might lead to inconsistent results.
 
- 
+
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 
@@ -80,11 +81,11 @@ Any attempt to change the system default printer while the test is running might
 | **TestExecutableName** | Test Executable name.                    |
 | **WDKPrinterName**     | Printer name.                            |
 
- 
 
- 
 
- 
+
+
+
 
 
 

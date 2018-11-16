@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ The following XML output shows the value for the `DynamicUpdate` setting.
 
 [DynamicUpdate](microsoft-windows-setup-dynamicupdate.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -72,8 +72,8 @@ Most of the issues that appear in the details pane in the Windows Assessment Con
         -   Impact of each thread of the process, including the duration of the delay
         -   Call stacks for each thread that causes the delay or is affected by it
 
-            > [!NOTE]
-            > The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
+>[!NOTE]
+>The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
 ## Managed Code
@@ -107,8 +107,8 @@ Process *&lt;X&gt;* uses the CPU for 5.3 seconds during Fast startup resume post
 
 In the **Further analysis** area of the issue, choose the WPA in-depth analysis link to determine which function of the process needs further investigation. Excessive processor use can occur in more than one thread at a time. For each thread that's involved, view the function call stacks in WPA.
 
-> [!NOTE] 
-> The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
+>[!NOTE]
+>The information that the call stacks provide is a statistical representation of an activity. Its accuracy depends on the samples that the assessment collected.
 
 
 ## Storage Use
@@ -405,8 +405,8 @@ The Issue Details list each thread preempted by the ISR/DPC. The list is roughly
 
 DPC exceeds the threshold of 1.0 milliseconds 5 times during Media engine lifetime. The 5 instances of this DPC run for a combined total of 3.7 seconds
 
-> [!NOTE]
-> The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
+>[!NOTE]
+>The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
 ## Summary Issues
@@ -423,8 +423,8 @@ The issue’s details in WPA contain file image information, and recommendations
 
 Summary: Fast startup overall resume issues 275MB of reads and writes, and flushes 82 times to storage
 
-> [!NOTE]
-> When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
+>[!NOTE]
+>When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Storage Use** group.
 
 **Processor use summary**
 
@@ -436,8 +436,8 @@ The summary issue provides details per process in descending order of impact. Fo
 
 Summary: Processes use 26.9 seconds of CPU time during Fast startup overall resume
 
-> [!NOTE]
-> When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
+>[!NOTE]
+>When issues are grouped by **Category** on the **Results View** page, this summary issue appears above its related issues under the **Processor Use** group.
 
 **Processor and disk contention summary**
 
@@ -461,8 +461,8 @@ To get the full benefits of summary issues, you can group the list of issues in 
 
 -   **Test case**. In this view, the Summary Issue is grouped together with the subset of issues that apply to a particular activity or test case.
 
-> [!WARNING]
-> The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
+>[!WARNING]
+>The information provided in the call stacks is a statistical representation of the activity in question (sampled once every millisecond), and its accuracy is dependent on the samples collected by the assessment.
 
 
 ## Assessment Logging

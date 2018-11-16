@@ -69,8 +69,8 @@ This lab uses the following three sample hardware configurations.
 | Windows desktop applications | No           | Yes                 | Yes                               |
 | Office 2016                  | No           | Yes                 | Yes                               |
 | Compact OS                   | Yes          | Yes                 | No                                |
- 
- Notes:
+ 
+ Notes:
 * We can build an image for Hardware Configuration 1B by using Hardware Configuration 1 as a base image.
 * We can't build Hardware Configuration 2 from either Hardware Configuration 1 or 1B, because they use a different architecture.
 

@@ -26,37 +26,37 @@ This section provides information about servicing an existing Windows image usin
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Use DISM in Windows PowerShell](use-dism-in-windows-powershell-s14.md)</p></td>
+<td align="left"><p><a href="use-dism-in-windows-powershell-s14.md" data-raw-source="[Use DISM in Windows PowerShell](use-dism-in-windows-powershell-s14.md)">Use DISM in Windows PowerShell</a></p></td>
 <td align="left"><p>Import DISM cmdlets into a Windows PowerShell environment.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md)</p></td>
+<td align="left"><p><a href="copy-dism-to-another-computer.md" data-raw-source="[Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md)">Install Windows 10 using a previous version of Windows PE</a></p></td>
 <td align="left"><p>Use the Windows 10 version of DISM on a previous version of Windows PE to deploy Windows 10.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Create and Manage a Windows Image Using DISM](create-and-manage-a-windows-image-using-dism.md)</p></td>
+<td align="left"><p><a href="create-and-manage-a-windows-image-using-dism.md" data-raw-source="[Create and Manage a Windows Image Using DISM](create-and-manage-a-windows-image-using-dism.md)">Create and Manage a Windows Image Using DISM</a></p></td>
 <td align="left"><p>Capture, mount, or apply a Windows image.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Take Inventory of an Image or Component Using DISM](take-inventory-of-an-image-or-component-using-dism.md)</p></td>
+<td align="left"><p><a href="take-inventory-of-an-image-or-component-using-dism.md" data-raw-source="[Take Inventory of an Image or Component Using DISM](take-inventory-of-an-image-or-component-using-dism.md)">Take Inventory of an Image or Component Using DISM</a></p></td>
 <td align="left"><p>Get information about an online or offline image and how to get information about the components in an image.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Service a Windows Image Using DISM](service-a-windows-image-using-dism.md)</p></td>
+<td align="left"><p><a href="service-a-windows-image-using-dism.md" data-raw-source="[Service a Windows Image Using DISM](service-a-windows-image-using-dism.md)">Service a Windows Image Using DISM</a></p></td>
 <td align="left"><p>Modify or service a Windows image by adding or removing drivers, packages, features, language packs, or by changing the Windows image to a higher edition.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Repair a Windows Image](repair-a-windows-image.md)</p></td>
+<td align="left"><p><a href="repair-a-windows-image.md" data-raw-source="[Repair a Windows Image](repair-a-windows-image.md)">Repair a Windows Image</a></p></td>
 <td align="left"><p>Repair a Windows Image if the operating system has become corrupted or the image is unserviceable.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Manage the Component Store](manage-the-component-store.md)</p></td>
+<td align="left"><p><a href="manage-the-component-store.md" data-raw-source="[Manage the Component Store](manage-the-component-store.md)">Manage the Component Store</a></p></td>
 <td align="left"><p>Get information about the component store (WinSxS folder) and about how to reduce the size of the WinSxS folder.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -65,9 +65,9 @@ This section provides information about servicing an existing Windows image usin
 
 [DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,12 +33,12 @@ All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run i
 <tbody>
 <tr class="odd">
 <td><p><em>Path_to_command</em></p></td>
-<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a UNC path. If the path is a UNC path, [Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md) must be specified. <em>Path_to_command</em> is a string.</p></td>
+<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a UNC path. If the path is a UNC path, <a href="microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md" data-raw-source="[Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md)">Credentials</a> must be specified. <em>Path_to_command</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -87,9 +87,9 @@ The following XML output shows how to configure asynchronous commands to run.
 
 [RunAsynchronousCommand](microsoft-windows-setup-runasynchronous-runasynchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Path_and_file_name</em></p></td>
-<td><p>Specifies the location and the name of the icon to associate with the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. <em>Path_and_file_name</em> is a string.</p></td>
+<td><p>Specifies the location and the name of the icon to associate with the <a href="microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md" data-raw-source="[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)">FavoriteItem</a> in the Favorites folder, for example, C:\Windows\favlink2.ico. <em>Path_and_file_name</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -84,9 +84,9 @@ The following XML output specifies how to configure favorites.
 
 [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

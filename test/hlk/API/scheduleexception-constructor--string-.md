@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **ScheduleException** class.
 
 `Public Sub New`
 
-          `message As String _`
+          `message As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **ScheduleException** class.
 
 `Public ScheduleException (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -55,16 +55,16 @@ This constructor initializes a new instance of the **ScheduleException** class.
 
 *message*
 
-     A string that represents the message for the exception.
+     A string that represents the message for the exception.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

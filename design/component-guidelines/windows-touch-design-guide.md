@@ -36,9 +36,9 @@ This section includes the following topics:
 
 For information about HID minidrivers for pen devices, see [Requirements on Tablet PC HID Minidrivers](https://msdn.microsoft.com/library/windows/hardware/jj131709).
 
- 
+ 
 
- 
+ 
 
 
 

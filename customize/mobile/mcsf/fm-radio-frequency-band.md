@@ -83,7 +83,7 @@ OEMs can change the default setting for the FM radio receiver to use an appropri
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

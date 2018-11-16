@@ -27,15 +27,15 @@ The following topics provide reference information about Windows System Image M
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Component Settings and Properties Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/component-settings-and-properties-reference)</p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/component-settings-and-properties-reference" data-raw-source="[Component Settings and Properties Reference](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/component-settings-and-properties-reference)">Component Settings and Properties Reference</a></p></td>
 <td><p>Describes the structure of answer files, along with the attributes and elements that components and settings use.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows System Image Manager Architecture](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-architecture)</p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-architecture" data-raw-source="[Windows System Image Manager Architecture](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-architecture)">Windows System Image Manager Architecture</a></p></td>
 <td><p>Describes how Windows SIM works.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows System Image Manager Supported Platforms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-supported-platforms)</p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-supported-platforms" data-raw-source="[Windows System Image Manager Supported Platforms](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-supported-platforms)">Windows System Image Manager Supported Platforms</a></p></td>
 <td><p>Lists the supported platforms where you can install Windows SIM.</p></td>
 </tr>
 </tbody>

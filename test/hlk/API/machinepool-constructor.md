@@ -31,17 +31,17 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MachineException Constructor ()](machineexception-constructor---.md)</p></td>
+<td><p><a href="machineexception-constructor---.md" data-raw-source="[MachineException Constructor ()](machineexception-constructor---.md)">MachineException Constructor ()</a></p></td>
 <td><p>This constructor initializes a new instance of the <strong>MachinePool</strong> class.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

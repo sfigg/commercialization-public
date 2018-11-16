@@ -63,9 +63,9 @@ The ID value is different for a machine when connected to a database and the sam
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

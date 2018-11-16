@@ -34,7 +34,7 @@ For more information about results produced by this assessment, see [Results for
 
 **Warning**  Ensure that Microsoft Edge is your default HTTP protocol handler. To verify this, launch the Settings app and navigate to "System -&gt; Default apps -&gt; Choose default apps by protocol". Check that Microsoft Edge is selected for HTTP.
 
- 
+ 
 
 For best results:
 
@@ -82,7 +82,7 @@ The following table describes the assessment settings, recommended setting value
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -93,9 +93,9 @@ The following table describes the assessment settings, recommended setting value
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

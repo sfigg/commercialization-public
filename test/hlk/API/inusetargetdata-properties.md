@@ -56,16 +56,16 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [InUseTargetData Struct](inusetargetdata-struct.md)
 
- 
+ 
 
- 
+ 
 
 
 

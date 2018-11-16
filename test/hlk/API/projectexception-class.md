@@ -38,7 +38,7 @@ This class is a base class for all logo manager exceptions.
 
 `Public Class ProjectException`
 
-          `Inherits ProjectManagerException`
+          `Inherits ProjectManagerException`
 
 **C#**
 
@@ -51,20 +51,20 @@ This class is a base class for all logo manager exceptions.
 
 **System.Object**
 
-     **System.Exception**
+     **System.Exception**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
-               **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectException**                     **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageException**
+               **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectException**                     **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -137,7 +137,7 @@ Starting in Windows 10, this setting can be hidden on systems that do not suppor
 | Registry key                                               | Type  | Units             |
 |------------------------------------------------------------|-------|-------------------|
 | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Pen\HideSPTSettings | DWORD | Boolean (1 or 0) |
- 
+ 
 
 **Touch Interactions with Pen In-Range**
 
@@ -159,6 +159,6 @@ Here's the registry key that can be used to set the pinch/zoom delay value.
 |------------------------------------------------------------|-------|-------------------|
 | HKLM\\SOFTWARE\\Microsoft\\Palm\\DelayManipulationDuration | DWORD | Milliseconds (ms) |
 
- 
+ 
 
 Note that this registry setting and the related delay zoom mechanism are only effective on Windows 10 systems which expose an integrated pen digitizer.

@@ -57,7 +57,7 @@ The integer value is derived from the following binary values:
 </tbody>
 </table>
 
- 
+ 
 
 For example, a combination of **Physical** and **Application** has a value of 0x41 (65).
 
@@ -79,7 +79,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -133,9 +133,9 @@ The following XML sample output shows how to set SNMP.
 
 [RFC1156Agent](microsoft-windows-snmp-agent-service-rfc1156agent.md)
 
- 
+ 
 
- 
+ 
 
 
 

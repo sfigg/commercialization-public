@@ -37,13 +37,13 @@ For more information on how OEMs can include their customer support contact info
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport.md" data-raw-source="[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)">HelpAndSupport</a></p></td>
 <td><p>Contains settings to specify OEM information for a customized <strong>Help and Support</strong> page.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -79,9 +79,9 @@ The following example shows how to set a customized **Help and Support** page. T
 
 [OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
- 
+ 
 
- 
+ 
 
 
 

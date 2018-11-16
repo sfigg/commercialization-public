@@ -39,11 +39,11 @@ The following image shows the Studio **Project** tab.
 
 The right pane displays project details. More information is displayed here once you start testing your device. You can check the status of any project by loading it and referring to this pane.
 
-To learn more about this page, see [HLK Studio - Project Tab](..\user\hlk-studio---project-tab.md).
+To learn more about this page, see [HLK Studio - Project Tab](../user/hlk-studio---project-tab.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 If this value is set to **true**, you cannot set a value for [InternalAdapter](microsoft-windows-sharedaccess-internaladapter.md), and [EnableICS](microsoft-windows-sharedaccess-enableics.md) must also be **true**.
 
- 
+ 
 
 This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
@@ -47,7 +47,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -82,9 +82,9 @@ The following XML output shows how to set Shared Access.
 
 [Bridge](microsoft-windows-networkbridge-bridge.md)
 
- 
+ 
 
- 
+ 
 
 
 

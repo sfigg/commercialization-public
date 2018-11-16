@@ -18,9 +18,9 @@ ms.topic: article
 
 This interface is for all classes that can have update events.
 
- 
+ 
 
- 
+ 
 
 
 

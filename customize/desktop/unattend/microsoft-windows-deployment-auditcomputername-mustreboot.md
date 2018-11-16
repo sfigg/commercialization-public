@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -81,9 +81,9 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [AuditComputerName](microsoft-windows-deployment-auditcomputername.md)
 
- 
+ 
 
- 
+ 
 
 
 

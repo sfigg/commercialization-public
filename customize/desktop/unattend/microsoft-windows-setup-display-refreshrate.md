@@ -25,7 +25,7 @@ This setting is used to configure only Windows PE, and is not applied to the Wi
 **Note**  
 We recommend that you use the default settings. If you select a value for this setting that is not supported by Windows PE, your video adapter, or the display monitor, then Windows PE might show only a blank screen and will not display an error.
 
- 
+ 
 
 ## Values
 
@@ -45,7 +45,7 @@ We recommend that you use the default settings. If you select a value for this s
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -81,9 +81,9 @@ The following XML output sets the display resolution to 640x480, with 16-bit col
 
 [Display](microsoft-windows-setup-display.md)
 
- 
+ 
 
- 
+ 
 
 
 

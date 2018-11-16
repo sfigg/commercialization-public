@@ -36,7 +36,7 @@ This **PackageWriter** class creates or updates submission packages.
 
 `Public Class PackageWriter`
 
-          `Implements IDisposable`
+          `Implements IDisposable`
 
 **C#**
 
@@ -47,16 +47,16 @@ This **PackageWriter** class creates or updates submission packages.
 
 **System.Object**
 
-    **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageWriter**
+    **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageWriter**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

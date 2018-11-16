@@ -78,7 +78,7 @@ The **-d** and **-nt** options cannot be used together.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="joliet"></span><span id="JOLIET"></span>Joliet Options
 
@@ -114,7 +114,7 @@ The **-j2** Joliet option cannot be used with any UDF options.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="udf"></span><span id="UDF"></span>UDF Options
 
@@ -168,7 +168,7 @@ UDF options cannot be combined with ISO 9660 options. The **-ue**, **-uf**, and 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="bootOptions"></span><span id="bootoptions"></span><span id="BOOTOPTIONS"></span>CD or DVD Boot Options
 
@@ -211,12 +211,12 @@ Boot options can be used to create bootable CD or DVD images. The following boot
 </tbody>
 </table>
 
- 
+ 
 
 **Important**  
 Single-boot entries and multi-boot entries cannot be combined in the same command.
 
- 
+ 
 
 The following boot options can be used to generate multi-boot entries. For more information, see [Use multi-boot entries to create an image file](#examples_multi-boot).
 
@@ -267,7 +267,7 @@ The following boot options can be used to generate multi-boot entries. For more 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="optim"></span><span id="OPTIM"></span>Optimization Options
 
@@ -300,7 +300,7 @@ Optimization options can be used to optimize storage by encoding duplicate files
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="order"></span><span id="ORDER"></span>Order Options
 
@@ -332,7 +332,7 @@ The **-yo** option takes precedence over the **-y5** option.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="video"></span><span id="VIDEO"></span>DVD Video and Audio Options
 
@@ -361,7 +361,7 @@ The DVD video and audio disk creation options cannot be combined with ISO 9660, 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="mess"></span><span id="MESS"></span>Messaging Options
 
@@ -410,7 +410,7 @@ Messaging options customize how file and directory information appears.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="general"></span><span id="GENERAL"></span>General Image Creation Options
 
@@ -485,7 +485,7 @@ The **-m** and **-maxsize** options cannot be used together.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -600,9 +600,9 @@ For example, D:\\cdimage would resemble the following (where D is the drive lett
 
 [Windows Deployment Command-Line Tools Reference](windows-deployment-command-line-tools-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

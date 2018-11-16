@@ -28,14 +28,14 @@ In Windows 10, there are no predefined colors. All the named colors (`Color 1` t
 
 There are two options for setting `WindowColor` in unattend.xml.
 
-1.   Set `WindowColor` to `Automatic`. Use this value to select a color that’s harmonious with the color palette of the desktop wallpaper. `Automatic` sets `WindowColor` to a color that is harmonious with the color palette of the desktop wallpaper will be chosen.
-The default color is a shade of blue (`0xff0078d7`).
-2.   Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example `0xffcc5029`. This value has an A or Alpha value of `ff` hexadecimal, then a red value of `9b`, a green value of `cc`, and a blue value of `29` hexadecimal. Any letters in the hexadecimal value should be lowercase, and the value must include the `0x` prefix. The ARGB color `0xff9bcc29` looks like this:
+1. Set `WindowColor` to `Automatic`. Use this value to select a color that’s harmonious with the color palette of the desktop wallpaper. `Automatic` sets `WindowColor` to a color that is harmonious with the color palette of the desktop wallpaper will be chosen.
+   The default color is a shade of blue (`0xff0078d7`).
+2. Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example `0xffcc5029`. This value has an A or Alpha value of `ff` hexadecimal, then a red value of `9b`, a green value of `cc`, and a blue value of `29` hexadecimal. Any letters in the hexadecimal value should be lowercase, and the value must include the `0x` prefix. The ARGB color `0xff9bcc29` looks like this:
 
-    ![0xff9bcc29](images/0xff9bcc29.png)
+   ![0xff9bcc29](images/0xff9bcc29.png)
 
-    The opacity (also known as alpha) value is ignored and has no bearing on the color. `00` is completely transparent, and `ff` is fully opaque. 
-    To learn more about ARGB values, see the [Color.ToArgb Method ()](https://msdn.microsoft.com/en-us/library/system.drawing.color.toargb(v=vs.110).aspx).
+   The opacity (also known as alpha) value is ignored and has no bearing on the color. `00` is completely transparent, and `ff` is fully opaque. 
+   To learn more about ARGB values, see the [Color.ToArgb Method ()](https://msdn.microsoft.com/en-us/library/system.drawing.color.toargb(v=vs.110).aspx).
 
 Due to the large number of surfaces that are impacted by the color choice, avoid using colors that are too dark or too bright when setting `WindowColor`. The brightness of the selected color is enforced by the system to ensure readability of text. A very dark or light color will be lightened or darkened by the system. The specified `WindowColor` should have a luminosity range of 25% to 75% when converted to Hue, Saturation, and Luminosity (HSL) values. It is recommended that you use a tool that supports HSL to select your color and adjust the luminosity to be within a 25% to 75% range before you convert it to RGB to specify the WindowColor. This means that both black and white are prohibited values for WindowColor. Any color outside a luminosity value of 25% to 75% is changed by Windows. If you pick white, for instance, you will get light grey. 
 
@@ -79,7 +79,6 @@ The following XML output shows how to set the default `WindowColor` to match the
    <WindowColor>Automatic</WindowColor>
    <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
 </Themes>
-
 ```
 
 ## Related topics

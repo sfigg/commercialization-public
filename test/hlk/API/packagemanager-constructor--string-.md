@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **PackageManager** class.
 
 `Public Sub New ( _`
 
-          `packagePath As String _`
+          `packagePath As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **PackageManager** class.
 
 `public PackageException (`
 
-          `string packagePath`
+          `string packagePath`
 
 `)`
 
@@ -55,16 +55,16 @@ This constructor initializes a new instance of the **PackageManager** class.
 
 *packagePath*
 
-     The path to the package file that this instance manages.
+     The path to the package file that this instance manages.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
 An exception is thrown if *packagePath* is null or invalid, or if there is more than one relationship.
 
- 
+ 
 
- 
+ 
 
 
 

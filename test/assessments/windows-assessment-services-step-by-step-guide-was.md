@@ -61,7 +61,7 @@ To successfully complete the steps outlined in this guide, verify that you have 
         **Note**  
         You can use Windows Server 2008 R2 in this scenario. However, Windows Server 2008 R2 does not support Dynamic Driver Provisioning (DDP) as described in step 1 and step 2, where it is used to add NIC drivers and import additional drivers to the driver store. You can work around this by using Deployment Image Servicing and Management (DISM) to add drivers to your Windows image offline. For more information, see [Deployment Image Servicing and Management (DISM) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214571).
 
-         
+         
 
 -   One or more test computers that have the following:
 
@@ -74,7 +74,7 @@ To successfully complete the steps outlined in this guide, verify that you have 
     **Note**  
     The test computers can be bare metal computers (no operating system installed), or computers that are running Windows 8.
 
-     
+     
 
 -   A Windows 8 image (if you are using bare metal computers)
 
@@ -131,7 +131,7 @@ In this step, you create a project by selecting a set of test computers from you
     **Note**  
     If your test computers already have a running operating system, you do not have to add images to the project.
 
-     
+     
 
 The Windows ASC home page opens.
 
@@ -195,7 +195,7 @@ In this step, you create a job, adjust the settings, and store a job in your pro
     **Warning**  
     The computer and the image architecture must match, except that you can select an x86-based image to deploy to an x64-based computer.
 
-     
+     
 
 ## <a href="" id="bkmk-wastr-step5"></a>Step 4: Run the Job
 
@@ -213,7 +213,7 @@ You can run a job on all the assets that you added to the project, run a job on 
 
     When the job finishes, the results are copied back to the server at \\\\%WAS-Server%\\relax\\results\\%Project%\\%TestPass%\\%JobName%\\%ComputerName%\\%JobInstanceTag%\_%TimeStamp%\\.
 
-     
+     
 
 3.  When the Results tab opens, review the progress of the job on each computer.
 
@@ -224,7 +224,7 @@ You can run a job on all the assets that you added to the project, run a job on 
     **Note**  
     If you are applying an image to your test machine, it might take a few minutes for the task to finish.
 
-     
+     
 
 ## <a href="" id="bkmk-wastr-step6"></a>Step 5: Review the Results
 
@@ -242,7 +242,7 @@ In this step, you view the results for the completed job.
     **Note**  
     The **View Results** button is unavailable until a job instance is complete and highlighted.
 
-     
+     
 
 3.  On the **Results Overview** page, review the total number of Errors and Warnings that were reported for each computer in the **Overview: Overall issues** table.
 
@@ -283,9 +283,9 @@ Create another job and try other assessments, add more computers, or use a diffe
 
 [Analyze results on another device](analyze-results-on-another-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

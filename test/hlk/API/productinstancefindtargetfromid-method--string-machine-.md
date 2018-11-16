@@ -44,9 +44,9 @@ This method returns an appropriate target type based on information associated w
 
 `Public Function FindTargetFromId ( _`
 
-          `targetId As String, _`
+          `targetId As String, _`
 
-          `machine As Machine _`
+          `machine As Machine _`
 
 `) As ReadOnlyCollection(Of TargetData)`
 
@@ -54,9 +54,9 @@ This method returns an appropriate target type based on information associated w
 
 `public ReadOnlyCollection<TargetData> FindTargetFromId (`
 
-          `string targetId`
+          `string targetId`
 
-          `Machine machine`
+          `Machine machine`
 
 `)`
 
@@ -65,11 +65,11 @@ This method returns an appropriate target type based on information associated w
 
 *targetId*
 
-     The ID that identifies the target. This can be found in the SysParse data.
+     The ID that identifies the target. This can be found in the SysParse data.
 
 *machine*
 
-     The test computer to look for the ID value on.
+     The test computer to look for the ID value on.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -86,9 +86,9 @@ An exception is thrown when the *targetIdToDelete* parameter is **null** or empt
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

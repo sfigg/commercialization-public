@@ -26,11 +26,11 @@ The following guides provide step-by-step exercises to help you understand, reco
 
 **Note**  The exercises in each step-by-step guide build on the previous exercise(s) in their respective guide. For example, in the Memory Footprint Optimization step-by-step guide, featured exercises include identifying processes with large working sets, tracking user mode process allocations, and tracking driver footprint and dynamic allocations during boot.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

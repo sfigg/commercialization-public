@@ -36,7 +36,7 @@ The test ensures that all UI elements in the system can be accurately targeted b
 
 **Note**  The test is using DIPS, not physical pixels, so make sure that the test is running on a system with an appropriate scale factor for the display. If the test is run at 100% scaling, the test will be more difficult.
 
- 
+ 
 
 **Tools required**
 
@@ -71,7 +71,7 @@ Quick toss is a punctuated panning motion that scrolls quickly through pages of 
 
 **Note**  When inertia is applied and the tester cannot pan the color screen accordingly (that is, a faster swipe does not make color screens scroll faster), this test should be treated as a valid fail because the user cannot pan smoothly by using the desired velocity.
 
- 
+ 
 
 *Keyboard*
 
@@ -103,7 +103,7 @@ The Edgy test models the edge gestures that perform such actions as to display t
 
 **Note**  Each swipe requires a minimum speed of 20mm/s. This is the same speed threshold that is used in the operating system. If the tester does not achieve this speed, an "Unknown Reason" error message will be displayed.
 
- 
+ 
 
 *Select*
 
@@ -116,9 +116,9 @@ Rearrange is a gesture that is used to move application tiles on the screen. You
 **Command syntax**
 
 Logo3.exe -config UXTests.json
- 
+ 
 
- 
+ 
 
 
 

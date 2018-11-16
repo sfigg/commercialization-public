@@ -57,9 +57,9 @@ The cryptographic key should be stored so that it is tied either to secure boot 
 
 [Implementing image integrity validation in custom flashing tools](implementing-image-integrity-validation-in-custom-flashing-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

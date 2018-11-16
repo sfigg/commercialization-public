@@ -47,9 +47,9 @@ In this example, the system didn’t have a proper driver installed for the **Di
 
 ![Screenshot of Device Manager dialog.](images/standbylab6.png)
 
- 
+ 
 
- 
+ 
 
 
 

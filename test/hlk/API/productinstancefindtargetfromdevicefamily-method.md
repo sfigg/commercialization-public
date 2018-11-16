@@ -42,7 +42,7 @@ This method finds a list of target data that matches the specified family.
 
 `Public Function FindTargetFromDeviceFamily ( _`
 
-          `family As DeviceFamily _`
+          `family As DeviceFamily _`
 
 `) As ReadOnlyCollection(Of TargetData)`
 
@@ -50,7 +50,7 @@ This method finds a list of target data that matches the specified family.
 
 `public ReadOnlyCollection<TargetData> FindTargetFromDeviceFamily (`
 
-          `DeviceFamily family`
+          `DeviceFamily family`
 
 `)`
 
@@ -59,7 +59,7 @@ This method finds a list of target data that matches the specified family.
 
 *family*
 
-     The family to use to find device matches.
+     The family to use to find device matches.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **ReadOnlyCollection**, which is a list of target data objects.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

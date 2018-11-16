@@ -84,7 +84,7 @@ This profile requires that a TPM 2.0 implemented to support Windows 8:
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -873,11 +873,11 @@ This profile requires that a TPM 2.0 implemented to support Windows 8:
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

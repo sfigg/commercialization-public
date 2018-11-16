@@ -65,9 +65,9 @@ See SYSTEM\_INFO.wProcessorArchitecture in Win32 documentation.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 
