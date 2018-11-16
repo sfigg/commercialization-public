@@ -49,12 +49,12 @@ The following table describes possible return values.
 
 When the function returns at least a partial failure (S_FALSE), each element of pResults shows the configuration result of corresponding process id passed in the second parameter. 
 
-||||
+|  ||||
 |-----------|-------|-------|------|
-| Pids [in]	|0x1086	|0x98004|	0x12004|
+|Pids [in]	|0x1086	|0x98004|0x12004|
 |pResults [out]	|S_OK| E_INVALIDARG	|S_OK |
 
-The snapshot configuration is valid until the process exits or disabled.
+The snapshot configuration is valid until the process exits or is disabled.
 
 
 ## Related Topics
