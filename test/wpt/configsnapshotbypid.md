@@ -40,7 +40,7 @@ The following table describes possible return values.
 
 When the function returns a partial failure (S_FALSE), that means not all processes in the process id array are configured successfully. In order to find what process(es) failed, use the [ConfigSnapshotByPIDEx](configsnapshotbypidex.md) function.
 
-The snapshot configuration is valid until the process exits or disabled.
+The snapshot configuration is valid until it is explicitly disabled or the process exits. 
 
 ## Related Topics
 

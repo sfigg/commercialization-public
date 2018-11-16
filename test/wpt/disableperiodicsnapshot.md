@@ -25,7 +25,7 @@ Note : Currently only available SnapshotType is SnapshotType_Heap
 
 |Return Value | Description|
 |-------------|------------|
-|S_OK	| The configuration was successful for the specified process. |
+|S_OK	| The configuration was successful for the specified process, otherwise an error code. |
 
 ## Related Topics
 
