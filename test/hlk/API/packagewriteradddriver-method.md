@@ -26,62 +26,68 @@ This method replaces a driver for an Update Package and checks the driver files 
 
 **Visual Basic**
 
-`Dim instance As PackageWriter`
+```vb
+Dim instance As PackageWriter
 
-`Dim pathToDriver As String`
+Dim pathToDriver As String
 
-`Dim pathToSymbols As String`
+Dim pathToSymbols As String
 
-`Dim targets As ReadOnlyCollection(Of Target)`
+Dim targets As ReadOnlyCollection(Of Target)
 
-`Dim locales As ReadOnlyCollection(Of String)`
+Dim locales As ReadOnlyCollection(Of String)
 
-`Dim errorMessages As StringCollection`
+Dim errorMessages As StringCollection
 
-`Dim warningMessages As StringCollection`
+Dim warningMessages As StringCollection
 
-`Dim returnValue As Boolean`
+Dim returnValue As Boolean
 
-`returnValue = instance.AddDriver(pathToDriver, pathToSymbols, targets, locales, errorMessages, warningMessages)`
+returnValue = instance.AddDriver(pathToDriver, pathToSymbols, targets, locales, errorMessages, warningMessages)
+```
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
 
 **Visual Basic**
 
-`Public Function AddDriver ( _`
+```vb
+Public Function AddDriver ( _
 
-          `pathToDriver As String, _`
+          pathToDriver As String, _
 
-          `pathToSymbols As String, _`
+          pathToSymbols As String, _
 
-          `targets As ReadOnlyCollection(Of Target), _`
+          targets As ReadOnlyCollection(Of Target), _
 
-          `locales As ReadOnlyCollection(Of String), _`
+          locales As ReadOnlyCollection(Of String), _
 
-          `<OutAttribute> ByRef errorMessages As StringCollection, _`
+          <OutAttribute> ByRef errorMessages As StringCollection, _
 
-          `<OutAttribute> ByRef warningMessages As StringCollection _`
+          <OutAttribute> ByRef warningMessages As StringCollection _
 
-`) As Boolean`
+) As Boolean
+```
 
 **C#**
 
-`public bool AddDriver (`
+```csharp
+public bool AddDriver (
 
-          `string pathToDriver,`
+          string pathToDriver,
 
-          `string pathToSymbols,`
+          string pathToSymbols,
 
-          `ReadOnlyCollection<Target> targets,`
+          ReadOnlyCollection<Target> targets,
 
-          `ReadOnlyCollection<string> locales,`
+          ReadOnlyCollection<string> locales,
 
-          `out StringCollection errorMessages,`
+          out StringCollection errorMessages,
 
-          `out StringCollection warningMessages`
+          out StringCollection warningMessages
 
-`)`
+)
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -120,7 +126,7 @@ This method replaces a driver for an Update Package and checks the driver files 
 
 An exception is thrown when:
 
--   The *pathToDriver* paramter, the *targets* parameter or the *locales* parameter is **null**.
+-   The *pathToDriver* parameter, the *targets* parameter or the *locales* parameter is **null**.
 
 -   The *pathToDrivers* parameter is empty or there are no *targets* or *locales* values in the parameter lists or the *targets* specified do not exist in the project.
 
