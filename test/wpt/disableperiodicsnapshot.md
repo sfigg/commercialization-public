@@ -8,6 +8,23 @@ ms.topic: article
 
 # DisablePeriodicSnapshot
 
+Disables periodic snapshot of SnapshotType.
+
+## Syntax
+
+```
+HRESULT DisablePeriodicSnapshot
+([in] SnapshotType snapshotType);
+Parameters
+snapshotType
+[in] SnapshotType. 
+Note : Currently only available SnapshotType is SnapshotType_Heap
+```
+
+## Return Value
+
+HRESULT
+
 ## Related Topics
 
 * [ISnapshotManager3](isnapshotmanager3.md)
