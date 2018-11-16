@@ -34,7 +34,7 @@ Windows 10 helps users reset their device, either keeping data and apps intact o
 * **Windows desktop apps**, **drivers**, and **settings** are automatically refreshed when installed as [siloed provisioning packages (SPPs)](siloed-provisioning-packages.md). If you install them using another method (for example, in audit mode or from a script), [capture them into a provisioning package so they can be refreshed](deploy-push-button-reset-features.md).
 * **Out of Box Experience customizations**, the **Start Menu**, and **Unattend.xml settings**: 
   - In Windows 10, version 1809, you can save a copy of these into [Auto-apply folders](deploy-pbr-features-using-auto-apply.md).
-  - In earlier versions, use extensibility scripts instead to refresh these files.
+  - In earlier versions, use extensibility scripts instead to reset these files.
 * **Drive partitions**: If your device uses a non-standard drive partition layout (for example, a separate data or tools partition), [update the on-board Bare Metal Reset configuration files so that users can create their own recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md). 
 
 Universal Windows apps and Universal Windows drivers included in your images are automatically refreshed. 
@@ -42,7 +42,7 @@ Universal Windows apps and Universal Windows drivers included in your images are
 
 To learn more, see [Recovery strategy for common customizations](recovery-strategy-for-common-customizations.md)
 
-**More options:**
+**More options**
 
 * Use [Compact OS, single-sourcing, and image optimization](compact-os.md) to save space on the disk.
 
@@ -50,10 +50,9 @@ To learn more, see [Recovery strategy for common customizations](recovery-strate
 
 * [Add a custom script using extensibility points](add-a-script-to-push-button-reset-features.md) to install apps or preserve data during a recovery.
 
-**Reference**
+## Reference
 * [How push-button reset features work](how-push-button-reset-features-work.md)
 * [Push-button reset frequently-asked questions (FAQ)](pbr-faq.md)
-
 * [REAgentC command-line options](reagentc-command-line-options.md)
 * [ResetConfig XML reference](resetconfig-xml-reference-s14.md)
 * [WinREConfig XML reference](winreconfig-xml-reference.md)
