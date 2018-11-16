@@ -147,6 +147,7 @@
 ######## [DisablePeriodicSnapshot](wpt/disableperiodicsnapshot.md)
 ######## [EnablePeriodicSnapshot](wpt/enableperiodicsnapshot.md)
 ######## [SnapshotOnDemand](wpt/snapshotondemand.md)
+######## [SnapshotType](wpt/snapshottype.md)
 ######## [VerifySnapshotSupported](wpt/verifysnapshotsupported.md)
 ####### [ITraceMergeProperties](wpt/itracemergeproperties.md)
 ######## [IsEqual](wpt/isequal-itracemergeproperties.md)
