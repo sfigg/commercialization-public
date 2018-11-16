@@ -8,7 +8,7 @@ ms.topic: article
 
 ## SnapshotOnDemand
 
-Takes one time snapshot of Snapshot type for the specified processes then exports to the trace buffers. The snapshot has to be configured prior to call this API.
+Takes one time snapshot for the given **SnapshotType** for the specified processes then exports to the trace buffers. The snapshot has to be configured before calling this API.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ HRESULT SnapshotOnDemand
 
 *snapshotType* <br/>
 [in] SnapshotType. <br/>
-**Note**: Currently only available SnapshotType is SnapshotType_Heap.  <br/>
+**Note**: Currently only available [SnapshotType](snapshottype.md) is **SnapshotType_Heap**.  <br/>
 *pids*  <br/>
 [in] The pointer to an array of process ids. Up to 8 process ids can be specified.  <br/>
 *cPids*  <br/>
