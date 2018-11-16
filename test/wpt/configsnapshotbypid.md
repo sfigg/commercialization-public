@@ -31,12 +31,13 @@ Configures snapshot using the provided process id.
 The following table describes possible return values.
 | Return Value | Description |
 |--------------|-------------|
-| S_OK	| The configuration was successful for the specified processes |
-| S_FALSE | The configuration was partially successful. Refer to **pResults** to further investigate which process failed.
+| S_OK	| The configuration was successful for the specified processes. |
+| S_FALSE | The configuration was partially successful. Refer to **pResults** to further investigate which process failed.|
 | E_WPRC_FAILED_TO_CONFIGURE_HEAP_SNAPSHOT_PIDS	 | Failed to configure the heap stack control of PID(s).|
 
 
 ## Remarks
+
 When the function returns a partial failure (S_FALSE), that means not all processes in the process id array are configured successfully. In order to find what process(es) failed, use the [ConfigSnapshotByPIDEx](configsnapshotbypidex.md) function.
 
 The snapshot configuration is valid until the process exits or disabled.
