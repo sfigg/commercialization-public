@@ -18,13 +18,14 @@ ms.topic: article
 
 All platforms that implement a TPM must ensure invariance of PCRs 7, 11 across power cycles in the absence of changes to the platform's static core root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station should not cause changes to the SRTM.
 
->[!NOTE]
->  
-This test restarts the system multiple times to check whether PCRs are consistent.
+> [!NOTE]
+> 
+> This test restarts the system multiple times to check whether PCRs are consistent.
 
- 
+
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Fundamentals.TPM.CS.ConnectedStandby</li><li>Device.DevFund.Firmware.UpdateDriverPackage</li></ul> |  
@@ -37,7 +38,7 @@ This test restarts the system multiple times to check whether PCRs are consisten
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -55,7 +56,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting System Fundamentals Testing](troubleshooting-system-fundamentals-testing.md).
 
@@ -75,7 +76,7 @@ If this test fails, review the test log from Windows Hardware Lab Kit (Windows H
 
     -   **Applications and Services Logs\\Microsoft\\Windows\\BitLocker-API\\Management**
 
-5.  Run **tpm.msc ** to ensure that the TPM Status is ON and that ownership has been taken.
+5.  Run **tpm.msc ** to ensure that the TPM Status is ON and that ownership has been taken.
 
 6.  Check TCG logs
 
@@ -83,15 +84,15 @@ If this test fails, review the test log from Windows Hardware Lab Kit (Windows H
 
     -   Compare multiple copies of the TCG log and see whether PCR \[0, 2, 4, 11\] are consistent across reboot and hibernate.
 
->[!NOTE]
->  
-If the BitLocker WHLK test results in a recovery event, the BitLocker recovery key is 48-zeros (0000-0000-0000-0000-0000-0000-0000-0000-0000-0000-0000-0000).
+> [!NOTE]
+> 
+> If the BitLocker WHLK test results in a recovery event, the BitLocker recovery key is 48-zeros (0000-0000-0000-0000-0000-0000-0000-0000-0000-0000-0000-0000).
 
- 
 
- 
 
- 
+
+
+
 
 
 

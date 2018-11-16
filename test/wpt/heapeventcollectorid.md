@@ -24,9 +24,9 @@ Represents an identifier for a collector of heap events for the profile.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<**HeapEventCollectorId**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<**HeapEventCollectorId**\>
 
 
 ## Syntax

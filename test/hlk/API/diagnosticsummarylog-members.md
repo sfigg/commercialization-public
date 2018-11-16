@@ -35,7 +35,7 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><strong>BugcheckSummary</strong></p></td>
-<td><p>[BugcheckSummary](bugchecksummary-class.md)</p></td>
+<td><p><a href="bugchecksummary-class.md" data-raw-source="[BugcheckSummary](bugchecksummary-class.md)">BugcheckSummary</a></p></td>
 <td><p>The summary for a kernel mode bugcheck event during a test run.</p></td>
 </tr>
 <tr class="even">
@@ -46,16 +46,16 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [DiagnosticSummaryLog Class](diagnosticsummarylog-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

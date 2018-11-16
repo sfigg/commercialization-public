@@ -111,9 +111,11 @@ If there’s more than one update pending, and if any of those updates are stron
     </tbody>
     </table>
 
-     
 
-    If there is an error during the install, the update stage goes back to scan for updates and starts again.
+
+~~~
+If there is an error during the install, the update stage goes back to scan for updates and starts again.
+~~~
 
 3.  When the user decides to install the updates, the device reboots into the Update OS and completes the installation process.
 
@@ -147,9 +149,9 @@ If there’s more than one update pending, and if any of those updates are stron
 
 [Approve an update](approve-an-update.md)
 
- 
 
- 
+
+
 
 
 

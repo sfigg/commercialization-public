@@ -23,9 +23,9 @@ ms.topic: article
 -   [Graphic Adapter or Chipset Testing Prerequisites](graphic-adapter-or-chipset-testing-prerequisites.md)
 -   [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,7 +37,7 @@ This topic describes configuration requirements for the Windows HLK Device Funda
 >[!NOTE]
 >  For information regarding prerequisites and configuration details for additional device types, see [Provided WDTF Simple I/O plug-ins](http://msdn.microsoft.com/en-us/library/windows/hardware/Hh781398.aspx).
 
- 
+ 
 
 ## <span id="BKMK_HCK_Devfund_gR"></span><span id="bkmk-hck-devfund-gr"></span><span id="BKMK_HCK_DEVFUND_GR"></span>General requirements
 
@@ -53,11 +53,11 @@ When you test a Bluetooth mouse, you must keep the mouse moving during the entir
 
 ## <span id="lan"></span><span id="LAN"></span>LAN adapters
 
->[!NOTE]
->  
-The network test configuration that is required to run Device Fundamentals Reliability tests for network LAN adapters is different from the network test configuration that is required to run [Device.Network Tests](device-network-tests.md).
+> [!NOTE]
+> 
+> The network test configuration that is required to run Device Fundamentals Reliability tests for network LAN adapters is different from the network test configuration that is required to run [Device.Network Tests](device-network-tests.md).
 
- 
+ 
 
 If the device under test (DUT) is a network LAN adapter, make sure that the network LAN adapter has an IPv6 gateway address assigned to it before you run Device Fundamentals Reliability tests.
 
@@ -104,9 +104,9 @@ Because of Windows HLK and test limitations, you must insert media into all medi
 
 The Microsoft USB Test Tool (MUTT) device and the software package gives you a powerful set of tools for testing interoperability of your USB hardware with the Microsoft USB driver stack. See [Test with Microsoft USB Test Tool (MUTT)](http://go.microsoft.com/fwlink/?LinkID=324174) for a brief overview of the different types of MUTT devices, the tests you can run by using the device, and suggests topologies for controller, hub, device, and BIOS/UEFI testing.
 
- 
+ 
 
- 
+ 
 
 
 

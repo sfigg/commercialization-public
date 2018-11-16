@@ -63,7 +63,7 @@ Introduced in Windows 8, Fast Startup is the default boot behavior. The shutdow
 | **Explorer Initialization** | The time the operating system takes to initialize the Windows shell (explorer.exe). This phase ends when the desktop or Start screen is visible to the user. |
 | **Post On/Off Duration**    | The time Windows takes to complete all startup tasks after the desktop appears, but until CPU and disk resource become idle.                                 |
 
- 
+ 
 
 For more information about Fast Startup Behavior, see the [On/Off Transition Performance](http://go.microsoft.com/fwlink/p/?linkid=619168) topic on MSDN.
 
@@ -99,9 +99,9 @@ This guide consists of the following exercises.
 
 -   [Exercise 3 - Understand Critical Path and Wait Analysis](optimizing-performance-and-responsiveness-exercise-3.md)
 
- 
+ 
 
- 
+ 
 
 
 

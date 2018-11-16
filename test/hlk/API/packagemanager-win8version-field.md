@@ -34,9 +34,9 @@ Specifies the version for packages created for Win8 (HCK 2.0).
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

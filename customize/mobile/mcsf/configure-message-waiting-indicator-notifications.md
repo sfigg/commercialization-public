@@ -32,40 +32,42 @@ This customization supports: **per-IMSI** value
                          Owner=""  
                          OwnerType="OEM"> 
 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
+~~~
+  <!-- Define the Targets --> 
+  <Targets>
+     <Target Id="">
+        <TargetState>
+           <Condition Name="" Value="" />
+           <Condition Name="" Value="" />
+        </TargetState>
+     </Target>
+  </Targets>
 
-        <Settings Path="Phone/PerSimSettings/$(__IMSI)"> 
-          <Setting Name="IgnoreMWINotifications" Value="" />      
-        </Settings>  
+  <Static>
+    <Settings Path="Multivariant">
+      <Setting Name="Enable" Value="1" />
+    </Settings>
+    <Settings Path="AutoDataConfig">
+      <Setting Name="Enable" Value="0" />
+    </Settings>
+  </Static>
 
-      </Variant>
+  <!-- Specify the Variant -->
+  <Variant Name=""> 
+    <TargetRefs>
+      <TargetRef Id="" /> 
+    </TargetRefs>
 
-    </ImageCustomizations>
-    ```
+    <Settings Path="Phone/PerSimSettings/$(__IMSI)"> 
+      <Setting Name="IgnoreMWINotifications" Value="" />      
+    </Settings>  
+
+  </Variant>
+
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
@@ -100,9 +102,11 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
 
-    If `IgnoreMWINotifications` is not present, MWI functions normally and the user is notified when voicemails are available.
+
+~~~
+If `IgnoreMWINotifications` is not present, MWI functions normally and the user is notified when voicemails are available.
+~~~
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a device that has a UICC.

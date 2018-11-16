@@ -26,15 +26,15 @@ To enable distributed testing, similar targets must be selected. For targets to 
 
 -   To associate hardware Ids, click **Add Hardware Id**. The new hardware id is named "Device\_Family\_1\_1" by default. You can change that by typing a different name and then pressing **Enter**.
 
->[!NOTE]
->  
-Note: A hardware Id can only exist in one Device Family for the entire controller. For more information on distributed testing, see [Select targets for distributed testing](select-targets-for-distributed-testing.md).
+> [!NOTE]
+> 
+> Note: A hardware Id can only exist in one Device Family for the entire controller. For more information on distributed testing, see [Select targets for distributed testing](select-targets-for-distributed-testing.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -71,7 +71,7 @@ OEMs can override the default country/region lookup table and instruct the runti
     </tbody>
     </table>
 
-     
+     
 
 4.  If the value for `OverrideDefaultCountryLookup` is set to 1, the OEM must include their custom countrytable.xml file in a package and place this file in the %systemdrive%\\programs\\commonfiles\\adc\\OEM directory.
 
@@ -79,16 +79,16 @@ OEMs can override the default country/region lookup table and instruct the runti
 
     ```XML
     <countrytable>
-       <country mcc="202" iso3166="GR" GeoID="98"/>        <!-- Greece -->
-       <country mcc="204" iso3166="NL" GeoID="176"/>       <!-- Netherlands -->
-       <!-- And so on -->
-       <country mcc="316" iso3166="US" GeoID="244">        <!-- United States-->
-          <mnclist>
-             <mnc id="010"/>
-             <mnc id="011"/>
-          </mnclist>
-       </country>
-       <!-- And so on -->
+       <country mcc="202" iso3166="GR" GeoID="98"/>        <!-- Greece -->
+       <country mcc="204" iso3166="NL" GeoID="176"/>       <!-- Netherlands -->
+       <!-- And so on -->
+       <country mcc="316" iso3166="US" GeoID="244">        <!-- United States-->
+          <mnclist>
+             <mnc id="010"/>
+             <mnc id="011"/>
+          </mnclist>
+       </country>
+       <!-- And so on -->
     </countrytable>
     ```
 

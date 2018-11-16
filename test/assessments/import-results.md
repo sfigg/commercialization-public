@@ -30,14 +30,14 @@ Importing results is the process of copying results from other locations to the 
     **Note**  
     The import copies the selected folder. It doesn't move and delete items from the source folder.
 
-     
+     
 
 4.  Click **Next**. The Windows Assessment Console imports the selected results into the default results library on the local computer.
 
     **Note**  
     The Windows Assessment Console can import results only from locations that don't contribute to the assessment results library. If you attempt to import results from any folder that's listed in the assessments results library locations, you'll receive an error message.
 
-     
+     
 
 ## Related topics
 
@@ -50,9 +50,9 @@ Importing results is the process of copying results from other locations to the 
 
 [Compare results](compare-results.md)
 
- 
+ 
 
- 
+ 
 
 
 

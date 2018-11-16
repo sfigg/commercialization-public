@@ -28,7 +28,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 |:---------------------|:-----------------------------------------------------------------------------------------|
 | 0                    | Specifies that Windows CEIP is chosen during OOBE. If the user decides to skip OOBE during installation, CEIP will be opted out. The user receives no further notifications.                                                                                |
 | 1                    | Specifies that Windows CEIP collects and sends anonymous data to Microsoft to help improve Windows.<br/>This is the default value. |
- 
+ 
 ## Valid Configuration Passes
 
 specialize

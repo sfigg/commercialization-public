@@ -25,7 +25,7 @@ To run services or commands that can start at the same time, use RunAsynchronous
 
 **Note**  As of Windows 10, [Microsoft-Window-Shell-Setup\\LogonCommands\\AsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915476) now works like LogonCommands\\AsynchronousCommand: all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish.
 
- 
+ 
 
 Some of these settings run in the user context, others run in the system context depending on the configuration pass.
 
@@ -37,7 +37,7 @@ Some of these settings run in the user context, others run in the system context
 
     **Note**   When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. To boot to audit mode without triggering these scripts, add the setting: Microsoft-Windows-Deployment\\Reseal\\[Mode](https://msdn.microsoft.com/library/windows/hardware/dn923110) = Audit.
 
-     
+     
 
 ## <span id="run_a_script_after_setup_is_complete__setupcomplete.cmd_"></span><span id="RUN_A_SCRIPT_AFTER_SETUP_IS_COMPLETE__SETUPCOMPLETE.CMD_"></span>Run a script after setup is complete (SetupComplete.cmd)
 
@@ -51,7 +51,7 @@ Some of these settings run in the user context, others run in the system context
 
     **Warning**  You cannot reboot the system and resume running **SetupComplete.cmd**. You should not reboot the system by adding a command such as **shutdown -r**. This will put the system in a bad state.
 
-     
+     
 
 3.  If the computer joins a domain during installation, the Group Policy that is defined in the domain is not applied to the computer until **Setupcomplete.cmd** is finished. This is to make sure that the Group Policy configuration activity does not interfere with the script.
 
@@ -98,9 +98,9 @@ There may be instances when Windows Setup encounters more than one error and ru
 
 [Add Device Drivers to Windows During Windows Setup](add-device-drivers-to-windows-during-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

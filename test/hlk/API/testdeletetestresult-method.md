@@ -34,7 +34,7 @@ This method deletes a specific result.
 
 *resultToRemove*
 
-     Result to be removed
+     Result to be removed
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -54,9 +54,9 @@ Exception thrown if:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

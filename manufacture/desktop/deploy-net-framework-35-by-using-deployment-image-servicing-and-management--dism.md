@@ -16,10 +16,10 @@ ms.topic: article
 
 You can use the Deployment Image Servicing and Management (DISM) command-line tool to create a modified image to deploy .NET Framework 3.5.
 
-> [!Important] 
-> For images that will support more than one language, you must add .NET Framework 3.5 binaries before adding any language packs. This order ensures that .NET Framework 3.5 language resources are installed correctly in the reference image and available to users and applications.
+>[!Important]
+>For images that will support more than one language, you must add .NET Framework 3.5 binaries before adding any language packs. This order ensures that .NET Framework 3.5 language resources are installed correctly in the reference image and available to users and applications.
 
- 
+ 
 ## <span id="internet"></span><span id="INTERNET"></span>Using DISM with Internet connectivity
 
 
@@ -77,8 +77,8 @@ You can use the Deployment Image Servicing and Management (DISM) command-line to
 
 You can use DISM to add .NET Framework 3.5 and provide access to the **\\sources\\SxS** folder on the installation media to an installation of Windows that is not connected to the Internet.
 
-> [!Warning]
-> If you're not relying on Windows Update as the source for installing the .NET Framework 3.5, make sure to use sources from the same corresponding Windows operating system version. Using a source path that doesn't correspond to the same version of Windows won't prevent a mismatched version of .NET Framework 3.5 from being installed. This can cause the system to be in an unsupported and unserviceable state.
+>[!Warning]
+>If you're not relying on Windows Update as the source for installing the .NET Framework 3.5, make sure to use sources from the same corresponding Windows operating system version. Using a source path that doesn't correspond to the same version of Windows won't prevent a mismatched version of .NET Framework 3.5 from being installed. This can cause the system to be in an unsupported and unserviceable state.
 
 ### <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -113,9 +113,9 @@ On Windows 8 PCs, after installation, .NET Framework 3.5 is displayed as enable
 
 [Microsoft .NET Framework 3.5 Deployment Considerations](microsoft-net-framework-35-deployment-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

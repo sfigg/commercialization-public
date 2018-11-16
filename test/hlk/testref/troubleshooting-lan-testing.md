@@ -18,11 +18,11 @@ ms.topic: article
 
 To troubleshoot issues that occur with Device.Network tests, follow these steps:
 
-1.  Review [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+1. Review [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
-2.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+2. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 If the two machines LAN test jobs fail it is probable that the tests are not able to detect the message and/or support devices on either of the two machines.
 
@@ -86,11 +86,11 @@ Additionally open "ndistest.htm" from the "Client" folder to view failures from 
 
 [Device.Network Testing](device-network-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

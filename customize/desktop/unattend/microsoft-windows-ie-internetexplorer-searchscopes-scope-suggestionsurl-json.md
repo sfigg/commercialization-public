@@ -23,7 +23,7 @@ The `SuggestionsURL_JSON` setting specifies the URL where search suggestions can
 **Note**  
 To specify search suggestions by using a search based on XML, use the [SuggestionsURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl.md) instead.
 
- 
+ 
 
 For information on creating Search Scopes, see [Search Provider Extensibility](http://go.microsoft.com/fwlink/?LinkId=137666).
 
@@ -44,7 +44,7 @@ For information on creating Search Scopes, see [Search Provider Extensibility](h
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following XML example shows how to specify a URL to provide search suggestio
 
 [SuggestionsURL](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl.md)
 
- 
+ 
 
- 
+ 
 
 
 

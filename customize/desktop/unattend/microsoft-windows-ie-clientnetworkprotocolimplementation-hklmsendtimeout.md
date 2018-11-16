@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -68,9 +68,9 @@ The following XML output shows how to specify that the system waits two minutes 
 
 [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,7 +46,7 @@ For information about finding the path and GUID for your icon, see [NOTIFYICONDA
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -88,9 +88,9 @@ The following XML output shows how to promote a new system notification icon to 
 
 [NOTIFYICONDATA Structure](http://go.microsoft.com/fwlink/?LinkId=120340)
 
- 
+ 
 
- 
+ 
 
 
 

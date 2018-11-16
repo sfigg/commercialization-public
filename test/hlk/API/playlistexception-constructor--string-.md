@@ -29,7 +29,7 @@ Initializes a new instance of the [PlaylistException Class](playlistexception-cl
 
 `public PlaylistException (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -45,9 +45,9 @@ A string that represents the exception message.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

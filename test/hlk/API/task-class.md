@@ -49,18 +49,18 @@ This class represents the individual tasks that are run as part of certification
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.Task**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.Task**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageTask**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageTask**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

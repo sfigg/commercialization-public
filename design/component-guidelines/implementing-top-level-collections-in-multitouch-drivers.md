@@ -31,9 +31,9 @@ Devices can send multi-touch data by using one report for each contact, or they 
 
 Configuration collection enables you to configure devices to work with earlier versions of Windows. You can also use configuration collections to operate your touch device in different modes. For example, on Windows Vista, your device can default to single touch. On Windows XP, your device can assume mouse functionality. For information about how to access the configuration collection, see the subtopic "Feature Report Exclusivity" in [Using Report Descriptors to Support Capability Discovery](using-report-descriptors-to-support-capability-discovery.md).
 
- 
+ 
 
- 
+ 
 
 
 

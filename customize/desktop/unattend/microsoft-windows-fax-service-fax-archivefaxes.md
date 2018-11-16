@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -96,9 +96,9 @@ The following XML output shows how to set fax settings.
 
 [Fax](microsoft-windows-fax-service-fax.md)
 
- 
+ 
 
- 
+ 
 
 
 

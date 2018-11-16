@@ -15,6 +15,7 @@ ms.topic: article
 DImage Ink Test
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM.Render.Base</li></ul> |  
@@ -29,6 +30,7 @@ DImage Ink Test
 
 ## More Information
 ### Parameters
+
 | Parameter Name | Parameter Description |
 | --- | --- |
 | **IHV** | Specify the test is running on HLK so we run against warp. |
@@ -37,7 +39,7 @@ DImage Ink Test
 
 
 ## Additional Documentation
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s): <ul><li>[Device.Graphics additional documentation](https:\//docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/device-graphics-additional-documentation.md)</li></ul>
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s): <ul><li>[Device.Graphics additional documentation](https:///docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/device-graphics-additional-documentation.md)</li></ul>
 
 ## Troubleshooting
 For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](https://docs.microsoft.com/en-us/windows-hardware/HLK/troubleshooting.html)

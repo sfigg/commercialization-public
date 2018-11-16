@@ -18,25 +18,25 @@ ms.topic: article
 
 To troubleshoot issues that occur with Device.input tests, follow these steps:
 
-1.  Review [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+1. Review [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
-2.  Review one of the following topics, depending on the type of input device that you are testing:
+2. Review one of the following topics, depending on the type of input device that you are testing:
 
-    -   [Fingerprint Reader Testing Prerequisites](fingerprint-reader-testing-prerequisites.md)
+   -   [Fingerprint Reader Testing Prerequisites](fingerprint-reader-testing-prerequisites.md)
 
-    -   [Game Controller Testing Prerequisites](game-controller-testing-prerequisites.md)
+   -   [Game Controller Testing Prerequisites](game-controller-testing-prerequisites.md)
 
-    -   [Keyboard Testing Prerequisites](keyboard-testing-prerequisites.md)
+   -   [Keyboard Testing Prerequisites](keyboard-testing-prerequisites.md)
 
-    -   [Mouse or other Pointing Device Testing Prerequisites](mouse-or-other-pointing-device-testing-prerequisites.md)
+   -   [Mouse or other Pointing Device Testing Prerequisites](mouse-or-other-pointing-device-testing-prerequisites.md)
 
-    -   [Sensor Device Testing Prerequisites](sensor-device-testing-prerequisites.md)
+   -   [Sensor Device Testing Prerequisites](sensor-device-testing-prerequisites.md)
 
-    -   [Smart Card Reader Testing Prerequisites](smart-card-reader-testing-prerequisites.md)
+   -   [Smart Card Reader Testing Prerequisites](smart-card-reader-testing-prerequisites.md)
 
-3.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+3. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
-4.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+4. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 ### <span id="Specific_information_about_keyboard_tests"></span><span id="specific_information_about_keyboard_tests"></span><span id="SPECIFIC_INFORMATION_ABOUT_KEYBOARD_TESTS"></span>Specific information about keyboard tests
 
@@ -82,22 +82,22 @@ The user who is logged into the client computer must have permissions to access 
 
     2.  Click **Apply**.
 
->[!NOTE]
->  
-You must have administrator permissions on the test system to change the permissions for the sensor test device.
+> [!NOTE]
+> 
+> You must have administrator permissions on the test system to change the permissions for the sensor test device.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Device.Input Tests](device-input-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

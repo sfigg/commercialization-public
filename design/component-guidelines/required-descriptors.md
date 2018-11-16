@@ -39,7 +39,7 @@ The following table shows the required USB HID descriptor. For more information,
 | bDescriptorType   | 1             | Descriptor type          |
 | bDescriptorLength | 2             | Length of the descriptor |
 
- 
+ 
 
 ### Required I2C HID Descriptor
 
@@ -57,7 +57,7 @@ The following table shows the required I2C HID descriptor.
 | wDeviceID           | 2             | Device ID.                                                       |
 | wRevisionID         | 2             | Firmware version number                                          |
 
- 
+ 
 
 ### Required Device Attributes
 
@@ -70,7 +70,7 @@ The following HID properties must be provided in the device attributes. The repo
 | wProduct       | Product Id                    |
 | Version Number | Firmware version number       |
 
- 
+ 
 
 ### HID Strings
 
@@ -79,9 +79,9 @@ The following strings must be supported by devices that support Windows pointer 
 -   Manufacturer Name
 -   Product String
 
- 
+ 
 
- 
+ 
 
 
 

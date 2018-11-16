@@ -33,7 +33,7 @@ If implementing a Bluetooth button to support the quick launch features of Windo
 
 **Note**  Bluetooth buttons should not be placed on the side of the barrel, nor should barrel buttons utilized for selection or erase be overloaded with functionality that depends on the pen’s position/state, as this typically leads to a subpar user experience.  
 
- 
+ 
 
 ## Bluetooth Button Implimentation
 
@@ -46,11 +46,11 @@ To implement a tail-end Bluetooth button, the device will report 3 distinct keyb
 | Double-click            | WIN+F19                   |
 | Press and hold          | WIN+F18                   |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

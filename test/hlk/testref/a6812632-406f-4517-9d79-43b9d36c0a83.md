@@ -15,6 +15,7 @@ ms.topic: article
 Playback and visual validation test: InputType H264 - Verify DXVA Decoding for H.264
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Streaming.D3D11.H264.Playback</li></ul> |  
@@ -29,6 +30,7 @@ Playback and visual validation test: InputType H264 - Verify DXVA Decoding for H
 
 ## More Information
 ### Parameters
+
 | Parameter Name | Parameter Description |
 | --- | --- |
 | **Source** | Path to source File |
@@ -40,4 +42,4 @@ Tests in this feature area might have additional documentation, including prereq
 
 
 ## Troubleshooting
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](..\user\troubleshooting-windows-hlk-test-failures.md)
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](../user/troubleshooting-windows-hlk-test-failures.md)

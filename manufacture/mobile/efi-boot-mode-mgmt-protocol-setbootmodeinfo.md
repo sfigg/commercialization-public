@@ -54,7 +54,7 @@ Returns one of the following status codes:
 | EFI\_INVALID\_PARAM    | An invalid parameter was passed to the function.                 |
 | EFI\_BAD\_BUFFER\_SIZE | The ProfileName name string is too long.                         |
 
- 
+ 
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -66,9 +66,9 @@ Returns one of the following status codes:
 
 [Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

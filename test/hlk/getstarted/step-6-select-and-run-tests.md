@@ -68,7 +68,7 @@ You can save an existing collection of tests as a playlist by choosing **Save Se
 >[!IMPORTANT]
 >  When using an official playlist, you must use the version of the playlist that matches the version of the kit you are using. For example, if using version 1607 of the HLK, you must also use version 1607 of the playlist.
 
- 
+ 
 
 ## Running a test
 
@@ -88,11 +88,11 @@ To learn more about any test, select the test from the list and press **F1** key
 
 As tests complete, the results are displayed in the **Status** column. A green checkmark means that it passed, while a red X means that it failed. The pane on the right displays project summary information, including target(s) selected, operating systems being tested, product types you qualify for, and status of all tests.
 
-To learn more about the different options on this page, see [HLK Studio - Tests Tab](..\user\hlk-studio---tests-tab.md).
+To learn more about the different options on this page, see [HLK Studio - Tests Tab](../user/hlk-studio---tests-tab.md).
 
- 
+ 
 
- 
+ 
 
 
 

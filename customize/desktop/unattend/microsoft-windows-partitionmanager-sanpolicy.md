@@ -47,7 +47,7 @@ By configuring the SAN policy on a Windows image, you can control whether disks 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,9 +78,9 @@ The following XML output shows how to configure the SAN policy to mount all avai
 
 [Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

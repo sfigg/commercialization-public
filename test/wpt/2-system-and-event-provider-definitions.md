@@ -122,7 +122,7 @@ You can use the following optional attributes to fine-tune provider parameters:
     **Warning**  
     Some Windows event providers require the use of nonpaged memory during trace capture. An example of an event provider that requires NonPagedMemory is `EventProvider_Microsoft-Windows-Win32k`.
 
-     
+     
 
 -   **CaptureStateOnly**: If set to "true", indicates that WPR enables this provider at the specified capture state Only.
 
@@ -164,7 +164,7 @@ Unlike regular providers that are enabled throughout the whole tracing session, 
     <Keyword Value="0xff4"/> <!-- Provider is enabled with these keywords when tracing is started. -->
   </CaptureStateOnStart>
   <CaptureStateOnSave>
-    <Keyword Value="0x118"/> <!-- Provider is enabled with these keywords when tracing is saved. -->
+    <Keyword Value="0x118"/> <!-- Provider is enabled with these keywords when tracing is saved. -->
   </CaptureStateOnSave>
 </EventProvider>
 

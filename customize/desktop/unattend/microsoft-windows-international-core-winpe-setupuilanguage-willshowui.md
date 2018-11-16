@@ -21,7 +21,7 @@ ms.topic: article
 **Important**  
 This setting is deprecated and should not be used. This information is included for reference only.
 
- 
+ 
 
 ## Value
 
@@ -47,7 +47,7 @@ This setting is deprecated and should not be used. This information is included 
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -84,9 +84,9 @@ The following XML output shows how to configure the Windows Setup UI language t
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

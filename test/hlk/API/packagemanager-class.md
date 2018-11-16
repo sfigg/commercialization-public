@@ -36,9 +36,9 @@ This class include methods that handle opening a certification package and prese
 
 `Public Class PackageManager`
 
-               `Implements ProjectManager`
+               `Implements ProjectManager`
 
-               `Implements IDisposable`
+               `Implements IDisposable`
 
 **C#**
 
@@ -51,16 +51,16 @@ This class include methods that handle opening a certification package and prese
 
 [ProjectManager Class](projectmanager-class.md)
 
-    **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageManager**
+    **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageManager**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -44,9 +44,9 @@ This method sets the machine status. This is a blocking call and will wait until
 
 `Public MustOverride Function SetMachineStatus ( _`
 
-          `status As MachineStatus, _`
+          `status As MachineStatus, _`
 
-          `millisecondsTimeout As Long _`
+          `millisecondsTimeout As Long _`
 
 `) As Boolean`
 
@@ -54,9 +54,9 @@ This method sets the machine status. This is a blocking call and will wait until
 
 `public abstract bool SetMachineStatus (`
 
-          `MachineStatus status,`
+          `MachineStatus status,`
 
-          `long millisecondsTimeout`
+          `long millisecondsTimeout`
 
 `)`
 
@@ -65,11 +65,11 @@ This method sets the machine status. This is a blocking call and will wait until
 
 *status*
 
-     The machine status to be set.
+     The machine status to be set.
 
 *millisecondsTimeout*
 
-     The number of milliseconds to wait before this method returns. This value can be -1 (indicating an infinite wait time) or a positive number.
+     The number of milliseconds to wait before this method returns. This value can be -1 (indicating an infinite wait time) or a positive number.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -94,9 +94,9 @@ An exception occurs if:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

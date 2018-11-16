@@ -73,7 +73,7 @@ The supported options for upgrade are:
 </tbody>
 </table>
 
- 
+ 
 
 Windows 8.1 upgrade installations from Windows Vista and Windows XP aren’t supported.
 
@@ -85,7 +85,7 @@ Rollback to the previous installation occurs when the Windows upgrade fails. Tro
 **Warning**  
 The Push-Button Reset image will no longer be available on Windows RT devices if a system rollback occurs.
 
- 
+ 
 
 ## <span id="LOWDISK"></span><span id="lowdisk"></span>Low disk space
 
@@ -108,7 +108,7 @@ Windows RE is installed in the following ways:
 **Caution**  
 Any OEM customizations to the existing Windows RE image aren’t migrated to the new Windows RE image.
 
- 
+ 
 
 ## <span id="RECPBR"></span><span id="recpbr"></span>Recovery Image for Push Button Reset
 
@@ -166,7 +166,7 @@ None
 
 None
 
- 
+ 
 
 On Windows RT PCs with an existing recovery image, the image will be replaced by a Windows 8.1 recovery image. The following customizations are migrated to the Windows 8.1 recovery image, including:
 
@@ -208,9 +208,9 @@ All migrated drivers are placed in the driver repository and Windows automatical
 
 [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md)
 
- 
+ 
 
- 
+ 
 
 
 

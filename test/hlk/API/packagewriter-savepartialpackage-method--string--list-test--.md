@@ -29,9 +29,9 @@ Creates a debug HCK package only containing data in the given test(s).
 
 `public void SavePartialPackage (`
 
-          `string packageFile,`
+          `string packageFile,`
 
-          `List<Test> testList`
+          `List<Test> testList`
 
 `)`
 
@@ -56,9 +56,9 @@ This function cannot be used for Submission Packages and Update Packages.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

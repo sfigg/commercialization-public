@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -69,9 +69,9 @@ The following XML output specifies the duplication tool.
 
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

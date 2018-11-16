@@ -38,37 +38,37 @@ When the camera is actively being used to stream video to an application, the ca
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Camera subsystem](camera-subsystem.md)</p></td>
+<td><p><a href="camera-subsystem.md" data-raw-source="[Camera subsystem](camera-subsystem.md)">Camera subsystem</a></p></td>
 <td><p>Describes the requirements of the camera subsystem in managing camera power on modern standby platforms.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Camera hardware topology overview](camera-hardware-topology-overview.md)</p></td>
+<td><p><a href="camera-hardware-topology-overview.md" data-raw-source="[Camera hardware topology overview](camera-hardware-topology-overview.md)">Camera hardware topology overview</a></p></td>
 <td><p>Provides an overview of camera hardware topology.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Camera power management modes](camera-power-management-modes.md)</p></td>
+<td><p><a href="camera-power-management-modes.md" data-raw-source="[Camera power management modes](camera-power-management-modes.md)">Camera power management modes</a></p></td>
 <td><p>Describes the power management modes that must be supported in the off-System on a Chip (SoC) and on-SoC components of the camera subsystem.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Software power management mechanisms for cameras](software-power-management-mechanisms-for-cameras.md)</p></td>
+<td><p><a href="software-power-management-mechanisms-for-cameras.md" data-raw-source="[Software power management mechanisms for cameras](software-power-management-mechanisms-for-cameras.md)">Software power management mechanisms for cameras</a></p></td>
 <td><p>Both the on-SoC image processing units and the off-SoC camera components are expected to consume no power (zero watts) when the system is in connected standby and the display is turned off. The primary software mechanism for power management is reference counting of the camera capture pin.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Supported hardware power configuration](supported-hardware-power-configuration.md)</p></td>
+<td><p><a href="supported-hardware-power-configuration.md" data-raw-source="[Supported hardware power configuration](supported-hardware-power-configuration.md)">Supported hardware power configuration</a></p></td>
 <td><p>Windows supports a single hardware power management configuration for camera devices in modern standby platforms. In short, each camera sensor must be connected to the SoC via a MIPI-CSI link, and can optionally be connected to an I2C bus and to one or more GPIO pins. The camera sensor device, its optional flash, and any other off-SoC camera components must be placed on a power rail that can be switched on and off by ACPI firmware.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Camera power management checklist](camera-power-management-checklist.md)</p></td>
+<td><p><a href="camera-power-management-checklist.md" data-raw-source="[Camera power management checklist](camera-power-management-checklist.md)">Camera power management checklist</a></p></td>
 <td><p>System integrators, camera sensor vendors, and SoC vendors should use the checklist in this article to ensure that their system power management design is compatible with Windows 10.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

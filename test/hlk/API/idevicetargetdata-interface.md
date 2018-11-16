@@ -40,9 +40,9 @@ This class extracts information from a test target or a **TargetData** object fo
 
 `public interface IDeviceTargetData`
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ This topic presents a sample report descriptor and a sample descriptor excerpt f
 
 **Note**  If you are implementing the following descriptor on a SKU that is specific to a mobile device, or a Windows phone, then see the [knowledge base article about the HID descriptor issue](https://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=57812) (partner access required), to make sure that you have the right setup on your mobile device.
 
- 
+ 
 
 ## Sample Report Descriptor
 
@@ -163,9 +163,9 @@ The following excerpt is from the descriptor for the Windows Touchscreen top-lev
     0xb1, 0x03,                         //    FEATURE (Cnst,Var,Abs)        
 ```
 
- 
+ 
 
- 
+ 
 
 
 

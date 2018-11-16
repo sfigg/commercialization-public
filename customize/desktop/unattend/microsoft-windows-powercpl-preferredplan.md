@@ -33,7 +33,7 @@ The power plan also specifies icons on the **Global Settings Task** page for the
 **Note**  
 The preferred power button, sleep button, lid switch, and password-on-resume setting values are in effect only until the first time that the setting is changed. After that, all the power plans use the setting that the end user specifies.
 
- 
+ 
 
 When an end user clicks the battery meter, Windows displays two featured power-plan options. The default featured power plans are **Balanced** and **Power Saver**. If `PreferredPlan` is set to a different power plan, Windows displays **Balanced** and the specified plan.
 
@@ -67,7 +67,7 @@ For more information, see the **powercfg** command-line Help and the topic: [How
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -104,9 +104,9 @@ The following XML output shows how to configure a GUID for `PreferredPlan`.
 
 [Microsoft-Windows-powercpl](microsoft-windows-powercpl.md)
 
- 
+ 
 
- 
+ 
 
 
 

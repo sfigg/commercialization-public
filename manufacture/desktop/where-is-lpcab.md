@@ -15,10 +15,12 @@ redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/la
 
 Language packs and language interface packs have been renamed in Windows 10 version 1607.
 
-| Package | Name format | Example |
-|---------|-------------|---------|
-| Language pack | Microsoft-Windows-_SKU_-Language-Pack_\_arch_\__locale_.cab | Microsoft-Windows-Client-Language-Pack_x64_es-es.cab |
-| Language interface pack | Microsoft-Windows-_SKU_-Language-Interface-Pack_\_arch_\__locale_.cab | Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab |
+
+|         Package         |                              Name format                              |                                 Example                                 |
+|-------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------|
+|      Language pack      |      Microsoft-Windows-*SKU*-Language-Pack_\_arch_\_*locale*.cab      |          Microsoft-Windows-Client-Language-Pack_x64_es-es.cab           |
+| Language interface pack | Microsoft-Windows-*SKU*-Language-Interface-Pack_\_arch_\_*locale*.cab | Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab |
+
 **Note:** This change doesn't apply to WinPE, where language packs still use the name lp.cab.
 
 ## <span id="related_topics"></span>Related topics

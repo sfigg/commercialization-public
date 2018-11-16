@@ -61,9 +61,9 @@ When battery saver is on, several Windows features behave differently:
 
 For more information about accessing battery saver status in your application, see [SYSTEM\_POWER\_STATUS](https://msdn.microsoft.com/library/windows/hardware/aa373232).
 
- 
+ 
 
- 
+ 
 
 
 

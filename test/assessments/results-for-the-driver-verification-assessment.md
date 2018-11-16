@@ -63,7 +63,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 **Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+ 
 
 ## <a href="" id="bkmk-driverresults"></a>Metrics
 
@@ -113,7 +113,7 @@ The Driver Verification assessment evaluates the drivers on your computer and pr
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-driverissues"></a>Issues
 
@@ -142,17 +142,17 @@ The Driver Verification assessment identifies issues with drivers, provides info
 <tr class="even">
 <td><p>Multiple Drivers</p></td>
 <td><p>Lists devices with more than one available driver.</p></td>
-<td><p>Extra drivers waste space and can contain vulnerabilities that compromise computer security. We recommend that you include only required drivers. Remove the extra drivers from the offline image by using DISM, or uninstall the drivers from the running computer by using Device Manager. For more information about how to use DISM to remove drivers, see [Driver Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=225962).</p></td>
+<td><p>Extra drivers waste space and can contain vulnerabilities that compromise computer security. We recommend that you include only required drivers. Remove the extra drivers from the offline image by using DISM, or uninstall the drivers from the running computer by using Device Manager. For more information about how to use DISM to remove drivers, see <a href="http://go.microsoft.com/fwlink/?LinkId=225962" data-raw-source="[Driver Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=225962)">Driver Servicing Command-Line Options</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Unnecessary Drivers</p></td>
 <td><p>Lists drivers not associated with any of the available hardware devices. Unnecessary drivers could be either a software or service driver.</p></td>
-<td><p>If you do not use this software or service, consider removing it. Extra drivers can be removed offline using DISM, or by using Device Manager. See [Driver Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=225962).</p></td>
+<td><p>If you do not use this software or service, consider removing it. Extra drivers can be removed offline using DISM, or by using Device Manager. See <a href="http://go.microsoft.com/fwlink/?LinkId=225962" data-raw-source="[Driver Servicing Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=225962)">Driver Servicing Command-Line Options</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Updated Better Driver</p></td>
 <td><p>An updated driver is available.</p></td>
-<td><p>We recommend that you update the driver for optimal device functionality. There is a more up-to-date driver available on Windows Update. Use the provided link to download the driver or contact the device manufacturer for additional updates. See [Windows Update Driver Publishing](http://go.microsoft.com/fwlink/?LinkId=242240) for information about how to use Windows Update.</p></td>
+<td><p>We recommend that you update the driver for optimal device functionality. There is a more up-to-date driver available on Windows Update. Use the provided link to download the driver or contact the device manufacturer for additional updates. See <a href="http://go.microsoft.com/fwlink/?LinkId=242240" data-raw-source="[Windows Update Driver Publishing](http://go.microsoft.com/fwlink/?LinkId=242240)">Windows Update Driver Publishing</a> for information about how to use Windows Update.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Legacy Devices</p></td>
@@ -162,7 +162,7 @@ The Driver Verification assessment identifies issues with drivers, provides info
 </tbody>
 </table>
 
- 
+ 
 
 ### The assessment reports an exit code of 0x80050006
 
@@ -185,9 +185,9 @@ To resolve this issue, do one of the following:
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

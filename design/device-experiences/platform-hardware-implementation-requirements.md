@@ -109,7 +109,7 @@ If the platform designer chooses to use an embedded-controller based solution, t
 </tbody>
 </table>
 
- 
+ 
 
 ## Simple peripheral bus (SPB)-connected solution
 
@@ -212,11 +212,11 @@ If the platform designer chooses to use an SPB-connected power and battery subsy
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

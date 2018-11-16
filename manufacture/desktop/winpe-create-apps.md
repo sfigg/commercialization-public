@@ -19,7 +19,7 @@ Windows PE (WinPE) is licensed to independent software vendors (ISVs) and origi
 **Note**  
 Windows PE is not a general-purpose operating system. It may not be used for any purpose other than deployment and recovery. It should not be used as a thin client or an embedded operating system. There are other Microsoft® products, such as Windows Embedded CE, which may be used for these purposes.
 
- 
+ 
 
 ## <span id="Extensibility"></span><span id="extensibility"></span><span id="EXTENSIBILITY"></span>Extensibility
 
@@ -152,7 +152,7 @@ Some basic Visual Studio project settings may be different from the defaults cre
 **Warning**  
 Your app can use customized .dll files that you write or license from a third party. Add these .dll files to your app for Windows PE. However, do not use Msvcrt.dll and do not include additional Windows .dll files that are not part of Windows PE.
 
- 
+ 
 
 ## <span id="API_Compatibility_reference"></span><span id="api_compatibility_reference"></span><span id="API_COMPATIBILITY_REFERENCE"></span>API Compatibility reference
 
@@ -186,9 +186,9 @@ Sometimes, there may be no suitable API to accomplish a specific task. To find a
 
 [WinPE: Debug Apps](winpe-debug-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

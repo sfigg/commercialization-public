@@ -72,7 +72,7 @@ Specify the account names and group names by using language-neutral names. The l
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -131,9 +131,9 @@ Example 2:
 
 [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md)
 
- 
+ 
 
- 
+ 
 
 
 

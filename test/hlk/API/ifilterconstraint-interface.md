@@ -40,9 +40,9 @@ This class represents a filter constraint.
 
 `public interface IFilterConstraint`
 
- 
+ 
 
- 
+ 
 
 
 

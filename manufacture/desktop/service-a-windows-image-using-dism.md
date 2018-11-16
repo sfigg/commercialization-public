@@ -30,53 +30,53 @@ You can also use DISM to service an image online. If you have to boot the operat
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md)</p></td>
+<td align="left"><p><a href="add-and-remove-drivers-to-an-offline-windows-image.md" data-raw-source="[Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md)">Add and Remove Drivers to an Offline Windows Image</a></p></td>
 <td align="left"><p>Add or remove drivers from an offline image using either DISM or an unattended answer file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Enable or Disable Windows Features Using DISM](enable-or-disable-windows-features-using-dism.md)</p></td>
+<td align="left"><p><a href="enable-or-disable-windows-features-using-dism.md" data-raw-source="[Enable or Disable Windows Features Using DISM](enable-or-disable-windows-features-using-dism.md)">Enable or Disable Windows Features Using DISM</a></p></td>
 <td align="left"><p>Enable or disable features in a Windows image using DISM. You can also remove a feature to install on-demand, and restore a previously removed feature.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Add or Remove Packages Offline Using DISM](add-or-remove-packages-offline-using-dism.md)</p></td>
+<td align="left"><p><a href="add-or-remove-packages-offline-using-dism.md" data-raw-source="[Add or Remove Packages Offline Using DISM](add-or-remove-packages-offline-using-dism.md)">Add or Remove Packages Offline Using DISM</a></p></td>
 <td align="left"><p>Add or remove packages from an offline image using either DISM or an unattended answer file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md)</p></td>
+<td align="left"><p><a href="add-and-remove-language-packs-offline-using-dism.md" data-raw-source="[Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md)">Add and Remove Language Packs Offline Using DISM</a></p></td>
 <td align="left"><p>Add or remove language packs and configure international settings in an offline image using DISM.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Sideload Apps with DISM](sideload-apps-with-dism-s14.md)</p></td>
+<td align="left"><p><a href="sideload-apps-with-dism-s14.md" data-raw-source="[Sideload Apps with DISM](sideload-apps-with-dism-s14.md)">Sideload Apps with DISM</a></p></td>
 <td align="left"><p>Install line-of-business (LOB) Microsoft Store apps to a Windows image by using Windows PowerShell® or the Deployment Image Servicing and Management (DISM) platform.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Preinstall Apps Using DISM](preinstall-apps-using-dism.md)</p></td>
+<td align="left"><p><a href="preinstall-apps-using-dism.md" data-raw-source="[Preinstall Apps Using DISM](preinstall-apps-using-dism.md)">Preinstall Apps Using DISM</a></p></td>
 <td align="left"><p>Preinstall apps in a Windows image.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Customize the Start Screen](customize-the-start-screen.md)</p></td>
+<td align="left"><p><a href="customize-the-start-screen.md" data-raw-source="[Customize the Start Screen](customize-the-start-screen.md)">Customize the Start Screen</a></p></td>
 <td align="left"><p>Customize the Start screen to include Microsoft Store apps and desktop apps that you use in your business.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md)</p></td>
+<td align="left"><p><a href="change-the-windows-image-to-a-higher-edition-using-dism.md" data-raw-source="[Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md)">Change the Windows Image to a Higher Edition Using DISM</a></p></td>
 <td align="left"><p>Query an image to determine which edition of Windows the image is, and how to change the image to a higher edition of Windows.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Export or Import Default Application Associations](export-or-import-default-application-associations.md)</p></td>
+<td align="left"><p><a href="export-or-import-default-application-associations.md" data-raw-source="[Export or Import Default Application Associations](export-or-import-default-application-associations.md)">Export or Import Default Application Associations</a></p></td>
 <td align="left"><p>Change the default programs associated with a file name extension or protocol in a Windows image.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Service a Mounted Windows Image](service-a-mounted-windows-image.md)</p></td>
+<td align="left"><p><a href="service-a-mounted-windows-image.md" data-raw-source="[Service a Mounted Windows Image](service-a-mounted-windows-image.md)">Service a Mounted Windows Image</a></p></td>
 <td align="left"><p>Use DISM to mount an image and modify it.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Service an Applied Windows Image](service-an-applied-windows-image.md)</p></td>
+<td align="left"><p><a href="service-an-applied-windows-image.md" data-raw-source="[Service an Applied Windows Image](service-an-applied-windows-image.md)">Service an Applied Windows Image</a></p></td>
 <td align="left"><p>Use DISM to apply an image and then modify it.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -85,9 +85,9 @@ You can also use DISM to service an image online. If you have to boot the operat
 
 [Take Inventory of an Image or Component Using DISM](take-inventory-of-an-image-or-component-using-dism.md)
 
- 
+ 
 
- 
+ 
 
 
 

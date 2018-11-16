@@ -1,4 +1,4 @@
-﻿---
+---
 title: Test
 description: Provides guidelines for testing Windows hardware and software.
 MSHAttr:
@@ -36,9 +36,9 @@ We provide an array of tools and technology to help you test performance, compat
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Download the Windows HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613)</p>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733613" data-raw-source="[Download the Windows HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613)">Download the Windows HLK</a></p>
 <p>Previous versions of the kit are also available on the HLK download page.</p></td>
-<td><p>[Download the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=733615)</p>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733615" data-raw-source="[Download the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=733615)">Download the Windows ADK</a></p>
 <p>The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes WPT and the assessment toolkit as well as several useful deployment tools.</p></td>
 </tr>
 </tbody>

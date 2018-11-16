@@ -65,9 +65,9 @@ typedef struct _DOT11_CURRENT_OPERATION_MODE {
 
 [Adding Wi-Fi manufacturing test support to the OID interface](adding-wi-fi-manufacturing-test-support-to-the-oid-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,6 +19,7 @@ ms.topic: article
 This automated test checks to make sure the WLAN device is properly reporting its capabilities to windows
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP</li></ul> |  
@@ -31,7 +32,7 @@ This automated test checks to make sure the WLAN device is properly reporting it
 |**Requires special configuration**| true |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -50,7 +51,7 @@ This test is only valid on systems with a Wireless LAN adapter. This test does t
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
@@ -63,11 +64,11 @@ For generic troubleshooting of HLK test failures, see [Troubleshooting Windows H
 | **EnableTracing**     | Enable Tracing                 |
 | **queryTestDeviceID** | Device id of device under test |
 
- 
 
- 
 
- 
+
+
+
 
 
 

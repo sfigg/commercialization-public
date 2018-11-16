@@ -682,9 +682,9 @@ ms.topic: article
 -   [WNGlitchfree HD Video Playback on AC ( Manual on mobile systems )](0933db65-5c40-42d9-874e-763724c9e464.md)
 -   [WNGlitchfree HD Video Playback on DC ( Manual on mobile systems )](2b1e19cc-c8db-4f60-a0cb-73a2432cd8ce.md)
 
- 
+ 
 
- 
+ 
 
 
 

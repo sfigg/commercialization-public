@@ -63,11 +63,11 @@ The following XML output shows how to set Windows Firewall groups.
 
 ```XML
 <FirewallGroups>
-      <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
-      <Active>true</Active>
-      <Group>@FirewallAPI.dll,-28752</Group>
-      <Profile>all</Profile>
-   </FirewallGroup>
+      <FirewallGroup wcm:action="add" wcm:keyValue="RemoteDesktop">
+      <Active>true</Active>
+      <Group>@FirewallAPI.dll,-28752</Group>
+      <Profile>all</Profile>
+   </FirewallGroup>
 </FirewallGroups>
 ```
 

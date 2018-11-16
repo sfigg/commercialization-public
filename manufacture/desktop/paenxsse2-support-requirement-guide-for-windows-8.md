@@ -92,7 +92,7 @@ This support requirement check is available in the new Windows Setup and Upgrade
 
 In a boot from media or a network installation such as Windows Deployment Services (WDS), no compatibility check occurs during Windows Setup. For these scenarios, a system without NX or SSE2 support will result in a bugcheck (that is described in the following **Kernel enhancement** section) when Setup tries to boot Windows.
 
- 
+ 
 
 ### <span id="Kernel_enhancement"></span><span id="kernel_enhancement"></span><span id="KERNEL_ENHANCEMENT"></span>Kernel enhancement
 
@@ -115,7 +115,7 @@ On a 64-bit system, the bugcheck shows the same UNSUPPORTED\_PROCESSOR code as o
 
 ### <span id="supportnx"></span><span id="SUPPORTNX"></span>How do I know if my system supports NX or SSE2?
 
-You can use the [Coreinfo](http://go.microsoft.com/fwlink/p/?linkid=246771) command-line utility to get a system’s processor information and review PAE, NX, and SSE2 entries in the output list. A **\*** character displays next to a supported feature name. A **-** character displays if the feature is not supported. For example:
+You can use the [Coreinfo](http://go.microsoft.com/fwlink/p/?linkid=246771) command-line utility to get a system’s processor information and review PAE, NX, and SSE2 entries in the output list. A **\\*** character displays next to a supported feature name. A **-** character displays if the feature is not supported. For example:
 
 ```
 Coreinfo v3.04 - Dump information on system CPU and memory topology
@@ -172,7 +172,7 @@ On a system that has the NX support, see the system manufacturer’s guide to go
 **Note**  
 On a 64-bit system, if NX is supported by the system, the system configuration settings do not allow setting DEP policy to be set to **Always Off**. For more information about system-wide configuration of DEP, see [A detailed description of the Data Execution Prevention (DEP) feature in Windows XP Service Pack 2, Windows XP Tablet PC Edition 2005, and Windows Server 2003](http://support.microsoft.com/kb/875352).
 
- 
+ 
 
 For Windows 8, processors on a system must support NX and SSE2 for the system to boot successfully. If a system has the support but the settings are misconfigured, the options are overridden before the kernel boots up the system.
 
@@ -183,11 +183,11 @@ If a VM is hosted on a system that supports NX, you must enable PAE/NX in the VM
 **Note**  
 If you tried to install Windows 8 on a VM that is hosted on a system that is running a version of Windows that has NX disabled, you must follow the instructions in [How do I know if my system supports NX or SSE2?](#supportnx) and [If NX is supported on my system, how do I turn on NX?](#turnonnx) to enable NX on the system before PAE/NX can be enabled for the VM.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

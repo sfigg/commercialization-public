@@ -105,7 +105,7 @@ The following table describes these two power modes.
 <tbody>
 <tr class="odd">
 <td>Active (streaming)</td>
-<td>The audio processing units are actively streaming audio and the codec is providing analog or digital audio to an [audio endpoint](https://msdn.microsoft.com/library/windows/hardware/dd370793) such as headphones, built-in speakers, or a remote HDMI output device.</td>
+<td>The audio processing units are actively streaming audio and the codec is providing analog or digital audio to an <a href="https://msdn.microsoft.com/library/windows/hardware/dd370793" data-raw-source="[audio endpoint](https://msdn.microsoft.com/library/windows/hardware/dd370793)">audio endpoint</a> such as headphones, built-in speakers, or a remote HDMI output device.</td>
 <td>D0</td>
 <td><p>&lt;= 100 milliwatts</p>
 <p>(audio processing + codec)</p></td>
@@ -127,7 +127,7 @@ The following table describes these two power modes.
 </tbody>
 </table>
 
- 
+ 
 
 In some SoC designs, the audio processing units are multifunction blocks shared with video decoding and graphics processing. With these designs, there may be scenarios in which the audio processing units are powered on when audio is not actively streaming.
 
@@ -324,9 +324,9 @@ System integrators and SoC vendors should use the following checklist to ensure 
     -   Ensure that jack detection works correctly when the system is in connected standby, and that audio is correctly routed to the headphones or speakers when the user inserts the plug in the headphones jack or removes the plug from the jack.
     -   Measure the power consumed by the audio processing unit, the external codec, and any additional analog amplification circuitry. Ensure that the entire audio subsystem consumes less than one milliwatt when it is in the sleep (D3) power state.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,41 +34,41 @@ The following tables list the methods exposed by the **IRunTests** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AddTests](iruntests-addtests-method.md)</p></td>
-<td>For the [TestDefinition](testdefinition-class.md)s given, add new test instances.
+<td><p><a href="iruntests-addtests-method.md" data-raw-source="[AddTests](iruntests-addtests-method.md)">AddTests</a></p></td>
+<td>For the <a href="testdefinition-class.md" data-raw-source="[TestDefinition](testdefinition-class.md)">TestDefinition</a>s given, add new test instances.
 <div class="alert">
 <strong>Warning</strong>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[GetTests](irungettests-method---.md)</p></td>
+<td><p><a href="irungettests-method---.md" data-raw-source="[GetTests](irungettests-method---.md)">GetTests</a></p></td>
 <td><p>This method retrieves all tests needed for this node.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[QueueTest](iruntestsqueuetest-method.md)</p></td>
+<td><p><a href="iruntestsqueuetest-method.md" data-raw-source="[QueueTest](iruntestsqueuetest-method.md)">QueueTest</a></p></td>
 <td><p>This method schedules all the tests for execution.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RemoveTests](iruntests-removetests-method.md)</p></td>
-<td>For the [TestDefinition](testdefinition-class.md)s given, this method removes existing test instances.
+<td><p><a href="iruntests-removetests-method.md" data-raw-source="[RemoveTests](iruntests-removetests-method.md)">RemoveTests</a></p></td>
+<td>For the <a href="testdefinition-class.md" data-raw-source="[TestDefinition](testdefinition-class.md)">TestDefinition</a>s given, this method removes existing test instances.
 <div class="alert">
 <strong>Warning</strong>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

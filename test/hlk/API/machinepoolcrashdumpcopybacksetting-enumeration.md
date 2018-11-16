@@ -67,11 +67,11 @@ Represents the crash dump type setting for a [MachinePool](machinepool-class.md)
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

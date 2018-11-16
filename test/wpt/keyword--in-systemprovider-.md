@@ -24,18 +24,18 @@ Describes the kernel flags that can be enabled for the kernel-mode session.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<[SystemProvider](systemprovider.md)\>
-      * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
-        * \<**Keyword (in SystemProvider)**\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[SystemCollectorId](systemcollectorid.md)\>
-          * \<[SystemProviderId](systemproviderid.md)\>
-            * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
-              * \<**Keyword (in SystemProvider)**\>
-          * \<[SystemProvider](systemprovider.md)\>
-            * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
-              * \<**Keyword (in SystemProvider)**\>
+    * \<[SystemProvider](systemprovider.md)\>
+      * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
+        * \<**Keyword (in SystemProvider)**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<[SystemProviderId](systemproviderid.md)\>
+            * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
+              * \<**Keyword (in SystemProvider)**\>
+          * \<[SystemProvider](systemprovider.md)\>
+            * \<[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)\>
+              * \<**Keyword (in SystemProvider)**\>
 
 
 ## Syntax

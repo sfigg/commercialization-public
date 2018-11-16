@@ -90,9 +90,9 @@ You can use new features in Windows 8.1 and Windows Server 2012 R2 to manage th
 
 [How to create and manipulate NTFS junction points](http://support.microsoft.com/kb/205524)
 
- 
+ 
 
- 
+ 
 
 
 

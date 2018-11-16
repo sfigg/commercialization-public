@@ -67,7 +67,7 @@ The following metrics are reported by the Edge Security Software Impact assessme
 </tbody>
 </table>
 
- 
+ 
 
 ## Issues
 
@@ -85,9 +85,9 @@ The assessment results for the two configurations can be compared side by side i
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

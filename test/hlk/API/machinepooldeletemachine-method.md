@@ -18,11 +18,11 @@ ms.topic: article
 
 This method delete the named machine for this machine pool. The machine to be deleted must be a child machine of this pool.
 
->[!WARNING]
->  
-Using the **MachinePool.DeleteMachine** method is NOT recommended because it may leave the deleted machine in an unusable state.
+> [!WARNING]
+> 
+> Using the **MachinePool.DeleteMachine** method is NOT recommended because it may leave the deleted machine in an unusable state.
 
- 
+ 
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 
@@ -46,7 +46,7 @@ Using the **MachinePool.DeleteMachine** method is NOT recommended because it may
 
 `Public MustOverride Sub DeleteMachine ( _`
 
-          `nameOfMachineToDelete As String _`
+          `nameOfMachineToDelete As String _`
 
 `) `
 
@@ -54,7 +54,7 @@ Using the **MachinePool.DeleteMachine** method is NOT recommended because it may
 
 `public abstract void DeleteMachine (`
 
-          `string nameOfMachineToDelete`
+          `string nameOfMachineToDelete`
 
 `)`
 
@@ -63,7 +63,7 @@ Using the **MachinePool.DeleteMachine** method is NOT recommended because it may
 
 *nameOfMachineToDelete*
 
-     The name of the machine to delete from this machine pool.
+     The name of the machine to delete from this machine pool.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -75,9 +75,9 @@ This will delete any test results that are associated with this machine.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

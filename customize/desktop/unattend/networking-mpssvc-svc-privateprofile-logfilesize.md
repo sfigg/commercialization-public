@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -83,9 +83,9 @@ The following XML output shows how to set Windows Firewall.
 
 [Networking-MPSSVC-Svc](networking-mpssvc-svc.md)
 
- 
+ 
 
- 
+ 
 
 
 

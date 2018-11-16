@@ -48,7 +48,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -79,9 +79,9 @@ The following XML output specifies that all data is sent automatically.
 
 [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,9 +49,9 @@ The SKIPOOBE feature sets the **OobeHeadless** registry value (a REG\_DWORD valu
 
 [Specifying files and registry entries in a package project file](https://msdn.microsoft.com/library/dn789219)
 
- 
+ 
 
- 
+ 
 
 
 

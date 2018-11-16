@@ -35,15 +35,15 @@ This Touchscreen Validation Guide makes the following assumptions about the test
 
     **Note**  The HLK tests will NOT work properly if a system has more than one touchscreen enabled!
 
-     
+     
 
 ![screenshot showing how to use device manager to disable any touchscreen device that is not under test.](../images/touch-test-devicemngr.png)
 
 If your device or testing setup does not meet the criteria outlined in the preceding list, you will not be able to successfully perform the Windows 10 HLK tests for your Touchscreen device.
 
- 
+ 
 
- 
+ 
 
 
 

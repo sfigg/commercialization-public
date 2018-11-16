@@ -24,7 +24,7 @@ This customization may result in different maps, servers, or other configuration
 
 **Note**  If partners do not set the `ChinaVariantWin10` setting to 1, partners may not ship the device in China.
 
- 
+ 
 
 ## Values
 
@@ -49,7 +49,7 @@ Set `ChinaVariantWin10` to one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -68,9 +68,9 @@ oobeSystem
 
 For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-MapControl-Desktop](microsoft-windows-mapcontrol.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -904,7 +904,7 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 <tr class="odd">
 <td><p>0x80188256</p></td>
 <td><p>DUA_E_SERVICE_IS_SHUTTING_DOWN</p></td>
-<td><p>Service is shutting down and requested operation can't be performed.</p></td>
+<td><p>Service is shutting down and requested operation can&#39;t be performed.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x80188257</p></td>
@@ -1214,7 +1214,7 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 <tr class="odd">
 <td><p>0x8018830E</p></td>
 <td><p>E_REMOVAL_PACKAGE_CANNOT_TARGET_BINARY_PARTITION</p></td>
-<td><p>This package is a removal package targeted to a binary parition Binary partition packages cannot be deleted.</p></td>
+<td><p>This package is a removal package targeted to a binary partition. Binary partition packages cannot be deleted.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x8018830F</p></td>
@@ -1229,7 +1229,7 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 <tr class="even">
 <td><p>0x80188311</p></td>
 <td><p>E_PACKAGE_TARGETS_WRONG_CPU</p></td>
-<td><p>The device's CPU type does not match the package's targeted CPU.</p></td>
+<td><p>The device&#39;s CPU type does not match the package&#39;s targeted CPU.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x80190190</p></td>
@@ -1739,11 +1739,11 @@ The following are error codes from IUTool.exe. For more info, see [IUTool.exe: U
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

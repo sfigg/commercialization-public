@@ -63,7 +63,7 @@ Windows is available in the following editions.
 <strong>Note</strong>  In this specification, most requirements that apply to Windows 10 Mobile also apply to Windows 10 Mobile Enterprise . Any additional requirements or exceptions are explicitly called out where applicable.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -86,7 +86,7 @@ Windows is available in the following editions.
 </tbody>
 </table>
 
- 
+ 
 
 ### 1.1.3 Device types supported by Windows
 
@@ -165,7 +165,7 @@ Table 2 lists the device types that run Windows and the operating system edition
 </tbody>
 </table>
 
- 
+ 
 
 For example form factor configurations, see [Form factors](../form-factors/form-factors.md).
 
@@ -195,7 +195,7 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 
 **Note**  In this table, all requirements in the Windows 10 Mobile column also apply to Windows 10 Mobile Enterprise, except where specified otherwise. All requirements in the Windows 10 for desktop editions column also apply to Windows 10 Enterprise.
 
- 
+ 
 
 **Table 3:** Minimum hardware requirements summary
 
@@ -893,7 +893,7 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 </tr>
 </table>
 
- 
+ 
 
 ## Section 2.0 - Minimum hardware requirements for Windows 10 Mobile
 
@@ -902,7 +902,7 @@ This section provides detailed hardware requirements that apply to any device th
 
 **Note**  Throughout this specification, all requirements for Windows 10 Mobile also apply to Windows 10 Mobile Enterprise except where specified otherwise.
 
- 
+ 
 
 ### 2.1 SoC
 
@@ -929,7 +929,7 @@ Table 4 lists the supported SoCs for devices that run Windows 10 Mobile. Any of
 </tbody>
 </table>
 
- 
+ 
 
 Table 5 lists the additional supported SoCs for devices that run Windows 10 Mobile Enterprise . These SoCs do not have cellular support, and are intended for devices that either use Wi-Fi only or do not have network connectivity. Devices that run the Windows 10 Mobile Enterprise can use any of the SoCs listed in Table 4 and Table 5.
 
@@ -954,7 +954,7 @@ Table 5 lists the additional supported SoCs for devices that run Windows 10 Mob
 </tbody>
 </table>
 
- 
+ 
 
 Existing Windows Phones that include the SoCs listed in Table 6 can be updated to Windows 10 Mobile.
 
@@ -979,7 +979,7 @@ Existing Windows Phones that include the SoCs listed in Table 6 can be updated t
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.2 Memory
 
@@ -1023,7 +1023,7 @@ The RAM requirements for devices that run Windows 10 Mobile are listed in Table
 </tbody>
 </table>
 
- 
+ 
 
 \*An additional 350MB of carve-out is allowed if an OEM chooses to enable hardware-based DRM functionality.
 
@@ -1053,7 +1053,7 @@ If an SD card is included in a device that runs Windows 10 Mobile, the SD card 
 
 **Note**  To ensure successful upgrade, it is recommended that a device with 8 GB of nonremovable flash storage includes an SD card slot.
 
- 
+ 
 
 ### 2.3.5 Flash memory performance
 
@@ -1065,7 +1065,7 @@ The minimum read/write speeds for e•MMC components in devices that run Windows
 |-------------------------|--------------------------|------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 10                      | 6                        | 700        | 50           | When using the storage assessment tool (StorageAssessment.exe) provided in the Hardware Lab Kit (HLK), no operations can exceed a latency of 500 milliseconds, and the number of operations with a latency of 100 milliseconds or longer should be less than 5% of the total operations. |
 
- 
+ 
 
 ¹ Throughput measured via sustained linear read operations of 64-KB blocks with 16 KB alignment over at least 100 MB sector range in the phone.
 
@@ -1133,19 +1133,19 @@ The phone display must support one of the resolution and size options shown in T
 <td>WXGA⁶</td>
 <td>1280 x 800</td>
 <td>16:10</td>
-<td>6.01&quot; to > 9&quot;</td>
+<td>6.01&quot; to &gt; 9&quot;</td>
 </tr>
 <tr class="even">
 <td>XGA</td>
 <td>1027 x 768</td>
 <td>4:3</td>
-<td>7&quot; to > 9&quot;</td>
+<td>7&quot; to &gt; 9&quot;</td>
 </tr>
 <tr class="odd">
 <td>WSVGA</td>
 <td>1027 x 600</td>
 <td>17:10</td>
-<td>7&quot; to > 9&quot;</td>
+<td>7&quot; to &gt; 9&quot;</td>
 </tr>
 <tr class="even">
 <td>qHD⁷</td>
@@ -1168,7 +1168,7 @@ The phone display must support one of the resolution and size options shown in T
 </tbody>
 </table>
 
- 
+ 
 
 ⁶This resolution is not natively supported. Windows Phone 10 supports WXGA 1280 x 800 displays by rendering the UI at 1280 x 768 resolution (15:9 aspect ratio) and displaying pillarboxes for the unused pixels.
 
@@ -1207,7 +1207,7 @@ All other buttons not included in this table, including custom hardware buttons 
 | Windows 10 Mobile            | Required | Required               | Required for phones that use a WVGA display⁶ Optional for all other devices⁷ | Required for phones that use a WVGA display⁶ Optional for all other devices⁷ | Optional | Not supported |
 | Windows 10 Mobile Enterprise | Required | Required               | Optional                                                                     | Optional                                                                     | Optional | Not supported |
 
- 
+ 
 
 ⁶ Phones that use a WVGA display must include Start, Back, and Search buttons that are implemented in hardware (as mechanical or capacitive buttons). For phones that use a non-WVGA display, hardware-implemented Start, Back, and Search buttons are optional. If the OEM chooses to not include hardware-implemented Start, Back, and Search buttons on a phone that uses a non-WVGA display, the OEM must configure the OS to render these buttons via software. For more information, see the Windows 10 Partner Documentation when it is available.
 
@@ -1269,7 +1269,7 @@ On phones that use an FWVGA display panel, the following button options are avai
 
 **Note**  Phones that use a combination of an FWVGA display and the MSM8x10 or MSM8x12 applications processor must use software-rendered Start, Back, and Search buttons. Mechanical or capacitive Start, Back, and Search buttons are not supported on these phones.
 
- 
+ 
 
 ### 2.7 Accessibility
 
@@ -1294,7 +1294,7 @@ This section provides detailed hardware requirements that apply to any device th
 
 **Note**  Throughout this specification, all requirements for Windows 10 for desktop editions also apply to Windows 10 Enterprise.
 
- 
+ 
 
 ### 3.1 Processor
 
@@ -1315,7 +1315,7 @@ Devices that run Windows 10 for desktop editions must meet the RAM requirements
 | 32-bit          | &gt;= 1 GB      |
 | 64-bit          | &gt;= 2 GB      |
 
- 
+ 
 
 ### 3.3 Storage
 
@@ -1330,7 +1330,7 @@ Devices that run Windows 10 for desktop editions must include a storage device 
 | 32-bit          | &gt;= 16 GB      |
 | 64-bit          | &gt;= 20 GB      |
 
- 
+ 
 
 ### 3.3.2 Storage controller
 
@@ -1367,7 +1367,7 @@ Table 13 lists the required, optional, and not supported hardware buttons for de
 | Tablets       | Required     | Required                                                                       | Optional⁸    | Not supported      | Not supported | Optional             |
 | Other devices | Required     | Required for devices with detachable keyboards. Optional for all other devices | Optional⁸    | Not supported      | Not supported | Optional             |
 
- 
+ 
 
 ⁸ A software-rendered Start button is always available through the OS.
 
@@ -1471,7 +1471,7 @@ Devices that run IoT Core require an ARM SoC or x86, x64 processor/SoC that meet
 
 For a sample of enabled SoCs, see [Enabled SoCs](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/socsandcustomboards). 
 
- 
+ 
 
 ### 5.2 Memory
 
@@ -1492,7 +1492,7 @@ Devices that run IoT Core must include a minimum of 2 GB of storage.
 
 **Note**: A minimum of 1GB of storage is to remain free for update functionality. Additional storage may be required based on the design and functionality of the device.
 
- 
+ 
 
 ### 5.4 Trusted Platform Module (TPM)
 
@@ -1548,7 +1548,7 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 <strong>Note</strong>  For Windows 10 for desktop editions and Windows Server 2016, using one of the HID miniport drivers included with Windows is recommended to help ensure compatibility and serviceability.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -1558,7 +1558,7 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 <strong>Note</strong>  This requirement is applicable only to Windows 10 for desktop editions and Windows Server 2016.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -1573,13 +1573,13 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 <strong>Note</strong>  This requirement does not apply to active pens.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ⁹For the reporting requirements, see [Windows Digitizer Class Input Devices](https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx).
 
@@ -1613,7 +1613,7 @@ Functional specifications for the camera are shown in Table 16 (for still pictur
 | Defective pixels¹¹              | 0 defective pixels in center 50% image; &lt; 10 minor defective pixels outside center 50% image                                                                                                                                                                                                           |
 | Autofocus range¹²               | 10 cm to infinity                                                                                                                                                                                                                                                                                         |
 
- 
+ 
 
 ¹¹ Minor defect: pixel deviates \[10,20\] gray levels from neighboring pixels when imaging black, white, and 18% gray images. Major defect: pixel deviates &gt;20 gray levels from neighboring pixels when imaging black, white, and 18% gray images.
 
@@ -1628,7 +1628,7 @@ Functional specifications for the camera are shown in Table 16 (for still pictur
 | Defective pixels¹³              | 0 defective pixels in center 50% image; &lt;10 minor defective pixels outside center 50% image                                                                                                                          |
 | Autofocus range¹²               | 10 cm to infinity                                                                                                                                                                                                       |
 
- 
+ 
 
 ¹³Minor defect: pixel deviates \[10,20\] gray levels from neighboring pixels when imaging black, white, and 18% gray images. Major defect: pixel deviates &gt;20 gray levels from neighboring pixels when imaging black, white, and 18% gray images.
 
@@ -1644,7 +1644,7 @@ A camera flash is optional. If implemented, functional specifications for the ca
 | Control             | On, Off, and Auto modes are required.                                                                                       |
 | Positional accuracy | Flash peak w/in 15% of frame center.                                                                                        |
 
- 
+ 
 
 ### 6.2.1.3 Additional Cameras
 
@@ -1685,7 +1685,7 @@ If audio is implemented on a device with cellular support, the device must route
 
 **Note**  All the audio routing destinations in Table 19 are required on phones.
 
- 
+ 
 
 **Note**  **Table 19:** Audio output routing requirements for devices with cellular support
 
@@ -1697,7 +1697,7 @@ If audio is implemented on a device with cellular support, the device must route
 | Bluetooth Hands-Free Profile | Required           | N/A                                         |
 | Processor                    | Optional           | Required                                    |
 
- 
+ 
 
 ¹⁵ Mix of cellular RX and TX is required for voice call recording.
 
@@ -1712,13 +1712,13 @@ If audio is implemented on a device with cellular support, the device must route
 | Bluetooth Hands-Free Profile microphone | Required                  |
 | Processor                               | Optional                  |
 
- 
+ 
 
 If audio is implemented on a device with FM stereo support, the device must route audio output between the FM stereo and the destinations shown in Table 21. For each destination, the routing requirement applies only if the device includes the destination component.
 
 **Note**  All the audio routing destinations in Table 21 are required on phones.
 
- 
+ 
 
 **Note**  **Table 21:** Audio output routing requirements for devices with FM stereo
 
@@ -1728,7 +1728,7 @@ If audio is implemented on a device with FM stereo support, the device must rout
 | Wired headset microphone | Required           |
 | Processor                | Optional           |
 
- 
+ 
 
 ### 6.3 Wireless communications
 
@@ -1781,7 +1781,7 @@ If Assisted Global Navigation Satellite System (A-GNSS) is implemented on a devi
 
 **Note**  The TIA/EIA/IS-801-B specification is optional unless it is required by the mobile operator. Microsoft expects that only mobile operators with CDMA networks will require compliance with this specification.
 
- 
+ 
 
 For a device with CDMA support for China, the A-GNSS receiver must also support GNSS User Plane 1X, complying with:
 
@@ -1840,21 +1840,21 @@ If FM radio is implemented, the mobile device must be able to mix audio generate
 </tr>
 </table>
 
- 
+ 
 
 ### 6.3.6 Near Field Communication (NFC)
 
 If implemented, the NFC implementation must meet the following requirements:
 
--   The NFC controller must support peer-to-peer exchange as specified by NFC Forum.
--   The NFC controller must support reader/writer mode, in which the device accesses the information stored in passive tags.
--   The NFC controller must support all three technology types specified by the NFC Forum on the RF layer:
-    -   ISO/IEC 14443-A
-    -   ISO/IEC 14443-B
-    -   ISO/IEC 18092 (Felica)
--   In reader/writer mode, the NFC controller must support interoperation with the tag types specified by the NFC Forum (currently NFC Forum Tag Types 1–4).
--   If Card Emulation is implemented, the NFC controller must be connected to the default (slot 0) UICC slot by using SWP-line as specified by the ETSI. If you cannot connect the SWP line to slot 0 due to physical limitations, the OEM must indicate the slot value to which it is connected by using registry settings. 
-### 6.4 Sensors
+- The NFC controller must support peer-to-peer exchange as specified by NFC Forum.
+- The NFC controller must support reader/writer mode, in which the device accesses the information stored in passive tags.
+- The NFC controller must support all three technology types specified by the NFC Forum on the RF layer:
+  -   ISO/IEC 14443-A
+  -   ISO/IEC 14443-B
+  -   ISO/IEC 18092 (Felica)
+- In reader/writer mode, the NFC controller must support interoperation with the tag types specified by the NFC Forum (currently NFC Forum Tag Types 1–4).
+- If Card Emulation is implemented, the NFC controller must be connected to the default (slot 0) UICC slot by using SWP-line as specified by the ETSI. If you cannot connect the SWP line to slot 0 due to physical limitations, the OEM must indicate the slot value to which it is connected by using registry settings. 
+  ### 6.4 Sensors
 
 ### 6.4.1 Accelerometer
 
@@ -1866,7 +1866,7 @@ If the non-desktop device includes a proximity sensor, it must be oriented to se
 
 **Note**  Devices may use the touch controller as a capacitive-based proximity sensing solution instead of an infrared-based proximity sensor.
 
- 
+ 
 
 ### 6.4.3 Gyroscope
 
@@ -1888,7 +1888,7 @@ This section provides behavior requirements for hardware buttons. To determine w
 
 **Note**  The requirements in this section do not apply to Windows 10 Mobile Enterprise. Microsoft recommends that buttons implemented on devices running Windows 10 Mobile Enterprise comply with the requirements in this section, but compliance is not required.
 
- 
+ 
 
 ### 6.6.1 Button wake up requirements for devices that support low-power idle states
 
@@ -1921,7 +1921,7 @@ On devices that support low-power idle states, certain hardware buttons must be 
 <strong>Note</strong>  Wake-up on a full press of the camera button is optional for devices that run Windows 10 Mobile Enterprise .
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -1977,7 +1977,7 @@ On devices that support low-power idle states, certain hardware buttons must be 
 </tbody>
 </table>
 
- 
+ 
 
 ### 6.6.2 Power button behavior
 
@@ -2001,7 +2001,7 @@ If the Power button is implemented, it must meet the following requirements:
 
     **Note**  We recommend that the Power and Volume Down combination be used to start a power cycle on devices where the display is the only sign of life (for example, devices with no fan or LED).
 
-     
+     
 
 ### 6.6.3 Camera button behavior
 
@@ -2078,7 +2078,7 @@ Windows 10 for desktop editions and IoT Core systems can optionally support the
 
 **Note**  No systems should allow programmatic disabling of Secure Boot during boot services or after exiting EFI boot services.
 
- 
+ 
 
 ### 6.9 Accessibility
 
@@ -2151,11 +2151,11 @@ Do not use color as the only visual means of conveying information. Do not use c
 | UMTS   | Universal Mobile Telecommunications System  |
 | USB    | Universal Serial Bus                        |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

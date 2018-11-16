@@ -25,7 +25,7 @@ Resetting the device addresses a number of key scenarios:
 **Important**  
 When you reset a device, it does not return it to the original factory state. For example, any packages that were added or modified during an update remain. To return the device to the original factory state, you must flash it with the original factory image.
 
- 
+ 
 
 ## <span id="Ways_to_reset_a_mobile_device"></span><span id="ways_to_reset_a_mobile_device"></span><span id="WAYS_TO_RESET_A_MOBILE_DEVICE"></span>Ways to reset a mobile device
 
@@ -41,7 +41,7 @@ End users can invoke a reset by the following options:
     **Note**  
     If the device is not responsive, the user should first try restarting it; see [Restarting the OS](#restarting) later in this topic.
 
-     
+     
 
 -   If Settings is not accessible, perform the following steps:
 
@@ -63,7 +63,7 @@ In addition to the options listed in the previous section, partners such as OEMs
 
 **Note**  The end user factory reset process is not designed for use on the factory floor. We recommend resetting the phone programmatically in factory or refurbishment settings. It is faster than resetting the phone by using **Settings** &gt;**System**&gt; **About** &gt; **Reset your phone**.
 
- 
+ 
 
 You can verify that all data was successfully removed by using GetResetLogs.exe. The log files will show you any files that were not removed after the device was reset.
 
@@ -148,9 +148,9 @@ If the device is not responsive to the normal shutdown procedure or the power bu
 
 To restart the device, press and hold both the volume down button and the power button for 10 seconds.
 
- 
+ 
 
- 
+ 
 
 
 

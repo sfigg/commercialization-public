@@ -36,7 +36,7 @@ Firmware vendors must ensure that the following conditions exist:
 
 To support the ability to boot from DVD media, the Windows installation DVD contains many El Torito boot entries that enable boot from either BIOS or UEFI. The default El Torito boot entry is for BIOS.
 
-Windows supports the “Non-removable Media Boot Behavior” section from the UEFI 2.3 specification. During Windows installation and when updates are required for bootmgfw.efi, Windows copies the Windows boot application from \\efi\\microsoft \\boot\\bootmgfw.efi to \\efi\\boot\\boot*{arch}*.efi on the EFI system partition. This copy enables a default boot option for Windows if a nonvolatile RAM (NVRAM) boot entry is not available, such as when a hard disk is moved from one platform to another.
+Windows supports the “Non-removable Media Boot Behavior” section from the UEFI 2.3 specification. During Windows installation and when updates are required for bootmgfw.efi, Windows copies the Windows boot application from \\efi\\microsoft \\boot\\bootmgfw.efi to \\efi\\boot\\boot<em>{arch}</em>.efi on the EFI system partition. This copy enables a default boot option for Windows if a nonvolatile RAM (NVRAM) boot entry is not available, such as when a hard disk is moved from one platform to another.
 
 When upgrading Windows, Windows preserves the existing boot order. When you perform a clean install of Windows, Windows updates the boot order so that it's the first boot entry in the list.
 
@@ -59,9 +59,9 @@ The following additional guidelines apply for boot media:
 
 [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

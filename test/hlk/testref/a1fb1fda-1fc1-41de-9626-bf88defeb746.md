@@ -43,6 +43,7 @@ The File IO 2 tests are based on TAEF:
 For more information about the behavior of file systems, see [File System Behavior in the Microsoft Windows Environment](http://go.microsoft.com/fwlink/?LinkId=236047).
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Filter.Driver.FileSystem.MiniFilter</li><li>Filter.Driver.AntiVirus.MiniFilter</li><li>Filter.Driver.FileSystem.Functionality</li></ul> |  
@@ -55,7 +56,7 @@ For more information about the behavior of file systems, see [File System Behavi
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -134,14 +135,14 @@ Before you run the test, you must add the following partitions to the test compu
 </tbody>
 </table>
 
- 
+
 
 RunFileIO.cmd contains references to environment variables that you can change to allow for skipping of certain file systems.
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For general troubleshooting information, see [Troubleshooting File System Testing](troubleshooting-file-system-testing.md).
 
@@ -167,13 +168,13 @@ The test uses Ntlog for logging the test results. Any failure is logged with the
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>te FileIOTestA.dll /select:@Priority=0 /p:Volume=%DRIVE_LETTER%</strong></p></td>
+<td><p><strong>te FileIOTestA.dll /select:<xref href="Priority=0" data-throw-if-not-resolved="False" data-raw-source="@Priority=0"></xref> /p:Volume=%DRIVE_LETTER%</strong></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -190,7 +191,7 @@ The test uses Ntlog for logging the test results. Any failure is logged with the
 | RunFileIo2.cmd      | \[WTT\\TestBinRoot\]\\base\\fs\\test\\Core\_File\_Services\\FilterManager\\TestSuite\\Scripts\\FileSystems\\   |
 | WrapFileIO2.cmd     | \[WTT\\TestBinRoot\]\\base\\fs\\test\\Core\_File\_Services\\FilterManager\\TestSuite\\Scripts\\FileSystems\\   |
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -207,11 +208,11 @@ The test uses Ntlog for logging the test results. Any failure is logged with the
 | **LLU\_NetAccessOnly**   | LLU for copy                                                                                         |
 | **REFS\_DRIVE\_LETTER**  | The drive letter for the ReFS volume that the test will run on. Enter NONE if not &gt;= Win8 Server. |
 
- 
 
- 
 
- 
+
+
+
 
 
 

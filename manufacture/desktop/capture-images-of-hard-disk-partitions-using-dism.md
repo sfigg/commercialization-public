@@ -162,9 +162,9 @@ After the image is captured and stored, you can:
 
 [Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 
- 
+ 
 
- 
+ 
 
 
 

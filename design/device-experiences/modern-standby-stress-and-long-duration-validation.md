@@ -58,7 +58,7 @@ Stress-testing of modern standby entry and exit can be automated using the PwrTe
 </tbody>
 </table>
 
- 
+ 
 
 ## SoC low-power state transitions
 
@@ -90,7 +90,7 @@ The firmware and drivers that are responsible for managing SoC transitions betwe
 </tbody>
 </table>
 
- 
+ 
 
 ## Windows HCK modern standby stress test
 
@@ -159,7 +159,7 @@ The test logs indicate the last devices to perform I/O operations—these device
 </tbody>
 </table>
 
- 
+ 
 
 A common cause of failures is poor GPS reception, which causes the GPS device to take extremely long amounts of time to reply to I/O requests. For more information about running this test on systems with GPS devices, see Notes for systems that are equipped with GPS.
 
@@ -183,9 +183,9 @@ If the system-under-test has a GPS device or location sensor device, you must en
 
 You can use the Sensor Diagnostic Tool in the Windows Driver Kit (WDK) to confirm the reception of the GPS signal at the test site. For more information, see [Testing sensor functionality with the Sensor Diagnostic Tool](https://msdn.microsoft.com/library/windows/hardware/hh780319).
 
- 
+ 
 
- 
+ 
 
 
 

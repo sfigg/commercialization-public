@@ -86,9 +86,9 @@ Precision touchpads implement right-click zones. To clearly identify this region
 
 **Figure 8 Zone Marker for Large Precision Touchpad**
 
- 
+ 
 
- 
+ 
 
 
 

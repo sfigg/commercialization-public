@@ -83,7 +83,7 @@ The following table describes the values that exist for *StateName*.
 </tbody>
 </table>
 
- 
+ 
 
 The following examples show how to access state information.
 
@@ -114,9 +114,9 @@ The following examples show how to access state information.
 
 [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md)
 
- 
+ 
 
- 
+ 
 
 
 

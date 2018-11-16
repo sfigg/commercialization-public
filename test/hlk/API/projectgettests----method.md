@@ -65,9 +65,9 @@ For backwards compatibility with HCK 2.0, returns tests that are tagged with Cer
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,7 @@ To select a Windows edition to install, you can do one of the following:
 >**Warning**  
 If you have multiple Windows images with the same Windows edition that are stored in the same Windows image file (.wim), you can use the setting: Microsoft-Windows-Setup\\ImageInstall\\OSImage\\InstallFrom\\`MetaData` to differentiate between them. You must still provide a product key using one of the methods listed in the previous list.
 
- 
+ 
 
 For information about managing Windows product keys when changing the Windows image to a higher edition, see [Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md).
 
@@ -51,7 +51,7 @@ To automatically activate Windows by using a product key, you can do one of the 
 >**Warning**  
 In most Windows deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. The `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times on a Windows image, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -64,9 +64,9 @@ In most Windows deployment scenarios, you no longer have to use the `SkipRearm`
 
 [Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md)
 
- 
+ 
 
- 
+ 
 
 
 

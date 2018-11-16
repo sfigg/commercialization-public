@@ -33,7 +33,7 @@ This setting is optional.
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md).</p>
+<td><p>Specifies the resource ID of the icon to use for <a href="microsoft-windows-stobject-custompowerapplication6.md" data-raw-source="[CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md)">CustomPowerApplication6</a>.</p>
 <p><code>IconID</code> is represented as @<em>dllname,-resourceID</em>, where <em>dllname</em> must include a full path to the resource DLL. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</code></pre>
 <p><em>ID</em> is a string.</p></td>
@@ -41,7 +41,7 @@ This setting is optional.
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -81,9 +81,9 @@ The following XML output shows `CustomPowerApplication6` Application.exe with `p
 
 [CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md)
 
- 
+ 
 
- 
+ 
 
 
 

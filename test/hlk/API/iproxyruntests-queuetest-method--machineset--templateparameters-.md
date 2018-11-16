@@ -29,9 +29,9 @@ This method schedules all the tests for execution on a specified [MachineSet](ma
 
 ` IList<TestResult> QueueTest (`
 
-          `MachineSet logicalMachineSet,`
+          `MachineSet logicalMachineSet,`
 
-          `TemplateParameters templateParameters`
+          `TemplateParameters templateParameters`
 
 `)`
 
@@ -67,9 +67,9 @@ This is not supported when the project is connected to a package.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

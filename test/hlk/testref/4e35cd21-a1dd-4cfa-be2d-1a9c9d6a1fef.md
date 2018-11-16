@@ -19,6 +19,7 @@ ms.topic: article
 This test verifies that a USB-based device becomes available within 500 milliseconds after the test system exits the S3 or S4 power state or connected standby. The test also confirms that there were not any errant device disconnects during system resume.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Connectivity.UsbDevices.DeviceAttachLessThan100ms</li><li>Device.Connectivity.UsbDevices.MustBeFunctionalAfterResume</li><li>Device.Connectivity.UsbDevices.MustResumeWithoutForcedReset</li><li>Device.Connectivity.UsbDevices.MustSignalAttachWithin500ms</li></ul> |  
@@ -31,7 +32,7 @@ This test verifies that a USB-based device becomes available within 500 millisec
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -51,16 +52,16 @@ Tests in this feature area might have additional documentation, including prereq
 | **queryIsUsb3** | QueryIsUsb3 of device under test        |
 | **DFUDevice**   | Uses DFU to reflash firmware on connect |
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

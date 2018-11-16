@@ -44,9 +44,9 @@ If mobile broadband is enabled on the system, try removing the SIM card and retr
 
 If the latency of any network device seems long, contact the Wi-Fi or mobile broadband device vendor for the system.
 
- 
+ 
 
- 
+ 
 
 
 

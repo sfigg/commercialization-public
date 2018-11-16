@@ -29,7 +29,7 @@ Retrieves the test from the current [PlaylistManager](playlistmanager-class.md)'
 
 ` public List<Test> GetTestsFromProjectThatMatchPlaylist (`
 
-          `Playlist playlist`
+          `Playlist playlist`
 
 `)`
 
@@ -57,9 +57,9 @@ For a test to be retrieved from the [PlaylistManager](playlistmanager-class.md)'
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

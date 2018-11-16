@@ -87,15 +87,15 @@ Whenever an activator has an outstanding reference, the SoC will remain in the a
 </tbody>
 </table>
 
- 
+ 
 
 Activators are system components and their runtime and behaviors cannot be changed by system hardware designers.
 
 Activator references and their durations are displayed in the built-in [SleepStudy](modern-standby-sleepstudy.md) diagnostic utility. Individual references may be observed through instrumentation and tracing using the [Windows Performance Analyzer](using-windows-performance-analyzer-to-analyze-modern-standby-issues.md) (WPA).
 
- 
+ 
 
- 
+ 
 
 
 

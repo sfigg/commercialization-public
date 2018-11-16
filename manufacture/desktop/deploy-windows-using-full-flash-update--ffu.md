@@ -35,11 +35,11 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 - The latest version of the ADK, from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 - Bootable WinPE media for Windows 10, version 1803 or later. See [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) for instructions on how to create WinPE Media.
 - Storage
-    - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. For best performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
+  - USB storage, formatted as NTFS with enough space to save the FFU. 16 GB is enough space to store an FFU of a basic Windows image. You can use the same USB drive for WinPE and storage if you follow the [instructions for creating a multipartiton USB drive](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#prepare-a-usb-drive). For best performance, you want to maximize I/O between where your FFU is stored and the destination PC. For best performance use a USB 3.0 drive to store the image, and an internal SSD for the destination device.
 
     **or**
     
-    - Network storage where you can keep your FFU image. For optimal performance, use a 1 Gb or faster network.
+  - Network storage where you can keep your FFU image. For optimal performance, use a 1 Gb or faster network.
 
 ## Capture an FFU
 
@@ -82,26 +82,26 @@ To capture and deploy FFUs using the instructions below, you'll also need:
 
 ## Deploy Windows from WinPE using an FFU
 
-1.  Boot your destination PC to WinPE.
+1. Boot your destination PC to WinPE.
 
-2.  Connect a storage drive or map the network location that has your FFU file and note the drive letter, for example, N.
+2. Connect a storage drive or map the network location that has your FFU file and note the drive letter, for example, N.
 
-3.  Identify the drive to which you'll be applying the image:
+3. Identify the drive to which you'll be applying the image:
 
-    ```
-    diskpart 
-    list disk
-    exit
-    ```
-    Note the drive number in the `Disk ###` column.
+   ```
+   diskpart 
+   list disk
+   exit
+   ```
+   Note the drive number in the `Disk ###` column.
 
-4.  Apply the image to the cleaned drive. Here, we're applying n:\WinOEM.ffu to Disk 0.
+4. Apply the image to the cleaned drive. Here, we're applying n:\WinOEM.ffu to Disk 0.
     
-    ```
-    DISM /apply-ffu /ImageFile=N:\WinOEM.ffu /ApplyDrive:\\.\PhysicalDrive0
-    ```
+   ```
+   DISM /apply-ffu /ImageFile=N:\WinOEM.ffu /ApplyDrive:\\.\PhysicalDrive0
+   ```
 
-    To see the commands available with /apply-ffu, run `dism /apply-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
+   To see the commands available with /apply-ffu, run `dism /apply-ffu /?` or see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
 5. Optional. Resize the Windows partition on the destination PC.
 
@@ -110,25 +110,25 @@ To capture and deploy FFUs using the instructions below, you'll also need:
     > [!Note]
     > If you're going to be capturing an FFU from a smaller drive than the drive it will be applied to, make sure that the Windows partition is the last partition on the drive. ApplyImage.bat in the [Sample scripts](windows-deployment-sample-scripts-sxs.md) from the the [OEM Windows desktop deployment and imaging lab](oem-windows-deployment-and-imaging-walkthrough.md) gives you the ability to deploy Windows for this scenario.
 
-    1. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
+   1. In WinPE on your destination PC, identify the volume of the Windows partiton that you have applied.
     
-    ```
-    diskpart
-    list volume
-    ```
+      ```
+      diskpart
+      list volume
+      ```
 
-    2. Select the volume of the Windows partition. We'll use `Volume 0` in our example.
+   2. Select the volume of the Windows partition. We'll use `Volume 0` in our example.
 
-    ```
-    select volume 0
-    ```
+      ```
+      select volume 0
+      ```
 
-    3. Extend the partition to fill the unused space, and exit Diskpart.
+   3. Extend the partition to fill the unused space, and exit Diskpart.
 
-    ```
-    extend
-    exit
-    ````
+      ```
+      extend
+      exit
+      ````
 
 ## Mount an FFU for servicing
 

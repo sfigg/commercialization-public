@@ -22,13 +22,13 @@ During unattended installation, **SearchScopes** adds search providers to the de
 
 > [!Note]
 > If the user performs an upgrade to the operating system, the existing search providers from the previous operating system installation are maintained. The search providers that the unattended-installation answer file specifies are applied only when the user clicks **Restore Defaults**.
- 
+ 
 ## Child Elements
 
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md) | Specifies a search provider. |
- 
+ 
 ## Valid Configuration Passes
 
 specialize

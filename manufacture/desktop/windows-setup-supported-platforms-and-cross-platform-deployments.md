@@ -65,7 +65,7 @@ The 64-bit version of Windows Setup does not run on the 32-bit version of Window
 **Warning**  
 This procedure does not support deploying Windows 7.
 
- 
+ 
 
 ## <span id="Using_Windows_Setup_to_Install_Previous_Versions_of_Windows"></span><span id="using_windows_setup_to_install_previous_versions_of_windows"></span><span id="USING_WINDOWS_SETUP_TO_INSTALL_PREVIOUS_VERSIONS_OF_WINDOWS"></span>Using Windows Setup to Install Previous Versions of Windows
 
@@ -131,7 +131,7 @@ You can use the Windows 8.1 and Windows Server 2012 R2 versions of Windows Setu
 </tbody>
 </table>
 
- 
+ 
 
 You can also run Windows Setup from the Windows Preinstallation Environment (Windows PE). The following table lists the supported Windows PE environments:
 
@@ -184,7 +184,7 @@ You can also run Windows Setup from the Windows Preinstallation Environment (Win
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="bkmk_unsupported"></span><span id="BKMK_UNSUPPORTED"></span>Cross-Platform Deployment
 
@@ -230,7 +230,7 @@ The following table lists the different architecture types of Windows images (32
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Limitations_of_cross-platform_deployment"></span><span id="limitations_of_cross-platform_deployment"></span><span id="LIMITATIONS_OF_CROSS-PLATFORM_DEPLOYMENT"></span>Limitations of cross-platform deployment
 
@@ -302,9 +302,9 @@ For more information, see [Encrypted Hard Drive Device Guide](http://go.microsof
 
 [Windows Setup Configuration Passes](windows-setup-configuration-passes.md)
 
- 
+ 
 
- 
+ 
 
 
 

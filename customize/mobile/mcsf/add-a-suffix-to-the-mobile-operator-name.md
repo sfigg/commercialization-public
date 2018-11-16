@@ -16,7 +16,7 @@ ms.topic: article
 # Add a suffix to the mobile operator name
 
 
-To meet branding requirements for some mobile operators, OEMs can add a suffix to the network name that is displayed on the phone. For example, from **ABC** to **ABC 3G** when under 3G coverage. This feature can be applied for any radio access technology (RAT).
+To meet branding requirements for some mobile operators, OEMs can add a suffix to the network name that is displayed on the phone. For example, from **ABC** to **ABC 3G** when under 3G coverage. This feature can be applied for any radio access technology (RAT).
 
 For TD-SCDMA RAT, a 3G suffix is always appended by default, but partners can also customize this the same way as with any other RAT.
 
@@ -33,9 +33,9 @@ This customization supports: **per-IMSI** value, **per-device** value
                          Description="Use to add a suffix to the network name that is displayed on the device."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
     <!-- Use for the per-IMSI case 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -45,7 +45,7 @@ This customization supports: **per-IMSI** value, **per-device** value
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -133,9 +133,11 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
 
-    For example, if you would like the mobile operator name (ABC) and the suffix (3G) to appear as **ABC 3G** (there is a space between the network name and the connection type) rather than **ABC3G** (no space between the network name and connection type), you need to include a space when setting the values.
+
+~~~
+For example, if you would like the mobile operator name (ABC) and the suffix (3G) to appear as **ABC 3G** (there is a space between the network name and the connection type) rather than **ABC3G** (no space between the network name and connection type), you need to include a space when setting the values.
+~~~
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device with a SIM.

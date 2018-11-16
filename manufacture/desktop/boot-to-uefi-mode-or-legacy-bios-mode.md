@@ -89,4 +89,4 @@ Remove the **efi** folder from the root of the Windows PE or Windows Setup media
 
 [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)
 
- 
+ 

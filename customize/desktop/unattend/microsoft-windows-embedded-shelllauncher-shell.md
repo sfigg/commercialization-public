@@ -43,7 +43,7 @@ Specifies the application or executable to use as the default custom shell.
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -72,9 +72,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

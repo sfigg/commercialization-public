@@ -38,7 +38,7 @@ This value will be appended with the word "apps", or the local equivalent, on th
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following XML output shows how to set the OEM name. On the Start screen, the
 
 [Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)
 
- 
+ 
 
- 
+ 
 
 
 

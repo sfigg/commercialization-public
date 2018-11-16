@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 Only primary and logical partitions are used to define the partition ID. Extended partitions are ignored.
 
- 
+ 
 
 For example:
 
@@ -44,7 +44,7 @@ For example:
 </tbody>
 </table>
 
- 
+ 
 
 Because the partition structure on a disk can change during installation, it is important to be aware of the changes to the partitions on a disk as you are creating your unattended installation answer file.
 
@@ -69,7 +69,7 @@ If you create additional partitions during Windows Setup, `PartitionID` must exa
 </tbody>
 </table>
 
- 
+ 
 
 ## Values
 
@@ -88,7 +88,7 @@ If you create additional partitions during Windows Setup, `PartitionID` must exa
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -159,9 +159,9 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 [InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md)
 
- 
+ 
 
- 
+ 
 
 
 

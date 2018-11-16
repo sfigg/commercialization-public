@@ -21,6 +21,7 @@ This test verifies that the LAN device on systems that support InstantGo deliver
 The device seamlessly transitions between D0 and D2 states while in Connected Standby. The device maintains L2 connectivity while in Connected Standby. The device wakes up on matching wake patterns only. There are no spurious wakes while in Connected Standby. The wake packets are delivered without delay or buffering. The Real Time Communication app stays connected while in Connected Standby for 30 minutes.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.CS.ReliableCSConnectivity</li></ul> |  
@@ -33,7 +34,7 @@ The device seamlessly transitions between D0 and D2 states while in Connected St
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -50,7 +51,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting LAN Testing](troubleshooting-lan-testing.md).
 
@@ -90,11 +91,11 @@ If you are still having problems completing this test, try the following:
 | **SupportDeviceStaticIP** |                       |
 | **CsDuration**            |                       |
 
- 
 
- 
 
- 
+
+
+
 
 
 

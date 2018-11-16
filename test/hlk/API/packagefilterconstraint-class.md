@@ -38,7 +38,7 @@ This class represents a filter constraint for the package filter.
 
 `Public Class PackageFilterConstraint`
 
-               `Implements IFilterConstraint`
+               `Implements IFilterConstraint`
 
 **C#**
 
@@ -51,16 +51,16 @@ This class represents a filter constraint for the package filter.
 
 **System.Object**
 
-    **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageFilterConstraint**
+    **Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageFilterConstraint**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

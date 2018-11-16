@@ -112,9 +112,9 @@ The following is a report descriptor excerpt from the integrated Windows Pen top
     0xb1, 0x02,                         //    FEATURE (Data,Var,Abs)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

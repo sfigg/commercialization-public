@@ -45,9 +45,9 @@ This function outputs one combined profile for all the profiles that have been a
 
 [IProfileCollection](iprofilecollection.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,10 +23,10 @@ Uniquely identifies the system provider.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<**SystemProviderId**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<**SystemProviderId**\>
 
 
 ## Syntax

@@ -88,7 +88,7 @@ And here are the relevant variables with their values:
 </tbody>
 </table>
 
- 
+ 
 
 **Vertical Offset**
 
@@ -105,11 +105,11 @@ And here is the relevant variable with its default value:
 |-----------------|----------------|-------|---------------|------------------------------------|
 | Vertical Offset | SpaceBarOffset | DWORD | 1000          | Offset distance in himetric units. |
 
- 
+ 
 
 **Note**  If the touchpad is not below the space bar, but is in fact located above the keyboard, leave the vertical offset at the default value.
 
- 
+ 
 
 **Depth Offset**
 
@@ -117,9 +117,9 @@ Windows Precision Touchpad devices should be integrated such that the digitizer 
 
 ![diagram showing how the depth offset for a windows precision touchpad is measured, relative to the palm deck.](../images/precision-img-depoffset.png)
 
- 
+ 
 
- 
+ 
 
 
 

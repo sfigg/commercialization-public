@@ -52,7 +52,7 @@ For more information about using `CopyProfile`, see [Customize the Default User 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following XML output specifies that Sysprep copies the customized user profi
 
 [Sysprep Technical Reference](http://go.microsoft.com/fwlink/?LinkId=214573)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,21 +23,21 @@ Describes stack caching attributes of collectors.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[SystemCollector](systemcollector.md)\>
-      * \<**StackCaching**\>
-    * \<[EventCollector](eventcollector.md)\>
-      * \<**StackCaching**\>
-    * \<[HeapEventCollector](heapeventcollector.md)\>
-      * \<**StackCaching**\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[SystemCollectorId](systemcollectorid.md)\>
-          * \<**StackCaching**\>
-        * \<[EventCollectorId](eventcollectorid.md)\>
-          * \<**StackCaching**\>
-        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
-          * \<**StackCaching**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemCollector](systemcollector.md)\>
+      * \<**StackCaching**\>
+    * \<[EventCollector](eventcollector.md)\>
+      * \<**StackCaching**\>
+    * \<[HeapEventCollector](heapeventcollector.md)\>
+      * \<**StackCaching**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<**StackCaching**\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<**StackCaching**\>
+        * \<[HeapEventCollectorId](heapeventcollectorid.md)\>
+          * \<**StackCaching**\>
 
 
 ## Syntax

@@ -32,12 +32,12 @@ ms.topic: article
 <tr class="odd">
 <td><p><em>Domain_name</em></p></td>
 <td><p>Specifies the name of the domain used to authenticate an account. <em>Domain_name</em> is a string. The value may be either a fully qualified DNS domain name or a NetBIOS domain name.</p>
-<p>If a value for <code>Domain</code> is not specified, [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md) must use the user principal name (UPN) format (user@fully-qualified-DNS-domain), NetBIOS-domain\username format, or the fully-qualified-DNS-domain\username format.</p></td>
+<p>If a value for <code>Domain</code> is not specified, <a href="microsoft-windows-unattendedjoin-identification-credentials-username.md" data-raw-source="[Username](microsoft-windows-unattendedjoin-identification-credentials-username.md)">Username</a> must use the user principal name (UPN) format (user<xref href="fully-qualified-DNS-domain)" data-throw-if-not-resolved="False" data-raw-source="@fully-qualified-DNS-domain)"></xref>, NetBIOS-domain\username format, or the fully-qualified-DNS-domain\username format.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -78,9 +78,9 @@ The following XML output shows how to set the identification credentials.
 
 [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,11 +18,11 @@ ms.topic: article
 
 The following information defines which certification kit (WLK 1.6, HLK 2.0, HLK 2.1) are applicable to Windows Server 2012 R2 and earlier.
 
->[!IMPORTANT]
->  
-Please forward to those in your organization who could benefit from this information, particularly your certification and/or test teams.
+> [!IMPORTANT]
+> 
+> Please forward to those in your organization who could benefit from this information, particularly your certification and/or test teams.
 
- 
+ 
 
 ## <span id="Windows_Server_certification_using_WLK_1.6__HLK_2.0__and_HLK_2.1_Definition"></span><span id="windows_server_certification_using_wlk_1.6__hlk_2.0__and_hlk_2.1_definition"></span><span id="WINDOWS_SERVER_CERTIFICATION_USING_WLK_1.6__HLK_2.0__AND_HLK_2.1_DEFINITION"></span>Windows Server certification using WLK 1.6, HLK 2.0, and HLK 2.1 Definition
 
@@ -95,9 +95,9 @@ Imaging device types specified above that are successfully certified against Win
 
 For further inquiries, please contact <AskWSHC@microsoft.com>.
 
- 
+ 
 
- 
+ 
 
 
 

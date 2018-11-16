@@ -40,7 +40,7 @@ ms.topic: article
 <td><p>This property represents the Portal ID for this platform.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CorePackageComposition](osplatformcorepackagecomposition-property.md)</p></td>
+<td><p><a href="osplatformcorepackagecomposition-property.md" data-raw-source="[CorePackageComposition](osplatformcorepackagecomposition-property.md)">CorePackageComposition</a></p></td>
 <td><p>This property represents the core package composition for this platform.</p></td>
 </tr>
 <tr class="even">
@@ -60,17 +60,17 @@ ms.topic: article
 <td><p>This property represents the name of the platform (for example, Windows 7).</p></td>
 </tr>
 <tr class="even">
-<td><p>[Release](osplatformrelease-property.md)</p></td>
+<td><p><a href="osplatformrelease-property.md" data-raw-source="[Release](osplatformrelease-property.md)">Release</a></p></td>
 <td><p>This property represents the release ID for this platform.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,13 +34,13 @@ The following tables list the members exposed by the [DeviceOperations Class](de
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceOperations](deviceoperations-constructor.md)</p></td>
-<td><p>Initializes a new instance of the [DeviceOperations Class](deviceoperations-class.md).</p></td>
+<td><p><a href="deviceoperations-constructor.md" data-raw-source="[DeviceOperations](deviceoperations-constructor.md)">DeviceOperations</a></p></td>
+<td><p>Initializes a new instance of the <a href="deviceoperations-class.md" data-raw-source="[DeviceOperations Class](deviceoperations-class.md)">DeviceOperations Class</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -70,7 +70,7 @@ The following tables list the members exposed by the [DeviceOperations Class](de
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProxyClientSystemReflash](deviceoperations-proxyclientsystemreflash-method.md)</p></td>
+<td><p><a href="deviceoperations-proxyclientsystemreflash-method.md" data-raw-source="[ProxyClientSystemReflash](deviceoperations-proxyclientsystemreflash-method.md)">ProxyClientSystemReflash</a></p></td>
 <td><p>Schedules re-flash on phone devices connected via proxy client.</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ The following tables list the members exposed by the [DeviceOperations Class](de
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -108,11 +108,11 @@ The following tables list the members exposed by the [DeviceOperations Class](de
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

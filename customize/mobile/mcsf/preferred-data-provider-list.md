@@ -23,7 +23,7 @@ When the PO SIM is inserted into the phone, the OS picks the PO SIM as the data 
 **Note**  
 OEMs should not set this customization unless required by the mobile operator.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 

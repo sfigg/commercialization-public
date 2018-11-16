@@ -45,7 +45,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 If no value is entered, then the default setting is to create the optimal number of tab processes based on the operating system and amount of physical memory. We recommend the default setting.
 
@@ -78,9 +78,9 @@ The following XML output shows how to configure Internet Explorer to allow tab p
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

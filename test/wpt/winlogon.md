@@ -36,9 +36,9 @@ Shows events from *T1* to *T2*, in microseconds.
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

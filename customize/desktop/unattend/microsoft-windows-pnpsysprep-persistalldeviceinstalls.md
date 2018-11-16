@@ -31,7 +31,7 @@ To avoid driver conflicts, each device should have driver files associated with 
 **Warning**  
 Avoid using the `PersistAllDeviceInstalls` setting when the hardware and the hardware configuration on the reference computer are not identical to the destination computers. Even seemingly minor changes to the hardware or hardware configuration can cause severe or easily overlooked problems.
 
- 
+ 
 
 For more information on maintaining driver configurations when capturing a Windows image, see [this Microsoft website](http://go.microsoft.com/fwlink/?LinkId=224866).
 
@@ -56,7 +56,7 @@ For more information on maintaining driver configurations when capturing a Windo
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -91,9 +91,9 @@ The following XML output specifies that device drivers remain be installed on th
 
 [Maintain Driver Configurations When Capturing a Windows Image](http://go.microsoft.com/fwlink/?LinkId=184946)
 
- 
+ 
 
- 
+ 
 
 
 

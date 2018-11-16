@@ -77,7 +77,7 @@ Symbol decoding support is complex. The following requirements must be met:
     **Note**  
     All of these events might not be listed in the table, depending on whether these events occurred.
 
-     
+     
 
 ### Limitation in Xperf Symbol Decoding
 
@@ -98,9 +98,9 @@ To enable symbol decoding and to help enable correct image load and unload paths
 
 [Common In-Depth Analysis Issues](../assessments/common-in-depth-analysis-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

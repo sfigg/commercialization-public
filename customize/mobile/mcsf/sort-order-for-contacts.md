@@ -67,7 +67,7 @@ OEMs can use this customization to set the list of contacts displayed in the Peo
     </tbody>
     </table>
 
-     
+     
 
 4.  Set the `DisplayBy` Value to one of the following values:
 
@@ -94,7 +94,7 @@ OEMs can use this customization to set the list of contacts displayed in the Peo
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

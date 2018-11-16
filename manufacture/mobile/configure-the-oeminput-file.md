@@ -106,9 +106,9 @@ In this walkthrough, we will add the two features we defined in [Adding a packag
 
 2.  Name and save your OEMInput.xml file. For our example, we named it ContosoTestOEMInput.xml and saved it in a %WPDKCONTENTROOT%\\ContosoOEMInput folder.
 
- 
+ 
 
- 
+ 
 
 
 

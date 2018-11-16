@@ -44,7 +44,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -79,9 +79,9 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 
 [Interface](microsoft-windows-netbt-interfaces-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

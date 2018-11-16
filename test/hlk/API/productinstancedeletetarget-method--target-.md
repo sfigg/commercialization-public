@@ -40,7 +40,7 @@ This method enables the removal of a test target from this product instance.
 
 `Public Sub DeleteTarget ( _`
 
-          `target As Target _`
+          `target As Target _`
 
 `)`
 
@@ -48,7 +48,7 @@ This method enables the removal of a test target from this product instance.
 
 `public void DeleteTarget (`
 
-          `Target target`
+          `Target target`
 
 `)`
 
@@ -57,7 +57,7 @@ This method enables the removal of a test target from this product instance.
 
 *target*
 
-     The ID value of the test target to be removed from this product instance.
+     The ID value of the test target to be removed from this product instance.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception is thrown if *target* is **null**:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

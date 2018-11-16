@@ -42,9 +42,9 @@ For a list of the Windows editions and architectures that this component support
 
 [VisualEffects](microsoft-windows-shell-setup-visualeffects.md)
 
- 
+ 
 
- 
+ 
 
 
 

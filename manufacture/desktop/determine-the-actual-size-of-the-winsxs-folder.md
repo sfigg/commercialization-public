@@ -67,9 +67,9 @@ A new option has been added to the DISM tool for Windows 8.1 to help determine h
 
     Actual Size of Component Store : 4.88 GB
 
-        Shared with Windows : 4.38 GB
-        Backups and Disabled Features : 506.90 MB
-        Cache and Temporary Data : 279.52 KB
+        Shared with Windows : 4.38 GB
+        Backups and Disabled Features : 506.90 MB
+        Cache and Temporary Data : 279.52 KB
 
     Date of Last Cleanup : 2013-06-10 23:32:22
 

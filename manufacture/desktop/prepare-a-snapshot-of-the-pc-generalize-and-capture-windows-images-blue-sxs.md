@@ -28,7 +28,7 @@ If you want to capture the changes in an image and apply it to other devices, yo
 
     ```
     CopyDandI.cmd amd64 D:\ADKTools\amd64
-	```
+    ```
     
     > [!Important]
     > Don't overwrite the existing DISM files on the WinPE image.

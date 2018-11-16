@@ -46,9 +46,9 @@ If the function succeeds, the return value is ERROR\_SUCCESS. Otherwise, the fun
 
 [Wi-Fi manufacturing API](wi-fi-manufacturing-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

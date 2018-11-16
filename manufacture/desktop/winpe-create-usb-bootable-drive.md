@@ -56,7 +56,7 @@ Now that you now have a set of working files, you can use **MakeWinPEMedia** to 
 2. Start the **Deployment and Imaging Tools Environment** as an administrator.
 
 3. **Optional** 
-    You can format your USB key prior to running MakeWinPEMedia. MakeWinPEMedia will format your WinPE drive as FAT32. If you want to be able to store files larger than 4GB on your WinPE USB drive, you can create a multipartition USB drive that has an additional partition formatted as NTFS. See [Create a multipartition USB drive](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md#span-idcreateamultiplepartitionusbdrivespanoption-1-create-a-multiple-partition-usb-drive) for instructions.
+    You can format your USB key prior to running MakeWinPEMedia. MakeWinPEMedia will format your WinPE drive as FAT32. If you want to be able to store files larger than 4GB on your WinPE USB drive, you can create a multipartition USB drive that has an additional partition formatted as NTFS. See [Create a multipartition USB drive](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md#create-two-partition-drive) for instructions.
 
 4. Use **MakeWinPEMedia** with the `/UFD` option to format and install Windows PE to the USB flash drive, specifying the USB key's drive letter:
 
@@ -137,9 +137,9 @@ To install Windows PE to a VHD:
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

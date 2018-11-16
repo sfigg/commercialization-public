@@ -48,14 +48,14 @@ To run WinSAT per computer (for all systems):
     **Note**  
     To reduce the time a PC spends on the factory floor, we recommend using **WinSAT prepop** when you are creating your master Windows images. On the factory floor, you would only need to run **WinSAT moobe**. However, if you want to run both **WinSAT prepop** and **WinSAT moobe** on the factory floor, you can use **WinSAT formal** instead. This option creates the same set of files as running both **WinSAT prepop** and **WinSAT moobe** and should be used in scenarios when you are not able to run **WinSAT prepop** on your master Windows images.
 
-     
+     
 
 6.  Run the **sysprep /oobe** to configure Windows to boot to OOBE.
 
     **Warning**  
     Running **sysprep /generalize** after running **WinSAT moobe** will delete the results that **WinSAT moobe** created. We recommend that you run **WinSAT moobe** or **WinSAT formal** on the factory floor for each PC that you intend to ship to a customer.
 
-     
+     
 
 The system is now ready to be shipped to a customer. The benefit of running all of the WinSAT assessments per computer image is that the customer’s computer always has a complete set of WinSAT results. It also has the most accurate WinSAT results. In this use, accurate means that if the consumer used on-demand rating of a system, that system would get a rating equal to or greater than the rating that was prepopulated by WinSAT.
 
@@ -87,7 +87,7 @@ The following procedure describes how to run WinSAT on selected configurations w
     **Note**  
     Because WinSAT results can be used with configurations of the same level or higher, if you revert to the base configuration, the test results are relevant to a broader range of computers.
 
-     
+     
 
 10. Re-run the test using the **WinSAT prepop -graphics** command. Only tests relevant to the specified component run. An additional .xml file is generated for the Graphics results.
 
@@ -145,9 +145,9 @@ A WinSAT formal file created from running **winsat prepop** followed by **winsat
 
 [Windows Deployment Options](windows-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

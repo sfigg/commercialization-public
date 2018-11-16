@@ -44,7 +44,7 @@ ms.topic: article
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProxyClientSystemReflash](deviceoperations-proxyclientsystemreflash-method.md)</p></td>
+<td><p><a href="deviceoperations-proxyclientsystemreflash-method.md" data-raw-source="[ProxyClientSystemReflash](deviceoperations-proxyclientsystemreflash-method.md)">ProxyClientSystemReflash</a></p></td>
 <td><p>Schedules re-flash on phone devices connected via proxy client.</p></td>
 </tr>
 <tr class="odd">
@@ -54,7 +54,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -82,11 +82,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

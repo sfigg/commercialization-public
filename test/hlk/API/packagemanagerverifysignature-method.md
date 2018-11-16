@@ -18,9 +18,9 @@ ms.topic: article
 
 This method is no longer valid. Use **IOpcFactory** and **CreateDigitalSignatureManager** to detect signatures.
 
- 
+ 
 
- 
+ 
 
 
 

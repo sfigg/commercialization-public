@@ -95,9 +95,9 @@ To automate this process, you'll need to run Windows Setup through Windows PE, a
 
 [Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

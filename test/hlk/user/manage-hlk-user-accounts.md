@@ -20,11 +20,11 @@ An HLK user account is automatically created for the person who installed the HL
 
 HLK administrators can create new HLK user accounts or modify the permissions of existing HLK user accounts.
 
->[!IMPORTANT]
->  
-To create an HLK user account for a domain user, as opposed to a user account for a local user, you must be logged on to the HLK Studio computer as a domain user with administrator rights on the local machine.
+> [!IMPORTANT]
+> 
+> To create an HLK user account for a domain user, as opposed to a user account for a local user, you must be logged on to the HLK Studio computer as a domain user with administrator rights on the local machine.
 
- 
+ 
 
 If you try to create an HLK user account for a domain user while you are logged on as a local user with administrator rights, an error message will appear informing you that the user for whom you are trying to set up permissions does not exist in the domain. The domain referred to in the error message is the local machine and not the domain to which it is connected.
 
@@ -68,7 +68,7 @@ The following is a list of the HLK datastore roles that you can assign a user wh
 </tbody>
 </table>
 
- 
+ 
 
 **Permissions Table**
 
@@ -149,67 +149,67 @@ The following is a list of the HLK datastore roles that you can assign a user wh
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Creating_a_HLK_User_Account"></span><span id="creating_a_hlk_user_account"></span><span id="CREATING_A_HLK_USER_ACCOUNT"></span>Creating a HLK User Account
 
 
-1.  From your controller, select **Start&gt;All Programs&gt; Windows Kits&gt;Hardware Certification Kit&gt;HLK Manager**.
+1. From your controller, select **Start&gt;All Programs&gt; Windows Kits&gt;Hardware Certification Kit&gt;HLK Manager**.
 
-2.  Select **Tool&gt;Management Console**.
+2. Select **Tool&gt;Management Console**.
 
-3.  In the left pane, expand **Console Root**.
+3. In the left pane, expand **Console Root**.
 
-4.  For each of the listed datastores (WTTIdentity and HLKJobs), do the following:
+4. For each of the listed datastores (WTTIdentity and HLKJobs), do the following:
 
-    1.  Expand the datastore, right-click **Users**, and then click **New User**.
+   1. Expand the datastore, right-click **Users**, and then click **New User**.
 
-    2.  In the **Datastore User Properties - New User** dialog box, in the top pane, type the user name of the person you are creating a HLK user account for using the format domain\\username, where domain is the user's domain or workgroup name, and username is the user's user name.
+   2. In the **Datastore User Properties - New User** dialog box, in the top pane, type the user name of the person you are creating a HLK user account for using the format domain\\username, where domain is the user's domain or workgroup name, and username is the user's user name.
 
-        >[!NOTE]
-        >  
-        If you are creating multiple user accounts, separate each user with a semicolon.
+      > [!NOTE]
+      > 
+      > If you are creating multiple user accounts, separate each user with a semicolon.
 
-         
+         
 
-    3.  In the **Datastore Role** pane, select the **HLK\_DSOwners** check box.
+   3. In the **Datastore Role** pane, select the **HLK\_DSOwners** check box.
 
-        >[!WARNING]
-        >  
-        You can assign multiple roles to a new user at the same time. To grant this user administrator privileges, select the **hlk\_DSAdmins** check box also.
+      > [!WARNING]
+      > 
+      > You can assign multiple roles to a new user at the same time. To grant this user administrator privileges, select the **hlk\_DSAdmins** check box also.
 
-         
+         
 
-    4.  Click **OK**.
+   4. Click **OK**.
 
 ## <span id="Granting_Permissions"></span><span id="granting_permissions"></span><span id="GRANTING_PERMISSIONS"></span>Granting Permissions
 
 
 Complete the following procedure to grant a HLK user permission to run jobs on a machine pool.
 
-1.  From your controller, select **Start&gt;All Programs&gt; Windows Kits&gt;Hardware Certification Kit&gt;HLK Manager**.
+1. From your controller, select **Start&gt;All Programs&gt; Windows Kits&gt;Hardware Certification Kit&gt;HLK Manager**.
 
-2.  Select **Explorers&gt;Job Monitor**.
+2. Select **Explorers&gt;Job Monitor**.
 
-3.  Select your HLK controller from the drop-down list box at the upper-left corner.
+3. Select your HLK controller from the drop-down list box at the upper-left corner.
 
-4.  In the **Machine Pool** pane, expand the machine pool hierarchy, right-click the machine pool that you want the user to be able to run a job on, and then click **Properties**.
+4. In the **Machine Pool** pane, expand the machine pool hierarchy, right-click the machine pool that you want the user to be able to run a job on, and then click **Properties**.
 
-5.  On the **Security** tab, click **Add**.
+5. On the **Security** tab, click **Add**.
 
-6.  In the **User List** dialog box, click the user name, and then click **OK**.
+6. In the **User List** dialog box, click the user name, and then click **OK**.
 
-    >[!WARNING]
-    >  
-    If the user name does not appear in the user list, the user does not have a HLK user account. Create the user account, and then give the user permission to run jobs.
+   > [!WARNING]
+   > 
+   > If the user name does not appear in the user list, the user does not have a HLK user account. Create the user account, and then give the user permission to run jobs.
 
-     
+     
 
-7.  In the bottom pane of the **Properties** dialog box, select the **Execute Jobs** check box and clear any check boxes for permissions that you don't want the user to have, and then click **OK**.
+7. In the bottom pane of the **Properties** dialog box, select the **Execute Jobs** check box and clear any check boxes for permissions that you don't want the user to have, and then click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

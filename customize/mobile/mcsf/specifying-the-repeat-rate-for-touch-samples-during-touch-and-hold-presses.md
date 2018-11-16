@@ -23,7 +23,7 @@ Microsoft recommends that OEMs send duplicate touch samples for touch-and-hold p
 **Note**  
 Although OEMs typically configure this behavior by adding a registry value in an INF file that is included in a driver package, this behavior can also be configured via the customization process described below. By using both options, OEMs can define the default behavior in the driver for a specific hardware component, and modify this behavior as necessary in images for different mobile device models that use the same driver.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 

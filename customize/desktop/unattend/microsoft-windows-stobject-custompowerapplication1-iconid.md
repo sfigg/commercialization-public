@@ -35,7 +35,7 @@ To use a different IconID for each language, create a resource file, and refer t
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md).</p>
+<td><p>Specifies the resource ID of the icon to use for <a href="microsoft-windows-stobject-custompowerapplication1.md" data-raw-source="[CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md)">CustomPowerApplication1</a>.</p>
 <p><code>IconID</code> is represented as @<em>dllname,-resourceID</em>, where <em>dllname</em> must include a full path to the resource DLL. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</code></pre>
 <p><em>ID</em> is a string.</p></td>
@@ -43,7 +43,7 @@ To use a different IconID for each language, create a resource file, and refer t
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -83,9 +83,9 @@ The following XML output shows `CustomPowerApplication1` Application.exe with `p
 
 [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md)
 
- 
+ 
 
- 
+ 
 
 
 

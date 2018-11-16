@@ -99,7 +99,7 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device that supports either a single or dual SIM.

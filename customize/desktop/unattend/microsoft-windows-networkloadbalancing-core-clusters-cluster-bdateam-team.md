@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
- 
+ 
 
 ## Value
 
@@ -41,7 +41,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -74,9 +74,9 @@ The following XML output specifies a valid GUID that identifies a BDA team.
 
 [BDATeam](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam.md)
 
- 
+ 
 
- 
+ 
 
 
 

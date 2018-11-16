@@ -98,11 +98,10 @@ Configures the Event Tracing for Windows (ETW) user-mode provider.
 <li><p>&quot;ProcessExeFilter=&quot;wpa.exe&quot;</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>WPR essentially passes on the .exe name into the <a href="https://msdn.microsoft.com/library/windows/desktop/aa363758.aspx">EVENT_FILTER_DESCRIPTOR</a> structure.</p>
+<strong>Note</strong><br/><p>WPR essentially passes on the .exe name into the <a href="https://msdn.microsoft.com/library/windows/desktop/aa363758.aspx">EVENT_FILTER_DESCRIPTOR</a> structure.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td>No</td>
 <td></td>

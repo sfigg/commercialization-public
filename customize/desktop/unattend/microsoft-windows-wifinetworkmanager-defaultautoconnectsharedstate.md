@@ -22,7 +22,7 @@ ms.topic: article
 **Important**  
 All Wi-Fi sense default settings must be on (or set to 1) unless Microsoft executive approval has been granted for specific mobile operator requests, or for countries listed as exempt.
 
- 
+ 
 
 ## Values
 
@@ -47,7 +47,7 @@ Set the value of `DefaultAutoConnectSharedState` to one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -70,9 +70,9 @@ Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WiFiNetworkManager](microsoft-windows-wifinetworkmanager.md).
 
- 
+ 
 
- 
+ 
 
 
 

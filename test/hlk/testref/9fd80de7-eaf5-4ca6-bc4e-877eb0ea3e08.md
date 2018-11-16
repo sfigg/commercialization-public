@@ -19,6 +19,7 @@ ms.topic: article
 For NDIS 6.0 miniports, this test verifies that miniport maintains and report statistics from OID\_GEN\_STATISTICS correctly. The test also verifies that the miniport correctly supports statistics OIDs OID\_GEN\_RCV\_OK OID\_GEN\_RCV\_NO\_BUFFER OID\_GEN\_RCV\_ERROR. It sends a bunch of packets to the test adapter and checks that the statistics get incremented. It expects the OID\_GEN\_RCV\_NO\_BUFFER to incremented exactly by the number of packets that were dropped.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.Base.NDISRequirements</li></ul> |  
@@ -31,7 +32,7 @@ For NDIS 6.0 miniports, this test verifies that miniport maintains and report st
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -48,7 +49,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting LAN Testing](troubleshooting-lan-testing.md).
 
@@ -65,11 +66,11 @@ For troubleshooting information, see [Troubleshooting LAN Testing](troubleshooti
 | **ServerMessageDeviceGuid** |                                          |
 | **TestScript**              | comma separated list of test jobs to run |
 
- 
 
- 
 
- 
+
+
+
 
 
 

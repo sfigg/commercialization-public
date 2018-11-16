@@ -41,7 +41,7 @@ This customization supports: **per-SIM** value
                          Description="Use to configure MMS settings if data is turned off."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -51,7 +51,7 @@ This customization supports: **per-SIM** value
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -110,7 +110,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+
 
 6.  Before you set the value for `AllowMmsIfDataIsOff`, note that if you do not set `ExemptFromDisablePolicy` to 1 (0 by default), then you must:
 
@@ -146,7 +146,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+
 
 7.  To allow MMS if data is turned off while the user is roaming, set value of `AllowMmsIfDataIsOffWhileRoaming` to one of the following:
 
@@ -174,11 +174,13 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
 
-    **Note**  This setting is only visible if `AllowMmsIfDataIsOff` is set.
 
-     
+~~~
+**Note**  This setting is only visible if `AllowMmsIfDataIsOff` is set.
+~~~
+
+
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

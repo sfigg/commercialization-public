@@ -40,7 +40,7 @@ This method saves a submission package to disk.
 
 `Public Sub Save ( _`
 
-          `packageFile As String _`
+          `packageFile As String _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method saves a submission package to disk.
 
 `public void Save (`
 
-          `string packageFile`
+          `string packageFile`
 
 `)`
 
@@ -57,7 +57,7 @@ This method saves a submission package to disk.
 
 *packageFile*
 
-     The file name (including the path) specifying where to write the package.
+     The file name (including the path) specifying where to write the package.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -83,9 +83,9 @@ This method throws an exception when:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -64,7 +64,7 @@ Configures the link power management mode for disk and storage devices that are 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

@@ -66,11 +66,11 @@ Console.Out.WriteLine("{0} filters were applied for project {1}",
 
 You can download the latest filters from the following location:
 
--   [Windows Hardware Lab Kit Filters](..\user\windows-hardware-lab-kit-filters.md)
+- [Windows Hardware Lab Kit Filters](../user/windows-hardware-lab-kit-filters.md)
 
- 
+ 
 
- 
+ 
 
 
 

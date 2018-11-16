@@ -26,21 +26,21 @@ Windows Assessment Toolkit Technical Reference contains assessments that measure
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Assessments](assessments.md)</p></td>
+<td><p><a href="assessments.md" data-raw-source="[Assessments](assessments.md)">Assessments</a></p></td>
 <td><p>A combination of .xml and binary files that induce a specific set of states on a computer, measure and record the activity, and preserve the recorded results. The results often include diagnostics and remediation information that help you determine areas that need additional investigation and corrective action.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Assessment Platform Command-line Syntax](assessment-platform-command-line-syntax.md)</p></td>
+<td><p><a href="assessment-platform-command-line-syntax.md" data-raw-source="[Assessment Platform Command-line Syntax](assessment-platform-command-line-syntax.md)">Assessment Platform Command-line Syntax</a></p></td>
 <td><p>Syntax for consistently running and displaying jobs, assessments, and results.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

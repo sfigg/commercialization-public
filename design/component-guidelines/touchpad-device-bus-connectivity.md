@@ -61,7 +61,7 @@ A Windows Precision Touchpad device that is connected to its Windows host via th
 | GPIO Interrupt Assertion Type  | This defines whether the device will provide edge triggered, or level triggered interrupts. HID I²C-compliant devices should provide and indicate "Level" triggered interrupts.                                   |
 | GPIO Interrupt Assertion Level | This defines the line level when the interrupt is asserted by the device. This can be specified as "ActiveLow" or "ActiveHigh".                                                                                   |
 
- 
+ 
 
 ## USB Devices
 
@@ -77,9 +77,9 @@ Note that when connecting to a USB hub it is important to understand the bandwid
 
 If you decide to use a USB bridge for connecting an I²C Windows Precision Touchpad to its Windows host, then the bridge should expose the touchpad as a distinct device node with the device’s unique attributes (wVendorID, wProductID, wVersionID).
 
- 
+ 
 
- 
+ 
 
 
 

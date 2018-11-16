@@ -65,7 +65,7 @@ This is a test to check the time lag (latency) between the Windows pen being in 
 
 **Note**  Unless there's an error, do not exit the test by pressing ESC, otherwise the test might not finish running.
 
- 
+ 
 
 **Common errors**
 
@@ -77,7 +77,7 @@ This is a test to check the time lag (latency) between the Windows pen being in 
     
     **Note**  A correctly incrementing count should start at 1, and increment by 2 each rotation cycle until the count hits 17.
 
-     
+     
 
 -   At the end of the Calibration stage, the motor will pause completely for 5 seconds. During that pause, the space bar must be hit to advance to the Acquisition stage, otherwise an error message will be displayed.
 

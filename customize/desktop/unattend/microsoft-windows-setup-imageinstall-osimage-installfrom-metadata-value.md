@@ -31,13 +31,13 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies a value for the setting: [Key](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md).</p>
+<td><p>Specifies a value for the setting: <a href="microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md" data-raw-source="[Key](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md)">Key</a>.</p>
 <p><em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -93,9 +93,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 [Key](microsoft-windows-setup-imageinstall-osimage-installfrom-metadata-key.md)
 
- 
+ 
 
- 
+ 
 
 
 

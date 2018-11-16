@@ -165,12 +165,12 @@ The following table shows the version values for V1 and V2 ffu image formats.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 -   The OEM should not flash the image to the device unless the version of the image matches these values.
 
- 
+ 
 
 <span id="NumOfStores__V2_only_"></span><span id="numofstores__v2_only_"></span><span id="NUMOFSTORES__V2_ONLY_"></span>NumOfStores (V2 only)  
 Number of stores and their payloads in this FFU.
@@ -190,26 +190,26 @@ Actual device path that the store is targeted for. This should be the same as de
 ```
 typedef struct _STORE_HEADER
 {
-    UINT32 dwUpdateType; // indicates partial or full flash
-    UINT16 MajorVersion, MinorVersion; // used to validate struct
-    UINT16 FullFlashMajorVersion, FullFlashMinorVersion; // FFU version, i.e. the image format
-    char szPlatformId[192]; // string which indicates what device this FFU is intended to be written to
-    UINT32 dwBlockSizeInBytes; // size of an image block in bytes – the device’s actual sector size may differ
-    UINT32 dwWriteDescriptorCount; // number of write descriptors to iterate through
-    UINT32 dwWriteDescriptorLength; // total size of all the write descriptors, in bytes (included so they can be read out up front and interpreted later)
-    UINT32 dwValidateDescriptorCount; // number of validation descriptors to check
-    UINT32 dwValidateDescriptorLength; // total size of all the validation descriptors, in bytes
-    UINT32 dwInitialTableIndex; // block index in the payload of the initial (invalid) GPT
-    UINT32 dwInitialTableCount; // count of blocks for the initial GPT, i.e. the GPT spans blockArray[idx..(idx + count -1)]
-    UINT32 dwFlashOnlyTableIndex; // first block index in the payload of the flash-only GPT (included so safe flashing can be accomplished)
-    UINT32 dwFlashOnlyTableCount; // count of blocks in the flash-only GPT
-    UINT32 dwFinalTableIndex; // index in the table of the real GPT
-    UINT32 dwFinalTableCount; // number of blocks in the real GPT
-    UINT16 NumOfStores; // Total number of stores (V2 only)
-    UINT16 StoreIndex; // Current store index, 1-based (V2 only)
-    UINT64 StorePayloadSize; // Payload data only, excludes padding (V2 only)
-    UINT16 DevicePathLength; // Length of the device path (V2 only)
-    CHAR16 DevicePath[1]; // Device path has no NUL at then end (V2 only)
+    UINT32 dwUpdateType; // indicates partial or full flash
+    UINT16 MajorVersion, MinorVersion; // used to validate struct
+    UINT16 FullFlashMajorVersion, FullFlashMinorVersion; // FFU version, i.e. the image format
+    char szPlatformId[192]; // string which indicates what device this FFU is intended to be written to
+    UINT32 dwBlockSizeInBytes; // size of an image block in bytes – the device’s actual sector size may differ
+    UINT32 dwWriteDescriptorCount; // number of write descriptors to iterate through
+    UINT32 dwWriteDescriptorLength; // total size of all the write descriptors, in bytes (included so they can be read out up front and interpreted later)
+    UINT32 dwValidateDescriptorCount; // number of validation descriptors to check
+    UINT32 dwValidateDescriptorLength; // total size of all the validation descriptors, in bytes
+    UINT32 dwInitialTableIndex; // block index in the payload of the initial (invalid) GPT
+    UINT32 dwInitialTableCount; // count of blocks for the initial GPT, i.e. the GPT spans blockArray[idx..(idx + count -1)]
+    UINT32 dwFlashOnlyTableIndex; // first block index in the payload of the flash-only GPT (included so safe flashing can be accomplished)
+    UINT32 dwFlashOnlyTableCount; // count of blocks in the flash-only GPT
+    UINT32 dwFinalTableIndex; // index in the table of the real GPT
+    UINT32 dwFinalTableCount; // number of blocks in the real GPT
+    UINT16 NumOfStores; // Total number of stores (V2 only)
+    UINT16 StoreIndex; // Current store index, 1-based (V2 only)
+    UINT64 StorePayloadSize; // Payload data only, excludes padding (V2 only)
+    UINT16 DevicePathLength; // Length of the device path (V2 only)
+    CHAR16 DevicePath[1]; // Device path has no NUL at then end (V2 only)
 } STORE_HEADER;
 ```
 
@@ -284,9 +284,9 @@ In V1 FFU format, you should see only one image payload region. in V2 FFU format
 
 [Flashing tools](flashing-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

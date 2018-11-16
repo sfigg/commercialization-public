@@ -23,9 +23,9 @@ This section addresses the following three areas pertinent to designing Modern S
 -   [Optimization](optimization.md)
 -   [Power configuration options](power-configuration-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

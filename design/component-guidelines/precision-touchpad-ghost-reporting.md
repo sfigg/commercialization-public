@@ -43,7 +43,7 @@ This is to test the accuracy of the reported contacts for a Windows Precision To
 
 **Note**  There is a timer in the top-right corner of the screen for reference.
 
- 
+ 
 
 4. PTLogo will automatically verify that no contacts have been reported by the device, and advance to the next iteration.
 
@@ -57,9 +57,9 @@ This is to test the accuracy of the reported contacts for a Windows Precision To
 
 -   2/2 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,37 +40,37 @@ The information in this section pertains to all processor architectures—x86, x
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[User experience principles for battery charging](user-experience-principles-for-battery-charging.md)</p></td>
+<td><p><a href="user-experience-principles-for-battery-charging.md" data-raw-source="[User experience principles for battery charging](user-experience-principles-for-battery-charging.md)">User experience principles for battery charging</a></p></td>
 <td><p>Outlines the five fundamental user experience principles for battery charging.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Power and charging subsystem implementation](power-and-charging-subsystem-implementation.md)</p></td>
+<td><p><a href="power-and-charging-subsystem-implementation.md" data-raw-source="[Power and charging subsystem implementation](power-and-charging-subsystem-implementation.md)">Power and charging subsystem implementation</a></p></td>
 <td><p>Describes how to implement the battery power and charging subsystem on a Windows platform.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ACPI battery and power subsystem firmware implementation](acpi-battery-and-power-subsystem-firmware-implementation.md)</p></td>
+<td><p><a href="acpi-battery-and-power-subsystem-firmware-implementation.md" data-raw-source="[ACPI battery and power subsystem firmware implementation](acpi-battery-and-power-subsystem-firmware-implementation.md)">ACPI battery and power subsystem firmware implementation</a></p></td>
 <td><p>This topic details how the platform should expose power subsystem information to the Windows power manager.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Battery and power subsystem hardware design](battery-and-power-subsystem-hardware-design.md)</p></td>
+<td><p><a href="battery-and-power-subsystem-hardware-design.md" data-raw-source="[Battery and power subsystem hardware design](battery-and-power-subsystem-hardware-design.md)">Battery and power subsystem hardware design</a></p></td>
 <td><p>Explains the many factors in designing the battery and power subsystem hardware.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Platform requirements and motivation](platform-requirements-and-motivation.md)</p></td>
+<td><p><a href="platform-requirements-and-motivation.md" data-raw-source="[Platform requirements and motivation](platform-requirements-and-motivation.md)">Platform requirements and motivation</a></p></td>
 <td><p>Describes the hardware requirements and motivation for the power and battery subsystem on the Windows platform.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Power and battery subsystem checklist](power-and-battery-subsystem-checklist.md)</p></td>
+<td><p><a href="power-and-battery-subsystem-checklist.md" data-raw-source="[Power and battery subsystem checklist](power-and-battery-subsystem-checklist.md)">Power and battery subsystem checklist</a></p></td>
 <td><p>System designers can use the checklists included in this section to verify that their platform designs and system firmware follow the Windows guidelines for power and battery subsystem operation.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

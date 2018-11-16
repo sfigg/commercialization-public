@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 The value for **Key** is added to the answer file as an attribute of the [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) element. The attribute `wcm:keyValue` is used to identify multiple list item types of ValidCommunity. For example, you can specify three different communities, by using the Key values of **1**, **2**, and **3**.
 
- 
+ 
 
 You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
@@ -43,7 +43,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -97,9 +97,9 @@ The following XML sample output shows how to set SNMP.
 
 [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md)
 
- 
+ 
 
- 
+ 
 
 
 

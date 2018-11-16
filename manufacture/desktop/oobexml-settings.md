@@ -176,9 +176,9 @@ The following table shows values for HID setup.
 
 [Configure Oobe.xml](configure-oobexml.md)
 
- 
+ 
 
- 
+ 
 
 
 

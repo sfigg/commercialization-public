@@ -20,7 +20,7 @@ Tracelog and Xperf are used to capture event trace logs on Windows 10 Mobile.
 **Important**  
 To capture trace logs, the device image must be built with the appropriate type and packages. This is done by modifying the OEMInput file to set the **ReleaseType** element to **Test**, and adding **TESTINFRASTRUCTURE** to the **Features** element.
 
- 
+ 
 
 ## Step 1: Install the Windows Performance Toolkit
 
@@ -50,7 +50,7 @@ Using the TShell command window, run Tracelog with desired parameters to start e
 **Important**  
 On Windows 10 Mobile, Tracelog must place its logs within the C:\\data directory due to partition size restrictions. Be sure to use the -f flag to configure Tracelog to use C:\\data.
 
- 
+ 
 
 For detailed Tracelog command line syntax, see [Tracelog Command Syntax](http://msdn.microsoft.com/library/windows/hardware/ff553012.aspx). For additional examples, see [Tracelog Examples](http://msdn.microsoft.com/library/windows/hardware/ff553026.aspx).
 
@@ -304,9 +304,9 @@ C:\Users\username\Documents>xperf -i MyPowerLogOut.etl -o MyPowerLogCSV.csv -tle
 C:\Users\username\Documents>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

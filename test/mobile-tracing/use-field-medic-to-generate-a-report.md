@@ -36,21 +36,25 @@ To record device information in a Field Medic report, use the following steps.
 
 5.  After you start logging, Field Medic displays the elapsed capture time under the **Stop Logging** option. Close Field Medic by pressing the **Back** or **Start** button. Reproduce the problem that you want to collect information about.
 
-    **Note**  
+    **Note**  
     ETW logging for the selected categories remains enabled, even after the device reboots, until you stop logging.
 
-     
 
-    ![field medics menu report in session](images/oem-field-medic-wp-ss-20140109-0005.png)
+
+~~~
+![field medics menu report in session](images/oem-field-medic-wp-ss-20140109-0005.png)
+~~~
 
 6.  After you have reproduced the problem, run Field Medic and tap **Stop Logging**.
 
-    **Note**  
+    **Note**  
     It can take five seconds or longer for Field Medic to stop ETW sessions and create the report files.
 
-     
 
-    ![field medics menu stop reporting](images/oem-field-medic-wp-ss-20140109-0008.png)
+
+~~~
+![field medics menu stop reporting](images/oem-field-medic-wp-ss-20140109-0008.png)
+~~~
 
 7.  You can view, edit, and delete the list of captured reports by tapping **View Reports** on the main screen.
 
@@ -105,9 +109,9 @@ Open the Field Medic app and tap **Advanced**. As shown previously, you can sele
 -   Netlogs
 -   QXDM logs
 
-**Note**  To get crash dumps, you must opt in for feedback in the main OS settings screen. After you opt in, crash dump information is periodically sent to Microsoft when the device is charging and connected to a Wi-Fi network. When a Field Medic report is in session, the crash reports are not sent to Microsoft, but are included in the Field Medic reports. Any crash dumps that are currently not uploaded to Microsoft before a Field Medic report is recorded are also included in the next Field Medic report and will not be uploaded to Microsoft afterwards.
+**Note**  To get crash dumps, you must opt in for feedback in the main OS settings screen. After you opt in, crash dump information is periodically sent to Microsoft when the device is charging and connected to a Wi-Fi network. When a Field Medic report is in session, the crash reports are not sent to Microsoft, but are included in the Field Medic reports. Any crash dumps that are currently not uploaded to Microsoft before a Field Medic report is recorded are also included in the next Field Medic report and will not be uploaded to Microsoft afterwards.
 
- 
+
 
 ![field medics advanced menu](images/oem-field-medic-wp-ss-20140114-0002.png)
 
@@ -127,9 +131,9 @@ Field Medic can include reports from custom loggers that you specify. For more i
 
 [Field Medic](field-medic.md)
 
- 
 
- 
+
+
 
 
 

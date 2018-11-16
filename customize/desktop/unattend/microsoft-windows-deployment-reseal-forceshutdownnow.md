@@ -49,11 +49,10 @@ ms.topic: article
 <td><p><strong>Audit</strong></p></td>
 <td><p><strong>true</strong></p></td>
 <td><div class="alert">
-<strong>Caution</strong>  
-<p>Unsupported, do not use. Sets the computer into a loop of reboots.</p>
+<strong>Caution</strong><br/><p>Unsupported, do not use. Sets the computer into a loop of reboots.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -145,17 +144,16 @@ ms.topic: article
 <td><p><strong>OOBE</strong></p></td>
 <td><p><strong>true</strong></p></td>
 <td><div class="alert">
-<strong>Caution</strong>  
-<p>Unsupported, do not use. Sets the computer into a loop of reboots.</p>
+<strong>Caution</strong><br/><p>Unsupported, do not use. Sets the computer into a loop of reboots.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Values
 
@@ -178,7 +176,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 
@@ -227,9 +225,9 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344)
 
- 
 
- 
+
+
 
 
 

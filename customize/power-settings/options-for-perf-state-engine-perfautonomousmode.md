@@ -21,7 +21,7 @@ ms.topic: article
 **Note**  
 Platforms that support CPPC version 2 may only support autonomous disabled or autonomous enabled mode. If only one mode is supported, the OS uses that mode and ignores the `PerfAutonomousMode` power setting.
 
- 
+ 
 
 ## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
 
@@ -62,7 +62,7 @@ Platforms that support CPPC version 2 may only support autonomous disabled or au
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

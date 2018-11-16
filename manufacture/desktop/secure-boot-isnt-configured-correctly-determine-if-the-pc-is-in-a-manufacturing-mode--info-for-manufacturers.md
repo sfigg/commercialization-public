@@ -25,7 +25,7 @@ Windows 8.1 and Windows Server 2012 R2 users can install a patch to remove the 
 
 For more info, see [Secure Boot isn't configured correctly: troubleshooting](secure-boot-isnt-configured-correctly-troubleshooting.md).
 
- 
+ 
 
 ## <span id="Determining_if_the_PC_is_in_a_manufacturing_mode"></span><span id="determining_if_the_pc_is_in_a_manufacturing_mode"></span><span id="DETERMINING_IF_THE_PC_IS_IN_A_MANUFACTURING_MODE"></span>Determining if the PC is in a manufacturing mode
 
@@ -76,9 +76,9 @@ You can use any of the following methods to determine whether Secure Boot has be
 
 [Secure Boot isn't configured correctly: troubleshooting](secure-boot-isnt-configured-correctly-troubleshooting.md)
 
- 
+ 
 
- 
+ 
 
 
 

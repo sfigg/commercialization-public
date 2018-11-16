@@ -101,7 +101,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build that contains this customization to a device.

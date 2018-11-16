@@ -59,7 +59,7 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -71,9 +71,9 @@ This method is used in callbacks for various tracing actions, such as starting o
 
 [IControlProgressHandler](icontrolprogresshandler.md)
 
- 
+ 
 
- 
+ 
 
 
 

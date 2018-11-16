@@ -29,9 +29,9 @@ Sign an existing package.
 
 `public static void Sign (`
 
-          `string sourcePackage,`
+          `string sourcePackage,`
 
-          `X509Certificate certificate`
+          `X509Certificate certificate`
 
 `)`
 
@@ -56,9 +56,9 @@ The package specified is signed and replaced. This is equivalent to invoking the
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

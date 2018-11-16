@@ -145,7 +145,7 @@ This walkthrough shows how to use the Windows ICD UI to customize, build, and fl
 
 **Note**  When configuring customizations using Windows ICD, do not use the **Image time settings**, use the **Runtime settings** instead. If you configure the image-time settings, this will cause an error due to a settings collision if the setting is configured in both WPAF and MCSF CAF.
 
- 
+ 
 
 If you haven't done so already, you must first create the LayoutModification.xml files as shown in [Configure the Start layout](configure-the-start-layout.md) before proceeding with the steps in this section.
 
@@ -199,9 +199,9 @@ Follow these steps if you deferred flashing the image to the device after it was
 
 8.  Click **Finish** to close the **Deployment** page.
 
- 
+ 
 
- 
+ 
 
 
 

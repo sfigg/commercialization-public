@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output shows how to always show the Network Selection control 
 
 [Microsoft-Windows-SystemSettingsThreshold](microsoft-windows-systemsettingsthreshold.md)
 
- 
+ 
 
- 
+ 
 
 
 

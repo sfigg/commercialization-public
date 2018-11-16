@@ -247,12 +247,12 @@ powercfg /query 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97b
 <dt><p style="margin: .7em 0 .3em 1.4em;"><em>scheme_GUID</em></dt>
 <dd>Specifies a power scheme GUID. Running <strong>powercfg /list</strong> returns a power scheme GUID.</dd>
 <dt><p style="margin: .7em 0 .3em 1.4em;"><em>name</em></dt>
-<dd>Specifies the power scheme's new name.</dd>
+<dd>Specifies the power scheme&#39;s new name.</dd>
 <dt><p style="margin: .7em 0 .3em 1.4em;"><em>description</em></dt>
-<dd>Specifies the power scheme's new description. If no description is specified, only the name is changed.</dd>
+<dd>Specifies the power scheme&#39;s new description. If no description is specified, only the name is changed.</dd>
 </dl>
 <p>Examples:</p>
-<p style="margin: .7em 0 0 1.5em;"><code>powercfg /changename 381b4222-f694-41f0-9685-ff5bb260df2e "Customized Balanced"</code></p>
+<p style="margin: .7em 0 0 1.5em;"><code>powercfg /changename 381b4222-f694-41f0-9685-ff5bb260df2e &quot;Customized Balanced&quot;</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
 
@@ -265,7 +265,7 @@ powercfg /query 381b4222-f694-41f0-9685-ff5bb260df2e 238c9fa8-0aad-41ed-83f4-97b
 <dt><p style="margin: .7em 0 .3em 1.4em;"><em>scheme_GUID</em></dt>
 <dd>Specifies a power scheme GUID. A power scheme GUID is returned by running <strong>powercfg /list</strong>.</dd>
 <dt><p style="margin: .7em 0 .3em 1.4em;"><em>destination_GUID</em></dt>
-<dd>Specifies the new power scheme's GUID. If no GUID is specified, a new GUID is created.</dd>
+<dd>Specifies the new power scheme&#39;s GUID. If no GUID is specified, a new GUID is created.</dd>
 </dl>
 <p>Examples:</p>
 <p style="margin: .7em 0 0 1.5em;"><code>powercfg /duplicatescheme 381b4222-f694-41f0-9685-ff5bb260df2e</code></p>
@@ -485,7 +485,7 @@ powercfg /setsecuritydescriptor ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;K
 <dd>Specifies the desired hiberfile size as a percentage of the total memory size. The default size cannot be smaller than 50. This parameter also causes hibernation to be enabled.</dd>
 <dt><p style="margin: .7em 0 .3em 1.4em;"><strong>/type</strong> <em>reduced</em>&nbsp;|&nbsp;<em>full</em></dt>
 <dd>Specifies the desired hiberfile type. A reduced hiberfile only supports hiberboot.
-<div class="alert"><strong>Note</strong>&nbsp;&nbsp;&nbsp;A hiberfile that has a custom default size, or HiberFileSizePercent &gt;= 40, is considered as a full hiberfile. HiberFileSizePercent is set in the registry in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\.
+<div class="alert"><strong>Note</strong>&nbsp;&nbsp;&nbsp;A hiberfile that has a custom default size, or HiberFileSizePercent &gt;= 40, is considered as a full hiberfile. HiberFileSizePercent is set in the registry in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power.
 <p>To change the hiberfile type to reduced, the OS has to manage the default hiberfile size. To do this, run the following commands:</p>
 <p><strong>powercfg /hibernate /size 0</strong></p>
 <p><strong>powercfg /hibernate /type reduced</strong></p>
@@ -556,7 +556,7 @@ powercfg /setsecuritydescriptor ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;K
 <dd>Specifies a device. This device name may be retrieved using <strong>powercfg /devicequery wake_programmable</strong>.</dd>
 </dl>
 <p>Examples:</p>
-<p style="margin: .7em 0 0 1.5em;"><code>powercfg /deviceenableawake "Microsoft USB IntelliMouse Optical"</code></p>
+<p style="margin: .7em 0 0 1.5em;"><code>powercfg /deviceenableawake &quot;Microsoft USB IntelliMouse Optical&quot;</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
 
@@ -571,7 +571,7 @@ powercfg /setsecuritydescriptor ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;K
 <dd>Specifies a device. This device name may be retrieved using <strong>powercfg /devicequery wake_armed</strong>.</dd>
 </dl>
 <p>Examples:</p>
-<p style="margin: .7em 0 0 1.5em;"><code>powercfg /devicedisablewake "Microsoft USB IntelliMouse Optical"</code></p>
+<p style="margin: .7em 0 0 1.5em;"><code>powercfg /devicedisablewake &quot;Microsoft USB IntelliMouse Optical&quot;</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
 
@@ -658,7 +658,7 @@ powercfg /setsecuritydescriptor ActionSetActive O:BAG:SYD:P(A;CI;KR;;;BU)(A;CI;K
 </dl>
 <p>Examples:</p>
 <p style="margin: .7em 0 0 1.5em;"><code>powercfg /energy<br />
-powercfg /energy /output "longtrace.html" /duration 120</code></p>
+powercfg /energy /output &quot;longtrace.html&quot; /duration 120</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
 
@@ -678,7 +678,7 @@ powercfg /energy /output "longtrace.html" /duration 120</code></p>
 <dd>Specifies the number of days to analyze for the report.</dd>
 </dl>
 <p>Examples:</p>
-<p style="margin: .7em 0 0 1.5em;"><code>powercfg /batteryreport /output "batteryreport.html"<br />
+<p style="margin: .7em 0 0 1.5em;"><code>powercfg /batteryreport /output &quot;batteryreport.html&quot;<br />
 powercfg /batteryreport /duration 4</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
@@ -702,7 +702,7 @@ powercfg /batteryreport /duration 4</code></p>
 <dd>Transforms the Sleepstudy report from XML to HTML.</dd>
 </dl>
 <p>Examples:</p>
-<p style="margin: .7em 0 0 1.5em;"><code>powercfg /sleepstudy /output "sleepstudy.html"<br />
+<p style="margin: .7em 0 0 1.5em;"><code>powercfg /sleepstudy /output &quot;sleepstudy.html&quot;<br />
 powercfg /sleepstudy /duration 7</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
@@ -722,7 +722,7 @@ powercfg /sleepstudy /duration 7</code></p>
 <dd>Formats the file as CSV.</dd>
 </dl>
 <p>Examples:</p>
-<p style="margin: .7em 0 0 1.5em;"><code>powercfg /batteryreport /output "srumreport.xml" /xml</code></p>
+<p style="margin: .7em 0 0 1.5em;"><code>powercfg /batteryreport /output &quot;srumreport.xml&quot; /xml</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
 
@@ -746,9 +746,9 @@ powercfg /sleepstudy /duration 7</code></p>
 </dl>
 <p>Examples:</p>
 <p style="margin: .7em 0 0 1.5em;"><code>powercfg /systemsleepdiagnostics<br/>
-powercfg /systemsleepdiagnostics /output "system-sleep-diagnostics.html"<br/>
-powercfg /systemsleepdiagnostics /output "system-sleep-diagnostics.xml" /XML<br/>
-powercfg /systemsleepdiagnostics /transformxml "system-sleep-diagnostics.xml"</code></p>
+powercfg /systemsleepdiagnostics /output &quot;system-sleep-diagnostics.html&quot;<br/>
+powercfg /systemsleepdiagnostics /output &quot;system-sleep-diagnostics.xml&quot; /XML<br/>
+powercfg /systemsleepdiagnostics /transformxml &quot;system-sleep-diagnostics.xml&quot;</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>
 
 
@@ -772,7 +772,7 @@ powercfg /systemsleepdiagnostics /transformxml "system-sleep-diagnostics.xml"</c
 </dl>
 <p>Examples:</p>
 <p style="margin: .7em 0 0 1.5em;"><code>powercfg /systempowerreport<br/>
-powercfg /systempowerreport /output "sleepstudy.html"<br/>
-powercfg /systempowerreport /output "sleepstudy.xml" /XML<br/>
-powercfg /systempowerreport /transformxml "sleepstudy.xml"</code></p>
+powercfg /systempowerreport /output &quot;sleepstudy.html&quot;<br/>
+powercfg /systempowerreport /output &quot;sleepstudy.xml&quot; /XML<br/>
+powercfg /systempowerreport /transformxml &quot;sleepstudy.xml&quot;</code></p>
 <p><sup><a href="#options_table">Return to the top.</a></sup></p>

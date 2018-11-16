@@ -59,9 +59,9 @@ If the task does not have a TaskResult or the TaskResult status is Not Complete,
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,33 +29,34 @@ ConnExUtil.exe is the command line tool for the HMD Exerciser. The tool is insta
 Supported command line options are described in the following table.
 
 
->[!div class="mx-tdCol3BreakAll"]
-| **Use case**         | **Option**           | **Description**      |
------------------------|----------------------|----------------------
-| Device Discovery. <br/> List all devices connected to MUTT ConnEx-C. | **/list**            | For USB connected devices, this option lists the device instance path. For audio connected devices it shows **Audio**. To view audio devices, use this in combination with the **/all** parameter. Lists with 1-based index that can be used for input to the **/\#** parameter.
-| Device Selection. <br/> Select all devices connected to MUTT ConnEx-C, including audio.   | **/all**            | Optional.<br/>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default.|
-| Device Selection.<br/>Select a specific device connected to MUTT ConnEx-C 'n'.   | **/\#** *n* | Optional.<br/>Input *n* is a 1-based index of the available devices connected to MUTT ConnEx-C which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all MUTT ConnEx-C boards.              |
-| Set the USB port connected to **J1** | **/setPort** *p*     | Switches to the  specified port, *p*. <br/>Connect a port either by specifying number (1-4) or by name (**J2**, **J3**, **J4**, **J6**). <br/>0 disconnects all ports.|
-| Get the current USB Port connected to **J1** | **/getPort** | Reads the currently connected port. <br/>Reads a port either by specifying number (1-4) or by name (**J2**, **J3**, **J4**, **J6**).<br/>0 disconnects all ports.|
-| Set the HDMI port connected to **J1**  | **/setHdmiPort** *p* | Switches to the specified port *p*.<br/>Connects a port either by specifying number (1-2) or by name (**J2**, **J3**).<br/>0 disconnects all ports.|
-| Get the current HDMI port connected to **J1**| **/getHdmiPort**     | Reads the currently connected port.<br/>Reads a port either by specifying number (1-2) or by name (**J2**, **J3**).<br/>0 disconnects all ports.|
-| Read amperage/volt information  | **/volts**<br/>**/amps**<br/>**/version**| Reads the current  voltage.<br/>Reads the current amperage.<br/>Reads the device version.|
-| Select the HMD port of interest    | **/SetHmd** *p*   | Select the HMD port of interest to the HMD on port p.|
-| Get the current brightness of a display    | **/DisplayBrightness** *p*| Gets the brightness of display p.|
-| Get the color of a display    | **/DisplayColor** *p*   | Get the color of display p.|
-| Get the current RMS volume from HMD | **/GetVolumeRms** | Gets the current RMS volume from the headset.|
-| Get the peak volume from HMD | **/GetVolumePeak**   | Gets the peak volume detected during the sample window.|
-| Get the average volume from HMD | **/GetVolumeAvg** | Gets the average volume from the HMD over the sample window.|
-| Set the number of audio samples to take  | **/SetVolumeSampleCount** *p*| Sets the number of samples, p, to collect before the /GetVolume commands return.|
-| Set the angle of the specified servo  | **/SetServoAngle** *p* *q*| Sets the angle of servo *p* to *q* degrees.|
-| Enable SuperSpeed    | **/SuperSpeedOn**    | Enables SuperSpeed globally for current and future connections until a **/SuperSpeedOff** command is sent.<br/>SuperSpeed is enabled by default.<br/>If SuperSpeed is disabled, and port 1 or 2 is connected, this command triggers a reconnect at SuperSpeed.|
-| Disable SuperSpeed   | **/SuperSpeedOff**  | Disables SuperSpeed globally for current and future connections until a **/SuperSpeedOn**  command is sent or the device is reset.<br/>If SuperSpeed is enabled and port 1 or 2 is connected, this command triggers a reconnect with SuperSpeed lines disabled.|
-| Set command delay    | **/setDelay** *t*    | Sets command delay *t* in seconds.<br/>Setting a command delay will cause the next **/setPort** or **/SuperSpeed{On/Off}** command to be delayed by *t* seconds where **t** ranges from 0 to 99.<br/>This is a one-time setting, only the next command is delayed. Sending multiple commands before the delay timer has expired is not supported.|
-| Set disconnect timeout in milliseconds     | **/setDisconnectTimeout** *t*| Sets a disconnect timeout for the next non-zero **/setPort** command. On the next connect event, the port will only remain connected for *t* milliseconds before disconnecting. This is a one-time setting, only the next connect event will be automatically disconnected.<br/>Allowed range is from 0 to 9999 ms.|
-| Batch Command:<br/>Output power measurements to a .csv file. | **/powercsv** | Appends the current power measurements and timestamp into power.csv The first run creates power.csv. On subsequent runs appends data to this file.<br/>Rename or delete the file to start fresh data capture. Each run appends a line with the following format: *\<index\>,\<time\>, \<volts\>,\<amps\>*.<br/>*index* is the device index given by **/list**, so multiple devices may be monitored simultaneously.<br/>*time* is the raw timestamp in seconds.<br/>*volts* and *amps* are recorded to two decimal places.<br/>This data may be captured over long periods of time and plotted in a spreadsheet application, see the cxpower.cmd script.|
-| Batch Command:<br/>Run unit test of major functionality | **/test** | Tests all the major functionality of the device. Use for basic validation of the functionality of the device. If this command fails, please power cycle the device and update the firmware. |
-| Batch Command:<br/>Basic demo of the port switching sequence. | **/demo** *d* | Loops through all ports one time, with *d* second delay on each port.<br/>Writes the port number, volts and amps on each port into demoresult.txt. |
- 
+> [!div class="mx-tdCol3BreakAll"]
+> 
+> | **Use case**         | **Option**           | **Description**      |
+> -----------------------|----------------------|----------------------
+> | Device Discovery. <br/> List all devices connected to MUTT ConnEx-C. | **/list**            | For USB connected devices, this option lists the device instance path. For audio connected devices it shows **Audio**. To view audio devices, use this in combination with the **/all** parameter. Lists with 1-based index that can be used for input to the **/\#** parameter.
+> | Device Selection. <br/> Select all devices connected to MUTT ConnEx-C, including audio.   | **/all**            | Optional.<br/>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default.|
+> | Device Selection.<br/>Select a specific device connected to MUTT ConnEx-C 'n'.   | **/\#** *n* | Optional.<br/>Input *n* is a 1-based index of the available devices connected to MUTT ConnEx-C which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all MUTT ConnEx-C boards.              |
+> | Set the USB port connected to **J1** | **/setPort** *p*     | Switches to the  specified port, *p*. <br/>Connect a port either by specifying number (1-4) or by name (**J2**, **J3**, **J4**, **J6**). <br/>0 disconnects all ports.|
+> | Get the current USB Port connected to **J1** | **/getPort** | Reads the currently connected port. <br/>Reads a port either by specifying number (1-4) or by name (**J2**, **J3**, **J4**, **J6**).<br/>0 disconnects all ports.|
+> | Set the HDMI port connected to **J1**  | **/setHdmiPort** *p* | Switches to the specified port *p*.<br/>Connects a port either by specifying number (1-2) or by name (**J2**, **J3**).<br/>0 disconnects all ports.|
+> | Get the current HDMI port connected to **J1**| **/getHdmiPort**     | Reads the currently connected port.<br/>Reads a port either by specifying number (1-2) or by name (**J2**, **J3**).<br/>0 disconnects all ports.|
+> | Read amperage/volt information  | **/volts**<br/>**/amps**<br/>**/version**| Reads the current  voltage.<br/>Reads the current amperage.<br/>Reads the device version.|
+> | Select the HMD port of interest    | **/SetHmd** *p*   | Select the HMD port of interest to the HMD on port p.|
+> | Get the current brightness of a display    | **/DisplayBrightness** *p*| Gets the brightness of display p.|
+> | Get the color of a display    | **/DisplayColor** *p*   | Get the color of display p.|
+> | Get the current RMS volume from HMD | **/GetVolumeRms** | Gets the current RMS volume from the headset.|
+> | Get the peak volume from HMD | **/GetVolumePeak**   | Gets the peak volume detected during the sample window.|
+> | Get the average volume from HMD | **/GetVolumeAvg** | Gets the average volume from the HMD over the sample window.|
+> | Set the number of audio samples to take  | **/SetVolumeSampleCount** *p*| Sets the number of samples, p, to collect before the /GetVolume commands return.|
+> | Set the angle of the specified servo  | **/SetServoAngle** *p* *q*| Sets the angle of servo *p* to *q* degrees.|
+> | Enable SuperSpeed    | **/SuperSpeedOn**    | Enables SuperSpeed globally for current and future connections until a **/SuperSpeedOff** command is sent.<br/>SuperSpeed is enabled by default.<br/>If SuperSpeed is disabled, and port 1 or 2 is connected, this command triggers a reconnect at SuperSpeed.|
+> | Disable SuperSpeed   | **/SuperSpeedOff**  | Disables SuperSpeed globally for current and future connections until a **/SuperSpeedOn**  command is sent or the device is reset.<br/>If SuperSpeed is enabled and port 1 or 2 is connected, this command triggers a reconnect with SuperSpeed lines disabled.|
+> | Set command delay    | **/setDelay** *t*    | Sets command delay *t* in seconds.<br/>Setting a command delay will cause the next **/setPort** or **/SuperSpeed{On/Off}** command to be delayed by *t* seconds where **t** ranges from 0 to 99.<br/>This is a one-time setting, only the next command is delayed. Sending multiple commands before the delay timer has expired is not supported.|
+> | Set disconnect timeout in milliseconds     | **/setDisconnectTimeout** *t*| Sets a disconnect timeout for the next non-zero **/setPort** command. On the next connect event, the port will only remain connected for *t* milliseconds before disconnecting. This is a one-time setting, only the next connect event will be automatically disconnected.<br/>Allowed range is from 0 to 9999 ms.|
+> | Batch Command:<br/>Output power measurements to a .csv file. | **/powercsv** | Appends the current power measurements and timestamp into power.csv The first run creates power.csv. On subsequent runs appends data to this file.<br/>Rename or delete the file to start fresh data capture. Each run appends a line with the following format: *\<index\>,\<time\>, \<volts\>,\<amps\>*.<br/>*index* is the device index given by **/list**, so multiple devices may be monitored simultaneously.<br/>*time* is the raw timestamp in seconds.<br/>*volts* and *amps* are recorded to two decimal places.<br/>This data may be captured over long periods of time and plotted in a spreadsheet application, see the cxpower.cmd script.|
+> | Batch Command:<br/>Run unit test of major functionality | **/test** | Tests all the major functionality of the device. Use for basic validation of the functionality of the device. If this command fails, please power cycle the device and update the firmware. |
+> | Batch Command:<br/>Basic demo of the port switching sequence. | **/demo** *d* | Loops through all ports one time, with *d* second delay on each port.<br/>Writes the port number, volts and amps on each port into demoresult.txt. |
+
 
 ## HmdKit.cs
 
@@ -68,7 +69,7 @@ Download the HmdKit.cs code from https://github.com/Microsoft/busiotools/tree/ma
 - Check the return value of findHmdKitDevice or the IsPresent property.
 - Use the methods to perform actions like connecting USB/HDMI or checking display brightness. 
 - If a method returns false, the device may be in a bad state or the COM port may be in use by another application.
-    
+
 ### Classes
 ```public class HmdKit : IDisposable``` <br>
 This class provides managed access to the functionality of the HMD Validation Kit.
@@ -78,7 +79,7 @@ This class provides managed access to the functionality of the HMD Validation Ki
 
 ```private const int RetryCount = 3;```<br>
 This constant controls the number of retries for sending a command.
-       
+
 ```private const string HmdKitVersion = "01";```<br>
  This is the string hardcoded in the HMD Validation Kit for the version. This constant should match the expected version from the HMD Validation Kit.
 

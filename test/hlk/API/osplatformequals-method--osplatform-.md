@@ -42,7 +42,7 @@ This method compares two **OSPlatform** instances.
 
 `Public Function Equals ( _`
 
-          `otherPlatform As OSPlatform _`
+          `otherPlatform As OSPlatform _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares two **OSPlatform** instances.
 
 `public bool Equals (`
 
-          `OSPlatform otherPlatform`
+          `OSPlatform otherPlatform`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares two **OSPlatform** instances.
 
 *otherMachineSet*
 
-     The **OSPlatform** object to compare against.
+     The **OSPlatform** object to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method compares two **OSPlatform** instances.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

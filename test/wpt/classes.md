@@ -29,34 +29,34 @@ This section documents the classes provided by the WPRControl API.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CControlManager](ccontrolmanager.md)</p></td>
+<td><p><a href="ccontrolmanager.md" data-raw-source="[CControlManager](ccontrolmanager.md)">CControlManager</a></p></td>
 <td><p>Represents the control manager that runs a profile collection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CProfile](cprofile.md)</p></td>
+<td><p><a href="cprofile.md" data-raw-source="[CProfile](cprofile.md)">CProfile</a></p></td>
 <td><p>Represents a <strong>Profile</strong> object and contains data to configure Event Tracing for Windows (ETW) sessions and providers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CProfileCollection](cprofilecollection.md)</p></td>
-<td><p>Represents a collection of [CProfile](cprofile.md) objects.</p></td>
+<td><p><a href="cprofilecollection.md" data-raw-source="[CProfileCollection](cprofilecollection.md)">CProfileCollection</a></p></td>
+<td><p>Represents a collection of <a href="cprofile.md" data-raw-source="[CProfile](cprofile.md)">CProfile</a> objects.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CTraceMergeProperties](ctracemergeproperties.md)</p></td>
+<td><p><a href="ctracemergeproperties.md" data-raw-source="[CTraceMergeProperties](ctracemergeproperties.md)">CTraceMergeProperties</a></p></td>
 <td><p>Represents policies that are applied when the library merges the event trace log (ETL) files from ETW sessions that were previously started using the profiles.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [WPRControl API Reference](wprcontrol-api-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

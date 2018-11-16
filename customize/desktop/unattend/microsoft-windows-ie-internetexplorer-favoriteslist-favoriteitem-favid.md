@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique string value (key) to represent the <code>FavoriteItem</code> in the unattended installation answer file. <code>FavID </code>must be unique for each [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique string value (key) to represent the <code>FavoriteItem</code> in the unattended installation answer file. <code>FavID </code>must be unique for each <a href="microsoft-windows-ie-internetexplorer-favoriteslist.md" data-raw-source="[FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md)">FavoritesList</a>. <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -84,9 +84,9 @@ The following XML output specifies how to configure favorites.
 
 [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

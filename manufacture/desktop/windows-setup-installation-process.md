@@ -60,11 +60,11 @@ The Windows Setup program starts and restarts the computer, gathers information
 <p><strong>Windows PE</strong> (for booting the Windows DVD or booting a custom Windows PE image)</p></td>
 <td align="left"><ol>
 <li><p>Specify Windows Setup configurations by using either the Windows Setup dialog boxes (interactive) or an answer file (unattended), or a combination of the two. Windows Setup configurations include adding a product key and configuring a disk.</p></li>
-<li><p>Apply answer file settings in the [windowsPE](windowspe.md) configuration pass to configure the installation behavior and user experience.</p></li>
+<li><p>Apply answer file settings in the <a href="windowspe.md" data-raw-source="[windowsPE](windowspe.md)">windowsPE</a> configuration pass to configure the installation behavior and user experience.</p></li>
 <li><p>Configure the disk.</p></li>
 <li><p>Copy the Windows image to the disk.</p></li>
 <li><p>Prepare boot information.</p></li>
-<li><p>Process answer file settings in the [offlineServicing](offlineservicing.md) configuration pass. The settings are applied to the Windows image before that Windows image boots. When the computer first boots, any optional components, drivers, updates, or language packs are processed.</p></li>
+<li><p>Process answer file settings in the <a href="offlineservicing.md" data-raw-source="[offlineServicing](offlineservicing.md)">offlineServicing</a> configuration pass. The settings are applied to the Windows image before that Windows image boots. When the computer first boots, any optional components, drivers, updates, or language packs are processed.</p></li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -74,7 +74,7 @@ The Windows Setup program starts and restarts the computer, gathers information
 <tr class="odd">
 <td align="left"><p><strong>Windows Welcome</strong></p></td>
 <td align="left"><ol>
-<li><p>Apply answer file settings in the [oobeSystem](oobesystem.md) configuration pass.</p></li>
+<li><p>Apply answer file settings in the <a href="oobesystem.md" data-raw-source="[oobeSystem](oobesystem.md)">oobeSystem</a> configuration pass.</p></li>
 <li><p>Apply content file settings from the Oobe.xml file.</p></li>
 <li><p>Start Windows Welcome.</p></li>
 </ol></td>
@@ -82,7 +82,7 @@ The Windows Setup program starts and restarts the computer, gathers information
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -103,9 +103,9 @@ The Windows Setup program starts and restarts the computer, gathers information
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

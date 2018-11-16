@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -71,9 +71,9 @@ The following XML output shows how to disable System Restore.
 
 [Microsoft-Windows-SystemRestore-Main](microsoft-windows-systemrestore-main.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,17 +36,17 @@ You can use the steps in this guide to start and stop a recording in Windows Per
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Getting Started: Windows Performance Recorder (WPR)](wpr-quick-start.md)</p></td>
+<td><p><a href="wpr-quick-start.md" data-raw-source="[Getting Started: Windows Performance Recorder (WPR)](wpr-quick-start.md)">Getting Started: Windows Performance Recorder (WPR)</a></p></td>
 <td><p>Summarizes the features that are available in the Windows Performance Recorder (WPR) user interface (UI).</p></td>
 </tr>
 <tr class="even">
-<td><p>[Getting Started: Windows Performance Analyzer (WPA)](getting-started--windows-performance-analyzer--wpa-.md)</p></td>
+<td><p><a href="getting-started--windows-performance-analyzer--wpa-.md" data-raw-source="[Getting Started: Windows Performance Analyzer (WPA)](getting-started--windows-performance-analyzer--wpa-.md)">Getting Started: Windows Performance Analyzer (WPA)</a></p></td>
 <td><p>Included in the Windows Assessment and Deployment Kit (Windows ADK), Windows Performance Analyzer (WPA) is a tool that creates graphs and data tables of Event Tracing for Windows (ETW) events that are recorded by Windows Performance Recorder (WPR), Xperf, or an assessment that is run in the Assessment Platform. WPA can open any event trace log (ETL) file for analysis. You can download WPA by visiting Windows Performance Analyzer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="developer-audience-heading"></a>Developer audience
 
@@ -58,9 +58,9 @@ WPT Getting Started is designed for developers who want to learn how to use perf
 
 [WPR Quick Start](wpr-quick-start.md)
 
- 
+ 
 
- 
+ 
 
 
 

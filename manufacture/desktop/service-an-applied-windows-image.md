@@ -93,9 +93,9 @@ This walkthrough illustrates basic offline servicing of an applied Windows image
 
 [Windows ADK](http://go.microsoft.com/fwlink/p/?linkid=526803)
 
- 
+ 
 
- 
+ 
 
 
 

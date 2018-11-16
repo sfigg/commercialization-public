@@ -43,7 +43,7 @@ The Windows Assessment Console can be installed on any of the following operatin
 **Note**  
 Some assessments must be run on a specific operating system. For more information about system requirements for individual assessments, see [Assessments](assessments.md).
 
- 
+ 
 
 In addition, the system partition where you install the Windows Assessment Console must have a minimum of 200 megabytes (MB) of free disk space to run assessments. This requirement is needed for Event Tracing for Windows (ETW), a feature that all assessments use. Over time, assessment results and log files can consume a large amount of disk space.
 
@@ -75,7 +75,7 @@ The Windows Assessment Console offers these benefits:
     **Note**  
     You can use a set of public APIs to create and extend assessments that are compatible with the Assessment Platform. For more information, see [MSDN: Assessment Execution Engine](http://go.microsoft.com/fwlink/?LinkId=236367).
 
-     
+     
 
 ## <a href="" id="asmt-limitations"></a>Limitations
 
@@ -117,20 +117,20 @@ The Windows Assessment Console is typically used in these scenarios:
 </tr>
 <tr class="even">
 <td><p>Comparison of results</p></td>
-<td><p>Run a predefined job, or a single assessment with recommended assessment settings, on any computer that's running a supported operating system. Use the Windows Assessment Console to package the job to run on another computer. After you run the job on the other computer, import the results to the default results library. You can compare the results from any Windows 10-based computer with those of any other supported operating system to identify differences.</p></td>
+<td><p>Run a predefined job, or a single assessment with recommended assessment settings, on any computer that&#39;s running a supported operating system. Use the Windows Assessment Console to package the job to run on another computer. After you run the job on the other computer, import the results to the default results library. You can compare the results from any Windows 10-based computer with those of any other supported operating system to identify differences.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Clean computer</p></td>
-<td><p>Run assessments on a <em>clean computer</em> (a computer that includes only the operating system) to establish baseline system results. For instructions, see [Create baseline results](create-baseline-results-for-comparing-windows-images.md).</p></td>
+<td><p>Run assessments on a <em>clean computer</em> (a computer that includes only the operating system) to establish baseline system results. For instructions, see <a href="create-baseline-results-for-comparing-windows-images.md" data-raw-source="[Create baseline results](create-baseline-results-for-comparing-windows-images.md)">Create baseline results</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Added hardware or software components</p></td>
-<td><p>Add new hardware or software to the clean computer system and then rerun the assessments to compare the results with clean-computer results. For instructions, see [Create baseline results](create-baseline-results-for-comparing-windows-images.md).</p></td>
+<td><p>Add new hardware or software to the clean computer system and then rerun the assessments to compare the results with clean-computer results. For instructions, see <a href="create-baseline-results-for-comparing-windows-images.md" data-raw-source="[Create baseline results](create-baseline-results-for-comparing-windows-images.md)">Create baseline results</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -141,9 +141,9 @@ The Windows Assessment Console is typically used in these scenarios:
 
 [Assessment Platform Command-Line Syntax](assessment-platform-command-line-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

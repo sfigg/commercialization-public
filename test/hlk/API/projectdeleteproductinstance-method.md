@@ -40,7 +40,7 @@ This method deletes **ProductInstance** object.
 
 `Public MustOverride Sub DeleteProductInstance ( _`
 
-          `nameOfProductInstanceToDelete As String _`
+          `nameOfProductInstanceToDelete As String _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method deletes **ProductInstance** object.
 
 `public abstract void DeleteProductInstance (`
 
-          `string nameOfProductInstanceToDelete`
+          `string nameOfProductInstanceToDelete`
 
 `)`
 
@@ -57,7 +57,7 @@ This method deletes **ProductInstance** object.
 
 *nameOfProductInstanceToDelete*
 
-     The name of the **ProductInstance** object to delete.
+     The name of the **ProductInstance** object to delete.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -71,9 +71,9 @@ This method is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

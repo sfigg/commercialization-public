@@ -42,7 +42,7 @@ This method evaluates a filter constraint and returns **true** if the constraint
 
 `Function IsMatch ( _`
 
-          `constraint As IFilterConstraint _`
+          `constraint As IFilterConstraint _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method evaluates a filter constraint and returns **true** if the constraint
 
 `bool IsMatch (`
 
-          `IFilterConstraint constraint`
+          `IFilterConstraint constraint`
 
 `)`
 
@@ -59,7 +59,7 @@ This method evaluates a filter constraint and returns **true** if the constraint
 
 *constraint*
 
-     The filter constraint to match.
+     The filter constraint to match.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method evaluates a filter constraint and returns **true** if the constraint
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,15 +24,15 @@ Represents a collection of keywords. If the **Operation** attribute is specified
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<[SystemProvider](systemprovider.md)\>
-      * \<**Keywords (in SystemProvider)**\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[SystemCollectorId](systemcollectorid.md)\>
-          * \<[SystemProviderId](systemproviderid.md)\>
-            * \<**Keywords (in SystemProvider)**\>
-          * \<[SystemProvider](systemprovider.md)\>
-            * \<**Keywords (in SystemProvider)**\>
+    * \<[SystemProvider](systemprovider.md)\>
+      * \<**Keywords (in SystemProvider)**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<[SystemProviderId](systemproviderid.md)\>
+            * \<**Keywords (in SystemProvider)**\>
+          * \<[SystemProvider](systemprovider.md)\>
+            * \<**Keywords (in SystemProvider)**\>
 
 
 ## Syntax

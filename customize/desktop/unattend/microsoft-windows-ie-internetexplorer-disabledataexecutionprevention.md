@@ -41,7 +41,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -72,9 +72,9 @@ The following XML output shows how to configure Internet Explorer to allow arbit
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

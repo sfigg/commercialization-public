@@ -50,24 +50,24 @@ You can download the tools in the following table to assess and improve the perf
 <tr class="odd">
 <td>PowerCFG.exe</td>
 <td><p>Inbox tool to control power schemes (also named power plans), to use the available sleep states, to control the power states of individual devices, and to analyze the system for common energy-efficiency and battery-life problems.</p>
-<p>For information about the PowerCFG.exe and the /sleepstudy option, see [Modern standby SleepStudy](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby-sleepstudy).</p></td>
+<p>For information about the PowerCFG.exe and the /sleepstudy option, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby-sleepstudy" data-raw-source="[Modern standby SleepStudy](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/device-experiences/modern-standby-sleepstudy)">Modern standby SleepStudy</a>.</p></td>
 <td>Inbox.</td>
 </tr>
 <tr class="even">
 <td>PwrTest.exe</td>
 <td><p>Test tool that enables developers, testers, and system integrators to exercise and record power management information from the system. You can use PwrTest to automate sleep and resume transitions and to record processor power management and battery information from the system over a period of time.</p>
-<p>For more information, see [PwrTest](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pwrtest).</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pwrtest" data-raw-source="[PwrTest](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pwrtest)">PwrTest</a>.</p></td>
 <td>Available in WDK (see below).</td>
 </tr>
 <tr class="odd">
 <td>Media eXperience Analyzer</td>
 <td>Media performance, quality, and power analysis tool that’s used by developers and testers to optimize media scenarios on devices running Windows. This tool helps you analyze failures in media playback, webcam capture, and real-time communications HCK requirements.</td>
-<td>[Download center](http://www.microsoft.com/en-us/download/details.aspx?id=43105)</td>
+<td><a href="http://www.microsoft.com/en-us/download/details.aspx?id=43105" data-raw-source="[Download center](http://www.microsoft.com/en-us/download/details.aspx?id=43105)">Download center</a></td>
 </tr>
 <tr class="even">
 <td>Visual Studio Professional 2012</td>
 <td>Visual Studio Professional 2012 is a professional-quality integrated development environment that simplifies the tasks of creating, debugging, and deploying software for Windows, Microsoft Office, and the web.</td>
-<td>[Download kits for Windows hardware development](https://developer.microsoft.com/en-us/windows/hardware/download-kits-windows-hardware-development)</td>
+<td><a href="https://developer.microsoft.com/en-us/windows/hardware/download-kits-windows-hardware-development" data-raw-source="[Download kits for Windows hardware development](https://developer.microsoft.com/en-us/windows/hardware/download-kits-windows-hardware-development)">Download kits for Windows hardware development</a></td>
 </tr>
 <tr class="odd">
 <td>Windows Driver Kit (WDK)</td>

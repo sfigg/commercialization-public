@@ -23,7 +23,7 @@ The **Notifications & actions** settings screen contains a section at the top fo
 > [!NOTE]
 > In Windows 10 Mobile, the quick actions are not configurable through MCSF settings or Windows provisioning. OEMs must directly set the registry key to change the OS default quick actions.
 
- 
+ 
 
 Slots are ordered right-to-left so Slot 1 is always on the right and Slot 5 only appears in large screen devices.
 

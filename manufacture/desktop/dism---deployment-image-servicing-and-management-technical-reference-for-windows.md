@@ -32,21 +32,21 @@ DISM is installed with Windows, and it is also distributed in the Windows Assess
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[DISM overview](what-is-dism.md)</p></td>
-<td align="left"><p>Describes how you can use DISM, where to find DISM, and what's new in DISM.</p></td>
+<td align="left"><p><a href="what-is-dism.md" data-raw-source="[DISM overview](what-is-dism.md)">DISM overview</a></p></td>
+<td align="left"><p>Describes how you can use DISM, where to find DISM, and what&#39;s new in DISM.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)</p></td>
+<td align="left"><p><a href="dism-how-to-topics--deployment-image-servicing-and-management.md" data-raw-source="[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)">DISM How-to Topics (Deployment Image Servicing and Management)</a></p></td>
 <td align="left"><p>Provides how-to instructions on using DISM.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)</p></td>
+<td align="left"><p><a href="dism-reference--deployment-image-servicing-and-management.md" data-raw-source="[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)">DISM Reference (Deployment Image Servicing and Management)</a></p></td>
 <td align="left"><p>Provides reference information for DISM, including command-line options, best practices, and supported platforms.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -59,9 +59,9 @@ DISM is installed with Windows, and it is also distributed in the Windows Assess
 
 [Understanding Servicing Strategies](understanding-servicing-strategies.md)
 
- 
+ 
 
- 
+ 
 
 
 

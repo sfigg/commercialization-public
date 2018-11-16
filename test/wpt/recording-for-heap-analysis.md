@@ -54,7 +54,7 @@ Windows Performance Recorder (WPR) enables heap analysis for all processes on t
     **Note**  
     This combination (package full name + app ID) is not an app user model ID (package family name + app ID). The IFEO processing routines use the full name so that they can apply different behavior to different versions of a single package/app.
 
-     
+     
 
 ## Related topics
 
@@ -63,9 +63,9 @@ Windows Performance Recorder (WPR) enables heap analysis for all processes on t
 
 [Image File Execution Options](http://go.microsoft.com/fwlink/p/?LinkId=268419)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,9 +57,9 @@ Currently, only one heap trace or critical section trace can be active at a time
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,7 +47,7 @@ Disables the F8 and F10 keys during startup to prevent access to the **Advanced 
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -77,9 +77,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ ms.topic: article
 **Warning**  
 Do not add commands that shut down or reboot the computer; instead, use the setting: Microsoft-Windows-Deployment\\RunSynchronous\\RunSynchronousCommand\\[WillReboot](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-willreboot.md).
 
- 
+ 
 
 ## Values
 
@@ -36,12 +36,12 @@ Do not add commands that shut down or reboot the computer; instead, use the sett
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a UNC path. If the path is a UNC path, the [Credentials](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials.md) must be specified. <em>Path</em> is a string with a maximum length of 259 characters.</p></td>
+<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a UNC path. If the path is a UNC path, the <a href="microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials.md" data-raw-source="[Credentials](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials.md)">Credentials</a> must be specified. <em>Path</em> is a string with a maximum length of 259 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -96,9 +96,9 @@ The first command runs an application on the local hard drive. The command inclu
 
 [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

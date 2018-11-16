@@ -29,7 +29,7 @@ Initializes a new instance of the [DeviceOperations Class](deviceoperations-clas
 
 `public DeviceOperations (`
 
-          `Target target`
+          `Target target`
 
 `)`
 
@@ -38,11 +38,11 @@ Initializes a new instance of the [DeviceOperations Class](deviceoperations-clas
 
 *target*
 
- Database Connection target that belongs to the system which DeviceOperation function will be performed on.
+ Database Connection target that belongs to the system which DeviceOperation function will be performed on.
 
- 
+ 
 
- 
+ 
 
 
 

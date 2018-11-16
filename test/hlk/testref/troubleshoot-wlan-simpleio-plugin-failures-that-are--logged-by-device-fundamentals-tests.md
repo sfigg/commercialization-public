@@ -87,11 +87,11 @@ We recommend that you use a Windows HLK Client to run tests manually because Win
 
 The WLAN plugin uses WPP tracing to trace information and errors that you might find useful when you investigate failures that are logged by the WLAN plug-in. See [Collect and View Windows Device Testing Framework (WDTF) Traces](collect-and-view-windows-device-testing-framework--wdtf--traces.md) for instructions on how to collect and view WDTF traces.
 
->[!NOTE]
->  
-**WDTF\_Action\_SimpleIO\_Wireless** is the name of the provider that you can use for filtering.
+> [!NOTE]
+> 
+> **WDTF\_Action\_SimpleIO\_Wireless** is the name of the provider that you can use for filtering.
 
- 
+ 
 
 ## <span id="Sample_trace_output"></span><span id="sample_trace_output"></span><span id="SAMPLE_TRACE_OUTPUT"></span>Sample trace output
 
@@ -173,13 +173,13 @@ The WLAN plugin uses WPP tracing to trace information and errors that you might 
 
 [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
-[Windows HLK Support](..\user\windows-hlk-support.md)
+[Windows HLK Support](../user/windows-hlk-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

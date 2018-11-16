@@ -74,20 +74,20 @@ Constraints are grouped at the Microsoft and OEM level of features. OEMs cannot 
 </tbody>
 </table>
 
- 
+ 
 
 The following XML sample illustrates the use of constraints to appropriately restrain the fake modem feature.
 
 ```
 <Features>
-  <Microsoft>
+  <Microsoft>
     <FeatureGroup Constraint="OneAndOnlyOne">
            <FeatureIDs>
-           <FeatureID>MS_IMGFAKEMODEM</FeatureID>
-           <FeatureID>MS_IMGNOFAKEMODEM</FeatureID> 
-          </FeatureIDs>
-    </FeatureGroups >
-  </Microsoft>
+           <FeatureID>MS_IMGFAKEMODEM</FeatureID>
+           <FeatureID>MS_IMGNOFAKEMODEM</FeatureID> 
+          </FeatureIDs>
+    </FeatureGroups >
+  </Microsoft>
 </Features>
 ```
 
@@ -97,21 +97,21 @@ The following XML sample illustrates the use of constraints to appropriately res
 
 ```
 <Features>
-  <Microsoft>
-    <FeatureGroups>
+  <Microsoft>
+    <FeatureGroups>
         <FeatureGroup Constraint="ZeroOrOne">
          <FeatureIDs>
-          <FeatureID>RELEASE_PRODUCTION</FeatureID> 
-          <FeatureID>MS_CODEINTEGRITY_PROD</FeatureID> 
-        </FeatureIDs>
-    </FeatureGroup>
+          <FeatureID>RELEASE_PRODUCTION</FeatureID> 
+          <FeatureID>MS_CODEINTEGRITY_PROD</FeatureID> 
+        </FeatureIDs>
+    </FeatureGroup>
          <FeatureGroup Constraint="ZeroOrOne">
            <FeatureIDs>
-            <FeatureID>RELEASE_PRODUCTION</FeatureID>
-            <FeatureID>MS_DISABLETESTSIGNING</FeatureID> 
-         </FeatureIDs>
-    </FeatureGroup>
-  </Microsoft>
+            <FeatureID>RELEASE_PRODUCTION</FeatureID>
+            <FeatureID>MS_DISABLETESTSIGNING</FeatureID> 
+         </FeatureIDs>
+    </FeatureGroup>
+  </Microsoft>
 </Features>
 ```
 
@@ -128,19 +128,19 @@ The build options are more complex and are expressed in the following XML.
 ```
 FeatureGroup Constraint="OneAndOnlyOne">
   <FeatureIDs>
-    <FeatureID>RELEASE_PRODUCTION</FeatureID> 
-      <FeatureID>MS_TEST</FeatureID> 
-      <FeatureID>MS_HEALTH</FeatureID> 
-      <FeatureID>MS_PRODUCTION</FeatureID> 
-      <FeatureID>MS_SELFHOST</FeatureID> 
-    </FeatureIDs>
-  </FeatureGroup>
+    <FeatureID>RELEASE_PRODUCTION</FeatureID> 
+      <FeatureID>MS_TEST</FeatureID> 
+      <FeatureID>MS_HEALTH</FeatureID> 
+      <FeatureID>MS_PRODUCTION</FeatureID> 
+      <FeatureID>MS_SELFHOST</FeatureID> 
+    </FeatureIDs>
+  </FeatureGroup>
 <FeatureGroup Constraint="OneAndOnlyOne">
   <FeatureIDs>
-    <FeatureID>RELEASE_PRODUCTION</FeatureID> 
-    <FeatureID>MS_PRODUCTION_CORE</FeatureID> 
-    <FeatureID>MS_TEST</FeatureID> 
-  </FeatureIDs>
+    <FeatureID>RELEASE_PRODUCTION</FeatureID> 
+    <FeatureID>MS_PRODUCTION_CORE</FeatureID> 
+    <FeatureID>MS_TEST</FeatureID> 
+  </FeatureIDs>
 </FeatureGroup>
 ```
 
@@ -171,14 +171,14 @@ For example if an OEM creates a feature called TEST\_FEATURE1 using the XML show
 
 ```
 <Features>
-    <OEM>
-     <PackageFile Path="%oempackageroot%\test\" 
-      Name="Contoso.Test.MinTE.spkg">
-        <FeatureIDs>
-          <FeatureID>TEST_FEATURE1</FeatureID>
-        </FeatureIDs>
-      </PackageFile>
-   </OEM>
+    <OEM>
+     <PackageFile Path="%oempackageroot%\test\" 
+      Name="Contoso.Test.MinTE.spkg">
+        <FeatureIDs>
+          <FeatureID>TEST_FEATURE1</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+   </OEM>
 </Features>
 ```
 
@@ -212,9 +212,9 @@ For more information about working with the SOC, SV and DEVICE attributes, see [
 
 [Optional features for building images](optional-features-for-building-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

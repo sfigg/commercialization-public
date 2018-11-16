@@ -23,9 +23,9 @@ This is especially important for hosts that are not capable of consuming input v
 
 By default, Windows Precision Touchpad devices can report data via the mouse collection, as this is the most compatible reporting mode.
 
- 
+ 
 
- 
+ 
 
 
 

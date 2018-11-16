@@ -29,7 +29,7 @@ This method adds supplemental files to the submission package.
 
 `public void AddSupplementalFiles (`
 
-          `string pathToSupplementalFiles`
+          `string pathToSupplementalFiles`
 
 `)`
 
@@ -38,16 +38,16 @@ This method adds supplemental files to the submission package.
 
 *pathToSupplementalFiles*
 
-     The path to the supplemental files. All files in this directory and all subdirectories (and their files) will be packaged.
+     The path to the supplemental files. All files in this directory and all subdirectories (and their files) will be packaged.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

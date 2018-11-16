@@ -32,7 +32,7 @@ A Regions of Interest file is a valid XML file that contains the following nodes
 > [!NOTE]
 > In a region's definition, the *version* attribute in the XML declaration, such as `version='1.0'`, is optional.
 
- 
+ 
 
 The following example is a complete Regions of Interest file that defines a simple region. Explanations for the attributes and nodes within **Region** are described after the example.
 
@@ -242,7 +242,7 @@ The **PayloadIdentifier** node has the following attributes:
 > [!NOTE]
 > Payload fields are case-sensitive, and the XML definition must fully match the payload value. For example, if a payload field has a value of `00000`, the region definition must also specify `00000` as the payload value.
 
- 
+ 
 
 ### Example
 
@@ -442,7 +442,7 @@ In the preceding example, the **Naming** node indicates that either the starting
 > [!NOTE]
 > When naming region instances, WPA first checks the starting event for the matching payload field. If one is not found, WPA will then search the stopping event for the payload field. If a match is not found in either event, an error is printed to the console.
 
- 
+ 
 
 Sometimes, the information in the payload is not the only information we want. For example, if the information in the payload contained is a device ID, we may wish to map this information back to a device description and name. Supported *Type* attributes are:
 
@@ -504,7 +504,7 @@ The following example defines a region that has region-based naming. If a region
 > [!NOTE]
 > You can see instance names in WPA by hovering the mouse over a region instance in the Regions of Interest graph.
 
- 
+ 
 
 ## Metadata
 

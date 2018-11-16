@@ -12,7 +12,7 @@ ms.topic: article
 
 ---
 
-#Domain Joining the VHLK
+# Domain Joining the VHLK
 This is a guide is to join the VHLK VM to a domain and add your domain username to the HLK datastores. Follow these steps after you have completed the setup guide. Joining the VHLK to a domain is completely optional, as the HLK will still work in a WORKGROUP configuration. However, joining to a domain gives the VM access to network resources.
 
 ## Joining a Domain

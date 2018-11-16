@@ -42,9 +42,9 @@ After you have run the troubleshooting steps and collected the necessary informa
 
 [Troubleshooting Windows HLK](troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

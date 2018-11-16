@@ -48,9 +48,9 @@ You can open any recording that Windows Performance Recorder (WPR) or the Assess
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

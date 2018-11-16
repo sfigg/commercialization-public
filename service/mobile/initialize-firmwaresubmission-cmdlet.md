@@ -49,7 +49,7 @@ An optional parameter that specifies the target product of the firmware submissi
 
 **Note** For all Windows 10 submissions, use WindowsPhoneThreshold.
 
- 
+ 
 
 <span id="-SignedRemovalPackageFolder"></span><span id="-signedremovalpackagefolder"></span><span id="-SIGNEDREMOVALPACKAGEFOLDER"></span>*-SignedRemovalPackageFolder*  
 A string path to a folder that contains removal packages (with file extensions ending in .spkr) to be added to an image.
@@ -310,9 +310,9 @@ RELATED LINKS
 
 [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223)
 
- 
+ 
 
- 
+ 
 
 
 

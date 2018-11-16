@@ -46,7 +46,7 @@ Only primary partitions can be marked as active. If `Active` is set for other pa
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -135,9 +135,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,17 +32,17 @@ ms.topic: article
 <tr class="odd">
 <td><p><strong>NTFS</strong></p></td>
 <td><p>Formats the partition for the NTFS file system.</p>
-<p>When CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) is set to <strong>Primary</strong> or <strong>Logical</strong>, this is the default file format.</p></td>
+<p>When CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> is set to <strong>Primary</strong> or <strong>Logical</strong>, this is the default file format.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>FAT32</strong></p></td>
 <td><p>Formats the partition for the File Allocation Table (FAT) file system.</p>
-<p>When CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) is set to <strong>EFI</strong>, this is the default file format.</p></td>
+<p>When CreatePartition<a href="microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md" data-raw-source="[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md)">Type</a> is set to <strong>EFI</strong>, this is the default file format.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When CreatePartition\\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) is set to **Extended** or **MSR**, the partition does not receive a file format.
 
@@ -91,9 +91,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

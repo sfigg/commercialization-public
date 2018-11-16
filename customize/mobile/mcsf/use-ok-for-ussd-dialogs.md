@@ -69,7 +69,7 @@ To meet certain market requirements or user expectations, OEMs can change the bu
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone that has a UICC.

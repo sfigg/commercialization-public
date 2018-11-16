@@ -46,9 +46,9 @@ The **Remove Profile** button is visible only if custom profiles are present. Yo
 
 [Authoring Recording Profiles](authoring-recording-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

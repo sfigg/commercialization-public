@@ -137,7 +137,7 @@ The wireless dock must meet the following requirements.
 | Display connector       | HDMI 1.4 required.                                                                                                                                                                  | DisplayPort 1.2 recommended. VGA support via adapter strongly recommended. |
 | Wireless phone charging | Recommended                                                                                                                                                                         |                                                                            |
 
- 
+ 
 
 \*USB peripheral support is limited on the Windows 10 Mobile.
 
@@ -154,7 +154,7 @@ A Continuum wired dock must meet the following requirements.
 | Display resolution  | 720p minimum                                                                                                               |                                                                                                                                                                             |
 | Display connector   | HDMI 1.4 required.                                                                                                         | DisplayPort 1.2 recommended. VGA support via adapter strongly recommended.                                                                                                  |
 
- 
+ 
 
 \*USB peripheral support is limited on the Windows 10 Mobile.
 
@@ -174,7 +174,7 @@ For more information on the requirements of drivers and hardware to support Mira
 
 This FAQ is designed to answer common questions about both the usage model, as well as building a device.
 
-###Devices and hardware
+### Devices and hardware
 
 **What phones will support Continuum?**
 
@@ -250,7 +250,7 @@ Yes, although you may choose in the settings to use simple display mirroring, if
 
 The maximum resolution is limited by the capabilities of the device and the receiver. If a display supports a native resolution that is greater than the supported resolution of the device/receiver combination, the OS will fall back to the next best supported resolution.
 
-###Developer environment
+### Developer environment
 
 **What does Continuum mean for developers?**
 
@@ -260,13 +260,13 @@ Continuum brings a whole new value to your apps. Phone users will be able to hav
 
 Because Universal Windows apps run across all Windows devices, the easiest thing to do is to test your Universal Windows app on the Windows desktop and resize the app window. If you have separate mobile and desktop views, write test code to swap views on desktop as view size changes.
 
-###Availability
+### Availability
 
 **When will Continuum be available?**
 
 Continuum is a feature of Windows 10 Mobile, and it will be available with new devices shipping this year.
 
-###Scaling/building apps optimized for Continuum
+### Scaling/building apps optimized for Continuum
 
 **What is the difference between the Cast API and the Projection Manager API?**
 
@@ -316,7 +316,7 @@ This feature opens up exciting possibilities for keyboard and mouse-enabled game
 
 No.
 
-###Comparisons
+### Comparisons
 
 **How is this different from other solutions on the Chromecast/AirPlay?**
 
@@ -346,7 +346,7 @@ No.
 
 Yes, but this scenario adds an entirely separate PC into the mix. With Continuum, you are able to use your most personal device (your phone) for many of the tasks in which you might use a notebook or another full PC.
 
-###Other
+### Other
 
 **Will this feature negatively impact the PC business?**
 
@@ -371,11 +371,11 @@ We wanted to ensure consumers had a great experience, so we focused on Universal
 **How will the performance be relative to a full blown PC? What are the drawbacks?**
 
 We will address performance concerns based on consumer feedback, but we believe we are covering the main use cases via Microsoft Edge, Office, email, photos app and other 1st and 3rd party Universal Windows apps running on a mobile OS with performance levels needed to be productive and entertained.
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

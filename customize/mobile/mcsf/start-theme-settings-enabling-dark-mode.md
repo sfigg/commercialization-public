@@ -69,7 +69,7 @@ OEMs can choose to specify whether the dark mode is applied.
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash an image containing this customization to a phone.

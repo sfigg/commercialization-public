@@ -38,7 +38,7 @@ This class is a base class for all Windows HCK Studio exceptions.
 
 `Public Class ScheduleException`
 
-          `Inherits ProjectManagerException`
+          `Inherits ProjectManagerException`
 
 **C#**
 
@@ -51,20 +51,20 @@ This class is a base class for all Windows HCK Studio exceptions.
 
 **System.Object**
 
-     **System.Exception**
+     **System.Exception**
 
-          [ProjectManagerException Class](projectmanagerexception-class.md)
+          [ProjectManagerException Class](projectmanagerexception-class.md)
 
-                    **Microsoft.Windows.Kits.Hardware.ObjectModel.ScheduleException**
+                    **Microsoft.Windows.Kits.Hardware.ObjectModel.ScheduleException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

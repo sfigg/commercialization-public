@@ -1419,9 +1419,9 @@ The complete schema for Windows Performance Recorder (WPR) recording profiles, *
 
 [Recording Profile XML Reference](recording-profile-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,7 +25,7 @@ The following table shows the mobile operator ID values for phones that will be 
 **Note**  
 Note that it is not possible to prevent an update from going to one or more countries/regions in that geographical area. If any of the following regional IDs is specified, updates can either go to the entire region or none of it. There is no way to update phones with more granularity.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -106,7 +106,7 @@ Note that it is not possible to prevent an update from going to one or more coun
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows more specific mobile operator ID values for carrier-unlocked phones that will be sold in only one country/region. If multiple codes apply, use the regional IDs listed in the preceding table instead. However, if the specific value is used, updates can be targeted more carefully if needed.
 
@@ -296,7 +296,7 @@ The following table shows more specific mobile operator ID values for carrier-un
 </tr>
 <tr class="even">
 <td><p><strong>000-CI</strong></p></td>
-<td><p>Côte d'Ivoire</p></td>
+<td><p>Côte d&#39;Ivoire</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>000-CK</strong></p></td>

@@ -69,7 +69,7 @@ To meet regulatory requirements and/or meet mobile operator requirements for som
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone.

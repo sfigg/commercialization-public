@@ -34,18 +34,18 @@ Standard licensing agreements specify that you can use a product key only to act
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>microsoft-windows-setup-\UserData\ProductKey\<code>Key</code></p></td>
+<td><p>microsoft-windows-setup-\UserData\ProductKey&lt;code&gt;Key</code></p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\[ProductKey](microsoft-windows-setup-userdata-productkey.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup<a href="microsoft-windows-setup-userdata-productkey.md" data-raw-source="[ProductKey](microsoft-windows-setup-userdata-productkey.md)">ProductKey</a></p></td>
 <td><p>Specifies a product key to activate Windows. This setting can be used with microsoft-windows-setup-\UserData\ProductKey\Key, and the two product keys can be different.</p>
 <p>If you are using a Volume-License Multiple-Activation Key (MAK), it must be specified using this setting.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Values
 
@@ -65,7 +65,7 @@ Standard licensing agreements specify that you can use a product key only to act
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -106,9 +106,9 @@ The following XML output shows how to set user data.
 
 [ProductKey](microsoft-windows-setup-userdata-productkey.md)
 
- 
+ 
 
- 
+ 
 
 
 

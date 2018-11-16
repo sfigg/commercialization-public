@@ -29,15 +29,15 @@ Method to redistribute tests across targets which have been added to a project.
 
 `public static void RedistributeScheduledTests (`
 
-          `IEnumerable<Target> newTargets,`
+          `IEnumerable<Target> newTargets,`
 
-          `out IList<TestResult> cancelFailedResults,`
+          `out IList<TestResult> cancelFailedResults,`
 
-          `out IList<TestResult> cancelledResults,`
+          `out IList<TestResult> cancelledResults,`
 
-          `out IList<TestResult> scheduledResults,`
+          `out IList<TestResult> scheduledResults,`
 
-          `out IList<Test> rescheduleFailedTests`
+          `out IList<Test> rescheduleFailedTests`
 
 `)`
 
@@ -69,9 +69,9 @@ List of tests that failed to be rescheduled.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

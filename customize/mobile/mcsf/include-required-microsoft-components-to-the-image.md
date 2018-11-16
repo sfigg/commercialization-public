@@ -31,7 +31,7 @@ For a comprehensive list of required Microsoft components that must be included 
     **Note**  
     The OS selects the correct messaging package to include as part of the image based on different locale and language combinations and sets this as the default selection. OEMs don't need to select the correct messaging package to install, but should make sure that the correct package is chosen to meet the requirements.
 
-     
+     
 
 <a href="" id="instructions-"></a>**Instructions:**  
 **To install the Messaging package that does not include Skype integration**

@@ -86,9 +86,9 @@ The following table provides a description of how each driver servicing option c
 <td align="left"><p>Adds third-party driver packages to an offline Windows image.</p>
 <p>When you use the <strong>/Driver</strong> option to point to a folder, INF files that are not valid driver packages are ignored. These files are reported on the console when the command runs, and a warning is included in the log file. You will not receive an error message.</p>
 <p>If you point to a path and use the <strong>/Recurse</strong> option, all subfolders are queried for drivers to add.</p>
-<p>For testing purposes you can use <strong>/ForceUnsigned</strong> to add unsigned drivers and override the requirement that drivers installed on X64-based computers must have a digital signature. For more information about driver signing requirements, see [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md).</p>
+<p>For testing purposes you can use <strong>/ForceUnsigned</strong> to add unsigned drivers and override the requirement that drivers installed on X64-based computers must have a digital signature. For more information about driver signing requirements, see <a href="device-drivers-and-deployment-overview.md" data-raw-source="[Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md)">Device Drivers and Deployment Overview</a>.</p>
 <p>Examples:</p>
-<p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\\</strong></p>
+<p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers&lt;/strong&gt;</p>
 <p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers /recurse</strong></p>
 <p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\mydriver.inf</strong></p>
 <p><strong>Dism /image:C:\test\offline /Add-Driver /driver:C:\test\drivers\mydriver.inf /ForceUnsigned</strong></p></td>
@@ -100,11 +100,10 @@ The following table provides a description of how each driver servicing option c
 <td align="left"><p>Removes third-party drivers from an offline image.</p>
 <p>When third-party drivers are added, they are named Oem0.inf, Oem1.inf, and so on. You must specify the &lt;<em>published name</em>&gt; (for example, Oem1.inf) to remove the driver. You cannot remove default drivers.</p>
 <div class="alert">
-<strong>Warning</strong>  
-<p>Removing a boot-critical driver package can make the offline Windows image unbootable.</p>
+<strong>Warning</strong><br/><p>Removing a boot-critical driver package can make the offline Windows image unbootable.</p>
 </div>
 <div>
- 
+
 </div>
 <p></p>
 <p>You can specify multiple drivers on the command line by using the <strong>/Driver</strong> option multiple times.</p>
@@ -124,7 +123,7 @@ The following table provides a description of how each driver servicing option c
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
 
@@ -145,9 +144,9 @@ The following table provides a description of how each driver servicing option c
 
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
- 
 
- 
+
+
 
 
 

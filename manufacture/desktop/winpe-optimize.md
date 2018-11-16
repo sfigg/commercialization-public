@@ -67,9 +67,9 @@ Copy "C:\WinPE_amd64\mount\boot2.wim" "c:\winpe_amd64\media\sources\boot.wim"
 
 [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

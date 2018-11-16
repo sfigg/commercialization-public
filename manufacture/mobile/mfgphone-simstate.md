@@ -66,9 +66,9 @@ The SIM state is disabled.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

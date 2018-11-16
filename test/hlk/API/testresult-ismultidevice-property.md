@@ -39,9 +39,9 @@ Returns a value indicating whether the test ran as a MultiDevice test.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

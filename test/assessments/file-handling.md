@@ -19,10 +19,10 @@ ms.topic: article
 
 The File Handling assessment provides an automated way to exercise common file operations and capture metrics. This assessment measures durations and throughput while copying, moving, compressing, extracting, and deleting files and folders on your computer. The results help you understand how well the computer performs during these operations. For more information about the results, see [Results for the File Handling Assessment](results-for-the-file-handling-assessment.md).
 
-**Warning**  
+**Warning**  
 The File Handling assessment is only supported on English (United States) versions of Windows. Running this assessment on non-English (United States) versions of Windows might prompt you with an error and the assessment might stop running.
 
- 
+
 
 The following graphic illustrates the assessment process.
 
@@ -49,17 +49,17 @@ Enable analysis trace collection only when you need additional information to in
 
 You can run this assessment on the following operating systems:
 
--   Windows 8
+-   Windows 8
 
--   Windows 10
+-   Windows 10
 
 Supported architectures include x86-based, x64-based, and ARM-based systems. The assessment isn't supported for use on virtual machines.
 
-You can run this assessment on Windows RT in either of the following ways:
+You can run this assessment on Windows RT in either of the following ways:
 
--   Package the assessment job in the Windows Assessment Console and then run it on Windows RT. For more information, see [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
+-   Package the assessment job in the Windows Assessment Console and then run it on Windows RT. For more information, see [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
 
--   Use Windows Assessment Services to run assessments on Windows RT. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
+-   Use Windows Assessment Services to run assessments on Windows RT. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
 
 ## <a href="" id="bkmk-fileworkloads"></a>Workloads
 
@@ -68,14 +68,14 @@ A workload is a set of automated tasks that simulate user activity in a predefin
 
 -   **Programmatic Workloads.** These workloads use the API to perform file functions. These workloads measure only the underlying file functionality. File operations include **copypg**, **movepg**, and **deletepg**.
 
--   **Scripted Workloads.** These workloads simulate user activity in File Explorer on a computer running Windows 8. File operations include **copyuxxs**, **deleteuxs**, **moveuxs**, and **zipuxs**. Scripted workloads can't be used if you're running the assessment on a computer running Windows 7.
+-   **Scripted Workloads.** These workloads simulate user activity in File Explorer on a computer running Windows 8. File operations include **copyuxxs**, **deleteuxs**, **moveuxs**, and **zipuxs**. Scripted workloads can't be used if you're running the assessment on a computer running Windows 7.
 
 For more information about choosing a workload, see [Settings](#assesssettings).
 
-**Note**  
+**Note**  
 You can also use the File Handling assessment as a workload in an energy-efficiency job. For more information about energy-efficiency jobs, see [Create and run an energy efficiency job](create-and-run-an-energy-efficiency-job.md).
 
- 
+
 
 ## <a href="" id="assesssettings"></a>Settings
 
@@ -84,10 +84,10 @@ By default, this assessment uses the recommended settings. Microsoft defines the
 
 You can also customize the settings if you want to gather data that's different from what the assessment captures by default. However, if you change the default source or destination folders or supply your own files, comparisons may no longer be relevant.
 
-**Note**  
+**Note**  
 After you run the assessment, all files in the Recycle Bin may be permanently deleted. Therefore, before you run the assessment, review any files in the Recycle Bin because they won't be available or restorable after the assessment concludes.
 
- 
+
 
 The following table describes the assessment settings, recommended values, and alternative values for each setting.
 
@@ -134,7 +134,7 @@ The following table describes the assessment settings, recommended values, and a
 <tr class="odd">
 <td><p>Workload</p></td>
 <td><p>Specifies which workloads to run. Programmatic and Scripted Workloads are available. By default, only Programmatic Workloads are run.</p>
-<p>For more information about the file functions performed by each workload, see [Workloads](#bkmk-fileworkloads).</p></td>
+<p>For more information about the file functions performed by each workload, see <a href="#bkmk-fileworkloads" data-raw-source="[Workloads](#bkmk-fileworkloads)">Workloads</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Import data location</p></td>
@@ -142,19 +142,18 @@ The following table describes the assessment settings, recommended values, and a
 </tr>
 <tr class="odd">
 <td><p>Enable Minifilter Diagnostic Mode</p></td>
-<td><p>Specifies whether to use the minifilter diagnostic option. By default, this check box is cleared. When the minifilter diagnostic mode is enabled, it produces metrics that help you evaluate the effect of minifilters on file handling. For more information about this setting, see [Minifilter Diagnostics](minifilter-diagnostics.md).</p>
+<td><p>Specifies whether to use the minifilter diagnostic option. By default, this check box is cleared. When the minifilter diagnostic mode is enabled, it produces metrics that help you evaluate the effect of minifilters on file handling. For more information about this setting, see <a href="minifilter-diagnostics.md" data-raw-source="[Minifilter Diagnostics](minifilter-diagnostics.md)">Minifilter Diagnostics</a>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The minifilter diagnostic option is supported only on Windows 8.</p>
+<strong>Note</strong><br/><p>The minifilter diagnostic option is supported only on Windows 8.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -169,9 +168,9 @@ The following table describes the assessment settings, recommended values, and a
 
 [Minifilter Diagnostics](minifilter-diagnostics.md)
 
- 
 
- 
+
+
 
 
 

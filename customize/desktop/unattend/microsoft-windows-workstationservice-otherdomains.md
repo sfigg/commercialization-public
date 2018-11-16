@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -67,9 +67,9 @@ The following XML output shows how to specify the Microsoft LAN Manager domains 
 
 [Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md)
 
- 
+ 
 
- 
+ 
 
 
 

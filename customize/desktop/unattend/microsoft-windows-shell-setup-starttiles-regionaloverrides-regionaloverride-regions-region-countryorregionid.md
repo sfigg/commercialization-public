@@ -40,13 +40,13 @@ If the selected region doesn’t match any of these regions, then Windows displa
 <tr class="odd">
 <td><p><em>CountryOrRegionID</em></p></td>
 <td><p>Specifies the two-letter country or region ID of the end user (for example, US, FR, ES).</p>
-<p>For the list of valid values for <em>CountryOrRegionID</em>, see [http://go.microsoft.com/fwlink/?LinkId=255198](http://go.microsoft.com/fwlink/?LinkId=255198).</p>
+<p>For the list of valid values for <em>CountryOrRegionID</em>, see <a href="http://go.microsoft.com/fwlink/?LinkId=255198" data-raw-source="[http://go.microsoft.com/fwlink/?LinkId=255198](http://go.microsoft.com/fwlink/?LinkId=255198)">http://go.microsoft.com/fwlink/?LinkId=255198</a>.</p>
 <p>This value is not case-sensitive.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -97,9 +97,9 @@ The following XML output shows how to configure a set of Apps that apply to only
 
 [UserLocale](microsoft-windows-international-core-userlocale.md)
 
- 
+ 
 
- 
+ 
 
 
 

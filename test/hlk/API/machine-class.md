@@ -49,7 +49,7 @@ This class represents an abstract resource that a logo test can be scheduled to 
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.Machine**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.Machine**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -63,9 +63,9 @@ When the client software is originally installed on a machine, a Machine object 
 
 Any Machine in the reserved &lt;seealso cref="T:Microsoft.Windows.Kits.Hardware.ObjectModel.MachinePool"/&gt; cannot run tests. These machines will need to be moved into a MachinePool that is not a reserved pool.
 
- 
+ 
 
- 
+ 
 
 
 

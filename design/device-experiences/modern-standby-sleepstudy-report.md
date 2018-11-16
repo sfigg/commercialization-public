@@ -107,9 +107,9 @@ Each component in the Top Offenders table is color-coded by activity time. If it
 
 The preceding example session does not display any top offenders that exceed the ten percent active time, but the session itself is orange. That's because the session exceeded the expected drain rate of 0.333 percent per hour but is below one percent per hour, resulting in an orange color code for the session.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,11 +29,11 @@ Creates and signs an HCK package only containing data in the given target famile
 
 `public void Save (`
 
-          `string packageFile,`
+          `string packageFile,`
 
-          `List<TargetFamily> targetFamilyList,`
+          `List<TargetFamily> targetFamilyList,`
 
-          `X509Certificate certificate`
+          `X509Certificate certificate`
 
 `)`
 
@@ -62,9 +62,9 @@ This function can be used for Submission Packages and Update Packages.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

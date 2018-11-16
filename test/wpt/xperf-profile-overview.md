@@ -44,12 +44,12 @@ The following table describes the types of sessions.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The file modes cannot be combined.
 
- 
+ 
 
 ## Related topics
 
@@ -60,9 +60,9 @@ The file modes cannot be combined.
 
 [Providers](providers.md)
 
- 
+ 
 
- 
+ 
 
 
 

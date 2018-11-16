@@ -19,6 +19,7 @@ ms.topic: article
 The test attempts to query pin when radio on/off, enable/disable PIN1 with correct and incorrect pins.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.MobileBroadband.GSM.Discretional</li><li>Device.Network.MobileBroadband.GSM.ComplyWithBaseReq</li></ul> |  
@@ -31,7 +32,7 @@ The test attempts to query pin when radio on/off, enable/disable PIN1 with corre
 |**Requires special configuration**| true |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -50,16 +51,16 @@ Tests in this feature area might have additional documentation, including prereq
 | **PIN1**       | Specifies the PIN1 to use on the device |
 | **PUK1**       | Specifies the PUK1 to use on the device |
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

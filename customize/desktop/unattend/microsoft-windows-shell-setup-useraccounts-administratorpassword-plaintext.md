@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 You can only use this setting to hide the passwords for local accounts only. Domain account passwords are not hidden.
 
- 
+ 
 
 You cannot set this value directly. Select **Hide sensitive data** on the **Tools** menu to hide all passwords with a `PlainText` setting in your answer file.
 
@@ -38,21 +38,21 @@ You cannot set this value directly. Select **Hide sensitive data** on the **Tool
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) appears in plain text in the answer file. This is the default value.</p></td>
+<td><p>Specifies that the <a href="microsoft-windows-shell-setup-useraccounts-administratorpassword.md" data-raw-source="[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)">AdministratorPassword</a> appears in plain text in the answer file. This is the default value.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) is hidden in the answer file.</p></td>
+<td><p>Specifies that the <a href="microsoft-windows-shell-setup-useraccounts-administratorpassword.md" data-raw-source="[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)">AdministratorPassword</a> is hidden in the answer file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 This element appears above the **Settings** bar in the **Properties** pane of Windows System Manager. It always appears as **true** in the user interface (UI), even if you have selected **Hide sensitive data**.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -90,9 +90,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)
 
- 
+ 
 
- 
+ 
 
 
 

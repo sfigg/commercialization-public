@@ -42,7 +42,7 @@ This method creates a target from a **TargetData** object, and adds it to a targ
 
 `Public MustOverride Function CreateTarget ( _`
 
-          `target As TargetData _`
+          `target As TargetData _`
 
 `) As Target`
 
@@ -50,7 +50,7 @@ This method creates a target from a **TargetData** object, and adds it to a targ
 
 `public abstract Target CreateTarget (`
 
-          `TargetData target`
+          `TargetData target`
 
 `)`
 
@@ -59,7 +59,7 @@ This method creates a target from a **TargetData** object, and adds it to a targ
 
 *target*
 
-     Target data to create a target from.
+     Target data to create a target from.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

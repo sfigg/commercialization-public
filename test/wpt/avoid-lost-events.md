@@ -22,7 +22,7 @@ In Windows Performance Recorder (WPR), some applications generate so many event
 **Note**  
 By default, WPR uses paged memory for buffers. To set WPR to use non-paged memory for buffers, set the *NonPagedMemory* attribute to *true* for the provider. For more information about how to create a custom profile, see [Authoring Recording Profiles](authoring-recording-profiles.md) and [2. System and Event Provider Definitions](2-system-and-event-provider-definitions.md).
 
- 
+ 
 
 You can help prevent WPR from losing ETW buffers or events in the following ways:
 
@@ -59,9 +59,9 @@ You can help prevent WPR from losing ETW buffers or events in the following ways
 
 [Sessions (Windows Drivers)](http://go.microsoft.com/fwlink/p/?linkid=246706)
 
- 
+ 
 
- 
+ 
 
 
 

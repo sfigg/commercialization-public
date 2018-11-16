@@ -34,14 +34,14 @@ To complete this walkthrough, you need the following:
     **Note**  
     This example assumes that the hard disk drive is blank.
 
-     
+     
 
 2.  Insert both the Windows product DVD and the removable media that contains your answer file into the new computer.
 
     **Note**  
     When you use a USB flash drive, insert the drive directly into the primary set of USB ports for the computer. For a desktop computer, this is typically in the back of the computer.
 
-     
+     
 
 3.  Restart the computer by pressing the CTRL+ALT+DEL keys. Windows Setup (Setup.exe) starts automatically.
 
@@ -71,7 +71,7 @@ You must run the **sysprep /generalize** command before you move a Windows image
 
 The next time that you boot the Windows image, the [specialize](specialize.md) configuration pass runs. During this configuration pass, many components perform actions that must occur when you boot a Windows image on a new computer. For more information, see [How Configuration Passes Work](how-configuration-passes-work.md).
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -88,9 +88,9 @@ The next time that you boot the Windows image, the [specialize](specialize.md) c
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

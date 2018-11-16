@@ -39,9 +39,9 @@ Before you test your storage adapter or controller by using the Windows Hardware
 
 [Device.Storage Tests](device-storage-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

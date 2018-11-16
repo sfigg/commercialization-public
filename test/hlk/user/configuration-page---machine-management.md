@@ -25,35 +25,35 @@ Every project needs a machine pool. A machine pool can be used for multiple proj
 ## <span id="Create_a_machine_pool"></span><span id="create_a_machine_pool"></span><span id="CREATE_A_MACHINE_POOL"></span>Create a machine pool
 
 
-1.  In Windows HCK Studio, click **Configuration**.
+1. In Windows HCK Studio, click **Configuration**.
 
-2.  Select existing machine pool and click **Create Machine Pool** or right-click an existing machine pool, and select **Create Machine Pool**.
+2. Select existing machine pool and click **Create Machine Pool** or right-click an existing machine pool, and select **Create Machine Pool**.
 
-    The new pool is named "New Pool 1" by default. You can change that by typing a different name and then pressing Enter.
+   The new pool is named "New Pool 1" by default. You can change that by typing a different name and then pressing Enter.
 
-3.  Click **Default Pool**, and then confirm that each test computer appears in the main pane. If you've installed the Client software on multiple test computers, you can add any of them to the pool.
+3. Click **Default Pool**, and then confirm that each test computer appears in the main pane. If you've installed the Client software on multiple test computers, you can add any of them to the pool.
 
-    >[!NOTE]
-    >  
-    A computer can't be in more than one pool at a time.
+   > [!NOTE]
+   > 
+   > A computer can't be in more than one pool at a time.
 
-     
+     
 
-4.  Select the test computer, and then drag it to the newly created pool.
+4. Select the test computer, and then drag it to the newly created pool.
 
-5.  Under **Machines**, right-click the test computer, click **Change Machine Status**, and then click **Ready**.
+5. Under **Machines**, right-click the test computer, click **Change Machine Status**, and then click **Ready**.
 
-    The **Status** column changes to **Ready**.
+   The **Status** column changes to **Ready**.
 
-    >[!WARNING]
-    >  
-    You cannot schedule a test against a computer with status equal to **NotReady**. A computer cannot be set to ready while in the Default pool.
+   > [!WARNING]
+   > 
+   > You cannot schedule a test against a computer with status equal to **NotReady**. A computer cannot be set to ready while in the Default pool.
 
-     
+     
 
-6.  Repeat for each test computer that you want to include in the pool.
+6. Repeat for each test computer that you want to include in the pool.
 
-7.  Click the Back arrow to return to the main area of Windows HCK Studio.
+7. Click the Back arrow to return to the main area of Windows HCK Studio.
 
 After all of the test computers are assigned to a pool, you're ready to select targets and run tests against those computers.
 
@@ -70,20 +70,20 @@ If you are upgrading your Test Server to a newer version, you must uninstall and
 
 3.  Delete the test computer from the machine pool.
 
->[!NOTE]
->  
-If you do not uninstall HCK Client after deleting a test computer from the machine pool, the test computer will reappear in the machine pool. Once you uninstall HCK Client, the association between tests and results are broken. The package will contain the test results, but no log files associated with that client.
+> [!NOTE]
+> 
+> If you do not uninstall HCK Client after deleting a test computer from the machine pool, the test computer will reappear in the machine pool. Once you uninstall HCK Client, the association between tests and results are broken. The package will contain the test results, but no log files associated with that client.
 
- 
+ 
 
 ## <span id="Reinstalling_Clients"></span><span id="reinstalling_clients"></span><span id="REINSTALLING_CLIENTS"></span>Reinstalling Clients
 
 
 If you need to reinstall HCK Client on a test computer, the test results will be lost. To preserve the test data, create a package before removing the test client. Create a new project and merge the package. For more information on merging, see [Merge packages](merge-packages.md) topic.
 
- 
+ 
 
- 
+ 
 
 
 

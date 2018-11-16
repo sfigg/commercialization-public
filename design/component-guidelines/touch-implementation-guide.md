@@ -31,15 +31,15 @@ The information includes guidance on using the Human Interface Device (HID) prot
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>[Device Bus Connectivity](touchscreen-device-bus-connectivity.md)</p></td>
+<td><p><a href="touchscreen-device-bus-connectivity.md" data-raw-source="[Device Bus Connectivity](touchscreen-device-bus-connectivity.md)">Device Bus Connectivity</a></p></td>
 <td><p>This topic discusses bus connectivity methods for an integrated Windows touchscreen device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Power Management](touchscreen-power-management.md)</p></td>
+<td><p><a href="touchscreen-power-management.md" data-raw-source="[Power Management](touchscreen-power-management.md)">Power Management</a></p></td>
 <td><p>This topic provides information about Touchscreen power management, and discusses power consumption requirements.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Protocol Implementation](touchscreen-protocol-implementation.md)</p></td>
+<td><p><a href="touchscreen-protocol-implementation.md" data-raw-source="[Protocol Implementation](touchscreen-protocol-implementation.md)">Protocol Implementation</a></p></td>
 <td><p>This section provides guidelines for Touchscreen protocol implementation. Windows Touchscreen devices are expected to use the Human Interface Device (HID) protocol to communicate with the host.</p></td>
 </tr>
 </tbody>

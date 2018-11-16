@@ -148,9 +148,9 @@ System designers should pay special attention to charge rate for systems that su
 
 If USB charging is required on platforms with large battery capacity (greater than 30 watt-hours), the system designer should also provide a high-power DC input and bundle a high-power DC charger with the system. This also enables the platform battery to be charged during interactive use, which might otherwise be impossible given the low input power and high power consumption of a USB charge-only platform with large battery capacity.
 
- 
+ 
 
- 
+ 
 
 
 

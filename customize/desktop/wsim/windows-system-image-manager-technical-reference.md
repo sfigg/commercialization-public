@@ -34,15 +34,15 @@ You can create an answer file by using information from a Windows image (.wim) f
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)</p></td>
+<td><p><a href="windows-system-image-manager-overview-topics.md" data-raw-source="[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)">Windows System Image Manager Overview Topics</a></p></td>
 <td><p>Provides an overview of Windows SIM, the user interface, and important concepts for deploying Windows.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)</p></td>
+<td><p><a href="windows-system-image-manager-how-to-topics.md" data-raw-source="[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)">Windows System Image Manager How-to Topics</a></p></td>
 <td><p>Provides how-to instructions for using Windows SIM.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)</p></td>
+<td><p><a href="windows-system-image-manager-reference-topics.md" data-raw-source="[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)">Windows System Image Manager Reference Topics</a></p></td>
 <td><p>Describes reference information for Windows SIM. This information includes components and settings and how Windows SIM works.</p></td>
 </tr>
 </tbody>

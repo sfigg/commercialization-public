@@ -21,12 +21,12 @@ This article contains information to help you to troubleshoot Windows Hardware L
 ## <span id="cantbrowse"></span><span id="CANTBROWSE"></span>Cannot browse \\\\&lt;controller-name&gt;\\HLKInstall\\ on Studio or Client computer
 
 
-If you cannot browse to the HLKInstall folder from the Windows HLK Studio or Client, review the setup and configuration information in the [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md) topic.
+If you cannot browse to the HLKInstall folder from the Windows HLK Studio or Client, review the setup and configuration information in the [Step 1: Install Controller and Studio on the test server](../getstarted/step-1-install-controller-and-studio-on-the-test-server.md) topic.
 
 ## <span id="nocp"></span><span id="NOCP"></span>Cannot change or repair Windows HLK by using Control Panel
 
 
-If you try to change or repair the Windows HLK by using Control Panel, you receive an error message that the repair failed. To change or repair your Windows HLK installation, use Control Panel to uninstall **Windows Hardware Certification Kit**, and then reinstall the Windows HLK See [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md).
+If you try to change or repair the Windows HLK by using Control Panel, you receive an error message that the repair failed. To change or repair your Windows HLK installation, use Control Panel to uninstall **Windows Hardware Certification Kit**, and then reinstall the Windows HLK See [Step 1: Install Controller and Studio on the test server](../getstarted/step-1-install-controller-and-studio-on-the-test-server.md).
 
 ## <span id="accessden"></span><span id="ACCESSDEN"></span>Cannot install HLK.AddLoggerEntries: Access is denied
 
@@ -36,7 +36,7 @@ In rare cases, Windows HLK setup might fail just before it completes. If you loo
 ## <span id="tsclient"></span><span id="TSCLIENT"></span>Cannot install the Windows HLK Client
 
 
-If you cannot install the Windows HLK Client, review the installation info in the [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) topic and make sure that you follow these instructions.
+If you cannot install the Windows HLK Client, review the installation info in the [Step 2: Install Client on the test system(s)](../getstarted/step-2--install-client-on-the-test-system-s-.md) topic and make sure that you follow these instructions.
 
 If you still cannot install the Windows HLK Client, locate these Client log files in the **%TEMP%** folder. See [Windows HLK Support](windows-hlk-support.md) for information about how to contact Support, and share the following client log files with Microsoft Support:
 
@@ -63,58 +63,58 @@ If you cannot install or remove the Windows HLK Controller, review the controlle
 
 **To review the Windows HLK Controller log file**
 
-1.  At a command prompt, type **%HomeDrive%**, and then press **Enter**.
+1. At a command prompt, type **%HomeDrive%**, and then press **Enter**.
 
-2.  Type **cd %temp%\\HLK**, and then press **Enter**.
+2. Type **cd %temp%\\HLK**, and then press **Enter**.
 
-3.  Type **dir \*HLKControllerx86\_en\_us.log**, and then press **Enter**.
+3. Type **dir \*HLKControllerx86\_en\_us.log**, and then press **Enter**.
 
-4.  Open the log file in a text editor such as Notepad.
+4. Open the log file in a text editor such as Notepad.
 
-    >[!NOTE]
-    >  
-    If more than one file ends in HLKControllerx86\_en\_us.log, open the newest file. To open the log file in Notepad from the command line, type **Notepad**, the full file name, and then press **Enter**.
+   > [!NOTE]
+   > 
+   > If more than one file ends in HLKControllerx86\_en\_us.log, open the newest file. To open the log file in Notepad from the command line, type **Notepad**, the full file name, and then press **Enter**.
 
-     
+     
 
-5.  Search for **return value 3** to see which action failed. Error information is located a few lines above the string **return value 3**.
+5. Search for **return value 3** to see which action failed. Error information is located a few lines above the string **return value 3**.
 
-    ``` syntax
-    MSI (s) (F4:74) [18:58:28:187]: Executing op: ActionStart(Name=CreateStandaloneEnterprise,,)
-    MSI (s) (F4:74) [18:58:28:187]: Executing op: CustomActionSchedule(Action=CreateStandaloneEnterprise,ActionType=17409,Source=BinaryData,Target=CAQuietExec,CustomActionData="C:\Program Files (x86)\Windows Kits\8.0\Hardware Certification Kit\Controller\WTTStandaloneEnterpriseSetup.exe" "TEST-SERVER" "HLKJobs" "C:\StandaloneEnterprise")
-    MSI (s) (F4:48) [18:58:28:187]: Invoking remote custom action. DLL: C:\Windows\Installer\MSI9E59.tmp, Entrypoint: CAQuietExec
-    CAQuietExec:  Standalone Enterprise setup started by user TEST-SERVER\Administrator
-    CAQuietExec:  Error::
-    ************************************************************ERROR REPORT (Exception levels including inner exceptions. Level 0 denotes outermost exception)
-    CAQuietExec:  
-    CAQuietExec:  ------------START OF ERROR REPORT------------
-    CAQuietExec:  
-    CAQuietExec:  Level            : 0
-    CAQuietExec:  Error Message    : Error while creating new data store  'HLKJobs' .
-    CAQuietExec:  Source           : Void CreateEnterprise(Microsoft.DistributedAutomation.DSLink, Microsoft.DistributedAutomation.ServiceCollection, Boolean)
-    CAQuietExec:  Inner Exception  : System.Runtime.InteropServices.COMException (0x80041432): Cannot create file 'C:\Program Files (x86)\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\DATA\HLKJobs.mdf' because it already exists. Change the file path or the file name, and retry the operation.
-    CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
-    CAQuietExec:     at Interop.SQLDMO.Databases.Add(_Database Object)
-    CAQuietExec:     at Microsoft.DistributedAutomation.SqlDataStore.SqlDataStoreSetup.CreateDeploymentDataStore(ServiceCollection serviceList, DSLink newDSLink)
-    CAQuietExec:  Call Stack       :    at Microsoft.DistributedAutomation.SqlDataStore.SqlDataStoreSetup.CreateEnterprise(DSLink identityDSLink, ServiceCollection serviceList, Boolean standaloneInstall)
-    CAQuietExec:     at Microsoft.DistributedAutomation.EnterpriseSetup.EnterpriseSetupHelper.CreateEnterprise(EnterpriseConfiguration enterpriseConfig, DSLink dsLink, String setupFilePath, Boolean standaloneInstall)
-    CAQuietExec:     at Microsoft.DistributedAutomation.EnterpriseSetup.Tools.CMain.Main(String args)
-    CAQuietExec:  Trace            : 
-    CAQuietExec:  
-    CAQuietExec:  Level            : 1
-    CAQuietExec:  Error Message    : Cannot create file 'C:\Program Files (x86)\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\DATA\HLKJobs.mdf' because it already exists. Change the file path or the file name, and retry the operation.
-    CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
-    CAQuietExec:  Source           : Void Add(Interop.SQLDMO._Database)
-    CAQuietExec:  Inner Exception  : 
-    CAQuietExec:  
-    CAQuietExec:  --------------END OF ERROR REPORT------------************************************************************
-    CAQuietExec:  Error 0x80070001: Command line returned an error.
-    CAQuietExec:  Error 0x80070001: CAQuietExec Failed
-    CustomAction CreateStandaloneEnterprise returned actual error code 1603 (note this may not be 100% accurate if translation happened inside sandbox)
-    MSI (s) (F4:74) [18:58:30:137]: User policy value 'DisableRollback' is 0
-    MSI (s) (F4:74) [18:58:30:137]: Machine policy value 'DisableRollback' is 0
-    Action ended 18:58:30: InstallFinalize. Return value 3
-    ```
+   ``` syntax
+   MSI (s) (F4:74) [18:58:28:187]: Executing op: ActionStart(Name=CreateStandaloneEnterprise,,)
+   MSI (s) (F4:74) [18:58:28:187]: Executing op: CustomActionSchedule(Action=CreateStandaloneEnterprise,ActionType=17409,Source=BinaryData,Target=CAQuietExec,CustomActionData="C:\Program Files (x86)\Windows Kits\8.0\Hardware Certification Kit\Controller\WTTStandaloneEnterpriseSetup.exe" "TEST-SERVER" "HLKJobs" "C:\StandaloneEnterprise")
+   MSI (s) (F4:48) [18:58:28:187]: Invoking remote custom action. DLL: C:\Windows\Installer\MSI9E59.tmp, Entrypoint: CAQuietExec
+   CAQuietExec:  Standalone Enterprise setup started by user TEST-SERVER\Administrator
+   CAQuietExec:  Error::
+   ************************************************************ERROR REPORT (Exception levels including inner exceptions. Level 0 denotes outermost exception)
+   CAQuietExec:  
+   CAQuietExec:  ------------START OF ERROR REPORT------------
+   CAQuietExec:  
+   CAQuietExec:  Level            : 0
+   CAQuietExec:  Error Message    : Error while creating new data store  'HLKJobs' .
+   CAQuietExec:  Source           : Void CreateEnterprise(Microsoft.DistributedAutomation.DSLink, Microsoft.DistributedAutomation.ServiceCollection, Boolean)
+   CAQuietExec:  Inner Exception  : System.Runtime.InteropServices.COMException (0x80041432): Cannot create file 'C:\Program Files (x86)\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\DATA\HLKJobs.mdf' because it already exists. Change the file path or the file name, and retry the operation.
+   CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+   CAQuietExec:     at Interop.SQLDMO.Databases.Add(_Database Object)
+   CAQuietExec:     at Microsoft.DistributedAutomation.SqlDataStore.SqlDataStoreSetup.CreateDeploymentDataStore(ServiceCollection serviceList, DSLink newDSLink)
+   CAQuietExec:  Call Stack       :    at Microsoft.DistributedAutomation.SqlDataStore.SqlDataStoreSetup.CreateEnterprise(DSLink identityDSLink, ServiceCollection serviceList, Boolean standaloneInstall)
+   CAQuietExec:     at Microsoft.DistributedAutomation.EnterpriseSetup.EnterpriseSetupHelper.CreateEnterprise(EnterpriseConfiguration enterpriseConfig, DSLink dsLink, String setupFilePath, Boolean standaloneInstall)
+   CAQuietExec:     at Microsoft.DistributedAutomation.EnterpriseSetup.Tools.CMain.Main(String args)
+   CAQuietExec:  Trace            : 
+   CAQuietExec:  
+   CAQuietExec:  Level            : 1
+   CAQuietExec:  Error Message    : Cannot create file 'C:\Program Files (x86)\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\DATA\HLKJobs.mdf' because it already exists. Change the file path or the file name, and retry the operation.
+   CREATE DATABASE failed. Some file names listed could not be created. Check related errors.
+   CAQuietExec:  Source           : Void Add(Interop.SQLDMO._Database)
+   CAQuietExec:  Inner Exception  : 
+   CAQuietExec:  
+   CAQuietExec:  --------------END OF ERROR REPORT------------************************************************************
+   CAQuietExec:  Error 0x80070001: Command line returned an error.
+   CAQuietExec:  Error 0x80070001: CAQuietExec Failed
+   CustomAction CreateStandaloneEnterprise returned actual error code 1603 (note this may not be 100% accurate if translation happened inside sandbox)
+   MSI (s) (F4:74) [18:58:30:137]: User policy value 'DisableRollback' is 0
+   MSI (s) (F4:74) [18:58:30:137]: Machine policy value 'DisableRollback' is 0
+   Action ended 18:58:30: InstallFinalize. Return value 3
+   ```
 
 If the \*HLKControllerx86\_en\_us.log file includes **Error while creating new data store 'Jobs'**, complete these steps:
 
@@ -125,13 +125,13 @@ CREATE DATABASE failed. Some file names listed could not be created. Check relat
 
 ****
 
-1.  Delete these files from the C:\\Program Files (x86)\\Microsoft SQL Server\\MSSQL10\_50.MSSQLSERVER\\MSSQL\\DATA folder:
+1. Delete these files from the C:\\Program Files (x86)\\Microsoft SQL Server\\MSSQL10\_50.MSSQLSERVER\\MSSQL\\DATA folder:
 
-    -   HLKJobs.mdf
+   -   HLKJobs.mdf
 
-    -   HLKJobs\_Log.ldf
+   -   HLKJobs\_Log.ldf
 
-2.  Reinstall the Windows HLK Controller. For info on how to do this, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md)
+2. Reinstall the Windows HLK Controller. For info on how to do this, see [Step 1: Install Controller and Studio on the test server](../getstarted/step-1-install-controller-and-studio-on-the-test-server.md)
 
 ## <span id="appcantrun"></span><span id="APPCANTRUN"></span>Client installation fails with error "This app can't run on your PC"
 
@@ -183,9 +183,9 @@ To recover, follow these steps:
 
 [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

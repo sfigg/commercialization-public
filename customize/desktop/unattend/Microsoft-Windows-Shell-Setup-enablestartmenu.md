@@ -51,7 +51,7 @@ specialize
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -63,9 +63,9 @@ specialize
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

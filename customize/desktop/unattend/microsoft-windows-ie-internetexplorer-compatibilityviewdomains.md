@@ -38,7 +38,7 @@ In Compatibility View, Internet Explorer displays WWeb pages from the specified
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -71,9 +71,9 @@ The following XML output specifies how to render Web pages from the fabrikam.com
 
 [IntranetCompatibilityMode](microsoft-windows-ie-internetexplorer-intranetcompatibilitymode.md)
 
- 
+ 
 
- 
+ 
 
 
 

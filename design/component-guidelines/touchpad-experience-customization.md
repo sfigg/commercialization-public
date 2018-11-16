@@ -37,7 +37,7 @@ All customizations should be built to produce an additive experience for users t
     | Three fingers | Windows Shell interaction | Windows Shell interaction | N/A            |
     | Four fingers  | Windows Shell interaction | Windows Shell interaction | N/A            |
 
-     
+     
 
 -   Mousing is the most basic and common touchpad interaction and should be protected for users. Avoid one finger gestures that would easily interfere with mousing such as drawing shapes, like characters or circles, with a single finger.
 
@@ -73,9 +73,9 @@ Windows uses the following design principles in designing gestures. These ensure
 
 **Breadth**: Gestures should be useful in as many situations as possible. Gestures that require certain Apps or frameworks in order to function, take up valuable space in the touchpad gesture set.
 
- 
+ 
 
- 
+ 
 
 
 

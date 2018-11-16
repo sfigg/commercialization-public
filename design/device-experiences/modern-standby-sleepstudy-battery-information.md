@@ -22,9 +22,9 @@ Each SleepStudy report concludes with information about the system battery confi
 
 In some cases, the capacity ratio will exceed 100 percent. This is expected and will change over time as the battery chemistry changes.
 
- 
+ 
 
- 
+ 
 
 
 

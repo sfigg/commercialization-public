@@ -41,7 +41,7 @@ You can add device drivers to a Windows image:
 
 For more information, see [Understanding Servicing Strategies](understanding-servicing-strategies.md).
 
-### <span id="offline"></span><span id="OFFLINE"></span>Add drivers before deployment on an offline Windows image by using DISM
+### <span id="offline"></span>Add drivers before deployment on an offline Windows image by using DISM
 
 Offline servicing occurs when you modify a Windows image entirely offline without booting the operating system. You can add, remove, and enumerate drivers on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows and is also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see the [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
 
@@ -56,7 +56,7 @@ You can use DISM commands to add or remove drivers on a mounted or applied Windo
 **Note**  
 You can't use DISM to remove inbox drivers (drivers that are installed on Windows by default). You can use it only to remove third-party or out-of-box drivers.
 
- 
+ 
 
 You can also use DISM commands to apply an unattended answer file to a mounted or applied Windows image.
 
@@ -168,7 +168,7 @@ When you're adding test-signed driver packages to Windows, consider these points
     **Note**  
     If the test certificate is self-signed—for example, by using the Certificate Creation Tool (MakeCert)—the test certificate must be inserted in the Trusted Root Certification Authorities certificate store.
 
-     
+     
 
 -   The test certificate that's used to sign the driver package must be inserted in the Trusted Publishers certificate store.
 
@@ -183,7 +183,7 @@ If an unsigned or invalid boot-critical device driver is installed on an x64-bas
 
 If you don't enable test mode by using BCDedit, and you have a test-signed driver installed, your computer will not boot. If you use DISM to remove the driver, all instances of the reflected driver package might not be removed. So, we recommend that you don't deploy images that have test-signed drivers installed.
 
- 
+ 
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>Additional Resources
 
@@ -213,9 +213,9 @@ These websites provide more information about device-driver requirements:
 
 [Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,6 +19,7 @@ ms.topic: article
 This test evaluates the performance of the Deallocate command for Non-Volatile Memory Express (NVMe) controller drives.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Storage.ControllerDrive.NVMe.BasicFunction</li></ul> |  
@@ -31,7 +32,7 @@ This test evaluates the performance of the Deallocate command for Non-Volatile M
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -56,7 +57,7 @@ The test requires that an NVMe controller drive is connected. The drive must als
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For more troubleshooting information, see [Troubleshooting Device.Storage Testing](troubleshooting-devicestorage-testing.md).
 
@@ -160,11 +161,11 @@ The test does the following:
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -182,24 +183,24 @@ For command-line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>TrimPerf.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\driverstest\storage\wdk\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\driverstest\storage\wdk&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Etwprocessor.dll</p></td>
-<td><p><em>&lt;[taefbinroot]&gt;</em>\</p></td>
+<td><p><em>&lt;[taefbinroot]&gt;</em>&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>Wex.common.dll</p></td>
-<td><p><em>&lt;[taefbinroot]&gt;</em>\</p></td>
+<td><p><em>&lt;[taefbinroot]&gt;</em>&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Wex.communication.dll</p></td>
-<td><p><em>&lt;[taefbinroot]&gt;</em>\</p></td>
+<td><p><em>&lt;[taefbinroot]&gt;</em>&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -211,11 +212,11 @@ For command-line help for this test binary, type **/h**.
 | **Destructive**        | (0,1) 0=Passive, 1=Destructive             |
 | **StorageDriveNumber** | Storage drive number                       |
 
- 
 
- 
 
- 
+
+
+
 
 
 

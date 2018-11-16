@@ -150,7 +150,7 @@ Here's a few ways to apply the image:
 
     **Note**  If the DISM /Apply-Image command fails, make sure you’re using a [supported version of DISM](dism-supported-platforms.md) for that Windows image. For example, to apply a Windows 10 image, you’ll need the Windows 10 version of DISM.
 
-     
+     
 
 **Capture and apply individual partitions (BIOS devices only)**
 
@@ -179,9 +179,9 @@ Here's a few ways to apply the image:
 
 [REAgentC Command-Line Options](reagentc-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

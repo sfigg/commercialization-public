@@ -26,7 +26,7 @@ In Microsoft test labs, platforms are recovered from crash and hang scenarios by
 
 **Note**  Systems that are designed for users must not power on automatically when power is applied unless they are required to detect the power capability of the Universal Serial Bus (USB) charger.
 
- 
+ 
 
 ## UEFI DISABLEBATTERY variable definition
 
@@ -62,11 +62,11 @@ The DISABLEBATTERY variable is created under VendorGuid {0x77fa9abd, 0x0359, 0x4
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

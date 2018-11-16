@@ -22,9 +22,9 @@ The **ProductType** object represents a type of product (for example, a printer 
 
 The product taxonomy is a means of categorizing product types into well-known groups and is provided by the Windows Certification Program team.
 
- 
+ 
 
- 
+ 
 
 
 

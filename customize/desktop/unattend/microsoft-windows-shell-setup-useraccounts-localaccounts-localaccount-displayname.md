@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Display_name</em></p></td>
-<td><p>Specifies the name to display for a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md). <em>Display_name</em> is a string with a maximum length of 256 characters.</p></td>
+<td><p>Specifies the name to display for a <a href="microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md" data-raw-source="[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)">LocalAccount</a>. <em>Display_name</em> is a string with a maximum length of 256 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -94,9 +94,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
- 
+ 
 
- 
+ 
 
 
 

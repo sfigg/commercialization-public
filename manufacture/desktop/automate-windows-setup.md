@@ -31,7 +31,7 @@ You can automate Windows installation by using an answer file:
 
 **Select an answer file**
 
--   You can select a specific answer file during installation by booting to the Windows Preinstallation Environment, and [using the **setup.exe** command with the **/unattend:***filename* option](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options#28).
+- You can select a specific answer file during installation by booting to the Windows Preinstallation Environment, and [using the **setup.exe** command with the **/unattend:**<em>filename</em> option](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options#28).
 
 ## <span id="List_of_settings"></span><span id="list_of_settings"></span><span id="LIST_OF_SETTINGS"></span>List of settings
 
@@ -62,22 +62,22 @@ To automate Windows Setup, add settings for each of the following Windows Setup 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-International-Core-WinPE | [UILanguage](http://go.microsoft.com/fwlink/?LinkId=224328)</p></td>
+<td align="left"><p>Microsoft-Windows-International-Core-WinPE | <a href="http://go.microsoft.com/fwlink/?LinkId=224328" data-raw-source="[UILanguage](http://go.microsoft.com/fwlink/?LinkId=224328)">UILanguage</a></p></td>
 <td align="left"><p>Specifies the default language to use on the installed Windows operating system.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft-Windows-International-Core-WinPE | SetupUILanguage | [UILanguage](http://go.microsoft.com/fwlink/?LinkId=224329)</p></td>
+<td align="left"><p>Microsoft-Windows-International-Core-WinPE | SetupUILanguage | <a href="http://go.microsoft.com/fwlink/?LinkId=224329" data-raw-source="[UILanguage](http://go.microsoft.com/fwlink/?LinkId=224329)">UILanguage</a></p></td>
 <td align="left"><p>Specifies the default language to use during Windows Setup. During installation, Windows Setup displays installation progress in the selected language.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 When you use an Autounattend.xml file with Windows Setup and rely on an implicit answer-file search, the language selection page in Setup is not displayed, even if you explicitly do not configure language settings in your answer file. For more information about implicit answer files, see [Windows Setup Automation Overview](windows-setup-automation-overview.md).
 
- 
+ 
 
 ### <span id="Type_your_Product_Key_for_Activation_Page"></span><span id="type_your_product_key_for_activation_page"></span><span id="TYPE_YOUR_PRODUCT_KEY_FOR_ACTIVATION_PAGE"></span>Type your Product Key for Activation Page
 
@@ -96,18 +96,18 @@ The product key must match the Windows edition you intend to install. For more i
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | UserData | ProductKey | [Key](http://go.microsoft.com/fwlink/?LinkId=224330)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | UserData | ProductKey | <a href="http://go.microsoft.com/fwlink/?LinkId=224330" data-raw-source="[Key](http://go.microsoft.com/fwlink/?LinkId=224330)">Key</a></p></td>
 <td align="left"><p>Specifies the product key used to install Windows.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | InstallFrom | MetaData | ([Key](http://go.microsoft.com/fwlink/?LinkId=252771) and [Value](http://go.microsoft.com/fwlink/?LinkId=252772)).</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | InstallFrom | MetaData | (<a href="http://go.microsoft.com/fwlink/?LinkId=252771" data-raw-source="[Key](http://go.microsoft.com/fwlink/?LinkId=252771)">Key</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=252772" data-raw-source="[Value](http://go.microsoft.com/fwlink/?LinkId=252772)">Value</a>).</p></td>
 <td align="left"><p>Use Key and Value together to select a specific Windows image to install. Required for some Windows Server® 2012 editions.</p>
-<p>You can get the image information by using the DISM /Get-ImageInfo command. For more information, see [Image Management Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=208186).</p></td>
+<p>You can get the image information by using the DISM /Get-ImageInfo command. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkId=208186" data-raw-source="[Image Management Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=208186)">Image Management Command-Line Options</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Accept_Microsoft_Software_License_Terms_Page"></span><span id="accept_microsoft_software_license_terms_page"></span><span id="ACCEPT_MICROSOFT_SOFTWARE_LICENSE_TERMS_PAGE"></span>Accept Microsoft Software License Terms Page
 
@@ -124,13 +124,13 @@ The product key must match the Windows edition you intend to install. For more i
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | UserData | [AcceptEula](http://go.microsoft.com/fwlink/?LinkId=224331)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | UserData | <a href="http://go.microsoft.com/fwlink/?LinkId=224331" data-raw-source="[AcceptEula](http://go.microsoft.com/fwlink/?LinkId=224331)">AcceptEula</a></p></td>
 <td align="left"><p>Specifies whether to accept Microsoft License Software Terms during Windows Setup.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Select_Upgrade_or_Custom_Installation_Page"></span><span id="select_upgrade_or_custom_installation_page"></span><span id="SELECT_UPGRADE_OR_CUSTOM_INSTALLATION_PAGE"></span>Select Upgrade or Custom Installation Page
 
@@ -149,13 +149,13 @@ By default, when an answer file is used, this page does not appear and Windows i
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | UpgradeData | [Upgrade](http://go.microsoft.com/fwlink/?LinkId=224332)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | UpgradeData | <a href="http://go.microsoft.com/fwlink/?LinkId=224332" data-raw-source="[Upgrade](http://go.microsoft.com/fwlink/?LinkId=224332)">Upgrade</a></p></td>
 <td align="left"><p>Specifies that the present installation is an upgrade from a previous version of Windows.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Specify_Where_to_Install_Windows_Page"></span><span id="specify_where_to_install_windows_page"></span><span id="SPECIFY_WHERE_TO_INSTALL_WINDOWS_PAGE"></span>Specify Where to Install Windows Page
 
@@ -174,17 +174,17 @@ You can either specify the exact disk ID and partition ID, or you can install Wi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | InstallTo | [DiskID](http://go.microsoft.com/fwlink/?LinkId=224334)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | InstallTo | <a href="http://go.microsoft.com/fwlink/?LinkId=224334" data-raw-source="[DiskID](http://go.microsoft.com/fwlink/?LinkId=224334)">DiskID</a></p></td>
 <td align="left"><p>Specifies the disk where Windows will be installed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | InstallTo | [PartitionID](http://go.microsoft.com/fwlink/?LinkId=224335)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | InstallTo | <a href="http://go.microsoft.com/fwlink/?LinkId=224335" data-raw-source="[PartitionID](http://go.microsoft.com/fwlink/?LinkId=224335)">PartitionID</a></p></td>
 <td align="left"><p>Specifies the partition where Windows will be installed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 -or-
 
@@ -201,13 +201,13 @@ You can either specify the exact disk ID and partition ID, or you can install Wi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | [InstallToAvailablePartition](http://go.microsoft.com/fwlink/?LinkId=224335)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | ImageInstall | OSImage | <a href="http://go.microsoft.com/fwlink/?LinkId=224335" data-raw-source="[InstallToAvailablePartition](http://go.microsoft.com/fwlink/?LinkId=224335)">InstallToAvailablePartition</a></p></td>
 <td align="left"><p>Specifies to install Windows on the first available partition.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Settings_to_Use_with_Unattended_Windows_Deployment_Services"></span><span id="settings_to_use_with_unattended_windows_deployment_services"></span><span id="SETTINGS_TO_USE_WITH_UNATTENDED_WINDOWS_DEPLOYMENT_SERVICES"></span>Settings to Use with Unattended Windows Deployment Services
 
@@ -229,13 +229,13 @@ When deploying Windows using Windows Deployment Services, add each of the settin
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-International-Core-WinPE | SetupUILanguage | [UILanguage](http://go.microsoft.com/fwlink/?LinkId=224337)</p></td>
+<td align="left"><p>Microsoft-Windows-International-Core-WinPE | SetupUILanguage | <a href="http://go.microsoft.com/fwlink/?LinkId=224337" data-raw-source="[UILanguage](http://go.microsoft.com/fwlink/?LinkId=224337)">UILanguage</a></p></td>
 <td align="left"><p>Specifies the default language to use during Windows Setup.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Provide_Windows_Deployment_Services_Credentials_Page"></span><span id="provide_windows_deployment_services_credentials_page"></span><span id="PROVIDE_WINDOWS_DEPLOYMENT_SERVICES_CREDENTIALS_PAGE"></span>Provide Windows Deployment Services Credentials Page
 
@@ -252,13 +252,13 @@ When deploying Windows using Windows Deployment Services, add each of the settin
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | [Login](http://go.microsoft.com/fwlink/?LinkId=224338)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | <a href="http://go.microsoft.com/fwlink/?LinkId=224338" data-raw-source="[Login](http://go.microsoft.com/fwlink/?LinkId=224338)">Login</a></p></td>
 <td align="left"><p>Specifies the credentials used for Windows Deployment Services logon, and specifies in what circumstances the UI is displayed for logon.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Select_an_Image_to_Install_Page"></span><span id="select_an_image_to_install_page"></span><span id="SELECT_AN_IMAGE_TO_INSTALL_PAGE"></span>Select an Image to Install Page
 
@@ -275,13 +275,13 @@ When deploying Windows using Windows Deployment Services, add each of the settin
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | [ImageSelection](http://go.microsoft.com/fwlink/?LinkId=224339)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | <a href="http://go.microsoft.com/fwlink/?LinkId=224339" data-raw-source="[ImageSelection](http://go.microsoft.com/fwlink/?LinkId=224339)">ImageSelection</a></p></td>
 <td align="left"><p>Specifies the image to be installed and the location where it is installed, as well as whether the UI is displayed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Specify_Where_to_Install_Windows_Page"></span><span id="specify_where_to_install_windows_page"></span><span id="SPECIFY_WHERE_TO_INSTALL_WINDOWS_PAGE"></span>Specify Where to Install Windows Page
 
@@ -300,17 +300,17 @@ These settings assume that you are installing to a partitioned disk drive.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | ImageSelection | InstallTo | [DiskID](http://go.microsoft.com/fwlink/?LinkId=224340)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | ImageSelection | InstallTo | <a href="http://go.microsoft.com/fwlink/?LinkId=224340" data-raw-source="[DiskID](http://go.microsoft.com/fwlink/?LinkId=224340)">DiskID</a></p></td>
 <td align="left"><p>Specifies the disk ID of the disk to which the image is to be installed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | ImageSelection | InstallTo | [PartitionID](http://go.microsoft.com/fwlink/?LinkId=224342)</p></td>
+<td align="left"><p>Microsoft-Windows-Setup | WindowsDeploymentServices | ImageSelection | InstallTo | <a href="http://go.microsoft.com/fwlink/?LinkId=224342" data-raw-source="[PartitionID](http://go.microsoft.com/fwlink/?LinkId=224342)">PartitionID</a></p></td>
 <td align="left"><p>Specifies the partition ID of the partition to which the image is to be installed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -319,9 +319,9 @@ These settings assume that you are installing to a partitioned disk drive.
 
 [Windows Setup Technical Reference](windows-setup-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

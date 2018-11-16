@@ -49,9 +49,9 @@ This class represents a feature that a device supports. For example, USB support
 
 **System.Object**
 
-    **Microsoft.Windows.Kits.Hardware.ObjectModel.Feature**
+    **Microsoft.Windows.Kits.Hardware.ObjectModel.Feature**
 
-        
+        
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -63,9 +63,9 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 
 Features are related to Product Types and Requirements. Features can be mapped to different Product Types. Requirements can be mapped to only one Feature.
 
- 
+ 
 
- 
+ 
 
 
 

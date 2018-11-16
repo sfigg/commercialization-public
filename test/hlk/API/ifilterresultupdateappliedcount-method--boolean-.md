@@ -40,7 +40,7 @@ This method updates the applied count for the filter result.
 
 `Sub UpdateAppliedCount ( _`
 
-          `isAllZeros As Boolean _`
+          `isAllZeros As Boolean _`
 
 `)`
 
@@ -48,7 +48,7 @@ This method updates the applied count for the filter result.
 
 `void UpdateAppliedCount (`
 
-          `bool isAllZeros`
+          `bool isAllZeros`
 
 `)`
 
@@ -57,16 +57,16 @@ This method updates the applied count for the filter result.
 
 *isAllZeros*
 
-     A flag that determines whether the filter result should be updated with isAllZeros.
+     A flag that determines whether the filter result should be updated with isAllZeros.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

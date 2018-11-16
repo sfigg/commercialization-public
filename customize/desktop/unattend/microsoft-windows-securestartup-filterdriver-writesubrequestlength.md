@@ -25,7 +25,7 @@ These settings are intended for OEM manufacturing only. For specific guidance on
 **Note**  
 These settings only apply to Windows 8.
 
- 
+ 
 
 ## Values
 
@@ -83,9 +83,9 @@ The following example specifies recommended values for Bitlocker optimizations o
 
 [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md)
 
- 
+ 
 
- 
+ 
 
 
 

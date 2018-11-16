@@ -29,37 +29,37 @@ This section covers the main features of Windows Performance Recorder (WPR).
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Recording Profiles](recording-profiles.md)</p></td>
+<td><p><a href="recording-profiles.md" data-raw-source="[Recording Profiles](recording-profiles.md)">Recording Profiles</a></p></td>
 <td><p>Describes built-in and custom recording profiles and gives instructions on how to author a custom profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Performance Scenarios](performance-scenarios.md)</p></td>
+<td><p><a href="performance-scenarios.md" data-raw-source="[Performance Scenarios](performance-scenarios.md)">Performance Scenarios</a></p></td>
 <td><p>Describes performance scenarios for WPR.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Detail Level](detail-level.md)</p></td>
+<td><p><a href="detail-level.md" data-raw-source="[Detail Level](detail-level.md)">Detail Level</a></p></td>
 <td><p>Describes the detail level parameter.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Logging Mode](logging-mode.md)</p></td>
+<td><p><a href="logging-mode.md" data-raw-source="[Logging Mode](logging-mode.md)">Logging Mode</a></p></td>
 <td><p>Describes the logging mode parameter.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Sessions](sessions.md)</p></td>
+<td><p><a href="sessions.md" data-raw-source="[Sessions](sessions.md)">Sessions</a></p></td>
 <td><p>Describes WPR sessions.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Providers](providers.md)</p></td>
+<td><p><a href="providers.md" data-raw-source="[Providers](providers.md)">Providers</a></p></td>
 <td><p>Describes WPR providers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Xperf Backward Compatibility Support](xperf-backward-compatibility-support.md)</p></td>
+<td><p><a href="xperf-backward-compatibility-support.md" data-raw-source="[Xperf Backward Compatibility Support](xperf-backward-compatibility-support.md)">Xperf Backward Compatibility Support</a></p></td>
 <td><p>Describes support for legacy Xperf functions.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Reference
 
@@ -71,9 +71,9 @@ This section covers the main features of Windows Performance Recorder (WPR).
 
 [Windows Performance Recorder](windows-performance-recorder.md)
 
- 
+ 
 
- 
+ 
 
 
 

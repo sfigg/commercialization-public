@@ -25,7 +25,7 @@ By default, Windows activates drives that are capable of hardware-based encrypti
 **Note**  
 Use the [TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled.md) unattend setting to enable the Group Policy setting, **Do not automatically encrypt files moved to encrypted folders**, after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning.
 
- 
+ 
 
 ## Values
 
@@ -47,7 +47,7 @@ Use the [TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-adm-tc
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -80,9 +80,9 @@ The following XML output for the `DisableEncryptedDiskProvisioning` setting show
 
 [TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled.md)
 
- 
+ 
 
- 
+ 
 
 
 

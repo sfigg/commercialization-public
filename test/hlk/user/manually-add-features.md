@@ -26,9 +26,9 @@ Sometimes, features that are required for a product type aren't automatically de
 
 4.  Select the check box for any missing feature that corresponds to your product type.
 
- 
+ 
 
- 
+ 
 
 
 

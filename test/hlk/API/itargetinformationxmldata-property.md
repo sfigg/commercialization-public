@@ -40,7 +40,7 @@ This property gets the target information in the raw XML format.
 
 `ReadOnly Property XmlData As String`
 
-          
+          
 
 **C#**
 
@@ -61,9 +61,9 @@ The XML data is collected using sysparse and is collected on the client machine.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ Describes the new OIDs that must be supported by the Wi-Fi miniport driver.
 <span id="Supporting_new_callbacks_for_manufacturing_mode"></span><span id="supporting_new_callbacks_for_manufacturing_mode"></span><span id="SUPPORTING_NEW_CALLBACKS_FOR_MANUFACTURING_MODE"></span>[Supporting new callbacks for manufacturing mode](supporting-new-callbacks-for-manufacturing-mode.md)  
 Describes the new OID callback that must be supported by the Wi-Fi miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

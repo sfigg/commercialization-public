@@ -38,7 +38,7 @@ This class represents a collection of filter results for the test results in a p
 
 `Public Class ProjectFilterResultsDictionaryPublic Class ProjectFilterResultsDictionary`
 
-          `Inherits Dictionary(Of TestResult, ReadOnlyCollection(Of IFilterResult))`
+          `Inherits Dictionary(Of TestResult, ReadOnlyCollection(Of IFilterResult))`
 
 **C#**
 
@@ -51,18 +51,18 @@ This class represents a collection of filter results for the test results in a p
 
 **System.Object**
 
-     **System.Collections.Generic.Dictionary**
+     **System.Collections.Generic.Dictionary**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectFilterResultsDictionary**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectFilterResultsDictionary**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

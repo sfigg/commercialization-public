@@ -18,24 +18,24 @@ ms.topic: article
 
 To troubleshoot issues that occur with System.Fundamental tests, follow these steps:
 
-1.  Review the following Windows Hardware Lab Kit (Windows HLK) topics:
+1. Review the following Windows Hardware Lab Kit (Windows HLK) topics:
 
-    -   [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)
+   - [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md)
 
-    -   [WDTF System Fundamentals Testing Prerequisites](wdtf-system-fundamentals-testing-prerequisites.md)
+   - [WDTF System Fundamentals Testing Prerequisites](wdtf-system-fundamentals-testing-prerequisites.md)
 
-2.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+2. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

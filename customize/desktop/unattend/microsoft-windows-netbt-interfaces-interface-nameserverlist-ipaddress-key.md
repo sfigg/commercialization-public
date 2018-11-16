@@ -25,7 +25,7 @@ ms.topic: article
 
 -   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP address. For example, you can specify three different IP addresses by using the Key values of **IpAddress1**, **IpAddress2**, and **IpAddress3**.
 
- 
+ 
 
 ## Values
 
@@ -43,7 +43,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 
 [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

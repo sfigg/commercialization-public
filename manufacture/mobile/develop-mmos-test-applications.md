@@ -21,43 +21,43 @@ Developing user-mode tests in MMOS is very similar to developing user-mode appli
 
 Use the following steps to create, deploy, and test a MMOS test application.
 
-1.  Create an app.
+1. Create an app.
 
-2.  Add code to test the desired component and display or send those results as desired. For example, this sample code can be used to display a console message in MMOS.
+2. Add code to test the desired component and display or send those results as desired. For example, this sample code can be used to display a console message in MMOS.
 
-    ```
-#include <stdio.h>
-#include <Windows.h>
+   ```
+   #include <stdio.h>
+   #include <Windows.h>
 
-    int main()
-    {
-        int i = 0;
-        for(;;)
-        {    
-            wprintf(L"Test");
-            Sleep(500);
-            if (i == 12)
-            {
-                wprintf(L"Done");
-                break;
-            }
-            i++;
-        }
-        return 0;
-    }
-    ```
+   int main()
+   {
+       int i = 0;
+       for(;;)
+       {    
+           wprintf(L"Test");
+           Sleep(500);
+           if (i == 12)
+           {
+               wprintf(L"Done");
+               break;
+           }
+           i++;
+       }
+       return 0;
+   }
+   ```
 
-3.  Build the test application in Visual Studio.
+3. Build the test application in Visual Studio.
 
-4.  Locate the binaries generated when you built the app. Typically they are in a subdirectory of the projects folder, such as *\\MyProject\\arm\\debug\\*.
+4. Locate the binaries generated when you built the app. Typically they are in a subdirectory of the projects folder, such as *\\MyProject\\arm\\debug\\*.
 
-5.  Sign the executable by using the sign.cmd script in the “%WPDKCONTENTROOT%\\Tools\\bin\\i386” folder, as shown in the example below.
+5. Sign the executable by using the sign.cmd script in the “%WPDKCONTENTROOT%\\Tools\\bin\\i386” folder, as shown in the example below.
 
-    ```
-    sign.cmd ApplicationForDrivers.exe
-    ```
+   ```
+   sign.cmd ApplicationForDrivers.exe
+   ```
 
-6.  To test your app, copy it to the device in the C:\\Data\\test directory by using FTP and run it via Telnet. For more info, see [Deploy and test a user-mode test application in MMOS](deploy-and-test-a-user-mode-test-application-in-mmos.md).
+6. To test your app, copy it to the device in the C:\\Data\\test directory by using FTP and run it via Telnet. For more info, see [Deploy and test a user-mode test application in MMOS](deploy-and-test-a-user-mode-test-application-in-mmos.md).
 
 ## <span id="Libraries_in_MMOS"></span><span id="libraries_in_mmos"></span><span id="LIBRARIES_IN_MMOS"></span>Libraries in MMOS
 
@@ -93,9 +93,9 @@ If the test binaries are not signed and code integrity checking is active as it 
 * Please contact the binary owner for getting the binary correctly signed.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

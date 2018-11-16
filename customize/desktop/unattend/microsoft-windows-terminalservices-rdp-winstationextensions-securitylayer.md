@@ -44,7 +44,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,9 +78,9 @@ The following XML output shows how to set the Microsoft-Windows-TerminalServices
 
 [Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

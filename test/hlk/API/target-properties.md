@@ -39,7 +39,7 @@ ms.topic: article
 </tr>
 <tr class="even">
 <td><p><strong>IsTargetReady</strong></p></td>
-<td><p>This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the "ready" state).</p></td>
+<td><p>This property represents the value indicating whether the test target is currently ready to run tests (specifically, the test computer is in the &quot;ready&quot; state).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Key</strong></p></td>
@@ -68,7 +68,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -87,16 +87,16 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p>LockObject</p></td>
-<td><p>(Inherited from [NotificationBase Class](notificationbase-class.md))</p></td>
+<td><p>(Inherited from <a href="notificationbase-class.md" data-raw-source="[NotificationBase Class](notificationbase-class.md)">NotificationBase Class</a>)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

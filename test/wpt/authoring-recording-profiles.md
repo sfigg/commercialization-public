@@ -60,29 +60,29 @@ Once you have selected the schema, you can use context-sensitive IntelliSense to
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[1. Collector Definitions](1-collector-definitions.md)</p></td>
+<td><p><a href="1-collector-definitions.md" data-raw-source="[1. Collector Definitions](1-collector-definitions.md)">1. Collector Definitions</a></p></td>
 <td><p>How to define collectors for a profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[2. System and Event Provider Definitions](2-system-and-event-provider-definitions.md)</p></td>
+<td><p><a href="2-system-and-event-provider-definitions.md" data-raw-source="[2. System and Event Provider Definitions](2-system-and-event-provider-definitions.md)">2. System and Event Provider Definitions</a></p></td>
 <td><p>How to define providers for a profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[3. Profile Definitions](3-profile-definitions.md)</p></td>
+<td><p><a href="3-profile-definitions.md" data-raw-source="[3. Profile Definitions](3-profile-definitions.md)">3. Profile Definitions</a></p></td>
 <td><p>How to define a profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Strict Providers](strict-providers.md)</p></td>
+<td><p><a href="strict-providers.md" data-raw-source="[Strict Providers](strict-providers.md)">Strict Providers</a></p></td>
 <td><p>How to use the <strong>Strict</strong> attribute.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Inheritance](inheritance.md)</p></td>
+<td><p><a href="inheritance.md" data-raw-source="[Inheritance](inheritance.md)">Inheritance</a></p></td>
 <td><p>Describes inheritance in authoring recording profiles.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -93,9 +93,9 @@ Once you have selected the schema, you can use context-sensitive IntelliSense to
 
 [Add or Remove a Custom Recording Profile](add-or-remove-a-custom-recording-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

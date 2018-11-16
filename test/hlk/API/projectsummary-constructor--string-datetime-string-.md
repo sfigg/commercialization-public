@@ -29,11 +29,11 @@ This constructor initializes a new instance of the **ProjectSummary** class.
 
 `Public Sub New ( _`
 
-          `ByVal name As String _`
+          `ByVal name As String _`
 
-          `ByVal modified As DateTime _`
+          `ByVal modified As DateTime _`
 
-          `ByVal id As String _`
+          `ByVal id As String _`
 
 `)`
 
@@ -41,11 +41,11 @@ This constructor initializes a new instance of the **ProjectSummary** class.
 
 `public ProjectSummary (`
 
-          `string name, `
+          `string name, `
 
-          `DateTime modified,`
+          `DateTime modified,`
 
-          `string id`
+          `string id`
 
 `)`
 
@@ -54,19 +54,19 @@ This constructor initializes a new instance of the **ProjectSummary** class.
 
 *name*
 
-     The name of the project.
+     The name of the project.
 
 *modified*
 
-     The date of the last modification to the project.
+     The date of the last modification to the project.
 
 *id*
 
-     The unique identifier for this project.
+     The unique identifier for this project.
 
- 
+ 
 
- 
+ 
 
 
 

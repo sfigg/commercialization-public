@@ -30,9 +30,9 @@ Validation concludes with mobile broadband (cellular) testing. Remember to do re
 
 Finally, we recommend that system designers also incorporate a self-host program into their validation program for a modern standby PC. A self-host program enables local engineering and engineering-management teams to use reference designs or early retail designs for daily work and home use. The goal of the self-host program for modern standby is to find functional and power consumption issues that are otherwise not identified by planned test execution.
 
- 
+ 
 
- 
+ 
 
 
 

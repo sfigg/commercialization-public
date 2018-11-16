@@ -61,7 +61,7 @@ The following table describes possible return values.
 </tr>
 <tr class="even">
 <td><p>E_INVALIDARG</p></td>
-<td><p>One or more arguments are invalid. Use [IErrorInfo](http://go.microsoft.com/fwlink/p/?linkid=217161) to obtain detailed error information.</p></td>
+<td><p>One or more arguments are invalid. Use <a href="http://go.microsoft.com/fwlink/p/?linkid=217161" data-raw-source="[IErrorInfo](http://go.microsoft.com/fwlink/p/?linkid=217161)">IErrorInfo</a> to obtain detailed error information.</p></td>
 </tr>
 <tr class="odd">
 <td><p>E_WPRC_FAILED_TO_ADD_PROFILE</p></td>
@@ -70,16 +70,16 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IProfileCollection](iprofilecollection.md)
 
- 
+ 
 
- 
+ 
 
 
 

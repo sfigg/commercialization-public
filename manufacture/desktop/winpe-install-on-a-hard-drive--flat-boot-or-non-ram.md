@@ -21,7 +21,7 @@ These instructions show how to set up a basic Windows PE installation that runs
 **Note**  
 When Windows PE is running from the drive, you must turn off the PC before disconnecting the drive to avoid losing your work.
 
- 
+ 
 ## <span id="Install_the_Windows_ADK"></span> Install the Windows ADK
 
 -   Get the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature. Note that starting with Windows 10, version 1809, WinPE is a separate add-on that you'll have to [download and install](https://go.microsoft.com/fwlink/?linkid=2022233) after you install the ADK.
@@ -79,7 +79,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     assign letter=I
     list vol
     exit
-	```
+    ```
 
     where *&lt;disk number&gt;* is the listed number of the external USB hard drive.
 
@@ -98,7 +98,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     **Note**  
     Ignore any warning messages that say "Warning: Resume application not found."
 
-     
+     
 
 ## <span id="Boot_to_Windows_PE"></span> Boot to Windows PE
 
@@ -141,9 +141,9 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

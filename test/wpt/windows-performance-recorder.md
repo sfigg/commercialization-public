@@ -36,33 +36,33 @@ For a list of the newest features in WPR, see the WPR section of [What's New in 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Introduction to WPR](introduction-to-wpr.md)</p></td>
+<td><p><a href="introduction-to-wpr.md" data-raw-source="[Introduction to WPR](introduction-to-wpr.md)">Introduction to WPR</a></p></td>
 <td><p>Gives a brief introduction to WPR.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPR Quick Start](wpr-quick-start.md)</p></td>
+<td><p><a href="wpr-quick-start.md" data-raw-source="[WPR Quick Start](wpr-quick-start.md)">WPR Quick Start</a></p></td>
 <td><p>Introduces the basic features that you will use to create WPR recordings.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WPR Features](http://go.microsoft.com/fwlink/p/?linkid=223236)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223236" data-raw-source="[WPR Features](http://go.microsoft.com/fwlink/p/?linkid=223236)">WPR Features</a></p></td>
 <td><p>Describes WPR features in detail.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPR How-to-Topics](http://go.microsoft.com/fwlink/p/?linkid=223237)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223237" data-raw-source="[WPR How-to-Topics](http://go.microsoft.com/fwlink/p/?linkid=223237)">WPR How-to-Topics</a></p></td>
 <td><p>Gives detailed procedures about how to use WPR.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WPR Scenarios](http://go.microsoft.com/fwlink/p/?linkid=223244)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223244" data-raw-source="[WPR Scenarios](http://go.microsoft.com/fwlink/p/?linkid=223244)">WPR Scenarios</a></p></td>
 <td><p>Provides WPR scenarios.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPR Reference](http://go.microsoft.com/fwlink/p/?linkid=223245)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=223245" data-raw-source="[WPR Reference](http://go.microsoft.com/fwlink/p/?linkid=223245)">WPR Reference</a></p></td>
 <td><p>Provides complete reference material about how to use command-line options, create XML profiles, and use Xperf.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -73,9 +73,9 @@ For a list of the newest features in WPR, see the WPR section of [What's New in 
 
 [Windows Performance Analyzer](windows-performance-analyzer.md)
 
- 
+ 
 
- 
+ 
 
 
 

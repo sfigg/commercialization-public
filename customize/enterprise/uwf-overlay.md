@@ -58,15 +58,15 @@ The following tables list any methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[UWF_Overlay.GetOverlayFiles](uwf-overlaygetoverlayfiles.md)</p></td>
+<td><p><a href="uwf-overlaygetoverlayfiles.md" data-raw-source="[UWF_Overlay.GetOverlayFiles](uwf-overlaygetoverlayfiles.md)">UWF_Overlay.GetOverlayFiles</a></p></td>
 <td><p>Returns a list of files of a volume that were cached in the UWF overlay.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Overlay.SetWarningThreshold](uwf-overlaysetwarningthreshold.md)</p></td>
+<td><p><a href="uwf-overlaysetwarningthreshold.md" data-raw-source="[UWF_Overlay.SetWarningThreshold](uwf-overlaysetwarningthreshold.md)">UWF_Overlay.SetWarningThreshold</a></p></td>
 <td><p>Sets the warning threshold for monitoring the size of the UWF overlay.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Overlay.SetCriticalThreshold](uwf-overlaysetcriticalthreshold.md)</p></td>
+<td><p><a href="uwf-overlaysetcriticalthreshold.md" data-raw-source="[UWF_Overlay.SetCriticalThreshold](uwf-overlaysetcriticalthreshold.md)">UWF_Overlay.SetCriticalThreshold</a></p></td>
 <td><p>Sets the critical warning threshold for monitoring the size of the UWF overlay.</p></td>
 </tr>
 </tbody>

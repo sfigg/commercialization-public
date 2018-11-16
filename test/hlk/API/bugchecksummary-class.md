@@ -34,7 +34,7 @@ This class represents a bugcheck summary event that occurred during a test run.
 
 **System.Object**
 
-          **Microsoft.Windows.Kits.Hardware.DiagnosticSummary.BugcheckSummary**
+          **Microsoft.Windows.Kits.Hardware.DiagnosticSummary.BugcheckSummary**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -48,9 +48,9 @@ Any public static members of this type are thread safe. Any instance members are
 
 [BugcheckSummary Methods](bugchecksummary-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -74,7 +74,7 @@ You can automate Windows installation by using an answer file:
 
 **Select an answer file**
 
--   You can select a specific answer file during installation by booting to the Windows Preinstallation Environment, and using the **setup.exe** command with the **/unattend:***filename* option. For more information, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
+- You can select a specific answer file during installation by booting to the Windows Preinstallation Environment, and using the **setup.exe** command with the **/unattend:**<em>filename</em> option. For more information, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
 
 For sample answer files and a list of settings used to automate installation, see [Automate Windows Setup](automate-windows-setup.md).
 
@@ -109,7 +109,7 @@ Because reboots are required during Setup, a copy of the answer file is cached t
     **Note**  
     The answer file in the image may contain settings that have not yet been processed. If you want these settings to get processed, edit the existing file rather than replacing it.
 
-     
+     
 
 5.  Unmount the image.
 
@@ -153,23 +153,21 @@ The following table shows the implicit answer file search order.
 <td align="left"><p>%WINDIR%\Panther\Unattend</p></td>
 <td align="left"><p>The name of the answer file must be either Unattend.xml or Autounattend.xml.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Windows Setup searches this directory only on downlevel installations. If Windows Setup starts from Windows PE, the %WINDIR%\Panther\Unattend directory is not searched.</p>
+<strong>Note</strong><br/><p>Windows Setup searches this directory only on downlevel installations. If Windows Setup starts from Windows PE, the %WINDIR%\Panther\Unattend directory is not searched.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
 <td align="left"><p>%WINDIR%\Panther</p></td>
-<td align="left"><p>Windows Setup caches answer files to this location for use in subsequent stages of installation. For example, when a computer reboots, Setup can continue to apply the settings in an answer file. If you explicitly specify an answer file by using Windows Setup or Sysprep, the answer file cached to this directory is overwritten with the explicitly specified answer file.</p>
+<td align="left"><p>Windows Setup caches answer files to this location for use in subsequent stages of installation. For example, when a computer reboots, Setup can continue to apply the settings in an answer file. If you explicitly specify an answer file by using Windows Setup or Sysprep, the answer file cached to this directory is overwritten with the explicitly specified answer file.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>Do not use, modify, or overwrite the answer file in this directory. The answer file in this directory is annotated by Windows Setup during installation. This answer file cannot be reused in Windows SIM or any other Windows installations.</p>
+<strong>Important</strong><br/><p>Do not use, modify, or overwrite the answer file in this directory. The answer file in this directory is annotated by Windows Setup during installation. This answer file cannot be reused in Windows SIM or any other Windows installations.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -186,7 +184,7 @@ The following table shows the implicit answer file search order.
 </tr>
 <tr class="even">
 <td align="left"><p>6</p></td>
-<td align="left"><p>[windowsPE](windowspe.md) and [offlineServicing](offlineservicing.md) configuration passes:</p>
+<td align="left"><p><a href="windowspe.md" data-raw-source="[windowsPE](windowspe.md)">windowsPE</a> and <a href="offlineservicing.md" data-raw-source="[offlineServicing](offlineservicing.md)">offlineServicing</a> configuration passes:</p>
 <ul>
 <li><p>\Sources directory in a Windows distribution</p></li>
 </ul>
@@ -194,7 +192,7 @@ The following table shows the implicit answer file search order.
 <ul>
 <li><p>%WINDIR%\System32\Sysprep</p></li>
 </ul></td>
-<td align="left"><p>In the [windowsPE](windowspe.md) and [offlineServicing](offlineservicing.md) configuration passes, the name of the answer file must be Autounattend.xml.</p>
+<td align="left"><p>In the <a href="windowspe.md" data-raw-source="[windowsPE](windowspe.md)">windowsPE</a> and <a href="offlineservicing.md" data-raw-source="[offlineServicing](offlineservicing.md)">offlineServicing</a> configuration passes, the name of the answer file must be Autounattend.xml.</p>
 <p>For all other configuration passes, the file name must be Unattend.xml.</p></td>
 </tr>
 <tr class="odd">
@@ -210,31 +208,31 @@ The following table shows the implicit answer file search order.
 </tbody>
 </table>
 
- 
+
 
 ## Sensitive Data in Answer Files
 
 
 Setup removes sensitive data in the cached answer file at the end of each configuration pass.
 
-**Important**  
-Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](oobesystem.md) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
+**Important**  
+Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](oobesystem.md) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
 
- 
+
 
 However, if an answer file is embedded in a higher precedence location than the cached answer file, then the cached answer may be overwritten at the beginning of each subsequent configuration pass, if the embedded answer file matches the implicit search criteria. For example, if an answer file is embedded at %WINDIR%\\Panther\\Unattend\\Unattend.xml, the embedded answer file will replace the cached answer file at the beginning of each configuration pass. For example, if the embedded answer file specifies both the [specialize](specialize.md) and [oobeSystem](oobesystem.md) configuration passes, then the embedded answer file is discovered for the **specialize** configuration pass, cached, processed, and sensitive data is cleared. The embedded answer file is discovered again during the oobeSystem configuration pass and cached again. As a result, the sensitive data for the specialize configuration pass is no longer cleared. Sensitive data for previously processed configuration passes will not be cleared again. Unless the cached answer file must be overridden, we recommend that answer files be embedded at a location that has a lower precedence.
 
-**Important**  
-Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](oobesystem.md) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
+**Important**  
+Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](oobesystem.md) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
 
- 
+
 
 You can add a command to the Setupcomplete.cmd command script that deletes any cached or embedded answer files on the computer. For more information, see [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md).
 
-##Windows Setup Annotates Configuration Passes in an Answer File
+## Windows Setup Annotates Configuration Passes in an Answer File
 
 
-After a configuration pass is processed, Windows Setup annotates the cached answer file to indicate that the pass has been processed. If the configuration pass is run again and the cached answer file has not been replaced or updated in the interim, the answer file settings are not processed again. Instead, Windows Setup will search for implicit Unattend.xml files that are at a lower precedence location than the cached Unattend.xml file.
+After a configuration pass is processed, Windows Setup annotates the cached answer file to indicate that the pass has been processed. If the configuration pass is run again and the cached answer file has not been replaced or updated in the interim, the answer file settings are not processed again. Instead, Windows Setup will search for implicit Unattend.xml files that are at a lower precedence location than the cached Unattend.xml file.
 
 For example, you can install Windows with an answer file that contains Microsoft-Windows-Deployment/**RunSynchronous** commands in the [specialize](specialize.md) configuration pass. During installation, the specialize configuration pass runs and the **RunSynchronous** commands execute. After installation, run the **sysprep** command with the **/generalize** option. If there is no answer file in a higher precedence than the cached answer file or an answer file was not explicitly passed to the Sysprep tool, Setup runs the specialize configuration pass the next time that the computer boots. Because the cached answer file contains an annotation that the settings for that configuration pass were already applied, the **RunSynchronous** commands do not execute.
 
@@ -243,7 +241,7 @@ For example, you can install Windows with an answer file that contains Microsoft
 
 The following examples help describe the behavior of implicit answer file searches.
 
-### <span id="Answer_Files_Named_Autounattend.xml_are_Automatically_Discovered_by_Windows_Setup"></span><span id="answer_files_named_autounattend.xml_are_automatically_discovered_by_windows_setup"></span><span id="ANSWER_FILES_NAMED_AUTOUNATTEND.XML_ARE_AUTOMATICALLY_DISCOVERED_BY_WINDOWS_SETUP"></span>Answer Files Named Autounattend.xml are Automatically Discovered by Windows Setup
+### <span id="Answer_Files_Named_Autounattend.xml_are_Automatically_Discovered_by_Windows_Setup"></span><span id="answer_files_named_autounattend.xml_are_automatically_discovered_by_windows_setup"></span><span id="ANSWER_FILES_NAMED_AUTOUNATTEND.XML_ARE_AUTOMATICALLY_DISCOVERED_BY_WINDOWS_SETUP"></span>Answer Files Named Autounattend.xml are Automatically Discovered by Windows Setup
 
 1.  Create an answer file that is named Autounattend.xml that includes settings in the [windowsPE](windowspe.md) configuration pass.
 
@@ -255,9 +253,9 @@ The following examples help describe the behavior of implicit answer file search
 
 5.  Insert the removable media device when Windows is booting. This example assumes that the removable media is assigned the drive letter D:\\.
 
-    Windows Setup starts and automatically identifies Autounattend.xml as a valid answer file. Because the answer file uses a valid file name (Autounattend.xml), is located in one of the valid search paths (the root of D), and includes valid settings for the current configuration pass ([windowsPE](windowspe.md)), this answer file is used.
+    Windows Setup starts and automatically identifies Autounattend.xml as a valid answer file. Because the answer file uses a valid file name (Autounattend.xml), is located in one of the valid search paths (the root of D), and includes valid settings for the current configuration pass ([windowsPE](windowspe.md)), this answer file is used.
 
-    The answer file is cached to the computer. If there are no additional answer files discovered in later passes, the cached answer file is used throughout Windows Setup.
+    The answer file is cached to the computer. If there are no additional answer files discovered in later passes, the cached answer file is used throughout Windows Setup.
 
 ### <span id="Answer_Files_are_Discovered_in_Order_of_Precedence_in_Predefined_Search_Paths"></span><span id="answer_files_are_discovered_in_order_of_precedence_in_predefined_search_paths"></span><span id="ANSWER_FILES_ARE_DISCOVERED_IN_ORDER_OF_PRECEDENCE_IN_PREDEFINED_SEARCH_PATHS"></span>Answer Files are Discovered in Order of Precedence in Predefined Search Paths
 
@@ -271,16 +269,18 @@ The following examples help describe the behavior of implicit answer file search
 
     Because the %WINDIR%\\System32\\Sysprep directory is in the implicit search paths, the answer file copied to this directory is found. However, an answer file that was used to install Windows is still cached on the computer and contains settings for the [generalize](generalize.md) configuration pass. This cached answer file has a higher precedence than the one copied to the Sysprep directory. The cached answer file is used.
 
-    **Note**  
+    **Note**  
     The Sysprep tool can be run as a command-line tool or as a GUI tool. If you run the Sysprep tool as a GUI tool, you can select the **Generalize** check box.
 
-     
 
-    To use the new answer file, you can copy it to a directory of a higher precedence than the cached answer file, or you can specify the answer file by using the **/unattend** option. For example:
 
-    ```
-    sysprep /generalize /unattend:C:\MyAnswerFile.xml
-    ```
+~~~
+To use the new answer file, you can copy it to a directory of a higher precedence than the cached answer file, or you can specify the answer file by using the **/unattend** option. For example:
+
+```
+sysprep /generalize /unattend:C:\MyAnswerFile.xml
+```
+~~~
 
 ### Answer Files Must Include a Valid Configuration Pass
 
@@ -324,9 +324,9 @@ See the following topics for more information about answer files and configurati
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

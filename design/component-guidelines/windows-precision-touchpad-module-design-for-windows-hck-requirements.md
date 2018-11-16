@@ -118,9 +118,9 @@ Irrespective of button type implementation, a button down state shall be reporte
 
 **Figure 2 Activation Force**
 
- 
+ 
 
- 
+ 
 
 
 

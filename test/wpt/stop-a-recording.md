@@ -41,9 +41,9 @@ Recordings can contain personally identifiable or security-related information. 
 
 [WPR Common Scenarios](windows-performance-recorder-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

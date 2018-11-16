@@ -35,13 +35,13 @@ If you are upgrading your HLK environment to a later version, you must first uni
 1.  Download [the HLK](https://go.microsoft.com/fwlink/p/?LinkId=733613).
 
     If you are downloading directly onto your server, you must disable the IE Enhanced Security Configuration (IE ESC).
- 
+ 
 2.  When prompted, select **Run**.
 
     >[!WARNING]
     >  Don't select the **Save** option. The **Save** option only downloads the setup file and not the complete kit.
 
-     
+     
 
 3.  When the **Specify Location** screen appears, choose the appropriate option:
 
@@ -55,7 +55,7 @@ If you are upgrading your HLK environment to a later version, you must first uni
 
 5.  When the **Join the Customer Experience Improvement Program (CEIP)** screen appears, choose **Yes** or **No**, and then choose **Next**. If your network isn't connected to the Internet, choose **No**.
 
-     
+     
 
 6.  Review the License Agreement, and then choose **Accept** to proceed.
     If you selected the download option, copy your download to your test server. Run HLKSetup.exe     and repeat the installation instructions from **Step 3** for installing to this computer.
@@ -67,11 +67,11 @@ If you are upgrading your HLK environment to a later version, you must first uni
 
    
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

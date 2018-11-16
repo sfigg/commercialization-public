@@ -45,7 +45,7 @@ ms.topic: article
 </tr>
 <tr class="even">
 <td><p>NotRunCount</p></td>
-<td><p>This property represents the number of certification tests that haven't been run.</p></td>
+<td><p>This property represents the number of certification tests that haven&#39;t been run.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PassedCount</p></td>
@@ -70,11 +70,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

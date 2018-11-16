@@ -29,13 +29,13 @@ When Microsoft discovers a problem in either a Windows HLK test or in the operat
 
 ![download image](images/downloadbutton.jpg)[Download the latest HLK Filters](https://go.microsoft.com/fwlink/?linkid=875139)
 
->[!NOTE]
->  
-If your HLK environment doesn't have access to the Internet, you can copy the file to your test server.
-
->[!NOTE]
->  
-Both HLK and HCK filters are stored in the same HCKFilterUpdates.cab filters file, there is no separate file for HLK.
+> [!NOTE]
+> 
+> If your HLK environment doesn't have access to the Internet, you can copy the file to your test server.
+> 
+> [!NOTE]
+> 
+> Both HLK and HCK filters are stored in the same HCKFilterUpdates.cab filters file, there is no separate file for HLK.
 
 1.  Review the ReadMe file to learn how to install the filters on the controller.
 
@@ -76,9 +76,9 @@ For existing results, you must select the **Apply Filters** option on the **Resu
 ## <span id="related_topics"></span>Related topics
 
 
- 
+ 
 
- 
+ 
 
 
 

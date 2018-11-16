@@ -50,7 +50,7 @@ For a list of supported languages, locales, and identifiers, see [Supported Lang
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -88,9 +88,9 @@ The following example shows how to set the input locale to the English (United S
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

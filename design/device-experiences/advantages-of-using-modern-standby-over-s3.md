@@ -48,9 +48,9 @@ When Modern Standby-capable systems go into Standby, the system is still in S0 (
 
 Device wake, even in the S3 model, requires functionality integrated into the BIOS. This makes wake times slower and more cumbersome to develop. With Modern Standby a system stays in the S0 state and waking simply requires a hardware interrupt. Thus, it may eliminate any need for firmware interaction.
 
- 
+ 
 
- 
+ 
 
 
 

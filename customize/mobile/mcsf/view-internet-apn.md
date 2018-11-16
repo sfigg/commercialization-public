@@ -120,7 +120,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device with a SIM.

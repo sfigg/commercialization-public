@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -81,9 +81,9 @@ The following XML output shows how to set the location from which you are callin
 
 [TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md)
 
- 
+ 
 
- 
+ 
 
 
 

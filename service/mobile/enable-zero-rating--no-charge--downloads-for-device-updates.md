@@ -71,9 +71,9 @@ To test zero rating, you'll need to trigger an update over cellular which is sma
 
 [Update](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ In some platforms, the on-SoC image processing hardware might be shared between 
 
 Platforms that have two (or more) embedded cameras are required by Windows to be able to use (that is, stream content from) both (or all) cameras at the same time with any combination of the modes and resolutions that are supported by the individual cameras. SoC vendors who cannot meet this requirement must work with Microsoft directly for guidance on implementing their drivers and system firmware.
 
- 
+ 
 
- 
+ 
 
 
 

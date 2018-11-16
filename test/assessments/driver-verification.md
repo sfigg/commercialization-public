@@ -106,7 +106,7 @@ The following table describes the assessment settings, recommended setting value
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -117,9 +117,9 @@ The following table describes the assessment settings, recommended setting value
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

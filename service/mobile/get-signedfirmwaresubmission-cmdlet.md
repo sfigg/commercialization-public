@@ -68,7 +68,7 @@ This object can be processed using Windows PowerShell or displayed on the comman
 **Note**  
 Many of these commands are shown here as multiple lines, but must be entered as a single line in Windows PowerShell.
 
- 
+ 
 
 ## <span id="Exceptions"></span><span id="exceptions"></span><span id="EXCEPTIONS"></span>Exceptions
 
@@ -163,17 +163,17 @@ This state is indicated by the returned reason, “Code signing is still in prog
 If a custom PowerShell script is being used, it can be programmed to catch an exception (Microsoft.Phone.PartnerServices.Exceptions.FirmwareSubmissionInProgressException). That exception can be examined to determine if the submission has completed. The following code sample illustrates how to extract the error information from the returned result object.
 
 ```
-      $result = ''
-        try {
-            $result = Get-SignedFirmwareSubmission -FirmwareSubmissionTicketId "TKT-SIGN-TEST-17Y8M5" -DownloadDirectory c:\MyFirmwareSubmissions
-        }
-        catch [Microsoft.Phone.PartnerServices.Exceptions.FirmwareSubmissionInProgressException] {
-            write-host "Error Message" + $_.Exception.Message
-            write-host "Error Detail" + $_.Exception.Detail
-            
-            #exit or take other action since we've detected a failure
-            exit 1
-        } 
+      $result = ''
+        try {
+            $result = Get-SignedFirmwareSubmission -FirmwareSubmissionTicketId "TKT-SIGN-TEST-17Y8M5" -DownloadDirectory c:\MyFirmwareSubmissions
+        }
+        catch [Microsoft.Phone.PartnerServices.Exceptions.FirmwareSubmissionInProgressException] {
+            write-host "Error Message" + $_.Exception.Message
+            write-host "Error Detail" + $_.Exception.Detail
+            
+            #exit or take other action since we've detected a failure
+            exit 1
+        } 
 ```
 
 A loop can be constructed to wait (for at least 30 minutes) and then try again to determine if the submission has completed. You are strongly advised that such a polling style must not be invoked with intervals of less than 30 minutes to avoid overwhelming the update server.
@@ -407,9 +407,9 @@ RELATED LINKS
 
 [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223)
 
- 
+ 
 
- 
+ 
 
 
 

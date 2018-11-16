@@ -20,9 +20,9 @@ ms.topic: article
 
 -   [DiagnosticSummaryLog Class](diagnosticsummarylog-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

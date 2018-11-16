@@ -42,7 +42,7 @@ The following table shows the button type usage values.
 | 1                 | Non-Depressible (Pressure-pad) |
 | 2                 | Non-Clickable (Discrete-pad)   |
 
- 
+ 
 
 The host can request the device capabilities feature report of a Windows Precision Touchpad at any time after reading the report descriptor.
 
@@ -89,7 +89,7 @@ The latency mode should be indicated using the value for the latency mode usage 
 | 0                  | Normal latency |
 | 1                  | High latency   |
 
- 
+ 
 
 ## Windows Precision Touchpad Input Reports
 
@@ -104,7 +104,7 @@ The host uses the usages in the following table when extracting contact data fro
 | Tip        | Set if the contact is on the surface of the digitizer. | 0x0D | 0x42 | Mandatory          |
 | Confidence | Set when a contact is too large to be a finger.        | 0x0D | 0x47 | Mandatory          |
 
- 
+ 
 
 The following table includes all the mandatory usages which should be present in all Windows Precision Touchpad input reports.
 
@@ -117,7 +117,7 @@ The following table includes all the mandatory usages which should be present in
 | Button 2      | Indicates Button State for external button for primary (default left) clicking.    | 0x09 | 0x02 | Optional           |
 | Button 3      | Indicates Button State for external button for secondary (default right) clicking. | 0x09 | 0x03 | Optional           |
 
- 
+ 
 
 Any device that does not report all mandatory usages at either the contact or report level, will be non-functional as a Windows Precision Touchpad. Mandatory usages are strictly enforced by the Windows host. Where a logical maximum value has not been restricted, the value can be optimized to reduce descriptor size.
 
@@ -135,7 +135,7 @@ The X and Y values report the coordinates of a given contact. A Windows Precisio
 
     **Note**  The entire logical coordinate range should be reportable across both the X and Y axis.
 
-     
+     
 
 -   Physical minimum & Physical maximum (see Device Integration - Size).
 
@@ -161,7 +161,7 @@ With reference to the example outlined in the preceding diagram, two contacts ar
 | Contact 2: tip switch | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1        | 0        |
 | Contact 2: X, Y       | X₁, Y₁ | X₂, Y₂ | X₃, Y₃ | X₄, Y₄ | X₅, Y₅ | X₆, Y₆ | X₇, Y₇ | X₈, Y₈ | X₉, Y₉ | X₁₀, Y₁₀ | X₁₁, Y₁₁ |
 
- 
+ 
 
 **Confidence**
 
@@ -186,9 +186,9 @@ This is used to indicate the number of contacts being reported in a given frame 
 
 [Sample Report Descriptors](touchpad-sample-report-descriptors.md)
 
- 
+ 
 
- 
+ 
 
 
 

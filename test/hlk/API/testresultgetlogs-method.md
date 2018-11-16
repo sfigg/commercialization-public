@@ -54,9 +54,9 @@ Returns **ReadOnlyCollection**, which is a read-only list of all of the logs ass
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

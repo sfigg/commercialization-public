@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -85,9 +85,9 @@ The following example XML output shows a configuration of two ReadyBoost devices
 
 [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)
 
- 
+ 
 
- 
+ 
 
 
 

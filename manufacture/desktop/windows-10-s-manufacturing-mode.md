@@ -40,13 +40,13 @@ On your technician PC:
 
     ```
 	reg load HKLM\Windows10S C:\Mount\Windows\Windows\System32\Config\System
-	```
+    ```
 
 3. Add the manufacturing registry key.
 
     ```
     reg add HKLM\Windows10S\ControlSet001\Control\CI\Policy /v ManufacturingMode /t REG_DWORD /d 1
-	```
+    ```
 
 4. Unload the registry hive from your technician PC.
 

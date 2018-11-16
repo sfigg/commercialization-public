@@ -27,7 +27,7 @@ To run services or commands that can start at the same time, use asynchronous co
 | Setting                 | Description                                                                           |
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md) | Specifies the path, the order, and the credentials of the command to run asynchronously. |
- 
+ 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Configuration Passes

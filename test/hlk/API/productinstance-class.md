@@ -38,7 +38,7 @@ This class represents a piece of hardware that has been detected on a test compu
 
 `Public MustInherit Class ProductInstance`
 
-          `Implements IRunTests`
+          `Implements IRunTests`
 
 **C#**
 
@@ -51,18 +51,18 @@ This class represents a piece of hardware that has been detected on a test compu
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.NotificationBase**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.NotificationBase**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProductInstance**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProductInstance**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

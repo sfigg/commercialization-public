@@ -34,11 +34,11 @@ Describes the customizations that you can configure for the desktop when the mob
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Control Panel device icon](control-panel-device-icon.md)</p></td>
+<td><p><a href="control-panel-device-icon.md" data-raw-source="[Control Panel device icon](control-panel-device-icon.md)">Control Panel device icon</a></p></td>
 <td><p>OEMs can change the default icon associated with the phone on a connected computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Phone image in the phone app](phone-image-in-the-windows-phone-app.md)</p></td>
+<td><p><a href="phone-image-in-the-windows-phone-app.md" data-raw-source="[Phone image in the phone app](phone-image-in-the-windows-phone-app.md)">Phone image in the phone app</a></p></td>
 <td><p>OEMs can replace the default images of the phone that appears in the phone app. These images are included in the OEMImage.cab that is provided in this customization sample. The OEM can replace these images with custom ones that more accurately depict their phone. When the OEM provides a new image, this image will be used and will replace the OEMavatar.cab file that is used by default.</p></td>
 </tr>
 </tbody>

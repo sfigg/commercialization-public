@@ -38,7 +38,7 @@ For a list of available time zones, use the `tzutil /l` command to view the avai
 </tbody>
 </table>
 
- 
+ 
 
 If the time zone is not specified, Windows creates a default time zone value that is based on the installed language and region that are specified in an answer file.
 
@@ -49,7 +49,7 @@ If a region has more than one time zone, the default time zone for that region i
 
 -   Greenwich Mean Time (GMT) is now known as Coordinated Universal Time (UTC).
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -92,9 +92,9 @@ The following example shows how to set the time zone to Pacific Standard Time (U
 
 [Tzutil Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=247423)
 
- 
+ 
 
- 
+ 
 
 
 

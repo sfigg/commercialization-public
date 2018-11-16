@@ -34,7 +34,7 @@ Struct used to create a table of all targets and their owning project for the ta
 
 **System.ValueType**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.InUseTargetData**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.InUseTargetData**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -46,9 +46,9 @@ Any public static members of this type are thread safe. Any instance members are
 
 [InUseTargetData Properties](inusetargetdata-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ Secure Boot is a security standard developed by members of the PC industry to he
 
 When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
- 
+ 
 
 ## <span id="Frequently_asked_questions_"></span><span id="frequently_asked_questions_"></span><span id="FREQUENTLY_ASKED_QUESTIONS_"></span>Frequently asked questions:
 
@@ -115,9 +115,9 @@ For more information, see the whitepaper: [Secured Boot and Measured Boot: Harde
 
 [UEFI Firmware](uefi-firmware.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,7 +38,7 @@ This exception class is defined to represent exceptions related to DataIntegrity
 
 `Public Class DataIntegrityException`
 
-               `Inherits ProjectManagerException`
+               `Inherits ProjectManagerException`
 
 **C#**
 
@@ -51,7 +51,7 @@ This exception class is defined to represent exceptions related to DataIntegrity
 
 **System.Object**
 
-   **System.Exception**
+   **System.Exception**
 
 **       Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
@@ -60,9 +60,9 @@ This exception class is defined to represent exceptions related to DataIntegrity
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

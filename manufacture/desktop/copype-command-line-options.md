@@ -42,7 +42,7 @@ The **Copype** tool creates a working directory that contains a standard set of 
 <p>The x86 version of Windows PE can boot 32-bit UEFI, 32-bit BIOS, or 64-bit BIOS-based PCs.</p>
 <p>The amd64 version of Windows PE can boot either 64-bit BIOS-based or 64-bit UEFI-based PCs.</p>
 <p>The arm version of Windows PE can boot ARM-based PCs.</p>
-<p>For more information about running Windows PE on PCs with different architectures, see [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md).</p></td>
+<p>For more information about running Windows PE on PCs with different architectures, see <a href="windows-setup-supported-platforms-and-cross-platform-deployments.md" data-raw-source="[Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)">Windows Setup Supported Platforms and Cross-Platform Deployments</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>WorkingDirectory</em></p></td>
@@ -57,7 +57,7 @@ The **Copype** tool creates a working directory that contains a standard set of 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -68,9 +68,9 @@ The **Copype** tool creates a working directory that contains a standard set of 
 
 [Makewinpemedia Command-Line Options](makewinpemedia-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,12 +27,12 @@ elements, see [Specifying files and registry entries in a package
 project
 file](specifying-files-and-registry-entries-in-a-package-project-file.md).
 
-**Note**  
+**Note**  
 
 The **OSComponent** element must contain at least one **Files** element
 or **RegKeys** element.
 
- 
+
 
 The following XML example uses the **OSComponents** element to include
 various system files.
@@ -74,7 +74,7 @@ language-specific components.
 ## <span id="Driver_element"></span><span id="driver_element"></span><span id="DRIVER_ELEMENT"></span>Driver element
 
 
-Windows 10 Mobile uses some of the same driver model as Windows 10 for
+Windows 10 Mobile uses some of the same driver model as Windows 10 for
 desktop editions (Home, Pro, Enterprise, and Education). You must import
 an .inf file for your driver into a package by using the **Driver**
 element. When an .inf file is specified, the packaging infrastructure
@@ -102,7 +102,7 @@ The following table describes the attributes of the **Driver** element.
 </tbody>
 </table>
 
- 
+
 
 The following table describes the child elements of the **Driver**
 element.
@@ -121,20 +121,20 @@ element.
 <tbody>
 <tr class="odd">
 <td><p><strong>Reference</strong></p></td>
-<td><p>Optional. Specifies any additional files that are required when installing the driver (such as the driver's .sys file). Adding a <strong>Reference</strong> element doesn't actually add the file to the package, however; to do that, you must still use a <strong>Files</strong> element.</p></td>
+<td><p>Optional. Specifies any additional files that are required when installing the driver (such as the driver&#39;s .sys file). Adding a <strong>Reference</strong> element doesn&#39;t actually add the file to the package, however; to do that, you must still use a <strong>Files</strong> element.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Files</strong></p></td>
-<td><p>Optional. Specifies a file to include in the driver package (such as the driver’s .sys file). For more info, see [Specifying files and registry entries in a package project file](specifying-files-and-registry-entries-in-a-package-project-file.md).</p></td>
+<td><p>Optional. Specifies a file to include in the driver package (such as the driver’s .sys file). For more info, see <a href="specifying-files-and-registry-entries-in-a-package-project-file.md" data-raw-source="[Specifying files and registry entries in a package project file](specifying-files-and-registry-entries-in-a-package-project-file.md)">Specifying files and registry entries in a package project file</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Security</strong></p></td>
-<td><p>Optional. Specifies how the driver is accessible applications and services. For more info, see [Security element](#driversecurity) below.</p></td>
+<td><p>Optional. Specifies how the driver is accessible applications and services. For more info, see <a href="#driversecurity" data-raw-source="[Security element](#driversecurity)">Security element</a> below.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The following example adds a driver to a package.
 
@@ -162,7 +162,7 @@ shows a package generator (PkgGen.exe) command that sets the
 Pkggen.exe <other arguments> /variables:"HIVE_ROOT=%WPDKCONTENTROOT%\CoreSystem";<other variables> <other arguments>
 ```
 
-**Note**  
+**Note**  
 
 If the driver uses the **Include** INF directive to reference other
 drivers that are part of the Mobile Core subset of the operating system,
@@ -170,11 +170,11 @@ use the **WIM\_ROOT** variable instead of the **HIVE\_ROOT** variable.
 The default directory for the staging WIM image is the same as the
 hives.
 
-For Windows 10 Mobile, you must use both the **HIVE\_ROOT** and
+For Windows 10 Mobile, you must use both the **HIVE\_ROOT** and
 **WIM\_ROOT** parameters. If you use only **WIM\_ROOT**, the package
 might not be complete.
 
- 
+
 
 For more information about command-line arguments for PkgGen.exe, see
 [Command-line arguments for package
@@ -204,12 +204,12 @@ The **Security** element has the following attribute and child elements.
 <tbody>
 <tr class="odd">
 <td><p><strong>InfSectionName</strong></p></td>
-<td><p>Required. This attribute specifies the name of an <strong>AddReg</strong> directive section in the driver's .inf file. This specification allows for the injection of a Security Descriptor Definition Language (SDDL) string into the .inf file as part of package generation.</p></td>
+<td><p>Required. This attribute specifies the name of an <strong>AddReg</strong> directive section in the driver&#39;s .inf file. This specification allows for the injection of a Security Descriptor Definition Language (SDDL) string into the .inf file as part of package generation.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 <table>
 <colgroup>
@@ -235,7 +235,7 @@ The **Security** element has the following attribute and child elements.
 </tr>
 <tr class="even">
 <td><p><strong>AccessedByApplication</strong></p></td>
-<td><p>Optional. This element is used to specify an app that can access the driver, as well as the rights granted to that application. The app is specified through the <strong>Name</strong> attribute, which accepts a string that is the app's product ID GUID. The rights are specified through the <strong>Rights</strong> attribute, which accepts one or more of the following strings:</p>
+<td><p>Optional. This element is used to specify an app that can access the driver, as well as the rights granted to that application. The app is specified through the <strong>Name</strong> attribute, which accepts a string that is the app&#39;s product ID GUID. The rights are specified through the <strong>Rights</strong> attribute, which accepts one or more of the following strings:</p>
 <ul>
 <li><p>$(DEVICE_READ)</p></li>
 <li><p>$(DEVICE_WRITE)</p></li>
@@ -243,11 +243,10 @@ The **Security** element has the following attribute and child elements.
 <li><p>$(DEVICE_EXECUTE)</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>The product ID GUID must be specified including brackets, for example <code>{263AF644-C573-4e00-BB49-740DD4C69664}</code>.</p>
+<strong>Note</strong><br/><p>The product ID GUID must be specified including brackets, for example <code>{263AF644-C573-4e00-BB49-740DD4C69664}</code>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -263,7 +262,7 @@ The **Security** element has the following attribute and child elements.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Service_element"></span><span id="service_element"></span><span id="SERVICE_ELEMENT"></span>Service element
 
@@ -301,7 +300,7 @@ The following table describes the attributes of the **Service** element.
 <td><p><strong>Start</strong></p></td>
 <td><p>Required. An enumeration value that defines when the service will start. Valid values are the following:</p>
 <ul>
-<li><p><strong>Demand</strong> – The service starts after the OS has finished booting and the shell is available. Microsoft strongly recommends using this value for services in Windows 10 Mobile wherever possible.</p></li>
+<li><p><strong>Demand</strong> – The service starts after the OS has finished booting and the shell is available. Microsoft strongly recommends using this value for services in Windows 10 Mobile wherever possible.</p></li>
 <li><p><strong>Auto</strong> – The service starts automatically during system startup.</p></li>
 </ul></td>
 </tr>
@@ -333,7 +332,7 @@ The following table describes the attributes of the **Service** element.
 </tbody>
 </table>
 
- 
+
 
 The following table describes the child elements of the **Service**
 element.
@@ -357,11 +356,10 @@ element.
 <li><p><strong>Name</strong> - Optional. The name for the executable on the device. If a name is not specified, the file name in the source path is used.</p></li>
 <li><p><strong>Source</strong> – Required. The source path of the service executable to be included in the package. This path can be an absolute or relative path. It is also valid to use macro references in the path.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the executable file does not exist, package generation will fail.</p>
+<strong>Note</strong><br/><p>If the executable file does not exist, package generation will fail.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p><strong>DestinationDir</strong> – Optional. The destination folder on the device for the service executable. This path must start with a globally defined macro for a directory. If this attribute is not specified, the default location for services is used.</p></li>
 <li><p><strong>Attributes</strong> – Optional. The file system attributes for this file on the device. The value can be a combination of the following, separated by a space character.</p>
@@ -377,11 +375,10 @@ element.
 </ul>
 <p>When not specified, a predefined default value is used.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The file system might not support all of these attributes.</p>
+<strong>Note</strong><br/><p>The file system might not support all of these attributes.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ul></td>
 </tr>
@@ -398,11 +395,10 @@ element.
 <ul>
 <li><p><strong>Command</strong> – Optional. The command line of the process for the <strong>CreateProcess</strong> function to execute in response to a failure, when the <strong>RunCommand</strong> attribute is specified through the <strong>Action</strong> element. This process runs under the same account as the services.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the value is NULL, the command is unchanged. If the value is an empty string (&quot;&quot;), the command is deleted and no command is run when the service fails.</p>
+<strong>Note</strong><br/><p>If the value is NULL, the command is unchanged. If the value is an empty string (&quot;&quot;), the command is deleted and no command is run when the service fails.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p><strong>ResetPeriod</strong> – Required. The time, in seconds, after which to reset the failure count to zero if there are no failures. Specify INFINITE to indicate that the count should never be reset.</p></li>
 </ul></td>
@@ -414,11 +410,10 @@ element.
 <li><p><strong>Name</strong> - Optional. The name for the file on the device. If a name is not specified, the file name in the source path is used.</p></li>
 <li><p><strong>Source</strong> – Required. The source path of the file to be included in the package. This path can be an absolute or relative path. It is also valid to use macro references in the path.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the file does not exist, package generation will fail.</p>
+<strong>Note</strong><br/><p>If the file does not exist, package generation will fail.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p><strong>DestinationDir</strong> – Optional. The destination folder on the device for the file. This path must start with a globally defined macro for a directory. If this attribute is not specified, the default location for files is used.</p></li>
 <li><p><strong>Attributes</strong> – Optional. The file system attributes for this file on the device. The value can be a combination of the following, separated by a space character.</p>
@@ -434,17 +429,16 @@ element.
 </ul>
 <p>When not specified, a predefined default value is used.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The file system might not support all of these attributes.</p>
+<strong>Note</strong><br/><p>The file system might not support all of these attributes.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><strong>RegKeys</strong></p></td>
-<td><p>Optional. Specifies registry entries for the service through the child element <strong>RegKey</strong>. For additional information about the <strong>RegKey</strong> element, see [Specifying files and registry entries in a package project file](specifying-files-and-registry-entries-in-a-package-project-file.md).</p></td>
+<td><p>Optional. Specifies registry entries for the service through the child element <strong>RegKey</strong>. For additional information about the <strong>RegKey</strong> element, see <a href="specifying-files-and-registry-entries-in-a-package-project-file.md" data-raw-source="[Specifying files and registry entries in a package project file](specifying-files-and-registry-entries-in-a-package-project-file.md)">Specifying files and registry entries in a package project file</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RequiredCapabilities</strong></p></td>
@@ -461,7 +455,7 @@ element.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="BinaryPartition_element"></span><span id="binarypartition_element"></span><span id="BINARYPARTITION_ELEMENT"></span>BinaryPartition element
 
@@ -554,37 +548,39 @@ elements:
     </tbody>
     </table>
 
-     
 
-    In addition to these attributes, you can also specify zero or more
-    **RegKey** child elements under a **Class** element. When registry
-    information is included here, the built-in macro $(hkcr.clsid)
-    (which is mapped to the string
-    "HKCR\\Classes\\CLSID\\&lt;*currentClsId*&gt;") can be used to add
-    more settings for this class without mentioning the full key name.
-    The following example demonstrates the definition of a **Class**
-    object.
 
-    ``` syntax
-    <Class 
-       Id="{2933BF90-7B36-11D2-B20E-00C04F983E60}" 
-       Version="1.0" 
-       TypeLib="{D63E0CE2-A0A2-11D0-9C02-00C04FC99C8E}" 
-       ThreadingModel="Both" 
-       ProgId="Microsoft.XMLDOM.1.0" 
-       VersionIndependentProgId="Microsoft.XMLDOM" 
-       Description="XML DOM Document">
+~~~
+In addition to these attributes, you can also specify zero or more
+**RegKey** child elements under a **Class** element. When registry
+information is included here, the built-in macro $(hkcr.clsid)
+(which is mapped to the string
+"HKCR\\Classes\\CLSID\\&lt;*currentClsId*&gt;") can be used to add
+more settings for this class without mentioning the full key name.
+The following example demonstrates the definition of a **Class**
+object.
 
-       <RegKey KeyName="$(hkcr.clsid)\SideBySide">
-          <RegValue Name="RefCount" Type="REG_DWORD" Value="00000001" />
-          <RegValue Name="Version30RefCount" Type="REG_DWORD" Value="00000001" />
-       </RegKey>
-       <RegKey KeyName="$(hkcr.clsid)\VersionList">
-          <RegValue Name="3.0" Type="REG_EXPAND_SZ" 
-             Value="%SystemRoot%\System32\msxml3.dll" />
-        </RegKey>
-    </Class>
-    ```
+``` syntax
+<Class 
+   Id="{2933BF90-7B36-11D2-B20E-00C04F983E60}" 
+   Version="1.0" 
+   TypeLib="{D63E0CE2-A0A2-11D0-9C02-00C04FC99C8E}" 
+   ThreadingModel="Both" 
+   ProgId="Microsoft.XMLDOM.1.0" 
+   VersionIndependentProgId="Microsoft.XMLDOM" 
+   Description="XML DOM Document">
+
+   <RegKey KeyName="$(hkcr.clsid)\SideBySide">
+      <RegValue Name="RefCount" Type="REG_DWORD" Value="00000001" />
+      <RegValue Name="Version30RefCount" Type="REG_DWORD" Value="00000001" />
+   </RegKey>
+   <RegKey KeyName="$(hkcr.clsid)\VersionList">
+      <RegValue Name="3.0" Type="REG_EXPAND_SZ" 
+         Value="%SystemRoot%\System32\msxml3.dll" />
+    </RegKey>
+</Class>
+```
+~~~
 
 -   **Interfaces**: This element contains a list of **Interface**
     elements that describe the interfaces implemented by the
@@ -627,27 +623,29 @@ elements:
     </tbody>
     </table>
 
-     
 
-    For the **Interface** element, there is a built-in macro $(hkcr.iid)
-    that maps to "HKCR\\Classes\\Interface\\&lt;*interfaceId*&gt;". The
-    following example demonstrates the definition of an **Interface**
-    object.
 
-    ``` syntax
-    <Interface 
-       Id="{D4D4A0FC-3B73-11D1-B2B4-00C04FB92596}" 
-       TypeLib="$(TypeLibId)" 
-       Name="IXMLAttribute" 
-       ProxyStubClsId="{00020424-0000-0000-C000-000000000046}" 
-       ProxyStubClsId32="$(ProxyStubClsId)">
-       <RegKey KeyName="$(hkcr.iid)\TypeLib">
-          <RegValue Name="Version" Type="REG_SZ" Value="3.0" />
-       </RegKey>
-    </Interface>
-    ```
+~~~
+For the **Interface** element, there is a built-in macro $(hkcr.iid)
+that maps to "HKCR\\Classes\\Interface\\&lt;*interfaceId*&gt;". The
+following example demonstrates the definition of an **Interface**
+object.
 
-    The default device directory for this object is $(runtime.system32).
+``` syntax
+<Interface 
+   Id="{D4D4A0FC-3B73-11D1-B2B4-00C04FB92596}" 
+   TypeLib="$(TypeLibId)" 
+   Name="IXMLAttribute" 
+   ProxyStubClsId="{00020424-0000-0000-C000-000000000046}" 
+   ProxyStubClsId32="$(ProxyStubClsId)">
+   <RegKey KeyName="$(hkcr.iid)\TypeLib">
+      <RegValue Name="Version" Type="REG_SZ" Value="3.0" />
+   </RegKey>
+</Interface>
+```
+
+The default device directory for this object is $(runtime.system32).
+~~~
 
 ## <span id="SettingsGroup_element"></span><span id="settingsgroup_element"></span><span id="SETTINGSGROUP_ELEMENT"></span>SettingsGroup element
 
@@ -754,12 +752,12 @@ generated package**
 
     ``` syntax
     …
-       <FileEntry>
-          <FileType>Regular</FileType>
-          <DevicePath>\Windows\Packages\CustomMetadata\Contoso.TestApp.meta.xml</DevicePath>
-          <CabPath>4_Contoso.xml</CabPath>
-          <Attributes>Normal</Attributes>
-        </FileEntry>
+       <FileEntry>
+          <FileType>Regular</FileType>
+          <DevicePath>\Windows\Packages\CustomMetadata\Contoso.TestApp.meta.xml</DevicePath>
+          <CabPath>4_Contoso.xml</CabPath>
+          <Attributes>Normal</Attributes>
+        </FileEntry>
     ```
 
 4.  Extract the `4_Contoso.xml`and open it. Confirm that it contains the
@@ -768,9 +766,9 @@ generated package**
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
     <CustomMetadata xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00">
-      <Field Name="TargetVersion">8.1</Field>
-      <Field Name="PrimaryPhoneModel">DCD6000</Field>
-      <Field Name="DevelopmentTeam">Alpha Team</Field>
+      <Field Name="TargetVersion">8.1</Field>
+      <Field Name="PrimaryPhoneModel">DCD6000</Field>
+      <Field Name="DevelopmentTeam">Alpha Team</Field>
     </CustomMetadata>
     ```
 
@@ -780,12 +778,12 @@ generated package**
 [Creating packages](creating-packages.md)
 
 
- 
 
- 
+
+
 
 [Send comments about this topic to
-Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging\p_phPackaging%5D:%20Specifying%20components%20in%20a%20package%20project%20file%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging/p_phPackaging%5D:%20Specifying%20components%20in%20a%20package%20project%20file%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
