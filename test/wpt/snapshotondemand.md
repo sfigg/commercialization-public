@@ -35,6 +35,7 @@ HRESULT SnapshotOnDemand
 The following table describes possible return values.
 
 |Return Value	| Description |
+|---------------|-------------|
 |S_OK	|The snapshot is successfully taken for the specified processes. |
 | E_WPRC_EXCEEDED_HEAP_SNAPSHOT_PIDS |	The number of PIDs exceeded the maximum allowable limit. Up to 8 pids may be specified.|
 
