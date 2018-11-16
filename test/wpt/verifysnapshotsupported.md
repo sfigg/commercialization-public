@@ -8,7 +8,7 @@ ms.topic: article
 
 ## VerifySnapshotSupported
 
-Queries event tracing session the periodic capture state limits. Internally uses TraceQueryInformation using TracePeriodicCaptureStateInfo class.
+Queries event tracing session the periodic capture state limits. 
 
 ## Syntax
 

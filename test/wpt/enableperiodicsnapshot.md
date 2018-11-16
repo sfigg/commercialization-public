@@ -36,7 +36,7 @@ cPids
 
 |Return Value | Description|
 |-------------|------------|
-|S_OK	| The configuration was successful for the specified process. |
+|S_OK	| The configuration was successful for the specified process, otherwise an error code. |
 
 ## Related Topics
 

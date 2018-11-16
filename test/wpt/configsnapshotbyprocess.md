@@ -28,7 +28,7 @@ HRESULT ConfigSnapshotByPIDEx
 The following table describes possible return values.
 |Return Value | Description|
 |-------------|------------|
-|S_OK	| The configuration was successful for the specified process. |
+|S_OK	| The configuration was successful for the specified process, otherwise an error code. |
 
 ## Remarks
 This function is useful to configure the snapshot with the process name. Once enabled, the config will apply to all new instances of the process with specified name. The user should disable snapshot when the testing has finished. 
