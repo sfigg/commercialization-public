@@ -42,20 +42,16 @@ An MBR drive can have up to four standard partitions. Typically, these standard 
 
 -   **Recovery tools partition**
 
-    The Windows Recovery Environment (Windows RE) tools image (winre.wim) should be in a separate partition than the Windows partition to support automatic failover and to support booting Windows BitLocker Drive Encryption-encrypted partitions.
-
-    While this image can be included on the same partition as the system partition, we recommend that you place this partition in a separate partition, immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
+    We recommend creating a separate recovery partition to support automatic failover and to support booting Windows BitLocker Drive Encryption-encrypted partitions.
+    
+    We recommend that you place this partition in a separate partition, immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
 
     This partition must have enough space for the Windows Recovery Environment tools image (winre.wim, typically between 250-300MB, depending on base language and customizations added), plus enough free space so that the partition can be captured by backup utilities:
 
     -   If the partition is less than 500 MB, it must have at least 50 MB of free space.
     -   If the partition is 500 MB or larger, it must have at least 320 MB of free space.
     -   If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
-
-    <!-- -->
-
-    -   It must have at least 320 MB of free space.
-    -   We recommend that it should have at least 1 GB free.
+    -   For drives larger than 128GB, we recommend that this partition is at least 990MB.
 
 -   **Data partitions**
 
@@ -131,9 +127,11 @@ The following steps describe how to partition your hard drives and prepare to ap
     create partition primary
     rem ==    b. Create space for the recovery tools  
     shrink minimum=500
-    rem       ** NOTE: Update this size to match the
-    rem                size of the recovery tools 
-    rem                (winre.wim)                 **
+    rem       ** Update this size to match the size of
+    rem          the recovery tools (winre.wim)
+    rem          plus some free space.
+    rem          For drives over 128GB, we recommend
+    rem          at least 990MB.                   **
     rem ==    c. Prepare the Windows partition ====== 
     format quick fs=ntfs label="Windows"
     assign letter="W"

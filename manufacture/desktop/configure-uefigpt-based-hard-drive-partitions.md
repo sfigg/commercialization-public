@@ -81,13 +81,17 @@ Each partition can have a maximum of 18 exabytes (~18.8 million terabytes) of sp
 
     This partition must be at least 300 MB.
 
+    For drives larger than 128GB, we recommend that this partition is at least 990MB.
+
     This partition must have enough space for the Windows Recovery Environment tools image (winre.wim, typically between 250-300MB, depending on base language and customizations added), plus enough free space so that the partition can be captured by backup utilities:
 
     -   If the partition is less than 500 MB, it must have at least 50 MB of free space.
     -   If the partition is 500 MB or larger, it must have at least 320 MB of free space.
     -   If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
-    -   This partition must use the Type ID: DE94BBA4-06D1-4D40-A16A-BFD50179D6AC.
-    -   The recovery tools should be in a separate partition than the Windows partition to support automatic failover and to support booting partitions encrypted with Windows BitLocker Drive Encryption.
+    
+    This partition must use the Type ID: DE94BBA4-06D1-4D40-A16A-BFD50179D6AC.
+
+    The recovery tools should be in a separate partition than the Windows partition to support automatic failover and to support booting partitions encrypted with Windows BitLocker Drive Encryption.
 
     We recommend that you place this partition immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
 
@@ -120,8 +124,6 @@ We recommend changing the Windows drive letter to a letter that’s near the end
 
 If you reboot, Windows PE reassigns disk letters alphabetically, starting with the letter C, without regard to the configuration in Windows Setup. This configuration can change based on the presence of different drives, such as USB flash drives.
 
- 
-
 The following steps describe how to partition your hard drives and prepare to apply images. You can use the code in the sections that follow to complete these steps.
 
 **To partition hard drives and prepare to apply images**
@@ -151,9 +153,11 @@ The following steps describe how to partition your hard drives and prepare to ap
     create partition primary 
     rem ==    b. Create space for the recovery tools ===
     shrink minimum=500
-    rem       ** NOTE: Update this size to match the
-    rem                size of the recovery tools 
-    rem                (winre.wim) plus free space                   **
+    rem       ** Update this size to match the size of
+    rem          the recovery tools (winre.wim)
+    rem          plus some free space.
+    rem          For drives over 128GB, we recommend
+    rem          at least 990MB.                  **
     rem ==    c. Prepare the Windows partition ========= 
     format quick fs=ntfs label="Windows"
     assign letter="W"

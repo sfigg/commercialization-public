@@ -44,7 +44,8 @@ Welcome to Windows 10, version 1809! Here are some resources to get you acquain
 | [Add languages to Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism) | Language interface pack languages are now distributed as .appx files. |
 | [Available features on demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod) |  Several new Features on Demand are available |
 | [Windows 10 IoT Core manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide) | You can now create Windows IoT Core images using PowerShell. |
-
+| [Recovery](https://docs.microsoft.com/windows-hardware/manufacture/desktop/prepare-recovery-tools) | WinPE is no longer part of the ADK installer, and is now available as an add-on to the ADK 
+| [UEFI/GPT-based](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-uefigpt-based-hard-drive-partitions)/[BIOS/MBR-based](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-biosmbr-based-hard-drive-partitions) hard drive partitions | For drives larger than 128GB, we recommend that the recovery tools partition is at least 990MB. |
 
 
 ## New customization options
