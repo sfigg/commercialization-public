@@ -68,9 +68,12 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
     create partition primary 
     rem ==    b. Create space for the recovery tools ===
     shrink minimum=500
-    rem       ** NOTE: Update this size to match the
-    rem                size of the recovery tools 
-    rem                (winre.wim)                    **
+    rem       ** Update this size to match the size of
+    rem          the recovery tools (winre.wim)
+    rem          plus some free space.
+    rem          For drives over 128GB, we recommend
+    rem          at least 990MB.
+    rem          
     rem ==    c. Prepare the Windows partition ========= 
     format quick fs=ntfs label="Windows"
     assign letter="C"
@@ -107,9 +110,11 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
     create partition primary
     rem ==    b. Create space for the recovery tools  
     shrink minimum=500
-    rem       ** NOTE: Update this size to match the
-    rem                size of the recovery tools 
-    rem                (winre.wim)                 **
+    rem       ** Update this size to match the size of
+    rem          the recovery tools (winre.wim)
+    rem          plus some free space.
+    rem          For drives over 128GB, we recommend
+    rem          at least 990MB.
     rem ==    c. Prepare the Windows partition ====== 
     format quick fs=ntfs label="Windows"
     assign letter="C"
