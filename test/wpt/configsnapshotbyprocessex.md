@@ -21,13 +21,13 @@ HRESULT ConfigSnapshotByPIDEx
 
 ## Parameters
 
-*snapshotType*
-[in] SnapshotType. 
-Note : Currently only available SnapshotType is SnapshotType_Heap
-*bstrProcName*
-[in] A string that contains the process name
-*fEnable*
-[in] A Boolean value that indicate whether to enable or disable the snapshot.
+*snapshotType* <br/>
+[in] SnapshotType. <br/>
+**Note**: Currently only available SnapshotType is SnapshotType_Heap<br/>
+*bstrProcName*<br/>
+[in] A string that contains the process name<br/>
+*fEnable*<br/>
+[in] A Boolean value that indicate whether to enable or disable the snapshot.<br/>
 
 ## Return Value
 
