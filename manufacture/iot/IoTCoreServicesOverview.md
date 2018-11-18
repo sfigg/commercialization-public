@@ -11,9 +11,9 @@ ms.topic: article
 
 # Windows 10 IoT Core Services
 
-Windows 10 IoT Core Services is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases along with services to manage device updates and assess device health.
+Windows 10 IoT Core Services is a new cloud services subscription that provides the essential services needed to commercialize a device on Windows 10 IoT Core. Through this subscription, OEMs have access to 10 years of support on Windows 10 IoT Core Long Term Servicing Channel (LTSC) releases along with services to publish device updates and assess device health.
 
-Earlier in the year, [we announced](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/) that with the next release of Windows 10 IoT, we will provide 10 years of support for both Windows 10 IoT Core and Windows 10 IoT Enterprise. We also announced a partnership with NXP to support Windows 10 IoT Core on their i.MX 6 and i.MX 7 processors. The Windows 10 IoT Core Services offering builds on these announcements, as we continue to evolve the Windows IoT platform and make investments to support commercialization of devices running Windows 10 IoT.
+With the 1809 release of Windows 10 IoT, we are providing 10 years of support for both Windows 10 IoT Core and Windows 10 IoT Enterprise. We've also entered a partnership with NXP to support Windows 10 IoT Core on their i.MX 6, 7, and 8M series processors. The Windows 10 IoT Core Services offering builds on these improvements, as we continue to evolve the Windows IoT platform and make investments to support commercialization of devices running Windows 10 IoT.
 
 
 ## What's included with Windows 10 IoT Core Services?
@@ -22,15 +22,15 @@ A subscription to Windows 10 IoT Core Services comes with three main benefits:
 
 > | _Benefit_  |  _Description_  |
 > |----------|---------|
-> | [10 years of support](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) | Access to Windows 10 IoT Core LTSC releases with security and quality updates only (no new features). |
-> | [Update control with Device Update Center](http://aka.ms/deviceupdatecenter) | Create and manage device updates at scale using cloud-side controls. |
+> | [10 years of support](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) | Access to Windows 10 IoT Core LTSC releases with security and reliability updates only (no new features). |
+> | [Update control with Device Update Center](http://aka.ms/deviceupdatecenter) | Create and publish device updates at scale using cloud-side controls. |
 > | [Device Health Attestation (DHA)](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/dha-architecture.md) | Rights to commercialize a device with DHA to affirm device health remotely. |
 
 ## 10 Years of Support
-OEMs get 10 years of support on Windows 10 IoT Core via access to monthly updates from the [Windows Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) releases. This includes security and quality updates for the operating system to keep device security up to date. Devices using LTSC releases won’t receive feature updates, enabling OEMs to focus updates on stability by minimizing changes to the base operating system. Microsoft typically offers new LTSC releases every 2-3 years, with each release supported over a 10-year lifecycle.
+OEMs get 10 years of support on Windows 10 IoT Core via access to monthly updates from the [Windows Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) releases. This includes security and reliability updates for the operating system to keep device security up to date. Devices using LTSC releases won’t receive feature updates, enabling OEMs to focus updates on stability by minimizing changes to the base operating system. Microsoft typically offers new LTSC releases every 2-3 years, with each release supported over a 10-year lifecycle.
 ## Update Control with Device Update Center
 
-Update control with the newly announced [Device Update Center](http://aka.ms/deviceupdatecenter/) (DUC) provides the ability to create, customize, and control device updates. These updates are distributed by the same content distribution network (CDN) as Windows Update which is used daily by millions of Windows customers around the world. Updates can be applied to the operating system and device drivers as well as OEM-specific applications and files. Updates can be flighted to test devices prior to broader distribution.
+Update control with the newly announced [Device Update Center](http://aka.ms/deviceupdatecenter/) (DUC) provides the ability to create, customize, and publish device updates. These updates are distributed by the same content distribution network (CDN) as Windows Update which is used daily by millions of Windows customers around the world. Updates can be applied to the operating system and device drivers as well as OEM-specific applications and files. Updates can be flighted to test devices prior to broader distribution.
 
 Here's a diagram of the update flow in Device Update Center:
 
@@ -51,7 +51,7 @@ If you work with IoT devices, you might be wondering if Windows 10 IoT Core Serv
 
 ## Getting started
 
-Windows 10 IoT Core Services is currently available in preview through Azure at a discounted rate. If you already meet the prerequisites below and are familiar with creating resources in  Azure, you can skip straight to the [Windows 10 IoT Core Services](http://aka.ms/iotservice) page on Azure.com and the [Create blade in the Azure Portal](https://aka.ms/iotservicesubscribe) to get started. For more details on these steps, keep reading below.
+Windows 10 IoT Core Services is available through Azure, Cloud Solutions Provider, and OEM channels. If you already meet the prerequisites below and are familiar with creating resources in  Azure, you can skip straight to the [Windows 10 IoT Core Services](http://aka.ms/iotservice) page on Azure.com and the [Create blade in the Azure Portal](https://aka.ms/iotservicesubscribe) to get started. For more details on these steps, keep reading below.
 
 ### Prerequisites
 
@@ -71,7 +71,7 @@ After you've completed the prerequisites above, follow these steps when you are 
    - **Name**: This is a friendly name for this instance of the Windows 10 IoT Core Services resource. This name is only used in the Azure Portal. Pick something that will help you distinguish this resource instance from others you might add to your Azure subscription. For example, consider a name that describes this group of devices such as "Industrial Extraction Monitor Device - Preproduction".
    - **Quantity**: Specify the number of devices to use with this resource. If you need to add more devices later, you can increase the quantity of devices using this resource or you can create a separate resource to track the additional devices. The minimum quantity is 10. If you have more than 500,000 devices, create separate resource instances with at most 500,000 devices per instance.
    - **Billing AAD domain name**: This corresponds to the Azure Active Directory domain name associated with the organization that is purchasing this resource. This field is automatically populated with the AAD domain of the user currently logged into the Azure Portal.
-   - **Admin AAD domain name**: This corresponds to the Azure Active Directory domain name associated with the organization that logs into Device Update Center to manage the system image for the device. By default (or if left blank), this field is populated with the AAD domain of the user currently logged into the Azure Portal. However, it can be changed to a different AAD domain, if needed.
+   - **Admin AAD domain name**: This corresponds to the Azure Active Directory domain name associated with the organization that logs into Device Update Center to publish updates for the system image for the device. By default (or if left blank), this field is populated with the AAD domain of the user currently logged into the Azure Portal. However, it can be changed to a different AAD domain, if needed.
    - **Notes**: This is a free-form text field to attach your own custom notes to this resource instance. This optional field is only used in the Azure Portal to help you organize your resources.
    - **Subscription**: Specify the Azure subscription to use for purchasing this resource. For more details on which subscriptions are available in your account, see the Subscriptions section of the Azure Portal in the navigation pane on the left.
    - **Resource group**: Specify the Resource Group to use for organizing this resource. All resources in Azure are organized into [Resource Groups](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.ResourceGroup). You can use an existing group or create a new resource group when creating this resource.
