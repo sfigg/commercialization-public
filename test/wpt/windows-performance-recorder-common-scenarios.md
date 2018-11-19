@@ -7,8 +7,8 @@ MSHAttr:
 ms.assetid: 217ECDF0-1B6D-4995-85DE-22708D608D5E
 ms.mktglfcycl: operate
 ms.sitesec: msdn
-ms.author: eliotgra
-ms.date: 05/05/2017
+ms.author: dawn.wood
+ms.date: 11/20/2018
 ms.topic: article
 ---
 
@@ -44,8 +44,6 @@ This section includes topics that describe how to perform specific tasks by usin
 </tr>
 </tbody>
 </table>
-
- 
 
 ## Related topics
 
