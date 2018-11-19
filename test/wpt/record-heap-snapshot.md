@@ -12,22 +12,23 @@ ms.date: 11/19/2018
 ms.topic: article
 ---
 
-# Record a Heap Snapshot
+# Recording a Heap Snapshot
 
 Windows Performance Recorder (WPR) enables snapshot of heap for specific processes on the system.
 
-This heap snapshot is different from the [heap analysis recording](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/recording-for-heap-analysis), as it takes snapshot view of heap. For example, a Heap Snapshot saves all heap allocation information in the database. When the SingleSnapshot command is executed, it exports the allocation information to the trace buffer. The snapshot contains allocation information including all stacks that are created after the snapshot was enabled. 
+This heap snapshot is different from the [heap analysis recording](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/recording-for-heap-analysis), as it takes snapshot view of heap. For example, a Heap Snapshot saves all heap allocation information in the database. When the **SingleSnapshot** command is executed, it exports the allocation information to the trace buffer. The snapshot contains allocation information including all stacks that are created after the snapshot was enabled. 
 
 ## To capture a heap snapshot trace
 
 1. Enable the heap snapshot trace
 There two ways of enabling a heap snapshot trace, by process name and by process ID. 
 
-The following example uses image name: 
+The following example uses the process name: 
 ```
  wpr -snapshotconfig heap -name heaptest.exe           //query snapshot config
  wpr -snapshotconfig heap -name heaptest.exe enable    //enable snapshot config
- Example using PID: 
+
+ The following example uses the process ID or PID: 
  wpr -snapshotconfig heap -pid 8048 enable                //enable snapshot config
  ```
 
@@ -49,6 +50,7 @@ Each time a snapshot is triggered, the allocation stack database is exported to 
  ```
 
 4.	Stop the trace
+
 * save the trace 
 * execute this command:
 
@@ -59,18 +61,19 @@ wpr -stop heapsnapshot.etl
 5.	Disable the heap snapshot
 You can disable the heap using the PID or Name. Here are examples of both. 
 
-Using PID: 
-```
- wpr -snapshotconfig heap -pid %_PID% disable
- ```
 Using Name:
 ```
 wpr -snapshotconfig heap -name Win32Project1.exe disable
 ```
 
+Using PID: 
+```
+ wpr -snapshotconfig heap -pid %_PID% disable
+ ```
+
 **Note:**
-If the -name option is used to enable heap snapshot, it sets IFEO registry internally and will apply to all new instances of the process. Disable it by using the SnapshotConfig option when testing is finished to avoid unnecessary heap collection.
-Also, if the cpu architecture of process and OS is not matching (running win32 app on 64bit OS), use the name option (IFEO).
+If the -name option is used to enable the heap snapshot, it sets the IFEO registry internally and will apply to all new instances of the process. Disable it by using the SnapshotConfig option when testing is finished to avoid unnecessary heap collection.
+Also, if the cpu architecture of process and OS does not match ( for example, running win32 app on 64bit OS), use the name option (IFEO).
 
 
 ## Related topics
