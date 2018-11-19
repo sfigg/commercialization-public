@@ -64,6 +64,10 @@ This section documents the interfaces that the WPRControl API provides.
 <td><p><a href="iprofilecollection.md" data-raw-source="[IProfileCollection](iprofilecollection.md)">IProfileCollection</a></p></td>
 <td><p>Represents a collection of profiles that the library runs as a unit.</p></td>
 </tr>
+<tr class="odd">
+<td><p>[ISnapshotManager3](isnapshotmanager3.md)</p></td>
+<td><p>Represents a snapshot object that the client controls to enable, disable, and take the snapshot. </p></td>
+</tr>
 <tr class="even">
 <td><p><a href="itracemergeproperties.md" data-raw-source="[ITraceMergeProperties](itracemergeproperties.md)">ITraceMergeProperties</a></p></td>
 <td><p>Enables the client to specify policies for merging multiple event trace log (ETL) files using XML.</p></td>
