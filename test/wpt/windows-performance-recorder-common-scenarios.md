@@ -10,8 +10,6 @@ ms.sitesec: msdn
 ms.author: eliotgra
 ms.date: 05/05/2017
 ms.topic: article
-
-
 ---
 
 # Windows Performance Recorder common scenarios
@@ -39,6 +37,10 @@ This section includes topics that describe how to perform specific tasks by usin
 <tr class="odd">
 <td><p><a href="stop-a-recording.md" data-raw-source="[Stop a Recording](stop-a-recording.md)">Stop a Recording</a></p></td>
 <td><p>Add test computers, images and unattend answer files to inventory, and add out-of-box drivers to the driver store.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Record a Heap Snapshot](record-heap-snapshot.md)</p></td>
+<td><p>Windows Performance Recorder (WPR) enables snapshot of heap for specific processes on the system.</p></td>
 </tr>
 </tbody>
 </table>
