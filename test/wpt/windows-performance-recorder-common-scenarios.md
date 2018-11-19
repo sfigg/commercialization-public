@@ -39,14 +39,13 @@ This section includes topics that describe how to perform specific tasks by usin
 <td><p>Add test computers, images and unattend answer files to inventory, and add out-of-box drivers to the driver store.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Record a Heap Snapshot](record-heap-snapshot.md)</p></td>
+<td><p><a href="record-heap-snapshot.md" data-raw-source="[Record a Heap Snapshot](record-heap-snapshot.md")>Record a Heap Snapshot</p></a></td>
 <td><p>Windows Performance Recorder (WPR) enables snapshot of heap for specific processes on the system.</p></td>
 </tr>
 </tbody>
 </table>
 
 ## Related topics
-
 
 [Windows Assessment Services Technical Reference](../assessments/windows-assessment-services-technical-reference.md)
 
