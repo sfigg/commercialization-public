@@ -29,6 +29,7 @@ Configures snapshot using the provided process id.
 
 ## Return Value
 The following table describes possible return values.
+
 | Return Value | Description |
 |--------------|-------------|
 | S_OK	| The configuration was successful for the specified processes. |
