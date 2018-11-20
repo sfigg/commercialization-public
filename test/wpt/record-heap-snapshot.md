@@ -27,14 +27,18 @@ The following example uses the process name:
 ```
  wpr -snapshotconfig heap -name heaptest.exe           //query snapshot config
  wpr -snapshotconfig heap -name heaptest.exe enable    //enable snapshot config
+```
 
- The following example uses the process ID or PID: 
+ The following example uses the process ID or PID:
+ ``` 
  wpr -snapshotconfig heap -pid 8048 enable                //enable snapshot config
  ```
 
 2.	Start tracing using wpr or wprui
-```
+
 using wpr :
+
+```
 wpr -start heapsnapshot -filemode                          
 ```
 
@@ -45,21 +49,23 @@ If -name option was used to enable heap snapshot, you need to launch the process
 Each time a snapshot is triggered, the allocation stack database is exported to the trace buffers. A single snapshot (can be used multiple times), for example:
 ```
  wpr -singlesnapshot heap <pid for foo.exe>
-	Periodic snapshot:
+ ```
+   Periodic snapshot:
+```
  wpr -enableperiodicsnapshot heap <frequency in seconds> <pid for foo.exe>
  ```
 
 4.	Stop the trace
 
-* save the trace 
-* execute this command:
+Save the trace by using wprui, or wpr.
 
 ```
 wpr -stop heapsnapshot.etl
 ```
 
 5.	Disable the heap snapshot
-You can disable the heap using the PID or Name. Here are examples of both. 
+<br/>
+You can disable the heap using the PID or Name. Here are examples of both.  
 
 Using Name:
 ```
@@ -77,4 +83,6 @@ Also, if the cpu architecture of process and OS does not match ( for example, ru
 
 
 ## Related topics
-Snapshotconfig
+
+* [Snapshotconfig](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/wpr-command-line-options#snapshotconfig)
+*
