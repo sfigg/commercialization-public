@@ -12,7 +12,7 @@ ms.topic: article
 
 ---
 
-# Turning Swift Pair on by Default for Windows Device Makers
+## Swift Pair
 
 Introduced in Windows 10, version 1803, Swift Pair is the newest way to pair your Bluetooth peripherals to Windows 10 PCs. This topic describes the feature, requirements about how peripherals can support Swift Pair, frequently asked questions about how this quick and convenient feature works.
 
@@ -24,8 +24,6 @@ As the next evolution of pairing, users no longer need to navigate the Settings 
 4. When the peripheral is no longer in pairing mode or is no longer nearby, Windows will remove the notification from the Action Center
 
 ![Swift Pair <>](../images/notificationpairsmall.gif)
-
-## Swift Pair
 
 If at any time, a user wishes to turn Swift Pair on or off, they can do so in the “Bluetooth & other devices” page. Enterprises will also be able to control this feature through the [Bluetooth\AllowPromptedProximalConnections](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth) in the Policy CSP and with any existing Mobile Device Management solution.
 
