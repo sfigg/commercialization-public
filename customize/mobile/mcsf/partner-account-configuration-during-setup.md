@@ -120,7 +120,7 @@ Partners must meet the following requirements when configuring this customizatio
          
         </Settings>  
 
-        <!-- For multiple supported phone langauges, add your base MUI DLL file and specify the 
+        <!-- For multiple supported phone languages, add your base MUI DLL file and specify the 
              language MUI packages (*.dll.mui) 
 
         <Settings Path="Localization/MUI">  
@@ -182,7 +182,7 @@ API                                                                             
 
 1.  Preload the apps to the mobile device using the following code example.
 
-    ```
+    ```xml
         <!-- Preload up to 5 apps to use as the hub and spoke apps -->
         <Applications>
           <Application Source=""

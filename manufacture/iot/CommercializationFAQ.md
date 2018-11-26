@@ -19,7 +19,7 @@ Windows 10 IoT is the replacement for the Windows Embedded product lines.
 
 **How do you support Windows 10 IoT Core? Do you have LTSB and LTSC support for 10 years, similarly to Windows 10 IoT Enterprise?**
 
-Yes, we recently announced LTSC for Windows 10 IoT Core and Enterprise. You can read more about this announcement [here](https://blogs.windows.com/business/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#MmJYmvwyK7y8YADs.97).
+Yes, we recently announced LTSC for Windows 10 IoT Core and Enterprise. You can read more about this announcement [here](https://www.microsoft.com/en-us/microsoft-365/blog/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/).
 
 **What will happen six months after I’ve signed the agreement?**
 
