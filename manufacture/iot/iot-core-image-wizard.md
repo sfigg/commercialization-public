@@ -18,7 +18,7 @@ Using the IoT Core Image Wizard, the process of creating your first image for yo
 
 ## Download link
 
-When the preview of the tool is released, the download link will be added here.
+Download the [IoT Core Image Wizard](https://iottools.blob.core.windows.net/iotcoreimagewizard/WindowsIoTCoreImageWizard.zip).
 
 ## Setup instructions
 
@@ -31,6 +31,7 @@ When the preview of the tool is released, the download link will be added here.
 
 - Only supports creating a new workspace.  Cannot open/edit a workspace.  Use the [Powershell Commands](iot-core-adk-addons-command-line-options.md) to open/edit a workspace.
 - Just debug configurations of image builds.  If you need to build retail images, use the [Powershell Commands](iot-core-adk-addons-command-line-options.md).
+- Errors with creating a recovery image.  Make sure the OS version matches or is newer than the kits' version.  Also, all the kits need to be the same version.
 
 ## Related topics
 
