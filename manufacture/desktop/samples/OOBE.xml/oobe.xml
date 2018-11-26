@@ -1,0 +1,57 @@
+<FirstExperience>
+  <oobe>
+    <oem>
+      <name>Fabrikam</name>
+      <eulafilename>eula.rtf</eulafilename>
+      <computername>Fabrikam-PC</computername>
+      <registration>
+        <title>Register your PC</title>
+        <subtitle>This page will help Fabrikam know about you.</subtitle>
+        <customerinfo>
+          <label>Let Fabriakm contact you</label>
+          <defaultvalue>true</defaultvalue>
+        </customerinfo>
+        <checkbox1>
+          <label>Use Contoso Antimalware to help protect your PC</label>
+          <defaultvalue>true</defaultvalue>
+        </checkbox1>
+        <checkbox2>
+          <label>Let Fabrikam send you offers</label>
+        </checkbox2>
+        <checkbox3>
+          <label>Let Fabrikam send you offers</label>
+        </checkbox3>
+        <link1>
+          <label>Learn more about Contoso Antimalware</label>
+        </link1>
+        <link2>
+          <label>Learn more about Fabrikam offers</label>
+        </link2>
+        <link3>
+          <label>Fabrikam privacy statement</label>
+        </link3>
+        <hideSkip>true</hideSkip>
+      </registration>
+    </oem>
+    <defaults>
+      <language>1033</language>
+      <location>244</location>
+      <keyboard>0409:00000409</keyboard>
+      <timezone>Central Europe Daylight Time</timezone>
+      <adjustForDST>true</adjustForDST>
+    </defaults>
+    <hidSetup>
+      <title>Pair Your Fabrikam MouseKeyboard</title>
+      <mouseImagePath>c:\fabrikam\mouse.png</mouseImagePath>
+      <mouseErrorImagePath>c:\fabrikam\errormouse.png</mouseErrorImagePath>
+      <mouseText>Pair your mouse now.</mouseText>
+      <mouseErrorText>Something has gone wrong.</mouseErrorText>
+      <keyboardImagePath>c:\fabrikam\keyboard.png</keyboardImagePath>
+      <keyboardErrorImagePath>C:\fabrikam\errorkeyboard.png</keyboardErrorImagePath>
+      <keyboardText>Now pair the keyboard.</keyboardText>
+      <keyboardErrorText>Keyboard pairing did not happen.</keyboardErrorText>
+      <keyboardPINImagePath>c:\fabrikam\keyboardpin.png</keyboardPINImagePath>
+      <keyboardPINText>Enter the PIN for your keyboard.</keyboardPINText>
+    </hidSetup>
+  </oobe>
+</FirstExperience>
