@@ -140,7 +140,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 3.  Power it on.
 
-    After a short while, the device should start automatically, and you should see the [IoT Core Default app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) (code-named "Bertha"), which shows basic info about the image.
+    After a short while, the device should start automatically, and you should see the [IoT Core Default app](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) (code-named "Bertha"), which shows basic info about the image.
 
     **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
 
