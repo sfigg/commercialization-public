@@ -16,7 +16,7 @@ ms.topic: article
 
 Customizations are ways that you can modify the Windows device UI, connectivity settings, and user experience to better reflect your brand and to meet the requirements of the network and market in which the device will ship. Customizations can include adding apps, modifying the Start layout, configuring network settings using device management, changing the default values in the Settings screen, or adding new wallpapers.
 
-Windows 10 Mobile supports two customization frameworks: MCSF and Windows provisioning. For more information about each framework, see [Customizations for mobile devices](https://msdn.microsoft.com/library/windows/hardware/mt481438).
+Windows 10 Mobile supports two customization frameworks: MCSF and Windows provisioning. For more information about each framework, see [Customizations for mobile devices](https://msdn.microsoft.com/library/windows/hardware/mt481438).
 
 In this section, we'll focus on adding the Start layout modification file, preloading an app, and configuring some customization settings using MCSF.
 
@@ -56,7 +56,7 @@ If you don't have a pre-existing MCSF CAF, follow this walkthrough to learn how 
           </TargetState>  
         </Target> 
       </Targets>  
-      
+
       <!-- Use to specify the customizations for a single variant when used without the Variant element, 
            or customizations that apply to all variants when used with the Variant element -->
       <Static>  
@@ -142,7 +142,7 @@ If you don't have a pre-existing MCSF CAF, follow this walkthrough to learn how 
           </TargetState>  
         </Target> 
       </Targets>  
-      
+
     ```
 
     To learn more about all the supported **Condition Name**s that you can use, see the section *Target, TargetState, Condition, and priorities* in [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108). Note that in this walkthrough we are not using a provisioning package to declare our multivariant settings; instead, we are adding this directly into the MCSF CAF.
@@ -239,9 +239,9 @@ In this section, we'll use the Start MCSF settings to add the Start layout modif
       </Variant>  
     ```
 
-**Note**  `LayoutModificationFilePath` is a FirstVariationOnly setting, which means that it can only be modified during first variation, which is typically when the first valid configuration is found (such as when a SIM is inserted and a marked configuration is found for the SIM). If the configuration changes, such as during a SIM swap, the value for the FirstVariationOnly setting will not be changed again.
+**Note**  `LayoutModificationFilePath` is a FirstVariationOnly setting, which means that it can only be modified during first variation, which is typically when the first valid configuration is found (such as when a SIM is inserted and a marked configuration is found for the SIM). If the configuration changes, such as during a SIM swap, the value for the FirstVariationOnly setting will not be changed again.
 
- 
+
 
 In this example, when the device boots after flashing a new mobile image and there is no SIM is inserted into the mobile device or a SIM for the fictitious Fabrikam mobile operator (MCC=310, MNC=610) is already in the device, LayoutModification1.xml (Start layout with a folder) will be used. If a SIM for the fictitious The Phone Company (MCC=410, MNC=510) is inserted after this, the Start layout will not change. However, if the device boots after flashing a new mobile image and there is already a SIM for The Phone Company inserted in the device, LayoutModification2.xml (Start layout with no folder) will be used instead.
 
@@ -250,9 +250,9 @@ In this example, when the device boots after flashing a new mobile image and the
 
 Partners can preload apps to be packaged and configured to install on mobile devices during the initial device setup process. In addition to preloading games, lifestyle apps, and other genres of apps, partners can preload system settings apps or partner account setup apps, just to name a few. For more information about preloading apps, see [Preinstallable apps for mobile devices](https://msdn.microsoft.com/library/windows/hardware/dn707972).
 
-**Important**  In Windows 10, if you are working with an app developer or creating your own app to preload on the device, you must now request a preinstallation package for the app. For more information about this part of the process, see [Generate preinstall packages for OEMs](http://go.microsoft.com/fwlink/p/?LinkId=624851). The .zip file that's returned as part of this process should contain the app's source file (such as an .appx, .appxbundle, or .xap), a provisioning file (.provxml), and a license file (.xml). If your preinstall package does not contain all of these files, you can't successfully preload the app.
+**Important**  In Windows 10, if you are working with an app developer or creating your own app to preload on the device, you must now request a preinstallation package for the app. For more information about this part of the process, see [Generate preinstall packages for OEMs](http://go.microsoft.com/fwlink/p/?LinkId=624851). The .zip file that's returned as part of this process should contain the app's source file (such as an .appx, .appxbundle, or .xap), a provisioning file (.provxml), and a license file (.xml). If your preinstall package does not contain all of these files, you can't successfully preload the app.
 
- 
+
 
 **To preload an app**
 
@@ -271,9 +271,9 @@ Partners can preload apps to be packaged and configured to install on mobile dev
             </Applications>
         ```
 
-        **Note**  You can add the **Applications** section within the **Static** section of the CAF, which means the app will be installed for all images regardless of the variant, or you can add it within a particular **Variant**, which means it will only be installed for a particular variant. If you are preloading more than one app, one can be common to all variants (or within the **Static** section), while another applies only to a particular variant (or within a **Variant** section). An example of the latter case can be when you have an app that you only need to install for one particular mobile operator, or country/region, and so on.
+        **Note**  You can add the **Applications** section within the **Static** section of the CAF, which means the app will be installed for all images regardless of the variant, or you can add it within a particular **Variant**, which means it will only be installed for a particular variant. If you are preloading more than one app, one can be common to all variants (or within the **Static** section), while another applies only to a particular variant (or within a **Variant** section). An example of the latter case can be when you have an app that you only need to install for one particular mobile operator, or country/region, and so on.
 
-         
+
 
     2.  Set **Source** to the location and name of your app source file; for example, *C:\\Contoso\\Customizations\\Apps\\SampleApp.appx*.
 
@@ -355,11 +355,13 @@ In order to ship a mobile device, at a minimum, you must set the required settin
     </tbody>
     </table>
 
-     
 
-    **Note**  You will need to contact your Microsoft representative to find out the value that you should use for `PhoneManufacturer`.
 
-     
+~~~
+**Note**  You will need to contact your Microsoft representative to find out the value that you should use for `PhoneManufacturer`.
+~~~
+
+
 
 3.  Within the **Variant** section of the CAF, add a `DeviceInfo/Variant` settings group.
 
@@ -384,7 +386,7 @@ In order to ship a mobile device, at a minimum, you must set the required settin
           <Setting Name="PhoneModelName" Value="" /> 
           <Setting Name="RoamingSupportPhoneNumber" Value="" />
        </Settings> 
-     
+
       </Variant>  
     ```
 
@@ -415,7 +417,7 @@ In order to ship a mobile device, at a minimum, you must set the required settin
     </tbody>
     </table>
 
-     
+
 
 4.  Save the CAF when you are done adding all the values for the required settings or any optional settings you choose to set. Follow the guidance in [Phone metadata in DeviceTargetingInfo](https://msdn.microsoft.com/library/windows/hardware/dn772214) to make sure you set the correct values and their formats.
 
@@ -439,9 +441,9 @@ There are a variety of other customization settings that you can configure for W
 -   [Customizations for SMS and MMS](https://msdn.microsoft.com/library/windows/hardware/dn757449) for more info on adding encoding extension tables for SMS, maximum length for messages, intercept deny list, and many more.
 -   [Customizations for Start](https://msdn.microsoft.com/library/windows/hardware/dn757450) to change the default behavior of the Microsoft Store live tile. Note that you may configure the Start layout too, but that's covered in [Start layout for Windows 10 mobile editions](https://msdn.microsoft.com/library/windows/hardware/mt171093) and shown as an example in this walkthrough.
 
- 
 
- 
+
+
 
 
 

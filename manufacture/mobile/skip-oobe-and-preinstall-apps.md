@@ -33,11 +33,11 @@ For example, to add the Settings app to the manufacturing profile, you would add
 
 Here are some things to consider when adding apps to a manufacturing profile:
 
--   The manufacturing profile must not disable any Windows services.
--   The value of the registry key is reserved. Only the registry key name is used.
--   The app can be a first or second party app, but the app package must be a part of the image.
--   The \* wildcard can be used in the name of the app.
--   If you want the normal OOBE experience (with all apps installed), create a single registry key with the name of **\***.
+- The manufacturing profile must not disable any Windows services.
+- The value of the registry key is reserved. Only the registry key name is used.
+- The app can be a first or second party app, but the app package must be a part of the image.
+- The \* wildcard can be used in the name of the app.
+- If you want the normal OOBE experience (with all apps installed), create a single registry key with the name of **\\***.
 
 ### <span id="Find_the_name_of_the_app"></span><span id="find_the_name_of_the_app"></span><span id="FIND_THE_NAME_OF_THE_APP"></span>Find the name of the app
 
@@ -90,9 +90,9 @@ You add the registry keys to your custom manufacturing profile package like you 
 </Package>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

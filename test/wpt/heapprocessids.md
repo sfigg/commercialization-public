@@ -24,7 +24,7 @@ Represents a collection of heap process identifiers.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
   * \<[HeapEventProvider](heapeventprovider.md)&gt;
-     * \<**HeapProcessIds**&gt;
+     * \<**HeapProcessIds**&gt;
   * \<[Profiles](profiles.md)&gt;
     * \<[Profile](profile-wpr.md)&gt;
       * \<[Collectors](collectors.md)&gt;

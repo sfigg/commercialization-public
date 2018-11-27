@@ -45,7 +45,7 @@ If the selected region doesn’t match any of these regions, then Windows displa
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -96,9 +96,9 @@ The following XML output shows how to configure a set of Apps that apply to only
 
 [UserLocale](microsoft-windows-international-core-userlocale.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,7 +47,7 @@ The THERMAL\_POLICY struct is used with the [IOCTL\_THERMAL\_READ\_POLICY](ioctl
 </tbody>
 </table>
 
- 
+ 
 
 ## Members
 
@@ -103,9 +103,9 @@ Specifies the index (from 0 through 9) of the current set of active cooling devi
 
 [Thermal management in Windows](thermal-management-in-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

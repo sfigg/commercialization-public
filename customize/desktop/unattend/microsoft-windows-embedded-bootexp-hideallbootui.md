@@ -47,7 +47,7 @@ Suppresses all Windows UI elements (logo, status indicator, and status message) 
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -77,9 +77,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,7 +38,7 @@ Accelerators are menu options in Internet Explorer that help to automate common 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output specifies adding two Accelerators.
 
 [Accelerator](microsoft-windows-ie-internetexplorer-accelerators-accelerator.md)
 
- 
+ 
 
- 
+ 
 
 
 

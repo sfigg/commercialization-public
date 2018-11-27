@@ -26,7 +26,7 @@ This action produces a text report that summarizes the metrics for disk I/O.
 ## Options
 
 
-<a href="" id="-util-n-"></a>**-util***\[n\]*  
+<a href="" id="-util-n-"></a>**-util**<em>\[n\]</em>  
 Shows disk utilization for n-second intervals. The default is 1 second.
 
 <a href="" id="-summary"></a>**-summary**  
@@ -53,9 +53,9 @@ If no report type is selected, the default is to show disk utilization report.
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

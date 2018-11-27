@@ -54,25 +54,25 @@ The following table describes the functions that this interface provides.
 <td><p>Returns the value of the specified property.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetText](gettext.md)</p></td>
+<td><p><a href="gettext.md" data-raw-source="[GetText](gettext.md)">GetText</a></p></td>
 <td><p>Obtains the string from the specified file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WaitForText](waitfortext.md)</p></td>
+<td><p><a href="waitfortext.md" data-raw-source="[WaitForText](waitfortext.md)">WaitForText</a></p></td>
 <td><p>Waits until the user adds the appropriate text strings and calls.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetFileName](getfilename.md)</p></td>
+<td><p><a href="getfilename.md" data-raw-source="[GetFileName](getfilename.md)">GetFileName</a></p></td>
 <td><p>Obtains the file name.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetNGenPdbsPath](getngenpdbspath.md)</p></td>
+<td><p><a href="getngenpdbspath.md" data-raw-source="[GetNGenPdbsPath](getngenpdbspath.md)">GetNGenPdbsPath</a></p></td>
 <td><p>Obtains the path to NGEN PDBs.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Properties
 
@@ -98,16 +98,16 @@ The following table describes the properties that this interface provides.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

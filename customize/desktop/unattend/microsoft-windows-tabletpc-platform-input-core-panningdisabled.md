@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -71,9 +71,9 @@ The following XML output shows how to disable panning on a Tablet PC.
 
 [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

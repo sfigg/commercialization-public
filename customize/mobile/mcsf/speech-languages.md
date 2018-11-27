@@ -112,7 +112,7 @@ To modify the list of speech languages, you must edit the **Speech** section of 
 </tbody>
 </table>
 
- 
+ 
 
 To include one speech language, add one **Language** entry to the **Speech** section of the OEMInput.xml file as shown in the following example:
 

@@ -40,7 +40,7 @@ To configure an accelerator, add an AcceleratorXML file to the local computer, a
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -81,9 +81,9 @@ The following XML output specifies adding two Accelerators.
 
 [Accelerator](microsoft-windows-ie-internetexplorer-accelerators-accelerator.md)
 
- 
+ 
 
- 
+ 
 
 
 

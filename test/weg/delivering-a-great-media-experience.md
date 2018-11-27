@@ -94,7 +94,7 @@ You can use the Hardware Lab Kit (HLK) to ensure that your Windows device meets 
 HLK tests related to media playback include:
 
 <dl>
-<dt>**Glitch-Free HD Playback Test**</dt>
+<dt><strong>Glitch-Free HD Playback Test</strong></dt>
 <dd>
 <p>Plays back 1080p video content and reports the number of audio and temporal video glitches. This test can optionally generate verbose performance traces that can be analyzed in performance tools like Media eXperience Analyzer.</p>
 </dd>
@@ -103,13 +103,13 @@ HLK tests related to media playback include:
 You can use the Windows Assessment Toolkit to improve the performance of your Windows device beyond minimum requirements. Windows assessments related to media playback include: 
 
 <dl>
-<dt>**Streaming Media Performance**</dt>
+<dt><strong>Streaming Media Performance</strong></dt>
 <dd>
 <p>Measures the streaming media quality of HTML5 video playback in Internet Explorer. Verbose ETW logs contain information necessary for diagnosing the cause of the performance issues identified by the test. We recommend that you set up the streaming server on a system that is different from the client.</p>
 <ul>
 <li>Requires second system on the network to host streaming server process
 </li>
-<li>To set up the server, follow the instructions in [Set Up a Remote Server for the Streaming Media Performance Assessment](http://msdn.microsoft.com/en-us/library/windows/hardware/hh825310.aspx).
+<li>To set up the server, follow the instructions in <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/hh825310.aspx" data-raw-source="[Set Up a Remote Server for the Streaming Media Performance Assessment](http://msdn.microsoft.com/en-us/library/windows/hardware/hh825310.aspx)">Set Up a Remote Server for the Streaming Media Performance Assessment</a>.
 </li>
 <li>Change the assessment parameters to reflect the server configuration. For example:
 
@@ -178,7 +178,7 @@ You can use Media eXperience Analyzer, a performance analysis and visualization 
 <dl>
 <dt>Long-running Interrupt Service Routines (ISR) and Deferred Procedure Calls (DPC)</dt>
 <dd>
-<p>An *ISR* happens when the kernel's interrupt dispatcher transfers control to a device driver routine when a device issues an interrupt. In the Windows I/O model, ISRs run at a high device interrupt request level (IRQL), so that they perform as little work as possible to avoid blocking lower-level interrupts unnecessarily. An ISR usually queues a DPC, which runs at a lower IRQL, to execute the rest of interrupt processing. DPCs shouldn't run longer than 100 microseconds, and ISRs shouldn’t run longer than 25 microseconds.</p>
+<p>An <em>ISR</em> happens when the kernel&#39;s interrupt dispatcher transfers control to a device driver routine when a device issues an interrupt. In the Windows I/O model, ISRs run at a high device interrupt request level (IRQL), so that they perform as little work as possible to avoid blocking lower-level interrupts unnecessarily. An ISR usually queues a DPC, which runs at a lower IRQL, to execute the rest of interrupt processing. DPCs shouldn&#39;t run longer than 100 microseconds, and ISRs shouldn’t run longer than 25 microseconds.</p>
 <p>In addition to other system performance effects, long-running ISRs and DPCs can cause delays in the audio engine that result in audio glitches. An ISR or DPC running for longer than 1 to 3 ms can affect media performance on a system. Like long-running ISRs and DPCs, frequent ISRs and DPCs (an ISR/DPC storm) can have similar effects on performance. Usually such ISR and DPC problems are found in network, storage, and graphics drivers. The assessment generates a warning for long-running ISR/DPCs between 1 and 3 ms and an error for durations longer than 3 ms.</p>
 </dd>
 <dt>Kernel worker thread running at dispatch level</dt>

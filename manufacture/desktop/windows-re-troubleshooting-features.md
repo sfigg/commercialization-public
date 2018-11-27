@@ -25,7 +25,7 @@ If the system detects a boot failure on a computer running Windows, the system a
 **Note**  
 Boot failure detection relies on boot completion and not whether an error occurred in Windows 8. For example, a false positive may occur if power is lost during the boot process, and your user starts Windows RE even though the Windows installation is bootable.
 
- 
+ 
 
 Because the failover mechanism relies on the Windows boot manager and the Windows boot loader, some failures can make Windows RE inaccessible. In the following scenarios, your user must use the bootable Windows RE media to recover the computer:
 
@@ -59,7 +59,7 @@ If you set up a scheduled file backup, you can include a system image with only 
 **Note**  
 Previous system image versions are copies of the files and folders saved automatically by Windows as part of the system protection process. Depending on the type of file or folder, your users can open a previous version, save the version to a different location, or restore a previous version. Your users can use these previous versions to restore accidentally modified, deleted, or damaged files or folders. However, because Windows replaces these files with new versions the files won't be available if the drive fails.
 
- 
+ 
 
 ### <span id="bkmk_d"></span><span id="BKMK_D"></span>Command Prompt
 
@@ -76,9 +76,9 @@ Computer manufacturers can provide custom support and recovery tools. These tool
 
 [REAgentC Command-Line Options](reagentc-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,7 +49,7 @@ This class represents the operating system architecture and platform information
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.OSPlatform**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.OSPlatform**
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -61,9 +61,9 @@ OS Platform is a combination of the architecture and the Operating System SKU.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

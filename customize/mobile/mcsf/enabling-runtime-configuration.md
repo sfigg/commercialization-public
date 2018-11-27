@@ -23,7 +23,7 @@ The OS will handle different scenarios depending on whether runtime configuratio
 **Note**  
 By enabling runtime configuration, SIM-based language detection will also be enabled.
 
- 
+ 
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 
@@ -79,7 +79,7 @@ By enabling runtime configuration, SIM-based language detection will also be ena
     </tbody>
     </table>
 
-     
+     
 
 The registry key for enabling or disabling runtime configuration is below. This registry key can have a value of 1 or 0 where 1 represents enabled and 0 represents disabled.
 

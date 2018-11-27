@@ -19,7 +19,7 @@ Field Medic is an app that you can use to gather Event Tracing for Windows (ETW)
 
 **Note**  MTP is enabled on all retail devices by default. It allows for the easy extraction of output files such as Field Medic reports without requiring TShell or other test tools to be enabled. However, you must disable kernel debugging interfaces over USB (KDNET, KDUSB) for MTP to work correctly.
 
- 
+ 
 
 ## Installing Field Medic
 
@@ -30,9 +30,9 @@ There are two ways to install the Field Medic app.
 
 2.  Preload the app. The app is included with the MobileOS packages (in the FieldMedic folder) with a license and provisioning XML for partners who want to preload the app.
 
- 
+ 
 
- 
+ 
 
 
 

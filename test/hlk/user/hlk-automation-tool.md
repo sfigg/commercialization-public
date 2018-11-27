@@ -18,15 +18,15 @@ ms.topic: article
 
 This topic guides you through a series of scripting-supported steps to automate Windows HLK driver, system, and software device testing. This allows you to run the Windows HLK tests without using the Windows HLK user interface (UI).
 
->[!NOTE]
->  
-There is a known issue with the Windows HLK execution engine. When a test has halted or the system has stopped a machine and the Windows HLK Object Model interprets the test as still running, the Windows HLK execution engine does not recognize the condition and can continue to monitor the test execution indefinitely (or until the timeout value of the project is reached). The root cause for this issue is that Windows HLK execution engine gets the test result from the Windows HLK ObjectModel; in this case, it therefore thinks that the test is still running and does not start the machine monitor to wait for recovery.
+> [!NOTE]
+> 
+> There is a known issue with the Windows HLK execution engine. When a test has halted or the system has stopped a machine and the Windows HLK Object Model interprets the test as still running, the Windows HLK execution engine does not recognize the condition and can continue to monitor the test execution indefinitely (or until the timeout value of the project is reached). The root cause for this issue is that Windows HLK execution engine gets the test result from the Windows HLK ObjectModel; in this case, it therefore thinks that the test is still running and does not start the machine monitor to wait for recovery.
 
 We recommend that you manually cancel the job and reboot the machine to alert ObjectModel. You might need to rerun the failed/cancelled test by using a shortended test collection file, or run it manually by using Windows HLK Studio. This issue will be addressed in future releases.
 
- 
+ 
 
-The process for running the Windows HLK tests in a series of scripted steps follows a workflow that is similar to the [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md) Guide.
+The process for running the Windows HLK tests in a series of scripted steps follows a workflow that is similar to the [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md) Guide.
 
 ![hlk automation tools test process](images/hlk-winb-hlkautotool-process.jpg)
 
@@ -55,28 +55,28 @@ The individual steps are as follows:
 ## <span id="BKMK-prereq"></span><span id="bkmk-prereq"></span><span id="BKMK_PREREQ"></span>Windows HLK automation tools prerequisites
 
 
-Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+Before you begin testing, make sure that you are familiar with the Windows HLK automation concepts and hardware requirements. See [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md).
 
 ## <span id="BKMK-installctrl"></span><span id="bkmk-installctrl"></span><span id="BKMK_INSTALLCTRL"></span>Step 1: Install Controller and supporting programs on the test server
 
 
-The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md). You can then install the following programs:
+The test server computer should be installed with an operating system and configured as described in [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md). You can then install the following programs:
 
-1.  Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](..\getstarted\step-1-install-controller-and-studio-on-the-test-server.md).
+1. Windows HLK. For detailed instructions about how to install the Windows HLK, see [Step 1: Install Controller and Studio on the test server](../getstarted/step-1-install-controller-and-studio-on-the-test-server.md).
 
-2.  Windows PowerShell 3.0. See [KB2506143](http://www.microsoft.com/en-us/download/details.aspx?id=34595).
+2. Windows PowerShell 3.0. See [KB2506143](http://www.microsoft.com/en-us/download/details.aspx?id=34595).
 
-3.  Microsoft Excel (Excel 2007, Excel 2010, or Excel 2013).
+3. Microsoft Excel (Excel 2007, Excel 2010, or Excel 2013).
 
-4.  [Office Primary Interop Assemblies for Windows XP](http://www.microsoft.com/download/details.aspx?id=227).
+4. [Office Primary Interop Assemblies for Windows XP](http://www.microsoft.com/download/details.aspx?id=227).
 
-    >[!IMPORTANT]
-    >  
-    This specific version is required to export Excel.
+   > [!IMPORTANT]
+   > 
+   > This specific version is required to export Excel.
 
-     
+     
 
-5.  Download and copy office.dll and Microsoft.Office.Interop.Excel.dll to **%WTTSTDIO%**. Use these programs to support [Step 8: Analyze the test results in Excel](#bkmk-analyze).
+5. Download and copy office.dll and Microsoft.Office.Interop.Excel.dll to **%WTTSTDIO%**. Use these programs to support [Step 8: Analyze the test results in Excel](#bkmk-analyze).
 
 To verify the successful installation of the Windows HLK Controller software, check for the following programs in **C:\\Program Files (x86)\\Windows Kits\\8.1\\Hardware Certification Kit\\Studio** on the test server:
 
@@ -121,15 +121,15 @@ To verify the successful installation of Windows PowerShell 3.0, do the follow
 ## <span id="BKMK_installClient"></span><span id="bkmk-installclient"></span><span id="BKMK_INSTALLCLIENT"></span>Step 2: Install HLK Client on the test system(s)
 
 
-To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md).
+To install the HLK client on a test system, follow the instructions found in [Step 2: Install Client on the test system(s)](../getstarted/step-2--install-client-on-the-test-system-s-.md).
 
->[!NOTE]
->  
-When you install Windows HLK Client software on a computer, the computer is automatically added into the Windows HLK Controller Default Pool. The Default Pool is only supported in the Project Definition File that you define in the next steps.
+> [!NOTE]
+> 
+> When you install Windows HLK Client software on a computer, the computer is automatically added into the Windows HLK Controller Default Pool. The Default Pool is only supported in the Project Definition File that you define in the next steps.
 
 To locate the Hardware ID or Device Class of the testing device from the Device Manager of each test computer, see [Discovering Hardware IDs and Device Setup Classes for your Devices](http://technet.microsoft.com/library/cc733122.aspx).
 
- 
+ 
 
 ## <span id="BKMK_createPDF"></span><span id="bkmk-createpdf"></span><span id="BKMK_CREATEPDF"></span>Step 3: Create a test Project Definition File on the Controller or test server
 
@@ -142,19 +142,19 @@ An example test Project Definition File, called **C:\\Temp\\DefinitionFile\\devi
 
 ``` syntax
 <ProjectDefinitionData Controller="controllername" Database="HLKJobs" Timeout="120" User="user">
-    <Project Name="Project-win8client-x64">
-        <SchedulerType>AdaptiveOrderOptimized</SchedulerType>
-        <MultiDeviceTestGroup>true</MultiDeviceTestGroup>
-        <TestStatusToSkip>Pass</TestStatusToSkip>
-        <Product Name="Product-win8client-x64" OsPlatform="Windows 8 Client x64" MachinePool="Test">
-            <Family Name="Family-win8client-x64">
-                <Target TargetType="Device" Id="HWID"/>
-            </Family>
-            <Machine Name="TEST-CLIENT-A" Role="SUT"/>
-            <Machine Name="TEST-CLIENT-B" Role="SUT"/>
-        </Product>
-        <Packages Path="C:\temp"/>
-    </Project>
+    <Project Name="Project-win8client-x64">
+        <SchedulerType>AdaptiveOrderOptimized</SchedulerType>
+        <MultiDeviceTestGroup>true</MultiDeviceTestGroup>
+        <TestStatusToSkip>Pass</TestStatusToSkip>
+        <Product Name="Product-win8client-x64" OsPlatform="Windows 8 Client x64" MachinePool="Test">
+            <Family Name="Family-win8client-x64">
+                <Target TargetType="Device" Id="HWID"/>
+            </Family>
+            <Machine Name="TEST-CLIENT-A" Role="SUT"/>
+            <Machine Name="TEST-CLIENT-B" Role="SUT"/>
+        </Product>
+        <Packages Path="C:\temp"/>
+    </Project>
 </ProjectDefinitionData>
 ```
 
@@ -228,7 +228,7 @@ The following tables define child elements and the attributes, grouped by the XM
 </tbody>
 </table>
 
- 
+ 
 
 **Product**
 
@@ -275,7 +275,7 @@ The following tables define child elements and the attributes, grouped by the XM
 </tbody>
 </table>
 
- 
+ 
 
 **Family**
 
@@ -306,7 +306,7 @@ The following tables define child elements and the attributes, grouped by the XM
 </tbody>
 </table>
 
- 
+ 
 
 **Target**
 
@@ -342,7 +342,7 @@ The following tables define child elements and the attributes, grouped by the XM
 </tbody>
 </table>
 
- 
+ 
 
 **Machine**
 
@@ -378,7 +378,7 @@ The following tables define child elements and the attributes, grouped by the XM
 </tbody>
 </table>
 
- 
+ 
 
 **Package**
 
@@ -404,7 +404,7 @@ The following tables define child elements and the attributes, grouped by the XM
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Generating_the_Project_Definition_File"></span><span id="generating_the_project_definition_file"></span><span id="GENERATING_THE_PROJECT_DEFINITION_FILE"></span>Generating the Project Definition File
 
@@ -492,23 +492,23 @@ An example of the generated output xml file (**c:\\temp\\master.xml**) is given 
 ``` syntax
 <?xml version="1.0" ?> 
 <ArrayOfTestCollectionRecord 
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               mlns:xsd="http://www.w3.org/2001/XMLSchema">
-               <TestCollectionRecord 
-                               Name="Disk Stress (LOGO)" 
-                               Guid="738735f7-245a-4b39-9d81-20339ce31fd4" 
-                               TargetName="Disk" 
-                               TargetId="DiskId" 
-                               TargetType="Device" 
-                               HlkBuildVersion="10.000.10020.10020"
-                               TestPassIdentifier="TP001"
-                               OsPlatform="Windows 10 Client x64">
-                               <ContentLevelSet>Reliability</ContentLevelSet>
-                               <ContentLevelSet>Certification</ContentLevelSet>
-                               <ScheduleOptionSet>Distributable</ScheduleOptionSet>
-                               <ScheduleOptionSet>MultipleDEvices</ScheduleOptionSet>
-                               <FeatureMapped>Device.Storage.Hd</FeatureMapped>
-               </TestCollectionRecord>
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               mlns:xsd="http://www.w3.org/2001/XMLSchema">
+               <TestCollectionRecord 
+                               Name="Disk Stress (LOGO)" 
+                               Guid="738735f7-245a-4b39-9d81-20339ce31fd4" 
+                               TargetName="Disk" 
+                               TargetId="DiskId" 
+                               TargetType="Device" 
+                               HlkBuildVersion="10.000.10020.10020"
+                               TestPassIdentifier="TP001"
+                               OsPlatform="Windows 10 Client x64">
+                               <ContentLevelSet>Reliability</ContentLevelSet>
+                               <ContentLevelSet>Certification</ContentLevelSet>
+                               <ScheduleOptionSet>Distributable</ScheduleOptionSet>
+                               <ScheduleOptionSet>MultipleDEvices</ScheduleOptionSet>
+                               <FeatureMapped>Device.Storage.Hd</FeatureMapped>
+               </TestCollectionRecord>
 </ArrayOfTestCollectionRecord>
 ```
 
@@ -562,18 +562,18 @@ Use any text or xml editor to update the PDEF to add the location for the test c
 
 ``` syntax
 <ProjectDefinitionData Controller="controllername" Database="HLKJobs" Timeout="120" User="user">
-    <Project Name="Project-win8client-x64" TestCollectionReadLocation="C:\temp\basic.xml" TestCollectionStatusLocation="basic_collection_status.xml">
-        <MultiDeviceTestGroup>true</MultiDeviceTestGroup>
-        <TestStatusToSkip>Pass</TestStatusToSkip>
-        <Product Name="Product-win8client-x64" OsPlatform="Windows 8 Client x64" MachinePool="Test">
-            <Family Name="Family-win8client-x64">
-                <Target TargetType="Device" Id="HWID"/>
-            </Family>
-            <Machine Name="TEST-CLIENT-A" Role="SUT"/>
-            <Machine Name="TEST-CLIENT-B" Role="SUT"/>
-        </Product>
-        <Packages Path="C:\temp"/>
-    </Project>
+    <Project Name="Project-win8client-x64" TestCollectionReadLocation="C:\temp\basic.xml" TestCollectionStatusLocation="basic_collection_status.xml">
+        <MultiDeviceTestGroup>true</MultiDeviceTestGroup>
+        <TestStatusToSkip>Pass</TestStatusToSkip>
+        <Product Name="Product-win8client-x64" OsPlatform="Windows 8 Client x64" MachinePool="Test">
+            <Family Name="Family-win8client-x64">
+                <Target TargetType="Device" Id="HWID"/>
+            </Family>
+            <Machine Name="TEST-CLIENT-A" Role="SUT"/>
+            <Machine Name="TEST-CLIENT-B" Role="SUT"/>
+        </Product>
+        <Packages Path="C:\temp"/>
+    </Project>
 </ProjectDefinitionData>
 ```
 
@@ -599,30 +599,30 @@ After the command completes, the following files are created:
     ``` syntax
     <?xml version="1.0" ?> 
     <ArrayOfTestCollectionRecord 
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                   mlns:xsd="http://www.w3.org/2001/XMLSchema">
-                   <TestCollectionRecord 
-                                   Name="Disk Stress (LOGO)" 
-                                   Guid="738735f7-245a-4b39-9d81-20339ce31fd4" 
-                                   TargetName="Disk" 
-                                   TargetId="DiskId" 
-                                   TargetType="Device" 
-                                   HlkBuildVersion="10.000.10020.10020"
-                                   TestPassIdentifier="TP001"
-                                   OsPlatform="Windows 8 Client x64">
-                                   <ContentLevelSet>Reliability</ContentLevelSet>
-                                   <ContentLevelSet>Certification</ContentLevelSet>
-                                   <ScheduleOptionSet>Distributable</ScheduleOptionSet>
-                                   <ScheduleOptionSet>MultipleDEvices</ScheduleOptionSet>
-                                   <FeatureMapped>Device.Storage.Hd</FeatureMapped>
-                                   <Result 
-                                                  StartTime="2013-03-14T17:59:45.117-07:00" 
-                                                  Status="Passed" 
-                                                  FiltersAppliedCount="0" 
-                                                  SourcePath="TEST-MACHINE-2A" 
-                                                  InstanceId="67" 
-                                                  FeatureDetected="Device.DevFund.CDA Device.DevFund.DriverFramework.AllDrivers Device.DevFund.DriverFramework.KMDF Device.DevFund.INF Device.DevFund.Memory Device.DevFund.Reliability.Interrupts Device.DevFund.Reliability Device.DevFund.ReliabilityDisk Device.DevFund.Security Device.DevFund.Server Device.Storage.Hd.Iscsi Device.Storage.Hd.MultipleAccess.PersistentReservation Device.Storage.Hd.PersistentReservation Device.Storage.Hd.ScsiProtocol Device.Storage.Hd" />
-                   </TestCollectionRecord>
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                   mlns:xsd="http://www.w3.org/2001/XMLSchema">
+                   <TestCollectionRecord 
+                                   Name="Disk Stress (LOGO)" 
+                                   Guid="738735f7-245a-4b39-9d81-20339ce31fd4" 
+                                   TargetName="Disk" 
+                                   TargetId="DiskId" 
+                                   TargetType="Device" 
+                                   HlkBuildVersion="10.000.10020.10020"
+                                   TestPassIdentifier="TP001"
+                                   OsPlatform="Windows 8 Client x64">
+                                   <ContentLevelSet>Reliability</ContentLevelSet>
+                                   <ContentLevelSet>Certification</ContentLevelSet>
+                                   <ScheduleOptionSet>Distributable</ScheduleOptionSet>
+                                   <ScheduleOptionSet>MultipleDEvices</ScheduleOptionSet>
+                                   <FeatureMapped>Device.Storage.Hd</FeatureMapped>
+                                   <Result 
+                                                  StartTime="2013-03-14T17:59:45.117-07:00" 
+                                                  Status="Passed" 
+                                                  FiltersAppliedCount="0" 
+                                                  SourcePath="TEST-MACHINE-2A" 
+                                                  InstanceId="67" 
+                                                  FeatureDetected="Device.DevFund.CDA Device.DevFund.DriverFramework.AllDrivers Device.DevFund.DriverFramework.KMDF Device.DevFund.INF Device.DevFund.Memory Device.DevFund.Reliability.Interrupts Device.DevFund.Reliability Device.DevFund.ReliabilityDisk Device.DevFund.Security Device.DevFund.Server Device.Storage.Hd.Iscsi Device.Storage.Hd.MultipleAccess.PersistentReservation Device.Storage.Hd.PersistentReservation Device.Storage.Hd.ScsiProtocol Device.Storage.Hd" />
+                   </TestCollectionRecord>
     </ArrayOfTestCollectionRecord>
     ```
 
@@ -664,37 +664,37 @@ A basic high-level overview of the process is as follows:
 
 Detailed steps of this process are as follows:
 
-1.  To create an .hlkx package of the results that were completed prior to test execution being stopped, start Windows HLK Studio.
+1. To create an .hlkx package of the results that were completed prior to test execution being stopped, start Windows HLK Studio.
 
-2.  In Windows HLK Studio, double-click the project name of the project that was stopped. The project name is the same as in the project xml file. (The project xml file can be found under **C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files**, in a time-stamped folder.)
+2. In Windows HLK Studio, double-click the project name of the project that was stopped. The project name is the same as in the project xml file. (The project xml file can be found under **C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files**, in a time-stamped folder.)
 
-3.  In Windows HLK Studio, on the **Package** tab, click **Create Package** and save the package.
+3. In Windows HLK Studio, on the **Package** tab, click **Create Package** and save the package.
 
-    >[!NOTE]
-    >  
-    The following step must be performed only if the initial test pass was run by having the client machines starting in the Default Pool.
+   > [!NOTE]
+   > 
+   > The following step must be performed only if the initial test pass was run by having the client machines starting in the Default Pool.
 
-     
+     
 
-4.  Because tests can run only when machines are in a non-Default Pool, and because the Windows HLK Execution Engine does not wait for all currently running tests to complete prior to completing a **Ctrl-C** operation, all machines will remain in their existing machine pool after Windows HLK Execution Engine stops. If the original project xml file specified machines in the Default Pool, then you must move the client machines back to the Default Pool. You can do this by using the **Configuration** menu that is located at the top of the Windows HLK Studio UI, or through the Windows HLK Manager application.
+4. Because tests can run only when machines are in a non-Default Pool, and because the Windows HLK Execution Engine does not wait for all currently running tests to complete prior to completing a **Ctrl-C** operation, all machines will remain in their existing machine pool after Windows HLK Execution Engine stops. If the original project xml file specified machines in the Default Pool, then you must move the client machines back to the Default Pool. You can do this by using the **Configuration** menu that is located at the top of the Windows HLK Studio UI, or through the Windows HLK Manager application.
 
-5.  After the partial .hlkx package is generated, you must update the Windows HLK Execution Engine project file to prepare for the remaining run. Navigate to **C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files**, and find the correct time-stamped folder from the test run. In the set of xml files in the folder, the project xml file is the one that is not preceded with "Status\_", "FTC\_", or "TC\_". In Notepad or other text editor, edit this file as follows:
+5. After the partial .hlkx package is generated, you must update the Windows HLK Execution Engine project file to prepare for the remaining run. Navigate to **C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files**, and find the correct time-stamped folder from the test run. In the set of xml files in the folder, the project xml file is the one that is not preceded with "Status\_", "FTC\_", or "TC\_". In Notepad or other text editor, edit this file as follows:
 
-    In the project xml file, two fields must be edited: *TestCollectionReadLocation* and *TestCollectionStatusLocation*. For the Windows HLK Execution Engine tool to know where to resume, the previous **TestCollectionStatusLocation** value (the xml output file of results) must become the input file. Copy the value of **TestCollectionStatusLocation** to the **TestCollectionReadLocation** value. Then, set a new **TestCollectionStatusLocation** value. The **TestCollectionStatusLocation** value can be any value; for example, "C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files\\Rerun.xml".
+   In the project xml file, two fields must be edited: *TestCollectionReadLocation* and *TestCollectionStatusLocation*. For the Windows HLK Execution Engine tool to know where to resume, the previous **TestCollectionStatusLocation** value (the xml output file of results) must become the input file. Copy the value of **TestCollectionStatusLocation** to the **TestCollectionReadLocation** value. Then, set a new **TestCollectionStatusLocation** value. The **TestCollectionStatusLocation** value can be any value; for example, "C:\\Users\\LocalAdminUser\\Desktop\\PDEF\_Files\\Rerun.xml".
 
-    Optionally modify the Project node **Name** value to make the project easier to find in HLK Studio later on. (Because the current **Name** value has already been used, Windows HLK Execution Engine will create a new project name.)
+   Optionally modify the Project node **Name** value to make the project easier to find in HLK Studio later on. (Because the current **Name** value has already been used, Windows HLK Execution Engine will create a new project name.)
 
-6.  To restart the tool, open a new command prompt window by using administrator privileges. Navigate to the Windows HLK Studio directory **(%wttstdio%**). Type the following command:
+6. To restart the tool, open a new command prompt window by using administrator privileges. Navigate to the Windows HLK Studio directory **(%wttstdio%**). Type the following command:
 
-    ``` syntax
-    HlkExecutionEngine.exe /Project <project xml file location> /RunCollection
-    ```
+   ``` syntax
+   HlkExecutionEngine.exe /Project <project xml file location> /RunCollection
+   ```
 
-    This command starts the Windows HLK Execution Engine, which resumes by using the previous set of tests that were running before the tool stopped. Execution can continue until all tests are completed.
+   This command starts the Windows HLK Execution Engine, which resumes by using the previous set of tests that were running before the tool stopped. Execution can continue until all tests are completed.
 
-7.  After the second set of tests are finished, you must merge the two projects together. To do this, open Windows HLK Studio. Look at the most recent projects that were created - typically the most recent project is from the second execution run that was performed (unless other users are also creating projects during this time). Or, if you changed the project **Name** value in the project xml file, you can identify the project by the new Name.
+7. After the second set of tests are finished, you must merge the two projects together. To do this, open Windows HLK Studio. Look at the most recent projects that were created - typically the most recent project is from the second execution run that was performed (unless other users are also creating projects during this time). Or, if you changed the project **Name** value in the project xml file, you can identify the project by the new Name.
 
-8.  Double-click the new project that was created from the second run. On the **Package** tab, click **Merge Package**. In the **Package To Merge** dialog, click **Add** and navigate to the first partial .hlkx package that was created from the first run of HLK Execution Engine. Click **Save** and click **Create Package** in the main window.
+8. Double-click the new project that was created from the second run. On the **Package** tab, click **Merge Package**. In the **Package To Merge** dialog, click **Add** and navigate to the first partial .hlkx package that was created from the first run of HLK Execution Engine. Click **Save** and click **Create Package** in the main window.
 
 ## <span id="BKMK-analyze"></span><span id="bkmk-analyze"></span><span id="BKMK_ANALYZE"></span>Step 8: Analyze the test results in Excel
 
@@ -902,9 +902,9 @@ Some projects require Test-specific information for discovering and executing te
 
 [HLK Tools Technical Reference](hlk-tools-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

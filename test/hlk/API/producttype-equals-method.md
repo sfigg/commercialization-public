@@ -32,21 +32,21 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals Method (ProductType)](producttype-equals-method--producttype-.md)</p></td>
+<td><p><a href="producttype-equals-method--producttype-.md" data-raw-source="[Equals Method (ProductType)](producttype-equals-method--producttype-.md)">Equals Method (ProductType)</a></p></td>
 <td><p>Overloads the Equals function to provide value equality functionality for this object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Equals Method (object)](producttype-equals-method--object-.md)</p></td>
+<td><p><a href="producttype-equals-method--object-.md" data-raw-source="[Equals Method (object)](producttype-equals-method--object-.md)">Equals Method (object)</a></p></td>
 <td><p>Overrides the Equals function to provide value equality functionality for this object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

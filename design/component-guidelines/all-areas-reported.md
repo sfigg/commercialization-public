@@ -55,9 +55,9 @@ b. After 5 taps, the onscreen instructions will indicate the next region to tap.
 
 -   25/25 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

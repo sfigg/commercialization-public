@@ -40,14 +40,14 @@ OEMs must determine on their own how to manufacture these devices. They must als
 This feature is dependent on storing information to aid the pairing process in UEFI. The feature allows this functionality to persist on system recovery and clean installs. After the UEFI variables are defined, they must be locked to be read-only. 
 
 For each device supporting automatic pairing, the host PC should program the following OOB information into its NVRAM:
-- 	RSSI Threshold: Defines a distance threshold in dB for when peripherals are “out of range of the host PC”
-	- 	Set as a minimum signal strength before pairing takes place
-	- 	The OEM must define the appropriate threshold
-- 	DeviceID: uniquely identify a supporting device and should be 8 bytes in length to avoid device conflicts.
-	- 	Must be as unique as the Bluetooth Mac Address
-	- 	Not related to Device ID profile. Only used to represent unique peripherals.
-	- 	OOB key: The 16 byte SMP TK value is shared between the host PC and the BTH LE device.
-> Note: If device ID is not unique per device, or at least per bundle, there will be conflicts if multiple devices are within range of each other. Peripherals  pair with unanticipated PCs.
+- RSSI Threshold: Defines a distance threshold in dB for when peripherals are “out of range of the host PC”
+  -   Set as a minimum signal strength before pairing takes place
+  -   The OEM must define the appropriate threshold
+- DeviceID: uniquely identify a supporting device and should be 8 bytes in length to avoid device conflicts.
+  - Must be as unique as the Bluetooth Mac Address
+  - Not related to Device ID profile. Only used to represent unique peripherals.
+  - OOB key: The 16 byte SMP TK value is shared between the host PC and the BTH LE device.
+    > Note: If device ID is not unique per device, or at least per bundle, there will be conflicts if multiple devices are within range of each other. Peripherals  pair with unanticipated PCs.
 
 ## OOB info pseudocode representation
 ```cpp

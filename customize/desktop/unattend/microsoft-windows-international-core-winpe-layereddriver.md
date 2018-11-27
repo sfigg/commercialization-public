@@ -60,7 +60,7 @@ This setting provides a means to select the specific keyboard to configure durin
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -93,9 +93,9 @@ The following example configures the `LayeredDriver` setting to use the Japanese
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -45,9 +45,9 @@ Represents a filter result.
 
 [IFilterResult Members](ifilterresult-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -71,9 +71,9 @@ The following XML output shows how to specify that the primary Domain Name Servi
 
 [Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md)
 
- 
+ 
 
- 
+ 
 
 
 

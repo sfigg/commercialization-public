@@ -32,9 +32,9 @@ You can save the state of a Windows Performance Analyzer (WPA) session so that y
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

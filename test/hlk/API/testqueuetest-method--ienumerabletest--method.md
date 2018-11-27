@@ -34,7 +34,7 @@ This method schedules tests to be run and consolidating the test run with additi
 
 *testList*
 
-     The list of tests to consolidate the test run with.
+     The list of tests to consolidate the test run with.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -59,9 +59,9 @@ An exception is thrown if:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

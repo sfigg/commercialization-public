@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md) to the answer file.
 
- 
+ 
 
 ## Values
 
@@ -36,12 +36,12 @@ This element does not appear in the **Properties** pane of Windows System Image 
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies the value of [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md). <em>Value</em> is a string.</p></td>
+<td><p>Specifies the value of <a href="microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md" data-raw-source="[DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md)">DomainName</a>. <em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -101,9 +101,9 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md)
 
- 
+ 
 
- 
+ 
 
 
 

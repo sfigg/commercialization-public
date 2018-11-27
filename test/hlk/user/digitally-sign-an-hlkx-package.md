@@ -35,9 +35,9 @@ When you include a driver with your package, HLK checks the signability of the d
 
 The Signability of a driver is different from signing a package. Signing a package for an official submission is done to the .hlkx package to verify the owner of the package. Signability of a driver checks that the driver content added to the package is acceptable for the submission.
 
- 
+ 
 
- 
+ 
 
 
 

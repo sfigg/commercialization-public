@@ -31,7 +31,7 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that tickets must be encrypted. /p></td>
+<td><p>Specifies that tickets must be encrypted. /p&gt;</td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -75,9 +75,9 @@ The following XML output shows how to allow a friend or support professional to 
 
 [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md)
 
- 
+ 
 
- 
+ 
 
 
 

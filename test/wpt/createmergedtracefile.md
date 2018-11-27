@@ -75,7 +75,7 @@ Possible error values are described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 If neither of these error values is returned, a system error code is returned.
 
@@ -89,7 +89,7 @@ This function can inject extended data into a single trace file. In this case th
 **Note**  
 An unmerged kernel trace cannot decode symbols correctly.
 
- 
+ 
 
 The API is implemented in Unicode only.
 
@@ -108,9 +108,9 @@ The API is implemented in Unicode only.
 
 [Custom Injection of System Information](custom-injection-of-system-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

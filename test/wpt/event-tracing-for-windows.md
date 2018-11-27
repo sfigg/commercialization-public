@@ -32,9 +32,9 @@ WPA consumes the event trace log (ETL) file that all event providers produce in 
 
 [Windows Performance Toolkit](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

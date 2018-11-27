@@ -29,18 +29,18 @@ Windows Performance Recorder (WPR) recording profiles control all aspects of a 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Built-in Recording Profiles](built-in-recording-profiles.md)</p></td>
+<td><p><a href="built-in-recording-profiles.md" data-raw-source="[Built-in Recording Profiles](built-in-recording-profiles.md)">Built-in Recording Profiles</a></p></td>
 <td><p>This article describes the built-in recording profiles that are included in WPR.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Authoring Recording Profiles](authoring-recording-profiles.md)</p></td>
+<td><p><a href="authoring-recording-profiles.md" data-raw-source="[Authoring Recording Profiles](authoring-recording-profiles.md)">Authoring Recording Profiles</a></p></td>
 <td><p>This article describes how to create a custom WPR recording profile in XML.</p>
-<p>The complete XML schema reference is available at [Recording Profile XML Reference](recording-profile-xml-reference.md).</p></td>
+<p>The complete XML schema reference is available at <a href="recording-profile-xml-reference.md" data-raw-source="[Recording Profile XML Reference](recording-profile-xml-reference.md)">Recording Profile XML Reference</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -49,9 +49,9 @@ Windows Performance Recorder (WPR) recording profiles control all aspects of a 
 
 [Add or Remove a Custom Recording Profile](add-or-remove-a-custom-recording-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

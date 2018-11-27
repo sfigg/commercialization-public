@@ -40,7 +40,7 @@ The icon graphic must be a .png file that is no larger than 240x80 pixels in si
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -83,9 +83,9 @@ The following example shows how to set a customized logo to represent a theme.
 
 [Themes](microsoft-windows-shell-setup-themes.md)
 
- 
+ 
 
- 
+ 
 
 
 

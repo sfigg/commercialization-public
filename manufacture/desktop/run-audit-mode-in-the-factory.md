@@ -57,9 +57,9 @@ After the recovery image is captured, you can shut down the PC, box it, and ship
 
 Depending on the volume of units you are shipping, you might want to consider pulling one or more PCs off the line to ensure the systems you build meet your quality expectations.
 
- 
+ 
 
- 
+ 
 
 
 

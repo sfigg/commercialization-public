@@ -76,7 +76,7 @@ When the user launches the camera app, the device displays a message on the view
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build that contains this customization to a mobile device without a dedicated hardware camera button.

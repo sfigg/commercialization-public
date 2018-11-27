@@ -23,10 +23,10 @@ Represents a problem category for the profile. This element is for internal use 
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[ProblemCategories](problemcategories.md)\>
-        * \<**ProblemCategory**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[ProblemCategories](problemcategories.md)\>
+        * \<**ProblemCategory**\>
 
 
 ## Syntax

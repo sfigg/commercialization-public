@@ -59,11 +59,10 @@ The following table defines the elements in the location path.
 <td align="left"><p><strong>C</strong>&lt;<em>Channel ID</em>&gt;</p></td>
 <td align="left"><p>PathId field of SCSI_ADDRESS. Retrieve the PathID by calling IOCTL_SCSI_GET_ADDRESS.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>For disks that use the ATA/SATA bus type, the Channel ID refers to the same field as PathID. The prefix C is still used.</p>
+<strong>Note</strong><br/><p>For disks that use the ATA/SATA bus type, the Channel ID refers to the same field as PathID. The prefix C is still used.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -77,7 +76,7 @@ The following table defines the elements in the location path.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -115,7 +114,7 @@ The following table gives an example of a location path for each bus or disk typ
 </tbody>
 </table>
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
@@ -124,9 +123,9 @@ The following table gives an example of a location path for each bus or disk typ
 
 [DiskPart Command-Line Syntax](http://go.microsoft.com/fwlink/?LinkId=128458)
 
- 
 
- 
+
+
 
 
 

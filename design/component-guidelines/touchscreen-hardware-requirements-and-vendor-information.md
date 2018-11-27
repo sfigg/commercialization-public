@@ -38,18 +38,18 @@ You can use either one of these tools for RA testing.
 ## Contacts for Tactile and ITRI
 
 
--   Tactile Automation, Inc.
-    Emery Parks
-    +1 (425) 310-8380 
-    emeryp@tactileautomation.com 
--   Industrial Technology Research Institute
-    Sen Yih Chou
-    +886 (03) 5743887
-    senyih@itri.org.tw
+- Tactile Automation, Inc.
+  Emery Parks
+  +1 (425) 310-8380 
+  emeryp@tactileautomation.com 
+- Industrial Technology Research Institute
+  Sen Yih Chou
+  +886 (03) 5743887
+  senyih@itri.org.tw
 
- 
+ 
 
- 
+ 
 
 
 

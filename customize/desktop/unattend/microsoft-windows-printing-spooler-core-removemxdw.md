@@ -56,7 +56,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following XML output shows how to remove the XPS Document Writer print queue
 
 [Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

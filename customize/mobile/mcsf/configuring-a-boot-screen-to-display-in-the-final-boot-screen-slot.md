@@ -25,7 +25,7 @@ By default, the Windows 10 Mobile logo is displayed as the final boot screen. H
     **Note**  
     The Windows 10 Mobile Kit provides a different bitmap for each of the supported screen resolutions: 480 × 800, 720 × 1280, 768 × 1280, and 1080 × 1920. OEMs should use the appropriate bitmap for the screen resolution supported by their hardware.
 
-     
+     
 
 -   The amount of time the final boot screen is displayed cannot be configured by the OEM. During cold boot, the final boot screen is displayed until device initialization is complete. During warm boot, the final boot screen is displayed for 2.5 seconds.
 

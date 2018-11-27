@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
- 
+ 
 
 ## Values
 
@@ -36,12 +36,12 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <tbody>
 <tr class="odd">
 <td><p><em>LoadWeight</em></p></td>
-<td><p>Specifies a number for the load. This number will be applied only if the [EqualLoad](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-equalload.md) setting is set to <strong>false</strong>. If the <code>EqualLoad</code> setting is set to <strong>true</strong>, a default load weight of <strong>50</strong> will be applied to each node in the cluster.</p></td>
+<td><p>Specifies a number for the load. This number will be applied only if the <a href="microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-equalload.md" data-raw-source="[EqualLoad](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-equalload.md)">EqualLoad</a> setting is set to <strong>false</strong>. If the <code>EqualLoad</code> setting is set to <strong>true</strong>, a default load weight of <strong>50</strong> will be applied to each node in the cluster.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -72,9 +72,9 @@ The following example specifies that the load weight for the cluster is 100.
 
 [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md)
 
- 
+ 
 
- 
+ 
 
 
 

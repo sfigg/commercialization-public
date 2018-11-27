@@ -40,17 +40,17 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The default value of **GoToDesktopOnSignIn** depends on the selected power platform role.
 
- 
+ 
 
 **Important**  
 It’s recommended that both settings, **GoToDesktopOnSignIn** and **ShowWindowsStoreAppsOnTaskbar**, be set to a consistent value, either both set to **true** or both set to **false**.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,8 +78,8 @@ The following XML output specifies to go to the desktop on sign in and to show M
 
 ```
 <DesktopOptimization>
-     <GoToDesktopOnSignIn>true</GoToDesktopOnSignIn>
-     <ShowWindowsStoreAppsOnTaskbar>true</ShowWindowsStoreAppsOnTaskbar>
+     <GoToDesktopOnSignIn>true</GoToDesktopOnSignIn>
+     <ShowWindowsStoreAppsOnTaskbar>true</ShowWindowsStoreAppsOnTaskbar>
 </DesktopOptimization>
 ```
 
@@ -90,9 +90,9 @@ The following XML output specifies to go to the desktop on sign in and to show M
 
 [ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setup-desktopoptimization-showwindowsstoreappsontaskbar.md)
 
- 
+ 
 
- 
+ 
 
 
 

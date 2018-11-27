@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This overload is being deprecated. The additional parameter options are no longer supported. Please use [LoadPlaylist(string playlistPath)](playlistmanager-loadplaylist-method--string-.md).
 
- 
+ 
 
 Loads the tests from a Playlist into this [PlaylistManager](playlistmanager-class.md)'s [Project](project-class.md).
 
@@ -33,11 +33,11 @@ Loads the tests from a Playlist into this [PlaylistManager](playlistmanager-clas
 
 `public List<Guid> LoadPlaylist (`
 
-          `string playlistPath`
+          `string playlistPath`
 
-          `bool removeExistingTestsNotInPlaylist`
+          `bool removeExistingTestsNotInPlaylist`
 
-          `bool disableFeatureDetection`
+          `bool disableFeatureDetection`
 
 `)`
 
@@ -68,9 +68,9 @@ Guids for tests that could not be added because they could not be found.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

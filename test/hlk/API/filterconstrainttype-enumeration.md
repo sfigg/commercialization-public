@@ -70,11 +70,11 @@ This class contains an enumeration that denotes the type of a HCK filter constra
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

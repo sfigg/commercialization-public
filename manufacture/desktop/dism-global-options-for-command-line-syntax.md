@@ -84,14 +84,13 @@ The following table provides a description of how each DISM global option can be
 <td align="left"><p><strong>/LogPath:</strong>&lt;<em>path to log file.log</em>&gt;</p></td>
 <td align="left"><p>Specifies the full path and file name to log to. If not set, the default is: <strong>%WINDIR%\Logs\Dism\dism.log</strong></p>
 <div class="alert">
-<strong>Important</strong>  
-<p>In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.</p>
+<strong>Important</strong><br/><p>In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.</p>
 <p>The log file will automatically be archived. The archived log file will be saved with .bak appended to the file name and a new log file will be generated. Each time the log file is archived the .bak file will be overwritten.</p>
 </div>
 <div>
- 
+
 </div>
-<p>When using a network share that is not joined to a domain, use the <strong>net use</strong> command together with domain credentials to set access permissions before you set the log path for the DISM log.</p>
+<p>When using a network share that is not joined to a domain, use the <strong>net use</strong> command together with domain credentials to set access permissions before you set the log path for the DISM log.</p>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /LogPath:AddPackage.log /Add-Package /PackagePath:C:\packages\package.cab</strong></p></td>
 </tr>
@@ -131,18 +130,17 @@ The following table provides a description of how each DISM global option can be
 <td align="left"><p>Use <strong>/SysDriveDir</strong> to service an installed Windows image from a Windows PE environment.</p>
 <p>The <strong>/SysDriveDir</strong> option specifies the path to the location of the BootMgr files. This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.</p>
 <p>For example, at a Windows PE command prompt, type:</p>
-<p><strong>Dism /image:C:\Windows /SysDriveDir:C:\</strong></p></td>
+<p><strong>Dism /image:C:\Windows /SysDriveDir:C:&lt;/strong&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/Quiet</strong></p></td>
 <td align="left"><p>Turns off information and progress output to the console. Only error messages will be displayed.</p>
 <p>To run in quiet mode, this option must be set every time that the command-line utility is run.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Do not use the <strong>/Quiet</strong> option with <strong>/Get</strong> commands. No information will be displayed.</p>
+<strong>Note</strong><br/><p>Do not use the <strong>/Quiet</strong> option with <strong>/Get</strong> commands. No information will be displayed.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /Add-Package /PackagePath:C:\packages\package.cab /quiet</strong></p></td>
@@ -155,7 +153,7 @@ The following table provides a description of how each DISM global option can be
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/ScratchDir:</strong>&lt;<em>path_to_scratchdirectory</em>&gt;</p></td>
-<td align="left"><p>Specifies a temporary directory that will be used when extracting files for temporary use during servicing. The directory must exist locally. If not specified, the \Windows\<em>%Temp%</em> directory will be used, with a subdirectory name of randomly generated hexadecimal value for each run of DISM. Items in the scratch directory are deleted after each operation.</p>
+<td align="left"><p>Specifies a temporary directory that will be used when extracting files for temporary use during servicing. The directory must exist locally. If not specified, the \Windows&lt;em&gt;%Temp%</em> directory will be used, with a subdirectory name of randomly generated hexadecimal value for each run of DISM. Items in the scratch directory are deleted after each operation.</p>
 <p>You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation. The directory used for extracting files for temporary usage during servicing should be a local directory.</p>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /ScratchDir:C:\Scratch /Add-Package /PackagePath:C:\packages\package.cab</strong></p></td>
@@ -164,12 +162,11 @@ The following table provides a description of how each DISM global option can be
 <td align="left"><p><strong>/English</strong></p></td>
 <td align="left"><p>Displays command-line output in English.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Some resources cannot be displayed in English.</p>
+<strong>Note</strong><br/><p>Some resources cannot be displayed in English.</p>
 <p>This option is not supported when you use the <strong>DISM /?</strong> command.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Example:</p>
 <p><strong>Dism /Get-ImageInfo /ImageFile:C:\test\offline\install.wim /index:1 /English</strong></p></td>
@@ -183,7 +180,7 @@ The following table provides a description of how each DISM global option can be
 </tbody>
 </table>
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
@@ -204,9 +201,9 @@ The following table provides a description of how each DISM global option can be
 
 [DISM Windows PE Servicing Command-Line Options](dism-windows-pe-servicing-command-line-options.md)
 
- 
 
- 
+
+
 
 
 

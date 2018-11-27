@@ -24,9 +24,9 @@ However, Windows 10 introduces new and enhanced imaging and deployment tools th
 
 To learn about how to configure the power settings using Windows provisioning, see [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264). Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting.
 
- 
+ 
 
- 
+ 
 
 
 

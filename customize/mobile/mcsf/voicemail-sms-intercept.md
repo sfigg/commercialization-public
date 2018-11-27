@@ -67,7 +67,7 @@ The `SyncSender` and `SyncPrefix` values vary for each mobile operator, so OEMs 
 
 Make sure that the correct visual voicemail settings for the mobile operator are also set. For more information, see [Visual voicemail](visual-voicemail.md).
 
- 
+ 
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone that has a UICC.

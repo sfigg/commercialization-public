@@ -48,11 +48,10 @@ The following hardware is required for Windows Server System testing. Additional
 <td><p>Minimum: 10 GB</p>
 <p>Recommended: 40 GB or greater</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Computers with more than 16 GB of RAM will require more disk space for paging, hibernation, and dump files</p>
+<strong>Note</strong><br/><p>Computers with more than 16 GB of RAM will require more disk space for paging, hibernation, and dump files</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -62,7 +61,7 @@ The following hardware is required for Windows Server System testing. Additional
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Infrastructure_Requirement_and_Setup_for_the_Server_Stress_Test"></span><span id="infrastructure_requirement_and_setup_for_the_server_stress_test"></span><span id="INFRASTRUCTURE_REQUIREMENT_AND_SETUP_FOR_THE_SERVER_STRESS_TEST"></span>Infrastructure Requirement and Setup for the Server Stress Test
 
@@ -111,11 +110,11 @@ The following software is required to run the Windows Server System tests:
 
 -   The optional Windows Server BitLocker Drive Encryption component must be installed on the server if it is supported by the vendor pre-installed.
 
->[!WARNING]
->  
-The System Tests topic provides more information about the system requirements for the BitLocker Drive Encryption tests.
+> [!WARNING]
+> 
+> The System Tests topic provides more information about the system requirements for the BitLocker Drive Encryption tests.
 
- 
+
 
 ## <span id="Tester_knowledge_requirements"></span><span id="tester_knowledge_requirements"></span><span id="TESTER_KNOWLEDGE_REQUIREMENTS"></span>Tester knowledge requirements
 
@@ -149,47 +148,47 @@ For tests that do not include a driver to test, such as hard disk drive tests, t
 
 Except for para-virtualization drivers (as defined by the [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=615222) document), you may not use any form of virtualization when you test physical devices and their associated drivers for server certification or signature. All virtualization products do not support the underlying functionality that is required to pass the tests that relate to multiple processor groups, device power management, device PCI functionality, and other tests.
 
->[!NOTE]
->  Multiple Processor Groups Setting
->You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
->
->The commands for adding the group settings and restarting are as follows:
->
-``` syntax
-bcdedit.exe /set groupsize 2
-bcdedit.exe /set groupaware on
-shutdown.exe -r -t 0 -f
-```
->
->
->The commands for removing the group settings and rebooting are as follows:
->
-``` syntax
-bcdedit.exe /deletevalue groupsize
-bcdedit.exe /deletevalue groupaware
-shutdown.exe -r -t 0 -f
-```
->
+> [!NOTE]
+>  Multiple Processor Groups Setting
+> You must set the value for the processor group size for Hardware Lab Kit testing of Windows Server 2008 R2 and later device drivers for certification. This is done by running bcdedit in an elevated command prompt window, using the /set option.
+> 
+> The commands for adding the group settings and restarting are as follows:
+> 
+> ``` syntax
+> bcdedit.exe /set groupsize 2
+> bcdedit.exe /set groupaware on
+> shutdown.exe -r -t 0 -f
+> ```
+> 
+> 
+> The commands for removing the group settings and rebooting are as follows:
+> 
+> ``` syntax
+> bcdedit.exe /deletevalue groupsize
+> bcdedit.exe /deletevalue groupaware
+> shutdown.exe -r -t 0 -f
+> ```
+> 
+> 
+> [!NOTE]
+> 
+> **Code Integrity Setting**
+> 
+> The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
+> 
+> Once that has occurred, the following Registry key must be created and set:
+> 
+> ``` syntax
+> HKLM\System\CurrentControlSet\Control\DeviceGuard
+> HypervisorEnforcedCodeIntegrity:REG_DWORD
+> 0 or 1 (disabled, enabled)
+> ```
 
->[!NOTE]
->  
-**Code Integrity Setting**
 
->The Virtualization Based Security feature (VBS) of Windows Server 2016 must be enabled using Server Manager first.
->
->Once that has occurred, the following Registry key must be created and set:
->
-``` syntax
-HKLM\System\CurrentControlSet\Control\DeviceGuard
-HypervisorEnforcedCodeIntegrity:REG_DWORD
-0 or 1 (disabled, enabled)
-```
 
- 
 
- 
 
- 
+
 
 
 

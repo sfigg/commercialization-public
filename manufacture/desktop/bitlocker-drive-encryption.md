@@ -47,9 +47,9 @@ For more information about BitLocker partitioning requirements, see [Hard Drives
 
 [Hard Drives and Partitions Overview](hard-drives-and-partitions.md)
 
- 
+ 
 
- 
+ 
 
 
 

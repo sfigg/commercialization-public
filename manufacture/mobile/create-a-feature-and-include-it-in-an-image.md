@@ -149,8 +149,8 @@ Add the TEST\_APP OEM feature to the OEMInput.xml file by completing the followi
     ...
     <AdditionalFMs>
         ...
-        <AdditionalFM>%WPDKCONTENTROOT%\FMFiles\OEMCustomAppFM.xml</AdditionalFM>
-      </AdditionalFMs>
+        <AdditionalFM>%WPDKCONTENTROOT%\FMFiles\OEMCustomAppFM.xml</AdditionalFM>
+      </AdditionalFMs>
     ```
 
 3.  Later in the &lt;Features&gt; section of the OEMInput.xml file add the new TEST\_APP feature to the list of existing features.
@@ -239,9 +239,9 @@ Verify that the TestApplication executes as expected by completing the following
 
 [Building and flashing images](building-and-flashing-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

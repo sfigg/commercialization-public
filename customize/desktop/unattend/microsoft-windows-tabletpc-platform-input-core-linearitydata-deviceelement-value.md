@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md) to the answer file.
 
- 
+ 
 
 ## Values
 
@@ -36,12 +36,12 @@ This element does not appear in the **Properties** pane of Windows System Image
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies the value of the [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md). <em>Value</em> is a string.</p></td>
+<td><p>Specifies the value of the <a href="microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md" data-raw-source="[DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md)">DeviceElement</a>. <em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -76,9 +76,9 @@ The following XML output shows how to configure `Value`.
 
 [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md)
 
- 
+ 
 
- 
+ 
 
 
 

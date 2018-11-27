@@ -33,19 +33,19 @@ The following section demonstrates how to use ETW to do precise performance meas
 The following list shows some of the beneficial characteristics of ETW:
 
 <dl>
-<dt>**Robust**</dt>
+<dt><strong>Robust</strong></dt>
 <dd>
 <p>It provides efficient buffering and logging mechanisms. The tracing buffer is managed by the kernel. Tracing through ETW is immune to app crashes and hangs. In case of system failure, unsaved events are accessible in a memory dump file.</p>
 </dd>
-<dt>**Dynamic**</dt>
+<dt><strong>Dynamic</strong></dt>
 <dd>
 <p>Tracing sessions can be started, stopped, reconfigured, and paused dynamically without system reboot or app restarts. ETW offers multiple modes to meet various demands.</p>
 </dd>
-<dt>**Built into Windows**</dt>
+<dt><strong>Built into Windows</strong></dt>
 <dd>
 <p>Other than the controller app, you don’t need additional tools. Windows has a few inbox controllers as well as consumer apps.</p>
 </dd>
-<dt>**Lightweight**</dt>
+<dt><strong>Lightweight</strong></dt>
 <dd>
 <p>Because the overhead of historical tracing and saved log files are highly optimized, they don’t affect app or system performance. The logging mechanism uses kernel mode buffers, which are written to disk by a separate writer thread so that overhead from tracing is limited.</p>
 </dd>
@@ -139,11 +139,11 @@ Manifest-based ETW events can be implemented in user-mode apps, including servic
 An event manifest is divided into the following sections:
 
 <dl>
-<dt>**Provider definition: <provider>**</dt>
+<dt><strong>Provider definition: <provider></strong></dt>
 <dd>
 <p>Contains the name and GUID of the provider you’re creating, and the location of the binary that’s instrumented (eventually containing the instrumentation resources needed by the ETW framework).</p>
 </dd>
-<dt>**Event payload: <templates>**</dt>
+<dt><strong>Event payload: <templates></strong></dt>
 <dd>
 <p>Contains definitions of the data types that will be included as payload in the events. Available types include:</p>
 <ul>
@@ -161,7 +161,7 @@ An event manifest is divided into the following sections:
 </li>
 </ul>
 </dd>
-<dt>**Static event data**</dt>
+<dt><strong>Static event data</strong></dt>
 <dd>
 Used to help interpret, sort, and group the events.
 <ul>
@@ -218,16 +218,16 @@ To write your manifest file, you can use:
 The next step is to compile the manifest by using the [Message Compiler tool (mc.exe)](<https://msdn.microsoft.com/library/windows/desktop/aa385638.aspx>), which is available in the Platform SDK. This tool generates a few files needed to instrument, compile, and build your instrumented code:
 
 <dl>
-<dt>**ManifestFileName.h**</dt>
+<dt><strong>ManifestFileName.h</strong></dt>
 <dd>Contains event descriptors to use in code.</dd>
 
-<dt>**ManifestFileName.rc**</dt>
+<dt><strong>ManifestFileName.rc</strong></dt>
 <dd>A resource compiler script.</dd>
 
-<dt>**MSG00001.bin**</dt>
+<dt><strong>MSG00001.bin</strong></dt>
 <dd>A language resource.</dd>
 
-<dt>**ManifestFileNameTEMP.bin**</dt>
+<dt><strong>ManifestFileNameTEMP.bin</strong></dt>
 <dd>A template resource (provider and metadata).</dd>
 </dl>
 

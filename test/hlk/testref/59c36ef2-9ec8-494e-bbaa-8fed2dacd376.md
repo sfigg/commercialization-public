@@ -16,7 +16,7 @@ ms.topic: article
 # <span id="p_hlk_test.59c36ef2-9ec8-494e-bbaa-8fed2dacd376"></span>PrintTicket Test
 
 
-This automated test exercises the unmanaged **PrintTicket** and **PrintCapabilties** APIs that are part of Windows Vista and newer version of Windows.
+This automated test exercises the unmanaged **PrintTicket** and **PrintCapabilities** APIs that are part of Windows Vista and newer version of Windows.
 
 If you have the Windows Driver Kit (WDK) test suite at the command line, the test tool sequentially runs the test cases that the TestSuite.xml file mentions. For the WDK test suite, the test cases call all of the native **PrintTicket** and **PrintCapabilities** APIs sequentially by using valid input parameters and expect valid output.
 
@@ -58,7 +58,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/troubleshooting-windows-hlk-test-failures" >Troubleshooting Windows HLK Test Failures.</a>
 
 For troubleshooting information, see [Troubleshooting Device.Imaging Testing](troubleshooting-deviceimaging-testing.md).
 
@@ -79,15 +79,4 @@ Any attempt to change the system default printer while the test is running might
 | **LLU\_NetAccessOnly** | Logical Local User: Network Access only. |
 | **TestExecutableName** | Test Executable name.                    |
 | **WDKPrinterName**     | Printer name.                            |
-
- 
-
- 
-
- 
-
-
-
-
-
 

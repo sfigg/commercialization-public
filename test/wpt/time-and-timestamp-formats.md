@@ -48,12 +48,12 @@ Time parameters are usually taken by `-range` options. Time can be read in one o
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 Only local time zone and UTC are currently supported.
 
- 
+ 
 
 Timespan parameters are usually taken by options accepting resolutions. Timespans can be read in one of the formats described in the following table.
 
@@ -74,21 +74,21 @@ Timespan parameters are usually taken by options accepting resolutions. Timespan
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 Event timestamps in the Xperf trace dump are always presented in milliseconds.
 
- 
+ 
 
 ## Related topics
 
 
 [Xperf Command-Line Reference](xperf-command-line-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

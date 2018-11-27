@@ -42,15 +42,15 @@ Writes a text file containing the following information in tabular form based on
 ## Options
 
 
-<a href="" id="-pid-processid-"></a>**-pid***&lt;processId&gt;*  
+<a href="" id="-pid-processid-"></a>**-pid**<em>&lt;processId&gt;</em>  
 Shows statistics only for the specified process identifier. If not specified, shows statistics for all processes.
 
-<a href="" id="-stacks-s--o-oc-t-tc-rc--"></a>**-stacks***\[s \[o|oc|t|tc|rc\]\]*  
+<a href="" id="-stacks-s--o-oc-t-tc-rc--"></a>**-stacks**<em>\[s \[o|oc|t|tc|rc\]\]</em>  
 Displays the allocations, aggregated by stacks. This is the default behavior.
 
 Sorts by outstanding size (*so*), outstanding count (*soc*, total size (*st*), reallocation count (*src*, and total count (*stc*). The default is *so*.
 
-<a href="" id="-frames-s--o-oc-t-tc-rc--"></a>**-frames***\[s \[o|oc|t|tc|rc\]\]*  
+<a href="" id="-frames-s--o-oc-t-tc-rc--"></a>**-frames**<em>\[s \[o|oc|t|tc|rc\]\]</em>  
 Similar to `-stacks`, but the aggregation is by top stack frame, instead of by the entire stack.
 
 <a href="" id="-images"></a>**-images**  
@@ -71,10 +71,10 @@ Removes any top stack frames from the report that match any of the specified fra
 <a href="" id="-requireframesframe1-frame2---framen"></a>**-requireframes***Frame1 Frame2 … FrameN*  
 Requires that each stack have at least one frame that matches at least one of the specified frames. This test occurs before any explicit frame culling with `-cullframes`.
 
-<a href="" id="-culllists-filename-"></a>**-cullLists***&lt;fileName&gt;*  
+<a href="" id="-culllists-filename-"></a>**-cullLists**<em>&lt;fileName&gt;</em>  
 Frames in the specified file are to be excluded from the result. If a stack does not include such a frame, the stack is excluded. Frames have the same format as for `-cullFrames`. The names are not case-sensitive.
 
-<a href="" id="-top-n-"></a>**-top***&lt;n&gt;*  
+<a href="" id="-top-n-"></a>**-top**<em>&lt;n&gt;</em>  
 Limits the number of allocations displayed.
 
 <a href="" id="-totals"></a>**-totals**  
@@ -94,9 +94,9 @@ For information on how to capture heap data, see [Enabling Heap Data Capture](en
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

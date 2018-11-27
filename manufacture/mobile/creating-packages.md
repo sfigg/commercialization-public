@@ -8,6 +8,9 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 826a5b62-e7ef-4e9f-975e-00579554c5a5
+ms.author: themar
+ms.date: 05/02/2017
+ms.topic: article
 ---
 
 # Adding mobile packages
@@ -80,7 +83,7 @@ following is an example of an empty package project.
 
 The package project XML file must use the "pkg.xml" extension.
 
- 
+ 
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -181,7 +184,7 @@ default to %WPDKCONTENTROOT%\\Tools\\bin\\i386.
     When a package is changed the /version field should always be
     incremented when running package generator.
 
-     
+     
 
 For additional info about package generator options and capabilities,
 see [Command-line arguments for package
@@ -268,7 +271,7 @@ attributes, most of the package objects can contain **File** and
 [Specifying files and registry entries in a package project
 file](specifying-files-and-registry-entries-in-a-package-project-file.md).
 
- 
+ 
 
 ## <span id="adding_resolution_specific_content"></span><span id="ADDING_RESOLUTION_SPECIFIC_CONTENT"></span>Add a resolution-specific content to a package
 
@@ -351,7 +354,7 @@ For Windows 10 Mobile, you must use both the **HIVE\_ROOT** and
 **WIM\_ROOT** parameters. If you use only **WIM\_ROOT**, the package
 might not be complete.
 
- 
+ 
 
 ## <span id="service_component"></span><span id="SERVICE_COMPONENT"></span>Add a service component
 
@@ -429,12 +432,12 @@ Macros element and local project macros" in [Primary elements and
 attributes of a package project
 file](primary-elements-and-attributes-of-a-package-project-file.md).
 
- 
+ 
 
- 
+ 
 
 [Send comments about this topic to
-Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging\p_phPackaging%5D:%20Creating%20mobile%20packages%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPackaging/p_phPackaging%5D:%20Creating%20mobile%20packages%20%20RELEASE:%20(11/14/2017)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

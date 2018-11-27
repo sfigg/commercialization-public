@@ -42,9 +42,9 @@ This method sets all of the parameters with a given name to the same value for a
 
 `Public Sub SetCommonParameters ( _`
 
-          `parameterName As String, _`
+          `parameterName As String, _`
 
-          `parameterValue As String, _`
+          `parameterValue As String, _`
 
 `) `
 
@@ -52,9 +52,9 @@ This method sets all of the parameters with a given name to the same value for a
 
 `public void SetCommonParameters (`
 
-          `string parameterName,`
+          `string parameterName,`
 
-          `string parameterValue,`
+          `string parameterValue,`
 
 `)`
 
@@ -63,11 +63,11 @@ This method sets all of the parameters with a given name to the same value for a
 
 *parameterName*
 
-     The name (string) of the parameter to set.
+     The name (string) of the parameter to set.
 
 *parameterValue*
 
-     The value to set the parameter to.
+     The value to set the parameter to.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -81,9 +81,9 @@ Setting a value to null is not supported.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

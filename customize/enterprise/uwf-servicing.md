@@ -50,17 +50,17 @@ The following tables list the methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[UWF_Servicing.Disable](uwf-servicingdisable.md)</p></td>
+<td><p><a href="uwf-servicingdisable.md" data-raw-source="[UWF_Servicing.Disable](uwf-servicingdisable.md)">UWF_Servicing.Disable</a></p></td>
 <td><p>Disables Unified Write Filter (UWF) servicing mode.</p>
 <p>The system leaves servicing mode in the next session that follows a restart.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Servicing.Enable](uwf-servicingenable.md)</p></td>
+<td><p><a href="uwf-servicingenable.md" data-raw-source="[UWF_Servicing.Enable](uwf-servicingenable.md)">UWF_Servicing.Enable</a></p></td>
 <td><p>Enables Unified Write Filter (UWF) servicing mode.</p>
 <p>The system enters servicing mode in the next session that follows a restart.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Servicing.UpdateWindows](uwf-servicingupdatewindows.md)</p></td>
+<td><p><a href="uwf-servicingupdatewindows.md" data-raw-source="[UWF_Servicing.UpdateWindows](uwf-servicingupdatewindows.md)">UWF_Servicing.UpdateWindows</a></p></td>
 <td><p>Calls Windows Update to download and install critical and security updates for your device running Windows 10 Enterprise.</p></td>
 </tr>
 </tbody>

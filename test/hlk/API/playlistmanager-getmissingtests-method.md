@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This method is being deprecated.
 
- 
+ 
 
 Uses the given [Playlist](playlist-class.md) to find tests for each [Target](target-class.md) in the current [PlaylistManager](playlistmanager-class.md)'s Project that should be present but are not.
 
@@ -33,7 +33,7 @@ Uses the given [Playlist](playlist-class.md) to find tests for each [Target](tar
 
 `public Dictionary<Target, List<PlaylistTest>> GetMissingTests (`
 
-          `Playlist playlist`
+          `Playlist playlist`
 
 `)`
 
@@ -42,7 +42,7 @@ Uses the given [Playlist](playlist-class.md) to find tests for each [Target](tar
 
 *playlist*
 
- The [Playlist](playlist-class.md) for which missing tests will be found.
+ The [Playlist](playlist-class.md) for which missing tests will be found.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -61,9 +61,9 @@ Tests are determined to be missing if they have features that match the features
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

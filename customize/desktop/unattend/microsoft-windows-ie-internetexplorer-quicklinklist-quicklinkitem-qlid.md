@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies a unique value to represent the [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md). <em>ID</em> is a string.</p></td>
+<td><p>Specifies a unique value to represent the <a href="microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md" data-raw-source="[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)">QuickLinkItem</a>. <em>ID</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 
 [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

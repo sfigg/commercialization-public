@@ -31,6 +31,7 @@ This topic applies to the following test jobs:
 -   WDDM Pass Through - Lock (WoW64)
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM.DisplayRender.Base</li></ul> |  
@@ -43,7 +44,7 @@ This topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -60,7 +61,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -88,7 +89,7 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 </tbody>
 </table>
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -106,20 +107,20 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>PassThrough.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -130,11 +131,11 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo |
 | **TDRArgs**                  | /get or /set                                         |
 
- 
 
- 
 
- 
+
+
+
 
 
 

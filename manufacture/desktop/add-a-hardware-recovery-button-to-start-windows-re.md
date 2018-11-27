@@ -49,16 +49,16 @@ For PCs which support firmware options menu, triggering the button (or button co
 
 **Note**  The hardware button will not be able to boot the PC into Windows RE until Windows RE is installed. In general, this means after the PC has completed the Specialize configuration pass.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Deploy Windows RE](deploy-windows-re.md)
 
- 
+ 
 
- 
+ 
 
 
 

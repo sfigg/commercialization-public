@@ -42,7 +42,7 @@ This method creates a list of targets containing the specific container ID. Ther
 
 `Public Function FindTargetFromContainer ( _`
 
-          `containerId As Guid _`
+          `containerId As Guid _`
 
 `) As ReadOnlyCollection(Of TargetData)`
 
@@ -50,7 +50,7 @@ This method creates a list of targets containing the specific container ID. Ther
 
 `public ReadOnlyCollection<TargetData> FindTargetFromContainer (`
 
-          `Guid containerId`
+          `Guid containerId`
 
 `)`
 
@@ -59,7 +59,7 @@ This method creates a list of targets containing the specific container ID. Ther
 
 *containerId*
 
-     The GUID of containerId for (most likely) a device.
+     The GUID of containerId for (most likely) a device.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **ReadOnlyCollection**, which is a list of test targets with &lt;paramre
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

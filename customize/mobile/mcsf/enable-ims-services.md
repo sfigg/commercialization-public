@@ -23,29 +23,29 @@ To allow configuration of the default values of IMS services out of the box usin
 ```
 IMSServices 
 {
-     IMS  ----------------> RILDMCONFIG_IMS_TEST_NODE_STATUS -> NV 67264 subitem ‘RegConfigTestMode’ (// 1 means disabling IMS and 0 means enabling it) 
-     SMS_OverIMS --------->  RILDMCONFIG_SMSOVER_IP_NW_INDICATION -> NV 67259 subitem ‘iSMSOverIPNetworkIndication’
-     Voice_Over_IMS ------> [RILDMCONFIG_IMS_VOICE_ENABLED -> NV 67348 subitem ‘volte_disabled’] 
-     Video_Over_IMS ------> [RILDMCONFIG_IMS_VIDEO_ENABLED -> NV 67348 subitem ‘VT calling enabled’] 
+     IMS  ----------------> RILDMCONFIG_IMS_TEST_NODE_STATUS -> NV 67264 subitem ‘RegConfigTestMode’ (// 1 means disabling IMS and 0 means enabling it) 
+     SMS_OverIMS --------->  RILDMCONFIG_SMSOVER_IP_NW_INDICATION -> NV 67259 subitem ‘iSMSOverIPNetworkIndication’
+     Voice_Over_IMS ------> [RILDMCONFIG_IMS_VOICE_ENABLED -> NV 67348 subitem ‘volte_disabled’] 
+     Video_Over_IMS ------> [RILDMCONFIG_IMS_VIDEO_ENABLED -> NV 67348 subitem ‘VT calling enabled’] 
 }; 
 ```
 
-**Note**  
+**Note**  
 All values need to be set at once. For example, you cannot just set the value for Voice\_Over\_IMS. You must send a value for all. The OS applies the value to the corresponding NV item only if the value is changing.
 
- 
+
 
 wpblue\_gdr2 allows configuration of the OMA DM services mask (sub-item of NV 69750) separately. You can use a new setting similar to `IMSServices` called `IMSOMADMServices` which will be directly mapped to RIL\_IMS\_NW\_ENABLED\_FLAGS on the modem side. See the SoC modem documentation for more details about the flags.
 
 ```
 IMSOMADMServices
 {
-     0 = NONE
-     1 = OMA_DM  -----------> RIL_IMS_NW_ENABLED_FLAG_PROVISION (Bit 0 - Enable(1)/Disable(0) OMA DM services)
-     2 = VOICE  ------------> RIL_IMS_NW_ENABLED_FLAG_VOICE (Bit 1-  VoLTE enable(1)/disable(0) by OMA-DM)
-     4 = VIDEO -------------> RIL_IMS_NW_ENABLED_FLAG_VIDEO (Bit 2 - VT enable(1)/disable(0) by OMA-DM)
-     8 = EAB_PRESENCE ------> RIL_IMS_NW_ENABLED_FLAG_EAB (Bit 3 - Presence enable(1)/disable(0) by OMA-DM)
-     15 = Enable all above services
+     0 = NONE
+     1 = OMA_DM  -----------> RIL_IMS_NW_ENABLED_FLAG_PROVISION (Bit 0 - Enable(1)/Disable(0) OMA DM services)
+     2 = VOICE  ------------> RIL_IMS_NW_ENABLED_FLAG_VOICE (Bit 1-  VoLTE enable(1)/disable(0) by OMA-DM)
+     4 = VIDEO -------------> RIL_IMS_NW_ENABLED_FLAG_VIDEO (Bit 2 - VT enable(1)/disable(0) by OMA-DM)
+     8 = EAB_PRESENCE ------> RIL_IMS_NW_ENABLED_FLAG_EAB (Bit 3 - Presence enable(1)/disable(0) by OMA-DM)
+     15 = Enable all above services
 }
 ```
 
@@ -64,7 +64,7 @@ This customization supports: **per-IMSI** value
                          Description="Use to configure which IMS services are enabled."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -74,7 +74,7 @@ This customization supports: **per-IMSI** value
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -149,9 +149,11 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
 
-    You can set `IMSServices` to any decimal value formed by a combination of the bitmasks. For example, a bitmask of 1111 (or a decimal value of 15) means that all services are enabled. A bitmask of 0101 (or a decimal value of 5) means that IMS and Voice over IMS are enabled by default and SMS over IMS and Video over IMS are disabled, and so on.
+
+~~~
+You can set `IMSServices` to any decimal value formed by a combination of the bitmasks. For example, a bitmask of 1111 (or a decimal value of 15) means that all services are enabled. A bitmask of 0101 (or a decimal value of 5) means that IMS and Voice over IMS are enabled by default and SMS over IMS and Video over IMS are disabled, and so on.
+~~~
 
 5.  To configure the OMA DM services mask, set the `IMSOMADMServices` setting to one of the following values:
 
@@ -202,12 +204,12 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+
 
 <a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator partner to test this customization on the operator's network.
 
- 
+
 ## Related topics
 
 [Prepare for Windows mobile development](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/preparing-for-windows-mobile-development)

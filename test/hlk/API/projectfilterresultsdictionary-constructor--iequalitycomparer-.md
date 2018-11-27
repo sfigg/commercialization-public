@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **ProjectFilterResultsDiction
 
 `Public Sub New ( _`
 
-          `comparer As IEqualityComparer(Of TestResult) _`
+          `comparer As IEqualityComparer(Of TestResult) _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **ProjectFilterResultsDiction
 
 `public ProjectFilterResultsDictionary (`
 
-          `IEqualityComparer<TestResult> comparer`
+          `IEqualityComparer<TestResult> comparer`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **ProjectFilterResultsDiction
 
 *comparer*
 
-     The **System.Collections.Generic.IEqualityComparer** implementation to use when comparing keys, or **null** to use the default EqualityComparer for the type of the key.
+     The **System.Collections.Generic.IEqualityComparer** implementation to use when comparing keys, or **null** to use the default EqualityComparer for the type of the key.
 
- 
+ 
 
- 
+ 
 
 
 

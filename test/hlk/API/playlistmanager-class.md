@@ -34,16 +34,16 @@ Class that manages all [Playlist](playlist-class.md) interactions with a particu
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.PlaylistManager**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.PlaylistManager**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

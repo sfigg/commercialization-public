@@ -65,7 +65,7 @@ Beginning with Windows 8.1, the Sysprep user interface is deprecated. The Syspre
 **Note**  
 When you copy Windows images between PCs, the reference and destination PCs may not have to have compatible hardware abstraction layers (HALs). The /detecthal option in the Boot Configuration Data (BCD) enables a system that has already run Sysprep to install the correct HAL.
 
- 
+ 
 
 ## <span id="bkmk_4"></span><span id="BKMK_4"></span>Limitations
 
@@ -89,7 +89,7 @@ Sysprep has the following limitations:
     **Warning**  
     If you do not assign a strong password to a user account before you run Sysprep or OOBE, you may not be able to log on to the PC. We recommend that you always use strong passwords for your user accounts.
 
-     
+     
 
 ## <span id="bkmk_3"></span><span id="BKMK_3"></span>Unsupported Scenarios
 
@@ -127,28 +127,28 @@ The following table contains links to resources related to this scenario.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Product evaluation</strong></p></td>
-<td align="left"><p>[Sysprep Process Overview](sysprep-process-overview.md)</p></td>
+<td align="left"><p><a href="sysprep-process-overview.md" data-raw-source="[Sysprep Process Overview](sysprep-process-overview.md)">Sysprep Process Overview</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md) | [Customize the Default User Profile by Using CopyProfile](customize-the-default-user-profile-by-using-copyprofile.md) | [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md)</p></td>
+<td align="left"><p><a href="sysprep--generalize--a-windows-installation.md" data-raw-source="[Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md)">Sysprep (Generalize) a Windows installation</a> | <a href="customize-the-default-user-profile-by-using-copyprofile.md" data-raw-source="[Customize the Default User Profile by Using CopyProfile](customize-the-default-user-profile-by-using-copyprofile.md)">Customize the Default User Profile by Using CopyProfile</a> | <a href="use-answer-files-with-sysprep.md" data-raw-source="[Use Answer Files with Sysprep](use-answer-files-with-sysprep.md)">Use Answer Files with Sysprep</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Tools and settings</strong></p></td>
-<td align="left"><p>[Sysprep Command-Line Options](sysprep-command-line-options.md) | [Sysprep Support for Server Roles](sysprep-support-for-server-roles.md)</p></td>
+<td align="left"><p><a href="sysprep-command-line-options.md" data-raw-source="[Sysprep Command-Line Options](sysprep-command-line-options.md)">Sysprep Command-Line Options</a> | <a href="sysprep-support-for-server-roles.md" data-raw-source="[Sysprep Support for Server Roles](sysprep-support-for-server-roles.md)">Sysprep Support for Server Roles</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Related technologies</strong></p></td>
-<td align="left"><p>[Windows Setup](http://microsoft.com) | [Audit Mode Overview](audit-mode-overview.md) | [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)</p></td>
+<td align="left"><p><a href="http://microsoft.com" data-raw-source="[Windows Setup](http://microsoft.com)">Windows Setup</a> | <a href="audit-mode-overview.md" data-raw-source="[Audit Mode Overview](audit-mode-overview.md)">Audit Mode Overview</a> | <a href="boot-windows-to-audit-mode-or-oobe.md" data-raw-source="[Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)">Boot Windows to Audit Mode or OOBE</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

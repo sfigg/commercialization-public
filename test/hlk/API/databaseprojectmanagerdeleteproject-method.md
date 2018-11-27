@@ -40,7 +40,7 @@ This method deletes a named project.
 
 `Public Overrides Sub DeleteProject ( _`
 
-          `projectNameToDelete As String _`
+          `projectNameToDelete As String _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method deletes a named project.
 
 `public override void DeleteProject (`
 
-          `string projectNameToDelete`
+          `string projectNameToDelete`
 
 `)`
 
@@ -57,7 +57,7 @@ This method deletes a named project.
 
 *projectNameToDelete*
 
-     The name of the project to delete.
+     The name of the project to delete.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception occurs when the *projectNameToDelete* parameter is **null** or empt
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

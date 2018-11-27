@@ -37,7 +37,7 @@ This test uses specialized hardware to measure the latency in touch packet deliv
 
 **Note**  For Windows 10 testing, please use the 7mm contacts instead of the 9mm contacts.
 
- 
+ 
 
 Also note that the Touch panning latency test is designed to evaluate device latency during active use on the touchscreen. The test utilizes the acoustic latency measurement tool that requires calibration to complete the test.
 
@@ -51,9 +51,9 @@ stepmotor.exe
 **Passing criteria**
 
 Average latency recorded during the test must meet the requirement to complete with passing status. There is a 20% tolerance on panning latency tests.
- 
+ 
 
- 
+ 
 
 
 

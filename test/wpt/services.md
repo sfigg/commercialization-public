@@ -29,13 +29,13 @@ This action produces a text file that summarizes metrics related to services.
 <a href="" id="-ranget1-t2"></a>**-range***T1 T2*  
 Shows data between times *T1* and *T2*, both in microseconds.
 
-<a href="" id="-poithreshold-containerinit-t-"></a>**-poiThreshold\_ContainerInit***&lt;t&gt;*  
+<a href="" id="-poithreshold-containerinit-t-"></a>**-poiThreshold\_ContainerInit**<em>&lt;t&gt;</em>  
 Flags any container initialization time greater than *t*, in microseconds, as a point of interest.
 
-<a href="" id="-poithreshold-imageload-t-"></a>**-poiThreshold\_ImageLoad***&lt;t&gt;*  
+<a href="" id="-poithreshold-imageload-t-"></a>**-poiThreshold\_ImageLoad**<em>&lt;t&gt;</em>  
 Flags any image load time greater than *t*, in microseconds, as a point of interest.
 
-<a href="" id="-poithreshold-serviceinit-t-"></a>**-poiThreshold\_ServiceInit***&lt;t&gt;*  
+<a href="" id="-poithreshold-serviceinit-t-"></a>**-poiThreshold\_ServiceInit**<em>&lt;t&gt;</em>  
 Flags any service initialization time greater than *t*, in microseconds, as a point of interest.
 
 ## Remarks
@@ -48,9 +48,9 @@ The default is to not flag any services as points of interest. All times are dis
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

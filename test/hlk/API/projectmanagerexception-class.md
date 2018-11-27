@@ -38,7 +38,7 @@ This class is a base class for all certification manager exceptions.
 
 `Public Class ProjectManagerException`
 
-          `Implements Exception`
+          `Implements Exception`
 
 **C#**
 
@@ -51,9 +51,9 @@ This class is a base class for all certification manager exceptions.
 
 **System.Object**
 
-     **System.Exception**
+     **System.Exception**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
 ## <span id="Derived_Classes"></span><span id="derived_classes"></span><span id="DERIVED_CLASSES"></span>Derived Classes
 
@@ -71,46 +71,46 @@ This class is a base class for all certification manager exceptions.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DataIntegrityException Class](dataintegrityexception-class.md)</p></td>
+<td><p><a href="dataintegrityexception-class.md" data-raw-source="[DataIntegrityException Class](dataintegrityexception-class.md)">DataIntegrityException Class</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>[MachineException Class](machineexception-class.md)</p></td>
+<td><p><a href="machineexception-class.md" data-raw-source="[MachineException Class](machineexception-class.md)">MachineException Class</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>[ProductInstanceException Class](productinstanceexception-class.md)</p></td>
+<td><p><a href="productinstanceexception-class.md" data-raw-source="[ProductInstanceException Class](productinstanceexception-class.md)">ProductInstanceException Class</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>[RequirementException Class](requirementexception-class.md)</p></td>
+<td><p><a href="requirementexception-class.md" data-raw-source="[RequirementException Class](requirementexception-class.md)">RequirementException Class</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>[ScheduleException Class](scheduleexception-class.md)</p></td>
+<td><p><a href="scheduleexception-class.md" data-raw-source="[ScheduleException Class](scheduleexception-class.md)">ScheduleException Class</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>[TargetException Class](targetexception-class.md)</p></td>
+<td><p><a href="targetexception-class.md" data-raw-source="[TargetException Class](targetexception-class.md)">TargetException Class</a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>[TestException Class](testexception-class.md)</p></td>
+<td><p><a href="testexception-class.md" data-raw-source="[TestException Class](testexception-class.md)">TestException Class</a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

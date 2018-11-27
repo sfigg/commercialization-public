@@ -21,6 +21,7 @@ This test verifies that the iSCSI Boot Firmware table is available and is valid.
 The iSCSI Boot Firmware Table (iBFT) is a block of information residing in memory that contains different entries that are required by the iSCSI boot process.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable</li></ul> |  
@@ -33,7 +34,7 @@ The iSCSI Boot Firmware Table (iBFT) is a block of information residing in memor
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -50,7 +51,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see: [Troubleshooting Device.Storage Testing](troubleshooting-devicestorage-testing.md).
 
@@ -104,11 +105,11 @@ To run the test, do the following:
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type `/h`
+> [!NOTE]
+> 
+> For command-line help for this test binary, type `/h`
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -126,20 +127,20 @@ For command-line help for this test binary, type `/h`
 <tbody>
 <tr class="odd">
 <td><p>Ibftest.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Ibftest.sys</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>Ibftestwrap.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\DriversTest\storage\wdk\ibftest&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -148,11 +149,11 @@ For command-line help for this test binary, type `/h`
 | **LLU\_NetAccessOnly** | User account for accessing test fileshare. |
 | **LLU\_LclAdminUsr**   | User account for running the test.         |
 
- 
 
- 
 
- 
+
+
+
 
 
 

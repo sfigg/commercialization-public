@@ -20,12 +20,12 @@ Partners can define a dialer code to use for 3GP USSD services like changing the
 
 Microsoft provides a number of predefined USSD codes. Partners can exclude predefined USSD entries, allowing the number to be sent as standard DTMF tones instead. This allows for customization for specific markets where the predefined USSD codes need to be sent as a DTMF tones.
 
-**Note**  
+**Note**  
 Only existing USDD codes can be overridden.
 
- 
 
-The following USSD codes are predefined in Windows Phone, and all of them can be overridden by the OEM.
+
+The following USSD codes are predefined in Windows Phone, and all of them can be overridden by the OEM.
 
 <table>
 <colgroup>
@@ -309,7 +309,7 @@ The following USSD codes are predefined in Windows Phone, and all of them can b
 </tbody>
 </table>
 
- 
+
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value
@@ -325,41 +325,43 @@ This customization supports: **per-IMSI** value
                          Owner=""  
                          OwnerType="OEM"> 
 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
+~~~
+  <!-- Define the Targets --> 
+  <Targets>
+     <Target Id="">
+        <TargetState>
+           <Condition Name="" Value="" />
+           <Condition Name="" Value="" />
+        </TargetState>
+     </Target>
+  </Targets>
 
-        <Settings Path="Phone/PerSimSettings/$(__IMSI)"> 
-          <Setting Name="IgnoreUssdExclusions" Value="" />    
-          <Setting Name="UssdExclusionList" Value="" />    
-          </Settings>  
+  <Static>
+    <Settings Path="Multivariant">
+      <Setting Name="Enable" Value="1" />
+    </Settings>
+    <Settings Path="AutoDataConfig">
+      <Setting Name="Enable" Value="0" />
+    </Settings>
+  </Static>
 
-      </Variant>
+  <!-- Specify the Variant -->
+  <Variant Name=""> 
+    <TargetRefs>
+      <TargetRef Id="" /> 
+    </TargetRefs>
 
-    </ImageCustomizations>
-    ```
+    <Settings Path="Phone/PerSimSettings/$(__IMSI)"> 
+      <Setting Name="IgnoreUssdExclusions" Value="" />    
+      <Setting Name="UssdExclusionList" Value="" />    
+      </Settings>  
+
+  </Variant>
+
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
@@ -394,7 +396,7 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+
 
 5.  Set `UssdExclusionList` to the list of desired exclusions, separated by semicolons. For example, to override 2 and 4, set the value to *2;4*
 

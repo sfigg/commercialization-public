@@ -32,21 +32,21 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TargetsAreValidInSameTargetFamily Method (TargetData, TargetData, ProjectManager)](targetfamily-targetsarevalidinsametargetfamily-method--targetdata--targetdata--projectmanager-.md)</p></td>
-<td><p>This method checks to see if the two [TargetData](targetdata-class.md) objects can be members of the same target family.</p></td>
+<td><p><a href="targetfamily-targetsarevalidinsametargetfamily-method--targetdata--targetdata--projectmanager-.md" data-raw-source="[TargetsAreValidInSameTargetFamily Method (TargetData, TargetData, ProjectManager)](targetfamily-targetsarevalidinsametargetfamily-method--targetdata--targetdata--projectmanager-.md)">TargetsAreValidInSameTargetFamily Method (TargetData, TargetData, ProjectManager)</a></p></td>
+<td><p>This method checks to see if the two <a href="targetdata-class.md" data-raw-source="[TargetData](targetdata-class.md)">TargetData</a> objects can be members of the same target family.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TargetsAreValidInSameTargetFamily Method (TargetData, TargetData, ProjectManager, StringBuilder)](targetfamily-targetsarevalidinsametargetfamily-method--targetdata--targetdata--projectmanager--stringbuilder-.md)</p></td>
-<td><p>This method checks to see if the two [TargetData](targetdata-class.md) objects can be members of the same target family.</p></td>
+<td><p><a href="targetfamily-targetsarevalidinsametargetfamily-method--targetdata--targetdata--projectmanager--stringbuilder-.md" data-raw-source="[TargetsAreValidInSameTargetFamily Method (TargetData, TargetData, ProjectManager, StringBuilder)](targetfamily-targetsarevalidinsametargetfamily-method--targetdata--targetdata--projectmanager--stringbuilder-.md)">TargetsAreValidInSameTargetFamily Method (TargetData, TargetData, ProjectManager, StringBuilder)</a></p></td>
+<td><p>This method checks to see if the two <a href="targetdata-class.md" data-raw-source="[TargetData](targetdata-class.md)">TargetData</a> objects can be members of the same target family.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

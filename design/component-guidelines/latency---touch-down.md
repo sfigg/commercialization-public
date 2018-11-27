@@ -50,9 +50,9 @@ b. Only 50 taps during the collection phase are required for this class of devic
 
 -   A recorded average touch-down latency of less than or equal to 35.0ms will result in a pass.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -106,7 +106,7 @@ The recommended steps to provision a machine for the client are as follows:
 **Note**  
 The 64-bit version of the ingestion client is no longer supported as of 12/9/2013. If the 64-bit version is installed, it must be uninstalled and then the 32-bit version must be installed.
 
- 
+ 
 
 The ingestion client can be installed on the following operating systems:
 
@@ -173,7 +173,7 @@ In this example, “C:\\Certificates\\OemSecretCertificateWithPrivateKey.pfx” 
 **Note**  
 -   The certificate private key file and password specified as parameters to install are used to configure the X.509 certificate in the local machine’s certificate store. The password is not stored elsewhere and is not exchanged with Microsoft.
 
- 
+ 
 
 In addition to installing the ingestion client, the install command creates the folder %ProgramData%\\Microsoft\\WP Ingestion Client\\. This folder contains the subfolders Backup and Logs. The Backup subfolder is used to store the client configuration for uninstall. The Logs subfolder is used to store client cmdlet diagnostic log information.
 
@@ -245,6 +245,6 @@ To escalate a problem to Microsoft, send the following information by submitting
 
 -   Correlation Value. This can be retrieved from the [Get-SignedFirmwareSubmission cmdlet](get-signedfirmwaresubmission-cmdlet.md).
 
- 
+ 
 
- 
+ 

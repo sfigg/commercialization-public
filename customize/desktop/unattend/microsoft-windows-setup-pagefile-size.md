@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -71,9 +71,9 @@ The following XML output shows how to create a page file.
 
 [PageFile](microsoft-windows-setup-pagefile.md)
 
- 
+ 
 
- 
+ 
 
 
 

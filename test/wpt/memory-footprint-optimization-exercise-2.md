@@ -130,7 +130,7 @@ The detailed **VirtualAlloc** data is exposed via the **‘VirtualAlloc Commit L
 </tbody>
 </table>
 
- 
+ 
 
 Follow these steps to analyze **MemoryTestApp.exe**
 
@@ -291,7 +291,7 @@ The detailed Heap data is exposed via the **“Heap Allocations”** graph in WP
 </tbody>
 </table>
 
- 
+ 
 
 Follow these steps to analyze **MemoryTestApp.exe**
 
@@ -350,9 +350,9 @@ Once the analysis is complete, you should clean up the registry to make sure tha
 reg delete "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MemoryTestApp.exe" /v TracingFlags /f
 ```
 
- 
+ 
 
- 
+ 
 
 
 

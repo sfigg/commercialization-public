@@ -38,7 +38,7 @@ When modifying any number of partitions, for each drive, use the partition order
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -277,9 +277,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

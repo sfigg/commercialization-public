@@ -29,7 +29,7 @@ The diagnostic summary log captures any bugcheck(s) that occur during the test r
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
 
-For sample usage, see the [Diagnostic Bugcheck Summary](..\developer\diagnostic-bugcheck-summary.md) sample.
+For sample usage, see the [Diagnostic Bugcheck Summary](../developer/diagnostic-bugcheck-summary.md) sample.
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -48,9 +48,9 @@ Returns [DiagnosticSummaryLog](diagnosticsummarylog-class.md), an object represe
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

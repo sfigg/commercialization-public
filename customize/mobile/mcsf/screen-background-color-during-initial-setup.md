@@ -18,9 +18,9 @@ ms.topic: article
 
 For Windows 10 Mobile, the default background during OOBE or initial device setup is always dark. To align with this change, OEMs can no longer change the default screen background color during OOBE or initial device setup.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,58 +38,60 @@ This customization supports: **per-IMSI** value, **per-device** value
                                       and hide or show the 'IP type' setting in the internet APN settings screen."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
 
-    <!-- Use for the per-IMSI case 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
-     
-        <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
-          <Setting Name="HideAPN" Value="" />  
-          <Setting Name="HideAPNIPType" Value="" />      
-          <Setting Name="APNIPTypeIfHidden" Value="" />      
-        </Settings>  
-      </Variant>
+~~~
+<!-- Use for the per-IMSI case 
 
-    -->
+  <!-- Define the Targets --> 
+  <Targets>
+     <Target Id="">
+        <TargetState>
+           <Condition Name="" Value="" />
+           <Condition Name="" Value="" />
+        </TargetState>
+     </Target>
+  </Targets>
 
-    <!-- Use for the per-device case
+  <Static>
+    <Settings Path="Multivariant">
+      <Setting Name="Enable" Value="1" />
+    </Settings>
+    <Settings Path="AutoDataConfig">
+      <Setting Name="Enable" Value="0" />
+    </Settings>
+  </Static>
 
-      <Static>  
-         <Settings Path="CellCore/PerDevice/CellUX">  
-          <Setting Name="HideAPN" Value="" />  
-          <Setting Name="HideAPNIPType" Value="" />      
-          <Setting Name="APNIPTypeIfHidden" Value="" />      
-        </Settings>  
-      </Static>
+  <!-- Specify the Variant -->
+  <Variant Name=""> 
+    <TargetRefs>
+      <TargetRef Id="" /> 
+    </TargetRefs>
 
-    -->
+    <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
+      <Setting Name="HideAPN" Value="" />  
+      <Setting Name="HideAPNIPType" Value="" />      
+      <Setting Name="APNIPTypeIfHidden" Value="" />      
+    </Settings>  
+  </Variant>
 
-    </ImageCustomizations>
-    ```
+-->
+
+<!-- Use for the per-device case
+
+  <Static>  
+     <Settings Path="CellCore/PerDevice/CellUX">  
+      <Setting Name="HideAPN" Value="" />  
+      <Setting Name="HideAPNIPType" Value="" />      
+      <Setting Name="APNIPTypeIfHidden" Value="" />      
+    </Settings>  
+  </Static>
+
+-->
+
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
@@ -126,7 +128,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+
 
 5.  Set the value for `HideAPNIPType` to one of the following:
 
@@ -153,7 +155,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+
 
 6.  To change the default IP type shown in the **IP type** listbox: Set the value for `APNIPTypeIfHidden` to one of the following:
 
@@ -188,7 +190,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

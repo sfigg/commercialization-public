@@ -106,9 +106,9 @@ Three types of VHD files can be created by using the disk-management tools:
 
 [Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive](download-and-install-windows-pe--winpe--so-you-can-boot-from-a-usb-flash-drive-or-an-external-usb-hard-drive.md)
 
- 
+ 
 
- 
+ 
 
 
 

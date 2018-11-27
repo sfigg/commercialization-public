@@ -38,7 +38,7 @@ For information about finding the GUID for your icon, see the MSDN topic: [NOTIF
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -85,9 +85,9 @@ The following XML output shows how to configure the **Additional Information** i
 
 [Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md)
 
- 
+ 
 
- 
+ 
 
 
 

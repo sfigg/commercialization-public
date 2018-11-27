@@ -62,7 +62,7 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -82,9 +82,9 @@ The object type can be any of the following values:
 
 [IControlErrorInfo](icontrolerrorinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

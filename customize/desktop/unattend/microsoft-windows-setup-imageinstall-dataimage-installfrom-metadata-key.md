@@ -50,7 +50,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -88,7 +88,6 @@ The following XML output shows how to configure the `MetaData` setting to instal
                 <Key>/IMAGE/NAME</Key>
                 <Value>FNB2Drivers</Value>
             </MetaData>
-
 ```
 
 The following XML output shows how to configure the `MetaData` setting to install a specific data image by using the image description.
@@ -107,9 +106,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 [Value](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-value.md)
 
- 
 
- 
+
+
 
 
 

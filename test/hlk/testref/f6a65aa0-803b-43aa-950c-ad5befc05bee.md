@@ -15,6 +15,7 @@ ms.topic: article
 These tests test various aspects of the TPM EK Certificate.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.TrustedPlatformModule.TPM20.EKCert</li><li>System.Fundamentals.TPM20.TPM20</li></ul> |  
@@ -31,7 +32,7 @@ These tests test various aspects of the TPM EK Certificate.
 
 
 ## Additional Documentation
-Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s): <ul><li>[System.Fundamentals additional documentation](https:\//docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/system-fundamentals-additional-documentation.md)</li></ul>
+Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s): <ul><li>[System.Fundamentals additional documentation](https:///docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/system-fundamentals-additional-documentation.md)</li></ul>
 
 ## Troubleshooting
 For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](https://docs.microsoft.com/en-us/windows-hardware/HLK/troubleshooting.html)

@@ -53,34 +53,34 @@ The following table describes the functions that this interface provides.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[GetColumnNumber](getcolumnnumber.md)</p></td>
+<td><p><a href="getcolumnnumber.md" data-raw-source="[GetColumnNumber](getcolumnnumber.md)">GetColumnNumber</a></p></td>
 <td><p>Returns the column number of the validation error.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetLineNumber](getlinenumber.md)</p></td>
+<td><p><a href="getlinenumber.md" data-raw-source="[GetLineNumber](getlinenumber.md)">GetLineNumber</a></p></td>
 <td><p>Returns the line number of the validation error.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetElementType](getelementtype.md)</p></td>
+<td><p><a href="getelementtype.md" data-raw-source="[GetElementType](getelementtype.md)">GetElementType</a></p></td>
 <td><p>Returns the element type at which the validation error occurred.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetElementId](getelementid.md)</p></td>
+<td><p><a href="getelementid.md" data-raw-source="[GetElementId](getelementid.md)">GetElementId</a></p></td>
 <td><p>Returns the element identifier at which the validation error occurred.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

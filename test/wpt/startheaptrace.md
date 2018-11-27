@@ -93,7 +93,7 @@ Possible error values are described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 If the function fails for a reason other than those listed, a system error code is returned.
 
@@ -109,9 +109,9 @@ None
 
 [UpdateHeapTrace](updateheaptrace.md)
 
- 
+ 
 
- 
+ 
 
 
 

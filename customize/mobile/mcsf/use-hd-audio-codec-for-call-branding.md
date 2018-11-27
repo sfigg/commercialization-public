@@ -89,7 +89,7 @@ OEMs can customize call progress branding when a call is made using a specific a
     | GSMFRAudioQualityString    | Any text string | Call progress branding for calls using the GSMFR audio codec    |
     | QCELP13KAudioQualityString | Any text string | Call progress branding for calls using the QCELP13K audio codec |
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone.

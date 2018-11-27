@@ -19,7 +19,7 @@ You can temporarily copy a WIM (Windows Imaging) image over to a device and then
 **Important**  
 Only MMOS test images are currently supported. Retail signing is not currently supported.
 
- 
+ 
 
 ## <span id="Creating_a_WIM_Image"></span><span id="creating_a_wim_image"></span><span id="CREATING_A_WIM_IMAGE"></span>Creating a WIM Image
 
@@ -104,11 +104,11 @@ The ffutool sends a WIM opcode to the device, along with information about the s
 **Note**  
 The current MMOS WIM images may not display the rotating disc graphic but MMOS is still functional.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

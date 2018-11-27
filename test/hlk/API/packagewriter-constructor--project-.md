@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **PackageWriter** class. This
 
 `Public Sub New ( _`
 
-          `project As Project _`
+          `project As Project _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **PackageWriter** class. This
 
 `public PackageWriter (`
 
-          `Project project`
+          `Project project`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **PackageWriter** class. This
 
 *project*
 
-     The name of the project for which a package object is created.
+     The name of the project for which a package object is created.
 
- 
+ 
 
- 
+ 
 
 
 

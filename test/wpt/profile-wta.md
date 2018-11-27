@@ -26,7 +26,7 @@ This action produces a text file that summarizes metrics for profiles.
 ## Options
 
 
-<a href="" id="-util-n-"></a>**-util***\[n\]*  
+<a href="" id="-util-n-"></a>**-util**<em>\[n\]</em>  
 Shows CPU utilization for *n* second intervals. The default is 1 second.
 
 <a href="" id="-detail"></a>**-detail**  
@@ -48,9 +48,9 @@ If none of `-util`, `-detail`, or `-freq` is specified, the default is to show t
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

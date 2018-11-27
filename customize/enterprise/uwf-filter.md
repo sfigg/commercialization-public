@@ -50,23 +50,23 @@ The following tables list any methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[UWF_Filter.Enable](uwf-filterenable.md)</p></td>
+<td><p><a href="uwf-filterenable.md" data-raw-source="[UWF_Filter.Enable](uwf-filterenable.md)">UWF_Filter.Enable</a></p></td>
 <td><p>Enables UWF on the next restart.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Filter.Disable](uwf-filterdisable.md)</p></td>
+<td><p><a href="uwf-filterdisable.md" data-raw-source="[UWF_Filter.Disable](uwf-filterdisable.md)">UWF_Filter.Disable</a></p></td>
 <td><p>Disables UWF on the next restart.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Filter.ResetSettings](uwf-filterresetsettings.md)</p></td>
+<td><p><a href="uwf-filterresetsettings.md" data-raw-source="[UWF_Filter.ResetSettings](uwf-filterresetsettings.md)">UWF_Filter.ResetSettings</a></p></td>
 <td><p>Restores UWF settings to the original state that was captured at install time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Filter.ShutdownSystem](uwf-filtershutdownsystem.md)</p></td>
+<td><p><a href="uwf-filtershutdownsystem.md" data-raw-source="[UWF_Filter.ShutdownSystem](uwf-filtershutdownsystem.md)">UWF_Filter.ShutdownSystem</a></p></td>
 <td><p>Safely shuts down a system protected by UWF, even if the overlay is full.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Filter.RestartSystem](uwf-filterrestartsystem.md)</p></td>
+<td><p><a href="uwf-filterrestartsystem.md" data-raw-source="[UWF_Filter.RestartSystem](uwf-filterrestartsystem.md)">UWF_Filter.RestartSystem</a></p></td>
 <td><p>Safely restarts a system protected by UWF, even if the overlay is full.</p></td>
 </tr>
 </tbody>

@@ -57,9 +57,9 @@ This step can take several minutes.
 	
 -   If you've mounted an image to the folder before, try cleaning up the resources associated with the mounted image:
 
-	```
+    ```
 	Dism /Cleanup-Mountpoints
-	```
+    ```
 
 -   For some DISM commands, you'll need to make sure that you are using the **Deployment and Imaging Tools Environment** rather than the standard command prompt.
 

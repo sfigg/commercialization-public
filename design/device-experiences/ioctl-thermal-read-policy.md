@@ -42,9 +42,9 @@ Complete the request by calling [**WdfRequestCompleteWithInformation**](https://
 
 [Thermal management in Windows](thermal-management-in-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

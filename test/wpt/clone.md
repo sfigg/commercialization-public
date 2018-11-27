@@ -62,16 +62,16 @@ The following table describes possible values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IEnumControlWarningInfo](ienumcontrolwarninginfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

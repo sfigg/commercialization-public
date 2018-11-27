@@ -40,7 +40,7 @@ This method adds a machine (test computer) to this role.
 
 `Public Sub AddMachine ( _`
 
-          `machineToAdd As Machine _`
+          `machineToAdd As Machine _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method adds a machine (test computer) to this role.
 
 `public void AddMachine (`
 
-          `Machine machineToAdd`
+          `Machine machineToAdd`
 
 `)`
 
@@ -57,7 +57,7 @@ This method adds a machine (test computer) to this role.
 
 *machineToAdd*
 
-     The machine (test computer) to add to this role.
+     The machine (test computer) to add to this role.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -77,9 +77,9 @@ An exception is thrown when the machine is not valid for this role, but only if 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

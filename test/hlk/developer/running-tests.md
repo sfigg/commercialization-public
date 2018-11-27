@@ -32,9 +32,9 @@ If any of the preceding checks fail, a **ScheduleException** occurs.
 
 If the instance of **QueueTest()** is used for a test that takes a logical machine set and no logical machine set is used to schedule, a **ScheduleException** occurs. Similarly, if the logical machine set that is used is incompatible with the one that's required for a test, a **ScheduleConstraintException** occurs.
 
- 
+ 
 
- 
+ 
 
 
 

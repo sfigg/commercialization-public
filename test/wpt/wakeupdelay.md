@@ -23,9 +23,9 @@ Indicates the delay, in seconds, when emerging from a sleep state for an [OnOffT
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
-    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
-      * \<**WakeupDelay**\>
+  * \<[OnOffTransitionConfigurations](onofftransitionconfigurations.md)\>
+    * \<[OnOffTransitionConfiguration](onofftransitionconfiguration.md)\>
+      * \<**WakeupDelay**\>
 
 
 ## Syntax

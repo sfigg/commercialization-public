@@ -41,28 +41,28 @@ If a test fails, you can expand the test details to review the associated log fi
 
 Right-click any test to see additional test details, including:
 
--   [Bugcheck Summary information](..\user\hlk-studio---results-tab.md#sysx) for system crashes that occur during test runs
+- [Bugcheck Summary information](../user/hlk-studio---results-tab.md#sysx) for system crashes that occur during test runs
 
--   Task logs
+- Task logs
 
--   Additional files
+- Additional files
 
--   Applied filters
+- Applied filters
 
--   Errors
+- Errors
 
--   Infrastructure (gather and execution logs)
+- Infrastructure (gather and execution logs)
 
-To learn more about the different options on this page, including distributed and multi-device support, see [HLK Studio - Results Tab](..\user\hlk-studio---results-tab.md).
+To learn more about the different options on this page, including distributed and multi-device support, see [HLK Studio - Results Tab](../user/hlk-studio---results-tab.md).
 
 ## <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
 
 
-You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](..\user\exporting-a-failed-hlk-job.md).
+You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](../user/exporting-a-failed-hlk-job.md).
 
- 
+ 
 
- 
+ 
 
 
 

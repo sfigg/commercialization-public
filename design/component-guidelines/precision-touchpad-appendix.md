@@ -47,7 +47,7 @@ The appendix for the Windows Precision Touchpad Validation Guide, provides infor
 <tr class="odd">
 <td>3</td>
 <td>Received input at an unexpected time.</td>
-<td>The test did not expect to receive data, but data was received. For example, this can happen in the [Z-Height Detection](z-height-detection.md) test.</td>
+<td>The test did not expect to receive data, but data was received. For example, this can happen in the <a href="z-height-detection.md" data-raw-source="[Z-Height Detection](z-height-detection.md)">Z-Height Detection</a> test.</td>
 </tr>
 <tr class="even">
 <td>5</td>
@@ -61,7 +61,7 @@ The appendix for the Windows Precision Touchpad Validation Guide, provides infor
 </tr>
 <tr class="even">
 <td>7</td>
-<td>Test didn't receive enough data.</td>
+<td>Test didn&#39;t receive enough data.</td>
 <td><p>If the error occurs on contact lift, then it indicates that the test required the contacts to last a certain duration, but that duration was not met.</p>
 <p>If it occurs on contact down, then indicates that the test received a zero-contact frame as the first data – this can be caused by a non-capacitive button press, but is more likely a protocol error (device sending an empty frame).</p></td>
 </tr>
@@ -97,7 +97,7 @@ The appendix for the Windows Precision Touchpad Validation Guide, provides infor
 </tr>
 <tr class="odd">
 <td>15</td>
-<td>Contact didn't move in straight line:</td>
+<td>Contact didn&#39;t move in straight line:</td>
 <td>The contact deviated too much from a line of best fit. Includes the maximum detected deviation from the line in himetric units.</td>
 </tr>
 <tr class="even">
@@ -122,7 +122,7 @@ The appendix for the Windows Precision Touchpad Validation Guide, provides infor
 </tr>
 <tr class="even">
 <td>23</td>
-<td>Device doesn't support minimum number of contacts:</td>
+<td>Device doesn&#39;t support minimum number of contacts:</td>
 <td>The device doesn’t support the required minimum number of contacts. Includes the number of supported contacts.</td>
 </tr>
 <tr class="odd">
@@ -193,7 +193,7 @@ The appendix for the Windows Precision Touchpad Validation Guide, provides infor
 </tbody>
 </table>
 
- 
+ 
 
 ## HID-Specific Error Messages
 
@@ -229,9 +229,9 @@ Here's a table of the HID-specific error messages related to the Windows Precisi
 <td><p>Invalid packet transition.</p></td>
 <td><p>This error message can be presented along with any of the following others:</p>
 <p>o &quot;Last move location different&quot;</p>
-The coordinates of the 'tip switch clear' report for a given contact are not the same as the coordinates of the 'last tip switch set' report.
+The coordinates of the &#39;tip switch clear&#39; report for a given contact are not the same as the coordinates of the &#39;last tip switch set&#39; report.
 <p>o &quot;Missing tip-on&quot;</p>
-The first report didn't have the tip switch set, or there were two packets in a row without the tip switch set.
+The first report didn&#39;t have the tip switch set, or there were two packets in a row without the tip switch set.
 <p>o &quot;Missing tip&quot;</p>
 A contact present in the previously-reported frame, with the tip switch set, was not found in the current frame.</td>
 </tr>
@@ -316,7 +316,7 @@ A contact ID was duplicated in a single frame (sometimes caused by an incomplete
 </tbody>
 </table>
 
- 
+ 
 
 ## PTLogo Command Line Switches
 
@@ -331,11 +331,11 @@ These switches can be combined and are useful for debugging purposes only. These
 | -alliters         | “Ptlogo.exe –alliters test.foo.json”                                                                                    | Used to allow the operator to go through all iterations of a test even if more than the maximum \# of permissible failed iterations have occurred    |
 | -EnableHIDLogging | “Ptlogo.exe –enableHIDLogging test.foo.json”                                                                            | Used to enable HID logging during a specific test to generate a HID.log file for detailed debugging of failures.                                     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

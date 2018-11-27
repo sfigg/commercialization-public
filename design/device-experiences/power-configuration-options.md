@@ -19,7 +19,7 @@ The configuration options described in this topic are available on all Modern St
 
 **Note**  S3 Sleep and Hibernate are not available on Windows 10 Mobile.
 
- 
+ 
 
 ## Hibernate
 
@@ -36,9 +36,9 @@ From a user experience perspective, the S3 and Modern Standby experiences were m
 
 It is expected that a system could be configured to have both an S3 object and a populated FADT table (ACPI S0 Low Power Idle flag, same for Windows 8.1 Connected Standby and Modern Standby), making it possible for enterprise users to change to Windows 7 without requiring any BIOS changes.
 
- 
+ 
 
- 
+ 
 
 
 

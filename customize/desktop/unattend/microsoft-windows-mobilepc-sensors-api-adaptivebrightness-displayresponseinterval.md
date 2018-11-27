@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ This XML example shows how to set the minimum time between changes in display br
 
 [ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md)
 
- 
+ 
 
- 
+ 
 
 
 

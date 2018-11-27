@@ -39,7 +39,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -76,9 +76,9 @@ The following XML output shows how to set Lucerne Publishing for online printing
 
 [Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,8 +24,8 @@ Represents a custom event.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[TraceMergeProperties](tracemergeproperties.md)\>
-    * \<[TraceMergeProperty](tracemergeproperty.md)\>
-      * \<[CustomEvents](customevents.md)\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<[CustomEvents](customevents.md)\>
         * \<**CustomEvent**\>
 
 

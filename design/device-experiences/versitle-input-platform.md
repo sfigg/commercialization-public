@@ -36,9 +36,9 @@ One of the top complaints from users is accidental activation. While typing, sud
 
 Precision Touchpads are backed with a strong hardware compatibility program that guarantees a high quality experience matched with great hardware. The device requirements ensure hardware features superior accuracy, resolution, latency, and report rate characteristics. These attributes make the user experience shine. Additionally, Windows collaborated closely with hardware partners around the design and materials used for the experience. The result is an unparalleled integration between materials, hardware engineering, and software platform.
 
- 
+ 
 
- 
+ 
 
 
 

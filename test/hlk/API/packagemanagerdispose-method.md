@@ -34,7 +34,7 @@ This method disposes this instance of the **PackageManager** object.
 
 `Protected Overrides Sub Dispose ( _`
 
-          `disposing As Boolean _`
+          `disposing As Boolean _`
 
 `)`
 
@@ -42,7 +42,7 @@ This method disposes this instance of the **PackageManager** object.
 
 `public override void Dispose ()`
 
-          `bool disposing`
+          `bool disposing`
 
 `)`
 
@@ -51,16 +51,16 @@ This method disposes this instance of the **PackageManager** object.
 
 *disposing*
 
-     Dispose of unmanaged resources.
+     Dispose of unmanaged resources.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

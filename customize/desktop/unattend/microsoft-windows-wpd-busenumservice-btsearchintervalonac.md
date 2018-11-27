@@ -42,7 +42,7 @@ If `BTSearchIntervalOnAC` is set to **0**, then the computer will not search for
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ The following XML output specifies that the system will search for MTP/BT portab
 
 [BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservice-btsearchintervalondc.md)
 
- 
+ 
 
- 
+ 
 
 
 

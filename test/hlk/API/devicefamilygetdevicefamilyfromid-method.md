@@ -42,9 +42,9 @@ This method gets a device family for the given hardware ID.
 
 `Public Shared Function FindDeviceFamilyFromId ( _`
 
-          `idToFind As String, _`
+          `idToFind As String, _`
 
-          `manager As ProjectManager _`
+          `manager As ProjectManager _`
 
 `) As DeviceFamily`
 
@@ -52,9 +52,9 @@ This method gets a device family for the given hardware ID.
 
 `public static DeviceFamily FindDeviceFamilyFromId (`
 
-          `string idToFind,`
+          `string idToFind,`
 
-          `ProjectManager manager`
+          `ProjectManager manager`
 
 `)`
 
@@ -63,11 +63,11 @@ This method gets a device family for the given hardware ID.
 
 *idToFind*
 
-     The hardware ID to use to compare against.
+     The hardware ID to use to compare against.
 
 *manager*
 
-     The logoManager object against which to perform the search.
+     The logoManager object against which to perform the search.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -90,9 +90,9 @@ This function throws an exception if the correct device family could not be foun
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,11 +59,11 @@ This enumeration represents the configuration setting for a *MachinePool*.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

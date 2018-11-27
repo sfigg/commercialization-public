@@ -72,7 +72,7 @@ By default, the is visible when you go to the **Settings** &gt; **applications**
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator partner to test this customization on their network.

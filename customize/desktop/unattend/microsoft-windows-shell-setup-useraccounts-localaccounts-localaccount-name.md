@@ -31,8 +31,8 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>Specifies the name of a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md). <em>Name</em> is a string with a maximum length of 256 characters.</p>
-<p>Do not use any of the following characters: &quot;/\[]:|&lt;&gt;+=;,?*%@</p>
+<td><p>Specifies the name of a <a href="microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md" data-raw-source="[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)">LocalAccount</a>. <em>Name</em> is a string with a maximum length of 256 characters.</p>
+<p>Do not use any of the following characters: &amp;amp;quot;/[]:|&amp;amp;lt;&amp;amp;gt;+=;,?*%@</p>
 <p>Do not use the name &quot;NONE&quot;, this is a restricted username.</p>
 <p>This string type does not support empty elements. Do not create an empty value for this setting.</p>
 <p>Some Unicode characters such as emoji appear as with the placeholder character: ? (question mark) in command prompts, but appear correctly in other locations such as File Explorer.</p>
@@ -41,7 +41,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -97,9 +97,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
- 
+ 
 
- 
+ 
 
 
 

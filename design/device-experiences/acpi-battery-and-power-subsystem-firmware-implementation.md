@@ -26,7 +26,7 @@ This topic details how the platform should expose power subsystem information to
 
 **Note**  Some of the information described in this article is specific to Windows and is not detailed in the ACPI 5.0 specification.
 
- 
+ 
 
 ## ACPI power supply object
 
@@ -35,7 +35,7 @@ The ACPI firmware must provide and implement a single ACPI power source device p
 
 **Note**  For systems that have multiple power sources, all physical power sources must be multiplexed through a single power device object in ACPI. This object must represent the composite status of power inputs for the system. Client systems must not provide multiple power source device objects. (Additional power source objects may be present on server systems that have multiple power supplies.)
 
- 
+ 
 
 This object must also implement the Power Source (\_PSR) method. This method returns the status of the power source and conveys whether the power source is currently online (AC power) or offline (on battery power). The \_PSR method must only report online (AC power) when the system is connected to main power. When the state of \_PSR changes, the platform must generate an interrupt and a Notify(0x80) command on the device in the ACPI namespace. This must be performed immediately after the platform detects the physical state change.
 
@@ -180,7 +180,7 @@ The ACPI firmware must implement the \_BIX method for each battery to provide st
 </tbody>
 </table>
 
- 
+ 
 
 In addition to these requirements, the platform firmware must generate an interrupt and a Notify(0x81) command on the battery device in the ACPI namespace whenever any of the battery state data in \_BIX changes. This includes last full charge capacity, design capacity, and cycle count. This must be performed immediately after the state change is detected by the platform.
 
@@ -228,7 +228,7 @@ The ACPI firmware must implement the \_BST method for each battery to provide re
 </tbody>
 </table>
 
- 
+ 
 
 When any data in \_BST changes, the platform must generate an interrupt and a Notify(0x80) on the battery device in the ACPI namespace. This must be performed immediately after the physical state change is detected by the platform. This includes any change in the Battery State field for the charging bit (Bit0) or discharging bit (Bit1).
 
@@ -285,7 +285,7 @@ Windows 8 supports the following \_DSM methods for Control Method Battery devic
 </tbody>
 </table>
 
- 
+ 
 
 **User-serviceable battery**
 
@@ -332,7 +332,7 @@ Windows 8 supports the following \_DSM methods for Control Method Battery devic
 </tbody>
 </table>
 
- 
+ 
 
 **Charging watchdog required**
 
@@ -380,7 +380,7 @@ Windows 8 supports the following \_DSM methods for Control Method Battery devic
 </tbody>
 </table>
 
- 
+ 
 
 ## Windows OS-specific battery control methods
 
@@ -391,9 +391,9 @@ The order in which Windows shows batteries can be specified by the firmware. Thi
 
 If any battery object includes a \_SUN method, then all battery objects must also provide a \_SUN method. Windows does not support the case where some batteries have a \_SUN method and other batteries do not. If no \_SUN objects are provided, Windows sorts the batteries based on their full device instance path; this configuration is supported, but not recommended.
 
- 
+ 
 
- 
+ 
 
 
 

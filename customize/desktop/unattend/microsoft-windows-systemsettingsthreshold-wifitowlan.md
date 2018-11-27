@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output shows how to replace the "Wi-Fi" heading in the Network
 
 [Microsoft-Windows-SystemSettingsThreshold](microsoft-windows-systemsettingsthreshold.md)
 
- 
+ 
 
- 
+ 
 
 
 

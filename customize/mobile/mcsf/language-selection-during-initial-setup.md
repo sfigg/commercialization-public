@@ -70,7 +70,7 @@ If multiple display languages are included on the device, partners have the opti
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization and multiple languages to a phone.

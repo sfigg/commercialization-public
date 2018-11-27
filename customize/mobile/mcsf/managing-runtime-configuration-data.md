@@ -117,7 +117,7 @@ To allow users to reset their device and not wait for apps to download from the 
 </tbody>
 </table>
 
- 
+ 
 
 To reclaim storage for users, the OS performs data cleanup in two stages:
 
@@ -182,7 +182,7 @@ OEMs can configure the amount of reserved space to enable runtime configuration 
 > [!Note]
 > OEMs should only configure **MainOSRTCDataReservedSectors** when using the runtime configuration feature to dynamically install certain applications from the Data partition depending on the SIM card(s) in the device during runtime. When using this functionality, the value is used to reserve space on the System partition to back up these applications so that they can be installed after a device reset.
 
- 
+ 
 
 When specifying the size, OEMs must specify a number of sectors that is sufficient to contain the latest get of applications placed in the data store that might be installed for an individual mobile operator. For example, if the OEM's customization answer file specified applications A, B, and C should be on the data partition and should only be installed for mobile operator Contoso, then the size reserved must be the size of A+B+C in MB and divided by 512 bytes per sector. At a maximum, OEMs can use **MainOSRTCDataReservedSectors** to reserve sectors up to 100 MB to be used by the runtime configuration engine. 
 

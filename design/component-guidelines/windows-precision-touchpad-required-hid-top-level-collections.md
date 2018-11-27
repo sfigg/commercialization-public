@@ -53,14 +53,14 @@ The value that is specified by the host for input mode (Usage 0x52) determines t
 | 0                | Mouse Collection                      |
 | 3                | Windows Precision Touchpad Collection |
 
- 
+ 
 
 The host may issue the input mode feature report to a Windows Precision Touchpad at any time after reading the report descriptor, including the time that data is potentially being reported through the active collection. In the event that a mode switch occurs while data is being reported, all contacts and button state should be reported as up and all reporting should cease by using that collection. Reporting by using the newly specified collection can occur after all contacts are physically up. The input mode shall not be persisted by a Windows Precision Touchpad across power cycles or host initiated resets (USB reset, HID I²C HIR); however the input mode may be persisted across any device initiated reset (for example, HID I²C DIR, etc.).
 
 **Note**  
 A non-PTP capable host can send a value other than those listed in *Table 1 Input Mode Usage Values*. Is it recommended that the device interpret that value as 0 and switch to mouse mode because only a PTP-capable operating system will issue mode 3.
 
- 
+ 
 
 ## Selective reporting feature report
 
@@ -80,7 +80,7 @@ The values that are specified by the host for surface switch (Usage 0x57) and bu
 | 1              | 0             | Only surface contacts are to be reported                  |
 | 1              | 1             | Both surface contacts and button state are to be reported |
 
- 
+ 
 
 The host can issue the selective reporting feature report to a Windows Precision Touchpad at any time after reading the report descriptor. The selective reporting state shall not be persisted by a Windows Precision Touchpad across power cycles.
 
@@ -113,7 +113,7 @@ The implementation type shall be specified via the value for button type (Page 0
 | 0                 | Depressible (Click-pad)        |
 | 1                 | Non-Depressible (Pressure-pad) |
 
- 
+ 
 
 The host can request the device capabilities feature report of a Windows Precision Touchpad at any time after reading the report descriptor.
 
@@ -144,7 +144,7 @@ The latency mode shall be indicated by using the value for the latency mode usag
 | 0                  | Normal Latency |
 | 1                  | High Latency   |
 
- 
+ 
 
 ## Windows Precision Touchpad input reports
 
@@ -165,7 +165,7 @@ The host makes use of the following usages when extracting contact data from an 
 | Width      | Width of contact                                      | 0x0D | 0x48 | Optional                       |
 | Height     | Height of contact                                     | 0x0D | 0x49 | Optional                       |
 
- 
+ 
 
 *Table 6 Report Level Usages* includes all the mandatory usages that shall be present in all Windows Precision Touchpad input reports.
 
@@ -178,7 +178,7 @@ The host makes use of the following usages when extracting contact data from an 
 | Contact Count | Total number of contacts to be reported in a given report | 0x0D | 0x54 | Mandatory          |
 | Button        | Indicates Button State                                    | 0x09 | 0x01 | Mandatory          |
 
- 
+ 
 
 Any device that does not report all mandatory usages at either the contact or report level will be non-functional as a Windows Precision Touchpad. Mandatory usages are strictly enforced by the Windows host. Where a logical maximum value has not been restricted, it can be optimized to reduce descriptor size.
 
@@ -202,7 +202,7 @@ The following global items shall be specified for both the X and Y usages:
     **Note**  
     The entire logical coordinate range shall be reportable across both the X and Y axis.
 
-     
+     
 
 -   Physical minimum & Physical maximum (*see Device Integration - Size*)
 -   Unit & Unit exponent
@@ -229,7 +229,7 @@ With reference to the example in *Figure 2 Two Contacts with Separated Lift*, tw
 | Contact 2 Tip Switch | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1       | 0       |
 | Contact 2 X,Y        | X₁,Y₁ | X₂,Y₂ | X₃,Y₃ | X₄,Y₄ | X₅,Y₅ | X₆,Y₆ | X₇,Y₇ | X₈,Y₈ | X₉,Y₉ | X₁₀,Y₁₀ | X₁₀,Y₁₀ |
 
- 
+ 
 
 ### Confidence
 
@@ -272,7 +272,7 @@ With reference to the example shown in *Figure 3 Contact with Button Down and Up
 | Contact 2 Tip Switch | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1       | 0       |
 | Contact 2 X,Y        | X₁,Y₁ | X₂,Y₂ | X₃,Y₃ | X₄,Y₄ | X₅,Y₅ | X₆,Y₆ | X₇,Y₇ | X₈,Y₈ | X₉,Y₉ | X₁₀,Y₁₀ | X₁₀,Y₁₀ |
 
- 
+ 
 
 ![button only down and up](../images/implementationfig7buttononlydownup.jpg)
 
@@ -287,7 +287,7 @@ With reference to the example shown in *Figure 4 Button Only Down and Up*, a non
 | Contact Count | 0   | 0   | 0   | 0   | 0   |
 | Button        | 1   | 1   | 1   | 1   | 0   |
 
- 
+ 
 
 ### Packet reporting modes
 
@@ -321,7 +321,7 @@ The first input report for a given frame shall indicate the total number of cont
 | Contact 2 Tip Switch | NR    | 1     | NR    | 1     | NR    | 1     |
 | Scan Time            | T₁    | T₁    | T₂    | T₂    | T₃    | T₃    |
 
- 
+ 
 
 USB and I²C connected Windows Precision Touchpads can deliver input reports in either single-finger hybrid reporting mode or two-finger hybrid reporting mode.
 
@@ -340,9 +340,9 @@ Windows Precision Touchpads shall be able to recover from a failed firmware upda
 
 It is highly recommended that basic mouse functionality be available even after a failed firmware update.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ You can now easily configure the default Start layout to include Web links, seco
 
 **Note**  The schema for the LayoutModification.xml file is different from the MCSF customization answer file schema or the Windows provisioning answer file schema. You will need to use the LayoutModification.xml to fully take advantage of the Start customization in Windows 10 and you can use the Start settings in either MCSF or Windows Provisioning to reference LayoutModification.xml.
 
- 
+ 
 
 If you are not new to Windows mobile development and were using pre-existing MCSF settings pertaining to the Start layout, we highly recommend that you switch to a LayoutModification.xml to take full advantage of the Start experience. Also note that not all pre-existing MCSF Start settings are supported in Windows 10.
 
@@ -30,7 +30,7 @@ In this walkthrough, we will:
 
 **Note**  Make sure you've read [Start layout for Windows 10 mobile editions](https://msdn.microsoft.com/library/windows/hardware/mt171093) before doing this walkthrough. The topic provides more detailed information about each element in LayoutModification.xml, which is not covered in this walkthrough, as well as limitations and restrictions that you need to be aware of.
 
- 
+ 
 
 **To configure the Start layout modification file**
 
@@ -161,9 +161,9 @@ In this walkthrough, we will:
     -   For MCSF: See *Configure the Start layout* in [Configure customization settings](configure-customization-settings.md).
     -   For Windows Provisioning: If you are using the Windows Imaging and Configuration Designer (ICD) UI, see *Configure the Start layout* in [Use the Windows ICD UI to customize and build a mobile image](use-the-windows-icd-ui-to-customize-and-build-a-mobile-image.md). If you are using the Windows ICD CLI (hybrid method), see *Configure the Start layout* in [Use the Windows ICD CLI to customize and build a mobile image](use-the-windows-icd-cli-to-customize-and-build-a-mobile-image.md).
 
- 
+ 
 
- 
+ 
 
 
 

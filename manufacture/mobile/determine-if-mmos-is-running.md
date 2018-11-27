@@ -18,11 +18,11 @@ You can check to see if MMOS is running the same way that you check when running
 
 **Note**  You should not query the ManufacturingOS registry setting as this key is obsolete.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

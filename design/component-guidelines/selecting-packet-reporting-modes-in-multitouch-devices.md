@@ -19,7 +19,7 @@ Starting with Windows 8, the reporting of multi-touch data to the system is sup
 
 **Note**  Serial mode is selected by legacy devices only. Any new devices using serial mode will fail certification starting with Windows 8.
 
- 
+ 
 
 ### Parallel Mode
 
@@ -45,9 +45,9 @@ Null values should be specified as outlined in the HID specification. The **NULL
 
 When sending data in hybrid or parallel mode, a contact that is delivered in one report must be delivered in all subsequent reports until it is lifted off the screen. If time is needed to adequate determine if the contact was lifted off the surface, the device must report the last known position of the contact and then deliver the “UP” state of the contact in a subsequent report. Devices should not send a report without the information for that contact while trying to determine its current state.
 
- 
+ 
 
- 
+ 
 
 
 

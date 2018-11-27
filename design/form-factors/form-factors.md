@@ -33,45 +33,45 @@ Form factor describes the size of a device and its physical (hardware) component
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[2-in-1](2-in-1.md)</p></td>
+<td><p><a href="2-in-1.md" data-raw-source="[2-in-1](2-in-1.md)">2-in-1</a></p></td>
 <td><p>A 2-in-1 form factor is an evolution of the traditional notebook, also know as a convertible notebook that comes in two styles: detachable and convertible. Its key feature is the ability to convert from a traditional notebook to a tablet mode.</p></td>
 </tr>
 <tr class="even">
-<td><p>[All-in-one](all-in-one.md)</p></td>
+<td><p><a href="all-in-one.md" data-raw-source="[All-in-one](all-in-one.md)">All-in-one</a></p></td>
 <td><p>The All-in-one (AIO) form factor is an evolution of the traditional desktop with the benefit of taking up less space. It combines all the system components and display into one chassis, similar to a tablet.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Desktop PC](desktop-pc.md)</p></td>
+<td><p><a href="desktop-pc.md" data-raw-source="[Desktop PC](desktop-pc.md)">Desktop PC</a></p></td>
 <td><p>A desktop PC form factor traditionally comes in an upright tower or small desktop chassis.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Notebook](notebook.md)</p></td>
+<td><p><a href="notebook.md" data-raw-source="[Notebook](notebook.md)">Notebook</a></p></td>
 <td><p>A notebook is a portable clamshell device with an attached keyboard.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Tablet](tablet.md)</p></td>
+<td><p><a href="tablet.md" data-raw-source="[Tablet](tablet.md)">Tablet</a></p></td>
 <td><p>Tablets are a versatile form factor that overlap the smartphone and notebook industry. A tablet device combines a touch screen, rechargeable power source, and other components into a single chassis with an optional attachable keyboard. Listed below are a few recommended hardware configurations.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Servers](servers.md)</p></td>
+<td><p><a href="servers.md" data-raw-source="[Servers](servers.md)">Servers</a></p></td>
 <td><p>The server form factor comes in a wide range of styles including pedestal, rackmount and blade.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Smartphone](smartphone.md)</p></td>
+<td><p><a href="smartphone.md" data-raw-source="[Smartphone](smartphone.md)">Smartphone</a></p></td>
 <td><p>Smartphones come in a wide range of sizes from low cost phones, small tablets (phablets) and industrial handheld devices.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Embedded devices](embedded-devices.md)</p></td>
+<td><p><a href="embedded-devices.md" data-raw-source="[Embedded devices](embedded-devices.md)">Embedded devices</a></p></td>
 <td><p>Windows 10 IoT Core (IoT Core) can be used on low cost, small footprint devices that support Universal Apps.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

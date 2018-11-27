@@ -45,9 +45,9 @@ To prepare a partial FFU to be signed:
 PS> Initialize-FirmwareSubmission -TypeOfProduct WindowsPhoneBlue -TypeOfSubmission PartialImage -UpdateHistoryPath c:\input\UpdateHistory.xml -OemInputPath c:\input -OutputFilePath c:\output -PartialImageDirectory c:\input\spkg
 ```
 
- 
+ 
 
- 
+ 
 
 
 

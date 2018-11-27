@@ -45,16 +45,16 @@ This class defines a list of machines (test computers) and their roles in a mach
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.MachineSet**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.MachineSet**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

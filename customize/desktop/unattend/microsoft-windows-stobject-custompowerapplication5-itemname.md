@@ -33,7 +33,7 @@ To use a different `ItemName` for each language, create a resource file, and ref
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>Specifies the display name to use for [CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md).</p>
+<td><p>Specifies the display name to use for <a href="microsoft-windows-stobject-custompowerapplication5.md" data-raw-source="[CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md)">CustomPowerApplication5</a>.</p>
 <p><code>ItemName</code> is represented as @<em>dllname,-resourceid</em>, where <em>dllname</em> is the full path to the resource DLL, including environment variables. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-100</code></pre>
 <p><em>Name</em> is a string.</p></td>
@@ -41,7 +41,7 @@ To use a different `ItemName` for each language, create a resource file, and ref
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -81,9 +81,9 @@ The following XML output shows `CustomPowerApplication5` Application.exe with `p
 
 [CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md)
 
- 
+ 
 
- 
+ 
 
 
 

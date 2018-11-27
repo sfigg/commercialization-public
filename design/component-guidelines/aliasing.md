@@ -53,7 +53,7 @@ This is to test the contact reporting capabilities of a Windows Precision Touchp
 
 **Note**  If the Precision Touchpad device has a height of less than 33mm, you should verify vertical aliasing at the maximum possible distance.
 
- 
+ 
 
 **Common error messages**
 
@@ -70,9 +70,9 @@ Here's a screenshot from the Aliasing test, showing a displacement distance that
 
 -   2/2 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

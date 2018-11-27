@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following XML output specifies that ESC is enabled for all users on the comp
 
 [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ This method schedules all the tests for execution.
 
 **C#**
 
-          `IList<TestResult> QueueTest(IEnumerable<Test> testList);`
+          `IList<TestResult> QueueTest(IEnumerable<Test> testList);`
 
 `)`
 
@@ -64,9 +64,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

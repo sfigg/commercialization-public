@@ -76,7 +76,7 @@ The following table describes available profiles.
 </tbody>
 </table>
 
- 
+ 
 
 ## Examples
 
@@ -130,9 +130,9 @@ xperf -start perf!FileIOProfiles.InSequentialFile -stackwalk ReadyThread
 
 [Xperf Profiles](xperf-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

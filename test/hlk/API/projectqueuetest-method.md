@@ -32,25 +32,25 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[QueueTest Method ()](projectqueuetest-method---.md)</p></td>
+<td><p><a href="projectqueuetest-method---.md" data-raw-source="[QueueTest Method ()](projectqueuetest-method---.md)">QueueTest Method ()</a></p></td>
 <td><p>This method schedules a test.</p></td>
 </tr>
 <tr class="even">
-<td><p>[QueueTest Method (MachineSet)](projectqueuetest-method--machineset-.md)</p></td>
+<td><p><a href="projectqueuetest-method--machineset-.md" data-raw-source="[QueueTest Method (MachineSet)](projectqueuetest-method--machineset-.md)">QueueTest Method (MachineSet)</a></p></td>
 <td><p>This method schedules this object for testing. The machine under test (the test computer) is always part of the machine set; this is only for additional test computers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[QueueTest Method (IEnumerable&lt;Machine&gt;)](project-queuetest-method--ienumerable-machine--.md)</p></td>
+<td><p><a href="project-queuetest-method--ienumerable-machine--.md" data-raw-source="[QueueTest Method (IEnumerable&amp;lt;Machine&amp;gt;)](project-queuetest-method--ienumerable-machine--.md)">QueueTest Method (IEnumerable&lt;Machine&gt;)</a></p></td>
 <td><p>This method schedules the test for execution on a specific subset of machines.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ The Kernel Trace Control API Reference covers the Kernel Trace Control API avail
 
 [Windows Performance Toolkit Technical Reference](windows-performance-toolkit-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

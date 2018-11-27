@@ -19,7 +19,7 @@ Calling the **SetScreenOff** function turns the screen and backlight off, which 
 **Important**  
 This function is for use only in the Microsoft Manufacturing OS.
 
- 
+ 
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -60,9 +60,9 @@ SetScreenOff();
 
 **Library:** ManufacturingConnectedStandbyControl.lib
 
- 
+ 
 
- 
+ 
 
 
 

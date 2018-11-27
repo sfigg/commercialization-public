@@ -55,8 +55,8 @@ By default, the Windows 10 Mobile FM radio UI is hidden.
    </ImageCustomizations>
    ```
 
-1. Specify an `Owner`.
-1. Set `NotPresent` to 0 to show the **FM Radio** app.
+2. Specify an `Owner`.
+3. Set `NotPresent` to 0 to show the **FM Radio** app.
    > [!Note]
    > Setting `NotPresent` to 1 is not necessary because the radio UI is hidden by default.
 

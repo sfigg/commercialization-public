@@ -42,7 +42,7 @@ Windows Firewall is a stateful-host firewall that discards unsolicited incoming 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output disables the Windows Firewall.
 
 [microsoft-windows-setup-](microsoft-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

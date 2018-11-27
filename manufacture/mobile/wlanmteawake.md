@@ -61,7 +61,7 @@ If the function fails, the return value is one of the system error codes. The fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -78,9 +78,9 @@ The driver must have been put into the sleep state using the [WlanMTESleep](wlan
 
 [Wi-Fi manufacturing API](wi-fi-manufacturing-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

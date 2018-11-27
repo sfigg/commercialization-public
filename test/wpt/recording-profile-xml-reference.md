@@ -29,17 +29,17 @@ This reference describes all XML elements that are used to author Windows Perfo
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Elements](elements.md)</p></td>
+<td><p><a href="elements.md" data-raw-source="[Elements](elements.md)">Elements</a></p></td>
 <td><p>Describes all elements in the WPRControlProfiles schema.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WPRControlProfiles Schema](wprcontrolprofiles-schema.md)</p></td>
+<td><p><a href="wprcontrolprofiles-schema.md" data-raw-source="[WPRControlProfiles Schema](wprcontrolprofiles-schema.md)">WPRControlProfiles Schema</a></p></td>
 <td><p>Provides the complete schema for WPR recording profiles.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -48,9 +48,9 @@ This reference describes all XML elements that are used to author Windows Perfo
 
 [Authoring Recording Profiles](authoring-recording-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

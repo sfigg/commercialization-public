@@ -28,41 +28,41 @@ The following topics describe the configuration passes used with Windows Setup.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[How Configuration Passes Work](how-configuration-passes-work.md)</p></td>
+<td align="left"><p><a href="how-configuration-passes-work.md" data-raw-source="[How Configuration Passes Work](how-configuration-passes-work.md)">How Configuration Passes Work</a></p></td>
 <td align="left"><p>A description of the different phases of Windows Setup, and the different configuration passes used to install and configure a Windows installation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[auditSystem](auditsystem.md)</p></td>
+<td align="left"><p><a href="auditsystem.md" data-raw-source="[auditSystem](auditsystem.md)">auditSystem</a></p></td>
 <td align="left"><p>The <strong>auditSystem</strong> configuration pass is one of the configuration passes used in audit mode.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[auditUser](audituser.md)</p></td>
+<td align="left"><p><a href="audituser.md" data-raw-source="[auditUser](audituser.md)">auditUser</a></p></td>
 <td align="left"><p>The <strong>auditUser</strong> configuration pass is one of the configuration passes used in audit mode.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[generalize](generalize.md)</p></td>
+<td align="left"><p><a href="generalize.md" data-raw-source="[generalize](generalize.md)">generalize</a></p></td>
 <td align="left"><p>The <strong>generalize</strong> configuration pass prepares a Windows image to be deployed across many computers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[offlineServicing](offlineservicing.md)</p></td>
+<td align="left"><p><a href="offlineservicing.md" data-raw-source="[offlineServicing](offlineservicing.md)">offlineServicing</a></p></td>
 <td align="left"><p>The <strong>offlineServicing</strong> configuration pass is used to install packages, drivers, and other updates to an offline Windows image.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[oobeSystem](oobesystem.md)</p></td>
+<td align="left"><p><a href="oobesystem.md" data-raw-source="[oobeSystem](oobesystem.md)">oobeSystem</a></p></td>
 <td align="left"><p>The <strong>oobeSystem</strong> configuration pass, also known as Windows Welcome, can be used to preconfigure user interface pages for an end user.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[specialize](specialize.md)</p></td>
+<td align="left"><p><a href="specialize.md" data-raw-source="[specialize](specialize.md)">specialize</a></p></td>
 <td align="left"><p>The <strong>specialize</strong> configuration pass customizes a specific Windows installation to a specific computer.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[windowsPE](windowspe.md)</p></td>
+<td align="left"><p><a href="windowspe.md" data-raw-source="[windowsPE](windowspe.md)">windowsPE</a></p></td>
 <td align="left"><p>The <strong>windowsPE</strong> configuration pass is used to configure Windows PE in addition to some aspects of Windows Setup.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -77,9 +77,9 @@ The following topics describe the configuration passes used with Windows Setup.
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 
- 
+ 
 
- 
+ 
 
 
 

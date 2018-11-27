@@ -62,7 +62,7 @@ Settings can be specific to whether the computer is plugged in (AC) or on batter
     **Note**  
     **Display dimming**: Mobile computers that run Windows 8.1 and Windows Server 2012 R2 will dim the display 15 seconds before the **Display timeout**. This value is no longer configurable.
 
-     
+     
 
 -   **Hard disk timeout**
 
@@ -99,9 +99,9 @@ You can manually modify the power settings for each built-in power configuration
 
 [Power Policy Configuration and Deployment in Windows](http://go.microsoft.com/fwlink/p/?linkid=129584)
 
- 
+ 
 
- 
+ 
 
 
 

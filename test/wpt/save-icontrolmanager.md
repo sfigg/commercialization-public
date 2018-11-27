@@ -69,7 +69,7 @@ The following table describes possible return values.
 </tr>
 <tr class="odd">
 <td><p>E_WPRC_FAILED_TO_SAVE_PROFILE</p></td>
-<td><p>The library failed to save a profile in the profile collection. Use [IControlErrorInfo](icontrolerrorinfo.md) to obtain detailed error information.</p></td>
+<td><p>The library failed to save a profile in the profile collection. Use <a href="icontrolerrorinfo.md" data-raw-source="[IControlErrorInfo](icontrolerrorinfo.md)">IControlErrorInfo</a> to obtain detailed error information.</p></td>
 </tr>
 <tr class="even">
 <td><p>E_WPRC_TRACE_MERGE_LOST_EVENTS</p></td>
@@ -78,7 +78,7 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -90,9 +90,9 @@ This function is used only for profiles that are logging to circular buffers. Af
 
 [IControlManager](icontrolmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

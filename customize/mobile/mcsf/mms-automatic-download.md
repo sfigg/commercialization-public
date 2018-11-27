@@ -96,7 +96,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 6.  To set the default value of the **Automatically download MMS** toggle, set the value of `AutomaticallyDownload` to one of the following:
 
@@ -123,7 +123,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

@@ -29,30 +29,30 @@ This section covers trace control event types available for the Kernel Trace Con
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EVENT_TRACE_TYPE_READYTHREAD](event-trace-type-readythread.md)</p></td>
+<td><p><a href="event-trace-type-readythread.md" data-raw-source="[EVENT_TRACE_TYPE_READYTHREAD](event-trace-type-readythread.md)">EVENT_TRACE_TYPE_READYTHREAD</a></p></td>
 <td><p>Enables stack tracing for Ready Thread events.</p></td>
 </tr>
 <tr class="even">
-<td><p>[EVENT_TRACE_TYPE_VIRTUAL_ALLOC](event-trace-type-virtual-alloc.md)</p></td>
+<td><p><a href="event-trace-type-virtual-alloc.md" data-raw-source="[EVENT_TRACE_TYPE_VIRTUAL_ALLOC](event-trace-type-virtual-alloc.md)">EVENT_TRACE_TYPE_VIRTUAL_ALLOC</a></p></td>
 <td><p>Enables stack tracing for virtual memory allocation events.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EVENT_TRACE_TYPE_VIRTUAL_FREE](event-trace-type-virtual-free.md)</p></td>
+<td><p><a href="event-trace-type-virtual-free.md" data-raw-source="[EVENT_TRACE_TYPE_VIRTUAL_FREE](event-trace-type-virtual-free.md)">EVENT_TRACE_TYPE_VIRTUAL_FREE</a></p></td>
 <td><p>Enables stack tracing for virtual memory free events.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

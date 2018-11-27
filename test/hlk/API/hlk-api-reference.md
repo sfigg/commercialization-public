@@ -25,9 +25,9 @@ ms.topic: article
 -   [Microsoft.Windows.Kits.Hardware.ObjectModel.Submission Namespace](microsoftwindowskitshardwareobjectmodelsubmission-namespace.md)
 -   [Microsoft.Windows.Kits.Hardware.UI.Views Namespace](microsoft-windows-kits-hardware-ui-views-namespace.md)
 
- 
+ 
 
- 
+ 
 
 
 

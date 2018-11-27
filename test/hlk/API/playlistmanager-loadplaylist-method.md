@@ -32,27 +32,27 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[LoadPlaylist Method (string)](playlistmanager-loadplaylist-method--string-.md)</p></td>
-<td><p>Loads the tests from a Playlist into this [PlaylistManager](playlistmanager-class.md)'s [Project](project-class.md).</p></td>
+<td><p><a href="playlistmanager-loadplaylist-method--string-.md" data-raw-source="[LoadPlaylist Method (string)](playlistmanager-loadplaylist-method--string-.md)">LoadPlaylist Method (string)</a></p></td>
+<td><p>Loads the tests from a Playlist into this <a href="playlistmanager-class.md" data-raw-source="[PlaylistManager](playlistmanager-class.md)">PlaylistManager</a>&#39;s <a href="project-class.md" data-raw-source="[Project](project-class.md)">Project</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LoadPlaylist Method (string, bool, bool)](playlistmanager-loadplaylist-method--string--bool--bool-.md)</p></td>
-<td><p>Loads the tests from a Playlist into this [PlaylistManager](playlistmanager-class.md)'s [Project](project-class.md).</p>
+<td><p><a href="playlistmanager-loadplaylist-method--string--bool--bool-.md" data-raw-source="[LoadPlaylist Method (string, bool, bool)](playlistmanager-loadplaylist-method--string--bool--bool-.md)">LoadPlaylist Method (string, bool, bool)</a></p></td>
+<td><p>Loads the tests from a Playlist into this <a href="playlistmanager-class.md" data-raw-source="[PlaylistManager](playlistmanager-class.md)">PlaylistManager</a>&#39;s <a href="project-class.md" data-raw-source="[Project](project-class.md)">Project</a>.</p>
 <div class="alert">
-<strong>Warning</strong>  This overload is being deprecated. The additional parameter options are no longer supported. Please use [LoadPlaylist(string playlistPath)](playlistmanager-loadplaylist-method--string-.md)
+<strong>Warning</strong>  This overload is being deprecated. The additional parameter options are no longer supported. Please use <a href="playlistmanager-loadplaylist-method--string-.md" data-raw-source="[LoadPlaylist(string playlistPath)](playlistmanager-loadplaylist-method--string-.md)">LoadPlaylist(string playlistPath)</a>
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

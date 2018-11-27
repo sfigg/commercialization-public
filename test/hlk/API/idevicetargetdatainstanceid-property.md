@@ -64,9 +64,9 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 
 The instance ID is comprised of a combination of device ID and any instance-specific additions.
 
- 
+ 
 
- 
+ 
 
 
 

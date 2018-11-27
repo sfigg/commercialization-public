@@ -19,9 +19,9 @@ ms.topic: article
 Microsoft provides an API for partners that want to automate testing using the HLK.
 
 
- 
+ 
 
- 
+ 
 
 
 

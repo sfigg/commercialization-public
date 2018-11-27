@@ -73,7 +73,7 @@ You can add or remove columns if you right-click on the column headers.
 | Paged           | Indicates whether or not the allocations were placed into a Paged Pool or Non-Paged Pool.              |
 | Impacting type  | Shows whether an allocation contributes to the steady state memory usage or is a transient allocation. |
 
- 
+ 
 
 1.  Open the trace you captured in Step 1 with **WPA**.
 
@@ -169,9 +169,9 @@ You can add or remove columns if you right-click on the column headers.
 
     The value in the **Size** column represents the impact the driver code has on the memory footprint. In the following example, it is 0.48 MB.![Screenshot of sample data showing active pages.](images/memoryfootprintlab32.png)
 
- 
+ 
 
- 
+ 
 
 
 

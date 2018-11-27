@@ -23,7 +23,7 @@ Resetting the device addresses a number of key scenarios:
 **Important**  
 When you reset a device, it does not return it to the original factory state. For example, any packages that were added or modified during an update remain. To return the device to the original factory state, you must flash it with the original factory image.
 
- 
+ 
 
 ## <span id="Ways_to_reset_a_desktop_pc"></span><span id="ways_to_reset_a_desktop_pc"></span><span id="WAYS_TO_RESET_A_DESKTOP_PC"></span>Ways to reset a desktop PC
 
@@ -47,7 +47,7 @@ If Settings is not accessible:
 
 	
 For PCs, there isn't a built-in way to reset a device remotely. However, you can install third-party tools that allow you to do this.
- 
+ 
 
 
 

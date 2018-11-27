@@ -18,17 +18,17 @@ ms.topic: article
 
 To troubleshoot issues that occur with Device.Streaming tests, follow these steps:
 
-1.  Review the following Windows Hardware Lab Kit (Windows HLK) topics:
+1. Review the following Windows Hardware Lab Kit (Windows HLK) topics:
 
-    -   [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)
+   - [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md)
 
-    -   [HMFT Testing Prerequisites](hmft-testing-prerequisites.md)
+   - [HMFT Testing Prerequisites](hmft-testing-prerequisites.md)
 
-    -   [Webcam Testing Prerequisites](webcam-testing-prerequisites.md)
+   - [Webcam Testing Prerequisites](webcam-testing-prerequisites.md)
 
-2.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+2. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 ### <span id="Specific_information_about_HMFT_testing"></span><span id="specific_information_about_hmft_testing"></span><span id="SPECIFIC_INFORMATION_ABOUT_HMFT_TESTING"></span>Specific information about HMFT testing
 
@@ -69,7 +69,7 @@ If the supplemental content is not available on the client computers, ensure tha
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Potential_failure_root_causes_and_recommendations_for_improvement_for_webcam_video_captures"></span><span id="potential_failure_root_causes_and_recommendations_for_improvement_for_webcam_video_captures"></span><span id="POTENTIAL_FAILURE_ROOT_CAUSES_AND_RECOMMENDATIONS_FOR_IMPROVEMENT_FOR_WEBCAM_VIDEO_CAPTURES"></span>Potential failure root causes and recommendations for improvement for webcam video captures
 
@@ -166,11 +166,11 @@ Imaging in 50 or 60 Hz lighting with the wrong exposure (powerline frequency) mo
 
 [Device.Streaming Tests](device-streaming-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

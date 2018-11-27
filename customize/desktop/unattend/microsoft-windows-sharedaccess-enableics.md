@@ -42,7 +42,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to set Shared Access.
 
 [Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge.md)
 
- 
+ 
 
- 
+ 
 
 
 

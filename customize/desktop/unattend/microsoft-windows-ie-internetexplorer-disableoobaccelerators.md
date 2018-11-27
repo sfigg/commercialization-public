@@ -45,7 +45,7 @@ Examples of the default Internet Explorer Accelerators include: **Blog with Wind
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -80,9 +80,9 @@ The following XML example demonstrates not including the default Internet Explor
 
 [DisableAccelerators](microsoft-windows-ie-internetexplorer-disableaccelerators.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ By default, the Windows 10 Mobile FM radio UI is hidden.
     **Note**  
     Setting `NotPresent` to 1 is not necessary because the radio UI is hidden by default.
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

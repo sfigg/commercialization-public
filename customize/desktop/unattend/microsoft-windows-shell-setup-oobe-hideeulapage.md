@@ -39,17 +39,16 @@ ms.topic: article
 <td><p>Specifies that the Microsoft Software License Terms page of Windows Welcome is displayed.</p>
 <p>This is the default value.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the Microsoft Software License Terms have already been accepted, this page does not appear.</p>
+<strong>Note</strong><br/><p>If the Microsoft Software License Terms have already been accepted, this page does not appear.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 

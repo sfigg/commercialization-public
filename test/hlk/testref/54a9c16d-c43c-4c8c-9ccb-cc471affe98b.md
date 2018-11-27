@@ -19,6 +19,7 @@ ms.topic: article
 This automated test measures the minimum supported Direct X renderer capability of a graphics adapter or chipset.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.MinimumDirectXLevel</li></ul> |  
@@ -31,7 +32,7 @@ This automated test measures the minimum supported Direct X renderer capability 
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -48,7 +49,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -57,11 +58,11 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 
 For an N-bit-per-component RGB frame buffer format, the lowest N bits must contain the blue component, the next N bits must contain the green component, the next N bits must contain the red component, and the remaining 32-(3 x N) bits may contain alpha. The resulting 32-bit value must be stored in memory in little-endian format.
 
->[!NOTE]
->  
-This requirement is "If-Implemented" for Windows Server.
+> [!NOTE]
+> 
+> This requirement is "If-Implemented" for Windows Server.
 
- 
+
 
 ### <span id="Command_syntax"></span><span id="command_syntax"></span><span id="COMMAND_SYNTAX"></span>Command syntax
 
@@ -84,11 +85,11 @@ This requirement is "If-Implemented" for Windows Server.
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command line help for this test binary, type **/?**.
+> [!NOTE]
+> 
+> For command line help for this test binary, type **/?**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -106,7 +107,7 @@ For command line help for this test binary, type **/?**.
 <tbody>
 <tr class="odd">
 <td><p>Agp.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Configdisplay.exe</p></td>
@@ -114,15 +115,15 @@ For command line help for this test binary, type **/?**.
 </tr>
 <tr class="odd">
 <td><p>D3d10ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dcompiler_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dref.dll</p></td>
@@ -130,48 +131,48 @@ For command line help for this test binary, type **/?**.
 </tr>
 <tr class="odd">
 <td><p>D3dref8.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dref9.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>d3dx10_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dx11_TEST.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dx8d.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dx9_TEST.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>Fpstate.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Modechange.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Vbswap.x</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\conf\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\conf&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -183,11 +184,11 @@ For command line help for this test binary, type **/?**.
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo  |
 | **TDRArgs**                  | /get or /set                                          |
 
- 
 
- 
 
- 
+
+
+
 
 
 

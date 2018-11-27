@@ -18,30 +18,30 @@ ms.topic: article
 
 Physical settings and external factors often influence the test results of the Webcam Basic Performance test. This article describes how to set up a test environment to avoid these influences and achieve the most accurate video capturing test results.
 
->[!NOTE]
->  
-The instructions in this article are specific to integrated webcams; however, you can apply many of the same best practices to testing non-integrated webcams if you modify the test set up. For system (integrated test), audio latency and AVsync are measured and enforced. Because this is not true for non-integrated webcams, a microphone is not required for non-integrated webcam tests.
+> [!NOTE]
+> 
+> The instructions in this article are specific to integrated webcams; however, you can apply many of the same best practices to testing non-integrated webcams if you modify the test set up. For system (integrated test), audio latency and AVsync are measured and enforced. Because this is not true for non-integrated webcams, a microphone is not required for non-integrated webcam tests.
 
- 
+ 
 
 ## <span id="Example_test_environment"></span><span id="example_test_environment"></span><span id="EXAMPLE_TEST_ENVIRONMENT"></span>Example test environment
 
 
 In this article, a test environment is created that consists of a laptop computer that has a built-in webcam and a small mirror. A built-in webcam is typically located on the top side of the lid of the laptop computer. You can use a flexible arm or tripod to hold the mirror, as shown in the following picture (Figure 1. Example Test Environment). In this example, the computer keyboard is put under a board and the mirror is put close to the webcam. By angling both the computer screen and the mirror and adjusting the distance, you can avoid noise (reflection) from ambient room lighting.
 
->[!NOTE]
->  
-If you are testing a non-integrated webcam, the mirror is not necessary. In this case, you can point the camera directly at the computer screen.
+> [!NOTE]
+> 
+> If you are testing a non-integrated webcam, the mirror is not necessary. In this case, you can point the camera directly at the computer screen.
 
- 
+ 
 
 ![example test setup](images/hck-winb-fig1exampleconfig-webcambasicperfsystembestpractices.jpg)
 
->[!TIP]
->  
-You can use a "helping hand" device to hold a mirror in place; simply replace the magnifying glass with a mirror, as shown in Figure 2. Helping Hand.
+> [!TIP]
+> 
+> You can use a "helping hand" device to hold a mirror in place; simply replace the magnifying glass with a mirror, as shown in Figure 2. Helping Hand.
 
- 
+ 
 
 ![helping hand](images/hck-winb-fig2helpinghand-webcambasicperfsystembestpractices.jpg)
 
@@ -93,9 +93,9 @@ You can aim the rear camera at a separate computer screen to validate the image,
 
 -   Validate that the captured image is the same as the viewed image.
 
- 
+ 
 
- 
+ 
 
 
 

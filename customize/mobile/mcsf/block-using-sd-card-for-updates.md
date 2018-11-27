@@ -23,62 +23,61 @@ By default, this customization is not set and the OS can use the SD card for upd
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
 <a href="" id="instructions-"></a>**Instructions:**  
-1.  Create a customization answer file using the contents shown in the following code sample.
+1. Create a customization answer file using the contents shown in the following code sample.
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="BlockUsingSDCard"  
-                         Description="Use to determine whether to block the use of the SD card for device updates."  
-                         Owner=""  
-                         OwnerType="OEM"> 
-      
-      <Static>  
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
+                        Name="BlockUsingSDCard"  
+                        Description="Use to determine whether to block the use of the SD card for device updates."  
+                        Owner=""  
+                        OwnerType="OEM"> 
 
-        <Settings Path="DeviceUpdate">  
-          <Setting Name="BlockUsingSDCard" Value="" />    
-       </Settings>  
+     <Static>  
 
-      </Static>
+       <Settings Path="DeviceUpdate">  
+         <Setting Name="BlockUsingSDCard" Value="" />    
+      </Settings>  
 
-    </ImageCustomizations>
-    ```
+     </Static>
 
-2.  Specify an `Owner`.
+   </ImageCustomizations>
+   ```
 
-3.  Set the value of `BlockUsingSDCard` to one of the following:
+2. Specify an `Owner`.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'No'</p></td>
-    <td><p>Do not block the use of the SD card for device updates.</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>Make sure that your UEFI supports powering up the SD card on the UpdateOS.</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'Yes'</p></td>
-    <td><p>Block the use of the SD card for device updates.</p></td>
-    </tr>
-    </tbody>
-    </table>
+3. Set the value of `BlockUsingSDCard` to one of the following:
 
-     
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Value</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>0 or &#39;No&#39;</p></td>
+   <td><p>Do not block the use of the SD card for device updates.</p>
+   <div class="alert">
+   <strong>Note</strong><br/><p>Make sure that your UEFI supports powering up the SD card on the UpdateOS.</p>
+   </div>
+   <div>
+
+   </div></td>
+   </tr>
+   <tr class="even">
+   <td><p>1 or &#39;Yes&#39;</p></td>
+   <td><p>Block the use of the SD card for device updates.</p></td>
+   </tr>
+   </tbody>
+   </table>
+
+
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

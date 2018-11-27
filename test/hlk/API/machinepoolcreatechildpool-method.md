@@ -42,7 +42,7 @@ This method creates a child machine pool.
 
 `Public MustOverride Function CreateChildPool ( _`
 
-          `name As String _`
+          `name As String _`
 
 `) As MachinePool`
 
@@ -50,7 +50,7 @@ This method creates a child machine pool.
 
 `public abstract MachinePool CreateChildPool (`
 
-          `string name`
+          `string name`
 
 `)`
 
@@ -59,7 +59,7 @@ This method creates a child machine pool.
 
 *name*
 
-     The name of the pool to add to this machine pool.
+     The name of the pool to add to this machine pool.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ The child Machine Pool name must not match another existing Machine Pool name.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

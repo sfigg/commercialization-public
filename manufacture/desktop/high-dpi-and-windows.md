@@ -111,7 +111,7 @@ Windows 8 includes a number of feature changes that are specific for high DPI, 
 </tbody>
 </table>
 
- 
+ 
 
 The first two of the above features have the biggest impact on Windows 8 usability. In more detail:
 
@@ -130,9 +130,9 @@ It is possible that some users will acquire devices that fall in-between, featur
 
 [High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 
- 
+ 
 
- 
+ 
 
 
 

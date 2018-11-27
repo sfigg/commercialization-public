@@ -44,7 +44,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -75,9 +75,9 @@ The following XML output specifies that the computer cannot act as a master or b
 
 [Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md)
 
- 
+ 
 
- 
+ 
 
 
 

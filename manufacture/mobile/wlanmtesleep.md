@@ -73,7 +73,7 @@ If the function fails, the return value is one of the system error codes. The fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -92,9 +92,9 @@ During sleep mode, all radios are turned off and the Wi-Fi chip is powered off. 
 
 [Wi-Fi manufacturing API](wi-fi-manufacturing-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

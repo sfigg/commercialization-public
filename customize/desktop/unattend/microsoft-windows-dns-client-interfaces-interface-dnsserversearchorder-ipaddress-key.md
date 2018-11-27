@@ -25,7 +25,7 @@ ms.topic: article
 
 -   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP Address. For example, you can specify three different IP addresses by using Key values of 1, 2, and 3.
 
- 
+ 
 
 ## Values
 
@@ -38,12 +38,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique key for the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique key for the <a href="microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md" data-raw-source="[IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)">IpAddress</a>. <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -101,9 +101,9 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

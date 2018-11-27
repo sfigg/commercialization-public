@@ -42,7 +42,7 @@ This method returns a description of the requirementTableEntry given the specifi
 
 `Public MustOverride Function GetDescriptionData ( _`
 
-          `language As String _`
+          `language As String _`
 
 `) As RequirementDescriptionData`
 
@@ -50,7 +50,7 @@ This method returns a description of the requirementTableEntry given the specifi
 
 `public abstract RequirementDescriptionData GetDescriptionData (`
 
-          `string language`
+          `string language`
 
 `)`
 
@@ -59,7 +59,7 @@ This method returns a description of the requirementTableEntry given the specifi
 
 *language*
 
-     The language for the description data requested.
+     The language for the description data requested.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns [RequirementDescriptionData Class](requirementdescriptiondata-class.md),
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

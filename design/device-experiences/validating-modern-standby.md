@@ -29,9 +29,9 @@ Starting with Windows 8, the modern standby power model enables applications to 
 
 Windows supports modern standby only on low-power PC platforms that include low-power hardware and meet Windows Certification requirements. Systems that are not specifically designed for modern standby continue to use the traditional PC power model, which is fully supported in Windows 8 and Windows 8.1. This section pertains only to PCs that implement the modern standby power model. It does not provide test guidance for PCs that implement the traditional ACPI Sleep (S3) and Hibernate (S4) system power states.
 
- 
+ 
 
- 
+ 
 
 
 

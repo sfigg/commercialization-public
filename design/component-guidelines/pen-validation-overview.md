@@ -43,7 +43,7 @@ If your device or testing setup does not meet the above criteria, you will not b
 
 **Note**  Failure to follow these steps will cause tests to crash on launch, or fail to receive input.
 
- 
+ 
 
 These steps must be performed on the device under test before running the pen HLK tests.
 

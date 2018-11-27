@@ -30,9 +30,9 @@ For more information, see [Windows Assessment Toolkit](http://go.microsoft.com/f
 
 [Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md)
 
- 
+ 
 
- 
+ 
 
 
 

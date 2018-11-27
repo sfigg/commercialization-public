@@ -48,7 +48,7 @@ ms.topic: article
 <td><p>This property represents the name of the machine.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OSEdition](machineosedition-property.md)</p></td>
+<td><p><a href="machineosedition-property.md" data-raw-source="[OSEdition](machineosedition-property.md)">OSEdition</a></p></td>
 <td><p>This property represents the OS edition of the machine.</p></td>
 </tr>
 <tr class="even">
@@ -70,7 +70,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -94,11 +94,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

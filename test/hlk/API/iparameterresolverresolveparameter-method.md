@@ -44,9 +44,9 @@ This method is called by the scheduler to resolve a parameter that should be res
 
 `Function ResolveParameter ( _`
 
-          `inValue As String, _`
+          `inValue As String, _`
 
-          `ByRef outValue As String _`
+          `ByRef outValue As String _`
 
 `) As Boolean`
 
@@ -54,9 +54,9 @@ This method is called by the scheduler to resolve a parameter that should be res
 
 `bool ResolveParameter (`
 
-          `string inValue,`
+          `string inValue,`
 
-          `ref string outValue`
+          `ref string outValue`
 
 `)`
 
@@ -65,11 +65,11 @@ This method is called by the scheduler to resolve a parameter that should be res
 
 *inValue*
 
-     The resolver value to replace.
+     The resolver value to replace.
 
 *outValue*
 
-     The new value of the parameter. If the method returns **true**, this will be the new value.
+     The new value of the parameter. If the method returns **true**, this will be the new value.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -86,9 +86,9 @@ This method will return **true** if the identifier was found indicating that thi
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

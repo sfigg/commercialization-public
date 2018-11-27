@@ -61,7 +61,7 @@ The following table lists Windows 10 features related to touch.
 </tbody>
 </table>
 
- 
+ 
 
 The following table lists requirements for touch-related attributes:
 
@@ -145,7 +145,7 @@ The following table lists requirements for touch-related attributes:
 </tbody>
 </table>
 
- 
+ 
 
 ### Touch implementation
 
@@ -279,7 +279,7 @@ For optimal damage resistance:
 
     **Note**   Tests conducted using a standard 1mm glass.
 
-     
+     
 
 -   The indentation threshold as measured with a Vickers indenter should be ≥ 5\* kgf.
 -   The Knoop scratch load to lateral cracks should be ≥ 4\* N.
@@ -364,9 +364,9 @@ High-Quality Viewing Experience Guidelines:
 
 [Unattend settings (Windows 8.1)](http://technet.microsoft.com/library/ff699026.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

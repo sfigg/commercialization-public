@@ -47,7 +47,7 @@ Windows 10 Mobile always shows the signal strength for the highest technology. 
 
 In these examples, if the 1X signal strength changes and there is a higher radio access technology, the device will not do anything.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-device** value
@@ -142,7 +142,7 @@ This customization supports: **per-device** value
     **Note**  
     The signal strength mapping is implemented by the modem vendor. For information about how to change the required values under the **SignalBarMappingTable** setting, see the documentation provided by the modem vendor.
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 Refer to the documentation provided by the modem vendor and work with your mobile operator to test this customization on their network.

@@ -45,7 +45,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -101,9 +101,9 @@ The following XML output shows how to set fax settings.
 
 [Receipts](microsoft-windows-fax-service-receipts.md)
 
- 
+ 
 
- 
+ 
 
 
 

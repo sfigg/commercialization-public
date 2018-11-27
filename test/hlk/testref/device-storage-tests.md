@@ -136,9 +136,9 @@ ms.topic: article
 -   [WindowsToGo Device Boot Test](19cf07d7-072b-4fba-b8c4-5104ad61b0a5.md)
 -   [WindowsToGo Performance Assessment](fd5144bd-09d5-4c7d-9e55-8036f57ae902.md)
 
- 
+ 
 
- 
+ 
 
 
 

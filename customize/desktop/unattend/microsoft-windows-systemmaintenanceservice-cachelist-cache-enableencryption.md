@@ -29,7 +29,7 @@ This setting affects only internal (non-removable) devices. External devices are
 **Note**  
 Administrators can use Group Policy to ensure ReadyBoost devices are encrypted. For more information, see the MSDN topic: [Group Policy](http://go.microsoft.com/fwlink/?LinkId=143404).
 
- 
+ 
 
 ## Values
 
@@ -52,7 +52,7 @@ Administrators can use Group Policy to ensure ReadyBoost devices are encrypted. 
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -99,9 +99,9 @@ The following XML output example shows a configuration of two ReadyBoost devices
 
 [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,8 +23,8 @@ Indicates whether to delete premerged event trace log (ETL) files.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[TraceMergeProperties](tracemergeproperties.md)\>
-    * \<[TraceMergeProperty](tracemergeproperty.md)\>
-      * \<**DeletePreMergedTraceFiles**\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<**DeletePreMergedTraceFiles**\>
 
 
 ## Syntax

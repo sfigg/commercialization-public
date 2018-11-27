@@ -50,7 +50,7 @@ The mobile device screen size is determined by the OS based on the Extended Disp
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows the device categories and resolutions that are supported for medium and large screen sizes.
 
@@ -117,12 +117,12 @@ The following table shows the device categories and resolutions that are support
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The screen width matrix shown above will not work for 15:9 panel definitions. WXGA and WVGA, which are 15:9 panels only, support the small screen size.
 
- 
+ 
 
 For devices that are automatically calculated to have medium and large screen sizes, the entire UI is scaled down unless the screen or an application has opted out of the behavior. For devices with medium screens, the UI is scaled 93%. For devices with large screens, the UI is scaled 78%. Across devices, in case of a fixed size UI element, these will appear to be the same physical size. If the item is full screen width, the item's width will increase with the size of the screen, but the height will maintain the same physical size. Other changes in the UI include the following:
 

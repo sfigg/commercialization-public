@@ -29,30 +29,30 @@ The **WPRControl** API provides programmatic access to all functions ofWindows 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interfaces](interfaces-wprcontrol.md)</p></td>
+<td><p><a href="interfaces-wprcontrol.md" data-raw-source="[Interfaces](interfaces-wprcontrol.md)">Interfaces</a></p></td>
 <td><p>Describes the <strong>WPRControl</strong> interfaces.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Classes](classes.md)</p></td>
+<td><p><a href="classes.md" data-raw-source="[Classes](classes.md)">Classes</a></p></td>
 <td><p>Describes the <strong>WPRControl</strong> classes.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Error Codes](error-codes.md)</p></td>
+<td><p><a href="error-codes.md" data-raw-source="[Error Codes](error-codes.md)">Error Codes</a></p></td>
 <td><p>Describes the <strong>WPRControl</strong> error codes.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [WPR Reference](wpr-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

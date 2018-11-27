@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **MachineException** class.
 
 `Public Sub New ( _`
 
-          `message As String _`
+          `message As String _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **MachineException** class.
 
 `public TestException  (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **MachineException** class.
 
 *message*
 
-     A string that comprises the exception message.
+     A string that comprises the exception message.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,25 +21,25 @@ ms.topic: article
 
 To troubleshoot issues that occur with Device.Network tests, follow these steps:
 
-1.  Review [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+1. Review [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
-    Review one of the following topics, depending on the type of networking product or feature that you are testing:
+   Review one of the following topics, depending on the type of networking product or feature that you are testing:
 
-    -   [IPsec Task Offload v2 Testing Prerequisites](ipsec-task-offload-v2-testing-prerequisites.md)
+   -   [IPsec Task Offload v2 Testing Prerequisites](ipsec-task-offload-v2-testing-prerequisites.md)
 
-    -   [LAN Testing Prerequisites](lan-testing-prerequisites.md)
+   -   [LAN Testing Prerequisites](lan-testing-prerequisites.md)
 
-    -   [Mobile Broadband Testing Prerequisites](mobile-broadband-testing-prerequisites.md)
+   -   [Mobile Broadband Testing Prerequisites](mobile-broadband-testing-prerequisites.md)
 
-    -   [Router Testing (Non-wireless) Prerequisites](router-testing--non-wireless--prerequisites.md)
+   -   [Router Testing (Non-wireless) Prerequisites](router-testing--non-wireless--prerequisites.md)
 
-    -   [Wireless LAN (802.11) Testing Prerequisites](wireless-lan--80211--testing-prerequisites.md)
+   -   [Wireless LAN (802.11) Testing Prerequisites](wireless-lan--80211--testing-prerequisites.md)
 
-    -   [Wireless Router Testing Prerequisites](wireless-router-testing-prerequisites.md)
+   -   [Wireless Router Testing Prerequisites](wireless-router-testing-prerequisites.md)
 
-2.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+2. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 ### <span id="Known_IPsec_test_issues"></span><span id="known_ipsec_test_issues"></span><span id="KNOWN_IPSEC_TEST_ISSUES"></span>Known IPsec test issues
 
@@ -83,15 +83,15 @@ The IPSec test job may fail due to issues with related LAN test jobs. See the fo
 <tbody>
 <tr class="odd">
 <td><p>The &quot;IPsec Offloadv2 logo verification (Win7)&quot; test jobs stay in the &quot;Scheduler&quot; status and never run.</p></td>
-<td><p>This problem is usually caused by various communication issues between the DTM client and the controller. You can check whether the &quot;Last Heartbeat time&quot; is close to the current time. To force the DTM client that is reporting a heartbeat, you can manually change the status of the machine to <strong>Reset</strong> or <strong>Unsafe</strong> in the DTM Studio, and then wait until the status of the machine changes back to &quot;Normal&quot;. After the status of all machines that are required to run the job is changed to <strong>Normal</strong>, the job will be scheduled on the DTM clients. If the machine status changes to <strong>Debug</strong>, verify whether the DTM client machine is still responsive. Sometimes, the machine status is <strong>Normal</strong> and the heartbeat is correct, but the job still won't run. This is most likely caused by the firewall or IPsec blocking the communication between the DTM client and the controller. Make sure that the DTM client and controller have the same IPsec configuration. If the client has IPsec turned on but the controller turned off, or vice versa, the job will not get scheduled. The DTM client is designed to work with a firewall, but sometimes the firewall blocks normal traffic between the client and the controller.</p></td>
+<td><p>This problem is usually caused by various communication issues between the DTM client and the controller. You can check whether the &quot;Last Heartbeat time&quot; is close to the current time. To force the DTM client that is reporting a heartbeat, you can manually change the status of the machine to <strong>Reset</strong> or <strong>Unsafe</strong> in the DTM Studio, and then wait until the status of the machine changes back to &quot;Normal&quot;. After the status of all machines that are required to run the job is changed to <strong>Normal</strong>, the job will be scheduled on the DTM clients. If the machine status changes to <strong>Debug</strong>, verify whether the DTM client machine is still responsive. Sometimes, the machine status is <strong>Normal</strong> and the heartbeat is correct, but the job still won&#39;t run. This is most likely caused by the firewall or IPsec blocking the communication between the DTM client and the controller. Make sure that the DTM client and controller have the same IPsec configuration. If the client has IPsec turned on but the controller turned off, or vice versa, the job will not get scheduled. The DTM client is designed to work with a firewall, but sometimes the firewall blocks normal traffic between the client and the controller.</p></td>
 </tr>
 <tr class="even">
-<td><p>The following error message is observer in the test log: "The Job xxx requires a device to be selected, not a driver&quot; when clicking &quot;Add Information&quot;.</p></td>
+<td><p>The following error message is observer in the test log: &quot;The Job xxx requires a device to be selected, not a driver&quot; when clicking &quot;Add Information&quot;.</p></td>
 <td><p>The error happens because you have selected a driver, not a test device, in the <strong>Device Console</strong> to run the test job. If you cannot find a device under the driver in the <strong>Device Console,</strong> the INF file and driver files that you provided during the logo submission do not match the actual INF file and driver files on the DTM client. Update your INF file and driver files by using the actual INF file and driver files installed on the DTM client.</p></td>
 </tr>
 <tr class="odd">
 <td><p>No &quot;IPsec Offloadv2 logo verification (Win7)&quot; job shows up in the &quot;Device Console&quot;.</p></td>
-<td><p>Make sure your device is an Ethernet (LAN) device and report media type to NDIS as NdisMedium802_3. This error sometimes happens when the hardware information reported by the DTM client is incomplete. To solve this problem, try to can reboot the DTM client machine and refresh the view of <strong>Device Console</strong>. If this doesn't work, try to stop and restart the &quot;wttsvc&quot; service on the DTM client, and then refresh the view of <strong>Device Console</strong>.</p></td>
+<td><p>Make sure your device is an Ethernet (LAN) device and report media type to NDIS as NdisMedium802_3. This error sometimes happens when the hardware information reported by the DTM client is incomplete. To solve this problem, try to can reboot the DTM client machine and refresh the view of <strong>Device Console</strong>. If this doesn&#39;t work, try to stop and restart the &quot;wttsvc&quot; service on the DTM client, and then refresh the view of <strong>Device Console</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p>The Ethernet - NDISTest 6.0 (priority) test may properly fail the 2c_priority and Directed Packets - NdisSendPackets assertion with a <strong>Unable to get test results on the test network adapter</strong> message.</p></td>
@@ -106,11 +106,11 @@ The IPSec test job may fail due to issues with related LAN test jobs. See the fo
 </tbody>
 </table>
 
->[!NOTE]
->  
-To troubleshoot the NDISTest (6.0 or 6.5), attach a debugger to the test computer.
+> [!NOTE]
+> 
+> To troubleshoot the NDISTest (6.0 or 6.5), attach a debugger to the test computer.
 
- 
+ 
 
 ### <span id="Known_mobile_broadband_test_issues"></span><span id="known_mobile_broadband_test_issues"></span><span id="KNOWN_MOBILE_BROADBAND_TEST_ISSUES"></span>Known mobile broadband test issues
 
@@ -208,15 +208,15 @@ Do not install the x64 Test SoftAP driver before installing the DTM client. When
 
 Installing NDISTest separate from DTM Studio enables you to execute individual tests. A DUT, SUT, and Test SoftAP needs to be configured to enable stand-alone execution.
 
->[!NOTE]
->  
-All test machines must use the same processor architecture.
+> [!NOTE]
+> 
+> All test machines must use the same processor architecture.
+> 
+> [!NOTE]
+> 
+> To troubleshoot the NDISTest, try attaching a debugger to the test machine.
 
->[!NOTE]
->  
-To troubleshoot the NDISTest, try attaching a debugger to the test machine.
-
- 
+ 
 
 **Configuring a Support Device Under Test (SUT)**
 
@@ -344,28 +344,28 @@ If you need to add a wireless profile manually, you can do so by using the netsh
 
 For Example: To add the 802\_11a\_wpa-psk.xml wireless profile:
 
-1.  Click **Start**, click **Run**, and enter **cmd.exe**.
+1. Click **Start**, click **Run**, and enter **cmd.exe**.
 
-2.  Type **netsh wlan add profile filename=802\_11a\_wpa-psk.xml i=\***
+2. Type **netsh wlan add profile filename=802\_11a\_wpa-psk.xml i=\\***
 
-3.  Click **OK**.
+3. Click **OK**.
 
->[!NOTE]
->  
-Make sure that Wireless Profile XML file exists in the current directory or specify the full path.
+> [!NOTE]
+> 
+> Make sure that Wireless Profile XML file exists in the current directory or specify the full path.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Device.Network Testing](device-network-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

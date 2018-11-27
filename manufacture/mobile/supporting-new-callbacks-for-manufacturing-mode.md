@@ -50,9 +50,9 @@ typedef struct DOT11_MANUFACTURING_CALLBACK_PARAMETERS {
 
 [Adding Wi-Fi manufacturing test support to the OID interface](adding-wi-fi-manufacturing-test-support-to-the-oid-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

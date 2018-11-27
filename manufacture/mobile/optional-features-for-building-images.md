@@ -22,7 +22,7 @@ Updates should be tested by submitting OS update requests using the Ingestion Cl
 ## Conditional features
 
 
-If a device meets the installation conditions listed for a feature in the following table, then the update path for the device will fail unless the feature is installed. For example, if there’s an update for Rich Communications Suite Platform support for Windows 10 Mobile, and you removed that feature from a device that’s otherwise capable of using it, then that entire update package (and all subsequent updates) will fail to install. To get updates again, you need to deliver an image that includes the feature to customers, and have them re-flash the device.
+If a device meets the installation conditions listed for a feature in the following table, then the update path for the device will fail unless the feature is installed. For example, if there’s an update for Rich Communications Suite Platform support for Windows 10 Mobile, and you removed that feature from a device that’s otherwise capable of using it, then that entire update package (and all subsequent updates) will fail to install. To get updates again, you need to deliver an image that includes the feature to customers, and have them re-flash the device.
 
 <table>
 <colgroup>
@@ -40,20 +40,20 @@ If a device meets the installation conditions listed for a feature in the follow
 <tbody>
 <tr class="odd">
 <td>Rich Communications Suite Platform support (RCS_FEATURE_PACK)</td>
-<td>Windows 8.1 to Windows 10</td>
+<td>Windows 8.1 to Windows 10</td>
 <td><p>Install if PhoneManufacturer=NOKIA</p>
 <p>Update if installed</p></td>
 </tr>
 <tr class="even">
 <td>Nearby Numbers/Block and Filter (MS_COMMSENHANCEMENT* apps)</td>
-<td>Windows 8.1 to Windows 10</td>
+<td>Windows 8.1 to Windows 10</td>
 <td><p>Install MS_COMMSENHANCEMENTCHINA if HKEY_LOCAL_MACHINE\system\Platform\DeviceTargetingInfo\phoneromlanguage = 0804. Update if it’s already installed.</p>
 <p>Install MS_COMMSENHANCEMENTGLOBAL if HKEY_LOCAL_MACHINE\system\Platform\DeviceTargetingInfo\phoneromlanguage &lt;&gt; 0804. Update if it’s already installed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Retail features defined by Microsoft
 
@@ -138,10 +138,10 @@ Refer to the Mobile Operator guides for any additional retail features that are 
 <td><p>8GBFEATURESONDATA</p></td>
 <td><p>On devices with 8GB of storage, provisioned packages are stored on the data partition.</p>
 <div class="alert">
-<strong>Note</strong>  We strongly recommend that you also use 8GBFEATURESONSYSTEM when you specify this feature.
+<strong>Note</strong>  We strongly recommend that you also use 8GBFEATURESONSYSTEM when you specify this feature.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -152,10 +152,10 @@ Refer to the Mobile Operator guides for any additional retail features that are 
 <td><p>16GBFEATURESONDATA</p></td>
 <td><p>On devices with 16GB of storage, provisioned packages are stored on the data partition.</p>
 <div class="alert">
-<strong>Note</strong>  We strongly recommend that you also use 16GBFEATURESONSYSTEM when you specify this feature.
+<strong>Note</strong>  We strongly recommend that you also use 16GBFEATURESONSYSTEM when you specify this feature.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -176,12 +176,12 @@ Refer to the Mobile Operator guides for any additional retail features that are 
 </tr>
 <tr class="odd">
 <td><p>SOCProdTest_HSTI</p></td>
-<td><p>This feature installs the correct driver for the security watermark checks and is required for Windows 10 Mobile. If this package is not installed, you will see the <strong>Not For Retail</strong> watermark.</p>
+<td><p>This feature installs the correct driver for the security watermark checks and is required for Windows 10 Mobile. If this package is not installed, you will see the <strong>Not For Retail</strong> watermark.</p>
 <div class="alert">
-<strong>Important</strong>  This feature must be included in your OS image. If this feature is not included, the device might not boot.
+<strong>Important</strong>  This feature must be included in your OS image. If this feature is not included, the device might not boot.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -194,7 +194,7 @@ Refer to the Mobile Operator guides for any additional retail features that are 
 </tr>
 <tr class="even">
 <td><p>Docking</p></td>
-<td><p>This feature enables Continuum for Windows 10 Mobile.</p></td>
+<td><p>This feature enables Continuum for Windows 10 Mobile.</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESET_PROTECTION</p></td>
@@ -227,7 +227,7 @@ Refer to the Mobile Operator guides for any additional retail features that are 
 </tbody>
 </table>
 
- 
+
 
 **Retail boot sequence settings**
 
@@ -246,7 +246,7 @@ The next two settings control the phone start up. Only one can be selected.
 </tbody>
 </table>
 
- 
+
 
 **Microsoft internal retail features**
 
@@ -273,11 +273,11 @@ The following components are reserved for Microsoft internal use only, but are d
 </tbody>
 </table>
 
- 
+
 
 **Retail Demo Experience features**
 
-The Retail Demo Experience FOD contains offline retail demo content that is critical to a great retail demo experience. This offline content contains Windows and Office content that is shown along with any OEM or Retailer retail demo content. Adding of this Retail Demo Experience FOD is required and necessary for any OEMs participating in enabling a Retail Demo Experience on their Windows 10 devices.
+The Retail Demo Experience FOD contains offline retail demo content that is critical to a great retail demo experience. This offline content contains Windows and Office content that is shown along with any OEM or Retailer retail demo content. Adding of this Retail Demo Experience FOD is required and necessary for any OEMs participating in enabling a Retail Demo Experience on their Windows 10 devices.
 
 -   MS\_RETAILDEMOCONTENT\_AR-SA
 -   MS\_RETAILDEMOCONTENT\_BG-BG
@@ -345,22 +345,20 @@ The following table describes the Microsoft-defined test features that can be us
 <td><p>BOOTSEQUENCE_TEST</p></td>
 <td><p>This feature includes the BCD boot sequence configuration for booting into the full OS in a test image. This feature also includes a pre-boot crash dump application and a pre-boot crash dump entry.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The following features are mutually exclusive; only one of them can be referenced in an OEMInput file: BOOTSEQUENCE_TEST, MMOSLOADER_TEST.</p>
+<strong>Note</strong><br/><p>The following features are mutually exclusive; only one of them can be referenced in an OEMInput file: BOOTSEQUENCE_TEST, MMOSLOADER_TEST.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td><p>MMOSLOADER_TEST</p></td>
 <td><p>This feature includes the BCD boot sequence configuration to support booting into MMOS in a test image. This feature also includes a pre-boot crash dump application and a pre-boot crash dump entry. For more information about MMOS, see <a href="mmos-image-definition.md">MMOS image definition</a>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The following features are mutually exclusive; only one of them can be referenced in an OEMInput file: BOOTSEQUENCE_TEST, MMOSLOADER_TEST.</p>
+<strong>Note</strong><br/><p>The following features are mutually exclusive; only one of them can be referenced in an OEMInput file: BOOTSEQUENCE_TEST, MMOSLOADER_TEST.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -387,11 +385,10 @@ The following table describes the Microsoft-defined test features that can be us
 <td><p>DISABLE_FFU_PLAT_ID_CHECK</p></td>
 <td><p>Disables the device platform validation in the Microsoft flashing application. For more information about the platform check in flashing, see <a href="use-the-flashing-tools-provided-by-microsoft.md">Use the flashing tools provided by Microsoft</a>.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>The device platform validation for flashing must not be disabled in retail images.</p>
+<strong>Important</strong><br/><p>The device platform validation for flashing must not be disabled in retail images.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -401,7 +398,7 @@ The following table describes the Microsoft-defined test features that can be us
 </tbody>
 </table>
 
- 
+
 
 ### Boot option feature constraints
 
@@ -498,7 +495,7 @@ This table provides a summary of build options and indicates if the option is ex
 </tbody>
 </table>
 
- 
+
 
 ### Other boot related features
 
@@ -533,11 +530,11 @@ This table provides a summary of build options and indicates if the option is ex
 </tbody>
 </table>
 
- 
+
 
 ### Security related features
 
-There are two code signing modes on a Windows 10 Mobile device, retail and test. With retail, all code must be production signed to be able to run on the device. For test signing, all code must be signed with test certificates. For more information about code signing, see [Code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634).
+There are two code signing modes on a Windows 10 Mobile device, retail and test. With retail, all code must be production signed to be able to run on the device. For test signing, all code must be signed with test certificates. For more information about code signing, see [Code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634).
 
 The two code signing modes are automatically managed in the build system. The previous DISABLETESTSIGNING and ENABLETESTSIGNING feature settings are no longer used. Instead test code signing is automatically enabled in the following build types:
 
@@ -580,7 +577,7 @@ The following table summarizes the security related features.
 </tbody>
 </table>
 
- 
+
 
 ### Test related features
 
@@ -637,7 +634,7 @@ The following table summarizes the security related features.
 </tbody>
 </table>
 
- 
+
 
 ### Debug related features
 
@@ -672,11 +669,10 @@ Use the following settings to specify the transport that is used for debugging. 
 <p>The default debug transport target name for this feature is WOATARGET. To establish a kernel debugger connection to the phone, use the following command.</p>
 <p>Windbg -k usb:targetname=WOATARGET</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Do not include either KDUSB_ON or KDNETUSB_ON if you need to enable MTP or IP over USB in the image. If the kernel debugger is enabled in the image and the debug transports are used to connect to the device, the kernel debugger has exclusive use of the USB port and prevents MTP and IP over USB from working.</p>
+<strong>Note</strong><br/><p>Do not include either KDUSB_ON or KDNETUSB_ON if you need to enable MTP or IP over USB in the image. If the kernel debugger is enabled in the image and the debug transports are used to connect to the device, the kernel debugger has exclusive use of the USB port and prevents MTP and IP over USB from working.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -698,7 +694,7 @@ Use the following settings to specify the transport that is used for debugging. 
 </tbody>
 </table>
 
- 
+
 
 **Other debug settings**
 
@@ -788,16 +784,16 @@ Use the following settings to specify the transport that is used for debugging. 
 </tr>
 <tr class="even">
 <td><p>NOLIVEDUMPS</p></td>
-<td><p>Disables non-fatal kernel error reports.  These reports contain debugging information for OS and driver developers.</p></td>
+<td><p>Disables non-fatal kernel error reports.  These reports contain debugging information for OS and driver developers.</p></td>
 </tr>
 <tr class="odd">
 <td><p>TELEMETRYONSDCARD</p></td>
-<td><p>This feature enables temporary storage of debugging logs and files on the SD card.  This feature is only appropriate for test/self-host images and only on devices with less than 8 GB of free space of primary storage.</p></td>
+<td><p>This feature enables temporary storage of debugging logs and files on the SD card.  This feature is only appropriate for test/self-host images and only on devices with less than 8 GB of free space of primary storage.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### Non-production features
 
@@ -842,7 +838,7 @@ The following are some features that can be used for development and testing sup
 </tbody>
 </table>
 
- 
+
 
 ### Other features
 
@@ -881,7 +877,7 @@ The following are some features that can be used for development and testing sup
 </tbody>
 </table>
 
- 
+
 
 ## Microsoft internal features
 
@@ -939,16 +935,16 @@ The following components are reserved for Microsoft internal use only, but are d
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Building and flashing images](building-and-flashing-images.md)
 
- 
 
- 
+
+
 
 
 

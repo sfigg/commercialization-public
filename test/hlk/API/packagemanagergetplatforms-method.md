@@ -44,9 +44,9 @@ Getting OS Platform objects is supported only when the Project Manager object is
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

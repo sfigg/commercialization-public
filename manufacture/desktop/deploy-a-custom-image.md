@@ -108,121 +108,121 @@ For more information, see [DISM Image Management Command-Line Options](dism-imag
 
 In this step, you will create an answer file that points to your custom image. This step assumes that you have already built an answer file and have a working catalog.
 
-1.  On your technician computer, open **Windows System Image Manager**.
+1. On your technician computer, open **Windows System Image Manager**.
 
-2.  On the **File** menu, click **New Answer File**.
+2. On the **File** menu, click **New Answer File**.
 
-3.  In the **Windows Image** pane of Windows SIM, expand the **Components** node to display available settings.
+3. In the **Windows Image** pane of Windows SIM, expand the **Components** node to display available settings.
 
-4.  Add the following components to your answer file by right-clicking the component and then selecting the appropriate configuration pass.
+4. Add the following components to your answer file by right-clicking the component and then selecting the appropriate configuration pass.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Component</th>
-    <th align="left">Configuration Pass</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\CreatePartitions\ CreatePartition</strong></p></td>
-    <td align="left"><p><strong>windowsPE</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\ModifyPartitions\ ModifyPartition</strong></p></td>
-    <td align="left"><p><strong>windowsPE</strong></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\ImageInstall\OSImage\InstallTo</strong></p></td>
-    <td align="left"><p><strong>windowsPE</strong></p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th align="left">Component</th>
+   <th align="left">Configuration Pass</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\CreatePartitions\ CreatePartition</strong></p></td>
+   <td align="left"><p><strong>windowsPE</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\ModifyPartitions\ ModifyPartition</strong></p></td>
+   <td align="left"><p><strong>windowsPE</strong></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\ImageInstall\OSImage\InstallTo</strong></p></td>
+   <td align="left"><p><strong>windowsPE</strong></p></td>
+   </tr>
+   </tbody>
+   </table>
 
-    **Note**  
-    Expand the component list until you see the lowest setting listed in the previous table, and then add that setting to your answer file. This shortcut will add the setting and all parent settings to your answer file in one step.
+   **Note**  
+   Expand the component list until you see the lowest setting listed in the previous table, and then add that setting to your answer file. This shortcut will add the setting and all parent settings to your answer file in one step.
 
-5.  All of the settings that you added must appear in the **Answer File** pane. Select and configure each setting as specified in the following table.
+5. All of the settings that you added must appear in the **Answer File** pane. Select and configure each setting as specified in the following table.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Component</th>
-    <th align="left">Value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>WillShowUI = OnError</code></pre></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>DiskID = 0
-    WillWipeDisk = true</code></pre></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\CreatePartitions\CreatePartition</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>Extend = false
-    Order = 1
-    Size = 300</code></pre>
-    <pre class="syntax" space="preserve"><code>Type = Primary</code></pre></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\CreatePartitions\CreatePartition</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>Extend = true
-    Order = 2</code></pre>
-    <pre class="syntax" space="preserve"><code>Type = Primary</code></pre></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\ModifyPartitions\ModifyPartition</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>Active = true
-    Extend = false
-    Format = NTFS
-    Label = System
-    Letter = S
-    Order = 1
-    PartitionID = 1</code></pre></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\ModifyPartitions\ModifyPartition</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>Extend = false
-    Format = NTFS
-    Label = Windows
-    Letter = C
-    Order = 2
-    PartitionID = 2</code></pre>
-    <p></p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\ImageInstall\OSImage\</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>WillShowUI = OnError</code></pre></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Microsoft-Windows-Setup\ImageInstall\OSImage\InstallTo</strong></p></td>
-    <td align="left"><pre class="syntax" space="preserve"><code>DiskID = 0
-    PartitionID = 2</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th align="left">Component</th>
+   <th align="left">Value</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>WillShowUI = OnError</code></pre></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>DiskID = 0
+   WillWipeDisk = true</code></pre></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\CreatePartitions\CreatePartition</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>Extend = false
+   Order = 1
+   Size = 300</code></pre>
+   <pre class="syntax" space="preserve"><code>Type = Primary</code></pre></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\CreatePartitions\CreatePartition</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>Extend = true
+   Order = 2</code></pre>
+   <pre class="syntax" space="preserve"><code>Type = Primary</code></pre></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\ModifyPartitions\ModifyPartition</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>Active = true
+   Extend = false
+   Format = NTFS
+   Label = System
+   Letter = S
+   Order = 1
+   PartitionID = 1</code></pre></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\DiskConfiguration\Disk\ModifyPartitions\ModifyPartition</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>Extend = false
+   Format = NTFS
+   Label = Windows
+   Letter = C
+   Order = 2
+   PartitionID = 2</code></pre>
+   <p></p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\ImageInstall\OSImage&lt;/strong&gt;</p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>WillShowUI = OnError</code></pre></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><p><strong>Microsoft-Windows-Setup\ImageInstall\OSImage\InstallTo</strong></p></td>
+   <td align="left"><pre class="syntax" space="preserve"><code>DiskID = 0
+   PartitionID = 2</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
-6.  In a command prompt window copy the answer file to a network location. For example:
+6. In a command prompt window copy the answer file to a network location. For example:
 
-    ```
-    net use N: \\server\share\
-    md N:\AnswerFiles
-    copy C:\deploy_unattend.xml N:\AnswerFiles\
-    ```
+   ```
+   net use N: \\server\share\
+   md N:\AnswerFiles
+   copy C:\deploy_unattend.xml N:\AnswerFiles\
+   ```
 
-    If necessary, provide network credentials for appropriate network access.
+   If necessary, provide network credentials for appropriate network access.
 
 ## <span id="bkmk-5"></span><span id="BKMK-5"></span>Step 5: Deploy the image by using Windows Setup
 
@@ -248,7 +248,7 @@ You can further customize your answer file to include additional options. You ca
 > [!important]
 > The DVD media that you create is for internal deployment use only. You cannot redistribute this media.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -265,9 +265,9 @@ You can further customize your answer file to include additional options. You ca
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

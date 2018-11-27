@@ -17,9 +17,9 @@ ms.topic: article
 
 In previous versions of windows, some devices used a configuration top level collection to allow their devices to adapt to the capabilities of the host operating system. This functionality is available in Windows 8 for backwards compatibility but it is strongly recommended not to use the configuration collection when designing a new digitizer for Windows. This feature is deprecated in Windows 8 and will be removed in a future version of Windows, and is not available in Windows RT.
 
- 
+ 
 
- 
+ 
 
 
 

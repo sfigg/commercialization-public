@@ -64,9 +64,9 @@ To determine whether a component applies to the image you’re building, load yo
 1. Select the Microsoft-Windows-TwinUI component.
 1. In the **Settings** section of the **Properties** pane, provide a value for “oem-app” for [CustomProtocol](microsoft-windows-twinui-customprotocol.md).
 
- 
+ 
 
- 
+ 
 
 
 

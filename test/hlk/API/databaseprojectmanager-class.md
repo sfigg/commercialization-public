@@ -36,7 +36,7 @@ This class is a container for all submissions in DTM. The main purpose is to sto
 
 `Public Class DatabaseProjectManager`
 
-          `Inherits ProjectManager`
+          `Inherits ProjectManager`
 
 **C#**
 
@@ -47,18 +47,18 @@ This class is a container for all submissions in DTM. The main purpose is to sto
 
 **System.Object**
 
-     [ProjectManager Class](projectmanager-class.md)
+     [ProjectManager Class](projectmanager-class.md)
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.DBConnection.DatabaseProjectManager**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.DBConnection.DatabaseProjectManager**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

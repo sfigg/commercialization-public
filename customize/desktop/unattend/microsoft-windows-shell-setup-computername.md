@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 In Windows 10, users can no longer enter a computer name during OOBE as the name is auto-generated. To set a default computer name pre-OOBE, OEMs can configure `ComputerName` in the Unattend.xml file and specify a name for the computer. After OOBE, end users can change this default computer name after OOBE by changing it in the **System Properties** page.
 
- 
+ 
 
 ## Values
 
@@ -72,9 +72,9 @@ The following XML output shows how to set the computer name.
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

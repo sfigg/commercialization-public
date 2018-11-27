@@ -23,7 +23,7 @@ Users can later change the highest connection speed setting on the device.
 **Note**  
 On dual SIM devices that only support up to 3G connection speeds, the **Highest connection speed** option is replaced by a 3G on/off toggle based on the per-device setting. **On** means that 3G is preferred and **Off** means 2G only.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value, **per-device** value
@@ -129,7 +129,7 @@ This customization supports: **per-IMSI** value, **per-device** value
         </tbody>
         </table>
 
-         
+         
 
     2.  Perform a bitwise **OR** operation on the radio technologies you want to exclude.
 

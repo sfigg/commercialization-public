@@ -23,7 +23,7 @@ Only OEM applications have access to the maximum resolution limit.
 **Note**  
 This customization is only used by the **Windows.Phone.Media.Capture** service, which is provided in Windows Phone 8.1 for backwards compatibility only. **Windows.Media.Capture** does not support this customization.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 

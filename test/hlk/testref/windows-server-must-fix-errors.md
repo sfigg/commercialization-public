@@ -36,15 +36,15 @@ The criteria for the SDV and CA Rules which have been selected for Network and S
 -   Experience - the code error is one included in the internal bar used by Microsoft, with high impact and security issues always being fixed
 -   Minimal Annotation - there is low dependency on annotations of the driver's sources in order for the CA and SDV tools to function. Note however that some annotations are required.
 
->[!NOTE]
->  
-There are a few CA Rules below for which there are no links in MSDN, which are called out below. The functionality for checking these in Visual Studio Express 2013 does not exist, so other versions of Visual Studio must be used. However, the errors are generally self-explanatory.
+> [!NOTE]
+> 
+> There are a few CA Rules below for which there are no links in MSDN, which are called out below. The functionality for checking these in Visual Studio Express 2013 does not exist, so other versions of Visual Studio must be used. However, the errors are generally self-explanatory.
 
 For all other Rules, the link can be found by searching on MSDN.
 
 For convenience, there is a short snippet of text from the links, but the links themselves usually contain more text and code examples of both correct and incorrect usage to illustrate the needed change(s).
 
- 
+ 
 
 ## <span id="CA_Rules"></span><span id="ca_rules"></span><span id="CA_RULES"></span>CA Rules
 
@@ -998,9 +998,9 @@ This rule verifies that the driver's calls to certain synchronization functions 
 
 ![](images/server-must-fix-dvl-file-data.png)
 
- 
+ 
 
- 
+ 
 
 
 

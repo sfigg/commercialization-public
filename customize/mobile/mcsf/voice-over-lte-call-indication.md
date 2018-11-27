@@ -23,7 +23,7 @@ The OS uses the **PhoneMediaQuality** field in the **PH\_CALL\_INFO** structure 
 **Note**  
 Depending on the current modem and RIL implementation, it is possible that the AMR-WB codec is being used and the phone call is in high quality voice status but not a VoLTE call. The OS does not restrict the use of this string in these cases.
 
- 
+ 
 
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  
 
@@ -58,7 +58,7 @@ Depending on the current modem and RIL implementation, it is possible that the A
     **Note**  
     This customization does not support a resource-only DLL for localized strings so you need to set the new string directly as the value.
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone.

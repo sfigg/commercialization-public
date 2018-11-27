@@ -42,7 +42,7 @@ This method determines whether the filter is applicable for the given taskResult
 
 `Public Function IsApplicable ( _`
 
-          `constraintEvaluator As IFilterConstraintEvaluator`
+          `constraintEvaluator As IFilterConstraintEvaluator`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method determines whether the filter is applicable for the given taskResult
 
 `public bool IsApplicable (`
 
-          `IFilterConstraintEvaluator constraintEvaluator`
+          `IFilterConstraintEvaluator constraintEvaluator`
 
 `)`
 
@@ -59,7 +59,7 @@ This method determines whether the filter is applicable for the given taskResult
 
 *constraintEvaluator*
 
-     The filter constraint evaluator.
+     The filter constraint evaluator.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method determines whether the filter is applicable for the given taskResult
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

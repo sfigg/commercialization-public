@@ -36,7 +36,7 @@ WinPE ships as a .wim file. Mounting and customizing a WinPE image is the same p
 
 ## <span id="Create_WinPE_image"></span>Create a set of either 32-bit or 64-bit Windows PE files
 
-Before you can customize WinPE, you need to have a WinPE image to work with. If you need to get a WinPE image, see [WinPE: Create USB bootable drive] (winpe-create-usb-bootable-drive.md) to learn how.
+Before you can customize WinPE, you need to have a WinPE image to work with. If you need to get a WinPE image, see [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md) to learn how.
 
 ## <span id="Mount_the_image"></span>Mount the Windows PE boot image
 
@@ -239,9 +239,9 @@ In some cases, you may not be able to recover the mounted image. DISM protects y
 
 [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

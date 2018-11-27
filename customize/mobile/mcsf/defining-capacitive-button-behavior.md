@@ -18,10 +18,10 @@ ms.topic: article
 
 For mobile devices that use capacitive buttons, OEMs must add registry values that specify the number of capacitive buttons, the button locations, the button names, and the values to send to the OS when the button is pressed. This information enables the OS to treat the capacitive buttons below the screen as touchable targets.
 
-**Note**  
+**Note**  
 Although OEMs typically configure this behavior by adding a registry value in an INF file that is included in a driver package, this behavior can also be configured via the customization process described below. By using both options, OEMs can define the default behavior in the driver for a specific hardware component, and modify this behavior as necessary in images for different device models that use the same driver.
 
- 
+
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 
@@ -104,9 +104,11 @@ Although OEMs typically configure this behavior by adding a registry value in an
         </tbody>
         </table>
 
-         
 
-    -   For the `Area`*n* setting, set the `Value` to a string that marks the position of the current button. The string must have the format *ul.x,ul.y lr.x,lr.y*, where *ul* = upper left and *lr* = lower right. For example, `Value=" 0,1295 236,1390"`.
+
+~~~
+-   For the `Area`*n* setting, set the `Value` to a string that marks the position of the current button. The string must have the format *ul.x,ul.y lr.x,lr.y*, where *ul* = upper left and *lr* = lower right. For example, `Value=" 0,1295 236,1390"`.
+~~~
 
 6.  If you want to enable the built-in vibration feedback mechanism for the capacitive buttons in the OS, include the `VibrateSupport`, `VibrateDuration`, and `VibrateIntensity` settings and configure them as described below. If you do not want to enable vibration feedback, you can omit these settings from the customization answer file. 
 
@@ -135,19 +137,21 @@ Although OEMs typically configure this behavior by adding a registry value in an
         </tbody>
         </table>
 
-         
 
-    -   For the `VibrateDuration` setting, set `Value` to a hexadecimal value between 0 and 1000 in decimal (or 0x0 and 0x3E8 in hexadecimal) that specifies the duration for a vibration, in milliseconds. The following example sets this value to 100.
 
-        ```
-        <Setting Name="VibrateDuration" Value="0x64" />
-        ```
+~~~
+-   For the `VibrateDuration` setting, set `Value` to a hexadecimal value between 0 and 1000 in decimal (or 0x0 and 0x3E8 in hexadecimal) that specifies the duration for a vibration, in milliseconds. The following example sets this value to 100.
 
-    -   For the `VibrateIntensity` setting, set `Value` to a value between 0 and 100 in decimal (or 0x0 and 0x64 in hexadecimal) that specifies the intensity of the vibration. The following example sets this value to 50.
+    ```
+    <Setting Name="VibrateDuration" Value="0x64" />
+    ```
 
-        ```
-        <Setting Name="VibrateIntensity" Value="0x32" />
-        ```
+-   For the `VibrateIntensity` setting, set `Value` to a value between 0 and 100 in decimal (or 0x0 and 0x64 in hexadecimal) that specifies the intensity of the vibration. The following example sets this value to 50.
+
+    ```
+    <Setting Name="VibrateIntensity" Value="0x32" />
+    ```
+~~~
 
 ## Related topics
 

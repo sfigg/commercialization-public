@@ -28,47 +28,47 @@ To build an FWVGA image with software-rendered buttons:
     ```XML
     <?xml version="1.0" encoding="utf-8" ?>  
     <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="FWVGASoftwareButtons"  
-                         Description="Use to generate an image that supports an FWVGA display panel and software Back, Start, and Search buttons."  
-                         Owner=""  
-                         OwnerType="OEM">   
-      <Static>  
+                         Name="FWVGASoftwareButtons"  
+                         Description="Use to generate an image that supports an FWVGA display panel and software Back, Start, and Search buttons."  
+                         Owner=""  
+                         OwnerType="OEM">   
+      <Static>  
 
-        <Settings Path="Graphics/D3D/DisplayResolutionOverride">  
-          <Setting Name="DisplayPanelOverrideWidth" Value="0x1E0" />  
-          <Setting Name="DisplayPanelOverrideHeight" Value="0x356" />  
-          <Setting Name="TouchPanelOverrideWidth" Value="0x1E0" />  
-          <Setting Name="TouchPanelOverrideHeight" Value="0x356" />  
-        </Settings>  
+        <Settings Path="Graphics/D3D/DisplayResolutionOverride">  
+          <Setting Name="DisplayPanelOverrideWidth" Value="0x1E0" />  
+          <Setting Name="DisplayPanelOverrideHeight" Value="0x356" />  
+          <Setting Name="TouchPanelOverrideWidth" Value="0x1E0" />  
+          <Setting Name="TouchPanelOverrideHeight" Value="0x356" />  
+        </Settings>  
 
-        <Settings Path="Input/Touch/CapButtons">  
+        <Settings Path="Input/Touch/CapButtons">  
 
-          <Setting Name="ButtonCount" Value="" />   
-          <Setting Name="ButtonAreaTotal" Value="" />   
+          <Setting Name="ButtonCount" Value="" />   
+          <Setting Name="ButtonAreaTotal" Value="" />   
 
-          <Setting Name="Name0" Value="" />   
-          <Setting Name="VKey0" Value="" />
-          <Setting Name="Area0" Value="" />   
+          <Setting Name="Name0" Value="" />   
+          <Setting Name="VKey0" Value="" />
+          <Setting Name="Area0" Value="" />   
 
-          <Setting Name="Name1" Value="" />   
-          <Setting Name="VKey1" Value="" />   
-          <Setting Name="Area1" Value="" />   
+          <Setting Name="Name1" Value="" />   
+          <Setting Name="VKey1" Value="" />   
+          <Setting Name="Area1" Value="" />   
 
-          <Setting Name="Name2" Value="" />   
-          <Setting Name="VKey2" Value="" />   
-          <Setting Name="Area2" Value="" />   
+          <Setting Name="Name2" Value="" />   
+          <Setting Name="VKey2" Value="" />   
+          <Setting Name="Area2" Value="" />   
 
-          <Setting Name="VibrateSupport" Value="" />   
-          <Setting Name="VibrateDuration" Value="" />   
-          <Setting Name="VibrateIntensity" Value="" />   
+          <Setting Name="VibrateSupport" Value="" />   
+          <Setting Name="VibrateDuration" Value="" />   
+          <Setting Name="VibrateIntensity" Value="" />   
 
-        </Settings>  
+        </Settings>  
 
-        <Settings Path="Shell/NavigationBar">  
-          <Setting Name="Color" Value="" />  
-        </Settings>  
+        <Settings Path="Shell/NavigationBar">  
+          <Setting Name="Color" Value="" />  
+        </Settings>  
 
-      </Static>
+      </Static>
     </ImageCustomizations>
     ```
 
@@ -109,7 +109,7 @@ To build an FWVGA image with software-rendered buttons:
     </tbody>
     </table>
 
-     
+     
 
 7.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/building-a-phone-image-using-imggencmd).
 

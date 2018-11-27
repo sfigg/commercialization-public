@@ -23,9 +23,9 @@ Represents a collection of custom events.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[TraceMergeProperties](tracemergeproperties.md)\>
-    * \<[TraceMergeProperty](tracemergeproperty.md)\>
-      * \<**CustomEvents**\>
+  * \<[TraceMergeProperties](tracemergeproperties.md)\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<**CustomEvents**\>
 
 
 ## Syntax

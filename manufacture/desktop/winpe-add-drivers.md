@@ -65,7 +65,7 @@ You can also update device drivers while you're running Windows PE. For more in
     **Note**  
     Although you can add multiple drivers to an image by using one command, it is often easier to troubleshoot problems by adding each driver package individually.
 
-     
+     
 
 2.  Verify that the driver packages are part of the image:
 
@@ -121,9 +121,9 @@ You can also update device drivers while you're running Windows PE. For more in
 
 [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ For an installation of Windows 8 that has an Internet connection, the easiest w
 
 [Microsoft .NET Framework 3.5 Deployment Considerations](microsoft-net-framework-35-deployment-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

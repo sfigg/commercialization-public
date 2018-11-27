@@ -72,9 +72,9 @@ If you want to enable or disable a whole series, right-click the **Legend** cont
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

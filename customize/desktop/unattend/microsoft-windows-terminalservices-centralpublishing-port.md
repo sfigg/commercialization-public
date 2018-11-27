@@ -38,7 +38,7 @@ For more information about configuring RPC ports, see the MSDN topic: [How to co
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -69,9 +69,9 @@ The following XML output specifies that RemoteApp and Desktop Connection Managem
 
 [Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing.md)
 
- 
+ 
 
- 
+ 
 
 
 

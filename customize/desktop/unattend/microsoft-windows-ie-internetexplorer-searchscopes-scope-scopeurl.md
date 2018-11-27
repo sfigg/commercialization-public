@@ -71,7 +71,7 @@ To find the URL for a search provider:
 <td><p>&amp;quot;</p></td>
 </tr>
 <tr class="even">
-<td><p>'</p></td>
+<td><p>&#39;</p></td>
 <td><p>&amp;apos;</p></td>
 </tr>
 <tr class="odd">
@@ -81,7 +81,7 @@ To find the URL for a search provider:
 </tbody>
 </table>
 
- 
+ 
 
 ## Values
 
@@ -99,7 +99,7 @@ To find the URL for a search provider:
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -144,9 +144,9 @@ The following XML output shows how to set search providers.
 
 [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md)
 
- 
+ 
 
- 
+ 
 
 
 

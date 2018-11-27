@@ -25,11 +25,11 @@ An .hlkx file is a compressed file format created by HLK Studio. An .hlkx file, 
 
 HLK Studio supports viewing .hlkx packages. For example, if you want to troubleshoot a test offline, you can open an existing .hlkx package using the **Connect** option. In this mode, you can view all details of the project, including pass/fail results and log files.
 
->[!IMPORTANT]
->  
-You cannot open an .hlkx package created from a previous release of the HLK. The version of HLK Studio and the package you want to view must be the same.
+> [!IMPORTANT]
+> 
+> You cannot open an .hlkx package created from a previous release of the HLK. The version of HLK Studio and the package you want to view must be the same.
 
- 
+ 
 
 1.  From HLK Studio, choose **Connect**.
 
@@ -42,9 +42,9 @@ You cannot open an .hlkx package created from a previous release of the HLK. The
 
 [Merge packages](merge-packages.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -82,7 +82,7 @@ You can find the edition of Windows your image is currently set to by mounting t
     **Note**  
     You cannot set a Windows image to a lower edition. The lowest edition will not appear when you run the **/Get-TargetEditions** option. You should not use this procedure on an image that has already been changed to a higher edition.
 
-     
+     
 
 3.  Type the following command specifying the edition-ID to change the Windows image to a higher edition.
 
@@ -105,9 +105,9 @@ You can find the edition of Windows your image is currently set to by mounting t
 
 [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

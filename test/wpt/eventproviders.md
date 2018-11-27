@@ -24,10 +24,10 @@ Represents a collection of event provider identifiers and event providers.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[EventCollectorId](eventcollectorid.md)\>
-          * \<**EventProviders**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<**EventProviders**\>
 
 
 ## Syntax

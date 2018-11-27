@@ -18,9 +18,9 @@ ms.topic: article
 
 The Windows Hardware Lab Kit (Windows HLK) API logs all events to a "Windows Hardware Certification Kit" event log (in Applications and Services Logs) in Event Viewer.
 
- 
+ 
 
- 
+ 
 
 
 

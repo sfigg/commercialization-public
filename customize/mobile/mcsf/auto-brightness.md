@@ -63,7 +63,7 @@ The ABS millilux range mapping and ABS intensity percent mapping are used togeth
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 

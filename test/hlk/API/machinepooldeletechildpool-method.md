@@ -40,7 +40,7 @@ ms.topic: article
 
 `Public MustOverride Function CreateChildPool ( _`
 
-          `name As String _`
+          `name As String _`
 
 `) As MachinePool`
 
@@ -48,7 +48,7 @@ ms.topic: article
 
 `public abstract MachinePool CreateChildPool (`
 
-          `string name`
+          `string name`
 
 `)`
 
@@ -57,7 +57,7 @@ ms.topic: article
 
 *name*
 
-     The name of the pool to add to this machine pool.
+     The name of the pool to add to this machine pool.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -74,9 +74,9 @@ Any machines that are in this pool are moved to the default pool. This will not 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

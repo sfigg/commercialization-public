@@ -23,7 +23,7 @@ In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpan
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
- 
+ 
 
 `LogoURL` specifies a link to an Original Equipment Manufacturer's (OEM's) webpage, a Help topic, or an executable file. This link appears on the **Help and Support** home page. When an end user clicks the logo of the OEM or organization, the corresponding page opens.
 
@@ -48,7 +48,7 @@ The `LogoURL` setting is used together with the [Logo](microsoft-windows-helpand
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following example shows how to set a customized **Help and Support** home pa
 
 [Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md)
 
- 
+ 
 
- 
+ 
 
 
 

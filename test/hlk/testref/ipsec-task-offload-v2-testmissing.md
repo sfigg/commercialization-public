@@ -138,9 +138,9 @@ The following screen captures illustrate a sample test log for one test variatio
 
 ![log1](images/hck-win8-lan-ipseclog1.png)![log2](images/hck-win8-lan-ipseclog2.png)![log3](images/hck-win8-lan-ipseclog3.png)![log4](images/hck-win8-lan-ipseclog4.png)![log5](images/hck-win8-lan-ipseclog5.png)![log6](images/hck-win8-lan-ipseclog6.png)![log7](images/hck-win8-lan-ipseclog7.png)![log8](images/hck-win8-lan-ipseclog8.png)![log9](images/hck-win8-lan-ipseclog9.png)![log10](images/hck-win8-lan-ipseclog10.png)![log11](images/hck-win8-lan-ipseclog11.png)![log12](images/hck-win8-lan-ipseclog12.png)
 
- 
+ 
 
- 
+ 
 
 
 

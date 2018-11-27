@@ -39,7 +39,7 @@ The following files make up the deployment scripts:
 
 Use this script applies a Windows image to a new device.
 
-**Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
+**Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=   " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
 
 ```
 @echo Apply-Image.bat
@@ -47,11 +47,11 @@ Use this script applies a Windows image to a new device.
 @echo.
 @echo     This script erases the primary hard drive and applies a new image.
 @echo.
-@echo	  Make sure that this script is run from the folder that contains the
-@echo	  supporting scripts
+@echo     Make sure that this script is run from the folder that contains the
+@echo     supporting scripts
 @echo.
 @echo UPDATE (November 2017)
-@echo * Added support for FFU deployments.	
+@echo * Added support for FFU deployments.  
 @echo.
 @echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
@@ -89,11 +89,11 @@ Use this script applies a Windows image to a new device.
 @echo *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+for /f "tokens=2* delims=    " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
 @echo            Note: delims is a TAB followed by a space.
 @if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
 @if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo             for /f "tokens=2* delims=    "
 @if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
 @if x%Firmware%==x goto END
 @if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
@@ -202,10 +202,11 @@ rem == 3. Windows partition ========================
 rem ==    a. Create the Windows partition ==========
 create partition primary 
 rem ==    b. Create space for the recovery tools ===
-shrink minimum=500
-rem       ** NOTE: Update this size to match the
-rem                size of the recovery tools 
-rem                (winre.wim)                    **
+rem       ** Update this size to match the size of
+rem          the recovery tools (winre.wim)
+rem          plus some free space.
+rem          For drives over 128GB, we recommend
+rem          at least 990MB.
 rem ==    c. Prepare the Windows partition ========= 
 format quick fs=ntfs label="Windows"
 assign letter="W"
@@ -331,7 +332,7 @@ exit
 
 Use this script to prepare the Windows recovery partition. This script is called by ApplyImage.bat, but can also be run on its own.
 
-**Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=	 " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
+**Note:** If you copy and paste the contents below to create a .bat file, you may get an error when detecting firmware. For firmware detection to succeed, ensure that the lines that begin `for /f "tokens=2* delims=   " %%A` has a tab followed by a space in between `delims=` and `" %%A`.
 
 ```
 @echo == ApplyRecovery.bat ==
@@ -342,7 +343,7 @@ for /f "tokens=2* delims=  " %%A in ('reg query HKLM\System\CurrentControlSet\Co
 @echo            Note: delims is a TAB followed by a space.
 @if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
 @if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo             for /f "tokens=2* delims=    "
 @if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
 @if x%Firmware%==x goto END
 @if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
@@ -366,9 +367,9 @@ W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\
 :CUSTOMDATAIMAGEWIM
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
 @echo.     
-@echo	  *Note: this step only works if you created a ScanState package called
-@echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
-@echo	   following the steps in the lab, choose N.
+@echo     *Note: this step only works if you created a ScanState package called
+@echo      USMT.ppkg as directed in the OEM Deployment lab. If you aren't
+@echo      following the steps in the lab, choose N.
 @echo.      
 @echo     Options: N: No
 @echo              Y: Yes
@@ -423,9 +424,9 @@ xcopy /h %recoveryfolder%Winre.wim R:\Recovery\WindowsRE\
 :CUSTOMDATAIMAGEFFU
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
 @echo.     
-@echo	  *Note: this step only works if you created a ScanState package called
-@echo	   USMT.ppkg as directed in the OEM Deployment lab. If you aren't
-@echo	   following the steps in the lab, choose N.
+@echo     *Note: this step only works if you created a ScanState package called
+@echo      USMT.ppkg as directed in the OEM Deployment lab. If you aren't
+@echo      following the steps in the lab, choose N.
 @echo.
 @echo     Options: N: No
 @echo              Y: Yes
@@ -537,9 +538,9 @@ list volume
 ## <span id="Start_Layout"></span><span id="layoutmodification.xml"></span><span id="LAYOUTMODIFICATION.XML"></span>Start layout (LayoutModification.xml)
 
 
-The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Windows desktop applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
+The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Windows desktop applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
 
-To take advantage of all these new features and have the most robust and complete Start customization experience for Windows 10, consider creating a LayoutModification.xml file. This file specifies how the OEM tiles should be laid out in Start. For more information about how to customize the new Start layout, see the topic [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/mt170651) in the Windows 10 Partner Documentation.
+To take advantage of all these new features and have the most robust and complete Start customization experience for Windows 10, consider creating a LayoutModification.xml file. This file specifies how the OEM tiles should be laid out in Start. For more information about how to customize the new Start layout, see the topic [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/mt170651) in the Windows 10 Partner Documentation.
 
 Sample **LayoutModification.xml**:
 
@@ -553,8 +554,8 @@ Sample **LayoutModification.xml**:
     <RequiredStartGroups
       Region="DE|ES|FR|GB|IT|US">
       <AppendGroup Name="Fabrikam Group 1">
-    	  <start:DesktopApplicationTile
-	        DesktopApplicationID="Microsoft.Windows.Explorer" 
+          <start:DesktopApplicationTile
+            DesktopApplicationID="Microsoft.Windows.Explorer" 
           Size="2x2" 
           Row="0" 
           Column="4"/>
@@ -583,14 +584,13 @@ Sample **LayoutModification.xml**:
           Size="2x2"
           Row="0"
           Column="2"/>
-		<!-- <start:Tile AppUserModelID="App2!App" Size="2x2" Row="2" Column="0"/>  Update the APUMID to reflect the app you installed with no specific region -->
+        <!-- <start:Tile AppUserModelID="App2!App" Size="2x2" Row="2" Column="0"/>  Update the APUMID to reflect the app you installed with no specific region -->
       </AppendGroup>    
     </RequiredStartGroups>
   </RequiredStartGroupsCollection> 
   <AppendOfficeSuite/>
   <AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>      
 </LayoutModificationTemplate>
-
 ```
 
 
@@ -750,7 +750,6 @@ DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /packagepath:C:\Temp\La
 DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /packagepath:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx /licensepath:.\Appx\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml /dependencypackagepath:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /dependencypackagepath:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx 
 
 DISM /image:C:\Mount\Windows /add-ProvisionedAppxPackage /packagepath:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe.x64.appx /licensepath:.\Appx\Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe.x64.xml /dependencypackagepath:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x64.14.00.appx /dependencypackagepath:C:\Temp\Lab\Apps\Inbox\amd64\Microsoft.VCLibs.x86.14.00.appx 
-
 ```
 
 ### Find drive letters with a script

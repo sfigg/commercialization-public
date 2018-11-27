@@ -21,20 +21,20 @@ The Windows PE USB must be at least 512MB and at most 32GB. It should not be a W
 
 ## <span id="Prepare_the_WinPE_files"></span>Prepare the WinPE files
 
-1.  On your technician PC, start the **Deployment and Imaging Tools Environment**  as an administrator:
-    -  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
+1. On your technician PC, start the **Deployment and Imaging Tools Environment**  as an administrator:
+   -  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
 
-2.  Copy the base WinPE files into a new folder:
+2. Copy the base WinPE files into a new folder:
 
-    ```
-    copype amd64 C:\winpe_amd64
-    ```
+   ```
+   copype amd64 C:\winpe_amd64
+   ```
 
-    Repeat if you’re also deploying x86 devices:
+   Repeat if you’re also deploying x86 devices:
 
-    ```
-    copype x86 C:\winpe_x86
-    ```
+   ```
+   copype x86 C:\winpe_x86
+   ```
 
    **Troubleshooting**: If this doesn't work, make sure you're in the Deployment and Imaging Tools Environment, and not the standard command prompt. 
 	
@@ -91,4 +91,4 @@ Leave this PC booted to Windows PE for now.
 
 > [!div class="nextstepaction"]
 > [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
- 
+ 

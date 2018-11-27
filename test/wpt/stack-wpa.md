@@ -23,19 +23,19 @@ Describes the kernel events on which stacks are to be enabled.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[SystemProvider](systemprovider.md)\>
-      * \<[Stacks](stacks.md)\>
-        * \<**Stack**\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[SystemCollectorId](systemcollectorid.md)\>
-          * \<[SystemProviderId](systemproviderid.md)\>
-            * \<[Stacks](stacks.md)\>
-              * \<**Stack**\>
-          * \<[SystemProvider](systemprovider.md)\>
-            * \<[Stacks](stacks.md)\>
-              * \<**Stack**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemProvider](systemprovider.md)\>
+      * \<[Stacks](stacks.md)\>
+        * \<**Stack**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<[SystemProviderId](systemproviderid.md)\>
+            * \<[Stacks](stacks.md)\>
+              * \<**Stack**\>
+          * \<[SystemProvider](systemprovider.md)\>
+            * \<[Stacks](stacks.md)\>
+              * \<**Stack**\>
 
 
 ## Syntax

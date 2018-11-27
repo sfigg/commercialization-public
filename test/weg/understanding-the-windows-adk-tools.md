@@ -23,15 +23,15 @@ This topic focuses on the Windows Assessment Toolkit. The assessment results are
 Important business objectives can be achieved by using the Windows Assessment Toolkit:
 
 <dl>
-<dt>**Measure & compare**</dt>
+<dt><strong>Measure &amp; compare</strong></dt>
 <dd>
 <p>You can use the data to compare components (apps, drivers, or both) against other similar components to facilitate your decision-making, recommendations, and competitive benchmarking.</p>
 </dd>
-<dt>**Improve quality**</dt>
+<dt><strong>Improve quality</strong></dt>
 <dd>
 <p>You can work independently or involve partners to build a component (app, driver, or both) as per pre-defined quality criteria.</p>
 </dd>
-<dt>**Track quality**</dt>
+<dt><strong>Track quality</strong></dt>
 <dd>
 <p>You can create a process for efficiently tracking the quality of component versions and detect regressions after each iteration.</p>
 </dd>
@@ -92,12 +92,12 @@ For more information, see [Windows Assessments and Deployment Kit](https://msdn.
 <li><p>Windows Assessment Console</p></li>
 <li><p>Assessments</p></li>
 </ul>
-<p>For more information, see [Windows Assessment Toolkit Technical Reference](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825508.aspx).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh825508.aspx" data-raw-source="[Windows Assessment Toolkit Technical Reference](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825508.aspx)">Windows Assessment Toolkit Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Windows Assessment Services</td>
 <td><p>App for remotely managing settings, PCs, images, and assessments in a lab environment where Windows Assessment Services is installed. This app can run on any PC that has access to the server that’s running Windows Assessment Services.</p>
-<p>For more information, see [Windows Assessment Services Technical Reference](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825573.aspx)</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh825573.aspx" data-raw-source="[Windows Assessment Services Technical Reference](https://msdn.microsoft.com/en-us/library/windows/hardware/hh825573.aspx)">Windows Assessment Services Technical Reference</a></p></td>
 </tr>
 <tr class="odd">
 <td>Windows Performance Toolkit (WPT)</td>
@@ -107,12 +107,12 @@ For more information, see [Windows Assessments and Deployment Kit](https://msdn.
 <li><p>Windows Performance Analyzer</p></li>
 <li><p>Xperf</p></li>
 </ul>
-<p>For more information, see [Windows Performance Toolkit Technical Reference](https://msdn.microsoft.com/en-us/library/hh162945.aspx).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/en-us/library/hh162945.aspx" data-raw-source="[Windows Performance Toolkit Technical Reference](https://msdn.microsoft.com/en-us/library/hh162945.aspx)">Windows Performance Toolkit Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Assessment Execution Engine (AXE)</td>
 <td><p>The Assessment Execution Engine (AXE) lets you manage and execute Windows system assessments. AXE provides infrastructure needed to manage assessments using a UX tool or script, run assessments, make measurements, process raw data into results, run diagnostics, and publish the results.</p>
-<p>For more information, see [Assessment Execution Engine](https://msdn.microsoft.com/library/windows/desktop/hh437709.aspx).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/desktop/hh437709.aspx" data-raw-source="[Assessment Execution Engine](https://msdn.microsoft.com/library/windows/desktop/hh437709.aspx)">Assessment Execution Engine</a>.</p></td>
 </tr>
 </tbody>
 </table>

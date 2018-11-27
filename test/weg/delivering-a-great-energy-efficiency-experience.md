@@ -60,12 +60,12 @@ The following tables show what our user research indicates is the minimum qualit
 You can use the Windows Assessment Toolkit, a comparable energy efficiency test tool or a comparable test to measure reasonable consumer usage scenarios and environments to improve performance of your PC beyond minimum requirements. Windows assessments related to active workload battery life include:
 
 <dl>
-<dt>**Idle Energy Efficiency Job**</dt>
+<dt><strong>Idle Energy Efficiency Job</strong></dt>
 <dd>
 <p>Identifies issues with software, drivers, and devices during system idle
 that reduce your system’s energy efficiency.</p>
 </dd>
-<dt>**Battery Run Down Job**</dt>
+<dt><strong>Battery Run Down Job</strong></dt>
 <dd>
 <p>Measures battery life during a typical system usage scenario and reports energy efficiency issues during idle periods of the system.</p>
 <p>This job includes both the Idle Energy Efficiency workload and a Local Video Playback Energy Efficiency workload.</p>
@@ -111,23 +111,23 @@ The ADK 8.0 scenarios can then be translated into the following:
 A processor-intensive driver, an incorrect firmware setting, or a poorly configured power setting can cause a significant increase in power consumption. When designing and testing your system, experiment with multiple configurations of these aspects to achieve the best balance of performance and energy efficiency. Use your test results to drive improvements back into the design of your PC and your Windows image to deliver a great active workload battery life.
 
 <dl>
-<dt>**Analyze hardware components**</dt>
+<dt><strong>Analyze hardware components</strong></dt>
 <dd>
 <p>Ask hardware manufacturers for their power-consumption test results for each hardware component.</p>
 </dd>
-<dt>**Analyze drivers**</dt>
+<dt><strong>Analyze drivers</strong></dt>
 <dd>
 <p>Validate each new driver for battery impact. As each new driver is added to the system, observe its effect on power consumption. One poorly performing driver can greatly affect system performance.</p>
 </dd>
-<dt>**Analyze apps, services, and other software**</dt>
+<dt><strong>Analyze apps, services, and other software</strong></dt>
 <dd>
 <p>Validate each new app and system service for battery impact. As each new app is added to the system, observe the effect to power consumption. One poorly performing app can greatly affect system performance.</p>
 </dd>
-<dt>**Configure power plans**</dt>
+<dt><strong>Configure power plans</strong></dt>
 <dd>
 <p>Optimize Windows power-plan settings to balance performance needs and battery life. This is not applicable to connected standby–enabled systems.</p>
 </dd>
-<dt>**Test the power of the PC**</dt>
+<dt><strong>Test the power of the PC</strong></dt>
 <dd>
 <p>Compare the overall power of the PC to thepower consumed using a Windows installation with only drivers installed. Some PCs have shown a 40% decrease in battery performance when preinstalled apps and power policies are added to the image.</p>
 </dd>

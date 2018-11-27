@@ -63,7 +63,7 @@ When this customization is enabled, the download is retried 3 times at 20-, 40-,
 </tbody>
 </table>
 
- 
+ 
 
 If the MMS download fails after the third retry attempt, the message persists in the appropriate thread with a link that the user can tap to retry the download manually. If the user’s manual download attempt fails, the automatic retries are triggered again.
 
@@ -148,7 +148,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a device with a UICC or CDMA connection.

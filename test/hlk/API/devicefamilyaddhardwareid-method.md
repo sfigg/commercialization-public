@@ -40,7 +40,7 @@ This method adds a new hardware ID to this **DeviceFamily** object.
 
 `Public MustOverride Sub AddHardwareId ( _`
 
-          `hardwareIdToAdd As String _`
+          `hardwareIdToAdd As String _`
 
 `)`
 
@@ -48,7 +48,7 @@ This method adds a new hardware ID to this **DeviceFamily** object.
 
 `public abstract void AddHardwareId (`
 
-          `string hardwareIdToAdd`
+          `string hardwareIdToAdd`
 
 `)`
 
@@ -57,16 +57,16 @@ This method adds a new hardware ID to this **DeviceFamily** object.
 
 *hardwareIdToAdd*
 
-     The hardware ID to add to the device family hardware ID list.
+     The hardware ID to add to the device family hardware ID list.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

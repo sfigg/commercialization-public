@@ -39,7 +39,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     **Note**  Unlike the primary app, you do not need the license file for the required component when preloading it on the mobile device.
 
-     
+     
 
 3.  Name your provXML files so that they meet the requirements outlined in this step.
 

@@ -94,7 +94,6 @@ C:\Data1\TESTOEM1-MS.TKT-SIGN-TEST-NOT-HERE ...
    rgumentException
     + FullyQualifiedErrorId : System.ArgumentException,Microsoft.Phone.Partner
    Services.Cmdlets.NewFirmwareSubmissionCommand
-            
 ```
 
 ## <span id="Help_documentation_from_Windows_PowerShell"></span><span id="help_documentation_from_windows_powershell"></span><span id="HELP_DOCUMENTATION_FROM_WINDOWS_POWERSHELL"></span>Help documentation from Windows PowerShell
@@ -240,9 +239,9 @@ Solution: Contact your IT administration department to open or reconfigure the n
 
 [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223)
 
- 
 
- 
+
+
 
 
 

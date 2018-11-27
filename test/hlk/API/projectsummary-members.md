@@ -34,13 +34,13 @@ The following table lists the members exposed by the **ProjectSummary** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ProjectSummary Constructor (String, DateTime, String)](projectsummary-constructor--string-datetime-string-.md)</p></td>
+<td><p><a href="projectsummary-constructor--string-datetime-string-.md" data-raw-source="[ProjectSummary Constructor (String, DateTime, String)](projectsummary-constructor--string-datetime-string-.md)">ProjectSummary Constructor (String, DateTime, String)</a></p></td>
 <td><p>This constructor initializes a new instance of the <strong>ProjectSummary</strong> class.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
@@ -72,7 +72,7 @@ The following table lists the members exposed by the **ProjectSummary** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -116,7 +116,7 @@ The following table lists the members exposed by the **ProjectSummary** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -144,11 +144,11 @@ The following table lists the members exposed by the **ProjectSummary** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

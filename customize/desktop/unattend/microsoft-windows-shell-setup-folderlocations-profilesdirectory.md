@@ -59,7 +59,7 @@ When you use a folder name other than "Users", like `C:\Documents and Settings`,
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -95,9 +95,9 @@ The following XML example shows how to set the paths to folder locations.
 
 [FolderLocations](microsoft-windows-shell-setup-folderlocations.md)
 
- 
+ 
 
- 
+ 
 
 
 

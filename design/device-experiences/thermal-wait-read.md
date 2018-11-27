@@ -43,7 +43,7 @@ The **THERMAL\_WAIT\_READ** struct is used as the input buffer by the [IOCTL\_TH
 </tbody>
 </table>
 
- 
+ 
 
 ## Members
 
@@ -69,9 +69,9 @@ The upper threshold for returning the new temperature given in tenths degrees Ke
 
 [Thermal Management IOCTLs](thermal-management-ioctls.md)
 
- 
+ 
 
- 
+ 
 
 
 

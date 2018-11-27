@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Description</em></p></td>
-<td><p>Specifies a description of a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md). <em>Description</em> is a string with a maximum length of 256 characters.</p></td>
+<td><p>Specifies a description of a <a href="microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md" data-raw-source="[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)">LocalAccount</a>. <em>Description</em> is a string with a maximum length of 256 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -94,9 +94,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

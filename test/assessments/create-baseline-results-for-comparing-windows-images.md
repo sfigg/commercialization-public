@@ -42,7 +42,7 @@ For general information about how to use the Windows Assessment Console to asses
     **Important**  
     You must save the results to a network share if you plan to reinstall Windows on this reference computer. If you reimage the referenced computer, the results are overwritten and won't be available for comparison if they're stored locally.
 
-     
+     
 
 8.  Select the default result location (**%UserProfile%\\Documents\\Assessment Results**), and then click **Remove**.
 
@@ -73,7 +73,7 @@ For general information about how to use the Windows Assessment Console to asses
     **Important**  
     A packaged job can run from a network share, but for best results run the job from the local computer to reduce run-time failures, or performance issues caused by the network
 
-     
+     
 
 3.  When the job finishes, the results appear in the Windows Assessment Console.
 
@@ -98,9 +98,9 @@ Based on the comparison of results, you can make improvements to the customized 
 
 [Windows Assessment Console common scenarios](windows-assessment-console-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

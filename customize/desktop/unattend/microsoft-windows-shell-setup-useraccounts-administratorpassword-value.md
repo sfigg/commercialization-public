@@ -25,7 +25,7 @@ To configure a blank administrator password, write an empty string in Windows Sy
 **Caution**  
 Creating a blank administrator password is a security risk.
 
- 
+ 
 
 ## Values
 
@@ -38,12 +38,12 @@ Creating a blank administrator password is a security risk.
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md). <em>Password</em> is a string.</p></td>
+<td><p>Specifies the <a href="microsoft-windows-shell-setup-useraccounts-administratorpassword.md" data-raw-source="[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)">AdministratorPassword</a>. <em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -83,9 +83,9 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 
 [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)
 
- 
+ 
 
- 
+ 
 
 
 

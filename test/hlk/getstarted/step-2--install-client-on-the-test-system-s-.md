@@ -36,7 +36,7 @@ If you are testing software, be sure to install the product on the test system f
 
     ```syntax
     \\<HLKController>\HLKInstall\Client\Setup.cmd /qn ICFAGREE=Yes
-    ```         
+    ```         
 
 2.  The **Windows Hardware Lab Kit Client Setup** wizard appears. To start the wizard, choose **Next**.
 
@@ -54,9 +54,9 @@ If you are testing software, be sure to install the product on the test system f
 
 6.  Repeat steps 1-5 for each test system.
 
- 
+ 
 
- 
+ 
 
 
 

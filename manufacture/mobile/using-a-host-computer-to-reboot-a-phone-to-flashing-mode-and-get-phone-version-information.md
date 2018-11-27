@@ -101,7 +101,7 @@ After you determine the device ID for a Windows 10 Mobile device that is connec
 **Note**  
 If the device is protected with a PIN, the MtpDuDeviceService is only available if the PIN has been entered and the device is unlocked.
 
- 
+ 
 
 ### <span id="Open_the_MtpDuDeviceService"></span><span id="open_the_mtpdudeviceservice"></span><span id="OPEN_THE_MTPDUDEVICESERVICE"></span>Open the MtpDuDeviceService
 
@@ -201,7 +201,7 @@ After you have opened an [IPortableDeviceService](http://msdn.microsoft.com/libr
     </tbody>
     </table>
 
-     
+     
 
 3.  Call the [IPortableDeviceProperties::GetValues](http://msdn.microsoft.com/library/windows/desktop/dd388714.aspx) function to retrieve an [IPortableDeviceValues](http://msdn.microsoft.com/library/windows/desktop/dd319461.aspx) object that contains the requested version information. Pass the service object ID to the *pszObjectID* parameter and the initialized [IPortableDeviceKeyCollection](http://msdn.microsoft.com/library/windows/desktop/dd388548.aspx) object to the *pKeys* parameter.
 
@@ -217,9 +217,9 @@ The following code examples in the [Portable Devices Services COM API Sample](ht
 
 For more info about working with device services, see [Opening a service](http://msdn.microsoft.com/library/windows/desktop/dd375706.aspx), [Accessing service object properties](http://msdn.microsoft.com/library/windows/desktop/dd743198.aspx) and [Retrieving Object Properities](http://msdn.microsoft.com/library/windows/desktop/dd375722.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

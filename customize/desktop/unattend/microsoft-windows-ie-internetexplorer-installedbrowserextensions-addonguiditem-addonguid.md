@@ -39,7 +39,7 @@ Browser Extensions are plug-in modules used to add functionality to Internet Exp
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to set two Internet Explorer Browser Extensio
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

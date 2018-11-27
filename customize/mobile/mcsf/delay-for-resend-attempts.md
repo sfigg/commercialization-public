@@ -20,9 +20,9 @@ If an SMS message fails to send correctly, partners can specify the number of ad
 
 These settings are managed by the modem. For more information, contact the SoC vendor.
 
- 
+ 
 
- 
+ 
 
 
 

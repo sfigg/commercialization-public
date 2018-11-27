@@ -42,7 +42,7 @@ This method determines if a target can be created from **TargetData** object pro
 
 `Public Function CanCreateTarget ( _`
 
-          `data As TargetData _`
+          `data As TargetData _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method determines if a target can be created from **TargetData** object pro
 
 `public bool CanCreateTarget (`
 
-          `TargetData data`
+          `TargetData data`
 
 `)`
 
@@ -59,7 +59,7 @@ This method determines if a target can be created from **TargetData** object pro
 
 *data*
 
-     The **TargetData** to use to create the target
+     The **TargetData** to use to create the target
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -78,9 +78,9 @@ If *data* is **null** an exception is thrown.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

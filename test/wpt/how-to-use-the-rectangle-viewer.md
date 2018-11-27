@@ -27,7 +27,7 @@ The rectangle viewer also provides the following benefits:
 
 **Note**  By default, this feature is in the DWM Frame Details and the HTML Frame Details graphs as a pair of presets. The points in time (frames in this case) display on the timeline.
 
- 
+ 
 
 **To use the rectangle viewer**
 
@@ -53,9 +53,9 @@ If you filter out specific rows, WPA will not graph them. So, if you want to onl
 
 [Zoom In on a Time Interval](zoom-in-on-a-time-interval.md)
 
- 
+ 
 
- 
+ 
 
 
 

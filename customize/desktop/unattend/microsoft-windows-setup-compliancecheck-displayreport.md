@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -75,9 +75,9 @@ The following XML output specifies that the installation is to run in guaranteed
 
 [ComplianceCheck](microsoft-windows-setup-compliancecheck.md)
 
- 
+ 
 
- 
+ 
 
 
 

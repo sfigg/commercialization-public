@@ -92,8 +92,8 @@ Partners are required to set the following information:
     </ImageCustomizations>
     ```
 
-1. Specify an `Owner` and configure the targets and conditions for the variant.
-1. Specify a value for each of the following settings.
+2. Specify an `Owner` and configure the targets and conditions for the variant.
+3. Specify a value for each of the following settings.
 
     Settings that are **ImageTimeOnly**:
 
@@ -161,10 +161,9 @@ Partners are required to set the following information:
     <tr class="odd">
     <td><p><strong>PhoneHardwareVariant</strong></p></td>
     <td><p><strong>Required.</strong> Use to describe the specific hardware configuration used for a particular phone model. The hardware configuration that makes up the <strong>PhoneHardwareVariant</strong> includes specific hardware parts such as the applications processor, radio (network bands), sensors, memory configuration, and so on. For example, if Contoso (a fictional OEM) produces a popular phone model called Fabrikam 2000 that ships on multiple mobile networks, the phone may come in two hardware variants: &quot;VAR-CDMA&quot;, for use on CDMA networks, and &quot;VAR-GSM&quot; for use on GSM networks.</p>
-    <p>Use a string value to specify the variant of the OEM's hardware. This setting is mandatory for code signing and registration.</p>
+    <p>Use a string value to specify the variant of the OEM&#39;s hardware. This setting is mandatory for code signing and registration.</p>
     <div class="alert">
-    <strong>Note</strong>  
-    <p>OEMs creating a runtime configuration image cannot span across multiple <strong>PhoneHardwareVariant</strong>s.</p>
+    <strong>Note</strong><br/> <p>OEMs creating a runtime configuration image cannot span across multiple <strong>PhoneHardwareVariant</strong>s.</p>
     </div>
     <div>
     </div></td>
@@ -184,7 +183,7 @@ Partners are required to set the following information:
     <tbody valign="top">
     <tr class="even">
     <td><p><strong>PhoneMobileOperatorName</strong></p></td>
-    <td><p><strong>Required.</strong> This setting is used for targeting phone updates. It must contain a code specified by Microsoft that corresponds to the mobile operator. These codes are provided in [Registry values for mobile operator IDs](registry-values-for-mobile-operator-ids.md). For open market phones, in which the mobile operator is not known, use the codes in [Registry values for carrier-unlocked phones](registry-values-for-carrier-unlocked-phones.md) instead.</p>
+    <td><p><strong>Required.</strong> This setting is used for targeting phone updates. It must contain a code specified by Microsoft that corresponds to the mobile operator. These codes are provided in <a href="registry-values-for-mobile-operator-ids.md" data-raw-source="[Registry values for mobile operator IDs](registry-values-for-mobile-operator-ids.md)">Registry values for mobile operator IDs</a>. For open market phones, in which the mobile operator is not known, use the codes in <a href="registry-values-for-carrier-unlocked-phones.md" data-raw-source="[Registry values for carrier-unlocked phones](registry-values-for-carrier-unlocked-phones.md)">Registry values for carrier-unlocked phones</a> instead.</p>
     <p>This string is not visible to the user.</p>
     <p>This setting must not be changed over time even if the user switches SIMs or mobile operators, as updates are always targeted based on the first mobile operator associated with the phone.</p>
     <p>The <strong>PhoneManufacturer</strong>, <strong>PhoneManufacturerModelName</strong>, and <strong>PhoneMobileOperatorName</strong> should create a unique Phone-Operator-Pairing (POP). </p></td>
@@ -199,8 +198,7 @@ Partners are required to set the following information:
     <li><p>Leading and trailing spaces are not permitted and will cause update failures</p></li>
     </ul>
     <div class="alert">
-    <strong>Note</strong>  
-    <p>This string is returned by the <strong>DeviceStatus.DeviceName</strong> property. For more information, see the SDK Documentation.</p>
+    <strong>Note</strong><br/> <p>This string is returned by the <strong>DeviceStatus.DeviceName</strong> property. For more information, see the SDK Documentation.</p>
     </div>
     <div>
     </div>
@@ -218,19 +216,19 @@ Partners are required to set the following information:
     <tr class="even">
     <td><p><strong>PhoneSupportLink</strong></p></td>
     <td><p><strong>Optional.</strong> Specifies the mobile operator’s support website. The default is an empty string (&quot;&quot;), which means that a support link will not be displayed to the user.</p>
-    <p>This should be a functional link that starts with http://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag &quot;@-ms-viewport { width: device-width; }&quot;</p>
+    <p>This should be a functional link that starts with http://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag &amp;quot;@-ms-viewport { width: device-width; }&quot;</p>
     <p>This setting varies by mobile operator.</p></td>
     </tr>
     <tr class="odd">
     <td><p><strong>PhoneOEMSupportLink</strong></p></td>
     <td><p><strong>Optional.</strong> Specifies the OEM’s support website. The default is an empty string (&quot;&quot;), which means that a support link will not be displayed to the user.</p>
-    <p>This should be a functional link that starts with http://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag &quot;@-ms-viewport { width: device-width; }&quot;</p>
+    <p>This should be a functional link that starts with http://. The link should be a URL that redirects to the mobile version of the web page. The content in the webpage should reflow to the screen width. This can be achieved by adding the CSS Tag &amp;quot;@-ms-viewport { width: device-width; }&quot;</p>
     <p>This setting varies by OEM.</p></td>
     </tr>
     <tr class="even">
     <td><p><strong>PhoneModelName</strong></p></td>
     <td><p><strong>Required.</strong> This string is the brand name of the phone and is used for Customer Support and Watson reports. This string is the name marketed to consumers or end users and appears as part of the phone friendly name in multiple places in the phone’s UI including: on the Welcome screen, the <strong>About</strong> screen in <strong>Settings</strong>, and on the desktop computer.</p>
-    <p>OEMs should ensure that this value matches the value of the <strong>ProductString</strong> value under the <strong>HKEY_LOCAL_MACHINE</strong> registry subtree's <strong>CurrentControlSet\Control\USBFN\Default</strong> subkey.</p>
+    <p>OEMs should ensure that this value matches the value of the <strong>ProductString</strong> value under the <strong>HKEY_LOCAL_MACHINE</strong> registry subtree&#39;s <strong>CurrentControlSet\Control\USBFN\Default</strong> subkey.</p>
     <p>Microsoft recommends that partners consider the following when specifying the value for the <code>PhoneModelName</code> setting:</p>
     <ul>
     <li><p>Leave this name blank during development until the phone is ready to enter trials, as applications can collect and read this value.</p></li>
@@ -240,8 +238,8 @@ Partners are required to set the following information:
     </tr>
     <tr class="odd">
     <td><p><strong>RoamingSupportPhoneNumber</strong></p></td>
-    <td><p><strong>Optional.</strong> Specifies the OEM or mobile operator's roaming support contact phone number. This string is displayed in the <strong>About</strong> screen in <strong>Settings</strong>.</p>
-    <p>For C+G dual SIM phones, OEMs may need to configure this setting. For more information, see [Configure C+G dual SIM settings](configure-c-g-dual-sim-settings.md).</p></td>
+    <td><p><strong>Optional.</strong> Specifies the OEM or mobile operator&#39;s roaming support contact phone number. This string is displayed in the <strong>About</strong> screen in <strong>Settings</strong>.</p>
+    <p>For C+G dual SIM phones, OEMs may need to configure this setting. For more information, see <a href="configure-c-g-dual-sim-settings.md" data-raw-source="[Configure C+G dual SIM settings](configure-c-g-dual-sim-settings.md)">Configure C+G dual SIM settings</a>.</p></td>
     </tr>
     </tbody>
     </table>

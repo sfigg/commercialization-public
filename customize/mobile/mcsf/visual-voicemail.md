@@ -257,7 +257,7 @@ To configure visual voicemail for a mobile operator, the OEM must add setting se
 
 1. For mobile operators that have their own particular brand that they want to use instead of visual voicemail, partners can rebrand all instances of **Visual voicemail** in the Windows device UI to use the operator's brand.
 
-  To do this, set the value for `Branding` to the specific name that the mobile operator is using for visual voicemail. For example, you can set the value to *Contoso Voice Inbox*.
+   To do this, set the value for `Branding` to the specific name that the mobile operator is using for visual voicemail. For example, you can set the value to *Contoso Voice Inbox*.
 
    > [!Note]
    > This setting does not support a resource-only DLL for localized strings so you need to set the new string directly as the value.

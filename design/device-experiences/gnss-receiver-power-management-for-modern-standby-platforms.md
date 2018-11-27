@@ -107,7 +107,7 @@ The GNSS receiver is expected to have 4 power management modes as described belo
 </tbody>
 </table>
 
- 
+ 
 
 The software driver for the GNSS receiver also needs to handle radio management as described below.
 
@@ -210,7 +210,7 @@ For example, assume the shortest requested report interval is 30 minutes and the
 -   When the device has acquired a fix, provide location information to the application.
     **Note**  The location sensor driver must carefully configure D3cold.
 
-     
+     
 
 If the device requires continual power in order to achieve the resume latency for the WarmUpTime, D3cold must not be enabled. D3cold can be enabled dynamically at runtime by changing the value of ExcludeD3Cold in the WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS structure.
 
@@ -250,7 +250,7 @@ The system designer may choose to integrate a USB-attached MBB module that conta
 
 **Note**  Systems with GNSS devices on the MBB module require careful integration consideration. Contact your Microsoft representative to review the hardware, software and firmware design for these solutions.
 
- 
+ 
 
 In this configuration, the GNSS device is an integrated part of the MBB module. The GNSS radio may share processing, power supply and RF antenna components with the MBB radio. The GNSS radio is exposed directly to software as one interface on a USB composite device. The location sensor driver communicates with the GNSS radio directly over the USB bus using USB driver interfaces implemented inside the location sensor driver.
 
@@ -260,7 +260,7 @@ Similarly, the GNSS module and the location sensor driver must support transitio
 
 **Note**  The GNSS device and the driver must support selective suspend otherwise the USB host controller on the SoC cannot enter a low-power mode and will prevent power savings during modern standby.
 
- 
+ 
 
 In this configuration, the GNSS device is enumerated via USB and the USB composite driver, but is described in the ACPI namespace. In this configuration there is no support for GPIO communications between the GNSS device on the MBB module and the SoC. The GNSS device must remain enumerated to Windows via ACPI during the entire time that the platform stays in the S0 system power state, even if the radio is disabled by the user. The GNSS device must not ever disappear from the USB bus during any portion of system on time.
 
@@ -271,7 +271,7 @@ The system designer may choose to integrate a USB-attached MBB module that conta
 
 **Note**  This configuration is not recommended. System integrators choosing this method of GNSS device integration should contact their Microsoft representative to validate correct implementation. Exposing the GNSS device as part of a USB composite device representing the MBB module is preferred.
 
- 
+ 
 
 In this configuration, the GNSS device is an integrated part of the MBB module. The GNSS radio may share processing, power supply and RF antenna components with the MBB radio. The GNSS radio is exposed indirectly to software via the device services interface which can be accessed using the WindowsIMbnDeviceServices COM interface. The location sensor driver communicates with the GNSS radio through the IMbnDeviceServices interface.
 
@@ -370,9 +370,9 @@ System integrators, GNSS radio vendors, and SoC vendors should use the following
     -   Observe the location sensor driver transition to D0 immediately after exiting modern standby and launching an application that uses the Location API.
 -   Validate the power consumption of the GNSS device in the sleep (D3) state and ensure that it is less than 1 mW on average.
 
- 
+ 
 
- 
+ 
 
 
 

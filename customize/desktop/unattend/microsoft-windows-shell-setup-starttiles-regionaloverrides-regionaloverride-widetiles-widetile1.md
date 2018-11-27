@@ -48,19 +48,19 @@ For a list of the Windows editions and architectures that this component support
 The following XML output shows how to use the `<WideTile1>` component.
 
 ```XML
-     <WideTiles>
-          <WideTile1>
-               <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
-               <FirstRunTask>backgroundtask.js</FirstRunTask>
-          </WideTile1>
-          <WideTile2>
-               <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
-               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
-          </WideTile2>
-          <WideTile3>
-               <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
-          </WideTile3>
-     </WideTiles>
+     <WideTiles>
+          <WideTile1>
+               <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
+               <FirstRunTask>backgroundtask.js</FirstRunTask>
+          </WideTile1>
+          <WideTile2>
+               <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
+               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
+          </WideTile2>
+          <WideTile3>
+               <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
+          </WideTile3>
+     </WideTiles>
 ```
 
 ## Related topics

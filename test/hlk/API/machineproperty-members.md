@@ -48,7 +48,7 @@ The following tables list the members exposed by the **MachineProperty** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -84,7 +84,7 @@ The following tables list the members exposed by the **MachineProperty** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -112,11 +112,11 @@ The following tables list the members exposed by the **MachineProperty** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

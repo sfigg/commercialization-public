@@ -32,13 +32,13 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Export](irunexport-export-method.md)</p></td>
+<td><p><a href="irunexport-export-method.md" data-raw-source="[Export](irunexport-export-method.md)">Export</a></p></td>
 <td><p>Exports a standalone version of the current object to the specified location.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -47,9 +47,9 @@ ms.topic: article
 
 [IRunExport Members](irunexport-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -155,7 +155,7 @@ typedef struct {
 </tr>
 <tr class="odd">
 <td><p><span id="ImplementationID"></span><span id="implementationid"></span><span id="IMPLEMENTATIONID"></span>ImplementationID</p></td>
-<td><p>Human readable vendor, model, &amp; version of this implementation. For example "SiliconVendorX Chip1234 v1" and "BIOSvendorY BIOSz v2".</p></td>
+<td><p>Human readable vendor, model, &amp; version of this implementation. For example &quot;SiliconVendorX Chip1234 v1&quot; and &quot;BIOSvendorY BIOSz v2&quot;.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="SecurityFeaturesSize"></span><span id="securityfeaturessize"></span><span id="SECURITYFEATURESSIZE"></span>SecurityFeaturesSize</p></td>
@@ -175,12 +175,12 @@ typedef struct {
 </tr>
 <tr class="even">
 <td><p><span id="ErrorString"></span><span id="errorstring"></span><span id="ERRORSTRING"></span>ErrorString</p></td>
-<td><p>A Null-terminated string, one failure per line (CR/LF terminated), with a unique identifier that the OEM/ODM can use to locate the documentation which will describe the steps to remediate the failure - a URL to the documentation is recommended. For example, "0x4827 JTAG not disabled http://somewhere.net/docs/remediate4827.html \r\n0x2744 Platform Secure Boot key not provisioned http://somewhere.net/docs/remediate2744.html"</p></td>
+<td><p>A Null-terminated string, one failure per line (CR/LF terminated), with a unique identifier that the OEM/ODM can use to locate the documentation which will describe the steps to remediate the failure - a URL to the documentation is recommended. For example, &quot;0x4827 JTAG not disabled <a href="http://somewhere.net/docs/remediate4827.html" data-raw-source="http://somewhere.net/docs/remediate4827.html">http://somewhere.net/docs/remediate4827.html</a> \r\n0x2744 Platform Secure Boot key not provisioned <a href="http://somewhere.net/docs/remediate2744.html" data-raw-source="http://somewhere.net/docs/remediate2744.html">http://somewhere.net/docs/remediate2744.html</a>&quot;</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Memory_Management_Considerations"></span><span id="memory_management_considerations"></span><span id="MEMORY_MANAGEMENT_CONSIDERATIONS"></span>Memory Management Considerations
 
@@ -270,9 +270,9 @@ The following is an illustrative list of design considerations that an HSTI impl
     4.  What buses/devices (fuses, security engines, TZ, video, caches, IMEM, kernel memory) are capable of DMA access to different NV and volatile storage regions and how are they protected?
     5.  Do you support MOR bit implementation
 
- 
+ 
 
- 
+ 
 
 
 

@@ -331,7 +331,7 @@ The ACPI firmware must implement the ACPI \_BIX method for each battery that pro
 </tbody>
 </table>
 
- 
+ 
 
 ### ACPI implementation of battery real-time status information
 
@@ -371,7 +371,7 @@ The ACPI firmware must implement the ACPI \_BST method for each battery which pr
 </tbody>
 </table>
 
- 
+ 
 
 When any data in \_BST changes, the platform must generate an interrupt and a Notify(0x80) on the battery device in the ACPI namespace. This must be performed immediately after the physical state change is detected by the platform. This includes any change in the Battery State field for the charging (i.e. Bit0) or discharging (i.e. Bit1) bits.
 
@@ -424,7 +424,7 @@ Windows supports the following \_DSM methods for control-method battery devices.
 </tbody>
 </table>
 
- 
+ 
 
 ### User serviceable battery
 
@@ -466,7 +466,7 @@ Windows supports the following \_DSM methods for control-method battery devices.
 </tbody>
 </table>
 
- 
+ 
 
 ### Charging watchdog required
 
@@ -511,7 +511,7 @@ Windows supports the following \_DSM methods for control-method battery devices.
 </tbody>
 </table>
 
- 
+ 
 
 ### 3rd Party Battery Miniport Drivers
 
@@ -600,9 +600,9 @@ System designers should ensure they have completed the following tasks in their 
 -   Implement the \_DSM method if a periodic watchdog reset is required during charging and Windows will guarantee periodic execution of the \_BST method within that polling window.
 -   Implement the \_DSM method if battery charging rate control is required for the thermal model on the platform.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,6 +29,7 @@ This test exercises the various receive side scaling OIDs. The miniport driver s
 -   Miniport should handle 64 bit misaligned requests correctly.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.RSS.RSS</li><li>Device.Network.LAN.RSS.SetHashFunctionTypeAndValue</li><li>Device.Network.LAN.RSS.SupportIndirectionTablesSizes</li><li>Device.Network.LAN.RSS.SupportToeplitzHashFunction</li><li>Device.Network.LAN.RSS.SupportUpdatesToRSSInfo</li></ul> |  
@@ -41,7 +42,7 @@ This test exercises the various receive side scaling OIDs. The miniport driver s
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -58,7 +59,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting LAN Testing](troubleshooting-lan-testing.md).
 
@@ -86,7 +87,7 @@ For troubleshooting information, see [Troubleshooting LAN Testing](troubleshooti
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -95,11 +96,11 @@ For troubleshooting information, see [Troubleshooting LAN Testing](troubleshooti
 | **queryTestDeviceID** |                                          |
 | **TestScript**        | comma separated list of test jobs to run |
 
- 
 
- 
 
- 
+
+
+
 
 
 

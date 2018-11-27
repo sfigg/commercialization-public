@@ -26,10 +26,10 @@ This action produces a report file that summarizes the metrics for context switc
 ## Options
 
 
-<a href="" id="-avail-n-"></a>**-avail***\[n\]*  
+<a href="" id="-avail-n-"></a>**-avail**<em>\[n\]</em>  
 Shows CPU availability for *n* second intervals. The default is 1.
 
-<a href="" id="-util-n-"></a>**-util***\[n\]*  
+<a href="" id="-util-n-"></a>**-util**<em>\[n\]</em>  
 Shows CPU utilization for *n* second intervals. The default is 1.
 
 <a href="" id="-process"></a>**-process**  
@@ -56,9 +56,9 @@ If no report type is selected, the default is to show the CPU availability repor
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

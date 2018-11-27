@@ -49,7 +49,7 @@ namespace Samples
             {
                 Console.WriteLine("Project {0}", name);
             }
-            
+
             // list all projects, and get the basic status of each
             Console.WriteLine("\nGetting all project status");
             foreach (ProjectInfo info in manager.GetProjectInfoList())
@@ -89,7 +89,6 @@ namespace Samples
         }
     }
 }
-
 ```
 
 ## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>PowerShell
@@ -159,7 +158,7 @@ $Manager.GetProjectNames() | foreach {
                 write-host "Target : " $_.Name  -ForegroundColor DarkCyan
                 write-host "`tType : " $_.TargetType
                 write-host "`tKey   : " $_.Key 
-                
+
                 # there is more infomation if this is a device type
                 $DeviceData =  $_ -AS [Microsoft.Windows.Kits.Hardware.ObjectModel.IDeviceTargetData]
                 if ($DeviceData -ne $null)
@@ -190,7 +189,7 @@ $Manager.GetProjectNames() | foreach {
                     write-host "`tVersion : " $FilterData.Version                    
                     write-host "`tAllInbox : " $FilterData.AllInboxDrivers                    
                 }
-                
+
                 write-host "`tFeatures : " 
                 $_.GetFeatures() | foreach { 
                     write-host "`t`t" $_.FullName 
@@ -215,9 +214,9 @@ $Manager.GetProjectNames() | foreach {
 }
 ```
 
- 
 
- 
+
+
 
 
 

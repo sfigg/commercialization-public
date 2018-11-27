@@ -88,9 +88,9 @@ Notice the very low thread activity in the **audiodg.exe** process exists at sta
 
 ![Screenshot of Media eXperience Analyzer (MXA) showing trace taken on a system where audio is being offloaded.](images/optimizingwindowsdeviceslab3.png)
 
- 
+ 
 
- 
+ 
 
 
 

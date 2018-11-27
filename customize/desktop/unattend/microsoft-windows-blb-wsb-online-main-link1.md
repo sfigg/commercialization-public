@@ -45,7 +45,7 @@ The link in the Resource DLL file must be a text string. It must begin with `htt
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -87,9 +87,9 @@ The following XML output shows how to describe a recommended online backup servi
 
 [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
- 
+ 
 
- 
+ 
 
 
 

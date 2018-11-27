@@ -78,7 +78,7 @@ When this feature is enabled, only the numeric sequence is underlined and shown 
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator partner to fully test this customization on their network.

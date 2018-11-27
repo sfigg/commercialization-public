@@ -24,7 +24,7 @@ If, in addition to a MIPI-CSI link, the camera device has I2C or GPIO pins to co
 
 **Note**  The system integrator should work with the camera subsystem driver developer to determine how the camera drivers expect GPIO and I2C resources to be ordered. For example, a driver that receives two I2C resources distinguishes between them based on the order in which they appear in the resource list. Similarly, a driver that receives three GPIO resources expects these resources to be listed in a particular order. The system integrator must enumerate the I2C and GPIO resources in the same order in the \_CRS object.
 
- 
+ 
 
 The camera sensor and the flash device must be placed on a power rail that can be turned on and off by ACPI control methods. We recommend using a GPIO pin from the SoC to control the power-switch hardware. The GPIO should be enumerated in a GPIO operation region so that its state can be changed by ACPI control methods. The system integrator must describe the power resource for a camera device (sensor, flash, or any other camera component) in the ACPI namespace. This resource must include an \_ON method and an \_OFF method to change the state of the GPIO signal routed to the power-switch hardware. Under the camera device in the ACPI namespace, the system integrator must provide a \_PR0 object and a \_PR3 object that refer to the power resource.
 
@@ -41,9 +41,9 @@ If the platform has multiple camera devices, each camera device should have its 
 
 Camera device hardware must not support wake. Windows does not expect camera devices to be able to wake the SoC from its lowest power state during modern standby. Many cellular phones enable the SoC to wake from sleep when the user presses the camera button. The camera button is treated by Windows as a user input device whose operation is separate from and independent of the sytem integration or power management of the camera device, its sensor, and optional flash.
 
- 
+ 
 
- 
+ 
 
 
 

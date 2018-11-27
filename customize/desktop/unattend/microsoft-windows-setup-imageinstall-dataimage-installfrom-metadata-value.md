@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -90,9 +90,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 [Key](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key.md)
 
- 
+ 
 
- 
+ 
 
 
 

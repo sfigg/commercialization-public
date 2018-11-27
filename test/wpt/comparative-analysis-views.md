@@ -31,10 +31,10 @@ The table that WPA creates contains the value differences between the baseline a
 
 **Image 1:** Positive numbers in the table indicate that these processes were more active in the comparison trace. Negative numbers would indicate that the processes were more active in the baseline trace.
 
-**Note**  
+**Note**  
 Although you can have any number of traces open in a single WPA session, WPA can compare the results of only two traces at a time.
 
- 
+
 
 ## Creating a Comparative Analysis View
 
@@ -43,14 +43,16 @@ Although you can have any number of traces open in a single WPA session, WPA can
 
 2.  Open the second trace by using the method in step 1.
 
-    **Note**  
+    **Note**  
     To help differentiate open traces, WPA assigns each trace a unique identifier and color. In the **Graph Explorer** pane on the left, you can switch between the open traces by using the tabs at the bottom.
 
-     
 
-    ![tabs showing multiple open traces](images/acm-wpa-diff-1.png)
 
-    **Image 2:** Each trace is represented by a unique identifier and color.
+~~~
+![tabs showing multiple open traces](images/acm-wpa-diff-1.png)
+
+**Image 2:** Each trace is represented by a unique identifier and color.
+~~~
 
 3.  Create a new comparative analysis view by choosing **Window**, **New Comparative Analysis View**.
 
@@ -92,18 +94,18 @@ You can also apply a profile that contains a comparative analysis view to two op
 
 2.  If you have a custom profile, choose **Browse...**, choose your profile, and then choose **Open**.
 
-    **Note**  
+    **Note**  
     Alternatively, WPA comes with a comparative analysis profile that you can use to jumpstart your analysis. To use this profile, choose **Browse Catalog…**, and choose the **PresetsForComparativeAnalysis.wpaProfile** file.
 
-     
+
 
 3.  Select the appropriate traces for **Profile Trace Slot \#1** and **Profile Trace Slot \#2**.
 
 4.  Choose **Apply** to apply the profile.
 
- 
 
- 
+
+
 
 
 

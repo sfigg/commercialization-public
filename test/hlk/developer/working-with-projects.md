@@ -57,9 +57,9 @@ Each instance of the **Project** class has a collection of associated properties
 
 You can use the **ProjectInfo** class to include supplemental project information. (For example, you can create a "manufacturer" property). You can also set, update, or delete a **ProjectInfo** property. You can't create duplicate property names.
 
- 
+ 
 
- 
+ 
 
 
 

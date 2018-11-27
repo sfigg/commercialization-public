@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # Shell Launcher
 
-You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use almost any application or executable as your custom shell, such as a command window or a custom dedicated application.
+You can use Shell Launcher to replace the default Windows 10 shell with a custom shell. You can use almost any application or executable as your custom shell, such as a command window or a custom dedicated application.
 
 You can also configure Shell Launcher to launch different shell applications for different users or user groups.
 
@@ -34,18 +34,18 @@ Shell Launcher also handles the behavior of the system when your custom shell ex
 
 ## Requirements
 
-Windows 10 Enterprise or Windows 10 Education.
+Windows 10 Enterprise or Windows 10 Education.
 
 ## Terminology
 
 * **Turn on, enable:** To make the setting available to the device and optionally apply the settings to the device.
 * **Configure:** To customize the setting or sub-settings.
-* **Embedded Shell Launcher:** This feature is called Embedded Shell Launcher in Windows 10, version 1511.
-* **Custom Shell Launcher:** This feature is called Shell Launcher in Windows 10, version 1607 and later.
+* **Embedded Shell Launcher:** This feature is called Embedded Shell Launcher in Windows 10, version 1511.
+* **Custom Shell Launcher:** This feature is called Shell Launcher in Windows 10, version 1607 and later.
 
 ## Turn on Shell Launcher
 
-Shell Launcher is an optional component and is not turned on by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure Shell Launcher in a customized Windows 10 image (.wim) if Microsoft Windows has not been installed. If Windows has already been installed and you are applying a provisioning package to configure Shell Launcher, you must first turn on Shell Launcher in order for a provisioning package to successfully apply.
+Shell Launcher is an optional component and is not turned on by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure Shell Launcher in a customized Windows 10 image (.wim) if Microsoft Windows has not been installed. If Windows has already been installed and you are applying a provisioning package to configure Shell Launcher, you must first turn on Shell Launcher in order for a provisioning package to successfully apply.
 
 ### Enable Shell Launcher using Control Panel
 
@@ -102,7 +102,7 @@ Use the following steps to create a provisioning package that contains the Shell
 1. Build a provisioning package in Windows Configuration Designer by following the instructions in [Create a provisioning package for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package).
 1. In the **Available customizations** page, select **Runtime settings** > **SMISettings** > **ShellLauncher**.
 1. Set the value of **Enable** to **ENABLE**. Additional options to configure Shell Launcher will appear, and you can set the values as desired.
-1. Once you have finished configuring the settings and creating the provisioning package, you can apply the package to the image deployment time or runtime. See the [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. Note that the process for applying the package to a Windows 10 Enterprise image is the same.
+1. Once you have finished configuring the settings and creating the provisioning package, you can apply the package to the image deployment time or runtime. See the [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. Note that the process for applying the package to a Windows 10 Enterprise image is the same.
 
 ## Configure Shell Launcher
 
@@ -343,7 +343,6 @@ $ShellLauncherClass.SetEnabled($FALSE)
 $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
-
 ```
 
 > [!Note]

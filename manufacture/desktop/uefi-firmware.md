@@ -73,7 +73,7 @@ The following Windows editions include support for UEFI:
 
 -   For additional UEFI requirements, see [UEFI Installation Media Format and default boot behavior](uefi-installation-media-format-and-default-boot-behavior.md) and [UEFI Requirements: Boot time, Runtime, Hibernation State (S4)](uefi-requirements-boot-time-runtime-hibernation-state--s4.md).
 
- 
+ 
 
 ## <span id="Considerations"></span><span id="considerations"></span><span id="CONSIDERATIONS"></span>Before You Begin
 
@@ -106,32 +106,32 @@ Before you install Windows on a UEFI-based PC, note the following:
 <tbody>
 <tr class="odd">
 <td align="left"><p>UEFI Requirements</p></td>
-<td align="left"><p>[UEFI Installation Media Format and default boot behavior](uefi-installation-media-format-and-default-boot-behavior.md) | [UEFI Requirements: Boot time, Runtime, Hibernation State (S4)](uefi-requirements-boot-time-runtime-hibernation-state--s4.md)</p></td>
+<td align="left"><p><a href="uefi-installation-media-format-and-default-boot-behavior.md" data-raw-source="[UEFI Installation Media Format and default boot behavior](uefi-installation-media-format-and-default-boot-behavior.md)">UEFI Installation Media Format and default boot behavior</a> | <a href="uefi-requirements-boot-time-runtime-hibernation-state--s4.md" data-raw-source="[UEFI Requirements: Boot time, Runtime, Hibernation State (S4)](uefi-requirements-boot-time-runtime-hibernation-state--s4.md)">UEFI Requirements: Boot time, Runtime, Hibernation State (S4)</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UEFI Features</p></td>
-<td align="left"><p>[Microsoft Hardware Developer Central: Firmware and Boot Environment](http://go.microsoft.com/fwlink/?LinkId=244007) | [Secure Boot Overview](secure-boot-overview.md) | [Factory Encrypted Drives](factory-encrypted-drives.md)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/?LinkId=244007" data-raw-source="[Microsoft Hardware Developer Central: Firmware and Boot Environment](http://go.microsoft.com/fwlink/?LinkId=244007)">Microsoft Hardware Developer Central: Firmware and Boot Environment</a> | <a href="secure-boot-overview.md" data-raw-source="[Secure Boot Overview](secure-boot-overview.md)">Secure Boot Overview</a> | <a href="factory-encrypted-drives.md" data-raw-source="[Factory Encrypted Drives](factory-encrypted-drives.md)">Factory Encrypted Drives</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Booting a PC into UEFI or legacy BIOS mode</p></td>
-<td align="left"><p>[Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md) | [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)</p></td>
+<td align="left"><p><a href="boot-to-uefi-mode-or-legacy-bios-mode.md" data-raw-source="[Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md)">Boot to UEFI Mode or Legacy BIOS mode</a> | <a href="winpe-boot-in-uefi-or-legacy-bios-mode.md" data-raw-source="[WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)">WinPE: Boot in UEFI or legacy BIOS mode</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Managing UEFI hard drives and boot configuration data</p></td>
-<td align="left"><p>[Hard Drives and Partitions](hard-drives-and-partitions.md) | [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md) | [BCD System Store Settings for UEFI](bcd-system-store-settings-for-uefi.md) | [UEFI Validation Option ROM Guidance](uefi-validation-option-rom-validation-guidance.md) | [Windows UEFI Firmware Update Platform](http://go.microsoft.com/fwlink/p/?linkid=523808) | [Validating Windows UEFI Firmware Update Platform Functionality](validating-windows-uefi-firmware-update-platform-functionality.md)</p></td>
+<td align="left"><p><a href="hard-drives-and-partitions.md" data-raw-source="[Hard Drives and Partitions](hard-drives-and-partitions.md)">Hard Drives and Partitions</a> | <a href="configure-uefigpt-based-hard-drive-partitions.md" data-raw-source="[Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md)">Configure UEFI/GPT-Based Hard Drive Partitions</a> | <a href="bcd-system-store-settings-for-uefi.md" data-raw-source="[BCD System Store Settings for UEFI](bcd-system-store-settings-for-uefi.md)">BCD System Store Settings for UEFI</a> | <a href="uefi-validation-option-rom-validation-guidance.md" data-raw-source="[UEFI Validation Option ROM Guidance](uefi-validation-option-rom-validation-guidance.md)">UEFI Validation Option ROM Guidance</a> | <a href="http://go.microsoft.com/fwlink/p/?linkid=523808" data-raw-source="[Windows UEFI Firmware Update Platform](http://go.microsoft.com/fwlink/p/?linkid=523808)">Windows UEFI Firmware Update Platform</a> | <a href="validating-windows-uefi-firmware-update-platform-functionality.md" data-raw-source="[Validating Windows UEFI Firmware Update Platform Functionality](validating-windows-uefi-firmware-update-platform-functionality.md)">Validating Windows UEFI Firmware Update Platform Functionality</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Forums</p></td>
-<td align="left"><p>[Unified Extensible Firmware Interface Forum (UEFI Forum)](http://go.microsoft.com/fwlink/?LinkId=244009)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/?LinkId=244009" data-raw-source="[Unified Extensible Firmware Interface Forum (UEFI Forum)](http://go.microsoft.com/fwlink/?LinkId=244009)">Unified Extensible Firmware Interface Forum (UEFI Forum)</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

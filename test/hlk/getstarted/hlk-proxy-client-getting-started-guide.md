@@ -18,9 +18,9 @@ ms.topic: article
 
 The HLK Proxy Client enables full support for testing on Mobile devices and is the same client used internally by Microsoft for all at-scale phone testing.
 
- 
+ 
 
- 
+ 
 
 
 

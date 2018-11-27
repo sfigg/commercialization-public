@@ -18,11 +18,11 @@ ms.topic: article
 
 This topic describes some common troubleshooting tips for WLAN testing. To begin:
 
-1.  Review [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+1. Review [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
-2.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
+2. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/?LinkID=236110) for current test issues.
 
-3.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+3. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
 ## <span id="Changes_that_you_made_to_devices_on_HLK_clients_machines_are_not_reflected_in_HLK_Studio._For_example__the_machine_is_expected_to_be_in_the_Ready_state_but_it_is_not."></span><span id="changes_that_you_made_to_devices_on_hlk_clients_machines_are_not_reflected_in_hlk_studio._for_example__the_machine_is_expected_to_be_in_the_ready_state_but_it_is_not."></span><span id="CHANGES_THAT_YOU_MADE_TO_DEVICES_ON_HLK_CLIENTS_MACHINES_ARE_NOT_REFLECTED_IN_HLK_STUDIO._FOR_EXAMPLE__THE_MACHINE_IS_EXPECTED_TO_BE_IN_THE_READY_STATE_BUT_IT_IS_NOT."></span>Changes that you made to devices on HLK clients machines are not reflected in HLK Studio. For example, the machine is expected to be in the Ready state but it is not.
 
@@ -75,15 +75,15 @@ Do not install the x64 Test SoftAP driver before installing the HLK client. When
 
 Installing NDISTest separate from HLK Studio enables you to execute individual tests. A DUT, SUT, and Test SoftAP need to be configured to enable stand-alone execution.
 
->[!NOTE]
->  
-All test machines must use the same processor architecture.
+> [!NOTE]
+> 
+> All test machines must use the same processor architecture.
+> 
+> [!NOTE]
+> 
+> To troubleshoot the NDISTest, try attaching a debugger to the test machine.
 
->[!NOTE]
->  
-To troubleshoot the NDISTest, try attaching a debugger to the test machine.
-
- 
+ 
 
 ## <span id="Configuring_a_Support_Device_Under_Test__SUT_"></span><span id="configuring_a_support_device_under_test__sut_"></span><span id="CONFIGURING_A_SUPPORT_DEVICE_UNDER_TEST__SUT_"></span>Configuring a Support Device Under Test (SUT)
 
@@ -215,11 +215,11 @@ Below is a chart with common problems and solutions.
 <td><p><strong>Solution</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>The VAN UI doesn't show any networks</p></td>
+<td><p>The VAN UI doesn&#39;t show any networks</p></td>
 <td><p>1</p></td>
 </tr>
 <tr class="odd">
-<td><p>When I connect my WLAN device to a DHCP enabled network I don't get an IP.</p></td>
+<td><p>When I connect my WLAN device to a DHCP enabled network I don&#39;t get an IP.</p></td>
 <td><p>2</p></td>
 </tr>
 <tr class="even">
@@ -231,7 +231,7 @@ Below is a chart with common problems and solutions.
 <td><p>1,2,3</p></td>
 </tr>
 <tr class="even">
-<td><p>NDISTest isn't auto finding my test adapter when running through the HLK</p></td>
+<td><p>NDISTest isn&#39;t auto finding my test adapter when running through the HLK</p></td>
 <td><p>3</p></td>
 </tr>
 <tr class="odd">
@@ -243,7 +243,7 @@ Below is a chart with common problems and solutions.
 <td><p>When moving to a new controller you should also rebuild your clients. In the event that is not feasible you will need to remove <strong>ndprot630.sys</strong> from all three machines and athr.sys and softap.sys from the AP machine. All these files are in the c:\windows\system32\drivers directory. <strong>Ndprot630.sys</strong> will be automatically re-loaded when NDISTest is run, but not overwritten. <strong>ather.sys</strong> and <strong>Sofap.sys</strong> will need to be copied over from the new controller.</p></td>
 </tr>
 <tr class="odd">
-<td><p>My physical AP's don't seem to be working like before</p></td>
+<td><p>My physical AP&#39;s don&#39;t seem to be working like before</p></td>
 <td><p>You may have to reset/reboot your physical ap. If you factory reset it make sure you set the channel and radio per the setup instructions.</p></td>
 </tr>
 <tr class="even">
@@ -253,18 +253,18 @@ Below is a chart with common problems and solutions.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Device.Network Testing](device-network-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

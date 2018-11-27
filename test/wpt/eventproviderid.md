@@ -23,11 +23,11 @@ Represents an event provider identifier for the profile.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[EventCollectorId](eventcollectorid.md)\>
-          * \<[EventProviders](eventproviders.md)\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[EventCollectorId](eventcollectorid.md)\>
+          * \<[EventProviders](eventproviders.md)\>
             * \<**EventProviderId**\>
 
 

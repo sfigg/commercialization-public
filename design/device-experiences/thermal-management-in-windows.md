@@ -54,33 +54,33 @@ The following topics provide more information about the datatypes and IOCTLs use
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Design Guide](design-guide.md)</p></td>
+<td><p><a href="design-guide.md" data-raw-source="[Design Guide](design-guide.md)">Design Guide</a></p></td>
 <td><p>This PC thermal management design guide provides information about how to determine the PC temperature values that are &quot;too hot&quot; and &quot;too cold.&quot;</p></td>
 </tr>
 <tr class="even">
-<td><p>[User Experience](user-experience.md)</p></td>
+<td><p><a href="user-experience.md" data-raw-source="[User Experience](user-experience.md)">User Experience</a></p></td>
 <td><p>From a thermal point of view, the user experience should be such that the user can operate the PC for as long as possible without interruption. And the user should only be notified of thermal problems, when the PC can no longer operate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Examples, Requirements and Diagnostics](examples--requirements-and-diagnostics.md)</p></td>
+<td><p><a href="examples--requirements-and-diagnostics.md" data-raw-source="[Examples, Requirements and Diagnostics](examples--requirements-and-diagnostics.md)">Examples, Requirements and Diagnostics</a></p></td>
 <td><p>This topic presents examples of thermal management issues, and also discusses requirements and diagnostic methods.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Thermal Management Datatypes](thermal-management-datatypes.md)</p></td>
+<td><p><a href="thermal-management-datatypes.md" data-raw-source="[Thermal Management Datatypes](thermal-management-datatypes.md)">Thermal Management Datatypes</a></p></td>
 <td><p>This topic discusses the datatypes that are used for Thermal Management in Windows.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Thermal Management IOCTLs](thermal-management-ioctls.md)</p></td>
+<td><p><a href="thermal-management-ioctls.md" data-raw-source="[Thermal Management IOCTLs](thermal-management-ioctls.md)">Thermal Management IOCTLs</a></p></td>
 <td><p>This topic discusses the input/output controls (IOCTLs) that are used for Thermal Management in Windows.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

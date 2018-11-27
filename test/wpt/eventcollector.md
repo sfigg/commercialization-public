@@ -24,7 +24,7 @@ Represents an event collector for the profile.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<**EventCollector**\>
+    * \<**EventCollector**\>
 
 
 ## Syntax

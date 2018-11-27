@@ -39,9 +39,9 @@ Logo3.exe –config TouchResolution.json
 **Passing criteria**
 
 100% of the iterations must pass in order to complete with passing status.
- 
+ 
 
- 
+ 
 
 
 

@@ -73,7 +73,7 @@ Enabling this customization changes all "SIM" strings to "SIM/UIM".
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device without a SIM.

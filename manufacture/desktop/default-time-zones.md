@@ -18,7 +18,7 @@ Default time zones by region in Windows 10. When the first user logs into Windo
 
 **Important**   Windows updates the time zones in the registry when time zones are available and updates are downloaded. Because time zones can change, use the [tzutil](http://go.microsoft.com/fwlink/?LinkId=620389) command-line tool in Windows to verify the time zone.
 
- 
+ 
 
 |                                              |         |                                 |             |                                                   |
 |----------------------------------------------|---------|---------------------------------|-------------|---------------------------------------------------|
@@ -274,11 +274,11 @@ Default time zones by region in Windows 10. When the first user logs into Windo
 | Zambia                                       | ZM      | South Africa Standard Time      | (UTC+02:00) | Harare, Pretoria                                  |
 | Zimbabwe                                     | ZW      | South Africa Standard Time      | (UTC+02:00) | Harare, Pretoria                                  |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

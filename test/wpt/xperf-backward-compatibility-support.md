@@ -26,9 +26,9 @@ Windows Performance Recorder (WPR) continues to support command-line recordings
 
 [WPR Command-Line Options](wpr-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

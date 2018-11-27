@@ -23,67 +23,67 @@ It is sometimes convenient to reproduce test failures by running the tests from 
 
 **To run a Device Fundamentals test from the command line:**
 
-1.  Create a **c:\\temp** folder on the system under test (SUT).
+1. Create a **c:\\temp** folder on the system under test (SUT).
 
-2.  Copy all files from **\\\\**&lt;*hckcontroller***&gt;\\taefbinaries\\**&lt;*arch*&gt; folder to **c:\\temp** on the SUT.
+2. Copy all files from **\\\\**&lt;<em>hckcontroller</em>**&gt;\\taefbinaries\\**&lt;*arch*&gt; folder to **c:\\temp** on the SUT.
 
-    Where &lt;*hckcontroller* is the name of the Windows Hardware Lab Kit (Windows HLK) controller, and &lt;*arch*&gt; is the SUT platform.
+   Where &lt;*hckcontroller* is the name of the Windows Hardware Lab Kit (Windows HLK) controller, and &lt;*arch*&gt; is the SUT platform.
 
-3.  To install and start the [TAEF](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/) service, type the following commands from a command prompt:
+3. To install and start the [TAEF](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/) service, type the following commands from a command prompt:
 
-    1.  Go to the 'temp' folder created above:
+   1.  Go to the 'temp' folder created above:
 
-        On X86 or X64: cd c:\\temp
+       On X86 or X64: cd c:\\temp
 
-        On ARM or ARM64: cd c:\\temp\MinTe
+       On ARM or ARM64: cd c:\\temp\MinTe
 
-    2.  wex.services.exe /install:Te.Service
+   2.  wex.services.exe /install:Te.Service
 
-    3.  sc start Te.Service
+   3.  sc start Te.Service
 
-4.  Copy all files from **\\\\**&lt;*hckcontroller***&gt;\\tests\\**&lt;*arch*&gt;\\DevFund\\ directory to **c:\\temp**.
+4. Copy all files from **\\\\**&lt;<em>hckcontroller</em>**&gt;\\tests\\**&lt;*arch*&gt;\\DevFund\\ directory to **c:\\temp**.
 
-5.  Change directory to **c:\\temp** and run the following command (note that Te.exe lives in **c:\\temp\\MinTe** on ARM and ARM64):
+5. Change directory to **c:\\temp** and run the following command (note that Te.exe lives in **c:\\temp\\MinTe** on ARM and ARM64):
 
-    ``` syntax
-    c:\temp\Te.exe Devfund_<testname>.dll /name:"<test case name>" /p:"DQ=DeviceID='<Device Instance Path of device under test from Device Manager>'" /RebootStateFile:state.xml
-    ```
+   ``` syntax
+   c:\temp\Te.exe Devfund_<testname>.dll /name:"<test case name>" /p:"DQ=DeviceID='<Device Instance Path of device under test from Device Manager>'" /RebootStateFile:state.xml
+   ```
 
-    Where &lt;*test case name*&gt; is the name of the test in the test binary.
+   Where &lt;*test case name*&gt; is the name of the test in the test binary.
 
-    The /**name** switch is optional. Since some test binaries contain multiple tests, the /**name** switch specifies which tests should be run.  If unspecified, all tests contained in the test binary are executed in sequence.  The list of tests in a test binary can be obtained by running the following command:
+   The /**name** switch is optional. Since some test binaries contain multiple tests, the /**name** switch specifies which tests should be run.  If unspecified, all tests contained in the test binary are executed in sequence.  The list of tests in a test binary can be obtained by running the following command:
 
-    ``` syntax
-    Te.exe Devfund_<testname>.dll /list
-    ```
+   ``` syntax
+   Te.exe Devfund_<testname>.dll /list
+   ```
 
-    For example, the Devfund_PnPDTest.dll contains most of the PnP-related tests:
+   For example, the Devfund_PnPDTest.dll contains most of the PnP-related tests:
 
-    ```
-    c:\temp>Te.exe Devfund_PnPDTest.dll /list
-    Test Authoring and Execution Framework v10.21 for x64
+   ```
+   c:\temp>Te.exe Devfund_PnPDTest.dll /list
+   Test Authoring and Execution Framework v10.21 for x64
 
-        c:\temp\Devfund_PnPDTest.dll
-            PNPDTest
-                PNPDTest::PNPDisableAndEnableDevice
-                PNPDTest::PNPRemoveAndRestartDevice
-                PNPDTest::PNPCancelRemoveDevice
-                PNPDTest::PNPCancelStopDevice
-                PNPDTest::PNPTryStopAndRestartDevice
-                PNPDTest::PNPTryStopDeviceRequestNewResourcesAndRestartDevice
-                PNPDTest::PNPTryStopDeviceAndFailRestart
-                PNPDTest::PNPSurpriseRemoveAndRestartDevice
-                PNPDTest::PNPDIFRemoveAndRescanParentDevice
-                PNPDTest::DisableEnhancedDeviceTestingSupport
-    ```
+       c:\temp\Devfund_PnPDTest.dll
+           PNPDTest
+               PNPDTest::PNPDisableAndEnableDevice
+               PNPDTest::PNPRemoveAndRestartDevice
+               PNPDTest::PNPCancelRemoveDevice
+               PNPDTest::PNPCancelStopDevice
+               PNPDTest::PNPTryStopAndRestartDevice
+               PNPDTest::PNPTryStopDeviceRequestNewResourcesAndRestartDevice
+               PNPDTest::PNPTryStopDeviceAndFailRestart
+               PNPDTest::PNPSurpriseRemoveAndRestartDevice
+               PNPDTest::PNPDIFRemoveAndRescanParentDevice
+               PNPDTest::DisableEnhancedDeviceTestingSupport
+   ```
     
-    The command to run a single test from this test binary might look like this:
+   The command to run a single test from this test binary might look like this:
 
-    ``` syntax
-    c:\temp\Te.exe Devfund_PnPDTest.dll.dll /name:PNPDTest::PNPSurpriseRemoveAndRestartDevice /p:"DQ=DeviceID='my\device\id'" /RebootStateFile:state.xml
-    ```
+   ``` syntax
+   c:\temp\Te.exe Devfund_PnPDTest.dll.dll /name:PNPDTest::PNPSurpriseRemoveAndRestartDevice /p:"DQ=DeviceID='my\device\id'" /RebootStateFile:state.xml
+   ```
 
-    The name of the test in the test binary will not be exactly the same as the title of the test.  For a mapping of test binary names to HLK test names, see [Device.DevFund tests](device-devfund-tests.md).
+   The name of the test in the test binary will not be exactly the same as the title of the test.  For a mapping of test binary names to HLK test names, see [Device.DevFund tests](device-devfund-tests.md).
 
 ****
 
@@ -148,9 +148,9 @@ Dump process info:
 
 [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md)
 
- 
+ 
 
- 
+ 
 
 
 

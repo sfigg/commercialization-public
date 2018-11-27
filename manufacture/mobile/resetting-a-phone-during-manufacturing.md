@@ -27,9 +27,9 @@ You can reset the device using the ResetPhoneEx API while preserving the followi
 
 -   Preinstalled apps.
 
- 
+ 
 
- 
+ 
 
 
 

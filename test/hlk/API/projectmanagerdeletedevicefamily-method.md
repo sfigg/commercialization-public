@@ -40,7 +40,7 @@ This method deletes a device family by name.
 
 `Public MustOverride Sub DeleteDeviceFamily ( _`
 
-          `name As String _`
+          `name As String _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method deletes a device family by name.
 
 `public abstract void DeleteDeviceFamily (`
 
-          `string name`
+          `string name`
 
 `)`
 
@@ -57,7 +57,7 @@ This method deletes a device family by name.
 
 *name*
 
-     The name of the device family to delete..
+     The name of the device family to delete..
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An error occurs if the device family cannot be located or is in use.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

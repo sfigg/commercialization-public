@@ -72,7 +72,7 @@ The following DISMAPI messages may be reported in the log files when an error oc
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Windows_Error_Messages"></span><span id="windows_error_messages"></span><span id="WINDOWS_ERROR_MESSAGES"></span>Windows Error Messages
 
@@ -84,9 +84,9 @@ Standard Windows errors may also be reported during a DISMAPI process. You can o
 
 [Using the DISM API](using-the-dism-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,15 +30,15 @@ You can filter and sort the test results by the following criteria:
 
 -   Length
 
->[!NOTE]
->  
-A grayed-out test indicates one of the following states:
+> [!NOTE]
+> 
+> A grayed-out test indicates one of the following states:
 
 -   The machine with the selected target is unavailable (debug mode or missing, etc.)
 
 -   The project is opened from a package, which means the date is read-only.
 
- 
+ 
 
 ## <span id="Test_Type_Definition"></span><span id="test_type_definition"></span><span id="TEST_TYPE_DEFINITION"></span>Test Type Definition
 
@@ -62,20 +62,20 @@ Some tests require additional parameters before they can be run. When you select
 
 ![test parameter dialog box](images/hck-winb-parameter-db.png)
 
->[!NOTE]
->  
-The parameter dialog displays only when you schedule (run) the test. If you schedule multiple tests that require parameter input, the parameter dialog displays all the parameters. For additional help on each parameter value, click the **F1** key.
+> [!NOTE]
+> 
+> The parameter dialog displays only when you schedule (run) the test. If you schedule multiple tests that require parameter input, the parameter dialog displays all the parameters. For additional help on each parameter value, click the **F1** key.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Getting Started: Select and run tests](..\getstarted\step-6-select-and-run-tests.md)
+[Getting Started: Select and run tests](../getstarted/step-6-select-and-run-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,7 +26,7 @@ This action produces a text file that summarizes metrics related to registry acc
 ## Options
 
 
-<a href="" id="-counts-n-"></a>**-counts***\[n\]*  
+<a href="" id="-counts-n-"></a>**-counts**<em>\[n\]</em>  
 Prints registry access statistics for *n* use intervals. The default is 1.
 
 <a href="" id="-tree"></a>**-tree**  
@@ -43,9 +43,9 @@ Shows delays between *T1* and *T2*, in microseconds.
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

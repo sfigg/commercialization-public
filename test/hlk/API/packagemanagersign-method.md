@@ -32,21 +32,21 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Sign Method (String, X509Certificate)](packagemanagersign-method--string-x509certificate-.md)</p></td>
+<td><p><a href="packagemanagersign-method--string-x509certificate-.md" data-raw-source="[Sign Method (String, X509Certificate)](packagemanagersign-method--string-x509certificate-.md)">Sign Method (String, X509Certificate)</a></p></td>
 <td><p>Sign an existing package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Sign Method (String, X509Certificate, String)](packagemanagersign-method--string-x509certificate-string-.md)</p></td>
+<td><p><a href="packagemanagersign-method--string-x509certificate-string-.md" data-raw-source="[Sign Method (String, X509Certificate, String)](packagemanagersign-method--string-x509certificate-string-.md)">Sign Method (String, X509Certificate, String)</a></p></td>
 <td><p>Sign an existing package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

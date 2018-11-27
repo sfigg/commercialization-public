@@ -27,9 +27,9 @@ ms.topic: article
 -   [WITT I2C Testing Prerequisites](witt-i2c-testing-prerequisites.md)
 -   [Hardware Lab Kit (HLK) for Near Field Communication (NFC)](hardware-lab-kit-for-near-field-communication.md)
 
- 
+ 
 
- 
+ 
 
 
 

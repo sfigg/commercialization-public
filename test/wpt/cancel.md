@@ -70,16 +70,16 @@ The following table describes possible values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IControlManager](icontrolmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

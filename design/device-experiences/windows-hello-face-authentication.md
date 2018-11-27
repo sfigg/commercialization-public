@@ -38,7 +38,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 | expected frequency    | High                                                                                |
 | frequency description | Occurs every time a user wants to unlock their device or moves past the lock screen |
 
- 
+ 
 
 **Re-authentication**
 
@@ -48,7 +48,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 | expected frequency    | Low                                                                                                      |
 | frequency description | Occurs when an application or web site would like to re-verify that the user is in front of their device |
 
- 
+ 
 
 ### How it works
 
@@ -94,7 +94,7 @@ In contrast, near infrared images are consistent across ambient lighting scenari
 | Low light representative of watching TV or giving a PowerPoint presentation | ![color image from integrated camera](../images/hello1.png) | ![ir image from microsoft reference sensor - low light](../images/hello2.png)     |
 | Side lighting when sitting near a window or desk lamp                       | ![side lighting with color image](../images/hello3.png)     | ![ir image from microsoft reference sensor - side lighting](../images/hello4.png) |
 
- 
+ 
 
 Using IR also helps with spoofing because it helps prevent the most accessible attacks. For instance, IR doesn't display in photos because it's a different wavelength, and as you can see below, the images the images do not display in photos or on an LCD display.
 
@@ -110,7 +110,7 @@ When Microsoft talks about the accuracy of Windows Hello face authentication, th
 | Description          | Sometimes also calculated as a False Acceptance Rate, this represents the likelihood a random user who obtains physical access to your device will be recognized as you. This number should be as low as possible. | The True Positive rate represents the likelihood a user will be correctly matched to their enrolled profile each time they are positioned in front of the sensor. This number should be high | Represents the likelihood a user is not matched to their enrolled profile. This number should be low. |
 | Windows 10 Algorithm | Less than 0.001% or 1/100,000 FAR                                                                                                                                                                                  | Greater than 95% with a single enrolled user                                                                                                                                                 | Less than 5% with a single enrolled user                                                              |
 
- 
+ 
 
 Accounting for errors in measurement is important, so Microsoft categorizes them in two ways: bias errors (systematic errors) and random errors (sampling).
 
@@ -126,9 +126,9 @@ Random errors results from using data that doesn’t match the population divers
 
 [Windows Biometric Framework API]( http://go.microsoft.com/fwlink/?LinkId=624455)
 
- 
+ 
 
- 
+ 
 
 
 

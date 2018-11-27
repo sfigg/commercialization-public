@@ -58,38 +58,38 @@ This interface provides the functions described in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[EnableBootRecording](enablebootrecording.md)</p></td>
+<td><p><a href="enablebootrecording.md" data-raw-source="[EnableBootRecording](enablebootrecording.md)">EnableBootRecording</a></p></td>
 <td><p>Enables boot recording for the specified profile collection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisableBootRecording](disablebootrecording.md)</p></td>
+<td><p><a href="disablebootrecording.md" data-raw-source="[DisableBootRecording](disablebootrecording.md)">DisableBootRecording</a></p></td>
 <td><p>Disables boot recording for the specified profile collection.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[StartShutdownRecording](startshutdownrecording.md)</p></td>
+<td><p><a href="startshutdownrecording.md" data-raw-source="[StartShutdownRecording](startshutdownrecording.md)">StartShutdownRecording</a></p></td>
 <td><p>Starts shutdown recording.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UpdateShutdownRecording](updateshutdownrecording.md)</p></td>
+<td><p><a href="updateshutdownrecording.md" data-raw-source="[UpdateShutdownRecording](updateshutdownrecording.md)">UpdateShutdownRecording</a></p></td>
 <td><p>Updates shutdown recording.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[MergeShutdownRecording](mergeshutdownrecording.md)</p></td>
+<td><p><a href="mergeshutdownrecording.md" data-raw-source="[MergeShutdownRecording](mergeshutdownrecording.md)">MergeShutdownRecording</a></p></td>
 <td><p>Merges shutdown recordings.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

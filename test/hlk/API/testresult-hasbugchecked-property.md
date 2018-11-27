@@ -21,7 +21,7 @@ Indicates whether a bugcheck occurred on the client machine during the test run.
 >[!NOTE]
 >  Bugchecks aren't necessarily caused by tests. Additional triage of the crash dump file is required to determine what caused the bugcheck. For example, while running WiFi tests, a display driver might cause a bugcheck.
 
- 
+ 
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.ObjectModel
 
@@ -39,9 +39,9 @@ Indicates whether a bugcheck occurred on the client machine during the test run.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

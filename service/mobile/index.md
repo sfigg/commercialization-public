@@ -38,7 +38,7 @@ Prior to submitting updates, complete the following tasks:
 
 These types of updates can only be submitted individually.
 
- 
+ 
 
 ## Refurbishing a device
 Use the topics in this section to learn more about refurbishing a mobile device running Windows 10 Mobile.
@@ -57,7 +57,7 @@ Use the topics in this section to learn more about refurbishing a mobile device 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Resetting a mobile device](resetting-the-phone.md)</p></td>
+<td align="left"><p><a href="resetting-the-phone.md" data-raw-source="[Resetting a mobile device](resetting-the-phone.md)">Resetting a mobile device</a></p></td>
 <td align="left"><p>Resetting the device addresses a number of key scenarios:</p>
 <ul>
 <li>A user may want to reset a device to transfer it to another owner.</li>
@@ -70,12 +70,12 @@ Use the topics in this section to learn more about refurbishing a mobile device 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
- 
+ 
 
 
 

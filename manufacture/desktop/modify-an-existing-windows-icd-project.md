@@ -16,9 +16,9 @@ ms.topic: article
 
 You can typically go back into Windows Imaging and Configuration Designer (ICD) projects, edit and redeploy them over and over again.
 
-**Note**  Copy any new source files, like the provisioning packages, back to the technician PC before starting. This reduces the risk of interrupting the build process from a temporary network issue or from disconnecting the USB device.
+**Note**  Copy any new source files, like the provisioning packages, back to the technician PC before starting. This reduces the risk of interrupting the build process from a temporary network issue or from disconnecting the USB device.
 
- 
+
 
 ## <span id="Change_the_edition__for_example__from_Core_to_Pro_"></span><span id="change_the_edition__for_example__from_core_to_pro_"></span><span id="CHANGE_THE_EDITION__FOR_EXAMPLE__FROM_CORE_TO_PRO_"></span>Change the edition (for example, from Core to Pro)
 
@@ -50,7 +50,6 @@ The ICD.exe command requires a deployment configuration XML file. When you use t
     <EnableCompactOS>false</EnableCompactOS>
     <MediaScenario>Production</MediaScenario>
 </DeploymentConfig>
- 
 ```
 
 Windows ICD will create the project in the path you select. You can then copy this data to a USB key and load the image on a new PC.
@@ -58,7 +57,7 @@ Windows ICD will create the project in the path you select. You can then copy th
 ## <span id="Create_a_blank_customizations_file"></span><span id="create_a_blank_customizations_file"></span><span id="CREATE_A_BLANK_CUSTOMIZATIONS_FILE"></span>Create a blank customizations file
 
 
-For this build of Windows 10, you must specify a customizations file by using the CustomizationXML parameter. The provisioning package should contain all of your customizations so we’ll create a blank customizations XML file for this lab:
+For this build of Windows 10, you must specify a customizations file by using the CustomizationXML parameter. The provisioning package should contain all of your customizations so we’ll create a blank customizations XML file for this lab:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,8 +72,6 @@ For this build of Windows 10, you must specify a customizations file by using t
   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
 </Settings>
 </WindowsCustomizations>
-
- 
 ```
 
 ## <span id="Congratulations_"></span><span id="congratulations_"></span><span id="CONGRATULATIONS_"></span>Congratulations!
@@ -82,9 +79,9 @@ For this build of Windows 10, you must specify a customizations file by using t
 
 You've completed the Windows ICD portion of the lab. From here, you can learn more about classic Windows deployment techniques in [Lab 2](part-2--classic-style-deployment.md).
 
- 
 
- 
+
+
 
 
 

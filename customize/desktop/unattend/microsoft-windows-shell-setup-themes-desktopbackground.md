@@ -29,7 +29,7 @@ The graphic can have any name, but must be a .png, .jpg, or .bmp image.
 > [!Note]
 > In Windows 10, if you use this setting, you’ll also need to set ThemeName. If you set these two settings (ThemeName and DesktopBackground), Windows will create the theme for you. 
 
- 
+ 
 
 ## Values
 
@@ -47,7 +47,7 @@ The graphic can have any name, but must be a .png, .jpg, or .bmp image.
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -93,9 +93,9 @@ The following XML output shows how to assign a background to a customized theme.
 
 [Themes](microsoft-windows-shell-setup-themes.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,11 +34,11 @@ This method schedules tests to be run on a specified set of machines and consoli
 
 *testList*
 
-     The list of tests to consolidate the test run with.
+     The list of tests to consolidate the test run with.
 
 *machineList*
 
-     A list of machines to run this on.
+     A list of machines to run this on.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -63,9 +63,9 @@ An exception is thrown if:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

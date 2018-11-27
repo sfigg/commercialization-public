@@ -29,7 +29,7 @@ Loads the tests from a Playlist into this [PlaylistManager](playlistmanager-clas
 
 `public List<Guid> LoadPlaylist (`
 
-          `string playlistPath`
+          `string playlistPath`
 
 `)`
 
@@ -52,9 +52,9 @@ Guids for tests that could not be added because they could not be found.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

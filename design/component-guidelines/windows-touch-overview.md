@@ -49,9 +49,9 @@ Both samples use Mshidkmdf.sys as the nominal HID minidriver while the vendor-su
 
 The EloMT sample includes all the functionality that is required for a multi-touch driver to run on Windows 7. The Elotouch driver can work as both a multi-touch and a mouse driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -429,7 +429,7 @@ The following table shows the country/region associated with the **BootLocale** 
 </tr>
 <tr class="odd">
 <td><p>fr-CI</p></td>
-<td><p>Côte d'Ivoire</p></td>
+<td><p>Côte d&#39;Ivoire</p></td>
 </tr>
 <tr class="even">
 <td><p>fr-CM</p></td>
@@ -1062,7 +1062,7 @@ The following table shows the country/region associated with the **BootLocale** 
 </tbody>
 </table>
 
- 
+ 
 
 **To set the default regional format:** The OEM must edit the **BootLocale** section of the OEMInput.xml file before building the device image.
 

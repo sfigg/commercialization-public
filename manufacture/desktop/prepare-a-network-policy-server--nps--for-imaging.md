@@ -73,7 +73,7 @@ If you intend to create an image of an installation for deployment to a differen
     **Note**  
     When you delete a remote RADIUS server group, all RADIUS servers that are contained in the group are deleted.
 
-     
+     
 
 3.  Repeat this procedure for each remote RADIUS server group that's configured on the NPS server.
 
@@ -88,9 +88,9 @@ You can convert **Netsh** commands to Windows PowerShell® commands. For more in
 
 [Windows Server Deployment Options](windows-server-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

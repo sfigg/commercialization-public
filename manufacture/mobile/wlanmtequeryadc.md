@@ -85,7 +85,7 @@ If the function fails, the return value is one of the system error codes. The fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -126,7 +126,7 @@ If the function fails, the return value is one of the system error codes. The fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -138,9 +138,9 @@ If the function fails, the return value is one of the system error codes. The fo
 
 [Wi-Fi manufacturing API](wi-fi-manufacturing-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

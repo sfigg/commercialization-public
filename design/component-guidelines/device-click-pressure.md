@@ -45,7 +45,7 @@ This is to test the button click reporting behavior (with respect to click press
 
 **Note**  For this test you will be verifying the activation force needed to register a button press on the touchpad in five locations for positive activation and five locations for negative activation. For the best experience, the five locations for both positive and negative testing should be selected to provide maximum coverage, however at a minimum, test locations must be within the lowest 10mm vertically of the digitizer surface.
 
- 
+ 
 
 Perform the following steps to run the tests.
 
@@ -129,9 +129,9 @@ c. If a button press is continually reported while the slug is down and not repo
 
 -   10/10 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

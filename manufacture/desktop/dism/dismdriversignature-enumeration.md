@@ -57,7 +57,7 @@ The driver is signed.
 <tbody>
 <tr class="odd">
 <td><p>Supported host platforms:</p></td>
-<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the [Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).</p></td>
+<td><p>DISM API can be used on any operating system supported by the Windows® Assessment and Deployment Kit (Windows ADK). For more information, see the <a href="http://go.microsoft.com/fwlink/?LinkId=206587" data-raw-source="[Windows ADK Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587)">Windows ADK Technical Reference</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supported image platforms:</p></td>
@@ -66,7 +66,7 @@ The driver is signed.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ---------
@@ -97,9 +97,9 @@ Requirements
 
 [**DismDriver**](dismdriver-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -92,9 +92,9 @@ You can run this assessment on a Windows RT 8.1 system in either of the followi
 
 -   Use Windows Assessment Services. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
 
- 
+ 
 
- 
+ 
 
 
 

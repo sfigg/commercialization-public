@@ -78,14 +78,14 @@ Microsoft recommends enabling **UseExternalStorage** on phones with less than 8 
     </tbody>
     </table>
 
-     
+     
 
 4.  If including an SD card with the device, add the preloaded map data to the SD card. Unzip the appropriate map variant data package and copy the “**diskcache**” folder onto the SD card under the `d:\MapData` directory.
 
     **Note**  
     When unzipping the appropriate map variant data package, you must use a file compression/decompression utility that preserves the file attributes and timestamps. If the utility does not preserve this information, the map(s) will be treated as invalid by the OS.
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash a build that contains this customization on a phone.

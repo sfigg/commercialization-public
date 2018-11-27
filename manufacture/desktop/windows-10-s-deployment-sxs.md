@@ -191,13 +191,13 @@ We'll add the customization registry key to the mounted image by loading the mou
 
     ```
 	reg load HKLM\Windows10S C:\Mount\Windows\Windows\System32\Config\System
-	```
+    ```
 
 2. Add the following key to the registry have that you just mounted.
 
     ```
     reg add HKLM\Windows10S\ControlSet001\Control\CI\Policy /v ManufacturingMode /t REG_DWORD /d 1
-	```
+    ```
 
 3. Unload the registry hive from your technician PC.
 
@@ -218,9 +218,9 @@ Now we'll create a file that automates the exclusion of the customizations regis
 2. Copy and paste the following code. This tells ScanState to not capture the registry key in the recovery package that it creates:
 
     ```
-<?xml version="1.0" encoding="UTF-8"?>
-<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/ExcludeManufacturingMode">
-<component type="System">
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/ExcludeManufacturingMode">
+   <component type="System">
     <displayName>Exclude manufacturing regkey</displayName>
         <role role="Settings">
             <rules context="System">
@@ -231,8 +231,8 @@ Now we'll create a file that automates the exclusion of the customizations regis
                 </unconditionalExclude>
             </rules>
         </role>
-</component>
-</migration>
+   </component>
+   </migration>
     ```
 
 3. Save the file as exclusion.xml.

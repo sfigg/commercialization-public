@@ -38,7 +38,7 @@ If this element is not applicable in your country or region, enter an empty stri
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -81,9 +81,9 @@ The following XML output shows how to set the location from which you are callin
 
 [TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md)
 
- 
+ 
 
- 
+ 
 
 
 

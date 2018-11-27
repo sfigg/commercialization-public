@@ -32,9 +32,9 @@ This section presents a walkthrough of some of the capabilities of the Windows P
 3.  Enter a description of the problem for which you created the recording.
 4.  Click Save and then click OK.
 
- 
+ 
 
- 
+ 
 
 
 

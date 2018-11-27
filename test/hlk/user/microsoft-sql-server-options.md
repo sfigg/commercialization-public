@@ -41,7 +41,7 @@ Follow the same procedure for installing Microsoft SQL Server 2012, but before i
 2. Install SQL Server 2012 SQLSysClrTypes.msi (64-bit) from the following link:
 <br><http://go.microsoft.com/fwlink/p/?linkid=239644&clcid=0x409>
 
- 
+ 
 ## Using the HLK with standalone SQL Server 2012
 
 When using the HLK with standalone SQL Server 2012, be aware that some tests can make thousands of database calls. Be sure to choose the right backup configuration and recovery model so that your transaction logs do not grow to be too large.

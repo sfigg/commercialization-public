@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated.
 
- 
+ 
 
 ## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
@@ -30,21 +30,21 @@ ms.topic: article
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CreateTarget Method (TargetData)](productinstance-createtarget-method--targetdata-.md)</p></td>
-<td><p>This method creates a target from [TargetData](targetdata-class.md), and adds it to this product instance. Calls the overload method and creates the [Target](target-class.md) without adding tests.</p></td>
+<td><p><a href="productinstance-createtarget-method--targetdata-.md" data-raw-source="[CreateTarget Method (TargetData)](productinstance-createtarget-method--targetdata-.md)">CreateTarget Method (TargetData)</a></p></td>
+<td><p>This method creates a target from <a href="targetdata-class.md" data-raw-source="[TargetData](targetdata-class.md)">TargetData</a>, and adds it to this product instance. Calls the overload method and creates the <a href="target-class.md" data-raw-source="[Target](target-class.md)">Target</a> without adding tests.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CreateTarget Method (TargetData, bool)](productinstance-createtarget-method--targetdata--bool-.md)</p></td>
-<td><p>This method creates a target from [TargetData](targetdata-class.md), and adds it to this product instance.</p></td>
+<td><p><a href="productinstance-createtarget-method--targetdata--bool-.md" data-raw-source="[CreateTarget Method (TargetData, bool)](productinstance-createtarget-method--targetdata--bool-.md)">CreateTarget Method (TargetData, bool)</a></p></td>
+<td><p>This method creates a target from <a href="targetdata-class.md" data-raw-source="[TargetData](targetdata-class.md)">TargetData</a>, and adds it to this product instance.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

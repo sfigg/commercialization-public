@@ -29,10 +29,10 @@ This action produces an XML file that summarizes the metrics for the suspend seq
 <a href="" id="-summary"></a>**-summary**  
 Displays the suspend transitions in this trace.
 
-<a href="" id="-timeunit-unit----precision--"></a>**-timeunit***&lt;unit&gt; \[&lt;precision&gt;\]*  
+<a href="" id="-timeunit-unit----precision--"></a>**-timeunit**<em>&lt;unit&gt; \[&lt;precision&gt;\]</em>  
 Configure time presentation to use time unit &lt;*unit*&gt; and optionally time precision &lt;*precision*&gt;. Possible units of time are "ns" (nanoseconds), "us" (microseconds), "ms" (milliseconds), or "s" (seconds).
 
-<a href="" id="-min-duration-"></a>**-min***&lt;duration&gt;*  
+<a href="" id="-min-duration-"></a>**-min**<em>&lt;duration&gt;</em>  
 Shows individual timings longer than or equal to &lt;*duration*&gt;.
 
 ## Remarks
@@ -47,9 +47,9 @@ If you do not specify an option, **-summary** is used by default.
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

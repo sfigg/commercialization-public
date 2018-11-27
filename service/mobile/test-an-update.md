@@ -14,11 +14,11 @@ ms.topic: article
 # Test an update
 
 
-Update testing should begin when your first image is being developed.  Test that your drivers, preloaded apps, and other content can be updated throughout the process.
+Update testing should begin when your first image is being developed.  Test that your drivers, preloaded apps, and other content can be updated throughout the process.
 
-During the phase when you are building test images, you should perform local testing of updates, run the compatibility tests before and after the update, and look for the same results.  This is a time when you can more easily test a full breadth of phone features with automation and discover update issues early.  Do not wait until you are nearing manufacturing and retail device testing.
+During the phase when you are building test images, you should perform local testing of updates, run the compatibility tests before and after the update, and look for the same results.  This is a time when you can more easily test a full breadth of phone features with automation and discover update issues early.  Do not wait until you are nearing manufacturing and retail device testing.
 
-Over the Air (OTA) updates can only be tested on retail device, which is more difficult to do because of the higher security on a retail device.  Therefore, it is important that you perform deep functional testing on the test images, and focus your testing on retail phones to ensure that the OTA update is successful by following the guidance in the Network testing of updates section.
+Over the Air (OTA) updates can only be tested on retail device, which is more difficult to do because of the higher security on a retail device.  Therefore, it is important that you perform deep functional testing on the test images, and focus your testing on retail phones to ensure that the OTA update is successful by following the guidance in the Network testing of updates section.
 
 OEMs must ensure the quality of an OEM update by fully testing the update before submitting it to Microsoft. As a minimum, the OEM must do the following.
 
@@ -56,10 +56,10 @@ To prepare to receive an update from the Microsoft test update server, complete 
 
 3.  Establish a connection to a cellular or Wi-Fi network with the device and attach the device to a charger.
 
-    **Note**  
+    **Note**  
     We recommend using Wi-Fi to download the update so that you do not run into any constraints with your mobile operator when testing. Mobile operators can specify update download size limits when using their cellular data connection.
 
-     
+
 
 4.  Initiate the update process via **Settings** &gt; **Update & recovery** &gt; **Phone update**.
 
@@ -82,19 +82,17 @@ Test steps:
 <li><p>Verify that the status to the network is shown as “Connected.”</p></li>
 <li><p>Verify that the <strong>Wi-Fi</strong> icon at the top of the device appears as expected.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The icon should flash while the device is connecting and remain solid after the phone is connected. The icon may disappear for a few seconds after the device is connected. The icon can be displayed again by tapping the middle of the top screen.</p>
+<strong>Note</strong><br/><p>The icon should flash while the device is connecting and remain solid after the phone is connected. The icon may disappear for a few seconds after the device is connected. The icon can be displayed again by tapping the middle of the top screen.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Tap <strong>Start</strong>, and then tap <strong>Internet Explorer</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>When the browser is launched for the first time, a dialog will pop up asking to “Use the recommended settings?” Tap the <strong>Recommended</strong> button.</p>
+<strong>Note</strong><br/><p>When the browser is launched for the first time, a dialog will pop up asking to “Use the recommended settings?” Tap the <strong>Recommended</strong> button.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Tap the address bar and enter a website URL. Tap the enter key on the virtual keyboard to go to the site.</p></li>
 <li><p>Verify that the page is loaded.</p></li>
@@ -134,11 +132,10 @@ Test steps:
 <li><p><strong>Search</strong> (the button is a magnifying glass).</p></li>
 </ol>
 <div class="alert">
-<strong>Note</strong>  
-<p>For some of the images, Scout is not available.</p>
+<strong>Note</strong><br/><p>For some of the images, Scout is not available.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Pan the map away from the device location and then tap on the <strong>Me</strong> button. Verify that the map returns the phone location with the <strong>Me</strong> icon at the center.</p></li>
 <li><p>Tap the <strong>Scout</strong> button. Verify that Local Scout loads within several seconds and the <strong>eat+drink</strong> pivot is displayed, with a list of businesses that offer food and drink.</p>
@@ -192,18 +189,16 @@ Test steps:
 <li><p>Lock the device and leave it idle to put it into Sleep Mode.</p></li>
 <li><p>Press and hold the Camera hardware key to launch the camera. Then, verify that the camera launches either the default camera app or the camera app. Tap <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the phone does not have a camera hardware button, launch the camera app directly.</p>
+<strong>Note</strong><br/><p>If the phone does not have a camera hardware button, launch the camera app directly.</p>
 </div>
 <div>
- 
+
 </div>
 <div class="alert">
-<strong>Note</strong>  
-<p>The “Allow…location” prompt will remember the previous settings and may not appear if the camera has been used recently.</p>
+<strong>Note</strong><br/><p>The “Allow…location” prompt will remember the previous settings and may not appear if the camera has been used recently.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Verify that by default the camera is set to &quot;Picture&quot; mode.</p></li>
 <li><p>Pinch in and out with your fingers on the camera screen and verify that the camera screen zooms in and out.</p></li>
@@ -228,18 +223,16 @@ Test steps:
 <li><p>Lock the device and leave it idle to put it into Sleep Mode.</p></li>
 <li><p>Press and hold the Camera hardware key to launch the camera or launch the app directly from the Apps list. Tap <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the device does not have a camera hardware button, launch the camera app directly.</p>
+<strong>Note</strong><br/><p>If the device does not have a camera hardware button, launch the camera app directly.</p>
 </div>
 <div>
- 
+
 </div>
 <div class="alert">
-<strong>Note</strong>  
-<p>The “Allow…location” prompt will remember previous settings and may not appear if the camera has been used recently.</p>
+<strong>Note</strong><br/><p>The “Allow…location” prompt will remember previous settings and may not appear if the camera has been used recently.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Change to video capture mode.</p></li>
 <li><p>Pinch in and out with fingers on the screen and verify that the camera screen zooms in and out.</p></li>
@@ -260,18 +253,16 @@ Test steps:
 <li><p>Lock the device and leave it idle to put the phone into Sleep Mode.</p></li>
 <li><p>Press and hold the camera hardware key to launch the camera. Tap <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the device does not have a camera hardware button, launch the camera app directly.</p>
+<strong>Note</strong><br/><p>If the device does not have a camera hardware button, launch the camera app directly.</p>
 </div>
 <div>
- 
+
 </div>
 <div class="alert">
-<strong>Note</strong>  
-<p>The “Allow…location” prompt will remember the previous settings and may not appear if the camera has been used recently.</p>
+<strong>Note</strong><br/><p>The “Allow…location” prompt will remember the previous settings and may not appear if the camera has been used recently.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Verify that by default the camera should be set to &quot;Picture&quot; mode with the rear-facing camera.</p></li>
 <li><p>On the app bar, tap the <strong>Front-Facing</strong> icon</p></li>
@@ -359,11 +350,10 @@ Test steps:
 <ol>
 <li><p>On the Start screen, tap <strong>Internet Explorer</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>When the browser is launched for the first time, a dialog will pop up asking to &quot;Use recommended settings?&quot; Tap the <strong>Recommended</strong> button.</p>
+<strong>Note</strong><br/><p>When the browser is launched for the first time, a dialog will pop up asking to &quot;Use recommended settings?&quot; Tap the <strong>Recommended</strong> button.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Tap the address bar and go to a website that supports videos.</p></li>
 <li><p>Select a video from the website and tap <strong>play</strong>.</p></li>
@@ -379,11 +369,10 @@ Test steps:
 <li><p>From the second device, send a text message to the test device.</p></li>
 <li><p>Verify that a text notification on the phone and an audio notification on the Bluetooth for the incoming message is received. Tap <strong>Ignore</strong> to ignore the text message.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>For some regions, speech is not supported, and a message is displayed on the device. Tap <strong>Close</strong> and proceed with the testing.</p>
+<strong>Note</strong><br/><p>For some regions, speech is not supported, and a message is displayed on the device. Tap <strong>Close</strong> and proceed with the testing.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Tap the <strong>Play</strong> button on the video screen.</p></li>
 <li><p>Verify that the video starts playing without any problems and that the audio is routed through Bluetooth.</p></li>
@@ -485,11 +474,10 @@ Test steps:
 <li><p>Plug in a pair of headphones.</p></li>
 <li><p>In the App list, tap <strong>FM Radio</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Allow the FM Radio access to location services, if requested.</p>
+<strong>Note</strong><br/><p>Allow the FM Radio access to location services, if requested.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Press <strong>Forward</strong> or <strong>Back</strong> buttons to scan through the stations. Verify that the tuner scans through the stations appropriately.</p></li>
 <li><p>Tap <strong>Pause</strong> button and verify that the radio pauses. Tap <strong>Play</strong> and verify that radio play resumes.</p></li>
@@ -575,8 +563,7 @@ Test steps:
 <li><p>Verify the search results on multiple pivots.</p></li>
 <li><p>Verify that all pivots are populated with relevant results or that there is messaging that indicates that there are no results.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>For non-US images, the search results may vary. All pivots might not be present.</p>
+<strong>Note</strong><br/><p>For non-US images, the search results may vary. All pivots might not be present.</p>
 </div>
 <div>
 </div></li>
@@ -606,7 +593,7 @@ Test steps:
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Theme</strong>.</p></li>
 <li><p>Change the values for <strong>Background</strong> and <strong>Accent color</strong>.</p></li>
 <li><p>Press <strong>Start</strong> to return to the Start screen.</p></li>
-<li><p>Verify that the device's theme was modified.</p></li>
+<li><p>Verify that the device&#39;s theme was modified.</p></li>
 </ol>
 
 ### Contacts
@@ -722,11 +709,10 @@ Test steps:
 <ol>
 <li><p>Tap Internet Explorer from the Start screen.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>When the browser is launched for the first time, a dialog will pop up asking &quot;Use recommended settings?&quot; Tap the <strong>Recommended</strong> button.</p>
+<strong>Note</strong><br/><p>When the browser is launched for the first time, a dialog will pop up asking &quot;Use recommended settings?&quot; Tap the <strong>Recommended</strong> button.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Verify that Internet Explorer launches.</p></li>
 <li><p>Tap on the address bar. Begin typing the name of a website.</p></li>
@@ -743,11 +729,10 @@ Test steps:
 <li><p>Verify that you can navigate to a website listed in your favorites.</p></li>
 <li><p>Share the website with the second phone using NFC/Tap+Send.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the browser is launched for the first time on the second device, a dialog will pop up asking &quot;Use recommended settings?&quot; Tap <strong>Recommended</strong>.</p>
+<strong>Note</strong><br/><p>If the browser is launched for the first time on the second device, a dialog will pop up asking &quot;Use recommended settings?&quot; Tap <strong>Recommended</strong>.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Verify that the shared website opens on the browser of the second device</p></li>
 </ol>
@@ -761,11 +746,10 @@ Test steps:
 <ul>
 <li><p>Connect a wall charger to the device and check that the <strong>charging</strong> icon is displayed. You should hear an audible indication after you plug in the cable. Unplug the charger.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The device does not have to be turned on for wireless charging to work.</p>
+<strong>Note</strong><br/><p>The device does not have to be turned on for wireless charging to work.</p>
 </div>
 <div>
- 
+
 </div></li>
 </ul>
 
@@ -870,14 +854,13 @@ Test steps:
 <li><p>Tap <strong>Accept</strong>.</p></li>
 <li><p>Verify the Login screen is shown.</p></li>
 <li><p>Scroll to bottom of Login page and log in using a Microsoft Account.</p></li>
-<li><p>Verify that the 'Allow message notifications?' message pops up with <strong>yes</strong> and <strong>no</strong> buttons.</p></li>
+<li><p>Verify that the &#39;Allow message notifications?&#39; message pops up with <strong>yes</strong> and <strong>no</strong> buttons.</p></li>
 <li><p>Tap <strong>no</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Follow the same steps on the second device to prepare for Skype testing.</p>
+<strong>Note</strong><br/><p>Follow the same steps on the second device to prepare for Skype testing.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>On the second phone, swipe to the <strong>People</strong> pivot and select the Skype account that is associated with the test device</p></li>
 <li><p>Make an audio call to the test device using the second device.</p></li>
@@ -949,11 +932,10 @@ Test steps:
 <li><p>When prompted during OOBE, enter the same Microsoft account that you have been using.</p></li>
 <li><p>When prompted during OOBE, select to restore the backup that was just created.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This backup should be the selection at the top of the backup list. Check the date and time to verify, then select the backup.</p>
+<strong>Note</strong><br/><p>This backup should be the selection at the top of the backup list. Check the date and time to verify, then select the backup.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Proceed through the rest of the OOBE process.</p></li>
 <li><p>At the Start screen, verify that the Background and Accent color match the changes from Step 2.</p></li>
@@ -973,17 +955,17 @@ Games installed to the device from the store.
 Test steps:
 
 <ol>
-<li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>kid's corner</strong>.</p></li>
-<li><p>Verify that the welcome page for Kid's Corner is launched.</p></li>
+<li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>kid&#39;s corner</strong>.</p></li>
+<li><p>Verify that the welcome page for Kid&#39;s Corner is launched.</p></li>
 <li><p>Add a game to the Kid’s Corner.</p></li>
 <li><p>Add a couple of apps to the Kid’s Corner.</p></li>
 <li><p>Tap <strong>Next</strong>.</p></li>
 <li><p>Verify that the Password dialog pops up.</p></li>
 <li><p>Create a password.</p></li>
 <li><p>Tap <strong>Finish</strong>.</p></li>
-<li><p>Verify that Kid's Corner is launched.</p></li>
+<li><p>Verify that Kid&#39;s Corner is launched.</p></li>
 <li><p>Swipe up on the screen. Enter the password if prompted.</p></li>
-<li><p>Verify that the Home screen for Kid's Corner is launched and only the applications and the games that were checked while setting up the Kid’s Corner are present on the screen.</p></li>
+<li><p>Verify that the Home screen for Kid&#39;s Corner is launched and only the applications and the games that were checked while setting up the Kid’s Corner are present on the screen.</p></li>
 <li><p>Lock and unlock the device.</p></li>
 <li><p>Verify that the password dialog pops up. Enter the password and unlock the device.</p></li>
 <li><p>Verify that the Start screen is displayed.</p></li>
@@ -1004,11 +986,10 @@ Test steps:
 <li><p>Leave the device idle so that it goes to sleep. Press the device’s Power button to bring up the lock screen.</p></li>
 <li><p>Hold the <strong>camera</strong> button (while on lock screen) to bring up the camera.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the phone does not have a camera button, launch the Camera app directly.</p>
+<strong>Note</strong><br/><p>If the phone does not have a camera button, launch the Camera app directly.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Select the <strong>Lens</strong> button.</p></li>
 <li><p>Select <strong>Bing Vision</strong>.</p></li>
@@ -1039,11 +1020,10 @@ Test steps:
 <ol>
 <li><p>Press and hold the camera hardware key to launch the camera app (or launch the app directly if the device does not have a camera button), and tap on <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The “Allow…location” prompt will remember previous settings and may not appear if the camera has been used recently.</p>
+<strong>Note</strong><br/><p>The “Allow…location” prompt will remember previous settings and may not appear if the camera has been used recently.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Tap the <strong>Lens</strong> button.</p></li>
 <li><p>Verify that the Lens overlay appears with the <strong>Bing Vision</strong> icon and icons for any installed lenses.</p></li>
@@ -1086,11 +1066,10 @@ Test steps:
 <ol>
 <li><p>In the App list, tap <strong>Maps</strong> &gt; <strong>More (…)</strong> &gt; <strong>Settings</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the application is launched for the first time, the app will ask for permission to access the phone location. Allow location access.</p>
+<strong>Note</strong><br/><p>If the application is launched for the first time, the app will ask for permission to access the phone location. Allow location access.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Select <strong>download maps</strong>.</p></li>
 <li><p>Tap the <strong>Add (+)</strong> button.</p></li>
@@ -1146,11 +1125,10 @@ Test steps:
 <li><p>Turn on Internet Sharing.</p></li>
 <li><p>Connect to the shared Wi-Fi with a second device, using the name and password on the device.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The second device should have its own Wi-Fi turned on.</p>
+<strong>Note</strong><br/><p>The second device should have its own Wi-Fi turned on.</p>
 </div>
 <div>
- 
+
 </div></li>
 <li><p>Verify that the second device can browse the internet.</p></li>
 <li><p>Verify that the device displays the number of Guests (second device) connected to shared Wi-Fi.</p></li>
@@ -1181,9 +1159,9 @@ Test steps:
 <li><p>Tap the entry.</p></li>
 <li><p>Verify that you can scroll through the app’s detail page.</p></li>
 <li><p>Verify that the amount of memory space per app is shown.</p></li>
-</ol> 
- 
- 
+</ol> 
+
+
 
 
 

@@ -86,7 +86,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
     [Available UI Languages]
     ca-ES = 2
     es-ES = 3
-     
+     
     [Fallback Languages]
     es-ES = en-us
     ```
@@ -107,7 +107,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
     ``` 
     Reporting offline international settings.
-     
+     
     Default system UI language : es-ES
     System locale : ca-ES
     Default time zone : Romance Standard Time
@@ -115,14 +115,14 @@ For Windows 10, language packs and LIPs are also available to download from Win
     Location : Spain (GEOID = 217)
     Active keyboard(s) : 0403:0000040a
     Keyboard layered driver : PC/AT Enhanced Keyboard (101/102-Key)
-     
+     
     Installed language(s): ca-ES
-      Type : Partially localized language, LIP type.
+      Type : Partially localized language, LIP type.
     Installed language(s): es-ES
-      Type : Fully localized language.
-     
+      Type : Fully localized language.
+     
     Reporting distribution languages.
-     
+     
     The default language in the distribution is:
     es-ES
     ```
@@ -144,9 +144,9 @@ For Windows 10, language packs and LIPs are also available to download from Win
 
 [Language Pack Default Values](http://go.microsoft.com/fwlink/?LinkId=206622)
 
- 
+ 
 
- 
+ 
 
 
 

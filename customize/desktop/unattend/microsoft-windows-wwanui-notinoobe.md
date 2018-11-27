@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output shows how to hide the mobile broadband category in OOBE
 
 [Microsoft-Windows-WwanUI](microsoft-windows-wwanui.md)
 
- 
+ 
 
- 
+ 
 
 
 

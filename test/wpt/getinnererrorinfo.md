@@ -66,16 +66,16 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IControlErrorInfo](icontrolerrorinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

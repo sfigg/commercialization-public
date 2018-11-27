@@ -44,7 +44,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -79,9 +79,9 @@ The following sample XML output specifies that auto-activation is skipped.
 
 [ProductKey](microsoft-windows-setup-userdata-productkey.md)
 
- 
+ 
 
- 
+ 
 
 
 

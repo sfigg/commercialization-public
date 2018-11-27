@@ -67,9 +67,9 @@ If the graph is a Gantt chart, each column that you move to the graphing element
 
 [WPA Features](wpa-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

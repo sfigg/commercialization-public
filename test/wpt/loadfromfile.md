@@ -61,7 +61,7 @@ The following table describes possible return values.
 </tr>
 <tr class="even">
 <td><p>E_INVALIDARG</p></td>
-<td><p>One or more arguments are invalid. Use [IParsingErrorInfo](iparsingerrorinfo.md) to obtain detailed error information.</p></td>
+<td><p>One or more arguments are invalid. Use <a href="iparsingerrorinfo.md" data-raw-source="[IParsingErrorInfo](iparsingerrorinfo.md)">IParsingErrorInfo</a> to obtain detailed error information.</p></td>
 </tr>
 <tr class="odd">
 <td><p>E_WPRC_FAILED_TO_VALIDATE_PROFILE</p></td>
@@ -70,16 +70,16 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IProfile](iprofile.md)
 
- 
+ 
 
- 
+ 
 
 
 

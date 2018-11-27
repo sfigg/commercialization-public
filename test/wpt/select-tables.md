@@ -1,3 +1,10 @@
+---
+title: Select Tables Window
+description: Select Tables Window
+ms.author: dawn.wood
+ms.date: 05/05/2017
+ms.topic: article
+---
 # Select Tables Window
 
 **Select Tables** window shows all the available tables in WPA anf allows for users to decide which tables to enable in their analysis.

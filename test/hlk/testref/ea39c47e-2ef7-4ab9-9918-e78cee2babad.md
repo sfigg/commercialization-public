@@ -15,6 +15,7 @@ ms.topic: article
 Confirm non-preferred display modes can be set successfully
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.WDDM23.CoreRequirement</li></ul> |  
@@ -29,9 +30,10 @@ Confirm non-preferred display modes can be set successfully
 
 ## More Information
 ### Parameters
-| Parameter Name | Parameter Description |
-| --- | --- |
 
+| Parameter Name | Parameter Description |
+|----------------|-----------------------|
+|                |                       |
 
 ## Additional Documentation
 Tests in this feature area might have additional documentation, including prerequisites, setup, and troubleshooting information, that can be found in the following topic(s): - [Device.Graphics additional documentation](device-graphics-additional-documentation.md)
@@ -39,4 +41,4 @@ Tests in this feature area might have additional documentation, including prereq
 
 
 ## Troubleshooting
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](..\user\troubleshooting-windows-hlk-test-failures.md)
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures.](../user/troubleshooting-windows-hlk-test-failures.md)

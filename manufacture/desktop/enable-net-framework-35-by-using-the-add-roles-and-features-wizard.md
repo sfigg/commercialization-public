@@ -47,9 +47,9 @@ You can use Server Manager to enable .NET Framework 3.5 for a local or remote in
 
 [Microsoft .NET Framework 3.5 Deployment Considerations](microsoft-net-framework-35-deployment-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 
