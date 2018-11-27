@@ -144,14 +144,14 @@ Some capabilities have dependencies, as shown in the following table.
 <tr>
 <td>Retail Demo experience</td>
 <td><code>Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package</code></td>
-<td>Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.</td>
-<td><a href="https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience">Retail Demo experience</a>.</td>
+<td></td>
+<td>See <a href="https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience">Retail Demo experience</a>.</td>
 </tr>
 <tr>
-<td>WinRE</td>
-<td>Multiple, see <a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/customize-windows-re">Customize Windows RE</a>.</td>
-<td>None</td>
-<td>Used to help end users repair and recover their PCs. See&nbsp;<a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/customize-windows-re">Customize Windows RE</a>.</td>
+<td>Recovery / Windows RE</td>
+<td>Multiple</td>
+<td></td>
+<td>Helps end users recover their PCs. See&nbsp;<a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/customize-windows-re">Customize Windows RE</a>.</td>
 </tr>
 </tbody>
 </table>
