@@ -1,16 +1,16 @@
 ---
 author: kpacquer
-Description: Add Languages to Windows
+Description: Add languages to Windows images
 ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Add Language Packs to Windows
+title: Add languages to Windows images
 ms.author: kenpacq
-ms.date: 11/13/2018
+ms.date: 11/27/2018
 ms.topic: article
 
 ---
 
-# Add Languages to Windows
+# Add languages to Windows images
 
 > [!note]
 > To add a language to your personal PC, go to **Settings** > **Time & Language** > **Language**, and choose a language to install. [Learn more](https://support.microsoft.com/en-us/help/4027670/windows-10-add-and-switch-input-and-display-language-preferences)
@@ -83,18 +83,78 @@ Other customizations that can be preset:
 
 Some capabilities have dependencies, as shown in the following table.
 
-| Component | Sample file name | Dependencies |	Description |
-| --- | --- | --- | --- |
-|Language pack |	`Microsoft-Windows-Client-Language-Pack_x64_es-es.cab` |	None |	UI text, including basic Cortana capabilities. |
-|Language experience pack or language interface pack |	`LanguageExperiencePack.am-et.neutral.appx` or `Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab` |	Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md). | UI text, including basic Cortana capabilities.<br><br>Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack. |
-|Basic |	`Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package` | None | Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br><br>You must add this component before adding any of the following components. |
-| Fonts |	`Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package` |	None | Fonts.<br><br>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Language and region Features On Demand](features-on-demand-language-fod.md). |
-| Optical character recognition |	`Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package` |	Basic |	Recognizes and outputs text in an image. |
-| Handwriting recognition |	`Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package` |	Basic |	Enables handwriting recognition for devices with pen input. |
-| Text-to-speech |	`Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` |	Basic |	Enables text to speech, used by Cortana and Narrator. |
-| Speech recognition |	`Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` |	Basic, Text-To-Speech recognition |	Recognizes voice input, used by Cortana and Windows Speech Recognition. |
-| Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package. |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
-| WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Sample file name</th>
+<th>Dependencies</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 5px 10px;">Language pack</td>
+<td style="padding: 5px 10px;"><code>Microsoft-Windows-Client-Language-Pack_x64_es-es.cab</code></td>
+<td style="padding: 5px 10px;">None</td>
+<td style="padding: 5px 10px;">UI text, including basic Cortana capabilities.</td>
+</tr>
+<tr>
+<td>Language experience pack or language interface pack</td>
+<td><code>LanguageExperiencePack.am-et.neutral.appx</code>&nbsp;or&nbsp;<code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab</code></td>
+<td>Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see&nbsp;<a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/available-language-packs-for-windows">Available Language Packs for Windows</a>.</td>
+<td>UI text, including basic Cortana capabilities.<br /><br />Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack.</td>
+</tr>
+<tr>
+<td>Basic</td>
+<td><code>Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package</code></td>
+<td>None</td>
+<td>Spell checking, text prediction, word breaking, and hyphenation if available for the language.<br /><br />You must add this component before adding any of the following components.</td>
+</tr>
+<tr>
+<td>Fonts</td>
+<td><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
+<td>None</td>
+<td>Fonts.<br /><br />Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see&nbsp;<a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-language-fod">Language and region Features On Demand</a>.</td>
+</tr>
+<tr>
+<td>Optical character recognition</td>
+<td><code>Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package</code></td>
+<td>Basic</td>
+<td>Recognizes and outputs text in an image.</td>
+</tr>
+<tr>
+<td>Handwriting recognition</td>
+<td><code>Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package</code></td>
+<td>Basic</td>
+<td>Enables handwriting recognition for devices with pen input.</td>
+</tr>
+<tr>
+<td>Text-to-speech</td>
+<td><code>Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package</code></td>
+<td>Basic</td>
+<td>Enables text to speech, used by Cortana and Narrator.</td>
+</tr>
+<tr>
+<td>Speech recognition</td>
+<td><code>Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package</code></td>
+<td>Basic, Text-To-Speech recognition</td>
+<td>Recognizes voice input, used by Cortana and Windows Speech Recognition.</td>
+</tr>
+<tr>
+<td>Retail Demo experience</td>
+<td><code>Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package</code></td>
+<td>Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package.</td>
+<td><a href="https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience">Retail Demo experience</a>.</td>
+</tr>
+<tr>
+<td>WinRE</td>
+<td>Multiple, see <a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/customize-windows-re">Customize Windows RE</a>.</td>
+<td>None</td>
+<td>Used to help end users repair and recover their PCs. See&nbsp;<a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/customize-windows-re">Customize Windows RE</a>.</td>
+</tr>
+</tbody>
+</table>
  
 
 ## <span id="LPInstallMethods"></span><span id="lpinstallmethods"></span><span id="LPINSTALLMETHODS"></span>Installation methods

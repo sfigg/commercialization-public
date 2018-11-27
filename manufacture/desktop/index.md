@@ -34,7 +34,7 @@ After you've learned how to design, develop, and customize Windows images, you c
 <td align="left"><p><strong>Getting started</strong></p></td>
 <td align="left">
     <ul>
-        <li><a href= "http://go.microsoft.com/fwlink/p/?LinkId=526803"> Download the Windows ADK</a></li>
+        <li><a href="http://go.microsoft.com/fwlink/p/?LinkId=526803">Download the Windows ADK</a></li>
         <li><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions-overview"> Desktop manufacturing guide </a></li>
         <li><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions">System builder deployment of Windows 10 for desktop editions </a></li>
         <li><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/manufacturing-windows-engineering-guide">Manufacturing Windows Engineering Guide (WEG) </a></li></ul></td>
