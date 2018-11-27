@@ -60,7 +60,7 @@ The language-pack removal task does not remove LIPs.
 
 Note: the version of the language components must match the version of Windows. For example, you can't add a Windows 10, version 1809 language pack to Windows 10, version 1803.
 
-## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
+## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language pack types
 
 The table below gives an overview of the types of language components that are available in Windows 10.
 
@@ -94,10 +94,10 @@ Some capabilities have dependencies, as shown in the following table.
 </thead>
 <tbody>
 <tr>
-<td style="padding: 5px 10px;">Language pack</td>
-<td style="padding: 5px 10px;"><code>Microsoft-Windows-Client-Language-Pack_x64_es-es.cab</code></td>
-<td style="padding: 5px 10px;">None</td>
-<td style="padding: 5px 10px;">UI text, including basic Cortana capabilities.</td>
+<td>Language pack</td>
+<td><code>Microsoft-Windows-Client-Language-Pack_x64_es-es.cab</code></td>
+<td>None</td>
+<td>UI text, including basic Cortana capabilities.</td>
 </tr>
 <tr>
 <td>Language experience pack or language interface pack</td>
