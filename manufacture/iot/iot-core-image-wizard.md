@@ -18,7 +18,7 @@ Using the IoT Core Image Wizard, the process of creating your first image for yo
 
 ## Download link
 
-Download the [IoT Core Image Wizard](https://iottools.blob.core.windows.net/iotcoreimagewizard/WindowsIoTCoreImageWizard.zip).
+Download the [IoT Core Image Wizard](https://go.microsoft.com/fwlink/?linkid=2044446).
 
 ## Setup instructions
 
