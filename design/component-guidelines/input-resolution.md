@@ -60,7 +60,7 @@ b. All off-axis movement or jitter is ignored in this test. As shown in Figure 1
 
 **Note**  If enough logical x/y coordinates are hit after one swipe on that axis, the iteration will pass automatically without a need to swipe in the other direction.
 
- 
+ 
 
 **Common error messages**
 
@@ -79,9 +79,9 @@ b. All off-axis movement or jitter is ignored in this test. As shown in Figure 1
 
 -   2/2 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

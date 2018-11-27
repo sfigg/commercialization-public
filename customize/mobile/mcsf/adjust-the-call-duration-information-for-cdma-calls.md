@@ -71,7 +71,7 @@ On CDMA devices, call durations in the call history may include the time spent b
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your CDMA mobile operator partner to test this customization on their network.

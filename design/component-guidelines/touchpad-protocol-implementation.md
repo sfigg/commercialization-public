@@ -47,25 +47,25 @@ A sample descriptor is provided in the [Sample Report Descriptors](touchpad-samp
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Required HID Descriptors](touchpad-required-hid-descriptors.md)</p></td>
+<td><p><a href="touchpad-required-hid-descriptors.md" data-raw-source="[Required HID Descriptors](touchpad-required-hid-descriptors.md)">Required HID Descriptors</a></p></td>
 <td><p>This topic presents the required HID descriptors (and device attributes) for a Windows Precision Touchpad device in Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Required HID Top-Level Collections](touchpad-required-hid-top-level-collections.md)</p></td>
+<td><p><a href="touchpad-required-hid-top-level-collections.md" data-raw-source="[Required HID Top-Level Collections](touchpad-required-hid-top-level-collections.md)">Required HID Top-Level Collections</a></p></td>
 <td><p>This section discusses the required HID top-level collections that are used for precision touchpad reporting in Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Sample Report Descriptors](touchpad-sample-report-descriptors.md)</p></td>
+<td><p><a href="touchpad-sample-report-descriptors.md" data-raw-source="[Sample Report Descriptors](touchpad-sample-report-descriptors.md)">Sample Report Descriptors</a></p></td>
 <td><p>This topic presents a sample report descriptor and sample descriptor excerpts for a Windows Precision Touchpad device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

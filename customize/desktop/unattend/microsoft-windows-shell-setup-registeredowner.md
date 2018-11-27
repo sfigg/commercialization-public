@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -77,9 +77,9 @@ The following XML output shows how to set the registered owner.
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

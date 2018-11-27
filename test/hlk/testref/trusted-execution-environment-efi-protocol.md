@@ -101,7 +101,7 @@ typedef struct _EFI_TREE_PROTOCOL {
 </tbody>
 </table>
 
- 
+ 
 
 **Description** - The EFI\_TREE\_PROTOCOL abstracts TrEE activity. This protocol instance provides a Boot Service and is instantiated as a Boot Service Driver.
 
@@ -147,7 +147,7 @@ Parameters
 </tbody>
 </table>
 
- 
+ 
 
 **Related Definitions**
 
@@ -218,12 +218,12 @@ typedef struct _TREE_BOOT_SERVICE_CAPABILITY {
 </tr>
 <tr class="odd">
 <td><p>ManufacturerID</p></td>
-<td><p>4-byte Vendor ID (see [TCG07], "TPM Capabilities Vendor ID" section)</p></td>
+<td><p>4-byte Vendor ID (see [TCG07], &quot;TPM Capabilities Vendor ID&quot; section)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Description**
 
@@ -290,7 +290,7 @@ For this version of the specification:
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="3.4_EFI_TREE_PROTOCOL.GetEventLog"></span><span id="3.4_efi_tree_protocol.geteventlog"></span><span id="3.4_EFI_TREE_PROTOCOL.GETEVENTLOG"></span>3.4 EFI\_TREE\_PROTOCOL.GetEventLog
 
@@ -337,7 +337,7 @@ EFI_STATUS
 </tbody>
 </table>
 
- 
+ 
 
 **Description**
 
@@ -386,7 +386,7 @@ The Event Log area returned by this function is released when ExitBootServices (
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="3.5_EFI_TREE_PROTOCOL.HashLogExtendEvent"></span><span id="3.5_efi_tree_protocol.hashlogextendevent"></span><span id="3.5_EFI_TREE_PROTOCOL.HASHLOGEXTENDEVENT"></span>3.5 EFI\_TREE\_PROTOCOL.HashLogExtendEvent
 
@@ -441,7 +441,7 @@ EFI_STATUS
 </tbody>
 </table>
 
- 
+ 
 
 Related Definitions
 
@@ -492,7 +492,7 @@ typedef UINT32 TrEE_EVENTTYPE;
 </tbody>
 </table>
 
- 
+ 
 
 **Flag Values**
 
@@ -586,7 +586,7 @@ Upon invocation, the function shall perform the following actions:
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="3.6_EFI_TREE_PROTOCOL.SubmitCommand"></span><span id="3.6_efi_tree_protocol.submitcommand"></span><span id="3.6_EFI_TREE_PROTOCOL.SUBMITCOMMAND"></span>3.6 EFI\_TREE\_PROTOCOL.SubmitCommand
 
@@ -638,7 +638,7 @@ EFI_STATUS
 </tbody>
 </table>
 
- 
+ 
 
 **Description**
 
@@ -679,7 +679,7 @@ The TPM 2.0 MUST have access to its persistent storage prior to the call to Exit
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="References"></span><span id="references"></span><span id="REFERENCES"></span>References
 
@@ -692,27 +692,27 @@ The TPM 2.0 MUST have access to its persistent storage prior to the call to Exit
 <tbody>
 <tr class="odd">
 <td><p>[MSFT08]</p></td>
-<td><p>Microsoft Corporation, "Windows Authenticode Portable Executable Signature Format," Version 1.0, March 21, 2008.</p></td>
+<td><p>Microsoft Corporation, &quot;Windows Authenticode Portable Executable Signature Format,&quot; Version 1.0, March 21, 2008.</p></td>
 </tr>
 <tr class="even">
 <td><p>[RFC2119]</p></td>
-<td><p>Bradner, S., "Keywords for Use in RFCs to Indicate Requirement Levels," IETF RFC 2119, March 1997.</p></td>
+<td><p>Bradner, S., &quot;Keywords for Use in RFCs to Indicate Requirement Levels,&quot; IETF RFC 2119, March 1997.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TCG06a]</p></td>
-<td><p>Trusted Computing Group, "TCG EFI Protocol," Version 1.20 Revision 1.00, June 9, 2006.</p></td>
+<td><p>Trusted Computing Group, &quot;TCG EFI Protocol,&quot; Version 1.20 Revision 1.00, June 9, 2006.</p></td>
 </tr>
 <tr class="even">
 <td><p>[TCG06b]</p></td>
-<td><p>Trusted Computing Group, "TCG EFI Platform Specification," Version 1.20 Revision 1.0, June 7, 2006.</p></td>
+<td><p>Trusted Computing Group, &quot;TCG EFI Platform Specification,&quot; Version 1.20 Revision 1.0, June 7, 2006.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TCG07]</p></td>
-<td><p>Trusted Computing Group, "TCG Vendor ID Registry," Version 1.0, Revision 0.1, August 31, 2007.</p></td>
+<td><p>Trusted Computing Group, &quot;TCG Vendor ID Registry,&quot; Version 1.0, Revision 0.1, August 31, 2007.</p></td>
 </tr>
 <tr class="even">
 <td><p>[UEFI12]</p></td>
-<td><p>UEFI, "Unified Extensible Firmware Interface Specification," Version 2.3.1 Errata C,</p></td>
+<td><p>UEFI, &quot;Unified Extensible Firmware Interface Specification,&quot; Version 2.3.1 Errata C,</p></td>
 </tr>
 <tr class="odd">
 <td><p>June 2012.</p></td>
@@ -721,15 +721,15 @@ The TPM 2.0 MUST have access to its persistent storage prior to the call to Exit
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Appendix_A__Static_Root_of_Trust_Measurements"></span><span id="appendix_a__static_root_of_trust_measurements"></span><span id="APPENDIX_A__STATIC_ROOT_OF_TRUST_MEASUREMENTS"></span>Appendix A: Static Root of Trust Measurements
 
->[!IMPORTANT]
->  
-Appendix A implementation of PCR\[7\] measurements is mandatory for InstantGo systems.
+> [!IMPORTANT]
+> 
+> Appendix A implementation of PCR\[7\] measurements is mandatory for InstantGo systems.
 
- 
+ 
 
 At a high level, firmware is responsible for measuring the following components during boot:
 
@@ -839,15 +839,15 @@ For all EFI variable value events, the EventType shall be EV\_EFI\_VARIABLE\_DRI
 
 6.  Before launching any additional EFI Drivers or EFI Boot Applications, the UEFI firmware SHALL check if the entry in the EFI\_IMAGE\_SECURITY\_DATABASE\_GUID/EFI\_IMAGE\_SECURITY\_DATABASE variable which validates the EFI image has previously been measured with the EV\_EFI\_VARIABLE\_AUTHORITY event type in PCR\[7\]. If it has not been, it MUST be measured as described in the previous step. If it has been measured previously, it MUST NOT be measured again.
 
->[!NOTE]
->  
-A measurement example for PCR\[7\] measurements is available upon request from Microsoft.
+> [!NOTE]
+> 
+> A measurement example for PCR\[7\] measurements is available upon request from Microsoft.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

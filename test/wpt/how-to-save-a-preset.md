@@ -26,14 +26,14 @@ In Windows Performance Analyzer (WPA), when you change the preset combination of
     **Note**  
     An asterisk (\*) displays when you change the preset graph.
 
-     
+     
 
 2.  Enter the name you want to give the new graph preset, and then click **Save**.
 
 **Note**  
 If you do not want to save your changes (to create a new preset graph), click **Reset**.
 
- 
+ 
 
 ## Related topics
 
@@ -42,9 +42,9 @@ If you do not want to save your changes (to create a new preset graph), click **
 
 [Customize a Data Table](customize-a-data-table.md)
 
- 
+ 
 
- 
+ 
 
 
 

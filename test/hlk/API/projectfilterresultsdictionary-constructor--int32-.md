@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **ProjectFilterResultsDiction
 
 `Public Sub New ( _`
 
-          `capacity As Integer _`
+          `capacity As Integer _`
 
 `)`
 
@@ -46,7 +46,7 @@ This constructor initializes a new instance of the **ProjectFilterResultsDiction
 
 `public ProjectFilterResultsDictionary (`
 
-          `int capacity`
+          `int capacity`
 
 `)`
 
@@ -55,11 +55,11 @@ This constructor initializes a new instance of the **ProjectFilterResultsDiction
 
 *capacity*
 
-     The initial number of elements that the dictionary can contain.
+     The initial number of elements that the dictionary can contain.
 
- 
+ 
 
- 
+ 
 
 
 

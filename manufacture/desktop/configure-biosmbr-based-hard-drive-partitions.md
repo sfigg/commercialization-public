@@ -100,7 +100,7 @@ We recommend changing the Windows drive letter to a letter that’s near the end
 
 If you reboot, Windows PE reassigns disk letters alphabetically, starting with the letter C, without regard to the configuration in Windows Setup. This configuration can change based on the presence of different drives, such as USB flash drives.
 
- 
+ 
 
 The following steps describe how to partition your hard drives and prepare to apply images. You can use the code in the sections that follow to complete these steps.
 
@@ -169,9 +169,9 @@ Use a deployment script to apply the Windows images on the newly created partiti
 
 [Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)
 
- 
+ 
 
- 
+ 
 
 
 

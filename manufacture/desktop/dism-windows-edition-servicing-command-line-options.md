@@ -14,7 +14,7 @@ ms.topic: article
 # DISM Windows Edition-Servicing Command-Line Options
 
 
-You can use the Windows edition-servicing commands to change one edition of Windows to a higher edition in the same edition family. The edition packages for each potential target edition are staged in a Windows image. This is referred to as an edition-family image. Because the target editions are staged, you can service a single image, and the updates will be applied appropriately to each edition in the image. This can help reduce the number of images that you have to manage, but it might increase the factory time or end-user time that must be spent in the **specialize** configuration pass.
+You can use the Windows edition-servicing commands to change one edition of Windows to a higher edition in the same edition family. The edition packages for each potential target edition are staged in a Windows image. This is referred to as an edition-family image. Because the target editions are staged, you can service a single image, and the updates will be applied appropriately to each edition in the image. This can help reduce the number of images that you have to manage, but it might increase the factory time or end-user time that must be spent in the **specialize** configuration pass.
 
 Offline changes do not require a product key. If you change to a higher edition using offline servicing, you can add the product key using one of the following methods:
 
@@ -80,11 +80,10 @@ The following table provides a description for how each edition-servicing option
 <td align="left"><p>Use the <strong>/Set-Edition</strong> option with no arguments to change an offline Windows image to a higher edition.</p>
 <p>To change an online Windows Server operation system to a higher edition, you must use the <strong>/Set-Edition</strong> option with the <strong>/AcceptEula</strong> and <strong>/ProductKey</strong> arguments.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>You should not use the <strong>/Set-Edition</strong> option on an image that has already been changed to a higher edition. It is recommended that you use this option on the lowest edition available in the edition family.</p>
+<strong>Important</strong><br/><p>You should not use the <strong>/Set-Edition</strong> option on an image that has already been changed to a higher edition. It is recommended that you use this option on the lowest edition available in the edition family.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Use <strong>/GetEula</strong> on an online image to copy the end-user license agreement to a specified path.</p>
 <p>The <strong>/AcceptEula</strong> argument accepts the end-user license agreement and is required in order to change the Windows edition on an online image.</p>
@@ -104,18 +103,18 @@ The following table provides a description for how each edition-servicing option
 </tbody>
 </table>
 
- 
+
 
 ## <span id="BKMK_Limitations"></span><span id="bkmk_limitations"></span><span id="BKMK_LIMITATIONS"></span>Limitations
 
 
 -   If you do not enter the product key when you set the edition of your offline image, you must either enter the product key during OOBE, or use an unattended answer file to enter the product key during the **specialize** configuration pass.
 
--   You cannot use edition-servicing commands on a Windows Preinstallation Environment (Windows PE) image.
+-   You cannot use edition-servicing commands on a Windows Preinstallation Environment (Windows PE) image.
 
 -   To maintain edition-specific customizations, you should apply edition-specific answer files after the edition upgrade.
 
--   If you want to run the **/Set-Edition** option against a 64-bit image with more than 30 language packs, you must run it from a 64-bit computer. Otherwise, you might receive an out-of-memory error. This limitation only exists if you are manipulating a 64-bit image from a 32-bit computer. This limitation does not exist when you run this option on a computer that matches the architecture of the image.
+-   If you want to run the **/Set-Edition** option against a 64-bit image with more than 30 language packs, you must run it from a 64-bit computer. Otherwise, you might receive an out-of-memory error. This limitation only exists if you are manipulating a 64-bit image from a 32-bit computer. This limitation does not exist when you run this option on a computer that matches the architecture of the image.
 
 -   You cannot set a Windows image to a lower edition. The lowest edition will not appear when you run the **/Get-TargetEditions** option.
 
@@ -132,9 +131,9 @@ The following table provides a description for how each edition-servicing option
 
 [Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md)
 
- 
 
- 
+
+
 
 
 

@@ -32,29 +32,29 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IsValid](productinstanceisvalid-property.md)</p></td>
+<td><p><a href="productinstanceisvalid-property.md" data-raw-source="[IsValid](productinstanceisvalid-property.md)">IsValid</a></p></td>
 <td><p>Indicates whether or not this Product Instance is valid.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MachinePool](productinstancemachinepool-property.md)</p></td>
+<td><p><a href="productinstancemachinepool-property.md" data-raw-source="[MachinePool](productinstancemachinepool-property.md)">MachinePool</a></p></td>
 <td><p>This property represents the machine (the test computer) that this product instance has been detected on.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Name](productinstancename-property.md)</p></td>
+<td><p><a href="productinstancename-property.md" data-raw-source="[Name](productinstancename-property.md)">Name</a></p></td>
 <td><p>This property represents the product name for this <strong>ProductInstance</strong> object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OSPlatform](productinstanceosplatform-property.md)</p></td>
+<td><p><a href="productinstanceosplatform-property.md" data-raw-source="[OSPlatform](productinstanceosplatform-property.md)">OSPlatform</a></p></td>
 <td><p>This property represents the platform (operating system plus the architecture value) for this <strong>ProductInstance</strong> object.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Project](productinstanceproject-property.md)</p></td>
+<td><p><a href="productinstanceproject-property.md" data-raw-source="[Project](productinstanceproject-property.md)">Project</a></p></td>
 <td><p>This property represents the reference to the <strong>Project</strong> object containing this product instance.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -78,11 +78,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

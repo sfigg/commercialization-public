@@ -82,7 +82,7 @@ public void RemoveMachine(Machine machineToRemove)
 
 *machineToRemove*
 
-     The machine (test computer) to remove.
+     The machine (test computer) to remove.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -98,9 +98,9 @@ An exception is thrown if
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,7 +36,7 @@ BCDEdit is limited to the standard data types and is designed primarily to perfo
 
 The following command-line options are available for BCDEdit.exe.
 
-**BCDEdit /Command***\[Argument1\] \[Argument2\] ...*
+**BCDEdit /Command**<em>\[Argument1\] \[Argument2\] ...</em>
 
 ### <span id="Help"></span><span id="help"></span><span id="HELP"></span>Help
 
@@ -61,7 +61,7 @@ The following command-line options are available for BCDEdit.exe.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Operating_on_a_store"></span><span id="operating_on_a_store"></span><span id="OPERATING_ON_A_STORE"></span>Operating on a store
 
@@ -73,7 +73,7 @@ The following command-line options are available for BCDEdit.exe.
 | /store       | This option can be used with most BCDedit commands to specify the store to be used. If this option is not specified, then BCDEdit operates on the system store. Running the bcdedit /store command by itself is equivalent to running the bcdedit /enum active command. |
 | /sysstore    | Sets the system store device. This only affects EFI-based systems. It does not persist across reboots, and is only used in cases where the system store device is ambiguous.                                                                                            |
 
- 
+ 
 
 ### <span id="Operating_on_entries_in_a_store"></span><span id="operating_on_entries_in_a_store"></span><span id="OPERATING_ON_ENTRIES_IN_A_STORE"></span>Operating on entries in a store
 
@@ -84,7 +84,7 @@ The following command-line options are available for BCDEdit.exe.
 | /delete | Deletes an element from a specified entry.                                                                                                                                                                                                                                                        |
 | /mirror | Creates mirror of entries in the store.                                                                                                                                                                                                                                                           |
 
- 
+ 
 
 ### <span id="Changing_entry_options"></span><span id="changing_entry_options"></span><span id="CHANGING_ENTRY_OPTIONS"></span>Changing entry options
 
@@ -132,7 +132,7 @@ Bcdedit /set flightsigning off
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Controlling_the_boot_manager"></span><span id="controlling_the_boot_manager"></span><span id="CONTROLLING_THE_BOOT_MANAGER"></span>Controlling the boot manager
 
@@ -144,7 +144,7 @@ Bcdedit /set flightsigning off
 | /timeout           | Specifies the time to wait, in seconds, before the boot manager selects the default entry.                                                                                                                                                           |
 | /toolsdisplayorder | Specifies the display order for the boot manager to use when displaying the Tools menu.                                                                                                                                                              |
 
- 
+ 
 
 ### <span id="Emergency_Management_Services_options"></span><span id="emergency_management_services_options"></span><span id="EMERGENCY_MANAGEMENT_SERVICES_OPTIONS"></span>Emergency Management Services options
 
@@ -154,7 +154,7 @@ Bcdedit /set flightsigning off
 | /ems         | Enables or disables EMS for the specified operating system boot entry.                                                    |
 | /emssettings | Sets the global EMS settings for the computer. /emssettings does not enable or disable EMS for any particular boot entry. |
 
- 
+ 
 
 ### <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>Debugging
 
@@ -165,7 +165,7 @@ Bcdedit /set flightsigning off
 | /debug              | Enables or disables the kernel debugger for a specified boot entry.                                                                                                                                                                                                       |
 | /hypervisorsettings | Sets the hypervisor parameters.                                                                                                                                                                                                                                           |
 
- 
+ 
 
 To troubleshoot a new installation, enable debug mode by modifying the boot configuration file (BCD). For example, use the following syntax to enable kernel or boot debug.
 
@@ -190,7 +190,7 @@ For examples of BCDEdit, see [Boot Configuration Data in Windows Vista](http://g
 | /eventsettings | Sets the global remote event logging parameters.                        |
 | /event         | Enables or disables remote event logging for an operating system entry. |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -205,9 +205,9 @@ For examples of BCDEdit, see [Boot Configuration Data in Windows Vista](http://g
 
 [Boot Configuration Data in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=69448)
 
- 
+ 
 
- 
+ 
 
 
 

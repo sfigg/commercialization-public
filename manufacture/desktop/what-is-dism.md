@@ -39,7 +39,7 @@ DISM can be used to mount and service a Windows image from a .wim file, .ffu fil
 For a complete technical description of WIM, see the [Windows Imaging File Format (WIM) white paper](http://go.microsoft.com/fwlink/?LinkId=92227).
 
 DISM can be used to service Windows images starting with Windows 7, Windows Server 2008 R2, and their associated versions of [WinPE](winpe-intro.md) and [WinRE](windows-recovery-environment--windows-re--technical-reference.md). The commands and options that are available for servicing an image depend on which Windows operating system you are servicing, and whether the image is offline or a currently running operating system.
- 
+ 
 For a list of the supported platforms and architecture types, see [DISM Supported Platforms](dism-supported-platforms.md).
 
 ### <span id="BKMK_common"></span><span id="bkmk_common"></span><span id="BKMK_COMMON"></span>Common Servicing and Management Scenarios
@@ -105,4 +105,4 @@ If you need to copy and ADK version of DISM to a PC that does not have the ADK, 
 
 [Understanding Servicing Strategies](understanding-servicing-strategies.md)
 
- 
+ 

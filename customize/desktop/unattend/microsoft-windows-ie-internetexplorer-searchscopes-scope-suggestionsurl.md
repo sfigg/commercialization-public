@@ -23,7 +23,7 @@ The `SuggestionsURL` setting specifies the URL where suggestions can be retrieve
 **Note**  
 To specify search suggestions by using a search based on JavaScript Object Notation (JSON), use the [SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl-json.md) setting instead.
 
- 
+ 
 
 For information on creating Search Scopes, see [Search Provider Extensibility](http://go.microsoft.com/fwlink/?LinkId=137666).
 
@@ -44,7 +44,7 @@ For information on creating Search Scopes, see [Search Provider Extensibility](h
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ The following XML output shows how to specify a URL to provide search suggestion
 
 [SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scope-suggestionsurl-json.md)
 
- 
+ 
 
- 
+ 
 
 
 

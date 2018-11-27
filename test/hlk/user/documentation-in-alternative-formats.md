@@ -34,15 +34,15 @@ Fax: (609) 987-8116
 
 Recording for the Blind & Dyslexic website
 
->[!NOTE]
->  
-Web addresses can change, so you might be unable to connect to the website or sites mentioned here.
+> [!NOTE]
+> 
+> Web addresses can change, so you might be unable to connect to the website or sites mentioned here.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

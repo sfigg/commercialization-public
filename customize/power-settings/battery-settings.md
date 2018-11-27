@@ -47,27 +47,27 @@ Settings in this subgroup control the customization of battery actions and thres
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Critical battery action](battery-settings-critical-battery-action.md)</p></td>
+<td><p><a href="battery-settings-critical-battery-action.md" data-raw-source="[Critical battery action](battery-settings-critical-battery-action.md)">Critical battery action</a></p></td>
 <td><p>Specifies the action to take when the critical batter level is reached.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Critical battery threshold](battery-settings-critical-battery-threshold.md)</p></td>
+<td><p><a href="battery-settings-critical-battery-threshold.md" data-raw-source="[Critical battery threshold](battery-settings-critical-battery-threshold.md)">Critical battery threshold</a></p></td>
 <td><p>Specifies a percentage of capacity when the critical battery action is taken.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Low battery action](battery-settings-low-battery-action.md)</p></td>
+<td><p><a href="battery-settings-low-battery-action.md" data-raw-source="[Low battery action](battery-settings-low-battery-action.md)">Low battery action</a></p></td>
 <td><p>Specifies the action to take when the low batter level is reached.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Low battery threshold](battery-settings-low-battery-threshold.md)</p></td>
-<td><p>Specifies a percentage of capacity when the low battery action is taken and the [low battery warning](battery-settings-low-battery-warning.md), if enabled, appears.</p></td>
+<td><p><a href="battery-settings-low-battery-threshold.md" data-raw-source="[Low battery threshold](battery-settings-low-battery-threshold.md)">Low battery threshold</a></p></td>
+<td><p>Specifies a percentage of capacity when the low battery action is taken and the <a href="battery-settings-low-battery-warning.md" data-raw-source="[low battery warning](battery-settings-low-battery-warning.md)">low battery warning</a>, if enabled, appears.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Low battery warning](battery-settings-low-battery-warning.md)</p></td>
+<td><p><a href="battery-settings-low-battery-warning.md" data-raw-source="[Low battery warning](battery-settings-low-battery-warning.md)">Low battery warning</a></p></td>
 <td><p>Specifies whether the OS displays a UI warning at the batter meter when the battery capacity crosses the low battery threshold.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Reserve battery level](battery-settings-reserve-battery-level.md)</p></td>
+<td><p><a href="battery-settings-reserve-battery-level.md" data-raw-source="[Reserve battery level](battery-settings-reserve-battery-level.md)">Reserve battery level</a></p></td>
 <td><p>Specifies a percentage of capacity when the reserve battery warning is shown to the user.</p></td>
 </tr>
 </tbody>

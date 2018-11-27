@@ -25,7 +25,7 @@ This function provides value equality functionality for this object.
 
 `public bool Equals (`
 
-          `NotificationBase other`
+          `NotificationBase other`
 
 `)`
 
@@ -46,9 +46,9 @@ Returns true if the objects are the same.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

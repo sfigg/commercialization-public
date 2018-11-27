@@ -18,11 +18,11 @@ ms.topic: article
 
 This automated test resets the machine policies that are used by the test on the test computers in the machine pool.
 
->[!NOTE]
->  
-This test should be run after all other tests are finished.
+> [!NOTE]
+> 
+> This test should be run after all other tests are finished.
 
- 
+
 
 This test job completes the following actions:
 
@@ -41,6 +41,7 @@ This test job completes the following actions:
 7.  Remove stressclients dimension on MC
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Server.SystemStress.ServerStress</li><li>System.Server.FaultTolerant.Core</li><li>System.Server.SVVP.SVVP</li></ul> |  
@@ -53,7 +54,7 @@ This test job completes the following actions:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -77,13 +78,13 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting System Server Testing](troubleshooting-system-server-testing.md).
 
- 
 
- 
+
+
 
 
 

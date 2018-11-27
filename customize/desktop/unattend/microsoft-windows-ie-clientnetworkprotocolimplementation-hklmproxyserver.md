@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 `HKLMProxyServer` is effective only if the Group Policy for Microsoft Internet Explorer: "Make proxy settings per-machine (rather than per-user)" is set to **Enabled**. This Group Policy is accessible through the registry key:`HKLMSoftware\Policies\Microsoft\Windows\CurrentVersion\InternetSettings`. When this setting is active, it appears as `ProxySettingsPerUser`, as the type: `ProxySettingsPerUser`, as the type: **REG DWORD**, with the default value set to **0**.
 
- 
+ 
 
 ## Values
 
@@ -41,7 +41,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to specify the hostname of the proxy server o
 
 [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
- 
+ 
 
- 
+ 
 
 
 

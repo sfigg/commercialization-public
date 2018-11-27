@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 You can use this setting only to hide the passwords for local accounts . Domain account passwords are not hidden.
 
- 
+ 
 
 You cannot set this value directly. Select **Hide sensitive data** on the **Tools** menu to hide all passwords with a `PlainText` setting in your answer file.
 
@@ -47,12 +47,12 @@ You cannot set this value directly. Select **Hide sensitive data** on the **Tool
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 This element appears above the **Settings** bar in the **Properties** pane of Windows System Manager. It always appears as **true** in the user interface (UI), even if you have selected **Hide sensitive data**.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ Windows Server 2016
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

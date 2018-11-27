@@ -59,9 +59,9 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 
 Returns null if a manufacturer cannot be found.
 
- 
+ 
 
- 
+ 
 
 
 

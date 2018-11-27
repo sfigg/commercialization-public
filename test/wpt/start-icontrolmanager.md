@@ -69,21 +69,21 @@ The following table describes possible return values.
 </tr>
 <tr class="even">
 <td><p>E_WPRC_FAILED_TO_START_PROFILE</p></td>
-<td><p>The library failed to start a profile in the profile collection. Use [IControlErrorInfo](icontrolerrorinfo.md) to obtain detailed error information.</p></td>
+<td><p>The library failed to start a profile in the profile collection. Use <a href="icontrolerrorinfo.md" data-raw-source="[IControlErrorInfo](icontrolerrorinfo.md)">IControlErrorInfo</a> to obtain detailed error information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IControlManager](icontrolmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

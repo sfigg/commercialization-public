@@ -51,7 +51,7 @@ If you need to perform deployment customizations, the following sections explain
 | 23" | QFHD (4K) | 3840 | 2160 | 192 | 200% |
 | 24" | QHD | 2560 | 1440 | 122 | 125% |
 
- 
+ 
 
 To programmatically find this information for any device, you can write a utility program that reports back data. The native primary resolution is retrieved by calling the API [GetDeviceCaps() function](http://go.microsoft.com/fwlink/p/?linkid=331144), using the hdc for the desktop and the HORZRES and VERZRES indices:
 
@@ -89,7 +89,7 @@ These results are returned in a coordinate system in which 96 corresponds to 100
 | 144 | 150 |
 |192 | 200 |
 
- 
+ 
 
 **Note**  
 This API will return different results depending on the DPI awareness mode of your application. Configuring the awareness mode requires adding XML to the application manifest, as detailed below:
@@ -115,7 +115,7 @@ The **Control Panel\\ Appearance and Personalization\\Display** user interface (
 | 0 | Different scale factors for each display: Windows 8.1 default.Content that is moved from one display to another will be the right size, but can be bitmap-scaled. |
 | 1 | Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior. Content that is moved from one display to another might be the wrong size. |
 
- 
+ 
 
 ## <span id="override"></span><span id="OVERRIDE"></span>Scaling override in Windows 8.1 scaling mode
 
@@ -130,7 +130,7 @@ When the **Let me choose one scaling level for all my displays** checkbox is cle
 | 0 | Use the default value for each display. |
 | 0> | Increase each display factor by this value (using the previous example, +1 corresponds to 200% scaling). |
 
- 
+ 
 
 All display scale factors in this mode are constrained to be one of these four values: 100%, 125%, 150%, 200%. In addition, after scaling is applied, applications expect to have at least 720 effective lines of resolution (that is, the physical vertical resolution of the display divided by the scale factor); this can further limit the range of allowed display scale factors. *Table 5 Display Values* shows which values are allowed for different sized displays:
 
@@ -143,7 +143,7 @@ All display scale factors in this mode are constrained to be one of these four v
 | >=1080 and <1440 | 100%, 125%, 150% |
 | >=1440 | 100%, 125%, 150%, 200% |
 
- 
+ 
 
 ## <span id="system"></span><span id="SYSTEM"></span>System-wide scale factor in Windows 8 scaling mode
 
@@ -160,16 +160,16 @@ When the **Let me choose one scaling level for all my displays** checkbox is che
 | 192 | 200% scaling on every display |
 | \<other> | \<other> 96/100 scaling on every display |
 
- 
+ 
 ## <span id="related_topics"></span>Related topics
 
 [Documentation for developing High DPI applications](https://msdn.microsoft.com/library/windows/desktop/dd464646.aspx)
 
 [High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 
- 
+ 
 
- 
+ 
 
 
 

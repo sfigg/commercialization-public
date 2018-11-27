@@ -37,9 +37,9 @@ The following example merges individual trace files into merged.etl and adds ima
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

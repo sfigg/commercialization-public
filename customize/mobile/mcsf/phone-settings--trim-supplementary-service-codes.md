@@ -100,7 +100,7 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing the customization to a phone.

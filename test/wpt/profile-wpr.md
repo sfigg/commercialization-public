@@ -23,8 +23,8 @@ Represents a collection of problem categories and collectors elements.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<**Profile**\>
+  * \<[Profiles](profiles.md)\>
+    * \<**Profile**\>
 
 
 ## Syntax

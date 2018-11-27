@@ -82,7 +82,7 @@ Option 2: Manually patch your existing SQL Server before HLK install.
 
 ### <span id="Improved_playlist_support"></span><span id="improved_playlist_support"></span><span id="IMPROVED_PLAYLIST_SUPPORT"></span>Improved playlist support
 
-The process for loading and using playlists has been improved and simplified. For more information, see [Step 6: Select and run tests](getstarted\step-6-select-and-run-tests.md) in the Getting Started guide
+The process for loading and using playlists has been improved and simplified. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/step-6-select-and-run-tests">Step 6: Select and run tests</a> in the Getting Started guide
 
 ### <span id="Support_for_ARM64_desktop"></span><span id="support_for_arm64_desktop"></span><span id="SUPPORT_FOR_ARM64_DESKTOP"></span>Support for ARM64 desktop
 
@@ -98,17 +98,17 @@ The Results tab now indicates when a test fails due to a system crash. The tab a
 
 See the following topics for more information:
 
--   [Step 7: View test results and log files (Getting started guide)](getstarted\step-7-view-test-results-and-log-files.md)
--   [HLK Studio - Results Tab](user\hlk-studio---results-tab.md)
--   [Troubleshooting Windows HLK Test Failures (system crashes)](user\troubleshooting-windows-hlk-test-failures.md#sysx)
+-   <a href"https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/step-7-view-test-results-and-log-files">Step 7: View test results and log files (Getting started guide)</a>
+-   <a href"https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/hlk-studio---results-tab">HLK Studio - Results Tab</a>
+-   <a href"https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/troubleshooting-windows-hlk-test-failures">Troubleshooting Windows HLK Test Failures (system crashes)</a>
 
 ### <span id="Exporting_failed_HLK_jobs"></span><span id="exporting_failed_hlk_jobs"></span><span id="EXPORTING_FAILED_HLK_JOBS"></span>Exporting failed HLK jobs
 
-You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see [Exporting a Failed HLK Job](user\exporting-a-failed-hlk-job.md).
+You can now export a failed job and re-run it on a machine that does not have the HLK Client installed. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/exporting-a-failed-hlk-job">Exporting a Failed HLK Job></a>.
 
 ### <span id="Support_for_Mobile_testing"></span><span id="support_for_mobile_testing"></span><span id="SUPPORT_FOR_MOBILE_TESTING"></span>Support for Mobile testing
 
-Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see [HLK Proxy Client Getting Started Guide](getstarted\hlk-proxy-client-getting-started-guide.md).
+Mobile devices running Test and Health images are now supported for testing with the HLK. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/hlk-proxy-client-getting-started-guide">HLK Proxy Client Getting Started Guided</a>.
 
 ### <span id="SQL_Server_2012_Express_SP2"></span><span id="sql_server_2012_express_sp2"></span><span id="SQL_SERVER_2012_EXPRESS_SP2"></span>SQL Server 2012 Express SP2
 
@@ -120,11 +120,11 @@ Test levels have been replaced by Development Phases to better align with the ha
 
 ### <span id="Playlists"></span><span id="playlists"></span><span id="PLAYLISTS"></span>Playlists
 
-Playlists describe a collection of tests and can be created from the HLK Studio and [Object Model](API\microsoftwindowskitshardwareobjectmodel.md) to define custom test passes.
+Playlists describe a collection of tests and can be created from the HLK Studio and <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/api/microsoftwindowskitshardwareobjectmodel">Object Model</a> to define custom test passes.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/afc1a262-6147-448f-910c-dbb1bcb18d07?autoplay=false]
 
-Learn more about playlists in the [Getting Started Guide](getstarted\step-6-select-and-run-tests.md).
+Learn more about playlists in the <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/step-6-select-and-run-tests">Getting Started Guide</a>.
 
 ### <span id="Windows_Hardware_Compatibility_Program"></span><span id="windows_hardware_compatibility_program"></span><span id="WINDOWS_HARDWARE_COMPATIBILITY_PROGRAM"></span>Windows Hardware Compatibility Program
 
@@ -143,7 +143,7 @@ To support unified driver submissions, results from HCK and HLK projects can be 
 
 ### <span id="Virtual_machine_support"></span><span id="virtual_machine_support"></span><span id="VIRTUAL_MACHINE_SUPPORT"></span>Virtual machine support
 
-The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the [minimum requirements](getstarted\windows-hlk-prerequisites.md) for the HLK Controller.
+The HLK Controller now supports installation and execution in a virtual machine. When configuring your virtual machines, ensure the virtual machine meets the <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/getstarted/windows-hlk-prerequisites">minimum requirements</a> for the HLK Controller.
 
 ### <span id="Partial_packaging"></span><span id="partial_packaging"></span><span id="PARTIAL_PACKAGING"></span>Partial packaging
 

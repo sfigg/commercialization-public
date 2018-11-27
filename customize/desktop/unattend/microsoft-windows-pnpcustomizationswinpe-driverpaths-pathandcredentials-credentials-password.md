@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -89,9 +89,9 @@ The following XML output specifies the Universal Naming Convention (UNC) paths t
 
 [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

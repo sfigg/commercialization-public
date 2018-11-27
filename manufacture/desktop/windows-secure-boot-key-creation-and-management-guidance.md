@@ -43,7 +43,7 @@ This document serves as a starting point in developing customer ready PCs, facto
 
 The UEFI (Unified Extensible Firmware Interface) specification defines a firmware execution authentication process called Secure Boot. As an industry standard, Secure Boot defines how platform firmware manages certificates, authenticates firmware, and how the operating system interfaces with this process.
 
-Secure Boot is based on the Public Key Infrastructure (PKI) process to authenticate modules before they are allowed to execute. These modules can include firmware drivers, option ROMs, UEFI drivers on disk, UEFI applications, or UEFI boot loaders. Through image authentication before execution, Secure Boot reduces the risk of pre-boot malware attacks such as rootkits. Microsoft relies on UEFI Secure Boot in Windows 8 and above as part of its Trusted Boot security architecture to improve platform security for our customers. Secure Boot is required for Windows 8 and above client PCs, and for Windows Server 2016 as defined in the Windows Hardware Compatibility Requirements.
+Secure Boot is based on the Public Key Infrastructure (PKI) process to authenticate modules before they are allowed to execute. These modules can include firmware drivers, option ROMs, UEFI drivers on disk, UEFI applications, or UEFI boot loaders. Through image authentication before execution, Secure Boot reduces the risk of pre-boot malware attacks such as rootkits. Microsoft relies on UEFI Secure Boot in Windows 8 and above as part of its Trusted Boot security architecture to improve platform security for our customers. Secure Boot is required for Windows 8 and above client PCs, and for Windows Server 2016 as defined in the Windows Hardware Compatibility Requirements.
 
 The Secure Boot process works as follows and as shown in Figure 1:
 
@@ -137,163 +137,163 @@ In a Secure Boot public key system you have the following:
 
 The UEFI-defined root of trust consists of the Platform Key and any keys an OEM or ODM includes in the firmware core. Pre-UEFI security and a root of trust are not addressed by the UEFI Secure Boot process, but instead by National Institute of Standards and Technology (NIST), and Trusted Computing Group (TCG) publications referenced in this paper.
 
--   **1.3.1 Secure Boot requirements**
+- **1.3.1 Secure Boot requirements**
 
-    You’ll need to consider the following parameters for implementing Secure Boot:
+  You’ll need to consider the following parameters for implementing Secure Boot:
 
-    -   Customer requirements
+  -   Customer requirements
 
-    -   Windows Hardware Compatibility requirements
+  -   Windows Hardware Compatibility requirements
 
-    -   Key generation and management requirements.
+  -   Key generation and management requirements.
 
-    You would need to pick hardware for Secure Boot key management like Hardware Security Modules (HSMs), consider special requirements on PCs to ship to governments and other agencies and finally the process of creating, populating and managing the life cycle of various Secure Boot keys.
+  You would need to pick hardware for Secure Boot key management like Hardware Security Modules (HSMs), consider special requirements on PCs to ship to governments and other agencies and finally the process of creating, populating and managing the life cycle of various Secure Boot keys.
 
--   **1.3.2 Secure Boot related keys**
+- **1.3.2 Secure Boot related keys**
 
-    The keys used for Secure Boot are below:
+  The keys used for Secure Boot are below:
 
-    ![pk, kek, db, dbx, and firmware key, winrt key](images/dep-8-secureboot-allkeys.png)
+  ![pk, kek, db, dbx, and firmware key, winrt key](images/dep-8-secureboot-allkeys.png)
 
-    *Figure 3: Keys related to Secure Boot*
+  *Figure 3: Keys related to Secure Boot*
 
-    Figure 3 above represents the signatures and keys in a PC with Secure Boot. The platform is secured through a platform key that the OEM installs in firmware during manufacturing. Other keys are used by Secure Boot to protect access to databases that store keys to allow or disallow execution of firmware.
+  Figure 3 above represents the signatures and keys in a PC with Secure Boot. The platform is secured through a platform key that the OEM installs in firmware during manufacturing. Other keys are used by Secure Boot to protect access to databases that store keys to allow or disallow execution of firmware.
 
-    The authorized database (db) contains public keys and certificates that represent trusted firmware components and operating system loaders. The forbidden signature database (dbx) contains hashes of malicious and vulnerable components as well as compromised keys and certificates and blocks execution of those malicious components. The strength of these policies is based on signing firmware using Authenticode and Public Key Infrastructure (PKI). PKI is a well-established process for creating, managing, and revoking certificates that establish trust during information exchange. PKI is at the core of the security model for Secure Boot.
+  The authorized database (db) contains public keys and certificates that represent trusted firmware components and operating system loaders. The forbidden signature database (dbx) contains hashes of malicious and vulnerable components as well as compromised keys and certificates and blocks execution of those malicious components. The strength of these policies is based on signing firmware using Authenticode and Public Key Infrastructure (PKI). PKI is a well-established process for creating, managing, and revoking certificates that establish trust during information exchange. PKI is at the core of the security model for Secure Boot.
 
-    Below are more details on these keys.
+  Below are more details on these keys.
 
--   **1.3.3 Platform Key (PK)**
+- **1.3.3 Platform Key (PK)**
 
-    As per section 27.5.1 of the UEFI 2.3.1 Errata C, the platform key establishes a trust relationship between the platform owner and the platform firmware. The platform owner enrolls the public half of the key (PKpub) into the platform firmware as specified in **Section 7.2.1 of the UEFI 2.3.1 Errata C**. This step moves the platform into user mode from setup mode. Microsoft recommends that the Platform Key be of type **EFI\_CERT\_X509\_GUID** with public key algorithm RSA, public key length of 2048 bits, and signature algorithm sha256RSA. The platform owner may use type **EFI\_CERT\_RSA2048\_GUID** if storage space is a concern. Public keys are used to check signatures as described earlier in this document. The platform owner can later use the private half of the key (PKpriv):
+  As per section 27.5.1 of the UEFI 2.3.1 Errata C, the platform key establishes a trust relationship between the platform owner and the platform firmware. The platform owner enrolls the public half of the key (PKpub) into the platform firmware as specified in **Section 7.2.1 of the UEFI 2.3.1 Errata C**. This step moves the platform into user mode from setup mode. Microsoft recommends that the Platform Key be of type **EFI\_CERT\_X509\_GUID** with public key algorithm RSA, public key length of 2048 bits, and signature algorithm sha256RSA. The platform owner may use type **EFI\_CERT\_RSA2048\_GUID** if storage space is a concern. Public keys are used to check signatures as described earlier in this document. The platform owner can later use the private half of the key (PKpriv):
 
-    -   To change platform ownership you must put the firmware into UEFI defined **setup mode** which disables Secure Boot. We recommend reverting to setup mode only if there is a need to do this during manufacturing.
-    
-    -   For desktop PC, OEMs manage PK and necessary PKI associated with it. For Servers, OEMs by default manage PK and necessary PKI. Enterprise customers or Server customers can also customize PK, replacing the OEM-trusted PK with a custom-proprietary PK to lock down the trust in UEFI Secure Boot firmware to itself.
+  -   To change platform ownership you must put the firmware into UEFI defined **setup mode** which disables Secure Boot. We recommend reverting to setup mode only if there is a need to do this during manufacturing.
 
-    **1.3.3.1 To enroll or update a Key Exchange Key (KEK) Enrolling the Platform Key**
+  -   For desktop PC, OEMs manage PK and necessary PKI associated with it. For Servers, OEMs by default manage PK and necessary PKI. Enterprise customers or Server customers can also customize PK, replacing the OEM-trusted PK with a custom-proprietary PK to lock down the trust in UEFI Secure Boot firmware to itself.
 
-    The platform owner enrolls the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Service SetVariable() as specified in Section 7.2.1 of UEFI Spec 2.3.1 errata C, and resetting the platform. If the platform is in setup mode, then the new **PKpub** shall be signed with its **PKpriv** counterpart. If the platform is in user mode, then the new **PKpub** must be signed with the current **PKpriv**. If the PK is of type **EFI\_CERT\_X509\_GUID**, then this must be signed by the immediate **PKpriv**, not a private key of any certificate issued under the PK.
+  **1.3.3.1 To enroll or update a Key Exchange Key (KEK) Enrolling the Platform Key**
 
-    **1.3.3.2 Clearing the Platform Key**
+  The platform owner enrolls the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Service SetVariable() as specified in Section 7.2.1 of UEFI Spec 2.3.1 errata C, and resetting the platform. If the platform is in setup mode, then the new **PKpub** shall be signed with its **PKpriv** counterpart. If the platform is in user mode, then the new **PKpub** must be signed with the current **PKpriv**. If the PK is of type **EFI\_CERT\_X509\_GUID**, then this must be signed by the immediate **PKpriv**, not a private key of any certificate issued under the PK.
 
-    The platform owner clears the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Ser¬vice SetVariable() with a variable size of 0 and resetting the platform. If the platform is in setup mode, then the empty variable does not need to be authenticated. If the platform is in user mode, then the empty variable must be signed with the current **PKpriv**; see Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C for details. It is strongly recommended that the production PKpriv never be used to sign a package to reset the platform since this allows Secure Boot to be disabled programmatically. This is primarily a pre-production test scenario.
+  **1.3.3.2 Clearing the Platform Key**
 
-    The platform key may also be cleared using a secure platform-specific method. In this case, the global variable Setup Mode must also be updated to 1.
+  The platform owner clears the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Ser¬vice SetVariable() with a variable size of 0 and resetting the platform. If the platform is in setup mode, then the empty variable does not need to be authenticated. If the platform is in user mode, then the empty variable must be signed with the current **PKpriv**; see Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C for details. It is strongly recommended that the production PKpriv never be used to sign a package to reset the platform since this allows Secure Boot to be disabled programmatically. This is primarily a pre-production test scenario.
 
-    ![image: pk determines setup mode or user mode](images/dep-8-secureboot-pkstate.png)
+  The platform key may also be cleared using a secure platform-specific method. In this case, the global variable Setup Mode must also be updated to 1.
 
-    *Figure 4: Platform Key State diagram*
+  ![image: pk determines setup mode or user mode](images/dep-8-secureboot-pkstate.png)
 
-    **1.3.3.3 PK generation**
+  *Figure 4: Platform Key State diagram*
 
-    As per UEFI recommendations, the public key must be stored in non-volatile storage which is tamper and delete resistant on the PC. The Private keys stay secure at Partner or in the OEM’s Security Office and only the public key is loaded onto the platform. There are more details under section 2.2.1 and 2.3.
+  **1.3.3.3 PK generation**
 
-    The number of PK generated is at the discretion of the Platform owner (OEM). These keys could be:
+  As per UEFI recommendations, the public key must be stored in non-volatile storage which is tamper and delete resistant on the PC. The Private keys stay secure at Partner or in the OEM’s Security Office and only the public key is loaded onto the platform. There are more details under section 2.2.1 and 2.3.
 
-    1.  **One per PC**. Having one unique key for each device. This may be required for government agencies, financial institutions, or other server customers with high-security needs. It may require additional storage and crypto processing power to generate private and public keys for large numbers of PCs. This adds the complexity of mapping devices with their corresponding PK when pushing out firmware updates to the devices in the future. There are a few different HSM solutions available to manage large number of keys based on the HSM vendor. For more info, see [Secure Boot Key Generation Using HSM](http://go.microsoft.com/fwlink/?LinkId=321184).
+  The number of PK generated is at the discretion of the Platform owner (OEM). These keys could be:
 
-    2.  **One per model**. Having one key per PC model. The tradeoff here is that if a key is compromised all the machines within the same model would be vulnerable. This is recommended by Microsoft for desktop PCs.
+  1.  **One per PC**. Having one unique key for each device. This may be required for government agencies, financial institutions, or other server customers with high-security needs. It may require additional storage and crypto processing power to generate private and public keys for large numbers of PCs. This adds the complexity of mapping devices with their corresponding PK when pushing out firmware updates to the devices in the future. There are a few different HSM solutions available to manage large number of keys based on the HSM vendor. For more info, see [Secure Boot Key Generation Using HSM](http://go.microsoft.com/fwlink/?LinkId=321184).
 
-    3.  **One per product line**. If a key is compromised a whole product line would be vulnerable.
+  2.  **One per model**. Having one key per PC model. The tradeoff here is that if a key is compromised all the machines within the same model would be vulnerable. This is recommended by Microsoft for desktop PCs.
 
-    4.  **One per OEM**. While this may be the simplest to set up, if the key is compromised, every PC you manufacture would be vulnerable. To speed up operation on the factory floor, the PK and potentially other keys could be pre-generated and stored in a safe location. These could be later retrieved and used in the assembly line. Chapters 2 and 3 have more details.
+  3.  **One per product line**. If a key is compromised a whole product line would be vulnerable.
 
-    **1.3.3.4 Rekeying the PK**
+  4.  **One per OEM**. While this may be the simplest to set up, if the key is compromised, every PC you manufacture would be vulnerable. To speed up operation on the factory floor, the PK and potentially other keys could be pre-generated and stored in a safe location. These could be later retrieved and used in the assembly line. Chapters 2 and 3 have more details.
 
-    This may be needed if the PK gets compromised or as a requirement by a customer that for security reasons may decide to enroll their own PK.
+  **1.3.3.4 Rekeying the PK**
 
-    Rekeying could be done either for a model or PC based on what method was selected to create PK. All the newer PCs will get signed with the newly created PK.
+  This may be needed if the PK gets compromised or as a requirement by a customer that for security reasons may decide to enroll their own PK.
 
-    Updating the PK on a production PC would require either a variable update signed with the existing PK that replaces the PK or a firmware update package. An OEM could also create a SetVariable() package and distribute that with a simple application such as PowerShell that just changes the PK. The firmware update package would be signed by the secure firmware update key and verified by firmware. If doing a firmware update to update the PK, care should be taken to ensure the KEK, db, and dbx are preserved.
+  Rekeying could be done either for a model or PC based on what method was selected to create PK. All the newer PCs will get signed with the newly created PK.
 
-    On all PCs, it is recommended to not use the PK as the secure firmware update key. If the PKpriv is compromised then so is the secure firmware update key (since they are the same). In this case the update to enroll a new PKpub might not be possible since the process of updating has also been compromised.
+  Updating the PK on a production PC would require either a variable update signed with the existing PK that replaces the PK or a firmware update package. An OEM could also create a SetVariable() package and distribute that with a simple application such as PowerShell that just changes the PK. The firmware update package would be signed by the secure firmware update key and verified by firmware. If doing a firmware update to update the PK, care should be taken to ensure the KEK, db, and dbx are preserved.
 
-    On SOCs PCs, there is another reason to not use the PK as the secure firmware update key. This is because the secure firmware update key is permanently burnt into fuses on PCs that meet Windows Hardware Certification requirements.
+  On all PCs, it is recommended to not use the PK as the secure firmware update key. If the PKpriv is compromised then so is the secure firmware update key (since they are the same). In this case the update to enroll a new PKpub might not be possible since the process of updating has also been compromised.
 
--   **1.3.4 Key Exchange Key (KEK)**Key exchange keys establish a trust relationship between the operating system and the platform firmware. Each operating system (and potentially, each 3rd party application which need to communicate with platform firmware) enrolls a public key (**KEKpub**) into the platform firmware.
+  On SOCs PCs, there is another reason to not use the PK as the secure firmware update key. This is because the secure firmware update key is permanently burnt into fuses on PCs that meet Windows Hardware Certification requirements.
 
-    **1.3.4.1 Enrolling Key Exchange Keys**
+- <strong>1.3.4 Key Exchange Key (KEK)</strong>Key exchange keys establish a trust relationship between the operating system and the platform firmware. Each operating system (and potentially, each 3rd party application which need to communicate with platform firmware) enrolls a public key (**KEKpub**) into the platform firmware.
 
-    Key exchange keys are stored in a signature database as described in [1.4 Signature Databases (Db and Dbx)](#signaturedatabase). The signature database is stored as an authenticated UEFI variable.
+  **1.3.4.1 Enrolling Key Exchange Keys**
 
-    The platform owner enrolls the key exchange keys by either calling SetVariable() as specified in Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C. with the EFI\_VARIABLE\_APPEND\_WRITE attribute set and the Data parameter containing the new key(s), or by reading the database using GetVariable(), appending the new key exchange key to the existing keys and then writing the database using SetVariable()as specified in Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C without the EFI\_VARIABLE\_APPEND\_WRITE attribute set.
+  Key exchange keys are stored in a signature database as described in [1.4 Signature Databases (Db and Dbx)](#signaturedatabase). The signature database is stored as an authenticated UEFI variable.
 
-    If the platform is in setup mode, the signature database variable does not need to be signed but the parameters to the SetVariable() call shall still be prepared as specified for authenticated variables in Section 7.2.1. If the platform is in user mode, the signature database must be signed with the current PKpriv
+  The platform owner enrolls the key exchange keys by either calling SetVariable() as specified in Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C. with the EFI\_VARIABLE\_APPEND\_WRITE attribute set and the Data parameter containing the new key(s), or by reading the database using GetVariable(), appending the new key exchange key to the existing keys and then writing the database using SetVariable()as specified in Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C without the EFI\_VARIABLE\_APPEND\_WRITE attribute set.
 
-    **1.3.4.2 Clearing the KEK**
+  If the platform is in setup mode, the signature database variable does not need to be signed but the parameters to the SetVariable() call shall still be prepared as specified for authenticated variables in Section 7.2.1. If the platform is in user mode, the signature database must be signed with the current PKpriv
 
-    It is possible to “clear” (delete) the KEK. Note that if the PK is not installed on the platform, “clear” requests are not required to be signed. If they are signed, then to clear the KEK requires a PK-signed package, and to clear either db or dbx requires a package signed by any entity present in the KEK.
+  **1.3.4.2 Clearing the KEK**
 
-    **1.3.4.3 Microsoft KEK**
+  It is possible to “clear” (delete) the KEK. Note that if the PK is not installed on the platform, “clear” requests are not required to be signed. If they are signed, then to clear the KEK requires a PK-signed package, and to clear either db or dbx requires a package signed by any entity present in the KEK.
 
-    The Microsoft KEK is required to enable revocation of bad images by updating the dbx and potentially for updating db to prepare for newer Windows signed images.
+  **1.3.4.3 Microsoft KEK**
 
-    Include the Microsoft Corporation KEK CA 2011 in the KEK database, with the following values:
+  The Microsoft KEK is required to enable revocation of bad images by updating the dbx and potentially for updating db to prepare for newer Windows signed images.
 
-    -   SHA-1 cert hash: `31 59 0b fd 89 c9 d7 4e d0 87 df ac 66 33 4b 39 31 25 4b 30`.
+  Include the Microsoft Corporation KEK CA 2011 in the KEK database, with the following values:
 
-    -   SignatureOwner GUID: `{77fa9abd-0359-4d32-bd60-28f4e78f784b}`.
+  -   SHA-1 cert hash: `31 59 0b fd 89 c9 d7 4e d0 87 df ac 66 33 4b 39 31 25 4b 30`.
 
-    -   Microsoft will provide the certificate to partners and it can be added either as an **EFI\_CERT\_X509\_GUID** or an **EFI\_CERT\_RSA2048\_GUID** type signature.
+  -   SignatureOwner GUID: `{77fa9abd-0359-4d32-bd60-28f4e78f784b}`.
 
-    The Microsoft KEK certificate can be downloaded from: <http://go.microsoft.com/fwlink/?LinkId=321185>.
+  -   Microsoft will provide the certificate to partners and it can be added either as an **EFI\_CERT\_X509\_GUID** or an **EFI\_CERT\_RSA2048\_GUID** type signature.
 
-    **1.3.4.4 KEKDefault** The platform vendor may provide a default set of Key Exchange Keys in the KEKDefault variable. Please reference [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) section 27.3.3 for more information.
+  The Microsoft KEK certificate can be downloaded from: <http://go.microsoft.com/fwlink/?LinkId=321185>.
 
-    **1.3.4.5 OEM/3rd party KEK - adding multiple KEK**
+  **1.3.4.4 KEKDefault** The platform vendor may provide a default set of Key Exchange Keys in the KEKDefault variable. Please reference [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) section 27.3.3 for more information.
 
-    Customers and Platform Owners don’t need to have their own KEK. On non-Windows RT PCs the OEM may have additional KEKs to allow additional OEM or a trusted 3rd party control of the db and dbx.
- 
--   **1.3.5 Secure Boot firmware update key**The Secure firmware update key is used to sign the firmware when it needs to be updated. This key has to have a minimum key strength of RSA-2048. All firmware updates must be signed securely by the OEM, their trusted delegate such as the ODM or IBV (Independent BIOS Vendor), or by a secure signing service.
+  **1.3.4.5 OEM/3rd party KEK - adding multiple KEK**
 
-    As per [NIST publication 800-147 Field Firmware Update](http://go.microsoft.com/fwlink/?LinkId=321186) must support all elements of guidelines:
+  Customers and Platform Owners don’t need to have their own KEK. On non-Windows RT PCs the OEM may have additional KEKs to allow additional OEM or a trusted 3rd party control of the db and dbx.
 
-    Any update to the firmware flash store must be signed by creator.
+- **1.3.5 Secure Boot firmware update key**The Secure firmware update key is used to sign the firmware when it needs to be updated. This key has to have a minimum key strength of RSA-2048. All firmware updates must be signed securely by the OEM, their trusted delegate such as the ODM or IBV (Independent BIOS Vendor), or by a secure signing service.
 
-    Firmware must check signature of the update.
+  As per [NIST publication 800-147 Field Firmware Update](http://go.microsoft.com/fwlink/?LinkId=321186) must support all elements of guidelines:
 
--   **1.3.6 Creation of keys for Secure Firmware Update**
+  Any update to the firmware flash store must be signed by creator.
 
-    The same key will be used to sign all firmware updates since the public half will be residing on the PC. You could also sign the firmware update with a key which chains to Secure Firmware update key.
+  Firmware must check signature of the update.
 
-    There could be one key per PC like PK or one per model or one per product line. If there is one key per PC that would mean that millions of unique update packages will need to be generated. Please consider based on resource availability what method would work for you. Having a key per model or product line is a good compromise.
+- **1.3.6 Creation of keys for Secure Firmware Update**
 
-    The Secure Firmware Update public key (or its hash to save space) would be stored in some protected storage on the platform – generally protected flash (PC) or one-time-programmable fuses (SOC).
+  The same key will be used to sign all firmware updates since the public half will be residing on the PC. You could also sign the firmware update with a key which chains to Secure Firmware update key.
 
-    If only the hash of this key is stored (to save space), then the firmware update will include the key, and the first stage of the update process will be verifying that the public key in the update matches the hash stored on the platform.
+  There could be one key per PC like PK or one per model or one per product line. If there is one key per PC that would mean that millions of unique update packages will need to be generated. Please consider based on resource availability what method would work for you. Having a key per model or product line is a good compromise.
 
-    Capsules are a means by which the OS can pass data to UEFI environment across a reboot. Windows calls the UEFI UpdateCapsule() to deliver system and PC firmware updates. At boot time prior to calling ExitBootServices(),Windows will pass in any new firmware updates found in the Windows Driver Store into UpdateCapsule(). UEFI system firmware can use this process to update system and PC firmware. By leveraging this Windows firmware support an OEM can rely on the same common format and process for updating firmware for both system and PC firmware. Firmware must implement the ACPI ESRT table in order to support UEFI UpdateCapsule() for Windows.
+  The Secure Firmware Update public key (or its hash to save space) would be stored in some protected storage on the platform – generally protected flash (PC) or one-time-programmable fuses (SOC).
 
-    For details on implementing support for the Windows UEFI Firmware Update Platform consult the following documentation: Windows UEFI Firmware Update Platform.
+  If only the hash of this key is stored (to save space), then the firmware update will include the key, and the first stage of the update process will be verifying that the public key in the update matches the hash stored on the platform.
 
-    Update capsules can be in memory or on the disk. Windows supports in memory updates.
+  Capsules are a means by which the OS can pass data to UEFI environment across a reboot. Windows calls the UEFI UpdateCapsule() to deliver system and PC firmware updates. At boot time prior to calling ExitBootServices(),Windows will pass in any new firmware updates found in the Windows Driver Store into UpdateCapsule(). UEFI system firmware can use this process to update system and PC firmware. By leveraging this Windows firmware support an OEM can rely on the same common format and process for updating firmware for both system and PC firmware. Firmware must implement the ACPI ESRT table in order to support UEFI UpdateCapsule() for Windows.
 
-    **1.3.6.1 Capsule (Capsule-in-Memory)**
+  For details on implementing support for the Windows UEFI Firmware Update Platform consult the following documentation: Windows UEFI Firmware Update Platform.
 
-    Following is the flow of events for an In-memory update capsule to work.
+  Update capsules can be in memory or on the disk. Windows supports in memory updates.
 
-    1.  A capsule is put in memory by an application in the OS
+  **1.3.6.1 Capsule (Capsule-in-Memory)**
 
-    2.  Mailbox event is set to inform BIOS of pending update
+  Following is the flow of events for an In-memory update capsule to work.
 
-    3.  PC reboots, verifies the capsule image and update is performed by the BIOS
+  1.  A capsule is put in memory by an application in the OS
 
--   **1.3.7 Workflow of a typical firmware update**
+  2.  Mailbox event is set to inform BIOS of pending update
 
-    1.  Download and install the firmware driver.
+  3.  PC reboots, verifies the capsule image and update is performed by the BIOS
 
-    2.  Reboot.
+- **1.3.7 Workflow of a typical firmware update**
 
-    3.  OS Loader detects and verifies the firmware.
+  1.  Download and install the firmware driver.
 
-    4.  OS Loader passes a binary blob to UEFI.
+  2.  Reboot.
 
-    5.  UEFI performs the firmware update (This process is owned by the silicon vendor).
+  3.  OS Loader detects and verifies the firmware.
 
-    6.  OS Loader detection completes successfully.
+  4.  OS Loader passes a binary blob to UEFI.
 
-    7.  OS finishes booting.
+  5.  UEFI performs the firmware update (This process is owned by the silicon vendor).
+
+  6.  OS Loader detection completes successfully.
+
+  7.  OS finishes booting.
 
 ### <span id="SignatureDatabase"></span><span id="signaturedatabase"></span><span id="SIGNATUREDATABASE"></span>1.4 Signature Databases (Db and Dbx)
 
@@ -344,13 +344,13 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 <td align="left"><p>KEK</p></td>
 <td align="left"><p>Microsoft</p></td>
 <td align="left"><p>Allows updates to db and dbx:</p>
-<p>[http://go.microsoft.com/fwlink/p/?linkid=321185](http://go.microsoft.com/fwlink/p/?linkid=321185).</p></td>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=321185" data-raw-source="[http://go.microsoft.com/fwlink/p/?linkid=321185](http://go.microsoft.com/fwlink/p/?linkid=321185)">http://go.microsoft.com/fwlink/p/?linkid=321185</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Microsoft Windows Production CA 2011</p></td>
 <td align="left"><p>db</p></td>
 <td align="left"><p>Microsoft</p></td>
-<td align="left"><p>This CA in the Signature Database (db) allows Windows to boot: [http://go.microsoft.com/fwlink/?LinkId=321192](http://go.microsoft.com/fwlink/?LinkId=321192).</p></td>
+<td align="left"><p>This CA in the Signature Database (db) allows Windows to boot: <a href="http://go.microsoft.com/fwlink/?LinkId=321192" data-raw-source="[http://go.microsoft.com/fwlink/?LinkId=321192](http://go.microsoft.com/fwlink/?LinkId=321192)">http://go.microsoft.com/fwlink/?LinkId=321192</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Forbidden Signature Database</p></td>
@@ -367,7 +367,7 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 </tbody>
 </table>
 
- 
+
 
 *Table 1: Keys/db needed for Secure Boot*
 
@@ -612,19 +612,19 @@ This section intends to summarize the above sections and show a step by step app
 
     2.  Install an empty dbx if Microsoft does not provide one. Windows will automatically update DBX to the latest DBX through Windows Update on first reboot.
 
-    **Note**  
+    **Note**  
     Use PowerShell cmdlets which are part of the Windows HCK tests or use methods provided by BIOS vendor.
 
-     
+
 
 4.  **Install Microsoft KEK**. See Section 1.3.3.
 
     Install Microsoft KEK into the UEFI KEK database
 
-    **Caution**  
+    **Caution**  
     Use PowerShell cmdlets which are part of the Windows HCK tests or use methods provided by BIOS vendor.
 
-     
+
 
 5.  **Optional step - OEM/3rd party secure boot components**. See Section 1.3.4 and 1.4.
 
@@ -650,10 +650,10 @@ This section intends to summarize the above sections and show a step by step app
 
     2.  Enroll the PK using Secure Boot API. The PC should be now enabled for Secure Boot.
 
-    **Note**  
+    **Note**  
     If you install the PK at the end, the MS KEK, db, dbx don’t need to be signed – no SignerInfo must be present. This is a shortcut.
 
-     
+
 
 9.  **Testing Secure Boot**: Execute any proprietary tests and Windows HCK tests as per instructions. See [Appendix B – Secure Boot APIs](#securebootapis).
 
@@ -775,17 +775,17 @@ For more info, see Section 1.3.5 and section 1.3.6.
 
     6.  Enter the BIOS configuration and clear the Secure Boot configuration. This restores the PC to Setup Mode by deleting PK and other keys.
 
-        **Note**  
+        **Note**  
         Support for clearing is required for x86/x64 PCs.
 
-         
+
 
     7.  Run the Secure Boot Manual Logo Test.
 
-        **Note**  
+        **Note**  
         Secure Boot requires Windows HCK signed or VeriSign drivers on non-Windows RT PCs
 
-         
+
 
 6.  **Windows HCK Secure Boot Logo Test (automated)**
 
@@ -841,14 +841,16 @@ For more info, see Section 1.3.5 and section 1.3.6.
 
     -   `“\certs”` folder has all of the certificates you need to boot Windows:
 
-        **Note**  
+        **Note**  
         Please don’t use the methodology used in “ManualTests\\generate\\TestCerts” to generate keys and certificates. This is meant for Windows HCK test purposes only. It uses keys which are stored on disk which is very insecure and not recommended. This is not meant for use in a production environment.
 
-         
 
-    -   `“ManualTests\example\OutOfBox”` folder has scripts which you can leverage for installation of Secure Boot on production PCs.
 
-        The “ManualTests\\generate\\tests\\subcreate\_outofbox\_example.ps1” demonstrates how these examples were generated and have “TODO” sections when a partner can substitute their PK and other metadata.
+~~~
+-   `“ManualTests\example\OutOfBox”` folder has scripts which you can leverage for installation of Secure Boot on production PCs.
+
+    The “ManualTests\\generate\\tests\\subcreate\_outofbox\_example.ps1” demonstrates how these examples were generated and have “TODO” sections when a partner can substitute their PK and other metadata.
+~~~
 
 8.  **Windows HCK UEFI signing and submission**
 
@@ -890,9 +892,9 @@ For more info, see Section 1.3.5 and section 1.3.6.
 
 [Secure Boot Overview](secure-boot-overview.md)
 
- 
 
- 
+
+
 
 
 

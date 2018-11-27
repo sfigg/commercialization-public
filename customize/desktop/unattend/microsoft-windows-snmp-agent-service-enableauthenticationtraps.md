@@ -42,7 +42,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following XML output shows how to disable authentication traps.
 
 [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

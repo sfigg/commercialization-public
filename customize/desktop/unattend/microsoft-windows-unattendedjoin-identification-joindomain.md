@@ -32,12 +32,12 @@ ms.topic: article
 <tr class="odd">
 <td><p><em>Domain_name</em></p></td>
 <td><p>Specifies the name of the domain to join during Windows Setup. <em>Domain_name</em> can be the fully qualified Domain Name System (DNS) name of the domain or the NetBIOS name of the domain. <em>Domain_name</em> is a string.</p>
-<p>You can specify either a domain to join or a workgroup to assign by using the <code>JoinDomain</code> or [JoinWorkgroup](microsoft-windows-unattendedjoin-identification-joinworkgroup.md) settings respectively. However, only one of these settings should be present in an answer file. If both exist in an answer file, the value for <code>JoinDomain</code> is used, and JoinWorkgroup is ignored.</p></td>
+<p>You can specify either a domain to join or a workgroup to assign by using the <code>JoinDomain</code> or <a href="microsoft-windows-unattendedjoin-identification-joinworkgroup.md" data-raw-source="[JoinWorkgroup](microsoft-windows-unattendedjoin-identification-joinworkgroup.md)">JoinWorkgroup</a> settings respectively. However, only one of these settings should be present in an answer file. If both exist in an answer file, the value for <code>JoinDomain</code> is used, and JoinWorkgroup is ignored.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -78,9 +78,9 @@ The following XML output shows how to set the identification credentials.
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

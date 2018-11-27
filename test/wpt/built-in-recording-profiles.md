@@ -101,7 +101,7 @@ The following table describes the built-in profiles that record resource analysi
 </tbody>
 </table>
 
- 
+ 
 
 ## Scenario Analysis Profiles
 
@@ -147,16 +147,16 @@ The following table describes the built-in profiles that record specific scenari
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Recording Profiles](recording-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

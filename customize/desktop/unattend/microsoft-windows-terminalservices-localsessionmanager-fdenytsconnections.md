@@ -42,7 +42,7 @@ There are several settings that must be configured to enable Remote Desktop conn
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to set this element so that remote terminal s
 
 [Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager.md)
 
- 
+ 
 
- 
+ 
 
 
 

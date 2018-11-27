@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -82,9 +82,9 @@ The following XML output shows how to specify paths to icons used for the Search
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -85,9 +85,9 @@ The red rectangle delineated area (port C of the AT90USBKEY board) of the preced
 
 For more information about this board please visit manufacturer's [web site](http://www.atmel.com/tools/AT90USBKEY.aspx) and [hardware user guide](http://www.atmel.com/Images/doc7627.pdf) for the board.
 
- 
+ 
 
- 
+ 
 
 
 

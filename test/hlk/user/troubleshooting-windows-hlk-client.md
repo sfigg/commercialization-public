@@ -91,59 +91,59 @@ If a client computer cannot communicate with the Windows HLK Controller, review 
 
 Try these solutions in the following order:
 
-1.  Review the steps in [Step 2: Install Client on the test computer(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) and check basic networking connectivity between the two computers.
+1. Review the steps in [Step 2: Install Client on the test computer(s)](../getstarted/step-2--install-client-on-the-test-system-s-.md) and check basic networking connectivity between the two computers.
 
-2.  Run the procedure [To change the Windows HLK Client to a Home or Private network](#win7).
+2. Run the procedure [To change the Windows HLK Client to a Home or Private network](#win7).
 
-3.  Make sure the Internet Connection Firewall (ICF) port for Windows HLK is open on both the Windows HLK Client and Windows HLK Controller computers.
+3. Make sure the Internet Connection Firewall (ICF) port for Windows HLK is open on both the Windows HLK Client and Windows HLK Controller computers.
 
-    **To open an ICF port for Windows HLK in Windows 7**
+   **To open an ICF port for Windows HLK in Windows 7**
 
-    1.  Open Control Panel.
+   1.  Open Control Panel.
 
-    2.  Click **System and Security** &gt;**Windows Firewall** &gt; **Advanced Settings** &gt; **Inbound Rules**.
+   2.  Click **System and Security** &gt;**Windows Firewall** &gt; **Advanced Settings** &gt; **Inbound Rules**.
 
-    3.  Make sure that **WLK Client** is present and enabled.
+   3.  Make sure that **WLK Client** is present and enabled.
 
-    4.  If WLK Client isn't there, click **New Rule**, click **Port**, and then click **Next**.
+   4.  If WLK Client isn't there, click **New Rule**, click **Port**, and then click **Next**.
 
-    5.  Type **1771** in the **Specific local ports** box, click **Next** twice for **Allows the Connection**.
+   5.  Type **1771** in the **Specific local ports** box, click **Next** twice for **Allows the Connection**.
 
-    6.  Leave all Profiles checked and click **Next**.
+   6.  Leave all Profiles checked and click **Next**.
 
-    7.  For Name, type **WLK Client** and then click **Finish**.
+   7.  For Name, type **WLK Client** and then click **Finish**.
 
-    **To open an ICF port for Windows HLK**
+   **To open an ICF port for Windows HLK**
 
-    1.  Open Control Panel.
+   1.  Open Control Panel.
 
-    2.  Click **Security** &gt;**Windows Firewall** &gt; **Change Settings**.
+   2.  Click **Security** &gt;**Windows Firewall** &gt; **Change Settings**.
 
-    3.  Click the **Exceptions** tab. Make sure that **WLK Client** is present and selected under **Programs and Services**.
+   3.  Click the **Exceptions** tab. Make sure that **WLK Client** is present and selected under **Programs and Services**.
 
-    4.  If **WLK Client** does not appear, click **Add Port** and enter this information:
+   4.  If **WLK Client** does not appear, click **Add Port** and enter this information:
 
-        -   In the **Name** box, type **WLK Client**.
+       -   In the **Name** box, type **WLK Client**.
 
-        -   In the **Port number** box, type **1771**.
+       -   In the **Port number** box, type **1771**.
 
-        -   Click the **TCP** button, and then click **OK**.
+       -   Click the **TCP** button, and then click **OK**.
 
-    5.  Return to the exceptions tab and make sure that the **WLK Client** check box is selected, and then click **OK**.
+   5.  Return to the exceptions tab and make sure that the **WLK Client** check box is selected, and then click **OK**.
 
-4.  Disable Internet Protocol security (IPsec)
+4. Disable Internet Protocol security (IPsec)
 
-    For Windows HLK Client and Windows HLK Controller computers to communicate, all computers must either be running IPsec or all computers must have IPsec disabled.
+   For Windows HLK Client and Windows HLK Controller computers to communicate, all computers must either be running IPsec or all computers must have IPsec disabled.
 
-    **To disable IPsec**
+   **To disable IPsec**
 
-    -   At a command prompt, type **net stop ipsec**, and then press Enter.
+   -   At a command prompt, type **net stop ipsec**, and then press Enter.
 
-    **To change IPSec properties**
+   **To change IPSec properties**
 
-    1.  At a command prompt, type **services.msc**, and then press Enter. The Microsoft Management Console appears.
+   1.  At a command prompt, type **services.msc**, and then press Enter. The Microsoft Management Console appears.
 
-    2.  Double-click **IPsec Policy Agent** and change its **Startup Type** (**Automatic** | **Manual** | **Disabled**) and/or **Service Status** (**Start** | **Stop**).
+   2.  Double-click **IPsec Policy Agent** and change its **Startup Type** (**Automatic** | **Manual** | **Disabled**) and/or **Service Status** (**Start** | **Stop**).
 
 ## <span id="inaccdatastudio"></span><span id="INACCDATASTUDIO"></span>Client information in HLK Studio is inaccurate
 
@@ -206,11 +206,11 @@ When you set up a job, Windows Scheduler searches for a client computer to run t
 
 When you use Windows HLK Manager Job Monitor to view the status of a job, the **Current Pipeline** column of the **Job Execution Status** pane displays the job status. If the **Current Pipeline** value for your job is **Scheduler**, and if this value hasn't changed for several minutes, make sure that a Windows HLK Client in the machine pool with a **Ready** status exists.
 
--   If no Windows HLK Client computers are ready to run jobs, see [Step 3: Create a machine pool](..\getstarted\step-3-create-a-machine-pool.md).
+- If no Windows HLK Client computers are ready to run jobs, see [Step 3: Create a machine pool](../getstarted/step-3-create-a-machine-pool.md).
 
--   If Windows HLK Client computers are available to run the job, make sure that at least one Windows HLK Client computer is capable of running the job. Check the attributes of the Windows HLK Client computers and compare them with the job requirements.
+- If Windows HLK Client computers are available to run the job, make sure that at least one Windows HLK Client computer is capable of running the job. Check the attributes of the Windows HLK Client computers and compare them with the job requirements.
 
--   If a job contains machine sets, confirm that there are enough Windows HLK Client computers to meet the requirements of all machine sets. Windows HLK schedules all of the Windows HLK Client computers at the same time.
+- If a job contains machine sets, confirm that there are enough Windows HLK Client computers to meet the requirements of all machine sets. Windows HLK schedules all of the Windows HLK Client computers at the same time.
 
 If a job remains unchanged in the Scheduler, make sure that the SQL Server (**MSSQLSERVER**), **WLKSvc**, and **DTMSERVICE** services are started in services.msc.
 
@@ -278,25 +278,25 @@ If Remote Desktop cannot connect to a Windows HLK Client computer, make sure tha
 
 ## <span id="remcli"></span><span id="REMCLI"></span>Remove and reinstall the Windows HLK Client
 
->[!WARNING]
->  
-Do not remove the Windows HLK Client as the first step in troubleshooting Windows HLK Client problems. If you reinstall the Windows HLK Client, any certification testing in progress is lost and you have to rerun all the tests in a new project.
+> [!WARNING]
+> 
+> Do not remove the Windows HLK Client as the first step in troubleshooting Windows HLK Client problems. If you reinstall the Windows HLK Client, any certification testing in progress is lost and you have to rerun all the tests in a new project.
 
- 
+ 
 
 **To remove and reinstall the Windows HLK Client**
 
-1.  Uninstall the Windows HLK Client (**Control Panel** &gt; **Uninstall a program** &gt; **Windows Hardware Certification Kit Client**.)
+1. Uninstall the Windows HLK Client (**Control Panel** &gt; **Uninstall a program** &gt; **Windows Hardware Certification Kit Client**.)
 
-2.  Start the Windows HLK Manager, go to **Explorers | Job Monitor**, right-click your computer, and then select **Change Status -&gt; Unsafe** to set the computer to the **Unsafe** state.
+2. Start the Windows HLK Manager, go to **Explorers | Job Monitor**, right-click your computer, and then select **Change Status -&gt; Unsafe** to set the computer to the **Unsafe** state.
 
-3.  Install the Windows HLK Client by using the steps in the [Step 2: Install Client on the test system(s)](..\getstarted\step-2--install-client-on-the-test-system-s-.md) topic.
+3. Install the Windows HLK Client by using the steps in the [Step 2: Install Client on the test system(s)](../getstarted/step-2--install-client-on-the-test-system-s-.md) topic.
 
-4.  Wait for the computer to go into the **Manual** state in **HLK Manager | Job Monitor**, below the **Status** column.
+4. Wait for the computer to go into the **Manual** state in **HLK Manager | Job Monitor**, below the **Status** column.
 
-5.  Go to **Explorers | Job Monitor**, right-click your computer, and then select **Change Status -&gt; Reset**.
+5. Go to **Explorers | Job Monitor**, right-click your computer, and then select **Change Status -&gt; Reset**.
 
-6.  Wait for the computer to automatically return to the **Ready** state, or click **Refresh** in Windows HLK Manager.
+6. Wait for the computer to automatically return to the **Ready** state, or click **Refresh** in Windows HLK Manager.
 
 ## <span id="sqlserver"></span><span id="SQLSERVER"></span>SQL Server updates cause Windows HLK Client to crash
 
@@ -384,9 +384,9 @@ The Windows HLK Client status changes from **Reset** to **Ready**, and this acti
 
 [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

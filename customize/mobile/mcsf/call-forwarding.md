@@ -65,9 +65,11 @@ By default, users can decide whether to turn on call forwarding. Partners can hi
     </tbody>
     </table>
 
-     
 
-    By default, the hide call forwarding UI is set to 0 or always shown.
+
+~~~
+By default, the hide call forwarding UI is set to 0 or always shown.
+~~~
 
 ## Related topics
 

@@ -50,7 +50,7 @@ The following table summarizes the preloaded apps scenarios.
 </tbody>
 </table>
 
- 
+ 
 
 These example scenarios are illustrative and do not capture all possible customer usage scenarios or the combinations of update releases that are possible. OEMs must identify the possible usage scenarios and test those when preparing updates.
 
@@ -99,8 +99,8 @@ Multiple service agents are contained in a single preloaded app. As with all pre
 
 [System settings apps and updates](system-settings-apps-and-updates.md)
 
- 
+ 
 
- 
+ 
 
 

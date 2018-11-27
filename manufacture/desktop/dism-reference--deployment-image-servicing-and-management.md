@@ -26,33 +26,33 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that is 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)</p></td>
+<td align="left"><p><a href="deployment-image-servicing-and-management--dism--command-line-options.md" data-raw-source="[Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)">Deployment Image Servicing and Management (DISM) Command-Line Options</a></p></td>
 <td align="left"><p>Lists the command-line options for managing and servicing a Windows image with the Dism.exe tool.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DISM Configuration List and WimScript.ini Files](dism-configuration-list-and-wimscriptini-files-winnext.md)</p></td>
+<td align="left"><p><a href="dism-configuration-list-and-wimscriptini-files-winnext.md" data-raw-source="[DISM Configuration List and WimScript.ini Files](dism-configuration-list-and-wimscriptini-files-winnext.md)">DISM Configuration List and WimScript.ini Files</a></p></td>
 <td align="left"><p>Describes how to create a configuration list to exclude files and folders from an image capture or compression.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md)</p></td>
+<td align="left"><p><a href="deployment-image-servicing-and-management--dism--best-practices.md" data-raw-source="[Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md)">Deployment Image Servicing and Management (DISM) Best Practices</a></p></td>
 <td align="left"><p>Describes some best practices related to servicing a Windows image. We recommend that you implement these practices wherever possible.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Service a Windows PE Image with DISM](service-a-windows-pe-image-with-dism.md)</p></td>
+<td align="left"><p><a href="service-a-windows-pe-image-with-dism.md" data-raw-source="[Service a Windows PE Image with DISM](service-a-windows-pe-image-with-dism.md)">Service a Windows PE Image with DISM</a></p></td>
 <td align="left"><p>Describes information specific to using DISM to configure a Windows PE image.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DISM Supported Platforms](dism-supported-platforms.md)</p></td>
+<td align="left"><p><a href="dism-supported-platforms.md" data-raw-source="[DISM Supported Platforms](dism-supported-platforms.md)">DISM Supported Platforms</a></p></td>
 <td align="left"><p>Describes the different operating systems and architectures supported by DISM.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure a Windows Repair Source](configure-a-windows-repair-source.md)</p></td>
+<td align="left"><p><a href="configure-a-windows-repair-source.md" data-raw-source="[Configure a Windows Repair Source](configure-a-windows-repair-source.md)">Configure a Windows Repair Source</a></p></td>
 <td align="left"><p>Describes how to configure and maintain a Windows image repair source to use within your network. The repair source can be used to restore Windows features or to repair a corrupted Windows image.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -61,9 +61,9 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that is 
 
 [DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

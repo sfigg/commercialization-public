@@ -41,7 +41,7 @@ If you need to copy and ADK version of DISM to a PC that does not have the ADK, 
 
 [Copy DISM to another computer](copy-dism-to-another-computer.md)
 
- 
+ 
 
 
 

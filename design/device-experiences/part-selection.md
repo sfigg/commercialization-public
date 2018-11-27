@@ -26,7 +26,7 @@ Starting from an existing Connected Standby system design or a reference design 
 
 **Note**  You should not try to convert existing S3 platforms to Modern Standby, as significant development investments are required to ensure proper behavior and a good power floor. This risk must be considered by OEMs, as there was no validation done by Microsoft and silicon partners to validate this design approach.
 
- 
+ 
 
 To support Modern Standby, a PC platform must meet the technical requirements summarized in the following table.
 <table>
@@ -39,7 +39,7 @@ To support Modern Standby, a PC platform must meet the technical requirements su
 <tr class="header">
 <th>Technical Requirements</th>
 <th>Motivation</th>
-<th>Who's responsible?</th>
+<th>Who&#39;s responsible?</th>
 </tr>
 </thead>
 <tbody>
@@ -59,7 +59,7 @@ To support Modern Standby, a PC platform must meet the technical requirements su
 <strong>Note</strong>  Applicable to Desktop SKUs only.
 </div>
 <div>
- 
+ 
 </div></td>
 <td>Hibernate is used to save the state of desktop/Win32 applications when critical-low battery capacity is reached.</td>
 <td></td>
@@ -67,7 +67,7 @@ To support Modern Standby, a PC platform must meet the technical requirements su
 </tbody>
 </table>
 
- 
+ 
 
 Modern Standby component selection is important. The following low power support is highly recommended for achieving a good power floor on disconnected systems:
 
@@ -97,7 +97,7 @@ The current policy for disconnected vs. connected is as follows:
 
 **Note**  You change/modify the above default policy to even allow modern connected standby on pure rotational media. However, it is up to the OEM to validate that such a system is viable from a performance and reliability standpoint.
 
- 
+ 
 
 ## SSD storage
 
@@ -124,7 +124,7 @@ The number of such load/unload cycles is directly influenced by the following fa
 | 3    | Cache Manager Efficiency | How well can the cache manager “predict” which data will be needed in Modern Standby and thus pre-load it into the NAND cache?                      |
 | 4    | I/O Load & Pattern       | How active is the user and how many apps are running in Modern Standby causing I/O? How frequent is this I/O? What is the user’s working set?       |
 
- 
+ 
 
 From the above factors, \#3 and \#4 are very difficult or almost impossible to control. Cache Size (\#1) and Firmware Timers (\#2) are directly in the OEM’s control.
 
@@ -141,16 +141,16 @@ The following points summarize storage guidance for Modern Standby systems:
 -   If you use rotational or hybrid storage, excessive load/unload cycles will cause the D3 idle timeout to increase. This results in a device staying in an active power state for longer, leading to increased power consumption. 
 -   Expect higher exit latency upon system resume from Modern Standby with rotational storage than with SSDs. 
 
- 
+ 
 
 ## Battery selection
 
 
 Battery life targets vary by form factor and price. Component selection and the associated power floor also impact how long a given charge will last.
 
- 
+ 
 
- 
+ 
 
 
 

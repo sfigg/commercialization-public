@@ -53,7 +53,7 @@ OEMs can specify the threshold at which the device boots from UEFI-based chargin
     **Note**  
     In Windows 10 Mobile, the UEFI charging app included in the OS is being deprecated. Microsoft recommends that OEMs use the app published by the SoC vendor. If you use the SoC vendor’s app, make sure that you disable the Windows 10 app by updating ChargingBootThreshold to 255 (hex 0xFF).
 
-     
+     
 
 **Power-off charging**
 
@@ -62,7 +62,7 @@ This setting enables *power-off charging*. Power-off charging allows the device 
 **Important**  
 Power-off charging can only be configured when the device image is generated. Windows 10 Mobile does not provide a way for users to enable or disable power-off charging.
 
- 
+ 
 
 1.  Create a customization answer file using the contents shown in the following code sample or use the sample ChargeSettings.xml file.
 

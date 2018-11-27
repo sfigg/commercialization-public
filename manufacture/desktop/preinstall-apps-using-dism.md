@@ -85,7 +85,7 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
 > [!note]
 > Microsoft Store apps don't run in audit mode. To test your deployment, run Windows and create a new user profile. For more information about audit mode, see [Audit mode overview](audit-mode-overview.md).
 
- 
+ 
 
 **Important**   If you are preinstalling a mobile broadband device app, you must insert the SIM card in the PC before you run the specialize phase of Sysprep. For more information about preinstalling a mobile broadband device app, see [Preinstall the Necessary Components for a Mobile Broadband Application Experience](#bkmk_broadband_intro).
 
@@ -117,7 +117,7 @@ You can remove a preinstalled app, including the license and custom data files, 
     Dism /Image:c:\test\offline /Remove-ProvisionedAppxPackage /PackageName:microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp
     ```
 
-   
+   
 5.  If you want to update the app, you can preinstall the updated version of the Microsoft Store-signed app. At a command prompt, type:
 
     ```
@@ -149,7 +149,7 @@ If a custom data file already exists in the data store for an app—for example,
 **Note**  
 You can release updates to an app through the Microsoft Store without losing the custom data file. However, if a user deletes the app, the custom data file is no longer available, even if the user reinstalls the app.
 
- 
+ 
 
 ### <span id="BKMK_TestCustomDataFile"></span><span id="bkmk_testcustomdatafile"></span><span id="BKMK_TESTCUSTOMDATAFILE"></span>Test custom data for preinstalled apps
 
@@ -160,20 +160,20 @@ The Custom.data file appears at the app's installed location. The name Custom.da
 ```
 var outputDiv = document.getElementById("CustomData");
 Windows.ApplicationModel.Package.current.installedLocation.getFileAsync
-     ("microsoft.system.package.metadata\\Custom.data").then(function (file) {
-         // Read the file
-         Windows.Storage.FileIO.readTextAsync(file).done(function (fileContent) {
-            outputDiv.innerHTML = 
-                 "App is preinstalled. CustomData contains:<br /><br />"
-                 + fileContent;
-         },
-         function (error) {
-             outputDiv.innerText = "Error reading CustomData " + error;
-         });
-     },
-     function (error) {
-         outputDiv.innerText = "CustomData was not available. App not preinstalled";
-     });
+     ("microsoft.system.package.metadata\\Custom.data").then(function (file) {
+         // Read the file
+         Windows.Storage.FileIO.readTextAsync(file).done(function (fileContent) {
+            outputDiv.innerHTML = 
+                 "App is preinstalled. CustomData contains:<br /><br />"
+                 + fileContent;
+         },
+         function (error) {
+             outputDiv.innerText = "Error reading CustomData " + error;
+         });
+     },
+     function (error) {
+         outputDiv.innerText = "CustomData was not available. App not preinstalled";
+     });
 ```
 
 Your Custom.data file can include any content and be in any format your app requires. The preinstallation process simply makes it available to your app. Developers can supply the data file to the preinstallation partner, or you can agree to a format that enables the partner to generate the content.
@@ -209,7 +209,7 @@ After you have verified your file format and content, you can change the locatio
 
     **Note**   You might be required to sign out and sign in again to see the app on the **Start** screen.
 
-     
+     
 
 3.  After you're done testing your app, you must remove the preinstalled package to continue using your Dev environment. To remove the preinstalled package using Windows PowerShell, you can use the **Get-AppxPackage** cmdlet to provide the full app package name through the pipeline to the **Remove-ProvisionedAppxPackage** cmdlet:
 
@@ -224,7 +224,7 @@ You can preinstall the necessary components for a Microsoft Store device app or 
 
 **Note**   This article is intended for OEMs, who will be supporting a Microsoft Store device app or the mobile broadband app on their devices.
 
- 
+ 
 
 For each type of app, two things should be preinstalled to provide the correct Microsoft Store device app or mobile broadband app:
 
@@ -237,7 +237,7 @@ For each type of app, two things should be preinstalled to provide the correct M
 
 **Important**   Although metadata packages and the corresponding apps are parsed immediately after the OOBE process completes, a user might be able to launch the app before the metadata package is parsed. In this case, the user will see an access denied error. To avoid this, apply both the metadata package and the app to the system image.
 
- 
+ 
 
 ## <span id="Preinstall_the_device_metadata_or_service_metadata_package"></span><span id="preinstall_the_device_metadata_or_service_metadata_package"></span><span id="PREINSTALL_THE_DEVICE_METADATA_OR_SERVICE_METADATA_PACKAGE"></span>Preinstall the device metadata or service metadata package
 
@@ -248,7 +248,7 @@ For each type of app, two things should be preinstalled to provide the correct M
 
     **Note**   Device metadata packages and service metadata packages use the same file name extension (.devicemetadata-ms).
 
-     
+     
 
 2.  Copy the device metadata or service metadata package (devicemetadata-ms file) to your system image in the **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore** folder. You can do this in one of the following ways:
 

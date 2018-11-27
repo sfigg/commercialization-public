@@ -74,7 +74,7 @@ By default, the OS shows the weak charger notification option UI.
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Build an image that has this customization configured, and flash this image to a device.

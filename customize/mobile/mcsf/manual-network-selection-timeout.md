@@ -59,7 +59,7 @@ This customization supports: **per-device** value
 **Important**  
 To fully test this customization, you must work with your mobile operator partner to perform Steps 2 and 3 in the following procedure.
 
- 
+ 
 
 1.  Flash the build that contains this customization to a device that has a UICC.
 

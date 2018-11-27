@@ -40,9 +40,9 @@ Product Types read from a Package will have different hash codes compared with o
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

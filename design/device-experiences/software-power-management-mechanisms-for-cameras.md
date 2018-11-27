@@ -83,7 +83,7 @@ To implement these functions, camera device driver developers should use the met
 <td>Sensor configuration</td>
 <td>Enumerate the capabilities of the camera sensor hardware or configure its current mode of operation.</td>
 <td>Communication over I2C bus. I2C resources are described in the _CRS method under the camera device in the ACPI namespace.</td>
-<td><p>[Simple peripheral bus (SPB) input/output (I/O) request interface](https://msdn.microsoft.com/library/windows/hardware/hh698227) is used to communicate with I2C host controller and camera sensor device.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh698227" data-raw-source="[Simple peripheral bus (SPB) input/output (I/O) request interface](https://msdn.microsoft.com/library/windows/hardware/hh698227)">Simple peripheral bus (SPB) input/output (I/O) request interface</a> is used to communicate with I2C host controller and camera sensor device.</p></td>
 </tr>
 <tr class="even">
 <td>Sensor event detection</td>
@@ -107,7 +107,7 @@ To implement these functions, camera device driver developers should use the met
 </tbody>
 </table>
 
- 
+ 
 
 ## Camera device enumeration
 
@@ -120,9 +120,9 @@ As a special case, if the SoC platform is not capable of simultaneously streamin
 
 The devices that represent the remainder of the camera subsystem—including the on-SoC image processing unit and the off-SoC camera sensor, auto-focuser, and flash—should be enumerated as one or more devices in the ACPI namespace. The on-SoC image processing unit should be enumerated as a device that is separate from the devices that represent the off-SoC components of the camera.
 
- 
+ 
 
- 
+ 
 
 
 

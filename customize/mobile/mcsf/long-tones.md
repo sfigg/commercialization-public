@@ -72,9 +72,11 @@ By default, the device supports Dual-Tone Multi-frequency (DTMF) with continuous
     </tbody>
     </table>
 
-     
 
-    By default, the user option for toggling between short and long tones is hidden on GSM phones and visible for CDMA phones.
+
+~~~
+By default, the user option for toggling between short and long tones is hidden on GSM phones and visible for CDMA phones.
+~~~
 
 ## Related topics
 

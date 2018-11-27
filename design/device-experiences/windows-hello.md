@@ -33,30 +33,30 @@ Microsoft Windows Hello, part of Windows 10, gives users a personal, secured ex
 </thead>
 <tbody>
 <tr class="even">
-<td><p>[Windows Hello and the Companion Device Framework](windows-hello-companion-device-framework.md)</p></td>
-<td><p>Windows Hello works with the [Companion Device Framework](https://msdn.microsoft.com/en-us/windows/uwp/security/companion-device-unlock) to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (e.g., if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device, for example).</p></td>
+<td><p><a href="windows-hello-companion-device-framework.md" data-raw-source="[Windows Hello and the Companion Device Framework](windows-hello-companion-device-framework.md)">Windows Hello and the Companion Device Framework</a></p></td>
+<td><p>Windows Hello works with the <a href="https://msdn.microsoft.com/en-us/windows/uwp/security/companion-device-unlock" data-raw-source="[Companion Device Framework](https://msdn.microsoft.com/en-us/windows/uwp/security/companion-device-unlock)">Companion Device Framework</a> to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (e.g., if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device, for example).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Hello biometric requirements](windows-hello-biometric-requirements.md)</p></td>
+<td><p><a href="windows-hello-biometric-requirements.md" data-raw-source="[Windows Hello biometric requirements](windows-hello-biometric-requirements.md)">Windows Hello biometric requirements</a></p></td>
 <td><p>Learn about the hardware requirements for biometric equipment, such as IR camera and fingerprint readers in order to support Windows Hello.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Hello face authentication](windows-hello-face-authentication.md)</p></td>
-<td><p>Microsoft face authentication in Windows 10 is an enterprise-grade identity verification mechanism that's integrated into the Windows Biometric Framework (WBF) as a core Microsoft Windows component called Windows Hello. Windows Hello face authentication utilizes a camera specially configured for near infrared (IR) imaging to authenticate and unlock Windows devices as well as unlock your Microsoft Passport.</p></td>
+<td><p><a href="windows-hello-face-authentication.md" data-raw-source="[Windows Hello face authentication](windows-hello-face-authentication.md)">Windows Hello face authentication</a></p></td>
+<td><p>Microsoft face authentication in Windows 10 is an enterprise-grade identity verification mechanism that&#39;s integrated into the Windows Biometric Framework (WBF) as a core Microsoft Windows component called Windows Hello. Windows Hello face authentication utilizes a camera specially configured for near infrared (IR) imaging to authenticate and unlock Windows devices as well as unlock your Microsoft Passport.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Windows Biometric Framework API]( http://go.microsoft.com/fwlink/?LinkId=624455)
 
- 
+ 
 
- 
+ 
 
 
 

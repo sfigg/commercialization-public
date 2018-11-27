@@ -51,16 +51,16 @@ ms.topic: article
 </tr>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>This property represents the major version of the Windows HCK Controller. (Inherited from [ProjectManager Class](projectmanager-class.md))</p></td>
+<td><p>This property represents the major version of the Windows HCK Controller. (Inherited from <a href="projectmanager-class.md" data-raw-source="[ProjectManager Class](projectmanager-class.md)">ProjectManager Class</a>)</p></td>
 </tr>
 <tr class="even">
 <td><p>VersionString</p></td>
-<td><p>This property represents the version of the Windows HCK Controller and its content. (Inherited from [ProjectManager Class](projectmanager-class.md))</p></td>
+<td><p>This property represents the version of the Windows HCK Controller and its content. (Inherited from <a href="projectmanager-class.md" data-raw-source="[ProjectManager Class](projectmanager-class.md)">ProjectManager Class</a>)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -79,16 +79,16 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p>IsDisposed</p></td>
-<td><p>This property represents a value indicating whether this object has already freed its resources. (Inherited from [ProjectManager Class](projectmanager-class.md))</p></td>
+<td><p>This property represents a value indicating whether this object has already freed its resources. (Inherited from <a href="projectmanager-class.md" data-raw-source="[ProjectManager Class](projectmanager-class.md)">ProjectManager Class</a>)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

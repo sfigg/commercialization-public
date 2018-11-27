@@ -43,9 +43,9 @@ The use of legacy wake events are possible, however it would require the ability
 
 For more information on wake support, see [Modern standby wake sources](modern-standby-wake-sources.md).
 
- 
+ 
 
- 
+ 
 
 
 

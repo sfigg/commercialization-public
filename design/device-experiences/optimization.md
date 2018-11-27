@@ -36,9 +36,9 @@ A miniport driver can opt-in to this behavior:
 
 -   Set the **MinimumPowerCyclePeriodInMS** member in the [**STOR\_POFX\_DEVICE\_V3**](https://msdn.microsoft.com/library/windows/hardware/dn931828) structure to the value that indicates, in the worst case, how often the device can be power cycled. Units are in milliseconds. We recommend this be at least 5 minutes (i.e. the device should not be power cycled more than once every 5 minutes).
 
- 
+ 
 
- 
+ 
 
 
 

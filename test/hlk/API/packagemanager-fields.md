@@ -32,33 +32,33 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageVersionString](packagemanagerpackageversionstring-field.md)</p></td>
+<td><p><a href="packagemanagerpackageversionstring-field.md" data-raw-source="[PackageVersionString](packagemanagerpackageversionstring-field.md)">PackageVersionString</a></p></td>
 <td><p>The version (string) for the package version that this <strong>PackageManager</strong> can open.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WinBlueVersion](packagemanager-winblueversion-field.md)</p></td>
+<td><p><a href="packagemanager-winblueversion-field.md" data-raw-source="[WinBlueVersion](packagemanager-winblueversion-field.md)">WinBlueVersion</a></p></td>
 <td><p>Specifies the version for packages created for WinBlue.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Win8Version](packagemanager-win8version-field.md)</p></td>
+<td><p><a href="packagemanager-win8version-field.md" data-raw-source="[Win8Version](packagemanager-win8version-field.md)">Win8Version</a></p></td>
 <td><p>Specifies the version for packages created for Win8 (HCK 2.0).</p></td>
 </tr>
 <tr class="even">
-<td><p>[WinThresholdAndRedstoneVersion](winthresholdandredstoneversion-field.md)</p></td>
+<td><p><a href="winthresholdandredstoneversion-field.md" data-raw-source="[WinThresholdAndRedstoneVersion](winthresholdandredstoneversion-field.md)">WinThresholdAndRedstoneVersion</a></p></td>
 <td><p>Specifies the version for packages created for Windows 10.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PackageDownlevelVersions](packagedownlevelversions-field.md)</p></td>
+<td><p><a href="packagedownlevelversions-field.md" data-raw-source="[PackageDownlevelVersions](packagedownlevelversions-field.md)">PackageDownlevelVersions</a></p></td>
 <td><p>A list of downlevel versions that packages can target.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

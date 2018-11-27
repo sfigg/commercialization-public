@@ -53,29 +53,29 @@ The following XML output shows how to use the `<SquareOrDesktopTile1>` component
 
 ```
 <SquareTiles>
-          <SquareOrDesktopTile1>
-               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>
-               <FirstRunTask>backgroundtask.js</FirstRunTask>
-          </SquareOrDesktopTile1>
-          <SquareOrDesktopTile2>
-               <AppIdOrPath>67890ChannelFabrikam.channel-JKL_mnop1234789!App</AppIdOrPath>
-               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
-          </SquareOrDesktopTile2>
-          <SquareOrDesktopTile3>
-               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile3.lnk</AppIdOrPath>
-          </SquareOrDesktopTile3>
-          <SquareTile1>
-               <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
-               <FirstRunTask>backgroundtask.js</FirstRunTask>
-          </SquareTile1>
-          <SquareTile2>
-               <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
-               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
-          </SquareTile2>
-          <SquareTile3>
-               <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
-          </SquareTile3>
-     </SquareTiles> 
+          <SquareOrDesktopTile1>
+               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>
+               <FirstRunTask>backgroundtask.js</FirstRunTask>
+          </SquareOrDesktopTile1>
+          <SquareOrDesktopTile2>
+               <AppIdOrPath>67890ChannelFabrikam.channel-JKL_mnop1234789!App</AppIdOrPath>
+               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
+          </SquareOrDesktopTile2>
+          <SquareOrDesktopTile3>
+               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile3.lnk</AppIdOrPath>
+          </SquareOrDesktopTile3>
+          <SquareTile1>
+               <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
+               <FirstRunTask>backgroundtask.js</FirstRunTask>
+          </SquareTile1>
+          <SquareTile2>
+               <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
+               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
+          </SquareTile2>
+          <SquareTile3>
+               <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
+          </SquareTile3>
+     </SquareTiles> 
 ```
 
 ## Related topics
@@ -89,9 +89,9 @@ The following XML output shows how to use the `<SquareOrDesktopTile1>` component
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

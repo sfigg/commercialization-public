@@ -21,7 +21,7 @@ A notebook is a portable clamshell device with an attached keyboard. The noteboo
 <tbody valign="top">
 <tr>
 <td colspan="6">
-<p style="text-align: center;">![entry notebook](../images/laptop.png)</p>
+<p style="text-align: center;"><img src="../images/laptop.png" alt="entry notebook"/></p>
 </td>
 </tr>
 <tr>
@@ -47,32 +47,32 @@ A notebook is a portable clamshell device with an attached keyboard. The noteboo
 <tr>
 <td bgcolor="EEEEEE">Key Features</td>
 <td>
-<p>[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p>[Battery Life 8+ hours](../component-guidelines/battery.md)</p>
-<p>[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
+<p><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p><a href="../component-guidelines/battery.md" data-raw-source="[Battery Life 8+ hours](../component-guidelines/battery.md)">Battery Life 8+ hours</a></p>
+<p><a href="../component-guidelines/precision-touchpad-devices.md" data-raw-source="[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)">Precision Touchpad</a></p>
 </td>
 <td>
-<p>[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
-<p>[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
-<p>[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
+<p><a href="../device-experiences/docking.md" data-raw-source="[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)">Wired and Wireless Docking and Casting (USB-C; Miracast)</a></p>
+<p><a href="../component-guidelines/pen-devices.md" data-raw-source="[Inking/Pen Support](../component-guidelines/pen-devices.md)">Inking/Pen Support</a></p>
+<p><a href="../component-guidelines/precision-touchpad-devices.md" data-raw-source="[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)">Precision Touchpad</a></p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">High-DPI (4K)</p>
-<p style="margin: .75em 0 .75em 0;">[Long battery life (12+ hours)](../component-guidelines/battery.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/battery.md" data-raw-source="[Long battery life (12+ hours)](../component-guidelines/battery.md)">Long battery life (12+ hours)</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/docking.md" data-raw-source="[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)">Wired and Wireless Docking and Casting (USB-C; Miracast)</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/precision-touchpad-devices.md" data-raw-source="[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)">Precision Touchpad</a></p>
 </td>
 <td style="width: 120px;">
-<p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/docking.md" data-raw-source="[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)">Wired and Wireless Docking and Casting (USB-C; Miracast)</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/pen-devices.md" data-raw-source="[Inking/Pen Support](../component-guidelines/pen-devices.md)">Inking/Pen Support</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/precision-touchpad-devices.md" data-raw-source="[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)">Precision Touchpad</a></p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Premium A/V experience (DirectX&nbsp;12; 4K support, display &amp; chipset), premium speakers, chipset support for PlayReady, H/W DRM, H.265 H/W decode/encode)</p>
 <p style="margin: .75em 0 .75em 0;">Xbox content, Xbox Controller, Xbox Live</p>
-<p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/precision-touchpad-devices.md" data-raw-source="[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)">Precision Touchpad</a></p>
 </td>
 </tr>
 <tr>

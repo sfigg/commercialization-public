@@ -16,11 +16,11 @@ ms.topic: article
 # HLK API Prerequisites
 
 
-You must install HLK Studio before you can use the HLK object model. The [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) also apply.
+You must install HLK Studio before you can use the HLK object model. The [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md) also apply.
 
- 
+ 
 
- 
+ 
 
 
 

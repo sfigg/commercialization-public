@@ -2,8 +2,11 @@
   "build": {
     "content": [
       {
-          "files": ["**/**.md", "**/**.yml"],
-		  "exclude": [
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -17,7 +20,7 @@
       {
         "files": [
           "**/*.png",
-		      "**/*.gif",
+          "**/*.gif",
           "**/*.jpg"
         ],
         "exclude": [
@@ -29,14 +32,17 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-	    "uhfHeaderId": "MSDocsHeader-WinHW",
-        "breadcrumb_path": "/windows-hardware/design/breadcrumbs/toc.json",
-		"searchScope": ["OEM"],
-		"ms.prod": "windows-hardware",
-		"ms.technology": "windows-oem"
-	},
+      "uhfHeaderId": "MSDocsHeader-WinHW",
+      "breadcrumb_path": "/windows-hardware/design/breadcrumbs/toc.json",
+      "searchScope": [
+        "OEM"
+      ],
+      "ms.prod": "windows-hardware",
+      "ms.technology": "windows-oem"
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "oem-design"
+    "dest": "oem-design",
+    "markdownEngineName": "markdig"
   }
 }

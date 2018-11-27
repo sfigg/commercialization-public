@@ -20,7 +20,7 @@ Specifies the type of system shutdown that occurs when the system power button i
 
 **Warning**  If you enable this setting and a user presses the power button to shut down the system, any open documents might not be saved and data loss could occur.
 
- 
+ 
 
 ## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
 
@@ -63,7 +63,7 @@ Specifies the type of system shutdown that occurs when the system power button i
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

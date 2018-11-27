@@ -42,7 +42,7 @@ This method creates a new project in a submission package.
 
 `Public Overrides Function CreateProject ( _`
 
-          `projectName As String, _`
+          `projectName As String, _`
 
 `) As Project`
 
@@ -50,7 +50,7 @@ This method creates a new project in a submission package.
 
 `public override Project CreateProject (`
 
-          `string projectName`
+          `string projectName`
 
 `)`
 
@@ -59,7 +59,7 @@ This method creates a new project in a submission package.
 
 *projectName*
 
-     The name of the project to create.
+     The name of the project to create.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns [Project Class](project-class.md).
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

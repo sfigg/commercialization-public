@@ -27,7 +27,7 @@ It features the following topics:
 **Note**  
 These topics feature basic information for getting started. For more in-depth information, refer to the Related Topics at the end of this topic.
 
- 
+ 
 
 -   Get Started: Provides instructions for three basic scenarios: opening a trace file, configuring symbols, and applying a profile.
 
@@ -53,7 +53,7 @@ These topics feature basic information for getting started. For more in-depth in
     **Note**  
     These topics open in a separate browser window.
 
-     
+     
 
 **To close Getting Started**
 
@@ -62,7 +62,7 @@ These topics feature basic information for getting started. For more in-depth in
     **Note**  
     By default, Getting Started opens every time you open WPA. If, during your session, you close Getting Started, you can reopen it to display in the product - even when the Analysis tab is open.
 
-     
+     
 
 ## Related topics
 
@@ -71,9 +71,9 @@ These topics feature basic information for getting started. For more in-depth in
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

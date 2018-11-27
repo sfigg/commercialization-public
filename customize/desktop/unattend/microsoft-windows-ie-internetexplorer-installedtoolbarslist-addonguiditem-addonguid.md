@@ -39,7 +39,7 @@ Toolbars are plug-in modules used to add functionality to Internet Explorer.
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to specify a GUID for Internet Explorer toolb
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

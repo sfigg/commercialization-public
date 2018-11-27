@@ -35,9 +35,9 @@ This customization supports: **per-IMSI** value, **per-device** value
                          Description="Use to customize the Wi-Fi calling error settings."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
     <!-- Use for the per-IMSI case 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -47,7 +47,7 @@ This customization supports: **per-IMSI** value, **per-device** value
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -62,7 +62,7 @@ This customization supports: **per-IMSI** value, **per-device** value
         <TargetRefs>
           <TargetRef Id="" /> 
         </TargetRefs>
-     
+
         <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
           <Setting Name="ShowWifiCallingError" Value="" />  
           <Setting Name="ShowSpecificWifiCallingError" Value="" />  
@@ -123,7 +123,7 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
+
 
 5.  To show the T-Mobile specific error message in the mobile device UI, set `ShowSpecificWifiCallingError` to one of the following values:
 
@@ -151,11 +151,13 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
 
-    **Note**  If the mobile device is not specific to T-Mobile, OEMs should use the `GenericWifiCallingErrorMessage` setting instead.
 
-     
+~~~
+**Note**  If the mobile device is not specific to T-Mobile, OEMs should use the `GenericWifiCallingErrorMessage` setting instead.
+~~~
+
+
 
 6.  To specify a custom generic Wi-Fi calling error string in the mobile device UI, set `GenericWifiCallingErrorMessage` to a string that corresponds to the error message you want to show. The string must not be longer than 127 characters.
 

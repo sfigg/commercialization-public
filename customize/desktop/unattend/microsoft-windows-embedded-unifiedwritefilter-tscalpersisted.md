@@ -47,7 +47,7 @@ Specifies whether the Terminal Services Client Access Licensing (TSCAL) registry
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -75,9 +75,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

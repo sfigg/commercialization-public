@@ -32,11 +32,11 @@ This section provides information about how to implement and validate an integra
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><p>[Touchscreen Implementation Guide](touch-implementation-guide.md)</p></td>
+<td><p><a href="touch-implementation-guide.md" data-raw-source="[Touchscreen Implementation Guide](touch-implementation-guide.md)">Touchscreen Implementation Guide</a></p></td>
 <td><p>This section is an implementation guide for an integrated Windows Touchscreen device, for Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Touchscreen Validation Guide](touch-validation-guide.md)</p></td>
+<td><p><a href="touch-validation-guide.md" data-raw-source="[Touchscreen Validation Guide](touch-validation-guide.md)">Touchscreen Validation Guide</a></p></td>
 <td><p>This section is a validation guide for a Windows Touchscreen device, for Windows 10 and later operating systems.</p></td>
 </tr>
 </tbody>

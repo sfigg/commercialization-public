@@ -36,14 +36,14 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You can extend only NTFS file system partitions.
 
 The partition that you plan on extending must have unpartitioned space available following it.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -90,9 +90,9 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [ExtendOSPartition](microsoft-windows-deployment-extendospartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

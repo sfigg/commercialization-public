@@ -37,9 +37,9 @@ To report data for any type of integrated stylus, the input must be reported by 
 
 As part of Windows 8 touch hardware certification, digitizers are required to appear to the Windows operating system as human interface device (HID) devices and follow the rules described in [Required HID Descriptors](required-descriptors.md#required-hid-descriptors).
 
- 
+ 
 
- 
+ 
 
 
 

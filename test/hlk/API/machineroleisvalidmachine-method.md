@@ -42,9 +42,9 @@ ms.topic: article
 
 `Public Function IsValidMachine ( _`
 
-          `machineToAdd As Machine, _`
+          `machineToAdd As Machine, _`
 
-          `throwOnError As Boolean _`
+          `throwOnError As Boolean _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ ms.topic: article
 
 `public bool IsValidMachine (`
 
-          `Machine machineToAdd,`
+          `Machine machineToAdd,`
 
-          `bool throwOnError`
+          `bool throwOnError`
 
 `) `
 
@@ -63,11 +63,11 @@ ms.topic: article
 
 *machineToAdd*
 
-          The machine (test computer) to test against.
+          The machine (test computer) to test against.
 
 *throwOnError*
 
-          A flag determining if this function should throw exceptions.
+          A flag determining if this function should throw exceptions.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -84,9 +84,9 @@ An exception is thrown when the *machineToAdd* parameter represents a test compu
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

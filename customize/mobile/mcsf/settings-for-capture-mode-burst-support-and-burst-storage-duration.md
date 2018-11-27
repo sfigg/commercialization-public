@@ -30,20 +30,22 @@ OEMs can configure burst support on the device, the default capture mode, and th
                          Description="Use to configure the default capture mode on the device and configure the settings related to burst."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <Static>  
 
 
-       <Settings Path="Photos/OEM">  
-          <Setting Name="BurstSupported" Value="" />  
-          <Setting Name="CaptureMode" Value="" />  
-          <Setting Name="DefaultBurstStorageDuration" Value="" />  
-       </Settings> 
+~~~
+   <Settings Path="Photos/OEM">  
+      <Setting Name="BurstSupported" Value="" />  
+      <Setting Name="CaptureMode" Value="" />  
+      <Setting Name="DefaultBurstStorageDuration" Value="" />  
+   </Settings> 
 
-      </Static>
+  </Static>
 
-    </ImageCustomizations>
-    ```
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
@@ -73,7 +75,7 @@ OEMs can configure burst support on the device, the default capture mode, and th
     </tbody>
     </table>
 
-     
+
 
 4.  **To configure the default capture mode on the device**, set `CaptureMode` to one of the following values:
 
@@ -101,7 +103,7 @@ OEMs can configure burst support on the device, the default capture mode, and th
     </tbody>
     </table>
 
-     
+
 
 5.  **To configure the default number of days to store the bursts captured on the device**, set `DefaultBurstStorageDuration` to the number of days you want to keep the bursts on the device. For example, a value of 1 means the bursts will be kept for 1 day.
 

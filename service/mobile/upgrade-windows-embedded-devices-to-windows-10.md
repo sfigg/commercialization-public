@@ -53,7 +53,7 @@ This topic describes the supported installation paths for upgrading Windows Embe
 </tbody>
 </table>
 
- 
+ 
 
 The following devices cannot be upgraded directly to Windows 10. You must wipe the devices and then reload Windows 10 Enterprise.
 
@@ -69,9 +69,9 @@ The following devices cannot be upgraded directly to Windows 10. You must wipe 
 
 For information about upgrading Windows Embedded Handheld devices, see [Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices](https://msdn.microsoft.com/library/windows/hardware/mt412023).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,7 +26,7 @@ In Windows Performance Analyzer (WPA), you can set a recording to load symbols o
 **Note**  
 When you click **Load Symbols**, a progress bar (along with a count of the symbols found) above the Graph Explorer windows and the Analysis tab. In addition, on the graph itself, the data areas become grayed-out and a progress bar displays in each data area.
 
- 
+ 
 
 **To change symbol paths**
 
@@ -43,7 +43,7 @@ When you click **Load Symbols**, a progress bar (along with a count of the symbo
     **Note**  
     Invalid paths display in red.
 
-     
+     
 
 3.  Select SymCache generation folder and then click the **Browse for Folder** icon to search for the location where your SymCache files are stored, and then click **OK** on the Browse for Folder dialog.
 
@@ -65,7 +65,7 @@ When you click **Load Symbols**, a progress bar (along with a count of the symbo
     **Note**  
     When selecting the **Load symbols per the following restrictions:** option, you can specify whether you want to load symbols for specifi processes or you can choose to not load symbols for specific images. You can opt to specify restrictions for both processes and images.
 
-     
+     
 
 4.  Click **OK**.
 
@@ -76,9 +76,9 @@ When you click **Load Symbols**, a progress bar (along with a count of the symbo
 
 [Loading Symbols](loading-symbols.md)
 
- 
+ 
 
- 
+ 
 
 
 

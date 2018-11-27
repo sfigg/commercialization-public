@@ -51,7 +51,7 @@ Audio effects implemented in Audio Processing Objects (APOs) or in the DSP can s
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -90,9 +90,9 @@ The following XML output specifies that Windows will play a medium volume tone w
 
 [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)
 
- 
+ 
 
- 
+ 
 
 
 

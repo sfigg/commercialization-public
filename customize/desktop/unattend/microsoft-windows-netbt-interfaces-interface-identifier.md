@@ -37,12 +37,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Identifier</em></p></td>
-<td><p>Specifies the interface to apply to the other settings within the [Interface](microsoft-windows-netbt-interfaces-interface.md) setting. <em>Identifier</em> is a string with a maximum length of 256 characters.</p></td>
+<td><p>Specifies the interface to apply to the other settings within the <a href="microsoft-windows-netbt-interfaces-interface.md" data-raw-source="[Interface](microsoft-windows-netbt-interfaces-interface.md)">Interface</a> setting. <em>Identifier</em> is a string with a maximum length of 256 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -79,9 +79,9 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 
 [Interface](microsoft-windows-netbt-interfaces-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

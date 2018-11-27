@@ -22,24 +22,24 @@ The assessments that are installed with the Windows Assessment Toolkit are autom
 **Note**  
 You can use a set of public APIs to create and extend assessments that are compatible with the Assessment Platform. For more information, see [MSDN: Assessment Execution Engine](http://go.microsoft.com/fwlink/?LinkId=236367).
 
- 
+ 
 
 You can use the following command-line options to register or unregister custom assessments.
 
 To register an assessment:
 
-**Regasmt***&lt;path\_of\_assessment&gt;*
+**Regasmt**<em>&lt;path\_of\_assessment&gt;</em>
 
 To unregister an assessment:
 
-**Regasmt/u***&lt;path of assessment&gt;*
+**Regasmt/u**<em>&lt;path of assessment&gt;</em>
 
 **Note**  
 **Regasmt.exe** is installed by default when the Windows Assessment Toolkit is installed. By default, **Regasmt.exe** is installed at %PROGRAMFILES%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\x86. There is no x64 version.
 
 You must have administrative rights to run these commands.
 
- 
+ 
 
 **To register an assessment**
 
@@ -68,7 +68,7 @@ You must have administrative rights to run these commands.
     **Note**  
     Unregistering an assessment does not uninstall it. You can unregister more than one assessment at a time.
 
-     
+     
 
 ## Related topics
 
@@ -77,9 +77,9 @@ You must have administrative rights to run these commands.
 
 [Windows Assessment Console common scenarios](windows-assessment-console-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

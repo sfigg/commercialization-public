@@ -24,9 +24,9 @@ Computers that run Windows Server 2016 must support PCI Express natively, and t
 
 [Minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

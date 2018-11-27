@@ -43,7 +43,7 @@ If this option is enabled, then the end user can configure the system to play au
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -74,9 +74,9 @@ The following XML output specifies that an end user cannot configure the system 
 
 [Microsoft-Windows-Audio-AudioCore](microsoft-windows-audio-audiocore.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -68,9 +68,9 @@ ms.topic: article
 -   [USB-IF Certification Validation Test (Device)](eaccaddf-d3dc-4d05-9d04-bf2549a54cbd.md)
 -   [Web Services for Devices (WSD)](81242753-2559-474c-9dd2-3b44debd6b38.md)
 
- 
+ 
 
- 
+ 
 
 
 

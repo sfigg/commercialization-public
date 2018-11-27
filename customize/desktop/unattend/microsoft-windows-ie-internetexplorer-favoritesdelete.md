@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -71,9 +71,9 @@ The following XML output deletes all pre-existing favorites and quick links.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

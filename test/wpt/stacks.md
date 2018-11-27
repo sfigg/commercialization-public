@@ -23,16 +23,16 @@ Represents a collection of stacks. If the **Operation** attribute is specified, 
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[SystemProvider](systemprovider.md)\>
-      * \<**Stacks**\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[SystemCollectorId](systemcollectorid.md)\>
-          * \<[SystemProviderId](systemproviderid.md)\>
-            * \<**Stacks**\>
-          * \<[SystemProvider](systemprovider.md)\>
-            * \<**Stacks**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[SystemProvider](systemprovider.md)\>
+      * \<**Stacks**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<[SystemProviderId](systemproviderid.md)\>
+            * \<**Stacks**\>
+          * \<[SystemProvider](systemprovider.md)\>
+            * \<**Stacks**\>
 
 
 ## Syntax

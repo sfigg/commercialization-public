@@ -65,7 +65,7 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>.NET Framework optional component renamed to WinPE_NetFx.</p>
 <p>PowerShell optional component renamed to WinPE_PowerShell.</p>
-<p>Winpeshl.ini allows you to launch apps with command-line parameters in quotes. For more info, see [Winpeshl.ini Reference: Launching an app when WinPE starts](winpeshlini-reference-launching-an-app-when-winpe-starts.md).</p></td>
+<p>Winpeshl.ini allows you to launch apps with command-line parameters in quotes. For more info, see <a href="winpeshlini-reference-launching-an-app-when-winpe-starts.md" data-raw-source="[Winpeshl.ini Reference: Launching an app when WinPE starts](winpeshlini-reference-launching-an-app-when-winpe-starts.md)">Winpeshl.ini Reference: Launching an app when WinPE starts</a>.</p></td>
 <td align="left"><p>.NET Framework 4.5 optional component added (WinPE_NetFx4).</p>
 <p>PowerShell 3.0 optional component added (WinPE_PowerShell3).</p></td>
 <td align="left"><p>Command-line scripting tools included.</p></td>
@@ -74,18 +74,18 @@ This table compares the features and functionality with those of previous versio
 <tr class="even" valign="top">
 <td align="left"><p>Image capturing and servicing tools</p></td>
 <td align="left"><p>DISM supports Windows 10 and Windows Imaging and Configuration Designer (ICD) features.</p></td>
-<td align="left"><p>DISM supports Windows 8.1 and Windows Server 2012 R2 images but doesn’t support Windows Vista or Windows Server 2008 images. For more info, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).</p></td>
+<td align="left"><p>DISM supports Windows 8.1 and Windows Server 2012 R2 images but doesn’t support Windows Vista or Windows Server 2008 images. For more info, see <a href="dism---deployment-image-servicing-and-management-technical-reference-for-windows.md" data-raw-source="[DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)">DISM - Deployment Image Servicing and Management Technical Reference for Windows</a>.</p></td>
 <td align="left"><p>Image capturing tools included with new <code>dism /Capture-image</code> and <code>dism /Apply-image</code> commands.</p>
-<p>Doesn't support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
-<td align="left"><p>[DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md) added. DISM is a command-line tool that you can use to customize a Windows or a Windows PE image.</p>
+<p>Doesn&#39;t support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
+<td align="left"><p><a href="dism---deployment-image-servicing-and-management-technical-reference-for-windows.md" data-raw-source="[DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)">DISM - Deployment Image Servicing and Management Technical Reference for Windows</a> added. DISM is a command-line tool that you can use to customize a Windows or a Windows PE image.</p>
 <p>The PEImg and Pkgmgr tools are not supported in Windows PE 3.0.</p>
 <p>ImageX available as an optional application for capturing and applying images.</p>
-<p>Doesn't support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
+<p>Doesn&#39;t support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
 <td align="left"><p><strong>PEImg</strong> is used to service Windows PE images.</p>
-<p>After you run <strong>PEImg /prep</strong> against the Windows PE 2.0 image, the image can't be modified.</p>
+<p>After you run <strong>PEImg /prep</strong> against the Windows PE 2.0 image, the image can&#39;t be modified.</p>
 <p>ImageX is available as an optional application for capturing and applying images.</p>
 <p><strong>Pkgmgr</strong> is used to install, remove, or update Windows packages in offline images.</p>
-<p>Doesn't support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
+<p>Doesn&#39;t support servicing Windows 8.1 or Windows Server 2012 R2 images.</p></td>
 </tr>
 <tr class="odd" valign="top">
 <td align="left"><p>Optimizing Windows PE</p></td>
@@ -136,9 +136,9 @@ This table compares the features and functionality with those of previous versio
 <td align="left"><p>No change.</p></td>
 <td align="left"><p>Optional Remote Network Driver Interface Specification (RNDIS) feature added for enabling network devices that implement the RNDIS specification over USB.</p></td>
 <td align="left"><p>The Windows PE 3.1 base image contains RNDIS binaries.</p>
-<p>Windows PE 3.0: [Hotfix](http://support.microsoft.com/kb/972831) available for 802.1X (LAN) support.</p>
+<p>Windows PE 3.0: <a href="http://support.microsoft.com/kb/972831" data-raw-source="[Hotfix](http://support.microsoft.com/kb/972831)">Hotfix</a> available for 802.1X (LAN) support.</p>
 <p>Windows PE 3.1 includes 802.1X binaries as an optional component. The file name of this package is WinPE-Dot3Svc.cab.</p></td>
-<td align="left"><p>Supports IPv4 and IPv6. Doesn't support other protocols, like Internetwork Packet Exchange/Sequenced Packet Exchange (IPX/SPX).</p></td>
+<td align="left"><p>Supports IPv4 and IPv6. Doesn&#39;t support other protocols, like Internetwork Packet Exchange/Sequenced Packet Exchange (IPX/SPX).</p></td>
 </tr>
 <tr class="even" valign="top">
 <td align="left"><p>Recovery</p></td>
@@ -167,7 +167,7 @@ This table compares the features and functionality with those of previous versio
 </tbody>
 </table>
 
- 
+ 
 
 To see which version of Windows PE you’re running, type `regedit` and locate this registry key: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WinPE**.
 
@@ -203,9 +203,9 @@ In Windows 7, the main Windows PE boot file was renamed from winpe.wim to boot.
 
 [WinPE for Windows 10](winpe-intro.md)
 
- 
+ 
 
- 
+ 
 
 
 

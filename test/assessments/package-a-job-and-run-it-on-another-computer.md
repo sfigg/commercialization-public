@@ -22,7 +22,7 @@ When you create a job that you want to run on a different computer, you don't ha
 **Important**  
 A packaged job can run from a network share, but for best results run the job from the local computer to reduce run-time failures, or performance issues caused by the network.
 
- 
+ 
 
 **To package a job to run on a different computer**
 
@@ -63,7 +63,7 @@ A packaged job can run from a network share, but for best results run the job fr
     **Note**  
     For some assessments, you'll see the **Assessment Launcher** window briefly, but it doesn't persist for job monitoring.
 
-     
+     
 
 8.  Before the job starts, the job checks the computer configuration to make sure that the assessment can run successfully. The job generates error messages, warnings, and informational messages based on the computer configuration and the needs of the assessment.
 
@@ -82,9 +82,9 @@ After you run a job on a different computer, you can import the results into the
 
 [Import Results](import-results.md)
 
- 
+ 
 
- 
+ 
 
 
 

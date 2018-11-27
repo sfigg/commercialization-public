@@ -34,13 +34,13 @@ A modern standby PC will also wake and turn on the display when AC power is atta
 
 **Note**  A modern standby PC will also turn on instantly and power on the display when an incoming call is received from a communications app. The display will automatically turn off after 25 seconds if the call is not answered. Many system devices are required to wake the core silicon or SoC from modern standby, even though those events do not turn on the display. A good example is the Wi-Fi device, which will wake the SoC when a push notification for email is received, even though the screen will not turn on.
 
- 
+ 
 
 For more information about wake sources for hardware and firmware developers, see [Modern standby wake sources](modern-standby-wake-sources.md).
 
- 
+ 
 
- 
+ 
 
 
 

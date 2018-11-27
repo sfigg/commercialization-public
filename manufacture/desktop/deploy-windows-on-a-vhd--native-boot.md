@@ -102,9 +102,9 @@ Three types of VHDX files can be created by using the disk-management tools:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

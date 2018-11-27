@@ -38,7 +38,7 @@ This method disposes this instance of the **PackageWriter** class.
 
 `Protected Overrides Sub Dispose ( _`
 
-          `disposing As Boolean _`
+          `disposing As Boolean _`
 
 `) `
 
@@ -46,7 +46,7 @@ This method disposes this instance of the **PackageWriter** class.
 
 `protected override void Dispose (`
 
-          `bool disposing`
+          `bool disposing`
 
 `)`
 
@@ -55,16 +55,16 @@ This method disposes this instance of the **PackageWriter** class.
 
 *disposing*
 
-     This parameter controls the disposal of unmanaged resources.
+     This parameter controls the disposal of unmanaged resources.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

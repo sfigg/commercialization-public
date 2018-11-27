@@ -62,7 +62,7 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -74,9 +74,9 @@ This function is called frequently during an action when some update is performe
 
 [IControlProgressHandler](icontrolprogresshandler.md)
 
- 
+ 
 
- 
+ 
 
 
 

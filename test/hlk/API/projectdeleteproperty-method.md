@@ -40,7 +40,7 @@ This method deletes an instance of a **Name** property.
 
 `Public MustOverride Sub DeleteProperty ( _`
 
-          `nameOfPropertyToDelete As String _`
+          `nameOfPropertyToDelete As String _`
 
 `)`
 
@@ -48,7 +48,7 @@ This method deletes an instance of a **Name** property.
 
 `public abstract void DeleteProperty (`
 
-          `string nameOfPropertyToDelete`
+          `string nameOfPropertyToDelete`
 
 `)`
 
@@ -57,7 +57,7 @@ This method deletes an instance of a **Name** property.
 
 *nameOfPropertyToDelete*
 
-          The name of the property to delete.
+          The name of the property to delete.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception occurs if *nameOfPropertyToDelete* is **null** or empty.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

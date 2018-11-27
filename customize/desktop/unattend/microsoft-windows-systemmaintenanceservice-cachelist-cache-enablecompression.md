@@ -49,7 +49,7 @@ Enabling compression may be necessary for systems with a low amount of RAM or ca
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -96,9 +96,9 @@ The following XML output example shows a configuration of two ReadyBoost devices
 
 [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)
 
- 
+ 
 
- 
+ 
 
 
 

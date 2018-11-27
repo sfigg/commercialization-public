@@ -46,7 +46,7 @@ The GUID for the icon is contained in the application. The NOTIFYICONDATA shell 
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -84,9 +84,9 @@ The following XML output shows how to promote a new notification icon to appear 
 
 [Path](microsoft-windows-shell-setup-notificationarea-promotedicon2-path.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ Represents a collection of [TraceMergeProperty](tracemergeproperty.md) element. 
 ## Element Syntax
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<**TraceMergeProperties**\>
+  * \<**TraceMergeProperties**\>
 
 
 ## Syntax

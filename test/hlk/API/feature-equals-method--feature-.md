@@ -25,7 +25,7 @@ This function overloads the [Equals](feature-equals-method.md) function to provi
 
 `public bool Equals (`
 
-          `Feature other`
+          `Feature other`
 
 `)`
 
@@ -46,9 +46,9 @@ Returns true if the objects are the same.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

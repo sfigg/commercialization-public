@@ -105,9 +105,9 @@ The **Off** state is defined as the device operating mode when the device has ha
 
 In the **Off** state a device should not consume any power.
 
- 
+ 
 
- 
+ 
 
 
 

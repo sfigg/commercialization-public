@@ -63,9 +63,9 @@ In the case of a device, for example, the key is the hardware id.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

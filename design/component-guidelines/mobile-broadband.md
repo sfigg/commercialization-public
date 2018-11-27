@@ -52,7 +52,7 @@ The following table summarizes the recommended mobile broadband hardware feature
 </tbody>
 </table>
 
- 
+ 
 
 Embedded module solutions must always have mobile broadband functionality available without any USB hub design inside the chipset.
 
@@ -81,7 +81,7 @@ The following table summarizes the additional features, as specified by NDIS, th
 | Radio Management      | Support              |
 | Fast dormancy         | Support              |
 
- 
+ 
 
 ## Drivers and software
 
@@ -144,9 +144,9 @@ If the device features a SIM card, we recommend the SIM card socket is accessibl
 
 [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

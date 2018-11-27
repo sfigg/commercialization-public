@@ -19,7 +19,7 @@ ms.topic: article
 Partners can change the default settings for detecting Wi-Fi hotspots.
 
 Windows 10 automatically connects users to Wi-Fi so they can get online quickly in more places. It can connect them to open Wi-Fi hotspots that it knows about through crowdsourcing.
-##How it works
+## How it works
 Users choose the settings for automatically connecting to suggested open hotspots by going to Settings > Network & Internet > Wi-Fi on a Windows 10 PC or a phone with Windows 10 Mobile in Settings > Network & wireless > Wi-Fi > Additional settings. To use this feature, customers will need to be signed in with their Microsoft account on your Windows 10 PC or mobile device. (Note that this feature isn't available in all countries or regions.)
 
 Windows 10 learns about open Wi-Fi hotspots a Windows PC or Windows phone connects to by collecting information about the network, like whether the open Wi-Fi network has a high-quality Internet connection. By using that information from your device and from other Windows customers' devices, we build a database of these high-quality networks. When you’re in range of one of these Wi-Fi hotspots, you automatically get connected to it.
@@ -77,7 +77,7 @@ Windows 10 learns about open Wi-Fi hotspots a Windows PC or Windows phone connec
     </tbody>
     </table>
 
-     
+     
 
 4.  Set the value of `DefaultAutoConnectState` to one of the following values:
 
@@ -105,7 +105,7 @@ Windows 10 learns about open Wi-Fi hotspots a Windows PC or Windows phone connec
     </tbody>
     </table>
 
-     
+     
 
 5.  Set the value of `DefaultWiFiSharingState` to one of the following values:
 

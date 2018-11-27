@@ -72,7 +72,7 @@ This setting is also available to users in the **USB** settings screen.
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Build an image that has this customization enabled, and flash this image to a device.

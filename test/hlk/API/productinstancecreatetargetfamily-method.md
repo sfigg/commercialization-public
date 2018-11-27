@@ -42,7 +42,7 @@ This method creates and adds a target family to the existing product instance, u
 
 `Public MustOverride Function CreateTargetFamily ( _`
 
-          `deviceFamily As DeviceFamily _`
+          `deviceFamily As DeviceFamily _`
 
 `) As TargetFamily`
 
@@ -50,7 +50,7 @@ This method creates and adds a target family to the existing product instance, u
 
 `public abstract TargetFamily CreateTargetFamily (`
 
-          `DeviceFamily deviceFamily`
+          `DeviceFamily deviceFamily`
 
 `)`
 
@@ -59,7 +59,7 @@ This method creates and adds a target family to the existing product instance, u
 
 *deviceFamily*
 
-     The device family to use to create the **TargetFamily**.
+     The device family to use to create the **TargetFamily**.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns **TargetFamily**, which is an initialized **TargetFamily** object.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

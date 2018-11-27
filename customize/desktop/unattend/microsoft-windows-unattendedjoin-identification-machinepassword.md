@@ -38,7 +38,7 @@ This setting is valid only if [UnsecureJoin](microsoft-windows-unattendedjoin-id
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -78,9 +78,9 @@ The following XML output shows how to specify the value of the unique password f
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

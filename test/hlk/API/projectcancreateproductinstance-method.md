@@ -46,11 +46,11 @@ This method validates that a child product instance object can be created but do
 
 `Public MustOverride Function CanCreateProductInstance ( _`
 
-          `productInstanceName As String, _`
+          `productInstanceName As String, _`
 
-          `pool As MachinePool, _`
+          `pool As MachinePool, _`
 
-          `platform As OSPlatform _`
+          `platform As OSPlatform _`
 
 `) As Boolean`
 
@@ -58,11 +58,11 @@ This method validates that a child product instance object can be created but do
 
 `public abstract bool CanCreateProductInstance (`
 
-          `string productInstanceName,`
+          `string productInstanceName,`
 
-          `MachinePool pool,`
+          `MachinePool pool,`
 
-          `OSPlatform platform`
+          `OSPlatform platform`
 
 `)`
 
@@ -71,15 +71,15 @@ This method validates that a child product instance object can be created but do
 
 *productInstanceName*
 
-     The name of the **ProductInstance** object.
+     The name of the **ProductInstance** object.
 
 *pool*
 
-     The machine pool to use for this **ProductInstance**.
+     The machine pool to use for this **ProductInstance**.
 
 *platform*
 
-     The operating system platform (operating system architecture plus the product SKU) to use for this platform instance.
+     The operating system platform (operating system architecture plus the product SKU) to use for this platform instance.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -93,9 +93,9 @@ This method does not create a ProductInstance. You must call CreateProductInstan
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

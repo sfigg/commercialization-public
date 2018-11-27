@@ -40,9 +40,9 @@ ms.topic: article
 
 `Public MustOverride Sub MoveMachineTo ( _`
 
-          `machine As Machine, _`
+          `machine As Machine, _`
 
-          `otherPool As MachinePool _`
+          `otherPool As MachinePool _`
 
 `)`
 
@@ -50,9 +50,9 @@ ms.topic: article
 
 `public abstract void MoveMachineTo (`
 
-          `Machine machine,`
+          `Machine machine,`
 
-          `MachinePool otherPool`
+          `MachinePool otherPool`
 
 `)`
 
@@ -61,20 +61,20 @@ ms.topic: article
 
 *machine*
 
-          A machine to move from this pool.
+          A machine to move from this pool.
 
 *otherPool*
 
-          The destination pool to move the machine to.
+          The destination pool to move the machine to.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

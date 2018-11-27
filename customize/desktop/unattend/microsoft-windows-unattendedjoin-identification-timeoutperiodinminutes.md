@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 If no value is entered, or if an invalid value is entered, Windows will use 15 minutes as the default value.
 
@@ -71,9 +71,9 @@ The following XML output shows how to set the default timeout period to 5 minute
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

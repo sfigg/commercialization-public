@@ -17,7 +17,7 @@ ms.topic: article
 # Filter results
 
 
-This topic describes how to filter and sort results when you're selecting results to open in the Windows Assessment Console.
+This topic describes how to filter and sort results when you're selecting results to open in the Windows Assessment Console.
 
 If there's a long list of results to choose from, you can filter the results to quickly find the ones that you're interested in. Or, you can search for specific results by typing a keyword in the search box.
 
@@ -147,12 +147,14 @@ If there's a long list of results to choose from, you can filter the results to 
     </tbody>
     </table>
 
-     
 
-    **Note**  
-    The Windows Experience Index score uses a scale of 1.0 to 9.9. For more information about WinSAT, see [Winsat](http://go.microsoft.com/fwlink/?LinkId=224864).
 
-     
+~~~
+**Note**  
+The Windows Experience Index score uses a scale of 1.0 to 9.9. For more information about WinSAT, see [Winsat](http://go.microsoft.com/fwlink/?LinkId=224864).
+~~~
+
+
 
 4.  Click the relational expression and select one that you want to use.
 
@@ -182,10 +184,10 @@ If there's a long list of results to choose from, you can filter the results to 
 
     -   regex
 
-        **Note**  
+        **Note**  
         The term *regex* refers to regular expressions. For more information, see [Regular Expression Language Elements](http://go.microsoft.com/fwlink/?LinkId=235292).
 
-         
+
 
 5.  In the next box, enter a value that completes the expression that you're using to filter results. For example, you can use an expression like Architecture equals x86.
 
@@ -206,9 +208,9 @@ You can also search for results by typing a keyword in the search box.
 
 [Import results](import-results.md)
 
- 
 
- 
+
+
 
 
 

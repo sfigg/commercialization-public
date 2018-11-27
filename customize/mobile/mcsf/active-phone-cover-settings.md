@@ -101,7 +101,7 @@ When the OS receives a notification that the cover state has been set to Opened:
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a phone.

@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -107,9 +107,9 @@ The following XML output shows a complete Windows Deployment Services deployment
 
 [Credentials](microsoft-windows-setup-windowsdeploymentservices-login-credentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

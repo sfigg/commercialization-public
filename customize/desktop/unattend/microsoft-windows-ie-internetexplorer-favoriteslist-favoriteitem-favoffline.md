@@ -31,16 +31,16 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) is available for offline browsing.</p></td>
+<td><p>Specifies that the <a href="microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md" data-raw-source="[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)">FavoriteItem</a> is available for offline browsing.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) is not available for offline browsing. This is the default value.</p></td>
+<td><p>Specifies that the <a href="microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md" data-raw-source="[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)">FavoriteItem</a> is not available for offline browsing. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -86,9 +86,9 @@ The following XML output specifies how to configure favorites.
 
 [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

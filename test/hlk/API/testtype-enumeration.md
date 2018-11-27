@@ -74,11 +74,11 @@ This enumeration represents types of tests that can exist in the HCK.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

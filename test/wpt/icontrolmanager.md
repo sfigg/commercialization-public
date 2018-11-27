@@ -83,31 +83,31 @@ The following table describes the functions that this interface provides.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Start](start-icontrolmanager.md)</p></td>
+<td><p><a href="start-icontrolmanager.md" data-raw-source="[Start](start-icontrolmanager.md)">Start</a></p></td>
 <td><p>Starts a recording.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Update](update-icontrolmanager.md)</p></td>
+<td><p><a href="update-icontrolmanager.md" data-raw-source="[Update](update-icontrolmanager.md)">Update</a></p></td>
 <td><p>Updates a profile collection.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Cancel](cancel.md)</p></td>
+<td><p><a href="cancel.md" data-raw-source="[Cancel](cancel.md)">Cancel</a></p></td>
 <td><p>Stops a recording without saving any data.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Save](save-icontrolmanager.md)</p></td>
+<td><p><a href="save-icontrolmanager.md" data-raw-source="[Save](save-icontrolmanager.md)">Save</a></p></td>
 <td><p>Saves a recording that is logged to circular buffers in memory to the specified event trace log (ETL) file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Stop](stop-icontrolmanager.md)</p></td>
+<td><p><a href="stop-icontrolmanager.md" data-raw-source="[Stop](stop-icontrolmanager.md)">Stop</a></p></td>
 <td><p>Stops a recording and saves it to the specified event trace log (ETL) file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[QueryXML](queryxml.md)</p></td>
+<td><p><a href="queryxml.md" data-raw-source="[QueryXML](queryxml.md)">QueryXML</a></p></td>
 <td><p>Indicates the XML format of the currently running profile and whether the profile is running properly.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Query](query-icontrolmanager.md)</p></td>
+<td><p><a href="query-icontrolmanager.md" data-raw-source="[Query](query-icontrolmanager.md)">Query</a></p></td>
 <td><p>Queries the properties of session and providers in all profiles.</p></td>
 </tr>
 <tr class="even">
@@ -119,17 +119,17 @@ The following table describes the functions that this interface provides.
 <td><p>Sets the specified property.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetProviderNameFromGuid](getprovidernamefromguid.md)</p></td>
+<td><p><a href="getprovidernamefromguid.md" data-raw-source="[GetProviderNameFromGuid](getprovidernamefromguid.md)">GetProviderNameFromGuid</a></p></td>
 <td><p>Gets the provider name of the specified GUID.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetProviderGuidFromName](getproviderguidfromname.md)</p></td>
+<td><p><a href="getproviderguidfromname.md" data-raw-source="[GetProviderGuidFromName](getproviderguidfromname.md)">GetProviderGuidFromName</a></p></td>
 <td><p>Gets the provider GUID of the specified name.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Properties
 
@@ -153,7 +153,7 @@ The following table describes the parameters of properties that this interface c
 <tr class="odd">
 <td><p><strong>ControlProgressHandler</strong></p></td>
 <td><p><em>ppControlProgressHandler</em> [out]</p></td>
-<td><p>Pointer to the client-side implementation of the [IControlProgressHandler](icontrolprogresshandler.md) interface.</p></td>
+<td><p>Pointer to the client-side implementation of the <a href="icontrolprogresshandler.md" data-raw-source="[IControlProgressHandler](icontrolprogresshandler.md)">IControlProgressHandler</a> interface.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ControlProgressHandler</strong></p></td>
@@ -163,7 +163,7 @@ The following table describes the parameters of properties that this interface c
 <tr class="odd">
 <td><p><strong>TraceMergeTextHandler</strong></p></td>
 <td><p><em>ppTraceMergeTextHandler</em> [out]</p></td>
-<td><p>Pointer to the text and some other merge time information in the trace injected by the [ITraceMergeTextHandler](itracemergetexthandler.md) interface.</p></td>
+<td><p>Pointer to the text and some other merge time information in the trace injected by the <a href="itracemergetexthandler.md" data-raw-source="[ITraceMergeTextHandler](itracemergetexthandler.md)">ITraceMergeTextHandler</a> interface.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TraceMergeTextHandler</strong></p></td>
@@ -183,16 +183,16 @@ The following table describes the parameters of properties that this interface c
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

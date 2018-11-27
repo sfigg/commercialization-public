@@ -47,68 +47,68 @@ Partners must keep the following design considerations in mind when implementing
 <a href="" id="instructions-"></a>**Instructions:**  
 **To add an additional alarm sound**
 
-1.  Create a .dll that contains the alarm display name. For more information on how to do this, see [Create a resource-only .dll for localized strings](create-a-resource-only-dll-for-localized-strings.md).
+1. Create a .dll that contains the alarm display name. For more information on how to do this, see [Create a resource-only .dll for localized strings](create-a-resource-only-dll-for-localized-strings.md).
 
-2.  Create a customization answer file using the contents shown in the following code sample.
+2. Create a customization answer file using the contents shown in the following code sample.
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8" ?>
-    <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
-                         Name="AdditionalAlarms"  
-                         Description="Use to add additional alarm sounds and set a new default alarm sound."  
-                         Owner=""  
-                         OwnerType="OEM"> 
+   ```XML
+   <?xml version="1.0" encoding="utf-8" ?>
+   <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
+                        Name="AdditionalAlarms"  
+                        Description="Use to add additional alarm sounds and set a new default alarm sound."  
+                        Owner=""  
+                        OwnerType="OEM"> 
       
-       <Static>  
+      <Static>  
 
-        <Settings Path="Localization/MUI">  
-          <!-- Use to add your base MUI DLL file -->
-          <Asset Name="BaseDll" Source="" />
+       <Settings Path="Localization/MUI">  
+         <!-- Use to add your base MUI DLL file -->
+         <Asset Name="BaseDll" Source="" />
 
-          <!-- Use to specify the language MUI packages (*.dll.mui) for the languages you are supporting and have localized strings for -->
-          <Asset Name="LanguageDll/$(langid)" Source="" />
-          <Asset Name="LanguageDll/$(langid)" Source="" />
-          <Asset Name="LanguageDll/$(langid)" Source="" />
-          <!-- Add as many as you need -->         
-        </Settings>  
+         <!-- Use to specify the language MUI packages (*.dll.mui) for the languages you are supporting and have localized strings for -->
+         <Asset Name="LanguageDll/$(langid)" Source="" />
+         <Asset Name="LanguageDll/$(langid)" Source="" />
+         <Asset Name="LanguageDll/$(langid)" Source="" />
+         <!-- Add as many as you need -->         
+       </Settings>  
 
-        <!-- Use to add one additional alarm sound -->
-        <Settings Path="EventSounds">  
-          <Asset Name="AlarmSounds" DisplayName="@DisplayStrings.dll,-Offset" Source="" />
-        </Settings>
+       <!-- Use to add one additional alarm sound -->
+       <Settings Path="EventSounds">  
+         <Asset Name="AlarmSounds" DisplayName="@DisplayStrings.dll,-Offset" Source="" />
+       </Settings>
 
-       </Static>
+      </Static>
 
-    </ImageCustomizations>
-    ```
+   </ImageCustomizations>
+   ```
 
-3.  Specify an `Owner`.
+3. Specify an `Owner`.
 
-4.  Add the resource-only .dll that contains the alarm display name by setting the `BaseDll` asset to point to the location of your base MUI DLL file. For example: *C:\\Path\\DisplayStrings.dll*.
+4. Add the resource-only .dll that contains the alarm display name by setting the `BaseDll` asset to point to the location of your base MUI DLL file. For example: *C:\\Path\\DisplayStrings.dll*.
 
-5.  Add the language MUI packages (\*.dll.mui) for all the languages you are supporting and have localized strings for. To do this:
+5. Add the language MUI packages (\*.dll.mui) for all the languages you are supporting and have localized strings for. To do this:
 
-    -   Set the asset's `Name` to `LanguageDll/`*$(langid)* where *$(langid)* corresponds to the language. For example: *LanguageDll/en-US*.
+   -   Set the asset's `Name` to `LanguageDll/`*$(langid)* where *$(langid)* corresponds to the language. For example: *LanguageDll/en-US*.
 
-    -   Set the asset's `Source` to the location of the .dll.mui file for that language. For example: *C:\\Path\\en-us\\DisplayStrings.dll.mui*.
+   -   Set the asset's `Source` to the location of the .dll.mui file for that language. For example: *C:\\Path\\en-us\\DisplayStrings.dll.mui*.
 
-    -   Repeat the previous steps for the other languages.
+   -   Repeat the previous steps for the other languages.
 
-        The following example shows the customization answer file entries for en-US, fr-CA, and es-MX languages:
+       The following example shows the customization answer file entries for en-US, fr-CA, and es-MX languages:
 
-        ```XML
-        <Asset Name="LanguageDll/en-US" Source="C:\Path\en-us\DisplayStrings.dll.mui” />
-        <Asset Name="LanguageDll/fr-CA" Source="C:\Path\fr-CA\DisplayStrings.dll.mui" />
-        <Asset Name="LanguageDll/es-MX" Source="C:\Path\es-MX\DisplayStrings.dll.mui" />
-        ```
+       ```XML
+       <Asset Name="LanguageDll/en-US" Source="C:\Path\en-us\DisplayStrings.dll.mui” />
+       <Asset Name="LanguageDll/fr-CA" Source="C:\Path\fr-CA\DisplayStrings.dll.mui" />
+       <Asset Name="LanguageDll/es-MX" Source="C:\Path\es-MX\DisplayStrings.dll.mui" />
+       ```
 
-6.  Add one additional alarm sound by adding an `AlarmSounds` asset. To do this:
+6. Add one additional alarm sound by adding an `AlarmSounds` asset. To do this:
 
-    -   Set the asset's `Name` to `AlarmSounds`.
+   - Set the asset's `Name` to `AlarmSounds`.
 
-    -   Set the `DisplayName` to the name of the resource-only .dll file and specify the string offset. Replace *DisplayStrings.dll* with the name of your .dll file and replace *Offset* with the correct offset for the localized string. For example: *@DisplayStrings.dll,-104*
+   - Set the `DisplayName` to the name of the resource-only .dll file and specify the string offset. Replace *DisplayStrings.dll* with the name of your .dll file and replace *Offset* with the correct offset for the localized string. For example: <em>@DisplayStrings.dll,-104</em>
 
-    -   Set `Source` to the full path to the custom alarm sound on your development machine. For example: *C:\\Path\\NewAlarmSound.wma*.
+   - Set `Source` to the full path to the custom alarm sound on your development machine. For example: *C:\\Path\\NewAlarmSound.wma*.
 
 If you are setting the default alarm sound in addition to adding other alarm sound files, see the *To set a new default alarm* section.
 

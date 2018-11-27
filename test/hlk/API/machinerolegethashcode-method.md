@@ -54,9 +54,9 @@ Returns **Int32**, which is a unique number which is the **MachineRole** hash co
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output shows how to change this setting so that no information
 
 [Diagnostics](microsoft-windows-setup-diagnostics.md)
 
- 
+ 
 
- 
+ 
 
 
 

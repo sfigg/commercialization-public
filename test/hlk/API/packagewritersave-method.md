@@ -26,29 +26,29 @@ ms.topic: article
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Save Method (String)](packagewritersave-method--string-.md)</p></td>
+<td><p><a href="packagewritersave-method--string-.md" data-raw-source="[Save Method (String)](packagewritersave-method--string-.md)">Save Method (String)</a></p></td>
 <td><p>This method saves a submission package to disk.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Save Method (String, X509Certificate)](packagewritersave-method--string-x509certificate-.md)</p></td>
+<td><p><a href="packagewritersave-method--string-x509certificate-.md" data-raw-source="[Save Method (String, X509Certificate)](packagewritersave-method--string-x509certificate-.md)">Save Method (String, X509Certificate)</a></p></td>
 <td><p>This method saves a package and digitally signs it using an X509-compliant certificate. This method can be used for both submission packages and update submission packages.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Save Method (string, List&lt;TargetFamily&gt;)](packagewriter-save-method--string--list-targetfamily--.md)</p></td>
+<td><p><a href="packagewriter-save-method--string--list-targetfamily--.md" data-raw-source="[Save Method (string, List&amp;lt;TargetFamily&amp;gt;)](packagewriter-save-method--string--list-targetfamily--.md)">Save Method (string, List&lt;TargetFamily&gt;)</a></p></td>
 <td><p>Creates an HCK package only containing data in the given target families.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Save Method (string, List&lt;TargetFamily&gt;, X509Certificate)](packagewriter-save-method--string--list-targetfamily---x509certificate-.md)</p></td>
+<td><p><a href="packagewriter-save-method--string--list-targetfamily---x509certificate-.md" data-raw-source="[Save Method (string, List&amp;lt;TargetFamily&amp;gt;, X509Certificate)](packagewriter-save-method--string--list-targetfamily---x509certificate-.md)">Save Method (string, List&lt;TargetFamily&gt;, X509Certificate)</a></p></td>
 <td><p>Creates and signs an HCK package only containing data in the given target familes.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

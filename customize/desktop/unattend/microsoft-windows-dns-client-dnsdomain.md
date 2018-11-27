@@ -38,7 +38,7 @@ By default, a global `DNSDomain` parameter applies to all configured network int
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -98,9 +98,9 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -171,11 +171,11 @@ There are four different cases: horizontal, vertical, diagonal (left to right) a
 
 First, align the motion to the lines rendered on the screen by following the instructions in the [Basic Usage](#basic) section of this document. Position the actuators over the green targets, so that the contact area of each actuator is inside the green area of its corresponding target. Use the concentric circles and crosshairs as a guide. Bring the actuators into contact with the screen at the centers of the green targets and drag to the centers of the yellow targets. There is no minimum or maximum speed.
 
->[!NOTE]
->  
-It is important that the R2-axis be locked to the 0° position, or it will be more difficult to align the actuators to the targets.
+> [!NOTE]
+> 
+> It is important that the R2-axis be locked to the 0° position, or it will be more difficult to align the actuators to the targets.
 
- 
+ 
 
 **Radial**
 
@@ -191,11 +191,11 @@ This test has been divided into two areas: one to cover the left side of the scr
 
 First, fix two actuators to the carriage at a distance of 5 cm from the center. Position each actuator above a green target and make sure that it is centered. Then, rotate in the direction that is indicated by the lines that are rendered on the screen until the end-points are reached.
 
->[!NOTE]
->  
-It is easiest to align the actuators and perform the motion if the base plate is rotated so that the short side of the device faces the tester (typically, with the base plate in the 90° or 270° position).
+> [!NOTE]
+> 
+> It is easiest to align the actuators and perform the motion if the base plate is rotated so that the short side of the device faces the tester (typically, with the base plate in the 90° or 270° position).
 
- 
+ 
 
 **Radial Insert**
 
@@ -261,11 +261,11 @@ In this test, you are presented with four cases, all identical except for placem
 
 To execute this test, set the two actuators in the housing so that they are centered on the two starting points. A lock is provided to ensure that the contacts do not slide to a wider position. Next, lower the actuators until they make solid contact with the screen and immediately bring them together into their central position. Immediately lift the actuators. The attachment is designed to bring the actuators to a distance of 12 mm from center to center.
 
->[!NOTE]
->  
-You must complete the gesture within five seconds of when the first actuator touches the screen.
+> [!NOTE]
+> 
+> You must complete the gesture within five seconds of when the first actuator touches the screen.
 
- 
+ 
 
 ### <span id="Input_Separation"></span><span id="input_separation"></span><span id="INPUT_SEPARATION"></span>Input Separation
 
@@ -307,11 +307,11 @@ In this test, you are presented with four cases, all identical except for placem
 
 To execute this test, set the two actuators in the housing so that they are centered on the two starting points. A lock is provided to ensure that the contacts do not slide to a wider position. Next, lower the actuators until they make solid contact with the screen and immediately bring them together into their central position. Immediately lift the actuators. The attachment is designed to bring the actuators to a distance of 12 mm from center to center.
 
->[!NOTE]
->  
-You must complete the gesture within five seconds of when the first actuator touches the screen.
+> [!NOTE]
+> 
+> You must complete the gesture within five seconds of when the first actuator touches the screen.
 
- 
+ 
 
 ### <span id="Physical_input_position"></span><span id="physical_input_position"></span><span id="PHYSICAL_INPUT_POSITION"></span>Physical input position
 
@@ -386,15 +386,15 @@ Figure 7: The large PT3 manufactured by ITRI
 
 Figure 8: TouchWhere software showing how to calibrate the camera with the DUT
 
->[!IMPORTANT]
->  
-Make sure that the device under test is level when you put it on the base plate of the PT3.
+> [!IMPORTANT]
+> 
+> Make sure that the device under test is level when you put it on the base plate of the PT3.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

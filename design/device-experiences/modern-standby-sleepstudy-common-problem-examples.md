@@ -60,9 +60,9 @@ A common reason for a modern standby session to have zero percent software and h
 
 ![summary table](../images/summarytablemissingdriver.png)
 
- 
+ 
 
- 
+ 
 
 
 

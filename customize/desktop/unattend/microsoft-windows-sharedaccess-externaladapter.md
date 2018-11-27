@@ -38,7 +38,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -75,9 +75,9 @@ The following XML output shows how to set Shared Access.
 
 [Bridge](microsoft-windows-networkbridge-bridge.md)
 
- 
+ 
 
- 
+ 
 
 
 

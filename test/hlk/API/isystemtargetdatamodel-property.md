@@ -40,7 +40,7 @@ This property represents the model name of the test target (test device).
 
 `ReadOnly Property Model As String`
 
-          
+          
 
 **C#**
 
@@ -56,9 +56,9 @@ Returns **String**.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -72,7 +72,7 @@ By default, the OS shows the timezone confirmation page during initial device se
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device capable of receiving NITZ information.

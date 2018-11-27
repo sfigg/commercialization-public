@@ -29,9 +29,9 @@ myTest.SetParameter("TargetIpAddress", "1.2.3.4", ParameterSetAsDefault.ApplyT
 
 When you use the **ParameterSetAsDefault.ApplyToAllTargets()** method, all tests that are associated with the current target are searched, and all parameters that have the same parameter name are set via the supplied values. This parameter setting doesn't span targets within a target family.
 
- 
+ 
 
- 
+ 
 
 
 

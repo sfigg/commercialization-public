@@ -381,9 +381,9 @@ In this walkthrough, we're extending the [Configure Quick actions](https://msdn.
 
         This command will generate a package called Customization.Notifications.QuickActions.spkg. In the next section, we will use this package and add it to a feature manifest file.
 
- 
+ 
 
- 
+ 
 
 
 

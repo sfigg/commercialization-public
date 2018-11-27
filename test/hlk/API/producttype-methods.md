@@ -32,16 +32,16 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals](producttype-equals-method.md)</p></td>
+<td><p><a href="producttype-equals-method.md" data-raw-source="[Equals](producttype-equals-method.md)">Equals</a></p></td>
 <td><p>Overloaded. Overridden.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetFeatures](producttypegetfeatures-method.md)</p></td>
+<td><p><a href="producttypegetfeatures-method.md" data-raw-source="[GetFeatures](producttypegetfeatures-method.md)">GetFeatures</a></p></td>
 <td><p>This method retrieves the enumerated list of features stored in m_Features.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetHashCode](producttype-gethashcode-method.md)</p></td>
-<td><p>Overridden. Returns the hash code for the current [ProductType](producttype-class.md) object.</p></td>
+<td><p><a href="producttype-gethashcode-method.md" data-raw-source="[GetHashCode](producttype-gethashcode-method.md)">GetHashCode</a></p></td>
+<td><p>Overridden. Returns the hash code for the current <a href="producttype-class.md" data-raw-source="[ProductType](producttype-class.md)">ProductType</a> object.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>GetType</strong></p></td>
@@ -54,7 +54,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -82,11 +82,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

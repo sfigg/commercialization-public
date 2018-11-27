@@ -47,9 +47,9 @@ There is a set of standards defined in the Windows Compatibility Requirements do
 
     2. Find and disable all HID-compliant touch digitizers, with the exception of the one that you want to validate.
 
- 
+ 
 
- 
+ 
 
 
 

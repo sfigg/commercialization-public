@@ -28,7 +28,7 @@ In Windows Performance Analyzer (WPA), you can provide feedback by sending a smi
     **Note**  
     Steps 3 through 5 are optional; however, any feedback provided is helpful.
 
-     
+     
 
 3.  Provide feedback in the message area.
 
@@ -39,7 +39,7 @@ In Windows Performance Analyzer (WPA), you can provide feedback by sending a smi
     **Note**  
     This field may be pre-populated with your email address.
 
-     
+     
 
 6.  Depending on your feedback, click **Send a Smile...** or **Send a Frown...**.
 
@@ -48,9 +48,9 @@ In Windows Performance Analyzer (WPA), you can provide feedback by sending a smi
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

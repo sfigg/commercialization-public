@@ -241,7 +241,7 @@ Review how the data is presented. Here are some definitions of the most helpful 
 </tbody>
 </table>
 
- 
+ 
 
 ## Step 6: Identify process working sets that impact the memory footprint
 
@@ -280,9 +280,9 @@ Resident Set data can be displayed in many different ways based on the column ar
 
 Focus on 3rd-party processes and determine if they need to be launched on boot as part of the preloaded software. As a developer, you should analyze the dynamic allocations your process is making to understand where optimizations can be made.
 
- 
+ 
 
- 
+ 
 
 
 

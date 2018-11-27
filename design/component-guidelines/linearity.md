@@ -33,7 +33,7 @@ This is to test the linearity performance of a Windows Precision Touchpad device
 
     **Note**  The mechanical pieces used for this test can be used to validate other user experience metrics by determining performance at narrower finger separations. While this additional test is not required, it is recommended.
 
-     
+     
 
 **Tools required**
 
@@ -132,9 +132,9 @@ Note that, as shown in the preceding diagram, the Not Good (NG) segment portions
 
 -   A total of 30/30 (100%) iterations must Pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -131,9 +131,9 @@ For more information about Wi-Fi testing APIs, see the [Wi-Fi manufacturing API]
 
 [Calling SetScreenOff to enter connected standby](calling-setscreenoff-to-enter-connected-standby.md)
 
- 
+ 
 
- 
+ 
 
 
 

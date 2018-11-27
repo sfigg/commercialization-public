@@ -45,9 +45,9 @@ This class contains a ordered list of parameters for each resolver.
 
 [IFilterResult Members](ifilterresult-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

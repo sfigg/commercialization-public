@@ -40,7 +40,7 @@ WPR requires Windows 7 or later version operating system.
         **Caution**  
         For longer recordings, select **Memory**. When you select **File**, the file can grow very large because the only limitation to the file size is the available disk space. Windows Performance Analyzer (WPA) cannot analyze extremely large files.
 
-         
+         
 
 3.  Click **Start** to begin recording, or click **Cancel** to end without recording.
 
@@ -51,7 +51,7 @@ If you start WPR while another application is recording (such as Xperf or an app
 
 To stop the current session, click **OK**. WPR will start to record. Note that this action can impact the application that started the cancelled session. To allow the current session to continue, click **Cancel**. In this case, WPR does not start a recording and the other application is not affected.
 
- 
+ 
 
 ## Related topics
 
@@ -60,9 +60,9 @@ To stop the current session, click **OK**. WPR will start to record. Note that t
 
 [Recording for Basic System Diagnosis](recording-for-basic-system-diagnosis.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,7 +41,7 @@ The following image shows the HLK Studio **Package** tab.
         > * Hardware Dev Center uses **Locales** to build the correct OS Language targeting for Windows Update. If you plan on publishing your driver to Windows Update, be sure to select all the languages you want it delivered to. 
         > * The default locale is English only. If you want to add another locale, you must add it now. After the driver package is created, you cannot change the locales.  
 
-         
+         
 
 3.  To add symbols (optional), right-click the driver folder, click **Add Symbols** &gt; **Browse** to select the folder, and then click **OK**.
 
@@ -63,17 +63,17 @@ The following image shows the HLK Studio **Package** tab.
 
 For additional information on packages, see the following topics:
 
--   [HLK Studio - Package Tab](..\user\hlk-studio---package-tab.md)
+- [HLK Studio - Package Tab](../user/hlk-studio---package-tab.md)
 
--   [HLK Signing with an HSM](..\user\hlk-signing-with-an-hsm.md)
+- [HLK Signing with an HSM](../user/hlk-signing-with-an-hsm.md)
 
 ### Next steps
 
 Congratulations, you have completed the end-to-end testing of your device using the Windows HLK. Submit the signed package (.hlkx file) through the Windows Hardware Dev Center Dashboard. (For more details, see [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/).)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -66,13 +66,12 @@ Each On/Off Transition Performance assessment evaluates one of these transitions
 <tbody>
 <tr class="odd">
 <td><p>Boot (fast startup)</p></td>
-<td><p>The Boot Performance (Fast Startup) assessment measures the performance of a new fast-startup transition. Windows 8introduces a boot process that enables faster startup of your computer under most conditions. The shutdown process has been updated to include writing data to disk, in a way that resembles how hibernate works. You initiate this process by shutting down the computer. When you press the power button, the computer will turn on and Windows will start by using the fast startup process.</p>
+<td><p>The Boot Performance (Fast Startup) assessment measures the performance of a new fast-startup transition. Windows 8introduces a boot process that enables faster startup of your computer under most conditions. The shutdown process has been updated to include writing data to disk, in a way that resembles how hibernate works. You initiate this process by shutting down the computer. When you press the power button, the computer will turn on and Windows will start by using the fast startup process.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If fast startup is turned off in <strong>Power Options</strong>, both shutdown and restart occur as full reboots.</p>
+<strong>Note</strong><br/><p>If fast startup is turned off in <strong>Power Options</strong>, both shutdown and restart occur as full reboots.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -83,31 +82,30 @@ Each On/Off Transition Performance assessment evaluates one of these transitions
 <td><p>Hibernate</p></td>
 <td><p>The Hibernate Performance assessment helps you identify the components that have the most impact on the transition between the system states of hibernate and resume. Hibernate is the sleep state in which system and user data is written to disk in a hiberfile. Then, the system enters the lowest sleep state (S4), and the power is cut. The transition from hibernate back to wake-up from hibernate is the interval between the time when the user initiates wake-up from hibernate (by pressing the power button or a USB device button if the computer is configured for wake-on-USB) and the time when the computer becomes usable and responsive (sometime after the desktop appears).</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>A hiberfile (Hiberfil.sys) is a file that the operating system creates when the computer enters hibernate mode. When the computer is turned on, Windows uses this file to return the system to its pre-hibernate state.</p>
+<strong>Note</strong><br/><p>A hiberfile (Hiberfil.sys) is a file that the operating system creates when the computer enters hibernate mode. When the computer is turned on, Windows uses this file to return the system to its pre-hibernate state.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### Effect of fast startup on boot performance
 
-The default shutdown and reboot scenario has changed in Windows 8. The shutdown process now includes writing data to disk in a way that resembles how the hibernate state works. A key difference between the shutdown and reboot of Windows 8 and the shutdown and reboot of previous Windows versions is that all user sessions are logged off normally and the remaining information is written to a hiberfile. Logon remains the same as it was in the previous Windows versions. The new boot process in Windows 8 is usually much faster, as shown here:
+The default shutdown and reboot scenario has changed in Windows 8. The shutdown process now includes writing data to disk in a way that resembles how the hibernate state works. A key difference between the shutdown and reboot of Windows 8 and the shutdown and reboot of previous Windows versions is that all user sessions are logged off normally and the remaining information is written to a hiberfile. Logon remains the same as it was in the previous Windows versions. The new boot process in Windows 8 is usually much faster, as shown here:
 
 ![comparison of windows 8 to previous boot process](images/dep-win8-8-techref-comparebootperf(windevprev).jpg)
 The traditional Windows boot process loads the operating system's kernel, device drivers, and other system component files into memory and loads the logon screen and desktop. Fast startup provides performance benefits by avoiding some of the work that's traditionally required at boot time. The benefits of this new shutdown/boot transition are immediately noticeable.
 
 There are still several areas where device drivers, services, applications, and other features can adversely affect this scenario. The Boot Performance (Fast Startup) assessment enables you to measure the time of each phase in the scenario, provides insight into what is being run during each subphase, identifies potential issues, and provides remediation guidance for ecosystem partners to improve their products.
 
-**Note**  
-The traditional Windows boot is still sometimes required on a computer that's running Windows 8. You can initiate it by pressing Ctrl+Alt+Delete, choosing the power icon, and then choosing **Restart**. When the computer reboots, it uses the traditional boot process.
+**Note**  
+The traditional Windows boot is still sometimes required on a computer that's running Windows 8. You can initiate it by pressing Ctrl+Alt+Delete, choosing the power icon, and then choosing **Restart**. When the computer reboots, it uses the traditional boot process.
 
- 
+
 
 ## <a href="" id="beforeyoubegin"></a>Before You Begin
 
@@ -116,17 +114,17 @@ The first-run help tips in Windows 8.1 can negatively affect assessment results.
 
 To obtain the most accurate and reproducible results from these assessments, set up and prepare the system by performing these actions:
 
-**Note**  
+**Note**  
 Before the On/Off Transition Performance assessments run, they verify that the supported sleep states are available. If a precheck confirms that a required sleep state is not enabled, the assessments won't run.
 
- 
+
 
 -   Because these assessments perform several reboots, we recommend that you set up your system to automate the logon process. To do this, see [Automate reboots before you run an assessment](automate-reboots-before-you-run-an-assessment.md).
 
-    **Warning**  
+    **Warning**  
     Don't interact with your computer while the assessment is running. This might adversely affect the results. Automating the logon process can help prevent unwanted interaction.
 
-     
+
 
 -   Make sure that all device drivers are correctly installed. Results may vary significantly if your computer has missing or incorrect drivers. You can use the [Driver Verification](driver-verification.md) assessment to identify driver issues on the computer that you want to assess.
 
@@ -140,9 +138,9 @@ Before the On/Off Transition Performance assessments run, they verify that the s
 
 You can run the assessments on these operating systems:
 
--   Windows 8
+-   Windows 8
 
--   Windows 10
+-   Windows 10
 
 Supported architectures include x86-based and x64-based systems.
 
@@ -189,7 +187,7 @@ The following table describes the assessment settings that are available for the
 </tr>
 <tr class="even">
 <td><p>Enable Minifilter Diagnostic Mode</p></td>
-<td><p>Specifies whether to use the minifilter diagnostic option. By default, this check box is cleared. When the minifilter diagnostic mode is enabled, it produces metrics that help you evaluate the effect of minifilters on boot performance. For more information about this setting, see [Minifilter Diagnostics](minifilter-diagnostics.md). This setting is available only in the Boot Performance (Fast Startup) assessment.</p></td>
+<td><p>Specifies whether to use the minifilter diagnostic option. By default, this check box is cleared. When the minifilter diagnostic mode is enabled, it produces metrics that help you evaluate the effect of minifilters on boot performance. For more information about this setting, see <a href="minifilter-diagnostics.md" data-raw-source="[Minifilter Diagnostics](minifilter-diagnostics.md)">Minifilter Diagnostics</a>. This setting is available only in the Boot Performance (Fast Startup) assessment.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Collect I/O trace file</p></td>
@@ -198,12 +196,12 @@ The following table describes the assessment settings that are available for the
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 The minifilter results appear only if you select the **Enable Minifilter Diagnostic Mode** check box before you run the assessment.
 
- 
+
 
 ## Results
 
@@ -343,7 +341,7 @@ This table provides a brief description of the metrics that the On/Off Transitio
 </tbody>
 </table>
 
- 
+
 
 If you enabled the **Enable Minifilter Diagnostic Mode** setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
 
@@ -352,7 +350,7 @@ For more information about how to analyze results for the Boot (Fast Startup) as
 ## <a href="" id="bkmk-issues"></a>Issues
 
 
-The On/Off Transition Performance assessments perform advanced issue analysis and provide links to Windows® Performance Analyzer (WPA) to troubleshoot the issues that the assessments have identified. When WPA opens, additional details about disk activity or CPU activity might be available, depending on the type of issue. For more information about in-depth analysis issues and recommendations, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md).
+The On/Off Transition Performance assessments perform advanced issue analysis and provide links to Windows® Performance Analyzer (WPA) to troubleshoot the issues that the assessments have identified. When WPA opens, additional details about disk activity or CPU activity might be available, depending on the type of issue. For more information about in-depth analysis issues and recommendations, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md).
 
 ## Related topics
 
@@ -363,9 +361,9 @@ The On/Off Transition Performance assessments perform advanced issue analysis an
 
 [Assessments](assessments.md)
 
- 
 
- 
+
+
 
 
 

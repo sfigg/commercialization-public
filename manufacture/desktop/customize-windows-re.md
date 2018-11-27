@@ -62,7 +62,7 @@ To complete this walkthrough, you need the following:
 
     **Note**   The Windows RE image should always be index number 1.
 
-     
+     
 
 ## <span id="BKMK_AddLanguagePacks"></span><span id="bkmk_addlanguagepacks"></span><span id="BKMK_ADDLANGUAGEPACKS"></span>Step 2: Adding languages
 
@@ -76,7 +76,7 @@ To ensure a consistent language experience in recovery scenarios, add the same s
 
 We recommend adding no more than ten language packs to a Windows or Windows RE image. Multiple language packs increase the size of the Windows image and also affect the overall performance of a system during deployment and servicing.
 
- 
+ 
 
 **To add language packs**
 

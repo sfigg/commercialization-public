@@ -42,13 +42,13 @@ In this walkthrough, we'll show how to use ImgGen.cmd to build the custom mobile
 
     **Note**  This command assumes you've gone through the rest of the walkthroughs in this section. For more information about the command-line syntax for ImgGen.cmd, see Using *ImgGen.cmd to generate the image* in [Build a mobile image using ImgGen.cmd](https://msdn.microsoft.com/library/windows/hardware/dn756630).
 
-     
+     
 
 Once the image is built, you'll need to sign it so it can be flashed to a mobile device.
 
- 
+ 
 
- 
+ 
 
 
 

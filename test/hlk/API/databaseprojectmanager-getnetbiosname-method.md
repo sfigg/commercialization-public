@@ -29,7 +29,7 @@ Converts a FQDN name to a NetBIOS name.
 
 `public static string GetNetBiosName (`
 
-          `string server`
+          `string server`
 
 `)`
 
@@ -55,9 +55,9 @@ If a NetBIOS name is passed in, it will be returned unaltered.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

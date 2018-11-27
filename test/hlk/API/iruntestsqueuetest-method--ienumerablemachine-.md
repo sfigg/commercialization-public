@@ -29,7 +29,7 @@ This method schedules the test for execution on a specific subset of machines.
 
 `Function QueueTest( _`
 
-          `ByVal machineList As IEnumerable(Of Machine) _`
+          `ByVal machineList As IEnumerable(Of Machine) _`
 
 `) As IList(Of TestResult)`
 
@@ -37,7 +37,7 @@ This method schedules the test for execution on a specific subset of machines.
 
 `IList<TestResult> QueueTest (`
 
-          `IEnumerable<Machine> machineList`
+          `IEnumerable<Machine> machineList`
 
 `)`
 
@@ -46,7 +46,7 @@ This method schedules the test for execution on a specific subset of machines.
 
 *machineList*
 
-     The list of machines on which to run the test.
+     The list of machines on which to run the test.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -58,9 +58,9 @@ Returns **IList**, which is a list of results for the tests that were scheduled.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

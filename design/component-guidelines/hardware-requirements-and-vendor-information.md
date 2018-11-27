@@ -51,7 +51,7 @@ You can use either one of these tools for RA testing.
 | TR10988-020 | Stackable Weight, 20 gram                                  | 3                 |
 | TR10988-100 | Stackable Weight, 100 gram                                 | 2                 |
 
- 
+ 
 
 **ITRI**
 
@@ -64,7 +64,7 @@ You can use either one of these tools for RA testing.
 | CW-025      | Stackable Weight, 50 gram    | 2                 |
 | CW-100      | Stackable Weight, 100 gram   | 2                 |
 
- 
+ 
 
 **Additional Accessories**
 

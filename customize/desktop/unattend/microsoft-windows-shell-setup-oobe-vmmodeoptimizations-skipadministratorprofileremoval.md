@@ -22,7 +22,7 @@ Use `SkipAdministratorProfileRemoval` to skip removal of the administrator profi
 
 **Note**  You must specify /mode:vm during sysprep to fully enable this setting.
 
- 
+ 
 
 ## Values
 
@@ -45,7 +45,7 @@ Use `SkipAdministratorProfileRemoval` to skip removal of the administrator profi
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -64,9 +64,9 @@ Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
- 
+ 
 
- 
+ 
 
 
 

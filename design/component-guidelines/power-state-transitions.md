@@ -80,9 +80,9 @@ c. Verify that the cursor moves.
 
 -   6/6 manual iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

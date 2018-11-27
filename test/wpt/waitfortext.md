@@ -58,16 +58,16 @@ The following table describes possible return values. Failure return values are 
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [ITraceMergeTextHandler](itracemergetexthandler.md)
 
- 
+ 
 
- 
+ 
 
 
 

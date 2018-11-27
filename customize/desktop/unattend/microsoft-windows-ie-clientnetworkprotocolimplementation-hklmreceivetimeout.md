@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -68,9 +68,9 @@ The following XML output shows how to set Internet Explorer to wait 45 seconds t
 
 [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
- 
+ 
 
- 
+ 
 
 
 

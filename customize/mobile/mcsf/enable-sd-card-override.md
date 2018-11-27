@@ -71,7 +71,7 @@ By default, using the SD card for device updates is disabled. OEMs who want to u
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone.

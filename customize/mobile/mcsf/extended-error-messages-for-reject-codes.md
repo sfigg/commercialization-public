@@ -70,7 +70,7 @@ The OS handles three extended reject codes:
 </tbody>
 </table>
 
- 
+
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value, **per-device** value
@@ -85,63 +85,65 @@ This customization supports: **per-IMSI** value, **per-device** value
                          Description="Use to specify that extended error messages should be displayed instead of standard simple messages."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
 
-    <!-- Use for the per-IMSI case 
-      
-      <!-- Define the Targets --> 
-      <Targets>
-         <Target Id="">
-            <TargetState>
-               <Condition Name="" Value="" />
-               <Condition Name="" Value="" />
-            </TargetState>
-         </Target>
-      </Targets>
-      
-      <Static>
-        <Settings Path="Multivariant">
-          <Setting Name="Enable" Value="1" />
-        </Settings>
-        <Settings Path="AutoDataConfig">
-          <Setting Name="Enable" Value="0" />
-        </Settings>
-      </Static>
 
-      <!-- Specify the Variant -->
-      <Variant Name=""> 
-        <TargetRefs>
-          <TargetRef Id="" /> 
-        </TargetRefs>
-     
-        <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
-          <Setting Name="ShowExtendedRejectCodes" Value="" />    
-        </Settings>  
-      </Variant>
+~~~
+<!-- Use for the per-IMSI case 
 
-    -->
+  <!-- Define the Targets --> 
+  <Targets>
+     <Target Id="">
+        <TargetState>
+           <Condition Name="" Value="" />
+           <Condition Name="" Value="" />
+        </TargetState>
+     </Target>
+  </Targets>
 
-    <!-- Use for the per-device case
+  <Static>
+    <Settings Path="Multivariant">
+      <Setting Name="Enable" Value="1" />
+    </Settings>
+    <Settings Path="AutoDataConfig">
+      <Setting Name="Enable" Value="0" />
+    </Settings>
+  </Static>
 
-      <Static>  
-         <Settings Path="CellCore/PerDevice/CellUX">  
-          <Setting Name="ShowExtendedRejectCodes" Value="" />   
-        </Settings>  
-      </Static>
+  <!-- Specify the Variant -->
+  <Variant Name=""> 
+    <TargetRefs>
+      <TargetRef Id="" /> 
+    </TargetRefs>
 
-    -->
+    <Settings Path="CellCore/PerIMSI/$(__IMSI)/CellUX">   
+      <Setting Name="ShowExtendedRejectCodes" Value="" />    
+    </Settings>  
+  </Variant>
 
-    </ImageCustomizations>
-    ```
+-->
+
+<!-- Use for the per-device case
+
+  <Static>  
+     <Settings Path="CellCore/PerDevice/CellUX">  
+      <Setting Name="ShowExtendedRejectCodes" Value="" />   
+    </Settings>  
+  </Static>
+
+-->
+
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 
 3.  Set the `Branding flags` setting in the [Branding for phone calls](branding-for-phone-calls.md) customization so that the ExtendedRejectCodes flag is enabled.
 
-    **Note**  
+    **Note**  
     The ExtendedRejectCodes flag is not enabled by default so make sure that this is set. Both the `ShowExtendedRejectCodes` setting and ExtendedRejectCodes flag need to be set for the customization to be fully enabled.
 
-     
+
 
 4.  Determine if you need to use the **per-IMSI** or **per-device** setting.
 
@@ -176,9 +178,11 @@ This customization supports: **per-IMSI** value, **per-device** value
     </tbody>
     </table>
 
-     
 
-    The default for this setting is to show the **CDMA** option in the **Mode** selection drop-down that appears in the **Cellular & SIM** settings screen.
+
+~~~
+The default for this setting is to show the **CDMA** option in the **Mode** selection drop-down that appears in the **Cellular & SIM** settings screen.
+~~~
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

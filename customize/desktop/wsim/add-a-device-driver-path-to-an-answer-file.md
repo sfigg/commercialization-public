@@ -30,19 +30,19 @@ You can add only .inf drivers to a Windows image by using this procedure. You mu
 To add a device-driver path to an answer file:
 
 1. Open Windows SIM.
-1. Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
-1. On the **Insert** menu, click **Driver Path**.
-1. Select the configuration pass in which you want to install the driver. This can be the **windowsPE** or the **auditSystem** configuration pass.
+2. Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
+3. On the **Insert** menu, click **Driver Path**.
+4. Select the configuration pass in which you want to install the driver. This can be the **windowsPE** or the **auditSystem** configuration pass.
 
    > [!Note]
    > Adding a driver to the **auditSystem** configuration pass processes the driver during Audit mode only.
 
-1. The **Browse for Folder** dialog box appears. Select the driver path that you want to add to the answer file, and then click **OK**. The driver path is added to the answer file under the configuration pass that you selected. Depending on the configuration pass that you selected, the driver path is included as a list item to one of the following components:
-    * **Microsoft-Windows-PnpCustomizationsWinPE** for the **windowsPE** configuration pass
-    * **Microsoft-Windows-PnpCustomizationsNonWinPE** for the **auditSystem** configuration pass
+5. The **Browse for Folder** dialog box appears. Select the driver path that you want to add to the answer file, and then click **OK**. The driver path is added to the answer file under the configuration pass that you selected. Depending on the configuration pass that you selected, the driver path is included as a list item to one of the following components:
+   * **Microsoft-Windows-PnpCustomizationsWinPE** for the **windowsPE** configuration pass
+   * **Microsoft-Windows-PnpCustomizationsNonWinPE** for the **auditSystem** configuration pass
 
-    > [!Note]
-    > You can also drag drivers from an **Out-of-Box Drivers** folder in the **Distribution Share** pane to either the **windowsPE** or **auditSystem** configuration pass in the **Answer File** pane. Or, right-click to add it.
+     > [!Note]
+     > You can also drag drivers from an **Out-of-Box Drivers** folder in the **Distribution Share** pane to either the **windowsPE** or **auditSystem** configuration pass in the **Answer File** pane. Or, right-click to add it.
 
 ## Related topics
 

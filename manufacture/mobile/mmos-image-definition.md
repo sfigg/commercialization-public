@@ -14,17 +14,17 @@ ms.topic: article
 # MMOS image definition
 
 
-This section provides instructions for creating Windows 10 Mobile MMOS images. This process is similar to the process for creating the primary OS image.
+This section provides instructions for creating Windows 10 Mobile MMOS images. This process is similar to the process for creating the primary OS image.
 
 ## <span id="Creating_an_MMOS_image"></span><span id="creating_an_mmos_image"></span><span id="CREATING_AN_MMOS_IMAGE"></span>Creating an MMOS image
 
 
 The MMOS image created during this process requires packages from the SoC manufacturer and the OEM in addition to those provided by Microsoft. The OEM packages that are included in the sample MfgOEMInput.xml configuration file are for illustration purposes only. OEMs should remove those example packages and replace them with their own OEM packages. It is up to the OEM to determine which set to include in MMOS. OEMs can add additional OEM packages containing test applications and test controllers, etc.
 
-**Important**  
+**Important**  
 All the imaging and packaging tools are located in %WPDKCONTENTROOT%\\Tools\\bin\\i386. This path must be included in your environment Path for the tools to work. You must run these tools from a Visual Studio command-line window as an Administrator with access to MakeCat.exe in the environment path.
 
- 
+
 
 ### <span id="Creating_OEM_packages"></span><span id="creating_oem_packages"></span><span id="CREATING_OEM_PACKAGES"></span>Creating OEM packages
 
@@ -40,10 +40,10 @@ You can use the **Feature** element in the MfgOEMInput.xml file to include optio
 
 The following features are defined and supported in the manufacturing development and debugging environment. This environment can be used to create test applications for use in manufacturing.
 
-**Important**  
+**Important**  
 The following features can only be used for test-signed packages and are not to be included in Customer Care WIM Images.
 
- 
+
 
 **General features**
 
@@ -69,7 +69,7 @@ The following features can only be used for test-signed packages and are not to 
 </tr>
 <tr class="odd">
 <td align="left"><p>LABIMAGE</p></td>
-<td align="left"><p>This feature causes the device to enter the FFU download mode automatically when the device is booted. For more info, see [Use the flashing tools provided by Microsoft](https://msdn.microsoft.com/library/windows/hardware/dn789235).</p></td>
+<td align="left"><p>This feature causes the device to enter the FFU download mode automatically when the device is booted. For more info, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn789235" data-raw-source="[Use the flashing tools provided by Microsoft](https://msdn.microsoft.com/library/windows/hardware/dn789235)">Use the flashing tools provided by Microsoft</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MFGTSHELL</p></td>
@@ -85,13 +85,12 @@ The following features can only be used for test-signed packages and are not to 
 </tr>
 <tr class="odd">
 <td align="left"><p>DISABLE_FFU_PLAT_ID_CHECK</p></td>
-<td align="left"><p>Disables the device platform validation in the Microsoft flashing application. For more information about the platform check in flashing, see [Use the flashing tools provided by Microsoft](https://msdn.microsoft.com/library/windows/hardware/dn789235).</p>
+<td align="left"><p>Disables the device platform validation in the Microsoft flashing application. For more information about the platform check in flashing, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn789235" data-raw-source="[Use the flashing tools provided by Microsoft](https://msdn.microsoft.com/library/windows/hardware/dn789235)">Use the flashing tools provided by Microsoft</a>.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>The device platform validation for flashing must not be disabled in retail images.</p>
+<strong>Important</strong><br/><p>The device platform validation for flashing must not be disabled in retail images.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -109,7 +108,7 @@ The following features can only be used for test-signed packages and are not to 
 </tbody>
 </table>
 
- 
+
 
 **Debug features**
 
@@ -135,11 +134,10 @@ Use the following settings to specify the transport that is used for debugging. 
 <td align="left"><p>KDUSB_ON</p></td>
 <td align="left"><p>Includes all kernel debugger transports and enables KDUSB.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Do not include either KDUSB_ON or KDNETUSB_ON if you need to enable MTP or IP over USB in the image. If the kernel debugger is enabled in the image and the debug transports are used to connect to the phone, the kernel debugger has exclusive use of the USB port and prevents MTP and IP over USB from working.</p>
+<strong>Note</strong><br/><p>Do not include either KDUSB_ON or KDNETUSB_ON if you need to enable MTP or IP over USB in the image. If the kernel debugger is enabled in the image and the debug transports are used to connect to the phone, the kernel debugger has exclusive use of the USB port and prevents MTP and IP over USB from working.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -161,7 +159,7 @@ Use the following settings to specify the transport that is used for debugging. 
 </tbody>
 </table>
 
- 
+
 
 The previous DEBUGGERON feature has been deprecated.
 
@@ -203,10 +201,10 @@ The previous DEBUGGERON feature has been deprecated.
 <td align="left"><p>DEDICATEDDUMPONEMMC</p></td>
 <td align="left"><p>Specifies that the DedicatedDumpFile location as c:\crashdump\dedicateddump.sys.</p>
 <div class="alert">
-<strong>Note</strong>  This cannot be used with DEDICATEDDUMPONSDCARD.
+<strong>Note</strong>  This cannot be used with DEDICATEDDUMPONSDCARD.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -218,10 +216,10 @@ The previous DEBUGGERON feature has been deprecated.
 <li><p>Reboot the device.</p></li>
 </ol>
 <div class="alert">
-<strong>Note</strong>  This cannot be used with DEDICATEDDUMPONEEMC.
+<strong>Note</strong>  This cannot be used with DEDICATEDDUMPONEEMC.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -235,7 +233,7 @@ The previous DEBUGGERON feature has been deprecated.
 </tr>
 <tr class="odd">
 <td align="left"><p>MSVCRT_DEBUG</p></td>
-<td align="left"><p>This feature adds support for explicit linking of debug c-runtime libs by including msvcp120d.dll and msvcr120d.dll in the image. For more information, see this topic on MSDN: [CRT Library Features](http://msdn.microsoft.com/library/abx4dbyh.aspx).</p></td>
+<td align="left"><p>This feature adds support for explicit linking of debug c-runtime libs by including msvcp120d.dll and msvcr120d.dll in the image. For more information, see this topic on MSDN: <a href="http://msdn.microsoft.com/library/abx4dbyh.aspx" data-raw-source="[CRT Library Features](http://msdn.microsoft.com/library/abx4dbyh.aspx)">CRT Library Features</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MWDBGSRV</p></td>
@@ -243,16 +241,16 @@ The previous DEBUGGERON feature has been deprecated.
 </tr>
 <tr class="odd">
 <td align="left"><p>NOLIVEDUMPS</p></td>
-<td align="left"><p>Disables non-fatal kernel error reports.  These reports contain debugging information for OS and driver developers.</p></td>
+<td align="left"><p>Disables non-fatal kernel error reports.  These reports contain debugging information for OS and driver developers.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>TELEMETRYONSDCARD</p></td>
-<td align="left"><p>This feature enables temporary storage of debugging logs and files on the SD card.  This feature is only appropriate for test/self-host images and only on devices with less than 8 GB of free space of primary storage.</p></td>
+<td align="left"><p>This feature enables temporary storage of debugging logs and files on the SD card.  This feature is only appropriate for test/self-host images and only on devices with less than 8 GB of free space of primary storage.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 **Customer Care WIM Images**
 
@@ -285,7 +283,7 @@ The following features are supported in MMOS in the manufacturing production env
 </tbody>
 </table>
 
- 
+
 
 **Dual use features**
 
@@ -304,7 +302,7 @@ These MMOS features can be used with either test or retail customer care images.
 </tbody>
 </table>
 
- 
+
 
 UEFI charging must be either disabled or enabled for MMOS to work. Only one of these options can be set at a time.
 
@@ -325,7 +323,7 @@ UEFI charging must be either disabled or enabled for MMOS to work. Only one of t
 </tbody>
 </table>
 
- 
+
 
 There are additional features that are defined in other image types of the operating system that are not supported in MMOS. This list is not exhaustive, but it provides examples of features that are not supported in the manufacturing or retail environments:
 
@@ -358,9 +356,9 @@ There are additional features that are defined in other image types of the opera
 
 6.  Add %WPDKCONTENTROOT%\\Tools\\bin\\i386 to your environment **Path** variable.
 
- 
 
- 
+
+
 
 
 

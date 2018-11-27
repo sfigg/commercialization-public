@@ -146,7 +146,7 @@ To remove a stack tag definition from the Stack Tags Definition file, do the fol
 
     **Warning**  Make sure you want to remove the selected stack tag definition(s), as you will not have the option to cancel once you click **Remove**.
 
-     
+     
 
 ## Reloading the stack tags definition file
 
@@ -175,9 +175,9 @@ To investigate issues within your stack tags file in WPA, do the following:
 
 [Diagnostic Console](diagnostic-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

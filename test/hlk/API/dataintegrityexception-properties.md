@@ -66,7 +66,7 @@ The following tables list the members exposed by the **DataIntegrityException** 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -90,11 +90,11 @@ The following tables list the members exposed by the **DataIntegrityException** 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

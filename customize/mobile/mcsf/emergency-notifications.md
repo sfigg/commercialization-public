@@ -134,7 +134,7 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to test this customization on their network.
@@ -223,7 +223,7 @@ If you are migrating CMAS alert settings from previous Windows Phone releases t
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="japan-etws"></a>Japan ETWS emergency notifications settings
 
@@ -314,7 +314,7 @@ The LAT-Alert emergency alert system is based on the 3GPP emergency alerts and C
 
     **Note**  Users will not be able to configure nor disable LAT-Alert Local alerts through the Messaging settings screen.
 
-     
+     
 
 ## Taiwan Alerts
 

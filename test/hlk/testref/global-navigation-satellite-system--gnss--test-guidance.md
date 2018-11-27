@@ -20,11 +20,11 @@ This article provides global positioning system (GPS) implementation guidelines 
 
 Testing of areas other than GPS is out of the scope of this document. Fully exercising the operating system components or the GNSS device is out of the scope of this document. It is assumed that the IHVs and OEMs thoroughly test their GNSS device both independently and integrated into the system. Interoperability testing is limited to the components that interact with the location platform and devices. This testing should include successful completion of the [Windows Hardware Lab Kit (Windows HLK)](http://go.microsoft.com/fwlink/?LinkID=8705) tests, this test plan, pre-operator trial tests, and internal tests that are developed specifically for the GNSS driver and GNSS receiver.
 
->[!NOTE]
->  
-In this article, the term GPS is used interchangeably with GNSS. Unless it is otherwise stated, GPS refers to satellite positioning as a location provider solution, instead of as the GPS satellite system that is deployed by the United States government.
+> [!NOTE]
+> 
+> In this article, the term GPS is used interchangeably with GNSS. Unless it is otherwise stated, GPS refers to satellite positioning as a location provider solution, instead of as the GPS satellite system that is deployed by the United States government.
 
- 
+ 
 
 Clear sky conditions are defined as GPS/GNSS satellites that receive signals without obstruction from above or from the surrounding environment down to an elevation mask of 5 degrees above the horizon. All signal levels must be consistent with unobstructed signal levels at the ground and not lower than -131 dBm.
 
@@ -90,7 +90,7 @@ To receive certification, Microsoft partners must meet the following requirement
     </tbody>
     </table>
 
-     
+     
 
 -   In addition to required Windows Hardware Lab Kit (Windows HLK) tests, optional Windows HLK [Device.Input Tests](device-input-tests.md) must run and pass for non-ARM System on Chip (SoC) systems. (These tests are already mandatory for ARM systems).
 
@@ -437,11 +437,11 @@ A GPS IHV can provide NMEA logging and plotting tools and documentation.
 
 Compare Signal-to-Noise Ratio (SNR) on the test device and on a reference device that has good GPS RF sensitivity at the same location under the same conditions. Enable IHV NMEA logs and take the devices for walk/drive testing for 15+ minutes under a clear sky. Analyze the logs by using the NMEA Plotting tool that the IHV provides. Compare average signal strength of the devices.
 
->[!NOTE]
->  
-If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft Bing
+> [!NOTE]
+> 
+> If you do not have the NMEA Plotting tool from an IHV, you can use Microsoft Bing
 
- 
+ 
 
 ### <span id="Human_interference_tests"></span><span id="human_interference_tests"></span><span id="HUMAN_INTERFERENCE_TESTS"></span>Human interference tests
 
@@ -478,21 +478,21 @@ Commonly used states for slates:
 
 **Run Steps**:
 
--   Disable Mobile Broadband and confirm that GPS can still get a location fix. Re-enable Mobile Broadband.
+- Disable Mobile Broadband and confirm that GPS can still get a location fix. Re-enable Mobile Broadband.
 
-    >[!NOTE]
-    >  
-    GPS devices that use device services is an exception; these devices should first go into SENSOR\_STATE\_INITIALIZING state and, after 30 seconds, should go into the SENSOR\_STATE\_NOT\_AVAILABLE state when Mobile Broadband is disabled
+  > [!NOTE]
+  > 
+  > GPS devices that use device services is an exception; these devices should first go into SENSOR\_STATE\_INITIALIZING state and, after 30 seconds, should go into the SENSOR\_STATE\_NOT\_AVAILABLE state when Mobile Broadband is disabled
 
-     
+     
 
--   Disable Wi-Fi and confirm that GPS can still get a location fix.
+- Disable Wi-Fi and confirm that GPS can still get a location fix.
 
--   Turn off Mobile Broadband Radio and confirm that GPS can still get a location fix.
+- Turn off Mobile Broadband Radio and confirm that GPS can still get a location fix.
 
--   Turn off Wi-Fi Radio and confirm that GPS can still get a location fix.
+- Turn off Wi-Fi Radio and confirm that GPS can still get a location fix.
 
--   Remove the Mobile Broadband SIM and confirm that GPS can get a location fix.
+- Remove the Mobile Broadband SIM and confirm that GPS can get a location fix.
 
 **Expected Result**: For Mobile Broadband or Wi-Fi devices, radio and SIM state should not prevent GPS from functioning.
 
@@ -621,31 +621,31 @@ An OTA RF connection tests the system together with original antenna and shieldi
 </tr>
 <tr class="even">
 <td><p>Basic (Level 1)</p></td>
-<td><p>Location Sensor WHLK tests: Device.Input.Sensor.*System tests for Location Sensors: System.Client.Sensor.*</p></td>
+<td><p>Location Sensor WHLK tests: Device.Input.Sensor.<em>System tests for Location Sensors: System.Client.Sensor.</em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Basic (Level 1)</p></td>
-<td><p>Radio Management WHLK tests: System.Client.RadioManagement.*</p></td>
+<td><p>Radio Management WHLK tests: System.Client.RadioManagement.<em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Basic (Level 1)</p></td>
-<td><p>In addition to required WHLK tests, Optional WHLK tests under Location Sensor WHLK tests: Device.Input.Sensor.* and System.Client.Sensor.* must run and pass for non-ARM SoC systems</p></td>
+<td><p>In addition to required WHLK tests, Optional WHLK tests under Location Sensor WHLK tests: Device.Input.Sensor.</em> and System.Client.Sensor.* must run and pass for non-ARM SoC systems</p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Basic (Level 1)</p></td>
-<td><p>Device Fundamentals WHLK tests: Device.DevFund.*</p></td>
+<td><p>Device Fundamentals WHLK tests: Device.DevFund.<em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Basic (Level 1)</p></td>
-<td><p>USB WHLK tests (USB connected devices only): Device.Connectivity.UsbDevices.*</p></td>
+<td><p>USB WHLK tests (USB connected devices only): Device.Connectivity.UsbDevices.</em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
@@ -723,37 +723,37 @@ An OTA RF connection tests the system together with original antenna and shieldi
 </tr>
 <tr class="odd">
 <td><p>Stress (Level 2)</p></td>
-<td><p>GPS.Test Descriptions.Robustness.*</p></td>
+<td><p>GPS.Test Descriptions.Robustness.<em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Performance (Level 2)</p></td>
-<td><p>GPS.Test Descriptions.Performance.*</p></td>
+<td><p>GPS.Test Descriptions.Performance.</em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Power (Level 1)</p></td>
-<td><p>GPS.Test Descriptions.Power Consumption.*</p></td>
+<td><p>GPS.Test Descriptions.Power Consumption.<em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Power (Level 1)</p></td>
-<td><p>GPS.Test Descriptions.Power Management.*</p></td>
+<td><p>GPS.Test Descriptions.Power Management.</em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Antenna Performance (Level 1 for OEM)</p></td>
-<td><p>GPS.Test Descriptions.Antenna Performance.*</p></td>
+<td><p>GPS.Test Descriptions.Antenna Performance.<em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Drive Tests (Level 3)</p></td>
-<td><p>GPS.Test Descriptions.Drive Tests.*</p></td>
+<td><p>GPS.Test Descriptions.Drive Tests.</em></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
@@ -766,7 +766,7 @@ An OTA RF connection tests the system together with original antenna and shieldi
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -781,9 +781,9 @@ An OTA RF connection tests the system together with original antenna and shieldi
 
 [Sensor Device Testing Prerequisites](sensor-device-testing-prerequisites.md)
 
- 
+ 
 
- 
+ 
 
 
 

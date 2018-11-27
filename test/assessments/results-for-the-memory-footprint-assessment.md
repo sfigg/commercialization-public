@@ -24,7 +24,7 @@ This assessment creates a snapshot of memory use during a series of reboots of t
 **Note**  
 The computer being assessed should have retail versions of drivers installed to get an accurate picture of memory allocations.
 
- 
+ 
 
 In this topic:
 
@@ -56,7 +56,7 @@ When a metric value is compared to the goal for that metric, the status is color
 **Note**  
 In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
- 
+ 
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -73,7 +73,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 **Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+ 
 
 ## <a href="" id="bkmk-memorymetrics"></a>Metrics
 
@@ -135,7 +135,7 @@ In-use memory includes more than just the Windows system processes. You can use 
 </tbody>
 </table>
 
- 
+ 
 
 The Memory Footprint assessment provides a more detailed description of memory use than Task Manager does.
 
@@ -221,7 +221,7 @@ Non-paged memory allocations are sometimes required for a driver’s data struct
 </tbody>
 </table>
 
- 
+ 
 
 **Typical Influencing Factors**
 
@@ -306,7 +306,7 @@ Shared memory is memory that is allocated and assigned to a process. If the kern
 </tbody>
 </table>
 
- 
+ 
 
 **Typical Influencing Factors**
 
@@ -349,7 +349,7 @@ This is a list of binaries that have had memory allocated for their use. This is
 </tbody>
 </table>
 
- 
+ 
 
 **Typical Influencing Factors**
 
@@ -392,7 +392,7 @@ This is a list of binaries that are using memory mapped I/O. This is all the mem
 </tbody>
 </table>
 
- 
+ 
 
 **Typical Influencing Factors**
 
@@ -410,7 +410,7 @@ There are no specific issues generated for the Memory Footprint assessment. This
 **Note**  
 This assessment uses symbols to make sure that its results show driver memory as driver allocations instead of kernel allocations. Without the use of symbols, the assessment analysis may incorrectly identify a memory allocation source. For more information about missing symbols and assessment accuracy, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md).
 
- 
+ 
 
 ### The assessment reports an exit code of 0x80050006
 
@@ -459,9 +459,9 @@ To resolve this issue, do one of the following:
 
 [MSDN: Windows Memory Management](http://go.microsoft.com/fwlink/?LinkId=271597)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -95,9 +95,9 @@ The following XML output shows how to use the `<SquareTiles>` component.
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

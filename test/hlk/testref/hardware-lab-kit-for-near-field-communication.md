@@ -47,7 +47,7 @@ After setting up the [HLK test framework](https://msdn.microsoft.com/en-us/libra
 >[!NOTE]
 >  The PC client requires the installation of the Universal C Runtime. This package is available directly from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=48234).
 
- 
+ 
 
 ### <span id="Test_execution"></span><span id="test_execution"></span><span id="TEST_EXECUTION"></span>Test execution
 
@@ -171,9 +171,9 @@ The HLK studio/controller deploys and runs test cases on the DUT but some interv
 
 -   NfcManualHelper.exe will connect to the test running on the DUT and will print instructions on what to do while the test is executing. Example instructions: Tap DUT onto NFC client, tap DUT onto smart card reader, tap DUT onto Near Field Proximity tag.
 
- 
+ 
 
- 
+ 
 
 
 

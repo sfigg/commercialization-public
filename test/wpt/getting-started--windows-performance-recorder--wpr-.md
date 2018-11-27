@@ -16,9 +16,9 @@ ms.topic: article
 
 Included in the Windows Assessment and Deployment Kit (Windows ADK), Windows Performance Recorder (WPR) is a performance recording tool that is based on Event Tracing for Windows (ETW). It records system events that you can then analyze by using Windows Performance Analyzer (WPA). You can download WPR by visiting Windows Insider Program.
 
- 
+ 
 
- 
+ 
 
 
 

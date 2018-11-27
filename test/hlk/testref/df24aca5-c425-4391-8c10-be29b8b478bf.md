@@ -37,6 +37,7 @@ This topic applies to the following test jobs:
 -   DXGI Presentation testing - WinpresentMS (WoW64)
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.D3D101Core.D3D101CorePrimary</li><li>Device.Graphics.AdapterRender.D3D10Core.D3D10CorePrimary</li><li>Device.Graphics.AdapterRender.D3D111Core.D3D111CorePrimary</li><li>Device.Graphics.AdapterRender.D3D11Core.D3D11CorePrimary</li></ul> |  
@@ -49,7 +50,7 @@ This topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -63,16 +64,16 @@ Tests in this feature area might have additional documentation, including prereq
 
 Before you run the test, complete the test setup as described in the test requirements: [Graphic Adapter or Chipset Testing Prerequisites](graphic-adapter-or-chipset-testing-prerequisites.md).
 
->[!NOTE]
->  
-If you run the **DXGI Presentation testing - Other - multihead** or **DXGI Presentation testing - Other - multihead (WoW64)** test on a system without multiple monitors, you will be prompted to add a second monitor. If your device family does not support multimon, select "Continue" to force the test to run in single monitor configuration. Some tests can only be run on systems with multiple monitors, in which case the test will be skipped.
+> [!NOTE]
+> 
+> If you run the **DXGI Presentation testing - Other - multihead** or **DXGI Presentation testing - Other - multihead (WoW64)** test on a system without multiple monitors, you will be prompted to add a second monitor. If your device family does not support multimon, select "Continue" to force the test to run in single monitor configuration. Some tests can only be run on systems with multiple monitors, in which case the test will be skipped.
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -114,11 +115,11 @@ The test automatically verifies presented images by using the IDXGIOutput::GetDi
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/?**
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/?**
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -136,23 +137,23 @@ For command-line help for this test binary, type **/?**
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d10ref.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d10SDKLayers.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11ref.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d11SDKLayers.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dcompiler_test.dll</p></td>
@@ -164,20 +165,20 @@ For command-line help for this test binary, type **/?**
 </tr>
 <tr class="even">
 <td><p>D3dx11_TEST.dll</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\ windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>DXGIPresent.exe</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\graphics\d3d\conf\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\graphics\d3d\conf&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;testbinroot&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -188,11 +189,11 @@ For command-line help for this test binary, type **/?**
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo  |
 | **TDRArgs**                  | /get or /set                                          |
 
- 
 
- 
 
- 
+
+
+
 
 
 

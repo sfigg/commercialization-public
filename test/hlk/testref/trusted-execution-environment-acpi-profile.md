@@ -25,11 +25,11 @@ This specification defines the ACPI device object for a TPM 2.0 device and the c
 
 An additional static ACPI table (TPM2) is used to define the mechanism for communicating between the TPM 2.0 device and the Windows 8 OS.
 
->[!NOTE]
->  
-Microsoft refers to the Trusted Computing Group's "TPM.Next" term as "TPM 2.0"
+> [!NOTE]
+> 
+> Microsoft refers to the Trusted Computing Group's "TPM.Next" term as "TPM 2.0"
 
- 
+ 
 
 ## <span id="2.0_requirements"></span><span id="2.0_REQUIREMENTS"></span>2.0 Requirements
 
@@ -73,31 +73,31 @@ A typical usage scenario is as follows:
 
 This scenario illustrates how the memory clear feature of the system helps thwart attacks that harvest system memory for key material after the platform is unexpectedly restarted.
 
-1.  From within the OS, an administrator on a system with a TPM 2.0 device turns on the BitLocker feature for the OS volume.
+1. From within the OS, an administrator on a system with a TPM 2.0 device turns on the BitLocker feature for the OS volume.
 
-2.  The BitLocker feature calls the TPM 2.0 device ACPI control method to set the ClearMemory bit defined in the TCG Platform Reset Attack Mitigation Specification.
+2. The BitLocker feature calls the TPM 2.0 device ACPI control method to set the ClearMemory bit defined in the TCG Platform Reset Attack Mitigation Specification.
 
-3.  The BitLocker feature encrypts the OS volume.
+3. The BitLocker feature encrypts the OS volume.
 
-4.  The administrator leaves the system unattended with the screen locked.
+4. The administrator leaves the system unattended with the screen locked.
 
-5.  A malicious person steals the system while it is running.
+5. A malicious person steals the system while it is running.
 
-6.  The malicious person inserts a USB stick and quickly removes the system battery and re-inserts it.
+6. The malicious person inserts a USB stick and quickly removes the system battery and re-inserts it.
 
-7.  The system starts booting when the battery is re-inserted.
+7. The system starts booting when the battery is re-inserted.
 
-8.  Because the ClearMemory bit was set previously the firmware clears the entire system memory before launching any code not provided by the platform manufacturer.
+8. Because the ClearMemory bit was set previously the firmware clears the entire system memory before launching any code not provided by the platform manufacturer.
 
-9.  The malicious person configures the firmware during boot to boot to the USB device even though the code on the USB device is not properly signed.
+9. The malicious person configures the firmware during boot to boot to the USB device even though the code on the USB device is not properly signed.
 
 10. The code on the USB device scans the system memory for the BitLocker Volume Master Key but it is not found.
 
-    >[!WARNING]
-    >  
-    Steps 11 through 16 are similar to the earlier steps, but use the UEFI interface instead of ACPI
+    > [!WARNING]
+    > 
+    > Steps 11 through 16 are similar to the earlier steps, but use the UEFI interface instead of ACPI
 
-     
+     
 
 11. The malicious person attempts to boot the system normally.
 
@@ -186,284 +186,284 @@ Special note for UEFI based ARM systems with a TPM 2.0: On UEFI based ARM system
 
 The system MUST implement the specification defined in \[TCG11\] per the additional notes below:
 
-1.  The use of TPM in the TCG specification should be equated with the TPM 2.0 device.
+1. The use of TPM in the TCG specification should be equated with the TPM 2.0 device.
 
-2.  The control methods defined in section 2 MUST be implemented with the following restrictions:
+2. The control methods defined in section 2 MUST be implemented with the following restrictions:
 
-    1.  The \_DSM query function MUST be implemented (function index 0) per the ACPI specification. (Note: There is a mistake in the ACPI 4.0 specification about the return value for the \_DSM method. The return value of the \_DSM method should be a buffer containing 0x01FF.)
+   1.  The \_DSM query function MUST be implemented (function index 0) per the ACPI specification. (Note: There is a mistake in the ACPI 4.0 specification about the return value for the \_DSM method. The return value of the \_DSM method should be a buffer containing 0x01FF.)
 
-    2.  The implementation MUST return a value of "2: Reboot" for "Get Platform-Specific Action to Transition to Pre-OS Environment." PPI operations MUST occur for a transition of a restart and SHOULD occur for a shutdown transition.
+   2.  The implementation MUST return a value of "2: Reboot" for "Get Platform-Specific Action to Transition to Pre-OS Environment." PPI operations MUST occur for a transition of a restart and SHOULD occur for a shutdown transition.
 
-    3.  Implementation of the following control methods is optional: "Submit TPM Operation Request to Pre-OS Environment" (may return "2: General Failure") and "Submit preferred user language" (may return "3: Not implemented").
+   3.  Implementation of the following control methods is optional: "Submit TPM Operation Request to Pre-OS Environment" (may return "2: General Failure") and "Submit preferred user language" (may return "3: Not implemented").
 
-3.  The requirements in section 3 MUST be implemented with the following revisions:
+3. The requirements in section 3 MUST be implemented with the following revisions:
 
-    1.  The BIOS does not need to provide persistent storage for the NoPPIProvision flag because the operations it authorizes are not relevant for the TPM 2.0 device state.
+   1. The BIOS does not need to provide persistent storage for the NoPPIProvision flag because the operations it authorizes are not relevant for the TPM 2.0 device state.
 
-    2.  Table 2 is revised as follows:
+   2. Table 2 is revised as follows:
 
-        Table 1: revised PPI table 2
+      Table 1: revised PPI table 2
 
-        <table style="width:100%;">
-        <colgroup>
-        <col width="14%" />
-        <col width="14%" />
-        <col width="14%" />
-        <col width="14%" />
-        <col width="14%" />
-        <col width="14%" />
-        <col width="14%" />
-        </colgroup>
-        <tbody>
-        <tr class="odd">
-        <td><p><strong>OperationValue</strong></p></td>
-        <td><p><strong>Operation Name</strong></p></td>
-        <td><p><strong>TPM Stat</strong></p></td>
-        <td><p><strong>BIOS TPM Mgmt Flags</strong></p></td>
-        <td><p><strong>Mandatory versus Optional</strong></p></td>
-        <td><p><strong>When Physical Presence Confirmation is Required</strong></p></td>
-        <td><p><strong>May need additional boot cycle</strong></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>0</p></td>
-        <td><p>No Operation</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>1-4</p></td>
-        <td><p>No Operation</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>5</p></td>
-        <td><p>TPM2_ClearControl(NO) +</p>
-        <p>TPM2_Clear</p></td>
-        <td><p>X</p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p>NoPPIClear is FALSE</p></td>
-        <td><p>X</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>6-11</p></td>
-        <td><p>No Operation</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>12-13</p></td>
-        <td><p>No Operation</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p>O</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>14</p></td>
-        <td><p>TPM2_ClearControl(NO) +</p>
-        <p>TPM2_Clear</p></td>
-        <td><p>X</p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p>NoPPIClear is FALSE</p></td>
-        <td><p>X</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>15-16</p></td>
-        <td><p>No Operation</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>17</p></td>
-        <td><p>SetNoPPIClear_False</p></td>
-        <td><p></p></td>
-        <td><p>X</p></td>
-        <td><p>O1</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>18</p></td>
-        <td><p>SetNoPPIClear_True</p></td>
-        <td><p></p></td>
-        <td><p>X</p></td>
-        <td><p>O1</p></td>
-        <td><p>Always</p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>19-20</p></td>
-        <td><p>No Operation</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p>O2</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>21-22</p></td>
-        <td><p>TPM2_ClearControl(NO) +</p>
-        <p>TPM2_Clear</p></td>
-        <td><p>X</p></td>
-        <td><p></p></td>
-        <td><p>M</p></td>
-        <td><p>NoPPIClear is FALSE</p></td>
-        <td><p>X</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>23 - 127</p></td>
-        <td><p>Reserved</p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        <td><p></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>&gt;=128</p></td>
-        <td><p>Vendor Specific</p></td>
-        <td><p>X</p></td>
-        <td><p>X</p></td>
-        <td><p>O</p></td>
-        <td><p></p></td>
-        <td><p>X</p></td>
-        </tr>
-        </tbody>
-        </table>
+      <table style="width:100%;">
+      <colgroup>
+      <col width="14%" />
+      <col width="14%" />
+      <col width="14%" />
+      <col width="14%" />
+      <col width="14%" />
+      <col width="14%" />
+      <col width="14%" />
+      </colgroup>
+      <tbody>
+      <tr class="odd">
+      <td><p><strong>OperationValue</strong></p></td>
+      <td><p><strong>Operation Name</strong></p></td>
+      <td><p><strong>TPM Stat</strong></p></td>
+      <td><p><strong>BIOS TPM Mgmt Flags</strong></p></td>
+      <td><p><strong>Mandatory versus Optional</strong></p></td>
+      <td><p><strong>When Physical Presence Confirmation is Required</strong></p></td>
+      <td><p><strong>May need additional boot cycle</strong></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>0</p></td>
+      <td><p>No Operation</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>1-4</p></td>
+      <td><p>No Operation</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>5</p></td>
+      <td><p>TPM2_ClearControl(NO) +</p>
+      <p>TPM2_Clear</p></td>
+      <td><p>X</p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p>NoPPIClear is FALSE</p></td>
+      <td><p>X</p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>6-11</p></td>
+      <td><p>No Operation</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>12-13</p></td>
+      <td><p>No Operation</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p>O</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>14</p></td>
+      <td><p>TPM2_ClearControl(NO) +</p>
+      <p>TPM2_Clear</p></td>
+      <td><p>X</p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p>NoPPIClear is FALSE</p></td>
+      <td><p>X</p></td>
+      </tr>
+      <tr class="even">
+      <td><p>15-16</p></td>
+      <td><p>No Operation</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>17</p></td>
+      <td><p>SetNoPPIClear_False</p></td>
+      <td><p></p></td>
+      <td><p>X</p></td>
+      <td><p>O1</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>18</p></td>
+      <td><p>SetNoPPIClear_True</p></td>
+      <td><p></p></td>
+      <td><p>X</p></td>
+      <td><p>O1</p></td>
+      <td><p>Always</p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>19-20</p></td>
+      <td><p>No Operation</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p>O2</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>21-22</p></td>
+      <td><p>TPM2_ClearControl(NO) +</p>
+      <p>TPM2_Clear</p></td>
+      <td><p>X</p></td>
+      <td><p></p></td>
+      <td><p>M</p></td>
+      <td><p>NoPPIClear is FALSE</p></td>
+      <td><p>X</p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>23 - 127</p></td>
+      <td><p>Reserved</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>&gt;=128</p></td>
+      <td><p>Vendor Specific</p></td>
+      <td><p>X</p></td>
+      <td><p>X</p></td>
+      <td><p>O</p></td>
+      <td><p></p></td>
+      <td><p>X</p></td>
+      </tr>
+      </tbody>
+      </table>
 
-        >[!IMPORTANT]
-        >  
-        For **SetNoPPIClear\_False**: if the BIOS implements the items marked "O1" or "O2" it must implement them as a set. For the **No Operation** that follows **SetNoPPIClear\_True**, the BIOS must not implement operations 19 and 20 if it does not implement operation 12.
+      > [!IMPORTANT]
+      > 
+      > For **SetNoPPIClear\_False**: if the BIOS implements the items marked "O1" or "O2" it must implement them as a set. For the **No Operation** that follows **SetNoPPIClear\_True**, the BIOS must not implement operations 19 and 20 if it does not implement operation 12.
 
-         
+         
 
-    3.  Table 3 is revised as follows:
+   3. Table 3 is revised as follows:
 
-        <table>
-        <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-        </colgroup>
-        <tbody>
-        <tr class="odd">
-        <td><p><strong>Operation</strong></p>
-        <p><strong>Value</strong></p></td>
-        <td><p><strong>Operation</strong></p>
-        <p><strong>Name</strong></p></td>
-        <td><p><strong>TPM commands sent by BIOS and other BIOS actions to perform the operation</strong></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>0</p></td>
-        <td><p>No Operation</p></td>
-        <td><p><em>No operation</em></p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>1-4, 6-13, 15-16, 19-20</p></td>
-        <td><p>No Operation</p></td>
-        <td><p>No operation. However, the operation number MUST be remembered and the result if queried from the OS it MUST return success.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>5, 14, 21, 22</p></td>
-        <td><p>Clear</p></td>
-        <td><p>TPM2_ClearControl(NO) +</p>
-        <p>TPM2_Clear</p>
-        <p>&lt;PLATFORM RESET&gt;* [*If necessary to persist the TPM changes from TPM2_CLEAR. Microsoft anticipates on most systems this is unnecessary.]</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>17</p></td>
-        <td><p>SetNoPPIClear_False</p>
-        <p>(Require physical presence for clear.)</p></td>
-        <td><p>This operation does not change TPM state.</p>
-        <p></p>
-        <p>Clears the BIOS TPM Management Flag NoPPIClear to FALSE.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>18</p></td>
-        <td><p>SetNoPPIClear_True</p>
-        <p></p>
-        <p>(Do not require physical presence confirmation for clear.)</p></td>
-        <td><p>This operation does not change TPM state.</p>
-        <p></p>
-        <p>Sets the BIOS TPM Management Flag NoPPIClear to TRUE.</p>
-        <p></p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>23 - 127</p></td>
-        <td><p>Reserved</p></td>
-        <td><p>Reserved, do not implement or use</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>&gt;=128</p></td>
-        <td><p>Vendor Specific</p></td>
-        <td><p>TPM commands mapping to vendor specific operation</p></td>
-        </tr>
-        </tbody>
-        </table>
+      <table>
+      <colgroup>
+      <col width="33%" />
+      <col width="33%" />
+      <col width="33%" />
+      </colgroup>
+      <tbody>
+      <tr class="odd">
+      <td><p><strong>Operation</strong></p>
+      <p><strong>Value</strong></p></td>
+      <td><p><strong>Operation</strong></p>
+      <p><strong>Name</strong></p></td>
+      <td><p><strong>TPM commands sent by BIOS and other BIOS actions to perform the operation</strong></p></td>
+      </tr>
+      <tr class="even">
+      <td><p>0</p></td>
+      <td><p>No Operation</p></td>
+      <td><p><em>No operation</em></p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>1-4, 6-13, 15-16, 19-20</p></td>
+      <td><p>No Operation</p></td>
+      <td><p>No operation. However, the operation number MUST be remembered and the result if queried from the OS it MUST return success.</p></td>
+      </tr>
+      <tr class="even">
+      <td><p>5, 14, 21, 22</p></td>
+      <td><p>Clear</p></td>
+      <td><p>TPM2_ClearControl(NO) +</p>
+      <p>TPM2_Clear</p>
+      <p>&lt;PLATFORM RESET&gt;* [*If necessary to persist the TPM changes from TPM2_CLEAR. Microsoft anticipates on most systems this is unnecessary.]</p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>17</p></td>
+      <td><p>SetNoPPIClear_False</p>
+      <p>(Require physical presence for clear.)</p></td>
+      <td><p>This operation does not change TPM state.</p>
+      <p></p>
+      <p>Clears the BIOS TPM Management Flag NoPPIClear to FALSE.</p></td>
+      </tr>
+      <tr class="even">
+      <td><p>18</p></td>
+      <td><p>SetNoPPIClear_True</p>
+      <p></p>
+      <p>(Do not require physical presence confirmation for clear.)</p></td>
+      <td><p>This operation does not change TPM state.</p>
+      <p></p>
+      <p>Sets the BIOS TPM Management Flag NoPPIClear to TRUE.</p>
+      <p></p></td>
+      </tr>
+      <tr class="odd">
+      <td><p>23 - 127</p></td>
+      <td><p>Reserved</p></td>
+      <td><p>Reserved, do not implement or use</p></td>
+      </tr>
+      <tr class="even">
+      <td><p>&gt;=128</p></td>
+      <td><p>Vendor Specific</p></td>
+      <td><p>TPM commands mapping to vendor specific operation</p></td>
+      </tr>
+      </tbody>
+      </table>
 
-         
+         
 
-4.  The spirit of section 4 MUST be maintained to obtain confirmation from a physically present user when it is required to perform an operation but the actual mechanism does not need to be key presses. The keys or other mechanism to affirm consent are up to the platform manufacturer.
+4. The spirit of section 4 MUST be maintained to obtain confirmation from a physically present user when it is required to perform an operation but the actual mechanism does not need to be key presses. The keys or other mechanism to affirm consent are up to the platform manufacturer.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><p><strong>Op</strong></p>
-    <p><strong>Value</strong></p></td>
-    <td><p><strong>Operation</strong></p>
-    <p><strong>Name</strong></p></td>
-    <td><p><strong>Confirmation</strong></p>
-    <p><strong>Text</strong></p></td>
-    </tr>
-    <tr class="even">
-    <td><p>5, 14, 21, and 22</p></td>
-    <td><p>Clear</p></td>
-    <td><p>A configuration change was requested to clear this computer's TPM (Trusted Platform Module)</p>
-    <p>WARNING: Clearing erases information stored on the TPM. You will lose all created keys and access to data encrypted by these keys.</p>
-    <p>Press &lt;CAK&gt; to clear the TPM</p>
-    <p>Press &lt;RK&gt; to reject this change request and continue</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>18</p></td>
-    <td><p>SetNoPPIClear_True</p>
-    <p></p></td>
-    <td><p>A configuration change was requested to allow the Operating System to clear the computer's TPM (Trusted Platform Module) without asking for user confirmation in the future.</p>
-    <p>NOTE: This action does not clear the TPM, but by approving this configuration change, future actions to clear the TPM will not require user confirmation.</p>
-    <p>WARNING: Clearing erases information stored on the TPM. You will lose all created keys and access to data encrypted by these keys.</p>
-    <p>Press &lt;CAK&gt; to approve future Operating System requests to clear the TPM</p>
-    <p>Press &lt;RK&gt; to reject this change request and continue</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td><p><strong>Op</strong></p>
+   <p><strong>Value</strong></p></td>
+   <td><p><strong>Operation</strong></p>
+   <p><strong>Name</strong></p></td>
+   <td><p><strong>Confirmation</strong></p>
+   <p><strong>Text</strong></p></td>
+   </tr>
+   <tr class="even">
+   <td><p>5, 14, 21, and 22</p></td>
+   <td><p>Clear</p></td>
+   <td><p>A configuration change was requested to clear this computer's TPM (Trusted Platform Module)</p>
+   <p>WARNING: Clearing erases information stored on the TPM. You will lose all created keys and access to data encrypted by these keys.</p>
+   <p>Press &lt;CAK&gt; to clear the TPM</p>
+   <p>Press &lt;RK&gt; to reject this change request and continue</p></td>
+   </tr>
+   <tr class="odd">
+   <td><p>18</p></td>
+   <td><p>SetNoPPIClear_True</p>
+   <p></p></td>
+   <td><p>A configuration change was requested to allow the Operating System to clear the computer's TPM (Trusted Platform Module) without asking for user confirmation in the future.</p>
+   <p>NOTE: This action does not clear the TPM, but by approving this configuration change, future actions to clear the TPM will not require user confirmation.</p>
+   <p>WARNING: Clearing erases information stored on the TPM. You will lose all created keys and access to data encrypted by these keys.</p>
+   <p>Press &lt;CAK&gt; to approve future Operating System requests to clear the TPM</p>
+   <p>Press &lt;RK&gt; to reject this change request and continue</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
-5.  Section 5 is informative.
+5. Section 5 is informative.
 
-6.  Connected Standby systems MAY hardcode NoPPIClear to TRUE and not implement operations 17 and 18. This means they do not need to implement any confirmation dialogs for physical presence actions because no physical presence operations will require user confirmation.
+6. Connected Standby systems MAY hardcode NoPPIClear to TRUE and not implement operations 17 and 18. This means they do not need to implement any confirmation dialogs for physical presence actions because no physical presence operations will require user confirmation.
 
-7.  The firmware MUST leave the storage and endorsement hierarchies enabled when it passes control to initial program loader code like the Windows Boot Manager.
+7. The firmware MUST leave the storage and endorsement hierarchies enabled when it passes control to initial program loader code like the Windows Boot Manager.
 
 **4.3.4.3 Optional ACPI Start Method**
 
@@ -499,7 +499,7 @@ Note: Some platforms MAY implement this optional ACPI method to permit the OS to
 </tbody>
 </table>
 
- 
+ 
 
 Function Start
 
@@ -562,7 +562,7 @@ An ACPI table named "TPM2" listed in the "RSDT" ACPI table describes the platfor
 <td><p>Signature</p></td>
 <td><p>4</p></td>
 <td><p>00h</p></td>
-<td><p>'TPM2'. Signature for the TPM 2.0 device Hardware Interface Table</p></td>
+<td><p>&#39;TPM2&#39;. Signature for the TPM 2.0 device Hardware Interface Table</p></td>
 </tr>
 <tr class="even">
 <td><p>Length</p></td>
@@ -592,13 +592,13 @@ An ACPI table named "TPM2" listed in the "RSDT" ACPI table describes the platfor
 <td><p>OEM Table ID</p></td>
 <td><p>8</p></td>
 <td><p>10h</p></td>
-<td><p>The OEM Table ID is the manufacturer model ID (assigned by the OEM identified by "OEM ID"; may be the chipset vendor).</p></td>
+<td><p>The OEM Table ID is the manufacturer model ID (assigned by the OEM identified by &quot;OEM ID&quot;; may be the chipset vendor).</p></td>
 </tr>
 <tr class="odd">
 <td><p>OEM Revision</p></td>
 <td><p>4</p></td>
 <td><p>18h</p></td>
-<td><p>OEM revision for the given OEM Table ID. Per ACPI, "[an] OEM-supplied revision number. Larger numbers are assumed to be newer revisions."</p></td>
+<td><p>OEM revision for the given OEM Table ID. Per ACPI, &quot;[an] OEM-supplied revision number. Larger numbers are assumed to be newer revisions.&quot;</p></td>
 </tr>
 <tr class="even">
 <td><p>Creator ID</p></td>
@@ -679,12 +679,12 @@ An ACPI table named "TPM2" listed in the "RSDT" ACPI table describes the platfor
 <td><p>Platform Specific Parameters</p></td>
 <td><p>variable</p></td>
 <td><p>34h</p></td>
-<td><p>The content of the platform specific parameters is determined by the start mechanism used by this system's TPM 2.0 device interface. This field contains values that may be used to initiate command processing. This information may be vendor specific. For Start Method values of 2 or 6 the field is not used and the Byte Length is zero.</p></td>
+<td><p>The content of the platform specific parameters is determined by the start mechanism used by this system&#39;s TPM 2.0 device interface. This field contains values that may be used to initiate command processing. This information may be vendor specific. For Start Method values of 2 or 6 the field is not used and the Byte Length is zero.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="4.4.1_Control_Area_Contents"></span><span id="4.4.1_control_area_contents"></span><span id="4.4.1_CONTROL_AREA_CONTENTS"></span>4.4.1 Control Area Contents
 
@@ -776,7 +776,7 @@ The Control Area structure is shown in the table below and unless specified othe
 </tbody>
 </table>
 
- 
+ 
 
 The TPM 2.0 driver reads the following information once during the initialization of the operating system:
 
@@ -967,7 +967,7 @@ States marked with '0' indicate that this field is CLEAR. States marked with '1'
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="4.5.2_State_diagram_when_using_ACPI_Start_method"></span><span id="4.5.2_state_diagram_when_using_acpi_start_method"></span><span id="4.5.2_STATE_DIAGRAM_WHEN_USING_ACPI_START_METHOD"></span>4.5.2 State diagram when using ACPI Start method
 
@@ -977,11 +977,11 @@ This state diagram is for informative purposes only. The normative description o
 
 Figure 1: TPM 2.0 device states when using ACPI Start method
 
->[!NOTE]
->  
-(a) Please note that multiple concurrent threads can interact with the Control Area concurrently. For example: one thread could initiate a command by setting the Start field and then issuing the Start method. Another thread can set the Cancel field in parallel. Hence, the possibility to have the Cancel field set after setting the Start field, but before issuing the Start method. (b) A Windows TPM 2.0 driver may react to error conditions differently than depicted. It might, for instance, transition into an error state when a timeout hits.
+> [!NOTE]
+> 
+> (a) Please note that multiple concurrent threads can interact with the Control Area concurrently. For example: one thread could initiate a command by setting the Start field and then issuing the Start method. Another thread can set the Cancel field in parallel. Hence, the possibility to have the Cancel field set after setting the Start field, but before issuing the Start method. (b) A Windows TPM 2.0 driver may react to error conditions differently than depicted. It might, for instance, transition into an error state when a timeout hits.
 
- 
+ 
 
 ### <span id="4.5.3_State_diagram_without_an_ACPI_Start_method"></span><span id="4.5.3_state_diagram_without_an_acpi_start_method"></span><span id="4.5.3_STATE_DIAGRAM_WITHOUT_AN_ACPI_START_METHOD"></span>4.5.3 State diagram without an ACPI Start method
 
@@ -1054,28 +1054,28 @@ A write of '1' to commandCancel during the command execution phase MAY cancel th
 <tbody>
 <tr class="odd">
 <td><p>[ACPI09]</p></td>
-<td><p>"Advanced Configuration and Power Interface Specification," Version 4.0, June 16, 2009.</p></td>
+<td><p>&quot;Advanced Configuration and Power Interface Specification,&quot; Version 4.0, June 16, 2009.</p></td>
 </tr>
 <tr class="even">
 <td><p>[TCG08]</p></td>
-<td><p>Trusted Computing Group, "TCG Platform Reset Attack Mitigation Specification," Version 1.0, May 15, 2008.</p></td>
+<td><p>Trusted Computing Group, &quot;TCG Platform Reset Attack Mitigation Specification,&quot; Version 1.0, May 15, 2008.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TCG11]</p></td>
-<td><p>Trusted Computing Group, "TCG Physical Presence Interface Specification," Version 1.20, Feb. 10, 2011.</p></td>
+<td><p>Trusted Computing Group, &quot;TCG Physical Presence Interface Specification,&quot; Version 1.20, Feb. 10, 2011.</p></td>
 </tr>
 <tr class="even">
 <td><p>[TCG12]</p></td>
-<td><p>Trusted Computing Group, "PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21, Revision 1.00.</p></td>
+<td><p>Trusted Computing Group, &quot;PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21, Revision 1.00.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

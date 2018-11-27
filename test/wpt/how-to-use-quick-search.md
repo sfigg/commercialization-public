@@ -21,7 +21,7 @@ In Windows Performance Analyzer (WPA), you can perform a quick search across all
 
 **Note**  You can, however, add a query to fine tune your quick search.
 
- 
+ 
 
 **To use Quick Search**
 
@@ -42,7 +42,7 @@ In Windows Performance Analyzer (WPA), you can perform a quick search across all
 6.  To add a Delay Type, click the **contains** dropdown, select the criteria you want to use (for example, equals, contains, etc.), and then enter the search string you want to use.
     **Tip**  To remove the Delay Type, click the **X** in the row that contains the Delay Type (as you can have more than one) you want to delete. By default, the Query includes Delay Type **contains**, which you can also delete.
 
-     
+     
 
 7.  To fine tune your query, select one of the options, such as Match Case or Search collapsed rows).
 8.  Click **Find All** to find all data rows that meet your search criteria.
@@ -54,9 +54,9 @@ In Windows Performance Analyzer (WPA), you can perform a quick search across all
 
 [Search or Filter Data](search-or-filter-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

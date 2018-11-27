@@ -75,7 +75,7 @@ Users will be able to acknowledge the messages in the reverse order they were re
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing Steps:**  
 Work with your mobile operator partner to fully test this customization on their network.

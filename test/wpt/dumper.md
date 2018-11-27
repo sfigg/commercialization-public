@@ -68,9 +68,9 @@ xperf -i trace.etl -o trace.etl.csv -a dumper -provider {315a8872-923e-4ea2-9889
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

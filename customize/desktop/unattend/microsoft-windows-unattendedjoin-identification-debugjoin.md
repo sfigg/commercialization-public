@@ -25,7 +25,7 @@ This is an advanced setting designed to be used by product development and Micro
 
 If `DebugJoin` is specified, a trace file is generated during the domain join process (%WINDIR%\\Panther\\UnattendGC\\UnattendedJoinDCLocator.etl). This trace file can be useful for diagnosing network connectivity issues during setup that might prevent domain join from succeeding.
 
- 
+ 
 
 ## Values
 
@@ -47,7 +47,7 @@ If `DebugJoin` is specified, a trace file is generated during the domain join pr
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to set debug joins.
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

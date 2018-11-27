@@ -17,9 +17,9 @@ Customers see the the **Pen & Windows Ink** workspace when they click **Settings
 
 Windows provides a few means for you to customize the Pen and Ink workspace:
 
-* You can create an advanced Pen settings app, and link to it directly within the Pen & Windows Ink Settings using Unattend.xml. See [Microsoft-Windows-TwinUI | CustomProtocol](unattend\Microsoft-Windows-TwinUI-customprotocol.md).
+* You can create an advanced Pen settings app, and link to it directly within the Pen & Windows Ink Settings using Unattend.xml. See [Microsoft-Windows-TwinUI | CustomProtocol](unattend/Microsoft-Windows-TwinUI-customprotocol.md).
 
-* You can hide the Pen shortcut settings from the Pen & Windows Ink Settings using Unattend. This is helpful for devices that are not compatible with pen settings. See [Microsoft-Windows-TwinUI | Hide](unattend\microsoft-windows-twinui-hide.md).
+* You can hide the Pen shortcut settings from the Pen & Windows Ink Settings using Unattend. This is helpful for devices that are not compatible with pen settings. See [Microsoft-Windows-TwinUI | Hide](unattend/microsoft-windows-twinui-hide.md).
 
 * You can add up to three links to your own apps to the Pen & Windows Ink settings.
 
@@ -51,7 +51,7 @@ In the `InkWorkspaceModification.xml` file, you link to UWP apps by creating a T
 
 In Windows 10, build 1703, you have the option to hide the **Ignore touch input when I’m using my pen** setting if the device doesn’t accept touch and pen input simultaneously. 
 
-![Screenshot of Pen and Windows Ink settings](..\images\pen-and-ink.png)
+![Screenshot of Pen and Windows Ink settings](../images/pen-and-ink.png)
 
 To hide the simultaneous pen and touch settings UI, create the following registry key as a DWORD and set it to a 1. Setting it to 0 (default) will show the setting again.
 

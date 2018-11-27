@@ -80,7 +80,7 @@ When the **Brightness** screen in **Settings** is not set to automatically adjus
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a phone.

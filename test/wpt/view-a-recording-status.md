@@ -33,7 +33,7 @@ For more information about how to use these methods to start a WPR recording, se
 **Note**  
 WPR can only display a recording’s status if the recording is started by WPR. It cannot display recording status for recordings that are started by Xperf or other applications.
 
- 
+ 
 
 The recording status displays the following information:
 
@@ -48,9 +48,9 @@ The recording status displays the following information:
 
 [Sessions](sessions.md)
 
- 
+ 
 
- 
+ 
 
 
 

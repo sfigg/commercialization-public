@@ -46,11 +46,11 @@ This method creates a child **ProductInstance** object.
 
 `Public MustOverride Function CreateProductInstance ( _`
 
-          `productInstanceName As String, _`
+          `productInstanceName As String, _`
 
-          `pool As MachinePool, _`
+          `pool As MachinePool, _`
 
-          `platform As OSPlatform _`
+          `platform As OSPlatform _`
 
 `) As ProductInstance `
 
@@ -58,11 +58,11 @@ This method creates a child **ProductInstance** object.
 
 `public abstract ProductInstance CreateProductInstance (`
 
-          `string productInstanceName,`
+          `string productInstanceName,`
 
-          `MachinePool pool,`
+          `MachinePool pool,`
 
-          `OSPlatform platform`
+          `OSPlatform platform`
 
 `)`
 
@@ -71,15 +71,15 @@ This method creates a child **ProductInstance** object.
 
 *productInstanceName*
 
-     The name of the **ProductInstance** object.
+     The name of the **ProductInstance** object.
 
 *pool*
 
-     The machine pool to use for this **ProductInstance**.
+     The machine pool to use for this **ProductInstance**.
 
 *platform*
 
-     The operating system platform (operating system architecture plus the product SKU) to use for this platform instance.
+     The operating system platform (operating system architecture plus the product SKU) to use for this platform instance.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -98,9 +98,9 @@ This method is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

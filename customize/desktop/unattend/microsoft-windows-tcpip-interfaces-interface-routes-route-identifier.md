@@ -25,7 +25,7 @@ ms.topic: article
 
 The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must be added in the following order: [Identifier](http://go.microsoft.com/fwlink/?LinkId=224315), [Metric](http://go.microsoft.com/fwlink/?LinkId=224320), [NextHopAddress](http://go.microsoft.com/fwlink/?LinkId=224322), and then [Prefix](http://go.microsoft.com/fwlink/?LinkId=224326). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
- 
+ 
 
 ## Values
 
@@ -43,7 +43,7 @@ The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must b
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -69,63 +69,63 @@ The following XML output shows how to configure TCPIP.
 
 ```
 <component name="Microsoft-Windows-TCPIP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <Interfaces>
+   <Interfaces>
    <!-- Add static IP address (192.168.0.1/24, ffff:1::3/48) & route (12.34.0.0/16) to interface with identifier "Ethernet 1" -->      <Interface wcm:action="add">
-         <Ipv4Settings>
-            <DhcpEnabled>true</DhcpEnabled> 
-            <Metric>20</Metric> 
-            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
-         </Ipv4Settings>
-         <Ipv6Settings>
-            <DhcpEnabled>false</DhcpEnabled> 
-            <Metric>30</Metric> 
-            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
-         </Ipv6Settings>
-      <Identifier>Ethernet 1</Identifier>
-         <UnicastIpAddresses>
-           <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/24</IpAddress>
-           <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress>
-         </UnicastIpAddresses>
-         <Routes>
-            <Route wcm:action="add">
-               <Identifier>1</Identifier> 
-               <Metric>10</Metric> 
-               <NextHopAddress>12.34.0.0</NextHopAddress> 
-               <Prefix>16</Prefix> 
-            </Route>
-            <Route wcm:action="add">
-               <Identifier>10</Identifier> 
-               <Metric>29</Metric> 
-               <NextHopAddress>12.34.56.0</NextHopAddress> 
-               <Prefix>24</Prefix> 
-            </Route>
-         </Routes>
-      </Interface>
-      <Interface wcm:action="add">
-         <Ipv4Settings>
-            <DhcpEnabled>true</DhcpEnabled> 
-            <Metric>20</Metric> 
-            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
-         </Ipv4Settings>
-         <Ipv6Settings>
-            <DhcpEnabled>false</DhcpEnabled> 
-            <Metric>10</Metric> 
-            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
-         </Ipv6Settings>
-         <Identifier>Local Area Connection</Identifier> 
-         <UnicastIpAddresses>
-            <IpAddress wcm:action="add" wcm:keyValue="1">123.45.67.8</IpAddress> 
-            </UnicastIpAddresses>
-         <Routes>
-            <Route wcm:action="add">
-               <Identifier>1</Identifier> 
-               <Metric>10</Metric> 
-               <NextHopAddress>12.34.0.0</NextHopAddress> 
-               <Prefix>16</Prefix> 
-            </Route>
-         </Routes>
-      </Interface>
-   </Interfaces>
+         <Ipv4Settings>
+            <DhcpEnabled>true</DhcpEnabled> 
+            <Metric>20</Metric> 
+            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
+         </Ipv4Settings>
+         <Ipv6Settings>
+            <DhcpEnabled>false</DhcpEnabled> 
+            <Metric>30</Metric> 
+            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
+         </Ipv6Settings>
+      <Identifier>Ethernet 1</Identifier>
+         <UnicastIpAddresses>
+           <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/24</IpAddress>
+           <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress>
+         </UnicastIpAddresses>
+         <Routes>
+            <Route wcm:action="add">
+               <Identifier>1</Identifier> 
+               <Metric>10</Metric> 
+               <NextHopAddress>12.34.0.0</NextHopAddress> 
+               <Prefix>16</Prefix> 
+            </Route>
+            <Route wcm:action="add">
+               <Identifier>10</Identifier> 
+               <Metric>29</Metric> 
+               <NextHopAddress>12.34.56.0</NextHopAddress> 
+               <Prefix>24</Prefix> 
+            </Route>
+         </Routes>
+      </Interface>
+      <Interface wcm:action="add">
+         <Ipv4Settings>
+            <DhcpEnabled>true</DhcpEnabled> 
+            <Metric>20</Metric> 
+            <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled> 
+         </Ipv4Settings>
+         <Ipv6Settings>
+            <DhcpEnabled>false</DhcpEnabled> 
+            <Metric>10</Metric> 
+            <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
+         </Ipv6Settings>
+         <Identifier>Local Area Connection</Identifier> 
+         <UnicastIpAddresses>
+            <IpAddress wcm:action="add" wcm:keyValue="1">123.45.67.8</IpAddress> 
+            </UnicastIpAddresses>
+         <Routes>
+            <Route wcm:action="add">
+               <Identifier>1</Identifier> 
+               <Metric>10</Metric> 
+               <NextHopAddress>12.34.0.0</NextHopAddress> 
+               <Prefix>16</Prefix> 
+            </Route>
+         </Routes>
+      </Interface>
+   </Interfaces>
 </component>
 ```
 
@@ -134,9 +134,9 @@ The following XML output shows how to configure TCPIP.
 
 [Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)
 
- 
+ 
 
- 
+ 
 
 
 

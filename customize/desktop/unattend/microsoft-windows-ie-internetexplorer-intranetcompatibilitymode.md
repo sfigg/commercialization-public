@@ -43,7 +43,7 @@ In Compatibility view, Internet Explorer displays Web pages as they would be sho
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ The following XML output shows how to render intranet sites using Compatibility 
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

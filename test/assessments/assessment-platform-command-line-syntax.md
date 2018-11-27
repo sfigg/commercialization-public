@@ -23,9 +23,9 @@ AXE.exe has limitations: You cannot use it to run a preconfigured job or one of 
 
 AXE.exe is installed with the [Windows Assessment Toolkit](index.md), and by default it is installed to the following folder:
 
-<p style="margin: 1em 0 1em 1.5em;">%ProgramFiles(x86)%\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Assessment Toolkit\\*architecture*\\</p>
+<p style="margin: 1em 0 1em 1.5em;">%ProgramFiles(x86)%\Windows Kits\10\Assessment and Deployment Kit\Windows Assessment Toolkit&lt;em&gt;architecture</em>&lt;/p&gt;
 
-<p>where *architecture* is one of the following: <strong>amd64</strong>, <strong>arm</strong>, <strong>arm64</strong>, <strong>x86</strong>.</p>
+<p>where <em>architecture</em> is one of the following: <strong>amd64</strong>, <strong>arm</strong>, <strong>arm64</strong>, <strong>x86</strong>.</p>
 
 
 
@@ -53,11 +53,11 @@ AXE.exe uses the following syntax:
 </tr>
 <tr class="even">
 <td><p><em>job_file</em></p></td>
-<td><p>Specifies the job (.jobx) file that you want to run, and <em>job_file</em> can specify a relative path. If the job file is in the directory from which you're running AXE.exe, no path is required.</p>
-<p>By default, when you create a job in the Windows Assessment Console, it's saved in to %USERPROFILE%\\Documents\\Windows Assessment Console\\Jobs\\.</p>
+<td><p>Specifies the job (.jobx) file that you want to run, and <em>job_file</em> can specify a relative path. If the job file is in the directory from which you&#39;re running AXE.exe, no path is required.</p>
+<p>By default, when you create a job in the Windows Assessment Console, it&#39;s saved in to %USERPROFILE%\Documents\Windows Assessment Console\Jobs\.</p>
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;This option is required if no other parameter that performs an action is specified.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\MyJobs\\Job1.jobx</code></td>
+<code>axe&nbsp;C:\Assessments\MyJobs\Job1.jobx</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/Job</strong> <em>job_file</em></p></td>
@@ -84,13 +84,13 @@ AXE.exe uses the following syntax:
 <td><p><strong>/Timeout</strong>&nbsp;<em>seconds</em></p></td>
 <td><p>Specifies the amount of time in <em>seconds</em> that the job will wait for another job to finish before it exits with an error. When <em>seconds</em> is zero, the default, the job will exit immediately without running if another job is already running.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /Timeout 30</code></td>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /Timeout 30</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/NoPublish</strong></p></td>
-<td><p>Specifies to <em>not</em> publish the results file to the location that's specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\\Microsoft\\Axe\\Results\\.</p>
+<td><p>Specifies to <em>not</em> publish the results file to the location that&#39;s specified in the job file. When you use this option, the results are saved to the default location, %LOCALAPPDATA%\Microsoft\Axe\Results\.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /NoPublish</code></td>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoPublish</code></td>
 </tr>
 <tr class="even">
 <td><p><strong>/PublishToSource</strong></p></td>
@@ -103,23 +103,23 @@ file is specified for /Analyze.
 </tr>
 <tr class="odd">
 <td><p><strong>/PublishPath</strong>&nbsp;<em>folder_path</em></p></td>
-<td><p>Specifies a location to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that is specified in the job file. This option is ignored if it's combined with <strong>/NoPublish</strong>.</p>
+<td><p>Specifies a location to publish the results file to. The path specified by <em>folder_path</em> overrides the publication path, <strong>ResultsPublishPath</strong>, that is specified in the job file. This option is ignored if it&#39;s combined with <strong>/NoPublish</strong>.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /PublishPath C:\\Assessments\\myResults</code></td>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /PublishPath C:\Assessments\myResults</code></td>
 </tr>
 <tr class="even">
 <td><p><strong>/DisplayLog</strong>&nbsp;<em>ETL_file</em></p></td>
 <td><p>Displays the content of an Event Trace Log (ETL) file specified by <em>ETL_file</em>, which can contain wildcard characters in the path and file name. AXE.exe writes an ETL file when running a job, and it displays the path in the console window.</p>
-<p>The default location of the log file is %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\<em>GUID</em>\\, where <em>GUID</em> is a GUID that is generated randomly for each new job. The job results file in the <strong>SessionLogFiles</strong> node also contains the full location. This node specifies all of the log files.</p>
+<p>The default location of the log file is %LOCALAPPDATA%\Microsoft\Axe\Logs\<em>GUID</em>\, where <em>GUID</em> is a GUID that is generated randomly for each new job. The job results file in the <strong>SessionLogFiles</strong> node also contains the full location. This node specifies all of the log files.</p>
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;All of the ETL files are automatically converted into a single AxeLog.txt file that is saved in the results directory. You can open this file by using Notepad.</p>
 <p>Example:</p>
-<code>axe&nbsp;/DisplayLog %LOCALAPPDATA%\\Microsoft\\Axe\\Logs\\E5A6CB43-C1CE-4FC1-8170-13B002E250B36\\AxeLog-000.etl</code></td>
+<code>axe&nbsp;/DisplayLog %LOCALAPPDATA%\Microsoft\Axe\Logs\E5A6CB43-C1CE-4FC1-8170-13B002E250B36\AxeLog-000.etl</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/RemoveRestart</strong></p></td>
 <td><p>Specifies that any existing, pending job-restart task should be removed.</p>
-<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;The <strong>/JobFile</strong> option isn't needed when you use this option.</p>
-<p>When you run a job, the assessment creates a task to restart the job if there's a system failure, like a loss of power. When you use this option, the task is removed from the Task Scheduler. If no job-restart task is pending, the assessment will return an error to inform you that the task doesn't exist.</p>
+<p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;The <strong>/JobFile</strong> option isn&#39;t needed when you use this option.</p>
+<p>When you run a job, the assessment creates a task to restart the job if there&#39;s a system failure, like a loss of power. When you use this option, the task is removed from the Task Scheduler. If no job-restart task is pending, the assessment will return an error to inform you that the task doesn&#39;t exist.</p>
 <p>Example:</p>
 <code>axe&nbsp;/RemoveRestart</code></td>
 </tr>
@@ -127,31 +127,31 @@ file is specified for /Analyze.
 <td><p><strong>/NoWarnings</strong></p></td>
 <td><p>Suppresses warning messages. This is an optional parameter.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /NoWarnings</code></td>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /NoWarnings</code></td>
 </tr>
 <tr class="odd">
 <td><p><strong>/Pause</strong></p></td>
 <td><p>Pauses AXE.exe after the job finishes. You can then see any errors or other information in the console before AXE.exe exits and the console closes. Exiting continues when you press a key.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /Pause</code></td>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /Pause</code></td>
 </tr>
 <tr class="even">
 <td><p><strong>/JobParameter</strong> <em>parameter</em><strong>=</strong><em>value</em></p></td>
 <td><p>Specifies a <em>value</em> to override a job <em>parameter</em> that may exist in the job manifest. You can use <strong>/JobParameter</strong> up to 100 times to specify multiple job parameters. If duplicate parameter names appear, the assessment uses the last value supplied for that name. Using <strong>/JobParameter</strong> is optional.</p>
 <p>The <strong>/PublishPath</strong> option takes precedence over setting the <strong>ResultsPublishPath</strong> job parameter with this option.</p>
 <p>Example:</p>
-<code>axe&nbsp;C:\\Assessments\\myJobs\\Job1.jobx /JobParameter iterations=1</code></td>
+<code>axe&nbsp;C:\Assessments\myJobs\Job1.jobx /JobParameter iterations=1</code></td>
 </tr>
 </tbody>
 </table>
 
 
 
- 
+ 
 ## Related topics
 
 [Windows Assessment Console Overview](windows-assessment-console-overview.md)
 
- 
+ 
 
- 
+ 

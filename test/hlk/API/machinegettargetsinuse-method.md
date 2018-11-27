@@ -50,9 +50,9 @@ This method returns a structure that indicates targets by name, but it does not 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

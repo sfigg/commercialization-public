@@ -54,7 +54,7 @@ You'll need the most recent version of the Deployment and Imaging Tools from the
 
     ```
     CopyDandI.cmd amd64 E:\ADKTools\amd64
-	```
+    ```
 
 ## <span id="Prepare_a_device_for_image_capture"></span><span id="prepare_a_device_for_image_capture"></span><span id="PREPARE_A_DEVICE_FOR_IMAGE_CAPTURE"></span>Step 2: Prepare a device for image capture
 
@@ -178,7 +178,7 @@ The short version:
     
     ```
     W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\fabrikam-id.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
-	```
+    ```
 
     To learn more, see [Siloed provisioning packages](siloed-provisioning-packages.md). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
 

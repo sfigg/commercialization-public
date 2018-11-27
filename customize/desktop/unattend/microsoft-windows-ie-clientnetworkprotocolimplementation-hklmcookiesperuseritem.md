@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following XML output shows how to specify that there is a common cache on th
 
 [HKLMHistoryPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementation-hklmhistoryperuseritem.md)
 
- 
+ 
 
- 
+ 
 
 
 

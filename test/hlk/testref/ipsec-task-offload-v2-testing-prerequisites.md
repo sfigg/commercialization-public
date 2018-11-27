@@ -18,30 +18,30 @@ ms.topic: article
 
 This section describes the IPsec Task Offload v2 testing prerequisites that you should complete before testing your network adapter using the Windows Hardware Lab Kit (Windows HLK). The Network Driver Interface Specification (NDIS) test suite includes test jobs that verify Internet Protocol Security (IPsec) functionality. If your network adapter supports IPsec, you must complete the IPsec-specific NDIS test jobs to certify your device.
 
->[!NOTE]
->  
-This content applies to both standalone network and integrated network devices.
+> [!NOTE]
+> 
+> This content applies to both standalone network and integrated network devices.
 
 ## <span id="BKMK_HCK_IPSec_hR"></span><span id="bkmk-hck-ipsec-hr"></span><span id="BKMK_HCK_IPSEC_HR"></span>Hardware requirements
 
 
 This hardware is required for testing:
 
--   IPsec offload-capable network adapters.
+- IPsec offload-capable network adapters.
 
--   Two test computers that meet the Windows HLK prerequisites. For more info, see [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md).
+- Two test computers that meet the Windows HLK prerequisites. For more info, see [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md).
 
-    >[!NOTE]
-    >  
-    The test computers must be in the same machine pool.
+  > [!NOTE]
+  > 
+  > The test computers must be in the same machine pool.
 
-     
 
--   Three identical LAN test devices.
 
--   Two 100 MB switches. Gigabit Ethernet switches are also supported.
+- Three identical LAN test devices.
 
--   An Ethernet crossover cable.
+- Two 100 MB switches. Gigabit Ethernet switches are also supported.
+
+- An Ethernet crossover cable.
 
 To be included in the Windows HLK, the device must pass the certification tests for both x86 and AMD64 platforms.
 
@@ -63,29 +63,29 @@ The following diagram shows the relationship between these computers.
 
 Here's a summary of each computer shown, devices installed on them, and their role during testing.
 
--   **Windows HLK Studio computer.** Used to manage all of the client computers during testing.
+- **Windows HLK Studio computer.** Used to manage all of the client computers during testing.
 
--   **Windows HLK Controller computer.** Used to control client computers and gather all test information from them.
+- **Windows HLK Controller computer.** Used to control client computers and gather all test information from them.
 
-    >[!NOTE]
-    >  
-    Windows HLK Studio and Windows HLK Controller can run on the same test server, which can help reduce setup complexity.
+  > [!NOTE]
+  > 
+  > Windows HLK Studio and Windows HLK Controller can run on the same test server, which can help reduce setup complexity.
 
-     
 
--   **Windows HLK Client 1 computer.** During the LAN device testing, this computer, is referred to as the *remote test machine*, or *Network Driver Interface Specification Test (NDISTest) server*. It contains these network devices:
 
-    -   **Remote support device.** Communicates with the Windows HLK controller. It also communicates test status information to the local support device in the local test computer via the support network.
+- **Windows HLK Client 1 computer.** During the LAN device testing, this computer, is referred to as the *remote test machine*, or *Network Driver Interface Specification Test (NDISTest) server*. It contains these network devices:
 
-    -   **Remote message device.** Communicates with the local test device in the local test computer via the test network.
+  -   **Remote support device.** Communicates with the Windows HLK controller. It also communicates test status information to the local support device in the local test computer via the support network.
 
--   **Windows HLK Client 2 computer.** During device testing, this computer is referred to as the *local test machine*, or *NDISTest client*. It contains these network devices:
+  -   **Remote message device.** Communicates with the local test device in the local test computer via the test network.
 
-    -   **Local test device.** The device under test. During testing, it communicates to the remote message device in the remote test machine via the test network.
+- **Windows HLK Client 2 computer.** During device testing, this computer is referred to as the *local test machine*, or *NDISTest client*. It contains these network devices:
 
-    -   **Local message device.** Communicates with the controller. It also communicates test status information to the remote support device in the remote test machine via the support network.
+  -   **Local test device.** The device under test. During testing, it communicates to the remote message device in the remote test machine via the test network.
 
-    -   **Other local devices.** The NDISTest 6.5 (PM and WoL) job requires that any local device other than local test and local support devices be disconnected from the network.
+  -   **Local message device.** Communicates with the controller. It also communicates test status information to the remote support device in the remote test machine via the support network.
+
+  -   **Other local devices.** The NDISTest 6.5 (PM and WoL) job requires that any local device other than local test and local support devices be disconnected from the network.
 
 We recommended that the backchannel switch be on the same network that the clients use to communicate with the controller, and that the network be DHCP-enabled.
 
@@ -126,21 +126,23 @@ The following table matches device roles with interface aliases.
 </tbody>
 </table>
 
- 
+
 
 You can use Windows HLK Studio to schedule the LAN device test jobs on the clients that are registered on the controller. The following steps summarize the scheduling procedure.
 
 **To schedule LAN device test jobs**
 
-1.  In Windows HLK Studio, enter all of the information that the LAN device test job needs, and then schedule the job.
+1. In Windows HLK Studio, enter all of the information that the LAN device test job needs, and then schedule the job.
 
-    >[!NOTE]
-    >  
-    Test computers must be in the ready state before testing begins. If a test requires parameters to be set before it's run, a dialog box is displayed for that test. Review the specific test topic for more information.
+   > [!NOTE]
+   > 
+   > Test computers must be in the ready state before testing begins. If a test requires parameters to be set before it's run, a dialog box is displayed for that test. Review the specific test topic for more information.
 
-     
 
-    The LAN device test job requires two Windows HLK test computers. For your submission, you will also need three identical network cards. These requirements are enforced when you configure the Windows HLK job.
+
+~~~
+The LAN device test job requires two Windows HLK test computers. For your submission, you will also need three identical network cards. These requirements are enforced when you configure the Windows HLK job.
+~~~
 
 2.  Windows HLK Studio sends job configuration information to the controller, which reserves the clients and dispatches the job to them.
 
@@ -229,9 +231,9 @@ Before LAN testing can begin, you must first create your own machine pool to hol
 
 [Device.Network Testing](device-network-tests.md)
 
- 
 
- 
+
+
 
 
 

@@ -42,7 +42,7 @@ The Internet Explorer First Run Wizard helps users complete the browser-installa
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output shows how to skip the First Run Wizard when Internet Ex
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

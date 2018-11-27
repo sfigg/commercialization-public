@@ -21,10 +21,10 @@ You can use the Memory Footprint assessment to quantitatively compare a baseline
 
 By using the Memory Footprint assessment, you can compare the effect that different hardware configurations and associated software have on system memory. After you compare two system images in a side-by-side review, you can decide to change drivers or optimize the memory footprint of your system in other ways.
 
-**Note**  
-This assessment creates a snapshot of memory use during a series of assessment boots of the system and immediately after the appearance of the desktop in Windows 10 or the start screen in Windows 10 Enterprise. It does not evaluate memory use during ordinary computer operations. For more information about the results this assessment produces, see [Results for the Memory Footprint Assessment](results-for-the-memory-footprint-assessment.md).
+**Note**  
+This assessment creates a snapshot of memory use during a series of assessment boots of the system and immediately after the appearance of the desktop in Windows 10 or the start screen in Windows 10 Enterprise. It does not evaluate memory use during ordinary computer operations. For more information about the results this assessment produces, see [Results for the Memory Footprint Assessment](results-for-the-memory-footprint-assessment.md).
 
- 
+
 
 The following graphic shows the assessment process. As the graphic illustrates, the assessment requires multiple system reboots to generate all the assessment results.
 
@@ -45,17 +45,17 @@ This assessment includes system reboots as a regular part of the assessment proc
 
 You can run this assessment on the following operating systems:
 
--   Windows 8
+-   Windows 8
 
--   Windows 10
+-   Windows 10
 
 Supported architectures include x86-based, x64-based, and ARM-based systems.
 
-There are two ways to run this assessment on Windows RT:
+There are two ways to run this assessment on Windows RT:
 
--   Package the assessment job in the Windows Assessment Console and then run it on Windows RT. For more information about this option, see. [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
+-   Package the assessment job in the Windows Assessment Console and then run it on Windows RT. For more information about this option, see. [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md).
 
--   Use Windows Assessment Services to run assessments on Windows RT. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
+-   Use Windows Assessment Services to run assessments on Windows RT. For more information, see [Windows Assessment Services](windows-assessment-services-technical-reference.md).
 
 ## <a href="" id="assesssettings"></a>Settings
 
@@ -92,24 +92,23 @@ The following table describes the assessment settings, recommended setting value
 </tr>
 <tr class="odd">
 <td><p>Symbol Path</p></td>
-<td><p>Shows the path of the Microsoft public symbol server for Windows. The assessment uses symbols to make sure that its results show driver memory as driver allocations instead of kernel allocations. Without the use of symbols, the assessment analysis may incorrectly identify a memory allocation source. This can disguise issues and hide driver problems. For more information about the symbol server, see [How to: Use a Symbols Server](http://go.microsoft.com/fwlink/?LinkId=242234).</p>
+<td><p>Shows the path of the Microsoft public symbol server for Windows. The assessment uses symbols to make sure that its results show driver memory as driver allocations instead of kernel allocations. Without the use of symbols, the assessment analysis may incorrectly identify a memory allocation source. This can disguise issues and hide driver problems. For more information about the symbol server, see <a href="http://go.microsoft.com/fwlink/?LinkId=242234" data-raw-source="[How to: Use a Symbols Server](http://go.microsoft.com/fwlink/?LinkId=242234)">How to: Use a Symbols Server</a>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you cannot connect to the symbol server, you can take one of the following steps to ensure assessment accuracy:</p>
+<strong>Note</strong><br/><p>If you cannot connect to the symbol server, you can take one of the following steps to ensure assessment accuracy:</p>
 <ul>
 <li><p>Download the symbols and copy them to the computer that you want to assess. This option requires that you provide the path to the local symbols.</p></li>
 <li><p>Run the assessment on one computer and then load the trace on another computer that has access to symbols (because it is connected to the Internet or already contains downloaded symbols). Then, run the analysis by using the analysis-only mode.</p></li>
 </ul>
 </div>
 <div>
- 
+
 </div>
-<p>For more information about missing symbols and assessment accuracy, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md).</p></td>
+<p>For more information about missing symbols and assessment accuracy, see <a href="common-in-depth-analysis-issues.md" data-raw-source="[Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md)">Common In-Depth Analysis Issues</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
@@ -122,9 +121,9 @@ The following table describes the assessment settings, recommended setting value
 
 [Windows Assessments Console step-by-step guide](windows-assessment-console-step-by-step-guide.md)
 
- 
 
- 
+
+
 
 
 

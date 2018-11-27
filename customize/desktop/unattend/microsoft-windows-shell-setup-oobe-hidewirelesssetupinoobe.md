@@ -53,7 +53,7 @@ During Windows Welcome, the **Join Wireless Network** screen prompts the end us
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -85,9 +85,9 @@ The following XML example shows how to set Windows Welcome to always hide the *
 [OOBE](microsoft-windows-shell-setup-oobe.md)
 [Automate OOBE](https://docs.microsoft.com/windows-hardware/customize/desktop/automate-oobe)
 
- 
+ 
 
- 
+ 
 
 
 

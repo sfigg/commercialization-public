@@ -36,7 +36,7 @@ Here’s a sample set of hardware configurations that you might design.
 | Office 2016                  | No           | Yes                 | Yes                               |
 | Compact OS                   | Yes          | Yes                 | No                                |
 
- 
+ 
 
 Lab 2 covers all the steps to customize and deploy a Windows image with optional steps for hardware configuration 1B and 2. Lab 2a shows you how to continue customizing your image by adding Windows desktop applications. Lab 2b shows you how to service your custom image with Windows updates.
 
@@ -101,7 +101,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
 
     **Note**   We recommend that you update the Windows and Windows RE images at the same time, to help make sure that any necessary files are included in both images.
 
-     
+     
 
 **Step 4: Add drivers to Windows**
 
@@ -162,14 +162,14 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 
 **Note**  The Start layout can be lost if the user resets their PC with the built-in recovery tools. You'll learn how to make sure these settings stay on the device in [Sample scripts](windows-deployment-sample-scripts-sxs.md).
 
- 
+ 
 
 ## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
 
 
 **Note**  Skip this section for hardware configuration 1.
 
- 
+ 
 
 Always use language packs and Features-On-Demand (FOD) packages that match the language and platform of the Windows image.
 
@@ -204,7 +204,7 @@ The following table shows the types of language packages and components availabl
 <tr class="even">
 <td align="left">Language interface pack</td>
 <td align="left"><code>lp.cab</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see <a href="available-language-packs-for-windows.md" data-raw-source="[Available Language Packs for Windows](available-language-packs-for-windows.md)">Available Language Packs for Windows</a>.</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
 </tr>
 <tr class="odd">
@@ -219,7 +219,7 @@ The following table shows the types of language packages and components availabl
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see <a href="features-on-demand-v2--capabilities.md" data-raw-source="[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md)">Features On Demand V2 (Capabilities)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -248,7 +248,7 @@ The following table shows the types of language packages and components availabl
 </tbody>
 </table>
 
- 
+ 
 
 **Step 6: Add or change languages**
 
@@ -365,7 +365,7 @@ The following table shows the types of language packages and components availabl
 
     **Note**  To remove all of the apps at once, open a command prompt as an Administrator, navigate to the image folder, and run the sample script: “Remove\_apps\_in\_offline\_image.cmd” from the [Sample scripts](windows-deployment-sample-scripts-sxs.md).
 
-     
+     
 
 2.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
@@ -510,7 +510,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
 
-     
+     
 
 4.  Check the new size of the Windows RE image.
 
@@ -550,7 +550,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  If your image is greater than 4GB, you may need to preformat the USB key using the NTFS file format.
 
-     
+     
 **Step 14: Apply Windows images using a script**
 
 -   Use deployment scripts to apply a newly-captured image onto a test device. These scripts set up the hard drive partitions and add the files from the Windows image to the partitions.
@@ -608,11 +608,11 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Warning**  **Troubleshooting**: If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key).
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

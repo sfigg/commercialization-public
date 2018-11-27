@@ -34,7 +34,7 @@ Use **RunSynchronous** commands only to add, modify, or delete rules for Windows
     **Note**  
     Don't use the **RunSynchronousNetsh advfirewall** command during the [specialize](specialize.md) configuration pass.
 
-     
+     
 
 5.  The **Create Synchronous Command** dialog box appears.
 
@@ -69,7 +69,7 @@ Use **RunSynchronous** commands only to add, modify, or delete rules for Windows
 **Note**  
 The **Netsh advfirewall** command requires administrator permissions to run. If the **RunSynchronous** command runs in a configuration pass that runs in user context, that user account must have administrator permissions.
 
- 
+ 
 
 ## <span id="Using_the_Netsh_Advfirewall_Command-Line_Tool"></span><span id="using_the_netsh_advfirewall_command-line_tool"></span><span id="USING_THE_NETSH_ADVFIREWALL_COMMAND-LINE_TOOL"></span>Using the Netsh Advfirewall Command-Line Tool
 
@@ -94,9 +94,9 @@ You can convert **Netsh** commands to Windows PowerShell commands. For more info
 
 [Windows Deployment Options](windows-deployment-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ Specifies what action to take based on the return code.
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -89,9 +89,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

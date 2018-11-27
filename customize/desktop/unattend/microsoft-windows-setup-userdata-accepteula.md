@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 This setting is required for all unattended installations. To prevent the Windows Setup user interface (UI) from displaying, you must configure this setting. For a complete list of required settings, see the [How to Automate Windows Setup](http://go.microsoft.com/fwlink/?LinkId=206673) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
- 
+ 
 
 ## Values
 
@@ -45,12 +45,12 @@ This setting is required for all unattended installations. To prevent the Window
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The value for `AcceptEula` is ignored during upgrades.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -89,9 +89,9 @@ The following sample XML output shows how to set user data.
 
 [UserData](microsoft-windows-setup-userdata.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -69,7 +69,7 @@ OEMs can hide the automatic brightness setting for phones that do not have an am
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build that contains this customization to a phone.

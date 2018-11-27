@@ -31,12 +31,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique string for the [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md).</p></td>
+<td><p>Specifies a unique string for the <a href="microsoft-windows-ie-internetexplorer-feedlist-feeditem.md" data-raw-source="[FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md)">FeedItem</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to set a [FeedList](microsoft-windows-ie-inte
 
 [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md)
 
- 
+ 
 
- 
+ 
 
 
 

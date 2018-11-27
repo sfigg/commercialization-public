@@ -46,9 +46,9 @@ If this window is not open, click Issues on the Window menu.
 
 [WPA User Interface](wpa-user-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

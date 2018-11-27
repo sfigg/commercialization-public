@@ -249,9 +249,9 @@ Windows identifies the system drive using the following methods:
 
 [BIOS/MBR-based hard drive partitions](configure-biosmbr-based-hard-drive-partitions.md)
 
- 
+ 
 
- 
+ 
 
 
 

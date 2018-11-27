@@ -34,18 +34,18 @@ Property bag that represents the template parameter options for running tests on
 
 **System.Object**
 
-     **System.Collections.GenericDictionary&lt;TKey,TValue&gt;**
+     **System.Collections.GenericDictionary&lt;TKey,TValue&gt;**
 
-      **Microsoft.Windows.Kits.Hardware.ObjectModel.TemplateParameters**
+      **Microsoft.Windows.Kits.Hardware.ObjectModel.TemplateParameters**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

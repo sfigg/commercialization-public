@@ -39,15 +39,15 @@ MachineSet machineSet = test.GetMachineRole();
  
 foreach (MachineRole role in machineSet.Roles)
 {
-    Console.WriteLine("Role : " + role.Name);
-    Console.WriteLine("Min : {0} Max : {1}" + role.Minimum, role.Maximum);
-    Console.WriteLine("isPrimary {0}", role.Primary);
+    Console.WriteLine("Role : " + role.Name);
+    Console.WriteLine("Min : {0} Max : {1}" + role.Minimum, role.Maximum);
+    Console.WriteLine("isPrimary {0}", role.Primary);
  
-    Console.WriteLine("Allocated machines: ");
-    foreach (Machine machine in role.GetMachines())
-    {
-        Console.WriteLine("\t" + machine.Name);
-    }
+    Console.WriteLine("Allocated machines: ");
+    foreach (Machine machine in role.GetMachines())
+    {
+        Console.WriteLine("\t" + machine.Name);
+    }
 }
 ```
 
@@ -61,9 +61,9 @@ Test.QueueTest(machineSet);
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

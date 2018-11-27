@@ -48,7 +48,7 @@ If there are any additional commands that have yet to be processed before the co
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -86,7 +86,7 @@ If the value of `WillReboot` is **OnRequest**, the synchronous command must retu
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -142,9 +142,9 @@ The following XML output shows how to set synchronous commands.
 
 [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

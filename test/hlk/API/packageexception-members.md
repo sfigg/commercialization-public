@@ -40,7 +40,7 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Constructors"></span><span id="protected_constructors"></span><span id="PROTECTED_CONSTRUCTORS"></span>Protected Constructors
 
@@ -64,7 +64,7 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
@@ -112,7 +112,7 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -136,7 +136,7 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -180,7 +180,7 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -208,7 +208,7 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
@@ -232,11 +232,11 @@ The following table lists the members exposed by the **PackageException** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

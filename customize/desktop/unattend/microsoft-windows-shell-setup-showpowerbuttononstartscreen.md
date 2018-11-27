@@ -40,12 +40,12 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The default value of **ShowWindowsStoreAppsOnTaskbar** depends on the selected power platform role.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -80,9 +80,9 @@ The following XML output shows how to show the Power Options button on the Start
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

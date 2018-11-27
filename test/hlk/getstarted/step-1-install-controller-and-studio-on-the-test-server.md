@@ -24,7 +24,7 @@ The test server should be preinstalled with Windows Server 2012, Windows Server
 
 If you are upgrading your HLK environment to a later version, you must first uninstall the previous version of the HCK or HLK software from the test server and any connected test clients.
 
- 
+ 
 
 ## <span id="To_install_Windows_HLK__do_the_following_"></span><span id="to_install_windows_hlk__do_the_following_"></span><span id="TO_INSTALL_WINDOWS_HLK__DO_THE_FOLLOWING_"></span>To install Windows HLK, do the following:
 
@@ -51,7 +51,7 @@ If you are upgrading your HLK environment to a later version, you must first uni
 
 5.  When the **Join the Customer Experience Improvement Program (CEIP)** screen appears, choose **Yes** or **No**, and then choose **Next**. If your network isn't connected to the Internet, choose **No**.
 
-     
+     
 
 6.  Review the License Agreement, and then choose **Accept** to proceed.
 
@@ -71,9 +71,9 @@ If you are upgrading your HLK environment to a later version, you must first uni
 
 [Install standalone HLK Studio](../user/install-standalone-hlk-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

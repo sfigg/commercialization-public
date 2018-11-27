@@ -48,7 +48,7 @@ The value of that DWORD specifies which settings are to be consumed by the apple
 | Edgy Enable/Disable | 0x00000002 | Optional           |
 | Scroll Direction    | 0x00000004 | Optional           |
 
- 
+ 
 
 For example, for a device that has HWID (ACPI\\MSFT0001) to opt in to just enable/disable and scroll direction, it would create a DWORD as follows:
 
@@ -61,7 +61,7 @@ If a modern touchpad with HWID (HID\\VID\_045E&PID\_003F&REV\_03FF) wanted to op
 **Note**  
 If you import or export from the registry, the “\\” will be duplicated as “\\\\” because this is a delimiting character. If you paste by using the Registry Editor, ignore the extra delimiter.
 
- 
+ 
 
 ```
 Windows Registry Editor Version 5.00
@@ -116,7 +116,7 @@ When that event occurs, the touchpad applet shall read each of the following val
 </tbody>
 </table>
 
- 
+ 
 
 **HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\PrecisionTouchPad\\**
 
@@ -153,12 +153,12 @@ When that event occurs, the touchpad applet shall read each of the following val
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The values that are named in the preceding tables should only be read and never overwritten by the opt-in entity; see the following section about third-party touchpad control panels.
 
- 
+ 
 
 ## <a href="" id="third-party-touchpad-control-panels-"></a>Third-party touchpad control panels
 
@@ -170,9 +170,9 @@ Any touchpad setting that has been opted in by the helper application can be dis
 
 If the touchpad helper application that handles the settings changes is uninstalled, the uninstall procedure should remove the opt-in that was specified under **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\PrecisionTouchPad\\LegacyControlled\\**.
 
- 
+ 
 
- 
+ 
 
 
 

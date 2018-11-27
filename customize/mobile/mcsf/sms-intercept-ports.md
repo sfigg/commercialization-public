@@ -80,7 +80,7 @@ This customization supports: **per-SIM** value
     **Caution**  
     Any port number can be configured except for 2948, which is the standard port of a WAP push.
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator partner to correctly test this customization on their network.

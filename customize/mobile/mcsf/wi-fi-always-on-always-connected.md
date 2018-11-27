@@ -87,7 +87,7 @@ Partners can use the **LowPowerSupported** and **AlwaysOnAlwaysConnected** setti
     </tbody>
     </table>
 
-     
+     
 
 4.  To specify whether Wi-Fi should remain on when the screen times out, configure the value for `AlwaysOnAlwaysConnected` to one of the following values:
 
@@ -114,7 +114,7 @@ Partners can use the **LowPowerSupported** and **AlwaysOnAlwaysConnected** setti
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device that is connected to a Wi-Fi network.

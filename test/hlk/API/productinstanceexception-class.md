@@ -38,7 +38,7 @@ This exception class is defined to handle target-specific errors. Every time a n
 
 `Public Class ProductInstanceException`
 
-          `Inherits ProjectManagerException`
+          `Inherits ProjectManagerException`
 
 **C#**
 
@@ -51,20 +51,20 @@ This exception class is defined to handle target-specific errors. Every time a n
 
 **System.Object**
 
-     **System.Exception**
+     **System.Exception**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.ProjectManagerException**
 
-                    **Microsoft.Windows.Kits.Hardware.ObjectModel.ProductInstanceException**
+                    **Microsoft.Windows.Kits.Hardware.ObjectModel.ProductInstanceException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

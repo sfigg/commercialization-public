@@ -29,30 +29,30 @@ This section includes topics that describe how to perform specific tasks by usin
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Windows Performance Step-by-Step Guide](windows-performance-recorder-step-by-step-guide.md)</p></td>
+<td><p><a href="windows-performance-recorder-step-by-step-guide.md" data-raw-source="[Windows Performance Step-by-Step Guide](windows-performance-recorder-step-by-step-guide.md)">Windows Performance Step-by-Step Guide</a></p></td>
 <td><p>Install and configure Windows Assessment Services and the Windows ASC. Assess multiple computers and then review the results.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Start a Recording](start-a-recording.md)</p></td>
+<td><p><a href="start-a-recording.md" data-raw-source="[Start a Recording](start-a-recording.md)">Start a Recording</a></p></td>
 <td><p>Prepare and add a bare metal computer to your Windows Assessment Services inventory. Create a project and job that includes the computer, and also the image and unattend answer file that are used to deploy an image to that computer before it is assessed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Stop a Recording](stop-a-recording.md)</p></td>
+<td><p><a href="stop-a-recording.md" data-raw-source="[Stop a Recording](stop-a-recording.md)">Stop a Recording</a></p></td>
 <td><p>Add test computers, images and unattend answer files to inventory, and add out-of-box drivers to the driver store.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Windows Assessment Services Technical Reference](../assessments/windows-assessment-services-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

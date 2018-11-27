@@ -40,9 +40,9 @@ This constructor initializes a new instance of the **PackageException** class.
 
 `Public Sub New ( _`
 
-          `info As SerializationInfo, _`
+          `info As SerializationInfo, _`
 
-          `context As StreamingContext _`
+          `context As StreamingContext _`
 
 `)`
 
@@ -50,9 +50,9 @@ This constructor initializes a new instance of the **PackageException** class.
 
 `protected PackageException (`
 
-          `SerializationInfo info`
+          `SerializationInfo info`
 
-          `StreamingContext context`
+          `StreamingContext context`
 
 `)`
 
@@ -61,15 +61,15 @@ This constructor initializes a new instance of the **PackageException** class.
 
 *info*
 
-     The serialization info.
+     The serialization info.
 
 *context*
 
-     The streaming context.
+     The streaming context.
 
- 
+ 
 
- 
+ 
 
 
 

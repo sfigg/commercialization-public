@@ -23,12 +23,12 @@ Describes the configuration to enable the kernel-mode provider. The system provi
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<**SystemProvider**\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<[SystemCollectorId](systemcollectorid.md)\>
-          * \<**SystemProvider**\>
+  * \<[Profiles](profiles.md)\>
+    * \<**SystemProvider**\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<[SystemCollectorId](systemcollectorid.md)\>
+          * \<**SystemProvider**\>
 
 
 ## Syntax

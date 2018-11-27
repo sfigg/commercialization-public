@@ -44,7 +44,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -79,9 +79,9 @@ The following XML output shows how to enable a friend or a support professional 
 
 [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md)
 
- 
+ 
 
- 
+ 
 
 
 

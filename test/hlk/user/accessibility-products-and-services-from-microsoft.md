@@ -26,15 +26,15 @@ Microsoft is committed to making its products and services easier for everyone t
 
 -   [For More Information](for-more-information.md)
 
->[!NOTE]
->  
-The information in this section may apply only to users who license Microsoft products in the United States. If you obtained this product outside of the United States, you can use the subsidiary information card that came with your software package or visit the Microsoft Accessibility Web site for a list of Microsoft support services telephone numbers and addresses. You can contact your subsidiary to find out whether the type of products and services described in this section are available in your area. Information about accessibility is available in other languages, including Japanese and French.
+> [!NOTE]
+> 
+> The information in this section may apply only to users who license Microsoft products in the United States. If you obtained this product outside of the United States, you can use the subsidiary information card that came with your software package or visit the Microsoft Accessibility Web site for a list of Microsoft support services telephone numbers and addresses. You can contact your subsidiary to find out whether the type of products and services described in this section are available in your area. Information about accessibility is available in other languages, including Japanese and French.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

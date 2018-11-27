@@ -69,7 +69,7 @@ See [DISM Capabilities Package Servicing Command-Line Options](dism-capabilities
 -   Use the `/online` option to add the capability to your PC.
 -   Use `/Image:\<mount path>` with the `/source` option to add the capability to a mounted Windows image.
 
- 
+ 
 | Command | Description | Example |
 | --- | --- | --- |
 | /add-capability | <p>Adds a capability to an image.</p><p>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech.</p>DISM looks for source files in the following locations:<ol><li>If **/Source** is specified, DISM looks in the specified locations first.</li><li>If **/Source** is not specified, or if the source files are not found in the specified locations, DISM checks the locations specified by group policy.</li><li>If the files still aren't found, and if DISM is running against an online image, and if **/LimitAccess** is not specified, it looks for the files on Windows Update.</li></ol> | `DISM.exe /image:C:\mount\Windows /add-capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0 /Source:E:` <p>`DISM.exe /Online /add-capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0` |

@@ -63,7 +63,7 @@ The following metrics are reported by the OOBE Performance assessment.
 </tbody>
 </table>
 
- 
+ 
 
 ## Issues
 
@@ -81,9 +81,9 @@ A recommended approach to identifying the sources of performance issues in OOBE 
 
 [Windows Assessment Toolkit](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

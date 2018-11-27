@@ -39,7 +39,7 @@ Browser Help Objects are add-on modules used to add functionality to Internet Ex
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to specify a GUID for two Internet Explorer B
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

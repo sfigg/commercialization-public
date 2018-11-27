@@ -37,7 +37,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 Do not create a value for `Size` that entirely fills or exceeds the available space, because Windows reserves a small amount of space to manage partitions. For example, if you create an extended partition with 2000 MB, and you create two logical partitions with the size of 1000 MB each inside that partition, the second partition is not created. An error is logged, and installation is terminated.
@@ -48,7 +48,7 @@ Do not create a value for `Size` that entirely fills or exceeds the available sp
 
 -   Do not set both CreatePartition:`Size` and CreatePartition:[Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md). If a value for `Size` is specified and CreatePartition:`Extend` is set to **true**, no partition is created. An error is logged, and installation is terminated.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -274,9 +274,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [How to Configure More than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
 
- 
+ 
 
- 
+ 
 
 
 

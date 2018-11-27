@@ -60,43 +60,43 @@ The following tables list the methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[UWF_Volume.AddExclusion](uwf-volumeaddexclusion.md)</p></td>
+<td><p><a href="uwf-volumeaddexclusion.md" data-raw-source="[UWF_Volume.AddExclusion](uwf-volumeaddexclusion.md)">UWF_Volume.AddExclusion</a></p></td>
 <td><p>Adds a file or folder to the file exclusion list for a volume protected byUWF.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Volume.CommitFile](uwf-volumecommitfile.md)</p></td>
+<td><p><a href="uwf-volumecommitfile.md" data-raw-source="[UWF_Volume.CommitFile](uwf-volumecommitfile.md)">UWF_Volume.CommitFile</a></p></td>
 <td><p>Commits changes from the overlay to the physical volume for a specified file on a volume protected by Unified Write Filter (UWF).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Volume.CommitFileDeletion](uwf-volumecommitfiledeletion.md)</p></td>
+<td><p><a href="uwf-volumecommitfiledeletion.md" data-raw-source="[UWF_Volume.CommitFileDeletion](uwf-volumecommitfiledeletion.md)">UWF_Volume.CommitFileDeletion</a></p></td>
 <td><p>Deletes a protected file from the volume, and commits the deletion to the physical volume.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Volume.FindExclusion](uwf-volumefindexclusion.md)</p></td>
+<td><p><a href="uwf-volumefindexclusion.md" data-raw-source="[UWF_Volume.FindExclusion](uwf-volumefindexclusion.md)">UWF_Volume.FindExclusion</a></p></td>
 <td><p>Determines whether a specific file or folder is in the exclusion list for a volume protected byUWF.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Volume.GetExclusions](uwf-volumegetexclusions.md)</p></td>
+<td><p><a href="uwf-volumegetexclusions.md" data-raw-source="[UWF_Volume.GetExclusions](uwf-volumegetexclusions.md)">UWF_Volume.GetExclusions</a></p></td>
 <td><p>Retrieves a list of all file exclusions for a volume protected byUWF.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Volume.Protect](uwf-volumeprotect.md)</p></td>
+<td><p><a href="uwf-volumeprotect.md" data-raw-source="[UWF_Volume.Protect](uwf-volumeprotect.md)">UWF_Volume.Protect</a></p></td>
 <td><p>Protects the volume after the next system restart, if UWF is enabled after the restart.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Volume.RemoveAllExclusions](uwf-volumeremoveallexclusions.md)</p></td>
+<td><p><a href="uwf-volumeremoveallexclusions.md" data-raw-source="[UWF_Volume.RemoveAllExclusions](uwf-volumeremoveallexclusions.md)">UWF_Volume.RemoveAllExclusions</a></p></td>
 <td><p>Removes all files and folders from the file exclusion list for a volume protected byUWF.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Volume.RemoveExclusion](uwf-volumeremoveexclusion.md)</p></td>
+<td><p><a href="uwf-volumeremoveexclusion.md" data-raw-source="[UWF_Volume.RemoveExclusion](uwf-volumeremoveexclusion.md)">UWF_Volume.RemoveExclusion</a></p></td>
 <td><p>Removes a specific file or folder from the file exclusion list for a volume protected byUWF.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_Volume.SetBindByDriveLetter](uwf-volumesetbindbydriveletter.md)</p></td>
+<td><p><a href="uwf-volumesetbindbydriveletter.md" data-raw-source="[UWF_Volume.SetBindByDriveLetter](uwf-volumesetbindbydriveletter.md)">UWF_Volume.SetBindByDriveLetter</a></p></td>
 <td><p>Sets the <strong>BindByDriveLetter</strong> property, which indicates whether the UWF volume is bound to the physical volume by drive letter or by volume name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_Volume.Unprotect](uwf-volumeunprotect.md)</p></td>
+<td><p><a href="uwf-volumeunprotect.md" data-raw-source="[UWF_Volume.Unprotect](uwf-volumeunprotect.md)">UWF_Volume.Unprotect</a></p></td>
 <td><p>Disables UWF protection of the volume after the next system restart.</p></td>
 </tr>
 </tbody>
@@ -157,7 +157,7 @@ The following tables list the methods and properties that belong to this class.
 <td><p><strong>VolumeName</strong></p></td>
 <td><p>string</p></td>
 <td><p>[key, read]</p></td>
-<td><p>The unique identifier of the volume on the current system. The <strong>VolumeName</strong> is the same as the <strong>DeviceID</strong> property of the [Win32_Volume](http://go.microsoft.com/fwlink/p/?LinkId=275634) class for the volume.</p></td>
+<td><p>The unique identifier of the volume on the current system. The <strong>VolumeName</strong> is the same as the <strong>DeviceID</strong> property of the <a href="http://go.microsoft.com/fwlink/p/?LinkId=275634" data-raw-source="[Win32_Volume](http://go.microsoft.com/fwlink/p/?LinkId=275634)">Win32_Volume</a> class for the volume.</p></td>
 </tr>
 </tbody>
 </table>

@@ -28,7 +28,7 @@ WSPC is designed to achieve a better customer experience:
 
 Microsoft requires that all OEM retail firmware packages (BSP submissions) conform to the WSPC. While there are no exceptions to this policy, Microsoft has included tools and processes to ease the your transition to WSPC compliance.
 
- 
+ 
 
 ## <span id="WSPC_overview"></span><span id="wspc_overview"></span><span id="WSPC_OVERVIEW"></span>WSPC overview
 
@@ -113,7 +113,7 @@ After a baseline firmware submission has been declared, subsequent firmware subm
 
 **Important**  Special care must be taken when targeting firmware submissions for multiple POPs with different baselines. Achieving WSPC compliance across **all baselines** can be difficult.
 
- 
+ 
 
 The WSPC compliance check will ensure that the package set of the new firmware version contains the same packages as the previous baseline or is a superset of the previous baseline. Consider the following package sets as an example:
 
@@ -357,12 +357,12 @@ The standard validation rules are listed below:
 | 8   | PhoneManufacturerModelName  | OEM device name must be alphanumerical with -.\_ and less than or equal to 32 characters. |
 | 9   | PhoneMobileOperatorName     | Mobile operator name must conform to XXX-XX format.                                       |
 
- 
+ 
 
 **Note**  Firmware created through the Qualcomm Windows Phone Customization Tool (QWPCT) will automatically conform to the standard
 compliance rules above.
 
- 
+ 
 
 ### <span id="merged"></span><span id="MERGED"></span>Building merged packages
 
@@ -436,7 +436,7 @@ Alternately, you can generate an empty package for the partition targeted by the
 <td>1</td>
 <td>Any WPIC command</td>
 <td>The Windows Phone Ingestion Client version you are using (Version {0}) is no longer supported. Please make sure you are using the current version of the Windows Phone Ingestion Client, Version {1}.</td>
-<td>Download and install the latest Windows Phone Ingestion Client from [Microsoft Connect](https://connect.microsoft.com).</td>
+<td>Download and install the latest Windows Phone Ingestion Client from <a href="https://connect.microsoft.com" data-raw-source="[Microsoft Connect](https://connect.microsoft.com)">Microsoft Connect</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -456,13 +456,13 @@ Alternately, you can generate an empty package for the partition targeted by the
 <tr class="even">
 <td>4</td>
 <td>Firmware submission</td>
-<td>To be WSPC-compliant, you cannot remove a package. The following packages were removed '{0}'.</td>
+<td>To be WSPC-compliant, you cannot remove a package. The following packages were removed &#39;{0}&#39;.</td>
 <td>Ensure the missing package (or empty package as appropriate) is included in the submission to be WSP-compliant.</td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>Firmware submission</td>
-<td>Using a cached package list for validation because a connection to the server cannot be established. '{0}'</td>
+<td>Using a cached package list for validation because a connection to the server cannot be established. &#39;{0}&#39;</td>
 <td>Ensure the Image Validation tool or Windows Phone Ingestion Client have access to Microsoft’s code signing and publishing systems.</td>
 </tr>
 <tr class="even">
@@ -510,7 +510,7 @@ Alternately, you can generate an empty package for the partition targeted by the
 <tr class="odd">
 <td>13</td>
 <td>Firmware submission</td>
-<td>Could not get baseline package lists online for validation because connection to server cannot be established. Error: '{0}'</td>
+<td>Could not get baseline package lists online for validation because connection to server cannot be established. Error: &#39;{0}&#39;</td>
 <td>Ensure the Image Validation tool or Windows Phone Ingestion Client have access to Microsoft’s code signing and publishing systems.</td>
 </tr>
 <tr class="even">
@@ -528,7 +528,7 @@ Alternately, you can generate an empty package for the partition targeted by the
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 

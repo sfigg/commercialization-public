@@ -33,37 +33,37 @@ These settings only apply to Windows 8.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[BytesDecryptedInDiskRequestOverhead](microsoft-windows-securestartup-filterdriver-bytesdecryptedindiskrequestoverhead.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-bytesdecryptedindiskrequestoverhead.md" data-raw-source="[BytesDecryptedInDiskRequestOverhead](microsoft-windows-securestartup-filterdriver-bytesdecryptedindiskrequestoverhead.md)">BytesDecryptedInDiskRequestOverhead</a></p></td>
 </tr>
 <tr class="even">
-<td><p>[MaxCryptoRequestsPerIo](microsoft-windows-securestartup-filterdriver-maxcryptorequestsperio.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-maxcryptorequestsperio.md" data-raw-source="[MaxCryptoRequestsPerIo](microsoft-windows-securestartup-filterdriver-maxcryptorequestsperio.md)">MaxCryptoRequestsPerIo</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[MaxDecryptRequests](microsoft-windows-securestartup-filterdriver-maxdecryptrequests.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-maxdecryptrequests.md" data-raw-source="[MaxDecryptRequests](microsoft-windows-securestartup-filterdriver-maxdecryptrequests.md)">MaxDecryptRequests</a></p></td>
 </tr>
 <tr class="even">
-<td><p>[MaxEncryptRequests](microsoft-windows-securestartup-filterdriver-maxencryptrequests.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-maxencryptrequests.md" data-raw-source="[MaxEncryptRequests](microsoft-windows-securestartup-filterdriver-maxencryptrequests.md)">MaxEncryptRequests</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriver-preventdeviceencryption.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-preventdeviceencryption.md" data-raw-source="[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriver-preventdeviceencryption.md)">PreventDeviceEncryption</a></p></td>
 </tr>
 <tr class="even">
-<td><p>[SlicedEncryptionInPlace](microsoft-windows-securestartup-filterdriver-slicedencryptioninplace.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-slicedencryptioninplace.md" data-raw-source="[SlicedEncryptionInPlace](microsoft-windows-securestartup-filterdriver-slicedencryptioninplace.md)">SlicedEncryptionInPlace</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[SlicedEncryptionMinSize](microsoft-windows-securestartup-filterdriver-slicedencryptionminsize.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-slicedencryptionminsize.md" data-raw-source="[SlicedEncryptionMinSize](microsoft-windows-securestartup-filterdriver-slicedencryptionminsize.md)">SlicedEncryptionMinSize</a></p></td>
 </tr>
 <tr class="even">
-<td><p>[SlicedEncryptionRequestsMax](microsoft-windows-securestartup-filterdriver-slicedencryptionrequestsmax.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-slicedencryptionrequestsmax.md" data-raw-source="[SlicedEncryptionRequestsMax](microsoft-windows-securestartup-filterdriver-slicedencryptionrequestsmax.md)">SlicedEncryptionRequestsMax</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[WriteIoAggregateMaxSize](microsoft-windows-securestartup-filterdriver-writeioaggregatemaxsize.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-writeioaggregatemaxsize.md" data-raw-source="[WriteIoAggregateMaxSize](microsoft-windows-securestartup-filterdriver-writeioaggregatemaxsize.md)">WriteIoAggregateMaxSize</a></p></td>
 </tr>
 <tr class="even">
-<td><p>[WriteIoAggregateMinSize](microsoft-windows-securestartup-filterdriver-writeioaggregateminsize.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-writeioaggregateminsize.md" data-raw-source="[WriteIoAggregateMinSize](microsoft-windows-securestartup-filterdriver-writeioaggregateminsize.md)">WriteIoAggregateMinSize</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[WriteSubrequestLength](microsoft-windows-securestartup-filterdriver-writesubrequestlength.md)</p></td>
+<td><p><a href="microsoft-windows-securestartup-filterdriver-writesubrequestlength.md" data-raw-source="[WriteSubrequestLength](microsoft-windows-securestartup-filterdriver-writesubrequestlength.md)">WriteSubrequestLength</a></p></td>
 </tr>
 </tbody>
 </table>

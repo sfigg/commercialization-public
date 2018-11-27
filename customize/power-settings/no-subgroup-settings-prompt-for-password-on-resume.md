@@ -20,7 +20,7 @@ Specifies whether the user must enter a password at the secure desktop when the 
 
 **Note**  All Windows desktop editions have this setting enabled by default. This is a change from Windows 8.1 and earlier which had the setting disabled by default on some editions.
 
- 
+ 
 
 ## <span id="Aliases_and_setting_visibility"></span><span id="aliases_and_setting_visibility"></span><span id="ALIASES_AND_SETTING_VISIBILITY"></span>Aliases and setting visibility
 
@@ -63,7 +63,7 @@ Specifies whether the user must enter a password at the secure desktop when the 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

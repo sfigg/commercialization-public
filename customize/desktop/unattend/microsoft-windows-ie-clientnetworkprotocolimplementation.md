@@ -33,7 +33,7 @@ The Microsoft-Windows-IE-ClientNetworkProtocolImplementation component contains 
 | [HKLMProxyServer](microsoft-windows-ie-clientnetworkprotocolimplementation-hklmproxyserver.md) | Specifies the IP address or the host name of the proxy server on the network for all users on the computer. |
 | [HKLMReceiveTimeOut](microsoft-windows-ie-clientnetworkprotocolimplementation-hklmreceivetimeout.md) | Specifies the number of milliseconds to wait for data to be received over the network for all users on the computer. |
 | [HKLMSendTimeOut](microsoft-windows-ie-clientnetworkprotocolimplementation-hklmsendtimeout.md) | Specifies the number of milliseconds to wait for to wait for data to be sent over the network for all users on the computer. |
- 
+ 
 ## Applies To
 
 To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/configure-components-and-settings-in-an-answer-file).

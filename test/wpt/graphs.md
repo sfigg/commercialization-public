@@ -88,9 +88,9 @@ The following illustration is an example of a generic events graph.
 
 [WPA Features](wpa-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

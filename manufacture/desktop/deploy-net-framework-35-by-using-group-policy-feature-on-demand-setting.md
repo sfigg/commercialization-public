@@ -40,7 +40,7 @@ Windows Server Update Services (WSUS) is not supported as a source for FoD or fe
 
 For Windows 8 and Windows Server 2012, WSUS is not supported as a source for feature installation (for example, adding .NET Framework 3.5 feature files) or feature file store repair operations. WSUS core scenarios include centralized update management and patch management automation, which enables administrators to manage the distribution of updates that are released through Microsoft Update to computers in their network. FoD and feature file store repair rely on download of individual files to perform update or repair operations. For example, if a single file becomes corrupted, then only that file (which could be as small as a few kilobytes) is downloaded from the repair source. WSUS can use either full or express files to perform servicing update operations; however, these files are not compatible with FoD or feature file store repair.
 
- 
+ 
 
 If an alternate source path is used to repair images, consider the following guidelines:
 
@@ -57,9 +57,9 @@ If an alternate source path is used to repair images, consider the following gui
 
 [Microsoft .NET Framework 3.5 Deployment Considerations](microsoft-net-framework-35-deployment-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -103,11 +103,11 @@ Windows expects each sensor device or the sensor microcontroller to have three d
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  In the preceding table, the term standby refers to a device power mode that is distinct from modern standby, which is a platform-wide power state.
 
- 
+ 
 
 ## Software power-management mechanisms
 
@@ -155,7 +155,7 @@ The two options for connecting to a sensor or sensor microcontroller are compare
 </tbody>
 </table>
 
- 
+ 
 
 For the HIDI2C option, the optional sensor microcontroller is physically connected to the SoC or core silicon through an I2C bus. The microcontroller exposes multiple top-level HID collections, one for each logical sensor device. For example, a compass sensor can be exposed through HID as a logical sensor device that is an aggregation of the accelerometer, gyrometer, and magnetometer sensors behind the sensor microcontroller.
 
@@ -191,7 +191,7 @@ Third-party sensor drivers are expected to be built by using the Windows Driver 
 **Note**  The driver must save all sensor device context before the device enters D3, and must restore all sensor device context after the device enters D0.
 If the sensor hardware has a standby power consumption of greater than one milliwatt, the sensor driver must perform a D3 transition and allow ACPI control methods to remove power from the sensor device. The sensor driver must save all required sensor device state so that power can be removed from the device during D3. The sensor hardware vendor should collaborate closely with the system integrator to ensure that the sensor hardware and driver performs the D3 transition reliably and quickly.
 
- 
+ 
 
 When the platform exits modern standby, the sensor driver must transition the sensor hardware back to the idle (not-in-use) mode. As system services resume, Windows will request the use of sensors, such as rotation and ambient light, that are needed to perform system functions. As applications resume, they might request sensor information. If the sensor hardware requires an in-band message to return the device to the idle mode, the device driver should send this message as soon as the first request for sensor information is sent. If the sensor hardware requires a GPIO line to signal the device to return to the idle state, the driver must use this GPIO line to perform a transition to D0 as soon as the first request for sensor information is provided. In this case, ACPI control methods (for example, \_PS0) should toggle the GPIO line as required to initiate the transition. Finally, if the sensor hardware previously required a transition to the power-removed mode because the power consumption in standby mode exceeds one milliwatt, the sensor driver must perform a transition to D0 and allow ACPI control methods to restore power to the device.
 
@@ -337,9 +337,9 @@ System integrators and sensor device vendors should use the following checklist 
 -   Measure the power consumption of the sensor hardware in the standby or power-removed mode.
 -   Initiate multiple transitions into and out of modern standby, and then stress-test the operation of the sensor devices and the applications that use sensor information when the display is turned on.
 
- 
+ 
 
- 
+ 
 
 
 

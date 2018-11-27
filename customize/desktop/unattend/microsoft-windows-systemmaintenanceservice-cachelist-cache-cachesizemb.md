@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 The maximum cache size on a device partition formatted as FAT32 is 4096 MB, which is equal to 4 gigabytes (GB). To use a larger cache size, use a partition formatted as NTFS or exFAT. For information about reformatting a partition using NTFS, see [Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md).
 
- 
+ 
 
 ## Values
 
@@ -41,7 +41,7 @@ The maximum cache size on a device partition formatted as FAT32 is 4096 MB, whi
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -88,9 +88,9 @@ The following XML output example shows a configuration of two ReadyBoost devices
 
 [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)
 
- 
+ 
 
- 
+ 
 
 
 

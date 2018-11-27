@@ -61,9 +61,9 @@ The following usages are optional, but you should implement them if the digitize
 
 For a sample touch descriptor, see [Sample Report Descriptor for a Touch Digitizer Device](sample-report-descriptor-for-a-touch-digitizer-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

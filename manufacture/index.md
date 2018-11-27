@@ -33,13 +33,13 @@ Use the manufacturing tools to deploy your Windows [customizations](https://msdn
 | [Desktop manufacturing](desktop/index.md) | Technical reference for Windows 10 for desktop editions |
 | [Mobile manufacturing](mobile/index.md) | Technical reference for Windows 10 Mobile |
 | [IoT Core manufacturing](iot/index.md) | Technical reference for Windows 10 IoT Core |
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

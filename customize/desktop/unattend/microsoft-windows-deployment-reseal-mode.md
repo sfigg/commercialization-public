@@ -49,11 +49,10 @@ ms.topic: article
 <td><p><strong>Audit</strong></p></td>
 <td><p><strong>true</strong></p></td>
 <td><div class="alert">
-<strong>Caution</strong>  
-<p>Unsupported. Do not use. Sets the computer into a loop of reboots.</p>
+<strong>Caution</strong><br/><p>Unsupported. Do not use. Sets the computer into a loop of reboots.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -145,17 +144,16 @@ ms.topic: article
 <td><p><strong>OOBE</strong></p></td>
 <td><p><strong>true</strong></p></td>
 <td><div class="alert">
-<strong>Caution</strong>  
-<p>Unsupported. Do not use. Sets the computer into a loop of reboots.</p>
+<strong>Caution</strong><br/><p>Unsupported. Do not use. Sets the computer into a loop of reboots.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Values
 
@@ -178,14 +176,14 @@ ms.topic: article
 <td><p>(no value / default)</p></td>
 <td><ul>
 <li><p>During the <strong>auditSystem</strong> configuration pass, if <code>Mode</code> is not specified, then <code>Mode</code> defaults to <strong>Audit</strong>.</p></li>
-<li><p>During the <strong>auditUser</strong> configuration pass, if <code>Mode</code> is not specified, then the computer shows the Sysprep tool's user interface (UI), prompting the user to select between <strong>Audit</strong> or <strong>OOBE</strong> mode.</p></li>
+<li><p>During the <strong>auditUser</strong> configuration pass, if <code>Mode</code> is not specified, then the computer shows the Sysprep tool&#39;s user interface (UI), prompting the user to select between <strong>Audit</strong> or <strong>OOBE</strong> mode.</p></li>
 <li><p>During the <strong>oobeSystem</strong> configuration pass, if <code>Mode</code> is not specified, then <code>Mode</code> defaults to <strong>OOBE</strong>.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 
@@ -232,9 +230,9 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [ForceShutdownNow](microsoft-windows-deployment-reseal-forceshutdownnow.md)
 
- 
 
- 
+
+
 
 
 

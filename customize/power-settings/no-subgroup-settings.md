@@ -47,21 +47,21 @@ Settings in this subgroup do not belong to any other subgroup.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Device idle policy](no-subgroup-settings-device-idle-policy.md)</p></td>
+<td><p><a href="no-subgroup-settings-device-idle-policy.md" data-raw-source="[Device idle policy](no-subgroup-settings-device-idle-policy.md)">Device idle policy</a></p></td>
 <td><p>Determines whether conservation idle timeouts or performance idle timeouts are used for devices that are integrated with Windows kernel power manager device idle detection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Prompt for password on resume](no-subgroup-settings-prompt-for-password-on-resume.md)</p></td>
+<td><p><a href="no-subgroup-settings-prompt-for-password-on-resume.md" data-raw-source="[Prompt for password on resume](no-subgroup-settings-prompt-for-password-on-resume.md)">Prompt for password on resume</a></p></td>
 <td><p>Specifies whether the user must enter a password at the secure desktop when the system resumes from sleep.</p>
 <div class="alert">
 <strong>Note</strong>  All Windows desktop editions have this setting enabled by default. This is a change from Windows 8.1 and earlier which had the setting disabled by default on some editions.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>[Allow networking during standby](no-subgroup-settings-allow-networking-during-standby.md)</p></td>
+<td><p><a href="no-subgroup-settings-allow-networking-during-standby.md" data-raw-source="[Allow networking during standby](no-subgroup-settings-allow-networking-during-standby.md)">Allow networking during standby</a></p></td>
 <td><p>Specifies whether to allow networking during standby.</p></td>
 </tr>
 </tbody>

@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 ## <span id="Overload_List"></span><span id="overload_list"></span><span id="OVERLOAD_LIST"></span>Overload List
 
@@ -36,21 +36,21 @@ ms.topic: article
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AddTests Method (IEnumerable{TestDefinition})](iruntests-addtests-method--ienumerable-testdefinition--.md)</p></td>
-<td><p>For the [TestDefinition](testdefinition-class.md)s given, add new test instances.</p></td>
+<td><p><a href="iruntests-addtests-method--ienumerable-testdefinition--.md" data-raw-source="[AddTests Method (IEnumerable{TestDefinition})](iruntests-addtests-method--ienumerable-testdefinition--.md)">AddTests Method (IEnumerable{TestDefinition})</a></p></td>
+<td><p>For the <a href="testdefinition-class.md" data-raw-source="[TestDefinition](testdefinition-class.md)">TestDefinition</a>s given, add new test instances.</p></td>
 </tr>
 <tr class="even">
-<td><p>[AddTests Method (IEnumerable{TestDefinition}, bool)](iruntests-addtests-method--ienumerable-testdefinition---bool-.md)</p></td>
-<td><p>For the [TestDefinition](testdefinition-class.md)s given, add new test instances.</p></td>
+<td><p><a href="iruntests-addtests-method--ienumerable-testdefinition---bool-.md" data-raw-source="[AddTests Method (IEnumerable{TestDefinition}, bool)](iruntests-addtests-method--ienumerable-testdefinition---bool-.md)">AddTests Method (IEnumerable{TestDefinition}, bool)</a></p></td>
+<td><p>For the <a href="testdefinition-class.md" data-raw-source="[TestDefinition](testdefinition-class.md)">TestDefinition</a>s given, add new test instances.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

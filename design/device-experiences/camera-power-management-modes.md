@@ -61,17 +61,17 @@ The off-System on a Chip (SoC) components of the camera subsystem must support t
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Windows expects the transition time from the active mode to the power-removed mode (the off latency) to be less than 100 milliseconds. Most power management effort is focused on reducing the transition time from power-removed mode to active mode (the on latency).
 
- 
+ 
 
 The same two power management modes, active and power-removed, must be supported by the on-SoC image processing units. The SoC vendor defines the individual components that comprise the image processing units and their power management states. We recommend that a single driver control the on-SoC image processing units, and that all the image processing units for camera capture be presented to the power engine plug-in (PEP) as a single power-managed component.
 
- 
+ 
 
- 
+ 
 
 
 

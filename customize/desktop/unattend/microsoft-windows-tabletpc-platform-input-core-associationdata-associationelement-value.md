@@ -25,7 +25,7 @@ This setting requires the string values of: *DigitizerPattern*, *AdapterPattern*
 **Note**  
 Some portions of these patterns may change depending on installation order. For best results, only use portions of the string that are unique to the device.
 
- 
+ 
 
 An association is made between the digitizer and monitor if:
 
@@ -53,7 +53,7 @@ The combination of *AdapterPattern* and *MonitorPattern* match exactly one monit
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -82,7 +82,7 @@ For the Tablet PC monitor in this example, the DeviceString is "MONITOR\\FAB1234
 **Note**  
 In Windows System Image Manager, you can enter values with quotation marks. In the XML, the quotation marks are replaced with `&quot;`.
 
- 
+ 
 
 ```
 <AssociationData>
@@ -98,9 +98,9 @@ In Windows System Image Manager, you can enter values with quotation marks. In t
 
 [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)
 
- 
+ 
 
- 
+ 
 
 
 

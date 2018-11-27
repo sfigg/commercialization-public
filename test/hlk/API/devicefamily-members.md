@@ -36,17 +36,17 @@ The following tables list the members exposed by the **DeviceFamily** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceFamily.HardwareIds Property](devicefamilyhardwareids-property.md)</p></td>
+<td><p><a href="devicefamilyhardwareids-property.md" data-raw-source="[DeviceFamily.HardwareIds Property](devicefamilyhardwareids-property.md)">DeviceFamily.HardwareIds Property</a></p></td>
 <td><p>This property represents a collection of hardware IDs used to identify the test targets in this device family.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DeviceFamily.Name Property](devicefamilyname-property.md)</p></td>
+<td><p><a href="devicefamilyname-property.md" data-raw-source="[DeviceFamily.Name Property](devicefamilyname-property.md)">DeviceFamily.Name Property</a></p></td>
 <td><p>This property represents the name of this <strong>DeviceFamily</strong> object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -64,7 +64,7 @@ The following tables list the members exposed by the **DeviceFamily** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceFamily.AddHardwareId Method](devicefamilyaddhardwareid-method.md)</p></td>
+<td><p><a href="devicefamilyaddhardwareid-method.md" data-raw-source="[DeviceFamily.AddHardwareId Method](devicefamilyaddhardwareid-method.md)">DeviceFamily.AddHardwareId Method</a></p></td>
 <td><p>This method adds a new hardware Id to this <strong>DeviceFamily</strong> object.</p></td>
 </tr>
 <tr class="even">
@@ -72,11 +72,11 @@ The following tables list the members exposed by the **DeviceFamily** type.
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DeviceFamily.FindDeviceFamilyFromId Method](devicefamilyfinddevicefamilyfromid-method.md)</p></td>
+<td><p><a href="devicefamilyfinddevicefamilyfromid-method.md" data-raw-source="[DeviceFamily.FindDeviceFamilyFromId Method](devicefamilyfinddevicefamilyfromid-method.md)">DeviceFamily.FindDeviceFamilyFromId Method</a></p></td>
 <td><p>This method retrieves a device family for the given hardware Id.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DeviceFamily.GetDeviceFamilyFromId Method](devicefamilygetdevicefamilyfromid-method.md)</p></td>
+<td><p><a href="devicefamilygetdevicefamilyfromid-method.md" data-raw-source="[DeviceFamily.GetDeviceFamilyFromId Method](devicefamilygetdevicefamilyfromid-method.md)">DeviceFamily.GetDeviceFamilyFromId Method</a></p></td>
 <td><p>This method retrieves a device family for the given hardware ID.</p></td>
 </tr>
 <tr class="odd">
@@ -94,7 +94,7 @@ The following tables list the members exposed by the **DeviceFamily** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -122,11 +122,11 @@ The following tables list the members exposed by the **DeviceFamily** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -132,7 +132,7 @@ To help system designers diagnose and evaluate system thermal behavior, Windows 
 
 **Event logs**
 
-Windows records important thermal information in the event logs. This information can be used to quickly triage thermal conditions on any PC running Windows 8 or later without the need for additional tracing or tools. The following table contains the full list.
+Windows records important thermal information in the event logs. This information can be used to quickly triage thermal conditions on any PC running Windows 8 or later without the need for additional tracing or tools. The following table contains the full list.
 
 <table>
 <colgroup>
@@ -174,7 +174,7 @@ Windows records important thermal information in the event logs. This informatio
 </tbody>
 </table>
 
- 
+
 
 *Critical event notification*
 
@@ -220,15 +220,17 @@ In the event of a critical shutdown or hibernate caused by thermal conditions, t
     </tbody>
     </table>
 
-     
 
-    The following thermal event types are defined in the Ntpoapi.h header file:
 
-    ```ManagedCPlusPlus
-    // // Thermal event types // #define THERMAL_EVENT_SHUTDOWN     0 #define THERMAL_EVENT_HIBERNATE    1 #define THERMAL_EVENT_UNSPECIFIED  0xffffffff
-    ```
+~~~
+The following thermal event types are defined in the Ntpoapi.h header file:
 
-    Hardware platforms should use the thermal event interface only if thermal solutions other than Windows thermal management framework are used. This interface allows the operating system to gather information when a critical shutdown occurs due to thermal reasons.
+```ManagedCPlusPlus
+// // Thermal event types // #define THERMAL_EVENT_SHUTDOWN     0 #define THERMAL_EVENT_HIBERNATE    1 #define THERMAL_EVENT_UNSPECIFIED  0xffffffff
+```
+
+Hardware platforms should use the thermal event interface only if thermal solutions other than Windows thermal management framework are used. This interface allows the operating system to gather information when a critical shutdown occurs due to thermal reasons.
+~~~
 
 ### <a href="" id="perf-counters"></a>
 
@@ -261,7 +263,7 @@ Performance counters offer a real-time information on the thermal behavior of th
 </tbody>
 </table>
 
- 
+
 
 This information is polled only when requested — for example, by [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) or by the [typeperf](http://technet.microsoft.com/library/bb490960.aspx) command-line tool.
 
@@ -298,7 +300,7 @@ Include "Microsoft-Windows-Thermal-Polling" to enable polling of the temperature
 | 0x8  | 5 minutes         |
 | 0x10 | 30 minutes        |
 
- 
+
 
 *Processor utility*
 
@@ -338,9 +340,9 @@ The following screenshot shows a graph of temperature over time for five thermal
 
 ![a graph of temperature over time for five thermal zones](../images/thermal-guide17.png)
 
- 
 
- 
+
+
 
 
 

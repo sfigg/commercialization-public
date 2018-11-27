@@ -47,7 +47,7 @@ Suppresses the status indicator that displays during the OS loading phase.
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -77,9 +77,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

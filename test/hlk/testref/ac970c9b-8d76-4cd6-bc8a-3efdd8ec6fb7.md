@@ -19,6 +19,7 @@ ms.topic: article
 This test verifies that target devices with thin provisioning feature meet Windows requirements.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Storage.Hd.ThinProvisioning.BasicFunction</li></ul> |  
@@ -31,7 +32,7 @@ This test verifies that target devices with thin provisioning feature meet Windo
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -50,7 +51,7 @@ Before you run the test, please make sure the thin provisioned LUN to be online 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Storage Testing](troubleshooting-devicestorage-testing.md).
 
@@ -74,17 +75,17 @@ The end to end scenario test would do threshold and resource exhaustion test. Th
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Thinprovision.exe /scenario exhaustion /thindisk &quot;[TPDiskDeviceObjLink]&quot; /percent "[TPDiskThresholdPercent]" /logo</strong></p></td>
+<td><p><strong>Thinprovision.exe /scenario exhaustion /thindisk &quot;[TPDiskDeviceObjLink]&quot; /percent &quot;[TPDiskThresholdPercent]&quot; /logo</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -102,12 +103,12 @@ For command-line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>Thinprovision.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\driverstest\storage\wdk\thinprovision\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\driverstest\storage\wdk\thinprovision&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -120,11 +121,11 @@ For command-line help for this test binary, type **/h**.
 | **Destructive**            | (0,1) 0=Passive, 1=Destructive         |
 | **TPDiskThresholdPercent** | The percentage of thin provisioned LUN |
 
- 
 
- 
 
- 
+
+
+
 
 
 

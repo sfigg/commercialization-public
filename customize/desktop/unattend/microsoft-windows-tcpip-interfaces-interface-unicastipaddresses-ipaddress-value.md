@@ -82,12 +82,12 @@ If the routing prefix length is not defined, the default routing prefix length w
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md) to the unattended installation answer file.
 
- 
+ 
 
 ## Values
 
@@ -107,7 +107,7 @@ This element does not appear in the **Properties** pane of Windows System Image 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -163,9 +163,9 @@ The following XML output shows how to configure a single TCP/IP address. In this
 
 [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

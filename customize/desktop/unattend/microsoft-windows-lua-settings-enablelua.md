@@ -42,7 +42,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output specifies that Windows does not notify the user when pr
 
 [Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

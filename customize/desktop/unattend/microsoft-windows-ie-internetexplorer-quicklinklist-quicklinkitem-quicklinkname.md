@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 
 [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)
 
- 
+ 
 
- 
+ 
 
 
 

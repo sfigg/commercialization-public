@@ -19,9 +19,9 @@ A test server has two parts: Windows HLK Controller and [Windows HLK Studio](hlk
 
 One controller governs a collection of client computers. Controllers can manage and access only the client computers that they govern.
 
- 
+ 
 
- 
+ 
 
 
 

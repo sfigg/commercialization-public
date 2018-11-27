@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This method is being deprecated. Please use [CreateTarget(IEnumerable&lt;TargetData&gt;)](targetfamilycreatetarget-method--ienumerable-.md) instead.
 
- 
+ 
 
 Creates multiple targets from a collection of [TargetData](targetdata-class.md), and adds it to the target family.
 
@@ -33,9 +33,9 @@ Creates multiple targets from a collection of [TargetData](targetdata-class.md),
 
 `public virtual void CreateTarget (`
 
-          `IEnumerable<TargetData> targets, `
+          `IEnumerable<TargetData> targets, `
 
-          ` bool createWithoutAddingTests`
+          ` bool createWithoutAddingTests`
 
 `)`
 
@@ -62,9 +62,9 @@ This is not supported when the project is connected to a package.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,7 +38,7 @@ This constructor initializes a new instance of the **DataIntegrityException** cl
 
 `Public Sub New ( _`
 
-          `message As String _`
+          `message As String _`
 
 `)`
 
@@ -46,13 +46,13 @@ This constructor initializes a new instance of the **DataIntegrityException** cl
 
 `public DataIntegrityException (`
 
-          `string message`
+          `string message`
 
 `)`
 
- 
+ 
 
- 
+ 
 
 
 

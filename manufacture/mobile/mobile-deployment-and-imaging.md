@@ -46,9 +46,9 @@ This mobile deployment and imaging guide is organized based on the two ways that
 
     Use the Windows Provisioning answer file (WPAF) to configure customization settings that are only available through the Windows Provisioning framework. Use the WPAF with an MCSF CAF as inputs to the Windows Imaging and Configuration Designer (ICD) command-line interface to build a customized mobile image.
 
- 
+ 
 
- 
+ 
 
 
 

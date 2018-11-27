@@ -47,7 +47,7 @@ This customization supports: **per-IMSI** value
                          Description="Use to customize the settings for Video over LTE."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -57,7 +57,7 @@ This customization supports: **per-IMSI** value
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -66,7 +66,7 @@ This customization supports: **per-IMSI** value
         <Settings Path="AutoDataConfig">
           <Setting Name="Enable" Value="0" />
         </Settings>
-        
+
         <!-- Add the resource-only dll file and language MUI packages if you are using Windows Phone 8.1 GDR1 and later versions of the OS -->
         <Settings Path="Localization/MUI">  
           <!-- Use to add your base MUI DLL file -->
@@ -85,7 +85,7 @@ This customization supports: **per-IMSI** value
         <TargetRefs>
           <TargetRef Id="" /> 
         </TargetRefs>
-     
+
         <Settings Path="Phone/PerSimSettings/$(__IMSI)">  
           <Setting Name="ShowVideoCallingSwitch" Value="" />
           <Setting Name="DefaultEnableVideoCalling" Value="" /> 
@@ -102,7 +102,7 @@ This customization supports: **per-IMSI** value
           <Setting Name="VideoCallingLabel" Value="" />
           <Setting Name="VideoCallingDescription" Value="" />
           <Setting Name="LowVideoQualityTimeout" Value="" />
-          
+
           <-- If you enable video conferencing, you can also specify the number of participants that can be added to the conference call -->
           <Setting Name="ConferenceCallMaximumPartyCount" Value="" />
 
@@ -167,187 +167,191 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
 
-    **Note**  
-    This setting does not set the default switch value. To do that, set `DefaultEnableVideoCalling`.
 
-     
+~~~
+**Note**  
+This setting does not set the default switch value. To do that, set `DefaultEnableVideoCalling`.
+~~~
 
-7.  To set the initial default value for the LTE video calling switch, set `DefaultEnableVideoCalling` to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>Sets the LTE video calling switch to Off.</p>
-    <p>This is the default OS value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>Sets the LTE video calling switch to On.</p></td>
-    </tr>
-    </tbody>
-    </table>
 
-     
+7. To set the initial default value for the LTE video calling switch, set `DefaultEnableVideoCalling` to one of the following values:
 
-8.  To set the initial value for LTE video capability sharing, set `DefaultEnableVideoCapability` to one of the following values:
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Value</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>0 or 'False'</p></td>
+   <td><p>Sets the LTE video calling switch to Off.</p>
+   <p>This is the default OS value.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>1 or 'True'</p></td>
+   <td><p>Sets the LTE video calling switch to On.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>Sets the LTE video capability sharing to Off.</p>
-    <p>This is the default OS value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>Sets the LTE video capability sharing to On.</p></td>
-    </tr>
-    </tbody>
-    </table>
 
-     
 
-9.  To specify whether to show the video capability sharing switch on the phone **Settings** screen, set `ShowVideoCapabilitySwitch` to one of the following values:
+8. To set the initial value for LTE video capability sharing, set `DefaultEnableVideoCapability` to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>Hides the video capability sharing switch.</p>
-    <p>This is the default OS value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>Shows the video capability sharing switch.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Value</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>0 or 'False'</p></td>
+   <td><p>Sets the LTE video capability sharing to Off.</p>
+   <p>This is the default OS value.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>1 or 'True'</p></td>
+   <td><p>Sets the LTE video capability sharing to On.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+
+
+9. To specify whether to show the video capability sharing switch on the phone **Settings** screen, set `ShowVideoCapabilitySwitch` to one of the following values:
+
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Value</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>0 or 'False'</p></td>
+   <td><p>Hides the video capability sharing switch.</p>
+   <p>This is the default OS value.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>1 or 'True'</p></td>
+   <td><p>Shows the video capability sharing switch.</p></td>
+   </tr>
+   </tbody>
+   </table>
+
+
 
 10. To enable LTE video calls to be merged into a conference call, set `AllowVideoConferencing` to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>Disables LTE video calls from being merged into a conference call.</p>
-    <p>This is the default OS value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>Enables LTE video calls to be merged into a conference call.</p>
-    <p>If you are enabling LTE video calls, you can also specify the maximum number of participants or callers that can be added to the video conference by setting <code>ConferenceCallMaximumPartyCount</code>. For more information, see [Maximum number of participants in a VoLTE conference call](maximum-number-of-participants-in-a-volte-conference-call.md).</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Value</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>0 or &#39;False&#39;</p></td>
+   <td><p>Disables LTE video calls from being merged into a conference call.</p>
+   <p>This is the default OS value.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>1 or &#39;True&#39;</p></td>
+   <td><p>Enables LTE video calls to be merged into a conference call.</p>
+   <p>If you are enabling LTE video calls, you can also specify the maximum number of participants or callers that can be added to the video conference by setting <code>ConferenceCallMaximumPartyCount</code>. For more information, see <a href="maximum-number-of-participants-in-a-volte-conference-call.md" data-raw-source="[Maximum number of participants in a VoLTE conference call](maximum-number-of-participants-in-a-volte-conference-call.md)">Maximum number of participants in a VoLTE conference call</a>.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
 
-    If this setting is not enabled, the conference option in the UI will never be available. It will always show up as disabled (greyed out).
 
-    **Note**  
-    Video conference support is dependent on support by the mobile operator and the device chipset.
+~~~
+If this setting is not enabled, the conference option in the UI will never be available. It will always show up as disabled (greyed out).
 
-     
+**Note**  
+Video conference support is dependent on support by the mobile operator and the device chipset.
+~~~
+
+
 
 11. To show or hide the video charges dialog that is displayed when the user turns on the LTE video calling switch, set `SupressVideoCallingChargesDialog` to one of the following values:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Value</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>0 or 'False'</p></td>
-    <td><p>Shows the video calling charges dialog.</p>
-    <p>This is the default OS value.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>1 or 'True'</p></td>
-    <td><p>Hides the video calling charges dialog.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Value</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p>0 or 'False'</p></td>
+   <td><p>Shows the video calling charges dialog.</p>
+   <p>This is the default OS value.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>1 or 'True'</p></td>
+   <td><p>Hides the video calling charges dialog.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+
 
 12. To set the time, in milliseconds, to wait for the response to the request to transition a VoLTE call to video, set `VideoTransitionTimeout`. You can set the value to a number between 10000 and 30000, inclusive. If you set the value to 0, the OS uses the default value of 30000 (30 seconds).
 
-    An alert tone is played multiple times during this request. Each alert tone will be played in 10 second increments. The number of alert tones is determined by the request time out value divided by 10. For example:
+   An alert tone is played multiple times during this request. Each alert tone will be played in 10 second increments. The number of alert tones is determined by the request time out value divided by 10. For example:
 
-    -   If you set the value to 30000 (or 30 seconds), the alert tone will play three times at 0, 10 and 20 seconds, and then 10 seconds later the request will time out.
+   -   If you set the value to 30000 (or 30 seconds), the alert tone will play three times at 0, 10 and 20 seconds, and then 10 seconds later the request will time out.
 
-    -   If you set the value to 25000 (or 25 seconds), the alert tone will play three times at 0, 10, and 20 seconds, then 5 seconds later the request will time out.
+   -   If you set the value to 25000 (or 25 seconds), the alert tone will play three times at 0, 10, and 20 seconds, then 5 seconds later the request will time out.
 
 13. To customize the name or label of the LTE video calling switch and the description for the switch, set the value for the following settings:
 
-    1.  To customize the switch name or label, set the `VideoCallingLabel` value to the name of the resource-only .dll file and specify the string offset. For example: *@DisplayStrings.dll,-101*.
+   1. To customize the switch name or label, set the `VideoCallingLabel` value to the name of the resource-only .dll file and specify the string offset. For example: <em>@DisplayStrings.dll,-101</em>.
 
-        Replace *DisplayStrings.dll* with the name of your .dll file and replace *Offset* with the correct offset for the localized string.
+      Replace *DisplayStrings.dll* with the name of your .dll file and replace *Offset* with the correct offset for the localized string.
 
-    2.  To customize the switch description, set the `VideoCallingDescription` value to the name of the resource-only .dll file and specify the string offset. For example: *@DisplayStrings.dll,-102*.
+   2. To customize the switch description, set the `VideoCallingDescription` value to the name of the resource-only .dll file and specify the string offset. For example: <em>@DisplayStrings.dll,-102</em>.
 
-        Replace *DisplayStrings.dll* with the name of your .dll file and replace *Offset* with the correct offset for the localized string.
+      Replace *DisplayStrings.dll* with the name of your .dll file and replace *Offset* with the correct offset for the localized string.
 
 14. To set the timer, in milliseconds, to automatically drop video support from an active video call when the video calling quality is low, set `LowVideoQualityTimeout`. This will transition the call to a VoLTE call. Set the value to a number between 0 and 120000, inclusive.
 
-    A value of 0 disables the timer. This is also the OS default value.
+   A value of 0 disables the timer. This is also the OS default value.
 
-    **Note**  
-    Support for this feature is dependent on support by the mobile operator and the chipset.
+   **Note**  
+   Support for this feature is dependent on support by the mobile operator and the chipset.
 
-     
+
 
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device.

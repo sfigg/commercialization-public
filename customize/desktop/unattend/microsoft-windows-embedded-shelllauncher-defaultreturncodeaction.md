@@ -57,7 +57,7 @@ When a custom shell exits, shell launcher can perform one of four actions, based
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -86,9 +86,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

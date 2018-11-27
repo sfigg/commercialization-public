@@ -47,7 +47,7 @@ Here's a screenshot from the test, showing a passing result.
 
 **Note**  If this is a re-certification, this test will fail and should be manually verified by entering the following command: **GetThqaBlob.exe –usage=TouchPad -verifyCertified**
 
- 
+ 
 
 **Common error messages**
 
@@ -57,9 +57,9 @@ Here's a screenshot from the test, showing a passing result.
 
 -   1/1 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

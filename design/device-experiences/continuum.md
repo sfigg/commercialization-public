@@ -30,7 +30,7 @@ Tablet mode is a feature that switches your device experience from tablet mode t
 | **Tablets**                                                                    | **Detachables**                                                | **Convertibles**                                             |
 | Pure tablets and devices that can dock to external monitor + keyboard + mouse. | Tablet-like devices with custom designed detachable keyboards. | Laptop-like devices with keyboards that fold or swivel away. |
 
- 
+ 
 
 When the device switches to tablet mode, the following occur:
 
@@ -77,7 +77,7 @@ If you are creating a driver that uses the injection interface, you will still n
 
 **Note**  When the device boots, the “GPIO Laptop and Slate indicator driver” first initializes in “slate” mode. Thus, it’s important for your injection driver to check the operating system state to ensure that it is in sync with the system’s actual state immediately after the device boots.
 
- 
+ 
 
 Your SOC IHV partner may already offer a driver or other solution that injects the state transition into Microsoft’s inbox driver. If that’s the case, you can save time and effort by leveraging your IHV’s solution according to their particular guidelines.
 
@@ -87,7 +87,7 @@ If your device is not a 2-in-1 device, for example a regular laptop or desktop, 
 
 **Note**  It is also recommended that you specify the type of form factor you are building using the [DeviceForm](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform) setting in your answer file.
 
- 
+ 
 
 ## Test your device
 
@@ -152,7 +152,7 @@ In addition, when a 2-in-1 device changes from clamshell to tablet, the keyboard
 </tbody>
 </table>
 
- 
+ 
 
 ## Unattend Settings
 
@@ -174,24 +174,24 @@ The following unattend settings are useful if you are designing for a tablet mod
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ConvertibleSlateMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode)</p></td>
-<td><p>With the [ConvertibleSlateMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode) setting, you specify the physical ability of the device, which impacts physical behaviors of the device (such as rotation and onscreen keyboard), and you help define the appropriate first use experience that will be presented to an end user. If you specify laptop mode, an end user can type on a physical keyboard. If you specify tablet mode, an end user cannot type on a physical keyboard, because the keyboard is removed or the keyboard is flipped back so that it is inaccessible.</p></td>
+<td><p><a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode" data-raw-source="[ConvertibleSlateMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode)">ConvertibleSlateMode</a></p></td>
+<td><p>With the <a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode" data-raw-source="[ConvertibleSlateMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode)">ConvertibleSlateMode</a> setting, you specify the physical ability of the device, which impacts physical behaviors of the device (such as rotation and onscreen keyboard), and you help define the appropriate first use experience that will be presented to an end user. If you specify laptop mode, an end user can type on a physical keyboard. If you specify tablet mode, an end user cannot type on a physical keyboard, because the keyboard is removed or the keyboard is flipped back so that it is inaccessible.</p></td>
 <td><ul>
 <li><p>0 – Tablet, convertible, or detachable (default)</p></li>
 <li><p>1 – Laptop</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>[ConvertibleSlateModePromptPreference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference)</p></td>
-<td><p>With the [ConvertibleSlateModePromptPreference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference) setting, you can specify whether to prompt the user to enter or exit tablet mode. The device form factor or product design will influence whether you choose to show the prompt. If you choose to hide the prompt, the mode is not switched. (That is, if tablet mode is on, it stays on, and if tablet mode is off, it stays off.) If you want the prompt to appear when the hardware event occurs, you need to implement a hardware or software solution to toggle this setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference" data-raw-source="[ConvertibleSlateModePromptPreference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference)">ConvertibleSlateModePromptPreference</a></p></td>
+<td><p>With the <a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference" data-raw-source="[ConvertibleSlateModePromptPreference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-convertibleslatemodepromptpreference)">ConvertibleSlateModePromptPreference</a> setting, you can specify whether to prompt the user to enter or exit tablet mode. The device form factor or product design will influence whether you choose to show the prompt. If you choose to hide the prompt, the mode is not switched. (That is, if tablet mode is on, it stays on, and if tablet mode is off, it stays off.) If you want the prompt to appear when the hardware event occurs, you need to implement a hardware or software solution to toggle this setting.</p></td>
 <td><ul>
 <li><p>0 – Disabled; the prompt does not appear, and the UI does not switch modes</p></li>
 <li><p>1 – Enabled (default); the prompt appears, and the UI switches modes if the user consents</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>[SignInMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-signinmode)</p></td>
-<td><p>You use the [SignInMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-signinmode) setting to specify whether to set the display to tablet mode or to desktop mode after a user logs on. If you do not explicitly set this value, the default is tablet if the screen size is less than 10 inches and your preferred power management profile (power platform role) is slate (that is, a tablet form factor). Otherwise, the default is the last setting used. If there is no previous setting, the last setting used is considered to be desktop.</p></td>
+<td><p><a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-signinmode" data-raw-source="[SignInMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-signinmode)">SignInMode</a></p></td>
+<td><p>You use the <a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-signinmode" data-raw-source="[SignInMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-shell-signinmode)">SignInMode</a> setting to specify whether to set the display to tablet mode or to desktop mode after a user logs on. If you do not explicitly set this value, the default is tablet if the screen size is less than 10 inches and your preferred power management profile (power platform role) is slate (that is, a tablet form factor). Otherwise, the default is the last setting used. If there is no previous setting, the last setting used is considered to be desktop.</p></td>
 <td><ul>
 <li><p>0 – Tablet (default if the screen size is less than 10 inches and the power platform role is slate)</p></li>
 <li><p>1 – Desktop</p></li>
@@ -199,8 +199,8 @@ The following unattend settings are useful if you are designing for a tablet mod
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>[DeviceForm](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform)</p></td>
-<td><p>You specify the [DeviceForm](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform) setting so that a variety of apps (for example, Bing and Cortana) can determine the correct content for the specified device form factor. You also use this setting for features such as retail demo mode to specify the most suitable demo content for the device type.</p></td>
+<td><p><a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform" data-raw-source="[DeviceForm](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform)">DeviceForm</a></p></td>
+<td><p>You specify the <a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform" data-raw-source="[DeviceForm](https://msdn.microsoft.com/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-deployment-deviceform)">DeviceForm</a> setting so that a variety of apps (for example, Bing and Cortana) can determine the correct content for the specified device form factor. You also use this setting for features such as retail demo mode to specify the most suitable demo content for the device type.</p></td>
 <td><p>There are 30 possible values. The primary values are listed below:</p>
 <ul>
 <li><p>0 – Unknown (default)</p></li>
@@ -213,7 +213,7 @@ The following unattend settings are useful if you are designing for a tablet mod
 </tbody>
 </table>
 
- 
+ 
 
 ## Behavior of "tablet mode"
 
@@ -293,7 +293,7 @@ The APIs allows both Windows desktop applications and Universal Windows apps to 
 | [**UserInteractionMode**](https://msdn.microsoft.com/library/windows/hardware/dn708109_userinteractionmode) | Property of GetForWindow that takes a value in the Windows.UI.ViewManagement.UserInteractionMode enum, the allowed values of which are Touch and Mouse.                         |
 | WM\_SETTINGSCHANGE                                                      | Apps are notified when the current input state changes by broadcasting WM\_SETTINGSCHANGE with “UserInteractionMode”.                                                           |
 
- 
+ 
 
 **Universal Windows apps APIs**
 
@@ -303,7 +303,7 @@ The APIs allows both Windows desktop applications and Universal Windows apps to 
 | [**UserInteractionMode**](https://msdn.microsoft.com/library/windows/hardware/dn708109_userinteractionmode) | Property of UIViewSettings that takes a value in the Windows.UI.ViewManagement.UserInteractionMode enum, the allowed values of which are Touch and Mouse.                       |
 | SizeChanged                                                             | Event is triggered when the current input state changes. Apps should query for this event.                                                                                      |
 
- 
+ 
 
 **Example 1: Optimize layout on app launch**
 

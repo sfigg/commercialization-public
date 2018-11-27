@@ -27,7 +27,7 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
     md E:\images
 
     Dism /Export-Image /SourceImageFile:"D:\sources\install.wim" /SourceIndex:2 /DestinationImageFile:"E:\Images\install.wim"
-	```
+    ```
 
 	where D: is the drive from the Windows ISO and E: is the USB storage drive. 
 
@@ -92,7 +92,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
     ```
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
-	```
+    ```
 
 ## <span id="Apply_the_recovery_image"></span>Step 5: Set up the system recovery tools
 

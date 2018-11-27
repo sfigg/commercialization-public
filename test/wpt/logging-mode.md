@@ -30,7 +30,7 @@ Logging to file is typically used for short recordings for which you can anticip
 **Caution**  
 To limit file size, choose **Memory**. When logging to file, available disk space is the only limitation to file size. If the file is too large, you might not be able to analyze it in Windows Performance Analyzer (WPA).
 
- 
+ 
 
 When you author custom recording profiles, you must define both a file and a memory version in the same recording profile definition (.wprp) file. When you select a profile for a recording, you must select either the file or memory version to use for that recording event. For examples of custom profiles, see [3. Profile Definitions](3-profile-definitions.md).
 
@@ -63,7 +63,7 @@ Number of Buffers       : 613
 **Note**  
 WPR supports only single-value *NumberOfBuffers*. It does not support minimum and maximum buffers.
 
- 
+ 
 
 General guidelines about how to set buffers are as follows:
 
@@ -88,9 +88,9 @@ For more guidance about buffers, see [Sessions (Windows Drivers)](http://go.micr
 
 [Change the Logging Mode](change-the-logging-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ To start a command that needs to finish before other commands can start, use syn
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -98,9 +98,9 @@ The following XML output shows how to set synchronous commands.
 
 [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

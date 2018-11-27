@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This method is being deprecated. Please use [CreateTarget(IEnumerable&lt;TargetData&gt;)](targetfamilycreatetarget-method--ienumerable-.md) instead.
 
- 
+ 
 
 Creates a target from a Target data, and adds it to the target family.
 
@@ -33,9 +33,9 @@ Creates a target from a Target data, and adds it to the target family.
 
 ` public abstract Target CreateTarget (`
 
-          `TargetData target,`
+          `TargetData target,`
 
-          ` bool createWithoutAddingTests`
+          ` bool createWithoutAddingTests`
 
 `)`
 
@@ -65,9 +65,9 @@ This is not supported when the project is connected to a package.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

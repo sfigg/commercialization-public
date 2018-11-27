@@ -25,7 +25,7 @@ ms.topic: article
 
 -   The value for `Key` is added to the answer file as an attribute of the [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md) element. The attribute `wcm:keyValue` is used to identify each unique association. For example, you can specify three different associations by using the `Key` values of **Monitor1**, **Monitor2**, and **Monitor3**.
 
- 
+ 
 
 ## Values
 
@@ -38,12 +38,12 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique key for the [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique key for the <a href="microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md" data-raw-source="[AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)">AssociationElement</a>. <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -81,9 +81,9 @@ The following XML output shows how to configure `AssociationElement` to associat
 
 [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)
 
- 
+ 
 
- 
+ 
 
 
 

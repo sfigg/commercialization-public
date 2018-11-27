@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -92,9 +92,9 @@ The following XML output shows how to set fax settings.
 
 [FaxUnattend](microsoft-windows-fax-service-faxunattend.md)
 
- 
+ 
 
- 
+ 
 
 
 

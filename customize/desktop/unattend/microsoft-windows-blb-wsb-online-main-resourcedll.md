@@ -39,7 +39,7 @@ For information about how to create localized versions for these settings, see t
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -97,9 +97,9 @@ The following XML output shows how to describe a recommended online backup servi
 
 [ProviderName](microsoft-windows-blb-wsb-online-main-providername.md)
 
- 
+ 
 
- 
+ 
 
 
 

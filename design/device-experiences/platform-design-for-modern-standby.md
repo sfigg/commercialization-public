@@ -53,7 +53,7 @@ Here are some additional platform requirements for enabling modern standby on Wi
 -   Windows supports a platform exposing either the S3 object or the ACPI\_S0\_LOW\_POWER\_IDLE FADT flag, but not both at the same time.
     **Note**  The FADT bit takes precedence over an S3 object.
 
-     
+     
 
 -   For non-Intel based platforms, the core silicon or SoC manufacturer must provide a power engine plug-in (PEP) that coordinates device state and processor idle state dependencies. A minimal PEP is required to communicate to Windows when the device power state dependencies have been achieved for the lowest SoC idle power mode.
 -   x86/x64-based modern connected standby PCs must also support Hibernate. Hibernate is used to save the state of desktop/Win32 applications when critical-low battery capacity is reached.
@@ -72,7 +72,7 @@ To support modern connected standby, a PC platform must meet the technical requi
 <tr class="header">
 <th>Topics</th>
 <th>Description</th>
-<th>Who's responsible?</th>
+<th>Who&#39;s responsible?</th>
 </tr>
 </thead>
 <tbody>
@@ -101,11 +101,11 @@ To support modern connected standby, a PC platform must meet the technical requi
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

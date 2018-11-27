@@ -46,7 +46,7 @@ For information about finding the path and GUID for your icon, see the MSDN topi
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -82,9 +82,9 @@ The following XML output shows how to promote a new notification-area icon to be
 
 [GUID](microsoft-windows-shell-setup-notificationarea-promotedicon2-guid.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,20 +36,20 @@ The rules for determining whether two targets are similar include:
 
 -   Drivers must match
 
->[!NOTE]
->  
-When there are multiple secondary matched targets on the same system, the target check box activation is retained from the previously displayed dialog for the same targets. This causes secondary targets to be grayed out. You can activate the grayed-out secondary targets by selecting and then de-selecting the checkbox for these targets.
+> [!NOTE]
+> 
+> When there are multiple secondary matched targets on the same system, the target check box activation is retained from the previously displayed dialog for the same targets. This causes secondary targets to be grayed out. You can activate the grayed-out secondary targets by selecting and then de-selecting the checkbox for these targets.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Configuration Page - Distributed and Multi-Device Options](configuration-page---distributed-and-multi-device-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

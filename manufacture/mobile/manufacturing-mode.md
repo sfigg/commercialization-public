@@ -32,7 +32,7 @@ You must create a subkey for each manufacturing profile. Under the profile key, 
 
 **Note**  The \* wildcard only applies to Win32 services, excluding kernel-mode drivers.
 
- 
+ 
 
 The following example creates a manufacturing profile named CustomProfile, causes the service named OEMFactoryTestService to automatically start, and all other Win32 services to demand start:
 
@@ -52,9 +52,9 @@ The manufacturing profile name must be less than 64 characters.
 
 You cannot use **Current** for the name of your manufacturing profile. This name is reserved for the currently active manufacturing profile.
 
- 
+ 
 
- 
+ 
 
 
 

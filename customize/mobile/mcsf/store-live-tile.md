@@ -77,7 +77,7 @@ Regardless of the default Store live tile settings, users have the option of cha
     </tbody>
     </table>
 
-     
+     
 
 4.  To set the default value for **Live Tile** **Only update the tile when I'm on Wi-Fi** option in the Microsoft Store **Settings** screen, set `OemMoLiveTileOptInToCellularAfterStoreLaunch` to one of the following values:
 
@@ -106,7 +106,7 @@ Regardless of the default Store live tile settings, users have the option of cha
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a phone.

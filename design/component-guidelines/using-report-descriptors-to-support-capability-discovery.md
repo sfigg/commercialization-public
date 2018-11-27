@@ -89,7 +89,7 @@ The Device Mode usage (0x52) can have one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 When single-input mode is set, vendors may do one of the following:
 
@@ -115,9 +115,9 @@ When the usage is part of a device settings logical collection, it is a dynamic 
 
 If your device includes a digitizer that provides both Windows Touch and pen functionality, you must report touch and pen collections separately. If your driver might be installed on a slate Tablet PC or other computer that has no mouse, you should also report a mouse collection.
 
- 
+ 
 
- 
+ 
 
 
 

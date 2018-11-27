@@ -53,7 +53,7 @@ When a metric value is compared to the goal for that metric, the status is color
 **Note**  
 In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
- 
+ 
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -70,7 +70,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 **Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+ 
 
 ## <a href="" id="bkmk-iestartupmetrics"></a>Metrics
 
@@ -80,7 +80,7 @@ This section describes the metrics reported by the Internet Explorer Startup ass
 **Note**  
 The top-level **IE Startup Duration** metric is comprehensive and includes tasks that run after the process, frame, and tab are created.
 
- 
+ 
 
 -   [Create Internet Explorer Process](#bkmkl-createieprocess)
 
@@ -97,7 +97,7 @@ The top-level **IE Startup Duration** metric is comprehensive and includes tasks
 **Note**  
 If you enabled the Enable Minifilter Diagnostic Mode setting, the assessment results will include minifilter metrics. For more information about minifilter metrics and results, see [Minifilter Diagnostics](minifilter-diagnostics.md).
 
- 
+ 
 
 ### <a href="" id="bkmkl-createieprocess"></a>Create Internet Explorer Process
 
@@ -188,7 +188,7 @@ An extension should not do very much during this stage, therefore any non-trivia
     **Note**  
     This should not be done for any Windows APIs that are called depending on which version of Windows is running; those should always be delay loaded. For instance, if an extension uses DirectWrite for text rendering and uses GDI as a fallback, then it should not statically link to dwrite.dll. Doing so can completely prevent it from loading on earlier versions of Windows.
 
-     
+     
 
 **Additional Information**
 
@@ -235,7 +235,7 @@ If the extension is running UI rendering code, for example WM\_PAINT, it may be 
     **Warning**  
     This will temporarily disable all painting for the window. This should be used carefully; if it is used incorrectly, it can cause problems that are difficult to debug.
 
-     
+     
 
 2.  Next, create and add the child windows or content.
 
@@ -277,9 +277,9 @@ To resolve this issue, do one of the following:
 
 [On/Off Transition Performance](onoff-transition-performance.md)
 
- 
+ 
 
- 
+ 
 
 
 

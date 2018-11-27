@@ -48,37 +48,37 @@ You can download the Windows Performance Toolkit by visiting the [Windows Assess
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Windows Performance Toolkit](index.md)</p></td>
+<td><p><a href="index.md" data-raw-source="[Windows Performance Toolkit](index.md)">Windows Performance Toolkit</a></p></td>
 <td><p>Gives a general overview of both WPR and WPA.</p></td>
 </tr>
 <tr class="even">
-<td><p>[What's New in the Windows Performance Toolkit](whats-new-in-the-windows-performance-toolkit.md)</p></td>
+<td><p><a href="whats-new-in-the-windows-performance-toolkit.md" data-raw-source="[What&#39;s New in the Windows Performance Toolkit](whats-new-in-the-windows-performance-toolkit.md)">What&#39;s New in the Windows Performance Toolkit</a></p></td>
 <td><p>Describes the new features available in this release.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Performance Recorder](windows-performance-recorder.md)</p></td>
+<td><p><a href="windows-performance-recorder.md" data-raw-source="[Windows Performance Recorder](windows-performance-recorder.md)">Windows Performance Recorder</a></p></td>
 <td><p>Provides complete documentation for WPR. On MSDN, this includes a complete command-line and Extensible Markup Language (XML) reference.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Xperf Command-Line Reference](http://go.microsoft.com/fwlink/?LinkId=234381)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/?LinkId=234381" data-raw-source="[Xperf Command-Line Reference](http://go.microsoft.com/fwlink/?LinkId=234381)">Xperf Command-Line Reference</a></p></td>
 <td><p>Gives complete reference material for Xperf.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)</p></td>
+<td><p><a href="kernel-trace-control-api-reference.md" data-raw-source="[Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)">Kernel Trace Control API Reference</a></p></td>
 <td><p>Covers the Kernel Trace Control API, an extension of the ETA Event Tracing API that is supported for backward compatibility with existing scripts and profiles.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Performance Analyzer](windows-performance-analyzer.md)</p></td>
+<td><p><a href="windows-performance-analyzer.md" data-raw-source="[Windows Performance Analyzer](windows-performance-analyzer.md)">Windows Performance Analyzer</a></p></td>
 <td><p>Provides complete documentation for WPA to enable you to analyze recordings created with WPR or from the Assessment Platform.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

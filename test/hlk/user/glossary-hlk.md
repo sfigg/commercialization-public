@@ -296,9 +296,9 @@ The kit provided as part of the Windows Hardware Compatibility Program. Also kno
 
 The previous web service that supported hardware submission for Windows 7. This site is replaced by the Hardware Dashboard in the Windows Dev Center.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,7 +49,7 @@ This class represents a type of a product (for example, a printer, a scanner, an
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.ProductType**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.ProductType**
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -61,9 +61,9 @@ A product type consists of a group of features.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

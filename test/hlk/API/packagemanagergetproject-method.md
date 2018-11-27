@@ -42,7 +42,7 @@ This method retrieves a Submission from the package that matches projectName.
 
 `Public Overrides Function GetProject ( _`
 
-          `projectName As String _`
+          `projectName As String _`
 
 `) As Project`
 
@@ -50,7 +50,7 @@ This method retrieves a Submission from the package that matches projectName.
 
 `public override Project GetProject (`
 
-          `string projectName`
+          `string projectName`
 
 `) `
 
@@ -59,7 +59,7 @@ This method retrieves a Submission from the package that matches projectName.
 
 *projectName*
 
-     The name to uniquely identify the submission.
+     The name to uniquely identify the submission.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ An exception occurs if projectName is **null** or empty.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

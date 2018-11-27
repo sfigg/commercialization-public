@@ -43,7 +43,7 @@ Internet Explorer Development Tools assist Web developers with troubleshooting i
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ The following XML output shows how to disable the Internet Explorer 8 Developmen
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,7 +27,7 @@ ms.topic: article
 |:------------------------|:--------------------------------------------------------------------------------------|
 | [Key](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress-key.md) | Specifies a unique key for the IP address. |
 | [Value](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress-value.md) | Specifies the value of the IP address. |
- 
+ 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Configuration Passes

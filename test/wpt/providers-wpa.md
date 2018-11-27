@@ -65,7 +65,7 @@ The options in the following table are supported.
 </tbody>
 </table>
 
- 
+ 
 
 If no options are specified, all providers are included in the output.
 
@@ -74,9 +74,9 @@ If no options are specified, all providers are included in the output.
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

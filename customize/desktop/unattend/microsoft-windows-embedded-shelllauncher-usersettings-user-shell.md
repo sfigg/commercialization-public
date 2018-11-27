@@ -41,12 +41,12 @@ Specifies the application or executable to use as the default custom shell.
 <tbody>
 <tr class="odd">
 <td><p><em>ExecutableFileName</em></p></td>
-<td><p>Specifies the name and path, if required, of the executable to use as this user's custom shell.</p></td>
+<td><p>Specifies the name and path, if required, of the executable to use as this user&#39;s custom shell.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -81,9 +81,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

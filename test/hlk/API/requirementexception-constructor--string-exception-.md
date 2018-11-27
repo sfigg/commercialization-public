@@ -40,9 +40,9 @@ This constructor initializes a new instance of the **RequirementException** clas
 
 `Public Sub New`
 
-          `message As String _`
+          `message As String _`
 
-          `except As Exception _`
+          `except As Exception _`
 
 `)`
 
@@ -50,9 +50,9 @@ This constructor initializes a new instance of the **RequirementException** clas
 
 `Public RequirementException (`
 
-          `string message`
+          `string message`
 
-          `Exception except`
+          `Exception except`
 
 `)`
 
@@ -61,20 +61,20 @@ This constructor initializes a new instance of the **RequirementException** clas
 
 *message*
 
-     A string that represents the message for the exception.
+     A string that represents the message for the exception.
 
 *except*
 
-     An exception object.
+     An exception object.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

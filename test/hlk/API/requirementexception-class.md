@@ -38,7 +38,7 @@ This class is defined to represent exceptions related to requirements.
 
 `Public Class RequirementException`
 
-          `Inherits ProjectManagerException`
+          `Inherits ProjectManagerException`
 
 **C#**
 
@@ -51,18 +51,18 @@ This class is defined to represent exceptions related to requirements.
 
 **System.Object**
 
-     [ProjectManagerException Class](projectmanagerexception-class.md)
+     [ProjectManagerException Class](projectmanagerexception-class.md)
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.RequirementException**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.RequirementException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,22 +29,22 @@ This section covers the structures available in the Kernel Trace Control API.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[STACK_TRACING_EVENT_ID](stack-tracing-event-id.md)</p></td>
+<td><p><a href="stack-tracing-event-id.md" data-raw-source="[STACK_TRACING_EVENT_ID](stack-tracing-event-id.md)">STACK_TRACING_EVENT_ID</a></p></td>
 <td><p>Tells the kernel logger to include the call stack for the named events.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Kernel Trace Control API Reference](kernel-trace-control-api-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

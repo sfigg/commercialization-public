@@ -42,9 +42,9 @@ This method acts as an Equality operator. The method returns False if either ope
 
 `Public Shared Operator = ( _`
 
-          `first As As RoleConstraint, _`
+          `first As As RoleConstraint, _`
 
-          `second As RoleConstraint _`
+          `second As RoleConstraint _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ This method acts as an Equality operator. The method returns False if either ope
 
 `public static bool operator == (`
 
-     `RoleConstraint first,`
+     `RoleConstraint first,`
 
-     `RoleConstraint second`
+     `RoleConstraint second`
 
 `)`
 
@@ -63,11 +63,11 @@ This method acts as an Equality operator. The method returns False if either ope
 
 *first*
 
-          The first value to compare against.
+          The first value to compare against.
 
 *second*
 
-          The second value to compare against.
+          The second value to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ This method acts as an Equality operator. The method returns False if either ope
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

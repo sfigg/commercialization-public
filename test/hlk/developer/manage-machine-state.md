@@ -209,9 +209,9 @@ Write-Host ("Machine '{0}' was successfully set to Ready state" -f $machine.Name
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

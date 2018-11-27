@@ -36,9 +36,9 @@ Represents the control manager that runs a profile collection. The class impleme
 
 [Classes](classes.md)
 
- 
+ 
 
- 
+ 
 
 
 

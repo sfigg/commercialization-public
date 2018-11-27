@@ -26,7 +26,7 @@ xperf -help [<option>|<action>]
 ## Parameters
 
 
-<a href="" id="-help--option---action--"></a>**-help***\[&lt;option&gt;|&lt;action&gt;\]*  
+<a href="" id="-help--option---action--"></a>**-help**<em>\[&lt;option&gt;|&lt;action&gt;\]</em>  
 Displays Help for the specified option or action. If no option or action is specified, a list of available Help topics is displayed.
 
 ## Related topics
@@ -34,9 +34,9 @@ Displays Help for the specified option or action. If no option or action is spec
 
 [Xperf Options](xperf-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

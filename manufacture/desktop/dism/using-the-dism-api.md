@@ -46,7 +46,7 @@ You must install the Windows Assessment and Deployment Kit (Windows ADK) on you
         **Note**  
         If you don’t run from the **Deployment and Imaging Tools Environment**, you must verify that the PATH environment variable uses the location of the DISM binaries from the Windows ADK.
 
-         
+         
 
 -   You will need a supported Windows image file type, .wim, .vhd, or .vhdx, or an online installation of Windows to use the DISMAPI for servicing and management. Some operations are not valid on online images. For more information, see the [DISM API Reference](dism-api-reference.md).
 
@@ -84,9 +84,9 @@ For more information about the DISM platform and other ways to access the servic
 
 [DISM API Samples](dism-api-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,7 +49,7 @@ The value of that DWORD specifies what level of matching should be undertaken fo
 | VID/PID/REV Match  | 0x00000002 |
 | Full HWID Match    | 0x00000003 |
 
- 
+ 
 
 For example if a device with HWID (ACPI\\MSFT0001) wanted to be exactly matched based on HWID, it would specify its entry as follows:
 
@@ -71,13 +71,13 @@ HID\\VID\_045E&PID\_003F&REV\_03FF&MI\_02&COL01 0x00000002
 
 **Note**  If importing or exporting from the registry, the “\\” will be duplicated as “\\\\” since this is a delimiting character. If pasting via registry editor, ignore the extra delimiter.
 
- 
+ 
 
 `Windows Registry Editor Version 5.00``[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad\LegacyDevices] "HID\\VID_045E&PID_003F&REV_03FF"=dword:00000002`
 
- 
+ 
 
- 
+ 
 
 
 

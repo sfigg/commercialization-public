@@ -42,7 +42,7 @@ For more information on privacy concerns about error reporting, see [this Micros
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -73,9 +73,9 @@ The following XML output disables Windows Error Reporting.
 
 [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md)
 
- 
+ 
 
- 
+ 
 
 
 

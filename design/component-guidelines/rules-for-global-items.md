@@ -22,9 +22,9 @@ The following rules are established for reporting global items in descriptors.
 -   The recommended (and minimum) time stamp usage report data size is 16 bits.
 -   Reported values must always be within the logical range. The only exception is when the usage includes support for **NULL** values.
 
- 
+ 
 
- 
+ 
 
 
 

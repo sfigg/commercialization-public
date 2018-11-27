@@ -23,7 +23,7 @@ In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpan
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
- 
+ 
 
 `Logo` specifies the path of an image file that contains the logo of the Original Equipment Manufacturer (OEM) or organization that appears on the **Help and Support** home page.
 
@@ -45,7 +45,7 @@ The logo must be a .png file that has dimensions of 145 × 80 pixels.
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ The following example shows how to set a customized **Help and Support** home pa
 
 [TileColor](microsoft-windows-helpandsupport-helpandsupport-tilecolor.md)
 
- 
+ 
 
- 
+ 
 
 
 

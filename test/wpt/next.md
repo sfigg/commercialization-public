@@ -74,16 +74,16 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IEnumControlWarningInfo](ienumcontrolwarninginfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

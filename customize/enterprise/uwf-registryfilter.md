@@ -67,27 +67,27 @@ The following tables list the methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[UWF_RegistryFilter.AddExclusion](uwf-registryfilteraddexclusion.md)</p></td>
+<td><p><a href="uwf-registryfilteraddexclusion.md" data-raw-source="[UWF_RegistryFilter.AddExclusion](uwf-registryfilteraddexclusion.md)">UWF_RegistryFilter.AddExclusion</a></p></td>
 <td><p>Adds a registry key to the registry exclusion list for UWF.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_RegistryFilter.CommitRegistry](uwf-registryfiltercommitregistry.md)</p></td>
+<td><p><a href="uwf-registryfiltercommitregistry.md" data-raw-source="[UWF_RegistryFilter.CommitRegistry](uwf-registryfiltercommitregistry.md)">UWF_RegistryFilter.CommitRegistry</a></p></td>
 <td><p>Commits changes to the specified registry key and value.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_RegistryFilter.CommitRegistryDeletion](uwf-registryfiltercommitregistrydeletion.md)</p></td>
+<td><p><a href="uwf-registryfiltercommitregistrydeletion.md" data-raw-source="[UWF_RegistryFilter.CommitRegistryDeletion](uwf-registryfiltercommitregistrydeletion.md)">UWF_RegistryFilter.CommitRegistryDeletion</a></p></td>
 <td><p>Deletes the specified registry key or registry value and commits the deletion.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_RegistryFilter.FindExclusion](uwf-registryfilterfindexclusion.md)</p></td>
+<td><p><a href="uwf-registryfilterfindexclusion.md" data-raw-source="[UWF_RegistryFilter.FindExclusion](uwf-registryfilterfindexclusion.md)">UWF_RegistryFilter.FindExclusion</a></p></td>
 <td><p>Determines whether a specific registry key is excluded from being filtered by UWF.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UWF_RegistryFilter.GetExclusions](uwf-registryfiltergetexclusions.md)</p></td>
+<td><p><a href="uwf-registryfiltergetexclusions.md" data-raw-source="[UWF_RegistryFilter.GetExclusions](uwf-registryfiltergetexclusions.md)">UWF_RegistryFilter.GetExclusions</a></p></td>
 <td><p>Retrieves all registry key exclusions from a system that is protected by UWF.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_RegistryFilter.RemoveExclusion](uwf-registryfilterremoveexclusion.md)</p></td>
+<td><p><a href="uwf-registryfilterremoveexclusion.md" data-raw-source="[UWF_RegistryFilter.RemoveExclusion](uwf-registryfilterremoveexclusion.md)">UWF_RegistryFilter.RemoveExclusion</a></p></td>
 <td><p>Removes a registry key from the registry exclusion list for Unified Write Filter (UWF).</p></td>
 </tr>
 </tbody>

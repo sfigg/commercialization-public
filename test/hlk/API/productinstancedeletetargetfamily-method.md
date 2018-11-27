@@ -40,7 +40,7 @@ This method deletes a target family.
 
 `Public MustOverride Sub DeleteTargetFamily ( _`
 
-          `familyToDelete As TargetFamily _`
+          `familyToDelete As TargetFamily _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method deletes a target family.
 
 `public abstract void DeleteTargetFamily (`
 
-          `TargetFamily familyToDelete`
+          `TargetFamily familyToDelete`
 
 `)`
 
@@ -57,7 +57,7 @@ This method deletes a target family.
 
 *familyToDelete*
 
-     The **TargetFamily** to delete.
+     The **TargetFamily** to delete.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception occurs if *familyToDelete* is **null** or not valid, or if an inter
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 
