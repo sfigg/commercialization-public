@@ -62,7 +62,7 @@ Note: the version of the language components must match the version of Windows. 
 
 ## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
 
-The table below gives an overview of the types of language components that are available in Windows 10.
+The table below gives an overview of the types of language packs and components that are available in Windows 10.
 
 
 | Component | Sample file name | Dependencies |	Description |
@@ -76,7 +76,7 @@ The table below gives an overview of the types of language components that are a
 | Text-to-speech |	`Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package` |	Basic |	Enables text to speech, used by Cortana and Narrator. |
 | Speech recognition |	`Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package` |	Basic, Text-To-Speech recognition |	Recognizes voice input, used by Cortana and Windows Speech Recognition. |
 | Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package. |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
-| WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
+| Recovery / WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
  
 > [!Note] 
 > Not all language components are available for every language.
