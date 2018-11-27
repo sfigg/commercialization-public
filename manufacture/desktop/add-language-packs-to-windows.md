@@ -64,24 +64,6 @@ Note: the version of the language components must match the version of Windows. 
 
 The table below gives an overview of the types of language components that are available in Windows 10.
 
-To install a language, do the following for each language:
-
-1.   Add the language pack and the **Basic** components.
-2.   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
-3.   Add **Fonts** and **Optical character recognition** for the most popular languages within a region to improve your user’s first experience (strongly recommended). If they’re not already installed, Windows downloads and installs them in the background when the user chooses that language for the first time.
-4.   Add **handwriting recognition** for devices with pen inputs.
-5.   Add Windows Recovery Environment (WinRE) components so that end users can more easily recover their PCs.
-
-> [!Note] 
-> Not all language components are available for every language.
-
-Other customizations that can be preset:
-
--   Currency, time zone, or calendar formats
--   [Keyboard Identifiers and Input Method Editors for Windows](windows-language-pack-default-values.md)
-
-
-Some capabilities have dependencies, as shown in the following table.
 
 | Component | Sample file name | Dependencies |	Description |
 | --- | --- | --- | --- |
@@ -96,6 +78,14 @@ Some capabilities have dependencies, as shown in the following table.
 | Retail Demo experience |	`Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package` |	Basic, plus the base retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-Package, and the English retail demo pack: Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package. |	[Retail Demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience). |
 | WinRE |	Multiple, see [Customize Windows RE](customize-windows-re.md).	| None |	Used to help end users repair and recover their PCs. See [Customize Windows RE](customize-windows-re.md). |
  
+> [!Note] 
+> Not all language components are available for every language.
+
+Other customizations that can be preset:
+
+-   Currency, time zone, or calendar formats
+-   [Keyboard Identifiers and Input Method Editors for Windows](windows-language-pack-default-values.md)
+
 
 ## <span id="LPInstallMethods"></span><span id="lpinstallmethods"></span><span id="LPINSTALLMETHODS"></span>Installation methods
 
