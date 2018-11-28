@@ -1,56 +1,25 @@
 ---
 author: kpacquer
-Description: Add languages to Windows images
+Description: Add languages to an offline Windows image
 ms.assetid: 128cffa3-8c53-41c8-add2-fa10197f36a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add languages to Windows images
 ms.author: kenpacq
-ms.date: 10/02/2018
+ms.date: 11/27/2018
 ms.topic: article
-
-redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-language-packs-to-windows.md
 
 ---
 
-# Add languages to Windows images
+# Add languages to an offline Windows image 
 
 > [!note]
 > To add a language to your personal PC, go to **Settings** > **Time & Language** > **Language**, and choose a language to install. [Learn more](https://support.microsoft.com/en-us/help/4027670/windows-10-add-and-switch-input-and-display-language-preferences)
 
-Add languages and regional support to Windows 10 images. Windows 10 installations include at least one language pack and the language-neutral binaries that make up the core operating system. You can add an additional language by using DISM to install a language pack and the related Features on Demand. If you're adding a [LIP language](available-language-packs-for-windows.md#lips), you add it after adding its base language.
+Add languages and regional support to your offline mounted Windows images. 
 
-In Windows 10, languages are are split into [language components](language-packs-and-windows-deployment.md
-), including language packs (.cabs for fully localized languages, .appx for LIP languages), and [Features On Demand](features-on-demand-v2--capabilities.md). 
+To learn about languages and components, see [Add languages to Windows](add-language-packs-to-windows.md). 
 
-You can save disk space by choosing not to include some language components in your image. While this reduction in image size can be helpful when creating images for lower-cost devices with small storage, it does lead to an incomplete language experience. When you add language components to a PC, also install the required dependencies. See [Languages](language-packs-and-windows-deployment.md) to learn more about language components and their dependencies.
-
-When you add languages, your Windows image must be the default retail image or recently installed and captured. This ensures that the Windows image doesn't have any pending package actions. The Windows images can be in any language. For example, you can start with an English (en-US) image and add support for Japanese (ja-JP) and Korean (ko-KR). For more information about the supported languages, see [Available languages for Windows](available-language-packs-for-windows.md).
-
-For information about how to add a language pack to a Windows Preinstallation Environment (Windows PE) image, [see WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
-
-To more completely localize your Windows installation, you can also configure the following international settings:
-
--   Currency, time zone, and calendar formats
--   [Keyboard Identifiers and Input Method Editors for Windows](windows-language-pack-default-values.md)
-
-## <span id="AddLangPacktoImage"></span><span id="addlangpacktoimage"></span><span id="ADDLANGPACKTOIMAGE"></span>Add a Language to a Windows Image
-
-
-Language packs are available on the language pack ISO as .cab packages and are named with their locale; for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Language capabilities are available on the Features on Demand ISO as .cab packages. 
-
-LIPs are available on the language pack ISO as .appx files and are also named with their locale; for example, LanguageExperiencePack.ca-ES.Neutral.appx. You can find these .appx files and their associated license files in the `LocalExperiencePack\<locale>` folder of the language pack ISO. 
-
-Language components, including language packs and Features on Demand can be added to an offline Windows image with DISM. To learn more about Windows language components, see [Languages overview](language-packs-and-windows-deployment.md)
-
-> [!important]
-> Don't install a language after an update. If you install an update that contains language-dependent resources before you install a language, the language-specific changes that are contained in the update are not applied and you will have to reinstall the update. Always install languages before you install updates.
-
-
-## <span id="add-offline"></span><span id="ADD-OFFLINE"></span>Adding languages to an image
-
-This section covers how to add and remove languages on an offline (mounted) image (install.wim). We'll install the French language, and then add a LIP language (Luxembourgish) that uses French for its base language.
-
-To save space, you can remove English language components when deploying to non-English regions by [uninstalling the language](#remove-a-language-pack-from-a-windows-image) components in the reverse order from how you add them.
+In this example, we'll install the French language, and then add a LIP language (Luxembourgish) that uses French for its base language.
 
 To add a language to an offline image, you'll need the following:
 
@@ -58,7 +27,7 @@ To add a language to an offline image, you'll need the following:
 - Feature on Demand ISO
 - A Windows image
 
-See [Where to get language packs](language-packs-and-windows-deployment.md#get_language_packs_and_lips) to find out where you can get these ISOs.
+See [Add languages to Windows: Where to get language packs](add-language-packs-to-windows.md#get_languages) to find out where you can get these ISOs.
 
 ### Mount Windows and Windows RE images (if you're adding a language to an offline image)
 
@@ -211,10 +180,6 @@ If you're removing a language from an online image, the process is the same, but
     Dism /Commit-Image /MountDir:C:\test\offline
     ```
 
-### To remove a language pack using DISM and an unattended answer file
-
-See [Add a package to an answer file](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/add-a-package-to-an-answer-file). 
-
 
 ## Next steps: Configure international settings
 
@@ -227,23 +192,9 @@ See [Configure international settings by using DISM](configure-international-set
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
-
-[Service a Windows Image Using DISM](service-a-windows-image-using-dism.md)
 
 [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md)
 
 [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)
-
-[DISM Unattended Servicing Command-Line Options](dism-unattended-servicing-command-line-options.md)
-
-[Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445)
-
- 
-
-
-
-
-
 

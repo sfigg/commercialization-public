@@ -7,16 +7,16 @@ title: Add and Remove Language Packs on a Running Windows Installation
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism
-
 
 ---
 
 # Add and remove language packs on a running Windows installation
 
-You can add support for additional languages on a running operating system, or to an offline image. For information about how to install languages to an offline image, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
+You can add support for additional languages on a running operating system.
 
-For information about installing Language Interface Packs (LIPs), see [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
+To learn how to add languages to offline images, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
+
+To learn how to install Language Interface Packs (LIPs), see [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
 
 In Windows 10, users can install more languages and features by going to **Settings** &gt; **Time & language** &gt; **Region & language** &gt; **Add a language**. 
 
