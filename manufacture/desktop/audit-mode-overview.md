@@ -5,7 +5,7 @@ ms.assetid: c4d7921f-0709-40bd-bbc5-38fd793d6b88
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audit Mode Overview
 ms.author: kenpacq
-ms.date: 05/02/2017
+ms.date: 11/28/2017
 ms.topic: article
 
 
@@ -48,32 +48,7 @@ In audit mode, you can do the following:
 
 You can boot to audit mode on a new or existing Windows installation. For more information, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
-## <span id="Automatically_Display_the_Windows_8_Desktop"></span><span id="automatically_display_the_windows_8_desktop"></span><span id="AUTOMATICALLY_DISPLAY_THE_WINDOWS_8_DESKTOP"></span>Automatically Display the Windows 8 Desktop
 
-
-In some Windows 8 manufacturing or testing scenarios you might need to automatically display the Windows 8 desktop instead of the Windows 8 start screen after the PC reboots. This might be required if you use manufacturing tools that display status to a Window on the desktop and you want your factory technicians to easily identify issues without having to manually switch from the Windows 8 start screen to the desktop.
-
-You can automatically display the Windows 8 desktop by using %WINDIR%\\System32\\oobe\\AuditShD.exe. AuditShD.exe must be run by an account with administrator permissions.
-
-We recommend adding this command-line to your answer file as a RunAsynchronousCommand in the auditUser configuration pass. Use Windows System Image Manager to add **Microsoft-Windows-Deployment** | **RunAsynchronous** | **RunAsynchronousCommand** with the value **%WINDIR%\\System32\\oobe\\AuditShD.exe**.
-
-The answer file you create will look similar to the following:
-
-```
-<settings pass="auditUser">
-<component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <RunAsynchronous>
-       <RunAsynchronousCommand wcm:action="add">
-          <Description>Show Desktop</Description>
-          <Order>1</Order>
-          <Path>cmd.exe /c %WINDIR%\System32\oobe\AuditShD.exe</Path>
-       </RunAsynchronousCommand>
-    </RunAsynchronous>
-  </component>
-</settings> 
-```
-
-Before a Windows PC is shipped to a customer, it must be configured to boot to the OOBE screens and display the Start screen on first boot. Verify that AuditShD.exe is only configured to run in audit mode and is not used during OOBE.
 
 ## <span id="related_topics"></span>Related topics
 

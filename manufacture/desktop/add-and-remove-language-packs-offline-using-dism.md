@@ -8,6 +8,7 @@ ms.author: kenpacq
 ms.date: 11/27/2018
 ms.topic: article
 
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
 ---
 
 # Add languages to an offline Windows image 
@@ -15,7 +16,7 @@ ms.topic: article
 > [!note]
 > To add a language to your personal PC, go to **Settings** > **Time & Language** > **Language**, and choose a language to install. [Learn more](https://support.microsoft.com/en-us/help/4027670/windows-10-add-and-switch-input-and-display-language-preferences)
 
-Add languages and regional support to your offline mounted Windows images. 
+Add languages and regional support to your offline mounted Windows 10 or Windows Server images. 
 
 To learn about languages and components, see [Add languages to Windows](add-language-packs-to-windows.md). 
 
@@ -46,7 +47,7 @@ See [Add languages to Windows: Where to get language packs](add-language-packs-t
 
 Preinstall languages by adding the language packs and their related Features on Demand for all preinstalled languages, including the base languages if you're adding a LIP language.
 
-If you're adding a language to an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
+If you're adding a language to an online image, the process is the same, but use `/online` instead of `/Image:<pathtoimage>` in your DISM commands.
 
 1.  Mount the language pack and FOD ISOs with File explorer. This will assign them drive letters.
 
@@ -63,7 +64,7 @@ If you're adding a language to an online image, the process is the same, but use
     See [Features on demand](features-on-demand-v2--capabilities.md) to can learn more about FODs, including details on adding them to a Windows image.
 
     ```
-    Dism /Image:"C:\mount\windows" /add-package /packagepath:E:\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab
+    Dism /Image:"C:\mount\windows" /Add-Package /PackagePath:E:\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:E:\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:E:\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:E:\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package~31bf3856ad364e35~amd64~~.cab
     ```
 
     Where E:\ is the Features on demand ISO.
@@ -87,7 +88,7 @@ If you're adding a language to an online image, the process is the same, but use
     1. Add the LIP, which is on the language pack ISO in the LXP folder. This type of language pack is distributed as an .appx.
         
         ```
-        DISM /image:"C:\mount\windows" /add-provisionedappxpackage /PackagePath="D:\LocalExperiencePack\lb-lu\LanguageExperiencePack.lb-LU.Neutral.appx /licensepath:"D:\LocalExperiencePack\lb-lu\License.xml"
+        DISM /Image:"C:\mount\windows" /add-provisionedappxpackage /PackagePath="D:\LocalExperiencePack\lb-lu\LanguageExperiencePack.lb-LU.Neutral.appx /licensepath:"D:\LocalExperiencePack\lb-lu\License.xml"
         ```
     
         Where D:\ is the language pack ISO
@@ -95,7 +96,7 @@ If you're adding a language to an online image, the process is the same, but use
     2. Add the features on demand that support your LIP language.
     
         ```
-        DISM /image:"C:\mount\windows" /add-package /packagepath:E:\Microsoft-Windows-LanguageFeatures-Basic-lb-lu-Package~31bf3856ad364e35~amd64~~.cab /packagepath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-lb-lu-Package~31bf3856ad364e35~amd64~~.cab
+        DISM /Image:"C:\mount\windows" /Add-Package /PackagePath:E:\Microsoft-Windows-LanguageFeatures-Basic-lb-lu-Package~31bf3856ad364e35~amd64~~.cab /PackagePath:E:\Microsoft-Windows-LanguageFeatures-Handwriting-lb-lu-Package~31bf3856ad364e35~amd64~~.cab
         ```
         
         Where E:\ is the Feature on Demand ISO
@@ -103,7 +104,7 @@ If you're adding a language to an online image, the process is the same, but use
     3. Verify that the LIP is in the image
 
         ```
-        DISM /image:"C:\mount\windows" get-provisionedappxpackages
+        DISM /Image:"C:\mount\windows" get-provisionedappxpackages
         ```
 
 6.  When you add languages to Windows, when possible, add them to WinRE to ensure a consistent language experience in recovery scenarios.These language packs are also available on the Language pack ISO. Windows RE requires the WinPE-HTA package.
@@ -136,7 +137,7 @@ If you're adding a language to an online image, the process is the same, but use
 
 Before you add new language packs to a Windows image, you must remove any language packs that you don't intend to use. There are two ways to remove language packs offline with DISM. You can either apply an unattended answer file to the offline image, or you can remove the language pack directly from the offline image, using the command prompt.
 
-If you're removing a language from an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
+If you're removing a language from an online image, the process is the same, but use `/online` instead of `/Image:<pathtoimage>` in your DISM commands.
 
 > [!important]
 > You cannot remove a language pack from an offline Windows image if there are pending online actions. The Windows image should be a recently installed and captured image. This will guarantee that the Windows image does not have any pending online actions that require a reboot.
@@ -145,7 +146,7 @@ If you're removing a language from an online image, the process is the same, but
 ### Remove a language from a Windows image
 
 > [!note]
-> If you're adding a language to an online image, the process is the same, but use `/online` instead of `/image:<pathtoimage>` in your DISM commands.
+> If you're adding a language to an online image, the process is the same, but use `/online` instead of `/Image:<pathtoimage>` in your DISM commands.
 
 1.  Locate the Windows image (.wim) file or virtual hard disk (.vhd or .vhdx) that contains the Windows image that you intend to remove languages from.
 
@@ -166,7 +167,8 @@ If you're removing a language from an online image, the process is the same, but
 5. **If removing a LIP language** Use DISM to remove the LIP .appx
 
     ```
-    Dism /remove-provisionedappxpackage /packagename:Microsoft.LanguageExperiencePack<lang_version>_neutral__8wekyb3d8bbwe
+    Dism /Image:C:\test\offline  /remove-provisionedappxpackage /packagename:Microsoft.LanguageExperiencePack<lang_version>_neutral__8wekyb3d8bbwe
+    ```
 
 6.  Use `DISM /remove-package /packagename:<packagename>` to remove language components from the image. Use the packages names that you got in step 5. You can specify more than one `/packagename` per command-line statement.
 
@@ -174,7 +176,7 @@ If you're removing a language from an online image, the process is the same, but
     Dism /Image:C:\test\offline /Remove-Package /PackageName:<language pack name> /PackageName:<language component package Name>  ...
     ```
 
-7.  Commit the changes. The image remains mounted until you run `DISM /unmount.
+7.  Commit the changes. The image remains mounted until you run `DISM /unmount`.
 
     ```
     Dism /Commit-Image /MountDir:C:\test\offline

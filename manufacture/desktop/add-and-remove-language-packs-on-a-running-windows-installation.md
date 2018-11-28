@@ -7,7 +7,7 @@ title: Add and Remove Language Packs on a Running Windows Installation
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
 ---
 
 # Add and remove language packs on a running Windows installation

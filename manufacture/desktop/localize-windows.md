@@ -16,6 +16,8 @@ Set up Windows 10 or Windows Server with the right set of languages, settings, a
 
 You can add languages and regional support to Windows 10 (except for Windows 10 Home Single Language and Windows 10 Home Country Specific editions), and Windows Server.
 
+**[Add languages to Windows images](add-language-packs-to-windows.md)**
+
 Windows installations start with at least one language pack and its language components. You can add: 
 * [Language packs](available-language-packs-for-windows.md): Fully-localized Windows UI text for the dialog boxes, menu items, and help files that you see in Windows. Delivered as .cab files, for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab.
 * [Language Interface Packs (LIP)](available-language-packs-for-windows.md#lips): Partially-localized languages. LIPs require a base language pack. For UI that's not localized in the LIP, Windows shows UI from the base language pack. Delivered as .appx files, for example, LanguageExperiencePack.am-et.neutral.appx.
