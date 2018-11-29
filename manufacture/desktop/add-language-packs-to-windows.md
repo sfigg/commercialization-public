@@ -68,9 +68,13 @@ To save space, you can remove English language components when deploying to non-
 
 -   **Online: Modify a running Windows installation** (for example, in [audit mode](boot-windows-to-audit-mode-or-oobe.md))
 
-    You can use the **Settings** > **Time & Language** menus to download languages, LIPs, and components from Windows Update. 
+    You can install languages and LIPs by opening the packages from the Language Pack ISO and Feature on Demand ISO and following the instructions to complete the installation.
+    
+    You can use the **Settings** > **Time & Language** to modify the settings or download languages from Windows Update. 
 
-    You can also use the instructions in this topic, replacing `/Image:"C:\mount\windows"` with `/Online`.
+    To run these same updates using a script, use the instructions in this topic, replacing `/Image:"C:\mount\windows"` with `/Online`.
+
+    To update the recovery environment, see [Add languages to the recovery environemnt](#add-languages-to-the-recovery-environment).
 
 ### Add and remove language packs, LIPs, and Features on Demand
 
