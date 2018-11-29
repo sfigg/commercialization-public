@@ -22,15 +22,15 @@ HRESULT EnablePeriodicSnapshot
 
 ## Parameters
 
-snapshotType
-[in] SnapshotType. 
-Note : Currently only available SnapshotType is SnapshotType_Heap
-interval
-[in] frequency value in seconds.
-pids
-[in] The pointer to an array of process ids. Up to 8 process ids can be specified 
-cPids
-[in] The number of process ids in the array. Maximum number is 8.
+snapshotType <br/>
+[in] SnapshotType. <br/>
+Note : Currently only available SnapshotType is SnapshotType_Heap.
+interval<br/>
+[in] frequency value in seconds.<br/>
+pids<br/>
+[in] The pointer to an array of process ids. Up to 8 process ids can be specified. <br/>
+cPids<br/>
+[in] The number of process ids in the array. Maximum number is 8.<br/>
 
 ## Return Value
 

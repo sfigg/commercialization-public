@@ -25,53 +25,18 @@ Represents a snapshot object that the client controls. The interface provides fu
 
 The following table describes the functions that this interface provides.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Function</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[ConfigSnapshotByPID](configsnapshotbypid.md)</p></td>
-<td><p>Configures snapshot using the provided process id.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ConfigSnapshotByPIDEx](configsnapshotbypidex.md)</p></td>
-<td><p>Configures snapshot using the provided process id.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ConfigSnapshotByProcess](configsnapshotbyprocess.md)</p></td>
-<td><p>Configures snapshot using the provided process name.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ConfigSnapshotByProcessEx](configsnapshotbyprocessex.md)</p></td>
-<td><p>Configures snapshot using the provided process name.</p></td>
-</tr>
-<tr class="even">
-<td><p>[DisablePeriodicSnapshot](disableperiodicsnapshot.md)</p></td>
-<td><p>Disables periodic snapshot.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[EnablePeriodicSnapshot](enableperiodicsnapshot.md)</p></td>
-<td><p>Enables periodic snapshot with the given interval.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SnapshotOnDemand](snapshotondemand.md)</p></td>
-<td><p>Takes snapshot of Snapshot type and exports to the trace buffers.</p></td>
-</tr>
-<tr class="even">
-<td><p>[VerifySnapshotSupported](verifysnapshotsupported.md)</p></td>
-<td><p>Queries periodic capture state limits.</p></td>
-</tr>
 
-</tbody>
-</table>
+
+|Function|Description|
+|--|--|
+| [ConfigSnapshotByPID](configsnapshotbypid.md)|Configures snapshot using the provided process id.|
+|[ConfigSnapshotByPIDEx](configsnapshotbypidex.md)|Configures snapshot using the provided process id.|
+|[ConfigSnapshotByProcess](configsnapshotbyprocess.md)|Configures snapshot using the provided process name.|
+|[ConfigSnapshotByProcessEx](configsnapshotbyprocessex.md)|Configures snapshot using the provided process name.|
+|[DisablePeriodicSnapshot](disableperiodicsnapshot.md)|Disables periodic snapshot.|
+|[EnablePeriodicSnapshot](enableperiodicsnapshot.md)|Enables periodic snapshot with the given interval.|
+|[SnapshotOnDemand](snapshotondemand.md)|Takes snapshot of Snapshot type and exports to the trace buffers.|
+|[VerifySnapshotSupported](verifysnapshotsupported.md)|Queries periodic capture state limits.|
 
 ## Remarks
 
