@@ -281,6 +281,28 @@ Use languages from the Language Pack ISO, not from the Windows 10 ADK, to locali
    
    To learn more, see [generalize](sysprep--generalize--a-windows-installation.md).
 
+## Next steps:
+
+**Localize more of Windows:**
+
+* [Out of Box Experience (OOBE)](how-oobexml-works.md): Create localized end user license agreements (EULA), registration pages, and instructions for pairing keyboards and mice.
+* [Retail demo experience](https://docs.microsoft.com/windows-hardware/customize/desktop/retail-demo-experience#add-retail-demo-mode-including-language-packs-to-your-images): Showcase your new devices on the retail sales floor with localized content.
+
+**Localize the installation process**
+
+* [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md): Now that you've added languages to your Windows image, make sure they appear in Windows Setup. You can also create Windows installation media that works in the user's preferred language.
+
+* [Add languages to WinPE](winpe-mount-and-customize.md) to help your technicians install Windows in their preferred language.
+
+* [Add languages to a Windows distribution share](add-multilingual-support-to-a-windows-distribution.md) to help users on a corporate network select Windows in their preferred language
+
+## <span id="related_topics"></span>Related topics
+
+* [Features On Demand](features-on-demand-v2--capabilities.md)
+* Add languages to [Windows Recovery Environment (WinRE)](customize-windows-re.md)
+
+
+
 
 ## <span id="related_topics"></span>Related topics
 
