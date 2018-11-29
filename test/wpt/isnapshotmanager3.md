@@ -7,7 +7,9 @@ ms.topic: article
 ---
 
 # ISnapshotManager3
-Represents a snapshot object that the client controls. The interface provides functions that enable, disables, and takes the snapshot. 
+
+Represents a snapshot object that the client controls. The interface provides functions that enable, disables, and takes the snapshot.
+ 
 ## Syntax
 
 ```
