@@ -13,7 +13,7 @@ ms.topic: article
 
 
 # Create and install a package
-[Packages](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide#Packages) are the logical building blocks of Windows 10 IoT Core. From device drivers to system files, every component must be contained in a package. This is the smallest servicable unit on the device.
+[Packages](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide#Packages) are the building blocks of Windows 10 IoT Core. From device drivers to system files, every component must be packaged to install on a device. Packages are the smallest servicable units on the device.
 
 ## Step 1: Get set up
 
