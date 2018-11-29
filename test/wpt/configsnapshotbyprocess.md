@@ -12,7 +12,7 @@ Configures snapshot using the provided process name. This function uses Image Fi
 
 ## Syntax
 ```
-HRESULT ConfigSnapshotByPIDEx
+HRESULT ConfigSnapshotByProcess
 ([in] BSTR bstrProcName,
  [in] VARIANT_BOOL fEnable);
 ```

@@ -11,7 +11,8 @@ Configures snapshot using the provided process id.
 
 ## Syntax
 
-```HRESULT ConfigSnapshotByPID
+```
+HRESULT ConfigSnapshotByPID
 ([in, out] ULONG* pids,
  [in] ULONG cPids,
 [in] VARIANT_BOOL fEnable);

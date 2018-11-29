@@ -6,14 +6,14 @@ ms.date: 11/15/2018
 ms.topic: article
 ---
 
-## ConfigSnapshotByProcess
+## ConfigSnapshotByProcessEx
 
 Configures snapshot using the provided process name. This function uses Image File Execution Options(IFEO) to set snapshot tracing flag in the registry. 
 
 ## Syntax
 
 ``` 
-HRESULT ConfigSnapshotByPIDEx
+HRESULT ConfigSnapshotByProcessEx
 ([in] SnapshotType snapshotType,
 [in] BSTR bstrProcName,
  [in] VARIANT_BOOL fEnable);

@@ -15,11 +15,15 @@ Disables periodic snapshot of SnapshotType.
 ```
 HRESULT DisablePeriodicSnapshot
 ([in] SnapshotType snapshotType);
-Parameters
-snapshotType
-[in] SnapshotType. 
-Note : Currently only available SnapshotType is SnapshotType_Heap
 ```
+
+## Parameters
+
+*snapshotType* <br/>
+[in] SnapshotType. <br/>
+Note : Currently the only available SnapshotType is SnapshotType_Heap. 
+
+<br/>
 
 ## Return Value
 
