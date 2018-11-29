@@ -32,6 +32,7 @@ HRESULT ConfigSnapshotByPIDEx
 ## Return Value
 
 The following table describes possible return values.
+
 |Return Value	| Description |
 |---------------|-------------|
 |S_OK	| The configuration was successful for the specified process, otherwise an error code.|
