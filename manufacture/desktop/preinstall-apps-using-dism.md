@@ -7,8 +7,6 @@ title: Preinstall Apps Using DISM
 ms.author: kenpacq
 ms.date: 04/25/2018
 ms.topic: article
-
-
 ---
 
 # Preinstall Apps Using DISM
