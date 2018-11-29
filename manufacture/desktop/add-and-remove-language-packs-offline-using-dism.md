@@ -28,7 +28,7 @@ To add a language to an offline image, you'll need the following:
 - Feature on Demand ISO
 - A Windows image
 
-See [Add languages to Windows: Where to get language packs](add-language-packs-to-windows.md#get_languages) to find out where you can get these ISOs.
+See [Add languages to Windows: Where to get language packs](add-language-packs-to-windows.md#get-languages) to find out where you can get these ISOs.
 
 ### Mount Windows and Windows RE images (if you're adding a language to an offline image)
 

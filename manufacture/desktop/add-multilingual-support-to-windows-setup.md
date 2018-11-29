@@ -84,6 +84,15 @@ Where *D:* is the location of the Windows installation media.
     Dism /image:C:\mount\boot /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-FontSupport-JA-JP.cab"
     ```
 
+5.  Change the Windows Setup default language:
+
+    ```
+    Dism /image:C:\mount\boot /Set-SetupUILang:fr-FR /distribution:C:\my_distribution
+    ```
+
+    For more information about specifying different international settings, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
+
+
 ## Step 3: Add localized Windows Setup resources to the Windows distribution
 
 In this step you copy the language-specific Setup resources from each language-specific Windows distribution to the Sources folder in your Windows distribution. For example, mount the fr-FR Windows installation media as drive E: and copy the Fr-FR sources folder to your Windows distribution. 
@@ -100,23 +109,15 @@ Note, language interface packs (LIP) are not supported on Windows Setup.
 
 ## Step 4. Add language packs to the Windows image 
 
-To modify the languages that are available in the Windows image,  see [Add Language Packs to Windows](add-language-packs-to-windows.md#add-setup)
+To modify the languages in the Windows image, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
-After you do this, update the list of available Windows languages (Lang.ini) and specify the default Setup language:
+After you do this, update the list of available Windows languages (Lang.ini):
 
 1.  Recreate the Lang.ini file to reflect the additional languages.
 
     ```
     Dism /image:C:\mount\windows /gen-langINI /distribution:C:\my_distribution
     ```
-
-2.  Change the Windows Setup default language with DISM.
-
-    ```
-    Dism /image:C:\mount\windows /Set-SetupUILang:fr-FR /distribution:C:\my_distribution
-    ```
-
-    For more information about specifying different international settings, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
 3.  Copy the lang.ini file in the Windows distribution to the boot folder.
 
