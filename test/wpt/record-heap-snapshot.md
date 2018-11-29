@@ -8,7 +8,7 @@ ms.assetid: 217ECDF0-1B6D-4995-85DE-22708D608D5E
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: dawn.wood
-ms.date: 11/19/2018
+ms.date: 11/29/2018
 ms.topic: article
 ---
 
@@ -55,9 +55,8 @@ Each time a snapshot is triggered, the allocation stack database is exported to 
  wpr -enableperiodicsnapshot heap <frequency in seconds> <pid for foo.exe>
  ```
 
-4.	Stop the trace
+4.	Save the trace by using wprui, or wpr. 
 
-Save the trace by using wprui, or wpr.
 
 ```
 wpr -stop heapsnapshot.etl
@@ -65,7 +64,7 @@ wpr -stop heapsnapshot.etl
 
 5.	Disable the heap snapshot
 <br/>
-You can disable the heap using the PID or Name. Here are examples of both.  
+You can disable the heap using the PID or Name. Here are examples of both. <br/> 
 
 Using Name:
 ```
@@ -81,8 +80,12 @@ Using PID:
 If the -name option is used to enable the heap snapshot, it sets the IFEO registry internally and will apply to all new instances of the process. Disable it by using the SnapshotConfig option when testing is finished to avoid unnecessary heap collection.
 Also, if the cpu architecture of process and OS does not match ( for example, running win32 app on 64bit OS), use the name option (IFEO).
 
-
 ## Related topics
 
 * [Snapshotconfig](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/wpr-command-line-options#snapshotconfig)
-*
+* [Singlesnapshot](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/wpr-command-line-options#singlesnapshot)
+* [Enableperiodicsnapshot](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/wpr-command-line-options#enableperiodicsnapshot)
+* [Disableperiodicsnapshot](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/wpr-command-line-options#disableperiodicsnapshot)
+* [WPR common scenarios](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-recorder-common-scenarios)
+* [Image File Execution options](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/xperf/image-file-execution-options)
+* [ISnapshotManager3]()
