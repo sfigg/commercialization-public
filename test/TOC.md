@@ -26,6 +26,7 @@
 ##### [Change the Detail Level](wpt/change-the-detail-level.md)
 ##### [Change the Logging Mode](wpt/change-the-logging-mode.md)
 ##### [Change the Performance Scenario](wpt/change-the-performance-scenario.md)
+##### [Recording a Heap Snapshot](wpt/record-heap-snapshot.md)
 ##### [Recording for Basic System Diagnosis](wpt/recording-for-basic-system-diagnosis.md)
 ##### [Recording for Heap Analysis](wpt/recording-for-heap-analysis.md)
 ##### [Recording for Resource-based Analysis](wpt/recording-for-resource-based-analysis.md)
