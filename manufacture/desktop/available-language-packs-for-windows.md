@@ -5,31 +5,25 @@ ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Available Language Packs for Windows
 ms.author: kenpacq
-ms.date: 11/13/2018
+ms.date: 11/28/2018
 ms.topic: article
-
-
 ---
 
 # Available languages for Windows
 
-
 The following tables show the supported language packs for Windows 10 and Windows Server, and supported language interface packs (LIPs) for Windows 10. LIPs are available for Windows 10, but are not available for Windows Server. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
-Windows Server and Windows 10 language packs are not interchangeable. Windows Server language packs cannot be used on Windows 10, and Windows 10 language packs cannot be used on Windows Server.
+Windows 10 and Windows Server: Full language packs are not interchangeable, but some LIPs are. For example, you can add Windows 10, version 1809 LIPs to Windows Server 2019.
 
-The version of the LIP must match the version of Windows. For example, you can't add a Windows 10, version 1809 LIP to a Windows 10, version 1803 image, or a Windows 10, version 1803 LIP to a Windows 10, version 1809 image.
+The version of the language, LIP, or Feature on Demand must match the version number. For example, you can neither add a Windows 10 version 1809 LIP to Windows 10 version 1803 image, nor to Windows Server 2012.
 
-You cannot apply languages to Windows 10 Home Single Language and Windows 10 Home Country Specific editions.
+You cannot add languages to Windows 10 Home Single Language and Windows 10 Home Country Specific editions.
 
-To learn how to get language packs, see [Where to get language packs and LIPs](language-packs-and-windows-deployment.md#get_language_packs_and_lips).
+To learn how to add languages to Windows, or where to get them, see [Where to get language packs and LIPs](add-language-packs-to-windows.md#get-languages).
 
-For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
-
-To learn how to add languages to Windows, see [Add Language Packs to Windows](add-and-remove-language-packs-offline-using-dism.md).
+For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://docs.microsoft.com/en-us/windows/desktop/Intl/language-identifier-constants-and-strings).
 
 ## Supported Language Packs and Language Interface Packs
-
 
 The following tables include these settings:
 

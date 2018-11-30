@@ -76,76 +76,77 @@ To ensure a consistent language experience in recovery scenarios, add the same s
 
 We recommend adding no more than ten language packs to a Windows or Windows RE image. Multiple language packs increase the size of the Windows image and also affect the overall performance of a system during deployment and servicing.
 
- 
 
 **To add language packs**
 
-1.  List the Windows PE optional components in the Windows RE tools image:
+1.  Mount the Windows Language pack ISO with File Explorer. This will assign it a drive letter, for example, D. 
+
+2.  List the Windows PE optional components in the Windows RE tools image:
 
     ```
     Dism /Get-Packages /Image:C:\mount\winre
     ```
 
-2.  Review the resulting list of packages, and then add the corresponding language packs for each package in the image, including the base Windows PE language pack, but not including **WinPE-WiFi-Package**.
+3.  Review the resulting list of packages, and then add the corresponding language packs for each package in the image, including the base Windows PE language pack, but not including **WinPE-WiFi-Package**.
 
     The following code shows how to add the French (fr-fr) language pack to the base Windows PE image, and then to each of the optional components that are present in the default Windows RE image:
 
     ```
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Scripting_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Scripting_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SecureStartup_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SecureStartup_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SRT_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SRT_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WDS-Tools_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WDS-Tools_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WMI_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WMI_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-StorageWMI_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-StorageWMI_fr-fr.cab"
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
     ```
 
     The **WinPE-WiFi-Package** is not language-specific and does not need to be added when adding other languages.
 
-3.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
+4.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
 
     ```
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
     ```
 
     To learn more, see [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
 
-4.  To save space and speed up the recovery process, remove unneeded languages. Reverse the order to avoid problems with dependencies.
+5.  To save space and speed up the recovery process, remove unneeded languages. Reverse the order to avoid problems with dependencies.
 
     Note, the **WinPE-WiFi-Package** is not language specific and should not be removed.
 
     ```
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-StorageWMI_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-StorageWMI_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WDS-Tools_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WDS-Tools_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-SRT_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-SRT_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-SecureStartup_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-SecureStartup_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-EnhancedStorage_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-EnhancedStorage_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Rejuv_en-us.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Rejuv_en-us.cab"
 
-    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\lp.cab"
+    Dism /Remove-Package /Image:C:\mount\winre /PackagePath:"D:\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\lp.cab"
     ```
 
 ## <span id="BKMK_AddDrivers"></span><span id="bkmk_adddrivers"></span><span id="BKMK_ADDDRIVERS"></span>Step 3: Adding boot-critical drivers

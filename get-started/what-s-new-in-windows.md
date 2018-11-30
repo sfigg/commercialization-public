@@ -4,7 +4,7 @@ description: New features for Windows 10, version 1809
 ms.assetid: 1E8F0E54-1E5B-495B-848D-260620C7DF4F
 author: dawnwood
 ms.author: dawnwood
-ms.date: 10/15/2018
+ms.date: 11/29/2019
 ms.topic: article
 
 
@@ -41,7 +41,7 @@ Welcome to Windows 10, version 1809! Here are some resources to get you acquain
 | --- | --- |
 | [Deploy Push-button reset using Auto-apply folders](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-pbr-features-using-auto-apply) |  Auto-apply folders make configuring Push-button reset easier. |
 | [Windows PE (WinPE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) | WinPE is no longer part of the ADK installer, and is now available as an add-on to the ADK | 
-| [Add languages to Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism) | Language interface pack languages are now distributed as .appx files. |
+| [Add languages to Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows) | Language interface pack (LIP) languages are now distributed as .appx files. Note, the [DISM /set-uilang and /set-allintl](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-languages-and-international-servicing-command-line-options) options are no longer supported for LIP languages. |
 | [Available features on demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod) |  Several new Features on Demand are available |
 | [Windows 10 IoT Core manufacturing](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide) | You can now create Windows IoT Core images using PowerShell. |
 | [Recovery](https://docs.microsoft.com/windows-hardware/manufacture/desktop/prepare-recovery-tools) | WinPE is no longer part of the ADK installer, and is now available as an add-on to the ADK 

@@ -78,7 +78,7 @@ The following table provides a description of how each international servicing o
 <td align="left"><p>Sets the default system user interface (UI) language. If the language is not installed in the Windows image, the command will fail.</p>
 <p>&lt;<em>language_name</em>&gt; specifies the name of the language to set as the default; for example, ja-JP.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>If you install a Language Interface Pack (LIP) and specify its language as the default UI language, the LIP language will be set as the system default UI language (or Install language) and the parent language will be set as the default UI language.</p>
+<strong>Note</strong><br/><p>As of Windows 10, version 1809, this command does not support setting the UI language to a LIP language.</p>
 </div>
 <div>
 
@@ -129,7 +129,7 @@ The following table provides a description of how each international servicing o
 <p>You can specify more than one value by using semicolons as separators. This is useful when you want to include support for multiple keyboards on a single computer. The first value will be set as the default keyboard.</p>
 <p>The valid keyboard layouts that can be configured on your computer are listed in the following registry key.</p>
 <p><strong>HKEY_LOCAL_MACHINE \SYSTEM\CurrentControlSet\Control\Keyboard Layouts</strong></p>
-<p>For a list of the values, see <a href="default-input-locales-for-windows-language-packs.md" data-raw-source="[Default Input Locales](default-input-locales-for-windows-language-packs.md)">Default Input Locales</a> and <a href="windows-language-pack-default-values.md" data-raw-source="[Default Keyboard Settings](windows-language-pack-default-values.md)">Default Keyboard Settings</a>.</p>
+<p>For a list of the values, see <a href="default-input-locales-for-windows-language-packs.md">Default Input Locales</a> and <a href="windows-language-pack-default-values.md">Default Keyboard Settings</a>.</p>
 <p>Use the hexadecimal value of the language ID and keyboard layout that you intend to configure.</p>
 <p>This parameter is optional.</p>
 <p>Example:</p>
@@ -148,6 +148,9 @@ The following table provides a description of how each international servicing o
 </ul>
 <p>If used with any of the options that specify the individual language or locales, then the individual settings take precedence.</p>
 <p>&lt;<em>language_name</em>&gt; specifies the language name and locale code; for example, en-US, es-ES, or fr-FR.</p>
+<div class="alert">
+<strong>Note</strong><br/><p>As of Windows 10, version 1809, this command does not support setting the UI language to a LIP language.</p>
+</div>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /Set-AllIntl:fr-FR</strong></p></td>
 </tr>
@@ -165,7 +168,7 @@ The following table provides a description of how each international servicing o
 <td align="left"><p>Option: <strong>/Set-SKUIntlDefaults:</strong></p>
 <p>Argument: &lt;<em>language_name</em>&gt;</p></td>
 <td align="left"><p>Sets the default system UI language, the language for non-Unicode programs, the &quot;standards and formats&quot; language, and the input locales, keyboard layouts, and time zone values in an offline Windows image to the default value specified by &lt;<em>language_name</em>&gt;. The <strong>/Set-SKUIntlDefaults</strong> option does not change the keyboard driver for Japanese and Korean keyboards. You must use the <strong>/Set-LayeredDriver</strong> option to change this.</p>
-<p>Use <strong>/ Set-SKUIntlDefaults</strong> to change all the international settings in an offline Windows image to match the default values that are set during retail installations. For more information about the default values of each language pack, see <a href="default-input-locales-for-windows-language-packs.md" data-raw-source="[Default Input Locales for Windows Language Packs](default-input-locales-for-windows-language-packs.md)">Default Input Locales for Windows Language Packs</a>.</p>
+<p>Use <strong>/Set-SKUIntlDefaults</strong> to change all the international settings in an offline Windows image to match the default values that are set during retail installations. For more information about the default values of each language pack, see <a href="default-input-locales-for-windows-language-packs.md">Default Input Locales for Windows Language Packs</a>.</p>
 <p>This parameter is optional. If combined with one of the settings earlier in this section, the individual setting takes priority.</p>
 <p>If the language passed matches a Unicode-only locale setting, the system locale will not be changed but the command will not fail.</p>
 <p>Example:</p>
@@ -229,70 +232,41 @@ The following table provides a description of how each international servicing o
 -   You cannot use other servicing commands on the same command line with international servicing commands.
 -   You cannot set a Unicode-only language as the system locale.
 
-    The following languages are Unicode-only (Languages are listed in the table in the format: Language - Country/Region):
+    The following languages are Unicode-only:
 
-    Amharic - Ethiopia
-
-    Kazakh - Kazakhstan
-
-    Odia - India (Odia Script)
-
-    Armenian - Armenia
-
-    Khmer - Cambodia
-
-    Pashto - Afghanistan
-
-    Assamese - India
-
-    Konkani - India
-
-    Punjabi - India (Gurmukhi Script)
-
-    Bangla - Bangladesh
-
-    Lao - Lao PDR
-
-    Sanskrit - India
-
-    Bangla - India (Bengali Script)
-
-    Malayalam - India (Malayalam Script)
-
-    Sinhala - Sri Lanka
-
-    Divehi - Maldives
-
-    Maltese - Malta
-
-    Syriac - Syria
-
-    Georgian - Georgia
-
-    Maori - New Zealand
-
-    Tamil - India
-
-    Gujarati - India (Gujarati Script)
-
-    Marathi - India
-
-    Telugu - India (Telugu Script)
-
-    Hindi - India
-
-    Mongolian (Mongolian) - PRC
-
-    Tibetan - PRC
-
-    Inuktitut (Syllabics) - Canada
-
-    Nepali - Federal Democratic Republic of Nepal
-
-    Yi - PRC
-
-    Kannada - India (Kannada Script)
-
+    | Language | Country/Region |
+    |----------|----------------|
+    | Amharic | Ethiopia |
+    | Armenian | Armenia |
+    | Assamese | India |
+    | Bangla | Bangladesh |
+    | Bangla | India (Bengali Script) |
+    | Divehi | Maldives |
+    | Georgian | Georgia |
+    | Gujarati | India (Gujarati Script) |
+    | Hindi | India |
+    | Inuktitut (Syllabics) | Canada |
+    | Kannada | India (Kannada Script) |
+    | Kazakh | Kazakhstan |
+    | Khmer | Cambodia |
+    | Konkani | India |
+    | Lao | Lao PDR |
+    | Malayalam | India (Malayalam Script) |
+    | Maltese | Malta |
+    | Maori | New Zealand |
+    | Marathi | India |
+    | Mongolian (Mongolian) | PRC |
+    | Nepali | Federal Democratic Republic of Nepal |
+    | Odia | India (Odia Script) |
+    | Pashto | Afghanistan |
+    | Punjabi | India (Gurmukhi Script) |
+    | Sanskrit | India |
+    | Sinhala | Sri Lanka |
+    | Syriac | Syria |
+    | Tamil | India |
+    | Telugu | India (Telugu Script) |
+    | Tibetan | PRC |
+    | Yi | PRC |
 
 
 -   Do not install a language pack after an update.

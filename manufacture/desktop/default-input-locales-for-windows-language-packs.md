@@ -22,18 +22,18 @@ When the user first identifies the time and date format (User Locale) as Algeria
 
 Windows uses the language component of the input profile for tasks like spelling, hyphenation, and text prediction of the intended key press when using the touch-screen keyboard.
 
-When setting up new devices for your users, you can use the DISM commands: /Set-InputLocale or /Set-AllIntl to identify a default input profile. You can either select the input profile by its language and keyboard pair (1401:00020401) or you can use a language\\region tag to receive the default settings for that language/region.
+When setting up new devices for your users, you can use the DISM commands: /Set-InputLocale or /Set-AllIntl to identify a default input profile. You can either select the input profile by its language and keyboard pair (1401:00020401) or you can use a language/region tag to receive the default settings for that language/region.
 
 Examples:
 
 ```
-Dism /image:C:\test\offline /Set-InputLocale:042d:0000040a
-Dism /image:C:\test\offline /Set-InputLocale:0411:{03B5835F-F03C-411B-9CE2-AA23E1171E36}{A76C93D9-5523-4E90-AAFA-4DB112F9AC76}
-Dism /image:C:\test\offline /Set-InputLocale:id-ID
-Dism /image:C:\test\offline /Set-AllIntl:fr-FR
+Dism /Image:"C:\mount\windows" /Set-InputLocale:042d:0000040a
+Dism /Image:"C:\mount\windows" /Set-InputLocale:0411:{03B5835F-F03C-411B-9CE2-AA23E1171E36}{A76C93D9-5523-4E90-AAFA-4DB112F9AC76}
+Dism /Image:"C:\mount\windows" /Set-InputLocale:id-ID
+Dism /Image:"C:\mount\windows" /Set-AllIntl:fr-FR
 ```
 
-For a list of language/culture names, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
+For a list of language/region names, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
 
 <table>
 <thead valign="bottom" align="left">

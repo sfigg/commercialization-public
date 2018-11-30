@@ -8,7 +8,7 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 
-redirect_url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-and-remove-language-packs-offline-using-dism
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
 
 ---
 
@@ -23,7 +23,7 @@ To add a LIP to an offline Windows image, you must verify that the supported par
 
 For a list of the LIPs and their parent languages, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
 
-The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
+The version of the LIP must match the version of Windows. For example, you can't add a Windows 10, version 1809 LIP to a Windows 10, version 1803 image.
 
 For Windows 10, language packs and LIPs are also available to download from Windows Update. You can add additional languages by using **Control Panel**. This process requires internet access and access to Windows Update. IT Professionals and end-users can use Windows Update to add additional languages to their Windows installations.
 
@@ -143,13 +143,3 @@ For Windows 10, language packs and LIPs are also available to download from Win
 [Available Language Packs for Windows](available-language-packs-for-windows.md)
 
 [Language Pack Default Values](http://go.microsoft.com/fwlink/?LinkId=206622)
-
- 
-
- 
-
-
-
-
-
-
