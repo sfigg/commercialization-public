@@ -12,7 +12,8 @@ Queries event tracing session the periodic capture state limits.
 
 ## Syntax
 
-```HRESULT VerifySnapshotSupported
+```
+HRESULT VerifySnapshotSupported
 ([in] TRACEHANDLE traceHandle,
 [in, out] ULONG* frequencyInSeconds,
   [in, out] ULONG cProviders);

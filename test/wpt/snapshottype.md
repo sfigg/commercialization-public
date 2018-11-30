@@ -13,7 +13,6 @@ Represents the type of snapshot. Currently the only supported type is **Snapshot
 ## Syntax
 
 ```
-{
   typedef enum
 {
     SnapshotType_Undefined = 0,
