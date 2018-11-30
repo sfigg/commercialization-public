@@ -148,6 +148,9 @@ The following table provides a description of how each international servicing o
 </ul>
 <p>If used with any of the options that specify the individual language or locales, then the individual settings take precedence.</p>
 <p>&lt;<em>language_name</em>&gt; specifies the language name and locale code; for example, en-US, es-ES, or fr-FR.</p>
+<div class="alert">
+<strong>Note</strong><br/><p>As of Windows 10, version 1809, this command does not support setting the UI language to a LIP language.</p>
+</div>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /Set-AllIntl:fr-FR</strong></p></td>
 </tr>
