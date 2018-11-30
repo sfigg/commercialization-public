@@ -12,7 +12,7 @@ ms.topic: article
 
 ---
 
-## Swift Pair
+# Swift Pair
 
 Introduced in Windows 10, version 1803, Swift Pair is the newest way to pair your Bluetooth peripherals to Windows 10 PCs. This topic describes the feature, requirements about how peripherals can support Swift Pair, frequently asked questions about how this quick and convenient feature works.
 
