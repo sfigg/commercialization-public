@@ -25,7 +25,8 @@ Download the [IoT Core Image Wizard](https://go.microsoft.com/fwlink/?linkid=204
 1. Download the zip file
 2. Extract to a folder
 3. See the readme.md in the extracted files for the prerequisites
-4. Once prerequisites are installed, go to the extracted files' folder and run IoTCoreImageWizard.exe
+4. Starting with the Windows 10 October 2018 Update, the RSAT: Server Manager optional feature is needed.  Older Windows 10 Updates use the matching [package](https://www.microsoft.com/en-us/download/details.aspx?id=45520)
+5. Once prerequisites are installed, go to the extracted files' folder and run IoTCoreImageWizard.exe
 
 ## November 2018 Preview release notes
 
