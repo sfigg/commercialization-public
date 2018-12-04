@@ -202,7 +202,7 @@
 ##### [Wpeutil Command-Line Options](desktop/wpeutil-command-line-options.md)
 #### [Windows Setup](desktop/windows-setup-technical-reference.md)
 ##### [Windows Setup Supported Platforms and Cross-Platform Deployments](desktop/windows-setup-supported-platforms-and-cross-platform-deployments.md)
-##### [Add languages to Windows Setup](add-multilingual-support-to-windows-setup.md)
+##### [Add languages to Windows Setup](desktop/add-multilingual-support-to-windows-setup.md)
 ##### [Windows Setup Scenarios and Best Practices](desktop/windows-setup-scenarios-and-best-practices.md)
 ##### [Windows Setup Command-Line Options](desktop/windows-setup-command-line-options.md)
 ##### [Windows Setup States](desktop/windows-setup-states.md)
