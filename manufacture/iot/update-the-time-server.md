@@ -44,11 +44,11 @@ By default, IoT Core devices are setup to synchronize time from time.windows.com
 1.	Create a package definition file, and add it to the image. To learn more, see [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md). Sample script: 
 
 	``` xml
-    <OSComponent> 
-      <RegKeys> 
-         <RegKey KeyName="$(hklm.system)\CurrentControlSet\Services\w32time\Parameters">
-            <RegValue Name="NtpServer" Value="time.windows.com,0x9 NtpServer1,0x9 NtpServer2,0x9" Type="REG_SZ"/>
-        </RegKey>
-      </RegKeys>
-    </OSComponent>
+    <regKeys>
+        <regKey
+            keyName="$(hklm.system)\CurrentControlSet\Services\w32time\Parameters">
+            <regValue name="NtpServer" type="REG_SZ"
+                value="time.windows.com,0x9 NtpServer1,0x9 NtpServer2,0x9" />
+        </regKey>
+    </regKeys>
     ```
