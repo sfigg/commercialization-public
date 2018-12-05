@@ -7,8 +7,7 @@ title: Microsoft Store support for IoTCore Apps
 ms.author: pabab
 ms.date: 08/22/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Install and service apps through Microsoft Store

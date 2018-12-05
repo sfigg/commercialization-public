@@ -8,8 +8,7 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/05/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 # Customize Windows Pen and Ink
 

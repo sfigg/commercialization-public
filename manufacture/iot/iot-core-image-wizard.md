@@ -1,14 +1,13 @@
 ---
 author:
-Description: 'This tool is built utilizing the Windows 10 IoT Core (IoT Core) ADK Add-Ons. To learn more about these tools, see What''s in the Windows ADK IoT Core Add-ons.'
+Description: 'This tool is built utilizing the Windowsï¿½10 IoT Core (IoT Core) ADK Add-Ons. To learn more about these tools, see What''s in the Windows ADK IoT Core Add-ons.'
 ms.assetid:
 MSHAttr: 'PreferredLib:/library'
 title: 'IoT Core Image Wizard'
 ms.author:
 ms.date: 11/06/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # IoT Core Image Wizard (Preview release)

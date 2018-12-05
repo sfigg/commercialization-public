@@ -6,7 +6,7 @@ title: Prepare recovery tools for your Windows images
 ms.author: kenpacq
 ms.date: 11/16/2018
 ms.topic: article
-
+ms.custom: RS5
 ---
 
 # Prepare recovery tools for your Windows images

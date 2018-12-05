@@ -7,8 +7,7 @@ title: Configure International Settings in Windows
 ms.author: kenpacq
 ms.date: 11/07/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # International Settings

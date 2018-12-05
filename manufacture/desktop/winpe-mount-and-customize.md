@@ -7,8 +7,7 @@ title: 'WinPE: Mount and Customize'
 ms.author: kenpacq
 ms.date: 4/24/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # WinPE: Mount and Customize

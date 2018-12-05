@@ -10,6 +10,7 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows - hardware
 ms.technology: windows - oem
+ms.custom: RS5
 ---
 
 # ItemKey

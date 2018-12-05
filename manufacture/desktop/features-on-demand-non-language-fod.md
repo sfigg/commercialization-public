@@ -6,8 +6,7 @@ title: 'Available features on demand'
 ms.author: kenpacq
 ms.date: 11/26/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Available Features on Demand

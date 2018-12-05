@@ -6,8 +6,7 @@ title: 'Enable S mode'
 ms.author: kenpacq
 ms.date: 04/18/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Enable S mode

@@ -7,8 +7,7 @@ title: Windows 10 IoT Core Reset
 ms.author: pabab
 ms.date: 10/15/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Windows 10 IoT Core Reset

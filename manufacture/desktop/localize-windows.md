@@ -6,6 +6,7 @@ title: Localize
 ms.author: kenpacq
 ms.date: 11/13/2018
 ms.topic: article
+ms.custom: RS5
 ---
 
 # Localize

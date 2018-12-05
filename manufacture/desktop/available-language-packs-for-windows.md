@@ -7,6 +7,7 @@ title: Available Language Packs for Windows
 ms.author: kenpacq
 ms.date: 11/28/2018
 ms.topic: article
+ms.custom: RS5
 ---
 
 # Available languages for Windows

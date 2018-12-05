@@ -7,6 +7,7 @@ title: Add languages to Windows images
 ms.author: kenpacq
 ms.date: 11/27/2018
 ms.topic: article
+ms.custom: RS5
 ---
 
 # Add languages to Windows images

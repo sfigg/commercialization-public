@@ -6,8 +6,7 @@ title: Capture and apply an image
 ms.author: kenpacq
 ms.date: 05/16/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Capture and apply a Windows image
