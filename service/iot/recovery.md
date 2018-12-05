@@ -7,8 +7,7 @@ title: Windows 10 IoT Core Recovery
 ms.author: pabab
 ms.date: 05/02/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Windows 10 IoT Core Recovery

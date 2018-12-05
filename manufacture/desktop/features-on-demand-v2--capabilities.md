@@ -7,8 +7,7 @@ title: 'Features On Demand'
 ms.author: kenpacq
 ms.date: 06/27/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Features On Demand

@@ -7,7 +7,7 @@ title: Add Multilingual Support to a Windows Distribution
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
+ms.custom: RS5
 ---
 
 # Add Multilingual Support to a Windows Distribution

@@ -7,8 +7,7 @@ title: 'WinPE: Adding Windows PowerShell support to Windows PE'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # WinPE: Adding Windows PowerShell support to Windows PE

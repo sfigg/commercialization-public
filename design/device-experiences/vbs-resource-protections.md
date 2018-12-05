@@ -4,8 +4,7 @@ description: Provides details for OEMs on how VBS protects access to system reso
 ms.author: justinha
 ms.date: 4/30/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 # Virtualization Based Security System Resource Protections
 

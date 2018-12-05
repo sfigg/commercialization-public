@@ -8,8 +8,7 @@ author: kpacquer
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 # Microsoft-Windows-MicrosoftEdgeBrowser
 

@@ -7,8 +7,7 @@ title: Add and Remove Drivers to an Offline Windows Image
 ms.author: kenpacq
 ms.date: 04/16/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Add and Remove Drivers to an offline Windows Image

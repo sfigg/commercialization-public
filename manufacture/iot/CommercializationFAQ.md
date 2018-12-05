@@ -5,8 +5,7 @@ title: 'Commercialization FAQ'
 ms.author: saclayt
 ms.date: 10/03/18
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Windows 10 IoT Core Commercialization Frequently Asked Questions (FAQ)

@@ -7,8 +7,7 @@ title: 'Create and Install a Package'
 ms.author: pabab
 ms.date: 10/15/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 
@@ -118,13 +117,10 @@ See also
 
 ## Step 3: Install on device
 ---
-
 * Connect to the device ([using SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/SSH) or [using Powershell](https://docs.microsoft.com/windows/iot-core/connect-your-device/powershell))
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
-
 > [!NOTE]
 > You can also install the cab using **Windows Update > CAB Install** option in Windows Device Portal.
-
 The device will reboot into the update OS (showing gears) to install the packages and will reboot again to main OS. This process can take a few minutes.

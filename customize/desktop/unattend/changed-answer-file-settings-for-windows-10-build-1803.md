@@ -5,8 +5,7 @@ author: themar-msft
 ms.author: themar
 ms.date: 04/30/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 # Changed answer file settings for Windows 10 for desktop editions, build 1803
 

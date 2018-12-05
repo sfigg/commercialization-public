@@ -6,8 +6,7 @@ title: 'Device Update Center User Guide'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Device Update Center User Guide

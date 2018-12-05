@@ -7,8 +7,7 @@ author: EliotSeattle
 ms.author: eliotgra
 ms.date: 10/02/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Windows Hardware Compatibility Program Specifications and Policies
