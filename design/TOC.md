@@ -120,7 +120,6 @@
 #### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
 #### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
 #### [Virtualization-based security (VBS) resource protections](device-experiences/vbs-resource-protections.md)
-#### [Hypervisor-protected code integrity (HVCI)](device-experiences/oem-hvci.md)
 #### [Understanding the Windows SMM Security Mitigation Table (WSMT)](device-experiences/OEM-UEFI-WSMT.md)
 #### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
 #### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
