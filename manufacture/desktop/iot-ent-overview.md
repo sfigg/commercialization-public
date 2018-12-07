@@ -30,4 +30,4 @@ This section covers how to build, customize and deploy a Windows 10 IoT Enterpri
 | [Lab 5: Configure Shell Launcher or Assigned Access](iot-ent-shell-launcher-app-launcher.md) |
 
 > [!Note]
-> We also have guidance for a more automated solution. If you want to try script-based image customization and deployment, visit our [GitHub repo](#).
+> We also have guidance for a more automated solution. If you want to try script-based image customization and deployment, visit our [GitHub repo](https://github.com/ms-iot/windows-iotent-deploy).

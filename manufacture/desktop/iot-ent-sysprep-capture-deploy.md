@@ -16,7 +16,7 @@ Now that the reference IoT device has been customized with software and settings
 >[!Note] 
 >The steps below use a combination of WinPE and DISM to complete the capture process. These tools are freely available from Microsoft. Some tools, like DISM, are included with all Windows installations. Many 3rd party tools also offer image capture and deployment that might work better for your deployment strategy. Choose the tool that is right for your device scenario.
  
-For a fully automated approach to these steps consider using the Windows 10 IoT Enterprise deployment framework here: <link to git>. 
+For a fully automated approach to these steps consider using the [Windows 10 IoT Enterprise deployment framework](https://github.com/ms-iot/windows-iotent-deploy). 
 
 ## Prerequisites 
 
@@ -47,7 +47,7 @@ After Sysprep prepares the image, the reference device will shut down. The next 
 
 In this section, we'll show you how to create a bootable WinPE USB drive. You can use this USB key for both capturing and deploying your image. 
 
-The process outlined in the next steps can be scripted to make capturing and deploying images easier. For a fully automated scenario, see the Windows 10 IoT Enterprise deployment framework here: <link to git>. 
+The process outlined in the next steps can be scripted to make capturing and deploying images easier. For a fully automated scenario, see the [Windows 10 IoT Enterprise deployment framework](https://github.com/ms-iot/windows-iotent-deploy)
 
 1. Insert a USB drive into the Technician PC.
     

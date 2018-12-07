@@ -22,7 +22,7 @@ In [Lab 1a](iot-ent-create-a-basic-image.md), you installed Windows 10 IoT Enter
 
 Audit mode isn't necessarily the only way to implement these customizations. If the examples below do not fit into your workflow, explore the desktop deployment documentation for other alternatives. 
 
-For a fully automated approach to these steps consider using the [Windows 10 IoT Enterprise deployment framework](#).
+For a fully automated approach to these steps consider using the [Windows 10 IoT Enterprise deployment framework](https://github.com/ms-iot/windows-iotent-deploy).
 
 ## Prerequisites
 

@@ -17,7 +17,7 @@ In labs [1a](iot-ent-create-a-basic-image.md) and [1b](iot-ent-customize-the-ref
 >[!Note]
 >This lab is optional. You can build an IoT Enterprise device without enabling any of the features described in this lab. If you aren't implementing any of these features, you can continue to [Lab 3](iot-ent-configure-policy-settings.md). 
  
-For a fully automated approach to these steps consider using the [Windows 10 IoT Enterprise deployment framework](#).
+For a fully automated approach to these steps consider using the [Windows 10 IoT Enterprise deployment framework](https://github.com/ms-iot/windows-iotent-deploy).
  
 ## Prerequisites 
 

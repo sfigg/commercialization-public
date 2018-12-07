@@ -19,7 +19,7 @@ Windows 10 IoT Enterprise has two custom shell features that enable this custom 
  
 - **Assigned Access** enables OEMs to set a UWP application as the system shell. Similar to Shell Launcher, Assigned Access can automatically restart the application when it's closed, keeping the device in the intended user experience.
  
-For a fully automated approach to enabling these features, consider using the Windows 10 IoT Enterprise deployment framework here: <link to git>. 
+For a fully automated approach to enabling these features, consider using the [Windows 10 IoT Enterprise deployment framework](https://github.com/ms-iot/windows-iotent-deploy).
 
 ## Prerequisites 
 
@@ -36,7 +36,7 @@ In lab 4 we used Sysprep to get the system ready for capture and deployment. The
 2. Complete the OOBE experience. Choose the settings that match your device requirements.  
  
 >[!Note]
-> The OOBE experience can be fully automated using an Answer File along with Sysprep to answer the OOBE questions in advance. For more details refer to the example Answer Files in the Windows 10 IoT Enterprise deployment framework here: <link to git>. 
+> The OOBE experience can be fully automated using an Answer File along with Sysprep to answer the OOBE questions in advance. For more details refer to the example Answer Files in the [Windows 10 IoT Enterprise deployment framework](https://github.com/ms-iot/windows-iotent-deploy).
 
 ## Enable and configure Shell Launcher
 
