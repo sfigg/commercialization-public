@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: justinha
 author: justinha
-ms.date: 12/07/2018
+ms.date: 12/08/2018
 robots: noindex,nofollow
 ---
 
@@ -162,8 +162,8 @@ The following list of APIs that are not reserved for system use may be impacted:
 - [ZwAllocateVirtualMemory](https://msdn.microsoft.com/library/windows/hardware/ff566416(v=vs.85).aspx)
 - [ZwCreateSection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatesection)
 - [ZwMapViewOfSection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection)
-- [NtCreateSection]()
-- [NtMapViewOfSection]()
+- [NtCreateSection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatesection)
+- [NtMapViewOfSection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection)
 - [StorPortGetDataInBufferSystemAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdatainbuffersystemaddress)
 - [StorPortGetSystemAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetsystemaddress)
 - [DxgkCbMapMemory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkcb_map_memory)
