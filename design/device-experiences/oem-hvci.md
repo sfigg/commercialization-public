@@ -129,6 +129,9 @@ Use the following table to interpret the output to determine what driver code ch
 | Warning | Resolution |
 |---------|------------|
 |Execute Pool Type         |  The caller specified an executable pool type. Calling a memory allocating function that requests executable memory. </br> Be sure that all pool types contain a non executable NX flag.  |
+|Execute Page Protection         |  The caller specified an executable page protection. </br> Specify a "no execute" page protection mask.  |
+|Execute Page Mapping         |  The caller specified an executable memory descriptor list (MDL) mapping. </br> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see [MmGetSystemAddressForMdlSafe](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer).  |
+|Execute-Write Section         |  The image contains an executable and writable section.  |
 
 
 **Which APIs are potentially affected?**   
