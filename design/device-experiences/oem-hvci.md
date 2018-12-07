@@ -136,7 +136,7 @@ Make sure that the mask that is used contains MdlMappingNoExecute. For more info
 |Section Alignment Failures         |  The image contains a section that is not page aligned.
 Section Alignment must be a multiple of 0x1000 (PAGE_SIZE). E.g. DRIVER_ALIGNMENT=0x1000  |
 |Unsupported Relocs         |  In Windows 10 version 1507 through version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation. The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary. For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10 version 1703. </br>
-This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so, for example with large misaligned structs or large arrays of misaligned structs. Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/en-us/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible. |
+This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so, for example with large misaligned structs or large arrays of misaligned structs. Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible. |
 |Unsupported Relocs Code not copied here due to formatting issue.	         |  There are other situations involving the use of assembler code, where this issue can also occur.  |
 |IAT in Executable Section         |  The import address table (IAT), should not be an executable section of memory. </br>
 This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </br>
@@ -146,55 +146,53 @@ One way that this can occur is when using the /MERGE (Combine Sections) option i
 
 The following list of APIs that are not reserved for system use may be impacted:
 
+- [ExAllocatePool](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepool)
+- [ExAllocatePoolWithQuota](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquota)
+- [ExAllocatePoolWithQuotaTag](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquotatag)
+- [ExAllocatePoolWithTag](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag)
+- [ExAllocatePoolWithTagPriority](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority)
+- [ExInitializeNPagedLookasideList](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializenpagedlookasidelist)
+- [ExInitializeLookasideListEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializelookasidelistex)
+- [MmAllocateContiguousMemory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemory)
+- [MmAllocateContiguousMemorySpecifyCache](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache)
+- [MmAllocateContiguousMemorySpecifyCacheNode](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycachenode)
+- [MmAllocateContiguousNodeMemory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousnodememory
+- [MmMapIoSpace](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmapiospace)
+- [MmMapLockedPages](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpages)
+- [MmMapLockedPagesSpecifyCache](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpagesspecifycache)
+- [MmProtectMdlSystemAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmprotectmdlsystemaddress)
+- [ZwAllocateVirtualMemory](https://msdn.microsoft.com/library/windows/hardware/ff566416(v=vs.85).aspx)
+- [ZwCreateSection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatesection)
+- [ZwMapViewOfSection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection)
+- [NtCreateSection]()
+- [NtMapViewOfSection]()
+- [StorPortGetDataInBufferSystemAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdatainbuffersystemaddress)
+- [StorPortGetSystemAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetsystemaddress)
+- [DxgkCbMapMemory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkcb_map_memory)
+- [IMiniportDMus::NewStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-newstream)
+- [FltAllocatePoolAlignedWithTag](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatepoolalignedwithtag)
+- [FltAllocateContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatecontext)
+- [hangerClassAllocatePool](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassallocatepool)
+- [IMiniportMidi::NewStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportmidi-newstream)
+- [IMiniportWaveCyclic::NewStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavecyclic-newstream)
+- [IPortWavePci::NewMasterDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536916(v=vs.85).aspx)
+- [IMiniportWavePci::NewStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepci-newstream)
+- [PcNewDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewdmachannel)
+- [PcNewResourceList](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewresourcelist)
+- [PcNewResourceSublist](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewresourcesublist)
+- [VideoPortAllocatePool](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportallocatepool)
+- [ClfsCreateMarshallingArea](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-clfscreatemarshallingarea)
+- [WdfLookasideListCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdflookasidelistcreate)
+- [WdfMemoryCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycreate)
+- [WdfDeviceAllocAndQueryProperty](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceallocandqueryproperty)
+- [WdfDeviceAllocAndQueryPropertyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceallocandquerypropertyex)
+- [WdfFdoInitAllocAndQueryProperty](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdffdo/nf-wdffdo-wdffdoinitallocandqueryproperty)
+- [WdfFdoInitAllocAndQueryPropertyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdffdo/nf-wdffdo-wdffdoinitallocandquerypropertyex)
+- [WdfIoTargetAllocAndQueryTargetProperty](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfiotarget/nf-wdfiotarget-wdfiotargetallocandquerytargetproperty)
+- [WdfRegistryQueryMemory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfregistry/nf-wdfregistry-wdfregistryquerymemory)
+- [NdisAllocateMemory](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff550762(v=vs.85))
 
 
 Give us feedback, log bugs, and help us make Windows 10 even more secure by [emailing our team](mailto:dgext@microsoft.com).
-
-- [ExAllocatePool](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepool)
-- [ExAllocatePoolWithQuota](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquota)
-- [ExAllocatePoolWithQuotaTag](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquotatag)
-- [ExAllocatePoolWithTag](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag)
-- [ExAllocatePoolWithTagPriority](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority)
-- [ExInitializeNPagedLookasideList](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializenpagedlookasidelist)
-- [ExInitializeLookasideListEx](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializelookasidelistex)
-- [MmAllocateContiguousMemory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemory)
-- [MmAllocateContiguousMemorySpecifyCache](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache)
-- [MmAllocateContiguousMemorySpecifyCacheNode](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycachenode)
-- [MmAllocateContiguousNodeMemory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousnodememory
-- [MmMapIoSpace](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmapiospace)
-- [MmMapLockedPages](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpages)
-- [MmMapLockedPagesSpecifyCache](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpagesspecifycache)
-- [MmProtectMdlSystemAddress](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmprotectmdlsystemaddress)
-- [ZwAllocateVirtualMemory](https://msdn.microsoft.com/en-us/library/windows/hardware/ff566416(v=vs.85).aspx)
-- [ZwCreateSection](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatesection)
-- [ZwMapViewOfSection](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection)
-- [NtCreateSection]()
-- [NtMapViewOfSection]()
-- [StorPortGetDataInBufferSystemAddress](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdatainbuffersystemaddress)
-- [StorPortGetSystemAddress](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetsystemaddress)
-- [DxgkCbMapMemory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkcb_map_memory)
-- [IMiniportDMus::NewStream](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-newstream)
-- [FltAllocatePoolAlignedWithTag](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatepoolalignedwithtag)
-- [FltAllocateContext](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatecontext)
-- [hangerClassAllocatePool](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassallocatepool)
-- [IMiniportMidi::NewStream](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportmidi-newstream)
-- [IMiniportWaveCyclic::NewStream]()
-- [IPortWavePci::NewMasterDmaChannel]()
-- [IMiniportWavePci::NewStream]()
-- [PcNewDmaChannel]()
-- [PcNewResourceList]()
-- [PcNewResourceSublist]()
-- [VideoPortAllocatePool]()
-- [ClfsCreateMarshallingArea]()
-- [WdfLookasideListCreate]()
-- [WdfMemoryCreate]()
-- [WdfDeviceAllocAndQueryProperty]()
-- [WdfDeviceAllocAndQueryPropertyEx]()
-- [WdfFdoInitAllocAndQueryProperty]()
-- [WdfFdoInitAllocAndQueryPropertyEx]()
-- [WdfIoTargetAllocAndQueryTargetProperty]()
-- [WdfRegistryQueryMemory]()
-- [NdisAllocateMemory]()
-
 
 
