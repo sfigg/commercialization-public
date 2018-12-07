@@ -18,7 +18,7 @@ Windows 10 IoT Enterprise is a full version of Windows 10 that delivers enterpri
 
 ## Getting started 
 
-Before reaching out to an Embedded/IoT Distributor, we recommend working with a device that meets the Windows 10 Hardware requirements located [here](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview). You can load your PC or recommended device with an evaluation copy of Windows 10 Enterprise in order to begin prototyping right away.  
+Before reaching out to an Embedded/IoT Distributor, we recommend working with a device that meets the [Windows 10 Hardware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview). You can load your PC or recommended device with an evaluation copy of Windows 10 Enterprise in order to begin prototyping right away.  
 
 In order to start your journey in manufacturing with Windows 10 IoT Enterprise, you'll need to reach out to a distributor from [this list](https://docs.microsoft.com/en-us/windows/iot-core/windows-iot-enterprise).  
 
@@ -39,7 +39,7 @@ Here's how we'll refer to them:
         - Language Pack ISO
 
 - IoT device: A test device or board that represents all of the devices in a single model line. Depending on the device you will most likely need a keyboard, mouse and a monitor. 
-- A USB key that is at least 8GB in size and that can have all information removed from it. 
+- A USB key that's at least 8GB in size and that can have all information removed from it
 
 
 ## Next steps
