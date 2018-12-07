@@ -101,6 +101,7 @@ During driver development and during HLK testing, Device Guard should be disable
 It depends. Many drivers will already be compatible. If using standard settings with the old versions of the WDK and Visual Studio, a known issue is that the INIT section is marked as RWX. In Windows 10, however, the W will automatically be stripped, so if this is the only issue then the driver will be compatible.
 
 **How do I verify that Virtualization Based Protection of Code Integrity is enabled?** 
+
 The simplest mechanism is to run the System Information app (msinfo32). Look for the following line: “Device Guard Security Services Running”. It should report: “Hypervisor enforced Code Integrity”. There is also a WMI interface for checking using management tools.
 
 **Can I verify that Virtualization Based Protection of Code Integrity is enabled programmatically from kernel in order to alter driver behavior?**
@@ -109,6 +110,7 @@ Yes, you can use [NtQuerySystemInformation](https://msdn.microsoft.com/library/w
 The SYSTEM_CODEINTEGRITY_INFORMATION structure has a new 0x400 value exposed, indicating that virtualization based protection of Code Integrity is on.
 
 **How do I fix compatibility issues?**
+
 In addition to double checking that there are no W+X pages and the driver sections are aligned correctly as mentioned above, the most likely issue will be improper memory allocation. Information about the Code Analysis warnings related to memory allocation issued is available on MSDN on the following page:  
 [Code Analysis for Drivers Warnings](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=vs.85).aspx).
 
