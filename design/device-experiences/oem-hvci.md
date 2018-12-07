@@ -1,5 +1,5 @@
 ---
-title: Windows Defender System Guard: Making a leap forward in platform security with Memory integrity in Core isolation (Windows 10)
+title: Windows Defender System Guard Making a leap forward in platform security with Memory integrity in Core isolation (Windows 10)
 description: You can configure Intune settings to reduce threats from removable storage such as USB devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
