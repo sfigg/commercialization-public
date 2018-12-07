@@ -132,6 +132,7 @@ Use the following table to interpret the output to determine what driver code ch
 |Execute Page Protection         |  The caller specified an executable page protection. </br> Specify a "no execute" page protection mask.  |
 |Execute Page Mapping         |  The caller specified an executable memory descriptor list (MDL) mapping. </br> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see [MmGetSystemAddressForMdlSafe](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer).  |
 |Execute-Write Section         |  The image contains an executable and writable section.  |
+|Section Alignment Failures         |  The image contains a section that is not page aligned. </br> Section Alignment must be a multiple of 0x1000 (PAGE_SIZE). For example, DRIVER_ALIGNMENT=0x1000  |
 
 
 **Which APIs are potentially affected?**   
