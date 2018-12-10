@@ -1,5 +1,5 @@
 ---
-title: Turning Swift Pair on by Default for Windows Device Makers
+title: Swift Pair
 description: This topic provides the requirements for Bluetooth pre-pairing in Windows 10.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
