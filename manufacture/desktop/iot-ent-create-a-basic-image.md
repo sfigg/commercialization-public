@@ -3,7 +3,7 @@ author: themar-msft
 Description: Create a basic image that you can further customize
 title: Create a basic Iot Enterprise image
 ms.author: themar
-ms.date: 10/19/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

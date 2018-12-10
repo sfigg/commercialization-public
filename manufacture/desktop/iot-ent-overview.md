@@ -3,7 +3,7 @@ author: themar-msft
 Description: IoT Enterprise overview
 title: IoT Enterprise overview
 ms.author: themar
-ms.date: 10/19/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem

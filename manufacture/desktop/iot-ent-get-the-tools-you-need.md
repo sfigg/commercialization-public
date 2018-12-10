@@ -3,7 +3,7 @@ author: themar-msft
 Description: Get the tools you need to create an IoT Enterprise image
 title: Get the tools you need to customize Windows 10 IoT Enterprise
 ms.author: themar
-ms.date: 10/19/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
