@@ -28,23 +28,19 @@ If you need multiple users to be managing the portal or if you need Special capa
 You should enroll for the Microsoft Store OEM Preinstall program to be able to download the Store signed appx bundle that you can pre-install in your device.
 
 The steps for the enrollment are
-1. Fill out the Commercialization Agreement Interest form [here](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4oorCHCXCJHla0pHy8o5GpUMlVHVkNZNVVON1ZTVUQ0T0lHS1pDV0JFVy4u). You will receive an agreement to sign via email.
-2. Once the agreement is signed, you will receive an email with the Preinstall Permissions Request Form. Please email saclayt@microsoft.com if you do not receive this form.
-3. Sign into the Dev Center Portal and [reserve a name for your app](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) 
-4. Complete the form for the OEM App you want to publish and send email to partnerops@microsoft.com
-   - Provide OEM Name
-   - Provide Dev Center account 
-   - Provide the App ID (app identity Ex: https://www.microsoft.com/store/apps/1abcdefghi23)
-   - Provide the list of [special and restricted capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that you use in your OEM apps for approval
-5. Microsoft Store Partner OPS team verifies applications and enables permissions.
-   - All new app submissions (updates and new apps) to Dev Center following the granting of preinstall permission will be available for download from Dev Center
-   - All approved restricted capabilities will be permitted for all app submissions
+
+> [!NOTE]
+> Requests via email no longer need to be sent to PartnerOps in order to enable capabilites.
+
+1. Sign into the Dev Center Portal and [reserve a name for your app](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name).
+2. Declare capabilites in your app package manifest. If you are declaring any restricted capabilities, you will need to supply a business justification in the submissions options section of your Partner Center at the time of submission.
+More information on different capabilities, their categories, and how to declare them can be found [here](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations). 
+
 
 ## Step 2 : Publish UWP App to Microsoft Store
-Once you have the approval for the preinstall program, you can proceed with [app submissions](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+If everything looks correct, you can proceed with [app submissions](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
 
-Key elements to note here are
-
+Key elements to note here are:
 - **Visibility** : It is recommended that you hide your app in the store by setting the [visibility](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#visibility) appropriately.
 - **TargetDeviceFamily** : TargetDeviceFamily should be set to **Windows.Universal**. Both *Windows.IoT* and *Windows.IoTHeadless* are not allowed for publishing.
 
