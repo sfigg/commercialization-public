@@ -18,8 +18,8 @@ ms.custom: RS5
 You can add languages and regional support to Windows 10 (except for Windows 10 Home Single Language and Windows 10 Home Country Specific editions), and Windows Server.
 
 Windows installations start with at least one language pack and its language components. You can add: 
-* [Language packs](available-language-packs-for-windows.md): Fully-localized Windows UI text for the dialog boxes, menu items, and help files that you see in Windows. Delivered as .cab files, for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab.
-* [Language Interface Packs (LIP)](available-language-packs-for-windows.md#lips): Partially-localized languages. LIPs require a base language pack. For UI that's not localized in the LIP, Windows shows UI from the base language pack. Delivered as .appx files, for example, LanguageExperiencePack.am-et.neutral.appx.
+* [Language packs](available-language-packs-for-windows.md): Localization packages for Windows, delivered as a .cab file, for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Includes UI elements like text for dialog boxes, menu items, and help files.
+* [Language Interface Packs (LIPs)](available-language-packs-for-windows.md#lips): Partially-localized language pack. Requires a base language pack. In Windows 10, version 1809, LIPs are delivered as Local Experience Packs (LXPs) .appx files, for example, LanguageExperiencePack.am-et.neutral.appx. For previous versions of Windows 10, LIPs are delivered as .cab files, for example, C:\Languages\es-ES\lp.cab.
 * [Features On Demand](features-on-demand-language-fod.md): Features include language basics (like spell checking), fonts, optical character recognition, handwriting, text-to-speech, and speech recognition. You can save disk space by choosing not to include some language components in your image. While this reduction in image size can be helpful when creating images for lower-cost devices with small storage, it does lead to an incomplete language experience.  Delivered as .cab files, for example, Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.
 * [Recovery languages](customize-windows-re.md): UI text for the Windows Recovery Environment (WinRE). Delivered as .cab files. Example: lp.cab, WinPE-Rejuv_fr-fr.cab, and more.
 
@@ -77,7 +77,7 @@ To save space, you can remove English language components when deploying to non-
 
     To update the recovery environment, see [Add languages to the recovery environemnt](#add-languages-to-the-recovery-environment).
 
-### Add and remove language packs, LIPs, and Features on Demand
+### Add and remove language packs, LIPs (LXPs), and Features on Demand
 
 Preinstall languages by adding the language packs and their related Features on Demand for all preinstalled languages, including the base languages if you're adding a LIP language.
 
@@ -99,17 +99,25 @@ Preinstall languages by adding the language packs and their related Features on 
 
 2.  **Add LIP languages**. In this example, we add Luxembourgish, which requires the fr-FR base language:
 
-    ```
-    DISM /Image:"C:\mount\windows" /Add-ProvisionedAppxPackage /PackagePath="D:\LocalExperiencePack\lb-lu\LanguageExperiencePack.lb-LU.Neutral.appx /LicensePath:"D:\LocalExperiencePack\lb-lu\License.xml"
-    ```
+    * For Windows 10, version 1809 and later, LIP languages are delivered as LXPs:
+
+      ```
+      DISM /Image:"C:\mount\windows" /Add-ProvisionedAppxPackage /PackagePath="D:\LocalExperiencePack\lb-lu\LanguageExperiencePack.lb-LU.Neutral.appx /LicensePath:"D:\LocalExperiencePack\lb-lu\License.xml"
+      ```
     
-    Where D:\ is the Language Pack ISO
+      Where D:\ is the Language Pack ISO
 
-    Verify that it's in the image:
+      Verify that it's in the image:
 
-    ```
-    DISM /Image:"C:\mount\windows" get-provisionedappxpackages
-    ```
+      ```
+      DISM /Image:"C:\mount\windows" get-provisionedappxpackages
+      ```
+
+    * For earlier versions of Windows 10, LIP languages are delivered as .cab files:
+
+      ```
+      Dism /Image:C:\mount\windows /add-package /packagepath:C:\LanguagePack\LIPs\ca-ES\LIP_ca-ES64bit.cab
+      ```
 
 3.  **Add [language and region Features on Demand](features-on-demand-language-fod.md)** to support your language packs and LIPs. We recommend including the Basic, Fonts, OCR, Text-to-speech, and Speech recognition FODs if they're available for the languages you’re preinstalling. Additionally, include the handwriting language component FOD if you’re shipping a device with a pen. 
 
@@ -141,7 +149,7 @@ Preinstall languages by adding the language packs and their related Features on 
     Dism /Image:"C:\mount\windows" /Get-Capabilities
     ```
 
-5.  **Remove languages, LIPs, and Features on Demand**.
+5.  **Remove languages, LIPs, LXPs, and Features on Demand**.
 
     > [!important]
     > You cannot remove a language pack from an offline Windows image if there are pending online actions. The Windows image should be a recently installed and captured image. This will guarantee that the Windows image does not have any pending online actions that require a reboot.
@@ -153,13 +161,13 @@ Preinstall languages by adding the language packs and their related Features on 
     Dism /Image:"C:\mount\windows" /Get-Capabilities
     ```
 
-    Remove languages and features on demand:
+    Remove languages, .cab-based LIPs, and Features On Demand:
 
     ```
     Dism /Image:"C:\mount\windows" /Remove-Package /PackageName:<language pack name> /PackageName:<feature on demand name> ...
     ```
 
-    Remove LIPs:
+    Remove LIPs added through LXPs:
 
     ```
     Dism /remove-provisionedappxpackage /packagename:Microsoft.LanguageExperiencePack<lang_version>_neutral__8wekyb3d8bbwe
@@ -174,16 +182,20 @@ Preinstall languages by adding the language packs and their related Features on 
 
 7.  **Change your default language, locale, and other international settings**:
 
-    ```
-    Dism /Image:"C:\mount\windows" /set-allIntl:fr-fr
-    ```
+    * For offline images, you can only specify language packs and .cab-based LIPs, not languages delivered as .appx-based LXPs.
+    * If you install a LIP by using a .cab file and specify it as the default system UI language, the LIP language will be set as the default UI language (or system locale) and the parent language will be set as the default system UI language (or install language).
+    
+       ```
+       Dism /Image:"C:\mount\windows" /Set-AllIntl:fr-fr
+       ```
 
-    (Note, this only works for offline images. For online images, use the Control Panel)
-    See which language settings are available: 
+       See which language settings are available: 
 
-    ```
-    Dism /Image:"C:\mount\windows" /Get-Intl
-    ```
+       ```
+       Dism /Image:"C:\mount\windows" /Get-Intl
+       ```
+
+    * For online images, use Control Panel, or the [International Settings PowerShell cmdlets](https://docs.microsoft.com/powershell/module/internationalcmdlets/?view=winserver2012-ps): `Get-WinSystemLocale` and `Set-WinSystemLocale <language>`. This works with languages delivered as LXPs.
 
     For more options, see
     - [Default input profiles (input locales)](default-input-locales-for-windows-language-packs.md)
@@ -193,7 +205,7 @@ Preinstall languages by adding the language packs and their related Features on 
 
 ### Add languages to the recovery environment (Windows RE)
 
-We recommend adding languages to Windows RE for any language you add to Windows.
+We recommend adding languages to [Windows RE](windows-recovery-environment--windows-re--technical-reference.md) for any language you add to Windows.
 
 Not all languages or LIPs have localized recovery images.
 

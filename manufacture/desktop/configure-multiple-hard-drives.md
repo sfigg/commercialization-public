@@ -112,8 +112,6 @@ DISKPART>
     rem       ** Update this size to match the size of
     rem          the recovery tools (winre.wim)
     rem          plus some free space.
-    rem          For drives over 128GB, we recommend
-    rem          at least 990MB.
     rem ==    c. Prepare the Windows partition ========= 
     format quick fs=ntfs label="Windows"
     assign letter="W"

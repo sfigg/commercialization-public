@@ -73,21 +73,24 @@ Each partition can have a maximum of 18 exabytes (~18.8 million terabytes) of sp
     1.  Click **Start**, right-click **This PC**, and then click **Manage**. The **Computer Management** window opens.
     2.  Click **Disk Management**. The list of available drives and partitions appears.
     3.  In the list of drives and partitions, confirm that the system and utility partitions are present and are not assigned a drive letter.
+
 -   **Windows partition**
     -   The partition must have at least 20 gigabytes (GB) of drive space for 64-bit versions, or 16 GB for 32-bit versions.
     -   The Windows partition must be formatted using the NTFS file format.
     -   The Windows partition must have 16 GB of free space after the user has completed the Out Of Box Experience (OOBE) and Automatic Maintenance has completed.
+
 -   **Recovery tools partition**
 
     This partition must be at least 300 MB.
 
-    For drives larger than 128GB, we recommend that this partition is at least 990MB.
-
-    This partition must have enough space for the Windows Recovery Environment tools image (winre.wim, typically between 250-300MB, depending on base language and customizations added), plus enough free space so that the partition can be captured by backup utilities:
-
+    The Windows Recovery Environment (Windows RE) tools require additional free space:
     -   If the partition is less than 500 MB, it must have at least 50 MB of free space.
     -   If the partition is 500 MB or larger, it must have at least 320 MB of free space.
     -   If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
+    
+    When calculating free space, note:
+    - The recovery image, winre.wim, is typically between 250-300MB, depending on what drivers, languages, and customizations you add.
+    - The file system itself can take up additional space. For example, NTFS may reserve 5-15MB or more on a 750MB partition. 
     
     This partition must use the Type ID: DE94BBA4-06D1-4D40-A16A-BFD50179D6AC.
 
@@ -156,8 +159,6 @@ The following steps describe how to partition your hard drives and prepare to ap
     rem       ** Update this size to match the size of
     rem          the recovery tools (winre.wim)
     rem          plus some free space.
-    rem          For drives over 128GB, we recommend
-    rem          at least 990MB.                  **
     rem ==    c. Prepare the Windows partition ========= 
     format quick fs=ntfs label="Windows"
     assign letter="W"

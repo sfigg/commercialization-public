@@ -78,7 +78,11 @@ The following table provides a description of how each international servicing o
 <td align="left"><p>Sets the default system user interface (UI) language. If the language is not installed in the Windows image, the command will fail.</p>
 <p>&lt;<em>language_name</em>&gt; specifies the name of the language to set as the default; for example, ja-JP.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>As of Windows 10, version 1809, this command does not support setting the UI language to a LIP language.</p>
+<strong>Notes:</strong><br/>
+<ul>
+<li><p>This option doesn't support setting the UI to a language that's been installed as a .appx-based Language Experience Pack (LXP).</p></li>
+<li><p>If you install a LIP by using a .cab file and specify it as the default system UI language, the LIP language will be set as the default UI language (or system locale) and the parent language will be set as the default system UI language (or install language).</p></li>
+</ul>
 </div>
 <div>
 
@@ -149,8 +153,10 @@ The following table provides a description of how each international servicing o
 <p>If used with any of the options that specify the individual language or locales, then the individual settings take precedence.</p>
 <p>&lt;<em>language_name</em>&gt; specifies the language name and locale code; for example, en-US, es-ES, or fr-FR.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>As of Windows 10, version 1809, this command does not support setting the UI language to a LIP language.</p>
-</div>
+<ul>
+<li><p>This option doesn't support setting the UI to a language that's been installed as a .appx-based Language Experience Pack (LXP).</p></li>
+<li><p>If you install a LIP by using a .cab file and specify it as the default system UI language, the LIP language will be set as the default UI language (or system locale) and the parent language will be set as the default system UI language (or install language).</p></li>
+</ul></div>
 <p>Example:</p>
 <p><strong>Dism /image:C:\test\offline /Set-AllIntl:fr-FR</strong></p></td>
 </tr>

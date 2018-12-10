@@ -8,6 +8,7 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.custom: RS5
+
 ---
 
 # Push-button reset
@@ -73,7 +74,7 @@ The following Push-button reset features are available to users with Windows 10
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p><a href="deploy-push-button-reset-features.md" data-raw-source="[Deploy push-button reset features using ScanState](deploy-push-button-reset-features.md)">Deploy push-button reset features using ScanState</a> | <a href="bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md" data-raw-source="[Bare metal reset/recovery: enable your users to create recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)">Bare metal reset/recovery: enable your users to create recovery media</a> | <a href="create-media-to-run-push-button-reset-features-s14.md" data-raw-source="[Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md)">Bare metal reset/recovery: create recovery media while deploying new devices</a> | <a href="add-a-script-to-push-button-reset-features.md" data-raw-source="[Add a script to push-button reset features](add-a-script-to-push-button-reset-features.md)">Add a script to push-button reset features</a> | <a href="combine-provisioning-packages-into-a-new-image.md" data-raw-source="[Create a provisioning package with Windows desktop applications](combine-provisioning-packages-into-a-new-image.md)">Create a provisioning package with Windows desktop applications</a> </p></td>
+<td align="left"><p><a href="deploy-push-button-reset-features.md" data-raw-source="[Deploy push-button reset features using ScanState](deploy-push-button-reset-features.md)">Deploy push-button reset features using ScanState</a> | <a href="deploy-pbr-features-using-auto-apply.md">Deploy push-button reset features using Auto-Apply folders</a> | <a href="bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md" data-raw-source="[Bare metal reset/recovery: enable your users to create recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)">Bare metal reset/recovery: enable your users to create recovery media</a> | <a href="create-media-to-run-push-button-reset-features-s14.md" data-raw-source="[Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md)">Bare metal reset/recovery: create recovery media while deploying new devices</a> | <a href="add-a-script-to-push-button-reset-features.md" data-raw-source="[Add a script to push-button reset features](add-a-script-to-push-button-reset-features.md)">Add a script to push-button reset features</a> | <a href="combine-provisioning-packages-into-a-new-image.md" data-raw-source="[Create a provisioning package with Windows desktop applications](combine-provisioning-packages-into-a-new-image.md)">Create a provisioning package with Windows desktop applications</a> </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Configuration files</strong></p></td>

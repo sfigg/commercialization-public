@@ -8,6 +8,7 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.custom: RS5
+
 ---
 
 # Deploy push-button reset features
@@ -427,10 +428,10 @@ If you plan to use Push-button reset’s extensibility points, use the following
     2.  Boot the destination PC to audit mode. This can be accomplished by using an answer file with the Microsoft-Windows-Deployment | Reseal | Mode = audit setting, or by first booting the PC to OOBE, and then pressing CTRL+SHIFT+F3.
     3.  Perform any remaining customizations such as installing applications and device software packages that are specific to the destination PC.
 
-9.  If you have installed OS updates, clean up the superseded components and mark the updates as permanent so that they will be restored during recovery:
+9.  Clean up the image:
 
     ```
-    DISM.exe /Cleanup-Image /StartComponentCleanup /ResetBase
+    DISM.exe /Cleanup-Image /StartComponentCleanup
     ```
 
 **Step 10: Capture and deploy customizations for recovery**

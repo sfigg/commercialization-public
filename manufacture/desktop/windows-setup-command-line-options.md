@@ -7,8 +7,6 @@ title: 'Windows Setup Command-Line Options'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
-
 ---
 
 # Windows Setup Command-Line Options
@@ -355,7 +353,7 @@ To use this setting, you must also use the <font face="courier">/wdsdiscover</fo
 </table>
 
 
-### <span id="setup_exe_exit_codes"></span>Setup.exe exit codes
+<span id="setup_exe_exit_codes"></span>**Setup.exe exit codes**
 
 | Exit code name | Exit code | Cause |
 | --- | --- | --- |

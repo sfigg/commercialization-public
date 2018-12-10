@@ -8,6 +8,7 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 ms.custom: RS5
+
 ---
 
 # Sample scripts
@@ -204,8 +205,6 @@ rem ==    b. Create space for the recovery tools ===
 rem       ** Update this size to match the size of
 rem          the recovery tools (winre.wim)
 rem          plus some free space.
-rem          For drives over 128GB, we recommend
-rem          at least 990MB.
 rem ==    c. Prepare the Windows partition ========= 
 format quick fs=ntfs label="Windows"
 assign letter="W"
@@ -285,8 +284,6 @@ shrink minimum=500
     rem       ** Update this size to match the size of
     rem          the recovery tools (winre.wim)
     rem          plus some free space.
-    rem          For drives over 128GB, we recommend
-    rem          at least 990MB.
 rem ==    c. Prepare the Windows partition ====== 
 format quick fs=ntfs label="Windows"
 assign letter="W"
@@ -471,8 +468,6 @@ shrink minimum=500
 rem       ** Update this size to match the size of
 rem          the recovery tools (winre.wim)
 rem          plus some free space.
-rem          For drives over 128GB, we recommend
-rem          at least 990MB.
 rem === Create Recovery partition ======================
 create partition primary
 format quick fs=ntfs label="Recovery"
@@ -498,8 +493,6 @@ shrink minimum=500
 rem       ** Update this size to match the size of
 rem          the recovery tools (winre.wim)
 rem          plus some free space.
-rem          For drives over 128GB, we recommend
-rem          at least 990MB.
 rem ==    c. Prepare the Recovery partition ====== 
 select disk 0
 create partition primary

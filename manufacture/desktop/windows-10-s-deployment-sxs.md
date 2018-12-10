@@ -303,10 +303,10 @@ Install the latest GDR package that include the latest bug fixes and OS changes.
     dism /image:"C:\mount\winre" /add-package /packagepath:C:\temp\windows10.0-kb4020102-x64_9d406340d67caa80a55bc056e50cf87a2e7647ce.msu
     ```
 
-3. Use DISM to cleanup your image and lock in the updates so they are restored during recovery.
+3. Use DISM to cleanup your image.
     
     ```
-    DISM /Cleanup-Image /Image=C:\mount\winre /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
+    DISM /Cleanup-Image /Image=C:\mount\winre /StartComponentCleanup /ScratchDir:C:\Temp
     ```
 
 See [Add or remove packages offline using DISM](add-or-remove-packages-offline-using-dism.md) for more information about adding packages to your Windows image.

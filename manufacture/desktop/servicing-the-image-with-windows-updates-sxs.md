@@ -46,13 +46,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\WindowsUpdates\windows10.0-kb00001-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00002-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00003-x64.msu" /LogPath=C:\mount\dism.log
     ```
 
-3.  Lock in the updates, so that they are restored during a recovery. 
-
-    ```
-    DISM /Cleanup-Image /Image:"C:\mount\windows" /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
-    ```
-
-4.  Verify that the packages appear correctly:
+3.  Verify that the packages appear correctly:
 
     ```
     Dism /Get-Packages /image:<path_to_image>

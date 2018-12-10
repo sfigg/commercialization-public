@@ -46,12 +46,14 @@ An MBR drive can have up to four standard partitions. Typically, these standard 
     
     We recommend that you place this partition in a separate partition, immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
 
-    This partition must have enough space for the Windows Recovery Environment tools image (winre.wim, typically between 250-300MB, depending on base language and customizations added), plus enough free space so that the partition can be captured by backup utilities:
-
+    The Windows Recovery Environment (Windows RE) tools require additional free space:
     -   If the partition is less than 500 MB, it must have at least 50 MB of free space.
     -   If the partition is 500 MB or larger, it must have at least 320 MB of free space.
     -   If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
-    -   For drives larger than 128GB, we recommend that this partition is at least 990MB.
+    
+    When calculating free space, note:
+    - The recovery image, winre.wim, is typically between 250-300MB, depending on what drivers, languages, and customizations you add.
+    - The file system itself can take up additional space. For example, NTFS may reserve 5-15MB or more on a 750MB partition. 
 
 -   **Data partitions**
 
@@ -74,8 +76,9 @@ If you install Windows using a bootable USB key made by Windows Imaging and Conf
 
 ## <span id="UsingSystemAndUtilityPartitions"></span><span id="usingsystemandutilitypartitions"></span><span id="USINGSYSTEMANDUTILITYPARTITIONS"></span>System and utility partitions
 
-
 By default, system partitions do not appear in File Explorer. This helps protect end users from accidentally modifying a partition.
+
+To keep system and utility partitions from being reset, we recommend using type 0x27. Do not use any of the following types: 0x7, 0x0c, 0x0b, 0x0e, 0x06, and 0x42.
 
 **To set partitions as utility partitions**
 
@@ -130,8 +133,6 @@ The following steps describe how to partition your hard drives and prepare to ap
     rem       ** Update this size to match the size of
     rem          the recovery tools (winre.wim)
     rem          plus some free space.
-    rem          For drives over 128GB, we recommend
-    rem          at least 990MB.                   **
     rem ==    c. Prepare the Windows partition ====== 
     format quick fs=ntfs label="Windows"
     assign letter="W"

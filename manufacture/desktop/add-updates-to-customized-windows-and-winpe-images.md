@@ -8,7 +8,7 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 
-
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/servicing-the-image-with-windows-updates-sxs
 ---
 
 # Add updates to customized Windows images
