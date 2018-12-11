@@ -3,7 +3,7 @@ author: EliotSeattle
 Description: Describes the IoT Core Image Wizard, a tool built using the Windows 10 IoT Core (IoT Core) ADK Add-Ons. 
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core Image Wizard
-ms.author: eliotgra
+ms.author: dawnwood
 ms.date: 11/06/2018
 ms.topic: article
 ms.custom: RS5
