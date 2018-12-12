@@ -1,4 +1,4 @@
----
+﻿---
 author: kpacquer
 Description: 'Features on Demand (capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This page describes non-language FODs.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -122,6 +122,17 @@ These Features on Demand add the retail demo package to a device, for use in ret
 
 **Feature**: Language-specific Retail Demo Content 
 - **CAB name**: Microsoft-Windows-RetailDemo-OfflineContent-Content-*language-country*-Package.cab
+
+
+### Server Core App Compatibility
+
+[Server Core App Compatibility](https://docs.microsoft.com/en-us/windows-server/get-started-19/install-fod-19) significantly improves the app compatibility of the Windows Server Core installation option by including a subset of binaries and packages from Windows Server with Desktop Experience, without adding all components of the Windows Server Desktop Experience graphical environment. This FOD is available on the Server FOD ISO.
+
+**Feature**: Server Core App Compatibility 
+- **CAB name**: Microsoft-Windows-Server-AppCompat-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
+- **Satellites**: Yes
+- **Availability**: Windows Server 2019 (Server Core only)
+
 
 ## FODs that are not preinstalled
 
