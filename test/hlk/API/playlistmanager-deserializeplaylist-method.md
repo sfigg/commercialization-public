@@ -29,7 +29,7 @@ Deserializes a playlist file into a [Playlist](playlist-class.md) object.
 
 `public static Playlist DeserializePlaylist (`
 
-          `string playlistImportPath`
+          `string playlistImportPath`
 
 `)`
 
@@ -38,7 +38,7 @@ Deserializes a playlist file into a [Playlist](playlist-class.md) object.
 
 *playlistImportPath*
 
-     Full path to the playlist file
+     Full path to the playlist file
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -52,9 +52,9 @@ When the given Playlist file cannot be found a **System.IO.FileNotFoundException
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

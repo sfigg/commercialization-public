@@ -44,12 +44,12 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 In earlier releases, the default was **1** for clients and **3** for servers.
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -81,9 +81,9 @@ The following XML output shows how to specify that the computer balances memory 
 
 [Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

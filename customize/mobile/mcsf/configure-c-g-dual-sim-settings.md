@@ -209,7 +209,7 @@ This customization supports: **per-IMSI** value, **per-device** value.
     |:--------------|:-------------------------------------------|
     | 0 or `Slot 0` | Uses the UICC in Slot 0 for NITZ handling. |
     | 1 or `Slot 1` | Uses the UICC in Slot 1 for NITZ handling. |
-     
+     
 
 <a href="" id="testing-"></a>**Testing:**  
 Work with your mobile operator to determine the setting requirements for the network.

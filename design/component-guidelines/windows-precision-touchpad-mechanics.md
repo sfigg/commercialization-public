@@ -66,9 +66,9 @@ This depth provides an optimal click travel distance and has a natural feel to t
 
 **Figure 5 Click Depth**
 
- 
+ 
 
- 
+ 
 
 
 

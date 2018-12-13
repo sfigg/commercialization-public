@@ -7,8 +7,7 @@ title: 'Windows Recovery Environment (Windows RE)'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Windows Recovery Environment (Windows RE)
@@ -68,7 +67,7 @@ This menu enables your users to perform these actions:
 > [!Note]
 > You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md).
 
- 
+ 
 
 ## <span id="Security_considerations"></span><span id="security_considerations"></span><span id="SECURITY_CONSIDERATIONS"></span>Security considerations
 
@@ -98,7 +97,7 @@ You can customize WinRE by adding packages (Windows PE Optional Components), la
 **Note**  
 The number of packages, languages, and drivers is limited by the amount of memory available on the PC. For performance reasons, we recommend that you minimize the number of languages, drivers, and tools that you add to the image.
 
- 
+ 
 
 ## <span id="Hard_drive_partitions"></span><span id="hard_drive_partitions"></span><span id="HARD_DRIVE_PARTITIONS"></span>Hard drive partitions
 
@@ -142,21 +141,21 @@ In order to boot Windows RE directly from memory (also known as RAM disk boot), 
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[Customize Windows RE](customize-windows-re.md) | [Deploy Windows RE](deploy-windows-re.md)</p></td>
+<td align="left"><p><a href="customize-windows-re.md" data-raw-source="[Customize Windows RE](customize-windows-re.md)">Customize Windows RE</a> | <a href="deploy-windows-re.md" data-raw-source="[Deploy Windows RE](deploy-windows-re.md)">Deploy Windows RE</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[REAgentC Command-Line Options](reagentc-command-line-options.md)</p></td>
+<td align="left"><p><a href="reagentc-command-line-options.md" data-raw-source="[REAgentC Command-Line Options](reagentc-command-line-options.md)">REAgentC Command-Line Options</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>
-<td align="left"><p>[Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md)</p></td>
+<td align="left"><p><a href="windows-re-troubleshooting-features.md" data-raw-source="[Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md)">Windows RE Troubleshooting Features</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Add-on tools</strong></p></td>
-<td align="left"><p>[Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md) | [Add a Hardware Recovery Button to Start Windows RE](add-a-hardware-recovery-button-to-start-windows-re.md) | [Push-Button Reset Overview](push-button-reset-overview.md)</p></td>
+<td align="left"><p><a href="add-a-custom-tool-to-the-windows-re-boot-options-menu.md" data-raw-source="[Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md)">Add a Custom Tool to the Windows RE Boot Options Menu</a> | <a href="add-a-hardware-recovery-button-to-start-windows-re.md" data-raw-source="[Add a Hardware Recovery Button to Start Windows RE](add-a-hardware-recovery-button-to-start-windows-re.md)">Add a Hardware Recovery Button to Start Windows RE</a> | <a href="push-button-reset-overview.md" data-raw-source="[Push-Button Reset Overview](push-button-reset-overview.md)">Push-Button Reset Overview</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 

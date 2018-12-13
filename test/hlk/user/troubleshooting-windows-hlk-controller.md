@@ -48,9 +48,9 @@ You must uninstall and reinstall the Windows HLK Controller if you make any of t
 
 [Troubleshooting the Windows HLK Environment](troubleshooting-the-windows-hlk-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

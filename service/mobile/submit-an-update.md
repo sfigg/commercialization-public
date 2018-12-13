@@ -61,7 +61,7 @@ The following diagram shows this procedure:
 
 **Note**  You cannot change OS optional features in the OEMInput.xml file between updates. If a feature is changed, the update will be rejected by the publishing system.
 
- 
+ 
 
 ## <span id="Submit_Microsoft_updates"></span><span id="submit_microsoft_updates"></span><span id="SUBMIT_MICROSOFT_UPDATES"></span>Submit Microsoft updates
 
@@ -81,7 +81,7 @@ The following diagram shows this procedure:
 
 2.  The update is published to Microsoft’s production update server, where the device can [scan, download, and install the update](scan--download--and-install-updates.md).
 
- 
+ 
 
- 
+ 
 

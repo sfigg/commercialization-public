@@ -47,7 +47,7 @@ The provider name in the resource DLL file must be a text string. For example, t
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -91,9 +91,9 @@ The following XML output shows how to describe a recommended online backup servi
 
 [ResourceDll](microsoft-windows-blb-wsb-online-main-resourcedll.md)
 
- 
+ 
 
- 
+ 
 
 
 

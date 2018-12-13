@@ -121,7 +121,7 @@ The HID Usage Tables define the following usages for multi-touch input from digi
 </tbody>
 </table>
 
- 
+ 
 
 -   Contact identifier
 
@@ -155,9 +155,9 @@ The HID Usage Tables define the following usages for multi-touch input from digi
 
 You can see examples of the previous usages in the [EloMT](elotouch-driver.md) sample in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

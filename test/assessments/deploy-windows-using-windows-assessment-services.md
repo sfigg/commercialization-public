@@ -44,7 +44,7 @@ This topic describes all three of these deployment options.
     **Note**  
     The computer and the image architecture must match, except that you can select an x86-based image to deploy to an x64-based computer.
 
-     
+     
 
 **To add assets to a job and use custom deployment**
 
@@ -63,7 +63,7 @@ This topic describes all three of these deployment options.
     **Note**  
     When you schedule a job by using **&lt;Use Predeployed Image&gt;**, the job does not start until you deploy Windows and run **\\\\%WASServer%\\relax\\scripts\\testmachine\\completedeployment.cmd AUTO** at an elevated command prompt.
 
-     
+     
 
 **To add assets to a job without deploying an image**
 
@@ -80,9 +80,9 @@ This topic describes all three of these deployment options.
 
 [Windows Assessment Services common scenarios](windows-assessment-services-how-to-topics--wastechref.md)
 
- 
+ 
 
- 
+ 
 
 
 

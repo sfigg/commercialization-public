@@ -32,13 +32,13 @@ Thread-level report.
 <a href="" id="-exc-dpcisr"></a>**-exc\_dpcisr**  
 Excludes DPC/ISR time from process/thread time if DPC/ISR events are present in the trace.
 
-<a href="" id="-pids-pid-"></a>**-pids***&lt;pid&gt;*  
+<a href="" id="-pids-pid-"></a>**-pids**<em>&lt;pid&gt;</em>  
 Process identifiers to include in the report.
 
-<a href="" id="-exes-name-"></a>**-exes***&lt;name&gt;*  
+<a href="" id="-exes-name-"></a>**-exes**<em>&lt;name&gt;</em>  
 Process names to include in the report.
 
-<a href="" id="-marks-mark-"></a>**-marks***&lt;mark&gt;*  
+<a href="" id="-marks-mark-"></a>**-marks**<em>&lt;mark&gt;</em>  
 Marks that determine the time intervals in the report.
 
 <a href="" id="-timest1-t2"></a>**-times***T1 T2*  
@@ -60,9 +60,9 @@ To disable marks in the trace, specify an empty **–marks** option.
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

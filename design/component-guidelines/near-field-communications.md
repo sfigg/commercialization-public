@@ -34,7 +34,7 @@ This topic covers recommendations for near field communications (NFC) in Windows
 <tr class="even">
 <td>Bus</td>
 <td><p>Refer to Hardware Configurations.</p>
-<p>[SPB API support using I²C, SPI or UART](simple-peripheral-bus--spb-.md)</p></td>
+<p><a href="simple-peripheral-bus--spb-.md" data-raw-source="[SPB API support using I&#178;C, SPI or UART](simple-peripheral-bus--spb-.md)">SPB API support using I²C, SPI or UART</a></p></td>
 </tr>
 <tr class="odd">
 <td>Antenna</td>
@@ -44,7 +44,7 @@ This topic covers recommendations for near field communications (NFC) in Windows
 </tr>
 <tr class="even">
 <td>Implementation</td>
-<td>Compliant with the guidance in [NFC Design Guide](http://go.microsoft.com/fwlink/p/?LinkID=625066) (required).</td>
+<td>Compliant with the guidance in <a href="http://go.microsoft.com/fwlink/p/?LinkID=625066" data-raw-source="[NFC Design Guide](http://go.microsoft.com/fwlink/p/?LinkID=625066)">NFC Design Guide</a> (required).</td>
 </tr>
 <tr class="odd">
 <td>Reliability</td>
@@ -78,7 +78,7 @@ This topic covers recommendations for near field communications (NFC) in Windows
 </tbody>
 </table>
 
- 
+ 
 
 Hardware must comply with the Windows HLK requirements for near field proximity, including but not limited to accuracy, resolution, antenna placement, and range of values.
 
@@ -131,7 +131,7 @@ The table below describes the location for the antenna by form factor.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -156,9 +156,9 @@ The table below describes the location for the antenna by form factor.
 
 [NFC Devices](https://msdn.microsoft.com/library/windows/hardware/dn905575)
 
- 
+ 
 
- 
+ 
 
 
 

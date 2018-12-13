@@ -31,33 +31,33 @@ This article describes how to troubleshoot problems that can occur during Window
 
 To troubleshoot general audio test issues, start with the following steps:
 
-1.  Make sure that all audio endpoints are connected and capable of streaming. This includes but is not limited to headphones, high definition multimedia interface (HDMI), DisplayPort, Sony/Philips digital interface (S/PDIF), and other endpoints.
+1. Make sure that all audio endpoints are connected and capable of streaming. This includes but is not limited to headphones, high definition multimedia interface (HDMI), DisplayPort, Sony/Philips digital interface (S/PDIF), and other endpoints.
 
-    1.  To verify that all devices are connected, open the sound control panel by typing **mmsys.cpl** from a command prompt window. All devices on both the playback and recording tabs should show as being connected.
+   1.  To verify that all devices are connected, open the sound control panel by typing **mmsys.cpl** from a command prompt window. All devices on both the playback and recording tabs should show as being connected.
 
-    2.  Sometimes devices do not display if they were disconnected or disabled. To make sure that all devices are visible, right-click the background of the control panel and verify that both **Show Disabled Devices** and **Show Disconnected Devices** are checked.
+   2.  Sometimes devices do not display if they were disconnected or disabled. To make sure that all devices are visible, right-click the background of the control panel and verify that both **Show Disabled Devices** and **Show Disconnected Devices** are checked.
 
-    3.  To check endpoints on the playback tab for streaming capability, right-click the endpoint and select **Test**. You should hear audio from the endpoint and see the corresponding meter move.
+   3.  To check endpoints on the playback tab for streaming capability, right-click the endpoint and select **Test**. You should hear audio from the endpoint and see the corresponding meter move.
 
-    4.  To check endpoints in the recording tab for streaming capability, speak into the microphone and confirm that the meter moves.
+   4.  To check endpoints in the recording tab for streaming capability, speak into the microphone and confirm that the meter moves.
 
-2.  The fidelity test has a complex setup. Confirm that the test environment is set up correctly. Make sure that you have the cables connected properly. Improperly connected or missing cables result in failures, such as very low THD+N.
+2. The fidelity test has a complex setup. Confirm that the test environment is set up correctly. Make sure that you have the cables connected properly. Improperly connected or missing cables result in failures, such as very low THD+N.
 
-3.  The audio logo tests include several test cases that validate the zero glitch requirement. If a test fails on a glitch test case, we recommend that you review the hardware and driver for issues that can cause glitches. In particular, look for the following causes:
+3. The audio logo tests include several test cases that validate the zero glitch requirement. If a test fails on a glitch test case, we recommend that you review the hardware and driver for issues that can cause glitches. In particular, look for the following causes:
 
-    -   Improper thread priority in drivers together with long DPC / ISRs.
+   -   Improper thread priority in drivers together with long DPC / ISRs.
 
-    -   Improper hardware power management.
+   -   Improper hardware power management.
 
-4.  If a test fails, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+4. If a test fails, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-5.  Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](..\user\windows-hardware-lab-kit-filters.md).
+5. Verify that you have installed the latest Windows HLK filters and kit updates. For more information, see [Windows Hardware Lab Kit Filters](../user/windows-hardware-lab-kit-filters.md).
 
-6.  Review the following Windows HLK topics:
+6. Review the following Windows HLK topics:
 
-    -   [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md)
+   - [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md)
 
-    -   [Audio Device Testing Prerequisites](audio-device-testing-prerequisites.md)
+   - [Audio Device Testing Prerequisites](audio-device-testing-prerequisites.md)
 
 ## <span id="jack"></span><span id="JACK"></span>Jack detection issues
 
@@ -92,11 +92,11 @@ Prior to running the affected audio tests, disconnect wirelessly-connected endpo
 
 [System.Fundamentals Tests](system-fundamentals-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

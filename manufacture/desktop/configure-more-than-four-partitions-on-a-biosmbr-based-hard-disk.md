@@ -49,7 +49,7 @@ Windows PE reassigns disk letters alphabetically, beginning with the letter "C",
 
 In these DiskPart examples, the partitions are assigned the letters "U", "V", "S", "W", and "R" to avoid drive-letter conflicts. After the device reboots, Windows PE automatically assigns the letter "C" to the Windows partition. The Utility1, Utility2, system, and recovery image partitions do not receive drive letters.
 
- 
+ 
 
 The following steps describe how to partition your hard drives and prepare to apply images. You can use the code in the sections that follow to complete these steps.
 
@@ -91,9 +91,9 @@ rem ==    a. Create the Windows partition =======
 create partition logical
 rem ==    b. Create space for the recovery tools  
 shrink minimum=500
-rem       ** NOTE: Update this size to match the
-rem                size of the recovery tools 
-rem                (winre.wim)                 **
+rem       ** Update this size to match the size of
+rem          the recovery tools (winre.wim)
+rem          plus some free space.
 rem ==    c. Prepare the Windows partition ====== 
 format quick fs=ntfs label="Windows"
 assign letter="C"
@@ -116,9 +116,9 @@ After you create the partitions, you can use a deployment script to apply the Wi
 
 [Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md)
 
- 
+ 
 
- 
+ 
 
 
 

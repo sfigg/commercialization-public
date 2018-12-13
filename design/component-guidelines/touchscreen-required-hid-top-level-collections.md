@@ -120,7 +120,7 @@ Contact Level Usages includes all mandatory usages and supported optional usages
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows all the mandatory report level usages that should be present in all input reports for a Windows Touchscreen device.
 
@@ -130,7 +130,7 @@ The following table shows all the mandatory report level usages that should be p
 | Scan Time     | Relative scan time per frame.                                 | 0x0D | 0x56 | Optional           |
 | Contact Count | Total number of contacts that are reported in a given report. | 0x0D | 0x54 | Mandatory          |
 
- 
+ 
 
 Any device that does not report all mandatory usages at either the contact or report level, will be non-functional as a Windows Touchscreen device. Mandatory usages are strictly enforced by the Windows host. Where a logical maximum value has not been restricted, it can be optimized to reduce descriptor size.
 
@@ -182,7 +182,7 @@ A device that supports T and C, uses usage arrays for reporting the X and Y valu
 
 **Note**  These examples take advantage of the HID rule that global items stay the same for every main item, until they are changed. This allows both X and Y usages to share just one entry for the report count.
 
- 
+ 
 
 The following global items must be specified for the X and Y usages:
 
@@ -218,7 +218,7 @@ As shown in the preceding diagram, two contacts are placed on a Windows Touchscr
 | Contact 2: tip switch | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1        | 0        |
 | Contact 2: X, Y       | X₁, Y₁ | X₂, Y₂ | X₃, Y₃ | X₄, Y₄ | X₅, Y₅ | X₆, Y₆ | X₇, Y₇ | X₈, Y₈ | X₉, Y₉ | X₁₀, Y₁₀ | X₁₁, Y₁₁ |
 
- 
+ 
 
 The preceding table shows the report sequence for two contacts with separated lift (Two-Finger Hybrid).
 
@@ -262,7 +262,7 @@ When a device passes the compatibility requirements, Microsoft will issue a cryp
 
 **Note**  Reporting a valid certified blob to the host is optional in Windows 10, but is necessary for backwards compatibility with Windows 8 and Windows 8.1. A device with a THQA blob will include the phrase “Full Windows Touch Support" in the control panel. A device without a certified THQA blob will indicate the phrase “Windows Touch Support” in the control panel.
 
- 
+ 
 
 The blob itself will consist of 256 bytes of binary data, and should be reported as illustrated by the following HID descriptor. Device manufacturers should be sure that before they issue the signed binary blob from Microsoft, the sample blob provided below is presented to Windows instead.
 
@@ -300,7 +300,7 @@ The following is the sample blob in clear text.
 
 **Note**  Windows 10, version 1511 and earlier operating systems do not currently issue this HID feature report to Pen or Touchscreen devices that happen to provide support for it. However, adding support for the *Latency Mode Feature Report* to a device, will make sure that the device is ready for the future date when Windows supports it on Pen and Touchscreen devices.
 
- 
+ 
 
 The latency mode feature report is sent by the host to a Windows Touchscreen device, to indicate when high latency is desirable for power savings, and conversely, when normal latency is desired for operation. For USB-connected Windows Touchscreen devices, this allows the device to differentiate between being suspended for inactivity (runtime IDLE), and being suspended because the system is entering S3 or Connected Standby.
 
@@ -311,7 +311,7 @@ The latency mode should be indicated via the value for the latency mode usage (P
 | 0                  | Normal latency |
 | 1                  | High latency   |
 
- 
+ 
 
 ## Firmware Update Collection (Optional)
 
@@ -324,9 +324,9 @@ This is highly advantageous as it allows for firmware updates to be performed wi
 
 A Windows Touchscreen device should be able to recover from a firmware update that failed due to power loss (or some other error), if you shut down, and then reapply its power supply. It is highly recommended that basic functionality be available even after a failed firmware update.
 
- 
+ 
 
- 
+ 
 
 
 

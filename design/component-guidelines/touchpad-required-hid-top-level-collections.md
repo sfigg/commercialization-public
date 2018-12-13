@@ -43,33 +43,33 @@ The following topics provide more details about the HID top-level collections.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Mouse Collection](touchpad-mouse-collection.md)</p></td>
+<td><p><a href="touchpad-mouse-collection.md" data-raw-source="[Mouse Collection](touchpad-mouse-collection.md)">Mouse Collection</a></p></td>
 <td><p>This topic discusses the mouse collection of a Windows Precision Touchpad device, and explains how the collection provides HID-compliant mouse reporting to the Windows host.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Configuration Collection](touchpad-configuration-collection.md)</p></td>
+<td><p><a href="touchpad-configuration-collection.md" data-raw-source="[Configuration Collection](touchpad-configuration-collection.md)">Configuration Collection</a></p></td>
 <td><p>This topic discusses the role played by the configuration collection of a Windows Precision Touchpad device, in Windows 10 and later operating systems.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md)</p></td>
+<td><p><a href="touchpad-windows-precision-touchpad-collection.md" data-raw-source="[Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md)">Windows Precision Touchpad Collection</a></p></td>
 <td><p>This topic discusses the top-level collection of a Windows Precision Touchpad, and explains how the collection provides HID-compliant touchpad reporting to the Windows host.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Buttons, Report Level Usages](touchpad-buttons-report-level-usages.md)</p></td>
-<td><p>This topic discusses the report level usages for buttons, within the context of the [Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md).</p></td>
+<td><p><a href="touchpad-buttons-report-level-usages.md" data-raw-source="[Buttons, Report Level Usages](touchpad-buttons-report-level-usages.md)">Buttons, Report Level Usages</a></p></td>
+<td><p>This topic discusses the report level usages for buttons, within the context of the <a href="touchpad-windows-precision-touchpad-collection.md" data-raw-source="[Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md)">Windows Precision Touchpad Collection</a>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Firmware Update Collection (Optional)](touchpad-firmware-update-collection--optional-.md)</p></td>
+<td><p><a href="touchpad-firmware-update-collection--optional-.md" data-raw-source="[Firmware Update Collection (Optional)](touchpad-firmware-update-collection--optional-.md)">Firmware Update Collection (Optional)</a></p></td>
 <td><p>A Windows Precision Touchpad device can use the HID protocol to provide a vendor-specific top-level collection for performing device firmware and vendor configuration updates.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

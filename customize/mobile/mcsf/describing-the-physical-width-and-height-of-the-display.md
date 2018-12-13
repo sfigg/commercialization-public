@@ -21,7 +21,7 @@ As part of implementing support for the touch controller hardware, OEMs must add
 **Note**  
 Although OEMs typically configure this behavior by adding a registry value in an INF file that is included in a driver package, this behavior can also be configured via the customization process described below. By using both options, OEMs can define the default behavior in the driver for a specific hardware component, and modify this behavior as necessary in images for different device models that use the same driver.
 
- 
+ 
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 

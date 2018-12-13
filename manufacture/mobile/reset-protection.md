@@ -37,24 +37,24 @@ On retail devices, you enable Reset Protection by adding the RESET\_PROTECTION f
 
 **Note**  If you’re building a test image, use RESET\_PROTECTION\_INTERNAL instead.
 
- 
+ 
 
 **Option 2: Enable when provisioning secure boot keys**
 
 Reset Protection is enabled on a device by provisioning UEFI secure boot keys and is a two-step process:
 
-1.  **Anti-Rollback provisioning** -- The DBX variable must be updated to contain the hashes for the builds that did not support Reset Protection. Specifically, the sample scripts that create PK, KEK, DB and DBX variables will be modified to add in the DBX variable the list of hashes provided by Microsoft. The list of hashes will be supplied by Microsoft in a file called **OEM\_RollbackHashes.bin**. The DBX variable must be signed with the OEM certificate.
+1. **Anti-Rollback provisioning** -- The DBX variable must be updated to contain the hashes for the builds that did not support Reset Protection. Specifically, the sample scripts that create PK, KEK, DB and DBX variables will be modified to add in the DBX variable the list of hashes provided by Microsoft. The list of hashes will be supplied by Microsoft in a file called **OEM\_RollbackHashes.bin**. The DBX variable must be signed with the OEM certificate.
 
-    The following excerpt includes the changes to the script that creates the DBX variable:
+   The following excerpt includes the changes to the script that creates the DBX variable:
 
-    ```
-    write-progress -activity "Making secure boot variables" -status "Creating DBX"
-# add SHA256 hashes from the supplied file to the DBX variable
-    $hashes = Get-Content .\OEM_RollbackHashes.bin
-    format-sb-hashes "dbx" $ownerGuid $hashes
-    ```
+   ```
+   write-progress -activity "Making secure boot variables" -status "Creating DBX"
+   # add SHA256 hashes from the supplied file to the DBX variable
+   $hashes = Get-Content .\OEM_RollbackHashes.bin
+   format-sb-hashes "dbx" $ownerGuid $hashes
+   ```
 
-2.  **Reset and Reactivation Protection provisioning** -- After setting the DBX variable, you must also set the ANTI\_THEFT\_ENABLED authenticated variable. The content of this variable will be provided by Microsoft in the **OEM\_ResetProtection\_Enable\_Resource.bin** file. The name of the variable is ANTI\_THEFT\_ENABLED and the namespace GUID is 1A597235-6378-4910-9F8B-720FEE9357A3. You can set this in the same way as the secure boot keys.
+2. **Reset and Reactivation Protection provisioning** -- After setting the DBX variable, you must also set the ANTI\_THEFT\_ENABLED authenticated variable. The content of this variable will be provided by Microsoft in the **OEM\_ResetProtection\_Enable\_Resource.bin** file. The name of the variable is ANTI\_THEFT\_ENABLED and the namespace GUID is 1A597235-6378-4910-9F8B-720FEE9357A3. You can set this in the same way as the secure boot keys.
 
 ## <span id="How_do_I_update_a_retail_image_with_Reset_Protection_"></span><span id="how_do_i_update_a_retail_image_with_reset_protection_"></span><span id="HOW_DO_I_UPDATE_A_RETAIL_IMAGE_WITH_RESET_PROTECTION_"></span>How do I update a retail image with Reset Protection?
 
@@ -206,9 +206,9 @@ Response codes:
 -   500: An unexpected error. If this persists, contact Microsoft for resolution of the issue.
 -   503: Storage error. If this persists, contact Microsoft for resolution of the issue.
 
- 
+ 
 
- 
+ 
 
 
 

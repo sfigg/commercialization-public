@@ -19,6 +19,7 @@ ms.topic: article
 Test to validate key user scenarios in the camera stack
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>System.Client.Camera.SensorCapture.SensorCapture</li></ul> |  
@@ -31,7 +32,7 @@ Test to validate key user scenarios in the camera stack
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -58,16 +59,16 @@ This test validates camera functionality if the driver supports the extended con
 |---------------------------------|----------------------------------------------------------------------|
 | **DriverVerifierExcludedFlags** | Driver Verifier flags that may be manually excluded for the test run |
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

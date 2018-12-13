@@ -40,9 +40,9 @@ This class contains a method that evaluates a filter constraint.
 
 `public interface IFilterConstraintEvaluator`
 
- 
+ 
 
- 
+ 
 
 
 

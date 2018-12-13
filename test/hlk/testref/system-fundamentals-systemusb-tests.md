@@ -78,9 +78,9 @@ ms.topic: article
 -   [USB Type-C UCSI Data Role Swap](78235e16-41d4-42a5-884a-f9dd08ed34c1.md)
 -   [USB Type-C UCSI Power Role Swap](41ce1085-aa0d-4feb-886c-2468c2ebb7d6.md)
 
- 
+ 
 
- 
+ 
 
 
 

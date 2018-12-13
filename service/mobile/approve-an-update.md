@@ -85,7 +85,7 @@ Open separate TFS update requests for updates from Windows Phone 8.0 to Windows 
     </tbody>
     </table>
 
-     
+     
 
 ## <span id="Approving_Adaptation_Kit__AK__Releases__no_firmware_update_"></span><span id="approving_adaptation_kit__ak__releases__no_firmware_update_"></span><span id="APPROVING_ADAPTATION_KIT__AK__RELEASES__NO_FIRMWARE_UPDATE_"></span>Approving Adaptation Kit (AK) Releases (no firmware update)
 
@@ -142,7 +142,7 @@ Open a TFS update request:
     </tbody>
     </table>
 
-     
+     
 
 ## <span id="Cancelling_RFUs"></span><span id="cancelling_rfus"></span><span id="CANCELLING_RFUS"></span>Cancelling RFUs
 
@@ -197,7 +197,7 @@ Open a TFS update request:
     </tbody>
     </table>
 
-     
+     
 
 ## <span id="After_the_update"></span><span id="after_the_update"></span><span id="AFTER_THE_UPDATE"></span>After the update
 
@@ -211,6 +211,6 @@ The update is published to Microsoft’s production update server, where your cu
 
 [Submit an update](submit-an-update.md)
 
- 
+ 
 
- 
+ 

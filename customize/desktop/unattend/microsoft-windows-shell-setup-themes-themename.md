@@ -22,7 +22,7 @@ ms.topic: article
 
 > [!Note]
 > In Windows 10, if you use this (DesktopBackground/ThemeName) setting, you’ll also need to set (ThemeName/DesktopBackground).
- 
+ 
 
 ## Values
 
@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -86,9 +86,9 @@ The following XML output shows how to name a customized theme, as well as set th
 
 [Themes](microsoft-windows-shell-setup-themes.md)
 
- 
+ 
 
- 
+ 
 
 
 

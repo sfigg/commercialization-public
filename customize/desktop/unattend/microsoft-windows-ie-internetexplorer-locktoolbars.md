@@ -43,7 +43,7 @@ By default, menu toolbars are not visible and must be enabled. Selected toolbars
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ The following XML output shows how to lock the Internet Explorer toolbars.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

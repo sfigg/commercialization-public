@@ -76,12 +76,7 @@ ms.topic: article
 </tr>
 <tr class="even">
 <td align="left">I’ve preinstalled OS updates on the PC, how can I ensure that they are restored during recovery?</td>
-<td align="left">DISM.exe’s /Cleanup-Image command with the /StartComponentCleanup and /ResetBase options marks all installed OS updates as permanent. Permanent updates are always restored during recovery.</td>
-</tr>
-<tr class="odd">
-<td align="left">How can I determine when the /ResetBase option was last run?</td>
-<td align="left"><p>Check the <strong>LastResetBase_UTC</strong> registry entry under the registry path:</p>
-<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing</p></td>
+<td align="left">Updates are always restored during recovery. DISM.exe’s /Cleanup-Image command with the /StartComponentCleanup and /ResetBase options are no longer required to mark all installed OS updates as permanent</td>
 </tr>
 <tr class="even">
 <td align="left">I have files that need to be persisted/restored when Reset your PC and Refresh your PC are performed, but I don’t want to capture them using ScanState. Where should I put these files?</td>
@@ -102,8 +97,8 @@ ms.topic: article
 </tr>
 <tr class="odd">
 <td align="left">How much available disk space is required in order for the Refresh your PC feature to run successfully?</td>
-<td align="left">If you have converted the installed customizations into file pointers referencing the customizations package created using ScanState, the required disk space is: 4GB + size_of_ppkg*0.2
-<p>Otherwise, the required disk space is: 4GB + size_of_ppkg*2</p></td>
+<td align="left">If you have converted the installed customizations into file pointers referencing the customizations package created using ScanState, the required disk space is: 4GB + size_of_ppkg<em>0.2
+<p>Otherwise, the required disk space is: 4GB + size_of_ppkg</em>2</p></td>
 </tr>
 <tr class="even">
 <td align="left">Am I required to reduce the size of the MSR partition from 128MB to 16MB based on the updated partition layout recommendations?</td>
@@ -122,11 +117,11 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

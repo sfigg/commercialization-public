@@ -61,7 +61,7 @@ Most of the Windows Performance Recorder (WPR) built-in profiles are designed t
 </tr>
 <tr class="even">
 <td><p><strong>VAlloc usage</strong></p></td>
-<td><p>Valloc is also known as <strong>VirtualAlloc</strong>. For more information about memory allocation methods, see [Comparing Memory Allocation Methods](http://go.microsoft.com/fwlink/p/?linkid=248997).</p></td>
+<td><p>Valloc is also known as <strong>VirtualAlloc</strong>. For more information about memory allocation methods, see <a href="http://go.microsoft.com/fwlink/p/?linkid=248997" data-raw-source="[Comparing Memory Allocation Methods](http://go.microsoft.com/fwlink/p/?linkid=248997)">Comparing Memory Allocation Methods</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Power usage</strong></p></td>
@@ -70,7 +70,7 @@ Most of the Windows Performance Recorder (WPR) built-in profiles are designed t
 </tbody>
 </table>
 
- 
+ 
 
 For information about how to select a built-in profile from the command line, see [WPR Command-Line Options](wpr-command-line-options.md).
 
@@ -79,9 +79,9 @@ For information about how to select a built-in profile from the command line, se
 
 [WPR Common Scenarios](windows-performance-recorder-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

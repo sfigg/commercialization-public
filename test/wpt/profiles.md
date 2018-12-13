@@ -23,7 +23,7 @@ Represents a collection of collectors, providers, and profiles.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<**Profiles**\>
+  * \<**Profiles**\>
 
 
 ## Syntax

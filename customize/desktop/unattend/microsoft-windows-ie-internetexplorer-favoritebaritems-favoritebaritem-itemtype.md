@@ -44,7 +44,7 @@ To add a predefined Favorite bar item in Windows System Image Manager (Windows 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -94,9 +94,9 @@ The following XML example shows three Favorite bar items.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

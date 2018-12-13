@@ -34,9 +34,9 @@ Represents policies that are applied when the library merges the event trace log
 
 [Classes](classes.md)
 
- 
+ 
 
- 
+ 
 
 
 

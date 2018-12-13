@@ -25,6 +25,7 @@ Only the common elements and attributes are documented here.
 To get the full schema run "pkggen /universalbsp /wmxsd:.", then open **WM0.XSD** with Visual Studio.  
 
 ### identity
+
 |Attribute |Type   |Required|Macro |Notes |
 |----------|-------|--------|------|------|
 |owner     |string |*       |      |      |
@@ -38,6 +39,7 @@ To get the full schema run "pkggen /universalbsp /wmxsd:.", then open **WM0.XSD*
 ```
 
 ### onecorePackageInfo
+
 |Attribute      |Type                                 |Required|Macro |Notes                                                       |
 |---------------|-------------------------------------|--------|------|------------------------------------------------------------|
 |targetPartition|MainOS  Data  UpdateOS  EFIESP  PLAT |*       |      |If onecorePackageInfo is not specified, Default = MainOS    |
@@ -48,6 +50,7 @@ To get the full schema run "pkggen /universalbsp /wmxsd:.", then open **WM0.XSD*
 ```
 
 ### file
+
 |Attribute     |Type   |Required|Macro |Notes                                                                             |
 |--------------|-------|--------|------|----------------------------------------------------------------------------------|
 |source        |string |*       |*     |                                                                                  |
@@ -90,6 +93,7 @@ To see the directories that map to these locations, see C:\Program Files (x86)\W
 ```
 
 ### regKey
+
 |Attribute      |Type   |Required|Macro |Notes |
 |---------------|-------|--------|------|------|
 |keyName        |string |*       |*     |keyName must start with $(hklm.system), $(hklm.software), $(hklm.hardware), $(hklm.sam), $(hklm.security), $(hklm.bcd), $(hklm.drivers), $(hklm.svchost), $(hklm.policies), $(hklm.microsoft), $(hklm.windows), $(hklm.windowsnt), $(hklm.currentcontrolset), $(hklm.services), $(hklm.control), $(hklm.autologger), $(hklm.enum), $(hkcr.root), $(hkcr.classes), $(hkcu.root), $(hkuser.default)| 
@@ -104,6 +108,7 @@ To see the registry keys that map to these locations, see C:\Program Files (x86)
 ```
 
 ### regValue
+
 |Attribute      |Type   |Required|Macro |Notes  |
 |---------------|-------|--------|------|-------|
 |name           |string |        |      |Name of the value you are specifying. If not specified, the Default value in the key will be over-written|

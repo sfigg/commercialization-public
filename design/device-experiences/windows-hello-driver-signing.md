@@ -104,9 +104,9 @@ The driver configuration xml should be included in the driver package that is su
 
 [Windows Hello](windows-hello.md)
 
- 
+ 
 
- 
+ 
 
 
 

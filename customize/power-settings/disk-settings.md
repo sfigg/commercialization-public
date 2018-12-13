@@ -47,19 +47,19 @@ Settings in this subgroup control the power management of disk devices.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Disk burst ignore time](disk-settings-disk-burst-ignore-time.md)</p></td>
+<td><p><a href="disk-settings-disk-burst-ignore-time.md" data-raw-source="[Disk burst ignore time](disk-settings-disk-burst-ignore-time.md)">Disk burst ignore time</a></p></td>
 <td><p>Specifies the period of inactivity to ignore when attempting to aggressively power down the disk.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Disk idle timeout](disk-settings-disk-idle-timeout.md)</p></td>
+<td><p><a href="disk-settings-disk-idle-timeout.md" data-raw-source="[Disk idle timeout](disk-settings-disk-idle-timeout.md)">Disk idle timeout</a></p></td>
 <td><p>Specifies the period of inactivity before the disk is automatically powered down.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Link power management mode - adaptive](disk-settings-link-power-management-mode---adaptive.md)</p></td>
+<td><p><a href="disk-settings-link-power-management-mode---adaptive.md" data-raw-source="[Link power management mode - adaptive](disk-settings-link-power-management-mode---adaptive.md)">Link power management mode - adaptive</a></p></td>
 <td><p>Specifies the period of AHCI link idle time before the link is put into a slumber state when Host-Initiated Power Management (HIPM) or Device-Initiated Power Management (DIPM) is enabled.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Link power management mode - HIPM/DIPM](disk-settings-link-power-management-mode---hipm-dipm.md)</p></td>
+<td><p><a href="disk-settings-link-power-management-mode---hipm-dipm.md" data-raw-source="[Link power management mode - HIPM/DIPM](disk-settings-link-power-management-mode---hipm-dipm.md)">Link power management mode - HIPM/DIPM</a></p></td>
 <td><p>Configures the link power management mode for disk and storage devices that are attached to the system through an AHCI interface.</p></td>
 </tr>
 </tbody>

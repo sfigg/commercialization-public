@@ -29,13 +29,13 @@ If the system is connected to a USB mouse or keyboard, move the mouse or press a
 
 The modern standby entry and exit scenarios are enumerated in the following table. All modern standby systems should be tested for expected behavior in each scenario.
 
--   **Test area:**Entry to and exit from modern standby.
--   **Purpose:**Ensure system can reliably and quickly enter and exit modern standby.
--   **System configuration:**
-    -   Factory image is installed on the system.
-    -   All drivers are loaded in Device Manager.
-    -   Factory Microsoft Store apps are installed.
-    -   System is running on battery power.
+- <strong>Test area:</strong>Entry to and exit from modern standby.
+- <strong>Purpose:</strong>Ensure system can reliably and quickly enter and exit modern standby.
+- **System configuration:**
+  -   Factory image is installed on the system.
+  -   All drivers are loaded in Device Manager.
+  -   Factory Microsoft Store apps are installed.
+  -   System is running on battery power.
 
 <table>
 <colgroup>
@@ -60,7 +60,7 @@ The modern standby entry and exit scenarios are enumerated in the following tabl
 </ul></td>
 <td><p>The system instantly transitions into modern standby (display powers off).</p>
 <p>No audio noises are generated.</p></td>
-<td><p>If the system does not enter modern standby, a trace should be taken to diagnose the problem. See [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md) for instructions on how to capture a trace and analyze the information.</p></td>
+<td><p>If the system does not enter modern standby, a trace should be taken to diagnose the problem. See <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a> for instructions on how to capture a trace and analyze the information.</p></td>
 </tr>
 <tr class="even">
 <td><p>The system can exit modern standby using the following methods:</p>
@@ -77,7 +77,7 @@ The modern standby entry and exit scenarios are enumerated in the following tabl
 </tbody>
 </table>
 
- 
+ 
 
 The [Windows Hardware Certification Kit (HCK)](https://msdn.microsoft.com/windows/hardware/dn913721.aspx#test) includes modern standby tests that exercise entering and exiting modern standby on a system. Running the following tests will further validate the readiness of the system:
 
@@ -94,14 +94,14 @@ Modern standby battery life is directly impacted by hardware and software activi
 
 Start airplane mode testing with a one-hour modern standby session with airplane mode enabled. After resuming the system from modern standby, use SleepStudy to review the activities during the session and the amount of time that the system was in a low-power state.
 
--   **Test area:**Airplane mode low-power state time.
--   **Purpose:**Ensure that the basic activity level of the system is minimal (less than three percent of active time) with factory image and apps installed.
--   **System configuration:**
-    -   Factory image installed on the system.
-    -   All drivers loaded in Device Manager.
-    -   Factory Microsoft Store apps are installed.
-    -   System is running on battery power.
-    -   System is put into airplane mode.
+- <strong>Test area:</strong>Airplane mode low-power state time.
+- <strong>Purpose:</strong>Ensure that the basic activity level of the system is minimal (less than three percent of active time) with factory image and apps installed.
+- **System configuration:**
+  -   Factory image installed on the system.
+  -   All drivers loaded in Device Manager.
+  -   Factory Microsoft Store apps are installed.
+  -   System is running on battery power.
+  -   System is put into airplane mode.
 
 <table>
 <colgroup>
@@ -125,7 +125,7 @@ Start airplane mode testing with a one-hour modern standby session with airplane
 </tbody>
 </table>
 
- 
+ 
 
 To eliminate noise from system resource loading on boot, we recommend that you wait at least 90 seconds after system boot before you start testing. As a general guideline, all modern standby testing should be performed on a system that is running on DC power to so that the power impact can be measured.
 
@@ -138,16 +138,16 @@ Start with a system that is un-muted and use the inbox Music app to play a 256-k
 
 **Note**  USB, Bluetooth, HDMI and other external devices are not supported for low-power audio. Audio playback will continue after the power button is pressed for USB, Bluetooth, and HDMI output, but at an increased power consumption compared to output through the system power jack or the built-in speakers.
 
- 
+ 
 
--   **Test area:**Screen-off audio playback operation and power.
--   **Purpose:**Ensure that audio playback continues without interruption when the power button is pressed during low power consumption.
--   **System configuration:**
-    -   Factory image installed on the system.
-    -   All drivers loaded in Device Manager.
-    -   Factory Microsoft Store apps are installed.
-    -   System is running on battery power.
-    -   • Headphones are available to test output from headphone jack.
+- <strong>Test area:</strong>Screen-off audio playback operation and power.
+- <strong>Purpose:</strong>Ensure that audio playback continues without interruption when the power button is pressed during low power consumption.
+- **System configuration:**
+  -   Factory image installed on the system.
+  -   All drivers loaded in Device Manager.
+  -   Factory Microsoft Store apps are installed.
+  -   System is running on battery power.
+  -   • Headphones are available to test output from headphone jack.
 
 <table>
 <colgroup>
@@ -171,19 +171,19 @@ Start with a system that is un-muted and use the inbox Music app to play a 256-k
 </ul></td>
 <td><p>The system continues to play sound through the speakers/headphones and the volume can be adjusted by using the volume buttons while the screen is powered off.</p>
 <p>Ensure that system is consuming the power expected for low-power audio. Consult with your System on a Chip (SoC) vendor for the expected power consumption for low-power audio.</p></td>
-<td><p>If the system fails to enter a low-power state, a trace is needed to diagnose the problem. For information about how to capture a trace and analyze the information, see [Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md).</p>
+<td><p>If the system fails to enter a low-power state, a trace is needed to diagnose the problem. For information about how to capture a trace and analyze the information, see <a href="capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md" data-raw-source="[Capture and view a WPA trace for modern standby diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md)">Capture and view a WPA trace for modern standby diagnostics</a>.</p>
 <p>If the audio stops when the screen is powered off, this usually means the music app does not have the background transfer API implemented correctly. For more information about this API, see Writing a power savvy background media app.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Testing for low-power audio playback must be done on a system that is running on battery power so that the power impact can be accurately measured.
 
- 
+ 
 
- 
+ 
 
 
 

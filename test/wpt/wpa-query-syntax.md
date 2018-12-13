@@ -42,9 +42,9 @@ The following table describes the available extensions.
 <p><code>[% Weight]:= 5.6</code></p></td>
 </tr>
 <tr class="even">
-<td><p>The asterisk <strong>RegEx</strong> operator (*) is allowed on string types.</p></td>
+<td><p>The asterisk <strong>RegEx</strong> operator (<em>) is allowed on string types.</p></td>
 <td><p>The following query matches both <em>iexplore</em> and <em>explorer</em>, but not <em>myexplorer</em>:</p>
-<p><code>ProcessName:* '.?explore.*'</code></p></td>
+<p><code>ProcessName:</em> &#39;.?explore.*&#39;</code></p></td>
 </tr>
 <tr class="odd">
 <td><p>Memory size suffixes (KB, MB, GB) and time units (s, ms, us, ns) on double and integer literals are supported. These suffixes are not case-sensitive.</p></td>
@@ -58,7 +58,7 @@ The following table describes the available extensions.
 </tbody>
 </table>
 
- 
+ 
 
 You may want to restrict a search scope to a subset of rows by series name. The series name is the name of the right-most non-empty column to the left of the gold bar. In the following table, the series name for rows 1-6 is *Process*. For all other rows, the series name is *Module*.
 
@@ -75,9 +75,9 @@ If you query for `Process:~'iexplore' AND [Series Name] := 'Module'`, rows 7-13 
 
 [WPA Features](wpa-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,7 +29,7 @@ If you transfer a Windows image to a different computer, you must run the **Sysp
 **Important**  
 Beginning with Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your Windows deployment workflow to use the Sysprep command line. For more information about the Sysprep Command line tool, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
 
- 
+ 
 
 ## <span id="SysprepProcess"></span><span id="sysprepprocess"></span><span id="SYSPREPPROCESS"></span>Sysprep Process Overview
 
@@ -127,7 +127,7 @@ The **Sysprep** tool logs Windows Setup actions in different directories, depen
 </table>
 
 The **setupact.log** file is the main log file.
- 
+ 
 
 For more information, see [Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md).
 
@@ -161,9 +161,9 @@ For more information about **Sysprep** providers, see the [System Preparation (S
 
 [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md)
 
- 
+ 
 
- 
+ 
 
 
 

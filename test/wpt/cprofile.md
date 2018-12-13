@@ -34,9 +34,9 @@ Represents a **Profile** object and contains data to configure Event Tracing for
 
 [Classes](classes.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -66,7 +66,7 @@ The ADK **Windows Assessment Console (WAC)** is the tool used to run assessments
 | **Process Private Working Set** | Set of private non-sharable pages recently referenced by a process.                                                                                                                                                                    |
 | **Available**                   | Amount of memory immediately available for use by processes on the system. This metric is composed of pages on the Standby list that do not need to be written to persistent storage before they can be repurposed by other processes. |
 
- 
+ 
 
 ## Exercises
 
@@ -79,9 +79,9 @@ This guide consists of the following exercises.
 
 -   [Exercise 3 - Track Driver Footprint and Dynamic Allocations During Boot](memory-footprint-optimization-exercise-3.md)
 
- 
+ 
 
- 
+ 
 
 
 

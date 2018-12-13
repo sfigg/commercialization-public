@@ -38,7 +38,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -94,9 +94,9 @@ The following XML output shows how to set SNMP.
 
 [RFC1156Agent](microsoft-windows-snmp-agent-service-rfc1156agent.md)
 
- 
+ 
 
- 
+ 
 
 
 

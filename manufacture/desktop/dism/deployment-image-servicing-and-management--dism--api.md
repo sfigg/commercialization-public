@@ -46,29 +46,29 @@ The DISM platform also includes a command-line tool and Windows PowerShell cmdl
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Using the DISM API](using-the-dism-api.md)</p></td>
+<td><p><a href="using-the-dism-api.md" data-raw-source="[Using the DISM API](using-the-dism-api.md)">Using the DISM API</a></p></td>
 <td><p>Review requirements, best practices, and other considerations for using the DISM API.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Creating a DISM Application](creating-a-dism-application.md)</p></td>
+<td><p><a href="creating-a-dism-application.md" data-raw-source="[Creating a DISM Application](creating-a-dism-application.md)">Creating a DISM Application</a></p></td>
 <td><p>Set up a development environment and learn about required functions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DISM API Troubleshooting](dism-api-troubleshooting.md)</p></td>
+<td><p><a href="dism-api-troubleshooting.md" data-raw-source="[DISM API Troubleshooting](dism-api-troubleshooting.md)">DISM API Troubleshooting</a></p></td>
 <td><p>Use the DISM API log file to troubleshoot your custom application.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DISM API Reference](dism-api-reference.md)</p></td>
+<td><p><a href="dism-api-reference.md" data-raw-source="[DISM API Reference](dism-api-reference.md)">DISM API Reference</a></p></td>
 <td><p>Find a function or object defined by the DISM API.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DISM API Samples](dism-api-samples.md)</p></td>
+<td><p><a href="dism-api-samples.md" data-raw-source="[DISM API Samples](dism-api-samples.md)">DISM API Samples</a></p></td>
 <td><p>Look at sample usage of DISM API functions.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -77,9 +77,9 @@ The DISM platform also includes a command-line tool and Windows PowerShell cmdl
 
 [DISM PowerShell Reference](http://go.microsoft.com/fwlink/?LinkId=237612)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ Not all the features that are found on one instance of a **Target** in a **Targe
 
 The **TargetFamiley.GetTests()** method gets a list of all the tests that are required for a **TargetFamily**, but not all the features that are found on a **Target** will be found on all targets. For this reason, the **TargetFamily.GetFeatures()** method returns a list of all features that are found on any **Target**.
 
- 
+ 
 
- 
+ 
 
 
 

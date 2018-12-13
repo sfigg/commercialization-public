@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated.
 
- 
+ 
 
 This method creates a target from [TargetData](targetdata-class.md), and adds it to this product instance.
 
@@ -33,9 +33,9 @@ This method creates a target from [TargetData](targetdata-class.md), and adds it
 
 `public Target CreateTarget (`
 
-          `TargetData data,`
+          `TargetData data,`
 
-          `bool createWithoutAddingTests`
+          `bool createWithoutAddingTests`
 
 `)`
 
@@ -65,9 +65,9 @@ Any target has to be a child of a [TargetFamily](targetfamily-class.md). Any har
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

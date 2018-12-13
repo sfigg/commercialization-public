@@ -7,9 +7,8 @@ title: 'Languages'
 ms.author: kenpacq
 ms.date: 11/7/2018
 ms.topic: article
-
 redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
-
+ms.custom: RS5
 ---
 
 # Languages

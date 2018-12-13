@@ -29,7 +29,7 @@ This action produces a text file listing information related to spinlock activit
 <a href="" id="-summary"></a>**-summary**  
 Summarizes spinlock event information in a tab-delimited format.
 
-<a href="" id="-count-n-"></a>**-count***\[n\]*  
+<a href="" id="-count-n-"></a>**-count**<em>\[n\]</em>  
 Maximum number of files to show.
 
 ## Remarks
@@ -46,7 +46,7 @@ Large numbers of spinlock events may overload the trace buffers and cause events
 
 For more information about the **spinlock** action, see [Customizing Spinlock Parameters](customizing-spinlock-parameters.md).
 
- 
+ 
 
 ## Example
 
@@ -78,9 +78,9 @@ This produces a spinlock report. For information about this report, see [Evaluat
 
 [Xperf Actions](xperf-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

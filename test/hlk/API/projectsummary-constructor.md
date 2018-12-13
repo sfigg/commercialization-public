@@ -34,17 +34,17 @@ This table lists the constructors for the ProjectSummary object.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ProjectSummary Constructor (String, DateTime, String)](projectsummary-constructor--string-datetime-string-.md)</p></td>
+<td><p><a href="projectsummary-constructor--string-datetime-string-.md" data-raw-source="[ProjectSummary Constructor (String, DateTime, String)](projectsummary-constructor--string-datetime-string-.md)">ProjectSummary Constructor (String, DateTime, String)</a></p></td>
 <td><p>This constructor initializes a new instance of the <strong>ProjectSummary</strong> class.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

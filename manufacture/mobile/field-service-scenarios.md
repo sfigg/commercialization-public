@@ -48,7 +48,7 @@ Scenarios can help to identify security vulnerabilities in field service process
 </tr>
 <tr class="even">
 <td align="left"><p>Production manufacturing</p></td>
-<td align="left"><p>The process of flashing phones during manufacturing varies per OEM. Some OEMs use gang programmers that can flash a number of units at a time; others use the flashing technology described in this documentation. For more info on the flashing process, see [Flashing tools](flashing-tools.md).</p></td>
+<td align="left"><p>The process of flashing phones during manufacturing varies per OEM. Some OEMs use gang programmers that can flash a number of units at a time; others use the flashing technology described in this documentation. For more info on the flashing process, see <a href="flashing-tools.md" data-raw-source="[Flashing tools](flashing-tools.md)">Flashing tools</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Rework manufacturing</p></td>
@@ -61,16 +61,16 @@ Scenarios can help to identify security vulnerabilities in field service process
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Manufacturing](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

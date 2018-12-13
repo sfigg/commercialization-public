@@ -26,7 +26,7 @@ The engineering flashing tool set provided by Microsoft compares the values in t
 **Note**  
 This topic describes prerequisites for building an image that can be flashed to a device. OEMs must set additional device platform information including partner names, version numbers, and device names before an image is finalized for retail devices.
 
- 
+ 
 
 ## <a href="" id="setting-smbios-system-information-values-"></a>Setting SMBIOS system information values
 
@@ -48,7 +48,7 @@ For more information about the expected sizes and data types for these values, r
 **Important**  
 The PhoneManufacturer setting must contain a code specified by Microsoft that corresponds to the OEM. This setting is used for targeting device updates, for connecting to the store-within-a-store in the Microsoft Store, and for Watson reports. The value must be a valid OEM ID. To get the valid OEM ID that applies to you, contact your Microsoft representative.
 
- 
+ 
 
 ## Creating the device platform package
 
@@ -85,7 +85,7 @@ The OEMDevicePlatform.xml file contains a single **OEMDevicePlatform** element w
 <li><p><em>PhoneManufacturer</em>.<em>Family</em>.<em>Product Name</em>.<em>Version</em></p></li>
 </ul>
 <p>OEMs can choose whether or not to include the <em>Version</em> value in this string.</p>
-<p>When device platform validation is enabled in the Microsoft flashing application, the values specified in this string will be compared with the corresponding values in the SMBIOS system information structure. For more information, see [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md).</p>
+<p>When device platform validation is enabled in the Microsoft flashing application, the values specified in this string will be compared with the corresponding values in the SMBIOS system information structure. For more information, see <a href="use-the-flashing-tools-provided-by-microsoft.md" data-raw-source="[Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md)">Use the flashing tools provided by Microsoft</a>.</p>
 <p>The device platform XML file can have only a <strong>DevicePlatformID</strong> or <strong>DevicePlatformIDs</strong> element, but not both.</p></td>
 </tr>
 <tr class="odd">
@@ -117,16 +117,16 @@ The OEMDevicePlatform.xml file contains a single **OEMDevicePlatform** element w
   &lt;Name&gt;MainOS&lt;/Name&gt;
 &lt;/CompressedPartitions&gt;</code></pre>
 <div class="alert">
-<strong>Important</strong>  The host computer where the image is created must be running Windows 10. You can also create the image on a host computer running Windows 8.1 or Windows Server 2012 R2 with [KB3066427](https://support.microsoft.com/kb/3066427) installed.
+<strong>Important</strong>  The host computer where the image is created must be running Windows 10. You can also create the image on a host computer running Windows 8.1 or Windows Server 2012 R2 with <a href="https://support.microsoft.com/kb/3066427" data-raw-source="[KB3066427](https://support.microsoft.com/kb/3066427)">KB3066427</a> installed.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following example demonstrates an OEMDevicePlatform.xml file.
 
@@ -193,9 +193,9 @@ When it is necessary to migrate a phone to a new set of device platform values, 
 
 [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md)
 
- 
+ 
 
- 
+ 
 
 
 

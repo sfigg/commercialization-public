@@ -47,23 +47,23 @@ Settings in this subgroup control the customization of system button actions.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Lid open wake action](lid-open-wake-action.md)</p></td>
+<td><p><a href="lid-open-wake-action.md" data-raw-source="[Lid open wake action](lid-open-wake-action.md)">Lid open wake action</a></p></td>
 <td><p>Specifies the action to take when the system lid is opened.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Lid switch close action](power-button-and-lid-settings-lid-switch-close-action.md)</p></td>
+<td><p><a href="power-button-and-lid-settings-lid-switch-close-action.md" data-raw-source="[Lid switch close action](power-button-and-lid-settings-lid-switch-close-action.md)">Lid switch close action</a></p></td>
 <td><p>Specifies the action to take when the system lid is closed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Power button action](power-button-and-lid-settings-power-button-action.md)</p></td>
+<td><p><a href="power-button-and-lid-settings-power-button-action.md" data-raw-source="[Power button action](power-button-and-lid-settings-power-button-action.md)">Power button action</a></p></td>
 <td><p>Specifies the action to take when the system power button is pressed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Power button forced shutdown](power-button-and-lid-settings-power-button-forced-shutdown.md)</p></td>
-<td><p>Specifies the type of system shutdown that occurs when the system power button is pressed if the [power button action](power-button-and-lid-settings-power-button-action.md) is set to Shut Down.</p></td>
+<td><p><a href="power-button-and-lid-settings-power-button-forced-shutdown.md" data-raw-source="[Power button forced shutdown](power-button-and-lid-settings-power-button-forced-shutdown.md)">Power button forced shutdown</a></p></td>
+<td><p>Specifies the type of system shutdown that occurs when the system power button is pressed if the <a href="power-button-and-lid-settings-power-button-action.md" data-raw-source="[power button action](power-button-and-lid-settings-power-button-action.md)">power button action</a> is set to Shut Down.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Sleep button action](power-button-and-lid-settings-sleep-button-action.md)</p></td>
+<td><p><a href="power-button-and-lid-settings-sleep-button-action.md" data-raw-source="[Sleep button action](power-button-and-lid-settings-sleep-button-action.md)">Sleep button action</a></p></td>
 <td><p>Specifies the action to take when the sleep power button is pressed.</p></td>
 </tr>
 </tbody>

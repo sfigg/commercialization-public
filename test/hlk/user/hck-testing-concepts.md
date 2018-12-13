@@ -72,7 +72,7 @@ Windows HLK testing is based on feature detection. Windows HLK determines what a
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="How_it_works"></span><span id="how_it_works"></span><span id="HOW_IT_WORKS"></span>How it works
 
@@ -86,15 +86,15 @@ In the following example, a multi-function printer device contains several featu
 
 In addition to understanding the terminology and logic, consider these best practices:
 
--   Design your hardware using the **Windows Hardware Requirements**.
+- Design your hardware using the **Windows Hardware Requirements**.
 
--   Review the [test reference](..\testref\hardware-lab-kit-test-reference.md) for your device before testing. Any Windows HLK test may require a specific configuration. The more complex the device, the more complex the test configuration.
+- Review the [test reference](../testref/hardware-lab-kit-test-reference.md) for your device before testing. Any Windows HLK test may require a specific configuration. The more complex the device, the more complex the test configuration.
 
--   Manual tests require more time and preparation. You should run manual steps separately from automated tests. When you connect a device to Windows HLK, you can sort detected test by automated and manual. To learn more about any test, select the test from Windows HLK Studio and press F1 for Help.
+- Manual tests require more time and preparation. You should run manual steps separately from automated tests. When you connect a device to Windows HLK, you can sort detected test by automated and manual. To learn more about any test, select the test from Windows HLK Studio and press F1 for Help.
 
--   Ensure that your test server contains the latest QFE and filters. We periodically release updated tests. For more info, see [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=236110) in the Windows Dev Center.
+- Ensure that your test server contains the latest QFE and filters. We periodically release updated tests. For more info, see [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=236110) in the Windows Dev Center.
 
--   Use the test levels to test basic, functional, reliability and certification tests in that order as the different levels provide testing from basics to functionally complete devices.
+- Use the test levels to test basic, functional, reliability and certification tests in that order as the different levels provide testing from basics to functionally complete devices.
 
 ## <span id="Testing_Strategy"></span><span id="testing_strategy"></span><span id="TESTING_STRATEGY"></span>Testing Strategy
 
@@ -112,9 +112,9 @@ The complexity of a device determines the complexity of a test. It can be as sim
 
 For partners interested in automating their test environment, Windows HLK provides scripting and application programming interface (API) support.
 
--   [HLK Automation Tool](hlk-automation-tool.md) - a scripting solution based on Windows PowerShell that enables you to automate a test pass.
+- [HLK Automation Tool](hlk-automation-tool.md) - a scripting solution based on Windows PowerShell that enables you to automate a test pass.
 
--   [HLK Developer Guide](..\developer\hlk-developer-guide.md) - a collection of Windows HLK API that enables you to automate any part of the certification test process. The API exposes all functionality of Windows HLK Studio, so you can use both Windows HLK Studio and automation in your certification test workflow.
+- [HLK Developer Guide](../developer/hlk-developer-guide.md) - a collection of Windows HLK API that enables you to automate any part of the certification test process. The API exposes all functionality of Windows HLK Studio, so you can use both Windows HLK Studio and automation in your certification test workflow.
 
 ## <span id="Test_taxonomy_"></span><span id="test_taxonomy_"></span><span id="TEST_TAXONOMY_"></span>Test taxonomy
 
@@ -154,16 +154,16 @@ The Windows HLK introduces a new set of test types.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [What's New in Windows Hardware Certification Kit](http://go.microsoft.com/fwlink/?LinkId=302048)
 
- 
+ 
 
- 
+ 
 
 
 

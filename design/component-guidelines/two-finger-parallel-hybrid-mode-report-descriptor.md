@@ -134,9 +134,9 @@ The Two Finger Parallel/Hybrid Mode Multi-touch Device sample report descriptor 
     0xc0,                               // END_COLLECTION    
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -68,9 +68,9 @@ The following example shows a sample report descriptor for a touch digitizer dev
     0xc0,                               // END_COLLECTION
 ```
 
- 
+ 
 
- 
+ 
 
 
 

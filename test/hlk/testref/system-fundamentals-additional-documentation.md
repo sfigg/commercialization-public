@@ -27,9 +27,9 @@ ms.topic: article
 -   [Trusted Execution Environment ACPI Profile](trusted-execution-environment-acpi-profile.md)
 -   [Trusted Execution Environment EFI Protocol](trusted-execution-environment-efi-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

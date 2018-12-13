@@ -48,9 +48,9 @@ You can customize the view layout in a variety of ways.
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

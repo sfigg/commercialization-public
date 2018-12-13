@@ -7,8 +7,7 @@ title: Configure International Settings in Windows
 ms.author: kenpacq
 ms.date: 11/07/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # International Settings
@@ -174,7 +173,7 @@ You can configure international settings in an answer file in the following ways
 
 [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md)
 
- 
+ 
 
 
 

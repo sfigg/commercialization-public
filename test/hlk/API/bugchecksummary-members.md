@@ -86,7 +86,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -95,9 +95,9 @@ ms.topic: article
 
 [BugcheckSummary Methods](bugchecksummary-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

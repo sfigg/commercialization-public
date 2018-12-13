@@ -35,7 +35,7 @@ The value specified by the host for input mode (Usage **0x52**) determines the c
 | 0                | Mouse Collection                      |
 | 3                | Windows Precision Touchpad Collection |
 
- 
+ 
 
 The host can issue the input mode feature report to a Windows Precision Touchpad device at any time after reading the report descriptor. This includes time during which data is potentially being reported through the currently active collection. In the event that a mode switch occurs while data is being reported, all contacts and the button states should be reported as up, and all reporting should cease via that collection.
 
@@ -43,7 +43,7 @@ Reporting via the newly specified collection can occur after all contacts are ph
 
 **Note**  It is possible for a non-touchpad capable host to send a value other than those listed in the preceding table. In this case, the device should interpret the value as zero (0), and switch to mouse mode, since only a touchpad capable operating system will issue mode 3.
 
- 
+ 
 
 ## Selective Reporting Feature Report
 
@@ -61,7 +61,7 @@ The values specified by the host for a surface switch (Usage **0x57**) and a but
 | 1              | 0             | Only surface contacts are to be reported.                  |
 | 1              | 1             | Both surface contacts and button state are to be reported. |
 
- 
+ 
 
 The host can issue the selective reporting feature report to a Windows Precision Touchpad device at any time after reading the report descriptor. The selective reporting state should not be persisted by a Windows Precision Touchpad across power reset events.
 
@@ -74,9 +74,9 @@ An I²C-connected Windows Precision Touchpad device should only generate interru
 
 [Sample Report Descriptors](touchpad-sample-report-descriptors.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,7 +24,7 @@ Represents a collector for heap events.
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[Profiles](profiles.md)\>
-    * \<**HeapEventCollector**\>
+    * \<**HeapEventCollector**\>
 
 
 ## Syntax

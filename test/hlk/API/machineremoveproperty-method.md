@@ -40,7 +40,7 @@ This method removes a property (dimension) by name from this machine.
 
 `Public MustOverride Sub RemoveProperty ( _`
 
-          `nameOfPropertyToRemove As String _`
+          `nameOfPropertyToRemove As String _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method removes a property (dimension) by name from this machine.
 
 `public abstract void RemoveProperty (`
 
-          `string nameOfPropertyToRemove`
+          `string nameOfPropertyToRemove`
 
 `)`
 
@@ -57,7 +57,7 @@ This method removes a property (dimension) by name from this machine.
 
 *nameOfPropertyToRemove*
 
-     The name of the property to remove.
+     The name of the property to remove.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -69,9 +69,9 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 
 This is not supported when the project is connected to a package.
 
- 
+ 
 
- 
+ 
 
 
 

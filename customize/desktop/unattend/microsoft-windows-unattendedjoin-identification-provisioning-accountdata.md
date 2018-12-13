@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 Use either [Provisioning](microsoft-windows-unattendedjoin-identification-provisioning.md) or [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md) to join an account to the domain. The settings in Provisioning will be used to join the account to the domain, if values are entered for both the Provisioning and Credentials settings.
 
- 
+ 
 
 For information about joining a domain using Provisioning, see the MSDN topic, [NetJoin](http://go.microsoft.com/fwlink/?LinkId=124095).
 
@@ -58,7 +58,7 @@ To generate the `AccountData` information:
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -95,9 +95,9 @@ The following XML output shows how to set the Provisioning settings.
 
 [Provisioning](microsoft-windows-unattendedjoin-identification-provisioning.md)
 
- 
+ 
 
- 
+ 
 
 
 

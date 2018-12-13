@@ -22,25 +22,25 @@ A project defines the product that you want to test. The Test Levels feature let
 
 The right-pane (**Project Summary**) displays project information. The information pane is empty until you start to test the device. You can highlight the project, and the **Project Summary** automatically loads and displays the data for that project. You can load a project loaded, and still highlight other projects to see the information about those projects.
 
->[!WARNING]
->  
-Although the **Project** tab lets you load a project that is already opened, we recommend that you do not do this because the HLK Controller does not correctly handle the test results of a project that is simultaneously opened multiple times.
+> [!WARNING]
+> 
+> Although the **Project** tab lets you load a project that is already opened, we recommend that you do not do this because the HLK Controller does not correctly handle the test results of a project that is simultaneously opened multiple times.
 
- 
+ 
 
 On this tab, you can perform the following tasks:
 
--   [Create a project](..\getstarted\step-4-create-a-project.md)
+- [Create a project](../getstarted/step-4-create-a-project.md)
 
--   Load an existing project
+- Load an existing project
 
--   Delete or rename a project
+- Delete or rename a project
 
--   View summary information about a project
+- View summary information about a project
 
- 
+ 
 
- 
+ 
 
 
 

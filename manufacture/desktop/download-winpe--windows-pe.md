@@ -7,8 +7,7 @@ title: 'Download WinPE (Windows PE)'
 ms.author: kenpacq
 ms.date: 11/07/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Download WinPE (Windows PE)

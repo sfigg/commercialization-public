@@ -40,7 +40,7 @@ This method extracts all the "supplemental files" linked with a submission packa
 
 `Public Sub ExtractSupplementalFiles ( _`
 
-          `path As String _`
+          `path As String _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method extracts all the "supplemental files" linked with a submission packa
 
 `public void ExtractSupplementalFiles (`
 
-          `string path`
+          `string path`
 
 `)`
 
@@ -57,7 +57,7 @@ This method extracts all the "supplemental files" linked with a submission packa
 
 *path*
 
-     The path under which the supplemental files are to be extracted.
+     The path under which the supplemental files are to be extracted.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception is thrown if *path* is **null** or empty.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,13 +36,13 @@ The following tables list the members exposed by the [PlaylistException Class](p
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PlaylistException Constructor](playlistexception-constructor.md)</p></td>
+<td><p><a href="playlistexception-constructor.md" data-raw-source="[PlaylistException Constructor](playlistexception-constructor.md)">PlaylistException Constructor</a></p></td>
 <td><p>Overloaded.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
@@ -90,7 +90,7 @@ The following tables list the members exposed by the [PlaylistException Class](p
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -114,7 +114,7 @@ The following tables list the members exposed by the [PlaylistException Class](p
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -158,7 +158,7 @@ The following tables list the members exposed by the [PlaylistException Class](p
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -186,7 +186,7 @@ The following tables list the members exposed by the [PlaylistException Class](p
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Events"></span><span id="protected_events"></span><span id="PROTECTED_EVENTS"></span>Protected Events
 
@@ -210,11 +210,11 @@ The following tables list the members exposed by the [PlaylistException Class](p
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

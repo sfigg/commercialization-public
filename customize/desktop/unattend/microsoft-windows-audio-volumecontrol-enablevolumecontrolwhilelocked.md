@@ -43,7 +43,7 @@ Example: While the computer is playing music, the user locks the computer. If **
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ The following XML output specifies that volume controls are not available when t
 
 [Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

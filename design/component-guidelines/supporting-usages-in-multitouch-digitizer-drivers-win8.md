@@ -47,7 +47,7 @@ The HID standard defines the following usages for multi-touch input from digitiz
 | Contact Count         | Actual contact count                 | Touch    | Digitizer | Dynamic Value (DV) | 0x54 |
 | Contact count maximum | Maximum number of contacts supported | Touch    | Digitizer | Dynamic Value (DV) | 0x55 |
 
- 
+ 
 
 <a href="" id="-contact-identifier"></a> **Contact identifier**  
 Specifies the identifier of the current contact. An identifier must remain constant while the contact is detected by the device. Each separate concurrent contact must have a unique identifier. Identifiers can be reused if a contact is no longer detected. If the device supports "in-air" packets (the contact is hovering above the surface), the identifier must persist from the time that the contact is detected until the time that it goes out of range.
@@ -58,9 +58,9 @@ Specifies the number of valid contacts in the current packet. Drivers that use p
 <a href="" id="-contact-count-maximum"></a> **Contact count maximum**  
 Specifies the total number of contacts that a multi-touch device supports. This usage must be included in the multi-touch top-level collection and not in any child collection. This usage must be present in a feature report in the touch top-level collection. While reporting data, a device must not report more contacts than the contact count maximum. Any new contact information reported after the contact count maximum has been reached will be ignored by the host. A device without the Contact count maximum in the descriptor will be considered to be a single-touch device.
 
- 
+ 
 
- 
+ 
 
 
 

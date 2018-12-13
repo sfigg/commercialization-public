@@ -7,14 +7,13 @@ title: 'Wpeutil Command-Line Options'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Wpeutil Command-Line Options
 
 
-The Windows PE utility (Wpeutil) is a command-line tool that enables you to run commands during a Windows PE session. For example, you can shut down or restart Windows PE, enable or disable a firewall, set language settings, and initialize a network.
+The Windows PE utility (Wpeutil) is a command-line tool that enables you to run commands during a Windows PE session. For example, you can shut down or restart Windows PE, enable or disable a firewall, set language settings, and initialize a network.
 
 ## <span id="Wpeutil_Command-Line_Options"></span><span id="wpeutil_command-line_options"></span><span id="WPEUTIL_COMMAND-LINE_OPTIONS"></span>Wpeutil Command-Line Options
 
@@ -34,7 +33,7 @@ Wpeutil SetMuiLanguage de-DE
 > [!important]
 > Wpeutil can only accept one command per line.
 
- 
+
 
 | Command | Description |
 | --- | ---  |
@@ -57,6 +56,7 @@ Wpeutil SetMuiLanguage de-DE
 
  
 
+
 ## <span id="related_topics"></span>Related topics
 
 
@@ -66,9 +66,9 @@ Wpeutil SetMuiLanguage de-DE
 
 [DISM Windows PE Servicing Command-Line Options](dism-windows-pe-servicing-command-line-options.md)
 
- 
 
- 
+
+
 
 
 

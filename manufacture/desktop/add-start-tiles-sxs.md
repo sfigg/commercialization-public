@@ -163,16 +163,16 @@ Note: The Choice attribute is new. This allows different versions of Office to b
 
 In **layoutmodification.xml**:
 
-1.	Add <AppendOfficeSuiteChoice Choice="Desktop2016" /> to the tile:
+1. Add <AppendOfficeSuiteChoice Choice="Desktop2016" /> to the tile:
 
-    ```
-    <LayoutModificationTemplate	xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-    <AppendOfficeSuite/>
-    <AppendOfficeSuiteChoice Choice="Desktop2016" /> 
-</LayoutModificationTemplate>
-    ```
+   ```
+   <LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
+   <AppendOfficeSuite/>
+   <AppendOfficeSuiteChoice Choice="Desktop2016" /> 
+   </LayoutModificationTemplate>
+   ```
 
-2.  Save the LayoutModification.xml file.
+2. Save the LayoutModification.xml file.
 
 ## <span id="Add_layout_to_image"></span>Step 4: Add the layout to the image
 

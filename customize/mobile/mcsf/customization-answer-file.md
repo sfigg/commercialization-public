@@ -77,7 +77,7 @@ The following sample customization answer file shows how to:
                      Owner="ContosoOEM"  
                      OwnerType="OEM">  
 
- 
+
  <!-- This root customization answer file imports two other customization answer files. -->
   <Imports>
     <Import Source="C:\Customization\AnswerFiles\SampleCustomizationImport1.xml" />
@@ -109,7 +109,7 @@ The following sample customization answer file shows how to:
       </TargetState>  
     </Target>  
   </Targets>  
-  
+
 
   <!-- These static settings and data will be installed for all images, regardless of the variant. -->
   <Static>
@@ -291,7 +291,7 @@ The following table defines all the elements in a customization answer file.
 <td><p><strong>DataAssets</strong></p></td>
 <td><p><strong>Static</strong></p></td>
 <td><p>Enables the ability to put data files directly onto the data partition without a package. OEMs specify the type of data from an approved list and the image customization process determines the destination for the data based on the type.</p>
-<p>In Windows Phone 8.1, the following types of data are supported:</p>
+<p>In Windows Phone 8.1, the following types of data are supported:</p>
 <ul>
 <li><p><strong>MapData</strong> – Use to specify map data</p></li>
 <li><p><strong>RetailDemo_Microsoft</strong> – Use to add custom demo content to the Microsoft retail mode provisioning app. This data asset is reserved for Microsoft use and the data assets are provided by Microsoft Marketing. Partners should contact Microsoft to reach your Microsoft marketing contact.</p></li>
@@ -304,7 +304,7 @@ The following table defines all the elements in a customization answer file.
 <tr class="odd">
 <td><p><strong>Variant</strong></p></td>
 <td><p>-</p></td>
-<td><p>These settings in the Variant groups will only be applied if the associated target's conditions are met.</p></td>
+<td><p>These settings in the Variant groups will only be applied if the associated target&#39;s conditions are met.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TargetRefs</strong></p></td>
@@ -317,24 +317,23 @@ The following table defines all the elements in a customization answer file.
 <td><p><strong>Static</strong>, <strong>Variant</strong></p></td>
 <td><p>A collection of applications to be applied statically to the phone, or when a variant is provisioned.</p>
 <p>For a static variant, the app is installed into the system partition. For non-static variants, the .xap file of the app is always included in the data partition.</p>
-<p>For more information, see [Apps: Preloading and storage location](#appspreloadingstoragelocation).</p></td>
+<p>For more information, see <a href="#appspreloadingstoragelocation" data-raw-source="[Apps: Preloading and storage location](#appspreloadingstoragelocation)">Apps: Preloading and storage location</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Settings</strong></p></td>
 <td><p><strong>Static</strong>, <strong>Variant</strong></p></td>
 <td><p>A settings group that is determined by a provided path.</p>
-<p>For more information about the settings group, setting elements, and associated attributes, see [Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md).</p></td>
+<p>For more information about the settings group, setting elements, and associated attributes, see <a href="managed-centralized-settings-framework-mcsf.md" data-raw-source="[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md)">Managed Centralized Settings Framework (MCSF)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Setting</strong></p></td>
 <td><p><strong>Settings</strong></p></td>
 <td><p>A single setting and value that is determined by a name. A <strong>Setting</strong> can contain assets or data files associated with the setting.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If the policy for a specified setting is not included in a package in the image, the setting will not be included in the image and a warning will be displayed.</p>
+<strong>Note</strong><br/><p>If the policy for a specified setting is not included in a package in the image, the setting will not be included in the image and a warning will be displayed.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -345,12 +344,12 @@ The following table defines all the elements in a customization answer file.
 <p>OEMs can use the following optional attributes:</p>
 <p><strong>TargetFileName</strong> can be used to set the name of the file on the device. If there is no <strong>TargetFileName</strong> specified, the source name is used.</p>
 <p><strong>DisplayName</strong> can be used by some settings to display a name such as the ringtone’s display name. The setting determines exactly how this property is used and is a passthrough to a registry value.</p>
-<p><strong>Type</strong> is a flag that indicates the type of asset, as required by some settings. In Windows Phone 8.1, <strong>MO</strong> and <strong>OEM</strong> are supported. If no value is specified, the default value is OEM.</p></td>
+<p><strong>Type</strong> is a flag that indicates the type of asset, as required by some settings. In Windows Phone 8.1, <strong>MO</strong> and <strong>OEM</strong> are supported. If no value is specified, the default value is OEM.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Specifying data values in customization answer files
 
@@ -382,9 +381,9 @@ When creating your customization answer file, certain values must be specified i
 <tr class="even">
 <td><p>Options defined in the policy settings files. For example:</p>
 <p>&lt;Validate&gt;</p>
-<p>   &lt;Option Value=&quot;0&quot; FriendlyName=&quot;Red&quot; /&gt;</p>
-<p>   &lt;Option Value=&quot;1&quot; FriendlyName=&quot;Green&quot; /&gt;</p>
-<p>   &lt;Option Value=&quot;2&quot; FriendlyName=&quot;Blue&quot; /&gt;</p>
+<p>   &lt;Option Value=&quot;0&quot; FriendlyName=&quot;Red&quot; /&gt;</p>
+<p>   &lt;Option Value=&quot;1&quot; FriendlyName=&quot;Green&quot; /&gt;</p>
+<p>   &lt;Option Value=&quot;2&quot; FriendlyName=&quot;Blue&quot; /&gt;</p>
 <p>&lt;/Validate&gt;</p></td>
 <td><p>0 or Red</p>
 <p>1 or Green</p>
@@ -394,20 +393,20 @@ When creating your customization answer file, certain values must be specified i
 <tr class="odd">
 <td><p>REG_MULTI_SZ</p></td>
 <td><p>Red.png;Green.png;Blue.png</p></td>
-<td><p>Multiple text strings separated by a semicolon '<strong>;</strong>'.</p>
-<p>A '<strong>;</strong>' is used as the delimeter for REG_MULTI_SZ so this character cannot be used inside the string because it will be parsed as the separator of two strings.</p></td>
+<td><p>Multiple text strings separated by a semicolon &#39;<strong>;</strong>&#39;.</p>
+<p>A &#39;<strong>;</strong>&#39; is used as the delimeter for REG_MULTI_SZ so this character cannot be used inside the string because it will be parsed as the separator of two strings.</p></td>
 </tr>
 <tr class="even">
 <td><p>REG_BINARY</p></td>
 <td><p>E8,03</p>
 <p>(which corresponds to 0x03E8 hexadecimal)</p></td>
-<td><p>Byte array in hexadecimal format, separated by a comma '<strong>,</strong>'.</p>
+<td><p>Byte array in hexadecimal format, separated by a comma &#39;<strong>,</strong>&#39;.</p>
 <p>Do not add the 0x prefix when specifying this type of registry value in the customization answer file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Targets
 
@@ -448,17 +447,17 @@ To add the priority order for the imported answer file, set the **Priority** att
 
 ```XML
 <ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
-                  Name="Settings Input"
-                  Description="Settings for image build"
-                  Owner="Contoso"
-                  OwnerType="OEM"
-                  Priority="2">
+                  Name="Settings Input"
+                  Description="Settings for image build"
+                  Owner="Contoso"
+                  OwnerType="OEM"
+                  Priority="2">
 ```
 
-**Note**  
+**Note**  
 When setting **Priority**, 1 is the highest, and zero (0) and negative numbers are not allowed.
 
- 
+
 
 ### Specifying files to be imported
 
@@ -484,10 +483,10 @@ OEMs can preload apps using the following customization answer file code snippet
     </Applications>
 ```
 
-**Note**  
+**Note**  
 The AppPreInstaller is specifically looking for provXML files with the filename pattern **MPAP\_\*\_\*.provxml** so make sure your file names are correctly formatted.
 
- 
+
 
 The following table describes where preloaded apps are stored on the device:
 
@@ -518,7 +517,7 @@ The following table describes where preloaded apps are stored on the device:
 </tbody>
 </table>
 
- 
+
 
 All applications can be uninstalled by the user. When applications are uninstalled, the application files remain on the device, but these are not shown in the application list. During a cold boot, or when the user selects **Reset my phone**, apps in the Data partition will be removed while apps in the MainOS partition will be reinstalled. Users can also install apps to the SD card. When the phone boots with an SD card, the user is given an option to select the install location.
 

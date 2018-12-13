@@ -21,7 +21,7 @@ Both Xperf and Windows Performance Recorder (WPR) can run with Common Language R
 
 **Note**  WPR handles CLR symbols directly, so no flags are necessary when configuring and using NGEN support.
 
- 
+ 
 
 When you start a recording in the WPR user interface (UI), NGEN program database files (PDBs) are generated next to the saved recording. These PDBs decode symbols of modules that were created by using NGEN for managed scenarios. For **Recording.etl**, the NGEN PDBs are in the **Recording.etl.NGENPDB** folder.
 
@@ -102,9 +102,9 @@ To transfer the recording to a different computer, make sure that both **Recordi
 
 [symbols](symbols.md)
 
- 
+ 
 
- 
+ 
 
 
 

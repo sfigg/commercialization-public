@@ -51,9 +51,9 @@ Be careful when you share Windows Performance Recorder (WPR) files. These files 
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -69,9 +69,9 @@ The following XML output shows how to configure the `InitialOEMServiceProvider` 
 
 [Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

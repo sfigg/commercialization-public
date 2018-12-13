@@ -22,7 +22,7 @@ Windows Performance Recorder (WPR) recording profiles are stored in an XML file
 **Important**  
 When you author WPRP profiles, you should either inherit profile data from WPR's built-in base profiles, or reuse the same session names to avoid enabling the same provider multiple times.
 
- 
+ 
 
 In this article:
 
@@ -90,7 +90,7 @@ You can use XML tags to change the content of a profile. You must use the **Oper
 **Note**  
 If you do not specify the **Operation** attribute but you use inheritance, WPR uses the default value **Set**.
 
- 
+ 
 
 ## <a href="" id="ex"></a>Example
 
@@ -163,9 +163,9 @@ In this case, Profile-B references Collector-B two times: one time through inher
 
 [WPRControlProfiles Schema](wprcontrolprofiles-schema.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ This method creates a system target from the specified machine
 
 `Public Function FindTargetFromSystem ( _`
 
-          `machine As Machine _`
+          `machine As Machine _`
 
 `) As TargetData`
 
@@ -50,7 +50,7 @@ This method creates a system target from the specified machine
 
 `public TargetData FindTargetFromSystem (`
 
-          `Machine machine`
+          `Machine machine`
 
 `)`
 
@@ -59,7 +59,7 @@ This method creates a system target from the specified machine
 
 *machine*
 
-     The machine to add as a system.
+     The machine to add as a system.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ An exception occurs if *targetId* is **null**.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

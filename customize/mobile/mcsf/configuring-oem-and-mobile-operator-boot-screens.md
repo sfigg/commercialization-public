@@ -52,9 +52,9 @@ To specify two boot screens:
 
 [Configuring a boot screen to display in the final boot screen slot](configuring-a-boot-screen-to-display-in-the-final-boot-screen-slot.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,25 +34,25 @@ The following table lists the properties exposed by the **AssessmentData** class
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AssessmentData.Name Property](assessmentdataname-property.md)</p></td>
+<td><p><a href="assessmentdataname-property.md" data-raw-source="[AssessmentData.Name Property](assessmentdataname-property.md)">AssessmentData.Name Property</a></p></td>
 <td><p>This property represents the name of the assessment data.</p></td>
 </tr>
 <tr class="even">
-<td><p>[AssessmentData.Unit Property](assessmentdataunit-property.md)</p></td>
+<td><p><a href="assessmentdataunit-property.md" data-raw-source="[AssessmentData.Unit Property](assessmentdataunit-property.md)">AssessmentData.Unit Property</a></p></td>
 <td><p>This property represents the unit that this data is measured in.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[AssessmentData.Value Property](assessmentdatavalue-property.md)</p></td>
+<td><p><a href="assessmentdatavalue-property.md" data-raw-source="[AssessmentData.Value Property](assessmentdatavalue-property.md)">AssessmentData.Value Property</a></p></td>
 <td><p>This property represents the value for the unit.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

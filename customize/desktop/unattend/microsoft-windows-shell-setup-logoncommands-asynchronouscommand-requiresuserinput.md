@@ -23,7 +23,7 @@ The `RequiresUserInput` setting is not used.
 **Note**  
 Unlike synchronous commands, asynchronous commands may start and finish in any order. They cannot delay the appearance of the Windows desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about synchronous commands, see [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md).
 
- 
+ 
 
 ## Values
 
@@ -45,7 +45,7 @@ Unlike synchronous commands, asynchronous commands may start and finish in any o
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -69,18 +69,18 @@ The following XML output shows examples of how to set two logon commands. The `R
 
 ```
 <LogonCommands>
-  <AsynchronousCommand wcm:action="add">
-    <CommandLine>c:\asynccommands\command1.exe</CommandLine>
-    <Description>Description_of_command1</Description>
-    <Order>1</Order>
-    <RequiresUserInput>true</RequiresUserInput>
-  </AsynchronousCommand>
-  <AsynchronousCommand wcm:action="add">
-    <CommandLine>c:\asynccommands\command2.exe</CommandLine>
-    <Description>Description_of_command2</Description>
-    <Order>2</Order>
-    <RequiresUserInput>false</RequiresUserInput>
-  </AsynchronousCommand>
+  <AsynchronousCommand wcm:action="add">
+    <CommandLine>c:\asynccommands\command1.exe</CommandLine>
+    <Description>Description_of_command1</Description>
+    <Order>1</Order>
+    <RequiresUserInput>true</RequiresUserInput>
+  </AsynchronousCommand>
+  <AsynchronousCommand wcm:action="add">
+    <CommandLine>c:\asynccommands\command2.exe</CommandLine>
+    <Description>Description_of_command2</Description>
+    <Order>2</Order>
+    <RequiresUserInput>false</RequiresUserInput>
+  </AsynchronousCommand>
 </LogonCommands>
 ```
 
@@ -91,9 +91,9 @@ The following XML output shows examples of how to set two logon commands. The `R
 
 [RequiresUserInput](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-requiresuserinput.md)
 
- 
+ 
 
- 
+ 
 
 
 

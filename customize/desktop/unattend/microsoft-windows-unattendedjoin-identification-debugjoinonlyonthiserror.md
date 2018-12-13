@@ -27,7 +27,7 @@ This setting modifies the behavior of [DebugJoin](microsoft-windows-unattendedjo
 **Important**  
 This is an advanced setting designed to be used by product development and Microsoft Product Support Services. Leave this setting unmodified when you configure the unattended answer file.
 
- 
+ 
 
 ## Values
 
@@ -45,7 +45,7 @@ This is an advanced setting designed to be used by product development and Micro
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -79,9 +79,9 @@ The following XML output shows how to set debug joins.
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

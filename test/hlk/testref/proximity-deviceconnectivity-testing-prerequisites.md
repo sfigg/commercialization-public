@@ -29,11 +29,11 @@ This topic describes the tasks that you must complete before you test your devic
 
 To run the proximity tests, you need the following hardware:
 
--   One test device that includes the proximity feature (for example, a proximity-enabled mouse or keyboard).
+- One test device that includes the proximity feature (for example, a proximity-enabled mouse or keyboard).
 
--   One test computer that meets the [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) and has one near field proximity hardware device attached.
+- One test computer that meets the [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md) and has one near field proximity hardware device attached.
 
--   One proximity controller.
+- One proximity controller.
 
 ## <span id="BKMK_HCK_SDC_sR"></span><span id="bkmk-hck-sdc-sr"></span><span id="BKMK_HCK_SDC_SR"></span>Software requirements
 
@@ -63,19 +63,19 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 Some Windows HLK tests require user intervention. When you're running tests for a submission, it's a best practice to run the automated tests in a block separately from manual tests. This prevents a manual test from interrupting the completion of an automated test.
 
->[!IMPORTANT]
->  
-You must open the desktop on the test computer before you run any proximity tests. To do this, choose the Desktop tile from the Start screen after the test computer starts.
+> [!IMPORTANT]
+> 
+> You must open the desktop on the test computer before you run any proximity tests. To do this, choose the Desktop tile from the Start screen after the test computer starts.
+> 
+> [!NOTE]
+> 
+> If a device supports multiple connectivity methods, complete a separate submission for each connectivity method.
 
->[!NOTE]
->  
-If a device supports multiple connectivity methods, complete a separate submission for each connectivity method.
+ 
 
- 
+ 
 
- 
-
- 
+ 
 
 
 

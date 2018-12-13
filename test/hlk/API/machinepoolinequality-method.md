@@ -42,9 +42,9 @@ This method acts as an Inequality operator. The method always returns **false** 
 
 `Public Shared Operator <> ( _`
 
-          `first As MachinePool, _`
+          `first As MachinePool, _`
 
-          `second As MachinePool _`
+          `second As MachinePool _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ This method acts as an Inequality operator. The method always returns **false** 
 
 `public static bool operator != (`
 
-          `MachinePool first,`
+          `MachinePool first,`
 
-          `MachinePool second`
+          `MachinePool second`
 
 `)`
 
@@ -63,11 +63,11 @@ This method acts as an Inequality operator. The method always returns **false** 
 
 *first*
 
-          The first value to compare against.
+          The first value to compare against.
 
 *second*
 
-          The second value to compare against.
+          The second value to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ This method acts as an Inequality operator. The method always returns **false** 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

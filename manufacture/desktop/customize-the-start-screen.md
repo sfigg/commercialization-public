@@ -41,10 +41,10 @@ You can use settings in an unattended answer file to specify how the app tiles d
     $installedapps = get-AppxPackage
     foreach ($app in $installedapps)
     {
-        foreach ($id in (Get-AppxPackageManifest $app).package.applications.application.id)
-        {
-            $app.packagefamilyname + "!" + $id
-        }
+        foreach ($id in (Get-AppxPackageManifest $app).package.applications.application.id)
+        {
+            $app.packagefamilyname + "!" + $id
+        }
     }
     ```
 
@@ -87,9 +87,9 @@ For more information about these settings, see the StartTiles settings topics in
 
 [Deployment Imaging Servicing Management (DISM) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=239926)
 
- 
+ 
 
- 
+ 
 
 
 

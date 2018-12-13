@@ -54,7 +54,7 @@ The following table describes the command-line parameters for IUTool.exe.
 </tbody>
 </table>
 
- 
+ 
 
 ### Package versioning
 
@@ -70,9 +70,9 @@ GetDULogs -o <output file path>
 
 For more info, see [GetDULogs: Get package update logs](update-packages-on-a-phone-and-get-package-update-logs.md).
 
- 
+ 
 
- 
+ 
 
 
 

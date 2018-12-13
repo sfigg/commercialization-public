@@ -38,9 +38,9 @@ To use another encryption standard on your drive, you must first disable the aut
 
 [Hard Drives and Partitions](hard-drives-and-partitions.md)
 
- 
+ 
 
- 
+ 
 
 
 

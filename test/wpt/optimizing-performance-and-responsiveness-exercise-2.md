@@ -192,9 +192,9 @@ Using this information, a software developer should identify his components and 
 
 You can also use this data to identify the 3rd party processes that launched on boot and is causing high disk usage. If a process appears to be introducing disk contention, it can then be removed from the image or simply not started at boot time.
 
- 
+ 
 
- 
+ 
 
 
 

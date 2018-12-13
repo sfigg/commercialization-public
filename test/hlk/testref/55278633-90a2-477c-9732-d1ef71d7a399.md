@@ -53,6 +53,7 @@ The content in this topic applies to the following test jobs:
 -   WGF11 -- Multi-threading -- two-way stress test (WoW64)
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.D3D101Core.D3D101CorePrimary</li><li>Device.Graphics.AdapterRender.D3D10Core.D3D10CorePrimary</li><li>Device.Graphics.AdapterRender.D3D111Core.D3D111CorePrimary</li><li>Device.Graphics.AdapterRender.D3D11Core.D3D11CorePrimary</li><li>Device.Graphics.AdapterRender.D3D11DriverConcurrentObjectCreation.D3D11CoreA</li><li>Device.Graphics.AdapterRender.D3D11DriverCommandLists.D3D11CoreB</li></ul> |  
@@ -65,7 +66,7 @@ The content in this topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -82,7 +83,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -104,45 +105,45 @@ For troubleshooting information, see [Troubleshooting Device.Graphics Testing](t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::OneWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_10_0'&quot;</p></td>
+<td><p>Te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::OneWayStress#<em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_10_0&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- one-way stress test (FeatureLevel 10.0) test job and the Multi-threading -- one-way stress test (FeatureLevel 10.0) (WoW64) case.</p></td>
 </tr>
 <tr class="even">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::OneWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_11_0'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::OneWayStress#</em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_11_0&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- one-way stress test (FeatureLevel 11.0) test job and the WGF11 -- Multi-threading -- one-way stress test (FeatureLevel 11.0) (WoW64) test job.</p></td>
 </tr>
 <tr class="odd">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::TwoWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_10_0' and @Data:ScenarioId='2'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::TwoWayStress#<em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_10_0&#39; and <xref href="Data:ScenarioId=" data-throw-if-not-resolved="False" data-raw-source="@Data:ScenarioId="></xref>&#39;2&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- two-way stress test - do not bind (FeatureLevel 10.0) test job and the WGF11 -- Multi-threading -- two-way stress test - do not bind (FeatureLevel 10.0) (WoW64) test job.</p></td>
 </tr>
 <tr class="even">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::TwoWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_11_0' and @Data:ScenarioId='2'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::TwoWayStress#</em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_11_0&#39; and <xref href="Data:ScenarioId=" data-throw-if-not-resolved="False" data-raw-source="@Data:ScenarioId="></xref>&#39;2&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- two-way stress test - do not bind (FeatureLevel 11.0) test job and the WGF11 -- Multi-threading -- two-way stress test - do not bind (FeatureLevel 11.0) (WoW64) test job.</p></td>
 </tr>
 <tr class="odd">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::TwoWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:ScenarioId='3' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_10_0'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::TwoWayStress#<em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:ScenarioId=" data-throw-if-not-resolved="False" data-raw-source="@Data:ScenarioId="></xref>&#39;3&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_10_0&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- two-way stress test - immediate context (FeatureLevel 10.0) test job and the WGF11 -- Multi-threading -- two-way stress test - immediate context (FeatureLevel 10.0) (WoW64) test job.</p></td>
 </tr>
 <tr class="even">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::TwoWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:ScenarioId='3' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_11_0'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::TwoWayStress#</em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:ScenarioId=" data-throw-if-not-resolved="False" data-raw-source="@Data:ScenarioId="></xref>&#39;3&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_11_0&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- two-way stress test - immediate context (FeatureLevel 11.0) test job and the WGF11 -- Multi-threading -- two-way stress test - immediate context (FeatureLevel 11.0) (WoW64) test job.</p></td>
 </tr>
 <tr class="odd">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::TwoWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_10_0' and @Data:ScenarioId='1'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::TwoWayStress#<em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_10_0&#39; and <xref href="Data:ScenarioId=" data-throw-if-not-resolved="False" data-raw-source="@Data:ScenarioId="></xref>&#39;1&#39;&quot;</p></td>
 <td><p>Runs both the WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 10.0) test job and the WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 10.0) (WoW64) test job.</p></td>
 </tr>
 <tr class="even">
-<td><p>te.exe D3D11Chess.dll /select:&quot;@Name='D3D11Stress::TwoWayStress#*' and @Data:DriverType='D3D_DRIVER_TYPE_HARDWARE' and @Data:FeatureLevel='D3D_FEATURE_LEVEL_11_0' and @Data:ScenarioId='1'&quot;</p></td>
+<td><p>te.exe D3D11Chess.dll /select:&amp;quot;<xref href="Name=" data-throw-if-not-resolved="False" data-raw-source="@Name="></xref>&#39;D3D11Stress::TwoWayStress#</em>&#39; and <xref href="Data:DriverType=" data-throw-if-not-resolved="False" data-raw-source="@Data:DriverType="></xref>&#39;D3D_DRIVER_TYPE_HARDWARE&#39; and <xref href="Data:FeatureLevel=" data-throw-if-not-resolved="False" data-raw-source="@Data:FeatureLevel="></xref>&#39;D3D_FEATURE_LEVEL_11_0&#39; and <xref href="Data:ScenarioId=" data-throw-if-not-resolved="False" data-raw-source="@Data:ScenarioId="></xref>&#39;1&#39;&quot;</p></td>
 <td><p>Runs both WGF11 -- Multi-threading -- one-way stress test the WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 11.0) test job and the WGF11 -- Multi-threading -- two-way stress test (FeatureLevel 11.0) (WoW64) test job.</p></td>
 </tr>
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -160,68 +161,68 @@ For command line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3D10ProxyDriver.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d11_1SDKLayers.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3D11Chess.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3D11ProxyDriver.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d11SDKLayers.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3D11Stress.Configuration.pict</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3D11Stress.OneWay.pict</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3D11Stress.ThreeWay.pict</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3D11Stress.TwoWay.pict</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\TestBinRoot]\nttest\windowstest\graphics\d3d\chess&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dcompiler_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dx10_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dx11_TEST.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\OSBinRoot]\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 <table>
 <colgroup>
@@ -237,19 +238,19 @@ For command line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11_1sdklayers.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d11ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11sdklayers.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dcompiler_test.dll</p></td>
@@ -257,15 +258,15 @@ For command line help for this test binary, type **/h**.
 </tr>
 <tr class="even">
 <td><p>D3dx10_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>d3dx11_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>WGF11Async.exe</p></td>
@@ -274,7 +275,7 @@ For command line help for this test binary, type **/h**.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -284,11 +285,11 @@ For command line help for this test binary, type **/h**.
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo |
 | **TDRArgs**                  | /get or /set                                         |
 
- 
 
- 
 
- 
+
+
+
 
 
 

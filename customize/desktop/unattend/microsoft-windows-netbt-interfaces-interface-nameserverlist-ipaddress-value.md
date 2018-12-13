@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md) to the answer file.
 
- 
+ 
 
 ## Values
 
@@ -41,7 +41,7 @@ This element does not appear in the **Properties** pane of Windows System Image
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -81,9 +81,9 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 
 [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

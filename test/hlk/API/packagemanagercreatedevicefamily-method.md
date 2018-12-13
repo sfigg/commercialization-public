@@ -44,9 +44,9 @@ This method creates a new device family with the given name.
 
 `Public Overrides Function CreateDeviceFamily ( _`
 
-          `name As String, _`
+          `name As String, _`
 
-          `familyIds As IEnumerable(Of String) _`
+          `familyIds As IEnumerable(Of String) _`
 
 `) As DeviceFamily`
 
@@ -54,9 +54,9 @@ This method creates a new device family with the given name.
 
 `public override DeviceFamily CreateDeviceFamily (`
 
-          `string name,`
+          `string name,`
 
-          `IEnumerable<string> familyIds`
+          `IEnumerable<string> familyIds`
 
 `)`
 
@@ -65,11 +65,11 @@ This method creates a new device family with the given name.
 
 *name*
 
-     The name to create the device family with.
+     The name to create the device family with.
 
 *familyIds*
 
-     The list of ID values to use for the device family.
+     The list of ID values to use for the device family.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -81,9 +81,9 @@ Returns a [DeviceFamily Class](devicefamily-class.md).
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

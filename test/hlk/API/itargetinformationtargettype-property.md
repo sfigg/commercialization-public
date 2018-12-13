@@ -40,7 +40,7 @@ This property represents the type of the test target. A test target can be an in
 
 `ReadOnly Property TargetType As TargetType`
 
-          
+          
 
 **C#**
 
@@ -56,9 +56,9 @@ Returns **TargetType**.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

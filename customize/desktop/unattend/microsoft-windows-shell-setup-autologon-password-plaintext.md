@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 You can use this setting only to hide the passwords for local accounts only. Domain account passwords are not hidden.
 
- 
+ 
 
 You cannot set this value directly. Select **Hide sensitive data** on the **Tools** menu to hide all passwords with a `PlainText` setting in your answer file.
 
@@ -47,12 +47,12 @@ You cannot set this value directly. Select **Hide sensitive data** on the **Tool
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 This element appears above the **Settings** bar in the **Properties** pane of Windows System Manager. It always appears as **true** in the user interface (UI), even if you have selected **Hide sensitive data**.
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -96,9 +96,9 @@ The following XML output shows how to set autologon.
 
 [Password](microsoft-windows-shell-setup-autologon-password.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,16 +65,16 @@ The following table describes possible return values.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [IEnumProfile](ienumprofile.md)
 
- 
+ 
 
- 
+ 
 
 
 

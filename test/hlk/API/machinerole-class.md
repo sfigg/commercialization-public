@@ -45,7 +45,7 @@ Represents a specific role used in a logical machine set.
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.MachineRole**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.MachineRole**
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -57,9 +57,9 @@ MachineRole is used in a logical machine set.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

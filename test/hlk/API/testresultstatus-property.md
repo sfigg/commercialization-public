@@ -49,20 +49,20 @@ This property represents the status of this certification test result.
 
 Returns **TestResultStatus**.
 
->[!NOTE]
->  
-**TestResult.Status** does not return **Queued** (if a test is scheduled or running it returns **Running**).
+> [!NOTE]
+> 
+> **TestResult.Status** does not return **Queued** (if a test is scheduled or running it returns **Running**).
 
- 
+ 
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

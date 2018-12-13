@@ -46,7 +46,7 @@ For devices that can use Windows 10 Continuum feature, also see the topic: [Cont
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -88,9 +88,9 @@ For a list of the Windows editions and architectures that this component support
 
 [Continuum](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/continuum)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,7 +47,7 @@ This is to test the stationary contact reporting abilities of a Windows Precisio
 
 **Note**  Some PT3 tips might bounce slightly if brought down quickly. To avoid this, lower the tip slowly onto the digitizer surface.
 
- 
+ 
 
 4. Wait 10 seconds, using the timer in the upper-right corner of the PTLogo user interface.
 
@@ -107,9 +107,9 @@ For pressure pads, lower the contacts until they are just above the maximum z he
 
 -   A total of 10/10 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

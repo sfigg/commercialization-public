@@ -26,10 +26,10 @@ This action produces a text report that summarizes the metrics regarding drivers
 ## Options
 
 
-<a href="" id="-min-t-"></a>**-min***\[t\]*  
+<a href="" id="-min-t-"></a>**-min**<em>\[t\]</em>  
 Show only delays longer than *n*, in microseconds.
 
-<a href="" id="-name-driver-"></a>**-name***&lt;driver&gt;*  
+<a href="" id="-name-driver-"></a>**-name**<em>&lt;driver&gt;</em>  
 Show only delays by the specified driver.
 
 <a href="" id="-ranget1-t2"></a>**-range***T1 T2*  
@@ -42,9 +42,9 @@ Show delays between *T1* and *T2*, in microseconds.
 
 [Time and Timestamp Formats](time-and-timestamp-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

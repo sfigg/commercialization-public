@@ -35,7 +35,7 @@ For unattended installations, you must specify either the **InstallTo** or the [
 <td><p>Installs Windows to a specified disk and partition.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Setup\ImageInstall\OSImage\InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)</p></td>
+<td><p><a href="microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md" data-raw-source="[Microsoft-Windows-Setup\ImageInstall\OSImage\InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)">Microsoft-Windows-Setup\ImageInstall\OSImage\InstallToAvailablePartition</a></p></td>
 <td><p>Installs Windows to the first available partition that has enough space and does not already contain an installation of Windows.</p></td>
 </tr>
 </tbody>

@@ -42,7 +42,7 @@ A configuration set is a folder that contains additional device drivers, applica
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output specifies that a configuration set is used.
 
 [microsoft-windows-setup-](microsoft-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

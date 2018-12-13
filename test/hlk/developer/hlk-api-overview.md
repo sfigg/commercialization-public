@@ -20,20 +20,20 @@ You can use the Windows Hardware Lab Kit (Windows HLK) API to automate any parts
 
 The Windows HLK API supports any Microsoft® .NET Framework 4.0 (and later) programming language (for example, C# and Windows PowerShell). This document provides a detailed description of the Windows HLK API.
 
->[!NOTE]
->  
-HLK Studio uses the HLK APIs described here. You cannot run scripts or applications that access the HLK APIs and simultaneously interact with HLK Studio. Before interacting with HLK Studio, make sure your scripts and/or applications are no longer running.
+> [!NOTE]
+> 
+> HLK Studio uses the HLK APIs described here. You cannot run scripts or applications that access the HLK APIs and simultaneously interact with HLK Studio. Before interacting with HLK Studio, make sure your scripts and/or applications are no longer running.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
-[HLK Studio](..\user\hlk-studio.md)
+[HLK Studio](../user/hlk-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,9 +43,9 @@ Modern Standby is available for both Windows 10 desktop and Windows 10 Mobile.
 
 *DRIPS* refers to the Deepest Runtime Idle Platform State. The DRIPS state corresponds to the lowest power state for the SoC during Connected Standby or Modern Standby. Each SoC defines its own DRIPS state and corresponding state index. This is also referred to as S0 low power idle.
 
- 
+ 
 
- 
+ 
 
 
 

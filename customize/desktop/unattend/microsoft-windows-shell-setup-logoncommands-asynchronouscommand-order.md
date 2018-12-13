@@ -34,17 +34,16 @@ ms.topic: article
 <td><p><em>Asynchronous_command_order</em></p></td>
 <td><p>Specifies a unique value for each command.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>The computer does not wait for one command to finish before it starts the next command.</p>
+<strong>Important</strong><br/><p>The computer does not wait for one command to finish before it starts the next command.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Valid Configuration Passes
 
@@ -88,9 +87,9 @@ The following XML output shows how to set logon commands.
 
 [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
- 
 
- 
+
+
 
 
 

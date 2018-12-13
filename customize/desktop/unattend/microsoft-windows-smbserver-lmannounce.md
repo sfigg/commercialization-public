@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -72,9 +72,9 @@ The following XML output shows how to specify that the server sends LanMan (LM) 
 
 [Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ Windows 8.1 has new features that improve the end user’s experience with premi
 
 -   [DPI-related APIs and registry settings](dpi-related-apis-and-registry-settings.md)
 
- 
+ 
 
- 
+ 
 
 
 

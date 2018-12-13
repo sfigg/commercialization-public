@@ -81,7 +81,7 @@ In order to facilitate specification implementation and understanding, the speci
 
 ![](images/ic13605.gif) [Scan Device Definition V1.0 for Web Services on Devices](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/ScanDevice.exe)
 (76 KB self-extracting file containing Microsoft Word document and supporting file; January 29, 2007)
- 
+ 
 
 
 

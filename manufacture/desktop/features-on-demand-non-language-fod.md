@@ -1,18 +1,17 @@
----
+﻿---
 author: kpacquer
 Description: 'Features on Demand (capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. This page describes non-language FODs.'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Available features on demand'
 ms.author: kenpacq
-ms.date: 10/02/2018
+ms.date: 11/26/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Available Features on Demand
 
-The following Features on Demand are available for Windows 10. Some FODs come preinstalled with Windows and are all you need to ship a Windows device. You can, however, add additional FODs to support additional hardware features or enable certain use cases.
+The following Features on Demand are available for Windows 10 and Windows Server. Some FODs come preinstalled with Windows and are all you need to ship a Windows device. You can, however, add additional FODs to support additional hardware features or enable certain use cases.
 
 You can use either `DISM /image:<path_to_image> /get-capabilities` or `DISM /online /get-capabilities` to see which Features on Demand are available in your image of Windows 10. To see how to add Features on Demand, see [Features on Demand](features-on-demand-v2--capabilities.md). 
 
@@ -28,7 +27,7 @@ Internet Explorer Features on Demand enable preinstallation of Internet Explorer
 
 **Feature**: Internet Explorer 11
 - **Capability name**: Browser.InternetExplorer~~~~0.0.11.0
-- **CAB name**: Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-InternetExplorer-Optional-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 1.66 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1703 and later
@@ -39,7 +38,7 @@ This feature on demand adds the Math Input Panel, Control and Recognizer.
 
 **Feature**: Math Recognizer 
 - **Capability name**: MathRecognizer~~~~0.0.1.0
-- **CAB name**: Microsoft-Windows-TabletPCMath-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-TabletPCMath-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 17.46 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1809 and later
@@ -50,7 +49,7 @@ This Feature on Demand is a mail, contacts, and calendar sync component. Not inc
 
 **Feature**: Exchange ActiveSync and Internet Mail Sync Engine 
 - **Capability name**: OneCoreUAP.OneSync~~~~0.0.1.0 
-- **CAB name:**: Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name:**: Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 12.83 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1709 and later
@@ -61,7 +60,7 @@ The OpenSSH client Feature on Demand enables the use of OpenSSH on a Windows PC.
 
 **Feature**: OpenSSH Client
 - **Capability name**: OpenSSH.Client~~~~0.0.1.0 
-- **CAB name**: OpenSSH-Client-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: OpenSSH-Client-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 5.28 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1709 and later
@@ -89,7 +88,7 @@ The following FODs are not preinstalled in a Windows image, but we recommend pre
 
 **Feature**: NetFx3
 - **Capability name**: NetFX3~~~~
-- **CAB name**: Microsoft-Windows-NetFx3-OnDemand-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-NetFx3-OnDemand-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 301 MB
 - **Satellites**: None
 - All versions of Windows 10
@@ -107,7 +106,7 @@ This Feature on Demand enables Mixed Reality (MR) devices to be used on a PC. If
 
 **Feature**: Windows Mixed Reality 
 - **Capability name**: Analog.Holographic.Desktop~~~~0.0.1.0 
-- **CAB name**: Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 1.93 GB 
 - **Satellites**: None
 - **Availability**: Windows 10, version 1703 and later
@@ -124,6 +123,17 @@ These Features on Demand add the retail demo package to a device, for use in ret
 **Feature**: Language-specific Retail Demo Content 
 - **CAB name**: Microsoft-Windows-RetailDemo-OfflineContent-Content-*language-country*-Package.cab
 
+
+### Server Core App Compatibility
+
+[Server Core App Compatibility](https://docs.microsoft.com/en-us/windows-server/get-started-19/install-fod-19) significantly improves the app compatibility of the Windows Server Core installation option by including a subset of binaries and packages from Windows Server with Desktop Experience, without adding all components of the Windows Server Desktop Experience graphical environment. This FOD is available on the Server FOD ISO.
+
+**Feature**: Server Core App Compatibility 
+- **CAB name**: Microsoft-Windows-Server-AppCompat-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
+- **Satellites**: Yes
+- **Availability**: Windows Server 2019 (Server Core only)
+
+
 ## FODs that are not preinstalled
 
 The following is a list of additional FODs you can add to your Windows image to enable additional functionality based on your hardware configuration or to support additional use cases.
@@ -139,7 +149,7 @@ This Feature on Demand's installation can be triggered by a user from the Window
 
 **Feature** Accessibility - Braille Support 
 - **Capability name**: Accessibility.Braille~~~~0.0.1.0 
-- **CAB name**: Microsoft-Windows-Accessibility-Braille-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-Accessibility-Braille-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 13.47 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1703 and later
@@ -154,7 +164,7 @@ Enabling Developer Mode will attempt to auto-install this Feature on Demand. On 
 
 **Feature** Windows Developer Mode 
 - **Capability name**: Tools.DeveloperMode.Core~~~~0.0.1.0
-- **CAB name**: Microsoft-OneCore-DeveloperMode-Desktop-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-OneCore-DeveloperMode-Desktop-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 13.20 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1607 and later
@@ -167,7 +177,7 @@ Used for Direct3D application development.  It is typically installed by AAA gam
 
 **Feature**: Graphics Tools 
 - **Capability name**: Tools.Graphics.DirectX~~~~0.0.1.0
-- **CAB name**: Microsoft-OneCore-Graphics-Tools-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-OneCore-Graphics-Tools-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 69.01 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1607 and later
@@ -181,7 +191,7 @@ This Feature on Demand enables automated testing of Microsoft Edge and WWA's or 
 
 **Feature**: Microsoft WebDriver 
 - **Capabilityname**: Microsoft.WebDriver~~~~0.0.1.0 
-- **CAB name**: Microsoft-WebDriver-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-WebDriver-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 909 KB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1809 and later
@@ -194,7 +204,7 @@ MSIX Packaging tool driver monitors the environment to capture the changes that 
 
 **Feature**: MSIX Packaging Tool Driver 
 - **Capability name**: Msix.PackagingTool.Driver~~~~0.0.1.0 
-- **CAB name**: Msix-PackagingTool-Driver-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Msix-PackagingTool-Driver-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 37.74 KB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1809 and later
@@ -209,7 +219,7 @@ The following tools are available as Features on Demand
 **Feature**: RAS Connection Manager Administration Kit (CMAK) 
 - **Description**: Create profiles for connecting to remote servers and networks
 - **Capability name**: RasCMAK.Client~\~~\~0.0.1.0  
-- **CAB name**: Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~amd64~en-US~.cab 
+- **CAB name**: Microsoft-Windows-RasCMAK-Client-Package\~31bf3856ad364e35\~amd64~en-US~.cab 
 - **Satellites**: Yes
 - **Install size**: 702.89 KB 
 - **Availability**: Windows 10, version 1809 and later
@@ -218,7 +228,7 @@ The following tools are available as Features on Demand
 **Feature**: RIP Listener
 - **Description**: Listens for route updates sent by routers that use the Routing Information Protocol version 1 (RIPV1)
 - **Capability name**: RIP.Listener~\~~\~0.0.1.0  
-- **CAB name**: Microsoft-Windows-RasRip-Package~31bf3856ad364e35~amd64~en-US~.cab
+- **CAB name**: Microsoft-Windows-RasRip-Package\~31bf3856ad364e35\~amd64~en-US~.cab
 - **Satellites**: Yes 
 - **Install size**: 45.11 KB 
 - **Availability**: Windows 10, version 1809 and later
@@ -226,7 +236,7 @@ The following tools are available as Features on Demand
 **Feature**: Simple Network Management Protocol (SNMP) 
 - **Description**: This feature includes SNMP agents that monitor the activity in network devices and report to the network console workstation
 - **Capability name**: SNMP.Client~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~amd64~en-US~.cab
+- **CAB name**: Microsoft-Windows-SNMP-Client-Package\~31bf3856ad364e35\~amd64~en-US~.cab
 - **Satellites**: Yes 
 - **Install size**: 1.11 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -235,7 +245,7 @@ The following tools are available as Features on Demand
 - **Description**: Enables WMI clients to consume SNMP information through the CIM model as implemented by WMI
 - **Dependencies**: SNMP.Client
 - **Capability name**: WMI-SNMP-Provider.Client~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~amd64~en-US~.cab 
+- **CAB name**: Microsoft-Windows-WMI-SNMP-Provider-Client-Package\~31bf3856ad364e35\~amd64~en-US~.cab 
 - **Satellites**: Yes	
 - **Install size**: 1.58 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -249,7 +259,7 @@ The OpenSSH server Feature on Demand enable the use of OpenSSH on a Windows PC.
 
 **Feature**: OpenSSH Server 
 - **Capability name**: OpenSSH.Server~~~~0.0.1.0 
-- **CAB name**: OpenSSH-Server-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: OpenSSH-Server-Package\~31bf3856ad364e35\\~amd64\~\~.cab
 - **Install size**: 5.61 MB 
 - **Satellites**: None
 - **Availability**: Windows 10, version 1709 and later
@@ -263,14 +273,14 @@ These Features on Demand are for devices running Windows Server as a Print Serve
 
 **Feature**: Enterprise Cloud Print 
 - **Capability name**: Print.EnterpriseCloudPrint~~~~0.0.1.0 
-- **CAB name**: Microsoft-Windows-Printing-EnterpriseCloudPrint-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-Printing-EnterpriseCloudPrint-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 3.28 MB 
 - **Satellites**: None
 - **Availability**: Windows 10, version 1709 and later
 
 **Feature**: Mopria Cloud Service
 - **Capability name**: Print.MopriaCloudService~~~~0.0.1.0 
-- **CAB name**: Microsoft-Windows-Printing-MopriaCloudService-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-Printing-MopriaCloudService-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Install size**: 11.13 MB 
 - **Satellites**: None
 - **Availability**: Windows 10, version 1709 and later
@@ -285,7 +295,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: For remotely managing AD DS and AD LDS on Windows Server
 - **Dependencies**: Rsat.ServerManager.Tools 
 - **Capability name**: Rsat.ActiveDirectory.DS-LDS.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 17.01 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -294,7 +304,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: Tools for managing BitLocker Drive Encryption Features
 - **Dependencies**: Rsat.ActiveDirectory.DS-LDS.Tools 
 - **Capability name**: Rsat.BitLocker.Recovery.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-BitLocker-Recovery-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-BitLocker-Recovery-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 52.35 KB
 - **Availability**: Windows 10, version 1809 and later
@@ -302,7 +312,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Active Directory Certificate Services Tools 
 - **Description**: Remotely manage AD CS on Windows Server
 - **Capability name**: Rsat.CertificateServices.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-CertificateServices-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-CertificateServices-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes 
 - **Install size**: 5.35 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -310,7 +320,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: DHCP Server Tools 
 - **Description**: DHCP MMC snap-in, SHCP server netsh context, and Windows PowerShell module for DHCP Server
 - **Capability name**: Rsat.DHCP.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-DHCP-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 7.09 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -318,7 +328,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: DNS Server Tools 
 - **Description**: DNS MMC snap-in, dnscmd.exe command-line tool, and Windows PowerShell module for DHCP Server
 - **Capability name**: Rsat.Dns.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-DNS-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes 
 - **Install size**: 6.15 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -327,7 +337,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: Failover Cluster Manager snap-in, the Cluster-Aware Updating interface, and the Failover Cluster module for Windows PowerShell
 - **Dependencies**:  Rsat.FileServices.Tools 
 - **Capability name**: Rsat.FailoverCluster.Management.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 34.35 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -336,7 +346,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: For remotely managing the File Services role on Windows Server 
 - **Dependencies**: Rsat.ServerManager.Tools
 - **Capability name**: Rsat.FileServices.Tools~\~\~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-FileServices-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes 
 - **Install size**: 17.14 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -344,7 +354,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Group Policy Management Tools 
 - **Capability name**: Rsat.GroupPolicy.Management.Tools~\~~\~0.0.1.0  
 - **Description**: Group Policy Management Console, GP Management Editor, and GP Started GPO Editor 
-- **CAB name**: Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 18.54 MB
 - **Availability**: Windows 10, version 1809 and later
@@ -353,7 +363,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: Used to connect to and manage a remote IPAM server
 - **Dependencies**: Rsat.ServerManager.Tools 
 - **Capability name**: Rsat.IPAM.Client.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-IPAM-Client-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 872.56 KB 
 - **Availability**: Windows 10, version 1809 and later
@@ -361,7 +371,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Data Center Bridging LLDP Tools 
 - **Description**: Includes PowerShell tools for remotely managing LLDP agents on Windows Server 
 - **Capability name**: Rsat.LLDP.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-LLDP-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-LLDP-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: None 
 - **Install size**: 19.19 KB
 - **Availability**: Windows 10, version 1809 and later
@@ -369,7 +379,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Network Controller Management Tools 
 - **Description**: PowerShell tools for managing the Network Controller role on Windows Server
 - **Capability name**: Rsat.NetworkController.Tools~\~~\~0.0.1.0
-- **CAB name**: Microsoft-Windows-NetworkController-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-NetworkController-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 767.20 KB 
 - **Availability**: Windows 10, version 1809 and later
@@ -377,7 +387,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Network Load Balancing Tools
 - **Description**: Network Load Balancing Manager snap-in, the Network Load balancing module for PowerShell, and the nlb.exe and wlbs.exe command-line tools 
 - **Capability name**: Rsat.NetworkLoadBalancing.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-NetworkLoadBalancing-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-NetworkLoadBalancing-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 859.35 KB 
 - **Availability**: Windows 10, version 1809 and later
@@ -386,7 +396,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: Graphical and PowerShell tools for manging the Remote Access role on Windows Server
 - **Dependencies**: Rsat.ServerManager.Tools, Rsat.GroupPolicy.Management.Tools 
 - **Capability name**: Rsat.RemoteAccess.Management.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 27.70 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -394,7 +404,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Remote Desktop Services Tools 
 - **Description**: Snap-ins for Remote Desktop Licensing Manager, Remote Desktop Licensing Diagnostics, and Remote Desktop Gateway Manager. 
 - **Capability name**: Rsat.RemoteDesktop.Services.Tools~\~\~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-RemoteDesktop-Services-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-RemoteDesktop-Services-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 3.60 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -403,7 +413,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: Server Manager console and PowerShell tools for remotely managing Windows Server
 - **Dependencies**: None. NICTeaming.Tools.Legacy is already merged with this package. 
 - **Capability name**: Rsat.ServerManager.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-ServerManager-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 32.47 MB
 - **Availability**: Windows 10, version 1809 and later
@@ -412,7 +422,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 - **Description**: Includes the Provisioning Data File Wizard and the Template Disk Wizard
 - **Dependencies**: Rsat.ServerManager.Tools 
 - **Capability name**: Rsat.Shielded.VM.Tools~\~~\~0.0.1.0
-- **CAB name**: Microsoft-Windows-Shielded-VM-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-Shielded-VM-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 20.09 MB 
 - **Availability**: Windows 10, version 1809 and later
@@ -420,7 +430,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Storage Replica Module for Windows PowerShell 
 - **Description**: Remotely manage the Storage Replica feature with PowerShell 
 - **Capability name**: Rsat.StorageReplica.Tools~\~\~\~0.0.1.0
-- **CAB name**: Microsoft-Windows-StorageReplica-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-StorageReplica-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 1.58 MB
 - **Availability**: Windows 10, version 1809 and later
@@ -428,7 +438,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Volume Activation Tools
 - **Description**: Manage volume activation license keys on a KMS host or in Microsoft AAD
 - **Capability name**: Rsat.VolumeActivation.Tools~\~\~\~0.0.1.0
-- **CAB name**: Microsoft-Windows-VolumeActivation-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-VolumeActivation-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Yes
 - **Install size**: 556.39 KB
 - **Availability**: Windows 10, version 1809 and later
@@ -436,7 +446,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Windows Server Update Services Tools 
 - **Description**: Includes graphical and PowerShell tools for managing WSUS 
 - **Capability name**: Rsat.WSUS.Tools~\~\~\~0.0.1.0  
-- **CAB name**: Microsoft-Windows-WSUS-Tools-FoD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-WSUS-Tools-FoD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Lang
 - **Install size**: 8.27 MB
 - **Availability**: Windows 10, version 1809 and later
@@ -444,7 +454,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Storage Migration Service Management Tools 
 - **Description**: Provides management tools for storage migration jobs 
 - **Capability name**: Rsat.StorageMigrationService.Management.Tools~\~~\~0.0.1.0
-- **CAB name**: Microsoft-Windows-StorageMigrationService-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~~.cab  
+- **CAB name**: Microsoft-Windows-StorageMigrationService-Management-Tools-FOD-Package\~31bf3856ad364e35\~amd64~~.cab  
 - **Satellites**: Yes
 - **Install size**: 303.98 
 - **Availability**: Windows 10, version 1809 and later
@@ -452,7 +462,7 @@ Remote Server Administration Tools for Windows 10 lets IT administrators manage 
 **Feature**: Systems Insights Module for Windows PowerShell
 - **Description**: Provides the ability to manage the System Insights feature
 - **Capability name**: Rsat.SystemInsights.Management.Tools~\~~\~0.0.1.0 
-- **CAB name**: Microsoft-Windows-SystemInsights-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-SystemInsights-Management-Tools-FOD-Package\~31bf3856ad364e35\~amd64~~.cab
 - **Satellites**: Lang
 - **Install size**: 123.43 KB
 - **Availability**: Windows 10, version 1809 and later
@@ -466,7 +476,7 @@ This Feature on Demand enables advanced storage capabilities. To add Windows Sto
 **Feature**: Windows Storage Management 
 - **Description**: Windows Storage Management allows you to manage a wide range of storage configurations, from single-disk desktops to external storage arrays.
 - **Capability name**: Microsoft.Windows.StorageManagement~\~~\~0.0.1.0
-- **CAB name**: Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~~.cab  
+- **CAB name**: Microsoft-Windows-StorageManagement-FoD-Package\~31bf3856ad364e35\\~amd64~~.cab  
 - **Satellites**: Yes
 - **Install size**: 15.38 MB
 - **Satellites**: None
@@ -475,7 +485,7 @@ This Feature on Demand enables advanced storage capabilities. To add Windows Sto
 **Feature**: Windows Storage Management 
 - **CAB name**: Windows Storage Management allows you to manage a wide range of storage configurations, from single-disk desktops to external storage arrays.
 - **Capability name**: Microsoft.OneCore.StorageManagement~\~~\~0.0.1.0	
-- **CAB name**: Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~~.cab  
+- **CAB name**: Microsoft-OneCore-StorageManagement-FoD-Package\~31bf3856ad364e35\\~amd64\~\~.cab  
 - **Satellites**: Yes
 - **Install size**: 9.80 MB
 - **Satellites**: None
@@ -489,7 +499,7 @@ This Feature on Demand allows you to read, copy, print, sign, and set permission
 
 **Feature**: XPS Viewer 
 - **Capability name**: XPS.Viewer~~~~0.0.1.0 
-- **CAB name**: Microsoft-Windows-Xps-Xps-Viewer-Opt-Package~31bf3856ad364e35~amd64~~.cab
+- **CAB name**: Microsoft-Windows-Xps-Xps-Viewer-Opt-Package\~31bf3856ad364e35\\~amd64\~\~.cab
 - **Install size**: 16.91 MB
 - **Satellites**: None
 - **Availability**: Windows 10, version 1803 and later

@@ -34,11 +34,11 @@ In this topic:
 
 **Warning**  This assessment does not execute in an automated fashion.
 
- 
+ 
 
 **Warning**  The image being tested needs to be in a never-been-booted state in order for measurements to be successfully collected. Attempting to revert an assessed image back to the pre-OOBE state will not yield comparable results and is not a supported scenario.
 
- 
+ 
 
 ## <a href="" id="bkmk-streamingworkloads"></a>Manual execution of assessment
 
@@ -93,7 +93,7 @@ The following table describes the assessment settings, recommended setting value
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -104,9 +104,9 @@ The following table describes the assessment settings, recommended setting value
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

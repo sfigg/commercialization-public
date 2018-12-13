@@ -23,7 +23,7 @@ Specifies whether the Windows image should be applied with compression enabled d
 **Note**  
 If the **Compact** setting is set to true, you must start Windows Setup from Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), from a previous version of Windows with the Windows 10 Assessment and Deployment Kit (ADK) installed, or from the Windows 10 version of the Windows Preinstallation Environment (PE). If you are using a previous version of Windows PE, the Windows overlay filter driver (wofadk.sys) from the Windows 10 ADK must be included in the Windows PE image.
 
- 
+ 
 
 ## Values
 
@@ -52,7 +52,7 @@ If the **Compact** setting is set to true, you must start Windows Setup from Win
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -74,9 +74,9 @@ For the list of the supported Windows editions and architectures that this compo
 
 [OSImage](microsoft-windows-setup-imageinstall-osimage.md)
 
- 
+ 
 
- 
+ 
 
 
 

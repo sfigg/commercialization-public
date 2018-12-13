@@ -29,7 +29,7 @@ Learn about the hardware requirements for biometric equipment, such as IR camera
 | Biometric sample        | This refers to the complete biometric sample required to perform a verification operation. For example, a single fingerprint is required to perform a verification.                                                                                                                                                                                                                                                                          |
 | Biometric spoof         | This refers to a synthetic replica of a biometric sample.                                                                                                                                                                                                                                                                                                                                                                                    |
 
- 
+ 
 
 ## Fingerprint reader requirements
 
@@ -108,9 +108,9 @@ Meaning about 2,237 unique biometric samples will be needed to verify the confid
 
 [Windows Hello](windows-hello.md)
 
- 
+ 
 
- 
+ 
 
 
 

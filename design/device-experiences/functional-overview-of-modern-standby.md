@@ -48,37 +48,37 @@ When the user presses the power button, or otherwise causes the system to resume
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Prepare software for modern standby](prepare-software-for-modern-standby.md)</p></td>
+<td><p><a href="prepare-software-for-modern-standby.md" data-raw-source="[Prepare software for modern standby](prepare-software-for-modern-standby.md)">Prepare software for modern standby</a></p></td>
 <td><p>On entry to modern standby, apps and system software must be made ready for the transition to low-power operation. Powering down the display is the first activity when entering standby. The display is turned off in response to the user pressing the power button, closing the lid, or selecting Sleep from the power button in the Settings charm.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Prepare hardware for modern standby](prepare-hardware-for-modern-standby.md)</p></td>
+<td><p><a href="prepare-hardware-for-modern-standby.md" data-raw-source="[Prepare hardware for modern standby](prepare-hardware-for-modern-standby.md)">Prepare hardware for modern standby</a></p></td>
 <td><p>On entry to standby, hardware components must be prepared to make the transition to low-power operation. After software components and apps have been prepared for low-power operation, hardware components, including their software device drivers, must be similarly prepared for low-power operation.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Transition from idle to active](transition-from-idle-to-active.md)</p></td>
+<td><p><a href="transition-from-idle-to-active.md" data-raw-source="[Transition from idle to active](transition-from-idle-to-active.md)">Transition from idle to active</a></p></td>
 <td><p>During modern standby, Windows periodically transitions the SoC platform from idle mode to active mode to perform kernel maintenance tasks. In addition, on-demand transitions to active mode can occur in response to user inputs, interrupts from networking devices, and other hardware events.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Transition from active to idle](transition-from-active-to-idle.md)</p></td>
+<td><p><a href="transition-from-active-to-idle.md" data-raw-source="[Transition from active to idle](transition-from-active-to-idle.md)">Transition from active to idle</a></p></td>
 <td><p>Windows transitions the SoC platform from active mode to idle mode after all software activity is stopped and the devices on and off the SoC chip have entered low-power states.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Activators](activators.md)</p></td>
+<td><p><a href="activators.md" data-raw-source="[Activators](activators.md)">Activators</a></p></td>
 <td><p>Windows can leave the System on a Chip (SoC) in the active power state during standby while app background tasks are executing or critical system tasks are executing. Windows components that are allowed to leave the SoC in the active power state are called activators because they are registered with the power manager as capable of blocking the transition back to the idle power mode.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Functional overview summary](functional-overview-summary.md)</p></td>
+<td><p><a href="functional-overview-summary.md" data-raw-source="[Functional overview summary](functional-overview-summary.md)">Functional overview summary</a></p></td>
 <td><p>Summarizes the capabilities supported by modern standby.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

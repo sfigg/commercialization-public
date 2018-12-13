@@ -18,16 +18,16 @@ ms.topic: article
 
 Partners can show the **select all contacts**/**unselect all** menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks.
 
-Windows 10 Mobile supports the following select multiple recipients feature:
+Windows 10 Mobile supports the following select multiple recipients feature:
 
 -   A multi-select chooser, which enables users to choose multiple contacts.
 
 -   A **select all contacts**/**unselect all** menu option, which enables users to select or unselect all their contacts. This option is not shown by default and must be enabled by the OEM.
 
-**Note**  
+**Note**  
 Note that this feature will only be enabled if the `LimitRecipients` setting is set to more than 1 recipient. For more information, see [Maximum number of recipients for SMS and MMS](maximum-number-of-recipients-for-sms-and-mms.md).
 
- 
+
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-SIM** value
@@ -42,7 +42,7 @@ This customization supports: **per-SIM** value
                          Description="Use to enable users to easily select multiple recipients for SMS and MMS messages."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -52,7 +52,7 @@ This customization supports: **per-SIM** value
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -108,9 +108,11 @@ This customization supports: **per-SIM** value
     </tbody>
     </table>
 
-     
 
-    If `AllowSelectAllContacts` is not set or missing, the **select all contacts**/**unselect all** menu option is not shown.
+
+~~~
+If `AllowSelectAllContacts` is not set or missing, the **select all contacts**/**unselect all** menu option is not shown.
+~~~
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build containing this customization to a device.

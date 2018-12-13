@@ -244,9 +244,9 @@ The user experience is in accordance to the specification, see section on “Use
 
 [UEFI Validation Option ROM Validation Guidance](uefi-validation-option-rom-validation-guidance.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,7 +27,7 @@ For a sample answer file, see the [XML Example](#xmlexample) section.
 **Caution**  
 If you use an installation image that was originally installed by using an Unattend.xml file, and you execute the **Repair in-place upgrade (overwrite installation)** option, the upgrade installation may quit. You may not be able to restart the installation. For more information, see [Knowledge Base Article ID 2425962](http://go.microsoft.com/fwlink/?LinkId=209802).
 
- 
+ 
 
 ## Values
 
@@ -49,7 +49,7 @@ If you use an installation image that was originally installed by using an Unatt
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -83,9 +83,9 @@ The following XML output shows how to set an upgrade installation to run in guar
 
 [UpgradeData](microsoft-windows-setup-upgradedata.md)
 
- 
+ 
 
- 
+ 
 
 
 

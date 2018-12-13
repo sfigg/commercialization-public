@@ -19,6 +19,7 @@ ms.topic: article
 This test runs the Task Offload Logo test.
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.LAN.IPsec.IPsec</li></ul> |  
@@ -31,7 +32,7 @@ This test runs the Task Offload Logo test.
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -48,7 +49,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Network Testing](troubleshooting-devicenetwork-testing.md).
 
@@ -70,17 +71,17 @@ For troubleshooting information, see [Troubleshooting Device.Network Testing](tr
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>CPerseus.exe /module:[TestDirectory]\Suites\TOv2Logo.xml /type:"IPSec Scenario Testing Add-in"</strong></p></td>
+<td><p><strong>CPerseus.exe /module:[TestDirectory]\Suites\TOv2Logo.xml /type:&quot;IPSec Scenario Testing Add-in&quot;</strong></p></td>
 <td><p>Runs the test.</p></td>
 </tr>
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/h**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/h**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -98,7 +99,7 @@ For command-line help for this test binary, type **/h**.
 <tbody>
 <tr class="odd">
 <td><p>CPerseus.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>TOv2Logo.xml</p></td>
@@ -107,7 +108,7 @@ For command-line help for this test binary, type **/h**.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -130,11 +131,11 @@ For command-line help for this test binary, type **/h**.
 | **MsgNICIPSupport**                       | IP of Message NIC on Support machine, to be populated by detect.wsf before installer runs |
 | **MsgNICIPClient**                        | IP of Message NIC on Client machine, to be populated by detect.wsf before installer runs  |
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -18,9 +18,9 @@ ms.topic: article
 
 To meet China Type Approval (CTA) requirements for devices shipping in China, OEMs must show a notification dialog to alert users when the app being downloaded does certain things.
 
-**Note**  This is a legacy mobile setting and is only a requirement for China. It works on phones being upgraded to Windows 10 Mobile, but we recommend that you use the [CountryAndRegion](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-countryandregion) Windows provisioning setting instead.
+**Note**  This is a legacy mobile setting and is only a requirement for China. It works on phones being upgraded to Windows 10 Mobile, but we recommend that you use the [CountryAndRegion](https://docs.microsoft.com/en-us/windows/configuration/wcd/wcd-countryandregion) Windows provisioning setting instead.
 
- 
+
 
 The dialog must be shown when the app being downloaded does any of the following:
 
@@ -45,7 +45,7 @@ The dialog must be shown when the app being downloaded does any of the following
                                       This customization is only a requirement for China."  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
       <Static>  
 
         <Settings Path="Zune/Settings">  
@@ -84,9 +84,11 @@ The dialog must be shown when the app being downloaded does any of the following
     </tbody>
     </table>
 
-     
 
-    If the setting is not set, the feature is not enabled.
+
+~~~
+If the setting is not set, the feature is not enabled.
+~~~
 
 <a href="" id="testing-"></a>**Testing:**  
 To fully test this customization, the phone must also be configured to use [Microsoft Store for China](windows-phone-store-for-china.md).

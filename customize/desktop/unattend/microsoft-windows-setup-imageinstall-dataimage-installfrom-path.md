@@ -109,19 +109,19 @@ E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_fi
 
 ```XML
 <ImageInstall>
-    <DataImage>
-        <InstallFrom>
+    <DataImage>
+        <InstallFrom>
             <Path>.\wims\dataimage.wim</Path>
-            <MetaData wcm:action="add">
+            <MetaData wcm:action="add">
                 <Key>/IMAGE/INDEX</Key>
                 <Value>1</Value>
-            </MetaData>
-        </InstallFrom>
-        <InstallTo>
-            <DiskID>0</DiskID>
-            <PartitionID>3</PartitionID>
-        </InstallTo>
-    </DataImage>
+            </MetaData>
+        </InstallFrom>
+        <InstallTo>
+            <DiskID>0</DiskID>
+            <PartitionID>3</PartitionID>
+        </InstallTo>
+    </DataImage>
 </ImageInstall>
 ```
 

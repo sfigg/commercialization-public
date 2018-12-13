@@ -25,7 +25,7 @@ ms.topic: article
 
 -   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique virtual IP Address. For example, you can specify three different virtual IP addresses by using the `Key` value of **Ip1**, **Ip2**, and **Ip3**.
 
- 
+ 
 
 ## Values
 
@@ -43,7 +43,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -77,9 +77,9 @@ The following XML output shows how to specify a virtual IP address by using the 
 
 [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md)
 
- 
+ 
 
- 
+ 
 
 
 

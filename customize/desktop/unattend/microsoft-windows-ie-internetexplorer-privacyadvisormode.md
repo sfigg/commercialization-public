@@ -49,7 +49,7 @@ InPrivate Blocking helps prevent the websites you go to from automatically shari
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -80,9 +80,9 @@ The following XML output shows how to configure Internet Explorer to turn off In
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

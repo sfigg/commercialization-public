@@ -40,9 +40,9 @@ This constructor initializes a new instance of the **ProjectException** class.
 
 `Public Sub New ( _`
 
-          `message As String, _`
+          `message As String, _`
 
-          `except As Exception _`
+          `except As Exception _`
 
 `)`
 
@@ -50,9 +50,9 @@ This constructor initializes a new instance of the **ProjectException** class.
 
 `public ProjectException (`
 
-          `string message,`
+          `string message,`
 
-          `Exception except`
+          `Exception except`
 
 `)`
 
@@ -61,15 +61,15 @@ This constructor initializes a new instance of the **ProjectException** class.
 
 *message*
 
-     A string that represents the message for the exception.
+     A string that represents the message for the exception.
 
 *except*
 
-     An **Exception** object.
+     An **Exception** object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -74,15 +74,17 @@ Test installation steps are nearly the same for both the machines with some uniq
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    c:\\iketest&gt;msiexec /lvx install.log /passive /i ScenarioHarness.msi AgentConfigu ration="tcp=port:8081 rename=yes useasdefault=Microsoft.CoreNetworking.IPSec.NetshPolicy" PeersConfig="peers=""Client1:tcp://27-3145E737:8081/ Client2:tcp://27-3145E751:8081/"""
+~~~
+For example:
 
-    Where:
+c:\\iketest&gt;msiexec /lvx install.log /passive /i ScenarioHarness.msi AgentConfigu ration="tcp=port:8081 rename=yes useasdefault=Microsoft.CoreNetworking.IPSec.NetshPolicy" PeersConfig="peers=""Client1:tcp://27-3145E737:8081/ Client2:tcp://27-3145E751:8081/"""
 
-    IPsec\_Controller-machine-name = 27-3145E737IPsec\_Client-machine-name = 27-3145E751
+Where:
+
+IPsec\_Controller-machine-name = 27-3145E737IPsec\_Client-machine-name = 27-3145E751
+~~~
 
 6.  On the IPsec\_client machine, perform the setup step by running the command as follows:
 
@@ -125,11 +127,13 @@ Test installation steps are nearly the same for both the machines with some uniq
     </tbody>
     </table>
 
-     
 
-    For example:
 
-    c:\\iketest&gt;msiexec /lvx install.log /passive /i ScenarioHarness.msi AgentConfiguration="tcp=port:8081 rename=yes useasdefault=Microsoft.CoreNetworking.IPSec.NetshPolicy" PeersConfig=""
+~~~
+For example:
+
+c:\\iketest&gt;msiexec /lvx install.log /passive /i ScenarioHarness.msi AgentConfiguration="tcp=port:8081 rename=yes useasdefault=Microsoft.CoreNetworking.IPSec.NetshPolicy" PeersConfig=""
+~~~
 
 7.  After the Test software installation, the next step is to examine the configuration file and to make some adjustments to accommodate local environment specific setting.
 
@@ -189,9 +193,9 @@ Test installation steps are nearly the same for both the machines with some uniq
 
     -   The detailed traces including wfp, ndispcap and netmon logs are available in the \[Systemdrive\]\\iketest\\traces directory.
 
- 
 
- 
+
+
 
 
 

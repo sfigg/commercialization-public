@@ -6,8 +6,7 @@ title: 'DISM Operating System uninstall Command-Line Options'
 ms.author: kenpacq
 ms.date: 04/25/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # DISM operating system uninstall command-line options

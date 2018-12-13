@@ -46,7 +46,7 @@ For the list of supported languages, locales, and identifiers, see [Supported La
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -84,9 +84,9 @@ The following example shows how to set the system locale to English (United Stat
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

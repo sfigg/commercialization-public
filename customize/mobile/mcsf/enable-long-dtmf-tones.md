@@ -70,7 +70,7 @@ OEMs can enable long DTMF tones if the user presses a dialpad key for an extende
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash the build that contains this customization to a phone.

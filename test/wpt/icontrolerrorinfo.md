@@ -58,30 +58,30 @@ The following table describes the functions of this interface.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[GetObjectType](getobjecttype.md)</p></td>
+<td><p><a href="getobjecttype.md" data-raw-source="[GetObjectType](getobjecttype.md)">GetObjectType</a></p></td>
 <td><p>Returns the type that produced the error.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetHResult](gethresult.md)</p></td>
+<td><p><a href="gethresult.md" data-raw-source="[GetHResult](gethresult.md)">GetHResult</a></p></td>
 <td><p>Returns an HRESULT value that indicates the error code.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetInnerErrorInfo](getinnererrorinfo.md)</p></td>
+<td><p><a href="getinnererrorinfo.md" data-raw-source="[GetInnerErrorInfo](getinnererrorinfo.md)">GetInnerErrorInfo</a></p></td>
 <td><p>Returns additional information about the error.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

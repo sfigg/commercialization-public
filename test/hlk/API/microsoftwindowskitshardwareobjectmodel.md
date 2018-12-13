@@ -108,9 +108,9 @@ ms.topic: article
 -   [TestType Enumeration](testtype-enumeration.md)
 -   [UpdateType Enumeration](updatetype-enumeration.md)
 
- 
+ 
 
- 
+ 
 
 
 

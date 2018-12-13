@@ -12,14 +12,16 @@ ms.topic: article
 
 You have the following options to customize your image. Depending on which options you’d like to use, you’ll employ the associated method or choice of methods to apply the customization.
 
-| Feature                             | Unattend                             | Modification file                             |
-|:------------------------------------|:-------------------------------------|:----------------------------------------------|
-| Taskbar                             | subset                               | TaskbarLayoutModification.xml                 |
-| Start layout                        | subset                               | LayoutModification.xml                        |
-| Out of Box Experience (OOBE)        | subset                               | OOBE.xml                                      |
-| Darkmode                            | yes                                  | Unattend.xml                                  |
-| Get Help app                        | yes                                  | Unattend.xml                                  |
-| Colors                              | yes                                  | Unattend.xml                                  |
+
+| Feature                      | Unattend | Modification file             |
+|:-----------------------------|:---------|:------------------------------|
+| Taskbar                      | subset   | TaskbarLayoutModification.xml |
+| Start layout                 | subset   | LayoutModification.xml        |
+| Out of Box Experience (OOBE) | subset   | OOBE.xml                      |
+| Darkmode                     | yes      | Unattend.xml                  |
+| Get Help app                 | yes      | Unattend.xml                  |
+| Colors                       | yes      | Unattend.xml                  |
+
 <!--
 | Pen & Windows Ink Workspace         | subset                               | InkWorkspaceModification.xml                  |
 -->

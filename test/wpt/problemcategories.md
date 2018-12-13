@@ -23,9 +23,9 @@ Represents a collection of problem categories. This element is for internal use 
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<**ProblemCategories**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<**ProblemCategories**\>
 
 
 ## Syntax

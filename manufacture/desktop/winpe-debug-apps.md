@@ -100,7 +100,7 @@ For information about how to modify the default BCD store (default.bcd), see [Ho
     **Note**  
     To use a symbol server from within Windows PE, use the `net use` command on the server’s symbols and file shares.
 
-     
+     
 
 For more information about command-line options that control debugging, see [BCDEdit Command-Line Options](http://go.microsoft.com/fwlink/p/?LinkId=526808).
 
@@ -117,9 +117,9 @@ For more information about command-line options that control debugging, see [BCD
 
 [BCDEdit Command-Line Options](http://go.microsoft.com/fwlink/p/?LinkId=526808)
 
- 
+ 
 
- 
+ 
 
 
 

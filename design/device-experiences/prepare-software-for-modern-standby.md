@@ -53,7 +53,7 @@ The following table describes each phase of preparing software for modern standb
 <strong>Note</strong>  This is also the phase where the device waits for the sleep timeout to elapse.
 </div>
 <div>
- 
+ 
 </div></td>
 <td><p>The system is powered on and the screen is turned on. The system is not in standby.</p></td>
 <td><p>No standby preparation tasks are being performed.</p></td>
@@ -158,13 +158,13 @@ The following table describes each phase of preparing software for modern standb
 </tbody>
 </table>
 
- 
+ 
 
 After Windows has entered the resiliency phase, software is considered to be fully prepared for low-power operation. As soon as all devices have entered their low-power modes, the SoC and core chipset will enter the lowest idle power mode, as described in [Prepare Hardware for Modern Standby](prepare-hardware-for-modern-standby.md).
 
 **Note**  Currently, no means is available to system designers to change or influence the behavior of these phases—they are a core part of Windows behavior. The details are explained here to aid in system debugging and development.
 
- 
+ 
 
 ## Desktop activity moderator
 
@@ -173,9 +173,9 @@ The desktop activity moderator (DAM) is the Windows component that is used to pa
 
 Windows prevents desktop applications from running during any part of modern standby after completing the DAM phase. Windows allows third-party system services to execute in a throttled mode after completing the DAM phase.
 
- 
+ 
 
- 
+ 
 
 
 

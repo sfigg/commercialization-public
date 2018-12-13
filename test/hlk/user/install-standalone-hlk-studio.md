@@ -48,9 +48,9 @@ Installing a standalone HLK Studio also installs HLK Manager to your system. How
 
 Also, you should avoid installing a standalone HLK Studio on the same machine where a remote Studio (Studio installed from a Controller) has been installed. There are known limitations to this scenario, which may leave your system in an inoperable state.
 
- 
+ 
 
- 
+ 
 
 
 

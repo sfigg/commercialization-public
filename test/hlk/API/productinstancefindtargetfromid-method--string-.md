@@ -42,7 +42,7 @@ This method returns an appropriate target type based on information associated w
 
 `Public Function FindTargetFromId ( _`
 
-          `targetId As String _`
+          `targetId As String _`
 
 `) As ReadOnlyCollection(Of TargetData)`
 
@@ -50,7 +50,7 @@ This method returns an appropriate target type based on information associated w
 
 `public ReadOnlyCollection<TargetData> FindTargetFromId (`
 
-          `string targetId`
+          `string targetId`
 
 `)`
 
@@ -59,7 +59,7 @@ This method returns an appropriate target type based on information associated w
 
 *targetId*
 
-     The ID value that identifies the test target. This can be found in the SysParse data.
+     The ID value that identifies the test target. This can be found in the SysParse data.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -76,9 +76,9 @@ An exception occurs if *targetId* is null or empty.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

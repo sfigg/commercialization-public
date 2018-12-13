@@ -16,14 +16,14 @@ ms.topic: article
 
 Use the **New-RequestForMicrosoftUpdate** cmdlet to create a new request for update (RFU) that contains Microsoft AK-only binaries for a given product, CPU, update type, source and target Microsoft OS version numbers, along with the target mobile operator name, and target phone name.
 
-Beginning with the release of Windows 10, OEMs can no longer submit OS-only updates for retail devices by using the New-RequestForMicrosoftUpdate cmdlet. OS-only updates for retail devices will be provided by Microsoft on Windows Update.
+Beginning with the release of Windows 10, OEMs can no longer submit OS-only updates for retail devices by using the New-RequestForMicrosoftUpdate cmdlet. OS-only updates for retail devices will be provided by Microsoft on Windows Update.
 
 OEMs can continue to submit OS-only updates for Trial and PartnerSelfHost preview environments.
 
-**Important**  
+**Important**  
 You need to submit an update for each Phone-Operator pairing. For example, if you have two phones on a specific Mobile Operator, you will need to submit two request for updates (RFU). If you have a phone on four different MOs, you will need to submit four RFUs.
 
- 
+
 
 This is the syntax for **New-RequestForMicrosoftUpdate**:
 
@@ -77,9 +77,9 @@ The **RequestForUpdateType** must be set to one of the two values summarized her
 </tbody>
 </table>
 
- 
 
-The **OemDeviceName** is the name at which the request for update is being targeted. This is only required if devices are updating to Windows Phone 8.1 or higher.
+
+The **OemDeviceName** is the name at which the request for update is being targeted. This is only required if devices are updating to Windows Phone 8.1 or higher.
 
 The **MOId** is the mobile operator at which the request for update is being targeted.
 
@@ -105,23 +105,22 @@ Show the result on the console:
 ```
 PS> $result | Format-List
 
-Ticket                   : TKT-RFU-PROD-PQRST-1
-RfuType                  : Trial
-IsApproved               : False
-CreatedOn                : 5/2/2014 5:42:51 PM
-ModifiedOn               : 5/2/2014 5:42:52 PM
-FirmwareSubmission       :
+Ticket                   : TKT-RFU-PROD-PQRST-1
+RfuType                  : Trial
+IsApproved               : False
+CreatedOn                : 5/2/2014 5:42:51 PM
+ModifiedOn               : 5/2/2014 5:42:52 PM
+FirmwareSubmission       :
 SourceFirmwareSubmission :
-SourceOSVersion          : 8.10.12349.825
-TargetOSVersion          : 8.10.12359.845
-Pop                      : Microsoft.Phone.PartnerServices.Rfu.Pop
-Bundles                  :
-Attachments              :
-Operations               : {Microsoft.Phone.PartnerServices.Rfu.RequestForUpdateOperation}
-Status                   : Microsoft.Phone.PartnerServices.Rfu.RfuStatusInfo
-RfuPayloadType           : MicrosoftAKOnly
-ExtensionData            : System.Runtime.Serialization.ExtensionDataObject
-      
+SourceOSVersion          : 8.10.12349.825
+TargetOSVersion          : 8.10.12359.845
+Pop                      : Microsoft.Phone.PartnerServices.Rfu.Pop
+Bundles                  :
+Attachments              :
+Operations               : {Microsoft.Phone.PartnerServices.Rfu.RequestForUpdateOperation}
+Status                   : Microsoft.Phone.PartnerServices.Rfu.RfuStatusInfo
+RfuPayloadType           : MicrosoftAKOnly
+ExtensionData            : System.Runtime.Serialization.ExtensionDataObject
 ```
 
 ### <span id="Help_documentation_from_Windows_PowerShell"></span><span id="help_documentation_from_windows_powershell"></span><span id="HELP_DOCUMENTATION_FROM_WINDOWS_POWERSHELL"></span>Help documentation from Windows PowerShell
@@ -353,6 +352,5 @@ PS C:\Windows\system32>
 
 [Request-UpdateCancellation](request-updatecancellation.md)
 
- 
 
- 
+

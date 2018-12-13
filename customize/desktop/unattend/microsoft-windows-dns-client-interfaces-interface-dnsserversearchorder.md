@@ -25,21 +25,21 @@ However, the entries are not guaranteed to be applied in any specific order.
 To ensure the correct ordering of DNS servers, use [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md) in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) to specify the order in which each DNS server should be searched. For example,
 
 ```XML
-   <DNSServerSearchOrder>
-      <IpAddress wcm:action="add" wcm:keyValue="2">2001:4898:28:4:213:20ff:fe16:3e96</IpAddress>
-      <IpAddress wcm:action="add" wcm:keyValue="3">172.16.1.12</IpAddress>
-      <IpAddress wcm:action="add" wcm:keyValue="1">192.168.1.1</IpAddress>
-   </DNSServerSearchOrder>
+   <DNSServerSearchOrder>
+      <IpAddress wcm:action="add" wcm:keyValue="2">2001:4898:28:4:213:20ff:fe16:3e96</IpAddress>
+      <IpAddress wcm:action="add" wcm:keyValue="3">172.16.1.12</IpAddress>
+      <IpAddress wcm:action="add" wcm:keyValue="1">192.168.1.1</IpAddress>
+   </DNSServerSearchOrder>
 ```
 
 You can also use the [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) setting under [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) element to ensure that suffixes are searched in a specific order. For example,
 
 ```XML
-   <DNSSuffixSearchOrder>
-      <DomainName wcm:action="add" wcm:keyValue="2">fabrikam.com</DomainName>
-      <DomainName wcm:action="add" wcm:keyValue="3">server2.fabrikam.com</DomainName>
-      <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>    
-      </ DNSSuffixSearchOrder >
+   <DNSSuffixSearchOrder>
+      <DomainName wcm:action="add" wcm:keyValue="2">fabrikam.com</DomainName>
+      <DomainName wcm:action="add" wcm:keyValue="3">server2.fabrikam.com</DomainName>
+      <DomainName wcm:action="add" wcm:keyValue="1">server1.fabrikam.com</DomainName>    
+      </ DNSSuffixSearchOrder >
 ```
 
 For both of these examples, the value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) indicates the order in which the DNS servers are searched. In this example, the server search order list is:

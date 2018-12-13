@@ -48,11 +48,11 @@ You can start a WDTF trace collection from the command line, as shown in the fol
 
 3.  Reboot the computer.
 
->[!NOTE]
->  
-For more information about trace options, see [Configuring and Starting an AutoLogger Session](http://go.microsoft.com/fwlink/?LinkID=296751) and [Logman](http://go.microsoft.com/fwlink/?LinkID=296752).
+> [!NOTE]
+> 
+> For more information about trace options, see [Configuring and Starting an AutoLogger Session](http://go.microsoft.com/fwlink/?LinkID=296751) and [Logman](http://go.microsoft.com/fwlink/?LinkID=296752).
 
- 
+ 
 
 ### <span id="Stop_Collecting_Traces"></span><span id="stop_collecting_traces"></span><span id="STOP_COLLECTING_TRACES"></span>Stop Collecting Traces
 
@@ -84,11 +84,11 @@ You can run [Tracefmt](http://go.microsoft.com/fwlink/?LinkID=296461) from the c
 
 **To create formatted log files from the command line**
 
-1.  Open a command prompt by using administrative privileges.
+1. Open a command prompt by using administrative privileges.
 
-2.  Type **Tracefmt.exe -r http://msdl.microsoft.com/download/symbols &lt;***full path to ETL file***&gt; -o OutputTxtFile.txt**
+2. Type **Tracefmt.exe -r <http://msdl.microsoft.com/download/symbols> &lt;**<em>full path to ETL file</em>**&gt; -o OutputTxtFile.txt**
 
-3.  Type **Tracefmt.exe -r http://msdl.microsoft.com/download/symbols &lt;***full path to ETL file***&gt; -csv -o OutputCsvFile.csv**
+3. Type **Tracefmt.exe -r <http://msdl.microsoft.com/download/symbols> &lt;**<em>full path to ETL file</em>**&gt; -csv -o OutputCsvFile.csv**
 
 You can open CSV files in Microsoft Excel; you can use the filtering features of Excel to filter collected traces, and to search for traces from certain time periods, from certain WDTF components, and other specific criteria.
 
@@ -97,9 +97,9 @@ You can open CSV files in Microsoft Excel; you can use the filtering features of
 
 [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md)
 
- 
+ 
 
- 
+ 
 
 
 

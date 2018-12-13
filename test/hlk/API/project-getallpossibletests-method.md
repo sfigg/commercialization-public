@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 Gets all of the tests that could potentially be added to this Project.
 
@@ -43,9 +43,9 @@ A list of [TestDefinition](testdefinition-class.md) objects that are applicable 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

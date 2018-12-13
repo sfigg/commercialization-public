@@ -40,9 +40,9 @@ In this walkthrough, we'll focus on test signing the image manually. In addition
 
 Once the image is signed, you're ready to flash the image to your mobile device.
 
- 
+ 
 
- 
+ 
 
 
 

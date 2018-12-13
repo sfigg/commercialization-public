@@ -20,7 +20,7 @@ Tracelog and Xperf are used to capture power-management event trace logs on Wind
 **Important**  
 To capture trace logs, the phone image must be built with the appropriate type and packages. This is done by modifying the OEMInput file to set the **ReleaseType** element to **Test**, and adding **TESTINFRASTRUCTURE** to the **Features** element.
 
- 
+ 
 
 ## Step 1: Install the Windows Performance Toolkit
 
@@ -50,7 +50,7 @@ Using the TShell command window, run Tracelog with the recommended power managem
 **Important**  
 On Windows 10 Mobile, Tracelog must place its logs within the C:\\data directory due to partition size restrictions. Be sure to use the -f flag to configure Tracelog to use C:\\data.
 
- 
+ 
 
 For detailed Tracelog command line syntax, see [Tracelog Command Syntax](http://msdn.microsoft.com/library/windows/hardware/ff553012.aspx). For additional examples, see [Tracelog Examples](https://msdn.microsoft.com/library/windows/hardware/ff553026).
 
@@ -143,20 +143,20 @@ Enable additional power management related providers if desired.
 <tbody>
 <tr class="odd">
 <td><p>Microsoft.Windows.Kernel.Processor.Power</p></td>
-<td><p>cmdd 'tracelog -enable MyPowerTrace -guid #0F67E49F-FE51-4E9F-B490-6F2948CC6027'</p></td>
+<td><p>cmdd &#39;tracelog -enable MyPowerTrace -guid #0F67E49F-FE51-4E9F-B490-6F2948CC6027&#39;</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft.Windows.PDC</p></td>
-<td><p>cmdd 'tracelog -enable MyPowerTrace -guid #A6BF0DEB-3659-40AD-9F81-E25AF62CE3C7'</p></td>
+<td><p>cmdd &#39;tracelog -enable MyPowerTrace -guid #A6BF0DEB-3659-40AD-9F81-E25AF62CE3C7&#39;</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft.Windows.Kernel.ACPI</p></td>
-<td><p>cmdd 'tracelog -enable MyPowerTrace -guid #C514638F-7723-485B-BCFC-96565D735D4A'</p></td>
+<td><p>cmdd &#39;tracelog -enable MyPowerTrace -guid #C514638F-7723-485B-BCFC-96565D735D4A&#39;</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following command requests the provider to log state information. The capture of state information is initiated at the beginning or end of a trace. This ensures that the information necessary to determine the state at a specific point in the trace is logged.
 
@@ -234,9 +234,9 @@ C:\Users\username\Documents>xperf -i MyPowerLogOut.etl -o MyPowerLogCSV.csv -tle
 C:\Users\username\Documents>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

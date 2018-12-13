@@ -29,11 +29,11 @@ Sign an existing package.
 
 `public static void Sign (`
 
-          `string sourcePackage,`
+          `string sourcePackage,`
 
-          `X509Certificate certificate,`
+          `X509Certificate certificate,`
 
-          `string outputPackage`
+          `string outputPackage`
 
 `)`
 
@@ -62,9 +62,9 @@ If the sourcePackage and outputPackage parameters are the same the package will 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

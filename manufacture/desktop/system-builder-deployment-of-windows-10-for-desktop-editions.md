@@ -739,11 +739,11 @@ Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
 
 8.  Start cleanup of the image.
 
-    Important: By default, non-major updates (such as ZDPs, or LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. 
+    Important: By default, non-major updates (such as ZDPs, or LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup option.
 
     ```
     MD e:\scratchdir
-    dism /Cleanup-Image /Image:e:\ /StartComponentCleanup /resetbase /scratchdir:e:\scratchdir
+    dism /Cleanup-Image /Image:e:\ /StartComponentCleanup /scratchdir:e:\scratchdir
     ```
 
 9.  Capture the image of the windows partition. This process takes several minutes.

@@ -21,7 +21,7 @@ For a Windows 10 Mobile device shipping in China, OEMs must specify that the de
 **Note**  
 This customization is only a requirement for China.
 
- 
+ 
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 

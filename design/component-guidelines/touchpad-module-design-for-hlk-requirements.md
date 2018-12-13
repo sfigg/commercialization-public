@@ -92,15 +92,15 @@ Regardless of button type implementation, a button down state should be reported
 
 **Note**  To account for manufacturing variances however, device and system logo tests have been designed to allow a tolerance of +/- 10g. In other words, a Windows Precision Touchpad that reports a button down state for forces between 140g and 190g, is still considered to be within specification.
 
- 
+ 
 
 The best Windows Precision Touchpad devices should aim to provide uniform activation across the entire contact area (this is required for pressure-pad implementations). However, at a minimum, Windows Precision Touchpad devices should ensure that any activation force applied as illustrated by the following diagram, results in button-down reporting.
 
 ![diagram showing the button activation forces for a windows precision touchpad device, with respect to the mechanical design of the touchpad.](../images/precision-img-activforce.png)
 
- 
+ 
 
- 
+ 
 
 
 

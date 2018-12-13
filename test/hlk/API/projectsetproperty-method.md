@@ -44,9 +44,9 @@ This method updates or creates a new property value.
 
 `Public MustOverride Function SetProperty ( _`
 
-          `nameOfProperty As String, _`
+          `nameOfProperty As String, _`
 
-          `propertyValue As String _`
+          `propertyValue As String _`
 
 `) As String `
 
@@ -54,9 +54,9 @@ This method updates or creates a new property value.
 
 `public abstract string SetProperty (`
 
-          `string nameOfProperty,`
+          `string nameOfProperty,`
 
-          `string propertyValue`
+          `string propertyValue`
 
 `)`
 
@@ -65,11 +65,11 @@ This method updates or creates a new property value.
 
 *nameOfProperty*
 
-     The name of the property to update or create.
+     The name of the property to update or create.
 
 *propertyValue*
 
-     The machine pool to use for this **ProductInstance**.
+     The machine pool to use for this **ProductInstance**.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -88,9 +88,9 @@ This method is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

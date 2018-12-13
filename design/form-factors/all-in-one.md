@@ -22,7 +22,7 @@ The All-in-one (AIO) form factor is an evolution of the traditional desktop with
 <tr>
 <td style="width: 15%;">&nbsp;</td>
 <td colspan="2" style="width: 30%; text-align: center;">
-![premium all-in-one](../images/desktop-aio-value.png)
+<img src="../images/desktop-aio-value.png" alt="premium all-in-one"/>
 </td>
 </tr>
 <tr>
@@ -38,14 +38,14 @@ The All-in-one (AIO) form factor is an evolution of the traditional desktop with
 <td bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">Key Features</p></td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Portable (&lt;&nbsp;5&nbsp;pounds, thin)</p>
-<p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Battery Life (6+ hours)](../component-guidelines/battery.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/battery.md" data-raw-source="[Battery Life (6+ hours)](../component-guidelines/battery.md)">Battery Life (6+ hours)</a></p>
 <p style="margin: .75em 0 .75em 0;">Multi-user, multi-touch apps<br/>(Sensors, hinge design for &ldquo;lay-flat,&rdquo; 10-point touch)</p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">High-DPI&nbsp;(4K) &amp; multi-monitor support</p>
-<p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/pen-devices.md" data-raw-source="[Inking/Pen Support](../component-guidelines/pen-devices.md)">Inking/Pen Support</a></p>
 <p style="margin: .75em 0 .75em 0;">Multi-user, multi-touch apps</p>
 </td>
 </tr>
@@ -67,7 +67,7 @@ The All-in-one (AIO) form factor is an evolution of the traditional desktop with
 <td><p>8&nbsp;GB+&nbsp;/ 256&nbsp;GB+ SSD<br/>or 1&nbsp;TB+ HDD</p></td>
 </tr>
 <tr>
-<td bgcolor="EEEEEE"><p>Display</P</td>
+<td bgcolor="EEEEEE"><p>Display&lt;/P</td>
 <td><p>17&rdquo;&ndash;21&rdquo;&nbsp;/ HD Touch</p></td>
 <td><p>21&rdquo;&ndash;30&rdquo;&nbsp;/ FHD<br/>or QHD Touch, DirectX&nbsp;12</p></td>
 </tr>

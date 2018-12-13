@@ -36,9 +36,9 @@ You can highlight a time interval selection to keep the time interval selected e
 
 [WPA Common Scenarios](windows-performance-analyzer-common-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

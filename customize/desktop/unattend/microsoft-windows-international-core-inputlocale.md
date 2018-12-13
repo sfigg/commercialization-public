@@ -43,12 +43,12 @@ For a list of supported languages, locales, and identifiers, see [Supported Lang
 </ul>
 <p>If you want to specify more than one input locale to add support for more than one keyboard type, you can specify multiple values separated by semicolons. For example, you can specify <code>&lt;InputLocale&gt;en-US; fr-FR; es-ES&lt;/InputLocale&gt;</code> to add support for English (US), French (France), and Spanish (Spain) keyboards. The first value that is listed is used as the default keyboard.</p>
 <p>The valid keyboard layouts that can be configured on your system are listed in the <strong>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts</strong> registry key.</p>
-<p>For a list of default input locale values, see [Supported Language Packs and Default Settings](http://go.microsoft.com/fwlink/?LinkId=206622).</p></td>
+<p>For a list of default input locale values, see <a href="http://go.microsoft.com/fwlink/?LinkId=206622" data-raw-source="[Supported Language Packs and Default Settings](http://go.microsoft.com/fwlink/?LinkId=206622)">Supported Language Packs and Default Settings</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 

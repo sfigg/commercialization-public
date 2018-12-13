@@ -18,29 +18,29 @@ ms.topic: article
 
 To troubleshoot issues that occur with Device.Storage tests, follow these steps:
 
-1.  Review [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+1. Review [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
-2.  Review one of these Windows Hardware Lab Kit (Windows HLK) topics, depending on the type of storage device or configuration:
+2. Review one of these Windows Hardware Lab Kit (Windows HLK) topics, depending on the type of storage device or configuration:
 
-    -   [Hard Disk Drive Testing Prerequisites](hard-disk-drive-testing-prerequisites.md)
+   -   [Hard Disk Drive Testing Prerequisites](hard-disk-drive-testing-prerequisites.md)
 
-    -   [Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testing Prerequisites](hardware-based-raid-systems--fibre-channel-sas-scsi-serial-ata--testing-prerequisites.md)
+   -   [Hardware-based Raid Systems (Fibre Channel, SAS, SCSI, Serial ATA) Testing Prerequisites](hardware-based-raid-systems--fibre-channel-sas-scsi-serial-ata--testing-prerequisites.md)
 
-    -   [Optical Disk Drive Testing Prerequisites](optical-disk-drive-testing-prerequisites.md)
+   -   [Optical Disk Drive Testing Prerequisites](optical-disk-drive-testing-prerequisites.md)
 
-    -   [Removable Storage Testing Prerequisites](removable-storage-testing-prerequisites.md)
+   -   [Removable Storage Testing Prerequisites](removable-storage-testing-prerequisites.md)
 
-    -   [Secure Digital Host Controller Storage Testing Prerequisites](secure-digital-host-controller-storage-testing-prerequisites.md)
+   -   [Secure Digital Host Controller Storage Testing Prerequisites](secure-digital-host-controller-storage-testing-prerequisites.md)
 
-    -   [Storage Adapter or Controller Testing Overview](storage-adapter-or-controller-testing-overview.md)
+   -   [Storage Adapter or Controller Testing Overview](storage-adapter-or-controller-testing-overview.md)
 
-3.  Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/p/?LinkID=236110) for current test issues.
+3. Review the [Windows HLK release notes](http://go.microsoft.com/fwlink/p/?LinkID=236110) for current test issues.
 
-4.  For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
+4. For a test failure, look for usable information in the Windows HLK Studio test log. If you find usable information, resolve the issue and rerun the test.
 
-5.  If you observe any failures while running the tests in the Windows HLK, look at the test logs that were generated. For example, for the Enumeration Test, the most relevant log is enumeratedrive.log.wtl. To view this log, go to the **Results** tab in the HLK studio and expand **Enumeration Test** &gt; **Test Run Date and Time** &gt; **Run Test** &gt; **Logs** &gt; **enumeratedrive.log.wtl**.
+5. If you observe any failures while running the tests in the Windows HLK, look at the test logs that were generated. For example, for the Enumeration Test, the most relevant log is enumeratedrive.log.wtl. To view this log, go to the **Results** tab in the HLK studio and expand **Enumeration Test** &gt; **Test Run Date and Time** &gt; **Run Test** &gt; **Logs** &gt; **enumeratedrive.log.wtl**.
 
-6.  To debug more, rerun the test manually from the Command Prompt (cmd), while setting the verbosity level to 4. This allows the test to log more information, such as data buffer, CDB information, and sense code. Documentation for each test contains details about the binary that is related to a particular test along with the binary location.
+6. To debug more, rerun the test manually from the Command Prompt (cmd), while setting the verbosity level to 4. This allows the test to log more information, such as data buffer, CDB information, and sense code. Documentation for each test contains details about the binary that is related to a particular test along with the binary location.
 
 ## <span id="Optical_Storage_Device"></span><span id="optical_storage_device"></span><span id="OPTICAL_STORAGE_DEVICE"></span>Optical Storage Device
 
@@ -132,7 +132,7 @@ There are special steps that can be taken to reproduce a particular test case in
 </tbody>
 </table>
 
- 
+ 
 
 **Test scenarios:**
 
@@ -184,9 +184,9 @@ Manual operation:
 
     -   Set the priority for future reads and writes. Valid options for this command are tpriority.
 
->[!NOTE]
->  
-Invalid parameters will be ignored.
+> [!NOTE]
+> 
+> Invalid parameters will be ignored.
 
 Unspecified valid parameters are defaulted to a fixed value.
 
@@ -207,11 +207,11 @@ For more information about how to troubleshoot a test, see the troubleshooting s
 
 [Device.Storage Tests](device-storage-tests.md)
 
-[Troubleshooting Windows HLK](..\user\troubleshooting-windows-hlk.md)
+[Troubleshooting Windows HLK](../user/troubleshooting-windows-hlk.md)
 
- 
+ 
 
- 
+ 
 
 
 

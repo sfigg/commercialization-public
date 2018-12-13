@@ -60,9 +60,9 @@ Due to a limitation in the HLK scheduling engine, the following steps must be ap
     10. In the toolbar, click **Create Schedule**.
     11. Wait for the job to run and all of the selected machines to return to the **Ready** state.
 
- 
+ 
 
- 
+ 
 
 
 

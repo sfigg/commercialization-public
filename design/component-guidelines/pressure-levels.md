@@ -75,9 +75,9 @@ Here's a diagram showing the ideal pressure curve for a Windows pen device.
 
 ![diagram showing the ideal pressure curve for a windows pen device.](../images/pen-pressure-crv.png)
 
- 
+ 
 
- 
+ 
 
 
 

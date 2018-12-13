@@ -8,8 +8,7 @@ author: dawn.wood
 ms.author: dawnwood
 ms.date: 10/02/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Getting started with the Windows Virtual Hardware Lab Kit (VHLK)

@@ -14,11 +14,20 @@ ms.topic: article
 # Default Time Zones
 
 
-Default time zones by region in Windows 10. When the first user logs into Windows and identifies their region, Windows sets the time zone. The user can change the time zone at any time.
+When the first user logs into Windows 10 or Windows Server and identifies their region, Windows sets the time zone. The user can change the time zone at any time.
 
-**Important**   Windows updates the time zones in the registry when time zones are available and updates are downloaded. Because time zones can change, use the [tzutil](http://go.microsoft.com/fwlink/?LinkId=620389) command-line tool in Windows to verify the time zone.
+Windows updates the time zones in the registry when time zones are available and updates are downloaded. 
 
- 
+**To get the most current list of time zones, use [tzutil](https://docs.microsoft.com/windows-server/administration/windows-commands/tzutil) from Windows**:
+```
+tzutil /l
+```
+
+To change the default time zone in an offline image:
+```
+Dism /Image:"C:\mount\windows" /Set-TimeZone:"W. Europe Standard Time"
+```
+ 
 
 |                                              |         |                                 |             |                                                   |
 |----------------------------------------------|---------|---------------------------------|-------------|---------------------------------------------------|
@@ -274,13 +283,4 @@ Default time zones by region in Windows 10. When the first user logs into Windo
 | Zambia                                       | ZM      | South Africa Standard Time      | (UTC+02:00) | Harare, Pretoria                                  |
 | Zimbabwe                                     | ZW      | South Africa Standard Time      | (UTC+02:00) | Harare, Pretoria                                  |
 
- 
-
- 
-
- 
-
-
-
-
-
+ 

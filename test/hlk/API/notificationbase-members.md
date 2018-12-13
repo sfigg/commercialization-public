@@ -40,7 +40,7 @@ The following tables list the members exposed by the **NotificationBase** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -58,11 +58,11 @@ The following tables list the members exposed by the **NotificationBase** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Equals](notificationbase-equals-method.md)</p></td>
+<td><p><a href="notificationbase-equals-method.md" data-raw-source="[Equals](notificationbase-equals-method.md)">Equals</a></p></td>
 <td><p>This function provides value equality functionality for this object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetHashCode](notificationbase-gethashcode-method.md)</p></td>
+<td><p><a href="notificationbase-gethashcode-method.md" data-raw-source="[GetHashCode](notificationbase-gethashcode-method.md)">GetHashCode</a></p></td>
 <td><p>Provides a hash code for the project object.</p></td>
 </tr>
 <tr class="odd">
@@ -76,7 +76,7 @@ The following tables list the members exposed by the **NotificationBase** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -104,11 +104,11 @@ The following tables list the members exposed by the **NotificationBase** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

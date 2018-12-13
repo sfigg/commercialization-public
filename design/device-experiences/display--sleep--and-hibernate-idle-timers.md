@@ -55,7 +55,7 @@ The following table summarizes the differences between a connected standby PC an
 <tr class="odd">
 <td><p>Put the computer to sleep</p></td>
 <td><p>When this time-out occurs, the system immediately enters the ACPI Sleep (S3) state. All applications stop execution because all processors will be powered off.</p></td>
-<td><p>When this time-out occurs, the system enters connected standby and the display is immediately powered down. Then the system steps through the preparation phases described in [Prepare software for modern standby](prepare-software-for-modern-standby.md).</p></td>
+<td><p>When this time-out occurs, the system enters connected standby and the display is immediately powered down. Then the system steps through the preparation phases described in <a href="prepare-software-for-modern-standby.md" data-raw-source="[Prepare software for modern standby](prepare-software-for-modern-standby.md)">Prepare software for modern standby</a>.</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -67,11 +67,11 @@ The following table summarizes the differences between a connected standby PC an
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

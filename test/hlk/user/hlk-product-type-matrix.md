@@ -18,13 +18,13 @@ ms.topic: article
 
 The Windows 10 HLK Product Type Matrix lists all of the product types that can be included in the Windows Hardware Compatibility Program. Each product type defines features and requirements that must be met for program eligibility.
 
->[!NOTE]
->  
-Some of the product types from the HCK for Windows 8/8.1 have been deprecated and must be submitted as **Other Devices** on Sysdev. The deprecated product types are included to enable you to obtain a unified signed driver by merging HCK and HLK packages together.
+> [!NOTE]
+> 
+> Some of the product types from the HCK for Windows 8/8.1 have been deprecated and must be submitted as **Other Devices** on Sysdev. The deprecated product types are included to enable you to obtain a unified signed driver by merging HCK and HLK packages together.
 
 Please reference the matrix below prior to merging HCK and HLK packages.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -923,11 +923,11 @@ Please reference the matrix below prior to merging HCK and HLK packages.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

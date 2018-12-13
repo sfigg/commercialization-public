@@ -46,7 +46,7 @@ Here’s a sample set of hardware configurations that you might design.
 | Office 2013                  | No           | Yes                 | Yes                               |
 | Compact OS                   | Yes          | Yes                 | No                                |
 
- 
+ 
 ,## <span id="loadImage"></span><span id="loadimage"></span><span id="LOADIMAGE"></span>Step 1: Create a new project in Windows ICD
 
 
@@ -101,7 +101,7 @@ You can use Windows ICD to add your own INF-based driver to your image.
 
     **Note**  Some drivers are packaged as .zip or .exe files. You'll need to unzip or extract these files before adding them. Some driver files, like the sample driver given, include files for both x86 and x64 devices, this is OK.
 
-     
+     
 
 3.  In the **Name** box, type *Fabrikam Video Card 100*.
 
@@ -138,7 +138,7 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 
     **Note**  You cannot add .url and .lnk files directly in Windows ICD. If you have these files, follow Step 2 in lab 2 in the section ”Add the files you need to modify the Start layout”.
 
-     
+     
 
 ## <span id="addLang"></span><span id="addlang"></span><span id="ADDLANG"></span>Step 6: Add a language
 
@@ -189,7 +189,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 <tr class="even">
 <td align="left">Language interface pack</td>
 <td align="left"><code>lp.cab</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see <a href="available-language-packs-for-windows.md" data-raw-source="[Available Language Packs for Windows](available-language-packs-for-windows.md)">Available Language Packs for Windows</a>.</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
 </tr>
 <tr class="odd">
@@ -204,7 +204,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see <a href="features-on-demand-v2--capabilities.md" data-raw-source="[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md)">Features On Demand V2 (Capabilities)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -233,7 +233,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 </tbody>
 </table>
 
- 
+ 
 
 1.  In Windows ICD, in the **Available customizations** pane, expand **Deployment assets**, and then click **Features on demand**.
 2.  In the middle pane, next to **Features package path**, click **Browse**. Browse to the FOD file, for example: **C:\\Samples\\Languages\\fr-fr x64-client**, click **Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab**, and then click **Open.**
@@ -260,7 +260,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 -   You run Dism.exe (or a script) to remove English after you add another language. For an example, see [Lab 2: Classic-style deployment](part-2--classic-style-deployment.md), step 7.
 -   After adding a language, you'll need to re-add the Universal apps (APPX). This process needs to be performed during Audit mode. For more information on how to remove and re-add these applications, please refer to [Lab 2: Classic-style deployment](part-2--classic-style-deployment.md), step 8. In Windows 10 builds after **August 18, 2015**, you can now add new Universal apps (APPX) on top of the existing ones. It is no longer necessary to remove the prior versions before re-adding them.
 
- 
+ 
 
 ## <span id="buildUSBKey"></span><span id="buildusbkey"></span><span id="BUILDUSBKEY"></span>Step 8: Save the image
 
@@ -274,7 +274,7 @@ Windows ICD can store the entire image into a single .FFU file. The FFU format w
 5.  In **Choose where the FFU file is saved**, give the file a name, such as C:\\Images\\MyFFUImage.ffu, and then click **Next**.
     **Note**  We recommend choosing a location on a hard drive rather than a USB key, as it can make the FFU creation process faster.
 
-     
+     
 
 6.  Review the settings and ensure they are correct. Click **Build**. Windows ICD creates the FFU file using the name and path indicated in the previous step. This will take a few minutes. Click **Finish**.
 
@@ -362,9 +362,9 @@ Do these steps to test an image. Note, this requires completing the First User E
 10. The device finalizes setup and reboots to the desktop.
 11. When the desktop appears, in **Settings** under **System &gt; About**, you should see the technical support info that you entered earlier appear (company name, support phone number, and support website).
 
- 
+ 
 
- 
+ 
 
 
 

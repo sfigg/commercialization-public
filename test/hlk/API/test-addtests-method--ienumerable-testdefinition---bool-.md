@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 This method should not be called.
 
@@ -33,9 +33,9 @@ This method should not be called.
 
 `  public virtual void AddTests (`
 
-          `IEnumerable<TestDefinition> tests`
+          `IEnumerable<TestDefinition> tests`
 
-          `bool featureDetectionEnabled`
+          `bool featureDetectionEnabled`
 
 `)`
 
@@ -55,9 +55,9 @@ Whether the tests should be added with feature detection or not.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

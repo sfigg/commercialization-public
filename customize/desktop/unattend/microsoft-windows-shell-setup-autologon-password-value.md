@@ -36,7 +36,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -82,9 +82,9 @@ The following XML output shows how to set autologon.
 
 [Password](microsoft-windows-shell-setup-autologon-password.md)
 
- 
+ 
 
- 
+ 
 
 
 

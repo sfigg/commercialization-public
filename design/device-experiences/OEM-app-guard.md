@@ -16,6 +16,7 @@ ms.topic: article
 Application Guard helps to isolate enterprise-defined untrusted sites, protecting an enterprise while its employees browse the Internet. If an employee goes to an untrusted site through either Microsoft Edge or Internet Explorer, Microsoft Edge opens the site in an isolated Hyper-V-enabled container, which is separate from the host operating system. This container isolation means that if the untrusted site turns out to be malicious, the host PC is protected, and the attacker can't get to the enterprise data. 
 
 As an OEM, you provide the hardware necessary to enable Application Guard. Here are the requirements.
+
 | Requirement | Details |
 |----------------------|---------|
 | 64-bit CPU | A 64-bit computer is required for hypervisor and virtualization-based security (VBS). For more information about VBS, see [Virtualization Based Security (VBS)](OEM-vbs.md). |

@@ -19,6 +19,7 @@ ms.topic: article
 This test verifies the SPB of controller driver and I2C bus. See https://msdn.microsoft.com/en-us/library/windows/hardware/dn919852(v=vs.85).aspx
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.BusController.I2C.SPBWrite</li></ul> |  
@@ -31,7 +32,7 @@ This test verifies the SPB of controller driver and I2C bus. See https://msdn.mi
 |**Requires special configuration**| true |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -43,11 +44,11 @@ Tests in this feature area might have additional documentation, including prereq
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

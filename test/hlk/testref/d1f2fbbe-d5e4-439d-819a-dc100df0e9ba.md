@@ -22,15 +22,16 @@ Ensuring that the block device and the operating system maintain compliance with
 
 The test uses SCSI pass-through requests (IOCTL\_SCSI\_PASS\_THROUGH) to construct and send SCSI command descriptor blocks (CDBs) to the device. The test evaluates the results of the commands to verify compliance.
 
->[!NOTE]
->  
-If you are running this test as a part of a Storage RAID Hardware-based RAID (Storage Array) submission, and your storage array supports Multipath I/O (MPIO), you must configure your MPIO to use Fail-Over Only policy, and set the target storage disk to use the same active path for all MPIO-capable disks.
+> [!NOTE]
+> 
+> If you are running this test as a part of a Storage RAID Hardware-based RAID (Storage Array) submission, and your storage array supports Multipath I/O (MPIO), you must configure your MPIO to use Fail-Over Only policy, and set the target storage disk to use the same active path for all MPIO-capable disks.
 
 If you are running this test as a part of a Storage RAID Hardware-based RAID (Storage Array) submission, make sure that LUN0 is configured as the largest size non-boot LUN.
 
- 
+
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Storage.Hd.ScsiProtocol.SpcCompliance</li><li>Device.Storage.Controller.Raid.BasicFunction</li><li>Device.Storage.Hd.ScsiProtocol.ReferenceSpec</li><li>Device.Storage.Hd.ScsiProtocol.SamCompliance</li></ul> |  
@@ -43,7 +44,7 @@ If you are running this test as a part of a Storage RAID Hardware-based RAID (St
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -60,7 +61,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For general troubleshooting information, see [Troubleshooting Device.Storage Testing](troubleshooting-devicestorage-testing.md).
 
@@ -74,11 +75,11 @@ To pass, the SCSI device must support every mandatory command and must be fully 
 
 Optional commands are also tested. If a device supports the optional commands and the commands are found to be non-compliant, the test fails. If the device does not support optional commands, the test passes.
 
->[!NOTE]
->  
-Errors from this test occur via issues identified in the log file and in stop errors produced through stressing the driver under test.
+> [!NOTE]
+> 
+> Errors from this test occur via issues identified in the log file and in stop errors produced through stressing the driver under test.
 
- 
+
 
 During the test, if you are having trouble removing a LUN that is failing or are unable to create a LUN from the storage controller, follow these steps:
 
@@ -92,23 +93,23 @@ During the test, if you are having trouble removing a LUN that is failing or are
 
 If you have a device reset that results in the device falling off the bus and subsequent commands to fail, follow these steps:
 
-1.  Copy the test binary (Scsicompliance.exe) from the Windows HLK controller. This file is located at \\\\controllername\\tests\\\[processorarchitectureofyourclient\]\\NTTEST\\DriversTest\\storage\\wdk\\
+1. Copy the test binary (Scsicompliance.exe) from the Windows HLK controller. This file is located at \\\\controllername\\tests\\\[processorarchitectureofyourclient\]\\NTTEST\\DriversTest\\storage\\wdk\\
 
-2.  Copy the wttlog.dll file from the Windows HLK controller. This file is located at \\\\&lt;controllername&gt;\\Tests\\&lt;processorarchitectureofyourclient &gt;\\wtt
+2. Copy the wttlog.dll file from the Windows HLK controller. This file is located at \\\\&lt;controllername&gt;\\Tests\\&lt;processorarchitectureofyourclient &gt;\\wtt
 
-3.  Place both of these files on the test computer in a separate folder.
+3. Place both of these files on the test computer in a separate folder.
 
-4.  From a command prompt, from the directory containing the test binary, type the following command: Scsicompliance.exe /device &lt;deviceID&gt; /verbosity 4 /operation test /scenario &lt;scenario&gt; /CDB &lt;failingcdbname&gt;
+4. From a command prompt, from the directory containing the test binary, type the following command: Scsicompliance.exe /device &lt;deviceID&gt; /verbosity 4 /operation test /scenario &lt;scenario&gt; /CDB &lt;failingcdbname&gt;
 
-    >[!NOTE]
-    >  
-    DeviceID and scenario values can be found by checking the repro line within the test log. The failingcdbname can be found by running the test binary with the /?option (scsicompliance.exe /?).
+   > [!NOTE]
+   > 
+   > DeviceID and scenario values can be found by checking the repro line within the test log. The failingcdbname can be found by running the test binary with the /?option (scsicompliance.exe /?).
 
-     
 
-5.  Go back to the same directory and review the results to see if you can determine the reason for the test failure.
 
-6.  If you need additional help, collect the txt and wtl logs and share the logs with Microsoft Customer Support.
+5. Go back to the same directory and review the results to see if you can determine the reason for the test failure.
+
+6. If you need additional help, collect the txt and wtl logs and share the logs with Microsoft Customer Support.
 
 If you are running this test against Windows Server 2003, make sure the disks or LUNs are not MPIO pseudo-LUNs. MPIO on Windows Server 2003 is not supported.
 
@@ -117,11 +118,11 @@ If you are running this test against Windows Server 2003, make sure the disks or
 
 The following commands are validated:
 
->[!NOTE]
->  
-For more information about **Reference**, visit the [Technical Committee T10 SCSI Storage Interfaces](http://go.microsoft.com/fwlink/?LinkId=237712) website.
+> [!NOTE]
+> 
+> For more information about **Reference**, visit the [Technical Committee T10 SCSI Storage Interfaces](http://go.microsoft.com/fwlink/?LinkId=237712) website.
 
- 
+
 
 **Command**: Test Unit Ready
 
@@ -1198,11 +1199,11 @@ Expectation: Scsi Status is 0x2 (CHECK CONDITION).
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/?**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/?**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -1220,12 +1221,12 @@ For command-line help for this test binary, type **/?**.
 <tbody>
 <tr class="odd">
 <td><p>Scsicompliance.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\driverstest\storage\wdk\nttest\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\driverstest\storage\wdk\nttest&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -1240,11 +1241,11 @@ For command-line help for this test binary, type **/?**.
 | **OperationId**        |                                                                                                                                                                                                                |
 | **Destructive**        | (0,1) 0=Passive, 1=Destructive                                                                                                                                                                                 |
 
- 
 
- 
 
- 
+
+
+
 
 
 

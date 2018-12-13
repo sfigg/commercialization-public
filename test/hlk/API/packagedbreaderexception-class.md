@@ -36,18 +36,18 @@ This class is a base class for all PackageDBReader exceptions.
 
 **System.Object**
 
-     **System.Exception**
+     **System.Exception**
 
-          **Microsoft.Windows.Kits.Hardware.UI.Views.PackageDBReaderException**
+          **Microsoft.Windows.Kits.Hardware.UI.Views.PackageDBReaderException**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

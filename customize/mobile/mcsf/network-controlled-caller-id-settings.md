@@ -99,7 +99,7 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+     
 
 6.  To specify the default value for the caller ID setting, set `DefaultCallerIdSetting` to one of the following values:
 
@@ -136,7 +136,7 @@ This customization supports: **per-IMSI** value
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 Work with your mobile operator to fully test this customization on their network and verify that each setting and value behave as documented in this topic.

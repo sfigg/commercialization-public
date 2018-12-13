@@ -63,9 +63,9 @@ This topic provides general guidelines for testing a Windows Precision Touchpad 
 
 -   To exit PTLogo, press “E” on the keyboard.
 
- 
+ 
 
- 
+ 
 
 
 

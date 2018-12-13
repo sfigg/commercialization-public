@@ -38,7 +38,7 @@ This class represents a **Project** object which is created in the database for 
 
 `Public MustInherit Class Project`
 
-          `Implements IRunTests`
+          `Implements IRunTests`
 
 **C#**
 
@@ -51,9 +51,9 @@ This class represents a **Project** object which is created in the database for 
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.NotificationBase**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.NotificationBase**
 
-          **Microsoft.Windows.Kits.Hardware.ObjectModel.Project**
+          **Microsoft.Windows.Kits.Hardware.ObjectModel.Project**
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -65,9 +65,9 @@ Projects are the highest level objects in the hierarchy of data and objects used
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

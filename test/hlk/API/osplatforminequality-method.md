@@ -42,9 +42,9 @@ This method provides an Inequality operator between two **OSPlatform** objects.
 
 `Public Shared Operator <> ( _`
 
-          `first As OSPlatform, _`
+          `first As OSPlatform, _`
 
-          `second As OSPlatform _`
+          `second As OSPlatform _`
 
 `) As Boolean`
 
@@ -52,9 +52,9 @@ This method provides an Inequality operator between two **OSPlatform** objects.
 
 `public static bool operator != (`
 
-          `OSPlatform first,`
+          `OSPlatform first,`
 
-          `OSPlatform second`
+          `OSPlatform second`
 
 `)`
 
@@ -63,11 +63,11 @@ This method provides an Inequality operator between two **OSPlatform** objects.
 
 *first*
 
-          The first **OSPlatform** object to compare against.
+          The first **OSPlatform** object to compare against.
 
 *second*
 
-          The second **OSPlatform** object to compare against.
+          The second **OSPlatform** object to compare against.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ This method provides an Inequality operator between two **OSPlatform** objects.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

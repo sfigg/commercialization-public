@@ -40,12 +40,12 @@ ms.topic: article
 <tr class="odd">
 <td><p><strong>Never</strong></p></td>
 <td><p>Specifies that the UI is never displayed.</p>
-<p><code>WillShowUI</code> only prevents Windows Setup UI pages from being displayed. If a critical error occurs, an error message might be displayed. To avoid displaying the error message, you can use the ErrorHandler.cmd file to automatically run a script to handle the error. For more information about ErrorHandler.cmd, see [Add a custom script to Windows Setup](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup).</p></td>
+<p><code>WillShowUI</code> only prevents Windows Setup UI pages from being displayed. If a critical error occurs, an error message might be displayed. To avoid displaying the error message, you can use the ErrorHandler.cmd file to automatically run a script to handle the error. For more information about ErrorHandler.cmd, see <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup" data-raw-source="[Add a custom script to Windows Setup](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-custom-script-to-windows-setup)">Add a custom script to Windows Setup</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -118,9 +118,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 We recommend setting this value to at least 51200 (50 MB), because lower values may negatively affect browsing performance. For computers with limited drive space, lower values may be used.
 
- 
+ 
 
 ## Values
 
@@ -42,7 +42,7 @@ We recommend setting this value to at least 51200 (50 MB), because lower values 
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -73,9 +73,9 @@ The following XML output shows how to reserve 100 MB of disk space for storing t
 
 [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
- 
+ 
 
- 
+ 
 
 
 

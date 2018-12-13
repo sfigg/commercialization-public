@@ -54,9 +54,9 @@ Because the sensor may be slightly smaller than the cover sheet, the measured he
 
 -   1/1 (100%) iterations must pass in order to complete with passing status.
 
- 
+ 
 
- 
+ 
 
 
 

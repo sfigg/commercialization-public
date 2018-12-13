@@ -110,9 +110,9 @@ The following table compares the five power-management modes.
 </tbody>
 </table>
 
- 
+ 
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;In no-subscription mode and no-SIM mode, an MBB device can be in either the D2 or D3 device power state, depending on whether the device supports D3.</p>
- 
+ 
 
 The power consumption of the MBB device in each of the power modes shown in the preceding table will vary by radio implementation, network type, and distance from the cellular access point. Contact the radio manufacturer for information about the device-specific power consumption in each power management mode shown in the preceding table.
 
@@ -138,7 +138,7 @@ If the MBB device has not been provisioned on the network by the user, Windows w
 At all times—regardless of whether the platform is in modern standby—power must not be removed from the USB function portion of the MBB device. Otherwise, when power is removed, the device will fall off of the USB bus and cause the device to be reported as surprise-removed.
 
 <p style="margin: 1em 1.5em 0 1.5em;"><strong>Note</strong>&nbsp;&nbsp;&nbsp;On modern standby platforms, there is no support for the execution of third-party driver or ACPI firmware to manage transitions of the MBB device between the power management modes previously described. All power management of the device must be done in-band through the USB bus.</p>
- 
+ 
 
 Third-party driver and ACPI firmware is supported for Specific Absorption Rate (SAR) sensors, which change the MBB radio transmitter power in reaction to the proximity of the MBB antenna to the user.
 

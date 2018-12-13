@@ -31,83 +31,83 @@ This section describes the tasks that you must complete before you test a client
 
 To certify your client systems for Windows 8 and Windows 8.1, you'll need the following hardware in addition to the system that you're testing:
 
--   Another computer. Ideally, the second computer is already certified.
+- Another computer. Ideally, the second computer is already certified.
 
-    >[!NOTE]
-    >  
-    If you're testing a computer with Bluetooth, the second computer must also have Bluetooth 4.0 or have a Bluetooth adapter installed.
+  > [!NOTE]
+  > 
+  > If you're testing a computer with Bluetooth, the second computer must also have Bluetooth 4.0 or have a Bluetooth adapter installed.
 
-     
+     
 
--   An audio device (if the test system supports audio).
+- An audio device (if the test system supports audio).
 
--   An audio loopback cable (if the test system supports audio).
+- An audio loopback cable (if the test system supports audio).
 
--   An external speaker.
+- An external speaker.
 
--   A network adapter.
+- A network adapter.
 
--   Two USB flash drives.
+- Two USB flash drives.
 
--   One data CD.
+- One data CD.
 
--   One USB 3.0 hub for every exposed port.
+- One USB 3.0 hub for every exposed port.
 
--   Audio Precision Machine - Model System Two and connector cables.
+- Audio Precision Machine - Model System Two and connector cables.
 
--   A Bluetooth audio device (if the system supports Bluetooth).
+- A Bluetooth audio device (if the system supports Bluetooth).
 
--   A monitor with audio output (if the system has an external HDMI or DisplayPort port).
+- A monitor with audio output (if the system has an external HDMI or DisplayPort port).
 
--   A Wi-Fi Access point (if the system supports Wi-Fi).
+- A Wi-Fi Access point (if the system supports Wi-Fi).
 
--   An Athena T0 test card.
+- An Athena T0 test card.
 
--   Polycom CX100.
+- Polycom CX100.
 
--   An audio microphone or another active source for audio capture.
+- An audio microphone or another active source for audio capture.
 
--   A SIM with data provisioned (if the system supports mobile broadband).
+- A SIM with data provisioned (if the system supports mobile broadband).
 
--   A GPS signal (If the system has GPS).
+- A GPS signal (If the system has GPS).
 
--   A Windows To Go drive.
+- A Windows To Go drive.
 
-    You must pre-configure the Windows To Go drive with a valid Windows image (WIM) file to test the computer. It must include any drivers that are needed to use the system's hardware.
+  You must pre-configure the Windows To Go drive with a valid Windows image (WIM) file to test the computer. It must include any drivers that are needed to use the system's hardware.
 
--   A mirror large enough to reflect a screen image back into the camera (if the system has a webcam).
+- A mirror large enough to reflect a screen image back into the camera (if the system has a webcam).
 
--   USB SuperMutt.
+- USB SuperMutt.
 
--   A USB 3.0 device, such as a USB 3.0 storage device.
+- A USB 3.0 device, such as a USB 3.0 storage device.
 
--   Debug cables that match the transport that supports debugging on the system being tested.
+- Debug cables that match the transport that supports debugging on the system being tested.
 
--   If you are testing a webcam, you will also need:
+- If you are testing a webcam, you will also need:
 
-    -   A video test chart:
+  -   A video test chart:
 
-        -   An x-Rite ColorChecker chart.
+      -   An x-Rite ColorChecker chart.
 
-        -   A National Institute of Standards and Technology (NIST) calibrated lux meter (for example, INS DX-100). You should calibrate the lux meter annually.
+      -   A National Institute of Standards and Technology (NIST) calibrated lux meter (for example, INS DX-100). You should calibrate the lux meter annually.
 
-        -   A printout of the test chart on matte paper from a high quality inkjet (for example, an HP Z2100). You can get this high resolution PDF test chart [here](http://download.microsoft.com/download/8/0/0/80080840-64DC-4929-9B67-16B83E946C6B/HLK Video Test Chart.pdf).
+      -   A printout of the test chart on matte paper from a high quality inkjet (for example, an HP Z2100). You can get this high resolution PDF test chart [here](http://download.microsoft.com/download/8/0/0/80080840-64DC-4929-9B67-16B83E946C6B/HLK Video Test Chart.pdf).
 
-    -   Dimmable lights:
+  -   Dimmable lights:
 
-        -   Two Impact light stands.
+      -   Two Impact light stands.
 
-        -   Two light mounts that have reflectors. For example, an Impact 5" reflector floodlight kit.
+      -   Two light mounts that have reflectors. For example, an Impact 5" reflector floodlight kit.
 
-        -   An INSTEON plug-in lamp dimmer module.
+      -   An INSTEON plug-in lamp dimmer module.
 
-        -   An INSTEON wireless keypad RemoteLinc 2 (optional).
+      -   An INSTEON wireless keypad RemoteLinc 2 (optional).
 
-        -   A 3-to-1 extension cord.
+      -   A 3-to-1 extension cord.
 
-        -   Two Philips 422154 12.5-Watt A19 LED dimmable light bulbs.
+      -   Two Philips 422154 12.5-Watt A19 LED dimmable light bulbs.
 
--   The device that you are testing must have an IPv6 address.
+- The device that you are testing must have an IPv6 address.
 
 ## <span id="BKMK_HCK_Client_sR"></span><span id="bkmk-hck-client-sr"></span><span id="BKMK_HCK_CLIENT_SR"></span>Software requirements
 
@@ -128,11 +128,11 @@ The Bluetooth radio included with the system must have been previously certified
 
 Before running system tests, you must configure the test system and install the operating system. This section summarizes the related procedures.
 
->[!IMPORTANT]
->  
-Before you begin testing, make sure that you enable all of the devices in the test system and load all of the related drivers.
+> [!IMPORTANT]
+> 
+> Before you begin testing, make sure that you enable all of the devices in the test system and load all of the related drivers.
 
- 
+ 
 
 **To assemble the test computer**
 
@@ -176,7 +176,7 @@ Before you begin testing, make sure that you enable all of the devices in the te
 
 3.  Insert a valid data CD into the CD or DVD drive of the test system.
 
-Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](..\getstarted\step-4-create-a-project.md).
+Once your test computers are configured, you are ready to begin testing. Refer to [Step 4: Create a project](../getstarted/step-4-create-a-project.md).
 
 ## <span id="Mobile_Broadband_Testing_Requirements"></span><span id="mobile_broadband_testing_requirements"></span><span id="MOBILE_BROADBAND_TESTING_REQUIREMENTS"></span>Mobile Broadband Testing Requirements
 
@@ -194,9 +194,9 @@ Make sure that the test computer is in the ready state before you begin your tes
 
 [System.Client Tests](system-client-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,6 +51,7 @@ This topic applies to the following test jobs:
 -   Present Validation 2 - Present (WoW64)
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.MinimumDirectXLevel</li></ul> |  
@@ -63,7 +64,7 @@ This topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -80,18 +81,18 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
 ## <span id="More_information"></span><span id="more_information"></span><span id="MORE_INFORMATION"></span>More information
 
 
-This test is similar to the standard Present Validation test. The difference is that Present Validation 2 resets the device into a state where the back buffer and the front buffer have different formats (if the call to the **CheckDeviceFormatConversion** method was successful). The test performs a comparison with a reference image that the Microsoft Direct3D API generates. The driver must perform the color conversion between those two formats. (Direct3D does not perform any software emulation.)
+This test is similar to the standard Present Validation test. The difference is that Present Validation 2 resets the device into a state where the back buffer and the front buffer have different formats (if the call to the **CheckDeviceFormatConversion** method was successful). The test performs a comparison with a reference image that the Microsoft Direct3D API generates. The driver must perform the color conversion between those two formats. (Direct3D does not perform any software emulation.)
 
 This test uses the **IDirect3DSwapChain9::Present** method with the **D3DPRESENT\_LINEAR\_CONTENT** option.
 
-If the driver supports gamma presentation (that is, the driver exposes the D3DCAPS3 capabilities option **D3DCAPS3\_LINEAR\_TO\_SRGB\_PRESENTATION**), a gamma-corrected presentation should occur. This test verifies the correct output by post-processing the reference image via gamma 2.2 correction. If the driver claims that gamma presentation is not supported, the test verifies that no gamma correction occurs.
+If the driver supports gamma presentation (that is, the driver exposes the D3DCAPS3 capabilities option **D3DCAPS3\_LINEAR\_TO\_SRGB\_PRESENTATION**), a gamma-corrected presentation should occur. This test verifies the correct output by post-processing the reference image via gamma 2.2 correction. If the driver claims that gamma presentation is not supported, the test verifies that no gamma correction occurs.
 
 The test performs the following tasks:
 
@@ -101,11 +102,11 @@ The test performs the following tasks:
 
 -   Scales the result back to `int [0..256)`
 
->[!WARNING]
->  
-Gamma presentation is supported only on a desktop that has a 32-bit color depth.
+> [!WARNING]
+> 
+> Gamma presentation is supported only on a desktop that has a 32-bit color depth.
 
- 
+
 
 ### <span id="Command_syntax"></span><span id="command_syntax"></span><span id="COMMAND_SYNTAX"></span>Command syntax
 
@@ -144,11 +145,11 @@ Gamma presentation is supported only on a desktop that has a 32-bit color depth.
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command-line help for this test binary, type **/?**.
+> [!NOTE]
+> 
+> For command-line help for this test binary, type **/?**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -166,19 +167,19 @@ For command-line help for this test binary, type **/?**.
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d10ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d11ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dcompiler_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dref9.dll</p></td>
@@ -186,44 +187,44 @@ For command-line help for this test binary, type **/?**.
 </tr>
 <tr class="even">
 <td><p>D3dref8.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dx10_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dx11_TEST.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dx9_TEST.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3dx8d.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>Fpstate.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Modechange.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\utility&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>Vbswap.x</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\conf\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\conf&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -235,11 +236,11 @@ For command-line help for this test binary, type **/?**.
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo  |
 | **TDRArgs**                  | /get or /set                                          |
 
- 
 
- 
 
- 
+
+
+
 
 
 

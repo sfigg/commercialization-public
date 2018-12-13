@@ -53,7 +53,7 @@ The host can request the device certification status feature report of an integr
 
 **Note**  Windows 10, version 1511 and earlier operating systems do not currently issue this HID feature report to Pen or Touchscreen devices that happen to provide support for it. However, adding support for the *Latency Mode Feature Report* to a device, will make sure that the device is ready for the future date when Windows supports it on Pen and Touchscreen devices.
 
- 
+ 
 
 The latency mode feature report is sent by the host to an integrated Windows pen device, to indicate when high latency is desirable for power savings and conversely, when normal latency is desired for operation. In the case of a USB-connected integrated Windows pen device, this allows the device to differentiate between being suspended for inactivity (runtime IDLE) and being suspended because the system is entering S3 or Connected Standby.
 
@@ -64,7 +64,7 @@ The latency mode should be indicated via the value for the latency mode usage (P
 | 0                  | Normal       |
 | 1                  | High         |
 
- 
+ 
 
 **Integrated Windows Pen Input Reports**
 
@@ -85,7 +85,7 @@ The usages in the following table are used by the host to extract pen data from 
 | Y-Tilt        | The angle of tilt of the pen along the y-axis                      | 0x0D | 0x3E | Optional           | No                         |
 | Twist         | Clockwise rotation of the pen                                      | 0x0D | 0x41 | Optional           | No                         |
 
- 
+ 
 
 The following table shows the mandatory report-level usages for integrated Windows pen input reports.
 
@@ -93,7 +93,7 @@ The following table shows the mandatory report-level usages for integrated Windo
 |-----------|----------------------------------|------|------|--------------------|
 | Report ID | Integrated Windows Pen report ID | 0x0D | 0x02 | Mandatory          |
 
- 
+ 
 
 ### Mandatory and Windows-supported optional usages
 
@@ -111,7 +111,7 @@ The following sections provide more details about the mandatory and the Windows-
     
     **Note**  The entire logical coordinate range should be reportable across both the *X* and *Y* axis.
 
-     
+     
 
 ### Pen Tip
 

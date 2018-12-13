@@ -19,6 +19,7 @@ ms.topic: article
 Connect to a specified WPA2PSK AES network with sleep resume (Defaults: SSID=kitstestssid Passphrase=password SleepDurationInSec=20, SleepCycleIterations=2) - This test is a WoW64 for ARM64 version of test guid 2ae2cb26-ea04-4def-8e07-ae7b92e61e1b
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP</li></ul> |  
@@ -31,7 +32,7 @@ Connect to a specified WPA2PSK AES network with sleep resume (Defaults: SSID=kit
 |**Requires special configuration**| true |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -54,16 +55,16 @@ Tests in this feature area might have additional documentation, including prereq
 | **SleepCycleIterations** | The number of sleep/wake cycles to do                                 |
 | **queryTestDeviceID**    | Device id of device under test                                        |
 
- 
+
 
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
- 
 
- 
+
+
 
 
 

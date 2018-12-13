@@ -41,7 +41,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -80,9 +80,9 @@ The following XML output specifies that no physical camera LED exists for the de
 
 [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)
 
- 
+ 
 
- 
+ 
 
 
 

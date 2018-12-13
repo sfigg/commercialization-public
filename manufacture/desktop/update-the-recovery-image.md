@@ -23,10 +23,10 @@ You should update your recovery image to ensure a consistent recovery experience
 * Add major updates to Windows, like general distribution releases ([Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)).   
 * Add new languages, like you did in [Lab 4: Add languages](add-drivers-langs-universal-apps-sxs.md).  (This isn’t always possible, as not all languages have Windows RE equivalents.)
 
- **Notes**  
- -  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
+  **Notes**  
+  -  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
 
- -  If a Servicing Stack Update (SSU) is available, you'll have to install it before applying the most recent General Distribution Release or any future GDRs. See [Windows 10 update history](https://support.microsoft.com/en-us/help/4018124/windows-10-update-history) for information about the most recent GDR.
+  -  If a Servicing Stack Update (SSU) is available, you'll have to install it before applying the most recent General Distribution Release or any future GDRs. See [Windows 10 update history](https://support.microsoft.com/en-us/help/4018124/windows-10-update-history) for information about the most recent GDR.
 
 ## <span id="Mount_the_Windows_image"></span>Step 1: Mount the Windows image
 

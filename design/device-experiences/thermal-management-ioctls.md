@@ -38,21 +38,21 @@ Driver implementers need to implement responses to the following input/output (I
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IOCTL_THERMAL_READ_POLICY](ioctl-thermal-read-policy.md)</p></td>
-<td><p>The [IOCTL_THERMAL_READ_POLICY](ioctl-thermal-read-policy.md) I/O control request is sent by the kernel to a thermal zone’s policy driver to read the drivers' preferred policy.</p></td>
+<td><p><a href="ioctl-thermal-read-policy.md" data-raw-source="[IOCTL_THERMAL_READ_POLICY](ioctl-thermal-read-policy.md)">IOCTL_THERMAL_READ_POLICY</a></p></td>
+<td><p>The <a href="ioctl-thermal-read-policy.md" data-raw-source="[IOCTL_THERMAL_READ_POLICY](ioctl-thermal-read-policy.md)">IOCTL_THERMAL_READ_POLICY</a> I/O control request is sent by the kernel to a thermal zone’s policy driver to read the drivers&#39; preferred policy.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IOCTL_THERMAL_READ_TEMPERATURE](ioctl-thermal-read-temperature.md)</p></td>
-<td><p>The [IOCTL_THERMAL_READ_TEMPERATURE](ioctl-thermal-read-temperature.md) I/O control request is sent by the ACPI driver to a temperature sensor driver. Upon receiving this request, the driver might be required to provide the temperature of the thermal zone.</p></td>
+<td><p><a href="ioctl-thermal-read-temperature.md" data-raw-source="[IOCTL_THERMAL_READ_TEMPERATURE](ioctl-thermal-read-temperature.md)">IOCTL_THERMAL_READ_TEMPERATURE</a></p></td>
+<td><p>The <a href="ioctl-thermal-read-temperature.md" data-raw-source="[IOCTL_THERMAL_READ_TEMPERATURE](ioctl-thermal-read-temperature.md)">IOCTL_THERMAL_READ_TEMPERATURE</a> I/O control request is sent by the ACPI driver to a temperature sensor driver. Upon receiving this request, the driver might be required to provide the temperature of the thermal zone.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

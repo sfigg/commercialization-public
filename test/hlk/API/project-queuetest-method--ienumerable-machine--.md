@@ -29,7 +29,7 @@ This method schedules the test for execution on a specific subset of machines.
 
 `public virtual IList<TestResult> QueueTest (`
 
-          `IEnumerable<Machine> machineList`
+          `IEnumerable<Machine> machineList`
 
 `)`
 
@@ -50,9 +50,9 @@ This is useful to specify a subset of possible machines. For example in the case
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

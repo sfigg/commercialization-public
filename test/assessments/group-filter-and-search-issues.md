@@ -66,7 +66,7 @@ Issues are a key part of the results. They identify potential problems with a co
     **Note**  
     You can also right-click **Total issues** in the run information table to group issues in that table.
 
-     
+     
 
 **To sort issues across multiple jobs**
 
@@ -77,7 +77,7 @@ Issues are a key part of the results. They identify potential problems with a co
     **Note**  
     You can also right-click **Total issues** in the run information table to sort the columns for various job results based on the number of total issues in each job.
 
-     
+     
 
 **To search for issues in the details pane**
 
@@ -128,7 +128,7 @@ Issues are a key part of the results. They identify potential problems with a co
         **Note**  
         The term *regex* refers to regular expressions. For more information, see [Regular Expression Language Elements](http://go.microsoft.com/fwlink/?LinkId=235292).
 
-         
+         
 
 4.  In the box, enter the metadata value that you want to filter on.
 
@@ -149,9 +149,9 @@ Issues are a key part of the results. They identify potential problems with a co
 
 [Filter results](filter-results.md)
 
- 
+ 
 
- 
+ 
 
 
 

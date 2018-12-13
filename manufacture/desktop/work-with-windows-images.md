@@ -6,8 +6,7 @@ title: Work with Windows images
 ms.author: kenpacq
 ms.date: 05/16/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Work with Windows images

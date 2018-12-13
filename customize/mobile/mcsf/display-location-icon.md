@@ -71,7 +71,7 @@ By default, the location icon in the system tray is displayed whenever an app re
     </tbody>
     </table>
 
-     
+     
 
 <a href="" id="testing-steps-"></a>**Testing steps:**  
 1.  Flash a build containing this customization to a device.

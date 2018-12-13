@@ -7,7 +7,7 @@ title: 'How push-button reset features work'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
+ms.custom: RS5
 
 ---
 
@@ -22,13 +22,15 @@ This section discusses the mechanisms Push-button reset uses to restore software
 
 Push-button reset restores Windows 10 by constructing a new copy of the OS using runtime system files located in the Windows Component Store (C:\\Windows\\WinSxS). This allows recovery to be possible even without a separate recovery image containing a backup copy of all system files.
 
-In addition, Push-button reset restores Windows to an updated state rather than to the factory-preinstalled state. All updates installed on the PC (such as Windows 10, version 1809) will be restored.
+In addition, Push-button reset restores Windows to an updated state rather than to the factory-preinstalled state. All updates installed on the PC (such as Windows 10, version 1809) will be restored.  Due to this improvement it is not required nor recommended to mark updates as permanent by using the DISM /Cleanup-Image command with the /ResetBase option.
 
 This approach provides a balance between user experience in terms of the number of updates which need to be reinstalled and the features’ effectiveness in addressing update problems. It also allows Windows to remove older system files which are no longer needed for runtime use or for recovery, freeing up disk space.
 
 ### <span id="Restoring_language_packs"></span><span id="restoring_language_packs"></span><span id="RESTORING_LANGUAGE_PACKS"></span>Restoring language packs
 
-Language packs that are installed and used by at least one user account are restored. Other language packs are removed from the Windows Component Store seven days after the Out-of-Box Experience (OOBE). Using Push-button reset features after that will not restore the removed language packs.
+Language packs that are installed and used by at least one user account are restored. This includes languages installed by users.
+
+Seven days after the Out-of-Box Experience (OOBE), any language packs that haven't yet been used are removed. Using Push-button reset features after that will not restore the removed language packs.
 
 On PCs running single-language editions of Windows, such as Windows 10 Home, users cannot download or install additional language packs, and they cannot use push-button reset features to switch languages if the preinstalled language packs have been removed.
 
@@ -47,27 +49,15 @@ Starting with Windows 10, version 1809, preinstalled Windows apps that have been
 
 ### <span id="Restoring_other_customizations"></span><span id="restoring_other_customizations"></span><span id="RESTORING_OTHER_CUSTOMIZATIONS"></span>Restoring other customizations
 
-By default, Push-button reset features restore only OS files, drivers, and preinstalled Universal Windows apps. Different mechanisms are used to restore other customizations, such as settings and Windows desktop applications.
+To restore Windows desktop applications and settings, you can use provisioning packages created using the ScanState utility, and either push-button reset extensibility points or Auto-apply folders (Windows 10, version 1809 and later).
 
--   **Windows desktop applications** can be captured using the User State Migration Tool’s (USMT) ScanState utility into a reference device data image within a provisioning package. Push-button reset features look for and automatically restore this provisioning package from a well-known location.
--   **Settings specific to editions of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)** 
+To learn more, see [Deploy push-button reset features using ScanState](deploy-push-button-reset-features.md) and [Deploy push-button reset features using Auto-apply folders](deploy-pbr-features-using-auto-apply.md) .
+ 
 
-    - Can be restored using a combination of an unattend file and extensibility points for Push-button reset. Examples of these settings include manufacturer support information, manufacturer logos and Start Menu layout.
-    
-    or
-
-    - Starting with Windows 10, version 1809, use Auto-apply folders to automatically restore these settings with an unattend file. If you have both configured, PBR will only use the extensibility points and ignore the Auto-apply folders.
+## <span id="Refresh_your_PC"></span><span id="refresh_your_pc"></span><span id="REFRESH_YOUR_PC"></span>Keep my files
 
 
-> [!Note]
-> Many of the settings customizations allowed or required by the OPD are specific to Windows 10 for desktop, and cannot be stored in provisioning packages created using Windows ICD. When using the legacy mechanism, use unattend and Push-button reset extensibility points for restoring all settings customizations during recovery. The use of provisioning packages created using Windows ICD is completely optional.
-
- 
-
-## <span id="Refresh_your_PC"></span><span id="refresh_your_pc"></span><span id="REFRESH_YOUR_PC"></span>Refresh your PC
-
-
-**The Refresh your PC feature can be summarized in the following steps:**
+The **Keep my files** feature can be summarized in the following steps:
 
 Note that if using Auto-apply folders, you don't need to supply scripts for any of the extensibility points. If you have extensibility points, they will take precedence over the Auto-apply folders, and Auto-apply folders won't be processed.
 
@@ -87,11 +77,11 @@ Note that if using Auto-apply folders, you don't need to supply scripts for any 
 
 ### <span id="Preserved_settings"></span><span id="preserved_settings"></span><span id="PRESERVED_SETTINGS"></span>Preserved settings
 
-The **Refresh your PC** feature preserves a number of system and user settings that are required to keep the system running while minimizing the need for users to reconfigure their PCs.
+The **Keep my files** feature preserves a number of system and user settings that are required to keep the system running while minimizing the need for users to reconfigure their PCs.
 
 Preserved settings can be broadly categorized into one of the following categories:
 
--   Are required for users to log on to their PCs after running the **Refresh your PC** feature.
+-   Are required for users to log on to their PCs after running the **Keep my files** feature.
 -   Affect how users access their documents and personal files.
 -   Are difficult for most users to recreate.
 -   Affect system security or user privacy.
@@ -111,7 +101,7 @@ The preserved settings are summarized as follows:
 
 ### <span id="User_data"></span><span id="user_data"></span><span id="USER_DATA"></span>User data
 
-Because user data can be stored in many locations, the **Refresh your PC** feature preserves most folders and files that are not part of a standard Windows installation. The **Refresh your PC** feature refreshes the following system locations and does not preserve the contents.
+Because user data can be stored in many locations, the **Keep my files** feature preserves most folders and files that are not part of a standard Windows installation. The **Keep my files** feature refreshes the following system locations and does not preserve the contents.
 
 -   \\Windows
 -   \\Program Files
@@ -119,30 +109,30 @@ Because user data can be stored in many locations, the **Refresh your PC** featu
 -   \\ProgramData
 -   \\Users\\&lt;user name&gt;\\AppData (in each user profile)
 
-**Note**  Some applications store user data in the \\AppData folder in user profiles. The \\AppData folders are available in C:\\Windows.old after using the **Refresh your PC** feature.
+**Note**  Some applications store user data in the \\AppData folder in user profiles. The \\AppData folders are available in C:\\Windows.old after using the **Keep my files** feature.
 
- 
-
-The **Refresh your PC** feature bypasses the following locations and preserves the contents:
+The **Keep my files** feature bypasses the following locations and preserves the contents:
 
 -   File History versioning data
 -   All files and folders on non-OS partitions
 
 ### <span id="Windows_Applications"></span><span id="windows_applications"></span><span id="WINDOWS_APPLICATIONS"></span>Windows Applications
 
-The Refresh your PC feature handles application types differently in order to ensure that the PC can be restored to a reliable state. Applications are handled as follows:
+The **Keep my files** feature handles application types differently in order to ensure that the PC can be restored to a reliable state. 
+
+Applications are handled as follows:
 
 -   User-acquired Windows apps from the Microsoft Store are not preserved. Users will need to reinstall them from the Microsoft Store. This is a change from Windows 8/8.1.
 -   Starting with Windows 10, version 1809, preinstalled Windows apps that have been updated since initial installation will be restored to an updated state. Prior to Windows 10, version 1809, preinstalled Windows apps are restored to their factory version and state. Updates to these apps will be downloaded and reapplied automatically when internet connectivity is available.
 -   User-acquired Windows desktop applications are not preserved. Users will need to reinstall them manually.
 -   Preinstalled Windows desktop applications captured in the customizations provisioning package will be restored to their factory condition, even if users have previously uninstalled them.
 
-The **Refresh your PC** feature does not preserve user-installed Windows desktop applications by default, and locations that are commonly used for storing application settings (\\AppData and \\ProgramData) are deleted. Manufacturers can leverage Auto-apply folders or the push-button reset extensibility points to save and later restore specific application settings and data, if necessary.
+The **Keep my files** feature does not preserve user-installed Windows desktop applications by default, and locations that are commonly used for storing application settings (\\AppData and \\ProgramData) are deleted. Manufacturers can leverage Auto-apply folders or the push-button reset extensibility points to save and later restore specific application settings and data, if necessary.
 
-## <span id="Reset_your_PC"></span><span id="reset_your_pc"></span><span id="RESET_YOUR_PC"></span>Reset your PC
+## <span id="Reset_your_PC"></span><span id="reset_your_pc"></span><span id="RESET_YOUR_PC"></span>Remove everything 
 
 
-**The Reset your PC feature can be summarized in the following steps:**
+The **Remove everything** feature can be summarized in the following steps:
 
 Note that if using Auto-apply folders, you don't need to supply scripts for any of the extensibility points. If you have extensibility points, they will take precedence over the Auto-apply folders, and Auto-apply folders won't be processed.
 
@@ -163,7 +153,7 @@ Note that if using Auto-apply folders, you don't need to supply scripts for any 
 
 ### <span id="Data_removal_options"></span><span id="data_removal_options"></span><span id="DATA_REMOVAL_OPTIONS"></span>Data removal options
 
-When users use the **Reset your PC** feature, they will be presented with options that affect the way that their data is removed from the PC.
+When users use the **Remove everything** feature, they will be presented with options that affect the way that their data is removed from the PC.
 
 -   If the PC has more than one user-accessible hard drive volumes, users can choose to remove data from all volumes or only the Windows volume.
 
@@ -187,8 +177,8 @@ If [Compact OS](compact-os.md) is enabled on the OS before the reset, Compact OS
 
 If the user needs to replace their hard drive or completely wipe it, they can use bootable recovery media to perform bare metal recovery. Bare metal recovery removes all existing partitions on the system disk and recreates all partitions, before restoring software onto the PC. Two types of recovery media are supported:
 
--   **User-created recovery media** using the **Create a recovery drive** utility in Windows 10. This backs up the files needed to restore the PC to a pristine state.
--   **Manufacturer-created recovery media** for support and refurbishing scenarios by placing a recovery image on a piece of bootable Windows RE media.
+-   **[User-created recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)** using the **Create a recovery drive** utility in Windows 10. This backs up the files needed to restore the PC to a pristine state.
+-   **[Manufacturer-created recovery media](create-media-to-run-push-button-reset-features-s14.md)** for support and refurbishing scenarios by placing a recovery image on a piece of bootable Windows RE media.
 
 **When user-created recovery media are used, the bare metal recovery feature can be summarized in the following steps:**
 
@@ -213,7 +203,7 @@ When users use the bare metal recovery feature, they can choose to perform data 
 However, on certain hardware configurations, the data erasure process is performed by the storage device’s hardware controller. This often takes less time to complete and is usually more thorough in removing remnant data. Hardware-based data erasure is supported on PCs with storage devices which meet the following criteria:
 
 -   eMMC
--   Supports the Secure Trim and Sanitize commands
+-   Supports the **Secure Trim** and **Sanitize** commands
 
 ### <span id="System_disk_selection"></span><span id="system_disk_selection"></span><span id="SYSTEM_DISK_SELECTION"></span>System disk selection
 
@@ -235,7 +225,7 @@ Bare metal recovery automatically identifies the system disk using the following
 
 ### <span id="User-created_recovery_media"></span><span id="user-created_recovery_media"></span><span id="USER-CREATED_RECOVERY_MEDIA"></span>User-created recovery media
 
-When users create USB recovery media using the Create a recovery drive utility, the resulting media always contain a bootable copy of Windows RE. This gives users access to troubleshooting and recovery tools when booting from recovery media.
+When users create USB recovery media using the **Create a recovery drive** utility, the resulting media always contain a bootable copy of Windows RE. This gives users access to troubleshooting and recovery tools when booting from recovery media.
 
 Users can optionally back up files required to perform bare metal recovery. When the option is selected, the following are copied onto the USB recovery media as well:
 
@@ -258,21 +248,21 @@ Manufacturer-created media must contain the following:
 
 ### <span id="extensibility-points"></span><span id="EXTENSIBILITY-POINTS"></span>Extensibility points for push-button reset features
 
-Push-button reset provides extensibility points where manufacturers can insert custom operations when a user runs the **Refresh your PC** and **Reset your PC** features. If you use Auto-apply folders, you shouldn't configure extensibility points. If you have both Auto-apply folders and extensibilty scripts, PBR won't use the Auto-apply folders.
+Push-button reset provides extensibility points where manufacturers can insert custom operations when a user runs the **Keep my files** and **Remove everything** features. If you use Auto-apply folders, you shouldn't configure extensibility points. If you have both Auto-apply folders and extensibilty scripts, PBR won't use the Auto-apply folders.
 
 See the sections above to see where the custom operations that can be executed for these features appear.
 
-The extensibility points for **Refresh your PC** are summarized in the following table:
+The extensibility points for **Keep my files** are summarized in the following table:
 
 |            |                                                                                                                            |                                                                                                                                                   |
 |------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ext. point | System state                                                                                                               | Example usage                                                                                                                                     |
-| A          | Settings and data to be migrated have been moved to a temporary location                                                   | Copy files, drivers, or settings that are not migrated by default when the user runs the Refresh your PC feature.                                 |
+| A          | Settings and data to be migrated have been moved to a temporary location                                                   | Copy files, drivers, or settings that are not migrated by default when the user runs the **Keep my files** feature.                                 |
 | B          | The OS has been rebuilt. Drivers and customizations have been reapplied. Only critical system settings have been migrated. | Restore customization files (e.g. unattend.xml, layoutmodification.xml), or files and settings you might have backed up at extensibility point A. |
 
- 
+ 
 
-The extensibility points for **Reset your PC** are summarized in the following table:
+The extensibility points for **Remove everything** are summarized in the following table:
 
 <table>
 <colgroup>
@@ -294,7 +284,7 @@ The extensibility points for **Reset your PC** are summarized in the following t
 <strong>Important</strong>  Do not modify the Windows partition.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -305,7 +295,7 @@ The extensibility points for **Reset your PC** are summarized in the following t
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Compact_OS"></span><span id="compact_os"></span><span id="COMPACT_OS"></span>Compact OS
 
@@ -345,15 +335,15 @@ The Windows RE update process makes every effort to reuse the existing Windows R
 
 **Important**  To ensure that your customizations continue to work after Windows RE has been updated, they must not depend on functionalities provided by Windows PE optional components which are not in the default Windows RE image (e.g. WinPE-NetFX). To facilitate development of Windows RE customizations, the WinPE-HTA optional component has been added to the default Windows RE image in Windows 10.
 
- 
+ 
 
 **Note**  The new Windows RE image deployed as part of the rollup update contains language resources only for the system default language, even if the existing Windows RE image contains resources for multiple languages. On most PCs, the system default language is the language selected at the time of OOBE.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

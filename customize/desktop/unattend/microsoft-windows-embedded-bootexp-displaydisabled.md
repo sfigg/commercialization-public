@@ -47,7 +47,7 @@ Configures the device to display a blank screen when the OS encounters an error 
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -77,9 +77,9 @@ For a list of the Windows editions and architectures that this component support
 </settings>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

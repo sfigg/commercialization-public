@@ -39,27 +39,27 @@ Similar to the Unattend answer file that can be provided to Windows Setup for Wi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md)</p></td>
+<td><p><a href="managed-centralized-settings-framework-mcsf.md" data-raw-source="[Managed Centralized Settings Framework (MCSF)](managed-centralized-settings-framework-mcsf.md)">Managed Centralized Settings Framework (MCSF)</a></p></td>
 <td><p>Provides a standard way to describe settings that are customizable within packages. MCSF also generates a policy based on the settings descriptions. The settings framework can be image time or runtime configurable. A runtime configurable MCSF can either be a configuration service provider-based customization or registry-based customization being exposed through the MSCF CSP.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customization answer file](customization-answer-file.md)</p></td>
+<td><p><a href="customization-answer-file.md" data-raw-source="[Customization answer file](customization-answer-file.md)">Customization answer file</a></p></td>
 <td><p>A <strong>customization answer file</strong> is an XML file that you write based on the MCSF schema. OEMs can use the MCSF customization answer file to specify the settings and variants for a custom mobile OS image. The customization answer file allows for a broader integration across the OS by providing OEMs with a single place to define nearly all mobile OS settings.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Set languages and locales](set-languages-and-locales.md)</p></td>
+<td><p><a href="set-languages-and-locales.md" data-raw-source="[Set languages and locales](set-languages-and-locales.md)">Set languages and locales</a></p></td>
 <td><p>Provides an overview of the different language and locale settings based on the market in which the mobile device will ship.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Create a resource-only .dll for localized strings](create-a-resource-only-dll-for-localized-strings.md)</p></td>
+<td><p><a href="create-a-resource-only-dll-for-localized-strings.md" data-raw-source="[Create a resource-only .dll for localized strings](create-a-resource-only-dll-for-localized-strings.md)">Create a resource-only .dll for localized strings</a></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for device management](customizations-for-device-management.md)</p></td>
+<td><p><a href="customizations-for-device-management.md" data-raw-source="[Customizations for device management](customizations-for-device-management.md)">Customizations for device management</a></p></td>
 <td><p>This section provides more information about device management settings that OEMs can change.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for hardware components](customizations-for-hardware-components.md)</p></td>
+<td><p><a href="customizations-for-hardware-components.md" data-raw-source="[Customizations for hardware components](customizations-for-hardware-components.md)">Customizations for hardware components</a></p></td>
 <td><p>This section contains information about customization settings that OEMs can use for the following hardware components:</p>
 <ul>
 <li>Buttons</li>
@@ -72,51 +72,51 @@ Similar to the Unattend answer file that can be provided to Windows Setup for Wi
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for applications and Microsoft components](customizations-for-applications-and-microsoft-components.md)</p></td>
+<td><p><a href="customizations-for-applications-and-microsoft-components.md" data-raw-source="[Customizations for applications and Microsoft components](customizations-for-applications-and-microsoft-components.md)">Customizations for applications and Microsoft components</a></p></td>
 <td><p>This section contains information about customizations related to apps and Microsoft components.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for boot, initial setup, and shutdown](customizations-for-boot-initial-setup-and-shutdown.md)</p></td>
+<td><p><a href="customizations-for-boot-initial-setup-and-shutdown.md" data-raw-source="[Customizations for boot, initial setup, and shutdown](customizations-for-boot-initial-setup-and-shutdown.md)">Customizations for boot, initial setup, and shutdown</a></p></td>
 <td><p>Use these customizations to configure the device boot, initial setup, or shutdown experience.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for browser](customizations-for-browser.md)</p></td>
+<td><p><a href="customizations-for-browser.md" data-raw-source="[Customizations for browser](customizations-for-browser.md)">Customizations for browser</a></p></td>
 <td><p>Describes the customizations for the browser.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for connectivity](customizations-for-connectivity.md)</p></td>
+<td><p><a href="customizations-for-connectivity.md" data-raw-source="[Customizations for connectivity](customizations-for-connectivity.md)">Customizations for connectivity</a></p></td>
 <td><p>Describes the customizations for configuring connectivity settings.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for desktop experiences](customizations-for-desktop-experiences.md)</p></td>
+<td><p><a href="customizations-for-desktop-experiences.md" data-raw-source="[Customizations for desktop experiences](customizations-for-desktop-experiences.md)">Customizations for desktop experiences</a></p></td>
 <td><p>Describes the customizations that you can configure for the desktop when the mobile device is connected.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for email](customizations-for-email.md)</p></td>
+<td><p><a href="customizations-for-email.md" data-raw-source="[Customizations for email](customizations-for-email.md)">Customizations for email</a></p></td>
 <td><p>Describes the customizations related to email.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for maps](customizations-for-maps.md)</p></td>
+<td><p><a href="customizations-for-maps.md" data-raw-source="[Customizations for maps](customizations-for-maps.md)">Customizations for maps</a></p></td>
 <td><p>Describes the customizations that you can configure for maps on the mobile device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for phone calls](customizations-for-phone-calls.md)</p></td>
+<td><p><a href="customizations-for-phone-calls.md" data-raw-source="[Customizations for phone calls](customizations-for-phone-calls.md)">Customizations for phone calls</a></p></td>
 <td><p>Provides information about customizations you can configure for the phone or dialer app including branding, visual voicemail, caller ID matching, dialer codes, and more.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for photos, music, and videos](customizations-for-photos-music-and-videos.md)</p></td>
+<td><p><a href="customizations-for-photos-music-and-videos.md" data-raw-source="[Customizations for photos, music, and videos](customizations-for-photos-music-and-videos.md)">Customizations for photos, music, and videos</a></p></td>
 <td><p>Contains the customizations you can configure for photos, music, and videos.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for Settings](customizations-for-settings.md)</p></td>
-<td><p>The <strong>Settings</strong> app contains a predefined collection of user-configurable system settings that's organized into pages by functionality. As specified in policy, the appearance and default values of these settings are generally not customizable. The following table contain the complete list of user-facing settings that OEMs and mobile operators can change.</p></td>
+<td><p><a href="customizations-for-settings.md" data-raw-source="[Customizations for Settings](customizations-for-settings.md)">Customizations for Settings</a></p></td>
+<td><p>The <strong>Settings</strong> app contains a predefined collection of user-configurable system settings that&#39;s organized into pages by functionality. As specified in policy, the appearance and default values of these settings are generally not customizable. The following table contain the complete list of user-facing settings that OEMs and mobile operators can change.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for SMS and MMS](customizations-for-sms-and-mms.md)</p></td>
+<td><p><a href="customizations-for-sms-and-mms.md" data-raw-source="[Customizations for SMS and MMS](customizations-for-sms-and-mms.md)">Customizations for SMS and MMS</a></p></td>
 <td><p>Contains settings that you can configure for SMS and MMS.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customizations for Start](customizations-for-start.md)</p></td>
+<td><p><a href="customizations-for-start.md" data-raw-source="[Customizations for Start](customizations-for-start.md)">Customizations for Start</a></p></td>
 <td><p>This section contains information about customizations related to Start.</p></td>
 </tr>
 </tbody>

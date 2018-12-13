@@ -74,9 +74,9 @@ The resulting Excel report will contain the following headings:
 
 -   N-1 Not Compared - Between this test pass and the previous test pass (column to the left), how many tests were not compared due to the test was only available in only one of the test passes.
 
- 
+ 
 
- 
+ 
 
 
 

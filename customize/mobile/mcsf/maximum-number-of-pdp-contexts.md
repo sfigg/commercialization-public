@@ -37,9 +37,9 @@ The same maximums apply for both roaming and non-roaming scenarios. This maximum
                          Description="Use to set the maximum number of concurrent packet contexts for the home carrier's 3GPP network"  
                          Owner=""  
                          OwnerType="OEM"> 
-      
+
     <!-- Use for the per-IMSI case 
-      
+
       <!-- Define the Targets --> 
       <Targets>
          <Target Id="">
@@ -49,7 +49,7 @@ The same maximums apply for both roaming and non-roaming scenarios. This maximum
             </TargetState>
          </Target>
       </Targets>
-      
+
       <Static>
         <Settings Path="Multivariant">
           <Setting Name="Enable" Value="1" />
@@ -84,8 +84,10 @@ The same maximums apply for both roaming and non-roaming scenarios. This maximum
     -->
 
 
-    </ImageCustomizations>
-    ```
+~~~
+</ImageCustomizations>
+```
+~~~
 
 2.  Specify an `Owner`.
 

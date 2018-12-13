@@ -21,7 +21,7 @@ This sample shows how to flash an OS image onto a mobile device as part of a tes
 >[!NOTE]
 >  This feature is supported only on mobile devices.
 
- 
+ 
 
 ## <span id="C_"></span><span id="c_"></span>**C#**
 
@@ -233,9 +233,9 @@ $Test.QueueTest($TemplateParameters)
         
 ```
 
- 
+ 
 
- 
+ 
 
 
 

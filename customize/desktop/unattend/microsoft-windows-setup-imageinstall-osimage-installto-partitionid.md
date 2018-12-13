@@ -32,12 +32,12 @@ ms.topic: article
 <tr class="odd">
 <td><p><em>Partition_identification_number</em></p></td>
 <td><p>Specifies the partition on which to install Windows. <em>Partition_identification_number</em> is an integer.</p>
-<p>This value is a relative 1-based index. See the [PartitionID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-partitionid.md) topic for details on partition-numbering.</p></td>
+<p>This value is a relative 1-based index. See the <a href="microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-partitionid.md" data-raw-source="[PartitionID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-partitionid.md)">PartitionID</a> topic for details on partition-numbering.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -108,9 +108,9 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 
 [InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -128,43 +128,43 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 **To verify the custom tool appears in the Boot Options menu when launched from Windows**
 
-1.  Restart the destination computer, and complete OOBE as your user.
+1. Restart the destination computer, and complete OOBE as your user.
 
-    **Note**  
-    If you are prompted for a product key, click **Skip**.   
+   **Note**  
+   If you are prompted for a product key, click **Skip**.   
 
-2.  Click **Start** &gt; **PC settings**, and then select **General**.
+2. Click **Start** &gt; **PC settings**, and then select **General**.
 
-3.  In the **Advanced startup** section, select **Restart now**.
+3. In the **Advanced startup** section, select **Restart now**.
 
-    The Windows **Boot Options** menu appears.
+   The Windows **Boot Options** menu appears.
 
-4.  In the **Boot Options** menu, select **Troubleshoot**, and then click the **Fabrikam Utility** link.
+4. In the **Boot Options** menu, select **Troubleshoot**, and then click the **Fabrikam Utility** link.
 
-    The computer restarts in WinRE, and the tool that is specified in the *&lt;RecoveryTools&gt;* section of the WinREConfig.xml file, appears.
+   The computer restarts in WinRE, and the tool that is specified in the *&lt;RecoveryTools&gt;* section of the WinREConfig.xml file, appears.
 
-5.  Confirm that the custom tool works properly, and then close the tool.
+5. Confirm that the custom tool works properly, and then close the tool.
 
-    If the custom tool does not appear on the Boot Options menu, you can try the following:
+   If the custom tool does not appear on the Boot Options menu, you can try the following:
 
-    -   Verify the WinREConfig.xml and the AddDiagnosticsToolToBootMenu.xml files are saved using the UTF-8 encoding format.
+   - Verify the WinREConfig.xml and the AddDiagnosticsToolToBootMenu.xml files are saved using the UTF-8 encoding format.
 
-    -   Disable WinRE, register the custom tool again, and then enable WinRE. For example:
+   - Disable WinRE, register the custom tool again, and then enable WinRE. For example:
 
-        ```
-        Reagentc /disable 
-        Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
-        Reagentc /enable
-        ```
-**To verify the custom tool appears in the WinRE recovery menu**
+     ```
+     Reagentc /disable 
+     Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
+     Reagentc /enable
+     ```
+     **To verify the custom tool appears in the WinRE recovery menu**
 
-1.  In the recovery menu, select **Troubleshoot**, and then click the **Fabrikam Utility** link.
+6. In the recovery menu, select **Troubleshoot**, and then click the **Fabrikam Utility** link.
 
-2.  Confirm that the custom tool works properly, and then close the tool.
+7. Confirm that the custom tool works properly, and then close the tool.
 
-3.  Click **Continue**.
+8. Click **Continue**.
 
-    The PC reboots into the operating system.
+   The PC reboots into the operating system.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -177,9 +177,9 @@ New for Windows 10: You won't be able to add WinRE optional components that are
 
 [Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

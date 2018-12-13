@@ -51,7 +51,7 @@ When a metric value is compared to the goal for that metric, the status is color
 **Note**  
 In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
- 
+ 
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -68,7 +68,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 **Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+ 
 
 ## <a href="" id="bkmk-metrics"></a>Metrics
 
@@ -102,7 +102,7 @@ The Streaming Media Performance assessment reports audio and video glitch metric
 </tbody>
 </table>
 
- 
+ 
 
 The 60 second playback duration of the assessment workload can be divided into 60 1-second intervals. Based on the type of glitches that occurred in an interval, every interval is classified as either a major, medium, minor or no-glitch interval. For example, a medium glitch interval is one in which at least one medium glitch occurred but no major glitch was noticed. Similarly a minor glitch interval is one in which at least one minor glitch occurred but no medium or major glitches were noticed.
 
@@ -246,9 +246,9 @@ To resolve this issue, do one of the following:
 
 [Connected Standby Energy Efficiency](connected-standby-energy-efficiency.md)
 
- 
+ 
 
- 
+ 
 
 
 

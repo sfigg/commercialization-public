@@ -37,7 +37,7 @@ The `IlluminanceChangeSensitivity` specifies the percentage change in illuminanc
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 

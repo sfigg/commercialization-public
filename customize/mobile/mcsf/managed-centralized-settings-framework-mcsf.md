@@ -16,7 +16,7 @@ ms.topic: article
 # Managed Centralized Settings Framework (MCSF)
 
 
-The Managed Centralized Settings Framework (MCSF) is part of the customization and multivariant infrastructure first introduced in Windows Phone 8.1 and is still supported in Windows 10 Mobile. This component provides:
+The Managed Centralized Settings Framework (MCSF) is part of the customization and multivariant infrastructure first introduced in Windows Phone 8.1 and is still supported in Windows 10 Mobile. This component provides:
 
 -   A simple and consistent way for Microsoft to declare various mobile OS settings.
 
@@ -33,12 +33,12 @@ OEM partners can use MCSF and the MCSF packaging XML schema to declare and acces
 
 Microsoft-owned policy settings are documented in the Microsoft.*FeatureArea*.*FeatureSubArea*.policy.xml files. If you have the Adaptation Kit installed, you can find the policy settings files in the %WPDKCONTENTROOT%\\OEMCustomization\\generatedPolicy directory.
 
-**Note**  
+**Note**  
 The packaging and imaging tools do not read the policy settings from these XML files. The tools read the policy settings from internal policy configurations that are not available for partners to modify directly. If you modify the XML files in the generatedPolicy directory, nothing will happen.
 
- 
 
-These XML files are provided only for your convenience so that you can review the customizations that have been enabled on Windows 10 Mobile.
+
+These XML files are provided only for your convenience so that you can review the customizations that have been enabled on Windows 10 Mobile.
 
 ## Declaring settings
 
@@ -47,9 +47,9 @@ Declared settings are added in the components’ existing .pkg.xml file as child
 
 ```XML
 <SettingsGroup Path="OSArea/Feature">
-   <Setting Name="Setting" Description="This is a DWORD registry value.">
-     <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\RegKey" />
-   </Setting>
+   <Setting Name="Setting" Description="This is a DWORD registry value.">
+     <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\RegKey" />
+   </Setting>
 </SettingsGroup>
 ```
 
@@ -59,10 +59,10 @@ Settings are grouped within the package file. A **SettingsGroup** element repres
 
 OEMs building their own flexible hierarchy of settings must choose an associated **Path** for each group of settings. For example, ringtone settings may reside in a “Shell\\Ringtones” group while lock screen settings may reside under a “Shell\\Wallpaper” group. Microsoft recommends using a **Path** naming scheme similar to the above example: "OSArea/Feature"
 
-**Note**  
+**Note**  
 When naming your settings group, you must not include illegal file system characters in the settings group name. This [MSDN Web site](http://go.microsoft.com/fwlink/p/?LinkId=328836) provides some guidelines on naming conventions. You can use both **\\** and **/** but do not use the reserved characters in your settings group name.
 
- 
+
 
 ### <a href="" id="groupconstraints"></a>Group constraints
 
@@ -86,11 +86,10 @@ Some settings groups may have special properties. A **Constraints** element with
 <td><p><strong>ImageTimeOnly</strong></p></td>
 <td><p>Specifies settings that are available to OEMs for customization during image time, but does not require runtime configuration by the runtime configuration engine or OTA.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are declaring a settings group that is not in the MainOS partition, you must specify this settings group as image time only.</p>
+<strong>Note</strong><br/><p>If you are declaring a settings group that is not in the MainOS partition, you must specify this settings group as image time only.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td><p><code>&lt;Constraints ImageTimeOnly=&quot;Yes&quot; /&gt;</code></p></td>
 </tr>
@@ -108,7 +107,7 @@ Some settings groups may have special properties. A **Constraints** element with
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="individualsettings"></a>Individual settings
 
@@ -122,9 +121,9 @@ A setting can point to a particular location in the registry or to a configurati
 
     ```XML
     <Setting Name="MyString">
-       <!-- Use '@' to specify the default registry value. The Path must resolve to a value, rather than a key.
-            Note that this registry location will have a default value of 3. -->
-       <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\@" Default="DefaultValue" />
+       <!-- Use '@' to specify the default registry value. The Path must resolve to a value, rather than a key.
+            Note that this registry location will have a default value of 3. -->
+       <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\@" Default="DefaultValue" />
     </Setting>
     ```
 
@@ -134,7 +133,7 @@ A setting can point to a particular location in the registry or to a configurati
 
     ```
     <Setting Name="MyPhoneVersion">
-       <CspSource Type="CFG_DATATYPE_STRING" Path="./devdetail/swv" />
+       <CspSource Type="CFG_DATATYPE_STRING" Path="./devdetail/swv" />
     </Setting>
     ```
 
@@ -146,17 +145,17 @@ The following example shows how to specify the type of access for a setting:
 
 ```XML
 <Setting Name="NoDeleteSetting">
-   <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\NoDelete" Default="3" />
- 
-   <!-- This Setting cannot be deleted once created. -->
-   <AccessType Create="Yes" Delete="No" Get="Yes" Replace="Yes" />
+   <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\NoDelete" Default="3" />
+
+   <!-- This Setting cannot be deleted once created. -->
+   <AccessType Create="Yes" Delete="No" Get="Yes" Replace="Yes" />
 </Setting>
 ```
 
-**Note**  
+**Note**  
 This access control is done at the MCSF configuration service provider level and is not intended to take the place of security. If you need to protect your registry locations, you must do so using capabilities.
 
- 
+
 
 ### <a href="" id="validatingsettings"></a>Validating settings
 
@@ -166,10 +165,10 @@ MCSF allows you to specify simple rules to control which values are allowed for 
 
     ```XML
     <Setting Name="MyNumericSetting">
-       <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\Number" Default="3" />
+       <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\Number" Default="3" />
 
-       <!-- Validate that the range is from 0 through 10. -->
-       <Validate Min="0" Max="10" />
+       <!-- Validate that the range is from 0 through 10. -->
+       <Validate Min="0" Max="10" />
     </Setting>
     ```
 
@@ -177,10 +176,10 @@ MCSF allows you to specify simple rules to control which values are allowed for 
 
     ```XML
     <Setting Name="MyString">
-       <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\PutStringHere" Default="" />
-     
-       <!-- Validate that the string length is from 0 to 255. -->
-       <Validate MinLength="0" MaxLength="255" />
+       <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\PutStringHere" Default="" />
+
+       <!-- Validate that the string length is from 0 to 255. -->
+       <Validate MinLength="0" MaxLength="255" />
     </Setting>
     ```
 
@@ -188,14 +187,14 @@ MCSF allows you to specify simple rules to control which values are allowed for 
 
     ```XML
     <Setting Name="MyEnum">
-       <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\PutOneOfListHere" Default="1" />
-     
-       <!-- The Value attribute has to be one of the following values. -->
-       <Validate>
-          <Option Value="0" FriendlyName="Red" />
-          <Option Value="1" FriendlyName="Green" />
-          <Option Value="2" FriendlyName="Blue" />
-       </Validate>
+       <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\PutOneOfListHere" Default="1" />
+
+       <!-- The Value attribute has to be one of the following values. -->
+       <Validate>
+          <Option Value="0" FriendlyName="Red" />
+          <Option Value="1" FriendlyName="Green" />
+          <Option Value="2" FriendlyName="Blue" />
+       </Validate>
     </Setting>
     ```
 
@@ -209,16 +208,16 @@ The asset contains a **Type** attribute that specifies a semicolon delimited lis
 
 Any **Setting** can reference any existing asset by specifying the **Asset** attribute. This indicates to the OEM customization tools that the setting expects to use an asset filename for its value.
 
-**Note**  
+**Note**  
 When creating your own policy settings and you're adding an **Asset** to a **SettingsGroup**, you must specify the **Asset** within the **SettingsGroup** first. Otherwise, the package containing your policy settings will not get built.
 
- 
+
 
 The following example shows how an **Asset** as the first attribute declared within the **SettingsGroup** and a **Setting** that references the **Asset** that was declared:
 
 ```XML
 <SettingsGroup Path="LockScreen">
-   <Asset Name="Wallpapers" Type=".jpg;.jpeg;.png" Path="\Programs\CommonFiles\Wallpapers" Description="Use to add lock screen backgrounds to the phone." >
+   <Asset Name="Wallpapers" Type=".jpg;.jpeg;.png" Path="\Programs\CommonFiles\Wallpapers" Description="Use to add lock screen backgrounds to the phone." >
        <MultiStringList Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Wallpaper" Value="WallpaperSet" />
    </Asset>
 
@@ -230,10 +229,10 @@ The following example shows how an **Asset** as the first attribute declared wit
 
 **Asset** names can include macros and allow you to put files into locations based on the value of the macro specified in the asset name.
 
-**Warning**  
+**Warning**  
 Macros in **SettingsGroup** paths do not work with Assets. To use a macro in an **Asset** path, the macro reference must be part of the **Asset** name.
 
- 
+
 
 ```XML
 <SettingsGroup Path="Contoso/MyConfig">
@@ -252,28 +251,30 @@ Optionally, the image customization process can build a list of supplemental ass
 
     ```XML
     <Asset Name="Ringtones" Type=".wma" Path="\Programs\CommonFiles\Sounds">
-       <ValueList
-          OEMKey="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Sounds\Ringtones"
-          MOKey="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\MO\Sounds\Ringtones" FileNamesOnly="Yes" />
+       <ValueList
+          OEMKey="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Sounds\Ringtones"
+          MOKey="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\MO\Sounds\Ringtones" FileNamesOnly="Yes" />
     </Asset>
     ```
 
 -   OEMs can use the **MultiStringList** element in your asset if your component expects a simple REG\_MULTI\_SZ list of file paths in the registry. The customization tooling builds a multi-string list of each asset file added by partners and sets this value at the registry location specified by the **Key** and **Value** attributes.
 
-    **Note**  
-    In Windows 10 Mobile, the Windows Provisioning framework does not support multi-string registry values so this element is only available in the MCSF framework. This means that assets, such as wallpapers or ringtones, can only be added through MCSF.
+    **Note**  
+    In Windows 10 Mobile, the Windows Provisioning framework does not support multi-string registry values so this element is only available in the MCSF framework. This means that assets, such as wallpapers or ringtones, can only be added through MCSF.
 
-     
 
-    The following example shows this model:
 
-    ```XML
-    <Asset Name="Wallpapers" Type=".jpg;.jpeg;.png" Path="\Programs\CommonFiles\Wallpapers">
-       <MultiStringList
-          Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Wallpaper"
-          Value="WallpaperSet" />
-    </Asset>
-    ```
+~~~
+The following example shows this model:
+
+```XML
+<Asset Name="Wallpapers" Type=".jpg;.jpeg;.png" Path="\Programs\CommonFiles\Wallpapers">
+   <MultiStringList
+      Key="HKEY_LOCAL_MACHINE\Software\Microsoft\Shell\OEM\Wallpaper"
+      Value="WallpaperSet" />
+</Asset>
+```
+~~~
 
 ### <a href="" id="multisettings"></a>Multi-settings
 
@@ -284,18 +285,18 @@ To declare a multi-setting variable, you can use the **$(VariableName)** packagi
 ```XML
 <!-- Specifies a pair of Settings that we may have many sets of, one per "account" -->
 <SettingsGroup Path="TestSettings/MyAccounts/$(AccountID)">
- 
-   <!-- Each account has a username. -->
-   <Setting Name="Username">
-      <!-- Note that the macro used above in the SettingsGroup must also appear here. -->
-      <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\$(AccountID)\Username" />
-   </Setting>
- 
-   <!-- Each account has a password. -->
-   <Setting Name="Password">
-      <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\$(AccountID)\Password" />
-   </Setting>
- 
+
+   <!-- Each account has a username. -->
+   <Setting Name="Username">
+      <!-- Note that the macro used above in the SettingsGroup must also appear here. -->
+      <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\$(AccountID)\Username" />
+   </Setting>
+
+   <!-- Each account has a password. -->
+   <Setting Name="Password">
+      <RegistrySource Type="REG_SZ" Path="HKEY_LOCAL_MACHINE\Software\Sample\$(AccountID)\Password" />
+   </Setting>
+
 </SettingsGroup>
 ```
 
@@ -303,13 +304,13 @@ In the above example, the variable name is **AccountID**. You must specify that 
 
 ```XML
 <wap-provisioningdoc>
-   <characteristic type="MCSF">
-      <!-- This sets the username and password for account {71986}. -->
-      <characteristic type="TestSettings\MyAccounts\{71986}">
-         <parm name="Username" value="RobinNail" />
-         <parm name="Password" value="1234Password" />
-      </characteristic>
-   </characteristic>
+   <characteristic type="MCSF">
+      <!-- This sets the username and password for account {71986}. -->
+      <characteristic type="TestSettings\MyAccounts\{71986}">
+         <parm name="Username" value="RobinNail" />
+         <parm name="Password" value="1234Password" />
+      </characteristic>
+   </characteristic>
 </wap-provisioningdoc>
 ```
 
@@ -318,10 +319,10 @@ For SIM-based settings, you can use the special variable **$(\_\_IMSI)** that’
 ```XML
 <!-- Specifies some SIM-specific settings... -->
 <SettingsGroup Path="TestSettings/SimSpecific/$(__IMSI)">
-  <Setting Name="SimSpecificValue">
-    <!-- There should be one setting like this for  every SIM card. -->
-    <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\$(__IMSI)\SimSpecificValue" />
-  </Setting>
+  <Setting Name="SimSpecificValue">
+    <!-- There should be one setting like this for  every SIM card. -->
+    <RegistrySource Type="REG_DWORD" Path="HKEY_LOCAL_MACHINE\Software\Sample\$(__IMSI)\SimSpecificValue" />
+  </Setting>
 </SettingsGroup>
 ```
 

@@ -51,7 +51,7 @@ When a metric value is compared to the goal for that metric, the status is color
 **Note**  
 In the Windows Assessment Toolkit for Windows 8, some assessments include default goals files. The first time you view results using this version of the tools, the default goals file is used. However, you can also define custom goals for Windows 8 the same way that you can for Windows 8.1 and Windows 10.
 
- 
+ 
 
 You can set the goals file location and add a goals file to that location before you can use the UI to apply the custom goals. Once a goals file is selected it will continue to be the goals file that is used for any results that are opened.
 
@@ -68,7 +68,7 @@ You can use the sample goals file that is provided at %PROGRAMFILES%\\Windows Ki
 **Note**  
 You cannot package a goals file with a job, but you can store it on a share for others to use.
 
- 
+ 
 
 ## <a href="" id="bkmk-metrics"></a>Metrics
 
@@ -128,7 +128,7 @@ Resource usage is measured for ten seconds after the assessment navigates to the
 </tbody>
 </table>
 
- 
+ 
 
 ### Antimalware Products Count
 
@@ -139,9 +139,9 @@ The number of antimalware software products installed on the PC.
 
 This assessment performs advanced issue analysis and provides links to Windows Performance Analyzer (WPA) to troubleshoot the issues that are identified. In most cases, you can click the WPA Analysis link to troubleshoot the issues that appear. When WPA opens additional details about disk activity or CPU activity might be available depending on the type of issue identified. For more information about in-depth analysis issues and recommendations, see [Common In-Depth Analysis Issues](common-in-depth-analysis-issues.md).
 
- 
+ 
 
- 
+ 
 
 
 

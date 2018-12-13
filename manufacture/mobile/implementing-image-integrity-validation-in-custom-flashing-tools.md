@@ -42,7 +42,7 @@ Microsoft provides a UEFI protocol which exposes a function for this purpose, EF
 **Note**  
 If secure boot is not enabled on the device, a signature check in not performed.
 
- 
+ 
 
 ## <span id="Checking_the_data_against_the_hash_table_entries"></span><span id="checking_the_data_against_the_hash_table_entries"></span><span id="CHECKING_THE_DATA_AGAINST_THE_HASH_TABLE_ENTRIES"></span>Checking the data against the hash table entries
 
@@ -95,9 +95,9 @@ Locate and include an appropriate encryption library in the image to support has
 
 [Developing custom OEM flashing tools](developing-custom-oem-flashing-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,9 +59,9 @@ An exception occurs when the method fails to retrieve the filters.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

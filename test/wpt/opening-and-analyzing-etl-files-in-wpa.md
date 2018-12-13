@@ -110,9 +110,9 @@ This window lists exceptions that occurred in the analysis workflow. You can dia
 
 When you open WPA from an assessment that was run in the Assessment Console and that provides additional analysis, the issues that the assessment identifies appear in the Issues window. If you click one of these issues, details and a recommended solution appear in the Analysis tab under Issue Details. You can also search the list of issues by using the Search options at the top of the Issues window. More information about this functionality is available in Issues Window.
 
- 
+ 
 
- 
+ 
 
 
 

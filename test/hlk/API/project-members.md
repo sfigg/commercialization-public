@@ -34,7 +34,7 @@ The following table lists the members exposed by the **Machine** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
@@ -78,7 +78,7 @@ The following table lists the members exposed by the **Machine** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Properties"></span><span id="protected_properties"></span><span id="PROTECTED_PROPERTIES"></span>Protected Properties
 
@@ -102,7 +102,7 @@ The following table lists the members exposed by the **Machine** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -120,29 +120,29 @@ The following table lists the members exposed by the **Machine** type.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AddTests](project-addtests-method.md)</p></td>
+<td><p><a href="project-addtests-method.md" data-raw-source="[AddTests](project-addtests-method.md)">AddTests</a></p></td>
 <td>Adds the given Tests to this Project.
 <div class="alert">
 <strong>Warning</strong>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[CanCreateProductInstance](projectcancreateproductinstance-method.md)</p></td>
+<td><p><a href="projectcancreateproductinstance-method.md" data-raw-source="[CanCreateProductInstance](projectcancreateproductinstance-method.md)">CanCreateProductInstance</a></p></td>
 <td><p>This method validates that a child product instance object can be created but does not add the product instance. This method does not create a <strong>ProductInstance</strong>. A call to <strong>CreateProductInstance</strong> needs to be called to actually create the <strong>ProductInstance</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CreateProductInstance](projectcreateproductinstance-method.md)</p></td>
+<td><p><a href="projectcreateproductinstance-method.md" data-raw-source="[CreateProductInstance](projectcreateproductinstance-method.md)">CreateProductInstance</a></p></td>
 <td><p>This method creates a child <strong>ProductInstance</strong> object.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DeleteProductInstance](projectdeleteproductinstance-method.md)</p></td>
+<td><p><a href="projectdeleteproductinstance-method.md" data-raw-source="[DeleteProductInstance](projectdeleteproductinstance-method.md)">DeleteProductInstance</a></p></td>
 <td><p>This method deletes a <strong>ProductInstance</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DeleteProperty](projectdeleteproperty-method.md)</p></td>
+<td><p><a href="projectdeleteproperty-method.md" data-raw-source="[DeleteProperty](projectdeleteproperty-method.md)">DeleteProperty</a></p></td>
 <td><p>This method deletes an instance of a names property.</p></td>
 </tr>
 <tr class="even">
@@ -150,17 +150,17 @@ The following table lists the members exposed by the **Machine** type.
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetAllPossibleTests](project-getallpossibletests-method.md)</p></td>
+<td><p><a href="project-getallpossibletests-method.md" data-raw-source="[GetAllPossibleTests](project-getallpossibletests-method.md)">GetAllPossibleTests</a></p></td>
 <td>Gets all of the tests that could potentially be added to this Project.
 <div class="alert">
 <strong>Warning</strong>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[GetAppliedFilters](projectgetappliedfilters-method.md)</p></td>
+<td><p><a href="projectgetappliedfilters-method.md" data-raw-source="[GetAppliedFilters](projectgetappliedfilters-method.md)">GetAppliedFilters</a></p></td>
 <td><p>This method retrieves a list of filters applied for this submission project.</p></td>
 </tr>
 <tr class="odd">
@@ -168,15 +168,15 @@ The following table lists the members exposed by the **Machine** type.
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetProductInstances](projectgetproductinstances-method.md)</p></td>
+<td><p><a href="projectgetproductinstances-method.md" data-raw-source="[GetProductInstances](projectgetproductinstances-method.md)">GetProductInstances</a></p></td>
 <td><p>This method retrieves a list of product instances.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GetProperties](projectgetproperties-method.md)</p></td>
+<td><p><a href="projectgetproperties-method.md" data-raw-source="[GetProperties](projectgetproperties-method.md)">GetProperties</a></p></td>
 <td><p>This method retrieves, a <strong>Dictionary</strong> object with all of the project properties.</p></td>
 </tr>
 <tr class="even">
-<td><p>[GetTests](projectgettests----method.md)</p></td>
+<td><p><a href="projectgettests----method.md" data-raw-source="[GetTests](projectgettests----method.md)">GetTests</a></p></td>
 <td><p>This method retrieves all tests needed for this node.</p></td>
 </tr>
 <tr class="odd">
@@ -184,21 +184,21 @@ The following table lists the members exposed by the **Machine** type.
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[QueueTest](projectqueuetest-method.md)</p></td>
+<td><p><a href="projectqueuetest-method.md" data-raw-source="[QueueTest](projectqueuetest-method.md)">QueueTest</a></p></td>
 <td><p>Overloaded.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RemoveTests](project-removetests-method.md)</p></td>
+<td><p><a href="project-removetests-method.md" data-raw-source="[RemoveTests](project-removetests-method.md)">RemoveTests</a></p></td>
 <td>Removes the given Tests from the Project.
 <div class="alert">
 <strong>Warning</strong>  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[SetProperty](projectsetproperty-method.md)</p></td>
+<td><p><a href="projectsetproperty-method.md" data-raw-source="[SetProperty](projectsetproperty-method.md)">SetProperty</a></p></td>
 <td><p>This method updates or creates a new property value.</p></td>
 </tr>
 <tr class="odd">
@@ -208,7 +208,7 @@ The following table lists the members exposed by the **Machine** type.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -236,11 +236,11 @@ The following table lists the members exposed by the **Machine** type.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

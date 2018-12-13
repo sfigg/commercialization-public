@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 Removes the given Tests from the [ProductInstance](productinstance-class.md).
 
@@ -33,7 +33,7 @@ Removes the given Tests from the [ProductInstance](productinstance-class.md).
 
 `public virtual void RemoveTests (`
 
-          `IEnumerable<TestDefinition> tests`
+          `IEnumerable<TestDefinition> tests`
 
 `)`
 
@@ -49,9 +49,9 @@ The tests to remove.
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

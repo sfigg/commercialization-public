@@ -79,31 +79,31 @@ The following tables list any methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[WESL_UserSetting.SetCustomShell](wesl-usersettingsetcustomshell.md)</p></td>
+<td><p><a href="wesl-usersettingsetcustomshell.md" data-raw-source="[WESL_UserSetting.SetCustomShell](wesl-usersettingsetcustomshell.md)">WESL_UserSetting.SetCustomShell</a></p></td>
 <td><p>Configures Shell Launcher for a specific user or group, based on SID.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WESL_UserSetting.GetCustomShell](wesl-usersettinggetcustomshell.md)</p></td>
+<td><p><a href="wesl-usersettinggetcustomshell.md" data-raw-source="[WESL_UserSetting.GetCustomShell](wesl-usersettinggetcustomshell.md)">WESL_UserSetting.GetCustomShell</a></p></td>
 <td><p>Retrieves the Shell Launcher configuration for a specific user or group, based on the SID.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WESL_UserSetting.RemoveCustomShell](wesl-usersettingremovecustomshell.md)</p></td>
+<td><p><a href="wesl-usersettingremovecustomshell.md" data-raw-source="[WESL_UserSetting.RemoveCustomShell](wesl-usersettingremovecustomshell.md)">WESL_UserSetting.RemoveCustomShell</a></p></td>
 <td><p>Removes a Shell Launcher configuration for a specific user or group, based on the SID.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WESL_UserSetting.GetDefaultShell](wesl-usersettinggetdefaultshell.md)</p></td>
+<td><p><a href="wesl-usersettinggetdefaultshell.md" data-raw-source="[WESL_UserSetting.GetDefaultShell](wesl-usersettinggetdefaultshell.md)">WESL_UserSetting.GetDefaultShell</a></p></td>
 <td><p>Retrieves the default Shell Launcher configuration.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WESL_UserSetting.SetDefaultShell](wesl-usersettingsetdefaultshell.md)</p></td>
+<td><p><a href="wesl-usersettingsetdefaultshell.md" data-raw-source="[WESL_UserSetting.SetDefaultShell](wesl-usersettingsetdefaultshell.md)">WESL_UserSetting.SetDefaultShell</a></p></td>
 <td><p>Sets the default Shell Launcher configuration.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WESL_UserSetting.IsEnabled](wesl-usersettingisenabled.md)</p></td>
+<td><p><a href="wesl-usersettingisenabled.md" data-raw-source="[WESL_UserSetting.IsEnabled](wesl-usersettingisenabled.md)">WESL_UserSetting.IsEnabled</a></p></td>
 <td><p>Retrieves a value that indicates if Shell Launcher is enabled or disabled.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WESL_UserSetting.SetEnabled](wesl-usersettingsetenabled.md)</p></td>
+<td><p><a href="wesl-usersettingsetenabled.md" data-raw-source="[WESL_UserSetting.SetEnabled](wesl-usersettingsetenabled.md)">WESL_UserSetting.SetEnabled</a></p></td>
 <td><p>Enables or disables Shell Launcher.</p></td>
 </tr>
 </tbody>

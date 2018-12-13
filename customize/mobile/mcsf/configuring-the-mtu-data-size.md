@@ -20,7 +20,7 @@ For TCP, the default maximum transmission unit (MTU) is set to 1500 bytes, and t
 
 **Note**  This customization configures the MTU so the size should be set to the required MSS size plus 40 bytes.
 
- 
+ 
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 

@@ -21,7 +21,7 @@ Microsoft-Windows-TerminalServices-RemoteConnectionManager configures how Termin
 > [!Note]
 > This component is ignored unless the Windows feature **AppServer** **(Terminal Services Application Server)** is enabled in the Windows image.
 
- 
+ 
 
 ## In This Section
 

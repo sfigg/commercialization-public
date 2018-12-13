@@ -68,7 +68,7 @@ The ACPI table entry should specify the following information:
 | GPIO Interrupt Assertion Type  | Defines the type of triggering that the pen will provide for its interrupts. This can either be "Edge-triggered", or "Level-triggered". HID I²C-compliant devices should use “Level-triggered" interrupts.                            |
 | GPIO Interrupt Assertion Level | Defines the voltage level on the interrupt line, when the interrupt is asserted by the device. This can be specified as “ActiveLow” or “ActiveHigh”.                                                                                  |
 
- 
+ 
 
 ## USB Devices
 

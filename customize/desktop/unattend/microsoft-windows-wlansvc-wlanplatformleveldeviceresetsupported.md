@@ -49,7 +49,7 @@ Specifies whether the device supports platform level device reset (PLDR). The PL
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -75,9 +75,9 @@ For a list of the Windows editions and architectures that this component support
 
 [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md)
 
- 
+ 
 
- 
+ 
 
 
 

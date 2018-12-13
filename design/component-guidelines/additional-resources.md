@@ -49,9 +49,9 @@ For information about the HID over I2C protocol, please refer to the [HID Over I
 
 If you are writing a user-mode application that processes multi-touch input, see the [Windows Touch SDK documentation](http://go.microsoft.com/fwlink/p/?linkid=155066).
 
- 
+ 
 
- 
+ 
 
 
 

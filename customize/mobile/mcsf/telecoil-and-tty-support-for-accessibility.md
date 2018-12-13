@@ -95,7 +95,7 @@ Partners can display a Telecoil option in the **ease of access** screen in **Set
         </tbody>
         </table>
 
-         
+         
 
     2.  To show two (Off or Full) or four (Off, Full, HCO, or VCO) menu items for TTY/TDD modes, set the value of `CompactMode` to one of the following:
 
@@ -122,7 +122,7 @@ Partners can display a Telecoil option in the **ease of access** screen in **Set
         </tbody>
         </table>
 
-         
+         
 
     3.  To specify the default mode for the TTY/TDD option, set the value of `Mode` to one of the following:
 
@@ -158,7 +158,7 @@ Partners can display a Telecoil option in the **ease of access** screen in **Set
         </tbody>
         </table>
 
-         
+         
 
 4.  Configure the telecoil settings and default value. The following settings group under `EaseOfAccessCPL/Telecoil` is atomic so all settings must be configured.
 
@@ -187,7 +187,7 @@ Partners can display a Telecoil option in the **ease of access** screen in **Set
         </tbody>
         </table>
 
-         
+         
 
     2.  To set the default user value for the Telecoil option, set the value of `Enabled` to one of the following:
 
@@ -215,7 +215,7 @@ Partners can display a Telecoil option in the **ease of access** screen in **Set
         </tbody>
         </table>
 
-         
+         
 
 To enable Telecoil, use the two registry entries exactly as shown in the TelecoilAndTTY.pkg.xml file.
 

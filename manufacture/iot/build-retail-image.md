@@ -67,13 +67,13 @@ We'll take our customizations, put them together, and test them in a retail buil
     ``` powershell
 	Set-IoTRetailSign On
     (or) retailsign On
-	```
+    ```
 	
 4.	Rebuild all the packages so that they are retail signed.
 
     ``` powershell
 	buildpkg all
-	```
+    ```
 
     If the BSP drivers/packages are test signed, you need to rebuild them to have retail signature. You can re-sign the cabs and its contents using [Redo-IoTCabSignature](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Redo-IoTCabSignature.md)
 

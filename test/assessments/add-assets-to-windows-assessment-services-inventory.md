@@ -35,7 +35,7 @@ You can add bare metal computers (computers that don't have a running operating 
 **Warning**  
 You shouldn't include a test computer in multiple Windows Assessment Services server inventories at the same time. When a test computer appears in multiple Windows Assessment Services server inventories, it causes a race condition between the Windows Deployment Services instances on each server. If you must move a test computer from one inventory to another, in the Windows Assessment Services - Client (Windows ASC), delete the computer asset from the first Windows Assessment Services inventory, and then add it to the inventory on the new Windows Assessment Services server.
 
- 
+ 
 
 **To add running computers to the inventory**
 
@@ -48,7 +48,7 @@ You shouldn't include a test computer in multiple Windows Assessment Services se
     **Note**  
     This account and password are set up during the Windows Assessment Services installation and initialization. This isn't an administrator account.
 
-     
+     
 
 2.  On the test computer, delete the C:\\relax folder, if it exists.
 
@@ -61,7 +61,7 @@ You shouldn't include a test computer in multiple Windows Assessment Services se
     **Warning**  
     If the computer name contains an underscore, it might not be reachable through DNS, in compliance with RFC requirements. In that case, the computer won't be added to the inventory. Out-of-box experience (OOBE) allows computer names with an underscore, but Windows Assessment Services inventory doesn't.
 
-     
+     
 
 5.  Open the Windows ASC from the **Start** menu. On the **Getting Started** page, verify that the correct number of computers have been added to your server inventory.
 
@@ -73,7 +73,7 @@ When you add running computers to your inventory, the out-of-box drivers from th
 **Warning**  
 The following steps apply only to Windows Server 2012. If you're using Windows Server 2008 R2, you must inject the drivers into the image before deployment, because Dynamic Driver Provisioning in Windows Deployment Services isn't supported on Windows Server 2008 R2.
 
- 
+ 
 
 **To import drivers into the driver store**
 
@@ -111,7 +111,7 @@ You must copy the Windows imaging (.wim) files to the image share before you imp
     **Note**  
     The image path cannot contain spaces.
 
-     
+     
 
 2.  These images are in the Windows Assessment Services server image share, but they haven't been imported into the inventory database. To import the images into the inventory database, use one of these methods:
 
@@ -130,7 +130,7 @@ You must copy the Windows imaging (.wim) files to the image share before you imp
     **Important**  
     When deploying an image to an OEM Activation 3.0 (OA 3.0) system, use a custom unattend.xml answer file with a product key that is associated with the image.
 
-     
+     
 
 **To associate answer files with images**
 
@@ -147,9 +147,9 @@ You must copy the Windows imaging (.wim) files to the image share before you imp
 
 [Windows Assessment Services common scenarios](windows-assessment-services-how-to-topics--wastechref.md)
 
- 
+ 
 
- 
+ 
 
 
 

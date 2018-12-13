@@ -7,7 +7,7 @@ title: 'Deploy push-button reset features'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
+ms.custom: RS5
 
 ---
 
@@ -140,7 +140,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 **Important**  If you have created an unattend file, you must also create a script to reapply it using the BasicReset\_AfterImageApply and FactoryReset\_AfterImageApply extensibility points.
 
- 
+ 
 
 **Step 5: Prepare push-button reset extensibility point scripts (optional)**
 
@@ -185,7 +185,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **Important**  If you use a text editor to author the ResetConfig.xml file, save the document with an .xml file name extension and use **UTF-8 encoding**. Do not use Unicode or ANSI.
 
-     
+     
 
 5.  Save the ResetConfig.xml file together with the scripts that you created.
 
@@ -392,7 +392,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **Important**  You must store Winre.wim in \\Recovery\\WindowsRE.
 
-     
+     
 
 6.  Register the Windows RE boot image together with the Windows image.
 
@@ -428,10 +428,10 @@ If you plan to use Push-button reset’s extensibility points, use the following
     2.  Boot the destination PC to audit mode. This can be accomplished by using an answer file with the Microsoft-Windows-Deployment | Reseal | Mode = audit setting, or by first booting the PC to OOBE, and then pressing CTRL+SHIFT+F3.
     3.  Perform any remaining customizations such as installing applications and device software packages that are specific to the destination PC.
 
-9.  If you have installed OS updates, clean up the superseded components and mark the updates as permanent so that they will be restored during recovery:
+9.  Clean up the image:
 
     ```
-    DISM.exe /Cleanup-Image /StartComponentCleanup /ResetBase
+    DISM.exe /Cleanup-Image /StartComponentCleanup
     ```
 
 **Step 10: Capture and deploy customizations for recovery**
@@ -481,7 +481,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **Note**  Important: You must configure the image that you are shipping to the customer to boot to OOBE.
 
-     
+     
 
 6.  (Optional) To save space, you can also convert your installed Windows desktop applications into file pointers referencing the customizations package. To do so, boot the destination PC to Windows PE and run the following:
 
@@ -509,7 +509,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
     **Note**  The Push-button reset UI has been redesigned in Windows 10. The **Keep my files** option in the UI now corresponds to the **Refresh your PC** feature, whereas the **Remove everything** option corresponds to the **Reset your PC** feature.
 
-     
+     
 
 ## <span id="related_topics"></span>Related topics
 
@@ -520,9 +520,9 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 [Deploy push-button reset features using ScanState](http://go.microsoft.com/fwlink/?LinkId=615126)
 
- 
+ 
 
- 
+ 
 
 
 

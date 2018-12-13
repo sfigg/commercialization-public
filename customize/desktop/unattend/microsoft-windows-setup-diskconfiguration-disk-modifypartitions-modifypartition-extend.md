@@ -27,7 +27,7 @@ ms.topic: article
 **Note**  
 UEFI/GPT-based disks do not support the `Extend` setting.
 
- 
+ 
 
 ## Values
 
@@ -49,7 +49,7 @@ UEFI/GPT-based disks do not support the `Extend` setting.
 </tbody>
 </table>
 
- 
+ 
 
 -   **To use extended and logical partitions**
 
@@ -251,9 +251,9 @@ The following XML output for the `DiskConfiguration` setting shows how to modify
 
 [How to Configure More Than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
 
- 
+ 
 
- 
+ 
 
 
 

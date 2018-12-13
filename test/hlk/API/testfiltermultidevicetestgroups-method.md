@@ -34,7 +34,7 @@ This method removes tests from a list of tests that can be consolidated and retu
 
 *tests*
 
-     A list of tests to be filtered for multi-device tests.
+     A list of tests to be filtered for multi-device tests.
 
 ## <span id="Returns"></span><span id="returns"></span><span id="RETURNS"></span>Returns
 
@@ -46,9 +46,9 @@ A list test groupings which can be consolidated.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

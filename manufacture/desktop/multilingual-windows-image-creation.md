@@ -7,7 +7,7 @@ title: Multilingual Windows Image Creation
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/add-language-packs-to-windows
 
 ---
 
@@ -54,7 +54,7 @@ The Windows image must be a recently installed and captured image. This ensures 
 
 Always install language packs before you install updates. If you install an update (hotfix, general distribution release \[GDR\], limited distribution release \[LDR\], or service pack \[SP\]) that contains language-dependent resources before you install a language pack, the language-specific changes contained in the update are not applied. Packages that have language pack dependencies can be identified by using the `Dism /Get-PackageInfo` command. In the “Custom Properties” section of the report, look for the Dependency = “Language Pack” key/value pair. If language packs are installed after an LDR or GDR package that has this attribute, the update must be reinstalled.
 
- 
+ 
 
 **To add language packs to a Windows image**
 
@@ -243,7 +243,7 @@ In this step, you add multiple language support to Windows Setup. This allows an
 **Note**  
 This step is optional. If you complete this step, you can run Windows Setup in a language other than the language that you choose for the operating system. However, this does not cover adding font support for all languages.
 
- 
+ 
 
 **To add language packs to the default boot image**
 
@@ -274,7 +274,7 @@ This step is optional. If you complete this step, you can run Windows Setup in a
     **Note**  
     These Windows Setup language packs are for the client editions of Windows only. For Windows Server, you must use winpe-setup-server .cab files.
 
-     
+     
 
 5.  Add the Windows PE language specific optional components. For example:
 
@@ -479,7 +479,7 @@ In this step, you create a regional Windows image by removing language packs fro
 **Important**  
 You should not remove a language pack from an offline Windows image if there are pending online actions. The Windows image should be a recently installed and captured image. This will ensure that the Windows image does not have any pending online actions that require a reboot.
 
- 
+ 
 
 **To remove a language pack**
 
@@ -562,4 +562,4 @@ You should not remove a language pack from an offline Windows image if there are
     Dism /unmount-image /MountDir:C:\mount\windows /Commit
     ```
 
- 
+ 

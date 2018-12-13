@@ -44,7 +44,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -80,9 +80,9 @@ The following XML output shows how to configure the Pop-up Blocker.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

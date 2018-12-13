@@ -21,70 +21,28 @@ This section documents the interfaces that the WPRControl API provides.
 
 ## In This Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[IControlErrorInfo](icontrolerrorinfo.md)</p></td>
-<td><p>Provides functions that obtain information about errors that occur when the control manager performs an operation.</p></td>
-</tr>
-<tr class="even">
-<td><p>[IControlManager](icontrolmanager.md)</p></td>
-<td><p>Represents the Windows Performance Recorder (WPR) manager, which controls ETW sessions.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[IControlProgressHandler](icontrolprogresshandler.md)</p></td>
-<td><p>Represents a client-side handler that receives updates when the library performs an operation.</p></td>
-</tr>
-<tr class="even">
-<td><p>[IEnumControlWarningInfo](ienumcontrolwarninginfo.md)</p></td>
-<td><p>Provides a standard COM enumeration method for enumerating a collection of [IControlErrorInfo](icontrolerrorinfo.md) interfaces.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[IEnumProfile](ienumprofile.md)</p></td>
-<td><p>Provides a standard COM enumeration method for enumerating a collection of [IProfile](iprofile.md) interfaces.</p></td>
-</tr>
-<tr class="even">
-<td><p>[IOnOffTransitionManager](ionofftransitionmanager.md)</p></td>
-<td><p>Enables the client to store the profiles of the [IProfileCollection](iprofilecollection.md) to the registry for boot tracing.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[IParsingErrorInfo](iparsingerrorinfo.md)</p></td>
-<td><p>Provides functions that get information about XML validation failures.</p></td>
-</tr>
-<tr class="even">
-<td><p>[IProfile](iprofile.md)</p></td>
-<td><p>Represents an individual profile that the client controls.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[IProfileCollection](iprofilecollection.md)</p></td>
-<td><p>Represents a collection of profiles that the library runs as a unit.</p></td>
-</tr>
-<tr class="even">
-<td><p>[ITraceMergeProperties](itracemergeproperties.md)</p></td>
-<td><p>Enables the client to specify policies for merging multiple event trace log (ETL) files using XML.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[ITraceMergeTextHandler](itracemergetexthandler.md)</p></td>
-<td><p>Obtains the text and other metadata that was added by the user.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Function|Description|
+|--|--|
+|[IControlErrorInfo](icontrolerrorinfo.md) |Provides functions that obtain information about errors that occur when the control manager performs an operation. |
+| [IControlManager](icontrolmanager.md)| Represents the Windows Performance Recorder (WPR) manager, which controls ETW sessions.|
+|[IControlProgressHandler](icontrolprogresshandler.md) |Represents a client-side handler that receives updates when the library performs an operation. |
+| [IEnumControlWarningInfo](ienumcontrolwarninginfo.md)| Provides a standard COM enumeration method for enumerating a collection of [IControlErrorInfo](icontrolerrorinfo.md)" interfaces.|
+| [IEnumProfile](ienumprofile.md)| Provides a standard COM enumeration method for enumerating a collection of [IProfile](iprofile.md) interfaces.|
+| [IOnOffTransitionManager](ionofftransitionmanager.md)| Enables the client to store the profiles of the [IProfileCollection](iprofilecollection.md)" to the registry for boot tracing.|
+| [IProfile](iprofile.md)| Represents an individual profile that the client controls.|
+| [IProfileCollection](iprofilecollection.md)| Represents a collection of profiles that the library runs as a unit.|
+| [ISnapshotManager3](isnapshotmanager3.md)| Represents a snapshot object that the client controls to enable, disable, and take the snapshot.|
+| [ITraceMergeProperties](itracemergeproperties.md)| Enables the client to specify policies for merging multiple event trace log (ETL) files using XML.|
+| [ITraceMergeTextHandler](itracemergetexthandler.md)| Obtains the text and other metadata that was added by the user.|
 
 ## Related topics
 
 
 [WPRControl API Reference](wprcontrol-api-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

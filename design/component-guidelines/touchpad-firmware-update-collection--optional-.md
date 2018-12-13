@@ -23,9 +23,9 @@ This is a big advantage because it makes it possible to perform firmware updates
 
 A Windows Precision Touchpad device should be able to recover from a firmware update that failed due to power loss (or some other error), if you shut down, and then reapply its power supply. It is highly recommended that basic functionality be available even after a failed firmware update.
 
- 
+ 
 
- 
+ 
 
 
 

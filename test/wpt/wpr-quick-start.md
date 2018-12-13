@@ -22,7 +22,7 @@ This article summarizes the features that are available in the Windows Performa
 **Note**  
 You can also run WPR from the command-line; for information about that option, see [WPR Command-Line Options](http://go.microsoft.com/fwlink/p/?linkid=223233).
 
- 
+ 
 
 ## <a href="" id="default"></a>Recording by using the WPR Default Settings
 
@@ -70,9 +70,9 @@ For more information about logging modes, see [Logging Mode](http://go.microsoft
 
 [WPR Reference](http://go.microsoft.com/fwlink/p/?linkid=223245)
 
- 
+ 
 
- 
+ 
 
 
 

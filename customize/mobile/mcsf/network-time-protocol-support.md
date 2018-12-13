@@ -80,12 +80,14 @@ If NTP is enabled, the first NTP query happens post-shell ready. After that, the
     </tbody>
     </table>
 
-     
 
-    **Note**  
-    Microsoft recommends explicitly setting a value for `NTPEnabled` depending on the user experience you want to enable or requirements you need to meet.
 
-     
+~~~
+**Note**  
+Microsoft recommends explicitly setting a value for `NTPEnabled` depending on the user experience you want to enable or requirements you need to meet.
+~~~
+
+
 
 4.  To set the regular sync interval, in hours, set `NTPRegularSyncInterval` to a value between 1 and 168 hours (inclusive). The default sync interval value is 12 hours.
 

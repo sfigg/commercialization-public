@@ -42,7 +42,7 @@ This method retrieves a Project and returns its object.
 
 `Public MustOverride Function GetProject ( _`
 
-          `projectName As String _`
+          `projectName As String _`
 
 `) As Project`
 
@@ -50,7 +50,7 @@ This method retrieves a Project and returns its object.
 
 `public abstract Project GetProject (`
 
-          `string projectName`
+          `string projectName`
 
 `) `
 
@@ -59,7 +59,7 @@ This method retrieves a Project and returns its object.
 
 *projectName*
 
-     The name of the Project to open.
+     The name of the Project to open.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ Returns [Project Class](project-class.md).
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

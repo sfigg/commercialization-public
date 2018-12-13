@@ -7,8 +7,7 @@ title: 'Windows PE (WinPE)'
 ms.author: kenpacq
 ms.date: 10/02/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Windows PE (WinPE)
@@ -107,27 +106,31 @@ Windows PE does not support any of the following:
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Product evaluation</strong></p></td>
-<td align="left"><p>[What's New in Windows PE](whats-new-in-windows-pe-s14.md)</p></td>
+<td align="left"><p><a href="whats-new-in-windows-pe-s14.md">What's new in WinPE</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) | [Demo: Installing Windows PE on a USB Drive](http://go.microsoft.com/fwlink/?LinkId=279081) | [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md) | [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md) | [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md) | [Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md) | [WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md)</p></td>
+<td align="left"><p><a href="winpe-create-usb-bootable-drive.md">Create a USB Bootable drive</a> | <a href="http://go.microsoft.com/fwlink/?LinkId=279081">Demo: Installing Windows PE on a USB drive</a> | <a href="winpe-create-a-boot-cd-dvd-iso-or-vhd.md">Create a boot CD, DVD, ISO, or VHD</a> | <a href="winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md">Install on a hard drive (Flat boot or Non-RAM)</a> | <a href="winpe-boot-in-uefi-or-legacy-bios-mode.md">Boot in UEFI or legacy BIOS mode</a> | <a href="boot-to-uefi-mode-or-legacy-bios-mode.md">Boot to UEFI Mode or legacy BIOS mode</a> | <a href="winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md">Use a single USB key for WinPE and a WIM file (.wim)</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[WinPE: Mount and Customize](winpe-mount-and-customize.md) | [WinPE: Add drivers](winpe-add-drivers.md) | [WinPE: Storage Area Network (SAN) Policy](winpe-storage-area-network--san--policy.md) | [WinPE: Create Apps](winpe-create-apps.md) | [WinPE: Optimize and shrink the image](winpe-optimize.md)</p></td>
+<td align="left"><p><a href="winpe-mount-and-customize.md">Mount and customize</a> | <a href="winpe-add-drivers.md">Add drivers</a> | <a href="winpe-storage-area-network--san--policy.md">Storage Area Network (SAN) policy</a> | <a href="winpe-create-apps.md">Create apps</a> | <a href="winpe-optimize.md">Optimize and shrink the image</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>
-<td align="left"><p>[WinPE Network Drivers: Initializing and adding drivers](winpe-network-drivers-initializing-and-adding-drivers.md) | [WinPE: Debug Apps](winpe-debug-apps.md) |</p></td>
+<td align="left"><p><a href="winpe-network-drivers-initializing-and-adding-drivers.md">Network drivers: Initializing and adding drivers</a> | <a href="winpe-debug-apps.md">Debug apps</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Tools and settings</strong></p></td>
-<td align="left"><p>[Copype Command-Line Options](copype-command-line-options.md) | [Drvload Command-Line Options](drvload-command-line-options.md) | [Makewinpemedia Command-Line Options](makewinpemedia-command-line-options.md) | [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md) | [WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md) | [Wpeutil Command-Line Options](wpeutil-command-line-options.md) | [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md)</p></td>
+<td align="left"><p><a href="wpeinit-and-startnetcmd-using-winpe-startup-scripts.md">Wpeinit and Startnet.cmd: Using WinPE Startup Scripts</a> | <a href="winpe-identify-drive-letters.md">Identify drive letters with a script</a> | <a href="winpe-add-packages--optional-components-reference.md">Add packages (Optional Components Reference)</a></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Command-line options</strong></p></td>
+<td align="left"><p><a href="copype-command-line-options.md">CopyPE</a> | <a href="drvload-command-line-options.md">Drvload</a> | <a href="makewinpemedia-command-line-options.md">Makewinpemedia</a> | <a href="wpeutil-command-line-options.md">Wpeutil</a></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Technologies based on Windows PE</strong></p></td>
-<td align="left"><p>[Windows Setup](windows-setup-technical-reference.md) | [Windows Recovery Environment](windows-recovery-environment--windows-re--technical-reference.md) | [Diagnostic and Recovery Toolset](http://go.microsoft.com/fwlink/?LinkId=294156)</p></td>
+<td align="left"><p><a href="windows-setup-technical-reference.md">Windows Setup</a> | <a href="windows-recovery-environment--windows-re--technical-reference.md">Windows Recovery Environment</a> | <a href="http://go.microsoft.com/fwlink/?LinkId=294156">Diagnostic and Recovery Toolset (DaRT)</a></p></td>
 </tr>
 </tbody>
 </table>

@@ -48,7 +48,7 @@ To test systems and filter drivers, you need at least 1 test server and 1 test s
 
 To test external devices, you need at least 1 test server, 1 test system, and the external device(s) to be tested.
 
-You can choose to allocate fewer controllers, each with multiple clients connected to them, if you want less overhead administering the controllers and clients. A maximum of 150 clients can be connected to a single controller. Alternately, you can allocate more controllers and connect fewer clients to them. This allows any given controller to be more responsive because it has fewer clients communicating with it. For more information, see [HLK Controller and Client Organization](..\user\hlk-controller-and-client-organization.md).
+You can choose to allocate fewer controllers, each with multiple clients connected to them, if you want less overhead administering the controllers and clients. A maximum of 150 clients can be connected to a single controller. Alternately, you can allocate more controllers and connect fewer clients to them. This allows any given controller to be more responsive because it has fewer clients communicating with it. For more information, see [HLK Controller and Client Organization](../user/hlk-controller-and-client-organization.md).
 
 The following image shows an example test environment.
 
@@ -109,7 +109,7 @@ The following image shows an example test environment.
 > - Windows 10S users should test against Windows 10 Pro.
 > - Controller isn't supported on Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP, or Windows 2000.
 > - Controller isn't supported on an installation that has already been set up as a domain controller.
- 
+ 
 ### <span id="Test_system"></span><span id="test_system"></span><span id="TEST_SYSTEM"></span>Test system
 
 <table>
@@ -135,7 +135,7 @@ The following image shows an example test environment.
 <tr class="odd">
 <td><p>Hard disk capacity</p></td>
 <td><p>300 GB minimum to accommodate the test files and logs that can be generated.</p>
-<p>The client must be unique; you can't swap drives.</p></td>
+<p>The client must be unique; you can&#39;t swap drives.</p></td>
 </tr>
 <tr class="even">
 <td><p>Network connection</p></td>
@@ -145,7 +145,7 @@ The following image shows an example test environment.
 <td><p>Operating system</p></td>
 <td><p>Install the English language and English local version of the Windows operating system that you are testing against.</p>
 <p>Test systems are not supported in a virtual PC or any third-party Hypervisor environment.</p>
-<p>If you are testing against a Windows "N" edition, you must also manually install Media Feature Pack.</p>
+<p>If you are testing against a Windows &quot;N&quot; edition, you must also manually install Media Feature Pack.</p>
 <p>Windows 10S users should test against Windows 10 Pro.</p>
 </td>
 </tr>
@@ -170,7 +170,7 @@ The following image shows an example test environment.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Optional_remote_standalone_Windows_HLK_Studio"></span><span id="optional_remote_standalone_windows_hlk_studio"></span><span id="OPTIONAL_REMOTE_STANDALONE_WINDOWS_HLK_STUDIO"></span>Optional remote/standalone Windows HLK Studio
 
@@ -197,7 +197,7 @@ The following image shows an example test environment.
 <tr class="odd">
 <td><p>Hard disk capacity</p></td>
 <td><p>300 GB minimum to accommodate the volume of logs that can be generated.</p>
-<p>The client must be unique; you can't swap drives.</p></td>
+<p>The client must be unique; you can&#39;t swap drives.</p></td>
 </tr>
 <tr class="even">
 <td><p>Network connection</p></td>
@@ -215,11 +215,11 @@ The following image shows an example test environment.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

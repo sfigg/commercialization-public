@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 Some partitions, such as system and recovery partitions, do not receive a drive letter by default. To set up files on these partitions, we recommend that you use the Windows Preinstallation Environment (Windows PE). In Windows PE, you can access and modify these partitions without affecting the way that the drive letters appear in Windows to the end user. For more information about system recovery, see the [Walkthrough: Deploy a System Recovery Image](http://go.microsoft.com/fwlink/?LinkId=206666) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference. For more information about Windows PE, see the [Windows Preinstallation Environment (Windows PE) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206667) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
- 
+ 
 
 ## Values
 
@@ -43,7 +43,7 @@ Some partitions, such as system and recovery partitions, do not receive a drive 
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -163,9 +163,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 
 [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
- 
+ 
 
- 
+ 
 
 
 

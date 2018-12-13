@@ -40,7 +40,7 @@ ms.topic: article
 
 `Public Function Equals ( _`
 
-          `otherMachinePool As MachinePool _`
+          `otherMachinePool As MachinePool _`
 
 `) As Boolean`
 
@@ -48,7 +48,7 @@ ms.topic: article
 
 `public bool Equals (`
 
-          `MachinePool otherMachinePool`
+          `MachinePool otherMachinePool`
 
 `)`
 
@@ -57,7 +57,7 @@ ms.topic: article
 
 *otherMachinePool*
 
-     
+     
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -69,9 +69,9 @@ Returns **Boolean**.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

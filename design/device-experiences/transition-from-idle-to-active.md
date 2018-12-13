@@ -32,9 +32,9 @@ As soon as the SoC wakes and the platform exits the DRIPS state, the CPUs start 
 
 System designers must work closely with the SoC vendor to connect device interrupts for SoC wakeup. Some SoC devices require device interrupts to be connected to special "wake-capable" inputs or configured for wake using system firmware.
 
- 
+ 
 
- 
+ 
 
 
 

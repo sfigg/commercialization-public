@@ -76,7 +76,7 @@ To reset the audio volume limit and show the volume level warning every time the
     </tbody>
     </table>
 
-     
+     
 
 4.  Set `VolumeLimit` to a value from 10 to 29 (inclusive). For devices sold in the EU, this value should map to 85 dB volume level. This value is also used as the maximum allowed volume in Kid's Corner for media volume.
 

@@ -21,7 +21,7 @@ ms.topic: article
 **Important**  
 This setting has been deprecated in Windows 10. The information about this deprecated setting is provided for reference only.
 
- 
+ 
 
 `NetworkLocation` specifies the location of the network if the computer is connected to a network when a user first logs on.
 
@@ -49,7 +49,7 @@ This setting has been deprecated in Windows 10. The information about this depr
 </tbody>
 </table>
 
- 
+ 
 
 There is no default value. If a value is not set, and a network is detected, then the **Computer's Current Location** page opens during the Out of Box Experience (OOBE).
 

@@ -63,9 +63,9 @@ Any public static (**Shared** in Visual Basic) members of this type are thread s
 
 The query is used for automatic detection of Features and Requirements. This query is run against all the target data for a particular machine. If there are any results, the Feature is present on the Machine.
 
- 
+ 
 
- 
+ 
 
 
 

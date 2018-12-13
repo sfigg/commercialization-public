@@ -31,7 +31,7 @@ Here's a table that shows all the mandatory usages which should be present in al
 | Button 2      | Indicates Button State for external button for primary (default left) clicking.    | 0x09 | 0x02 | Optional           |
 | Button 3      | Indicates Button State for external button for secondary (default right) clicking. | 0x09 | 0x03 | Optional           |
 
- 
+ 
 
 The following sections provide information about the usages for Buttons. For information about the other members (for example, *Report ID*) see [Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md).
 
@@ -51,7 +51,7 @@ With reference to the example outlined in the preceding diagram, assume that a c
 | Contact 2: tip switch | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1      | 1        | 0        |
 | Contact 2: X, Y       | X₁, Y₁ | X₂, Y₂ | X₃, Y₃ | X₄, Y₄ | X₅, Y₅ | X₆, Y₆ | X₇, Y₇ | X₈, Y₈ | X₉, Y₉ | X₁₀, Y₁₀ | X₁₀, Y₁₀ |
 
- 
+ 
 
 ![diagram showing a non-capacitive contact that is placed on a windows precision touchpad with sufficient activation force to invoke a button down. the activation force is later reduced, such that it invokes a button up.](../images/precision-img-btndownup.png)
 
@@ -62,7 +62,7 @@ With reference to the example outlined in the preceding diagram, assume that a n
 | Contact Count | 0   | 0   | 0   | 0   | 0   | 0   |
 | Button        | 1   | 1   | 1   | 1   | 1   | 0   |
 
- 
+ 
 
 ## Buttons 2 and 3 (Discrete Left and Right Clicks)
 
@@ -105,7 +105,7 @@ Here's a table showing the reporting sequence for 2 contacts (in Single Finger H
 | Contact 2: tip switch | NR     | 1      | NR     | 1      | NR     | 1      |
 | Scan Time             | T₁     | T₁     | T₂     | T₂     | T₃     | T₃     |
 
- 
+ 
 
 USB and I²C-connected Windows Precision Touchpad devices can deliver input reports in either single-finger hybrid reporting mode, or two-finger hybrid reporting mode.
 
@@ -114,9 +114,9 @@ USB and I²C-connected Windows Precision Touchpad devices can deliver input repo
 
 [Windows Precision Touchpad Collection](touchpad-windows-precision-touchpad-collection.md)
 
- 
+ 
 
- 
+ 
 
 
 

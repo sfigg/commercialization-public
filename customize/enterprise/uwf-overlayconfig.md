@@ -52,11 +52,11 @@ The following tables list the methods and properties that belong to this class.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[UWF_OverlayConfig.SetMaximumSize](uwf-overlayconfigsetmaximumsize.md)</p></td>
+<td><p><a href="uwf-overlayconfigsetmaximumsize.md" data-raw-source="[UWF_OverlayConfig.SetMaximumSize](uwf-overlayconfigsetmaximumsize.md)">UWF_OverlayConfig.SetMaximumSize</a></p></td>
 <td><p>Sets the maximum cache size, in megabytes, of the overlay.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UWF_OverlayConfig.SetType](uwf-overlayconfigsettype.md)</p></td>
+<td><p><a href="uwf-overlayconfigsettype.md" data-raw-source="[UWF_OverlayConfig.SetType](uwf-overlayconfigsettype.md)">UWF_OverlayConfig.SetType</a></p></td>
 <td><p>Sets the type of the UWF overlay to either RAM-based or disk-based.</p></td>
 </tr>
 </tbody>

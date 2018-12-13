@@ -24,8 +24,8 @@ Indicates whether the ETL file is compressed. This element is for internal use o
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
   * \<[TraceMergeProperties](tracemergeproperties.md)\>
-    * \<[TraceMergeProperty](tracemergeproperty.md)\>
-      * \<**FileCompression**\>
+    * \<[TraceMergeProperty](tracemergeproperty.md)\>
+      * \<**FileCompression**\>
 
 
 ## Syntax

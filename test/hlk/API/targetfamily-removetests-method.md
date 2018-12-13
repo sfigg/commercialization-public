@@ -18,7 +18,7 @@ ms.topic: article
 >[!WARNING]
 >  This functionality is being deprecated. Please use playlists to create custom test pass lists.
 
- 
+ 
 
 Removes the given Tests from this [TargetFamily](targetfamily-class.md).
 
@@ -33,7 +33,7 @@ Removes the given Tests from this [TargetFamily](targetfamily-class.md).
 
 `public virtual void RemoveTests (`
 
-          `IEnumerable<TestDefinition> tests`
+          `IEnumerable<TestDefinition> tests`
 
 `)`
 
@@ -42,16 +42,16 @@ Removes the given Tests from this [TargetFamily](targetfamily-class.md).
 
 *tests*
 
- The tests to be removed.
+ The tests to be removed.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

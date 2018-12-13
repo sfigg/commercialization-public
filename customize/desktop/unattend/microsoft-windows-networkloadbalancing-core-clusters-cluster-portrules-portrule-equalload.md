@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
- 
+ 
 
 ## Values
 
@@ -40,12 +40,12 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-loadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.</p></td>
+<td><p>Specifies that the number specified in the <a href="microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-loadweight.md" data-raw-source="[LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-loadweight.md)">LoadWeight</a> setting is used to increase or decrease the load relative to other nodes in the cluster.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -83,9 +83,9 @@ The following XML output shows how to specify that the distribution of the load 
 
 [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md)
 
- 
+ 
 
- 
+ 
 
 
 

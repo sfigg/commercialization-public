@@ -44,7 +44,7 @@ In upgrade installation types, this setting is ignored. In upgrade installations
 </tbody>
 </table>
 
- 
+ 
 
 This string type supports empty elements.
 
@@ -80,9 +80,9 @@ The following example shows how to set the UI language to German (Germany).
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
- 
+ 
 
- 
+ 
 
 
 

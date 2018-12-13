@@ -39,7 +39,7 @@ The following diagram summarizes the overall flow of the OEM custom flashing PC 
 **Note**  
 This diagram illustrates one possible solution. The OEM is encouraged to modify this approach to create an optimal solution that best suits their needs.
 
- 
+ 
 
 ## <span id="Checking_SMBIOS_values_before_flashing"></span><span id="checking_smbios_values_before_flashing"></span><span id="CHECKING_SMBIOS_VALUES_BEFORE_FLASHING"></span>Checking SMBIOS values before flashing
 
@@ -78,9 +78,9 @@ Describes the **EFI\_CHECKSIG\_PROTOCOL**.
 
 [Manufacturing](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

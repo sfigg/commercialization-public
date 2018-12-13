@@ -8,7 +8,7 @@ ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
 
-
+redirect_url: https://docs.microsoft.com/windows-hardware/manufacture/desktop/servicing-the-image-with-windows-updates-sxs
 ---
 
 # Add updates to customized Windows images
@@ -25,7 +25,7 @@ The ZDP update is a rollup of all of the updates released between Windows 10 bu
 -   Do not use **/ResetBase** (DISM /Cleanup-Image /ResetBase) after applying the ZDP offline. The ZDP has pending actions, which must be completed before running /ResetBase.
 -   You can't just add the ZDP into an unattended setup answer file - you must update the entire image before installing it.
 
- 
+ 
 
 ## <span id="_Start_with_your_customized_image"></span><span id="_start_with_your_customized_image"></span><span id="_START_WITH_YOUR_CUSTOMIZED_IMAGE"></span> Start with your customized image
 
@@ -70,54 +70,54 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 
 **Recommended: Boot the image to complete the update process, and then clean up the image**
 
-1.  Boot a reference device to Windows PE.
-2.  Press **Ctrl+Shift+F3** at the OOBE screens to enter audit mode.
-3.  Open the Command Prompt as an administrator.
-4.  Clean up the Windows image. (It's OK to use /ResetBase now that the PC has been booted into audit mode.)
+1. Boot a reference device to Windows PE.
+2. Press **Ctrl+Shift+F3** at the OOBE screens to enter audit mode.
+3. Open the Command Prompt as an administrator.
+4. Clean up the Windows image. (It's OK to use /ResetBase now that the PC has been booted into audit mode.)
 
-    ```
-    Dism /Cleanup-Image /Online /StartComponentCleanup /ResetBase
-    ```
+   ```
+   Dism /Cleanup-Image /Online /StartComponentCleanup /ResetBase
+   ```
 
-    **Note**  You won't be able to clean up your Windows image until after you've booted it.
+   **Note**  You won't be able to clean up your Windows image until after you've booted it.
 
-     
+     
 
-5.  Use Sysprep to generalize and shut down the PC.
+5. Use Sysprep to generalize and shut down the PC.
 
-    ```
-    C:\Windows\System32\Sysprep\sysprep /generalize /shutdown /oobe
-    ```
+   ```
+   C:\Windows\System32\Sysprep\sysprep /generalize /shutdown /oobe
+   ```
 
-6.  Boot the PC to Windows PE. If the PC starts rebooting to Windows, you'll need to let it finish booting and then use Sysprep to generalize and shut down the PC again.
-7.  Create a temporary scratch directory for DISM on a physical drive, rather than the default Windows PE virtual drive, to avoid issues related to short file names. To prevent capturing the DISM logs in your image, choose a location that’s in your DISM Exclusion list, for example, inside C:\\Recycler. For more info, see [DISM Configuration List and WimScript.ini Files](dism-configuration-list-and-wimscriptini-files-winnext.md).
+6. Boot the PC to Windows PE. If the PC starts rebooting to Windows, you'll need to let it finish booting and then use Sysprep to generalize and shut down the PC again.
+7. Create a temporary scratch directory for DISM on a physical drive, rather than the default Windows PE virtual drive, to avoid issues related to short file names. To prevent capturing the DISM logs in your image, choose a location that’s in your DISM Exclusion list, for example, inside C:\\Recycler. For more info, see [DISM Configuration List and WimScript.ini Files](dism-configuration-list-and-wimscriptini-files-winnext.md).
 
-    ```
-    md C:\Recycler\Scratch
-    ```
+   ```
+   md C:\Recycler\Scratch
+   ```
 
-8.  Recapture the Windows image. This captures the applied updates and removes any files that were marked as superseded during DISM /Cleanup-Image. Save the file to a location on a USB drive or a network (example: N:\\Images), and give the image a name (example: "Enterprise\_x64 with ZDP KBxxxxxxx").
+8. Recapture the Windows image. This captures the applied updates and removes any files that were marked as superseded during DISM /Cleanup-Image. Save the file to a location on a USB drive or a network (example: N:\\Images), and give the image a name (example: "Enterprise\_x64 with ZDP KBxxxxxxx").
 
-    ```
-    DISM /Capture-Image /ImageFile:"N:\Images\install_updated.wim" /CaptureDir:C: /Name: "Enterprise_x64 with ZDP KBxxxxxxx" /ScratchDir:C:\Recycler\Scratch
-    ```
+   ```
+   DISM /Capture-Image /ImageFile:"N:\Images\install_updated.wim" /CaptureDir:C: /Name: "Enterprise_x64 with ZDP KBxxxxxxx" /ScratchDir:C:\Recycler\Scratch
+   ```
 
- **Update Windows Setup bootable media**
+   **Update Windows Setup bootable media**
 
-1.  Copy your bootable media (DVDs or other bootable media for Windows Setup, Windows Deployment Services (WDS), or System Center) to a writable folder on your PC.
+9. Copy your bootable media (DVDs or other bootable media for Windows Setup, Windows Deployment Services (WDS), or System Center) to a writable folder on your PC.
 
-    ```
-    Xcopy D:\ C:\InstallMedia /s /h
-    ```
+   ```
+   Xcopy D:\ C:\InstallMedia /s /h
+   ```
 
-2.  Mount the file: sources\\boot.wim.
+10. Mount the file: sources\\boot.wim.
 
     ```
     md C:\mount\boot
     Dism /Mount-Image /ImageFile:"C:\InstallMedia\sources\boot.wim" /Index:1 /MountDir:C:\mount\boot
     ```
 
-3.  Add the ZDP.
+11. Add the ZDP.
 
     ```
     Dism /Add-Package /PackagePath:/PackagePath:C:\MSU\Windows10-KBxxxxxxx-x64.msu /Image:C:\mount\boot /LogPath:AddPackage.log
@@ -125,14 +125,14 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 
     Where C:\\MSU\\Windows10-KBxxxxxxx-x64.msu is the most recent version of the ZDP available.
 
-4.  In Windows Explorer, navigate to the mounted image root folder and sort the list of files by Date modified. Copy everything that’s been recently modified (setup.exe, locale.nls, setupplatform.dll, setupplatform.exe, reagent.dll, and anything else that looks recently modified) to the root of the install media.
-5.  Unmount the boot.wim file.
+12. In Windows Explorer, navigate to the mounted image root folder and sort the list of files by Date modified. Copy everything that’s been recently modified (setup.exe, locale.nls, setupplatform.dll, setupplatform.exe, reagent.dll, and anything else that looks recently modified) to the root of the install media.
+13. Unmount the boot.wim file.
 
     ```
     Dism /Unmount-Image /MountDir:C:\mount\boot /Commit
     ```
 
-6.  Create bootable media (DVDs or other bootable media for Windows Setup, Windows Deployment Services (WDS), or System Center) using the files. To learn more, see [Windows Setup Technical Reference](windows-setup-technical-reference.md).
+14. Create bootable media (DVDs or other bootable media for Windows Setup, Windows Deployment Services (WDS), or System Center) using the files. To learn more, see [Windows Setup Technical Reference](windows-setup-technical-reference.md).
 
 ## <span id="Adding_languages_after_adding_the_ZDP_or_other_rollup_packages"></span><span id="adding_languages_after_adding_the_zdp_or_other_rollup_packages"></span><span id="ADDING_LANGUAGES_AFTER_ADDING_THE_ZDP_OR_OTHER_ROLLUP_PACKAGES"></span>Adding languages after adding the ZDP or other rollup packages
 
@@ -264,9 +264,9 @@ dir %_input_wim%_exported.wim
 echo please use %_input_wim%_exported.wim for further testing.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

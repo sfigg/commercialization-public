@@ -22,19 +22,19 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 <tr>
 <td>&nbsp;</td>
 <td style="text-align: center;" colspan="2">
-<p>![tablet](../images/tablet3.png)</p>
+<p><img src="../images/tablet3.png" alt="tablet"/></p>
 </td>
 <td>
-<p>![large tablet](../images/tablet-desktop-large.png)</p>
+<p><img src="../images/tablet-desktop-large.png" alt="large tablet"/></p>
 </td>
 </tr>
 <tr>
 <td bgcolor="EEEEEE">&nbsp;</td>
 <td>
-<p>7" Tablet</p>
+<p>7&quot; Tablet</p>
 </td>
 <td>
-<p>8" Tablet</p>
+<p>8&quot; Tablet</p>
 </td>
 <td>
 <p>Large Tablet</p>
@@ -44,17 +44,17 @@ Tablets are a versatile form factor that overlap the smartphone and notebook ind
 <td bgcolor="EEEEEE"><p>Key Features</p></td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Low cost</p>
-<p style="margin: .75em 0 .75em 0;">[Continuum for Phones](../device-experiences/continuum-phone.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/continuum-phone.md" data-raw-source="[Continuum for Phones](../device-experiences/continuum-phone.md)">Continuum for Phones</a></p>
 </td>
 <td>
-<p style="margin: .75em 0 .75em 0;">[Battery Life 8+ hours](../component-guidelines/battery.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/battery.md" data-raw-source="[Battery Life 8+ hours](../component-guidelines/battery.md)">Battery Life 8+ hours</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/docking.md" data-raw-source="[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)">Wired and Wireless Docking and Casting (USB-C; Miracast)</a></p>
 </td>
 <td>
 <p style="margin: .75em 0 .75em 0;">Ruggedized for commercial and educational use</p>
-<p style="margin: .75em 0 .75em 0;">[Inking/Pen Support](../component-guidelines/pen-devices.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Windows Hello](../device-experiences/windows-hello.md)</p>
-<p style="margin: .75em 0 .75em 0;">[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)</p>
+<p style="margin: .75em 0 .75em 0;"><a href="../component-guidelines/pen-devices.md" data-raw-source="[Inking/Pen Support](../component-guidelines/pen-devices.md)">Inking/Pen Support</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/windows-hello.md" data-raw-source="[Windows Hello](../device-experiences/windows-hello.md)">Windows Hello</a></p>
+<p style="margin: .75em 0 .75em 0;"><a href="../device-experiences/docking.md" data-raw-source="[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)">Wired and Wireless Docking and Casting (USB-C; Miracast)</a></p>
 </td>
 </tr>
 <tr>

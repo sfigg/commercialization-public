@@ -29,9 +29,9 @@ Initializes a new instance of the [PackageDBReaderException Class](packagedbread
 
 `public PackageDBReaderException (`
 
-          `string message,`
+          `string message,`
 
-          `Exception except`
+          `Exception except`
 
 `)`
 
@@ -46,9 +46,9 @@ A string that represents the message for the exception.
 
 An exception object.
 
- 
+ 
 
- 
+ 
 
 
 

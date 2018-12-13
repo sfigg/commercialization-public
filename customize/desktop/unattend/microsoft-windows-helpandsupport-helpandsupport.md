@@ -38,33 +38,33 @@ For more information on how OEMs can include their customer support contact info
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport-logo.md" data-raw-source="[Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md)">Logo</a></p></td>
 <td><p>Specifies the path of an image file that contains the logo of the OEM or organization.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LogoURL](microsoft-windows-helpandsupport-helpandsupport-logourl.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport-logourl.md" data-raw-source="[LogoURL](microsoft-windows-helpandsupport-helpandsupport-logourl.md)">LogoURL</a></p></td>
 <td><p>Specifies the URL for a support page for the OEM or organization.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport-manufacturer.md" data-raw-source="[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)">Manufacturer</a></p></td>
 <td><p>Specifies the name of the OEM.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SearchContent](microsoft-windows-helpandsupport-helpandsupport-searchcontent.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport-searchcontent.md" data-raw-source="[SearchContent](microsoft-windows-helpandsupport-helpandsupport-searchcontent.md)">SearchContent</a></p></td>
 <td><p>Specifies whether the OEM or organization has provided offline Help content that the system must return in the search results.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SupportSearchURL](microsoft-windows-helpandsupport-helpandsupport-supportsearchurl.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport-supportsearchurl.md" data-raw-source="[SupportSearchURL](microsoft-windows-helpandsupport-helpandsupport-supportsearchurl.md)">SupportSearchURL</a></p></td>
 <td><p>Specifies the URL that the system uses to display a search link on the page of search results.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TileColor](microsoft-windows-helpandsupport-helpandsupport-tilecolor.md)</p></td>
+<td><p><a href="microsoft-windows-helpandsupport-helpandsupport-tilecolor.md" data-raw-source="[TileColor](microsoft-windows-helpandsupport-helpandsupport-tilecolor.md)">TileColor</a></p></td>
 <td><p>Specifies the RGB background color of the tile for the OEM or organization on the <strong>Help and Support</strong> home page.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -101,9 +101,9 @@ The following example shows how to set values for customizing the **Help and Sup
 
 [OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
- 
+ 
 
- 
+ 
 
 
 

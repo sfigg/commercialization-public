@@ -124,9 +124,9 @@ The following is the sample blob in clear text.
 
 A complete report descriptor example with the feature report containing the certification blob is shown in [Single Finger Hybrid Mode Report Descriptor](single-finger-hybrid-mode-report-descriptor.md).
 
- 
+ 
 
- 
+ 
 
 
 

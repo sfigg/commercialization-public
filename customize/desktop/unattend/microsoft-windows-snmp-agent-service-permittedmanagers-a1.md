@@ -22,7 +22,7 @@ ms.topic: article
 
 If a host is specified in `A1`, the computer accepts SNMP requests only from that host. You can specify either the host computer name or the IP address for the host. It is recommended that `Host` be used as the host computer name.
 
-You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
+You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
 ## Values
 
@@ -38,17 +38,16 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 <td><p>Specifies the host from which the computer accepts SNMP packets. <em>A1</em> is a string.</p>
 <p>The default value is <strong>localhost</strong>, which specifies that the computer accepts SNMP requests from any host.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The <code>A1</code> setting accepts either <strong>localhost</strong> or a single host. Adding multiple hosts is not supported.</p>
+<strong>Note</strong><br/><p>The <code>A1</code> setting accepts either <strong>localhost</strong> or a single host. Adding multiple hosts is not supported.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 This string type supports empty elements.
 
@@ -104,9 +103,9 @@ The following XML output shows how to set SNMP.
 
 [PermittedManagers](microsoft-windows-snmp-agent-service-permittedmanagers.md)
 
- 
 
- 
+
+
 
 
 

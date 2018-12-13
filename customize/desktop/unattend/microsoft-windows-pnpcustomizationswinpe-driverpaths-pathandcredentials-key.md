@@ -23,7 +23,7 @@ ms.topic: article
 **Note**  
 The value for `Key` is added to the answer file as an attribute of the [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md) element. The attribute `wcm:keyValue` is used to identify each unique device-driver path. For example, you can specify three different device-driver paths by using the `Key` values of **Path1**, **Path2**, and **Path3**.
 
- 
+ 
 
 ## Values
 
@@ -41,7 +41,7 @@ The value for `Key` is added to the answer file as an attribute of the [PathAndC
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -95,9 +95,9 @@ The following XML output specifies the UNC paths to two additional locations for
 
 [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

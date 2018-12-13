@@ -32,12 +32,12 @@ ms.topic: article
 <tr class="odd">
 <td><p><em>JoinWorkgroup</em></p></td>
 <td><p>Specifies the name of the workgroup to apply to a computer during Windows Setup. <em>JoinWorkgroup</em> is a string and must be a valid NetBIOS name.</p>
-<p>You can specify either a domain to join or a workgroup to assign, by using [JoinDomain](microsoft-windows-unattendedjoin-identification-joindomain.md) or <em>JoinWorkgroup</em> settings, respectively. However, only one of these settings can be present in an answer file. If both are present in an answer file, the value for <em>JoinDomain</em> is used, and <em>JoinWorkgroup</em> is ignored.</p></td>
+<p>You can specify either a domain to join or a workgroup to assign, by using <a href="microsoft-windows-unattendedjoin-identification-joindomain.md" data-raw-source="[JoinDomain](microsoft-windows-unattendedjoin-identification-joindomain.md)">JoinDomain</a> or <em>JoinWorkgroup</em> settings, respectively. However, only one of these settings can be present in an answer file. If both are present in an answer file, the value for <em>JoinDomain</em> is used, and <em>JoinWorkgroup</em> is ignored.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -72,9 +72,9 @@ The following XML output shows how to set the identification settings.
 
 [Identification](microsoft-windows-unattendedjoin-identification.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -96,25 +96,25 @@ Sleep study traces are automatically generated on mobile for screen off sessions
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Modern standby SleepStudy report](modern-standby-sleepstudy-report.md)</p></td>
+<td><p><a href="modern-standby-sleepstudy-report.md" data-raw-source="[Modern standby SleepStudy report](modern-standby-sleepstudy-report.md)">Modern standby SleepStudy report</a></p></td>
 <td><p>Describes the contents of a modern standby SleepStudy report.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Modern standby SleepStudy common problem examples](modern-standby-sleepstudy-common-problem-examples.md)</p></td>
+<td><p><a href="modern-standby-sleepstudy-common-problem-examples.md" data-raw-source="[Modern standby SleepStudy common problem examples](modern-standby-sleepstudy-common-problem-examples.md)">Modern standby SleepStudy common problem examples</a></p></td>
 <td><p>Describes how to use the modern standby SleepStudy report to investigate problems such as high email or network activity, high battery drain, and inability to enter DRIPS.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Modern standby SleepStudy battery information](modern-standby-sleepstudy-battery-information.md)</p></td>
+<td><p><a href="modern-standby-sleepstudy-battery-information.md" data-raw-source="[Modern standby SleepStudy battery information](modern-standby-sleepstudy-battery-information.md)">Modern standby SleepStudy battery information</a></p></td>
 <td><p>Outlines what type of battery information is included in the modern standby SleepStudy report.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

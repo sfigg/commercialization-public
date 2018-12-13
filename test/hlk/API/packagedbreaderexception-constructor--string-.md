@@ -29,7 +29,7 @@ Initializes a new instance of the [PackageDBReaderException Class](packagedbread
 
 `public PackageDBReaderException (`
 
-          `string message`
+          `string message`
 
 `)`
 
@@ -40,9 +40,9 @@ Initializes a new instance of the [PackageDBReaderException Class](packagedbread
 
 A string that represents the message for the exception.
 
- 
+ 
 
- 
+ 
 
 
 

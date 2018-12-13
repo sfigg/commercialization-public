@@ -149,13 +149,13 @@ The source code for the TianoCore vulnerability is SecurityPkg\\SecurityPkg.dec 
 
 ```
 ## Pcd for OptionRom.
-  #  Image verification policy settings:
-  #  ALWAYS_EXECUTE                         0x00000000
-  #  NEVER_EXECUTE                          0x00000001
-  #  ALLOW_EXECUTE_ON_SECURITY_VIOLATION    0x00000002
-  #  DEFER_EXECUTE_ON_SECURITY_VIOLATION    0x00000003
-  #  DENY_EXECUTE_ON_SECURITY_VIOLATION     0x00000004
-  #  QUERY_USER_ON_SECURITY_VIOLATION       0x00000005
+  #  Image verification policy settings:
+  #  ALWAYS_EXECUTE                         0x00000000
+  #  NEVER_EXECUTE                          0x00000001
+  #  ALLOW_EXECUTE_ON_SECURITY_VIOLATION    0x00000002
+  #  DEFER_EXECUTE_ON_SECURITY_VIOLATION    0x00000003
+  #  DENY_EXECUTE_ON_SECURITY_VIOLATION     0x00000004
+  #  QUERY_USER_ON_SECURITY_VIOLATION       0x00000005
 gEfiSecurityPkgTokenSpaceGuid.PcdOptionRomImageVerificationPolicy|0x00|UINT32|0x00000001
 ```
 
@@ -177,7 +177,7 @@ The PCD override should be placed under the `[PcdsFixedAtBuild]` section of the 
 **Note**  
 This vulnerability may exist in early implementations of UEFI Secure Boot BIOS from independent BIOS vendors. Contact your BIOS vendor to determine if your version may be impacted.
 
- 
+ 
 
 ## <span id="WhoIsAffected"></span><span id="whoisaffected"></span><span id="WHOISAFFECTED"></span>3. Who is affected?
 
@@ -234,7 +234,7 @@ Steps for testing:
 **Note**  
 It doesn’t matter if the UEFI option ROM driver is signed or not, the option ROM will not load when DB is null and SB is enabled (PK and KEK are enrolled).
 
- 
+ 
 
 Please refer to sample scripts available in the WHCK for generating the PK and KEK. You can download the scripts from here: <http://go.microsoft.com/fwlink/?LinkId=321292> . Appendix B has sample scripts and more details.
 
@@ -333,7 +333,7 @@ Below are steps used to generate the test PK, KEK and setting Db to NULL. Make s
 **Note**  
 We set the Secure Boot variable – Db, KEK and PK in reverse order so we don’t have to sign the UEFI bin files.
 
- 
+ 
 
 Prior to this step the PC should be in setup mode.
 
@@ -502,9 +502,9 @@ Prior to this step the PC should be in setup mode.
 
 [Validating Windows UEFI Firmware Update Platform Functionality](validating-windows-uefi-firmware-update-platform-functionality.md)
 
- 
+ 
 
- 
+ 
 
 
 

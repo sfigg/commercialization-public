@@ -19,9 +19,9 @@ Windows Precision Touchpads (or legacy touchpads that have opted in for enable/d
 
 The state of the touchpad is toggled when the following keyboard combination is reported to the host: **CTRL + WIN + F24**.
 
- 
+ 
 
- 
+ 
 
 
 

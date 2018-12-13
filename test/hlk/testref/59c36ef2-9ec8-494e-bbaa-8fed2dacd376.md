@@ -58,7 +58,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see <a href="https://docs.microsoft.com/en-us/windows-hardware/test/hlk/user/troubleshooting-windows-hlk-test-failures" >Troubleshooting Windows HLK Test Failures.</a>
 
 For troubleshooting information, see [Troubleshooting Device.Imaging Testing](troubleshooting-deviceimaging-testing.md).
 
@@ -79,15 +79,4 @@ Any attempt to change the system default printer while the test is running might
 | **LLU\_NetAccessOnly** | Logical Local User: Network Access only. |
 | **TestExecutableName** | Test Executable name.                    |
 | **WDKPrinterName**     | Printer name.                            |
-
- 
-
- 
-
- 
-
-
-
-
-
 

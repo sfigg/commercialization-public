@@ -22,9 +22,9 @@ ms.topic: article
 -   [Device.Portable Testing Prerequisites](deviceportable-testing-prerequisites.md)
 -   [Troubleshooting Device.Portable Testing](troubleshooting-deviceportable-testing.md)
 
- 
+ 
 
- 
+ 
 
 
 

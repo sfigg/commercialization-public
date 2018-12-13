@@ -32,9 +32,9 @@ For the off-SoC camera components, which include the sensor, auto-focuser, and f
 
 The system integrator must also provide one or more device drivers to directly manage the sensor, auto-focuser, and flash hardware. Due to camera subsystem complexity and the dependencies between the on-SoC and off-SoC components, the camera sensor and flash drivers are typically provided by the SoC vendor. The system integrator must also provide a camera controller driver, which is a kernel-mode AVStream minidriver. The camera controller driver is responsible for exposing the camera devices to the Windows multimedia subsystem. However, we recommend that this driver not directly control any platform hardware due to complexities in the AVStream minidriver model. Instead, we recommend that the camera controller driver should rely on the other camera component drivers for access to hardware resources and device power management. That is, the camera controller driver should communicate with the driver that controls the on-SoC image processing hardware and the driver or drivers that control the off-SoC sensor and flash units.
 
- 
+ 
 
- 
+ 
 
 
 

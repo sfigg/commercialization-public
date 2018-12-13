@@ -42,7 +42,7 @@ This method retrieves a particular dimension value.
 
 `Public MustOverride Function GetPropertyByName ( _`
 
-          `propertyName As String _`
+          `propertyName As String _`
 
 `) As String`
 
@@ -50,7 +50,7 @@ This method retrieves a particular dimension value.
 
 `public abstract string GetPropertyByName (`
 
-          `string propertyName`
+          `string propertyName`
 
 `)`
 
@@ -59,7 +59,7 @@ This method retrieves a particular dimension value.
 
 *propertyName*
 
-     The name of the property to get.
+     The name of the property to get.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -78,9 +78,9 @@ This is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ ms.topic: article
 -   [Monitor - Digital link protection test](109e4e03-e977-44df-8049-d0d1ea317e45.md)
 -   [Test for EDID Requirements (Manual)](b97fb72d-0f43-48e1-82e3-3af4c5bc96ca.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,11 +23,11 @@ This section describes the tasks that you must complete before you test a wirele
 
 The following hardware is required for wireless router testing.
 
--   Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](..\getstarted\windows-hlk-getting-started.md)
+- Basic Windows HLK test setup (Controller, Studio, and client systems). See [Windows HLK Getting Started](../getstarted/windows-hlk-getting-started.md)
 
--   Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](..\getstarted\windows-hlk-prerequisites.md) for more information.
+- Four test computers. Each test computer must meet the Windows HLK prerequisites. See [Windows HLK Prerequisites](../getstarted/windows-hlk-prerequisites.md) for more information.
 
--   At least two 100-megabit switches (more may be required depending on the number of available Ethernet ports on the DUT).
+- At least two 100-megabit switches (more may be required depending on the number of available Ethernet ports on the DUT).
 
 ## <span id="BKMK_HCK_wRouter_sR"></span><span id="bkmk-hck-wrouter-sr"></span><span id="BKMK_HCK_WROUTER_SR"></span>Software requirements
 
@@ -45,11 +45,11 @@ Among the four test computers, there are three individual configurations. The te
 
 ![wireless router test configuration](images/hck-win8-lan-wireless-router-config.png)
 
->[!NOTE]
->  
-In the above illustration, **Y** indicates a computer that is wirelessly connected to the router.
+> [!NOTE]
+> 
+> In the above illustration, **Y** indicates a computer that is wirelessly connected to the router.
 
- 
+ 
 
 Before you being to test your wireless router, configure each test computer and the machine poll according to the procedures described in the next sections.
 
@@ -132,7 +132,7 @@ The test computers identified as LAN1 and LAN2 have an identical setup procedure
     </tbody>
     </table>
 
-     
+     
 
 10. For each machine, run **ipconfig** at a command prompt to verify that each interface has correctly assigned IP address.
 
@@ -203,7 +203,7 @@ The test computer identifies as WAN should be setup using the following steps:
     </tbody>
     </table>
 
-     
+     
 
 7.  Run **ipconfig** at a command prompt to verify that each interface has a correctly assigned IP address.
 
@@ -258,7 +258,7 @@ This computer should have Windows 7 client x86 or Windows 8 client x86 and three
     </tbody>
     </table>
 
-     
+     
 
 6.  Run **ipconfig** at a command prompt to verify that each interface has correctly assigned IP address.
 
@@ -423,15 +423,15 @@ Test sends and receives data over TCP through router with Explicit Congestion No
 
 These tests can be identified by the presence of "TotalBytesSent" or "TotalBytesReceived" in their names. The tests should be run one at a time. Although the sequence is not important it is recommended that the Basic logo tests are ran first.
 
->[!IMPORTANT]
->  
-Before running the tests, please perform the following on each LAN-side machine. This is required to make sure that the LAN-side machines can resolve the correct IP address of the WAN machine.
+> [!IMPORTANT]
+> 
+> Before running the tests, please perform the following on each LAN-side machine. This is required to make sure that the LAN-side machines can resolve the correct IP address of the WAN machine.
 
 -   The user logged on to the console of the machines has administrator privileges.
 
 -   UPnP is enabled on the IGD.
 
- 
+ 
 
 ### <span id="Wi-Fi_performance_test"></span><span id="wi-fi_performance_test"></span><span id="WI-FI_PERFORMANCE_TEST"></span>Wi-Fi performance test
 
@@ -476,7 +476,7 @@ For the Windows 7 and Windows 8 certification, there are only two available wire
 </tbody>
 </table>
 
- 
+ 
 
 **Test Case and Wireless Profile Mapping Table:**
 
@@ -503,7 +503,7 @@ For the Windows 7 and Windows 8 certification, there are only two available wire
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="XBOX_Live_router_certification_tool__2NIC__and_24-Hour_UDP_traffic_test"></span><span id="xbox_live_router_certification_tool__2nic__and_24-hour_udp_traffic_test"></span><span id="XBOX_LIVE_ROUTER_CERTIFICATION_TOOL__2NIC__AND_24-HOUR_UDP_TRAFFIC_TEST"></span>XBOX Live router certification tool (2NIC) and 24-Hour UDP traffic test
 
@@ -514,9 +514,9 @@ This test sets up and executes the 2 NIC router certification test. It will star
 
 UPnP™ is a certification mark of the UPnP™ Implementers Corporation.
 
- 
+ 
 
- 
+ 
 
 
 

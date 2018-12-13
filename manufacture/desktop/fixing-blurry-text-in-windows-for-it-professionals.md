@@ -71,7 +71,7 @@ Windows 8.1 distinguishes between three classes of applications.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="unaware"></span><span id="UNAWARE"></span>What you can do about apps that aren’t DPI-aware
 
@@ -99,7 +99,7 @@ You can manage bulk-shimming of applications by using the Compatadmin tool, whic
 **Important**  
 Disabling display scaling can result in content that is too small to be read or interacted with reliably; it can also produce visual artifacts such as clipped or overlapped content. These issues depend on details of how the app was written. Consequently, we recommend only changing this setting if absolutely required. This shim should not be applied to apps that do not require it, or to devices that do not require it.
 
- 
+ 
 
 ### <span id="impractical"></span><span id="IMPRACTICAL"></span>Use Windows 8 DPI scaling (not generally recommended)
 
@@ -163,7 +163,7 @@ Windows supports a full spectrum of screen sizes, resolutions, and therefore DPI
 </tbody>
 </table>
 
- 
+ 
 
 As shown in the preceding table, most of the issues manifest at the 125% scaling ratio. For this reason, any mitigation should target apps that aren’t DPI-aware on 125% scaling systems only.
 
@@ -174,9 +174,9 @@ For information about how to identify 125% systems or how to revert to Windows 
 
 [High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 
- 
+ 
 
- 
+ 
 
 
 

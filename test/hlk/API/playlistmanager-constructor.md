@@ -29,7 +29,7 @@ This constructor initializes a new instance of the [PlaylistManager Class](playl
 
 `public PlaylistManager(`
 
-          `Project project`
+          `Project project`
 
 `)`
 
@@ -40,9 +40,9 @@ This constructor initializes a new instance of the [PlaylistManager Class](playl
 
 The [Project](project-class.md) to support with playlist functionality
 
- 
+ 
 
- 
+ 
 
 
 

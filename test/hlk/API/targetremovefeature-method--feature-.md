@@ -38,7 +38,7 @@ ms.topic: article
 
 `Public MustOverride Sub RemoveFeature ( _`
 
-          `feature As Feature _`
+          `feature As Feature _`
 
 `)`
 
@@ -46,7 +46,7 @@ ms.topic: article
 
 `Public abstract void RemoveFeature (`
 
-          `Feature feature`
+          `Feature feature`
 
 `)`
 
@@ -55,7 +55,7 @@ ms.topic: article
 
 *feature*
 
-     The feature to remove.
+     The feature to remove.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -71,9 +71,9 @@ This method is not supported when the project is connected to a package.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

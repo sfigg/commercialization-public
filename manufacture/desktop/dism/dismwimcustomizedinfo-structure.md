@@ -55,16 +55,16 @@ Members
 | Supported host platforms: | DISM API can be used on any operating system supported by the Windows Assessment and Deployment Kit (Windows ADK). For more information, see the Windows ADK Technical Reference. |
 | Supported image platforms: | Windows 7, Windows Server 2008 R2, Windows Preinstallation Environment 3.0, Windows 8, Windows Server 2012, Windows Preinstallation Environment (Windows PE) 4.0 |
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
 
 [DismImageInfo](dismimageinfo-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

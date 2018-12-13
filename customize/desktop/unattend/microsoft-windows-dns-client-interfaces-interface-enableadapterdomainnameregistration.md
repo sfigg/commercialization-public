@@ -40,7 +40,7 @@ ms.topic: article
 </tbody>
 </table>
 
- 
+ 
 
 ## Parent Hierarchy
 
@@ -98,9 +98,9 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 
 [Interface](microsoft-windows-dns-client-interfaces-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

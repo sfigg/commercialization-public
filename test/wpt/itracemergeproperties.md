@@ -48,30 +48,30 @@ The following table describes functions that this interface provides.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IsEqual](isequal-itracemergeproperties.md)</p></td>
+<td><p><a href="isequal-itracemergeproperties.md" data-raw-source="[IsEqual](isequal-itracemergeproperties.md)">IsEqual</a></p></td>
 <td><p>Loads the properties from the specified file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LoadFromString](loadfromstring-itracemergeproperties.md)</p></td>
+<td><p><a href="loadfromstring-itracemergeproperties.md" data-raw-source="[LoadFromString](loadfromstring-itracemergeproperties.md)">LoadFromString</a></p></td>
 <td><p>Loads the properties from the specified string.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IsEqual](isequal-itracemergeproperties.md)</p></td>
+<td><p><a href="isequal-itracemergeproperties.md" data-raw-source="[IsEqual](isequal-itracemergeproperties.md)">IsEqual</a></p></td>
 <td><p>Compares two <strong>ITraceMergeProperties</strong> objects.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

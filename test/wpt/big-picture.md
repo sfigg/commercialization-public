@@ -29,9 +29,9 @@ This video introduces you to the Big Picture tab of the Microsoft Store App Anal
 
 [Microsoft Store App Analysis](microsoft-store-app-analysis.md)
 
- 
+ 
 
- 
+ 
 
 
 

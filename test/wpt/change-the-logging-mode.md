@@ -30,7 +30,7 @@ This procedure shows how to change the Windows Performance Recorder (WPR) loggi
 **Caution**  
 For longer recordings, select **Memory**. When you select **File**, the file can grow very large because the available disk space is the only limitation to file size. If the file is too large, you might not be able to analyze it in Windows Performance Analyzer (WPA).
 
- 
+ 
 
 ## Related topics
 
@@ -39,9 +39,9 @@ For longer recordings, select **Memory**. When you select **File**, the file can
 
 [Logging Mode](logging-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

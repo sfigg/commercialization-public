@@ -43,9 +43,9 @@ ms.topic: article
 
 The default constructor initializes any fields to their default values.
 
- 
+ 
 
- 
+ 
 
 
 

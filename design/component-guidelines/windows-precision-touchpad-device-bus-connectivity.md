@@ -54,7 +54,7 @@ This entry should specify the following:
 | I²C Slave Address              | The I²C slave address for the device must be specified to allow the host to address it (for example, “0x6F”)                                                                            |
 | I²C Speed                      | The maximum speed supported by both the device and the I²C controller should be specified here to ensure communications performance. This should not be any lower than 400KHz (0x61A80) |
 
- 
+ 
 
 ## USB devices
 
@@ -69,9 +69,9 @@ When connecting to a USB hub, it is important to understand the bandwidth demand
 
 If a USB bridge is elected for connecting an I²C Windows Precision Touchpad to the host, the bridge shall expose the Windows Precision Touchpad as a distinct device node together with the device’s unique attributes (wVendorID, wProductID, wVersionID).
 
- 
+ 
 
- 
+ 
 
 
 

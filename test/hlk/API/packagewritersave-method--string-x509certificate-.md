@@ -42,9 +42,9 @@ This method saves a package and digitally signs it using an X509-compliant certi
 
 `Public Sub Save ( _`
 
-          `packageFile As String, _`
+          `packageFile As String, _`
 
-          `certificate As X509Certificate`
+          `certificate As X509Certificate`
 
 `) `
 
@@ -52,9 +52,9 @@ This method saves a package and digitally signs it using an X509-compliant certi
 
 `public void Save (`
 
-          `string packageFile,`
+          `string packageFile,`
 
-          `X509Certificate certificate`
+          `X509Certificate certificate`
 
 `)`
 
@@ -63,20 +63,20 @@ This method saves a package and digitally signs it using an X509-compliant certi
 
 *packageFile*
 
-     The full file name specifying where to write the signed package.
+     The full file name specifying where to write the signed package.
 
 *certificate*
 
-     The certificate to use for signing the package.
+     The certificate to use for signing the package.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -169,7 +169,7 @@ The following table lists server roles and specifies whether the roles support S
 </tbody>
 </table>
 
- 
+ 
 
 ⁽¹⁾ NPAS includes Health Registration Authority (HRA), Network Policy Server (NPS), and Host Credential Authorization Protocol (HCAP).
 
@@ -194,9 +194,9 @@ The following table lists server roles and specifies whether the roles support S
 
 [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md)
 
- 
+ 
 
- 
+ 
 
 
 

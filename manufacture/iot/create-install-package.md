@@ -7,13 +7,12 @@ title: 'Create and Install a Package'
 ms.author: pabab
 ms.date: 10/15/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 
 # Create and install a package
-[Packages](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide#Packages) are the logical building blocks of Windows 10 IoT Core. From device drivers to system files, every component must be contained in a package. This is the smallest servicable unit on the device.
+[Packages](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide#Packages) are the building blocks of Windows 10 IoT Core. From device drivers to system files, every component must be packaged to install on a device. Packages are the smallest servicable units on the device.
 
 ## Step 1: Get set up
 
@@ -74,7 +73,7 @@ Below is an example for specifying files and reg keys.
 
 Use [Add-IoTAppxPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTAppxPackage.md) to generate the .wm.xml file for a given appx file. This tool expects the appx dependencies in the sub directory named "dependencies" in the folder containing the appx file.
 
-    ``` powershell
+    ```PowerShell
     Add-IoTAppxPackage HelloWorld.appx fga Appx.HelloWorld
     (or) newappxpkg HelloWorld.appx fga Appx.HelloWorld
     New-IoTCabPackage Appx.HelloWorld
@@ -88,7 +87,7 @@ See [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/mas
 
 When you have to install multiple applications signed with same certificate, you can add the certificate along with one app and for the remaining apps, you can skip adding the certificate using the skipcert flag.
 
-    ``` powershell
+    ```PowerShell
     newappxpkg AnotherApp.appx none Appx.AnotherApp skipcert
     ```
 
@@ -101,7 +100,7 @@ See also
 
 The driver package contains the references (InfSource) to the Inf file for the driver. You can author the driver .wm.xml file manually or use [Add-IoTDriverPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md) that generates package xml based on the input inf file.
 
-    ``` powershell
+    ```PowerShell
     Add-IoTDriverPackage C:\Mydriver\GPIO.inf MyDriver.GPIO
     (or) newdrvpkg C:\Mydriver\GPIO.inf MyDriver.GPIO
     New-IoTCabPackage MyDriver.GPIO
@@ -118,13 +117,10 @@ See also
 
 ## Step 3: Install on device
 ---
-
 * Connect to the device ([using SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/SSH) or [using Powershell](https://docs.microsoft.com/windows/iot-core/connect-your-device/powershell))
 * Copy the <filename>.cab file to the device to a directory say C:\OemInstall
 * Initiate staging of the package using `applyupdate -stage C:\OemInstall\<filename>.cab`. Note that this step is be repeated for each package, when you have multiple packages to install.
 * Commit the packages using `applyupdate -commit`.
-
 > [!NOTE]
 > You can also install the cab using **Windows Update > CAB Install** option in Windows Device Portal.
-
 The device will reboot into the update OS (showing gears) to install the packages and will reboot again to main OS. This process can take a few minutes.

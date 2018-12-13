@@ -52,9 +52,9 @@ To resolve this issue, do one of the following:
 
 [Windows Assessment Toolkit](windows-assessment-toolkit-technical-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

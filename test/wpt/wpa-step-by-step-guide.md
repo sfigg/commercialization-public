@@ -123,9 +123,9 @@ You can also search the list of issues by using the Search options at the top of
 
 [WPA Quick Start Guide](wpa-quick-start-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

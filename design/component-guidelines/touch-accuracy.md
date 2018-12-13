@@ -48,9 +48,9 @@ Logo3.exe -config PhysicalInputPosition.json
 **Passing criteria**
 
 95% of the iterations must pass in order to complete with passing status.
- 
+ 
 
- 
+ 
 
 
 

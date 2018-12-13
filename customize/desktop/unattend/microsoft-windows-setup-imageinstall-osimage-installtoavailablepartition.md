@@ -44,14 +44,14 @@ For unattended installations, you must specify either the [InstallTo](microsoft-
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 In the [OSImage](microsoft-windows-setup-imageinstall-osimage.md) setting, if you set the **InstallToAvailablePartition** setting to **true**, do not set the **InstallTo** setting.
 
 If both **InstallToAvailablePartition** and **InstallTo** are set the installation will fail.
 
- 
+ 
 
 ## Values
 
@@ -75,7 +75,7 @@ If both **InstallToAvailablePartition** and **InstallTo** are set the installati
 </tbody>
 </table>
 
- 
+ 
 
 ## Valid Configuration Passes
 
@@ -129,9 +129,9 @@ The following XML output shows how to set the **InstallToAvailablePartition** se
 
 [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md)
 
- 
+ 
 
- 
+ 
 
 
 

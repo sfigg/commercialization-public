@@ -42,7 +42,7 @@ You can run an assessment to collect traces on one PC, and analyze the data on a
     **Note**  
     Collecting trace files without analysis is not available for all jobs and assessments.
 
-     
+     
 
 ## Run analysis on another device
 
@@ -70,9 +70,9 @@ You can load symbols on the PC where you want to analyze trace files. For more i
 
 [Import results](import-results.md)
 
- 
+ 
 
- 
+ 
 
 
 

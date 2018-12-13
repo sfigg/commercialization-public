@@ -24,7 +24,7 @@ Microsoft provides a tool set for flashing images to devices. This tool set incl
 
 -   For flashing images to devices during manufacturing, OEMs can build their own flashing tools by using the information provided in [Developing custom OEM flashing tools](developing-custom-oem-flashing-tools.md) or by using ffutool.exe. If you use ffutool to flash your image, it might be slower than other flashing tools.
 
- 
+ 
 
 ## <a href="" id="initialdevicesidesetup"></a>Initial device-side setup
 
@@ -42,7 +42,7 @@ To prepare a device for flashing with a Windows 10 Mobile image, perform the fo
 **Note**  
 These steps only need to be performed once on each device. After these steps are completed, you will be able to flash different images to the device
 
- 
+ 
 
 ## <a href="" id="hostsidesetup"></a>Host-side setup
 
@@ -101,14 +101,14 @@ After the device-side and host-side setup is complete, perform the following ste
     </tbody>
     </table>
 
-     
+     
 
 You can flash more than one device at a time by using ffutool.exe. To do this, make sure that all devices are connecting before running ffutool.exe. Also, we recommend that you use a USB card that contains a dedicated root hub per port so an issue flashing one device does not affect all devices.
 
 **Note**  
 Flashing speed will decrease as you add devices.
 
- 
+ 
 
 ## <a href="" id="validatingplatformid"></a>Validations performed by the Microsoft flashing tool
 
@@ -138,7 +138,7 @@ In a non-retail image, OEMs can disable the device platform validation for flash
 **Important**  
 The device platform validation for flashing must not be disabled in retail images.
 
- 
+ 
 
 ## FFU tool error codes
 
@@ -168,22 +168,22 @@ The first hexadecimal number is an event code that indicates the type of flashin
 <tr class="odd">
 <td><p>0xC</p></td>
 <td><p>While applying the image to disk, a read failed to return all of the blocks specified in the current data descriptor.</p>
-<p>This error is typically cause by a corrupted image. The image will normally need to be rebuilt. For more information, see [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md).</p></td>
+<p>This error is typically cause by a corrupted image. The image will normally need to be rebuilt. For more information, see <a href="building-a-phone-image-using-imggencmd.md" data-raw-source="[Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md)">Building a phone image using ImgGen.cmd</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x18</p></td>
 <td><p>While initializing hash checks, a catalog signature check failed.</p>
-<p>When this error occurs, it is typically related to the signing of the image. For more information, see [Sign a full flash update (FFU) image](sign-a-full-flash-update--ffu--image.md).</p></td>
+<p>When this error occurs, it is typically related to the signing of the image. For more information, see <a href="sign-a-full-flash-update--ffu--image.md" data-raw-source="[Sign a full flash update (FFU) image](sign-a-full-flash-update--ffu--image.md)">Sign a full flash update (FFU) image</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x1C</p></td>
 <td><p>One or more write descriptors refer to invalid disk locations.</p>
-<p>This error typically indicates that the image was built for a phone with more storage than the current phone actually has. Either locate the proper image or update the image that you have by reducing the MinSectorCount specified in OEMDevicePlatform.xml. For more information, see [Set device platform information](set-device-platform-information.md).</p></td>
+<p>This error typically indicates that the image was built for a phone with more storage than the current phone actually has. Either locate the proper image or update the image that you have by reducing the MinSectorCount specified in OEMDevicePlatform.xml. For more information, see <a href="set-device-platform-information.md" data-raw-source="[Set device platform information](set-device-platform-information.md)">Set device platform information</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Additional errors**
 
@@ -278,16 +278,16 @@ The first hexadecimal number is an event code that indicates the type of flashin
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Building and flashing images](building-and-flashing-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ The **Analysis Assistant** tab is the central workspace of Windows Performance A
 
 [Analysis Tab](analysis-tab.md)
 
- 
+ 
 
- 
+ 
 
 
 

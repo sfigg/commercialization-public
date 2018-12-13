@@ -371,11 +371,11 @@ $ObjectModel = [Reflection.Assembly]::LoadFrom($env:WTTSTDIO + "Microsoft.Window
     [Microsoft.Windows.Kits.Hardware.ObjectModel.Submission.PackageManager]::Sign($packageFile, $cert)
 ```
 
->[!NOTE]
->  
-When signing some (large) packages using PowerShell, you might see an exception such as "Unable to determine the identity of domain". When this exception occurs, please use the managed API (see [http://msdn.microsoft.com/en-us/library/windows/hardware/jj123504.aspx\#BKMK\_CS\_SignPackage](http://msdn.microsoft.com/en-us/library/windows/hardware/jj123504.aspx)) as a work-around."
+> [!NOTE]
+> 
+> When signing some (large) packages using PowerShell, you might see an exception such as "Unable to determine the identity of domain". When this exception occurs, please use the managed API (see [http://msdn.microsoft.com/en-us/library/windows/hardware/jj123504.aspx\#BKMK\_CS\_SignPackage](http://msdn.microsoft.com/en-us/library/windows/hardware/jj123504.aspx)) as a work-around."
 
- 
+ 
 
 ### <span id="BKMK_CheckOS"></span><span id="bkmk-checkos"></span><span id="BKMK_CHECKOS"></span>Determine for what operating systems a driver passes the signing checks
 
@@ -438,9 +438,9 @@ $ObjectModel = [Reflection.Assembly]::LoadFrom($env:WTTSTDIO + "Microsoft.Window
     $Manager.Dispose()
 ```
 
- 
+ 
 
- 
+ 
 
 
 

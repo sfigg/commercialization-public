@@ -29,7 +29,7 @@ Here is an example how to create of a custom profile XML file. Suppose you want 
 | Microsoft-WindowsPhone-TileHelper          | B3448AD3-4BE8-4F7C-892B-EA1D69B14ADB |
 | Microsoft-WindowsPhone-AccessoryManagerSvc | 68EC658D-C373-4166-996F-D8A757108B27 |
 
- 
+ 
 
 This custom profile XML file describes an event collector that has an ID of EventCollector\_TileManager. The event collector contains your two providers, which are specified in the &lt;EventProvider&gt; and &lt;EventProviderId&gt; elements.
 
@@ -67,7 +67,7 @@ This custom profile XML file describes an event collector that has an ID of Even
 
 **Note**  The ETW providers listed in the preceding XML are user-mode components. If your custom profile XML file lists a kernel-mode provider, add NonPagedMemory=”true” to the &lt;EventProvider&gt; element.
 
- 
+ 
 
 For more information about the structure of a custom profile XML file, see [Authoring Recording Profiles](http://msdn.microsoft.com/library/windows/hardware/hh448223.aspx).
 
@@ -88,11 +88,11 @@ Windows 10 Mobile has a limitation of 64 total parallel profiles, of which a va
 
 Another consideration to take into account is that each running profile takes an amount of system memory away from the rest of the OS. So having too many parallel logging sessions may impact performance, especially on low memory devices. This amount of memory can be configured in the profile XML file. The standard included profiles use 8 MB per XML file. When investigating low-memory issues, we recommend running only the profiles that are needed for that specific investigation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

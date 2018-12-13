@@ -57,7 +57,7 @@ Here are the interesting columns in the **CPU Usage (Precise)** table.
 | **SwitchInTime(s)**  | The time when the new thread was switched in.                                                                                                               |
 | **Waits (s)**        | The amount of time a thread waited on a logical or physical resource. The wait ends when **NewThreadId** is signaled by **ReadyingThreadId**.               |
 
- 
+ 
 
 ## Step 1: Capture and open a trace for a UI delay problem
 
@@ -155,7 +155,7 @@ The **NewThreadId** for this step is the thread you identified in Step 2 (Thread
     **Note**  
     You can analyze the 10 seconds of CPU activity using the same methodology described in Exercise 2, Step 4 using the **CPU Usage (sampled)** graph and looking at the **UIDelay.exe** process.
 
-     
+     
 
 6.  To discover what the **NewThreadId** was waiting for, expand the **NewThreadId** group to display the **NewThreadStack**.
 
@@ -188,9 +188,9 @@ While the delay is very small (35 ms), it should be avoided on a UI thread. Keep
 
 Those operations should happen asynchronously on a separate thread and not block the UI.
 
- 
+ 
 
- 
+ 
 
 
 

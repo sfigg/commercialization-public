@@ -31,13 +31,13 @@ ms.topic: article
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, the [Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md) setting must be specified.</p>
+<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, the <a href="microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md" data-raw-source="[Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md)">Credentials</a> setting must be specified.</p>
 <p><em>Path</em> is a string with a maximum length of 259 characters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -90,9 +90,9 @@ The first command runs an application on the local hard drive. The command inclu
 
 [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)
 
- 
+ 
 
- 
+ 
 
 
 

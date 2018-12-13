@@ -110,21 +110,21 @@ The following table describes the functions that this interface provides.
 <td><p>Sets the specified property.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LoadFromFile](loadfromfile.md)</p></td>
+<td><p><a href="loadfromfile.md" data-raw-source="[LoadFromFile](loadfromfile.md)">LoadFromFile</a></p></td>
 <td><p>Loads a profile from the specified file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LoadFromString](loadfromstring.md)</p></td>
+<td><p><a href="loadfromstring.md" data-raw-source="[LoadFromString](loadfromstring.md)">LoadFromString</a></p></td>
 <td><p>Loads a profile from the specified XML profile definition string.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IsEqual](isequal.md)</p></td>
+<td><p><a href="isequal.md" data-raw-source="[IsEqual](isequal.md)">IsEqual</a></p></td>
 <td><p>Compares two <strong>IProfile</strong> objects.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Properties
 
@@ -243,16 +243,16 @@ This interface provides the properties described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Interfaces](interfaces-wprcontrol.md)
 
- 
+ 
 
- 
+ 
 
 
 

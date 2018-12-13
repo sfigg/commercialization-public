@@ -51,17 +51,16 @@ The following sections appear in the DISM configuration list file.
 <td align="left"><p><code>[CompressionExclusionList]</code></p></td>
 <td align="left"><p>Enables you to define the specific files and folders, and also to specify file types, to exclude when you use the <strong>/Compress</strong> argument.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>You can use file or folder matching to exclude a file from compression. You can provide a full path match, or you can use wildcard characters (*). For example, you can use <strong>\WINDOWS\inf\*.pnf</strong> to match a specific type of file, or <strong>\WINDOWS\inf\*</strong> to match a whole folder.</p>
+<strong>Note</strong><br/><p>You can use file or folder matching to exclude a file from compression. You can provide a full path match, or you can use wildcard characters (<em>). For example, you can use <strong>\WINDOWS\inf</em>.pnf</strong> to match a specific type of file, or <strong>\WINDOWS\inf*</strong> to match a whole folder.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Default_Exclusion_List"></span><span id="default_exclusion_list"></span><span id="DEFAULT_EXCLUSION_LIST"></span>Default Exclusion List
 
@@ -147,9 +146,9 @@ where *&lt;configuration list&gt;* provides the complete directory location for 
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
- 
 
- 
+
+
 
 
 

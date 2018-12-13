@@ -83,7 +83,7 @@ taef\\te.exe PenTests.dll /name:\*ContactAccuracy
   taef\\te.exe PenLatencyTests.wsc /name:\*audiotouch
   taef\\te.exe PenLatencyTests.wsc /name:\*stepmotor
   ```
-### Running test for third party drivers (static test)
+  ### Running test for third party drivers (static test)
 
 The following command line will run static test for third party drivers:
 ```
@@ -109,18 +109,18 @@ For some devices, the full screen window may not cover the entire screen, and th
 ## Frequently asked questions
 
 
--   How can partners submit questions about the pen HLK and testing process?
+- How can partners submit questions about the pen HLK and testing process?
     
-    Any questions about the Pen HLK testing and validation process can be directed to the Ask Windows 10 Pen alias (pen\_qn@microsoft.com).
--   For a pen device that works on different platforms, do I need to repeat the pen HLK test, and resubmit for each system that uses the pen?
+  Any questions about the Pen HLK testing and validation process can be directed to the Ask Windows 10 Pen alias (pen\_qn@microsoft.com).
+- For a pen device that works on different platforms, do I need to repeat the pen HLK test, and resubmit for each system that uses the pen?
     
-    Yes, our HLK certification process is done per integrated system. We do not certify standalone pen devices.
--   Can a passive stylus or any other types of pens get tested by HLK?
+  Yes, our HLK certification process is done per integrated system. We do not certify standalone pen devices.
+- Can a passive stylus or any other types of pens get tested by HLK?
     
-    Only active pen devices that conform to the Active Pen Implementation Guide will be capable of completing HLK testing.
--   I have a device that is running Windows 10 Mobile. Can I still use the HLK for compatibility testing?
+  Only active pen devices that conform to the Active Pen Implementation Guide will be capable of completing HLK testing.
+- I have a device that is running Windows 10 Mobile. Can I still use the HLK for compatibility testing?
     
-    HLK tests for devices running Windows 10 Mobile are not available at this time. Until the tests are available, we will be relying on our hardware partners to attest to the fact that their devices meet the Windows 10 requirements.
--   I have a device with a diagonal screen size that is smaller than 4.5” or larger than 30”. Can I still use the HLK for compatibility testing?
+  HLK tests for devices running Windows 10 Mobile are not available at this time. Until the tests are available, we will be relying on our hardware partners to attest to the fact that their devices meet the Windows 10 requirements.
+- I have a device with a diagonal screen size that is smaller than 4.5” or larger than 30”. Can I still use the HLK for compatibility testing?
     
-    Unfortunately, the assistive testing jigs and some of the HLK tests only support devices with screen sizes from 4.5”-30”. If your device does not meet these size requirements, please contact us directly and we will work with you to set up a testing process so you can receive compatibility certification.
+  Unfortunately, the assistive testing jigs and some of the HLK tests only support devices with screen sizes from 4.5”-30”. If your device does not meet these size requirements, please contact us directly and we will work with you to set up a testing process so you can receive compatibility certification.

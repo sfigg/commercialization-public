@@ -65,7 +65,7 @@ The following tables list keyboard shortcuts that you can use with WPA:
 </tbody>
 </table>
 
- 
+ 
 
 ## Analysis View Shortcuts
 
@@ -101,7 +101,7 @@ The following tables list keyboard shortcuts that you can use with WPA:
 </tbody>
 </table>
 
- 
+ 
 
 ## Graph and Table Shortcuts
 
@@ -217,7 +217,7 @@ The following tables list keyboard shortcuts that you can use with WPA:
 </tbody>
 </table>
 
- 
+ 
 
 ## View Editor Shortcuts
 
@@ -241,7 +241,7 @@ The following tables list keyboard shortcuts that you can use with WPA:
 </tbody>
 </table>
 
- 
+ 
 
 ## Graph Explorer Shortcuts
 
@@ -265,16 +265,16 @@ The following tables list keyboard shortcuts that you can use with WPA:
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Windows Performance Analyzer](windows-performance-analyzer.md)
 
- 
+ 
 
- 
+ 
 
 
 

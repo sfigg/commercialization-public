@@ -22,7 +22,7 @@ In this section:
 
 [Get Windows Image Information](#getwiminformatio)
 
-[Get Windows PE Information](#getwindowspeinformation)
+[Get Windows PE Information](#getwindowspeinformation)
 
 [Get Driver Information](#getdriverinformation)
 
@@ -83,12 +83,12 @@ The report that is generated includes the following information.
 <tr class="even">
 <td align="left"><p>Name</p></td>
 <td align="left"><p>The Windows edition name of the image in the WIM or VHD file.</p></td>
-<td align="left"><p>Windows 8 Pro</p></td>
+<td align="left"><p>Windows 8 Pro</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
 <td align="left"><p>The description of the image in the WIM or VHD file.</p></td>
-<td align="left"><p>Windows 8 Pro</p></td>
+<td align="left"><p>Windows 8 Pro</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Size</p></td>
@@ -98,7 +98,7 @@ The report that is generated includes the following information.
 </tbody>
 </table>
 
- 
+
 
 **To list mounted images**
 
@@ -157,18 +157,18 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
-
-## <span id="GetWindowsPEInformation"></span><span id="getwindowspeinformation"></span><span id="GETWINDOWSPEINFORMATION"></span>Get Windows PE Information
 
 
-You can mount a Windows Preinstallation Environment (Windows PE) image for servicing in the same way you would any Windows image. There are also Windows PE servicing commands that are specific to a Windows PE image. These commands can be used to list Windows PE settings such as scratchspace, targetpath, and profiling information. For more information about Windows PE servicing commands available in DISM, see [DISM Windows PE Servicing Command-Line Options](dism-windows-pe-servicing-command-line-options.md).
+## <span id="GetWindowsPEInformation"></span><span id="getwindowspeinformation"></span><span id="GETWINDOWSPEINFORMATION"></span>Get Windows PE Information
 
-**To list all settings in the mounted Windows PE image.**
+
+You can mount a Windows Preinstallation Environment (Windows PE) image for servicing in the same way you would any Windows image. There are also Windows PE servicing commands that are specific to a Windows PE image. These commands can be used to list Windows PE settings such as scratchspace, targetpath, and profiling information. For more information about Windows PE servicing commands available in DISM, see [DISM Windows PE Servicing Command-Line Options](dism-windows-pe-servicing-command-line-options.md).
+
+**To list all settings in the mounted Windows PE image.**
 
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 
-2.  To list information about all of the Windows PE settings in the mounted Windows PE image, at the elevated command prompt, type:
+2.  To list information about all of the Windows PE settings in the mounted Windows PE image, at the elevated command prompt, type:
 
     ```
     Dism /image:C:\test\offline /Get-PESettings
@@ -203,12 +203,12 @@ The report generated includes the following information:
 <tr class="odd">
 <td align="left"><p>TargetPath</p></td>
 <td align="left"><p>The path to the root of the Windows PE image at boot time.</p></td>
-<td align="left"><p>X:\</p></td>
+<td align="left"><p>X:&lt;/p&gt;</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <span id="GetDriverInformation"></span><span id="getdriverinformation"></span><span id="GETDRIVERINFORMATION"></span>Get Driver Information
 
@@ -297,7 +297,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 **To get information about a specific driver**
 
@@ -384,7 +384,7 @@ The report generated includes the following information:
 <tr class="odd">
 <td align="left"><p>Description</p></td>
 <td align="left"><p>A description of the supported device.</p></td>
-<td align="left"><p><strong>Windows XP Adventure Works 376 Controller</strong></p></td>
+<td align="left"><p><strong>Windows XP Adventure Works 376 Controller</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Architecture</p></td>
@@ -404,22 +404,22 @@ The report generated includes the following information:
 <tr class="odd">
 <td align="left"><p>Compatible IDs</p></td>
 <td align="left"><p>Alternate Plug and Play (PnP) IDs for the device, if any apply.</p></td>
-<td align="left"><p><strong>*12ABC</strong></p></td>
+<td align="left"><p><strong><em>12ABC</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Exclude IDs</p></td>
 <td align="left"><p>PnP IDs that will not match the device, any apply.</p></td>
-<td align="left"><p><strong>*A_123</strong></p></td>
+<td align="left"><p><strong></em>A_123</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-**Note**  
+
+**Note**  
 If you point to a driver that is not yet installed, the report will be slightly different.
 
- 
+
 
 ## <span id="GetPackageInformation"></span><span id="getpackageinformation"></span><span id="GETPACKAGEINFORMATION"></span>Get Package and Feature Information
 
@@ -428,7 +428,7 @@ You can use operating system package-servicing commands to obtain information ab
 
 You can use the **/PackagePath** option to specify a .cab file or a folder where the .cab file is extracted. You cannot use this command to obtain package information for .msu files. Alternately, you can use **/Get-Packages** to find the name of a package, and then use **/PackageName** to specify the name of the package.
 
-You can display detailed information about a feature. You must use the **/FeatureName** option with the **/Get** command. Use the **/Get-Features** option to find the name of the feature in the image. Feature names are case sensitive if you are servicing a Windows image other than Windows 8.
+You can display detailed information about a feature. You must use the **/FeatureName** option with the **/Get** command. Use the **/Get-Features** option to find the name of the feature in the image. Feature names are case sensitive if you are servicing a Windows image other than Windows 8.
 
 For more information about operating system package-servicing commands available in DISM, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
 
@@ -493,7 +493,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 **To list information about a specific package**
 
@@ -617,7 +617,7 @@ The report generated includes the following information:
 <tr class="even">
 <td align="left"><p>Support Information</p></td>
 <td align="left"><p>Where to find support information, if available.</p></td>
-<td align="left"><p>http://support.microsoft.com/?kbid=300106</p></td>
+<td align="left"><p><a href="http://support.microsoft.com/?kbid=300106" data-raw-source="http://support.microsoft.com/?kbid=300106">http://support.microsoft.com/?kbid=300106</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>State</p></td>
@@ -633,7 +633,7 @@ The report generated includes the following information:
 <td align="left"><p><strong>Yes.</strong> The package can be installed offline without booting the image.</p>
 <p><strong>No.</strong> You must boot into the image in order to complete installation of this package.</p>
 <p><strong>Undetermined.</strong> You may have to boot into the image in order to complete the installation of this package. Many packages can be installed offline entirely. If you attempt to install a package offline and a reboot is required, it will be reported in the log file. You can check the status of a package using the Get-PackageInfo command.</p>
-<p>This field is only applicable to Windows 8, Windows Server® 2012, and Windows Preinstallation Environment (Windows PE) 4.0 target images.</p></td>
+<p>This field is only applicable to Windows 8, Windows Server® 2012, and Windows Preinstallation Environment (Windows PE) 4.0 target images.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -650,7 +650,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 **To list all features in the image**
 
@@ -713,14 +713,14 @@ The report generated includes the following information:
 <li><p><strong>Disabled.</strong> The feature is disabled.</p></li>
 <li><p><strong>Enable Pending.</strong> The feature will be enabled but requires a reboot to complete pending online actions.</p></li>
 <li><p><strong>Disable Pending.</strong> The feature will be disabled but requires a reboot to complete pending online actions.</p></li>
-<li><p><strong>Disabled with Payload Removed.</strong> The feature is disabled and its payload has been removed. Only the package metadata is present in the image. The payload can be restored and the feature can be enabled on demand after the image is deployed. For more information about features on demand, see [Configure a Windows Repair Source](configure-a-windows-repair-source.md).</p></li>
+<li><p><strong>Disabled with Payload Removed.</strong> The feature is disabled and its payload has been removed. Only the package metadata is present in the image. The payload can be restored and the feature can be enabled on demand after the image is deployed. For more information about features on demand, see <a href="configure-a-windows-repair-source.md" data-raw-source="[Configure a Windows Repair Source](configure-a-windows-repair-source.md)">Configure a Windows Repair Source</a>.</p></li>
 </ul></td>
 <td align="left"><p><strong>Disabled</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 **To list information about a specific feature**
 
@@ -785,7 +785,7 @@ The report generated includes the following information:
 <p><strong>Disabled.</strong> The feature is disabled.</p>
 <p><strong>Enable Pending.</strong> The feature will be enabled but requires a reboot to complete pending online actions.</p>
 <p><strong>Disable Pending.</strong> The feature will be disabled but requires a reboot to complete pending online actions.</p>
-<p><strong>Disabled with Payload Removed.</strong> The feature is disabled and its payload has been removed. Only the package metadata is present in the image. The payload can be restored and the feature can be enabled on demand after the image is deployed. For more information about features on demand, see [Configure a Windows Repair Source](configure-a-windows-repair-source.md).</p></td>
+<p><strong>Disabled with Payload Removed.</strong> The feature is disabled and its payload has been removed. Only the package metadata is present in the image. The payload can be restored and the feature can be enabled on demand after the image is deployed. For more information about features on demand, see <a href="configure-a-windows-repair-source.md" data-raw-source="[Configure a Windows Repair Source](configure-a-windows-repair-source.md)">Configure a Windows Repair Source</a>.</p></td>
 <td align="left"><p><strong>Disabled</strong></p></td>
 </tr>
 <tr class="even">
@@ -796,7 +796,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 ## <span id="GetAppPackage"></span><span id="getapppackage"></span><span id="GETAPPPACKAGE"></span>Get App Package (.appx) Servicing Information
 
@@ -854,7 +854,7 @@ The report generated includes the following information:
 </tr>
 <tr class="even">
 <td align="left"><p>ResourceID</p></td>
-<td align="left"><p>For more information, see [App packaging glossary](http://go.microsoft.com/fwlink/p/?linkid=252145).</p></td>
+<td align="left"><p>For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=252145" data-raw-source="[App packaging glossary](http://go.microsoft.com/fwlink/p/?linkid=252145)">App packaging glossary</a>.</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -865,17 +865,17 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 ## <span id="GetInternationalSettingsLang"></span><span id="getinternationalsettingslang"></span><span id="GETINTERNATIONALSETTINGSLANG"></span>Get International Settings and Languages
 
 
-The international servicing commands can be used to query existing international settings in Windows and Windows PE images. For more information about operating system package-servicing commands available in DISM, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
+The international servicing commands can be used to query existing international settings in Windows and Windows PE images. For more information about operating system package-servicing commands available in DISM, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
-**Important**  
-International servicing commands cannot be used on a Windows Vista or Windows Server 2008 image.
+**Important**  
+International servicing commands cannot be used on a Windows Vista or Windows Server 2008 image.
 
- 
+
 
 Use the **/online** option to display information about international settings and languages in the running operating system. Use **/image:** &lt;*path\_to\_offline\_image\_directory*&gt; to display information about international settings and languages in the offline image. When used with the **/image** and **/distribution** options, information about international settings and languages in the distribution is displayed.
 
@@ -937,7 +937,7 @@ The report generated includes the following information:
 </tr>
 <tr class="odd">
 <td align="left"><p>Location</p></td>
-<td align="left"><p>The geographical location that is currently set for the operating system. For more information about geographical locations, see [Table of Geographical Locations](http://go.microsoft.com/fwlink/?LinkId=131360).</p></td>
+<td align="left"><p>The geographical location that is currently set for the operating system. For more information about geographical locations, see <a href="http://go.microsoft.com/fwlink/?LinkId=131360" data-raw-source="[Table of Geographical Locations](http://go.microsoft.com/fwlink/?LinkId=131360)">Table of Geographical Locations</a>.</p></td>
 <td align="left"><p>United States</p></td>
 </tr>
 <tr class="even">
@@ -957,7 +957,7 @@ The report generated includes the following information:
 </tr>
 <tr class="odd">
 <td align="left"><p>Type</p></td>
-<td align="left"><p>The type of each installed language pack. For more information, see [Add Language Packs to Windows](add-language-packs-to-windows.md).</p></td>
+<td align="left"><p>The type of each installed language pack. For more information, see <a href="add-language-packs-to-windows.md" data-raw-source="[Add Language Packs to Windows](add-language-packs-to-windows.md)">Add Language Packs to Windows</a>.</p></td>
 <td align="left"><p><strong>en-US</strong></p>
 <p>Type: Fully localized language</p>
 <p><strong></strong>ar-SA</p>
@@ -968,11 +968,10 @@ The report generated includes the following information:
 <td align="left"><p>Distribution languages</p></td>
 <td align="left"><p>A list of the languages that are available in the distribution share.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This list includes the name of the folder in the distribution share. The language of the actual LP.cab file in the folder is not validated. For example, if the path to the distribution is …\Langpacks\bg-BG\Lp.cab, the value of bg-BG will be reported as the language in the distribution share even if the LP.cab file is not the correct .cab file for bg-BG.</p>
+<strong>Note</strong><br/><p>This list includes the name of the folder in the distribution share. The language of the actual LP.cab file in the folder is not validated. For example, if the path to the distribution is …\Langpacks\bg-BG\Lp.cab, the value of bg-BG will be reported as the language in the distribution share even if the LP.cab file is not the correct .cab file for bg-BG.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>The default language in the distribution is: <strong>ja-JP</strong></p>
 <p>The other available languages in the distribution are: <strong>bg-BG</strong>, <strong>nl-NL</strong></p></td>
@@ -985,7 +984,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 ## <span id="GetWindowsEditionInformation"></span><span id="getwindowseditioninformation"></span><span id="GETWINDOWSEDITIONINFORMATION"></span>Get Windows Edition Information
 
@@ -1107,7 +1106,7 @@ The report generated includes the following information:
 <tr class="even">
 <td align="left"><p>Help Link</p></td>
 <td align="left"><p>Where to find support information, if available.</p></td>
-<td align="left"><p>http://www.microsoft.com</p></td>
+<td align="left"><p><a href="http://www.microsoft.com" data-raw-source="http://www.microsoft.com">http://www.microsoft.com</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Transforms</p></td>
@@ -1127,7 +1126,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 **To list information about MSP patches applied to an application**
 
@@ -1177,7 +1176,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 **To list information about all Windows Installer applications**
 
@@ -1269,7 +1268,7 @@ The report generated includes the following information:
 <tr class="odd">
 <td align="left"><p>Install Source</p></td>
 <td align="left"><p>The directory that contains the source .cab file or the source file tree of the installation package.</p></td>
-<td align="left"><p><strong>E:\Testpkg\App2_RTM\</strong></p></td>
+<td align="left"><p><strong>E:\Testpkg\App2_RTM&lt;/strong&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Package Name</p></td>
@@ -1279,12 +1278,12 @@ The report generated includes the following information:
 <tr class="odd">
 <td align="left"><p>Help Link</p></td>
 <td align="left"><p>Where to find support information, if available.</p></td>
-<td align="left"><p>http://www.microsoft.com/management</p></td>
+<td align="left"><p><a href="http://www.microsoft.com/management" data-raw-source="http://www.microsoft.com/management">http://www.microsoft.com/management</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Transforms</p></td>
 <td align="left"><p>The set of patch transforms applied to the product by the last patch installation. This value may not be available for per-user unmanaged applications if the user is not logged on to the computer.</p></td>
-<td align="left"><p><strong>C:\Windows\Installer\{BDB20E90-3ACD-450B-BBDE-61E39687C6B1}\ACBlueT02.mst</strong></p></td>
+<td align="left"><p><strong>C:\Windows\Installer{BDB20E90-3ACD-450B-BBDE-61E39687C6B1}\ACBlueT02.mst</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Local Package</p></td>
@@ -1299,7 +1298,7 @@ The report generated includes the following information:
 </tbody>
 </table>
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
@@ -1310,9 +1309,9 @@ The report generated includes the following information:
 
 [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md)
 
- 
 
- 
+
+
 
 
 

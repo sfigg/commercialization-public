@@ -6,8 +6,7 @@ title: 'Device Update Center User Guide'
 ms.author: kenpacq
 ms.date: 10/15/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Device Update Center User Guide
@@ -228,7 +227,7 @@ So far, we have created an updateable image which can be used to manufacture and
 
 5. You can check the status of the publishing process by clicking **Status** link. This process takes some time to complete.
 
-   ![newcustompkg3](images\newcustompkg3.PNG)
+   ![newcustompkg3](images/newcustompkg3.PNG)
 
 ## Step 5: Targeting updates
 
@@ -236,11 +235,11 @@ After successfully publishing the updates, you can now control the delivery proc
 
 1. Select **Update flighting** and select **New Flight**
 
-   ![flight1](images\flight1.PNG)
+   ![flight1](images/flight1.PNG)
 
 2. In the New Flight dialog:
 
-   ![flight2](images\flight2.PNG)
+   ![flight2](images/flight2.PNG)
 
    a. Specify the ring (`Preview` / `EarlyAdopter` / `GeneralAvailability`), for example, Preview. Note that the xml file that is downloaded and included in the image, sets this value to *GeneralAvailability* by default
 
@@ -266,7 +265,7 @@ After successfully publishing the updates, you can now control the delivery proc
 
 4. You can check the status of the publishing process by clicking **Status** link.
 
-   ![flight3](images\flight3.PNG)
+   ![flight3](images/flight3.PNG)
 
    At this point the Windows Update system is set to deliver the required update packages to the device. It can take few hours before the settings are propogated.
 

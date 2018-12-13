@@ -30,7 +30,7 @@ The assessment follows this workflow:
 **Note**  
 The assessment launches Internet Explorer 4 times. The first time is a training iteration, and the next 3 are timing iterations. The training iteration ensures that the timing iterations load from the system cache and not a cold start. The results that are produced are aggregate results from the timing iterations. You can change the number of timing iterations in the assessment settings.
 
- 
+ 
 
 The following graphic illustrates the assessment process.
 
@@ -103,12 +103,12 @@ The following table describes the assessment settings, recommended values, and a
 </tr>
 <tr class="odd">
 <td><p>Enable Minifilter Diagnostic Mode</p></td>
-<td><p>Specifies whether to use the minifilter diagnostic option. By default, this check box is cleared. When the minifilter diagnostic mode is enabled, it produces metrics that help you evaluate the effect of minifilters on Internet Explorer startup. For more information about this setting, see [Minifilter Diagnostics](minifilter-diagnostics.md).</p></td>
+<td><p>Specifies whether to use the minifilter diagnostic option. By default, this check box is cleared. When the minifilter diagnostic mode is enabled, it produces metrics that help you evaluate the effect of minifilters on Internet Explorer startup. For more information about this setting, see <a href="minifilter-diagnostics.md" data-raw-source="[Minifilter Diagnostics](minifilter-diagnostics.md)">Minifilter Diagnostics</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -117,9 +117,9 @@ The following table describes the assessment settings, recommended values, and a
 
 [Assessments](assessments.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,7 +67,7 @@ The built-in **powercfg.exe** utility will create an HTML file named sleepstudy-
 **Note**  
 All the exercises in this guide use pre-generated **SleepStudy** reports, so you won't need to generate any **SleepStudy** reports for this guide.
 
- 
+ 
 
 ## Exercises
 
@@ -82,9 +82,9 @@ This guide consists of the following exercises.
 
 -   [Exercise 4 - Identify Problems with USB Devices](debugging-problems-with-standby-exercise-4.md)
 
- 
+ 
 
- 
+ 
 
 
 

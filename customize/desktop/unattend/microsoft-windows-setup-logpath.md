@@ -42,7 +42,7 @@ This setting refers to a directory where the log files are written, rather than 
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -75,9 +75,9 @@ The following XML output shows how to set the log path.
 
 [microsoft-windows-setup-](microsoft-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

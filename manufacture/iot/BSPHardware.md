@@ -5,8 +5,7 @@ title: 'BSP for Hardware'
 ms.author: pabab
 ms.date: 10/15/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # IoT Core Board Supported Packages (BSP)

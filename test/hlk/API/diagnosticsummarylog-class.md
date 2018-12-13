@@ -21,7 +21,7 @@ Represents a diagnostic or failure summary for a test result.
 >[!NOTE]
 >  Currently, the summary only contains information for kernel mode crashes.
 
- 
+ 
 
 **Namespace:** Microsoft.Windows.Kits.Hardware.DiagnosticSummary
 
@@ -39,7 +39,7 @@ Represents a diagnostic or failure summary for a test result.
 
 **System.Object**
 
-          **Microsoft.Windows.Kits.Hardware.DiagnosticSummary.DiagnosticSummaryLog**
+          **Microsoft.Windows.Kits.Hardware.DiagnosticSummary.DiagnosticSummaryLog**
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
@@ -51,9 +51,9 @@ Any public static members of this type are thread safe. Any instance members are
 
 [DiagnosticSummaryLog Members](diagnosticsummarylog-members.md)
 
- 
+ 
 
- 
+ 
 
 
 

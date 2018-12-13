@@ -6,8 +6,7 @@ title: Run custom actions during a feature update
 ms.author: kenpacq
 ms.date: 04/20/2018
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Run custom actions during feature update
@@ -32,7 +31,7 @@ Custom action scripts run from subfolders in `%windir%\System32\update\`, depend
 | %windir%\System32\update\run | Windows Setup will migrate scripts in these folders so they are run in future upgrades. |
 | %windir%\System32\update\runonce | Scripts in this folder will only run in one upgrade and won't be migrated for future upgrades. |
 | %windir%\System32\update\run\\\<GUID><p></p>%windir%\System32\update\runonce\\\<GUID> | Create a unique GUID to clearly identify each script you run. Use this GUID to name a folder within the `run` and `runonce` folders.  |
-| %windir%\System32\update\run\\\<GUID>\reflectdrivers<p></p>%windir%\System32\update\runonce\\\<GUID>\reflectdrivers | Boot-critical drivers in this folder will be reflected. Make sure the reflectdrivers folder only contains a necessary set of encryption drivers. Having more drivers than necessary can negatively impact upgrade scenarios. See [Device drivers](device-drivers-and-deployment-overview.md#span-idofflinespanspan-idofflinespanadd-drivers-before-deployment-on-an-offline-windows-image-by-using-dism) to learn more about reflected drivers. |
+| %windir%\System32\update\run\\\<GUID>\reflectdrivers<p></p>%windir%\System32\update\runonce\\\<GUID>\reflectdrivers | Boot-critical drivers in this folder will be reflected. Make sure the reflectdrivers folder only contains a necessary set of encryption drivers. Having more drivers than necessary can negatively impact upgrade scenarios. See [Device drivers](device-drivers-and-deployment-overview.md#offline) to learn more about reflected drivers. |
 
 
 
@@ -46,13 +45,15 @@ If an update fails or has to be rolled back, a failure.cmd script can be used to
 
 The following table shows the folder path structure of files for running custom actions:
 
-|      Run (Scripts will be migrated)                                           | Run Once (scripts won't be migrated)     |   
-| ------------------------------------------------------------ | ---------------------------------------------------------------- | 
-| %windir%\System32\update\run\\\<GUID>\preinstall.cmd         | %windir%\System32\update\runonce\\\<GUID>\preinstall.cmd         |                             
-| %windir%\System32\update\run\\\<GUID>\precommit.cmd          | %windir%\System32\update\runonce\\\<GUID>\precommit.cmd          |                             
-| %windir%\System32\update\run\\\<GUID>\failure.cmd            | %windir%\System32\update\runonce\\\<GUID>\failure.cmd            |                             
-| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.inf | %windir%\System32\update\runonce\\\<GUID>\reflectdrivers\example2.inf |                          
-| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.sys | %windir%\System32\update\run\\\<GUID>\reflectdrivers\example2.sys |                           
+
+|                  Run (Scripts will be migrated)                   |                 Run Once (scripts won't be migrated)                  |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------|
+|       %windir%\System32\update\run\\\<GUID>\preinstall.cmd        |       %windir%\System32\update\runonce\\\<GUID>\preinstall.cmd        |
+|        %windir%\System32\update\run\\\<GUID>\precommit.cmd        |        %windir%\System32\update\runonce\\\<GUID>\precommit.cmd        |
+|         %windir%\System32\update\run\\\<GUID>\failure.cmd         |         %windir%\System32\update\runonce\\\<GUID>\failure.cmd         |
+| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.inf | %windir%\System32\update\runonce\\\<GUID>\reflectdrivers\example2.inf |
+| %windir%\System32\update\run\\\<GUID>\reflectdrivers\example1.sys |   %windir%\System32\update\run\\\<GUID>\reflectdrivers\example2.sys   |
+
 ### Example file paths and names
 
 | Scenarios                      | File location examples                                                               |

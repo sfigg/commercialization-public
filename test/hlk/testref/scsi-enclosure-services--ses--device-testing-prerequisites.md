@@ -67,9 +67,9 @@ To configure the test computer for your test device, follow these steps:
 
 7.  Ensure that the test computer is in **Ready** state before you begin testing. If you do not change the machine status to **Ready**, the tests will not run. You cannot change the machine status to **Ready** while it is in the Default Pool. You need to move the machine to the new pool that you have created before you can do this.
 
- 
+ 
 
- 
+ 
 
 
 

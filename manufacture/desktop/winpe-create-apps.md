@@ -7,19 +7,15 @@ title: 'WinPE: Create Apps'
 ms.author: kenpacq
 ms.date: 05/02/2017
 ms.topic: article
-
-
 ---
 
 # WinPE: Create Apps
 
 
-Windows PE (WinPE) is licensed to independent software vendors (ISVs) and original equipment manufacturers (OEMs) to create customized deployment and recovery utilities. This topic provides guidelines for ISVs and OEMs to develop deployment and recovery apps that run in Windows PE.
+Windows PE (WinPE) is licensed to original equipment manufacturers (OEMs) to create customized deployment and recovery utilities. This topic provides guidelines for OEMs to develop deployment and recovery apps that run in Windows PE.
 
 **Note**  
-Windows PE is not a general-purpose operating system. It may not be used for any purpose other than deployment and recovery. It should not be used as a thin client or an embedded operating system. There are other Microsoft® products, such as Windows Embedded CE, which may be used for these purposes.
-
- 
+Windows PE is not a general-purpose operating system. It may not be used for any purpose other than deployment and recovery. It should not be used as a thin client or an embedded operating system.
 
 ## <span id="Extensibility"></span><span id="extensibility"></span><span id="EXTENSIBILITY"></span>Extensibility
 
@@ -30,7 +26,7 @@ The majority of Windows PE apps are fixed-function shell apps that provide their
 
 -   To have your app bypass the command line and start in your GUI, use Winpeshl.exe, Wpeinit.exe, wpeutil.exe, and wpeutil.dll.
 
-## <span id="Winpeshl.exe__Wpeinit.exe__wpeutil.exe__and_wpeutil.dll"></span><span id="winpeshl.exe__wpeinit.exe__wpeutil.exe__and_wpeutil.dll"></span><span id="WINPESHL.EXE__WPEINIT.EXE__WPEUTIL.EXE__AND_WPEUTIL.DLL"></span>Winpeshl.exe, Wpeinit.exe, wpeutil.exe, and wpeutil.dll
+## Winpeshl.exe, Wpeinit.exe, wpeutil.exe, and wpeutil.dll
 
 
 By default, Winpeshl.exe is the first process run when Windows PE is booted. This is specified by the following registry value of type REG\_SZ.
@@ -152,7 +148,7 @@ Some basic Visual Studio project settings may be different from the defaults cre
 **Warning**  
 Your app can use customized .dll files that you write or license from a third party. Add these .dll files to your app for Windows PE. However, do not use Msvcrt.dll and do not include additional Windows .dll files that are not part of Windows PE.
 
- 
+ 
 
 ## <span id="API_Compatibility_reference"></span><span id="api_compatibility_reference"></span><span id="API_COMPATIBILITY_REFERENCE"></span>API Compatibility reference
 
@@ -186,9 +182,9 @@ Sometimes, there may be no suitable API to accomplish a specific task. To find a
 
 [WinPE: Debug Apps](winpe-debug-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

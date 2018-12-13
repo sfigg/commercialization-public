@@ -137,7 +137,7 @@ Be sure that all pool types contain a non executable NX flag.</td>
 <tr>
 <td style="padding: 8px 0">Execute Page Protection</td>
 <td style="padding: 8px">The caller specified an executable page protection.
-Specify a "no execute" page protection mask.</td>
+Specify a &quot;no execute&quot; page protection mask.</td>
 </tr>
 <tr>
 <td style="padding: 8px 0">Execute Page Mapping</td>
@@ -278,11 +278,11 @@ The following list of APIs that are not reserved for system use may be impacted:
 | WdfRegistryQueryMemory                     | <https://msdn.microsoft.com/en-us/library/windows/hardware/ff549920(v=vs.85).aspx> |
 | NdisAllocateMemory                         | <https://msdn.microsoft.com/en-us/library/windows/hardware/ff550762(v=vs.85).aspx> |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

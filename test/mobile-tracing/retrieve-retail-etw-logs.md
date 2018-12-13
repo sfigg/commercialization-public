@@ -46,9 +46,9 @@ This is how to retrieve existing ETW logs from a retail device:
 
 [Software tracing](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

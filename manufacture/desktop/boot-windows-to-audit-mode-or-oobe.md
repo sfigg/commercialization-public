@@ -29,7 +29,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
     **Note**  
     Settings in an answer file from the **oobeSystem** configuration pass do not appear in audit mode. For more information about which answer file settings are processed when you boot to audit mode or OOBE, see [How Configuration Passes Work](how-configuration-passes-work.md).
 
-     
+     
 
 ## <span id="bkmk_2"></span><span id="BKMK_2"></span>Boot to audit mode manually (on a new or existing installation)
 
@@ -41,7 +41,7 @@ If a password-protected screen saver starts when you are in audit mode, you cann
     **Note**  
     The **CTRL**+**SHIFT**+**F3** keyboard shortcut does not bypass all parts of the OOBE process, such as running scripts and applying answer file settings in the **oobeSystem** configuration pass.
 
-     
+     
 
 ## <span id="bkmk_3"></span><span id="BKMK_3"></span>Boot to OOBE automatically on a new installation
 
@@ -132,7 +132,7 @@ To transfer an image to a different computer, you must first remove the computer
     **Note**  
     If you install Windows images by using the **Sysprep /generalize /oobe** command, the user experience will not be ideal. On the next reboot after you run the **Sysprep /generalize /oobe** command, Windows runs the **specialize** configuration pass, Plug and Play, and other Setup tasks before Windows starts OOBE. This process can take additional time and can delay a customer's first logon.
 
-     
+     
 
 6.  Package and deliver the computer to your customer.
 
@@ -161,9 +161,9 @@ To transfer an image to a different computer, you must first remove the computer
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

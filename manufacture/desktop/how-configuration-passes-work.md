@@ -143,7 +143,7 @@ Not all configuration passes run in a particular installation of Windows. Some c
 </tbody>
 </table>
 
- 
+ 
 
 For more information about Windows components and settings that can be added to an answer file, see the Unattended Windows Setup Reference Guide. For more information about logging, see [Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md) and [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md).
 
@@ -193,7 +193,7 @@ In this scenario, you install Windows to a new computer. You start with the Wind
     **Note**  
     You can create a separate content file called Oobe.xml that you can use to customize Windows Welcome, Getting Started, and ISP sign up. Using Oobe.xml is useful for organizing these customizations, because it enables you to maintain a single file that lists all of the branding, license terms, and signup opportunities for multiple countries, regions and/or languages. For more information, see [Configure Oobe.xml](configure-oobexml.md). Generally, Oobe.xml is used by OEMs and System Builders. However some aspects of Oobe.xml might also benefit corporate deployment scenarios.
 
-     
+     
 
 6.  Windows Welcome starts and you can begin using the computer.
 
@@ -274,7 +274,7 @@ In this scenario, you run the DISM tool against a running Windows installation.
     **Important**  
     When you use DISM with an answer file against an online Windows installation, the answer file should contain only the elements in the **offlineServicing** configuration pass. This is because some settings in the **specialize** configuration pass might be applied to the online Windows installation.
 
-     
+     
 
 In some instances, you might be required to restart your computer. For example, if you add a language pack to your Windows installation, you must reboot the computer.
 
@@ -295,9 +295,9 @@ In some instances, you might be required to restart your computer. For example, 
 
 [windowsPE](windowspe.md)
 
- 
+ 
 
- 
+ 
 
 
 

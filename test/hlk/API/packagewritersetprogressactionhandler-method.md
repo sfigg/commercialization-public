@@ -40,7 +40,7 @@ This method sets an action handler that is used to send out submission progress 
 
 `Public Sub SetProgressActionHandler ( _`
 
-          `actionHandler As Action(Of PackageProgressInfo) _`
+          `actionHandler As Action(Of PackageProgressInfo) _`
 
 `) `
 
@@ -48,7 +48,7 @@ This method sets an action handler that is used to send out submission progress 
 
 `public void SetProgressActionHandler (`
 
-          `Action<PackageProgressInfo> actionHandler`
+          `Action<PackageProgressInfo> actionHandler`
 
 `)`
 
@@ -57,16 +57,16 @@ This method sets an action handler that is used to send out submission progress 
 
 *actionHandler*
 
-     The name of the handler to call.
+     The name of the handler to call.
 
 ## <span id="Thread_Safety"></span><span id="thread_safety"></span><span id="THREAD_SAFETY"></span>Thread Safety
 
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

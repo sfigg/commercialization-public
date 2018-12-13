@@ -42,7 +42,7 @@ When comparing two or more results, the best metrics when applicable are highlig
 **Note**  
 If you want to compare only the summaries of the results, select the **Use summary view to open results** check box before you click **Open**. You can use the summary view to compare a few metrics across many jobs.
 
- 
+ 
 
 ## Related topics
 
@@ -57,9 +57,9 @@ If you want to compare only the summaries of the results, select the **Use summa
 
 [Package a job and run it on another computer](package-a-job-and-run-it-on-another-computer.md)
 
- 
+ 
 
- 
+ 
 
 
 

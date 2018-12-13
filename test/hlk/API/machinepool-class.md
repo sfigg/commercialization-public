@@ -45,7 +45,7 @@ This class represents an abstract pool of machines that are grouped together bas
 
 **System.Object**
 
-     **Microsoft.Windows.Kits.Hardware.ObjectModel.MachinePool**
+     **Microsoft.Windows.Kits.Hardware.ObjectModel.MachinePool**
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -61,9 +61,9 @@ There are certain reserved or special Machine Pools that have specific purposes:
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

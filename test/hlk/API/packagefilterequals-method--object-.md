@@ -42,7 +42,7 @@ This method compares the specified object.
 
 `Public Overrides Function Equals ( _`
 
-          `obj As Object _`
+          `obj As Object _`
 
 `) As Boolean`
 
@@ -50,7 +50,7 @@ This method compares the specified object.
 
 `public override bool Equals (`
 
-          `Object obj`
+          `Object obj`
 
 `)`
 
@@ -59,7 +59,7 @@ This method compares the specified object.
 
 *obj*
 
-     An object to compare against this **PackageFilter** object.
+     An object to compare against this **PackageFilter** object.
 
 ## <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,9 +71,9 @@ This method compares the specified object.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

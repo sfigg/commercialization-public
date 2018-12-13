@@ -9,8 +9,7 @@ author: themar-msft
 ms.author: themar
 ms.date: 10/05/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # <span id="p_customize_converged.no_subgroup_settings_allow_wi-fi_networking_during_standby"></span>Allow networking during standby
@@ -62,7 +61,7 @@ Specifies whether to allow networking during standby.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

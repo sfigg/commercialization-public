@@ -85,7 +85,7 @@ When a failure occurs in Windows Setup, review the entries in the Setuperr.log f
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Offline_Servicing_Scenario"></span><span id="offline_servicing_scenario"></span><span id="OFFLINE_SERVICING_SCENARIO"></span>Offline Servicing Scenario
 
@@ -128,7 +128,7 @@ When a failure occurs in offline servicing, look at the DISM.log file first for 
 </tbody>
 </table>
 
- 
+ 
 
 To learn more about offline servicing, see [Understanding Servicing Strategies](understanding-servicing-strategies.md).
 
@@ -178,13 +178,13 @@ When a failure occurs in offline servicing, look at the DISM.log file for specif
 </tbody>
 </table>
 
- 
+ 
 
 To learn more about offline servicing, see [Understanding Servicing Strategies](understanding-servicing-strategies.md).
 
- 
+ 
 
- 
+ 
 
 
 

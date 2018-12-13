@@ -5,8 +5,7 @@ title: 'OS Customizations'
 ms.author: pabab
 ms.date: 08/28/18
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # OS Customizations for OEM

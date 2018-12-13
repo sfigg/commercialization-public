@@ -16,11 +16,11 @@ ms.topic: article
 
 # WPR Command-Line Options
 
-Windows Performance Recorder (WPR) offers a simple command line interface. The full complexity of WPR is embedded in the recording profiles.
+Windows Performance Recorder (WPR) offers a simple command line interface. The full complexity of WPR is embedded in the recording profiles.
 
 ## General options
 
-WPR requires Windows 7 or later version operating system.
+WPR requires Windows 7 or later version operating system.
 
 ### Syntax
 
@@ -36,33 +36,34 @@ wpr -help FirstLevelOption
 
 The following FirstLevelOptions are available:
 
-| Option | Description |
-| -- | -- |
-| -help | Provide command line help information |
-| -profiles | Enumerates the profile names and descriptions from a profile |
-| -purgecache | Purges the dynamic symbols cache |
-| -start | Starts one or more profiles. |
-| -marker | Fires an event marker |
-| -markerflush | Fires an event marker and flushes the working set. |
-| -status | Displays the status of an active recording (if any). |
-| -profiledetails | Fires an event marker and flushes the working set. |
-| -providers | Displays detailed information about providers. |
-| -cancel | Cancels the recording initiated by WPR (if any). |
-| -stop | Cancels and saves the recording initiated by WPR (if any). |
-| -flush | Flushes the logging sessions initiated by WPR (if any). |
-| -log | Configures the debug information saved to the event log. |
-| -disablepagingexecutive | Changes the **Disable Paging Executive** settings |
-| -heaptracingconfig | Changes a processes' heap tracing settings |
-| -snapshotconfig | Change snapshot settings for a process |
-| -capturestateondemand | Captures the states of the configured providers in the current recording. |
-| -pmcsources | Queries the list of hardware counters available on the system. |
-| -setprofint | Sets the sampled profile interval. |
-| -profint | Queries the current profile interval. |
-| -resetprofint | Restores the default profile interval values. |
-| -boottrace | Configures the registry entries for autologger/globallogger sessions |
-| -enableperiodicsnapshot  | Enables **Periodic Snapshot** for the specified interval and given process id.
-| -disableperiodicsnapshot | Disables **Periodic Snapshot** for all process |
-| -singlesnapshot | Gets an on-demand Snapshot for the specified process. | -instancename | Specifies a name to uniquely identify the tracing instance. Useful when managing multiple concurrent wpr sessions. Note that if used, **-instancename** Must be the last parameter. |
+
+|          Option          |                                  Description                                   |
+|--------------------------|--------------------------------------------------------------------------------|
+|          -help           |                     Provide command line help information                      |
+|        -profiles         |          Enumerates the profile names and descriptions from a profile          |
+|       -purgecache        |                        Purges the dynamic symbols cache                        |
+|          -start          |                          Starts one or more profiles.                          |
+|         -marker          |                             Fires an event marker                              |
+|       -markerflush       |               Fires an event marker and flushes the working set.               |
+|         -status          |              Displays the status of an active recording (if any).              |
+|     -profiledetails      |               Fires an event marker and flushes the working set.               |
+|        -providers        |                 Displays detailed information about providers.                 |
+|         -cancel          |                Cancels the recording initiated by WPR (if any).                |
+|          -stop           |           Cancels and saves the recording initiated by WPR (if any).           |
+|          -flush          |            Flushes the logging sessions initiated by WPR (if any).             |
+|           -log           |            Configures the debug information saved to the event log.            |
+| -disablepagingexecutive  |               Changes the **Disable Paging Executive** settings                |
+|    -heaptracingconfig    |                   Changes a processes' heap tracing settings                   |
+|     -snapshotconfig      |                     Change snapshot settings for a process                     |
+|  -capturestateondemand   |   Captures the states of the configured providers in the current recording.    |
+|       -pmcsources        |         Queries the list of hardware counters available on the system.         |
+|       -setprofint        |                       Sets the sampled profile interval.                       |
+|         -profint         |                     Queries the current profile interval.                      |
+|      -resetprofint       |                 Restores the default profile interval values.                  |
+|        -boottrace        |      Configures the registry entries for autologger/globallogger sessions      |
+| -enableperiodicsnapshot  | Enables **Periodic Snapshot** for the specified interval and given process id. |
+| -disableperiodicsnapshot |                 Disables **Periodic Snapshot** for all process                 |
+|     -singlesnapshot      |             Gets an on-demand Snapshot for the specified process.              |
 
 > [!NOTE]
 > If you start WPR from the command line while another application is recording (such as Xperf or an application that uses NT Kernel Logger, such as logman or PerfTrace), WPR fails to start recording and returns the following error. In this case, you must cancel the other recording before you can start a new recording by using WPR:
@@ -260,15 +261,15 @@ The following table describes the available keywords that you can apply to this 
 <tbody>
 <tr>
 <td width="30%"><b>-addboot</b></td>
-<td>Sets the autologger registry entries for the given profile.  The `wpr -addboot` command takes the same options as the `wpr -start` command. Note that this options does not immediately start the trace. After reboot, the autologger will be started by the operating system.</td>
+<td>Sets the autologger registry entries for the given profile.  The <code>wpr -addboot</code> command takes the same options as the <code>wpr -start</code> command. Note that this options does not immediately start the trace. After reboot, the autologger will be started by the operating system.</td>
 </tr>
 <tr>
 <td><b>-stopboot</b></td>
-<td>Removes the autologger configured by **addboot**, stops the boot recording and merges all the recording into the given file. Note that this option saves the trace only if the autologger session is running (i.e. after reboot). Otherwise, this option will remove only the autologger configuration.</td>
+<td>Removes the autologger configured by <strong>addboot</strong>, stops the boot recording and merges all the recording into the given file. Note that this option saves the trace only if the autologger session is running (i.e. after reboot). Otherwise, this option will remove only the autologger configuration.</td>
 </tr>
 <tr>
 <td><b>-cancelboot</b></td>
-<td>Removes the autologger configured by **addboot** and cancels the boot recording initiated by WPR.</td>
+<td>Removes the autologger configured by <strong>addboot</strong> and cancels the boot recording initiated by WPR.</td>
 </tr>
 </tbody>
 </table>
@@ -352,7 +353,7 @@ wpr -disablepagingexecutive {on | off}
 ```
 
 > [!NOTE]
-> To correctly capture event stacks on 64-bit systems that are running Windows 7, **disablepagingexecutive** should be set to **On**, and the system must be rebooted before you start performance recording. For 32-bit systems that are running Windows 7 and for all systems that are running Windows 8 or higher, you can operate performance recording without setting **disablepagingexecutive** to **On**.
+> To correctly capture event stacks on 64-bit systems that are running Windows 7, **disablepagingexecutive** should be set to **On**, and the system must be rebooted before you start performance recording. For 32-bit systems that are running Windows 7 and for all systems that are running Windows 8 or higher, you can operate performance recording without setting **disablepagingexecutive** to **On**.
 
 ## Log
 
@@ -465,6 +466,7 @@ wpr -SnapshotConfig <snapshot option> <pid 1> [pid 2] ... [up to pid 8]
 >Please refer to [SnapshotConfig](#snapshotconfig) command for more information.
 
 The following table describes the available switches that you can apply to this option.
+
 | Switch | Description |
 | --- | --- |
 | *\<snapshot option\>* | Specifies one of the snapshot option type. |
@@ -488,6 +490,7 @@ wpr -enableperiodicsnapshot <snapshot option> <interval (in seconds)> <pid 1> [p
 >Please refer to SnapshotConfig command for more information.
 
 The following table describes the available switches that you can apply to this option.
+
 | Switch | Description |
 | --- | --- |
 | *\<snapshot option\>* | Specifies one of the snapshot option type. |
@@ -511,6 +514,7 @@ wpr -disableperiodicsnapshot heap
 ```
 
 The following table describes the available switches that you can apply to this option.
+
 |Switch | Description |
 | -- | -- |
 | \<snapshot option\> | Specifies one of the snapshot option types. |

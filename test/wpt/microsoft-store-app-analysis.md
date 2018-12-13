@@ -73,7 +73,7 @@ In the **Attributed CPU Usage** table, the **Thread Name** column helps you quic
 **Warning**  
 The **Attributed CPU Usage** table relies on regions of interest definitions to attribute CPU usage to different activities. When you use multiple regions files, different regions of interest can overlap and conflict. When these conflicts occur, WPA is unable to accurately attribute a single activity to a given thread in a given time range. To avoid these potential conflicts, use only one region definition file at a time.
 
- 
+ 
 
 ## Thread Naming
 
@@ -84,9 +84,9 @@ Microsoft Store apps use different threads to do different types of work. For ex
 
 The image above shows activity from the XAML UI thread, the XAML Render thread, and the Desktop Window Manager (DWM) thread.
 
- 
+ 
 
- 
+ 
 
 
 

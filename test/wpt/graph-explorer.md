@@ -44,9 +44,9 @@ The Graph Explorer window appears on the left side of the user interface when yo
 
 [Analysis Tab](analysis-tab.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -80,7 +80,7 @@ The following table provides a description of how each default application assoc
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -91,9 +91,9 @@ The following table provides a description of how each default application assoc
 
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

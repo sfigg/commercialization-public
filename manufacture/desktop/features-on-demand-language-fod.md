@@ -6,8 +6,7 @@ title: 'Language and region Features on Demand'
 ms.author: kenpacq
 ms.date: 12/01/2017
 ms.topic: article
-
-
+ms.custom: RS5
 ---
 
 # Language and region Features on Demand
@@ -104,7 +103,7 @@ These fonts are optional and not required for any region.
 
 | Region | Package                               | Description        | Recommendation                                                                                                     |
 |--------|-------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---|
-| zh-TW  | Microsoft-Windows-InternationalFeatures-Taiwan-Package~31bf3856ad364e35~amd64~~.cab  | Supplemental support for Taiwan date formatting requirements.  Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. Not installing this capability on devices causes any API calls to that use the Taiwan calendar to fail. |
+| zh-TW  | Microsoft-Windows-InternationalFeatures-Taiwan-Package\~31bf3856ad364e35\~amd64~~.cab  | Supplemental support for Taiwan date formatting requirements.  Package will be provided to customers located in Taiwan. | Preinstall only on devices shipping to the Taiwan market. Not installing this capability on devices causes any API calls to that use the Taiwan calendar to fail. |
 
 Note that this feature is distributed as a .cab file on the Feature on Demand ISO. Use `DISM /add-package` to add it to your image. See [Add or remove packages offline with DISM](add-or-remove-packages-offline-using-dism.md) for more information.
 

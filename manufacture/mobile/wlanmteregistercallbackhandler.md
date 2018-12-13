@@ -61,7 +61,7 @@ If the function fails, the return value is one of the system error codes. The fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -85,9 +85,9 @@ typedef VOID (WINAPI *WLAN_MTE_NOTIFICATION_CALLBACK)(
 
 [Wi-Fi manufacturing API](wi-fi-manufacturing-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

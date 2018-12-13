@@ -38,7 +38,7 @@ End users can access the support page in Internet Explorer by clicking **Help** 
 </tbody>
 </table>
 
- 
+ 
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -71,9 +71,9 @@ The following XML output specifies the fully qualified URL.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
- 
+ 
 
- 
+ 
 
 
 

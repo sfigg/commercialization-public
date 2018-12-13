@@ -59,7 +59,7 @@ Configures the power manager to accept or ignore application system required req
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Applies_to"></span><span id="applies_to"></span><span id="APPLIES_TO"></span>Applies to
 

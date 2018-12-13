@@ -42,20 +42,18 @@ An MBR drive can have up to four standard partitions. Typically, these standard 
 
 -   **Recovery tools partition**
 
-    The Windows Recovery Environment (Windows RE) tools image (winre.wim) should be in a separate partition than the Windows partition to support automatic failover and to support booting Windows BitLocker Drive Encryption-encrypted partitions.
+    We recommend creating a separate recovery partition to support automatic failover and to support booting Windows BitLocker Drive Encryption-encrypted partitions.
+    
+    We recommend that you place this partition in a separate partition, immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
 
-    While this image can be included on the same partition as the system partition, we recommend that you place this partition in a separate partition, immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
-
-    This partition must have enough space for the Windows Recovery Environment tools image (winre.wim, typically between 250-300MB, depending on base language and customizations added), plus enough free space so that the partition can be captured by backup utilities:
-
+    The Windows Recovery Environment (Windows RE) tools require additional free space:
     -   If the partition is less than 500 MB, it must have at least 50 MB of free space.
     -   If the partition is 500 MB or larger, it must have at least 320 MB of free space.
     -   If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
-
-    <!-- -->
-
-    -   It must have at least 320 MB of free space.
-    -   We recommend that it should have at least 1 GB free.
+    
+    When calculating free space, note:
+    - The recovery image, winre.wim, is typically between 250-300MB, depending on what drivers, languages, and customizations you add.
+    - The file system itself can take up additional space. For example, NTFS may reserve 5-15MB or more on a 750MB partition. 
 
 -   **Data partitions**
 
@@ -78,8 +76,9 @@ If you install Windows using a bootable USB key made by Windows Imaging and Conf
 
 ## <span id="UsingSystemAndUtilityPartitions"></span><span id="usingsystemandutilitypartitions"></span><span id="USINGSYSTEMANDUTILITYPARTITIONS"></span>System and utility partitions
 
-
 By default, system partitions do not appear in File Explorer. This helps protect end users from accidentally modifying a partition.
+
+To keep system and utility partitions from being reset, we recommend using type 0x27. Do not use any of the following types: 0x7, 0x0c, 0x0b, 0x0e, 0x06, and 0x42.
 
 **To set partitions as utility partitions**
 
@@ -104,7 +103,7 @@ We recommend changing the Windows drive letter to a letter that’s near the end
 
 If you reboot, Windows PE reassigns disk letters alphabetically, starting with the letter C, without regard to the configuration in Windows Setup. This configuration can change based on the presence of different drives, such as USB flash drives.
 
- 
+ 
 
 The following steps describe how to partition your hard drives and prepare to apply images. You can use the code in the sections that follow to complete these steps.
 
@@ -131,9 +130,9 @@ The following steps describe how to partition your hard drives and prepare to ap
     create partition primary
     rem ==    b. Create space for the recovery tools  
     shrink minimum=500
-    rem       ** NOTE: Update this size to match the
-    rem                size of the recovery tools 
-    rem                (winre.wim)                 **
+    rem       ** Update this size to match the size of
+    rem          the recovery tools (winre.wim)
+    rem          plus some free space.
     rem ==    c. Prepare the Windows partition ====== 
     format quick fs=ntfs label="Windows"
     assign letter="W"
@@ -171,9 +170,9 @@ Use a deployment script to apply the Windows images on the newly created partiti
 
 [Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)
 
- 
+ 
 
- 
+ 
 
 
 

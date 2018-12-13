@@ -23,10 +23,10 @@ Represents the identifier of a system collector.
 ## Element Hierarchy
 
 * \<[WindowsPerformanceRecorder](windowsperformancerecorder.md)\>
-  * \<[Profiles](profiles.md)\>
-    * \<[Profile](profile-wpr.md)\>
-      * \<[Collectors](collectors.md)\>
-        * \<**SystemCollectorId**\>
+  * \<[Profiles](profiles.md)\>
+    * \<[Profile](profile-wpr.md)\>
+      * \<[Collectors](collectors.md)\>
+        * \<**SystemCollectorId**\>
 
 
 ## Syntax

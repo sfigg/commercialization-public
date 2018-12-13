@@ -34,7 +34,7 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Properties"></span><span id="public_properties"></span><span id="PUBLIC_PROPERTIES"></span>Public Properties
 
@@ -58,7 +58,7 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Public_Methods"></span><span id="public_methods"></span><span id="PUBLIC_METHODS"></span>Public Methods
 
@@ -76,19 +76,19 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AddDriver](packagewriteradddriver-method.md)</p></td>
+<td><p><a href="packagewriteradddriver-method.md" data-raw-source="[AddDriver](packagewriteradddriver-method.md)">AddDriver</a></p></td>
 <td><p>This method adds driver files to the submission package and checks the driver files for driver signability. This method can only be used for submission packages. It cannot be used for update packages. The signability tests are done when drivers are added to the package. If the signability tests fail the driver is not added to the package. Down level operating system signability tests are automatically run. Errors from these signability results will not prevent submission creation (will not cause a false return value).The error messages for down level operating system signability runs will be captured and returned as warnings.</p></td>
 </tr>
 <tr class="even">
-<td><p>[AddReplacementDriver](packagewriteraddreplacementdriver-method.md)</p></td>
+<td><p><a href="packagewriteraddreplacementdriver-method.md" data-raw-source="[AddReplacementDriver](packagewriteraddreplacementdriver-method.md)">AddReplacementDriver</a></p></td>
 <td><p>This method replaces a driver in the submission package. This method can only be used for update packages.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[AddSupplementalFiles](packagewriteraddsupplementalfiles-method.md)</p></td>
+<td><p><a href="packagewriteraddsupplementalfiles-method.md" data-raw-source="[AddSupplementalFiles](packagewriteraddsupplementalfiles-method.md)">AddSupplementalFiles</a></p></td>
 <td><p>This method adds all of the files in a specified directory to a submission package. This method can be used for both submission packages and update packages.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Dispose](packagewriterdispose-method.md)</p></td>
+<td><p><a href="packagewriterdispose-method.md" data-raw-source="[Dispose](packagewriterdispose-method.md)">Dispose</a></p></td>
 <td><p>Overloaded.</p></td>
 </tr>
 <tr class="odd">
@@ -104,19 +104,19 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p>[Merge](packagewritermerge-method.md)</p></td>
+<td><p><a href="packagewritermerge-method.md" data-raw-source="[Merge](packagewritermerge-method.md)">Merge</a></p></td>
 <td><p>This method merges a project into an existing package. This method can only be used for existing submission packages.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Save](packagewritersave-method.md)</p></td>
+<td><p><a href="packagewritersave-method.md" data-raw-source="[Save](packagewritersave-method.md)">Save</a></p></td>
 <td><p>Overloaded. This class contains methods used to save a submission package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SavePartialPackage](packagewriter-savepartialpackage-method.md)</p></td>
+<td><p><a href="packagewriter-savepartialpackage-method.md" data-raw-source="[SavePartialPackage](packagewriter-savepartialpackage-method.md)">SavePartialPackage</a></p></td>
 <td><p>Overloaded.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SetProgressActionHandler](packagewritersetprogressactionhandler-method.md)</p></td>
+<td><p><a href="packagewritersetprogressactionhandler-method.md" data-raw-source="[SetProgressActionHandler](packagewritersetprogressactionhandler-method.md)">SetProgressActionHandler</a></p></td>
 <td><p>This method sets an action handler that is used to send out submission progress updates. This method can be used for both submission packages and update packages.</p></td>
 </tr>
 <tr class="even">
@@ -124,17 +124,17 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 <td><p>(Inherited from <strong>Object</strong>)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[TargetFamiliesAreDeepMergeCompatible](packagewriter-targetfamiliesaredeepmergecompatible-method.md)</p></td>
+<td><p><a href="packagewriter-targetfamiliesaredeepmergecompatible-method.md" data-raw-source="[TargetFamiliesAreDeepMergeCompatible](packagewriter-targetfamiliesaredeepmergecompatible-method.md)">TargetFamiliesAreDeepMergeCompatible</a></p></td>
 <td><p>Checks if two target families are similar enough for deep merging.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ValidateMerge](packagewritervalidatemerge-method.md)</p></td>
+<td><p><a href="packagewritervalidatemerge-method.md" data-raw-source="[ValidateMerge](packagewritervalidatemerge-method.md)">ValidateMerge</a></p></td>
 <td><p>Checks the provided project for errors that would occur while merging with the current package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Protected_Methods"></span><span id="protected_methods"></span><span id="PROTECTED_METHODS"></span>Protected Methods
 
@@ -152,7 +152,7 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Dispose](packagewriterdispose-method.md)</p></td>
+<td><p><a href="packagewriterdispose-method.md" data-raw-source="[Dispose](packagewriterdispose-method.md)">Dispose</a></p></td>
 <td><p>Overloaded.</p></td>
 </tr>
 <tr class="even">
@@ -166,11 +166,11 @@ The following table lists the members exposed by the [PackageWriter Class](packa
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

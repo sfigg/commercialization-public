@@ -40,7 +40,7 @@ This method writes a log file to a specific file location on disk.
 
 `Public MustOverride Sub WriteLogTo ( _`
 
-          `destination As String _`
+          `destination As String _`
 
 `)`
 
@@ -48,7 +48,7 @@ This method writes a log file to a specific file location on disk.
 
 `public abstract void WriteLogTo (`
 
-          `string destination`
+          `string destination`
 
 `)`
 
@@ -57,7 +57,7 @@ This method writes a log file to a specific file location on disk.
 
 *destination*
 
-     A string value that describes the destination (file path and file name) to write the log to.
+     A string value that describes the destination (file path and file name) to write the log to.
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -69,9 +69,9 @@ An exception occurs if *destination* is **null** or empty.
 
 Any public static (**Shared** in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
 
- 
+ 
 
- 
+ 
 
 
 

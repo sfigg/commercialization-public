@@ -18,7 +18,7 @@ The following features can be used with devices running in Manufacturing Mode.
 
 **Note**  All optional features included with Windows 10 Mobile can be used, too. For more info about the other optional features, see [Optional features for building images](https://msdn.microsoft.com/library/windows/hardware/dn756780).
 
- 
+ 
 
 <table>
 <colgroup>
@@ -63,11 +63,11 @@ The following features can be used with devices running in Manufacturing Mode.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

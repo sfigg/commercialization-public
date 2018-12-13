@@ -219,11 +219,11 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tr>
 <tr class="even">
 <td><p><strong>Import Package(s)</strong></p></td>
-<td><p>Enables you to browse to a folder that contains a package, and then import it into the currently open distribution share. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md).</p></td>
+<td><p>Enables you to browse to a folder that contains a package, and then import it into the currently open distribution share. For more information, see <a href="add-packages-to-a-distribution-share.md" data-raw-source="[Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md)">Add Packages to a Distribution Share</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Create Catalog</strong></p></td>
-<td><p>Generates a catalog file. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).</p></td>
+<td><p>Generates a catalog file. For more information, see <a href="open-a-windows-image-or-catalog-file.md" data-raw-source="[Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md)">Open a Windows Image or Catalog File</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -244,7 +244,7 @@ The types of messages that the **Messages** pane displays are informational. Mes
 <tbody>
 <tr class="odd">
 <td><p><strong>Image Manager Help</strong></p></td>
-<td><p>Displays the User's Guide.</p></td>
+<td><p>Displays the User&#39;s Guide.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Unattended Reference</strong></p></td>
@@ -305,7 +305,7 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tr>
 <tr class="odd">
 <td><p><strong>Help Contents</strong></p></td>
-<td><p>Displays the User's Guide.</p></td>
+<td><p>Displays the User&#39;s Guide.</p></td>
 </tr>
 </tbody>
 </table>

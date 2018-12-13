@@ -25,6 +25,7 @@ This topic applies to the following test jobs:
 -   WGF11 Geometry Shader (WoW64)
 
 ## Test details
+
 |||
 |---|---|
 | **Specifications**  | <ul><li>Device.Graphics.AdapterRender.D3D111Core.D3D111CorePrimary</li><li>Device.Graphics.AdapterRender.D3D11Core.D3D11CorePrimary</li><li>Device.Graphics.AdapterRender.D3D101Core.D3D101CorePrimary</li><li>Device.Graphics.AdapterRender.D3D10Core.D3D10CorePrimary</li></ul> |  
@@ -37,7 +38,7 @@ This topic applies to the following test jobs:
 |**Requires special configuration**| false |
 |**Type**| automatic |
 
- 
+
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
@@ -49,7 +50,7 @@ Tests in this feature area might have additional documentation, including prereq
 ## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
 
 
-For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](..\user\troubleshooting-windows-hlk-test-failures.md).
+For generic troubleshooting of HLK test failures, see [Troubleshooting Windows HLK Test Failures](../user/troubleshooting-windows-hlk-test-failures.md).
 
 For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
 
@@ -62,49 +63,49 @@ The following items outline the Geometry Shader Conformance Test Plan:
 
 **Geometry Shader Input**
 
--   Verifies support for all input primitive types:
+- Verifies support for all input primitive types:
 
-    -   Line
+  -   Line
 
-    -   Point
+  -   Point
 
-    -   Triangle
+  -   Triangle
 
-    -   LineAdj
+  -   LineAdj
 
-    -   TriangleAdj
+  -   TriangleAdj
 
--   PrimitiveID
+- PrimitiveID
 
-    -   Verifies that primitive ordering is respected.
+  - Verifies that primitive ordering is respected.
 
-    -   PS test should test this for cases where there is no GS in the pipeline.
+  - PS test should test this for cases where there is no GS in the pipeline.
 
-    -   Cycle on Draw() and DrawInstanced().
+  - Cycle on Draw() and DrawInstanced().
 
-        >[!NOTE]
-        >  
-        Make sure that the id resets to zero for each instance drawn.
+    > [!NOTE]
+    > 
+    > Make sure that the id resets to zero for each instance drawn.
 
-         
 
--   InstanceID
+
+- InstanceID
 
 **Geometry Shader Output**
 
--   RenderTargetArrayIndex
+- RenderTargetArrayIndex
 
--   Position
+- Position
 
--   Limits
+- Limits
 
-    >[!NOTE]
-    >  
-    Maximum GS invocation output data size (components \* vertices) go up to 1024.
+  > [!NOTE]
+  > 
+  > Maximum GS invocation output data size (components \* vertices) go up to 1024.
 
-     
 
--   Ordering (Verifies that primitive ordering is respected.)
+
+- Ordering (Verifies that primitive ordering is respected.)
 
 ### <span id="Command_syntax"></span><span id="command_syntax"></span><span id="COMMAND_SYNTAX"></span>Command syntax
 
@@ -131,11 +132,11 @@ The following items outline the Geometry Shader Conformance Test Plan:
 </tbody>
 </table>
 
->[!NOTE]
->  
-For command line help for this test binary, type **/?**.
+> [!NOTE]
+> 
+> For command line help for this test binary, type **/?**.
 
- 
+
 
 ### <span id="File_list"></span><span id="file_list"></span><span id="FILE_LIST"></span>File list
 
@@ -153,19 +154,19 @@ For command line help for this test binary, type **/?**.
 <tbody>
 <tr class="odd">
 <td><p>Configdisplay.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11_1sdklayers.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3d11ref.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>D3d11sdklayers.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>D3dcompiler_test.dll</p></td>
@@ -173,15 +174,15 @@ For command line help for this test binary, type **/?**.
 </tr>
 <tr class="even">
 <td><p>D3dx10_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>d3dx11_test.dll</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support&lt;/p&gt;</td>
 </tr>
 <tr class="even">
 <td><p>TDRWatch.exe</p></td>
-<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics&lt;/p&gt;</td>
 </tr>
 <tr class="odd">
 <td><p>Wgf11geometryshader.exe</p></td>
@@ -190,7 +191,7 @@ For command line help for this test binary, type **/?**.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -201,11 +202,11 @@ For command line help for this test binary, type **/?**.
 | **ConfigDisplayCommandLine** | Custom Command Line for ConfigDisplay. Default: logo  |
 | **TDRArgs**                  | /get or /set                                          |
 
- 
 
- 
 
- 
+
+
+
 
 
 

@@ -100,9 +100,9 @@ The Off state is defined as the device operating mode when the device has had it
 
 In the Off state, a device shall consume no power.
 
- 
+ 
 
- 
+ 
 
 
 

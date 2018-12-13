@@ -64,16 +64,16 @@ Learn how to create an OEMInput and feature manifest files to fully define the c
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Building and flashing mobile images](building-and-flashing-images.md)
 
- 
+ 
 
- 
+ 
 
 
 
