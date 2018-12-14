@@ -103,7 +103,10 @@ See [Unified write filter](https://docs.microsoft.com/en-us/windows-hardware/cus
     ```
 
 >[!Note]
->When using the Unified Write Filter you must take into consideration the Operating System product activation. Product activation must be done with the Unified Write Filter disabled. Also, when cloning the image to other devices the image needs to be in a Sysprep state and the filter disabled prior to capturing the image. 
+>When using the Unified Write Filter you must take into consideration several things. 
+>1) The Operating System product activation. Product activation must be done with the Unified Write Filter disabled. 
+>2) Cloning the image to other devices the image needs to be in a Sysprep state and the filter disabled prior to capturing the image.
+>3) Servicing a device. When you service the device you will probably have to disable the Write Filter prior to the servicing activity. More information on servicing can be found [here](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/service-uwf-protected-devices). 
  
 
 ## Unbranded boot
