@@ -30,7 +30,7 @@ If you have a device where disruption of the user experience isn't acceptable, y
 You can use the Active Hours Group Policy, MDM, or registry setting to limit updates to only certain hours.
 
 1.    Open the Group Policy Editor (gpedit.msc) and navigate to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Turn off auto-restart for updates during active hours** policy setting. **Enable** the policy so you can set the start and end times for active hours.
-2.    Set the **Start** and **End** time to the Active Hours window. For example, set Active Hours to start at 2:00AM and end 4:00AM. This allows the system to reboot from updates between the hours of 2:00 AM and 4:00 AM.
+2.    Set the **Start** and **End** time to the Active Hours window. For example, set Active Hours to start at 4:00AM and end 2:00AM. This allows the system to reboot from updates between the hours of 2:00 AM and 4:00 AM.
  
 ### Control UI notifications from the Windows Update client ###
 
@@ -63,6 +63,8 @@ To prohibit access to Windows update:
  
 >[!Important] 
 >Be sure to have a well-designed servicing strategy for your device. Disabling Windows Update capabilities leaves the device in a vulnerable state if your device isn't getting updates in another way.
+>
+> If you choose to service the device with updates and you are using the Write Filter Lockdown feature you will need to disable the filter prior to servicing, more information can be found [here](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/service-uwf-protected-devices).   
  
 ### Prevent drivers from being installed via Windows Update 
 
