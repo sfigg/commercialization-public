@@ -15,7 +15,7 @@ Many IoT device scenarios require a custom user experience. This can be done by 
  
 Windows 10 IoT Enterprise has two custom shell features that enable this custom user experience.
  
-- **Shell Launcher** enables OEMs to set a classic, non-UWP, app as the system shell. The advantage to using Shell Launcher is the ability to provide custom actions based on the exit code of the OEM application. For example if the OEM application exits with a specific exit code, the system can be configured to automatically restart the application, reboot or shutdown the device, etc.
+- **Shell Launcher** enables OEMs to set a classic, non-UWP, app as the system shell. The advantage to using Shell Launcher is the ability to provide custom actions based on the exit code of the OEM application. For example if the OEM application exits with a specific exit code, the system can be configured to automatically restart the application, reboot or shutdown the device, etc. More information on Shell Lanucher can be found [here](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/shell-launcher)
  
 - **Assigned Access** enables OEMs to set a UWP application as the system shell. Similar to Shell Launcher, Assigned Access can automatically restart the application when it's closed, keeping the device in the intended user experience.
  
